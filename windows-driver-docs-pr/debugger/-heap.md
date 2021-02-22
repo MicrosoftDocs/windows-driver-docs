@@ -1,7 +1,6 @@
 ---
 title: heap
 description: The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
-ms.assetid: 70947b56-1a8c-4e78-85d0-d5df87f3150c
 keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
 ms.date: 08/23/2019
 topic_type:
@@ -423,7 +422,7 @@ Book: *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 [Example 12: Using Page Heap Verification to Find a Bug](example-12---using-page-heap-verification-to-find-a-bug.md)
 
-For information on using the Heap memory process logger, see [Example 11: Starting a Private Trace Session](https://docs.microsoft.com/windows-hardware/drivers/devtest/example-11--starting-a-private-trace-session)
+For information on using the Heap memory process logger, see [Example 11: Starting a Private Trace Session](../devtest/example-11--starting-a-private-trace-session.md)
 
 Remarks
 -------
@@ -438,7 +437,7 @@ The **!heap -l** command detects leaked heap blocks. It uses a garbage collector
 
 The **!heap -x** command searches for a heap block containing a given address. If the **-v** option is used, this command will additionally search the entire virtual memory space of the current process for pointers to this heap block. This command is only available in Windows XP and later versions of Windows.
 
-The **!heap -p** command displays various forms of page heap information. Before using **!heap -p**, you must enable the page heap for the target process. This is done through the Global Flags (gflags.exe) utility. To do this, start the utility, fill in the name of the target application in the **Image File Name** text box, select **Image File Options** and **Enable page heap**, and click **Apply**. Alternatively, you can start the Global Flags utility from a Command Prompt window by typing **gflags /i** *xxx.exe* **+hpa**, where *xxx.exe* is the name of the target application.
+The **!heap -p** command displays various forms of page heap information. Before using **!heap -p**, you must enable the page heap for the target process. This is done through the Global Flags (gflags.exe) utility. To do this, start the utility, fill in the name of the target application in the **Image File Name** text box, select **Image File Options** and **Enable page heap**, and select **Apply**. Alternatively, you can start the Global Flags utility from a Command Prompt window by typing **gflags /i** *xxx.exe* **+hpa**, where *xxx.exe* is the name of the target application.
 
 The **!heap -p -t\[c|s\]** commands are not supported beyond Windows XP. Use the [UMDH](umdh.md) tool provided with the debugger package to obtain similar results.
 

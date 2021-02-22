@@ -1,5 +1,5 @@
 ---
-Description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
+description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
 title: WinUSB Device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -144,7 +144,7 @@ The extended properties OS feature descriptor includes a header section that is 
 
  
 
-During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 **Enabling or disabling WinUSB power management features**
 
@@ -177,7 +177,4 @@ This image shows sample settings for a WinUSB device.
 For additional examples, see the specifications on [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 ## Related topics
-[Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)  
-
-
-
+[Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)

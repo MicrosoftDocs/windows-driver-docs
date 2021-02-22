@@ -1,7 +1,6 @@
 ---
 title: INF AddService Directive
 description: An AddService directive is used within an INF DDInstall.Services section or INF DefaultInstall.Services section.
-ms.assetid: 3314da8b-3fde-462a-a64d-a0514710663a
 keywords:
 - INF AddService Directive Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 An **AddService** directive is used within an [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) or [**INF DefaultInstall.Services section**](inf-defaultinstall-services-section.md). It specifies characteristics of the services associated with drivers, such as how and when the services are loaded, and any dependencies on other underlying legacy drivers or services. Optionally, this directive also sets up event-logging services for the device.
 
-```ini
+```inf
 [DDInstall.Services] 
  
 AddService=ServiceName,[flags],service-install-section
@@ -104,7 +103,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddService** directive must reference a named *service-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```ini
+```inf
 [service-install-section]
  
 [DisplayName=name]
@@ -120,6 +119,9 @@ ServiceBinary=path-to-service
 [LoadOrderGroup=load-order-group-name]
 [Dependencies=depend-on-item-name[,depend-on-item-name]
 [Security="security-descriptor-string"]...]
+[ServiceSidType=value]
+[DelayedAutoStart=true/false]
+[AddTrigger=service-trigger-install-section[, service-trigger-install-section, ...]]
 ```
 
 Each *service-install-section* must have at least the **ServiceType**, **StartType**, **ErrorControl**, and **ServiceBinary** entries as shown here. However, the remaining entries are optional.
@@ -158,7 +160,7 @@ Indicates a driver started during operating system initialization.
 
 This value should be used by PnP drivers that do device detection during initialization but are not required to load the system.
 
-For example, a PnP driver that can also detect a legacy device should specify this value in its INF so that its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine is called to find the legacy device, even if that device cannot be enumerated by the PnP manager.
+For example, a PnP driver that can also detect a legacy device should specify this value in its INF so that its [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine is called to find the legacy device, even if that device cannot be enumerated by the PnP manager.
 
 <a href="" id="0x2--service-auto-start-"></a>**0x2** (SERVICE_AUTO_START)  
 Indicates a driver started by the service control manager during system startup.
@@ -232,9 +234,84 @@ A *depend-on-item-name* can specify a load order group on which this device/driv
 <a href="" id="security--security-descriptor-string-"></a>**Security**="*security-descriptor-string*"  
 Specifies a security descriptor, to be applied to the service. This security descriptor specifies the permissions that are required to perform such operations as starting, stopping, and configuring the service. The *security-descriptor-string* value is a string with tokens to indicate the DACL (**D:**) security component.
 
-For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
+For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
+
+<a href="" id="description-description-string"></a>**ServiceSidType**=*value*
+
+**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 Version 2004 and above.
+
+This entry can use any valid value as described in [SERVICE_SID_INFO](/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
+
+<a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
+
+**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 2004 and above.
+
+Contains the delayed auto-start setting of an auto-start service.
+
+If this member is TRUE, the service is started after other auto-start services are started plus a short delay. Otherwise, the service is started during system boot.
+
+This setting is ignored unless the service is an auto-start service.
+
+For more information, see [this page](/windows/win32/api/winsvc/ns-winsvc-service_delayed_auto_start_info).
+
+<a href="" id="description-description-string"></a>**AddTrigger**=*service-trigger-install-section [, service-trigger-install-section, ...]*
+
+Specifies the trigger events to be registered for the Win32 service so that the service can be started or stopped when a trigger event occurs. For more information about service trigger events, see [Service Trigger Events](/windows/desktop/Services/service-trigger-events).
+
+Each named service-trigger-install section referenced by an AddTrigger directive has the following format:
+
+```
+[service-trigger-install-section]
+
+TriggerType=trigger-type
+Action=action-type
+SubType=trigger-subtype
+[DataItem=data-type,data]
+...
+```
+
+### Service-Trigger-Install Section Entries and Values:
+**TriggerType**=*trigger-type*
+
+Specifies the service trigger event type in one of the following numeric values, expressed either in decimal or, as is shown in the following list, hexadecimal notation:
+
+**0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL)
+Indicates that event is triggered when a device of the specified device interface class arrives or is present when the system starts. 
+
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger)
+
+**Action**=*action-type*
+
+Specifies the action to take when the specified trigger event occurs.
+
+**0x1** (SERVICE_TRIGGER_ACTION_SERVICE_START) starts the service when the specified trigger event occurs.
+
+**0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP) stops the service when the specified trigger event occurs.
+
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger)
+
+**SubType**=*trigger-subtype*
+
+Specifies a GUID that identifies the trigger event subtype. The value depends on the value of the **TriggerType**. 
+
+When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL), **SubType** specifies the GUID that identifies the device interface class.
+
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger).
+
+**DataItem**=*data-type, data*
+
+Optionally specifies the trigger-specific data for a service trigger event. 
+
+When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL), an optional DataItem may be specified with a data-type of **0x2** (SERVICE_TRIGGER_DATA_TYPE_STRING) to scope the device interface class to a specific hardware ID or compatible ID.
+
+For more information, see [SERVICE_TRIGGER_SPECIFIC_DATA_ITEM structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger_specific_data_item)
+
+The best practice for using the **AddTrigger** directive is to trigger start the service on device interface arrival. For more information, see [Win32 Services Interacting with Devices](./best-practices-win32services-interacting-with-devices.md).
+
+**Note: AddTrigger** syntax is only available in **Windows 10 Version 2004** and forward.
+
 
 ### Specifying Driver Load Order
 
@@ -268,7 +345,7 @@ Depending on the boot scenario, you can use the **BootFlags** registry value to 
 
 The *service-install-section* has the following general form:
 
-```ini
+```inf
 [service-install-section]
 AddReg=add-registry-section
 ...
@@ -281,7 +358,7 @@ HKR,,BootFlags,0x00010003,0x14 ; CM_SERVICE_USB3_DISK_BOOT_LOAD|CM_SERVICE_USB_D
 
 An **AddService** directive can also reference an *event-log-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```ini
+```inf
 [event-log-install-section]
  
 AddReg=add-registry-section[, add-registry-section]... 
@@ -292,7 +369,7 @@ AddReg=add-registry-section[, add-registry-section]...
 
 For a typical device/driver INF file, the *event-log-install-section* uses only the **AddReg** directive to set up an event-logging message file for the driver. An **HKR** specification in an *add-registry-section* designates the **HKLM\\System\\CurrentControlSet\\Services\\EventLog\\**<em>EventLogType</em>**\\**<em>EventName</em> registry key. This event-logging *add-registry-section* has the following general form:
 
-```ini
+```inf
 [drivername_EventLog_AddReg]
 HKR,,EventMessageFile,0x00020000,"path\IoLogMsg.dll;path\driver.sys"
 HKR,,TypesSupported,0x00010001,7 
@@ -300,13 +377,13 @@ HKR,,TypesSupported,0x00010001,7
 
 In particular, the section adds two value entries in the registry subkey created for the device/driver, as follows:
 
--   The value entry named **EventMessageFile** is of type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), as specified by the FLG_ADDREG_TYPE_EXPAND_SZ value **0x00020000**. Its value, enclosed in double quotation marks ("), associates the system-supplied *IoLogMsg.dll* (but it could associate another logging DLL) with the driver binary file. Usually, the paths to each of these files are specified as follows:
+-   The value entry named **EventMessageFile** is of type [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types), as specified by the FLG_ADDREG_TYPE_EXPAND_SZ value **0x00020000**. Its value, enclosed in double quotation marks ("), associates the system-supplied *IoLogMsg.dll* (but it could associate another logging DLL) with the driver binary file. Usually, the paths to each of these files are specified as follows:
 
     *%%SystemRoot%%\\System32\\IoLogMsg.dll*
 
     *%%SystemRoot%%\\System32\\drivers\\driver.sys*
 
--   The value entry named **TypesSupported** is of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), as specified by the FLG_ADDREG_TYPE_DWORD value **0x00010001**.
+-   The value entry named **TypesSupported** is of type [REG_DWORD](/windows/desktop/SysInfo/registry-value-types), as specified by the FLG_ADDREG_TYPE_DWORD value **0x00010001**.
 
     For drivers, this value should be **7**. This value is equivalent to the bitwise OR of EVENTLOG_SUCCESS, EVENTLOG_ERROR_TYPE, EVENTLOG_WARNING_TYPE, and EVENTLOG_INFORMATION_TYPE, without setting the EVENTLOG_AUDIT_*XXX* bits.
 
@@ -319,7 +396,7 @@ Examples
 
 This example shows the service-install and event-log-install sections referenced by the **AddService** directive as already shown earlier in the example for [***DDInstall*.Services**](inf-ddinstall-services-section.md).
 
-```ini
+```inf
 [sermouse_Service_Inst]
 DisplayName    = %sermouse.SvcDesc%
 ServiceType    = 1                   ; = SERVICE_KERNEL_DRIVER
@@ -386,11 +463,4 @@ The example in the reference for the [***DDInstall*.HW**](inf-ddinstall-hw-secti
 [**Strings**](inf-strings-section.md)
 
  
-
- 
-
-
-
-
-
 

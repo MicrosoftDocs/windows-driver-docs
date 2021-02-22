@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_DATADECOMPRESSOR
 description: KSCATEGORY_DATADECOMPRESSOR
-ms.assetid: 260906fc-fdd5-487f-9f45-db6ca4591233
 keywords: ["KSCATEGORY_DATADECOMPRESSOR Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_DATADECOMPRESSOR
 
 
-The KSCATEGORY_DATADECOMPRESSOR [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that decompresses a data stream.
+The KSCATEGORY_DATADECOMPRESSOR [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that decompresses a data stream.
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DATADECOMPRESSOR to indicate to the operating system that the devices support the KSCATEGORY_DATADECOMPRESSOR functional category.
 
-The KSCATEGORY_DATADECOMPRESSOR functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
+The KSCATEGORY_DATADECOMPRESSOR functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
 For information about the device interface class that is defined for the KS functional category that compresses a data stream, see [**KSCATEGORY_DATACOMPRESSOR**](kscategory-datacompressor.md).
 
@@ -75,14 +74,7 @@ Requirements
 
 [**KSCATEGORY_DATACOMPRESSOR**](kscategory-datacompressor.md)
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md)
 
  
-
- 
-
-
-
-
-
 

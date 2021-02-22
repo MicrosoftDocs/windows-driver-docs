@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_CLR\_CONNECTINFO
 description: AVC\_FUNCTION\_CLR\_CONNECTINFO
-ms.assetid: 035555c7-4668-4eda-aed1-44b2b5794ff5
 keywords: ["AVC_FUNCTION_CLR_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -95,13 +94,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PIN\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_pin_id), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PIN\_ID**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_pin_id), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
  
-
- 
-
-
-
-
 

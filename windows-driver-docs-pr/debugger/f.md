@@ -1,7 +1,6 @@
 ---
 title: F (Windows Debugger Glossary)
 description: Glossary page - F
-ms.assetid: 9e5917b2-0f7d-4d6c-8e92-249b29b546ca
 ms.date: 12/17/2019
 ms.localizationpriority: medium
 ---

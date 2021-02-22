@@ -1,7 +1,6 @@
 ---
 title: ACPI_METHOD_SET_ARGUMENT_STRING macro
 description: The ACPI_METHOD_SET_ARGUMENT_STRING macro sets the members of an ACPI_METHOD_ARGUMENT structure for a string value.
-ms.assetid: e0c037a9-65b6-4d6a-9ed6-d9296c14df07
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_STRING macro ACPI Devices
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro
 
 
-The ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a string value.
+The ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a string value.
 
 Syntax
 ------
@@ -65,4 +64,4 @@ Requirements
 ## See also
 
 
-[**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) 
+[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)

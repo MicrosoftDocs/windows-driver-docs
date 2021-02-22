@@ -1,7 +1,6 @@
 ---
 title: Supporting Stretch Blit Operations
 description: Supporting Stretch Blit Operations
-ms.assetid: 1d279e56-41fd-4189-84d2-858e51db281d
 keywords:
 - blit stretch operations WDK DirectX 9.0
 - stretch blit operations WDK DirectX 9.0
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_supporting_stretch_blit_operations_gg"></span><span id="DDK_SUPPORTING_STRETCH_BLIT_OPERATIONS_GG"></span>
 
 
-How a driver performs a stretch blit depends on the platform on which it runs. For Windows 98/Me platforms, when the driver's [*DdBlt*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) function receives a blit request, the driver can calculate stretch factor from the unclipped rectangular areas in the **rOrigDest** and **rOrigSrc** members of the [**DD\_BLTDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_bltdata) structure and factor in the calculation when it performs the blit operation.
+How a driver performs a stretch blit depends on the platform on which it runs. For Windows 98/Me platforms, when the driver's [*DdBlt*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) function receives a blit request, the driver can calculate stretch factor from the unclipped rectangular areas in the **rOrigDest** and **rOrigSrc** members of the [**DD\_BLTDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_bltdata) structure and factor in the calculation when it performs the blit operation.
 
 For DirectX 9.0 and later on NT-based operating systems, the driver can calculate and record stretch factor when it receives a blit request with the DDBLT\_EXTENDED\_FLAGS and DDBLT\_EXTENDED\_PRESENTATION\_STRETCHFACTOR flags set in the **dwFlags** member of DD\_BLTDATA. The driver calculates the stretch factor from the unclipped source and destination rectangular areas in the **rSrc** and **bltFX** members respectively of DD\_BLTDATA with DDBLT\_EXTENDED\_PRESENTATION\_STRETCHFACTOR set. Note that the driver must obtain the unclipped destination rectangular area from the following members of the DDBLTFX structure in **bltFX**, and not use information in the **rDest** member.
 
@@ -37,10 +36,4 @@ Because stretch factor is a floating-point calculation, not all graphics devices
 For more information about extended blit flags, see [Extended Blt Flags](extended-blt-flags.md).
 
  
-
- 
-
-
-
-
 

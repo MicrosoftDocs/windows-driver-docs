@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME
 description: Clients use the KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME property to compare the current physical time on a clock to the current system time.
-ms.assetid: 49f74411-1489-4864-9213-e1894128e355
 keywords: ["KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ Clients use the KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME property to compare th
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time" data-raw-source="[&lt;strong&gt;KSCORRELATED_TIME&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time)"><strong>KSCORRELATED_TIME</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time" data-raw-source="[&lt;strong&gt;KSCORRELATED_TIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time)"><strong>KSCORRELATED_TIME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -60,7 +59,7 @@ Remarks
 
 The KSCORRELATED\_TIME structure contains the current clock time in the **Time** member and the correlated physical time in the **SystemTime** member.
 
-Also see [KS Clocks](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-clocks).
+Also see [KS Clocks](./ks-clocks.md).
 
 Requirements
 ------------
@@ -83,14 +82,5 @@ Requirements
 
 [**KSPROPERTY\_CLOCK\_PHYSICALTIME**](ksproperty-clock-physicaltime.md)
 
-[**KeQueryPerformanceCounter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter)
-
- 
-
- 
-
-
-
-
-
+[**KeQueryPerformanceCounter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter)
 

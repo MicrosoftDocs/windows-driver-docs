@@ -1,7 +1,6 @@
 ---
 title: MRxQueryDirectory routine
 description: The MRxQueryDirectory routine is called by RDBSS to request that a network mini-redirector query information on a file directory.
-ms.assetid: 26c7c7fa-7dfa-43fb-a1db-cfc2fc40b969
 keywords: ["MRxQueryDirectory routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxQueryDirectory routine
 
 
-The *MRxQueryDirectory* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector query information on a file directory.
+The *MRxQueryDirectory* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query information on a file directory.
 
 Syntax
 ------
@@ -111,7 +110,7 @@ The **QueryDirectory.InitialQuery** member is set to nonzero if **UnicodeQueryTe
 
 For a wild card query ("\*.\*", for example), RDBSS will set the **UnicodeQueryTemplate.Buffer** member of the associated FOBX to the wild card query passed.
 
-If the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryDirectory*, then RDBSS will call [**RxFsdPostRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest) passing the RX\_CONTEXT structure to a worker queue for processing by the file system process (FSP).
+If the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryDirectory*, then RDBSS will call [**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest) passing the RX\_CONTEXT structure to a worker queue for processing by the file system process (FSP).
 
 Requirements
 ------------
@@ -136,7 +135,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryEaInfo**](mrxqueryeainfo.md)
 
@@ -160,14 +159,7 @@ Requirements
 
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
-[**RxFsdPostRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest)
+[**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest)
 
  
-
- 
-
-
-
-
-
 

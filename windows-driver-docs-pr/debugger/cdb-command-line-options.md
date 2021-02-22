@@ -1,7 +1,6 @@
 ---
 title: CDB Command-Line Options
 description: First-time users of CDB or NTSD should begin with the Debugging Using CDB and NTSD section.
-ms.assetid: 34dbb695-19e4-4efc-83c7-3a94e5fcf269
 keywords: ["CDB Command-Line Options Windows Debugging"]
 ms.date: 08/01/2018
 topic_type:
@@ -189,7 +188,7 @@ Starts CDB/NTSD in quiet mode.
 <span id="_______-lines______"></span><span id="_______-LINES______"></span> **-lines**   
 Enables source line debugging. If this option is omitted, the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command will have to be used before source debugging will be allowed. For other methods of controlling this, see [SYMOPT\_LOAD\_LINES](symbol-options.md#symopt-load-lines).
 
-<span id="_______-log_a_au_o_ou__LogFile"></span><span id="_______-log_a_au_o_ou__logfile"></span><span id="_______-LOG_A_AU_O_OU__LOGFILE"></span> **-log**{**a|au|o|ou**} *LogFile*  
+<span id="_______-log_a_au_o_ou__LogFile"></span><span id="_______-log_a_au_o_ou__logfile"></span><span id="_______-LOG_A_AU_O_OU__LOGFILE"></span> **-log**{**a\|au\|o\|ou**} *LogFile*  
 Begins logging information to a log file. If the specified file already exists, it will be overwritten if **-logo** is used, or output will be appended to the file if -loga is used. The **-logau** and **-logou** options operate similar to **-loga** and **-logo** respectively, except that the log file is a Unicode file. For more details, see [Keeping a Log File in CDB](keeping-a-log-file-in-cdb.md).
 
 <span id="_______-myob______"></span><span id="_______-MYOB______"></span> **-myob**   
@@ -394,7 +393,7 @@ Causes sleep mode to end for the user-mode debugger whose process ID is specifie
 
 The **-wake** parameter should not be used with any other parameters. This command will not actually start CDB.
 
-<span id="_______-x_e_d_n_i__Exception"></span><span id="_______-x_e_d_n_i__exception"></span><span id="_______-X_E_D_N_I__EXCEPTION"></span> **-x**{**e**|**d**|**n**|**i**} *Exception*  
+<span id="_______-x_e_d_n_i__Exception"></span><span id="_______-x_e_d_n_i__exception"></span><span id="_______-X_E_D_N_I__EXCEPTION"></span> **-x**{**e**\|**d**\|**n**\|**i**} *Exception*  
 Controls the debugger's behavior when the specified event occurs. The *Exception* can be either an exception number or an event code. You can specify this option multiple times to control different events. See [Controlling Exceptions and Events](controlling-exceptions-and-events.md) for details and for other methods of controlling these settings.
 
 <span id="_______-x______"></span><span id="_______-X______"></span> **-x**   

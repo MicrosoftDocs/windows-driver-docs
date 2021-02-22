@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CLEAR
 description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CLEAR property ID that is defined in KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY is used to clear the per-frame settings in the driver.
-ms.assetid: CCFB4226-36A7-4A5A-8A65-F8E9F281AAA4
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR Streaming Media Devices"]
 topic_type:
 - apiref

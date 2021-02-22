@@ -1,7 +1,6 @@
 ---
 title: HFP Device Startup
 description: The HFP Device startup topic discusses what happens when a Bluetooth hands-free profile (HFP) device arrives in the audio system.
-ms.assetid: C478BCBA-2A17-4604-AE2B-99B3445C741B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ When the audio driver sends IOCTLs to the HFP driver, the driver uses the HFP Fi
 ## <span id="Retrieving_static_information"></span><span id="retrieving_static_information"></span><span id="RETRIEVING_STATIC_INFORMATION"></span>Retrieving static information
 
 
-The audio driver can retrieve static information from the HFP driver. For example, the HFP driver can provide the ksnodetype, the container id and the friendly name of the paired HFP device. The audio driver can use this information to create and initialize a KS filter or filters representing the paired HFP device. The audio driver uses [**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor) to get this information.
+The audio driver can retrieve static information from the HFP driver. For example, the HFP driver can provide the ksnodetype, the container id and the friendly name of the paired HFP device. The audio driver can use this information to create and initialize a KS filter or filters representing the paired HFP device. The audio driver uses [**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor) to get this information.
 
 The audio driver can also retrieve the Bluetooth address of the paired HFP device. Each paired HFP device has a unique Bluetooth address, and this can be useful as a unique identifier string. For more information, see [Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md).
 
@@ -76,9 +75,6 @@ The audio driver sends the get connection status IOCTL to get information about 
 The audio driver sends the get volume status IOCTL to get information about any changes in volume level that have occurred in the volume status of the headset.
 
 ## <span id="related_topics"></span>Related topics
-[**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor)  
+[**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor)  
 [Theory of Operation](theory-of-operation.md)  
-[Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md)  
-
-
-
+[Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md)

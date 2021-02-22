@@ -1,7 +1,6 @@
 ---
 title: Smart Card Minidriver Overview
 description: Smart Card Minidriver Overview
-ms.assetid: B5047C79-F74E-44FA-ADE5-8716ABC9EB79
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,9 +10,9 @@ ms.localizationpriority: medium
 
 The card-specific minidriver is the lowest logical interface layer in the Base CSP/KSP. This minidriver lets the Base CSP/KSP and applications interact directly with a specific type of card by using SCRM.
 
-The card minidriver is a DLL that exports a specific set of APIs as defined in this specification. Each call to the card minidriver includes a pointer to a [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure that provides context information. This context information provides some state information in addition to a table of function pointers that is used to facilitate communication between the upper layer and the card minidriver.
+The card minidriver is a DLL that exports a specific set of APIs as defined in this specification. Each call to the card minidriver includes a pointer to a [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure that provides context information. This context information provides some state information in addition to a table of function pointers that is used to facilitate communication between the upper layer and the card minidriver.
 
-For more information about this context structure, see [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)).
+For more information about this context structure, see [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)).
 
 ## <span id="Related_Document"></span><span id="related_document"></span><span id="RELATED_DOCUMENT"></span>Related Document
 
@@ -39,17 +38,17 @@ The *Cardmod.h* C header file provides additional information that is relevant t
 
             o LSA plug-ins that are drivers (such as smart card drivers) need to be digitally signed.
 
-            **Note**  The [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/index) offers the only method for digitally signing drivers for Windows. So it is important to refer to the web site for this information.
+            **Note**  The [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index) offers the only method for digitally signing drivers for Windows. So it is important to refer to the web site for this information.
 
              
 
     -   Adherence to Microsoft Security Development Lifecycle (SDL) Process Guidance.
 
-        -   All plug-ins also need to conform to the applicable portions of the [Microsoft Security Development Lifecycle (SDL) – Process Guidance](https://docs.microsoft.com/previous-versions/windows/desktop/cc307891(v=msdn.10)) topic. For example, see *No Shared Sections*, described in the SDL Process in Appendix G.
+        -   All plug-ins also need to conform to the applicable portions of the [Microsoft Security Development Lifecycle (SDL) – Process Guidance](/previous-versions/windows/desktop/cc307891(v=msdn.10)) topic. For example, see *No Shared Sections*, described in the SDL Process in Appendix G.
 
         -   Even if the plug-ins are properly signed with a Microsoft signature, non-compliance with the SDL Process might result in a failure to load the plug-ins.
 
-For information about SDL, see [Microsoft Security Development Lifecycle (SDL) – Process Guidance](https://docs.microsoft.com/previous-versions/windows/desktop/cc307891(v=msdn.10))..
+For information about SDL, see [Microsoft Security Development Lifecycle (SDL) – Process Guidance](/previous-versions/windows/desktop/cc307891(v=msdn.10))..
 
 And for a discussion about guidelines for developers, see [Developer Guidelines](developer-guidelines.md)
 
@@ -57,8 +56,8 @@ And for a discussion about guidelines for developers, see [Developer Guidelines]
 
 
 -   A card minidriver should assume that transactions are handled by the caller, if it uses SCRM to access the card.
--   The card minidriver can assume that all entry points except [**CardDeleteContext**](https://docs.microsoft.com/previous-versions/dn468715(v=vs.85)) are called by holding the card transaction. This cannot be assumed in **CardDeleteContext** because the card might have been removed or it is being called as part of a cleanup procedure.
--   Multiple contexts can exist in a single process. Calling [**CardDeleteContext**](https://docs.microsoft.com/previous-versions/dn468715(v=vs.85)) on one process should not prevent the other context from functioning.
+-   The card minidriver can assume that all entry points except [**CardDeleteContext**](/previous-versions/dn468715(v=vs.85)) are called by holding the card transaction. This cannot be assumed in **CardDeleteContext** because the card might have been removed or it is being called as part of a cleanup procedure.
+-   Multiple contexts can exist in a single process. Calling [**CardDeleteContext**](/previous-versions/dn468715(v=vs.85)) on one process should not prevent the other context from functioning.
 -   Handling the authentication state of the card is also the responsibility of the caller, not the card minidriver.
 
 ## <span id="Conventions"></span><span id="conventions"></span><span id="CONVENTIONS"></span>Conventions
@@ -97,35 +96,35 @@ Beginning with Version 6, the minidriver interface expands the concept of a PIN 
 ## <span id="Handling_Memory_Allocations"></span><span id="handling_memory_allocations"></span><span id="HANDLING_MEMORY_ALLOCATIONS"></span>Handling Memory Allocations
 
 
-All API elements in this specification that allocate memory buffers internally do so by calling [**PFN\_CSP\_ALLOC**](https://docs.microsoft.com/previous-versions/dn468763(v=vs.85)). Because of this, any such memory buffers must be freed by calling [**PFN\_CSP\_FREE**](https://docs.microsoft.com/previous-versions/dn468767(v=vs.85)).
+All API elements in this specification that allocate memory buffers internally do so by calling [**PFN\_CSP\_ALLOC**](/previous-versions/dn468763(v=vs.85)). Because of this, any such memory buffers must be freed by calling [**PFN\_CSP\_FREE**](/previous-versions/dn468767(v=vs.85)).
 
-Any allocation of memory that the card minidriver performs should be done by using [**PFN\_CSP\_ALLOC**](https://docs.microsoft.com/previous-versions/dn468763(v=vs.85)) or [**PFN\_CSP\_REALLOC**](https://docs.microsoft.com/previous-versions/dn468770(v=vs.85)).
+Any allocation of memory that the card minidriver performs should be done by using [**PFN\_CSP\_ALLOC**](/previous-versions/dn468763(v=vs.85)) or [**PFN\_CSP\_REALLOC**](/previous-versions/dn468770(v=vs.85)).
 
 ## <span id="Caching"></span><span id="caching"></span><span id="CACHING"></span>Caching
 
 
-The Card Interface layer in the Base CSP/KSP implements a data cache to minimize the amount of data that must be written to or read from the card. The data cache is also made available for the card minidriver to use through function pointers in the [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure, and the card minidriver should use these pointers to enhance performance by caching its internal data files that are stored on the card.
+The Card Interface layer in the Base CSP/KSP implements a data cache to minimize the amount of data that must be written to or read from the card. The data cache is also made available for the card minidriver to use through function pointers in the [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure, and the card minidriver should use these pointers to enhance performance by caching its internal data files that are stored on the card.
 
 Data caching requires write access to the card to persist cache freshness counters to the card. The minidriver can control data caching if writing data to the card is not feasible.
 
-For more information on how to control data caching, see the definition of the CP\_CARD\_CACHE\_MODE property in [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)) later in this specification.
+For more information on how to control data caching, see the definition of the CP\_CARD\_CACHE\_MODE property in [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)) later in this specification.
 
 ## <span id="Mandatory_Version_Checking"></span><span id="mandatory_version_checking"></span><span id="MANDATORY_VERSION_CHECKING"></span>Mandatory Version Checking
 
 
-All card minidrivers must implement version checks. The version of the [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure is a negotiation between the version that the caller wants to support and the version that the card minidriver can actually support.
+All card minidrivers must implement version checks. The version of the [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure is a negotiation between the version that the caller wants to support and the version that the card minidriver can actually support.
 
 ### <span id="CARD_DATA_Version_Checks"></span><span id="card_data_version_checks"></span><span id="CARD_DATA_VERSION_CHECKS"></span>CARD\_DATA Version Checks
 
-Define minimum version as the minimum version of the card minidriver context structure (that is, [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure) that is supported, and define the current version as the level for which this card minidriver was designed and for which all card-minidriver-set structure items are guaranteed to be valid on a successful return from [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)). The current version must be greater than or equal to the minimum version and less than or equal to CARD\_DATA\_CURRENT\_VERSION, which is defined in *Cardmod.h*.
+Define minimum version as the minimum version of the card minidriver context structure (that is, [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure) that is supported, and define the current version as the level for which this card minidriver was designed and for which all card-minidriver-set structure items are guaranteed to be valid on a successful return from [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)). The current version must be greater than or equal to the minimum version and less than or equal to CARD\_DATA\_CURRENT\_VERSION, which is defined in *Cardmod.h*.
 
-When the calling application calls [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)), it specifies the desired version that it wants to load. This requested version is set in the **dwVersion** member in the [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure.
+When the calling application calls [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)), it specifies the desired version that it wants to load. This requested version is set in the **dwVersion** member in the [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure.
 
-If the requested version is less than the minimum version that the card minidriver supports, [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)) must return a revision mismatch error (see the following sample code).
+If the requested version is less than the minimum version that the card minidriver supports, [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)) must return a revision mismatch error (see the following sample code).
 
 If the requested version is at least as great as the minimum version, the card minidriver should set the **dwVersion** member to the highest version that it can support that is less than or equal to the requested version.
 
-The following sample code shows the expected card minidriver behavior when checking the version. This is assumed to be in the body of the **CardAcquireContext** function. *pCardData* is a pointer to the [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure passed into this call.
+The following sample code shows the expected card minidriver behavior when checking the version. This is assumed to be in the body of the **CardAcquireContext** function. *pCardData* is a pointer to the [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure passed into this call.
 
 ```ManagedCPlusPlus
 #define MINIMUM_VERSION_SUPPORTED (4)
@@ -148,19 +147,13 @@ The following sample code shows the expected card minidriver behavior when check
 
  
 
-After **dwVersion** is set in the call to [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)), assume that it will not be changed by either the caller or the card minidriver while it is in the same context.
+After **dwVersion** is set in the call to [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)), assume that it will not be changed by either the caller or the card minidriver while it is in the same context.
 
 ### <span id="Other_Structure_Version_Checks"></span><span id="other_structure_version_checks"></span><span id="OTHER_STRUCTURE_VERSION_CHECKS"></span>Other Structure Version Checks
 
-For other versioned structures and other card minidriver API methods, version handling is the same as for the [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) structure, with one exception. If the API method is called with a structure that contains a **dwVersion** member that is set to 0, this must be treated as a **dwVersion** value of 1.
+For other versioned structures and other card minidriver API methods, version handling is the same as for the [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) structure, with one exception. If the API method is called with a structure that contains a **dwVersion** member that is set to 0, this must be treated as a **dwVersion** value of 1.
 
-The [**CardRSADecrypt**](https://docs.microsoft.com/previous-versions/dn468737(v=vs.85)) and [**CardSignData**](https://docs.microsoft.com/previous-versions/dn468741(v=vs.85)) functions have special handling for version numbers for the data structures that are passed in.
-
- 
+The [**CardRSADecrypt**](/previous-versions/dn468737(v=vs.85)) and [**CardSignData**](/previous-versions/dn468741(v=vs.85)) functions have special handling for version numbers for the data structures that are passed in.
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: FloppyClassGuid
 description: FloppyClassGuid
-ms.assetid: 60811704-0a59-48b4-b9c6-baf6c0f8c1c2
 keywords: ["FloppyClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,12 +17,12 @@ ms.date: 10/17/2018
 # FloppyClassGuid
 
 
-FloppyClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for floppy disk [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index). Starting Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_FLOPPY**](guid-devinterface-floppy.md) class identifier for new instances of this class.
+FloppyClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for floppy disk [storage devices](../storage/index.md). Starting Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_FLOPPY**](guid-devinterface-floppy.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](https://go.microsoft.com/fwlink/p/?linkid=256192) sample that uses FloppyClassGuid to register instances of this device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](/samples/browse/) sample that uses FloppyClassGuid to register instances of this device interface class.
 
 Requirements
 ------------
@@ -49,13 +48,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_FLOPPY**](guid-devinterface-floppy.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Hyper-V Extensible Switch Extensions
 description: Enumerating Hyper-V Extensible Switch Extensions
-ms.assetid: AC468A8F-5C48-419B-9E9E-D63925E1CE9D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,9 +8,9 @@ ms.localizationpriority: medium
 # Enumerating Hyper-V Extensible Switch Extensions
 
 
-The [Get-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/get-vmsystemswitchextension) PowerShell cmdlet enumerates the Hyper-V extensible switch extensions that are currently bound to an instance of an extensible switch. This cmdlet also reports whether the extension is enabled in the extensible switch instance.
+The [Get-VMSwitchExtension](/powershell/module/hyper-v/get-vmsystemswitchextension) PowerShell cmdlet enumerates the Hyper-V extensible switch extensions that are currently bound to an instance of an extensible switch. This cmdlet also reports whether the extension is enabled in the extensible switch instance.
 
-The [Get-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/get-vmsystemswitchextension) cmdlet uses the following syntax:
+The [Get-VMSwitchExtension](/powershell/module/hyper-v/get-vmsystemswitchextension) cmdlet uses the following syntax:
 
 ``` syntax
 Get-VMSwitchExtension [[-VMSwitchName] <string[]>] [[-Name] <string[]>] [-ComputerName <string[]>]
@@ -20,7 +19,7 @@ Get-VMSwitchExtension [[-VMSwitchName] <string[]>] [[-Name] <string[]>] [-Comput
 Get-VMSwitchExtension [[-VMSwitch] <VMSwitch[]>] [-ComputerName <string[]>] [<CommonParameters>]
 ```
 
-The following example shows the output from the [Get-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/get-vmsystemswitchextension) cmdlet.
+The following example shows the output from the [Get-VMSwitchExtension](/powershell/module/hyper-v/get-vmsystemswitchextension) cmdlet.
 
 ``` syntax
 PS C:\Windows\system32> Get-VMSwitchExtension PrivateNetwork | fl -property @("Name","ExtensionType", "SwitchName","Enabled")
@@ -53,16 +52,9 @@ Enabled       : True
 ## Related topics
 
 
-[Get-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/get-vmsystemswitchextension)
+[Get-VMSwitchExtension](/powershell/module/hyper-v/get-vmsystemswitchextension)
 
-[**Msvm\_EthernetSwitchExtension**](https://docs.microsoft.com/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
-
- 
+[**Msvm\_EthernetSwitchExtension**](/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
 
  
-
-
-
-
-
 

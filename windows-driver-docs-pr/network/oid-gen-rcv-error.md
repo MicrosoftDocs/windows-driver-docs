@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RCV_ERROR
 description: As a query, the OID_GEN_RCV_ERROR OID specifies the number of frames that a NIC receives but does not indicate to the protocols due to errors.
-ms.assetid: 0481f225-869f-4313-9bc5-7af1de0b7d2d
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_RCV_ERROR Network Drivers Starting with Windows Vista
@@ -35,7 +34,7 @@ Remarks
 
 The count is identical to the *ifInErrors* counter described in RFC 2863.
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
 Requirements
 ------------
@@ -59,9 +58,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

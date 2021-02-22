@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaCA
 description: KSPROPSETID\_BdaCA
-ms.assetid: 2ceb54ff-f111-4cf7-8c8e-f9a4dce42d4e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: APN example
 description: APN example
-ms.assetid: 3cf74bc4-a334-4213-8138-ebfc91b459e8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # APN example
 
 
-The following XML document uses the [APN XML schema](apn-xml-schema.md) to specify the APN information for a service:
+The following XML document uses the [APN XML schema](apn-schema-definition.md) to specify the APN information for a service:
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>

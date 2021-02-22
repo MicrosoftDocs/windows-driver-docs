@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS
 description: WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS is a TLV that contains Wi-Fi Direct Invitation Response parameters.
-ms.assetid: A242F40C-D062-4A62-8F47-E42E74EAEFE8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Terminal Server Printing
 description: Terminal Server Printing
-ms.assetid: 627d05f6-1499-4645-ad9a-b1a09f41b0c9
 keywords:
 - printer drivers WDK , terminal servers
 - terminal server printing WDK
@@ -34,10 +33,10 @@ If you are developing a printer minidriver or driver for Windows 2000 or later, 
 -   If your device must be supported by a custom driver, your driver must adhere exactly to Microsoft's [printer driver architecture](printer-driver-architecture.md). Specifically:
     1.  You must create a [printer interface DLL](printer-interface-dll.md).
     2.  You must create a [printer graphics DLL](printer-graphics-dll.md). This DLL can execute in either user mode or kernel mode, but user mode is preferred.
-    3.  If you create kernel-mode code, you must test the code using [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+    3.  If you create kernel-mode code, you must test the code using [Driver Verifier](../devtest/driver-verifier.md).
     4.  You must provide an installation procedure based on setup INF files, as described in [Installing and Configuring Printer Drivers](installing-and-configuring-printer-drivers.md).
 
-All custom driver code must be reentrant. User-mode code should employ critical section objects (described in the Windows SDK documentation). Kernel-mode code should use semaphores (see [**EngCreateSemaphore**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engcreatesemaphore) and related functions).
+All custom driver code must be reentrant. User-mode code should employ critical section objects (described in the Windows SDK documentation). Kernel-mode code should use semaphores (see [**EngCreateSemaphore**](/windows/win32/api/winddi/nf-winddi-engcreatesemaphore) and related functions).
 
 Printer drivers and custom spooler components must access the registry only through interfaces provided specifically for these drivers and spooler components, as described in appropriate sections of the WDK.
 
@@ -54,7 +53,7 @@ Usually, all you need to do for installation is provide an INF file that can be 
     2.  If a file must be replaced, the setup code should take steps to unload the old version and then load the new version (for example, by stopping the driver service, replacing the file, then restarting the service).
     3.  Requiring a user to log off, then re-log on, is preferable to requiring a system reboot.
 
-For more information about co-installers and class installers, see [Writing Class Installers and Co-Installers](https://docs.microsoft.com/windows-hardware/drivers/install/writing-class-installers-and-co-installers).
+For more information about co-installers and class installers, see [Writing Class Installers and Co-Installers](../install/writing-class-installers-and-co-installers.md).
 
 **Note**   Before writing custom setup code, it is important to read the Terminal Services programming guidelines provided in the Windows SDK documentation.
 
@@ -66,16 +65,11 @@ Custom setup code that is run by a user can display a user interface.
 
 Almost all printer driver code runs in the spooler's execution context and therefore cannot display a user interface. User interfaces can be displayed only by printer interface DLLs, and only from within the following functions:
 
--   The [**DrvDevicePropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicepropertysheets) and [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) functions, which create property pages.
+-   The [**DrvDevicePropertySheets**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicepropertysheets) and [**DrvDocumentPropertySheets**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) functions, which create property pages.
 
--   The [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function, which receives event codes identifying printer events. Note that the function can display a user interface only for the PRINTER\_EVENT\_ADD\_CONNECTION and PRINTER\_EVENT\_DELETE\_CONNECTION event codes.
+-   The [**DrvPrinterEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function, which receives event codes identifying printer events. Note that the function can display a user interface only for the PRINTER\_EVENT\_ADD\_CONNECTION and PRINTER\_EVENT\_DELETE\_CONNECTION event codes.
 
 All other printer driver code executes in the spooler's context. From this context, calling **MessageBox** or **MessageBoxEx** is allowed, but you must set MB\_SERVICE\_NOTIFICATION. These functions are described in the Windows SDK documentation.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: MB low level UICC access
 description: MB low level UICC access
-ms.assetid: AD0E9F20-9C95-4102-94EF-054D45E2C597
 keywords:
 - MB low level UICC access, Mobile Broadband low level UICC access, Mobile Broadband miniport driver low level UICC, MB UICC ATR, MB UICC Answer to Reset, MB UICC open channel, MB UICC close channel, MB UICC APDU, MB UICC terminal capability, MB UICC reset
 ms.date: 12/05/2017
@@ -40,7 +39,7 @@ The following table specifies the command code for each CID, as well as whether 
 
 ## Status codes
 
-MBIM status codes are defined in Section 9.4.5 of the [MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064). In addition, the following additional failure status codes are defined:
+MBIM status codes are defined in Section 9.4.5 of the [MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement). In addition, the following additional failure status codes are defined:
 
 | Status Code | Value (hex) | Description |
 | --- | --- | --- |
@@ -77,7 +76,7 @@ The Answer to Reset (ATR) is the first string of bytes sent by the UICC after a 
 
 ### Parameters
 
-|   | Set | Query | Notification |
+|  Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Empty | Not applicable |
 | Response | Not applicable | MBIM_MS_ATR_INFO | Not applicable |
@@ -132,7 +131,7 @@ The function implements this MBIM command using a sequence of UICC commands:
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_OPEN_CHANNEL | Not applicable | Not applicable |
 | Response | MBIM_MS_UICC_OPEN_CHANNEL_INFO | Not applicable | Not applicable |
@@ -201,7 +200,7 @@ If the host specifies a channel group, the function determines which (if any) lo
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_CLOSE_CHANNEL | Not applicable | Not applicable |
 | Response | MBIM_MS_UICC_CLOSE_CHANNEL_INFO | Not applicable | Not applicable |
@@ -269,7 +268,7 @@ The function shall return the status, SW1 SW2, and response from the UICC to the
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_APDU | Not applicable | Not applicable |
 | Response | MBIM_MS_UICC_APDU_INFO | Not applicable | Not applicable |
@@ -349,7 +348,7 @@ The host sends MBIM_CID_MS_UICC_TERMINAL_CAPABILITY to inform the modem about th
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_TERMINAL_CAPABILITY | Empty | Not applicable |
 | Response | Not applicable | MBIM_MS_TERMINAL_CAPABILITY_INFO | Not applicable |
@@ -413,7 +412,7 @@ When the host queries the function to determine the passthrough status, if the f
 
 ### Parameters
 
-|   | Set | Query | Notification |
+| Type  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_RESET | Empty | Not applicable |
 | Response | MBIM_MS_UICC_RESET_INFO | MBIM_MS_UICC_RESET_INFO | Not applicable |

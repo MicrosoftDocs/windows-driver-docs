@@ -1,7 +1,6 @@
 ---
 title: Point, Line, and Triangle Filling Requirements
 description: Point, Line, and Triangle Filling Requirements
-ms.assetid: 1a0a8160-01e2-4fb7-b1a2-6b61f1021fb9
 keywords:
 - point fill rule WDK Direct3D
 - line fill rule WDK Direct3D

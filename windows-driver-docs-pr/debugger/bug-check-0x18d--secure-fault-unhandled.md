@@ -36,11 +36,11 @@ This bug check indidates that a secure fault originated by the secure kernel cou
 
 ```text
      0x1 : KSECURE_FAULT_SLAT_NX
-         A no-execute fault occured due to SLAT page protections.
+         A no-execute fault occurred due to SLAT page protections.
      0x2 : KSECURE_FALT_SLAT_READ
          A read fault occurred due to SLAT page protections.
      0x4 : KSECURE_FAULT_SLAT_WRITE
-         A write fault occured due to SLAT page protections.
+         A write fault occurred due to SLAT page protections.
      0x8 : KSECURE_FAULT_DOUBLE_FAULT
          A secure fault occurred before the prior secure fault had been dismissed by the kernel.
 ```

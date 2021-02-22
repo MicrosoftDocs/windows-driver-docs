@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_QUERY_SECURITY.
-ms.assetid: 7707fec2-9fe8-40f6-9f34-f43403551440
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY union
 
-Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_QUERY_SECURITY**](irp-mj-query-security.md).
+Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_QUERY_SECURITY**](irp-mj-query-security.md).
 
 ## Syntax
 
@@ -53,41 +52,40 @@ Pointer to a caller-supplied [**SECURITY_INFORMATION**](security-information.md)
 Length, in bytes, of the buffer that **SecurityBuffer** points to.
 
 **SecurityBuffer**  
-Pointer to a caller-supplied output buffer that receives a copy of the security descriptor of the specified object. The calling process must have the right to view the specified aspects of the object's security status. The [**SECURITY_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure is returned in self-relative format. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+Pointer to a caller-supplied output buffer that receives a copy of the security descriptor of the specified object. The calling process must have the right to view the specified aspects of the object's security status. The [**SECURITY_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure is returned in self-relative format. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
 **MdlAddress**  
 Address of a memory descriptor list (MDL) that describes the buffer that **SecurityBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **SecurityBuffer**. See **Remarks**.
 
 ## Remarks
 
-The [**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP_MJ_QUERY_SECURITY**](irp-mj-query-security.md) operations contains the parameters for an IRP-based query-security-information operation represented by a callback data ([**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP_MJ_QUERY_SECURITY**](irp-mj-query-security.md) operations contains the parameters for an IRP-based query-security-information operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
 If both a **SecurityBuffer** and **MdlAddress** buffer are provided, it is recommended that minifilters use the MDL. The memory that **SecurityBuffer** points to is valid when it is a user mode address being accessed within the context of the calling process, or if it is a kernel mode address.
 
 If a minifilter changes the value of **MdlAddress**, then after its post operation callback, Filter Manager will free the MDL currently stored in **MdlAddress** and restore the previous value of **MdlAddress**.
 
-On Windows XP and later, the object that the **TargetFileObject** member of the FLT_IO_PARAMETER_BLOCK structure points to can represent a named data stream. For more information about named data streams, see [**FILE_STREAM_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information).
+On Windows XP and later, the object that the **TargetFileObject** member of the FLT_IO_PARAMETER_BLOCK structure points to can represent a named data stream. For more information about named data streams, see [**FILE_STREAM_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information).
 
 IRP_MJ_QUERY_SECURITY is an IRP-based operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | Fltkernel.h (include Fltkernel.h) |
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 
-[**FILE_STREAM_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information)
+[**FILE_STREAM_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information)
 
-[**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
+[**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
 [**IRP_MJ_QUERY_SECURITY**](irp-mj-query-security.md)
 
-[**SECURITY_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
+[**SECURITY_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
 [**SECURITY_INFORMATION**](security-information.md)

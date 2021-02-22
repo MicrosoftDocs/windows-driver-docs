@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_AUDIO\_ENGINE
 description: The KSNODETYPE\_AUDIO\_ENGINE audio endpoint is a new endpoint that is available with Windows 8 and later versions of Windows.
-ms.assetid: C1A7E136-655A-4024-A280-F252F1AE1282
 keywords: ["KSNODETYPE_AUDIO_ENGINE Audio Devices"]
 topic_type:
 - apiref

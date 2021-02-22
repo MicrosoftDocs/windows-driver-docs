@@ -1,7 +1,6 @@
 ---
 title: SR-IOV VF Failover and Live Migration Support
 description: SR-IOV VF Failover and Live Migration Support
-ms.assetid: 93D6EFC7-B701-4D10-8114-FA437E80096B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,21 +32,15 @@ The transition between the VF and synthetic data paths occurs with minimum loss 
 
     For more information about VPorts, see [Virtual Ports (VPorts)](virtual-ports--vports-.md).
 
-2.  The virtualization stack deletes the VPort that is attached to the VF by issuing an Object Identifier (OID) set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-delete-vport) to the PF miniport driver. The miniport driver frees any hardware and software resources associated with the VPort and completes the OID request.
+2.  The virtualization stack deletes the VPort that is attached to the VF by issuing an Object Identifier (OID) set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](./oid-nic-switch-delete-vport.md) to the PF miniport driver. The miniport driver frees any hardware and software resources associated with the VPort and completes the OID request.
 
     For more information, see [Deleting a Virtual Port](deleting-a-virtual-port.md).
 
-3.  The virtualization stack requests a PCIe Function Level Reset (FLR) of the VF before its resources are deallocated. The stack does this by issuing an OID set request of [OID\_SRIOV\_RESET\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-sriov-reset-vf)to the PF miniport driver. The FLR brings the VF on the SR-IOV network adapter into a quiescent state and clears any pending interrupt events for the VF.
+3.  The virtualization stack requests a PCIe Function Level Reset (FLR) of the VF before its resources are deallocated. The stack does this by issuing an OID set request of [OID\_SRIOV\_RESET\_VF](./oid-sriov-reset-vf.md)to the PF miniport driver. The FLR brings the VF on the SR-IOV network adapter into a quiescent state and clears any pending interrupt events for the VF.
 
-4.  After the VF has been reset, the virtualization stack requests a deallocation of the VF resources by issuing an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-free-vf) to the PF miniport driver. This causes the miniport driver to free the hardware resources associated with the VF.
+4.  After the VF has been reset, the virtualization stack requests a deallocation of the VF resources by issuing an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](./oid-nic-switch-free-vf.md) to the PF miniport driver. This causes the miniport driver to free the hardware resources associated with the VF.
 
 For more information about this process, see [Virtual Function Teardown Sequence](virtual-function-teardown-sequence.md).
 
  
-
- 
-
-
-
-
 

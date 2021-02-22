@@ -1,7 +1,6 @@
 ---
 title: Audio Filter Graphs
 description: Audio Filter Graphs
-ms.assetid: 823de0d5-9368-4ae6-9f11-a8daa0640edd
 keywords:
 - audio filters WDK audio , graphs
 - filter graphs WDK audio , about filter graphs
@@ -37,16 +36,11 @@ At the bottom of the preceding figure, the source pin that drives the speaker an
 
 In the preceding figure, the data path shown between each wave filter and its corresponding topology filter typically represents a physical connection: a fixed, hardware connection on the audio adapter that cannot be configured by software.
 
-Because a bridge pin or a pin with a physical connection is permanently connected, the pin exists implicitly and cannot be instantiated or deleted. Thus, there are no bridge pin objects (instances of bridge pins) to send IRPs to, although you can query a filter object for the [KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin) properties of its bridge pins. The same rule applies to pins with physical connections.
+Because a bridge pin or a pin with a physical connection is permanently connected, the pin exists implicitly and cannot be instantiated or deleted. Thus, there are no bridge pin objects (instances of bridge pins) to send IRPs to, although you can query a filter object for the [KSPROPSETID\_Pin](../stream/kspropsetid-pin.md) properties of its bridge pins. The same rule applies to pins with physical connections.
 
 The signal that passes through a bridge pin or physical connection can be either analog or digital.
 
 For example, in the preceding figure, the two bridge pins both handle analog signals. The bridge pin on the left transmits the output signal from a DAC (digital-to-analog converter), which drives a speaker. The bridge pin on the right receives the signal from a microphone, which enters an ADC (analog-to-digital converter). However, a bridge pin might also represent an S/PDIF connector on an audio device. In this case, the signal that passes through the bridge pin is digital rather than analog.
 
  
-
- 
-
-
-
 

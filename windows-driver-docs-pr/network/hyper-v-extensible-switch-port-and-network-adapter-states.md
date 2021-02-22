@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Port and Network Adapter States
 description: Hyper-V Extensible Switch Port and Network Adapter States
-ms.assetid: 1E2075E3-D7CC-4364-ABB2-D5969DB361B5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -45,7 +44,7 @@ The following list describes the various states of the extensible switch port an
 In this state, an extensible switch port does not exist on the extensible switch. OID requests that target a previously created port cannot be issued after the port has entered this state.
 
 <a href="" id="port-created"></a>*Port created*  
-When the extensible switch interface issues an OID set request of [OID\_SWITCH\_PORT\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create), the port is created on the extensible switch. In this state, the extensible switch interface and extension can issue OID requests that target the port.
+When the extensible switch interface issues an OID set request of [OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md), the port is created on the extensible switch. In this state, the extensible switch interface and extension can issue OID requests that target the port.
 
 For more information about OID traffic through the extensible switch driver stack, see [Hyper-V Extensible Switch Control Path](hyper-v-extensible-switch-control-path.md).
 
@@ -54,7 +53,7 @@ For more information about OID traffic through the extensible switch driver stac
  
 
 <a href="" id="network-adapter-connection-created"></a>*Network adapter connection created*  
-When the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create), the network adapter connection to the port is created on the extensible switch. In this state, the extensible switch interface can do the following:
+When the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md), the network adapter connection to the port is created on the extensible switch. In this state, the extensible switch interface can do the following:
 
 -   Issue OID requests that target the network adapter connection.
 
@@ -77,7 +76,7 @@ For more information about packet traffic through the extensible switch driver s
  
 
 <a href="" id="network-adapter-connected"></a>*Network adapter connected*  
-When the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect), the network adapter is fully connected to the extensible switch port. In this state, the extension can now do the following:
+When the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md), the network adapter is fully connected to the extensible switch port. In this state, the extension can now do the following:
 
 -   Issue OID requests that target the network adapter connection.
 
@@ -90,7 +89,7 @@ When the extensible switch interface issues an OID set request of [OID\_SWITCH\_
      
 
 <a href="" id="network-adapter-disconnected"></a>*Network adapter disconnected*  
-When the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect), the network adapter is being disconnected from the extensible switch port. For example, this OID request is issued when the child partition, which exposed a VM network adapter, is stopped or the external network adapter is disabled.
+When the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md), the network adapter is being disconnected from the extensible switch port. For example, this OID request is issued when the child partition, which exposed a VM network adapter, is stopped or the external network adapter is disabled.
 
 In this state, the extensible switch extension can no longer originate packets or OID requests that target the connection. Also, forwarding extensions can no longer redirect packets to the connection.
 
@@ -99,12 +98,12 @@ In this state, the extensible switch extension can no longer originate packets o
  
 
 <a href="" id="network-adapter-connection-deleted"></a>*Network adapter connection deleted*  
-After all packet traffic and OID requests that target the network adapter connection are completed, the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete) to delete the connection from the extensible switch.
+After all packet traffic and OID requests that target the network adapter connection are completed, the extensible switch interface issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](./oid-switch-nic-delete.md) to delete the connection from the extensible switch.
 
 In this state, the extensible switch interface will no longer issue packets or OID requests that target the connection.
 
 <a href="" id="port-tearing-down"></a>*Port tearing down*  
-When the extensible switch interface issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown), the extensible switch port is being torn down in preparation to being deleted.
+When the extensible switch interface issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md), the extensible switch port is being torn down in preparation to being deleted.
 
 In this state, the extensible switch extension can no longer originate OID requests that target the port.
 
@@ -112,13 +111,13 @@ In this state, the extensible switch extension can no longer originate OID reque
 
  
 
-After all pending OID requests that target the port are completed, the extensible switch interface issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-delete). This causes the port to transition to a *Port not created* state.
+After all pending OID requests that target the port are completed, the extensible switch interface issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](./oid-switch-port-delete.md). This causes the port to transition to a *Port not created* state.
 
 The extension can call an extensible switch handler function to increment or decrement a reference counter on a port or network adapter connection component. While a component's reference counter is nonzero, the extensible switch interface cannot delete the component.
 
-The extension can call [*ReferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port) or [*DereferenceSwitchPort*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port) to increment or decrement a reference counter for an extensible switch port. These calls can be made after the port has reached the *Port created* state. These calls must not be made after the port has reached the *Port tearing down* or *Port not created* states.
+The extension can call [*ReferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port) or [*DereferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port) to increment or decrement a reference counter for an extensible switch port. These calls can be made after the port has reached the *Port created* state. These calls must not be made after the port has reached the *Port tearing down* or *Port not created* states.
 
-The extension can call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) or [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to increment or decrement a reference counter for an extensible switch network adapter connection. These calls can be made after the connection has reached the *Network adapter connected* state. These calls must not be made after the connection has reached the *Network adapter disconnected* or *Network adapter deleted* states.
+The extension can call [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) or [*DereferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to increment or decrement a reference counter for an extensible switch network adapter connection. These calls can be made after the connection has reached the *Network adapter connected* state. These calls must not be made after the connection has reached the *Network adapter disconnected* or *Network adapter deleted* states.
 
 The following table describes the operations that are allowed based on the state of the extensible switch port or network adapter connection components.
 
@@ -131,8 +130,8 @@ The following table describes the operations that are allowed based on the state
 <thead>
 <tr class="header">
 <th align="left">Component state</th>
-<th align="left">Calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port" data-raw-source="[&lt;em&gt;ReferenceSwitchPort&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port)"><em>ReferenceSwitchPort</em></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port" data-raw-source="[&lt;em&gt;DereferenceSwitchPort&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port)"><em>DereferenceSwitchPort</em></a> allowed?</th>
-<th align="left">Calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic" data-raw-source="[&lt;em&gt;ReferenceSwitchNic&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic)"><em>ReferenceSwitchNic</em></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic" data-raw-source="[&lt;em&gt;DereferenceSwitchNic&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic)"><em>DereferenceSwitchNic</em></a> allowed?</th>
+<th align="left">Calls to <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port" data-raw-source="[&lt;em&gt;ReferenceSwitchPort&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port)"><em>ReferenceSwitchPort</em></a> or <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port" data-raw-source="[&lt;em&gt;DereferenceSwitchPort&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port)"><em>DereferenceSwitchPort</em></a> allowed?</th>
+<th align="left">Calls to <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic" data-raw-source="[&lt;em&gt;ReferenceSwitchNic&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic)"><em>ReferenceSwitchNic</em></a> or <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic" data-raw-source="[&lt;em&gt;DereferenceSwitchNic&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic)"><em>DereferenceSwitchNic</em></a> allowed?</th>
 </tr>
 </thead>
 <tbody>
@@ -265,12 +264,4 @@ The following table describes the operations that are allowed based on the state
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

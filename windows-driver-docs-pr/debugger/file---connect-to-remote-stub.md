@@ -1,7 +1,6 @@
 ---
 title: File Connect to Remote Stub
 description: File Connect to Remote Stub
-ms.assetid: 7357db85-babe-4729-9a20-76ba284f5bf3
 keywords: ["File Connect to Remote Stub"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

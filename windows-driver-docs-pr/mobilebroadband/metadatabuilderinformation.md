@@ -1,14 +1,13 @@
 ---
 title: MetadataBuilderInformation
 description: MetadataBuilderInformation
-ms.assetid: 94403994-2165-405e-bfa0-974af8e241fe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # MetadataBuilderInformation
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The MetadataBuilderInformation element specifies information about the application that created the device metadata package.
 

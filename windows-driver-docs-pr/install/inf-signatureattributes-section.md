@@ -1,7 +1,6 @@
 ---
 title: INF SignatureAttributes Section
 description: This section allows users to request additional signatures as required by certain certification scenarios.
-ms.assetid: 8169686B-C45B-4D67-8B09-CD5F9977898D
 keywords:
 - INF SignatureAttributes Section Device and Driver Installation
 topic_type:
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 # INF SignatureAttributes Section
 
 
-This section allows users to request additional signatures as required by certain certification scenarios. For example, the following scenarios require this section: Protected Environment media playback, [Early Launch Antimalware](https://docs.microsoft.com/windows-hardware/drivers/install/elam-driver-submission), and third party HAL extensions. These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests.
+This section allows users to request additional signatures as required by certain certification scenarios. For example, the following scenarios require this section: Protected Environment media playback, [Early Launch Antimalware](./elam-driver-submission.md), and third party HAL extensions. These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests.
 
 ```inf
 [SignatureAttributes]
@@ -51,7 +50,7 @@ Each Signature Type has a corresponding attribute and value, as listed below. Us
 Remarks
 -------
 
-These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM. For more info, see [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/).
+These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM. For more info, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/).
 
 These INF sections should be used when requesting additional signatures regardless of the target OS.
 
@@ -116,14 +115,7 @@ WindowsHello=true
 ## See also
 
 
-[Dashboard Help](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Dashboard Help](../dashboard/index.yml)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: HardwareID Registry Subkey
 description: HardwareID Registry Subkey
-ms.assetid: c6c52aa1-68ee-4d64-be97-509203db6970
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Handling Requests to Storage Peripherals
 description: Handling Requests to Storage Peripherals
-ms.assetid: 3859588e-fc39-4323-a901-8771874e64d2
 keywords:
 - storage class drivers WDK , peripherals
 - class drivers WDK storage , peripherals
@@ -19,7 +18,7 @@ For all requests that require the storage port driver to execute a request over 
 
 Storage class drivers also pass on IRP_MJ_SCSI requests to the underlying storage port driver. Such a request can originate from a [Storage Filter Drivers](storage-filter-drivers.md).
 
-For [**IOCTL_SCSI_PASS_THROUGH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) requests, described in [Handling SCSI Pass-Through Requests](handling-scsi-pass-through-requests.md), the class driver is responsible for setting the **MinorFunction** code to IRP_MJ_DEVICE_CONTROL in the port driver's I/O stack location of the IRP before passing the IRP_MJ_DEVICE_CONTROL request on to the port driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+For [**IOCTL_SCSI_PASS_THROUGH**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) requests, described in [Handling SCSI Pass-Through Requests](handling-scsi-pass-through-requests.md), the class driver is responsible for setting the **MinorFunction** code to IRP_MJ_DEVICE_CONTROL in the port driver's I/O stack location of the IRP before passing the IRP_MJ_DEVICE_CONTROL request on to the port driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 Every storage class driver is responsible for splitting up transfer requests (IRP_MJ_READ and/or IRP_MJ_WRITE) that exceed the underlying HBA's capabilities. Consequently, most class drivers also call an internal *SplitTransferRequest* routine, described in [Storage Class Driver's SplitTransferRequest Routine](storage-class-driver-s-splittransferrequest-routine.md), or implement the same functionality in their dispatch routines for read and write requests.
 

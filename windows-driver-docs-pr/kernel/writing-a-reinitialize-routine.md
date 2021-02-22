@@ -1,7 +1,6 @@
 ---
 title: Writing a Reinitialize Routine
 description: Writing a Reinitialize Routine
-ms.assetid: 47a7dd3f-e474-49c7-adf2-11f6e788c261
 keywords: ["standard driver routines WDK kernel , Reinitialize routine", "driver routines WDK kernel , Reinitialize routine", "routines WDK kernel , Reinitialize routine", "Reinitialize", "reinitializing drivers WDK", "driver reinitialization WDK kernel", "driver initialization WDK kernel", "initializing drivers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,11 +12,11 @@ ms.localizationpriority: medium
 
 
 
-Any driver that needs to initialize itself in stages can contain a [*Reinitialize*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-driver_reinitialize) routine. A *Reinitialize* routine is called after the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine has returned control and other drivers have initialized themselves. Typically, the *Reinitialize* routine performs tasks that must be done after another driver starts.
+Any driver that needs to initialize itself in stages can contain a [*Reinitialize*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-driver_reinitialize) routine. A *Reinitialize* routine is called after the [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine has returned control and other drivers have initialized themselves. Typically, the *Reinitialize* routine performs tasks that must be done after another driver starts.
 
-For example, the system's keyboard class driver, **kbdclass**, supports both PnP and legacy keyboard ports. If a system includes one or more legacy ports that the PnP manager cannot detect, the keyboard class driver must nevertheless create a device object for each port and layer itself over lower-level drivers for the port. Consequently, the class driver has a *Reinitialize* routine to be called after its **DriverEntry** and [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routines have been called and other drivers have been loaded. The *Reinitialize* routine detects the port, creates a device object for it, and layers the driver over other lower-level drivers for the device.
+For example, the system's keyboard class driver, **kbdclass**, supports both PnP and legacy keyboard ports. If a system includes one or more legacy ports that the PnP manager cannot detect, the keyboard class driver must nevertheless create a device object for each port and layer itself over lower-level drivers for the port. Consequently, the class driver has a *Reinitialize* routine to be called after its **DriverEntry** and [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routines have been called and other drivers have been loaded. The *Reinitialize* routine detects the port, creates a device object for it, and layers the driver over other lower-level drivers for the device.
 
-A driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine calls [**IoRegisterDriverReinitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterdriverreinitialization) to queue a *Reinitialize* routine for execution. The *Reinitialize* routine can also call **IoRegisterDriverReinitialization** itself, which causes the routine to be requeued. One of the parameters to *Reinitialize* indicates the number of times it has been called.
+A driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine calls [**IoRegisterDriverReinitialization**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterdriverreinitialization) to queue a *Reinitialize* routine for execution. The *Reinitialize* routine can also call **IoRegisterDriverReinitialization** itself, which causes the routine to be requeued. One of the parameters to *Reinitialize* indicates the number of times it has been called.
 
 The call to **IoRegisterDriverReinitialization** can include a pointer to driver-defined context data, which the system supplies as input to *Reinitialize*. If the *Reinitialize* routine uses the registry, the context data should include the *RegistryPath* pointer that was passed to the **DriverEntry** routine because this pointer is not an input parameter to the *Reinitialize* routine.
 
@@ -28,9 +27,4 @@ Usually, a driver with a *Reinitialize* routine is a higher-level driver that co
 If a driver has a *Reinitialize* routine, it initializes in the same basic steps described in [Writing a DriverEntry Routine](writing-a-driverentry-routine.md), and it also has the same basic requirements as its **DriverEntry** routine.
 
  
-
- 
-
-
-
 

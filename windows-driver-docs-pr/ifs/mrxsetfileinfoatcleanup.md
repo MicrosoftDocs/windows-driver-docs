@@ -1,7 +1,6 @@
 ---
 title: MRxSetFileInfoAtCleanup routine
 description: The MRxSetFileInfoAtCleanup routine is called by RDBSS to request that a network mini-redirector set file information on a file system object at cleanup.
-ms.assetid: 099244ee-cc66-4500-9fee-a10238aaa66c
 keywords: ["MRxSetFileInfoAtCleanup routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxSetFileInfoAtCleanup routine
 
 
-The *MRxSetFileInfoAtCleanup* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector set file information on a file system object at cleanup.
+The *MRxSetFileInfoAtCleanup* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set file information on a file system object at cleanup.
 
 Syntax
 ------
@@ -93,7 +92,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -118,11 +117,4 @@ Requirements
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
  
-
- 
-
-
-
-
-
 

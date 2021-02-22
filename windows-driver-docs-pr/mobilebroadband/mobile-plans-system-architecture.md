@@ -1,10 +1,8 @@
 ---
 title: Mobile Plans system architecture
 description: Mobile Plans system architecture
-ms.assetid: 76ea00c3-87b2-48ac-9a6a-ac794c0d7b88
 keywords:
 - Windows Mobile Plans mobile operators
-ms.author: windowsdriverdev
 ms.date: 07/31/2019
 ms.topic: article
 ms.prod: windows-hardware

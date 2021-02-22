@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_TYPES
 description: Clients use KSPROPERTY\_BDA\_NODE\_TYPES to retrieve a list of node types.
-ms.assetid: 8fe72434-3635-4c2c-a72a-1fd398e488d8
 keywords: ["KSPROPERTY_BDA_NODE_TYPES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -79,18 +78,11 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeTypes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodetypes)
+[**BdaPropertyNodeTypes**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodetypes)
 
-[**KSNODE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor)
+[**KSNODE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
-
-
-
-
 

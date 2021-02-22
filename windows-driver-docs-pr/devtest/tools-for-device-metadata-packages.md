@@ -1,7 +1,6 @@
 ---
 title: Tools for Device Metadata Packages
 description: Tools for Device Metadata Packages
-ms.assetid: 3d0daa9b-79c8-456d-bdbf-d7efa2d898c4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Introduction to Printer Graphics DLLs
 description: Introduction to Printer Graphics DLLs
-ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
 keywords:
 - printer graphics DLL WDK , about printer graphics DLL
 - graphics DLL WDK printer , about printer graphics DLL
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 # Introduction to Printer Graphics DLLs
 
 
-Printer graphics DLLs implement Drv-prefixed graphics DDI functions that are described in [Using the Graphics DDI](https://docs.microsoft.com/windows-hardware/drivers/display/using-the-graphics-ddi). These DLLs have the following two responsibilities:
+Printer graphics DLLs implement Drv-prefixed graphics DDI functions that are described in [Using the Graphics DDI](../display/using-the-graphics-ddi.md). These DLLs have the following two responsibilities:
 
 -   Assist GDI in rendering a print job.
 
@@ -22,19 +21,19 @@ Printer graphics DLLs implement Drv-prefixed graphics DDI functions that are des
 
 -   Deliver a rendered data stream to the spooler.
 
-    Printer graphics DLLs typically produce an output stream in a RAW data type.
+    Printer graphics DLLs typically produce an output stream in a [RAW data type](raw-data-type.md) (including command sequences) that the spooler can send to printer hardware through *print monitors*.
 
 The amount of rendering assistance that a printer graphics DLL must provide is printer type-specific, depending on the hardware's drawing capabilities, and includes the following scenarios:
 
 -   The GDI rendering engine does all rendering, using a GDI-managed surface. The graphics DLL does not provide any DDI drawing functions.
 
--   The graphics DLL provides some graphics DDI drawing functions to work in conjunction with GDI's rendering engine, using a GDI-managed surface. The graphics DDI drawing functions provided by the graphics DLL can optionally call back to the GDI rendering engine's [GDI support services](https://docs.microsoft.com/windows-hardware/drivers/display/gdi-support-services).
+-   The graphics DLL provides some graphics DDI drawing functions to work in conjunction with GDI's rendering engine, using a GDI-managed surface. The graphics DDI drawing functions provided by the graphics DLL can optionally call back to the GDI rendering engine's [GDI support services](../display/gdi-support-services.md).
 
 -   The graphics DLL does all rendering by providing graphics DDI drawing functions and using a device-managed surface.
 
 For example, the [Microsoft Universal Printer Driver](microsoft-universal-printer-driver.md) (Unidrv) uses a GDI-managed surface and provides some graphics DDI drawing functions, while the [Microsoft PostScript Printer Driver](microsoft-postscript-printer-driver.md) uses a device-managed surface.
 
-For more information about providing rendering assistance in graphics drivers, see [Surface Types](https://docs.microsoft.com/windows-hardware/drivers/display/surface-types) and [Using the Graphics DDI](https://docs.microsoft.com/windows-hardware/drivers/display/using-the-graphics-ddi).
+For more information about providing rendering assistance in graphics drivers, see [Surface Types](../display/surface-types.md) and [Using the Graphics DDI](../display/using-the-graphics-ddi.md).
 
 The following two figures illustrate the data flow that occurs when an application creates a print job using GDI. EMF recording and playback are combined in these figures.
 
@@ -55,9 +54,4 @@ Note in these diagrams that if the output format from GDI is *enhanced metafile 
 The diagrams illustrate an entirely local environment. If the printer is connected to a server, EMF records are typically produced by the client's copy of the GDI rendering engine (GRE) and then spooled to a local file that is sent to the server. The server's copy of the spooler reads the file and sends the records to the server's EMF print processor, and the server's copy of the GRE calls the server's printer graphics DLL.
 
  
-
- 
-
-
-
 

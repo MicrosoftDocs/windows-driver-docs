@@ -1,7 +1,6 @@
 ---
 title: IOCTL\_COPP\_GetCertificateLength control code
 description: Returns the size, in bytes, of the certificate used by the graphics hardware.
-ms.assetid: a65d301a-4b33-45f9-b21e-a2606d752b12
 keywords: ["IOCTL_COPP_GetCertificateLength control code Display Devices"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ Returns the size, in bytes, of the certificate used by the graphics hardware.
 
 ### <span id="Input_Parameters"></span><span id="input_parameters"></span><span id="INPUT_PARAMETERS"></span>Input Parameters
 
-The [**VIDEO\_REQUEST\_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
+The [**VIDEO\_REQUEST\_PACKET**](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
 
 ```cpp
 typedef struct {
@@ -33,7 +32,7 @@ typedef struct {
 } COPP_IO_InputBuffer;
 ```
 
-The **ppThis** member points to a pointer to the COPP DirectX VA device object that is used to retrieve the size of the hardware certificate. The **InputBuffer** member is not required. The **phr** member should be set to the value returned from the [*COPPGetCertificateLength*](https://docs.microsoft.com/windows-hardware/drivers/display/coppgetcertificatelength) function.
+The **ppThis** member points to a pointer to the COPP DirectX VA device object that is used to retrieve the size of the hardware certificate. The **InputBuffer** member is not required. The **phr** member should be set to the value returned from the [*COPPGetCertificateLength*](./coppgetcertificatelength.md) function.
 
 ### <span id="Output_Parameters"></span><span id="output_parameters"></span><span id="OUTPUT_PARAMETERS"></span>Output Parameters
 
@@ -41,7 +40,7 @@ The miniport driver returns a pointer to a ULONG-typed variable in the VRP **Out
 
 ### <span id="I_O_Status_Block"></span><span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
 
-The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to sizeof(ULONG).
+The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to sizeof(ULONG).
 
 Requirements
 ------------
@@ -62,14 +61,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[*COPPGetCertificateLength*](https://docs.microsoft.com/windows-hardware/drivers/display/coppgetcertificatelength)
+[*COPPGetCertificateLength*](./coppgetcertificatelength.md)
 
  
-
- 
-
-
-
-
-
 

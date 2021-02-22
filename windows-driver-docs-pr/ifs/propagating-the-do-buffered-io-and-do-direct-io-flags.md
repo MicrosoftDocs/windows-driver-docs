@@ -1,7 +1,6 @@
 ---
 title: Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
 description: Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
-ms.assetid: a0cb4f1a-3c27-4608-a208-ffcf4113b722
 keywords:
 - filter drivers WDK file system , attaching filters
 - file system filter drivers WDK , attaching filters
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_propagating_the_do_buffered_io_and_do_direct_io_flags_if"></span><span id="DDK_PROPAGATING_THE_DO_BUFFERED_IO_AND_DO_DIRECT_IO_FLAGS_IF"></span>
 
 
-After attaching a filter device object to a file system or volume, always be sure to set or clear the DO\_BUFFERED\_IO and DO\_DIRECT\_IO flags as needed so that they match the values of the next-lower device object on the driver stack. (For more information about these flags, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers).) An example of this follows:
+After attaching a filter device object to a file system or volume, always be sure to set or clear the DO\_BUFFERED\_IO and DO\_DIRECT\_IO flags as needed so that they match the values of the next-lower device object on the driver stack. (For more information about these flags, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md).) An example of this follows:
 
 ```cpp
 if (FlagOn( DeviceObject->Flags, DO_BUFFERED_IO )) {
@@ -35,9 +34,4 @@ if (FlagOn( DeviceObject->Flags, DO_DIRECT_IO )) {
 In the above code snippet, *DeviceObject* is a pointer to the device object to which the filter device object has just been attached; myLegacyFilter *DeviceObject* is a pointer to the filter device object itself.
 
  
-
- 
-
-
-
 

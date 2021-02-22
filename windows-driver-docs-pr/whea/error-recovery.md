@@ -1,7 +1,6 @@
 ---
 title: Error Recovery
 description: Error Recovery
-ms.assetid: 5710625f-bb65-41d4-a5c9-d61a48178859
 keywords:
 - Windows Hardware Error Architecture WDK , error recovery
 - WHEA WDK , error recovery

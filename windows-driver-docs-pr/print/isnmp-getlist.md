@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 6ee90c77-578e-4c2c-b955-4b549625ca14
 keywords: ["GetList method Print Devices", "GetList method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetList method"]
 topic_type:
 - apiref

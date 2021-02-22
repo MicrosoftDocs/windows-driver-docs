@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xCF TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE
 description: The TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE bug check has a value of 0x000000CF. This indicates that a driver has been incorrectly ported to the terminal server.
-ms.assetid: 1c3351d8-95df-4a12-a9c5-36aa6a5cf236
 keywords: ["Bug Check 0xCF TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE", "TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE"]
 ms.date: 05/23/2017
 topic_type:

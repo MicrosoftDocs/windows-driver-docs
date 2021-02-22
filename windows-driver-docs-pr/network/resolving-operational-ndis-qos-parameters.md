@@ -1,7 +1,6 @@
 ---
 title: Resolving Operational NDIS QoS Parameters
 description: Resolving Operational NDIS QoS Parameters
-ms.assetid: F6C486B4-ABD5-413A-9E2D-283D83802C2B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ Local, remote, and operational NDIS QoS parameters consist of the following type
 
 -   Priority level and flow control settings. These settings define the IEEE 802.1p priority level and optional flow control algorithms for the transmit, or *egress*, traffic.
 
-    For more information, see [Priority Levels and Flow Control](priority-levels-and-flow-control.md).
+    For more information, see [Priority Levels and Flow Control](ieee-802-1p-priority-levels.md).
 
 -   Traffic selection algorithm (TSA) settings. These settings define how the network adapter selects egress traffic from its transmit queues.
 

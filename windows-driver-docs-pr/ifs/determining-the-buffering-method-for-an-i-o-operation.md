@@ -1,7 +1,6 @@
 ---
 title: Determining the Buffering Method for an I/O Operation
 description: Determining the Buffering Method for an I/O Operation
-ms.assetid: 219378d9-a9fa-495a-b016-36595a7efb49
 keywords:
 - buffers WDK file system minifilter
 - preoperation callback routines WDK file system minifilter , buffers
@@ -33,13 +32,13 @@ Like device drivers, file systems are responsible for transferring data between 
 
 All standard Microsoft file systems use neither buffered nor direct I/O for most I/O processing.
 
-For more information about buffering methods, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers).
+For more information about buffering methods, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md).
 
 For IRP-based I/O operations, the buffering method used is operation-specific and is determined by the following factors:
 
 -   The type of I/O operation that is being performed
 
--   The value of the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for the file system volume
+-   The value of the **Flags** member of the [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for the file system volume
 
 -   For I/O control (IOCTL) and file system control (FSCTL) operations, the value of the *TransferType* parameter that was passed to the CTL\_CODE macro when the IOCTL or FSCTL was defined
 
@@ -62,9 +61,4 @@ This section includes:
 [IRP-Based I/O Operations That Have No Buffers](irp-based-i-o-operations-that-have-no-buffers.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Driver Rank Example
 description: Driver Rank Example
-ms.assetid: 20fe0f63-5d6c-4617-b5df-b2adb941f257
 keywords:
 - driver rank ranges WDK device installations
 - rank ranges WDK device installations

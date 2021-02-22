@@ -1,7 +1,6 @@
 ---
 title: Network Redirector Design in Windows NT
 description: Network Redirector Design in Windows NT
-ms.assetid: 1feb43a3-ee65-4446-b38b-8b3f9188f43d
 keywords:
 - network redirectors WDK , Windows NT
 - redirector drivers WDK , Windows NT

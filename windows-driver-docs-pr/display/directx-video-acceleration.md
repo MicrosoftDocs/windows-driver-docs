@@ -1,7 +1,6 @@
 ---
 title: DirectX Video Acceleration
 description: DirectX Video Acceleration
-ms.assetid: e25407a3-be5c-4509-a3e7-d9688958e3d4
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display
 - Video Acceleration WDK DirectX
@@ -22,9 +21,9 @@ ms.localizationpriority: medium
 
 This section contains information about Microsoft DirectX Video Acceleration (DirectX VA). This is an application programming interface (API) and a corresponding [motion compensation](motion-compensation.md) device driver interface (DDI) for acceleration of digital video decoding. The following additional DDIs are also provided as part of DirectX VA:
 
--   A [deinterlacing DDI](https://docs.microsoft.com/windows-hardware/drivers/display/deinterlace-ddi) for deinterlacing and frame-rate conversion of video content.
+-   A [deinterlacing DDI](./deinterlace-ddi.md) for deinterlacing and frame-rate conversion of video content.
 
--   A [ProcAmp DDI](https://docs.microsoft.com/windows-hardware/drivers/display/procamp-control-ddi) to support ProcAmp control and postprocessing of video content.
+-   A [ProcAmp DDI](./procamp-control-ddi.md) to support ProcAmp control and postprocessing of video content.
 
 -   A [COPP DDI](sample-functions-for-copp.md) for protecting video content.
 

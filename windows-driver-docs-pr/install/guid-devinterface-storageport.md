@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_STORAGEPORT
 description: GUID_DEVINTERFACE_STORAGEPORT
-ms.assetid: 58146169-102b-4355-82d0-ea60979bf901
 keywords: ["GUID_DEVINTERFACE_STORAGEPORT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_STORAGEPORT
 
 
-The GUID_DEVINTERFACE_STORAGEPORT [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [storage port devices](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-port-drivers).
+The GUID_DEVINTERFACE_STORAGEPORT [device interface class](./overview-of-device-interface-classes.md) is defined for [storage port devices](../storage/storage-port-drivers.md).
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 The system-supplied drivers for storage port devices register instances of GUID_DEVINTERFACE_STORAGEPORT to notify the operating system and applications of the presence of storage device adapters.
 
-For more information about storage drivers, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For more information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
 [**StoragePortClassGuid**](storageportclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_STORAGEPORT device interface class. For new instances of this class, use GUID_DEVINTERFACE_STORAGEPORT instead.
 
@@ -80,11 +79,4 @@ Requirements
 [**StoragePortClassGuid**](storageportclassguid.md)
 
  
-
- 
-
-
-
-
-
 

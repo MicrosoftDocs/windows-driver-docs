@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CONNECTION\_ENDOFSTREAM
 description: The KSEVENT\_CONNECTION\_ENDOFSTREAM event allows a client to receive notification of an end of stream event.
-ms.assetid: f6fb9408-9926-48e6-b2a4-2ba7e0251544
 keywords: ["KSEVENT_CONNECTION_ENDOFSTREAM Streaming Media Devices"]
 topic_type:
 - apiref

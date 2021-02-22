@@ -1,7 +1,6 @@
 ---
 title: Filtering IRPs and Fast I/O
 description: Filtering IRPs and Fast I/O
-ms.assetid: fad124b0-525d-4ff9-8f2c-3817fc76685c
 keywords:
 - filter drivers WDK file system , IRP filtering
 - file system filter drivers WDK , IRP filtering
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 # Filtering IRPs and Fast I/O
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers]((https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts)) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 A file system filter driver filters I/O requests for one or more file systems or file system volumes. Each I/O request appears as an I/O request packet (IRP) or fast I/O request. IRPs are I/O system structures that are handled by a driver's IRP dispatch routines. Fast I/O requests are handled by the driver's fast I/O callback routines.
 

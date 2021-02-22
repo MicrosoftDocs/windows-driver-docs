@@ -1,7 +1,6 @@
 ---
 title: powertriage
 description: The powertriage extension displays summary information about the system and device power related components.
-ms.assetid: A202ED64-B706-42AC-B058-C44321C9171F
 keywords: ["powertriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,9 +51,9 @@ Remarks
 The !powertriage extension displays the following information.
 
 1. Power state of the device node along with !podev for all the device objects.
-2. Links to [**!rcdrkd.rcdrlogdump**](-rcdrkd-rcdrlogdump.md) if the driver has enabled the IFR. For more information about IFR, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers).
+2. Links to [**!rcdrkd.rcdrlogdump**](-rcdrkd-rcdrlogdump.md) if the driver has enabled the IFR. For more information about IFR, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](../wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
 3. Links to [**!wdfkd.wdfdriverinfo**](-wdfkd-wdfdriverinfo.md) and [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) for WDF drivers.
-4. Links to !fxdevice for PoFx devices. For more information about PoFX, see [Overview of the Power Management Framework](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework).
+4. Links to !fxdevice for PoFx devices. For more information about PoFX, see [Overview of the Power Management Framework](../kernel/overview-of-the-power-management-framework.md).
 Here is example output from the !powertriage command.
 
 ```dbgcmd
@@ -135,10 +134,4 @@ The !powertriage extension can be useful in examining system crashes related to 
 Dumping all device stacks with power IRPs can help in debugging cases where !analyze has not been able to correctly identify the IRP associated with the crash.
 
  
-
- 
-
-
-
-
 

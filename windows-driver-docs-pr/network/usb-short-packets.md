@@ -1,7 +1,6 @@
 ---
 title: USB Short Packets
 description: USB Short Packets
-ms.assetid: e59476cf-754e-4550-849f-3aa645defe09
 keywords:
 - USB short packets WDK networking
 ms.date: 04/20/2017

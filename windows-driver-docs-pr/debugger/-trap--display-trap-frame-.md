@@ -1,7 +1,6 @@
 ---
 title: .trap (Display Trap Frame)
 description: The .trap command displays the trap frame register state and also sets the register context.
-ms.assetid: c53177ad-243c-4276-8602-2edc14b44251
 keywords: ["Display Trap Frame (.trap) command", "trap frame", ".trap (Display Trap Frame) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
-ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
 ms.date: 02/04/2020
 topic_type:
@@ -146,12 +145,11 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>The memory store component’s private memory range is corrupted, causing it to become inaccessible. Parameter 2 is the returned status.  Parameter 3 is the virtual address in the store’s private memory range. Parameter 4 is the MemoryDescriptorList.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x8884</p></td>
-<td align="left"><p>(Windows 7 only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
+<td align="left"><p>0x8884</p><p>0x8885</p><p>0x8886</p><p>0x8887</p></td>
+<td align="left"><p>(Windows 7 and later). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>0x8888</p>
-<p>0x8889</p></td>
+<td align="left"><p>0x8888</p><p>0x8889</p></td>
 <td align="left"><p>Internal memory management structures are corrupted.</p></td>
 </tr>
 <tr class="even">
@@ -248,6 +246,6 @@ Parameter 1 identifies the exact violation.
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. 
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 Running the Windows Memory Diagnostic tool could be useful as well to exclude any kind of problem affecting the physical memory modules.

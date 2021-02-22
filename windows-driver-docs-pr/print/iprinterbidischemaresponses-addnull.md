@@ -4,7 +4,6 @@ description: The AddNull method adds a new response of type BIDI\_NULL to the co
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 36796227-7EE4-43C8-9AD7-51A3929D1CE2
 keywords: ["AddNull method Print Devices", "AddNull method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddNull method"]
 topic_type:
 - apiref

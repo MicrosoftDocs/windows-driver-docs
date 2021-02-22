@@ -1,7 +1,6 @@
 ---
 title: ActiveJobs element
 description: The required ActiveJobs element contains a list of all currently active scan jobs.
-ms.assetid: 90acd196-60d3-43e5-9346-a8514bcf0bb8
 keywords: ["ActiveJobs element Imaging Devices"]
 topic_type:
 - apiref

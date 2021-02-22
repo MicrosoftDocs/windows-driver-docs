@@ -1,14 +1,14 @@
 ---
 title: Systematic low resources simulation
 description: The Systematic low resources simulation option injects resource failures in kernel mode drivers.
-ms.assetid: A8351715-8407-4FEF-9050-2F1F2E7FC2FD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Systematic low resources simulation
 
-
+>[!Note]
+> **This check is deprecated starting in Windows 10 Insider Preview Build 19042 and above**
 The Systematic low resources simulation option injects resource failures in kernel mode drivers. This option penetrates driver error handling paths. Testing these paths has historically been very difficult. The Systematic low resources simulation option injects resource failures in a predictable manner, which makes the issues it finds reproducible. Because the error paths are easy to reproduce, it also makes it easy to verify fixes to these issues.
 
 To help you determine the root cause of the error, a debugger extension is provided that can tell you exactly which failures have been injected and in what order.
@@ -116,7 +116,7 @@ You can activate the Systematic low resources simulation feature for one or more
 ## <span id="Debugging_bug_checks_caused_by_Systematic_low_resources_simulation"></span><span id="debugging_bug_checks_caused_by_systematic_low_resources_simulation"></span><span id="DEBUGGING_BUG_CHECKS_CAUSED_BY_SYSTEMATIC_LOW_RESOURCES_SIMULATION"></span>Debugging bug checks caused by Systematic low resources simulation
 
 
-Most of the issues found with Systematic low resources simulation result in bug checks. To help determine the cause of these code bugs, the [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) tools for Windows 8.1 provides the debugger extension (kdexts.dll) and the necessary symbols.
+Most of the issues found with Systematic low resources simulation result in bug checks. To help determine the cause of these code bugs, the [Windows Debugging](../debugger/index.md) tools for Windows 8.1 provides the debugger extension (kdexts.dll) and the necessary symbols.
 
 **To run the debugger extension**
 
@@ -129,10 +129,4 @@ Most of the issues found with Systematic low resources simulation result in bug 
 This will dump information to your debugger showing the call stacks from the most recent failures injected.
 
  
-
- 
-
-
-
-
 

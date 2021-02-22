@@ -1,20 +1,18 @@
 ---
 title: Sample Application for UVC Extension Units
-description: Sample Application for UVC Extension Units
-ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
+description: Sample application for UVC extension units
 keywords:
 - extension units WDK USB Video Class , samples, sample application
 - sample code WDK USB Video Class , UVC extension units
-ms.date: 04/20/2017
+ms.date: 09/08/2020
 ms.localizationpriority: medium
 ---
 
-# Sample Application for UVC Extension Units
-
+# Sample application for UVC extension units
 
 This topic contains sample application code that you can use to support Extension Units.
 
-An application accesses the interface by using **IKsTopologyInfo::CreateNodeInstance** followed by a call to **QueryInterface** on the node object to obtain the required COM API. The **IKsTopologyInfo** interface is documented on the [API and reference catalog](https://go.microsoft.com/fwlink/p/?linkid=27252) website.
+An application accesses the interface by using [**IKsTopologyInfo::CreateNodeInstance**](/previous-versions/ms785846(v=vs.85)) followed by a call to **QueryInterface** on the node object to obtain the required COM API. For more information, see [**IKsTopologyInfo**](/previous-versions/ms785854(v=vs.85)).
 
 Include the following code in the application source, arbitrarily named TestApp.cpp.
 
@@ -22,7 +20,7 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
 
 ```cpp
   // pUnkOuter is the unknown associated with the base filter
-  hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo), 
+  hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo),
                                (void **) &pKsTopologyInfo);
   if (!SUCCEEDED(hr))
   {
@@ -30,7 +28,7 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
  goto errExit;
   }
 
-  hr = FindExtensionNode(pKsTopologyInfo,                                                                                                   
+  hr = FindExtensionNode(pKsTopologyInfo,
      GUID_EXTENSION_UNIT_DESCRIPTOR,
      &dwExtensionNode);
   if (FAILED(hr))
@@ -40,8 +38,8 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
   }
 
   hr = pKsTopologyInfo->CreateNodeInstance(
-        dwExtensionNode, 
-   __uuidof(IExtensionUnit), 
+        dwExtensionNode,
+   __uuidof(IExtensionUnit),
  (void **) &pExtensionUnit);
  if (FAILED(hr))
   {
@@ -69,21 +67,13 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
       printf("Unable to get property value\n");
       goto errExit;
   }
- 
+
   // assume the property value is an integer
   ASSERT(ulSize == 4);
-  printf("The value of property 1 = %d\n", *((int *) 
+  printf("The value of property 1 = %d\n", *((int *)
      pbPropertyValue));
 ```
 
 In this case, **pUnkOuter** should be a pointer to the capture filter that represents the USB Video Class (UVC) device. After you add the capture filter to the filter graph, you can query the filter for the **IKsTopologyInfo** interface as shown in this sample code.
 
 Write the code for the **FindExtensionNode** function to locate the necessary extension unit node and to return its ID in *dwExtensionNode*. This ID is used in this sample code's subsequent call to the **IKsTopologyInfo::CreateNodeInstance** method.
-
- 
-
- 
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
 description: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
-ms.assetid: d5f65cd6-85bc-4b72-a6fb-ef9c570dba21
 keywords: ["KSINTERFACE_MEDIA_WAVE_QUEUED Streaming Media Devices"]
 topic_type:
 - apiref

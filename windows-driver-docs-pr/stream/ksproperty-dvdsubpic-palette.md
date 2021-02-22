@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_PALETTE
 description: The KSPROPERTY\_DVDSUBPIC\_PALETTE property specifies the color palette that the subpicture stream uses.
-ms.assetid: 9dafb956-4adf-45ec-b997-8ed35991f7d8
 keywords: ["KSPROPERTY_DVDSUBPIC_PALETTE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_DVDSUBPIC\_PALETTE property specifies the color palette that the
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal" data-raw-source="[&lt;strong&gt;KSPROPERTY_SPPAL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal)"><strong>KSPROPERTY_SPPAL</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal" data-raw-source="[&lt;strong&gt;KSPROPERTY_SPPAL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal)"><strong>KSPROPERTY_SPPAL</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -60,7 +59,7 @@ The property value (operation data) is a KSPROPERTY\_SPPAL structure that descri
 Remarks
 -------
 
-The [**KSPROPERTY\_SPPAL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal) structure contains an array of 16 YUV elements. These elements correspond to the 4-bit color numbers requested within the subpicture command stream.
+The [**KSPROPERTY\_SPPAL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal) structure contains an array of 16 YUV elements. These elements correspond to the 4-bit color numbers requested within the subpicture command stream.
 
 Requirements
 ------------
@@ -81,14 +80,5 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_SPPAL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_SPPAL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal)
 

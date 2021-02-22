@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Network Adapters Topics
 description: Hyper-V Extensible Switch Network Adapters Topics
-ms.assetid: 30FBB908-74C1-480B-8DA7-B1334964BF53
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Code Analysis for Drivers Warnings
 description: Code Analysis for Drivers Warnings
-ms.assetid: 61dba158-7e1b-42ee-9882-0ba9cef77b3c
 keywords:
 - PREfast for Drivers WDK , warnings
 - warnings WDK PREfast for Drivers
@@ -433,11 +432,11 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="30032-forcing-request-of-executable-memory.md" data-raw-source="[C30032](30032-forcing-request-of-executable-memory.md)">C30032</a></p></td>
-<td align="left"><p>warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/selective-opt-out-pool-nx-optout" data-raw-source="[POOL_NX_OPTOUT](https://docs.microsoft.com/windows-hardware/drivers/kernel/selective-opt-out-pool-nx-optout)">POOL_NX_OPTOUT</a> directive</p></td>
+<td align="left"><p>warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the <a href="/windows-hardware/drivers/kernel/selective-opt-out-pool-nx-optout" data-raw-source="[POOL_NX_OPTOUT](../kernel/selective-opt-out-pool-nx-optout.md)">POOL_NX_OPTOUT</a> directive</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="30033-executable-allocation-detected-with-pool-nx-optin.md" data-raw-source="[C30033](30033-executable-allocation-detected-with-pool-nx-optin.md)">C30033</a></p></td>
-<td align="left"><p>warning C30033: Executable allocation was detected in a driver compiled with <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin" data-raw-source="[POOL_NX_OPTIN](https://docs.microsoft.com/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin)">POOL_NX_OPTIN</a>. This driver has been determined to be loaded at run time by another driver. Please verify that the loading driver calls <strong>ExInitializeDriverRuntime(<em>DrvRtPoolNxOptIn</em>)</strong> in its DriverEntry.</p></td>
+<td align="left"><p>warning C30033: Executable allocation was detected in a driver compiled with <a href="/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin" data-raw-source="[POOL_NX_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md)">POOL_NX_OPTIN</a>. This driver has been determined to be loaded at run time by another driver. Please verify that the loading driver calls <strong>ExInitializeDriverRuntime(<em>DrvRtPoolNxOptIn</em>)</strong> in its DriverEntry.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="30034-passing-flag-value-to-allocating-function.md" data-raw-source="[C30034](30034-passing-flag-value-to-allocating-function.md)">C30034</a></p></td>
@@ -449,10 +448,6 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 </tbody>
 </table>
-
- 
-
- 
 
  
 

@@ -13,7 +13,7 @@ This section describes how to work with breakpoints using the WinDbg preview deb
 
 Use the breakpoints menu to create new and remove existing breakpoints as well as toggle the initial breakpoint (initial breakpoint is currently kernel only).
 
-![Breakpoint menu in debugger](images/windbgx-breakpoints-menu.png)
+![Screenshot that shows the Breakpoints menu in debugger.](images/windbgx-breakpoints-menu.png)
 
 ## Breakpoints Window
 

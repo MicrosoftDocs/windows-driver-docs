@@ -1,7 +1,6 @@
 ---
 title: PixelsPerLine element
 description: The required PixelsPerLine element describes the exact width, in pixels, of the final output image.
-ms.assetid: aad46ca7-025e-4f50-9bc5-7f584a7bf684
 keywords: ["PixelsPerLine element Imaging Devices"]
 topic_type:
 - apiref

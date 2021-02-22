@@ -1,7 +1,6 @@
 ---
 title: SM\_SetRNIDMgmtInfo function
 description: The SM\_SetRNIDMgmtInfo WMI method sets FC3 management information that is associated with a fibre channel adapter.
-ms.assetid: 235beb52-0e09-402d-ace1-0543ad3ee74f
 keywords: ["SM_SetRNIDMgmtInfo function Storage Devices"]
 topic_type:
 - apiref
@@ -74,16 +73,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SetRNIDMgmtInfo\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setrnidmgmtinfo_in)
+[**SM\_SetRNIDMgmtInfo\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setrnidmgmtinfo_in)
 
-[**SM\_SetRNIDMgmtInfo\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setrnidmgmtinfo_out)
-
- 
+[**SM\_SetRNIDMgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setrnidmgmtinfo_out)
 
  
-
-
-
-
-
 

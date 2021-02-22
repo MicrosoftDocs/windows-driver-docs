@@ -1,7 +1,6 @@
 ---
 title: Powering Up a Serial Device
 description: Powering Up a Serial Device
-ms.assetid: 83f86da6-0acb-4cad-8856-e826c98c2182
 keywords:
 - Serial driver WDK , device power
 - powering up serial devices WDK

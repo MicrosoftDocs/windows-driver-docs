@@ -1,7 +1,6 @@
 ---
 title: Using the Scratch Pad
 description: Using the Scratch Pad
-ms.assetid: a0f6ce9c-7fad-4df6-bad8-0ea1bc5bfc52
 keywords: ["debugging information windows, Scratch Pad", "Scratch Pad"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

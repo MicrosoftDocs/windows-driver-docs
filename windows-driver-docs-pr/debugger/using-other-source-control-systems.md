@@ -1,7 +1,6 @@
 ---
 title: Using Other Source Control Systems
 description: Using Other Source Control Systems
-ms.assetid: c8ce0bec-7218-486e-8600-c217f2e6c069
 keywords: ["version control systems", "version control systems, Subversion", "source servers, writing your own version control system", "provider modules", "provider modules, creating your own"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

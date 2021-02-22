@@ -14,7 +14,7 @@ Provisioning is vital for cellular-connectable devices because each mobile opera
 
 Ideally, the modem should only store the APN configurations the OS does not have to know. However, IHV and OEM partners have traditionally provided the Internet and Purchase APNs, configurations known to the OS, in the modem as well. Before Windows 10, version 1703’s release, Windows only read the Internet and Purchase APN configurations from the modem to establish Internet connections. Starting in Windows 10, version 1703, there might be additional cases in which the modem’s APN configuration would have to be managed by Windows, especially if there are clients in the OS such as user settings or OMA-DM that want to change cellular configuration. This in turn could also affect the modem’s APN configuration. For example, there might be an IMS stack in the modem that is using the IMS APN for SMS over IMS. Typically, those connections are not exposed to the OS, but under certain scenarios the IMS APN configuration may have to be changed. This change could be done through the OS. In order to support this, starting in Windows 10, version 1703 the OS can configure different types of APNs into the modem.
 
-The USB forum’s MBIM 1.0 and Microsoft NDIS each have an existing CID and OID respectively to allow the OS to set and query the APN configurations in the modem. For MBIM 1.0 it does this through  MBIM_CID_PROVISIONED_CONTEXT while for NDIS it does this through [OID_WWAN_PROVISIONED_CONTEXTS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-provisioned-contexts). However, the existing CID and OID were not designed with clear guidance on how the modem is expected to behave in various situations such as a power cycle or SIM swap. Devices that want to support OS configuring and updating of modem-provisioned contexts going forward will have to implement the newer version of the CID and OID in Windows 10, version 1703. To ensure backward compatibility, for IHVs/OEMs that want to support new hardware on OS versions older than 1703, they will have to continue to support the existing MBIM_CID_PROVISIONED_CONTEXT and OID_WWAN_PROVISIONED_CONTEXTS.  Starting from Windows 10, version 1703, if the device supports the new version of the CID and OID then the OS will only use the newer version of the command to query and set APN context configuration in the modem. 
+The USB forum’s MBIM 1.0 and Microsoft NDIS each have an existing CID and OID respectively to allow the OS to set and query the APN configurations in the modem. For MBIM 1.0 it does this through  MBIM_CID_PROVISIONED_CONTEXT while for NDIS it does this through [OID_WWAN_PROVISIONED_CONTEXTS](./oid-wwan-provisioned-contexts.md). However, the existing CID and OID were not designed with clear guidance on how the modem is expected to behave in various situations such as a power cycle or SIM swap. Devices that want to support OS configuring and updating of modem-provisioned contexts going forward will have to implement the newer version of the CID and OID in Windows 10, version 1703. To ensure backward compatibility, for IHVs/OEMs that want to support new hardware on OS versions older than 1703, they will have to continue to support the existing MBIM_CID_PROVISIONED_CONTEXT and OID_WWAN_PROVISIONED_CONTEXTS.  Starting from Windows 10, version 1703, if the device supports the new version of the CID and OID then the OS will only use the newer version of the command to query and set APN context configuration in the modem. 
 
 ## MB Interface Update for Provisioned Context Operations
 
@@ -72,7 +72,7 @@ The Event InformationBuffer contains an MBIM_MS_PROVISIONED_CONTEXTS_INFO_V2 str
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_MS_PROVISIONED_CONTEXT_V2 | Not applicable | Not applicable |
 | Response | MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 | MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 | MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 |
@@ -159,7 +159,7 @@ The original MBIM_CONTEXT_TYPES from MBIM 1.0 is still valid. Microsoft is addin
 | Type | Value | Description |
 | --- | --- | --- |
 | MBIMMsContextTypeAdmin | 5f7e4c2e-e80b-40a9-a239-f0abcfd11f4b | The context is used for administrative purposes such as device management. |
-| MBIMMSContextTypeApp | 74d88a3d-dfbd-4799-9a8c-7310a37bb2ee | The context is used for certain applications whitelisted by mobile operators. |
+| MBIMMSContextTypeApp | 74d88a3d-dfbd-4799-9a8c-7310a37bb2ee | The context is used for certain applications allowlisted by mobile operators. |
 | MBIMMsContextTypeXcap | 50d378a7-baa5-4a50-b872-3fe5bb463411 | The context is used for XCAP provisioning on IMS services. |
 | MBIMMsContextTypeTethering | 5e4e0601-48dc-4e2b-acb8-08b4016bbaac | The context is used for Mobile Hotspot tethering. |
 | MBIMMsContextTypeEmergencyCalling | 5f41adb8-204e-4d31-9da8-b3c970e360f2 | The context is used for IMS emergency calling. |
@@ -215,5 +215,3 @@ For Set operations only:
 | --- | --- |
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_WRITE_FAILURE | The operation failed because the update request was unsuccessful. |
-
-

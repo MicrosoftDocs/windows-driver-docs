@@ -1,7 +1,6 @@
 ---
 title: Printer INF File Data Sections
 description: Printer INF File Data Sections
-ms.assetid: d060716c-7c26-41a8-afbc-6fe83829d46a
 keywords:
 - INF files WDK print , data sections
 - data sections WDK printer

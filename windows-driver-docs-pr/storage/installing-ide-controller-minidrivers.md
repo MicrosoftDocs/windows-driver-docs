@@ -1,7 +1,6 @@
 ---
 title: Installing IDE Controller Minidrivers
 description: Installing IDE Controller Minidrivers
-ms.assetid: c1b41f89-150d-47e9-9bed-04f5796f69bd
 keywords:
 - IDE controller minidrivers WDK storage , installing
 - storage IDE controller minidrivers WDK , installing
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 This section provides installation information that is specific to IDE controller drivers and controller minidrivers in Microsoft Windows 2000 and later operating systems.
 
-Vendors supplying their own controller minidriver should make that driver a member of the Hard Disk Controllers (HDC) setup class in the [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) of the driver's INF file. For example:
+Vendors supplying their own controller minidriver should make that driver a member of the Hard Disk Controllers (HDC) setup class in the [**INF Version Section**](../install/inf-version-section.md) of the driver's INF file. For example:
 
 ```cpp
 [version]
@@ -30,12 +29,7 @@ There are no other special requirements associated with installing IDE controlle
 
 For more installation information, including a list of controller hardware supported in Windows 2000 and later operating systems, see the system-supplied INF file for hard disk controllers, *mshdc.inf*.
 
-For general information about device installation in Windows 2000 and later operating systems, see [Requirements for Vendor-Supplied IDE Controller Minidrivers](requirements-for-vendor-supplied-ide-controller-minidrivers.md) and [Device Installation Overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
+For general information about device installation in Windows 2000 and later operating systems, see [Requirements for Vendor-Supplied IDE Controller Minidrivers](requirements-for-vendor-supplied-ide-controller-minidrivers.md) and [Device Installation Overview](../install/overview-of-device-and-driver-installation.md).
 
  
-
- 
-
-
-
 

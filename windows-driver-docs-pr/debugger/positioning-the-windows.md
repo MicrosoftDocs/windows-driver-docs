@@ -1,7 +1,6 @@
 ---
 title: Positioning the Windows
 description: Positioning the Windows
-ms.assetid: 18c0ba52-ed47-4d93-a9d3-c0b5c9c26489
 keywords: ["debugging information windows, positioning", "floating windows"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

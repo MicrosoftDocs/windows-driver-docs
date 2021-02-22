@@ -1,7 +1,6 @@
 ---
 title: Direct3D Version 10 Kernel Handles
 description: Direct3D Version 10 Kernel Handles
-ms.assetid: 48378f27-4c08-4931-9592-878a1a2b2556
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_CAPABILITIES
 description: WDI_TLV_PHY_CAPABILITIES is a TLV that contains PHY capabilities.
-ms.assetid: 8F482ED6-6594-4DB5-B53B-4424DAD32D36
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -28,7 +27,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                        | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
-| [**WDI\_PHY\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type) | Specifies the PHY types.                           |
+| [**WDI\_PHY\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type) | Specifies the PHY types.                           |
 | UINT8                                       | Specifies whether or not the PHY supports CF Poll. |
 | UINT32                                      | Specifies the MPDU maximum length.                 |
 | UINT32                                      | Specifies the operating temperature class.         |
@@ -61,9 +60,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

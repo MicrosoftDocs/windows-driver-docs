@@ -1,7 +1,6 @@
 ---
 title: JobStatus element
 description: The required JobStatus element contains all information about the status of the current scan job.
-ms.assetid: e3eb2cc7-70a4-4ae0-8569-4a91f2b42228
 keywords: ["JobStatus element Imaging Devices"]
 topic_type:
 - apiref

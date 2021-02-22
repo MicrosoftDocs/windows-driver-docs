@@ -1,7 +1,6 @@
 ---
 title: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 description: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
-ms.assetid: 5b75c32e-77e5-4761-b709-fedb8e33b57a
 keywords: ["IoConnectInterruptEx", "CONNECT_FULLY_SPECIFIED", "manual interrupt detections WDK kernel", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "FullySpecified"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 # Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx
 
 
-A driver can use the CONNECT\_FULLY\_SPECIFIED version of [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an [*InterruptService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine for a specific interrupt. A driver can use the CONNECT\_FULLY\_SPECIFIED version starting with Windows Vista. By linking to the Iointex.lib library, the driver can use the CONNECT\_FULLY\_SPECIFIED version in Windows 2000, Windows XP, and Windows Server 2003. For more information, see [Using IoConnectInterruptEx Prior to Windows Vista](using-ioconnectinterruptex-prior-to-windows-vista.md).
+A driver can use the CONNECT\_FULLY\_SPECIFIED version of [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine for a specific interrupt. A driver can use the CONNECT\_FULLY\_SPECIFIED version starting with Windows Vista. By linking to the Iointex.lib library, the driver can use the CONNECT\_FULLY\_SPECIFIED version in Windows 2000, Windows XP, and Windows Server 2003. For more information, see [Using IoConnectInterruptEx Prior to Windows Vista](using-ioconnectinterruptex-prior-to-windows-vista.md).
 
 The driver specifies a value of CONNECT\_FULLY\_SPECIFIED for *Parameters***-&gt;Version** and uses the members of *Parameters***-&gt;FullySpecified** to specify the other parameters of the operation:
 
@@ -22,7 +21,7 @@ The driver specifies a value of CONNECT\_FULLY\_SPECIFIED for *Parameters***-&gt
 
 -   Drivers can optionally specify a spin lock in *Parameters***-&gt;FullySpecified.SpinLock** for the system to use when synchronizing with the ISR. Most drivers can just specify **NULL** to enable the system to allocate a spin lock on behalf of the driver. For more information about synchronizing with an ISR, see [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md).
 
-The driver must specify the key properties of the interrupt in other members of *Parameters***-&gt;FullySpecified**. The system provides the necessary information in the array of [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor) structures when it sends the [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) IRP to the driver.
+The driver must specify the key properties of the interrupt in other members of *Parameters***-&gt;FullySpecified**. The system provides the necessary information in the array of [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor) structures when it sends the [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) IRP to the driver.
 
 The system provides for each interrupt a **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structure with **Type** member equal to **CmResourceTypeInterrupt**. For a message-signaled interrupt, the CM\_RESOURCE\_INTERRUPT\_MESSAGE bit of the **Flags** member is set; otherwise, it is cleared.
 
@@ -122,9 +121,4 @@ if (!NT_SUCCESS(status)) {
 ```
 
  
-
- 
-
-
-
 

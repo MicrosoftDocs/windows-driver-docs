@@ -1,7 +1,6 @@
 ---
 title: Criteria for Associating GDL Templates with Keywords
 description: Criteria for Associating GDL Templates with Keywords
-ms.assetid: 22b58881-277b-4e1d-ab6a-363432830772
 keywords:
 - templates WDK GDL , associating templates with keywords
 - keywords WDK GDL , associating templates with keywords

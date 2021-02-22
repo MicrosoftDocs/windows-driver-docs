@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_DEVICE_TEXT
 description: The PnP manager uses this IRP to get a device's description or location information.Bus drivers must handle this request for their child devices if the bus supports this information. Function and filter drivers do not handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 07661709-8929-4567-a05f-96d995862ee6
 keywords:
  - IRP_MN_QUERY_DEVICE_TEXT Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -15,10 +14,15 @@ The PnP manager uses this IRP to get a device's description or location informat
 
 Bus drivers must handle this request for their child devices if the bus supports this information. Function and filter drivers do not handle this IRP.
 
+## Value
+
+0x0C
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -29,7 +33,7 @@ The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in an arbitrary thread con
 ## Input Parameters
 
 
-The **Parameters.QueryDeviceText.DeviceTextType** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a **DEVICE\_TEXT\_TYPE** value specifying which string is requested. Possible values for **DEVICE\_TEXT\_TYPE** include **DeviceTextDescription** and **DeviceTextLocationInformation**.
+The **Parameters.QueryDeviceText.DeviceTextType** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a **DEVICE\_TEXT\_TYPE** value specifying which string is requested. Possible values for **DEVICE\_TEXT\_TYPE** include **DeviceTextDescription** and **DeviceTextLocationInformation**.
 
 **Parameters.QueryDeviceText.LocaleId** is an LCID specifying the locale for the requested text.
 
@@ -54,13 +58,13 @@ Bus drivers are also encouraged to return **LocationInformation** for their chil
 
 If a bus driver returns information in response to this IRP, it allocates a NULL-terminated Unicode string from paged memory. The PnP manager frees the string when it is no longer needed.
 
-If a device does not provide description or location information, the device's parent bus driver completes the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) without modifying **Irp-&gt;IoStatus.Status** or **Irp-&gt;IoStatus.Information**.
+If a device does not provide description or location information, the device's parent bus driver completes the IRP ([**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) without modifying **Irp-&gt;IoStatus.Status** or **Irp-&gt;IoStatus.Information**.
 
 Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus**.
 
 Drivers for buses that support different text strings for different locales should be able to handle a request for a language that is not explicitly supported by the device. In such a situation, the bus driver should return the closest match for the locale or should fallback and return some appropriate supported locale string.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
@@ -83,9 +87,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

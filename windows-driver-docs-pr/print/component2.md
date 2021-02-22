@@ -1,7 +1,6 @@
 ---
 title: Component
 description: Component
-ms.assetid: 15cc741e-5919-4d71-802b-519494827722
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

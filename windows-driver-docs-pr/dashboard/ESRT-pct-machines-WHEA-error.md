@@ -23,9 +23,9 @@ The WHEA event is only retrieved from 20H1 builds, and will soo be backported to
 |**Audience**|Retail and Insider|
 |**Time period**|28 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum instances**|200|
+|**Minimum instances**|170|
 |**Passing criteria**|<= 5%|
-|**Measure ID**|20319726|
+|**Measure ID**|23260714|
 
 ## Calculation
 

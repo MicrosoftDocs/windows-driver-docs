@@ -1,7 +1,6 @@
 ---
 title: DIF_INSTALLWIZARD
 description: DIF_INSTALLWIZARD
-ms.assetid: baac0629-7a5c-4798-ab42-f7243c9f5da6
 keywords: ["DIF_INSTALLWIZARD Device and Driver Installation"]
 topic_type:
 - apiref

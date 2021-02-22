@@ -1,7 +1,6 @@
 ---
 title: Device Installation Files
 description: Device Installation Files
-ms.assetid: a4a53040-ff53-49ba-a4a5-aba5f13119ef
 keywords:
 - Device setup WDK device installations , files
 - device installations WDK , files
@@ -27,7 +26,7 @@ The software that is required to support a particular device depends on the kind
 * <a href="" id="one-or-more-drivers-for-the-device"></a>One or more drivers for the device  
     A .*sys* file is the driver's image file. Windows copies this file to the *%SystemRoot%\\system32\\drivers* directory when the driver is installed. Drivers are required for most devices.
 
-    For more information, see [Choosing a Driver Model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+    For more information, see [Choosing a Driver Model](../gettingstarted/choosing-a-driver-model.md).
 
 * <a href="" id="digital-signatures-for-the-driver-package--a-driver-catalog-file-"></a>Digital signatures for the [driver package](driver-packages.md) (a driver catalog file)  
     A driver catalog file contains digital signatures. All driver packages should be signed.
@@ -39,17 +38,9 @@ The software that is required to support a particular device depends on the kind
 * <a href="" id="other-files"></a>Other files  
     A [driver package](driver-packages.md) can contain other files, such as a custom device installation application, a device icon, or a driver library file (such as for video drivers).
 
-    For more information, see [Providing Device Property Pages](providing-device-property-pages.md) and [Drivers with Special Installation Requirements](drivers-with-special-installation-requirements.md).
+    For more information, see [Providing Device Property Pages](./overview-of-device-property-pages.md).
 
 Also, see the device-type-specific documentation in the WDK.
 
 The WDK includes various sample installation files. For more information, see [Sample Device Installation Files](sample-device-installation-files.md)
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DevCon UpdateNI
 description: Forcibly replaces the current device drivers with drivers listed in the specified INF file without prompting the user for information or confirmation. Valid only on the local computer.
-ms.assetid: 436a9731-1c61-4b38-b145-7012da55b699
 keywords:
 - DevCon UpdateNI Driver Development Tools
 topic_type:

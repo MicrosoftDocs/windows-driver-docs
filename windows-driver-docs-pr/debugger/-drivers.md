@@ -1,7 +1,6 @@
 ---
 title: drivers
 description: In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command.
-ms.assetid: 48b69af3-bf00-43d3-ac1a-e9513ead8647
 keywords: ["drivers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

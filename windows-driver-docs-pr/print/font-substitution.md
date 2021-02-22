@@ -1,7 +1,6 @@
 ---
 title: Font Substitution
 description: Font Substitution
-ms.assetid: a67f42cd-1c10-46b7-8d24-0cb26339bc92
 keywords:
 - printer font descriptions WDK Unidrv , substitutions
 - substitution font table WDK Unidrv

@@ -4,7 +4,6 @@ description: Returns a value of '3' to inform USBMon that the device communicati
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: D1205445-2587-4C9D-B383-587F06A3E899
 keywords: ["DeviceBusy method Print Devices", "DeviceBusy method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , DeviceBusy method"]
 topic_type:
 - apiref

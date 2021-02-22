@@ -1,7 +1,6 @@
 ---
 title: DCISendCommand
 description: DCISendCommand
-ms.assetid: b34690b6-bbe8-4787-a507-0b0a32cf1302
 keywords: ["DCISendCommand Display Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: GetPersistentBinding2 function
 description: The GetPersistentBinding2 method retrieves the bindings that an HBA miniport driver uses to map the information that an operating system uses to identify its logical units to the Fibre Channel protocol (FCP) identifiers for the logical units.
-ms.assetid: 17734973-fa82-4f54-b882-d9a2f5ce2066
 keywords: ["GetPersistentBinding2 function Storage Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ A worldwide name that indicates the port whose persistent bindings will be retri
 Indicates the number of binding entries that the WMI provider can report in the *Entry* parameter.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFcpPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFcpPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_out) structure.
 
 *TotalEntryCount*   
 Indicates the total number of persistent bindings associated with the HBA.
@@ -53,7 +52,7 @@ Indicates the total number of persistent bindings associated with the HBA.
 Indicates the total number of persistent bindings retrieved by the **GetPersistentBinding2** method.. This value will be less than or equal to *TotalEntryCount*.
 
 *Bindings\[\]*   
-An array of structures of type [**HBAFCPBindingEntry2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
+An array of structures of type [**HBAFCPBindingEntry2**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
 
 Return value
 ------------
@@ -88,18 +87,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetFcpPersistentBinding\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_in)
+[**GetFcpPersistentBinding\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_in)
 
-[**GetFcpPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_out)
+[**GetFcpPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_out)
 
-[**HBAFCPBindingEntry2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2)
-
- 
+[**HBAFCPBindingEntry2**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INTERFACE_CAPABILITIES
 description: WDI_TLV_INTERFACE_CAPABILITIES is a TLV that contains the capabilities of the Wi-Fi interface.
-ms.assetid: 308331DD-FEEB-4C49-BEBD-117AE58D4792
 ms.date: 02/14/2019
 keywords:
  - WDI_TLV_INTERFACE_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -30,7 +29,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The maximum transfer unit (MTU) size. |
 | UINT32 | The multicast list size for the adapter. |
 | UINT16 | The backfill size in bytes. This value cannot be greater than 256 bytes. |
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The permanent MAC address for the adapter. If the device supports multiple permanent MAC addresses, the first MAC address that will be used by the device should be returned. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The permanent MAC address for the adapter. If the device supports multiple permanent MAC addresses, the first MAC address that will be used by the device should be returned. |
 | UINT32 | The maximum supported send rate for this adapter in kbps. |
 | UINT32 | The maximum supported receive rate for this adapter in kbps. |
 | UINT8 | Specifies whether the radio is enabled by hardware. Valid values are 0 (disabled) and 1 (enabled). |
@@ -44,9 +43,9 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | Specifies whether antenna diversity is supported. Valid values are 0 (not supported) and 1 (supported). |
 | UINT8 | Specifies whether eCSA is supported. Valid values are 0 (not supported) and 1 (supported). |
 | UINT8 | Specifies whether the adapter supports MAC address randomization. Valid values are 0 (not supported) and 1 (supported). |
- | [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | A bit mask that specifies for each address bit whether it can be randomized (0) or should keep the same value as the permanent address (1). The default is all zeros. |
-| [**WDI\_BLUETOOTH\_COEXISTENCE\_SUPPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bluetooth_coexistence_support) (UINT32) | The supported level of Wi-Fi - Bluetooth coexistence. |
-| UINT8 | Specifies non-WDI OID support. Valid values are: <ul><li>0 : Not supported. OIDs that the Microsoft component does not understand are not forwarded to the adapter.</li><li>1 : Supported. OIDs that the Microsoft component does not understand are forwarded to the adapter.</li></ul> <p>These OIDs will not contain WDI headers. To identify the adapter's port that the request came in on, use **NdisPortNumber** in the NDIS\_OID\_REQUEST and match it to the one in [WDI\_TASK\_CREATE\_PORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-create-port).</p> |
+ | [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | A bit mask that specifies for each address bit whether it can be randomized (0) or should keep the same value as the permanent address (1). The default is all zeros. |
+| [**WDI\_BLUETOOTH\_COEXISTENCE\_SUPPORT**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bluetooth_coexistence_support) (UINT32) | The supported level of Wi-Fi - Bluetooth coexistence. |
+| UINT8 | Specifies non-WDI OID support. Valid values are: <ul><li>0 : Not supported. OIDs that the Microsoft component does not understand are not forwarded to the adapter.</li><li>1 : Supported. OIDs that the Microsoft component does not understand are forwarded to the adapter.</li></ul> <p>These OIDs will not contain WDI headers. To identify the adapter's port that the request came in on, use **NdisPortNumber** in the NDIS\_OID\_REQUEST and match it to the one in [WDI\_TASK\_CREATE\_PORT](./oid-wdi-task-create-port.md).</p> |
 | UINT8 | Specifies whether the Fast Transition is supported. Valid values are 0 (not supported) and 1 (supported). |
 | UINT8 | Specifies whether Mu-MIMO is supported. Valid values are 0 (not supported) and 1 (supported). |
 | UINT8 | Specifies if the interface cannot support Miracast Sink. Valid values are 0 (supported) and 1 (not supported). |
@@ -81,9 +80,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

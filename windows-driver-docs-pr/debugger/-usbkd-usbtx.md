@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbtx
 description: The usbkd.usbtx command displays information from a usbport _HCD_TRANSFER_CONTEXT structure.
-ms.assetid: 603AD207-69D5-4DED-80B5-ADA21E191D47
 keywords: ["usbkd.usbtx Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,7 +46,7 @@ Here is one way to find the address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** st
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!uhci\_info ffffe00001c8f1a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext) to get the transfer list.
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](-usbkd-usbhcdext.md) to get the transfer list.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001c8f1a0
@@ -96,14 +95,7 @@ NumberOfElements = 1
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

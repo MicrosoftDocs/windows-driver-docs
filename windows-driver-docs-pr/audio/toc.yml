@@ -1349,6 +1349,8 @@
       href: ksproperty-audio-wide-mode.md
     - name: "KSPROPERTY_AUDIO_WIDENESS"
       href: ksproperty-audio-wideness.md
+    - name: "KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST"
+      href: ksproperty-audioeffectsdiscovery-effectslist.md
     - name: "KSPROPERTY_AUDIOENGINE"
       href: ksproperty-audioengine.md
     - name: "KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE"

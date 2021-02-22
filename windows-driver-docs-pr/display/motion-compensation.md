@@ -1,7 +1,6 @@
 ---
 title: Motion Compensation
 description: Motion Compensation
-ms.assetid: 3b5c91f9-6c22-4110-943a-5b833f32c014
 keywords:
 - drawing WDK DirectDraw , motion compensation
 - DirectDraw WDK Windows 2000 display , motion compensation
@@ -26,15 +25,9 @@ The input data to a software MPEG decoder is well defined. If the decoder is des
 
 To enable motion compensation functionality, the driver must perform the following steps:
 
--   Implement a [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) function and set the **GetDriverInfo** member of the [**DD\_HALINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_halinfo) structure to point to this function when [**DrvGetDirectDrawInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetdirectdrawinfo) is called. The driver's *DdGetDriverInfo* function must parse the GUID\_MotionCompCallbacks GUID.
+-   Implement a [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) function and set the **GetDriverInfo** member of the [**DD\_HALINFO**](/windows/win32/api/ddrawint/ns-ddrawint-dd_halinfo) structure to point to this function when [**DrvGetDirectDrawInfo**](/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo) is called. The driver's *DdGetDriverInfo* function must parse the GUID\_MotionCompCallbacks GUID.
 
--   Fill in a [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure with the appropriate driver callback pointers and callback type flags set when the *DdGetDriverInfo* function is called with the GUID\_MotionCompCallbacks GUID. The driver must then copy this initialized structure into the Microsoft DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverinfodata) structure points, and return the number of bytes written into the buffer in **dwActualSize**.
-
- 
+-   Fill in a [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure with the appropriate driver callback pointers and callback type flags set when the *DdGetDriverInfo* function is called with the GUID\_MotionCompCallbacks GUID. The driver must then copy this initialized structure into the Microsoft DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverinfodata) structure points, and return the number of bytes written into the buffer in **dwActualSize**.
 
  
-
-
-
-
 

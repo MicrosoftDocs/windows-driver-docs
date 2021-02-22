@@ -1,7 +1,6 @@
 ---
 title: Introduction to Test-Signing
 description: Introduction to Test-Signing
-ms.assetid: 63d4627d-b92c-489d-accf-16cfb5ac1410
 keywords:
 - test signing driver packages WDK , about test signing driver packages
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ For these reasons, drivers for Windows Vista and later versions of Windows shoul
 
  
 
-A development and test team can participate in the [WHQL Test Signature program](whql-test-signature-program.md), where the Windows Hardware Quality Labs (WHQL) will sign PnP [driver packages](driver-packages.md) for testing purposes. Alternatively, a development and test team can manage their own in-house signing process and use the following types of [test certificates](test-certificates.md) to test-sign drivers:
+A development and test team can participate in the [WHQL Test Signature program](whql-test-signature-program.md), where the Windows Hardware Quality Labs (WHQL) will sign PnP [driver packages](driver-packages.md) for testing purposes. Alternatively, a development and test team can manage their own in-house signing process and use the following types of [test certificates](./makecert-test-certificate.md) to test-sign drivers:
 
--   [MakeCert test certificate](makecert-test-certificate.md), which is a digital certificate created by the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool.
+-   [MakeCert test certificate](makecert-test-certificate.md), which is a digital certificate created by the [**MakeCert**](../devtest/makecert.md) tool.
 
 -   [Commercial test certificate](commercial-test-certificate.md), which is a digital certificate that is issued by a CA that is a member of the Microsoft Root Certificate Program.
 
@@ -43,17 +42,11 @@ For information about how to install driver packages that are test-signed, see [
 
 To facilitate early driver development and debugging, you can temporarily disable the kernel-mode code signing requirement to load and test an unsigned kernel-mode driver. However, you cannot disable the PnP driver installation policy that requires a system administrator to authorize the installation of an unsigned driver. For more information about how to install an unsigned driver, see [Installing an Unsigned Driver during Development and Test](installing-an-unsigned-driver-during-development-and-test.md).
 
-For information about the most appropriate tools to use to test-sign driver packages, see [Tools for Signing Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers).
+For information about the most appropriate tools to use to test-sign driver packages, see [Tools for Signing Drivers](../devtest/tools-for-signing-drivers.md).
 
 **Note**  To get a better understanding of the steps that are involved in test-signing driver packages, see [How to Test-Sign a Driver Package](how-to-test-sign-a-driver-package.md). This topic provides a summary of the test-signing process, and steps through many examples of test-signing by using the *ToastPkg* sample [driver package](driver-packages.md) within the Windows Driver Kit (WDK).
 
  
 
  
-
- 
-
-
-
-
 

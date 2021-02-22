@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_UINT16
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_UINT16 identifier represents the base-data-type identifier that indicates that the data type is a USHORT-typed unsigned integer.
-ms.assetid: 8df7fc86-bad3-44cd-9ff1-552a69dd378b
 keywords: ["DEVPROP_TYPE_UINT16 Device and Driver Installation"]
 topic_type:
 - apiref

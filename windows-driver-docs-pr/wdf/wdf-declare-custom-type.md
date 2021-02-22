@@ -1,7 +1,6 @@
 ---
 title: WDF_DECLARE_CUSTOM_TYPE macro
 description: The WDF_DECLARE_CUSTOM_TYPE macro creates a name and an accessor method for a driver's custom type.
-ms.assetid: DF496E17-B3D4-4983-8506-40810ECAEA3E
 keywords:
  - WDF_DECLARE_CUSTOM_TYPE macro
 ms.date: 08/23/2017
@@ -40,7 +39,7 @@ Remarks
 
 When calling **WDF_DECLARE_CUSTOM_TYPE**, a driver defines its own custom type name. When selecting a custom type name, choose a name that is specific to the domain of the driver. As a convention, do not start your custom type name with the prefix *Wdf*.
 
-For more information about object custom types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
+For more information about object custom types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
 Examples
 --------
@@ -119,11 +118,4 @@ Requirements
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
  
-
- 
-
-
-
-
-
 

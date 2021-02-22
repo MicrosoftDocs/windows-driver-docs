@@ -1,7 +1,6 @@
 ---
 title: S (Windows Debugger Glossary)
 description: Glossary page - S
-ms.assetid: 94cbf33b-e975-49eb-a266-774798955a48
 keywords: ["suspended thread", "suspended process"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -25,7 +24,7 @@ An instance of the debugger engine acting as a host. The smart client is connect
 An event filter for an exception for which the engine has a built-in filter. Most specific exception filters refer to specific types of exceptions (identified by exception code), but the default exception filter also qualifies as a specific exception filter.
 
 <span id="specific_event_filter"></span><span id="SPECIFIC_EVENT_FILTER"></span>**specific event filter**  
-An event filter for an event which is not an exception. The specific event filters are listed in [**DEBUG\_FILTER\_XXX**](https://docs.microsoft.com/windows-hardware/drivers/debugger/debug-filter-xxx).
+An event filter for an event which is not an exception. The specific event filters are listed in [**DEBUG\_FILTER\_XXX**](./debug-filter-xxx.md).
 
 <span id="specific_filter"></span><span id="SPECIFIC_FILTER"></span>**specific filter**  
 An event filter for an event for which the engine has a built-in filter.
@@ -78,10 +77,4 @@ A memory address that the engine treats like a symbol.
 See bug check.
 
  
-
- 
-
-
-
-
 

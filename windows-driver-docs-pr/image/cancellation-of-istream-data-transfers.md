@@ -1,7 +1,6 @@
 ---
 title: Cancellation of IStream Data Transfers
 description: Cancellation of IStream Data Transfers
-ms.assetid: cefe8ef3-f0f8-4260-b666-c61f9902de5c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

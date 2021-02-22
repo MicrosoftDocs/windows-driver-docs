@@ -1,7 +1,6 @@
 ---
 title: Symbols in the Middle
 description: Symbols in the Middle
-ms.assetid: 0fbf47fc-1216-4eaa-b4b9-96e206194b54
 keywords: ["remote debugging, symbols on third machine"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

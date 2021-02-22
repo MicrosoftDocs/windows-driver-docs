@@ -1,7 +1,6 @@
 ---
 title: envvar
 description: The envvar extension displays the value of the specified environment variable.
-ms.assetid: 7a6e1796-08e0-414e-a092-326b30c8ce8f
 keywords: ["envvar Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: SM\_SendRNID function
 description: The SM\_SendRNID WMI method sends a request node identification data (RNID) command to the indicated port.
-ms.assetid: 160e2dc7-8195-4f8a-bc59-854e5283cf6f
 keywords: ["SM_SendRNID function Storage Devices"]
 topic_type:
 - apiref
@@ -102,16 +101,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRNID\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrnid_in)
+[**SM\_SendRNID\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrnid_in)
 
-[**SM\_SendRNID\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrnid_out)
-
- 
+[**SM\_SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrnid_out)
 
  
-
-
-
-
-
 

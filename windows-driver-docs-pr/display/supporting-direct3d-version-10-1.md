@@ -1,7 +1,6 @@
 ---
 title: Supporting Direct3D Version 10.1
 description: Supporting Direct3D Version 10.1
-ms.assetid: a1b06e77-0f81-4ea1-9448-55e9f22a8360
 keywords:
 - Direct3D version 10.1 WDK display
 ms.date: 04/20/2017

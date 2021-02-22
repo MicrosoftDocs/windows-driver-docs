@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 1c20041f-b05d-4158-8838-650d25118c65
 keywords: ["ToUtf8 method Print Devices", "ToUtf8 method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , ToUtf8 method"]
 topic_type:
 - apiref

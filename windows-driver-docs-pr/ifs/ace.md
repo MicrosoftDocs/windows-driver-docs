@@ -1,7 +1,6 @@
 ---
 title: ACE
 description: ACE
-ms.assetid: efdf43ae-d4d4-4950-9435-e10bf5b75cf2
 keywords: ["access control entry WDK file systems", "ACE WDK file systems"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium
@@ -59,30 +58,23 @@ Requirements: ntifs.h (include ntifs.h)
 ## Related topics
 
 
-[**ACCESS\_ALLOWED\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_access_allowed_ace)
+[**ACCESS\_ALLOWED\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_access_allowed_ace)
 
-[**ACCESS\_DENIED\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_access_denied_ace)
+[**ACCESS\_DENIED\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_access_denied_ace)
 
-[**ACE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_ace_header)
+[**ACE\_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_ace_header)
 
-[**ACL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
+[**ACL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
 
-[**RtlAddAccessAllowedAce**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtladdaccessallowedace)
+[**RtlAddAccessAllowedAce**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtladdaccessallowedace)
 
-[**RtlGetAce**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlgetace)
+[**RtlGetAce**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlgetace)
 
-[**SID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid)
+[**SID**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid)
 
-[**SYSTEM\_ALARM\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_system_alarm_ace)
+[**SYSTEM\_ALARM\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_system_alarm_ace)
 
-[**SYSTEM\_AUDIT\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_system_audit_ace)
-
- 
+[**SYSTEM\_AUDIT\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_system_audit_ace)
 
  
-
-
-
-
-
 

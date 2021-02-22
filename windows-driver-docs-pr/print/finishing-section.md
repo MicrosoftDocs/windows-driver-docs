@@ -1,7 +1,6 @@
 ---
 title: Finishing Section
 description: Finishing Section
-ms.assetid: 9ecb96f5-8bb5-4224-8867-cf9c9c21a5ee
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

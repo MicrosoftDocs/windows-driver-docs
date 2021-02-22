@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for Programmable Pixel Shader Hardware
 description: For a DirectX 8.0 level driver to report support for programmable pixel shader hardware, it must set the PixelShaderVersion field of the D3DCAPS8 structure to a valid, nonzero pixel shader version number.
-ms.assetid: e6456c2a-d40f-4082-9122-fab9299808f7
 keywords:
 - pixel shaders WDK DirectX 8.0 , programmable hardware
 - programmable pixel processing hardware WDK DirectX 8.0

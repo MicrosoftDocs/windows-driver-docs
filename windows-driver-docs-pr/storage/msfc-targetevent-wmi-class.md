@@ -1,7 +1,6 @@
 ---
 title: MSFC\_TargetEvent WMI Class
 description: MSFC\_TargetEvent WMI Class
-ms.assetid: 251f7526-98e6-495d-a987-83257e968bb8
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -32,13 +31,7 @@ class MSFC_TargetEvent : WmiEvent {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_TargetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_targetevent)
+[**MSFC\_TargetEvent**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_targetevent)
 
  
-
- 
-
-
-
-
 

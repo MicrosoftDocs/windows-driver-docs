@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DEVPROPKEY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPKEY identifier represents the base-data-type identifier that indicates the data type is a DEVPROPKEY-typed device property key.
-ms.assetid: 4b0f0f33-9a9e-498a-b2f3-e215bac68dd9
 keywords: ["DEVPROP_TYPE_DEVPROPKEY Device and Driver Installation"]
 topic_type:
 - apiref

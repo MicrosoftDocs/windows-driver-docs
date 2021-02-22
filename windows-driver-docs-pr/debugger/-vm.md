@@ -1,7 +1,6 @@
 ---
 title: vm
 description: The vm extension displays summary information about virtual memory use statistics on the target system.
-ms.assetid: 25e4f80c-d4ca-407c-991d-e8ee5dfbb309
 keywords: ["vm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,9 +47,8 @@ Causes the display to include working set owner thread stacks.
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-|       |                  |
-|-------|------------------|
-| Modes | kernel mode only |
+**Modes**: kernel mode only
+
 
  
 

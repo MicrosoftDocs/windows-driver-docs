@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES
 description: The PROCESS_HAS_LOCKED_PAGES bug check has a value of 0x00000076. This bug check indicates that a driver failed to release locked pages after an I/O operation.
-ms.assetid: 25c63e2e-6d2a-401a-b523-ffa70e9f75df
 keywords: ["Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES", "PROCESS_HAS_LOCKED_PAGES"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,7 +69,7 @@ The driver either failed to unlock pages that it locked (parameter 1 value is 0x
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 **If the parameter 1 value is 0x0**
 

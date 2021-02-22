@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_START\_CHANGES
 description: Clients use KSMETHOD\_BDA\_START\_CHANGES to reset a change list.
-ms.assetid: 657fb89d-f216-4352-87d8-3d2d933cc8a5
 keywords: ["KSMETHOD_BDA_START_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,16 +54,9 @@ Requirements
 ## See also
 
 
-[**BdaStartChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdastartchanges)
+[**BdaStartChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdastartchanges)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
-
- 
+[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
 
  
-
-
-
-
-
 

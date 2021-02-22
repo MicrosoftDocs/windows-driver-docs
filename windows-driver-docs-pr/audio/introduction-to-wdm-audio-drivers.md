@@ -1,7 +1,6 @@
 ---
 title: Introduction to WDM Audio Drivers
 description: Introduction to WDM Audio Drivers
-ms.assetid: 376392a8-b3ae-40c3-8bfa-55df6165cefb
 keywords:
 - audio filters WDK audio , subset of KS filters
 - WDM audio drivers WDK , about WDM audio drivers
@@ -47,7 +46,7 @@ An adapter driver exposes a collection of *filter factories* to the audio system
 
 A KS filter exposes a collection of *pin factories* to the audio system. Each pin factory is capable of instantiating pins of a particular type. If the filter can provide one or more pins that are similar or identical in function, the filter groups those pins together into the same pin factory. For example, a filter that performs audio mixing might have one pin factory that can instantiate a single output pin and a second pin factory that can instantiate several input pins.
 
-KS services are built upon the Windows Driver Model. Note that the term *KS filter* must be distinguished from the term *filter driver*, which is another WDM concept. A filter driver resides in a WDM driver stack and can intercept and modify the I/O request packets (IRPs) that propagate through the stack. Upper- and lower-level filter drivers reside above and below the function driver, respectively. In this section, the term *filter* refers to a KS filter rather than a filter driver unless noted otherwise. For more information about filter drivers, see [Types of WDM Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/types-of-wdm-drivers).
+KS services are built upon the Windows Driver Model. Note that the term *KS filter* must be distinguished from the term *filter driver*, which is another WDM concept. A filter driver resides in a WDM driver stack and can intercept and modify the I/O request packets (IRPs) that propagate through the stack. Upper- and lower-level filter drivers reside above and below the function driver, respectively. In this section, the term *filter* refers to a KS filter rather than a filter driver unless noted otherwise. For more information about filter drivers, see [Types of WDM Drivers](../kernel/types-of-wdm-drivers.md).
 
 This section contains the following topics:
 
@@ -61,12 +60,7 @@ This section contains the following topics:
 
 [KsStudio Utility](ksstudio-utility.md)
 
-For updates and information about new features of the WDM audio architecture, see the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
+For updates and information about new features of the WDM audio architecture, see the [audio technology](./index.md) website.
 
  
-
- 
-
-
-
 

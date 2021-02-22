@@ -1,7 +1,6 @@
 ---
 title: DevCon Resources
 description: Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. Valid on local and remote computers.
-ms.assetid: 06bf2a5a-07a1-42b4-90db-ed74ce84d075
 keywords:
 - DevCon Resources Driver Development Tools
 topic_type:

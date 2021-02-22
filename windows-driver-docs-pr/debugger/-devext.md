@@ -1,7 +1,6 @@
 ---
 title: devext
 description: The devext extension displays bus-specific device extension information for devices on a variety of buses.
-ms.assetid: b4d4f595-9b0b-40e2-8790-2c913a50c8fe
 keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "devext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Legacy COM Ports
 description: Enumerating Legacy COM Ports
-ms.assetid: 36a73153-0e3e-4b41-9b3d-08b29b5220fe
 keywords:
 - Serial driver WDK , COM ports
 - COM ports WDK serial devices

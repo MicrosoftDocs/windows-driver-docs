@@ -1,7 +1,6 @@
 ---
 title: RxNewMapUserBuffer function
 description: RxNewMapUserBuffer returns the user buffer address used for low I/O.
-ms.assetid: 90ab7793-55ed-47f7-b55d-f4205488796c
 keywords: ["RxNewMapUserBuffer function Installable File System Drivers"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ Remarks
 
 If an MDL exists, then the assumption is that the MDL describes the user buffer, and the system address for the MDL is returned by **RxNewMapUserBuffer**. Otherwise, the user buffer is returned directly by **RxNewMapUserBuffer**.
 
-The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress** member of the *RxContext* variable is **NULL** and returns the **CurrentIrp**-&gt;**UserBuffer** member of the *RxContext* variable when this is the case. If the **CurrentIrp**-&gt;**MdlAddress** member is not **NULL**, then **RxNewMapUserBuffer** will call [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) to return the MDL from the IRP.
+The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress** member of the *RxContext* variable is **NULL** and returns the **CurrentIrp**-&gt;**UserBuffer** member of the *RxContext* variable when this is the case. If the **CurrentIrp**-&gt;**MdlAddress** member is not **NULL**, then **RxNewMapUserBuffer** will call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to return the MDL from the IRP.
 
 Note that the **RxNewMapUserBuffer** routine is only available on Windows XP and Windows 2000.
 
@@ -80,22 +79,15 @@ Requirements
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)
+[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
 
-[**RxLowIoCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiocompletion)
+[**RxLowIoCompletion**](/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiocompletion)
 
-[**RxLowIoGetBufferAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiogetbufferaddress)
+[**RxLowIoGetBufferAddress**](/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiogetbufferaddress)
 
-[**RxMapSystemBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxmapsystembuffer)
+[**RxMapSystemBuffer**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxmapsystembuffer)
 
-[**RX\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/ns-rxcontx-_rx_context)
-
- 
+[**RX\_CONTEXT**](/windows-hardware/drivers/ddi/rxcontx/ns-rxcontx-_rx_context)
 
  
-
-
-
-
-
 

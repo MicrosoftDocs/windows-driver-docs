@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC0000218 STATUS_CANNOT_LOAD_REGISTRY_FILE
 description: The STATUS_CANNOT_LOAD_REGISTRY_FILE bug check has a value of 0xC0000218. This indicates that a registry file could not be loaded.
-ms.assetid: cdcf68fa-8beb-4e21-bc6b-7a9f4c6e9e80
 keywords: ["Bug Check 0xC0000218 STATUS_CANNOT_LOAD_REGISTRY_FILE", "STATUS_CANNOT_LOAD_REGISTRY_FILE"]
 ms.date: 05/23/2017
 topic_type:

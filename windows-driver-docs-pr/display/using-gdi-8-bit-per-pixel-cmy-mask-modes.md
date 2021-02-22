@@ -1,7 +1,6 @@
 ---
 title: Using GDI 8-Bit-Per-Pixel CMY Mask Modes
 description: Using GDI 8-Bit-Per-Pixel CMY Mask Modes
-ms.assetid: 0631f292-c1f1-4627-b116-0b54a34ea295
 keywords:
 - GDI WDK Windows 2000 display , halftoning
 - graphics drivers WDK Windows 2000 display , halftoning
@@ -18,19 +17,19 @@ ms.localizationpriority: medium
 ## <span id="ddk_using_gdi_8_bit_per_pixel_cmy_mask_modes_gg"></span><span id="DDK_USING_GDI_8_BIT_PER_PIXEL_CMY_MASK_MODES_GG"></span>
 
 
-In Microsoft Windows 2000, the [**HT\_Get8BPPMaskPalette**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette) function returned 8-bit-per-pixel monochrome or CMY palettes. In Windows XP and later, this function has been modified so that it also returns inverted-index CMY palettes when the *Use8BPPMaskPal* parameter is set to **TRUE**. The type of palette returned depends on the value stored in *pPaletteEntry*\[0\] when **HT\_Get8BPPMaskPalette** is called. If *pPaletteEntry*\[0\] is set to 'RGB0', an inverted-index palette is returned. If *pPaletteEntry*\[0\] is set to 0, a normal CMY palette is returned.
+In Microsoft Windows 2000, the [**HT\_Get8BPPMaskPalette**](/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette) function returned 8-bit-per-pixel monochrome or CMY palettes. In Windows XP and later, this function has been modified so that it also returns inverted-index CMY palettes when the *Use8BPPMaskPal* parameter is set to **TRUE**. The type of palette returned depends on the value stored in *pPaletteEntry*\[0\] when **HT\_Get8BPPMaskPalette** is called. If *pPaletteEntry*\[0\] is set to 'RGB0', an inverted-index palette is returned. If *pPaletteEntry*\[0\] is set to 0, a normal CMY palette is returned.
 
 The reason for this change in behavior of **HT\_Get8BPPMaskPalette** is that when Windows GDI uses ROPs, which are based on the indexes in a palette and not on the palette colors, it assumes that index 0 of the palette is always black and that the last index is always white. GDI does not check the palette entries. This change in **HT\_Get8BPPMaskPalette** ensures correct ROP output, instead of a result that is inverted.
 
 To correct the GDI ROP behavior, GDI in Windows XP and later supports a special CMY palette composition format in which the CMY mask palette entries start at index 255 (white) and work down to index 0 (black), instead of starting at index 0 (white) and working up to index 255 (black). The CMY inverted modes also move all CMY mask color entries to the middle of a full 256-entry palette, with the beginning and end of the palette padded with equal numbers of black and white entries.
 
-**Note**   In the discussion that follows, the term *CMY mode* refers to a mode supported in the previous implementation of [**HT\_Get8BPPMaskPalette**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette). The term *CMY\_INVERTED mode* refers to modes supported only on Windows XP and later GDI, in which this function inverts bitmask indexes when *pPaletteEntry*\[0\] is set to 'RGB0'.
+**Note**   In the discussion that follows, the term *CMY mode* refers to a mode supported in the previous implementation of [**HT\_Get8BPPMaskPalette**](/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette). The term *CMY\_INVERTED mode* refers to modes supported only on Windows XP and later GDI, in which this function inverts bitmask indexes when *pPaletteEntry*\[0\] is set to 'RGB0'.
 
  
 
 The following steps are required for all Windows XP and later drivers that use Windows GDI halftone 8-bit-per-pixel CMY mask modes. If you are developing a driver for Windows 2000, you should limit the driver's use to 8-bit-per-pixel monochrome palettes.
 
-1.  Set the **flHTFlags** member of the [**GDIINFO**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_gdiinfo) structure to HT\_FLAG\_INVERT\_8BPP\_BITMASK\_IDX so that GDI will render images in one of the CMY\_INVERTED modes.
+1.  Set the **flHTFlags** member of the [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-gdiinfo) structure to HT\_FLAG\_INVERT\_8BPP\_BITMASK\_IDX so that GDI will render images in one of the CMY\_INVERTED modes.
 
 2.  Set *pPaletteEntry*\[0\] as follows prior to a call to **HT\_Get8BPPMaskPalette**:
 
@@ -49,7 +48,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
     Here *pPaletteEntry* is the pointer to the PALETTEENTRY that was passed in the call to the **HT\_Get8BPPMaskPalette** function. When this macro completes execution, *pPaletteEntry*\[0\] will contain the string 'RGB0'.
 
-3.  Check the *pPaletteEntry* parameter returned from the call to [**HT\_Get8BPPMaskPalette**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette) using the **HT\_IS\_BITMASKPALRGB** macro, which is defined in *winddi.h*. Here is an example showing the use of this macro.
+3.  Check the *pPaletteEntry* parameter returned from the call to [**HT\_Get8BPPMaskPalette**](/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette) using the **HT\_IS\_BITMASKPALRGB** macro, which is defined in *winddi.h*. Here is an example showing the use of this macro.
 
     ```cpp
     InvCMYSupported = HT_IS_BITMASKPALRGB(pPaletteEntry)
@@ -59,7 +58,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
     If this macro returns **FALSE**, then the current version of GDI *does not* support the inverted CMY 8-bit-per-pixel bitmask modes. In that case, GDI supports only the older CMY noninverted modes.
 
-For GDI versions that support the 8-bit-per-pixel CMY\_INVERTED modes, the meaning of the *CMYMask* parameter value passed to the [**HT\_Get8BPPMaskPalette**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette) function has been changed. The following table summarizes the changes:
+For GDI versions that support the 8-bit-per-pixel CMY\_INVERTED modes, the meaning of the *CMYMask* parameter value passed to the [**HT\_Get8BPPMaskPalette**](/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette) function has been changed. The following table summarizes the changes:
 
 <table>
 <colgroup>
@@ -181,7 +180,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 <div>
  
 </div>
-<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
+<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
 <td align="left"><p>0: Black</p>
 <div>
  
@@ -215,7 +214,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 <div>
  
 </div>
-<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
+<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
 </tr>
 </tbody>
 </table>
@@ -458,12 +457,4 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
             |
             +-- Cyan 0-7 (Max. 8 levels)
 ```
-
- 
-
- 
-
-
-
-
 

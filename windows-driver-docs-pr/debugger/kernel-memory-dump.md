@@ -1,7 +1,6 @@
 ---
 title: Kernel Memory Dump
 description: Kernel Memory Dump
-ms.assetid: 466f5b92-c9bd-4050-9ef8-469979ba0cbe
 keywords: ["dump file, Kernel Memory Dump", "Kernel Memory Dump"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ A *Kernel Memory Dump* contains all the memory in use by the kernel at the time 
 
 This kind of dump file is significantly smaller than the Complete Memory Dump. Typically, the dump file will be around one-third the size of the physical memory on the system. This quantity will vary considerably, depending on your circumstances.
 
-This dump file will not include unallocated memory, or any memory allocated to user-mode applications. It only includes memory allocated to the Windows kernel and hardware abstraction level (HAL), as well as memory allocated to kernel-mode drivers and other kernel-mode programs.
+This dump file will not include unallocated memory, or any memory allocated to user-mode applications. It only includes memory allocated to the Windows kernel and hardware abstraction layer (HAL), as well as memory allocated to kernel-mode drivers and other kernel-mode programs.
 
 For most purposes, this crash dump is the most useful. It is significantly smaller than the Complete Memory Dump, but it only omits those portions of memory that are unlikely to have been involved in the crash.
 

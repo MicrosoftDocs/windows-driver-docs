@@ -1,7 +1,6 @@
 ---
 title: Secure Key Injection
 description: Secure Key Injection
-ms.assetid: 21F8ED59-B04C-40D3-AEED-015890798215
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ Secure Key Injection provides support for the encrypted transfer of sensitive ma
 
     1.  Use shared symmetric keys between the server and the smart card on the client.
     2.  Generate a temporary symmetric session key on the server and import it to the smart card. The session key must be encrypted by a public key that has the corresponding private key generated on the smart card .
-    3.  Derive a session key from a shared symmetric key. For more information, see [**CardGetSharedKeyHandle**](https://docs.microsoft.com/previous-versions/dn468730(v=vs.85)).
+    3.  Derive a session key from a shared symmetric key. For more information, see [**CardGetSharedKeyHandle**](/previous-versions/dn468730(v=vs.85)).
     4.  Use DH key derivation.
 
 2.  Encryption of data on the server:
@@ -49,24 +48,24 @@ typedef ULONG_PTR  CARD_KEY_HANDLE;
 ## <span id="_No_Card_Mode"></span><span id="_no_card_mode"></span><span id="_NO_CARD_MODE"></span> No Card Mode
 
 
-To facilitate server applications that format and encrypt data by using the same minidriver that is installed on the untrusted client, [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)) can be called in a mode that does not require the card to be present. This mode is enabled by setting the following flag in the *dwFlags* parameter of **CardAcquireContext** .
+To facilitate server applications that format and encrypt data by using the same minidriver that is installed on the untrusted client, [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)) can be called in a mode that does not require the card to be present. This mode is enabled by setting the following flag in the *dwFlags* parameter of **CardAcquireContext** .
 
 ``` syntax
 #define CARD_SECURE_KEY_INJECTION_NO_CARD_MODE  0x1
 ```
 
-This setting instructs [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)) not to expect any card to be in the reader. This means that the ATR fields in the [**CARD\_DATA**](https://docs.microsoft.com/previous-versions/dn468748(v=vs.85)) are not filled and **hSCard** and **hSCardCtx** are set to zero.
+This setting instructs [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)) not to expect any card to be in the reader. This means that the ATR fields in the [**CARD\_DATA**](/previous-versions/dn468748(v=vs.85)) are not filled and **hSCard** and **hSCardCtx** are set to zero.
 
 When this flag is set, the minidriver can accept only the following function calls:
 
--   [**MDImportSessionKey**](https://docs.microsoft.com/previous-versions/dn468757(v=vs.85))
--   [**MDEncryptData**](https://docs.microsoft.com/previous-versions/dn468756(v=vs.85))
--   [**CardGetSharedKeyHandle**](https://docs.microsoft.com/previous-versions/dn468730(v=vs.85))
--   [**CardGetAlgorithmProperty**](https://docs.microsoft.com/previous-versions/dn468722(v=vs.85))
--   [**CardDestroyKey**](https://docs.microsoft.com/previous-versions/dn468720(v=vs.85))
--   [**CardGetKeyProperty**](https://docs.microsoft.com/previous-versions/dn468728(v=vs.85))
--   [**CardSetKeyProperty**](https://docs.microsoft.com/previous-versions/dn468739(v=vs.85))
--   [**CardProcessEncryptedData**](https://docs.microsoft.com/previous-versions/dn468732(v=vs.85))
+-   [**MDImportSessionKey**](/previous-versions/dn468757(v=vs.85))
+-   [**MDEncryptData**](/previous-versions/dn468756(v=vs.85))
+-   [**CardGetSharedKeyHandle**](/previous-versions/dn468730(v=vs.85))
+-   [**CardGetAlgorithmProperty**](/previous-versions/dn468722(v=vs.85))
+-   [**CardDestroyKey**](/previous-versions/dn468720(v=vs.85))
+-   [**CardGetKeyProperty**](/previous-versions/dn468728(v=vs.85))
+-   [**CardSetKeyProperty**](/previous-versions/dn468739(v=vs.85))
+-   [**CardProcessEncryptedData**](/previous-versions/dn468732(v=vs.85))
 
 ## <span id="Use_Case_Scenario_for_Secure_Key_Injection"></span><span id="use_case_scenario_for_secure_key_injection"></span><span id="USE_CASE_SCENARIO_FOR_SECURE_KEY_INJECTION"></span>Use Case Scenario for Secure Key Injection
 
@@ -83,53 +82,47 @@ The following steps describes the process as shown in the previous figure:
 
 1.  The client applications request a new certificate from a CA application that is running on the server.
 2.  When it receives the client’s request, the server application detects that the certificate template has been configured for key recovery. As a result, the server application initiates the secure key injection protocol.
-3.  The client application calls [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)) for CP\_KEY\_IMPORT\_SUPPORT to discover the following:
+3.  The client application calls [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)) for CP\_KEY\_IMPORT\_SUPPORT to discover the following:
 
     -   Whether the card supports secure key injection.
     -   Which method of symmetric key import is supported.
     -   What algorithms are supported.
 
 4.  The minidriver indicates to the client application that it supports key injection through the asymmetric mechanism (CARD\_KEY\_IMPORT\_ASYMMETRIC\_KEYEST).
-5.  The client application looks through the container map file of the smart card to see if any containers are useful for key import. If none is found, the client application calls [**CardCreateContainer**](https://docs.microsoft.com/previous-versions/dn468708(v=vs.85)) to generate a new key pair.
+5.  The client application looks through the container map file of the smart card to see if any containers are useful for key import. If none is found, the client application calls [**CardCreateContainer**](/previous-versions/dn468708(v=vs.85)) to generate a new key pair.
 6.  The minidriver instructs the smart card to create a key pair.
 7.  The smart card returns the key to the minidriver after the key is created.
 8.  The minidriver returns an indication to the client application that the key was generated.
-9.  The client application now calls [**CardGetContainerInfo**](https://docs.microsoft.com/previous-versions/dn468725(v=vs.85)) to export the public key of the key pair that was created in step 6.
+9.  The client application now calls [**CardGetContainerInfo**](/previous-versions/dn468725(v=vs.85)) to export the public key of the key pair that was created in step 6.
 10. The card minidriver instructs the card to return the public key.
 11. The card extracts the public key (K1)from the card and returns it to the minidriver.
 12. The minidriver returns K1 to the client application.
-13. The client application calls [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)) to enumerate the symmetric algorithms that the card supports, as well as enumerate the padding schemes that can be used with K1.
+13. The client application calls [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)) to enumerate the symmetric algorithms that the card supports, as well as enumerate the padding schemes that can be used with K1.
 14. The minidriver returns the algorithms and padding modes that are supported.
 15. The client application sends K1 back to the server application, along with the information that describes the symmetric key algorithms and padding modes that the card supports.
 16. By using one of the algorithms that the card supports, the server application generates a symmetric key (S1). The symmetric key S1 is encrypted with K1 and returned to the client application. The server application also returns information about the encryption algorithm and the type of padding that was used to encrypt S1.
-17. The client application calls [**CardImportSessionKey**](https://docs.microsoft.com/previous-versions/dn468731(v=vs.85)) with an encrypted key data BLOB along with the reference to K1 and any padding information to be used to decrypt the BLOB.
+17. The client application calls [**CardImportSessionKey**](/previous-versions/dn468731(v=vs.85)) with an encrypted key data BLOB along with the reference to K1 and any padding information to be used to decrypt the BLOB.
 
-    For more information about key data BLOBs, see [**BCRYPT\_KEY\_DATA\_BLOB\_HEADER**](https://docs.microsoft.com/windows/desktop/api/bcrypt/ns-bcrypt-_bcrypt_key_data_blob_header).
+    For more information about key data BLOBs, see [**BCRYPT\_KEY\_DATA\_BLOB\_HEADER**](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_key_data_blob_header).
 
 18. The minidriver passes the encrypted BLOB data to the smart card for decryption.
 19. After the symmetric key is decrypted, the smart card returns a reference to the symmetric key to the minidriver.
 20. The minidriver returns a key handle to the client application for the symmetric key.
 21. The client application sends an acknowledgment to the server application that the symmetric key has been imported.
-22. The server application imports S1 to the server-side minidriver by calling [**MDImportSessionKey**](https://docs.microsoft.com/previous-versions/dn468757(v=vs.85)).
+22. The server application imports S1 to the server-side minidriver by calling [**MDImportSessionKey**](/previous-versions/dn468757(v=vs.85)).
 23. The server-side minidriver returns success to indicate that S1 was successfully imported.
-24. The server application generates the asymmetric key pair (K2). K2 is sent to the server-side minidriver by calling [**MDEncryptData**](https://docs.microsoft.com/previous-versions/dn468756(v=vs.85)). The server application generates the IV and Chaining mode, and set this info to the server-side minidriver by calling [**CardSetKeyProperty**](https://docs.microsoft.com/previous-versions/dn468739(v=vs.85)).
+24. The server application generates the asymmetric key pair (K2). K2 is sent to the server-side minidriver by calling [**MDEncryptData**](/previous-versions/dn468756(v=vs.85)). The server application generates the IV and Chaining mode, and set this info to the server-side minidriver by calling [**CardSetKeyProperty**](/previous-versions/dn468739(v=vs.85)).
 25. The server-side minidriver encrypts K2 by using S1, and returns the encrypted K2 to the server application.
 26. The server application sends the encryptedK2 to the client application, along with any information that pertains to the encryption. This includes the IV and Chaining mode information.
-27. The client application calls [**CardSetKeyProperty**](https://docs.microsoft.com/previous-versions/dn468739(v=vs.85)) to instruct the minidriver what IV and chaining mode to use with the S1. The client application then calls [**CardProcessEncryptedData**](https://docs.microsoft.com/previous-versions/dn468732(v=vs.85)) with the following data:
+27. The client application calls [**CardSetKeyProperty**](/previous-versions/dn468739(v=vs.85)) to instruct the minidriver what IV and chaining mode to use with the S1. The client application then calls [**CardProcessEncryptedData**](/previous-versions/dn468732(v=vs.85)) with the following data:
 
     -   The encrypted key data BLOB that contains K2.
     -   The key reference to S1 so that the card can decrypt the data and create the key.
 
 28. The minidriver performs the necessary steps to prepare a new key container and gives the encrypted key data BLOB to the smart card.
 29. The smart card decrypts K2 using S1 and generates a new key container for K2. The card returns success to indicate that the key has been imported.
-30. The minidriver returns success from [**CardProcessEncryptedData**](https://docs.microsoft.com/previous-versions/dn468732(v=vs.85)).
+30. The minidriver returns success from [**CardProcessEncryptedData**](/previous-versions/dn468732(v=vs.85)).
 31. The client application returns success and the process is complete.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Child Devices and Control Methods
 description: Enumerating Child Devices and Control Methods
-ms.assetid: fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67
 keywords:
 - ACPI devices WDK , enumerating child devices
 - ACPI devices WDK , enumerating control methods
@@ -26,7 +25,7 @@ In an ACPI namespace, an object that is a device--for example, a device named 'A
  _FOO            control method
 ```
 
-To use [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) or [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex), a driver for a device supplies the path and name of the control method in an ACPI namespace. To help obtain the path and name of a device and child objects of a device, Windows supports the [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request. Referring to the simplified ACPI namespace provided in this section as an example, a driver in the device stack of device 'ABCD' can use this request to do the following:
+To use [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) or [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex), a driver for a device supplies the path and name of the control method in an ACPI namespace. To help obtain the path and name of a device and child objects of a device, Windows supports the [**IOCTL\_ACPI\_ENUM\_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request. Referring to the simplified ACPI namespace provided in this section as an example, a driver in the device stack of device 'ABCD' can use this request to do the following:
 
 -   Enumerate device 'ABCD' and the immediate child devices of 'ABCD.' For example, the request can be used to return '\\ABCD,' '\\ABCD.CHL1,' and '\\ABCD.CHL2.'
 
@@ -36,7 +35,7 @@ To use [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-ha
 
 After a driver obtains the path and name of a control method, it can supply the path and name as input to IOCTL\_ACPI\_EVAL\_METHOD\_EX or IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX, as described in [Evaluating ACPI Control Methods Synchronously](evaluating-acpi-control-methods-synchronously.md).
 
-An [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request takes as input a driver-allocated variable-length [**ACPI\_ENUM\_CHILDREN\_INPUT\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_input_buffer) structure that contains the following members:
+An [**IOCTL\_ACPI\_ENUM\_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request takes as input a driver-allocated variable-length [**ACPI\_ENUM\_CHILDREN\_INPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_input_buffer) structure that contains the following members:
 
 <a href="" id="signature"></a>**Signature**  
 The signature of the input buffer, which must be set to ACPI\_ENUM\_CHILDREN\_INPUT\_BUFFER\_SIGNATURE.

@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
+description: This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
 title: USB hardware verifier (USB3HWVerifierAnalyzer.exe)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -7,32 +7,29 @@ ms.localizationpriority: medium
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)
 
-
 This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
 
 Most hardware issues manifest in ways that lead to poor end-user experience and it's often difficult to determine the exact failure. The USB hardware verifier aims at capturing hardware failures that occur in a device, port, hub, controller, or a combination of them.
 
 The USB hardware verifier can perform these tasks:
 
--   Capture hardware events and display information in real time.
--   Generate a trace file with information about all events.
--   Parse an existing trace file for event information.
+- Capture hardware events and display information in real time.
+- Generate a trace file with information about all events.
+- Parse an existing trace file for event information.
 
 This topic contains the following sections:
 
--   [Getting the USB hardware verifier analyzer tool](#getting-the-usb-hardware-verifier-analyzer-tool)
--   [How to capture events by using a USB hardware verifier](#how-to-capture-events-by-using-a-usb-hardware-verifier)
--   [USB hardware verifier flags](#usb-hardware-verifier-flags)
+- [Getting the USB hardware verifier analyzer tool](#getting-the-usb-hardware-verifier-analyzer-tool)
+- [How to capture events by using a USB hardware verifier](#how-to-capture-events-by-using-a-usb-hardware-verifier)
+- [USB hardware verifier flags](#usb-hardware-verifier-flags)
 
 ## Getting the USB hardware verifier analyzer tool
-
 
 The USB hardware verifier tool is included with the MUTT software package that is available for download at [Tools in the MUTT software package](mutt-software-package.md).
 
 The tools package contains several tools that perform stress and transfer tests (including power transitions) and SuperSpeed tests. The package also has a Readme document (available as a separate download). The document gives you a brief overview of the types of MUTT hardware. It provides step-by-step guidance about various tests you should run, and suggests topologies for controller, hub, device, and BIOS/UEFI testing.
 
 ## How to capture events by using a USB hardware verifier
-
 
 To capture events by using the hardware verifier, perform these steps:
 
@@ -74,8 +71,6 @@ To capture events by using the hardware verifier, perform these steps:
    </tr>
    </tbody>
    </table>
-
-     
 
 2. Run the test scenario for which you want to capture hardware events.
 
@@ -210,7 +205,6 @@ To capture events by using the hardware verifier, perform these steps:
 
 ## USB hardware verifier flags
 
-
 | Flag                                                | Indicates that ...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DeviceHwVerifierClientInitiatedResetPipe            | The client driver initiated a recovery action by resetting a particular pipe in response to I/O failures. Certain client drivers might perform error recovery in other scenarios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -236,10 +230,6 @@ To capture events by using the hardware verifier, perform these steps:
 | HubHwVerifierPortOverCurrent                        | The downstream port reported overcurrent state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | HubHwVerifierControllerOperationFailure             | A controller operation (such as enabling device, configuring endpoints) failed for the device that is attached to the target port. Failures from SET\_ADDRESS and Reset endpoint requests are not captured.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
- 
-
 ## Related topics
-[USB Diagnostics and Test Guide](usb-driver-testing-guide.md)  
 
-
-
+[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)

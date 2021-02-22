@@ -1,7 +1,6 @@
 ---
 title: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 description: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
-ms.assetid: 9760d527-0205-477b-bc16-d6aa65b1eaf7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: NDIS 6.20 Backward Compatibility
 description: NDIS 6.20 Backward Compatibility
-ms.assetid: a2d71cae-aed2-4c23-9ad2-5c32d4ab2294
 keywords:
 - NDIS 6.20 WDK , backward compatibility
 - backward compatibility WDK NDIS 6.20
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS 6.20 adds backward compatibility features to those that apply to NDIS 6.0 drivers. For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility). In addition to the translation features that NDIS 6.0 provides for NDIS 5.x and earlier drivers, NDIS 6.20 also provides translation for the power management interface. NDIS 6.20 drivers must support the NDIS 6.20 power management interface.
+NDIS 6.20 adds backward compatibility features to those that apply to NDIS 6.0 drivers. For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility). In addition to the translation features that NDIS 6.0 provides for NDIS 5.x and earlier drivers, NDIS 6.20 also provides translation for the power management interface. NDIS 6.20 drivers must support the NDIS 6.20 power management interface.
 
 NDIS 6.20 supports updated versions of the features that were added for NDIS 6.1. For more information about updates to NDIS 6.1 features, see [NDIS 6.20 Support for NDIS 6.1 Features](ndis-6-20-updates-to-ndis-6-1-features.md).
 
@@ -33,21 +32,15 @@ NDIS 5.x and earlier NDIS drivers are deprecated in Microsoft Windows versions a
 
 IrDA miniport drivers will not be supported in Microsoft Windows versions after Windows 7.
 
-[IPsec task offload version 1](ipsec-offload-version-1.md) will not be supported in Microsoft Windows versions after Windows 7. All drivers that support IPsec task offload should be updated to support [IPsec task offload version 2](ipsec-offload-version-2.md).
+[IPsec task offload version 1](background-reading-on-ipsec.md) will not be supported in Microsoft Windows versions after Windows 7. All drivers that support IPsec task offload should be updated to support [IPsec task offload version 2](./introduction-to-ipsec-offload-version-2.md).
 
 Filter intermediate drivers will not be supported in Microsoft Windows versions after Windows 7. You should use the NDIS 6.0 filter drivers interface. For more information about filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers.md).
 
-802.11 drivers that emulate 802.3 will not be supported in Microsoft Windows versions after Windows 7. NDIS 802.11 drivers must support the native 802.11 interface. For more information about native 802.11, see [Native 802.11 Wireless LAN](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)).
+802.11 drivers that emulate 802.3 will not be supported in Microsoft Windows versions after Windows 7. NDIS 802.11 drivers must support the native 802.11 interface. For more information about native 802.11, see [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)).
 
 NDIS WAN drivers will not be supported in Microsoft Windows versions after Windows 7. NDIS WAN drivers must be ported to the NDIS 6.0 CoNDIS WAN driver model. For more information about CoNDIS WAN, see WAN Miniport Drivers.
 
 ATM and Token Ring drivers will not be supported in Microsoft Windows versions after Windows 7.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_LTE_ATTACH_STATUS
 description: Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_STATUS notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_LTE_ATTACH_STATUS Query request.
-ms.assetid: 8A40437E-7AAC-4829-A032-0B8C933A7AC0
 ms.date: 08/23/2018
 keywords: 
  -NDIS_STATUS_WWAN_LTE_ATTACH_STATUS Network Drivers Starting with Windows Vista
@@ -14,14 +13,12 @@ Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_STATUS notification to info
 
 Unsolicited events are sent if a context for LTE attach is activated, which could be when a SIM is inserted for example. In this case, the miniport driver should send this notification to the host OS.
 
-This status notification uses the [**NDIS_WWAN_LTE_ATTACH_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status) structure.
+This status notification uses the [**NDIS_WWAN_LTE_ATTACH_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status) structure.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1703 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1703
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
@@ -29,4 +26,4 @@ This status notification uses the [**NDIS_WWAN_LTE_ATTACH_STATUS**](https://docs
 
 [OID_WWAN_LTE_ATTACH_STATUS](oid-wwan-lte-attach-status.md)
 
-[**NDIS_WWAN_LTE_ATTACH_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status)
+[**NDIS_WWAN_LTE_ATTACH_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status)

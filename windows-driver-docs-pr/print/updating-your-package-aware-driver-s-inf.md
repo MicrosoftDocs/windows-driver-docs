@@ -1,7 +1,6 @@
 ---
 title: Updating Your Package-Aware Driver's INF
 description: Updating Your Package-Aware Driver's INF
-ms.assetid: d0bf489d-d084-40df-b5aa-69cdf679993f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,14 +23,9 @@ InboxVersionRequired=<version of the updated core driver>
 
 In the preceding example, replace the text in italics with the appropriate driver version information.
 
-Second, use the [**INF CopyINF directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyinf-directive) to copy the updated core driver package to the driver store. This directive was updated in Windows Vista to support copying to the driver store.
+Second, use the [**INF CopyINF directive**](../install/inf-copyinf-directive.md) to copy the updated core driver package to the driver store. This directive was updated in Windows Vista to support copying to the driver store.
 
 After completing these steps, the driver should be ready to test. During PnP installation, the installer will discover the new package-aware driver and read the associated INF file. The CopyINF directive will force the updated core driver package to be loaded into the driver store, and the rest of the package-aware driver installation will proceed.
 
  
-
- 
-
-
-
 

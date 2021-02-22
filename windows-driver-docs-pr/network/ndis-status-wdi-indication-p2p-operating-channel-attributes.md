@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES to indicate the preferred operating channel to start a GO, the preferred listen channel if asked to enter listen state, and the full set of supported channels at any point of time. The indication is sent once when adapter initializes, and then sent each time one of these parameters changes due to events such as roaming or connecting or disconnecting from an access point.
-ms.assetid: F7D27328-99B3-4EB5-9F48-864338EF8D8A
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES Network Drivers Starting with Windows Vista
@@ -28,9 +27,9 @@ It is expected that the listen channel reported by the driver is honored if list
 
 | Type                                                                                       | Multiple TLV instances allowed | Optional | Description                                              |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-number)                  |                                |          | The Wi-Fi Direct Operating channel attribute.            |
-| [**WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-list-attribute) |                                |          | The full set of channels supported by the local adapter. |
-| [**WDI\_TLV\_P2P\_LISTEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-listen-channel)                  |                                |          | The Wi-Fi Direct Listen channel attribute.               |
+| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](./wdi-tlv-p2p-channel-number.md)                  |                                |          | The Wi-Fi Direct Operating channel attribute.            |
+| [**WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE**](./wdi-tlv-p2p-channel-list-attribute.md) |                                |          | The full set of channels supported by the local adapter. |
+| [**WDI\_TLV\_P2P\_LISTEN\_CHANNEL**](./wdi-tlv-p2p-listen-channel.md)                  |                                |          | The Wi-Fi Direct Listen channel attribute.               |
 
  
 
@@ -59,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

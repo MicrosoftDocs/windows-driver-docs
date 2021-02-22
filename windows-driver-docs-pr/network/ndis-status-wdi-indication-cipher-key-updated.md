@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED
 description: NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED
-ms.assetid: 95AB3325-9AE7-4F10-8E00-88D502E1A5C9
 ms.date: 04/02/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED Network Drivers Starting with Windows Vista
@@ -25,8 +24,9 @@ For example, the driver would send this notification if it or the firmware recei
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1803 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1803
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

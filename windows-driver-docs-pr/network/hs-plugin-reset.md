@@ -1,7 +1,6 @@
 ---
 title: HS_PLUGIN_RESET function
 description: The HS_PLUGIN_RESET function is called by the host to notify the plugin that it must reset its state.
-ms.assetid: 9f5683c9-b426-4802-85bd-c1ce770b9e46
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_RESET) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_RESET function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_RESET** function is called by the host to notify the plugin that it must reset its state.

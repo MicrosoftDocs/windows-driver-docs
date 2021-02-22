@@ -1,7 +1,6 @@
 ---
 title: SIO_ADDRESS_LIST_QUERY
 description: SIO_ADDRESS_LIST_QUERY
-ms.assetid: c50520a3-6ba3-448e-bbb4-bf3425dcbc41
 ms.date: 08/08/2017
 keywords: 
  -SIO_ADDRESS_LIST_QUERY Network Drivers Starting with Windows Vista
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The SIO\_ADDRESS\_LIST\_QUERY socket I/O control operation allows a WSK application to query the current list of local transport addresses for a socket's address family. This socket I/O control operation applies to all socket types.
 
-To query the current list of local transport addresses for a socket's address family, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To query the current list of local transport addresses for a socket's address family, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -66,7 +65,7 @@ To query the current list of local transport addresses for a socket's address fa
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to query the current list of local transport addresses for a socket's address family.
 
-If the call to the **WskControlSocket** function succeeds, the output buffer contains a [**SOCKET\_ADDRESS\_LIST**](https://docs.microsoft.com/windows/desktop/api/ws2def/ns-ws2def-_socket_address_list) structure followed by the SOCKADDR structures for each of the local transport addresses for the socket's address family.
+If the call to the **WskControlSocket** function succeeds, the output buffer contains a [**SOCKET\_ADDRESS\_LIST**](/windows/win32/api/ws2def/ns-ws2def-socket_address_list) structure followed by the SOCKADDR structures for each of the local transport addresses for the socket's address family.
 
 If the **WskControlSocket** function returns STATUS\_BUFFER\_OVERFLOW, the variable that is pointed to by the *OutputSizeReturned* parameter contains the output buffer size, in bytes, that is required to contain the complete list of local transport addresses for the socket's address family.
 
@@ -93,9 +92,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

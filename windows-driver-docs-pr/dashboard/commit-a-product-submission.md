@@ -1,8 +1,6 @@
 ---
 title: Commit a product submission
 description: Use this method in the Microsoft Hardware API to commit a new submission to the Partner Center.
-author: balapv
-ms.author: balapv
 ms.date: 04/05/2018
 ms.topic: article
 ms.localizationpriority: medium
@@ -22,10 +20,9 @@ Another prerequisite to commit a submission is to complete the upload of the dri
 
 This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
 
-
 | Method | Request URI                                                                                                    |
 |:-------|:---------------------------------------------------------------------------------------------------------------|
-| POST   | https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/commit |
+| POST   | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/commit`|
 
 The productId in the method is the product for which the submission is intended. The submssionID in the method is the submission which is being committed.
 
@@ -59,7 +56,7 @@ The following example demonstrates the JSON response body returned by a successf
 
 ```json
 {
-  "commitStatus": "commitStarted",
+  "commitStatus": "CommitPending",
 }
 ```
 
@@ -67,7 +64,7 @@ The following example demonstrates the JSON response body returned by a successf
 
 | Value | Type | Description |
 |:--|:--|:--|
-| commitStatus | string | The status of the submission. The value returned would be CommitStarted |
+| commitStatus | string | The status of the submission. The value returned would be CommitPending |
 
 After this step, use the method [get submission details](get-a-submission.md)  to get the status of the submission.
 

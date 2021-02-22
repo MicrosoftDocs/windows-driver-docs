@@ -15,7 +15,7 @@ Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or
 
 1. Ability to enable and disable the CSM
 1. Has UEFI firmware 2.3.1c or later
-1. The security features that you are interested in (Secure boot, Device Guard, and Credential Guard) have all the correct components already configured on the system.
+1. The security features that you are interested in (Secure boot, HVCI, and Credential Guard) have all the correct components already configured on the system.
     > [!NOTE]
     > Microsoft does not currently have a mechanism to convert Legacy MBR boot disks to GPT disks without first wiping or cleaning an existing file system and creating the new file system on the clean disk.
 
@@ -124,7 +124,7 @@ You may need to consult with the OEM for configuration details on your specific 
 
 ## Related resources
 
-[Recommended UEFI-Based Disk-Partition Configurations](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10))
+[Recommended UEFI-Based Disk-Partition Configurations](/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10))
 
 [Win7 Back up your programs, system settings, and files](https://support.microsoft.com/help/17127/windows-back-up-restore#1TC=windows-7)
 

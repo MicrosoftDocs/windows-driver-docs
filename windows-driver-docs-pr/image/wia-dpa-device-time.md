@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPA\_DEVICE\_TIME
 description: The WIA\_DPA\_DEVICE\_TIME property contains the current clock time that is stored on a device. The minidriver creates and maintains this property.
-ms.assetid: 5f903eb8-6a9e-4f06-ba70-5c02d8b332e5
 keywords: ["WIA_DPA_DEVICE_TIME Imaging Devices"]
 topic_type:
 - apiref

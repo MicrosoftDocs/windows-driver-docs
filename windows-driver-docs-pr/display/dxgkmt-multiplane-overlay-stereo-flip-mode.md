@@ -1,7 +1,6 @@
 ---
 title: DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enumeration
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: 17d77f4f-e1ad-45d6-9cba-1dfcaea2577b
+description: Learn about the DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE enumeration Display Devices"]
 topic_type:
 - apiref

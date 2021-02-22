@@ -1,7 +1,6 @@
 ---
 title: usb3kd.xhci_deviceslots
 description: The usb3kd.xhci_deviceslots extension displays information about the devices connected to a USB 3.0 host controller.
-ms.assetid: 471167EA-F7F8-470D-B09C-8627C5BE9566
 keywords: ["usb3kd.xhci_deviceslots Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,7 +41,7 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the **!xhci\_deviceslots** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the **!xhci\_deviceslots** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 The USB 3.0 host controller driver maintains a list of data structures that represent the devices connected to the controller. Each of these data structures is identified by a slot number.
 
@@ -123,14 +122,7 @@ DeviceContextBase: VA 0xfffffa8005ab9000 LA 0x1168b9000 !wdfcommonbuffer 0x57ffa
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

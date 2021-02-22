@@ -1,14 +1,13 @@
 ---
 title: Debugging Printer Driver Components
 description: Debugging Printer Driver Components
-ms.assetid: 550cc8fe-5520-4521-8c4e-9c8c80521357
 keywords:
 - debugging drivers WDK printer
 - printer drivers WDK , debugging
 - user-mode debugging WDK printer
 - macros WDK printer
 - global variables WDK debugging
-ms.date: 01/30/2019
+ms.date: 06/04/2020
 ms.localizationpriority: medium
 ---
 
@@ -18,15 +17,19 @@ If you are developing a printer driver rendering plug-in or user interface plug-
 
 You can use the macros discussed in the Debug Message Macros section to send messages to the debugger window under a variety of conditions. In addition, you can use the information in this section to enable debug messages in the Microsoft Universal Printer Driver (Unidrv) or PostScript Printer Driver (Pscript) renderers, provided that you have checked builds of these DLLs.
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
+
 Steps for debugging a user-mode driver and some general debugging tips are included in the next two sections.
 
 ## Preparing for User-Mode Debugging
 
 To start debugging printer drivers and their components:
 
-1. Install the latest debugging tools. See [Download Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
+1. Install the latest debugging tools. See [Download Debugging Tools for Windows](../debugger/debugger-download-tools.md)
 
-1. Install the correct symbols from [Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
+1. Install the correct symbols from [Windows Symbol Packages](../debugger/debugger-download-symbols.md)
 
 > [!NOTE]
 > It is very important that you use the latest version of the debugger.
@@ -34,7 +37,9 @@ To start debugging printer drivers and their components:
 It is advisable to install the checked build of only the components that you are interested in debugging. Typically you would replace the following retail binaries with their corresponding checked builds:
 
 - Unidrv.dll
+
 - Unidrvui.dll
+
 - Unires.dll
 
 You should also install the checked build of the Oemuni sample or the printer driver that you are debugging. The advantage of using this approach, as opposed to installing an entire checked build system, is that you won't slow down the entire system.
@@ -49,8 +54,11 @@ To begin user-mode debugging, on the **File** menu in Windbg debugger select **A
 The following procedure will get you ready to debug the Oemuni sample.
 
 1. Install the Oemuni sample on the "FILE:" port.
+
 1. Launch the WordPad application by clicking the **Start** menu, selecting **All Programs**, selecting **Accessories**, and then selecting **WordPad**.
+
 1. On the WinDbg **File** menu, select **Attach to a Process**. In the list of available processes, select **WordPad.exe**.
+
 1. Start a print job from WordPad. You are now ready to debug the Oemuni sample.
 
 You can enable verbose debugging by turning on the giDebugLevel variable. Its default value is 3, which denotes WARNING. If set to 1, it denotes VERBOSE. To set the latter value with Unidrv.dll, type the following command in the debugger:

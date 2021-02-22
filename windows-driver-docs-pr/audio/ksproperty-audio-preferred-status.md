@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PREFERRED\_STATUS
 description: The KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property informs a device that it is the system's preferred audio device.
-ms.assetid: a0e89143-ead1-4e0d-a550-398ec1abf9e9
 keywords: ["KSPROPERTY_AUDIO_PREFERRED_STATUS Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property informs a device that it is th
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status" data-raw-source="[&lt;strong&gt;KSAUDIO_PREFERRED_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status)"><strong>KSAUDIO_PREFERRED_STATUS</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status" data-raw-source="[&lt;strong&gt;KSAUDIO_PREFERRED_STATUS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status)"><strong>KSAUDIO_PREFERRED_STATUS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -64,7 +63,7 @@ A KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property request returns STATUS\_SUCCESS 
 Remarks
 -------
 
-The [SysAudio system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#sysaudio-system-driver) uses this property to inform a wave playback, wave record, MIDI, or mixer device when it is selected to be the new preferred device, or when a previously selected preferred device is deselected.
+The [SysAudio system driver](./kernel-mode-wdm-audio-components.md#sysaudio-system-driver) uses this property to inform a wave playback, wave record, MIDI, or mixer device when it is selected to be the new preferred device, or when a previously selected preferred device is deselected.
 
 For information about preferred devices, see [**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md).
 
@@ -87,18 +86,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
-[**KSAUDIO\_PREFERRED\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status)
+[**KSAUDIO\_PREFERRED\_STATUS**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status)
 
 [**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md)
-
- 
-
- 
-
-
-
-
-
 

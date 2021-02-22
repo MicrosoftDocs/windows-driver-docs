@@ -1,7 +1,6 @@
 ---
 title: vadump
 description: The vadump extension displays all virtual memory ranges and their corresponding protection information.
-ms.assetid: b13aa852-7333-41fc-ad66-4386040522d8
 keywords: ["vadump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: V4 Printer Driver Localization
 description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
-ms.assetid: 5C587AF2-C51E-4728-A214-7FC1F8A6E445
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
 
-These standard, localized display strings are provided through the new [**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) objects to support some features and their associated standard options. The following table shows the features that Windows 8 can localize with its standard display strings:
+These standard, localized display strings are provided through the new [**IPrintSchemaCapabilities**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) objects to support some features and their associated standard options. The following table shows the features that Windows 8 can localize with its standard display strings:
 
 <table>
 <colgroup>
@@ -91,7 +90,7 @@ In addition, these strings are available in the XML forms of PrintCapabilities, 
 
 Across the different user interfaces and APIs, the display names vary. Use the following three flowcharts to see an overview of the expected localization behavior for a given scenario.
 
-The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature) and [**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption) families of objects.
+The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature) and [**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption) families of objects.
 
 ![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
 
@@ -148,11 +147,8 @@ o PageMediaType</li>
 PPD based drivers do not support resource DLLs. As a result, it may be necessary to provide multiple PPD files. Microsoft recommends that v4 print drivers that use PPD configuration files should use the techniques outlined in this topic to include one PPD file per locale.
 
 ## Related topics
-[**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities)  
-[**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)  
-[**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)  
+[**IPrintSchemaCapabilities**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities)  
+[**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)  
+[**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)  
 [GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)  
-[Standard Features](standard-features.md)  
-
-
-
+[Standard Features](standard-features.md)

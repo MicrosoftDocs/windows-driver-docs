@@ -1,7 +1,6 @@
 ---
 title: ADFOpticalResolution element
 description: The required ADFOpticalResolution element specifies the maximum optical resolution at which the front or back side of the automatic document feeder (ADF) can scan.
-ms.assetid: 2000dbe4-9733-4a69-9e4e-c53c5a1c24c0
 keywords: ["ADFOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref

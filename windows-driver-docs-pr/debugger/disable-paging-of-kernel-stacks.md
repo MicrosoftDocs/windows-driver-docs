@@ -1,7 +1,6 @@
 ---
 title: Disable paging of kernel stacks
 description: Disable paging of kernel stacks
-ms.assetid: 3bf0ae20-4569-41de-9d7c-dd6a2790dac6
 keywords: ["Disable paging of kernel stacks (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

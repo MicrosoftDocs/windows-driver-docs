@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_MEDIA_CONNECT
 description: The NDIS_STATUS_MEDIA_CONNECT status indicates that the status of a device's network connection has changed from disconnected to connected.
-ms.assetid: de03d265-c8bf-4b7d-bfff-f583fcf08904
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_MEDIA_CONNECT Network Drivers Starting with Windows Vista
@@ -20,7 +19,7 @@ NDIS translates NDIS\_STATUS\_MEDIA\_CONNECT status indications to [**NDIS\_STAT
 
 NDIS 5.*x* and earlier miniport drivers indicate an [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md) status when a miniport driver determines that the network connection has been lost. When the connection is restored, the driver indicates an NDIS\_STATUS\_MEDIA\_CONNECT status.
 
-For more information about NDIS\_STATUS\_MEDIA\_CONNECT, see [Indicating Connection Status (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff546856(v=vs.85)) and [Media Status Indications for 802.11 Networks](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff549301(v=vs.85)).
+For more information about NDIS\_STATUS\_MEDIA\_CONNECT, see [Indicating Connection Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546856(v=vs.85)) and [Media Status Indications for 802.11 Networks](/previous-versions/windows/hardware/network/ff549301(v=vs.85)).
 
 Requirements
 ------------
@@ -50,9 +49,4 @@ Requirements
 [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Device Installation Application Included in Driver Package
 description: Device Installation Application that is Included in the Driver Package
-ms.assetid: bd6e182c-6b7a-4cde-bcc7-637ae6bf39be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Device Installation Application that is Included in the Driver Package
 
 
-This method describes a way through which a co-installer, using finish-install actions to install device-specific applications.
+This method describes a way through which a co-installer, using [finish-install actions](finish-install-actions--windows-vista-and-later-.md), can start a *device installation application* to install device-specific applications.
 
 In this method, the device installation application and associated installation files are part of the [driver package](driver-packages.md), and the driver package's INF file is used to copy the application and installation files to the driver store. As a result, the application and driver are both installed in all scenarios.
 

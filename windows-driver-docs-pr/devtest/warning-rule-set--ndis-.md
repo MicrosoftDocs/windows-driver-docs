@@ -1,7 +1,6 @@
 ---
 title: Warning rule set (NDIS)
-description: Use these rules to verify that your driver can correctly processes IRPs in various contexts and follows Microsoft recommended best practices.
-ms.assetid: 454FB042-76FA-4A46-9549-4DE8BF52A2D3
+description: Learn about using rules (NDIS) to verify that your driver can correctly processes IRPs in various contexts and follow Microsoft recommended best practices.
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -47,13 +46,7 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
     msbuild /t:sdv /p:Inputs="/check:Warning.sdv" mydriver.VcxProj /p:Configuration="Win8 Release" /p:Platform=Win32
     ```
 
-    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers) and [Static Driver Verifier commands (MSBuild)](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
+    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
 
  
-
- 
-
-
-
-
 

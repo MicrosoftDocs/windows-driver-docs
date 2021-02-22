@@ -1,7 +1,6 @@
 ---
 title: Idle Power Management Configuration and Usage
 description: Idle Power Management Configuration and Usage
-ms.assetid: 95057785-e5b5-40ae-86e4-50bbf0014cef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

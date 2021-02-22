@@ -1,7 +1,6 @@
 ---
 title: GetWithArgument Request and Response Schemas
 description: The GetWithArgument request schema and corresponding response schema definition, and an example of each, are below.
-ms.assetid: F68731BC-2907-4FA2-B5A4-0FAC0A9F663A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -137,6 +136,6 @@ Formal Definition of the GetWithArgument Response Schema
 
 [Bidirectional Communication Schema](bidirectional-communication-schema.md)  
 
-[SendRecvXMLStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
+[SendRecvXMLStream](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
 
-[SendRecvXMLString](https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)  
+[SendRecvXMLString](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)

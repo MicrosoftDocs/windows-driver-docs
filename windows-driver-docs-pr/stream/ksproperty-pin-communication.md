@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_COMMUNICATION
 description: The KSPROPERTY\_PIN\_COMMUNICATION property specifies the direction of IRP flow on pins instantiated by the pin factory.
-ms.assetid: d5f62731-39de-4ec4-83d5-f4253373aaa4
 keywords: ["KSPROPERTY_PIN_COMMUNICATION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_PIN\_COMMUNICATION property specifies the direction of IRP flow 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>KSPIN_COMMUNICATION</p></td>
 </tr>
 </tbody>
@@ -99,13 +98,4 @@ Requirements
 
 
 [**KSPROPERTY\_PIN\_DATAFLOW**](ksproperty-pin-dataflow.md)
-
- 
-
- 
-
-
-
-
-
 

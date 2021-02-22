@@ -1,7 +1,6 @@
 ---
 title: SM\_GetBindingSupport function
 description: The SM\_GetBindingSupport method retrieves the binding capabilities that are currently enabled for the indicated port.
-ms.assetid: 0ca24cdf-b589-4096-a490-2acfdd576a91
 keywords: ["SM_GetBindingSupport function Storage Devices"]
 topic_type:
 - apiref
@@ -82,16 +81,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetBindingSupport\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingsupport_in)
+[**SM\_GetBindingSupport\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingsupport_in)
 
-[**SM\_GetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingsupport_out)
-
- 
+[**SM\_GetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingsupport_out)
 
  
-
-
-
-
-
 

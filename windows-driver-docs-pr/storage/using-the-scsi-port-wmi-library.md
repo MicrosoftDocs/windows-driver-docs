@@ -1,7 +1,6 @@
 ---
 title: Using the SCSI Port WMI Library
 description: Using the SCSI Port WMI Library
-ms.assetid: cb55bbb3-39bb-491f-a6d2-50dceace4a86
 keywords:
 - WMI SRBs WDK storage , SCSI Port WMI library
 - SCSI Port WMI library WDK storage
@@ -15,15 +14,15 @@ ms.localizationpriority: medium
 ## <span id="ddk_using_the_scsi_port_wmi_library_kg"></span><span id="DDK_USING_THE_SCSI_PORT_WMI_LIBRARY_KG"></span>
 
 
-Storage miniport drivers that function as WMI providers can use the SCSI Port WMI library to simplify the task of processing SCSI request blocks (SRBs) that contain WMI commands. The miniport driver's start I/O routine, [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)), passes relevant information in the WMI SRB to the SCSI Port WMI library for processing by a call to the [**ScsiPortWmiDispatchFunction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction) library's dispatch routine. The miniport driver will pass the following data to the dispatch routine:
+Storage miniport drivers that function as WMI providers can use the SCSI Port WMI library to simplify the task of processing SCSI request blocks (SRBs) that contain WMI commands. The miniport driver's start I/O routine, [**HwScsiStartIo**](/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)), passes relevant information in the WMI SRB to the SCSI Port WMI library for processing by a call to the [**ScsiPortWmiDispatchFunction**](/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction) library's dispatch routine. The miniport driver will pass the following data to the dispatch routine:
 
--   In the *WmiLibInfo* parameter: a [**SCSI\_WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the miniport driver's callback routines.
+-   In the *WmiLibInfo* parameter: a [**SCSI\_WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the miniport driver's callback routines.
 
 -   In the *WMISubFunction* parameter: the value in the **WMISubFunction** member of the SRB.
 
 -   In the *DeviceContext* parameter: a pointer to the device extension.
 
--   In the *RequestContext* parameter: a request context structure of type [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmi_request_context) that the SCSI Port WMI library uses to record information, such as status and the size of the data returned.
+-   In the *RequestContext* parameter: a request context structure of type [**SCSIWMI\_REQUEST\_CONTEXT**](/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmi_request_context) that the SCSI Port WMI library uses to record information, such as status and the size of the data returned.
 
 -   In the *DataPath* parameter: the value in the **DataPath** member of the SRB.
 
@@ -31,9 +30,9 @@ Storage miniport drivers that function as WMI providers can use the SCSI Port WM
 
 -   In the *Buffer* parameter: the value in the **DataBuffer** member of the SRB.
 
-When the miniport driver is initialized, it must fill a [**SCSI\_WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the required miniport driver callback routines, and then store the structure in a miniport driver-specific storage area, such as the driver extension. Each miniport driver callback routine corresponds to a minor IRP number, as explained in [How the Port Driver Processes WMI Requests](how-the-port-driver-processes-wmi-requests.md). For information about how to design miniport driver callback routines, see [Designing WMI Miniport Driver Callback Routines](designing-wmi-miniport-driver-callback-routines.md)
+When the miniport driver is initialized, it must fill a [**SCSI\_WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the required miniport driver callback routines, and then store the structure in a miniport driver-specific storage area, such as the driver extension. Each miniport driver callback routine corresponds to a minor IRP number, as explained in [How the Port Driver Processes WMI Requests](how-the-port-driver-processes-wmi-requests.md). For information about how to design miniport driver callback routines, see [Designing WMI Miniport Driver Callback Routines](designing-wmi-miniport-driver-callback-routines.md)
 
-The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an array of elements of type [**SCSIWMIGUIDREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmiguidreginfo) that contain information about the GUIDs that uniquely identify the supported WMI classes defined in the MOF file. The following code snippet illustrates the definition of an array of such elements:
+The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an array of elements of type [**SCSIWMIGUIDREGINFO**](/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmiguidreginfo) that contain information about the GUIDs that uniquely identify the supported WMI classes defined in the MOF file. The following code snippet illustrates the definition of an array of such elements:
 
 ```cpp
 SCSIWMIGUIDREGINFO GuidList[] = 
@@ -51,14 +50,9 @@ SCSIWMIGUIDREGINFO GuidList[] =
 };
 ```
 
-The array contains information about the GUIDs of two WMI classes, **HBAStatistics** and **HBAAttributes**. The symbolic constants for the GUIDs were taken from a header file that was generated by compiling the MOF file that defines the two classes with the WMI tool suite (the **mofcomp** and **wmimofck** tools). For more information about how to use these tools, see [Compiling a Driver's MOF File](https://docs.microsoft.com/windows-hardware/drivers/kernel/compiling-a-driver-s-mof-file) and [Using wmimofck.exe](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-wmimofck-exe).
+The array contains information about the GUIDs of two WMI classes, **HBAStatistics** and **HBAAttributes**. The symbolic constants for the GUIDs were taken from a header file that was generated by compiling the MOF file that defines the two classes with the WMI tool suite (the **mofcomp** and **wmimofck** tools). For more information about how to use these tools, see [Compiling a Driver's MOF File](../kernel/compiling-a-driver-s-mof-file.md) and [Using wmimofck.exe](../kernel/using-wmimofck-exe.md).
 
 The WMI tool suite generates the name of the symbolic constant for the GUID by concatenating a suffix of "GUID" to the name of the WMI class. For instance, for the class **HBAStatistics,** the tool will create a symbolic constant called **HBAStatisticsGUID** that represents the GUID for that class.
 
  
-
- 
-
-
-
 

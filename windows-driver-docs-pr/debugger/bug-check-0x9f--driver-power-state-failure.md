@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x9F DRIVER_POWER_STATE_FAILURE
 description: This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
-ms.assetid: f767fe80-0ec0-45e4-9949-467f50ac601c
 keywords: ["Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

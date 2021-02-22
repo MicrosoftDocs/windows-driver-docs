@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_WAKE_PACKET_BITMAP_PATTERN_ID
 description: WDI_TLV_WAKE_PACKET_BITMAP_PATTERN_ID is a TLV that contains a wake-on-LAN pattern ID.
-ms.assetid: 78807D91-189B-4E66-B3DC-500E9A59AEF2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_WAKE_PACKET_BITMAP_PATTERN_ID Network Drivers Starting with Windows Vista
@@ -61,12 +60,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-add-wol-pattern)
+[OID\_WDI\_SET\_ADD\_WOL\_PATTERN](./oid-wdi-set-add-wol-pattern.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: wmitrace.logger
 description: The wmitrace.logger extension displays data about the trace session, including the session configuration data. This extension does not display trace messages generated during the session.
-ms.assetid: 2bc456db-3e97-49f8-9c57-75ee5fee0f9d
 keywords: ["wmitrace.logger Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

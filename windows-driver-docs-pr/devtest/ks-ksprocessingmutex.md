@@ -1,8 +1,7 @@
 ---
 title: KsProcessingMutex rule ()
-ms.assetid: AD73B241-7B08-4E48-94A1-B6BDE78590E6
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: KsProcessingMutex rule ()"
 keywords: ["KsProcessingMutex rule ()"]
 topic_type:
 - apiref
@@ -22,13 +21,10 @@ The KsProcessingMutex rule specifies that a KS miniport driver uses the processi
 -   A thread that has acquired the processing mutex should not subsequently attempt to acquire the filter control mutex.
 -   A thread should not release the processing mutex without acquiring it first.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x0008100B) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0008100B)
+
 
 How to test
 -----------
@@ -47,7 +43,7 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p><strong>verifier /domain ks</strong> [<em>options</em>] <strong>/driver</strong> <em>&lt;yourdriver&gt;</em></p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)">Driver Verifier</a>.</p></td>
+<p>For more information, see <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -57,12 +53,4 @@ How to test
 See also
 --------
 
-[Processing Mutex in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/processing-mutex-in-avstream)
- 
-
- 
-
-
-
-
-
+[Processing Mutex in AVStream](../stream/processing-mutex-in-avstream.md)

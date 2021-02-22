@@ -1,7 +1,6 @@
 ---
 title: Vertex and Pixel Fogging
 description: Vertex and Pixel Fogging
-ms.assetid: 4cdba82f-0cfe-4416-951c-59b577c7f30e
 keywords:
 - pixel fogging WDK Direct3D
 - vertex fog WDK Direct3D

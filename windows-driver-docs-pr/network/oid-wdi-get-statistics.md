@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_GET_STATISTICS
 description: OID_WDI_GET_STATISTICS requests that the IHV component returns MAC and PHY layer statistics.
-ms.assetid: 55c36869-ce85-42fe-877b-07aefb669b56
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_STATISTICS Network Drivers Starting with Windows Vista
@@ -30,8 +29,8 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                              | Multiple TLV instances allowed | Optional | Description              |
 |------------------------------------------------------------------|--------------------------------|----------|--------------------------|
-| [**WDI\_TLV\_MAC\_STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-mac-statistics) | X                              |          | Per-peer MAC statistics. |
-| [**WDI\_TLV\_PHY\_STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-phy-statistics) | X                              |          | Per-port PHY statistics. |
+| [**WDI\_TLV\_MAC\_STATISTICS**](./wdi-tlv-mac-statistics.md) | X                              |          | Per-peer MAC statistics. |
+| [**WDI\_TLV\_PHY\_STATISTICS**](./wdi-tlv-phy-statistics.md) | X                              |          | Per-port PHY statistics. |
 
  
 
@@ -60,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

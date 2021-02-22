@@ -1,7 +1,6 @@
 ---
 title: Mapping WIA Properties That Need No Changes
 description: Mapping WIA Properties That Need No Changes
-ms.assetid: ceb0fe83-9803-4ba5-9a9f-7c722389db0b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

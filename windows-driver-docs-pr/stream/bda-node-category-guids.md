@@ -1,7 +1,6 @@
 ---
 title: BDA Node Category GUIDs
 description: BDA Node Category GUIDs
-ms.assetid: cf439881-d20d-4efc-8ea3-3752e117b14d
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_bda_node_category_guids_ks"></span><span id="DDK_BDA_NODE_CATEGORY_GUIDS_KS"></span>
 
 
-A BDA minidriver uses the BDA node category GUIDs to specify the types of BDA nodes that are available to create. A BDA minidriver assigns one of these GUIDs in the variable to which the **Type** member of a [**KSNODE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor) structure points. The *Bdamedia.h* header file defines these GUIDs.
+A BDA minidriver uses the BDA node category GUIDs to specify the types of BDA nodes that are available to create. A BDA minidriver assigns one of these GUIDs in the variable to which the **Type** member of a [**KSNODE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor) structure points. The *Bdamedia.h* header file defines these GUIDs.
 
 The network provider uses the KSPROPERTY\_BDA\_NODE\_TYPES property of the [KSPROPSETID\_BdaTopology](kspropsetid-bdatopology.md) property set to retrieve a list of nodes types available from the BDA minidriver. This list of node types is an array of KSNODE\_DESCRIPTOR structures.
 
@@ -55,10 +54,4 @@ A BDA minidriver assigns this GUID to specify a BDA ISDB-type demodulator node f
 A BDA minidriver assigns this GUID to specify a BDA ISDB-type demodulator node for DVB-satellite demodulators.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: HSPluginInitPlugin function
 description: The HSPluginInitPlugin function is exported by the plugin DLL and is called to initialize the plugin.
-ms.assetid: db51267c-4f38-47bd-bde2-7b27a93dd2a7
 keywords: 
 - HSPluginInitPlugin function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # HSPluginInitPlugin function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HSPluginInitPlugin** function is exported by the plugin DLL and is called to initialize the plugin.

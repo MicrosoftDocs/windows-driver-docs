@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DEV\_SPECIFIC
 description: The KSPROPERTY\_AUDIO\_DEV\_SPECIFIC property is used to access a device-specific property in a device-specific node (KSNODETYPE\_DEV\_SPECIFIC).
-ms.assetid: f3f2e340-7403-4c86-841f-7008afda28a5
 keywords: ["KSPROPERTY_AUDIO_DEV_SPECIFIC Audio Devices"]
 topic_type:
 - apiref

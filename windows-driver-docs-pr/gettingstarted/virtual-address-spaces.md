@@ -1,8 +1,7 @@
 ---
 title: Virtual address spaces
 description: Virtual address spaces
-ms.assetid: 5A3E1918-E5A4-4129-B0C2-45B6EEB7EFB3
-ms.date: 04/20/2017
+ms.date: 02/11/2020
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +16,7 @@ When a processor reads or writes to a memory location, it uses a virtual address
 
 -   The virtual addresses used by different processes are isolated from each other. The code in one process cannot alter the physical memory that is being used by another process or the operating system.
 
-The range of virtual addresses that is available to a process is called the *virtual address space* for the process. Each user-mode process has its own private virtual address space. For a 32-bit process, the virtual address space is usually the 2-gigabyte range 0x00000000 through 0x7FFFFFFF. For a 64-bit process on 64-bit Windows, virtual address space is the 128-terabyte range 0x000'00000000 through 0x7FFF'FFFFFFFF. A range of virtual addresses is sometimes called a range of *virtual memory*. For more info, see [Memory and Address Space Limits](https://docs.microsoft.com/windows/win32/memory/memory-limits-for-windows-releases#memory-and-address-space-limits).
+The range of virtual addresses that is available to a process is called the *virtual address space* for the process. Each user-mode process has its own private virtual address space. For a 32-bit process, the virtual address space is usually the 2-gigabyte range 0x00000000 through 0x7FFFFFFF. For a 64-bit process on 64-bit Windows, virtual address space is the 128-terabyte range 0x000'00000000 through 0x7FFF'FFFFFFFF. A range of virtual addresses is sometimes called a range of *virtual memory*. For more info, see [Memory and Address Space Limits](/windows/win32/memory/memory-limits-for-windows-releases#memory-and-address-space-limits).
 
 This diagram illustrates some of the key features of virtual address spaces.
 
@@ -34,11 +33,9 @@ In 32-bit Windows, the total available virtual address space is 2^32 bytes (4 gi
 
 ![diagram of system space](images/virtualaddressspace02.png)
 
-In 32-bit Windows, you have the option of specifying (at boot time) that more than 2 gigabytes are available for user space. The consequence is that fewer virtual addresses are available for system space. You can increase the size of user space to as much as 3 gigabytes, in which case only 1 gigabyte is available for system space. To increase the size of user space, use [**BCDEdit /set increaseuserva**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set).
+In 32-bit Windows, you have the option of specifying (at boot time) that more than 2 gigabytes are available for user space. The consequence is that fewer virtual addresses are available for system space. You can increase the size of user space to as much as 3 gigabytes, in which case only 1 gigabyte is available for system space. To increase the size of user space, use [**BCDEdit /set increaseuserva**](../devtest/bcdedit--set.md).
 
-In 64-bit Windows, the theoretical amount of virtual address space is 2^64 bytes (16 exabytes), but only a small portion of the 16-exabyte range is actually used. The 8-terabyte range from 0x000'00000000 through 0x7FF'FFFFFFFF is used for user space, and portions of the 248-terabyte range from 0xFFFF0800'00000000 through 0xFFFFFFFF'FFFFFFFF are used for system space.
-
-![diagram of paged pool and nonpaged pool](images/virtualaddressspace03.png)
+In 64-bit Windows, the theoretical amount of virtual address space is 2^64 bytes (16 exabytes), but only a small portion of the 16-exabyte range is actually used.
 
 Code running in user mode has access to user space but does not have access to system space. This restriction prevents user-mode code from reading or altering protected operating system data structures. Code running in kernel mode has access to both user space and system space. That is, code running in kernel mode has access to system space and the virtual address space of the current user-mode process.
 
@@ -66,11 +63,4 @@ Memory that is allocated in paged pool can be paged out to a disk file as needed
 [User mode and kernel mode](user-mode-and-kernel-mode.md)
 
  
-
- 
-
-
-
-
-
 

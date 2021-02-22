@@ -1,7 +1,6 @@
 ---
 title: WdfObjectAddCustomType macro
 description: The WdfObjectAddCustomType macro associates a framework object with a custom type.
-ms.assetid: 750CF669-A436-4571-B474-D5447E0AA64F
 keywords:
  - WdfObjectAddCustomType macro
 ms.date: 08/23/2017
@@ -77,7 +76,7 @@ Remarks
 
 **WdfObjectAddCustomType** is a simplified version of [**WdfObjectAddCustomTypeWithData**](wdfobjectaddcustomtypewithdata.md).
 
-For more information about object driver types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
+For more information about object driver types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
 Examples
 --------
@@ -156,11 +155,4 @@ Requirements
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
  
-
- 
-
-
-
-
-
 

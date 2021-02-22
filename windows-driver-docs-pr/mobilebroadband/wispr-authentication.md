@@ -1,18 +1,16 @@
 ---
 title: WISPr authentication overview
 description: WISPr authentication overview
-ms.assetid: 49782d7f-c2f9-408d-971c-1af4d93d4d8d
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
 # WISPr authentication overview
 
-
 A Wireless Internet Service Provider roaming (WISPr)-capable hotspot includes a payload in its captive portal page that is similar to the following:
 
 ``` syntax
-<HTML> 
+<HTML>
 <!--
     <?xml version=”1.0” encoding=”UTF-8”?>
     <WISPAccessGatewayParam xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”
@@ -26,7 +24,7 @@ A Wireless Internet Service Provider roaming (WISPr)-capable hotspot includes a 
         <ResponseCode>0</ResponseCode>
       </Redirect>
     </WISPAccessGatewayParam>
---> 
+-->
 </HTML>
 ```
 
@@ -44,23 +42,8 @@ If your network offers WISPr to clients by using certain UserAgent strings, the 
 
 The following topics are included in this section:
 
--   [Provisioning for hotspot authentication](provisioning-for-hotspot-authentication.md)
+- [Provisioning for hotspot authentication](provisioning-for-hotspot-authentication.md)
 
--   [Handling large numbers of SSIDs](handling-large-numbers-of-ssids.md)
+- [Handling large numbers of SSIDs](handling-large-numbers-of-ssids.md)
 
--   [Handling the hotspot authentication event](handling-the-hotspot-authentication-event.md)
-
-## <span id="related_topics"></span>Related topics
-
-
-[Hotspot authentication methods](hotspot-authentication-methods.md)
-
- 
-
- 
-
-
-
-
-
-
+- [Handling the hotspot authentication event](handling-the-hotspot-authentication-event.md)

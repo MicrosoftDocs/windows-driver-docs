@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_SUPPORTED_GUIDS
 description: This topic describes the OID_GEN_CO_SUPPORTED_GUIDS object identifier (OID).
-ms.assetid: d82d6ecb-f70b-4fc2-97eb-331aafe1fe57
 keywords:
 - OID_GEN_CO_SUPPORTED_GUIDS
 ms.date: 11/02/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID_GEN_CO_SUPPORTED_GUIDS
 
-The OID_GEN_CO_SUPPORTED_GUIDS OID requests the miniport driver to return an array of structures of the type NDIS_GUID. Each structure in the array specifies the mapping of a custom GUID (globally unique identifier) to either a custom OID or to an NDIS_STATUS that the miniport driver sends through [NdisMCoIndicateStatusEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex).
+The OID_GEN_CO_SUPPORTED_GUIDS OID requests the miniport driver to return an array of structures of the type NDIS_GUID. Each structure in the array specifies the mapping of a custom GUID (globally unique identifier) to either a custom OID or to an NDIS_STATUS that the miniport driver sends through [NdisMCoIndicateStatusEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex).
 
 The NDIS_GUID structure is defined as follows:
 
@@ -83,14 +82,11 @@ NDIS_GUID NdisGuid =  {{0x0a214809, 0xe35f, 0x11d0, 0x96, 0x92, 0x00,
 ```
 A GUID is an identifier used by Windows Management Instrumentation (WMI) to obtain or set information. NDIS intercepts a GUID sent by WMI to an NDIS driver, maps the GUID to an OID, and sends the OID to the driver. The driver returns the data item(s) to NDIS, which then returns the data to WMI.
 
-NDIS also translates changes in NIC status into GUIDs recognized by WMI. When a miniport driver reports a change in NIC status with [NdisMCoIndicateStatusEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex), NDIS translates the NDIS_STATUS indicated by the miniport driver into a GUID that NDIS sends to WMI.
+NDIS also translates changes in NIC status into GUIDs recognized by WMI. When a miniport driver reports a change in NIC status with [NdisMCoIndicateStatusEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex), NDIS translates the NDIS_STATUS indicated by the miniport driver into a GUID that NDIS sends to WMI.
 
 If a connection-oriented miniport driver supports customs GUIDs, it must support OID_GEN_CO_SUPPORTED_GUIDS, which returns to NDIS the mapping of custom GUIDs to custom OIDs or NDIS_STATUS strings. After querying the miniport driver with OID_GEN_CO_SUPPORTED_GUIDS, NDIS registers the miniport driver's custom GUIDs with WMI.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

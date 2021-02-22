@@ -1,7 +1,6 @@
 ---
 title: Discovery Process
 description: Discovery Process
-ms.assetid: 6B94CAF1-D998-4EAF-8ABB-80A21193B50F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -93,12 +92,12 @@ Plug and Play installs a smart card minidriver if no compatible inbox minidriver
 To do either of these tasks, Plug and Play must be able to derive a unique ID for the smart card. Beginning with Windows 7, the following describes the smart card discovery process that Plug and Play uses to derive a unique ID for the card:
 
 1.  Plug and Play gets the historical bytes from the ATR. These bytes are used later in this discovery process.
-2.  Plug and Play issues a SELECT command to locate the SC PNP AID.Plug and Play issues a GET DATA command to locate the Windows proprietary tag 0x7F68 (ASN.1 DER encoded). For more information, see the following subsection “Windows Smart Card Framework Card Identifier”. If this command is successful, a list of unique identifiers is returned. Plug and Play uses the first identifier in the list as the smart card’s device ID and uses that value for the card’s unique ID. For more information, see [Device IDs](https://docs.microsoft.com/windows-hardware/drivers/install/device-ids).
+2.  Plug and Play issues a SELECT command to locate the SC PNP AID.Plug and Play issues a GET DATA command to locate the Windows proprietary tag 0x7F68 (ASN.1 DER encoded). For more information, see the following subsection “Windows Smart Card Framework Card Identifier”. If this command is successful, a list of unique identifiers is returned. Plug and Play uses the first identifier in the list as the smart card’s device ID and uses that value for the card’s unique ID. For more information, see [Device IDs](../install/device-ids.md).
 3.  If Plug and Play derives a unique ID for the smart card, it proceeds to step 12.
 4.  If Windows fails to obtain a device ID in the step above it will issue a SELECT of the MF and EF.ATR followed by a READ BINARY command, if Windows succeeds in obtaining a unique identifier that it can use as a device ID for WU go to step 12.
 5.  If Plug and Play fails to obtain a unique identifier in the step above, it issues a SELECT command for the PIV AID. If Plug and Play succeeds, it considers the smart card to be a PIV-compatible device. Plug and Play uses the following as the card’s unique ID:
 
-    1.  The PIV-compatible device ID as the device’s compatible ID. For more information, see [Compatible IDs](https://docs.microsoft.com/windows-hardware/drivers/install/compatible-ids).
+    1.  The PIV-compatible device ID as the device’s compatible ID. For more information, see [Compatible IDs](../install/compatible-ids.md).
     2.  The card’s ATR historical bytes as the device ID. If there are no historical ATR bytes, Windows uses the PIV-compatible device id as the device ID.
 
 6.  If Plug and Play derives a unique ID for the smart card, it proceeds to step 12.
@@ -118,7 +117,7 @@ Starting fromWindows 8, if Plug and Play is unable to find a driver for the car
 ## <span id="Winscard_Discovery_Process"></span><span id="winscard_discovery_process"></span><span id="WINSCARD_DISCOVERY_PROCESS"></span>Winscard Discovery Process
 
 
-The Winscard (Winscard.dll) discovery process is used to associate a card in the system with an installed minidriver. The process is started when [**SCardListCards**](https://docs.microsoft.com/windows/desktop/api/winscard/nf-winscard-scardlistcardsa) or [**SCardLocateCards**](https://docs.microsoft.com/windows/desktop/api/winscard/nf-winscard-scardlocatecardsa) is called.
+The Winscard (Winscard.dll) discovery process is used to associate a card in the system with an installed minidriver. The process is started when [**SCardListCards**](/windows/win32/api/winscard/nf-winscard-scardlistcardsa) or [**SCardLocateCards**](/windows/win32/api/winscard/nf-winscard-scardlocatecardsa) is called.
 
 Beginning with Windows 7, the following describes the Winscard discovery process:
 
@@ -170,7 +169,7 @@ Beginning with Windows 7, the following describes the Winscard discovery proces
 ## <span id="_Windows_Smart_Card_Class_Minidriver_Discovery_Process"></span><span id="_windows_smart_card_class_minidriver_discovery_process"></span><span id="_WINDOWS_SMART_CARD_CLASS_MINIDRIVER_DISCOVERY_PROCESS"></span> Windows Smart Card Class Minidriver Discovery Process
 
 
-The Windows smart card class minidriver performs the following discovery process when [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)) is called. The minidriver performs this discovery process to mark the associated card as PIV- or Microsoft GIDS-compatible:
+The Windows smart card class minidriver performs the following discovery process when [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)) is called. The minidriver performs this discovery process to mark the associated card as PIV- or Microsoft GIDS-compatible:
 
 1.  The minidriver issues a SELECT command for the PIV AID. If the command succeeds, the card is marked as PIV-compatible and the discovery process stops.
 2.  Otherwise, the minidriver issues a SELECT command for the MS GIDS AID. If the command succeeds or fails to locate the AID, the minidriver marks the card as MS GIDS.
@@ -252,10 +251,4 @@ The GUID member is a 16-byte GUID that uniquely identifies the card/application 
  
 
  
-
- 
-
-
-
-
 

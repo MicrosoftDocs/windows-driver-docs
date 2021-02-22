@@ -1,7 +1,6 @@
 ---
 title: Example 7 Customizing the Trace Message Prefix
 description: Example 7 Customizing the Trace Message Prefix
-ms.assetid: 75beccef-fd0b-4a4f-9ea2-11940b5baddf
 keywords:
 - Tracefmt WDK , prefix
 - prefix WDK Tracefmt

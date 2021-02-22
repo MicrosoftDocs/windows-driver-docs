@@ -1,7 +1,6 @@
 ---
 title: gpiokd.gpioext
 description: The gpiokd.gpioext command displays information about a GPIO controller.
-ms.assetid: D5DB5166-A173-409E-A6A1-3872A22D19E1
 keywords: ["gpiokd.gpioext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

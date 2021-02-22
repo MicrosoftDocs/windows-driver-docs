@@ -1,5 +1,5 @@
 ---
-Description: Supporting AutoPlay
+description: Supporting AutoPlay
 title: Supporting AutoPlay
 ms.date: 04/20/2017
 ms.localizationpriority: medium

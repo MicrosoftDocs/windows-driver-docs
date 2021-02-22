@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 12/12/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,6 +13,66 @@ ms.localizationpriority: medium
 ![Small logo on windbg preview](images/windbgx-preview-logo.png)
 
 This topic provides information on what's new in the WinDbg Preview debugger.
+
+## 1.0.2007.01003
+
+**Timeline Bookmarks**
+
+Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them. 
+
+You can provide a descriptive name for bookmarks.
+
+![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+
+Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
+
+![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+
+You can select and hold (or right-click) the bookmark to travel to that position, rename or delete the bookmark.
+
+![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
+
+**Modules Window**
+
+A new windows shows modules and their related information, it is available via the View ribbon.
+It displays:
+
+- The name of the module including the path location
+- The size in bytes of the loaded module
+- The base address that the module is loaded at
+- The file version
+
+![Modules view window showing five modules listed](images/windbgx-view-modules.png)
+
+
+**Thread names/descriptions available in live debugging**
+
+Thread names that are set from SetThreadDescription are now available when doing live user-mode debugging. Thread names are available using the “~” command or the debugger data model.
+
+```dbgconsole
+0:000> ~
+   0  Id: 53a0.5ffc Suspend: 1 Teb: 000000b1`db1ed000 Unfrozen "Hello world!"
+   7  Id: 53a0.9114 Suspend: 1 Teb: 000000b1`db1ef000 Unfrozen
+   8  Id: 53a0.2cc4 Suspend: 1 Teb: 000000b1`db1f1000 Unfrozen
+   9  Id: 53a0.5c40 Suspend: 1 Teb: 000000b1`db1f3000 Unfrozen
+
+0:000> dx @$curthread
+@$curthread                 : ConsoleTestApp!ILT+25(mainCRTStartup) (00007ff7`fac7101e)  [Switch To]
+    Id               : 0x5ffc
+    Name             : Hello world!
+    Stack
+    Registers
+    Environment
+```
+
+**Portable PDB support**
+
+Portable PDB support has been added. The Portable PDB (Program Database) format describes an encoding of debugging information produced by compilers of Common Language Infrastructure (CLI) languages and consumed by debuggers and other tools. For more information, see [Portable PDB Symbols](symbols-portable-pdb.md).
+
+**Other changes and bug fixes**
+
+- WinDbg now supports AMD64 and Linux kernel dump debugging.
+- Time travel recording enhancements and other fixes.
 
 ## 1.0.1912.11001
 
@@ -32,15 +92,15 @@ This topic provides information on what's new in the WinDbg Preview debugger.
 
 ## 1.0.1908.30002
 
-**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
+**Improvements to TTD Calls objects** - [Calls queries](./time-travel-debugging-calls-objects.md) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
-**Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications, you can find directions for how to do this in the [Open Enclave documentation](https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/GettingStarted.Windows.md).
+**Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications for more information, see [Open Enclave debugging](open-enclave-debugging.md)).
 
 **VS Code Extension** - To make it easier to develop for Open Enclave, we’ve released a basic VS Code extension to enable a quicker inner loop. Variables, Watch, and Call Stack windows all work as well as breakpoints and source windows, any deeper debugging will need to use the console window.
  
 You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode) and report any issues to our  [WinDbg Feedback GitHub](https://aka.ms/dexex). Note that while the extension may work for other scenarios, we’re only intending on fixing issues related to OE scenarios at this point.
 
-**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps. 
+**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps.
 
 **TTD File format change** - We’ve made a major update to the file format for TTD traces that breaks forward compatibility. Previous versions of WinDbg Preview will not be able to open traces recorded with this (and future) versions of WinDbg Preview, but this (and future) versions will be able to open both new and old traces.
 
@@ -50,7 +110,7 @@ You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode
 * Running 'dx' without any parameters will now show the root namespace for easier browsability.
 * You can now modify the default symbol and source cache location via the settings menu.
 * Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down).
-* We've enabled [offline licensing](https://docs.microsoft.com/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
+* We've enabled [offline licensing](/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
 
 ## 1.0.1905.12001
 
@@ -58,7 +118,7 @@ You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode
 
 **Accent color customization** - A lot of scenarios need several instances of WinDbg open, and moving back and forth between them can be confusing and take some time to figure out which one is the “right” one. We’ve added the ability to change the blue accent color to help visually distinguish sessions and make swapping between them easier.
 
-Just click the **View** ribbon and select an option for **Accent color** in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
+Just select the **View** ribbon and select an option for **Accent color** in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
 
 **Source tokenization improvements** - The source window now has basic support for tokenizing Rust source files and C++ SEH __try/__except/__finally/__leave.
 
@@ -91,7 +151,7 @@ Other changes and bug fixes:
 
 This version includes these updates.
 
-**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/data-model-cpp-overview). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-code) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-file-system).
+**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](./data-model-cpp-overview.md). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](./dbgmodel-namespace-code.md) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](./dbgmodel-namespace-file-system.md).
 
 **Synthetic types extension** With this new API extension, we have a new sample up on our GitHub repo here - https://github.com/Microsoft/WinDbg-Samples/tree/master/SyntheticTypes. This JavaScript extension reads basic C header files and defines synthetic type information for the structures and unions defined in the header. Through the dx command, memory can then be viewed structured as if you had a PDB with type information for those types.
 
@@ -143,7 +203,7 @@ This version includes these updates.
 **New disassembly window** - The disassembly window now includes:
 - Scrolling up or down will continuously load more disassembly whenever possible.
 - Syntax highlighting for numbers, code addresses, and opcodes.
-- Clicking a code symbol will jump the disassembly window to that location.
+- Selecting a code symbol will jump the disassembly window to that location.
 - Hovering over numbers will show a tooltip that converts that number to other bases.
 - Headers signifying the start of a function.
 
@@ -187,7 +247,7 @@ Minor changes and bug fixes:
 
 This version includes these updates.
 
-**Text Highlighting** - You can now highlight all instances of selected text directly in the debugger. To use this feature, just select some text in the command window and then click “Highlight” in the command ribbon or hit CTRL+ALT+H. Using one of those on already highlighted text will remove the highlighting.
+**Text Highlighting** - You can now highlight all instances of selected text directly in the debugger. To use this feature, just select some text in the command window and then select “Highlight” in the command ribbon or hit CTRL+ALT+H. Using one of those on already highlighted text will remove the highlighting.
 
 If you prefer using commands, you can use the “$hl” command:
 
@@ -226,7 +286,7 @@ Minor changes and bug fixes:
 - The headers in the locals, watch, and model windows now don’t disappear when scrolling down
 - When ALT+Tabbing back to WinDbg Preview, the command window will properly preserve cursor location
 - Added CTRL+ALT+V shortcut for toggling verbose mode
-- You can now disable auto-scrolling of the command window by right-clicking the command window tab and choosing “turn off auto scrolling”
+- You can now disable auto-scrolling of the command window by selecting and holding (or right-clicking) the command window tab and choosing “turn off auto scrolling”
 - You can now debug child processes through the launch executable advanced page.
 
 

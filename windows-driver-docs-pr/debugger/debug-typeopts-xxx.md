@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_TYPEOPTS\_XXX
 description: The type options affect how the engine formats numbers and strings for output.
-ms.assetid: 1c39fb80-d51b-43a6-8a68-8479022baf8a
 ms.date: 12/07/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Remarks
 
 By default, all of the type formatting options are turned off.
 
-For more information about types, see [Types](https://docs.microsoft.com/windows-hardware/drivers/debugger/types).
+For more information about types, see [Types](./types.md).
 
 Requirements
 ------------
@@ -80,10 +79,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

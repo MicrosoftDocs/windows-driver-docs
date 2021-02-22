@@ -1,7 +1,6 @@
 ---
 title: Opening and Closing the Trace Viewer
 description: Opening and Closing the Trace Viewer
-ms.assetid: 89a32b91-e28f-442f-9523-7e2c7f51ae9e
 keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier

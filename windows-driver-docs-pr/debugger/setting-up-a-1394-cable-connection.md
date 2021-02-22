@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
-ms.assetid: bcfc61a1-0315-451c-a279-f6305995b05f
 keywords: making a 1394 cable connection, 1394 connection, IEEE 1394 cable, FireWire cable
 ms.date: 02/20/2020
 ms.localizationpriority: medium
@@ -33,7 +32,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
    **bcdedit /dbgsettings 1394 channel:**<em>n</em>
 
-3. If there is more than one 1394 controller on the target computer, you must specify the bus, device, and function numbers of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for 1394 Debugging](#troubleshooting-tips-for-debugging-over-a-1394-cable).
+3. You must specify the bus, device, and function numbers of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for 1394 Debugging](#troubleshooting-tips-for-debugging-over-a-1394-cable).
 
 4. Do not reboot the target computer yet.
 

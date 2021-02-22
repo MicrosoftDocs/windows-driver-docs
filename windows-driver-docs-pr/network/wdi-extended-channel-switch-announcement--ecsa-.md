@@ -1,7 +1,6 @@
 ---
 title: WDI Extended channel switch announcement (ECSA)
 description: This section provides suggested driver/firmware changes to implement Extended Channel Switch Announcement (ECSA)
-ms.assetid: 9C59C8A2-335F-4BA4-8682-6DFFB82E1CAF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,13 +18,7 @@ Here are the suggested driver/firmware changes.
     -   If the remote peer supports ECSA, engage ECSA to move the peer into the channel configuration that yields a single channel.
 -   When the device is the Client and is in Multi-Channel mode:
     -   If an ECSA request comes from the remote peer, then support it.
--   Send channel change notifications to the operating system with [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_GROUP\_OPERATING\_CHANNEL](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-p2p-group-operating-channel).
+-   Send channel change notifications to the operating system with [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_GROUP\_OPERATING\_CHANNEL](./ndis-status-wdi-indication-p2p-group-operating-channel.md).
 
  
-
- 
-
-
-
-
 

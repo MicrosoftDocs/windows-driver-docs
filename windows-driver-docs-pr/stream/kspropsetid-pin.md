@@ -1,8 +1,7 @@
 ---
 title: KSPROPSETID\_Pin
 description: KSPROPSETID\_Pin
-ms.assetid: a74a9cb2-2809-4e03-95da-71eeb5f079e9
-ms.date: 11/28/2017
+ms.date: 06/26/2020
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 Clients use the properties in the KSPROPSETID\_Pin property set to query a KS filter For information about each pin factory that it supports.
 
-The [**KSPROPERTY\_PIN\_CTYPES**](ksproperty-pin-ctypes.md) property specifies how many pin factories the KS filter supports. All other properties in this property set specify information about an individual pin factory. The KS filter identifies each pin factory by an ID, which ranges from zero to the number of pin factories minus one. The client includes the pin factory T within the [**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) structure that it uses when it issues the property request.
+The [**KSPROPERTY\_PIN\_CTYPES**](ksproperty-pin-ctypes.md) property specifies how many pin factories the KS filter supports. All other properties in this property set specify information about an individual pin factory. The KS filter identifies each pin factory by an ID, which ranges from zero to the number of pin factories minus one. The client includes the pin factory T within the [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) structure that it uses when it issues the property request.
 
 The KSPROPSETID\_Pin property set includes:
 
@@ -40,6 +39,8 @@ The KSPROPSETID\_Pin property set includes:
 
 [**KSPROPERTY\_PIN\_MEDIUMS**](ksproperty-pin-mediums.md)
 
+[**KSPROPERTY\_PIN\_MODEDATAFORMATS**](ksproperty-pin-modedataformats.md)
+
 [**KSPROPERTY\_PIN\_NAME**](ksproperty-pin-name.md)
 
 [**KSPROPERTY\_PIN\_NECESSARYINSTANCES**](ksproperty-pin-necessaryinstances.md)
@@ -51,10 +52,4 @@ The KSPROPSETID\_Pin property set includes:
 [**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**](ksproperty-pin-proposedataformat2.md)
 
  
-
- 
-
-
-
-
 

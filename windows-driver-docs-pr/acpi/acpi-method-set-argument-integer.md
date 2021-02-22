@@ -1,7 +1,6 @@
 ---
 title: ACPI_METHOD_SET_ARGUMENT_INTEGER macro
 description: The ACPI_METHOD_SET_ARGUMENT_INTEGER macro sets the members of an ACPI_METHOD_ARGUMENT structure for a single integer value.
-ms.assetid: a79f9149-0ffe-483f-a45e-427b05ff0a11
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_INTEGER macro ACPI Devices
 ms.date: 10/12/2018
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro
 
 
-The ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a single integer value.
+The ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a single integer value.
 
 Syntax
 ------
@@ -65,4 +64,4 @@ Requirements
 ## See also
 
 
-[**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) 
+[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)

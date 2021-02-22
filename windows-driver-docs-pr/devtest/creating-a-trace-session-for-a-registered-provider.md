@@ -1,7 +1,6 @@
 ---
 title: Creating a Trace Session for a Registered Provider
 description: Creating a Trace Session for a Registered Provider
-ms.assetid: 3013b5fa-5390-4d46-b138-4ddcda468ddf
 keywords:
 - registered providers WDK software tracing
 ms.date: 04/20/2017

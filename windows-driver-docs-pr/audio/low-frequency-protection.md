@@ -1,7 +1,6 @@
 ---
 title: Low Frequency Protection
 description: Low Frequency Protection
-ms.assetid: e4910b7b-f0c2-4ba8-a883-eff5d12485cd
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

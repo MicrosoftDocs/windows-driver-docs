@@ -50,7 +50,6 @@ The following example demonstrates the JSON request body for creating a new prod
   "isTestSign": false,
   "isFlightSign": false,  
   "marketingNames": [],
-  "productName": "VST_apdevtest1",
   "selectedProductTypes": {
     "windows_v100_RS3": "Unclassified"
   },
@@ -59,8 +58,7 @@ The following example demonstrates the JSON request body for creating a new prod
     "WINDOWS_v100_X64_RS3_FULL",
     "WINDOWS_VISTA"
   ],
-  "additionalAttributes": {},
-  "packageType": "HLK"
+  "additionalAttributes": {}
 }
 ```
 

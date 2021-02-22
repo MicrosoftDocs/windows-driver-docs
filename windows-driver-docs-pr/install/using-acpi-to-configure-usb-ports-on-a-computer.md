@@ -1,7 +1,6 @@
 ---
 title: Using ACPI to Configure USB Ports on a Computer
 description: Using ACPI to Configure USB Ports on a Computer
-ms.assetid: 999f9fef-512c-415a-abc6-d64560c5c2f8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -97,7 +96,7 @@ The following examples show correctly formed ACPI Source Language (ASL) that dem
         0x31, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00})
     ```
     
-A USB Type-C connector must be correctly described in ACPI in order to pass the [USB Type-C ACPI Validation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b3c41a3f-b844-4c2d-b115-dad51a37f123) Hardware Lab Kit test.
+A USB Type-C connector must be correctly described in ACPI in order to pass the [USB Type-C ACPI Validation](/windows-hardware/test/hlk/testref/b3c41a3f-b844-4c2d-b115-dad51a37f123) Hardware Lab Kit test.
 
 Example _UPC for a USB Type-C connector:
 ```cpp
@@ -111,10 +110,4 @@ Example _UPC for a USB Type-C connector:
 For more information about the ACPI 6.0 interface, see [Advanced Configuration and Power Interface Specification Revision 6.0](https://go.microsoft.com/fwlink/?LinkId=827852).
 
  
-
- 
-
-
-
-
 

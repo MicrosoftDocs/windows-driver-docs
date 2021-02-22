@@ -1,7 +1,6 @@
 ---
 title: Reboot Tests (Device Fundamentals)
 description: The Device Fundamentals Reboot tests run I/O on the specified devices, before and after, or during system restarts.
-ms.assetid: 71EBEC60-C99F-412D-8FC5-2DD9209CC92D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test runs I/O on devices before and after a critical system reboot.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_RebootRestart_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -40,7 +39,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test starts Simple I/O on devices, initiates a critical reboot with I/O running, and runs SimpleI/O again after the reboot.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_RebootRestart_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="odd">
@@ -48,7 +47,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test runs I/O on devices before and after a system reboot.</p>
 <p><strong>Test binary:</strong> Devfund_RebootRestart_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -57,7 +56,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test starts Simple I/O on devices, initiates a reboot with I/O running, and runs SimpleI/O again after the reboot.</p>
 <p><strong>Test binary:</strong> Devfund_RebootRestart_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Reboot_Restart_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 </tbody>
@@ -68,24 +67,15 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 ## <span id="related_topics"></span>Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)
+[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)
+[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)
-
- 
-
- 
-
-
-
-
-
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
 

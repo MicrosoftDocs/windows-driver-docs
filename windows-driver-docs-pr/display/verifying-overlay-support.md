@@ -1,7 +1,6 @@
 ---
 title: Verifying Overlay Support
 description: Verifying Overlay Support
-ms.assetid: cbc3f2c4-a22a-48dd-9a3e-9611aa8dd3c6
 keywords:
 - verifying overlay support WDK Windows 7 display
 - verifying overlay support WDK Windows Server 2008 R2 display

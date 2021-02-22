@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_ENCODER
 description: KSCATEGORY_ENCODER
-ms.assetid: 409dbb1f-7b28-4cb3-bdba-da927cf67133
 keywords: ["KSCATEGORY_ENCODER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_ENCODER
 
 
-The KSCATEGORY_ENCODER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that encodes data.
+The KSCATEGORY_ENCODER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that encodes data.
 
 <table>
 <colgroup>
@@ -52,7 +51,7 @@ Drivers for KS devices register instances of KSCATEGORY_ENCODER to indicate to t
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
-For information about encoders, see [Encoder Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/encoder-devices) and [Encoder Installation and Registration](https://docs.microsoft.com/windows-hardware/drivers/stream/encoder-installation-and-registration).
+For information about encoders, see [Encoder Devices](../stream/encoder-devices.md) and [Encoder Installation and Registration](../stream/encoder-installation-and-registration.md).
 
 Requirements
 ------------
@@ -75,10 +74,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

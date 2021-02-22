@@ -1,7 +1,6 @@
 ---
 title: Sample Kernel-Mode Drivers
 description: Sample Kernel-Mode Drivers
-ms.assetid: 09d08e07-e991-458f-aedf-018a0dd20af5
 keywords: ["kernel-mode drivers WDK , samples", "sample drivers WDK kernel-mode"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ The WDK provides various sample kernel-mode drivers. After you have installed th
 
 [**DCHU**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
 
-Applies the DCHU [design principles](../develop/getting-started-with-universal-drivers.md) (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).  You can use it as a model for your own universal driver package.
+Applies the DCH [design principles](../develop/getting-started-with-windows-drivers.md) (Declarative, Componentized, and Hardware Support Apps [HSA]).  You can use it as a model for your own Windows Driver package.
 
 [**PLX9x5x**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/PLX9x5x)
 
@@ -67,11 +66,11 @@ The RegFltr sample shows how to write a registry filter driver.
 
 [**toaster**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster)  
 
-Provides sample code for a set of drivers that conform to the [Windows Driver Model](windows-driver-model.md) (WDM). This sample also includes sample installation software.
+Provides sample code for a set of drivers that conform to the [Windows Driver Model](introduction-to-wdm.md) (WDM). This sample also includes sample installation software.
 
 [**tracedrv**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver)  
 
-Shows how to use [WPP software tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+Shows how to use [WPP software tracing](../devtest/wpp-software-tracing.md).
 
 [**UMDF Driver Skeleton Sample**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/umdfSkeleton)
 

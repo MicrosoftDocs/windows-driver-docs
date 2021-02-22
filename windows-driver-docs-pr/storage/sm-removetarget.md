@@ -1,7 +1,6 @@
 ---
 title: SM\_RemoveTarget function
 description: The SM\_RemoveTarget WMI method configures the WMI provider so that it stops passing events that are associated with the indicated target to the WMI client.
-ms.assetid: 9be2a40c-299a-4d92-b9a2-ef60eb6d90e9
 keywords: ["SM_RemoveTarget function Storage Devices"]
 topic_type:
 - apiref
@@ -82,16 +81,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_RemoveTarget\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removetarget_in)
+[**SM\_RemoveTarget\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removetarget_in)
 
-[**SM\_RemoveTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removetarget_out)
-
- 
+[**SM\_RemoveTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removetarget_out)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x25 NPFS_FILE_SYSTEM
 description: The NPFS_FILE_SYSTEM bug check has a value of 0x00000025. This indicates that a problem occurred in the NPFS file system.
-ms.assetid: 099c93ec-78c0-4bb9-827d-712cfdfec0bb
 keywords: ["Bug Check 0x25 NPFS_FILE_SYSTEM", "NPFS_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:

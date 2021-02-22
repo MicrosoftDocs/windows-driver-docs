@@ -1,7 +1,6 @@
 ---
 title: MB 5G data class support
 description: MB 5G data class support
-ms.assetid: 16531A63-76EC-4722-8817-FA8DB3B2B82F
 keywords:
 - MB 5G data class support, Mobile Broadband 5G data class support
 ms.date: 04/17/2019
@@ -126,7 +125,7 @@ This command is defined under the **Basic Connect Extensions** service.
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_VERSION_INFO | Not applicable |
 | Response | Not applicable | MBIM_VERSION_INFO | Not applicable |
@@ -192,7 +191,7 @@ This command is an extension for the MBIM_CID_REGISTER_STATE CID already defined
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_REGISTRATION_STATE | Empty | Not applicable |
 | Response | MBIM_REGISTRATION_STATE_INFO_V2 | MBIM_REGISTRATION_STATE_INFO_V2 | MBIM_REGISTRATION_STATE_INFO_V2 |
@@ -248,7 +247,7 @@ The **FrequencyRange** indicates the frequency range that the device is currentl
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_PACKET_SERVICE | Empty | Not applicable |
 | Response | MBIM_PACKET_SERVICE_INFO_V2 | MBIM_PACKET_SERVICE_INFO_V2 | MBIM_PACKET_SERVICE_INFO_V2 |
@@ -305,7 +304,7 @@ If the corresponding SystemType is MBIMDataClass5G_(N)SA, the RSRP field is mand
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_SIGNAL_STATE | Empty | Not applicable |
 | Response | MBIM_SIGNAL_STATE_INFO_V2 | MBIM_SIGNAL_STATE_INFO_V2 | MBIM_SIGNAL_STATE_INFO_V2 |

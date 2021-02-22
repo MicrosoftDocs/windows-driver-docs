@@ -1,18 +1,16 @@
 ---
 title: AllowStandardUserPinUnlock
 description: AllowStandardUserPinUnlock
-ms.assetid: 3fb6de78-662b-46d0-bf0c-9efde15b0861
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+# AllowStandardUserPinUnlock
+
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 > [!IMPORTANT]
 > Starting in Windows 10, version 1507, this element has been deprecated and may not be supported in future versions of Windows.
-
-# AllowStandardUserPinUnlock
-
 
 The AllowStandardUserPinUnlock element specifies if standard users are allowed to perform PIN unlock operations.
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_TRANSMISSION\_MODE
 description: Clients use KSPROPERTY\_BDA\_TRANSMISSION\_MODE to control the setting on a demodulator node for how broadcast signals are transmitted.
-ms.assetid: 8d49a45f-031f-445f-ae2e-d98223a7d524
 keywords: ["KSPROPERTY_BDA_TRANSMISSION_MODE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -81,16 +80,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**TransmissionMode**](https://docs.microsoft.com/previous-versions/windows/desktop/mstv/transmissionmode)
-
- 
+[**TransmissionMode**](/previous-versions/windows/desktop/mstv/transmissionmode)
 
  
-
-
-
-
-
 

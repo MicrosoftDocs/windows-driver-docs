@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_ENDORSER\_STRING
 description: The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
-ms.assetid: c51a2941-9101-4749-8fa7-b9f3bbcb0803
 keywords: ["WIA_DPS_ENDORSER_STRING Imaging Devices"]
 topic_type:
 - apiref

@@ -1,14 +1,13 @@
 ---
 title: ServiceProvider
 description: ServiceProvider
-ms.assetid: 6fa22f4d-9be9-4d02-b610-e20bed4958e9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceProvider
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 > [!IMPORTANT]
 > In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_NUMBER\_OF\_LINES
 description: The WIA\_IPA\_NUMBER\_OF\_LINES property contains the number of lines that are contained in an image (that is, the vertical height of the image, in pixels). The WIA minidriver creates and maintains this property.
-ms.assetid: 80f69a99-7008-40f1-8d12-1b7e4cf063b4
 keywords: ["WIA_IPA_NUMBER_OF_LINES Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Opening a Dump File Using KD
 description: Opening a Dump File Using KD
-ms.assetid: 458E9BA6-6FA0-4FEF-93A0-062C9E11D21F
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Printer extension library overview for UWP device apps
 description: This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer.
-ms.assetid: A47B17CE-BF5A-4C02-807C-890F315A13E0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ This topic introduces the printer extension library, a library that helps device
 ## <span id="Overview"></span><span id="overview"></span><span id="OVERVIEW"></span>Overview
 
 
-A high level design goal for the [v4 printer driver](https://go.microsoft.com/fwlink/p/?LinkId=314231) architecture was to provide built-in support for the Microsoft Store app user interface. To provide access to the printer, the v4 print driver exposes COM-based [Printer Extension Interfaces](https://go.microsoft.com/fwlink/p/?LinkID=299887).
+A high level design goal for the [v4 printer driver](../print/v4-printer-driver.md) architecture was to provide built-in support for the Microsoft Store app user interface. To provide access to the printer, the v4 print driver exposes COM-based [Printer Extension Interfaces](/windows-hardware/drivers/ddi/_print/).
 
 To access those interfaces from your UWP device app, you can use the printer extension library that is included with the Microsoft Store device app printer samples. The printer extension library wraps the COM implementation of the COM interface `PrinterExtensionLib`. This enables code sharing between printer extensions and your UWP device app.
 
@@ -52,28 +51,19 @@ In order to convert the C# interfaces, classes and methods to something supporte
 ## <span id="related_topics"></span>Related topics
 
 
-[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](../print/v4-printer-driver.md)
 
-[Printer Extension Interfaces (v4 Print Driver)](https://go.microsoft.com/fwlink/p/?LinkID=299887)
+[Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
 
-[Job Management (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/job-management)
+[Job Management (v4 Printer Driver)](../print/job-management.md)
 
-[Device Maintenance (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/device-maintenance)
+[Device Maintenance (v4 Printer Driver)](../print/device-maintenance.md)
 
-[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](../print/bidirectional-communication.md)
 
 [Getting started with UWP apps](getting-started.md)
 
 [Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
-
- 
-
- 
-
-
-
-
-
 

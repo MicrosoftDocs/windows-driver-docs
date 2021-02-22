@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_GAMMA\_CURVES
 description: The WIA\_IPA\_GAMMA\_CURVES property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 339c4fab-f872-443a-80b8-7b76b5edef08
 keywords: ["WIA_IPA_GAMMA_CURVES Imaging Devices"]
 topic_type:
 - apiref

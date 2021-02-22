@@ -1,20 +1,17 @@
 ---
 title: USB 2.0 Extensions
 description: This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack.
-ms.assetid: 42A78738-CE0D-42EA-9E3D-04CDC2060266
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
 # USB 2.0 Extensions
 
-
-This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack. For more information about these three drivers, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkId=251983).
+This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack. For more information about these three drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 The USB 2.0 debugger extension commands are implemented in Usbkd.dll. To load the Usbkd commands, enter **.load usbkd.dll** in the debugger.
 
-## <span id="usb-2-tree"></span><span id="USB_2_TREE"></span>USB 2.0 Tree
-
+## <span id="usb-2-tree"></span> USB 2.0 Tree
 
 The USB 2.0 tree contains the device nodes that represent execution units on EHCI host controller devices along with the child nodes that represent hubs and connected devices. This diagram shows an example of a USB 2.0 tree.
 
@@ -24,12 +21,12 @@ The diagram shows one physical host controller device that has two execution uni
 
 Notice that the diagram is not a tree in the sense that not all nodes descend from a single parent node. However, when we use the term *USB 2.0 tree*, we are referring to the set of device nodes that represent execution units on EHCI host controller devices along with the nodes for hubs and connected devices.
 
-## <span id="getting_started_with_usb_2.0_debugging"></span><span id="GETTING_STARTED_WITH_USB_2.0_DEBUGGING"></span>Getting started with USB 2.0 debugging
+## Getting started with USB 2.0 debugging
 
 
 To start debugging a USB 2.0 issue, enter the [**!usb2tree**](-usbkd-usb2tree.md) command. The **!usb2tree** command displays a list of commands and addresses that you can use to investigate host controllers, hubs, ports, devices, endpoints, and other elements of the USB 2.0 tree.
 
-## <span id="in_this_section"></span>In this section
+## In this section
 
 
 -   [**!usbkd.usbhelp**](-usbkd-usbhelp.md)
@@ -89,19 +86,8 @@ To start debugging a USB 2.0 issue, enter the [**!usb2tree**](-usbkd-usb2tree.md
 -   [**!usbkd.usbusb2tt**](-usbkd-usbusb2tt.md)
 -   [**!usbkd.usbver**](-usbkd-usbver.md)
 
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
-
- 
-
- 
-
-
-
-
-
-

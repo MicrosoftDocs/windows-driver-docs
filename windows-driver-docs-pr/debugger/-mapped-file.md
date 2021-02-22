@@ -1,7 +1,6 @@
 ---
 title: mapped_file
 description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
-ms.assetid: 1d6d4d14-01ca-47ce-a044-778c9a56e9a5
 keywords: ["mapped_file Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,7 +52,7 @@ The **!mapped\_file** extension can only be used during live, nonremote debuggin
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about file mapping, see [MapViewOfFile](https://go.microsoft.com/fwlink/p/?linkid=123354) in the Windows SDK.
+For more information about file mapping, see [MapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) in the Windows SDK.
 
 Remarks
 -------
@@ -72,10 +71,4 @@ No information found for 80310000: error 87
 ```
 
  
-
- 
-
-
-
-
 

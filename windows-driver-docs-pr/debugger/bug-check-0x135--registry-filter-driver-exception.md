@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x135 REGISTRY_FILTER_DRIVER_EXCEPTION
 description: The REGISTRY_FILTER_DRIVER_EXCEPTION bug check has a value of 0x00000135. This bugcheck is caused by an unhandled exception in a registry filtering driver.
-ms.assetid: 99E171F4-5629-405F-993C-51287AD7D2C8
 keywords: ["Bug Check 0x135 REGISTRY_FILTER_DRIVER_EXCEPTION", "REGISTRY_FILTER_DRIVER_EXCEPTION"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,7 +41,7 @@ This bugcheck indicates that a registry filtering driver didn't handle an except
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. Identify the offending driver by using the 3rd parameter.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Identify the offending driver by using the 3rd parameter.
 
  
 

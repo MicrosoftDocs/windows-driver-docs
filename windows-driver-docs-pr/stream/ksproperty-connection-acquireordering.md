@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_ACQUIREORDERING
 description: The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property that should be implemented on a pin when state change order is significant.
-ms.assetid: b0d27615-bece-49b1-8497-f3c389ea37fc
 keywords: ["KSPROPERTY_CONNECTION_ACQUIREORDERING Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property tha
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -82,13 +81,4 @@ Requirements
 
 
 [KSPROPSETID\_Connection](kspropsetid-connection.md)
-
- 
-
- 
-
-
-
-
-
 

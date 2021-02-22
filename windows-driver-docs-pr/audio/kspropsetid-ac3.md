@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_AC3
 description: KSPROPSETID\_AC3
-ms.assetid: 172d8ed8-2dd3-438d-8dc6-f4f1bb128811
 keywords: ["KSPROPSETID_AC3"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ An audio driver that supports the AC-3 format can expose a wide range of propert
 
 When the audio hardware does not support a particular capability, the driver for that hardware should fail the get- and set-property calls in order to inform the upper-layer driver that it must find another way to perform the specified function. For example, the driver for a decoder that does not support dynamic range compression should fail calls for that capability so that the upper layer will know that it needs to insert a compressor into the stream following the AC-3 decoder.
 
-For information about AC-3 compression, see the AC-3 specification at the [Dolby Laboratories](https://go.microsoft.com/fwlink/p/?linkid=8730) website. The specification is titled *Digital Audio Compression Standard (AC-3)*.
+For information about AC-3 compression, see the AC-3 specification at the [Dolby Laboratories](https://www.dolby.com/us/en/index.html) website. The specification is titled *Digital Audio Compression Standard (AC-3)*.
 
 The property items in this set are specified by KSPROPERTY\_AC3 enumeration values.
 

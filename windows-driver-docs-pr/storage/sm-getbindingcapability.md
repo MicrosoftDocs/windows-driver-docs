@@ -1,7 +1,6 @@
 ---
 title: SM\_GetBindingCapability function
 description: The SM\_GetBindingCapability method retrieves the binding capabilities for the indicated port.
-ms.assetid: 11b7df8b-2694-4c49-a97a-ed475f3e841f
 keywords: ["SM_GetBindingCapability function Storage Devices"]
 topic_type:
 - apiref
@@ -82,16 +81,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetBindingCapability\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_in)
+[**SM\_GetBindingCapability\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_in)
 
-[**SM\_GetBindingCapability\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_out)
-
- 
+[**SM\_GetBindingCapability\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_out)
 
  
-
-
-
-
-
 

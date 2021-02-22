@@ -1,7 +1,6 @@
 ---
 title: Controlling Filter Manager Operation
 description: Controlling Filter Manager Operation
-ms.assetid: 884e6a15-5bfa-41bf-b759-af6e43078fad
 keywords:
 - filter manager WDK file system minifilter , controlling operation
 ms.date: 04/20/2017

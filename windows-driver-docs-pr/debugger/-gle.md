@@ -1,7 +1,6 @@
 ---
 title: gle
 description: The gle extension displays the last error value for the current thread.
-ms.assetid: bed3ce17-6860-421f-ae20-11faa50310ed
 keywords: ["thread, error value", "error value", "gle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,20 +52,14 @@ Ntsdexts.dll</td>
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about the [**GetLastError**](https://docs.microsoft.com/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) routine, see the Micorosft Windows SDK documentation.
+For more information about the [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) routine, see the Micorosft Windows SDK documentation.
 
 Remarks
 -------
 
-The **!gle** extension displays the value of [**GetLastError**](https://docs.microsoft.com/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) and tries to decode this value.
+The **!gle** extension displays the value of [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) and tries to decode this value.
 
 In kernel mode, the **!gle** extension work only if the debugger can read the thread environment block (TEB).
 
  
-
- 
-
-
-
-
 

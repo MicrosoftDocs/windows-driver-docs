@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_USSD
 description: OID_WWAN_USSD sends Unstructured Supplementary Service Data (USSD) requests to the underlying MB device.
-ms.assetid: 9DFAAABD-8213-4B83-8FE8-1EC2BB9F735B
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_USSD Network Drivers Starting with Windows Vista
@@ -15,9 +14,9 @@ OID\_WWAN\_USSD sends Unstructured Supplementary Service Data (USSD) requests to
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [NDIS\_STATUS\_WWAN\_USSD](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd) status notification containing the status of the initial USSD request when they have completed the transaction.
+Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [NDIS\_STATUS\_WWAN\_USSD](./ndis-status-wwan-ussd.md) status notification containing the status of the initial USSD request when they have completed the transaction.
 
-Windows does not send an OID\_WWAN\_USSD request to a miniport driver if a previous request is still in progress, with the exception of a request to cancel a pending operation by setting the [WWAN\_USSD\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_request) **RequestType** member of the request to *WwanUssdRequestCancel*.
+Windows does not send an OID\_WWAN\_USSD request to a miniport driver if a previous request is still in progress, with the exception of a request to cancel a pending operation by setting the [WWAN\_USSD\_REQUEST](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_request) **RequestType** member of the request to *WwanUssdRequestCancel*.
 
 When a request is canceled, the miniport driver must respond to both the canceled request and the cancel request.
 
@@ -44,14 +43,9 @@ Requirements
 ## See also
 
 
-[NDIS\_STATUS\_WWAN\_USSD](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd)
+[NDIS\_STATUS\_WWAN\_USSD](./ndis-status-wwan-ussd.md)
 
-[WWAN\_USSD\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_request)
-
- 
+[WWAN\_USSD\_REQUEST](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_request)
 
  
-
-
-
 

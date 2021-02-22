@@ -1,7 +1,6 @@
 ---
 title: Printer INF File Install Sections
 description: Printer INF File Install Sections
-ms.assetid: fb544271-1f0f-4bbd-b0a7-88dc89cc8186
 keywords:
 - INF files WDK print , install sections
 - install sections WDK printer
@@ -24,7 +23,7 @@ Typically, for Windows 2000 and later, vendors do not distribute Microsoft's pri
 
  
 
-Microsoft's printer INF file, Ntprint.inf, contains the following [**INF DDInstall sections**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) that can be referenced by vendor INF files:
+Microsoft's printer INF file, Ntprint.inf, contains the following [**INF DDInstall sections**](../install/inf-ddinstall-section.md) that can be referenced by vendor INF files:
 
 -   \[PSCRIPT.OEM\]
 
@@ -69,9 +68,4 @@ Needs=TTFSUB.OEM,UNIDRV_BIDI.OEM  ; Install Unidrv, TrueType subs,
 ```
 
  
-
- 
-
-
-
 

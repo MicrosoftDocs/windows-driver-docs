@@ -1,7 +1,6 @@
 ---
 title: Describe the device in the Device Metadata Authoring Wizard
 description: Describe the device in the Device Metadata Authoring Wizard
-ms.assetid: C14E8E3F-FACF-497E-9E6C-17397E6DF9DB
 keywords:
 - Describe the device in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017

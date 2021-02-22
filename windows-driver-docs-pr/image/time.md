@@ -1,7 +1,6 @@
 ---
 title: Time element
 description: The required Time element specifies the time at which a condition occurred.
-ms.assetid: 1a10f6b4-1fcd-4697-9eb4-d58cca9c4a23
 keywords: ["Time element Imaging Devices"]
 topic_type:
 - apiref

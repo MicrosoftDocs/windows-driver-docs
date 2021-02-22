@@ -1,7 +1,6 @@
 ---
 title: CTRL+K (Change Post-Reboot Break State)
 description: The CTRL+K key changes the conditions on which the debugger will automatically break into the target computer.
-ms.assetid: 74f57775-63ad-4a96-9ba5-bfedd4c8c826
 keywords: ["CTRL+K (Change Post-Reboot Break State) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

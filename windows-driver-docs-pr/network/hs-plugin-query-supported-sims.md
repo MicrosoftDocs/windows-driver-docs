@@ -1,7 +1,6 @@
 ---
 title: HS_PLUGIN_QUERY_SUPPORTED_SIMS function
 description: The HS_PLUGIN_QUERY_SUPPORTED_SIMS function returns the list of SIMs that the plugin supports.
-ms.assetid: e1b41bb1-7f82-4298-b070-20cb557fa0fc
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_SUPPORTED_SIMS) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS** function returns the list of SIMs that the plugin supports.

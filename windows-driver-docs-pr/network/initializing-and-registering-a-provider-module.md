@@ -1,7 +1,6 @@
 ---
 title: Initializing and Registering a Provider Module
 description: Initializing and Registering a Provider Module
-ms.assetid: 967271ce-e4f5-45ce-9249-746d2fe698c1
 keywords:
 - provider modules WDK Network Module Registrar , initializing
 - provider modules WDK Network Module Registrar , registering
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Initializing and Registering a Provider Module
 
 
-A provider module must initialize a number of data structures before it can register itself with the Network Module Registrar (NMR). These structures include an [**NPI\_MODULEID**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568813(v=vs.85)) structure, an [**NPI\_PROVIDER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_provider_characteristics) structure, an [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) structure (contained within the NPI\_PROVIDER\_CHARACTERISTICS structure), and a structure defined by the provider module that is used for the provider module's registration context.
+A provider module must initialize a number of data structures before it can register itself with the Network Module Registrar (NMR). These structures include an [**NPI\_MODULEID**](/previous-versions/windows/hardware/drivers/ff568813(v=vs.85)) structure, an [**NPI\_PROVIDER\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_provider_characteristics) structure, an [**NPI\_REGISTRATION\_INSTANCE**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) structure (contained within the NPI\_PROVIDER\_CHARACTERISTICS structure), and a structure defined by the provider module that is used for the provider module's registration context.
 
 If a provider module registers itself with the NMR as a provider of a [Network Programming Interface (NPI)](network-programming-interface.md) that defines NPI-specific provider characteristics, the provider module must also initialize an instance of the provider characteristics structure that are defined by the NPI.
 
@@ -114,11 +113,11 @@ PROVIDER_REGISTRATION_CONTEXT ProviderRegistrationContext =
 };
 ```
 
-A provider module typically initializes itself within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The main initialization tasks for a provider module are:
+A provider module typically initializes itself within its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The main initialization tasks for a provider module are:
 
--   Specify an [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function. The operating system calls this function when the provider module is unloaded from the system. If a provider module does not provide an unload function, the provider module cannot be unloaded from the system.
+-   Specify an [**Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function. The operating system calls this function when the provider module is unloaded from the system. If a provider module does not provide an unload function, the provider module cannot be unloaded from the system.
 
--   Call the [**NmrRegisterProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider) function to register the provider module with the NMR.
+-   Call the [**NmrRegisterProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider) function to register the provider module with the NMR.
 
 For example:
 
@@ -160,17 +159,11 @@ NTSTATUS
 }
 ```
 
-If a provider module is a provider of more than one NPI, it must initialize an independent set of data structures and call [**NmrRegisterProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider) for each NPI that it supports. If a network module is both a provider module and a client module (that is, it is a provider of one NPI and a client of another NPI), it must initialize two independent sets of data structures, one for the provider interface and one for the client interface, and call both **NmrRegisterProvider** and [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient).
+If a provider module is a provider of more than one NPI, it must initialize an independent set of data structures and call [**NmrRegisterProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider) for each NPI that it supports. If a network module is both a provider module and a client module (that is, it is a provider of one NPI and a client of another NPI), it must initialize two independent sets of data structures, one for the provider interface and one for the client interface, and call both **NmrRegisterProvider** and [**NmrRegisterClient**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient).
 
-A provider module is not required to call [**NmrRegisterProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider) from within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. For example, in the situation where a provider module is a subcomponent of a complex driver, the registration of the provider module might occur only when the provider module subcomponent is activated.
+A provider module is not required to call [**NmrRegisterProvider**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider) from within its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. For example, in the situation where a provider module is a subcomponent of a complex driver, the registration of the provider module might occur only when the provider module subcomponent is activated.
 
-For more information about implementing a provider module's [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function, see [Unloading a Provider Module](unloading-a-provider-module.md).
-
- 
+For more information about implementing a provider module's [**Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function, see [Unloading a Provider Module](unloading-a-provider-module.md).
 
  
-
-
-
-
 

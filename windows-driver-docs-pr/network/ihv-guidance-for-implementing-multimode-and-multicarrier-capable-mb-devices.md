@@ -1,7 +1,6 @@
 ---
 title: IHV guidance for implementing multiple Radio Access Technologies
 description: This topic provides information about implementing support for multiple Radio Access Technologies (RAT) and multiple operators in Windows.
-ms.assetid: 17BB2478-F98D-4AE6-A62D-F65E2E1DCDFF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -235,7 +234,7 @@ Set = **InformationBuffer on MBIM\_COMMAND\_MSG contains MBIM\_LOCATION\_INFO**
 
 Unsolicited Event = **Unsupported**
 
-The country code specified by the host will be based on the Geographical Location GEOID available on Windows. For more information, see [Table of Geographical Locations (Windows)](https://docs.microsoft.com/windows/desktop/Intl/table-of-geographical-locations).
+The country code specified by the host will be based on the Geographical Location GEOID available on Windows. For more information, see [Table of Geographical Locations (Windows)](/windows/desktop/Intl/table-of-geographical-locations).
 
 <table>
 <colgroup>
@@ -313,10 +312,4 @@ Unsolicited Event = **Unsupported**
  
 
  
-
- 
-
-
-
-
 

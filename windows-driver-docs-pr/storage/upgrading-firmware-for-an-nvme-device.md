@@ -1,7 +1,6 @@
 ---
 title: Upgrading Firmware for an NVMe Device
 description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
-ms.assetid: A912715A-F82A-41E5-BE14-5B17930C29B7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ Updates to the firmware on an NVMe storage device are issued to the miniport dri
 ## <span id="Firmware_upgrade_process"></span><span id="firmware_upgrade_process"></span><span id="FIRMWARE_UPGRADE_PROCESS"></span>Firmware upgrade process
 
 
-NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL\_SCSI\_MINIPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing with the associated firmware control data formatted in an SRB. The update process involves:
+NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL\_SCSI\_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing with the associated firmware control data formatted in an SRB. The update process involves:
 
 1.  Gather the firmware slot information to determine where to place the update. There are a few considerations in deciding where the firmware update will reside.
 
@@ -30,7 +29,7 @@ NVMe devices certified for Windows are capable of updating their firmware while 
 ## <span id="Miniport_firmware_control_requests"></span><span id="miniport_firmware_control_requests"></span><span id="MINIPORT_FIRMWARE_CONTROL_REQUESTS"></span>Miniport firmware control requests
 
 
-Each function command is set in a **FIRMWARE\_REQUEST\_BLOCK** structure which is included with an [**SRB\_IO\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control) in the buffer of an [**IOCTL\_SCSI\_MINIPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request. The **ControlCode** member of **SRB\_IO\_CONTROL** is set to **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** to indicate a miniport firmware operation. Each function command has a related information structure located after the **FIRMWARE\_REQUEST\_BLOCK**. The following table lists each function command and the structures included in the system buffer for **IOCTL\_SCSI\_MINIPORT**.
+Each function command is set in a **FIRMWARE\_REQUEST\_BLOCK** structure which is included with an [**SRB\_IO\_CONTROL**](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control) in the buffer of an [**IOCTL\_SCSI\_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request. The **ControlCode** member of **SRB\_IO\_CONTROL** is set to **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** to indicate a miniport firmware operation. Each function command has a related information structure located after the **FIRMWARE\_REQUEST\_BLOCK**. The following table lists each function command and the structures included in the system buffer for **IOCTL\_SCSI\_MINIPORT**.
 
 <table>
 <colgroup>
@@ -583,9 +582,4 @@ A firmware image already resident in a slot can be reactivated by using just the
 The **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** control code for SRB I/O control is available starting with Windows 8.1.
 
  
-
- 
-
-
-
 

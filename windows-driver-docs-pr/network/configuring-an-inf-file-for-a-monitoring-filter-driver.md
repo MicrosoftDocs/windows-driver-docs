@@ -1,7 +1,6 @@
 ---
 title: Configuring an INF File for a Monitoring Filter Driver
 description: Configuring an INF File for a Monitoring Filter Driver
-ms.assetid: b45c6f40-7254-4cc1-a007-d40eaa74a290
 keywords:
 - INF files WDK network , filter drivers
 - monitoring filter drivers WDK networking
@@ -56,9 +55,9 @@ The following NDIS filter driver installation issues are associated with monitor
 
     The 0x00000002 value in the preceding example indicates that the filter module is optional. To install a mandatory filter module, set the **FilterRunType** entry to 0x00000001. For more information, see [Mandatory Filter Drivers](mandatory-filter-drivers.md).
 
-    **Note**  We highly recommend that a monitoring lightweight filter (LWF) driver should not be mandatory, unless it is to be used in a controlled environment where there will be no optional modifying LWF drivers. This is because a mandatory monitoring LWF driver can cause optional modifying LWF drivers to fail [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach). A monitoring LWF driver is bound over every modifying filter and binding by design to facilitate monitoring of networking traffic at all levels. Consider the following scenario:
+    **Note**  We highly recommend that a monitoring lightweight filter (LWF) driver should not be mandatory, unless it is to be used in a controlled environment where there will be no optional modifying LWF drivers. This is because a mandatory monitoring LWF driver can cause optional modifying LWF drivers to fail [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach). A monitoring LWF driver is bound over every modifying filter and binding by design to facilitate monitoring of networking traffic at all levels. Consider the following scenario:
     -   An instance of a mandatory monitoring LWF driver is installed over an optional modifying LWF driver.
-    -   The lower modifying optional LWF driver fails to attach to a lower component. This will cause the mandatory monitoring LWF driver’s [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) handler not to be called.
+    -   The lower modifying optional LWF driver fails to attach to a lower component. This will cause the mandatory monitoring LWF driver’s [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) handler not to be called.
     -   Because now an instance of a mandatory LWF driver is not loaded, NDIS will not bind any protocols (such as TCP/IP) to the interface or NIC, thus rendering the interface to be unusable.
 
      
@@ -125,10 +124,4 @@ The following NDIS filter driver installation issues are associated with monitor
     ```
 
  
-
- 
-
-
-
-
 

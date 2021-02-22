@@ -1,7 +1,6 @@
 ---
 title: Upgrading Network Components
 description: Upgrading Network Components
-ms.assetid: c183cd0a-53a7-4172-9cf8-70a93877c8a8
 keywords:
 - notify objects WDK networking , upgrading network components
 - network notify objects WDK , upgrading network components
@@ -23,17 +22,11 @@ Network components are upgraded by the network configuration subsystem.
 
 **To upgrade a network component**
 
-1.  The network configuration subsystem creates an instance of the notify object and calls the object's [**INetCfgComponentControl::Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547729(v=vs.85)) method. This method initializes the object and provides access to the component and all aspects of network configuration.
+1.  The network configuration subsystem creates an instance of the notify object and calls the object's [**INetCfgComponentControl::Initialize**](/previous-versions/windows/hardware/network/ff547729(v=vs.85)) method. This method initializes the object and provides access to the component and all aspects of network configuration.
 
-2.  When the operating system is installed or upgraded to a different version, the network configuration subsystem calls the notify object's [**INetCfgComponentSetup::Upgrade**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547783(v=vs.85)) method.
+2.  When the operating system is installed or upgraded to a different version, the network configuration subsystem calls the notify object's [**INetCfgComponentSetup::Upgrade**](/previous-versions/windows/hardware/network/ff547783(v=vs.85)) method.
 
-3.  The subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547727(v=vs.85)) method to modify information about the network component in the registry and then calls the notify object's [**INetCfgComponentControl::ApplyPnpChanges**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547726(v=vs.85)) method and passes the [**INetCfgPnpReconfigCallback**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547935(v=vs.85)) interface to configure the component's driver with the upgraded information.
-
- 
+3.  The subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](/previous-versions/windows/hardware/network/ff547727(v=vs.85)) method to modify information about the network component in the registry and then calls the notify object's [**INetCfgComponentControl::ApplyPnpChanges**](/previous-versions/windows/hardware/network/ff547726(v=vs.85)) method and passes the [**INetCfgPnpReconfigCallback**](/previous-versions/windows/hardware/network/ff547935(v=vs.85)) interface to configure the component's driver with the upgraded information.
 
  
-
-
-
-
 

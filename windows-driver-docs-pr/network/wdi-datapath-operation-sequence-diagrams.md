@@ -1,7 +1,6 @@
 ---
 title: WDI datapath operation sequence diagrams
 description: This section shows diagrams illustrating WDI datapath operations
-ms.assetid: F192CC01-8F70-4DF5-8170-5BF88F3270CB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

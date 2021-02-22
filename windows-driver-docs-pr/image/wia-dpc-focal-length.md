@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_FOCAL\_LENGTH
 description: The WIA\_DPC\_FOCAL\_LENGTH property contains the 35 millimeter (mm)-equivalent focal length.
-ms.assetid: 0fe4b2d7-ca75-4dab-98b4-1b976f101dea
 keywords: ["WIA_DPC_FOCAL_LENGTH Imaging Devices"]
 topic_type:
 - apiref

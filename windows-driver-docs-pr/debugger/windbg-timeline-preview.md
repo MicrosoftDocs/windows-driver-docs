@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - Timelines 
 description: This section describes how work with the time travel timelines feature in WinDbg Preview.
-ms.date: 01/10/2020
+ms.date: 07/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Time Travel Debugging (TTD) allows users to record traces, which are recordings of the execution of a program. Timelines  are a visual representation of events that happen during the execution. These events can be locations of: breakpoints, memory read/writes, function calls and returns, and exceptions.
 
-![Timeline in debugger](images/windbgx-timeline.png)
+![Timeline in debugger showing exceptions, memory access, breakpoints and Function Calls](images/windbgx-timeline.png)
 
 Use the timelines window to quickly view important events, understand relative position and easily jump to their location in your TTD trace file. Use multiple timelines to visually explore events in the time travel trace and discover event correlation.
 
@@ -24,7 +24,7 @@ For more information about creating and working with Time Travel trace files, se
 The timelines window can display the following events:
 
 - Exceptions (you can further filter on a specific exception code)
-- Breakpoints (timelines for breakpoints are also automatically added when adding a breakpoint)
+- Breakpoints
 - Function Calls (search in the form of module!function)
 - Memory Accesses (read / write / execute between two memory addresses)
 
@@ -36,19 +36,19 @@ When you load a trace file and the timeline is active, it will display any excep
 
 When you hover over a breakpoint information such as the exception type and the exception code are displayed.
 
-![Timeline in debugger showing exceptions](images/windbgx-timeline-exceptions.png)
+![Timeline in debugger showing exceptions showing information on one exception code](images/windbgx-timeline-exceptions.png)
 
 You can further filter on a specific exception code using the optional exception code field.
 
-![Timeline debugger exception dialog box showing Timeline type set to exception and exception code set to 0xC0000004](images/windbgx-timeline-exceptions-dialog.png)
+![Timeline debugger exception dialog box showing timeline type set to exception and exception code set to 0xC0000004](images/windbgx-timeline-exceptions-dialog.png)
 
 You can also add a new timeline for a specific exception type.
 
 ### Breakpoints
 
-Timelines for breakpoints are automatically added to the timeline when a breakpoint is added. This can be done for example using the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint the address and the instruction pointer associated with the breakpoint is displayed.
+After adding a breakpoint, you can display the positions of when that breakpoint is hit on a timeline. This can be done for example using the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint the address and the instruction pointer associated with the breakpoint is displayed.
 
-![Timeline in debugger showing breakpoints](images/windbgx-timeline-breakpoints.png)
+![Timeline in debugger showing about 30 breakpoint dots](images/windbgx-timeline-breakpoints.png)
 
 When the breakpoint is cleared, the associated breakpoint timeline is automatically removed.
 
@@ -60,7 +60,7 @@ You can display the positions of function calls on the timeline. To do this prov
 
 When you hover over a function call the  function name, input parameters, their values, and the return value are displayed. This example shows *buffer* and *size* since those are the parameters to DisplayGreeting!GetCppConGreeting.
 
-![Timeline in debugger showing function calls](images/windbgx-timeline-function-calls.png)
+![Timeline in debugger showing function calls and registers window](images/windbgx-timeline-function-calls.png)
 
 ### Memory Access
 
@@ -80,7 +80,7 @@ Click on the magnifying glass icons to zoom in and out on the timeline.
 
 In the top timeline control area use the rectangle to pan the view of the timeline. Drag the outer delimiters of the rectangle to resize the current timeline view.
 
-![Timeline in debugger showing top area that is used to select the active view port](images/windbgx-timeline-manipulation.png)
+![Timeline in debugger showing top area that is used to select the active viewport](images/windbgx-timeline-manipulation.png)
 
 ### Mouse Movements
 
@@ -92,9 +92,9 @@ Pan from side to side using Shift + Scroll wheel.
 
 To demonstrate debugging timeline techniques, the [Time Travel Debugging Walkthrough](time-travel-debugging-walkthrough.md) is reused here. This demonstration assumes that you have completed the first two steps to build the sample code and created the TTD recording using the first two steps described there.
 
-[Section 1: Build the sample code](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough#build)
+[Section 1: Build the sample code](./time-travel-debugging-walkthrough.md#build)
 
-[Section 2: Record a trace of the "DisplayGreeting" sample](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough#record)
+[Section 2: Record a trace of the "DisplayGreeting" sample](./time-travel-debugging-walkthrough.md#record)
 
 In this scenario, the first step is to find the exception in the time travel trace. This can be done by double clicking on the only exception that is on the timeline.
 
@@ -108,7 +108,7 @@ Time Travel Position: CC:0
 
 Select **View** >> **Registers** to display the registers at this point in the timeline to begin our investigation.
 
-![Timeline in debugger showing exception and registers](images/windbgx-timeline-demo-lab-exception-registers.png)
+![Timeline in debugger showing demolab exception and registers](images/windbgx-timeline-demo-lab-exception-registers.png)
 
 In the command output note that the stack (esp) and base pointer (ebp) are pointing to two very different addresses. This could indicate that stack corruption - possibly a function returned and then corrupted the stack. To validate this, we need to travel back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
 
@@ -220,11 +220,11 @@ dx @$cursession.TTD.Calls("DisplayGreeting!GetCppConGreeting")[0x0]
 
 Either the Start or End, or both the Start and End location boxes, must be checked.
 
-![Timeline in debugger showing memory access timeline and locals windows](images/windbgx-timeline-demo-lab-function-dialog.png)
+![Add new Timeline dialog showing adding Function call timeline with a function search string of DisplayGreeting!GetCppConGreeting](images/windbgx-timeline-demo-lab-function-dialog.png)
 
 As our code is neither recursive or re-entrant, it is pretty easy to locate on the time line when the GetCppConGreeting method is called. The call to GetCppConGreeting also occurs at the same time as our breakpoint as well as the memory access event that we defined. So it looks like we have narrowed in on an area of code to look carefully at for the root cause of our application crash.
 
-![Timeline in debugger showing memory access timeline and locals windows](images/windbgx-timeline-demo-lab-function.png)
+![Timeline in debugger showing memory access timeline and locals window with message and buffer with different string values](images/windbgx-timeline-demo-lab-function.png)
 
 ## Explore code execution by viewing multiple timelines
 
@@ -233,6 +233,22 @@ Although our code sample is small, the technique of using multiple timelines all
 ![Timeline in debugger showing memory access timeline and locals windows](images/windbgx-timeline-demo-lab-locals.png)
 
 The ability to see additional correlations and find things you may not have expected, differentiates the timeline tool from interacting with the time travel trace using command line commands.
+
+## Timeline Bookmarks
+
+Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them.
+
+You can provide a descriptive name for bookmarks.
+
+![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+
+Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
+
+![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+
+You can right click the bookmark to travel to that position, rename or delete the bookmark.
+
+![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
 
 ### See Also
 

@@ -1,7 +1,6 @@
 ---
 title: Customizing the Printer Port Monitors
 description: Customizing the Printer Port Monitors
-ms.assetid: e5d4166a-2593-43fd-b476-c54642e2d099
 keywords:
 - in-box autoconfiguration support WDK printer , customizing printer port monitors
 - bidi extension files WDK printer autoconfig
@@ -74,7 +73,7 @@ In the preceding code example, note that:
 
 ### Conversion of WinSNMP to Bidi Data Types
 
-The correspondence between Simple Network Management Protocol (SNMP) types and bidi types is given in the [**BIDI\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type) enumeration topic.
+The correspondence between Simple Network Management Protocol (SNMP) types and bidi types is given in the [**BIDI\_TYPE**](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type) enumeration topic.
 
 The remainder of this section contains the following topics to help you create your own bidi schema extensions.
 
@@ -83,9 +82,4 @@ The remainder of this section contains the following topics to help you create y
 [WSD Schema Extensions](wsd-schema-extensions-for-driver-specific-queries.md)
 
  
-
- 
-
-
-
 

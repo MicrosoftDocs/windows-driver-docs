@@ -1,7 +1,6 @@
 ---
 title: .step_filter (Set Step Filter)
 description: The .step_filter command creates a list of functions that are skipped (stepped over) when tracing.
-ms.assetid: 9ce2bed4-fac0-4537-a129-7cb9f1e8725e
 keywords: [".step_filter (Set Step Filter) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

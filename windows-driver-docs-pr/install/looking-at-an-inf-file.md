@@ -1,7 +1,6 @@
 ---
 title: Looking at an INF File
 description: Looking at an INF File
-ms.assetid: 4d9d5f28-b643-4369-8bf8-94703e8926d2
 keywords:
 - INF files WDK device installations , structure
 - INF files WDK device installations , sections

@@ -1,7 +1,6 @@
 ---
 title: ComputerHardwareIds
 description: ComputerHardwareIds
-ms.assetid: ee2c53d3-680d-4988-8eb9-a3713ea47ca4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,13 +18,7 @@ This section contains the following topics:
 
 [ComputerHardwareIds Output](computerhardwareids-output.md)
 
-For more information about device metadata packages, see [Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages).
+For more information about device metadata packages, see [Device Metadata Packages](../install/overview-of-device-metadata-packages.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DIF_DETECT
 description: DIF_DETECT
-ms.assetid: 866a99fc-f48e-447d-b5eb-6339dc98d3f2
 keywords: ["DIF_DETECT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ When the **Add Hardware Wizard** is detecting non-PnP devices.
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets). There is a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) associated with the *DeviceInfoSet*.
+Supplies a handle to the [device information set](./device-information-sets.md). There is a [device setup class](./overview-of-device-setup-classes.md) associated with the *DeviceInfoSet*.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
 None
@@ -61,7 +60,7 @@ None
 There are device installation parameters associated with the *DeviceInfoSet*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_DETECTDEVICE_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_detectdevice_params) structure is associated with the *DeviceInfoSet*. The parameters contain a callback routine that the class installer calls to indicate the progress of the detection operation.
+An [**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_detectdevice_params) structure is associated with the *DeviceInfoSet*. The parameters contain a callback routine that the class installer calls to indicate the progress of the detection operation.
 
 ### Installer Output
 
@@ -87,13 +86,13 @@ In response to a DIF_DETECT request an installer can detect devices of its setup
 
 If an installer detects devices, it should do at least the following:
 
--   Call the **DetectProgressNotify** callback routine in the [**SP_DETECTDEVICE_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_detectdevice_params) class installation parameters, if detection will potentially take a noticeable amount of time.
+-   Call the **DetectProgressNotify** callback routine in the [**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_detectdevice_params) class installation parameters, if detection will potentially take a noticeable amount of time.
 
 -   For each device the installer detects, it should:
-    -   Create a device information element ([**SetupDiCreateDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)).
+    -   Create a device information element ([**SetupDiCreateDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)).
     -   Provide information for driver selection.
 
-        The installer can manually select the driver for the device or the installer can set the device's hardware ID that Windows will use to find an INF for the device. An installer sets the hardware ID by calling [**SetupDiSetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) with a *Property* value of SPDRP_HARDWAREID.
+        The installer can manually select the driver for the device or the installer can set the device's hardware ID that Windows will use to find an INF for the device. An installer sets the hardware ID by calling [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) with a *Property* value of SPDRP_HARDWAREID.
 
     -   Possibly set some device installation parameters.
 
@@ -103,7 +102,7 @@ If one or more installers detects device(s) in response to this DIF code, Window
 
 To detect non-PnP devices during GUI-mode setup, an installer must handle the [**DIF_FIRSTTIMESETUP**](dif-firsttimesetup.md) request. GUI-mode setup does not send a DIF_DETECT request to the installer.
 
-For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
+For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
 Requirements
 ------------
@@ -132,18 +131,11 @@ Requirements
 
 [**DIF_FIRSTTIMESETUP**](dif-firsttimesetup.md)
 
-[**SetupDiCreateDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)
+[**SetupDiCreateDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)
 
-[**SP_DETECTDEVICE_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_detectdevice_params)
+[**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_detectdevice_params)
 
-[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
-
- 
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
  
-
-
-
-
-
 

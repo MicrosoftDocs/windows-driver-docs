@@ -1,7 +1,6 @@
 ---
 title: Handling Gamma Correction
 description: Handling Gamma Correction
-ms.assetid: 477c5d57-a031-4d98-a89c-0420ed3007c2
 keywords:
 - gamma correction WDK DirectX 9.0
 ms.date: 04/20/2017

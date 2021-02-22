@@ -1,7 +1,6 @@
 ---
 title: Source Media for INF Files
 description: Source Media for INF Files
-ms.assetid: b8bb7115-acac-4364-a205-16816c52fdb0
 keywords:
 - INF files WDK device installations , source media
 - media WDK INF files

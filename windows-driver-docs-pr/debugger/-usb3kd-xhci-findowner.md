@@ -1,7 +1,6 @@
 ---
 title: usb3kd-xhci_findowner
 description: The usb3kd.xhci_findowner command finds the owner a common buffer.
-ms.assetid: 6AA3E41C-5838-4425-B1CE-37A13E8F755E
 keywords: ["usb3kd.xhci_findowner Windows Debugging"]
 ms.date: 10/18/2018
 topic_type:
@@ -123,14 +122,7 @@ The **!xhci\_findowner** command is especially useful when you have an address i
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

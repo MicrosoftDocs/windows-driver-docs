@@ -1,7 +1,6 @@
 ---
 title: Access Memory by Using a BUS_INTERFACE_STANDARD
 description: Access PCMCIA Attribute Memory by Using a BUS_INTERFACE_STANDARD Interface
-ms.assetid: 2696a9ca-38b5-47f2-9639-029bba1173b5
 keywords:
 - attribute memory WDK PCMCIA bus , BUS_INTERFACE_STANDARD interface
 - BUS_INTERFACE_STANDARD
@@ -21,15 +20,9 @@ A driver should use a BUS\_INTERFACE\_STANDARD interface if the overhead of an I
 
 A driver can use this method while running at IRQL &lt;= DISPTACH\_LEVEL.
 
-A driver usually obtains a BUS\_INTERFACE\_STANDARD interface during its initialization. The driver uses an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request to obtain the interface from the PCMCIA bus driver. The query interface request must be sent at IRQL PASSIVE\_LEVEL.
+A driver usually obtains a BUS\_INTERFACE\_STANDARD interface during its initialization. The driver uses an [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) request to obtain the interface from the PCMCIA bus driver. The query interface request must be sent at IRQL PASSIVE\_LEVEL.
 
 After the driver obtains the standard bus interface, the driver can call the interface routines **GetBusData** or **SetBusData** to access attribute memory.
 
  
-
- 
-
-
-
-
 

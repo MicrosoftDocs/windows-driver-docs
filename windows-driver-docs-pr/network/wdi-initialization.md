@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi device initialization
 description: This topic describes the initialization of the Wi-Fi device after power-on.
-ms.assetid: EDF04E40-C278-42CE-8E17-F5AB0C1651EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,15 +12,9 @@ This topic describes the initialization of the Wi-Fi device after power-on. On p
 
 ![wdi initialization sequence](images/wdi-initialization-sequence.png)
 
-1.  The IHV component is responsible for downloading the firmware to the adapter when the adapter is powered up. The exact mechanism to download the firmware is bus dependent. This operation is done in the context of the [*MiniportWdiOpenAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_open_adapter) call. This is an asynchronous operation. The host is responsible for ensuring that the adapter is fully initialized and ready to process commands before further commands are sent to it. The exact mechanism is interconnect dependent.
+1.  The IHV component is responsible for downloading the firmware to the adapter when the adapter is powered up. The exact mechanism to download the firmware is bus dependent. This operation is done in the context of the [*MiniportWdiOpenAdapter*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_open_adapter) call. This is an asynchronous operation. The host is responsible for ensuring that the adapter is fully initialized and ready to process commands before further commands are sent to it. The exact mechanism is interconnect dependent.
 2.  Once the adapter is initialized, the host queries the adapter for various Wi-Fi properties, set properties, and creates ports (MACs) as part of miniport initialization.
 3.  After the ports are created and initialized, the adapter can receive task and property commands.
 
  
-
- 
-
-
-
-
 

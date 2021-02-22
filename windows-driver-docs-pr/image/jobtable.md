@@ -1,7 +1,6 @@
 ---
 title: JobTable element
 description: The required JobTable element contains current and historical information about scan jobs.
-ms.assetid: 349ca443-5296-4200-884d-91fcdb222be4
 keywords: ["JobTable element Imaging Devices"]
 topic_type:
 - apiref

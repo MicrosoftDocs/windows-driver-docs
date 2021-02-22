@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID that is used to turn on and off face detection.
-ms.assetid: F503939D-D6EF-47BD-855B-4404E1AAA15C
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -103,7 +102,7 @@ The following table describes the flag capabilities.
 > MFT0 shall further attach the face information as a MF\_CAPTURE\_METADATA\_FACEROIS, the timestamp as a MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS, and the blink and/or smile information as a MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS on the sample.
 > PREVIEW, VIDEO, and PHOTO capabilities are optional. However, at least one of PREVIEW, VIDEO, and PHOTO capabilities must be supported if this control is supported.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>

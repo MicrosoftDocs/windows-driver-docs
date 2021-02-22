@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_CALLHOLD
 description: The KSPROPERTY\_TELEPHONY\_CALLHOLD property is used to control the hold state of a phone call.
-ms.assetid: C683A6AA-35E5-43D3-B882-B13B8A0A4043
 keywords: ["KSPROPERTY_TELEPHONY_CALLHOLD Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The **KSPROPERTY\_TELEPHONY\_CALLHOLD** property is used to control the hold sta
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -61,7 +60,7 @@ A **KSPROPERTY\_TELEPHONY\_CALLHOLD** property request returns **TRUE** if the c
 Remarks
 -------
 
-If you set the **KSPROPERTY\_TELEPHONY\_CALLHOLD** property with a value of **TRUE**, the phone call will be placed on hold. The expected behavior is that both transmission and reception will be muted. No data will be sent or received in this case. The audio driver will update the call state ([**TELEPHONY\_CALLSTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-telephony_callstate)) to **TELEPHONY\_CALLSTATE\_HOLD**. If you set the **KSPROPERTY\_TELEPHONY\_CALLHOLD** property with a value of **FALSE**, the phone call will be taken off of hold state, and the call state will be updated to **TELEPHONY\_CALLSTATE\_ENABLED**.
+If you set the **KSPROPERTY\_TELEPHONY\_CALLHOLD** property with a value of **TRUE**, the phone call will be placed on hold. The expected behavior is that both transmission and reception will be muted. No data will be sent or received in this case. The audio driver will update the call state ([**TELEPHONY\_CALLSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-telephony_callstate)) to **TELEPHONY\_CALLSTATE\_HOLD**. If you set the **KSPROPERTY\_TELEPHONY\_CALLHOLD** property with a value of **FALSE**, the phone call will be taken off of hold state, and the call state will be updated to **TELEPHONY\_CALLSTATE\_ENABLED**.
 
 Requirements
 ------------
@@ -90,12 +89,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

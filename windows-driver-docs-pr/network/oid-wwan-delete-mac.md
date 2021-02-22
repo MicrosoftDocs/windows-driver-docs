@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DELETE_MAC
 description: OID_WWAN_DELETE_MAC requests the miniport driver to delete the NDIS port specified in the NDIS_WWAN_MAC_INFO parameter.
-ms.assetid: 3C992E0D-132E-4687-B38E-31409E1A9F54
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DELETE_MAC Network Drivers Starting with Windows Vista
@@ -26,7 +25,7 @@ OID\_WWAN\_DELETE\_MAC requests sent to delete the default port will fail with t
 
 Upon receiving an OID\_WWAN\_DELETE\_MAC request, miniport drivers should deactivate the PDP context associated with the port, if it has not already been deactivated. This is because a surprise removal event could occur. Deactivating the PDP context at such time will ensure that the modem and the miniport driver remain in a good state.
 
-When the driver receives a surprise removal, the driver blocks and cancels all further OIDs. This means that the driver filters out OID\_WWAN\_DELETE\_MAC even though Windows sends a call with OID\_WWAN\_DELETE\_MAC as part of the [*FILTER\_DETACH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_detach) call.
+When the driver receives a surprise removal, the driver blocks and cancels all further OIDs. This means that the driver filters out OID\_WWAN\_DELETE\_MAC even though Windows sends a call with OID\_WWAN\_DELETE\_MAC as part of the [*FILTER\_DETACH*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_detach) call.
 
 Requirements
 ------------
@@ -54,9 +53,4 @@ Requirements
 [OID\_WWAN\_CREATE\_MAC](oid-wwan-create-mac.md)
 
  
-
- 
-
-
-
 

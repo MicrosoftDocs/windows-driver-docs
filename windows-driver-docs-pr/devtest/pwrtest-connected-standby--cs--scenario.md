@@ -1,7 +1,6 @@
 ---
 title: PwrTest Connected Standby Scenario
 description: The PwrTest Connected Standby Scenario (/cs) facilitates automated testing of connected standby transitions.
-ms.assetid: 2601603D-F9AF-4DEB-9A1B-F5A091A51B2B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ The PwrTest Connected Standby Scenario (**/cs**) facilitates automated testing o
 
 PwrTest logs the progress through the PDC phases and attempts to log platform idle transition counts if they are supported by the system. This is useful for diagnosing if a system is entering deep platform idle states, and if any software components are blocking the transition.
 
-This scenario requires the test system to support the *Always on Always connected* (AoAc) power capability (most SoC and ARM systems support this). This scenario also requires the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK. For more information, see[Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)). For information about WDTF, see [**Windows Device Testing Framework (WDTF) (Windows Drivers)**](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index).
+This scenario requires the test system to support the *Always on Always connected* (AoAc) power capability (most SoC and ARM systems support this). This scenario also requires the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK. For more information, see[Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), or [Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85)). For information about WDTF, see [**Windows Device Testing Framework (WDTF) (Windows Drivers)**](../wdtf/index.md).
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -153,11 +152,4 @@ The following table describes the XML elements that appear in the log file.
 [PwrTest Syntax](pwrtest-syntax.md)
 
  
-
- 
-
-
-
-
-
 

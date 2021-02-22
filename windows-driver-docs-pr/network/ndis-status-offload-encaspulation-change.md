@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE
 description: Miniport drivers use the NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE status indication to notify NDIS and overlying drivers that there has been change in the encapsulation settings.
-ms.assetid: 2db2a42e-85a2-41a6-b6ab-13b493057648
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE Network Drivers Starting with Windows Vista
@@ -16,9 +15,9 @@ Miniport drivers use the NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE status ind
 Remarks
 -------
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation) structure. NDIS\_OFFLOAD\_ENCAPSULATION specifies the encapsulation settings.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation) structure. NDIS\_OFFLOAD\_ENCAPSULATION specifies the encapsulation settings.
 
-For more information about encapsulation settings, see [OID\_OFFLOAD\_ENCAPSULATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-offload-encapsulation).
+For more information about encapsulation settings, see [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md).
 
 Requirements
 ------------
@@ -43,16 +42,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD\_ENCAPSULATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation)
+[**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation)
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
-[OID\_OFFLOAD\_ENCAPSULATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-offload-encapsulation)
-
- 
+[OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md)
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: SM\_GetLUNStatistics function
 description: The SMHBA\_GetLUNStatistics method returns traffic statistics for a specific SCSI logical unit that is provided by using the FCP protocol or SSP protocol on a specific local HBA.
-ms.assetid: c4e85c59-8b8d-4b68-9ab7-adf1e12fc50c
 keywords: ["SM_GetLUNStatistics function Storage Devices"]
 topic_type:
 - apiref
@@ -35,13 +34,13 @@ Parameters
 ----------
 
 *Lunit*   
-A structure of type [**HBA\_ScsiId**](https://msdn.microsoft.com/library/windows/hardware/ff557191) that contains information that is used by the operating system to identify a SCSI logical unit.
+A structure of type [**HBA\_ScsiId**](/previous-versions/ff557191(v=vs.85)) that contains information that is used by the operating system to identify a SCSI logical unit.
 
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a SM\_GetLUNStatistics\_OUT structure.
 
 *ProtocolStatistics*   
-A structure of type [**MS\_SMHBA\_PROTOCOLSTATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics) that is used to report protocol traffic statistics on a port.
+A structure of type [**MS\_SMHBA\_PROTOCOLSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics) that is used to report protocol traffic statistics on a port.
 
 Return value
 ------------
@@ -78,16 +77,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetLUNStatistics\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getlunstatistics_in)
+[**SM\_GetLUNStatistics\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getlunstatistics_in)
 
-[**SM\_GetLUNStatistics\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getlunstatistics_out)
-
- 
+[**SM\_GetLUNStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getlunstatistics_out)
 
  
-
-
-
-
-
 

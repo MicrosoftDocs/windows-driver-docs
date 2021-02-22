@@ -1,7 +1,6 @@
 ---
 title: Overriding Monitor EDIDs with an INF
 description: With an INF file you can override the Extended Display Identification Data (EDID) of any monitor.
-ms.assetid: AA7DC29B-54D5-461A-8252-600D84F0F581
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -62,13 +61,13 @@ To update an EDID by using an INF:
 ## <span id="Overriding_an_EDID_with_an_INF"></span><span id="overriding_an_edid_with_an_inf"></span><span id="OVERRIDING_AN_EDID_WITH_AN_INF"></span>Overriding an EDID with an INF
 
 
-To override an EDID, include an [**AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in the INF for each block that you want to override, in the following format:
+To override an EDID, include an [**AddReg directive**](../install/inf-addreg-directive.md) in the INF for each block that you want to override, in the following format:
 
 ```inf
-HKR, EDID_OVERRIDE, BlockNumber, Byte 1, Byte 2, Byte 3, Byte 4,...
+HKR, EDID_OVERRIDE, BlockNumber, 0x1, Byte 1, Byte 2, Byte 3, Byte 4,...
 ```
 
-The block number is followed by 128 hexadecimal integers that contain the binary EDID data.
+The block number is a zero-indexed value of the EDID block to override. The data bytes should be formatted as 128 hexadecimal integers that contain the binary EDID data. The "0x1" value after the block number is a flag indicating that this registry value contains binary data (FLG_ADDREG_BINVALUETYPE).
 
 Manufacturers must update only those EDID blocks that are incorrect. The system obtains the remaining blocks from EEPROM. The following example shows the relevant sections of an INF that updates EDID blocks 0, 4, and 5. The monitor driver obtains blocks 1 - 3 and any extension blocks that follow block 5 from EEPROM:
 
@@ -83,7 +82,7 @@ HKR, EDID_OVERRIDE, 5, 1, 24, 5C, ..., 2D
 ...
 ```
 
-For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/hid/creating-an-inf-file).
+For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](../hid/creating-an-inf-file.md).
 
 ```inf
 ; monsamp.INF
@@ -189,10 +188,4 @@ MS_EDID_OVERRIDE-1="MS EDID Override"
 ```
 
  
-
- 
-
-
-
-
 

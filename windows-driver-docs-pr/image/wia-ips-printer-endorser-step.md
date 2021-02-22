@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_STEP
 description: By default the imprinter/endorser imprints or endorses on each document page that is scanned.
-ms.assetid: A4455204-6502-4BE7-9EE3-B5616089FA05
 keywords: ["WIA_IPS_PRINTER_ENDORSER_STEP Imaging Devices"]
 topic_type:
 - apiref

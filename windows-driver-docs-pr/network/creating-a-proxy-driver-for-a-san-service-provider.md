@@ -1,7 +1,6 @@
 ---
 title: Creating a Proxy Driver for a SAN Service Provider
 description: Creating a Proxy Driver for a SAN Service Provider
-ms.assetid: 350c21a3-98e3-48a2-8403-68de97314933
 keywords:
 - Windows Sockets Direct WDK , proxy drivers
 - proxy drivers WDK SANs
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-A proxy driver for a SAN service provider is a kernel-mode driver that performs tasks required by the Windows Sockets switch and the SAN service provider. Such tasks include managing memory and determining the IP addresses of network interface controllers (NICs) that are under the proxy driver's control. The proxy driver is not required to be a Windows Driver Model (WDM) driver. That is, it is not required to support Plug and Play or power management. For more information about developing a kernel-mode driver, see [Kernel-Mode Driver Components](https://docs.microsoft.com/windows-hardware/drivers/kernel/kernel-mode-driver-components).
+A proxy driver for a SAN service provider is a kernel-mode driver that performs tasks required by the Windows Sockets switch and the SAN service provider. Such tasks include managing memory and determining the IP addresses of network interface controllers (NICs) that are under the proxy driver's control. The proxy driver is not required to be a Windows Driver Model (WDM) driver. That is, it is not required to support Plug and Play or power management. For more information about developing a kernel-mode driver, see [Kernel-Mode Driver Components](../kernel/kernel-mode-driver-components.md).
 
 Different vendors might use different underlying technologies to implement their SAN network interface controllers (NICs), therefore Windows Sockets Direct does not specify an interface between a SAN service provider and its proxy driver or between the proxy driver and a SAN transport.
 
@@ -40,10 +39,4 @@ The following sections describe how to create a proxy driver for a SAN service p
 [Implementing IOCTLs for a SAN Service Provider](implementing-ioctls-for-a-san-service-provider.md)
 
  
-
- 
-
-
-
-
 

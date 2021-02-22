@@ -1,7 +1,6 @@
 ---
 title: Setting the MofImagePath Registry Value
 description: Setting the MofImagePath Registry Value
-ms.assetid: b8c43cd3-d4f4-4f1e-b692-8005d845d64a
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "MofImagePath"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -41,12 +40,7 @@ AddReg=Driver_AddReg
 HKR,,MofImagePath,,DriverMof.dll 
 ```
 
-See [**INF DDInstall.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-services-section) and [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) for details.
+See [**INF DDInstall.Services Section**](../install/inf-ddinstall-services-section.md) and [**INF AddReg Directive**](../install/inf-addreg-directive.md) for details.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_USB_HUB
 description: GUID_DEVINTERFACE_USB_HUB
-ms.assetid: 899b77ad-fa98-4078-9207-69b422e3d0d0
 keywords: ["GUID_DEVINTERFACE_USB_HUB Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_USB_HUB
 
 
-The GUID_DEVINTERFACE_USB_HUB [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [USB](https://docs.microsoft.com/windows-hardware/drivers/) hub devices.
+The GUID_DEVINTERFACE_USB_HUB [device interface class](./overview-of-device-interface-classes.md) is defined for [USB](../index.yml) hub devices.
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 The system-supplied USB port driver registers instances of GUID_DEVINTERFACE_USB_HUB to notify the operating system and applications of the presence of the root hub of host controller devices. The system-supplied USB hub driver registers instances of this class for additional hub devices, if any, that are supported by the host controller.
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](https://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USBHUB**](guid-class-usbhub.md) to be notified of instances of this device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](/samples/browse/). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USBHUB**](guid-class-usbhub.md) to be notified of instances of this device interface class.
 
 You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
 
@@ -78,13 +77,4 @@ Requirements
 [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md)
 
 [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
-
- 
-
- 
-
-
-
-
-
 

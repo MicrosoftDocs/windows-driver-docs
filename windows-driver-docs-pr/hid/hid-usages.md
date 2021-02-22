@@ -1,7 +1,6 @@
 ---
 title: HID Usages
 description: HID usages identify the intended use of HID controls and what the controls actually measure.
-ms.assetid: 84fed314-3554-4291-b51c-734d874a4bab
 keywords:
 - Human Interface Devices WDK , usages
 - HID WDK , usages
@@ -54,15 +53,36 @@ For more information about how to determine the usages that a HIDClass device su
 
 [Interpreting HID Reports](interpreting-hid-reports.md)
 
-For detailed information about industry standard HID usage, see the Universal Serial Bus (USB) specification *HID Usage Tables* that is located at the [USB Implementers Forum](https://go.microsoft.com/fwlink/?linkid=830142) website. (This resource may not be available in some languages and countries.)
+For detailed information about industry standard HID usage, see the Universal Serial Bus (USB) specification **HID Usage Tables** that is located at the [USB Implementers Forum](https://www.usb.org/hid) website.
 
 ### Usage Page
 
-HID usages are organized into *usage pages* of related controls. A specific control usage is defined by its usage page, a [usage ID](#usage-id), a name, and a description. Examples of usage pages include Generic Desktop Controls, Game Controls, LEDs, Button, and so on. Examples of controls that are listed on the Generic Desktop Controls usage page include pointers, mouse and keyboard devices, joysticks, and so on. A usage page value is a 16-bit unsigned value.
+HID usages are organized into *usage pages* of related controls. A specific control usage is defined by its usage page, a [usage ID](#usage-id), a name, and a description. A usage page value is a 16-bit unsigned value.
+
+Examples of usage pages include:
+
+| Page ID | Page Name                | *hidusage.h* constant  |
+|:-------:|--------------------------|------------------------|
+| 0x01    | Generic Desktop Controls | HID_USAGE_PAGE_GENERIC |
+| 0x05    | Game Controls            | HID_USAGE_PAGE_GAME    |
+| 0x08    | LEDs                     | HID_USAGE_PAGE_LED     |
+| 0x09    | Button                   | HID_USAGE_PAGE_BUTTON  |
 
 ### Usage ID
 
 In the context of a usage page, a valid usage identifier, or *usage ID*, indicates a usage in a usage page. A usage ID of zero is reserved. A usage ID value is an unsigned 16-bit value.
+
+Examples of controls that are listed on the **Generic Desktop Controls** usage page:
+
+| Usage ID | Usage Name            | *hidusage.h* constant                    |
+|:--------:|-----------------------|------------------------------------------|
+| 0x01     | Pointer               | HID_USAGE_GENERIC_POINTER                |
+| 0x02     | Mouse                 | HID_USAGE_GENERIC_MOUSE                  |
+| 0x04     | Joystick              | HID_USAGE_GENERIC_JOYSTICK               |
+| 0x05     | Game Pad              | HID_USAGE_GENERIC_GAMEPAD                |
+| 0x06     | Keyboard              | HID_USAGE_GENERIC_KEYBOARD               |
+| 0x07     | Keypad                | HID_USAGE_GENERIC_KEYPAD                 |
+| 0x08     | Multi-axis Controller | HID_USAGE_GENERIC_MULTI_AXIS_CONTROLLER  |
 
 ### Extended Usage
 

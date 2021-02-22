@@ -1,7 +1,6 @@
 ---
 title: DIF_DESTROYWIZARDDATA
 description: DIF_DESTROYWIZARDDATA
-ms.assetid: 40b7beb5-3e41-46bf-a9ad-b20a02ed6c9c
 keywords: ["DIF_DESTROYWIZARDDATA Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,8 +1,7 @@
 ---
 title: Location driver guidelines for power and performance
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
-ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
-ms.date: 04/20/2017
+ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +15,7 @@ Location sensors must track the number of connected applications, and must track
 
 When the number of connected clients is zero, the location sensor should enter the lowest possible power state, preferably D3. When an event indicates that a client is connected, the sensor should exit the low-power state and acquire data.
 
-Also, if the location device contains a radio, like a GPS location sensor, then the radio state must also be tracked using [Radio Management](https://docs.microsoft.com/previous-versions/windows/hardware/radio/hh406615(v=vs.85)). The driver writer must create a Radio Management implementation that communicates with the driver to set the radio state. An example of the Radio Management implementation and how to communicate with the driver is in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md).
+Also, if the location device contains a radio, like a GPS location sensor, then the radio state must also be tracked using [Radio Management](/previous-versions/windows/hardware/radio/hh406615(v=vs.85)). The driver writer must create a Radio Management implementation that communicates with the driver to set the radio state. An example of the Radio Management implementation and how to communicate with the driver is in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md).
 
 When tracking connected clients and radio state, the location sensor should enter the lowest possible power state, preferably D3, at any time there is not a connected client while the radio is on. The diagram below illustrates a state machine for connected clients, radio state, and the suggested corresponding device state.
 
@@ -24,16 +23,14 @@ When tracking connected clients and radio state, the location sensor should ente
 
 The following table provides another view of the various input combinations and the resulting outputs (including power state).
 
-|               |             |                  |                   |            |               |             |
-|---------------|-------------|------------------|-------------------|------------|---------------|-------------|
-| Inputs        |             |                  |                   | Outputs    |               |             |
-| Client exists | Radio state | CRI              | Position reported | ASIC state | Sensor state  | Power state |
-| No            | Any         | Any              | Any               | Off        | N/A           | D3          |
-| Yes           | On          | &lt;=120 seconds | No                | On         | Initializing  | D0          |
-| Yes           | On          | &lt;=120 seconds | Yes               | On         | Ready         | D0          |
-| Yes           | Off         | Any              | Any               | Off        | Not available | D3          |
-| Yes           | On          | &gt;120 seconds  | Any               | Off        | Ready         | D3          |
-| Yes           | On          | &gt;120 seconds  | Any               | On         | Ready         | D0          |
+| Client exists (input) | Radio state (input) | CRI (input) | Position reported (input) | ASIC state (output) | Sensor state (output) | Power state (output) |
+|--|--|--|--|--|--|--|
+| No | Any | Any | Any | Off | N/A | D3 |
+| Yes | On | <=120 seconds | No | On | Initializing | D0 |
+| Yes | On | <=120 seconds | Yes | On | Ready | D0 |
+| Yes | Off | Any | Any | Off | Not available | D3 |
+| Yes | On | >120 seconds | Any | Off | Ready | D3 |
+| Yes | On | >120 seconds | Any | On | Ready | D0 |
 
 The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK provides an example of a driver that tracks the number of connected clients and the radio state.
 
@@ -41,7 +38,7 @@ The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in
 
 Applications that consume location data by subscribing to events request the maximum frequency for data-updated events by setting the SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL property. To conserve power, your driver should send data reports no more frequently than the lowest requested report interval.
 
-For more information on how to track values for each application, see [Filtering data](https://docs.microsoft.com/windows-hardware/drivers/sensors/filtering-data). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
+For more information on how to track values for each application, see [Filtering data](../sensors/filtering-data.md). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
 
 ## Tracking Desired Accuracy
 
@@ -57,7 +54,7 @@ If any app requests DESIRED\_ACCURACY\_HIGH, the sensor should deliver the highe
 
 ## Detecting Idle States
 
-Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or Global Navigation Satellite System (GNSS) device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-idle-power-down-in-umdf-drivers) for more info.
+Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or Global Navigation Satellite System (GNSS) device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](../wdf/supporting-idle-power-down-in-umdf-drivers.md) for more info.
 
 ## Position Injection for GPS and Global Navigation Satellite System (GNSS)
 
@@ -71,12 +68,12 @@ If the Global Navigation Satellite System (GNSS) driver does not get a position 
 > A persistent connection to the Windows Location Provider (or any other sensor through the Sensor API) should not be kept open.
 
 > [!IMPORTANT]
-> Do not instantiate [**ILocation**](https://docs.microsoft.com/windows/desktop/api/locationapi/nn-locationapi-ilocation) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](https://docs.microsoft.com/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager)).
+> Do not instantiate [**ILocation**](/windows/win32/api/locationapi/nn-locationapi-ilocation) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](/windows/win32/api/sensorsapi/nn-sensorsapi-isensormanager)).
 
 > [!NOTE]
 > Sensors should not get data from location sensors of the same type. For instance, a triangulation sensor should not use data from other triangulation sensors.
 
-To access triangulation sensors, call [**ISensorManager::GetSensorByType**](https://docs.microsoft.com/windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](https://docs.microsoft.com/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
+To access triangulation sensors, call [**ISensorManager::GetSensorByType**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
 
 > [!NOTE]
 > The Windows Location Provider does not provide any guarantee of accuracy or availability.
@@ -87,4 +84,4 @@ The use of the Sensor API for sensor-to-sensor communication to enable location 
 
 [Writing a Location Sensor Driver](writing-a-location-sensor-driver.md)  
 
-[The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  
+[The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)

@@ -1,9 +1,8 @@
 ---
 title: bp, bu, bm (Set Breakpoint)
 description: The bp, bu, and bm commands set one or more software breakpoints. You can combine locations, conditions, and options to set different kinds of software breakpoints.
-ms.assetid: 77d095fe-06d1-4842-ad49-8420ab4d5d72
 keywords: ["bp, bu, bm (Set Breakpoint) Windows Debugging"]
-ms.date: 05/28/2019
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -54,9 +53,6 @@ Specifies breakpoint options. You can specify any number of the following option
 
 <span id="_1"></span>**/1**  
 Creates a "one-shot" breakpoint. After this breakpoint is triggered, it is deleted from the breakpoint list.
-
-<span id="_f_PredNum"></span><span id="_f_prednum"></span><span id="_F_PREDNUM"></span>**/f** *PredNum*  
-(Itanium-based only, user mode only) Specifies a predicate number. The breakpoint is predicated with the corresponding predicate register. (For example, **bp /f 4** *address* sets a breakpoint that is predicated with the **p4** predicate register.)
 
 <span id="_p_EProcess"></span><span id="_p_eprocess"></span><span id="_P_EPROCESS"></span>**/p** *EProcess*  
 (Kernel-mode only) Specifies a process that is associated with this breakpoint. *EProcess* should be the actual address of the EPROCESS structure, not the PID. The breakpoint is triggered only if it is encountered in the context of this process.

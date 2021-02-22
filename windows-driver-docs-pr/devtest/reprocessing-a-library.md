@@ -1,7 +1,6 @@
 ---
 title: Reprocessing a Library
 description: Reprocessing a Library
-ms.assetid: 8d9f5890-cbe1-4240-ab23-76b6008fe686
 keywords:
 - library WDK Static Driver Verifier , reprocessing
 ms.date: 04/20/2017

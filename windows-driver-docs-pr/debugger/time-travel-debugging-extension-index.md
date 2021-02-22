@@ -41,7 +41,7 @@ Successfully created the index in 0ms.
 Use `!index -status` to report the status of the trace index.
 
 ```dbgcmd
-0:000> index -status
+0:000> !index -status
 Index file loaded.
 ```
 **-force**
@@ -49,7 +49,7 @@ Index file loaded.
 Use `!index -force` to reindex the trace even if an unloadable index file exists on disk.
 
 ```dbgcmd
-0:000> index -force
+0:000> !index -force
 Successfully created the index in 152ms.
 ```
 

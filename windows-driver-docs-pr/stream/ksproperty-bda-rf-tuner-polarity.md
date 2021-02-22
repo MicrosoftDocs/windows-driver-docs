@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY to control the polarity setting of the tuner node.
-ms.assetid: 6778b4ac-2444-4e27-ab80-5802dda09fdd
 keywords: ["KSPROPERTY_BDA_RF_TUNER_POLARITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -83,16 +82,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**Polarization**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff567780(v=vs.85))
-
- 
+[**Polarization**](/previous-versions/windows/hardware/drivers/ff567780(v=vs.85))
 
  
-
-
-
-
-
 

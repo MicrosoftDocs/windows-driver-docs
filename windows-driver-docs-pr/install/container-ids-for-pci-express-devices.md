@@ -1,7 +1,6 @@
 ---
 title: Container IDs for PCI Express Devices
 description: Container IDs for PCI Express Devices
-ms.assetid: ff86def3-a278-4f7b-a394-42f608f8993d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

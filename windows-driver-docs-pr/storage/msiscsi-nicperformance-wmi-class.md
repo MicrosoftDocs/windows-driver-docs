@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_NICPerformance WMI Class
 description: MSiSCSI\_NICPerformance WMI Class
-ms.assetid: e5894b20-8ea7-46ec-9960-3d9891b06ac4
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -51,13 +50,7 @@ class MSiSCSI_NICPerformance : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICPerformance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_nicperformance) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICPerformance**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_nicperformance) data structure.
 
  
-
- 
-
-
-
-
 

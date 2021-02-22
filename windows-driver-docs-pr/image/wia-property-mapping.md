@@ -1,7 +1,6 @@
 ---
 title: WIA Property Mapping
 description: WIA Property Mapping
-ms.assetid: decd46b1-6a03-4c48-8b61-12d506cd419e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

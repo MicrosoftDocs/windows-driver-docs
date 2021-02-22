@@ -1,7 +1,6 @@
 ---
 title: Client-Side Rendering
 description: Client-Side Rendering
-ms.assetid: 7b67de2a-b5aa-4d8c-9b2c-9caeffdb71c3
 keywords:
 - print jobs WDK , client-side rendering
 - rendering print jobs WDK

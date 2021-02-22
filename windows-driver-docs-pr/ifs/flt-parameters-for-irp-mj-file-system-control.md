@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_FILE_SYSTEM_CONTROL.
-ms.assetid: d90b9f23-9fae-46e8-b68c-1ba11b3fa17a
 keywords: ["FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union
 
-Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md).
+Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md).
 
 ## Syntax
 
@@ -87,16 +86,16 @@ Length, in bytes, of the buffer that the **Neither.InputBuffer**, **Buffered.Sys
 **FsControlCode**  
 FSCTL function code to be passed to the file system, file system filter, or minifilter driver for the target device.
 
-For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation. (This resource may not be available in some languages and countries.)
+For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation. (This resource may not be available in some languages and countries.)
 
 **Neither**  
-Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_NEITHER. For more information about buffering methods, see [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_NEITHER. For more information about buffering methods, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **InputBuffer**  
-User-mode virtual address of the input buffer that the original requester of the operation supplied. The I/O Manager and Filter Manager do not validate these addresses. To ensure that user-space addresses are valid, the minifilter must use routines such as [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread), [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), and [**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), enclosing all buffer references in **try/except** blocks. For more information, see [Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o) and [Errors in Referencing User-Space Addresses](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-referencing-user-space-addresses) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+User-mode virtual address of the input buffer that the original requester of the operation supplied. The I/O Manager and Filter Manager do not validate these addresses. To ensure that user-space addresses are valid, the minifilter must use routines such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread), [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), and [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), enclosing all buffer references in **try/except** blocks. For more information, see [Using Neither Buffered Nor Direct I/O](../kernel/using-neither-buffered-nor-direct-i-o.md) and [Errors in Referencing User-Space Addresses](../kernel/errors-in-referencing-user-space-addresses.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **OutputBuffer**  
-User-mode virtual address of the output buffer that the original requester of the operation supplied. The I/O Manager and Filter Manager do not validate these addresses. To ensure that user-space addresses are valid, the minifilter must use routines such as [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread), [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), and [**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), enclosing all buffer references in **try/except** blocks. For more information, see [Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o) and [Errors in Referencing User-Space Addresses](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-referencing-user-space-addresses) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+User-mode virtual address of the output buffer that the original requester of the operation supplied. The I/O Manager and Filter Manager do not validate these addresses. To ensure that user-space addresses are valid, the minifilter must use routines such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread), [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), and [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), enclosing all buffer references in **try/except** blocks. For more information, see [Using Neither Buffered Nor Direct I/O](../kernel/using-neither-buffered-nor-direct-i-o.md) and [Errors in Referencing User-Space Addresses](../kernel/errors-in-referencing-user-space-addresses.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **Neither.OutputBuffer** is optional and can be NULL if a MDL is provided in **Neither.OutputMdlAddress**. See **Remarks**.
 
@@ -104,26 +103,26 @@ User-mode virtual address of the output buffer that the original requester of th
 Address of a memory descriptor list (MDL) that describes the buffer that the **Neither.OutputBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **Neither.OutputBuffer**.
 
 **Buffered**  
-Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_BUFFERED. For more information about buffering methods, see [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_BUFFERED. For more information about buffering methods, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **SystemBuffer**  
-Address of the system-allocated buffer for the operation. In METHOD_BUFFERED I/O, this buffer is used for both input and output. For more information, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+Address of the system-allocated buffer for the operation. In METHOD_BUFFERED I/O, this buffer is used for both input and output. For more information, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **Direct**  
-Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_IN_DIRECT or METHOD_OUT_DIRECT. For more information about buffering methods, see [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes) in the *Kernel Mode Architecture Guide*.
+Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_IN_DIRECT or METHOD_OUT_DIRECT. For more information about buffering methods, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) in the *Kernel Mode Architecture Guide*.
 
 **InputSystemBuffer**  
-Address of the input buffer for the operation. This buffer is locked down by the operating system so that it is safe to access from kernel mode. For more information, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+Address of the input buffer for the operation. This buffer is locked down by the operating system so that it is safe to access from kernel mode. For more information, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **OutputBuffer**  
-User-mode virtual address of the output buffer that the original requester of the operation supplied. In direct I/O, unlike METHOD_NEITHER I/O, the operating system locks down this buffer so that it is safe to access from kernel mode, as long as the minifilter is in the same process context as the original requester of the I/O operation. (Otherwise it must call [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) to get the system address from the MDL that the **OutputMdlAddress** member points to.) For more information, see [Using Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o) and [Errors in Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-direct-i-o) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
+User-mode virtual address of the output buffer that the original requester of the operation supplied. In direct I/O, unlike METHOD_NEITHER I/O, the operating system locks down this buffer so that it is safe to access from kernel mode, as long as the minifilter is in the same process context as the original requester of the I/O operation. (Otherwise it must call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to get the system address from the MDL that the **OutputMdlAddress** member points to.) For more information, see [Using Direct I/O](../kernel/using-direct-i-o.md) and [Errors in Direct I/O](../kernel/errors-in-direct-i-o.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
 **OutputMdlAddress**  
 Address of a memory descriptor list (MDL) that describes the buffer that the **Direct.OutputBuffer** member points to. This member is required and cannot be **NULL**.
 
 ## Remarks
 
-The [**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md) operations contains the parameters for a file-system-control-information operation represented by a callback data ([**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md) operations contains the parameters for a file-system-control-information operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
 If both a **Neither.OutputBuffer** and **Neither.MdlAddress** buffer are provided, it is recommended that minifilters use the MDL.
 
@@ -133,40 +132,39 @@ IRP_MJ_FILE_SYSTEM_CONTROL is an IRP-based operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | Fltkernel.h (include Fltkernel.h) |
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 
-[**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
+[**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT_IS_FASTIO_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
 
-[**FLT_IS_FS_FILTER_OPERATION**](https://docs.microsoft.com/previous-versions/ff544648(v=vs.85))
+[**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 
-[**FLT_IS_IRP_OPERATION**](https://docs.microsoft.com/previous-versions/ff544654(v=vs.85))
+[**FLT_IS_IRP_OPERATION**](/previous-versions/ff544654(v=vs.85))
 
-[**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**IoBuildAsynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest)
+[**IoBuildAsynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest)
 
-[**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
+[**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
 
-[**IoVerifyVolume**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioverifyvolume)
+[**IoVerifyVolume**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioverifyvolume)
 
 [**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md)
 
-[**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)
+[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
 
-[**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages)
+[**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages)
 
-[**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread)
+[**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread)
 
-[**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite)
+[**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))

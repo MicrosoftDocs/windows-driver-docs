@@ -1,7 +1,6 @@
 ---
 title: mps
 description: The mps extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
-ms.assetid: b6ee2eac-ef3c-403a-83ca-fe45506a8c4e
 keywords: ["mps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

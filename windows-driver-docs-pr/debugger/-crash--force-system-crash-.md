@@ -1,7 +1,6 @@
 ---
 title: .crash (Force System Crash)
 description: The .crash command causes the target computer to issue a bug check.
-ms.assetid: 625d174d-7011-4b15-aad7-1b39aa3742a4
 keywords: [".crash (Force System Crash) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

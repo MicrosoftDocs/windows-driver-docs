@@ -1,14 +1,13 @@
 ---
 title: Branding Control Panel with Bitmaps or Icons
 description: Branding Control Panel with Bitmaps or Icons
-ms.assetid: 1520cf9e-6813-41aa-aa88-39a1a6c27f74
 keywords:
 - audio adapters WDK , control-panel branding
 - adapter drivers WDK audio , control-panel branding
 - Port Class audio adapters WDK , control-panel branding
 - control-panel branding WDK audio
 - branding device controls WDK audio
-- thrid-party branding WDK audio
+- third-party branding WDK audio
 - vendor branding WDK audio
 - logo branding WDK audio
 - icons WDK audio
@@ -67,11 +66,11 @@ The branding information is stored in the registry in a **Branding** subkey unde
 
  
 
-These values are added to the registry by directives within the add-registry-section (see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)) of the INF file that installs the device driver. Control Panel uses defaults for any values that are missing from the **Branding** subkey.
+These values are added to the registry by directives within the add-registry-section (see [**INF AddReg Directive**](../install/inf-addreg-directive.md)) of the INF file that installs the device driver. Control Panel uses defaults for any values that are missing from the **Branding** subkey.
 
 The "bitmap" logo appears to the left of the proprietary device name at the top of the **Volume** page. The "icon" logo appears in the top-left corner of the SndVol32 control menu.
 
-The proprietary device name that appears in the previously mentioned pages is the friendly name of the device. This friendly name is specified by a directive in the add-registry-section of the INF file that installs the device. This directive contains the keyword "FriendlyName", as shown in the example in [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In Windows XP, the **Volume** page and SndVol32 display only the first 31 characters of the name string. Longer strings are truncated. In Windows Vista and later versions of Windows, this 31-character restriction is removed when the device name is displayed in Control Panel. When you use APIs that were supported in versions of Windows earlier than Windows Vista, for example [MCI\_GetDevCaps](https://go.microsoft.com/fwlink/p/?linkid=149692), the 31-character limit still applies to the device name that you provide to the API.
+The proprietary device name that appears in the previously mentioned pages is the friendly name of the device. This friendly name is specified by a directive in the add-registry-section of the INF file that installs the device. This directive contains the keyword "FriendlyName", as shown in the example in [**INF AddReg Directive**](../install/inf-addreg-directive.md). In Windows XP, the **Volume** page and SndVol32 display only the first 31 characters of the name string. Longer strings are truncated. In Windows Vista and later versions of Windows, this 31-character restriction is removed when the device name is displayed in Control Panel. When you use APIs that were supported in versions of Windows earlier than Windows Vista, for example [MCI\_GetDevCaps](/windows/win32/multimedia/mci-getdevcaps), the 31-character limit still applies to the device name that you provide to the API.
 
 **Important**   In Windows Vista and later versions of Windows, the use of bitmap images for third-party branding is no longer supported. Third-party audio driver developers who want to brand their audio device controls must use icons. The supported pixel dimensions for these icons are 32x32 or 48x48.
 
@@ -91,7 +90,7 @@ These directives add control-panel branding information to the registry. HKR rep
 
 The example directive for the **icon** value can be changed to use the "imagefile" format, but in this case the string value should contain the path name of a file with an .ico file name extension.
 
-In the case of the "file,resourceid" format, the control-panel software searches the same list of the search paths as the **LoadLibrary** function (described in the Microsoft Windows SDK documentation). If this path list does not contain the file, the software also searches the drivers directory (see [**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section)). This format allows the images to be easily stored in the driver file itself without requiring that absolute path names be specified in the INF file.
+In the case of the "file,resourceid" format, the control-panel software searches the same list of the search paths as the **LoadLibrary** function (described in the Microsoft Windows SDK documentation). If this path list does not contain the file, the software also searches the drivers directory (see [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md)). This format allows the images to be easily stored in the driver file itself without requiring that absolute path names be specified in the INF file.
 
 ### <span id="example_2"></span><span id="EXAMPLE_2"></span> Example 2
 
@@ -103,9 +102,4 @@ The following example applies to Windows Vista and later versions of Windows. Th
 ```
 
  
-
- 
-
-
-
 

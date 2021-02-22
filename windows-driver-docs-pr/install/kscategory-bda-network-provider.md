@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_NETWORK_PROVIDER
 description: KSCATEGORY_BDA_NETWORK_PROVIDER
-ms.assetid: a73f7ea3-19bf-4328-a96f-f28ee91db242
 keywords: ["KSCATEGORY_BDA_NETWORK_PROVIDER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_NETWORK_PROVIDER
 
 
-The KSCATEGORY_BDA_NETWORK_PROVIDER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a network provider in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index) (BDA).
+The KSCATEGORY_BDA_NETWORK_PROVIDER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a network provider in the [broadcast driver architecture](/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_PROVIDER to indicate to the operating system that the devices support a BDA network provider filter.
 
-For more information, see [BDA Filter Category GUIDs](https://docs.microsoft.com/windows-hardware/drivers/stream/bda-filter-category-guids).
+For more information, see [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
 Requirements
 ------------
@@ -73,10 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ENABLE_WAKE_EVENTS
 description: WDI_TLV_ENABLE_WAKE_EVENTS is a TLV that contains the enabled wake events.
-ms.assetid: 5F348D9A-5575-46EE-A524-687E9D030754
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ENABLE_WAKE_EVENTS Network Drivers Starting with Windows Vista
@@ -28,10 +27,10 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type   | Description                                                                                                                                                          |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | Specifies the enabled wake-on-LAN packet patterns using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).EnabledWoLPacketPatterns. |
-| UINT32 | Specifies the enabled protocol offloads using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).EnabledProtocolOffloads.            |
-| UINT32 | Specifies the wake-up flags using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).WakeUpFlags.                                    |
-| UINT32 | Specifies the media-specific wake up events using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).MediaSpecificWakeUpEvents.      |
+| UINT32 | Specifies the enabled wake-on-LAN packet patterns using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).EnabledWoLPacketPatterns. |
+| UINT32 | Specifies the enabled protocol offloads using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).EnabledProtocolOffloads.            |
+| UINT32 | Specifies the wake-up flags using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).WakeUpFlags.                                    |
+| UINT32 | Specifies the media-specific wake up events using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).MediaSpecificWakeUpEvents.      |
 
  
 
@@ -60,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

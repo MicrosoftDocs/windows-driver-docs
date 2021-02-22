@@ -1,7 +1,6 @@
 ---
 title: CancelJobRequest element
 description: The required CancelJobRequest operation enables a client to cancel a scan job.
-ms.assetid: 781fae32-2827-48d8-8aed-7f437326919d
 keywords: ["CancelJobRequest element Imaging Devices"]
 topic_type:
 - apiref

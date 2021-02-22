@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_SEND_CONFIRM
 description: WDI_TLV_SAE_SEND_CONFIRM is a TLV that contains the Send Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request.
-ms.assetid: F2251F48-7EED-460B-9EFD-554451E1172B
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_SEND_CONFIRM Network Drivers Starting with Windows Vista
@@ -31,8 +30,6 @@ The size (in bytes) of a UINT16.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

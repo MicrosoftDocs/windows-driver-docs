@@ -1,7 +1,6 @@
 ---
 title: Intel's HD Audio Architecture
 description: Intel's HD Audio Architecture
-ms.assetid: 86cba795-847c-4f54-93f8-e34ae73dc708
 keywords:
 - HD Audio, architecture
 - High Definition Audio (HD Audio), architecture
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Intel's HD Audio Architecture
 
 
-The Intel High Definition Audio Specification (see the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website) describes an audio hardware architecture that is being developed as the successor to the Intel AC'97 codec and controller specification. The operating system's UAA driver components can service an audio solution that exposes the HD Audio register set and connects to the system's internal bus without requiring a solution-specific driver from the hardware vendor.
+The Intel High Definition Audio Specification (see the [Intel HD Audio](https://www.intel.com/content/www/us/en/standards/intel-standards-and-initiatives.html) website) describes an audio hardware architecture that is being developed as the successor to the Intel AC'97 codec and controller specification. The operating system's UAA driver components can service an audio solution that exposes the HD Audio register set and connects to the system's internal bus without requiring a solution-specific driver from the hardware vendor.
 
 The HD Audio architecture provides a uniform programming interface for digital audio controllers. Typically, today's audio codecs conform to the AC'97 industry standard, and digital controllers connect to one or more AC'97 codecs through another industry standard, AC-Link. Although these standards help to ensure that codecs and links are implemented consistently, no standard currently exists that defines the interface to the digital audio controller. Vendors tend to have very similar solutions for their system-integrated AC'97 digital audio controllers, but each AC'97 solution is likely to be different enough to require a separate driver. The HD Audio architecture is intended to eliminate the requirement for solution-specific drivers by specifying a base register set that is uniform across all implementations.
 

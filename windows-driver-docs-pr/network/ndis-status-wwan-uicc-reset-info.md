@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_RESET_INFO
 description: NDIS_STATUS_WWAN_UICC_RESET_INFO
-ms.assetid: ADA3ADC9-82AD-423A-ABA4-902EAF5F5C74
 keywords:
 - NDIS_STATUS_WWAN_UICC_RESET_INFO, UICC reset status notification, Mobile Broadband UICC reset status notification, MB UICC reset status notification
 ms.date: 08/18/2017
@@ -15,20 +14,17 @@ The NDIS_STATUS_WWAN_UICC_RESET_INFO status notification is sent by a modem mini
 1. After an [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md) query request.
 2. After UICC reset is complete following an OID_WWAN_UICC_RESET set request, to inform the MB host of the passthrough status of the UICC card post-reset.
 
-This notification uses the [NDIS_WWAN_UICC_RESET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_reset_info) structure.
+This notification uses the [NDIS_WWAN_UICC_RESET_INFO](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_reset_info) structure.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ndis.h |
+**Version**: Windows 10, version 1709
+**Header**: Ndis.h
 
 ## See also
 
 [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md)
 
-[NDIS_WWAN_UICC_RESET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_reset_info)
+[NDIS_WWAN_UICC_RESET_INFO](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_reset_info)
 
 [MB low level UICC access](mb-low-level-uicc-access.md)
-

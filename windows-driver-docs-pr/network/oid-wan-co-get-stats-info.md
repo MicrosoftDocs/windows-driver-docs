@@ -1,7 +1,6 @@
 ---
 title: OID_WAN_CO_GET_STATS_INFO
 description: The OID_WAN_CO_GET_STATS_INFO OID requests the miniport driver to return statistics information that is specific to a virtual connection (VC).
-ms.assetid: 53ab1c04-7bb2-401d-ad54-72f3c1587dc0
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_GET_STATS_INFO Network Drivers Starting with Windows Vista

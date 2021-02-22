@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_MIC
 description: WDI_TLV_CIPHER_KEY_TKIP_MIC is a TLV that contains the TKIP MIC material.
-ms.assetid: 5F1AE81C-6AB4-468C-9DEE-D1BB16A2EC4D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_TKIP_MIC Network Drivers Starting with Windows Vista

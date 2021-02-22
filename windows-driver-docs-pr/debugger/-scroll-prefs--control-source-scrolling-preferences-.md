@@ -1,7 +1,6 @@
 ---
 title: .scroll_prefs (Control Source Scrolling Preferences)
 description: The .scroll_prefs command controls the positioning of the source in a Source window when scrolling to a line.
-ms.assetid: 08978751-c4b7-491a-9e1f-de21d74a10a8
 keywords: [".scroll_prefs (Control Source Scrolling Preferences) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

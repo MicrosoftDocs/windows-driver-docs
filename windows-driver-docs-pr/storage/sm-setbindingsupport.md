@@ -1,7 +1,6 @@
 ---
 title: SM\_SetBindingSupport function
 description: The SM\_SetBindingSupport method sets the binding capabilities for the indicated port.
-ms.assetid: 31a37fa5-db3c-4944-bf93-e221fb42dc6d
 keywords: ["SM_SetBindingSupport function Storage Devices"]
 topic_type:
 - apiref
@@ -82,16 +81,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SetBindingSupport\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setbindingsupport_in)
+[**SM\_SetBindingSupport\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setbindingsupport_in)
 
-[**SM\_SetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setbindingsupport_out)
-
- 
+[**SM\_SetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setbindingsupport_out)
 
  
-
-
-
-
-
 

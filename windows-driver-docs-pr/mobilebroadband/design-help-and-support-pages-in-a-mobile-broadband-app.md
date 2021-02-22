@@ -1,7 +1,6 @@
 ---
 title: Design help and support pages in a mobile broadband app
 description: Design help and support pages in a mobile broadband app
-ms.assetid: bac8987e-e801-4488-b204-5532fb3ced1b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,9 +40,9 @@ Inappropriate design for help and support page:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   For more information about how to use built-in controls, see [Adding controls and content](https://docs.microsoft.com/previous-versions/windows/apps/hh465393(v=win.10)).
+-   For more information about how to use built-in controls, see [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10)).
 
--   [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
+-   [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
 ## <span id="related_topics"></span>Related topics
 
@@ -51,11 +50,4 @@ Inappropriate design for help and support page:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

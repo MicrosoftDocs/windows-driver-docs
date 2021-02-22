@@ -1,7 +1,6 @@
 ---
 title: Interfaces for Segmentation Filters
 description: Interfaces for Segmentation Filters
-ms.assetid: 428f6fce-d76c-4485-aa92-39f2b608160d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-Beginning with Windows Vista, WIA will support segmentation filters. A segmentation filter must implement the [IWiaSegmentationFilter Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nn-wia_lh-iwiasegmentationfilter).
+Beginning with Windows Vista, WIA will support segmentation filters. A segmentation filter must implement the [IWiaSegmentationFilter Interface](/windows-hardware/drivers/ddi/wia_lh/nn-wia_lh-iwiasegmentationfilter).
 
 The **IWiaSegmentationFilter** interface is dependent on the new (for Windows Vista) interface **IWiaItem2**, which is used throughout this section, is a superset of **IWiaItem**. In addition to the **IWiaItem** methods, the **IWiaItem2** interface includes the method **IWiaItem2::GetExtension**, which is used by an application to create WIA extensions, including the segmentation filter. The **IWiaItem** and **IWiaItem2** interfaces are described in the Microsoft Windows SDK documentation.
 
@@ -24,7 +23,7 @@ The *pInputStream* parameter is a pointer to the image on which segmentation is 
 
 The *pWiaItem2* parameter is a pointer to the WIA item for which *pInputStream* was acquired. It is also referred to as the parent item. For example, the item that *pWiaItem2* points to could be the flatbed item.
 
-The [**IWiaSegmentationFilter::DetectRegions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiasegmentationfilter-detectregions) method is used to determine the subregions of the image represented by *pInputStream*. For each subregion detected, **IWiaSegmentationFilter::DetectRegions** creates a new child WIA item under the item pointed to by *pWiaItem2*. For each child item, the segmentation filter must set the values for the following WIA properties: [**WIA\_IPS\_XPOS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xpos), [**WIA\_IPS\_YPOS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-ypos), [**WIA\_IPS\_XEXTENT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xextent), and [**WIA\_IPS\_YEXTENT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-yextent). These properties represent the bounding rectangle of the area to scan. A more advanced segmentation filter may also want to set other WIA properties, such as [WIA Properties for Segmentation Filters](wia-properties-for-segmentation-filters.md) if the driver supports deskewing.
+The [**IWiaSegmentationFilter::DetectRegions**](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiasegmentationfilter-detectregions) method is used to determine the subregions of the image represented by *pInputStream*. For each subregion detected, **IWiaSegmentationFilter::DetectRegions** creates a new child WIA item under the item pointed to by *pWiaItem2*. For each child item, the segmentation filter must set the values for the following WIA properties: [**WIA\_IPS\_XPOS**](./wia-ips-xpos.md), [**WIA\_IPS\_YPOS**](./wia-ips-ypos.md), [**WIA\_IPS\_XEXTENT**](./wia-ips-xextent.md), and [**WIA\_IPS\_YEXTENT**](./wia-ips-yextent.md). These properties represent the bounding rectangle of the area to scan. A more advanced segmentation filter may also want to set other WIA properties, such as [WIA Properties for Segmentation Filters](wia-properties-for-segmentation-filters.md) if the driver supports deskewing.
 
 The following diagram shows how the segmentation filter modifies the application item tree. In this diagram, the segmentation filter has detected three images on the flatbed, and, for each image, it has created a new child item under the flatbed item.
 
@@ -54,20 +53,15 @@ Note that the segmentation filter is not responsible for "cleaning up" the child
 
 The segmentation filter should only be used on the film item and on the flatbed item. For film scanning, a scanner often comes with fixed frames, in which case the driver creates the child items (please refer to [WIA Scanner Item Tree Layout](wia-scanner-item-tree-layout.md) for more information). In this case, an application should not invoke the segmentation filter for region detection and creation of child items.
 
-If a driver comes with a segmentation filter, it should implement the [**WIA\_IPS\_SEGMENTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-segmentation) property for its flatbed and film WIA items. This read-only property has two valid values: WIA\_USE\_SEGMENTATION\_FILTER and WIA\_DONT\_USE\_SEGMENTATION\_FILTER, which the driver sets. This property lets an application know if it should use the driver's segmentation filter for region detection on a certain item.
+If a driver comes with a segmentation filter, it should implement the [**WIA\_IPS\_SEGMENTATION**](./wia-ips-segmentation.md) property for its flatbed and film WIA items. This read-only property has two valid values: WIA\_USE\_SEGMENTATION\_FILTER and WIA\_DONT\_USE\_SEGMENTATION\_FILTER, which the driver sets. This property lets an application know if it should use the driver's segmentation filter for region detection on a certain item.
 
 If a scanner uses fixed frames for film scanning, it would set this property to WIA\_DONT\_USE\_SEGMENTATION\_FILTER in the film item. In this case, the application should not try to load the segmentation filter after the film preview has been acquired; instead it should enumerate the child items created by the driver. These child items represent the fixed frames.
 
-Because a WIA item is passed into **IWiaSegmentationFilter::DetectRegions**, it is possible for the segmentation filter to use different algorithms depending on the category of the item, i.e. flatbed or film. An item's category is stored in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category) property.
+Because a WIA item is passed into **IWiaSegmentationFilter::DetectRegions**, it is possible for the segmentation filter to use different algorithms depending on the category of the item, i.e. flatbed or film. An item's category is stored in the [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md) property.
 
-If an application changes any properties in *pWiaItem2* between acquiring the image in *pInputStream* and the application's call to **IWiaSegmentationFilter::DetectRegions**, the original property settings (i.e. the property settings the item had when the stream was acquired) must be restored. This can be done using the **IWiaPropertyStorage::GetPropertyStream** and **IWiaPropertyStorage::SetPropertyStream** methods. The reason these changes need to be restored is that there may be information in the WIA item that is necessary for the segmentation filter, but that is not stored in the image header. Examples of such information are the data stored in the [**WIA\_IPS\_XPOS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xpos), [**WIA\_IPS\_YPOS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-ypos), and [**WIA\_IPS\_ROTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-rotation) properties. The **IWiaPropertyStorage** interface and its methods are described in the Windows SDK documentation.
+If an application changes any properties in *pWiaItem2* between acquiring the image in *pInputStream* and the application's call to **IWiaSegmentationFilter::DetectRegions**, the original property settings (i.e. the property settings the item had when the stream was acquired) must be restored. This can be done using the **IWiaPropertyStorage::GetPropertyStream** and **IWiaPropertyStorage::SetPropertyStream** methods. The reason these changes need to be restored is that there may be information in the WIA item that is necessary for the segmentation filter, but that is not stored in the image header. Examples of such information are the data stored in the [**WIA\_IPS\_XPOS**](./wia-ips-xpos.md), [**WIA\_IPS\_YPOS**](./wia-ips-ypos.md), and [**WIA\_IPS\_ROTATION**](./wia-ips-rotation.md) properties. The **IWiaPropertyStorage** interface and its methods are described in the Windows SDK documentation.
 
 An application obtains an instance of the segmentation filter by calling **IWiaItem2::GetExtension** (described in the Windows SDK documentation). An application would typically call this method before displaying its preview window. This is because a driver might not come with a segmentation filter, in which case the UI should know not to display an unsupported button, such as **Perform Segmentation**.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Virtual Connections
 description: Virtual Connections
-ms.assetid: becb3acf-2a23-408a-8d1f-ff8a1e7ffe61
 keywords:
 - connection-oriented NDIS WDK , virtual connections
 - CoNDIS WDK networking , virtual connections
@@ -27,7 +26,7 @@ A VC on a network can be a switched VC (SVC) or a permanent VC (PVC):
 
 -   An SVC is created as needed for a particular call. For example, a connection-oriented client initiates the creation of a VC for an outgoing call that it is going to make. Similarly, a call manager or MCM driver initiates the creation of a VC for an incoming call that it is going to indicate to a connection-oriented client. The call manager or MCM driver must communicate and sometimes negotiate the parameters for the VC with the remote party.
 
--   A permanent VC is manually created and eventually deleted by an operator using a configuration utility, which is not supplied in NDIS. A client that monitors such manual creation and deletion of PVCs can use the [OID\_CO\_ADD\_PVC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-add-pvc) and [OID\_CO\_DELETE\_PVC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-delete-pvc) OIDs to request that a call manager or MCM driver add or delete a PVC to or from its list of configured PVCs. The QoS for a PVC is configured by the operator and is not negotiable over the network.
+-   A permanent VC is manually created and eventually deleted by an operator using a configuration utility, which is not supplied in NDIS. A client that monitors such manual creation and deletion of PVCs can use the [OID\_CO\_ADD\_PVC](./oid-co-add-pvc.md) and [OID\_CO\_DELETE\_PVC](./oid-co-delete-pvc.md) OIDs to request that a call manager or MCM driver add or delete a PVC to or from its list of configured PVCs. The QoS for a PVC is configured by the operator and is not negotiable over the network.
 
 In NDIS, a VC consists of resources that are allocated by a miniport driver to maintain state information about a VC on a network. These resources could include, but are not limited to, memory buffers, events, and data structures. The miniport driver is requested to create such a context for a VC by a connection-oriented client for an outgoing call or a call manager for an incoming call. For more information about the creation of VCs, see [Creating a VC](creating-a-vc.md).
 
@@ -38,10 +37,4 @@ When tearing down a call, a call manager or MCM driver [deactivates the VC](deac
 After a call is torn down, the creator of the VC (a connection-oriented client, call manager, or MCM driver) can either initiate the [deletion of the VC](deleting-a-vc.md) or use the VC for another call.
 
  
-
- 
-
-
-
-
 

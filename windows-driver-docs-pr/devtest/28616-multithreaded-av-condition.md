@@ -1,7 +1,6 @@
 ---
 title: C28616
 description: Warning C28616 Multithreaded AV condition.
-ms.assetid: 77be6a23-18dc-420c-9359-ab91f216c73b
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

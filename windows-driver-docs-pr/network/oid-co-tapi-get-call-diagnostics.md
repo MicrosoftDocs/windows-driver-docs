@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_GET_CALL_DIAGNOSTICS
 description: This topic describes the OID_CO_TAPI_GET_CALL_DIAGNOSTICS object identifier (OID).
-ms.assetid: 5b0b1a96-9d66-4ee3-9b9a-3341ca3a4b5c
 keywords:
 - OID_CO_TAPI_GET_CALL_DIAGNOSTICS
 ms.date: 11/03/2017
@@ -83,12 +82,9 @@ The reason for the call is currently unknown but may become known later.
 The reason for the call is unavailable and cannot become known later.
 
 **DiagInfo**  
-Specifies an [NDIS_VAR_DATA_DESC](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset to, as well as the length of, optional diagnostic information supplied by the call manager or MCM driver. The content and format of the diagnostic information is driver-determined.
+Specifies an [NDIS_VAR_DATA_DESC](/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset to, as well as the length of, optional diagnostic information supplied by the call manager or MCM driver. The content and format of the diagnostic information is driver-determined.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

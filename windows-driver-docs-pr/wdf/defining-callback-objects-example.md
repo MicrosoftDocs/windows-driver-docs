@@ -1,7 +1,6 @@
 ---
 title: Defining Callback Objects Example
 description: Defining Callback Objects Example
-ms.assetid: d987bb95-cbee-46aa-beaf-167572ca4a80
 keywords:
 - callback objects WDK UMDF , example of defining
 ms.date: 04/20/2017
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
-The following code example shows how a driver inherits from the [IPnpCallbackHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) interface to define a device callback object.
+The following code example shows how a driver inherits from the [IPnpCallbackHardware](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) interface to define a device callback object.
 
 ```cpp
 class CMyDevice :
@@ -44,10 +43,4 @@ public:
 ```
 
  
-
- 
-
-
-
-
 

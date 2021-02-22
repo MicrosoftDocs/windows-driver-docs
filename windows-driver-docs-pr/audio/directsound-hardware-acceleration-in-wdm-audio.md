@@ -1,7 +1,6 @@
 ---
 title: DirectSound Hardware Acceleration in WDM Audio
 description: DirectSound Hardware Acceleration in WDM Audio
-ms.assetid: 75c34a10-1956-4117-b5b9-73de6d615521
 keywords:
 - DirectSound WDK audio , hardware acceleration
 - hardware acceleration WDK DirectSound

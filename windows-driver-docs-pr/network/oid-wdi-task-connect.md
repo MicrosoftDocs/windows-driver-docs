@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_CONNECT
 description: OID_WDI_TASK_CONNECT requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
-ms.assetid: 63ba3979-6b30-49bf-91a9-fa01f0ef4922
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CONNECT Network Drivers Starting with Windows Vista
@@ -36,7 +35,7 @@ If the authentication algorithm that is used for the connection requires 802.1x 
 
 The 802.11 station uses the PMKID cache for pre-authentication to access points that have enabled the Robust Security Network Association (RSNA) authentication algorithm. If the 802.11 station is associating or reassociating to a BSSID that has a provided PMKID, the 802.11 station must use the PMKID data in the RSN information element (RSN IE) of its Association or Reassociation frame.
 
-If the port declares support for Host FIPS mode in [**WDI\_TLV\_STATION\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-station-attributes), HostFIPSModeEnabled may be set to 1 in the connection parameters.
+If the port declares support for Host FIPS mode in [**WDI\_TLV\_STATION\_ATTRIBUTES**](./wdi-tlv-station-attributes.md), HostFIPSModeEnabled may be set to 1 in the connection parameters.
 
 If HostFIPSModeEnabled is set to 1, the following rules apply.
 
@@ -52,8 +51,8 @@ The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both 
 
 | TLV                                                                      | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-parameters) |                                |          | The connection parameters.                                                                                                                                                                                                                                                                                                                                                                                   |
-| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-bss-entry)  | X                              |          | The preferred list of candidate connect BSS entries. The port should attempt to connect to any of these BSS entries until the list is exhausted or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that is not in this list as long as it follows the Allowed/Disallowed list. |
+| [**WDI\_TLV\_CONNECT\_PARAMETERS**](./wdi-tlv-connect-parameters.md) |                                |          | The connection parameters.                                                                                                                                                                                                                                                                                                                                                                                   |
+| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](./wdi-tlv-connect-bss-entry.md)  | X                              |          | The preferred list of candidate connect BSS entries. The port should attempt to connect to any of these BSS entries until the list is exhausted or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that is not in this list as long as it follows the Allowed/Disallowed list. |
 
  
 
@@ -93,9 +92,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

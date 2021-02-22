@@ -1,7 +1,6 @@
 ---
 title: SM\_SendRPL function
 description: The SM\_SendRPL WMI method sends a read port list (RPL) command through the indicated port to indicated destination port.
-ms.assetid: 9297d5eb-f8c4-48f3-8536-a94c66917e66
 keywords: ["SM_SendRPL function Storage Devices"]
 topic_type:
 - apiref
@@ -102,16 +101,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrpl_in)
+[**SM\_SendRPL\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrpl_in)
 
-[**SM\_SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrpl_out)
-
- 
+[**SM\_SendRPL\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrpl_out)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAC_OPTIONS
 description: As a query, the OID_GEN_MAC_OPTIONS OID specifies a bitmask that defines optional properties of the underlying driver or a NIC.
-ms.assetid: 2a093bcb-ae6f-491c-a596-03e6f47b0b86
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAC_OPTIONS Network Drivers Starting with Windows Vista
@@ -48,7 +47,7 @@ The miniport driver indicates packets in a serial manner. That is, such a driver
 <a href="" id="ndis-mac-option-transfers-not-pend"></a>NDIS\_MAC\_OPTION\_TRANSFERS\_NOT\_PEND  
 The miniport driver never completes receive indications asynchronously.
 
-A miniport driver that indicates receive operations with the [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function should set this flag.
+A miniport driver that indicates receive operations with the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function should set this flag.
 
 <a href="" id="ndis-mac-option-no-loopback"></a>NDIS\_MAC\_OPTION\_NO\_LOOPBACK  
 The NIC has no internal loopback support so NDIS will manage loopbacks on behalf of this driver. A miniport driver cannot provide its own software loopback as efficiently as NDIS, so every miniport driver should set this flag unless a NIC has hardware loopback support. WAN miniport drivers must set this flag.
@@ -64,20 +63,20 @@ The miniport driver supports full-duplex transmits and indications on SMP platfo
 This flag is obsolete.
 
 <a href="" id="ndis-mac-option-8021p-priority"></a>NDIS\_MAC\_OPTION\_8021P\_PRIORITY  
-The NIC and its driver support 802.1p packet priority. For more information, see [Packet Priority](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562331(v=vs.85)). Packet-priority values are received in [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures from higher-layer drivers. The appropriate information is generated in the MAC headers of packets and transmitted over the network. In addition, this NIC and its driver support extracting the appropriate information from the MAC headers of packets received from the network. This information is forwarded in NET\_BUFFER structures to higher-layer drivers.
+The NIC and its driver support 802.1p packet priority. For more information, see [Packet Priority](/previous-versions/windows/hardware/network/ff562331(v=vs.85)). Packet-priority values are received in [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures from higher-layer drivers. The appropriate information is generated in the MAC headers of packets and transmitted over the network. In addition, this NIC and its driver support extracting the appropriate information from the MAC headers of packets received from the network. This information is forwarded in NET\_BUFFER structures to higher-layer drivers.
 
 **Note**  NDIS 6.0 and later and later and later miniport drivers must set the NDIS\_MAC\_OPTION\_8021P\_PRIORITY flag.
 
  
 
 <a href="" id="ndis-mac-option-supports-mac-address-overwrite"></a>NDIS\_MAC\_OPTION\_SUPPORTS\_MAC\_ADDRESS\_OVERWRITE  
-NDIS sets this flag when a miniport driver calls the [**NdisReadNetworkAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress) function.
+NDIS sets this flag when a miniport driver calls the [**NdisReadNetworkAddress**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress) function.
 
 <a href="" id="ndis-mac-option-receive-at-dpc"></a>NDIS\_MAC\_OPTION\_RECEIVE\_AT\_DPC  
 This flag is obsolete.
 
 <a href="" id="ndis-mac-option-8021q-vlan"></a>NDIS\_MAC\_OPTION\_8021Q\_VLAN  
-The miniport driver can assign and remove VLAN identifier (ID) marking in the MAC headers of packets. The driver maintains a configured VLAN ID for each NIC that the driver handles. The driver filters out incoming packets that do not belong to the VLAN to which a NIC is associated and marks outgoing packets with the VLAN ID. During the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function for a particular NIC, the driver initially sets the NIC's VLAN ID to zero. The driver's *MiniportInitializeEx* function then reads the following configuration parameter from the registry, and, if the parameter is present, sets the NIC's VLAN ID to the parameter's value.
+The miniport driver can assign and remove VLAN identifier (ID) marking in the MAC headers of packets. The driver maintains a configured VLAN ID for each NIC that the driver handles. The driver filters out incoming packets that do not belong to the VLAN to which a NIC is associated and marks outgoing packets with the VLAN ID. During the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function for a particular NIC, the driver initially sets the NIC's VLAN ID to zero. The driver's *MiniportInitializeEx* function then reads the following configuration parameter from the registry, and, if the parameter is present, sets the NIC's VLAN ID to the parameter's value.
 
 ```syntax
 VlanId, REG_DWORD
@@ -109,16 +108,11 @@ Requirements
 ## See also
 
 
-[*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
+[*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
 
-[**NdisReadNetworkAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress)
+[**NdisReadNetworkAddress**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress)
 
-[**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer)
-
- 
+[**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer)
 
  
-
-
-
 

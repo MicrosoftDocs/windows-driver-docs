@@ -1,5 +1,4 @@
 ---
-ms.assetid: 51CD05AB-2626-4E27-AA08-09547D546218
 title: Converting WDK 8.1 Projects to WDK 10
 description: How to convert a driver project created with Microsoft Visual Studio 2013 and the Windows Driver Kit (WDK) 8.1 to a driver project that builds in Microsoft Visual Studio 2015 with the Windows Driver Kit (WDK) 10.
 ms.date: 04/20/2017
@@ -18,11 +17,11 @@ Use these steps to convert the projects in a driver solution.
 
     Visual Studio automatically runs ProjectUpgradeTool to convert the projects in this solution. You can also run this tool from the command line. By default, when you install the WDK, ProjectUpgradeTool.exe installs in Windows Kits\\10\\bin\\x86.
 
-    Visual Studio opens a **Review Solution Actions** dialog with the title **Upgrade VC++ Compiler and Libraries**. Click **OK** and Visual Studio attempts to upgrade all projects in the solution.
+    Visual Studio opens a **Review Solution Actions** dialog with the title **Upgrade VC++ Compiler and Libraries**. Select **OK** and Visual Studio attempts to upgrade all projects in the solution.
 
     If you see a **File Modification Detected** dialog, choose **Reload All**.
 
-2.  In the Solution Explorer pane, right-click the driver project name and choose **Properties**. Click the **Configuration Manager** button. In the **Active solution configuration** list, choose **&lt;New...&gt;**. Type a name and copy the settings from a Windows 8.1 project context. Click **OK**.
+2.  In the Solution Explorer pane, select and hold (or right-click) the driver project name and choose **Properties**. Select the **Configuration Manager** button. In the **Active solution configuration** list, choose **&lt;New...&gt;**. Type a name and copy the settings from a Windows 8.1 project context. Select **OK**.
 
     Typically, the converted solution contains two configuration profiles, one for debug (testing) and one for release. To create a similar environment with WDK 10, simply choose **&lt;New...&gt;** twice. To create a debug profile, copy from the **Win 8.1 Debug** profile. To create a release profile, copy from the **Win 8.1 Release** profile.
 
@@ -40,15 +39,9 @@ Use these steps to convert the projects in a driver solution.
 
     Build the solution again. At this point, the only errors are from the ApiValidator tool, which checks if the driver calls any non-universal functionality. Replace any calls to non-universal DDIs with calls to universal DDIs.
 
-    For more information about ApiValidator, see [Validating Universal Windows drivers](validating-universal-drivers.md).
+    For more information about ApiValidator, see [Validating Universal Windows drivers](./validating-windows-drivers.md).
 
-    To learn how to determine the target platform for a given DDI, see [Target platform on driver reference pages](windows-10-editions-for-universal-drivers.md).
-
- 
+    To learn how to determine the target platform for a given DDI, see [Target platform on driver reference pages](target-platforms.md).
 
  
-
-
-
-
 

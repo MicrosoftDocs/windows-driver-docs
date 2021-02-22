@@ -1,14 +1,13 @@
 ---
 title: ServiceDescription1
 description: ServiceDescription1
-ms.assetid: 4451c429-3b89-47d6-ba21-ab30919e5ff8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceDescription1
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceDescription1 element specifies descriptive information about the service. This is applied to the description field of the wireless wide area network (WWAN) connection profile. It is not displayed in the user interface to the end user and should be left blank.
 

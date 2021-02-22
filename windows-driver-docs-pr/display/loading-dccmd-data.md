@@ -1,7 +1,6 @@
 ---
 title: Loading DCCMD Data
 description: Loading DCCMD Data
-ms.assetid: 2fceaaa6-5604-4130-ae33-8567561fcccb
 keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading

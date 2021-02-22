@@ -1,7 +1,6 @@
 ---
 title: Reading Data Records from a CLFS Stream
 description: Reading Data Records from a CLFS Stream
-ms.assetid: 46e583c5-9f12-4f05-8f11-683ac428313a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reading data records", "read forward WDK CLFS", "forward reading WDK CLFS", "read backward WDK CLFS", "backward reading WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -16,9 +15,9 @@ There are several variations on reading a sequence of data records from a stream
 
 For all variations on reading a sequence of data records, complete the following steps.
 
-1.  Call [**ClfsReadLogRecord**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord) to obtain a read context and the first data record in the sequence.
+1.  Call [**ClfsReadLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord) to obtain a read context and the first data record in the sequence.
 
-2.  Pass the read context you obtained in step 1 to [**ClfsReadNextLogRecord**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord) repeatedly to obtain the remaining data records in the sequence.
+2.  Pass the read context you obtained in step 1 to [**ClfsReadNextLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord) repeatedly to obtain the remaining data records in the sequence.
 
 **Caution**  Read contexts are not thread-safe. Clients are responsible for serializing access to read contexts.
 
@@ -246,20 +245,15 @@ As you make repeated calls to **ClfsReadNextLogRecord**, your sequence of calls 
 
 When you write a data record to a CLFS stream, you can set the undo-next LSN of the data record to the LSN of any record that you previously wrote to the stream. By setting the undo-next LSN, you can create a chain of related records that can be traversed in reverse order. For more information about creating and interpreting undo-next chains, see [CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md).
 
-Suppose you have written a chain of data records that are linked by their undo-next LSNs. To read the chain of records, you must call [**ClfsReadLogRecord**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord) to create a read context that has its mode set to **ClfsContextUndoNext**. After that, the process is identical to reading a chain linked by previous LSNs (described previously in this topic).
+Suppose you have written a chain of data records that are linked by their undo-next LSNs. To read the chain of records, you must call [**ClfsReadLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord) to create a read context that has its mode set to **ClfsContextUndoNext**. After that, the process is identical to reading a chain linked by previous LSNs (described previously in this topic).
 
 ### Reading a chain of data records linked by the user LSN
 
 In addition to chains linked by previous LSNs and undo-next LSNs, you can create chains linked by your own LSNs that you embed in your record data.
 
-Suppose you have written a chain of data records that are linked by LSNs you have stored in the record data itself. To read the chain of records, you must create a read context that has its mode set to either **ClfsContextPrevious** or **ClfsContextUndoNext**. Create your read context and obtain the most recently written record in the chain by calling [**ClfsReadLogRecord**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord). Then call [**ClfsReadNextLogRecord**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord) repeatedly to obtain the previous records in the chain. Each time you call **ClfsReadNextLogRecord**, set the *plsnUser* parameter to the LSN of the previous record in your chain. The LSN you supply in *plsnUser* overrides any values stored in the current record's previous-LSN or undo-next LSN fields.
+Suppose you have written a chain of data records that are linked by LSNs you have stored in the record data itself. To read the chain of records, you must create a read context that has its mode set to either **ClfsContextPrevious** or **ClfsContextUndoNext**. Create your read context and obtain the most recently written record in the chain by calling [**ClfsReadLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord). Then call [**ClfsReadNextLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord) repeatedly to obtain the previous records in the chain. Each time you call **ClfsReadNextLogRecord**, set the *plsnUser* parameter to the LSN of the previous record in your chain. The LSN you supply in *plsnUser* overrides any values stored in the current record's previous-LSN or undo-next LSN fields.
 
 Note that you can only move backward in the stream when you call **ClfsReadNextLogRecord** to read a record chain. The LSN you supply in *plsnUser* must be less than the LSN of the current record in the chain.
 
  
-
- 
-
-
-
 

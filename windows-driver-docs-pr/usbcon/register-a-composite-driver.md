@@ -1,5 +1,5 @@
 ---
-Description: How a USB multi-function device, called a composite driver, registers and unregisters the composite device with the underlying USB driver stack.
+description: How a USB multi-function device, called a composite driver, registers and unregisters the composite device with the underlying USB driver stack.
 title: How to Register a Composite Device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -19,15 +19,15 @@ To use the feature, the composite driver needs to register the device with the u
 -   Informs the underlying USB driver stack that the driver is responsible for sending a request to arm a function for remote wake-up. The remote wake-up request is processed by the USB driver stack, which sends the necessary protocol requests to the device.
 -   Obtains a list of function handles (one per function) assigned by the USB driver stack. The composite driver can then use a function handle in the driver's the request for remote wake-up of the function associated with the handle.
 
-Typically a composite driver sends the registration request in the driver's AddDevice or the start-device routine to handle [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device). Consequently, the composite driver releases the resources that are allocated for the registration in the driver's unload routines such as stop-device ([**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device)) or remove-device routine ([**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device)).
+Typically a composite driver sends the registration request in the driver's AddDevice or the start-device routine to handle [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md). Consequently, the composite driver releases the resources that are allocated for the registration in the driver's unload routines such as stop-device ([**IRP\_MN\_STOP\_DEVICE**](../kernel/irp-mn-stop-device.md)) or remove-device routine ([**IRP\_MN\_REMOVE\_DEVICE**](../kernel/irp-mn-remove-device.md)).
 
 ### Prerequisites
 
 Before sending the registration request, make sure that:
 
 -   You have the number of functions in the device. That number can be derived the descriptors retrieved by the get-configuration request.
--   You have obtained a USBD handle in a previous call to [**USBD\_CreateHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle).
--   The underlying USB driver stack supports USB 3.0 devices. To do so, call [**USBD\_IsInterfaceVersionSupported**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isinterfaceversionsupported) and pass USBD\_INTERFACE\_VERSION\_602 as the version to check.
+-   You have obtained a USBD handle in a previous call to [**USBD\_CreateHandle**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle).
+-   The underlying USB driver stack supports USB 3.0 devices. To do so, call [**USBD\_IsInterfaceVersionSupported**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isinterfaceversionsupported) and pass USBD\_INTERFACE\_VERSION\_602 as the version to check.
 
 For a code example, see [How to Implement Function Suspend in a Composite Driver](how-to--implement-remote-and-function-wake-support.md).
 Instructions
@@ -37,17 +37,17 @@ Instructions
 
 The following procedure describes how you should build and send a registration request to associate a composite driver with the USB driver stack.
 
-1.  Allocate a [**COMPOSITE\_DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_composite_device_capabilities) structure and initialize it by calling the [**COMPOSITE\_DEVICE\_CAPABILITIES\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-composite_device_capabilities_init) macro.
-2.  Set the **CapabilityFunctionSuspend** member of [**COMPOSITE\_DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_composite_device_capabilities) to 1.
-3.  Allocate a [**REGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_register_composite_device) structure and initialize the structure by calling the [**USBD\_BuildRegisterCompositeDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_buildregistercompositedevice) routine. In the call, specify the USBD handle, the initialized [**COMPOSITE\_DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_composite_device_capabilities) structure, and the number of functions.
-4.  Allocate an I/O request packet (IRP) by calling [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and get a pointer to the IRP's first stack location ([**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)) by calling [**IoGetNextIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetnextirpstacklocation).
+1.  Allocate a [**COMPOSITE\_DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_composite_device_capabilities) structure and initialize it by calling the [**COMPOSITE\_DEVICE\_CAPABILITIES\_INIT**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-composite_device_capabilities_init) macro.
+2.  Set the **CapabilityFunctionSuspend** member of [**COMPOSITE\_DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_composite_device_capabilities) to 1.
+3.  Allocate a [**REGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_register_composite_device) structure and initialize the structure by calling the [**USBD\_BuildRegisterCompositeDevice**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_buildregistercompositedevice) routine. In the call, specify the USBD handle, the initialized [**COMPOSITE\_DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_composite_device_capabilities) structure, and the number of functions.
+4.  Allocate an I/O request packet (IRP) by calling [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and get a pointer to the IRP's first stack location ([**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)) by calling [**IoGetNextIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetnextirpstacklocation).
 5.  Allocate memory for a buffer that is large enough to hold an array of function handles (USBD\_FUNCTION\_HANDLE). The number of elements in the array must be the number of PDOs.
-6.  Build the request by setting the following members of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location):
-    -   Specify the type of request by setting **Parameters.DeviceIoControl.IoControlCode** to [**IOCTL\_INTERNAL\_USB\_REGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_register_composite_device).
-    -   Specify the input parameter by setting **Parameters.Others.Argument1** to the address of the initialized [**REGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_register_composite_device) structure.
+6.  Build the request by setting the following members of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location):
+    -   Specify the type of request by setting **Parameters.DeviceIoControl.IoControlCode** to [**IOCTL\_INTERNAL\_USB\_REGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_register_composite_device).
+    -   Specify the input parameter by setting **Parameters.Others.Argument1** to the address of the initialized [**REGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_register_composite_device) structure.
     -   Specify the output parameter by setting **AssociatedIrp.SystemBuffer** to the buffer that was allocated in step 5.
 
-7.  Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the request by passing the IRP to the next stack location.
+7.  Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the request by passing the IRP to the next stack location.
 
 Upon completion, inspect the array of function handles that is returned by the USB driver stack. You can store the array in the driver's device context for future use.
 
@@ -140,11 +140,11 @@ End:
 
 ### Unregister the Composite Device
 
-1.  Allocate an IRP by calling [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and get a pointer to the IRP's first stack location ([**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)) by calling [**IoGetNextIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetnextirpstacklocation).
-2.  Build the request by setting the **Parameters.DeviceIoControl.IoControlCode** member of [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) to [**IOCTL\_INTERNAL\_USB\_UNREGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_unregister_composite_device).
-3.  Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the request by passing the IRP to the next stack location.
+1.  Allocate an IRP by calling [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and get a pointer to the IRP's first stack location ([**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)) by calling [**IoGetNextIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetnextirpstacklocation).
+2.  Build the request by setting the **Parameters.DeviceIoControl.IoControlCode** member of [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) to [**IOCTL\_INTERNAL\_USB\_UNREGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_unregister_composite_device).
+3.  Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the request by passing the IRP to the next stack location.
 
-The [**IOCTL\_INTERNAL\_USB\_UNREGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_unregister_composite_device) request is sent once by the composite driver in the context of remove-device routine. The purpose of the request is to remove the association between the USB driver stack and the composite driver and its enumerated function. The request also cleans up any resources that were created to maintain that association and all function handles that were returned in the previous registration request.
+The [**IOCTL\_INTERNAL\_USB\_UNREGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_unregister_composite_device) request is sent once by the composite driver in the context of remove-device routine. The purpose of the request is to remove the association between the USB driver stack and the composite driver and its enumerated function. The request also cleans up any resources that were created to maintain that association and all function handles that were returned in the previous registration request.
 
 The following code example shows how to build and send a request to unregister the composite device. The example assumes that the composite driver was previously registered through a registration request as described earlier in this topic.
 
@@ -187,8 +187,5 @@ VOID  UnregisterCompositeDriver(
 ```
 
 ## Related topics
-[**IOCTL\_INTERNAL\_USB\_REGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_register_composite_device)  
-[**IOCTL\_INTERNAL\_USB\_UNREGISTER\_COMPOSITE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_unregister_composite_device)  
-
-
-
+[**IOCTL\_INTERNAL\_USB\_REGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_register_composite_device)  
+[**IOCTL\_INTERNAL\_USB\_UNREGISTER\_COMPOSITE\_DEVICE**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_unregister_composite_device)

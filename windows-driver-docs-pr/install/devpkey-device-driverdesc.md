@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverDesc
 description: DEVPKEY_Device_DriverDesc
-ms.assetid: abe484ec-f9f8-4f22-b18b-64ffb88a94a2
 keywords: ["DEVPKEY_Device_DriverDesc Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_DriverDesc device property represents the description of the 
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -55,45 +60,25 @@ The DEVPKEY_Device_DriverDesc device property represents the description of the 
 Remarks
 -------
 
-The value of DEVPKEY_Device_DriverDesc is set by the *device-description* entry value that is supplied by the [**INF *Models* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section) of the INF file that installs a device.
+The value of DEVPKEY_Device_DriverDesc is set by the *device-description* entry value that is supplied by the [**INF *Models* section**](./inf-models-section.md) of the INF file that installs a device.
 
 The value of DEVPKEY_Device_DriverDesc is not displayed in an end-user dialog box or used for any reason by the operating system.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverDesc.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverDesc.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LocationPaths property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverDesc** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LocationPaths property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverDesc** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

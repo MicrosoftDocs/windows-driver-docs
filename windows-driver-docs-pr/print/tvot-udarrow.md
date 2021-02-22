@@ -1,7 +1,6 @@
 ---
 title: TVOT\_UDARROW
 description: TVOT\_UDARROW
-ms.assetid: c1182cc5-5d82-4db5-8ef2-7d2601499e72
 keywords: ["TVOT_UDARROW Print Devices"]
 topic_type:
 - apiref
@@ -23,12 +22,12 @@ ms.localizationpriority: medium
 
 The TVOT\_UDARROW option type consists of an up-down control and an edit control inside a group box.
 
-<span id="OPTITEM_Structure"></span><span id="optitem_structure"></span><span id="OPTITEM_STRUCTURE"></span>[**OPTITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_optitem) Structure  
+<span id="OPTITEM_Structure"></span><span id="optitem_structure"></span><span id="OPTITEM_STRUCTURE"></span>[**OPTITEM**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_optitem) Structure  
 
 <span id="Sel_pSel"></span><span id="sel_psel"></span><span id="SEL_PSEL"></span>**Sel/pSel**  
 Numeric value representing the edit control's current contents.
 
-<span id="OPTPARAM_Structure_Array__pOptParam_member_of_OPTTYPE_"></span><span id="optparam_structure_array__poptparam_member_of_opttype_"></span><span id="OPTPARAM_STRUCTURE_ARRAY__POPTPARAM_MEMBER_OF_OPTTYPE_"></span>[**OPTPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_optparam) Structure Array (**pOptParam** member of [**OPTTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype))  
+<span id="OPTPARAM_Structure_Array__pOptParam_member_of_OPTTYPE_"></span><span id="optparam_structure_array__poptparam_member_of_opttype_"></span><span id="OPTPARAM_STRUCTURE_ARRAY__POPTPARAM_MEMBER_OF_OPTTYPE_"></span>[**OPTPARAM**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_optparam) Structure Array (**pOptParam** member of [**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype))  
 
 <span id="pData"></span><span id="pdata"></span><span id="PDATA"></span>**pData**  
 **pOptParam**\[0\]-&gt;**pData** points to a NULL-terminated text string identifying the control's units.
@@ -45,7 +44,7 @@ Numeric value representing the edit control's current contents.
 
 **pOptParam**\[1\]-&gt;**lParam** specifies a 16-bit signed value representing the high end of the control's range.
 
-<span id="OPTTYPE_Structure"></span><span id="opttype_structure"></span><span id="OPTTYPE_STRUCTURE"></span>[**OPTTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) Structure  
+<span id="OPTTYPE_Structure"></span><span id="opttype_structure"></span><span id="OPTTYPE_STRUCTURE"></span>[**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) Structure  
 
 <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Type**  
 TVOT\_UDARROW
@@ -57,7 +56,7 @@ TVOT\_UDARROW
 Not used.
 
 <span id="BegCtrlID"></span><span id="begctrlid"></span><span id="BEGCTRLID"></span>**BegCtrlID**  
-If **pDlgPage** in [**COMPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_compropsheetui) identifies a CPSUI-supplied page, or if **DlgTemplateID** in [**DLGPAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage) identifies a CPSUI-supplied template, **BegCtrlID** is not used.
+If **pDlgPage** in [**COMPROPSHEETUI**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_compropsheetui) identifies a CPSUI-supplied page, or if **DlgTemplateID** in [**DLGPAGE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage) identifies a CPSUI-supplied template, **BegCtrlID** is not used.
 
 Otherwise, **BegCtrlID** must contain the first control identifier of a sequentially numbered set of control identifiers. Control identifiers must identify the following Windows controls:
 
@@ -114,7 +113,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 
  
 
-For additional information, see [Customizing CPSUI-Supported Window Controls](https://docs.microsoft.com/windows-hardware/drivers/print/customizing-cpsui-supported-window-controls).
+For additional information, see [Customizing CPSUI-Supported Window Controls](./customizing-cpsui-supported-window-controls.md).
 
 Requirements
 ------------
@@ -133,9 +132,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

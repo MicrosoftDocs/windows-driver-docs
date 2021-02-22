@@ -1,7 +1,6 @@
 ---
 title: Setting the Start Type Value
 description: Setting the Start Type Value
-ms.assetid: dcc38a36-4755-472b-94c8-dfed892460ee
 keywords:
 - INF files WDK display , start type values
 - start type values WDK display
@@ -29,13 +28,7 @@ LoadOrderGroup = Video
 ServiceBinary  = %12%\r200.sys
 ```
 
-For more information about service-install sections that are associated with the **AddService** directive, see [**INF AddService Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive).
+For more information about service-install sections that are associated with the **AddService** directive, see [**INF AddService Directive**](../install/inf-addservice-directive.md).
 
  
-
- 
-
-
-
-
 

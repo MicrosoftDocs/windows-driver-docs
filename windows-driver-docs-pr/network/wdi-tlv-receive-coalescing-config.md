@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RECEIVE_COALESCING_CONFIG
 description: WDI_TLV_RECEIVE_COALESCING_CONFIG is a TLV that contains receive coalescing configuration.
-ms.assetid: 32542203-14DE-4F91-AB85-D2FA75ECAB9E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RECEIVE_COALESCING_CONFIG Network Drivers Starting with Windows Vista
@@ -61,12 +60,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_RECEIVE\_COALESCING](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-receive-coalescing)
+[OID\_WDI\_SET\_RECEIVE\_COALESCING](./oid-wdi-set-receive-coalescing.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN
 description: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN is a TLV that contains the anti-clogging token for a Simultaneous Authentication of Equals (SAE) Commit request.
-ms.assetid: 9A1046AE-029F-4B37-9523-655425BC93F1
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_ANTI_CLOGGING_TOKEN Network Drivers Starting with Windows Vista
@@ -31,8 +30,6 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

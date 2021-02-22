@@ -1,7 +1,6 @@
 ---
 title: Creating a device metadata submission package in Visual Studio
 description: Creating a device metadata submission package in Visual Studio
-ms.assetid: 17CF8185-C9EE-4B25-BEE7-A1FFB8C92EE0
 keywords:
 - Creating a device metadata submission package in Visual Studio
 ms.date: 04/20/2017
@@ -44,15 +43,9 @@ To create a device metadata submission package, use the Submission tool in Micro
 
 10. When you're ready to submit your package, click **Launch Windows Dev Center - Hardware Dashboard**.
 
-For more information about how to submit your package, see [Submit a Device Metadata Package](https://go.microsoft.com/fwlink/p/?linkid=226302).
+For more information about how to submit your package, see [Submit a Device Metadata Package](../dashboard/submit-a-device-metadata-package--dashboard-help-.md).
 
-For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](https://go.microsoft.com/fwlink/p/?linkid=248427).
-
- 
+For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](../dashboard/submit-a-bulk-metadata-package.md).
 
  
-
-
-
-
 

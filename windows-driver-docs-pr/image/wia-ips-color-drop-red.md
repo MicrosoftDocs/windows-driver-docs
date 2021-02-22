@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_COLOR\_DROP\_RED
 description: The WIA\_IPS\_COLOR\_DROP\_RED property is used to configure the amount of color drop-out for the Red color channel (R in RGB), as a percentage in a range from 0 (no dropout) to 100 (full channel dropout).
-ms.assetid: B241154C-0F4F-4800-A8CD-30831F1AB25B
 keywords: ["WIA_IPS_COLOR_DROP_RED Imaging Devices"]
 topic_type:
 - apiref

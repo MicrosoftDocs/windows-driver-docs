@@ -1,7 +1,6 @@
 ---
 title: rpcexts.help
 description: The rpcexts.help extension displays a Help text in the Command Prompt window showing all Rpcexts.dll extension commands.
-ms.assetid: 1d7c238b-9f08-461b-ba7b-7ce1eb1b7b9f
 keywords: ["rpcexts.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

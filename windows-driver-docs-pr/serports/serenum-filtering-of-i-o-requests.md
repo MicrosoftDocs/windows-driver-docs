@@ -1,7 +1,6 @@
 ---
 title: Serenum Filtering of I/O Requests
 description: Serenum Filtering of I/O Requests
-ms.assetid: 773688b8-3d5a-48ed-8f20-368cf35fa6e2
 keywords:
 - Serenum driver WDK , I/O request filtering
 - I/O request filtering WDK Serenum
@@ -16,7 +15,7 @@ The following describes how Serenum filters I/O requests that are directed to a 
 
 - Handles bus-related operations that are associated with Plug and Play and power requests:
     -   Removes a PDO, if one exists, when the filter DO is removed.
-    -   Enumerates the RS-232 port in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) request of type **BusRelations**.
+    -   Enumerates the RS-232 port in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](../kernel/irp-mn-query-device-relations.md) request of type **BusRelations**.
 - Completes Serenum-specific device control requests that return information about the RS-232 port.
 
 The following describes how Serenum filters I/O requests that are directed to a PDO (the PDO represents a child device attached to an RS-232 port):
@@ -29,6 +28,6 @@ The following describes how Serenum filters I/O requests that are directed to a 
 
 For more information, see the following:
 
-- [ntddser.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/)
+- [ntddser.h header](/windows-hardware/drivers/ddi/ntddser/)
 
 - Sample code in the \\src\\kernel\\serenum directory in the Windows Driver Kit (WDK)

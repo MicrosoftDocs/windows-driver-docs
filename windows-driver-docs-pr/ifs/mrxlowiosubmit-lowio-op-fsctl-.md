@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_FSCTL\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_FSCTL\ routine is called by RDBSS to request that a network mini-redirector issue file system control request on remote file.
-ms.assetid: 6bbb4b65-c447-47d8-9d05-f2adfb607099
 keywords: ["MRxLowIOSubmit LOWIO_OP_FSCTL routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\] routine
 
 
-The *MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector issue file system control request on remote file.
+The *MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector issue file system control request on remote file.
 
 Syntax
 ------
@@ -169,11 +168,4 @@ Requirements
 [**MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]**](mrxlowiosubmit-lowio-op-write-.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Dynamic Hardware Partitioning Architecture
 description: Dynamic Hardware Partitioning Architecture
-ms.assetid: 1b6a1dc5-ec32-4bb9-acaf-14db284b4a0e
 keywords: ["dynamic hardware partitioning WDK , architecture", "hardware partitioning WDK dynamic , architecture", "partitions WDK dynamic hardware , architecture", "architecture WDK dynamic hardware partitioning", "dynamically partitionable servers WDK", "servers WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -20,9 +19,9 @@ In the previous figure, the server has a total of 12 partition units: four memor
 
 Starting with Windows Server 2008, each partition unit is considered a Plug and Play (PnP) device. Because these devices are PnP, you can add them after the operating system has started.
 
-For more information about how a device driver can register itself with the operating system to receive notification when partition units are dynamically added to the hardware partition, see [Driver Notification](driver-notification.md).
+For more information about how a device driver can register itself with the operating system to receive notification when partition units are dynamically added to the hardware partition, see [Driver Notification](introduction-to-driver-notification.md).
 
-For more information about how an application can register itself with the operating system to receive notification when partition units are dynamically added to the hardware partition, see [Application Notification](application-notification.md).
+For more information about how an application can register itself with the operating system to receive notification when partition units are dynamically added to the hardware partition, see [Application Notification](introduction-to-application-notification.md).
 
  
 

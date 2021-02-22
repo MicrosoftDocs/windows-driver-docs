@@ -1,14 +1,13 @@
 ---
 title: ServiceInfo XML Example
 description: ServiceInfo XML Example
-ms.assetid: b2114044-ca4b-4c1e-ab2e-73f4f56142b5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceInfo XML Example
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-schema.md) to specify the attributes of the Contoso Wireless service:
 
@@ -26,12 +25,3 @@ The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-sch
     <ServiceSpecificExtension namespace="http://schemas.microsoft.com/windows/2010/12/DeviceMetadata/MobileBroadbandInfo">MobileBroadbandInfo.xml</ServiceSpecificExtension>
 </ServiceInfo>
 ```
-
- 
-
- 
-
-
-
-
-

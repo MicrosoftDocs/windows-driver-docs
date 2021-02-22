@@ -1,7 +1,6 @@
 ---
 title: Design branding in a mobile broadband app
 description: Design branding in a mobile broadband app
-ms.assetid: 0badd121-ce1d-4be2-a9f0-e062631c00c8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -53,7 +52,7 @@ You can use branding in the following places in your mobile broadband app:
 
     ![windows connection manager](images/mb-fig5-wcm.png)
 
-For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](https://docs.microsoft.com/windows/uwp/publish/app-marketing-guidelines).
+For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](/windows/uwp/publish/app-marketing-guidelines).
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -83,11 +82,4 @@ Inappropriate design for operator branding:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

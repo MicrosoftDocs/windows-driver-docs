@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_THUMB\_HEIGHT
 description: The WIA\_DPC\_THUMB\_HEIGHT property defines the height, in pixels, of a thumbnail image to use for newly captured images.
-ms.assetid: bc4ad063-7287-461e-a31b-d4b6628372b6
 keywords: ["WIA_DPC_THUMB_HEIGHT Imaging Devices"]
 topic_type:
 - apiref

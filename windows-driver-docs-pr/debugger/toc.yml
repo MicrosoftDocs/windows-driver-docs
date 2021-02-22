@@ -42,6 +42,8 @@
         href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
       - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
         href: setting-up-a-null-modem-cable-connection.md
+      - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
+        href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
         href: setting-up-a-usb-3-0-debug-cable-connection.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually"
@@ -50,15 +52,30 @@
         href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
+    - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1903"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1903.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1809"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1809.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1803"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1803.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1709"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1709.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1703"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1703.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
     - name: "Configuring tools.ini"
       href: configuring-tools-ini.md
     - name: "Using KDbgCtrl"
       href: using-kdbgctrl.md
-  - name: "Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)"
+  - name: "Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)"
     href: debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
   - name: "Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)"
     href: debug-universal-drivers--kernel-mode-.md
@@ -99,6 +116,11 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview Basics"
+# Auto-expanded node
+    items: 
+    - name: "WinDbg Preview Basics"
+      href: windbg-preview-basics.md
   - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
@@ -150,6 +172,10 @@
         href: time-travel-debugging-range-objects.md
       - name: "Time Travel Debugging - Thread objects"
         href: time-travel-debugging-thread-objects.md
+      - name: "Time Travel Debugging - Module objects"
+        href: time-travel-debugging-module-objects.md
+      - name: "Time Travel Debugging - Collection objects"
+        href: time-travel-debugging-collection-objects.md
     - name: "Time Travel Debugging - JavaScript Automation"
       href: time-travel-debugging-javascript-automation.md
 - name: "Debugging Resources"
@@ -1033,7 +1059,7 @@
     - name: "Setting Symbol and Executable Image Paths in WinDbg"
       href: setting-symbol-and-source-paths-in-windbg.md
     - name: "Remote Debugging Using WinDbg"
-      href: remode-debugging-using-windbg.md
+      href: remote-debugging-using-windbg.md
     - name: "Entering Debugger Commands in WinDbg"
       href: debugger-command-window.md
     - name: "Using the Command Browser Window in WinDbg"
@@ -1122,6 +1148,8 @@
     href: controlling-the-target.md
   - name: "Enabling Postmortem Debugging"
     href: enabling-postmortem-debugging.md
+  - name: "Open Enclave debugging"
+    href: open-enclave-debugging.md
   - name: "Using the Debugger Command Window"
 # Auto-expanded node
     items: 
@@ -1669,19 +1697,10 @@
     - name: "NDIS Debugging"
 # Auto-expanded node
       items: 
-      - name: "NDIS Debugging"
-        href: ndis-debugging.md
       - name: "Overview of NDIS Debugging"
         href: overview-of-ndis-debugging.md
-      - name: "Preparing for NDIS Debugging"
-        href: preparing-for-ndis-debugging.md
       - name: "Enabling NDIS Debug Tracing"
-# Auto-expanded node
-        items: 
-        - name: "Enabling NDIS Debug Tracing"
-          href: enabling-ndis-debug-tracing.md
-        - name: "Enabling NDIS Debug Tracing By Setting Registry Values"
-          href: enabling-ndis-debug-tracing-by-setting-registry-values.md
+        href: enabling-ndis-debug-tracing.md
     - name: "Kernel Streaming Debugging"
 # Auto-expanded node
       items: 
@@ -1769,6 +1788,8 @@
       href: symbols-and-symbol-files.md
     - name: "Public and Private Symbols"
       href: public-and-private-symbols.md
+    - name: "Portable PDB Symbols"
+      href: symbols-portable-pdb.md
   - name: "Accessing Symbols for Debugging"
 # Auto-expanded node
     items: 
@@ -1840,8 +1861,6 @@
       href: symstore-transactions.md
     - name: "File System References and Symbol Files"
       href: file-system-references-and-symbol-files.md
-    - name: "SymStore Compressed Files"
-      href: symstore-compressed-files.md
     - name: "Symbol Storage Format"
       href: symbol-storage-format.md
   - name: "How the Debugger Recognizes Symbols"
@@ -1959,6 +1978,8 @@
           href: forcing-a-system-crash-from-the-debugger.md
         - name: "Forcing a System Crash from the Keyboard"
           href: forcing-a-system-crash-from-the-keyboard.md
+        - name: "Forcing a System Crash with the Power Button"
+          href: forcing-a-system-crash-with-the-power-button.md
       - name: "Creating a Dump File Without a System Crash"
         href: creating-a-dump-file-without-a-system-crash.md
       - name: "Verifying the Creation of a Kernel-Mode Dump File"
@@ -1972,8 +1993,6 @@
         href: analyzing-a-kernel-mode-dump-file-with-kd.md
       - name: "Analyzing a Kernel-Mode Dump File with WinDbg"
         href: analyzing-a-kernel-mode-dump-file-with-windbg.md
-      - name: "Analyzing a Kernel-Mode Dump File with KAnalyze"
-        href: analyzing-a-kernel-mode-dump-file-with-kanalyze.md
   - name: "User-Mode Dump Files"
 # Auto-expanded node
     items: 
@@ -3532,8 +3551,6 @@
         href: -dml-proc.md
       - name: "!dumpfa"
         href: -dumpfa.md
-      - name: "!elog_str"
-        href: -elog-str.md
       - name: "!envvar"
         href: -envvar.md
       - name: "!error"
@@ -3894,7 +3911,7 @@
       - name: "!ppmperfpolicy"
         href: -ppmperfpolicy.md
       - name: "!ppmsettings"
-        href: -ppmstate.md
+        href: -ppmsettings.md
       - name: "!ppmstate"
         href: -ppmstate.md
       - name: "!prcb"
@@ -4398,16 +4415,6 @@
           href: -ndiskd-pendingnbls.md
         - name: "!ndiskd.nbllog"
           href: -ndiskd-nbllog.md
-        - name: "!ndiskd.cxadapter"
-          href: -ndiskd-cxadapter.md
-        - name: "!ndiskd.netqueue"
-          href: -ndiskd-netqueue.md
-        - name: "!ndiskd.netrb"
-          href: -ndiskd-netrb.md
-        - name: "!ndiskd.netpacket"
-          href: -ndiskd-netpacket.md
-        - name: "!ndiskd.netpacketfragment"
-          href: -ndiskd-netpacketfragment.md
         - name: "!ndiskd.oid"
           href: -ndiskd-oid.md
         - name: "!ndiskd.interfaces"
@@ -4454,6 +4461,23 @@
           href: -ndiskd-ndiskdversion.md
         - name: "!ndiskd.netreport"
           href: -ndiskd-netreport.md
+        - name: "NDIS CX Extensions (Ndiskd.dll)"
+# Auto-expanded node
+          items: 
+          - name: "!ndiskd.cxadapter"
+            href: -ndiskd-cxadapter.md
+          - name: "!ndiskd.netqueue"
+            href: -ndiskd-netqueue.md
+          - name: "!ndiskd.netrb"
+            href: -ndiskd-netrb.md
+          - name: "!ndiskd.netpacket"
+            href: -ndiskd-netpacket.md
+          - name: "!ndiskd.netfragment"
+            href: -ndiskd-netfragment.md
+          - name: "!ndiskd.nrc"
+            href: -ndiskd-nrc.md
+          - name: "!ndiskd.netring"
+            href: -ndiskd-netring.md
       - name: "RPC Extensions (Rpcexts.dll)"
 # Auto-expanded node
         items: 
@@ -4546,13 +4570,6 @@
           href: -nstree.md
         - name: "!rsdt"
           href: -rsdt.md
-      - name: "Graphics Driver Extensions (Gdikdx.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Graphics Driver Extensions (Gdikdx.dll)"
-          href: graphics-driver-extensions--gdikdx-dll-.md
-        - name: "!gdikdx.verifier"
-          href: -gdikdx-verifier.md
       - name: "Kernel Streaming Extensions (Ks.dll)"
 # Auto-expanded node
         items: 
@@ -4830,10 +4847,6 @@
           href: -wmitrace-tmffile.md
         - name: "!wmitrace.traceoperation"
           href: -wmitrace-traceoperation.md
-      - name: "OEM Support Extensions (kdex2x86.dll)"
-        href: oem-support-extensions--kdex2x86-dll-.md
-      - name: "SieExtPub.dll"
-        href: sieextpub-dll.md
   - name: "Debugger-Related APIs"
 # Auto-expanded node
     items: 

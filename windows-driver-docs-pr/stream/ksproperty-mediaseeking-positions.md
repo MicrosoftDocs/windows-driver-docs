@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_POSITIONS
 description: The KSPROPERTY\_MEDIASEEKING\_POSITIONS property sets the media time and/or the stop time on a filter.
-ms.assetid: 20f0e97a-37bb-4c01-8012-b73bb765f4b9
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITIONS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_MEDIASEEKING\_POSITIONS property sets the media time and/or the 
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions" data-raw-source="[&lt;strong&gt;KSPROPERTY_POSITIONS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions)"><strong>KSPROPERTY_POSITIONS</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions" data-raw-source="[&lt;strong&gt;KSPROPERTY_POSITIONS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions)"><strong>KSPROPERTY_POSITIONS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,14 +78,5 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_POSITIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_POSITIONS**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions)
 

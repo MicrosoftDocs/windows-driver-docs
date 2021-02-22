@@ -1,7 +1,6 @@
 ---
 title: FSCTL_GET_EXTERNAL_BACKING control code
 description: The FSCTL\_GET\_EXTERNAL\_BACKING control code gets the backing information for a file from an external backing provider.
-ms.assetid: 18A8E71E-CAED-4E0A-95D0-18E99F9733B2
 keywords: ["FSCTL_GET_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,18 +19,18 @@ ms.localizationpriority: medium
 
 The **FSCTL\_GET\_EXTERNAL\_BACKING** control code gets the backing information for a file from an external backing provider. Backing providers include the Windows Image Format (WIM) provider or individual compressed file provider. Content for externally backed files may reside on volumes other than on the volume containing the queried file.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance--in-"></a>*Instance \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer for the caller. This parameter is required and cannot be NULL.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer for the caller. This parameter is required and cannot be NULL.
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object of the file for which backing information is queried. This parameter is required and cannot be NULL.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object of the file for which backing information is queried. This parameter is required and cannot be NULL.
 
 <a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The handle of the file for which backing information is queried. This parameter is required and cannot be NULL.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The handle of the file for which backing information is queried. This parameter is required and cannot be NULL.
 
 <a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
 A control code for the operation. Use **FSCTL\_GET\_EXTERNAL\_BACKING** for this operation.
@@ -43,7 +42,7 @@ None. Set to **NULL**.
 Set to 0.
 
 <a href="" id="outputbuffer--out-"></a>*OutputBuffer \[out\]*  
-A pointer to the output buffer, which must have a size large enough to receive a [**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by the provider data. For WIM backed files, **WOF\_EXTERNAL\_INFO** is followed by a [**WIM\_PROVIDER\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info) structure. For individually compressed files, **WOF\_EXTERNAL\_INFO** is followed by a [**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_provider_external_info_v1) structure.
+A pointer to the output buffer, which must have a size large enough to receive a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by the provider data. For WIM backed files, **WOF\_EXTERNAL\_INFO** is followed by a [**WIM\_PROVIDER\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info) structure. For individually compressed files, **WOF\_EXTERNAL\_INFO** is followed by a [**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_provider_external_info_v1) structure.
 
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 Size, in bytes, of the buffer pointed to by *OutputBuffer*.
@@ -54,7 +53,7 @@ Specifies the number of bytes written into *OutputBuffer* on successful completi
 Status block
 ------------
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
 <table>
 <colgroup>
@@ -84,7 +83,7 @@ Status block
 Remarks
 -------
 
-When the backing provider for the data source to update is a WIM file, the output buffer will contain a [**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**WIM\_PROVIDER\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info) structure. The *OutputBufferLength* must be at least **sizeof**(WOF\_EXTERNAL\_INFO) + **sizeof**(WIM\_PROVIDER\_EXTERNAL\_INFO). When the backing provider is an individually compressed file, the output buffer will contain a **WOF\_EXTERNAL\_INFO** structure followed by a [**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_provider_external_info_v1) structure.
+When the backing provider for the data source to update is a WIM file, the output buffer will contain a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**WIM\_PROVIDER\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info) structure. The *OutputBufferLength* must be at least **sizeof**(WOF\_EXTERNAL\_INFO) + **sizeof**(WIM\_PROVIDER\_EXTERNAL\_INFO). When the backing provider is an individually compressed file, the output buffer will contain a **WOF\_EXTERNAL\_INFO** structure followed by a [**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_provider_external_info_v1) structure.
 
 Requirements
 ------------
@@ -109,22 +108,15 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
 [**FSCTL\_SET\_EXTERNAL\_BACKING**](fsctl-set-external-backing.md)
 
-[**WIM\_PROVIDER\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info)
+[**WIM\_PROVIDER\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info)
 
-[**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info)
-
- 
+[**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info)
 
  
-
-
-
-
-
 

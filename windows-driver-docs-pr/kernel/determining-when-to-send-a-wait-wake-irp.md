@@ -1,7 +1,6 @@
 ---
 title: Determining When to Send a Wait/Wake IRP
 description: Determining When to Send a Wait/Wake IRP
-ms.assetid: a56cfccc-b44b-4ec5-836b-3a9711ef5f1f
 keywords: ["timing wait/wake IRPs WDK power management", "sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,12 +18,7 @@ The driver that owns device power policy sends wait/wake IRPs on behalf of its d
 
 -   The system is going to sleep and the device must be able to awaken it.
 
-The power policy owner should send the wait/wake IRP before any such conditions are imminent. It can send the IRP any time its device is in D0, but it must not send such an IRP while it is handling another set-power or query-power IRP. As a general rule, the driver should send the IRP during its handling of the Plug and Play manager's [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request, after it has initialized and started the device.
+The power policy owner should send the wait/wake IRP before any such conditions are imminent. It can send the IRP any time its device is in D0, but it must not send such an IRP while it is handling another set-power or query-power IRP. As a general rule, the driver should send the IRP during its handling of the Plug and Play manager's [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request, after it has initialized and started the device.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xE2 MANUALLY_INITIATED_CRASH
 description: The MANUALLY_INITIATED_CRASH bug check has a value of 0x000000E2. This indicates that the user deliberately initiated a crash dump from either the kernel debugger or the keyboard.
-ms.assetid: 6248355f-6b27-44ac-8772-8599630a8245
 keywords: ["Bug Check 0xE2 MANUALLY_INITIATED_CRASH", "MANUALLY_INITIATED_CRASH"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,4 +26,4 @@ None
 
 ## Remarks
 
-For more information about manually-initiated crash dumps, see [Forcing a System Crash.](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash).
+For more information about manually-initiated crash dumps, see [Forcing a System Crash.](forcing-a-system-crash.md).

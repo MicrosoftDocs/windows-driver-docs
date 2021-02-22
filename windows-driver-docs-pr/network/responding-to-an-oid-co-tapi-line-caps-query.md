@@ -1,7 +1,6 @@
 ---
 title: Responding to an OID_CO_TAPI_LINE_CAPS Query
 description: Responding to an OID_CO_TAPI_LINE_CAPS Query
-ms.assetid: b1ca65c6-ecce-4d2c-b7ca-03b6a334f97b
 keywords:
 - voice streaming WDK networking , support specification
 - OID_CO_TAPI_LINE_CAPS
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-In response to an [OID\_CO\_TAPI\_LINE\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-tapi-line-caps) query, a call manager or MCM returns a CO\_TAPI\_LINE\_CAPS structure that contains a LINE\_DEV\_CAPS structure. To support voice streaming, a call manager or MCM must specify the following values in the LINE\_DEV\_CAPS structure:
+In response to an [OID\_CO\_TAPI\_LINE\_CAPS](./oid-co-tapi-line-caps.md) query, a call manager or MCM returns a CO\_TAPI\_LINE\_CAPS structure that contains a LINE\_DEV\_CAPS structure. To support voice streaming, a call manager or MCM must specify the following values in the LINE\_DEV\_CAPS structure:
 
 -   **ulMediaModes**
 
@@ -38,10 +37,4 @@ In response to an [OID\_CO\_TAPI\_LINE\_CAPS](https://docs.microsoft.com/windows
     This field must be filled in with a bitwise OR of the LINEDIGITMODE\_constants that specify the digit modes than can be detected on this line. For a description of the LINEDIGITMODE\_constants, see the description of **dwMonitorDigitModes** in the Windows SDK documentation.
 
  
-
- 
-
-
-
-
 

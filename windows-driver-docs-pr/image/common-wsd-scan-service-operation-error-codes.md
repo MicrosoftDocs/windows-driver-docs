@@ -1,7 +1,6 @@
 ---
 title: Common WSD Scan Service Operation Error Codes
 description: This topic lists error codes that are common to all WSD Scan Service operations.
-ms.assetid: 138c29ff-5b2f-4145-95b0-4a9e8489bb37
 keywords: ["Common WSD Scan Service Operation Error Codes Imaging Devices"]
 topic_type:
 - apiref

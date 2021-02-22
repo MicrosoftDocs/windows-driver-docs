@@ -1,8 +1,7 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
-ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
-ms.date: 01/29/2020
+ms.date: 05/07/2020
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +19,7 @@ Debugging over a USB 3.0 cable requires the following hardware:
 
 - On the target computer, an xHCI (USB 3.0) host controller that supports debugging
 
-## <span id="setting_up_the_computer_usb3_manual"></span><span id="SETTING_UP_THE_COMPUTER_USB3_MANUAL"></span>Setting Up the Target Computer
+## Setting Up the Target Computer
 
 1. On the target computer, launch the UsbView tool. The UsbView tool is included in Debugging Tools for Windows.
 2. In UsbView, locate all of the xHCI host controllers.
@@ -62,15 +61,15 @@ Debugging over a USB 3.0 cable requires the following hardware:
 
    where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
-   -  The string must not contain “debug” anywhere in the *TargetName* in any combination of upper or lower case. For example if you use “DeBuG” or "DEBUG" anywhere in your targetname, debugging will not work correctly.  
-   -  The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
-   -  The maximum length of the string is 24 characters.
+   - The string must not contain “debug” anywhere in the *TargetName* in any combination of upper or lower case. For example if you use “DeBuG” or "DEBUG" anywhere in your targetname, debugging will not work correctly.  
+   - The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
+   - The maximum length of the string is 24 characters.
 
-7. If you have more than one USB host controller on the target computer, enter this command:
+7. In Device Manager locate the USB Controller that you intend to use for debugging. Under *Location* on the *General* tab, the bus, device, and function numbers are displayed. Enter this command:
 
    **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
 
-   where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging. The bus, device, and function numbers must be in decimal format.
+   where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller. The bus, device, and function numbers must be in decimal format.
 
    Example:
 
@@ -78,7 +77,17 @@ Debugging over a USB 3.0 cable requires the following hardware:
 
 8. Reboot the target computer.
 
-## <span id="Starting_a_Debugging_Session_for_the_First_Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
+### Disable Power Management
+
+In some cases, power transitions can interfere with debugging over USB 3.0. To avoid these problems, disable selective suspend for the xHCI host controller (and its root hub) that you are using for debugging.
+
+1. In Device Manager, navigate to the node for the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+
+2. In Device Manager, navigate to the node for the root hub of the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+
+When you have finished using the xHCI host controller for debugging, re-enable selective suspend for the xHCI host controller.
+
+## Starting a Debugging Session for the First Time
 
 1. Connect a Universal Serial Bus (USB) 3.0 debug cable to the USB 3.0 ports that you have chosen for debugging on the host and target computers.
 2. Determine the bitness (32-bit or 64-bit) of Windows running on the host computer.
@@ -87,9 +96,9 @@ Debugging over a USB 3.0 cable requires the following hardware:
 
 At this point, the USB debug driver gets installed on the host computer. This is why it is important to match the bitness of WinDbg to the bitness of Windows. After the USB debug driver is installed, you can use either the 32-bit or 64-bit version of WinDbg for subsequent debugging sessions.
 
-## <span id="starting_the_debugging_session_usb3_manual"></span><span id="STARTING_THE_DEBUGGING_SESSION_USB3_MANUAL"></span>Starting a Debugging Session
+## Starting a Debugging Session
 
-### <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
+### Using WinDbg
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **USB** tab. Enter the target name that you created when you set up the target computer. Click **OK**.
 
@@ -97,26 +106,36 @@ You can also start a session with WinDbg by entering the following command in a 
 
 **windbg /k usb:targetname=**<em>TargetName</em>
 
-### <span id="Using_KD"></span><span id="using_kd"></span><span id="USING_KD"></span>Using KD
+### Using KD
 
 On the host computer, open a Command Prompt window and enter the following command, where *TargetName* is the target name you created when you set up the target computer:
 
 **kd /k usb:targetname=**<em>TargetName</em>
 
-Once the debugger is connected, reboot the target computer. One way to do reboot the PC, is to use the `shutdown -r -t 0 ` command from an administrator's command prompt.
+### Reboot the target computer
+
+Once the debugger is connected, reboot the target computer. One way to do reboot the PC, is to use the `shutdown -r -t 0` command from an administrator's command prompt.
 
 After the target PC restarts, the debugger should connect automatically.
 
-## <span id="troubleshooting_tips_for_debugging_over_usb_3.0"></span><span id="TROUBLESHOOTING_TIPS_FOR_DEBUGGING_OVER_USB_3.0"></span>Troubleshooting tips for debugging over USB 3.0
+## Troubleshooting
 
-In some cases, power transitions can interfere with debugging over USB 3.0. If you have this problem, disable selective suspend for the xHCI host controller (and its root hub) that you are using for debugging.
+### USB device not recognized
 
-1. In Device Manager, navigate to the node for the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+If a windows notification appears on the host with the text "USB device not recognized" when inserting the debug cable it is possible that a known USB 3.1 to 3.1 compatibility issue is being hit. This issue affects debug configurations when the debug cable is connected to a USB 3.1 controller on the host and an Intel (Ice Lake or Tiger Lake) 3.1 USB controller on the target.
 
-2. In Device Manager, navigate to the node for the root hub of the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+For more information and processor model listings see [Ice Lake (microprocessor) - Wikipedia](https://en.wikipedia.org/wiki/Ice_Lake_(microprocessor)) and or [Tiger Lake (microprocessor) - Wikipedia](https://en.wikipedia.org/wiki/Tiger_Lake_(microprocessor)). To find the processor model of the target machine, open the Settings app and go to "System" then "About". "Processor" will be listed under "Device specifications".
 
-When you have finished using the xHCI host controller for debugging, enable selective suspend for the xHCI host controller.
+To verify this is the problem occurring, open device manager and look for "USB Debug Connection Device" under "Universal Serial Bus controllers". If this device cannot be found, check for an "Unknown device" under "Other devices". Right click on the device to open its properties page. The device status text box will have the text "Windows has stopped this device because it has reported problems. (Code 43)" and "The USB device returned an invalid USB BOS descriptor".
 
-## <span id="related_topics"></span>Related topics
+To work around this problem, run these commands from an administrator command prompt to make changes to the registry:
+```
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\349500E00000 /v SkipBOSDescriptorQuery /t REG_DWORD /d 1 /f
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\045E06560000 /v SkipBOSDescriptorQuery /t REG_DWORD /d 1 /f
+```
+
+Then, remove and re-insert the debug cable.
+
+## Related topics
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)

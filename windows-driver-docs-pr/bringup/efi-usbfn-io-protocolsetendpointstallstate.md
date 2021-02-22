@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
 description: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
-ms.assetid: bd754296-5002-48b6-9986-fa09c2094470
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DSSPEAKER_DIRECTOUT Speaker Configuration
 description: DSSPEAKER_DIRECTOUT Speaker Configuration
-ms.assetid: a4198fb7-157f-40e3-8cca-5a9e392087d2
 keywords:
 - DSSPEAKER_DIRECTOUT speaker configuration WDK audio
 ms.date: 04/20/2017
@@ -52,11 +51,11 @@ Piano
 
 For this kind of raw audio data, speaker positions are meaningless, and assigning speaker positions to the input or output streams might cause unwanted side effects. For example, a component such as KMixer might intervene inappropriately by applying speaker-specific effects such as 3D virtualization or Dolby Surround Pro Logic encoding to the stream. Note that the number of raw-data channels is not limited by the number of bits in the channel mask.
 
-Even a device that is not designed specifically for audio editing should typically accept a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) set-property request to change its speaker configuration to KSAUDIO\_SPEAKER\_DIRECTOUT. In general, a device should avoid failing the request unless it can somehow verify that its outputs are connected to speakers and cannot be used externally for any other purpose (for example, as inputs to an external mixer).
+Even a device that is not designed specifically for audio editing should typically accept a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) set-property request to change its speaker configuration to KSAUDIO\_SPEAKER\_DIRECTOUT. In general, a device should avoid failing the request unless it can somehow verify that its outputs are connected to speakers and cannot be used externally for any other purpose (for example, as inputs to an external mixer).
 
-An application that uses direct-out mode is typically written for a specific hardware device. This allows the application to know in advance which direct-out data formats the device supports, including the number of channels and how the data in those channels should be interpreted. This knowledge is necessary because when an application calls **IDirectSound::GetSpeakerConfig** on a device that is configured in direct-out mode, the device merely confirms that it is in this mode; it provides no additional information regarding the number of channels in the stream formats that it supports in direct-out mode. (This information might be obtained, however, by sending a [**KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mix-level-caps) get-property request to the supermixer node on the device's mixer pin; see [DirectSound Node-Ordering Requirements](directsound-node-ordering-requirements.md).)
+An application that uses direct-out mode is typically written for a specific hardware device. This allows the application to know in advance which direct-out data formats the device supports, including the number of channels and how the data in those channels should be interpreted. This knowledge is necessary because when an application calls **IDirectSound::GetSpeakerConfig** on a device that is configured in direct-out mode, the device merely confirms that it is in this mode; it provides no additional information regarding the number of channels in the stream formats that it supports in direct-out mode. (This information might be obtained, however, by sending a [**KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS**](./ksproperty-audio-mix-level-caps.md) get-property request to the supermixer node on the device's mixer pin; see [DirectSound Node-Ordering Requirements](directsound-node-ordering-requirements.md).)
 
-When specifying the wave format for a direct-out stream, an application should set the **dwChannelMask** member of the [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure to the value KSAUDIO\_SPEAKER\_DIRECTOUT, which is zero. A channel mask of zero indicates that no speaker positions are defined. As always, the number of channels in the stream is specified in the **Format.nChannels** member.
+When specifying the wave format for a direct-out stream, an application should set the **dwChannelMask** member of the [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure to the value KSAUDIO\_SPEAKER\_DIRECTOUT, which is zero. A channel mask of zero indicates that no speaker positions are defined. As always, the number of channels in the stream is specified in the **Format.nChannels** member.
 
 Hardware vendors have the option of supporting DirectSound hardware acceleration when their devices are configured in direct-out mode. A DirectSound application can play back a direct-out stream through one of the device's mixing pins, if one is available. Once all the available hardware pin instances have been exhausted, any new streams pass through KMixer instead.
 
@@ -76,14 +75,9 @@ An audio authoring application might need to let the user listen to the data tha
 
 -   Configures the target audio device (this is not necessarily the device that the application uses to edit the stream) in stereo mode by calling **SetSpeakerConfig** with DSSPEAKER\_STEREO.
 
--   Changes **dwChannelMask** in the playback stream's [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure to KSAUDIO\_SPEAKER\_STEREO but leaves **Format.nChannels** set to 24, which is the total number of channels in the stream.
+-   Changes **dwChannelMask** in the playback stream's [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure to KSAUDIO\_SPEAKER\_STEREO but leaves **Format.nChannels** set to 24, which is the total number of channels in the stream.
 
 KMixer mixes only the stereo channels of the playback stream, which are described in the channel mask, and discards the remaining 22 channels, which contain raw data. Remember that any change made to the DirectSound speaker-configuration setting is unlikely to take effect until the current DirectSound object is destroyed and another is created (see [Applying Speaker-Configuration Settings](applying-speaker-configuration-settings.md)).
 
  
-
- 
-
-
-
 

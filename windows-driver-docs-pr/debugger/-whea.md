@@ -1,7 +1,6 @@
 ---
 title: whea
 description: The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information.
-ms.assetid: 5d621507-74e7-4a43-8600-88dca29e461d
 keywords: ["whea Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,7 +57,7 @@ This extension can be used only in Windows Vista and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-The [**!errrec**](-errrec.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](https://go.microsoft.com/fwlink/p/?linkid=153571) in the Windows Driver Kit (WDK) documentation.
+The [**!errrec**](-errrec.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](../whea/index.md) in the Windows Driver Kit (WDK) documentation.
 
 Remarks
 -------
@@ -160,10 +159,4 @@ Error Source 3 @ fffffa8007d0dbc0
 ```
 
  
-
- 
-
-
-
-
 

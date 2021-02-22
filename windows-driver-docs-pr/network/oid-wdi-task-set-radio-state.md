@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_SET_RADIO_STATE
 description: OID_WDI_TASK_SET_RADIO_STATE is used to set the Wi-Fi radio state for the adapter.
-ms.assetid: d7981df2-d3e5-49fd-8414-ca350775828b
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SET_RADIO_STATE Network Drivers Starting with Windows Vista
@@ -30,7 +29,7 @@ Before the host turns off the radio, it disconnects all peers and stops any Grou
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                                                                                           |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_RADIO\_STATE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-radio-state-parameters) |                                |          | The desired state of the radio. If this set to 1, the radio is enabled. If this is set to 0, the radio is turned off. |
+| [**WDI\_TLV\_RADIO\_STATE\_PARAMETERS**](./wdi-tlv-radio-state-parameters.md) |                                |          | The desired state of the radio. If this set to 1, the radio is enabled. If this is set to 0, the radio is turned off. |
 
  
 
@@ -69,9 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

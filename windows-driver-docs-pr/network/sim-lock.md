@@ -1,7 +1,6 @@
 ---
 title: SIM locking
 description: SIM locking
-ms.assetid: b2ea81ec-fb49-4016-9918-a808aab549f7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

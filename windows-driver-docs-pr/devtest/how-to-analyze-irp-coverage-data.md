@@ -1,7 +1,6 @@
 ---
 title: How to Analyze IRP Coverage Data
 description: How to Analyze IRP Coverage Data
-ms.assetid: 71b87948-8e69-4b4a-9546-ea27e96a4bf8
 keywords:
 - Driver Coverage Toolkit WDK , analyzing data
 ms.date: 04/20/2017
@@ -21,7 +20,7 @@ After you have collected the IRP coverage data for one or more devices on a test
 
 For this topic, we use, as an example, a report produced from IRP coverage data that was enabled for a device node (devnode) on a test computer. The devnode is 9740, and IRP coverage was previously enabled for the devnode by running the **Enable IRP coverage data collection** tool on the test computer.
 
-For information about setting up the WDK and the Visual Studio test environment, see [How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers). For information about selecting and configuring tests and tool parameters, see [How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers) and [Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers).
+For information about setting up the WDK and the Visual Studio test environment, see [How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers). For information about selecting and configuring tests and tool parameters, see [How to select and configure the Device Fundamentals tests](/windows-hardware/drivers) and [Device Fundamentals Test Parameters](/windows-hardware/drivers).
 
 After the IRP coverage data has been collected, an IRP coverage report for this devnode is produced by running the **Display collected IRP coverage data** tool on the test computer.
 
@@ -284,10 +283,4 @@ The IRP pair coverage data for devnode 9740 is shown in the following example:
 ```
 
  
-
- 
-
-
-
-
 

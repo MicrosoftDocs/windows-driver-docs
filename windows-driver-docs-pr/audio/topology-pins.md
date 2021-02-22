@@ -1,7 +1,6 @@
 ---
 title: Topology Pins
 description: Topology Pins
-ms.assetid: b434e2a7-4acc-4ef1-9db9-8f1b82f68de3
 keywords:
 - topology pins WDK audio
 - pins WDK audio , topology
@@ -27,7 +26,7 @@ ms.localizationpriority: medium
 
 The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates topology pins on KS filters into the source and destination mixer lines that the mixer API exposes to applications. Input (sink) pins become source mixer lines, and output (source) pins become destination mixer lines.
 
-As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcpin_descriptor) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
+As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcpin_descriptor) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
 
 -   **Dataflow direction specifier**
 
@@ -343,7 +342,7 @@ The following table shows how the output pin **KS pin category GUID**s map to th
 
 For all pin categories that do not appear in the preceding tables, WDMAud translates the output pins to destination mixer lines with target types of MIXERLINE\_TARGETTYPE\_UNDEFINED and component types of MIXERLINE\_COMPONENTTYPE\_DST\_UNDEFINED.
 
-In the preceding tables, most of the KS pin category GUIDs have KSNODETYPE\_*Xxx* names. These names are defined in header files Ksmedia.h and Dmusprop.h. (Two departures from this naming convention are GUIDs KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, which are also defined in Ksmedia.h.) As described in [Topology Nodes](topology-nodes.md), KSNODETYPE\_*Xxx* GUIDs can also be used to designate KS node types. Most KSNODETYPE\_*Xxx* GUIDs specify either pin categories or node types, but not both. The exception is [**KSNODETYPE\_SYNTHESIZER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-synthesizer), which can specify either a pin category or a node type, depending on the context in which is used. For a list of KSNODETYPE\_*Xxx* GUIDs representing pin categories, see [Pin Category Property](pin-category-property.md). For a list of KSNODETYPE\_*Xxx* GUIDs representing node types, see [Audio Topology Nodes](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-topology-nodes).
+In the preceding tables, most of the KS pin category GUIDs have KSNODETYPE\_*Xxx* names. These names are defined in header files Ksmedia.h and Dmusprop.h. (Two departures from this naming convention are GUIDs KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, which are also defined in Ksmedia.h.) As described in [Topology Nodes](topology-nodes.md), KSNODETYPE\_*Xxx* GUIDs can also be used to designate KS node types. Most KSNODETYPE\_*Xxx* GUIDs specify either pin categories or node types, but not both. The exception is [**KSNODETYPE\_SYNTHESIZER**](./ksnodetype-synthesizer.md), which can specify either a pin category or a node type, depending on the context in which is used. For a list of KSNODETYPE\_*Xxx* GUIDs representing pin categories, see [Pin Category Property](pin-category-property.md). For a list of KSNODETYPE\_*Xxx* GUIDs representing node types, see [Audio Topology Nodes](./audio-topology-nodes.md).
 
 KSCATEGORY\_AUDIO is another dual-usage GUID. It can be used as either a **KS pin category GUID** or a **KS filter category GUID**, depending on the context. During device installation, an audio driver registers its device interface under the filter category KSCATEGORY\_AUDIO. For more information, see [Installing Device Interfaces for an Audio Adapter](installing-device-interfaces-for-an-audio-adapter.md).
 
@@ -356,9 +355,4 @@ Note that two streams on the right side of the audio device in the figure are in
 The SndVol32 application is a client of the mixer API. The mixer API converts each pin found in the topology to either a source or destination mixer line, but the line might not be shown in SndVol32, which recognizes only a subset of the mixer-line component types that header file Mmsystem.h defines for the mixer API. For more information about SndVol32, see [SysTray and SndVol32](systray-and-sndvol32.md).
 
  
-
- 
-
-
-
 

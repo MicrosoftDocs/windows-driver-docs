@@ -1,7 +1,6 @@
 ---
 title: promptIfDriverIsNotBetter XML Element
 description: promptIfDriverIsNotBetter XML Element
-ms.assetid: e5808c64-daa8-4aad-9a63-7ff79b0c2e49
 keywords: ["promptIfDriverIsNotBetter XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # promptIfDriverIsNotBetter XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **promptIfDriverIsNotBetter** XML element is an empty element that sets the **promptIfDriverIsNotBetter** flag to ON, which configures DPInst to display a dialog box if a new driver is not a better match to a device than a driver that is currently installed on the device. The dialog box informs a user of this situation and provides an option to replace the driver that is currently installed on the device with the new driver.
 
@@ -79,11 +78,4 @@ The following code example demonstrates a **promptIfDriverIsNotBetter** element.
 [**dpinst**](dpinst-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

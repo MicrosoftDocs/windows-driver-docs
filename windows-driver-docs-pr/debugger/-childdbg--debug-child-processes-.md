@@ -1,7 +1,6 @@
 ---
 title: .childdbg (Debug Child Processes)
 description: The .childdbg command controls the debugging of child processes.
-ms.assetid: 87d70d3b-d9d5-4a37-b8a7-1616ba78b2f3
 keywords: [".childdbg (Debug Child Processes) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,7 +52,7 @@ This command is only supported in Windows XP and later versions of Windows.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86, x64, and Itanium only</p></td>
+<td align="left"><p>x86 and x64</p></td>
 </tr>
 </tbody>
 </table>

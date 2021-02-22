@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_LID
 description: GUID_DEVICE_LID
-ms.assetid: e879b1bf-3f5f-4b6d-956b-006091377194
 keywords: ["GUID_DEVICE_LID Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_LID
 
 
-The GUID_DEVICE_LID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for Advanced Configuration and Power Interface (ACPI) lid devices.
+The GUID_DEVICE_LID [device interface class](./overview-of-device-interface-classes.md) is defined for Advanced Configuration and Power Interface (ACPI) lid devices.
 
 <table>
 <colgroup>
@@ -48,9 +47,9 @@ The GUID_DEVICE_LID [device interface class](https://docs.microsoft.com/windows-
 Remarks
 -------
 
-The system-supplied [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver) registers instances of this device interface class to notify the operating system and applications of the presence of ACPI lid devices.
+The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers instances of this device interface class to notify the operating system and applications of the presence of ACPI lid devices.
 
-For information about supplying WDM [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers) for ACPI devices, see [Supporting ACPI Devices](https://docs.microsoft.com/windows-hardware/drivers/acpi/supporting-acpi-devices).
+For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
 Requirements
 ------------
@@ -69,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: SetBindingSupport function
 description: The SetBindingSupport method sets the binding capabilities that are currently enabled for the indicated port.
-ms.assetid: 52a469df-b184-460b-b515-a0b6eb946f1f
 keywords: ["SetBindingSupport function Storage Devices"]
 topic_type:
 - apiref
@@ -42,7 +41,7 @@ A worldwide name that indicates the port whose persistent bindings will be retri
 A bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the [HBA\_BIND\_TYPE](hba-bind-type.md) WMI class qualifier.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out) structure.
 
 Return value
 ------------
@@ -83,16 +82,9 @@ Requirements
 
 [**SetBindingSupport**](setbindingsupport.md)
 
-[**SetBindingSupport\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_in)
+[**SetBindingSupport\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_in)
 
-[**SetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out)
-
- 
+[**SetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out)
 
  
-
-
-
-
-
 

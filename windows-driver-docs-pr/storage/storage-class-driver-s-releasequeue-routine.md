@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's ReleaseQueue Routine
 description: Storage Class Driver's ReleaseQueue Routine
-ms.assetid: 4d0f74f2-6c98-4de1-bc28-dfff3c01e319
 keywords:
 - ReleaseQueue
 - queues WDK storage
@@ -33,14 +32,9 @@ Freezing the queue under these conditions gives each storage class driver an opp
 
 A *ReleaseQueue* routine allocates and sets up an IRP and an SRB to either release or flush a frozen queue. The **Function** member of the SRB must be set to SRB\_FUNCTION\_RELEASE\_QUEUE or SRB\_FUNCTION\_FLUSH\_QUEUE, which both releases a frozen queue and cancels all currently queued requests for the target logical unit. The port driver completes all requests in a flushed queue with their **SrbStatus** members set to SRB\_STATUS\_REQUEST\_FLUSHED.
 
-Failing to release a frozen queue makes the device inaccessible, so a driver's *ReleaseQueue* routine should be designed to succeed even in low memory conditions. A *ReleaseQueue* routine should first attempt to allocate memory for an SRB by calling [**ExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool) with the **NonPagedPool** memory type and, if that allocation fails, use an SRB that was preallocated during driver initialization. If the driver allocates an SRB to hold in reserve when it initializes its device extension, as described in [Setting Up a Storage Class Driver's Device Extension](setting-up-a-storage-class-driver-s-device-extension.md), its *ReleaseQueue* can use that SRB if the memory pool is low, with an appropriate synchronization mechanism in case multiple concurrent release operations might be needed.
+Failing to release a frozen queue makes the device inaccessible, so a driver's *ReleaseQueue* routine should be designed to succeed even in low memory conditions. A *ReleaseQueue* routine should first attempt to allocate memory for an SRB by calling [**ExAllocatePool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool) with the **NonPagedPool** memory type and, if that allocation fails, use an SRB that was preallocated during driver initialization. If the driver allocates an SRB to hold in reserve when it initializes its device extension, as described in [Setting Up a Storage Class Driver's Device Extension](setting-up-a-storage-class-driver-s-device-extension.md), its *ReleaseQueue* can use that SRB if the memory pool is low, with an appropriate synchronization mechanism in case multiple concurrent release operations might be needed.
 
 Note that a class driver's *ReleaseQueue* routine is called asynchronously, generally from its *IoCompletion* routine. A class driver's *IoCompletion* routine cannot call *ReleaseQueue* to flush a queue that is not frozen. However, it can call *ReleaseQueue* to release an unfrozen queue, and the port driver simply ignores such a request.
 
  
-
- 
-
-
-
 

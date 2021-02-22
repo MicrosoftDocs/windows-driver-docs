@@ -1,7 +1,6 @@
 ---
 title: PlatenResolutions element
 description: The required PlatenResolutions element contains a list of resolutions at which the scanner's platen can scan.
-ms.assetid: 9adf54d7-4cca-4d43-b467-c0b2c84a4a7f
 keywords: ["PlatenResolutions element Imaging Devices"]
 topic_type:
 - apiref

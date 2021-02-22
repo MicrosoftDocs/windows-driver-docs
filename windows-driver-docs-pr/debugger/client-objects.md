@@ -1,7 +1,6 @@
 ---
 title: Client Objects
 description: Client Objects
-ms.assetid: 173a67f1-093e-4462-8e2c-41d0f10106d0
 keywords: ["Debugger Engine, client objects", "client objects"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ Almost all interaction with the [debugger engine](introduction.md#debugger-engin
 
 ### <span id="primary-clients"></span><span id="PRIMARY_CLIENTS"></span>Primary Clients
 
-A *primary client* is a client that has joined the current debugging session. Initially, when a new client object is created, it is not a primary client. A client becomes a primary client when it is used to acquire a target (for example, by calling [**CreateProcess2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)) or is connected to the debugging session using [**ConnectSession**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectsession). The debugger command [**.clients**](-clients--list-debugging-clients-.md) lists only the primary clients.
+A *primary client* is a client that has joined the current debugging session. Initially, when a new client object is created, it is not a primary client. A client becomes a primary client when it is used to acquire a target (for example, by calling [**CreateProcess2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)) or is connected to the debugging session using [**ConnectSession**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectsession). The debugger command [**.clients**](-clients--list-debugging-clients-.md) lists only the primary clients.
 
 ### <span id="callback-objects"></span><span id="CALLBACK_OBJECTS"></span>Callback Objects
 
@@ -31,17 +30,11 @@ Callback objects can be registered with each client. There are three types of ca
 
 ### <span id="remote-debugging"></span><span id="REMOTE_DEBUGGING"></span>Remote Debugging
 
-Client objects facilitate communication to remote instances of the host engine. The [**DebugConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-debugconnect) function creates a client object that is connected to a remote engine instance; methods called on this client are executed by the remote engine and callback objects registered locally with the client will be called when the remote engine makes callback calls.
+Client objects facilitate communication to remote instances of the host engine. The [**DebugConnect**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-debugconnect) function creates a client object that is connected to a remote engine instance; methods called on this client are executed by the remote engine and callback objects registered locally with the client will be called when the remote engine makes callback calls.
 
 ### <span id="additional-information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For details about creating and using client objects, see [Using Callback Objects](using-callback-objects.md). For details about registering callback objects, see Using Callback Objects.
 
  
-
- 
-
-
-
-
 

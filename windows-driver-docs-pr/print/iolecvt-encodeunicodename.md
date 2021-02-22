@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 326a9374-7ed5-4521-999a-2c4c59faa617
 keywords: ["EncodeUnicodeName method Print Devices", "EncodeUnicodeName method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , EncodeUnicodeName method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Accessing UMDF Metadata in WER Reports
 description: This topic describes the location and contents of the Windows Error Reporting (WER) reports that the operating system creates when a User-Mode Driver Framework (UMDF) crashes.The system generates WER reports for three different UMDF event types WUDFHostProblem, WUDFUnhandledException, and WUDFVerifierFailure.When the reflector terminates the driver host process, sometimes due to the host timeout threshold being exceeded, the system generates a file called Report.wer, which contains the WER information. Specifically, Report.wer contains UMDF metadata that may be helpful if you are trying to debug a UMDF driver with no access to a live debugging target.
-ms.assetid: ca5fe108-b4fb-4c90-87bc-9901854780d3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -208,7 +207,7 @@ The following table describes the possible values for the fields in a report of 
 <tr class="odd">
 <td align="left">2</td>
 <td align="left">ExceptionCode</td>
-<td align="left"><p>The reason the exception occurred. For a list of values, see <a href="https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-exception_record" data-raw-source="[&lt;strong&gt;EXCEPTION_RECORD&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-exception_record)"><strong>EXCEPTION_RECORD</strong></a>.</p></td>
+<td align="left"><p>The reason the exception occurred. For a list of values, see <a href="/windows/win32/api/winnt/ns-winnt-exception_record" data-raw-source="[&lt;strong&gt;EXCEPTION_RECORD&lt;/strong&gt;](/windows/win32/api/winnt/ns-winnt-exception_record)"><strong>EXCEPTION_RECORD</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">3</td>
@@ -323,14 +322,3 @@ The following table describes the possible values for the fields in a report of 
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Still Image Drivers
 description: Still Image Drivers
-ms.assetid: e207f76e-ff35-4a0d-a4bf-744931055eb8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

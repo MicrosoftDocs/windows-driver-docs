@@ -1,5 +1,5 @@
 ---
-Description: Supporting the Property Range Attributes
+description: Supporting the Property Range Attributes
 title: Supporting the Property Range Attributes
 ms.date: 04/20/2017
 ms.localizationpriority: medium

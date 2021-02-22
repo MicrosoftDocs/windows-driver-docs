@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY
 description: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY is a TLV that contains the policy used by the firmware for operating channel selection after a Wi-Fi Direct GO Reset is stopped/restarted.
-ms.assetid: 6EA61C65-8573-491D-9268-8A02440A1175
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY Network Drivers Starting with Windows Vista
@@ -28,7 +27,7 @@ The size (in bytes) of a UINT32.
 
 | Type                                                                                            | Description                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_P2P\_GO\_INTERNAL\_RESET\_POLICY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_go_internal_reset_policy) (UINT32) | If an Wi-Fi Direct GO Reset is stopped/restarted by the IHV component on its own (for example, for Bluetooth co-ex spatial stream downgrade), this configuration defines the policy to be adopted by the firmware for operating channel selection after the reset. |
+| [**WDI\_P2P\_GO\_INTERNAL\_RESET\_POLICY**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_go_internal_reset_policy) (UINT32) | If an Wi-Fi Direct GO Reset is stopped/restarted by the IHV component on its own (for example, for Bluetooth co-ex spatial stream downgrade), this configuration defines the policy to be adopted by the firmware for operating channel selection after the reset. |
 
  
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

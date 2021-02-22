@@ -1,7 +1,6 @@
 ---
 title: Setting Presentation Swap Intervals
 description: Setting Presentation Swap Intervals
-ms.assetid: 01626dbc-d7ac-482a-a07e-0f5ee3ffb05f
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8

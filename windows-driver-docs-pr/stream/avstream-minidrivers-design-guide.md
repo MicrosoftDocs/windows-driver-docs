@@ -1,7 +1,6 @@
 ---
 title: AVStream Minidrivers Design Guide
 description: AVStream Minidrivers Design Guide
-ms.assetid: ad717dca-55fe-428a-8d5c-239324251eda
 keywords:
 - streaming media WDK , AVStream minidrivers
 - media streaming WDK , AVStream minidrivers
@@ -30,11 +29,11 @@ This Design Guide describes how to design AVStream minidrivers that control stre
 
 [Writing an AVStream Minidriver](writing-an-avstream-minidriver.md)
 
-[Broadcast Driver Architecture Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
+[Broadcast Driver Architecture Drivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [Encoder Devices](encoder-devices.md)
 
-[AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
+[AV/C Client Drivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [USB Video Class Driver](usb-video-class-driver.md)
 
@@ -45,9 +44,4 @@ This Design Guide describes how to design AVStream minidrivers that control stre
 [Using Hardware Codec Support in AVStream](hardware-codec-support-in-avstream.md)
 
  
-
- 
-
-
-
 

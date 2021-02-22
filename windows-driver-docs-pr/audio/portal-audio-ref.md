@@ -1,7 +1,6 @@
 ---
 title: Audio Devices DDI Reference
 description: This section contains the reference pages for audio drivers that conform to the Windows Driver Model (WDM) and reference pages for interfaces for audio processing objects.
-ms.assetid: 41a45180-4635-4d5d-befa-3e57467d4e33
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -31,13 +30,7 @@ This section contains the reference pages for audio drivers that conform to the 
 ## <span id="additional_resources"></span>Additional resources
 
 
-For general information about developing drivers for audio devices, see [Audio Devices Design Guide](https://go.microsoft.com/fwlink/p/?LinkID=822637).
+For general information about developing drivers for audio devices, see [Audio Devices Design Guide](./index.md).
 
  
-
- 
-
-
-
-
 

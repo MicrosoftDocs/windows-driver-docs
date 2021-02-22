@@ -1,7 +1,6 @@
 ---
 title: 'REMOTE_NDIS_HALT_MSG'
-Description: 'This message is sent by the host to terminate the network connection.'
-ms.assetid: ad7802ff-20ee-4228-b236-a2ca39e8c478
+description: 'This message is sent by the host to terminate the network connection.'
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---

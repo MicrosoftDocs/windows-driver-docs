@@ -1,7 +1,6 @@
 ---
 title: Native 802.11 IHV UI Extensions COM Interfaces
 description: Native 802.11 IHV UI Extensions COM Interfaces
-ms.assetid: 95487686-17a0-43e2-93bb-99b3adb9dadd
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , COM interfaces
 - COM interfaces WDK Native 802.11 IHV UI Extensions DLL
@@ -23,7 +22,7 @@ Through the **IDot11ExtUI** COM interface, the operating system's Native 802.11 
 
 The Native 802.11 IHV UI Extensions DLL must provide an implementation of the **IDot11ExtUI** COM interface.
 
-For more information about this COM interface, see [IDot11ExtUI COM Interface](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff553769(v=vs.85)).
+For more information about this COM interface, see [IDot11ExtUI COM Interface](/previous-versions/windows/hardware/wireless/ff553769(v=vs.85)).
 
 <a href="" id="idot11extuiproperty"></a>**IDot11ExtUIProperty**  
 Through the **IDot11ExtUIProperty** COM interface, the Native 802.11 IHV UI Extensions DLL can extend the connection and security properties that are displayed by the Native 802.11 Network Configuration UI.
@@ -32,7 +31,7 @@ The **IDot11ExtUIProperty** COM interface is optional and is only required if th
 
 The Native 802.11 IHV UI Extensions DLL can provide one or more implementations of the **IDot11ExtUIProperty** COM interface, with each implementation representing an IHV-defined extension to a Native 802.11 property. The DLL can provide one or more property extensions for security settings. For Windows Vista, the DLL can add no more than one property extension for connection settings.
 
-For more information about this COM interface, see [IDot11ExtUIProperty COM Interface](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff553746(v=vs.85)).
+For more information about this COM interface, see [IDot11ExtUIProperty COM Interface](/previous-versions/windows/hardware/wireless/ff553746(v=vs.85)).
 
 <a href="" id="iwizardextension"></a>**IWizardExtension**  
 The Native 802.11 IHV UI Extensions DLL can provide one or more implementations of the **IWizardExtension** COM interface. Each implementation supports the display of one or more custom UI pages. These UI pages are displayed through one of the following:
@@ -43,15 +42,10 @@ The Native 802.11 IHV UI Extensions DLL can provide one or more implementations 
 
 -   An internal request made by a component of the Native 802.11 IHV UI Extensions DLL.
 
-For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607).
+For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](/windows/win32/api/shobjidl/nn-shobjidl-iwizardextension).
 
-For more information about the Native 802.11 Network Configuration UI component, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
-
- 
+For more information about the Native 802.11 Network Configuration UI component, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 
  
 
-
-
-
-
+ 

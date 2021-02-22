@@ -1,7 +1,6 @@
 ---
 title: SM\_SendSRL function
 description: The SM\_SendSRL WMI method sends a scan remote loop (SRL) command through the indicated port to the indicated domain controller.
-ms.assetid: 44090e8d-ffb2-48a9-a574-5bf067ffa952
 keywords: ["SM_SendSRL function Storage Devices"]
 topic_type:
 - apiref
@@ -98,14 +97,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendSRL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendsrl_out)
+[**SM\_SendSRL\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendsrl_out)
 
  
-
- 
-
-
-
-
-
 

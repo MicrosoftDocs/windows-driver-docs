@@ -1,7 +1,6 @@
 ---
 title: JobCompletedTime element
 description: The optional JobCompletedTime element specifies the time at which the scan job was completed.
-ms.assetid: f29449bd-c618-400f-b37c-3df7d955936b
 keywords: ["JobCompletedTime element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: POS driver samples
 description: The following samples demonstrate how to create universal drivers for point of service (POS) devices.
-ms.assetid: 648B0791-0C96-4857-AC93-C8EAB8DE1D6D
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

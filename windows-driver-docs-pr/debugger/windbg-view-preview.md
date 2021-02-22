@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
-ms.date: 01/10/2020
+ms.date: 07/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +47,7 @@ Use the stack Window to view the current call stack. The stack window provides b
 
 The disassembly window highlights the current instruction and retains that position when you scroll. 
 
-![ Disassembly window in debugger](images/windbgx-disassembly.png)
+![Screenshot that shows the "Disassembly" window in debugger.](images/windbgx-disassembly.png)
 
 ## Threads
 
@@ -72,6 +72,17 @@ Use the Notes option to open a note taking window.
 ## Timelines
 
 Use Timelines to open or bring focus to the timelines window. For more information on timelines, see [WinDbg Preview - Timelines](windbg-timeline-preview.md).
+
+## Modules
+
+Use modules to display loaded modules and their related information. Modules displays the following:
+
+- The name of the module including the path location
+- The size in bytes of the loaded module
+- The base address that the module is loaded at
+- The file version
+
+![Modules view window showing five modules listed](images/windbgx-view-modules.png)
 
 ## Layouts
 

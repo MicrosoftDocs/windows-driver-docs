@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_IHV
 description: OID_WDI_TASK_IHV is used to start an IHV-initiated task.
-ms.assetid: 2F18A92D-D658-4454-874F-7DC3B6F8F453
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_IHV Network Drivers Starting with Windows Vista
@@ -27,7 +26,7 @@ The task is initiated by the sending [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_
 
 | TLV                                                                                  | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-task-device-context) |                                | X        | The context data provided by the IHV component. This is forwarded from [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_ TASK\_REQUEST](ndis-status-wdi-indication-ihv-task-request.md). |
+| [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](./wdi-tlv-ihv-task-device-context.md) |                                | X        | The context data provided by the IHV component. This is forwarded from [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_ TASK\_REQUEST](ndis-status-wdi-indication-ihv-task-request.md). |
 
  
 
@@ -61,9 +60,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Managing the Digital Signature or Code Signing Keys
 description: Managing the Digital Signature or Code Signing Keys
-ms.assetid: 3aaa713b-c964-4a1e-9b2c-dee66cb4c4b2
 keywords:
 - driver signing WDK , cryptographic keys
 - signing drivers WDK , cryptographic keys

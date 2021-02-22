@@ -1,7 +1,6 @@
 ---
 title: Other SRB_FUNCTION_XXX Requests
 description: Other SRB_FUNCTION_XXX Requests
-ms.assetid: b0430d8e-e5cd-4f17-b77f-ec608b1469da
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -40,4 +39,4 @@ For details about these functions, see [Storage Class Drivers](introduction-to-s
 
 Miniport driver designers can assume that their miniport drivers will *never* be sent an SRB with any of the immediately preceding **Function** values. The NT-based operating system port driver handles these requests from storage class and filter drivers to protect higher-level drivers from having to access any HBA-specific (or miniport driver-specific) state information to find their devices or to cancel queued requests. This ensures that NT-based operating system storage class and filter drivers have no dependencies on any particular model of HBA.
 
-See [**SCSI_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block) structure for more information.
+See [**SCSI_REQUEST_BLOCK**](/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block) structure for more information.

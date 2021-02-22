@@ -1,7 +1,6 @@
 ---
 title: DDI usage rule set (Storport)
 description: Use these rules to verify that your driver correctly uses Storport DDIs correctly.
-ms.assetid: 858BBD97-4E3D-464A-B85F-358809431347
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -37,7 +36,7 @@ Use these rules to verify that your driver correctly uses Storport DDIs correctl
 <li>There is an assignment of NULL that is dereferenced later.</li>
 <li>There is a global/parameter to a procedure in a driver that may be NULL that is dereferenced later, and there is an explicit check in the driver that suggests that the initial value of the pointer may be NULL.</li>
 </ul>
-<p>With NullCheck rule violations, the most relevant code statements are highlighted in the trace tree pane. For more information about working with report output, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-report" data-raw-source="[Static Driver Verifier Report](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-report)">Static Driver Verifier Report</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/understanding-the-defect-viewer" data-raw-source="[Understanding the Trace Viewer](https://docs.microsoft.com/windows-hardware/drivers/devtest/understanding-the-defect-viewer)">Understanding the Trace Viewer</a>.</p>
+<p>With NullCheck rule violations, the most relevant code statements are highlighted in the trace tree pane. For more information about working with report output, see <a href="/windows-hardware/drivers/devtest/static-driver-verifier-report" data-raw-source="[Static Driver Verifier Report](./static-driver-verifier-report.md)">Static Driver Verifier Report</a> and <a href="/windows-hardware/drivers/devtest/understanding-the-defect-viewer" data-raw-source="[Understanding the Trace Viewer](./understanding-the-defect-viewer.md)">Understanding the Trace Viewer</a>.</p>
 <p></p></td>
 </tr>
 <tr class="odd">
@@ -65,13 +64,5 @@ Use these rules to verify that your driver correctly uses Storport DDIs correctl
     msbuild /t:sdv /p:Inputs="/check:DDIUsage.sdv" mydriver.VcxProj /p:Configuration="Win8 Release" /p:Platform=Win32
     ```
 
-    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers) and [Static Driver Verifier commands (MSBuild)](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
-
- 
-
- 
-
-
-
-
+    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
 

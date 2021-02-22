@@ -1,14 +1,13 @@
 ---
 title: ServiceInfo
 description: ServiceInfo
-ms.assetid: 0dab9e5b-122c-4fe4-9314-97a0531af4aa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceInfo
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceInfo element is the parent element of the [ServiceInfo XML schema](serviceinfo-xml-schema.md).
 

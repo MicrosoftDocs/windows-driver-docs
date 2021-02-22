@@ -1,7 +1,6 @@
 ---
 title: Enable silent process exit monitoring
 description: Enable silent process exit monitoring
-ms.assetid: 3FEA9660-541B-42D0-B020-CECEBF14BB4D
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

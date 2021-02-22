@@ -1,7 +1,6 @@
 ---
 title: WSDMON Port Monitor
 description: WSDMON Port Monitor
-ms.assetid: fd6b0136-ca6e-4882-b6b9-be868f0dfc18
 keywords:
 - print monitors WDK , WSDMON
 - WSDMON port monitors WDK
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # WSDMON Port Monitor
 
 
-The WSDMON port monitor is a printer port monitor that supports printing to network printers that comply with the [Web Services for Devices (WSD) technology](https://docs.microsoft.com/windows-hardware/drivers/print/web-services-for-devices-print-service-schema). The WSDMON port monitor listens for WSD events and updates the printer status accordingly. This port monitor is new for Windows Vista.
+The WSDMON port monitor is a printer port monitor that supports printing to network printers that comply with the [Web Services for Devices (WSD) technology](./web-services-for-devices-print-service-schema.md). The WSDMON port monitor listens for WSD events and updates the printer status accordingly. This port monitor is new for Windows Vista.
 
 The WSDMON port monitor can:
 
@@ -52,9 +51,4 @@ WSDMON supports the following Xcv commands:
 For more information about Web Services for Devices, see the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

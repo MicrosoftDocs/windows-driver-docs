@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_P2P_LISTEN_STATE
 description: OID_WDI_SET_P2P_LISTEN_STATE sets the Wi-Fi Direct listen state on the port.
-ms.assetid: d488903b-ef64-44b6-b07a-70168a0ccfd8
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista
@@ -37,9 +36,9 @@ If the adapter has a virtualized port operating on a non-social channel, the por
 
 | TLV                                                                         | Multiple TLV instances allowed | Optional | Description                                                                                                                                                      |
 |-----------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_LISTEN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-listen-state)       |                                |          | Desired listen state.                                                                                                                                            |
-| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-number)   |                                | X        | The host’s desired listen channel when enabling the Wi-Fi Direct listen state. If this option is not specified, the port may select a listen channel on its own. |
-| [**WDI\_TLV\_P2P\_LISTEN\_DURATION**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-listen-duration) |                                |          | Cycle duration and listen time.                                                                                                                                  |
+| [**WDI\_TLV\_P2P\_LISTEN\_STATE**](./wdi-tlv-p2p-listen-state.md)       |                                |          | Desired listen state.                                                                                                                                            |
+| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](./wdi-tlv-p2p-channel-number.md)   |                                | X        | The host’s desired listen channel when enabling the Wi-Fi Direct listen state. If this option is not specified, the port may select a listen channel on its own. |
+| [**WDI\_TLV\_P2P\_LISTEN\_DURATION**](./wdi-tlv-p2p-listen-duration.md) |                                |          | Cycle duration and listen time.                                                                                                                                  |
 
  
 
@@ -73,9 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

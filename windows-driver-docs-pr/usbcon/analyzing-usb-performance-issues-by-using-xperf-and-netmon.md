@@ -1,5 +1,5 @@
 ---
-Description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
+description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
 title: Analyzing USB Performance Issues by Using Xperf and Netmon
 ms.date: 04/20/2017
 ms.localizationpriority: medium

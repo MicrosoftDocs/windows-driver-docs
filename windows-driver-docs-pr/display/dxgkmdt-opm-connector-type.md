@@ -1,7 +1,6 @@
 ---
 title: DXGKMDT\_OPM\_CONNECTOR\_TYPE enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 57A2F351-99F1-425A-99E3-1167CEFF9FDD
+description: Learn about the DXGKMDT\_OPM\_CONNECTOR\_TYPE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["DXGKMDT_OPM_CONNECTOR_TYPE enumeration Display Devices"]
 topic_type:
 - apiref

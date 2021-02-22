@@ -1,7 +1,6 @@
 ---
 title: Winnt32 Phase of the Network Upgrade Process
 description: Winnt32 Phase of the Network Upgrade Process
-ms.assetid: a83edcfb-e075-4763-8a6a-33879ccf2357
 keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases
@@ -48,17 +47,11 @@ NetSetup generates the AnswerFile as follows:
 
 2.  For each network component that does not have built-in upgrade support, NetSetup reads the component's netmap.inf file. The netmap.inf file maps the preupgrade device, hardware, or compatible ID of a network component to the corresponding ID in the upgraded operating system. If NetSetup matches the preupgrade ID of the network component that it read from the registry with a preupgrade ID in the **OemNetAdapters**, **OemNetProtocols**, **OemNetServices**, or **OemAsyncAdapters** section of the netmap.inf file, NetSetup writes vendor-provided information for the component to the AnswerFile.
 
-3.  Using the component's operating system device, hardware, or compatible ID, NetSetup reads the **OemUpgradeSupport** section of the netmap.inf file to determine which network migration DLL to load. NetSetup then loads the network migration DLL, and calls the DLL's [**PreUpgradeInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562439(v=vs.85)) function. The **PreUpgradeInitialize** function supplies information that the DLL uses to initialize itself.
+3.  Using the component's operating system device, hardware, or compatible ID, NetSetup reads the **OemUpgradeSupport** section of the netmap.inf file to determine which network migration DLL to load. NetSetup then loads the network migration DLL, and calls the DLL's [**PreUpgradeInitialize**](/previous-versions/windows/hardware/network/ff562439(v=vs.85)) function. The **PreUpgradeInitialize** function supplies information that the DLL uses to initialize itself.
 
-4.  NetSetup calls the DLL's [**DoPreUpgradeProcessing**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545634(v=vs.85)) function once for each network component supported by the network migration DLL. **DoPreUpgradeProcessing** reads a network component's preupgrade parameter values from the registry and calls the [**NetUpgradeAddSection**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559063(v=vs.85)) and [**NetUpgradeAddLineToSection**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559059(v=vs.85)) functions to write these parameters, along with other component-specific information, to the AnswerFile. **DoPreUpgradeProcessing** can also migrate binary data associated with the preupgraded component by making appropriate entries in the AnswerFile.
+4.  NetSetup calls the DLL's [**DoPreUpgradeProcessing**](/previous-versions/windows/hardware/network/ff545634(v=vs.85)) function once for each network component supported by the network migration DLL. **DoPreUpgradeProcessing** reads a network component's preupgrade parameter values from the registry and calls the [**NetUpgradeAddSection**](/previous-versions/windows/hardware/network/ff559063(v=vs.85)) and [**NetUpgradeAddLineToSection**](/previous-versions/windows/hardware/network/ff559059(v=vs.85)) functions to write these parameters, along with other component-specific information, to the AnswerFile. **DoPreUpgradeProcessing** can also migrate binary data associated with the preupgraded component by making appropriate entries in the AnswerFile.
 
 5.  After the AnswerFile is completely generated, NetSetup copies the vendor-supplied upgrade files to the appropriate directories and then boots into the text mode phase of the upgrade process.
 
  
-
- 
-
-
-
-
 

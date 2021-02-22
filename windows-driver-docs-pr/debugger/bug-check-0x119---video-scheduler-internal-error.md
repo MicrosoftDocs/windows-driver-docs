@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR
 description: The VIDEO_SCHEDULER_INTERNAL_ERROR bug check has a value of 0x00000119. This indicates that the video scheduler has detected a fatal violation.
-ms.assetid: dfffdd70-c519-4e39-a604-a0ba2217093b
 keywords: ["Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR", "VIDEO_SCHEDULER_INTERNAL_ERROR"]
 ms.date: 02/07/2020
 topic_type:
@@ -38,18 +37,18 @@ Parameter 1 is the only parameter of interest and identifies the exact violation
 
 ## Resolution
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 If the faulting module listed in the !analyze output is a video driver, investigate if updates are available to that video driver from the vendor.
 
 For more information, see:
 
-[Handling Command and DMA Buffers](https://docs.microsoft.com/windows-hardware/drivers/display/handling-command-and-dma-buffers)
+[Handling Command and DMA Buffers](../display/handling-command-and-dma-buffers.md)
 
-[Submitting a Command Buffer](https://docs.microsoft.com/windows-hardware/drivers/display/submitting-a-command-buffer)
+[Submitting a Command Buffer](../display/submitting-a-command-buffer.md)
 
-[Supplying Fence Identifiers](https://docs.microsoft.com/windows-hardware/drivers/display/supplying-fence-identifiers)
+[Supplying Fence Identifiers](../display/supplying-fence-identifiers.md)
 
-[GPU Scheduler Class](https://docs.microsoft.com/windows-hardware/drivers/display/gpu-scheduler-class)
+[Video Memory Management and GPU Scheduling](../display/video-memory-management-and-gpu-scheduling.md)
 
-[Direct flip of video memory](https://docs.microsoft.com/windows-hardware/drivers/display/direct-flip-of-video-memory)
+[Direct flip of video memory](../display/direct-flip-of-video-memory.md)

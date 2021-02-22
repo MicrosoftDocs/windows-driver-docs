@@ -1,7 +1,6 @@
 ---
 title: Overview of SR-IOV Data Paths
 description: Overview of SR-IOV Data Paths
-ms.assetid: C82AEB00-E699-40AB-85E8-064B841B83F4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PEAKMETER
 description: The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
-ms.assetid: c8c2c9ed-61ea-4bbe-b376-c956f051416e
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER Audio Devices"]
 topic_type:
 - apiref
@@ -11,14 +10,18 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 04/17/2020
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_PEAKMETER
 
-
 The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal level that occurred at a peakmeter node ([**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)) since the last time the peakmeter node was reset.
+
+>>
+> [!IMPORTANT]
+> KSPROPERTY\_AUDIO\_PEAKMETER property is depreciated, and should not be used. Use [**KSPROPERTY\_AUDIO\_PEAKMETER2**](./ksproperty-audio-peakmeter2.md) instead.  
+
 
 ## <span id="ddk_ksproperty_audio_peakmeter_ks"></span><span id="DDK_KSPROPERTY_AUDIO_PEAKMETER_KS"></span>
 
@@ -47,15 +50,14 @@ The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal lev
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
 The property value (operation data) is of type LONG and specifies the peak sample value at the node. If the peak value is negative, its absolute value is used.
+
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,8 +81,6 @@ A KSPROPERTY\_AUDIO\_PEAKMETER property request returns STATUS\_SUCCESS to indic
 </tr>
 </tbody>
 </table>
-
- 
 
 Remarks
 -------
@@ -107,17 +107,8 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)
 
- 
-
- 
-
-
-
-
-
-
+[**KSPROPERTY\_AUDIO\_PEAKMETER2**](./ksproperty-audio-peakmeter2.md)

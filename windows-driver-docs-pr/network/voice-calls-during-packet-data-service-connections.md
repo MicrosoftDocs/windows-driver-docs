@@ -1,7 +1,6 @@
 ---
 title: Voice Calls during Packet Data Service Connections
 description: Voice Calls during Packet Data Service Connections
-ms.assetid: 441d2fea-eb39-4af5-a8de-c288c81be99a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,23 +18,17 @@ Be aware that, by design, the MB Service does not support circuit voice, nor doe
 
 To handle voice calls during packet data service connections, use the following procedure:
 
-1.  For a successful Packet Data service connection, miniport drivers should send an [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) notification to the MB service to indicate the current DataClass followed by an [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) notification to the MB service to indicate the media connect state as **MediaConnectStateConnected**.
+1.  For a successful Packet Data service connection, miniport drivers should send an [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) notification to the MB service to indicate the current DataClass followed by an [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) notification to the MB service to indicate the media connect state as **MediaConnectStateConnected**.
 
-2.  When a voice call is placed or answered, miniport drivers should send an [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) notification to the MB service to indicate the media connect state as **MediaConnectStateDisconnected**.
+2.  When a voice call is placed or answered, miniport drivers should send an [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) notification to the MB service to indicate the media connect state as **MediaConnectStateDisconnected**.
 
-3.  Miniport drivers should then send an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-context-state) notification to the MB service that indicates the *VoiceCall* state of the device as **WwanVoiceCallStateInProgress**.
+3.  Miniport drivers should then send an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](./ndis-status-wwan-context-state.md) notification to the MB service that indicates the *VoiceCall* state of the device as **WwanVoiceCallStateInProgress**.
 
 4.  On hangup, miniport drivers should send an NDIS\_STATUS\_WWAN\_CONTEXT\_STATE notification to the MB service that indicates the *VoiceCall* state of the device as **WwanVoiceCallStateHangup**.
 
-5.  The device resumes packet connection after the voice call is completed. Miniport drivers should send an [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) notification to the MB service to indicate the media connect state as **MediaConnectStateConnected**.
+5.  The device resumes packet connection after the voice call is completed. Miniport drivers should send an [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) notification to the MB service to indicate the media connect state as **MediaConnectStateConnected**.
 
 6.  Miniport drivers should send an NDIS\_WWAN\_PACKET\_SERVICE\_STATE notification to the MB service that indicates the current DataClass.
 
  
-
- 
-
-
-
-
 

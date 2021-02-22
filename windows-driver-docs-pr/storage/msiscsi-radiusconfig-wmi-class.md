@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_RADIUSConfig WMI Class
 description: MSiSCSI\_RADIUSConfig WMI Class
-ms.assetid: e0fd1fea-3d8c-4d25-a9fd-0e115ecb8163
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -48,13 +47,7 @@ class MSiSCSI_RADIUSConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RADIUSConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_radiusconfig) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RADIUSConfig**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_radiusconfig) data structure.
 
  
-
- 
-
-
-
-
 

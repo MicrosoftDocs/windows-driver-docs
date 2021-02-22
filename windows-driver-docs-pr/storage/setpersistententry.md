@@ -1,7 +1,6 @@
 ---
 title: SetPersistentEntry function
 description: The SetPersistentEntry method adds a binding to the list of bindings associated with the indicated port.
-ms.assetid: 52680641-9f63-4c8e-9538-4c725b9074a3
 keywords: ["SetPersistentEntry function Storage Devices"]
 topic_type:
 - apiref
@@ -38,10 +37,10 @@ Parameters
 A worldwide name that indicates the port whose persistent bindings will be changed.
 
 *Binding*   
-A structure of type [**HBAFCPBindingEntry2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2) that indicates the binding to be removed from the indicated port's list of bindings.
+A structure of type [**HBAFCPBindingEntry2**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2) that indicates the binding to be removed from the indicated port's list of bindings.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetPersistentEntry\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetPersistentEntry\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_out) structure.
 
 Return value
 ------------
@@ -76,16 +75,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**SetPersistentEntry\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_in)
+[**SetPersistentEntry\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_in)
 
-[**SetPersistentEntry\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_out)
-
- 
+[**SetPersistentEntry\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_out)
 
  
-
-
-
-
-
 

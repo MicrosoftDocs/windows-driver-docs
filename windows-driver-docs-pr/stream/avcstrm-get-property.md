@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_GET\_PROPERTY
 description: AVCSTRM\_GET\_PROPERTY
-ms.assetid: d53422d3-c591-4ba5-ba85-bd20e2519add
 keywords: ["AVCSTRM_GET_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

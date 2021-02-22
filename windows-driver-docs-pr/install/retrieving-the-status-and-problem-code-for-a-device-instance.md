@@ -1,7 +1,6 @@
 ---
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
-ms.assetid: 22ca9ac2-fe67-427d-a6e4-f1d9cbbede52
 ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes a device status property and a problem code property. The unified device property model uses [property keys](property-keys.md) to represent these properties.
 
-Windows Server 2003, Windows XP, and Windows 2000 do not support the property keys of the unified property model, nor do they support corresponding registry entry values that represent these properties. However, the corresponding information can be retrieved by calling the [**CM_Get_DevNode_Status**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) function. To maintain compatibility with earlier versions of Windows, Windows Vista and later versions also support **CM_Get_DevNode_Status**. However, you should use the property keys of the unified device property model to access the device driver properties.
+Windows Server 2003, Windows XP, and Windows 2000 do not support the property keys of the unified property model, nor do they support corresponding registry entry values that represent these properties. However, the corresponding information can be retrieved by calling the [**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) function. To maintain compatibility with earlier versions of Windows, Windows Vista and later versions also support **CM_Get_DevNode_Status**. However, you should use the property keys of the unified device property model to access the device driver properties.
 
 The device driver properties are listed by the property key identifiers that you use to access the property in Windows Vista and later versions.
 
@@ -68,4 +67,3 @@ You can also see this info on a running system in Device Manager. For info, see 
  
 * [**DEVPKEY_Device_ProblemCode**](devpkey-device-problemcode.md)
 * [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md)
-

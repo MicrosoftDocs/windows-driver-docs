@@ -1,7 +1,6 @@
 ---
 title: Read and Write Attribute Memory
 description: Read and Write Attribute Memory
-ms.assetid: 8e430057-b68a-4edc-8755-1d7255412269
 keywords:
 - PCMCIA WDK buses , attribute memory
 - attribute memory WDK PCMCIA bus , read and write
@@ -19,9 +18,9 @@ This section describes how a PCMCIA driver can read and write the attribute memo
 
 Windows 2000 and later operating systems treat attribute memory on a PC Card or CardBus card as configuration space.
 
-In general, to access attribute memory, drivers must create an IRP using a major function code of IRP\_MJ\_PNP and a minor function code of [**IRP\_MN\_READ\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config) or [**IRP\_MN\_WRITE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-write-config).
+In general, to access attribute memory, drivers must create an IRP using a major function code of IRP\_MJ\_PNP and a minor function code of [**IRP\_MN\_READ\_CONFIG**](../kernel/irp-mn-read-config.md) or [**IRP\_MN\_WRITE\_CONFIG**](../kernel/irp-mn-write-config.md).
 
-If necessary, a driver can access attribute memory directly by means of a permanent memory window. See [Access PCMCIA Attribute Memory Through a Permanent Memory Window](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/access-pcmcia-attribute-memory-through-a-permanent-memory-window) for further details.
+If necessary, a driver can access attribute memory directly by means of a permanent memory window. See [Access PCMCIA Attribute Memory Through a Permanent Memory Window](./access-pcmcia-attribute-memory-through-a-permanent-memory-window.md) for further details.
 
 The PCMCIA memory card driver carries out the following operations:
 
@@ -41,10 +40,4 @@ The PCMCIA memory card driver carries out the following operations:
 A driver must be running at IRQL &lt; DISPATCH\_LEVEL to send this request down the driver stack.
 
  
-
- 
-
-
-
-
 

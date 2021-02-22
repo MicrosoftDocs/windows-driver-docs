@@ -21,9 +21,9 @@ The measure aggregates telemetry from a 28-day sliding window into a ratio of ma
 |**Audience**|Retail and Insider|
 |**Time period**|28 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum instances**|250|
+|**Minimum instances**|170|
 |**Passing criteria**|<= 20%|
-|**Measure ID**|20431908|
+|**Measure ID**|23260722|
 
 ## Calculation
 

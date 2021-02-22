@@ -1,7 +1,6 @@
 ---
 title: MagneticStripeReaderDataReceived
 description: The MagneticStripeReaderDataReceived event is raised after a successful magnetic stripe reader (MSR) scan event.
-ms.assetid: '5074669c-3914-4d15-983b-d979c7f88b21'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
@@ -49,11 +48,11 @@ The following table shows the memory layout of the data buffer for this event.
 |---|---|
 | 0x00000008                                                          | **EventType = PosEventType:: MagneticStripeReaderDataReceived**                                                                       |
 | UINT32                                                              | **DataLength** = sizeof(**PosEventDataHeader**) + sizeof(**MSR\_DATA\_RECEIVED**)                                                     |
-| 32-bit MsrCardType                                                  | [MsrCardType](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrcardtype)                                                                                                        |
-| unsigned char                                                       | **Track1EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
-| unsigned char                                                       | **Track2EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
-| unsigned char                                                       | **Track3EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
-| unsigned char                                                       | **Track4EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
+| 32-bit MsrCardType                                                  | [MsrCardType](/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrcardtype)                                                                                                        |
+| unsigned char                                                       | **Track1EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
+| unsigned char                                                       | **Track2EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
+| unsigned char                                                       | **Track3EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
+| unsigned char                                                       | **Track4EncryptedDataLength** - Will always be zero (0) if [MsrDataEncryption](/windows-hardware/drivers/ddi/pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption) is **MsrDataEncryption\_None**. |
 | unsigned char \[MSR\_TRACK\_SIZE\]                                  | **Track1EncryptedDataLength** bytes of encrypted track 1 data                                                                         |
 | unsigned char \[MSR\_TRACK\_SIZE\]                                  | **Track2EncryptedDataLength** bytes of encrypted track 2 data                                                                         |
 | unsigned char \[MSR\_TRACK\_SIZE\]                                  | **Track3EncryptedDataLength** bytes of encrypted track 3 data                                                                         |

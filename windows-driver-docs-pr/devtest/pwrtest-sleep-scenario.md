@@ -1,8 +1,7 @@
 ---
 title: PwrTest Sleep Scenario
 description: The PwrTest Sleep Scenario facilitates automated testing of sleep and resume transitions.
-ms.assetid: 2003ff3e-bc29-4741-a0a6-371948982679
-ms.date: 04/20/2017
+ms.date: 06/24/2020
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +16,7 @@ PwrTest is capable of directing the platform into one or more sleep states in an
 
 
 ```
-pwrtest /sleep [/c:n] [/d:n] [/p:n] [/h:{y|n}] [/s:{1|3|4|all|rnd|hibernate|standby}] [/unattend] [/e:n] [/?] 
+pwrtest /sleep [/c:n] [/d:n] [/p:n] [/h:{y|n}] [/s:{1|3|4|all|rnd|hibernate|standby|dozes4}] [/unattend] [dt:n] [/e:n] [/?] 
 ```
 
 <span id="_c_n"></span><span id="_C_N"></span>**/c:**<em>n</em>  
@@ -32,7 +31,7 @@ Specifies the sleep time in seconds (60 is default). If wake timer isn't support
 <span id="_h_yn"></span><span id="_H_YN"></span>**/h:**{**y**|**n**}  
 Specifies whether hybrid sleep should be enabled (y) or disabled (n). The default is system policy.
 
-<span id="_s_134allrndhibernatestandby"></span><span id="_S_134ALLRNDHIBERNATESTANDBY"></span>**/s:**{**1**|**3**|**4**|**all**|**rnd**|**hibernate**|**standby**}  
+<span id="_s_134allrndhibernatestandby"></span><span id="_S_134ALLRNDHIBERNATESTANDBY"></span>**/s:**{**1**|**3**|**4**|**all**|**rnd**|**hibernate**|**standby**|**dozes4**}  
 
 <span id="1"></span>**1**  
 Specifies that the target state is always S1.
@@ -55,20 +54,30 @@ Specifies target state is always hibernate (S4).
 <span id="standby"></span><span id="STANDBY"></span>**standby**  
 Specifies target state is any available Standby state (S1 or S3).
 
+<span id="standby"></span><span id="STANDBY"></span>**dozes4**  
+Specifies to doze to S4 from Modern Standby (S0 Low Power Idle).
+
 <span id="_unattend____"></span><span id="_UNATTEND____"></span>**/unattend**   
 Specifies not to change system execution state after wakeup.
 
+<span id="_dt_n"></span><span id="_DT_N"></span>**/dt:**<em>n</em>  
+For dozeS4 only, specifies the doze timeout in seconds to spend in Modern Standby before transitioning to hibernate (S4).
+
 <span id="_e_n"></span><span id="_E_N"></span>**/e:**<em>n</em>  
-Specifies the timeout in seconds to wait for the transition end event (120 seconds is the default) .
+Specifies the timeout in seconds to wait for the transition end event (120 seconds is the default).
 
 **Examples**
 
 ```
-pwrtest pwrtest /sleep /c:4 /s:all 
+pwrtest /sleep /c:4 /s:all 
 ```
 
 ```
-  pwrtest /sleep /c:4 /p:120 /d:150 /s:all
+pwrtest /sleep /c:4 /p:120 /d:150 /s:all
+```
+
+```
+pwrtest /sleep /c:10 /s:dozes4 /dt:100 /p:100
 ```
 
 ### <span id="XML_log_file_output"></span><span id="xml_log_file_output"></span><span id="XML_LOG_FILE_OUTPUT"></span>XML log file output
@@ -88,31 +97,33 @@ pwrtest pwrtest /sleep /c:4 /s:all
                   status=""> 
                   <StartT></StartT> 
                   <EndT></EndT> 
-                  <Duration></Duration> 
+                  <SleepTimeMs></SleepTimeMs> 
                   <TargetState></TargetState> 
                   <EffectiveState></EffectiveState> 
-                  <BIOSInit></BIOSInit> 
-                  <DriverInit></DriverInit> 
+                  <BIOSInitTimeMs></BIOSInitTimeMs> 
+                  <DriverWakeTimeMs></DriverWakeTimeMs> 
                   <Suspend></Suspend> 
                   <Resume></Resume> 
-                  <HiberRead></HiberRead> 
-                  <HiberWrite></HiberWrite> 
+                  <HiberReadTimeMs></HiberReadTimeMs> 
+                  <HiberWriteTimeMs></HiberWriteTimeMs> 
+                  <HiberPagesWritten></HiberPagesWritten> 
             </SleepTransition> 
             <SleepTransition 
                   number="" 
                   status=""> 
                   <StartT></StartT> 
                   <EndT></EndT> 
-                  <Duration></Duration> 
+                  <SleepTimeMs></SleepTimeMs> 
                   <TargetState></TargetState> 
                   <EffectiveState></EffectiveState> 
-                  <BIOSInit></BIOSInit> 
-                  <DriverInit></DriverInit> 
+                  <BIOSInitTimeMs></BIOSInitTimeMs> 
+                  <DriverWakeTimeMs></DriverWakeTimeMs> 
                   <Suspend></Suspend> 
                   <Resume></Resume> 
-                  <HiberRead></HiberRead> 
-                  <HiberWrite></HiberWrite> 
-            </SleepTransition> 
+                  <HiberReadTimeMs></HiberReadTimeMs> 
+                  <HiberWriteTimeMs></HiberWriteTimeMs> 
+                  <HiberPagesWritten></HiberPagesWritten> 
+            </SleepTransition>
     </SleepTransitions> 
   </SleepScenario> 
 </PwrTestLog> 
@@ -153,7 +164,7 @@ The following table describes the XML elements that appear in the log file.
 <td align="left"><p>Indicates the end time of the sleep cycle. (<em>hh</em>:<em>mm</em>:<em>ss</em>)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>&lt;Duration&gt;</strong></td>
+<td align="left"><strong>&lt;SleepTimeMs&gt;</strong></td>
 <td align="left"><p>Indicates the duration of the sleep cycle. (<em>hh</em>:<em>mm</em>:<em>ss</em>)</p></td>
 </tr>
 <tr class="odd">
@@ -165,11 +176,11 @@ The following table describes the XML elements that appear in the log file.
 <td align="left"><p>Indicates the effective sleep state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>&lt;BIOSInit&gt;</strong></td>
+<td align="left"><strong>&lt;BIOSInitTimeMs&gt;</strong></td>
 <td align="left"><p>Indicates the amount of time required to initialize the BIOS (TargetState must be 3) on resume in milliseconds.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>&lt;DriverInit&gt;</strong></td>
+<td align="left"><strong>&lt;DriverWakeTimeMs&gt;</strong></td>
 <td align="left"><p>Indicates the amount of time required to initialize drivers on resume in milliseconds.</p></td>
 </tr>
 <tr class="odd">
@@ -181,12 +192,16 @@ The following table describes the XML elements that appear in the log file.
 <td align="left"><p>Indicates the total amount of time required to resume the system in milliseconds.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>&lt;HiberRead&gt;</strong></td>
+<td align="left"><strong>&lt;HiberReadTimeMs&gt;</strong></td>
 <td align="left"><p>Indicates the time required to read the hibernation file in milliseconds. (TargetState must be 4)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>&lt;HiberWrite&gt;</strong></td>
+<td align="left"><strong>&lt;HiberWriteTimeMs&gt;</strong></td>
 <td align="left"><p>Indicates the time required to write the hibernation file in milliseconds. (EffectiveState must be 4)</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>&lt;HiberPagesWritten&gt;</strong></td>
+<td align="left"><p>Number of pages written in the hibernation file. (EffectiveState must be 4)</p></td>
 </tr>
 </tbody>
 </table>

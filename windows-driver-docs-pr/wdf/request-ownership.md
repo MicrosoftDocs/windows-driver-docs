@@ -1,7 +1,6 @@
 ---
 title: Request Ownership
 description: Request Ownership
-ms.assetid: 60494e97-0483-454f-aafc-7a69019c95f2
 keywords:
 - request objects WDK KMDF , ownership
 - ownership WDK KMDF , I/O requests

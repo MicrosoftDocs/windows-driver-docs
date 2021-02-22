@@ -1,7 +1,6 @@
 ---
 title: FSCTL_GET_RETRIEVAL_POINTER_BASE control code
 description: The FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE returns the sector offset to the first logical cluster number (LCN) of the file system relative to the start of the volume.
-ms.assetid: 2c342e58-ef9a-487a-beb9-4353dcbc8115
 keywords: ["FSCTL_GET_RETRIEVAL_POINTER_BASE control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,17 +19,17 @@ ms.localizationpriority: medium
 
 The **FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE** returns the sector offset to the first logical cluster number (LCN) of the file system relative to the start of the volume.
 
-To perform this operation, call the [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) function or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) function with the following parameters.
+To perform this operation, call the [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) function or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) function with the following parameters.
 
 **Parameters**
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the volume for which **FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE** is to retrieve the base. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the volume for which **FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE** is to retrieve the base. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. A file handle for the volume for which **FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE** is to retrieve the base. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A file handle for the volume for which **FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE** is to retrieve the base. This parameter is required and cannot be **NULL**.
 
-This handle must be opened with the SE\_MANAGE\_VOLUME\_NAME access rights. For more information, see [File Security and Access Rights](https://docs.microsoft.com/windows/desktop/FileIO/file-security-and-access-rights).
+This handle must be opened with the SE\_MANAGE\_VOLUME\_NAME access rights. For more information, see [File Security and Access Rights](/windows/desktop/FileIO/file-security-and-access-rights).
 
 <a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
 A control code for the operation. Use **FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE** for this operation.
@@ -50,7 +49,7 @@ The size of the output buffer, in bytes. This value must be 8.
 Status block
 ------------
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
 <table>
 <colgroup>
@@ -115,16 +114,9 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
-
- 
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
  
-
-
-
-
-
 

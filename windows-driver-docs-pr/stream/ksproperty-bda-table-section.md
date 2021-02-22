@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_TABLE\_SECTION
 description: Clients use KSPROPERTY\_BDA\_TABLE\_SECTION to inform nodes about the table section to use when delivering data on the node's output.
-ms.assetid: 58e6cc37-b6f1-49d6-a832-46f1edabf740
 keywords: ["KSPROPERTY_BDA_TABLE_SECTION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -81,16 +80,9 @@ Requirements
 ## See also
 
 
-[**BDA\_TABLE\_SECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_table_section)
+[**BDA\_TABLE\_SECTION**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_table_section)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
-
-
-
-
 

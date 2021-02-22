@@ -1,7 +1,6 @@
 ---
 title: ContentTypeValue element
 description: The required ContentTypeValue element specifies one document content type that the scan device supports.
-ms.assetid: 04d29626-cc14-4db3-88ec-cfb1cc9cd1cd
 keywords: ["ContentTypeValue element Imaging Devices"]
 topic_type:
 - apiref

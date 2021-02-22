@@ -1,7 +1,6 @@
 ---
 title: Input Buffer Order Example 2
 description: Input Buffer Order Example 2
-ms.assetid: e480bd93-4ae2-4a6c-b669-69c44c0154d0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.**
 
-The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex) function to use the device in [Input Buffer Order Example 1](input-buffer-order-example-1.md) to combine 2 video substreams with an interlaced video stream. The sequence of surfaces in the **lpBufferInfo** array are:
+The VMR initiates a call to the driver's [**DeinterlaceBltEx**](./dxva-deinterlacebobdeviceclass-deinterlacebltex.md) function to use the device in [Input Buffer Order Example 1](input-buffer-order-example-1.md) to combine 2 video substreams with an interlaced video stream. The sequence of surfaces in the **lpBufferInfo** array are:
 
 <table>
 <colgroup>
@@ -62,10 +61,4 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://docs.mic
  
 
  
-
- 
-
-
-
-
 

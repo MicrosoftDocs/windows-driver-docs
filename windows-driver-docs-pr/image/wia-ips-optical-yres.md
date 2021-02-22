@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_OPTICAL\_YRES
 description: The WIA\_IPS\_OPTICAL\_YRES property contains the highest-supported vertical optical resolution of a device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
-ms.assetid: 1c11983c-3ddf-4289-be88-04d4eb00d2cc
 keywords: ["WIA_IPS_OPTICAL_YRES Imaging Devices"]
 topic_type:
 - apiref

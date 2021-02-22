@@ -1,7 +1,6 @@
 ---
 title: Idle Power Management Scope
 description: Idle Power Management Scope
-ms.assetid: fa34f703-ab02-4a0d-96ae-e7cb89756992
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

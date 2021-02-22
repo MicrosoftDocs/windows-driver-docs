@@ -1,7 +1,6 @@
 ---
 title: VM switch verification
 description: The VM switch verification option monitors filter drivers (extensible switch extensions) that run inside the Hyper-V Extensible Switch. Use this option to catch errors that occur in send or receive operations within the extensible switch.
-ms.assetid: 629C0C70-D6C6-4977-A36B-6BD6EEC14FE8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,13 +8,13 @@ ms.localizationpriority: medium
 # VM switch verification
 
 
-The VM switch verification option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch). Use this option to catch errors that occur in send or receive operations within the extensible switch.
+The VM switch verification option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](../network/hyper-v-extensible-switch.md). Use this option to catch errors that occur in send or receive operations within the extensible switch.
 
 **Note**  This option is available starting with Windows 8.1.
 
  
 
-When this option is active, Driver Verifier will issue [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) if the extensible switch extension fails to properly call Hyper-V extensible switch handler functions.
+When this option is active, Driver Verifier will issue [**Bug Check 0xC4**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) if the extensible switch extension fails to properly call Hyper-V extensible switch handler functions.
 
 ## <span id="Activating_this_option"></span><span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating this option
 
@@ -41,10 +40,4 @@ You can activate the VM switch verification feature for one or more drivers by u
     5.  Restart the computer.
 
  
-
- 
-
-
-
-
 

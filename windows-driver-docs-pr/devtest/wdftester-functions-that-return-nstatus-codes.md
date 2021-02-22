@@ -1,7 +1,6 @@
 ---
 title: KMDF Functions that Return NSTATUS Codes
 description: KMDF Functions that Return NSTATUS Codes
-ms.assetid: 0edd35c0-2357-4502-8c59-36b16cf7f294
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Video Capture Event Sets
 description: Video Capture Event Sets
-ms.assetid: 0b597c4d-b8da-4f6d-8a5a-cb26f0445e99
 keywords:
 - video capture WDK AVStream , event sets
 - capturing video WDK AVStream , event sets

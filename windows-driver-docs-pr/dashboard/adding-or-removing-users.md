@@ -1,7 +1,6 @@
 ---
 title: Adding or Removing Users
 description: The Hardware Dashboard uses Azure Active Directory for user management. This topic describes the process for using your Global Admin credentials to add/remove users.
-ms.assetid: 1922C767-CD34-43CD-AF90-F1FCA297EF5E
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

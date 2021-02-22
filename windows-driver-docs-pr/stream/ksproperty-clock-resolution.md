@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_RESOLUTION
 description: Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precision of a clock.
-ms.assetid: 3e92a4fb-207f-449a-bc70-aa8028b4f8f1
 keywords: ["KSPROPERTY_CLOCK_RESOLUTION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precisio
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution" data-raw-source="[&lt;strong&gt;KSRESOLUTION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution)"><strong>KSRESOLUTION</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution" data-raw-source="[&lt;strong&gt;KSRESOLUTION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution)"><strong>KSRESOLUTION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,18 +78,9 @@ Requirements
 ## See also
 
 
-[**KSCLOCK\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksclock_dispatch)
+[**KSCLOCK\_DISPATCH**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksclock_dispatch)
 
-[**KSRESOLUTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution)
+[**KSRESOLUTION**](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution)
 
 [**KSPROPERTY\_CLOCK\_PHYSICALTIME**](ksproperty-clock-physicaltime.md)
-
- 
-
- 
-
-
-
-
-
 

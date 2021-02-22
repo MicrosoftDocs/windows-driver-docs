@@ -1,7 +1,6 @@
 ---
 title: Managing Physical Network Adapter Connection Status
 description: Managing Physical Network Adapter Connection Status
-ms.assetid: B8C6EB48-59D7-469B-87C8-57E60CB5C5D2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,11 +12,11 @@ The Hyper-V extensible switch architecture supports the connection to a single e
 
 The extensible switch interface notifies extensions of each physical network adapter connection status through the following steps:
 
-1.  The protocol edge of the extensible switch issues an object identifier (OID) set request of [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create). This OID request notifies underlying extensible switch extensions about the creation of network connection to the extensible switch external network adapter.
+1.  The protocol edge of the extensible switch issues an object identifier (OID) set request of [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md). This OID request notifies underlying extensible switch extensions about the creation of network connection to the extensible switch external network adapter.
 
     When the network connection is created, it is assigned an NDIS\_SWITCH\_NIC\_INDEX value. This index value identifies the network connection of the adapter on an extensible switch port. The network connection to the external network adapter is assigned an NDIS\_SWITCH\_NIC\_INDEX value of **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX**.
 
-2.  For every network adapter that is bound directly or indirectly to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create). This OID request notifies the extension about the creation of a network connection to an underlying network adapter.
+2.  For every network adapter that is bound directly or indirectly to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md). This OID request notifies the extension about the creation of a network connection to an underlying network adapter.
 
     Each physical or virtual network adapter that is bound to the external network adapter is assigned an identifier in the following way:
 
@@ -37,31 +36,22 @@ The extensible switch interface notifies extensions of each physical network ada
 
 
 
-3.  The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect) for the external network adapter.
+3.  The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md) for the external network adapter.
 
     **Note**  At this point, the connection to the external network is not operational and cannot be used for packet traffic.
 
 
 
-4.  For every network adapter that is bound to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect). This OID request is issued after the OID set request of [OID\_SWITCH\_NIC\_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create) is completed successfully.
+4.  For every network adapter that is bound to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md). This OID request is issued after the OID set request of [OID\_SWITCH\_NIC\_CREATE](./oid-switch-nic-create.md) is completed successfully.
 
-    The [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect) OID request notifies the extension that the extensible switch network connection is now operational. If the external network adapter is bound to the virtual miniport edge of the MUX driver, the protocol edge issues a separate OID\_SWITCH\_NIC\_CONNECT request.
+    The [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md) OID request notifies the extension that the extensible switch network connection is now operational. If the external network adapter is bound to the virtual miniport edge of the MUX driver, the protocol edge issues a separate OID\_SWITCH\_NIC\_CONNECT request.
 
-    **Note**  As soon as an [OID\_SWITCH\_NIC\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect) request is issued for a physical network adapter with a NDIS\_SWITCH\_NIC\_INDEX value greater than or equal to one, the connection to the external network is operational. At this point, packet traffic can be sent or received over the external network.
+    **Note**  As soon as an [OID\_SWITCH\_NIC\_CONNECT](./oid-switch-nic-connect.md) request is issued for a physical network adapter with a NDIS\_SWITCH\_NIC\_INDEX value greater than or equal to one, the connection to the external network is operational. At this point, packet traffic can be sent or received over the external network.
 
 
 
-5.  If the external network connection is being torn down, the protocol edge of the extensible switch first issues a separate OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) for every network adapter that is bound to the external network adapter. Once these OID requests are completed, the protocol edge of the extensible switch then issues separate OID set request of [OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete) for every physical network adapter that is bound to the external network adapter,
+5.  If the external network connection is being torn down, the protocol edge of the extensible switch first issues a separate OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md) for every network adapter that is bound to the external network adapter. Once these OID requests are completed, the protocol edge of the extensible switch then issues separate OID set request of [OID\_SWITCH\_NIC\_DELETE](./oid-switch-nic-delete.md) for every physical network adapter that is bound to the external network adapter,
 
-    Once all network connections to the underlying physical adapters have been disconnected and deleted, the protocol edge of the extensible switch issues [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) and [OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete) requests to disconnect and delete the external network adapter connection.
+    Once all network connections to the underlying physical adapters have been disconnected and deleted, the protocol edge of the extensible switch issues [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md) and [OID\_SWITCH\_NIC\_DELETE](./oid-switch-nic-delete.md) requests to disconnect and delete the external network adapter connection.
 
 For more information on NDIS\_SWITCH\_NIC\_INDEX values, see [Network Adapter Index Values](network-adapter-index-values.md).
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Customizing a WIA Driver
 description: Customizing a WIA Driver
-ms.assetid: 293d9278-0223-4164-b640-6c00576f501f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

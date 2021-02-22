@@ -2,7 +2,6 @@
 title: NFC glossary
 description: This topic provides a glossary of NFC class extension (CX) terms.
 Robots: noindex, nofollow
-ms.assetid: F8674D9B-AD43-452A-A146-473ABE65A298
 keywords:
 - NFC
 - near field communications
@@ -82,6 +81,5 @@ Windows Driver Framework
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

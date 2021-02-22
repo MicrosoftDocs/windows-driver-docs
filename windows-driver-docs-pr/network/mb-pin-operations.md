@@ -1,7 +1,6 @@
 ---
 title: MB PIN Operations
 description: MB PIN Operations
-ms.assetid: ca9e1537-29e8-4849-a634-5c2177886321
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -28,6 +27,6 @@ If a cellular modem device does not support D3 cold, Windows does not automatica
 For information on how to enable D3 cold in your USB modem device, please see:
 
 * [Supporting D3Cold for USB Devices](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog).
-* [Supporting D3cold in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver)
+* [Supporting D3cold in a Driver](../kernel/supporting-d3cold-in-a-driver.md)
 
-For additional information about PIN operations, see [OID\_WWAN\_PIN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pin).
+For additional information about PIN operations, see [OID\_WWAN\_PIN](./oid-wwan-pin.md).

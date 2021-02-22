@@ -1,5 +1,5 @@
 ---
-Description: Retrieving Resource Attributes
+description: Retrieving Resource Attributes
 title: Retrieving Resource Attributes
 ms.date: 04/20/2017
 ms.localizationpriority: medium

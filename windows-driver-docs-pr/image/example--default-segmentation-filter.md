@@ -1,7 +1,6 @@
 ---
 title: Example Default Segmentation Filter
 description: Example Default Segmentation Filter
-ms.assetid: 96c74ca6-0162-4991-b3f9-86c17c92ffc3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

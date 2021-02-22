@@ -1,7 +1,6 @@
 ---
 title: OID_PD_CLOSE_PROVIDER
 description: An NDIS protocol or filter driver sends an object identifier (OID) method request of OID_PD_CLOSE_PROVIDER to the PDPI provider to give up access to the PD capability in a PDPI provider object.
-ms.assetid: 8A504A81-6DC8-415C-9FDC-F03657A0EB87
 ms.date: 08/08/2017
 keywords: 
  -OID_PD_CLOSE_PROVIDER Network Drivers Starting with Windows Vista
@@ -44,18 +43,13 @@ Requirements
 ## See also
 
 
-[*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)
+[*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)
 
-[**NDIS\_PD\_CLOSE\_PROVIDER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_close_provider_parameters)
+[**NDIS\_PD\_CLOSE\_PROVIDER\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_close_provider_parameters)
 
-[NDIS\_STATUS\_PD\_CURRENT\_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pd-current-config)
+[NDIS\_STATUS\_PD\_CURRENT\_CONFIG](./ndis-status-pd-current-config.md)
 
 [OID\_PD\_OPEN\_PROVIDER](oid-pd-open-provider.md)
 
  
-
- 
-
-
-
 

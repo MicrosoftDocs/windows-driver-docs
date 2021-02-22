@@ -1,7 +1,6 @@
 ---
 title: INF ClassInstall32.Services Section
-description: A ClassInstall32 section installs a new device setup class (and possibly a class installer) for devices in the new class.
-ms.assetid: 602cf407-f3c0-4342-9e59-87481a0f41ef
+description: A ClassInstall32.Services section installs a new device setup class (and possibly a class installer) for devices in the new class.
 keywords:
 - INF ClassInstall32.Services Section Device and Driver Installation
 topic_type:
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
  
 
-A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
+A **ClassInstall32** section installs a new [device setup class](./overview-of-device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-```ini
+```inf
 [ClassInstall32.Services] | 
 [ClassInstall32.nt.Services] | 
 [ClassInstall32.ntx86.Services] | 
@@ -87,11 +86,4 @@ The case-insensitive **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**,
 [***Models***](inf-models-section.md)
 
  
-
- 
-
-
-
-
-
 

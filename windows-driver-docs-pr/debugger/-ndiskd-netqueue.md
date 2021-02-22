@@ -1,9 +1,8 @@
 ---
 title: ndiskd.netqueue
 description: The ndiskd.netqueue extension displays information about a NETTXQUEUE or NETRXQUEUE object.
-ms.assetid: 101F29AA-5CEE-41F8-A3EC-AA2E74B8E074
 keywords: ["ndiskd.netqueue Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/17/2020
 topic_type:
 - apiref
 api_name:
@@ -15,41 +14,36 @@ ms.localizationpriority: medium
 
 # !ndiskd.netqueue
 
-
 The **!ndiskd.netqueue** extension displays information about a NETTXQUEUE or NETRXQUEUE object.
 
-For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
+For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](../netcx/index.md).
 
 ```console
-!ndiskd.netqueue [-handle <x>] [-basic] 
+!ndiskd.netqueue -handle <x> [-basic]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
-
-<span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
+*-handle*   
 Required. Handle of a NETTXQUEUE or NETRXQUEUE.
 
-<span id="_______-basic______"></span><span id="_______-BASIC______"></span> *-basic*   
+*-basic*   
 Displays basic information.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
-**Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NETTXQUEUE and NETRXQUEUE objects with other objects in the NetAdapterCx.
-
- 
+**Note**  See [Summary of Objects](../netcx/summary-of-netadaptercx-objects.md) to see a diagram explaining the relationship of the NETTXQUEUE and NETRXQUEUE objects with other objects in the NetAdapterCx.
 
 To obtain a handle for a NETTXQUEUE or NETRXQUEUE, follow these steps:
 
-1.  Run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension.
-2.  Click on the handle for a NetAdapter that has a NetAdapterCx driver installed.
-3.  Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
-4.  Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
+1. Run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension.
+2. Click on the handle for a NetAdapter that has a NetAdapterCx driver installed.
+3. Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
+4. Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
 
 For details on this procedure, see the examples on the **!ndiskd.cxadapter** topic.
 In the following example, look for the handle for this NETADAPTER's NETTXQUEUE, ffffd1022f512700.
@@ -91,33 +85,22 @@ By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handl
     EvtQueueCancel                         fffff800341598d8   RtEthSample+98d8
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx)
+[Network Adapter WDF Class Extension (Cx)](../netcx/index.md)
 
-[Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects)
+[Summary of Objects](../netcx/summary-of-netadaptercx-objects.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
-
- 
-
- 
-
-
-
-
-
-

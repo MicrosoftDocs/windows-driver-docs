@@ -1,7 +1,6 @@
 ---
 title: ATA Port I/O Model Overview
 description: ATA Port I/O Model Overview
-ms.assetid: 6feaf2c4-63b2-4ab2-9d4d-7259406be652
 keywords:
 - ATA Port drivers WDK , I/O
 - I/O WDK ATA Port drivers
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # ATA Port I/O Model Overview
 
 > [!NOTE]
-> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
+> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](./storport-driver-overview.md) and [Storport miniport](./storport-miniport-drivers.md) driver models.
 
 The ATA port driver, just as the Storport driver, uses a push model of I/O. This means that the driver forwards I/O requests asynchronously to its miniport driver, up to a maximum number of overlapping packets, without waiting for the miniport driver to request input. In the push model, the port driver controls the flow of the I/O requests and pushes requests down to the miniport driver.
 

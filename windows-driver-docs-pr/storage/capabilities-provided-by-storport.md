@@ -1,7 +1,6 @@
 ---
 title: Capabilities Provided by Storport
 description: Capabilities Provided by Storport
-ms.assetid: 30b4d2e4-2004-4d71-8c91-f066e52dd256
 ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---
@@ -32,7 +31,7 @@ The Storport driver provides the following capabilities:
 
 - **Configuration, Queuing, and Power State Management**
 
-  - Providing class drivers with information about host adapter limitations: It is the responsibility of the class driver to regulate the size of data transfers to suit the limits of the host bus adapters (HBAs). However, Storport provides the class driver with the information it needs to accomplish this task. Storport furnishes this information in an adapter descriptor ([STORAGE_ADAPTER_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_adapter_descriptor)) in response to an IOCTL request ([**IOCTL_STORAGE_QUERY_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property)). The class driver is responsible for breaking requests up into chunks of the appropriate size based on the information reported in this descriptor.
+  - Providing class drivers with information about host adapter limitations: It is the responsibility of the class driver to regulate the size of data transfers to suit the limits of the host bus adapters (HBAs). However, Storport provides the class driver with the information it needs to accomplish this task. Storport furnishes this information in an adapter descriptor ([STORAGE_ADAPTER_DESCRIPTOR](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_adapter_descriptor)) in response to an IOCTL request ([**IOCTL_STORAGE_QUERY_PROPERTY**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property)). The class driver is responsible for breaking requests up into chunks of the appropriate size based on the information reported in this descriptor.
 
   - Translating bus relative addresses to logical addresses: When queried, adapters furnish bus-relative addresses for I/O ports, command registers, and control status registers. However, a miniport driver cannot use bus-relative addresses to communicate with its host bus adapter (HBA). Storport translates bus-relative addresses to logical addresses, so that miniport drivers can access bus addresses in a transparent manner. There are several reasons for this:
 
@@ -46,12 +45,12 @@ The Storport driver provides the following capabilities:
 
 Storport provides services to the miniport driver by means of the Storport library routines. Miniport driver writers can call these routines rather than coding the functionality that they provide into a single monolithic port driver. Some of the most important services afforded by using these routines are as follows:
 
-- A Storport miniport driver can delegate many OS-dependent initialization operations to Storport's [**StorPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) library routine. For example, the Storport driver handles the details related to PnP and DMA mapping. This makes a Storport miniport driver more portable across different versions of the operating system. For an explanation of the initialization duties of a Storport miniport driver, see [Hardware Initialization with Storport](hardware-initialization-with-storport.md).
+- A Storport miniport driver can delegate many OS-dependent initialization operations to Storport's [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) library routine. For example, the Storport driver handles the details related to PnP and DMA mapping. This makes a Storport miniport driver more portable across different versions of the operating system. For an explanation of the initialization duties of a Storport miniport driver, see [Hardware Initialization with Storport](hardware-initialization-with-storport.md).
 
-- Storport miniport drivers for non-PnP devices are spared the task of locating adapters and reporting their resources to the PnP manager. This is done in [**StorPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize).
+- Storport miniport drivers for non-PnP devices are spared the task of locating adapters and reporting their resources to the PnP manager. This is done in [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize).
 
-- Storport miniport drivers do not initialize dispatch entry points in the driver object. The Storport driver does this on behalf of the miniport driver when the miniport driver calls [**StorPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize).
+- Storport miniport drivers do not initialize dispatch entry points in the driver object. The Storport driver does this on behalf of the miniport driver when the miniport driver calls [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize).
 
-- Storport miniport drivers do not convert bus-relative addresses to logical addresses using **HalTranslateBusAddress**. Storport miniport drivers do this by a call to [**StorPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase).
+- Storport miniport drivers do not convert bus-relative addresses to logical addresses using **HalTranslateBusAddress**. Storport miniport drivers do this by a call to [**StorPortGetDeviceBase**](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase).
 
 For a complete list of the library routines that Storport makes available to Storport miniport drivers, see [Storport Driver Support Routines](storport-driver-support-routines.md).

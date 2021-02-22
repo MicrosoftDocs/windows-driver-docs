@@ -1,5 +1,5 @@
 ---
-Description: Architecture overview of Windows portable devices
+description: Architecture overview of Windows portable devices
 title: Architecture Overview
 ms.date: 04/20/2017
 ms.localizationpriority: medium

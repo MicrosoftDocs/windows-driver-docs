@@ -1,13 +1,14 @@
 ---
 title: Reporting Miracast encode chunks and statistics
 description: Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or encode chunks.
-ms.assetid: E1CE637F-42ED-4BEB-A2FF-04B4B88469DC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Reporting Miracast encode chunks and statistics
 
+> [!NOTE]
+> As of Windows 10, the OS contains a native implementation of Miracast wireless displays. Drivers should no longer implement a custom Miracast display component. Support for custom Miracast implementations may be removed in a future version of Windows.
 
 Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or *encode chunks*. Each chunk has a unique chunk ID that's generated from the frame number and the frame part (or slice) number. Each chunk that's related to the same desktop frame update must be assigned the same frame number.
 
@@ -22,9 +23,9 @@ The operating system takes no action other than to log these events using the Ev
 
 These are the possible ways that a driver can provide the notification:
 
--   The Miracast user-mode driver calls the [**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) callback function to report details with the **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_PROCESSING\_COMPLETE** type, or with **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT** to indicate the chunk is just about to be sent to the network stack for transmission.
--   The display miniport driver reports details of the chunk processing with the **DXGK\_INTERRUPT\_MICACAST\_CHUNK\_PROCESSING\_COMPLETE** interrupt type, although this report can only be made at interrupt time, and in a addition to logging the chunk info, a chunk packet is created and queued so that the Miracast user-mode driver can retrieve it by calling the [**GetNextChunkData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_get_next_chunk_data) callback function.
--   The display miniport driver calls the [**DxgkCbReportChunkInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_report_chunk_info) callback function at any IRQL level. This function logs only the chunk info and does not queue any chunk packets.
+-   The Miracast user-mode driver calls the [**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) callback function to report details with the **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_PROCESSING\_COMPLETE** type, or with **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT** to indicate the chunk is just about to be sent to the network stack for transmission.
+-   The display miniport driver reports details of the chunk processing with the **DXGK\_INTERRUPT\_MICACAST\_CHUNK\_PROCESSING\_COMPLETE** interrupt type, although this report can only be made at interrupt time, and in a addition to logging the chunk info, a chunk packet is created and queued so that the Miracast user-mode driver can retrieve it by calling the [**GetNextChunkData**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_get_next_chunk_data) callback function.
+-   The display miniport driver calls the [**DxgkCbReportChunkInfo**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_report_chunk_info) callback function at any IRQL level. This function logs only the chunk info and does not queue any chunk packets.
 
 If the desktop image is not updated but the driver needs to encode the desktop image again to improve quality, the same frame number and part numbers should be used. The performance tools will trigger the second encode complete event for the same frame and part number, indicating that a second encode of the same frame was performed.
 
@@ -40,12 +41,12 @@ The Miracast user-mode driver should inform the operating system at each of seve
 Represents the point where the operating system asks the driver to display the new desktop frame. Although technically this could be reported from the Miracast user-mode driver, the start of processing new frame always involves the display miniport driver and should be reported by that driver.
 
 <span id="Color_convert_complete__chunk_type_MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE_"></span><span id="color_convert_complete__chunk_type_miracast_chunk_type_color_convert_complete_"></span><span id="COLOR_CONVERT_COMPLETE__CHUNK_TYPE_MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE_"></span>Color convert complete, chunk type **MIRACAST\_CHUNK\_TYPE\_COLOR\_CONVERT\_COMPLETE**:  
-Some solutions have separate color convert and encode stages. In such solutions the color convert complete processing event should be reported as soon as possible, and the driver should use the [**DXGK\_MIRACAST\_CHUNK\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_info).**ProcessingTime** member to report the time it took for the hardware to perform the operation. If the entire frame is color converted all at once rather than in slices, then the part number should be zero.
+Some solutions have separate color convert and encode stages. In such solutions the color convert complete processing event should be reported as soon as possible, and the driver should use the [**DXGK\_MIRACAST\_CHUNK\_INFO**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_info).**ProcessingTime** member to report the time it took for the hardware to perform the operation. If the entire frame is color converted all at once rather than in slices, then the part number should be zero.
 
 <span id="Encode_complete__chunk_type_MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE_"></span><span id="encode_complete__chunk_type_miracast_chunk_type_encode_complete_"></span><span id="ENCODE_COMPLETE__CHUNK_TYPE_MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE_"></span>Encode complete, chunk type **MIRACAST\_CHUNK\_TYPE\_ENCODE\_COMPLETE**:  
-Indicates that the H.264 encode has been completed. The **ProcessingTime** and **EncodeRate** members of the [**DXGK\_MIRACAST\_CHUNK\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_info) structure should be completed.
+Indicates that the H.264 encode has been completed. The **ProcessingTime** and **EncodeRate** members of the [**DXGK\_MIRACAST\_CHUNK\_INFO**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_info) structure should be completed.
 
-<span id="Frame_send__calling_ReportStatistic_using_MIRACAST_STATISTIC_TYPE_CHUNK_SENT_"></span><span id="frame_send__calling_reportstatistic_using_miracast_statistic_type_chunk_sent_"></span><span id="FRAME_SEND__CALLING_REPORTSTATISTIC_USING_MIRACAST_STATISTIC_TYPE_CHUNK_SENT_"></span>Frame send, calling [**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**:  
+<span id="Frame_send__calling_ReportStatistic_using_MIRACAST_STATISTIC_TYPE_CHUNK_SENT_"></span><span id="frame_send__calling_reportstatistic_using_miracast_statistic_type_chunk_sent_"></span><span id="FRAME_SEND__CALLING_REPORTSTATISTIC_USING_MIRACAST_STATISTIC_TYPE_CHUNK_SENT_"></span>Frame send, calling [**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**:  
 Indicates that the data packet for this frame/part number is just about to be sent to the networking API for transmission from the Miracast user-mode driver. If the data for this frame/part is sent using multiple calls to the networking API, then this should only be logged just before the first packet is sent. The call to indicate this should be made just before calling the network API. This is important because if the network API blocks calls, then we do not want that blocked time to count against processing of the frame in the graphics stack.
 
 <span id="Dropped_frame__chunk_type__MIRACAST_CHUNK_TYPE_FRAME_DROPPED_"></span><span id="dropped_frame__chunk_type__miracast_chunk_type_frame_dropped_"></span><span id="DROPPED_FRAME__CHUNK_TYPE__MIRACAST_CHUNK_TYPE_FRAME_DROPPED_"></span>Dropped frame, chunk type **MIRACAST\_CHUNK\_TYPE\_FRAME\_DROPPED**:  
@@ -58,7 +59,7 @@ Here are examples of how frame color is converted and then how the display minip
 
 **Reporting a single frame without using slices:**
 
-Value of [**MIRACAST\_CHUNK\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info) member:
+Value of [**MIRACAST\_CHUNK\_INFO**](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info) member:
 **ChunkType** value
 **ChunkId**.
 **ChunkId**.
@@ -87,7 +88,7 @@ Encode is complete
 1042
 15000
 Just before call to send data to network
-[**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
+[**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
 101, value of **ChunkSent**. **ChunkId**. **FrameNumber**
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
@@ -98,7 +99,7 @@ N/A
 
 **Reporting a single frame, processed using slices:**
 
-Value of [**MIRACAST\_CHUNK\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info) member:
+Value of [**MIRACAST\_CHUNK\_INFO**](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info) member:
 **ChunkType**
 **ChunkId**.
 **ChunkId**.
@@ -133,13 +134,13 @@ Encode of slice 2 is complete
 400
 15000
 Just before call to send slice 1 data to network
-[**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
+[**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
 101, value of **ChunkSent**. **ChunkId**. **FrameNumber**
 1, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
 N/A
 Just before call to send slice 2 data to network
-[**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
+[**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
 101, value of **ChunkSent**. **ChunkId**. **FrameNumber**
 0, value of **ChunkSent**. **ChunkId**. **PartNumber** (See Note above.)
 N/A
@@ -150,7 +151,7 @@ N/A
 
 **Reporting an original frame, processed and then re-encoded without using slices:**
 
-Value of [**MIRACAST\_CHUNK\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info) member:
+Value of [**MIRACAST\_CHUNK\_INFO**](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info) member:
 **ChunkType**
 **ChunkId**.
 **ChunkId**.
@@ -179,7 +180,7 @@ Encode is complete
 1042
 15000
 Just before call to send data for original frame to network
-[**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
+[**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
 101, value of **ChunkSent**. **ChunkId**. **FrameNumber**
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
@@ -191,7 +192,7 @@ Re-encode is complete
 500
 15000
 Just before call to send data for re-encoded frame to network
-[**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
+[**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) call\*
 101, value of **ChunkSent**. **ChunkId**. **FrameNumber**
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
@@ -203,22 +204,16 @@ N/A
 ## <span id="Reporting_protocol_events"></span><span id="reporting_protocol_events"></span><span id="REPORTING_PROTOCOL_EVENTS"></span>Reporting protocol events
 
 
-When the Miracast user-mode driver reports protocol events by calling the [**ReportStatistic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) function with [**MIRACAST\_STATISTIC\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_statistic_data).**StatisticType** set to **MIRACAST\_STATISTIC\_TYPE\_EVENT**, the operating system logs the event but takes no other action. These events are nevertheless valuable for diagnostics and performance investigation.
+When the Miracast user-mode driver reports protocol events by calling the [**ReportStatistic**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic) function with [**MIRACAST\_STATISTIC\_DATA**](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_statistic_data).**StatisticType** set to **MIRACAST\_STATISTIC\_TYPE\_EVENT**, the operating system logs the event but takes no other action. These events are nevertheless valuable for diagnostics and performance investigation.
 
-The [**MIRACAST\_PROTOCOL\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_protocol_event) enumeration includes possible protocol event types that can be reported.
+The [**MIRACAST\_PROTOCOL\_EVENT**](/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_protocol_event) enumeration includes possible protocol event types that can be reported.
 
 ## <span id="Reporting_protocol_errors"></span><span id="reporting_protocol_errors"></span><span id="REPORTING_PROTOCOL_ERRORS"></span>Reporting protocol errors
 
 
-While a Miracast connected session is in progress, if a Miracast user-mode driver discovers an error, it should call the [**ReportSessionStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_session_status) callback function with appropriate [**MIRACAST\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_status) error status info in the *MiracastStatus* parameter. The operating session will always destroy the session when an error is reported.
+While a Miracast connected session is in progress, if a Miracast user-mode driver discovers an error, it should call the [**ReportSessionStatus**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_session_status) callback function with appropriate [**MIRACAST\_STATUS**](/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_status) error status info in the *MiracastStatus* parameter. The operating session will always destroy the session when an error is reported.
 
-Note that although the operating system merely logs the [**ReportSessionStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_session_status)*Status* parameter for diagnostics and doesn't take any action based on its value. However, we recommend that the driver use this parameter to differentiate between different causes of the error.
-
- 
+Note that although the operating system merely logs the [**ReportSessionStatus**](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_session_status)*Status* parameter for diagnostics and doesn't take any action based on its value. However, we recommend that the driver use this parameter to differentiate between different causes of the error.
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure
 description: The HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure contains the list of hosts that the plugin requires to be connected over a cellular bearer only during the authentication process.
-ms.assetid: cc7ad05b-d03b-463a-9d22-1982aee882e8
 keywords: 
 - HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure pointer Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_CELLULAR\_EXCEPTION\_HOSTS structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_CELLULAR\_EXCEPTION\_HOSTS** structure contains the list of hosts that the plugin requires to be connected over a cellular bearer only during the authentication process. This is an optional capability that can be requested by the plugin. For more information, see [**HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS**](hs-plugin-query-cellular-exception-hosts.md).
@@ -64,12 +63,7 @@ Requirements
 
 [**HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS**](hs-plugin-query-cellular-exception-hosts.md)
 
-[Microsoft Interface Definition Language](https://docs.microsoft.com/windows/desktop/Midl/midl-start-page)
+[Microsoft Interface Definition Language](/windows/desktop/Midl/midl-start-page)
 
  
-
- 
-
-
-
 

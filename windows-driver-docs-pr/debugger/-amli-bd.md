@@ -1,7 +1,6 @@
 ---
 title: amli bd
 description: The amli bd extension temporarily disables an AML breakpoint.
-ms.assetid: a7fb4f51-8984-425b-858d-1e1e69825891
 keywords: ["amli bd Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

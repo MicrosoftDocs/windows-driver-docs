@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_SEGMENTATION
 description: The WIA\_IPS\_SEGMENTATION property indicates if segmentation is to be performed during a scan. The WIA minidriver creates and maintains this property.
-ms.assetid: 4e801aa4-a85f-4439-8a8d-990e6cbf81e4
 keywords: ["WIA_IPS_SEGMENTATION Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Operations Topics
 description: Winsock Kernel Operations Topics
-ms.assetid: 5e336c62-8808-418e-8bd4-d54c4c747854
 keywords:
 - Winsock Kernel WDK networking , operations
 - WSK WDK networking , operations
@@ -28,7 +27,7 @@ This section discusses Winsock Kernel (WSK) operations and includes the followin
 -   [Registering an Extension Interface](registering-an-extension-interface.md)
 -   [Unregistering a Winsock Kernel Application](unregistering-a-winsock-kernel-application.md)
 -   [Resolving Host Names and IP Addresses](resolving-host-names-and-ip-addresses.md)
--   [WSK Client Control Operations](wsk-client-control-operations.md)
--   [WSK Socket IOCTL Operations](wsk-socket-ioctl-operations.md)
--   [WSK Socket Options](wsk-socket-options.md)
--   [WSK data types](wsk-data-types.md)
+-   [WSK Client Control Operations](wsk-cache-sd.md)
+-   [WSK Socket IOCTL Operations](sio-wsk-query-ideal-send-backlog.md)
+-   [WSK Socket Options](so-broadcast.md)
+-   [WSK data types](wsk-client.md)

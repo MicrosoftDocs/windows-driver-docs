@@ -1,7 +1,6 @@
 ---
 title: Storage Device Stacks, Storage Volumes, and File System Stacks
 description: Storage Device Stacks, Storage Volumes, and File System Stacks
-ms.assetid: 5240ce9b-acfa-4e9c-9962-bc776878827c
 keywords:
 - storage devices WDK file system
 - stacks WDK file system
@@ -14,21 +13,21 @@ ms.localizationpriority: medium
 # Storage Device Stacks, Storage Volumes, and File System Stacks
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 Before exploring how file system legacy filter drivers attach to file systems and volumes, it is necessary to understand the relationship between storage device stacks, storage volumes, and file system stacks.
 
 ## Storage Device Stacks
 
-Most storage drivers are PnP device drivers, which are loaded and managed by the PnP Manager. Storage devices are represented in the PnP *device tree*, which contains a device node, or *devnode*, for every physical or logical device on the machine. It is important to note that file systems and file system filter drivers are not PnP device drivers; thus the PnP [device tree]((https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree)) contains no devnodes for them.
+Most storage drivers are PnP device drivers, which are loaded and managed by the PnP Manager. Storage devices are represented in the PnP *device tree*, which contains a device node, or *devnode*, for every physical or logical device on the machine. It is important to note that file systems and file system filter drivers are not PnP device drivers; thus the PnP [device tree](../kernel/device-tree.md) contains no devnodes for them.
 
 The devnode for a particular storage device contains the *storage device stack* for the device; this is the chain of attached device objects that represent the device's storage device drivers. Because a storage device, such as a disk, might contain one or more logical volumes (partitions or dynamic volumes), the storage device stack itself often looks more like a tree than a stack. The root of this tree is a functional device object (FDO) for a storage adapter or for another device stack that is integrated with the storage stack. The leaves of this tree are the physical device objects (PDOs) for the logical volumes, also called *storage volumes*, on which file system volumes can be mounted.
 
 For diagrams and descriptions of some typical storage device stacks, see the following sections of the Storage Devices Design Guide:
 
-- [Device Object Example for a SCSI HBA](https://docs.microsoft.com/windows-hardware/drivers/storage/device-object-example-for-a-scsi-hba)
+- [Device Object Example for a SCSI HBA](../storage/device-object-example-for-a-scsi-hba.md)
 
-- [Device Object Example for an IEEE 1394 Controller](https://docs.microsoft.com/windows-hardware/drivers/storage/device-object-example-for-an-ieee-1394-controller)
+- [Device Object Example for an IEEE 1394 Controller](../storage/device-object-example-for-an-ieee-1394-controller.md)
 
 ## Storage Volumes
 
@@ -42,9 +41,9 @@ When a file system is mounted on a storage volume, it creates a file system volu
 
 The *Mount Manager* is the part of the I/O system that is responsible for managing storage volume information such as volume names, drive letters, and volume mount points. When a new storage volume is added to the system, Mount Manager is notified of its arrival in either of the following ways:
 
-- The class driver that created the storage volume calls [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to register a new interface in the MOUNTDEV_MOUNTED_DEVICE_GUID interface class. When this happens, the Plug and Play device interface notification mechanism alerts the Mount Manager of the volume's arrival in the system.
+- The class driver that created the storage volume calls [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to register a new interface in the MOUNTDEV_MOUNTED_DEVICE_GUID interface class. When this happens, the Plug and Play device interface notification mechanism alerts the Mount Manager of the volume's arrival in the system.
 
-- The driver for the storage volume sends the Mount Manager an IRP_MJ_DEVICE_CONTROL request, specifying [**IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_volume_arrival_notification) for the I/O control code. This request can be created by calling [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
+- The driver for the storage volume sends the Mount Manager an IRP_MJ_DEVICE_CONTROL request, specifying [**IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION**](/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_volume_arrival_notification) for the I/O control code. This request can be created by calling [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
 
 ### Unique Volume Name
 
@@ -56,7 +55,7 @@ Mount Manager responds to the arrival of a new storage volume by querying the vo
 
 - A suggested persistent symbolic link name for the volume, such as a drive letter (for example, "\DosDevices\D:")
 
-For more information about the interaction between storage drivers and Mount Manager, see [Supporting Mount Manager Requests in a Storage Class Driver](https://docs.microsoft.com/windows-hardware/drivers/storage/supporting-mount-manager-requests-in-a-storage-class-driver).
+For more information about the interaction between storage drivers and Mount Manager, see [Supporting Mount Manager Requests in a Storage Class Driver](../storage/supporting-mount-manager-requests-in-a-storage-class-driver.md).
 
 ## File System Stacks
 

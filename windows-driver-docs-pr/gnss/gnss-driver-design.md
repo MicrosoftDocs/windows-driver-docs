@@ -1,7 +1,6 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver design
 description: Discusses design principles to consider when developing a Global Navigation Satellite System (GNSS) driver for Windows 10 including data structures, error reporting, and driver versioning.
-ms.assetid: E10B1149-CC8B-438D-B537-258F7FCFA0E7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,7 +29,7 @@ The Global Navigation Satellite System (GNSS) DDI expects an **NTSTATUS** as a r
 
 Every structure specified for the Global Navigation Satellite System (GNSS) DDI contains a driver version field, and many structures contain a padding field. Both of these components are used to mitigate new versions of the GNSS DDI, using the following policies:
 
-- The framework and the driver communicate their respective versions using the capability exchange process. These IOCTLs are considered special in that they communicate their versions using the version field. Therefore, implementations surrounding device and platform capability checking should explicitly check the versions returned first, and store it for usage later. The version member of the [**GNSS\_DEVICE\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_device_capability) structure communicates the version number of the driver. The version member of the [**GNSS\_PLATFORM\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_platform_capability) structure communicates the version number of the GNSS adapter.
+- The framework and the driver communicate their respective versions using the capability exchange process. These IOCTLs are considered special in that they communicate their versions using the version field. Therefore, implementations surrounding device and platform capability checking should explicitly check the versions returned first, and store it for usage later. The version member of the [**GNSS\_DEVICE\_CAPABILITY**](/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_device_capability) structure communicates the version number of the driver. The version member of the [**GNSS\_PLATFORM\_CAPABILITY**](/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_platform_capability) structure communicates the version number of the GNSS adapter.
 
 - Whenever a new field is added, if the structure has a padding field, space shall be taken out of padding instead of adding to the structure, which will maintain binary compatibility
 

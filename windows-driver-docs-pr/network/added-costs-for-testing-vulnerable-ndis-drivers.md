@@ -1,7 +1,6 @@
 ---
 title: Added Costs for Testing Vulnerable NDIS Drivers
 description: Added Costs for Testing Vulnerable NDIS Drivers
-ms.assetid: ee748650-92e6-4885-895e-c030cf33f315
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

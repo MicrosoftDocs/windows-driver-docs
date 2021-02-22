@@ -1,7 +1,6 @@
 ---
 title: WIA Segmentation Filter
 description: WIA Segmentation Filter
-ms.assetid: 7a0ac9d9-2526-426a-b17d-2b5edd8f1f10
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

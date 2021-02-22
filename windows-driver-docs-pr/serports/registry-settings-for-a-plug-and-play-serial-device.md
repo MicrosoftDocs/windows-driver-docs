@@ -1,7 +1,6 @@
 ---
 title: Registry Settings for a Plug and Play Serial Device
 description: Registry Settings for a Plug and Play Serial Device
-ms.assetid: 57bd090a-20fe-41c6-b730-0479f6ae0982
 keywords:
 - Serial driver WDK , Plug and Play devices
 - Plug and Play serial devices WDK
@@ -47,10 +46,10 @@ Boolean flag that specifies whether to disable the device. If **DisablePort** is
 Specifies a Boolean flag that indicates whether to force Serial to use FIFOs. If **ForceFifoEnable** is nonzero, FIFOs are used, regardless of whether Serial can detect the presence of FIFOs. Otherwise, FIFOs are only used if Serial can detect them. The default value of **ForceFifoEnable** is the value set for the Serial service. (The default value for the Serial service is 0x00000001.)
 
 <a href="" id="rxfifo--reg-dword-"></a>**RxFIFO** (REG\_DWORD)  
-Specifies the number of bytes in the receive FIFO that triggers a serial port interrupt. For valid values, see the constants defined in the Serial.h header file in the [Serial driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617962) on GitHub. The default value of **RxFIFO** is the value set for the Serial service. (The default value for the Serial service is eight bytes.)
+Specifies the number of bytes in the receive FIFO that triggers a serial port interrupt. For valid values, see the constants defined in the Serial.h header file in the [Serial driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serial) on GitHub. The default value of **RxFIFO** is the value set for the Serial service. (The default value for the Serial service is eight bytes.)
 
 <a href="" id="txfifo--reg-dword-"></a>**TxFIFO** (REG\_DWORD)  
-Specifies the number of bytes in the transmit FIFO that triggers a serial device interrupt. For valid values, see the constants defined in the Serial.h header file in the [Serial driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617962) on GitHub. The default value of **TxFIFO** is the value set for the Serial service. (The default value for the Serial service is fourteen bytes.)
+Specifies the number of bytes in the transmit FIFO that triggers a serial device interrupt. For valid values, see the constants defined in the Serial.h header file in the [Serial driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serial) on GitHub. The default value of **TxFIFO** is the value set for the Serial service. (The default value for the Serial service is fourteen bytes.)
 
 <a href="" id="maskinverted--reg-dword-"></a>**MaskInverted** (REG\_DWORD)  
 Specifies a Boolean flag that indicates whether the serial device hardware inverts the contents of the interrupt status register. If **MaskInverted** is nonzero, the interrupt status register is inverted; otherwise, the interrupt status register is not inverted. The default value of **MaskInverted** is 0x00000000.

@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Biometric Drivers
 description: Getting Started with Biometric Drivers
-ms.assetid: 7f5dcac2-db0d-4ddd-9e57-886db324e38b
 keywords:
 - biometric drivers WDK , about biometric drivers
 ms.date: 04/20/2017
@@ -21,7 +20,7 @@ This documentation describes the WBDI. WBS is documented separately in the Windo
 
 The first choice you must make when you develop a driver to work with the Windows Biometric Driver Interface (WBDI) is which driver model to use.
 
-Microsoft recommends that IHVs develop biometric device drivers by using the Windows User-mode Driver Framework (WUDF, also referred to as [UMDF](https://docs.microsoft.com/previous-versions/ff554928(v=vs.85))) and the WinUSB I/O target.
+Microsoft recommends that IHVs develop biometric device drivers by using the Windows User-mode Driver Framework (WUDF, also referred to as [UMDF](/previous-versions/ff554928(v=vs.85))) and the WinUSB I/O target.
 
 The following diagram shows how a UMDF-based Windows Biometric Driver Interface (WBDI) driver fits into the Windows Biometric Framework (WBF) biometric support in Windows 7. All biometric operations are driven by client applications to the Windows Biometric Service (WBS). The WBS sends requests to biometric device drivers that expose the WBDI interface.
 
@@ -44,10 +43,4 @@ The following list shows the different ways that you can develop a driver for WB
 This documentation describes how to use UMDF to write a WBDI-based user-mode USB biometric driver.
 
  
-
- 
-
-
-
-
 

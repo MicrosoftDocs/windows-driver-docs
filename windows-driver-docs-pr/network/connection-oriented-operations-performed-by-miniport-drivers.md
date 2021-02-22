@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Operations Performed by Miniport Drivers
 description: Connection-Oriented Operations Performed by Miniport Drivers
-ms.assetid: c49f93b2-6a51-45b6-8b02-93f3bef8dcde
 keywords:
 - miniport drivers WDK networking , CoNDIS
 - connection-oriented NDIS WDK , miniport drivers

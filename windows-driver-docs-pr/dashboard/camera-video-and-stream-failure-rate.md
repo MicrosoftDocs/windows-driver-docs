@@ -33,15 +33,19 @@ To capture a camera’s video stream, the machine must continuously store the ma
 
    a. *Successful video and streaming event = 0% failure*  
 
-       i. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_RECORD_STARTED)
+```cpp
+MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_RECORD_STARTED)
+```
 
    b. *Failed video and streaming event = 100% failure*
 
-         i. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_ERROR)
-        ii. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_RECORD_STOPPED)
-       iii. MFCaptureEngineSessionStop
-        iv. OnEvent_RecordStop_Failure
-         v. Timed Out
+```cpp
+i. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_ERROR)
+ii. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_RECORD_STOPPED)
+iii. MFCaptureEngineSessionStop
+iv. OnEvent_RecordStop_Failure
+v. Timed Out
+```
 
 ### Final calculation
 

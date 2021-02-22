@@ -1,7 +1,6 @@
 ---
 title: Allocating Memory for Data
 description: Allocating Memory for Data
-ms.assetid: 15df5616-ddce-44ec-bd10-65cae0d95cf4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The WIA service relies on the information supplied in the [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure to perform a proper data transfer. The members of this structure that are relevant to the WIA minidriver are:
+The WIA service relies on the information supplied in the [**MINIDRV\_TRANSFER\_CONTEXT**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure to perform a proper data transfer. The members of this structure that are relevant to the WIA minidriver are:
 
 **bClassDrvAllocBuf** − WIA service allocation Boolean.
 
@@ -24,13 +23,13 @@ If the **bClassDrvAllocBuf** member of the MINIDRV\_TRANSFER\_CONTEXT structure 
 
 The minidriver should allocate memory using the **CoTaskMemAlloc** function (described in the Microsoft Windows SDK documentation). The minidriver should then store the pointer to the memory location in **pTransferBuffer** and the size of the memory in **lBufferSize** (in bytes).
 
-The **bClassDrvAllocBuff** member is set to **FALSE** only if the [**WIA\_IPA\_TYMED**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-tymed) property is set to TYMED\_FILE or TYMED\_MULTIPAGE\_FILE, and the [**WIA\_IPA\_ITEM\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-size) property is set to zero.
+The **bClassDrvAllocBuff** member is set to **FALSE** only if the [**WIA\_IPA\_TYMED**](./wia-ipa-tymed.md) property is set to TYMED\_FILE or TYMED\_MULTIPAGE\_FILE, and the [**WIA\_IPA\_ITEM\_SIZE**](./wia-ipa-item-size.md) property is set to zero.
 
 The minidriver must be careful not to overfill the buffer pointed to by the **pTransferBuffer** member. You can avoid this by writing data in amounts less than or equal to the value stored in the **lBufferSize** member.
 
 ### Enhancing Data Transfer Performance by Using Minimum Buffer Size
 
-The WIA minidriver can control the amount of memory used during the data transfer by setting the [**WIA\_IPA\_ITEM\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-size) and [**WIA\_IPA\_BUFFER\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-buffer-size) properties.
+The WIA minidriver can control the amount of memory used during the data transfer by setting the [**WIA\_IPA\_ITEM\_SIZE**](./wia-ipa-item-size.md) and [**WIA\_IPA\_BUFFER\_SIZE**](./wia-ipa-buffer-size.md) properties.
 
 A WIA application uses the WIA\_IPA\_BUFFER\_SIZE property to determine the minimum transfer buffer size to request during a memory transfer. The larger this value is, the larger the requested band size will be. If a WIA application requests a buffer that is smaller in size than the value in the WIA\_IPA\_BUFFER\_SIZE property, the WIA service ignores this requested size and asks the WIA minidriver for a buffer that is WIA\_IPA\_BUFFER\_SIZE bytes in size. The WIA service always asks the WIA minidriver for buffers that are at least WIA\_IPA\_BUFFER\_SIZE bytes in size.
 
@@ -40,9 +39,9 @@ A WIA application uses the WIA\_IPA\_BUFFER\_SIZE property to determine the mini
 
 It is recommended that you set the WIA\_IPA\_BUFFER\_SIZE property to a reasonable size to allow the device to transfer data at an efficient rate. Do this by balancing the number of requests (buffer size not too small) and the number of time-consuming requests (buffer too large) for your device in order to ensure optimal performance.
 
-You should set the [**WIA\_IPA\_ITEM\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-size) property to zero if the WIA minidriver can transfer data. If the transfer type is TYMED\_FILE or TYMED\_MULTIPAGE\_FILE, it is the minidriver's responsibility to allocate memory for the data buffer to be passed to the WIA service function that writes to the file. This provides consistency in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method.
+You should set the [**WIA\_IPA\_ITEM\_SIZE**](./wia-ipa-item-size.md) property to zero if the WIA minidriver can transfer data. If the transfer type is TYMED\_FILE or TYMED\_MULTIPAGE\_FILE, it is the minidriver's responsibility to allocate memory for the data buffer to be passed to the WIA service function that writes to the file. This provides consistency in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method.
 
-The [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method is called by the WIA service when it intends to transfer data from the device to an application. The WIA driver should determine which type of transfer (via the WIA service) the application is attempting, by reading the **tymed** member of the [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context):
+The [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method is called by the WIA service when it intends to transfer data from the device to an application. The WIA driver should determine which type of transfer (via the WIA service) the application is attempting, by reading the **tymed** member of the [**MINIDRV\_TRANSFER\_CONTEXT**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context):
 
 The **tymed** member, which is set by the application, can have one of the following four values:
 
@@ -62,7 +61,7 @@ The different TYMED settings XXX\_CALLBACK and XXX\_FILE change the usage of cal
 
 ### <a href="" id="tymed-callback-and-tymed-multipage-callback"></a>TYMED\_CALLBACK and TYMED\_MULTIPAGE\_CALLBACK
 
-For a memory transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback:
+For a memory transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback:
 
 (*pmdtc-&gt;pIWiaMiniDrvCallBack-&gt;MiniDrvCallback* in the following sample source code)
 
@@ -84,11 +83,11 @@ Update this to the current location where the application should write the next 
 The number of bytes in the data chunk being sent to the application.
 
 <a href="" id="pmdtc"></a>*pmdtc*  
-Pointer to a [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure that contains the data transfer values.
+Pointer to a [**MINIDRV\_TRANSFER\_CONTEXT**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure that contains the data transfer values.
 
 ### <a href="" id="tymed-file-and-tymed-multipage-file"></a>TYMED\_FILE and TYMED\_MULTIPAGE\_FILE
 
-For a file transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback::
+For a file transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback::
 
 (*pmdtc-&gt;pIWiaMiniDrvCallBack-&gt;MiniDrvCallback* in the following sample source code)
 
@@ -103,11 +102,11 @@ The data transfer message.
 <a href="" id="lpercentcomplete"></a>*lPercentComplete*  
 The percentage of the transfer that is complete.
 
-If the **ItemSize** member of the MINIDRV\_TRANSFER\_CONTEXT structure is set to zero, this indicates to the application that the WIA driver does not know the resulting image size and will then allocate its own data buffers. The WIA driver will read the [**WIA\_IPA\_BUFFER\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-buffer-size) property and allocate memory for a single band of data. The WIA driver can allocate any amount of memory it needs here, but it is recommended that allocation be kept small.
+If the **ItemSize** member of the MINIDRV\_TRANSFER\_CONTEXT structure is set to zero, this indicates to the application that the WIA driver does not know the resulting image size and will then allocate its own data buffers. The WIA driver will read the [**WIA\_IPA\_BUFFER\_SIZE**](./wia-ipa-buffer-size.md) property and allocate memory for a single band of data. The WIA driver can allocate any amount of memory it needs here, but it is recommended that allocation be kept small.
 
 To see if the WIA service has allocated memory for the driver, check the *pmdtc-&gt;bClassDrvAllocBuf* flag. If it is set to **TRUE**, then the WIA service has allocated memory for the driver. To find out how much memory was allocated, check the value in *pmdtc-&gt;lBufferSize*.
 
-To allocate your own memory, use **CoTaskMemAlloc** (described in the Microsoft Windows SDK documentation), and use the pointer located in *pmdtc-&gt;pTransferBuffer*. (Remember that the driver allocated this memory, so the driver must also free it.) Set *pmdtc-&gt;lBufferSize* to the size you allocated. As previously stated, this WIA sample driver allocates a buffer whose size, in bytes, is equal to the value contained in [**WIA\_IPA\_BUFFER\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-buffer-size). The driver then uses that memory.
+To allocate your own memory, use **CoTaskMemAlloc** (described in the Microsoft Windows SDK documentation), and use the pointer located in *pmdtc-&gt;pTransferBuffer*. (Remember that the driver allocated this memory, so the driver must also free it.) Set *pmdtc-&gt;lBufferSize* to the size you allocated. As previously stated, this WIA sample driver allocates a buffer whose size, in bytes, is equal to the value contained in [**WIA\_IPA\_BUFFER\_SIZE**](./wia-ipa-buffer-size.md). The driver then uses that memory.
 
 The following example shows an implementation of the **IWiaMiniDrv::drvAcquireItemData** method. This example can handle both memory allocation cases.
 
@@ -348,9 +347,4 @@ HRESULT _stdcall CWIADevice::drvAcquireItemData(
 ```
 
  
-
- 
-
-
-
 

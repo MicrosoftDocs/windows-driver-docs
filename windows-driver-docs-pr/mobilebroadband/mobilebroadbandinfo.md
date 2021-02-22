@@ -1,14 +1,13 @@
 ---
 title: MobileBroadbandInfo
 description: MobileBroadbandInfo
-ms.assetid: 02279e23-becd-49ef-8981-6afb8e5aab91
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The MobileBroadbandInfo element is the parent element of the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md).
 

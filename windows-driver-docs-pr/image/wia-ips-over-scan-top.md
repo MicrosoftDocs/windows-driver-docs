@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_OVER\_SCAN\_TOP
 description: The WIA\_IPS\_OVER\_SCAN\_TOP property along with WIA\_IPS\_OVER\_SCAN\_BOTTOM, WIA\_IPS\_OVER\_SCAN\_LEFT, and WIA\_IPS\_OVER\_SCAN\_RIGHT are used to configure the amount of over scanning, in thousandths of an inch (0.001 \ 0034;) units, relative to the physical document.
-ms.assetid: 7957BBB4-C4E6-4704-A64D-F2F318ABDF61
 keywords: ["WIA_IPS_OVER_SCAN_TOP Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdhccontext
 description: The usbkd.usbhcdhccontext command displays the USB2LIB_HC_CONTEXT for a USB host controller.
-ms.assetid: 72A4BAA1-D395-4D6A-BEFB-F217E994B4E7
 keywords: ["usbkd.usbhcdhccontext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,14 +37,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

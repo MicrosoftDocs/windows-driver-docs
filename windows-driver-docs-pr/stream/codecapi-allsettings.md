@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_ALLSETTINGS
 description: CODECAPI\_ALLSETTINGS
-ms.assetid: 0ae11200-af21-476a-89a8-515bd98920a0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -68,13 +67,7 @@ The minidriver must verify the data's integrity and check that the data block si
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
 
  
-
- 
-
-
-
-
 

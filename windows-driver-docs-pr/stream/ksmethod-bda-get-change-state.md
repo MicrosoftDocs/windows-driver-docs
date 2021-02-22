@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_GET\_CHANGE\_STATE
 description: Clients use KSMETHOD\_BDA\_GET\_CHANGE\_STATE to determine the current change state for a filter.
-ms.assetid: bb635b88-6d51-4d0c-9134-2fc6287a4146
 keywords: ["KSMETHOD_BDA_GET_CHANGE_STATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -50,18 +49,11 @@ Requirements
 ## See also
 
 
-[**BDA\_CHANGE\_STATE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556518(v=vs.85))
+[**BDA\_CHANGE\_STATE**](/previous-versions/windows/hardware/drivers/ff556518(v=vs.85))
 
-[**BdaGetChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate)
+[**BdaGetChangeState**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
-
- 
+[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
 
  
-
-
-
-
-
 

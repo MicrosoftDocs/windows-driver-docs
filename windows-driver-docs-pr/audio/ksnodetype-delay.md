@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DELAY
 description: KSNODETYPE\_DELAY
-ms.assetid: 50e44c2d-6f56-412e-ab37-cbaeea61754a
 keywords: ["KSNODETYPE_DELAY Audio Devices"]
 topic_type:
 - apiref

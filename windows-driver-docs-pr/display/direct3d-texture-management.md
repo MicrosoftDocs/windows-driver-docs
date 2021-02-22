@@ -1,7 +1,6 @@
 ---
 title: Direct3D Texture Management
 description: Direct3D Texture Management
-ms.assetid: d67ce56b-ed76-413f-b09f-e25400f1ac6d
 keywords:
 - texture management WDK Direct3D
 - Direct3D WDK Windows 2000 display , texture management
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_direct3d_texture_management_gg"></span><span id="DDK_DIRECT3D_TEXTURE_MANAGEMENT_GG"></span>
 
 
-Although texture support is optional, most of today's drivers are capable of supporting it. Drivers that support texture mapping must respond to all of the texture-related operation codes in the Microsoft Direct3D DDI. For more information about texture-related operation codes, see [**D3DHAL\_DP2OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation).
+Although texture support is optional, most of today's drivers are capable of supporting it. Drivers that support texture mapping must respond to all of the texture-related operation codes in the Microsoft Direct3D DDI. For more information about texture-related operation codes, see [**D3DHAL\_DP2OPERATION**](/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation).
 
-Drivers must also validate the texture stage states with the [**D3dValidateTextureStageState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb) callback.
+Drivers must also validate the texture stage states with the [**D3dValidateTextureStageState**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb) callback.
 
 The following sections describe how drivers implement support for textures:
 
@@ -33,10 +32,4 @@ The following sections describe how drivers implement support for textures:
 [Driver-Managed Resources](driver-managed-resources.md)
 
  
-
- 
-
-
-
-
 

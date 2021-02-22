@@ -1,7 +1,6 @@
 ---
 title: WdfObjectGetTypedContext macro
 description: The WdfObjectGetTypedContext macro returns a pointer to an object's context space.
-ms.assetid: de0edae4-7c05-4419-972e-c106875dfff1
 keywords:
  - WdfObjectGetTypedContext macro
 ms.date: 08/23/2017
@@ -44,7 +43,7 @@ Remarks
 
 You can use the **WdfObjectGetTypedContext** macro to obtain a pointer to any framework object's context space. Use this macro as an alternative to calling an object-specific context accessor method that is created by the [**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md) macro or the [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md) macro. Note that if you use **WdfObjectGetTypedContext**, you still must use WDF_DECLARE_CONTEXT_TYPE or WDF_DECLARE_CONTEXT_TYPE_WITH_NAME to declare your object context.
 
-For more information about these macros, see [Framework Object Context Space](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space).
+For more information about these macros, see [Framework Object Context Space](./framework-object-context-space.md).
 
 Examples
 --------
@@ -132,11 +131,4 @@ WUDFx02000.dll (UMDF)</td>
 [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md)
 
  
-
- 
-
-
-
-
-
 

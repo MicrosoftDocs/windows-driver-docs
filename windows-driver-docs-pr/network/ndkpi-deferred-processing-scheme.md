@@ -1,7 +1,6 @@
 ---
 title: NDKPI deferred processing scheme
 description: This section describes the deferred processing used with NDKPI
-ms.assetid: DA2D0FCA-D84B-4599-A560-8F87A0918D99
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,13 +12,13 @@ There are many cases where an NDK consumer will post a chain of initiator reques
 
 The **NDK\_OP\_FLAG\_DEFER** flag value can be used for this purpose with the following request types:
 
--   *NdkBind* ([*NDK\_FN\_BIND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_bind))
--   *NdkFastRegister* ([*NDK\_FN\_FAST\_REGISTER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_fast_register))
--   *NdkInvalidate* ([*NDK\_FN\_INVALIDATE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_invalidate))
--   *NdkRead* ([*NDK\_FN\_READ*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_read))
--   *NdkSend* ([*NDK\_FN\_SEND*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_send))
--   *NdkSendAndInvalidate* ([*NDK\_FN\_SEND\_AND\_INVALIDATE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_send_and_invalidate))
--   *NdkWrite* ([*NDK\_FN\_WRITE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_write))
+-   *NdkBind* ([*NDK\_FN\_BIND*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_bind))
+-   *NdkFastRegister* ([*NDK\_FN\_FAST\_REGISTER*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_fast_register))
+-   *NdkInvalidate* ([*NDK\_FN\_INVALIDATE*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_invalidate))
+-   *NdkRead* ([*NDK\_FN\_READ*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_read))
+-   *NdkSend* ([*NDK\_FN\_SEND*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_send))
+-   *NdkSendAndInvalidate* ([*NDK\_FN\_SEND\_AND\_INVALIDATE*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_send_and_invalidate))
+-   *NdkWrite* ([*NDK\_FN\_WRITE*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_write))
 
 The presence of the flag is a hint to the NDK provider that it may defer indicating the request to hardware for processing, but the provider may process the new request at any time.
 
@@ -41,14 +40,7 @@ For example, consider a case where a consumer has a chain of two fast register r
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

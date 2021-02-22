@@ -1,7 +1,6 @@
 ---
 title: DC Origin
 description: DC Origin
-ms.assetid: 7e997f6b-fec4-4aa4-b0ed-0d02cb3f844d
 keywords:
 - DC origin WDK GDI
 - surface negotiation WDK GDI , DC origin

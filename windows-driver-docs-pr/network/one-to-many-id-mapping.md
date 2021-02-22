@@ -1,7 +1,6 @@
 ---
 title: One-to-Many ID Mapping
 description: One-to-Many ID Mapping
-ms.assetid: 395d3f20-7410-496b-9ec3-1052cd731ae3
 keywords:
 - mapping network component IDs
 - ID mapping WDK netmap.inf
@@ -84,17 +83,11 @@ If the registry keys or values for an adapter instance are identical for differe
 
 The most effective way of handling this situation is as follows:
 
-1.  The network migration DLL's [**PreUpgradeInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562439(v=vs.85)) function modifies the registry so that the registry contains unique values for each instance of the network adapter. These unique values should indicate the adapter type.
+1.  The network migration DLL's [**PreUpgradeInitialize**](/previous-versions/windows/hardware/network/ff562439(v=vs.85)) function modifies the registry so that the registry contains unique values for each instance of the network adapter. These unique values should indicate the adapter type.
 
 2.  The **PreUpgradeInitialize** function sets the NUA\_REQUEST\_ABORT\_UPGRADE flag, which causes NetSetup to display a message that prompts the user to restart winnt32.exe and abort the upgrade.
 
 3.  The user aborts the upgrade and then restarts winnt32.exe. The network migration DLL can now use the unique values to map the single preupgrade device ID to more than one Windows 2000 or later device ID.
 
  
-
- 
-
-
-
-
 

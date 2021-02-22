@@ -1,14 +1,13 @@
 ---
 title: AllowTethering
 description: AllowTethering
-ms.assetid: f9b92c46-5e0e-447a-b571-bf549e9a749d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # AllowTethering
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The AllowTethering element specifies whether the user is always allowed, never allowed, or allowed after an entitlement check to use Internet sharing.
 

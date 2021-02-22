@@ -1,7 +1,6 @@
 ---
 title: Adding Registry Values for a Notify Object
 description: Adding Registry Values for a Notify Object
-ms.assetid: 8872a9b9-b7c5-4c10-b5d4-4fe880fc436f
 keywords:
 - add-registry-sections WDK networking , notify object registry values
 - notify objects WDK networking , registry values
@@ -35,7 +34,7 @@ For more information about notify objects, see [Notify Objects for Network Compo
 
  
 
-For more information about co-installers, see [Writing a Co-installer](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-co-installer).
+For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
 
 If a component has a notify object, the INF file for that component must add (through an *add-registry-section*) the following values to the component's **Ndi** key:
 
@@ -53,13 +52,7 @@ HKR, Ndi, ClsID, 0, "GUID"
 HKR, Ndi, ComponentDll, 0, "notifyobject.dll"
 ```
 
-The *DDInstall* section for a component that has a notify object must also contain a **CopyFiles** directive which references a *file-list-section* that copies the notify object DLL to the destination directory specified by the **DestinationDirs** section. For more information about the **CopyFiles** directive and **DestinationDirs** sections, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+The *DDInstall* section for a component that has a notify object must also contain a **CopyFiles** directive which references a *file-list-section* that copies the notify object DLL to the destination directory specified by the **DestinationDirs** section. For more information about the **CopyFiles** directive and **DestinationDirs** sections, see [INF File Sections and Directives](../install/index.md).
 
  
-
- 
-
-
-
-
 

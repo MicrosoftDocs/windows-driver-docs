@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_SUPPRESS\_PROPERTY\_PAGE
 description: The WIA\_IPA\_SUPPRESS\_PROPERTY\_PAGE property specifies whether to suppress the general property pages for items on a device.
-ms.assetid: cce8f6f9-ec35-4d07-89b0-08c437eb689c
 keywords: ["WIA_IPA_SUPPRESS_PROPERTY_PAGE Imaging Devices"]
 topic_type:
 - apiref

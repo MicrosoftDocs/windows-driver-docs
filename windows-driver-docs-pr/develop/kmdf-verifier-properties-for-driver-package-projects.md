@@ -1,5 +1,4 @@
 ---
-ms.assetid: 40D39F8E-3CD3-434B-A161-45D5BD4FBA09
 title: KMDF Verifier Properties for Driver Package Projects
 description: Sets properties for KMDF Verifier on a remote computer.  Use these settings to build and deploy a KMDF driver to a test computer.
 ms.date: 04/20/2017
@@ -8,16 +7,16 @@ ms.localizationpriority: medium
 
 # KMDF Verifier Properties for Driver Package Projects
 
-Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
+Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](../wdf/index.md).
 
-For more information about the framework verifier, see [Using the Framework's Verifier](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-kmdf-verifier) and [WDF Verifier Control Application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application).
+For more information about the framework verifier, see [Using the Framework's Verifier](../wdf/using-kmdf-verifier.md) and [WDF Verifier Control Application](../devtest/wdf-verifier-control-application.md).
 
 ## <span id="Setting_KMDF_Verifier_properties_for_driver_package_projects"></span><span id="setting_kmdf_verifier_properties_for_driver_package_projects"></span><span id="SETTING_KMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting KMDF Verifier properties for driver package projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **KMDF Verifier**.
-3.  Click the **Enable KMDF Verifier** option and select **KMDF verifier is always on**. When this option is selected, you can configure the framework verification options for KMDF drivers.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **KMDF Verifier**.
+3.  Select the **Enable KMDF Verifier** option and select **KMDF verifier is always on**. When this option is selected, you can configure the framework verification options for KMDF drivers.
 
 <table>
 <colgroup>
@@ -33,7 +32,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Enable_KMDF_Verifier"></span><span id="enable_kmdf_verifier"></span><span id="ENABLE_KMDF_VERIFIER"></span><strong>Enable KMDF Verifier</strong></p></td>
-<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
+<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifier is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="KMDF_Service_Names"></span><span id="kmdf_service_names"></span><span id="KMDF_SERVICE_NAMES"></span><strong>KMDF Service Names</strong></p></td>
@@ -83,15 +82,6 @@ For more information about the framework verifier, see [Using the Framework's Ve
 ## <span id="related_topics"></span>Related topics
 
 
-* [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
-* [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)
+* [Kernel-Mode Driver Framework](../wdf/index.md)
+* [Driver Verifier](../devtest/driver-verifier.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
- 
-
- 
-
-
-
-
-
-

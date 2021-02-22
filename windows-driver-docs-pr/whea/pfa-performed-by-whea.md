@@ -1,7 +1,6 @@
 ---
 title: PFA Performed by WHEA
 description: PFA Performed by WHEA
-ms.assetid: c93b15aa-9b99-4dfa-8c97-b503654e44f2
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
 - PFA WDK WHEA , Error Correction Code memory
@@ -26,7 +25,7 @@ When an ECC memory error occurs, WHEA performs the following steps:
 
 1.  The *low-level hardware error handler* (*LLHEH*) is notified about the presence of the memory error condition.
 
-2.  The LLHEH retrieves memory error information from the error source and uses the error data to fill in a hardware error packet. This packet is formatted as a [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
+2.  The LLHEH retrieves memory error information from the error source and uses the error data to fill in a hardware error packet. This packet is formatted as a [WHEA\_ERROR\_PACKET](/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
 3.  The LLHEH calls into the PSHED to retrieve any platform-specific hardware error information. If a PSHED plug-in in installed and is registered to retrieve information about the error, the PSHED will call into the PSHED plug-in so that the plug-in can modify the error information that is returned to the LLHEH.
 
@@ -38,7 +37,7 @@ When an ECC memory error occurs, WHEA performs the following steps:
 
 7.  If a PSHED plug-in is installed and is registered to retrieve information about the error, the PSHED will call into the PSHED plug-in so that the plug-in can modify the information in the error record.
 
-    **Note**  If the PSHED plug-in is not performing PFA, it must not set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
+    **Note**  If the PSHED plug-in is not performing PFA, it must not set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
      
 
@@ -47,9 +46,4 @@ When an ECC memory error occurs, WHEA performs the following steps:
 9.  The Windows kernel generates an ETW event and logs the error information in the system event log.
 
  
-
- 
-
-
-
 

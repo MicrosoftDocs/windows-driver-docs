@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_VISIBLE_PROVIDERS
 description: Miniport drivers use the NDIS_STATUS_WWAN_VISIBLE_PROVIDERS notification to inform the MB Service about the completion of OID_WWAN_VISIBLE_PROVIDERS \ 160;query requests.
-ms.assetid: 57e79d45-536a-4ab9-8cc0-0408d722b6f7
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS notification to 
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure.
+This notification uses the [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure.
 
 Remarks
 -------
@@ -45,12 +44,7 @@ Requirements
 
 [OID\_WWAN\_VISIBLE\_PROVIDERS](oid-wwan-visible-providers.md)
 
-[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)
+[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)
 
  
-
- 
-
-
-
 

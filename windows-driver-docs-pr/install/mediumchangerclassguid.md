@@ -1,7 +1,6 @@
 ---
 title: MediumChangerClassGuid
 description: MediumChangerClassGuid
-ms.assetid: c15f98c3-1193-4025-b6e0-9c4fbbdd86a9
 keywords: ["MediumChangerClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # MediumChangerClassGuid
 
 
-MediumChangerClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for medium changer devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MEDIUMCHANGER**](guid-devinterface-cdchanger.md) class identifier for new instances of this class.
+MediumChangerClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for medium changer devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MEDIUMCHANGER**](guid-devinterface-cdchanger.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -46,11 +45,4 @@ Requirements
 [**GUID_DEVINTERFACE_MEDIUMCHANGER**](guid-devinterface-cdchanger.md)
 
  
-
- 
-
-
-
-
-
 

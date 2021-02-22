@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Common Classes
 description: iSCSI WMI Common Classes
-ms.assetid: 1d0b2ac3-037a-4d73-b1bf-cd0a698c3698
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

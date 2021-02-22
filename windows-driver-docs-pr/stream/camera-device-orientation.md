@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 As different form factors computing devices are introduced, some of the physical constraints result in camera sensors being mounted in a non-traditional orientation. Because of this, it is necessary to properly describe to the OS and application, how the sensors are mounted so the resulting video can be rendered/recorded properly.
 
-Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 Specifically, a camera driver must set a newly introduced field, *Rotation*, in the ACPI \_PLD structure associated with a capture device interface:
 
 ```cpp
@@ -73,7 +73,7 @@ In fact, the concept of an ACPI "panel" is already adopted by Windows where:
 
 - A camera device interface is associated with a \_PLD structure with the Panel field being set accordingly if a capture device is statically mounted at a fixed location.
 
-- An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.EnclosureLocation) property.
+- An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](/uwp/api/Windows.Devices.Enumeration.EnclosureLocation) property.
 
 The ACPI \_PLD structure also has a Rotation field defined as follow:
 
@@ -87,13 +87,15 @@ Instead of using the definition above as is, we further refine it to avoid ambig
 
 ## Landscape Primary vs Portrait Primary
 
-In Windows, one can query the native display orientation by calling the property, [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/uwp/api/Windows.Graphics.Display.DisplayInformation), which returns either **Landscape** or **Portrait**:
+In Windows, one can query the native display orientation by calling the property, [Windows.Graphics.Display.DisplayInformation.NativeOrientation](/uwp/api/Windows.Graphics.Display.DisplayInformation), which returns either **Landscape** or **Portrait**:
 
 ![Display native orientation scanning pattern](./images/native-scanning-pattern.png)
 
 No matter which value **NativeOrientation** returns, the logical display scanning pattern starts from the top-left corner of the display moving from left to right downwards (see Figure 5). For those devices whose default physical orientation is inexplicit, this property not only implies the location of an ACPI *Top* panel but also provides the spatial relationship between a camera output buffer and the rendering surface.
 
 Note that, unlike camera, the **NativeOrientation** property is not based on ACPI and thus does not have a \_PLD structure. This is true even if a display is statically mounted to a device.
+
+When mounting on a Portrait Primary device, camera drivers must be aware that most applications will treat the device as outputting a landscape camera output buffer regardless of the actual camera output buffer orientation. Because of this, we recommend that camera drivers output a camera buffer that has a 90 degree orientation offset from the NativeOrientation Portrait when on a Portrait Primary device. This will then allow applications that are performing this additional rotation on portrait devices to correct the rotation to the expected orientation. This can be verified using the [Camera Application with Rotation Sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/CameraStarterKit/cs).
 
 ## Offset Mounting
 

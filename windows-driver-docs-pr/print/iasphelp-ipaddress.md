@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 535ea9fa-fff7-47fd-84ae-f61526f1b622
 keywords: ["get_IPAddress method Print Devices", "get_IPAddress method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IPAddress method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WAN Driver Bindings and Connections
 description: WAN Driver Bindings and Connections
-ms.assetid: e91bbdaf-9826-4031-a877-73f3e099a1e4
 keywords:
 - NDISWAN WDK networking
 - WAN miniport drivers WDK networking , connections

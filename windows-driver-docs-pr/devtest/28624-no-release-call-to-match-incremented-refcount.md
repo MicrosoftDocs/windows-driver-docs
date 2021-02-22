@@ -1,7 +1,6 @@
 ---
 title: C28624
 description: Warning C28624 No call to Release() to match incremented refcount from LResultFromObject.
-ms.assetid: e769d232-ef6e-4b70-8cac-f4dd43807e1d
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

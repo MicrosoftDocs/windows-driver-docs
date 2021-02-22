@@ -1,7 +1,6 @@
 ---
 title: GFlags Details
 description: GFlags Details
-ms.assetid: 97faa63d-b876-4973-812f-f3bdd57c1778
 keywords: ["GFlags, details"]
 ms.date: 04/12/2019
 ms.localizationpriority: medium

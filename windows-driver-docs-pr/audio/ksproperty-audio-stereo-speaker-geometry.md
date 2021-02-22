@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY
 description: The KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY property is used in combination with KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG to implement the DirectSound speaker-configuration property for hardware-accelerated 3D audio.
-ms.assetid: 4a870368-6a9b-41bc-80c3-da6ad1f2454b
 keywords: ["KSPROPERTY_AUDIO_STEREO_SPEAKER_GEOMETRY Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY property is used in combination
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin/Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -88,7 +87,7 @@ Remarks
 
 DirectSound treats KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY as a filter property on a DAC node, and as a pin property on a 3D node.
 
-For additional information, see [DirectSound Speaker-Configuration Settings](https://docs.microsoft.com/windows-hardware/drivers/audio/directsound-speaker-configuration-settings).
+For additional information, see [DirectSound Speaker-Configuration Settings](./directsound-speaker-configuration-settings.md).
 
 Requirements
 ------------
@@ -115,14 +114,5 @@ Requirements
 
 [**KSNODETYPE\_3D\_EFFECTS**](ksnodetype-3d-effects.md)
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
-
- 
-
-
-
-
-
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 

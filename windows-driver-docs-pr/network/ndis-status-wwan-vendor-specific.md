@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_VENDOR_SPECIFIC
 description: Miniport drivers use the NDIS_STATUS_WWAN_VENDOR_SPECIFIC notification to implement the transaction completion response for vendor specific operation or vendor specific change notifications.
-ms.assetid: 2032ed5e-8a4a-4c1c-9dbe-05e7cec1b683
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_VENDOR_SPECIFIC Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC notification to im
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_VENDOR\_SPECIFIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_vendor_specific) structure.
+This notification uses the [**NDIS\_WWAN\_VENDOR\_SPECIFIC**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_vendor_specific) structure.
 
 Remarks
 -------
@@ -43,14 +42,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_VENDOR\_SPECIFIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_vendor_specific)
+[**NDIS\_WWAN\_VENDOR\_SPECIFIC**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_vendor_specific)
 
 [OID\_WWAN\_VENDOR\_SPECIFIC](oid-wwan-vendor-specific.md)
 
  
-
- 
-
-
-
 

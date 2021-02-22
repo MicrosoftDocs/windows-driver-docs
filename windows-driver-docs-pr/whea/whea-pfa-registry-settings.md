@@ -1,7 +1,6 @@
 ---
 title: WHEA Policy Settings
 description: WHEA Policy Settings
-ms.assetid: 65ef70b7-a517-4428-9e6d-09c6da84e798
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , registry settings
 - registry settings WDK WHEA
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 Predictive Failure Analysis (PFA), as performed by the Windows Hardware Error Architecture (WHEA), is configured by using registry settings. WHEA reads these registry settings when a computer system starts. Any change that you make to these settings requires you to restart the system in order for them to take effect.
 
-Starting with Windows 8, WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
+Starting with Windows 8, WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
 
 **Note**   The registry settings described in this topic are intended for use by WHEA only. If a [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) performs PFA and uses the registry to store its configuration settings, it must use registry values that are different from those that are described in this topic.
 
@@ -140,9 +139,4 @@ This value corresponds to the **MemPfaPageCount** registry value.
  
 
  
-
- 
-
-
-
 

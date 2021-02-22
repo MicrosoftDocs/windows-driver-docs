@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_CANCEL_STOP_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_CANCEL_STOP_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 7047c266-84b4-4260-ad75-d56c87c8c9ef
 keywords:
  - IRP_MN_CANCEL_STOP_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,10 +12,15 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
+## Value
+
+0x06
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -48,7 +52,7 @@ In response to this IRP, drivers return the device to the started state. Drivers
 
 If the device is already in an active state when the driver receives this IRP, a function or filter driver simply sets status to success and passes the IRP to the next driver. The parent bus driver completes the IRP. For such a cancel-stop IRP, a function or filter driver need not set a completion routine.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for detailed information about handling stop IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for detailed information about handling stop IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

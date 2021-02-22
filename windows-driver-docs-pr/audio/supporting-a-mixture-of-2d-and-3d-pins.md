@@ -1,7 +1,6 @@
 ---
 title: Supporting a Mixture of 2D and 3D Pins
 description: Supporting a Mixture of 2D and 3D Pins
-ms.assetid: 26d98eca-b70a-4244-a7c3-d3a19930a96a
 keywords:
 - hardware acceleration WDK DirectSound , 2D and 3D pin mixture
 - 3D mixing WDK audio

@@ -1,7 +1,6 @@
 ---
 title: pplookaside
 description: The pplookaside command displays Lookaside Lists for processors in the target computer.
-ms.assetid: AA5DD47A-849F-462E-AFA6-E743E9737E1A
 keywords: ["pplookaside Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # !pplookaside
 
 
-The **!pplookaside** command displays [Lookaside Lists](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-lookaside-lists) for processors in the target computer.
+The **!pplookaside** command displays [Lookaside Lists](../kernel/using-lookaside-lists.md) for processors in the target computer.
 
 ```dbgcmd
 !pplookaside <address>
@@ -31,10 +30,4 @@ The address of the processor.
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
  
-
- 
-
-
-
-
 

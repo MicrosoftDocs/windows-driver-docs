@@ -1,7 +1,6 @@
 ---
 title: TCP/IP Indexed Properties and Device Indexes
 description: TCP/IP Indexed Properties and Device Indexes
-ms.assetid: b26b0c18-1787-43e0-8461-acfbd9fb38f9
 keywords:
 - TCP/IP indexed properties WDK printer
 - indexed properties WDK printer

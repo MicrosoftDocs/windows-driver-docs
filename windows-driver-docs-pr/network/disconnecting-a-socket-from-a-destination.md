@@ -1,7 +1,6 @@
 ---
 title: Disconnecting a Socket from a Destination
 description: Disconnecting a Socket from a Destination
-ms.assetid: 83755eb4-a24e-4fef-858d-d58318227dc0
 keywords:
 - Winsock Kernel WDK networking , disconnecting
 - WSK WDK networking , disconnecting
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Disconnecting a Socket from a Destination
 
 
-When a Winsock Kernel (WSK) application has finished sending and receiving data over an established socket connection, it can disconnect the connection-oriented socket from the remote transport address to which it is connected. A WSK application disconnects a socket from a remote transport address by calling the [**WskDisconnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect) function. A WSK application can perform either an *abortive disconnect* or a *graceful disconnect* of the socket. For more information about the difference between an abortive disconnect and a graceful disconnect, see **WskDisconnect**.
+When a Winsock Kernel (WSK) application has finished sending and receiving data over an established socket connection, it can disconnect the connection-oriented socket from the remote transport address to which it is connected. A WSK application disconnects a socket from a remote transport address by calling the [**WskDisconnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect) function. A WSK application can perform either an *abortive disconnect* or a *graceful disconnect* of the socket. For more information about the difference between an abortive disconnect and a graceful disconnect, see **WskDisconnect**.
 
 The following code example shows how a WSK application can gracefully disconnect a connection-oriented socket from a remote transport address.
 
@@ -118,15 +117,9 @@ NTSTATUS
 }
 ```
 
-If a WSK application performs a graceful disconnect of a socket, the application can send a final buffer of data to the remote transport address before the socket is disconnected by passing a pointer to a [**WSK\_BUF**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_buf) structure to the [**WskDisconnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect) function.
+If a WSK application performs a graceful disconnect of a socket, the application can send a final buffer of data to the remote transport address before the socket is disconnected by passing a pointer to a [**WSK\_BUF**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_buf) structure to the [**WskDisconnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect) function.
 
 If a WSK application closes a connection-oriented socket without first disconnecting the socket from the remote transport address to which it is connected, the WSK subsystem automatically performs an abortive disconnect of the socket prior to closing the socket. For more information about closing a socket, see [Closing a Socket](closing-a-socket.md).
 
  
-
- 
-
-
-
-
 

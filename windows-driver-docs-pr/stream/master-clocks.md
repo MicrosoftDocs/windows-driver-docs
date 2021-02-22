@@ -1,7 +1,6 @@
 ---
 title: Master Clocks
 description: Master Clocks
-ms.assetid: bdd228c1-a15f-4c08-8991-299a3f2e1ee8
 keywords:
 - master clocks WDK kernel streaming
 - synchronization WDK kernel streaming
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-Minidrivers can synchronize streams to clocks created by other minidrivers; multiple streams can be synchronized to one clock. If the pin uses or produces such a *master clock*, the minidriver should support [**KSPROPERTY\_STREAM\_MASTERCLOCK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-stream-masterclock). Clients also can use this property to set the master clock for the pin. Pins that perform rendering and capturing operations frequently use a master clock. The minidriver is responsible for releasing clock references upon termination.
+Minidrivers can synchronize streams to clocks created by other minidrivers; multiple streams can be synchronized to one clock. If the pin uses or produces such a *master clock*, the minidriver should support [**KSPROPERTY\_STREAM\_MASTERCLOCK**](./ksproperty-stream-masterclock.md). Clients also can use this property to set the master clock for the pin. Pins that perform rendering and capturing operations frequently use a master clock. The minidriver is responsible for releasing clock references upon termination.
 
 The interface to a master clock is a file object that supports methods, properties and events.
 
@@ -34,9 +33,4 @@ The physical time on the master clock object is frequently hardware-based. If a 
 The physical time behind the master clock may be remote, in which case it is the responsibility of the local proxy to provide accurate readings. For example, the proxy has responsibility for compensating for the delay across a 1394 connection, or averaging the delay across a network. Additionally, if some other kernel filter is a proxy for a second device on the same 1394 bus, the two devices may negotiate a private method of interfacing with the master clock. In such a case, the devices must use private interfaces to determine clock type in order to verify compatibility.
 
  
-
- 
-
-
-
 

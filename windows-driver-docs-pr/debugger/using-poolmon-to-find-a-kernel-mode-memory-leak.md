@@ -1,7 +1,6 @@
 ---
 title: Using PoolMon to Find a Kernel-Mode Memory Leak
 description: Using PoolMon to Find a Kernel-Mode Memory Leak
-ms.assetid: 383b5d9a-3e99-4dc5-bce9-bd44f2ef1dc0
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 
 If you suspect there is a kernel-mode memory leak, the easiest way to determine which pool tag is associated with the leak is to use the PoolMon tool.
 
-PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](https://go.microsoft.com/fwlink/p/?linkid=122776) in the WDK documentation.
+PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](../devtest/poolmon.md) in the WDK documentation.
 
 ### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging (Windows 2000 and Windows XP)
 
-On Windows 2000 and Windows XP you must first use GFlags to enable pool tagging. GFlags is included in Debugging Tools for Windows. Start GFlags, choose the **System Registry** tab, check the **Enable Pool Tagging** box, and then click **Apply**. You must restart Windows for this setting to take effect. For more details, see [GFlags](gflags.md).
+On Windows 2000 and Windows XP you must first use GFlags to enable pool tagging. GFlags is included in Debugging Tools for Windows. Start GFlags, choose the **System Registry** tab, check the **Enable Pool Tagging** box, and then select **Apply**. You must restart Windows for this setting to take effect. For more details, see [GFlags](gflags.md).
 
 On Windows Server 2003 and later versions of Windows, pool tagging is always enabled.
 
@@ -117,10 +116,4 @@ Typically, after an application reaches a stable running state, it allocates mem
 After you have determined which pool tag is associated with the leak, this might reveal all you need to know about the leak. If you need to determine which specific instance of the allocation routine is causing the leak, see [Using the Kernel Debugger to Find Kernel-Mode Memory Leaks](using-the-kernel-debugger-to-find-a-kernel-mode-memory-leak.md).
 
  
-
- 
-
-
-
-
 

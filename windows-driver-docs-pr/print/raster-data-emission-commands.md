@@ -1,7 +1,6 @@
 ---
 title: Raster Data Emission Commands
 description: Raster Data Emission Commands
-ms.assetid: 31a25de3-f66b-4cf0-90ea-988d75838f68
 keywords:
 - data emission raster printing commands WDK Unidrv
 - emission raster printing commands WDK Unidrv

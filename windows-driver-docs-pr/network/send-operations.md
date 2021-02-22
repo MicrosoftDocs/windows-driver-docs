@@ -1,7 +1,6 @@
 ---
 title: Send Operations
 description: Send Operations
-ms.assetid: 84af0abc-c8f2-47d4-b368-7b0216600c95
 keywords:
 - send operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
  
 
-When performing a post-association operation, initiated through a call to [*Dot11ExtIhvPerformPostAssociate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_post_associate), the IHV Extensions DLL can send packets through the wireless LAN (WLAN) adapter. For more information about the post-association operation, see [Post-Association Operations](post-association-operations.md).
+When performing a post-association operation, initiated through a call to [*Dot11ExtIhvPerformPostAssociate*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_post_associate), the IHV Extensions DLL can send packets through the wireless LAN (WLAN) adapter. For more information about the post-association operation, see [Post-Association Operations](post-association-operations.md).
 
-Typically, the DLL sends security packets to an access point (AP) for data port authentication by using the algorithm enabled through [**Dot11ExtSetAuthAlgorithm**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_set_auth_algorithm). The IHV Extensions DLL calls **Dot11ExtSetAuthAlgorithm** during the pre-association operation. For more information about this operation, see [Pre-Association Operations](pre-association-operations.md).
+Typically, the DLL sends security packets to an access point (AP) for data port authentication by using the algorithm enabled through [**Dot11ExtSetAuthAlgorithm**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_set_auth_algorithm). The IHV Extensions DLL calls **Dot11ExtSetAuthAlgorithm** during the pre-association operation. For more information about this operation, see [Pre-Association Operations](pre-association-operations.md).
 
 **Note**  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic service set (BSS) networks.
 
@@ -152,24 +151,19 @@ When sending packets, the IHV Extensions DLL must follow these guidelines.
 
      
 
--   The IHV Extensions DLL calls the [**Dot11ExtSendPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet) function to send the packet through the wireless LAN (WLAN) adapter. The DLL passes a unique handle value, which identifies the packet, to the function's *hSendCompletion* parameter. Typically, the DLL passes the address of the allocated buffer that contains the packet to the *hSendCompletion* parameter.
-    **Note**  Only unicast packets can be sent through calls to the [**Dot11ExtSendPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet) function.
+-   The IHV Extensions DLL calls the [**Dot11ExtSendPacket**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet) function to send the packet through the wireless LAN (WLAN) adapter. The DLL passes a unique handle value, which identifies the packet, to the function's *hSendCompletion* parameter. Typically, the DLL passes the address of the allocated buffer that contains the packet to the *hSendCompletion* parameter.
+    **Note**  Only unicast packets can be sent through calls to the [**Dot11ExtSendPacket**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet) function.
 
      
 
--   When the WLAN adapter has sent the packet, the operating system calls the [*Dot11ExtIhvSendPacketCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion) function. The operating system passes the packet's handle value to the *hSendCompletion* parameter of the function. This handle value will be the same value used by the IHV Extensions DLL in its call to [**Dot11ExtSendPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet).
+-   When the WLAN adapter has sent the packet, the operating system calls the [*Dot11ExtIhvSendPacketCompletion*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion) function. The operating system passes the packet's handle value to the *hSendCompletion* parameter of the function. This handle value will be the same value used by the IHV Extensions DLL in its call to [**Dot11ExtSendPacket**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet).
 
-    When [*Dot11ExtIhvSendPacketCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion) is called, the IHV Extensions DLL must release the memory it allocated for the packet.
+    When [*Dot11ExtIhvSendPacketCompletion*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion) is called, the IHV Extensions DLL must release the memory it allocated for the packet.
 
-    **Note**  The IHV Extensions DLL must not free the resources allocated for a packet sent through [**Dot11ExtSendPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet) until the corresponding call to [*Dot11ExtIhvSendPacketCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion) is made.
+    **Note**  The IHV Extensions DLL must not free the resources allocated for a packet sent through [**Dot11ExtSendPacket**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_packet) until the corresponding call to [*Dot11ExtIhvSendPacketCompletion*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion) is made.
 
      
 
  
 
  
-
-
-
-
-

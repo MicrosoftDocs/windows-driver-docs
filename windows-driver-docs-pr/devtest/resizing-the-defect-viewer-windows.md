@@ -1,7 +1,6 @@
 ---
 title: Resizing the Defect Viewer Windows
 description: Resizing the Defect Viewer Windows
-ms.assetid: 1f0e752f-9800-4b57-8ba5-708be451a269
 keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier

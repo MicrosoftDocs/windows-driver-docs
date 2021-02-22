@@ -1,7 +1,6 @@
 ---
 title: .server (Create Debugging Server)
 description: The .server command starts a debugging server, allowing a remote connection to the current debugging session.
-ms.assetid: 39979a53-d6e7-4660-8884-3044da0b60de
 keywords: ["Create Debugging Server (.server) command", "remote debugging through the debugger, Create Debugging Server (.server) command", ".server (Create Debugging Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

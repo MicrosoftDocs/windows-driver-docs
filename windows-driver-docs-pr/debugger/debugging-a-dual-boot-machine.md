@@ -1,7 +1,6 @@
 ---
 title: Debugging a Dual-Boot Machine
 description: Debugging a Dual-Boot Machine
-ms.assetid: 46ed532e-5ef3-4893-b2eb-da8eb52121f0
 keywords: ["dual-boot machines"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

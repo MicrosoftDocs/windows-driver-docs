@@ -1,7 +1,6 @@
 ---
 title: ClearMpioDiskHealthCounters function
 description: The ClearMpioDiskHealthCounters method is used to clear the gathered MPIO statistics of an MPIO disk.
-ms.assetid: 1ac415b2-87d4-430d-8713-a871c6af1006
 keywords: ["ClearMpioDiskHealthCounters function Storage Devices"]
 topic_type:
 - apiref

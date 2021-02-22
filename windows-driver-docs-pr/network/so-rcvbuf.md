@@ -1,7 +1,6 @@
 ---
 title: SO_RCVBUF
 description: SO_RCVBUF
-ms.assetid: 218b52ac-95ee-4047-ad75-76d6ae6ab14e
 ms.date: 08/08/2017
 keywords: 
  -SO_RCVBUF Network Drivers Starting with Windows Vista
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The SO\_RCVBUF socket option determines the size of a socket's receive buffer that is used by the underlying transport. This socket option applies only to listening sockets, datagram sockets, and connection-oriented sockets.
 
-To set the value of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the value of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -139,9 +138,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

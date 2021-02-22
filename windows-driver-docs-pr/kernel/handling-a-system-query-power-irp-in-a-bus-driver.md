@@ -1,7 +1,6 @@
 ---
 title: Handling a System Query-Power IRP in a Bus Driver
 description: Handling a System Query-Power IRP in a Bus Driver
-ms.assetid: d42c268e-d57d-41a6-8e61-67c651082106
 keywords: ["query-power IRPs WDK power management", "bus drivers WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,14 +16,9 @@ When a system query-power request reaches a bus driver (that is not the power po
 
 In Windows 7 and Windows Vista, the bus driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS if the driver can change to the specified power state or sets a failure status if the driver cannot.
 
-In Windows Server 2003, Windows XP, and Windows 2000, the bus driver first calls [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp) and then sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS if the driver can change to the specified power state or sets a failure status if the driver cannot.
+In Windows Server 2003, Windows XP, and Windows 2000, the bus driver first calls [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp) and then sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS if the driver can change to the specified power state or sets a failure status if the driver cannot.
 
-After the bus driver completes the IRP, the power manager calls [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines set by other drivers as they passed the IRP down the stack.
-
- 
+After the bus driver completes the IRP, the power manager calls [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines set by other drivers as they passed the IRP down the stack.
 
  
-
-
-
 

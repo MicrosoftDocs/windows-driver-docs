@@ -1,7 +1,6 @@
 ---
 title: Enhanced Performance and Scalability
 description: Enhanced Performance and Scalability
-ms.assetid: 6fa15b0f-c716-4e5c-a4be-19d71b9083c7
 keywords:
 - NDIS WDK , performance
 - performance WDK NDIS

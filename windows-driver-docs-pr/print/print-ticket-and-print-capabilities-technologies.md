@@ -1,7 +1,6 @@
 ---
 title: Print Ticket and Print Capabilities Technologies
 description: Print Ticket and Print Capabilities Technologies
-ms.assetid: 12b1881f-1a45-4e7e-a876-b2ca4c9458f9
 keywords:
 - printer drivers WDK , Print Tickets
 - printer drivers WDK , Print Capabilities
@@ -35,12 +34,7 @@ For related information about the Print Ticket and Print Capabilities technologi
 
 [Print Ticket Support in the XPSDrv Render Module](print-ticket-support-in-the-xpsdrv-render-module.md)
 
-[Methods for Print Ticket Providers and Consumers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index)
+[Methods for Print Ticket Providers and Consumers](/windows-hardware/drivers/ddi/_print/index)
 
  
-
- 
-
-
-
 

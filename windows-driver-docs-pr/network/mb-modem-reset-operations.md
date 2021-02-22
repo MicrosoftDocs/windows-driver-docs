@@ -1,7 +1,6 @@
 ---
 title: MB modem reset operations
 description: MB modem reset operations
-ms.assetid: E33073B5-53D5-4F6F-85EC-5B46FDE9EA4D
 keywords:
 - MB modem reset, Mobile Broadband modem reset, Mobile Broadband miniport driver modem reset
 ms.date: 08/09/2018
@@ -26,7 +25,7 @@ The host sends MBIM_CID_MS_DEVICE_RESET to the MBIM function to reset the modem 
 
 ### Parameters
 
-|   | Set | Query | Notification |
+|  Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Empty | Not applicable | Not applicable |
 | Response | Empty | Not applicable | Not applicable |

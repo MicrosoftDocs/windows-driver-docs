@@ -1,7 +1,6 @@
 ---
 title: FSCTL_GET_RETRIEVAL_POINTERS control code
 description: The FSCTL\_GET\_RETRIEVAL\_POINTERS control code retrieves a variably sized data structure that describes the allocation and location on disk of a specific file.
-ms.assetid: d77790c8-9fe6-4b36-995e-40a7ea54c18a
 keywords: ["FSCTL_GET_RETRIEVAL_POINTERS control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,17 +19,17 @@ ms.localizationpriority: medium
 
 The **FSCTL\_GET\_RETRIEVAL\_POINTERS** control code retrieves a variably sized data structure that describes the allocation and location on disk of a specific file. The structure describes the mapping between virtual cluster numbers (VCN, offsets within the file/stream space) and logical cluster numbers (LCN, offsets within the volume space).
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 For more information about reparse points and the FSCTL\_GET\_RETRIEVAL\_POINTERS control code, see the Microsoft Windows SDK documentation.
 
 **Parameters**
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the alternate stream, file, or directory for which FSCTL\_GET\_RETRIEVAL\_POINTERS retrieves a mapping. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the alternate stream, file, or directory for which FSCTL\_GET\_RETRIEVAL\_POINTERS retrieves a mapping. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. A file handle for the alternate stream, file, or directory for which FSCTL\_GET\_RETRIEVAL\_POINTERS retrieves a mapping. If the value in *FileHandle* is the handle for an entire volume, the routine returns a map of the VCNs and extents for the bad clusters file. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A file handle for the alternate stream, file, or directory for which FSCTL\_GET\_RETRIEVAL\_POINTERS retrieves a mapping. If the value in *FileHandle* is the handle for an entire volume, the routine returns a map of the VCNs and extents for the bad clusters file. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode"></a>*FsControlCode*  
 The control code for the operation. Use FSCTL\_GET\_RETRIEVAL\_POINTER for this operation.
@@ -47,7 +46,7 @@ typedef struct {
 **Members**
 
 <a href="" id="startingvcn"></a>**StartingVcn**  
-The VCN at which FSCTL\_GET\_RETRIEVAL\_POINTERS begins enumerating extents and the associated virtual and logical cluster numbers. On the first call to [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with a file system control code of FSCTL\_GET\_RETRIEVAL\_POINTERS, **StartingVcn** should be set to zero.
+The VCN at which FSCTL\_GET\_RETRIEVAL\_POINTERS begins enumerating extents and the associated virtual and logical cluster numbers. On the first call to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with a file system control code of FSCTL\_GET\_RETRIEVAL\_POINTERS, **StartingVcn** should be set to zero.
 
 If *OutputBuffer* is not large enough to hold the entire map of VCNs and extents for the file, the caller must request more map data by using the value returned in the **NextVcn** member of the RETRIEVAL\_POINTERS\_BUFFER structure as the starting VCN.
 
@@ -91,9 +90,9 @@ Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 Status block
 ------------
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) both return STATUS\_SUCCESS or an appropriate NTSTATUS error value.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) both return STATUS\_SUCCESS or an appropriate NTSTATUS error value.
 
-If the VCN / extents map does not fit in *OutputBuffer*, both routines return a value of STATUS\_BUFFER\_OVERFLOW, and the caller must request more map data using the value returned in the **NextVcn** member of the RETRIEVAL\_POINTERS\_BUFFER structure as the starting VCN (**StartingVcn**) in the next call to [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462).
+If the VCN / extents map does not fit in *OutputBuffer*, both routines return a value of STATUS\_BUFFER\_OVERFLOW, and the caller must request more map data using the value returned in the **NextVcn** member of the RETRIEVAL\_POINTERS\_BUFFER structure as the starting VCN (**StartingVcn**) in the next call to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)).
 
 If the value that is specified in **StartingVcn** is beyond the end of the file, STATUS\_END\_OF\_FILE is returned.
 
@@ -121,16 +120,9 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
-
- 
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
  
-
-
-
-
-
 

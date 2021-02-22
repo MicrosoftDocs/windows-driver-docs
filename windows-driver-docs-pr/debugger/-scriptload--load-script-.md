@@ -1,7 +1,6 @@
 ---
 title: .scriptload (Load Script)
 description: The .scriptload command will load and execute the specified script file.
-ms.assetid: 1D4C9587-1491-4D34-9D09-45587B272641
 keywords: [".scriptload (Load Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -83,10 +82,13 @@ For more information about working with JavaScript, see [JavaScript Debugger Scr
 
 **Requirements**
 
-Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
+Before using any of the .script commands, a scripting provider needs to be loaded. Use the .scriptproviders command to confirm that the JavaScript provider is loaded.
 
 ```dbgcmd
-0:000> .load jsprovider.dll
+0:000> .scriptproviders
+Available Script Providers:
+    NatVis (extension '.NatVis')
+    JavaScript (extension '.js')
 ```
 
 ## <span id="see_also"></span>See also

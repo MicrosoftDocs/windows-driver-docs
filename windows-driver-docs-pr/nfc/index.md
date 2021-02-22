@@ -12,7 +12,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # Near field communications (NFC) design guide
@@ -29,6 +28,6 @@ Use the User-Mode Driver Framework (UMDF) 2.0 to write NFC drivers for Windows 
 
 ## Related topics
 
-[Getting Started with UMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2)  
+[Getting Started with UMDF](../wdf/getting-started-with-umdf-version-2.md)  
 
-[NFC device driver interface (DDI) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)    
+[NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)

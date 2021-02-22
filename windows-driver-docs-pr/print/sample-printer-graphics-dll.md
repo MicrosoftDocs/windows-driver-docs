@@ -1,7 +1,6 @@
 ---
 title: Sample Printer Graphics DLL
 description: Sample Printer Graphics DLL
-ms.assetid: d113159a-766e-44c3-a1b1-2975e803d7e2
 keywords:
 - printer graphics DLL WDK , samples
 - graphics DLL WDK printer , samples

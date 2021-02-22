@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbportmddcontext
 description: The usbkd.usbportmddcontext command displays USBPORT context data if it is present in a crash dump that was generated as a result of Bug Check 0xFE.
-ms.assetid: 774C7EAE-A33E-49A6-956F-C0791134C221
 keywords: ["usbkd.usbportmddcontext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -37,14 +36,7 @@ Use this command only when you are debugging a crash dump file that was generate
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

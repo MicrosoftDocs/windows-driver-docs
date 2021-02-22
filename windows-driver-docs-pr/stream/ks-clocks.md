@@ -1,7 +1,6 @@
 ---
 title: KS Clocks
 description: KS Clocks
-ms.assetid: e3ffc7ca-f3cd-4989-af40-78b6a2438f95
 keywords:
 - kernel streaming WDK , clocks
 - KS WDK , clocks
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 If you are writing an AVStream minidriver, refer to [AVStream Clocks](avstream-clocks.md).
 
-Kernel streaming minidrivers support clock operations by providing callbacks for the properties in the set [KSPROPSETID\_Clock](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-clock). To learn how to do this, see [KS Properties](ks-properties.md).
+Kernel streaming minidrivers support clock operations by providing callbacks for the properties in the set [KSPROPSETID\_Clock](./kspropsetid-clock.md). To learn how to do this, see [KS Properties](ks-properties.md).
 
-A user-mode client can request to be notified when a clock reaches a certain time stamp, or to receive periodic notification that a fixed amount of time on the clock has elapsed. To do so, clients register [**KSEVENT\_CLOCK\_POSITION\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-clock-position-mark) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-clock-interval-mark).
+A user-mode client can request to be notified when a clock reaches a certain time stamp, or to receive periodic notification that a fixed amount of time on the clock has elapsed. To do so, clients register [**KSEVENT\_CLOCK\_POSITION\_MARK**](./ksevent-clock-position-mark.md) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](./ksevent-clock-interval-mark.md).
 
 This section contains information about the following topics:
 
@@ -31,9 +30,4 @@ This section contains information about the following topics:
 [Default Clocks](default-clocks.md)
 
  
-
- 
-
-
-
 

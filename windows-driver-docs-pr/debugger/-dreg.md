@@ -1,7 +1,6 @@
 ---
 title: dreg
 description: The dreg extension displays registry information.
-ms.assetid: a54ed14e-eb9d-48fd-877d-d6d0fe4a8d3f
 keywords: ["dreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

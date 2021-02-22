@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_VENDOR_DRIVER_VERSION
 description: As a query, the OID_GEN_VENDOR_DRIVER_VERSION OID specifies the vendor-assigned version number of the miniport driver.
-ms.assetid: 37CB6A21-9AF2-49BF-AFBA-868C0C6C5383
 keywords:
 - OID_GEN_VENDOR_DRIVER_VERSION
 ms.date: 11/01/2017
@@ -22,8 +21,6 @@ This OID is mandatory for NDIS 6.0 and later miniport drivers.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

@@ -1,7 +1,6 @@
 ---
 title: storagekd.storhelp
 description: The storagekd.storhelp extension displays help text for Storagekd.dll extension commands.
-ms.assetid: 17FFB5CC-1FA3-4D13-AA30-6D48D2435CDC
 keywords: ["storagekd.storhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

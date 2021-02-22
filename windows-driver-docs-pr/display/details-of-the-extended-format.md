@@ -1,7 +1,6 @@
 ---
 title: Details of the Extended Format
 description: Details of the Extended Format
-ms.assetid: e9cd2bc7-99c1-4aca-91b0-9faefa4a856d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
@@ -17,7 +16,7 @@ In the following table, the XR part of a format name can be considered a new sha
 
 ## Table of extended formats
 
-The following table shows resources with particular attributes that use the extended formats (DXGI_FORMAT_*) if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional. See [DXGI_FORMAT](https://docs.microsoft.com/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) for a description of each format.
+The following table shows resources with particular attributes that use the extended formats (DXGI_FORMAT_*) if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional. See [DXGI_FORMAT](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) for a description of each format.
 
 Column key for the below table:
 

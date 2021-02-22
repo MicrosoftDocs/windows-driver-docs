@@ -1,7 +1,6 @@
 ---
 title: wmitrace.tmffile
 description: The wmitrace.tmffile extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions.
-ms.assetid: 37ad335b-7604-466b-b328-7aebbc2fb5c1
 keywords: ["wmitrace.tmffile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

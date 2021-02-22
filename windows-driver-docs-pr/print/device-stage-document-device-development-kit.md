@@ -1,7 +1,6 @@
 ---
 title: Device Stage Document Device Development Kit
 description: Device Stage Document Device Development Kit
-ms.assetid: b66912d9-27f5-41e2-9e10-1e16aca14a8a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,4 +19,4 @@ The Device Stage Document Device Developer Kit contains the following informatio
 
 ## Related topics
 
-[Microsoft Device Experience Development Kit](https://docs.microsoft.com/previous-versions/windows/hardware/device-stage/dn629504(v=vs.85))  
+[Microsoft Device Experience Development Kit](/previous-versions/windows/hardware/device-stage/dn629504(v=vs.85))

@@ -1,7 +1,6 @@
 ---
 title: GDL Source File Structure
 description: GDL Source File Structure
-ms.assetid: e6f7bc9a-08ee-44e9-ae46-2a0097e017ff
 keywords:
 - GDL WDK , source files
 - source files WDK GDL

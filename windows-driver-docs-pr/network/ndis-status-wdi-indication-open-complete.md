@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_OPEN_COMPLETE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_OPEN_COMPLETE to indicate the completion of OID_WDI_TASK_OPEN.
-ms.assetid: 30258df1-f882-4779-b0d3-e990b96cf67b
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_OPEN_COMPLETE Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: WdfObjectAddCustomTypeWithData macro
 description: The WdfObjectAddCustomTypeWithData macro associates a framework object with a custom type, and optionally associates this pair with a data buffer and event callback functions.
-ms.assetid: 237F9BAA-A2E2-4F20-B52E-8F093B326E45
 keywords:
  - WdfObjectAddCustomTypeWithData macro
 ms.date: 08/23/2017
@@ -41,10 +40,10 @@ The driver-defined name for the custom type.
 A pointer to a driver-supplied data buffer, or NULL. This parameter is optional.
 
 *_cleanup*   
-A pointer to the driver's [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) callback function, or NULL. This parameter is optional.
+A pointer to the driver's [*EvtCleanupCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) callback function, or NULL. This parameter is optional.
 
 *_destroy*   
-A pointer to the driver's [*EvtDestroyCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback function, or NULL. This parameter is optional.
+A pointer to the driver's [*EvtDestroyCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback function, or NULL. This parameter is optional.
 
 Return value
 ------------
@@ -87,9 +86,9 @@ Return value
 Remarks
 -------
 
-If your driver calls **WdfObjectAddCustomTypeWithData** with a pointer to a data buffer, the driver can provide an [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDestroyCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback function to deallocate the memory buffer when the object is deleted.
+If your driver calls **WdfObjectAddCustomTypeWithData** with a pointer to a data buffer, the driver can provide an [*EvtCleanupCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDestroyCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback function to deallocate the memory buffer when the object is deleted.
 
-For more information about object custom types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
+For more information about object custom types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
 For a code example, see [**WdfObjectAddCustomType**](wdfobjectaddcustomtype.md).
 
@@ -133,11 +132,4 @@ Requirements
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
  
-
- 
-
-
-
-
-
 

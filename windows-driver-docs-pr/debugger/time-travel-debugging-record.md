@@ -27,11 +27,11 @@ To launch an executable and record a TTD trace, follow these steps.
 
     ![Screen shot of Configure recording dialog showing a browse button and path listed](images/ttd-start-recording-dialog.png)
 
-5. Click **OK** to launch the executable and start recording.
+5. Select **OK** to launch the executable and start recording.
 
 6. The recording dialog appears indicating the trace is being recorded.
 
-    ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up-dialog.png)
+    ![Screenshot that shows the TTD recording popup "Stop and Debug" and "Cancel" buttons.](images/ttd-recording-pop-up-dialog.png)
 
 7. See [How to record](#HOWTORECORD) for information on recording.
 
@@ -48,7 +48,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 3. Check the **Record Process with Time Travel Debugging** box to create a trace when the executable is launched. 
 
-4. Click **Attach** to start recording.
+4. Select **Attach** to start recording.
 
 5. The recording dialog appears indicating the trace is being recorded.
 
@@ -58,7 +58,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 ## <span id="HOWTORECORD"></span><span id="howtorecord"></span>How to record
 
-1. The process is being recorded, so this is where you need to cause the issue that you wish to debug. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+1. The process is being recorded, so this is where you need to cause the issue that you wish to debug. You may open a problematic file or select a specific button in the app to cause the event of interest to occur. 
 
 2. While the recording dialog box is being displayed you can:
 

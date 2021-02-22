@@ -1,7 +1,6 @@
 ---
 title: Minidriver Synchronization
 description: Minidriver Synchronization
-ms.assetid: 2f560e7a-4717-4b3f-9513-e34fcb2b5e6c
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , synchronization
 - streaming minidrivers WDK Windows 2000 Kernel , synchronization
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-Streaming minidriver developers have the option of allowing the class driver to handle synchronization. When minidrivers register themselves with the class driver, they can opt for class-driver-provided synchronization by setting the **TurnOffSynchronization** member of [**HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_initialization_data) to **FALSE**.
+Streaming minidriver developers have the option of allowing the class driver to handle synchronization. When minidrivers register themselves with the class driver, they can opt for class-driver-provided synchronization by setting the **TurnOffSynchronization** member of [**HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_initialization_data) to **FALSE**.
 
 When the class driver handles synchronization, it ensures that two pieces of the minidriver code are never executed simultaneously. The class driver queues all stream requests, and passes them to the minidriver one at a time.
 
@@ -27,12 +26,7 @@ Turning stream class synchronization off means that all requests are immediately
 
 When synchronization is off, the minidriver is responsible for performing synchronization in compliance with the WDM model. If a minidriver is called back at PASSIVE\_LEVEL, it can then be preempted by any higher IRQL events such as DPCs or interrupts. Similarly, if a minidriver is called back at DISPATCH\_LEVEL, it can subsequently be preempted by interrupts. Minidriver functions that manipulate shared resources must synchronize the accesses.
 
-Multiple requests can be simultaneously issued to the same or different streams when stream class synchronization is off. The minidriver must queue its own requests and handle any hardware synchronization with other threads and the ISR. Spin locks, mutexes, and [**KeSynchronizeExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) are some of the synchronization objects available to stream minidrivers running without stream class synchronization.
+Multiple requests can be simultaneously issued to the same or different streams when stream class synchronization is off. The minidriver must queue its own requests and handle any hardware synchronization with other threads and the ISR. Spin locks, mutexes, and [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) are some of the synchronization objects available to stream minidrivers running without stream class synchronization.
 
  
-
- 
-
-
-
 

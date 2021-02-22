@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xDA SYSTEM_PTE_MISUSE
 description: The SYSTEM_PTE_MISUSE bug check has a value of 0x000000DA. This indicates that a page table entry (PTE) routine has been used in an improper way.
-ms.assetid: a9a9f3e9-39b7-4e4a-a326-2f510e0aaa99
 keywords: ["Bug Check 0xDA SYSTEM_PTE_MISUSE", "SYSTEM_PTE_MISUSE"]
 ms.date: 05/23/2017
 topic_type:
@@ -191,8 +190,8 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The address of the invalid mapping</p></td>
 <td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The number of mappings in the mapping address space</p></td>
-<td align="left"><p>The mapping address space that the caller is trying to free is still reserved. <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong></p>
-<p>must be called before <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreemappingaddress" data-raw-source="[MmFreeMappingAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreemappingaddress)">MmFreeMappingAddress</a></strong>.</p></td>
+<td align="left"><p>The mapping address space that the caller is trying to free is still reserved. <strong><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong></p>
+<p>must be called before <strong><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreemappingaddress" data-raw-source="[MmFreeMappingAddress](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreemappingaddress)">MmFreeMappingAddress</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x104</p></td>
@@ -213,7 +212,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The first mapping address</p></td>
 <td align="left"><p>The address of the non-empty mapping</p></td>
 <td align="left"><p>The last mapping address</p></td>
-<td align="left"><p>The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong> prior to calling <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping" data-raw-source="[MmMapLockedPagesWithReservedMapping](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping)">MmMapLockedPagesWithReservedMapping</a></strong></p></td>
+<td align="left"><p>The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong> prior to calling <strong><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping" data-raw-source="[MmMapLockedPagesWithReservedMapping](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping)">MmMapLockedPagesWithReservedMapping</a></strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x108</p></td>
@@ -332,11 +331,4 @@ Cause
 The error is indicated by the value of Parameter 1.
 
 A stack trace will identify the driver that caused the error.
-
- 
-
- 
-
-
-
 

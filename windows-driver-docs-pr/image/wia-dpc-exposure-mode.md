@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_MODE
 description: The WIA\_DPC\_EXPOSURE\_MODE property indicates a camera's current exposure mode.
-ms.assetid: 30587d4f-5836-4030-9501-7612aaff58ae
 keywords: ["WIA_DPC_EXPOSURE_MODE Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_RSC_STATISTICS
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_TCP_RSC_STATISTICS OID to get the receive-segment coalescing (RSC) statistics of a miniport adapter.
-ms.assetid: CD289868-1925-4222-8A4D-359118124325
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
@@ -18,9 +17,9 @@ NDIS 6.30 and later miniport drivers that provide RSC services must support this
 Remarks
 -------
 
-The **InformationBuffer** member of [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [**NDIS\_RSC\_STATISTICS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure.
+The **InformationBuffer** member of [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure.
 
-The miniport driver must maintain the statistics in the members of the [**NDIS\_RSC\_STATISTICS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure as follows:
+The miniport driver must maintain the statistics in the members of the [**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure as follows:
 
 -   The driver must increment the coalesced packet count in the **CoalescedPkts** member by one every time a packet is added to a single coalesced unit (SCU).
 -   The driver must increment the coalesced octet count in the **CoalescedOctets** member by the size of the TCP payload of the packet every time a packet is added to a SCU.
@@ -50,14 +49,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_RSC\_STATISTICS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info)
-
- 
+[**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info)
 
  
-
-
-
 

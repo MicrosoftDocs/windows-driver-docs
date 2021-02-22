@@ -1,7 +1,6 @@
 ---
 title: Step 1 Create a UWP device app
 description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
-ms.assetid: 4D8240AD-F589-4623-BC6E-47E304831250
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ This step-by-step guide assumes that you've created a UWP app project and that a
 
 ### <span id="Creating_the_Windows_Store_app_project"></span><span id="creating_the_windows_store_app_project"></span><span id="CREATING_THE_WINDOWS_STORE_APP_PROJECT"></span>Creating the Microsoft Store app project
 
-Before you can begin, you need to have installed Visual Studio and created a UWP app project. If you haven't done that yet, you can [download the tools here](https://go.microsoft.com/fwlink/p/?LinkId=302196). To get started with Microsoft Visual Studio, see [Develop UWP apps using Visual Studio](https://go.microsoft.com/fwlink/p/?LinkID=267230).
+Before you can begin, you need to have installed Visual Studio and created a UWP app project. If you haven't done that yet, you can [download the tools here](https://go.microsoft.com/fwlink/p/?LinkId=302196). To get started with Microsoft Visual Studio, see [Develop UWP apps using Visual Studio](/previous-versions/windows/apps/br211384(v=win.10)).
 
 ### <span id="Device_driver_requirements"></span><span id="device_driver_requirements"></span><span id="DEVICE_DRIVER_REQUIREMENTS"></span>Device driver requirements
 
@@ -34,12 +33,12 @@ Some UWP device app and APIs require that your device supports a Microsoft-suppl
 
 | Device app or API                      | Driver info                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UWP device apps for camera   | Your camera’s driver must use the AvStream driver model. For more info on the AvStream driver model, see the [AVStream Overview](https://go.microsoft.com/fwlink/p/?LinkId=273032) in the Windows Driver Kit. A an additional component, known as the Driver MFT (a media foundation transform), can be supplied with the driver installation package to provide custom effects for the camera. For more info, see [Windows store device apps for cameras](uwp-device-apps-for-webcams.md). |
-| UWP device apps for printers | Printers must use the v4 Printer driver. See [Developing the v4 print driver](https://go.microsoft.com/fwlink/p/?LinkId=314231) for more info.                                                                                                                                                                                                                                                                                                                                                         |
-| USB APIs                               | To use the Windows Runtime[Windows.Devices.Usb](https://go.microsoft.com/fwlink/p/?LinkId=306694)APIs, your device must be compatible with the Winusb.sys driver.                                                                                                                                                                                                                                                                                                                                      |
-| Human Interface Device (HID) APIs      | The HID APIs are designed for use over USB, Bluetooth, Bluetooth Smart, and the I2C transports. To use the Windows Runtime[Windows.Devices.HumanInterfaceDevice](https://go.microsoft.com/fwlink/p/?LinkId=306697) APIs, your device must be compatible with the HIDClass.sys driver and the driver required by the transport. For more info, see [HID Architecture](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)).                                                                                                            |
-| Bluetooth GATT APIs                    | To use the Windows Runtime Bluetooth GATT APIs, [Windows.Devices.Bluetooth.GenericAttributeProfile](https://go.microsoft.com/fwlink/p/?LinkId=306698), your device must be compatible with the BthLEEnum.sys driver.                                                                                                                                                                                                                                                                                   |
-| Bluetooth RFCOMM APIs                  | To use the Windows Runtime Bluetooth RFCOMM APIs, [Windows.Devices.Bluetooth.Rfcomm](https://go.microsoft.com/fwlink/p/?LinkId=306699), your device must be compatible with the Rfcomm.sys and BthEnum.sys drivers.                                                                                                                                                                                                                                                                                    |
+| UWP device apps for camera   | Your camera’s driver must use the AvStream driver model. For more info on the AvStream driver model, see the [AVStream Overview](../stream/avstream-overview.md) in the Windows Driver Kit. A an additional component, known as the Driver MFT (a media foundation transform), can be supplied with the driver installation package to provide custom effects for the camera. For more info, see [Windows store device apps for cameras](uwp-device-apps-for-webcams.md). |
+| UWP device apps for printers | Printers must use the v4 Printer driver. See [Developing the v4 print driver](../print/v4-printer-driver.md) for more info.                                                                                                                                                                                                                                                                                                                                                         |
+| USB APIs                               | To use the Windows Runtime[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)APIs, your device must be compatible with the Winusb.sys driver.                                                                                                                                                                                                                                                                                                                                      |
+| Human Interface Device (HID) APIs      | The HID APIs are designed for use over USB, Bluetooth, Bluetooth Smart, and the I2C transports. To use the Windows Runtime[Windows.Devices.HumanInterfaceDevice](/uwp/api/Windows.Devices.HumanInterfaceDevice) APIs, your device must be compatible with the HIDClass.sys driver and the driver required by the transport. For more info, see [HID Architecture](../hid/hid-architecture.md).                                                                                                            |
+| Bluetooth GATT APIs                    | To use the Windows Runtime Bluetooth GATT APIs, [Windows.Devices.Bluetooth.GenericAttributeProfile](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile), your device must be compatible with the BthLEEnum.sys driver.                                                                                                                                                                                                                                                                                   |
+| Bluetooth RFCOMM APIs                  | To use the Windows Runtime Bluetooth RFCOMM APIs, [Windows.Devices.Bluetooth.Rfcomm](/uwp/api/Windows.Devices.Bluetooth.Rfcomm), your device must be compatible with the Rfcomm.sys and BthEnum.sys drivers.                                                                                                                                                                                                                                                                                    |
 
  
 
@@ -118,7 +117,7 @@ As you begin developing your UWP device app, consider the following points.
 
 ### <span id="Device_capabilities"></span><span id="device_capabilities"></span><span id="DEVICE_CAPABILITIES"></span>Device capabilities
 
-To access your device, you might need to specify a device capability in the app package manifest. These are specified with the [DeviceCapability](https://go.microsoft.com/fwlink/p/?LinkId=306696) element of the Package.appxmanifest file in your app's project. Note that some device capabilities must be specified manually. For more info, see [How to specify device capabilities in the package manifest](https://go.microsoft.com/fwlink/p/?LinkID=306695).
+To access your device, you might need to specify a device capability in the app package manifest. These are specified with the [DeviceCapability](/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability) element of the Package.appxmanifest file in your app's project. Note that some device capabilities must be specified manually. For more info, see [How to specify device capabilities in the package manifest](/uwp/schemas/appxpackage/how-to-specify-device-capabilities-in-a-package-manifest).
 
 ### <span id="AutoPlay_for_Windows_Store_device_apps"></span><span id="autoplay_for_windows_store_device_apps"></span><span id="AUTOPLAY_FOR_WINDOWS_STORE_DEVICE_APPS"></span>AutoPlay for UWP device apps
 
@@ -130,30 +129,23 @@ You can sync or update your device from a UWP device app by using device backgro
 
 ### <span id="Learn_more"></span><span id="learn_more"></span><span id="LEARN_MORE"></span>Learn more
 
-|                                                                                                         |                                                                                                                                                                |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UWP device apps for printers](uwp-device-apps-for-printers.md)                    | Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance. |
-| [UWP device apps for cameras](uwp-device-apps-for-webcams.md)                      | Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.                                                              |
-| [Integrating devices](https://go.microsoft.com/fwlink/p/?LinkId=533279)                                  | Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.                                                                                  |
-| [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md) | Lean how OEMs can write device apps for devices internal to the PC.                                                                                            |
+**[UWP device apps for printers](uwp-device-apps-for-printers.md)**: Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance.
+
+**[UWP device apps for cameras](uwp-device-apps-for-webcams.md)**: Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.
+
+**[Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10))**: Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.
+
+**[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)**: Lean how OEMs can write device apps for devices internal to the PC.
+
 
  
 
 ## <span id="Use_the_Windows_App_Certification_Kit"></span><span id="use_the_windows_app_certification_kit"></span><span id="USE_THE_WINDOWS_APP_CERTIFICATION_KIT"></span>Use the Windows App Certification Kit
 
 
-To give your app the best chance of getting certified, validate and test it on your computer before you submit it for certification and listing in the Microsoft Store. For more info, see [Windows App Certification Kit](https://go.microsoft.com/fwlink/p/?LinkId=273040).
+To give your app the best chance of getting certified, validate and test it on your computer before you submit it for certification and listing in the Microsoft Store. For more info, see [Windows App Certification Kit](/previous-versions/windows/apps/hh694081(v=win.10)).
 
 ## <span id="Next_step"></span><span id="next_step"></span><span id="NEXT_STEP"></span>Next step
 
 
 [Step 2: Create device metadata](step-2--create-device-metadata.md)
-
- 
-
- 
-
-
-
-
-

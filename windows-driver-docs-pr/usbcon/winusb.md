@@ -1,5 +1,5 @@
 ---
-Description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
+description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
 title: WinUSB (Winusb.sys)
 ms.date: 04/20/2017
 ms.localizationpriority: High
@@ -12,7 +12,7 @@ This section describes the generic WinUSB driver (Winusb.sys) and its user-mode 
 
 In versions of Windows earlier than Windows XP with Service Pack 2 (SP2), all USB device drivers were required to operate in kernel mode. If you created a USB device for which the operating system did not have a native class driver, you had to write a kernel-mode device driver for your device.
 
-Windows USB (WinUSB) is a generic driver for USB devices that was developed concurrently with the Windows Driver Frameworks (WDF) for Windows XP with SP2. The WinUSB architecture consists of a kernel-mode driver (Winusb.sys) and a user-mode dynamic link library (Winusb.dll) that exposes [WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). By using these functions, you can manage USB devices with user-mode software.
+Windows USB (WinUSB) is a generic driver for USB devices that was developed concurrently with the Windows Driver Frameworks (WDF) for Windows XP with SP2. The WinUSB architecture consists of a kernel-mode driver (Winusb.sys) and a user-mode dynamic link library (Winusb.dll) that exposes [WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). By using these functions, you can manage USB devices with user-mode software.
 
 Winusb.sys is also a key part of the link between a UMDF function driver and the associated device. Winusb.sys is installed in the device's kernel-mode stack as an upper filter driver. An application communicates with the device's UMDF function driver to issue read, write, or device I/O control requests. The driver interacts with the framework, which passes the request to Winusb.sys. Winusb.sys then processes the request and passes it to the protocol drivers and ultimately to the device. Any response returns by the reverse path. Winusb.sys also serves as the device stack's Plug and Play and power owner.
 
@@ -73,7 +73,4 @@ The following table shows the high-level USB features that are supported by WinU
  
 
 ## Related topics
-[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
-
-
-
+[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)

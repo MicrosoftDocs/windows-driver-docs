@@ -1,14 +1,13 @@
 ---
 title: DesktopAutoplayHandler
 description: DesktopAutoplayHandler
-ms.assetid: e1a07580-36dd-4618-b522-3f7605c9b87b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # DesktopAutoplayHandler
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The DesktopAutoplayHandler element specifies a desktop app that should appear as the recommended AutoPlay action when the device is connected and no default action is set. The AutoPlay event is raised whenever a user plugs in a device.
 

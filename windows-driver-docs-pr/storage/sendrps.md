@@ -1,7 +1,6 @@
 ---
 title: SendRPS function
 description: The SendRPS WMI method sends a read port status block (RPS) request to the indicated port or domain controller.
-ms.assetid: e8179a42-4095-4c59-81c5-7db7a2985939
 keywords: ["SendRPS function Storage Devices"]
 topic_type:
 - apiref
@@ -42,31 +41,31 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
 
 *PortWWN*   
-A worldwide name for the local port through which the RPS command is sent. This information is delivered to the miniport driver in the **PortWWN** member of a [**SendRPS\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
+A worldwide name for the local port through which the RPS command is sent. This information is delivered to the miniport driver in the **PortWWN** member of a [**SendRPS\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
 
 *AgentWWN*   
-A worldwide name for the port that is to be queried for the status of the port indicated by *ObjectWWN*. This information is delivered to the miniport driver in the **AgentWWN** member of a [**SendRPS\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
+A worldwide name for the port that is to be queried for the status of the port indicated by *ObjectWWN*. This information is delivered to the miniport driver in the **AgentWWN** member of a [**SendRPS\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
 
 *ObjectWWN*   
-The worldwide name of the port for which port status is to be returned. This information is delivered to the miniport driver in the **ObjectWWN** member of a [**SendRPS\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
+The worldwide name of the port for which port status is to be returned. This information is delivered to the miniport driver in the **ObjectWWN** member of a [**SendRPS\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
 
 *AgentDomain*   
-The domain number of the domain controller to be queried for the status of the port indicated by *ObjectWWN*. This information is delivered to the miniport driver in the **AgentDomain** member of a [**SendRPS\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
+The domain number of the domain controller to be queried for the status of the port indicated by *ObjectWWN*. This information is delivered to the miniport driver in the **AgentDomain** member of a [**SendRPS\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
 
 *ObjectPortNumber*   
-The worldwide name of the port for which port status is to be returned. This information is delivered to the miniport driver in the **ObjectPortNumber** member of a [**SendRPS\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
+The worldwide name of the port for which port status is to be returned. This information is delivered to the miniport driver in the **ObjectPortNumber** member of a [**SendRPS\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in) structure.
 
 *TotalRspBufferSize*   
-The size in bytes of the results of the RPS command. The miniport driver returns this information in the **TotalRspBufferSize** member of a [**SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
+The size in bytes of the results of the RPS command. The miniport driver returns this information in the **TotalRspBufferSize** member of a [**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
 
 *ActualRspBufferSize*   
-The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualRspBufferSize** member of a [**SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
+The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualRspBufferSize** member of a [**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
 
 *RspBuffer*   
-The results of the RPS command. The miniport driver returns this information in the **RspBuffer** member of a [**SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
+The results of the RPS command. The miniport driver returns this information in the **RspBuffer** member of a [**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
 
 Return value
 ------------
@@ -107,16 +106,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SendRPS\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in)
+[**SendRPS\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_in)
 
-[**SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out)
-
- 
+[**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out)
 
  
-
-
-
-
-
 

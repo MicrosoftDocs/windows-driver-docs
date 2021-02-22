@@ -1,7 +1,6 @@
 ---
 title: Components of a Remote File System
 description: Components of a Remote File System
-ms.assetid: b2cd153a-5bcc-4670-8542-afa55e14727a
 keywords:
 - network redirectors WDK , remote file systems
 - redirector drivers WDK , remote file systems

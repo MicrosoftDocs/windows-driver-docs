@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_DRIVER_BLOCKED
 description: CM_PROB_DRIVER_BLOCKED
-ms.assetid: dfe5f8f9-8430-4f80-9b1c-179f699617f8
 keywords:
 - CM_PROB_DRIVER_BLOCKED
 ms.date: 04/20/2017

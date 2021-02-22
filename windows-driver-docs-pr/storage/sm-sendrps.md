@@ -1,7 +1,6 @@
 ---
 title: SM\_SendRPS function
 description: The SM\_SendRPS WMI method sends a read port status block (RPS) request to the indicated port or domain controller.
-ms.assetid: a64983ef-c665-43db-ad29-0a6f14421ab8
 keywords: ["SM_SendRPS function Storage Devices"]
 topic_type:
 - apiref
@@ -106,14 +105,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRPS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrps_out)
+[**SM\_SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrps_out)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Sample Audio Drivers
 description: Sample Audio Drivers
-ms.assetid: bea50e70-e1ec-4a66-9bfc-8bd644b07ce7
 keywords:
 - WDM audio drivers WDK , sample drivers
 - audio drivers WDK , sample drivers
@@ -12,6 +11,7 @@ keywords:
 - Gfx sample audio driver WDK audio
 - Mpu401 sample audio driver WDK audio
 - Msvad sample audio driver WDK audio
+- Sysvad sample audio driver WDK audio
 - Sb16 sample audio driver WDK audio
 - Stdunk sample audio driver WDK audio
 ms.date: 04/20/2017
@@ -33,10 +33,6 @@ The *sysvad* solution file contains the following projects.
 -   **TabletAudioSample**
 
     The *TabletAudioSample* project demonstrates how to develop a WDM audio driver that exposes support for multiple audio devices. Some of these audio devices are embedded (speakers, mic arrays) in the system while others are pluggable (headphone speaker/mic, Bluetooth headsets speaker/mic). The driver uses WaveRT and audio offloading for rendering devices. The driver uses a "virtual audio device" instead of an actual hardware-based adapter and highlights the different aspects of the audio offloading WDM audio driver architecture. For more information about the Windows audio engine, see [Hardware-Offloaded Audio Processing (Windows Drivers)](hardware-offloaded-audio-processing.md).
-
--   **PhoneAudioSample**
-
-    The *PhoneAudioSample* project is very similar to the *TabletAudioSample* project. It includes optimizations for mobile devices.
 
 -   **EndpointsCommon**
 
@@ -66,7 +62,7 @@ a. You can use GitHub tools to work with the samples. You can also download the 
 
 b. Download the master.zip file to your local hard drive.
 
-c. Right click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
+c. Select and hold (or right-click)*Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
 
 d. After the files are extracted, navigate to the following subfolder.
 
@@ -74,14 +70,14 @@ d. After the files are extracted, navigate to the following subfolder.
 
 **Open the driver solution in Visual Studio**
 
-In Microsoft Visual Studio, Click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
+In Microsoft Visual Studio, Select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
 
 In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has six projects.
 
 ## <span id="sample_audio_drivers"></span><span id="SAMPLE_AUDIO_DRIVERS"></span>Archived Audio Samples
 
 
-These audio samples support previous versions of the Microsoft Windows Driver Kit (WDK). They are available as part of the zip file download available [here](https://go.microsoft.com/fwlink/p/?LinkId=618052).
+These audio samples support previous versions of the Microsoft Windows Driver Kit (WDK). They are available as part of the [zip file download](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples).
 
 -   **Microsoft Virtual Audio Device Driver Sample (Msvad)**
 
@@ -103,12 +99,7 @@ These audio samples support previous versions of the Microsoft Windows Driver Ki
 
 For details, see the readme documentation that accompanies each of these samples in the WDK.
 
-For information on the WDK samples, see [Windows Driver Kit Samples Pack (Windows Drivers).](https://docs.microsoft.com/windows-hardware/drivers/samples/index)
+For information on the WDK samples, see [Windows Driver Kit Samples Pack (Windows Drivers).](../samples/index.md)
 
  
-
- 
-
-
-
 

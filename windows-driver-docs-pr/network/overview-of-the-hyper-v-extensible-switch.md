@@ -1,7 +1,6 @@
 ---
 title: Overview of the Hyper-V Extensible Switch
 description: This section provides an overview of the Hyper-V Extensible Switch
-ms.assetid: 78181C72-FBFD-4860-A664-C297997D780F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,9 +18,9 @@ Windows Server 2012 introduces the Hyper-V Extensible Switch (also called the H
 
 For high-level technical overviews of this technology and its underpinnings, see the following TechNet documentation:
 
-- [Hyper-V Virtual Switch Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831823(v=ws.11))
-- [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134230(v=ws.11))
-- [Hyper-V Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831531(v=ws.11))
+- [Hyper-V Virtual Switch Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831823(v=ws.11))
+- [Hyper-V Network Virtualization Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134230(v=ws.11))
+- [Hyper-V Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831531(v=ws.11))
 
 ## Types of Hyper-V extensible switches and network adapters
 
@@ -43,19 +42,19 @@ Each extensible switch module routes incoming and outgoing packets over the netw
 
 - External network adapters that provide the connection to the physical network interface that is available on the host.
 
-    For more information about this type of network adapter, see [External Network Adapters](https://docs.microsoft.com/windows-hardware/drivers/network/external-network-adapters).
+    For more information about this type of network adapter, see [External Network Adapters](./external-network-adapters.md).
 
     **Note**  Only external extensible switches provide access to an external network adapter.
 
 - Internal network adapters that provide access to an extensible switch for processes that run in the management operating system of the Hyper-V parent partition. This allows these processes to send or receive packets over the extensible switch.
 
-    For more information about this type of network adapter, see [Internal Network Adapters](https://docs.microsoft.com/windows-hardware/drivers/network/internal-network-adapters).
+    For more information about this type of network adapter, see [Internal Network Adapters](./internal-network-adapters.md).
 
     **Note**  Only external and internal extensible switches provide access to an internal network adapter.
 
 - VM network adapters that are exposed within the guest operating system that runs in a Hyper-V child partition. VM network adapters provide a connection to the extensible switch for packets to be sent or received by processes that run in the guest operating system of the child partition.
 
-    For more information about this type of network adapter, see [Virtual Machine Network Adapters](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-machine-network-adapters).
+    For more information about this type of network adapter, see [Virtual Machine Network Adapters](./virtual-machine-network-adapters.md).
 
 Each Hyper-V child partition can be configured to have one or more VM network adapters. Each VM network adapter is configured to be associated with an instance of an extensible switch. This allows a child partition to be configured in the following way:
 
@@ -71,13 +70,13 @@ The Hyper-V extensible switch supports an interface in which independent softwar
 
 - The Hyper-V extensible switch supports an interface that allows NDIS filter drivers, known as *extensions*, to bind within the extensible switch driver stack. This allows extensions to capture, filter, and forward packets to extensible switch ports. This also allows extensions to inject, drop, or redirect packets to ports that are connected to the network adapters exposed in the Hyper-V partitions.
 
-    After extensions are installed, they can be enabled or disabled on separate instances of a Hyper-V extensible switch. For more information, see [Installing Hyper-V Extensible Switch Extensions](https://docs.microsoft.com/windows-hardware/drivers/network/installing-hyper-v-extensible-switch-extensions).
+    After extensions are installed, they can be enabled or disabled on separate instances of a Hyper-V extensible switch. For more information, see [Installing Hyper-V Extensible Switch Extensions](./installing-hyper-v-extensible-switch-extensions.md).
 
 - The Windows Filtering Platform (WFP) provides an in-box filtering extension (Wfplwfs.sys) that allows WFP filters or callout drivers to intercept packets along the Hyper-V extensible switch data path. This allows the WFP filters or callout drivers to perform packet inspection or modification by using the WFP management and system functions.
 
-    For an overview of WFP, see [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/network/porting-packet-processing-drivers-and-apps-to-wfp).
+    For an overview of WFP, see [Windows Filtering Platform](./porting-packet-processing-drivers-and-apps-to-wfp.md).
 
-    For an overview of WFP callout drivers, see [Windows Filtering Platform Callout Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2).
+    For an overview of WFP callout drivers, see [Windows Filtering Platform Callout Drivers](./windows-filtering-platform-callout-drivers2.md).
 
     **Note**  To perform WFP-based filtering of extensible switch packet traffic, ISVs only need to extend their WFP filters and callout drivers to use extended WFP calls and data types. ISVs do not need to develop their own extensions.
 
@@ -88,19 +87,19 @@ Extensions that capture and monitor packet traffic. This type of extension canno
 
 Multiple capturing extensions can be bound and enabled in each instance of an extensible switch.
 
-For more information on this type of extension, see [Capturing Extensions](https://docs.microsoft.com/windows-hardware/drivers/network/capturing-extensions).
+For more information on this type of extension, see [Capturing Extensions](./capturing-extensions.md).
 
 <a href="" id="filtering-extensions"></a>Filtering Extensions  
 These extensions have the same capabilities as capturing extensions. However, based on port or switch policy settings, this type of extension can inspect and drop packets, or exclude packet delivery to extensible switch ports. Filtering extensions can also originate, duplicate, or clone packets and inject them into the extensible switch data path.
 
 Multiple filtering extensions can be bound and enabled in each instance of an extensible switch.
 
-For more information on this type of extension, see [Filtering Extensions](https://docs.microsoft.com/windows-hardware/drivers/network/filtering-extensions).
+For more information on this type of extension, see [Filtering Extensions](./filtering-extensions.md).
 
 <a href="" id="forwarding-extensions"></a>Forwarding Extensions  
 These extensions have the same capabilities as filtering extensions, but are responsible for performing the core packet forwarding and filtering tasks of extensible switches. These tasks include the following:
 
-- Determining the destination ports for a packet, unless the packet is an NVGRE packet. For more information, see [Hybrid Forwarding](https://docs.microsoft.com/windows-hardware/drivers/network/hybrid-forwarding).
+- Determining the destination ports for a packet, unless the packet is an NVGRE packet. For more information, see [Hybrid Forwarding](./hybrid-forwarding.md).
 
 - Filtering packets by enforcing standard port policies, such as security, profile, or virtual LAN (VLAN) policies.
 
@@ -108,7 +107,7 @@ These extensions have the same capabilities as filtering extensions, but are res
 
 Only one forwarding extension can be bound and enabled in each instance of an extensible switch.
 
-For more information on this type of extension, see [Forwarding Extensions](https://docs.microsoft.com/windows-hardware/drivers/network/filtering-extensions).
+For more information on this type of extension, see [Forwarding Extensions](./filtering-extensions.md).
 
 ## Hyper-V extensible switch architectural diagrams
 
@@ -120,4 +119,4 @@ The following figure shows the components of the extensible switch interface for
 
 ![diagram illustrating the synthetic device data paths with sr-iov](images/vswitcharchitecture.png)
 
-For more information about the components for the extensible switch interface, see [Hyper-V Extensible Switch Architecture](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-architecture).
+For more information about the components for the extensible switch interface, see [Hyper-V Extensible Switch Architecture](./hyper-v-extensible-switch-architecture.md).

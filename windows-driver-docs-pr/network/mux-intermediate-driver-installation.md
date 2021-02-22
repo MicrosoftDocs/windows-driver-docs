@@ -1,7 +1,6 @@
 ---
 title: MUX Intermediate Driver Installation
 description: MUX Intermediate Driver Installation
-ms.assetid: 9d0c6d6f-c12f-4921-b08a-b23b7d96ccd9
 keywords:
 - MUX intermediate drivers WDK
 - NDIS MUX intermediate drivers WDK

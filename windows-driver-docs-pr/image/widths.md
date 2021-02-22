@@ -1,7 +1,6 @@
 ---
 title: Widths element
 description: The required Widths element contains the list of widths at which the scanner can scan images.
-ms.assetid: 785d469f-bdad-413c-8bfb-de7a518b243c
 keywords: ["Widths element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Control Nodes for Processing IP Data
 description: Control Nodes for Processing IP Data
-ms.assetid: 6195ffe9-d20c-4687-8d45-abbfc17ba2fa
 keywords:
 - control nodes WDK BDA
 - nodes WDK BDA

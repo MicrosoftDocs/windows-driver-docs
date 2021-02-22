@@ -1,7 +1,6 @@
 ---
 title: How File System Filter Drivers Are Different from Device Drivers
 description: How File System Filter Drivers Are Different from Device Drivers
-ms.assetid: 64a59564-a4d7-4174-82d3-60bd1a30b2d8
 keywords:
 - filter drivers WDK file system , vs. device drivers
 - file system filter drivers WDK , vs. device drivers
@@ -16,15 +15,15 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **No Power Management**
 
-  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) routines.
+  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](../kernel/irp-mj-power.md) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](/windows-hardware/drivers/ddi/_kernel/#power-management-routines) routines.
 
 - **No WDM**
 
-  File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Microsoft [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) is only for device drivers.
+  File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Microsoft [Windows Driver Model](../kernel/writing-wdm-drivers.md) is only for device drivers.
 
 - **No AddDevice or StartIo**
 
-  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) or [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routines.
+  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) or [**StartIo**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routines.
 
 - **Different Device Objects Created**
 
@@ -36,6 +35,6 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **Other Differences**
 
-  - Because file system filter drivers are not device drivers, they do not perform [direct memory access (DMA)](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o-with-dma).
+  - Because file system filter drivers are not device drivers, they do not perform [direct memory access (DMA)](../kernel/using-direct-i-o-with-dma.md).
 
   - Unlike device filter drivers, which can attach above or below a target device's function driver, file system filter drivers can attach only above a target file system driver. Thus, in device-driver terms, a file system filter driver can be only an upper filter, never a lower filter.

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS is a TLV that contains IPv6 NS protocol offload parameters.
-ms.assetid: 0385449B-82C6-44B4-BBD3-A708ADE54AC4
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS Network Drivers Starting with Windows Vista
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8\[16\]                                       | Specifies the solicited node IPv6 address.                                                                                                                                                                                                                                                                                                                                                                     |
 | UINT8\[16\]                                       | Specifies one or two IPv6 addresses to match the Target Address field of an incoming NS message. If there is only one address, that address is stored in Target address 1, and Target address 2 is filled with zeros. If one of these addresses matches the Target Address field of an incoming NS message, the network adapter sends an NA message in response.                                               |
 | UINT8\[16\]                                       | See description of Target address 1.                                                                                                                                                                                                                                                                                                                                                                           |
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the MAC address that the network adapter must use for the target link-layer address (TLLA) field of the NA message that it generates. However, it should use the current MAC address of the network adapter as the source address in the MAC header.                                                                                                                                                 |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the MAC address that the network adapter must use for the target link-layer address (TLLA) field of the NA message that it generates. However, it should use the current MAC address of the network adapter as the source address in the MAC header.                                                                                                                                                 |
 
  
 
@@ -62,9 +61,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Serial Controller Driver Design for SerCx2
 description: To manage your serial controller, you write a serial controller driver that performs hardware-specific tasks and communicates with SerCx2.
-ms.assetid: 67045E19-4EE1-4C31-A842-858E9A90233E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,7 +29,7 @@ To manage your serial controller, you write a serial controller driver that perf
 </tr>
 <tr class="even">
 <td><p><a href="sercx2-i-o-transactions.md" data-raw-source="[SerCx2 I/O Transactions](sercx2-i-o-transactions.md)">SerCx2 I/O Transactions</a></p></td>
-<td><p>SerCx2 simplifies the handling of read (<a href="https://docs.microsoft.com/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) and write (<a href="https://docs.microsoft.com/previous-versions/ff546904(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_WRITE&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff546904(v=vs.85))"><strong>IRP_MJ_WRITE</strong></a>) requests for your serial controller driver. In response to a read or write request, SerCx2 issues one or more I/O transactions to the serial controller driver. From the driver's point of view, each transaction is a simple and complete I/O operation.</p></td>
+<td><p>SerCx2 simplifies the handling of read (<a href="/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) and write (<a href="/previous-versions/ff546904(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_WRITE&lt;/strong&gt;](/previous-versions/ff546904(v=vs.85))"><strong>IRP_MJ_WRITE</strong></a>) requests for your serial controller driver. In response to a read or write request, SerCx2 issues one or more I/O transactions to the serial controller driver. From the driver's point of view, each transaction is a simple and complete I/O operation.</p></td>
 </tr>
 </tbody>
 </table>

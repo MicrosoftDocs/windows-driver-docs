@@ -1,7 +1,6 @@
 ---
 title: .unload (Unload Extension DLL)
 description: The .unload command unloads an extension DLL from the debugger.
-ms.assetid: 8399e4a8-0265-4690-b35f-973b69fe2764
 keywords: ["Unload Extension DLL (.unload) command", "extension commands ( commands), Unload Extension DLL (.unload) command", ".unload (Unload Extension DLL) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

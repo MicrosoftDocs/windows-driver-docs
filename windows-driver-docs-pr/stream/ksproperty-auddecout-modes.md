@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDDECOUT\_MODES
 description: The KSPROPERTY\_AUDDECOUT\_MODES property returns the available output modes of the audio decoder.This property is read-only.
-ms.assetid: 5ae62fae-7f13-480f-ba36-3fa72ff547bc
 keywords: ["KSPROPERTY_AUDDECOUT_MODES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ This property is read-only.
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -93,13 +92,4 @@ Requirements
 
 
 [**KSPROPERTY\_AUDDECOUT\_CUR\_MODE**](ksproperty-auddecout-cur-mode.md)
-
- 
-
- 
-
-
-
-
-
 

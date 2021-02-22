@@ -1,7 +1,6 @@
 ---
 title: UWP device apps for printers
 description: This section introduces UWP device apps for printers.
-ms.assetid: 3325B492-2A70-4EB7-99B0-3FE3E24CE398
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This section introduces UWP device apps for printers. UWP device apps can highlight the special features of printers through customized print settings flyouts and notifications support. UWP device apps can also display printer status, manage print jobs, and perform printer maintenance tasks. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Important**  To use UWP device app features, your printer must support the v4 print driver model. For more info, see [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231).
+**Important**  To use UWP device app features, your printer must support the v4 print driver model. For more info, see [Developing v4 print drivers](../print/v4-printer-driver.md).
 
  
 
@@ -82,7 +81,7 @@ Use a UWP device app for a printer if you'd like to:
 ## <span id="Samples"></span><span id="samples"></span><span id="SAMPLES"></span>Samples
 
 
-The UWP device app samples for printers demonstrate the printer-related features that you can implement in your own UWP device app. Each sample also includes the `PrinterExtensionLibrary` project, that you can reuse in your own app to help with printer extensions. The printer extension library wraps the COM implementation of the [printer extension interfaces](https://go.microsoft.com/fwlink/p/?LinkID=299887) from the v4 print driver.
+The UWP device app samples for printers demonstrate the printer-related features that you can implement in your own UWP device app. Each sample also includes the `PrinterExtensionLibrary` project, that you can reuse in your own app to help with printer extensions. The printer extension library wraps the COM implementation of the [printer extension interfaces](/windows-hardware/drivers/ddi/_print/) from the v4 print driver.
 
 
 **Windows 8 Samples:**
@@ -99,11 +98,11 @@ The UWP device app samples for printers demonstrate the printer-related features
 ## <span id="related_topics"></span>Related topics
 
 
-[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](../print/v4-printer-driver.md)
 
-[Printer Extension Interfaces (v4 Print Driver)](https://go.microsoft.com/fwlink/p/?LinkID=299887)
+[Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
 
-[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](../print/bidirectional-communication.md)
 
 [Getting started with UWP apps](getting-started.md)
 
@@ -112,11 +111,4 @@ The UWP device app samples for printers demonstrate the printer-related features
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
  
-
- 
-
-
-
-
-
 

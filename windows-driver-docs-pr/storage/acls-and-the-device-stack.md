@@ -1,7 +1,6 @@
 ---
 title: ACLs and the Device Stack
 description: ACLs and the Device Stack
-ms.assetid: DAFC851D-E808-4588-86D2-E608584FD05B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ For direct access, applications can use the port driver and class driver interfa
 
 -   The application first opens a handle to the drive interface for Read and Write access.
 
--   After the handle is opened successfully, the application can use the [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send the SCSI request to the device.
+-   After the handle is opened successfully, the application can use the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send the SCSI request to the device.
 
 When the driver stack creates the device interface, an ACL is applied on that device. The ACL’s access control elements (ACE) describe the user groups and related access permissions. For example, an ACE for the Administrators group might describe the Read and Write access permissions that administrators have for that device interface.
 
@@ -55,11 +54,12 @@ When the driver stack creates the device object, the I/O manager sets a default 
 
 When the device driver stack is started, the PnP manager changes the ACL on the device only if the device’s key in the registry specifies a security descriptor for that device. The device vendor can set this descriptor by using **SetupDiSetDeviceRegistryProperty** with the property set as in the following.
 
-|          |                                  |
-|----------|----------------------------------|
-| Property | SPDRP\_SECURITY                  |
-| Value    | **SECURITY\_DESCRIPTOR**         |
-| Size     | **sizeof**(SECURITY\_DESCRIPTOR) |
+**Property**: SPDRP\_SECURITY
+
+**Value**: **SECURITY\_DESCRIPTOR**
+
+**Size**: **sizeof**(SECURITY\_DESCRIPTOR)
+
 
  
 
@@ -75,7 +75,7 @@ The Group Policy Service sets the ACL on the volume interface for the disk, but 
 ## <span id="Security_Check_Process"></span><span id="security_check_process"></span><span id="SECURITY_CHECK_PROCESS"></span>Security Check Process
 
 
-When an application attempts to open a handle to the device interface, the I/O manager checks whether the user has been granted the access permissions that are requested in the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) call. If yes, the handle is opened; otherwise, the call fails with error ACCESS\_DENIED.
+When an application attempts to open a handle to the device interface, the I/O manager checks whether the user has been granted the access permissions that are requested in the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) call. If yes, the handle is opened; otherwise, the call fails with error ACCESS\_DENIED.
 
 After the handle is opened, the application can send commands directly to the device, typically by using an IOCTL. For example, to send a SCSI pass-through command, an application would use **IOCTL\_SCSI\_PASS\_THROUGH** or **IOCTL\_SCSI\_PASS\_THROUGH\_DIRECT**.
 
@@ -85,7 +85,7 @@ After the handle is opened, the application can send commands directly to the de
 
 The opcode in the command descriptor block (CDB) that is given in the SCSI pass-through request is not checked to determine whether Read, Write, or both Read and Write access is required. That is why Windows always requires the handle to the device to be opened for Reads and Writes for pass-through requests, even if the application is only doing a read, a write, or no data transfer at all.
 
-**IOCTL\_DISK\_VERIFY** can be sent without regard to the access permissions that were requested in a [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) call. When the I/O manager receives an IOCTL, it checks the access permissions required for that IOCTL and compares them with the access permissions granted to the caller in the **CreateFile** call. If there is a match, the IOCTL is sent to the target device; otherwise, the IOCTL call is failed with the error ACCESS\_DENIED.
+**IOCTL\_DISK\_VERIFY** can be sent without regard to the access permissions that were requested in a [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) call. When the I/O manager receives an IOCTL, it checks the access permissions required for that IOCTL and compares them with the access permissions granted to the caller in the **CreateFile** call. If there is a match, the IOCTL is sent to the target device; otherwise, the IOCTL call is failed with the error ACCESS\_DENIED.
 
 For example, if the caller has opened a handle for Read-only access, like the following.
 
@@ -94,9 +94,4 @@ For example, if the caller has opened a handle for Read-only access, like the fo
 -   **IOCTL\_DISK\_GET\_PARTITION\_INFO** is sent to the driver stack because it requires only Read access.
 
  
-
- 
-
-
-
 

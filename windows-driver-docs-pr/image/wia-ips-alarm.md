@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ALARM
 description: The WIA\_IPS\_ ALARM property is used to configure the audible alarm (beep) that is produced by the WIA mini-driver at the device, in one of the following conditions When this property is implemented on a Feeder item (WIA\_CATEGORY\_FEEDER), and multi-feed detection is enabled, the audible alarm (beep) sound should be played by the device when a multiple feed condition is detected. (When the WIA\_IPS\_MULTI\_FEED property is supported and set to a value that is not WIA\_MULTI\_FEED\_DETECT\_DISABLED, it means that multi-feed detection is enabled.)When this property is implemented on a Barcode Reader item (WIA\_CATEGORY\_BARCODE\_READER), and barcode detection is enabled, the audible alarm (beep) sound should be played by the device when a barcode is successfully detected. When this property is implemented on a Patch Code Reader item (WIA\_CATEGORY\_PATCH\_CODE\_READER), and patch code detection is enabled, the audible alarm (beep) sound should be played by the device when a patch code is successfully detected.
-ms.assetid: A029F7CD-C057-43FA-83AF-4B47B5A76B3F
 keywords: ["WIA_IPS_ALARM Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Event tracing
 description: You can use Event Tracing for Windows (ETW) or the Windows software trace preprocessor (WPP) to trace the operations in your HID over I²C.
-ms.assetid: F23E5516-36B9-478E-90D3-54D1C52CB467
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Event tracing
 
 
-You can use Event Tracing for Windows (ETW) or the Windows software trace preprocessor (WPP) to trace the operations in your HID over I²C device driver. For more information about ETW, see the [Event Tracing](https://go.microsoft.com/fwlink/p/?linkid=256040) topic in the Windows Development Reference. For more information about WPP, see [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) and [Inflight Trace Recorder (IFR) for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder).
+You can use Event Tracing for Windows (ETW) or the Windows software trace preprocessor (WPP) to trace the operations in your HID over I²C device driver. For more information about ETW, see the [Event Tracing](/windows/win32/etw/event-tracing-portal) topic in the Windows Development Reference. For more information about WPP, see [WPP Software Tracing](../devtest/wpp-software-tracing.md) and [Inflight Trace Recorder (IFR) for logging traces](../devtest/using-wpp-recorder.md).
 
 ## Using the Inflight Trace Recorder (IFR)
 
@@ -59,11 +58,4 @@ Logman delete -n HIDI2C_ETW
 ```
 
 The resulting trace log can parsed with tools like **Xperf** or **Windows Performance Analyzer** (WPA).
-
- 
-
- 
-
-
-
 

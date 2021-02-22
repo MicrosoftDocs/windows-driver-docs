@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_BUFFER\_DURATION
 description: The KSPROPERTY\_AUDIO\_BUFFER\_DURATION property allows the size of the client application buffer to be reported as time duration.
-ms.assetid: 9749464f-d351-468b-b785-fa84705ef2c0
 keywords: ["KSPROPERTY_AUDIO_BUFFER_DURATION Audio Devices"]
 topic_type:
 - apiref

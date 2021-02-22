@@ -1,7 +1,6 @@
 ---
 title: ruleinfo
 description: The ruleinfo command displays information about a Driver Verifier rule.
-ms.assetid: 025FAAFA-7A5C-462C-9CC2-AA55530CD371
 keywords: ["ruleinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -94,7 +93,7 @@ Check RULE_STATE for Oid ( use !ndiskd.oid ), which can be one of the following:
 2) Pending OID, or
 3) Previous OID if no OID is pending.
 
-MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278802
+MSDN_LINK: https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoidcomplete
 
 CONTEXT: Miniport 0xFFFFE0000283F1A0
 

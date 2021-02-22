@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Device and Driver Installation
 description: Roadmap for Device and Driver Installation
-ms.assetid: d6cb6d8c-226f-4b6f-989a-36184236f826
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ To install a device and driver in the Windows operating system, follow these st
 
 -   Step 3: Learn about information (INF) files.
 
-    An INF file contains the information and device settings which the system-provided [device installation components](https://docs.microsoft.com/previous-versions/ff541277(v=vs.85)) use to install your [driver package](driver-packages.md), such as the driver for the device and any device-specific applications.
+    An INF file contains the information and device settings which the system-provided [device installation components](/previous-versions/ff541277(v=vs.85)) use to install your [driver package](driver-packages.md), such as the driver for the device and any device-specific applications.
 
     For more information, see [INF Files](overview-of-inf-files.md).
 
@@ -35,15 +34,15 @@ To install a device and driver in the Windows operating system, follow these st
 
     Your driver package must provide an INF file, the device's driver files, as well as optionally provide additional software components. You may refer to the sample Toaster driver package to determine which components are needed for your driver package.
 
-    For more information about the components of a driver package, see [Creating a Driver Package](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-package).
+    For more information about the components of a driver package, see [Creating a Driver Package](../develop/creating-a-driver-package.md).
 
-    For more information about driver packages, see the [Toaster Sample](https://docs.microsoft.com/windows-hardware/drivers/wdf/sample-kmdf-drivers).
+    For more information about driver packages, see the [Toaster Sample](../wdf/sample-kmdf-drivers.md).
 
 -   Step 5: Test-sign your driver package during development and testing.
 
-    Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign driver packages by using self-signed certificates, such as those the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool generates. This capability allows developers to install and test driver packages in Windows with driver signature verification enabled.
+    Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign driver packages by using self-signed certificates, such as those the [**MakeCert**](../devtest/makecert.md) tool generates. This capability allows developers to install and test driver packages in Windows with driver signature verification enabled.
 
-    For more information, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
+    For more information, see [Signing Drivers during Development and Test](./introduction-to-test-signing.md).
 
 - Step 6: Release-sign your driver package for distribution.
 
@@ -56,13 +55,13 @@ To install a device and driver in the Windows operating system, follow these st
 
     [Driver packages](driver-packages.md) are release-signed through either:
 
-  - A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems).
+  - A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems).
   - A release signature created through a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
     For more information, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
 - Step 7: Distribute your driver package.
 
-    The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the the [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems), you can distribute it through Microsoft Windows Update program. For more information, see [Publishing a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+    The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems), you can distribute it through Microsoft Windows Update program. For more information, see [Publishing a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
 These are the basic steps. Additional steps might be necessary based on the installation needs of your individual device and driver.

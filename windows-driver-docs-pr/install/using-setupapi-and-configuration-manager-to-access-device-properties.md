@@ -1,7 +1,6 @@
 ---
 title: Using SetupAPI and Configuration Manager with Device Properties
 description: Using SetupAPI and Configuration Manager to Access Device Properties
-ms.assetid: ec00d9c0-1355-478b-af48-0b589628e2d5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Windows Server 2003, Windows XP, and Windows 2000 support device property representations that correspond to most of the system-defined device properties that are supported by the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) of Windows Vista and later versions of Windows.
 
-On these earlier versions of Windows, [SetupAPI functions](setupapi.md), [configuration manager functions](https://docs.microsoft.com/previous-versions/ff549713(v=vs.85)), and Windows registry functions can be used to access device properties, as described in the following topics:
+On these earlier versions of Windows, [SetupAPI functions](setupapi.md), [configuration manager functions](/previous-versions/ff549713(v=vs.85)), and Windows registry functions can be used to access device properties, as described in the following topics:
 
 [Accessing Device Instance SPDRP_Xxx Properties](accessing-device-instance-spdrp-xxx-properties.md)
 
@@ -32,10 +31,4 @@ On these earlier versions of Windows, [SetupAPI functions](setupapi.md), [config
 [Accessing Custom Device Properties](accessing-custom-device-properties.md)
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: tb (Trace to Next Branch)
 description: The tb command executes the program until a branch instruction is reached.
-ms.assetid: 28b736f9-69f5-405b-9684-48b4205e7633
 keywords: ["tb (Trace to Next Branch) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,7 +47,6 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 <td align="left"><p><strong>Modes</strong></p></td>
 <td align="left"><p></p>
 <strong>x86-based:</strong> Kernel mode only
-<strong>Itanium-based:</strong> User mode, kernel mode
 <strong>x64-based:</strong> User mode, kernel mode</td>
 </tr>
 <tr class="even">
@@ -57,7 +55,7 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86-based (GenuineIntel processor family 6 and later), Itanium-based, x64-based</p></td>
+<td align="left"><p>x86-based (GenuineIntel processor family 6 and later), x64-based</p></td>
 </tr>
 </tbody>
 </table>

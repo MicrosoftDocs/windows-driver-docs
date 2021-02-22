@@ -1,7 +1,6 @@
 ---
 title: Interpretation of X Channel
 description: Interpretation of X Channel
-ms.assetid: ba039e5a-78ee-43cb-b883-4675b011a29d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , X channel
 - extended format WDK Windows 7 display , X channel

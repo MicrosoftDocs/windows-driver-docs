@@ -1,7 +1,6 @@
 ---
 title: Sleep Tests (Device Fundamentals)
 description: The Device Fundamentals Sleep tests run I/O and PnP operations on the specified devices, before and after, or during system sleep state transitions.
-ms.assetid: 38B65078-B436-4C24-B973-032702DB9CBE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test performs critical sleep state transitions on the system and performs I/O on devices before and after each sleep state cycle.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -42,7 +41,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test performs critical sleep state transitions on the system and performs I/O on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_Sleep_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Critical_Sleep_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -54,7 +53,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <p>For more information, see <a href="#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test" data-raw-source="[About the Sleep and PNP disable and enable with IO Before and After test](#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test)">About the Sleep and PNP disable and enable with IO Before and After test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_PNP_DisableEnable_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_PNP_DisableEnable_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -66,7 +65,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <p>For more information, see <a href="#about-the-sleep-with-io-before-and-after-test" data-raw-source="[About the Sleep with IO Before And After test](#about-the-sleep-with-io-before-and-after-test)">About the Sleep with IO Before And After test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_Io_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -77,7 +76,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -94,13 +93,13 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 This test does the following:
 
 1.  Verifies that the test device and its descendants are not reporting any device problem codes.
-2.  Tests I/O on the test device and its descendants using the WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
+2.  Tests I/O on the test device and its descendants using the WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
 3.  Sends the test system into its first supported sleep state and resumes the system from sleep after some time.
 4.  Verifies that the test device and its descendants are not reporting any device problem codes.
-5.  Tests I/O on the test device and its descendants using the WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
-6.  If the test device is can be disabled, the test disables and enables the test device using WDTF PnP action interfaces, see [**IWDTFPNPAction2::DisableDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-disabledevice) and [**IWDTFPNPAction2::EnableDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-enabledevice) methods for more information.
+5.  Tests I/O on the test device and its descendants using the WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
+6.  If the test device is can be disabled, the test disables and enables the test device using WDTF PnP action interfaces, see [**IWDTFPNPAction2::DisableDevice**](/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-disabledevice) and [**IWDTFPNPAction2::EnableDevice**](/windows-hardware/drivers/ddi/wdtfpnpaction/nf-wdtfpnpaction-iwdtfpnpaction2-enabledevice) methods for more information.
 7.  Verifies that the test device and its descendants are not reporting any device problem codes.
-8.  Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
+8.  Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
 9.  Repeats step 3-8 for each supported sleep state of the test system.
 10. Repeats step 1-9 several times.
 
@@ -110,34 +109,25 @@ This test does the following:
 This test does the following:
 
 1.  Verifies that there are no devices on the system reporting device problem codes.
-2.  Tests I/O on every device on the system using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
+2.  Tests I/O on every device on the system using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
 3.  Sends the test system into its first supported sleep state and resumes the system from sleep after some time.
 4.  Verifies that there are no devices on the system reporting device problem codes.
-5.  Tests I/O on every device on the system using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
+5.  Tests I/O on every device on the system using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
 6.  Repeats steps 3 - 5 for each supported sleep state of the test system.
 7.  Repeats steps 1 - 6 several times.
 
 ## Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)
+[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)
+[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)
-
- 
-
- 
-
-
-
-
-
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
 

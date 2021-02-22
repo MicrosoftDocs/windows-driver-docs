@@ -1,14 +1,11 @@
 ---
 title: IRQL annotations for drivers
 description: When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors.
-ms.assetid: E4C1D490-BE06-483A-90E4-6F3223E269A3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IRQL annotations for drivers
-
-When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors. For example, you can add annotations that specify the maximum IRQL at which a function can be called; if a function is called at a higher IRQL, the code analysis tools can identify the inconsistencies.
 
 All driver developers must consider interrupt request levels (IRQLs). An IRQL is an integer between 0 and 31; PASSIVE\_LEVEL, DISPATCH\_LEVEL, and APC\_LEVEL are normally referred to symbolically, and the others by their numeric values. Raising and lowering the IRQL should follow strict stack discipline. A function should aim to return at the same IRQL at which it was called. The IRQL values must be non-decreasing in the stack. And a function cannot lower the IRQL without first raising it. IRQL annotations are intended to help enforce those rules.
 

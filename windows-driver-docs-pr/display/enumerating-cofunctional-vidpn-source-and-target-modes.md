@@ -1,7 +1,6 @@
 ---
 title: Enumerating Cofunctional VidPN Source and Target Modes
 description: Enumerating Cofunctional VidPN Source and Target Modes
-ms.assetid: f1aa6277-7af6-4ba0-8ff1-d562f7029540
 keywords:
 - video present networks WDK display , enumerate target and source modes
 - VidPN WDK display , enumerate target and source modes
@@ -34,9 +33,9 @@ From time to time, the VidPN manager asks the display miniport driver to enumera
 
 1.  The VidPN manager creates or obtains a VidPN that has modes pinned on some, but not all, of its sources and targets.
 
-2.  The VidPN manager calls [**DxgkDdiIsSupportedVidPn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn) to determine whether the VidPN can be extended to form a functional VidPN that is supported on the display adapter. That is, it asks whether modes can be pinned on the remaining sources and targets without changing the existing pinned modes.
+2.  The VidPN manager calls [**DxgkDdiIsSupportedVidPn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn) to determine whether the VidPN can be extended to form a functional VidPN that is supported on the display adapter. That is, it asks whether modes can be pinned on the remaining sources and targets without changing the existing pinned modes.
 
-3.  The VidPN manager calls [**DxgkDdiEnumVidPnCofuncModality**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality) to obtain the modes that are available on the sources and targets that do not yet have pinned modes.
+3.  The VidPN manager calls [**DxgkDdiEnumVidPnCofuncModality**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality) to obtain the modes that are available on the sources and targets that do not yet have pinned modes.
 
 One of the arguments passed to *DxgkDdiEnumVidPnCofuncModality* is a handle to a VidPN object called the constraining VidPN.
 
@@ -74,13 +73,13 @@ The following properties of the constraining VidPN are the constraints that must
 
 To extract the constraints from the constraining VidPN, perform the following steps:
 
--   Begin by calling the [**pfnGetTopology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_gettopology) function to get a pointer to a [VidPN Topology interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpntopology_interface) that represents the constraining VidPN's topology.
+-   Begin by calling the [**pfnGetTopology**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_gettopology) function to get a pointer to a [VidPN Topology interface](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpntopology_interface) that represents the constraining VidPN's topology.
 
--   Call the [**pfnAcquireFirstPathInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpntopology_acquirefirstpathinfo) and [**pfnAcquireNextPathInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpntopology_acquirenextpathinfo) functions to get information about each path in the constraining VidPN's topology. Information about a particular path (source ID, target ID, scaling transformation, rotation transformation, target color basis, etc.) is contained in a [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path) structure.
+-   Call the [**pfnAcquireFirstPathInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpntopology_acquirefirstpathinfo) and [**pfnAcquireNextPathInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpntopology_acquirenextpathinfo) functions to get information about each path in the constraining VidPN's topology. Information about a particular path (source ID, target ID, scaling transformation, rotation transformation, target color basis, etc.) is contained in a [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path) structure.
 
--   For each path, pass the path's source ID to the [**pfnAcquireSourceModeSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset) function to get the path's source.
+-   For each path, pass the path's source ID to the [**pfnAcquireSourceModeSet**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset) function to get the path's source.
 
--   Call the [**pfnAcquirePinnedModeInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirepinnedmodeinfo) function to determine which mode (if any) is pinned in the source's mode set. If the source's mode set has a pinned mode, there is probably no need to examine the remaining modes in the set. If the mode set does not have a pinned mode, examine the remaining modes in the set by calling [**pfnAcquireFirstModeInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirefirstmodeinfo) and [**pfnAcquireNextModeInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirenextmodeinfo).
+-   Call the [**pfnAcquirePinnedModeInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirepinnedmodeinfo) function to determine which mode (if any) is pinned in the source's mode set. If the source's mode set has a pinned mode, there is probably no need to examine the remaining modes in the set. If the mode set does not have a pinned mode, examine the remaining modes in the set by calling [**pfnAcquireFirstModeInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirefirstmodeinfo) and [**pfnAcquireNextModeInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirenextmodeinfo).
 
     Use a similar procedure to examine the target mode sets and to determine which target mode sets have pinned modes.
 
@@ -90,27 +89,27 @@ As you inspect the mode sets associated with sources and targets in the constrai
 
 For video present targets that have connected monitors, you must also consider the set of modes supported by the monitor. Even if a video present target on the display adapter supports a particular mode (given the constraints), you should only list that mode in the target's mode set if the connected monitor also supports the mode. To determine the modes supported by connected monitor, perform the following steps:
 
--   [DXGK\_MONITOR Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitor_interface)
+-   [DXGK\_MONITOR Interface](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitor_interface)
 
-    Call [**pfnAcquireMonitorSourceModeSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset). If a mode set needs no adjustment, you can leave it alone. If a mode set needs to be adjusted, then you must create a new mode set and replace the existing mode set with the new one.
+    Call [**pfnAcquireMonitorSourceModeSet**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset). If a mode set needs no adjustment, you can leave it alone. If a mode set needs to be adjusted, then you must create a new mode set and replace the existing mode set with the new one.
 
--   [DXGK_VIDPN_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface)
+-   [DXGK_VIDPN_INTERFACE](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface)
 
-    To create and populate a new source mode set, call [**pfnCreateNewSourceModeSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_createnewsourcemodeset).
+    To create and populate a new source mode set, call [**pfnCreateNewSourceModeSet**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_createnewsourcemodeset).
 
--   [_DXGK_VIDPNSOURCEMODESET_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpnsourcemodeset_interface)
+-   [_DXGK_VIDPNSOURCEMODESET_INTERFACE](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpnsourcemodeset_interface)
 
-    Then call [**pfnCreateNewModeInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_createnewmodeinfo) and [**pfnAddMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_addmode).
+    Then call [**pfnCreateNewModeInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_createnewmodeinfo) and [**pfnAddMode**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_addmode).
 
--   [DXGK_VIDPN_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface)
+-   [DXGK_VIDPN_INTERFACE](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface)
 
-    Finally call [**pfnAssignSourceModeSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_assignsourcemodeset) to replace the existing source mode set with the new one.
+    Finally call [**pfnAssignSourceModeSet**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_assignsourcemodeset) to replace the existing source mode set with the new one.
 
 ### Adjusting scaling support flags
 
-For each path in the constraining VidPN's topology, determine whether the path has a pinned scaling transformation. To make that determination, inspect *vpnPath*.**ContentTransformation.Scaling**, where *vpnPath* is the [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path) structure that represents the path. If *vpnPath*.**ContentTransformation.Scaling** is set to **D3DKMDT\_VPPS\_IDENTITY**, **D3DKMDT\_VPPS\_CENTERED**, or **D3DKMDT\_VPPS\_STRETCHED**, then the scaling transformation for the path is pinned. Otherwise, the scaling transformation is not pinned.
+For each path in the constraining VidPN's topology, determine whether the path has a pinned scaling transformation. To make that determination, inspect *vpnPath*.**ContentTransformation.Scaling**, where *vpnPath* is the [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path) structure that represents the path. If *vpnPath*.**ContentTransformation.Scaling** is set to **D3DKMDT\_VPPS\_IDENTITY**, **D3DKMDT\_VPPS\_CENTERED**, or **D3DKMDT\_VPPS\_STRETCHED**, then the scaling transformation for the path is pinned. Otherwise, the scaling transformation is not pinned.
 
-If the path does not have a pinned scaling transformation, determine whether the path's scaling support flags need to be adjusted. The support flags must be adjusted if they show support for a type of scaling that is not cofunctional with the constraints or if they fail to show support for a type of scaling that is cofunctional with the constraints. To alter the scaling support flags, set the members of the [**D3DKMDT\_VIDPN\_PRESENT\_PATH\_SCALING\_SUPPORT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support) structure that holds the flags.
+If the path does not have a pinned scaling transformation, determine whether the path's scaling support flags need to be adjusted. The support flags must be adjusted if they show support for a type of scaling that is not cofunctional with the constraints or if they fail to show support for a type of scaling that is cofunctional with the constraints. To alter the scaling support flags, set the members of the [**D3DKMDT\_VIDPN\_PRESENT\_PATH\_SCALING\_SUPPORT**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support) structure that holds the flags.
 
 ### Adjusting rotation support flags
 
@@ -120,10 +119,10 @@ Adjusting a path's rotation support flags is similar to adjusting a path's scali
 
 If the display adapter has one or more video output codecs that are capable of antialiasing by multisampling, then you must report the multisampling methods that are available (given the constraints), for each source that has a pinned mode. To report the available multisampling methods, perform the following steps:
 
--   Create an array of [D3DDDI\_MULTISAMPLINGMETHOD](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structures
--   Pass the array to the [**pfnAssignMultisamplingMethodSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_assignmultisamplingmethodset) function of the [VidPN interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface).
+-   Create an array of [D3DDDI\_MULTISAMPLINGMETHOD](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structures
+-   Pass the array to the [**pfnAssignMultisamplingMethodSet**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_assignmultisamplingmethodset) function of the [VidPN interface](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface).
 
-The [D3DDDI\_MULTISAMPLINGMETHOD](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structure has two members, which you must set, that characterize a multisampling method. The **NumSamples** member indicates the number of subpixels that are sampled. The **NumQualityLevels** member indicates the number of quality levels at which the method can operate. You can specify any number of quality levels as long as each increase in level noticably improves the quality of the presented image.
+The [D3DDDI\_MULTISAMPLINGMETHOD](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structure has two members, which you must set, that characterize a multisampling method. The **NumSamples** member indicates the number of subpixels that are sampled. The **NumQualityLevels** member indicates the number of quality levels at which the method can operate. You can specify any number of quality levels as long as each increase in level noticably improves the quality of the presented image.
 
 ### <span id="enumeration_pivots"></span><span id="ENUMERATION_PIVOTS"></span>Enumeration Pivots
 
@@ -142,10 +141,4 @@ The enumeration pivot can be one of the following:
 If the enumeration pivot is a mode set, then *DxgkDdkEnumVidPnCofuncModality* must leave that mode set unchanged. If the enumeration pivot is the scaling (rotation) transformation of a path, then *DxgkDdiEnumVidPnCofuncModality* must not change the scaling (rotation) support flags for that path.
 
  
-
- 
-
-
-
-
 

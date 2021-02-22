@@ -1,7 +1,6 @@
 ---
 title: Background tasks and custom triggers
 description: Background tasks and custom triggers
-ms.assetid: 672d3501-da84-495b-b70e-f07de32aff53
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -104,13 +103,7 @@ Creating a background task and registering it for a custom trigger is very simil
     }
     ```
 
-For additional guidance about creating, configuring, and working with background tasks and triggers, see [Quickstart: Create and register a background task](https://docs.microsoft.com/previous-versions/windows/apps/hh977055(v=win.10)).
+For additional guidance about creating, configuring, and working with background tasks and triggers, see [Quickstart: Create and register a background task](/previous-versions/windows/apps/hh977055(v=win.10)).
 
  
-
- 
-
-
-
-
 

@@ -42,6 +42,4 @@ This bugcheck indicates the cryptographic library hit an anomaly which should ne
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Cryptography API: Next Generation](https://docs.microsoft.com/windows/desktop/SecCNG/cng-portal) 
-
-
+[Cryptography API: Next Generation](/windows/desktop/SecCNG/cng-portal)

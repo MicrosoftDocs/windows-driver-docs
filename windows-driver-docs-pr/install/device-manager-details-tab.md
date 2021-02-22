@@ -1,7 +1,6 @@
 ---
 title: Device Manager Details tab
 description: Device Manager Details tab
-ms.assetid: 5f1e345f-72c6-4bd4-a0fa-304e5d0d91be
 keywords:
 - Device Manager WDK , Details tab
 - firmware revision numbers WDK Device Manager
@@ -21,4 +20,4 @@ The details tab is enabled by default. To enable this tab, set the user environm
 
 ## Providing firmware revision numbers for the Details tab
 
-Device Manager's **Details** tab can display a device's firmware revision number, if available. A driver can supply a firmware revision number by responding to a WMI request. Specifically, the driver's [**DpWmiQueryDataBlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine should support **MSDeviceUI_FirmwareRevision_GUID** by returning a DEVICE_UI_FIRMWARE_REVISION structure (defined in Wmidata.h). The structure must contain the firmware revision number as a NULL-terminated WCHAR string, preceded by a USHORT value that contains the string length (including the **NULL**).
+Device Manager's **Details** tab can display a device's firmware revision number, if available. A driver can supply a firmware revision number by responding to a WMI request. Specifically, the driver's [**DpWmiQueryDataBlock**](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine should support **MSDeviceUI_FirmwareRevision_GUID** by returning a DEVICE_UI_FIRMWARE_REVISION structure (defined in Wmidata.h). The structure must contain the firmware revision number as a NULL-terminated WCHAR string, preceded by a USHORT value that contains the string length (including the **NULL**).

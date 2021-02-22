@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_CLOSE
 description: AVCSTRM\_CLOSE
-ms.assetid: 2487ba06-3577-409e-ba82-f9a0d3453c5d
 keywords: ["AVCSTRM_CLOSE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -88,7 +87,7 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 ### <span id="avc_stream_request_block_input"></span><span id="AVC_STREAM_REQUEST_BLOCK_INPUT"></span>AVC\_STREAM\_REQUEST\_BLOCK Input
 
 <span id="SizeOfThisBlock__Version_and_Function"></span><span id="sizeofthisblock__version_and_function"></span><span id="SIZEOFTHISBLOCK__VERSION_AND_FUNCTION"></span>**SizeOfThisBlock, Version and Function**  
-Use the [**INIT\_AVCSTRM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header) macro to initialize these members. Pass **AVCSTRM\_CLOSE** in the Request argument of the macro.
+Use the [**INIT\_AVCSTRM\_HEADER**](/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header) macro to initialize these members. Pass **AVCSTRM\_CLOSE** in the Request argument of the macro.
 
 <span id="AVCStreamContext"></span><span id="avcstreamcontext"></span><span id="AVCSTREAMCONTEXT"></span>**AVCStreamContext**  
 Specifies the stream context (handle) of the stream to close. If **AVCSTRM\_CLOSE** returns successfully, this value is no longer valid.
@@ -110,9 +109,9 @@ The following is an example of how to specify the stream to close:
             );
 ```
 
-A subunit driver must first allocate an IRP and an [**AVC\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block) structure. Next, it should use the [**INIT\_AVCSTRM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header) macro to initialize the AVC\_STREAM\_REQUEST\_BLOCK structure, passing **AVCSTRM\_CLOSE** as the Request argument to the macro. Next, the subunit driver sets the **AVCStreamContext** member to the stream to close.
+A subunit driver must first allocate an IRP and an [**AVC\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block) structure. Next, it should use the [**INIT\_AVCSTRM\_HEADER**](/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header) macro to initialize the AVC\_STREAM\_REQUEST\_BLOCK structure, passing **AVCSTRM\_CLOSE** as the Request argument to the macro. Next, the subunit driver sets the **AVCStreamContext** member to the stream to close.
 
-To send this request, a subunit submits an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) IRP with the **IoControlCode** member of the IRP set to [**IOCTL\_AVCSTRM\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/ni-avcstrm-ioctl_avcstrm_class) and the **Argument1** member of the IRP set to the AVC\_STREAM\_REQUEST\_BLOCK structure that describes the close operation to take place.
+To send this request, a subunit submits an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md) IRP with the **IoControlCode** member of the IRP set to [**IOCTL\_AVCSTRM\_CLASS**](/windows-hardware/drivers/ddi/avcstrm/ni-avcstrm-ioctl_avcstrm_class) and the **Argument1** member of the IRP set to the AVC\_STREAM\_REQUEST\_BLOCK structure that describes the close operation to take place.
 
 A subunit driver can expect this command to complete synchronously. The result returns immediately without pending operation in *avcstrm.sys*.
 
@@ -120,13 +119,7 @@ This function code must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block), [**INIT\_AVCSTRM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control), [**IOCTL\_AVCSTRM\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/ni-avcstrm-ioctl_avcstrm_class), [**AVCSTRM\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/ne-avcstrm-_avcstrm_function)
+[**AVC\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block), [**INIT\_AVCSTRM\_HEADER**](/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md), [**IOCTL\_AVCSTRM\_CLASS**](/windows-hardware/drivers/ddi/avcstrm/ni-avcstrm-ioctl_avcstrm_class), [**AVCSTRM\_FUNCTION**](/windows-hardware/drivers/ddi/avcstrm/ne-avcstrm-_avcstrm_function)
 
  
-
- 
-
-
-
-
 

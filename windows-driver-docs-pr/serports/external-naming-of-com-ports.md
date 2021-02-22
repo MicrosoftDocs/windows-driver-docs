@@ -1,7 +1,6 @@
 ---
 title: External Naming of COM Ports
 description: External Naming of COM Ports
-ms.assetid: d517bc73-9687-45f8-a5f8-837ffe868fae
 keywords:
 - Serial driver WDK , COM ports
 - COM ports WDK serial devices

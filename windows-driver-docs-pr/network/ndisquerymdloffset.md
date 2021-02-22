@@ -1,7 +1,6 @@
 ---
 title: NdisQueryMdlOffset macro
 description: The NdisQueryMdlOffset macro retrieves the offset within a physical page at which a given MDL buffer begins and the length of the buffer.
-ms.assetid: d6f23e9c-5015-4087-b7a2-badee00bdafa
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdlOffset macro Network Drivers Starting with Windows Vista
@@ -44,7 +43,7 @@ None
 Remarks
 -------
 
-The **NdisQueryMdlOffset** macro provides an MDL-based version of the [**NdisQueryBufferOffset**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff554411(v=vs.85)) function.
+The **NdisQueryMdlOffset** macro provides an MDL-based version of the [**NdisQueryBufferOffset**](/previous-versions/windows/hardware/network/ff554411(v=vs.85)) function.
 
 Requirements
 ------------
@@ -73,7 +72,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function)"><strong>Irql_NetBuffer_Function</strong></a></td>
+<td><a href="/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](../devtest/ndis-irql-netbuffer-function.md)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -81,12 +80,5 @@ Requirements
 ## See also
 
 
-[**NdisQueryBufferOffset**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff554411(v=vs.85))
-
- 
-
- 
-
-
-
+[**NdisQueryBufferOffset**](/previous-versions/windows/hardware/network/ff554411(v=vs.85))
 

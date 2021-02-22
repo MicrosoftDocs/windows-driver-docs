@@ -1,7 +1,6 @@
 ---
 title: INF DelFiles Directive
 description: A DelFiles directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted.
-ms.assetid: e163f88f-e0ab-41e7-97df-49853ec0836f
 keywords:
 - INF DelFiles Directive Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 A **DelFiles** directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted in the context of operations on the section in which the referring **DelFiles** directive is specified.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -45,7 +44,7 @@ A **DelFiles** directive can be specified within any of the sections shown in th
 
 Each named section referenced by a **DelFiles** directive has one or more entries of the following form:
 
-```ini
+```inf
 [file-list-section]
  
 destination-file-name[,,,flag]
@@ -97,7 +96,7 @@ Examples
 
 This example shows how the [**DestinationDirs**](inf-destinationdirs-section.md) section specifies the path for a delete-file operation that occurs in processing a simple device-driver INF.
 
-```ini
+```inf
 [DestinationDirs]
 DefaultDestDir = 12  ; DIRID_DRIVERS 
 

@@ -1,7 +1,6 @@
 ---
 title: Nmake2MsBuild
 description: The Nmake2MsBuild utility generates a Visual Studio project for a driver that was built using a previous version of the WDK from your driver's source code files, and from the sources, dirs, and makefile.inc files.
-ms.assetid: D6E1C124-9A5F-486B-865E-45A0BC58A5A3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -107,14 +106,4 @@ nmake2msbuild.exe  .\myDriver\sources
 
 [Converting a WDK sources file to a Visual Studio project](converting-a-wdk-sources-file-to-a-visual-studio-project.md)
 
-[Creating a Driver From Existing Source Files](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-from-existing-source-files)
-
-
-
-
-
-
-
-
-
-
+[Creating a Driver From Existing Source Files](../develop/creating-a-driver-from-existing-source-files.md)

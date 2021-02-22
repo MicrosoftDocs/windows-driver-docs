@@ -1,7 +1,6 @@
 ---
 title: Implementing Finish-Install Actions
 description: Implementing Finish-Install Actions
-ms.assetid: accdf2f5-f324-41dc-afc1-18e03b422fcc
 keywords:
 - finish-install actions WDK device installations
 - actions WDK finish-install
@@ -18,11 +17,11 @@ ms.localizationpriority: medium
 
 To implement finish-install actions, an installer:
 
-1.  Sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag when the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-newdevicewizard-finishinstall) DIF code and returns one of the following error codes:
+1.  Sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag when the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](./dif-newdevicewizard-finishinstall.md) DIF code and returns one of the following error codes:
     -   ERROR_DI_DO_DEFAULT if it is a class installer without finish-install wizard pages.
     -   NO_ERROR if it is a class installer with finish-install wizard pages or a co-installer with or without finish-install wizard pages.
 
-2.  Performs the finish-install actions when it processes a [**DIF_FINISHINSTALL_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-finishinstall-action) request.
+2.  Performs the finish-install actions when it processes a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request.
 
     An installer returns one of the error codes in the following table.
 
@@ -68,12 +67,3 @@ For information about how to develop finish-install actions, see [Guidelines for
 [Code Example: Finish-Install Actions in a Class Installer](code-example--finish-install-actions-in-a-class-installer.md)
 
 [Code Example: Finish-Install Actions in a Co-installer](code-example--finish-install-actions-in-a-co-installer.md)
-
-
-
-
-
-
-
-
-

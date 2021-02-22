@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.WMI Section
 description: An INF DDInstall.WMI section contains one or more WMIInterface directives that specify characteristics for each WMI class that the driver provides.
-ms.assetid: 8c4f6b2b-c2b4-4579-9dce-4436e041ebbc
 keywords:
 - INF DDInstall.WMI Section Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 An INF *DDInstall*.**WMI** section contains one or more **WMIInterface** directives that specify characteristics for each WMI class that the driver provides.
 
-```ini
+```inf
 [install-section-name.WMI] |
 [install-section-name.nt.WMI] | 
 [install-section-name.ntx86.WMI] |
@@ -69,7 +68,7 @@ Examples
 
 The following example shows a single <em>DDInstall</em>**.WMI** section that contains two **WMIInterface** directives. Each directive identifies a WMI class and specifies a *WMI-class-section* for the class.
 
-```ini
+```inf
 [InstallA.NT.WMI]
 WMIInterface = {99999999-4cf9-11d2-ba4a-00a0c9062910},,WMISecurity1
 WMIInterface = {99999998-4cf9-11d2-ba4a-00a0c9062910},1,WMISecurity2

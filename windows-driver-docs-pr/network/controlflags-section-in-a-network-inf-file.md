@@ -1,7 +1,6 @@
 ---
 title: ControlFlags Section in a Network INF File
 description: ControlFlags Section in a Network INF File
-ms.assetid: 384e56e3-8a64-4b47-ae9c-e9973733c7e7
 keywords:
 - INF files WDK network , ControlFlags section
 - network INF files WDK , ControlFlags section
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-A **ControlFlags** section in a network INF file is based on the generic [**INF ControlFlags section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section).
+A **ControlFlags** section in a network INF file is based on the generic [**INF ControlFlags section**](../install/inf-controlflags-section.md).
 
 The **ControlFlags** section in a network INF file typically has one or more **ExcludeFromSelect** entries. Each **ExcludeFromSelect** entry specifies a network component that will not be displayed to the end user as an option during a manual installation.
 
@@ -31,10 +30,4 @@ Adapters that are not compatible with Plug and Play must be added manually by th
 An **ExcludeFromSelect** entry prevents an adapter or software component from being listed in the **Select Component for Installation** dialog box. The adapter or component, however, can still be listed in the **Connections** dialog box. The NCF\_HIDDEN value prevents the adapter or component from being displayed in any part of the user interface, including the **Connections** dialog box.
 
  
-
- 
-
-
-
-
 

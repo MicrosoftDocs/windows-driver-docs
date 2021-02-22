@@ -1,7 +1,6 @@
 ---
 title: SetPresharedKeyForId
 description: SetPresharedKeyForId
-ms.assetid: d966fd05-31ac-4774-b970-e4ce3d02a5ba
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -17,15 +16,9 @@ After the **SetPresharedKeyForId** method specifies the preshared key, the initi
 
 A management application can use the **SetPresharedKeyForId** method to associate a preshared key with a particular initiator identifier. To associate a default key with all of an initiator's identifiers, the application can call the [SetGroupPresharedKey](setgrouppresharedkey.md) method. If an explicit association exists between an identifier and a key, the key that the explicit association specifies takes precedence over the default key.
 
-**SetPresharedKeyForId** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetPresharedKeyForId** method, see the member descriptions for the [**SetPresharedKeyForId\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setpresharedkeyforid_in) and [**SetPresharedKeyForId\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setpresharedkeyforid_out) structures.
+**SetPresharedKeyForId** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetPresharedKeyForId** method, see the member descriptions for the [**SetPresharedKeyForId\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setpresharedkeyforid_in) and [**SetPresharedKeyForId\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setpresharedkeyforid_out) structures.
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetPresharedKeyForId**.
 
  
-
- 
-
-
-
-
 

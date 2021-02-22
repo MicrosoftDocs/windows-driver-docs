@@ -1,7 +1,6 @@
 ---
 title: Getting Error Injection Capabilities
 description: Getting Error Injection Capabilities
-ms.assetid: d4ff0d9c-bb17-4dff-8008-bf8d59e44621
 keywords:
 - error injection capabilities WDK WHEA
 - retrieving error injection capabilities WDK WHEA
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Getting Error Injection Capabilities
 
 
-A user-mode application can get information about the error injection capabilities of the hardware platform by calling the [**WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_INJECTION\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_injection_capabilities) structure that describes the error injection capabilities that are supported by the hardware platform.
+A user-mode application can get information about the error injection capabilities of the hardware platform by calling the [**WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn**](/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_INJECTION\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_injection_capabilities) structure that describes the error injection capabilities that are supported by the hardware platform.
 
 The following code example shows how to retrieve the error injection capabilities information.
 
@@ -87,9 +86,4 @@ pOutParameters->Release();
 ```
 
  
-
- 
-
-
-
 

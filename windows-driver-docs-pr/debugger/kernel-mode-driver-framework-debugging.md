@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode Driver Framework Debugging
 description: Kernel-Mode Driver Framework Debugging
-ms.assetid: bec840f8-b500-464f-8e49-53f03f34aa6a
 keywords: ["Kernel-Mode Driver Framework debugging", "Windows Driver Foundation"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

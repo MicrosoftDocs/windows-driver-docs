@@ -1,7 +1,6 @@
 ---
 title: eHS_UNLOAD_REASON enumeration
 description: The eHS_UNLOAD_REASON enumeration indicates the reason for the plugin to get unloaded.
-ms.assetid: 1e658dd3-f66d-4803-ad3c-84bfa1890a86
 keywords: 
 - eHS_UNLOAD_REASON enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # eHS\_UNLOAD\_REASON enumeration
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **eHS\_UNLOAD\_REASON** enumeration indicates the reason for the plugin to get unloaded.

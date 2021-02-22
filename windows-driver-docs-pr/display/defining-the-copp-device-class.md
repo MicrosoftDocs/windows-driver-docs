@@ -1,7 +1,6 @@
 ---
 title: Defining the COPP Device Class
 description: Defining the COPP Device Class
-ms.assetid: eb5e7269-fe4c-44d1-9024-f5b1a180e10b
 keywords:
 - copy protection WDK COPP , COPP device
 - video copy protection WDK COPP , COPP device

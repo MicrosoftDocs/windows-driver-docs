@@ -1,7 +1,6 @@
 ---
 title: Read Typed Data (Function Index 29)
 description: This function reads a 32-byte block inside a typed block data region.
-ms.assetid: 67B13EBA-F751-4E85-9143-1C331C405B85
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function reads a 32-byte block inside a typed block data region. This functionality enables scenarios that require the use of vendor-specific registers. It is also used for debugging.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

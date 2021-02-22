@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_DISK
 description: GUID_DEVINTERFACE_DISK
-ms.assetid: 47782789-4504-4705-8c32-4d2bc508a7e2
 keywords: ["GUID_DEVINTERFACE_DISK Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_DISK
 
 
-The GUID_DEVINTERFACE_DISK [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for hard disk [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index).
+The GUID_DEVINTERFACE_DISK [device interface class](./overview-of-device-interface-classes.md) is defined for hard disk [storage devices](../storage/index.md).
 
 <table>
 <colgroup>
@@ -50,9 +49,9 @@ Remarks
 
 The system-supplied storage class drivers register an instance of GUID_DEVINTERFACE_DISK for a hard disk storage device.
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](https://go.microsoft.com/fwlink/p/?linkid=256103) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The disk class driver sample uses the obsolete identifier [**DiskClassGuid**](diskclassguid.md) to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of GUID_DEVINTERFACE_DISK device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The disk class driver sample uses the obsolete identifier [**DiskClassGuid**](diskclassguid.md) to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of GUID_DEVINTERFACE_DISK device interface class.
 
-For information about storage drivers, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
 Requirements
 ------------
@@ -74,13 +73,4 @@ Requirements
 
 
 [**DiskClassGuid**](diskclassguid.md)
-
- 
-
- 
-
-
-
-
-
 

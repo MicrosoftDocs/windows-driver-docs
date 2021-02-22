@@ -1,7 +1,6 @@
 ---
 title: D3DTRANSFORMSTATE Changes
 description: D3DTRANSFORMSTATE Changes
-ms.assetid: 30d895d5-c9c3-4994-a77b-ee9eeec6d8d8
 keywords:
 - multimatrix vertex blending WDK Direct3D , D3DTRANSFORMSTATE
 - D3DTRANSFORMSTATE

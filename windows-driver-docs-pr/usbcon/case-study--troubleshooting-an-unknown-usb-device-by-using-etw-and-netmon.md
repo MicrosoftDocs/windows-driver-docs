@@ -1,5 +1,5 @@
 ---
-Description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
+description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ For this example, we plugged in a device and it appeared as an unknown device in
 
 ## About the Unknown Device Problem
 
-To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://go.microsoft.com/fwlink/p/?linkid=617517)
+To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/how-does-usb-stack-enumerate-a-device/ba-p/270685)
 
 Typically when the USB driver stack fails to enumerate a device, the hub driver still reports the arrival of the device to Windows and the USB device is marked as an unknown device in Device Manager. The device has a Device ID of USB\\VID\_0000&PID\_0000 and a Hardware ID and Compatible ID of USB\\UNKNOWN. The following events cause the USB hub driver to enumerate a USB device as an unknown device:
 
@@ -24,9 +24,9 @@ Typically when the USB driver stack fails to enumerate a device, the hub driver 
 * The request for the Configuration Descriptor failed.
 * The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
 
-In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](https://go.microsoft.com/fwlink/p/?linkid=617523) in Device Manager.
+In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725873(v=ws.10)?redirectedfrom=MSDN) in Device Manager.
 
-If a device is marked with failure [Code 28](https://go.microsoft.com/fwlink/p/?linkid=617525) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
+If a device is marked with failure [Code 28](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731268(v=ws.10)) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
 
 ## Starting the Event Trace Analysis
 
@@ -37,7 +37,7 @@ Because this is a device failure, we recommend that you use Netmon with the USB 
 1. Run Netmon, click **File -&gt; Open -&gt; Capture**, and then select the file.
 2. Select the first event in the **Frame Summary** pane, which has the description SystemTrace. This image shows what the screen looks like when you select the first event.
 
-    ![microsoft network monitor](images/devicefailure-etl.png)
+    ![Screenshot that shows "Microsoft Network Monitor" window after selecting the first event.](images/devicefailure-etl.png)
 
 3. To customize the columns that Netmon displays, right-click a column name and select **Choose Columns**.
 4. The first event, which is identified as type **SystemTrace**, contains general information about the log. You can expand the information tree in the **Frame Details** pane to see information such as the number of events lost and the trace start time.
@@ -52,7 +52,7 @@ How can you identify the end of the summary events? If there is a significant br
 
 In this example, the device of interest was not connected to the system when we started the trace, so you can skip the device summary events for now.
 
-![microsoft network monitor](images/devicefailure-etl1.png)
+![Screenshot that shows a device of interest selected in the "Frame Summary" that was not connected when the trace was started.](images/devicefailure-etl1.png)
 
 ## Event Description and Data Payload
 
@@ -72,11 +72,11 @@ Event payload (Data logged at the time of the event)
 
 Expand the payload data for the USB Hub Wait Wake IRP Completed event, and you will see an ETW structure that is named fid\_USBHUB\_Hub. The name of the structure has the following components:
 
-|Term|Description|
-|----|----|
-|**fid_**|A typical prefix for a USB ETW structure.|
-|**USBHUB_**|An indication that the USB hub driver logged the event.|
-|**The rest of the string**|The name of the object that the structure's data describes. For this event, it is a Hub object.|
+| Term | Description |
+| ---- | ---- |
+| **fid_** |A typical prefix for a USB ETW structure. |
+| **USBHUB_** |An indication that the USB hub driver logged the event. |
+| **The rest of the string** |The name of the object that the structure's data describes. For this event, it is a Hub object. |
 
 The USB hub driver uses the **fid\_USBHUB\_Hub** structure to describe a USB hub. Events that have this hub structure in their data payload refer to a hub, and we can identify the specific hub by using the contents of the structure. Figure 4 shows the Frame Details pane, with the **fid\_USBHUB\_Hub** structure expanded to show its fields.
 
@@ -84,19 +84,19 @@ The USB hub driver uses the **fid\_USBHUB\_Hub** structure to describe a USB hub
 
 The hub structure is very similar to two other structures that commonly appear in USB ETW events:**fid\_USBHUB\_Device** and **fid\_USBPORT\_Device**. The following important fields are common to all three structures:
 
-|Field|Description|
-|----|----|
-|**fid_idVendor**|The USB Vendor ID (VID) of the device|
-|**fid_idProduct**|The USB Product ID (PID) of the device|
-|**fid_PortPath**|The list of one-based hub port numbers through which a USB device is attached. The number of port numbers in the list is contained in the **PortPathDepth** field. For the root hub devices, this list is all zeros. For a USB device that is connected directly to a root hub port, the value in PortPath\[0\] is the root hub port number of the port to which the device is attached.|
+| Field | Description |
+| ---- | ---- |
+| **fid_idVendor** |The USB Vendor ID (VID) of the device|
+| **fid_idProduct** |The USB Product ID (PID) of the device|
+| **fid_PortPath** |The list of one-based hub port numbers through which a USB device is attached. The number of port numbers in the list is contained in the **PortPathDepth** field. For the root hub devices, this list is all zeros. For a USB device that is connected directly to a root hub port, the value in PortPath\[0\] is the root hub port number of the port to which the device is attached.|
 
 For a USB device that is connected through one or more additional USB hubs, the list of hub port numbers starts with the root hub port and continues with the additional hubs (in the order of distance from the root hub). Ignore any zeros. For example:
 
-| Sample Value|Description|
-|----|----|
-|[0, 0, 0, 0, 0, 0]|The event refers to a root hub (a port on the PC, directly controlled by a USB host controller).|
-|[3, 0, 0, 0, 0, 0]|The event refers to a hub or a device that is plugged into a root hub's port number 3.|
-|[3, 1, 0, 0, 0, 0]|A hub is plugged into a root hub's port 3. The event refers to a hub or a device that is plugged into this external hub's port 1.|
+| Sample Value | Description |
+| ---- | ---- |
+| [0, 0, 0, 0, 0, 0] | The event refers to a root hub (a port on the PC, directly controlled by a USB host controller). |
+| [3, 0, 0, 0, 0, 0] | The event refers to a hub or a device that is plugged into a root hub's port number 3. |
+| [3, 1, 0, 0, 0, 0] | A hub is plugged into a root hub's port 3. The event refers to a hub or a device that is plugged into this external hub's port 1. |
 
 You should monitor the port paths of any devices of interest. When a device is being enumerated, the VID and PID are unknown and logged as 0. The VID and PID do not appear during some low-level device requests such as reset and suspend. These requests are sent to the hub that the device is plugged into.
 
@@ -112,16 +112,16 @@ To activate the USB error filter in Netmon, click **Filter -> Display Filter -> 
 
 The USB error filter narrows the list of events to only those that meet the criteria shown in the following table.
 
-|Filter text|Description|
-|-----|----|
-|(USBPort_MicrosoftWindowsUSBUSBPORT AND NetEvent.Header.Descriptor.Opcode == 34)|USB port events that have opcode 34 are port errors.|
-|(USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Opcode == 11)|USB hub events that have opcode 11 are hub errors.|
-|(NetEvent.Header.Descriptor.Level == 0x2)|Events that have level 0x2 are usually errors.|
-|(USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210)| USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes).|
+| Filter text | Description |
+| --- | --- |
+| (USBPort_MicrosoftWindowsUSBUSBPORT AND NetEvent.Header.Descriptor.Opcode == 34) | USB port events that have opcode 34 are port errors. |
+| (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Opcode == 11) | USB hub events that have opcode 11 are hub errors. |
+| (NetEvent.Header.Descriptor.Level == 0x2) | Events that have level 0x2 are usually errors. |
+| (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210) | USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). |
 
 This image shows the smaller set of events that appear in the **Frame Summary** pane after we applied the USB error filter to our sample trace log.
 
-![microsoft network monitor](images/devicefailure-etl2.png)
+![Screenshot that shows a set of events in the "Frame Summary" pane after the USB error filter was applied.](images/devicefailure-etl2.png)
 
 To see an overview of the sequence of errors, you can briefly view each error event. Important fields to observe include **fid\_NtStatus**, **fid\_UsbdStatus**, and **fid\_DebugText**. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). To turn off a filter, click the **Remove** button in the **Display Filter** pane.
 
@@ -140,10 +140,10 @@ In our unknown device example, most of the USB hub exceptions have a **fid_Debug
 
 USB error events, and other events, have status values in their data that provide valuable information about the problem. You can find information on status values by using the resources in the following table.
 
-|Status type|Resource|
-|----|----|
-|**fid_NtStatus**|See [NTSTATUS values](https://go.microsoft.com/fwlink/p/?linkid=617532).|
-|The status field of a USB request block (URB) or **fid_UsbdStatus**|Look up the value as a USBD_STATUS in inc\api\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)). This topic lists the symbolic names and the meanings of the USBD\_STATUS values.|
+| Status type | Resource |
+| --- | --- |
+| **fid_NtStatus** | See [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). |
+| The status field of a USB request block (URB) or **fid_UsbdStatus** | Look up the value as a USBD_STATUS in inc\api\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)). This topic lists the symbolic names and the meanings of the USBD\_STATUS values. |
 
 ## Reading Backwards from Problem Events
 
@@ -193,4 +193,4 @@ For USB enumeration to continue, the device should have responded to this reques
 ## Related topics
 
 [Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

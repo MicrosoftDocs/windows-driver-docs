@@ -1,7 +1,6 @@
 ---
 title: Opening and Closing a Port
 description: Opening and Closing a Port
-ms.assetid: 8bfdb3af-51d4-4252-ae1c-7910f973f5f6
 keywords:
 - print monitors WDK , port management
 - port management WDK print , opening ports
@@ -23,9 +22,9 @@ ms.localizationpriority: medium
 
 
 
-After a port has been added, as described in [Adding a Port](adding-a-port.md), the spooler can open it by calling the appropriate language monitor's [**OpenPortEx**](https://docs.microsoft.com/previous-versions/ff559596(v=vs.85)) function.
+After a port has been added, as described in [Adding a Port](adding-a-port.md), the spooler can open it by calling the appropriate language monitor's [**OpenPortEx**](/previous-versions/ff559596(v=vs.85)) function.
 
-The language monitor uses the **OpenPortEx** function to create and return a port handle. Typically, a language monitor calls its associated port monitor's [**OpenPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-openport) function, and the language monitor just returns the handle obtained from the port monitor's **OpenPort**.
+The language monitor uses the **OpenPortEx** function to create and return a port handle. Typically, a language monitor calls its associated port monitor's [**OpenPort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-openport) function, and the language monitor just returns the handle obtained from the port monitor's **OpenPort**.
 
 If a language monitor is not associated with a port, the spooler calls the port monitor's **OpenPort** function directly.
 
@@ -33,14 +32,9 @@ The spooler does not allow more than one path to a port to be enabled at one tim
 
 After a port has been opened, the spooler can call additional functions to print a job, as described in [Printing a Print Job](printing-a-print-job.md), using the port handle as an input argument. A monitor should be written so that, after a port has been opened, the spooler can send multiple print jobs before closing the port.
 
-The spooler closes a port if a job must be sent through a different language monitor, if no print queues are associated with a port, or when the system shuts down. To close a port, the spooler calls a language monitor's [**ClosePort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-closeport) function. The function invalidates the handle that was created when the port was opened. A language monitor typically calls the **ClosePort** function defined by its associated port monitor.
+The spooler closes a port if a job must be sent through a different language monitor, if no print queues are associated with a port, or when the system shuts down. To close a port, the spooler calls a language monitor's [**ClosePort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-closeport) function. The function invalidates the handle that was created when the port was opened. A language monitor typically calls the **ClosePort** function defined by its associated port monitor.
 
 If a language monitor is not associated with a port, the spooler calls the port monitor's **ClosePort** function directly.
 
  
-
- 
-
-
-
 

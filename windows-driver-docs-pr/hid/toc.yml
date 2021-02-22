@@ -148,13 +148,9 @@
       items: 
       - name: "Joystick Support Overview"
         href: joystick-support.md
-      - name: "Joystick Driver Model"
-        href: joystick-driver-model.md
-      - name: "Minidriver-Supplied Callbacks"
-        href: minidriver-supplied-callbacks.md
-      - name: " Original Interface"
+      - name: "Original Interface"
         href: original-interface.md
-      - name: " DirectX 5.0 Interface"
+      - name: "DirectX 5.0 Interface"
         href: directx-5-0-interface.md
       - name: "Creating an INF File"
         href: creating-an-inf-file.md
@@ -168,5 +164,3 @@
       href: force-feedback-device-driver-interface.md
     - name: "Extending the DirectInput Game Controller Control Panel"
       href: extending-the-directinput-game-controller-control-panel.md
-- name: "Hdpi.h Macros"
-  href: hdpi-h-macros.md

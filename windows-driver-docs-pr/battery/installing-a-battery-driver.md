@@ -1,7 +1,6 @@
 ---
 title: Installing a Battery Driver
 description: Installing a Battery Driver
-ms.assetid: 09db4d88-0cac-4171-8d05-d15a2cf4dab4
 keywords:
 - battery miniclass drivers WDK , installing
 - battery class drivers WDK , installing
@@ -17,13 +16,13 @@ ms.localizationpriority: medium
 
 A battery driver's INF file specifies information about the driver and the devices it controls. All battery devices are members of the Battery class and the battery class installer installs the driver.
 
-This section describes battery-specific entries in the INF file. For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+This section describes battery-specific entries in the INF file. For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md).
 
 A battery driver's INF file includes the sections described below.
 
 ### <span id="Version"></span><span id="version"></span><span id="VERSION"></span>Version
 
-A battery driver's INF file specifies the Battery class and its GUID, using the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section), as shown in the following example:
+A battery driver's INF file specifies the Battery class and its GUID, using the [**INF Version section**](../install/inf-version-section.md), as shown in the following example:
 
 ``` syntax
 [Version]
@@ -33,11 +32,11 @@ ClassGuid={72631e54-78a4-11d0-bcf7-00aa00b7b32a}
 Provider=%MyCo%
 ```
 
-Note that %MyCo% must be defined in an [**INF Strings section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section) (not shown).
+Note that %MyCo% must be defined in an [**INF Strings section**](../install/inf-strings-section.md) (not shown).
 
 ### <span id="DestinationDirs"></span><span id="destinationdirs"></span><span id="DESTINATIONDIRS"></span>DestinationDirs
 
-In the [**INF DestinationDirs section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section), a battery driver's INF specifies the Drivers directory (12) as the default for all files.
+In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), a battery driver's INF specifies the Drivers directory (12) as the default for all files.
 
 ``` syntax
 [DestinationDirs]
@@ -46,7 +45,7 @@ DefaultDestDir = 12
 
 ### <span id="Manufacturer"></span><span id="manufacturer"></span><span id="MANUFACTURER"></span>Manufacturer
 
-The [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) defines the manufacturer of the device.
+The [**INF Manufacturer section**](../install/inf-manufacturer-section.md) defines the manufacturer of the device.
 
 ``` syntax
 [Manufacturer]
@@ -55,7 +54,7 @@ The [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/d
 
 ### <span id="Models"></span><span id="models"></span><span id="MODELS"></span>*Models*
 
-The [**INF *Models* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section) specifies the PnP hardware ID of the battery (shown as *pnpid* in the example). If the device is enumerated through ACPI, this section must also specify the EISA-style ID (shown as *acpidevnum*). For information about creating these IDs, see the *Advanced Configuration and Power Interface Specification*, which is available through the [ACPI / Power Management](https://uefi.org/acpi/specs) website.
+The [**INF *Models* section**](../install/inf-models-section.md) specifies the PnP hardware ID of the battery (shown as *pnpid* in the example). If the device is enumerated through ACPI, this section must also specify the EISA-style ID (shown as *acpidevnum*). For information about creating these IDs, see the *Advanced Configuration and Power Interface Specification*, which is available through the [ACPI / Power Management](https://uefi.org/acpi/specs) website.
 
 ``` syntax
 [MyCompany]
@@ -65,7 +64,7 @@ The [**INF *Models* section**](https://docs.microsoft.com/windows-hardware/drive
 
 ### <span id="DDInstall"></span><span id="ddinstall"></span><span id="DDINSTALL"></span>*DDInstall*
 
-In the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) (named NewBatt\_Inst in the example), an [**INF CopyFiles directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) copies the battery class driver (*Battc.sys*) and the new miniclass driver (*NewBatt.sys*) to the destination specified in the **DestinationDirs** directive.
+In the [**INF *DDInstall* section**](../install/inf-ddinstall-section.md) (named NewBatt\_Inst in the example), an [**INF CopyFiles directive**](../install/inf-copyfiles-directive.md) copies the battery class driver (*Battc.sys*) and the new miniclass driver (*NewBatt.sys*) to the destination specified in the **DestinationDirs** directive.
 
 ``` syntax
 [NewBatt_Inst]
@@ -75,7 +74,7 @@ CopyFiles = @battc.sys
 
 ### <span id="DDInstall.Services"></span><span id="ddinstall.services"></span><span id="DDINSTALL.SERVICES"></span>*DDInstall*.Services
 
-The [**INF *DDInstall*.Services section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-services-section) includes an [**INF AddService directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) that specifies additional information about the battery driver. A battery driver's INF file should indicate that the driver is a kernel driver that uses normal error handling and starts during initialization of the operating system. Battery drivers specify the load order group Extended Base.
+The [**INF *DDInstall*.Services section**](../install/inf-ddinstall-services-section.md) includes an [**INF AddService directive**](../install/inf-addservice-directive.md) that specifies additional information about the battery driver. A battery driver's INF file should indicate that the driver is a kernel driver that uses normal error handling and starts during initialization of the operating system. Battery drivers specify the load order group Extended Base.
 
 ``` syntax
 [NewBatt_Inst.Services]
@@ -88,11 +87,4 @@ StartType      = 3 ;    SERVICE_DEMAND_START
 ErrorControl   = 1 ;    SERVICE_ERROR_NORMAL%
 ServiceBinary  = %12%\NewBatt.sys
 ```
-
- 
-
- 
-
-
-
 

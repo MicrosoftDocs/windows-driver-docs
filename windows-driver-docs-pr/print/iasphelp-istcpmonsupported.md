@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 79ec0584-183d-476d-aca2-e85479248091
 keywords: ["get_IsTCPMonSupported method Print Devices", "get_IsTCPMonSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsTCPMonSupported method"]
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 # Iasphelp::get\_IsTCPMonSupported method
 
-The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) is being used with a printer.
+The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](./port-monitors.md) is being used with a printer.
 
 Syntax
 ------

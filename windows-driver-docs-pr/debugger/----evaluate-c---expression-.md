@@ -1,7 +1,6 @@
 ---
 title: (Evaluate C++ Expression)
 description: The double question mark ( ) command evaluates and displays the value of an expression according to C++ expression rules.
-ms.assetid: 3a15a0a3-03d0-4807-a6df-054de819c0a0
 keywords: ["(Evaluate C++ Expression) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

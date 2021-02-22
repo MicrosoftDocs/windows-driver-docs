@@ -1,7 +1,6 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver overview
 description: Use this guide to learn how to implement the DeviceIoControl APIs with the Global Navigation Satellite System (GNSS) driver so that a HLOS like the GNSS adapter can access GNSS functionality.
-ms.assetid: 1887097A-C495-4295-9904-B2964F46A81D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

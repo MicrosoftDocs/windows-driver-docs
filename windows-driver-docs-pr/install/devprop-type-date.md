@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DATE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DATE property type represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed value that specifies the number of days since December 31, 1899.
-ms.assetid: 0314e7da-d1da-4989-b2cd-90a51c3c8938
 keywords: ["DEVPROP_TYPE_DATE Device and Driver Installation"]
 topic_type:
 - apiref

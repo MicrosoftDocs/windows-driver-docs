@@ -1,7 +1,6 @@
 ---
 title: OID_WAN_CO_GET_INFO
 description: The OID_WAN_CO_GET_INFO OID requests the miniport driver to return information that applies to all virtual connections (VCs) on its NIC. This information is returned in an NDIS_WAN_CO_INFO structure, defined as follows.
-ms.assetid: c97130a5-68e1-4c69-a5a5-9781ea59af0c
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_GET_INFO Network Drivers Starting with Windows Vista
@@ -35,7 +34,7 @@ However, all CoNDIS WAN miniport drivers should use an internal **MaxFrameSize**
 <a href="" id="maxsendwindow"></a>**MaxSendWindow**  
 Specifies the maximum number of outstanding packets that the CoNDIS WAN miniport driver can handle on a VC. This member must be set to at least one.
 
-The NDISWAN driver uses the value of this member as a limit on how many packets it submits in send requests to the miniport driver's *MiniportCoSendPackets* function before NDISWAN holds send packets. These packets are queued until the miniport driver completes an outstanding send. A miniport driver can adjust this value dynamically and on a per-VC basis using the **SendWindow** member in the [**WAN\_CO\_LINKPARAMS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565819(v=vs.85)) structure that the miniport driver passes to [**NdisMCoIndicateStatus**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553458(v=vs.85)). NDISWAN uses the current **SendWindow** value as its limit on outstanding sends. If the miniport driver sets **SendWindow** to zero, NDISWAN must stop sending packets for the particular VC. That is, the miniport driver specifies that the send window is shut down, which, in effect, specifies that it cannot accept any packets from NDISWAN.
+The NDISWAN driver uses the value of this member as a limit on how many packets it submits in send requests to the miniport driver's *MiniportCoSendPackets* function before NDISWAN holds send packets. These packets are queued until the miniport driver completes an outstanding send. A miniport driver can adjust this value dynamically and on a per-VC basis using the **SendWindow** member in the [**WAN\_CO\_LINKPARAMS**](/previous-versions/windows/hardware/network/ff565819(v=vs.85)) structure that the miniport driver passes to [**NdisMCoIndicateStatus**](/previous-versions/windows/hardware/network/ff553458(v=vs.85)). NDISWAN uses the current **SendWindow** value as its limit on outstanding sends. If the miniport driver sets **SendWindow** to zero, NDISWAN must stop sending packets for the particular VC. That is, the miniport driver specifies that the send window is shut down, which, in effect, specifies that it cannot accept any packets from NDISWAN.
 
 Because a CoNDIS WAN miniport driver must queue packets internally, the value of **MaxSendWindow** is theoretically **max**( ULONG). However, this driver-determined value should reflect the link speed or hardware capabilities of the NIC. For example, if a miniport driver's NIC always has room for at least four packets, the miniport driver sets **MaxSendWindow** to four so that any incoming packet to *MiniportCoSendPackets* can be placed on the hardware immediately.
 
@@ -145,18 +144,10 @@ Requirements
 ## See also
 
 
-[**NdisMCoIndicateStatus**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553458(v=vs.85))
+[**NdisMCoIndicateStatus**](/previous-versions/windows/hardware/network/ff553458(v=vs.85))
 
 [OID\_WAN\_CO\_GET\_LINK\_INFO](oid-wan-co-get-link-info.md)
 
 [OID\_WAN\_CO\_SET\_LINK\_INFO](oid-wan-co-set-link-info.md)
 
-[**WAN\_CO\_LINKPARAMS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565819(v=vs.85))
-
-
-
-
-
-
-
-
+[**WAN\_CO\_LINKPARAMS**](/previous-versions/windows/hardware/network/ff565819(v=vs.85))

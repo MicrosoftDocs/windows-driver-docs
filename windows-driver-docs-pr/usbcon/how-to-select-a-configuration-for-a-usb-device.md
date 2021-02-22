@@ -1,5 +1,5 @@
 ---
-Description: In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.
+description: In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.
 title: How to select a configuration for a USB device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -12,30 +12,30 @@ In this topic, you will learn about how to select a configuration in a universal
 
 To select a configuration for a USB device, the client driver for the device must choose at least one of the supported configurations and specify the alternate settings of each interface to use. The client driver packages those choices in a *select-configuration request* and sends the request to the Microsoft-provided USB driver stack, specifically the USB bus driver (USB hub PDO). The USB bus driver selects each interface in the specified configuration and sets up a communication channel, or *pipe*, to each endpoint within the interface. After the request completes, the client driver receives a handle for the selected configuration, and pipe handles for the endpoints that are defined in the active alternate setting for each interface. The client driver can then use the received handles to change configuration settings and to send I/O read and write requests to a particular endpoint.
 
-A client driver sends a select-configuration request in a [USB Request Block (URB)](communicating-with-a-usb-device.md) of the type URB\_FUNCTION\_SELECT\_CONFIGURATION. The procedure in this topic describes how to use the [**USBD\_SelectConfigUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild) routine to build that URB. The routine allocates memory for an URB, formats the URB for a select-configuration request, and returns the address of the URB to the client driver.
+A client driver sends a select-configuration request in a [USB Request Block (URB)](communicating-with-a-usb-device.md) of the type URB\_FUNCTION\_SELECT\_CONFIGURATION. The procedure in this topic describes how to use the [**USBD\_SelectConfigUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild) routine to build that URB. The routine allocates memory for an URB, formats the URB for a select-configuration request, and returns the address of the URB to the client driver.
 
-Alternately, you can allocate an [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure and then format the URB manually or by calling the [**UsbBuildSelectConfigurationRequest**](https://docs.microsoft.com/previous-versions/ff538968(v=vs.85)) macro.
+Alternately, you can allocate an [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure and then format the URB manually or by calling the [**UsbBuildSelectConfigurationRequest**](/previous-versions/ff538968(v=vs.85)) macro.
 
 ### Prerequisites
 
--   In Windows 8, [**USBD\_SelectConfigUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild) replaces [**USBD\_CreateConfigurationRequestEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createconfigurationrequestex).
--   Before sending a select-configuration request, you must have a USBD handle for your client driver's registration with the USB driver stack. To create a USBD handle call [**USBD\_CreateHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle).
--   Make sure you have obtained the configuration descriptor ([**USB\_CONFIGURATION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure) of the configuration to select. Typically, you submit an URB of the type URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request)) to retrieve information about device configuration. For more information, see [USB Configuration Descriptors](usb-configuration-descriptors.md).
+-   In Windows 8, [**USBD\_SelectConfigUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild) replaces [**USBD\_CreateConfigurationRequestEx**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createconfigurationrequestex).
+-   Before sending a select-configuration request, you must have a USBD handle for your client driver's registration with the USB driver stack. To create a USBD handle call [**USBD\_CreateHandle**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle).
+-   Make sure you have obtained the configuration descriptor ([**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure) of the configuration to select. Typically, you submit an URB of the type URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request)) to retrieve information about device configuration. For more information, see [USB Configuration Descriptors](usb-configuration-descriptors.md).
 
 Instructions
 ------------
 
 ### <a href="" id="create-an-array-of-usbd-interface-list-entry-structures-"></a>Step 1: Create an array of USBD\_INTERFACE\_LIST\_ENTRY structures.
 
-1.  Get the number of interfaces in the configuration. This information is contained in the **bNumInterfaces** member of the [**USB\_CONFIGURATION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure.
-2.  Create an array of [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures. The number of elements in the array must be one more than the number of interfaces. Initialize the array by calling [**RtlZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory).
+1.  Get the number of interfaces in the configuration. This information is contained in the **bNumInterfaces** member of the [**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure.
+2.  Create an array of [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures. The number of elements in the array must be one more than the number of interfaces. Initialize the array by calling [**RtlZeroMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory).
 
-    The client driver specifies alternate settings in each interface to enable, in the array of [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures.
+    The client driver specifies alternate settings in each interface to enable, in the array of [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures.
 
     -   The **InterfaceDescriptor** member of each structure points to the interface descriptor that contains the alternate setting.
-    -   The **Interface** member of each structure points to an [**USBD\_INTERFACE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure that contains pipe information in its **Pipes** member. **Pipes** stores information about each endpoint defined in the alternate setting.
+    -   The **Interface** member of each structure points to an [**USBD\_INTERFACE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure that contains pipe information in its **Pipes** member. **Pipes** stores information about each endpoint defined in the alternate setting.
 
-3.  Obtain an interface descriptor for each interface (or its alternate setting) in the configuration. You can obtain those interface descriptors by calling [**USBD\_ParseConfigurationDescriptorEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex).
+3.  Obtain an interface descriptor for each interface (or its alternate setting) in the configuration. You can obtain those interface descriptors by calling [**USBD\_ParseConfigurationDescriptorEx**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex).
 
     **About Function Drivers for a USB Composite Device:  **
 
@@ -43,7 +43,7 @@ Instructions
 
     Before sending that request, the client driver must submit a URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE request. In response, Usbccgp.sys retrieves a *partial configuration descriptor* that only contains interface descriptors and other descriptors that pertain to the specific function for which the client driver is loaded. The number of interfaces reported in the **bNumInterfaces** field of a partial configuration descriptor is less than the total number of interfaces defined for the entire USB composite device. In addition, in a partial configuration descriptor, an interface descriptor's **bInterfaceNumber** indicates the actual interface number relative to the entire device. For example, Usbccgp.sys might report a partial configuration descriptor with **bNumInterfaces** value of 2 and **bInterfaceNumber** value of 4 for the first interface. Note that the interface number is greater than the number of interfaces reported.
 
-    While enumerating interfaces in a partial configuration, avoid searching for interfaces by calculating interface numbers based on the number of interfaces. In the preceding example, if [**USBD\_ParseConfigurationDescriptorEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex) is called in a loop that starts at zero, ends at `(bNumInterfaces - 1)`, and increments the interface index (specified in the *InterfaceNumber* parameter) in each iteration, the routine fails to get the correct interface. Instead, make sure that you search for all interfaces in the configuration descriptor by passing -1 in *InterfaceNumber*. For implementation details, see the code example in this section.
+    While enumerating interfaces in a partial configuration, avoid searching for interfaces by calculating interface numbers based on the number of interfaces. In the preceding example, if [**USBD\_ParseConfigurationDescriptorEx**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex) is called in a loop that starts at zero, ends at `(bNumInterfaces - 1)`, and increments the interface index (specified in the *InterfaceNumber* parameter) in each iteration, the routine fails to get the correct interface. Instead, make sure that you search for all interfaces in the configuration descriptor by passing -1 in *InterfaceNumber*. For implementation details, see the code example in this section.
 
     For information about how Usbccgp.sys handles a select-configuration request sent by a client driver, see [Configuring Usbccgp.sys to Select a Non-Default USB Configuration](selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md).
 
@@ -52,32 +52,32 @@ Instructions
 
 ### <a href="" id="get-a-pointer-to-an-urb-allocated-by-the-usb-driver-stack-"></a>Step 2: Get a pointer to an URB allocated by the USB driver stack.
 
-Next, call [**USBD\_SelectConfigUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild) by specifying the configuration to select and the populated array of [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures. The routine performs the following tasks:
+Next, call [**USBD\_SelectConfigUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild) by specifying the configuration to select and the populated array of [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures. The routine performs the following tasks:
 
 -   Creates an URB and fills it with information about the specified configuration, its interfaces and endpoints, and sets the request type to URB\_FUNCTION\_SELECT\_CONFIGURATION.
--   Within that URB, allocates a [**USBD\_INTERFACE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure for each interface descriptor that the client driver specifies.
--   Sets the **Interface** member of the *n*th element of the caller-provided [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) array to the address of the corresponding [**USBD\_INTERFACE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure in the URB.
+-   Within that URB, allocates a [**USBD\_INTERFACE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure for each interface descriptor that the client driver specifies.
+-   Sets the **Interface** member of the *n*th element of the caller-provided [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) array to the address of the corresponding [**USBD\_INTERFACE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure in the URB.
 -   Initializes the **InterfaceNumber**, **AlternateSetting**, **NumberOfPipes**, **Pipes\[i\].MaximumTransferSize**, and **Pipes\[i\].PipeFlags** members.
 
-    **Note**  In Windows 7 and ealier, the client driver created an URB for a select-configuration request by calling [**USBD\_CreateConfigurationRequestEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createconfigurationrequestex). In Windows 2000 **USBD\_CreateConfigurationRequestEx** initializes **Pipes\[i\].MaximumTransferSize** to the default maximum transfer size for a single URB read/write request. The client driver can specify a different maximum transfer size in the **Pipes\[i\].MaximumTransferSize**. The USB stack ignores this value in Windows XP, Windows Server 2003, and later versions of the operating system. For more information about **MaximumTransferSize**, see "Setting USB Transfer and Packet Sizes" in [USB Bandwidth Allocation](usb-bandwidth-allocation.md).
+    **Note**  In Windows 7 and ealier, the client driver created an URB for a select-configuration request by calling [**USBD\_CreateConfigurationRequestEx**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createconfigurationrequestex). In Windows 2000 **USBD\_CreateConfigurationRequestEx** initializes **Pipes\[i\].MaximumTransferSize** to the default maximum transfer size for a single URB read/write request. The client driver can specify a different maximum transfer size in the **Pipes\[i\].MaximumTransferSize**. The USB stack ignores this value in Windows XP, Windows Server 2003, and later versions of the operating system. For more information about **MaximumTransferSize**, see "Setting USB Transfer and Packet Sizes" in [USB Bandwidth Allocation](usb-bandwidth-allocation.md).
 
 ### <a href="" id="submit-the-urb-to-the-usb-driver-stack-"></a>Step 3: Submit the URB to the USB driver stack.
 
-To submit the URB to the USB driver stack, the client driver must send an [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) I/O control request . For information about submitting an URB, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
+To submit the URB to the USB driver stack, the client driver must send an [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) I/O control request . For information about submitting an URB, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
-After receiving the URB, the USB driver stack fills the rest of the members of each [**USBD\_INTERFACE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure. In particular, the **Pipes** array member is filled with information about the pipes associated with the endpoints of the interface.
+After receiving the URB, the USB driver stack fills the rest of the members of each [**USBD\_INTERFACE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure. In particular, the **Pipes** array member is filled with information about the pipes associated with the endpoints of the interface.
 
 ### <a href="" id="on-request-completion--inspect-the-usbd-interface-information-structures-and-the-urb-"></a>Step 4: On request completion, inspect the USBD\_INTERFACE\_INFORMATION structures and the URB.
 
-After the USB driver stack completes the IRP for the request, the stack returns the list of alternate settings and the related interfaces in the [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) array.
+After the USB driver stack completes the IRP for the request, the stack returns the list of alternate settings and the related interfaces in the [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) array.
 
-1.  The **Pipes** member of each [**USBD\_INTERFACE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure points to an array of [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structures that contains information about the pipes associated with each endpoint of that particular interface. The client driver can obtain pipe handles from **Pipes\[i\].PipeHandle** and use them to send I/O requests to specific pipes. The **Pipes\[i\].PipeType** member specifies the type of endpoint and transfer supported by that pipe.
+1.  The **Pipes** member of each [**USBD\_INTERFACE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) structure points to an array of [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structures that contains information about the pipes associated with each endpoint of that particular interface. The client driver can obtain pipe handles from **Pipes\[i\].PipeHandle** and use them to send I/O requests to specific pipes. The **Pipes\[i\].PipeType** member specifies the type of endpoint and transfer supported by that pipe.
 
-2.  Within the **UrbSelectConfiguration** member of the URB, the USB driver stack returns a handle that you can use to select an alternate interface setting by submitting another URB of the type URB\_FUNCTION\_SELECT\_INTERFACE (*select-interface request*). To allocate and build the URB structure for that request, call [**USBD\_SelectInterfaceUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectinterfaceurballocateandbuild).
+2.  Within the **UrbSelectConfiguration** member of the URB, the USB driver stack returns a handle that you can use to select an alternate interface setting by submitting another URB of the type URB\_FUNCTION\_SELECT\_INTERFACE (*select-interface request*). To allocate and build the URB structure for that request, call [**USBD\_SelectInterfaceUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectinterfaceurballocateandbuild).
 
     The select-configuration request and select-interface request might fail if there is insufficient bandwidth to support the isochronous, control, and interrupt endpoints within the enabled interfaces. In that case, the USB bus driver sets the **Status** member of the URB header to USBD\_STATUS\_NO\_BANDWIDTH.
 
-The following example code shows how to create an array of [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures and call [**USBD\_SelectConfigUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild). The example sends the request synchronously by calling SubmitUrbSync. To see the code example for SubmitUrbSync, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
+The following example code shows how to create an array of [**USBD\_INTERFACE\_LIST\_ENTRY**](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures and call [**USBD\_SelectConfigUrbAllocateAndBuild**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild). The example sends the request synchronously by calling SubmitUrbSync. To see the code example for SubmitUrbSync, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
 ```C++
 /*++
@@ -271,7 +271,7 @@ Remarks
 
 **Disabling a Configuration for a USB Device:**
 
-To disable a USB device, create and submit a select-configuration request with a NULL configuration descriptor. For that type of request, you can reuse the URB that you created for request that selected a configuration in the device. Alternately, you can allocate a new URB by calling [**USBD\_UrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate). Before submitting the request you must format the URB by using the [**UsbBuildSelectConfigurationRequest**](https://docs.microsoft.com/previous-versions/ff538968(v=vs.85)) macro as shown in the following example code.
+To disable a USB device, create and submit a select-configuration request with a NULL configuration descriptor. For that type of request, you can reuse the URB that you created for request that selected a configuration in the device. Alternately, you can allocate a new URB by calling [**USBD\_UrbAllocate**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate). Before submitting the request you must format the URB by using the [**UsbBuildSelectConfigurationRequest**](/previous-versions/ff538968(v=vs.85)) macro as shown in the following example code.
 
 ```C++
 URB Urb;
@@ -285,7 +285,4 @@ UsbBuildSelectConfigurationRequest(
 ## Related topics
 [Configuring Usbccgp.sys to Select a Non-Default USB Configuration](selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md)  
 [USB device configuration](configuring-usb-devices.md)  
-[Allocating and Building URBs](how-to-add-xrb-support-for-client-drivers.md)  
-
-
-
+[Allocating and Building URBs](how-to-add-xrb-support-for-client-drivers.md)

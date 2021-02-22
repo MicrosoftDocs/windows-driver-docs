@@ -1,5 +1,5 @@
 ---
-Description: This topics in this section describe the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
+description: This topics in this section describe the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
 title: Overview of Microsoft-provided USB drivers
 ms.date: 04/20/2017
 ms.localizationpriority: High
@@ -17,7 +17,7 @@ Microsoft provides these set of drivers:
 
 -   For USB host controllers and hubs. For more information, see [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md). You can develop a custom host controller driver that communicates with the USB host controller extension (UCX) driver. For more information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
 -   For handling common function logic for USB devices. For more information, see [USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md).
--   For supporting Type-C connectors. For more information, see [USB connector manager class extension (UcmCx)](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188011(v=vs.85)).
+-   For supporting Type-C connectors. For more information, see [USB connector manager class extension (UcmCx)](/previous-versions/windows/hardware/drivers/mt188011(v=vs.85)).
 
 ## Other Microsoft-provided USB drivers
 
@@ -55,7 +55,7 @@ Microsoft provides these set of drivers:
 <p>WudfUsbBIDAdvanced.inf</p></td>
 <td><p>Windows 8.1</p>
 <p>Windows 8</p></td>
-<td><p>Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. See the <a href="https://docs.microsoft.com/previous-versions/ff536448(v=vs.85)" data-raw-source="[Windows Biometric Framework](https://docs.microsoft.com/previous-versions/ff536448(v=vs.85))">Windows Biometric Framework</a>.</p></td>
+<td><p>Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. See the <a href="/previous-versions/ff536448(v=vs.85)" data-raw-source="[Windows Biometric Framework](/previous-versions/ff536448(v=vs.85))">Windows Biometric Framework</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Media Transfer Protocol Devices</td>
@@ -70,7 +70,7 @@ Microsoft provides these set of drivers:
 <div>
 
 </div>
-<p>Microsoft provides the Wpdusb.sys driver to manage portable devices that support the Media Transfer Protocol. See <a href="https://docs.microsoft.com/previous-versions/ff597864(v=vs.85)" data-raw-source="[WPD Design Guide](https://docs.microsoft.com/previous-versions/ff597864(v=vs.85))">WPD Design Guide</a>.</p></td>
+<p>Microsoft provides the Wpdusb.sys driver to manage portable devices that support the Media Transfer Protocol. See <a href="/previous-versions/ff597864(v=vs.85)" data-raw-source="[WPD Design Guide](/previous-versions/ff597864(v=vs.85))">WPD Design Guide</a>.</p></td>
 </tr>
 <tr class="even">
 <td>USBDevice</td>
@@ -96,8 +96,5 @@ Microsoft provides drivers for several USB device classes approved by USB-IF. Th
 See, [USB device class drivers included in Windows](supported-usb-classes.md).
 
 ## Related topics
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[Universal Serial Bus (USB)](../index.yml)  
+[USB Driver Development Guide](usb-driver-development-guide.md)

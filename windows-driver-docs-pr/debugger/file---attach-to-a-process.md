@@ -1,7 +1,6 @@
 ---
 title: File Attach to a Process
 description: File Attach to a Process
-ms.assetid: 6bd438a3-e9fb-444d-baf6-fffdee0487f2
 keywords: ["File Attach to a Process", "starting the debugger, File Attach to a Process"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE property configures the font type that is used by the printer/endorser device.
-ms.assetid: DBA20346-36F8-4D9A-A9F2-F97F8955CDF8
 keywords: ["WIA_IPS_PRINTER_ENDORSER_FONT_TYPE Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Using Workspaces
 description: Using Workspaces
-ms.assetid: 2d729db2-a7c9-4905-a913-85d9b2a94e95
 keywords: ["workspaces", "workspaces, overview", "WinDbg, workspaces"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

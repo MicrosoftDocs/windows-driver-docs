@@ -1,14 +1,13 @@
 ---
 title: PackageIdentity
 description: PackageIdentity
-ms.assetid: b5533962-ea42-416e-bbd8-ce9dce1a9a40
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # PackageIdentity
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The PackageIdentity element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 

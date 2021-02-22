@@ -1,7 +1,6 @@
 ---
 title: OID_CO_ADDRESS_CHANGE
 description: This topic describes the OID_CO_ADDRESS_CHANGE object identifier (OID).
-ms.assetid: 18b185dd-b282-4182-a761-008e5d0c88d7
 keywords:
 - OID_CO_ADDRESS_CHANGE
 ms.date: 11/03/2017
@@ -16,8 +15,6 @@ The call manager also sends OID_CO_ADDRESS_CHANGE to a client immediately after 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

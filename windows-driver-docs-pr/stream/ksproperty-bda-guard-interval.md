@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_GUARD\_INTERVAL
 description: Clients use KSPROPERTY\_BDA\_GUARD\_INTERVAL to control the setting for guard interval of a demodulator node.
-ms.assetid: 7c0c6c5e-94fd-4013-9778-d41568ae9f0b
 keywords: ["KSPROPERTY_BDA_GUARD_INTERVAL Streaming Media Devices"]
 topic_type:
 - apiref
@@ -81,16 +80,9 @@ Requirements
 ## See also
 
 
-[**GuardInterval**](https://docs.microsoft.com/previous-versions/windows/desktop/mstv/guardinterval)
+[**GuardInterval**](/previous-versions/windows/desktop/mstv/guardinterval)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
-
-
-
-
 

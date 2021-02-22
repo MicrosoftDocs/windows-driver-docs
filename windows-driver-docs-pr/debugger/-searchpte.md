@@ -1,7 +1,6 @@
 ---
 title: searchpte
 description: The searchpte extension searches physical memory for the specified page frame number (PFN).
-ms.assetid: b9bac11e-605b-4064-b078-d3171b59da3b
 keywords: ["searchpte Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

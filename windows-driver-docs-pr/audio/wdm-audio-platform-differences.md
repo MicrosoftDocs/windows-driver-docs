@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Platform Differences
 description: WDM Audio Platform Differences
-ms.assetid: bb5d1aa6-edb3-4859-ab65-9622065608e2
 keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , platform differences
@@ -27,12 +26,7 @@ Additional information about WDM platform differences is available elsewhere in 
 
 -   For information about how version numbers for PortCls adapter drivers differ among Windows versions, see [Version Numbers for Audio Drivers](version-numbers-for-audio-drivers.md).
 
--   For information about how the support for WDM drivers in general differs among Windows versions, including a discussion of floating-point issues for drivers, see [Differences in WDM Versions](https://docs.microsoft.com/windows-hardware/drivers/kernel/differences-in-wdm-versions).
+-   For information about how the support for WDM drivers in general differs among Windows versions, including a discussion of floating-point issues for drivers, see [Differences in WDM Versions](../kernel/differences-in-wdm-versions.md).
 
  
-
- 
-
-
-
 

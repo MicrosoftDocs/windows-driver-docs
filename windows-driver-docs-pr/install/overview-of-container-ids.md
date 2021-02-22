@@ -1,7 +1,6 @@
 ---
 title: Overview of Container IDs
 description: Overview of Container IDs
-ms.assetid: fb7a4a31-01f9-4f7e-a35c-9076c7d73a29
 keywords:
 - container IDs WDK , about
 ms.date: 04/20/2017
@@ -29,15 +28,9 @@ There is one container ID with a special meaning for bus drivers: NULL_GUID whic
 
 In general, do not return NULL_GUID as the default case when reporting a container ID. Instead, do not handle IRP_MN_QUERY_ID for the BusQueryContainerIDs case and let PnP apply its default logic.
 
-When returning NULL_GUID as a container ID, a bus driver declares to PnP that the device must not be part of any container, thus returning NULL_GUID is appropriate only in very special cases. For example, a *devnode* such as a volume device may span multiple disks in multiple containers but do not belong to any container. Such a device will have a [**DEVPKEY_Device_BaseContainerId**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-basecontainerid) equal to NULL_GUID, and it will not have a [**DEVPKEY_Device_ContainerId**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-containerid) at all.
+When returning NULL_GUID as a container ID, a bus driver declares to PnP that the device must not be part of any container, thus returning NULL_GUID is appropriate only in very special cases. For example, a *devnode* such as a volume device may span multiple disks in multiple containers but do not belong to any container. Such a device will have a [**DEVPKEY_Device_BaseContainerId**](./devpkey-device-basecontainerid.md) equal to NULL_GUID, and it will not have a [**DEVPKEY_Device_ContainerId**](./devpkey-device-containerid.md) at all.
 
 Aside from very special cases, a bus driver should never return NULL_GUID when reporting a hardware device and bus drivers should guard against faulty hardware that reports a NULL_GUID value from their bus. In these cases the bus driver should either threat this as a device error, or treat it as if the device did not report a value.
 
  
-
- 
-
-
-
-
 

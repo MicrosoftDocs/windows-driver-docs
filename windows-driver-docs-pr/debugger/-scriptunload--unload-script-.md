@@ -1,7 +1,6 @@
 ---
 title: .scriptunload (Unload Script)
 description: The .scriptunload command unloads the specified script.
-ms.assetid: 015703C2-31E2-46B4-8F89-1EA52DB7E6FC
 keywords: [".scriptunload (Unload Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

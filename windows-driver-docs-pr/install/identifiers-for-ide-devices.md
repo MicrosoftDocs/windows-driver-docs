@@ -1,7 +1,6 @@
 ---
 title: Identifiers for IDE Devices
 description: Identifiers for IDE Devices
-ms.assetid: b1624eb9-afa7-49ce-9db1-b0eab466ddcd
 keywords:
 - device identification strings WDK , IDE devices
 - identification strings WDK device , IDE devices

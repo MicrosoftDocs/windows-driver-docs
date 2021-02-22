@@ -1,7 +1,6 @@
 ---
 title: WMI Data Source
 description: WMI Data Source
-ms.assetid: 1C9D0EEC-6542-4249-B7E0-CA3ED63FB120
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,7 @@ TEST_METHOD_PROPERTY(L"DataSource", L"WMI:<WQL query>")]
 
 You must have noticed that the DataSource value starts with "WMI:" which lets TAEF know that this is indeed the data source for a test that depends on WMI query result and also distinguishes it from data-driven test. This is good opportunity to mention that currently TAEF does not support a test to be both - a data-driven test as well as a test that depends on the WMI query result.
 
-The next question naturally is how to write WQL queries for what you are looking for? WQL query syntax is very similar to simplified SQL queries. There are some very good examples of queries provided on [https://msdn2.microsoft.com/library/aa394585(VS.85).aspx.](https://msdn2.microsoft.com/library/aa394585(VS.85).aspx) Here are a few examples:
+The next question naturally is how to write WQL queries for what you are looking for? WQL query syntax is very similar to simplified SQL queries. There are some very good examples of queries provided in [WMI Tasks for Scripts and Applications](/windows/win32/wmisdk/wmi-tasks-for-scripts-and-applications). Here are a few examples:
 
 <span id="SELECT_Description__DesktopInteract__ProcessId_FROM_Win32_Service_WHERE_Name__Themes_"></span><span id="select_description__desktopinteract__processid_from_win32_service_where_name__themes_"></span><span id="SELECT_DESCRIPTION__DESKTOPINTERACT__PROCESSID_FROM_WIN32_SERVICE_WHERE_NAME__THEMES_"></span>SELECT Description, DesktopInteract, ProcessId FROM Win32\_Service WHERE Name='Themes'  
 Run the test on the "Themes" service after finding out it's Description, DesktopInteract and ProcessId properties which you intend to use in your testing.
@@ -60,7 +59,7 @@ You can find more examples in the documentation mentioned above as well as in th
 SELECT <comma separated properties> FROM <WMI Class name> [WHERE <add condition on some properties>]
 ```
 
-In the examples that you just saw, Win32\_Service, Win32\_Printer and Win32\_StartupCommand are all WMI Classes. You can look up what WMI class you are interested in for your test here: [https://msdn2.microsoft.com/library/aa394554(VS.85).aspx.](https://msdn2.microsoft.com/library/aa394554(VS.85).aspx)
+In the examples that you just saw, Win32\_Service, Win32\_Printer and Win32\_StartupCommand are all WMI Classes. You can look up the WMI classes in [WMI classes](/windows/win32/wmisdk/wmi-classes).
 
 TAEF does not support retrieving System Properties.
 
@@ -269,10 +268,4 @@ You may have "Availability and "MaximumComponentLength" returned as NULL values.
 ```
 
  
-
- 
-
-
-
-
 

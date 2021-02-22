@@ -1,7 +1,6 @@
 ---
 title: Definitions and Variables Used in the Examples
 description: Definitions and Variables Used in the Examples
-ms.assetid: 55dd0618-2171-406b-a22a-437412c77cbc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

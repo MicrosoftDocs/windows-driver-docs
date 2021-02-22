@@ -1,7 +1,6 @@
 ---
 title: Plug and play support
 description: This section describes the enumeration process on the Universal Serial Bus.
-ms.assetid: CB3D76DB-4A96-4A19-BC1C-C9181A12B04E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -32,12 +31,14 @@ The generation of the compatible ID for the device is more complicated. The clas
 
  
 
-|                                        |                                      |
-|----------------------------------------|--------------------------------------|
-| Hardware Identifiers                   | Compatible Identifiers               |
-| **USB\\Vid\_xxxx&Pid\_yyyy&Rev\_zzzz** | USB\\Class\_aa&SubClass\_bb&Prot\_cc |
-| **USB\\Vid\_xxxx&Pid\_yyyy**           | USB\\Class\_aa&SubClass\_bb          |
-|                                        | USB\\Class\_aa                       |
+**Hardware Identifiers**: Compatible Identifiers
+
+****USB\\Vid\_xxxx&Pid\_yyyy&Rev\_zzzz****: USB\\Class\_aa&SubClass\_bb&Prot\_cc
+
+****USB\\Vid\_xxxx&Pid\_yyyy****: USB\\Class\_aa&SubClass\_bb
+
+****: USB\\Class\_aa
+
 
  
 
@@ -49,13 +50,16 @@ USB devices with multiple functions are called composite devices. This example s
 
  
 
-|                                        |                                      |
-|----------------------------------------|--------------------------------------|
-| Hardware Identifiers                   | Compatible Identifiers               |
-| **USB\\Vid\_xxxx&Pid\_yyyy&Rev\_zzzz** | USB\\Class\_aa&SubClass\_bb&Prot\_cc |
-| **USB\\Vid\_xxxx&Pid\_yyyy**           | USB\\Class\_aa&SubClass\_bb          |
-|                                        | USB\\Class\_aa                       |
-|                                        | USB\\COMPOSITE                       |
+**Hardware Identifiers**: Compatible Identifiers
+
+****USB\\Vid\_xxxx&Pid\_yyyy&Rev\_zzzz****: USB\\Class\_aa&SubClass\_bb&Prot\_cc
+
+****USB\\Vid\_xxxx&Pid\_yyyy****: USB\\Class\_aa&SubClass\_bb
+
+****: USB\\Class\_aa
+
+****: USB\\COMPOSITE
+
 
  
 
@@ -69,12 +73,14 @@ The class code, subclass code, and protocol code are determined by the **bInterf
 
  
 
-|                                               |                                      |
-|-----------------------------------------------|--------------------------------------|
-| Hardware Identifiers                          | Compatible Identifiers               |
-| **USB\\Vid\_xxxx&Pid\_yyyy&Rev\_zzzz&MI\_ww** | USB\\Class\_aa&SubClass\_bb&Prot\_cc |
-| **USB\\Vid\_xxxx&Pid\_yyyy&MI\_ww**           | USB\\Class\_aa&SubClass\_bb          |
-|                                               | USB\\Class\_aa                       |
+**Hardware Identifiers**: Compatible Identifiers
+
+****USB\\Vid\_xxxx&Pid\_yyyy&Rev\_zzzz&MI\_ww****: USB\\Class\_aa&SubClass\_bb&Prot\_cc
+
+****USB\\Vid\_xxxx&Pid\_yyyy&MI\_ww****: USB\\Class\_aa&SubClass\_bb
+
+****: USB\\Class\_aa
+
 
  
 

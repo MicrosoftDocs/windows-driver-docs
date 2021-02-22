@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS
 description: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS is a TLV that is used by OID_WDI_SET_ENCAPSULATION_OFFLOAD to indicate if IPv4 offloading should be started.
-ms.assetid: DC474D05-BF41-48F4-90CC-96C3B7F41ED0
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS
 
 
-WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS is a TLV that is used by [OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-encapsulation-offload) to indicate if IPv4 offloading should be started.
+WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS is a TLV that is used by [OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD](./oid-wdi-set-encapsulation-offload.md) to indicate if IPv4 offloading should be started.
 
 ## TLV Type
 
@@ -59,12 +58,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
+[**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
 
  
-
- 
-
-
-
 

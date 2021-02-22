@@ -1,7 +1,6 @@
 ---
 title: GDL Exercise 4 Defining Variants of Constructs
 description: GDL Exercise 4 Defining Variants of Constructs
-ms.assetid: b923b5f8-6e60-44a0-a38e-8bfa315281c5
 keywords:
 - GDL WDK , examples
 - examples WDK GDL

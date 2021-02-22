@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SUPPORTED_GUIDS
 description: WDI_TLV_SUPPORTED_GUIDS is a TLV that contains a supported NDIS GUID.
-ms.assetid: 957645EE-A6E3-402E-B18B-B2E7C73D6F6B
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SUPPORTED_GUIDS Network Drivers Starting with Windows Vista
@@ -25,7 +24,7 @@ WDI\_TLV\_SUPPORTED\_GUIDS is a TLV that contains a supported NDIS GUID.
 ## Length
 
 
-The size (in bytes) of a [NDIS\_GUID](https://docs.microsoft.com/windows-hardware/drivers/network/filling-in-an-ndis-guid-structure) structure.
+The size (in bytes) of a [NDIS\_GUID](./filling-in-an-ndis-guid-structure.md) structure.
 
 ## Values
 
@@ -63,12 +62,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_GET\_ADAPTER\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-get-adapter-capabilities)
+[OID\_WDI\_GET\_ADAPTER\_CAPABILITIES](./oid-wdi-get-adapter-capabilities.md)
 
  
-
- 
-
-
-
 

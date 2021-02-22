@@ -1,7 +1,6 @@
 ---
 title: .load, .loadby (Load Extension DLL)
 description: The .load and .loadby commands load a new extension DLL into the debugger.
-ms.assetid: bf54064a-6f30-4f31-a373-fbc643e2660c
 keywords: [".load (Load Extension DLL) command", "loadby (Load Extension DLL) command", "Load Extension DLL (.load - .loadby) command", "extension commands ( commands), Load Extension DLL (.load - .loadby) command", ".load, .loadby (Load Extension DLL) Windows Debugging"]
 ms.date: 01/30/2020
 topic_type:
@@ -74,7 +73,7 @@ To load an extension DLL, you can do one of the following:
 
 - Execute an extension by issuing the full **!**<em>DLLName</em>**.**<em>ExtensionCommand</em> syntax. If the debugger has not yet loaded *DLLName*.dll, it loads the DLL at this point if it is located in the current DLL search path.
 
-Use the [.chain]() command to display information about what has been loaded and the current DLL search path.
+Use the [.chain](-chain--list-debugger-extensions-.md) command to display information about what has been loaded and the current DLL search path.
 
 ```dbgcmd
 0:000> .chain

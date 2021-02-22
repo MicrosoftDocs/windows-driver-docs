@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL
 description: The IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x0000000A.
-ms.assetid: a32b80f5-9822-41af-8668-836a70b05c0f
 keywords: ["Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL", "IRQL_NOT_LESS_OR_EQUAL"]
 ms.date: 05/23/2017
 topic_type:
@@ -104,7 +103,7 @@ Following are some general guidelines that you can use to categorize the type of
 Resolution
 ----------
 
-If a kernel debugger is available, obtain a stack trace. Start by running the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debugger extension to display information about the bug check. (The **!analyze** extension can be helpful in determining the root cause.) Next, enter one of the [**k\*** (display stack backtrace)](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
+If a kernel debugger is available, obtain a stack trace. Start by running the [**!analyze**](-analyze.md) debugger extension to display information about the bug check. (The **!analyze** extension can be helpful in determining the root cause.) Next, enter one of the [**k\*** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  commands to view the call stack.
 
 ### Gather Information
 
@@ -116,7 +115,7 @@ Check the System Log in Event Viewer for additional error messages that might he
 
 Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it identifies errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. Driver Verifier Manager is built into Windows and is available on all Windows PCs. 
 
-To start Driver Verifier Manager, type **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+To start Driver Verifier Manager, type **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 Following is a debugging example:
 

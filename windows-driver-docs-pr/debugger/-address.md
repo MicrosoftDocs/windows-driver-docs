@@ -1,7 +1,6 @@
 ---
 title: address
 description: The address extension displays information about the memory that the target process or target computer uses.
-ms.assetid: 9bbde680-8523-4db2-bb7e-fdacdaf1aa89
 keywords: ["address Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

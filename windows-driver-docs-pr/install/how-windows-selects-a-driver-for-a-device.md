@@ -1,7 +1,6 @@
 ---
 title: How Windows selects a driver for a device
 description: How Windows selects a driver for a device
-ms.assetid: 4c193b97-7b70-425f-99f2-ba976a4cc40a
 keywords:
 - driver selections WDK device installations , where Device setupsearches
 ms.date: 03/02/2020
@@ -31,6 +30,6 @@ The following table provides a quick summary of the information above:
 
 
 > [!NOTE]
-> In Windows 10 version 1709 and greater, Windows offers the best matching driver, which is not necessarily the most recent. The driver selection process considers hardware ID, date/version, and critical/automatic/optional category. Windows prioritizes critical or automatic drivers highest. If a matching driver is not found, WU looks next for optional drivers. As a result, an older critical driver of otherwise equal value takes precedence over a newer optional driver.
-
-
+> In Windows 10, version 1709 and greater, Windows offers the best matching driver, which is not necessarily the most recent. The driver selection process considers hardware ID, date/version, and critical/automatic/optional category. Windows prioritizes critical or automatic drivers highest. If a matching driver is not found, WU looks next for optional drivers. As a result, an older critical driver of otherwise equal value takes precedence over a newer optional driver.
+> 
+> Starting with Windows 10, version 2004, Windows automatically offers only the best automatic/critical matching driver, searching both the computer and Windows Update. To see matching drivers in the optional category, go to **Settings > Update & Security > Windows Update > View optional updates > Driver updates**. Windows still uses the same criteria to rank and select a driver.

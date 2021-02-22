@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_DEPTH
 description: The WIA\_IPA\_DEPTH property contains the bit depth setting of an image. The WIA minidriver creates and maintains this property.
-ms.assetid: 90f7983c-296f-4dfc-90d3-886881a907af
 keywords: ["WIA_IPA_DEPTH Imaging Devices"]
 topic_type:
 - apiref

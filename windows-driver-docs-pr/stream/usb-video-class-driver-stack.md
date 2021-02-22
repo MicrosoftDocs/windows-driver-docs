@@ -1,7 +1,6 @@
 ---
 title: USB Video Class Driver Stack
 description: USB Video Class Driver Stack
-ms.assetid: 8dd9ce8d-eaa0-43d3-a27a-5b328220e10e
 keywords:
 - USB Video Class drivers WDK AVStream , about USB Video Class driver stack
 - Video Class drivers WDK USB , about USB Video Class driver stack

@@ -1,5 +1,5 @@
 ---
-Description: Messaging Functionality
+description: Messaging Functionality
 title: Messaging Functionality
 ms.date: 04/20/2017
 ms.localizationpriority: medium

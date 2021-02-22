@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES
 description: This topic describes the GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES GUID for the NDIS WMI interface.
-ms.assetid: 6f5e11c1-4fa0-4a9b-90f3-85a3cb8b8878
 keywords:
 - GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES, WDK GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES network drivers
 ms.date: 11/22/2017
@@ -16,7 +15,6 @@ MUX intermediate drivers use the [NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES
 
 When the driver indicates a task offload hardware change, NDIS translates the status indication to a WMI GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES event for WMI clients.
 
-The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_wmi_event_header) structure that is followed by an [NDIS_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure.
+The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_wmi_event_header) structure that is followed by an [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure.
 
 For more information about task offload capabilities, see [NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES](ndis-status-task-offload-hardware-capabilities.md) and [OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES](oid-tcp-offload-hardware-capabilities.md).
-

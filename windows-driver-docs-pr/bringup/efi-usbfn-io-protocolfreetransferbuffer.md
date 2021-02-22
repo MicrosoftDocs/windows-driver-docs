@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
 description: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
-ms.assetid: 236b925f-2c7b-4df8-b5c8-e8c2f7b853d2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

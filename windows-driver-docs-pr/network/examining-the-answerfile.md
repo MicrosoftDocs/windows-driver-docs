@@ -1,7 +1,6 @@
 ---
 title: Examining the AnswerFile
 description: Examining the AnswerFile
-ms.assetid: 42d58786-e50c-43c2-b673-5f23c9930ee7
 keywords:
 - testing network component upgrades WDK
 - AnswerFile WDK networking
@@ -75,7 +74,7 @@ The *postupgrade-ID* entry is the Windows 2000 or later device ID that NetSetup 
 
 Each entry specifies the name of the parameters section for that component in the AnswerFile. For example, if a component's Windows 2000 or later device ID is netadapter2, its entry in the **NetAdapters** section is **params.netadapter2**. The top-level sections and the parameter sections in an AnswerFile are not visible to a network migration DLL.
 
-To the parameters section name for a component, NetSetup adds the extension **OemSection** to create the *OEM-section* name for the component. For example, if the parameters section for a component is params.netadapter2, the *OEM-section* name for the component is params.netadapter2.OemSection. NetSetup passes the *OEM-section* name as the *szSectionName* parameter to the [**DoPreUpgradeProcessing**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545634(v=vs.85)) function supplied by the network migration DLL for the component. The **DoPreUpgradeProcessing** function calls the [**NetUpgradeAddSection**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559063(v=vs.85)) function to create the *OEM-section* for a component in the AnswerFile. The **DoPreUpgradeProcessing** function then calls the [**NetUpgradeAddLineToSection**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559059(v=vs.85)) to add component-specific information to the *OEM-section*.
+To the parameters section name for a component, NetSetup adds the extension **OemSection** to create the *OEM-section* name for the component. For example, if the parameters section for a component is params.netadapter2, the *OEM-section* name for the component is params.netadapter2.OemSection. NetSetup passes the *OEM-section* name as the *szSectionName* parameter to the [**DoPreUpgradeProcessing**](/previous-versions/windows/hardware/network/ff545634(v=vs.85)) function supplied by the network migration DLL for the component. The **DoPreUpgradeProcessing** function calls the [**NetUpgradeAddSection**](/previous-versions/windows/hardware/network/ff559063(v=vs.85)) function to create the *OEM-section* for a component in the AnswerFile. The **DoPreUpgradeProcessing** function then calls the [**NetUpgradeAddLineToSection**](/previous-versions/windows/hardware/network/ff559059(v=vs.85)) to add component-specific information to the *OEM-section*.
 
 The following portion of an AnswerFile shows the sections and entries for a network adapter whose Windows 2000 or later device ID is **adapter2**:
 
@@ -100,9 +99,9 @@ HKR,0\1,IsdnSpid,0,"222"
 HKR,0,IsdnSwitchType,0x00010001,1
 ```
 
-During the GUI mode phase, NetSetup detects the [**InfToRunAfterInstall**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559059(v=vs.85)) key written by the migration DLL to the **params.adapter2.OemSection** of the example AnswerFile. As directed by this key, NetSetup processes the **adapter2.SectionToRun.AddReg** section. The **adapter2.SectionToRun.AddReg** section directs NetSetup to add parameter values to adapater2's instance key in the Windows 2000 or later registry. These parameter values should match the preupgrade parameter values that the migration DLL read from adapter2's the registry during the Winnt32 phase of the upgrade.
+During the GUI mode phase, NetSetup detects the [**InfToRunAfterInstall**](/previous-versions/windows/hardware/network/ff559059(v=vs.85)) key written by the migration DLL to the **params.adapter2.OemSection** of the example AnswerFile. As directed by this key, NetSetup processes the **adapter2.SectionToRun.AddReg** section. The **adapter2.SectionToRun.AddReg** section directs NetSetup to add parameter values to adapater2's instance key in the Windows 2000 or later registry. These parameter values should match the preupgrade parameter values that the migration DLL read from adapter2's the registry during the Winnt32 phase of the upgrade.
 
-If a network migration DLL is to be loaded during the GUI mode phase, its [**DoPreUpgradeProcessing**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545634(v=vs.85)) function sets the NUA\_LOAD\_POST\_UPGRADE flag. This flag causes NetSetup to write the **OemDllToLoad** entry to the component's parameters section in the AnswerFile. The **OemDllToLoad** entry causes NetSetup to load the migration DLL for the component during the GUI mode phase.
+If a network migration DLL is to be loaded during the GUI mode phase, its [**DoPreUpgradeProcessing**](/previous-versions/windows/hardware/network/ff545634(v=vs.85)) function sets the NUA\_LOAD\_POST\_UPGRADE flag. This flag causes NetSetup to write the **OemDllToLoad** entry to the component's parameters section in the AnswerFile. The **OemDllToLoad** entry causes NetSetup to load the migration DLL for the component during the GUI mode phase.
 
 The following example shows the AnswerFile sections and entries for a component whose network migration DLL is loaded during the GUI mode phase:
 
@@ -118,10 +117,4 @@ OemDllToLoad=c:\temp\oem0001\migration.dll
 Note the **OemDllToLoad** entry in the **params.adapter2** section. Also note that the migration DLL did not create a **params.adapter2.OemSection**. When the migration DLL is to be loaded during the GUI mode phase, it typically does not write an **InfToRunAfterInstall** key to the AnswerFile. The DLL performs the postinstallation upgrade; therefore, it does not need to create an *Oem-Section* name that contains directives for NetSetup to perform during the GUI mode phase.
 
  
-
- 
-
-
-
-
 

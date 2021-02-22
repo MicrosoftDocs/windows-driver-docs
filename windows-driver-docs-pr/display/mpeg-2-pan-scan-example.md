@@ -1,7 +1,6 @@
 ---
 title: MPEG-2 Pan-Scan Example
 description: MPEG-2 Pan-Scan Example
-ms.assetid: 6ce4722c-5406-4b29-9171-ecab049320e7
 keywords:
 - alpha-blend combination WDK DirectX VA , MPEG-2 pan-scan example
 - blended pictures WDK DirectX VA , MPEG-2 pan-scan example
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_mpeg_2_pan_scan_example_gg"></span><span id="DDK_MPEG_2_PAN_SCAN_EXAMPLE_GG"></span>
 
 
-When the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure is used to select an area specified by MPEG-2 video pan-scan parameters, the values for **PictureSourceRect16thPel** members can be computed using the following expressions. These values should not violate the restrictions described for the alpha-blend combination buffers when using **PictureSourceRect16thPel**. For more information, see the **Remarks** section for the DXVA\_BlendCombination structure.
+When the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure is used to select an area specified by MPEG-2 video pan-scan parameters, the values for **PictureSourceRect16thPel** members can be computed using the following expressions. These values should not violate the restrictions described for the alpha-blend combination buffers when using **PictureSourceRect16thPel**. For more information, see the **Remarks** section for the DXVA\_BlendCombination structure.
 
 These constraints could be violated with some MPEG-2 pan-scan parameters and, in particular, with some MPEG-2 DVD content, requiring some adjustments to the **PictureSourceRect16thPel**.
 
@@ -40,10 +39,4 @@ The **PictureDestinationRect** member of the DXVA\_BlendCombination structure wo
 -   **bottom** = **top** + *display\_vertical\_size*
 
  
-
- 
-
-
-
-
 

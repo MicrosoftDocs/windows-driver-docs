@@ -1,7 +1,6 @@
 ---
 title: DestinationToken element
 description: The required DestinationToken element contains a device-specific string that the scanner assigns to the current client destination.
-ms.assetid: 92ff99a2-079a-4001-aa01-ff5db09f6fd2
 keywords: ["DestinationToken element Imaging Devices"]
 topic_type:
 - apiref

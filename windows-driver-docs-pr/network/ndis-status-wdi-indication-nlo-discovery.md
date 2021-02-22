@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY to indicate Network List Offload (NLO) discovery.
-ms.assetid: 1a789bd8-8601-45f3-a9bf-5220c20379cb
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY Network Drivers Starting with Windows Vista
@@ -41,7 +40,7 @@ The indication of NLO discovery happens in the following two cases.
 
 | Type                                                   | Multiple TLV instances allowed | Optional | Description                                                                                      |
 |--------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bss-entry) | X                              |          | A list of BSSIDs. The list must at least contain the entry that triggered this discovery status. |
+| [**WDI\_TLV\_BSS\_ENTRY**](./wdi-tlv-bss-entry.md) | X                              |          | A list of BSSIDs. The list must at least contain the entry that triggered this discovery status. |
 
  
 
@@ -70,9 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Converting Virtual Addresses to Physical Addresses
 description: Converting Virtual Addresses to Physical Addresses
-ms.assetid: 5b3d19df-09cc-4131-ae64-5ce64d986df3
 keywords: ["virtual address", "virtual address, converting to physical address", "physical address", "physical address, converting from virtual address", "addresses", "addresses, converting virtual to physical", "memory, virtual addresses", "memory, physical addresses"]
 ms.date: 05/04/2018
 ms.localizationpriority: medium
@@ -16,7 +15,7 @@ Most debugger commands use virtual addresses, not physical addresses, as their i
 
 There are two ways to convert a virtual address to a physical address: by using the **!vtop** extension, and by using the **!pte** extension.
 
-For an overview of virtual address in Windows, see [Virtual address spaces](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/virtual-address-spaces). 
+For an overview of virtual address in Windows, see [Virtual address spaces](../gettingstarted/virtual-address-spaces.md). 
 
 
 ### <span id="address_conversion_using__vtop"></span><span id="ADDRESS_CONVERSION_USING__VTOP"></span>Address Conversion Using !vtop
@@ -188,10 +187,4 @@ This PTE has value 0x09DE9067. It is made of two fields:
 The first physical address on the physical page is the PFN multiplied by 0x1000 (shifted left 12 bits). The byte index is the offset on this page. Thus,the physical address you are looking for is 0x09DE9000 + 0x980 = 0x09DE9980. This is the same result obtained by the earlier methods.
 
  
-
- 
-
-
-
-
 

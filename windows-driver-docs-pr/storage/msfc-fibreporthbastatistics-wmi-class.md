@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortHBAStatistics WMI Class
 description: MSFC\_FibrePortHBAStatistics WMI Class
-ms.assetid: 24c787b6-b9f7-4c9b-8d1d-6b2796f65622
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -47,15 +46,9 @@ class MSFC_FibrePortHBAStatistics
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FibrePortHBAStatistics**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fibreporthbastatistics)
+[**MSFC\_FibrePortHBAStatistics**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fibreporthbastatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: balloonUI element
 description: The optional balloonUI element is used to display a message balloon on the client computer.
-ms.assetid: 8db15dcb-26ed-429e-ad4c-e5dc59f9bbca
 keywords: ["balloonUI element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The optional **balloonUI** element is used to display a message balloon on the client computer.
 
-The **balloonUI** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request) (this resource may not be available in some languages and countries.)
+The **balloonUI** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

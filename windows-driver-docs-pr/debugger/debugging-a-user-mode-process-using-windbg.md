@@ -1,7 +1,6 @@
 ---
 title: Debugging a User-Mode Process Using WinDbg
 description: You can use WinDbg to attach to a running process or to spawn and attach to a new process.
-ms.assetid: 65677DE4-4C91-4E24-B9BC-0924619C7307
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ There are several ways you can use WinDbg to attach to a running process. Regard
 
 When WinDbg is in dormant mode, you can attach to a running process by choosing **Attach to a Process** from the **File** menu or by pressing **F6**.
 
-In the **Attach to Process** dialog box, select the process you want to debug, and click **OK**.
+In the **Attach to Process** dialog box, select the process you want to debug, and select **OK**.
 
 ### <span id="command_prompt1"></span><span id="COMMAND_PROMPT1"></span>Command Prompt
 
@@ -50,7 +49,7 @@ If you want to debug a running process and interfere only minimally in its execu
 
 When WinDbg is in dormant mode, you can noninvasively debug a running process by choosing **Attach to a Process** from the **File** menu or by pressing **F6**.
 
-When the **Attach to Process** dialog box appears, select the **Noninvasive** check box. Then, select the line that contains the process ID and name that you want. (You can also enter the process ID in the **Process ID** box.) Finally, click **OK**.
+When the **Attach to Process** dialog box appears, select the **Noninvasive** check box. Then, select the line that contains the process ID and name that you want. (You can also enter the process ID in the **Process ID** box.) Finally, select **OK**.
 
 ### <span id="command_prompt2"></span><span id="COMMAND_PROMPT2"></span>Command Prompt
 
@@ -87,7 +86,7 @@ When the Open Executable dialog box appears, enter the full path of the executab
 
 If you want to use any command-line parameters with the user-mode application, enter them in the **Arguments** box. If you want to change the starting directory from the default directory, enter the directory path in the **Start** directory box. If you want WinDbg to attach to child processes, select the **Debug child processes also** check box.
 
-After you make your selections, click **Open**.
+After you make your selections, select **Open**.
 
 ### <span id="Command_Prompt"></span><span id="command_prompt"></span><span id="COMMAND_PROMPT"></span>Command Prompt
 

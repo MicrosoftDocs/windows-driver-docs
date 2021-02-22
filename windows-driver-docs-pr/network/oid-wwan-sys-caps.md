@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SYS_CAPS_INFO
 description: OID_WWAN_SYS_CAPS_INFO retrieves information about the modem. It can be sent on any of the NDIS instances exposed by the modem.
-ms.assetid: D158432A-A715-4ABB-969C-F8F80D2DB845
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SYS_CAPS_INFO Network Drivers Starting with Windows Vista
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_SYS\_CAPS\_INFO retrieves information about the modem. It can be sent on any of the NDIS instances exposed by the modem.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_SYS\_CAPS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sys-caps) status notification containing an [**NDIS\_WWAN\_SYS\_CAPS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sys_caps_info) structure, which in turn contains a [**WWAN\_SYS\_CAPS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_info) structure, to provide information about the overall modem system capability.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_SYS\_CAPS\_INFO**](./ndis-status-wwan-sys-caps.md) status notification containing an [**NDIS\_WWAN\_SYS\_CAPS\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sys_caps_info) structure, which in turn contains a [**WWAN\_SYS\_CAPS\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_info) structure, to provide information about the overall modem system capability.
 
 The following diagram illustrates a query request.
 
@@ -53,20 +52,15 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_SYS\_CAPS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sys-caps)
+[**NDIS\_STATUS\_WWAN\_SYS\_CAPS\_INFO**](./ndis-status-wwan-sys-caps.md)
 
-[**NDIS\_WWAN\_SYS\_CAPS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sys_caps_info)
+[**NDIS\_WWAN\_SYS\_CAPS\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sys_caps_info)
 
-[**WWAN\_SYS\_CAPS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_info)
+[**WWAN\_SYS\_CAPS\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_info)
 
 [OID\_WWAN\_DEVICE\_CAPS\_EX](oid-wwan-device-caps-ex.md)
 
 [OID\_WWAN\_DEVICE\_CAPS](oid-wwan-device-caps.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Run new SMS received background events
 description: Run new SMS received background events
-ms.assetid: 57534569-3678-4e2c-b55a-7dc6f057fb7d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

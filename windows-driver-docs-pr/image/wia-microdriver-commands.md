@@ -1,7 +1,6 @@
 ---
 title: WIA Microdriver Commands
 description: WIA Microdriver Commands
-ms.assetid: 54d0c35b-d8b3-4e38-85cf-d5b4f80f6daa
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_wia_microdriver_commands_si"></span><span id="DDK_WIA_MICRODRIVER_COMMANDS_SI"></span>
 
 
-The following set of constants form the set of WIA microdriver commands. The commands are passed to the microdriver from the WIA Flatbed driver in the *lCommand* parameter of the [**MicroEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamicro/nf-wiamicro-microentry) function. The commands are grouped into the following categories:
+The following set of constants form the set of WIA microdriver commands. The commands are passed to the microdriver from the WIA Flatbed driver in the *lCommand* parameter of the [**MicroEntry**](/windows-hardware/drivers/ddi/wiamicro/nf-wiamicro-microentry) function. The commands are grouped into the following categories:
 
 -   [Automatic Document Feeder Commands](automatic-document-feeder-commands.md)
 
@@ -33,10 +32,4 @@ The following set of constants form the set of WIA microdriver commands. The com
 These commands are defined in *Wiamicro.h*, and are available in Windows Me and in Windows XP and later.
 
  
-
- 
-
-
-
-
 

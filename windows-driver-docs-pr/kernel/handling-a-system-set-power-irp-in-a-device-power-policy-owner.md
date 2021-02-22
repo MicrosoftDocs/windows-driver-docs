@@ -1,7 +1,6 @@
 ---
 title: Handling a System Set-Power IRP in a Device Power Policy Owner
 description: Handling a System Set-Power IRP in a Device Power Policy Owner
-ms.assetid: f6206455-142b-4f3f-ae5a-d8e79386bce3
 keywords: ["set-power IRPs WDK power management", "device power policy owners WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 In response to a system set-power IRP, the [power policy owner](managing-device-power-policy.md) for a device stack is responsible for putting its device stack into an appropriate device power state.
 
-As a general rule, when a device power policy owner receives an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) for a system power state, it should respond by passing the system set-power IRP down the device stack. A device power policy owner should also respond by sending down the device stack **IRP\_MN\_SET\_POWER** for a corresponding device power state in an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine. After all drivers in the stack have completed the device set-power IRP, the device power policy owner completes the system set-power IRP.
+As a general rule, when a device power policy owner receives an [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) for a system power state, it should respond by passing the system set-power IRP down the device stack. A device power policy owner should also respond by sending down the device stack **IRP\_MN\_SET\_POWER** for a corresponding device power state in an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine. After all drivers in the stack have completed the device set-power IRP, the device power policy owner completes the system set-power IRP.
 
 However, to improve system resume performance, device power owners for devices that do not have child devices should use a different approach to reduce the time it takes a system to return to [working state S0](system-working-state-s0.md) from a [sleeping state](system-sleeping-states.md). In this case, in response to a system set-power IRP that returns a system to working state S0, device power policy owners should perform the following sequence of operations:
 
@@ -38,9 +37,4 @@ For more detail on handling system set-power IRPs, see the following:
 [Sending a Device Set-Power IRP in Response to a System Set-Power IRP](sending-a-device-set-power-irp-in-response-to-a-system-set-power-irp.md)
 
  
-
- 
-
-
-
 

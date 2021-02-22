@@ -1,7 +1,6 @@
 ---
 title: CodePage Template Entry Issues
 description: CodePage Template Entry Issues
-ms.assetid: e11c1857-f12f-44c0-be35-eba93b4b87eb
 keywords:
 - data types WDK GDL , problems with template data types
 - CodePage directive WDK GDL

@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_UNSIGNED_DRIVER
 description: CM_PROB_UNSIGNED_DRIVER
-ms.assetid: 91d37d25-ca0d-413f-9e6f-5a22a0406714
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -28,4 +27,4 @@ For driver developers, you can use various methods to load an unsigned driver on
 
 ## See Also
 
-[Code Integrity Diagnostic System Log Events](https://docs.microsoft.com/windows-hardware/drivers/install/code-integrity-diagnostic-system-log-events)
+[Code Integrity Diagnostic System Log Events](./code-integrity-diagnostic-system-log-events.md)

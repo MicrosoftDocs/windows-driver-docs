@@ -1,7 +1,6 @@
 ---
 title: Monitoring Individual Counters
 description: Monitoring Individual Counters
-ms.assetid: 95d4492b-20b9-401a-97aa-eaf700b64420
 keywords:
 - individual counters WDK Driver Verifier
 - Driver Verifier WDK , counters

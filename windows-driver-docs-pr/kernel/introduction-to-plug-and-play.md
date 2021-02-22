@@ -1,7 +1,6 @@
 ---
 title: Introduction to Plug and Play
 description: Introduction to Plug and Play
-ms.assetid: 2ad9663b-ea47-4f7a-a382-53de3719214b
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -35,7 +34,7 @@ The system software support for PnP, together with PnP drivers provides the foll
 
 -   A programming interface for drivers to interact with the PnP system
 
-    The interface includes [I/O manager routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)), [Plug and Play minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps), required [standard driver routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-standard-driver-routines), and information in the registry.
+    The interface includes [I/O manager routines](/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)), [Plug and Play minor IRPs](./plug-and-play-minor-irps.md), required [standard driver routines](./introduction-to-standard-driver-routines.md), and information in the registry.
 
 -   Mechanisms for drivers and applications to learn of changes in the hardware environment and take appropriate actions
 
@@ -58,9 +57,4 @@ This section contains the following additional topics:
 [State Transitions for PnP Devices](state-transitions-for-pnp-devices.md)
 
  
-
- 
-
-
-
 

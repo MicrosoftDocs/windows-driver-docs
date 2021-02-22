@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceDisplay_Category
 description: DEVPKEY_DeviceDisplay_Category
-ms.assetid: 4f1999cd-e3b7-4755-ab48-1feabbc9d245
 keywords: ["DEVPKEY_DeviceDisplay_Category Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_DeviceDisplay_Category device property represents one or more functi
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -50,9 +55,9 @@ The DEVPKEY_DeviceDisplay_Category device property represents one or more functi
 Remarks
 -------
 
-Device categories for a physical device are specified through the [**DeviceCategory**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff541101(v=vs.85)) XML element in a [device metadata package](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages). Each instance of that device in a system inherits the device categories for that physical device.
+Device categories for a physical device are specified through the [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85)) XML element in a [device metadata package](./overview-of-device-metadata-packages.md). Each instance of that device in a system inherits the device categories for that physical device.
 
-Each physical device can have one or more functional categories specified in the [device metadata package](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages). Each category is used by Windows Devices and Printers to group the device instance into one of the recognized device categories.
+Each physical device can have one or more functional categories specified in the [device metadata package](./overview-of-device-metadata-packages.md). Each category is used by Windows Devices and Printers to group the device instance into one of the recognized device categories.
 
 Multifunction devices would typically identify multiple functional categories for each hardware function that the device supports. For example, a multifunction device could identify functional categories for printer, fax, scanner, and removable storage device functionality.
 
@@ -62,7 +67,7 @@ If the DEVPKEY_DeviceDisplay_Category device property specifies more than one fu
 
 The **Devices and Printers** user interface in Control Panel displays the primary and secondary functional categories of the device instance. These categories are displayed in the order that is specified in the DEVPKEY_DeviceDisplay_Category device property.
 
-You can access the DEVPKEY_DeviceDisplay_Category property by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can access the DEVPKEY_DeviceDisplay_Category property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 Requirements
 ------------
@@ -87,16 +92,7 @@ Requirements
 ## See also
 
 
-[**DeviceCategory**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))
+[**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
-
- 
-
-
-
-
-
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS
 description: OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS is used to set or query the list of preferred multi-carrier network providers. Multi-carrier providers are ones that can be set as home providers.
-ms.assetid: BA78E0B9-1B57-412C-83E7-328F8304C82D
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS Network Drivers Starting with Windows Vista
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS is used to *set* or *query* the list of preferred multi-carrier network providers. Multi-carrier providers are ones that can be *set* as home providers.
 
-Both *set* and *query* requests are supported. Miniport drivers must process *set* and *query* requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers) status notification containing an [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers) structure.
+Both *set* and *query* requests are supported. Miniport drivers must process *set* and *query* requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](./ndis-status-wwan-preferred-multicarrier-providers.md) status notification containing an [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers) structure.
 
 Miniport drivers should set the **PreferredListHeader.ElementType** member to **WwanStructProvider2** and the **PreferredListHeader.ElementCount** member to the number of providers in the list when responding to OID\_WWAN\_PREFERRED\_PROVIDERS *query* requests. The multi-carrier providers returned in a *query* must be able to be set as the home provider at the time the preferred multi-carrier list is returned to the service.
 
@@ -46,16 +45,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
+[**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
 
-[**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers)
+[**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](./ndis-status-wwan-preferred-multicarrier-providers.md)
 
-[MB Provider Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-provider-operations)
-
- 
+[MB Provider Operations](./mb-provider-operations.md)
 
  
-
-
-
 

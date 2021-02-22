@@ -1,7 +1,6 @@
 ---
 title: ValidationInfo element
 description: The required ValidationInfo element contains all ScanTicket validation information in response to a client's ValidateScanTicketRequest.
-ms.assetid: c727cbd7-6da0-4750-b36e-3b65e56015fa
 keywords: ["ValidationInfo element Imaging Devices"]
 topic_type:
 - apiref

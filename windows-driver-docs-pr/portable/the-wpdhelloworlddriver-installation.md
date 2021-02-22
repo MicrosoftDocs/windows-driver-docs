@@ -1,5 +1,5 @@
 ---
-Description: Installing the WpdHelloWorldDriver Sample
+description: Installing the WpdHelloWorldDriver Sample
 title: Installing the WpdHelloWorldDriver Sample
 ms.date: 04/20/2017
 ms.localizationpriority: medium

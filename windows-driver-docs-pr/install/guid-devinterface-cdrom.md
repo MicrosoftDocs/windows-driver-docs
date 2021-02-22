@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_CDROM
 description: GUID_DEVINTERFACE_CDROM
-ms.assetid: ecc31c09-27f5-4a80-8aa6-adc70d8a76c3
 keywords: ["GUID_DEVINTERFACE_CDROM Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_CDROM
 
 
-The GUID_DEVINTERFACE_CDROM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for CD-ROM [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index).
+The GUID_DEVINTERFACE_CDROM [device interface class](./overview-of-device-interface-classes.md) is defined for CD-ROM [storage devices](../storage/index.md).
 
 <table>
 <colgroup>
@@ -50,11 +49,11 @@ Remarks
 
 The system-supplied class driver for CD-ROM storage devices registers instances of this device interface class to notify the operating system and applications of the presence of a CD-ROM device.
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](https://go.microsoft.com/fwlink/p/?linkid=256093) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The CD-ROM class driver sample uses the obsolete identifier [**CdRomClassGuid**](cdromclassguid.md) to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The CD-ROM class driver sample uses the obsolete identifier [**CdRomClassGuid**](cdromclassguid.md) to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
 
 For information about the device interface class for CD-ROM changer devices, see [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md).
 
-For information about storage devices, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For information about storage devices, see [Storage Drivers](../storage/storage-drivers.md).
 
 Requirements
 ------------
@@ -78,13 +77,4 @@ Requirements
 [**CdRomClassGuid**](cdromclassguid.md)
 
 [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md)
-
- 
-
- 
-
-
-
-
-
 

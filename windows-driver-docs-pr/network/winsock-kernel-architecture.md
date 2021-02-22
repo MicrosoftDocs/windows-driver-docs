@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Architecture
 description: Winsock Kernel Architecture
-ms.assetid: 3a43c200-4180-4d1b-8ca6-ee82a84b9194
 keywords:
 - Winsock Kernel WDK networking , architecture
 - WSK WDK networking , architecture
@@ -23,15 +22,9 @@ At the core of the WSK architecture is the WSK subsystem. The WSK subsystem is a
 
 Attached to the WSK subsystem are WSK applications. WSK applications are kernel-mode software modules that implement the client side of the WSK NPI in order to perform network I/O operations. (In this context, "client" should not be confused with the term as used in client-server systems). . The WSK subsystem can call the functions in the WSK client NPI to notify the WSK application of asynchronous events.
 
-WSK applications discover and attach to the WSK subsystem by using a set of [WSK registration functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/). Applications can use these functions to dynamically detect when the WSK subsystem is available and to exchange dispatch tables that constitute the provider and client side implementations of the WSK NPI.
+WSK applications discover and attach to the WSK subsystem by using a set of [WSK registration functions](/windows-hardware/drivers/ddi/_netvista/). Applications can use these functions to dynamically detect when the WSK subsystem is available and to exchange dispatch tables that constitute the provider and client side implementations of the WSK NPI.
 
 Alternately, WSK applications can attach to the WSK subsystem by using the [Network Module Registrar (NMR)](network-module-registrar2.md). For more information, see [Using NMR for WSK Registration and Unregistration](using-nmr-for-wsk-registration-and-unregistration.md).
 
  
-
- 
-
-
-
-
 

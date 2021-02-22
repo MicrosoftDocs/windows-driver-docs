@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_SETALLDEFAULTS
 description: CODECAPI\_SETALLDEFAULTS
-ms.assetid: 6a50a75f-cbc5-487f-b2cd-34e89eb127a0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -56,13 +55,7 @@ The minidriver should cache its entire list of changed parameters for [CODECAPI\
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
- 
-
-
-
-
 

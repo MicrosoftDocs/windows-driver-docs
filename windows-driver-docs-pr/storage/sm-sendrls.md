@@ -1,7 +1,6 @@
 ---
 title: SM\_SendRLS function
 description: The SM\_SendRLS WMI method sends a read link status (RLS) through the indicated local port. This RLS is sent to the indicated remote port to retrieve a link error status block that is associated with the remote port.
-ms.assetid: 4498edde-1249-43b8-b581-37e24f8bd2d3
 keywords: ["SM_SendRLS function Storage Devices"]
 topic_type:
 - apiref
@@ -94,14 +93,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRLS\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrls_out)
+[**SM\_SendRLS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrls_out)
 
  
-
- 
-
-
-
-
-
 

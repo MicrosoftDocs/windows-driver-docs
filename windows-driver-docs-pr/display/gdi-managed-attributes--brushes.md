@@ -1,7 +1,6 @@
 ---
 title: GDI-Managed Attributes Brushes
 description: GDI-Managed Attributes Brushes
-ms.assetid: 8ca38ba1-824d-45be-9039-13222d3400c3
 keywords:
 - GDI WDK Windows 2000 display , rendering engine
 - graphics drivers WDK Windows 2000 display , rendering engine

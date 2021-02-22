@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Information Retrieval
 description: Participating in Error Information Retrieval
-ms.assetid: ed0ad20b-d978-4650-b3a0-6b0795323c77
 keywords:
 - Windows Hardware Error Architecture WDK , error information retrieval
 - WHEA WDK , error information retrieval
@@ -19,11 +18,11 @@ ms.localizationpriority: medium
 
 To participate in error information retrieval, a PSHED plug-in must implement the following callback functions:
 
-[*RetrieveErrorInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_retrieve_error_info)
+[*RetrieveErrorInfo*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_retrieve_error_info)
 
-[*FinalizeErrorRecord*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_finalize_error_record)
+[*FinalizeErrorRecord*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_finalize_error_record)
 
-[*ClearErrorStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_clear_error_status)
+[*ClearErrorStatus*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_clear_error_status)
 
 The following code example shows how to implement these callback functions.
 
@@ -172,9 +171,4 @@ NTSTATUS
 A PSHED plug-in that participates in error information retrieval must specify the **PshedFAErrorInfoRetrieval** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
  
-
- 
-
-
-
 

@@ -4,6 +4,8 @@
   href: pci-power-management-and-device-drivers.md
 - name: "Enabling PCI Express Native Control in Windows"
   href: enabling-pci-express-native-control.md
+- name: "Enabling DMA Remapping for device drivers"
+  href: enabling-dma-remapping-for-device-drivers.md
 - name: "Device Specific Data (_DSD) for PCIe Root Ports"
   href: dsd-for-pcie-root-ports.md
 - name: "Accessing PCI Device Configuration Space"

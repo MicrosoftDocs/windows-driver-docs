@@ -1,7 +1,6 @@
 ---
 title: Bob Method
 description: Bob Method
-ms.assetid: 3ef4ad25-fe62-4f80-8d0a-d21035d93c1f
 keywords:
 - DirectX VPE support WDK DirectDraw , displaying interleaved video
 - drawing VPEs WDK DirectDraw , displaying interleaved video

@@ -79,7 +79,7 @@ At the end of the 30-day monitoring period your Shipping Label will be released 
 
 All throttled drivers, whether they start at 1% or 100% will be monitored for at least 30 days. A driver's monitoring period begins as soon as it's released to the retail population in any throttled state.
 
-During this 30-day rollout and monitoring phase, the Shipping Label is locked for any edits. You may cancel the Shipping Label by clicking the **Cancel** button on your Shipping Label.
+During this 30-day rollout and monitoring phase, the Shipping Label is locked for any edits. You may cancel the Shipping Label by selecting the **Cancel** button on your Shipping Label.
 
 This 30-day period may increase if Microsoft needs to **pause** the driver for investigations.
 

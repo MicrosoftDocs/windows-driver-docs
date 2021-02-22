@@ -1,7 +1,6 @@
 ---
 title: CcUnmapFileOffsetFromSystemCache routine
 description: The CcUnmapFileOffsetFromSystemCache routine removes a portion of a cached file from the system cache.
-ms.assetid: 37C4ACB9-343D-4F5F-A8B8-FB99A7EA274A
 keywords: ["CcUnmapFileOffsetFromSystemCache routine Installable File System Drivers"]
 topic_type:
 - apiref

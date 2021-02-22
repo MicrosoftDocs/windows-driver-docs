@@ -1,7 +1,6 @@
 ---
 title: icon XML Element
 description: icon XML Element
-ms.assetid: 1d5acaf7-ef90-40f7-a2f9-f1002207f3fb
 keywords: ["icon XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,9 +15,9 @@ ms.date: 10/17/2018
 # icon XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
-The **icon** XML element specifies the source file for a custom icon that DPInst displays on the DPInst EULA page. DPInst uses this icon to represent DPInst on the Microsoft Windows taskbar and desktop. DPInst also uses this icon for the entry that represents a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages), which DPInst adds to **Programs and Features** in Control Panel
+The **icon** XML element specifies the source file for a custom icon that DPInst displays on the DPInst EULA page. DPInst uses this icon to represent DPInst on the Microsoft Windows taskbar and desktop. DPInst also uses this icon for the entry that represents a [driver package](./driver-packages.md), which DPInst adds to **Programs and Features** in Control Panel
 
 **Note**  Prior to Windows Vista, DPInst added the entry for the driver package to **Add or Remove Programs** in Control Panel.
 
@@ -87,11 +86,4 @@ If an **icon** element is not specified, DPInst displays a default icon. The pos
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

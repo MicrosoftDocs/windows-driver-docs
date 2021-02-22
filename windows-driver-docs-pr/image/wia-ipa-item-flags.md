@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_FLAGS
 description: The WIA\_IPA\_ITEM\_FLAGS property contains the descriptive flags for a WIA item.
-ms.assetid: ee25fb38-eafa-49a9-83ab-4f99bc25f4e9
 keywords: ["WIA_IPA_ITEM_FLAGS Imaging Devices"]
 topic_type:
 - apiref
@@ -32,7 +31,7 @@ Access Rights: Read-only
 Remarks
 -------
 
-The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA\_IPA\_ITEM\_FLAGS property.
+The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA\_IPA\_ITEM\_FLAGS property.
 
 An application reads WIA\_IPA\_ITEM\_FLAGS to determine a WIA item's descriptive flag values.
 
@@ -217,14 +216,7 @@ Requirements
 
 [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md)
 
-[**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem)
+[**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem)
 
  
-
- 
-
-
-
-
-
 

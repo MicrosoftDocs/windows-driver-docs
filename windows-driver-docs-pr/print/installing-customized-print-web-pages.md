@@ -1,7 +1,6 @@
 ---
 title: Installing Customized Print Web Pages
 description: Installing Customized Print Web Pages
-ms.assetid: 8a50e7ea-0e91-476f-86cb-935329b76f91
 keywords:
 - installing drivers WDK printer , Web pages
 - print Web pages WDK , customizing

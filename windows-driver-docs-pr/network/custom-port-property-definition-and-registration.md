@@ -1,7 +1,6 @@
 ---
 title: Custom Port Property Definition and Registration
 description: Custom Port Property Definition and Registration
-ms.assetid: 55FCA402-191B-4DC9-A126-77AA15183E90
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -63,7 +62,7 @@ mofcomp -N:root\virtualization\v2 Fabrikam_PortCustomSettingData.mof
 net start vmms
 ```
 
-For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](https://docs.microsoft.com/windows-hardware/drivers/kernel/compiling-a-driver-s-mof-file).
+For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](../kernel/compiling-a-driver-s-mof-file.md).
 
 The following example shows how you can configure the sample feature. In this example, the Fabrikam\_PortCustomSettingData MOF class is used to configure a port from a Hyper-V partition named "TestVm".
 
@@ -144,10 +143,4 @@ SettingIntB      : 9999
 For more information on how extensible switch extensions manage port policies, see [Managing Port Policies](managing-port-policies.md).
 
  
-
- 
-
-
-
-
 

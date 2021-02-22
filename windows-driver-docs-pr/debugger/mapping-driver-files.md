@@ -1,21 +1,18 @@
 ---
 title: Mapping Driver Files
 description: Mapping Driver Files
-ms.assetid: 9a13a6a9-b585-4be1-b7c8-da65fa3ba6c6
 keywords: ["mapping driver files", "driver replacement map", "driver replacement map, overview", "driver replacement map, file format", "driver replacement map, replacing boot drivers", "boot driver replacement"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 ms.localizationpriority: medium
 ---
 
 # Mapping Driver Files
 
-
 ## <span id="ddk_mapping_driver_files_dbg"></span><span id="DDK_MAPPING_DRIVER_FILES_DBG"></span>
-
 
 Replacing driver files can be difficult. Frequently, you have to boot to the Microsoft Windows *safe build*, replace the driver binary, and then boot again.
 
-However, Windows XP and later versions of Windows support a simpler method of replacing driver files. You can use this method to replace any kernel-mode driver (including display drivers), any Windows subsystem driver, or any other kernel-mode module. For simplicity, these files are called *drivers* in this topic, even though you can use this method for any kernel-mode module.
+An alternative method exists using mapping files. You can use this mapping method to replace any kernel-mode driver (including display drivers), any Windows subsystem driver, or any other kernel-mode module. For simplicity, these files are called *drivers* in this topic, even though you can use this method for any kernel-mode module.
 
 You can use this method whenever WinDbg or KD is attached as a kernel debugger. You can also use this method on a boot driver, but it is more difficult. For more information about how to use this method with boot drivers, see Replacing Boot Drivers.
 
@@ -90,6 +87,7 @@ The map file can include blank lines and can include comment lines that begin wi
 The following example shows a driver replacement map file.
 
 ```text
+# Use the # for comments like this one
 map
 \Systemroot\system32\drivers\videoprt.sys
 e:\MyNewDriver\binaries\videoprt.sys
@@ -97,7 +95,7 @@ map
 \Systemroot\system32\mydriver.sys
 \\myserver\myshare\new_drivers\mydriver0031.sys
 
-# Here is a comment
+# This is replacing a beep driver
 map
 \??\c:\windows\system32\beep.sys
 \\myserver\myshare\new_drivers\new_beep.sys
@@ -117,7 +115,7 @@ You can enable the bcdedit bootdebug option to view early boot information that 
 bcdedit -bootdebug on
 ```
 
-For more information, see [BCDEdit Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+For more information, see [BCDEdit Options Reference](../devtest/bcd-boot-options-reference.md).
 
 If the kernel debugger exits, no more driver replacement occurs. However, any drivers that have already been replaced do not revert to their old binaries, because the driver files are actually overwritten.
 
@@ -128,22 +126,3 @@ You do not have to restart the target computer. Driver replacement occurs any ti
 If the \_NT\_KD\_FILES variable is defined, the specified driver replacement map file is read when the kernel debugger is started. If you issue the **.kdfiles** command, the specified file is read immediately. At this point, the debugger verifies that the file has the basic map/line/line format. But the actual paths and file names are not verified until substitution occurs.
 
 After the map file has been read, the debugger stores its contents. If you change this file after this point, the changes have no effect (unless you reissue the **.kdfiles** command).
-
-### <span id="replacing_boot_drivers"></span><span id="REPLACING_BOOT_DRIVERS"></span>Replacing Boot Drivers
-
-If you want to replace a boot driver file by using this driver replacement method, you must connect the kernel debugger to the Windows boot loader (Ntldr), not to the Windows kernel. Before you can make this connection, you must install a special debugger-enabled version of Ntldr. You can find this version of Ntldr in the Windows Driver Kit (WDK), in the %DDKROOT%\\debug directory.
-
-Because the target computer bypasses its Boot.ini file, you cannot set the kernel connection protocol in the typical manner. You must make the connection through the COM1 port on the target computer. The baud rate is 115200. Therefore, the kernel debugger on the host computer should be configured to use a COM connection at the 115200 speed.
-
-This special method applies only to boot drivers (that is, Acpi.sys, Classpnp.sys, Disk.sys, and anything else that [**lm t n**](lm--list-loaded-modules-.md) displays at the initial Windows breakpoint). If you have to replace a standard driver that **MmLoadSystemImage** loads after the boot has been completed, you should use the standard method described earlier.
-
-You cannot replace boot drivers on a computer that uses EFI firmware instead of the Boot.ini file.
-
- 
-
- 
-
-
-
-
-

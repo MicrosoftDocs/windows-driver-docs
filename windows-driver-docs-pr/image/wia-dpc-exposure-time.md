@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_TIME
 description: The WIA\_DPC\_EXPOSURE\_TIME property corresponds to the shutter speed, in seconds that are scaled by 10,000.
-ms.assetid: 78f12aaa-4b7b-4ba3-a6af-791e97581d26
 keywords: ["WIA_DPC_EXPOSURE_TIME Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: MSI-X Initialization
 description: MSI-X Initialization
-ms.assetid: 64e79ea1-eb6b-4c94-8bad-dd892b712b28
 keywords:
 - MSI-X WDK networking , initializing
 - message-signaled interrupts WDK networking , initializing
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 
 
 
-To support MSI-X, MSI initialization requires a pre-registration phase in which the miniport driver establishes a function that filters resource-requirements. This function can change the interrupt affinity for each MSI-X message or remove message interrupt resources if the driver will register for line-based interrupts in the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
+To support MSI-X, MSI initialization requires a pre-registration phase in which the miniport driver establishes a function that filters resource-requirements. This function can change the interrupt affinity for each MSI-X message or remove message interrupt resources if the driver will register for line-based interrupts in the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
-The pre-registration phase occurs before NDIS calls the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. As with line-based interrupts, miniport drivers also register MSI interrupts while initializing miniport adapters in *MiniportInitializeEx*.
+The pre-registration phase occurs before NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. As with line-based interrupts, miniport drivers also register MSI interrupts while initializing miniport adapters in *MiniportInitializeEx*.
 
 This section includes:
 
@@ -30,10 +29,4 @@ This section includes:
 [Registering and Deregistering an MSI Interrupt](registering-and-deregistering-an-msi-interrupt.md)
 
  
-
- 
-
-
-
-
 

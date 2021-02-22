@@ -1,13 +1,25 @@
-- name: "Getting Started with the Windows Driver Kit"
-  href: index.yml
-- name: "What's new in driver development"
+- name: "What's new in driver development for Windows 10, version 2004"
   href: what-s-new-in-driver-development.md
-- name: "Download the Windows Driver Kit (WDK)"
-  href: download-the-wdk.md
-- name: "Installing preview versions of the WDK"
-  href: installing-preview-versions-wdk.md
-- name: "Other WDK downloads"
-  href: other-wdk-downloads.md
+- name: "New in previous releases"
+  items: 
+  - name: "What's new in driver development for Windows 10, version 1903"
+    href: driver-changes-for-windows-10-version-1903.md
+  - name: "What's new in driver development for Windows 10, version 1809"
+    href: driver-changes-for-windows-10-version-1809.md
+  - name: "What's new in driver development for Windows 10, version 1803"
+    href: driver-changes-for-windows-10-version-1803.md
+  - name: "What's new in driver development for Windows 10, version 1709"
+    href: driver-changes-for-windows-10-version-1709.md
+- name: "Downloads"
+  items: 
+  - name: "Download the Windows Driver Kit (WDK)"
+    href: download-the-wdk.md
+  - name: "Installing preview versions of the WDK"
+    href: installing-preview-versions-wdk.md
+  - name: "Other WDK downloads"
+    href: other-wdk-downloads.md
+  - name: "WDK known issues"
+    href: wdk-known-issues.md
 - name: "Bring up guide"
   href: bringup/index.md
 - name: "Developing, Testing, and Deploying Drivers"
@@ -42,6 +54,8 @@
     href: biometric/index.md
   - name: "Bluetooth Drivers"
     href: bluetooth/index.md
+  - name: "Component Firmware Update (CFU)"
+    href: cfu/index.md
   - name: "Display drivers"
     href: display/index.md
   - name: "Driver Development Tools"
@@ -100,6 +114,8 @@
     href: spb/index.md
   - name: "Storage device drivers"
     href: storage/index.md
+  - name: "Storage Firmware Update (SFU)"
+    href: sfu/index.md
   - name: "Streaming media device drivers"
     href: stream/index.md
   - name: "Test Authoring and Execution Framework (TAEF)"
@@ -112,5 +128,7 @@
     href: whea/index.md
   - name: "Windows portable device drivers"
     href: portable/index.md
+- name: "Windows driver API reference"
+  href: /windows-hardware/drivers/ddi
 - name: "Windows driver samples"
   href: samples/index.md

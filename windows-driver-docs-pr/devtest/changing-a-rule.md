@@ -1,7 +1,6 @@
 ---
 title: Changing a Rule
 description: Changing a Rule
-ms.assetid: 7415ee62-90b9-4fa0-ae94-438e60c713e4
 keywords:
 - filtering trace messages, changing rules WDK
 - trace message filters WDK , changing rules

@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Driver Stack
 description: Bluetooth Driver Stack
-ms.assetid: fb13c300-f8ed-4d82-8625-79db4d7feac5
 keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth
@@ -20,9 +19,9 @@ The following image shows the modules within the Bluetooth driver stack, along w
 ![diagram illustrating the bluetooth driver stack](images/bluetooth-architecture.png)
 
 -   **User-mode**
-    -   **User-mode application**- A user-mode application that accesses the Bluetooth driver stack through published APIs. For more information, see [About Bluetooth](https://go.microsoft.com/fwlink/p/?linkid=50712) in the Windows SDK documentation.
+    -   **User-mode application**- A user-mode application that accesses the Bluetooth driver stack through published APIs. For more information, see [About Bluetooth](/windows/win32/bluetooth/about-bluetooth) in the Windows SDK documentation.
 
-        **Note**  User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as [**BluetoothSetLocalServiceInfo**](https://docs.microsoft.com/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo).
+        **Note**  User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as [**BluetoothSetLocalServiceInfo**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo).
 
          
 
@@ -72,12 +71,4 @@ The following image shows the modules within the Bluetooth driver stack, along w
         -   L2CAP implements the Bluetooth logical link control and adaptation protocol. This protocol supports creating a lossless channel to a remote device. L2CAP clients communicate with the L2CAP interface by building and sending Bluetooth request blocks (BRBs).
         -   SDP implements the Bluetooth Service Discovery Protocol.
     -   **BthUsb.sys**- The miniport that abstracts the bus interface from **BthPort**.
-
- 
-
- 
-
-
-
-
 

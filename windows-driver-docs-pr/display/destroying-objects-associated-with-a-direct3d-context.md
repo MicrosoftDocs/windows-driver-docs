@@ -1,7 +1,6 @@
 ---
 title: Destroying Objects Associated with a Direct3D Context
 description: Destroying Objects Associated with a Direct3D Context
-ms.assetid: b464eb31-6062-4c0c-90a2-2de39b5a85ac
 keywords:
 - memory leaks WDK DirectX 9.0
 - context WDK Direct3D , DirectX 9.0
@@ -18,13 +17,7 @@ ms.localizationpriority: medium
 
 This topic applies to DirectX 7.0 and later.
 
-To prevent memory leaks, a display driver must release all objects associated with a Direct3D context when the driver's [**D3dContextDestroy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_contextdestroycb) function is called. These objects include, for example, vertex and pixel [shaders](direct3d-shaders.md), [declarations and code for vertex shaders](separating-declarations-and-code-for-vertex-shaders.md), resources for [asynchronous queries](supporting-asynchronous-query-operations.md), and texture resources.
+To prevent memory leaks, a display driver must release all objects associated with a Direct3D context when the driver's [**D3dContextDestroy**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_contextdestroycb) function is called. These objects include, for example, vertex and pixel [shaders](direct3d-shaders.md), [declarations and code for vertex shaders](separating-declarations-and-code-for-vertex-shaders.md), resources for [asynchronous queries](supporting-asynchronous-query-operations.md), and texture resources.
 
  
-
- 
-
-
-
-
 

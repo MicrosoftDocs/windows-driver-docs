@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_ABORT_TASK
 description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a specific pending task.
-ms.assetid: 0E454DC9-1CED-497F-90A8-7065883BB945
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_ABORT_TASK Network Drivers Starting with Windows Vista
@@ -26,7 +25,7 @@ This command follows property semantics. It should be treated as a signal, shoul
 
 | TLV                                                                    | Multiple TLV instances allowed | Optional | Description                                          |
 |------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------|
-| [**WDI\_TLV\_CANCEL\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-cancel-parameters) |                                |          | Information for the command that is being cancelled. |
+| [**WDI\_TLV\_CANCEL\_PARAMETERS**](./wdi-tlv-cancel-parameters.md) |                                |          | Information for the command that is being cancelled. |
 
  
 
@@ -178,9 +177,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

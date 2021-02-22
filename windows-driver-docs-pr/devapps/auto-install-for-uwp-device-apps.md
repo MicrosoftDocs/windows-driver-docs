@@ -1,7 +1,6 @@
 ---
 title: Automatic installation for UWP device apps
 description: This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.
-ms.assetid: ED9C7A63-5D2A-45D3-AD62-32C6876142FC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ A UWP device app can be acquired by the user in one of three ways:
 
 -   **Automatic installation**: The app is automatically acquired and installed the first time a peripheral device is connected to the PC. This is the most common way a UWP device app is installed.
 -   **Manual install**: The user finds an app in the Microsoft Store and installs it from there. This is typically how app updates and other UWP apps are installed.
--   **OEM preinstall**: An app for a PC internal device or system component can be preinstalled by an OEM as part of a new PC. For more info, see [Preinstall Apps Using DISM](https://go.microsoft.com/fwlink/p/?LinkId=325524).
+-   **OEM preinstall**: An app for a PC internal device or system component can be preinstalled by an OEM as part of a new PC. For more info, see [Preinstall Apps Using DISM](/previous-versions/windows/it-pro/windows-8.1-and-8/dn387084(v=win.10)).
 
 **Note**  UWP device apps for PC internal devices are not eligible for automatic installation. They can only be acquired through manual install and OEM preinstall.
 
@@ -97,10 +96,4 @@ The device driver and device metadata are uninstalled independently of the Micro
 The UWP device app must be manually uninstalled by the user. When that's done, the device driver and device metadata are not automatically uninstalled.
 
  
-
- 
-
-
-
-
 

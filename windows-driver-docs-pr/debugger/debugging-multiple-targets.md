@@ -1,7 +1,6 @@
 ---
 title: Debugging Multiple Targets
 description: Debugging Multiple Targets
-ms.assetid: 93eb6b49-e7a0-4f30-ade8-94019a1adf43
 keywords: ["multiple targets", "system", "system, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

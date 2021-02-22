@@ -5,6 +5,8 @@
     href: index.md
   - name: "Introduction to the Windows Hardware Error Architecture"
     href: introduction-to-the-windows-hardware-error-architecture.md
+  - name: "Using WHEA on Windows 10"
+    href: using-whea-on-windows-10.md
   - name: "New Information for Windows Hardware Error Architecture"
 # Auto-expanded node
     items: 

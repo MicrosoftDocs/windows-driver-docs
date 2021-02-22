@@ -2,7 +2,6 @@
 title: Transaction Processing Terms
 description: Before you begin to use KTM, you should know the definitions of the following terms transaction, resource manager, transactional client, transaction manager, log stream, enlistment, and transaction processing system.
 Robots: noindex, nofollow
-ms.assetid: c8a8806f-a228-4d02-9995-c8cf45e57935
 keywords: ["Kernel Transaction Manager WDK , terminology", "KTM WDK , terminology", "transactions WDK KTM , definition", "resource managers WDK KTM , definition", "transactional clients WDK KTM , definition", "transaction managers WDK KTM , definition", "log streams WDK KTM , definition", "enlistments WDK KTM , definition", "transaction processing systems WDK KTM , definition", "TPS WDK KTM , definition", "transactions WDK KTM , terminology", "transaction managers WDK KTM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -58,7 +57,7 @@ KTM provides functions that transactional clients can call. These functions enab
 KTM also provides functions that resource managers can call. These functions enable resource managers to enlist in transactions so that they can receive notifications about transactions. After a resource manager enlists in a transaction, it can receive a notification when a transactional client is ready to commit or roll back the transaction, or when a recovery operation occurs.
 
 <a href="" id="ktm-term-log-stream"></a>**log stream**  
-A *log stream* is a recorded history of the events that have happened to transactions. KTM maintains a log stream by using the [Common Log File System](using-common-log-file-system.md) (CLFS). KTM records state changes for each transaction so that it can support rollback and recovery operations when they are necessary.
+A *log stream* is a recorded history of the events that have happened to transactions. KTM maintains a log stream by using the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS). KTM records state changes for each transaction so that it can support rollback and recovery operations when they are necessary.
 
 Resource managers must also use a log stream to record data and operations.
 

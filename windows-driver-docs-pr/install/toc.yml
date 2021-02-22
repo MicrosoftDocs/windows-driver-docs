@@ -58,8 +58,8 @@
           href: driver-rank-example--windows-vista-and-later-.md
         - name: "Driver Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
-        - name: "AllSignersEqual Group Policy"
-          href: allsignersequal-group-policy--windows-vista-and-later-.md
+        - name: "AllSigningEqual Group Policy"
+          href: allsigningequal-group-policy.md
 - name: "Concepts"
   items: 
   - name: "Driver Packages"
@@ -82,6 +82,8 @@
       href: using-a-universal-inf-file.md
     - name: "Using an Extension INF File"
       href: using-an-extension-inf-file.md
+    - name: "Using an Extension INF File Template"
+      href: using-an-extension-inf-file-template.md
     - name: "Updating Device Firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
     - name: "Summary of INF Sections"
@@ -130,7 +132,7 @@
       href: opening-and-closing-an-inf-file.md
     - name: "Retrieving Information from an INF File"
       href: retrieving-information-from-an-inf-file.md
-    - name: "Providing Vendor Icons for the Shell and AutoPlay"
+    - name: "Providing Icons for a Device"
       href: providing-vendor-icons-for-the-shell-and-autoplay.md
   - name: "Driver Signing"
     items: 
@@ -176,8 +178,12 @@
       href: introduction-to-test-signing.md
     - name: "How to Test-Sign a Driver Package"
       href: how-to-test-sign-a-driver-package.md
+    - name: "How to Install a Test-signed Driver Required for Windows Setup and Boot"
+      href: how-to-install-test-signed-driver-for-setup-and-boot.md
     - name: "Creating Test Certificates"
       href: creating-test-certificates.md
+    - name: "Installing Test Certificates"
+      href: installing-test-certificates.md
     - name: "Viewing Test Certificates"
       href: viewing-test-certificates.md
     - name: "Creating a Catalog File for Test-Signing a Driver Package"
@@ -196,8 +202,6 @@
       href: the-testsigning-boot-configuration-option.md
     - name: "Enabling Code Integrity Event Logging and System Auditing"
       href: enabling-code-integrity-event-logging-and-system-auditing.md
-    - name: "Installing Test Certificates"
-      href: installing-test-certificates.md
     - name: "Verifying the Test Signature"
       href: verifying-the-test-signature.md
     - name: "Installing a Test-Signed Driver Package on the Test Computer"
@@ -952,6 +956,8 @@
     href: configuring-windows-to-rank-driver-signatures-equally.md
   - name: "Installing the Updated Version of the Driver Package"
     href: installing-the-updated-version-of-the-driver-package.md
+  - name: "Writing Win32 Services to Interact with Devices"
+    href: best-practices-win32services-interacting-with-devices.md
 - name: "Troubleshooting"
   items: 
   - name: "Troubleshooting Device and Driver Installations"
@@ -1294,6 +1300,8 @@
     href: devpkey-device-devtype.md
   - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
     href: devpkey-device-dhp-rebalance-policy.md
+  - name: "DEVPKEY_Device_DmaRemappingPolicy"
+    href: devpkey-device-dmaremappingpolicy.md
   - name: "DEVPKEY_Device_Driver"
     href: devpkey-device-driver.md
   - name: "DEVPKEY_Device_DriverCoInstallers"
@@ -1946,7 +1954,7 @@
     href: suppressaddremoveprograms-xml-element.md
   - name: "suppressWizard XML Element"
     href: suppresswizard-xml-element.md
-  - name: "System-Defined Device Setup Classes Available to Vendors"
+  - name: "Class and ClassGuid entries for INF Version Section"
     href: system-defined-device-setup-classes-available-to-vendors.md
   - name: "System-Defined Device Setup Classes Reserved for System Use"
     href: system-defined-device-setup-classes-reserved-for-system-use.md

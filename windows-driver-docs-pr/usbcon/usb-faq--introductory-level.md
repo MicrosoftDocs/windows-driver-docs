@@ -1,5 +1,5 @@
 ---
-Description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
+description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
 title: USB in Windows - FAQ
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -33,7 +33,6 @@ This topic presents frequently asked questions for driver developers who are new
 - [What characters or bytes are valid in a USB serial number?](#what-characters-or-bytes-are-valid-in-a-usb-serial-number)
 - [What LANGID is used in a string request on localized builds of Windows?](#what-langid-is-used-in-a-string-request-on-localized-builds-of-windows)
 - [What LANGID is used to extract a device's serial number?](#what-langid-is-used-to-extract-a-devices-serial-number)
-- [What is the maximum USB transfer size for different Windows versions?](#what-is-the-maximum-usb-transfer-size-for-different-windows-versions)
 - [How should numbers be assigned to multiple interfaces on a composite device?](#how-should-numbers-be-assigned-to-multiple-interfaces-on-a-composite-device)
 - [What are the major restrictions imposed by Usbccgp.sys?](#what-are-the-major-restrictions-imposed-by-usbccgpsys)
 - [How do I enable debug tracing for USB core binaries?](#how-do-i-enable-debug-tracing-for-usb-core-binaries)
@@ -76,7 +75,7 @@ If the PC has USB 3.0 ports and is running a version of Windows earlier than Win
 
 If you added a USB 3.0 controller card to your PC that is running a version of Windows earlier than Windows 8, you must install the drivers provided by the controller card manufacturer.
 
-In Windows 8, the Microsoft-provided set of USB 3.0 drivers (USB driver stack) work with most host controllers. Microsoft USB 3.0 driver stack does not work with the Fresco Logic FL1000 controller. To determine if you have an FL1000 controller, open Device Manager and expand **Universal Serial Bus controllers**. View the controller properties by right-clicking the controller node. On the **Details** tab, select **Hardware Ids** property in the list. If the hardware ID starts with PCI\\VEN\_1B73&DEV\_1000, it is the FL1000. For that controller, download and install drivers from your PC or controller card manufacturer.
+In Windows 8, the Microsoft-provided set of USB 3.0 drivers (USB driver stack) work with most host controllers. Microsoft USB 3.0 driver stack does not work with the Fresco Logic FL1000 controller. To determine if you have an FL1000 controller, open Device Manager and expand **Universal Serial Bus controllers**. View the controller properties by selecting and holding (or right-clicking) the controller node. On the **Details** tab, select **Hardware Ids** property in the list. If the hardware ID starts with PCI\\VEN\_1B73&DEV\_1000, it is the FL1000. For that controller, download and install drivers from your PC or controller card manufacturer.
 
 ## Why do I see several host controllers on my system?
 
@@ -112,7 +111,7 @@ If the USB 3.0 port is correctly routed to an xHCI controller, Windows loads the
 
 If the USB 2.0 port is connected to an EHCI controller through a USB 2.0 hub, the traffic moves through the EHCI controller, and the USB 2.0 driver stack is loaded.
 
-For more information about the drivers in the USB driver stack, see [USB host-side drivers in Windows](https://go.microsoft.com/fwlink/p/?linkid=320134).
+For more information about the drivers in the USB driver stack, see [USB host-side drivers in Windows](/windows-hardware/drivers/ddi/).
 
 If the PC's USB 2.0 ports use a companion controller, the host controller to which the port is routed depends on device speed. For example, a low speed device connects through a UHCI or an OHCI controller, and uses the USBUHCI or USBOHCI driver. The PC routes a high speed device to an EHCI controller, therefore, Windows uses the USBEHCI driver.
 
@@ -130,29 +129,29 @@ You can view these UI messages in PC Settings.
 
 This image shows the UI message when the USB 3.0 device is operating at SuperSpeed.
 
-![superspeed usb device operating at superspeed ](images/usb-superspeed.jpg)
+![Screenshot that shows "PC settings" with "Devices" selected and "U S B 3.0 RAIDrive" highlighted.](images/usb-superspeed.jpg)
 
 This image shows the UI message when the USB device is operating at a bus speed that is lower than SuperSpeed.
 
-![superspeed usb device operating at high-speed ](images/usb-high-speed.jpg)
+![Screenshot that shows "Devices" selected and "U S B 3.0 RAIDrive" highlighted with the message "Device can perform faster when connected to U S B 3.0".](images/usb-high-speed.jpg)
 
 You can view similar messages in Devices and Printers, as shown in these images.
 
-![superspeed usb device operating at superspeed](images/usb-superspeed-devices.jpg)
+![Screenshot that shows "Storage - Devices and Printers" with a device selected that has a "Connected to U S B 3.0" message displayed.](images/usb-superspeed-devices.jpg)
 
 ![superspeed device operating at high-speed](images/usb-high-speed-devices.jpg)
 
 If the USB 3.0 device is a storage device, Windows Explorer shows similar messages when the volume label is selected, as shown below. Note that the **View -&gt; Details** pane must be selected for the message to be visible.
 
-![superspeed usb device operating at superspeed ](images/usb-superspeed-storage-device.jpg)
+![Screenshot that shows a superspeed U S B device selected in "Explorer" with a "Connected to U S B 3.0" message highlighted in the "Details" pane. ](images/usb-superspeed-storage-device.jpg)
 
 ![superspeed usb device operating at high-speed](images/usb-high-speed-storage-device.jpg)
 
-If you are writing a device driver, the [USBView](https://go.microsoft.com/fwlink/p/?linkid=320135) tool, included in the Windows Driver Kit (WDK), is very useful. For the Windows 8 WDK, Microsoft updated USBView to display SuperSpeed USB information. You can use this tool to determine whether or not your device is operating at SuperSpeed. This image shows a USB 3.0 device operating at SuperSpeed in USBView.
+If you are writing a device driver, the [USBView](../debugger/usbview.md) tool, included in the Windows Driver Kit (WDK), is very useful. For the Windows 8 WDK, Microsoft updated USBView to display SuperSpeed USB information. You can use this tool to determine whether or not your device is operating at SuperSpeed. This image shows a USB 3.0 device operating at SuperSpeed in USBView.
 
 ![superspeed usb device operating at superspeed](images/usb-superspeed-usbview.jpg)
 
-If you are a device driver developer, the [USB driver stack](https://go.microsoft.com/fwlink/p/?linkid=320134) exposes a new IOCTL that is called [IOCTL\_USB\_GET\_NODE\_CONNECTION\_INFORMATION\_EX\_V2](https://go.microsoft.com/fwlink/p/?linkid=320136), which you can use to query speed information for USB 3.0 devices.
+If you are a device driver developer, the [USB driver stack](/windows-hardware/drivers/ddi/) exposes a new IOCTL that is called [IOCTL\_USB\_GET\_NODE\_CONNECTION\_INFORMATION\_EX\_V2](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2), which you can use to query speed information for USB 3.0 devices.
 
 ## Why isn't my SuperSpeed USB device faster than an equivalent high-speed USB device?
 
@@ -360,8 +359,8 @@ This table highlights the USB DWG classes that are supported in Windows and also
 
 Microsoft provides system-defined setup classes for most device types. System-defined setup class GUIDs are defined in Devguid.h. For additional information, see the WDK. For a list of Windows class GUIDs, see these topics:
 
-- [System-Defined Device Setup Classes Available to Vendors](https://go.microsoft.com/fwlink/p/?linkid=320141)
-- [System-Defined Device Setup Classes Reserved for System Use](https://go.microsoft.com/fwlink/p/?linkid=320142)
+- [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md)
+- [System-Defined Device Setup Classes Reserved for System Use](../install/system-defined-device-setup-classes-reserved-for-system-use.md)
 
 Independent hardware vendors must use the setup class that is associated with the type of USB device, not with the bus type. If you are developing a device type for which Microsoft has not provided an existing class GUID, you can define a new device setup class.
 
@@ -473,18 +472,18 @@ Because Windows 2000 and Windows XP were released before USB 2.0 hardware was av
 
 1. Follow the procedure that was described in the answer to the first question to verify that your computer has USB 2.0 ports and that you need to install a driver for the enhanced host controller.
 2. In the Device Manager window, expand the **Other Devices** section as explained in the first question, and then double-click **Universal Serial Bus (USB) Controller**.
-3. On the **General** tab of the Properties dialog box, click **Reinstall Driver**.
+3. On the **General** tab of the Properties dialog box, select **Reinstall Driver**.
 
     ![reinstall driver](images/usb-reinstall-driver.jpg)
 
-4. In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then click **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then click **Finish**. You might be required to restart your computer to finish the installation.
+4. In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then select **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then select **Finish**. You might be required to restart your computer to finish the installation.
 
 **Note**  
 To ensure that you have the latest updates installed on your machine, visit Windows Update regularly.
 
 ## Can I disable the "HI-SPEED USB Device plugged into non-HI-SPEED USB port" notice?
 
-Windows XP and later versions of Windows create a pop-up notice when a Hi-Speed USB device is plugged into a USB port that does not support high speed. To obtain the fastest performance from the device, users must click the notice and follow the instructions on the screen.
+Windows XP and later versions of Windows create a pop-up notice when a Hi-Speed USB device is plugged into a USB port that does not support high speed. To obtain the fastest performance from the device, users must select the notice and follow the instructions on the screen.
 
 To disable the notice, follow these steps:
 
@@ -533,10 +532,6 @@ A USB device indicates the presence of a serial number by setting the iSerialNum
 
 A USB device indicates the presence of a serial number by setting the iSerialNumber field of the USB device descriptor to the serial number's string index. To retrieve the serial number, Windows issues a string request with the language identifier (LANGID) set to 0x0409 (U.S. English). Windows always uses this LANGID to retrieve USB serial numbers, even for versions of Windows that are localized for other languages.
 
-## What is the maximum USB transfer size for different Windows versions?
-
-See [Maximum size of USB transfers on various operating systems](https://support.microsoft.com/help/832430/maximum-size-of-usb-transfers-on-various-operating-systems).
-
 ## How should numbers be assigned to multiple interfaces on a composite device?
 
 Windows treats USB devices that have more than one interface on the first configuration as composite devices.
@@ -547,8 +542,6 @@ For Windows XP Service Pack 1 and earlier versions of Windows:
 - Interface numbers must be consecutive and increasing.
 
 For Windows XP Service Pack 2 and later versions of Windows, interface numbers are only required to be increasing, not consecutive.
-
-For additional information about interface numbers, see [Composite USB devices whose interfaces are not sequentially numbered do not work in Windows XP](https://support.microsoft.com/help/814560).
 
 Alternate settings for an interface should be assigned as follows for all versions of Windows:
 
@@ -590,7 +583,7 @@ The major restrictions imposed on hardware devices and drivers by **Usbccgp.sys*
 
 See the blog post about [How to include and view WPP trace messages in a driver’s public PDB files](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/archive/2013/06/29/wpp-blog-post.aspx).
 
-For additional information about USB core stack debugging, see [How to enable verbose debug tracing in various drivers and subsystems](https://support.microsoft.com/help/314743).
+For information about USB devices and ETW events, see [Debugging USB device issues by using ETW events](./best-practices--debugging-usb-device-problems.md).
 
 ## Does Windows support Interface Association Descriptors?
 
@@ -619,4 +612,4 @@ A composite USB device cannot expose a function that serves as a hub. Windows do
 ## Related topics
 
 [USB concepts for all developers](usb-concepts-for-all-developers.md)  
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
+[Universal Serial Bus (USB)](../index.yml)

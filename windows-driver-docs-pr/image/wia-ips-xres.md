@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_XRES
 description: The WIA\_IPS\_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
-ms.assetid: cde64e80-b4b0-4360-a14e-b6918b97aabc
 keywords: ["WIA_IPS_XRES Imaging Devices"]
 topic_type:
 - apiref

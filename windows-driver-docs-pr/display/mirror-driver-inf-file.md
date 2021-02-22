@@ -1,7 +1,6 @@
 ---
 title: Mirror Driver INF File
 description: Mirror Driver INF File
-ms.assetid: ee42cb92-7630-4b5e-912c-88c12e54349b
 keywords:
 - display drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
@@ -15,20 +14,10 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_mirror_driver_inf_file_gg"></span><span id="DDK_MIRROR_DRIVER_INF_FILE_GG"></span>
 
+> [!NOTE]
+>
+> Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
 Use the *Mirror.inf* sample mirror driver INF file as a template for constructing your own mirror driver INF file.
 
-For more information, see [Installing a Boot Driver](https://docs.microsoft.com/windows-hardware/drivers/install/installing-a-boot-start-driver) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
-
-**Note**  Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
-
- 
-
- 
-
- 
-
-
-
-
-
+For more information, see [Installing a Boot Driver](../install/installing-a-boot-start-driver.md) and [INF File Sections and Directives](../install/index.md).

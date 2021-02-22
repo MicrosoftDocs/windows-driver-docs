@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_STOP_AP
 description: OID_WDI_TASK_STOP_AP requests that the IHV component disconnects all connected clients on the specified port and stops beaconing and responding to probe requests. AP configuration and MIB attributes are preserved.
-ms.assetid: b7df1d2f-fed4-4079-8a2d-3f691a52ad52
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_STOP_AP Network Drivers Starting with Windows Vista

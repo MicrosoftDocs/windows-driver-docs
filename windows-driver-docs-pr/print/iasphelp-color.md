@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: aa075ce7-15fd-4c24-b704-b7b240414d05
 keywords: ["get_Color method Print Devices", "get_Color method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Color method"]
 topic_type:
 - apiref

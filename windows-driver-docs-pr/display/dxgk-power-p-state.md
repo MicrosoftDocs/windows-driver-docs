@@ -1,7 +1,6 @@
 ---
 title: DXGK\_POWER\_P\_STATE structure
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: F4612284-36C8-49C4-914D-43C32489EABD
+description: Learn about the DXGK\_POWER\_P\_STATE structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_POWER_P_STATE structure Display Devices", "PDXGK_POWER_P_STATE structure pointer Display Devices"]
 topic_type:
 - apiref

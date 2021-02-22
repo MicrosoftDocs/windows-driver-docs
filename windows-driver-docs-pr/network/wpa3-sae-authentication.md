@@ -1,7 +1,6 @@
 ---
 title: WPA3-SAE authentication
 description: This topic describes WPA3-SAE authentication for WDI version 1.1.8 and later.
-ms.assetid: BE6EF8E4-F4EB-4D39-AC33-B67F8935DCBC
 ms.date: 02/21/2019
 ms.localizationpriority: medium
 ms.custom: 19H1

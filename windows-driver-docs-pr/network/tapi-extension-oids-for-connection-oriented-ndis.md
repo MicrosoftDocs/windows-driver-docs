@@ -1,7 +1,6 @@
 ---
 title: TAPI extension OIDs for connection-oriented NDIS
 description: This topic describes TAPI extension OIDs for connection-oriented NDIS.
-ms.assetid: 06f7e2d0-b890-468e-8177-d3c28d0e9cd0
 keywords:
 - TAPI extension OIDs connection-oriented NDIS
 ms.date: 11/03/2017
@@ -24,5 +23,4 @@ In this table, M indicates an OID is mandatory, while O indicates it is optional
 | Varies | O |   | [OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS](oid-co-tapi-translate-tapi-callparams.md) |
 | Varies | O |   | [OID_CO_TAPI_TRANSLATE_TAPI_SAP](oid-co-tapi-translate-tapi-sap.md) |
 
-In its call to [NdisCoRequest](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff551877(v=vs.85)), the client that queries any of the TAPI extension OIDs must specify an *NdisAfHandle* that identifies the address family to which the request applies. The client can specify an *NdisVcHandle* that identifies the virtual connection (VC) to which the request applies. From this VC handle, the call manager or MCM driver may be able to derive the particular line and perhaps the address to which the request applies.
-
+In its call to [NdisCoRequest](/previous-versions/windows/hardware/network/ff551877(v=vs.85)), the client that queries any of the TAPI extension OIDs must specify an *NdisAfHandle* that identifies the address family to which the request applies. The client can specify an *NdisVcHandle* that identifies the virtual connection (VC) to which the request applies. From this VC handle, the call manager or MCM driver may be able to derive the particular line and perhaps the address to which the request applies.

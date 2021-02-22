@@ -1,7 +1,6 @@
 ---
 title: Using Critical Sections
 description: Using Critical Sections
-ms.assetid: 439ba7ef-6473-40ca-9daa-a8c61d789d97
 keywords: ["interrupt service routines WDK kernel , critical sections", "ISRs WDK kernel , critical sections", "InterruptService", "synchronization WDK kernel , interrupts"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Any driver that contains an [*InterruptService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine will most likely require one or more critical sections to synchronize access to hardware resources or driver data among the ISR and other routines.
+Any driver that contains an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine will most likely require one or more critical sections to synchronize access to hardware resources or driver data among the ISR and other routines.
 
 This section includes the following topics:
 
@@ -22,9 +21,4 @@ This section includes the following topics:
 [Writing SynchCritSection Routines](writing-synchcritsection-routines.md)
 
  
-
- 
-
-
-
 

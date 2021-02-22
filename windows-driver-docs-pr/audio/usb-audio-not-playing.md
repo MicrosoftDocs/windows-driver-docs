@@ -1,7 +1,6 @@
 ---
 title: USB Audio Not Playing 
 description: Audio Drivers Event Sets
-ms.assetid: ee800f71-9c90-4084-b879-32300e6706fc
 ms.date: 12/19/2019
 ms.localizationpriority: medium
 ---
@@ -35,7 +34,7 @@ To fix this problem, use one of the following methods.
 Uninstall the device. To do this, follow these steps:
 
 1. Open Device Manager.
-1. Right-click (or tap and hold) the name of the device, and then select **Uninstall**.
+1. Select and hold (or double-click) the name of the device, and then select **Uninstall**.
 
 > Note:
 > In step 2, don't select the **Delete the driver software for this device** check box.

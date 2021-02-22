@@ -1,13 +1,11 @@
 ---
 title: Provisioning for hotspot authentication
 description: Provisioning for hotspot authentication
-ms.assetid: bfb4e1ec-9887-4b25-bfcc-be642b1a0101
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Provisioning for hotspot authentication
-
 
 For an app to participate in the hotspot authentication process, it must first create one or more profiles for Wi-Fi hotspots. This is done by using the Provisioning Agent interface that is discussed in [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md). The hotspot must use open authentication and must include the **HotspotProfile** element. The following provisioning file sample shows how to associate an SSID with your app:
 
@@ -44,69 +42,16 @@ The ExtensionId field contains the package family name of the app that generates
 
 After the provisioning file is processed, the app that has the package family name “YourAppIdGoesHere” must register for the Hotspot Authentication event. It is required that the provisioning file is processed first to grant the specified app access to this event. An app can register a single handler for this event. The event registration remains valid as long as there is at least one profile that refers to the corresponding app.
 
-## <span id="sign"></span><span id="SIGN"></span>Sign the provisioning file
-
+## Sign the provisioning file
 
 Because provisioning modifies system settings that persist after the user has exited or even uninstalled the app, a stricter measure of verification is required than for most APIs. This verification is provided by a combination of operator-specific hardware (the SIM), cryptographic signatures, and user confirmation. The following table lists the verification requirements:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>SIM present</th>
-<th>Provisioning source</th>
-<th>Signature requirement</th>
-<th>User confirmation requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes, MB provider</p></td>
-<td><p>Mobile broadband app</p></td>
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="even">
-<td><p>Yes, MB provider</p></td>
-<td><p>Operator web site</p></td>
-<td><p>Certificate must:</p>
-<ul>
-<li><p>Chain back to trusted root CA</p></li>
-<li><p>Be associated with mobile broadband hardware in APN database or experience metadata</p></li>
-</ul></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>No, Wi-Fi provider</p></td>
-<td><p>Mobile broadband app or web site</p></td>
-<td><p>Certificate must:</p>
-<ul>
-<li><p>Chain back to trusted root CA</p></li>
-<li><p>Be marked for Extended Validation</p></li>
-</ul></td>
-<td><p>User is prompted to confirm the first time the certificate is used; none thereafter.</p></td>
-</tr>
-</tbody>
-</table>
+|SIM present|Provisioning source|Signature requirement|User confirmation requirement|
+|----|----|----|----|
+|Yes, MB provider|Mobile broadband app|None|None|
+|Yes, MB provider|Operator web site|Certificate must:</br>- Chain back to trusted root CA</br>- Be associated with mobile broadband hardware in APN database or experience metadata|None|
+|No, Wi-Fi provider|Mobile broadband app or web site|Certificate must:</br>- Chain back to trusted root CA</br>- Be marked for Extended Validation|User is prompted to confirm the first time the certificate is used; none thereafter.|
 
- 
-
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [WISPr authentication](wispr-authentication.md)
-
- 
-
- 
-
-
-
-
-
-

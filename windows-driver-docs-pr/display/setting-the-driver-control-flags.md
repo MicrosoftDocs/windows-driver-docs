@@ -1,7 +1,6 @@
 ---
 title: Setting the Driver Control Flags
 description: Setting the Driver Control Flags
-ms.assetid: cca51b9c-ce37-4efb-ab42-8eb62b25eb21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,13 +17,7 @@ The following example shows how to add the **ExcludeFromSelect** directive to a 
 ExcludeFromSelect=*
 ```
 
-For more information on driver control flags, see [**INF ControlFlags Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section).
+For more information on driver control flags, see [**INF ControlFlags Section**](../install/inf-controlflags-section.md).
 
  
-
- 
-
-
-
-
 

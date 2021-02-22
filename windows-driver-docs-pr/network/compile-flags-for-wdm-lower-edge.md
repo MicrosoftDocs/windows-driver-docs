@@ -1,7 +1,6 @@
 ---
 title: Compile Flags for WDM Lower Edge
 description: Compile Flags for WDM Lower Edge
-ms.assetid: 60fbee2a-b8f3-4d1a-95c2-b4962a406065
 keywords:
 - NDIS-WDM miniport drivers WDK networking , compile flags
 - NDIS-WDM miniport drivers WDK networking , building

@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT
 description: OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT requests the number of packets that have matched receive filters on the network port.
-ms.assetid: 45b68057-d62a-4b77-9634-dfbed2817f23
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT Network Drivers Starting with Windows Vista
@@ -28,7 +27,7 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                                              | Multiple TLV instances allowed | Optional | Description                                                                  |
 |--------------------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------------------------|
-| [**WDI\_TLV\_COALESCING\_FILTER\_MATCH\_COUNT**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-coalescing-filter-match-count) |                                |          | The number of packets that have matched receive filters on the network port. |
+| [**WDI\_TLV\_COALESCING\_FILTER\_MATCH\_COUNT**](./wdi-tlv-coalescing-filter-match-count.md) |                                |          | The number of packets that have matched receive filters on the network port. |
 
  
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

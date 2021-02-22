@@ -1,7 +1,6 @@
 ---
 title: HS_DEVICE_IDENTITY structure
 description: The HS_DEVICE_IDENTITY structure contains information about the device model and manufacturer.
-ms.assetid: 4a679fb2-d5b1-4635-9422-a21a316b360c
 keywords: 
 - HS_DEVICE_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_DEVICE_IDENTITY structure pointer Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_DEVICE\_IDENTITY structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_DEVICE\_IDENTITY** structure contains information about the device model and manufacturer.

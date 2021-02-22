@@ -1,7 +1,6 @@
 ---
 title: Using Breakpoints - Debugging Techniques
 description: Overview of Using Breakpoints with the Windows Debugger (Debugging Techniques)
-ms.assetid: 93c46047-ab04-41ca-ad13-89741735c055
 keywords: ["breakpoints", "breakpoints, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Web Services on Devices for Printing (WS-Print)
 description: Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
-ms.assetid: 4A641EF8-FBD3-46CA-9284-28AF1A4B8226
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ For Windows 8, the printing schema for web services on devices (WSD) was updated
 
 For Windows 8.1, WS-Print includes all the operations and schema elements used in WS-Print v1.1, but the print service definition for web services on devices has been updated. And the resulting new Web Services on Devices for printing is WS-Print v1.2.
 
-In WS-Print v1.2 support for a new schema element and a new operation have been added. The new schema element “SupportsWSPrintV12” is used to identify support for WS-Print V1.2. The new operation, “SetPrinterElements” enables a client to set the value of a schema element on the printer. For example, the client could set a custom element called “InkHeadAlignmentValue” which the printer would use to realign the inkjet head.
+In WS-Print v1.2 support for a new schema element and a new operation have been added. The new schema element "SupportsWSPrintV12" is used to identify support for WS-Print V1.2. The new operation, "SetPrinterElements" enables a client to set the value of a schema element on the printer. For example, the client could set a custom element called "InkHeadAlignmentValue" which the printer would use to realign the inkjet head.
 
 For your convenience, the specifications are provided here in the Downloads section, in complete, stand-alone form, along with their associated Web Services Description Languages (WSDLs) and XML Schema Definitions (XSDs). These four Web Services on devices specifications are covered by the included technical documentation license agreement, which references the Windows driver development kit (WDK).
 
@@ -230,7 +229,7 @@ This schema provides device-specific GPD or PPD configuration files for this dev
 
 ## Device model ID
 
-The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)).
+The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)).
 
 ```xml
     <xs:annotation>
@@ -290,15 +289,15 @@ For more detailed information about the SetPrinterElements operation, see the su
 
 ### Specification and supporting files
 
-**File:** [Print Device Definition V1.0 for Web Services on Devices](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/PrintDevice.exe)
+**File:** [Print Device Definition V1.0 for Web Services on Devices](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/PrintDevice.zip)
 **Description:** 76 KB self-extracting file containing Microsoft Word document and supporting file; January 29, 2007
 
 **File:** [Scan Service Definition V1.0 for Web Services on Devices](https://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/ScanService.zip)
 **Description:** (1.5 MB zip file containing Microsoft Word document and supporting files; February 9, 2012)
 
-**File:** [Scan Device Definition V1.0 for Web Services on Devices](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/ScanDevice.exe)
+**File:** [Scan Device Definition V1.0 for Web Services on Devices](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/ScanDevice.zip)
 **Description:** (76 KB self-extracting file containing Microsoft Word document and supporting file; January 29, 2007)
 
 ## Related topics
 
-[V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)  
+[V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)

@@ -1,7 +1,6 @@
 ---
 title: Extension Driver MSI Packaging Requirements
 description: Switch extensions must be packaged in a silently installable MSI file.
-ms.assetid: 300118F9-D9C7-4AFA-B54A-59666BC680F1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,15 +29,9 @@ The MSI file must meet the following requirements:
 | **DriverInstallParams**         | Required | **String** | Parameters used to install this driver silently. Example: /q                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **IsManagedByExtensionManager** | Optional | **String** | Present and non-zero = Yes, 0 or not present = No                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **MinApplicableOSVersion**      | Required | **String** | The minimum version of the Windows operating system that this extension will run on. See Operating System Version for operating system version numbers. Note that the Hyper-V Extensible Switch feature was added in Windows Server 2012, so the lowest valid value for this field is "6.2".                                                                                                                                                                                                                    |
-| **MaxApplicableOSVersion**      | Optional | **String** | The maximum version of the Windows operating system that this extension will run on. See [Operating System Version](https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version) for operating system version numbers. Note that the Hyper-V Extensible Switch feature was added in Windows Server 2012, so the lowest valid value for this field is "6.2" or the value of **MinApplicableOSVersion**, whichever is higher. This field is optional. If no value is specified, the extension will run on **MinApplicableOSVersion** and later. |
+| **MaxApplicableOSVersion**      | Optional | **String** | The maximum version of the Windows operating system that this extension will run on. See [Operating System Version](/windows/desktop/SysInfo/operating-system-version) for operating system version numbers. Note that the Hyper-V Extensible Switch feature was added in Windows Server 2012, so the lowest valid value for this field is "6.2" or the value of **MinApplicableOSVersion**, whichever is higher. This field is optional. If no value is specified, the extension will run on **MinApplicableOSVersion** and later. |
 
  
 
  
-
- 
-
-
-
-
 

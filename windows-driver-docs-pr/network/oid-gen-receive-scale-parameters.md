@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_SCALE_PARAMETERS
 description: As a query, NDIS and overlying drivers can use the OID_GEN_RECEIVE_SCALE_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC.
-ms.assetid: a54190f7-0d2e-4f85-84c2-05fc9ec4994a
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RECEIVE_SCALE_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS
 
 
-As a query, NDIS and overlying drivers can use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC. NDIS returns an [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure that defines the current RSS parameters.
+As a query, NDIS and overlying drivers can use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC. NDIS returns an [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure that defines the current RSS parameters.
 
 As a set, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to set the current RSS parameters of a NIC. The miniport driver receives an NDIS\_RECEIVE\_SCALE\_PARAMETERS structure that defines the RSS parameters.
 
@@ -23,7 +22,7 @@ Remarks
 
 For NDIS miniport drivers, the query is not requested and the set is required for drivers that support RSS. NDIS handles the query for miniport drivers.
 
-The TCP/IP driver configures IPv4 and IPv6 with a single OID set request of OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS. That is, when the stack should enable RSS for both IPv4 and IPv6, it sets both of the corresponding flags in the **HashInformation** member of the [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure and sends one OID request. Also, IPv4 and IPv6 use the same secret key and the key will always be 40 bytes, even if only IPv4 is enabled.
+The TCP/IP driver configures IPv4 and IPv6 with a single OID set request of OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS. That is, when the stack should enable RSS for both IPv4 and IPv6, it sets both of the corresponding flags in the **HashInformation** member of the [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure and sends one OID request. Also, IPv4 and IPv6 use the same secret key and the key will always be 40 bytes, even if only IPv4 is enabled.
 
 The underlying miniport adapter must use the most recent OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID settings it has received. For example, if the miniport gets an OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID with the IPv4 hash types missing, it must disable IPv4 RSS if it was previously enabled.
 
@@ -35,7 +34,7 @@ The underlying miniport adapter must use the most recent OID\_GEN\_RECEIVE\_SCAL
 
  
 
-**Note**  The indirection table and secret key are appended after the [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure members. For more information about the indirection table and secret key, see **NDIS\_RECEIVE\_SCALE\_PARAMETERS**.
+**Note**  The indirection table and secret key are appended after the [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) structure members. For more information about the indirection table and secret key, see **NDIS\_RECEIVE\_SCALE\_PARAMETERS**.
 
  
 
@@ -62,14 +61,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters)
+[**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters)
 
 [OID\_GEN\_RECEIVE\_HASH](oid-gen-receive-hash.md)
 
  
-
- 
-
-
-
 

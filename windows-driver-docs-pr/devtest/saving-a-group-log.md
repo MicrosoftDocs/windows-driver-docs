@@ -1,7 +1,6 @@
 ---
 title: Saving a Group Log
 description: Saving a Group Log
-ms.assetid: 3e572e3e-68c9-4161-97bd-f93505ead496
 keywords:
 - grouping trace sessions
 - trace sessions WDK , groups

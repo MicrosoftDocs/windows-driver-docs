@@ -1,7 +1,6 @@
 ---
 title: Mapping PTP Objects to WIA Items
 description: Mapping PTP Objects to WIA Items
-ms.assetid: 3ee88c09-7f36-403a-ae7b-41d08c11c52f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

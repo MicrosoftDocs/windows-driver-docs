@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_REVERB\_TIME
 description: The KSPROPERTY\_AUDIO\_REVERB\_TIME property specifies the reverberation time. This is a property of a reverb node (KSNODETYPE\_REVERB).
-ms.assetid: ADB53E00-4E0F-4E13-92C7-5ACB1A0B546E
 keywords: ["KSPROPERTY_AUDIO_REVERB_TIME Audio Devices"]
 topic_type:
 - apiref

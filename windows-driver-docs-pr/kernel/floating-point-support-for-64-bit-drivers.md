@@ -1,7 +1,6 @@
 ---
 title: Using extended processor features in Windows drivers
 description: Windows drivers for x86 and x64 systems that use extended processor features must wrap floating point calculations between calls to KeSaveExtendedProcessorState and KeRestoreExtendedProcessorState in order to avoid errors in concurrent applications that might be using the registers.
-ms.assetid: a42e86cf-47a2-44ed-8bf1-7407633af8b7
 keywords: ["floating point WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 -   July 2016
 
-Windows drivers for x86 and x64 systems that use extended processor features must wrap floating point calculations between calls to [**KeSaveExtendedProcessorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) and [**KeRestoreExtendedProcessorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate) in order to avoid errors in concurrent applications that might be using the registers.
+Windows drivers for x86 and x64 systems that use extended processor features must wrap floating point calculations between calls to [**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) and [**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate) in order to avoid errors in concurrent applications that might be using the registers.
 
 ## Legacy MMX/x87 Registers
 
@@ -24,7 +23,7 @@ These registers correspond to the XSTATE\_MASK\_LEGACY\_FLOATING\_POINT mask and
 ## SSE Registers
 
 
-These registers correspond to the XSTATE\_MASK\_LEGACY\_SSE flag and are used by the x64 compiler for floating point operations. Drivers for x86 systems that use these registers must save them before use by passing the XSTATE\_MASK\_LEGACY or XSTATE\_MASK\_LEGACY\_SSE flag in the [**KeSaveExtendedProcessorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) call and when finished, restore them with [**KeRestoreExtendedProcessorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate). This is unnecessary on x64 systems, but not harmful. For more information about these registers see [Using Floating Point in a WDM Driver](using-floating-point-or-mmx-in-a-wdm-driver.md).
+These registers correspond to the XSTATE\_MASK\_LEGACY\_SSE flag and are used by the x64 compiler for floating point operations. Drivers for x86 systems that use these registers must save them before use by passing the XSTATE\_MASK\_LEGACY or XSTATE\_MASK\_LEGACY\_SSE flag in the [**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) call and when finished, restore them with [**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate). This is unnecessary on x64 systems, but not harmful. For more information about these registers see [Using Floating Point in a WDM Driver](using-floating-point-or-mmx-in-a-wdm-driver.md).
 
 ## AVX Registers
 
@@ -125,9 +124,6 @@ exit:
 ```
 
 ## Related topics
-[**KeSaveExtendedProcessorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate)  
-[**KeRestoreExtendedProcessorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate)  
-[Using Floating Point in a WDM Driver](using-floating-point-or-mmx-in-a-wdm-driver.md)  
-
-
-
+[**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate)  
+[**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate)  
+[Using Floating Point in a WDM Driver](using-floating-point-or-mmx-in-a-wdm-driver.md)

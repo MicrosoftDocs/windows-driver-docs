@@ -1,7 +1,6 @@
 ---
 title: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
 description: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
-ms.assetid: 93ad0cdf-5ac2-4916-b90e-1e64ca4494b6
 keywords:
 - sending asynchronous I/O requests
 - raw-mode addressing WDK IEEE 1394 bus
@@ -29,7 +28,7 @@ Drivers use REQUEST\_ASYNC\_READ, REQUEST\_ASYNC\_WRITE, and REQUEST\_ASYNC\_LOC
 
 ### Types of Addressing
 
-Drivers that make asynchronous I/O requests must specify a destination address of type [**IO\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/1394/ns-1394-_io_address) in the **DestinationAddress** member of the IRB. The destination address consists of two values: the node address and the address offset. The interpretation that the bus driver gives to these two values depends on the mode of addressing used by the driver that initiates the request.
+Drivers that make asynchronous I/O requests must specify a destination address of type [**IO\_ADDRESS**](/windows-hardware/drivers/ddi/1394/ns-1394-_io_address) in the **DestinationAddress** member of the IRB. The destination address consists of two values: the node address and the address offset. The interpretation that the bus driver gives to these two values depends on the mode of addressing used by the driver that initiates the request.
 
 Three modes of addressing are available to send asynchronous 1394 packets: *normal*, *raw*, and *virtual*.
 
@@ -70,9 +69,4 @@ The IEEE 1394 bus protocol provides asynchronous lock requests, which allow atom
 A device driver that uses asynchronous I/O keeps track of the bus reset generation. In each asynchronous request, the device driver reports that value in the **u.AsyncXxx.ulGeneration** member of the IRB for the request. The bus driver compares that value to the actual generation count, and if they fail to match, it fails the request with a status value of STATUS\_INVALID\_GENERATION. If a request fails in this manner, the driver should query for the correct generation by using the REQUEST\_GET\_GENERATION\_COUNT bus request. However, the driver should not reissue any request that failed with this status until it retrieves new generation in its Bus Reset Notification callback. This ensures that the device is still present on the bus. Note that client drivers should not depend on IRP\_MN\_BUS\_RESET to be notified of a bus reset. IRP\_MN\_BUS\_RESET is obsolete in Windows XP and later operating systems.
 
  
-
- 
-
-
-
 

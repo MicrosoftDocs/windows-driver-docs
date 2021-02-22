@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Display Driver Model (XDDM) Design Guide
 description: Windows 2000 Display Driver Model (XDDM) Design Guide
-ms.assetid: 24cb232b-e289-45c8-8d55-42614a4dfd54
 keywords:
 - display devices WDK
 - display driver model WDK Windows 2000
@@ -17,9 +16,10 @@ ms.localizationpriority: medium
 ## <span id="ddk_windows_2000_display_driver_model_gg"></span><span id="DDK_WINDOWS_2000_DISPLAY_DRIVER_MODEL_GG"></span>
 
 
-Display adapter drivers that run on Windows Vista can adhere to one of two models: the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) or the Windows 2000 display driver model (XDDM). Drivers that adhere to Windows Display Driver Model (WDDM) run only on Windows Vista and later. Drivers that adhere to XDDM run on Windows 2000 and later operating systems (including Windows Vista and Windows 7).
+Display adapter drivers that run on Windows Vista can adhere to one of two models: the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) or the Windows 2000 display driver model (XDDM). Drivers that adhere to Windows Display Driver Model (WDDM) run only on Windows Vista and later. Drivers that adhere to XDDM run on Windows 2000 through Windows 7).
 
-**Note**  XDDM and VGA drivers will not compile on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver.
+> [!NOTE]
+> XDDM and VGA drivers will not compile or run on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver. This documentation is preserved for historical purposes.
 
  
 
@@ -41,15 +41,9 @@ The following sections describe the Windows 2000 display driver model:
 
 -   [GDI](gdi.md)
 
-**Note**   The documentation for the Windows 2000 display driver model no longer includes information about how to create a display driver that runs on the Microsoft Windows 98/Me platforms. If you want to create a display driver for Windows 98/Me, you can use the WDK documentation that released with Windows Vista. You can obtain the WDK for Windows Vista RTM from the [Microsoft Connect website](https://go.microsoft.com/fwlink/p/?linkid=101629).
+**Note**   The documentation for the Windows 2000 display driver model no longer includes information about how to create a display driver that runs on the Microsoft Windows 98/Me platforms. If you want to create a display driver for Windows 98/Me, you can use the WDK documentation that released with Windows Vista. You can obtain the WDK for Windows Vista RTM from the [Microsoft Connect website](/collaborate/connect-redirect).
 
  
 
  
-
- 
-
-
-
-
 

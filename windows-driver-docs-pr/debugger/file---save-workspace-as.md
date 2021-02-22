@@ -1,7 +1,6 @@
 ---
 title: File Save Workspace As
 description: File Save Workspace As
-ms.assetid: 5b1da6f0-8a72-4aa9-a03b-542e14523fa4
 keywords: ["File Save Workspace As", "workspaces, File Save Workspace As"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

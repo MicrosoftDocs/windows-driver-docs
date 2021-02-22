@@ -1,7 +1,6 @@
 ---
 title: Speaker Phantoming
 description: Speaker Phantoming
-ms.assetid: 3dfabb80-e27a-47dc-8b24-4882cd8a4eab
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

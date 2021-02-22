@@ -1,7 +1,6 @@
 ---
 title: Device nodes and device stacks
 description: In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree.
-ms.assetid: 7bf38b3b-72ba-461c-b9e2-68b697359b37
 keywords:
 - device node
 - device stack
@@ -32,7 +31,7 @@ Whether you think of a node as representing a device or a bus depends on your po
 ## <span id="Device_objects_and_device_stacks"></span><span id="device_objects_and_device_stacks"></span><span id="DEVICE_OBJECTS_AND_DEVICE_STACKS"></span>Device objects and device stacks
 
 
-A *device object* is an instance of a [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. Each device node in the PnP device tree has an ordered list of device objects, and each of these device objects is associated with a driver. The ordered list of device objects, along with their associated drivers, is called the *device stack* for the device node.
+A *device object* is an instance of a [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. Each device node in the PnP device tree has an ordered list of device objects, and each of these device objects is associated with a driver. The ordered list of device objects, along with their associated drivers, is called the *device stack* for the device node.
 
 You can think of a device stack in several ways. In the most formal sense, a device stack is an ordered list of (device object, driver) pairs. However, in certain contexts it might be useful to think of the device stack as an ordered list of device objects. In other contexts, it might be useful to think of the device stack as an ordered list of drivers.
 
@@ -74,7 +73,7 @@ If your point of reference is the PCI bus, then Pci.sys is the function driver. 
 
 So far we've been discussing kernel-mode device stacks. That is, the drivers in the stacks run in kernel mode, and the device objects are mapped into system space, which is the address space that is available only to code running in kernel mode. For information about the difference between kernel mode and user mode, see [User mode and kernel mode](user-mode-and-kernel-mode.md).
 
-In some cases, a device has a user-mode device stack in addition to its kernel-mode device stack. User-mode drivers are often based on the User-Mode Driver Framework (UMDF), which is one of the driver models provided by the [Windows Driver Frameworks (WDF)](https://docs.microsoft.com/windows-hardware/drivers/wdf/). In UMDF, the drivers are user-mode DLLs, and the device objects are COM objects that implement the IWDFDevice interface. A device object in a UMDF device stack is called a *WDF device object* (WDF DO).
+In some cases, a device has a user-mode device stack in addition to its kernel-mode device stack. User-mode drivers are often based on the User-Mode Driver Framework (UMDF), which is one of the driver models provided by the [Windows Driver Frameworks (WDF)](../wdf/index.md). In UMDF, the drivers are user-mode DLLs, and the device objects are COM objects that implement the IWDFDevice interface. A device object in a UMDF device stack is called a *WDF device object* (WDF DO).
 
 The following diagram shows the device node, kernel-mode device stack, and the user-mode device stack for a USB-FX-2 device. The drivers in both the user-mode and kernel-mode stacks participate in I/O requests that are directed at the USB-FX-2 device.
 
@@ -88,11 +87,4 @@ The following diagram shows the device node, kernel-mode device stack, and the u
 [Driver stacks](driver-stacks.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Viewing Code Integrity Events
 description: Viewing Code Integrity Events
-ms.assetid: b1c8ea3e-1a10-41fd-bdc8-c1e6e7344d39
 keywords:
 - Event Viewer WDK driver signing
 - viewing Code Integrity events

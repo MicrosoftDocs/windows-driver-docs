@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS
 description: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for OID_WDI_SET_DEFAULT_KEY_ID.
-ms.assetid: 24E7E758-FEED-4D2A-BAA8-6DBC08726FBA
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS
 
 
-WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for [OID\_WDI\_SET\_DEFAULT\_KEY\_ID](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-default-key-id).
+WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for [OID\_WDI\_SET\_DEFAULT\_KEY\_ID](./oid-wdi-set-default-key-id.md).
 
 ## TLV Type
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

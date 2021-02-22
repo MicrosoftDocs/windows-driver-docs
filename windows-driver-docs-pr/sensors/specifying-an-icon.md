@@ -1,7 +1,6 @@
 ---
 title: Specifying a sensor icon
 description: Specifying a sensor icon
-ms.assetid: fe4a204f-befb-45d4-ad95-03b9e788e375
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -34,10 +33,7 @@ CopyFiles       = UMDriverCopy
 AddProperty     = DriverPropertiesSection
 ```
 
-For more information about device properties in INF files, see [**INF AddProperty Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive).
+For more information about device properties in INF files, see [**INF AddProperty Directive**](../install/inf-addproperty-directive.md).
 
 ## Related topics
 [**Sensor Icon Constants**](sensor-icon-constants.md)
-
-
-

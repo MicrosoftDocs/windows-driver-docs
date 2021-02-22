@@ -1,7 +1,6 @@
 ---
 title: Creating IEEE 1394 Virtual Devices
 description: Creating IEEE 1394 Virtual Devices
-ms.assetid: 5b6a4d7a-e116-4a68-a1f8-fd561fbc0495
 keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus
@@ -16,11 +15,11 @@ ms.localizationpriority: medium
 
 
 
-Upper-level drivers and user-mode services can add or remove virtual 1394 devices by means of a device control request with an [**IOCTL\_IEEE1394\_API\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537241) control code. The request contains an [**IEEE1394\_API\_REQUEST**](https://docs.microsoft.com/previous-versions/ff537204(v=vs.85)) structure whose **RequestNumber** member indicates the action to be taken (addition or removal) by the bus driver. Since a virtual device has no device ID or instance ID, the driver or the user program that requests that a virtual device be created, must supply the device ID and instance ID in an [**IEEE1394\_VDEV\_PNP\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537206) structure.
+Upper-level drivers and user-mode services can add or remove virtual 1394 devices by means of a device control request with an [**IOCTL\_IEEE1394\_API\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537241) control code. The request contains an [**IEEE1394\_API\_REQUEST**](/previous-versions/ff537204(v=vs.85)) structure whose **RequestNumber** member indicates the action to be taken (addition or removal) by the bus driver. Since a virtual device has no device ID or instance ID, the driver or the user program that requests that a virtual device be created, must supply the device ID and instance ID in an [**IEEE1394\_VDEV\_PNP\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537206) structure.
 
 When the IEEE1394\_REQUEST\_FLAG\_PERSISTENT is specified using IOCTL\_IEEE1394\_API\_REQUEST, the 1394 bus driver stores nonvolatile context information about the virtual device in the registry. This allows the bus driver to automatically recreate the virtual PDO on the next boot without intervention from an upper-level driver.
 
-The bus driver uses this registry entry to "enumerate" a virtual device for each 1394 device stack in the system. After creating a virtual PDO for the virtual device, the 1394 bus driver calls [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations), just as it would after creating a PDO for a real device. This call informs the Plug and Play (PnP) manager that a new device has arrived, and the PnP manager loads the driver for the virtual device.
+The bus driver uses this registry entry to "enumerate" a virtual device for each 1394 device stack in the system. After creating a virtual PDO for the virtual device, the 1394 bus driver calls [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations), just as it would after creating a PDO for a real device. This call informs the Plug and Play (PnP) manager that a new device has arrived, and the PnP manager loads the driver for the virtual device.
 
 If more than one 1394 host controller is present on the system, a virtual device that is defined in the registry is enumerated more than once. To ensure that each virtual device has a unique instance ID, the upper-level driver or user service that creates the virtual device should not specify a specific "hard-coded" instance ID for virtual devices on systems that have more than one 1394 host controller. Instead, the upper-level software should set the IEEE1394\_REQUEST\_FLAG\_USE\_LOCAL\_HOST\_EUI flag in the IEEE1394\_API\_REQUEST. If this flag is set, the next time the bus driver enumerates the device, it uses the instance ID of the host controller as the instance ID of the virtual device. Because each 1394 device stack will have a host controller with a unique instance ID, a virtual device, whose instance ID is the same as the instance ID of its host controller, will also have a unique instance ID.
 
@@ -31,9 +30,4 @@ In order to expose a virtual device on the 1394 bus, an emulation driver must ad
 2.  Issue a bus reset to inform the 1394 nodes present on the bus that the system configuration ROM has changed.
 
  
-
- 
-
-
-
 

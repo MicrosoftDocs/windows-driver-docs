@@ -1,7 +1,6 @@
 ---
 title: Flipping to the GDI Surface
 description: Flipping to the GDI Surface
-ms.assetid: e74e108d-f88c-4e42-9136-ef087378807a
 keywords:
 - drawing page flips WDK DirectDraw , GDI surface
 - DirectDraw flipping WDK Windows 2000 display , GDI surface
@@ -21,15 +20,9 @@ ms.localizationpriority: medium
 
 A display driver should be implemented so that the GDI (desktop) surface can become the primary surface. Doing so lets applications display GDI-rendered content, such as dialog boxes. The driver can use one of the following methods to make the GDI surface into the primary surface:
 
--   The driver can include the GDI surface as one of the buffers in the driver's flipping chain. This method is the recommended way to let applications flip to the GDI surface. By default, when an application makes flipping requests, DirectDraw makes calls to the driver's [*DdFlip*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function to cycle through the buffers in the order that they are attached to each other in the chain. An application can flip to the GDI surface by determining the position of the GDI surface in the chain and then by making the appropriate number of flipping requests.
+-   The driver can include the GDI surface as one of the buffers in the driver's flipping chain. This method is the recommended way to let applications flip to the GDI surface. By default, when an application makes flipping requests, DirectDraw makes calls to the driver's [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function to cycle through the buffers in the order that they are attached to each other in the chain. An application can flip to the GDI surface by determining the position of the GDI surface in the chain and then by making the appropriate number of flipping requests.
 
--   The driver can implement a [*DdFlipToGDISurface*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_fliptogdisurface) function to receive notification when DirectDraw is flipping to or from a GDI surface. If the driver can access the GDI surface, the driver can flip to the GDI surface after receiving this notification. Using this method, the GDI surface is not required to be part of the driver's flipping chain.
-
- 
+-   The driver can implement a [*DdFlipToGDISurface*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_fliptogdisurface) function to receive notification when DirectDraw is flipping to or from a GDI surface. If the driver can access the GDI surface, the driver can flip to the GDI surface after receiving this notification. Using this method, the GDI surface is not required to be part of the driver's flipping chain.
 
  
-
-
-
-
 

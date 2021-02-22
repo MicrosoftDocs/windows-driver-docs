@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RSN_KEY_INFO
 description: WDI_TLV_RSN_KEY_INFO is a TLV that contains Rsn Eapol key parameters.
-ms.assetid: 8C7C77F7-FF62-485C-94C4-EE0F1E57D771
 ms.date: 04/02/2018
 keywords:
  - WDI_TLV_RSN_KEY_INFO Network Drivers Starting with Windows Vista
@@ -32,8 +31,9 @@ The size (in bytes) of the following values.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1803 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1803
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp
+

@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaNullTransform
 description: KSPROPSETID\_BdaNullTransform
-ms.assetid: 08277c76-4fa5-46d0-8c86-4bc0e060fa9c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

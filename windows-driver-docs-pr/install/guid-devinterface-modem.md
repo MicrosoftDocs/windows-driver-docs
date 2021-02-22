@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MODEM
 description: GUID_DEVINTERFACE_MODEM
-ms.assetid: 80f5c063-8b22-422f-8102-4ac1e62241c8
 keywords: ["GUID_DEVINTERFACE_MODEM Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_MODEM
 
 
-The GUID_DEVINTERFACE_MODEM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [modem devices](https://docs.microsoft.com/previous-versions/windows/hardware/modem/ff542573(v=vs.85)).
+The GUID_DEVINTERFACE_MODEM [device interface class](./overview-of-device-interface-classes.md) is defined for [modem devices](/previous-versions/windows/hardware/modem/ff542573(v=vs.85)).
 
 <table>
 <colgroup>
@@ -65,9 +64,9 @@ GUID_DEVINTERFACE_MODEM in *Ntddmodm.h* will be defined correctly only if the co
 ...
 ```
 
-For information about modem devices, see [Modem Devices Design Guide](https://docs.microsoft.com/previous-versions/windows/hardware/modem/ff542476(v=vs.85)).
+For information about modem devices, see [Modem Devices Design Guide](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)).
 
-For an example of using this device interface class, see the [FakeModem - Unimodem controller-less modem sample driver](https://go.microsoft.com/fwlink/p/?linkid=256110) sample that is provided in the WDK.
+For an example of using this device interface class, see the [FakeModem - Unimodem controller-less modem sample driver](/samples/browse/) sample that is provided in the WDK.
 
 [**GUID_CLASS_MODEM**](guid-class-modem.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_MODEM instead.
 
@@ -95,13 +94,4 @@ Requirements
 
 
 [**GUID_CLASS_MODEM**](guid-class-modem.md)
-
- 
-
- 
-
-
-
-
-
 

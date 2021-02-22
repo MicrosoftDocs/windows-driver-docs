@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED
 description: Clients use KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED to request notification when interface data is available to retrieve and display to users.
-ms.assetid: c76bbe0d-7cc4-4594-b435-ad738ebbd141
 keywords: ["KSEVENT_BDA_CA_MODULE_UI_REQUESTED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -50,18 +49,11 @@ Requirements
 ## See also
 
 
-[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
 
-[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
 [**KSPROPERTY\_BDA\_CA\_MODULE\_UI**](ksproperty-bda-ca-module-ui.md)
 
  
-
- 
-
-
-
-
-
 

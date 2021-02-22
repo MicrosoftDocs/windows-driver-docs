@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetVendorIdProductId
 description: EFI_USBFN_IO_PROTOCOL.GetVendorIdProductId
-ms.assetid: 78dbc589-3ffd-4ee2-9d80-4570b3b20b2f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

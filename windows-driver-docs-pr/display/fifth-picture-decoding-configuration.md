@@ -1,7 +1,6 @@
 ---
 title: Fifth Picture Decoding Configuration
 description: Fifth Picture Decoding Configuration
-ms.assetid: 3a561eaf-24b9-43cf-b968-3d568975ef31
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

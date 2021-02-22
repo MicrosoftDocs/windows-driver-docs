@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_IES
 description: WDI_TLV_ASSOCIATION_RESPONSE_IES is an unused TLV.
-ms.assetid: 3882FFB2-D77B-4433-BFD2-F55A91C58985
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_RESPONSE_IES Network Drivers Starting with Windows Vista

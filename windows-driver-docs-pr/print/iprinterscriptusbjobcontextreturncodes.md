@@ -4,7 +4,6 @@ description: The IPrinterScriptUsbJobContextReturnCodes interface represents an 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 8E34748E-B9F9-4404-9B40-04EA72EEA322
 keywords: ["IPrinterScriptUsbJobContextReturnCodes interface Print Devices", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , described"]
 topic_type:
 - apiref
@@ -25,7 +24,7 @@ This interface is returned by the [**IPrinterScriptUsbJobContext::ReturnCodes**]
 Members
 -------
 
-The **IPrinterScriptUsbJobContextReturnCodes** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContextReturnCodes** also has these types of members:
+The **IPrinterScriptUsbJobContextReturnCodes** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContextReturnCodes** also has these types of members:
 
 -   [Methods](#methods)
 

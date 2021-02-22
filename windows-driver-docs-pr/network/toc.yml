@@ -150,8 +150,6 @@
     href: introduction-to-ndis-pdpi.md
 - name: "NDIS versions"
   items: 
-  - name: "NDIS version guide"
-    href: ndis-version-guide.md
   - name: "Overview of NDIS versions"
     href: overview-of-ndis-versions.md
   - name: "Introductions to NDIS 6.0 and later"
@@ -352,8 +350,6 @@
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md    
 - name: "NDIS Core Functionality"
   items: 
-  - name: "NDIS Drivers and Services"
-    href: ndis-core-functionality2.md
   - name: "NDIS Miniport Drivers"
     items: 
     - name: "Roadmap for Developing NDIS Miniport Drivers"
@@ -1988,6 +1984,8 @@
           href: receiving-network-data-with-ipsec-offload-version-2.md
       - name: "Offloading the Segmentation of Large TCP Packets"
         href: offloading-the-segmentation-of-large-tcp-packets.md
+      - name: "UDP Segmentation Offload (USO)"
+        href: udp-segmentation-offload-uso-.md
     - name: "Connection Offload"
       items: 
       - name: "Connection Offload Overview"
@@ -2019,7 +2017,7 @@
     - name: "PacketDirect Provider Interface (PDPI) Status Indications"
       items: 
       - name: "NDIS_STATUS_PD_CURRENT_CONFIG"
-        href: ndis-status-pd-current-config.md
+        href: ndis-status-pd-current-config.md    
 - name: "Virtualized Networking"
   items: 
   - name: "Virtualized Networking Topics"
@@ -2556,6 +2554,8 @@
       href: hyper-v-extensible-switch-oids.md
     - name: "Hyper-V Extensible Switch Status Indications"
       items: 
+      - name: "Overview"
+        href: hyper-v-extensible-switch-status-indications.md
       - name: "NDIS_STATUS_SWITCH_NIC_STATUS"
         href: ndis-status-switch-nic-status.md
       - name: "NDIS_STATUS_SWITCH_PORT_REMOVE_VF"
@@ -2570,8 +2570,6 @@
         href: ndis-status-receive-queue-state.md
 - name: "Wireless Networking"
   items: 
-  - name: "Wireless Networking Topics"
-    href: wireless-networking2.md
   - name: "WLAN Universal Windows driver model"
     href: wifi-universal-driver-model.md
   - name: "Cellular architecture and overview"
@@ -2600,8 +2598,6 @@
         href: communicate-with-the-ril-driver-by-using-the-ioemcellularmodem-interface.md
   - name: "Mobile Broadband (MB) Design Guide"
     items: 
-    - name: "Mobile Broadband (MB) Design Guide Topics"
-      href: mobile-broadband--mb--design-guide.md
     - name: "Roadmap to Develop MB Miniport Drivers"
       href: roadmap-to-develop-mb-miniport-drivers.md
     - name: "MB Interface Model"
@@ -4736,8 +4732,12 @@
         href: data-out-endpoint-descriptor.md
 - name: "Kernel Mode SDK Topics for Network Drivers"
   items: 
+  - name: "Overview of Kernel Mode SDK Topics for Network Drivers"
+    href: kernel-mode-sdk-topics-for-network-drivers.md
   - name: "Mstcpip.h"
     items: 
+    - name: "Overview"
+      href: mstcpip-h.md
     - name: "SIO_LOOPBACK_FAST_PATH control code"
       href: sio-loopback-fast-path.md
     - name: "SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code"
@@ -4748,6 +4748,8 @@
       href: sio-set-wfp-connection-redirect-records.md
   - name: "Ntddndis.h"
     items: 
+    - name: "Overview"
+      href: ntddndis-h.md
     - name: "GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES"
       href: guid-ndis-gen-pci-device-custom-properties.md
     - name: "OID_802_3_ADD_MULTICAST_ADDRESS"
@@ -5430,6 +5432,8 @@
       href: oid-wwan-visible-providers.md
   - name: "Ws2def.h"
     items: 
+    - name: "Overview"
+      href: ws2def-h.md
     - name: "AF_INET"
       href: af-inet.md
     - name: "AF_INET6"

@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_STATISTICS
 description: As a query, NDIS and overlying drivers use the OID_GEN_STATISTICS OID to obtain statistics of an adapter or a miniport driver.
-ms.assetid: ff81d6b0-806d-4ddf-9da1-a169221be61f
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_STATISTICS Network Drivers Starting with Windows Vista
@@ -54,7 +53,7 @@ The NDIS\_STATISTICS\_INFO structure is defined as follows:
 This structure contains the following members:
 
 <a href="" id="header"></a>**Header**  
-The [**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure for the NDIS\_STATISTICS\_INFO structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_STATISTICS\_INFO\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_STATISTICS\_INFO\_REVISION\_1.
+The [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure for the NDIS\_STATISTICS\_INFO structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_STATISTICS\_INFO\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_STATISTICS\_INFO\_REVISION\_1.
 
 <a href="" id="supportedstatistics"></a>**SupportedStatistics**  
 The set of statistics that the miniport driver supports.
@@ -197,7 +196,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header)
+[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header)
 
 [OID\_GEN\_BROADCAST\_BYTES\_RCV](oid-gen-broadcast-bytes-rcv.md)
 
@@ -234,11 +233,3 @@ Requirements
 [OID\_GEN\_XMIT\_DISCARDS](oid-gen-xmit-discards.md)
 
 [OID\_GEN\_XMIT\_ERROR](oid-gen-xmit-error.md)
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: MPIOMoveDevice function
 description: The MPIOMoveDevice method is used to set the active path on the device.
-ms.assetid: aa3da461-ea55-4f60-b957-eb6b6cc3aeec
 keywords: ["MPIOMoveDevice function Storage Devices"]
 topic_type:
 - apiref

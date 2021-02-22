@@ -1,7 +1,6 @@
 ---
 title: WSD Scan Service Operation Elements
 description: WSD Scan Service Operation Elements
-ms.assetid: e06d7683-bec4-49af-bc03-06ef02169999
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

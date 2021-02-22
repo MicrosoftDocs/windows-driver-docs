@@ -1,7 +1,6 @@
 ---
 title: MRxSetVolumeInfo routine
 description: TheMRxSetVolumeInfo routine is called by RDBSS to request that a network mini-redirector set volume information.
-ms.assetid: 88a1809f-545a-4822-8fc3-27adf1c94835
 keywords: ["MRxSetVolumeInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxSetVolumeInfo routine
 
 
-The*MRxSetVolumeInfo* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector set volume information.
+The*MRxSetVolumeInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set volume information.
 
 Syntax
 ------
@@ -124,7 +123,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -149,11 +148,4 @@ Requirements
 [**MRxSetSdInfo**](mrxsetsdinfo.md)
 
  
-
- 
-
-
-
-
-
 

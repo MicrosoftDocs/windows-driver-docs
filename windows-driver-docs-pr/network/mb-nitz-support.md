@@ -1,7 +1,6 @@
 ---
 title: MB NITZ support
 description: MB NITZ support
-ms.assetid: 94FE0380-C5EA-49F7-A649-0524C27F1A35
 keywords:
 - MB NITZ support, Mobile Broadband NITZ support
 ms.date: 03/13/2019
@@ -39,7 +38,7 @@ The following table specifies the UUID and command code for each CID, as well as
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_NITZ_INFO | MBIM_NITZ_INFO |

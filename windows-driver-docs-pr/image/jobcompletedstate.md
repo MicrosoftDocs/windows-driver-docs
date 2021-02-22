@@ -1,7 +1,6 @@
 ---
 title: JobCompletedState element
 description: The required JobCompletedState element specifies a job's final job state.
-ms.assetid: 41dc029b-2315-465a-8490-1f4e50db0188
 keywords: ["JobCompletedState element Imaging Devices"]
 topic_type:
 - apiref

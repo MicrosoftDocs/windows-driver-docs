@@ -1,7 +1,6 @@
 ---
 title: Gyroscope data fields
 description: This topic provides information about the data fields that are specific to the gyroscope.
-ms.assetid: A8F8EC33-B6B4-4CA3-8A45-5760F18116D3
 ms.date: 01/04/2018
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the gyroscope.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 <table>
 <colgroup>
@@ -55,14 +54,7 @@ The following table shows the data fields. For more information about the types 
 ## <span id="related_topics"></span>Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
  
-
- 
-
-
-
-
-
 

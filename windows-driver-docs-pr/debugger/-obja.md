@@ -1,7 +1,6 @@
 ---
 title: obja
 description: The obja extension displays the attributes of an object in the object manager.
-ms.assetid: dc263ec2-72bf-4cb1-8583-4e9142d0bbdb
 keywords: ["object manager", "obja Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

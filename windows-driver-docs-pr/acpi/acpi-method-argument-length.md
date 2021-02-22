@@ -1,7 +1,6 @@
 ---
 title: ACPI_METHOD_ARGUMENT_LENGTH macro
 description: The ACPI_METHOD_ARGUMENT_LENGTH macro calculates the size, in bytes, of a variable-length ACPI_METHOD_ARGUMENT structure that contains data of a specified size, in bytes.
-ms.assetid: 8329c2eb-a787-4590-8de9-95078bbb85da
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH macro ACPI Devices
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # ACPI\_METHOD\_ARGUMENT\_LENGTH macro
 
 
-The ACPI\_METHOD\_ARGUMENT\_LENGTH macro calculates the size, in bytes, of a variable-length [**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure that contains data of a specified size, in bytes.
+The ACPI\_METHOD\_ARGUMENT\_LENGTH macro calculates the size, in bytes, of a variable-length [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure that contains data of a specified size, in bytes.
 
 Syntax
 ------
@@ -61,12 +60,7 @@ Requirements
 ## See also
 
 
-[**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
+[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
 
  
-
- 
-
-
-
 

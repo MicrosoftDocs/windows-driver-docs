@@ -1,7 +1,6 @@
 ---
 title: Introduction to Storport Miniport Drivers
 description: Storport Miniport Drivers
-ms.assetid: 17ab5a07-b7c3-4fed-acf7-3e2491b7bd56
 keywords:
 - Storport miniport drivers WDK
 - Storport miniport drivers WDK , routines listed

@@ -1,7 +1,6 @@
 ---
 title: Setting Up the Web Site
 description: Setting Up the Web Site
-ms.assetid: 9c719557-bca0-4c9c-9208-70e106d976f9
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

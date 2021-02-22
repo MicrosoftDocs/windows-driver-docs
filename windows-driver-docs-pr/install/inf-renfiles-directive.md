@@ -1,7 +1,6 @@
 ---
 title: INF RenFiles Directive
 description: A RenFiles directive references an INF-writer-defined section elsewhere in the INF file, which causes that list of files to be renamed in the context of operations on the section in which the referring RenFiles directive is specified.
-ms.assetid: 269171f7-88f6-47bb-9997-8fdcbe3fa688
 keywords:
 - INF RenFiles Directive Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 A **RenFiles** directive references an INF-writer-defined section elsewhere in the INF file, which causes that list of files to be renamed in the context of operations on the section in which the referring **RenFiles** directive is specified.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -45,7 +44,7 @@ A **RenFiles** directive can be specified within any of the sections shown in th
 
 Each named section referenced by a **RenFiles** directive has one or more entries of the following form:
 
-```ini
+```inf
 [file-list-section]
  
 new-dest-file-name,old-source-file-name 
@@ -88,7 +87,7 @@ Examples
 
 This example shows a section referenced by a **RenFiles** directive.
 
-```ini
+```inf
 [RenameOldFilesSec]
 devfile41.sav, devfile41.sys
 ```

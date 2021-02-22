@@ -1,7 +1,6 @@
 ---
 title: Vector Printing Commands
 description: Vector Printing Commands
-ms.assetid: b81fa498-62a5-4839-ae4a-1330d8a03d03
 keywords:
 - vector printing commands WDK Unidrv
 - printer commands WDK Unidrv , vector

@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_WRITE\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_WRITE\ routine is called by RDBSS to issue a write request to the network mini-redirector.
-ms.assetid: b70838e3-4e80-4ec9-88ba-0f608a1af78e
 keywords: ["MRxLowIOSubmit LOWIO_OP_WRITE routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxLowIOSubmit\[LOWIO\_OP\_WRITE\] routine
 
 
-The *MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to issue a write request to the network mini-redirector.
+The *MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to issue a write request to the network mini-redirector.
 
 Syntax
 ------
@@ -105,7 +104,7 @@ The **LowIoContext.ParamsFor.ReadWrite.ByteCount** member is set to the value of
 
 A write request is normally implemented by a network mini-redirector as an asynchronous operation because it can take considerable time. The operation usually consists of sending a network request to the remote server. The response is obtained when the write request is completed on the server. This is an example of an operation for which the network mini-redirector may need to register a context for handling cancellations initiated locally.
 
-While the *MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
+While the *MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
 
 Requirements
 ------------
@@ -146,14 +145,7 @@ Requirements
 
 [**MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\_MULTIPLE\]**](mrxlowiosubmit-lowio-op-unlock-multiple-.md)
 
-[**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx)
+[**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx)
 
  
-
- 
-
-
-
-
-
 

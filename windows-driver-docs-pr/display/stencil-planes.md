@@ -1,7 +1,6 @@
 ---
 title: Stencil Planes
 description: Stencil Planes
-ms.assetid: a2abe78b-7755-45fc-ba02-f2809db5da3e
 keywords:
 - Direct3D WDK Windows 2000 display , stencil planes
 - stencil planes WDK Direct3D
@@ -27,7 +26,7 @@ Some hardware designed to accelerate Direct3D implements stencil planes. The spe
 
 Stencil planes are assumed to be embedded in the z-buffer data.
 
-In DirectX 5.0, applications found the available z-buffer bit depths using the DDBD\_*Xx* flags set in the **dwDeviceZBufferBitDepth** member of the [**D3DDEVICEDESC\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3ddevicedesc_v1) structure. To support z-buffers with stencil and z-buffer bit depths that cannot be represented using the existing DDBD\_*Xx* flags, DirectX 6.0 and later versions have a new API entry point, **IDirect3D7::EnumZBufferFormats** (described in the Direct3D SDK documentation), which returns an array of DDPIXELFORMAT structures describing the possible z-buffer/stencil pixel formats. The [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure includes the following new z-buffer-related members:
+In DirectX 5.0, applications found the available z-buffer bit depths using the DDBD\_*Xx* flags set in the **dwDeviceZBufferBitDepth** member of the [**D3DDEVICEDESC\_V1**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3ddevicedesc_v1) structure. To support z-buffers with stencil and z-buffer bit depths that cannot be represented using the existing DDBD\_*Xx* flags, DirectX 6.0 and later versions have a new API entry point, **IDirect3D7::EnumZBufferFormats** (described in the Direct3D SDK documentation), which returns an array of DDPIXELFORMAT structures describing the possible z-buffer/stencil pixel formats. The [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure includes the following new z-buffer-related members:
 
 <span id="dwStencilBitDepth"></span><span id="dwstencilbitdepth"></span><span id="DWSTENCILBITDEPTH"></span>**dwStencilBitDepth**  
 Specifies the number of stencil bits (as an integer, not as a DDBD\_*Xx* flag value).
@@ -40,7 +39,7 @@ Specifies which bits the stencil value occupies.
 
 A new flag, DDPF\_STENCILBUFFER, indicates the presence of stencil bits within the z-buffer. The **dwZBufferBitDepth** member, which existed previously, gives the total number of z-buffer bits including the stencil bits.
 
-DirectX 6.0 and later versions drivers should still set the appropriate DDBD\_*Xx* flags in **dwDeviceZBufferBitDepth** for the z-only z-buffer formats they support. If stencil planes are not supported and the DDBD\_*Xx* flags can represent all available z-buffer formats, then setting these flags is sufficient, because they are translated into DDPIXELFORMAT by **IDirect3D7::EnumZBufferFormats**. Otherwise, the Direct3D driver must respond to a [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) query that uses the GUID\_ZPixelFormats GUID by returning a buffer in which the first DWORD indicates the number of valid z-buffer DDPIXELFORMAT structures, followed by the DDPIXELFORMAT structures themselves.
+DirectX 6.0 and later versions drivers should still set the appropriate DDBD\_*Xx* flags in **dwDeviceZBufferBitDepth** for the z-only z-buffer formats they support. If stencil planes are not supported and the DDBD\_*Xx* flags can represent all available z-buffer formats, then setting these flags is sufficient, because they are translated into DDPIXELFORMAT by **IDirect3D7::EnumZBufferFormats**. Otherwise, the Direct3D driver must respond to a [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) query that uses the GUID\_ZPixelFormats GUID by returning a buffer in which the first DWORD indicates the number of valid z-buffer DDPIXELFORMAT structures, followed by the DDPIXELFORMAT structures themselves.
 
 New render states associated with stencil planes are shown in the following table, which lists the render state, the type associated with the render state's value, and a description. For more details on these render states, see the DirectX SDK documentation.
 
@@ -92,10 +91,4 @@ New render states associated with stencil planes are shown in the following tabl
  
 
  
-
- 
-
-
-
-
 

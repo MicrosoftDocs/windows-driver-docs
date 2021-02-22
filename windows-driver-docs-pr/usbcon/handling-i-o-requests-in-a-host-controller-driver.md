@@ -1,5 +1,5 @@
 ---
-Description: Best practices for a host controller driver for handling I/O requests sent by UCX.
+description: Best practices for a host controller driver for handling I/O requests sent by UCX.
 title: Handle I/O requests in a USB host controller driver
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -14,14 +14,11 @@ UCX keeps track of all the endpoints that have been created by the host controll
 
 To ensure compatibility with existing USB drivers, the host controller must comply with the following requirements when completing URB request:
 
--  [**WdfRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) must be called at DISPATCH\_LEVEL.
--   If the URB was delivered to its framework queue and the driver began processing it synchronously on the calling driver’s thread or DPC, the request should not also be completed synchronously. The request must be completed on a separate DPC, which can be scheduled with a call to [**WdfDpcEnqueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpcenqueue).
--   Similar to the preceding requirement, upon receiving [**EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue) or [**EVT_WDF_REQUEST_CANCEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel), the host controller driver must complete the URB request on a separate DPC from the calling thread or DPC. By default, WDF completes canceled requests on the queue synchronously. That behavior might cause issues for URB requests. For this reason, the driver must provide an *EvtIoCanceledOnQueue* callback for its URB queues.
+-  [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) must be called at DISPATCH\_LEVEL.
+-   If the URB was delivered to its framework queue and the driver began processing it synchronously on the calling driver’s thread or DPC, the request should not also be completed synchronously. The request must be completed on a separate DPC, which can be scheduled with a call to [**WdfDpcEnqueue**](/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpcenqueue).
+-   Similar to the preceding requirement, upon receiving [**EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE**](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue) or [**EVT_WDF_REQUEST_CANCEL**](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel), the host controller driver must complete the URB request on a separate DPC from the calling thread or DPC. By default, WDF completes canceled requests on the queue synchronously. That behavior might cause issues for URB requests. For this reason, the driver must provide an *EvtIoCanceledOnQueue* callback for its URB queues.
 
-The framework request object for an [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) contains an URB located at **Parameters.Others.Arg1** of the request. When the request is completed, the URB status must be set to either USBD\_STATUS\_SUCCESS, or to a failure status that indicates the nature of the failure. The failure status values are defined in the usb.h header file.
+The framework request object for an [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) contains an URB located at **Parameters.Others.Arg1** of the request. When the request is completed, the URB status must be set to either USBD\_STATUS\_SUCCESS, or to a failure status that indicates the nature of the failure. The failure status values are defined in the usb.h header file.
 
 ## Related topics
-[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)  
-
-
-
+[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)

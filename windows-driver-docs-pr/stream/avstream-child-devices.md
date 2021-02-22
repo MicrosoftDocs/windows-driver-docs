@@ -1,7 +1,6 @@
 ---
 title: AVStream Child Devices
 description: AVStream Child Devices
-ms.assetid: 4b2528d7-acc7-40eb-a351-64d8564c7a13
 keywords:
 - child devices WDK AVStream
 - AVStream child devices WDK

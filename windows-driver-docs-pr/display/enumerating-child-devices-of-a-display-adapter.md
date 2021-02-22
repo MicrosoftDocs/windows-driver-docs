@@ -1,7 +1,6 @@
 ---
 title: Enumerating Child Devices of a Display Adapter
 description: Enumerating Child Devices of a Display Adapter
-ms.assetid: 3bec2117-aef4-41fc-b88a-0081c7c9fe3d
 keywords:
 - video present networks WDK display , display adapter child devices
 - VidPN WDK display , display adapter child devices
@@ -17,17 +16,17 @@ ms.localizationpriority: medium
 
 The following sequence of steps describes how the display port driver, display miniport driver, and video present network (VidPN) manager collaborate at initialization time to enumerate child devices of a display adapter.
 
-1.  The display port driver calls the display miniport driver's [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device) function. *DxgkDdiStartDevice* returns (in the *NumberOfChildren* parameter) the number of devices that are (or could become by docking) children of the display adapter. *DxgkDdiStartDevice* also returns (in the *NumberOfVideoPresentSources* parameter) the number N of video present sources supported by the display adapter. Those video present sources will subsequently be identified by the numbers 0, 1, ... N -1.
+1.  The display port driver calls the display miniport driver's [**DxgkDdiStartDevice**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device) function. *DxgkDdiStartDevice* returns (in the *NumberOfChildren* parameter) the number of devices that are (or could become by docking) children of the display adapter. *DxgkDdiStartDevice* also returns (in the *NumberOfVideoPresentSources* parameter) the number N of video present sources supported by the display adapter. Those video present sources will subsequently be identified by the numbers 0, 1, ... N -1.
 
-2.  The display port driver calls the display miniport driver's [**DxgkDdiQueryChildRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations) function, which enumerates child devices of the display adapter. *DxgkDdiQueryChildRelations* fills in an array of [**DXGK\_CHILD\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_descriptor) structures: one for each child device. Note that all child devices of the display adapter are on-board: monitors and other external devices that connect to the display adapter are not considered child devices. For more information, see [Child Devices of the Display Adapter](child-devices-of-the-display-adapter.md). *DxgkDdiQueryChildRelations* must enumerate potential child devices as well as the child devices that are physically present at initialization time. For example, if connecting a laptop computer to a docking station will result in the appearance of a new video output, *DxgkDdiQueryChildRelations* must enumerate that video output regardless of whether the computer is docked at initialization time. Also, if connecting a dongle to a video output connector will allow several monitors to share the connector, *DxgkDdiQueryChildRelations* must enumerate a child device for each branch of the dongle, regardless of whether the dongle is connected at initialization time.
+2.  The display port driver calls the display miniport driver's [**DxgkDdiQueryChildRelations**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations) function, which enumerates child devices of the display adapter. *DxgkDdiQueryChildRelations* fills in an array of [**DXGK\_CHILD\_DESCRIPTOR**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_descriptor) structures: one for each child device. Note that all child devices of the display adapter are on-board: monitors and other external devices that connect to the display adapter are not considered child devices. For more information, see [Child Devices of the Display Adapter](child-devices-of-the-display-adapter.md). *DxgkDdiQueryChildRelations* must enumerate potential child devices as well as the child devices that are physically present at initialization time. For example, if connecting a laptop computer to a docking station will result in the appearance of a new video output, *DxgkDdiQueryChildRelations* must enumerate that video output regardless of whether the computer is docked at initialization time. Also, if connecting a dongle to a video output connector will allow several monitors to share the connector, *DxgkDdiQueryChildRelations* must enumerate a child device for each branch of the dongle, regardless of whether the dongle is connected at initialization time.
 
-3.  For each child device (enumerated as described in Step 1) that has an HPD awareness value of **HpdAwarenessInterruptible** or **HpdAwarenessPolled**, the display port driver calls the display miniport driver's [**DxgkDdiQueryChildStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_status) function to determine whether the child device has an external device connected to it.
+3.  For each child device (enumerated as described in Step 1) that has an HPD awareness value of **HpdAwarenessInterruptible** or **HpdAwarenessPolled**, the display port driver calls the display miniport driver's [**DxgkDdiQueryChildStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_status) function to determine whether the child device has an external device connected to it.
 
 4.  The display port driver creates a PDO for each child device that satisfies one of the following conditions:
     -   The child device has an HPD awareness value of **HpdAwarenessAlwaysConnected**.
     -   The child device has an HPD awareness value of **HpdAwarenessPolled** or **HpdAwarenessInterruptible**, and the operating system knows from a previous query or notification that the child device has an external device connected.
 
-5.  The display port driver calls the display miniport driver's [**DxgkDdiQueryDeviceDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_device_descriptor) function for each child device that satisfies one of the following conditions:
+5.  The display port driver calls the display miniport driver's [**DxgkDdiQueryDeviceDescriptor**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_device_descriptor) function for each child device that satisfies one of the following conditions:
 
     -   The child device is known to have an external device connected.
     -   The child device is assumed to have an external device connected.
@@ -42,17 +41,11 @@ The following sequence of steps describes how the display port driver, display m
 7.  The VidPN manager uses the following procedure to build an initial VidPN.
     -   If a last known good VidPN is recorded in the registry, use it as the initial VidPN.
 
-    -   Otherwise, call the display miniport driver's [**DxgkDdiRecommendFunctionalVidPn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn) function to obtain an initial VidPN.
+    -   Otherwise, call the display miniport driver's [**DxgkDdiRecommendFunctionalVidPn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn) function to obtain an initial VidPN.
 
-    -   If *DxgkDdiRecommendFunctionalVidPn* fails to return a functional VidPN that is acceptable, create a simple VidPN that contains one video present path; that is, one (source, target) pair. Call the display miniport driver's [**DxgkDdiIsSupportedVidPn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn) function to verify that the proposed VidPN will work. If *DxgkDdiIsSupportedVidPn* reports that the proposed VidPN will not work, keep trying until a suitable VidPN is found.
+    -   If *DxgkDdiRecommendFunctionalVidPn* fails to return a functional VidPN that is acceptable, create a simple VidPN that contains one video present path; that is, one (source, target) pair. Call the display miniport driver's [**DxgkDdiIsSupportedVidPn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn) function to verify that the proposed VidPN will work. If *DxgkDdiIsSupportedVidPn* reports that the proposed VidPN will not work, keep trying until a suitable VidPN is found.
 
-    -   Call the display miniport driver's [**DxgkDdiEnumVidPnCofuncModality**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality) function to determine the source and target modes that are available for the VidPN.
-
- 
+    -   Call the display miniport driver's [**DxgkDdiEnumVidPnCofuncModality**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality) function to determine the source and target modes that are available for the VidPN.
 
  
-
-
-
-
 

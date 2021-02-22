@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_SET_SECURITY
 description: IRP\_MJ\_SET\_SECURITY
-ms.assetid: 8d8b06b9-5d63-4506-831c-9c533dbe95f4
 keywords: ["IRP_MJ_SET_SECURITY Installable File System Drivers"]
 topic_type:
 - apiref
@@ -34,13 +33,13 @@ The filter driver should pass this IRP down to the next-lower driver on the stac
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a set security information request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a set security information request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 A pointer to the target device object.
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-A pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+A pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 A pointer to the file object that is associated with *DeviceObject*.
@@ -51,7 +50,7 @@ The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObje
 Specifies IRP\_MJ\_SET\_SECURITY.
 
 <a href="" id="irpsp--parameters-setsecurity-securitydescriptor"></a>*IrpSp-&gt;Parameters.SetSecurity.SecurityDescriptor*  
-A pointer to a [**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure that contains the values of the security information to be assigned to the object.
+A pointer to a [**SECURITY\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure that contains the values of the security information to be assigned to the object.
 
 <a href="" id="irpsp--parameters-setsecurity-securityinformation"></a>*IrpSp-&gt;Parameters.SetSecurity.SecurityInformation*  
 A value of type [**SECURITY\_INFORMATION**](security-information.md) that specifies which security information is to be set in the security descriptor. This value can be one of the following.
@@ -92,26 +91,19 @@ A value of type [**SECURITY\_INFORMATION**](security-information.md) that specif
 ## See also
 
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
+[**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**IRP\_MJ\_QUERY\_SECURITY**](irp-mj-query-security.md)
 
-[**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
+[**SECURITY\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
  
-
- 
-
-
-
-
-
 

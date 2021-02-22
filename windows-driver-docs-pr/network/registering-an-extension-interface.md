@@ -1,7 +1,6 @@
 ---
 title: Registering an Extension Interface
 description: Registering an Extension Interface
-ms.assetid: 33dc32da-9bc1-40b4-8737-ec132ec36708
 keywords:
 - Winsock Kernel WDK networking , extension interfaces
 - WSK WDK networking , extension interfaces
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 # Registering an Extension Interface
 
 
-After a Winsock Kernel (WSK) application has successfully created a socket, it can register that socket for one or more of the [extension interfaces](winsock-kernel-extension-interfaces.md) that are supported by the WSK subsystem. A WSK application determines which set of extension interfaces are supported by the WSK subsystem by examining the **Version** member of the [**WSK\_PROVIDER\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) structure that the WSK subsystem returned to the application during attachment.
+After a Winsock Kernel (WSK) application has successfully created a socket, it can register that socket for one or more of the [extension interfaces](winsock-kernel-extension-interfaces.md) that are supported by the WSK subsystem. A WSK application determines which set of extension interfaces are supported by the WSK subsystem by examining the **Version** member of the [**WSK\_PROVIDER\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) structure that the WSK subsystem returned to the application during attachment.
 
 Each extension interface is defined by an NPI that is independent of the WSK NPI. Note, however, that the NPIs for extension interfaces do not support NPI-specific characteristics.
 
-A WSK application registers for an extension interface by executing the [**SIO\_WSK\_REGISTER\_EXTENSION**](https://docs.microsoft.com/windows-hardware/drivers/network/sio-wsk-register-extension) socket IOCTL operation on the socket. For more information about executing socket IOCTL operations, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
+A WSK application registers for an extension interface by executing the [**SIO\_WSK\_REGISTER\_EXTENSION**](./sio-wsk-register-extension.md) socket IOCTL operation on the socket. For more information about executing socket IOCTL operations, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
 
 If a WSK application attempts to register a socket for an extension interface that is not supported by the WSK subsystem, the SIO\_WSK\_REGISTER\_EXTENSION socket IOCTL operation will return STATUS\_NOT\_SUPPORTED.
 
@@ -119,10 +118,4 @@ NTSTATUS
 A WSK application registers for extension interfaces on a socket-by-socket basis.
 
  
-
- 
-
-
-
-
 

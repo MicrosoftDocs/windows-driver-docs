@@ -2,7 +2,6 @@
 title: IRP_MJ_FLUSH_BUFFERS
 description: Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a DispatchFlushBuffers routine.
 ms.date: 08/12/2017
-ms.assetid: c1023999-0c80-4c09-a9ea-a9422184bba7
 keywords:
  - IRP_MJ_FLUSH_BUFFERS Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_FLUSH\_BUFFERS
 
 
-Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a [*DispatchFlushBuffers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a [*DispatchFlushBuffers*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 When Sent
 ---------
@@ -52,12 +51,7 @@ Requirements
 ## See also
 
 
-[*DispatchFlushBuffers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+[*DispatchFlushBuffers*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Summary of WDF and WDM Equivalents
 description: Summary of WDF and WDM Equivalents
-ms.assetid: EE5E3E1B-62B3-4DBB-AD97-FA7060DA3207
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

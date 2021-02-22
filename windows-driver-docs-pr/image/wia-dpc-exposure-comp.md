@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_COMP
 description: The WIA\_DPC\_EXPOSURE\_COMP property enables you to adjust the set point of a digital camera's auto-exposure control.
-ms.assetid: 4b3cb013-d5fa-4f9f-9d7b-43136fab0e30
 keywords: ["WIA_DPC_EXPOSURE_COMP Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: RemoveTarget function
 description: The RemoveTarget WMI method configures the WMI provider so that it stops passing events associated with the indicated target to the WMI client.
-ms.assetid: 413cee3c-5e3a-4012-925b-b4699fbd2e1b
 keywords: ["RemoveTarget function Storage Devices"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ A WWN that indicates the remote discovered port that should be removed from the 
 The events to stop reporting. If this member is zero, the WMI provider client will stop reporting events associated with the port that is indicated by *DiscoveredPortWWN*. If this member is nonzero, the WMI provider will cease reporting all events associated any target.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemoveTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemoveTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_out) structure.
 
 Return value
 ------------
@@ -80,16 +79,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**RemoveTarget\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_in)
+[**RemoveTarget\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_in)
 
-[**RemoveTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_out)
-
- 
+[**RemoveTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_out)
 
  
-
-
-
-
-
 

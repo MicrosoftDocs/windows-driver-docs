@@ -1,7 +1,6 @@
 ---
 title: TCP/IP Task Offload Overview
 description: TCP/IP Task Offload Overview
-ms.assetid: e73cc4e8-574b-438b-acd2-f0aaf5c20589
 keywords:
 - TCP/IP offload WDK networking , task offload
 - offload WDK TCP/IP transport , task offload
@@ -32,7 +31,7 @@ The TCP/IP transport can offload the calculation and validation of IP and TCP ch
 
 The TCP/IP transport can offload the calculation and validation of encrypted checksums for authentication headers (AH), encapsulating security payloads (ESP), or both. The TCP/IP transport can also offload the encryption and decryption of ESP payloads and the encryption and decryption of user datagram protocol (UDP)-encapsulated ESP data packets.
 
-For more information about IPsecOV1, see [IPsec Offload Version 1](ipsec-offload-version-1.md).
+For more information about IPsecOV1, see [IPsec Offload Version 1](background-reading-on-ipsec.md).
 
 ### Internet protocol security (IPsec) Offload Version 2 (IPsecOV2)
 
@@ -40,7 +39,7 @@ For more information about IPsecOV1, see [IPsec Offload Version 1](ipsec-offload
 
 The TCP/IP transport can offload the calculation and validation of encrypted checksums for authentication headers (AH), encapsulating security payloads (ESP), or both. The TCP/IP transport can also offload the encryption and decryption of ESP payloads and the encryption and decryption of user datagram protocol (UDP)-encapsulated ESP data packets. IPsecOV2 is supported in NDIS 6.1 and later versions.
 
-For more information about IPsecOV2, see [IPsec Offload Version 2](ipsec-offload-version-2.md).
+For more information about IPsecOV2, see [IPsec Offload Version 2](./introduction-to-ipsec-offload-version-2.md).
 
 ### Large send offload version 1 (LSOV1)
 
@@ -64,6 +63,10 @@ Receive segment coalescing (RSC) enables network card miniport drivers to coales
 -   Receive Side Scaling (RSS)
 -   Virtual Machine Queue (VMQ)
 
+### UDP Segmentation Offload (USO)
+
+Beginning with Windows 10, version 2004, Windows supports [UDP Segmentation Offload (USO)](udp-segmentation-offload-uso-.md). USO enables network cards to offload the segmentation of UDP datagrams that are larger than the maximum transmission unit (MTU) size of the network medium.
+
 This section includes:
 
 -   [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
@@ -72,15 +75,10 @@ This section includes:
 -   [Combining Types of Task Offloads](combining-types-of-task-offloads.md)
 -   [Using Registry Values to Enable and Disable Task Offloading](using-registry-values-to-enable-and-disable-task-offloading.md)
 -   [Offloading Checksum Tasks](offloading-checksum-tasks.md)
--   [Offloading IPsec Tasks](offloading-ipsec-tasks.md)
+-   [Offloading IPsec Tasks](background-reading-on-ipsec.md)
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 -   [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
+-   [UDP Segmentation Offload (USO)](udp-segmentation-offload-uso-.md)
 
  
-
- 
-
-
-
-
 

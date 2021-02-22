@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD3 DRIVER_PORTION_MUST_BE_NONPAGED
 description: The DRIVER_PORTION_MUST_BE_NONPAGED bug check has a value of 0x000000D3. This indicates that the system attempted to access pageable memory at a process IRQL that was too high.
-ms.assetid: 8b33dd20-9faa-4c02-96b7-89f55e69aeec
 keywords: ["Bug Check 0xD3 DRIVER_PORTION_MUST_BE_NONPAGED", "DRIVER_PORTION_MUST_BE_NONPAGED"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,7 +68,7 @@ This bug check is usually caused by drivers that have incorrectly marked their o
 Resolution
 ----------
 
-To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) command to get a stack trace.
+To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace.
 
  
 

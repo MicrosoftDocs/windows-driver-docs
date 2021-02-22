@@ -1,7 +1,6 @@
 ---
 title: FilmOpticalResolution element
 description: The required FilmOpticalResolution element specifies the maximum optical resolution at which the film scanning input source can scan.
-ms.assetid: 85e3b737-d5b0-4262-ab86-32b6aaf56e26
 keywords: ["FilmOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref

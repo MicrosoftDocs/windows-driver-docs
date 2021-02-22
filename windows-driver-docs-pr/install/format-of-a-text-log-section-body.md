@@ -1,7 +1,6 @@
 ---
 title: Format of a Text Log Section Body
 description: Format of a Text Log Section Body
-ms.assetid: 37995fc8-9822-4c2f-ba6a-154a86e1eadf
 keywords:
 - section body WDK SetupAPI
 - formats WDK SetupAPI logging
@@ -52,7 +51,7 @@ Indicates whether the log entry is an error message, a warning message, or an in
  
 
 <a href="" id="time-stamp-field"></a>*time_stamp* field  
-Indicates the system time when the logged event occurred. The *time_stamp* field is optional and SetupAPI does not include a time stamp by default. However, [**SetupWriteTextLog**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) supports including a time stamp in a log entry. The format of the *time_stamp* field is the same as the format of the *time_stamp* field that is described in [Format of a Text Log Section Header](format-of-a-text-log-section-header.md).
+Indicates the system time when the logged event occurred. The *time_stamp* field is optional and SetupAPI does not include a time stamp by default. However, [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog) supports including a time stamp in a log entry. The format of the *time_stamp* field is the same as the format of the *time_stamp* field that is described in [Format of a Text Log Section Header](format-of-a-text-log-section-header.md).
 
 <a href="" id="event-category-field"></a>*event_category* field  
 Indicates the category of SetupAPI operation that made the log entry. The *event_category* field is usually present, but is not required. If the *event_category* field is present, it will contain one of the strings that are listed in the following table.
@@ -174,10 +173,4 @@ When SetupAPI creates a section that groups operations that apply to a device in
 ```
 
  
-
- 
-
-
-
-
 

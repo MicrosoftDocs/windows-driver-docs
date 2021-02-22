@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DELETE_PORT_PARAMETERS
 description: WDI_TLV_DELETE_PORT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_DELETE_PORT.
-ms.assetid: F3DDECDC-1A92-4022-9E2C-780ED480172C
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DELETE_PORT_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DELETE\_PORT\_PARAMETERS
 
 
-WDI\_TLV\_DELETE\_PORT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DELETE\_PORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-delete-port).
+WDI\_TLV\_DELETE\_PORT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DELETE\_PORT](./oid-wdi-task-delete-port.md).
 
 ## TLV Type
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

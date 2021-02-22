@@ -1,7 +1,6 @@
 ---
 title: Source Code Debugging in WinDbg
 description: Source Code Debugging in WinDbg
-ms.assetid: 0f939d29-0d90-442e-96d7-fe756b92a7da
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -43,7 +42,7 @@ To open or close a source file directly, do one of the following:
      
 
 -   Choose **Close Current Window** from the **File** menu.
--   Click the **Close** button in the corner of the Source window.
+-   Select the **Close** button in the corner of the Source window.
 -   Choose **Recent Files** from the **File** menu to open one of the four source files that you most recently opened in WinDbg.
 -   Enter the [**.open (Open Source File)**](-open--open-source-file-.md) command.
 -   Enter the [**lsf (Load or Unload Source File)**](lsf--lsf---load-or-unload-source-file-.md) command.
@@ -67,7 +66,7 @@ Each source file resides in its own Source window. The title of each Source wind
 
 Each Source window displays the text of one source file. You cannot edit a source file in the debugger. For more information about changing the font and tab settings, see [Changing Text Properties](changing-text-properties.md).
 
-Each Source window has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon that appears near the upper-right corner of the window (![screen shot of the button that displays the source window toolbar shortcut menu](images/window-source-icon.png)). The following list describes some of the menu commands:
+Each Source window has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon that appears near the upper-right corner of the window (![screen shot of the button that displays the source window toolbar shortcut menu](images/window-source-icon.png)). The following list describes some of the menu commands:
 
 -   **Set instruction pointer to current line** changes the value of the instruction pointer to the instruction that corresponds to the current line. This command is equivalent to using the [Edit | Set Current Instruction](edit---set-current-instruction.md) command or pressing CTRL+SHIFT+I.
 
@@ -87,19 +86,19 @@ Each Source window has a shortcut menu with additional commands. To access the m
 
 -   **Add selection to Watch window** appends the selected source token to the Watch window.
 
--   **Disassemble at current line** causes the instruction that corresponds to the current line to appear in the [Disassembly window](disassembly-window.md). The selected line is highlighted in the Source window and in the Disassembly window, but this command affects only the display—the instruction pointer is not changed. If the Disassembly window is closed when this command is clicked, it is opened.
+-   **Disassemble at current line** causes the instruction that corresponds to the current line to appear in the [Disassembly window](disassembly-window.md). The selected line is highlighted in the Source window and in the Disassembly window, but this command affects only the display—the instruction pointer is not changed. If the Disassembly window is closed when this command is selected, it is opened.
 
--   **Select source language** displays a list of programming languages. Select the programming language that you used to generate the source file, and then click **OK** to enable basic syntax highlighting for the current Source window. Select **&lt;None&gt;** to disable syntax highlighting for the current Source window.
+-   **Select source language** displays a list of programming languages. Select the programming language that you used to generate the source file, and then select **OK** to enable basic syntax highlighting for the current Source window. Select **&lt;None&gt;** to disable syntax highlighting for the current Source window.
 
 ### <span id="source_window_colors_and_hover_evaluation"></span><span id="SOURCE_WINDOW_COLORS_AND_HOVER_EVALUATION"></span>Source Window Colors and Hover Evaluation
 
 If the debugger recognizes the source file name extension, the Source window displays certain syntax elements in color. To turn off or change the colors, do the following:
 
--   To turn the syntax colors off in a single window, open the Source window's shortcut menu, click **Select source language**, and then click **&lt;None&gt;**.
+-   To turn the syntax colors off in a single window, open the Source window's shortcut menu, select **Select source language**, and then select **&lt;None&gt;**.
 
 -   To turn the syntax colors off for all Source windows, choose **Options** from the **View** menu. Then clear the **Parse Source Languages** check box.
 
--   To change the syntax colors, choose **Options** from the **View** menu. Then, in the **Colors** area, select a syntax element and click the **Change** button to change the color.
+-   To change the syntax colors, choose **Options** from the **View** menu. Then, in the **Colors** area, select a syntax element and select the **Change** button to change the color.
 
 -   The parsing method that is used for the highlighting is determined by the programming language that is associated with the file extension for the source file. To change the programming language that is associated with a specific file extension, use the [File Extensions for Source Languages dialog box](view---source-language-file-extensions.md). To open this dialog box, choose **Source language file extensions** from the **View** menu.
 

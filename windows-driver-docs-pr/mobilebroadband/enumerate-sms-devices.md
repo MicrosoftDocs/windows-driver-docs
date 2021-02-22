@@ -1,7 +1,6 @@
 ---
 title: Enumerate SMS devices
 description: Enumerate SMS devices
-ms.assetid: d0d57a4f-df83-4f3b-b7b4-417ad4e11350
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 The Mobile Broadband SMS platform provides the ability to get the first SMS-capable mobile broadband device, or to get a list of all SMS-capable mobile broadband devices. The following sample code shows instantiating an SMS object with the default SMS device and with a specific device.
 
 **Note**  
-In apps that use C# or C++ in Windows 8, Windows 8.1, or Windows 10, the first use of the [**SmsDevice**](https://docs.microsoft.com/uwp/api/Windows.Devices.Sms.SmsDevice) object to call [**GetDefaultAsync**](https://docs.microsoft.com/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_GetDefaultAsync) or [**FromIdAsync**](https://docs.microsoft.com/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_FromIdAsync_System_String_) should be on the STA thread. Calls from an MTA thread can result in undefined behavior.
+In apps that use C# or C++ in Windows 8, Windows 8.1, or Windows 10, the first use of the [**SmsDevice**](/uwp/api/Windows.Devices.Sms.SmsDevice) object to call [**GetDefaultAsync**](/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_GetDefaultAsync) or [**FromIdAsync**](/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_FromIdAsync_System_String_) should be on the STA thread. Calls from an MTA thread can result in undefined behavior.
 
  
 
@@ -104,11 +103,4 @@ function hex(nmb)
 [Developing SMS apps](developing-sms-apps.md)
 
  
-
- 
-
-
-
-
-
 
