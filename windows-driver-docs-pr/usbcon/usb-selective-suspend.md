@@ -7,6 +7,9 @@ ms.localizationpriority: medium
 
 # USB Selective Suspend
 
+> [!NOTE]
+> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88)
+
 This section provides information about choosing the correct mechanism for the selective suspend feature.
 
 In Microsoft Windows XP and later operating systems, the USB core stack supports a modified version of the "selective suspend" feature that is described in revision 2.0 of the Universal Serial Bus Specification.
