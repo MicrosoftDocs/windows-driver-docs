@@ -206,10 +206,10 @@ MY_SubmitReadReport(
         deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
     }
 
-    status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
+    status = VhfReadReportSubmit(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
 
     if (!NT_SUCCESS(status)) {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfReadReportSubmit failed %!STATUS!", status);
     }
 }
 ```
