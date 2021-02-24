@@ -3,7 +3,7 @@ title: MB 5G data class support
 description: MB 5G data class support
 keywords:
 - MB 5G data class support, Mobile Broadband 5G data class support
-ms.date: 04/17/2019
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
@@ -28,9 +28,9 @@ This topic uses the following terms:
 
 ## Overview
 
-Windows 10, version 1903 is the first version of Windows to support a preview release of 5G mobile broadband driver development by IHV partners. The name *5G* is friendly name for New Radio (NR), which was introduced in the [3GPP Release 15 specification](https://www.3gpp.org/release-15). NR is a comprehensive set of standards that is envisioned to provide true long-term evolution to existing 4th generation LTE technologies, potentially covering all cellular communication needs from narrowband to ultra-broadband, and from nominal to mission-critical latency requirements. As a technology, 5G is expected to develop over a decade-long time frame. 
+Windows 10, version 1903 is the first version of Windows to support a preview release of 5G mobile broadband driver development by IHV partners. *5G* is the friendly name for New Radio (NR), which was introduced in the [3GPP Release 15 specification](https://www.3gpp.org/release-15). NR is a comprehensive set of standards that is envisioned to provide true long-term evolution to existing 4th generation LTE technologies, potentially covering all cellular communication needs from narrowband to ultra-broadband, and from nominal to mission-critical latency requirements. As a technology, 5G is expected to develop over a decade-long time frame. 
 
-This topic describes the MBIM extensions first released  in Windows 10 version 1903, which enable hardware partner to develop an MBB driver with data-class support for enhanced mobile broadband (eMBB) over 5G “non-standalone” EPC-based NR networks. The data-plane support and enablement for 5G throughput and commercialization requirements are not part of this Windows release and not described in this topic. 
+This topic describes the MBIM extensions first released  in Windows 10 version 1903, which enable hardware partners to develop an MBB driver with data-class support for enhanced mobile broadband (eMBB) over 5G “non-standalone” EPC-based NR networks. The data-plane support and enablement for 5G throughput and commercialization requirements are not part of this Windows release and not described in this topic. 
 
 ## Windows 5G MBIM interface extension
 
@@ -42,11 +42,11 @@ As of Windows 10, version 1903, 5G on the whole is still developing. From a netw
 
 * In Phase 2, mobile network operators are expected to replace EPCs and NGCs and densify the 5G radio deployment in parallel to enable true “standalone”, or NR-NGC-based 5G networks. Phase 2 interface extensions are not in scope in this topic or Windows release. 
 
-Interface extensions to support basic Phase 1 network requirements, or ”nonstandalone”EPC-based5G networks, was introduced in Windows 10, version 1903. In order to be extensible and fully backward compatible with legacy modems, a new Microsoft MBIM extension version (2.0) is introduced. 
+Interface extensions to support basic Phase 1 network requirements, or ”nonstandalone” EPC-based 5G networks, was introduced in Windows 10, version 1903. In order to be extensible and fully backward compatible with legacy modems, a new Microsoft MBIM extension version (2.0) is introduced. 
 
-The new Microsoft MBIM extesnion version is required because the [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change the existing CIDs (new payloads or modified payload) or to introduce changes in any aspect that cannot be accommodated by optional CIDs. Each payload may consist of fixed sized members or dynamic sized (offset/size pairs) members. If one or more  dynamically sized members exist, then the last member has a variable size buffer.  
+The new Microsoft MBIM extension version is required because the [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change the existing CIDs (new payloads or modified payload) or to introduce changes in any aspect that cannot be accommodated by optional CIDs. Each payload may consist of fixed sized members or dynamic sized (offset/size pairs) members. If one or more  dynamically sized members exist, then the last member has a variable size buffer.  
 
-This spec also adds anew CID for the host to advertise its MBIM Release version and Extensions Release version to MBIM devices. For legacy drivers that are already in the field, this CID is optional so backward compatibility is fully maintained.  For more detail, see [MBIM Extensions Release 2.0](#mbim-extensions-release-20---5g-nonstandalone-epc-based-option-3-network-support) network support). 
+This spec also adds a new CID for the host to advertise its MBIM Release version and Extensions Release version to MBIM devices. For legacy drivers that are already in the field, this CID is optional so backward compatibility is fully maintained.  For more detail, see [MBIM Extensions Release 2.0](#mbim-extensions-release-20---5g-nonstandalone-epc-based-option-3-network-support) network support. 
 
 ### NDIS interface
 
@@ -77,13 +77,33 @@ The host learns a device's MBIMEx version through two ways:
 
 If these two are different, the higher version dictates the MBIMEx version for the duration that the device stays enumerated to the host. The higher MBIMEx version is referred to as the device's *announced MBIMEx version*. A device's announced MBIMEx version can be lower than its native MBIMEx version, which is the highest MBIMEx version that the device supports. Devices can learn the host's MBIMEx version explicitly only via the MBIM_CID_VERSION message.
 
-In any release, the host always queries the device for supported services and CIDs using MBIM_CID_DEVICE_SERVICES at the beginning of the device initialization sequence. If a device supports MBIM_CID_VERSION and advertises its support in the MBIM_CID_DEVICE_SERVICE query response, then a host that does not understand MBIM_CID_VERSION or has an MBIMEx version lower than 2.0 ignores it. Meanwhile, a host that does understand MBIM_CID_VERSION and has a native MBIMEx version of 2.0 or higher sends a MBIM_CID_VERSION message to the device with the host's native MBIMEx version, and the CID is the first CID that is sent to the device after receiving the MBIM_CID_DEVICE_SERVICES response.
+In any release, the host always queries the device for supported services and CIDs using MBIM_CID_DEVICE_SERVICES at the beginning of the device initialization sequence. 
 
-If the device receives MBIM_CID_VERSION from the host as the first received CID after responding to the MBIM_CID_DEVICE_SERVICES query, the device knows the host's MBIMEx version. If the device receives any other CID from the host as the first received CID after responding to the MBIM_CID_DEVICE_SERVICES query, then the device assumes that the host's native MBIMEx version is 1.0.
+If a device supports MBIM_CID_VERSION and advertises its support in the MBIM_CID_DEVICE_SERVICES query response, then a host that does not understand MBIM_CID_VERSION or has an MBIMEx version lower than 2.0 ignores it. Meanwhile, a host that does understand MBIM_CID_VERSION and has a native MBIMEx version of 2.0 or higher sends a MBIM_CID_VERSION message to the device with the host's native MBIMEx version, and the CID is the first CID that is sent to the device after receiving the MBIM_CID_DEVICE_SERVICES response.
+
+If the first CID that the device receives from the host after it responds to the MBIM_CID_DEVICE_SERVICES query is MBIM_CID_VERSION, the device knows the host's MBIMEx version. 
+
+If the first CID that the device receives from the host after it responds to the MBIM_CID_DEVICE_SERVICES query is any other CID, then the device assumes that the host's native MBIMEx version is 1.0.
+
+![OS doesn't support MBIM_CID_VERSION and Modem's highest supported MBIMEx version is 3.0](images\mbim_CID_versioning_fig1.png)
+
+If the device doesn't support MBIM_CID_VERSION, it will not respond to the MBIM_CID_DEVICE_SERVICES query with MBIM_CID_VERSION.
+Therefore the host will not send a MBIM_CID_VERSION message and assumes that the device's native MBIMEx version is 1.0.
+
+![OS highest supported MBIMEx version is 3.0 and Modem doesn't support MBIM_CID_VERSION](images\mbim_CID_versioning_fig2.png)
+
 
 Feature-wise, a higher MBIMEx version is a superset of all lower MBIMEx versions. A host supports all devices with an announced MBIMEx version at or below the host's native MBIMEx version. If a device's announced MBIMEx version is higher than a host's native MBIMEx version, the host is not expected to support the device and the exact behavior of the host in this situation is undefined.
 
-A device that intends to work with older hosts should initially advertise MBIMEx version 1.0, or the lowest host MBIMEx version with which the device is intended to work, in an MBIM extended functional descriptor. If the host sends MBIM_CID_VERSION and the host has a higher MBIMEx version than the device initially advertises, then the device should, in the MBIM_CID_VERSION response, indicate a higher MBIMEx version up to the smaller of the host's native MBIMEx version and the device's native MBIMEx version.
+A device that intends to work with older hosts should initially advertise MBIMEx version 1.0 or the lowest host MBIMEx version with which the device is intended to work in an MBIM extended functional descriptor.
+
+If the host sends MBIM_CID_VERSION with a higher MBIMEx version than the device initially advertised, then the device should indicate a higher MBIMEx version in the MBIM_CID_VERSION response up to the smaller of the host's native MBIMEx version and the device's native MBIMEx version.
+
+![OS highest supported MBIMEx version is lower than Modem's](images\mbim_CID_versioning_fig3.png)
+
+
+
+![OS highest supported MBIMEx version is higher than Modem's](images\mbim_CID_versioning_fig4.png)
 
 > [!NOTE]
 > For example, a device supports MBIMEx version 2.0, but is intended to work with older versions of the OS that do not support MBIMEx 2.0. The device initially advertises MBIMEx version 1.0 in the USB descriptors and advertises support for the optional MBIM_CID_VERSION. When inserted into a host running Windows 10, version 1803, the host does not understand MBIM_CID_VERSION and does not send MBIM_CID_VERSION to the device. To the host, the device's MBIMEx version is 1.0. The host continues to send other CIDs in the initialization sequence. Upon receiving CIDs other than MBIM_CID_VERSION, the device knows that the host supports MBIMEx version 1.0. Both sides proceed to conform to MBIMEx version 1.0. Later, when the same device is inserted into a host running Windows 10, version 1903 with a native MBIMEx version of 2.0, the host sends MBIM_CID_VERSION to the device to inform it that the host's native MBIMEx version is 2.0. The device sends MBIM_CID_VERSION back in response with the device's announced MBIMEx version 2.0. From there, both sides proceed to conform to MBIMEx version 2.0.
