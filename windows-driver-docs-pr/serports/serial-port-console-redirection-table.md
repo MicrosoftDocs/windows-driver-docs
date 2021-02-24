@@ -43,7 +43,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 | Baud Rate | 1 | 58 | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>1-2, 5, 8 - 255 = Reserved</li></ul> |
 | Parity | 1 | 59 | <ul><li>0 = No Parity</li><li>1-255 = Reserved</li></ul> |
 | Stop Bits | 1 | 60 | <ul><li>1 = 1 Stop bit</li><li>0, 2-255 = Reserved</li></ul> |
-| Flow Control | 1 | 61 | <ul><li>0 = Hardware Flow Control</li><li>1-255 = Reserved</li></ul> |
+| Flow Control | 1 | 61 | <ul><li>Bit[0] = DCD required for transmit</li><li>Bit[1] = RTS/CTS hardware flow control</li><li>Bit[2] = XON/XOFF software control</li><li>Bit[3:7] = reserved, must be zero</li></ul> |
 | Terminal Type | 1 | 62 | The terminal protocol the BIOS was using for console redirection: <ul><li>0 = VT100</li><li>1 = Extended VT100 (VT100+)</li><li>2 = VT-UTF8</li><li>3 = ANSI<li>4-255 = Reserved </li></ul> |
 | Language | 1 | 63 | Language which the BIOS was redirecting. Must be 0. |
 | PCI Device ID | 2 | 64 | Designates the Device ID of a PCI device that contains a UART to be used as a headless port.<p>Must be 0xFFFF if it is not a PCI device.</p> |
