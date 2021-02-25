@@ -226,14 +226,14 @@ Connect the test machine with ATT SIM to HLK Server.
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx). 
 
 In HLK Studio, connect to the device Cellular modem driver and run the test:
-[Win6_4.MB.GSM.Data.TestConnect](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b5a998f3-bd1c-47aa-bcf3-6c9092935e1c).
+[Win6_4.MB.GSM.Data.TestConnect](/windows-hardware/test/hlk/testref/b5a998f3-bd1c-47aa-bcf3-6c9092935e1c).
 
 Alternatively, run the **TestConnect** HLK testlist by [**netsh**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
 
 ```
 netsh mbn test feature=connectivity param="AccessString=internet"
 ```
-This file showing the HLK test results should have been generated in the directory that the 'netsh mbn test' command was ran.
+The file showing the HLK test results should have been generated in the directory that the 'netsh mbn test' command was ran.
 
 ## Manual tests
 ### After reboot, Cellular auto-connects
