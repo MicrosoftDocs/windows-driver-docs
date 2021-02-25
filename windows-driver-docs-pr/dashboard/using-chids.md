@@ -22,7 +22,7 @@ Windows 10 adds several new CHIDs that incorporate Baseboard Manufacturer and B
 |HardwareID-5|Manufacturer + Family + ProductName|
 |HardwareID-6|**Manufacturer + SKU Number + Baseboard_Manufacturer + Baseboard_Product**|
 |HardwareID-7|Manufacturer + SKU Number|
-|HardwareID-8|**ufacturer + ProductName + Baseboard_Manufacturer + Baseboard_Product**|
+|HardwareID-8|**Manufacturer + ProductName + Baseboard_Manufacturer + Baseboard_Product**|
 |HardwareID-9|Manufacturer + ProductName|
 |HardwareID-10|**Manufacturer + Family + Baseboard_Manufacturer + Baseboard_Product**|
 |HardwareID-11|Manufacturer + Family|
