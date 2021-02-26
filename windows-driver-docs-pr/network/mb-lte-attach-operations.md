@@ -1,7 +1,7 @@
 ---
 title: MB LTE Attach Operations
 description: MB LTE Attach Operations
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -291,3 +291,50 @@ For Query and Set operations:
 | --- | --- |
 | MBIM_STATUS_READ_FAILURE | The operation failed because the device was unable to retrieve provisioned contexts. |
 | MBIM_STATUS_NO_DEVICE_SUPPORT | The operation failed because the device does not support the operation. |
+
+## Hardware Lab Kit (HLK) Tests
+
+See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
+ 
+In HLK Studio connect to device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestLteAttach](https://docs.microsoft.com/windows-hardware/test/hlk/testref/aaa1f042-8535-4d09-b19e-082bef24f518).
+
+Alternatively, run the **TestLteAttach** HLK testlist by [**netsh-mbn**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
+
+```
+netsh mbn test feature=lte testpath="C:\\data\\test\\bin" taefpath="C:\\data\\test\\bin"
+```
+
+This file showing the HLK test results should have been generated in the directory that the 'netsh mbn test' command was ran from: `TestLteAttach.htm`.
+
+## Manual Tests
+- Requirement: A sim with the correct APN setting and one more APN information for manual use.
+
+1. Open Settings->Network & Internet -> Cellular
+1. Click ***Advanced options***
+
+Using Cellular Settings:
+
+3. There should at least be an apn which is the setting from the sim information. You can get the APN's detailed information by clicking the APN and clicking the "view" button.
+
+Using Manual Settings:
+
+3. Follow the "Add an APN" section in [Cellular settings](https://support.microsoft.com/windows/cellular-settings-in-windows-10-905568ff-7f31-3013-efc7-3f396ac92cd7) to set the APN manually.
+4. Attach the APN and check the attached status.
+
+## MB LTE Attach Troubleshooting Guide
+1. Get all the Attach APN profiles under %ProgramData%\Microsoft\WwanSvc\DMProfiles
+1. Understand which particular profile will be applied based on creation type priorities
+1. Investigate the logs to check why the LTE Attach APN was wrongly configured
+1. Collect and decode the logs using the instructions in [Collecting Logs](mb-collecting-logs.md)
+1. Open the .txt file generated in the [TextAnalysisTool](mb-analyzing-logs.md)
+1. Load the [LTE Attach filter](mb-lte-attach-tat.md)
+## Sample log of LTE Attach
+```
+10409 [0]0370.0434::2020-03-06 01:16:13.118424000 [WwanDimCommon] ReadyState  : WwanReadyStateInitialized (0x1)
+14137 [0]0370.0684::2020-03-06 01:16:13.146883200 [WwanProfileManager]INFO: SaveModemConfiguredLteAttachConfig: added modem configured LTE attach profile
+14362 [0]0370.0684::2020-03-06 01:16:13.149255900 [WwanProfileManager]INFO: SaveModemConfiguredLteAttachConfig: added modem configured LTE attach profile
+14476 [1]0370.0434::2020-03-06 01:16:13.149677900 [WwanDimCommon] ReadyState  : WwanReadyStateInitialized (0x1)
+14503 [0]0370.0684::2020-03-06 01:16:13.151412000 [WwanProfileManager]INFO: SaveModemConfiguredLteAttachConfig: added modem configured LTE attach profile
+14962 [0]0370.0684::2020-03-06 01:16:13.156860700 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] CWwanDataExecutor::OnLteAttachProfileUpdate: WwanPmGetLteAttachProfileInEffect() didn't find anything, using Network Assigned. 
+14963 [0]0370.0684::2020-03-06 01:16:13.156862600 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] CWwanDataExecutor::OnLteAttachProfileUpdate: LTEAttachConfig has same config as modem has, skip 
+```
