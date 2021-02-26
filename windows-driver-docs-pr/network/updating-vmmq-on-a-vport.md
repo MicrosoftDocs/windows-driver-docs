@@ -42,6 +42,8 @@ When a miniport driver receives an OID request to disable VMMQ for a VPort, it s
 
 ## Changing the number of queues for a VPort
 
+The number of unique processors used in the indirection table of a VPort cannot exceed the value of the **NumQueuePairs** field of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure specified in the last issued [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md) OID request. These processors will be a subset of the RSS processor set returned by a call to [**NdisGetRssProcessorInformation**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetrssprocessorinformation). For more information, see [Allocating VPorts for VMMQ](allocating-vports-for-vmmq.md). However, the indirection tables on different VPorts could contain the same processor.
+
 To decrease the number of queues for a PF VPort an upper layer driver must:
 
 1. Send an [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](oid-gen-receive-scale-parameters.md) OID with the original indirection table size. However, the indirection table at this step can only reference the number of distinct processors up to the new number of queues. If the new indirection table needs to be smaller than the original table due to the NDIS_NIC_SWITCH_CAPS_RSS_PER_PF_VPORT_INDIRECTION_TABLE_SIZE_RESTRICTED flag of the [**NDIS\_NIC\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_parameters) structure, the issuer must guarantee that the indirection table at this step will contain the new indirection table replicated as many times as needed to satisfy the RESTRICTED flag requirement for the original number of queues.
@@ -54,9 +56,8 @@ To increase the number of queues for a PF VPort an upper layer driver must:
 
 1. The driver doesn't need to update the current indirection table before step 2 because the table only references the number of distinct processors up to the current number of queues.
 
-2. Send an [OID_NIC_SWITCH_VPORT_PARAMETERS](oid-nic-switch-vport-parameters.md) OID with new number of queues. If the the RESTRICTED flag is set, the miniport driver should internally replicate the original indirection table as many times as needed to match the indirection table size requirement for the new number of queues.
+2. Send an [OID_NIC_SWITCH_VPORT_PARAMETERS](oid-nic-switch-vport-parameters.md) OID with new number of queues. If the RESTRICTED flag is set, the miniport driver should internally replicate the original indirection table as many times as needed to match the indirection table size requirement for the new number of queues.
 
 3. Send an [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](oid-gen-receive-scale-parameters.md) OID with new indirection table size if it has changed.
 
-The number of unique processors used in the indirection table of a VPort cannot exceed the value of the **NumQueuePairs** field of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure used in the [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md) OID request. These processors will be a subset of the RSS processor set returned by a call to [**NdisGetRssProcessorInformation**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetrssprocessorinformation). For more information, see [Allocating VPorts for VMMQ](allocating-vports-for-vmmq.md). However, the indirection tables on different VPorts could contain the same processor.
 
