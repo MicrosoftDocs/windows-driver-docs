@@ -61,8 +61,8 @@ Result =
     NULL,
     NULL
     );
-Status = Parameter.ulval;
-VariantClear(Parameter);
+Status = Parameter.ulVal;
+VariantClear(&Parameter);
 
 // Get the capabilities from the output parameters object
 Result =
@@ -73,8 +73,8 @@ Result =
     NULL,
     NULL
     );
-ErrorInjectionCapabilities.AsULONG = Parameter.ulval;
-VariantClear(Parameter);
+ErrorInjectionCapabilities.AsULONG = Parameter.ulVal;
+VariantClear(&Parameter);
 
 // Process the error injection capabilities data
 ...
