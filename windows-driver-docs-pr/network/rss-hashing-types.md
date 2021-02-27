@@ -142,6 +142,8 @@ The NIC should compute the hash value over the following fields:
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV6 case. However, if the packet does not contain a TCP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
 
+For example, if the packet is fragmented, then it may not contain the TCP header.  In that case, the NIC should compute the hash only over the IP header.
+
 ### <a name="ndis_hash_udp_ipv6--ndis_hash_ipv6"></a> NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_UDP_IPV6 case. However, if the packet does not contain a UDP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
