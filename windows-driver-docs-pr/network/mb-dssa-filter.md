@@ -8,7 +8,9 @@ ms.localizationpriority: medium
 
 # DSSA Log Filter
 
-To load a DSSA log filter: 
+To make searching log files easier, below is a DSSA filter file for the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases). 
+
+To use the DSSA log filter: 
 
 1. Copy and paste the lines below and save them into a text file named "esimdownload.tat."
 

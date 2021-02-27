@@ -7,7 +7,9 @@ ms.localizationpriority: medium
 
 # eSIM Profile Operations Log Filter
 
-To load an eSIM Profile Operation log filter:
+To make searching log files easier, below is an eSIM Profile Operation filter file for the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases). 
+
+To use the eSIM Profile Operation log filter:
 
 1. Copy and paste the lines below and save them into a text file named "esimoperation.tat." This filter is for the "EnableProfile" operation. For other operations, replace "RpcEnableProfile" with one of the strings below that is specific to the operation.
 

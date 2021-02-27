@@ -5,9 +5,11 @@ ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
-# PIN Operations TextAnalysisTool filter
+# PIN Operations Log filter
 
-To make searching log files easier, below is a PIN-operation-specific filter file for the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases). To use this filter file:
+To make searching log files easier, below is a PIN-operation-specific filter file for the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases). 
+
+To use this filter:
  
 1. Copy and paste the lines below and save them into a text file named "WwanPin.tat." 
 

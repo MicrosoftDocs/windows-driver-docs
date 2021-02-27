@@ -1,14 +1,15 @@
 ---
 title: eSIM Download and Install Log Filter
 description: TextAnalysisTool Filter for eSIM Download and Install
-ms.assetid: 0C812829-D91A-44FC-8BE6-F8264B13F6C7
 ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
 # eSIM Download and Install Log Filter
 
-To load an eSIM download and install log filter:
+To make searching log files easier, below is an eSIM download and install filter file for the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases). 
+
+To use the eSIM download and install log filter:
 
 1. Copy and paste the lines below and save them into a text file named "esimdownload.tat." 
 
