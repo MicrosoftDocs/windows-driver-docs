@@ -37,11 +37,11 @@ Previous requirements described the use of **Win + O** for Rotation Lock. Althou
 
 | Individual button reporting | Source              | Usage requirements      | Report trigger         | Repeated |
 |-----------------------------|---------------------|-------------------------|------------------------|----------|
-| Power                       | System Control      | 0x84 (Power)            | Physical Button – Up   | No       |
+| Power                       | System Control      | 0x81 (Power)            | Physical Button – Up   | No       |
 | Windows                     | Keyboard            | 0xE3 (Win)              | Physical Button – Up   | No       |
 | Volume Up                   | Consumer Collection | 0xE9 (Volume Up)        | Physical Button – Down | Yes      |
 | Volume Down                 | Consumer Collection | 0xEA (Volume Down)      | Physical Button – Down | Yes      |
-| Rotation Lock               | Keyboard            | 0xE3 = 0x69 (Win + F14) | Physical Button – Down | No       |
+| Rotation Lock               | Keyboard            | 0xE3 + 0x69 (Win + F14) | Physical Button – Down | No       |
 
  
 
