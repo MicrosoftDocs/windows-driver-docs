@@ -215,7 +215,7 @@ HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 
 ## Device MFT Chaining
 
-Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows. Prior to Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin. Starting with Windows 10, version 1703, the Windows camera pipeline supports an optional chain of DMFTs with maximum of three DMFTs. This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. Following figure illustrates the architecture involving a chain of DMFTs.
+Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows. Prior to Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin. Starting with Windows 10, version 1703, the Windows camera pipeline supports an optional chain of DMFTs with maximum of two DMFTs. This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. Following figure illustrates the architecture involving a chain of DMFTs.
 
 ![DMFT chain](images/dmft-chain.png)
 
