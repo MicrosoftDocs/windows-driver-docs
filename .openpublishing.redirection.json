@@ -1,6 +1,66 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/voice-calls-during-packet-data-service-connections.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-packet-service-attach-operations",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/sim-lock.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/cellular-architecture-and-driver-model",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/signal-strength-indication-semantics.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-signal-strength-operations",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/packet-data-service-handoffs.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-packet-service-attach-operations",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/mb-radio-power-state-operations.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-radio-state",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/mb-pin-operations.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/cellular-architecture-and-driver-model",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/mb-operation-flowcharts.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/cellular-architecture-and-driver-model",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/mb-miniport-driver-initialization.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-device-readiness",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/losing-and-regaining-packet-data-service.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-packet-service-attach-operations",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/initialization-of-sim-locked-gprs-device-with-a-user-defined-context.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-device-readiness",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/initialization-of-a-cdma-packet-device-with-a-provisioned-context.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-provisioned-context-operations",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/initialization-of-a-non-sim-locked-gprs-device-with-a-provisioned-cont.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-provisioned-context-operations",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/gpiobtn/hid-button-report-descriptors.md",
             "redirect_URL":  "/windows-hardware/drivers/hid/acpi-button-device",
             "redirect_document_id":  false
