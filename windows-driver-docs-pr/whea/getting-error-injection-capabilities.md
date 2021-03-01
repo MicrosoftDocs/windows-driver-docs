@@ -8,12 +8,14 @@ keywords:
 - WHEA WDK , error injection
 - Windows Hardware Error Architecture WDK , error injection
 - injecting hardware errors WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
 # Getting Error Injection Capabilities
 
+> [!NOTE]
+> The WHEA error injection interface requires either a computer with the EINJ ACPI table or a PSHED Plug-In that implements the [error injection functional area](./error-injection.md). Most consumer systems do not include an EINJ implementation, and Windows does not have a built-in PSHED Plug-In to enable error injection. With neither of these present, the error injection interfaces return an error.
 
 A user-mode application can get information about the error injection capabilities of the hardware platform by calling the [**WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn**](/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_INJECTION\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_injection_capabilities) structure that describes the error injection capabilities that are supported by the hardware platform.
 
