@@ -467,7 +467,7 @@ The Static Tools Logo Test in the HLK is the test that enforces this requirement
 
 ### Can I run the DVL generation on [Visual Studio solutions](link needed)? 
 
-No, has to be run at the project level
+No, the DVL generation must be run at the project level and cannot be run on Visual Stuido solutions.
 
 ### False Positives?
 
