@@ -463,7 +463,11 @@ Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardw
 
 ### How to Pass HLK?
 
-The Static Tools Logo Test in the HLK.
+The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the
+
+### Can I run the DVL generation on [Visual Studio solutions](link needed)? 
+
+No, has to be run at the project level
 
 ### False Positives?
 
