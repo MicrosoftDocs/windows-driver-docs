@@ -11,6 +11,19 @@ ms.localizationpriority: medium
 
 # Redistributable Framework Components
 
+> [!NOTE]
+> If your driver only targets Windows 10, you do not need to redistribute WDF or provide a Coinstaller in your driver package. To target Windows 10:
+>1. In Visual Studio, in the **Project Settings** property page, under **Driver Settings** -> **Target OS Version**, select **Windows 10 or higher**.  This is equivalent to adding the following to the .vcxproj file: 
+>```xml
+><PropertyGroup Label="Configuration">
+><TargetVersion>Windows10</TargetVersion>
+>```
+>2. In the [INF Manufacturer Section](/windows-hardware/drivers/install/inf-manufacturer-section), specify 10.0 as target OS version, as follows:
+>```inf
+>[Manufacturer]
+>%MyMfg% = MyMfg, NTamd64.10.0
+>```
+
 This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK), and how to determine which ones to add to your driver package.
 
 The redistributable framework updates make it possible to run a driver built with a later framework version than the one included in an operating system. For example, KMDF 1.11 is included in Windows 8. But you can run a KMDF 1.11 driver on Windows Vista or Windows 7. Before you can do so, however, you must ensure that the KMDF 1.11 framework library replaces the framework library included in the earlier operating system (in this case, KMDF 1.7 and KMDF 1.9 respectively). You do this by redistributing a Microsoft-supplied co-installer or .msu file with your driver package.
