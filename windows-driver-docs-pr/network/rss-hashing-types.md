@@ -148,9 +148,13 @@ For example, if the packet is fragmented, then it may not contain the TCP header
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_UDP_IPV6 case. However, if the packet does not contain a UDP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
 
+For example, if the packet is fragmented, then it may not contain the UDP header.  In that case, the NIC should compute the hash only over the IP header.
+
 ### <a name="ndis_hash_tcp_ipv6--ndis_hash_udp_ipv6--ndis_hash_ipv6"></a> NDIS_HASH_TCP_IPV6 | NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculation as specified by the transport in the packet. However, if the packet does not contain a TCP or UDP header, the NIC should compute the hash value as specified in the NDIS_HASH_IPV6 case.
+
+For example, if the packet is fragmented, then it may not contain the TCP or UDP header.  In that case, the NIC should compute the hash only over the IP header.
 
 ## IPv6 with extension headers hash type combinations
 
