@@ -14,27 +14,27 @@ Windows Update (WU) is the model used for the firmware patches. In this model, t
 The modem ISO interface has a 255-byte limitation as the max Application Protocol Data Unit (APDU) size and is therefore too slow for full firmware OS updates (TRC/PBL image). For full firmware OS updates, Microsoft provides a separate smart card UMDF driver which uses the SPB interface of the eSIM as the transport.
 
 The following acronyms are used in this section:
-- **ACPI:** Advanced Configuration and Power Interface 
-- **ISO:** International Organization for Standardization
-- **TRC:**
-- **PBL:**
-- **SPB:**
+- **ACPI:** Advanced Configuration and Power Interface
+- **APDU:** Application Protocol Data Unit
+- **ATR:** Answer to Reset  
 - **eUICC:**  Embedded Universal Integrated Circuit Card
 - **FW:** Firmware
-- **Scard WinRT:** Smart Card Windows Runtime
-- **RPC:** Remote Procedure Call
-- **HCP:**
-- **APDU:** Application Protocol Data Unit 
-- **MSFT:** Microsoft
-- **SPI:** Serial Peripheral Interface
-- **WwanSvc:** WWAN Service
-- **SC DDI:** Smart Card DDI
-- **ScardSvr:** Smart Cards for Windows Service
-- **ATR:** Answer to Reset
-- **sHDLC:**
-- **OEM:** Original Equipment Manufacturer
+- **HCP:** Host Controller Protocol
 - **HWID:** Hardware ID
+- **ISO:** International Organization for Standardization
 - **MF:** Master File
+- **MSFT:** Microsoft
+- **OEM:** Original Equipment Manufacturer
+- **PBL:** Primary bootloader
+- **RPC:** Remote Procedure Call
+- **ScardSvr:** Smart Cards for Windows Service
+- **Scard WinRT:** Smart Card Windows Runtime
+- **SC DDI:** Smart Card DDI
+- **sHDLC:** Simplified High Level Data Link Control
+- **SPB:** Simple Peripheral Bus
+- **SPI:** Serial Peripheral Interface
+- **TRC:** Tamper Resistant Chip
+- **WwanSvc:** WWAN Service
 
 ### High Level Design for Firmware Patch Update
 ![High Level Design for Firmware Patch Update](images\mb-fw-upgrade-esim-high-level-design.png "High Level Design for Firmware Patch Update")
@@ -46,17 +46,19 @@ The following acronyms are used in this section:
 
 ![FW Upgrade for eSIM Block Diagram](images\mb-fw-upgrade-esim-block-diag.png "FW Upgrade for eSIM Block Diagram")
 
-For RS2 the card vendor will deliver firmware updates on APDUs over the ISO interface. Updates for full images (PBL HCP) on HCP packets over the SPI interface are planned for the RS3 time frame. 
+For Windows 10, version 1703 the card vendor will deliver firmware updates on APDUs over the ISO interface. Updates for full images (PBL HCP) on HCP packets over the SPI interface are planned for the Windows 10, version 1709 time frame. 
 
 The ISO UMDF driver is loaded by the WWAN Service when the WWAN Service detects an eSIM based on the ATR information. The ISO UMDF driver sends APDUs to the eUICC via the modem using the low-level UICC access RPC of the WWAN Service. 
 
-The SPI UMDF driver is loaded by PnP based on the hardware id in the ACPI entry for the eSIM card. The SPI UMDF driver sends sHDLC frames to the TRC on the card via the SPB IOCTL interface. 
+The SPI UMDF driver is loaded by PnP based on the hardware ID in the ACPI entry for the eSIM card. The SPI UMDF driver sends sHDLC frames to the TRC on the card via the SPB IOCTL interface. 
 
 On the upper layer both drivers will implement the Smart Card DDI that provides low-level access for interacting with smart cards. This will expose both the ISO and SPI interfaces of the eSIM as a smart card via the Smart Card WinRT API.
 
 In devices where the SPI interface to eSIM is available, OEMs are expected to add the Microsoft UICC SPI driver HWID to the ACPI table as a hardware compatible ID. The HWID for the Microsoft UICC SPI driver is ACPI\MSFTUICCSPB.
 
-UMDF drivers will implement following Smart Card IOCTLs:
+### UMDF drivers
+
+UMDF drivers will implement the following Smart Card IOCTLs:
 
 |Usage|DDI|
 |---|---|
@@ -64,8 +66,7 @@ UMDF drivers will implement following Smart Card IOCTLs:
 |Smart card attributes|IOCTL_SMARTCARD_GET_ATTRIBUTE<BR>IOCTL_SMARTCARD_SET_ATTRIBUTE|
 |Smart card communication|IOCTL_SMARTCARD_SET_PROTOCOL<br>IOCTL_SMARTCARD_TRANSMIT|
 
-### UMDF driver
-Requirements for smart card devices:
+#### Requirements for smart card devices
 
 Define the following device properties:
 
@@ -90,27 +91,27 @@ These properties are used to uniquely name the smart card readers and identify t
 
 The TRC Image Update Agent is required to have sharedUserCertificates capability which allows access to the Smart Card WinRT API. The sharedUserCertificates capability is a restricted capability that is only given to enterprises with certain credentials. Once the access is granted, the app can connect to the TRC on the device via the Smart Card API and send commands to the card.
 
-It is expected that the firmware patch is carried over APDUs. Because the Smart Card WinRT API only exposes transmitting APDUs and not channel management functions such as open/close, the UMDF driver will inspect the APDUs and look for a SELECT by AID command. If a SELECT by AID command is found it will be interpreted as opening a logical channel using the Wwan RPC API. The UMDF driver will always validate that the AID is allowlisted, otherwise it will deny the request. Because there is no close or disconnect IOCTL in the SC DDI, the UMDF driver has no way of knowing when the transmission ends and when to close the logical channel. To prevent leaking of the logical channels, the UMDF driver will set a 5 minute timer when a logical channel is opened and will close the channel when the timer expires. The 5 minutes should be long enough as a firmware update is expected to run up to 2.5 minutes maximum. If the UMDF driver detects a new SELECT by AID command, then it will close the previously opened channel and reset the timer for the new logical channel. Note that 5 minute timeout is measured from the last transmitted APDU. In other words, transmitting an APDU over an existing channel resets the timer.
+It is expected that the firmware patch is carried over APDUs. Because the Smart Card WinRT API only exposes transmitting APDUs and not channel management functions such as open/close, the UMDF driver will inspect the APDUs and look for a SELECT by AID command. If the driver finds a SELECT by AID command, it will be interpreted as opening a logical channel using the Wwan RPC API. The UMDF driver will always validate that the AID is allowlisted, otherwise it will deny the request. Because there is no close or disconnect IOCTL in the SC DDI, the UMDF driver has no way of knowing when the transmission ends and when to close the logical channel. To prevent leaking of the logical channels, the UMDF driver will set a 5 minute timer when a logical channel is opened and will close the channel when the timer expires. The 5 minutes should be long enough as a firmware update is expected to run up to 2.5 minutes maximum. If the UMDF driver detects a new SELECT by AID command, then it will close the previously opened channel and reset the timer for the new logical channel. Note that 5 minute timeout is measured from the last transmitted APDU. In other words, transmitting an APDU over an existing channel resets the timer.
 
-To prevent from opening channels against random UICC apps, the ISO UMDF driver will permit app ids that are required for an update and restrict access to only these apps. The card vendor helps identify the app ids and the OEM adds the ids as registry entries. It is also expected that the UICC app in the card will perform digital signature checks on the firmware to protect against malicious apps sending data.
+To prevent from opening channels against random UICC apps, the ISO UMDF driver will permit app IDs that are required for an update and restrict access to only these apps. The card vendor helps identify the app IDs and the OEM adds the IDs as registry entries. It is also expected that the UICC app in the card will perform digital signature checks on the firmware to protect against malicious apps sending data.
 
 |***Registry Path***|***Value Name***|***Type***|
 |---|---|---|
 |HKLM\Software\Microsoft\Cellular\MVSettings\DeviceSpecific\eSIM\FwUpdate|AllowedAppIdList|REG_MULTI_SZ|
 
-During a full firmware OS update it is important that the UICC apps that are involved are not accessed by the modem. To achieve this the TRC Image Update Agent will send a special APDU that instructs the eUICC to get in to the TRC/PBL mode and then it will ask the modem to get into the passthrough mode and reset the card. The card will boot as an empty MF. Once the update is done, the modem will be asked to reset the card again. This time both the modem and the card will get back to normal mode.
+During a full firmware OS update it is important that the UICC apps that are involved are not accessed by the modem. To achieve this the TRC Image Update Agent will send a special APDU that instructs the eUICC to go in to the TRC/PBL mode. The TRC app will then ask the modem to go into the passthrough mode and reset the card. The card will boot as an empty MF. Once the update is done, the modem will be asked to reset the card again. This time both the modem and the card will get back to normal mode.
 
 ## Flow Diagrams
 ### Connect
-![connect](images\mb-fw-upgrade-esim-connect.png "Connect")
+![Flow diagram for connecting to SC WinRT](images\mb-fw-upgrade-esim-connect.png "Connect")
 ### Transmit (Open Channel)
-![transmit open channel](images\mb-fw-upgrade-esim-transmit-open-channel.png "trans open channel")
+![Flow diagram for transmit (open channel)](images\mb-fw-upgrade-esim-transmit-open-channel.png "trans open channel")
 ### Transmit (send APDU and Close Channel)
-![transmit send apdu & close channel](images\mb-fw-upgrade-esim-transmit-sendapdu-close-channel.png "Transmit send apdu & close channel")
-### Get Atr
-![get atr](images\mb-fw-upgrade-esim-getatr.png "Get ATR")
-### Pass-thrugh
-![PasThrough Mode](images\mb-fw-upgrade-esim-passthru.png "pass through")
+![Flow diagram for transmit (send APDU and close channel)](images\mb-fw-upgrade-esim-transmit-sendapdu-close-channel.png "Transmit send apdu & close channel")
+### Get ATR
+![Flow diagram for Get ATR](images\mb-fw-upgrade-esim-getatr.png "Get ATR")
+### Pass-through mode
+![Flow diagram for Pass-through Mode](images\mb-fw-upgrade-esim-passthru.png "pass through")
 
 ## Related 
 [Preinstall Apps Using DISM Published](/previous-versions/windows/it-pro/windows-8.1-and-8/dn387084(v=win.10)?redirectedfrom=MSDN)
