@@ -2630,6 +2630,8 @@
       href: mb-device-readiness.md
     - name: "MB Data Connectivity"
       href: mb-data-connectivity.md
+    - name: "Basic Connectivity Log Filter"
+      href: mb-basic-connectivity-tat.md
     - name: "MB Service Detection and Activation"
       href: mb-service-detection-and-activation.md
     - name: "MB Radio State"
@@ -2674,6 +2676,8 @@
       href: mb-network-blacklist-operations.md
     - name: "MB LTE Attach Operations"
       href: mb-lte-attach-operations.md
+    - name: "LTE Attach Operation Log Filter"
+      href: mb-lte-attach-tat.md
     - name: "MB Protocol Configuration Options (PCO) Operations"
       href: mb-protocol-configuration-options-pco-operations.md
     - name: "MB UICC operations"
@@ -2698,6 +2702,8 @@
           href: mb-device-based-reset-and-recovery.md
         - name: "MB hang detection"
           href: mb-hang-detection.md
+        - name: "MB Device Reset and Recovery (RnR) trace"
+          href: mb-device-based-reset-and-recovery-trace.md
       - name: "MB modem reset operations"
         href: mb-modem-reset-operations.md
     - name: "MB SAR Platform Support"
@@ -2719,7 +2725,9 @@
       - name: "NDIS Interface for 5G Data Class Support"
         href: ndis-interface-for-5g-data-class-support.md
       - name: "MBIMEx 2.0 – 5G NSA support"
-        href: mbimex-2.0-5g-nsa-support.md
+        href: mbimex-2.0-5g-nsa-support.mdmbimex-3.0-5g-sa-phase-1-support.md
+      - name: "MBIMEx 3.0 – 5G SA Phase 1 support"
+        href: mbimex-3.0-5g-sa-phase-1-support.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
@@ -2856,6 +2864,8 @@
         href: mb-analyzing-logs.md
       - name: "TextAnalysisTool Filter Files"
         href: mb-tat-filters.md
+      - name: "netsh mbn test installation"
+        href: mb-netsh-mbn-test.md
   - name: "WLAN network preference and roaming"
     items: 
     - name: "WLAN feature information"

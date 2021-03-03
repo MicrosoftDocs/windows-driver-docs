@@ -34,7 +34,7 @@ For more information, see [Developing apps using multiple PDP contexts](/windows
 
 ## Decision Logic in WwanSvc for Additional PDP Context Connections
 
-1. Double check and update the "Is Default Profile" condition logic, as that seems not applicable anymore.
+1. Double check and update the "Is Default Profile" condition logic, as it is no longer applicable.
 1. WCM should no longer use the *cost* property of the default profile.
 1. If the new additional pdp context APN request coincides with the default internet APN, disconnect the current additional PDP context.
 

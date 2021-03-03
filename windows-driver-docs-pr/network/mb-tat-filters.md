@@ -11,10 +11,14 @@ ms.localizationpriority: medium
 
 TextAnalysisTool filters:
 
+- [Basic Connectivity Log Filter](mb-basic-connectivity-tat.md)
+
+- [DSSA Log Filter](mb-dssa-filter.md)
+
 - [eSIM Download and Install Log Filter](mb-esim-download-install-tat.md)
 
 - [eSIM Profile Operations Log Filter](mb-esim-profile-operations-tat.md)
 
-- [DSSA Log Filter](mb-dssa-filter.md)
+- [LTE Attach Operation Log Filter](mb-lte-attach-tat.md)
 
 - [PIN Operations Log Filter](mb-pin-filter.md)

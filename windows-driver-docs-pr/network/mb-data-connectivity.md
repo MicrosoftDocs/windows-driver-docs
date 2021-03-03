@@ -29,21 +29,21 @@ The acronyms in the preceding image:
 
 - **COSA:** Country & Operator Settings Asset
 - **CSP:** Configuration Service Provider
-- **GP Editor:**
-- **MDM:** Mobile device management
+- **GP Editor:** Group Policy Editor
+- **MDM:** Mobile Device Management
 - **MBBCx:**  Mobile Broadband WDF class extension
 - **MO:** Mobile Operator
-- **MV:**
+- **MV:** Multivariant (framework that associates SIMs with corresponding data from the COSA database)
 - **NDISUIO:** NDIS Usermode I/O
-- **NQM:**
-- **OEM:** Original equipment manufacturers
+- **NQM:** Network Quiet Mode
+- **OEM:** Original Equipment Manufacturer
 - **OMA-DM:** Open Mobile Alliance – Device Management
 - **OMA-CP:** Open Mobile Alliance – Client Provisioning
 - **SCM:** Service Control Manager
 - **WCM:** Windows Connection Manager
 - **WMI:** Windows Management Instrumentation
-- **WNF:**
-- **wwanprot DIM:**
+- **WNF:** Windows Notification Facility
+- **wwanprot DIM:** WWAN Protocol Driver Interface Model
 - **wwansvc:** WWAN Service
 
 For more information on individual components, see [Cellular architecture](cellular-architecture-and-driver-model.md).
@@ -153,7 +153,7 @@ If one round of attempts has multiple MBB profiles, the order is:
 	-   WWAN_ERR_3GPP_INSUFFICIENT_RESOURCES,           // 26
 	-   WWAN_ERR_3GPP_UNKNOWN_PDP_ADDRESS_TYPE,         // 28
 	-   WWAN_ERR_3GPP_ACTIVATION_REJECT                 /
--  OEM customization of the initial back-off: Per code, three catagories
+-  OEM can customize the initial back-off. Each code can have one of these three catagories:
 	-  Normal-pace: the same as the base case (3 seconds)
 	-  Slow-pace: 300 seconds
 	-  Glacier-pace: 24 hours (practically no retry)
@@ -178,9 +178,9 @@ If one round of attempts has multiple MBB profiles, the order is:
 - When the back-off timer expires naturally, retry starts and does the same thing as the initial auto-connect.
 
 ### Manual Connect
-- Bring-up of data connection is initiated externally via the wwansvc RPC API:
+- Bring-up of the data connection is initiated externally via the wwansvc RPC API:
 	- In Cellular Setting UI or Network flyout, users uncheck the "let Windows keep this connected" box and then click the Connect button.
-	- WCM may also do this in old days.
+	- Starting with Windows 8, WCM may also bring-up the data connection.
 	- Manual connect is only allowed if auto-connect is not in progress (idle or back-off).
 	
 - The connect request may be issued with or without a specific MBB profile. For Cellular UX since RS2:
@@ -249,18 +249,18 @@ The file showing the HLK test results should have been generated in the director
 1. Reboot DUT.
 1. After boot, open Cellular settings and click Connect to Cellular. Cellular should connect and internet browsing should work.
 
-### Auto-connect after resume from wake from hibernation (S4)
+### After wake from hibernation (S4), Cellular auto-connects
   1. Ensure "Let Windows manage this connection" is checked in Cellular settings.
   1. Put DUT into S4.
   1. Wake DUT and verify it automatically establishes a cellular connection. The user should be able to browse the internet.
 ### After wake from hibernation (S4), connect Cellular manually
   1. With Ethernet unplugged and Wi-Fi toggled off, uncheck "Let Windows manage this connection" in Cellular settings.
   1. In an admin CMD prompt run command:  shutdown -h 
-  1. Machine will hibernate. After more than 30 seconds press the machine's power button to wake from hibernation. Log back in, open Cellular settings, and click to Connect to Cellular.  Cellular should connect and the user should be able to browse the internet.
+  1. Machine will hibernate. After more than 30 seconds press the machine's power button to wake from hibernation. Log back in, open Cellular settings, and click Connect to Cellular.  Cellular should connect and the user should be able to browse the internet.
 ### After wake from screen sleep, Cellular auto-connects
   1. With Ethernet unplugged and Wi-Fi toggled off, verify an active cellular connection.
   1. (Optional) Allow the screen to sleep. You can set the screen sleep to 1 minute under Settings -> System -> Power & sleep. The setting should not be set to "Never".
-  1. Wake the screen by using mouse or keyboard and log back in. Cellular should stay connected and the user should be able to browse internet (also via container for VAIL/WCOS).
+  1. Wake the screen by using the mouse or keyboard and log back in. Cellular should stay connected and the user should be able to browse internet (also via container for VAIL/WCOS).
 
 ## MB data connectivity troubleshooting guide
 1. Logs can be collected and decoded using these instructions: [MB Collecting Logs](mb-collecting-logs.md)

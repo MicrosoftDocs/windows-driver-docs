@@ -7,7 +7,7 @@ ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
-# MBB Device Reset and Recovery (RnR) trace
+# MB Device Reset and Recovery (RnR) trace
 ## Useful keywords/regexp for filtering traces
 - Attempt connection reset
 - current RnR state
@@ -33,7 +33,7 @@ ms.localizationpriority: medium
 - L3ConnnectivityGood
 - WaitL3ConnnectivityGood
 - CONTEXT_STATE Resp (Set)
-- ound valid
+- found valid
 - _ReadRnRPolicies
 - Opportunistic Internet
 - Active probe result code on interface

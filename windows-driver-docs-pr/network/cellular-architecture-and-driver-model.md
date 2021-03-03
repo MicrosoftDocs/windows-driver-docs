@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Cellular architecture
 
-This section describes the elements of the cellular architecture for Windows 10 and how they interact. It also includes the [implementation requirements](#windows-10-cellular-implementation-requirements) for making cellular modem hardware compatible with Windows 10.
+This section describes the elements of the cellular architecture for Windows 10 and how they interact. It also includes the implementation requirements for making cellular modem hardware compatible with Windows 10.
 
 ## Windows 10 cellular architecture
 

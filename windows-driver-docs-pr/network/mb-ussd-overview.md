@@ -65,7 +65,7 @@ CreateInternal() is called to create a instance of UssdSession and invoke Initia
             Windows::Networking::NetworkOperators::IUssdSendMessageAndGetReplyOperation,
             Windows::Internal::AsyncBaseFTM<IUssdSendMessageAndGetReplyCompletedHandler, Microsoft::WRL::SingleResult>>
     ```
-    The UssdSendMessageAndGetReplyOperation object allows WinRT to obfuscate the complexities of this asynchronous operation and all of the apartmentalization and memory proxying that goes along with it. If you need more detail here, refer to the References page.
+    The UssdSendMessageAndGetReplyOperation object allows WinRT to obfuscate the complexities of this asynchronous operation and all of the compartmentalization and memory proxying that goes along with it. For more information, see [SendMessageAndGetReplyAsync](/uwp/api/windows.networking.networkoperators.ussdsession.sendmessageandgetreplyasync).
 
     For now, understand that the asynchronous operation described above simply calls back into the UssdSession object where the logic for this operation is actually contained. We can visualize for simplicity that the UssdSession itself encapsulates the work here. We can now assert that, despite the asynchronous nature, only one UssdMessage may be sent at a time.
     

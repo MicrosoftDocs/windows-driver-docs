@@ -149,7 +149,7 @@ This file showing the HLK test results should have been generated in the directo
 
   1. With Ethernet unplugged and Wi-Fi toggled off, verify an active cellular connection.
   1. (Optional Step) Allow screen to sleep. You can set screen sleep to 1 minute under Settings -> System -> Power & sleep. The setting should not be set to "Never".
-  1. Wake the screen by using the mouse or keyboard and log back in. Cellular should stay connected and the user should be able to browse internet (also via container for VAIL/WCOS).
+  1. Wake the screen by using the mouse or keyboard and log back in. Cellular should stay connected and the user should be able to browse internet, including under the VAIL/WCOS system.
 
 ## Log Analysis
 ### Tips

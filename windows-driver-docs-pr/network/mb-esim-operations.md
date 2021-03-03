@@ -1,7 +1,6 @@
 ---
 title: MB eSIM Operations
 description: MB eSIM Operations
-ms.assetid: 07b20ad9-263a-40d4-a52c-adca0fe43196
 ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
@@ -51,7 +50,7 @@ Below is a sample flow for the Enable Profile operation. The other Profile Opera
 ![eSIM Enable Profile](images/esim_lpa_enable.png "eSIM Enable Profile Flow Diagram")
 
 ### Card Refresh
-The following operations expect card reset Operation that needs to be followed as per the guidance in [MB eSIM MBIM ready state guidance](mb-esim-mbim-ready-state-guidance.md)
+The eSIM Profile Operations expect that card refresh will be performed followed by the ready state change according to the [MB eSIM MBIM ready state guidance](mb-esim-mbim-ready-state-guidance.md).
 
 ## Hardware Lab Kit (HLK) Tests
 
@@ -91,7 +90,7 @@ The file showing the HLK test results should have been generated in the director
 ### Test autoconnect after reboot
 1. Make sure Ethernet is unplugged and Wi-Fi is toggled off. With a known good eSIM profile present on the physical eSIM in the device, browse to Settings -> Network & Internet -> Cellular -> Manage eSIM profiles -> eSIM profiles, select the profile, and click ***Use***. Verify that browsing the internet works normally.
 1. Reboot the machine, login, and browse to Settings -> Network & Internet -> Cellular -> Manage eSIM profiles -> eSIM profiles. The profile should show as Active, systray should show Cellular connection bars, and browsing the internet should work normally.
-1. Back in Manage eSIM profiles, select the profile, and click ***Stop using***. The profile should disconnect data gracefully.
+1. Back in Manage eSIM profiles, select the profile, and click ***Stop using***. The profile should disconnect data.
 
 
 ## MB eSIM Troubleshooting Guide

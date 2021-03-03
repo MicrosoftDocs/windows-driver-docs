@@ -1,7 +1,6 @@
 ---
 title: Basic Connectivity Log Filter
 description: TextAnalysisTool Filter for basic connectivity
-ms.assetid: 83ef402d-94ca-4bd1-bbac-096f1ed6dabc
 ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
