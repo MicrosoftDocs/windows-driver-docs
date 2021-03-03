@@ -1,7 +1,7 @@
 ---
 title: MB Collecting Logs
 description: MB Collecting Logs
-ms.date: 03/010/2021
+ms.date: 03/10/2021
 ms.localizationpriority: medium
 ---
 

@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/mb-5g-data-class-support.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/mb-5g-operations-overview",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/voice-calls-during-packet-data-service-connections.md",
             "redirect_URL":  "/windows-hardware/drivers/network/mb-packet-service-attach-operations",
             "redirect_document_id":  false

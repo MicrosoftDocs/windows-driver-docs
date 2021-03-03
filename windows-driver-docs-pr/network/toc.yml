@@ -2710,8 +2710,16 @@
       href: mb-modem-logging-with-dss.md
     - name: "MB 5G operations"
       items:
-      - name: "MB 5G data class support"
-        href: mb-5g-data-class-support.md
+      - name: "MB 5G Operations Overview"
+        href: mb-5g-operations-overview.md
+      - name: "MB 5G Operations Terminology"
+        href: mb-5g-operations-terminology.md
+      - name: "Windows 5G MBIM Interface"
+        href: windows-5g-mbim-interface.md
+      - name: "NDIS Interface for 5G Data Class Support"
+        href: ndis-interface-for-5g-data-class-support.md
+      - name: "MBIMEx 2.0 – 5G NSA support"
+        href: mbimex-2.0-5g-nsa-support.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"

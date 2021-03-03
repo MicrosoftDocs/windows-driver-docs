@@ -61,7 +61,7 @@ Country & Operator Settings Asset (COSA) is an OEM configurable database with se
 
 **NetCx**
 
-[Network Adapter WDF Class Extension (NetAdapterCx)](../netcx.md) is a driver model that provides the full functionality of the WDK.
+[Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) is a driver model that provides the full functionality of the WDK.
 
 **MBBCx**
 

@@ -95,7 +95,7 @@ After step 10, we are left in a state where a request was sent to WwanService to
 More messages can be sent under the same session. If the session was maintained, the future RequestType will be WwanUssdRequestContinue.
 
 ### Close
-![Flow diagram for USSD receive](images/ussd_resume2.png?raw=true "resume_ussd_img")
+![Flow diagram for USSD close](images/ussd_resume2.png?raw=true "resume_ussd_img")
 After step 18, the client has received the reply to their UssdMessage. They may or may not have continued to use the active UssdSession to send additional messages. We will assume that at some point in the future, the client will manually invoke Close() on the UssdSession. If the client does not explicitly invoke Close(), it will be called during the destructor of UssdSession.
 
 19) Client invokes Close() on the UssdSession instance.

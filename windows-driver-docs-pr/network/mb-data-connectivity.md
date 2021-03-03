@@ -15,7 +15,7 @@ ms.localizationpriority: medium
   - [Interactions between the Default Context Controller and its immediate neighbors](#interactions-between-the-default-context-controller-and-its-immediate-neighbors)
 - How the [Default Context Controller](#default-context-controller) manages the internet data connection
 - The [data connectivity flows](#mb-data-connectivity-flows) between WWAN Service and the modem
-- [Hardware Lab Kit (HLK) tests](#hardware-lab-kit-(hlk)-tests)
+- [Hardware Lab Kit (HLK) tests](#hardware-lab-kit-hlk-tests)
 - [Manual Tests](#manual-tests) for cellular connection
 - [MB data connectivity troubleshooting guide](#mb-data-connectivity-troubleshooting-guide)
 
