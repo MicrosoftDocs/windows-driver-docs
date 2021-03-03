@@ -2708,7 +2708,7 @@
       href: mb-nitz-support.md
     - name: "MB modem logging with DSS"
       href: mb-modem-logging-with-dss.md
-    - name: "MB 5G operations"
+    - name: "MB 5G Operations"
       items:
       - name: "MB 5G Operations Overview"
         href: mb-5g-operations-overview.md
