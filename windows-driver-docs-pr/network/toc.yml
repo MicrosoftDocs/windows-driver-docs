@@ -2725,7 +2725,7 @@
       - name: "NDIS Interface for 5G Data Class Support"
         href: ndis-interface-for-5g-data-class-support.md
       - name: "MBIMEx 2.0 – 5G NSA support"
-        href: mbimex-2.0-5g-nsa-support.mdmbimex-3.0-5g-sa-phase-1-support.md
+        href: mbimex-2.0-5g-nsa-support.md
       - name: "MBIMEx 3.0 – 5G SA Phase 1 support"
         href: mbimex-3.0-5g-sa-phase-1-support.md
     - name: "MB eSIM MBIM ready state guidance"
