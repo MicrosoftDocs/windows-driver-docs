@@ -1890,6 +1890,20 @@
       href: indicating-rss-receive-data.md
     - name: "Supporting RSS in Intermediate Drivers or Filter Drivers"
       href: supporting-rss-in-intermediate-drivers-or-filter-drivers.md
+    - name: "Virtual Machine Multiple Queues (VMMQ)"
+      items:
+      - name: "Overview of Virtual Machine Multiple Queues (VMMQ)"
+        href: overview-of-virtual-machine-multiple-queues.md
+      - name: "VMMQ send and receive processing"
+        href: vmmq-send-and-receive-processing.md
+      - name: "Advertising VMMQ capabilities"
+        href: advertising-vmmq-capabilities.md
+      - name: "Standardized INF keywords for VMMQ"
+        href: standardized-inf-keywords-for-vmmq.md
+      - name: "Allocating VPorts for VMMQ"
+        href: allocating-vports-for-vmmq.md
+      - name: "Enabling, disabling, and updating VMMQ on a VPort"
+        href: updating-vmmq-on-a-vport.md
   - name: "TCP/IP Offload"
     items: 
     - name: "TCP/IP Offload Overview"
