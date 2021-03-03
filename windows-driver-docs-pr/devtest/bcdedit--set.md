@@ -378,7 +378,7 @@ Any change to a boot option requires a restart to take effect. For information a
 
 ## DTrace
 
-DTrace (DTrace.exe) is a command-line tool that displays system information and events. There is a bcedit option to enable dtrace. For information about the DTrace BCDEdit options available, see the installing section of [DTrace on Windows](/windows-hardware/drivers/devtest/dtrace).
+DTrace (DTrace.exe) is a command-line tool that displays system information and events. There is a bcedit option to enable dtrace. For information about the DTrace BCDEdit options available, see the installing section of [DTrace on Windows](./dtrace.md).
 
 ## Requirements
 

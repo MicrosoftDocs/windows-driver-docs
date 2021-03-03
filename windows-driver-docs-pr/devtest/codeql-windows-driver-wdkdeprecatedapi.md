@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 
 ## Overview
 
-For the Windows 10 version 2004 release, Microsoft introduced new pool zeroing APIs that zero by default: [ExAllocatePool2](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3).
+For the Windows 10 version 2004 release, Microsoft introduced new pool zeroing APIs that zero by default: [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3).
 
-The *wdk-deprecated-api* [CodeQL query](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql) finds all instances of deprecated APIs that a driver should not call.  The deprecated APIs are:
+The *wdk-deprecated-api* [CodeQL query](./static-tools-and-codeql.md) finds all instances of deprecated APIs that a driver should not call.  The deprecated APIs are:
 
 [ExAllocatePool](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
 
@@ -48,7 +48,7 @@ RtlZeroMemory(Allocation, 100);
 PVOID Allocation = ExAllocatePool2(POOL_FLAG_PAGED, 100, 'abcd');
 ```
 
-The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument. Update any associated code to use the new [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument.
+The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](../kernel/pool_flags.md) argument. Update any associated code to use the new [POOL_FLAGS](../kernel/pool_flags.md) argument.
 
 ### ExAllocatePoolWithQuota/ExAllocatePoolWithQuotaTag
 
@@ -166,5 +166,4 @@ PVOID Allocation = ExAllocatePoolZero(PagedPool, 100, 'abcd');
 
 ## Additional Details
 
-This query can be found in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  See the [CodeQL and the Static Tools Logo Test](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql) page for details on how Windows Driver developers can download and run CodeQL.
-
+This query can be found in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  See the [CodeQL and the Static Tools Logo Test](./static-tools-and-codeql.md) page for details on how Windows Driver developers can download and run CodeQL.

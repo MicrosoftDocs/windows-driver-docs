@@ -2,7 +2,7 @@
 title: .scriptproviders (List Script Providers)
 description: The .scriptproviders command lists the active script providers.
 keywords: [".scriptproviders (List Script Providers) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 02/02/2021
 topic_type:
 - apiref
 api_name:
@@ -67,25 +67,10 @@ Available Script Providers:
 
 **Requirements**
 
-Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
+Before using any of the .script commands, a scripting provider needs to be loaded.
 
-```dbgcmd
-0:000> .load jsprovider.dll
-```
-
-## <span id="see_also"></span>See also
-
+## See also
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
-
- 
-
- 
-
-
-
-
-
-
