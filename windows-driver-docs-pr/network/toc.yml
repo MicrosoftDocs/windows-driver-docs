@@ -2650,7 +2650,7 @@
       href: mb-signal-strength-operations.md
     - name: "MB Packet Context Management"
       href: mb-packet-context-management.md
-    - name: "MB Multiple PDP Context"
+    - name: "MB Multiple PDP Contexts"
       href: mb-multiple-pdp.md
     - name: "MB DNS Updates"
       href: mb-dns-updates.md
