@@ -327,7 +327,7 @@ The queries that Microsoft recommends running on *all* driver source code are:
 | ID                       | Location   | Common Weakness Enumeration   |
 | ------------------------ | ---------- | ----------------------------- |
 | [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | N/A |
-| [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |
+| [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |u
 | [cpp/pointer-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-pointer-overflow-check/)   | *cpp/ql/src/Likely Bugs/Memory Management/PointerOverflow.ql* | 
 | [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)   | *cpp/ql/src/Security/CWE/CWE-253/HResultBooleanConversion.ql* | 
 | [cpp/incorrect-string-type-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-incorrect-string-type-conversion/)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* |
@@ -454,7 +454,7 @@ The motivation for requiring CodeQL to be run on driver source code can be summa
 1. Security of Windows is paramount.  Requiring CodeQL to be run on driver source code is one step in ensuring that components which get certified by Microsoft are secure.
 2. CodeQL is [used at Microsoft](https://msrc-blog.microsoft.com/2018/08/16/vulnerability-hunting-with-semmle-ql-part-1/) to find security defects and  CodeQL queries are actively developed by security engineers at Microsoft.  Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
-### What license governs the usage of CodeQL?
+### What license governs the usage of CodeQL for driver developers?
 
 Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
