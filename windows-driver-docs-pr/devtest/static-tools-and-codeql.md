@@ -458,6 +458,10 @@ The motivation for requiring CodeQL to be run on driver source code can be summa
 
 Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
+### Do I need to use Visual Studio or msbuild to run CodeQL?
+
+CodeQL does not require MSBuild or Visual Studio to be used. See [supported languges and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
+
 ### How does the HLK verify that my driver was scanned by CodeQL?
 
 The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the Static Tools Logo Test can be found on its [MS Docs page](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
@@ -476,6 +480,6 @@ Each query has a varying level of precision.  The goal is to minimize false posi
 
 ### Feedback?	
 
-Send feedback to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com)
+Send feedback to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
 
 
