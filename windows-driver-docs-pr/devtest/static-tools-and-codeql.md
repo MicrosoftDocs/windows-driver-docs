@@ -443,34 +443,36 @@ SET ERRORLEVEL = 0
 
 ## Frequently Asked Questions (FAQ's)
 
-### When?
+### When will this be required for device certification?
 
-This will be required for WHCP 2021.  See WHCP requirements for further details.
+See WHCP requirements for further details for when this requirement take effect.
 
-### Why?
+### What is the motivation behind requiring CodeQL be run on driver source code?
 
-Main reason:
+The motivation for requiring CodeQL to be run on driver source code can be summarized by two main reasons:
 
-1. Security is incredibly important.
-2. CodeQL is used at Microsoft extensively
-3. CodeQL queries are actively developed by security engineers at Microsoft.
-4. CodeQL queries are open-source, can leverage the extensive open-source security community
+1. Security of Windows is paramount.  Requiring CodeQL to be run on driver source code is one step in ensuring that components which get certified by Microsoft are secure.
+2. CodeQL is [used at Microsoft](https://msrc-blog.microsoft.com/2018/08/16/vulnerability-hunting-with-semmle-ql-part-1/) to find security defects and  CodeQL queries are actively developed by security engineers at Microsoft.  Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
-### License?
+### What license governs the usage of CodeQL?
 
 Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
-### How to Pass HLK?
+### How does the HLK verify that my driver was scanned by CodeQL?
 
-The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the
+The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the Static Tools Logo Test can be found on its [MS Docs page](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
 ### Can I run the DVL generation on [Visual Studio solutions](link needed)? 
 
-No, the DVL generation must be run at the project level and cannot be run on Visual Stuido solutions.
+No, DVL generation must be run at the project level and cannot be run on Visual Stuido solutions.
 
-### False Positives?
+### Can I run DVL generation without msbuild or Visual Studio?
 
-Goal is to minimize false positives, but they will happen.  The set of "must-fix" is intended to include almost 0 false positives.  If you experience something else, email stlogohelp@microsoft.com.
+Microsoft ships a stand-alone exe called dvl.exe which can be used to generate a DVL file outside of the context of msbuild and/or Visual Studio.  See the [instructions](need link) to learn more.
+
+### Are all defects reported by CodeQL true defects?
+
+Each query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
 
 ### Feedback?	
 
