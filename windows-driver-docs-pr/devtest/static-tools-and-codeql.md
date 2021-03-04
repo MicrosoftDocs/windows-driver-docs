@@ -381,7 +381,7 @@ The SARIF file contains a **result** section for each query that was run and inc
 In order to review the results, install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer) and follow the instructions on that page.  Alternatively, you can install the [SARIF extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer).
 
 > [!NOTE]
-> It is important to note that the classification of "error", "warning", or "problem" should be ignored for drivers certifying with the Static Tools Logo Test.  A driver that ha a defect from a query that is marked "Must-Fix" will not pass the Static Tools Logo Test regardless of the query classification in the raw query file (ie. "warning"). 
+> It is important to note that a query's classification of "error", "warning", or "problem" **should be ignored** for drivers certifying with the Static Tools Logo Test.  A driver that has a defect from a query that is marked ["Must-Fix"](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#must-fix-queries) **will not pass the Static Tools Logo Test** regardless of the query classification in the raw query file (ie. "warning"). 
 ## Driver Verification Log (DVL) Consumption of SARIF Output
 
 Microsoft will enforce the requirement of running CodeQL queries with the Static Tools Logo Test.  The Static Tools Logo Test uses a [Driver Verification Log (DVL)](../develop/creating-a-driver-verification-log.md) to gather results from different static analyses run on driver source code.  This DVL is then parsed as part of the Static Tools Logo Test used in an HLK test.
