@@ -460,7 +460,7 @@ Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardw
 
 ### Do I need to use Visual Studio or msbuild to run CodeQL?
 
-CodeQL does not require MSBuild or Visual Studio to be used. See [supported languges and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
+CodeQL **does not require MSBuild or Visual Studio to be used**. See [supported languges and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
 
 ### How does the HLK verify that my driver was scanned by CodeQL?
 
