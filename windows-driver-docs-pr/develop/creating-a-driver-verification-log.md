@@ -26,7 +26,6 @@ The driver verification log has the file name extension .DVL.XML. The log is cre
 **Note**  When you are ready to test your driver using the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), you need to copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Be sure to delete the contents of the directory on the test computer before you copy the new driver verification log.
 
  
-
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 For the most up-to-date information about the Code Analysis tool, Static Driver Verifier, and the Driver Verification Log, refer to the WDK Release Notes. The Release Notes are available on the [Windows Driver Kit (WDK) download page](https://go.microsoft.com/fwlink/p/?linkid=254897).
@@ -39,7 +38,10 @@ You can also create the driver verification log from a Visual Studio Command Pro
 msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=x64
 ```
 
+# Creating a Driver Verification Log Outside of the Context of msbuild or Visual Studio 
+
 ## <span id="related_topics"></span>Related topics
+
 
 
 * [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md)
