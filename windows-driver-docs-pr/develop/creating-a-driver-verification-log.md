@@ -40,6 +40,8 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=
 
 # Creating a Driver Verification Log Outside of the Context of msbuild or Visual Studio 
 
+update this
+
 ## <span id="related_topics"></span>Related topics
 
 
