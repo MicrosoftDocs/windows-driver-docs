@@ -128,9 +128,9 @@ If you have challenges signing your driver with WHQL, please report the specific
 * Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
 * Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
 
-### Will I be able to continue signing drivers if my certificate chains to a cross-cert that expires after 2021?
+### Will I be able to continue signing drivers with a certificate that chains to a cross-cert that expires after July 1, 2021?
 
-No, using any code signing certificate to sign a kernel-mode driver without a WHQL signature after July 1st, 2021 is a violation of Microsoft Trusted Root Program (TRP) policy. Certificates in violation of Microsoft TRP policies will be revoked.
+No, kernel-mode drivers must be signed with a WHQL signature after July 1st, 2021. You cannot use a certificate that chains to a cross-cert that expires after July 1, 2021 to sign kernel-mode drivers. Using these certificates to sign kernel-mode drivers after this date is a violation of the Microsoft Trusted Root Program (TRP) policy. Certificates in violation of Microsoft TRP policies will be revoked by the CA. Additional certificates may be present on the kernel-mode driver, however Windows ignores those signatures for the purpose of validating the driver.
 
 ## Related information
 
