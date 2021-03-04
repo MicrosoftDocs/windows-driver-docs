@@ -60,6 +60,33 @@ AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
 ```
 
+Additional sections of *Usbvideo.inf* need to be included for completeness
+```INF
+[MyDevice.SERVICES]
+Include=usbvideo.inf
+Needs=USBVideo.NT.SERVICES
+
+[MyDevice.HW]
+Include=usbvideo.inf
+Needs=USBVideo.NT.HW
+
+[MyDevice.WDF]
+Include=usbvideo.inf
+Needs=USBVideo.NT.WDF
+
+[WdmCompanionFilter_CompanionSect]
+CompanionServices = SecureUSBVideo
+
+[WdmCompanionFilter_KmdfSvcSect]
+KmdfLibraryVersion = %KMDF_VERSION%
+
+[SecureUSBVideo_UmdfSvcSect]
+UmdfLibraryVersion = %UMDF_VERSION%
+ServiceBinary = %12%\UMDF\SecureUSBVideo.dll
+ServiceType = SecureCompanion ; allowed options are: Driver (default), SecureCompanion, NonSecureCompanion
+TrustletIdentity = 4096          ; required if it is SecureCompanion
+```
+
 The INF also needs a CopyFiles section to copy the plug-in into the system folder.
 ```INF
 [MyDevice.CopyList]
