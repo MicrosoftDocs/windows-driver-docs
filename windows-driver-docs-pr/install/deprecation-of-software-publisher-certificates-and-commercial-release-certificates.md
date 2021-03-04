@@ -30,7 +30,7 @@ As a result, all [software publisher certificates](software-publisher-certificat
 * [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
 * [How do production signing options differ by Windows version?](#how-do-production-signing-options-differ-by-windows-version)
-* [Will I be able to continue signing drivers if my certificate chains to a cross-cert that expires after 2021?](#will-i-be-able-to-continue-signing-drivers-if-my-certificate-chains-to-a-cross-cert-that-expires-after-2021)
+* [Will I be able to continue signing drivers if my certificate chains to a cross-cert that expires after 2021?](#will-i-be-able-to-continue-signing-drivers-with-a-certificate-that-chains-to-a-cross-cert-that-expires-after-july-1-2021)
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
