@@ -65,7 +65,7 @@ Parameter 4 - Pointer to pool header.</td>
 
 ## Resolution
 
-The [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
  
 
