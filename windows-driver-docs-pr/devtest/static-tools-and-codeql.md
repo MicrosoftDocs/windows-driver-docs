@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 12/10/2020
+ms.date: 02/03/2021
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 Microsoft is committed to mitigating the attack surface for the Windows operating system, and ensuring that third party drivers meet a strong security bar is critical to accomplishing that goal.  One step in setting this security bar that Microsoft is taking is adding a new requirement to the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) (WHCP).  This requirement states that all driver submissions must use the [CodeQL](https://securitylab.github.com/tools/codeql) engine on driver source code and fix any violations that are deemed **“Must-Fix”**.
 
-[CodeQL](https://semmle.com/codeql), from [Semmle](https://semmle.com/), is a powerful static analysis technology for securing software. The combination of an extensive suite of high-value security queries and a robust platform make it an invaluable tool for securing third party driver code.
+[CodeQL](https://securitylab.github.com/tools/codeql), by GitHub, is a powerful static analysis technology for securing software. The combination of an extensive suite of high-value security queries and a robust platform make it an invaluable tool for securing third party driver code.
+
+Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
 The requirement to analyze the driver source code and fix any **“Must-Fix”** violations will be enforced by the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
@@ -27,13 +29,13 @@ This topic describes how to:
 **CodeQL** is the analysis engine used by developers to perform security analysis.  A **CodeQL database** is a directory containing:
 
 - Queryable data, extracted from driver source code.
-- A source reference, for displaying query results directly in source code.  A **query** can be thought of as a “check” or “rule”.  Each query represents a distinct security vulnerability that is being searched for. For more information, see [Writing queries](https://help.semmle.com/QL/learn-ql/writing-queries/writing-queries.html) in the CodeQL docs.
+- A source reference, for displaying query results directly in source code.  A **query** can be thought of as a “check” or “rule”.  Each query represents a distinct security vulnerability that is being searched for. For more information, see [Writing queries](https://codeql.github.com/docs/writing-codeql-queries/codeql-queries/) in the CodeQL docs.
 - Query results.
 - Log files generated during database creation, query execution, and other operations.
 
-This topic details how to perform analysis using CodeQL command line interface (CLI) with a focus on driver developers for Windows.  Supplementary documentation can be found at [CodeQL Getting Started](https://help.semmle.com/codeql/codeql-cli/procedures/get-started.html).
+This topic details how to perform analysis using CodeQL command line interface (CLI) with a focus on driver developers for Windows.  Supplementary documentation can be found at [CodeQL Getting Started](https://codeql.github.com/docs/codeql-cli/getting-started-with-the-codeql-cli/).
 
-We will use the [CodeQL command line tools (CLI)](https://help.semmle.com/codeql/codeql-cli.html) to create a CodeQL database from a variety of compiled and interpreted languages, and then analyze that database using a driver-specific [query suite](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/).
+We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs/codeql-cli/) to create a CodeQL database from a variety of compiled and interpreted languages, and then analyze that database using a driver-specific [query suite](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/).
 
 ## CodeQL Windows Setup
 
@@ -87,7 +89,7 @@ C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-
 ```
 
 > [!NOTE]
-> Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.
+> Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
 This page assumes a Windows development environment and that the repository will be installed under *C:\codeql-home*.
 
@@ -121,7 +123,7 @@ In this example, CodeQL uses the MSBuild compiler to process the C++ code to pre
 
 ### Example
 
-Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned.
+Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned. If you are building the driver using Visual Studio, you can configure the CodeQL queries to run as a post build event as discussed in [Visual Studio Post-Build Event](#visual-studio-post-build-event) in this topic.
 
 This example will process the evaluate the kmdfecho.sln driver sample, which is available on GitHub.
 
@@ -154,7 +156,6 @@ At this point in our example setup, the following directories will be present.
 | Databases              | C:\codeql-home\databases           |
 | Driver code under test | C:\codeql-home\drivers\kmdf        |
 | Query suites with driver-specific queries | C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\windows-drivers\suites      |
-
 
 ## Perform Analysis
 
@@ -189,7 +190,7 @@ in SARIF or another interpreted format.
 
 ```
 
-To evaluate the *windows_driver_recommended.qls* query suite against the kmdf echo driver with the results returned in SARIF format use the command below.  The *windows_driver_recommended.qls* query suite is a superset of all queries that Microsoft has deemed as valuable for driver developers.  Read more about query suites in the ["Query Suites"](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#query-suites) section below.
+To evaluate the *windows_driver_recommended.qls* query suite against the kmdf echo driver with the results returned in SARIF format use the command below.  The *windows_driver_recommended.qls* query suite is a superset of all queries that Microsoft has deemed as valuable for driver developers.  Read more about query suites in the ["Query Suites"](#query-suites) section below.
 
 ```command
 C:\codeql-home>c:\codeql-home\codeql\codeql.cmd database analyze "C:\codeql-home\databases\kmdf" windows_driver_recommended.qls --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdfecho1.sarif -j 0
@@ -291,13 +292,13 @@ Shutting down query evaluator.
 Interpreting results.
 ```
 
-You can specify a timeout for the entire operation with the *"–timeout=[seconds]"* flag.  This can be useful for analysis on queries without being limited by a single, long-running query.  More options to tweak analysis optimizations are described in [database analyze](https://help.semmle.com/codeql/codeql-cli/commands/database-analyze.html). 
+You can specify a timeout for the entire operation with the *"–timeout=[seconds]"* flag.  This can be useful for analysis on queries without being limited by a single, long-running query.  More options to tweak analysis optimizations are described in [database analyze](https://codeql.github.com/docs/codeql-cli/analyzing-databases-with-the-codeql-cli/). 
 
 ## Query Suites
 
-As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), Microsoft has provided two query suites to simplify the end-to-end driver developer workflow.  The *windows_driver_recommended.qls* query suite contains a superset of [all of the queries](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#queries) that Microsoft has deemed valuable for driver developers.  
+As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), Microsoft has provided two query suites to simplify the end-to-end driver developer workflow.  The *windows_driver_recommended.qls* query suite contains a superset of [all of the queries](#queries) that Microsoft has deemed valuable for driver developers.  
 
-The *windows_driver_mustfix.qls* query suite contains [queries](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#must-fix-queries) that are currently deemed as **"Must-Fix"** for WHCP certification. Both of these query suites will be updated regularly as Microsoft finalizes the list of available queries and the list of "Must-Fix" queries required for WHCP certification.  As a result, it is critical to regularly sync the repository using the ["git pull"](https://www.git-scm.com/docs/git-pull) command.
+The *windows_driver_mustfix.qls* query suite contains [queries](#must-fix-queries) that are currently deemed as **"Must-Fix"** for WHCP certification. Both of these query suites will be updated regularly as Microsoft finalizes the list of available queries and the list of "Must-Fix" queries required for WHCP certification.  As a result, it is critical to regularly sync the repository using the ["git pull"](https://www.git-scm.com/docs/git-pull) command.
 
 ## Troubleshooting
 
@@ -315,7 +316,7 @@ Unpacked in: C:\codeql-home\codeql\
    use 'codeql resolve qlpacks' and 'codeql resolve languages'.
 ```
 
-The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://help.semmle.com/codeql/codeql-cli/commands/database-upgrade.html).
+The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://codeql.github.com/docs/codeql-cli/upgrading-codeql-databases/).
 
 ## Queries
 
@@ -344,9 +345,8 @@ The queries that Microsoft recommends running on *all* driver source code are:
 | [cpp/suspicious-pointer-scaling](https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingChar.qhelp)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScaling.ql* |
 | [cpp/suspicious-pointer-scaling-void](https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.qhelp)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* |
 | [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
-| [cpp/use-after-free](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-useafterfree)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* |
-| [cpp/probable-use-after-free](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-probableuseafterfree)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree/ProbableUseAfterFree.ql* |
-| [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
+| [cpp/use-after-free](./codeql-windows-driver-useafterfree.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* |
+| [cpp/windows/wdk/deprecated-api](./codeql-windows-driver-wdkdeprecatedapi.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
 
 These queries are a part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
 
@@ -363,14 +363,13 @@ The subset of queries below are currently deemed as **"Must-Fix"** for WHCP cert
 | [cpp/incorrect-string-type-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-incorrect-string-type-conversion/)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* | 
 | [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
 | [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql*  |
-| [cpp/uninitialized-local](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Memory%20Management/UninitializedLocal.ql/module.UninitializedLocal.html)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* |
-| [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
+| [cpp/windows/wdk/deprecated-api](/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
 
 These queries are a part of the *windows_driver_mustfix.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
 
 ## View Analysis
 
-The results of running the analysis command in the previous section can be viewed in a [SARIF](https://help.semmle.com/codeql/glossary.html#sarif-results-file) file format.  Details regarding SARIF output can be found at [SARIF Overview](https://help.semmle.com/codeql/codeql-cli/reference/sarif-overview.html).
+The results of running the analysis command in the previous section can be viewed in a [SARIF](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#sarif-file) file format.  Details regarding SARIF output can be found at [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/). Information on the SARIF Standard is available at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec).
 
 The SARIF file contains a **result** section for each query that was run and includes details regarding the completed analysis.  For example, if the query found a vulnerability, the SARIF file will include details as to what the vulnerability is and where it found the defect. If no vulnerabilities are found, the results section will be blank.
 
@@ -389,3 +388,52 @@ CodeQL results follow the same model of using a DVL to show that the driver bein
 Place the .sarif file in the same directory as the .vcxproj file for which a DVL is being generated.  The exact name of the results file does not matter, as long as the file ends with *".sarif"*. The ability to submit a SARIF results file is available in the WDK, preview build 20190 and later.
 
 Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md). Guidance for where to place the DVL for consumption by the Static Tools Logo HLK Test can be found in [Running the test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
+
+## Visual Studio Post-Build Event
+
+If you are building the driver using Visual Studio, you can configure the CodeQL queries to run as a post build event.
+
+In this example, a small batch file is created in the target location and called as a post build event. For more information about Visual Studio C++ build events, see [Specifying build events](/cpp/build/specifying-build-events).
+
+1. Create a small batch file that re-creates the CodeQL database and then runs the desired queries using that up to date database.  In this example, the batch file will be named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example  batch file to match your directory locations.
+
+```command
+ECHO ">>> Running CodeQL Security Rule V 1.0 <<<"
+ECHO ">>> Removing previously created rules database <<<"
+rmdir /s/q C:\codeql-home\databases\kmdf
+CALL C:\codeql-home\codeql\codeql\codeql.cmd database create -l=cpp -s="C:\codeql-home\drivers\kmdf" -c "msbuild /p:Configuration=Release /p:Platform=x64 C:\codeql-home\drivers\kmdf\kmdfecho.sln /t:rebuild /p:PostBuildEventUseInBuild=false " "C:\codeql-home\databases\kmdf" -j 0
+CALL C:\codeql-home\codeql\codeql\codeql database analyze "C:\codeql-home\databases\kmdf" "C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\codeql-queries\cpp\ql\src\Likely Bugs\Underspecified Functions" --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdf.sarif -j 0 --rerun
+ECHO ">>> Loading SARIF Results in Visual Studio <<<"
+CALL devenv /Edit C:\codeql-home\databases\kmdf.sarif
+SET ERRORLEVEL = 0
+```
+
+2. The [devenv.exe / Edit](/visualstudio/ide/reference/edit-devenv-exe) option is used in the batch file to open the SARIF results file in the existing instance of Visual Studio. To view the SARIF results install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer). Refer to the instructions on that page for more information.
+
+3. In the driver project, navigate to project properties. In the  **Configuration** pull down, select the build configuration that you wish to check with CodeQL. For example for the *Release* configuration. Because creating the CodeQL database and running the queries takes a few minutes, you may decide to not run CodeQL on the Debug configurations of your project.
+
+4. Select **Build Events** and **Post-Build Event** in the driver project properties.
+
+5. Provide a path to the batch file and a description of the post build event.
+
+![Visual Studio post build event configuration showing a batch file configured as a command line option](images/codeql-visual-studio-post-build-event.png)
+
+6. When the project builds, at the end of the build output, the results from the running the batch file will be displayed.
+
+```command
+...
+
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.ql.
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.ql.
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.ql.
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.ql.
+1>[1/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.bqrs.
+1>[2/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.bqrs.
+1>[3/4 eval 4.5s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.bqrs.
+1>[4/4 eval 5.2s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.bqrs.
+1>Shutting down query evaluator.
+1>Interpreting results.
+1>">>> Loading SARIF Results in Visual Studio <<<"
+```
+
+7. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) earlier in this topic.

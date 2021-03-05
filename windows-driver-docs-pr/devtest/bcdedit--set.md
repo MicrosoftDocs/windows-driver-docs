@@ -1,7 +1,7 @@
 ---
 title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows.
-ms.date: 09/25/2020
+ms.date: 01/25/2021
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:
 - apiref
@@ -28,7 +28,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 ### Settings startup options
 
 > [!TIP]
-> To avoid the risk associated with using BCDEdit, consider using an alternative method to perform boot configuration
+> To avoid the risk associated with using BCDEdit, consider using an alternative method to perform boot configuration discussed in this section.
 
 ### Startup Settings
 
@@ -375,6 +375,10 @@ bcdedit /deletevalue groupsize
 ```
 
 Any change to a boot option requires a restart to take effect. For information about commonly used BCDEdit commands, see [Boot Configuration Data Editor Frequently Asked Questions](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc721886(v=ws.10)).
+
+## DTrace
+
+DTrace (DTrace.exe) is a command-line tool that displays system information and events. There is a bcedit option to enable dtrace. For information about the DTrace BCDEdit options available, see the installing section of [DTrace on Windows](./dtrace.md).
 
 ## Requirements
 

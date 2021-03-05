@@ -34,7 +34,35 @@ This topic provides guidelines to automate the testing of systems, devices, dock
 
 ## Hardware requirements
 
-To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx, you need:
+To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx Version 2, you need:
+
+- **System under test (SUT)**
+
+    Desktops, laptops, tablets, servers, or phones with at least one exposed Type-C USB port.
+
+- **USB Type-C ConnEx**
+
+    The device has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The device also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The device monitors amperage and voltage being drawn from the SUT. You can buy the necessary hardware from [MCCI](https://mcci.com/usb/dev-tools/3201-enhanced-type-c-connection-exerciser/).
+
+    ![USB Type-C ConnEx](images/newconnexc.jpg)
+
+- **Peripheral USB devices**
+
+    Any USB device with a USB Type-C port that can be attached to the SUT. This category includes traditional USB devices and other devices that support the accessory and alternate modes as defined in the USB Type-C specification.
+
+- **Micro-USB to USB A Cable**
+
+    You will use this cable to connect your USB Type-C ConnEx to a PC for power and communication (If your SUT has a USB A port, this is where you will connect it).
+
+- **Proxy controller**
+
+    The USB Type-C ConnEx can be controlled by using a proxy for running the tests if the SUT does not have a USB A port. The proxy controller should be a secondary desktop PC or a laptop.
+
+    The proxy controller communicates (with a mobile SUT) to the microcontroller to load the firmware by using a secondary USB port.
+
+## Hardware requirements for older versions
+
+To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx Version 2, you need:
 
 - **System under test (SUT)**
 
@@ -115,7 +143,33 @@ Here are the tools in MUTT software package that are specific to USB Type-C Conn
 
 For information about all other tools, see [Tools in the MUTT software package](mutt-software-package.md).
 
-## Get started
+## Get started with the newest version
+
+Follow this procedure to set up your test environment.
+
+(pic of new set-up)
+
+The configuration will be similar to this image. Note that the Micro-USB port on the device provides control over USB Type-C ConnEx when connected to a PC.
+
+In these steps, you will connect the hardware pieces, update the firmware on the microcontroller, and validate the installation.
+
+1. Plug the micro-usb into the back of the ConnEx and the USB A into the proxy controller (SUT if available).
+
+2. Update the device with the USB Type-C ConnEx firmware.
+
+    - Open an elevated Command Prompt window.
+    - Navigate to the location of the MUTT software package, such as C:\\Program Files (x86)\\USBTest\\*&lt;arch&gt;*.
+    - Run the following command:
+
+        **ConnExUtil.exe –UpdateFirmware**
+
+3. Plug in the SUT using the attached USB Type-C cable on the back of the device.
+
+4. Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
+
+5. Ensure that the device is recognized by the Device Manager on your proxy controller (SUT if available).
+
+## Get started with older versions
 
 Follow this procedure to set up your test environment.
 
@@ -194,115 +248,21 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
 Here are the command line options that ConnExUtil.exe supports for controlling the USB Type-C ConnEx board.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Use case</th>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device Discovery
-<p>List all devices connected to USB Type-C ConnEx</p></td>
-<td><strong>/list</strong></td>
-<td>For USB connected devices, this option lists the device instance path. For audio connected devices it shows <strong>Audio</strong>.
-<p>To view audio devices, use this in combination with the <strong>/all</strong> parameter. Lists with 1-based index that can be used for input to the <strong>/#</strong> parameter.</p></td>
-</tr>
-<tr class="even">
-<td>Device Selection
-<p>Select all devices connected to USB Type-C ConnEx, including audio.</p></td>
-<td><strong>/all</strong></td>
-<td>Optional.
-<p>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default.</p></td>
-</tr>
-<tr class="odd">
-<td>Device Selection
-<p>Select a specific device connected to USB Type-C ConnEx ‘n’.</p></td>
-<td><strong>/#</strong> <em>n</em></td>
-<td>(Optional)
-<p>Input <em>n</em> is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the <strong>/list</strong> parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards.</p></td>
-</tr>
-<tr class="even">
-<td>Device Command</td>
-<td><strong>/setPort</strong> <em>p</em></td>
-<td>Switch to the specified port <em>p</em>.
-<p>Connect a port either by specifying number (1 – 4) or by name (<strong>J2</strong>, <strong>J3</strong>, <strong>J4</strong>, <strong>J6</strong>).</p>
-<p>0 disconnects all ports.</p></td>
-</tr>
-<tr class="odd">
-<td>Device Command</td>
-<td><strong>/getPort</strong></td>
-<td>Read the currently connected port.</td>
-</tr>
-<tr class="even">
-<td>Device Command
-<p>Read amperage/voltage information</p></td>
-<td><p><strong>/volts</strong></p>
-<p><strong>/amps</strong></p>
-<p><strong>/version</strong></p></td>
-<td><p>Read the current voltage.</p>
-<p>Read the current amperage.</p>
-<p>Read the device version.</p></td>
-</tr>
-<tr class="odd">
-<td>Device Command
-<p>Enable SuperSpeed</p></td>
-<td><strong>/SuperSpeedOn</strong></td>
-<td>Enables SuperSpeed globally for current and future connections until a <strong>/SuperSpeedOff</strong> command is sent.
-<p>SuperSpeed is enabled by default.</p>
-<p>If SuperSpeed is disabled, and port 1 or 2 is connected, this command triggers a reconnect at SuperSpeed.</p></td>
-</tr>
-<tr class="even">
-<td>Device Command
-<p>Disable SuperSpeed</p></td>
-<td><strong>/SuperSpeedOff</strong></td>
-<td>Disables SuperSpeed globally for current and future connections until a <strong>/SuperSpeedOn</strong> command is sent or the device is reset.
-<p>If SuperSpeed is enabled and port 1 or 2 is connected, this command triggers a reconnect with SuperSpeed lines disabled.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Set command delay</p></td>
-<td><strong>/setDelay</strong> <em>t</em></td>
-<td>Sets command delay <em>t</em> in seconds.
-<p>Setting a command delay will cause the next <strong>/setPort</strong> or <strong>/SuperSpeed{On/Off}</strong> command to be delayed by <em>t</em> seconds where <strong>t</strong> ranges from 0 to 99. This is a one-time setting, only the next command is delayed. Sending multiple commands before the delay timer has expired is not supported.</p></td>
-</tr>
-<tr class="even">
-<td><p>Set disconnect timeout in milliseconds</p></td>
-<td><strong>/setDisconnectTimeout</strong> <em>t</em></td>
-<td>Set a disconnect timeout for the next non-zero <strong>/setPort</strong> command. On the next connect event, the port will only remain connected for <em>t</em> milliseconds before disconnecting. This is a one-time setting, only the next connect event will be automatically disconnected. Allowed range is from 0 – 9999 ms.</td>
-</tr>
-<tr class="odd">
-<td><p>Batch Command:</p>
-<p>Output power measurements to a .csv file.</p></td>
-<td><strong>/powercsv</strong></td>
-<td>Append the current power measurements and timestamp into power.csv The first run creates power.csv. On subsequent runs appends data to this file.
-<p>Rename or delete the file to start fresh data capture. Each run appends a line with the following format: <em>&lt;index&gt;,&lt;time&gt;,&lt;volts&gt;,&lt;amps&gt;</em>.</p>
-<p><em>index</em> is the device index given by <strong>/list</strong>, so multiple devices may be monitored simultaneously.</p>
-<p><em>time</em> is the raw timestamp in seconds.</p>
-<p><em>volts</em> and <em>amps</em> are recorded to two decimal places.</p>
-<p>This data may be captured over long periods of time and plotted in a spreadsheet application, see the cxpower.cmd script.</p></td>
-</tr>
-<tr class="even">
-<td><p>Batch Command:</p>
-Run unit test of major functionality</td>
-<td><strong>/test</strong></td>
-<td>Tests all the major functionality of the device. Use for basic validation of the functionality of the device. If this command fails, please power cycle the device and update the firmware.</td>
-</tr>
-<tr class="odd">
-<td><p>Batch Command:</p>
-Basic demo of the port switching sequence.</td>
-<td><strong>/demo d</strong></td>
-<td>Loop through all ports one time, with <em>d</em> second delay on each port
-<p>Writes the port number, volts and amps on each port into demoresult.txt.</p></td>
-</tr>
-</tbody>
-</table>
+| Use case | Option | Description |
+| --- | --- | --- |
+| **Device Discovery**</br>List all devices connected to USB Type-C ConnEx | **/list** | For USB connected devices, this option lists the device instance path. For audio connected devices it shows **Audio**.</br></br>To view audio devices, use this in combination with the **/all** parameter. Lists with 1-based index that can be used for input to the **/#** parameter. |
+| **Device Selection**</br>Select all devices connected to USB Type-C ConnEx, including audio. | **/all**  | Optional.</br></br>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default. |
+| **Device Selection**</br>Select a specific device connected to USB Type-C ConnEx ‘n’. | **/#** *n* | Optional.</br>Input *n* is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards. |
+| **Device Command** | **/setPort** *p* | Switch to the specified port *p*.</br></br>Connect a port either by specifying number (1 – 4) or by name (**J2**, **J3**, **J4**, **J6**).</br></br>0 disconnects all ports. |
+| **Device Command** | **/getPort** | Read the currently connected port. |
+| **Device Command** </br>Read amperage/voltage information. | **/volts**</br></br>**/amps**</br></br>**/version** | Read the current voltage.</br></br>Read the current amperage.</br></br>Read the device version. |
+| **Device Command**</br>Enable SuperSpeed. | **/SuperSpeedOn** | Enables SuperSpeed globally for current and future connections until a **/SuperSpeedOff** command is sent.</br></br>SuperSpeed is enabled by default.</br></br>If SuperSpeed is disabled, and port 1 or 2 is connected, this command triggers a reconnect at SuperSpeed. |
+| **Device Command**</br>Disable SuperSpeed | **/SuperSpeedOff** | Disables SuperSpeed globally for current and future connections until a **/SuperSpeedOn** command is sent or the device is reset.</br></br>If SuperSpeed is enabled and port 1 or 2 is connected, this command triggers a reconnect with SuperSpeed lines disabled. |
+| **Set command delay** | **/setDelay** | Sets command delay *t* in seconds.</br></br>Setting a command delay will cause the next **/setPort** or **/SuperSpeed{On/Off}** command to be delayed by *t* seconds where **t** ranges from 0 to 99. This is a one-time setting, only the next command is delayed. Sending multiple commands before the delay timer has expired is not supported. |
+| **Set disconnect timeout in milliseconds** | **/setDisconnectTimeout** *t* | Set a disconnect timeout for the next non-zero **/setPort** command. On the next connect event, the port will only remain connected for *t* milliseconds before disconnecting. This is a one-time setting, only the next connect event will be automatically disconnected. Allowed range is from 0 – 9999 ms. |
+| **Batch Command:**</br>Output power measurements to a .csv file. | **/powercsv** | Append the current power measurements and timestamp into power.csv The first run creates power.csv. On subsequent runs appends data to this file.</br></br>Rename or delete the file to start fresh data capture. Each run appends a line with the following format: *&lt;index&gt;,&lt;time&gt;,&lt;volts&gt;,&lt;amps&gt;*.</br></br>*index* is the device index given by **/list**, so multiple devices may be monitored simultaneously.</br></br>*time* is the raw timestamp in seconds.</br></br>*volts* and *amps* are recorded to two decimal places.</br></br>This data may be captured over long periods of time and plotted in a spreadsheet application, see the cxpower.cmd script. |
+| **Batch Command:**</br>Run unit test of major functionality | **/test** | Tests all the major functionality of the device. Use for basic validation of the functionality of the device. If this command fails, please power cycle the device and update the firmware. |
+| **Batch Command:**</br>Basic demo of the port switching sequence. | **/demo** *d* | Loop through all ports one time, with *d* second delay on each port.</br></br>Writes the port number, volts and amps on each port into demoresult.txt. |
 
 ### Sample Commands
 
@@ -339,21 +299,21 @@ do (
 
 These scripts exercise the control interface supported by ConnExUtil.exe to run sequential and stress type tests with the USB Type-C ConnEx through the command line. All of these scripts support the optional command line parameter **audio** to indicate that the USB Type-C ConnEx board is connected over the 3.5 mm audio interface. By default they will only attempt to use USB connected boards.
 
-### <a href="" id="cxloop"></a>Simple connect / disconnect sequence: CXLOOP.CMD
+### Simple connect / disconnect sequence: CXLOOP.CMD
 
 Connects and disconnects the SUT to and from each port (1-4) and pauses on each port prompting the tester to validate the connection on that port.
 
-### <a href="" id="cxstress"></a>Random connect / disconnect loop: CXSTRESS.CMD
+### Random connect / disconnect loop: CXSTRESS.CMD
 
 Connects and disconnects the SUT to and from each port at random for a random interval of 0.0-5.0 seconds in an infinite loop. When connecting to the USB Type-C ports it will randomly enable or disable SuperSpeed connection on that port, and will randomly instruct the board to disconnect quickly on that port at some random interval 0 – 999 ms.
 
 The command line parameter **C** causes the script to only switch between the USB Type-C ports and the disconnected state. A numeric command line parameter resets the maximum random interval between switches from the default of 5.0 seconds to the input value in seconds. Parameters may be passed in any order.
 
-### <a href="" id="cxpower"></a>Long running power measurement: CXPOWER.CMD
+### Long running power measurement: CXPOWER.CMD
 
 Saves the amperage and voltage reported by the USB Type-C ConnEx to output file power.csv at 2 second intervals. The data is formatted as comma-separated variables as follows:
 
-<em>index</em>**,**<em>time</em>**,**<em>volts</em>**,**<em>amps</em>
+**index**,**time**,**volts**,**amps**
 
 *index* is the device index given by the **ConnExUtil.exe /list** command so multiple devices may be monitored simultaneously.
 
@@ -369,24 +329,24 @@ The USB Type-C interoperability test procedures are divided into two sections: f
 
 These test cases are based on the ConnExUtil commands and example scripts [Scripts for controlling the USB Type-C ConnEx board](#scripts-for-controlling-the-usb-type-c-connex-board). The test cases refer to the scripts. Customize the scripts as required for your test scenario.
 
-<a href="" id="device-enumeration"></a>[Device Enumeration](#ft-case-1-device-enumeration)  
+[Device Enumeration](#ft-case-1-device-enumeration)  
 Confirms that core aspects of device enumeration are functional.
 
-<a href="" id="alternate-mode-negotiation"></a>[Alternate Mode Negotiation](#ft-case-2-alternate-mode-negotiation)  
+[Alternate Mode Negotiation](#ft-case-2-alternate-mode-negotiation)  
 Confirms supported alternate modes.
 
-<a href="" id="charging-and-power-delivery--pd-"></a>[Charging and power delivery (PD)](#ft-case-3-charging-and-power-delivery-pd)  
+[Charging and power delivery (PD)](#ft-case-3-charging-and-power-delivery-pd)  
 Confirms charging with USB Type-C.
 
-<a href="" id="role-swap"></a>[Role Swap](#ft-case-4-role-swap)  
+[Role Swap](#ft-case-4-role-swap)  
 Confirms role swap.
 
 The stress testing section describes procedures for stress and edge case scenarios, which test device stability over a period of time. Stress testing does require a custom device (the SuperMUTT) for legacy USB validation (non USB Type-C). Additional testing and automation can be achieved with the upcoming USB Type-C test device.
 
-<a href="" id="device-enumeration"></a>[Device Enumeration](#st-case-1-device-enumeration)  
+[Device Enumeration](#st-case-1-device-enumeration)  
 Confirms that core aspects of device enumeration are functional.
 
-<a href="" id="charging-and-power-delivery--pd-"></a>[Charging and power delivery (PD)](#st-case-2-charging-and-power-delivery-pd)  
+[Charging and power delivery (PD)](#st-case-2-charging-and-power-delivery-pd)  
 Confirms charging with USB Type-C.
 
 ## FT Case 1: Device Enumeration

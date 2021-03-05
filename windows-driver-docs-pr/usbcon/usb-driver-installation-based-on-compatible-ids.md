@@ -67,7 +67,7 @@ include=mdmcpq.inf
 AddReg=LowerFilterAddReg
 ```
 
-For more information, see [this KB article](https://support.microsoft.com/help/837637/how-to-use-or-to-reference-the-usbser-sys-driver-from-universal-serial/).
+For more information, see [How to use or reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](/troubleshoot/windows-client/deployment/how-to-use-reference-usbser-driver-universal-serial-bus).
 
 ## Configure selective suspend for Usbser.sys
 

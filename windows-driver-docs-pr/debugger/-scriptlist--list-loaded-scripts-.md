@@ -66,11 +66,7 @@ Command Loaded Scripts:
 
 **Requirements**
 
-Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
+Before using any of the .script commands, a scripting provider needs to be loaded.
 
 ## <span id="see_also"></span>See also
 

@@ -159,7 +159,7 @@ The original MBIM_CONTEXT_TYPES from MBIM 1.0 is still valid. Microsoft is addin
 | Type | Value | Description |
 | --- | --- | --- |
 | MBIMMsContextTypeAdmin | 5f7e4c2e-e80b-40a9-a239-f0abcfd11f4b | The context is used for administrative purposes such as device management. |
-| MBIMMSContextTypeApp | 74d88a3d-dfbd-4799-9a8c-7310a37bb2ee | The context is used for certain applications whitelisted by mobile operators. |
+| MBIMMSContextTypeApp | 74d88a3d-dfbd-4799-9a8c-7310a37bb2ee | The context is used for certain applications allowlisted by mobile operators. |
 | MBIMMsContextTypeXcap | 50d378a7-baa5-4a50-b872-3fe5bb463411 | The context is used for XCAP provisioning on IMS services. |
 | MBIMMsContextTypeTethering | 5e4e0601-48dc-4e2b-acb8-08b4016bbaac | The context is used for Mobile Hotspot tethering. |
 | MBIMMsContextTypeEmergencyCalling | 5f41adb8-204e-4d31-9da8-b3c970e360f2 | The context is used for IMS emergency calling. |

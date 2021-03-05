@@ -22,10 +22,10 @@ For more information about the generic button device, visit the [Unified Extensi
 
 ## Sample ACPI button device for Windows 10 Core OS editions
 
-Example for describing buttons in ACPI for device running Windows 10 Core OS.
+Example for describing buttons in [ACPI Source Language (ASL)](https://uefi.org/htmlspecs/ACPI_Spec_6_4_html/19_ASL_Reference/ACPI_Source_Language_Reference.html?highlight=acpi%20source%20language) for device running Windows 10 Core OS.
 
-```console
-// Sample Buttons in ACPI for Windows 10.
+```ASL
+// Sample Buttons in ACPI Source Language for Windows 10.
 
 Device(BTNS)
 {
@@ -115,9 +115,9 @@ Device(BTNS)
 
 ## Sample buttons in ACPI for device running Windows 10 desktop editions
 
-Example for describing buttons in ACPI for device running Windows 10 desktop editions (Home, Pro, Enterprise, and Education).
+Example for describing buttons in [ACPI Source Language (ASL)](https://uefi.org/htmlspecs/ACPI_Spec_6_4_html/19_ASL_Reference/ACPI_Source_Language_Reference.html?highlight=acpi%20source%20language) for device running Windows 10 desktop editions (Home, Pro, Enterprise, and Education).
 
-```console
+```ASL
 Device(BTNS)
 {
     Name(_HID, "ACPI0011")

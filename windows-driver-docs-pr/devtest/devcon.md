@@ -22,7 +22,7 @@ ms.localizationpriority: high
 # Windows Device Console (Devcon.exe)
 
 > [!NOTE]
-> Please use the PnPUtil tool instead of DevCon.
+> Please use the [PnPUtil](pnputil.md) tool instead of DevCon.
 > 
 
 
@@ -74,7 +74,7 @@ Windows driver developers and testers can use DevCon to verify that a driver is 
 
 DevCon is a command-line tool that performs device management functions on local computers and remote computers.
 
-**Note**  To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
+**Note**  To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run Windows 8 and later operating systems, the remote access is unavailable.
 
  
 
@@ -90,7 +90,7 @@ Devcon features include:
     -   Device status
     -   Expected driver stack
     -   Third-party driver packages in the driver store
--   **Search for devices** DevCon can search for installed and uninstalled devices on a local or remote computer by hardware ID, device instance ID, or device setup class.
+-   **Search for devices** DevCon can search for devices on a local or remote computer by hardware ID, device instance ID, or device setup class.
 
 -   **Change device settings** DevCon can change the status or configuration of Plug and Play (PnP) devices on the local computer in the following ways:
     -   Enable a device

@@ -12,8 +12,12 @@
     href: installing-a-bluetooth-device.md
   - name: "Bluetooth Registry Entries"
     href: bluetooth-registry-entries.md
+  - name: "Bluetooth Profile Driver Functions"
+    href: bluetooth-profile-driver-functions.md
 - name: "Bluetooth Low Energy Overview"
   href: bluetooth-low-energy-overview.md
+- name: "Bluetooth Low Energy Functions"
+  href: bluetooth-low-energy-functions.md
 - name: "Using the Bluetooth Driver Stack"
   items: 
   - name: "How to use the Bluetooth Driver Stack"
@@ -128,5 +132,12 @@
         href: testing-BTP-tests-audio-hid.md
       - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
+    - name: "BTP Diagnostic Tools"
+      items:
+      - name: "Bluetooth ETL Parse"
+        href: testing-BTP-tools-btetlparse.md
+      - name: "Bluetooth Virtual Sniffer"
+        href: testing-BTP-tools-btvs.md
 - name: "Bluetooth Radio Reset and Recovery"
   href: bluetooth-radio-error-recovery.md
+  

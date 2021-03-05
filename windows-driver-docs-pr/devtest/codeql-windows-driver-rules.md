@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Supplemental Windows Driver CodeQL Queries
 
-This section lists and describes a handful of [CodeQL queries](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql) that are included as part of the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) that are specific to driver development for the Windows platform.
+This section lists and describes a handful of [CodeQL queries](./static-tools-and-codeql.md) that are included as part of the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) that are specific to driver development for the Windows platform.
 
 ## List of Queries
 
@@ -41,10 +41,4 @@ This section lists and describes a handful of [CodeQL queries](https://docs.micr
  
 
  
-
- 
-
-
-
-
 

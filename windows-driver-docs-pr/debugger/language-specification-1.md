@@ -1,12 +1,16 @@
 ---
 title: Language Specification 1
 description: Language Specification 1
-ms.date: 11/28/2017
+ms.date: 01/27/2021
 ms.localizationpriority: medium
 ---
 
 # Language Specification 1
 
+>[!NOTE]
+> This topic describes the internal operation of SrcSrv. For general information about how source paths work, see [Source Path](source-path.md).
+> For information on using SrcSrv, see [Using SrcSrv](using-srcsrv.md). To determine the current operation of source loading in your environment, enable noisy source loading as described in [.srcnoisy (Noisy Source Loading)](-srcnoisy--noisy-source-loading-.md)
+>
 
 The first version of SrcSrv works as follows. (This behavior may change in future versions.)
 
