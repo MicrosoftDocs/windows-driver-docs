@@ -324,7 +324,7 @@ This page will be updated to indicate which queries are officially deemed **"Mus
 
 The queries that Microsoft recommends running on *all* driver source code are:
 
-| ID                       | Location   | Common Weakness Enumeration   |
+| ID                       | Location   | [Common Weakness Enumeration](https://cwe.mitre.org/)   |
 | ------------------------ | ---------- | ----------------------------- |
 | [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | N/A |
 | [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html) |
@@ -348,7 +348,7 @@ The queries that Microsoft recommends running on *all* driver source code are:
 | [cpp/use-after-free](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-useafterfree)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* | N/A |
 | [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* | N/A |
 
-These queries are a part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
+These queries are a part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  The "Common Weakness Enumeration" column specifies what kinds of security issues the given query searches for.
 
 ### Must-Fix Queries
 
@@ -476,7 +476,7 @@ Microsoft ships a stand-alone exe called dvl.exe which can be used to generate a
 
 ### Are all defects reported by CodeQL true defects?
 
-Every CodeQL query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
+Every CodeQL 	query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
 
 ### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
