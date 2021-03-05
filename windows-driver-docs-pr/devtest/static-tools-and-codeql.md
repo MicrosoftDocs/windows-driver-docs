@@ -476,10 +476,10 @@ Microsoft ships a stand-alone exe called dvl.exe which can be used to generate a
 
 ### Are all defects reported by CodeQL true defects?
 
-Each query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
+Every CodeQL query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
 
-### Feedback?	
+### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
-Send feedback to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
+Send all feedback to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
 
 
