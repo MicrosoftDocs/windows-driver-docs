@@ -445,7 +445,7 @@ SET ERRORLEVEL = 0
 
 ### When will this be required for device certification?
 
-See WHCP requirements for further details for when this requirement take effect.
+See the latest WHCP requirements for further details for when this requirement takes effect.
 
 ### What is the motivation behind requiring CodeQL be run on driver source code?
 
@@ -466,9 +466,9 @@ CodeQL **does not require MSBuild or Visual Studio to be used**. See [supported 
 
 The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the Static Tools Logo Test can be found on its [MS Docs page](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
-### Can I run the DVL generation on [Visual Studio solutions](link needed)? 
+### Can I run the DVL generation on Visual Studio solutions? 
 
-No, DVL generation must be run at the project level and cannot be run on Visual Stuido solutions.
+No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](https://docs.microsoft.com/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).
 
 ### Can I run DVL generation without msbuild or Visual Studio?
 
