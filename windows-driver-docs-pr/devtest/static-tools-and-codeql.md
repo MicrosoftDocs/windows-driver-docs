@@ -348,7 +348,7 @@ The queries that Microsoft recommends running on *all* driver source code are:
 | [cpp/use-after-free](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-useafterfree)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* | N/A |
 | [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* | N/A |
 
-These queries are a part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  The "Common Weakness Enumeration" column specifies what kinds of security issues the given query searches for.
+These queries are a part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  The "Common Weakness Enumeration" (CWE) column specifies what kinds of security issues the given query searches for.  See [Mitre's page on CWE](https://cwe.mitre.org/) for more details around CWE's. 
 
 ### Must-Fix Queries
 
