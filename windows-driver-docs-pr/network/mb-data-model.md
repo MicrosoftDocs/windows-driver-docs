@@ -16,7 +16,7 @@ The following tables list the OIDs and status indications defined for MB minipor
 
 In addition, MB miniport drivers must implement OID\_GEN\_PHYSICAL\_MEDIUM even though the NDIS Specification describes it as optional to implement.
 
-The syntax and semantics of the MB OIDs listed in the following table are described in [MB Operational Semantics](mb-operational-semantics.md). The interactions between the MB Service and the MB miniport driver are described in [MB Operation Flowcharts](mb-operation-flowcharts.md).
+The syntax and semantics of the MB OIDs listed in the following table are described in [MB Operational Semantics](mb-operational-semantics.md).
 
 ## WWAN-Specific OIDs
 
