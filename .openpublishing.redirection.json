@@ -31,11 +31,6 @@
             "redirect_document_id":  false
         },
         {
-            "source_path":  "windows-driver-docs-pr/network/mb-pin-operations.md",
-            "redirect_URL":  "/windows-hardware/drivers/network/cellular-architecture-and-driver-model",
-            "redirect_document_id":  false
-        },
-        {
             "source_path":  "windows-driver-docs-pr/network/mb-operation-flowcharts.md",
             "redirect_URL":  "/windows-hardware/drivers/network/cellular-architecture-and-driver-model",
             "redirect_document_id":  false
