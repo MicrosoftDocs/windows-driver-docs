@@ -82,8 +82,8 @@ an MBIM_PIN_LIST_INFO.
 
 | Offset | Size | Field | Type | Description | 
 |---|---|---|---|---|
-| 0 | 4 | PinMode      | MBIM_PIN_MODE | See above table [MBIM_PIN_MODE](#MBIM_PIN_MODE). This shows if the lock is enabled or not. It does not show if the lock state is locked or unlocked. |
-| 4 | 4 | PinFormat    | MBIM_PIN_FORMAT | See above table [MBIM_PIN_FORMAT](#MBIM_PIN_FORMAT). |
+| 0 | 4 | PinMode      | MBIM_PIN_MODE | See above table [MBIM_PIN_MODE](#mbim_pin_mode). This shows if the lock is enabled or not. It does not show if the lock state is locked or unlocked. |
+| 4 | 4 | PinFormat    | MBIM_PIN_FORMAT | See above table [MBIM_PIN_FORMAT](#mbim_pin_format). |
 | 8 | 4 | PinLengthMin | UINT32 | The minimum number of characters in the PIN. Devices should not specify a value that is greater than 16. Devices should specify 0xffffffff, if the PIN length is not available. |
 | 12| 4 | PinLengthMax | UINT32 | The maximum number of characters in the PIN. Devices should not specify a value that is greater than 16. Devices should specify 0xffffffff, if the PIN length is not available. |
 
@@ -175,7 +175,7 @@ Pin List:
 ```
 
 ## WinRT API
-[MobileBroadbandPin Class](/uwp/api/windows.networking.networkoperators.mobilebroadbandpin?view=winrt-18362)
+[MobileBroadbandPin Class](/uwp/api/windows.networking.networkoperators.mobilebroadbandpin?view=winrt-18362&preserve-view=true)
 
 ## See Also
 
@@ -185,4 +185,4 @@ Pin List:
 
 [MB UICC application and file system access](/windows-hardware/drivers/network/mb-uicc-application-and-file-system-access)
 
-For additional information about PIN operations, see [OID\_WWAN\_PIN](.id-wwan-pin.md).
+For additional information about PIN operations, see [OID\_WWAN\_PIN](oid-wwan-pin.md).
