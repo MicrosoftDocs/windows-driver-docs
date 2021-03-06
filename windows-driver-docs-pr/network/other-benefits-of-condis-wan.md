@@ -21,7 +21,7 @@ In addition to flexibility and simplicity, the CoNDIS WAN model provides the fol
 
 -   CoNDIS WAN supports multipoint calls. For more information about making multipoint calls, see [Making a Call](making-a-call.md).
 
--   CoNDIS WAN supports quality of service (QoS). CoNDIS WAN drivers use the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure. For more information about CoNDIS QoS, see [Client-Initiated Request to Change Call Parameters](client-initiated-request-to-change-call-parameters.md).
+-   CoNDIS WAN supports quality of service (QoS). CoNDIS WAN drivers use the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure. For more information about CoNDIS QoS, see [Client-Initiated Request to Change Call Parameters](client-initiated-request-to-change-call-parameters.md).
 
 -   Only CoNDIS WAN will support future NDIS enhancements that apply to WAN drivers.
 

@@ -5166,6 +5166,20 @@
       href: oid-qos-current-capabilities.md
     - name: "OID_QOS_HARDWARE_CAPABILITIES"
       href: oid-qos-hardware-capabilities.md
+    - name: "OID_QOS_OFFLOAD_CREATE_SQ"
+      href: oid-qos-offload-create-sq.md
+    - name: "OID_QOS_OFFLOAD_CURRENT_CAPABILITIES"
+      href: oid-qos-offload-current-capabilities.md
+    - name: "OID_QOS_OFFLOAD_DELETE_SQ"
+      href: oid-qos-offload-delete-sq.md
+    - name: "OID_QOS_OFFLOAD_ENUM_SQS"
+      href: oid-qos-offload-enum-sqs.md
+    - name: "OID_QOS_OFFLOAD_HARDWARE_CAPABILITIES"
+      href: oid-qos-offload-hardware-capabilities.md
+    - name: "OID_QOS_OFFLOAD_SQ_STATS"
+      href: oid-qos-offload-sq-stats.md
+    - name: "OID_QOS_OFFLOAD_UPDATE_SQ"
+      href: oid-qos-offload-update-sq.md
     - name: "OID_QOS_OPERATIONAL_PARAMETERS"
       href: oid-qos-operational-parameters.md
     - name: "OID_QOS_PARAMETERS"

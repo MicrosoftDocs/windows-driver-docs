@@ -177,7 +177,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00000020</p>
 </td>
 <td>
-<p>Indicates that the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver is an IP packet fragment.</p>
+<p>Indicates that the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver is an IP packet fragment.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V4</dd>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V6</dd>
@@ -193,7 +193,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00000040</p>
 </td>
 <td>
-<p>Indicates that the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver describes a linked list of packet
+<p>Indicates that the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver describes a linked list of packet
        fragments.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V4</dd>

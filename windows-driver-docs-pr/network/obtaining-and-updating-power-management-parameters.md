@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-Protocol drivers can use the [OID\_PM\_PARAMETERS](./oid-pm-parameters.md) OID to query the hardware capabilities of a network adapter that is currently enabled. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
+Protocol drivers can use the [OID\_PM\_PARAMETERS](./oid-pm-parameters.md) OID to query the hardware capabilities of a network adapter that is currently enabled. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
 Protocol drivers can also use OID\_PM\_PARAMETERS as a set request to enable or disable the current hardware capabilities of a network adapter. The protocol driver provides a pointer to an NDIS\_PM\_PARAMETERS structure in the **InformationBuffer** member of the NDIS\_OID\_REQUEST structure.
 

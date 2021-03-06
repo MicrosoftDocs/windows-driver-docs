@@ -34,7 +34,7 @@ On behalf of a filter module that is in the *Restarting* state, the filter drive
 
 - Should not initiate any new receive indications.
 
-- Should reject all new send requests made to its [*FilterSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists) function immediately by calling the [**NdisFSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlistscomplete) function. It should set the complete status in each [NET\_BUFFER\_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) to NDIS\_STATUS\_PAUSED.
+- Should reject all new send requests made to its [*FilterSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists) function immediately by calling the [**NdisFSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlistscomplete) function. It should set the complete status in each [NET\_BUFFER\_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) to NDIS\_STATUS\_PAUSED.
 
 - Can provide status indications with the [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) function.
 

@@ -24,7 +24,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
      
 
-After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure. This structure contains the configuration parameters for the specified VF.
+After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure. This structure contains the configuration parameters for the specified VF.
 
 NDIS handles the [OID\_NIC\_SWITCH\_VF\_PARAMETERS](./oid-nic-switch-vf-parameters.md) request for miniport drivers. NDIS returns the information from an internal cache of the data that it maintains from inspecting the following sources:
 

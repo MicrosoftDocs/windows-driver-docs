@@ -20,15 +20,15 @@ The following points apply to packets that are sent or received on a VPort that 
 
      
 
--   The PF miniport driver calls [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) to indicate packets received from a VPort. Before the PF miniport driver calls **NdisMIndicateReceiveNetBufferLists**, it must set the VPort identifier in the out-of-band (OOB) data in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure for the packet. The driver does this by using the [**NET\_BUFFER\_LIST\_RECEIVE\_FILTER\_VPORT\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_filter_vport_id) macro.
+-   The PF miniport driver calls [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) to indicate packets received from a VPort. Before the PF miniport driver calls **NdisMIndicateReceiveNetBufferLists**, it must set the VPort identifier in the out-of-band (OOB) data in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for the packet. The driver does this by using the [**NET\_BUFFER\_LIST\_RECEIVE\_FILTER\_VPORT\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_filter_vport_id) macro.
 
--   The virtualization stack calls [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) to transmit packets to a VPort. Before the virtualization stack calls **NdisSendNetBufferLists**, it sets the VPort identifier in the OOB data in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure for the packet.
+-   The virtualization stack calls [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) to transmit packets to a VPort. Before the virtualization stack calls **NdisSendNetBufferLists**, it sets the VPort identifier in the OOB data in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for the packet.
 
     The miniport driver obtains the VPort identifier by using the [**NET\_BUFFER\_LIST\_RECEIVE\_FILTER\_VPORT\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_filter_vport_id) macro.
 
     The miniport driver must queue the transmit packet on the hardware transmit queue of the specified VPort.
 
-**Note**  The miniport driver for the PCIe Virtual Function (VF) does not set or query the VPort identifier in the OOB data of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure for a packet. When the VF miniport driver sends a packet, it queues the packet on the hardware transmit queue for the single nondefault VPort that is attached to the VF.
+**Note**  The miniport driver for the PCIe Virtual Function (VF) does not set or query the VPort identifier in the OOB data of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for a packet. When the VF miniport driver sends a packet, it queues the packet on the hardware transmit queue for the single nondefault VPort that is attached to the VF.
 
  
 

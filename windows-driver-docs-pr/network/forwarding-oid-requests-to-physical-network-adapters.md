@@ -65,9 +65,9 @@ A filtering or capturing extension can originate its own encapsulated OID query 
 
 The forwarding extension must follow these steps when it forwards, redirects, or originates an encapsulated OID request for an underlying physical adapter:
 
-1.  If the forwarding extension is originating an OID request, it must initialize an extension-allocated [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure with the information related to the request.
+1.  If the forwarding extension is originating an OID request, it must initialize an extension-allocated [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure with the information related to the request.
 
-    If the extension is forwarding an OID request, it must not change the existing [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure referenced by the *OidRequest* parameter of the [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request) function. Instead, the extension must call [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest) to allocate memory for a new **NDIS\_OID\_REQUEST** structure and copy all the information from the existing **NDIS\_OID\_REQUEST** structure.
+    If the extension is forwarding an OID request, it must not change the existing [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure referenced by the *OidRequest* parameter of the [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request) function. Instead, the extension must call [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest) to allocate memory for a new **NDIS\_OID\_REQUEST** structure and copy all the information from the existing **NDIS\_OID\_REQUEST** structure.
 
 2.  The extension sets the members of an extension-allocated [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure to the following values:
 
@@ -83,9 +83,9 @@ The forwarding extension must follow these steps when it forwards, redirects, or
 
         If the forwarding extension is forwarding or redirecting a hardware offload OID request, it must retain the values of the **SourcePortId** and **SourceNicIndex** members that were set by the extensible switch interface.
 
-    -   The **OidRequest** member must be set to a pointer to an initialized [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the encapsulated OID request. The forwarding extension either allocates and initializes this structure or uses the cloned copy of the structure.
+    -   The **OidRequest** member must be set to a pointer to an initialized [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the encapsulated OID request. The forwarding extension either allocates and initializes this structure or uses the cloned copy of the structure.
 
-3.  The extension sets the members of an extension-allocated [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the following values:
+3.  The extension sets the members of an extension-allocated [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to the following values:
 
     -   The **Oid** member must be set to [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md).
 
@@ -93,7 +93,7 @@ The forwarding extension must follow these steps when it forwards, redirects, or
 
     -   The **InformationBufferLength** member must contain the length, in bytes, of the buffer that contains the generated or filtered OID request data.
 
-    The extension sets the other members to values that are valid for the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure.
+    The extension sets the other members to values that are valid for the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
 4.  The extension calls [*ReferenceSwitchNic*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the index of the destination physical network adapter. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
 

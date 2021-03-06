@@ -16,12 +16,12 @@ NDIS 6.30 (Windows Server 2012) introduces [Network Virtualization using Generi
 
 If [**NDIS\_TCP\_SEND\_OFFLOADS\_SUPPLEMENTAL\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_send_offloads_supplemental_net_buffer_list_info).**IsEncapsulatedPacket** is **TRUE** and the **TcpIpChecksumNetBufferListInfo** out-of-band (OOB) information is valid, this indicates that NVGRE support is required and the NIC must perform LSOV2 offload on the NVGRE-formatted packet, with the following conditions:
 
--   Only the values in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit** structure are valid. The NIC and miniport driver must not refer to the values in the **NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**.**LsoV1Transmit** structure.
--   The [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit**.**TcpHeaderOffset** member does not have the correct offset value and must not be used by the NIC or miniport driver.
+-   Only the values in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit** structure are valid. The NIC and miniport driver must not refer to the values in the **NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**.**LsoV1Transmit** structure.
+-   The [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit**.**TcpHeaderOffset** member does not have the correct offset value and must not be used by the NIC or miniport driver.
 
 To support NVGRE in LSOV2, protocol and filter drivers must make the following changes:
 
--   Reduce the **MSS** value in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit** structure to account for the new GRE header.
+-   Reduce the **MSS** value in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit** structure to account for the new GRE header.
 -   Send down a TCP payload length that may not be an exact multiple of the reduced **MSS** value.
 -   Adjust the **InnerFrameOffset**, **TransportIpHeaderRelativeOffset**, and **TcpHeaderRelativeOffset** values in the [**NDIS\_TCP\_SEND\_OFFLOADS\_SUPPLEMENTAL\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_send_offloads_supplemental_net_buffer_list_info) structure to account for the GRE header.
 
@@ -29,7 +29,7 @@ NICs and miniport drivers may use the **InnerFrameOffset**, **TransportIpHeaderR
 
 Miniport drivers must handle the case where [**NDIS\_TCP\_SEND\_OFFLOADS\_SUPPLEMENTAL\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_send_offloads_supplemental_net_buffer_list_info).**InnerFrameOffset** may be in a different scatter-gather list than the beginning of the packet. The protocol driver will guarantee that all the prepended encapsulation headers (ETH, IP, GRE) will be physically contiguous and will be in the first MDL of the packet.
 
-Protocol and filter drivers do not ensure that the total TCP payload length is an exact multiple of the reduced **MSS** value. For this reason, miniport drivers and NICs must update the tunnel (outer) IP header. NICs must generate as many full-sized segments as possible based on the reduced **MSS** value in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit** OOB information. Only one sub-**MSS** segment may be generated per LSOv2 send.
+Protocol and filter drivers do not ensure that the total TCP payload length is an exact multiple of the reduced **MSS** value. For this reason, miniport drivers and NICs must update the tunnel (outer) IP header. NICs must generate as many full-sized segments as possible based on the reduced **MSS** value in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info).**LsoV2Transmit** OOB information. Only one sub-**MSS** segment may be generated per LSOv2 send.
 
 Miniport drivers must do the following:
 

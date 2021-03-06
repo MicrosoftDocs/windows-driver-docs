@@ -207,4 +207,4 @@ If this flag combination is set, the NIC should perform the hash calculations as
 > [!NOTE]
 > If a miniport driver reports NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX and/or NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX capability for a NIC, the NIC must calculate hash values (over fields in the IPv6 extension headers) in accordance with the IPv6 extension hash types that the protocol driver set. The NIC can store either the extension hash type or the regular hash type in the NET_BUFFER_LIST structure of the IPv6 packet for which a hash value is computed.
 
-A miniport driver sets the hash type in a [**NET_BUFFER_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure before indicating the received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
+A miniport driver sets the hash type in a [**NET_BUFFER_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure before indicating the received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).

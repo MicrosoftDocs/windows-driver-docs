@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The NDIS 6.0 send and receive paths have been improved as follows to enhance performance:
 
--   All of the NDIS 6.0 and later driver send and receive functions can transfer a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures and their associated [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures with a single function call. This support for true multipacket send and receive operations substantially reduces the number of function calls that drivers must make.
+-   All of the NDIS 6.0 and later driver send and receive functions can transfer a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures and their associated [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures with a single function call. This support for true multipacket send and receive operations substantially reduces the number of function calls that drivers must make.
 
 -   When calling a send or receive function, a driver running at DISPATCH\_LEVEL can indicate its IRQL to NDIS. When NDIS subsequently makes calls to other drivers in the stack, it is not necessary for these drivers to test the IRQL or set it to DISPATCH\_LEVEL. This reduces the overhead that is associated with testing and setting the IRQL in critical code sections.
 
