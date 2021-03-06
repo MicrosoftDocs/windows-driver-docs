@@ -95,9 +95,8 @@ It is expected that the firmware patch is carried over APDUs. Because the Smart 
 
 To prevent from opening channels against random UICC apps, the ISO UMDF driver will permit app IDs that are required for an update and restrict access to only these apps. The card vendor helps identify the app IDs and the OEM adds the IDs as registry entries. It is also expected that the UICC app in the card will perform digital signature checks on the firmware to protect against malicious apps sending data.
 
-|***Registry Path***|***Value Name***|***Type***|
-|---|---|---|
-|HKLM\Software\Microsoft\Cellular\MVSettings\DeviceSpecific\eSIM\FwUpdate|AllowedAppIdList|REG_MULTI_SZ|
+##### COSA Setting
+<code>CellCore/PerDevice/eSIM/FwUpdate/AllowedAppIdList</code>
 
 During a full firmware OS update it is important that the UICC apps that are involved are not accessed by the modem. To achieve this the TRC Image Update Agent will send a special APDU that instructs the eUICC to go in to the TRC/PBL mode. The TRC app will then ask the modem to go into the passthrough mode and reset the card. The card will boot as an empty MF. Once the update is done, the modem will be asked to reset the card again. This time both the modem and the card will get back to normal mode.
 
