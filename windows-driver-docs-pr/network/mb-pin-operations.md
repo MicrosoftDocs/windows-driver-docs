@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic describes the operations related to access control of subscription information stored either in the MB device memory or on the Subscriber Identity Module (SIM card). This includes enabling, disabling, or changing the Personal Identification Number (PIN), as well as unlocking via PIN or Personal Unlocking Key (PUK). 
+This topic describes the operations related to access control of subscription information stored either in the MB device memory or on the Subscriber Identity Module (SIM) card. This includes enabling, disabling, or changing the Personal Identification Number (PIN), as well as unlocking via PIN or Personal Unlocking Key (PUK). 
 
 ## Architecture/Flows
 User actions to enable/disable/unlock/change PIN
