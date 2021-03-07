@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died. A critical process is one that forces the system to bug check if it terminates. This can happen when the state of the process is corrupted or otherwise is damaged. When this happens, as these processes are critical to the operation of Windows, a system bug check occurs as the operating system integrity is in question. 
 
-Built in Windows critical system services include csrss.exe, wininit.exe, logonui.exe, smss.exe, services.exe, conhost.exe, and winlogon.exe.
+Built in Windows critical system services include csrss.exe, wininit.exe, smss.exe, and services.exe.
 
 A developer can also create a service and set its recovery option to Restart the Computer, for more information see [Set up Recovery Actions to Take Place When a Service Fails](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
 
