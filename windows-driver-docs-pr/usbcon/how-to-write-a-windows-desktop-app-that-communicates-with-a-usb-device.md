@@ -158,7 +158,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
         ![winusb application template](images/winusb-template3.png)
 
         **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
-  3. Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section.
+  3. Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section. **Note** If you see the error `DriverVer set to a date in the future`, set **INF Package project settings > Inf2Cat > General > Use Local Time > Yes**.
   4. Select and hold (or right-click) the **USB Application1** project, in project properties expand the **Configuration Properties** node and select **Debugging**.
   5. Change **Debugger to launch** to **Local Windows Debugger**.
   6. Select and hold (or right-click) the USB Application1 Package project, and select **Unload Project**.
