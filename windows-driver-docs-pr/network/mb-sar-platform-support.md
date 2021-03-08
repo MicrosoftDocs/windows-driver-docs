@@ -247,7 +247,7 @@ This test contains the following tests:
 
 ## WinRT API
 
-[MobileBroadbandSarManager](https://docs.microsoft.com/en-us/uwp/api/windows.networking.networkoperators.mobilebroadbandsarmanager)
+[MobileBroadbandSarManager](/uwp/api/windows.networking.networkoperators.mobilebroadbandsarmanager)
 
 ## Log Analysis
 
