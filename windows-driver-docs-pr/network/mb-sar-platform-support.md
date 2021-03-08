@@ -245,6 +245,10 @@ This test contains the following tests:
 | QuerySarTransmissionStatus | This test verifies the test can successfully query SAR transmission status. |
 | SetSarTransmissionStatus | This test verifies the test can successfully set SAR transmission status. |
 
+## WinRT API
+
+[MobileBroadbandSarManager](/uwp/api/windows.networking.networkoperators.mobilebroadbandsarmanager)
+
 ## Log Analysis
 
 Logs can be collected and decoded using these instructions: [MB Collecting Logs](mb-collecting-logs.md).
@@ -256,20 +260,19 @@ Logs can be collected and decoded using these instructions: [MB Collecting Logs]
 Keywords for filtering:
 
 1. SarConfig
-1. CWwanSar::OnNdisNotification
-1. LoadSemiStaticOEMSARTable
-1. AttemptAutoConfigureSAR
-1. PreCheckSemiStaticOEMSARTable
-1. WwanIntfOpcodeSarConfig
-1. WwanIntfOpcodeSarTransmissionStatus
-1. WwanMsmEventTypeSarConfig
-1. WwanMsmEventTypeSarTransmissionStatus
-	
+2. CWwanSar::OnNdisNotification
+3. LoadSemiStaticOEMSARTable
+4. AttemptAutoConfigureSAR
+5. PreCheckSemiStaticOEMSARTable
+6. WwanIntfOpcodeSarConfig
+7. WwanIntfOpcodeSarTransmissionStatus
+8. WwanMsmEventTypeSarConfig
+9. WwanMsmEventTypeSarTransmissionStatus
+
 **MobileBroadband WinRT WPP (56dd9c57-06cc-48ba-b123-876a6495ba13)**
 
-Keywords for filtering:
+Keywords for filtering: MobileBroadbandSarManager
 
-1. MobileBroadbandSarManage
 
 **WwanProtDIM (3a07e1ba-3a6b-49bf-8056-c105b54dd7fb)**
 
