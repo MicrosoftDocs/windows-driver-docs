@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/usbcon/link-power-management-in-usb-3-0-hardware.md",
+            "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-3-0-lpm-mechanism-",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/mb-5g-data-class-support.md",
             "redirect_URL":  "/windows-hardware/drivers/network/mb-5g-operations-overview",
             "redirect_document_id":  false
