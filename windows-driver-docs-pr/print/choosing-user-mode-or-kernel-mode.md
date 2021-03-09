@@ -245,7 +245,7 @@ To develop a new printer graphics DLL that executes in user mode, you can contin
 
 <!-- -->
 
--   For functions that create or modify a drawing service, new drivers must continue to call [GDI support services](../display/gdi-support-services.md) and not their Win32 equivalents.
+-   For functions that create or modify a drawing surface, new drivers must continue to call [GDI support services](../display/gdi-support-services.md) and not their Win32 equivalents.
 
 -   Instead of using graphics DDI functions for [GDI Floating-Point Services](../display/gdi-floating-point-services.md), you can use the FLOAT data type.
 
