@@ -52,13 +52,7 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for creating a new submission for a product. For more details about the values in the response body, see the following section.
-
-```json
-{
-  "commitStatus": "CommitPending",
-}
-```
+A successful request for creating a new submission for a product returns a string.
 
 ### Response body
 
