@@ -10,7 +10,8 @@ ms.custom: 19H1
 
 # MB modem logging with DSS
 
-## Overview
+> [!NOTE]
+> If you are planning for your modem to support `MBIM_CID_MODEM_LOGGING_CONFIG`, please provide feedback on this page so that we can best support you. This CID is currently experimental and has not been tested with a modem yet, as none support it.
 
 This topic describes a new standard Windows mobile broadband (MBB) logging interface through Microsoft extensions to the USB MBIM 1.0 specification, available in Windows 10, version 1903 and later. 
 
@@ -30,6 +31,8 @@ This new logging interface's design uses the control channel to set the logging 
 2. Once the OS receives a successful response from the modem, it sends the MBIM_CID_DSS_CONNECT DSS command to the modem with a specific GUID for modem logging, the MBIMDssLinkActivate state, and a unique DSS session ID.
 3. Once it receives a success status code, the OS prepares to receive fragments from the modem. These fragments are called DataServiceSessionRead packets.
 4. DataServiceSessionRead packets continue to arrive until the OS issues another MBIM_CID_DSS_CONNECT command with the same DSS session ID and an MBIMDSSLinkDeactivate state.
+
+Once the modem writes any logs to the newly created data channel, the modem calls [**MbbDeviceReceiveDeviceServiceSessionData**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdevicereceivedeviceservicesessiondata), the data from which is available to apps via the WinRT layer : [**MobileBroadbandDeviceService**](/uwp/api/windows.networking.networkoperators.mobilebroadbanddeviceservice). The modem logs should be formatted as printable string data that can be redirected to an ETW session.
 
 ## Modem logging data path
 
