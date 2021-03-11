@@ -33,17 +33,15 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 1. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
 
-2. After the BTP software package is installed the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) installation files (*.msi and *.cab files) are located in the `C:\BTP\<version>\TAEF` directory.
+2. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
 
-3. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
+3. Ensure BitLocker is **disabled**.
 
-4. Ensure BitLocker is **disabled**.
+4. Ensure the Traduci board is plugged into the SUT.
 
-5. Ensure the Traduci board is plugged into the SUT.
+5. From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
 
-6. From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
-
-7. Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
+6. Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
 
 ## Known issues
 
