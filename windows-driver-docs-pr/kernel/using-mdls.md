@@ -31,7 +31,7 @@ For pageable memory, the correspondence between virtual and physical memory is t
 
 The [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md) routine maps the physical pages that are described by the specified MDL to a virtual address in system address space, if they are not already mapped to system address space. This virtual address is useful for drivers that might have to look at the pages to perform I/O, because the original virtual address might be a user address that can be used only in its original context and can be deleted at any time.
 
-Note that when you build a partial MDL by using the [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) routine that **MmGetMdlVirtualAddress** returns the original starting address for the source MDL. This address is a user-mode address if the MDL was originally created as a result of a user-mode request. As such, the address has no relevance outside of the context of the process where the request originated.
+Note that when you build a partial MDL by using the [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) routine that **MmGetMdlVirtualAddress** returns the original starting address for the partial MDL. This address is a user-mode address if the MDL was originally created as a result of a user-mode request. As such, the address has no relevance outside of the context of the process where the request originated.
 
 Typically, a driver instead creates a *system* mode address by calling the [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/kernel/mm-bad-pointer) macro to map the partial MDL. This ensures that the driver can continue to access the pages safely regardless of  process context.
 
