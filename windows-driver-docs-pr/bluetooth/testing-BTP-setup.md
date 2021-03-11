@@ -31,21 +31,19 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 ## Software Setup
 
-1. Download the [Windows Driver Kit](../download-the-wdk.md).
+1. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
 
-2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\10\Testing\Runtimes` directory.
+2. After the BTP software package is installed the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) installation files (*.msi and *.cab files) are located in the `C:\BTP\<version>\TAEF` directory.
 
-3. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
+3. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
 
-4. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
+4. Ensure BitLocker is **disabled**.
 
-5. Ensure BitLocker is **disabled**.
+5. Ensure the Traduci board is plugged into the SUT.
 
-6. Ensure the Traduci board is plugged into the SUT.
+6. From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
 
-7. From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
-
-8. Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
+7. Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
 
 ## Known issues
 

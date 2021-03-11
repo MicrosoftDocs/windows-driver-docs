@@ -20,6 +20,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 | Version | Changes |
 |---------|---------|
+|1.6.0     | - No longer require a WDK installation to run BTP tests.</br>- Added quick keystroke HID tests to more easily catch key repeats and other performance issues.</br>- Added quick keystroke and mouse movement after idle HID tests that are useful for loop execution.</br>- Added reconnection latency measurement to HID tests.</br>- Several fixes and improvements to test reliability. |
 |1.5.1     | - Added BTVS and BTETLParse diagnostic tools.</br>- Several fixes and improvements to test reliability. |
 |1.4.0     | - Added keyboard latency test to HID tests.</br> - Added mouse tests to HID tests.</br> - Added audio + HID scenario tests. </br> - Added battery tests.</br> - Fixed issue causing tests to fail to load when running in older Windows releases.</br> - Fixed scripts that failed when running on non-native CMD/PowerShell environments.</br> - Several fixes and improvements to test reliability. |
 |1.3.1     | -  Added audio tests capable of exercising A2DP and HFP.</br> - Added audio volume validation and glitch detection via an FPGA on the Traduci.</br> - Renamed tests to shorter and more user friendly names.</br> - Several fixes and improvements to test reliability. |
@@ -45,6 +46,7 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 
 | Test Tool | Description | Filename |
 | --- | --- | --- |
+| TAEF | - [Test Authoring and Execution Framework (TAEF) - Windows drivers \| Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/) | C:\BTP\\\<version\>\TAEF |
 | BtpDevicePlugin | - Binary needed to support tests that use a local Windows Bluetooth radio. | Microsoft.Bluetooth.TestPlatform.BtpDevicePlugin.dll |
 | GenericSerialIO | - Binary needed to support BTP devices that use Windows serial communication. | Microsoft.Bluetooth.TestPlatform.GenericSerialIO.dll |
 | HidTests | - Test binary for Bluetooth HID tests.</br> - Can be run using TAEF or via the provided scripts. | TaefHidTests.dll |
