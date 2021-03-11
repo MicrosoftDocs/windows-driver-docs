@@ -33,6 +33,8 @@ The productId in the method is the product for which the submission is intended.
 | Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
 | accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
+In the headers, set `Content-Length: 0` and `Content-type: application/json`.
+
 ### Request parameters
 
 Do not provide request parameters for this method.
@@ -52,7 +54,7 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-A successful request for creating a new submission for a product returns a string.
+A successful request for creating a new submission for a product returns an empty 202 response.
 
 ### Response body
 

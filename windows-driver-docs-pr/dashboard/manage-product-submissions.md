@@ -68,7 +68,7 @@ The following C# code example demonstrates how to upload a package to Azure Blob
     https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}
     ```
 
-    To confirm the submission status, review the [Workflow Status object](/windows-hardware/drivers/dashboard/get-product-data#workflow-status-object).
+    To confirm the submission status, review the **commitStatus** value in the response body. This value should change from **CommitReceived** to **CommitComplete** if the request succeeds or to **CommitFailed** if there are errors in the request. If there are errors, the *error* field contains further details about the error.
 
    >[!NOTE]
    >The main Search page refreshes about every 10 minutes. To view all of your results as you create them, click **Driver List Page (all)**, at the top of the **Drivers** page of the Partner Center. Although the page takes some time to process and load if you have a lot of submissions, both successful and unsuccessful submissions should be listed when it does load. For more info, see [Find a hardware submission](./find-hardware-submission.md).
