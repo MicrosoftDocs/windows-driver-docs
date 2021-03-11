@@ -64,6 +64,8 @@
   href: ndis-wdf-function-equivalents.md
 - name: "NetAdapterCx limitations"
   href: netadaptercx-limitations.md
+- name: "Recovering an unresponsive NIC with NetAdapterCx PLDR"
+  href: platform-level-device-reset.md
 - name: "Mobile Broadband (MBB) WDF class extension (MBBCx)"
   items:
   - name: "Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)"
