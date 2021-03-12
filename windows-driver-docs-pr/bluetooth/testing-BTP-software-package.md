@@ -46,7 +46,7 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 
 | Test Tool | Description | Filename |
 | --- | --- | --- |
-| TAEF | - [Test Authoring and Execution Framework (TAEF) - Windows drivers \| Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/) | C:\BTP\\\<version\>\TAEF |
+| TAEF | - [Test Authoring and Execution Framework (TAEF) - Windows drivers \| Microsoft Docs](https://docs.microsoft.com/windows-hardware/drivers/taef/) | C:\BTP\\\<version\>\TAEF |
 | BtpDevicePlugin | - Binary needed to support tests that use a local Windows Bluetooth radio. | Microsoft.Bluetooth.TestPlatform.BtpDevicePlugin.dll |
 | GenericSerialIO | - Binary needed to support BTP devices that use Windows serial communication. | Microsoft.Bluetooth.TestPlatform.GenericSerialIO.dll |
 | HidTests | - Test binary for Bluetooth HID tests.</br> - Can be run using TAEF or via the provided scripts. | TaefHidTests.dll |
