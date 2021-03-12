@@ -44,7 +44,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     The device has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The device also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The device monitors amperage and voltage being drawn from the SUT. You can buy the necessary hardware from [MCCI](https://mcci.com/usb/dev-tools/3201-enhanced-type-c-connection-exerciser/).
 
-    ![USB Type-C ConnEx](images/newconnexc.jpg)
+    ![USB Type-C ConnEx Connection Exerciser device](images/newconnexc.jpg)
 
 - **Peripheral USB devices**
 
@@ -80,7 +80,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     The shield has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The shield also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The shield monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](https://store.mcci.com/products/model-3101-type-c-connection-exerciser?variant=17120953798) or [JJG Technologies](http://www.jjgtechnologies.com/typecconne.htm).
 
-    ![USB Type-C ConnEx](images/connexc-top.png)
+    ![USB Type-C ConnEx board](images/connexc-top.png)
 
 - **USB A-to-B cable**
 
@@ -137,9 +137,9 @@ Here are the tools in MUTT software package that are specific to USB Type-C Conn
 | Tool | Description |
 | --- | --- |
 | [ConnExUtil.exe](#connexutilexe) | Command line tool for exercising USB Type-C ConnEx features. |
-| [CxLoop.cmd](#cxloop) | Connects and disconnects each port once. |
-| [CxStress.cmd](#cxstress) | Randomized stress script. |
-| [CxPower.cmd](#cxpower) | Captures power data (voltage and amperage) over a period of time and sends the output to a CSV file. |
+| [CxLoop.cmd](#simple-connect--disconnect-sequence-cxloopcmd) | Connects and disconnects each port once. |
+| [CxStress.cmd](#random-connect--disconnect-loop-cxstresscmd) | Randomized stress script. |
+| [CxPower.cmd](#long-running-power-measurement-cxpowercmd) | Captures power data (voltage and amperage) over a period of time and sends the output to a CSV file. |
 
 For information about all other tools, see [Tools in the MUTT software package](mutt-software-package.md).
 
@@ -369,7 +369,7 @@ Confirms charging with USB Type-C.
 6. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
 7. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
 
-For configuration images related to step 2 -4, see [Get started...](#get-started).
+For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
 ## FT Case 2: Alternate Mode Negotiation
 
@@ -391,7 +391,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 6. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
 7. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
 
-For configuration images related to step 2 -4, see [Get started...](#get-started).
+For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
 ## FT Case 3: Charging and power delivery (PD)
 
@@ -426,7 +426,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
     Confirm the device is receiving current.
 
-For configuration images related to step 2 -4, see [Get started...](#get-started).
+For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
 ## FT Case 4: Role Swap
 
@@ -453,7 +453,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 9. Perform necessary steps to swap data roles and confirm current roles of each system have changed.
 
-For configuration images related to step 2 -4, see [Get started...](#get-started).
+For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
 ## ST Case 1: Device Enumeration
 
@@ -478,7 +478,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 7. Perform the steps described in [FT Case 1: Device Enumeration](#ft-case-1-device-enumeration).
 
-For configuration images related to step 2 -4, see [Get started...](#get-started).
+For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
 ## ST Case 2: Charging and power delivery (PD)
 
@@ -503,7 +503,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 7. Perform the steps described in [FT Case 3: Charging and power delivery (PD)](#ft-case-3-charging-and-power-delivery-pd).
 
-For configuration images related to step 2 -4, see [Get started...](#get-started).
+For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
 ## Additional test resources
 

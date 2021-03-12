@@ -21,7 +21,7 @@ There are several possible ways to calibrate your device. In this document we wi
 
 Put the observed values into a 3x3 matrix as shown below. Next, the raw values must be gathered by pointing the MALT at the same display colors you gathered your known values.
 
-![Srgb](images/srgb.png)
+![Mathematical matrix showing Columns for Known Red Green Blue and Rows for X Y Z](images/srgb.png)
 
 ## Step 2: Acquire Raw Values using MALTUtil.exe
 
@@ -29,7 +29,7 @@ Raw or uncalibrated values are the values that come out of the currently uncalib
 
 Gather these values by pointing the MALT at the same display colors you gathered your known values. This step is important and makes the equation reliable. Read the uncalibrated values by sending the command ```/readRawAmbient``` or ```/readRawScreen``` to MALTUtil.exe. Do this for a red display, a blue display, and a green display. The XYZ values should be around the 0-1 range to be the most effective. If the numbers are not in this range, press the reset button on the Arduino and try again. Put these values into a 3x3 matrix as shown below.
 
-![Srgb](images/rrgb.png)
+![Mathematical matrix showing Columns for Raw Red Green Blue and Rows for X Y Z](images/rrgb.png)
 
 ## Step 3: Transform the Matrices
 
