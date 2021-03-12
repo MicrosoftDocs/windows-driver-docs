@@ -293,7 +293,7 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 ## Windows Driver (1320-1329)
 
 >[!IMPORTANT]
->Your driver INF file complies with Windows Driver requirements if you do not get any errors or warnings with error number in the range 13*2x*. These requirements are described in detail in the <a href="/windows-hardware/drivers/develop/driver-isolation.md"><strong>Driver Isolation Requirements</strong></a> documentation.
+>Your driver INF file complies with Windows Driver requirements if you do not get any errors or warnings with error number in the range 13*2x*. These requirements are described in detail in the <a href="/windows-hardware/drivers/develop/driver-isolation"><strong>Driver Isolation Requirements</strong></a> documentation.
 
 The following errors and warnings are related to Windows Driver requirements:
 
@@ -322,7 +322,7 @@ The following errors and warnings are related to Windows Driver requirements:
 </tr>
 <tr>
 <td><strong>1323: Service registry key <em>Xxx</em> must be under the Parameters subkey</strong></td>
-<td>Error 1323 indicates that a service registry value is not set as an HKR under the parameters subkey, per requirements defined in <a href="/windows-hardware/drivers/windows-driver-docs-pr/develop/driver-isolation.md#service-registry-state"><strong>Service Registry State</strong></a>.
+<td>Error 1323 indicates that a service registry value is not set as an HKR under the parameters subkey, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation.md#service-registry-state"><strong>Service Registry State</strong></a>.
 </td>
 </tr>
 <tr>
