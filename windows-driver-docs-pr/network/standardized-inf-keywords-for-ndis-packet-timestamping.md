@@ -24,32 +24,28 @@ The **\*PtpHardwareTimestamp** keyword is defined to enable or disable support f
 
 The default setting for the **\*PtpHardwareTimestamp** keyword is disabled and the miniport driver should disable all types of hardware timestamping support in the NIC hardware by default.
 
-Miniport drivers read **\*PtpHardwareTimestamp** keyword value to determine if hardware timestamping is currently enabled or disabled. 
+Miniport drivers read the **\*PtpHardwareTimestamp** keyword value to determine if hardware timestamping is currently enabled or disabled. 
 
-If the keyword indicates that hardware timestamping is enabled, the miniport driver should:
+If **\*PtpHardwareTimestamp** is enabled, the miniport driver should:
 
-1. Enable the relevant hardware timestamping capabilities of the NIC hardware. 
+1. Enable the relevant hardware timestamping capabilities in the NIC hardware. 
 
 1. Generate the [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md) status indication to report the timestamping capabilities it enabled to NDIS. The driver uses the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure to specify which capabilities it enabled.
-The flags within the **TimestampFlags** field in the **NDIS_TIMESTAMP_CAPABILITIES** structure that correspond to hardware timestamping are `PtpV2OverUdpIPv4EventMsgReceiveHw`, `PtpV2OverUdpIPv4AllMsgReceiveHw`, `PtpV2OverUdpIPv4EventMsgTransmitHw`, `PtpV2OverUdpIPv4AllMsgTransmitHw`, `PtpV2OverUdpIPv6EventMsgReceiveHw`, `PtpV2OverUdpIPv6AllMsgReceiveHw`, `PtpV2OverUdpIPv6EventMsgTransmitHw`, `PtpV2OverUdpIPv6AllMsgTransmitHw`, `AllReceiveHw`, `AllTransmitHw` and `TaggedTransmitHw`. The **CrossTimestamp** field in the **NDIS_TIMESTAMP_CAPABILITIES** structure for **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indicates if hardware cross timestamping is enabled.
+The flags within the **TimestampFlags** field in the **NDIS_TIMESTAMP_CAPABILITIES** structure that correspond to hardware timestamping are `PtpV2OverUdpIPv4EventMsgReceiveHw`, `PtpV2OverUdpIPv4AllMsgReceiveHw`, `PtpV2OverUdpIPv4EventMsgTransmitHw`, `PtpV2OverUdpIPv4AllMsgTransmitHw`, `PtpV2OverUdpIPv6EventMsgReceiveHw`, `PtpV2OverUdpIPv6AllMsgReceiveHw`, `PtpV2OverUdpIPv6EventMsgTransmitHw`, `PtpV2OverUdpIPv6AllMsgTransmitHw`, `AllReceiveHw`, `AllTransmitHw` and `TaggedTransmitHw`. The **CrossTimestamp** field in the **NDIS_TIMESTAMP_CAPABILITIES** structure for the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indicates if hardware cross timestamping is enabled.
 
-When **\*PtpHardwareTimestamp** is enabled, the specific hardware timestamping capabilities that the miniport driver should enable in hardware depends on the capabilities of the NIC hardware. The main scenario that **\*PtpHardwareTimestamp** addresses is PTP version 2 over UDP (for both IPv4 and IPv6) operating in 2 step mode. Supporting hardware timestamping for PTP version 2 over UDP (in 2 step mode) for both Rx and Tx directions should be the main consideration when determining which hardware timestamping capabilities in hardware should be enabled.
+When **\*PtpHardwareTimestamp** is enabled the miniport should turn on some form of capability to generate hardware timestamps for both Rx and Tx for PTP version 2 over UDP. The miniport should also turn on the hardware cross timestamping capability if the hardware supports it.
 
-For example, if the NIC hardware only supports the `PtpV2OverUDPIPv4EventMsgReceiveHw`, `PtpV2OverUDPIPv6EventMsgReceiveHw` and `TaggedTransmitHw` capabilities, then the miniport can turn on these hardware timestamping capabilities if the **\*PtpHardwareTimestamp** keyword is enabled.
+The specific hardware timestamping capabilities that the miniport driver should enable in hardware depends on the capabilities of the NIC hardware. For example, if the NIC hardware only supports the `PtpV2OverUDPIPv4EventMsgReceiveHw`, `PtpV2OverUDPIPv6EventMsgReceiveHw` and `TaggedTransmitHw` capabilities, then the miniport can turn on these hardware timestamping capabilities if the **\*PtpHardwareTimestamp** keyword is enabled.
 
-Another example is if the NIC hardware only supports the `AllReceiveHw` and `TaggedTransmitHw` capabilities, then the miniport can turn on these hardware timestamping capabilities if the **\*PtpHardwareTimestamp** keyword is enabled.
+If the NIC hardware supports multiple forms of hardware timestamping capabilities that can enable the PTP version 2 over UDP scenario, then the IHV should consider their hardware and issues such as performance impact to decide which capabilities the miniport should turn on. For example, the hardware may be capable of generating timestamps for `AllTransmitHw` and `TaggedTransmitHw`. If turning on `AllTransmitHw` is more expensive than turning on `TaggedTransmitHw`, then the IHV may choose to only turn on the `TaggedTransmitHw` capability for Tx.
 
-It's possible that the NIC hardware supports multiple forms of hardware timestamping capabilities that can enable the PTP version 2 over UDP scenario. For example, the hardware may be capable of generating timestamps for `PtpV2OverUDPIPv4EventMsgReceiveHw`, `PtpV2OverUDPIPv6EventMsgReceiveHw`, `AllReceiveHw`, `AllTransmitHw` and `TaggedTransmitHw`. In this scenario, the independent hardware vendor (IHV) decides which capabilities the miniport should turn on by taking their hardware into consideration. For example, the IHV might take performance impact into consideration. If turning on `AllTransmitHw` is more expensive than turning on `TaggedTransmitHw`, then the IHV may choose to only turn on the `TaggedTransmitHw` capability for Tx. Similarly for Rx, if it is cheaper to only turn on `PtpV2OverUDPIPv4EventMsgReceiveHw` and `PtpV2OverUDPIPv6EventMsgReceiveHw` rather than `AllReceiveHw`, then the IHV may choose to turn on the `PtpV2OverUDPIPv4EventMsgReceiveHw` and `PtpV2OverUDPIPv6EventMsgReceiveHw` capabilities rather than the `AllReceiveHw` capability.
-
-If the **\*PtpHardwareTimestamp** keyword is enabled, then the miniport should turn on at least some form of capability to generate hardware timestamps for both Rx and Tx for PTP version 2 over UDP. The miniport should also turn on the hardware cross timestamping capability if the hardware supports it.
+In all cases, the miniport driver should accurately report which hardware timestamping capabilities it enabled or disabled using the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication.
 
 > [!NOTE]
 > PTP over raw Ethernet is not supported. The IHV needs to determine what the most efficient way of handling PTP over raw Ethernet packets when supporting PTP over UDP is enabled.
 
 > [!NOTE]
 > No support is needed for PTP version 1. If the NIC hardware also supports PTP version 1, then the IHV needs to determine the most efficient way of handling PTP version 1 packets when supporting PTP version 2.
-
-In all cases, the miniport driver should accurately report which hardware timestamping capabilities it enabled or disabled using the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication.
 
 ### INF entries for *PtpHardwareTimestamp
 

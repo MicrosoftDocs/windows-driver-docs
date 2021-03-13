@@ -18,10 +18,6 @@ During initialization, the miniport driver should report the timestamping capabi
 > [!NOTE]
 > Miniport drivers read the **\*PtpHardwareTimestamp** and **\*SoftwareTimestamp**  keywords values in the INF file to determine which timestamping capabilities are enabled or disabled. For more information, see [**Standardized INF keywords for NDIS packet timestamping**](standardized-inf-keywords-for-ndis-packet-timestamping.md). 
 
-The miniport driver must generate an **NDIS_STATUS_TIMESTAMP_CAPABILITY** indication at least once before indicating **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**. Otherwise NDIS will reject the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication and it will not be indicated to overlying drivers.
-
-The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication whenever it detects a change in underlying hardware capabilities.
-
-If the miniport driver indicates a change in the NIC’s hardware timestamping capability using the **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication, then it must also report the corresponding change in the current configuration using the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication.
+Any time that the miniport driver detects a change in underlying hardware capabilities it must generate the **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication. It must also report the corresponding change in the current configuration using the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication.
 
 The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication whenever it detects a change in the current timestamping configuration.
