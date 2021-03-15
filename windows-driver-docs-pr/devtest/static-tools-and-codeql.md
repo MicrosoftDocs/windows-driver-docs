@@ -466,11 +466,11 @@ CodeQL **does not require MSBuild or Visual Studio to be used**. See [supported 
 
 The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the Static Tools Logo Test can be found on its [MS Docs page](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
-#### Can I run the DVL generation on Visual Studio solutions? 
+#### Can I generate a DVL on Visual Studio solutions? 
 
 No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](https://docs.microsoft.com/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).
 
-#### Can I run DVL generation without msbuild or Visual Studio?
+#### Can generate a DVL without msbuild or Visual Studio?
 
 Microsoft ships a stand-alone exe called dvl.exe which can be used to generate a DVL file outside of the context of msbuild and/or Visual Studio.  See the [instructions](need link) to learn more.
 
