@@ -454,7 +454,7 @@ The motivation for requiring CodeQL to be run on driver source code can be summa
 1. Security of Windows is paramount.  Requiring CodeQL to be run on driver source code is one step in ensuring that components which get certified by Microsoft are secure.
 2. CodeQL is [used at Microsoft](https://msrc-blog.microsoft.com/2018/08/16/vulnerability-hunting-with-semmle-ql-part-1/) to find security defects and  CodeQL queries are actively developed by security engineers at Microsoft.  Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
-#### What license governs the usage of CodeQL for driver developers?
+#### Which license governs the usage of CodeQL for driver developers?
 
 Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
@@ -469,10 +469,6 @@ The Static Tools Logo Test in the HLK is the test that enforces this requirement
 #### Can I generate a DVL on Visual Studio solutions? 
 
 No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](https://docs.microsoft.com/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).
-
-#### Can generate a DVL without msbuild or Visual Studio?
-
-Microsoft ships a stand-alone exe called dvl.exe which can be used to generate a DVL file outside of the context of msbuild and/or Visual Studio.  See the [instructions](need link) to learn more.
 
 #### Are all defects reported by CodeQL true defects?
 
