@@ -21,7 +21,7 @@ Remarks
 
 Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
 
-For more information about using this OID, see [WWAN Driver Initialization Procedure](./mb-miniport-driver-initialization.md).
+For more information about using this OID, see [WWAN Driver Initialization Procedure](mb-device-readiness.md#mb-miniport-driver-initialization).
 
 Miniport drivers can access device memory when processing query operations, but should not access the provider network or the Subscriber Identity Module (SIM card).
 
@@ -311,7 +311,7 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps)
 
-[WWAN Driver Initialization Procedure](./mb-miniport-driver-initialization.md)
+[WWAN Driver Initialization Procedure](mb-device-readiness.md#mb-miniport-driver-initialization)
 
  
 

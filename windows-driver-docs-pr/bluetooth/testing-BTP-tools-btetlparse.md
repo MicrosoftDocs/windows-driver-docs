@@ -11,7 +11,7 @@ The Bluetooth ETL parse tool extracts HCI traces from ETL files containing compr
 
 This tool is meant for parsing ETL files collected using the [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
-[Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt)
+[Tracefmt](../devtest/tracefmt.md)
 is a way to parse additional logs from the ETL file.
 
 ## ETL parse command line options

@@ -2,7 +2,7 @@
 title: Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD
 description: The MANUALLY_INITIATED_POWER_BUTTON_HOLD bug check has a value of 0x000001CE. The system was configured to initiate a bugcheck when the user holds the power button.  
 keywords: ["Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD", "MANUALLY_INITIATED_POWER_BUTTON_HOLD"]
-ms.date: 09/24/2018
+ms.date: 03/05/2021
 topic_type:
 - apiref
 api_name:
@@ -21,28 +21,25 @@ The system was configured to initiate a bugcheck when the user holds the power b
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 Note that when this bug check occurs instead of the standard "blue screen" being displayed, a black background with the following text is displayed along with a % completion indicator:
 
-“Please release the power button. We just need a few more seconds to shut down.” 
-
+“Please release the power button. We just need a few more seconds to shut down.”
 
 ## MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD Parameters
 
 The following parameters are displayed on the blue screen.
 
-Parameter | Description 
+Parameter | Description
 |---------|--------------|
 1 | Time in milliseconds the power button was held down.
 2 | Pointer to nt!_POP_POWER_BUTTON_TRIAGE_BLOCK.
 3 | Reserved.
 4 | Reserved.
 
+## See also
 
- 
+[Forcing a System Crash with the Power Button](forcing-a-system-crash-with-the-power-button.md)
 
- 
+[Inside Show - Bugcheck 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD](https://channel9.msdn.com/Shows/Inside/0x1C8)
 
-
-
-
+[ACPI button device](/windows-hardware/drivers/hid/acpi-button-device)

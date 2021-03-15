@@ -583,7 +583,7 @@ The major restrictions imposed on hardware devices and drivers by **Usbccgp.sys*
 
 See the blog post about [How to include and view WPP trace messages in a driver’s public PDB files](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/archive/2013/06/29/wpp-blog-post.aspx).
 
-For information about USB devices and ETW events, see [Debugging USB device issues by using ETW events](/windows-hardware/drivers/usbcon/best-practices--debugging-usb-device-problems).
+For information about USB devices and ETW events, see [Debugging USB device issues by using ETW events](./best-practices--debugging-usb-device-problems.md).
 
 ## Does Windows support Interface Association Descriptors?
 

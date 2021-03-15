@@ -354,6 +354,9 @@ After you have completed all the required calls to the device, release the file 
 
 The following code example shows the main function of your console application.
 
+For example code that gets the device handle and opens the device (**GetDeviceHandle** and **GetWinUSBHandle** in this example), see [Template code discussion](./how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md#template-code-discussion).
+
+
 ```ManagedCPlusPlus
 int _tmain(int argc, _TCHAR* argv[])
 {

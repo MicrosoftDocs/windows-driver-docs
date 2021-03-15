@@ -25,7 +25,7 @@ The following are the minor function codes for PnP IRPs, and the driver types th
 
 
 |                              PnP IRP minor function code                              | Value | Function or filter driver for nonbus device | Function driver for bus device (for bus FDO) | Bus driver or bus filter driver (for child PDOs) |
-|---------------------------------------------------------------------------------------|---------------------------------------------|----------------------------------------------|--------------------------------------------------|
+|---------------------------------------------------------------------------------------|---------------------------------------------|----------------------------------------------|--------------------------------------------------|---|
 |                 [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md)                  |0x00|                  Required                   |                   Required                   |                     Required                     |
 |          [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](irp-mn-query-remove-device.md)          |0x01|                  Required                   |                   Required                   |                     Required                     |
 |                [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)                 |0x02|                  Required                   |                   Required                   |                     Required                     |

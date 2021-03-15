@@ -190,7 +190,7 @@ in SARIF or another interpreted format.
 
 ```
 
-To evaluate the *windows_driver_recommended.qls* query suite against the kmdf echo driver with the results returned in SARIF format use the command below.  The *windows_driver_recommended.qls* query suite is a superset of all queries that Microsoft has deemed as valuable for driver developers.  Read more about query suites in the ["Query Suites"](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#query-suites) section below.
+To evaluate the *windows_driver_recommended.qls* query suite against the kmdf echo driver with the results returned in SARIF format use the command below.  The *windows_driver_recommended.qls* query suite is a superset of all queries that Microsoft has deemed as valuable for driver developers.  Read more about query suites in the ["Query Suites"](#query-suites) section below.
 
 ```command
 C:\codeql-home>c:\codeql-home\codeql\codeql.cmd database analyze "C:\codeql-home\databases\kmdf" windows_driver_recommended.qls --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdfecho1.sarif -j 0
@@ -296,9 +296,9 @@ You can specify a timeout for the entire operation with the *"–timeout=[second
 
 ## Query Suites
 
-As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), Microsoft has provided two query suites to simplify the end-to-end driver developer workflow.  The *windows_driver_recommended.qls* query suite contains a superset of [all of the queries](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#queries) that Microsoft has deemed valuable for driver developers.  
+As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), Microsoft has provided two query suites to simplify the end-to-end driver developer workflow.  The *windows_driver_recommended.qls* query suite contains a superset of [all of the queries](#queries) that Microsoft has deemed valuable for driver developers.  
 
-The *windows_driver_mustfix.qls* query suite contains [queries](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#must-fix-queries) that are currently deemed as **"Must-Fix"** for WHCP certification. Both of these query suites will be updated regularly as Microsoft finalizes the list of available queries and the list of "Must-Fix" queries required for WHCP certification.  As a result, it is critical to regularly sync the repository using the ["git pull"](https://www.git-scm.com/docs/git-pull) command.
+The *windows_driver_mustfix.qls* query suite contains [queries](#must-fix-queries) that are currently deemed as **"Must-Fix"** for WHCP certification. Both of these query suites will be updated regularly as Microsoft finalizes the list of available queries and the list of "Must-Fix" queries required for WHCP certification.  As a result, it is critical to regularly sync the repository using the ["git pull"](https://www.git-scm.com/docs/git-pull) command.
 
 ## Troubleshooting
 

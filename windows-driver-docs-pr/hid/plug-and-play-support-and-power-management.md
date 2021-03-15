@@ -15,7 +15,7 @@ Windows loads the HID I²C class driver based on a compatible identifier match b
 
 The ACPI 5.0 Specification includes support for HID Class Devices. the ACPI definitions for HID I²C are as follows.
 
-| Field | Value | ACPI object | Format Comments |
+| Field | Value | ACPI object | Format | Comments |
 |--- | --- | ---- | ---- | ---- |
 | Compatible ID | PNP0C50 | \_CID | String in the format of ACPI0C50 or PNP0C50 |CompatibleID |
 | Hardware ID | Vendor Specific | \_HID | String in the format of VVVVdddd (e.g NVDA0001) | VendorID + DeviceID |

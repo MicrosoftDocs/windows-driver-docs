@@ -36,6 +36,7 @@ References and resources discussed here are listed at the end of this paper.
 | June 11, 2020 | Added new serial debugging subtype (SDM845v2) |
 | September 1, 2020 | Converted document to Markdown syntax and formatting changes. |
 | September 21, 2020 | Added new serial debugging subtype (IALPSS) |
+| February 17, 2021 | Document all known serial debugging subtypes | 
 
 ## Introduction
 
@@ -52,7 +53,7 @@ Table 1 defines the fields in DBG2.
 | **Field** | **Byte length** | **Byte offset** | **Description** |
 |-----------|-----------------|-----------------|-----------------|
 | Header    |                 |                 |                 |
-| Signature | 4 | 0 | ‘DBG2’. Signature for Debug Port Table 2. |
+| Signature | 4 | 0 | 'DBG2'. Signature for Debug Port Table 2. |
 | Length | 4 | 4 | Length, in bytes, of the entire Debug Port Table 2. |
 | Revision | 1 | 8 | For this version of the specification, this value is 0. |
 | Checksum | 1 | 9 | Entire table must sum to zero. |
@@ -99,9 +100,17 @@ Table 1 defines the fields in DBG2.
 | Reserved | 0x0000 – 0x7FFF and 0xFFFF | All | Reserved (Do Not Use) |
 | Serial   | 0x8000   | 0x0000      | Fully 16550-compatible |
 |          |          | 0x0001      | 16550 subset compatible with DBGP Revision 1 |
-|          |          | 0x0002      | Reserved (Do Not Use) |
+|          |          | 0x0002      | MAX311xE SPI UART |
 |          |          | 0x0003      | ARM PL011 UART |
-|          |          | 0x0004 – 0x000C | Reserved (Do Not Use) |
+|          |          | 0x0004      | MSM8x60 (e.g. 8960) |
+|          |          | 0x0005      | Nvidia 16550 |
+|          |          | 0x0006      | TI OMAP |
+|          |          | 0x0007      | Reserved (Do Not Use) |
+|          |          | 0x0008      | APM88xxxx |
+|          |          | 0x0009      | MSM8974 |
+|          |          | 0x000A      | SAM5250 |
+|          |          | 0x000B      | Intel USIF |
+|          |          | 0x000C      | i.MX 6 |
 |          |          | 0x000D      | (deprecated) ARM SBSA (2.x only) Generic UART supporting only 32-bit accesses |
 |          |          | 0x000E      | ARM SBSA Generic UART |
 |          |          | 0x000F      | ARM DCC |

@@ -62,3 +62,5 @@ After the surprise-removal, all drivers in the stack including `WMBCLASS` must r
 ## Related links
 
 [MB Device-based Reset and Recovery](mb-device-based-reset-and-recovery.md)
+
+[MB Device-based Reset and Recovery Trace](mb-device-based-reset-and-recovery-trace.md)

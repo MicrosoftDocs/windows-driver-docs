@@ -63,6 +63,10 @@ Parameter 4 - Pointer to pool header.</td>
 </tbody>
 </table>
 
+## Resolution
+
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
  
 
  

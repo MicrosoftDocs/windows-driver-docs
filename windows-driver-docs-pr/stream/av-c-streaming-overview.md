@@ -7,7 +7,7 @@ keywords:
 - Avcstrm.sys streaming filter driver WDK
 - Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver
 - filter drivers WDK AV/C streaming
-ms.date: 06/15/2020
+ms.date: 03/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +17,7 @@ This section describes the AV/C Streaming filter driver, *Avcstrm.sys*, that Mic
 
 *Avcstrm.sys* is a lower-level subunit filter driver that is located immediately above *Avc.sys* and *61883.sys* in the driver stack and below any subunit drivers. The AV/C Stream filter driver provides additional support for the AV/C protocol driver. It is optional for a vendor to use this support.
 
-The tape subunit specifications (located at the [1394 Trade Association](https://1394ta.org/library-2) website) support different transport state controls, such as play, pause, record and stop, regardless of its media signal. However, the data format for the same subunit type can be the same or different. For example, both DV and DVHS devices contain tape subunits. However, DV generally uses the SDDV data format that is based on the IEC 61883-2 specification, whereas, DVHS uses the MPEG2TS data format that is based on the 61883-4 specification. A filter driver for tape subunits must therefore support both SDDV and MPEG2TS data formats but use the same device control for the tape subunit. This implies that every subunit driver must duplicate the same functionality to provide format-aware streaming capability.
+The 1394 Trade Association tape subunit specifications support different transport state controls, such as play, pause, record and stop, regardless of its media signal. However, the data format for the same subunit type can be the same or different. For example, both DV and DVHS devices contain tape subunits. However, DV generally uses the SDDV data format that is based on the IEC 61883-2 specification, whereas, DVHS uses the MPEG2TS data format that is based on the 61883-4 specification. A filter driver for tape subunits must therefore support both SDDV and MPEG2TS data formats but use the same device control for the tape subunit. This implies that every subunit driver must duplicate the same functionality to provide format-aware streaming capability.
 
 Controlling an AV/C subunit driver on the 61883 and AV/C subunit driver stacks requires driver functions to receive or transmit data streams using device driver interfaces (DDIs) provided by the 61883 protocol driver. These driver functions perform the following operations:
 
@@ -36,7 +36,5 @@ For more information about the AV/C protocol upon which the AV/C Streaming filte
 For more information and resources see the following links:
 
 [Windows Driver Model](../kernel/introduction-to-wdm.md)
-
-[1394 Trade Association specifications](https://1394ta.org/library-2)
 
 [International Electrotechnical Commission](https://www.iec.ch/)

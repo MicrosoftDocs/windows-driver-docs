@@ -68,19 +68,6 @@ In addition to driver code signing, you also need to meet the PnP device install
 
 For info about signing an ELAM driver, see [Early launch antimalware](/windows/desktop/w8cookbook/secured-boot).
 
-## Signing a driver for internal distribution only
-
-In some cases, you may want to distribute a driver internally within a company rather than via Windows Update.  To do this without requiring that computers running it are in test mode, use the following procedure:
-
-1. [Register for the Hardware Dev Center](../dashboard/register-for-the-hardware-program.md).
-2. Review the [Hardware dashboard FAQ](../dashboard/hardware-dashboard-faq.md) and sign appropriate agreements.
-3. Upload codesign certificates.
-4. Sign drivers locally using any codesign certificate that you have already registered in Partner Center.
-5. Package drivers in a CAB and sign the CAB using the above codesign certificate.
-6. Submit the CAB to the Hardware Dev Center for signing.
-7. If the submission is approved, the Hardware Dev Center returns the driver with a Microsoft signature.
-8. Distribute the driver internally.
-
 ## See Also
 
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
