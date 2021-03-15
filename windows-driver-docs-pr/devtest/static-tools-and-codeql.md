@@ -478,7 +478,7 @@ Microsoft ships a stand-alone exe called dvl.exe which can be used to generate a
 
 Every CodeQL 	query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
 
-#### Does the classification of either "warning" or "error" matter for the purposes of the Static Tools Logo Test?
+#### Does a query's classification of either "warning" or "error" matter for the purposes of the Static Tools Logo Test?
 
 It is important to note that a query's classification of "error", "warning", or "problem" **should be ignored** for drivers certifying with the Static Tools Logo Test.  A driver that has a defect from a query that is marked ["Must-Fix"](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#must-fix-queries) **will not pass the Static Tools Logo Test** regardless of the query classification in the raw query file (ie. "warning"). 
 ## Driver Verification Log (DVL) Consumption of SARIF Output
