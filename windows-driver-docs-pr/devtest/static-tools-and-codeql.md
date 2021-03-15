@@ -480,6 +480,6 @@ Every CodeQL 	query has a varying level of precision.  The goal is to minimize f
 
 #### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
-Send all feedback to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
+Send all feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
 
 
