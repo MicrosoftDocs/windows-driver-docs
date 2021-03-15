@@ -477,8 +477,6 @@ Every CodeQL 	query has a varying level of precision.  The goal is to minimize f
 #### Does a query's classification of either "warning" or "error" matter for the purposes of the Static Tools Logo Test?
 
 It is important to note that a query's classification of "error", "warning", or "problem" **should be ignored** for drivers certifying with the Static Tools Logo Test.  A driver that has a defect from a query that is marked ["Must-Fix"](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql#must-fix-queries) **will not pass the Static Tools Logo Test** regardless of the query classification in the raw query file (ie. "warning"). 
-## Driver Verification Log (DVL) Consumption of SARIF Output
-
 
 #### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
