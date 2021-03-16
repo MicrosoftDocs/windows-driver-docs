@@ -1,12 +1,12 @@
 ---
-title: USSD
+title: USSD Overview
 description: USSD implementation and test
 keywords: USSD,Unstructured Supplementary Service Data 
 ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
-# USSD 
-## Overview
+# USSD Overview
+
 Unstructured Supplementary Service Data (USSD) is a communication protocol used by Global System for Mobile Communications (GSM) devices to communicate with mobile network operators (typically referred to as simply "MO").
 
 To understand USSD it is helpful to compare it to its most closely-related sibling: short message service (SMS). USSD and SMS are both GSM standards, meaning they were introduced as features in the second generation of mobile devices. In contrast with SMS however, USSD is a session-based connection. While SMS is used for short session-less messaging, USSD is typically used for command and control of a mobile device. As it is a necessary to maintain a session, USSD does not support store-and-forward capability as SMS does. Both USSD and SMS messages are sent with 7-bit GSM-compliant characters, but USSD maxes out at 184 characters in contrast with 160 for SMS.
@@ -109,7 +109,7 @@ The result of this request is unimportant. For all intents and purposes, the ses
 ## Hardware Lab Kit (HLK) Tests
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx). 
 
-In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestUssd](/windows-hardware/test/hlk/testref/17ae6fea-6244-442d-b977-6367d1ae441e9).
+In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestUssd](/windows-hardware/test/hlk/testref/17ae6fea-6244-442d-b977-6367d1ae441e).
 
 ## MB USSD Troubleshooting Guide
 - Collect and decod the logs using the instructions in [MB Collecting Logs](mb-collecting-logs.md).
