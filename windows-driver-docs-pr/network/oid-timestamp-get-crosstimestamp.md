@@ -23,6 +23,28 @@ When a miniport driver receives the OID request of OID_TIMESTAMP_GET_CROSSTIMEST
 
 3. **SystemTimestamp2**: Another performance counter value (QPC) obtained by calling **KeQueryPerformanceCounter**.
 
+Here's an example of how a miniport driver handles OID_TIMESTAMP_GET_CROSSTIMESTAMP:
+
+```C++
+{
+. . .
+    NDIS_HARDWARE_CROSSTIMESTAMP crossTimestamp;
+    LARGE_INTEGER timeStamp;
+
+    RtlZeroMemory(&crossTimestamp, sizeof(crossTimestamp));
+
+    timeStamp = KeQueryPerformanceCounter(NULL);
+    crossTimestamp.SystemTimestamp1 = timeStamp.QuadPart;
+    crossTimestamp.HardwareClockTimestamp = FunctionToRetrieveHardwareTimestampFromNetworkCard();
+    timeStamp = KeQueryPerformanceCounter(NULL);
+    crossTimestamp.SystemTimestamp2 = timeStamp.QuadPart;
+    crossTimestamp.Header.Type = NDIS_OBJECT_TYPE_DEFAULT;
+    crossTimestamp.Header.Size = NDIS_SIZEOF_HARDWARE_CROSSTIMESTAMP_REVISION_1;
+    crossTimestamp.Header.Revision = NDIS_HARDWARE_CROSSTIMESTAMP_REVISION_1;
+
+// Complete the OID by filling the query information buffer with the crossTimestamp
+}
+```
 The **Flags** field in the **NDIS_HARDWARE_CROSSTIMESTAMP** structure is reserved for future use. The miniport driver must not change its value.
 
 The miniport driver and hardware are free to optimize the collection of these timestamps depending on any advanced hardware capabilities. However, the **SystemTimestamp1** and **SystemTimestamp2** values returned on OID completion must accurately correspond to the performance counter (QPC) value at the time of capture. The **HardwareClockTimestamp** must correspond to the NIC’s hardware clock value at the point of capture. If a particular implementation can more accurately determine two timestamps rather than three (for example, one system timestamp and the corresponding NIC hardware clock timestamp), then it should set the **SystemTimestamp2** field to the same value as **SystemTimestamp1**.

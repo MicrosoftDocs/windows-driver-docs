@@ -34,6 +34,58 @@ The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  a
 
 The miniport driver must also generate the [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md) status indication whenever it detects a change in underlying hardware capabilities.
 
+Here's how a miniport driver might indicate its supported timestamping capabilities:
+
+```C++
+// From within its initialization routine, the miniport in this 
+// example indicates that it supports the following capabilities:
+// - PtpV2OverUdpIPv4EventMsgReceiveHw
+// - PtpV2OverUdpIPv6EventMsgReceiveHw
+// - TaggedTransmitHw
+// - CrossTimestamp
+
+NDIS_STATUS MiniportInitializeEx(
+    _In_ NDIS_HANDLE MiniportAdapterHandle,
+    _In_ NDIS_HANDLE MiniportDriverContext,
+    _In_ PNDIS_MINIPORT_INIT_PARAMETERS MiniportInitParameters
+)
+{
+. . .
+    NDIS_TIMESTAMP_CAPABILITIES timeStampCapabilities;
+    NDIS_STATUS_INDICATION timeStampStatus;
+. . .
+
+    // Initialize an NDIS_TIMESTAMP_CAPABILITIES structure
+
+    RtlZeroMemory(&timeStampCapabilities, sizeof(timeStampCapabilities));
+    RtlZeroMemory(&timeStampStatus, sizeof(timeStampStatus));
+
+    timeStampCapabilities.Header.Type = NDIS_OBJECT_TYPE_DEFAULT;
+    timeStampCapabilities.Header.Size = sizeof(timeStampCapabilities);
+    timeStampCapabilities.Header.Revision = NDIS_TIMESTAMP_CAPABILITIES_REVISION_1;
+
+    timeStampCapabilities.CrossTimestamp = TRUE;
+    timeStampCapabilities.TimestampFlags.PtpV2OverUdpIPv4EventMsgReceiveHw = TRUE;
+    timeStampCapabilities.TimestampFlags.PtpV2OverUdpIPv6EventMsgReceiveHw = TRUE;
+    timeStampCapabilities.TimestampFlags.TaggedTransmitHw = TRUE;
+
+    timeStampCapabilities.HardwareClockFrequencyHz = 150000;
+
+    timeStampStatus.Header.Type = NDIS_OBJECT_TYPE_STATUS_INDICATION;
+    timeStampStatus.Header.Revision = NDIS_STATUS_INDICATION_REVISION_1;
+    timeStampStatus.Header.Size = NDIS_SIZEOF_STATUS_INDICATION_REVISION_1;
+
+    timeStampStatus.SourceHandle = MiniportAdapterHandle;
+    timeStampStatus.StatusBuffer = &timeStampCapabilities;
+    timeStampStatus.StatusBufferSize = sizeof(timeStampCapabilities);
+    timeStampStatus.StatusCode = NDIS_STATUS_TIMESTAMP_CAPABILITY;
+
+    // Generate an NDIS_STATUS_TIMESTAMP_CAPABILITY status indication
+    NdisMIndicateStatusEx(MiniportAdapterHandle, &timeStampStatus);
+. . .
+}
+```
+
 
 ## Requirements
 
