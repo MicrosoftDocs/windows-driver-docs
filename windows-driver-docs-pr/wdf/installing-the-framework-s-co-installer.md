@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 ><PropertyGroup Label="Configuration">
 ><TargetVersion>Windows10</TargetVersion>
 >```
->2. In the [INF Manufacturer Section](/windows-hardware/drivers/install/inf-manufacturer-section), specify 10.0 as target OS version, as follows:
+>2. In the [INF Manufacturer Section](../install/inf-manufacturer-section.md), specify 10.0 as target OS version, as follows:
 >```inf
 >[Manufacturer]
 >%MyMfg% = MyMfg, NTamd64.10.0
@@ -132,4 +132,3 @@ KmdfLibraryVersion = 1.0
 ....
 =============== End of MyDevice.inf ===============
 ```
-

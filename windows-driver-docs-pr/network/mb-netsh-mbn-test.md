@@ -11,7 +11,7 @@ You need to install the Hardware Lab Kit (HLK) client first to enable this featu
 ## HLK
 Install the [HLK client](/windows-hardware/test/hlk/getstarted/step-2--install-client-on-the-test-system-s-) to enable the **netsh mbn test** function in DUT.
 
-Alternatively, you can install [**HLK Taef Tool**](/windows-hardware/drivers/taef/) in the HLK package (path: installer\HLK-TAEF-TOOL-[arch-language]) to enable **netsh mbn test**.
+Alternatively, you can install [**HLK Taef Tool**](../taef/index.md) in the HLK package (path: installer\HLK-TAEF-TOOL-[arch-language]) to enable **netsh mbn test**.
 
 Run the test command on the Device Under Test (DUT) that installed the HLK client.
 
@@ -33,4 +33,3 @@ Example:
 ```
 netsh mbn test feature=connectivity param="AccessString=internet"
 ```
-

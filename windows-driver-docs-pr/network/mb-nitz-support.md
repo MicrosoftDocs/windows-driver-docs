@@ -85,7 +85,7 @@ This CID only uses generic status codes defined in Section 9.4.5 of the [MBIM sp
 ## Hardware Lab Kit (HLK) Tests
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
 
-In HLK Studio connect to hte device Cellular modem driver and run the test: [TestNitzInfo - GSM](https://docs.microsoft.com/windows-hardware/test/hlk/testref/1b192aa8-6a84-4c5c-8750-a8f2edb98a9e).
+In HLK Studio connect to hte device Cellular modem driver and run the test: [TestNitzInfo - GSM](/windows-hardware/test/hlk/testref/1b192aa8-6a84-4c5c-8750-a8f2edb98a9e).
 
 ## Manual Tests
 ### [NITZ] Time update while roaming on Cellular 

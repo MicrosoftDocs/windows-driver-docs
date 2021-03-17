@@ -181,4 +181,4 @@ Here is sample success log for the Enable Profile Operation:
 
 ## See Also
 
-[MB eSIM MBIM Ready-State Guidance](https://docs.microsoft.com/windows-hardware/drivers/network/mb-esim-mbim-ready-state-guidance)
+[MB eSIM MBIM Ready-State Guidance](./mb-esim-mbim-ready-state-guidance.md)

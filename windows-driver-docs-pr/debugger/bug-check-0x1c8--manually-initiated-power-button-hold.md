@@ -42,4 +42,4 @@ Parameter | Description
 
 [Inside Show - Bugcheck 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD](https://channel9.msdn.com/Shows/Inside/0x1C8)
 
-[ACPI button device](/windows-hardware/drivers/hid/acpi-button-device)
+[ACPI button device](../hid/acpi-button-device.md)

@@ -119,7 +119,7 @@ In HLK Studio connect to the device Cellular modem driver and run these tests:
 - [**TestRadioStateSoftware**](/windows-hardware/test/hlk/testref/0aa9981a-e556-4338-a568-b17289dd9742) 
 - [**TestRadioStateHardware**](/windows-hardware/test/hlk/testref/fa0bd189-b332-4651-8eda-e89866d2e2f1) 
 
-Alternatively you can run the **TestRadioStateHardware** and **TestRadioStateSoftware** HLK testlist by [**netsh-mbn**](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
+Alternatively you can run the **TestRadioStateHardware** and **TestRadioStateSoftware** HLK testlist by [**netsh-mbn**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
 ```
 netsh mbn test feature=radio testpath="C:\data\test\bin" taefpath="C:\data\test\bin" param="AccessString=internet"
 ```
@@ -166,6 +166,4 @@ Logs can be collected and decoded using these instructions: [MB Collecting Logs]
 The only useful utility under this namespace for radio management is MobileBroadbandDeviceInformation.CurrentRadioState.
 
 ## See Also
-[OID_WWAN_RADIO_STATE](/windows-hardware/drivers/network/oid-wwan-radio-state)
-
-
+[OID_WWAN_RADIO_STATE](./oid-wwan-radio-state.md)

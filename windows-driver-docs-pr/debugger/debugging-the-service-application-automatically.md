@@ -13,7 +13,7 @@ A debugger can be launched automatically when the service application starts up.
 Then use the following procedure:
 
 1.  Do one of the following preparatory steps:
-    -   If you plan to debug the service application from the very beginning, including its initialization code, follow the procedure described in [Enabling the Debugging of the Initialization Code](https://docs.microsoft.com/windows-hardware/drivers/debugger/preparing-to-debug-the-service-application#-enabling-the-debugging-of-the-initialization-code). Alternatively, if you want the service application to break into the debugger when it crashes or encounters an exception, follow the procedure described in [Enabling the Service Application to Break Into the Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/preparing-to-debug-the-service-application#-enabling-the-debugging-of-the-initialization-code).
+    -   If you plan to debug the service application from the very beginning, including its initialization code, follow the procedure described in [Enabling the Debugging of the Initialization Code](./preparing-to-debug-the-service-application.md#-enabling-the-debugging-of-the-initialization-code). Alternatively, if you want the service application to break into the debugger when it crashes or encounters an exception, follow the procedure described in [Enabling the Service Application to Break Into the Debugger](./preparing-to-debug-the-service-application.md#-enabling-the-debugging-of-the-initialization-code).
     -   To assure that the service application will allow the debugger to run properly, perform the procedure described in [Adjusting the Service Application Timeout](preparing-to-debug-the-service-application.md#adjusting-the-service-application-timeout).
     -   If the service is combined with other services in a single SvcHost process, perform the procedure described in Isolating the Service.
 
@@ -42,6 +42,4 @@ Then use the following procedure:
 
 
 [DebugBreak function](/windows/win32/api/debugapi/nf-debugapi-debugbreak)
-
- 
 
