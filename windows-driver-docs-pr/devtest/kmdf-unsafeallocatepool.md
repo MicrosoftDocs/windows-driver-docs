@@ -1,7 +1,7 @@
 ---
 title: UnSafeAllocatePool rule (kmdf)
 description: Learn about the UnSafeAllocatePool rule (kmdf). 
-ms.date: 12/16/2020
+ms.date: 01/15/2021
 keywords: ["UnSafeAllocatePool rule (KMDF)"]
 topic_type:
 - apiref
@@ -22,17 +22,17 @@ The UnsafeAllocatePool rule specifies that the driver should not call:
 
 [ExAllocatePoolWithTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota) 
+[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
 
 [ExAllocatePoolWithQuotaTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) 
+[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
 
 This rule is available in preview WDK builds 20236 and above.
 
-## Driver updates for versions of Windows later than Windows 10, version 2004
+## Driver updates for versions of Windows 10, version 2004 and later
 
-If you are building a driver that targets versions of Windows after Windows 10, version 2004, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
+If you are building a driver that targets Windows 10, version 2004 and later, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
 
 | Old API                       | New API                                                                     |
 |-------------------------------|-----------------------------------------------------------------------------|

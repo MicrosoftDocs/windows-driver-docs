@@ -1,7 +1,7 @@
 ---
 title: MB Provisioned Context Operations
 description: MB Provisioned Context Operations
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -159,7 +159,7 @@ The original MBIM_CONTEXT_TYPES from MBIM 1.0 is still valid. Microsoft is addin
 | Type | Value | Description |
 | --- | --- | --- |
 | MBIMMsContextTypeAdmin | 5f7e4c2e-e80b-40a9-a239-f0abcfd11f4b | The context is used for administrative purposes such as device management. |
-| MBIMMSContextTypeApp | 74d88a3d-dfbd-4799-9a8c-7310a37bb2ee | The context is used for certain applications whitelisted by mobile operators. |
+| MBIMMSContextTypeApp | 74d88a3d-dfbd-4799-9a8c-7310a37bb2ee | The context is used for certain applications allowlisted by mobile operators. |
 | MBIMMsContextTypeXcap | 50d378a7-baa5-4a50-b872-3fe5bb463411 | The context is used for XCAP provisioning on IMS services. |
 | MBIMMsContextTypeTethering | 5e4e0601-48dc-4e2b-acb8-08b4016bbaac | The context is used for Mobile Hotspot tethering. |
 | MBIMMsContextTypeEmergencyCalling | 5f41adb8-204e-4d31-9da8-b3c970e360f2 | The context is used for IMS emergency calling. |
@@ -215,3 +215,80 @@ For Set operations only:
 | --- | --- |
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_WRITE_FAILURE | The operation failed because the update request was unsuccessful. |
+
+## Initialization of devices with a provisioned context
+
+### Initialization of a non-SIM-locked GPRS device with a provisioned context
+
+The following diagram represents the optimal user experience for GSM-based MB devices. The out-of-box experience requires no user configuration. It is assumed that the device is configured to automatically select the network to register with. The labels in bold represent OID identifiers or transactional flow control. The labels in regular text represent the important flags within the OID structure.
+
+![diagram illustrating the gsm-based mb device-initialization sequence](images/wwangsmdevinitseq.png)
+
+To initialize a non-SIM-locked GSM-based device, implement the following steps:
+
+1.  The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_READY\_INFO](oid-wwan-ready-info.md) query request to the miniport driver to identify the ready state of the device. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+
+2.  The miniport driver sends an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) notification to the MB Service that indicates to the MB Service that the state of the MB device is **WwanReadyStateInitialized**.
+
+3.  The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_REGISTER\_STATE](oid-wwan-register-state.md) query request to the miniport driver to identify the registration state of the device. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+
+4.  The miniport driver sends an [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md) notification to the MB Service that indicates that the registration mode of the device is **WwanRegistraterModeAutomatic** and its current registration state is **WwanRegisterStateSearching**.
+
+5.  Later, when the device is registered to a network provider, the miniport driver sends an unsolicited NDIS\_STATUS\_WWAN\_REGISTER\_STATE notification to the MB Service that indicates that the current registration state of the device is **WwanRegisterStateHome**.
+
+6.  The device attempts to attach the packet service. When the packet service state changes to attached, the miniport driver sends an unsolicited [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](ndis-status-wwan-packet-service.md) notification to the MB Service that indicates that the packet service is attached and current data class is **WWAN\_DATA\_CLASS\_GPRS**.
+
+7.  The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_HOME\_PROVIDER](oid-wwan-home-provider.md) query request to the miniport driver to retrieve home provider information. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that is has received the request, and it will send a notification with the requested information in the future.
+
+8.  The miniport driver sends an [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md) notification to the MB Service that indicates the home provider details.
+
+9.  The MB Service sends an asynchronous (non-blocking) OID\_WWAN\_PROVISIONED\_CONTEXTS query request to the miniport driver to retrieve the list of provisioned contexts. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+
+10. The miniport driver sends an [**NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS**](ndis-status-wwan-provisioned-contexts.md) notification to the MB Service that contains a list of [**WWAN\_CONTEXT**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_context) structures.
+
+11. The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_CONNECT](oid-wwan-connect.md) set request to the miniport driver to activate the Packet Data Protocol (PDP) context. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+
+12. The miniport driver sends an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](ndis-status-wwan-context-state.md) notification to the MB Service that indicates that the PDP context is activated.
+
+13. The miniport driver sends an [**NDIS\_STATUS\_LINK\_STATE**](ndis-status-link-state.md) notification to indicate that the media connect state is **MediaConnectStateConnected**.
+
+### Initialization of a CDMA Packet Device with a Provisioned Context
+
+
+The following diagram illustrates the optimal user experience for CDMA-based devices. The out-of-box experience does not require user configuration. This scenario assumes that the CDMA-based account has not been activated. Unlike GSM-based devices, a CDMA-based device automatically starts registration with the network after activation is complete. The labels in bold are OID identifiers or transactional flow control. The labels in regular text are the important flags within the OID structure.
+
+![diagram illustrating the cdma-based mobile broadband-device initialization sequence](images/wwancdmadevinitseq.png)
+
+To initialize a CDMA-based packet device with a provisioned context, implement the following steps:
+
+1.  The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_READY\_INFO](oid-wwan-ready-info.md) to the miniport driver. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and that it will send a notification with the requested information in the future.
+
+2.  The miniport driver sends NDIS\_STATUS\_WWAN\_FAILURE to the MB Service.
+
+3.  The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_SERVICE\_ACTIVATION](oid-wwan-service-activation.md) to the miniport driver. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and that it will send a notification with the requested information in the future.
+
+4.  The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
+
+5.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md) to the MB Service.
+
+6.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md) to the MB Service.
+
+7.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](ndis-status-wwan-packet-service.md) to the MB Service.
+
+8.  The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_HOME\_PROVIDER](oid-wwan-home-provider.md) to the miniport driver. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and that it will send a notification with the requested information in the future.
+
+9.  The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
+
+10. The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_PROVISIONED\_CONTEXTS](oid-wwan-provisioned-contexts.md) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and that it will send a notification with the requested information in the future.
+
+11. The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
+
+12. The MB Service sends an asynchronous (non-blocking) [OID\_WWAN\_PROVISIONED\_CONTEXTS](oid-wwan-provisioned-contexts.md) to the miniport driver. The miniport driver responds with a provisional acknowledgment (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+
+13. The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
+
+14. The miniport driver sends [**NDIS\_STATUS\_LINK\_STATE**](ndis-status-link-state.md) to the MB Service.
+
+### See Also
+ 
+[MB Device Readiness](mb-device-readiness.md)

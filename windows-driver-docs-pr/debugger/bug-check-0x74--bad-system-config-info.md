@@ -2,7 +2,7 @@
 title: Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO
 description: The BAD_SYSTEM_CONFIG_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
 keywords: ["Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO", "BAD_SYSTEM_CONFIG_INFO"]
-ms.date: 03/24/2019
+ms.date: 01/29/2021
 topic_type:
 - apiref
 api_name:
@@ -133,8 +133,13 @@ Index 5: 	 e9dd6ce5 kcb=ffffd805e4180e48 cell=00812970 f=00200000 \REGISTRY\MACH
 
 ```
 
-Remarks
-----------
+## Remarks
+
+For general information on determining the cause of a blue screen, refer to [Blue Screen Data](blue-screen-data.md).
+
+It is always a good idea to confirm that there is sufficient hard drive or SSD storage available to allow the OS to function normally.
+
+The system file checker tool can look for corruptions in Windows. For more information, see [Use the System File Checker tool to repair missing or corrupted system files](https://support.microsoft.com/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e).
 
 Try booting into safe mode and then restart the OS normally. If the restart does not fix the problem, the registry damage is too extensive. Try the following steps.
 

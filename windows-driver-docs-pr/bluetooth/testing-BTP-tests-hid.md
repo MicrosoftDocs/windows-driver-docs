@@ -33,6 +33,8 @@ As a test starts the red LED next to the 12 pin adapter will turn on once the co
 
 To capture the Bluetooth logs, follow the instructions at [The Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
+To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](testing-BTP-tools-btetlparse.md).
+
 ## Known issues ##
 
 - Stress tests: Tests run in a tight loop using an LE radio may cause pairing or unpairing to fail.

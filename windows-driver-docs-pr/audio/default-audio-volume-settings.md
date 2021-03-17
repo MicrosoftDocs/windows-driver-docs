@@ -77,6 +77,13 @@ The following table shows the volume ranges and default volume levels for audio 
 <td align="left"><p>Default level: 0.0 dB</p>
 <p>Volume Range: -96 dB ~ 0 dB</p></td>
 </tr>
+<tr class="even">
+<td align="left">Windows 10</td>
+<td align="left"><p>Default level: 0.0 dB</p>
+<p>Volume Range: -96 dB ~ +30 dB</p></td>
+<td align="left"><p>Default level: 0.0 dB</p>
+<p>Volume Range: -96 dB ~ 0 dB</p></td>
+</tr>
 </tbody>
 </table>
 

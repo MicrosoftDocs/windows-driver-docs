@@ -36,7 +36,7 @@ Type the following command at the Powershell command prompt:
 Get-CimInstance Win32_SystemDriver -Filter "name='your_driver_name'" | Invoke-CimMethod -MethodName Delete
 ```
 
-See [CimCmdlets](/powershell/module/cimcmdlets/?view=powershell-7) for more information.
+See [CimCmdlets](/powershell/module/cimcmdlets) for more information.
 
 ## Uninstall Application
 

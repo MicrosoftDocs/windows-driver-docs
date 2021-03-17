@@ -15,13 +15,13 @@ keywords:
 - inter-unit connections WDK AV/C
 - Avc.sys function driver WDK , connections
 - external plug connections WDK AV/C
-ms.date: 06/15/2020
+ms.date: 03/05/2021
 ms.localizationpriority: medium
 ---
 
 # AV/C Connection Scenarios
 
-Before Windows Vista, the Connection and Compatibility Management (CCM) protocol in *Avc.sys* supported a single connection scenario, in which the computer acted as a controller for an external AV/C device to initiate data streaming from the device. For example, to begin streaming, the connection management in *Avc.sys* established a connection between a subunit on the device and the isochronous output plug of the device unit by using the connect and disconnect unit commands ([**AVC\_FUNCTION\_ACQUIRE**](./avc-function-acquire.md) and [**AVC\_FUNCTION\_RELEASE**](./avc-function-release.md), respectively). For more information about the AV/C specification and the CCM protocol, see the [1394 Trade Association](https://1394ta.org/library-2) website.
+Before Windows Vista, the Connection and Compatibility Management (CCM) protocol in *Avc.sys* supported a single connection scenario, in which the computer acted as a controller for an external AV/C device to initiate data streaming from the device. For example, to begin streaming, the connection management in *Avc.sys* established a connection between a subunit on the device and the isochronous output plug of the device unit by using the connect and disconnect unit commands ([**AVC\_FUNCTION\_ACQUIRE**](./avc-function-acquire.md) and [**AVC\_FUNCTION\_RELEASE**](./avc-function-release.md), respectively).
 
 In Windows Vista, the connection management has been improved to support seven more connection scenarios, so that *Avc.sys* supports eight unit/subunit connection scenarios. The connection management improvements add support for connections from subunit plugs to other subunit plugs; the subunits can be within the same AV/C unit or in different AV/C units. *Avc.sys* establishes connections by using the signal-source and then input-select CCM protocol unit commands. (*Avc.sys* supports other CCM protocol unit commands, such as output-preset, only to the level that the AV/C specification requires.)
 

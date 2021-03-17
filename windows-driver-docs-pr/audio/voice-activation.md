@@ -118,7 +118,7 @@ AEC Requirements for HW KWS
 
 There is sample code for an audio driver that implements voice activation on GitHub as part of the SYSVAD virtual audio adapter sample. It is recommended to use this code as a starting point. The code is available at this location.
 
-<https://github.com/Microsoft/Windows-driver-samples/blob/master/audio/sysvad/>
+<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/>
 
 For more information about the SYSVAD sample audio driver, see [Sample Audio Drivers](sample-audio-drivers.md).
 

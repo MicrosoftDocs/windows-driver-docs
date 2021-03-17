@@ -164,5 +164,3 @@
       href: force-feedback-device-driver-interface.md
     - name: "Extending the DirectInput Game Controller Control Panel"
       href: extending-the-directinput-game-controller-control-panel.md
-- name: "Hdpi.h Macros"
-  href: hdpi-h-macros.md

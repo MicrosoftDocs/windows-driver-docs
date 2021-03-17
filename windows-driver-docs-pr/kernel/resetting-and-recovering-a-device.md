@@ -124,7 +124,7 @@ Asl <test>.asl
 2. Rename SSDT.aml to acpitabl.dat. 
 3. Copy acpitabl.dat to %systemroot%\system32 on the test system. 
 4. Enable test signing on the test system. 
-      Bcdedit /set GUID_DEVICE_RESET_INTERFACE_STANDARD testsigning on
+      Bcdedit /set testsigning on
 
 5. Reboot the test system. 
 6. Verify that the table is loaded. In Windows Debugger, use these commands. 

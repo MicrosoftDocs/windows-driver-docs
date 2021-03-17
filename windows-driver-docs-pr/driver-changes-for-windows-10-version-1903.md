@@ -17,7 +17,7 @@ The following is a list of new and updated Audio features in Windows 10, version
 * New Far Field Audio information: 
     * [PKEY_Devices_AudioDevice_Microphone_IsFarField](./audio/pkey-devices-audiodevice-microphone-isfarfield.md)
     * [KSPROPSETID_InterleavedAudio](./audio/kspropsetid-interleavedaudio.md)
-    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://review.docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
+    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
     
 * New jack description information in [USB Audio 2.0 Drivers](./audio/usb-2-0-audio-drivers.md).
 

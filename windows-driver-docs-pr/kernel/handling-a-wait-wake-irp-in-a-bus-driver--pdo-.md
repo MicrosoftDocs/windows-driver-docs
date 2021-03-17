@@ -38,6 +38,10 @@ Like other power IRPs, each wait/wake IRP must be passed all the way down the de
 
 7.  When a wake-up signal arrives, call **IoCompleteRequest** to complete the pending wait/wake IRP, setting **Irp-IoStatus.Status** to STATUS\_SUCCESS, and specifying a priority boost of IO\_NO\_INCREMENT.
 
+> [!NOTE]
+> During device removal, normally the power policy owner (PPO) should have cancelled the wait-wake IRP. But in case the PPO does not do so, as a resiliency mechanism we recommend that the bus PDO complete the IRP with a failure status. The bus PDO should do this when handling both IRP_MN_SURPRISE_REMOVE and IRP_MN_REMOVE_DEVICE.
+
+
 ### For Devices That Do Not Support Wake-Up
 
 If the device does not support wake-up, the bus driver (PDO) should proceed as follows:
