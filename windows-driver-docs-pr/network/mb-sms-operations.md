@@ -115,8 +115,8 @@ Logs can be collected and decoded using these instructions: [MB Collecting Logs]
 
 ### Operator Messages
 
-Operators can provision devices to handle particular messages earlier. This is no longer available, but the feature has not been completely removed yet. The code ProvisioningEngine processes the Operator Notifications. For more information see [Operator Notifications](/windows-hardware/drivers/mobilebroadband/enabling-mobile-operator-notifications-and-system-events) and 
-[Operator Events](/windows-hardware/drivers/mobilebroadband/mobile-operator-notification-event-technical-details).
+Operators can provision devices to handle particular messages earlier. This is no longer available, but the feature has not been completely removed yet. The code ProvisioningEngine processes the Operator Notifications. For more information see [Operator Notifications](../mobilebroadband/enabling-mobile-operator-notifications-and-system-events.md) and 
+[Operator Events](../mobilebroadband/mobile-operator-notification-event-technical-details.md).
 
 ### Broadcast Messages
 
@@ -136,4 +136,4 @@ For more information see [UWP SMS](/uwp/api/Windows.Devices.Sms).
 
 ## Other Relevant Links
 
-* [Developing SMS apps](/windows-hardware/drivers/mobilebroadband/developing-sms-apps)
+* [Developing SMS apps](../mobilebroadband/developing-sms-apps.md)

@@ -17,7 +17,7 @@ There are three modes available via the menu bar on the left-hand side in Sensor
 
 - **View:** Used for viewing sensor data and properties. In this mode the app displays a data visualization from a variety of sensors such as accelerometer, compass, gyrometer, inclinometer, light sensor, and orientation sensor and shows detailed sensor information in tabular format. This provides monitoring of any abnormal behaviors of the sensors, and can also be used to set the report interval of sensors.
 
-- **MALT:** Used for connecting to and controlling a [MALT (Microsoft Ambient Light Tool)](/windows-hardware/drivers/sensors/testing-malt-building-a-light-testing-tool), a simple low-cost light testing apparatus. The tool combines a microcontroller, light sensors, and a controllable light panel to calibrate light sensors and visually measure a panel's light curve.
+- **MALT:** Used for connecting to and controlling a [MALT (Microsoft Ambient Light Tool)](./testing-malt-building-a-light-testing-tool.md), a simple low-cost light testing apparatus. The tool combines a microcontroller, light sensors, and a controllable light panel to calibrate light sensors and visually measure a panel's light curve.
 
 ## How to test your sensors with SensorExplorer
 

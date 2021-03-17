@@ -30,7 +30,7 @@ Auto-unlock after resuming from hibernation
 
 ## MBIM_CID_MS_PIN_EX
 
-This CID is described here: [MBIM_CID_MS_PIN_EX](/windows-hardware/drivers/network/mb-uicc-application-and-file-system-access#mbim_cid_ms_pin_ex)
+This CID is described here: [MBIM_CID_MS_PIN_EX](./mb-uicc-application-and-file-system-access.md#mbim_cid_ms_pin_ex)
 
 ## MBIM_CID_PIN_LIST
 
@@ -179,10 +179,10 @@ Pin List:
 
 ## See Also
 
-[OID_WWAN_PIN_EX2](/windows-hardware/drivers/network/oid-wwan-pin-ex2)
+[OID_WWAN_PIN_EX2](./oid-wwan-pin-ex2.md)
 
-[OID_WWAN_PIN_LIST](/windows-hardware/drivers/network/oid-wwan-pin-list)
+[OID_WWAN_PIN_LIST](./oid-wwan-pin-list.md)
 
-[MB UICC application and file system access](/windows-hardware/drivers/network/mb-uicc-application-and-file-system-access)
+[MB UICC application and file system access](./mb-uicc-application-and-file-system-access.md)
 
 For additional information about PIN operations, see [OID\_WWAN\_PIN](oid-wwan-pin.md).

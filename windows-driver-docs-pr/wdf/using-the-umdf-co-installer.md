@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 ><PropertyGroup Label="Configuration">
 ><TargetVersion>Windows10</TargetVersion>
 >```
->2. In the [INF Manufacturer Section](/windows-hardware/drivers/install/inf-manufacturer-section), specify 10.0 as target OS version, as follows:
+>2. In the [INF Manufacturer Section](../install/inf-manufacturer-section.md), specify 10.0 as target OS version, as follows:
 >```inf
 >[Manufacturer]
 >%MyMfg% = MyMfg, NTamd64.10.0
@@ -107,6 +107,4 @@ HKR,,CoInstallers32,0x00010000,WudfCoinstaller.dll
 Your driver's INF file must always contain a **DDInstall.Wdf** section that the co-installer reads after it has been installed. For information about directives that your driver can specify in **DDInstall.Wdf**, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 
 You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](../devtest/stampinf.md) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
-
- 
 

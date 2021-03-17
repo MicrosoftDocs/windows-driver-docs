@@ -27,6 +27,4 @@ When the driver model moves to the next version, its version number is increased
 The driver model version is conveyed by [OID\_WWAN\_DRIVER\_CAPS](./oid-wwan-driver-caps.md). The MB Service sends an OID\_WWAN\_DRIVER\_CAPS query request to the miniport driver during [MB Miniport Driver Initialization](mb-device-readiness.md#mb-miniport-driver-initialization). Individual OID revisions are described by the **Revision** member of the [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure that is included as part of the data structure for each individual OID.
 
 ## See also
-[MBIM extension 2.0 versioning for 5G](mb-5g-data-class-support.md)
- 
-
+[MBIM extension 2.0 versioning for 5G](./mb-5g-operations-overview.md)

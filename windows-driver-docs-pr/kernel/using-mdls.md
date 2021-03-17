@@ -33,7 +33,7 @@ The [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md) routine maps the phy
 
 Note that when you build a partial MDL by using the [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) routine that **MmGetMdlVirtualAddress** returns the original starting address for the partial MDL. This address is a user-mode address if the MDL was originally created as a result of a user-mode request. As such, the address has no relevance outside of the context of the process where the request originated.
 
-Typically, a driver instead creates a *system* mode address by calling the [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/kernel/mm-bad-pointer) macro to map the partial MDL. This ensures that the driver can continue to access the pages safely regardless of  process context.
+Typically, a driver instead creates a *system* mode address by calling the [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md) macro to map the partial MDL. This ensures that the driver can continue to access the pages safely regardless of  process context.
 
 When a driver calls **IoAllocateMdl**, it can associate an IRP with the newly allocated MDL by specifying a pointer to the IRP as the *Irp* parameter of **IoAllocateMdl**. An IRP can have one or more MDLs associated with it. If the IRP has a single MDL associated with it, the IRP's **MdlAddress** member points to that MDL. If the IRP has multiple MDLs associated with it, **MdlAddress** points to the first MDL in a linked list of MDLs that are associated with the IRP, known as an *MDL chain*. The MDLs are linked by their **Next** members. The **Next** member of the last MDL in the chain is set to **NULL**.
 
