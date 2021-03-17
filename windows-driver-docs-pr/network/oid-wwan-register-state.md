@@ -48,7 +48,7 @@ To control the preferred RAT, the host sets a bitmask representing WWAN_DATA_CLA
 
 The host can also query the currently preferred data classes from the miniport driver. The miniport driver uses the **PreferredDataClasses** field of the [**WWAN_REGISTRATION_STATE**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_registration_state) structure to report the preferred data access technologies that are currently set in the modem.
 
-For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
+For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
 Requirements
 ------------
@@ -78,6 +78,4 @@ Requirements
 [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md)
 
 [WWAN Registration Operations](./mb-registration-operations.md)
-
- 
 

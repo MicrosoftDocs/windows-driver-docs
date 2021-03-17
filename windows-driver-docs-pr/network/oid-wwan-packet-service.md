@@ -40,7 +40,7 @@ The host can query the extended packet service state information at any time. Th
 
 If the modem is registered in a 5G domain, it returns the 5G frequency range of the carrier. If multiple 5G carriers exist, then all valid ranges are returned.
 
-For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
+For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
 Requirements
 ------------
@@ -70,6 +70,4 @@ Requirements
 [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](ndis-status-wwan-packet-service.md)
 
 [WWAN Packet Service Attach Operations](./mb-packet-service-attach-operations.md)
-
- 
 

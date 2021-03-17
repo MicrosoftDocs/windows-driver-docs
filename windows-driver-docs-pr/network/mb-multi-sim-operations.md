@@ -467,7 +467,7 @@ If DSSA is supported on the device, there are some scenarios where slot switch i
 
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
 
-In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestSlot](https://docs.microsoft.com/windows-hardware/test/hlk/testref/defddebe-cc40-4d6f-9b0c-ca5ca9a1cb4d). This test contains the following four tests:
+In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestSlot](/windows-hardware/test/hlk/testref/defddebe-cc40-4d6f-9b0c-ca5ca9a1cb4d). This test contains the following four tests:
 
 | Test Name | Description |
 |---|---|
@@ -476,7 +476,7 @@ In HLK Studio connect to the device Cellular modem driver and run the test: [Win
 | QuerySlotInfo | This test verifies the test can successfully query device slot information. |
 | ValidateSlotInfoState | This test validates UICC Slot state against ReadyInfoState. |
 
-Alternatively, you can run the **TestSlot** HLK testlist by [**netsh-mbn**](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
+Alternatively, you can run the **TestSlot** HLK testlist by [**netsh-mbn**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
 
 ```
 netsh mbn test feature=dssa testpath="C:\data\test\bin" taefpath="C:\data\test\bin" param="AccessString=internet"
