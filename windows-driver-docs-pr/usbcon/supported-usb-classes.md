@@ -83,8 +83,8 @@ The device setup classes are different from USB device classes discussed earlier
       <tr>
         <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Dh (NCM)</td>
         <td>UsbNcm.sys</br>UsbNcm.inf</td>
-        <td>Windows vNext</td>
-        <td>Microsoft providers the UsbNcm.sys driver to operate devices that comply with <a href="https://www.usb.org/document-library/network-control-model-devices-specification-v10-and-errata-and-adopters-agreement">Usb NCM</a>. The source code for this driver is publicly avaiable at Github <a href="https://github.com/microsoft/NCM-Driver-for-Windows">NCM-Driver-for-Windows</a> </td>
+        <td>Windows Insider Preview</td>
+        <td>Microsoft provides the UsbNcm.sys driver to operate devices that comply with <a href="https://www.usb.org/document-library/network-control-model-devices-specification-v10-and-errata-and-adopters-agreement">Usb NCM</a>. The source code for this driver is available at <a href="https://github.com/microsoft/NCM-Driver-for-Windows">NCM-Driver-for-Windows</a>.</td>
       </tr>
       <tr>
         <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Eh (MBIM)</td>
@@ -226,8 +226,7 @@ The device setup classes are different from USB device classes discussed earlier
 {4d36e972-e325-11ce-bfc1-08002be10318}<p><strong>Note</strong>  Supports SubClass 04h and Protocol 01h</td>
       <td>Rndismp.sys</br>Rndismp.inf</td>
       <td>Windows 10 for desktop editions</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Vista</td>
-      <td><p><strong>Note</strong> Microsoft recommends hardware vendors to build USB NCM compatible device instead. USB NCM is public USB-IF protocol that allows better throughput performance</p>
-  Prior to Windows Vista, support for CDC is limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (<strong>bInterfaceProtocol</strong>) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see the <a href="/windows-hardware/drivers/network/">Networking and Wireless Technologies</a> website.</td>
+      <td><p><strong>Note</strong> Microsoft recommends that hardware vendors build USB NCM compatible devices instead. USB NCM is a public USB-IF protocol that offers better throughput performance.</p><p>Prior to Windows Vista, support for CDC was limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (<strong>bInterfaceProtocol</strong>) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see <a href="/windows-hardware/drivers/network/">Networking and Wireless Technologies</a>.</td>
     </tr>
     <tr>
       <td>Application Specific (FEh)</td>
