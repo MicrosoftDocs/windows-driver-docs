@@ -149,6 +149,11 @@ As mentioned, a JavaScript script can get access to native objects by having the
 <p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
 <p>If the optional <em>typeName</em> argument is supplied, the symbol will be assumed to be of the passed type and the type indicated in symbol(s) will be ignored. Note that any caller which expects to operate on public symbols for a module should always supply an explicit type name.</p></td>
 </tr>
+<tr>
+<td align="left"><p>host.getModuleContainingSymbol</p></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
 <tr class="even">
 <td align="left"><p>host.createPointerObject</p></td>
 <td align="left"><p>createPointerObject(address, moduleName, typeName, [contextInheritor])</p></td>
