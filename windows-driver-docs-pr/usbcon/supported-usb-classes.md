@@ -66,7 +66,7 @@ The device setup classes are different from USB device classes discussed earlier
       <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="/windows-hardware/drivers/audio/">Audio Device Technologies for Windows</a> website.</td>
     </tr>
     <tr>
-      <td rowspan="4">Communications and CDC Control (02h)</td>
+      <td rowspan="5">Communications and CDC Control (02h)</td>
         <tr>
         <td><strong>Ports</strong></br>{4D36E978-E325-11CE-BFC1-08002BE10318}</td>
         <td>Usbser.sys</br>Usbser.inf</td>
