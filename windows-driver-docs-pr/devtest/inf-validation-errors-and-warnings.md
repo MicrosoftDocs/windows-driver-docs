@@ -307,22 +307,22 @@ The following errors and warnings are related to Windows Driver requirements:
 <tbody>
 <tr>
 <td><strong>1320: Registry root <em>Xxx</em> is not isolated to HKR</strong></td>
-<td>Error 1320 indicates that a registry key operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation.md#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
+<td>Error 1320 indicates that a registry key operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
 </td>
 </tr>
 <tr>
 <td><strong>1321: Registry root <em>Xxx</em> of value <em>Xxx</em> is not isolated to HKR</strong></td>
-<td>Error 1321 indicates that a registry value operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation.md#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
+<td>Error 1321 indicates that a registry value operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
 </td>
 </tr>
 <tr>
 <td><strong>1322: Destination file path <em>Xxx</em> for file <em>Xxx</em> is not isolated to DIRID 13</strong></td>
-<td>Error 1322 indicates that a file is copied to a an invalid destination, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation.md#run-from-driver-store"><strong>Run from Driver Store</strong></a>.
+<td>Error 1322 indicates that a file is copied to a an invalid destination, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#run-from-driver-store"><strong>Run from Driver Store</strong></a>.
 </td>
 </tr>
 <tr>
 <td><strong>1323: Service registry key <em>Xxx</em> must be under the Parameters subkey</strong></td>
-<td>Error 1323 indicates that a service registry value is not set as an HKR under the parameters subkey, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation.md#service-registry-state"><strong>Service Registry State</strong></a>.
+<td>Error 1323 indicates that a service registry value is not set as an HKR under the parameters subkey, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#service-registry-state"><strong>Service Registry State</strong></a>.
 </td>
 </tr>
 <tr>

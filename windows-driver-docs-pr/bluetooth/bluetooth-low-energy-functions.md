@@ -37,4 +37,6 @@ This section contains reference pages for the following Bluetooth Low Energy fun
 
 ## See Also
 
-[Bluetooth Low Energy Overview](bluetooth-low-energy-overviewcreating-a-l2cap-client-connection-to-a-remote-device.md)
+[Bluetooth Low Energy Overview](bluetooth-low-energy-overview.md)
+
+[Creating a L2CAP Client Connection to a Remote Device](creating-a-l2cap-client-connection-to-a-remote-device.md)
