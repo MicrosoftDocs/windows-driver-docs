@@ -382,12 +382,12 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-|Command |[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
-|--- |--- |--- |--- |
-|root|yes|yes| | |
-|initializeScript|yes|yes| | |
-|invokeScript		| |yes| |
-|uninitializeScript | ||yes|
+| Command            | [.scriptload](-scriptload--load-script-.md) | [.scriptrun (Run Script)](-scriptrun--run-script-.md) | [.scriptunload (Unload Script)](-scriptunload--unload-script-.md) |
+|--------------------|---------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------------|
+| root               | yes                                         | yes                                                   |                                                                   |
+| initializeScript   | yes                                         | yes                                                   |                                                                   |
+| invokeScript       |                                             | yes                                                   |                                                                   |
+| uninitializeScript |                                             |                                                       | yes                                                               |
 
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.

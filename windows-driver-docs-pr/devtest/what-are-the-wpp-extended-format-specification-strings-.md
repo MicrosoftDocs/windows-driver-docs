@@ -19,20 +19,20 @@ WPP uses "defaultwpp.ini" for the default configuration settings. This default I
 
 ### Software tracing
 
-|Format string|Description|
-|----|----|
-|%!FILE!|Displays the name of the source file from which the trace message was generated. This variable can also be used in the [trace message prefix](trace-message-prefix.md)|.
-|%!FLAGS!|Displays the value of the [trace flags](trace-flags.md) that enable the trace message. This variable can also be used in the  [trace message prefix](trace-message-prefix.md).|
-|%!FUNC!|Displays the function that generated the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).|
-|%!LEVEL!|Displays the name of the [trace level](trace-level.md)  that enables the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).|
-|%!LINE!|Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the [trace message prefix](trace-message-prefix.md).|
+| Format string | Description                                                                                                                                                                    |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| %!FILE!       | Displays the name of the source file from which the trace message was generated. This variable can also be used in the [trace message prefix](trace-message-prefix.md).        |
+| %!FLAGS!      | Displays the value of the [trace flags](trace-flags.md) that enable the trace message. This variable can also be used in the  [trace message prefix](trace-message-prefix.md). |
+| %!FUNC!       | Displays the function that generated the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).                                 |
+| %!LEVEL!      | Displays the name of the [trace level](trace-level.md)  that enables the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md). |
+| %!LINE!       | Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the [trace message prefix](trace-message-prefix.md).       |
 
 ### General use
 
-|Format string|Description|
-|----|----|
-|%!bool!|Displays TRUE or FALSE|
-|%!irql!|Displays the name of the current IRQL.|
+| Format string | Description                            |
+|---------------|----------------------------------------|
+| %!bool!       | Displays TRUE or FALSE                 |
+| %!irql!       | Displays the name of the current IRQL. |
 |%!sid!|Represents a pointer to Security Identifier (pSID). Displays the SID.|
 |**GUIDs**| |
 |%!GUID!|Represents a pointer to a GUID (pGUID). Displays the GUID that is pointed to.|
