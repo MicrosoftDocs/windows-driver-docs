@@ -40,7 +40,7 @@ int __cdecl ToggleConversionIndicator(
 }
 ```
 
- 
+<b>Note:</b> The laptop/slate mode indicator device can be opened by only one process at a time. CreateFile will fail and GetLastError will return ERROR_ACCESS_DENIED when the device is already opened by another process. 
 
  
 
