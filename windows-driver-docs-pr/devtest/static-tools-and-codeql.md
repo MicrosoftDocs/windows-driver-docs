@@ -468,7 +468,7 @@ The Static Tools Logo Test in the HLK is the test that enforces this requirement
 
 #### Can I generate a DVL on Visual Studio solutions? 
 
-No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).
+No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](/visualstudio/get-started/tutorial-projects-solutions#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).
 
 #### Are all defects reported by CodeQL true defects?
 
