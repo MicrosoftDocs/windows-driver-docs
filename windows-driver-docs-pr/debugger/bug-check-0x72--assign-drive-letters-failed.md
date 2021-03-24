@@ -22,10 +22,15 @@ This bug check appears very infrequently.
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
  
 
- 
+Cause
+-----
+
+The system has failed to assign a drive letter to an existing volume.
+
+
+
 
 
 
