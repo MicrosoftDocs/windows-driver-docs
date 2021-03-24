@@ -62,20 +62,20 @@
 - name: "Universal camera driver model for Windows 10"
 # Auto-expanded node
   items: 
-  - name: "Universal camera driver model for Windows 10"
+  - name: "Universal camera driver model design guide for Windows 10"
     href: windows-10-technical-preview-camera-drivers-design-guide.md
-  - name: "New camera driver interfaces for Windows 10"
+  - name: "Universal camera driver interfaces for Windows 10"
 # Auto-expanded node
     items: 
-    - name: "New camera driver interfaces for Windows 10"
+    - name: "Universal camera driver reference for Windows 10"
       href: windows-10-technical-preview-camera-drivers-reference.md
-    - name: "New camera driver controls for Windows 10"
+    - name: "Universal camera driver controls for Windows 10"
       href: camera-driver-controls.md
-    - name: "New camera driver enumerations for Windows 10"
+    - name: "Universal camera driver enumerations for Windows 10"
       href: camera-driver-enumerations.md
-    - name: "New camera driver functions for Windows 10"
+    - name: "Universal camera driver functions for Windows 10"
       href: camera-driver-functions.md
-    - name: "New camera driver structures for Windows 10"
+    - name: "Universal camera driver structures for Windows 10"
       href: camera-driver-structures.md
 - name: "AVStream Minidrivers Design Guide"
 # Auto-expanded node
