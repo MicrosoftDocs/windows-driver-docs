@@ -66,10 +66,10 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.25)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)
 ```
 
-### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.16385 for Windows 10, version 2004
+### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.685 for Windows 10, version 2004
 * [Download SDK for Windows 10, version 2004](https://aka.ms/windowssdk)
 
-This SDK is strongly recommended and will eventually be made available thru Visual Studio
+This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
 ### ![download icon](images/download-install.png) Step 2: Install Refreshed WDK for Windows 10, version 2004
