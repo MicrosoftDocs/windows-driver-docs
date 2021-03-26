@@ -4192,8 +4192,6 @@
     href: programming-considerations.md
 - name: "Winsock Kernel"
   items: 
-  - name: "Winsock Kernel Topics"
-    href: winsock-kernel4.md
   - name: "Roadmap for Developing Network Drivers with Winsock Kernel"
     href: roadmap-for-developing-network-drivers-with-winsock-kernel.md
   - name: "Introduction to Winsock Kernel"
@@ -4328,8 +4326,6 @@
     href: including-header-files-for-ip-helper.md
 - name: "Windows Filtering Platform Callout Drivers"
   items: 
-  - name: "Windows Filtering Platform Callout Driver Topics"
-    href: windows-filtering-platform-callout-drivers2.md
   - name: "Roadmap for Developing WFP Callout Drivers"
     href: roadmap-for-developing-wfp-callout-drivers.md
   - name: "Introduction to Windows Filtering Platform Callout Drivers"
