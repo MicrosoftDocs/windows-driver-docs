@@ -35,11 +35,11 @@ This guide includes the following sections:
 
 [Network Module Registrar](network-module-registrar2.md)
 
-[Winsock Kernel](winsock-kernel4.md)
+[Winsock Kernel](introduction-to-winsock-kernel.md)
 
 [IP Helper](ip-helper.md)
 
-[Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)
+[Windows Filtering Platform Callout Drivers](introduction-to-windows-filtering-platform-callout-drivers.md)
 
 [System Area Networks](system-area-networks.md)
 

@@ -63,7 +63,7 @@ For more information about using TDI transports, see [Using TDI Transports](./us
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](./windows-filtering-platform-callout-drivers2.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](./introduction-to-windows-filtering-platform-callout-drivers.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 
