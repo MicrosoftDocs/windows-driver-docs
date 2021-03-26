@@ -76,7 +76,7 @@ The Hyper-V extensible switch supports an interface in which independent softwar
 
     For an overview of WFP, see [Windows Filtering Platform](./porting-packet-processing-drivers-and-apps-to-wfp.md).
 
-    For an overview of WFP callout drivers, see [Windows Filtering Platform Callout Drivers](./windows-filtering-platform-callout-drivers2.md).
+    For an overview of WFP callout drivers, see [Windows Filtering Platform Callout Drivers](./introduction-to-windows-filtering-platform-callout-drivers.md).
 
     **Note**  To perform WFP-based filtering of extensible switch packet traffic, ISVs only need to extend their WFP filters and callout drivers to use extended WFP calls and data types. ISVs do not need to develop their own extensions.
 
