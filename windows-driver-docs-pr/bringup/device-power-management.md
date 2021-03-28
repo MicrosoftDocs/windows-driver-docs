@@ -40,12 +40,12 @@ The [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, monitors the powe
 
 There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, for each supported device power state. When the device driver decides to transition to a new power state, Acpi.sys ensures that any power resources required for the new state are turned on, and that any resources no longer in use are turned off.
 
-|Device state supported  |Resource requirements object to use  |Resources to include in requirements object  |
-|---------|---------|---------|
-|D0 (required)     |     _PR0    |     All power and clocks required for full function of the device.    |
-|D1     |     _PR1    |     Any power or clocks required for the class-defined reduced-functionality of this state.    |
-|D2     |     _PR2    |     Any power or clocks required for the class-defined reduced-functionality of this state.    |
-|D3hot (required)     |    _PR3     |    Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command.     |
+| Device state supported | Resource requirements object to use | Resources to include in requirements object |
+|--|--|--|
+| D0 (required) | _PR0 | All power and clocks required for full function of the device. |
+| D1 | _PR1 | Any power or clocks required for the class-defined reduced-functionality of this state. |
+| D2 | _PR2 | Any power or clocks required for the class-defined reduced-functionality of this state. |
+| D3hot (required) | _PR3 | Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command. |
 
 > [!NOTE]
 > If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3Cold.
