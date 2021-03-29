@@ -64,7 +64,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Header</p></td>
-<td align="left">Usbiodef.h (include Usbiodef.h, initguid.h)</td>
+<td align="left">Include initguid.h first, then include Usbiodef.h</td>
 </tr>
 </tbody>
 </table>
