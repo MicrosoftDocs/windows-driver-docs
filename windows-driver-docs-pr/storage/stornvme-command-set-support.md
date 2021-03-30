@@ -19,12 +19,12 @@ See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#p
 | 1       | Create I/O Submission Queue | Internal Driver Usage |    |
 | 2       | Get Log Page                | Internal Driver Usage; [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) |   |
 | 4       | Delete I/O Completion Queue | Internal Driver Usage |   |
-| 5       | Create I/O Completion Queue | Internal Driver Usage |
+| 5       | Create I/O Completion Queue | Internal Driver Usage |   |
 | 6       | Identify                    | Internal Driver Usage; [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property), IOCTL_STORAGE_FIRMWARE_GET_INFO |   |
 | 8       | Abort                       |   | Currently not supported |
 | 9       | Set Features                | Internal Driver Usage; [IOCTL_STORAGE_SET_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_set_property) | Only enabled for Host Controlled Thermal Management Set Features for [IOCTL_STORAGE_SET_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_set_property) |
 | Ah      | Get Features                | Internal Driver Usage; [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) |   |
-| Ch      | Asynchronous Event Request  | Internal Driver Usage |   |   |
+| Ch      | Asynchronous Event Request  | Internal Driver Usage |   |
 | Dh      | Namespace Management        | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) | Only enabled in Win PE mode for [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) |
 | 10h     | Firmware Commit             | [IOCTL_STORAGE_FIRMWARE_ACTIVATE](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_activate) | |
 | 11h     | Firmware Image Download     | [IOCTL_STORAGE_FIRMWARE_DOWNLOAD](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_download) | |
