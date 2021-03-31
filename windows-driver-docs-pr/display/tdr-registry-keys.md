@@ -1,6 +1,6 @@
 ---
-title: Testing and debugging TDR
-description: Registry keys and WHLK tests for testing and debugging TDR (timeout detection and recovery)
+title: Testing and debugging TDR during driver development
+description: TDR testing and debugging information for developers
 keywords:
 - TDR debugging, driver development
 - Timeout detection and recovery debugging, driver development
@@ -11,12 +11,14 @@ keywords:
 - WDK display development
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
-ms.date: 10/06/2020
+ms.date: 03/30/2021
 ms.localizationpriority: medium
-ms.custom: contperf-fy21q2
+ms.custom: contperf-fy21q3
 ---
 
-# Testing and debugging TDR
+# Testing and debugging TDR during driver development
+
+This topic provides TDR testing and debugging strategies for display driver developers.
 
 ## TDR tests in WHLK
 
@@ -26,7 +28,7 @@ The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-
 
 Developers can use the following TDR (timeout detection and recovery)-related registry keys for testing or debugging purposes only during the driver development process.
 
-> [!NOTE]
+> [!IMPORTANT]
 > These registry keys should not be manipulated by end users, or by applications outside of targeted testing or debugging during driver development.
 
 ### TdrLevel
