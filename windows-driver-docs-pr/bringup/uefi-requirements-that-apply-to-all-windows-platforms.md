@@ -1,7 +1,7 @@
 ---
 title: UEFI requirements for Windows on SoC platforms
 description: This topic describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
-ms.date: 03/29/2021
+ms.date: 03/31/2021
 ms.localizationpriority: medium
 ---
 
@@ -358,7 +358,7 @@ The binding specifies for example how the MMU should be configured, and how phys
 
 ## UEFI ARM multiprocessor startup requirements
 
-Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the Power State Coordination Interface (PSCI). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP%20Startup%20for%20ARM%20platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
+Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](https://developer.arm.com/documentation/den0022/latest). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP%20Startup%20for%20ARM%20platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
 
 ## Platform setup requirements
 
