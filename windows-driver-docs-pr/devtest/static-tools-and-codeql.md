@@ -478,6 +478,10 @@ Every CodeQL 	query has a varying level of precision.  The goal is to minimize f
 
 It is important to note that a query's classification of "error", "warning", or "problem" **should be ignored** for drivers certifying with the Static Tools Logo Test.  A driver that has a defect from a query that is marked ["Must-Fix"](#must-fix-queries) **will not pass the Static Tools Logo Test** regardless of the query classification in the raw query file (ie. "warning"). 
 
+#### Can I generate a Driver Verification Log (DVL) outside of the context of msbuild or Visual Studio?
+
+Microsoft ships as part of the Windows Driver Kit (WDK) and Enterprise WDK (eWDK) a component called *dvl.exe* which can be used to generate Driver Verification Logs (DVLs).  Starting in WDK/eWDK preview versions X and above, it is possible to generate a DVL from the command line outside of the context of msbuild or Visual Studio by passing a driver name and architecture.  See [Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-verification-log) for more details.
+
 #### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
 Send all feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
