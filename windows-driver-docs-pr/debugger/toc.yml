@@ -2901,7 +2901,7 @@
           href: c---numbers-and-operators.md
         - name: "MASM Expressions vs. C++ Expressions"
           href: masm-expressions-vs--c---expressions.md
-        - name: "Expression Examples"
+        - name: "Mixed Expression Examples"
           href: expression-examples.md
         - name: "Sign Extension"
           href: sign-extension.md
