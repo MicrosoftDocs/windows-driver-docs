@@ -24,7 +24,7 @@ This section includes the following topics:
 
 [MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
 
-[Expression Examples](expression-examples.md)
+[Mixed Expression Examples](expression-examples.md)
 
 [Sign Extension](sign-extension.md)
 

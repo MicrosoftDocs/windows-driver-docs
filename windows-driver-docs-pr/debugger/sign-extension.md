@@ -8,15 +8,11 @@ ms.localizationpriority: medium
 
 # Sign Extension
 
-
-## <span id="ddk_sign_extension_dbg"></span><span id="DDK_SIGN_EXTENSION_DBG"></span>
-
-
 When a 32-bit signed integer is negative, its highest bit is equal to one. When this 32-bit signed integer is cast to a 64-bit number, the high bits can be set to zero (preserving the unsigned integer and hexadecimal value of the number) or the high bits can be set to one (preserving the signed value of the number). The latter situation is called *sign extension*.
 
 The debugger follows different rules for sign extension in MASM expressions, in C++ expressions, and when displaying numbers.
 
-### <span id="sign_extension_in_masm_expressions"></span><span id="SIGN_EXTENSION_IN_MASM_EXPRESSIONS"></span>Sign Extension in MASM Expressions
+## Sign Extension in MASM Expressions
 
 Under certain conditions, numbers are automatically *sign extended* by the MASM expression evaluator. Sign extension can affect only numbers from 0x80000000 through 0xFFFFFFFF. That is, sign extension affects only numbers that can be written in 32 bits with the high bit equal to 1.
 
@@ -35,7 +31,7 @@ A number from 0x80000000 through 0xFFFFFFFF is sign extended based on the follow
     ( 0x0`FFFFFFFF & expression )
     ```
 
-### <span id="sign_extension_in_c___expressions"></span><span id="SIGN_EXTENSION_IN_C___EXPRESSIONS"></span>Sign Extension in C++ Expressions
+## Sign Extension in C++ Expressions
 
 When the debugger evaluates a C++ expression, the following rules apply:
 
@@ -43,7 +39,7 @@ When the debugger evaluates a C++ expression, the following rules apply:
 
 -   All other values are treated exactly like C++ would treat values of their type.
 
-### <span id="displaying_sign_extended_and_64_bit_numbers"></span><span id="DISPLAYING_SIGN_EXTENDED_AND_64_BIT_NUMBERS"></span>Displaying Sign-Extended and 64-Bit Numbers
+## Displaying Sign-Extended and 64-Bit Numbers
 
 Other than 32-bit and 16-bit registers, all numbers are stored internally within the debugger as 64-bit values. However, when a number satisfies certain criteria, the debugger displays it as a 32-bit number in command output.
 
@@ -57,11 +53,15 @@ The debugger uses the following criteria to determine how to display numbers:
 
 Because of these display rules, when a number is displayed as a 32-bit number from 0x80000000 through 0xFFFFFFFF, you cannot confirm whether the high 32 bits are all ones or all zeros. To distinguish between these two cases, you must perform an additional computation on the number (such as masking one or more of the high bits and displaying the result).
 
- 
+## See also
 
- 
+[MASM Numbers and Operators](masm-numbers-and-operators.md)
 
+[C++ Numbers and Operators](c---numbers-and-operators.md)
 
+[MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
 
+[Mixed Expression Examples](expression-examples.md)
 
+[Sign Extension](sign-extension.md) 
 

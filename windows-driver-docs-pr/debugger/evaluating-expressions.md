@@ -80,7 +80,7 @@ For more information about the operators that you can use in C++ expressions and
 
 Remember that MASM operations are always byte-based, and C++ operations follow C++ type rules (including the scaling of pointer arithmetic).
 
-For some examples of the different syntaxes, see [Expression Examples](expression-examples.md).
+For some examples of the different syntaxes, see [Mixed Expression Examples](expression-examples.md).
 
  
 
