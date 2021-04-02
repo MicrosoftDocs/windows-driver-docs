@@ -1,7 +1,7 @@
 ---
 title: Native Debugger Objects in JavaScript Extensions - Debugger Object Details
 description: Native debugger objects represent various constructs of the debugger environment. This topic describes additional details about the native debugger objects in JavaScript extensions.
-ms.date: 02/02/2021
+ms.date: 04/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -151,8 +151,8 @@ As mentioned, a JavaScript script can get access to native objects by having the
 </tr>
 <tr>
 <td align="left"><p>host.getModuleContainingSymbol</p></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">getModuleContainingSymbol(location, [contextInheritor])</td>
+<td align="left"><p>Returns the symbol (e.g.: function or data) which contains the given address.  Note that this will only work if there are <i>private</i> symbols for the module containing the given address.</p><p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>host.createPointerObject</p></td>
