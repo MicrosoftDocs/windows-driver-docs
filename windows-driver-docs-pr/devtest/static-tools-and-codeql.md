@@ -347,12 +347,17 @@ The queries that Microsoft recommends running on *all* driver source code are:
 | [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html) |
 | [cpp/use-after-free](./codeql-windows-driver-useafterfree.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* | N/A |
 | [cpp/windows/wdk/deprecated-api](./codeql-windows-driver-wdkdeprecatedapi.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* | N/A |
+| [Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql](./codeql-windows-driver-padding-byte-information-disclosure.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql* | N/A |
+| [Likely Bugs/Conversion/BadOverflowGuard.ql](./codeql-windows-driver-badoverflowguard.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Conversion/BadOverflowGuard.ql* | N/A |
+| [Likely Bugs/Conversion/InfiniteLoop.ql](./codeql-windows-driver-infiniteloop.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Conversion/InfiniteLoop.ql* | N/A |
+| [Likely Bugs/UninitializedPtrField.ql](./codeql-windows-driver-uninitializedptrfield.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/UninitializedPtrField.ql* | N/A |
+| [cpp/Security/Cryptography/HardcodedIVCNG.ql](./codeql-windows-driver-hardcodedivcng.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Security/Crytpography/HardcodedIVCNG.ql* | N/A |
 
 These queries are a part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  The "Common Weakness Enumeration" (CWE) column specifies what kinds of security issues the given query searches for.  See [Mitre's page on CWE](https://cwe.mitre.org/) for more details around CWE's. 
 
 ### Must-Fix Queries
 
-The subset of queries below are currently deemed as **"Must-Fix"** for WHCP certification.  **This list is subject to change**.  A final list will be posted to this page by April 1, 2021.  
+The subset of queries below are currently deemed as **"Must-Fix"** for WHCP certification.  
 
 | ID            | Location | [Common Weakness Enumeration](https://cwe.mitre.org/)   |
 | ------------------------ | ---------- | ----------------------------- |
@@ -451,7 +456,7 @@ See the latest WHCP requirements for further details for when this requirement t
 
 The motivation for requiring CodeQL to be run on driver source code can be summarized by two main reasons:
 
-1. Security of Windows is paramount.  Requiring CodeQL to be run on driver source code is one step in ensuring that components which get certified by Microsoft are secure.
+1. Security of Windows is paramount.  Requiring CodeQL to be run on driver source code is one step in helping improve the security of components which get certified by Microsoft.
 2. CodeQL is [used at Microsoft](https://msrc-blog.microsoft.com/2018/08/16/vulnerability-hunting-with-semmle-ql-part-1/) to find security defects and  CodeQL queries are actively developed by security engineers at Microsoft.  Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
 #### Which license governs the usage of CodeQL for driver developers?
@@ -466,10 +471,6 @@ CodeQL **does not require MSBuild or Visual Studio to be used**. See [supported 
 
 The Static Tools Logo Test in the HLK is the test that enforces this requirement.  Details on how to pass the Static Tools Logo Test can be found on its [MS Docs page](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
-#### Can I generate a DVL on Visual Studio solutions? 
-
-No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](/visualstudio/get-started/tutorial-projects-solutions#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).
-
 #### Are all defects reported by CodeQL true defects?
 
 Every CodeQL 	query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
@@ -478,9 +479,13 @@ Every CodeQL 	query has a varying level of precision.  The goal is to minimize f
 
 It is important to note that a query's classification of "error", "warning", or "problem" **should be ignored** for drivers certifying with the Static Tools Logo Test.  A driver that has a defect from a query that is marked ["Must-Fix"](#must-fix-queries) **will not pass the Static Tools Logo Test** regardless of the query classification in the raw query file (ie. "warning"). 
 
+#### Can I generate a DVL on Visual Studio solutions? 
+
+No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](/visualstudio/get-started/tutorial-projects-solutions#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).  Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-verification-log).
+
 #### Can I generate a Driver Verification Log (DVL) outside of the context of msbuild or Visual Studio?
 
-Microsoft ships as part of the Windows Driver Kit (WDK) and Enterprise WDK (eWDK) a component called *dvl.exe* which can be used to generate Driver Verification Logs (DVLs).  Starting in WDK/eWDK preview versions X and above, it is possible to generate a DVL from the command line outside of the context of msbuild or Visual Studio by passing a driver name and architecture.  See [Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-verification-log) for more details.
+Microsoft ships as part of the Windows Driver Kit (WDK) and Enterprise WDK (eWDK) a component called *dvl.exe* which can be used to generate Driver Verification Logs (DVLs).  Starting in WDK/eWDK preview versions 21342 and above, it is possible to generate a DVL from the command line outside of the context of msbuild or Visual Studio by passing a driver name and architecture.  See [Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-verification-log) for more details.
 
 #### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
