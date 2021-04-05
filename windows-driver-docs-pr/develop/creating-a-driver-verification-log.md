@@ -61,6 +61,7 @@ One of the following strings should be used for your driverArchitecture string:
 
 **Do not include ".sys" as part of your driverName string**
 
+
 6. Inspect the generated DVL to ensure that it was generated correctly
 
 This usage is primarily intended for generating DVLs with CodeQL results, but can also be used for SDV and CA results.  
