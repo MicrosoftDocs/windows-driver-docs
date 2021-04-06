@@ -2028,6 +2028,10 @@
         href: codeql-windows-driver-infiniteloop.md 
       - name: "UninitializedPtrField (Windows Driver CodeQL Query)"
         href: codeql-windows-driver-uninitializedptrfield.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md 
+      - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-hardcodedivcng.md 
   - name: "WDF Verifier Control Application"
 # Auto-expanded node
     items: 
