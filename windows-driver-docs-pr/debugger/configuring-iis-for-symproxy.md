@@ -2,7 +2,7 @@
 title: Configuring IIS for SymProxy
 description: Configuring IIS for SymProxy
 keywords: ["SymProxy, IIS"]
-ms.date: 04/01/2021
+ms.date: 04/02/2021
 ms.localizationpriority: medium
 ---
 
@@ -72,9 +72,45 @@ Configuration options will vary depending on the specific version of IIS you are
 
 8.  To exit **Default Web Site Properties,** click **OK**.
 
-**Configure MIME Types and Additional Configuration** 
+**Configuring MIME types**
 
-The steps required are one part of the IIS symbol server and symproxy configuration. Refer to these topics for information on configuring MIME types and for information on other considerations.
+The MIME Type for the downloaded content needs to be set to application/octet-stream to allow all symbols files to be delivered by IIS.
+
+1. Right-click the **Symbols** virtual directory.
+
+2. Click **MIME Types**.
+
+3. Click **Add**.
+
+5. For **Extension**, type .**\***
+
+6. For **MIME type**, type **application/octet-stream**.
+
+7. To exit the **MIME Types** dialog box, click **OK**.
+
+**Using web.config to configure MIME types**
+
+You can edit the web.config file to configure MIME types for Symbols. This approach clears the inherited MIME Types and adds a catch-all wild card \* MIME Type. This approach may be necessary when MIME types are being inherited in certain IIS configurations.
+
+1.  Edit the web.config file as shown here.
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <configuration>
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+            <staticContent>
+                <clear />
+                <mimeMap fileExtension=".*" 
+    mimeType="application/octet-stream" />
+            </staticContent>
+        </system.webServer>
+    </configuration>
+    ```
+
+**Additional Configuration** 
+
+The steps required are one part of the IIS symbol server and symproxy configuration. Refer to these topics for information on other setup considerations.
 
 [HTTP Symbol Stores](http-symbol-stores.md)
 
