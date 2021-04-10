@@ -75,10 +75,6 @@ In Device Manager you will see a new node **USB Universal Serial Bus devices** a
 
 In Device Manager, you will see your device appear under **USB Universal Serial Bus devices**. However, the device class description is derived from the registry setting specified in your INF.
 
-*-Eliyas Yakub, Microsoft Windows USB Core Team*
-
- 
-
 Note that the "USBDevice" class is not limited to WinUSB. If you have a custom driver for your device, you can use the "USBDevice" setup class in the custom INF.
 
 During device enumeration, the USB driver stack reads the compatible ID from the device. If the compatible ID is "WINUSB", Windows uses it as the device identifier and finds a match in the updated in-box Winusb.inf, and then loads Winusb.sys as the device's function driver.
