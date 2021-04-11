@@ -66,7 +66,7 @@ Parameter 1 indicates the type of violation.
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Time-out value, in seconds.</p></td>
 <td align="left"><p>The thread currently holding onto the Plug-and-Play (PnP) lock.</p></td>
-<td align="left"><p>nt!TRIAGE_9F_POWER.</p></td>
+<td align="left"><p>nt!TRIAGE_9F_PNP.</p></td>
 <td align="left"><p>The power state transition timed out waiting to synchronize with the PnP subsystem.</p></td>
 </tr>
 <tr class="odd">
