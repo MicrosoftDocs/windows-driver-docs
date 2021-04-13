@@ -2,7 +2,7 @@
 title: Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD
 description: The MANUALLY_INITIATED_POWER_BUTTON_HOLD bug check has a value of 0x000001CE. The system was configured to initiate a bugcheck when the user holds the power button.  
 keywords: ["Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD", "MANUALLY_INITIATED_POWER_BUTTON_HOLD"]
-ms.date: 03/03/2021
+ms.date: 03/05/2021
 topic_type:
 - apiref
 api_name:
@@ -40,6 +40,6 @@ Parameter | Description
 
 [Forcing a System Crash with the Power Button](forcing-a-system-crash-with-the-power-button.md)
 
-[Inside Show Bugcheck 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD](https://channel9.msdn.com/Shows/Inside/0x1C8)
+[Inside Show - Bugcheck 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD](https://channel9.msdn.com/Shows/Inside/0x1C8)
 
-[ACPI button device](/windows-hardware/drivers/hid/acpi-button-device)
+[ACPI button device](../hid/acpi-button-device.md)

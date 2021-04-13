@@ -2,19 +2,16 @@
 title: Debugger Command Program Examples
 description: Debugger Command Program Examples
 keywords: ["debugger command program, examples"]
-ms.date: 05/23/2017
+ms.date: 03/30/2021
 ms.localizationpriority: medium
 ---
 
 # Debugger Command Program Examples
 
 
-## <span id="ddk_debugger_command_program_examples_dbg"></span><span id="DDK_DEBUGGER_COMMAND_PROGRAM_EXAMPLES_DBG"></span>
-
-
 The following sections describe debugger command programs.
 
-### <span id="using_the__foreach_token"></span><span id="USING_THE__FOREACH_TOKEN"></span>Using the .foreach Token
+## Using the .foreach Token
 
 The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting at the address of where the 5a4d DWORD was found.
 
@@ -50,7 +47,7 @@ The **1m** option together with the [**lm (List Loaded Modules)**](lm--list-load
 
 The preceding example uses the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token to make sure aliases are replaced even if they are next to other text. If the command did not include this token, the opening parenthesis that is next to **place** prevents alias replacement. Note that the **${}** token works on the variables that are used in **.foreach** and on true aliases.
 
-### <span id="walking_the_process_list"></span><span id="WALKING_THE_PROCESS_LIST"></span>Walking the Process List
+## Walking the Process List
 
 The following example walks through the kernel-mode process list and displays the executable name for each entry in the list.
 
@@ -89,7 +86,7 @@ $$  Iterate over all processes in list.
 }
 ```
 
-### <span id="walking_the_ldr_data_table_entry_list"></span><span id="WALKING_THE_LDR_DATA_TABLE_ENTRY_LIST"></span>Walking the LDR\_DATA\_TABLE\_ENTRY List
+## Walking the LDR\_DATA\_TABLE\_ENTRY List
 
 The following example walks through the user-mode LDR\_DATA\_TABLE\_ENTRY list and displays the base address and full path of each list entry.
 
@@ -129,10 +126,8 @@ $$ Iterate over all modules in list.
     ad ${/v:$Mod}
 }
 ```
-
  
 
- 
 
 
 

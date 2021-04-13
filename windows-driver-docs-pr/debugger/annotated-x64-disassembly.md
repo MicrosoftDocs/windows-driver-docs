@@ -323,7 +323,11 @@ ReturnEAX:
 
 The return value is stored in **rax**, and then the non-volatile registers are restored before returning.
 
- 
+## See also
+
+[x64 Architecture](x64-architecture.md)
+
+[X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
 
  
 

@@ -42,6 +42,8 @@
         href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
       - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
         href: setting-up-a-null-modem-cable-connection.md
+      - name: "Setting Up 2PF Kernel-Mode Debugging using KDNET"
+        href: setting-up-kernel-mode-debugging-using-2pf.md
       - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
         href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
@@ -2328,8 +2330,6 @@
       href: bug-check-0xa5--acpi-bios-error.md
     - name: "Bug Check 0xA7: BAD_EXHANDLE"
       href: bug-check-0xa7--bad-exhandle.md
-    - name: "Bug Check 0xAB: SESSION_HAS_VALID_POOL_ON_EXIT"
-      href: bug-check-0xab--session-has-valid-pool-on-exit.md
     - name: "Bug Check 0xAC: HAL_MEMORY_ALLOCATION"
       href: bug-check-0xac--hal-memory-allocation.md
     - name: "Bug Check 0xAD: VIDEO_DRIVER_DEBUG_REPORT_REQUEST"
@@ -2534,8 +2534,6 @@
       href: bug-check-0x122---whea-internal-error.md
     - name: "Bug Check 0x123: CRYPTO_SELF_TEST_FAILURE"
       href: bug-check-0x123--crypto-self-test-failure-.md
-    - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
-      href: bug-check-0x124---whea-uncorrectable-error.md
     - name: "Bug Check 0x125: NMR_INVALID_STATE"
       href: bug-check-0x125--nmr-invalid-state.md
     - name: "Bug Check 0x126: NETIO_INVALID_POOL_CALLER"
@@ -2588,10 +2586,6 @@
       href: bug-check-0x13d--critical-initialization-failure.md
     - name: "Bug Check 0x140: STORAGE_DEVICE_ABNORMALITY_DETECTED"
       href: bug-check-0x140--storage-device-abnormality-detected.md
-    - name: "Bug Check 0x141: VIDEO_ENGINE_TIMEOUT_DETECTED"
-      href: bug-check-0x141---video-engine-timeout-detected.md
-    - name: "Bug Check 0x142: VIDEO_TDR_APPLICATION_BLOCKED"
-      href: bug-check-0x142--video-tdr-application-blocked.md
     - name: "Bug Check 0x143: PROCESSOR_DRIVER_INTERNAL"
       href: bug-check-0x143--processor-driver-internal.md
     - name: "Bug Check 0x144: BUGCODE_USB3_DRIVER"
@@ -2626,8 +2620,6 @@
       href: bug-check-0x154--unexpected-store-exception.md
     - name: "Bug Check 0x155: OS_DATA_TAMPERING"
       href: bug-check-0x155--os-data-tampering.md
-    - name: "Bug Check 0x156: WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"
-      href: bug-check-0x156--winsock-detected-hung-closesocket-livedump.md
     - name: "Bug Check 0x157: KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION"
       href: bug-check-0x157--kernel-thread-priority-floor-violation.md
     - name: "Bug Check 0x158: ILLEGAL_IOMMU_PAGE_FAULT"
@@ -2638,46 +2630,18 @@
       href: bug-check-0x15a--sdbus-internal-error.md
     - name: "Bug Check 0x15B: WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE"
       href: bug-check-0x15b--worker-thread-returned-with-system-page-priority-active.md
-    - name: "Bug Check 0x15C: PDC_WATCHDOG_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x15c--pdc-watchdog-timeout-livedump.md
-    - name: "Bug Check 0x15D: SOC_SUBSYSTEM_FAILURE_LIVEDUMP"
-      href: bug-check-0x15d-soc-subsystem-failure-livedump.md
-    - name: "Bug Check 0x15E: BUGCODE_NDIS_DRIVER_LIVE_DUMP"
-      href: bug-check-0x15e-bugcode-ndis-driver-live-dump.md
-    - name: "Bug Check 0x15F: CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x15f--connected-standby-watchdog-timeout-livedump.md
     - name: "Bug Check 0x160: WIN32K_ATOMIC_CHECK_FAILURE"
       href: bug-check-0x160--win32k-atomic-check-failure.md
-    - name: "Bug Check 0x161: LIVE_SYSTEM_DUMP"
-      href: bug-check-0x161--live-system-dump.md
     - name: "Bug Check 0x162: KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE"
       href: bug-check-0x162--kernel-auto-boost-invalid-lock-release.md
     - name: "Bug Check 0x163: WORKER_THREAD_TEST_CONDITION"
       href: bug-check-0x162--worker-thread-test-condition.md
-    - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
-      href: bug-check-0x164--win32k-critical-failure.md
-    - name: "Bug Check 0x165: CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md
-    - name: "Bug Check 0x166: CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x166--cluster-resource-call-timeout-livedump.md
-    - name: "Bug Check 0x167: CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md
-    - name: "Bug Check 0x168: CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md
-    - name: "Bug Check 0x169: CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP"
-      href: bug-check-0x169--cluster-csv-volume-arival-livedump.md
-    - name: "Bug Check 0x16A: CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP"
-      href: bug-check-0x16a--cluster-csv-volume-removal-livedump.md
-    - name: "Bug Check 0x16B: CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP"
-      href: bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
       href: bug-check-0x16c--invalid-rundown-protection-flags.md
     - name: "Bug Check 0x16D: INVALID_SLOT_ALLOCATOR_FLAGS"
       href: bug-check-0x16d--invalid-slot-allocator-flags.md
     - name: "Bug Check 0x16E: ERESOURCE_INVALID_RELEASE"
       href: bug-check-0x16e--eresource-invalid-release.md
-    - name: "Bug Check 0x16F: CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
     - name: "Bug Check 0x170: CRYPTO_LIBRARY_INTERNAL_ERROR"
       href: bug-check-0x170--crypto-library-internal-error.md
     - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
@@ -2686,24 +2650,12 @@
       href: bug-check-0x173--coremsgcall-internal-error.md
     - name: "Bug Check 0x174: COREMSG_INTERNAL_ERROR"
       href: bug-check-0x174--coremsg-internal-error.md
-    - name: "Bug Check 0x175: PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"
-      href: bug-check-0x175--previous-fatal-abnormal-reset-error.md
     - name: "Bug Check 0x178: ELAM_DRIVER_DETECTED_FATAL_ERROR"
       href: bug-check-0x175--elam-driver-detected-fatal-error.md
-    - name: "Bug Check 0x179: CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md
     - name: "Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL"
       href: bug-check-0x17b--profiler-configuration-illegal.md
-    - name: "Bug Check 0x17C PDC_LOCK_WATCHDOG_LIVEDUMP "
-      href: bug-check-0x17c--pdc-lock-watchdog-livedump.md
-    - name: "Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP"
-      href: bug-check-0x17d-unexpected-revocation-livedump.md
     - name: "Bug Check 0x17E MICROCODE_REVISION_MISMATCH"
       href: bug-check-0x17e--microcode-revision-mismatch.md
-    - name: "Bug Check 0x187: VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"
-      href: bug-check-0x187--video-dwminit-timeout-fallback-bdd.md
-    - name: "Bug Check 0x188: CLUSTER_CSVFS_LIVEDUMP"
-      href: bug-check-0x188--cluster-csvfs-livedump.md
     - name: "Bug Check 0x189: BAD_OBJECT_HEADER"
       href: bug-check-0x189--bad-object-header.md
     - name: "Bug Check 0x18B: SECURE_KERNEL_ERROR"
@@ -2714,22 +2666,14 @@
       href: bug-check-0x18d--secure-fault-unhandled.md
     - name: "Bug Check 0x18E: KERNEL_PARTITION_REFERENCE_VIOLATION"
       href: bug-check-0x18e--kernel-partition-reference-violation.md
-    - name: "Bug Check 0x190: WIN32K_CRITICAL_FAILURE_LIVEDUMP"
-      href: bug-check-0x190--win32k-critical-failure-livedump.md
     - name: "Bug Check 0x191: PF_DETECTED_CORRUPTION"
       href: bug-check-0x191--pf-detected-corruption.md
     - name: "Bug Check 0x192: KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL"
       href: bug-check-0x192--kernel-auto-boost-lock-acquisition-with-raised-irql.md
-    - name: "Bug Check 0x193: VIDEO_DXGKRNL_LIVEDUMP"
-      href: bug-check-0x192--video-dxgkrnl-livedump.md
-    - name: "Bug Check 0x195: SMB_SERVER_LIVEDUMP"
-      href: bug-check-0x195--smb-server-livedump.md
     - name: "Bug Check 0x196: LOADER_ROLLBACK_DETECTED"
       href: bug-check-0x196--loader-rollback-detected.md
     - name: "Bug Check 0x197: WIN32K_SECURITY_FAILURE"
       href: bug-check-0x197--win32k-security-failure.md
-    - name: "Bug Check 0x198: UFX_LIVEDUMP"
-      href: bug-check-0x198--ufx-livedump.md
     - name: "Bug Check 0x199: KERNEL_STORAGE_SLOT_IN_USE"
       href: bug-check-0x199--kernel-storage-slot-in-use.md
     - name: "Bug Check 0x19A: WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO"
@@ -2738,48 +2682,18 @@
       href: bug-check-0x19b--ttm-fatal-error.md
     - name: "Bug Check 0x19C: WIN32K_POWER_WATCHDOG_TIMEOUT"
       href: bug-check-0x19c--win32k-power-watchdog-timeout.md
-    - name: "Bug Check 0x19D: CLUSTER_SVHDX_LIVEDUMP"
-      href: bug-check-0x19d--cluster-svhdx-livedump.md
-    - name: "Bug Check 0x1A0: TTM_WATCHDOG_TIMEOUT"
-      href: bug-check-0x1a0--ttm-watchdog-timeout.md
-    - name: "Bug Check 0x1A1: WIN32K_CALLOUT_WATCHDOG_LIVEDUMP"
-      href: bug-check-0x1a1--win32k-callout-watchdog-livedump.md
     - name: "Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK"
-      href: bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md
-    - name: "Bug Check 0x1A3: CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md
-    - name: "Bug Check 0x1A4: DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"
-      href: bug-check-0x1a4--drips-sw-hw-divergence-livedump.md
-    - name: "Bug Check 0x1A5: USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP"
-      href: bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md
-    - name: "Bug Check 0x1A6: BLUETOOTH_ERROR_RECOVERY_LIVEDUMP"
-      href: bug-check-0x1a6--bluetooth-error-recovery-livedump.md
-    - name: "Bug Check 0x1A7: SMB_REDIRECTOR_LIVEDUMP"
-      href: bug-check-0x1A7--smb-redirector-livedump.md
-    - name: "Bug Check 0x1A8: VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"
-      href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
-    - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
-      href: bug-check-0x1b0--video-miniport-failed-livedump.md      
-    - name: "Bug Check 0x1B8: VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP"
-      href: bug-check-0x1b8--video-miniport-black-screen-livedump.md      
-    - name: "Bug Check 0x1C4: DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"
-      href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
-    - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
-      href: bug-check-0x1c5--io-threadpool-deadlock-livedump.md
+      href: bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md      
     - name: "Bug Check 0x1C6: FAST_ERESOURCE_PRECONDITION_VIOLATION"
       href: bug-check-0x1c6--fast-eresource-precondition-violation.md
     - name: "Bug Check 0x1C7: STORE_DATA_STRUCTURE_CORRUPTION"
       href: bug-check-0x1c7--store-data-structure-corruption.md      
     - name: "Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD"
       href: bug-check-0x1c8--manually-initiated-power-button-hold.md
-    - name: "Bug Check 0x1C9: USER_MODE_HEALTH_MONITOR_LIVEDUMP"
-      href: bug-check-0x1c9--user-mode-health-monitor-livedump.md
     - name: "Bug Check 0x1CA: SYNTHETIC_WATCHDOG_TIMEOUT"
       href: bug-check-0x1ca--synthetic-watchdog-timeout.md
     - name: "Bug Check 0x1CB: INVALID_SILO_DETACH"
       href: bug-check-0x1cb--invalid-silo-detach.md
-    - name: "Bug Check 0x1CC: EXRESOURCE_TIMEOUT_LIVEDUMP"
-      href: bug-check-0x1cc--exresource-timeout-livedump.md
     - name: "Bug Check 0x1CD: INVALID_CALLBACK_STACK_ADDRESS"
       href: bug-check-0x1cd--invalid-callback-stack-address.md
     - name: "Bug Check 0x1CE: INVALID_KERNEL_STACK_ADDRESS"
@@ -2788,14 +2702,10 @@
       href: bug-check-0x1cf--hardware-watchdog-timeout.md
     - name: "Bug Check 0x1D0: CPI_FIRMWARE_WATCHDOG_TIMEOUT"
       href: bug-check-0x1d0--acpi-firmware-watchdog-timeout.md
-    - name: "Bug Check 0x1D1: TELEMETRY_ASSERTS_LIVEDUMP"
-      href: bug-check-0x1d1--telemetry-asserts-livedump.md
     - name: "Bug Check 0x1D2: WORKER_THREAD_INVALID_STATE"
       href: bug-check-0x1d2--worker-thread-invalid-state.md
     - name: "Bug Check 0x1D3: WFP_INVALID_OPERATION"
       href: bug-check-0x1d3--wfp-invalid-operation.md
-    - name: "Bug Check 0x1D4: UCMUCSI_LIVEDUMP"
-      href: bug-check-0x1d4--ucmusci-livedump.md
     - name: "Bug Check 0x1D5: DRIVER_PNP_WATCHDOG"
       href: bug-check-0x1d5--driver-pnp-watchdog.md
     - name: "Bug Check 0x1D6: WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS"
@@ -2838,6 +2748,103 @@
       href: bug-check-0xc0000221--status-image-checksum-mismatch.md
     - name: "Bug Check 0xDEADDEAD: MANUALLY_INITIATED_CRASH1"
       href: bug-check-0xdeaddead--manually-initiated-crash1.md
+  - name: "Bug Check Code Reference- Kernel Live Dump"
+# Auto-expanded node
+    items: 
+    - name: "Kernel Live Dump Code Reference"
+      href: bug-check-code-reference-live-dump.md
+    - name: "Bug Check 0xAB: SESSION_HAS_VALID_POOL_ON_EXIT"
+      href: bug-check-0xab--session-has-valid-pool-on-exit.md
+    - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
+      href: bug-check-0x124---whea-uncorrectable-error.md
+    - name: "Bug Check 0x141: VIDEO_ENGINE_TIMEOUT_DETECTED"
+      href: bug-check-0x141---video-engine-timeout-detected.md
+    - name: "Bug Check 0x142: VIDEO_TDR_APPLICATION_BLOCKED"
+      href: bug-check-0x142--video-tdr-application-blocked.md
+    - name: "Bug Check 0x156: WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"
+      href: bug-check-0x156--winsock-detected-hung-closesocket-livedump.md
+    - name: "Bug Check 0x15C: PDC_WATCHDOG_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x15c--pdc-watchdog-timeout-livedump.md
+    - name: "Bug Check 0x15D: SOC_SUBSYSTEM_FAILURE_LIVEDUMP"
+      href: bug-check-0x15d-soc-subsystem-failure-livedump.md
+    - name: "Bug Check 0x15E: BUGCODE_NDIS_DRIVER_LIVE_DUMP"
+      href: bug-check-0x15e-bugcode-ndis-driver-live-dump.md
+    - name: "Bug Check 0x15F: CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x15f--connected-standby-watchdog-timeout-livedump.md
+    - name: "Bug Check 0x161: LIVE_SYSTEM_DUMP"
+      href: bug-check-0x161--live-system-dump.md
+    - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
+      href: bug-check-0x164--win32k-critical-failure.md
+    - name: "Bug Check 0x165: CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md
+    - name: "Bug Check 0x166: CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x166--cluster-resource-call-timeout-livedump.md
+    - name: "Bug Check 0x167: CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md
+    - name: "Bug Check 0x168: CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md
+    - name: "Bug Check 0x169: CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP"
+      href: bug-check-0x169--cluster-csv-volume-arival-livedump.md
+    - name: "Bug Check 0x16A: CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP"
+      href: bug-check-0x16a--cluster-csv-volume-removal-livedump.md
+    - name: "Bug Check 0x16B: CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP"
+      href: bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md
+    - name: "Bug Check 0x16F: CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
+    - name: "Bug Check 0x175: PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"
+      href: bug-check-0x175--previous-fatal-abnormal-reset-error.md
+    - name: "Bug Check 0x179: CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md
+    - name: "Bug Check 0x17C PDC_LOCK_WATCHDOG_LIVEDUMP "
+      href: bug-check-0x17c--pdc-lock-watchdog-livedump.md
+    - name: "Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP"
+      href: bug-check-0x17d-unexpected-revocation-livedump.md
+    - name: "Bug Check 0x187: VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"
+      href: bug-check-0x187--video-dwminit-timeout-fallback-bdd.md
+    - name: "Bug Check 0x188: CLUSTER_CSVFS_LIVEDUMP"
+      href: bug-check-0x188--cluster-csvfs-livedump.md
+    - name: "Bug Check 0x190: WIN32K_CRITICAL_FAILURE_LIVEDUMP"
+      href: bug-check-0x190--win32k-critical-failure-livedump.md
+    - name: "Bug Check 0x193: VIDEO_DXGKRNL_LIVEDUMP"
+      href: bug-check-0x192--video-dxgkrnl-livedump.md
+    - name: "Bug Check 0x195: SMB_SERVER_LIVEDUMP"
+      href: bug-check-0x195--smb-server-livedump.md
+    - name: "Bug Check 0x198: UFX_LIVEDUMP"
+      href: bug-check-0x198--ufx-livedump.md
+    - name: "Bug Check 0x19D: CLUSTER_SVHDX_LIVEDUMP"
+      href: bug-check-0x19d--cluster-svhdx-livedump.md
+    - name: "Bug Check 0x1A0: TTM_WATCHDOG_TIMEOUT"
+      href: bug-check-0x1a0--ttm-watchdog-timeout.md
+    - name: "Bug Check 0x1A1: WIN32K_CALLOUT_WATCHDOG_LIVEDUMP"
+      href: bug-check-0x1a1--win32k-callout-watchdog-livedump.md
+    - name: "Bug Check 0x1A3: CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md
+    - name: "Bug Check 0x1A4: DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"
+      href: bug-check-0x1a4--drips-sw-hw-divergence-livedump.md
+    - name: "Bug Check 0x1A5: USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP"
+      href: bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md
+    - name: "Bug Check 0x1A6: BLUETOOTH_ERROR_RECOVERY_LIVEDUMP"
+      href: bug-check-0x1a6--bluetooth-error-recovery-livedump.md
+    - name: "Bug Check 0x1A7: SMB_REDIRECTOR_LIVEDUMP"
+      href: bug-check-0x1A7--smb-redirector-livedump.md
+    - name: "Bug Check 0x1A8: VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"
+      href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
+    - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
+      href: bug-check-0x1b0--video-miniport-failed-livedump.md      
+    - name: "Bug Check 0x1B8: VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP"
+      href: bug-check-0x1b8--video-miniport-black-screen-livedump.md      
+    - name: "Bug Check 0x1C4: DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"
+      href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
+    - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
+      href: bug-check-0x1c5--io-threadpool-deadlock-livedump.md
+    - name: "Bug Check 0x1C9: USER_MODE_HEALTH_MONITOR_LIVEDUMP"
+      href: bug-check-0x1c9--user-mode-health-monitor-livedump.md
+    - name: "Bug Check 0x1CC: EXRESOURCE_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x1cc--exresource-timeout-livedump.md    
+    - name: "Bug Check 0x1D1: TELEMETRY_ASSERTS_LIVEDUMP"
+      href: bug-check-0x1d1--telemetry-asserts-livedump.md
+    - name: "Bug Check 0x1D4: UCMUCSI_LIVEDUMP"
+      href: bug-check-0x1d4--ucmusci-livedump.md
 - name: "Debugger Reference"
 # Auto-expanded node
   items: 
@@ -2896,7 +2903,7 @@
           href: c---numbers-and-operators.md
         - name: "MASM Expressions vs. C++ Expressions"
           href: masm-expressions-vs--c---expressions.md
-        - name: "Expression Examples"
+        - name: "Mixed Expression Examples"
           href: expression-examples.md
         - name: "Sign Extension"
           href: sign-extension.md

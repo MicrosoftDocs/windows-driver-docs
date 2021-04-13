@@ -122,9 +122,9 @@ Application -> TCP/IP --(packets)--> NDIS ----(frames)---> [Driver] ---> MBB Dev
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
 
 In HLK Studio connect to the device Cellular modem driver and run test:
-[TestPowerStates](https://docs.microsoft.com/windows-hardware/test/hlk/testref/f0af8e06-4d04-4027-8b84-777a6de4ce49).
+[TestPowerStates](/windows-hardware/test/hlk/testref/f0af8e06-4d04-4027-8b84-777a6de4ce49).
 
-Via netsh, we can run the **TestPowerStates** HLK testlist. For more information on using the netsh tool, see [**netsh-mbn**](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
+Via netsh, we can run the **TestPowerStates** HLK testlist. For more information on using the netsh tool, see [**netsh-mbn**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
 
 ```
 netsh mbn test feature=power testpath="C:\\data\\test\\bin" taefpath="C:\\data\\test\\bin"
@@ -176,18 +176,14 @@ This file showing the HLK test results should have been generated in the directo
 
 
 ## See Also
-[UDE Architecture](/windows-hardware/drivers/usbcon/developing-windows-drivers-for-emulated-usb-host-controllers-and-devices)
+[UDE Architecture](../usbcon/developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)
 
-[Introduction to NDIS 6.20](/windows-hardware/drivers/network/introduction-to-ndis-6-20)
+[Introduction to NDIS 6.20](./introduction-to-ndis-6-20.md)
 
-[MBIM Overview](/windows-hardware/drivers/network/mb-interface-model)
+[MBIM Overview](./mb-interface-model.md)
 
 [MBIM Compliance Testing Revision 1.0](https://www.usb.org/sites/default/files/MBIM-Compliance-1.0.pdf)
 
-[Mobile Broadband Implementation Guidelines for USB Devices](/windows-hardware/drivers/network/mobile-broadband-implementation-guidelines-for-usb-devices)
+[Mobile Broadband Implementation Guidelines for USB Devices](./mobile-broadband-implementation-guidelines-for-usb-devices.md)
 
-[NetAdapterCx](/windows-hardware/drivers/netcx/)
-
-
-
-
+[NetAdapterCx](../netcx/index.md)

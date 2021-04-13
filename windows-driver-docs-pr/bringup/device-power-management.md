@@ -1,7 +1,7 @@
 ---
 title: Device power management
 description: The ACPI 6.3 specification defines a set of namespace objects to specify device power information for a device.
-ms.date: 04/20/2017
+ms.date: 03/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +18,7 @@ Devices that are integrated into the SoC can be power-managed through the Window
 For peripheral devices that are not integrated into the SoC, Windows uses ACPI Device Power Management. For these ACPI-managed devices, the power policy owner in a device driver stack (typically the function or class driver) makes device power state transition decisions, and the [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, invokes ASL control methods to apply the required platform-specific power controls.
 
 > [!NOTE]
-> It is possible to, and some device stacks do, use ACPI Device Power Management—alone, or in combination with the microPEP—for on-SoC device power management.
+> It is possible to, and some device stacks do, use ACPI Device Power Management — alone, or in combination with the microPEP — for on-SoC device power management.
 
 As described in [Device power management in ACPI](#device-power-management-in-acpi), Windows supports the D3cold power management capabilities that are defined in the ACPI 5.0 specification. By using this support, devices, platforms and drivers can opt-in to having device power completely removed during run-time idle periods. This capability can significantly improve battery life. However, removing power must be supported by all affected components in order to be able to return to D0 successfully. For this reason, drivers (bus and function), as well as the platform itself, must indicate that they support it. For more information about D3cold driver opt-in, see [Supporting D3cold in a Driver](../kernel/supporting-d3cold-in-a-driver.md).
 
@@ -40,45 +40,15 @@ The [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, monitors the powe
 
 There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, for each supported device power state. When the device driver decides to transition to a new power state, Acpi.sys ensures that any power resources required for the new state are turned on, and that any resources no longer in use are turned off.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Device state supported</th>
-<th>Resource requirements object to use</th>
-<th>Resources to include in requirements object</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D0 (required)</td>
-<td>_PR0</td>
-<td><p>All power and clocks required for full function of the device.</p></td>
-</tr>
-<tr class="even">
-<td>D1</td>
-<td>_PR1</td>
-<td><p>Any power or clocks required for the class-defined reduced-functionality of this state.</p></td>
-</tr>
-<tr class="odd">
-<td>D2</td>
-<td>_PR2</td>
-<td><p>Any power or clocks required for the class-defined reduced-functionality of this state.</p></td>
-</tr>
-<tr class="even">
-<td>D3hot (required)</td>
-<td>_PR3</td>
-<td><p>Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command.</p></td>
-</tr>
-</tbody>
-</table>
+| Device state supported | Resource requirements object to use | Resources to include in requirements object |
+|--|--|--|
+| D0 (required) | _PR0 | All power and clocks required for full function of the device. |
+| D1 | _PR1 | Any power or clocks required for the class-defined reduced-functionality of this state. |
+| D2 | _PR2 | Any power or clocks required for the class-defined reduced-functionality of this state. |
+| D3hot (required) | _PR3 | Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command. |
 
- > [!NOTE]
- > If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3Cold.
+> [!NOTE]
+> If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3Cold.
 
 For more information about the power resource requirements for a device that supports D3cold, see [Firmware Requirements for D3cold](firmware-requirements-for-d3cold.md).
 
@@ -94,7 +64,12 @@ Power-managed devices might be able to detect events when in a low-power state a
 
 On a given platform, there is a specific mapping between device states that support the wake capability and system states that can respond to wake events. ACPI defines the \_SxW object to provide this information to the operating system. There is an SxW object for each supported system power state, Sx. Because SoC platforms are always in S0, the only object of interest here is \_S0W. This object specifies the platform's ability to wake from a low-power idle state in response to a device's wake signal. The object is used by Windows to determine the target D-state for the device during system low-power idle. For more information about \_S0W, see section 7.2.20, "\_S0W (S0 Device Wake State)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-For most SoC platforms, devices are aggressively power-managed to the D3 state when idle, and the system is capable of waking from low-power idle while the device is in this state. For such a system, the \_S0W object returns 3 (or 4, if it also supports D3cold). However, any D-state can be designated as the lowest-powered wake-capable state, and some device classes or buses use different values. For instance, SDIO- and USB-connected devices use state D2 for this state.
+For most SoC platforms, devices are aggressively power-managed to the D3 state when idle, and the system is capable of waking from low-power idle while the device is in this state. For such a system, the _S0W object returns 3 (or 4, if it also supports D3cold).
+
+> [!NOTE]
+> _S0W(4) is a requirement for D3Cold regardless of whether or not the device supports wake.
+
+Any D-state can be designated as the lowest-powered wake-capable state, and some device classes or buses use different values. For instance, SDIO- and USB-connected devices use state D2 for this state.
 
 > [!NOTE]
 > To facilitate the migration of device drivers from Windows 7 to Windows 8 or Windows 8.1, your device might be required to supply \_S4W as well. Currently, the only device class that has this requirement is networking (Ndis.sys).

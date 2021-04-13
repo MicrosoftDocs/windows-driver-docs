@@ -8,10 +8,6 @@ ms.localizationpriority: medium
 
 # MASM Expressions vs. C++ Expressions
 
-
-## <span id="ddk_masm_expressions_vs__c_expressions_dbg"></span><span id="DDK_MASM_EXPRESSIONS_VS__C_EXPRESSIONS_DBG"></span>
-
-
 The most significant differences between MASM expression evaluation and C++ expression evaluation are as follows:
 
 -   In an MASM expression, the numeric value of any symbol is its memory address. In a C++ expression, the numeric value of a variable is its actual value, not its address. Data structures do not have numeric values. Instead, they are treated as actual structures and you must use them accordingly. The value of a function name or any other entry point is the memory address and is treated as a function pointer. If you use a symbol that does not correspond to a C++ data type (such as an unmodified module name), a syntax error occurs.
@@ -29,10 +25,15 @@ The most significant differences between MASM expression evaluation and C++ expr
 -   MASM expressions might contain references to source lines. These references are indicated by grave accents ( **\`** ). You cannot reference source line numbers in a C++ expression.
 
  
+## See also
 
- 
+[MASM Numbers and Operators](masm-numbers-and-operators.md)
 
+[C++ Numbers and Operators](c---numbers-and-operators.md)
 
+[Mixed Expression Examples](expression-examples.md)
+
+[Sign Extension](sign-extension.md) 
 
 
 

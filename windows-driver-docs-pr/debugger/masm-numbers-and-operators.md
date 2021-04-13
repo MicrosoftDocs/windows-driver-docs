@@ -2,7 +2,7 @@
 title: MASM Numbers and Operators
 description: MASM Numbers and Operators
 keywords: ["expressions, MASM expression syntax", "numerical expressions (MASM)", "MASM expressions, numbers", "MASM expressions, operators", "operators (MASM)", "(MASM prefix)", "binary operators", "shift operators", "unary operators"]
-ms.date: 01/26/2021
+ms.date: 03/30/2021
 ms.localizationpriority: medium
 ---
 
@@ -192,7 +192,7 @@ The &lt;, &gt;, =, ==, and != comparison operators evaluate to 1 if the expressi
 
 An invalid operation (such as division by zero) results in an "Operand error" is returned to the [Debugger Command window](debugger-command-window.md).
 
-### <span id="non_numeric_operators_in_masm_expressions"></span><span id="NON_NUMERIC_OPERATORS_IN_MASM_EXPRESSIONS"></span>Non-Numeric Operators in MASM Expressions
+## Non-Numeric Operators in MASM Expressions
 
 You can also use the following additional operators in MASM expressions.
 
@@ -249,3 +249,12 @@ For more information about registers and pseudo-registers, see [Register Syntax]
 
 You can use source file and line number expressions within MASM expressions. You must enclose these expressions by using grave accents (\`). For more information about the syntax, see [Source Line Syntax](source-line-syntax.md).
 
+## See also
+
+[MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
+
+[Mixed Expression Examples](expression-examples.md)
+
+[C++ Numbers and Operators](c---numbers-and-operators.md)
+
+[Sign Extension](sign-extension.md) 

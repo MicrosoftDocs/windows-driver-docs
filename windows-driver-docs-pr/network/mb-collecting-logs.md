@@ -33,9 +33,6 @@ If the repro scenario includes a reboot update the start tracing command as foll
 
 Run one of these commands to convert the .etl file to a .txt file that can be used for analysis:
 
-  ```*  ```[```tracefmt```](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt-commands)``` <ETL file location>  ```<br/>
+  ```*  ```[```tracefmt```](../devtest/tracefmt-commands.md)``` <ETL file location>  ```<br/>
   ```    or ```<br/>
   ```*  netsh trace convert <ETL file location>```
-  
-
-

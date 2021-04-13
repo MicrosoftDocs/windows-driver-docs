@@ -1,6 +1,16 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/winsock-kernel4.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/introduction-to-winsock-kernel",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/windows-filtering-platform-callout-drivers2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/introduction-to-windows-filtering-platform-callout-drivers",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/usbcon/link-power-management-in-usb-3-0-hardware.md",
             "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-3-0-lpm-mechanism-",
             "redirect_document_id":  false

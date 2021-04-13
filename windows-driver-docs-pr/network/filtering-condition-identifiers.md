@@ -31,7 +31,7 @@ The filtering condition identifiers are each represented by a GUID. These identi
 |FWPM_CONDITION_IP_FORWARD_INTERFACE|The LUID for the network interface on which the packet being forwarded is to be sent out.|
 |FWPM_CONDITION_IP_PROTOCOL|The IP protocol number, as specified in [RFC 1700](https://tools.ietf.org/html/rfc1700).|
 |FWPM_CONDITION_IP_LOCAL_PORT|The local transport protocol port number.|
-|FWPM_CONDITION_IP_REMOTE_PORT|The remote transport protocol port |number.|
+|FWPM_CONDITION_IP_REMOTE_PORT|The remote transport protocol port number.|
 |FWPM_CONDITION_ICMP_TYPE|The ICMP type field, as specified in [RFC 792](https://tools.ietf.org/html/rfc792).|
 |FWPM_CONDITION_ICMP_CODE|The ICMP code field, as specified in [RFC 792](https://tools.ietf.org/html/rfc792).|
 |FWPM_CONDITION_EMBEDDED_LOCAL_ADDRESS_TYPE|The local IP address type that is embedded in the ICMP packet. The possible condition values are:</br>- NlatUnspecified</br>- NlatUnicast</br>- NlatAnycast</br>- NlatMulticast</br>- NlatBroadcast|

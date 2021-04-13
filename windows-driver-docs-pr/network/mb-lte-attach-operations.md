@@ -296,7 +296,7 @@ For Query and Set operations:
 
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
  
-In HLK Studio connect to device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestLteAttach](https://docs.microsoft.com/windows-hardware/test/hlk/testref/aaa1f042-8535-4d09-b19e-082bef24f518).
+In HLK Studio connect to device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestLteAttach](/windows-hardware/test/hlk/testref/aaa1f042-8535-4d09-b19e-082bef24f518).
 
 Alternatively, run the **TestLteAttach** HLK testlist by [**netsh-mbn**](/windows-server/networking/technologies/netsh/netsh-mbn) and [**netsh-mbn-test-installation**](mb-netsh-mbn-test.md).
 

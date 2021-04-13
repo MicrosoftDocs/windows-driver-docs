@@ -21,7 +21,7 @@ You can use multiple PDP contexts to enable premium services.
 
 - Personal Hotspot – Some mobile operators charge different rates when the connection is being used as a personal hotspot. You can use multiple PDP contexts to differentiate between the two.
 
-For more information, see [Developing apps using multiple PDP contexts](/windows-hardware/drivers/mobilebroadband/developing-apps-using-multiple-pdp-contexts).
+For more information, see [Developing apps using multiple PDP contexts](../mobilebroadband/developing-apps-using-multiple-pdp-contexts.md).
 
 
 ## Primary Flow
@@ -44,7 +44,7 @@ For more information, see [Developing apps using multiple PDP contexts](/windows
 ## Hardware Lab Kit (HLK) Tests
 See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx). 
 
-In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestMPDP](https://docs.microsoft.com/windows-hardware/test/hlk/testref/08497822-4355-478b-9cba-0c0c7b663953).
+In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestMPDP](/windows-hardware/test/hlk/testref/08497822-4355-478b-9cba-0c0c7b663953).
 
 ## MB Multiple PDP context Troubleshooting Guide
 
@@ -97,4 +97,3 @@ w 04-01 12:39:12.815 P0000 T0000 usbbus        CompletionRoutine() for request 0
 w 04-01 12:39:12.815 P0000 T0000 mbbcx         [Util][ReqId=0x04ae][TID=0x00000215] 01/01 fragment completed with status=STATUS_SUCCESS             MbbUtilSendMessageFragmentComplete util_cpp1401 TRACE_LEVEL_INFORMATION
 e 04-01 12:39:12.815 P0000 T0000 Windows Mobile Broadband Class Driver Event Provider Sending command completed with status STATUS_SUCCESS. Command was sent with the following parameters:
 ```
-

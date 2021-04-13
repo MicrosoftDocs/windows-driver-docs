@@ -7,7 +7,7 @@ ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Testing System Brightness Response
+# Testing System Color
 
 This topic provides instructions on how to test color by using the MALT (Microsoft Ambient Light Tool) tool.
 

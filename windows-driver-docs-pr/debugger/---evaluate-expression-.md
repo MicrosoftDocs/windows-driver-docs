@@ -2,7 +2,7 @@
 title: (Evaluate Expression)
 description: The question mark ( ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ) displays command help.
 keywords: ["(Evaluate Expression) Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 03/30/2021
 topic_type:
 - apiref
 api_name:
@@ -23,13 +23,12 @@ The question mark (**?**) command evaluates and displays the value of an express
     ? Expression
 ```
 
-## <span id="ddk_cmd_evaluate_expression_dbg"></span><span id="DDK_CMD_EVALUATE_EXPRESSION_DBG"></span>Parameters
+## Parameters
 
-
-<span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
+*Expression*   
 Specifies the expression to evaluate.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -94,13 +93,19 @@ Evaluate expression: 0 = 00000000
 
 In the preceding examples, the **$spat** MASM operator checks the first string to determine whether it matches (case-insensitive) the pattern of the second string. For more information about MASM operators, see the [MASM Numbers and Operators](masm-numbers-and-operators.md) topic.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
 
 [**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
 
+[MASM Numbers and Operators](masm-numbers-and-operators.md)
+
+[C++ Numbers and Operators](c---numbers-and-operators.md)
+
+[MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
+
+[Mixed Expression Examples](expression-examples.md)
  
 
  
