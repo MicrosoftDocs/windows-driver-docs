@@ -7,9 +7,6 @@ ms.localizationpriority: medium
 
 # Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 
-> [!NOTE]
-> This topic applies only to Windows Desktop drivers and not Windows Drivers. See [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md) for information about this distinction.
-
 If you are building applications or drivers for Windows 10, you only need to read this section. If you are using a version of Visual Studio earlier than Visual Studio 2015, skip this section and start with [Redistributing the C Runtime (applies to before Visual Studio 2015)](#redistributing-the-c-runtime-applies-to-before-visual-studio-2015).
 
 Starting in Visual Studio 2015, the Universal C Runtime (UCRT) encompasses the C runtime. The other pieces required for a complete program (C/C++ Language Features, C++ Library) are provided by Visual Studio in the VC++ Redistributable. To avoid a runtime redistribution requirement, those pieces are statically linked.
