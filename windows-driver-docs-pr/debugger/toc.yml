@@ -42,6 +42,8 @@
         href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
       - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
         href: setting-up-a-null-modem-cable-connection.md
+      - name: "Setting Up 2PF Kernel-Mode Debugging using KDNET"
+        href: setting-up-kernel-mode-debugging-using-2pf.md
       - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
         href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"

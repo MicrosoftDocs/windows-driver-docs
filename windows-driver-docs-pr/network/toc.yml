@@ -378,6 +378,8 @@
           href: miniport-adapter-context.md
         - name: "Virtual Connection Context"
           href: virtual-connection-context.md
+        - name: "Debugger 2PF KDNET Support"
+          href: debugger-2pf-kdnet-support.md
         - name: "Network OIDs"
           href: network-oids.md
       - name: "Sample NDIS Miniport Drivers"
