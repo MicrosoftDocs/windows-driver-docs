@@ -33,7 +33,7 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 1. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
 
-2. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
+2. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) is **disabled**.
 
 3. Ensure BitLocker is **disabled**.
 
