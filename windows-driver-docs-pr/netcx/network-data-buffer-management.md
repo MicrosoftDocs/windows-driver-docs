@@ -65,7 +65,6 @@ MyAdapterSetDatapathCapabilities(
     NET_ADAPTER_TX_CAPABILITIES txCapabilities;
     NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA(&txCapabilities,
                                              &txDmaCapabilities,
-                                             MAX_PACKET_SIZE,
                                              1);
     txCapabilities.FragmentRingNumberOfElementsHint = deviceContext->NumTransmitControlBlocks * MAX_PHYS_BUF_COUNT;
     txCapabilities.MaximumNumberOfFragments = MAX_PHYS_BUF_COUNT;
