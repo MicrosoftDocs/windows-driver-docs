@@ -107,9 +107,9 @@ NetAdapterCx requires the client driver to set the following capabilities:
 
 * Data path capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) to set these capabilities. For more information, see [Network data buffer management](./network-data-buffer-management.md).
 
-* Link layer capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set these capabilities.
+* Link layer capabilities. The driver calls [**NetAdapterSetLinkLayerCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set these capabilities.
 
-* Link layer maximum transfer unit (MTU) size. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set the MTU size.
+* Link layer maximum transfer unit (MTU) size. The driver calls [**NetAdapterSetLinkLayerMtuSize**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayermtusize) to set the MTU size.
 
 The driver must then call [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart) to start their adapter.
 
