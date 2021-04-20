@@ -30,7 +30,7 @@ The size (in bytes) of the following values.
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_CCMP**. Contains CCMP cipher algorithm key data. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_GCMP**. Contains GCMP cipher algorithm key data. |
 | [WDI_TLV_CIPHER_KEY_TKIP_INFO](wdi-tlv-cipher-key-tkip-info.md) | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_TKIP**. |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256](wdi-tlv-cipher-key-bip-gmac-256.md) | Present ony if cipher algorithm is WDI\_CIPHER\_ALGO\_BIP\_GMAC\_256. |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Present ony if cipher algorithm is WDI\_CIPHER\_ALGO\_BIP\_GMAC\_256. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_BIP**. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_WEP40**, **WDI_CIPHER_ALGO_WEP104**, or **WDI_CIPHER_ALGO_WEP**. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is in the range of **WDI_CIPHER_ALGO_IHV_START** to **WDI_CIPHER_ALGO_IHV_END**. |
