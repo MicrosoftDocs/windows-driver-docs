@@ -1,20 +1,20 @@
 ---
-title: WDI_TLV_CIPHER_KEY_GCMP_256_KEY
-description: WDI_TLV_CIPHER_KEY_GCMP_256_KEY is a TLV that contains GCMP 256 cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
+title: WDI_TLV_PROTOCOL_OFFLOAD_ID
+description: WDI_TLV_PROTOCOL_OFFLOAD_ID is a TLV that contains the protocol offload identifier.
 ms.assetid: 
 ms.date: 09/10/2020
 keywords:
- - WDI_TLV_CIPHER_KEY_GCMP_256_KEY Network Drivers Starting with Windows 10, Version 2004
+ - WDI_TLV_PROTOCOL_OFFLOAD_ID Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY
+# WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID
 
-WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY is a TLV that contains GCMP 256 cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
+WDI\_TLV\_PROTOCOL\_OFFLOAD\_ID is a TLV that contains the protocol offload identifier.
 
 ## TLV Type
 
-0x164
+0x166
 
 ## Length
 
@@ -24,10 +24,9 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 | Type | Description |
 | --- | --- |
-| UINT8\[\] | Specifies GCMP 256 cipher algorithm key data. |
+| UINT8\[\] | Specifies the the protocol offload identifier. |
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

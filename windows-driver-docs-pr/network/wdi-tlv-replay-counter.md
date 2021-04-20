@@ -1,16 +1,16 @@
 ---
-title: WDI_TLV_CIPHER_KEY_GCMP_256_KEY
-description: WDI_TLV_CIPHER_KEY_GCMP_256_KEY is a TLV that contains GCMP 256 cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
+title: WDI_TLV_REPLAY_COUNTER
+description: WDI_TLV_REPLAY_COUNTER is a TLV that contains .
 ms.assetid: 
 ms.date: 09/10/2020
 keywords:
- - WDI_TLV_CIPHER_KEY_GCMP_256_KEY Network Drivers Starting with Windows 10, Version 2004
+ - WDI_TLV_REPLAY_COUNTER Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium
 ---
 
-# WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY
+# WDI\_TLV\_REPLAY\_COUNTER
 
-WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY is a TLV that contains GCMP 256 cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
+WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains .
 
 ## TLV Type
 
@@ -26,8 +26,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 | --- | --- |
 | UINT8\[\] | Specifies GCMP 256 cipher algorithm key data. |
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
