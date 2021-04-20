@@ -54,7 +54,3 @@ In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](/windows-hard
 | TLV₃ + L₃ + sizeof(TLV Header) | TLV₄ (WDI\_TLV\_BSS\_ENTRY) | WDI\_BSS\_ENTRY     |
 
 For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](./wdi-tlv-connect-parameters.md).
-<<<<<<< HEAD
-=======
-
->>>>>>> master
