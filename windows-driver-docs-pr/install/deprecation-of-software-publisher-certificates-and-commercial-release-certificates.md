@@ -76,7 +76,7 @@ For more info, see [Signing drivers during development and test](./introduction-
 
 ### What will happen to my existing signed driver packages? 
 
-As long as driver packages are timestamped before the expiration date of the intermediate certificate, they will continue working.
+As long as driver packages are timestamped before the expiration date of the leaf signing certificate, they will continue working.
 
 ### Is there a way to run production driver packages without exposing it to Microsoft? 
 
