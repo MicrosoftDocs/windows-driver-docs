@@ -1,7 +1,6 @@
 ---
 title: Using Scatter/Gather DMA
 description: Using Scatter/Gather DMA
-ms.assetid: dacc618f-d4d4-4c3c-a18c-baeef779e931
 keywords: ["AdapterListControl routine", "scatter/gather DMA WDK I/O", "PutScatterGatherList", "GetScatterGatherList", "DMA transfers WDK kernel , scatter/gather DMA"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

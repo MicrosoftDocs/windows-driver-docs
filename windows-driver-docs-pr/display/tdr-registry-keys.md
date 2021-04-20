@@ -1,7 +1,6 @@
 ---
-title: Testing and debugging TDR
-description: Registry keys and WHLK tests for testing and debugging TDR (timeout detection and recovery)
-ms.assetid: 77b8b2aa-0821-4297-a1e4-57894bd4181f
+title: Testing and debugging TDR during driver development
+description: TDR testing and debugging information for developers
 keywords:
 - TDR debugging, driver development
 - Timeout detection and recovery debugging, driver development
@@ -12,22 +11,24 @@ keywords:
 - WDK display development
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
-ms.date: 10/06/2020
+ms.date: 03/30/2021
 ms.localizationpriority: medium
-ms.custom: contperfq2
+ms.custom: contperf-fy21q3
 ---
 
-# Testing and debugging TDR
+# Testing and debugging TDR during driver development
+
+This topic provides TDR testing and debugging strategies for display driver developers.
 
 ## TDR tests in WHLK
 
-The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-specific tests that developers can use for testing and debugging purposes. For example, you can manually trigger a GPU TDR using the [**SimulatePreemption TDR**](/windows-hardware/test/hlk/testref/86be5032-cfcd-4ee5-a515-0e3ebc0cb6f4). See [**Device.Graphics**](/windows-hardware/test/hlk/testref/device-graphics) for more information about the various TDR-related tests.
+The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-specific tests that driver developers can use for testing and debugging purposes. For example, developers can manually trigger a GPU TDR using the [**SimulatePreemption TDR**](/windows-hardware/test/hlk/testref/86be5032-cfcd-4ee5-a515-0e3ebc0cb6f4). See [**Device.Graphics**](/windows-hardware/test/hlk/testref/device-graphics) for more information about the various TDR-related tests.
 
 ## TDR registry keys for testing and debugging
 
 Developers can use the following TDR (timeout detection and recovery)-related registry keys for testing or debugging purposes only during the driver development process.
 
-> [!NOTE]
+> [!IMPORTANT]
 > These registry keys should not be manipulated by end users, or by applications outside of targeted testing or debugging during driver development.
 
 ### TdrLevel
@@ -42,6 +43,7 @@ ValueData : TdrLevelXxx (see the following table)
 ```
 
 Where TdrLevel*Xxx* can be one of the following values:
+
 | Value | Meaning |
 | ----- | ------- |
 | TdrLevelOff (0) | Detection disabled |

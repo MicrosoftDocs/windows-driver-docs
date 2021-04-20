@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ndisevent
 description: The !ndiskd.ndisevent extension displays an NDIS debug event log.
-ms.assetid: E042CA22-6521-4DD4-9396-39EC587706D6
 keywords: ["ndiskd.ndisevent Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

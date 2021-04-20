@@ -1,7 +1,6 @@
 ---
 title: Security considerations for reparse points
 description: File System Filter Driver security considerations for reparse points
-ms.assetid: 6aae70d9-c934-4759-bb26-728b0ac025d1
 keywords:
 - security WDK file systems , reparse points
 - reparse points WDK file systems

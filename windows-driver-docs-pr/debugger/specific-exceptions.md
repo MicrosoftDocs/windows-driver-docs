@@ -1,7 +1,6 @@
 ---
 title: Specific Exceptions
 description: Specific Exceptions
-ms.assetid: e9fec81f-7e93-47cd-b496-a5e2a58f3b19
 keywords: ["Specific Exceptions Windows Debugging"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: subDirectory XML Element
 description: subDirectory XML Element
-ms.assetid: 41f86668-148e-4d7c-89b8-e3c21efffd7b
 keywords: ["subDirectory XML Element Device and Driver Installation"]
 topic_type:
 - apiref

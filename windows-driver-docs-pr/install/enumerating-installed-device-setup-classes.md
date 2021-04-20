@@ -1,7 +1,6 @@
 ---
 title: Enumerating Installed Device Setup Classes
 description: Enumerating Installed Device Setup Classes
-ms.assetid: 24F7600B-AA61-484a-83E9-E4C3FD2EAF17
 keywords:
 - enumerating installed device setup classes WDK
 - installed device setup classes WDK

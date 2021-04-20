@@ -1,7 +1,6 @@
 ---
 title: Reporting DirectX 8.0 Style Direct3D Capabilities
 description: Reporting DirectX 8.0 Style Direct3D Capabilities
-ms.assetid: a03a7cbc-95be-4251-8e3a-bef4a093f03d
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8

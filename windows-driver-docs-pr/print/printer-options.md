@@ -1,7 +1,6 @@
 ---
 title: Printer Options
 description: Printer Options
-ms.assetid: 48033d01-e701-4bc5-aac9-9ac2f0fd4de9
 keywords:
 - Unidrv, printer options
 - GPD files WDK Unidrv , printer options

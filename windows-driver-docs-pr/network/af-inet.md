@@ -1,7 +1,6 @@
 ---
 title: AF_INET
 description: AF_INET
-ms.assetid: 59e12f8d-02eb-413c-bc04-6b9b6e4adde6
 ms.date: 08/08/2017
 keywords: 
  -AF_INET Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Debugger Engine Overview
 description: Debugger Engine Overview
-ms.assetid: e3cd8a1d-dd07-480b-bc3b-4f6acc647167
 keywords: ["Debugger Engine", "Debugger Engine, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

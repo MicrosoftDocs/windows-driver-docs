@@ -1,7 +1,6 @@
 ---
 title: When to Complete an IRP
 description: When to Complete an IRP
-ms.assetid: 6986b24c-e7e5-43f2-861d-b84e4c131a8a
 keywords: ["completing IRPs WDK kernel , when to complete"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Registering as an Interface Provider
 description: Registering as an Interface Provider
-ms.assetid: 7eb4b86d-077a-48de-94b6-11906e847569
 keywords:
 - NDIS network interfaces WDK , interface providers
 - network interfaces WDK , interface providers

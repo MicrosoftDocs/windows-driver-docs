@@ -1,7 +1,6 @@
 ---
 title: Determining SR-IOV Capabilities
 description: Determining SR-IOV Capabilities
-ms.assetid: 61895987-2469-471E-BB29-FF1CDD2869DC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

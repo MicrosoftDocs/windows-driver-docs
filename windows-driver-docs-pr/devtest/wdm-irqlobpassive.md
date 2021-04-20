@@ -1,7 +1,6 @@
 ---
 title: IrqlObPassive rule (wdm)
 description: The IrqlObPassive rule specifies that the driver calls ObReferenceObjectByHandle only when it is executing at IRQL PASSIVE_LEVEL.
-ms.assetid: 724125f0-a50f-4ebb-903f-86ceff672b5d
 ms.date: 05/21/2018
 keywords: ["IrqlObPassive rule (wdm)"]
 topic_type:

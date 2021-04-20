@@ -1,6 +1,5 @@
 ---
 title: IrqlKeWaitForMutexObject rule (wdm)
-ms.assetid: f2e7b733-1746-4db5-b4a9-becd211e40cf
 ms.date: 05/21/2018
 description: "Learn more about: IrqlKeWaitForMutexObject rule (wdm)"
 keywords: ["IrqlKeWaitForMutexObject rule (wdm)"]

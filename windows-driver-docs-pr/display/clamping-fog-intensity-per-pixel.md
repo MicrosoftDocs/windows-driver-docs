@@ -1,7 +1,6 @@
 ---
 title: Clamping Fog Intensity Per Pixel
 description: Clamping Fog Intensity Per Pixel
-ms.assetid: 249d085a-b54c-48b3-bc7a-3fe5f8238b1b
 keywords:
 - clamping fog intensity per pixel WDK DirectX 9.0
 - fog intensity per pixel WDK DirectX 9.0

@@ -1,7 +1,6 @@
 ---
 title: Direct flip of video memory
 description: The direct flip feature allows for special optimizations to the composition model to reduce power consumption.
-ms.assetid: 00A8FCB1-966A-4176-9840-7EB5BA300C8B
 keywords:
 - direct flip
 - DirectFlip

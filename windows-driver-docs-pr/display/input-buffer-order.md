@@ -1,7 +1,6 @@
 ---
 title: Input Buffer Order
 description: Input Buffer Order
-ms.assetid: 99110b1a-1511-44f5-a4bb-a5e38fd41fff
 keywords:
 - input buffers WDK DirectX VA
 - deinterlacing WDK DirectX VA , input buffer order

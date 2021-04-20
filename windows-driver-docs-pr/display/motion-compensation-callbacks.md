@@ -1,7 +1,6 @@
 ---
 title: Motion Compensation Callbacks
 description: Motion Compensation Callbacks
-ms.assetid: a1f748e4-0d62-4543-a409-bb9ec02a7d77
 keywords:
 - drawing WDK DirectDraw , motion compensation
 - DirectDraw WDK Windows 2000 display , motion compensation

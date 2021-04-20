@@ -1,7 +1,6 @@
 ---
 title: COPP Device Definition Template Code
 description: COPP Device Definition Template Code
-ms.assetid: 86cafb33-f92a-4c5d-8a54-37aab5e79f37
 keywords:
 - COPP device WDK DirectX VA
 - copy protection WDK COPP , COPP device

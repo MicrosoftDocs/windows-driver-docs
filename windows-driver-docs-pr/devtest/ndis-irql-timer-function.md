@@ -1,7 +1,6 @@
 ---
 title: Irql\_Timer\_Function rule (ndis)
 description: The Irql\_Timer\_Function rule specifies that the NDIS timer service functions must be called at correct IRQL levels.
-ms.assetid: 4c946f79-7661-4ff6-b2a3-1a5851c9e215
 ms.date: 05/21/2018
 keywords: ["Irql_Timer_Function rule (ndis)"]
 topic_type:

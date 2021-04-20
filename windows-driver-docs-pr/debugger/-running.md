@@ -1,7 +1,6 @@
 ---
 title: running
 description: The running extension displays a list of running threads on all processors of the target computer.
-ms.assetid: 08fd9806-36e9-4589-bf92-87dc02efebac
 keywords: ["running Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

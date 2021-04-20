@@ -1,7 +1,6 @@
 ---
 title: W-Buffering DDI
 description: W-Buffering DDI
-ms.assetid: eb1270c3-0eaa-47a4-8fc6-53aea981b597
 keywords:
 - Direct3D WDK Windows 2000 display , w-buffering
 - w-buffering WDK Direct3D

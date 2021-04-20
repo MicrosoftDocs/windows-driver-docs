@@ -1,7 +1,6 @@
 ---
 title: Calling Order for Minidriver Functions
 description: Calling Order for Minidriver Functions
-ms.assetid: 0e51d29c-964d-44d5-86be-095601286f94
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

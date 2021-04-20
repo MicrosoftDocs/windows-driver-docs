@@ -1,6 +1,5 @@
 ---
 title: NFC stack architecture
-ms.assetid: 04800C37-99EA-431A-98C5-24984030CEA9
 keywords:
 - NFC
 - near field communications

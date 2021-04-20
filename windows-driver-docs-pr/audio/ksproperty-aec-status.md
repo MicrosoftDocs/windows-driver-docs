@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AEC\_STATUS
 description: The KSPROPERTY\_AEC\_STATUS property is used to monitor the status of an AEC node (KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL). This is an optional property of an AEC node.
-ms.assetid: cd344367-1cb3-425a-8b22-300a85514e20
 keywords: ["KSPROPERTY_AEC_STATUS Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Input driver samples
 description: The input driver samples in this directory provide a starting point for writing a custom driver for your device.
-ms.assetid: 19DD6B95-AAE7-4F40-BB48-7AA1C20BA01E
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

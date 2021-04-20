@@ -1,7 +1,6 @@
 ---
 title: Viewing Driver Verifier Settings
 description: Viewing Driver Verifier Settings
-ms.assetid: 2dd5f1b4-5c78-459c-8b73-c8d511f8a22b
 keywords:
 - Driver Verifier WDK , viewing settings
 - viewing Driver Verifier setting

@@ -1,7 +1,6 @@
 ---
 title: Overview of the Removable Device Capability
 description: Overview of the Removable Device Capability
-ms.assetid: c6dfb2ac-89a5-40fd-ae9a-1f2800af9ef8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Overview of the Removable Device Capability
 
 
-The removable device capability is a bit (**Removable**) that bus drivers set in the **DEVICE_CAPABILITIES**.
+The removable device capability is a bit (**Removable**) that bus drivers set in the [**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure in response to the [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) function code for a specified device node (*devnode*).
 
 Bus drivers set the removable device capability for a devnode when the devnode and all its child devnodes make up a device that can be physically removed, disconnected, or unplugged from its parent devnode while the computer is running. Typically, a devnode should be marked as removable if it is the topmost devnode in a devnode topology.
 
@@ -24,10 +23,4 @@ The following Device Manager screen shot shows the devnode topology for a generi
 ![screen shot of device manager window showing devnode topology for a usb mouse](images/containerid-2.png)
 
  
-
- 
-
-
-
-
 

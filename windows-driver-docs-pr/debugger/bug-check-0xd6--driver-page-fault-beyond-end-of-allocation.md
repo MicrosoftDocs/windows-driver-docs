@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 description: The DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION bug check has a value of 0x000000D6. This indicates the driver accessed memory beyond the end of its pool allocation.
-ms.assetid: 939165dc-3052-4de7-88fd-25d4a7e82945
 keywords: ["Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION"]
 ms.date: 05/23/2017
 topic_type:

@@ -2,7 +2,6 @@
 title: IRP_MJ_FILE_SYSTEM_CONTROL
 description: Only file system drivers process IRP_MJ_FILE_SYSTEM_CONTROL requests.
 ms.date: 08/12/2017
-ms.assetid: 695ed61b-7082-44be-ae82-ddc3e4a0b8d0
 keywords:
  - IRP_MJ_FILE_SYSTEM_CONTROL Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

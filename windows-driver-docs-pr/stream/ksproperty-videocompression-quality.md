@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_QUALITY
 description: The KSPROPERTY\_VIDECOMPRESSION\_QUALITY property controls the video compression quality setting. This property must be implemented.
-ms.assetid: 7566f60e-fe49-4009-bd61-b29d2adb4e8c
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref

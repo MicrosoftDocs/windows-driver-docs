@@ -1,7 +1,6 @@
 ---
 title: FSCTL_DISMOUNT_VOLUME control code
 description: The FSCTL\_DISMOUNT\_VOLUME control code attempts to dismount a volume regardless of whether the volume is in use.
-ms.assetid: edfff768-3bb3-4b8a-b982-80797ac116fd
 keywords: ["FSCTL_DISMOUNT_VOLUME control code Installable File System Drivers"]
 topic_type:
 - apiref

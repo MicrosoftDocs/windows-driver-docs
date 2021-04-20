@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverInfPath
 description: DEVPKEY_Device_DriverInfPath
-ms.assetid: ceb1f25b-284c-4a59-a019-dbb5bbb88626
 keywords: ["DEVPKEY_Device_DriverInfPath Device and Driver Installation"]
 topic_type:
 - apiref

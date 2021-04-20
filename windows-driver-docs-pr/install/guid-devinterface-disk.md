@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_DISK
 description: GUID_DEVINTERFACE_DISK
-ms.assetid: 47782789-4504-4705-8c32-4d2bc508a7e2
 keywords: ["GUID_DEVINTERFACE_DISK Device and Driver Installation"]
 topic_type:
 - apiref

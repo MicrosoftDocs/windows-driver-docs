@@ -1,7 +1,6 @@
 ---
 title: IoReleaseRemoveLockAndWaitOutsideRemoveDevice rule (wdm)
 description: The IoReleaseRemoveLockAndWaitOutsideRemoveDevice rule specifies that IoReleaseRemoveLockAndWait should not be called outside IRP\_MJ\_PNP with IRP\_MN\_REMOVE\_DEVICE for a PnP driver.
-ms.assetid: 5787B14D-1793-4B39-A569-9A1308257A26
 ms.date: 05/21/2018
 keywords: ["IoReleaseRemoveLockAndWaitOutsideRemoveDevice rule (wdm)"]
 topic_type:

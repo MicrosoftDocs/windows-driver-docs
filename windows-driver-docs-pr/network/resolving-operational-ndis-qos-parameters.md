@@ -1,7 +1,6 @@
 ---
 title: Resolving Operational NDIS QoS Parameters
 description: Resolving Operational NDIS QoS Parameters
-ms.assetid: F6C486B4-ABD5-413A-9E2D-283D83802C2B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

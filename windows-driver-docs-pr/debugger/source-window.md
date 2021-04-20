@@ -1,7 +1,6 @@
 ---
 title: Source Code Debugging in WinDbg
 description: Source Code Debugging in WinDbg
-ms.assetid: 0f939d29-0d90-442e-96d7-fe756b92a7da
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

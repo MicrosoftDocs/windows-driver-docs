@@ -1,7 +1,6 @@
 ---
 title: GetJobElementsResponse element
 description: The required GetJobElementsResponse element returns the job-related information that a client requests.
-ms.assetid: b27c1aba-eb5f-4446-ab34-c03a969e954f
 keywords: ["GetJobElementsResponse element Imaging Devices"]
 topic_type:
 - apiref

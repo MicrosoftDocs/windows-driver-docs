@@ -1,7 +1,6 @@
 ---
 title: Determining the VMQ Capabilities of a Network Adapter
 description: Determining the VMQ Capabilities of a Network Adapter
-ms.assetid: a8efc393-60fd-4ff8-ba9a-53846f5fbba4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

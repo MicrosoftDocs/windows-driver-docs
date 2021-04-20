@@ -1,7 +1,6 @@
 ---
 title: Source Parameter Token
 description: Source Parameter Token
-ms.assetid: 280b9fb2-9b5c-4830-9ba5-cfb6201960e0
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

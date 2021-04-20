@@ -1,7 +1,6 @@
 ---
 title: WmiComplete rule (wdm)
 description: The WmiComplete rule specifies that when processing a WMI minor IRP, the driver calls IoCompleteRequest before returning from the DispatchSystemControl routine.
-ms.assetid: 3908da96-beb1-4651-b41b-06f849b72000
 ms.date: 05/21/2018
 keywords: ["WmiComplete rule (wdm)"]
 topic_type:
@@ -20,7 +19,7 @@ The **WmiComplete** rule specifies that when processing a [**WMI minor IRP**](..
 
 A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md) request with a WMI minor function code.
 
-For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md), [**Handling WMI Requests**](../kernel/handling-wmi-requests.md), [**Windows Management Instrumentation Routines**](/windows-hardware/drivers/ddi/index), and [**WMI Library Support Routines**](/windows-hardware/drivers/ddi/index).
+For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md), [**Handling WMI Requests**](../kernel/handling-wmi-requests.md), [**Windows Management Instrumentation Routines**](../kernel/windows-kernel-mode-wmi-library.md), and [**WMI Library Support Routines**](../kernel/windows-kernel-mode-wmi-library.md).
 
 Drivers that are not registered as WMI data providers must forward the WMI request to the next lower driver. To verify this action, use the [**WmiForward**](wdm-wmiforward.md) rule.
 

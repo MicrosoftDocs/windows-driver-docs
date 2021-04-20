@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_BUFFER
 description: The KSPROPERTY\_RTAUDIO\_BUFFER property specifies a driver-allocated cyclic buffer for audio data.The following table summarizes the features of this property.
-ms.assetid: e2c78849-1a34-446c-9f44-012f36ddafa5
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER Audio Devices"]
 topic_type:
 - apiref

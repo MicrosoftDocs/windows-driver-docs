@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR is a property ID that will be used to specify whether variable frame rate is desired on the driver.
-ms.assetid: 9B528421-B5AA-4092-9F7B-71A18732ABA8
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_VFR Streaming Media Devices"]
 topic_type:
 - apiref

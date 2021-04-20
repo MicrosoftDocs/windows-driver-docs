@@ -1,7 +1,6 @@
 ---
 title: Receive Side Scaling Version 2 (RSSv2)
 description: This topic describes Receive Side Scaling Version 2 (RSSv2)
-ms.assetid: 192CAA41-0D17-4C06-8F13-68EA7C26D023
 keywords: Receive Side Scaling Version 2, RSSv2, Receive Side Scaling Version 2 WDK, RSSv2 network drivers
 ms.date: 10/12/2017
 ms.localizationpriority: medium

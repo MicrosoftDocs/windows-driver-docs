@@ -1,7 +1,6 @@
 ---
 title: Determining Which Properties are Set for a Device Interface
 description: Determining Which Properties are Set for a Device Interface
-ms.assetid: ef261c1d-0715-4501-b2db-fab270cee010
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

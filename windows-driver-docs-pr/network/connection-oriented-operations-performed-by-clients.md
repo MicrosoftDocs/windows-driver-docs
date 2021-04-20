@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Operations Performed by Clients
 description: Connection-Oriented Operations Performed by Clients
-ms.assetid: 342f534e-d203-4823-a4d8-a8a51b7ff0bd
 keywords:
 - connection-oriented clients WDK
 - client operations WDK CoNDIS

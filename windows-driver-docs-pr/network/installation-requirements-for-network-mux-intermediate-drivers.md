@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network MUX Intermediate Drivers
 description: Installation Requirements for Network MUX Intermediate Drivers
-ms.assetid: 2c51c40a-2015-4131-9ffa-6956313183f5
 keywords:
 - MUX intermediate driver installation requirements WDK
 - protocol INF files WDK networking

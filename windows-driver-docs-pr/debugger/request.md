@@ -1,7 +1,6 @@
 ---
 title: IDebugAdvanced2 Request method
 description: The Request method performs a variety of different operations.
-ms.assetid: efb3c93c-5405-418b-a063-afa8e5e9e59a
 keywords: ["Request method Windows Debugging", "Request method Windows Debugging , IDebugAdvanced2 interface", "IDebugAdvanced2 interface Windows Debugging , Request method", "Request method Windows Debugging , IDebugAdvanced3 interface", "IDebugAdvanced3 interface Windows Debugging , Request method"]
 topic_type:
 - apiref

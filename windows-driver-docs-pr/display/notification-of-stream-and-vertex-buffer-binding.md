@@ -1,7 +1,6 @@
 ---
 title: Notification of Stream and Vertex Buffer Binding
 description: Notification of Stream and Vertex Buffer Binding
-ms.assetid: 9ab9727f-053d-404b-95cc-ffd64fde7997
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multiple vertex streams
 - multiple vertex streams WDK DirectX 8.0

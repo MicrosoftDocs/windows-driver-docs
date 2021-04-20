@@ -1,7 +1,6 @@
 ---
 title: WDDM 1.2 and Windows 8
 description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 1.2, which is available starting with Windows 8. It also describes hardware requirements, implementation guidelines, and usage scenarios.
-ms.assetid: 8757ADDD-EDCA-4C09-BB71-2ED925DB2E41
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

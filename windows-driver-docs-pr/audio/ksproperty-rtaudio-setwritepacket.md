@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_SETWRITEPACKET
 description: KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written valid data to the WaveRT buffer.
-ms.assetid: 2827D6BC-B669-4AAC-967C-99B068DCC29B
 keywords: ["KSPROPERTY_RTAUDIO_SETWRITEPACKET Audio Devices"]
 topic_type:
 - apiref

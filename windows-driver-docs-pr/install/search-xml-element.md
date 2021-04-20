@@ -1,7 +1,6 @@
 ---
 title: search XML Element
 description: search XML Element
-ms.assetid: 34eff240-a96a-4b73-a001-5ea698e9f7ae
 keywords: ["search XML Element Device and Driver Installation"]
 topic_type:
 - apiref

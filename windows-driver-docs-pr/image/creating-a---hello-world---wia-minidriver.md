@@ -1,7 +1,6 @@
 ---
 title: Creating a 'Hello World' WIA Minidriver
 description: Creating a 'Hello World' WIA Minidriver
-ms.assetid: 074da2ff-bc60-48a9-b2ff-83f070bd5351
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

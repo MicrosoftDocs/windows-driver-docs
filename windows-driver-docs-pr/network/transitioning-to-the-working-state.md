@@ -1,7 +1,6 @@
 ---
 title: Transitioning to the Working State
 description: Transitioning to the Working State
-ms.assetid: ad8eb6d7-b542-4208-85f7-fba42c27a9f3
 keywords:
 - working power state WDK networking
 - network interface cards WDK networking , transitioning power states

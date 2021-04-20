@@ -1,7 +1,6 @@
 ---
 title: Events in Video Miniport Drivers (Windows 2000 Model)
 description: Events in Video Miniport Drivers (Windows 2000 Model)
-ms.assetid: f6b5ded8-ddb4-4242-9bd3-b12dc96d8f6b
 keywords:
 - video miniport drivers WDK Windows 2000 , events
 - events WDK video miniport

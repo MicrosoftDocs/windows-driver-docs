@@ -1,7 +1,6 @@
 ---
 title: DDI usage rule set (Storport)
 description: Use these rules to verify that your driver correctly uses Storport DDIs correctly.
-ms.assetid: 858BBD97-4E3D-464A-B85F-358809431347
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

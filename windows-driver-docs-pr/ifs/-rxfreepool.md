@@ -1,7 +1,6 @@
 ---
 title: \_RxFreePool function
 description: \_RxFreePool releases memory that was previously allocated using \_RxAllocatePoolWithTag.
-ms.assetid: 383deda9-6151-420b-afa9-445cd05e998b
 keywords: ["_RxFreePool function Installable File System Drivers"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: SECURITY\_INFORMATION
 description: SECURITY\_INFORMATION
-ms.assetid: 28023f0f-62ae-407b-b81b-1c98499df9a2
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

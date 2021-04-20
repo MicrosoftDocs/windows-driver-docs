@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_MODULE\_STATUS
 description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_STATUS to determine status on the CA module associated with an ECM map node.
-ms.assetid: 4bd8a423-7a76-4702-a769-0de88fcc5772
 keywords: ["KSPROPERTY_BDA_CA_MODULE_STATUS Streaming Media Devices"]
 topic_type:
 - apiref

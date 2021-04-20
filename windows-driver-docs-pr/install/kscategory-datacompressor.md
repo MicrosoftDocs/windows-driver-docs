@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_DATACOMPRESSOR
 description: KSCATEGORY_DATACOMPRESSOR
-ms.assetid: 7e4bf7b3-b3be-4a76-bc9e-0b1b020a7044
 keywords: ["KSCATEGORY_DATACOMPRESSOR Device and Driver Installation"]
 topic_type:
 - apiref

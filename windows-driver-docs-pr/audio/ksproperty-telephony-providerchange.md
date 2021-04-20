@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE
 description: The KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE property is used to communicate to the audio driver that single-radio voice call continuity (SRVCC) is beginning or ending.
-ms.assetid: 9CEDAFE7-014F-4670-958D-6D3687D2D24A
 keywords: ["KSPROPERTY_TELEPHONY_PROVIDERCHANGE Audio Devices"]
 topic_type:
 - apiref

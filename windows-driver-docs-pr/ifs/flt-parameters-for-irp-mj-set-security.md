@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_SET_SECURITY union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_SET\_SECURITY.
-ms.assetid: 9006ef50-bd2e-4c75-8c6b-8bb777122a75
 keywords: ["FLT_PARAMETERS for IRP_MJ_SET_SECURITY union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

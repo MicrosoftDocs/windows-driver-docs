@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PCO
 description: OID_WWAN_PCO reports the status and the payload of a PCO value that the modem has received from the operator network. 
-ms.assetid: BE664B41-3FE7-4E93-8739-12BD2F0AE5B8
 keywords:
 - OID_WWAN_PCO, PCO OID
 ms.date: 08/08/2017

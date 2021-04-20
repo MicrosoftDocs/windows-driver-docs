@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumfile
 description: The wdfkd.wdfumfile extension displays information about a UMDF intra-stack file.
-ms.assetid: AAE9E003-829D-4A52-8F67-58DFE15D5D3C
 keywords: ["wdfkd.wdfumfile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdlist
 description: The usbkd.usbhcdlist command displays information about all USB host controllers that are represented by the USB port driver (Usbport.sys). 
-ms.assetid: 877A6361-0DB9-4089-AF85-BABFBED8C440
 keywords: ["usbkd.usbhcdlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

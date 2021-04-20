@@ -1,7 +1,6 @@
 ---
 title: RSS with Hardware Queuing
 description: RSS with Hardware Queuing
-ms.assetid: f37caef9-6d22-4d17-8628-0c3f93de470e
 keywords:
 - receive-side scaling WDK networking , hardware queuing
 - RSS WDK networking , hardware queuing

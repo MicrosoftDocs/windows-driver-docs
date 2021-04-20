@@ -1,7 +1,6 @@
 ---
 title: Enumerating DXT Formats
 description: Enumerating DXT Formats
-ms.assetid: 77fc961f-1b94-43c1-b238-86f7d8e96835
 keywords:
 - drawing compressed textures WDK DirectDraw , enumerating DXT formats
 - DirectDraw compressed textures WDK Windows 2000 display , enumerating DXT formats

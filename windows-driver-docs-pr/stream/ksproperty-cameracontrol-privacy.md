@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PRIVACY
 description: The KSPROPERTY\_CAMERACONTROL\_PRIVACY property specifies whether to prevent video from being acquired by the camera sensor.
-ms.assetid: 6a96301e-b4f1-4d4d-9cc6-f0cb1e2c1391
 keywords: ["KSPROPERTY_CAMERACONTROL_PRIVACY Streaming Media Devices"]
 topic_type:
 - apiref

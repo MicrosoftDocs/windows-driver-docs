@@ -1,7 +1,6 @@
 ---
 title: Tools for Verifying Drivers
 description: Tools for Verifying Drivers
-ms.assetid: 1d878be6-8730-4452-a35a-0635ebed9091
 keywords:
 - tools WDK , verifying drivers
 - driver development tools WDK , verifying drivers
@@ -31,7 +30,7 @@ This section includes:
 
 [Survey of Verification Tools](survey-of-verification-tools.md)
 
-[DDI Compliance Rules](/windows-hardware/drivers/ddi/index)
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 
 [Checked Build of Windows](checked-build-of-windows.md)
 

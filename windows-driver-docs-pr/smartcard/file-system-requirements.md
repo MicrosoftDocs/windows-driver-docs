@@ -1,7 +1,6 @@
 ---
 title: File System Requirements
 description: File System Requirements
-ms.assetid: 2C363978-3C98-4838-8C55-F804D2C75BEC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

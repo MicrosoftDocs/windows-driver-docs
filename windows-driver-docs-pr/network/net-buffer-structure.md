@@ -1,7 +1,6 @@
 ---
 title: NET_BUFFER Structure
 description: NET_BUFFER Structure
-ms.assetid: 6ba44aef-d4e6-4f18-8ae3-aebd8045791f
 keywords:
 - NET_BUFFER
 - network data WDK , structures

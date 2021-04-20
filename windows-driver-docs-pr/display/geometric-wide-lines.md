@@ -1,7 +1,6 @@
 ---
 title: Geometric Wide Lines
 description: Geometric Wide Lines
-ms.assetid: 769b801c-6950-4f0f-9163-c4ddf070e519
 keywords:
 - lines WDK GDI , geometric wide
 - GDI WDK Windows 2000 display , lines, geometric wide

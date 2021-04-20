@@ -1,7 +1,6 @@
 ---
 title: Reporting a NIC's IPsec Offload Version 2 Capabilities
 description: Reporting a NIC's IPsec Offload Version 2 Capabilities
-ms.assetid: 0ce5c42d-5c0c-4dfa-8a9f-a80c8924201d
 keywords:
 - IPsecOV2 WDK TCP/IP transport , capabilities
 ms.date: 04/20/2017

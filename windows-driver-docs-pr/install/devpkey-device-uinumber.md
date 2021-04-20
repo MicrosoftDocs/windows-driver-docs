@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_UINumber
 description: DEVPKEY_Device_UINumber
-ms.assetid: 81bd0b71-909d-49c3-8d6c-258c57f80644
 keywords: ["DEVPKEY_Device_UINumber Device and Driver Installation"]
 topic_type:
 - apiref

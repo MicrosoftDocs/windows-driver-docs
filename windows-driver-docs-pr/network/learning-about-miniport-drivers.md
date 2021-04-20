@@ -1,7 +1,6 @@
 ---
 title: Learning About Miniport Drivers
 description: Learning About Miniport Drivers
-ms.assetid: faaeee13-7d21-4e06-a33c-da249716d925
 keywords:
 - connectionless drivers WDK networking
 - connection-oriented drivers WDK networking

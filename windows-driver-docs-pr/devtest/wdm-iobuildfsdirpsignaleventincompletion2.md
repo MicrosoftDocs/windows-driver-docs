@@ -1,7 +1,6 @@
 ---
 title: IoBuildFsdIrpSignalEventInCompletion2 rule (wdm)
 description: The IoBuildFsdIrpSignalEventInCompletion2 rule specifies that KeSetEvent needs to be called in the completion routine when the Irp- PendingReturned flag is set and the completion routine is processing a locally created asynchronous IRP.
-ms.assetid: 2077EB25-4EAE-4F76-BEB1-C637DA39C07D
 ms.date: 05/21/2018
 keywords: ["IoBuildFsdIrpSignalEventInCompletion2 rule (wdm)"]
 topic_type:

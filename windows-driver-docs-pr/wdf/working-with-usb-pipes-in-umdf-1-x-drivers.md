@@ -1,7 +1,6 @@
 ---
 title: Working with USB Pipes in UMDF 1.x Drivers
 description: Working with USB Pipes in UMDF 1.x Drivers
-ms.assetid: face26da-fa79-4d32-8ad1-9e8022bb23b3
 keywords:
 - UMDF WDK , USB pipes
 - User-Mode Driver Framework WDK , USB pipes

@@ -1,7 +1,6 @@
 ---
 title: Allocating an NDIS Port
 description: Allocating an NDIS Port
-ms.assetid: 39c77921-5841-40f5-90ba-0fba89b3b55e
 keywords:
 - ports WDK NDIS , allocating
 - NDIS ports WDK , allocating

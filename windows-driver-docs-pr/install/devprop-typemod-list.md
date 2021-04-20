@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPEMOD_LIST
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPEMOD_LIST identifier represents a property-data-type modifier that can be combined only with the base-data-type identifiers DEVPROP_TYPE_STRING and DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING to create a property-data-type identifier that represents a [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types) list of NULL-terminated Unicode strings.
-ms.assetid: 0beaa778-55c9-45ac-8163-91d82794a845
 keywords: ["DEVPROP_TYPEMOD_LIST Device and Driver Installation"]
 topic_type:
 - apiref

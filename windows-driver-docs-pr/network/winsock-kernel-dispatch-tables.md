@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Dispatch Tables
 description: Winsock Kernel Dispatch Tables
-ms.assetid: 391c6868-fb85-41ea-ada5-6ba90750300c
 keywords:
 - Winsock Kernel WDK networking , dispatch tables
 - WSK WDK networking , dispatch tables

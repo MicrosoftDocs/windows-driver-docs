@@ -23,7 +23,7 @@ When a driver fails to install correctly, the targeted component can lose functi
 |**Passing criteria**|>= 95% of machines install the driver successfully|
 |**Cohort-enabled**|Yes|
 |**Minimum population per cohort**|500 machines|
-|**Measure ID**|10042840 or 26387215|
+|**Measure ID**|26387215|
 
 ## Calculation
 
@@ -33,4 +33,4 @@ When a driver fails to install correctly, the targeted component can lose functi
 
 ### Final Calculation
 
-*PNP Success Rate= Succesful Installs / Total Installs*
+*PNP Success Rate= Successful Installs / Total Installs*

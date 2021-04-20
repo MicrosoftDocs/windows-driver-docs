@@ -1,7 +1,6 @@
 ---
 title: DirectX Video Acceleration
 description: DirectX Video Acceleration
-ms.assetid: e25407a3-be5c-4509-a3e7-d9688958e3d4
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display
 - Video Acceleration WDK DirectX

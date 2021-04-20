@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_TIMEFORMAT
 description: The KSPROPERTY\_STREAM\_TIMEFORMAT property is used to retrieve the time format used on a particular pin connection.
-ms.assetid: bf8c32b2-401f-4f89-bcca-97a07c50cc45
 keywords: ["KSPROPERTY_STREAM_TIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_SET\_CONNECTINFO
 description: AVC\_FUNCTION\_SET\_CONNECTINFO
-ms.assetid: e97b525a-2236-44a9-9d49-dc0df760f21e
 keywords: ["AVC_FUNCTION_SET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref

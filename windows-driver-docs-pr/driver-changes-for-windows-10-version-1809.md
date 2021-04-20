@@ -1,7 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1809
 description: Learn about new features for driver development in Windows 10, version 1809 (Windows 10 October 2018 update).
-ms.assetid: 764bcd98-c123-45e2-9dd1-44d54bb1addc
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
@@ -122,7 +121,7 @@ Several new APIs have been added in the core kernel:
 
 * New [INF files for NetAdapterCx client drivers](./netcx/inf-files-for-netadaptercx-client-drivers.md) topic.
 * Transmit and receive queues have been consolidated into one object type called a packet queue, to simplify the API surface. A new section called [Polling model](./netcx/transmit-and-receive-queues.md#polling-model) has been added to the [Transmit and receive queues](./netcx/transmit-and-receive-queues.md) topic.
-* [Hardware offloads](./netcx/netadaptercx-hardware-offloads.md) have been added to NetAdapterCx, which also automates the registration of associated packet extensions for client drivers.
+* [Hardware offloads](./netcx/introduction-to-hardware-offloads.md) have been added to NetAdapterCx, which also automates the registration of associated packet extensions for client drivers.
 * Network interfaces are now decoupled from the driver's WDF device object. The *EvtNetAdapterSetCapabilities* callback function was removed to support this. NetAdapterCx client drivers can now have multiple network interfaces, including a default one.
 
    Topics updated to support network interface/device object decoupling include the following:

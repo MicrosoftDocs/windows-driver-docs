@@ -1,7 +1,6 @@
 ---
 title: Avoiding NDIS Power Management Problems
 description: Avoiding NDIS Power Management Problems
-ms.assetid: 58bd91d5-68bd-471d-a961-6e0676d4a352
 keywords:
 - power management WDK NDIS miniport , problems
 - network interface cards WDK networking , power problems

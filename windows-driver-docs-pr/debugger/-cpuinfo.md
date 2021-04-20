@@ -1,7 +1,6 @@
 ---
 title: cpuinfo
 description: The cpuinfo extension displays detailed information about the target computer's CPU.
-ms.assetid: 1e7c348b-0de8-4925-b0a9-300391b6064e
 keywords: ["cpuinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Determining the NVGRE Task Offload Capabilities of a Network Adapter
 description: This section describes how to determine the NVGRE Task Offload capabilities of a network adapter
-ms.assetid: 1F9C5E7D-5488-47C1-BEDC-D7C640F57511
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

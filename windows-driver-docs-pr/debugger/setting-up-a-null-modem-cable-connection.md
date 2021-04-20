@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a Serial Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a null-modem cable.
-ms.assetid: f7311928-bab1-4692-8dd6-5e464dd7127a
 keywords: ["setup, making a debug cable connection", "null-modem cable", "debug cable", "cable connection", "cable connection, debug (null-modem) cable)"]
 ms.date: 07/11/2018
 ms.localizationpriority: medium

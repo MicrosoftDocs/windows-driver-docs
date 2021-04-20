@@ -1,7 +1,6 @@
 ---
 title: PKEY\_AudioEngine\_OEMFormat
 description: PKEY\_AudioEngine\_OEMFormat
-ms.assetid: a1587f46-1c21-4419-a1a4-81fe299c6871
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

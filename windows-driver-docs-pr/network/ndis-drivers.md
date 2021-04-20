@@ -1,7 +1,6 @@
 ---
 title: NDIS driver types
 description: NDIS driver types
-ms.assetid: ed7bd8b4-75d5-4ecd-beb2-df8ac1ce96b3
 keywords:
 - network drivers WDK , NDIS drivers
 - NDIS WDK , driver types supported

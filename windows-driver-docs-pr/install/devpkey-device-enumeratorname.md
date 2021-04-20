@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_EnumeratorName
 description: DEVPKEY_Device_EnumeratorName
-ms.assetid: 513b298d-31a1-4791-a434-620a0a2edac0
 keywords: ["DEVPKEY_Device_EnumeratorName Device and Driver Installation"]
 topic_type:
 - apiref

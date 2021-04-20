@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of Display Miniport Driver function
 description: The DriverEntry function provides the Microsoft DirectX graphics kernel subsystem with a set of pointers to functions implemented by the display miniport driver.
-ms.assetid: 64b4e9d5-eb6e-48ab-95bf-a237ec32a54b
 keywords: ["DriverEntry function Display Devices"]
 topic_type:
 - apiref

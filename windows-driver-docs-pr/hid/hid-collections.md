@@ -1,7 +1,6 @@
 ---
 title: HID Collections Overview
 description: A HID collection is a meaningful grouping of HID controls and their respective HID usages.
-ms.assetid: 2d3efb38-4eba-43db-8cff-9fac30209952
 keywords:
 - Human Interface Devices WDK , collections
 - HID WDK , collections

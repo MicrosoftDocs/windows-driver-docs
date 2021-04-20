@@ -1,7 +1,6 @@
 ---
 title: BCDEdit Options Reference
 description: BCDEdit Options Reference
-ms.assetid: 351f8bc3-a228-48a4-bda8-69ee8521a5d3
 ms.date: 09/25/2020
 ms.localizationpriority: medium
 ---

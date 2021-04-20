@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_AUDIO_SPLITTER
 description: KSCATEGORY_AUDIO_SPLITTER
-ms.assetid: cae34eb3-899b-49d4-a6ea-0d94f4666518
 keywords: ["KSCATEGORY_AUDIO_SPLITTER Device and Driver Installation"]
 topic_type:
 - apiref

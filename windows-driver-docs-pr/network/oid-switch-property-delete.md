@@ -1,7 +1,6 @@
 ---
 title: OID_SWITCH_PROPERTY_DELETE
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PROPERTY_DELETE to notify extensible switch extensions about the deletion of a switch policy property.
-ms.assetid: 55291392-C018-4578-9767-DC5621F75D44
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_PROPERTY_DELETE Network Drivers Starting with Windows Vista

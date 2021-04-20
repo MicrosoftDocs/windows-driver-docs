@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VIDCAP\_SEARCH
 description: The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a search has been completed.
-ms.assetid: 07c7ef26-4f88-40cf-84f2-14cc702f37d5
 keywords: ["KSEVENT_VIDCAP_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref

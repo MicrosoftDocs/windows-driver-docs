@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_POSITION
 description: The KSPROPERTY\_AUDIO\_POSITION property specifies the current positions of the play and write cursors in the sound buffer for the pin's audio stream.
-ms.assetid: 859990bc-18c0-429a-afb6-07b5adc98630
 keywords: ["KSPROPERTY_AUDIO_POSITION Audio Devices"]
 topic_type:
 - apiref

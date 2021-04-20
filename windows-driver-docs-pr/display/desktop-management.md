@@ -1,7 +1,6 @@
 ---
 title: Desktop Management
 description: Desktop Management
-ms.assetid: 68ae302b-a39e-4aff-8be7-52081c318c9e
 keywords:
 - display drivers WDK Windows 2000 , desktop management
 - desktop management WDK Windows 2000 display

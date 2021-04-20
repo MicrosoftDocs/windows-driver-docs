@@ -1,7 +1,6 @@
 ---
 title: Calling Other Windows Filtering Platform Functions
 description: Calling Other Windows Filtering Platform Functions
-ms.assetid: dae70b4d-2be2-4db3-86cc-2e7df7d5c034
 keywords:
 - Windows Filtering Platform callout drivers WDK , calling other functions
 - callout drivers WDK Windows Filtering Platform , calling other functions

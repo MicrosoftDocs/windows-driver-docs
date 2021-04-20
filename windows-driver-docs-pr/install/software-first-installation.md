@@ -1,7 +1,6 @@
 ---
 title: Software-First Installation
 description: Software-First Installation
-ms.assetid: 2199316d-17d5-463a-8c97-f89c87473f20
 keywords:
 - installation applications WDK , software-first installations
 - device installation applications WDK , software-first installations

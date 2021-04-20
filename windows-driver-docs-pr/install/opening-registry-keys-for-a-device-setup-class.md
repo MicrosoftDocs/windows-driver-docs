@@ -1,7 +1,6 @@
 ---
 title: Opening Registry Keys for a Device Setup Class
 description: Opening Registry Keys for a Device Setup Class
-ms.assetid: B747EB2B-892C-4465-98E0-245FF7BC1E70
 keywords:
 - registry WDK device installations , opening registry keys for a device setup class
 - device setup classes WDK device installations , opening registry keys

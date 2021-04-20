@@ -1,14 +1,13 @@
 ---
 title: Testing Auto Brightness
 description: This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
-ms.assetid: 0ca1a07e-ab4d-47d1-b6ab-a1aa02ee3ee6
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
 # Testing Auto Brightness
 
-This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool. Automatic or Adaptive Brightness refers to screen brightness set automatically by the system in response to the Ambient Light Sensor reading. 
+This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool. Automatic or Adaptive Brightness refers to screen brightness set automatically by the system in response to the Ambient Light Sensor reading.
 
 ## Set up
 
@@ -28,20 +27,20 @@ We highly recommended that you use **MALT_SUT_Setup.bat** to setup MALT and the 
 
 ### Get ambient light response curve
 
-**Using the [SensorExplorer](https://aka.ms/sensorexplorer) app (Recommended)**
+**Using the [SensorExplorer](testing-sensor-explorer.md) app (Recommended)**
 
 1. Open SensorExplorer and click **MALT** on the left-hand side menu bar.
 
-![SensorExplorer MALT page](images/SensorExplorerMALT.png)
+    ![SensorExplorer MALT page](images/SensorExplorerMALT.png)
 
 2. Verify the connection by clicking **Sensor Data** > **Get ambient brightness**. If MALT is properly set up, the correct lux value will be displayed; otherwise close the app, try re-uploading the Arduino program and checking the Serial Monitor.
-3. Under **Run a Test**, click **Take auto-brightness curve**. 
+3. Under **Run a Test**, click **Take auto-brightness curve**.
 4. Choose a location to save the .csv file.
 5. Specify the wait time before the test starts. This is meant to give you time to place the sensor on the system.
 6. Wait. This test will take approximately 5-10 minutes. The test is adjusting the brightness of the light from 0 to its maximum brightness, a range of approximately 0 to 2600 ambient lux.
 7. After the test completes, the output will be saved automatically to `autoBrightness.csv` and a sound will be played to notify you that the test has completed.
 
-**Using MALTUtil.exe**
+### Using MALTUtil.exe
 
 1. Verify the connection by running `MALTUtil.exe /screenLux` from cmd. If MALT is properly setup, the correct lux value will be displayed, otherwise cmd will hang or display `No Arduino devices connected to the system`.
 2. On the SUT, run `MALTUtil.exe /autoCurve 30` in cmd. 30 refers to a 30 second wait before the test starts - this is meant to give you time to place the sensor on the system. If you need longer (or shorter) than 30 seconds to move anything in your setup around before the test begins, adjust the number accordingly.
@@ -52,7 +51,7 @@ We highly recommended that you use **MALT_SUT_Setup.bat** to setup MALT and the 
 
 1. Open `autoBrightness.csv` in Microsoft Excel. This guide assumes you are using Microsoft Excel 2016. If you are using a different version, you may need to adjust these steps.
 2. Click **File** > **Export** > **Change file type**. Change the file type to .xlsx. This will allow you to create and save visualizations of your data.
-3. In your document, you will see three columns: 
+3. In your document, you will see three columns:
 
 | Light Level | Ambient Lux  | Screen Lux |
 |-----|----|----|
@@ -64,7 +63,7 @@ We highly recommended that you use **MALT_SUT_Setup.bat** to setup MALT and the 
 These steps may vary if you are using a program other than Microsoft Excel 2016.
 
 1. In your Microsoft Excel .xlsx file, select the two columns with data: "Ambient Lux" and "Screen Lux".
-2. Click **Insert** > **Insert Scatter (X, Y) or Bubble Chart** > **Scatter with straight lines** 
+2. Click **Insert** > **Insert Scatter (X, Y) or Bubble Chart** > **Scatter with straight lines**
 
 ![insert scatter plot](images/insertScatter1.png)
 
@@ -72,9 +71,9 @@ Now you have a visual representation of the auto brightness response curve measu
 
 ### Interpret the results
 
-You must manually inspect the results yourself or with your engineering team in charge of the auto brightness curve. Here are some things to consider: 
+You must manually inspect the results yourself or with your engineering team in charge of the auto brightness curve. Here are some things to consider:
 
-1. Does the result measured by the MALT match the expected definition of the ambient light response curve in the BIOS? 
+1. Does the result measured by the MALT match the expected definition of the ambient light response curve in the BIOS?
 2. Are there enough steps in the ambient light response curve? A curve with few points will be noticeable to a user as they adjust the brightness.
 3. Are the steps at the lower end of the curve smaller than at the higher end of the curve? Brightness changes are more perceptible at lower brightness. Consider adding more frequent curve points with smaller steps at lower brightness percentages.
 

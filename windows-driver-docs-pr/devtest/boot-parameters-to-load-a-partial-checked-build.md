@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Load a Partial Checked Build
 description: Boot Parameters to Load a Partial Checked Build
-ms.assetid: 701a3258-d659-49a7-8e0d-52adc556a289
 keywords:
 - partial checked build boot options WDK
 - boot parameters WDK

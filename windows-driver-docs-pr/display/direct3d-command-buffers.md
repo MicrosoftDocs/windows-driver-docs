@@ -1,7 +1,6 @@
 ---
 title: Direct3D Command Buffers
 description: Direct3D Command Buffers
-ms.assetid: d8c093fa-da5c-497c-9eb8-4f689eb96cbf
 keywords:
 - command buffers WDK Direct3D
 - buffers WDK Direct3D

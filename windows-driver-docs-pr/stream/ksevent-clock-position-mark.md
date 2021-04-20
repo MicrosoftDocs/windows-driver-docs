@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CLOCK\_POSITION\_MARK
 description: A KSEVENT\_CLOCK\_POSITION\_MARK event occurs when a certain time on a clock is reached.
-ms.assetid: 489e7441-41e9-40e5-8bf5-0bff2fda9f27
 keywords: ["KSEVENT_CLOCK_POSITION_MARK Streaming Media Devices"]
 topic_type:
 - apiref

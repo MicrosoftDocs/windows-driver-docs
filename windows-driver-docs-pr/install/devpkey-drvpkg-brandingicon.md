@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_BrandingIcon
 description: DEVPKEY_DrvPkg_BrandingIcon
-ms.assetid: 4a830401-5677-4fda-a087-407b1246699f
 keywords: ["DEVPKEY_DrvPkg_BrandingIcon Device and Driver Installation"]
 topic_type:
 - apiref

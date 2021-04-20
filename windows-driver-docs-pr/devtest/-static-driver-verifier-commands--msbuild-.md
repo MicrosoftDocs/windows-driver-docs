@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier commands (MSBuild)
 description: Commands used with Static Driver Verifier
-ms.assetid: F0663631-AD7B-4BFE-8E07-7BB2FFC72911
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

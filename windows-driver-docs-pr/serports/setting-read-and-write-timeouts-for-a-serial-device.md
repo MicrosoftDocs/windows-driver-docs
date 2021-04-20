@@ -1,7 +1,6 @@
 ---
 title: Setting Read and Write Timeouts for a Serial Device
 description: Setting Read and Write Timeouts for a Serial Device
-ms.assetid: ed5b80a9-93cb-4e3f-9038-e715be35f206
 keywords:
 - Serial driver WDK , time-outs
 - time-outs WDK serial devices

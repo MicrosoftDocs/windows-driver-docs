@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdext
 description: The usbkd.usbhcdext command displays information from the device extension of a USB host controller or a USB root hub.
-ms.assetid: 83811F9F-5899-4EC8-83D7-39EE884C0A01
 keywords: ["usbkd.usbhcdext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: The wdbgexts.h Header File
 description: This topic describes the wdbgexts.h Header File. Routines in the wdbgexts.h header file are used to write DbgEng extensions and WdbgExts extensions.
-ms.assetid: a2c59657-b151-41e3-aa44-bdd8303eaf49
 keywords: WdbgExts API, wdbgexts.h, wdbgexts.h header file
 ms.date: 05/23/2017
 ms.localizationpriority: medium

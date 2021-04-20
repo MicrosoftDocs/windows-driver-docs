@@ -1,7 +1,6 @@
 ---
 title: Restarting a Trace Session
 description: Restarting a Trace Session
-ms.assetid: 2fd0dc74-d6dd-4057-b1d0-1c0c0ff23d48
 keywords:
 - trace sessions WDK , restarting
 - restarting trace sessions

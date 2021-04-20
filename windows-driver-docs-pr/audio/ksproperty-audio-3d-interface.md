@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_3D\_INTERFACE
 description: The KSPROPERTY\_AUDIO\_3D\_INTERFACE property specifies the 3D algorithm to use to process the data in the sound buffer.
-ms.assetid: 76c56e61-23ef-43ad-b66b-2412fd247b6e
 keywords: ["KSPROPERTY_AUDIO_3D_INTERFACE Audio Devices"]
 topic_type:
 - apiref

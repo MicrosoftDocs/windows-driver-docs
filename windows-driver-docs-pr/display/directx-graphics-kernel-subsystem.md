@@ -1,7 +1,6 @@
 ---
 title: DirectX Graphics Kernel Subsystem
 description: The Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) implements functions that are called by the display miniport driver.
-ms.assetid: 7601c761-bdab-4d18-8a84-7d69a71ec41c
 ms.date: 10/30/2018
 ms.localizationpriority: medium
 ---

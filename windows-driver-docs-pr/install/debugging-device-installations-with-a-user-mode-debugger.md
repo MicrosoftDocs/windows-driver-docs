@@ -1,7 +1,6 @@
 ---
 title: Debugging Device Installations with a User-mode Debugger
 description: Debugging Device Installations with a User-mode Debugger
-ms.assetid: 34427afb-3303-44ec-a3a7-72f247c5506d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

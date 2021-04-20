@@ -1,7 +1,6 @@
 ---
 title: Filter Module Direct OID Requests
 description: Filter Module Direct OID Requests
-ms.assetid: 0ab7079b-6578-4932-a276-40a961b55efe
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking

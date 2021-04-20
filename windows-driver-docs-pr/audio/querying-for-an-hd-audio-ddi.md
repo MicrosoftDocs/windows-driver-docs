@@ -1,7 +1,6 @@
 ---
 title: Querying for an HD Audio DDI
 description: Querying for an HD Audio DDI
-ms.assetid: 972bce92-0ecd-486a-a9a8-fcd434ad12a5
 keywords:
 - HD Audio, querying
 - High Definition Audio (HD Audio), querying

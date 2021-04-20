@@ -1,7 +1,6 @@
 ---
 title: PnP Tests (Device Fundamentals)
 description: The Device Fundamentals PnP tests force a driver to handle almost all of the PnP IRPs; however, there are three areas that are stressed specifically removal, rebalance, and surprise removal.
-ms.assetid: 4224F92B-5430-4F55-900D-0B08ADBE54F6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Optional WIA Child Item Properties for Film Scanners
 description: Optional WIA Child Item Properties for Film Scanners
-ms.assetid: 85364b59-e0a8-4a82-bc89-6f160609f35d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

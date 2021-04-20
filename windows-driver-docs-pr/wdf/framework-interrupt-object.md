@@ -1,7 +1,6 @@
 ---
 title: Framework Interrupt Object
 description: Framework Interrupt Object
-ms.assetid: FA2B8C11-69D2-4A9E-8F57-C7295DA4EE44
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

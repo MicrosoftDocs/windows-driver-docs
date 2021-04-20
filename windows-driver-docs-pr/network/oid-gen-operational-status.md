@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_OPERATIONAL_STATUS
 description: As a query, use the OID_GEN_OPERATIONAL_STATUS OID to determine the current operational status of a network interface (ifOperStatus from RFC 2863).
-ms.assetid: fa00d449-6ec0-4e72-8d9c-a453a0b1f3e9
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_OPERATIONAL_STATUS Network Drivers Starting with Windows Vista

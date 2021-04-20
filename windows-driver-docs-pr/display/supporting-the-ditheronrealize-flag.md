@@ -1,7 +1,6 @@
 ---
 title: Supporting the DitherOnRealize Flag
 description: Supporting the DitherOnRealize Flag
-ms.assetid: 2a480045-ed2e-4650-80a4-a374f0388591
 keywords:
 - display drivers WDK Windows 2000 , dithering
 - DrvDitherColor

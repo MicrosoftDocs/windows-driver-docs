@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CHORUS\_LEVEL
 description: The KSPROPERTY\_AUDIO\_CHORUS\_LEVEL property specifies the chorus level. This is a property of a chorus node (KSNODETYPE\_CHORUS).
-ms.assetid: 80541b2c-0fb3-4306-8ed2-e524b5a4c113
 keywords: ["KSPROPERTY_AUDIO_CHORUS_LEVEL Audio Devices"]
 topic_type:
 - apiref

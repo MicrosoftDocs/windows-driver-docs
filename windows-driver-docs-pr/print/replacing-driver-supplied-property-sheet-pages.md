@@ -1,7 +1,6 @@
 ---
 title: Replacing Driver-Supplied Property Sheet Pages
 description: Replacing Driver-Supplied Property Sheet Pages
-ms.assetid: b7f79841-f82c-4a60-9c2f-58772a65a5eb
 keywords:
 - user interface plug-ins WDK print , property sheet pages
 - UI plug-ins WDK print , property sheet pages

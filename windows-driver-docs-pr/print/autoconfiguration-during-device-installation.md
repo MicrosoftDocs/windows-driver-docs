@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration During Device Installation
 description: Autoconfiguration During Device Installation
-ms.assetid: 04b53767-4b5e-450d-96ab-b029cdf62b36
 keywords:
 - autoconfiguration WDK printer , during device installations
 - printer autoconfiguration WDK printer , during device installations

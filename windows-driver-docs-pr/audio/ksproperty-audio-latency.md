@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_LATENCY
 description: The KSPROPERTY\_AUDIO\_LATENCY property is used to report the delay (or amount of audio buffering) that is associated with the stream.
-ms.assetid: d155e3a5-e3e6-4381-9bbe-2a16b0be47b3
 keywords: ["KSPROPERTY_AUDIO_LATENCY Audio Devices"]
 topic_type:
 - apiref

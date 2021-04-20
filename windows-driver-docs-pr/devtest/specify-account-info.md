@@ -1,7 +1,6 @@
 ---
 title: Specify account information in the Mobile Broadband Metadata Authoring Wizard
 description: Specify account information in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: FFE19760-360F-482C-BBD8-7068D2DD34E5
 keywords:
 - Specify account information in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017

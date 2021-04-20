@@ -1,7 +1,6 @@
 ---
 title: WSK_TDI_DEVICENAME_MAPPING
 description: WSK_TDI_DEVICENAME_MAPPING
-ms.assetid: 7636fa80-3908-4808-8fb8-6227ec6e023b
 ms.date: 07/18/2017
 keywords:
  - WSK_TDI_DEVICENAME_MAPPING Network Drivers Starting with Windows Vista
@@ -64,7 +63,7 @@ For more information about using TDI transports, see [Using TDI Transports](./us
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](./windows-filtering-platform-callout-drivers2.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](./introduction-to-windows-filtering-platform-callout-drivers.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 

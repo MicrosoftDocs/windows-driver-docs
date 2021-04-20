@@ -1,7 +1,6 @@
 ---
 title: Printer Installation and the Plug and Play Manager
 description: Printer Installation and the Plug and Play Manager
-ms.assetid: 1edc92f1-fcd9-4af0-957d-cd7ff2e40125
 keywords:
 - Plug and Play manager WDK print
 - duplicate installation detection WDK print

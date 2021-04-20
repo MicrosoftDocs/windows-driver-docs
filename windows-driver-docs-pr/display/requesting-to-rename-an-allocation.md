@@ -1,7 +1,6 @@
 ---
 title: Requesting to Rename an Allocation
 description: Requesting to Rename an Allocation
-ms.assetid: f22e19ba-9ff3-4aa1-a3f0-103f67ea7c60
 keywords:
 - command buffers WDK display , allocation renaming
 - DMA buffers WDK display , allocation renaming

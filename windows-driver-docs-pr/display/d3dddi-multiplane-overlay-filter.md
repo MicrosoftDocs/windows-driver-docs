@@ -1,7 +1,6 @@
 ---
 title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER structure
 description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER structure, which is reserved for system use. Do not use it in your driver.
-ms.assetid: 56276b78-5550-4d93-8a73-b1183deb54da
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER structure Display Devices"]
 topic_type:
 - apiref

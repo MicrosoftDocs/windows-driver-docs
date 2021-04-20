@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Implementing Finish-Install Actions
 description: Guidelines for Implementing Finish-Install Actions
-ms.assetid: 455d520a-ccd7-470b-ab5f-5786ee90b91d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

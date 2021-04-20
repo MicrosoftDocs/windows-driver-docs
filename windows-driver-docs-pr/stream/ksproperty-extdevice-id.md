@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_ID
 description: The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalized system-wide Id.
-ms.assetid: ff0f37f8-55a8-45b9-8cf1-81e2cc5ac3aa
 keywords: ["KSPROPERTY_EXTDEVICE_ID Streaming Media Devices"]
 topic_type:
 - apiref

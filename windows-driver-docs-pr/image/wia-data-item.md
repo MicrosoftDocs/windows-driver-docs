@@ -1,7 +1,6 @@
 ---
 title: WIA Data Item
 description: WIA Data Item
-ms.assetid: 3ce01393-4a0b-4b70-8087-abe989aa00a9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

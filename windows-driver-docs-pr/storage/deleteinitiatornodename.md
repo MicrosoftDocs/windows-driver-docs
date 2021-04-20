@@ -1,7 +1,6 @@
 ---
 title: DeleteInitiatorNodeName
 description: DeleteInitiatorNodeName
-ms.assetid: 955ff574-a73b-42fa-8302-1012de5c9fee
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: .restart (Restart Target Application)
 description: The .restart command restarts the target application.Do not confuse this command with the .restart (Restart Kernel Connection) command, which works only in kernel mode.
-ms.assetid: abfa1817-41d8-4bb2-a6d2-e9c9027b50df
 keywords: [".restart (Restart Target Application) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

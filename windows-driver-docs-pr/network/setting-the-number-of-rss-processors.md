@@ -1,13 +1,12 @@
 ---
 title: Setting the Number of RSS Processors
 description: Setting the Number of RSS Processors
-ms.assetid: c13db4a1-e345-4368-9bcd-afbd2fd8db7a
 keywords:
 - processors WDK RSS
 - CPU configuration WDK RSS
 ms.date: 09/21/2020
 ms.localizationpriority: medium
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---
 
 # Setting the Number of RSS Processors

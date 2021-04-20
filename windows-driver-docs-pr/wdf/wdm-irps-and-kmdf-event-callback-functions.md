@@ -1,7 +1,6 @@
 ---
 title: WDM IRPs and WDF Event Callback Functions
 description: WDM IRPs and WDF Event Callback Functions
-ms.assetid: 9B9A01FD-AA15-4C30-B19D-2F6451014EAD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

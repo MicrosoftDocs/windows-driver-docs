@@ -1,7 +1,6 @@
 ---
 title: DXGK\_POWER\_P\_COMPONENT structure
 description: Learn about the DXGK\_POWER\_P\_COMPONENT structure, which is reserved for system use. Do not use it in your driver.
-ms.assetid: 31D76B3B-E939-404B-9EE4-FFCDFCD304C8
 keywords: ["DXGK_POWER_P_COMPONENT structure Display Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Unregistering the Minifilter
 description: Unregistering the Minifilter
-ms.assetid: 4af2d4fd-bfbe-4a75-bbfb-2a1c4b5c2032
 keywords:
 - unregistering minifilters
 ms.date: 04/20/2017

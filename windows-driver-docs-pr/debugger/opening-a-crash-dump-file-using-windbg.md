@@ -1,7 +1,6 @@
 ---
 title: Opening a Dump File Using WinDbg
 description: There are several ways you can use WinDbg to open a dump file.
-ms.assetid: DE2EABE7-2B7A-4DF9-82FD-EF19D69E31A7
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

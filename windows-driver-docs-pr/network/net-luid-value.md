@@ -1,7 +1,6 @@
 ---
 title: NET_LUID Value
 description: NET_LUID Value
-ms.assetid: 9b9c63c1-f8b4-4e26-afc1-a3e4910609e2
 keywords:
 - NDIS network interfaces WDK , NET_LUID
 - network interfaces WDK , NET_LUID

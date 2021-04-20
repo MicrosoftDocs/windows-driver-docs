@@ -1,7 +1,6 @@
 ---
 title: Commercial Release Certificate
 description: Commercial Release Certificate
-ms.assetid: bc3966e6-a7e4-4c5c-8dcf-9b95e61ba9b1
 keywords:
 - commercial release certificates WDK
 - catalog files WDK driver signing , commercial release certificates

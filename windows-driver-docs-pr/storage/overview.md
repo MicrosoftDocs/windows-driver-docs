@@ -1,7 +1,6 @@
 ---
 title: About Storage Silo Drivers
 description: About Storage Silo Drivers
-ms.assetid: e150228e-820f-49ac-bc3f-644e77f3d544
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

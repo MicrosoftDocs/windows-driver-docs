@@ -1,7 +1,6 @@
 ---
 title: Security Identifier
 description: Security Identifier
-ms.assetid: e4c39d83-6f32-406c-b8d5-d41305a8976f
 keywords:
 - security descriptors WDK file systems , security identifiers
 - descriptors WDK file systems , security identifiers

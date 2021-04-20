@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_TABLE\_SECTION
 description: Clients use KSPROPERTY\_BDA\_TABLE\_SECTION to inform nodes about the table section to use when delivering data on the node's output.
-ms.assetid: 58e6cc37-b6f1-49d6-a832-46f1edabf740
 keywords: ["KSPROPERTY_BDA_TABLE_SECTION Streaming Media Devices"]
 topic_type:
 - apiref

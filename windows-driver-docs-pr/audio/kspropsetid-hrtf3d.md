@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Hrtf3d
 description: KSPROPSETID\_Hrtf3d
-ms.assetid: 8045991b-0409-445a-bd35-d9b8644f770e
 keywords: ["KSPROPSETID_Hrtf3d"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

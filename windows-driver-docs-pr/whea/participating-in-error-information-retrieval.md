@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Information Retrieval
 description: Participating in Error Information Retrieval
-ms.assetid: ed0ad20b-d978-4650-b3a0-6b0795323c77
 keywords:
 - Windows Hardware Error Architecture WDK , error information retrieval
 - WHEA WDK , error information retrieval

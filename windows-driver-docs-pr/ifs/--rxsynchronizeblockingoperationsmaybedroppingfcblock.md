@@ -1,7 +1,6 @@
 ---
 title: \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function
 description: \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock synchronizes blocking I/O requests to the same work queue.
-ms.assetid: 350294ca-9790-4996-bcb5-1423db762c6e
 keywords: ["__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function Installable File System Drivers"]
 topic_type:
 - apiref

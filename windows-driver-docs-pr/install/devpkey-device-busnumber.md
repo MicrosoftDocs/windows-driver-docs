@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_BusNumber
 description: DEVPKEY_Device_BusNumber
-ms.assetid: 17cbe49a-e10b-4483-b030-c061ced065c3
 keywords: ["DEVPKEY_Device_BusNumber Device and Driver Installation"]
 topic_type:
 - apiref

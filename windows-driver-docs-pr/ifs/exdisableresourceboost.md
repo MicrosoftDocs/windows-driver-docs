@@ -1,7 +1,6 @@
 ---
 title: ExDisableResourceBoost
 description: Learn about the ExDisableResourceBoost routine, which is reserved for system use. Do not use this routine in your driver.
-ms.assetid: 34adb7f7-43cd-4ba2-805a-9f0cb1c54cf0
 keywords: ["ExDisableResourceBoost Installable File System Drivers"]
 topic_type:
 - apiref

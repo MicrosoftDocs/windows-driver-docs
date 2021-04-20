@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x13C INVALID_IO_BOOST_STATE
 description: The INVALID_IO_BOOST_STATE bug check has a value of 0x0000013C. This indicates that a thread exited with an invalid I/O boost state. This should be zero when a thread exits.
-ms.assetid: BDCD8A3A-1F26-41A4-95B0-9B2CEBD333AC
 keywords: ["Bug Check 0x13C INVALID_IO_BOOST_STATE", "INVALID_IO_BOOST_STATE"]
 ms.date: 05/23/2017
 topic_type:

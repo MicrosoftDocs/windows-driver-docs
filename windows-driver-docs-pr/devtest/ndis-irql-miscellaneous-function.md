@@ -1,7 +1,6 @@
 ---
 title: Irql\_Miscellaneous\_Function rule (ndis)
 description: The Irql\_Miscellaneous\_Function rule specifies that the NDIS functions must be called at correct IRQL levels.
-ms.assetid: ae1d0243-1db9-428f-a112-f438e2322ff2
 ms.date: 05/21/2018
 keywords: ["Irql_Miscellaneous_Function rule (ndis)"]
 topic_type:

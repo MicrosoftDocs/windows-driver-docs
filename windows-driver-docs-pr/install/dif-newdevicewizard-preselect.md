@@ -1,7 +1,6 @@
 ---
 title: DIF_NEWDEVICEWIZARD_PRESELECT
 description: DIF_NEWDEVICEWIZARD_PRESELECT
-ms.assetid: 51aec9bf-11c1-4df9-bb44-0cfde066f73d
 keywords: ["DIF_NEWDEVICEWIZARD_PRESELECT Device and Driver Installation"]
 topic_type:
 - apiref

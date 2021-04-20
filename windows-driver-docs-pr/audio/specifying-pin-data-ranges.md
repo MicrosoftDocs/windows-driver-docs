@@ -1,7 +1,6 @@
 ---
 title: Specifying Pin Data Ranges
 description: Specifying Pin Data Ranges
-ms.assetid: bef74cd1-d2be-402d-be7f-acc7d8cbf392
 keywords:
 - pins WDK audio , data ranges
 - WDM audio drivers WDK , pin data ranges

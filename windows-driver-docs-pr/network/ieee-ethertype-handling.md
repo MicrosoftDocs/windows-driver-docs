@@ -1,7 +1,6 @@
 ---
 title: IEEE EtherType Handling
 description: IEEE EtherType Handling
-ms.assetid: ddd7244b-05a0-4ee8-b9aa-300015fbe3bd
 keywords:
 - send operations WDK Native 802.11 IHV Extensions DLL
 - receive operations WDK Native 802.11 IHV Extensions DLL

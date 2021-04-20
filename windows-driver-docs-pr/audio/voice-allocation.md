@@ -1,7 +1,6 @@
 ---
 title: Voice Allocation
 description: Voice Allocation
-ms.assetid: fb1e6c36-02b4-41a6-b9c4-09f393d389db
 keywords:
 - DirectMusic kernel-mode WDK audio , voice allocation
 - kernel-mode synths WDK audio , voice allocation

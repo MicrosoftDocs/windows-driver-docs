@@ -1,7 +1,6 @@
 ---
 title: Driver Functions to Support Direct3D
 description: Driver Functions to Support Direct3D
-ms.assetid: 949551c3-2172-454c-b398-eba468b90705
 keywords:
 - Direct3D WDK Windows 2000 display , functions
 - functions WDK Direct3D

@@ -1,7 +1,6 @@
 ---
 title: Container ID support for displays
 description: Describes Container ID support for displays--visual representation of devices that are embedded within a display or monitor device.
-ms.assetid: 3149C156-34F4-4C55-AE77-1CC40C2B35BC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

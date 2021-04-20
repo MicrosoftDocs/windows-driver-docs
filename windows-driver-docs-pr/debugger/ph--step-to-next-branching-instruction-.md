@@ -1,7 +1,6 @@
 ---
 title: ph (Step to Next Branching Instruction)
 description: The ph command executes the program until any kind of branching instruction is reached, including conditional or unconditional branches, calls, returns, and system calls.
-ms.assetid: ba4699d3-9872-4deb-96c7-e8b54c1d8ec6
 keywords: ["ph (Step to Next Branching Instruction) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

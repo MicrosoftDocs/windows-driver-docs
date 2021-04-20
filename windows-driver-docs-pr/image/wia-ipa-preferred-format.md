@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_PREFERRED\_FORMAT
 description: The WIA\_IPA\_PREFERRED\_FORMAT property contains the preferred format for images that the WIA minidriver transfers. The minidriver creates and maintains this property.
-ms.assetid: a9291395-6c9b-4288-abcf-53638deca82e
 keywords: ["WIA_IPA_PREFERRED_FORMAT Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_PREFERRED_WAVEIN_DEVICE
 description: KSCATEGORY_PREFERRED_WAVEIN_DEVICE
-ms.assetid: d5f20f18-396a-4cb7-b653-038310ce8e42
 keywords: ["KSCATEGORY_PREFERRED_WAVEIN_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref

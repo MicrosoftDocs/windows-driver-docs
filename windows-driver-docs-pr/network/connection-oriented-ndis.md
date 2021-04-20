@@ -1,7 +1,6 @@
 ---
 title: Introduction to Connection-Oriented NDIS
 description: Introduction to Connection-Oriented NDIS
-ms.assetid: c74f8e60-c041-48e9-8aa1-98a9cb9eb869
 keywords:
 - connection-oriented NDIS WDK
 - CoNDIS WDK networking

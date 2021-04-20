@@ -1,7 +1,6 @@
 ---
 title: Rotation element
 description: The optional Rotation element specifies the amount to rotate each image of the scanned document.
-ms.assetid: df12cd79-7c3e-4be5-9d7c-237ec014e9c1
 keywords: ["Rotation element Imaging Devices"]
 topic_type:
 - apiref

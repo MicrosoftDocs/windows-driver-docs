@@ -1,7 +1,6 @@
 ---
 title: ACPI_METHOD_SET_ARGUMENT_STRING macro
 description: The ACPI_METHOD_SET_ARGUMENT_STRING macro sets the members of an ACPI_METHOD_ARGUMENT structure for a string value.
-ms.assetid: e0c037a9-65b6-4d6a-9ed6-d9296c14df07
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_STRING macro ACPI Devices
 ms.date: 04/20/2017

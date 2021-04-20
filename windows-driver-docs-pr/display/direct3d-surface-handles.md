@@ -1,7 +1,6 @@
 ---
 title: Direct3D Surface Handles
 description: Direct3D Surface Handles
-ms.assetid: cefede2e-3e82-4de3-ae49-4982578fd2fe
 keywords:
 - context WDK Direct3D , surface handles
 - surface handles WDK Direct3D

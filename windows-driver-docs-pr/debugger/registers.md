@@ -1,7 +1,6 @@
 ---
 title: Registers
 description: Registers
-ms.assetid: fa334c9f-46c6-4288-95ce-43128fff7f03
 keywords: ["memory access, registers", "registers"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Using Device Installation Functions
 description: Using Device Installation Functions
-ms.assetid: a7cfa359-a45c-45fa-a854-ee70de66b12e
 keywords:
 - SetupAPI functions WDK , device installation functions
 - device installation functions WDK SetupAPI

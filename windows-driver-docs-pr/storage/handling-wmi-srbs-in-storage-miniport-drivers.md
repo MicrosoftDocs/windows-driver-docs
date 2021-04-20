@@ -1,7 +1,6 @@
 ---
 title: Handling WMI SRBs in Storage Miniport Drivers
 description: Handling WMI SRBs in Storage Miniport Drivers
-ms.assetid: 92b78611-7e6f-4d77-9133-635df96584f0
 keywords:
 - storage miniport drivers WDK , WMI SRBs
 - miniport drivers WDK storage , WMI SRBs

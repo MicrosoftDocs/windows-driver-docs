@@ -1,5 +1,4 @@
 ---
-ms.assetid: 176A3794-E9E9-46C3-B242-422843436D2A
 title: Building Drivers for Different Versions of Windows
 description: If you are writing drivers for different versions of Windows, the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
 ms.date: 04/20/2017

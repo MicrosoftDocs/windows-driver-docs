@@ -378,7 +378,7 @@
       href: content-security-features-in-the-composite-client-generic-parent-drive.md
   - name: "Winusb.sys"
     items: 
-    - name: "WinUSB (Winusb.sys)"
+    - name: "Introduction to WinUSB (Winusb.sys)"
       href: winusb.md
     - name: "WinUSB Architecture and Modules"
       href: winusb-architecture.md

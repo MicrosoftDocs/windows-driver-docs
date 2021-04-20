@@ -1,7 +1,6 @@
 ---
 title: ndiskd.vc
 description: The ndiskd.vc extension displays a Connection-Oriented (CoNDIS) virtual connection (VC).
-ms.assetid: 8F172026-3FBC-4686-A3A4-F54F1A0D08E5
 keywords: ["ndiskd.vc Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Camera Microdriver Sample
 description: Camera Microdriver Sample
-ms.assetid: a3aa0cf1-9954-4556-8dae-512a12864dfe
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

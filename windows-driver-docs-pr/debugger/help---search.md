@@ -1,7 +1,6 @@
 ---
 title: Help Search
 description: Help Search
-ms.assetid: 27cc64cc-50bc-4f3b-8346-d95fb3ffdf9c
 keywords: ["Help Search", "help file, Help Search"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

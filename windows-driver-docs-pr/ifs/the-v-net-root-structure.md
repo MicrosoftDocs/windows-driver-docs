@@ -1,7 +1,6 @@
 ---
 title: The V_NET_ROOT Structure
 description: The V_NET_ROOT Structure
-ms.assetid: 866eba91-13b6-4b15-93de-4f627a635c92
 keywords:
 - share mapping WDK RDBSS
 - V_NET_ROOT structure WDK RDBSS

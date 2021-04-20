@@ -1,7 +1,6 @@
 ---
 title: When the FilterUnloadCallback Routine Is Called
 description: When the FilterUnloadCallback Routine Is Called
-ms.assetid: 22a3a73e-28be-4483-a7a6-73525e74503d
 keywords:
 - FilterUnloadCallback
 - non-mandatory unload WDK file system minifilter

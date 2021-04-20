@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE
 description: The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property specifies the mix levels for a supermixer node (KSNODETYPE\_SUPERMIX). It provides information for all input and output channels.
-ms.assetid: 1a1b486b-06e4-462b-8fe9-9d3581c82d06
 keywords: ["KSPROPERTY_AUDIO_MIX_LEVEL_TABLE Audio Devices"]
 topic_type:
 - apiref

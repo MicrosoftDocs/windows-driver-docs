@@ -1,7 +1,6 @@
 ---
 title: Displaying and Changing Properties
 description: Displaying and Changing Properties
-ms.assetid: 657b687d-b0c0-46e0-a948-242509590a4b
 keywords:
 - notify objects WDK networking , property pages
 - network notify objects WDK , property pages

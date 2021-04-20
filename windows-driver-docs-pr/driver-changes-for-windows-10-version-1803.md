@@ -1,7 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1803
 description: Learn about new features for driver development in Windows 10, such as support for Bluetooth Swift Pair.
-ms.assetid: 73ba8c40-d605-4dba-a965-0a87d80b9126
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---

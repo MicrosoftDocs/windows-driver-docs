@@ -1,7 +1,6 @@
 ---
 title: MobileBroadbandInfo
 description: MobileBroadbandInfo
-ms.assetid: 02279e23-becd-49ef-8981-6afb8e5aab91
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

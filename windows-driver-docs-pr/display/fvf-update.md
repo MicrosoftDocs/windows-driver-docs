@@ -1,7 +1,6 @@
 ---
 title: FVF Update
 description: FVF Update
-ms.assetid: 2bbcb1fd-b29f-41f4-93eb-5bd1cde9cb20
 keywords:
 - FVF WDK Direct3D
 ms.date: 04/20/2017

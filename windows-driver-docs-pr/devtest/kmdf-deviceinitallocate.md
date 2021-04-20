@@ -1,7 +1,6 @@
 ---
 title: DeviceInitAllocate rule (kmdf)
 description: The DeviceInitAllocate rule specifies that, for a PDO device or a control device object, the framework device object initialization methods WdfPdoInitAllocate or WdfControlDeviceInitAllocate must be called before the driver calls WdfDeviceCreate.
-ms.assetid: 81bad62a-4bc3-4e34-9634-2a980e1941e5
 ms.date: 05/21/2018
 keywords: ["DeviceInitAllocate rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Reliability Issues for a WavePci Miniport Driver
 description: Reliability Issues for a WavePci Miniport Driver
-ms.assetid: 329f28a8-5e99-4c25-8a88-1e634f7eeec8
 keywords:
 - WavePci reliability issues WDK audio
 - spin locks WDK audio

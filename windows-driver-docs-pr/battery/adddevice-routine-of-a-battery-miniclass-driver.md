@@ -1,7 +1,6 @@
 ---
 title: AddDevice Routine of a Battery Miniclass Driver
 description: AddDevice Routine of a Battery Miniclass Driver
-ms.assetid: 1b34e223-e238-4547-bd44-754be2e6749c
 keywords:
 - AddDevice routine WDK battery
 - battery miniclass drivers WDK , routines

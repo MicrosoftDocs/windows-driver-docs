@@ -1,7 +1,6 @@
 ---
 title: Secure Key Injection
 description: Secure Key Injection
-ms.assetid: 21F8ED59-B04C-40D3-AEED-015890798215
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

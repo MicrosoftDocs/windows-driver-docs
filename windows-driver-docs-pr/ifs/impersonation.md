@@ -1,7 +1,6 @@
 ---
 title: Impersonation
 description: Impersonation
-ms.assetid: 368c6741-b51a-4629-8ae6-a7848c07c0fc
 keywords:
 - security WDK file systems , adding security checks
 - security checks WDK file systems , impersonation

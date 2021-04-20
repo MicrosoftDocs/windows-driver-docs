@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_BASS
 description: The KSPROPERTY\_AUDIO\_BASS property specifies the bass level for a channel in a tone node (KSNODETYPE\_TONE).
-ms.assetid: 64f2f1c9-9275-4fcf-b187-a097b218924e
 keywords: ["KSPROPERTY_AUDIO_BASS Audio Devices"]
 topic_type:
 - apiref

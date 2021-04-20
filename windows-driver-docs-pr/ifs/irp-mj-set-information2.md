@@ -1,7 +1,6 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_SET_INFORMATION operation
 description: Checking the Oplock State of an IRP_MJ_SET_INFORMATION operation
-ms.assetid: d164be8d-cf42-4b96-9883-e0f8223bfde4
 ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---

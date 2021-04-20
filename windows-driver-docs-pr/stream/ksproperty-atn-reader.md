@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ATN\_READER
 description: The KSPROPERTY\_ATN\_READER property retrieves the absolute track number (ATN) of the current tape position.
-ms.assetid: ac127aa0-5a47-41b2-9a2d-96090231d43e
 keywords: ["KSPROPERTY_ATN_READER Streaming Media Devices"]
 topic_type:
 - apiref

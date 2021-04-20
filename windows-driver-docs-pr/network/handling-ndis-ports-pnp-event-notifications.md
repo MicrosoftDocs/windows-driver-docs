@@ -1,7 +1,6 @@
 ---
 title: NDIS Ports PnP Event Notifications
 description: NDIS Ports PnP Event Notifications
-ms.assetid: 2f542b62-43a0-42fa-b72d-f789e029d3f0
 keywords:
 - ports WDK NDIS , PnP event notifications
 - NDIS ports WDK , PnP event notifications

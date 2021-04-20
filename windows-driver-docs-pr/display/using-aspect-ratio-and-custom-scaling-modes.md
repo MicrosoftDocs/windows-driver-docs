@@ -1,7 +1,6 @@
 ---
 title: Using Aspect Ratio and Custom Scaling Modes
 description: Using Aspect Ratio and Custom Scaling Modes
-ms.assetid: cafb6597-64a2-4d0f-bf7b-ab37f9a53bdc
 keywords:
 - aspect ratio scaling WDK display
 - custom scaling WDK display

@@ -1,7 +1,6 @@
 ---
 title: Building and Sending an AV/C Command
 description: Building and Sending an AV/C Command
-ms.assetid: 0f5bb205-7ffe-4007-bb66-a77889af2eed
 keywords:
 - Avc.sys function driver WDK , command building and sending
 - command building WDK AV/C

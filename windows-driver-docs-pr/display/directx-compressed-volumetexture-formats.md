@@ -1,7 +1,6 @@
 ---
 title: DirectX Compressed VolumeTexture Formats
 description: DirectX Compressed VolumeTexture Formats
-ms.assetid: 5a655a30-e489-4691-873a-58bece059877
 keywords:
 - drawing compressed textures WDK DirectDraw , compressed volume texture formats
 - DirectDraw compressed textures WDK Windows 2000 display , compressed volume texture formats

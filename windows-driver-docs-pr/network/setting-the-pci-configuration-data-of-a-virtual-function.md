@@ -1,7 +1,6 @@
 ---
 title: Setting the PCI Configuration Data of a Virtual Function
 description: Setting the PCI Configuration Data of a Virtual Function
-ms.assetid: 74CAAD8B-7009-4C79-A496-93B4A3DA0B43
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

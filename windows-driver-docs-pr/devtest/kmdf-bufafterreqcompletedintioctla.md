@@ -1,7 +1,6 @@
 ---
 title: BufAfterReqCompletedIntIoctlA rule (kmdf)
 description: The BufAfterReqCompletedIntIoctlA rule verifies that after a request is completed, its buffer cannot be accessed (inside EvtIoInternalDeviceControl callback only).
-ms.assetid: 3635DB6D-00C7-44DD-B05A-7EAA16B18937
 ms.date: 05/21/2018
 keywords: ["BufAfterReqCompletedIntIoctlA rule (kmdf)"]
 topic_type:

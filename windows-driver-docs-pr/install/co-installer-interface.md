@@ -1,7 +1,6 @@
 ---
 title: Co-installer Interface
 description: Co-installer Interface
-ms.assetid: affcf2a5-5dbb-49bd-916c-bc99302b5bd8
 keywords:
 - co-installers WDK device installations , interface
 - interface WDK co-installer

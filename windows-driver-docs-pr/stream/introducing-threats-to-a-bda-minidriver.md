@@ -1,7 +1,6 @@
 ---
 title: Introducing Threats to a BDA Minidriver
 description: Introducing Threats to a BDA Minidriver
-ms.assetid: 5dabf93a-9a85-4791-958c-59c8e0a99cf4
 keywords:
 - Broadcast Driver Architecture WDK AVStream , security
 - BDA WDK AVStream , security

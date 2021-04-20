@@ -1,7 +1,6 @@
 ---
 title: Interaction of Battery Class and Miniclass Drivers
 description: Interaction of Battery Class and Miniclass Drivers
-ms.assetid: bf35a034-1bb9-4106-aafe-7692d0ff92d0
 keywords:
 - battery miniclass drivers WDK , battery class driver interaction
 - battery class drivers WDK , battery miniclass driver interaction

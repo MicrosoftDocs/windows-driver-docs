@@ -1,7 +1,6 @@
 ---
 title: Windows security model for driver developers
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
-ms.assetid: 3A7ECA7C-1FE6-4ADB-97A9-A61C6FCE9F04
 ms.date: 02/01/2018
 ms.localizationpriority: medium
 ---

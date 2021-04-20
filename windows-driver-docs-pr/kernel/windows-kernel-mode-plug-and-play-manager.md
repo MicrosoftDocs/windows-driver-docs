@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Plug and Play Manager
 description: Windows Kernel-Mode Plug and Play Manager
-ms.assetid: 43d06dbe-da66-4103-8be3-f27ff075a1b4
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

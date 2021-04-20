@@ -1,7 +1,6 @@
 ---
 title: StartIoRecursion rule (wdm)
 description: The StartIoRecursion rule specifies that if a driver's StartIo routine includes a call to IoStartNextPacket, the driver must first call IoSetStartIoAttributes with the DeferredStartIo attribute set to TRUE. Otherwise, infinite recursion can result.
-ms.assetid: 997df0a3-1222-435d-9c61-e97a2b6185cf
 ms.date: 05/21/2018
 keywords: ["StartIoRecursion rule (wdm)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: PcRegisterAdapterPower rule (audio)
 description: The PcRegisterAdapterPower rule specifies that a PortCls miniport driver should not Call PcRegisterAdapterPowerManagement twice without an intervening call to PcUnregisterAdapterPowerManagement.Call PcUnregisterAdapterPowerManagement without calling PcRegisterAdapterPowerManagement first.
-ms.assetid: 8F6E6B1D-F19C-469A-BC5A-061996BEA532
 ms.date: 05/21/2018
 keywords: ["PcRegisterAdapterPower rule (audio)"]
 topic_type:

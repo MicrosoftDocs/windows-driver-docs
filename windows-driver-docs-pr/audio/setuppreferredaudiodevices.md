@@ -1,7 +1,6 @@
 ---
 title: SetupPreferredAudioDevices
 description: SetupPreferredAudioDevices
-ms.assetid: cc6b7da4-335d-4629-ba54-32aa32a1eb09
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Instance Properties
 description: Accessing Device Instance Properties
-ms.assetid: b571201a-e765-45d0-993b-5855041b4697
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

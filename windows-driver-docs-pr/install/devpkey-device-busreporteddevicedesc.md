@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_BusReportedDeviceDesc
 description: DEVPKEY_Device_BusReportedDeviceDesc
-ms.assetid: 3a03b4f0-728c-4a15-9c97-03d03f65afc7
 keywords: ["DEVPKEY_Device_BusReportedDeviceDesc Device and Driver Installation"]
 topic_type:
 - apiref

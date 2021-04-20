@@ -1,7 +1,6 @@
 ---
 title: usb3kd.usbanalyze
 description: The usb3kd.usbanalyze extension analyzes a USB 3.0 bug check.
-ms.assetid: 4BC5687B-D8C8-4E5E-B9AD-ECDC63858345
 keywords: ["usb3kd.usbanalyze Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

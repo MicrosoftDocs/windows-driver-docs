@@ -1,7 +1,6 @@
 ---
 title: RSS with a Single Hardware Receive Queue
 description: RSS with a Single Hardware Receive Queue
-ms.assetid: 835f5646-4514-4973-978a-9bab0777a66c
 keywords:
 - receive-side scaling WDK networking , hardware queuing
 - RSS WDK networking , hardware queuing

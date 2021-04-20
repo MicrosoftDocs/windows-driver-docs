@@ -1,7 +1,6 @@
 ---
 title: TVOT\_PUSHBUTTON
 description: TVOT\_PUSHBUTTON
-ms.assetid: 47d51066-c1bc-4a84-bc9b-5091100b9f53
 keywords: ["TVOT_PUSHBUTTON Print Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x68 FILE_INITIALIZATION_FAILED
 description: The FILE_INITIALIZATION_FAILED bug check has a value of 0x00000068.This bug check appears very infrequently.
-ms.assetid: 1f39dca6-77db-4f45-a06d-198e42f2bb6c
 keywords: ["Bug Check 0x68 FILE_INITIALIZATION_FAILED", "FILE_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

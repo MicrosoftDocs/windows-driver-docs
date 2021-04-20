@@ -1,7 +1,6 @@
 ---
 title: Registering an Intermediate Driver as a Protocol
 description: Registering an Intermediate Driver as a Protocol
-ms.assetid: 79707f6b-0e31-46a8-a763-fa2669ce9635
 keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering

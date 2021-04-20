@@ -1,7 +1,6 @@
 ---
 title: Optional Power Management OIDs
 description: Optional Power Management OIDs
-ms.assetid: 31c8ec45-ecb2-42e2-be4d-2b89fe02a908
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

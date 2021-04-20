@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x19D CLUSTER_SVHDX_LIVEDUMP
 description: The CLUSTER_SVHDX_LIVEDUMP bug check has a value of 0x0000019D. This indicates that SVHDX initiated this livedump to help debug an inconsistent state.
-ms.assetid: E261617D-E84A-4644-8854-53A189395637
 keywords: ["Bug Check 0x19D CLUSTER_SVHDX_LIVEDUMP", "CLUSTER_SVHDX_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:

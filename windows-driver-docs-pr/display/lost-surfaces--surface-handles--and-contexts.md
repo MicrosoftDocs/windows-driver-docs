@@ -1,7 +1,6 @@
 ---
 title: Lost Surfaces, Surface Handles, and Contexts
 description: Lost Surfaces, Surface Handles, and Contexts
-ms.assetid: d2458077-56f8-481b-b612-a706e9560314
 keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx

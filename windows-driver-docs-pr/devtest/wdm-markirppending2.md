@@ -1,7 +1,6 @@
 ---
 title: MarkIrpPending2 rule (wdm)
 description: The MarkIrpPending2 rule specifies that if a dispatch routine returns STATUS\_PENDING, it has called IoMarkIrpPending or passed the IRP to the lower driver. See MarkIrpPending for a complimentary specification.
-ms.assetid: 91e22348-f5f3-4ba0-b8dd-ec0aa4b1df5e
 ms.date: 05/21/2018
 keywords: ["MarkIrpPending2 rule (wdm)"]
 topic_type:

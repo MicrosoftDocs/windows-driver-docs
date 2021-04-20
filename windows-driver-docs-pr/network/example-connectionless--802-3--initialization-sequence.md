@@ -1,7 +1,6 @@
 ---
 title: Example Connectionless (802.3) Initialization Sequence
 description: Example Connectionless (802.3) Initialization Sequence
-ms.assetid: 9625f717-81c3-460b-83e8-c7a86aa85f36
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

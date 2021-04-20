@@ -1,7 +1,6 @@
 ---
 title: WMI Registration Flags
 description: WMI Registration Flags
-ms.assetid: 001d4840-0ed4-464d-8379-7bbd0afce28c
 keywords: ["dynamic instance names WDK WMI", "static instance names WDK WMI", "registration flags WDK WMI", "flags WDK WMI", "WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "registering blocks"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: PnPUtil Command Syntax
 description: How to run PnPUtil, including syntax and parameters. 
-ms.assetid: f14ceb98-8d82-43dd-b06e-2595b59b6999
 keywords:
 - PnPUtil Command Syntax Driver Development Tools
 topic_type:

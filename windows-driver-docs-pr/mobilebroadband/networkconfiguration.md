@@ -1,7 +1,6 @@
 ---
 title: NetworkConfiguration
 description: NetworkConfiguration
-ms.assetid: 4a52b185-1bfb-4626-99fb-6be364e88e85
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

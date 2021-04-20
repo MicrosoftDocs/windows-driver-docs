@@ -1,7 +1,6 @@
 ---
 title: DxgkDdiUpdatePageDirectory function
 description: The DxgkDdiUpdatePageDirectory function is reserved for system use. Do not implement it in your driver.
-ms.assetid: 91f81165-a63c-44bb-8898-9cc85c2a6e45
 keywords: ["DxgkDdiUpdatePageDirectory function Display Devices"]
 topic_type:
 - apiref

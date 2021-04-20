@@ -1,7 +1,6 @@
 ---
 title: Testing DMA in KMDF Drivers
 description: Testing DMA in KMDF Drivers
-ms.assetid: 1D37F8B3-EAFC-4BB0-988D-64ADF30DBC40
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

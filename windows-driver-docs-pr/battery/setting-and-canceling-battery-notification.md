@@ -1,7 +1,6 @@
 ---
 title: Setting and Canceling Battery Notification
 description: Setting and Canceling Battery Notification
-ms.assetid: bd0920f0-9f3f-47f7-b1a7-29ec233e93ff
 keywords:
 - battery notifications WDK
 - battery miniclass drivers WDK , notifications

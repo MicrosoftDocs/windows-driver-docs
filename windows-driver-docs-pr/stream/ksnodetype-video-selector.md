@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_SELECTOR
 description: KSNODETYPE\_VIDEO\_SELECTOR
-ms.assetid: fcd6c2d0-5dbb-454e-ac37-23c509f07b9c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Accessing PCI Configuration Space
 description: Accessing PCI Configuration Space
-ms.assetid: 4ec520db-7976-40e8-8336-f9056dc024b1
 keywords:
 - PCI configuration space WDK audio
 - audio adapter drivers WDK , PCI configuration space

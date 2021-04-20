@@ -1,7 +1,6 @@
 ---
 title: WHQL Test Signature Program
 description: WHQL Test Signature Program
-ms.assetid: 241a8cfe-c7c4-4c88-9d61-831f18f4eb21
 keywords:
 - driver signing WDK , WHQL digital signatures
 - signing drivers WDK , WHQL digital signatures

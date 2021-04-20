@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_BASS\_BOOST
 description: The KSPROPERTY\_AUDIO\_BASS\_BOOST property enables and disables bass boost for a channel in a tone node (KSNODETYPE\_TONE).
-ms.assetid: aa54b88b-e251-4d16-9ced-842fec569914
 keywords: ["KSPROPERTY_AUDIO_BASS_BOOST Audio Devices"]
 topic_type:
 - apiref

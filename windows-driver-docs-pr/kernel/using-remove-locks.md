@@ -1,7 +1,6 @@
 ---
 title: Using Remove Locks
 description: Using Remove Locks
-ms.assetid: 78ca7fe5-ceed-4752-bf1b-d13309097cd8
 keywords: ["remove locks WDK PnP", "lock routines WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The [remove lock routines](/windows-hardware/drivers/ddi/index) provide a way to track the number of outstanding I/O operations on a device, and to determine when it is safe to detach and delete a driver's device object. The system provides these routines to driver writers as an alternative to implementing their own tracking mechanism.
+The remove lock routines provide a way to track the number of outstanding I/O operations on a device, and to determine when it is safe to detach and delete a driver's device object. The system provides these routines to driver writers as an alternative to implementing their own tracking mechanism.
 
 A driver can use this mechanism for two purposes:
 

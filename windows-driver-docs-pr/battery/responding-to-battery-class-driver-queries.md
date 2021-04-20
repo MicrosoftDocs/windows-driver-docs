@@ -1,7 +1,6 @@
 ---
 title: Responding to Battery Class Driver Queries
 description: Responding to Battery Class Driver Queries
-ms.assetid: 00b24b37-d312-46ee-8218-2bd7a9453d13
 keywords:
 - battery miniclass drivers WDK , routines
 - routines WDK battery

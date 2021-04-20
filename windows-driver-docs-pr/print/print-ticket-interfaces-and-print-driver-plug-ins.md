@@ -1,7 +1,6 @@
 ---
 title: Print Ticket Interfaces and Print Driver Plug-ins
 description: Print Ticket Interfaces and Print Driver Plug-ins
-ms.assetid: 5c5237a1-f4ff-42f9-8992-753743fd5e15
 keywords:
 - IPrintTicketProvider
 - IPrintOemPrintTicketProvider

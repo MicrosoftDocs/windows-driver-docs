@@ -1,7 +1,6 @@
 ---
 title: Accessing Registry Keys Safely
 description: Accessing Registry Keys Safely
-ms.assetid: 81203790-66CB-42ee-82F8-2F0FFF04DF10
 keywords:
 - registry WDK device installations , accessing registry keys safely
 - accessing registry keys safely WDK device installations
@@ -22,7 +21,7 @@ Many of the problems seen with external components are caused by using the KEY_A
 
 Follow these guidelines to safely access registry keys:
 
--   Use the SetupAPI and *software keys* for a device.
+-   Use the [SetupAPI](setupapi.md) functions only to open registry keys, especially the *hardware keys* and *software keys* for a device.
 
     These functions address common problems that result from restrictions on access permissions.
 

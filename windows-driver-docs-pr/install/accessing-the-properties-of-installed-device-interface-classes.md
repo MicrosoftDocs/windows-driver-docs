@@ -1,7 +1,6 @@
 ---
 title: Accessing the Properties of Installed Device Interfaces
 description: Accessing the Properties of Installed Device Interfaces
-ms.assetid: 4079DD59-878E-4b71-9815-543BA838C56D
 keywords:
 - device interfaces WDK device installations , accessing properties
 ms.date: 04/20/2017

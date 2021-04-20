@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaAutodemodulate
 description: KSPROPSETID\_BdaAutodemodulate
-ms.assetid: b7c3c934-5b31-48da-9fb0-98007267711b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

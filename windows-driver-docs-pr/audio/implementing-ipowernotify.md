@@ -1,7 +1,6 @@
 ---
 title: Implementing IPowerNotify
 description: Implementing IPowerNotify
-ms.assetid: 8bd8b4c8-1961-41ea-ba98-41e3a732ed37
 keywords:
 - IPowerNotify interface
 - notifications WDK audio

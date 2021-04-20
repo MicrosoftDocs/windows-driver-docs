@@ -1,7 +1,6 @@
 ---
 title: Design billing pages in a mobile broadband app
 description: Design billing pages in a mobile broadband app
-ms.assetid: 44c5a273-1dd4-4ff5-90aa-9d1f4f855439
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

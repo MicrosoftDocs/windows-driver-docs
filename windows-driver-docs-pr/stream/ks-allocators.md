@@ -1,7 +1,6 @@
 ---
 title: KS Allocators
 description: KS Allocators
-ms.assetid: 07812703-a66f-450a-b28e-4cf765267c4a
 keywords:
 - kernel streaming WDK , allocators
 - KS WDK , allocators

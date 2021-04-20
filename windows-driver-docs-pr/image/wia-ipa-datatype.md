@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_DATATYPE
 description: The WIA\_IPA\_DATATYPE property contains the current data type setting for a device. A WIA minidriver creates and maintains this property.
-ms.assetid: d86c06c2-1d37-4b82-832c-c468c1b4fc33
 keywords: ["WIA_IPA_DATATYPE Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbpdos
 description: The usbkd.usbpdos command displays information about all physical device objects (PDOs) created by the USB hub driver.
-ms.assetid: 2EFAC774-C400-4218-BF48-2D5DC557A83B
 keywords: ["usbkd.usbpdos Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

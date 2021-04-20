@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_IRIS
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_IRIS property to get or set a camera's aperture setting. This property is optional.
-ms.assetid: 000fc146-f6bb-490b-93b6-ebf5ad83b92f
 keywords: ["KSPROPERTY_CAMERACONTROL_IRIS Streaming Media Devices"]
 topic_type:
 - apiref

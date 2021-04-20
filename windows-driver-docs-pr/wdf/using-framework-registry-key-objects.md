@@ -1,7 +1,6 @@
 ---
 title: Using Framework Registry-Key Objects
 description: Using Framework Registry-Key Objects
-ms.assetid: 2236b4e1-2e17-4e59-b12e-70fff5fd7513
 keywords:
 - registry WDK KMDF
 - registry-key objects WDK KMDF

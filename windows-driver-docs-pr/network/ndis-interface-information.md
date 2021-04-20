@@ -1,7 +1,6 @@
 ---
 title: NDIS Interface Information
 description: NDIS Interface Information
-ms.assetid: 35187fda-a239-4801-b0be-53fcbee7d24e
 keywords:
 - management information base WDK networking
 - MIBs WDK networking

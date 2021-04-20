@@ -1,7 +1,6 @@
 ---
 title: Using the _analysis_assume Function to Suppress False Defects
 description: Using the _analysis_assume Function to Suppress False Defects
-ms.assetid: eb71a664-ada5-44e3-b75d-b1a7348b115f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

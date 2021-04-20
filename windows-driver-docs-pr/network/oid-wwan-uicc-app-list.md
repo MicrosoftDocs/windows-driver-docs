@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_UICC_APP_LIST
 description: OID_WWAN_UICC_APP_LIST retrieves a list of applications in a UICC and information about them.
-ms.assetid: C2E8CDBC-453A-4697-9BD9-1197FBDA2455
 ms.date: 04/08/2019
 keywords: 
  -OID_WWAN_UICC_APP_LIST Network Drivers Starting with Windows Vista

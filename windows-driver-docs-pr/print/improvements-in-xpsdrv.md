@@ -1,7 +1,6 @@
 ---
 title: Improvements in XPSDrv
 description: This topic provides information about updates that have been made to the XPSDrv rendering architecture.
-ms.assetid: 5D76ECA2-C5F6-47E4-BC05-B5137AD4196B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

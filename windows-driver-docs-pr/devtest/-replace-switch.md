@@ -1,7 +1,6 @@
 ---
 title: /Replace Switch
 description: The /Replace switch of the Enhanced Storage Certificate Management tool replaces a certificate from the authentication silo certificate (ASC) store in a device.
-ms.assetid: 8fbdeb88-ec38-4ffc-a669-83fd612819ed
 keywords:
 - /Replace Switch Driver Development Tools
 topic_type:

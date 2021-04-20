@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Siblings
 description: DEVPKEY_Device_Siblings
-ms.assetid: 7456c9f7-6969-4b42-a4f9-f388c731c735
 keywords: ["DEVPKEY_Device_Siblings Device and Driver Installation"]
 topic_type:
 - apiref

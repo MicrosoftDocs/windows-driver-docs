@@ -1,7 +1,6 @@
 ---
 title: PFA Performed by WHEA
 description: PFA Performed by WHEA
-ms.assetid: c93b15aa-9b99-4dfa-8c97-b503654e44f2
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
 - PFA WDK WHEA , Error Correction Code memory

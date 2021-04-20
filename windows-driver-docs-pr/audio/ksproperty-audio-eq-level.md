@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_EQ\_LEVEL
 description: The KSPROPERTY\_AUDIO\_EQ\_LEVEL property specifies the equalization levels for an equalization table that contains entries for n frequency bands. This is a property of a channel in an EQ node (KSNODETYPE\_EQUALIZER).
-ms.assetid: 17c34af2-dbeb-472c-9825-9dc64f7f96bd
 keywords: ["KSPROPERTY_AUDIO_EQ_LEVEL Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Developing a WIA Video Driver
 description: Developing a WIA Video Driver
-ms.assetid: 3cf14fd3-1dfa-480e-a69c-c4d2c196a504
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

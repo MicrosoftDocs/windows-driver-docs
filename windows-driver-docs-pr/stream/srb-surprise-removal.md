@@ -1,7 +1,6 @@
 ---
 title: SRB\_SURPRISE\_REMOVAL
 description: SRB\_SURPRISE\_REMOVAL
-ms.assetid: 81509ddb-0d9a-4f42-b38d-fe8836727b4b
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: NdisQueryBindInstanceName rule (ndis)
 description: NdisQueryBindInstanceName allocates memory for the string that specifies the friendly name. After the caller finishes using this memory, the caller must call the NdisFreeMemory function to release the memory.
-ms.assetid: C332698F-8DA5-4A9A-AF2E-5D8B43815488
 ms.date: 05/21/2018
 keywords: ["NdisQueryBindInstanceName rule (ndis)"]
 topic_type:

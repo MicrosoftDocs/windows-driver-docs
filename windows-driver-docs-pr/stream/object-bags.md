@@ -1,7 +1,6 @@
 ---
 title: Object Bags
 description: Object Bags
-ms.assetid: b7ee5756-1c79-4ead-9999-d13be9a0d3d9
 keywords:
 - AVStream object bags WDK
 - object bags WDK AVStream

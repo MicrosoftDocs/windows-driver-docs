@@ -1,7 +1,6 @@
 ---
 title: Synchronizing with Interrupts
 description: Synchronizing with Interrupts
-ms.assetid: f201acfa-98e4-4373-ba63-b6c814810f99
 keywords:
 - interrupts WDK networking , synchronizing
 - NdisMSynchronizeWithInterruptEx

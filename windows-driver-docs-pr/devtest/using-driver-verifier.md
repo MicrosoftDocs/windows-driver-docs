@@ -1,7 +1,6 @@
 ---
 title: Using Driver Verifier
 description: Using Driver Verifier
-ms.assetid: 0b8da3f9-f22e-4ef4-afc7-5fe72dfa8043
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

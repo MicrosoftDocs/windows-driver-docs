@@ -1,7 +1,6 @@
 ---
 title: DirectSound Hardware-Acceleration and SRC Sliders
 description: DirectSound Hardware-Acceleration and SRC Sliders
-ms.assetid: 40329177-b8d5-49a2-a1d3-6730a26b6e78
 keywords:
 - hardware acceleration WDK DirectSound , SRC sliders
 - sliders WDK audio

@@ -1,7 +1,6 @@
 ---
 title: Determining Which Properties Are Set for a Device Class
 description: Determining Which Properties Are Set for a Device Class
-ms.assetid: a8016b04-ae52-47d9-b3ef-74e0896aa825
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

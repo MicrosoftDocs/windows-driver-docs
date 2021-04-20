@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_SECURITY_DESCRIPTOR
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_SECURITY_DESCRIPTOR identifier represents the base-data-type identifier that indicates the data type is a variable-length, self-relative, SECURITY_DESCRIPTOR-typed, security descriptor.
-ms.assetid: e8eea343-adaa-41b8-9556-962b5e6903fb
 keywords: ["DEVPROP_TYPE_SECURITY_DESCRIPTOR Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Location (hole punch)
 description: This property contains all the value entries that pertain to the location at which holes are punched in output pages.
-ms.assetid: f04ce4de-233d-4763-be4d-e913623f4f1a
 ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---

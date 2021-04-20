@@ -1,7 +1,6 @@
 ---
 title: Specify applications in the Device Metadata Authoring Wizard
 description: Specify applications in the Device Metadata Authoring Wizard
-ms.assetid: B3ECEBF3-FBC6-45E7-9FF5-439F1CDF351F
 keywords:
 - Specify applications in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017

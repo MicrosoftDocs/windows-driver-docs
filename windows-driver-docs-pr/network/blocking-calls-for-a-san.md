@@ -1,7 +1,6 @@
 ---
 title: Blocking Calls for a SAN
 description: Blocking Calls for a SAN
-ms.assetid: 93be861c-4cf1-48ea-ac69-a4a171ca9052
 keywords:
 - blocking calls WDK SANs
 - Windows Sockets Direct WDK , blocking calls

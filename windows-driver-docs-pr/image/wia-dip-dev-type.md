@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_DEV\_TYPE
 description: The WIA\_DIP\_DEV\_TYPE property contains a device type and device subtype.
-ms.assetid: 685c1cfa-cc3b-42e6-aef3-359ae7220715
 keywords: ["WIA_DIP_DEV_TYPE Imaging Devices"]
 topic_type:
 - apiref

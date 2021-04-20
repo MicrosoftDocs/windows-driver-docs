@@ -1,7 +1,6 @@
 ---
 title: Accessing TCP/IP Offload NET_BUFFER_LIST Information
 description: Accessing TCP/IP Offload NET_BUFFER_LIST Information
-ms.assetid: 555c9533-ab3f-43f0-9139-b1de33a6b1a7
 keywords:
 - TCP/IP offload WDK networking , out-of-band data
 - offload WDK TCP/IP transport , out-of-band data WDK TCP/IP offload

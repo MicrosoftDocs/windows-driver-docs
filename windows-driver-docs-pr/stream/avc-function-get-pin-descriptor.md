@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_PIN\_DESCRIPTOR
 description: AVC\_FUNCTION\_GET\_PIN\_DESCRIPTOR
-ms.assetid: 1a02c328-e908-4125-abe7-4db9970ac86a
 keywords: ["AVC_FUNCTION_GET_PIN_DESCRIPTOR Streaming Media Devices"]
 topic_type:
 - apiref

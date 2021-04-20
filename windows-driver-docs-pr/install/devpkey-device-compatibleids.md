@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_CompatibleIds
 description: DEVPKEY_Device_CompatibleIds
-ms.assetid: 01858541-9239-48be-8c48-ee163d87e767
 keywords: ["DEVPKEY_Device_CompatibleIds Device and Driver Installation"]
 topic_type:
 - apiref

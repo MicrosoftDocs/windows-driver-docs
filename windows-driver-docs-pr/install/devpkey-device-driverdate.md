@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverDate
 description: DEVPKEY_Device_DriverDate
-ms.assetid: d1310b0f-f358-4875-a01b-8bc4cf8b8d2d
 keywords: ["DEVPKEY_Device_DriverDate Device and Driver Installation"]
 topic_type:
 - apiref

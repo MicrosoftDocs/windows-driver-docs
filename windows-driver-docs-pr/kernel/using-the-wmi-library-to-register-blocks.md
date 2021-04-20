@@ -1,7 +1,6 @@
 ---
 title: Using the WMI Library to Register Blocks
 description: Using the WMI Library to Register Blocks
-ms.assetid: 1f4b773d-ca24-47f5-87e8-84c98dad9267
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "IRP_MN_REGINFO", "IRP_MN_REGINFO_EX", "registering blocks"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

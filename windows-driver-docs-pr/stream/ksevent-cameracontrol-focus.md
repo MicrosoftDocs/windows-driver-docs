@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CAMERACONTROL\_FOCUS
 description: The KSEVENT\_CAMERACONTROL\_FOCUS event is triggered when a camera focus operation has completed or has been canceled.
-ms.assetid: 7B10D45F-4673-405C-B44F-3FAA3E8957EF
 keywords: ["KSEVENT_CAMERACONTROL_FOCUS Streaming Media Devices"]
 topic_type:
 - apiref

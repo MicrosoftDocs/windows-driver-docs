@@ -1,7 +1,6 @@
 ---
 title: Memory Mapped Files in a File System Filter Driver
 description: Memory Mapped Files in a File System Filter Driver
-ms.assetid: 0915167a-f8ac-4222-bece-76d7fc8a3823
 keywords:
 - security WDK file systems , memory mapped files
 - memory mapped files WDK file systems

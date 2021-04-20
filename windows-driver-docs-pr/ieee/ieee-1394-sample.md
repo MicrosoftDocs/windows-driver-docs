@@ -1,7 +1,6 @@
 ---
 title: IEEE 1394 Sample
 description: IEEE 1394 Sample
-ms.assetid: CD2370F5-424C-405E-8A41-42C168023608
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x126 NETIO_INVALID_POOL_CALLER
 description: The NETIO_INVALID_POOL_CALLER bug check has a value of 0x00000126. This indicates that an invalid pool request has been made to netio managed memory pool, e.g. FSB and MDL.
-ms.assetid: D155D39D-0E8B-4BA5-91B4-AF8F291F7F1F
 keywords: ["Bug Check 0x126 NETIO_INVALID_POOL_CALLER", "NETIO_INVALID_POOL_CALLER"]
 ms.date: 01/30/2019
 topic_type:
@@ -64,12 +63,11 @@ Parameter 4 - Pointer to pool header.</td>
 </tbody>
 </table>
 
- 
+## Resolution
+
+The [**!analyze**](./-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
  
 
  
-
-
-
 

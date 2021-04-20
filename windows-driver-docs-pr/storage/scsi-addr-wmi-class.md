@@ -1,7 +1,6 @@
 ---
 title: SCSI\_ADDR WMI Class
 description: SCSI\_ADDR WMI Class
-ms.assetid: 720cf803-b004-4c63-8884-66b0e07d82c0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

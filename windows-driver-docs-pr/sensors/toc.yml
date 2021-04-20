@@ -130,6 +130,8 @@
   items:
   - name: "Sensor Testing Sources"
     href: testing-sensor-landing.md
+  - name: Microsoft SensorExplorer
+    href: testing-sensor-explorer.md
   - name: "Building and Using the Microsoft Ambient Light Tool (MALT)"
     items:
     - name: "Building a Light Testing Tool"

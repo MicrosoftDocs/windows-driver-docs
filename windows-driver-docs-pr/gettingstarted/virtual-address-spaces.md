@@ -1,7 +1,6 @@
 ---
 title: Virtual address spaces
 description: Virtual address spaces
-ms.assetid: 5A3E1918-E5A4-4129-B0C2-45B6EEB7EFB3
 ms.date: 02/11/2020
 ms.localizationpriority: medium
 ---

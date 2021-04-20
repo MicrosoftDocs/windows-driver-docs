@@ -1,7 +1,6 @@
 ---
 title: Introduction to DPC Objects
 description: Introduction to DPC Objects
-ms.assetid: ae8758f5-0e23-4db2-9eac-aab31d98247b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

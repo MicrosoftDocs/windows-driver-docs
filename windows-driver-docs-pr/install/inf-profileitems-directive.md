@@ -1,7 +1,6 @@
 ---
 title: INF ProfileItems Directive
 description: A ProfileItems directive is used in an INF DDInstall section to list one or more profile-items-sections that contain items or groups to be added to, or removed from, the Start menu.
-ms.assetid: 8cdd6dcd-de5d-4652-8842-6b0be6f5fb59
 keywords:
 - INF ProfileItems Directive Device and Driver Installation
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Off-Host IDCT
 description: Off-Host IDCT
-ms.assetid: 31797487-0c4e-4b8c-801e-f545bd60cc6d
 keywords:
 - macroblocks WDK DirectX VA , IDCT
 - low-level IDCT WDK DirectX VA

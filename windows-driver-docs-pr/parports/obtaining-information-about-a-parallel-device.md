@@ -1,7 +1,6 @@
 ---
 title: Obtaining Information about a Parallel Device
 description: Obtaining Information about a Parallel Device
-ms.assetid: a891718a-9e2c-4823-a0b9-5cbe770c3f85
 keywords:
 - parallel devices WDK , obtaining information
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Updating Your Package-Aware Driver's INF
 description: Updating Your Package-Aware Driver's INF
-ms.assetid: d0bf489d-d084-40df-b5aa-69cdf679993f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

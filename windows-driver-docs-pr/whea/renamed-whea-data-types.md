@@ -1,7 +1,6 @@
 ---
 title: Renamed WHEA Data Types
 description: Renamed WHEA Data Types
-ms.assetid: e2c511a2-fd6e-4c7a-a47f-eb9b9f917bb4
 keywords:
 - Windows Hardware Error Architecture WDK , renamed data types
 - WHEA WDK , renamed data types

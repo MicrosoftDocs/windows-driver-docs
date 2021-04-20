@@ -1,7 +1,6 @@
 ---
 title: Obtaining Parameters for I/O Requests
 description: Obtaining Parameters for I/O Requests
-ms.assetid: 1ba1fdcf-99bd-44e3-adbf-5dc93a790900
 keywords:
 - I/O requests WDK UMDF , obtaining parameters
 - request processing WDK UMDF , obtaining parameters

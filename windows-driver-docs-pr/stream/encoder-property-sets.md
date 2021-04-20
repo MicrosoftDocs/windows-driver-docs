@@ -1,7 +1,6 @@
 ---
 title: Encoder Property Sets
 description: Encoder Property Sets
-ms.assetid: b273464d-0d40-488c-a848-291f949609f0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

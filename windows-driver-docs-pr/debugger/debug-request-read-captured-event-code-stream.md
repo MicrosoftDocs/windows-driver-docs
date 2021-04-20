@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM
 description: DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM
-ms.assetid: 867c6b3e-13d5-46ae-b73c-f90936cb35c5
 keywords: ["DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM Windows Debugging"]
 topic_type:
 - apiref

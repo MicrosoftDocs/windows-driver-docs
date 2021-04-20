@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_MatchingDeviceId
 description: DEVPKEY_Device_MatchingDeviceId
-ms.assetid: 4695c713-0586-42be-9dd7-7da5bd87a3c0
 keywords: ["DEVPKEY_Device_MatchingDeviceId Device and Driver Installation"]
 topic_type:
 - apiref

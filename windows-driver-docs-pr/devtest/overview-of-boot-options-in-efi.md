@@ -1,7 +1,6 @@
 ---
 title: Overview of Boot Options in EFI
 description: Overview of Boot Options in EFI
-ms.assetid: 2237d321-75e6-4723-9f08-484bd9097360
 keywords:
 - NVRAM boot options WDK , about EFI NVRAM boot options
 - EFI NVRAM boot options WDK , about EFI NVRAM boot options

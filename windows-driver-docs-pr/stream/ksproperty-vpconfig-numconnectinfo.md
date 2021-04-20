@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO
 description: The KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO property obtains the maximum number of electrical connection configurations.
-ms.assetid: 8ffab85d-cf0d-44d7-ba37-692c3adfa1e5
 keywords: ["KSPROPERTY_VPCONFIG_NUMCONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref

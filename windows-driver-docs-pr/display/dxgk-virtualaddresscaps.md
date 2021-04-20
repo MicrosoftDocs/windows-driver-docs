@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_VIRTUALADDRESSCAPS structure
 description: The DXGK\_VIRTUALADDRESSCAPS structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 45a33031-26ca-4477-9be0-2066927506cf
 keywords: ["_DXGK_VIRTUALADDRESSCAPS structure Display Devices", "DXGK_VIRTUALADDRESSCAPS structure Display Devices"]
 topic_type:
 - apiref

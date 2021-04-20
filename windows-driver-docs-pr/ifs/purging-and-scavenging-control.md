@@ -1,7 +1,6 @@
 ---
 title: Purging and Scavenging Control
 description: Purging and Scavenging Control
-ms.assetid: 103b05e6-333a-441a-a4f8-784ae43df59e
 keywords:
 - RDBSS WDK file systems , purge and scavenge structures
 - Redirected Drive Buffering Subsystem WDK file systems , purge and scavenge structures

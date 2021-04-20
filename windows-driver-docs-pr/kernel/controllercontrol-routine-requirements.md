@@ -1,7 +1,6 @@
 ---
 title: ControllerControl Routine Requirements
 description: ControllerControl Routine Requirements
-ms.assetid: b311c0b0-f7b1-4276-a165-5c658657b198
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, requirements"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

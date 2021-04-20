@@ -1,7 +1,6 @@
 ---
 title: Freeing Resources for a Virtual Function
 description: Freeing Resources for a Virtual Function
-ms.assetid: 48FACA22-69B2-456C-9009-3CA42DE94FC4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

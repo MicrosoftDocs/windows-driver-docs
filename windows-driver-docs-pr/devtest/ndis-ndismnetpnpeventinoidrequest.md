@@ -1,7 +1,6 @@
 ---
 title: NdisMNetPnPEventInOIDRequest rule (ndis)
 description: This rule checks that NdisMNetPnPEvent is not called in the context of an OID request.
-ms.assetid: BC069325-FFC4-452D-9B07-C39C2F942B64
 ms.date: 05/21/2018
 keywords: ["NdisMNetPnPEventInOIDRequest rule (ndis)"]
 topic_type:

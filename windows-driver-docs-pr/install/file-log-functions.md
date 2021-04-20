@@ -1,7 +1,6 @@
 ---
 title: File Log Functions
 description: File Log Functions
-ms.assetid: 7d9fe4c9-834f-4dcc-a216-dc6a98ee2fd3
 keywords:
 - SetupAPI functions WDK , log files
 - log files WDK SetupAPI
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 You can use a log file to record information about the files copied to a system during an installation. The log file can be either the system log or your own installation log file.
 
-The following table lists the functions that can be used to manipulate log files. For more information about function descriptions, see the [Microsoft Windows SDK documentation](https://go.microsoft.com/fwlink/p/?linkid=131248).
+The following table lists the functions that can be used to manipulate log files. For more information about function descriptions, see the [Microsoft Windows SDK documentation](/documentation/).
 
 <table>
 <colgroup>
@@ -57,6 +56,4 @@ The following table lists the functions that can be used to manipulate log files
 </tr>
 </tbody>
 </table>
-
- 
 

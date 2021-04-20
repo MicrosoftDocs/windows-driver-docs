@@ -1,7 +1,6 @@
 ---
 title: FloppyClassGuid
 description: FloppyClassGuid
-ms.assetid: 60811704-0a59-48b4-b9c6-baf6c0f8c1c2
 keywords: ["FloppyClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

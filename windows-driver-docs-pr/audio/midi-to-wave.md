@@ -1,7 +1,6 @@
 ---
 title: MIDI to Wave
 description: MIDI to Wave
-ms.assetid: 0c69ce48-ded0-44b8-9d34-20decb75058e
 keywords:
 - synthesizers WDK audio , MIDI-to-wave conversions
 - MIDI-to-wave conversions WDK audio

@@ -1,7 +1,6 @@
 ---
 title: WDI non-TLV versioning
 description: This section describes WDI non-TLV versioning
-ms.assetid: 19B5BEE1-BE17-40E3-99FA-D9BF4492D020
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Video VBI Capture
 description: Video VBI Capture
-ms.assetid: 40544838-8678-4832-8e6f-e96202f987ad
 keywords:
 - video VBI capture WDK DirectDraw
 - vertical blanking interval WDK DirectDraw

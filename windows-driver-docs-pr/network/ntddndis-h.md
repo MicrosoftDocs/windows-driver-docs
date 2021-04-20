@@ -1,7 +1,6 @@
 ---
 title: Ntddndis.h
 description: This section contains kernel mode network driver topics for the Ntddndis.h header.
-ms.assetid: EC2CD8C5-A2E9-4CA3-9229-BF0A955E6F53
 keywords:
 - Ntddndis.h network drivers
 ms.date: 08/08/2017

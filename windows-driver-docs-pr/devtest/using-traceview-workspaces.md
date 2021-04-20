@@ -1,7 +1,6 @@
 ---
 title: Using TraceView Workspaces
 description: Using TraceView Workspaces
-ms.assetid: 253eff74-efc0-4c17-a14a-0b7974462560
 keywords:
 - TraceView WDK , workspaces
 - workspaces WDK TraceView

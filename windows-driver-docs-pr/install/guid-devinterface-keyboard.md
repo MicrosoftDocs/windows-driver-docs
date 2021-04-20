@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_KEYBOARD
 description: GUID_DEVINTERFACE_KEYBOARD
-ms.assetid: ae434c45-07f6-4aa1-b9d3-e4ceca8cc81c
 keywords: ["GUID_DEVINTERFACE_KEYBOARD Device and Driver Installation"]
 topic_type:
 - apiref

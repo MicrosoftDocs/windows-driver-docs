@@ -1,7 +1,6 @@
 ---
 title: NDIS 6.20 Backward Compatibility
 description: NDIS 6.20 Backward Compatibility
-ms.assetid: a2d71cae-aed2-4c23-9ad2-5c32d4ab2294
 keywords:
 - NDIS 6.20 WDK , backward compatibility
 - backward compatibility WDK NDIS 6.20

@@ -1,7 +1,6 @@
 ---
 title: Format Operations
 description: Format Operations
-ms.assetid: 242e5b5a-4184-487a-aeda-19149caa941b
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , texture format lists
 - texture format lists WDK DirectX 8.0

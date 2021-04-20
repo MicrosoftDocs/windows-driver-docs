@@ -1,7 +1,6 @@
 ---
 title: powertriage
 description: The powertriage extension displays summary information about the system and device power related components.
-ms.assetid: A202ED64-B706-42AC-B058-C44321C9171F
 keywords: ["powertriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

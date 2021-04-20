@@ -1,7 +1,6 @@
 ---
 title: Overview of UMDF
 description: This topic provides a high-level overview of UMDF components and describes how your driver interacts with system-supplied components.
-ms.assetid: b36c9fad-1963-4d29-a1e7-890de77fed50
 keywords:
 - User-Mode Driver Framework WDK , about UMDF
 - UMDF WDK , about UMDF

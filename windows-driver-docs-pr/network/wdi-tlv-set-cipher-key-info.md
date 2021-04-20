@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SET_CIPHER_KEY_INFO
 description: WDI_TLV_SET_CIPHER_KEY_INFO is a TLV that contains cipher key mapping key information for OID_WDI_SET_ADD_CIPHER_KEYS.
-ms.assetid: 6352284A-73CD-4B15-A057-80D0C8518CD5
 ms.date: 09/10/2020
 keywords:
  - WDI_TLV_SET_CIPHER_KEY_INFO Network Drivers Starting with Windows Vista

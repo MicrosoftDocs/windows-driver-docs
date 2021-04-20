@@ -1,7 +1,6 @@
 ---
 title: Still Image USB I/O Structures
 description: Still Image USB I/O Structures
-ms.assetid: d70c5c11-c8f2-4196-a7f5-d97ceef10ca2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

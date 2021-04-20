@@ -1,7 +1,6 @@
 ---
 title: Two Firewalls
 description: Two Firewalls
-ms.assetid: e6192cf8-02a4-4dbe-8ed7-a64f8efc24f6
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
 ms.date: 06/08/2020
 ms.localizationpriority: medium

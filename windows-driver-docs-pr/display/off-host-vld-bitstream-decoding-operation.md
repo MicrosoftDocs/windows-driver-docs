@@ -1,7 +1,6 @@
 ---
 title: Off-Host VLD Bitstream Decoding Operation
 description: Off-Host VLD Bitstream Decoding Operation
-ms.assetid: fd339d5f-2d63-4b2f-a5dc-7ab7a6799a6d
 keywords:
 - off-host VLD bitstream processing WDK DirectX VA
 - bitstream VLD processing WDK DirectX VA

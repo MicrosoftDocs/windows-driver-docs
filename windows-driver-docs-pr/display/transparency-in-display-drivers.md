@@ -1,7 +1,6 @@
 ---
 title: Transparency in Display Drivers
 description: Transparency in Display Drivers
-ms.assetid: 566706fb-66bd-44f5-b98c-23ed60e27970
 keywords:
 - display drivers WDK Windows 2000 , transparency
 - transparency WDK Windows 2000 display

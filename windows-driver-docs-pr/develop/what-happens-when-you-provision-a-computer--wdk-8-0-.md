@@ -1,5 +1,4 @@
 ---
-ms.assetid: A8888EF1-5A6F-4B08-8743-27EEECD4FF72
 title: What happens when you provision a computer (WDK 8.0)
 description: Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 ms.date: 04/20/2017

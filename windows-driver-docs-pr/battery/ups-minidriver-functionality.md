@@ -1,7 +1,6 @@
 ---
 title: UPS Minidriver Functionality
 description: UPS Minidriver Functionality
-ms.assetid: a93dbada-bcf7-4963-ba57-c6db5922c66b
 keywords:
 - UPS minidrivers WDK , functionality
 ms.date: 04/20/2017

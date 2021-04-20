@@ -1,7 +1,6 @@
 ---
 title: Managing AGP Heaps
 description: Managing AGP Heaps
-ms.assetid: edeed3bc-c107-4286-9d5a-7fdef89cc4e1
 keywords:
 - heaps WDK DirectDraw
 - display memory WDK DirectDraw , heaps

@@ -1,7 +1,6 @@
 ---
 title: How the Volume Is Mounted
 description: How the Volume Is Mounted
-ms.assetid: e8f39b06-9904-40e8-af52-eae310d11fa7
 keywords:
 - filter drivers WDK file system , volume mount process
 - file system filter drivers WDK , volume mount process

@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - Currently supported BTP tests
 description: List of Bluetooth Test Platform (BTP) test categories
-ms.assetid: b5b039bb-af0f-446f-9657-aa0e137a3437
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 

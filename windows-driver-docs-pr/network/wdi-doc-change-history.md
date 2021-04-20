@@ -1,7 +1,6 @@
 ---
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
-ms.assetid: 29268059-9C33-4768-8F80-195CB28B4663
 ms.date: 09/10/2020
 ms.localizationpriority: medium
 ms.custom: 2004
@@ -74,7 +73,7 @@ Documentation updated to WDI version 1.1.8.
 | [WDI_TLV_SAE_SEND_CONFIRM](wdi-tlv-sae-send-confirm.md) | Newly added TLV for setting SAE authentication parameters. |
 | [WDI_TLV_SAE_CONFIRM](wdi-tlv-sae-confirm.md) | Newly added TLV for setting SAE authentication parameters. |
 | [OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-p2p-send-request-action-frame.md) | Added additional validation of P2P IEs on outgoing action frames. |
-| [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-p2p-send-response-action-frame.md) | Added additional validation of P2P IEs on outgoing action frames. || 
+| [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-p2p-send-response-action-frame.md) | Added additional validation of P2P IEs on outgoing action frames. |
 
 ## Windows 10, version 1809
 

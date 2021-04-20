@@ -1,7 +1,6 @@
 ---
 title: RX_CONTEXT and IRP Management
 description: RX_CONTEXT and IRP Management
-ms.assetid: 74ca681d-2599-442c-aebe-3556d6354f7f
 keywords:
 - RDBSS WDK file systems , IRPs
 - Redirected Drive Buffering Subsystem WDK file systems , IRPs

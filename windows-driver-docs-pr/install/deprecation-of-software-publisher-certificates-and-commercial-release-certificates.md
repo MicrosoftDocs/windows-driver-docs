@@ -1,7 +1,6 @@
 ---
 title: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 description: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
-ms.assetid: eafa4e20-94c5-49d6-a192-2fc7c9f1e64g
 keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
@@ -31,6 +30,7 @@ As a result, all [software publisher certificates](software-publisher-certificat
 * [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
 * [How do production signing options differ by Windows version?](#how-do-production-signing-options-differ-by-windows-version)
+* [Will I be able to continue signing drivers if my certificate chains to a cross-cert that expires after 2021?](#will-i-be-able-to-continue-signing-drivers-with-a-certificate-that-chains-to-a-cross-cert-that-expires-after-july-1-2021)
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
@@ -76,7 +76,7 @@ For more info, see [Signing drivers during development and test](./introduction-
 
 ### What will happen to my existing signed driver packages? 
 
-As long as driver packages are timestamped before the expiration date of the intermediate certificate, they will continue working.
+As long as driver packages are timestamped before the expiration date of the leaf signing certificate, they will continue working.
 
 ### Is there a way to run production driver packages without exposing it to Microsoft? 
 
@@ -123,6 +123,14 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 |Windows Server 2008 and later, Windows 7, Windows 8| WHQL or cross-signed drivers| WHQL or drivers cross-signed before July 1 2021|
 |Windows 10| WHQL or attested | WHQL or attested |
 
+If you have challenges signing your driver with WHQL, please report the specifics using one of the following:
+
+* Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
+* Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
+
+### Will I be able to continue signing drivers with a certificate that chains to a cross-cert that expires after July 1, 2021?
+
+No, kernel-mode drivers must be signed with a WHQL signature after July 1st, 2021. You cannot use a certificate that chains to a cross-cert that expires after July 1, 2021 to sign kernel-mode drivers. Using these certificates to sign kernel-mode drivers after this date is a violation of the Microsoft Trusted Root Program (TRP) policy. Certificates in violation of Microsoft TRP policies will be revoked by the CA. Additional certificates may be present on the kernel-mode driver, however Windows ignores those signatures for the purpose of validating the driver.
 
 ## Related information
 

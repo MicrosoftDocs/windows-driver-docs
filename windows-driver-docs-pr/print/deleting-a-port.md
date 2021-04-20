@@ -1,7 +1,6 @@
 ---
 title: Deleting a Port
 description: Deleting a Port
-ms.assetid: 0d491368-e529-4f04-a323-678e31a862c3
 keywords:
 - port management WDK print , deleting ports
 - deleting print ports

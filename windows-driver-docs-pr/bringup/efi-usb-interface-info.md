@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_INTERFACE_INFO
 description: EFI_USB_INTERFACE_INFO
-ms.assetid: d20b78bd-8369-4f50-b161-e8ad0bb4c52f
 ms.date: 05/21/2020
 ms.localizationpriority: medium
 ---

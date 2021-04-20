@@ -1,7 +1,6 @@
 ---
 title: Introduction to Header-Data Split
 description: Introduction to Header-Data Split
-ms.assetid: ecbf4b08-8be4-42ca-8a65-1cb8124bee33
 keywords:
 - header-data split WDK
 - splitting header and data to separate buffers

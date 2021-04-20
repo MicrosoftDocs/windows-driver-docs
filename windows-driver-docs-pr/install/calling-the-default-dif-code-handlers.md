@@ -1,7 +1,6 @@
 ---
 title: Calling the Default DIF Code Handlers
 description: Calling the Default DIF Code Handlers
-ms.assetid: bc168c30-2269-4760-bc0a-e3e6ee3ce720
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Calling the Default DIF Code Handlers
 
 
-Default DIF code handlers perform system-defined default operations for DIF codes and *co-installer* have first processed the DIF request, but before **SetupDiCallClassInstaller** recalls the co-installers that registered for post-processing of the request.
+Default DIF code handlers perform system-defined default operations for [DIF codes](/previous-versions//ff541307(v=vs.85)). As described in [Handling DIF Codes](handling-dif-codes.md), [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) calls the default handler for a DIF request after the *class installer* and *co-installer* have first processed the DIF request, but before **SetupDiCallClassInstaller** recalls the co-installers that registered for post-processing of the request.
 
 **Note**  The operation of **SetupDiCallClassInstaller** cannot be configured to recall the class installer to post-process a DIF request.
 
@@ -50,8 +49,6 @@ The following table lists the DIF codes that have default handlers.
 | [**DIF_SELECTBESTCOMPATDRV**](./dif-selectbestcompatdrv.md)      | [**SetupDiSelectBestCompatDrv**](/windows/win32/api/setupapi/nf-setupapi-setupdiselectbestcompatdrv)               |
 | [**DIF_SELECTDEVICE**](./dif-selectdevice.md)                    | [**SetupDiSelectDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice)                             |
 | [**DIF_UNREMOVE**](./dif-unremove.md)                            | [**SetupDiUnremoveDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiunremovedevice)                         |
-
- 
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_USB_HOST_CONTROLLER
 description: GUID_CLASS_USB_HOST_CONTROLLER
-ms.assetid: d2140a9e-95bc-48dd-a80b-3b098937edb3
 keywords: ["GUID_CLASS_USB_HOST_CONTROLLER Device and Driver Installation"]
 topic_type:
 - apiref

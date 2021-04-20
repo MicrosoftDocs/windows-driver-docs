@@ -1,7 +1,6 @@
 ---
 title: The DEVMODEW Structure
 description: The DEVMODEW Structure
-ms.assetid: 26212e3b-a591-4ed6-b441-b130d8d4d948
 keywords:
 - GDI WDK Windows 2000 display , DEVMODEW structure
 - graphics drivers WDK Windows 2000 display , DEVMODEW structure

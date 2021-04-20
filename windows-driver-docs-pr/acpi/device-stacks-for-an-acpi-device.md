@@ -1,7 +1,6 @@
 ---
 title: Device Stacks for an ACPI Device
 description: Device Stacks for an ACPI Device
-ms.assetid: f177d29f-eaf9-4126-8cb3-9355d977bfb0
 keywords:
 - ACPI devices WDK , device stacks
 - device stacks WDK ACPI

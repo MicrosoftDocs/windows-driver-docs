@@ -1,7 +1,6 @@
 ---
 title: KS Properties
 description: KS Properties
-ms.assetid: a385929e-1934-4d88-aaf9-ff1ddbfd30f7
 keywords:
 - kernel streaming WDK , properties
 - KS properties WDK kernel streaming

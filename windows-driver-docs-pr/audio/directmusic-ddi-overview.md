@@ -1,7 +1,6 @@
 ---
 title: DirectMusic DDI Overview
 description: DirectMusic DDI Overview
-ms.assetid: 95870103-197c-4b7c-b6ee-cac176b62dfc
 keywords:
 - DirectMusic WDK audio , about DirectMusic DDI
 - user-mode synths WDK audio

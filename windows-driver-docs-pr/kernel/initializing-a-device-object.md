@@ -1,7 +1,6 @@
 ---
 title: Initializing a Device Object
 description: Initializing a Device Object
-ms.assetid: 97820c62-aade-4ae7-92a6-7490d0ad5697
 keywords: ["device objects WDK kernel , initializing", "initializing device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

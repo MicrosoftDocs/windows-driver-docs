@@ -1,7 +1,6 @@
 ---
 title: ServiceIconFile
 description: ServiceIconFile
-ms.assetid: a35a121d-66a8-485e-ac12-adc653db3572
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_FREE_VF
 description: An overlying driver issues an object identifier (OID) set request of OID_NIC_SWITCH_FREE_VF to free the resources for a network adapter's PCI Express (PCIe) Virtual Function (VF).Overlying drivers issue this OID set request to the miniport driver for the network adapter's PCIe Physical Function (PF). This OID set request is required for PF miniport drivers that support the single root I/O virtualization (SR-IOV) interface.
-ms.assetid: B1A72D34-286A-4A70-8BE3-F21324B92187
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_FREE_VF Network Drivers Starting with Windows Vista

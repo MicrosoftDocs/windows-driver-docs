@@ -1,7 +1,6 @@
 ---
 title: Reporting Device Failures
 description: Reporting Device Failures
-ms.assetid: ca536547-d51a-4450-8a83-19aac67aab92
 keywords:
 - PnP WDK KMDF , device failures
 - Plug and Play WDK KMDF , device failures

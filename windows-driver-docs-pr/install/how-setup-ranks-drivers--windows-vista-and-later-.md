@@ -1,7 +1,6 @@
 ---
 title: How Windows Ranks Drivers
 description: How Windows Ranks Drivers
-ms.assetid: 54b6f40a-e5f6-41dd-8876-c9f0fb36ee00
 keywords:
 - ranking drivers WDK device installations
 - driver ranking WDK device installations

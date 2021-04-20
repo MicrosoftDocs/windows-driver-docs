@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PANTILT
 description: The KSPROPERTY\_CAMERACONTROL\_PANTILT property specifies absolute pan and tilt settings.
-ms.assetid: d6f151c9-a428-4d76-9854-5064d901643e
 keywords: ["KSPROPERTY_CAMERACONTROL_PANTILT Streaming Media Devices"]
 topic_type:
 - apiref

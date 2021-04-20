@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS
 description: The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS property specifies the mix-level capabilities of a supermixer node (KSNODETYPE\_SUPERMIX). A single get-property request retrieves information for all combinations of input and output channels.
-ms.assetid: ab7a5dfb-8975-41bb-9347-953406701804
 keywords: ["KSPROPERTY_AUDIO_MIX_LEVEL_CAPS Audio Devices"]
 topic_type:
 - apiref

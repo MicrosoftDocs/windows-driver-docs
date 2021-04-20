@@ -1,7 +1,6 @@
 ---
 title: GetJobHistoryRequest element
 description: The required GetJobHistoryRequest element requests a summary of job-related variables for previously completed jobs.
-ms.assetid: 679a2256-2b3f-4a54-be06-8b414acab679
 keywords: ["GetJobHistoryRequest element Imaging Devices"]
 topic_type:
 - apiref

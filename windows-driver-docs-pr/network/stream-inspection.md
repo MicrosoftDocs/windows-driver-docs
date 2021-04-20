@@ -1,7 +1,6 @@
 ---
 title: Stream Inspection
 description: Stream Inspection
-ms.assetid: 77e152bf-cb6b-4845-9a5e-9c37281f23f1
 keywords:
 - stream inspection WDK Windows Filtering Platform
 ms.date: 04/20/2017

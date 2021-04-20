@@ -1,7 +1,6 @@
 ---
 title: Filter Module PnP Event Notifications
 description: Filter Module PnP Event Notifications
-ms.assetid: ca1e250a-aaa8-4fbc-abe5-c30c8913a67a
 keywords:
 - filter modules WDK networking , PnP event notifications
 - filter drivers WDK networking , PnP event notifications

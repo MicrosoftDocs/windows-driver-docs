@@ -1,7 +1,6 @@
 ---
 title: Power Management for WDM Lower Edge
 description: Power Management for WDM Lower Edge
-ms.assetid: e4504206-b303-4623-bb10-a19acbcede03
 keywords:
 - NDIS-WDM miniport drivers WDK networking , power management
 - lower edge of NDIS miniport drivers WDK networking , power management

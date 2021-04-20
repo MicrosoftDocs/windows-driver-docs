@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the Halftone Feature
 description: Option Attributes for the Halftone Feature
-ms.assetid: a188908a-ddf7-4b4d-a46d-e3550ffb0418
 keywords:
 - Halftone Feature
 ms.date: 04/20/2017

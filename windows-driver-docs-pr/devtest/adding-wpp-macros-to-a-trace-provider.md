@@ -1,7 +1,6 @@
 ---
 title: Adding WPP Macros to a Trace Provider
 description: Adding WPP Macros to a Trace Provider
-ms.assetid: fc6db47c-ef18-4454-a385-adee1858b9d4
 keywords:
 - Windows software trace preprocessor WDK , macros
 - WPP software tracing WDK , macros

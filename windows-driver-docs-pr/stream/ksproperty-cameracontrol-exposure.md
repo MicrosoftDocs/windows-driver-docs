@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXPOSURE
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_EXPOSURE property to get or set a digital camera's exposure time. This property is optional.
-ms.assetid: e9ad7a82-0c2d-46e5-a5d5-9f33848f129c
 keywords: ["KSPROPERTY_CAMERACONTROL_EXPOSURE Streaming Media Devices"]
 topic_type:
 - apiref

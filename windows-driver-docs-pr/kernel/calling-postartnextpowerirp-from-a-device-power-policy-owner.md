@@ -1,7 +1,6 @@
 ---
 title: Calling PoStartNextPowerIrp from a Device Power Policy Owner
 description: Calling PoStartNextPowerIrp from a Device Power Policy Owner
-ms.assetid: 58576ff8-638e-4928-9a2d-337ac3f4d2d8
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp", "device power policy WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

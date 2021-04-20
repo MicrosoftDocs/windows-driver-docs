@@ -1,7 +1,6 @@
 ---
 title: Network Interface Information
 description: Network Interface Information
-ms.assetid: 4d8cd9c2-6f78-4c70-83bd-f36fffbf1c35
 keywords:
 - NDIS network interfaces WDK , information about
 - network interfaces WDK , information about

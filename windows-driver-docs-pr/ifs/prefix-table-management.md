@@ -1,7 +1,6 @@
 ---
 title: Prefix Table Management
 description: Prefix Table Management
-ms.assetid: a48ed460-fab9-4a6d-bd2f-454b4932ea61
 keywords:
 - RDBSS WDK file systems , prefix tables
 - Redirected Drive Buffering Subsystem WDK file systems , prefix tables

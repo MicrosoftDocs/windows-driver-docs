@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_PACKETCOUNT
 description: KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
-ms.assetid: 904896DE-D135-43B6-AA1F-F49D0748952D
 keywords: ["KSPROPERTY_RTAUDIO_PACKETCOUNT Audio Devices"]
 topic_type:
 - apiref

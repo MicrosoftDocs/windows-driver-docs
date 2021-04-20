@@ -1,7 +1,6 @@
 ---
 title: Using Boot Parameters
 description: Using Boot Parameters
-ms.assetid: f249f312-cfc5-41b2-ad67-75497a929e35
 keywords:
 - boot entries WDK
 - boot options WDK , boot parameters

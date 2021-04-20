@@ -1,7 +1,6 @@
 ---
 title: Introduction to Tape Drivers
 description: Tape Drivers
-ms.assetid: d6d8ac92-0713-401c-9551-fc8e08e903f4
 keywords:
 - tape drivers WDK storage
 - storage tape drivers WDK

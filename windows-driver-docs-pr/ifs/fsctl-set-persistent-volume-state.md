@@ -1,7 +1,6 @@
 ---
 title: FSCTL_SET_PERSISTENT_VOLUME_STATE control code
 description: The FSCTL\_SET\_PERSISTENT\_VOLUME\_STATE control code sets persistent settings for a file system volume. Persistent settings remain on a file system volume between reboots of the computer.
-ms.assetid: 1670f3e9-c2f4-4696-a76e-bcf1bad5dc43
 keywords: ["FSCTL_SET_PERSISTENT_VOLUME_STATE control code Installable File System Drivers"]
 topic_type:
 - apiref

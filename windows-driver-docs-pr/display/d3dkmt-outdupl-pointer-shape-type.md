@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE enumeration
 description: Learn about the D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE enumeration, which is reserved for system use. Do not use in your driver.
-ms.assetid: 50a6cc24-2ac8-435c-8e82-9cd0c02f57e9
 keywords: ["D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE enumeration Display Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: StorPortVirtualDevice2 rule (storport)
 description: This rule verifies that upon exit from the HwStorFindAdapter routine, the VirtualDevice field in the PORT\_CONFIGURATION\_INFORMATION (Storport) structure has been set to TRUE. The rule applies only to virtual StorPort miniports.
-ms.assetid: CBD1FAD0-9D85-4989-9CCA-00F5698F5383
 ms.date: 05/21/2018
 keywords: ["StorPortVirtualDevice2 rule (storport)"]
 topic_type:

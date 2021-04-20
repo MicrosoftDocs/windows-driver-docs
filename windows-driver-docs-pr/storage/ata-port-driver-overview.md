@@ -1,7 +1,6 @@
 ---
 title: ATA Port Driver Overview
 description: ATA Port Driver Overview
-ms.assetid: c7b9d794-a8cb-4bdd-bb93-bff473ea26a7
 keywords:
 - storage port drivers WDK , ATA Port driver
 - ATA Port drivers WDK

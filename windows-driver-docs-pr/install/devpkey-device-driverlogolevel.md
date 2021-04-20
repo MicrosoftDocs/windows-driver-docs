@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverLogoLevel
 description: DEVPKEY_Device_DriverLogoLevel
-ms.assetid: 19843a2d-cc60-4e1e-b6b0-29c63b7f7d3f
 keywords: ["DEVPKEY_Device_DriverLogoLevel Device and Driver Installation"]
 topic_type:
 - apiref

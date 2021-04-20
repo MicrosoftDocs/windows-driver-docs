@@ -1,7 +1,6 @@
 ---
 title: Attaching a Client Module to a Provider Module
 description: Attaching a Client Module to a Provider Module
-ms.assetid: 351c07f6-186a-4f47-95f8-c94084ff68fb
 keywords:
 - attaching network modules
 - registering network modules

@@ -1,7 +1,6 @@
 ---
 title: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 description: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
-ms.assetid: EF556563-4097-4388-A563-29FC891AC626
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Minimum UEFI requirements for Windows on SoC platforms
 description: Minimum UEFI requirements for Windows on SoC platforms
-ms.assetid: 32743d69-83a2-4658-8652-6d624e75e3db
 ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_LISTEN_STATE
 description: WDI_TLV_P2P_LISTEN_STATE is a TLV that contains a Wi-Fi Direct listen state.
-ms.assetid: 66BDF96A-2B9D-4188-AFC8-465786924B47
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista

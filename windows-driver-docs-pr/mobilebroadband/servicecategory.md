@@ -1,7 +1,6 @@
 ---
 title: ServiceCategory
 description: ServiceCategory
-ms.assetid: 770cb127-808f-4d77-905e-66064553d3d7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

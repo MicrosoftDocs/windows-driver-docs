@@ -1,7 +1,6 @@
 ---
 title: C28101
 description: Warning C28101 The Drivers module has inferred that the current function is not the correct type of function.
-ms.assetid: 81a68dd6-ff9d-4cb2-9bd9-3a0f0d152230
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

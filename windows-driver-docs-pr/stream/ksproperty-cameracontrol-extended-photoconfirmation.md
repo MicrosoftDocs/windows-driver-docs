@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION property ID that is defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration is used to set and get the photo confirmation settings in the driver.
-ms.assetid: 3EF6FF15-6805-4D91-B053-1BF6C5D5BEF2
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION Streaming Media Devices"]
 topic_type:
 - apiref

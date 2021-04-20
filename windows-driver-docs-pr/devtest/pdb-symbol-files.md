@@ -1,7 +1,6 @@
 ---
 title: PDB Symbol Files
 description: PDB Symbol Files
-ms.assetid: 077784d9-06be-450c-bdd5-02321305df1b
 keywords:
 - program database symbol files WDK
 - PDB symbol files WDK

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR
 description: The KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR property contains the render and capture endpoints for cellular audio routing.
-ms.assetid: 4F163A65-5572-41D0-80B2-493285E2B87B
 keywords: ["KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR Audio Devices"]
 topic_type:
 - apiref

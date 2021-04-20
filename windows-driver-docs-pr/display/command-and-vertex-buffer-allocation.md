@@ -1,7 +1,6 @@
 ---
 title: Command and Vertex Buffer Allocation
 description: Command and Vertex Buffer Allocation
-ms.assetid: 07666a6f-1d2e-4f30-bba8-a09b59225ecf
 keywords:
 - command buffers WDK Direct3D
 - vertex buffers WDK Direct3D

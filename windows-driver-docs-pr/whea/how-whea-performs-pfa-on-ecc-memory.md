@@ -1,7 +1,6 @@
 ---
 title: How WHEA Performs PFA on ECC Memory
 description: How WHEA Performs PFA on ECC Memory
-ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
 - PFA WDK WHEA , Error Correction Code memory

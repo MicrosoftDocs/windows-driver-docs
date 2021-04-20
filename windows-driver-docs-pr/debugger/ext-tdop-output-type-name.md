@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_OUTPUT\_TYPE\_NAME
 description: The EXT\_TDOP\_OUTPUT\_TYPE\_NAME sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation prints the type name of the specified typed data.
-ms.assetid: eb0a9026-92fd-4b3e-b513-b691221b3196
 keywords: ["EXT_TDOP_OUTPUT_TYPE_NAME Windows Debugging"]
 topic_type:
 - apiref

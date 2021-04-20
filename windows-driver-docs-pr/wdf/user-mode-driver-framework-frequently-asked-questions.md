@@ -1,7 +1,6 @@
 ---
 title: User-Mode Driver Framework Frequently Asked Questions
 description: Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system.
-ms.assetid: 0c07e514-73f9-4d24-86ad-8ac036fdbcf4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

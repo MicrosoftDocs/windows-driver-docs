@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL to indicate which operating channel a given Wi-Fi Direct port is operating on.
-ms.assetid: 170e5df7-3128-4942-869d-45206022dfaa
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL Network Drivers Starting with Windows Vista

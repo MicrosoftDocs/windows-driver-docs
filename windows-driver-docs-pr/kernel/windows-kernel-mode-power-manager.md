@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Power Manager
 description: Windows Kernel-Mode Power Manager
-ms.assetid: 2d39e43a-63a6-4474-a1ed-c24b4526a3f5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

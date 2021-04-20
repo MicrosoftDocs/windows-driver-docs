@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
 description: KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
-ms.assetid: 812a9ec8-3b9e-4cf8-bf69-3b849ff6402a
 keywords: ["KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR Device and Driver Installation"]
 topic_type:
 - apiref

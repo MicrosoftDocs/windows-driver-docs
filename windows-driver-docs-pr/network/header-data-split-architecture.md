@@ -1,7 +1,6 @@
 ---
 title: Header-Data Split Architecture
 description: Header-Data Split Architecture
-ms.assetid: a2594360-cbac-4f77-840a-2572a2381646
 keywords:
 - header-data split WDK , architecture
 - header-data split providers WDK

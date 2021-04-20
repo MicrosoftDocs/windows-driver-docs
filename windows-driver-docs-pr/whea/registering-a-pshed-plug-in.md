@@ -1,7 +1,6 @@
 ---
 title: Registering a PSHED Plug-In
 description: Registering a PSHED Plug-In
-ms.assetid: 8b710aa2-1477-4906-b5cb-d269d821ea28
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , registering
 - registering PSHED plug-ins WDK WHEA

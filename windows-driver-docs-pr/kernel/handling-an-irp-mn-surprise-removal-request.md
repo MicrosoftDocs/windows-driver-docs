@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP_MN_SURPRISE_REMOVAL Request
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
-ms.assetid: 39a90617-40ad-4c10-95d3-2b618d66d70e
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

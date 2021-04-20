@@ -1,7 +1,6 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver architecture
 description: Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
-ms.assetid: 11B54F92-DC84-4D74-9BBE-C85047AD2167
 ms.date: 10/27/2020
 ms.localizationpriority: medium
 ---
@@ -215,7 +214,7 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 1. **Configuration:** The mobile operators provision the device and change configuration using the configuration mechanism imposed by the OMA protocol standards. For example, SUPL standard requires the SUPL configuration to be done based on the UICC and/or be done using the SUPL OMA configuration profile information obtained via OMA-DM or OMA-CP.
 
     > [!NOTE]
-    > Certain functionality available in phone for configuration purposes (OMA-DM and OMA CP) was not available in other platforms until Windows 10. Starting in Windows 10 all platforms can support SUPL configuration via the SUPL Configuration Service Provider (CSP), as far as the new GNSS DDI is used. The provisioning injected through the CSP can come from the image itself (through provxml or multivariant) or from the mobile operator via OMA-DM or OMA-CP.
+    > Certain functionality available in phone for configuration purposes (OMA-DM and OMA CP) was not available in other platforms until Windows 10. Starting in Windows 10 all platforms can support SUPL configuration via the SUPL Configuration Service Provider (CSP), as far as the new GNSS DDI is used. The provisioning injected through the CSP can come from the image itself (through provxml or multivariant) or from the mobile operator via OMA-DM or OMA-CP. SUPL CSP is defined in [SUPL CSP](/windows/client-management/mdm/supl-csp).
 
     Windows 10 defines a proprietary technology, device management using a Configuration Service Provider (CSP), for interpreting and extracting the configuration data. Microsoft provides a CSP for consuming the OMA configuration and pushing the configuration to the GNSS driver through the GNSS adapter.
 
@@ -224,7 +223,7 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 
     Only one SUPL configuration is supported in a system, including in cases of dual SIM devices. Microsoft provides the functionality to reconfigure SUPL based on UICC and on UICC change. In addition to this, in case of the device roaming, the HLOS re-configures the SUPL client to work in standalone mode. This document defines the IOCTLs for pushing such configuration data for a variety of mobile operation protocols (SUPL 1.0 and 2.0, v2UPL, and so on).
 
-1. **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](/windows-hardware/drivers/ddi/gnssdriver).
+1. **Handling of user consent for NI requests:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](/windows-hardware/drivers/ddi/gnssdriver).
 
 In order to implement a fully functional SUPL client the IHV stack will need to make use of interfaces or general functionality available in/through the OS platform. The following is the list of functionality available in Windows 10 that IHVs can leverage to implement their SUPL client:
 

@@ -2,7 +2,6 @@
 title: IRP_MN_CANCEL_STOP_DEVICE
 description: Learn about the 'IRP_MN_CANCEL_STOP_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 7047c266-84b4-4260-ad75-d56c87c8c9ef
 keywords:
  - IRP_MN_CANCEL_STOP_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

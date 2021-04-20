@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_RESOLUTION
 description: Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precision of a clock.
-ms.assetid: 3e92a4fb-207f-449a-bc70-aa8028b4f8f1
 keywords: ["KSPROPERTY_CLOCK_RESOLUTION Streaming Media Devices"]
 topic_type:
 - apiref

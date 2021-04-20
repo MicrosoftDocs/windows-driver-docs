@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceInterface_Enabled
 description: DEVPKEY_DeviceInterface_Enabled
-ms.assetid: 8e7ea36c-827d-43bd-b424-41c06ba8c20d
 keywords: ["DEVPKEY_DeviceInterface_Enabled Device and Driver Installation"]
 topic_type:
 - apiref

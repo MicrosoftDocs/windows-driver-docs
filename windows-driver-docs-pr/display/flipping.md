@@ -1,7 +1,6 @@
 ---
 title: Flipping
 description: Flipping
-ms.assetid: e577b73f-7664-4c87-8d43-c3cf04705081
 keywords:
 - tears WDK DirectDraw
 - drawing page flips WDK DirectDraw , about flipping

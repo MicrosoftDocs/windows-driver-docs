@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_COPY\_MACROVISION
 description: The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of the data stream.
-ms.assetid: 6863bcf6-06bc-4bd2-896e-43c083aa07d5
 keywords: ["KSPROPERTY_COPY_MACROVISION Streaming Media Devices"]
 topic_type:
 - apiref

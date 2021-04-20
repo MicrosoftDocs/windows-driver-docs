@@ -1,7 +1,6 @@
 ---
 title: Adding a Port
 description: Adding a Port
-ms.assetid: ec908ddd-761b-4a82-8fc3-ac45c39a0571
 keywords:
 - port management WDK print , adding ports
 - adding ports

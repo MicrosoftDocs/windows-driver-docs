@@ -1,7 +1,6 @@
 ---
 title: IPrintOemUI2 COM Interface
 description: IPrintOemUI2 COM Interface
-ms.assetid: 9aee61af-e8e2-4bc4-a17b-783242d1ac1f
 keywords:
 - IPrintOemUI2
 ms.date: 04/20/2017

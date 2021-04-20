@@ -1,7 +1,6 @@
 ---
 title: Performance Tip Completing Requests During HwStartIo
 description: Performance Tip Completing Requests During HwStartIo
-ms.assetid: b1a3feff-ca18-4757-a336-c70ada998ba9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

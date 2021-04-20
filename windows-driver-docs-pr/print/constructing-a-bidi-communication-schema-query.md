@@ -1,7 +1,6 @@
 ---
 title: Constructing a Bidi Communication Schema Query
 description: Constructing a Bidi Communication Schema Query
-ms.assetid: b18fc69a-652c-4e36-83b3-fc4715b03c0f
 keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print

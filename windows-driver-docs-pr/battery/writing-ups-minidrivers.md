@@ -1,7 +1,6 @@
 ---
 title: Writing UPS Minidrivers
 description: Writing UPS Minidrivers
-ms.assetid: 85142cbf-cb3b-4ccf-a005-8fcb7a7ad12b
 keywords:
 - UPS minidrivers WDK
 - simple signaling WDK

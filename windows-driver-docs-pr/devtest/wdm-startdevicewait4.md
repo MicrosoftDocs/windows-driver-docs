@@ -1,7 +1,6 @@
 ---
 title: StartDeviceWait4 rule (wdm)
 description: The StartDeviceWait4 rule specifies that the driver should not call KeWaitForSingleObject in the context of start device IRP.
-ms.assetid: 075DCDD2-CFC5-4508-A1B3-0D506CA50B58
 ms.date: 05/21/2018
 keywords: ["StartDeviceWait4 rule (wdm)"]
 topic_type:

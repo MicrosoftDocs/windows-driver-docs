@@ -1,7 +1,6 @@
 ---
 title: IrpPending rule set (WDM)
 description: Use these rules to verify that your driver correctly pends I/O request packets (IRP).
-ms.assetid: C4B5976B-7655-4FD1-B415-98C256873EBC
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: INF DelService Directive
 description: A DelService directive is used in a DDInstall.Services section to remove one or more previously installed device/driver services from the target computer.
-ms.assetid: eca57f7c-1551-4247-ab1f-858e6e3ad9d7
 keywords:
 - INF DelService Directive Device and Driver Installation
 topic_type:

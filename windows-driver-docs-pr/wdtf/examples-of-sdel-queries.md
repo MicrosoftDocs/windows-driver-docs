@@ -1,7 +1,6 @@
 ---
 title: Examples of SDEL Queries
 description: Examples of device relation tokens used in SDEL queries
-ms.assetid: A99d68D2-31A2-99B5-841F-A3969334E39A
 keywords:
 - SDEL
 - SDEL queries

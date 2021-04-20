@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION.
-ms.assetid: ea3ae072-4a98-48df-871a-cc7d882b96b8
 keywords: ["FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

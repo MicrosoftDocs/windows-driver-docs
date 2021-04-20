@@ -1,7 +1,6 @@
 ---
 title: Event\ \ \
 description: Event\ \ \
-ms.assetid: a3b0b3f1-03d6-4309-9efe-d2588c7240cb
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

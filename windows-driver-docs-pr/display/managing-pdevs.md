@@ -1,7 +1,6 @@
 ---
 title: Managing PDEVs
 description: Managing PDEVs
-ms.assetid: f7badbe8-b24f-438a-8937-95bb98de6310
 keywords:
 - PDEV WDK DirectDraw
 - drawing WDK DirectDraw , PDEV

@@ -16,3 +16,4 @@ Some existing policies that lead to the driver submission being rejected include
 
 ## Other Policies
 * [Extension INF targeting evaluation rules defined](./extension-inf-targeting-rules.md)
+* [Driver Release Cadence](./driver-release-cadence.md)

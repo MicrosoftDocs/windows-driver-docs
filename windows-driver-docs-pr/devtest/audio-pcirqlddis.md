@@ -1,7 +1,6 @@
 ---
 title: PcIrqlDDIs rule (audio)
 description: The PcIrqlDDIs rule specifies that a PortCls miniport driver must call PortCls DDIs at the correct IRQL level.
-ms.assetid: 7CBC8407-FE46-449F-B921-883BCDA0436B
 ms.date: 05/21/2018
 keywords: ["PcIrqlDDIs rule (audio)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Setting the Protection Level
 description: Setting the Protection Level
-ms.assetid: e0fecc58-59d9-470a-83e6-9b08e2f59169
 keywords:
 - copy protection WDK COPP , protection levels
 - video copy protection WDK COPP , protection levels

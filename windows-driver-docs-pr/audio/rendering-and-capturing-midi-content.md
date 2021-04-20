@@ -1,7 +1,6 @@
 ---
 title: Rendering and Capturing MIDI Content
 description: Rendering and Capturing MIDI Content
-ms.assetid: 32eff06a-f3e8-471c-8fe6-b7cee208b90c
 keywords:
 - MIDI content rendering WDK audio
 - MIDI content capturing WDK audio

@@ -1,7 +1,6 @@
 ---
 title: Accessing Custom Device Properties
 description: Accessing Custom Device Properties
-ms.assetid: 81170fd5-f1fb-4a06-a651-4651fc894070
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

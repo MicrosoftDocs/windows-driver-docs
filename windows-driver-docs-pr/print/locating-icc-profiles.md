@@ -1,7 +1,6 @@
 ---
 title: Locating ICC Profiles
 description: Locating ICC Profiles
-ms.assetid: 828b53cd-452a-4c4d-bfbb-45ea674ef49a
 keywords:
 - color management WDK print , locating ICC profiles
 - ICC profiles WDK print

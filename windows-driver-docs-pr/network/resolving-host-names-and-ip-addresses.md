@@ -1,7 +1,6 @@
 ---
 title: Resolving Host Names and IP Addresses
 description: Resolving Host Names and IP Addresses
-ms.assetid: 4a5f421c-6827-4ca2-be88-67ec43dc84b2
 keywords:
 - WSK WDK networking , name resolution
 - Winsock Kernel WDK networking , name resolution

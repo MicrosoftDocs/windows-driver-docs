@@ -1,7 +1,6 @@
 ---
 title: New Scatter/Gather DMA Support
 description: New Scatter/Gather DMA Support
-ms.assetid: ac7cd98b-1211-4538-a54b-7362fa1d81b0
 keywords:
 - scatter/gather DMA WDK networking
 - miniport drivers WDK networking , scatter/gather DMA

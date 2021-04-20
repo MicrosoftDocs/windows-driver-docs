@@ -1,7 +1,6 @@
 ---
 title: Framework Queue Objects
 description: Framework Queue Objects
-ms.assetid: 42736e2d-2482-46b4-bf52-4efe369db40b
 keywords:
 - I/O requests WDK KMDF , queue objects
 - I/O queues WDK KMDF

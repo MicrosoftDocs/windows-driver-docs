@@ -1,7 +1,6 @@
 ---
 title: Windows Metadata and Internet Services
 description: Windows Metadata and Internet Services
-ms.assetid: 9e814be5-e22a-48d5-b46b-d22baa89e229
 keywords:
 - WMIS
 - Metadata Information Server WDK

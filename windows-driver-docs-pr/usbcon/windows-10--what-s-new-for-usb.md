@@ -64,7 +64,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [Tasks for a function controller client driver](function-client-driver.md)
 
-    [User mode services to UFX programming reference](/windows-hardware/drivers/ddi/index)
+    [User mode services to UFX programming reference](/windows-hardware/drivers/ddi/ufxclient)
 
     [USB function class driver to UFX programming reference](/previous-versions/windows/hardware/drivers/mt188008(v=vs.85))
 

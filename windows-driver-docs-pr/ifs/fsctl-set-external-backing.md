@@ -1,7 +1,6 @@
 ---
 title: FSCTL_SET_EXTERNAL_BACKING control code
 description: The FSCTL\_SET\_EXTERNAL\_BACKING control code sets the backing source for a file, such as a Windows Image Format (WIM) file or compressed file, by an external backing provider.
-ms.assetid: 5CB9FD4D-AF29-4438-B0B5-49871102968A
 keywords: ["FSCTL_SET_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:
 - apiref

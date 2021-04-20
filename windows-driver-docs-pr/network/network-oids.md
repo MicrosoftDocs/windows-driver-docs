@@ -1,7 +1,6 @@
 ---
 title: Network OIDs
 description: Network OIDs
-ms.assetid: a897ba37-7984-455f-9428-a74850f7e3b6
 keywords:
 - OIDs WDK networking
 - network OIDs WDK

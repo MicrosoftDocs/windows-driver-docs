@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming
 description: Kernel Streaming
-ms.assetid: dcd28218-b3bf-4e5d-b1a7-6910103afb96
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , kernel streaming
 - Streaming Model WDK Windows 2000 Kernel , kernel streaming

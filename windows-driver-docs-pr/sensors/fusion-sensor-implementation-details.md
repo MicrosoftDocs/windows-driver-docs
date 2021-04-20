@@ -1,7 +1,6 @@
 ---
 title: Fusion sensor implementation details
 description: This section provides implementation details about the Windows fusion sensor driver stack.
-ms.assetid: B53D76AC-127C-4B5A-B908-A647D2B3F164
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Example 9 Creating a TMF file
 description: Example 9 Creating a TMF file
-ms.assetid: bf66431b-7937-4a98-96cf-e06d28793401
 keywords:
 - Tracefmt WDK , TMF files
 - TMF files WDK , Tracefmt

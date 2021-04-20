@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AEC\_MODE
 description: The KSPROPERTY\_AEC\_MODE property is used to control an AEC node's mode of operation. This is an optional property of an AEC node (KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL).
-ms.assetid: 79f0d655-4764-454f-8867-6cf1b5cedc82
 keywords: ["KSPROPERTY_AEC_MODE Audio Devices"]
 topic_type:
 - apiref

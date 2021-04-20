@@ -1,7 +1,6 @@
 ---
 title: ContentTypesSupported element
 description: The required ContentTypesSupported element contains a list of keywords that describe the different document content types that the scanner supports.
-ms.assetid: f7ed2ba9-8cd9-486c-9bb0-3eb2c925450a
 keywords: ["ContentTypesSupported element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_PATTERNS
 description: The KSPROPERTY\_SOUNDDETECTOR\_PATTERNS property is set by the operating system to configure the keywords to be detected.
-ms.assetid: 7A6AF4F6-5F5F-4A3D-AF61-B3E4374B33AD
 keywords: ["KSPROPERTY_SOUNDDETECTOR_PATTERNS Audio Devices"]
 topic_type:
 - apiref
@@ -84,7 +83,7 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty" data-raw-source="[&lt;strong&gt;KSSOUNDDETECTORPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty"><strong>KSSOUNDDETECTORPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty" data-raw-source="[&lt;strong&gt;KSSOUNDDETECTORPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty)"><strong>KSSOUNDDETECTORPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a></p></td>
 </tr>
 </tbody>

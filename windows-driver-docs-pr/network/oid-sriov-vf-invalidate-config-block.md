@@ -1,7 +1,6 @@
 ---
 title: OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK
 description: NDIS issues an object identifier (OID) method request of OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK to notify the miniport driver of a PCI Express (PCIe) Virtual Function (VF) that data within one or more configuration blocks has changed.
-ms.assetid: CF73E0DA-20DA-49A0-80B0-0F5A56DCEF5D
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK Network Drivers Starting with Windows Vista

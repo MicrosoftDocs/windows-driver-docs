@@ -1,7 +1,6 @@
 ---
 title: Receiving Data in a Filter Driver
 description: Receiving Data in a Filter Driver
-ms.assetid: 4f6d44e9-c351-452d-aadf-505e6bb30fc2
 keywords:
 - receiving data WDK networking
 ms.date: 04/20/2017

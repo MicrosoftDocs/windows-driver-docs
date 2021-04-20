@@ -1,7 +1,6 @@
 ---
 title: INF Files for WIA Devices
 description: INF Files for WIA Devices
-ms.assetid: 65eac8b5-35d2-4537-8646-a35a1cf9aced
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

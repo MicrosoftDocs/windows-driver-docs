@@ -1,7 +1,6 @@
 ---
 title: Installing an Inbox Driver or a Preinstalled Driver
 description: Installing an Inbox Driver or a Preinstalled Driver
-ms.assetid: 6949897e-12e8-4d86-8f20-4b10a612ef72
 keywords:
 - hardware-first installations WDK device installations
 - inbox driver installations WDK

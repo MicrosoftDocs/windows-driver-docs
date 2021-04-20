@@ -1,7 +1,6 @@
 ---
 title: Work Queue Dispatching Mechanisms
 description: Work Queue Dispatching Mechanisms
-ms.assetid: d4ce929f-2d84-4194-9afa-e00629594c36
 keywords:
 - RDBSS WDK file systems , work queue dispatching
 - Redirected Drive Buffering Subsystem WDK file systems , work queue dispatching

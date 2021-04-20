@@ -1,7 +1,6 @@
 ---
 title: Support for DirectMusic Properties
 description: Support for DirectMusic Properties
-ms.assetid: f44cf9a9-bdfc-4794-b064-4d1126fb83aa
 keywords:
 - hardware acceleration WDK audio
 - miniport drivers WDK audio , kernel-mode hardware acceleration

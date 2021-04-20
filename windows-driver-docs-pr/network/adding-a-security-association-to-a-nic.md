@@ -1,7 +1,6 @@
 ---
 title: Adding a Security Association to a NIC
 description: Adding a Security Association to a NIC
-ms.assetid: 524cc9f8-fe02-4192-85af-83813ae83d08
 keywords:
 - security associations WDK IPsec offload
 - SAs WDK IPsec offload

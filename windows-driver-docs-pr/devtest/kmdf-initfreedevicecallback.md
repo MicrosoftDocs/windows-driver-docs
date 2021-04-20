@@ -1,7 +1,6 @@
 ---
 title: InitFreeDeviceCallback rule (kmdf)
 description: The InitFreeDeviceCallback rule specifies that a driver must call WdfDeviceInitFree if the driver encounters an error while it initializes a new framework device object, and if the driver received the WDFDEVICE\_INIT structure from a call to WdfControlDeviceInitAllocate.
-ms.assetid: 518f60cf-283a-4924-8bbd-2f5e26d3e850
 ms.date: 05/21/2018
 keywords: ["InitFreeDeviceCallback rule (kmdf)"]
 topic_type:

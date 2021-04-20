@@ -1,7 +1,6 @@
 ---
 title: WdfSpinlockRelease rule (kmdf)
 description: The WdfSpinlockRelease rule specifies that calls to WdfSpinLockAcquire and WdfSpinlockRelease are used in a balanced way within a KMDF event callback function.
-ms.assetid: ecb07a60-d55c-4990-aeef-5c880c13c2a1
 ms.date: 05/21/2018
 keywords: ["WdfSpinlockRelease rule (kmdf)"]
 topic_type:

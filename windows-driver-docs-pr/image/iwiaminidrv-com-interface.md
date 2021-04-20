@@ -1,6 +1,5 @@
 ---
 title: IWiaMiniDrv COM Interface
-ms.assetid: a4bd0dee-fb40-42d4-a235-9dab3bc84017
 description: This topic provides detailed guidance on using the IWiaMiniDrv COM interface
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_DDRAWHANDLE
 description: The KSPROPERTY\_VPCONFIG\_DDRAWHANDLE property returns the Microsoft DirectDraw handle property information.
-ms.assetid: e8238751-8d4d-4b5b-a2d4-bbb3f783eefa
 keywords: ["KSPROPERTY_VPCONFIG_DDRAWHANDLE Streaming Media Devices"]
 topic_type:
 - apiref

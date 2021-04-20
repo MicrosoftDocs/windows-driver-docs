@@ -1,7 +1,6 @@
 ---
 title: Handling IRP_MN_QUERY_POWER for Device Power States
 description: Handling IRP_MN_QUERY_POWER for Device Power States
-ms.assetid: 902619bc-068a-4613-b99d-78a243f7fee6
 keywords: ["IRP_MN_QUERY_POWER", "device power states WDK kernel", "query-power IRPs WDK power management", "power IRPs WDK kernel , device queries", "querying power state", "queuing IRPs", "device query power IRPs WDK kernel", "dispatch routines WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

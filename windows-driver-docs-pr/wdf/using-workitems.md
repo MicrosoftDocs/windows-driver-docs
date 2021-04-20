@@ -1,7 +1,6 @@
 ---
 title: Using Work Items
 description: Using Work Items
-ms.assetid: 4617A33F-9026-45FF-9CC2-7215423E6D35
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

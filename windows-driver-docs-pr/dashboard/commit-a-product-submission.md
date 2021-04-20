@@ -33,6 +33,8 @@ The productId in the method is the product for which the submission is intended.
 | Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
 | accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
+In the headers, set `Content-Length: 0` and `Content-type: application/json`.
+
 ### Request parameters
 
 Do not provide request parameters for this method.
@@ -52,19 +54,13 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for creating a new submission for a product. For more details about the values in the response body, see the following section.
-
-```json
-{
-  "commitStatus": "commitStarted",
-}
-```
+A successful request for creating a new submission for a product returns an empty 202 response.
 
 ### Response body
 
 | Value | Type | Description |
 |:--|:--|:--|
-| commitStatus | string | The status of the submission. The value returned would be CommitStarted |
+| commitStatus | string | The status of the submission. The value returned would be CommitPending |
 
 After this step, use the method [get submission details](get-a-submission.md)  to get the status of the submission.
 

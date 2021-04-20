@@ -1,7 +1,6 @@
 ---
 title: Cloned NET_BUFFER_LIST Structures
 description: Cloned NET_BUFFER_LIST Structures
-ms.assetid: efcf7d03-401e-46da-9ca3-8423af1e385a
 keywords:
 - NET_BUFFER_LIST
 - cloned structures WDK networking

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_ACQUIREORDERING
 description: The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property that should be implemented on a pin when state change order is significant.
-ms.assetid: b0d27615-bece-49b1-8497-f3c389ea37fc
 keywords: ["KSPROPERTY_CONNECTION_ACQUIREORDERING Streaming Media Devices"]
 topic_type:
 - apiref

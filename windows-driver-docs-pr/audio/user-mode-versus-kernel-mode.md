@@ -1,7 +1,6 @@
 ---
 title: User Mode Versus Kernel Mode
 description: User Mode Versus Kernel Mode
-ms.assetid: ee506167-6b64-4e50-9988-102416bcb056
 keywords:
 - software synthesizers WDK audio
 - custom synths WDK audio

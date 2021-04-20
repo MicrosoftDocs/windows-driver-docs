@@ -1,7 +1,6 @@
 ---
 title: Setting Context to Display Properties
 description: Setting Context to Display Properties
-ms.assetid: 9a5835b2-19a2-47fb-aa5b-87c3a9b955de
 keywords:
 - notify objects WDK networking , context
 - network notify objects WDK , context

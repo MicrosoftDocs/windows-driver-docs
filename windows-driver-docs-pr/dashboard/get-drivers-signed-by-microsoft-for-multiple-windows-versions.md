@@ -1,7 +1,6 @@
 ---
 title: Get drivers signed by Microsoft for multiple Windows versions
 description: How to get a driver signed by Microsoft for multiple versions of Windows
-ms.assetid: 519384F5-986C-4109-8C91-4352DEFF46F9
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -16,7 +15,7 @@ This topic explains how to make a submission to the dashboard, such as a driver,
 There are two ways to make a dashboard submission apply to Windows 10 and earlier versions of Windows:
 
 1. Use the Hardware Lab Kit (HLK) to test your submission against Windows 10 and use the Hardware Certification Kit (HCK) to test against earlier versions of Windows. Then create a dashboard submission that includes all the [merged HLK test results](/windows-hardware/test/hlk/user/merge-packages). During the submission process, you can opt-in to get a free signature for Windows Vista and Windows XP, as shown later in this topic. To opt-in for Windows Server 2008, provide a submission ID from a [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/index/) submission. This is the only way to make a submission apply to all Windows versions.
-2. As an alternative to HLK and HCK testing, you can [cross-sign](../install/cross-certificates-for-kernel-mode-code-signing.md) your driver yourself and submit it to the dashboard for [attestation signing](attestation-signing-a-kernel-driver-for-public-release.md) so that it also works on Windows 10. This is more complicated, but still a valid option. For more information about how to attestation sign a driver, see [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
+2. As an alternative to HLK and HCK testing, you can submit your driver to the dashboard for [attestation signing](attestation-signing-a-kernel-driver-for-public-release.md) so that it also works on Windows 10. This is more complicated, but still a valid option. For more information about how to attestation sign a driver, see [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
 
 This topic will provide some background info about the dashboard for context, then walk through the process for using the HLK/HCK.
 

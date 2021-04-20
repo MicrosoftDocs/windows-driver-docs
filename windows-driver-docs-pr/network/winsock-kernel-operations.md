@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Operations Topics
 description: Winsock Kernel Operations Topics
-ms.assetid: 5e336c62-8808-418e-8bd4-d54c4c747854
 keywords:
 - Winsock Kernel WDK networking , operations
 - WSK WDK networking , operations

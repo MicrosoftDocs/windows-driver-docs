@@ -1,7 +1,6 @@
 ---
 title: Writing a StartIo Routine
 description: Writing a StartIo Routine
-ms.assetid: b2a380ae-549c-4ca2-9c69-1e20c17ed2e6
 keywords: ["StartIo routines, about StartIo routines", "StartIo routines, writing", "starting I/O operations", "I/O operation starting WDK kernel", "IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

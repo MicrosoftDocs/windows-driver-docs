@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode WMI Library
 description: Windows Kernel-Mode WMI Library
-ms.assetid: ca981f38-8f3b-48cc-969f-ce53b85bba20
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -15,7 +14,7 @@ For more information on WMI, see [Windows Management Instrumentation](implementi
 
 Routines that provide a direct interface to the WMI library are prefixed with the letters "**Wmi**"; for a list of WMI routines, see [Windows Management Instrumentation (WMI) Library Routines](/windows-hardware/drivers/ddi/index).
 
-For a list of WMI callbacks, see [WMI Library Callback Routines](/windows-hardware/drivers/ddi/index).
+For a list of WMI callbacks, see [WMI library callback routines](/windows-hardware/drivers/ddi/wmilib).
 
 Communication with WMI is done with IRPs. For a list of routines that your driver can use to receive IRPs, see [WMI IRP Processing Routines](/windows-hardware/drivers/ddi/index). For a list of routines that your driver can use to send WMI IRPs, see [WMI IRP Sending Routines](/windows-hardware/drivers/ddi/index). For a list of IRPs that are used with WMI, see [WMI Minor IRPs](./wmi-minor-irps.md).
 

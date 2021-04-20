@@ -1,7 +1,6 @@
 ---
 title: PwrTest Execution State Scenario
 description: The PwrTest Execution State Scenario (/es) monitors thread execution state changes of the currently running processes and services.
-ms.assetid: 5470c99b-5780-486f-b36a-922fb821b7f3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

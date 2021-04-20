@@ -1,7 +1,6 @@
 ---
 title: GDI Event Services
 description: GDI Event Services
-ms.assetid: 966fa3ce-c72c-4b91-9cf7-b789d39e69b5
 keywords:
 - GDI WDK Windows 2000 display , events
 - graphics drivers WDK Windows 2000 display , events

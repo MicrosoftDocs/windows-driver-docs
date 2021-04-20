@@ -1,7 +1,6 @@
 ---
 title: Virtualized networking enhancements in NDIS 6.30
 description: This section describes virtualized networking enhancements in NDIS 6.30
-ms.assetid: AA1EC2E2-2903-453A-B214-947CA3C4C931
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

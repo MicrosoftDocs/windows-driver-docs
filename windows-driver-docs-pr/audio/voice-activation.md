@@ -1,7 +1,6 @@
 ---
 title: Voice Activation
 description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
-ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
 ms.date: 05/15/2020
 ms.localizationpriority: medium
 ---
@@ -119,7 +118,7 @@ AEC Requirements for HW KWS
 
 There is sample code for an audio driver that implements voice activation on GitHub as part of the SYSVAD virtual audio adapter sample. It is recommended to use this code as a starting point. The code is available at this location.
 
-<https://github.com/Microsoft/Windows-driver-samples/blob/master/audio/sysvad/>
+<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/>
 
 For more information about the SYSVAD sample audio driver, see [Sample Audio Drivers](sample-audio-drivers.md).
 

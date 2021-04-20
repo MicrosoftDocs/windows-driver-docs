@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_COLOR\_DROP\_GREEN
 description: The WIA\_IPS\_COLOR\_DROP\_GREEN property is used to configure the amount of color drop-out for the Green color channel (G in RGB), as a percentage in a range from 0 (no dropout) to 100 (full channel dropout).
-ms.assetid: 601BB830-034C-4A60-9F21-A1EBC45FDA8F
 keywords: ["WIA_IPS_COLOR_DROP_GREEN Imaging Devices"]
 topic_type:
 - apiref

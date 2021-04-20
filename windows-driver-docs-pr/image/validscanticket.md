@@ -1,7 +1,6 @@
 ---
 title: ValidScanTicket element
 description: The optional ValidScanTicket element contains a valid ScanTicket.
-ms.assetid: 306b5d90-068f-4b63-9155-8f35c7825f16
 keywords: ["ValidScanTicket element Imaging Devices"]
 topic_type:
 - apiref

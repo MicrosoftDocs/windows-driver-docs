@@ -1,7 +1,6 @@
 ---
 title: User Interface Extension Registry Entries
 description: User Interface Extension Registry Entries
-ms.assetid: 1ddf12a1-50e9-4f6e-9394-5bb1afb67798
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

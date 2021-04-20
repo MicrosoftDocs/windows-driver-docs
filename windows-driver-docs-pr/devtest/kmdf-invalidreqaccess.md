@@ -1,7 +1,6 @@
 ---
 title: InvalidReqAccess rule (kmdf)
 description: The InvalidReqAccess rule specifies that requests are not accessed after they are completed or canceled.
-ms.assetid: dc7609a5-8b18-44b9-88b0-a9616bc220d4
 ms.date: 05/21/2018
 keywords: ["InvalidReqAccess rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_EQ\_BANDS
 description: The KSPROPERTY\_AUDIO\_EQ\_BANDS property specifies the set of frequency bands from an equalization table. This is a get-only property of a channel in an EQ node (KSNODETYPE\_EQUALIZER).
-ms.assetid: 64304cad-cf07-4bdb-96d5-7dd594380725
 keywords: ["KSPROPERTY_AUDIO_EQ_BANDS Audio Devices"]
 topic_type:
 - apiref

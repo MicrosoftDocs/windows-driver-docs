@@ -1,7 +1,6 @@
 ---
 title: Audio Filter Graphs
 description: Audio Filter Graphs
-ms.assetid: 823de0d5-9368-4ae6-9f11-a8daa0640edd
 keywords:
 - audio filters WDK audio , graphs
 - filter graphs WDK audio , about filter graphs

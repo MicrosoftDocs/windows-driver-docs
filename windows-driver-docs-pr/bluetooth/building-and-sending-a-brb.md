@@ -1,7 +1,6 @@
 ---
 title: Building and Sending a BRB
 description: Building and Sending a BRB
-ms.assetid: 53a692e7-9c71-4dca-9331-32ac97b94179
 keywords:
 - Bluetooth WDK , Bluetooth request blocks
 - BRBs WDK

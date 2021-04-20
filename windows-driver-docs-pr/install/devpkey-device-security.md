@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Security
 description: DEVPKEY_Device_Security
-ms.assetid: ecfebaeb-f418-4f4a-b280-bd0c06cbc3a6
 keywords: ["DEVPKEY_Device_Security Device and Driver Installation"]
 topic_type:
 - apiref

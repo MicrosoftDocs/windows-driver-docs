@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - BTP battery tests
 description: Bluetooth Test Platform (BTP) Battery tests.
-ms.assetid: 19caf4db-9303-47d1-be12-5ff4b2710bc8
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 
@@ -33,3 +32,5 @@ When using the Traduci, as a test starts the red LED next to the 12 pin adapter 
 ## Capturing logs ##
 
 To capture the Bluetooth logs follow the instructions for the [busiotools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
+
+To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](testing-BTP-tools-btetlparse.md).

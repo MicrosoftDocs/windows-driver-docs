@@ -1,7 +1,6 @@
 ---
 title: Using the OPM DDI
 description: Using the OPM DDI
-ms.assetid: cd3c78a4-0241-48ab-9005-c544db199eb5
 keywords:
 - OPM WDK display , about DDI
 - OPM WDK display , creating protected outputs

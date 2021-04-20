@@ -1,7 +1,6 @@
 ---
 title: WIA Driver Components
 description: WIA Driver Components
-ms.assetid: 2c854945-2eda-4f4c-9cf6-5525e6e237ed
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

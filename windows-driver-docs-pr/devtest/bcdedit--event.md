@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /event
 description: The /event command enables or disables the remote event logging for the specified boot entry.
-ms.assetid: 7bb5ad1b-d2fa-4697-b518-9aed0cbeacce
 ms.date: 09/23/2020
 keywords: ["BCDEdit /event Driver Development Tools"]
 topic_type:

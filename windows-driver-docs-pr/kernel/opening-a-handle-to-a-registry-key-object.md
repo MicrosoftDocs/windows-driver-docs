@@ -1,7 +1,6 @@
 ---
 title: Opening a Handle to a Registry-Key Object
 description: Opening a Handle to a Registry-Key Object
-ms.assetid: 451e36a1-1cc2-469e-9f54-c02fef7b1666
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel", "opening handle to registry-key object", "handle to registry-key object WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

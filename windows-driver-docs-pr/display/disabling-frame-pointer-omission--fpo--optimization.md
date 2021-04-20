@@ -1,7 +1,6 @@
 ---
 title: Disabling Frame Pointer Omission (FPO) optimization
 description: In Windows 7, Windows Display Driver Model (WDDM) 1.1 kernel-mode drivers are required to disable Frame Pointer Omission (FPO) optimizations to improve the ability to diagnose performance problems.
-ms.assetid: ABA1A097-D9AA-41F4-90D4-B2FBB9B08534
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

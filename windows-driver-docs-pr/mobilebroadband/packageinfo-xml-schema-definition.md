@@ -1,7 +1,6 @@
 ---
 title: PackageInfo XML schema definition
 description: PackageInfo XML schema definition
-ms.assetid: b0e4f800-816a-4d8b-a68b-56dc468caf52
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

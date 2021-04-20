@@ -1,7 +1,6 @@
 ---
 title: Creating a service metadata submission package in Visual Studio
 description: Creating a service metadata submission package in Visual Studio
-ms.assetid: 93C2F66B-EAD3-4C7B-A761-E0AF861101D0
 keywords:
 - Creating a service metadata submission package in Visual Studio
 ms.date: 04/20/2017

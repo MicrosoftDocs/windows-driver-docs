@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDDECOUT\_CUR\_MODE
 description: The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output mode.
-ms.assetid: 4ac6d181-f532-4ac6-b8fd-2975214a3618
 keywords: ["KSPROPERTY_AUDDECOUT_CUR_MODE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Indicating Miniport Driver Status
 description: Indicating Miniport Driver Status
-ms.assetid: 366caecb-6c4b-42f3-927d-b72db764d6cf
 keywords:
 - status information WDK CoNDIS
 - connection-oriented NDIS WDK , miniport drivers

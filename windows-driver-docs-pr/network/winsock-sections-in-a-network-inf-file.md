@@ -1,7 +1,6 @@
 ---
 title: Winsock Sections in a Network INF File
 description: Winsock Sections in a Network INF File
-ms.assetid: 179a8570-287b-446e-8b56-a9f23071e84d
 keywords:
 - INF files WDK network , Winsock sections
 - network INF files WDK , Winsock sections

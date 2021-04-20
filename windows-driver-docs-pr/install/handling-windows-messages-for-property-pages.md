@@ -1,7 +1,6 @@
 ---
 title: Handling Windows Messages for Property Pages
 description: Handling Windows Messages for Property Pages
-ms.assetid: 4920a003-59b5-41dc-a8ee-5e034087006a
 keywords:
 - device property pages WDK device installations , Windows messages
 - property pages WDK device installations , Windows messages

@@ -1,7 +1,6 @@
 ---
 title: Clearing a VMQ Filter
 description: Clearing a VMQ Filter
-ms.assetid: 34efeb28-dcd6-4a8b-89d2-6065830e03ab
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

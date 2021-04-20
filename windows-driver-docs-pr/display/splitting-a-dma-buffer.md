@@ -1,7 +1,6 @@
 ---
 title: Splitting a DMA Buffer
 description: Splitting a DMA Buffer
-ms.assetid: 6b35d5e2-f8aa-478a-a5a0-9f519ff0ba6f
 keywords:
 - DMA buffers WDK display , splitting
 - splitting DMA buffers

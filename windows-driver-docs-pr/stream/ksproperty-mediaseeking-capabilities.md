@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CAPABILITIES
 description: The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking capabilities of a filter.
-ms.assetid: f0ee8fed-cdb5-44f9-96c3-d6edf235ea35
 keywords: ["KSPROPERTY_MEDIASEEKING_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref

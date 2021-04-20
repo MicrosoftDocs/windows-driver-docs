@@ -1,7 +1,6 @@
 ---
 title: ProcAmpControlOpenStream method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStream function creates a ProcAmp stream object.
-ms.assetid: 73011ce3-f643-4fca-bcfd-1467a9b56181
 keywords: ["ProcAmpControlOpenStream method Display Devices", "ProcAmpControlOpenStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlOpenStream method"]
 topic_type:
 - apiref

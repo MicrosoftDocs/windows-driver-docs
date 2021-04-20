@@ -1,7 +1,6 @@
 ---
 title: How to Use Decorations in INF Files for Printer Drivers
 description: How to Use Decorations in INF Files for Printer Drivers
-ms.assetid: 772e2797-8019-4715-870c-b7cd2b8e65f2
 keywords:
 - multiple processor architectures WDK printer
 - x86-based driver sample WDK printer

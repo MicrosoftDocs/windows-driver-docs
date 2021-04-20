@@ -1,7 +1,6 @@
 ---
 title: PcAllocateAndMapPages rule (audio)
 description: The PcAllocateAndMapPages rule specifies that a PortCls miniport driver calls the following interfaces, using the correct parameters IPortWaveRTStream AllocatePagesForMdlIPortWaveRTStream AllocateContiguousPagesForMdl IPortWaveRTStream MapAllocatedPages.
-ms.assetid: 32A3AA22-F387-460F-806E-82C5A0D52B73
 ms.date: 05/21/2018
 keywords: ["PcAllocateAndMapPages rule (audio)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: HwStorPortProhibitedDDIs rule (storport)
 description: This rule contains a list of WDM DDIs (excluding interlocked functions) that should not be called in physical StorPort miniport drivers.
-ms.assetid: E2093A43-7639-458E-95F7-A5BB2D7F7E9B
 ms.date: 05/21/2018
 keywords: ["HwStorPortProhibitedDDIs rule (storport)"]
 topic_type:

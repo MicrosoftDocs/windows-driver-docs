@@ -1,7 +1,6 @@
 ---
 title: Installing Serial Ports and COM Ports
 description: Installing Serial Ports and COM Ports
-ms.assetid: 9c755dfa-65e5-4ecb-8544-dd63c6b69c8e
 keywords:
 - serial ports WDK
 - COM ports WDK serial devices

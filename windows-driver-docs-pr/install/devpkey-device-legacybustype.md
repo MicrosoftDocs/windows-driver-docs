@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_LegacyBusType
 description: DEVPKEY_Device_LegacyBusType
-ms.assetid: 76c2a472-bb05-4f6a-84da-0ae9e7c1fdf1
 keywords: ["DEVPKEY_Device_LegacyBusType Device and Driver Installation"]
 topic_type:
 - apiref

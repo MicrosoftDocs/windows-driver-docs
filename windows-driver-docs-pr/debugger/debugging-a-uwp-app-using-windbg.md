@@ -1,7 +1,6 @@
 ---
 title: Debugging a UWP app using WinDbg
 description: You can debug Universal Windows Platform (UWP) app using WinDbg.
-ms.assetid: 1CE337AC-54C0-4EF5-A374-3ECF1D72BA60
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Debugging a UWP app using WinDbg
 
 
-You can debug Universal Windows Platform (UWP) app using WinDbg. This approach would typically be used for advanced scenarios, where it is not possible to complete the debugging task using the built in Visual Studio debugger. For more information about debugging in Visual Studio, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio?view=vs-2015).
+You can debug Universal Windows Platform (UWP) app using WinDbg. This approach would typically be used for advanced scenarios, where it is not possible to complete the debugging task using the built in Visual Studio debugger. For more information about debugging in Visual Studio, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).
 
 ## <span id="Attaching_to_a_UWP_app"></span><span id="attaching_to_a_uwp_app"></span><span id="ATTACHING_TO_A_UWP_APP"></span>Attaching to a UWP app
 

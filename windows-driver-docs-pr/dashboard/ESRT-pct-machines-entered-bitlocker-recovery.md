@@ -14,6 +14,8 @@ Percent of machines that installed firmware and entered bitlocker recovery causi
 
 The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that reported a bitlocker recovery event over the machines that attempted a firmware install
 
+Asking for the Bitlocker recovery key after a new firmware is most commonly due to the Platform Configuration Registers (PCR) 7 haveing unacceptable measurements for Bitlocker to seal, therefore Bitlocker reads legacy PCRs, which includes PCR 0. Since PCR 0 will change on a firmware update, Bitlocker will trigger recovery. To debug, look at one of these devices and see what is in PCR 7, then check if a component of the firmware package added any mechanism that would cause this condition (debug, dma protections off, option roms, 3rd party pre boot fw, etc.) to occur.
+
 ## Measure attributes
 
 |Attribute|Value|
@@ -21,9 +23,9 @@ The measure aggregates telemetry from a 28-day sliding window into a ratio of ma
 |**Audience**|Retail and Insider|
 |**Time period**|28 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum instances**|250|
-|**Passing criteria**|<= 10%|
-|**Measure ID**|23154031 or 23260740|
+|**Minimum instances**|170|
+|**Passing criteria**|<= 5%|
+|**Measure ID**|23260740|
 
 ## Calculation
 

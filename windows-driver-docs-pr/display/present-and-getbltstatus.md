@@ -1,7 +1,6 @@
 ---
 title: Present and GetBltStatus
 description: Present and GetBltStatus
-ms.assetid: 76fd88df-18a9-4f00-834d-6683788fc2f6
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , presentation
 - presentation WDK DirectX 8.0

@@ -1,7 +1,6 @@
 ---
 title: Bus-Master DMA in Video Miniport Drivers
 description: Bus-Master DMA in Video Miniport Drivers
-ms.assetid: fe6c2e16-d222-4948-b1df-34ed8d57d9d8
 keywords:
 - video miniport drivers WDK Windows 2000 , bus-master DMA
 - bus-master DMA WDK video miniport

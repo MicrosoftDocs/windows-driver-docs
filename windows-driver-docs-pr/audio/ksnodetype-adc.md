@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_ADC
 description: KSNODETYPE\_ADC
-ms.assetid: 534babaa-ef28-4c9a-8429-a52e77fc4d11
 keywords: ["KSNODETYPE_ADC Audio Devices"]
 topic_type:
 - apiref

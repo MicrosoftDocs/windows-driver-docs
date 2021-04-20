@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY
 description: Clients use KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY to inform the RF tuner node about the frequency of incoming RF signals at which the tuner should inform the low-noise block (LNB) device to switch from using low-band local oscillator frequency (LOF) to using high-band LOF or vice versa when the LNB shifts the frequency of RF signals.
-ms.assetid: a448bad1-40dc-4596-bc18-9522144e33a7
 keywords: ["KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref

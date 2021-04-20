@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_DATAINTERSECTION
 description: A client uses the KSPROPERTY\_PIN\_DATAINTERSECTION property to find a data format supported by pins instantiated by the pin factory. The client supplies a list of data formats; the KS filter returns the first data format on the list that is supported.
-ms.assetid: 447ac37b-1e5e-4812-9e1e-50e9f6f83118
 keywords: ["KSPROPERTY_PIN_DATAINTERSECTION Streaming Media Devices"]
 topic_type:
 - apiref

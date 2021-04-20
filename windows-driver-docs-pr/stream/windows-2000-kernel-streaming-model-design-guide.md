@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Kernel Streaming Model Design Guide
 description: Windows 2000 Kernel Streaming Model Design Guide
-ms.assetid: 7cc080ad-ce4a-4a08-917a-d9e4a002f4fa
 keywords:
 - streaming media WDK , Windows 2000 Kernel Streaming Model
 - media streaming WDK , Windows 2000 Kernel Streaming Model

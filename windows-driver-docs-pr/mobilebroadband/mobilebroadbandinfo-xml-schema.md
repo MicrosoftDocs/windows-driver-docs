@@ -1,7 +1,6 @@
 ---
 title: MobileBroadbandInfo XML schema overview
 description: MobileBroadbandInfo XML schema overview
-ms.assetid: fdbc340c-8fed-4a25-96c4-ec185af04de9
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x10A APP_TAGGING_INITIALIZATION_FAILED
 description: The APP_TAGGING_INITIALIZATION_FAILED bug check has a value of 0x0000010A.This bug check appears very infrequently.
-ms.assetid: 4ec74094-8b9a-4c04-9e40-6e9c1a45ae60
 keywords: ["Bug Check 0x10A APP_TAGGING_INITIALIZATION_FAILED", "APP_TAGGING_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

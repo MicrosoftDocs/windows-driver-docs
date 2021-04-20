@@ -1,7 +1,6 @@
 ---
 title: PackageStructure
 description: PackageStructure
-ms.assetid: 44be9d7d-79b0-49b6-b427-e729efadb88c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

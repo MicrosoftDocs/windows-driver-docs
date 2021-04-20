@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_WPD_PRIVATE
 description: GUID_DEVINTERFACE_WPD_PRIVATE
-ms.assetid: 50292137-d648-41cf-928e-d72549f6321b
 keywords: ["GUID_DEVINTERFACE_WPD_PRIVATE Device and Driver Installation"]
 topic_type:
 - apiref

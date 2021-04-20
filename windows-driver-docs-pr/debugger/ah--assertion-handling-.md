@@ -1,7 +1,6 @@
 ---
 title: ah (Assertion Handling)
 description: The ah command controls the assertion handling status for specific addresses.
-ms.assetid: a55aa34f-c861-45de-bacf-92549ab98fdc
 keywords: ["ah (Assertion Handling) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

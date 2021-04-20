@@ -1,7 +1,6 @@
 ---
 title: Default NDIS Port
 description: Default NDIS Port
-ms.assetid: a9edf83f-9226-4c75-a04e-1879a05df24c
 keywords:
 - ports WDK NDIS , default
 - NDIS ports WDK , default NDIS ports

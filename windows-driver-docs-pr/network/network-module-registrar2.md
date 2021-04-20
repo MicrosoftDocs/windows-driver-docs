@@ -1,7 +1,6 @@
 ---
 title: Network Module Registrar Topics
 description: Network Module Registrar Topics
-ms.assetid: 23c15c42-94aa-410b-8551-fafa8b24ad86
 keywords:
 - Network Module Registrar WDK
 - NMR WDK

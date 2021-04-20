@@ -1,7 +1,6 @@
 ---
 title: Writing a location sensor driver for Windows 8.1
 description: Writing a location sensor driver for Windows 8.1
-ms.assetid: 18852282-6529-4934-a448-b699e01987de
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -72,7 +71,7 @@ To support a civic address report, at least one of the following data fields is 
 
 - SENSOR\_DATA\_TYPE\_COUNTRY\_REGION
 
-To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](../sensors/sensor-category-loc.md) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/index) section.
+To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](../sensors/sensor-category-loc.md) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/_sensors/) section.
 
 When they are called through [**ISensorDriver::OnGetSupportedDataFields**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) through a variable named pKeyCollection.
 

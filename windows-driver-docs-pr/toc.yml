@@ -18,6 +18,8 @@
     href: installing-preview-versions-wdk.md
   - name: "Other WDK downloads"
     href: other-wdk-downloads.md
+  - name: "WDK known issues"
+    href: wdk-known-issues.md
 - name: "Bring up guide"
   href: bringup/index.md
 - name: "Developing, Testing, and Deploying Drivers"

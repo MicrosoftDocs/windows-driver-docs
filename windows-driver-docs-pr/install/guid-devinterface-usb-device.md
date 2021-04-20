@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_USB_DEVICE
 description: GUID_DEVINTERFACE_USB_DEVICE
-ms.assetid: 9a771eca-8ec5-4c69-8b1e-f01f548b5041
 keywords: ["GUID_DEVINTERFACE_USB_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -65,7 +64,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Header</p></td>
-<td align="left">Usbiodef.h (include Usbiodef.h, initguid.h)</td>
+<td align="left">Include initguid.h first, then include Usbiodef.h</td>
 </tr>
 </tbody>
 </table>

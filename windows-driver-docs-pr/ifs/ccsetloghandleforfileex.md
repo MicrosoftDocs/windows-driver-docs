@@ -1,7 +1,6 @@
 ---
 title: CcSetLogHandleForFileEx routine
 description: The CcSetLogHandleForFileEx routine sets a log handle for a file and tracking callback functions for the file log.
-ms.assetid: D56BEAC9-6AB8-44BA-ADFC-D2435A1458DB
 keywords: ["CcSetLogHandleForFileEx routine Installable File System Drivers"]
 topic_type:
 - apiref

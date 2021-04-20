@@ -1,7 +1,6 @@
 ---
 title: OID_SRIOV_READ_VF_CONFIG_SPACE
 description: An overlying driver issues an object identifier (OID) method request of OID_SRIOV_READ_VF_CONFIG_SPACE to read data from the PCI Express (PCIe) configuration space for a specified PCIe Virtual Function (VF) on the network adapter.
-ms.assetid: 48CD54F5-F18F-4BC1-A93A-A824EC041605
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_READ_VF_CONFIG_SPACE Network Drivers Starting with Windows Vista

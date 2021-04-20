@@ -1,7 +1,6 @@
 ---
 title: Disabling EA Recovery
 description: Disabling EA Recovery
-ms.assetid: a414f1b0-acfc-4617-bf68-202bdef829ce
 keywords:
 - display drivers WDK Windows 2000 , debugging
 - debugging drivers WDK Windows 2000 display

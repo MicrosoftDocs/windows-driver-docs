@@ -1,7 +1,6 @@
 ---
 title: Still Image Device Installers
 description: Still Image Device Installers
-ms.assetid: e0ea31de-063a-49a4-922f-62edb774ac76
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

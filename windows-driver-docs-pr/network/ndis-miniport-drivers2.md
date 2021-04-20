@@ -1,7 +1,6 @@
 ---
 title: Miniport drivers
 description: Miniport drivers
-ms.assetid: d0b8f143-2966-4338-9d2f-96e7e9216b3a
 keywords:
 - miniport drivers WDK networking , architecture
 - NDIS miniport drivers WDK , architecture

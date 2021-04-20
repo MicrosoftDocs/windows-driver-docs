@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS 6.83
 description: This section introduces NDIS 6.83 and describes changes from NDIS 6.82. NDIS 6.83 is included in Windows 10, version 1903.
-ms.assetid: FC90E212-6ED6-432C-8729-5239EF5FDD65
 ms.date: 05/03/2019
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DesktopAutoplayHandler
 description: DesktopAutoplayHandler
-ms.assetid: e1a07580-36dd-4618-b522-3f7605c9b87b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

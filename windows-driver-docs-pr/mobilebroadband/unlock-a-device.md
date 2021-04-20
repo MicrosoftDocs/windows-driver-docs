@@ -1,7 +1,6 @@
 ---
 title: Unlock a device
 description: Unlock a device
-ms.assetid: 4e6ed725-2384-429b-be1e-027b7784e95b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

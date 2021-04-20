@@ -1,7 +1,6 @@
 ---
 title: POOL_FLAGS
 description: Flags that indicate the type of pool memory, attributes the memory is required to have, and attributes the memory can optionally have.
-ms.assetid: 1eaee689-69fb-4720-adbc-b9db5fdc113a
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "I/O buffer memory allocations WDK kernel", "buffer memory allocations WDK kernel"]
 ms.date: 06/16/2020
 ms.localizationpriority: medium

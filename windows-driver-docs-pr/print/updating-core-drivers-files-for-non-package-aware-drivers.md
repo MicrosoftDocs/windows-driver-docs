@@ -1,7 +1,6 @@
 ---
 title: Updating Core Drivers Files for Non-Package-Aware Drivers
 description: Updating Core Drivers Files for Non-Package-Aware Drivers
-ms.assetid: ce5da376-edac-4cd1-8750-9981bb5b709d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: V4 Driver Manifest
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
-ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
 ms.date: 07/13/2018
 ms.localizationpriority: medium
 ---

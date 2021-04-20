@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID
 description: The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to inform a GFX filter of the Plug and Play device ID of the audio device that is the source of the capture stream.
-ms.assetid: df4505c5-f9ff-4f8a-8521-90031c0b23e4
 keywords: ["KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref

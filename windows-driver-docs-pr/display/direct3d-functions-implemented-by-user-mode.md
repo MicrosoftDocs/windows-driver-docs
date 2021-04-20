@@ -1,7 +1,6 @@
 ---
 title: Direct3D functions implemented by user-mode display drivers
 description: This topic describes functions that the user-mode display driver implements and supplies to the Microsoft Direct3D runtime, and that can be called by the operating system.
-ms.assetid: 6A9D0944-261D-4CAD-AD1B-601369D2FD68
 ms.date: 07/20/2020
 ms.localizationpriority: medium
 ---

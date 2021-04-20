@@ -1,7 +1,6 @@
 ---
 title: Installing Parallel Ports and Devices
 description: Installing Parallel Ports and Devices
-ms.assetid: 24bf2718-d369-48f1-9013-c8ca89269ca7
 keywords:
 - parallel devices WDK , installing
 - parallel ports WDK , installing
@@ -31,7 +30,7 @@ For more information about system support for parallel ports and devices attache
 
 [System-Supplied Parallel Drivers](system-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/index)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/_parports)
 
  
 

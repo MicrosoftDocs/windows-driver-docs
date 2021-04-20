@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi direct pairing implementation
 description: This section provides design guidelines and requirements for a peripheral device to participate in the Tap and Setup and Tap and Reconnect use cases.
-ms.assetid: 1B729E9F-DF9F-4263-9F0B-5EDCF817D2C3
 keywords:
 - NFC
 - near field communications
@@ -14,19 +13,15 @@ ms.localizationpriority: medium
 
 # Wi-Fi direct pairing implementation
 
-
 This section provides design guidelines and requirements for a peripheral device to participate in the Tap and Setup and Tap and Reconnect use cases.
 
-**Note**  The pairing implementation described in this topic is currently supported in Windows 8.1, for pairing to printer devices only.
+>[!NOTE]
+>The pairing implementation described in this topic is currently supported in Windows 8.1, for pairing to printer devices only.
 
- 
-
-**Note**  Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](https://www.wi-fi.org/).
-
- 
+>[!NOTE]
+>Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](https://www.wi-fi.org/).
 
 ## Peripheral Wi-Fi Direct Device Pairing
-
 
 During the tap, NFP receives pairing information from the connecting device. NFP passes the pairing information to Windows. Wi-Fi Direct devices follow the Wi-Fi Alliance Out-Of-Band (OOB) pairing procedure and the NFC Forum recommendations. Windows relies on a proprietary pairing message as defined below.
 
@@ -36,7 +31,6 @@ Using NFC as an example, unidirectional installation is accomplished by storing 
 
 ## Interoperability Requirements
 
-
 To ensure interoperability across NFP providers, the pairing information should be encapsulated in a provider-specific message format.
 
 As described elsewhere in this document, there are no specific requirements for proximity technologies other than for NFC-enabled NFP providers.
@@ -44,7 +38,6 @@ As described elsewhere in this document, there are no specific requirements for 
 Windows requires NFC-enabled NFP providers to support a specific NFC Forum–defined mechanism for conveying the Wi-Fi Direct OOB pairing information for unidirectional pairing. The NDEF message contains a first record with a TNF field value of 0x01 and a TYPE field that is equal to “Hs”, and an alternative carrier record that points to a Wi-Fi Direct Carrier Configuration Record. In this method, only the PAYLOAD of the NDEF record will be used.
 
 ## Unidirectional Pairing Using NFC for Wi-Fi Direct
-
 
 This section provides more details on how NFC, Wi-Fi Direct, and Windows work together to support unidirectional wireless pairing for Wi-Fi Direct devices such as printers.
 
@@ -64,8 +57,6 @@ In the sample use cases that follow, NFC type 2 tags are used as an illustrative
 | Type                  | 'application/vnd.ms-windows.wfd.oob'             | New type string we define for this scenario.                              |
 | Size of OOB data      | WORD                                             | Up to 64 KB of OOB data supported.                                        |
 | Wi-Fi Direct OOB data | &lt;blob of size indicated by previous field&gt; | Wi-Fi Direct OOB data as defined below.                                   |
-
- 
 
 ### Wi-Fi Direct OOB format
 
@@ -118,8 +109,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 </tbody>
 </table>
 
- 
-
 ### OOB Header attribute format
 
 | Field Name        | Size (octets) | Value    | Description                                                                                                    |
@@ -130,8 +119,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | OOB Type          | 1             | Variable | Value identifying the type of OOB transaction. The specific value is defined in *OOB Transaction Types* table. |
 | OUI               | 0 or 3        | Variable | Vendor-specific OUI. This is an optional value. Must only be present when OOB Type is Vendor Specific.         |
 | OUI Type          | 0 or 1        | Variable | Vendor-specific Type. This is an optional value. Must only be present when OOB Type is Vendor Specific.        |
-
- 
 
 ### OOB Transaction Types
 
@@ -144,8 +131,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | 0x04-0xDC      | Reserved                             |
 | 0xDD           | Vendor-Specific                      |
 | 0xDE-0xFF      | Reserved                             |
-
- 
 
 ### OOB Device info attribute format
 
@@ -192,7 +177,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 <strong>Note</strong>  Byte ordering within the Config Methods field shall be big-endian.
 </div>
 <div>
- 
 </div></td>
 </tr>
 <tr class="odd">
@@ -204,7 +188,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 <strong>Note</strong>  Byte ordering within the Primary Device Type field shall be big-endian.
 </div>
 <div>
- 
 </div></td>
 </tr>
 <tr class="even">
@@ -222,13 +205,10 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 <strong>Note</strong>  Byte ordering within the Device Name field shall be big-endian.
 </div>
 <div>
- 
 </div></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 ### P2P OOB Attributes
 
@@ -244,8 +224,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | 0xDD           | Vendor specific attribute |
 | 0xDE-0xFF      | Reserved                  |
 
- 
-
 ### OOB Provisioning Info attribute format
 
 | Field Name                   | Size (octets) | Value                   | Description                                                                                                                                                             |
@@ -256,8 +234,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | Selected Config Method       | 2             | As defined in P2P Spec. | The WSC Method that was selected by this P2P device for provisioning.                                                                                                   |
 | Pin Length                   | 1             | 0 - 8                   | Number of bytes in the following PIN Data field. This field set to 0 indicates no additional PIN data.                                                                  |
 | Pin Data                     | Variable      | n                       | This field is optional. This field is present only if the PIN Length field is not 0, and contains an array of octets which represent a PIN to be used for provisioning. |
-
- 
 
 ### Provisioning settings
 
@@ -298,8 +274,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 </tbody>
 </table>
 
- 
-
 ### OOB Configuration Timeout attribute format
 
 | Field Name                     | Size (octets) | Value   | Description                                                                                                                                                        |
@@ -307,8 +281,6 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | Attribute ID                   | 1             | 5       | Identifying the type of P2P OOB attribute. The specific value is defined in *P2P OOB Attributes* table.                                                            |
 | Length                         | 2             | 1       | Length of the following fields in the attribute.                                                                                                                   |
 | Listener Configuration Timeout | 1             | 0 - 255 | Amount of time this P2P device will spend waiting for Wi-Fi Direct communication after OOB data transfer, in units of 100 milliseconds. (Maximum of 25.5 seconds). |
-
- 
 
 ### Windows Device Pairing Record
 
@@ -382,9 +354,7 @@ The Windows Device Pairing Record follows the NDEF specification. It provides ad
 </tbody>
 </table>
 
- 
-
-### <a href="" id="wi-fi-direct--just-works--ceremony--static-connection-handover-tag-format"></a>Wi-Fi Direct “Just Works” ceremony, Static Connection Handover tag format
+### Wi-Fi Direct “Just Works” ceremony, Static Connection Handover tag format
 
 As an example, the following is a typical implementation for an NFC passive tag. This corresponds to a static connection handover case with a Wi-Fi Direct carrier record, a network share printer, and the ms-device pairing record.
 
@@ -674,8 +644,6 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 </tbody>
 </table>
 
- 
-
 This second table illustrates the format of the network printer pairing portion of the tag.
 
 <table>
@@ -743,8 +711,6 @@ This second table illustrates the format of the network printer pairing portion 
 </tr>
 </tbody>
 </table>
-
- 
 
 This third table illustrates the format of the MS-Device pairing portion of the tag.
 
@@ -828,15 +794,11 @@ This third table illustrates the format of the MS-Device pairing portion of the 
 </tbody>
 </table>
 
- 
-
 ## Wi-Fi Direct Connectivity Requirements
-
 
 Devices and clients must have the Wi-Fi radio turned on. If not, pairing will fail.
 
 ## Handling Edge Cases
-
 
 If a user has previously paired a device, but then manually removes the device from the device list, tapping again will result in an attempt to install or pair.
 
@@ -848,8 +810,6 @@ If a user taps two devices at approximately the same time, only the pairing for 
 
 Any attempt to tap the device on a system running an operating system that doesn’t support Tap to Setup or Tap to Reconnect may result in the device going into connectable mode but pairing will not take place. Users will need to use a pairing UI provided for Bluetooth and use the pairing button to initiate pairing.
 
- 
-
- 
 ## Related topics
+
  [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)  

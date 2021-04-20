@@ -1,7 +1,6 @@
 ---
 title: INF Files for PSHED Plug-Ins
 description: INF Files for PSHED Plug-Ins
-ms.assetid: 60bb9902-c558-4ee1-9b33-1a08885e7c06
 keywords:
 - PSHED plug-ins WDK WHEA , INF files
 - platform-specific hardware error driver plug-ins WDK WHEA , INF files

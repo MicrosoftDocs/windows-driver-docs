@@ -1,7 +1,6 @@
 ---
 title: Required WIA Child Item Properties for Film Scanners
 description: Required WIA Child Item Properties for Film Scanners
-ms.assetid: 3b12299a-0b01-492c-a79d-45ddc3c193bb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

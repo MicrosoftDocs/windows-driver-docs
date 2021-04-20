@@ -1,7 +1,6 @@
 ---
 title: ControlDeviceInitAPI rule (kmdf)
 description: The ControlDeviceInitAPI rule specifies that WdfControlDeviceInitAllocate and all other device object initialization DDIs that set up a WDFDEVICE\_INIT structure for the control device must be called before WdfDeviceCreate for the control device.
-ms.assetid: 136ee6d8-d104-4ae8-a3f7-d93179808e29
 ms.date: 05/21/2018
 keywords: ["ControlDeviceInitAPI rule (kmdf)"]
 topic_type:

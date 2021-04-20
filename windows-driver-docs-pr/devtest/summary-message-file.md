@@ -1,7 +1,6 @@
 ---
 title: Summary Message File
 description: Summary Message File
-ms.assetid: 90d82aee-5836-4f69-8e52-48400e1445cc
 keywords:
 - Tracefmt WDK , summary message files
 - summary message files WDK Tracefmt

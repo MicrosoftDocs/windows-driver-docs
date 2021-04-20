@@ -1,7 +1,6 @@
 ---
 title: Introduction to Print Providers
 description: Introduction to Print Providers
-ms.assetid: a0e5e8c8-7af4-4715-9036-64ae851b307d
 keywords:
 - print providers WDK , about print providers
 - print jobs WDK , print providers

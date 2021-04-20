@@ -1,7 +1,6 @@
 ---
 title: Building SDP Records
 description: Building SDP Records
-ms.assetid: ca3c0483-6193-4683-94bb-15466a8f332e
 keywords:
 - Bluetooth WDK , SDP server communication
 - SDP WDK Bluetooth

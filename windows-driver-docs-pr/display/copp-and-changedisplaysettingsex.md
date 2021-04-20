@@ -1,7 +1,6 @@
 ---
 title: COPP and ChangeDisplaySettingsEx
 description: COPP and ChangeDisplaySettingsEx
-ms.assetid: 5c729bfd-0758-4de5-9e81-a3279f8aab56
 keywords:
 - copy protection WDK COPP , ChangeDisplaySettingsEx
 - video copy protection WDK COPP , ChangeDisplaySettingsEx

@@ -1,7 +1,6 @@
 ---
 title: DDI usage rule set (NDIS)
 description: Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
-ms.assetid: A109A452-D3A7-4204-B267-1F0F98652597
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

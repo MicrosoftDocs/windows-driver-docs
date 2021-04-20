@@ -1,7 +1,6 @@
 ---
 title: Querying for the Write Cache Property
 description: Querying for the Write Cache Property
-ms.assetid: 80b7c366-3b54-4dae-8ac7-63caaa1767f9
 keywords:
 - storage drivers WDK , write cache
 - write cache WDK storage

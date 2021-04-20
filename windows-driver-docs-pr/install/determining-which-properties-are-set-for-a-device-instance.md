@@ -1,7 +1,6 @@
 ---
 title: Determining Which Properties Are Set for a Device Instance
 description: Determining Which Properties Are Set for a Device Instance
-ms.assetid: aeca4da5-9632-4523-aa2d-8d1c64b1eccc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID
 description: The KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID property is used to inform a GFX filter of the Plug and Play device ID of the audio device that renders the final audio mix.
-ms.assetid: 66251f22-a2e3-453e-985a-74ff18a60e66
 keywords: ["KSPROPERTY_AUDIOGFX_RENDERTARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref

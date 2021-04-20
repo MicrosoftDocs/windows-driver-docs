@@ -1,7 +1,6 @@
 ---
 title: Driver Initialization and Cleanup
 description: Driver Initialization and Cleanup
-ms.assetid: 57f22818-a298-4f9a-87a6-5ca4d97bf32b
 keywords:
 - drawing WDK GDI , initialization, description
 - initializing graphics drivers WDK Windows 2000 display , description

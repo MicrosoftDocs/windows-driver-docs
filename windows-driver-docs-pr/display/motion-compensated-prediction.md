@@ -1,7 +1,6 @@
 ---
 title: Motion-Compensated Prediction
 description: Motion-Compensated Prediction
-ms.assetid: 02706369-2d99-4ac9-8dad-9e431acff42f
 keywords:
 - MCP WDK DirectX VA
 - motion compensation WDK DirectX VA

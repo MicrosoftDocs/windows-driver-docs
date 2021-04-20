@@ -1,7 +1,6 @@
 ---
 title: Setting Attributes on a Parallel Device
 description: Setting Attributes on a Parallel Device
-ms.assetid: 10df9a1b-99ec-46b1-b515-10fb20fe2aed
 keywords:
 - parallel devices WDK , attributes
 - attributes WDK parallel devices

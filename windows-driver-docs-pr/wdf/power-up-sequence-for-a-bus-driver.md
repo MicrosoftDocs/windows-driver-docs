@@ -1,7 +1,6 @@
 ---
 title: Power-Up Sequence for a Bus Driver
 description: Power-Up Sequence for a Bus Driver
-ms.assetid: 689746F4-E1A5-40BA-9FC4-29B0702D6E3E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

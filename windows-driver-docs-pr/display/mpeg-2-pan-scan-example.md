@@ -1,7 +1,6 @@
 ---
 title: MPEG-2 Pan-Scan Example
 description: MPEG-2 Pan-Scan Example
-ms.assetid: 6ce4722c-5406-4b29-9171-ecab049320e7
 keywords:
 - alpha-blend combination WDK DirectX VA , MPEG-2 pan-scan example
 - blended pictures WDK DirectX VA , MPEG-2 pan-scan example

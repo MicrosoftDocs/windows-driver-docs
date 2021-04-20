@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_SynthClock
 description: KSPROPSETID\_SynthClock
-ms.assetid: 8baad0d2-ea86-4d27-8fb0-03cdd9e978f0
 keywords: ["KSPROPSETID_SynthClock"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

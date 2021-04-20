@@ -1,7 +1,6 @@
 ---
 title: Architecture of UMDF
 description: This topic describes how the driver manager builds a user-mode device stack, and how the host process, reflector, and driver manager process an I/O request that an application sends to a User-Mode Driver Framework (UMDF) driver.
-ms.assetid: 118e5fe8-ba1e-4012-9632-fd92f4cee6f1
 keywords:
 - User-Mode Driver Framework WDK , architecture
 - UMDF WDK , architecture

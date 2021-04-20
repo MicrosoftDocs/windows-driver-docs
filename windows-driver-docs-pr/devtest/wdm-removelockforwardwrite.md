@@ -1,7 +1,6 @@
 ---
 title: RemoveLockForwardWrite rule (wdm)
 description: The RemoveLockForwardWrite rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding a IRP using IoCallDriver to a another device.
-ms.assetid: C6992FCE-02F0-4C2C-9FEB-CE7627CE26A9
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardWrite rule (wdm)"]
 topic_type:

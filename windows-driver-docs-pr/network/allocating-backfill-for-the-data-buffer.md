@@ -1,7 +1,6 @@
 ---
 title: Allocating Backfill for the Data Buffer
 description: Allocating Backfill for the Data Buffer
-ms.assetid: 2588986d-8d51-4f34-a3b9-d0df406afcba
 keywords:
 - header-data split WDK , backfill allocation
 - backfill space allocations WDK header-data split

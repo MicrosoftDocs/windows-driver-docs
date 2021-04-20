@@ -1,7 +1,6 @@
 ---
 title: WindowsInfo XML elements list
 description: WindowsInfo XML elements list
-ms.assetid: 045f149a-4bd5-4f33-a18f-39953f2e5e19
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

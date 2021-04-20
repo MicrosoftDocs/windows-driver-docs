@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /displayorder
 description: The displayorder command sets the display order to be used by the boot manager.
-ms.assetid: 6e2fcde1-f2f8-434d-80d5-d74f32831bfe
 ms.date: 09/23/2020
 keywords: ["BCDEdit /displayorder Driver Development Tools"]
 topic_type:
@@ -34,7 +33,7 @@ and they must be separated by spaces.  For more information about identifiers, r
 single entry identifier may be specified.  If the specified identifier is already in the list, it will be moved to the
 top of the list.
 
-**/addlastAdds** the specified entry identifier to the end of the display order.  If this switch is specified, only a
+**/addlast**  Adds the specified entry identifier to the end of the display order.  If this switch is specified, only a
 single entry identifier may be specified.  If the specified identifier is already in the list, it is moved to the
 end of the list.
 

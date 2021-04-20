@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans callback notifications
 description: Learn about the Callback notifications support by the Mobile Plans app. See code examples and view additional available information.
-ms.assetid: A3CE0B7D-80C5-4A98-8615-250A3C760B85
 keywords:
 - Windows Mobile Plans Callback notifications, Mobile Plans implementation mobile operators
 ms.date: 05/24/2019

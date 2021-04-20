@@ -1,7 +1,6 @@
 ---
 title: Data Set Management (DSM) Overview
 description: Management actions can be performed on a device's data-set attributes as data set management (DSM) actions.:"?ASQ
-ms.assetid: cc64c7ad-7d1c-45c7-b236-a43e57086f8d
 keywords: Storage Data Set Management Actions, Data Set Management Actions, DSM Actions
 ms.localizationpriority: medium
 ms.date: 08/23/2019

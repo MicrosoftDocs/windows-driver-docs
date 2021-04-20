@@ -1,7 +1,6 @@
 ---
 title: Status Indications in a Protocol Driver
 description: Status Indications in a Protocol Driver
-ms.assetid: 4b0426bb-4311-4251-b9ee-38d081f061e5
 keywords:
 - protocol drivers WDK networking , status indications
 - NDIS protocol drivers WDK , status indications

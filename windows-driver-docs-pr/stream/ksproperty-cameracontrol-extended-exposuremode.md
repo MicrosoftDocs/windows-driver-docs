@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_EXPOSUREMODE
 description: The exposure control property specifies the whether auto processing occurs for exposure or a manual time value is used instead.
-ms.assetid: 54D4F286-09F2-48B5-9A7A-9445999972BD
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE Streaming Media Devices"]
 topic_type:
 - apiref

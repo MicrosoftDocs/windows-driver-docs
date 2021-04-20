@@ -1,7 +1,6 @@
 ---
 title: About Network Virtualization using Generic Routing Encapsulation (NVGRE)
 description: This section describes Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
-ms.assetid: D1BE5659-4491-411B-9D32-9CB7A141A240
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

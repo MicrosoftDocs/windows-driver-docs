@@ -1,7 +1,6 @@
 ---
 title: Desktop Layout
 description: Desktop Layout
-ms.assetid: f1c074ec-2fce-4e46-ba0d-62e05ca8a9e7
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, desktop layout
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout

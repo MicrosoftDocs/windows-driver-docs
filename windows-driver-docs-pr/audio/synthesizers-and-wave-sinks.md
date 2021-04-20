@@ -1,7 +1,6 @@
 ---
 title: Synthesizers and Wave Sinks
 description: Synthesizers and Wave Sinks
-ms.assetid: ddcb847e-d46e-4860-9be9-4480e5a6b710
 keywords:
 - DirectMusic custom rendering WDK audio , synthesizers
 - custom rendering in user mode WDK audio , synthesizers

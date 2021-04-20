@@ -1,7 +1,6 @@
 ---
 title: DVD 16 9 Letterbox Height in 4 3 Example
 description: DVD 16 9 Letterbox Height in 4 3 Example
-ms.assetid: 67e5e50e-5102-4392-9430-feddc9609f2e
 keywords:
 - alpha-blend combination WDK DirectX VA , DVD 16 9 letterbox height example
 - blended pictures WDK DirectX VA , DVD 16 9 letterbox height example

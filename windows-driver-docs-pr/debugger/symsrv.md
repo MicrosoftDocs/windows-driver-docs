@@ -1,7 +1,6 @@
 ---
 title: SymSrv symbol server DLL
 description: SymSrv (symsrv.dll) is a symbol server that is included in the Debugging Tools for Windows package.
-ms.assetid: 43bcb5b5-cf00-4fc9-99cc-fb5c122fbde1
 keywords: ["SymSrv, using", "symbol servers, SymSrv (symsrv.dll)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

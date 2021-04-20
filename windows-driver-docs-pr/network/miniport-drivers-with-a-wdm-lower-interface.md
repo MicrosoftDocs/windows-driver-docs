@@ -1,7 +1,6 @@
 ---
 title: Overview of Miniport Drivers with a WDM Lower Interface
 description: Overview of Miniport Drivers with a WDM Lower Interface
-ms.assetid: defa955b-c1d2-4c78-a983-584aedc8a1a3
 keywords:
 - miniport drivers WDK networking , WDM lower interface
 - NDIS miniport drivers WDK , WDM lower interface

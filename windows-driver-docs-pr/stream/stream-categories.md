@@ -1,7 +1,6 @@
 ---
 title: Stream Categories
 description: Stream Categories
-ms.assetid: dc2af282-4976-42d8-b07b-13b2a6dfb7d5
 keywords:
 - video capture WDK AVStream , stream categories
 - capturing video WDK AVStream , stream categories

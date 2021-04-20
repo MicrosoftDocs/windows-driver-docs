@@ -1,7 +1,6 @@
 ---
 title: Removing a NIC
 description: Removing a NIC
-ms.assetid: eaa4b784-4375-465d-9ef5-99b38b7fd15a
 keywords:
 - NICs WDK networking , removing
 - network interface cards WDK networking , removing

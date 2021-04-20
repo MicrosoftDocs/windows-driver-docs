@@ -1,7 +1,6 @@
 ---
 title: Requirements for a Non-PCM Pin Factory
 description: Requirements for a Non-PCM Pin Factory
-ms.assetid: 3ba5da2e-f96f-4645-8a37-dd985287a9f2
 keywords:
 - non-PCM audio formats WDK , pin factories
 - pin factories WDK audio

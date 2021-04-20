@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's Support of I/O Requests
 description: Storage Class Driver's Support of I/O Requests
-ms.assetid: 046b7978-49ee-4e3e-a85f-f6ad327b91bf
 keywords:
 - storage class drivers WDK , I/O request support
 - class drivers WDK storage , I/O request support

@@ -1,7 +1,6 @@
 ---
 title: Understanding Volume Enumerations with Duplicate Volume Names
 description: Understanding Volume Enumerations with Duplicate Volume Names
-ms.assetid: c05982dc-4124-4f9a-93b8-0e56ac296d1b
 keywords:
 - volumes WDK file system , duplicate names
 - volumes WDK file system , enumerating

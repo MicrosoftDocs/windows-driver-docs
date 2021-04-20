@@ -1,7 +1,6 @@
 ---
 title: WaveCyclic Latency
 description: WaveCyclic Latency
-ms.assetid: 6de639c6-ddd5-4013-8d67-00731c328f47
 keywords:
 - WaveCyclic latency WDK audio
 - silence intervals WDK audio

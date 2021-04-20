@@ -1,7 +1,6 @@
 ---
 title: Getting started writing NDIS Intermediate Drivers
 description: Getting started writing NDIS Intermediate Drivers
-ms.assetid: c37224b2-8d96-44c2-8b56-884089b9cfcd
 keywords:
 - intermediate drivers WDK networking
 - network drivers WDK , intermediate drivers

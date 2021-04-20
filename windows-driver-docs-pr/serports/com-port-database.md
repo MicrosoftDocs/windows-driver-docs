@@ -1,7 +1,6 @@
 ---
 title: COM Port Database
 description: COM Port Database
-ms.assetid: c9baf147-6e33-4ed2-b682-c141938eb0da
 keywords:
 - COM ports WDK serial devices
 - serial devices WDK , COM ports

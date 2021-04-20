@@ -1,7 +1,6 @@
 ---
 title: COPP and Display Modes
 description: COPP and Display Modes
-ms.assetid: e7da753d-0ccd-428e-b51f-3fd0a19674e8
 keywords:
 - copy protection WDK COPP , display modes
 - video copy protection WDK COPP , display modes

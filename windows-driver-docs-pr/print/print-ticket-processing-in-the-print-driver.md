@@ -1,7 +1,6 @@
 ---
 title: Print Ticket Processing in the Print Driver
 description: Print Ticket Processing in the Print Driver
-ms.assetid: a7295632-0133-4133-b62e-5526dcc12c7d
 keywords:
 - Print Tickets WDK , print driver processing
 - Print Tickets WDK , XPSDrv

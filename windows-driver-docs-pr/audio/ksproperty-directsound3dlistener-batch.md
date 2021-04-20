@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH property specifies the batch-mode setting for a 3D listener.
-ms.assetid: 370191f8-e5a2-40f0-a979-c14cf7f44756
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_BATCH Audio Devices"]
 topic_type:
 - apiref

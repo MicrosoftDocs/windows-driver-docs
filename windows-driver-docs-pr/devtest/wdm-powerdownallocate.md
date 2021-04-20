@@ -1,7 +1,6 @@
 ---
 title: PowerDownAllocate rule (wdm)
 description: The PowerDownAllocate rule specifies that an FDO and FIDO driver should not allocate memory when processing an IRP\_MN\_SET\_POWER request for a SystemPowerState transition that goes from s0 to \ S1...S5\ .
-ms.assetid: 01737B5F-C1DF-4012-85F2-E9B7517EA53A
 ms.date: 05/21/2018
 keywords: ["PowerDownAllocate rule (wdm)"]
 topic_type:

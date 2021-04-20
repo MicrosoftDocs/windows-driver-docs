@@ -1,7 +1,6 @@
 ---
 title: USBCAMD2 Minidriver Operation
 description: USBCAMD2 Minidriver Operation
-ms.assetid: 395612cd-3407-4b42-b3a5-0afa838e73d9
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
 - Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library

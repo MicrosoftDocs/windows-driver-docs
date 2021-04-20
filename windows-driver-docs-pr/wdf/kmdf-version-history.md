@@ -1,7 +1,6 @@
 ---
 title: KMDF Version History
 description: This topic lists versions of Kernel-Mode Driver Framework (KMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
-ms.assetid: b920937c-2e5d-48cc-81b5-1462f5d03d75
 keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history

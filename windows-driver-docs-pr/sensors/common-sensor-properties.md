@@ -1,7 +1,6 @@
 ---
 title: Common sensor properties
 description: This topic describes the sensor properties that are common for all sensors.
-ms.assetid: 3E4DD221-BA8E-446E-BA7A-EF84DFED332F
 ms.date: 01/04/2018
 ms.localizationpriority: medium
 ---

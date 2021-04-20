@@ -1,7 +1,6 @@
 ---
 title: Transitioning to a Sleeping State
 description: Transitioning to a Sleeping State
-ms.assetid: cea326dd-7235-41a3-ad37-19549533a8dd
 keywords:
 - network interface cards WDK networking , transitioning power states
 - NICs WDK networking , transitioning power states

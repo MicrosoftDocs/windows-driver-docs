@@ -1,7 +1,6 @@
 ---
 title: Extending Wireless Connection Properties
 description: Extending Wireless Connection Properties
-ms.assetid: 77efa8f8-0b94-46b7-89d1-ec9c2c180845
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , wireless connection properties
 - wireless connection properties WDK Native 802.11 IHV UI Extensions DLL

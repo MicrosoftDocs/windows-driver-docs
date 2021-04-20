@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdflogdump
 description: The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. 
-ms.assetid: da03fafe-4cc8-4da6-9795-828e69e0df20
 keywords: ["wdfkd.wdflogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

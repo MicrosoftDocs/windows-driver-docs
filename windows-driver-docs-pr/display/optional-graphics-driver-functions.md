@@ -1,7 +1,6 @@
 ---
 title: Optional Graphics Driver Functions
 description: Optional Graphics Driver Functions
-ms.assetid: 3cdef152-4bcc-426a-9aa7-fd94acf2331f
 keywords:
 - GDI WDK Windows 2000 display , functions, optional
 - graphics drivers WDK Windows 2000 display , functions, optional

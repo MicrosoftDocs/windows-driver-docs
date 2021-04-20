@@ -1,7 +1,6 @@
 ---
 title: Setting Breakpoints in Visual Studio
 description: The procedure covers Setting Breakpoints in Visual Studio.
-ms.assetid: 503CAAEB-B400-4941-A0AE-B3C5CC8C364B
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Paletted Textures
 description: Paletted Textures
-ms.assetid: eac46256-db08-4a9b-aaaf-2bc8a9f30e98
 keywords:
 - texture management WDK Direct3D , paletted textures
 - paletted textures WDK Direct3D

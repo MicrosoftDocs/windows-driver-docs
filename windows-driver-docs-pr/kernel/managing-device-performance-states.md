@@ -1,7 +1,6 @@
 ---
 title: Managing Device Performance States
 description: Managing Device Performance States
-ms.assetid: 5a4cc09a-e86e-4e5a-98b2-0351b253b5b6
 keywords: ["power management WDK kernel , device performance states", "device performance states WDK power management", "performance states WDK power management", "custom power settings WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

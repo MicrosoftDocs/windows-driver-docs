@@ -1,7 +1,6 @@
 ---
 title: Page Size and Orientation
 description: Page Size and Orientation
-ms.assetid: f744a00c-8614-4488-9a29-d193a0c4268f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

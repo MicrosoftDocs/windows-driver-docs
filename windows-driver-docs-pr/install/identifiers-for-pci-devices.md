@@ -1,7 +1,6 @@
 ---
 title: Identifiers for PCI Devices
 description: Identifiers for PCI Devices
-ms.assetid: 58d52af8-9afd-441f-9ed9-92f9e2775226
 keywords:
 - device identification strings WDK , PCI devices
 - identification strings WDK device , PCI devices

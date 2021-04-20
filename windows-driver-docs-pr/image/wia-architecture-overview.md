@@ -1,7 +1,6 @@
 ---
 title: WIA Architecture Overview
 description: WIA Architecture Overview
-ms.assetid: 47f44042-f22b-4ee0-88c5-fc977bf13791
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

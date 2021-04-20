@@ -1,7 +1,6 @@
 ---
 title: Detecting Tuner Standards
 description: Detecting Tuner Standards
-ms.assetid: 02923d8f-d8a2-427d-8957-2ffb0273b84a
 keywords:
 - formats WDK video capture
 - TV signal formats WDK video capture

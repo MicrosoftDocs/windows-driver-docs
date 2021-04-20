@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE property specifies the processing mode of a 3D sound buffer.
-ms.assetid: a3b15544-c534-47ea-a02e-5c8f9ccee414
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_MODE Audio Devices"]
 topic_type:
 - apiref

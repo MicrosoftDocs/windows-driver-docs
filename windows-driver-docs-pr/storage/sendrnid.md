@@ -1,7 +1,6 @@
 ---
 title: SendRNID function
 description: The SendRNID WMI method sends a request node identification data (RNID) command to the indicated port.
-ms.assetid: 70c9655c-aaa8-45bb-ae5b-7428d9cdd4b2
 keywords: ["SendRNID function Storage Devices"]
 topic_type:
 - apiref

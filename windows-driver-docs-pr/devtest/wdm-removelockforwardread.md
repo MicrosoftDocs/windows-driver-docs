@@ -1,7 +1,6 @@
 ---
 title: RemoveLockForwardRead rule (wdm)
 description: The RemoveLockForwardRead rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in correctly.
-ms.assetid: 1C33E629-13BA-44F7-8B6E-5FEF7C021CDE
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardRead rule (wdm)"]
 topic_type:

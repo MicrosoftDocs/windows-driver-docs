@@ -1,7 +1,6 @@
 ---
 title: INF AddEventProvider Directive
 description: An AddEventProvider directive is used within an INF DDInstall.Events section.
-ms.assetid:
 keywords:
 - INF AddEventProvider Directive Device and Driver Installation
 topic_type:

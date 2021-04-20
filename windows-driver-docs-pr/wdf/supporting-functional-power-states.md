@@ -1,7 +1,6 @@
 ---
 title: Supporting Functional Power States
 description: Supporting Functional Power States
-ms.assetid: F96214C9-702D-402E-B873-5DF57C521B34
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

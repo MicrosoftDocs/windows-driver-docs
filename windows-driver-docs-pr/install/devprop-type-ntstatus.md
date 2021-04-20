@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_NTSTATUS
 description: The DEVPROP_TYPE_NTSTATUS identifier represents the base-data-type identifier for the NTSTATUS status code values that are defined in Ntstatus.h.
-ms.assetid: 7593d24d-8e89-409e-9047-0c14268b8e62
 keywords: ["DEVPROP_TYPE_NTSTATUS Device and Driver Installation"]
 topic_type:
 - apiref

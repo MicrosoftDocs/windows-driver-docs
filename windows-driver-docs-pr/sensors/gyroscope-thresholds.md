@@ -1,7 +1,6 @@
 ---
 title: Gyroscope thresholds
 description: This topic provides information about the gyroscope thresholds.
-ms.assetid: 68B11108-CA1A-4A49-BC44-4E9FE09955A9
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

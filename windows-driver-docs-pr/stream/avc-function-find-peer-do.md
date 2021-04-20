@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_FIND\_PEER\_DO
 description: AVC\_FUNCTION\_FIND\_PEER\_DO
-ms.assetid: a21dde69-f005-4782-97d9-095a57b2b1a5
 keywords: ["AVC_FUNCTION_FIND_PEER_DO Streaming Media Devices"]
 topic_type:
 - apiref

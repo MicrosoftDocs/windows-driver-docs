@@ -1,7 +1,6 @@
 ---
 title: Sensor driver best practices
 description: Sensor driver best practices
-ms.assetid: adb20558-aa94-41a9-9d26-9d757bdb0999
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_DECIMATIONCAPABILITY
 description: The KSPROPERTY\_VPCONFIG\_DECIMATIONCAPABILITY property indicates if the size of the video image can be reduced by the hardware.
-ms.assetid: a929b154-165e-4075-9295-d34fecc8e18d
 keywords: ["KSPROPERTY_VPCONFIG_DECIMATIONCAPABILITY Streaming Media Devices"]
 topic_type:
 - apiref

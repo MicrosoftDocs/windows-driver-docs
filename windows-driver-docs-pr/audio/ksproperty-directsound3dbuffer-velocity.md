@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_VELOCITY
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_VELOCITY property specifies the velocity of a 3D sound buffer.
-ms.assetid: 34afca42-0280-4d54-922d-f204cbfec084
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_VELOCITY Audio Devices"]
 topic_type:
 - apiref

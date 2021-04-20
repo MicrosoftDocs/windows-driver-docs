@@ -1,7 +1,6 @@
 ---
 title: bugdump
 description: The bugdump extension formats and displays the information contained in the bug check callback buffers.
-ms.assetid: cbea92de-e45b-416c-87f1-6faba95788d0
 keywords: ["bugdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

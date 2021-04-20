@@ -41,7 +41,7 @@ The WDTF runtime library includes tools to help you triage and run tests.
 
 When you set up a test computer for deployment, the WDTF runtime library is installed on the test computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10 and WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
 
-<!-- [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8) -->
+<!-- [Provision a computer for driver deployment and testing (WDK 8)](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8) -->
 
 You can also install the WDTF runtime library manually.
 

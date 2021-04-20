@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_READ
 description: AVCSTRM\_READ
-ms.assetid: 0bc0c8ae-15b8-4f52-b081-f3eb31ac4478
 keywords: ["AVCSTRM_READ Streaming Media Devices"]
 topic_type:
 - apiref

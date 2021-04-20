@@ -1,7 +1,6 @@
 ---
 title: Driver protection
 description: Along with every virtual address, the video memory manager allows independent hardware vendors (IHVs) to define a driver / hardware specific protection (i.e.
-ms.assetid: 3D636BD1-683D-49B4-A7E5-176853EA11EE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

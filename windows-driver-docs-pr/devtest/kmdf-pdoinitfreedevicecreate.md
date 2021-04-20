@@ -1,7 +1,6 @@
 ---
 title: PdoInitFreeDeviceCreate rule (kmdf)
 description: The PdoInitFreeDeviceCreate rule specifies that a driver must call WdfDeviceInitFree instead of WdfDeviceCreate if an error occurs in one of the device object initialization functions and if the driver received the WDFDEVICE\_INIT structure from a call to WdfPdoInitAllocate.
-ms.assetid: d73401dd-ec96-4870-9f6d-aa399deab173
 ms.date: 05/21/2018
 keywords: ["PdoInitFreeDeviceCreate rule (kmdf)"]
 topic_type:

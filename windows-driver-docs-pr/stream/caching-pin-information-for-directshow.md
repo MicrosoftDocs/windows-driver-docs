@@ -1,7 +1,6 @@
 ---
 title: Caching Pin Information for DirectShow
 description: Caching Pin Information for DirectShow
-ms.assetid: 1e6a973b-32d2-4ac2-9cd6-f4d3c329cecf
 keywords:
 - pin data cache WDK BDA
 - cache WDK AVStream

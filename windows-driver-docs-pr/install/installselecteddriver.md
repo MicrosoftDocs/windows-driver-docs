@@ -1,7 +1,6 @@
 ---
 title: InstallSelectedDriver function
 description: The InstallSelectedDriver function installs a selected driver on a selected device.
-ms.assetid: 8a27f4bb-6d1e-4fe8-810f-23513418254d
 keywords: ["InstallSelectedDriver function Device and Driver Installation"]
 topic_type:
 - apiref

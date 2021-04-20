@@ -1,7 +1,6 @@
 ---
 title: USB Video Class Driver Overview
 description: USB Video Class driver overview
-ms.assetid: 890d448e-bfee-462d-8cce-a2cca42f2f6d
 keywords:
 - USB Video Class drivers WDK AVStream , about USB Video Class drivers
 - Video Class drivers WDK USB , about USB Video Class drivers

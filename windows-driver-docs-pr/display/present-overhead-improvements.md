@@ -1,6 +1,5 @@
 ---
 title: Present overhead improvements
-ms.assetid: 92B282D6-0D04-4352-AE03-E0A7A43711E7
 description: Improvements to internal swap buffers to reduce GPU processing loads
 ms.date: 04/20/2017
 ms.localizationpriority: medium

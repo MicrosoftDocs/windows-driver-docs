@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_NAME
 description: The client uses KSPROPERTY\_PIN\_NAME to retrieve the Registry name of a pin factory. This is a localized Unicode string.
-ms.assetid: 763c3116-95f5-4d32-8c46-d8d91f537bd4
 keywords: ["KSPROPERTY_PIN_NAME Streaming Media Devices"]
 topic_type:
 - apiref

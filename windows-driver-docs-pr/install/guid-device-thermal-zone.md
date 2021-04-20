@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_THERMAL_ZONE
 description: GUID_DEVICE_THERMAL_ZONE
-ms.assetid: bbb9abb8-aaff-4f1c-ba8d-96fc5b69676a
 keywords: ["GUID_DEVICE_THERMAL_ZONE Device and Driver Installation"]
 topic_type:
 - apiref

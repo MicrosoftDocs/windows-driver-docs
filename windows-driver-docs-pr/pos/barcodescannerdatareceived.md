@@ -1,7 +1,6 @@
 ---
 title: BarcodeScannerDataReceived
 description: The BarcodeScannerDataReceived event occurs after a successful scan event.
-ms.assetid: '3dd7699a-5e2b-484b-bd83-c37ee7f0e851'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

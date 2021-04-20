@@ -1,7 +1,6 @@
 ---
 title: Setting a VMQ Filter
 description: Setting a VMQ Filter
-ms.assetid: d40b6806-6ba8-4073-b802-57cb886ffcfb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

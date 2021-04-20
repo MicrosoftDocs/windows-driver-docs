@@ -1,7 +1,6 @@
 ---
 title: Default rule set (NDIS)
 description: Learn about the default rule set (NDIS) that specifies the recommended sets of rules to use when you analyze your driver.
-ms.assetid: ED809122-5938-4087-AAB8-0D3EB6DB1092
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

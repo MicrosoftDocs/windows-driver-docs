@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT (expanded hardware optimization)
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT is used to control the primary use case of photo capture vs. video capture. In Windows 10, this control is extended to support expanded hardware optimization hints.
-ms.assetid: 1E2787B7-4BC2-4FBC-8909-ACB122B87F08
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT Streaming Media Devices"]
 topic_type:
 - apiref

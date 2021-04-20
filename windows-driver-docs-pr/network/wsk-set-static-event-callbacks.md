@@ -1,7 +1,6 @@
 ---
 title: WSK_SET_STATIC_EVENT_CALLBACKS
 description: WSK_SET_STATIC_EVENT_CALLBACKS
-ms.assetid: fa95bc7d-c7b2-4cca-a419-ef5eb2520976
 ms.date: 07/18/2017
 keywords:
  - WSK_SET_STATIC_EVENT_CALLBACKS Network Drivers Starting with Windows Vista

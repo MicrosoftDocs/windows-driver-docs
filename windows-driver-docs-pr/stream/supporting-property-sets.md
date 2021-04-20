@@ -1,7 +1,6 @@
 ---
 title: Supporting Property Sets
 description: Supporting Property Sets
-ms.assetid: 49a3e3e6-3a09-4202-a2cb-df65806d3336
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , property sets
 - streaming minidrivers WDK Windows 2000 Kernel , property sets

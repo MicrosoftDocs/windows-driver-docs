@@ -1,7 +1,6 @@
 ---
 title: Starting the Device of the Video Miniport Driver
 description: Starting the Device of the Video Miniport Driver
-ms.assetid: e51a9483-eb12-4f7c-943f-075e670e97b1
 keywords:
 - video miniport drivers WDK Windows 2000 , starting devices
 - starting device of video miniport driver

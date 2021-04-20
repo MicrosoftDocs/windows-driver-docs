@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SecuritySDS
 description: DEVPKEY_Device_SecuritySDS
-ms.assetid: 8ac8c683-da8e-4425-8a2a-c4182e5cef93
 keywords: ["DEVPKEY_Device_SecuritySDS Device and Driver Installation"]
 topic_type:
 - apiref

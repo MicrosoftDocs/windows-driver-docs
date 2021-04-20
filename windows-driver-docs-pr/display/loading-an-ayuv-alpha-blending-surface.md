@@ -1,7 +1,6 @@
 ---
 title: Loading an AYUV Alpha-Blending Surface
 description: Loading an AYUV Alpha-Blending Surface
-ms.assetid: 93b60622-47af-485c-a1db-9a05783ff698
 keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading

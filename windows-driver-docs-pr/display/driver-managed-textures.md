@@ -1,7 +1,6 @@
 ---
 title: Driver-Managed Textures
 description: Driver-Managed Textures
-ms.assetid: 7ec56b86-dc29-41c3-91f4-2a30e9116b61
 keywords:
 - texture management WDK Direct3D , driver-managed
 - driver-managed textures WDK Direct3D

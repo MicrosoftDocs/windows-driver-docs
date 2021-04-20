@@ -1,7 +1,6 @@
 ---
 title: Tuner Events
 description: Tuner Events
-ms.assetid: eb5e0698-2641-4d47-9fa3-d1969a03c795
 keywords:
 - tuner events WDK video capture
 - events WDK video capture

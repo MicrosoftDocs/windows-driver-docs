@@ -1,7 +1,6 @@
 ---
 title: Exposing Hardware-Accelerated Capture Effects
 description: Exposing Hardware-Accelerated Capture Effects
-ms.assetid: 032139e8-e758-4d63-b8c1-ca61c958b20b
 keywords:
 - noise suppression WDK audio
 - NS WDK audio

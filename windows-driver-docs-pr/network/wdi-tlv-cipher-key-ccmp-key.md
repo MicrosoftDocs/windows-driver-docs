@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_CCMP_KEY
 description: WDI_TLV_CIPHER_KEY_CCMP_KEY is a TLV that contains CCMP cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEY.
-ms.assetid: A4754EAC-AA54-45CC-A7C5-B78A2757E012
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_CCMP_KEY Network Drivers Starting with Windows Vista

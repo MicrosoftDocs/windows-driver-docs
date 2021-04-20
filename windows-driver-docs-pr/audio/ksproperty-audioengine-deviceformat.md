@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT
 description: The KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT property request retrieves or alters the state of the audio engine node, regarding its device format setting.
-ms.assetid: 07821ACC-F561-4A40-9E2C-CB30B25521CB
 keywords: ["KSPROPERTY_AUDIOENGINE_DEVICEFORMAT Audio Devices"]
 topic_type:
 - apiref

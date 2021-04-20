@@ -1,7 +1,6 @@
 ---
 title: Hardware submissions
 description: Hardware submissions
-ms.assetid: 7EFA9617-CF1D-4259-B0C4-A9DDCF5C3A1F
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

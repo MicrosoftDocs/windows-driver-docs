@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_HID
 description: GUID_DEVINTERFACE_HID
-ms.assetid: af2ebdaf-b7e9-4f79-abb6-60f1fb954b55
 keywords: ["GUID_DEVINTERFACE_HID Device and Driver Installation"]
 topic_type:
 - apiref

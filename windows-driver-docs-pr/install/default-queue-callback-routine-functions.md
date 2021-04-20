@@ -1,7 +1,6 @@
 ---
 title: Default Queue Callback Routine Functions
 description: Default Queue Callback Routine Functions
-ms.assetid: 46d767ed-cfeb-4bd0-8792-08781a1335d6
 keywords:
 - SetupAPI functions WDK , default queue callback routines
 - default queue callback routines

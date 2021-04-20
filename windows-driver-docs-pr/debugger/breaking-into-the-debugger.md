@@ -1,7 +1,6 @@
 ---
 title: Breaking Into the Debugger
 description: Breaking Into the Debugger
-ms.assetid: 4fec7170-7480-4a8a-b060-1c8a8c3fb9dc
 keywords: ["breaking into the debugger", "DebugBreak function", "DbgBreakPoint function", "KdBreakPoint function", "DbgBreakPointWithStatus function", "KdBreakPointWithStatus function", "ASSERT macro", "ASSERTMSG macro"]
 ms.date: 07/20/2020
 ms.localizationpriority: medium

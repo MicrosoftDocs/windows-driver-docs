@@ -1,7 +1,6 @@
 ---
 title: NsRemoveLockMnRemove rule (wdm)
 description: The NsRemoveLockMnRemove rule verifies a driver does not return STATUS\_NOT\_SUPPORTED when processing IRP\_MJ\_PNP with MinorFunction IRP\_MN\_REMOVE\_DEVICE. This rule only applies to FDO and FIDO drivers.
-ms.assetid: 1151343D-9CFD-4808-A885-D477F199C004
 ms.date: 05/21/2018
 keywords: ["NsRemoveLockMnRemove rule (wdm)"]
 topic_type:

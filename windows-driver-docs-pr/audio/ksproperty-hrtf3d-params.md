@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_HRTF3D\_PARAMS
 description: The KSPROPERTY\_HRTF3D\_PARAMS property applies a set of 3-D parameter values to the HRTF algorithm.
-ms.assetid: f7a7cfa9-de76-418a-be84-2519de454c89
 keywords: ["KSPROPERTY_HRTF3D_PARAMS Audio Devices"]
 topic_type:
 - apiref

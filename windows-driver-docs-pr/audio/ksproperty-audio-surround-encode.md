@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_SURROUND\_ENCODE
 description: The KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property specifies whether the filter's surround encoder is enabled or disabled. A surround-encoder node (KSNODETYPE\_PROLOGIC\_ENCODER) performs Dolby Surround Pro Logic encoding.
-ms.assetid: 249ee13f-a986-4cb1-906f-55062274df45
 keywords: ["KSPROPERTY_AUDIO_SURROUND_ENCODE Audio Devices"]
 topic_type:
 - apiref

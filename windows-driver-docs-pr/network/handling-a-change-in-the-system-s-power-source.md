@@ -1,7 +1,6 @@
 ---
 title: Handling a Change in the System's Power Source
 description: Handling a Change in the System's Power Source
-ms.assetid: 80e36a23-8a41-46f0-a7cb-0039c306a695
 keywords:
 - power source changes WDK networking
 - NICs WDK networking , power source changes

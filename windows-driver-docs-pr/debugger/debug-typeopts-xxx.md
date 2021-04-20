@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_TYPEOPTS\_XXX
 description: The type options affect how the engine formats numbers and strings for output.
-ms.assetid: 1c39fb80-d51b-43a6-8a68-8479022baf8a
 ms.date: 12/07/2017
 topic_type:
 - apiref

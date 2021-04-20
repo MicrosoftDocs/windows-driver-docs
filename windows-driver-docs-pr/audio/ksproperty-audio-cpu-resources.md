@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CPU\_RESOURCES
 description: The KSPROPERTY\_AUDIO\_CPU\_RESOURCES property specifies whether a node's functionality is implemented in hardware or is emulated in software that runs on the host CPU.
-ms.assetid: 4379aa05-9661-44cd-8f10-0fb37009a4f3
 keywords: ["KSPROPERTY_AUDIO_CPU_RESOURCES Audio Devices"]
 topic_type:
 - apiref

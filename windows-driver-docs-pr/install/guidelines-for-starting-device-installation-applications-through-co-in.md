@@ -1,7 +1,6 @@
 ---
 title: Starting Device Installation Applications through Co-installers
 description: Guidelines for Starting Device Installation Applications through Co-installers
-ms.assetid: 94b21eef-5660-4d05-8eb5-da6589c85e65
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Guidelines for Starting Device Installation Applications through Co-installers
 
 
-The following guidelines must be followed for co-installers which supply finish-install actions:
+The following guidelines must be followed for co-installers which supply finish-install actions (Windows Vista and later versions of Windows) to start *device installation applications*:
 
 -   A co-installer must not exit from its finish-install pages or finish-install action until the device installation application has finished. If a co-installer exits early and another driver requires a restart, Windows might restart the computer before the application has completed.
 

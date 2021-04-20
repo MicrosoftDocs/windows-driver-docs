@@ -1,7 +1,6 @@
 ---
 title: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 description: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
-ms.assetid: 1162a1e7-a4f8-446f-8106-527f9b916382
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

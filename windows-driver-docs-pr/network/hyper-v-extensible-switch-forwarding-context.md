@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Forwarding Context Overview
 description: Hyper-V Extensible Switch Forwarding Context Overview
-ms.assetid: B2BF07B5-FA44-4994-9605-EFF4A0B9179F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

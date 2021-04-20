@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS Concepts and Definitions
 description: Remote NDIS Concepts and Definitions
-ms.assetid: caf01e69-9368-4b9b-a343-ef17a2154bb8
 keywords:
 - Remote NDIS WDK networking , concepts
 - Remote NDIS WDK networking , definitions

@@ -1,7 +1,6 @@
 ---
 title: Serenum Filtering of I/O Requests
 description: Serenum Filtering of I/O Requests
-ms.assetid: 773688b8-3d5a-48ed-8f20-368cf35fa6e2
 keywords:
 - Serenum driver WDK , I/O request filtering
 - I/O request filtering WDK Serenum

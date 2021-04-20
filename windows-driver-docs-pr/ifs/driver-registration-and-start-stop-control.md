@@ -1,7 +1,6 @@
 ---
 title: Driver Registration and Start/Stop Control
 description: Driver Registration and Start/Stop Control
-ms.assetid: 66f44703-1277-49fe-a481-c8712172db0f
 keywords:
 - RDBSS WDK file systems , start/stop control
 - Redirected Drive Buffering Subsystem WDK file systems , start/stop control

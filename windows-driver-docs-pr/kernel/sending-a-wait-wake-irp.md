@@ -1,7 +1,6 @@
 ---
 title: Sending a Wait/Wake IRP
 description: Sending a Wait/Wake IRP
-ms.assetid: ed582644-af51-4841-be59-6a3deb6d9de5
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , sending", "sending wait/wake IRPs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

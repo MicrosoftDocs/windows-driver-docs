@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property specifies the rolloff factor for a 3D listener.
-ms.assetid: 3eef80ef-921b-4364-b31d-14a62f305f5d
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ROLLOFFFACTOR Audio Devices"]
 topic_type:
 - apiref

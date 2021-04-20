@@ -1,7 +1,6 @@
 ---
 title: Create a mobile broadband experience
 description: Create a mobile broadband experience
-ms.assetid: bf9151cc-1587-4ff9-b482-8ebad2f57791
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

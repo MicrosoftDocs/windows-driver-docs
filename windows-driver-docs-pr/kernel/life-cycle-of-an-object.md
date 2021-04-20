@@ -1,7 +1,6 @@
 ---
 title: Life Cycle of an Object
 description: Life Cycle of an Object
-ms.assetid: e81bfce6-27c4-4916-adc8-9c014d02bee7
 keywords: ["object life cycles WDK kernel", "life cycles WDK objects", "referencing objects", "object reference counts WDK kernel", "temporary objects WDK kernel", "permanent objects WDK kernel", "reference counts WDK objects", "freed objects WDK kernel", "object temporary status WDK kernel", "object permanent status WDK kernel", "automatic object deletions WDK kernel", "object tracking WDK kernel", "open object handles WDK kernel", "counting references WDK objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_MediaSeeking
 description: KSPROPSETID\_MediaSeeking
-ms.assetid: 0c0ffb59-0b67-4d88-9737-7dd4ad5369ac
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

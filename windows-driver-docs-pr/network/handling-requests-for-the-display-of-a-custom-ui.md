@@ -1,7 +1,6 @@
 ---
 title: Handling Requests for the Display of a Custom UI
 description: Handling Requests for the Display of a Custom UI
-ms.assetid: 77c67469-ac59-449a-87d9-8535527059cb
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , custom UI display requests
 - custom UI WDK Native 802.11 IHV UI Extensions DLL

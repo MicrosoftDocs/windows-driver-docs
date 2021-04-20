@@ -1,7 +1,6 @@
 ---
 title: GDI as a Rendering Engine
 description: GDI as a Rendering Engine
-ms.assetid: 3aae0c71-fc98-452c-a7a3-f20a790a466b
 keywords:
 - GDI WDK Windows 2000 display , rendering engine
 - graphics drivers WDK Windows 2000 display , rendering engine

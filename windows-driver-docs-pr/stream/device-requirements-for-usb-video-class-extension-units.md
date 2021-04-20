@@ -1,7 +1,6 @@
 ---
 title: Device Requirements for USB Video Class Extension Units
 description: Device Requirements for USB Video Class Extension Units
-ms.assetid: 4678c3a4-9ca7-4518-afe8-99a9e61f3dcd
 keywords:
 - extension units WDK USB Video Class , device requirements
 - Extension Unit descriptor WDK USB Video Class

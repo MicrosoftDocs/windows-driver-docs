@@ -1,7 +1,6 @@
 ---
 title: Load order groups and altitudes for filter drivers
 description: Describes load order groups and altitudes for filter drivers
-ms.assetid: be8f18fe-c80b-44a3-b0c3-f2f630142180
 keywords:
 - altitudes WDK file system minifilter
 - altitudes WDK file system filter driver
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 Windows uses a dedicated set of *load order groups* for file system filter drivers and legacy filter drivers that are loaded at system startup.
 
-Each load order group has a defined range of *altitudes*. Every filter driver must have a unique altitude identifer. The filter's altitude defines its position relative to other filter drivers in the I/O stack when it is loaded. The altitude is an infinite-precision string interpreted as a decimal number. A filter driver that has a low numerical altitude is loaded into the I/O stack below a filter driver that has a higher numerical value.
+Each load order group has a defined range of *altitudes*. Every filter driver must have a unique altitude identifier. The filter's altitude defines its position relative to other filter drivers in the I/O stack when it is loaded. The altitude is an infinite-precision string interpreted as a decimal number. A filter driver that has a low numerical altitude is loaded into the I/O stack below a filter driver that has a higher numerical value.
 
 Altitude allocation is managed by Microsoft. To request an altitude for your filter driver, see [Filter Altitude Request](minifilter-altitude-request.md).
 

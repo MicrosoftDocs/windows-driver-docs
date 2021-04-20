@@ -4,7 +4,6 @@ description: Sets the number of bytes that the IHV JavaScript function has proce
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9E870B80-421B-496A-9510-D97D3A4D7892
 keywords: ["ProcessedByteCount method Print Devices", "ProcessedByteCount method Print Devices , IPrinterScriptUsbWritePrintDataProgress interface", "IPrinterScriptUsbWritePrintDataProgress interface Print Devices , ProcessedByteCount method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Diagnostics and Debugging
 description: Diagnostics and Debugging
-ms.assetid: 6c5c1b4a-338d-4550-903d-c6905ce743f9
 keywords:
 - RDBSS WDK file systems , diagnostics
 - Redirected Drive Buffering Subsystem WDK file systems , diagnostics

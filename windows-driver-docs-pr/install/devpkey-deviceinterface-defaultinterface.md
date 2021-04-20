@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceInterfaceClass_DefaultInterface
 description: DEVPKEY_DeviceInterfaceClass_DefaultInterface
-ms.assetid: dab341d1-6cab-420b-9ee0-acf6747e2dac
 keywords: ["DEVPKEY_DeviceInterfaceClass_DefaultInterface Device and Driver Installation"]
 topic_type:
 - apiref

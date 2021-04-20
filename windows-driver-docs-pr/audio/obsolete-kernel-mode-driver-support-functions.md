@@ -1,7 +1,6 @@
 ---
 title: Obsolete Kernel-Mode Driver-Support Functions
 description: Obsolete Kernel-Mode Driver-Support Functions
-ms.assetid: 8bdfbd2e-a0d6-424f-9092-297e533efa33
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

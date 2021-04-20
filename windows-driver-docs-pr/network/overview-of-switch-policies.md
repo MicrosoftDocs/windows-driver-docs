@@ -1,7 +1,6 @@
 ---
 title: Overview of Switch Policies
 description: Overview of Switch Policies
-ms.assetid: DB9368CE-96D4-48C9-AE18-601EE4A09001
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: PoolMon Examples
 description: PoolMon Examples
-ms.assetid: aff0abdd-7d68-49b8-b9a1-71ab866c8487
 keywords:
 - PoolMon WDK , examples
 - Memory Pool Monitor WDK , examples

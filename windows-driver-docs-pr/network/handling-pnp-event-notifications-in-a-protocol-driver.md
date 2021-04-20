@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Event Notifications in a Protocol Driver
 description: Handling PnP Event Notifications in a Protocol Driver
-ms.assetid: 7c6c9bc5-37ce-49f4-8e39-5f51a266836a
 keywords:
 - Plug and Play WDK NDIS protocol
 - notifications WDK PnP , NDIS protocol drivers

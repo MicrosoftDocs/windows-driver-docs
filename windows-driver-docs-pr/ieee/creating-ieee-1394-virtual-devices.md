@@ -1,7 +1,6 @@
 ---
 title: Creating IEEE 1394 Virtual Devices
 description: Creating IEEE 1394 Virtual Devices
-ms.assetid: 5b6a4d7a-e116-4a68-a1f8-fd561fbc0495
 keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus

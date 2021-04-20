@@ -1,7 +1,6 @@
 ---
 title: I/O Transfer Sequences
 description: The SPB framework extension (SpbCx) supports I/O transfer sequences.
-ms.assetid: 7415DB28-5E93-4F47-B169-7C652969D4C7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

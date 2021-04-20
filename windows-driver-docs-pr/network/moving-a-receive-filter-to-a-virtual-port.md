@@ -1,7 +1,6 @@
 ---
 title: Moving a Receive Filter to a Virtual Port
 description: Moving a Receive Filter to a Virtual Port
-ms.assetid: 6315FB18-3F57-43C2-B864-3759058092BB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

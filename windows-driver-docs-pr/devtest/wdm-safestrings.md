@@ -1,7 +1,6 @@
 ---
 title: SafeStrings rule (wdm)
 description: The SafeStrings rule specifies that the driver calls only those string manipulations functions that protect the system from unintentional or malicious intrusion. These safe string functions for drivers are defined in Ntstrsafe.h.
-ms.assetid: 77e949cf-b184-4235-80c4-4718d4808d11
 ms.date: 05/21/2018
 keywords: ["SafeStrings rule (wdm)"]
 topic_type:

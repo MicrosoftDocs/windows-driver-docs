@@ -1,7 +1,6 @@
 ---
 title: Accessing NET_BUFFER_LIST information in IPsec Offload Version 2
 description: Accessing NET_BUFFER_LIST Information in IPsec Offload Version 2
-ms.assetid: 0c27b594-2c61-4459-96df-1d7445100bc5
 keywords:
 - IPsecOV2 WDK TCP/IP transport , NET_BUFFER_LIST information
 - NET_BUFFER_LIST

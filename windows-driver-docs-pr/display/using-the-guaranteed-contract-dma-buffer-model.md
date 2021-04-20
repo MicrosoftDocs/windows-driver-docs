@@ -1,7 +1,6 @@
 ---
 title: Using the Guaranteed Contract DMA Buffer Model
 description: Using the Guaranteed Contract DMA Buffer Model
-ms.assetid: fee6f7eb-157b-466d-b482-110a48045283
 keywords:
 - DMA buffers WDK display , guaranteed contract mode
 - guaranteed contract DMA buffers WDK display

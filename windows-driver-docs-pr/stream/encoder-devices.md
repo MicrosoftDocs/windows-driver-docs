@@ -1,7 +1,6 @@
 ---
 title: Encoder Devices
 description: Encoder devices
-ms.assetid: 156b1d6d-c6f6-4ab3-a91e-3124351c6ae5
 keywords:
 - encoder devices WDK AVStream
 - AVStream WDK , encoder devices

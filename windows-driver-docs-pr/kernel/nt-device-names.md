@@ -1,7 +1,6 @@
 ---
 title: NT Device Names
 description: NT Device Names
-ms.assetid: dfcc7338-7c4d-4b4c-9a13-c76bfe82f5a9
 keywords: ["NT device names WDK kernel", "device objects WDK kernel , named", "named device objects WDK kernel", "device names WDK kernel", "non-WDM driver device names WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

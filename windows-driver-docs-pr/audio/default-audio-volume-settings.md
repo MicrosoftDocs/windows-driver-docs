@@ -1,7 +1,6 @@
 ---
 title: Default Audio Volume Settings
 description: Default Audio Volume Settings
-ms.assetid: 5d694aa2-5a47-44c5-92d5-ec8c4885820f
 keywords:
 - audio adapters WDK , volume settings
 - adapter drivers WDK audio , volume settings
@@ -73,6 +72,13 @@ The following table shows the volume ranges and default volume levels for audio 
 </tr>
 <tr class="odd">
 <td align="left">Windows 8</td>
+<td align="left"><p>Default level: 0.0 dB</p>
+<p>Volume Range: -96 dB ~ +30 dB</p></td>
+<td align="left"><p>Default level: 0.0 dB</p>
+<p>Volume Range: -96 dB ~ 0 dB</p></td>
+</tr>
+<tr class="even">
+<td align="left">Windows 10</td>
 <td align="left"><p>Default level: 0.0 dB</p>
 <p>Volume Range: -96 dB ~ +30 dB</p></td>
 <td align="left"><p>Default level: 0.0 dB</p>

@@ -1,7 +1,6 @@
 ---
 title: Image Color Management
 description: Image Color Management
-ms.assetid: c5b575c1-3ee7-4ad4-85e8-e1a6dbe34a5b
 keywords:
 - GDI WDK Windows 2000 display , Image Color Management
 - graphics drivers WDK Windows 2000 display , Image Color Management
@@ -25,4 +24,3 @@ To find out more about Image Color Management and a particular class of output d
 
 [Color Management for Still Image Devices](../image/color-management-for-still-image-devices.md)
 
-For a general discussion about Image Color Management, see the Microsoft [Windows SDK documentation](/previous-versions/windows/desktop/wcs/windows-color-system).

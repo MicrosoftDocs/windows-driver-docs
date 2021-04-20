@@ -1,7 +1,6 @@
 ---
 title: KS Topology Considerations
 description: KS Topology Considerations
-ms.assetid: 81a2a41a-2a10-4de0-9a64-2c8f86a0c96d
 keywords:
 - non-PCM audio formats WDK , KS topology
 - bridge pins WDK audio

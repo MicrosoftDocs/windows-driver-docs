@@ -1,7 +1,6 @@
 ---
 title: Multi-Tier Reset in Storport
 description: Multi-Tier Reset in Storport
-ms.assetid: 11c717b9-5154-43dd-b357-ff093cabec4b
 keywords:
 - Storport drivers WDK , errors
 - errors WDK Storport

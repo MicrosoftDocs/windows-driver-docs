@@ -1,7 +1,6 @@
 ---
 title: WIA Compatibility Layer Message Mapping
 description: WIA Compatibility Layer Message Mapping
-ms.assetid: 4bdf72e1-48ce-43f8-af62-0a2f6d01f558
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

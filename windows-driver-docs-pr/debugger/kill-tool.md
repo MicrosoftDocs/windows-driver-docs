@@ -1,7 +1,6 @@
 ---
 title: Kill Tool
 description: The Kill tool, kill.exe, terminates one or more processes and all of their threads. This tool works only on processes running on the local computer.
-ms.assetid: e1733a74-2a31-436f-87b8-e704b27b6f04
 keywords: kill Tool, Kill.exe, kill.exe
 ms.date: 05/23/2017
 ms.localizationpriority: medium

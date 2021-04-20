@@ -1,7 +1,6 @@
 ---
 title: Interface to the Native 802.11 802.1X Module
 description: Interface to the Native 802.11 802.1X Module
-ms.assetid: 8af78e5b-c9d9-4f07-8f07-f4a156ffdb9e
 keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 - 802.1X module WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Creating Custom Property Pages
 description: Creating Custom Property Pages
-ms.assetid: 2481450f-ebb2-40e3-8a42-eabaecc1c7e4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

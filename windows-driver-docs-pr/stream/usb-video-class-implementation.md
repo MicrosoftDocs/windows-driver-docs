@@ -1,7 +1,6 @@
 ---
 title: USB Video Class Implementation
 description: USB Video Class implementation
-ms.assetid: b390d741-9ddc-4bac-bca2-73e32461c5ed
 keywords:
 - USB Video Class drivers WDK AVStream , implementing
 - Video Class drivers WDK USB , implementing

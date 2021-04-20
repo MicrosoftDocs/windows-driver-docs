@@ -1,7 +1,6 @@
 ---
 title: Flatbed Scanner Architecture
 description: Flatbed Scanner Architecture
-ms.assetid: 04f7df17-d289-44a1-8c2d-7d0fa618cc97
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Creating WDTF Scenarios
 description: With WDTF scenarios, you build device-focused automated and customized test scenarios using the WDTF framework.
-ms.assetid: f9e3de20-28be-40c6-802c-f4637b3f6c20
 keywords:
 - Windows Device Testing Framework WDK , scripts
 - WDTF WDK , scripts

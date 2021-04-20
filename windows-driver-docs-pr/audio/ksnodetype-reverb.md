@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_REVERB
 description: KSNODETYPE\_REVERB
-ms.assetid: 789503d8-b642-4c66-ad06-55431ca075b8
 keywords: ["KSNODETYPE_REVERB Audio Devices"]
 topic_type:
 - apiref

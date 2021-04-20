@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALLOCATION
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALLOCATION property is used to tell the driver when to allocate and free the storage for its listener data.
-ms.assetid: 2e7256d0-578d-4b6e-aa5f-9e42e649523b
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ALLOCATION Audio Devices"]
 topic_type:
 - apiref

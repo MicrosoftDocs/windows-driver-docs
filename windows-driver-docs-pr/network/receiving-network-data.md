@@ -1,7 +1,6 @@
 ---
 title: Receiving Network Data
 description: Receiving Network Data
-ms.assetid: d929c956-73dc-433f-9e60-bc3f8e0bcc14
 keywords:
 - network data WDK , receiving
 - data WDK networking , receiving

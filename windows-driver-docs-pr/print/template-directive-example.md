@@ -1,7 +1,6 @@
 ---
 title: Template Directive Example
 description: Template Directive Example
-ms.assetid: ae8fe5e6-ee79-424d-80b3-fd6300257977
 keywords:
 - Production directive WDK GDL
 - templates WDK GDL , examples

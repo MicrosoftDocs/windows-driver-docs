@@ -1,7 +1,6 @@
 ---
 title: Native WLAN to WDI OID mapping
 description: The following table contains the mappings between Native 802.11 WLAN and WDI OIDs.
-ms.assetid: 98F4D26F-72FC-4945-AF53-064A0F80673F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

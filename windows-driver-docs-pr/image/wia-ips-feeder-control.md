@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_FEEDER\_CONTROL
 description: The WIA\_IPS\_FEEDER\_CONTROL property is used to configure manual control over the feeder motor. The WIA minidriver creates and maintains this property.
-ms.assetid: CA19D573-B461-4D3E-BE2A-CF350E0FA4EA
 keywords: ["WIA_IPS_FEEDER_CONTROL Imaging Devices"]
 topic_type:
 - apiref

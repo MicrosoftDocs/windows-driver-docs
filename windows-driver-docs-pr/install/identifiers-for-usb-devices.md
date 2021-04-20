@@ -1,7 +1,6 @@
 ---
 title: Identifiers for USB Devices
 description: Identifiers for USB Devices
-ms.assetid: 9597eae3-2aaf-4942-9d03-1b03bd12fcfd
 keywords:
 - device identification strings WDK , USB devices
 - identification strings WDK device , USB devices

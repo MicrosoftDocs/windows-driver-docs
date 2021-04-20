@@ -1,7 +1,6 @@
 ---
 title: Teaming Provider Extensions
 description: Teaming Provider Extensions
-ms.assetid: 94F73ECD-54D0-4218-B3C4-33DC3BD57ED0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

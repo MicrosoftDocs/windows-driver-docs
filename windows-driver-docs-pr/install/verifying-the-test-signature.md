@@ -1,7 +1,6 @@
 ---
 title: Verifying the Test Signature
 description: Verifying the Test Signature
-ms.assetid: 996ce3d4-76b5-4c78-9ea9-ca8a04cfef99
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

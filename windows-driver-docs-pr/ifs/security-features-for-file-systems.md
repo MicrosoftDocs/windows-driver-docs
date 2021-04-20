@@ -1,7 +1,6 @@
 ---
 title: Security Features for File Systems
 description: Security Features for File Systems
-ms.assetid: 344083d5-781a-46e3-ab90-b70e57d07dd0
 keywords:
 - security WDK file systems , features
 ms.date: 04/20/2017

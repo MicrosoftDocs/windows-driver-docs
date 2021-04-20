@@ -1,7 +1,6 @@
 ---
 title: Streaming Data from a Video Capture Device
 description: Streaming Data from a Video Capture Device
-ms.assetid: c83aae8e-70a7-4d65-a888-00a7c21eebdd
 keywords:
 - video capture WDK AVStream , streaming data from
 - capturing video WDK AVStream , streaming data from

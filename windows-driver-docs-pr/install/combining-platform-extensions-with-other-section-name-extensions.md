@@ -1,7 +1,6 @@
 ---
 title: Combining Platform Extensions with Other Section Name Extensions
 description: Combining Platform Extensions with Other Section Name Extensions
-ms.assetid: ca82ba0f-0d65-47ca-826a-4f78435b1442
 keywords:
 - INF files WDK device installations , platform extensions
 - platform extensions WDK INF files

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Installed Devices
 description: Enumerating Installed Devices
-ms.assetid: 98EF9A16-6415-4778-BB5D-C0B7160C1509
 keywords:
 - enumerating installed devices WDK
 - installed devices WDK , enumerating

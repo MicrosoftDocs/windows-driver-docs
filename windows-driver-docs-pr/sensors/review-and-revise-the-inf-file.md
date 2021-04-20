@@ -1,7 +1,6 @@
 ---
 title: Review the INX file
 description: This topics shows you how to revise the INF file for the sample sensor driver, to make it suitable for installing your sensor driver on your target device.
-ms.assetid: 1D326C5F-5B69-4C5C-AE52-14153DF964E9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

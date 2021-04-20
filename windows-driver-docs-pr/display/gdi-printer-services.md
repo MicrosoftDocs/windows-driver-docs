@@ -1,7 +1,6 @@
 ---
 title: GDI Printer Services
 description: GDI Printer Services
-ms.assetid: b63c9822-f737-42fb-a831-31d16b3495c9
 keywords:
 - GDI WDK Windows 2000 display , printer services
 - graphics drivers WDK Windows 2000 display , printer services

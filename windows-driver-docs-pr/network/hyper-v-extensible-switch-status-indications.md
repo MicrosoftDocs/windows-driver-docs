@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Status Indications
 description: Hyper-V Extensible Switch Status Indications
-ms.assetid: ADF6622F-93E1-4A0D-AB54-A99F7D33EBA0
 ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: IrqlKeApcLte2 rule (wdm)
-ms.assetid: 585d741d-543f-421b-be48-28f48d68fc4d
 ms.date: 05/21/2018
 description: "Learn more about: IrqlKeApcLte2 rule (wdm)"
 keywords: ["IrqlKeApcLte2 rule (wdm)"]

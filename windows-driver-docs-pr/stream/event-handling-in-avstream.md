@@ -1,7 +1,6 @@
 ---
 title: Event Handling in AVStream
 description: Event Handling in AVStream
-ms.assetid: 7add2055-8d3f-432d-8aa1-44459ac197dd
 keywords:
 - events WDK AVStream
 - AVStream events WDK

@@ -1,7 +1,6 @@
 ---
 title: Modifying a Packet's Extensible Switch Source Port Data
 description: Modifying a Packet's Extensible Switch Source Port Data
-ms.assetid: 44338441-160C-4CD1-8C0B-27CFBE136910
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

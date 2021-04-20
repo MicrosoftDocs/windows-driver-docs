@@ -1,7 +1,6 @@
 ---
 title: CM_Remove_SubTree
 description: CM_Remove_SubTree
-ms.assetid: 49f477ba-c870-45be-945b-58065bf6b02e
 keywords: ["CM_Remove_SubTree Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: PnpIrpCompletion rule (wdm)
 description: The PnpIrpCompletion rule verifies that an FDO driver passes PnP IRPs to the lower driver.
-ms.assetid: 32b2ed2c-4222-4d93-8323-3ad442a14d9d
 ms.date: 05/21/2018
 keywords: ["PnpIrpCompletion rule (wdm)"]
 topic_type:

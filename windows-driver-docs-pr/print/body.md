@@ -1,7 +1,6 @@
 ---
 title: body element
 description: The required body element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
-ms.assetid: 3343c272-5090-4b60-ab04-08038d2583ff
 keywords: ["body element Print Devices"]
 topic_type:
 - apiref

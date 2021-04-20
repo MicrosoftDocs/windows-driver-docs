@@ -1,7 +1,6 @@
 ---
 title: Test-Signing Driver Packages
 description: Test-Signing Driver Packages
-ms.assetid: 84727762-5ba0-48ea-8d5a-7ac54aadbb7e
 keywords:
 - driver signing WDK , driver packages
 - signing drivers WDK , driver packages
@@ -35,7 +34,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 ### <a href="" id="pnp-kernel-mode-boot-start-driver"></a> PnP Kernel-Mode Boot-Start Driver
 
-To comply with the kernel-mode code signing policy file as follows:
+To comply with the kernel-mode code signing policy of 64-bit versions of Windows Vista and later versions of Windows, embed a signature in the *boot-start driver* file as follows:
 
 1.  [Test-sign the driver file](test-signing-a-driver-file.md).
 
@@ -73,7 +72,7 @@ The kernel-mode code signing policy on 64-bit versions of Windows Vista and late
 
 For a PnP kernel-mode driver that is not a *boot-start driver*, signing the catalog file for the driver package complies with the kernel-mode code signing policy on 64-bit versions of Windows Vista and later versions of Windows, as well as the PnP device installation signing requirements for all versions of Windows Vista and later.
 
-You can submit a request to have the Windows Hardware Quality Labs (WHQL) test-sign.
+You can submit a request to have the Windows Hardware Quality Labs (WHQL) test-sign the catalog file. Alternatively, you can test-sign a catalog file yourself with a test certificate in the same manner as described in this section for test-signing the catalog file of a PnP kernel-mode *boot-start driver*.
 
 ### <a href="" id="non-pnp-kernel-mode-driver-that-is-not-a-boot-start-driver"></a> Non-PnP Kernel-Mode Driver that is not a Boot-Start Driver
 

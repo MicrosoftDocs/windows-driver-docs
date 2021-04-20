@@ -1,7 +1,6 @@
 ---
 title: Programming Considerations for USBPRINT
 description: Programming Considerations for USBPRINT
-ms.assetid: 351b3124-d584-4817-a5ce-09e16b54d41b
 keywords:
 - printer drivers WDK , USB
 - USBPRINT

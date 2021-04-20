@@ -1,7 +1,6 @@
 ---
 title: OID Request Operations in a Protocol Driver
 description: OID Request Operations in a Protocol Driver
-ms.assetid: 767252a2-98de-4df2-89dc-ee48b2c7ca9d
 keywords:
 - protocol drivers WDK networking , OID requests
 - NDIS protocol drivers WDK , OID requests

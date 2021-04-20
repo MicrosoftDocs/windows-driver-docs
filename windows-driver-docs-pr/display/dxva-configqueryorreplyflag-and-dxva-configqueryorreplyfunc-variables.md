@@ -1,7 +1,6 @@
 ---
 title: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc
 description: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables
-ms.assetid: bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5
 keywords:
 - video decoding WDK DirectX VA , formats
 - decoding video WDK DirectX VA , formats

@@ -1,7 +1,6 @@
 ---
 title: Miscellaneous Installation Issues for an Audio Adapter
 description: Miscellaneous Installation Issues for an Audio Adapter
-ms.assetid: fcfa9c41-7fad-4b22-9054-a1debb972580
 keywords:
 - audio adapters WDK , installing
 - adapter drivers WDK audio , installing

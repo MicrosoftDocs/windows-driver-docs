@@ -1,7 +1,6 @@
 ---
 title: pci
 description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
-ms.assetid: 37b767db-18c9-4fd3-8910-4be03f41e764
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

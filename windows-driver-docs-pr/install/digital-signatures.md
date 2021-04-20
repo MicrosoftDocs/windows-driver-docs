@@ -1,7 +1,6 @@
 ---
 title: Digital Signatures
 description: Digital Signatures
-ms.assetid: 637212b2-bc57-414b-9a06-07f79d9264f9
 keywords:
 - driver package digital signatures WDK
 - package digital signatures WDK

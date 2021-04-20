@@ -1,7 +1,6 @@
 ---
 title: Rules for NDIS Drivers
 description: Rules for NDIS Drivers
-ms.assetid: fd31b797-1175-4f65-8fa0-a50acd01f446
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

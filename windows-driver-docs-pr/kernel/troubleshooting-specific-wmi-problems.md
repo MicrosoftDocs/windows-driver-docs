@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting Specific WMI Problems
 description: Troubleshooting Specific WMI Problems
-ms.assetid: 966191e7-aec4-4eff-b975-99a6d3eb8d02
 keywords: ["WMI WDK kernel , troubleshooting", "troubleshooting WMI problems WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

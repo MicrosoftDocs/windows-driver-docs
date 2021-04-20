@@ -1,7 +1,6 @@
 ---
 title: GetDisplayConfigBufferSizes Summary and Scenarios
 description: GetDisplayConfigBufferSizes Summary and Scenarios
-ms.assetid: b0d14ba7-fe61-49e9-81c5-097e6e07a51a
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, GetDisplayConfigBufferSizes
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, GetDisplayConfigBufferSizes

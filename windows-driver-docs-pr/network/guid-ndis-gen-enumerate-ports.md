@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_GEN_ENUMERATE_PORTS
 description: This topic describes the GUID_NDIS_GEN_ENUMERATE_PORTS GUID for the NDIS WMI interface.
-ms.assetid: c7572ff2-c9e1-4605-9768-b14636ce007f
 keywords:
 - GUID_NDIS_GEN_ENUMERATE_PORTS, WDK GUID_NDIS_GEN_ENUMERATE_PORTS network drivers
 ms.date: 11/22/2017

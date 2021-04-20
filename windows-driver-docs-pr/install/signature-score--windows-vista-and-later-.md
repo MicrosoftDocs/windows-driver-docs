@@ -1,7 +1,6 @@
 ---
 title: Signature Score
 description: Signature Score
-ms.assetid: 5e8dbbf8-6282-4299-80d9-5f886d01b1bf
 keywords:
 - signature score WDK device installations
 ms.date: 04/20/2017

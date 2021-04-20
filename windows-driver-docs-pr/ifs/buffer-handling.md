@@ -1,7 +1,6 @@
 ---
 title: Buffer Handling
 description: Buffer Handling
-ms.assetid: 0739ff35-2915-4237-9fe0-11559eccb0bb
 keywords:
 - security WDK file systems , minimizing threats
 - buffers WDK file systems

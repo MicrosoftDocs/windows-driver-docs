@@ -1,7 +1,6 @@
 ---
 title: Customized Printer Setup Operations
 description: Customized Printer Setup Operations
-ms.assetid: 888125e9-a057-4e86-9df8-0086cedb368d
 keywords:
 - customized printer setup operations WDK
 - INF files WDK print , customized setup operations

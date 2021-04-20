@@ -1,7 +1,6 @@
 ---
 title: Audio Filters, Pins, and Nodes
 description: Audio Filters, Pins, and Nodes
-ms.assetid: 5f30703c-bf33-49bb-bce2-990ad5b54a9c
 keywords:
 - WDM audio drivers WDK , filters
 - audio drivers WDK , filters

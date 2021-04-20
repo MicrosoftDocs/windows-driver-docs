@@ -1,7 +1,6 @@
 ---
 title: Summary of Kernel-Mode Safe String Functions
 description: Summary of Kernel-Mode Safe String Functions
-ms.assetid: 71b67d88-2a9a-4c9d-b64c-5fd7fe7e5cda
 keywords: ["safe string functions WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

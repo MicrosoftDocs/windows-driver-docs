@@ -1,7 +1,6 @@
 ---
 title: CPSUI-Supplied Pages and Templates
 description: CPSUI-Supplied Pages and Templates
-ms.assetid: de33cb29-3941-4232-bd61-d36fb04d69d3
 keywords:
 - Common Property Sheet User Interface WDK print , templates
 - CPSUI WDK print , templates

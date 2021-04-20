@@ -1,7 +1,6 @@
 ---
 title: GDI User Objects
 description: GDI User Objects
-ms.assetid: 25048f14-a46e-49bb-8890-699bf1324007
 keywords:
 - GDI WDK Windows 2000 display , user objects
 - graphics drivers WDK Windows 2000 display , user objects

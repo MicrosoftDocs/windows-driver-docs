@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x5C HAL_INITIALIZATION_FAILED
 description: The HAL_INITIALIZATION_FAILED bug check has a value of 0x0000005C.This indicates that the HAL initialization failed.
-ms.assetid: 0a62e3d4-40a3-4886-9696-7fa7f50d2c21
 keywords: ["Bug Check 0x5C HAL_INITIALIZATION_FAILED", "HAL_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

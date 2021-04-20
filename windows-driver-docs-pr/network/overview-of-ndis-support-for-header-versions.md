@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS Support for Header Versions
 description: Overview of NDIS Support for Header Versions
-ms.assetid: f73baf8d-f6da-486c-b0e2-c3c57aeab269
 keywords:
 - NDIS version information WDK , structure requirements
 - NDIS version information WDK , header member

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_UpperFilters
 description: DEVPKEY_Device_UpperFilters
-ms.assetid: 5e6cba65-13ca-44b2-bb5f-ca61b3f23c5c
 keywords: ["DEVPKEY_Device_UpperFilters Device and Driver Installation"]
 topic_type:
 - apiref

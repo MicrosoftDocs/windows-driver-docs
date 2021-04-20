@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Driver in the Graphics Architecture (XDDM)
 description: Video Miniport Driver in the Graphics Architecture (Windows 2000 Model)
-ms.assetid: 663cbedb-6637-4d7c-86d0-70d962459856
 keywords:
 - video miniport drivers WDK Windows 2000 , graphics
 - architecture WDK video miniport

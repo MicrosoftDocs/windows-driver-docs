@@ -1,7 +1,6 @@
 ---
 title: NDIS/WIFI verification
 description: The NDIS/WIFI verification option determines whether an NDIS or WIFI driver correctly interacts with the Windows operating system kernel.
-ms.assetid: EB553449-9460-403D-8ED2-343048C4B38C
 ms.date: 04/10/2020
 ms.localizationpriority: medium
 ---

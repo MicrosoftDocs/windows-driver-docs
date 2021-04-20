@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x4F NDIS_INTERNAL_ERROR
 description: The NDIS_INTERNAL_ERROR bug check has a value of 0x0000004F.This bug check appears very infrequently.
-ms.assetid: e71916b3-3bb5-4595-a333-81ed2785b495
 keywords: ["Bug Check 0x4F NDIS_INTERNAL_ERROR", "NDIS_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:

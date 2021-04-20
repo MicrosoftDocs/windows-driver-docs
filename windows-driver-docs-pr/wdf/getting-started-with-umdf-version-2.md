@@ -1,7 +1,6 @@
 ---
 title: Getting Started with UMDF
 description: This section describes User-Mode Driver Framework (UMDF) and details the differences between UMDF versions 1 and 2.
-ms.assetid: 2C4DAFA4-783C-4739-8D27-A417AC63B447
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

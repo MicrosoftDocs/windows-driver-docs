@@ -1,7 +1,6 @@
 ---
 title: Adding New Property Sheet Pages
 description: Adding New Property Sheet Pages
-ms.assetid: ec4303e9-889c-41ee-8872-ddefdc906eb2
 keywords:
 - user interface plug-ins WDK print , property sheet pages
 - UI plug-ins WDK print , property sheet pages

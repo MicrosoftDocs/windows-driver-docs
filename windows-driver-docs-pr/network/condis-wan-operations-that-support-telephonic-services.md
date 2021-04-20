@@ -1,7 +1,6 @@
 ---
 title: CoNDIS WAN Operations that Support Telephonic Services
 description: CoNDIS WAN Operations that Support Telephonic Services
-ms.assetid: 698d7667-8620-4f98-aa57-e48195f612e3
 keywords:
 - CoNDIS WAN drivers WDK networking , telephonic services
 - telephonic services WDK WAN

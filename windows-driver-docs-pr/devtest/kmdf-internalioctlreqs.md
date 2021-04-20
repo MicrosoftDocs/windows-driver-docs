@@ -1,7 +1,6 @@
 ---
 title: InternalIoctlReqs rule (kmdf)
 description: The InternalIoctlReqs rule specifies that internal IOCTL requests are not passed to inappropriate KMDF request-send device driver interfaces (DDIs).
-ms.assetid: a6d75752-21eb-486b-b73a-8d810b392e6b
 ms.date: 05/21/2018
 keywords: ["InternalIoctlReqs rule (kmdf)"]
 topic_type:

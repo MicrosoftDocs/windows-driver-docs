@@ -1,7 +1,6 @@
 ---
 title: Device Manager Details tab
 description: Device Manager Details tab
-ms.assetid: 5f1e345f-72c6-4bd4-a0fa-304e5d0d91be
 keywords:
 - Device Manager WDK , Details tab
 - firmware revision numbers WDK Device Manager

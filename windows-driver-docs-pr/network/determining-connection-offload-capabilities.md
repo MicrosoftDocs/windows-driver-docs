@@ -1,7 +1,6 @@
 ---
 title: Determining Connection Offload Capabilities
 description: Determining Connection Offload Capabilities
-ms.assetid: 9a7c40dd-7151-462f-b30b-0444a4177ff9
 keywords:
 - connection offload WDK TCP/IP transport , capabilities
 ms.date: 04/20/2017

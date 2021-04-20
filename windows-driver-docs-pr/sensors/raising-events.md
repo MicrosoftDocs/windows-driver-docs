@@ -1,7 +1,6 @@
 ---
 title: Raising sensor events
 description: Raising sensor events
-ms.assetid: a6e428f8-1613-4e8d-813d-5a54824dab82
 keywords:
 - sensor events
 - event handler

@@ -1,7 +1,6 @@
 ---
 title: Analyzing a Kernel-Mode Dump File
 description: Analyzing a Kernel-Mode Dump File
-ms.assetid: 2bda51c2-b022-4740-8df9-5a2cf2382e3e
 keywords: ["dump file, analyzing a kernel-mode dump file"]
 ms.date: 06/05/2020
 ms.localizationpriority: medium

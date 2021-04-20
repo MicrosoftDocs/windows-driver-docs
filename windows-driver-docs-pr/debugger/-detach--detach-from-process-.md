@@ -1,7 +1,6 @@
 ---
 title: .detach (Detach from Process)
 description: The .detach command ends the debugging session, but leaves any user-mode target application running.
-ms.assetid: 4f0fbd8b-3037-4549-99da-be40a091a363
 keywords: [".detach (Detach from Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

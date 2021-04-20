@@ -1,7 +1,6 @@
 ---
 title: File Streams, Stream Contexts, and Per-Stream Contexts
 description: File Streams, Stream Contexts, and Per-Stream Contexts
-ms.assetid: baea4967-f0d6-4096-aac4-fd38c117b4c6
 keywords:
 - filter drivers WDK file system , per-stream context tracking
 - file system filter drivers WDK , per-stream context tracking

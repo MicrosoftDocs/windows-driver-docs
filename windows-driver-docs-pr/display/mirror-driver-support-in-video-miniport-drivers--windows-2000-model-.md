@@ -1,7 +1,6 @@
 ---
 title: Mirror Driver Support in Video Miniport Drivers (XDDM)
 description: Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
-ms.assetid: ca91e0a6-d619-432a-829e-49012951f27c
 keywords:
 - video miniport drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display

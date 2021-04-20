@@ -1,7 +1,6 @@
 ---
 title: usb3kd.xhci_deviceslots
 description: The usb3kd.xhci_deviceslots extension displays information about the devices connected to a USB 3.0 host controller.
-ms.assetid: 471167EA-F7F8-470D-B09C-8627C5BE9566
 keywords: ["usb3kd.xhci_deviceslots Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

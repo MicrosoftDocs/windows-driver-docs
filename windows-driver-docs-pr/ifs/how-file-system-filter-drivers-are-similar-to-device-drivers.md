@@ -1,7 +1,6 @@
 ---
 title: How File System Filter Drivers Are Similar to Device Drivers
 description: How File System Filter Drivers Are Similar to Device Drivers
-ms.assetid: 7797239e-e0cc-4422-bcc6-31cfe6efd8e4
 keywords:
 - filter drivers WDK file system , vs. device drivers
 - file system filter drivers WDK , vs. device drivers
@@ -28,6 +27,6 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **Other Similarities**
 
-  - Like device drivers, file system filter drivers can receive [Introduction to I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) (IOCTLs). Note that file system filter drivers can also receive and define [file system control codes](/windows-hardware/drivers/ddi/index) (FSCTLs).
+  - Like device drivers, file system filter drivers can receive [I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) (IOCTLs). Note that file system filter drivers can also receive and define [file system control codes](./fsctl-add-overlay.md) (FSCTLs).
 
   - Like device drivers, file system filter drivers can be configured to be loaded at system startup time or to be loaded later, after the system startup process is complete.

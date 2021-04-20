@@ -1,7 +1,6 @@
 ---
 title: Partner Center FAQ
 description: This article provides answers to frequently asked questions about the Partner Center.
-ms.assetid: AA3D1147-7015-4D21-84A6-D127F57DDC97
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -12,7 +12,10 @@ ms.localizationpriority: medium
 
 The [CFU standalone tool](https://github.com/microsoft/CFU/tree/master/Tools/ComponentFirmwareUpdateStandAloneToolSample) sends firmware image update files to a device. It can be used to test your firmware update on your device during development and before uploading it to Windows Update.
 
-. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
+> [!NOTE]
+> CFU is available in Windows 10, version 2004 (Windows 10 May 2020 Update) and later versions.
+
+Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
 
 This tool reads an offer file and passes a firmware update image file to a device.  It is also capable of searching for the device based on the protocol settings and requesting/printing firmware version information.
 

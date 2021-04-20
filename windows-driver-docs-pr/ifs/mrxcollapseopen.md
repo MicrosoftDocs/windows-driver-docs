@@ -1,7 +1,6 @@
 ---
 title: MRxCollapseOpen routine
 description: The MRxCollapseOpen routine is called by RDBSS to request that the network mini-redirector collapse an open file system request onto an existing SRV\_OPEN structure.
-ms.assetid: 1c06b2f4-b44a-4d8a-9205-987be1e497ad
 keywords: ["MRxCollapseOpen routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

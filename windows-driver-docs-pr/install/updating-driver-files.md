@@ -1,7 +1,6 @@
 ---
 title: Updating Driver Files
 description: Updating Driver Files
-ms.assetid: e232abd9-4e51-4fa7-a00c-f5e184706222
 keywords:
 - Hardware Update Wizard WDK
 - updating driver files

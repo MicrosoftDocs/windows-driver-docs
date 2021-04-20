@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_Step
 description: The KS\_AM\_RATE\_Step property is not yet implemented.
-ms.assetid: fc3e3369-335b-4403-876f-c55d4616e290
 keywords: ["KS_AM_RATE_Step Streaming Media Devices"]
 topic_type:
 - apiref

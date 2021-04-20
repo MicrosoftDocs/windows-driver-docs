@@ -1,7 +1,6 @@
 ---
 title: CPUStress Tests (Device Fundamentals)
 description: The CpuStress tests perform device I/O testing with different processor utilization levels.
-ms.assetid: E546C3A3-89E6-450B-90D3-4F349A3EC495
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

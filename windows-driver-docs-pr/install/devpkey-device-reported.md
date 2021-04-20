@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Reported
 description: DEVPKEY_Device_Reported
-ms.assetid: dfec9e24-4d4e-42e4-a229-ad3d060fb1b5
 keywords: ["DEVPKEY_Device_Reported Device and Driver Installation"]
 topic_type:
 - apiref

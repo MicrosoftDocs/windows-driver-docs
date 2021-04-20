@@ -1,7 +1,6 @@
 ---
 title: Drawing Text
 description: Drawing Text
-ms.assetid: e5bf4673-93c4-4cc5-b74d-e0e3a487ec3d
 keywords:
 - GDI WDK Windows 2000 display , text output
 - graphics drivers WDK Windows 2000 display , text output

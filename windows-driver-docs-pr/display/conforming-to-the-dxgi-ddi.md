@@ -1,7 +1,6 @@
 ---
 title: Conforming to the DXGI DDI
 description: Conforming to the DXGI DDI
-ms.assetid: 1c789f57-003e-4b29-9a81-dbf194670664
 keywords:
 - Direct3D version 11 WDK Windows 7 display , DXGI DDI conformance
 - Direct3D version 11 WDK Windows Server 2008 R2 display , DXGI DDI conformance

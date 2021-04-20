@@ -1,7 +1,6 @@
 ---
 title: Transparent Blt
 description: Transparent Blt
-ms.assetid: bc2f4159-cd5d-43db-8bc3-e6fbf1e594fb
 keywords:
 - surfaces WDK DirectDraw , blitting
 - drawing blt WDK DirectDraw , transparent blt

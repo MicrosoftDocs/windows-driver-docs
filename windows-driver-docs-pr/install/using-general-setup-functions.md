@@ -1,7 +1,6 @@
 ---
 title: Using General Setup Functions
 description: Using General Setup Functions
-ms.assetid: 08a7b585-7930-47a3-9fa0-a36625242e5d
 keywords:
 - SetupAPI functions WDK , general Setup functions
 - general Setup functions WDK SetupAPI

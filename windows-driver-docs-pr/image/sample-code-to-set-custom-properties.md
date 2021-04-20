@@ -1,7 +1,6 @@
 ---
 title: Sample Code to Set Custom Properties
 description: Sample Code to Set Custom Properties
-ms.assetid: 726315eb-de5c-47b6-a35b-524ec1c97d52
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

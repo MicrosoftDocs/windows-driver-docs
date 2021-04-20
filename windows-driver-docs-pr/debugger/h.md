@@ -1,7 +1,6 @@
 ---
 title: H (Windows Debugger Glossary)
 description: Glossary page - H 
-ms.assetid: 478e6900-86f9-487c-a2fd-18543402f5e2
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

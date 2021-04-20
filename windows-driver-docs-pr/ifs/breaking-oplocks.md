@@ -1,7 +1,6 @@
 ---
 title: Breaking Oplocks
 description: Breaking Oplocks
-ms.assetid: 1f3c4a99-5ad2-4597-a1c9-a21f80c40291
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

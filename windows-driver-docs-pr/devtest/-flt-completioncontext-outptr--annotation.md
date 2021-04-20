@@ -1,7 +1,6 @@
 ---
 title: '_Flt_CompletionContext_Outptr_ Annotation'
 description: Use the _Flt_CompletionContext_Outptr_ annotation when you declare the file system minifilter pre-operation callback function PFLT_PRE_OPERATION_CALLBACK.
-ms.assetid: C3B285EA-0DAB-48D4-AE2F-CB4FBB30EF15
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

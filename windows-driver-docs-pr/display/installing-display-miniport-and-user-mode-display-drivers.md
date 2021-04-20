@@ -1,7 +1,6 @@
 ---
 title: Installing Display Miniport and User-Mode Display Drivers
 description: Installation Requirements for Display Miniport and User-Mode Display Drivers
-ms.assetid: f813071d-897d-4100-bc46-326558de2e70
 keywords:
 - display driver model WDK Windows Vista , driver installations
 - Windows Vista display driver model WDK , driver installations

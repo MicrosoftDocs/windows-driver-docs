@@ -1,7 +1,6 @@
 ---
 title: Filter Initialization
 description: Filter Initialization
-ms.assetid: c39dc5a6-f529-40a2-87d4-bac325b4fa1a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

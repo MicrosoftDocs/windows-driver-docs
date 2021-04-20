@@ -1,7 +1,6 @@
 ---
 title: Completing a DMA Transfer
 description: Completing a DMA Transfer
-ms.assetid: 86383b9f-9b82-4afa-81ac-2ab09bd8778b
 keywords:
 - DMA operations WDK KMDF , transfers
 - bus-master DMA WDK KMDF , transfers

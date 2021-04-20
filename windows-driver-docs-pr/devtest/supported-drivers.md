@@ -1,7 +1,6 @@
 ---
 title: Supported Drivers
 description: Supported Drivers
-ms.assetid: 1d41a9a9-415a-4dba-8b52-138c47ad63fd
 keywords:
 - Static Driver Verifier WDK , requirements
 - StaticDV WDK , requirements

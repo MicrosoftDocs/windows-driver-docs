@@ -1,7 +1,6 @@
 ---
 title: Setting the Size and Pitch of the Memory Allocation
 description: Setting the Size and Pitch of the Memory Allocation
-ms.assetid: babd331f-7aec-4aee-aef9-7c10b98f9181
 keywords:
 - memory allocation WDK display
 - allocating memory WDK display

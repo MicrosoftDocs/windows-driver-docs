@@ -1,7 +1,6 @@
 ---
 title: FilmColor element
 description: The required FilmColor element contains the list of color processing capabilities that the film scanning input source supports.
-ms.assetid: daea2cb8-a29f-4be8-bc58-8ed45d64870c
 keywords: ["FilmColor element Imaging Devices"]
 topic_type:
 - apiref

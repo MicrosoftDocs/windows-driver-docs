@@ -1,7 +1,6 @@
 ---
 title: Magnetometer data fields
 description: This topic provides information about the data fields that are specific to the magnetometer.
-ms.assetid: 5DA5566A-FECA-47ED-8338-686A548687CC
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

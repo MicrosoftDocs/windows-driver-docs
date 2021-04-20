@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Numa_Proximity_Domain
 description: DEVPKEY_Numa_Proximity_Domain
-ms.assetid: 384e167b-cb08-4264-a7b1-3cea2dda0d46
 keywords: ["DEVPKEY_Numa_Proximity_Domain Device and Driver Installation"]
 topic_type:
 - apiref

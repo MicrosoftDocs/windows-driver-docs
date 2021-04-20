@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x44 MULTIPLE_IRP_COMPLETE_REQUESTS
 description: The MULTIPLE_IRP_COMPLETE_REQUESTS bug check has a value of 0x00000044. This indicates that a driver has tried to request an IRP be completed that is already complete.
-ms.assetid: bc60b4b3-aded-4c67-bbaa-aad1b6b38d30
 keywords: ["Bug Check 0x44 MULTIPLE_IRP_COMPLETE_REQUESTS", "MULTIPLE_IRP_COMPLETE_REQUESTS"]
 ms.date: 05/23/2017
 topic_type:

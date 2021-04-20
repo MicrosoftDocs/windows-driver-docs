@@ -1,7 +1,6 @@
 ---
 title: Reporting DDraw Capabilities for Nonlocal Display Memory
 description: A DMA model driver has different capabilities for nonlocal display memory than for local display memory.
-ms.assetid: e503fc8b-db27-486a-8616-a1b88ea77218
 keywords:
 - DMA-style AGP WDK DirectDraw
 - display memory WDK DirectDraw , DMA-style AGP

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_ENCODER
 description: KSCATEGORY_ENCODER
-ms.assetid: 409dbb1f-7b28-4cb3-bdba-da927cf67133
 keywords: ["KSCATEGORY_ENCODER Device and Driver Installation"]
 topic_type:
 - apiref

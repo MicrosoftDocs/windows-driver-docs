@@ -1,7 +1,6 @@
 ---
 title: Tracepdb
 description: Tracepdb
-ms.assetid: da7658a8-5fc3-409c-8a34-2aa134b9823b
 keywords:
 - software tracing WDK , Tracepdb
 - Tracepdb WDK

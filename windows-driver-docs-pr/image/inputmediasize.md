@@ -1,7 +1,6 @@
 ---
 title: InputMediaSize element
 description: The required InputMediaSize element specifies the size of the media to be scanned for the current job.
-ms.assetid: f1fcb152-96c5-469c-8989-a2c4328a5f68
 keywords: ["InputMediaSize element Imaging Devices"]
 topic_type:
 - apiref

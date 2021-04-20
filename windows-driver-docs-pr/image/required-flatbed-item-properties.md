@@ -1,7 +1,6 @@
 ---
 title: Required Flatbed Item Properties
 description: Required Flatbed Item Properties
-ms.assetid: 5af295de-b5ad-47c7-b1db-9d5685ed8d19
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

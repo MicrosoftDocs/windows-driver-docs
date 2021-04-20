@@ -1,7 +1,6 @@
 ---
 title: ScannerStatusConditionClearedEvent element
 description: The required ScannerStatusConditionClearedEvent element informs the client that a previously reported DeviceCondition condition has been cleared at the scanner.
-ms.assetid: c849caba-d77b-441b-a5e1-94f9285cef3f
 keywords: ["ScannerStatusConditionClearedEvent element Imaging Devices"]
 topic_type:
 - apiref

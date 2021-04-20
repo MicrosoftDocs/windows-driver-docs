@@ -1,7 +1,6 @@
 ---
 title: About Sensor Driver Events
 description: About Sensor Driver Events
-ms.assetid: 1e747743-f701-4854-92be-7b55c39fee08
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

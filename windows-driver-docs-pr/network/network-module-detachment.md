@@ -1,7 +1,6 @@
 ---
 title: Network Module Detachment
 description: Network Module Detachment
-ms.assetid: f41ac030-0bfc-47e2-9840-2c3550bc7d33
 keywords:
 - network modules WDK Network Module Registrar , detachment
 - provider modules WDK Network Module Registrar , detachment

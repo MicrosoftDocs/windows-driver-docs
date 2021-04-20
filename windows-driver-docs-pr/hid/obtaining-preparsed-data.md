@@ -1,7 +1,6 @@
 ---
 title: Obtaining Preparsed Data
 description: Obtaining Preparsed Data
-ms.assetid: 7a2bdbd1-a970-421f-bbaa-40fe589bb49a
 keywords:
 - collections WDK HID , preparsed data
 - HID collections WDK , preparsed data
@@ -20,7 +19,7 @@ This section describes how user-mode applications and kernel-mode drivers obtain
 
 ### User-Mode Application
 
-A user-mode application must obtain a collection's preparsed data before calling any of the [HIDClass support routines](/windows-hardware/drivers/ddi/index) that require the preparsed data. An application should retain access to a collection's preparsed data as long as it has an open file on the device.
+A user-mode application must obtain a collection's preparsed data before calling any of the [HIDClass support routines](/windows-hardware/drivers/ddi/_hid) that require the preparsed data. An application should retain access to a collection's preparsed data as long as it has an open file on the device.
 
 After opening a file on a HID collection, an application calls [**HidD\_GetPreparsedData**](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata) to return a collection's preparsed data in a routine-allocated buffer.
 

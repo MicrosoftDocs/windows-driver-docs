@@ -1,7 +1,6 @@
 ---
 title: Handling Queries in a CoNDIS WAN Miniport Driver
 description: Handling Queries in a CoNDIS WAN Miniport Driver
-ms.assetid: 634618ce-3168-4729-b74a-e69f27b62ef4
 keywords:
 - CoNDIS WAN drivers WDK networking , query handling
 - OID_WAN_CO_GET_INFO

@@ -1,7 +1,6 @@
 ---
 title: Opening a Session to the Filter Engine
 description: Opening a Session to the Filter Engine
-ms.assetid: 23db0e2d-7f27-4323-801c-346e14f0f83e
 keywords:
 - Windows Filtering Platform callout drivers WDK , opening sessions
 - callout drivers WDK Windows Filtering Platform , opening sessions

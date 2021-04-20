@@ -1,7 +1,6 @@
 ---
 title: DIF_ADDPROPERTYPAGE_ADVANCED
 description: DIF_ADDPROPERTYPAGE_ADVANCED
-ms.assetid: d2b05c45-3536-4997-ac6f-a5b5c95a97da
 keywords: ["DIF_ADDPROPERTYPAGE_ADVANCED Device and Driver Installation"]
 topic_type:
 - apiref

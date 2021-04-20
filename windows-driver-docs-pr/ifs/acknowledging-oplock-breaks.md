@@ -1,7 +1,6 @@
 ---
 title: Acknowledging Oplock Breaks
 description: Acknowledging Oplock Breaks
-ms.assetid: ea5bcd1e-d22c-4f80-89e4-1a61e43959dd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

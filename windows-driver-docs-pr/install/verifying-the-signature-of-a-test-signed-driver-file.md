@@ -1,7 +1,6 @@
 ---
 title: Verifying the Signature of a Test-Signed Driver File
 description: Verifying the Signature of a Test-Signed Driver File
-ms.assetid: 21f4c42c-3d6e-453c-acff-f4b8acc3e20b
 keywords:
 - test signing driver files WDK
 - verifying test signatures

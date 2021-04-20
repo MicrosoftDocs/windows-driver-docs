@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Children
 description: DEVPKEY_Device_Children
-ms.assetid: bdcc60e3-0c27-4f2c-9c91-a5282f3d4614
 keywords: ["DEVPKEY_Device_Children Device and Driver Installation"]
 topic_type:
 - apiref

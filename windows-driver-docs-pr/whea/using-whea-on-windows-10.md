@@ -1,7 +1,6 @@
 ---
 title: Using WHEA on Windows 10
 description: Describes how to report a WHEA error on Windows 10
-ms.assetid: ace3230c-3e41-4290-a1fe-74a6cfc1eb0b
 keywords:
 - Windows Hardware Error Architecture WDK , Windows 10 changes
 ms.date: 04/28/2020

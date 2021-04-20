@@ -1,7 +1,6 @@
 ---
 title: User-Mode Library
 description: User-Mode Library
-ms.assetid: a471ae15-bbdd-47c8-ad77-9b82281dd430
 keywords:
 - filter manager WDK file system minifilter , user-mode library
 - user-mode library WDK file system minifilter

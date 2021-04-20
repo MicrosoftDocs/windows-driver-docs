@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's BuildRequest Routine
 description: Storage Class Driver's BuildRequest Routine
-ms.assetid: 2ba26628-4862-440c-b8f1-dd983cf9923b
 keywords:
 - BuildRequest
 - I/O stack locations WDK storage

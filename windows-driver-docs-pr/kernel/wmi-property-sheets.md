@@ -1,7 +1,6 @@
 ---
 title: WMI Property Sheets
 description: WMI Property Sheets
-ms.assetid: cc521aff-362a-4064-adea-f6f3cf8a1c10
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "device property sheets WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

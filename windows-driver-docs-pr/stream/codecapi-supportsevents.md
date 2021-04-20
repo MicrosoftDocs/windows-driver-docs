@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_SUPPORTSEVENTS
 description: CODECAPI\_SUPPORTSEVENTS
-ms.assetid: feb6d110-9a9c-4e2b-bc19-259f80f3947a
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

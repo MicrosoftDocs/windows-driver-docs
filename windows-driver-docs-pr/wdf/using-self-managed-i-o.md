@@ -1,7 +1,6 @@
 ---
 title: Using Self-Managed I/O
 description: Using Self-Managed I/O
-ms.assetid: 539b3618-44bb-41fd-a9f2-ed6a377c94e2
 keywords:
 - PnP WDK KMDF , self-managed I/O
 - Plug and Play WDK KMDF , self-managed I/O

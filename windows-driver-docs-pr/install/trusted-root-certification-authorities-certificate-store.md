@@ -1,7 +1,6 @@
 ---
 title: Trusted Root Certification Authorities Certificate Store
 description: Trusted Root Certification Authorities Certificate Store
-ms.assetid: c1969171-3691-4110-9530-693853728327
 keywords:
 - certificate stores WDK
 - driver signing WDK , digital signatures

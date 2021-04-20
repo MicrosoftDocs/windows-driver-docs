@@ -1,7 +1,6 @@
 ---
 title: Initializing a SAN Service Provider
 description: Initializing a SAN Service Provider
-ms.assetid: 73e923e9-c7bd-4d46-9d21-fc1392a79c65
 keywords:
 - Windows Sockets Direct WDK , initializing SAN usage
 - initializing SAN usage

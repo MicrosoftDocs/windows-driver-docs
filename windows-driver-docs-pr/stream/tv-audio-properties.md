@@ -1,7 +1,6 @@
 ---
 title: TV Audio Properties
 description: TV Audio Properties
-ms.assetid: 0eed4007-9fd9-4927-8ac7-2e23fd082dec
 keywords:
 - TV audio properties WDK video capture
 - audio properties WDK video capture

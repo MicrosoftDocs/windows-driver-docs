@@ -1,7 +1,6 @@
 ---
 title: INF SharedDriver Entry
 description: INF SharedDriver Entry
-ms.assetid: 36d094b4-481d-41bb-b034-345b0743456e
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - SharedDriver entry WDK non-HID keyboard/mouse

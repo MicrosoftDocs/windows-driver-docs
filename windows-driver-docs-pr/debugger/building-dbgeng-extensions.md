@@ -1,7 +1,6 @@
 ---
 title: Building DbgEng Extensions
 description: Building DbgEng Extensions
-ms.assetid: e2cf8a01-2099-4ad7-98ac-1a20c76a2e0a
 keywords: ["DbgEng Extensions, building", "Build utility (build.exe), building DbgEng extensions"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 All debugger extensions should be compiled and built by using Visual Studio. The Build utility is no longer used with debugger extensions.
 
-For documentation on building projects in Visual Studio refer to [Visual Studio projects - C++](/cpp/build/creating-and-managing-visual-cpp-projects?view=vs-2017).
+For documentation on building projects in Visual Studio refer to [Visual Studio projects - C++](/cpp/build/creating-and-managing-visual-cpp-projects).
 
 To build an extension, use the following procedure:
 

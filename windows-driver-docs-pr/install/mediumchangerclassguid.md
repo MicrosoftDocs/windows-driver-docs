@@ -1,7 +1,6 @@
 ---
 title: MediumChangerClassGuid
 description: MediumChangerClassGuid
-ms.assetid: c15f98c3-1193-4025-b6e0-9c4fbbdd86a9
 keywords: ["MediumChangerClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

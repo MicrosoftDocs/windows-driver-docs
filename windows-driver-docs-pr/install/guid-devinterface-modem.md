@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MODEM
 description: GUID_DEVINTERFACE_MODEM
-ms.assetid: 80f5c063-8b22-422f-8102-4ac1e62241c8
 keywords: ["GUID_DEVINTERFACE_MODEM Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Extending the Bidi Communication Schema
 description: Extending the Bidi Communication Schema
-ms.assetid: b216a238-184e-4ebd-b9ef-227ff6bf4dbe
 keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print

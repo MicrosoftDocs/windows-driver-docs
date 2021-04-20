@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_CREATE (IFS)
 description: IRP_MJ_CREATE
-ms.assetid: fdcc81f0-e571-4194-88cd-d0956ca1577e
 keywords: ["IRP_MJ_CREATE Installable File System Drivers"]
 topic_type:
 - apiref

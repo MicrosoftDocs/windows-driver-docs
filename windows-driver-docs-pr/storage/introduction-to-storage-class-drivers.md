@@ -1,7 +1,6 @@
 ---
 title: Introduction to Storage Class Drivers
 description: Introduction to Storage Class Drivers
-ms.assetid: 0ea462a9-5e6f-419f-af36-50f50901143d
 keywords:
 - storage class drivers WDK , about storage class drivers
 - class drivers WDK storage , about storage class drivers

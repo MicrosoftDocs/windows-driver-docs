@@ -1,7 +1,6 @@
 ---
 title: ReportDiscoveredTargets2
 description: ReportDiscoveredTargets2
-ms.assetid: 2845cfa9-a85c-45d4-a962-8f409e96ccec
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

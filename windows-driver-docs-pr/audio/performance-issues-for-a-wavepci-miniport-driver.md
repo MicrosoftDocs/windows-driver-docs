@@ -1,7 +1,6 @@
 ---
 title: Performance Issues for a WavePci Miniport Driver
 description: Performance Issues for a WavePci Miniport Driver
-ms.assetid: 785fd743-0c78-44cd-95bf-1f961aa414b5
 keywords:
 - WavePci performance issues WDK audio
 - stream servicing mechanisms WDK audio

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_COMMIT_REQUEST
 description: WDI_TLV_SAE_COMMIT_REQUEST is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request. 
-ms.assetid: E339E58E-7929-416A-815D-C663EF1359D4
 ms.date: 02/14/2019
 keywords:
  - WDI_TLV_SAE_COMMIT_REQUEST Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Laptop/slate mode toggling between states
 description: This topic contains sample code that toggles the laptop/slate mode indicator state.
-ms.assetid: C5D9B586-EED7-4DC7-8BFF-3AB3A972307D
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -41,7 +40,7 @@ int __cdecl ToggleConversionIndicator(
 }
 ```
 
- 
+<b>Note:</b> The laptop/slate mode indicator device can be opened by only one process at a time. CreateFile will fail and GetLastError will return ERROR_ACCESS_DENIED when the device is already opened by another process. 
 
  
 

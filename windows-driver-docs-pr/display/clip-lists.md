@@ -1,7 +1,6 @@
 ---
 title: Clip Lists
 description: Clip Lists
-ms.assetid: 73383093-ab83-4955-b017-cc370009fd0e
 keywords:
 - surfaces WDK DirectDraw , blitting
 - drawing blt WDK DirectDraw , clip lists

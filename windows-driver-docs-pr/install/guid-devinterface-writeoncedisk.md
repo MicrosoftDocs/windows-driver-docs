@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_WRITEONCEDISK
 description: GUID_DEVINTERFACE_WRITEONCEDISK
-ms.assetid: 8b1660e1-0868-40aa-ba47-dfcb6cf58aaf
 keywords: ["GUID_DEVINTERFACE_WRITEONCEDISK Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Trace Tree Pane
 description: Trace Tree Pane
-ms.assetid: 0035e926-7332-45a6-84ea-8c36bc23c61a
 keywords:
 - panes WDK Static Driver Verifier
 - Static Driver Verifier Report WDK , Trace Tree pane

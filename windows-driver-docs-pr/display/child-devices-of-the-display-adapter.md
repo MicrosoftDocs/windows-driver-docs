@@ -1,7 +1,6 @@
 ---
 title: Child Devices of the Display Adapter
 description: Child Devices of the Display Adapter
-ms.assetid: 9fd20e1a-db98-4571-8fc4-6d33fd0e2f16
 keywords:
 - video present networks WDK display , display adapter child devices
 - VidPN WDK display , display adapter child devices

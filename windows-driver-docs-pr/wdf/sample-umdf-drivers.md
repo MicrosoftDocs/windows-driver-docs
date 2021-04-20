@@ -1,7 +1,6 @@
 ---
 title: Sample UMDF Drivers
 description: This topic lists available User-Mode Driver Framework (UMDF) sample drivers that you can download from the Windows driver samples repository on GitHub.
-ms.assetid: 9C8576E1-4CC7-4A7E-A822-C6BBFDC7482D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

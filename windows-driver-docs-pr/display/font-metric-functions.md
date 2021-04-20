@@ -1,7 +1,6 @@
 ---
 title: Font Metric Functions
 description: Font Metric Functions
-ms.assetid: 22d88765-bde5-4f1b-b106-9396868d6fb3
 keywords:
 - fonts WDK graphics , metric functions
 - GDI WDK Windows 2000 display , fonts, metric functions

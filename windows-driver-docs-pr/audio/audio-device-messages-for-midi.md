@@ -1,7 +1,6 @@
 ---
 title: Audio Device Messages for MIDI
 description: Audio Device Messages for MIDI
-ms.assetid: d3b00985-6894-41ea-b493-d0aee269d5bf
 ms.date: 04/22/2020
 ms.localizationpriority: medium
 ---

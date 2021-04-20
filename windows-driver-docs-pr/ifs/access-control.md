@@ -1,7 +1,6 @@
 ---
 title: Access control in a driver
 description: Drivers protect themselves from inappropriate access through access control.
-ms.assetid: 7f87276f-4014-4b37-b051-4bf02acbf575
 keywords:
 - security WDK file systems , minimizing threats
 - access control WDK file systems

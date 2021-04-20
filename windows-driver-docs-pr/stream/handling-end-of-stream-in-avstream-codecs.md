@@ -1,7 +1,6 @@
 ---
 title: Handling End of Stream in AVStream Codecs
 description: Handling End of Stream in AVStream Codecs
-ms.assetid: ee57137b-999a-449f-9f9d-50bc19e07ba8
 keywords:
 - handling end of stream WDK AVStream
 - end of stream WDK AVStream

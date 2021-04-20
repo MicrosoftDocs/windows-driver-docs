@@ -1,7 +1,6 @@
 ---
 title: Sample Functions for Deinterlacing
 description: Sample Functions for Deinterlacing
-ms.assetid: a91c0267-7a3e-4206-8680-6e87778a329d
 keywords:
 - deinterlacing WDK DirectX VA , sample functions
 ms.date: 04/20/2017

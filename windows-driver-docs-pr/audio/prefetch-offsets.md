@@ -1,7 +1,6 @@
 ---
 title: Prefetch Offsets
 description: Prefetch Offsets
-ms.assetid: 92a0163f-29b1-4e15-88ab-67e1097d015e
 keywords:
 - hardware acceleration WDK DirectSound , prefetch offsets
 - prefetch offsets WDK audio

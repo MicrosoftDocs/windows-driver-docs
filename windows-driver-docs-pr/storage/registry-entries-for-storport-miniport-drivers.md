@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
-ms.assetid: 543EC6A4-113C-4525-8063-28854B50760E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

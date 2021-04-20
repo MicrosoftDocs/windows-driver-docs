@@ -1,7 +1,6 @@
 ---
 title: Installing UPS Minidrivers
 description: Installing UPS Minidrivers
-ms.assetid: 37f91b0d-79b1-4482-9db7-8007f78194ac
 keywords:
 - UPS minidrivers WDK , installing
 ms.date: 04/20/2017

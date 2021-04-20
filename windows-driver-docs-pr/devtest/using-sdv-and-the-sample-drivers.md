@@ -1,7 +1,6 @@
 ---
 title: Using SDV and the Sample Drivers
 description: Using SDV and the Sample Drivers
-ms.assetid: 4f673cd3-e23e-4267-920f-37618192a906
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

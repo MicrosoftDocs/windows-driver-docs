@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_NETWORK_TUNER
 description: KSCATEGORY_BDA_NETWORK_TUNER
-ms.assetid: d3f9d393-c8a1-4280-8796-a1de755f9508
 keywords: ["KSCATEGORY_BDA_NETWORK_TUNER Device and Driver Installation"]
 topic_type:
 - apiref

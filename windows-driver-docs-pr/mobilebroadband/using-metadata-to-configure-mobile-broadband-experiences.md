@@ -1,7 +1,6 @@
 ---
 title: Overview of using metadata to configure mobile broadband experiences
 description: Overview of using metadata to configure mobile broadband experiences
-ms.assetid: d3ceab6e-550f-4852-8ee0-4a261c238434
 ms.date: 07/02/2019
 ms.localizationpriority: medium
 ---

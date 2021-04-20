@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE
 description: The KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE property sets the copy state of the DVD decoder stream. This property is optional to implement.
-ms.assetid: f4e46d79-c70b-413a-9702-a73d3776ee2c
 keywords: ["KSPROPERTY_DVDCOPY_SET_COPY_STATE Streaming Media Devices"]
 topic_type:
 - apiref

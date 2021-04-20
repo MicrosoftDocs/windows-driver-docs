@@ -1,7 +1,6 @@
 ---
 title: ubp
 description: The ubp extension sets a breakpoint in user space.
-ms.assetid: 1aaa6bec-59d3-4e37-a1c6-af3554da809f
 keywords: ["ubp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

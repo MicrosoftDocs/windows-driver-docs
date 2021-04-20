@@ -1,7 +1,6 @@
 ---
 title: DeinterlaceQueryModeCaps method
 description: The sample DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryModeCaps function queries the driver to determine the input capabilities of a particular deinterlace mode and any additional video processing that might be supported on that mode.
-ms.assetid: 49070e57-2a93-447e-98d5-b98cded78b9c
 keywords: ["DeinterlaceQueryModeCaps method Display Devices", "DeinterlaceQueryModeCaps method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , DeinterlaceQueryModeCaps method"]
 topic_type:
 - apiref

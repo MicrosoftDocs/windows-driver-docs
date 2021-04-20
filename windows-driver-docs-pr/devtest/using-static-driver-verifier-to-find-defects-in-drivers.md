@@ -1,7 +1,6 @@
 ---
 title: Using Static Driver Verifier to Find Defects in Windows Drivers
 description: Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine if the driver interacts correctly with the Windows operating system.
-ms.assetid: 94D4104C-66ED-4C1E-8EE1-4C669EB4EAAD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -132,6 +131,6 @@ If SDV reports timeouts or fails to return useful results, you might need to cha
 
 [Using Function Role Type Declarations](using-function-role-type-declarations.md)
 
-[Static Driver Verifier Rules](/windows-hardware/drivers/ddi/index)
+[Static Driver Verifier Rules](./static-driver-verifier-rules.md)
 
 [Code Analysis tool](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120))

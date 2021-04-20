@@ -1,7 +1,6 @@
 ---
 title: Closing a CoNDIS Call Manager or MCM
 description: Closing a CoNDIS Call Manager or MCM
-ms.assetid: 6ef64e4c-eec4-4477-a06c-f80e21d5b1c7
 keywords:
 - call managers WDK networking , CoNDIS
 - MCMs WDK networking , closing

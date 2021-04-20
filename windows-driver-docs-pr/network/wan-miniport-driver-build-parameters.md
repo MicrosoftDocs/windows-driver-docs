@@ -1,7 +1,6 @@
 ---
 title: WAN Miniport Driver Build Parameters
 description: WAN Miniport Driver Build Parameters
-ms.assetid: 8e494bd2-c499-48bf-8574-7e8df05be4c8
 keywords:
 - WAN miniport drivers WDK networking , building
 - CoNDIS WAN drivers WDK networking , building

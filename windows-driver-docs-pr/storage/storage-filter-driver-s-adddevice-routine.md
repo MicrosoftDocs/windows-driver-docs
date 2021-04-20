@@ -1,7 +1,6 @@
 ---
 title: Storage Filter Driver's AddDevice Routine
 description: Storage Filter Driver's AddDevice Routine
-ms.assetid: 7970fb3e-4e4c-4ff7-9738-e09454a864c4
 keywords:
 - storage filter drivers WDK , AddDevice
 - filter drivers WDK storage , AddDevice

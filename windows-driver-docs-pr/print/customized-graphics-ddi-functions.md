@@ -1,7 +1,6 @@
 ---
 title: Customized Graphics DDI Functions
 description: Customized Graphics DDI Functions
-ms.assetid: 33d7d567-5371-4873-a4ef-cd2b06f65d73
 keywords:
 - rendering plug-ins WDK print , graphics DDI functions
 - graphics DDI functions WDK print

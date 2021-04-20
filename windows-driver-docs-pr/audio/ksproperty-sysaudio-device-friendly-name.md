@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_FRIENDLY\_NAME
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_FRIENDLY\_NAME property retrieves a Unicode string containing the friendly name of the virtual audio device.
-ms.assetid: 14e23bb3-f0af-486f-8e34-fe27b2db2849
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_FRIENDLY_NAME Audio Devices"]
 topic_type:
 - apiref

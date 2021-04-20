@@ -1,7 +1,6 @@
 ---
 title: Unloading a Filter Driver
 description: Unloading a Filter Driver
-ms.assetid: e7ef209f-ab61-4644-a641-2fef09023a24
 keywords:
 - filter drivers WDK networking , unloading
 - NDIS filter drivers WDK , unloading

@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing DPC Routines
 description: Guidelines for Writing DPC Routines
-ms.assetid: 570219be-d152-4826-855a-737bbed67ffd
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

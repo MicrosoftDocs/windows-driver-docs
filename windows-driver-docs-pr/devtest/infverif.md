@@ -1,7 +1,6 @@
 ---
 title: InfVerif
 description: Learn about the InfVerif (InfVerif.exe) tool. You can use this tool to test a driver INF file or find out if the INF file is universal.
-ms.assetid: 6F565E1C-C6FC-4637-B476-FE4E4672CCC3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

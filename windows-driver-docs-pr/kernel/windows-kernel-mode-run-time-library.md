@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Run-Time Library
 description: Windows Kernel-Mode Run-Time Library
-ms.assetid: 9c968014-c529-43e1-a8a6-a307c90e4162
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

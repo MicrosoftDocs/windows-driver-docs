@@ -1,7 +1,6 @@
 ---
 title: Audio Property Handlers
 description: Audio Property Handlers
-ms.assetid: 4bf176ae-b3fd-47e6-9802-a92ef5e9904f
 keywords:
 - audio properties WDK , handlers
 - WDM audio properties WDK , handlers

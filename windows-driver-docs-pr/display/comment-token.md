@@ -1,7 +1,6 @@
 ---
 title: Comment Token
 description: Comment Token
-ms.assetid: b1e5f8c8-4d7d-49ce-876d-4a6cbccc550d
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

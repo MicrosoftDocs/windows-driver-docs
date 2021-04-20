@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION
 description: The DRIVER_VERIFIER_IOMANAGER_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier I/O Verification violations.
-ms.assetid: dcafb0df-cbc1-44f4-8ec4-976df0842f0c
 keywords: ["Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION", "DRIVER_VERIFIER_IOMANAGER_VIOLATION"]
 ms.date: 05/07/2019
 topic_type:

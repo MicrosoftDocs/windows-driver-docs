@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Feature Status Information Overview
 description: Hyper-V Extensible Switch Feature Status Information Overview
-ms.assetid: FB10029B-2887-4C8E-A428-B979442B52F7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

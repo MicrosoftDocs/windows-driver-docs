@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY
 description: The KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY property specifies the microphone sensitivity in decibels relative to full scale (dBFS) units.
-ms.assetid: FE62AAA5-E022-459F-817B-3661535FA9BD
 keywords: ["KSPROPERTY_AUDIO_MIC_SENSITIVITY Audio Devices"]
 topic_type:
 - apiref

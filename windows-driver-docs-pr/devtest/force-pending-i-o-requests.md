@@ -1,7 +1,6 @@
 ---
 title: Force Pending I/O Requests
 description: Force Pending I/O Requests
-ms.assetid: 0255fc5c-0e75-4108-ba29-f1a61ce9b0dd
 keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier

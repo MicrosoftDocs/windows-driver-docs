@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DISPLAY\_ADAPTER\_GUID
 description: The KSPROPERTY\_DISPLAY\_ADAPTER\_GUID property returns the adapter GUID from the capture minidriver.To use VRAM transport, a capture minidriver must support this property.
-ms.assetid: 419aa86e-f1c2-4fca-a9e4-87dcaaeaa2bb
 keywords: ["KSPROPERTY_DISPLAY_ADAPTER_GUID Streaming Media Devices"]
 topic_type:
 - apiref

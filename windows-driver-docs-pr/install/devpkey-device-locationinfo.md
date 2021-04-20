@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_LocationInfo
 description: DEVPKEY_Device_LocationInfo
-ms.assetid: c7eba222-20fe-4868-89e2-9dcef9965cec
 keywords: ["DEVPKEY_Device_LocationInfo Device and Driver Installation"]
 topic_type:
 - apiref

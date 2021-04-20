@@ -1,7 +1,6 @@
 ---
 title: About Event Tracing for Drivers
 description: About Event Tracing for Drivers
-ms.assetid: 1b5c85b1-5b7a-48bc-bdd4-356316d4467f
 keywords:
 - Event Tracing for Windows WDK , about Event Tracing for Windows
 - ETW WDK , about Event Tracing for Windows

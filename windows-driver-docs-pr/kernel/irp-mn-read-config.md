@@ -2,7 +2,6 @@
 title: IRP_MN_READ_CONFIG
 description: Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Filter and function drivers do not handle this request.
 ms.date: 08/12/2017
-ms.assetid: cbc5b959-0aae-4c86-b490-296965a7f158
 keywords:
  - IRP_MN_READ_CONFIG Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

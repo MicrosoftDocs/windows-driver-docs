@@ -1,7 +1,6 @@
 ---
 title: Managing an NDIS Port
 description: Managing an NDIS Port
-ms.assetid: 08bb6623-aa9f-483e-a3cd-7dea676f3478
 keywords:
 - ports WDK NDIS , managing
 - NDIS ports WDK , managing

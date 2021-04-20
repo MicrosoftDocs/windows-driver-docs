@@ -1,7 +1,6 @@
 ---
 title: Teletext Category
 description: Teletext Category
-ms.assetid: f8eb289f-0b01-43cc-8160-f16dc6de12d9
 keywords:
 - stream categories WDK video capture , teletext
 - teletext category WDK video capture

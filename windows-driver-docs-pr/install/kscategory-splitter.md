@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_SPLITTER
 description: KSCATEGORY_SPLITTER
-ms.assetid: 056b6bc0-5566-4498-959d-dbc9725aa03e
 keywords: ["KSCATEGORY_SPLITTER Device and Driver Installation"]
 topic_type:
 - apiref

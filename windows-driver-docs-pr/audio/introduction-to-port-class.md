@@ -1,7 +1,6 @@
 ---
 title: Introduction to Port Class
 description: Introduction to Port Class
-ms.assetid: 5f986e0c-d021-4dee-85d3-ad69a3708dd8
 keywords:
 - audio miniport drivers WDK , Port Class
 - miniport drivers WDK audio , Port Class

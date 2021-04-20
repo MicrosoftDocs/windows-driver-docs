@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64
 description: The EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation creates a typed data description that represents a pointer to a specified memory location with a specified type.
-ms.assetid: 1ca61962-718e-4cbd-8e16-f87e0c9ec9af
 keywords: ["EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64 Windows Debugging"]
 topic_type:
 - apiref

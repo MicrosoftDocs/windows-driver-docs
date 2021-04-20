@@ -1,7 +1,6 @@
 ---
 title: How Finish-Install Actions are Processed
 description: How Finish-Install Actions are Processed
-ms.assetid: 028cce46-018d-496e-bc99-c8bf6158c898
 keywords:
 - finish-install actions WDK device installations
 - default finish-install actions

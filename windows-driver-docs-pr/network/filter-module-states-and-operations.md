@@ -1,7 +1,6 @@
 ---
 title: Filter Module States and Operations
 description: Filter Module States and Operations
-ms.assetid: b5798865-8332-477b-b155-79a3db6ff6fa
 keywords:
 - filter drivers WDK networking , states
 - NDIS filter drivers WDK , states

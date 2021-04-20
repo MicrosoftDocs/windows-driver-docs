@@ -1,7 +1,6 @@
 ---
 title: WIA Functions for Debugging
 description: WIA Functions for Debugging
-ms.assetid: 164eeab3-1e4a-46de-99db-28b8f63593a4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

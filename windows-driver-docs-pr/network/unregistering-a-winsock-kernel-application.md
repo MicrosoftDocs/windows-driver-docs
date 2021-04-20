@@ -1,7 +1,6 @@
 ---
 title: Unregistering a Winsock Kernel Application
 description: Unregistering a Winsock Kernel Application
-ms.assetid: f5d99c10-eeac-499e-8630-6aa188d38d75
 keywords:
 - Winsock Kernel WDK networking , registering
 - unregistering Winsock Kernel applications

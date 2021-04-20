@@ -1,7 +1,6 @@
 ---
 title: Pre-Association Operation Overview
 description: Pre-Association Operation Overview
-ms.assetid: c33cf228-720f-4204-820c-0fb9a288bc6e
 keywords:
 - pre-association operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017

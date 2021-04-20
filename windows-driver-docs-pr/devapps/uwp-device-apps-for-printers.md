@@ -1,7 +1,6 @@
 ---
 title: UWP device apps for printers
 description: This section introduces UWP device apps for printers.
-ms.assetid: 3325B492-2A70-4EB7-99B0-3FE3E24CE398
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

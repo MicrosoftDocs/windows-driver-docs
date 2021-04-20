@@ -1,7 +1,6 @@
 ---
 title: Buffer Descriptions for I/O Control Codes
 description: Buffer Descriptions for I/O Control Codes
-ms.assetid: a458f3fb-a6c7-42ae-870e-1617a96b496f
 keywords: ["I/O control codes WDK kernel , buffer descriptions", "control codes WDK IOCTLs , buffer descriptions", "IOCTLs WDK kernel , buffer descriptions", "buffer descriptions WDK IOCTLs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

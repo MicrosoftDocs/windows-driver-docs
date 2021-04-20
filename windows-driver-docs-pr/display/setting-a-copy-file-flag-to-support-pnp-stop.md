@@ -1,7 +1,6 @@
 ---
 title: Setting a Copy-File Flag to Support PnP Stop
 description: Setting a Copy-File Flag to Support PnP Stop
-ms.assetid: 9f716ac0-c181-489f-8bc4-ccca8c141b06
 keywords:
 - INF files WDK display , copy-file flags
 - copy-file flags WDK display

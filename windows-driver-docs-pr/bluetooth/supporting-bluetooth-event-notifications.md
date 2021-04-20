@@ -1,7 +1,6 @@
 ---
 title: Supporting Bluetooth Event Notifications
 description: Supporting Bluetooth Event Notifications
-ms.assetid: ddb6f1d4-0f6e-4b11-93fc-b0886d262749
 keywords:
 - Bluetooth WDK , event notifications
 - event notifications WDK Bluetooth

@@ -1,7 +1,6 @@
 ---
 title: Storport I/O Model Overview
 description: Storport I/O Model Overview
-ms.assetid: 9220b01e-725f-4a03-87f1-402c0686cccd
 keywords:
 - Storport drivers WDK , I/O
 - I/O WDK Storport

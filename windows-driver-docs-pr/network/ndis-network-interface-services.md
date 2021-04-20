@@ -1,7 +1,6 @@
 ---
 title: NDIS Network Interface Services
 description: NDIS Network Interface Services
-ms.assetid: c37d9b7e-bc56-41e6-b41f-92a6df890e8e
 keywords:
 - NDIS network interfaces WDK , services
 - network interfaces WDK , services

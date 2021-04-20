@@ -1,7 +1,6 @@
 ---
 title: Connections Between Two Unit Plugs in Different AV/C Units
 description: Connections Between Two Unit Plugs in Different AV/C Units
-ms.assetid: b9c45304-33a2-4d02-9c38-1d124a33f0f2
 keywords:
 - connections WDK AV/C
 - AV/C WDK , connection scenarios

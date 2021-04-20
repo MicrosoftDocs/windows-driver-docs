@@ -1,7 +1,6 @@
 ---
 title: Reporting Device Online Status
 description: Reporting Device Online Status
-ms.assetid: 59ce747a-bb5e-4e8c-ab4a-d3f4432f17e6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: GDI Information Services
 description: GDI Information Services
-ms.assetid: f3575d68-1d90-4ccd-adb1-5d2a26099397
 keywords:
 - GDI WDK Windows 2000 display , information services
 - graphics drivers WDK Windows 2000 display , information services

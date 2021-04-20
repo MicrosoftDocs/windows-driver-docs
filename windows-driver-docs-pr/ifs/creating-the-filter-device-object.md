@@ -1,7 +1,6 @@
 ---
 title: Creating the Filter Device Object
 description: Creating the Filter Device Object
-ms.assetid: aca9a2ba-8630-4eb3-9312-a0c6454c3e44
 keywords:
 - filter drivers WDK file system , attaching filters
 - file system filter drivers WDK , attaching filters

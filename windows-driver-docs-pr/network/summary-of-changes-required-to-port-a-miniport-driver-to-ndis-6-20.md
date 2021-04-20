@@ -1,7 +1,6 @@
 ---
 title: Summary of changes to port a miniport driver to NDIS 6.20
 description: Summary of Changes Required to Port a Miniport Driver to NDIS 6.20
-ms.assetid: e52137ac-5333-4b62-8e26-686196d8ca78
 keywords:
 - NDIS 6.20 WDK , porting miniport drivers
 - porting miniport drivers to NDIS 6.20 WDK

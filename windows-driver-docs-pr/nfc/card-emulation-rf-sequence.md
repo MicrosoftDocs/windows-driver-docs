@@ -1,7 +1,6 @@
 ---
 title: Card emulation RF sequence
 description: A state diagram for StateRfDiscovered and StateRfDataXchg during NFCEE card emulation mode.
-ms.assetid: 553A5002-3FE3-4178-B671-9F23560F939C
 keywords:
 - NFC
 - near field communications

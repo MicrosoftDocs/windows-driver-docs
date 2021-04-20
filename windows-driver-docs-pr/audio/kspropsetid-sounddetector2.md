@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_SoundDetector2
 description: KSPROPSETID_SoundDetector2 property set contains properties that are used to register a filter for an audio capture device that also supports a detector.
-ms.assetid: FC4A354B-D42C-4199-B613-1E1B75A600C7
 ms.date: 09/25/2019
 ms.localizationpriority: medium
 ---

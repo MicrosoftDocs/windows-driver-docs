@@ -1,7 +1,6 @@
 ---
 title: Minidriver Initialization
 description: Minidriver Initialization
-ms.assetid: 5aa4e2c6-5848-45fe-8a89-686aae7e85e6
 keywords:
 - initializing streaming minidrivers WDK Windows 2000 Kernel
 - Stream.sys class driver WDK Windows 2000 Kernel , initializing minidrivers

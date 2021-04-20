@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX
 description: AVStream clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX property to determine framing requirements for a pin.
-ms.assetid: 7ff1462f-959b-413e-a888-bcf7d251edee
 keywords: ["KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX Streaming Media Devices"]
 topic_type:
 - apiref

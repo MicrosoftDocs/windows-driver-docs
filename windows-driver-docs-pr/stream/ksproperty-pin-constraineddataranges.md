@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES
 description: The KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES property specifies the list of data ranges currently supported by pins instantiated on the pin factory.
-ms.assetid: 6328a128-c6f8-4de1-a86a-0a7c8a940e18
 keywords: ["KSPROPERTY_PIN_CONSTRAINEDDATARANGES Streaming Media Devices"]
 topic_type:
 - apiref

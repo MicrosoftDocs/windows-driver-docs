@@ -1,7 +1,6 @@
 ---
 title: I/O Queue States
 description: I/O Queue States
-ms.assetid: 99519d1c-20e5-4a32-8462-19ec9f907506
 keywords:
 - I/O queues WDK KMDF , states
 - states WDK I/O queue

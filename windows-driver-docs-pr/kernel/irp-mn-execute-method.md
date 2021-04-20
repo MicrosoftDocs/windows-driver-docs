@@ -2,7 +2,6 @@
 title: IRP_MN_EXECUTE_METHOD
 description: All drivers that support methods within data blocks must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: cc42340e-4a7c-475c-b44d-2127e8a0d7dc
 keywords:
  - IRP_MN_EXECUTE_METHOD Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

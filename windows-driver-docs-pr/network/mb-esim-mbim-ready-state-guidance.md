@@ -1,7 +1,6 @@
 ---
 title: MB eSIM MBIM ready state guidance
 description: MB eSIM MBIM ready state guidance
-ms.assetid: E7EB5E6D-1858-4B94-AF91-05333CC93D8B
 ms.date: 08/10/2017
 ms.localizationpriority: medium
 ---

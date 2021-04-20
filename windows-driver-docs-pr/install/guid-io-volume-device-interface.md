@@ -1,7 +1,6 @@
 ---
 title: GUID_IO_VOLUME_DEVICE_INTERFACE
 description: GUID_IO_VOLUME_DEVICE_INTERFACE
-ms.assetid: 8c623d9c-bc55-4dce-a78a-0b23f8e5b4b5
 keywords: ["GUID_IO_VOLUME_DEVICE_INTERFACE Device and Driver Installation"]
 topic_type:
 - apiref

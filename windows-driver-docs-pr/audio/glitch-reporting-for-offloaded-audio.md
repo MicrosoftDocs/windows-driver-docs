@@ -1,7 +1,6 @@
 ---
 title: Glitch Reporting for Offloaded Audio
 description: This topic explains the mechanism that an audio driver must use when it has to report glitching errors in connection with hardware-offloaded audio streams.
-ms.assetid: 9FF2A5D6-9382-4EE6-AA21-DCF47210F73B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

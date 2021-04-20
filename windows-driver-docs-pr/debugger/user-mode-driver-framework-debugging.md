@@ -1,7 +1,6 @@
 ---
 title: User-Mode Driver Framework Debugging
 description: User-Mode Driver Framework Debugging
-ms.assetid: f59a420e-57d3-4ae0-84e3-58ec6e088b63
 keywords: ["User-Mode Driver Framework debugging"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

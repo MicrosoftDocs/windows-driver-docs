@@ -1,7 +1,6 @@
 ---
 title: Stopping a Driver Stack
 description: Stopping a Driver Stack
-ms.assetid: 2ecc0ebb-89d8-4cd8-ac1c-f9f1da7d2ca8
 keywords:
 - driver stacks WDK networking , stopping
 - stopping driver stacks WDK networking

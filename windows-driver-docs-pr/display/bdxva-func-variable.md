@@ -1,7 +1,6 @@
 ---
 title: bDXVA_Func Variable
 description: bDXVA_Func Variable
-ms.assetid: 6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b
 keywords:
 - video decoding WDK DirectX VA , formats
 - decoding video WDK DirectX VA , formats

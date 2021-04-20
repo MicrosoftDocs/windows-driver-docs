@@ -1,7 +1,6 @@
 ---
 title: BDA Pin Name GUIDs
 description: BDA Pin Name GUIDs
-ms.assetid: 098e4c49-13dd-4c9a-8ce4-06b99b7c5fa3
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

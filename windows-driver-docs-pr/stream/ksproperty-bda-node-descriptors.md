@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_DESCRIPTORS
 description: Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
-ms.assetid: 53b297e6-7e31-4231-80ad-b114cf9343b4
 keywords: ["KSPROPERTY_BDA_NODE_DESCRIPTORS Streaming Media Devices"]
 topic_type:
 - apiref

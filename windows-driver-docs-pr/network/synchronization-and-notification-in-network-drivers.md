@@ -1,7 +1,6 @@
 ---
 title: Synchronization and Notification in Network Drivers
 description: Synchronization and Notification in Network Drivers
-ms.assetid: 9fd9306f-5431-485f-9d6b-f7d6f25ea1ce
 keywords:
 - synchronizing access to resources WDK networking
 - synchronization WDK networking

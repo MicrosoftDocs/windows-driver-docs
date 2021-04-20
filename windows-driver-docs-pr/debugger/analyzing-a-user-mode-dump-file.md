@@ -1,7 +1,6 @@
 ---
 title: Analyzing a User-Mode Dump File
 description: Analyzing a User-Mode Dump File
-ms.assetid: b7f3dff8-cd2d-41c9-83ff-f0e5fb2312c0
 keywords: ["dump file, analyzing a user-mode dump file"]
 ms.date: 08/01/2018
 ms.localizationpriority: medium

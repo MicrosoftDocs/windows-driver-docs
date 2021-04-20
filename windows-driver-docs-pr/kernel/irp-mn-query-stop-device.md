@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_STOP_DEVICE
 description: Learn about the 'IRP_MN_QUERY_STOP_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 22f58964-23a0-4307-a748-9c1620e30871
 keywords:
  - IRP_MN_QUERY_STOP_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

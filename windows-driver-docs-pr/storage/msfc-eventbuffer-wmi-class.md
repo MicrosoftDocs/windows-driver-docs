@@ -1,7 +1,6 @@
 ---
 title: MSFC\_EventBuffer WMI Class
 description: MSFC\_EventBuffer WMI Class
-ms.assetid: ce16e42c-5d0b-47e9-9baa-53dcec482940
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

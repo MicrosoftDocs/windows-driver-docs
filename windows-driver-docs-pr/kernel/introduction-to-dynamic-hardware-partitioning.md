@@ -1,7 +1,6 @@
 ---
 title: Introduction to Dynamic Hardware Partitioning
 description: Introduction to Dynamic Hardware Partitioning
-ms.assetid: 0d909c64-17c4-4f0e-85b7-4e0a6a92eeee
 keywords: ["dynamic hardware partitioning WDK , about dynamic hardware partitioning", "hardware partitioning WDK dynamic , about dynamic hardware partitioning", "partitions WDK dynamic hardware , about dynamic hardware partitioning", "hardware partitionable servers WDK", "partition units WDK dynamic hardware partitions", "statically partitionable servers WDK dynamic hardware partitioning", "dynamically partitionable servers WDK dynamic hardware partitioning", "hot add WDK dynamic hardware partitioning", "hot remove WDK dynamic hardware partitioning", "hot replace WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning", "hardware partitions WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -9,6 +8,7 @@ ms.localizationpriority: medium
 
 # Introduction to Dynamic Hardware Partitioning
 
+Changing the hardware configuration of a server while the server is running is known as *dynamic hardware partitioning*. If you want to run your device drivers on servers that support dynamic hardware partitioning, your drivers must support dynamic changes to the hardware configuration of the server.
 
 A *hardware partitionable server* is a server that can be configured into one or more isolated *hardware partitions*. Each hardware partition runs an independent instance of the operating system. You can assign each of the server's hardware resources to each of the various hardware partitions in whatever configuration is appropriate for the server's application. The hardware resources that are assigned to a particular hardware partition are isolated from the other hardware partitions in the server.
 

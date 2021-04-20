@@ -1,7 +1,6 @@
 ---
 title: Device and Service Inspection Scenarios
 description: Device and Service Inspection Scenarios
-ms.assetid: 25e6ed92-e01c-4349-a614-b71bb08d71cd
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios

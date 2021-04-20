@@ -1,7 +1,6 @@
 ---
 title: Simple device orientation sensor data fields
 description: This topic provides information about the data fields that are specific to the simple device orientation sensor.
-ms.assetid: 62E0517B-10CC-4561-B7D4-5536CC3FFCE1
 ms.date: 01/04/2018
 ms.localizationpriority: medium
 ---

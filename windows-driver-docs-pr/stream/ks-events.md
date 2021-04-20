@@ -1,7 +1,6 @@
 ---
 title: KS Events
 description: KS Events
-ms.assetid: 3eaa1d65-8417-4a07-b358-823394baec9b
 keywords:
 - kernel streaming WDK , events
 - KS WDK , events

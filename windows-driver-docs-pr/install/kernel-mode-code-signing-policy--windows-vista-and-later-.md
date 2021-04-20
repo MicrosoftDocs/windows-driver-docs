@@ -1,7 +1,6 @@
 ---
 title: Driver Signing Policy
 description: Driver Signing Policy
-ms.assetid: c3ba672c-5bf2-4885-a85e-fa6d8a47ca54
 keywords:
 - driver signing WDK , kernel-mode code signing policy
 - signing drivers WDK , kernel-mode code signing policy
@@ -50,7 +49,7 @@ Before Windows 10, version 1607, the following types of drivers require an Authe
 
 * Kernel-mode device drivers
 * User-mode device drivers
-* Drivers that stream protected content. This includes audio drivers that use Protected User Mode Audio (PUMA) and Protected Audio Path (PAP), and video device drivers that handle protected video path-output protection management (PVP-OPM) commands. For more information, see [Code-signing for Protected Media Components](https://go.microsoft.com/fwlink/p/?linkid=74262).
+* Drivers that stream protected content. This includes audio drivers that use Protected User Mode Audio (PUMA) and Protected Audio Path (PAP), and video device drivers that handle protected video path-output protection management (PVP-OPM) commands. For more information, see [Code-signing for Protected Media Components](https://download.microsoft.com/download/a/f/7/af7777e5-7dcd-4800-8a0a-b18336565f5b/pmp-sign.doc).
 
 ## Signing requirements by version
 
@@ -68,19 +67,6 @@ Note that Secure Boot does not apply to Windows Vista and Windows 7.
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
 For info about signing an ELAM driver, see [Early launch antimalware](/windows/desktop/w8cookbook/secured-boot).
-
-## Signing a driver for internal distribution only
-
-In some cases, you may want to distribute a driver internally within a company rather than via Windows Update.  To do this without requiring that computers running it are in test mode, use the following procedure:
-
-1. [Register for the Hardware Dev Center](../dashboard/register-for-the-hardware-program.md).
-2. Review the [Hardware dashboard FAQ](../dashboard/hardware-dashboard-faq.md) and sign appropriate agreements.
-3. Upload codesign certificates.
-4. Sign drivers locally using a non-EV codesign certificate.
-5. Package drivers in a CAB and sign the CAB using the above codesign certificate.
-6. Submit the CAB to the Hardware Dev Center for signing.
-7. If the submission is approved, the Hardware Dev Center returns the driver with a Microsoft signature.
-8. Distribute the driver internally.
 
 ## See Also
 

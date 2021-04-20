@@ -1,7 +1,6 @@
 ---
 title: KS Pins
 description: KS Pins
-ms.assetid: 04d0d17b-c326-417d-b2e8-58b33420455a
 keywords:
 - pins WDK kernel streaming
 - KS pins WDK kernel streaming , about KS pins

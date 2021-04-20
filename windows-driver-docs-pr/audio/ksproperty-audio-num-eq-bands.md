@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS
 description: The KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS property is used to retrieve the number of frequency bands in the equalization table. This is a get-only property of a channel in an EQ node (KSNODETYPE\_EQUALIZER).
-ms.assetid: b7bb9f05-0b27-4b41-aa38-efb87fc1beee
 keywords: ["KSPROPERTY_AUDIO_NUM_EQ_BANDS Audio Devices"]
 topic_type:
 - apiref

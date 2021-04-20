@@ -1,7 +1,6 @@
 ---
 title: Managing Device Queues
 description: Managing Device Queues
-ms.assetid: 8b7d39f8-0449-4e9b-a54c-fe60ee60842c
 keywords: ["device queues WDK IRPs , managing", "supplemental IRP queues WDK kernel", "StartIo routines, supplemental device queues"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

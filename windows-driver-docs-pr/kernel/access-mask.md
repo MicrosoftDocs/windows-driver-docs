@@ -1,7 +1,6 @@
 ---
 title: Specifying Access Rights
 description: Specifying Access Rights
-ms.assetid: 8ef4b4bb-5f4e-4095-b4ab-1182c0f75619
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---

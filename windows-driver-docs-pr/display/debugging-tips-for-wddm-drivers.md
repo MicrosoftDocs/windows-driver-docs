@@ -1,7 +1,6 @@
 ---
 title: Debugging tips for WDDM drivers
 description: Describes debugging techniques for WDDM drivers
-ms.assetid: 48380bfc-ebf9-42fa-9b90-c65991ea69ef
 ms.date: 07/17/2020
 ms.localizationpriority: medium
 ---

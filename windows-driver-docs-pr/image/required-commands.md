@@ -1,7 +1,6 @@
 ---
 title: Required Commands
 description: Required Commands
-ms.assetid: e4a82cc6-8031-4d67-bef8-1d73e2d98b6b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

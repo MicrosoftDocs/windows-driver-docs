@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter Direct OID Requests
 description: Miniport Adapter Direct OID Requests
-ms.assetid: 63ced5a3-0c83-4952-aa0e-c3c654b3f241
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE
 description: The KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE property queries a pin for the size of stream header this pin uses.
-ms.assetid: 45c2e10a-c223-4d96-9055-cf012dc50e7a
 keywords: ["KSPROPERTY_STREAMINTERFACE_HEADERSIZE Streaming Media Devices"]
 topic_type:
 - apiref

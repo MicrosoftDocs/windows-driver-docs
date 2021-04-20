@@ -1,7 +1,6 @@
 ---
 title: Initializing an NDK-Capable Miniport Driver
 description: A miniport driver that supports Network Direct kernel (NDK) is initialized in the same way as other miniport drivers. However, it must also register additional NDKPI entry points.
-ms.assetid: 9C9799AB-75A8-4E9A-8702-D389B73522DC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: NDKPI Terminology
 description: The NDKPI documentation uses the following terms to describe NDK providers and consumers.
-ms.assetid: 740A78B3-B7AD-4A8C-8097-D49B39BC9F47
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

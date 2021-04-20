@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_DATATRANSFORM
 description: KSCATEGORY_DATATRANSFORM
-ms.assetid: 2e5ff89a-6ec4-4bdf-b935-675c2a337efb
 keywords: ["KSCATEGORY_DATATRANSFORM Device and Driver Installation"]
 topic_type:
 - apiref

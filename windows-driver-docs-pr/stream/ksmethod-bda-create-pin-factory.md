@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY
 description: Clients use KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY to create a pin factory for a filter.
-ms.assetid: ebc9dc1d-1b4b-40d3-82b5-f32d3781537c
 keywords: ["KSMETHOD_BDA_CREATE_PIN_FACTORY Streaming Media Devices"]
 topic_type:
 - apiref

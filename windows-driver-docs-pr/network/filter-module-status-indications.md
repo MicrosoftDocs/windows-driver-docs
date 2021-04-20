@@ -1,7 +1,6 @@
 ---
 title: Filter Module Status Indications
 description: Filter Module Status Indications
-ms.assetid: b39c6cda-dac7-4538-8ea6-513a52601b1f
 keywords:
 - filter modules WDK networking , status indications
 - filter drivers WDK networking , status indications

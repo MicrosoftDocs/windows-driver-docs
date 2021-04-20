@@ -1,7 +1,6 @@
 ---
 title: Developer Guidelines
 description: This topic discusses general guidelines for working with and developing smart card minidrivers. 
-ms.assetid: 48999DF6-3AC2-4DEA-8ABC-C427237B31E8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

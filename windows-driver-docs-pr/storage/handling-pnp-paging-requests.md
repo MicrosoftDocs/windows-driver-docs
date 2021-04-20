@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Paging Requests
 description: Handling PnP Paging Requests
-ms.assetid: c30c70d9-69c6-42d7-ae69-9c2421ba1d53
 keywords:
 - storage filter drivers WDK , PnP
 - filter drivers WDK storage , PnP

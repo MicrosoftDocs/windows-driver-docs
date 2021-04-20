@@ -1,7 +1,6 @@
 ---
 title: Synthesizer Latency
 description: Synthesizer Latency
-ms.assetid: a3134024-77b9-463b-959b-3c910f83014d
 keywords:
 - synthesizers WDK audio , latency
 - latency WDK audio , synthesizers

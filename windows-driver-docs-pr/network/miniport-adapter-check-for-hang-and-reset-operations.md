@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter Check-for-Hang and Reset Operations
 description: Miniport Adapter Check-for-Hang and Reset Operations
-ms.assetid: 53ffc5a9-bcba-4189-8845-73adfcf6816d
 keywords:
 - miniport adapters WDK networking , check-for-hang operations
 - miniport adapters WDK networking , reset operations

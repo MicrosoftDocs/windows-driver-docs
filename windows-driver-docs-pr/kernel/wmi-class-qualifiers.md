@@ -1,7 +1,6 @@
 ---
 title: WMI Class Qualifiers
 description: WMI Class Qualifiers
-ms.assetid: 62a00184-59b7-496d-b523-f4adb879d402
 keywords: ["class qualifiers WDK WMI", "MOF class qualifiers WDK WMI", "embedded classes WDK WMI", "dynamic MOF qualifiers WDK WMI", "static MOF qualifiers WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

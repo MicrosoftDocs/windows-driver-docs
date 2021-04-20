@@ -1,7 +1,6 @@
 ---
 title: C28144
 description: Warning C28144 Within a cancel routine, at the point of exit, the IRQL in Irp- CancelIrql should be the current IRQL.
-ms.assetid: f89a2f9b-6e84-4696-80c3-79b8760c9b4a
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

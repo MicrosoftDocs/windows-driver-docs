@@ -1,7 +1,6 @@
 ---
 title: Font Driver Functions
 description: Font Driver Functions
-ms.assetid: 95bf5a3b-29f8-43d2-9f24-22cfe257ead4
 keywords:
 - fonts WDK graphics , driver functions
 - GDI WDK Windows 2000 display , fonts, driver functions

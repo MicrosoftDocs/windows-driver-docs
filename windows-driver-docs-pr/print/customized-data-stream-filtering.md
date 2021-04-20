@@ -1,7 +1,6 @@
 ---
 title: Customized Data Stream Filtering
 description: Customized Data Stream Filtering
-ms.assetid: 768d4b95-4d8d-4460-9a8c-c80785f7f799
 keywords:
 - Unidrv, data stream filtering
 - data stream filtering WDK Unidrv

@@ -1,7 +1,6 @@
 ---
 title: Introduction to Release-Signing
 description: Introduction to Release-Signing
-ms.assetid: 87583d0a-f7c9-49f0-953a-f51891260d75
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,11 +30,11 @@ The [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/j
 
  
 
-If a driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms. WHQL signs the driver package catalog file for 64-bit processors, the driver publisher must also [embed a signature](embedded-signatures-in-a-driver-file.md) in the kernel-mode driver files before submitting the driver package to WHQL.
+If a driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms. WHQL signs the driver package [catalog file](catalog-files.md), but does not embed signatures in driver files. If a driver is a *boot-start driver* for 64-bit processors, the driver publisher must also [embed a signature](embedded-signatures-in-a-driver-file.md) in the kernel-mode driver files before submitting the driver package to WHQL.
 
 If the [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) does not have a [test category](/windows-hardware/test/hlk/) for your device type, you must use the following types of digital signatures to [release-sign](release-signing-driver-packages.md) driver packages on Windows Vista and later versions of Windows:
 
--   To comply with the kernel-mode code signing policy, you only have to sign the driver package's [catalog file](catalog-files.md). For a boot-start driver, you must embed an SPC signature in a kernel-mode driver file and, optionally, also sign the driver package's catalog file.
+-   To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) of 64-bit versions of Windows Vista and later versions of Windows, you must use a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) to sign a kernel-mode driver package. For non-*boot-start drivers*, you only have to sign the driver package's [catalog file](catalog-files.md). For a boot-start driver, you must embed an SPC signature in a kernel-mode driver file and, optionally, also sign the driver package's catalog file.
 
 -   To comply with the [PnP device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of 32-bit versions of Windows Vista and later versions of Windows, you can use either an SPC or a [commercial release certificate](commercial-release-certificate.md) to sign a kernel-mode driver package's catalog file. These latter two signature types verify the authenticity and integrity of a driver, but unlike a WHQL release signature, do not verify the reliability of the driver.
 

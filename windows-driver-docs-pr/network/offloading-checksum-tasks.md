@@ -1,7 +1,6 @@
 ---
 title: Offloading Checksum Tasks
 description: Offloading Checksum Tasks
-ms.assetid: 5fb2f379-c357-4ec3-b103-bdbe23fcc033
 keywords:
 - task offload WDK TCP/IP transport , checksum tasks
 - checksum tasks WDK networking

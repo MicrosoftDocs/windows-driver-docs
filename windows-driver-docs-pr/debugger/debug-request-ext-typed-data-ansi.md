@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI
 description: DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI
-ms.assetid: ac883bc8-3956-4bc3-a11e-b6e036305329
 keywords: ["DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Windows Debugging"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Debugging Bluetooth Profile Drivers
 description: Debugging Bluetooth Profile Drivers
-ms.assetid: 3c04017e-7f5c-49d4-ad7e-36c7405133a1
 keywords:
 - debugging profile drivers WDK Bluetooth
 - Bluetooth WDK , debugging profile drivers

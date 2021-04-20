@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_ALTERNATE\_AUDIO
 description: The KSPROPERTY\_AC3\_ALTERNATE\_AUDIO property specifies whether the two mono channels in an AC-3-encoded stream should be interpreted as a stereo pair or as two independent program channels.
-ms.assetid: fff2c52f-c996-4dfe-a46e-9f937cbd0d8c
 keywords: ["KSPROPERTY_AC3_ALTERNATE_AUDIO Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Trace Provider
 description: Trace Provider
-ms.assetid: 06fcb37b-6cc3-4e64-8f53-86634836c7bd
 keywords:
 - trace providers WDK
 - Event Tracing for Windows WDK , providers

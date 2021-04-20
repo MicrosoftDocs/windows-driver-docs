@@ -1,7 +1,6 @@
 ---
 title: Overview of Hyper-V
 description: Overview of Hyper-V
-ms.assetid: 2D77B1EB-6320-4609-B8EE-236EA75BEADE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

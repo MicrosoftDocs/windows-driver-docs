@@ -1,7 +1,6 @@
 ---
 title: HD Audio Bus Driver
 description: HD Audio Bus Driver
-ms.assetid: a08f4304-467b-45cf-8026-87f41b408692
 keywords:
 - HD Audio, Universal Audio Architecture
 - High Definition Audio (HD Audio), Universal Audio Architecture

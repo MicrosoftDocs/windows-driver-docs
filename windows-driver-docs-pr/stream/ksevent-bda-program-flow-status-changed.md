@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED to request notification when status on program information changes.
-ms.assetid: 4d4041ba-2330-4dc5-aa8b-3ea8cb1b27e7
 keywords: ["KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref

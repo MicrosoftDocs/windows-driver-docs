@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting the metadata authoring wizards
 description: Troubleshooting the metadata authoring wizards
-ms.assetid: EBAF4289-DA23-4FFE-8CC0-DD21021CBA86
 keywords:
 - Troubleshooting the Metadata Authoring Wizard
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Indicator implementation
 description: This topic describes indicator implementation.
-ms.assetid: 60BCE8C7-416E-4D5B-9B32-9B398CEA6A8A
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Default Data-Intersection Handlers
 description: Default Data-Intersection Handlers
-ms.assetid: 5c70a6e4-702f-4fd0-bb3e-2cde2955b2ad
 keywords:
 - data-intersection handlers WDK audio , default
 - default data-intersection handlers

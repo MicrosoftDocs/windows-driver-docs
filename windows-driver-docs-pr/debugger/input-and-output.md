@@ -1,7 +1,6 @@
 ---
 title: Input and Output
 description: Input and Output
-ms.assetid: 78e181c1-c577-49ca-910b-d2e8db2495b5
 keywords: ["Debugger Engine, input and output", "input and output", "output"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

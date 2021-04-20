@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_WRITE union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_WRITE.
-ms.assetid: c40d4c9e-2d09-4cd1-9278-5067dad2914f
 keywords: ["FLT_PARAMETERS for IRP_MJ_WRITE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

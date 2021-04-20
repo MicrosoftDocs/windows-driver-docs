@@ -1,7 +1,6 @@
 ---
 title: SRB\_CLOSE\_DEVICE\_INSTANCE
 description: SRB\_CLOSE\_DEVICE\_INSTANCE
-ms.assetid: 55a72f4f-45b3-427d-80b7-620aac870a8a
 keywords: ["SRB_CLOSE_DEVICE_INSTANCE Streaming Media Devices"]
 topic_type:
 - apiref

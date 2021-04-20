@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING
 description: In the stream class model, clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING property to determine framing requirements for a pin.
-ms.assetid: 02cacade-938b-4fab-928f-75f790692324
 keywords: ["KSPROPERTY_CONNECTION_ALLOCATORFRAMING Streaming Media Devices"]
 topic_type:
 - apiref

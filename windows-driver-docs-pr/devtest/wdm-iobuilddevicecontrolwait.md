@@ -1,7 +1,6 @@
 ---
 title: IoBuildDeviceControlWait rule (wdm)
 description: The IoBuildDeviceControlWait rule specifies that the KeWaitForSingleObject routine should be called if IoCallDriver or PoCallDriver returns STATUS\_PENDING.
-ms.assetid: F1AC3698-EA1F-400D-B2B2-3FD9B8E0FE75
 ms.date: 05/21/2018
 keywords: ["IoBuildDeviceControlWait rule (wdm)"]
 topic_type:

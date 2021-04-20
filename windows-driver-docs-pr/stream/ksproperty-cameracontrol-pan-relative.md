@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PAN\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_PAN\_RELATIVE property specifies a camera's rotation around the vertical axis.
-ms.assetid: 11b6ac3e-e65e-4a85-bfcc-f45e8e96c8fb
 keywords: ["KSPROPERTY_CAMERACONTROL_PAN_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref

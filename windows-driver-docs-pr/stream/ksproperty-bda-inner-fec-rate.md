@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_INNER\_FEC\_RATE
 description: Clients use KSPROPERTY\_BDA\_INNER\_FEC\_RATE to control the binary convolution scheme used for the inner forward error correction (FEC) type of a demodulator node.
-ms.assetid: d5bf0ce0-d383-431f-85de-3d00f4831619
 keywords: ["KSPROPERTY_BDA_INNER_FEC_RATE Streaming Media Devices"]
 topic_type:
 - apiref

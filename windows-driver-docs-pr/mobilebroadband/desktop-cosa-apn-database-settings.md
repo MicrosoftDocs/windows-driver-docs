@@ -1,7 +1,6 @@
 ---
 title: Desktop COSA/APN database settings
 description: Desktop COSA/APN database settings
-ms.assetid: 860B8587-1D70-466A-A6E7-836380AA4DFA
 ms.date: 01/28/2019
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Using Bind or Connect Redirection
 description: Using Bind or Connect Redirection
-ms.assetid: 6b27a9ad-53e9-4e80-bf03-79665f8a82a0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ A WFP connection redirection callout redirects an application's connection reque
 
 A WFP redirect record is a buffer of opaque data that WFP must set on an outbound proxy connection at the **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V4** and **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V6** layers, so that the redirected connection and the original connection are logically related.
 
-Because bind redirection is possible, it is not necessary to support local address and port modifications in a connect redirection. Changing the local address and port as part of connect redirection is not supported.
+Changing the local address and port of a flow is only supported in the bind-redirect layer. This is not supported in the connect-redirect layer.
 
 ### Layers Used for Redirection
 

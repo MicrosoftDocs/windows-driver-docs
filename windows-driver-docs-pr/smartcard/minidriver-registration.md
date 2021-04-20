@@ -1,7 +1,6 @@
 ---
 title: Minidriver Registration
 description: Minidriver Registration
-ms.assetid: 332FEBD6-9803-4502-8F84-9DB2F17BB19B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

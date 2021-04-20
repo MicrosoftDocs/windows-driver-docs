@@ -1,7 +1,6 @@
 ---
 title: StorPortPassiveFromHwInit rule (storport)
 description: StorPortEnablePassiveInitialization should not be called within the HW Initialization entry point for Storport drivers if the HW Initialization entry point can be called directly from the HW Adapter Control entry point.
-ms.assetid: F6AD52D5-4964-4406-AF5F-2820273D337C
 ms.date: 05/21/2018
 keywords: ["StorPortPassiveFromHwInit rule (storport)"]
 topic_type:

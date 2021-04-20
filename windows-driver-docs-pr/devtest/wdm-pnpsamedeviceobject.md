@@ -1,7 +1,6 @@
 ---
 title: PnpSameDeviceObject rule (wdm)
 description: The PnpSameDeviceObject rule specifies that the driver calls IoAttachDeviceToDeviceStack with a pointer to a valid target device object.
-ms.assetid: 9430962c-7430-445b-b598-57ce7f34cd45
 ms.date: 05/21/2018
 keywords: ["PnpSameDeviceObject rule (wdm)"]
 topic_type:

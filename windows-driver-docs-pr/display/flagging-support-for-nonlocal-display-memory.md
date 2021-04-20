@@ -1,7 +1,6 @@
 ---
 title: Flagging Support for Nonlocal Display Memory
 description: Flagging Support for Nonlocal Display Memory
-ms.assetid: 5e5187e8-ff93-48e0-997d-71d65d35757f
 keywords:
 - display memory WDK DirectDraw , compatibility
 - nonlocal display memory WDK DirectDraw , compatibility

@@ -1,7 +1,6 @@
 ---
 title: Object Directories
 description: Object Directories
-ms.assetid: b0e0d077-6736-4a54-b1eb-a30962442942
 keywords: ["object directories WDK kernel", "named objects WDK kernel", "directories WDK objects", "top-level object directories WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

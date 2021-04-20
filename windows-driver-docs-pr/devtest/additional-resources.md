@@ -1,7 +1,6 @@
 ---
 title: Additional resources
 description: Additional resources
-ms.assetid: 3C4D4D58-7B81-4791-A040-903BED94B46E
 keywords:
 - device metadata resources
 - device experience resources

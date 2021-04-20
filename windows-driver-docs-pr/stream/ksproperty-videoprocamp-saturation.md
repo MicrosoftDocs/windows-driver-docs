@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_SATURATION
 description: The KSPROPERTY\_VIDEOPROCAMP\_SATURATION property controls the saturation, or chroma gain, setting of the camera. This property is optional.
-ms.assetid: 1b7fd731-088b-4370-a537-9e302d28864b
 keywords: ["KSPROPERTY_VIDEOPROCAMP_SATURATION Streaming Media Devices"]
 topic_type:
 - apiref

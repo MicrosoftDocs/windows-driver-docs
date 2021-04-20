@@ -1,7 +1,6 @@
 ---
 title: Creating an INF file for a filter driver
 description: Describes how to create an INF file for a filter driver
-ms.assetid: 2ae41287-e3c5-4df5-8dec-8575343d5319
 keywords:
 - INF files WDK file system , minifilter drivers
 - INF files WDK file system , filter drivers

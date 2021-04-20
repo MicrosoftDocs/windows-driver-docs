@@ -1,7 +1,6 @@
 ---
 description: "REMOTE\_NDIS\_INITIALIZE\_CMPLT"
 title: 'REMOTE_NDIS_INITIALIZE_CMPLT'
-ms.assetid: e1e057bf-aa92-4b90-b993-a82cc260ff7f
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---

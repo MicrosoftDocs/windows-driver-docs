@@ -1,7 +1,6 @@
 ---
 title: Opening and Initializing a Serial Device
 description: Opening and Initializing a Serial Device
-ms.assetid: 08266561-4738-4313-b53b-d60081e875c7
 keywords:
 - Serial driver WDK , device opening
 - Serial driver WDK , device initializing

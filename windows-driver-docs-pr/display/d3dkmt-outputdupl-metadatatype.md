@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration
 description: Learn about the D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration, which is reserved for system use. Do not use in your driver.
-ms.assetid: 662ddca6-628a-48e7-82dd-344f6bcfb1b1
 keywords: ["D3DKMT_OUTPUTDUPL_METADATATYPE enumeration Display Devices"]
 topic_type:
 - apiref

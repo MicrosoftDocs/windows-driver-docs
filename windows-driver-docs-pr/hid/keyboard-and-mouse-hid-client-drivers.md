@@ -1,7 +1,6 @@
 ---
 title: Keyboard and mouse HID client drivers
 description: Keyboard and mouse HID client drivers. 
-ms.assetid: DAD50261-7619-4554-B864-9158A0FA1ACE
 keywords:
 - HID keyboard driver
 - keyboard drivers, HID
@@ -37,8 +36,9 @@ The figure above includes the following components:
 
 - KBDHID.sys – HID client mapper driver for keyboards. Converts HID usages into scancodes to interface with the existing keyboard class driver.
 - MOUHID.sys – HID client mapper driver for mice/touchpads. Converts HID usages into mouse commands (X/Y, buttons, wheel) to interface with the existing keyboard class driver.
-- KBDCLASS.sys – The keyboard class driver maintains functionality for all keyboards and keypads on the system in a secure manner.
-- MOUCLASS.sys – The mouse class driver maintains functionality for all mice / touchpads on the system. The driver does support both absolute and relative pointing devices. This is not the driver for touchscreens as that is managed by a different driver in Windows.
+- KBDCLASS.sys – The [keyboard class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all keyboards and keypads on the system in a secure manner.
+- MOUCLASS.sys – The [mouse class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all mice / touchpads on the system. The driver does support both absolute and relative pointing devices. This is not the driver for touchscreens as that is managed by a different driver in Windows.
+- HIDCLASS.sys - The [HID class driver](hid-architecture.md#the-hid-class-driver). The HID Class driver is the glue between KBDHID.sys and MOUHID.sys HID clients and various transports (USB, Bluetooth, etc).
 
 The system builds the driver stack as follows:
 
@@ -163,9 +163,9 @@ Kbfiltr is designed to be used with Kbdclass, the system class driver for keyboa
 
 For more information about Kbfiltr operation, see the following:
 
-- The ntddkbd.h WDK header file.
+- The [ntddkbd.h](/windows/win32/api/ntddkbd/) WDK header file.
 
-- The sample [Kbfiltr](/samples/browse/) source code.
+- The sample [Kbfiltr](/samples/microsoft/windows-driver-samples/keyboard-input-wdf-filter-driver-kbfiltr/) source code.
 
 ### Kbfiltr IOCTLs
 
@@ -334,6 +334,12 @@ VOID KbFilter_ServiceCallback(
 ## Moufiltr sample
 
 Moufiltr is designed to be used with Mouclass, the system class driver for mouse devices used with Windows 2000 and later versions, and I8042prt, the function driver for a PS/2-style mouse used with Windows 2000 and later. Moufiltr demonstrates how to filter I/O requests and add callback routines that modify the operation of Mouclass and I8042prt.
+
+For more information about Moufiltr operation, see the following:
+
+- The [ntddmou.h](/windows/win32/api/ntddmou/) WDK header file.
+
+- The sample [Moufiltr](/samples/microsoft/windows-driver-samples/mouse-input-wdf-filter-driver-moufiltr/) source code.
 
 ### Moufiltr control codes
 

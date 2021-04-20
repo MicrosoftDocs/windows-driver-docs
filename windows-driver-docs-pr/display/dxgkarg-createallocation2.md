@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_CREATEALLOCATION2 structure
 description: The DXGKARG\_CREATEALLOCATION2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 4796f378-78e0-4119-9ab4-d25d61fca7de
 keywords: ["_DXGKARG_CREATEALLOCATION2 structure Display Devices", "DXGKARG_CREATEALLOCATION2 structure Display Devices"]
 topic_type:
 - apiref

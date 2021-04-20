@@ -1,7 +1,6 @@
 ---
 title: .cordll (Control CLR Debugging)
 description: The .cordll command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
-ms.assetid: d46965b3-4f20-4e25-82e6-79e7fb9b4838
 keywords: ["Control CLR Debugging (.cordll) command", "CLR (common language runtime)", ".cordll (Control CLR Debugging) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

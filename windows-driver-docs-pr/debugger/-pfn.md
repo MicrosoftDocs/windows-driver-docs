@@ -1,7 +1,6 @@
 ---
 title: pfn
 description: The pfn extension displays information about a specific page frame or the entire page frame database.
-ms.assetid: cbdb1f04-30bc-4e12-b073-9882e4457e1a
 keywords: ["page frame", "pfn Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

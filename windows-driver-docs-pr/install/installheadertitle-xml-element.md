@@ -1,7 +1,6 @@
 ---
 title: installHeaderTitle XML Element
 description: installHeaderTitle XML Element
-ms.assetid: 43f8611c-9504-46ab-a8f2-06141bf74f1f
 keywords: ["installHeaderTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref

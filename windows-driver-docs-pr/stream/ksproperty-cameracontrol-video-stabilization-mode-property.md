@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROPERTY
 description: User-mode clients use this property to get or set a camera's video stabilization characteristics. This property is optional.
-ms.assetid: DB0CAC1A-502E-4072-903F-CFD0FAEFE928
 keywords: ["KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

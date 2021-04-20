@@ -1,7 +1,6 @@
 ---
 title: Install the sensor driver
 description: This topic shows you how to install the sensor driver on a development board.
-ms.assetid: 01CC1903-A36B-4ECC-856D-6196EC606973
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

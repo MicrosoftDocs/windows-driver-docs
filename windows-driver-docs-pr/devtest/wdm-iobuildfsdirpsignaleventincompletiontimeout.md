@@ -1,7 +1,6 @@
 ---
 title: IoBuildFsdIrpSignalEventInCompletionTimeout rule (wdm)
 description: The IoBuildFsdIrpSignalEventInCompletionTimeout rule reports a defect when the driver waits indefinitely until the lower driver returns, as the IRP’s event is required to be signaled in the completion routine.
-ms.assetid: EE191EDB-62BE-46F3-92B2-CE9090AD02E2
 ms.date: 05/21/2018
 keywords: ["IoBuildFsdIrpSignalEventInCompletionTimeout rule (wdm)"]
 topic_type:

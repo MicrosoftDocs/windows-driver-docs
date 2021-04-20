@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_PowerRelations
 description: DEVPKEY_Device_PowerRelations
-ms.assetid: 616e6d02-9047-491b-b7e7-758e1804dff5
 keywords: ["DEVPKEY_Device_PowerRelations Device and Driver Installation"]
 topic_type:
 - apiref

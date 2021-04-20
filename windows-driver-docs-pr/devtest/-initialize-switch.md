@@ -1,7 +1,6 @@
 ---
 title: /Initialize Switch
 description: The /Initialize switch initializes the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device to its original manufacturer's state.
-ms.assetid: 4e04a099-8ad6-4eb6-9ac7-d466b7d828d4
 keywords:
 - /Initialize Switch Driver Development Tools
 topic_type:

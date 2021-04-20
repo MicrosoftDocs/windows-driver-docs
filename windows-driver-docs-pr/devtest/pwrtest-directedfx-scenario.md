@@ -1,7 +1,6 @@
 ---
 title: PwrTest DirectedFx Scenario
 description: The PwrTest Directed Power Framework Scenario is designed to test PoFx v3 functionality.
-ms.assetid: edf70fce-4c2a-4747-854f-feb919e01324
 ms.date: 03/27/2019
 ms.custom: 19H1
 ---

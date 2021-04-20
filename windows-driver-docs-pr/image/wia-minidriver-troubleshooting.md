@@ -1,7 +1,6 @@
 ---
 title: WIA Minidriver Troubleshooting
 description: WIA Minidriver Troubleshooting
-ms.assetid: a0944bdd-56c4-4f7b-b542-eb353cd4d1f2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

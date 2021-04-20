@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Binding Operations
 description: Intermediate Driver Binding Operations
-ms.assetid: 129a744c-d4d4-4741-9812-e76087c585fc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

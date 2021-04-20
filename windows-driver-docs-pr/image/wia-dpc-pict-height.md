@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_PICT\_HEIGHT
 description: The WIA\_DPC\_PICT\_HEIGHT property contains the height, in pixels, to use for newly captured images.
-ms.assetid: 07320fa4-ef21-4cda-9fc0-fe788f653c31
 keywords: ["WIA_DPC_PICT_HEIGHT Imaging Devices"]
 topic_type:
 - apiref

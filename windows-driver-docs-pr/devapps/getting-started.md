@@ -1,7 +1,6 @@
 ---
 title: Getting started with UWP device apps
 description: Start here to begin building UWP device apps.
-ms.assetid: 6280E9CC-422B-4100-8B38-07BADD6A578A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -51,7 +50,7 @@ A UWP device app is a special kind of UWP app. So, before you develop your first
 
 -   [Sign up - register for a Microsoft Store developer account](https://go.microsoft.com/fwlink/p/?LinkId=302197)
 -   [Get started with Microsoft Visual Studio](/previous-versions/windows/apps/br211384(v=win.10))
--   See the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845)
+-   See the [Microsoft Store design principles](/windows/uwp/design/)
 
 ## <span id="3._learn_what_makes_windows_store_device_apps_special"></span><span id="3._LEARN_WHAT_MAKES_WINDOWS_STORE_DEVICE_APPS_SPECIAL"></span>3. Learn what makes UWP device apps special
 
@@ -70,6 +69,4 @@ You can find device-related samples with the [Devices and sensors](/samples/brow
 
 
 To begin, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
-
- 
 

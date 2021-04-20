@@ -1,7 +1,6 @@
 ---
 title: Required Changer Miniclass Routines
 description: Required Changer Miniclass Routines
-ms.assetid: bd706c00-5f6b-4bda-b6a1-a61046303e12
 keywords:
 - changer drivers WDK storage , miniclass drivers
 - storage changer drivers WDK , miniclass drivers

@@ -1,7 +1,6 @@
 ---
 title: Obtaining Sublevels of Lightweight MIP Map Textures
 description: Obtaining Sublevels of Lightweight MIP Map Textures
-ms.assetid: a2781c9a-b4bb-42a9-8ed5-9f62c1d2ee64
 keywords:
 - MIP map textures WDK DirectX 9.0 , obtaining sublevels
 - lightweight MIP-map textures WDK DirectX 9.0 , obtaining sublevels

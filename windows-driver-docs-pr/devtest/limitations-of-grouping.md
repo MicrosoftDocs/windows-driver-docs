@@ -1,7 +1,6 @@
 ---
 title: Limitations of Grouping
 description: Limitations of Grouping
-ms.assetid: 2cc49522-a504-43d7-b36b-297cd6c3f307
 keywords:
 - grouping trace sessions
 - trace sessions WDK , groups

@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_INTERFACE_INFO
 description: As a query, use the OID_GEN_INTERFACE_INFO OID to obtain the current state and statistics information for a network interface.
-ms.assetid: fa1dd52f-7cf6-4e95-af15-02ae65fcb872
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_INTERFACE_INFO Network Drivers Starting with Windows Vista

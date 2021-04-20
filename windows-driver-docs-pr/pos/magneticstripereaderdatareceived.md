@@ -1,7 +1,6 @@
 ---
 title: MagneticStripeReaderDataReceived
 description: The MagneticStripeReaderDataReceived event is raised after a successful magnetic stripe reader (MSR) scan event.
-ms.assetid: '5074669c-3914-4d15-983b-d979c7f88b21'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

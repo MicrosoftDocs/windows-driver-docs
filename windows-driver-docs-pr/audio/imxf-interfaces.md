@@ -1,7 +1,6 @@
 ---
 title: IMXF Interfaces
 description: IMXF Interfaces
-ms.assetid: 3782f812-bb95-4735-9635-e721ccda92b5
 keywords:
 - IMXF
 - MIDI transport WDK audio

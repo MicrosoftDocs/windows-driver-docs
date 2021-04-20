@@ -1,7 +1,6 @@
 ---
 title: Example 9 Detecting a Pool Memory Leak
 description: Example 9 Detecting a Pool Memory Leak
-ms.assetid: 3f634593-a024-46d1-9f3d-9d39b28bab03
 keywords: ["PoolMon, PoolMon and GFlags"]
 ms.date: 10/12/2018
 ms.localizationpriority: medium

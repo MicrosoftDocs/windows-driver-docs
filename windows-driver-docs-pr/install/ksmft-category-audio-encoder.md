@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_AUDIO_ENCODER
 description: KSMFT_CATEGORY_AUDIO_ENCODER
-ms.assetid: b8be392e-6211-46ba-8b99-edcccb7ef8fb
 keywords: ["KSMFT_CATEGORY_AUDIO_ENCODER Device and Driver Installation"]
 topic_type:
 - apiref

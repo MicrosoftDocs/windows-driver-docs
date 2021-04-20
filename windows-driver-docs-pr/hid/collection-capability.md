@@ -1,7 +1,6 @@
 ---
 title: Collection Capability
 description: Collection Capability
-ms.assetid: 228fab4f-ff90-43c5-bc68-26b29e8a7dd6
 keywords:
 - capabilities WDK HID collections
 - summary capabilities WDK HID

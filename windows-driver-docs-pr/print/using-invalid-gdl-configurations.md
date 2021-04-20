@@ -1,7 +1,6 @@
 ---
 title: Using Invalid GDL Configurations
 description: Using Invalid GDL Configurations
-ms.assetid: a61232dd-ab64-4ca4-9eb9-68fe5c7249e4
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL , invalid configurations

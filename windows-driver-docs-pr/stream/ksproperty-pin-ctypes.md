@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CTYPES
 description: Clients use the KSPROPERTY\_PIN\_CTYPES property to determine how many pin types a KS filter supports.
-ms.assetid: 2aa93591-9fe6-453f-bc50-871972cb3e50
 keywords: ["KSPROPERTY_PIN_CTYPES Streaming Media Devices"]
 topic_type:
 - apiref

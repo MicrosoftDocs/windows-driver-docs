@@ -1,7 +1,6 @@
 ---
 title: ATA Port Driver's Power Management
 description: ATA Port Driver's Power Management
-ms.assetid: 01c37fed-3b5b-4dd9-bdbd-5c5499a2ddcf
 keywords:
 - ATA Port drivers WDK , power management
 - power management WDK ATA Port driver

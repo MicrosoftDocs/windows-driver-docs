@@ -1,7 +1,6 @@
 ---
 title: Video Port Driver Support for AGP
 description: Video Port Driver Support for AGP
-ms.assetid: 445dbe4a-7f7b-4dcc-9891-17fd8fb03a6c
 keywords:
 - video miniport drivers WDK Windows 2000 , AGP
 - AGP WDK video miniport

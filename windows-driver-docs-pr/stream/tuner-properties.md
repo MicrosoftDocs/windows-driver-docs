@@ -1,7 +1,6 @@
 ---
 title: Tuner Properties
 description: Tuner Properties
-ms.assetid: 43a0c018-fb0e-4a45-9c9a-5896f1e728ac
 keywords:
 - tuner properties WDK video capture
 - PROPSETID_TUNER

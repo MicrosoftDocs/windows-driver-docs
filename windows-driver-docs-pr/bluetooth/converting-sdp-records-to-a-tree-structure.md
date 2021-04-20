@@ -1,7 +1,6 @@
 ---
 title: Converting SDP Records to a Tree Structure
 description: Converting SDP Records to a Tree Structure
-ms.assetid: 762cf68b-0082-4b9e-8f24-ff19ecf6f8bd
 keywords:
 - Bluetooth WDK , SDP server communication
 - SDP WDK Bluetooth

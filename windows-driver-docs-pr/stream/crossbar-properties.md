@@ -1,7 +1,6 @@
 ---
 title: Crossbar Properties
 description: Crossbar Properties
-ms.assetid: 41e46d45-90f8-4b0c-ab27-1fec4202b711
 keywords:
 - crossbar properties WDK video capture
 - PROPSETID_VIDCAP_CROSSBAR

@@ -23,8 +23,8 @@ ms.localizationpriority: High
 
 **Official specifications**
 
--   [Intel BIOS Implementation of UCSI](https://go.microsoft.com/fwlink/p/?LinkId=760658)
--   [USB Type-C Connector System Software Interface Specification](https://go.microsoft.com/fwlink/p/?LinkId=703713)
+-   [Intel BIOS Implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html)
+-   [USB Type-C Connector System Software Interface Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html)
 -   [Hardware design: USB Type-C components for systems with embedded controllers](hardware-design-of-a-usb-type-c-system.md#emb)
 
 
@@ -58,7 +58,7 @@ In the preceding image,
 
 -   **USB connector manager**
 
-    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined in the [USB Type-C Connector System Software Interface Specification](https://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
+    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined in the [USB Type-C Connector System Software Interface Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
     This driver is intended for systems with embedded controllers. This driver is a client to the Microsoft-provided USB connector manager class extension driver (Ucmcx.sys). The driver handles tasks such as initiating a request to the firmware to change the data or power roles and getting information needed to provide troubleshooting messages to the user.
 
@@ -79,7 +79,7 @@ In addition to the commands marked as "Required", Windows requires these command
     -   Supported Provider Capabilities Change
     -   Negotiated Power Level Change
 
-For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](https://go.microsoft.com/fwlink/p/?LinkId=760658).
+For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html).
 
 ## Example flow for UCSI
 

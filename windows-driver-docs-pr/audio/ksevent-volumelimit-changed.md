@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VOLUMELIMIT\_CHANGED
 description: The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the audio volume level limit for the audio device has changed.
-ms.assetid: CC6A6027-03CA-4D2C-8AA2-155E1617E19B
 keywords: ["KSEVENT_VOLUMELIMIT_CHANGED Audio Devices"]
 topic_type:
 - apiref

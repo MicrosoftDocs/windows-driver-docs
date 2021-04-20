@@ -1,7 +1,6 @@
 ---
 title: Display Samples
 description: Display Samples
-ms.assetid: 4595369c-20fa-4c8d-ad1d-aada97ab9fc2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

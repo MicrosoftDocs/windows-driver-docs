@@ -1,7 +1,6 @@
 ---
 title: Device Manager Error Messages
 description: Device Manager Error Messages
-ms.assetid: 38958790-6b60-48ff-a341-fc39a16602ab
 keywords:
 - Device Manager WDK , errors
 - errors WDK Device Manager

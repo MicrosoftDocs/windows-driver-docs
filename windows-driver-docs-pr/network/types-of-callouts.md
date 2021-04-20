@@ -1,7 +1,6 @@
 ---
 title: Types of Callouts
 description: Types of Callouts
-ms.assetid: d9539403-7657-4e95-8791-309673d1207d
 keywords:
 - pending packets WDK Windows Filtering Platform
 - callout types WDK Windows Filtering Platform

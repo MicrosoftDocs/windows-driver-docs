@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_QUERY_VOLUME_INFORMATION union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_QUERY\_VOLUME\_INFORMATION.
-ms.assetid: fc790885-a378-40dc-829d-94e75a7c6f13
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_VOLUME_INFORMATION union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

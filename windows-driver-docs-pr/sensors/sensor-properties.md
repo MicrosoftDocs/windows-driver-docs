@@ -1,7 +1,6 @@
 ---
 title: Sensor Properties
 description: The Sensor and Location platform defines constants that identify properties for sensors. Sensor manufacturers can also define their own properties.
-ms.assetid: a9f88dad-a81d-45dc-b607-e7b4c5036774
 topic_type:
 - apiref
 api_name:

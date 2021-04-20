@@ -1,7 +1,6 @@
 ---
 title: Motion Compensation
 description: Motion Compensation
-ms.assetid: 3b5c91f9-6c22-4110-943a-5b833f32c014
 keywords:
 - drawing WDK DirectDraw , motion compensation
 - DirectDraw WDK Windows 2000 display , motion compensation

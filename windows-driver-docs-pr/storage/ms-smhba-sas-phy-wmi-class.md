@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_SAS\_PHY WMI Class
 description: MS\_SMHBA\_SAS\_PHY WMI Class
-ms.assetid: c4fcf9ae-d2ab-4791-bf1e-55087fe03185
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

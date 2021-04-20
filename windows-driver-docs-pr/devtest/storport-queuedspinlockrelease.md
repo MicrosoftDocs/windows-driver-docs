@@ -1,7 +1,6 @@
 ---
 title: QueuedSpinLockRelease rule (storport)
 description: This rule verifies that the driver does not call KeReleaseInStackQueuedSpinLock without first acquiring the lock via KeAcquireInStackQueuedSpinLock.
-ms.assetid: F523D77B-F848-4128-9B6D-7D92E01C4632
 ms.date: 05/21/2018
 keywords: ["QueuedSpinLockRelease rule (storport)"]
 topic_type:

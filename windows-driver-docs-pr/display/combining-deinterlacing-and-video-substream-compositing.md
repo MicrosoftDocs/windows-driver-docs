@@ -1,7 +1,6 @@
 ---
 title: Combining Deinterlacing and Video Substream Compositing
 description: Combining Deinterlacing and Video Substream Compositing
-ms.assetid: d62fe460-104d-4aff-a88c-3dc5829321fa
 keywords:
 - DeinterlaceBltEx
 - deinterlacing WDK DirectX VA , combining substream compositing

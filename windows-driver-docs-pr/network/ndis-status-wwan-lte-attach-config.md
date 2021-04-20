@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG
 description: Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_LTE_ATTACH_CONFIG Query or Set request.
-ms.assetid: 866BCD4F-85A1-46C8-9FE2-8C5A8ADCD3CA
 ms.date: 08/22/2018
 keywords: 
  -NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG Network Drivers Starting with Windows Vista

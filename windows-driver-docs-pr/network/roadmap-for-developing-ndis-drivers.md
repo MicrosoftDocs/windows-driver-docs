@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing NDIS Drivers
 description: Roadmap for Developing NDIS Drivers
-ms.assetid: 4adc5438-d2ea-4b05-bbf3-e86cc5f3105a
 keywords:
 - NDIS WDK , drivers
 - NDIS WDK , drivers, developing

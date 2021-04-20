@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Timing Features
 description: Connection-Oriented Timing Features
-ms.assetid: 73b005c2-39bd-4931-89cd-7ea3db9068ca
 keywords:
 - connection-oriented NDIS WDK , timing features
 - CoNDIS WDK networking , timing features

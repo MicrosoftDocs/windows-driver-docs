@@ -1,7 +1,6 @@
 ---
 title: Streaming States
 description: Streaming States
-ms.assetid: 1030e5cd-441b-4f6a-8f6a-21ce11aaca96
 keywords:
 - video capture WDK AVStream , stream states
 - capturing video WDK AVStream , stream states

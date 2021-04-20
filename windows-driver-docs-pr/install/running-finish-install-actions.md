@@ -1,7 +1,6 @@
 ---
 title: Running Finish-Install Actions
 description: Running Finish-Install Actions
-ms.assetid: 9a5f8e7c-ba11-4a2a-82dd-32cd91c3cc39
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

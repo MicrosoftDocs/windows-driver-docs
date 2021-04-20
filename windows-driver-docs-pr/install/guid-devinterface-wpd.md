@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_WPD
 description: GUID_DEVINTERFACE_WPD
-ms.assetid: 611d1866-2530-4acb-8c83-77c29bdd128c
 keywords: ["GUID_DEVINTERFACE_WPD Device and Driver Installation"]
 topic_type:
 - apiref

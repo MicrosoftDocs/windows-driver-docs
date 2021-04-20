@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VIDCAP\_AUTO\_UPDATE
 description: The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a property value changes.
-ms.assetid: dd7e665f-104d-4276-94aa-62d64faba69d
 keywords: ["KSEVENT_VIDCAP_AUTO_UPDATE Streaming Media Devices"]
 topic_type:
 - apiref

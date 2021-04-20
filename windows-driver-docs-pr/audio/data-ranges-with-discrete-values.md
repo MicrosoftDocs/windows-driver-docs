@@ -1,7 +1,6 @@
 ---
 title: Data Ranges with Discrete Values
 description: Data Ranges with Discrete Values
-ms.assetid: 330edd60-0469-4351-bfb1-29b29e133c1a
 keywords:
 - data-intersection handlers WDK audio , discrete value data ranges
 - discrete value data ranges WDK audio

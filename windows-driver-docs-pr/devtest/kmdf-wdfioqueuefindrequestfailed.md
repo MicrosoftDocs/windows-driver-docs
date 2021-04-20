@@ -1,7 +1,6 @@
 ---
 title: WdfIoQueueFindRequestFailed rule (kmdf)
 description: The WdfIoQueueFindRequestFailed rule specifies that WdfIoQueueRetrieveFoundRequest or WdfObjectDereference should only be called after WdfIoQueueFindRequestFailed returns STATUS\_SUCCESS.
-ms.assetid: 9D211A0A-36CB-4083-B379-EE1C34A7B50F
 ms.date: 05/21/2018
 keywords: ["WdfIoQueueFindRequestFailed rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: ImageInformation element
 description: The required ImageInformation element contains information about the resulting image data from a scan made with a ScanTicket element that is currently being validated.
-ms.assetid: 58a5dc09-07fa-4e31-93f1-7370dace3263
 keywords: ["ImageInformation element Imaging Devices"]
 topic_type:
 - apiref

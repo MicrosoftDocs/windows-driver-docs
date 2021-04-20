@@ -1,7 +1,6 @@
 ---
 title: Initializing a General I/O Target
 description: Initializing a General I/O Target
-ms.assetid: c5d5b589-09a3-4f58-83bf-2876b37b0937
 keywords:
 - general I/O targets WDK KMDF , initializing
 - initializing general I/O targets WDK KMDF

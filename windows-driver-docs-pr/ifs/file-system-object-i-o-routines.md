@@ -1,7 +1,6 @@
 ---
 title: File System Object I/O Routines
 description: File System Object I/O Routines
-ms.assetid: 0514e396-76b9-458b-9a98-e539d7e90274
 keywords:
 - mini-redirectors WDK , object I/O routines
 - I/O WDK network redirectors

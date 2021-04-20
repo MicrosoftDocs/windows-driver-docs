@@ -1,7 +1,6 @@
 ---
 title: SeStopImpersonatingClient routine
 description: The SeStopImpersonatingClient routine ends the calling thread's impersonation of a user.
-ms.assetid: 1aab384b-919c-4709-9ceb-66616c622714
 keywords: ["SeStopImpersonatingClient routine Installable File System Drivers"]
 topic_type:
 - apiref

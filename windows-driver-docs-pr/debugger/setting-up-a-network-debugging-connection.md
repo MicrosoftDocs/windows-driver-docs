@@ -1,7 +1,6 @@
 ---
 title: Setting Up KDNET Network Kernel Debugging Manually
 description: Debugging Tools for Windows supports kernel debugging over a network.
-ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.date: 12/07/2018
 ms.localizationpriority: medium

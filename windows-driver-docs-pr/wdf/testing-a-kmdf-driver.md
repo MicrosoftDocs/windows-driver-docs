@@ -1,7 +1,6 @@
 ---
 title: Testing a WDF Driver (KMDF or UMDF)
 description: This topic describes recommendations for testing a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) version 2 driver.
-ms.assetid: 05545488-0114-49f5-bf8a-006a868911e8
 keywords:
 - kernel-mode drivers WDK KMDF , testing
 - KMDF WDK , testing drivers

@@ -1,7 +1,6 @@
 ---
 title: User Interface Plug-Ins
 description: User Interface Plug-Ins
-ms.assetid: 22ac2af6-37d8-4913-95af-9c3dc8576d40
 keywords:
 - printer driver customizing WDK , user interface plug-ins
 - customizing printer drivers WDK , user interface plug-ins

@@ -1,7 +1,6 @@
 ---
 title: Concepts for all driver developers
 description: In this section, concepts needed for all driver developers are described.
-ms.assetid: 639bba8d-d0de-401b-aeb4-c9ad43760e54
 keywords:
 - driver fundamentals
 ms.date: 04/20/2017

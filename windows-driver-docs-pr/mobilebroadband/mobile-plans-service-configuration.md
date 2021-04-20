@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans service configuration
 description: This topic describes the configuration steps for the Mobile Plans program.
-ms.assetid: 95122BBB-0466-4130-9209-7EC6545DFD4D
 keywords:
 - Windows Mobile Plans configuration, Mobile Plans configuration mobile operators
 ms.date: 02/25/2019

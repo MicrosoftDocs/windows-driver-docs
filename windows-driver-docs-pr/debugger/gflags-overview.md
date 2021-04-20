@@ -1,7 +1,6 @@
 ---
 title: GFlags Overview
 description: GFlags Overview
-ms.assetid: fa5c48bf-c0d0-4010-a101-381c692082bf
 keywords: ["GFlags, overview"]
 ms.date: 06/12/2018
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver DriverEntry Function
 description: Intermediate Driver DriverEntry Function
-ms.assetid: 85b4d5c0-8ec9-41a9-a34e-578a85d411e3
 keywords:
 - intermediate drivers WDK networking , entry points
 - NDIS intermediate drivers WDK , entry points

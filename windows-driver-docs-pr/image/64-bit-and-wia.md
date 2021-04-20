@@ -1,7 +1,6 @@
 ---
 title: 64-Bit and WIA
 description: 64-Bit and WIA
-ms.assetid: 392e60c7-2ad6-4a71-83de-5e5ac550dc8b
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

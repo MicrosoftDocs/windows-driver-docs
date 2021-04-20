@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPEMOD_ARRAY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPEMOD_ARRAY identifier represents a property-data-type modifier that can be combined with the base-data-type identifiers to create a property-data-type identifier that represents an array of base-data-type values.
-ms.assetid: 33f12b66-c81a-451b-851a-b58a34a8fe9e
 keywords: ["DEVPROP_TYPEMOD_ARRAY Device and Driver Installation"]
 topic_type:
 - apiref

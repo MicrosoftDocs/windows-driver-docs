@@ -1,7 +1,6 @@
 ---
 title: How the Volume is Recognized
 description: How the Volume is Recognized
-ms.assetid: 0531b023-f35c-4fe9-9c0d-5acafc42f9b4
 keywords:
 - filter drivers WDK file system , volume mount process , recognizing the volume
 - file system filter drivers WDK , volume mount process , recognizing the volume

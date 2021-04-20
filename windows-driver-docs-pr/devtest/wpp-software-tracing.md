@@ -1,7 +1,6 @@
 ---
 title: WPP Software Tracing
 description: This section describes how to use the Windows software trace preprocessor (WPP) to trace the operation of a software component trace provider.
-ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900
 keywords:
 - Windows software trace preprocessor WDK
 - WPP software tracing WDK
@@ -81,7 +80,7 @@ For more information about ETW, see [Event Tracing for Windows](/windows-hardwar
 
 **Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](/windows/desktop/ETW/about-event-tracing#providers) for more information.
 
-For information about the [WMI library support routines](/windows-hardware/drivers/ddi/index) that support WPP software tracing, see:
+For information about the WMI library support routines that support WPP software tracing, see:
 
 [**WmiQueryTraceInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmiquerytraceinformation)
 

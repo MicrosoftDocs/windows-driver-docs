@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_STEREO\_ENHANCE
 description: Learn about the KSPROPERTY\_AUDIO\_STEREO\_ENHANCE parameter. This parameter name is reserved for future use.
-ms.assetid: 5ec223ec-a3cf-4613-9fb1-e5dc9424993a
 keywords: ["KSPROPERTY_AUDIO_STEREO_ENHANCE Audio Devices"]
 topic_type:
 - apiref

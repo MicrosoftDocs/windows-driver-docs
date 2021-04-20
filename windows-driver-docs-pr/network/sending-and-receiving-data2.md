@@ -1,7 +1,6 @@
 ---
 title: Sending and receiving data in CoNDIS
 description: Sending and receiving data in CoNDIS
-ms.assetid: aad7ccf9-0eaa-4327-b048-268d12593a70
 keywords:
 - virtual connections WDK CoNDIS , data transfers
 ms.date: 04/20/2017

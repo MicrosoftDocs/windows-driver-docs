@@ -1,7 +1,6 @@
 ---
 title: Using the DbgRpc Tool
 description: Using the DbgRpc Tool
-ms.assetid: a98b9141-72e1-4957-a65c-36e677d159a6
 keywords: ["DbgRpc", "DbgRpc, basic use"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

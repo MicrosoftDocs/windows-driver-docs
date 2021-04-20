@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Biometric Drivers
 description: Getting Started with Biometric Drivers
-ms.assetid: 7f5dcac2-db0d-4ddd-9e57-886db324e38b
 keywords:
 - biometric drivers WDK , about biometric drivers
 ms.date: 04/20/2017

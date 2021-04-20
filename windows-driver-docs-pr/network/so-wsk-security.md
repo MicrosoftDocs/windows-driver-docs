@@ -1,7 +1,6 @@
 ---
 title: SO_WSK_SECURITY
 description: SO_WSK_SECURITY
-ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
 ms.date: 07/18/2017
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista

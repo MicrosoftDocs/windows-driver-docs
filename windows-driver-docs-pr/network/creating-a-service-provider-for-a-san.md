@@ -1,7 +1,6 @@
 ---
 title: Creating a Service Provider for a SAN
 description: Creating a Service Provider for a SAN
-ms.assetid: 848b6fd5-64f8-4e62-9c54-c23bbc3d9ede
 keywords:
 - Windows Sockets Direct WDK , service providers
 - SAN service providers WDK , creating

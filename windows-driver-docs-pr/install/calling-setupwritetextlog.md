@@ -1,7 +1,6 @@
 ---
 title: Calling SetupWriteTextLog
 description: Calling SetupWriteTextLog
-ms.assetid: a07118ae-bef6-4d01-94d9-98587cbff863
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

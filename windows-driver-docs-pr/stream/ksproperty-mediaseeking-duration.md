@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_DURATION
 description: The KSPROPERTY\_MEDIASEEKING\_DURATION property retrieves the media duration on a filter.
-ms.assetid: f84ff468-7cf6-4948-afee-a28ee365760d
 keywords: ["KSPROPERTY_MEDIASEEKING_DURATION Streaming Media Devices"]
 topic_type:
 - apiref

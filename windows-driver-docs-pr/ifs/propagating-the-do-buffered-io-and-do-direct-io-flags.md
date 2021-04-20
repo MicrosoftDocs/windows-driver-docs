@@ -1,7 +1,6 @@
 ---
 title: Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
 description: Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
-ms.assetid: a0cb4f1a-3c27-4608-a208-ffcf4113b722
 keywords:
 - filter drivers WDK file system , attaching filters
 - file system filter drivers WDK , attaching filters

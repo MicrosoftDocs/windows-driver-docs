@@ -1,7 +1,6 @@
 ---
 title: User Clip Planes
 description: User Clip Planes
-ms.assetid: ea0a7b3b-b850-46bd-b39d-927f28e8de2a
 keywords:
 - clip planes WDK Direct3D
 - user-defined clip planes WDK Direct3D

@@ -1,7 +1,6 @@
 ---
 title: Palletized Textures
 description: Palletized Textures
-ms.assetid: 031739fe-32ee-46f1-a32a-de84f17eb528
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , palletized textures
 - textures WDK DirectX 8.0

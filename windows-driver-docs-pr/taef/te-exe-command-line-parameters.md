@@ -1,7 +1,6 @@
 ---
 title: Te.exe Command Options
 description: Te.exe Command Options
-ms.assetid: E9A9292D-FA30-410d-9322-BD0F321314F9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

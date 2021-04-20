@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Driver's HwScsiAdapterState Routine
 description: SCSI Miniport Driver's HwScsiAdapterState Routine
-ms.assetid: 359c41ba-b8d9-4e2d-87d7-025db377606b
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiAdapterState
 - HwScsiAdapterState

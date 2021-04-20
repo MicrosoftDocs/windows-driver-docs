@@ -1,7 +1,6 @@
 ---
 title: Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object
-ms.assetid: 142eb2f0-6c6d-4441-8ad7-0875546c1ab2
 keywords:
 - HDAUDIO_BUS_INTERFACE_BDL structure
 ms.date: 04/20/2017

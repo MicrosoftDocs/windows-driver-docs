@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_NETWORK_EPG
 description: KSCATEGORY_BDA_NETWORK_EPG
-ms.assetid: 70a02c74-f092-4d1b-bf35-392da5c4fcb6
 keywords: ["KSCATEGORY_BDA_NETWORK_EPG Device and Driver Installation"]
 topic_type:
 - apiref

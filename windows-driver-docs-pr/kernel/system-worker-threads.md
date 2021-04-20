@@ -1,7 +1,6 @@
 ---
 title: System Worker Threads
 description: System Worker Threads
-ms.assetid: 01ae1c1b-0cb0-4b9b-bd74-341b7c289fd4
 keywords: ["executive worker threads WDK kernel", "work items WDK kernel", "thread objects WDK kernel", "WorkItem", "WorkItemEx", "worker threads WDK kernel", "worker-thread callback routines WDK kernel", "callback routines WDK worker threads"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

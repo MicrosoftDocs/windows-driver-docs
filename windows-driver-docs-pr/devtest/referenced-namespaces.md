@@ -1,7 +1,6 @@
 ---
 title: Referenced Namespaces
 description: Referenced Namespaces
-ms.assetid: 4adb0979-1e97-4697-bd85-c808023ce43f
 keywords:
 - WSDBIT tool WDK , namespaces
 - WSDAPI Basic Interoperability Tool WDK , namespaces

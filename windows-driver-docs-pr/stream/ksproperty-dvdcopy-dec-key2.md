@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_DEC\_KEY2
 description: The KSPROPERTY\_DVDCOPY\_DEC\_KEY2 property retrieves the second bus key that is later provided to the decoder as part of the DVD copyright protection authentication process.
-ms.assetid: 48e62fec-773d-46b6-838b-5e1e457cb6a3
 keywords: ["KSPROPERTY_DVDCOPY_DEC_KEY2 Streaming Media Devices"]
 topic_type:
 - apiref

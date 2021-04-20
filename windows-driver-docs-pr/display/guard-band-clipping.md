@@ -1,7 +1,6 @@
 ---
 title: Guard Band Clipping
 description: Guard Band Clipping
-ms.assetid: bd4ebd97-c948-4219-95a5-f7c6ca45f792
 keywords:
 - Direct3D WDK Windows 2000 display , guard band clipping
 - guard band clipping WDK Direct3D

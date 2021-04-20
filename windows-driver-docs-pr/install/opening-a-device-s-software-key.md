@@ -1,7 +1,6 @@
 ---
 title: Opening a Device's Software Key
 description: Opening a Device's Software Key
-ms.assetid: CA9EC186-7991-4cc5-B49E-DFE87A13BCFA
 keywords:
 - software keys WDK device installations , opening
 - opening software keys WDK device installations

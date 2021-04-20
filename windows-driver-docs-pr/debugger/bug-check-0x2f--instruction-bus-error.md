@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x2F INSTRUCTION_BUS_ERROR
 description: The INSTRUCTION_BUS_ERROR bug check has a value of 0x0000002F.This bug check appears very infrequently.
-ms.assetid: ff2d54ad-924b-420c-b2f9-716c30cb1ef8
 keywords: ["Bug Check 0x2F INSTRUCTION_BUS_ERROR", "INSTRUCTION_BUS_ERROR"]
 ms.date: 05/23/2017
 topic_type:

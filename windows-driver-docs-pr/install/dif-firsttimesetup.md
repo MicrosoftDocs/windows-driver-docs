@@ -1,7 +1,6 @@
 ---
 title: DIF_FIRSTTIMESETUP
 description: DIF_FIRSTTIMESETUP
-ms.assetid: 6ac4da58-3f4f-4fcd-96e2-c480975159e0
 keywords: ["DIF_FIRSTTIMESETUP Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: NullCheck rule (ndis)
 description: Learn about the NullCheck rule (ndis). This rule verifies that a NULL value inside the driver code is not dereferenced later in the driver.
-ms.assetid: E892C9C3-854B-49EF-B69E-E2ED6438128F
 ms.date: 05/21/2018
 keywords: ["NullCheck rule (ndis)"]
 topic_type:

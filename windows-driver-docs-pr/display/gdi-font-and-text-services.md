@@ -1,7 +1,6 @@
 ---
 title: GDI Font and Text Services
 description: GDI Font and Text Services
-ms.assetid: c315f3ec-ddee-42d9-8bfb-7bb2e0d1d4b2
 keywords:
 - fonts WDK GDI
 - GDI WDK Windows 2000 display , fonts

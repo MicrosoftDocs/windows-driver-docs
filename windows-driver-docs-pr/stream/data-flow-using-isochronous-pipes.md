@@ -1,7 +1,6 @@
 ---
 title: Data Flow Using Isochronous Pipes
 description: Data Flow Using Isochronous Pipes
-ms.assetid: a66f4191-53ce-4ca2-aae7-8fb24a1a9a16
 keywords:
 - isochronous pipes WDK USBCAMD2
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library

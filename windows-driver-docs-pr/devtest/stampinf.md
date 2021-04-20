@@ -1,7 +1,6 @@
 ---
 title: Stampinf
 description: Stampinf
-ms.assetid: 5cab6adc-1511-42f2-a873-34cd10c638f5
 keywords:
 - Stampinf WDK
 - KMDF drivers WDK

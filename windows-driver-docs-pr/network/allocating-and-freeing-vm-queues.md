@@ -1,7 +1,6 @@
 ---
 title: Allocating and Freeing VM Queues
 description: Allocating and Freeing VM Queues
-ms.assetid: d5ec928d-46be-49e7-9126-ad7d1a91d14e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

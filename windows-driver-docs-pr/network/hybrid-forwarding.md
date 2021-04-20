@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch hybrid forwarding
 description: This section describes hybrid forwarding with a Hyper-V Extensible Switch
-ms.assetid: 135CA734-1C92-4EEA-81DC-96A6A68ABBE8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

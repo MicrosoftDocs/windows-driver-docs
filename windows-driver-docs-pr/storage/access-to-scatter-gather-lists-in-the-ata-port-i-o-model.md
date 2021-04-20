@@ -1,7 +1,6 @@
 ---
 title: Access to Scatter/Gather Lists in the ATA Port I/O Model
 description: Access to Scatter/Gather Lists in the ATA Port I/O Model
-ms.assetid: 56221602-9588-47f2-acd9-a11bd5ce02d9
 keywords:
 - ATA Port drivers WDK , scatter/gather list
 - scatter/gather list WDK ATA Port driver

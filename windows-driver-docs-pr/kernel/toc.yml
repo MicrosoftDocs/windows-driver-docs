@@ -248,6 +248,8 @@
     href: managing-memory-for-drivers.md
   - name: "Overview of Windows Memory Space"
     href: overview-of-windows-memory-space.md
+  - name: "Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3"
+    href: updating-deprecated-exallocatepool-calls.md
   - name: "Allocating System-Space Memory"
     href: allocating-system-space-memory.md
   - name: "POOL_FLAGS"
@@ -1308,40 +1310,40 @@
       href: using-virtual-clock-values.md
     - name: "Using TmXxx Routines"
       href: using-tmxxx-routines.md
-    - name: "Dynamic Hardware Partitioning Techniques"
-      href: dynamic-hardware-partitioning-techniques.md
+  - name: "Dynamic Hardware Partitioning Techniques"
+    items:
     - name: "Introduction to Dynamic Hardware Partitioning"
       href: introduction-to-dynamic-hardware-partitioning.md
     - name: "Dynamic Hardware Partitioning Architecture"
       href: dynamic-hardware-partitioning-architecture.md
-  - name: "Critical Issues for Device Drivers"
-    items: 
-    - name: "Changes to the Number of Processors"
-      href: changes-to-the-number-of-processors.md
-    - name: "Changes to the Amount of Physical Memory"
-      href: changes-to-the-amount-of-physical-memory.md
-    - name: "Hot Replace of Partition Units"
-      href: hot-replace-of-partition-units.md
-  - name: "Driver Notification"
-    items: 
-    - name: "Introduction to Driver Notification"
-      href: introduction-to-driver-notification.md
-    - name: "Registering for Synchronous Driver Notification"
-      href: registering-for-synchronous-driver-notification.md
-    - name: "Processing a Synchronous Driver Notification"
-      href: processing-a-synchronous-driver-notification.md
-    - name: "Registering for Asynchronous Driver Notification"
-      href: registering-for-asynchronous-driver-notification.md
-    - name: "Processing an Asynchronous Driver Notification"
-      href: processing-an-asynchronous-driver-notification.md
-  - name: "Application Notification"
-    items: 
-    - name: "Introduction to Application Notification"
-      href: introduction-to-application-notification.md
-    - name: "Registering for Application Notification"
-      href: registering-for-application-notification.md
-    - name: "Processing an Application Notification"
-      href: processing-an-application-notification.md
+    - name: "Critical Issues for Device Drivers"
+      items: 
+      - name: "Changes to the Number of Processors"
+        href: changes-to-the-number-of-processors.md
+      - name: "Changes to the Amount of Physical Memory"
+        href: changes-to-the-amount-of-physical-memory.md
+      - name: "Hot Replace of Partition Units"
+        href: hot-replace-of-partition-units.md
+    - name: "Driver Notification"
+      items: 
+      - name: "Introduction to Driver Notification"
+        href: introduction-to-driver-notification.md
+      - name: "Registering for Synchronous Driver Notification"
+        href: registering-for-synchronous-driver-notification.md
+      - name: "Processing a Synchronous Driver Notification"
+        href: processing-a-synchronous-driver-notification.md
+      - name: "Registering for Asynchronous Driver Notification"
+        href: registering-for-asynchronous-driver-notification.md
+      - name: "Processing an Asynchronous Driver Notification"
+        href: processing-an-asynchronous-driver-notification.md
+    - name: "Application Notification"
+      items: 
+      - name: "Introduction to Application Notification"
+        href: introduction-to-application-notification.md
+      - name: "Registering for Application Notification"
+        href: registering-for-application-notification.md
+      - name: "Processing an Application Notification"
+        href: processing-an-application-notification.md
   - name: "NTSTATUS Values"
     items: 
     - name: "Using NTSTATUS Values"

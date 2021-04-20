@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_TYPES
 description: Clients use KSPROPERTY\_BDA\_PIN\_TYPES to retrieve a list of pin types.
-ms.assetid: de11ab3c-a787-4831-aad4-e97f46432032
 keywords: ["KSPROPERTY_BDA_PIN_TYPES Streaming Media Devices"]
 topic_type:
 - apiref

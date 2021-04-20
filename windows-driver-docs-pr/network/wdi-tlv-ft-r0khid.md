@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FT_R0KHID
 description: WDI_TLV_FT_R0KHID is an unused TLV.
-ms.assetid: A9E8B09E-8EB8-4832-8F3D-148C2F0DF6BE
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_R0KHID Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_SENSOR_CAMERA
 description: KSCATEGORY_SENSOR_CAMERA
-ms.assetid: 79FF1642-630A-4E11-9EAE-74D187CF5088
 keywords: ["KSCATEGORY_SENSOR_CAMERA Device and Driver Installation"]
 topic_type:
 - apiref

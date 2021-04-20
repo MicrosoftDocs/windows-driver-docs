@@ -1,7 +1,6 @@
 ---
 title: Remote Tool Concepts
 description: Remote Tool Concepts
-ms.assetid: 509b25cd-d69a-442d-bd5b-a69266d341c3
 keywords: ["Remote Tool, Remote Tool Concepts"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

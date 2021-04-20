@@ -1,7 +1,6 @@
 ---
 title: Splitting Frames at the UDP Payload
 description: Splitting Frames at the UDP Payload
-ms.assetid: 10116077-89d2-4d07-9807-46b6281e9851
 keywords:
 - Ethernet frame splitting WDK networking , UDP payload
 - UDP payload WDK header-data split

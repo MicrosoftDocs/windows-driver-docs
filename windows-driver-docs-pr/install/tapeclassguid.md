@@ -1,7 +1,6 @@
 ---
 title: TapeClassGuid
 description: TapeClassGuid
-ms.assetid: 308dc968-6c6d-4beb-a8bf-2233e859389d
 keywords: ["TapeClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME property retrieves a Unicode string containing the Plug and Play device interface name for the specified virtual audio device.
-ms.assetid: 0541ebb3-ad9a-42c6-9cd6-ea7b056821df
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_INTERFACE_NAME Audio Devices"]
 topic_type:
 - apiref

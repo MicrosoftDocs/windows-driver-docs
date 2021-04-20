@@ -1,7 +1,6 @@
 ---
 title: BinPlace Command-Line Syntax
 description: BinPlace uses the following syntax at the command line
-ms.assetid: 8489b7ae-3e3b-41d5-b9a6-0b69aa92087e
 keywords:
 - BinPlace Command-Line Syntax Driver Development Tools
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Hardware Constraints on Sample Frequency
 description: Hardware Constraints on Sample Frequency
-ms.assetid: e0041fd9-073c-4779-a3cf-6d0527ba847b
 keywords:
 - sample frequency constraints WDK audio
 - constraining sample frequency WDK audio

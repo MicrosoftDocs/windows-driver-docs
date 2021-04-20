@@ -1,7 +1,6 @@
 ---
 title: SM\_RemoveTarget function
 description: The SM\_RemoveTarget WMI method configures the WMI provider so that it stops passing events that are associated with the indicated target to the WMI client.
-ms.assetid: 9be2a40c-299a-4d92-b9a2-ef60eb6d90e9
 keywords: ["SM_RemoveTarget function Storage Devices"]
 topic_type:
 - apiref

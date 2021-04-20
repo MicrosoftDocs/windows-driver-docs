@@ -1,7 +1,6 @@
 ---
 title: Low Power on Media Disconnect
 description: Low Power on Media Disconnect
-ms.assetid: 592f3835-47ec-443a-9ab5-e700fed2f7f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

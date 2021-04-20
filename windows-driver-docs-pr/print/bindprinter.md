@@ -1,7 +1,6 @@
 ---
 title: BindPrinter
 description: The IPrintTicketProvider BindPrinter method binds a printer or print queue to a specific version of the Print Ticket schema.
-ms.assetid: 81f32a9a-417a-4851-972e-373112590e1c
 keywords:
 - BindPrinter
 ms.date: 04/20/2017

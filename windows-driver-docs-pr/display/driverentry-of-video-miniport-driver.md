@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of Video Miniport Driver function
 description: DriverEntry is the initial entry point into the video miniport driver.
-ms.assetid: b927dd2c-19e1-49bc-b30b-530efe2ba13b
 keywords: ["DriverEntry function Display Devices"]
 topic_type:
 - apiref

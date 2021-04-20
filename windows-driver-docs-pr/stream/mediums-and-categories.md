@@ -1,7 +1,6 @@
 ---
 title: Mediums and Categories
 description: Mediums and categories
-ms.assetid: 2bc83ce6-7f79-44e7-a0fb-7b9f56771730
 keywords:
 - video capture WDK AVStream , mediums
 - capturing video WDK AVStream , mediums

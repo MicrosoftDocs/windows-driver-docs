@@ -1,7 +1,6 @@
 ---
 title: Submitting a Command Buffer
 description: Submitting a Command Buffer
-ms.assetid: 3622697a-3989-4756-89d4-c67c81815d49
 keywords:
 - command buffers WDK display , submitting
 - submitting command buffers WDK display

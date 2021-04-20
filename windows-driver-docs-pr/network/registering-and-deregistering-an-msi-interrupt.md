@@ -1,7 +1,6 @@
 ---
 title: Registering and Deregistering an MSI Interrupt
 description: Registering and Deregistering an MSI Interrupt
-ms.assetid: 61bdcf8c-b56e-4ef9-b9db-407591ff2f95
 keywords:
 - MSI-X WDK networking , registering interrupts
 - message-signaled interrupts WDK networking , registering interrupts

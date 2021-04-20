@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_UICC_ACCESS_RECORD
 description: OID_WWAN_UICC_ACCESS_RECORD accesses a UICC linear fixed or cyclic file, the structure type of which is WwanUiccFileStructureCyclic or WwanUiccFileStructureLinear.
-ms.assetid: 450F397E-AC91-4239-BF60-B0DEB2F065DA
 ms.date: 04/10/2019
 keywords: 
  -OID_WWAN_UICC_ACCESS_RECORD Network Drivers Starting with Windows Vista

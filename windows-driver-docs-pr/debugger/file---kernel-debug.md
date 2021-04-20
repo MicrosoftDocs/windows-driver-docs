@@ -1,7 +1,6 @@
 ---
 title: File Kernel Debug
 description: File Kernel Debug
-ms.assetid: a80b3572-87a0-4a9d-9b62-67e1ca65fff4
 keywords: ["File Kernel Debug", "starting the debugger, File Kernel Debug"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Sending HID Reports
 description: Sending HID Reports
-ms.assetid: a4571b79-847b-4db0-be02-ac2f922162bb
 keywords:
 - reports WDK HID , sending
 - sending reports

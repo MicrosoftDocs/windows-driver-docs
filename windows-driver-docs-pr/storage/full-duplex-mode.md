@@ -1,7 +1,6 @@
 ---
 title: Full-Duplex Mode
 description: Full-Duplex Mode
-ms.assetid: 01e3388d-d568-4476-9ff0-2125acafb841
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

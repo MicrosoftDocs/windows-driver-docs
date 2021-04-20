@@ -1,7 +1,6 @@
 ---
 title: Premium services
 description: Premium services
-ms.assetid: 23c68c28-686c-4396-ac07-21d3c2bcca1c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

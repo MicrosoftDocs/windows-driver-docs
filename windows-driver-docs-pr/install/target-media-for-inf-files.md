@@ -1,7 +1,6 @@
 ---
 title: Target Media for INF Files
 description: Target Media for INF Files
-ms.assetid: f1aaea38-e500-40a9-89c1-9c4447054fb1
 keywords:
 - INF files WDK device installations , target media
 - target media WDK INF files

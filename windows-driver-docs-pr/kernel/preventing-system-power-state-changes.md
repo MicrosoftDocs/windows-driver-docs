@@ -1,7 +1,6 @@
 ---
 title: Preventing System Power State Changes
 description: Preventing System Power State Changes
-ms.assetid: a744dfe7-d756-45c3-8fdf-7a403f6cde36
 keywords: ["system power states WDK kernel , preventing changes", "state transitions WDK power management", "PoRegisterSystemState", "PoSetSystemState", "PoUnregisterSystemState", "working states WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

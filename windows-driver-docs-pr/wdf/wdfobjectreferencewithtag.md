@@ -1,7 +1,6 @@
 ---
 title: WdfObjectReferenceWithTag macro
 description: The WdfObjectReferenceWithTag macro increments the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
-ms.assetid: f0206238-c745-48b3-84d0-9f6d6ec9c2e0
 keywords:
  - WdfObjectReferenceWithTag macro
 ms.date: 08/23/2017

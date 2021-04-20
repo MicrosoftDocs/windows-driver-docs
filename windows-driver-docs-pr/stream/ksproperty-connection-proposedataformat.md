@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT
 description: Clients can use the KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT property to propose a new data format for the connection.
-ms.assetid: f5bc7cd2-0033-4761-962b-33c82925134b
 keywords: ["KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

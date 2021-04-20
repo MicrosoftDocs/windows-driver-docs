@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL
 description: The KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL property specifies the volume level of a channel in a given stream.
-ms.assetid: E10E2ADC-BD76-4871-85DA-19385A0D77EE
 keywords: ["KSPROPERTY_AUDIOENGINE_VOLUMELEVEL Audio Devices"]
 topic_type:
 - apiref

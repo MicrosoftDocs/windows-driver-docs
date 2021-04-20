@@ -1,7 +1,6 @@
 ---
 title: Service Sink and Service Group Objects
 description: Service Sink and Service Group Objects
-ms.assetid: 00e17e01-8889-4fae-a0ff-e110d7a9b21e
 keywords:
 - helper objects WDK audio , service sink objects
 - helper objects WDK audio , service group objects

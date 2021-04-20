@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_CAPS
 description: The KSPROPERTY\_TUNER\_CAPS property describes the basic capabilities of a tuner. This property must be implemented.
-ms.assetid: 70255053-d241-44ca-ba24-cfc442629ab3
 keywords: ["KSPROPERTY_TUNER_CAPS Streaming Media Devices"]
 topic_type:
 - apiref

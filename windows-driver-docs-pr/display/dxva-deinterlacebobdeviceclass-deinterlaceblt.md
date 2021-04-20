@@ -1,7 +1,6 @@
 ---
 title: DXVA_DeinterlaceBobDeviceClass DeinterlaceBlt method
 description: The sample DeinterlaceBlt function performs deinterlace or frame-rate conversion by writing the output to a destination surface.
-ms.assetid: 0aa68d0c-8c2b-41fe-9e46-a41b157fbd98
 keywords: ["DeinterlaceBlt method Display Devices", "DeinterlaceBlt method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceBlt method"]
 topic_type:
 - apiref

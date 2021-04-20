@@ -1,7 +1,6 @@
 ---
 title: Miniport Interfaces
 description: Miniport Interfaces
-ms.assetid: 50b92adc-a63c-4242-9ec9-4d97151f0f91
 keywords:
 - audio miniport drivers WDK , interfaces
 - miniport drivers WDK audio , interfaces

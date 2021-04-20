@@ -1,7 +1,6 @@
 ---
 title: Shader Code Format
 description: Shader Code Format
-ms.assetid: 62377d19-8e45-4d0c-b974-0c0417d1a948
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Performing Control Operations on a Client Object
 description: Performing Control Operations on a Client Object
-ms.assetid: 080c4821-43ea-4b6d-a55a-99621db17fb7
 keywords:
 - Winsock Kernel WDK networking , control operations
 - WSK WDK networking , control operations

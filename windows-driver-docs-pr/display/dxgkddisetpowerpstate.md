@@ -1,7 +1,6 @@
 ---
 title: DXGKDDISETPOWERPSTATE callback function
 description: Learn about the DXGKDDISETPOWERPSTATE callback function, which is reserved for system use. Do not use it in your driver.
-ms.assetid: 58DB4615-BD52-4003-8D60-0881E87C7BD3
 keywords: ["DxgkDdiSetPowerPState callback function Display Devices", "DXGKDDISETPOWERPSTATE"]
 topic_type:
 - apiref

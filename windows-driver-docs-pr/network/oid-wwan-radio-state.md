@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_RADIO_STATE
 description: OID_WWAN_RADIO_STATE sets or returns information about a MB device's radio power state.
-ms.assetid: e6d09ae8-65c8-4544-9581-8937f61f0747
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_RADIO_STATE Network Drivers Starting with Windows Vista
@@ -20,7 +19,7 @@ Callers requesting to set the MB device's radio power state provide an [**NDIS\_
 Remarks
 -------
 
-For more information about using this OID, see [WWAN Radio Power State Operations](./mb-radio-power-state-operations.md).
+For more information about using this OID, see [MB Radio State](mb-radio-state.md).
 
 Miniport drivers should not access the provider network, or the Subscriber Identity Module (SIM card), when processing query or set operations.
 
@@ -110,7 +109,7 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_RADIO\_STATE**](ndis-status-wwan-radio-state.md)
 
-[WWAN Radio Power State Operations](./mb-radio-power-state-operations.md)
+[MB Radio State](mb-radio-state.md)
 
 [**WWAN\_RADIO\_STATE**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_radio_state)
 

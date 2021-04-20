@@ -1,7 +1,6 @@
 ---
 title: D3dCreateSurfaceEx and Complex Surfaces
 description: D3dCreateSurfaceEx and Complex Surfaces
-ms.assetid: aabe01bd-a7b8-4533-970e-4e1e49ba6596
 keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx

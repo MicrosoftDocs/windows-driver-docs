@@ -1,7 +1,6 @@
 ---
 title: VBI Category
 description: VBI Category
-ms.assetid: c33c0427-5162-435a-bb96-a230455a1035
 keywords:
 - stream categories WDK video capture , VBI
 - VBI WDK video capture

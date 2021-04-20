@@ -1,7 +1,6 @@
 ---
 title: Device Relation Tokens in SDEL
 description: A table describing tokens that are available for expressing device relations within SDEL
-ms.assetid: A99d68D2-31A2-99B5-841F-A8249539A39F
 keywords:
 - tokens
 - device relation

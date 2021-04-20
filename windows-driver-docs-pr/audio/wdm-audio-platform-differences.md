@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Platform Differences
 description: WDM Audio Platform Differences
-ms.assetid: bb5d1aa6-edb3-4859-ab65-9622065608e2
 keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , platform differences

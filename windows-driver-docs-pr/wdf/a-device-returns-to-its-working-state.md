@@ -1,7 +1,6 @@
 ---
 title: A Device Returns to Its Working State
 description: Learn what happens when a device returns to its working state. For example, when an external event triggers a wake signal.
-ms.assetid: 0a5bdaf5-ed9e-44d0-bc8a-876ceb342520
 keywords:
 - device power states WDK KMDF
 - working states WDK KMDF

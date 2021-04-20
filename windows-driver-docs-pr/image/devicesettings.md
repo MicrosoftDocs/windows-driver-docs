@@ -1,7 +1,6 @@
 ---
 title: DeviceSettings element
 description: The required DeviceSettings element describes the basic capabilities of the scan device.
-ms.assetid: d12d25f0-fa94-4840-bb1a-cc1a5352767c
 keywords: ["DeviceSettings element Imaging Devices"]
 topic_type:
 - apiref

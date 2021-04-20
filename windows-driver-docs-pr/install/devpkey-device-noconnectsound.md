@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_NoConnectSound
 description: DEVPKEY_Device_NoConnectSound
-ms.assetid: 7ed4eb3f-6585-4ec1-83b7-bde368faca0a
 keywords: ["DEVPKEY_Device_NoConnectSound Device and Driver Installation"]
 topic_type:
 - apiref

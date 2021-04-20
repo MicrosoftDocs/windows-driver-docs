@@ -1,7 +1,6 @@
 ---
 title: About ISensorClassExtension
 description: About ISensorClassExtension
-ms.assetid: 1f55f28a-796a-40e5-9995-e6a28761b9a4
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

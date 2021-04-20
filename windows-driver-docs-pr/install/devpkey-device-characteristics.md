@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Characteristics
 description: DEVPKEY_Device_Characteristics
-ms.assetid: 148557aa-2246-4cd9-9008-d920ffb64845
 keywords: ["DEVPKEY_Device_Characteristics Device and Driver Installation"]
 topic_type:
 - apiref

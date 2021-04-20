@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x121 DRIVER_VIOLATION
 description: The DRIVER_VIOLATION bug check has a value of 0x00000121. This bug check indicates that a driver has caused a violation.
-ms.assetid: 4a5d1d84-a958-45a6-9511-b5b4ecd4c067
 keywords: ["Bug Check 0x121 DRIVER_VIOLATION", "DRIVER_VIOLATION"]
 ms.date: 10/08/2019
 topic_type:

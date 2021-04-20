@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID
 description: The KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property retrieves the component ID from the wave-rendering device that the specified virtual audio device uses.
-ms.assetid: ef4a940f-dfef-43ed-8895-d318fb603e5c
 keywords: ["KSPROPERTY_SYSAUDIO_COMPONENT_ID Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Unloading an Intermediate Driver
 description: Unloading an Intermediate Driver
-ms.assetid: e3c1dad4-4262-4449-8dcd-2e2f5d6c8e25
 keywords:
 - NDIS intermediate drivers WDK , unloading
 - intermediate drivers WDK networking , unloading

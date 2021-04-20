@@ -1,7 +1,6 @@
 ---
 title: Creating Resource Maps for a Multifunction Device
 description: Creating Resource Maps for a Multifunction Device
-ms.assetid: 332eef11-4056-4fe0-87ed-4305c091bab1
 keywords:
 - multifunction devices WDK , resource maps
 - resource maps WDK multifunction devices

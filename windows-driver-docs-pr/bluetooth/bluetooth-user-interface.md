@@ -1,7 +1,6 @@
 ---
 title: Bluetooth user interface
 description: Describes working with the Bluetooth user interface in Windows for software developers and vendors
-ms.assetid: 7E342615-217A-4252-AAC4-7F7EE013840D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

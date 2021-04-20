@@ -1,7 +1,6 @@
 ---
 title: Registering a Winsock Kernel Application
 description: Registering a Winsock Kernel Application
-ms.assetid: aaba39b8-8609-46e6-906d-3f050d91af7f
 keywords:
 - Winsock Kernel WDK networking , registering
 - registering Winsock Kernel applications

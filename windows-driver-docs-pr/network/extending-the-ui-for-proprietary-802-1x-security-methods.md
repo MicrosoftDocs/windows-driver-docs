@@ -1,7 +1,6 @@
 ---
 title: Extending the UI for Proprietary 802.1X Security Methods
 description: Extending the UI for Proprietary 802.1X Security Methods
-ms.assetid: 3307179f-f30b-4234-a64d-4e771ac8673e
 keywords:
 - proprietary 802.1X security WDK IHV UI Extensions DLL
 ms.date: 04/20/2017

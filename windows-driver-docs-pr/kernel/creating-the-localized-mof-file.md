@@ -1,7 +1,6 @@
 ---
 title: Creating the Localized MOF File
 description: Creating the Localized MOF File
-ms.assetid: 1cc99e43-b09a-445d-abb6-4a3d73b6d7ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "property qualifiers WDK WMI", "amended classes WDK WMI", "multiple MOF files WDK WMI", "languages WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: GUID_61883_CLASS
 description: GUID_61883_CLASS
-ms.assetid: 3380c42c-3ac4-4d71-9a1b-581ef8c7b57a
 keywords: ["GUID_61883_CLASS Device and Driver Installation"]
 topic_type:
 - apiref

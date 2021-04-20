@@ -1,7 +1,6 @@
 ---
 title: NET_BUFFER_LIST_CONTEXT Structure
 description: NET_BUFFER_LIST_CONTEXT Structure
-ms.assetid: 45be8503-2c5f-46e6-9fc3-b1b3c42f0d91
 keywords:
 - NET_BUFFER_LIST_CONTEXT
 - network data WDK , structures

@@ -1,7 +1,6 @@
 ---
 title: Locking and Unlocking Best Practices
 description: Locking and Unlocking Best Practices
-ms.assetid: cfa45c0d-4e92-4455-a8f6-17d4806f9c36
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Event Constants
 description: The sensor platform defines the following constants for driver events.
-ms.assetid: d9bcfda4-d731-462f-802d-99c85911a6ca
 keywords:
 - Event Constants
 - Sensor Devices

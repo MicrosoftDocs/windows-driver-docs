@@ -1,7 +1,6 @@
 ---
 title: High Definition Audio DDI Reference
 description: High Definition Audio DDI Reference
-ms.assetid: 82d8698b-20fd-40ba-b7f5-56006ffb518f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

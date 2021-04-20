@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_TREBLE
 description: The KSPROPERTY\_AUDIO\_TREBLE property specifies the treble level for a channel in a tone node (KSNODETYPE\_TONE).
-ms.assetid: eee12fac-fbde-44d5-9172-538b9c486697
 keywords: ["KSPROPERTY_AUDIO_TREBLE Audio Devices"]
 topic_type:
 - apiref

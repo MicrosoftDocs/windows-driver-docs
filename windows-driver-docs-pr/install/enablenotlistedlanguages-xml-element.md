@@ -1,7 +1,6 @@
 ---
 title: enableNotListedLanguages XML Element
 description: The enableNotListedLanguages XML element is an empty element that sets the enableNotListedLanguages flag to ON, which configures DPInst to enable all of the supported languages that are not explicitly enabled by language XML elements in a DPInst.xml file.
-ms.assetid: 7584b222-71b0-4532-84be-3444a4a7003b
 keywords: ["enableNotListedLanguages XML Element Device and Driver Installation"]
 topic_type:
 - apiref

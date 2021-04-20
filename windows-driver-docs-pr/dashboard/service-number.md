@@ -1,7 +1,6 @@
 ---
 title: Service number
 description: Service number
-ms.assetid: c09bd5f2-16d7-44d4-b87f-e46961932cfc
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

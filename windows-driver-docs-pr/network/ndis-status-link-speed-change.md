@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_LINK_SPEED_CHANGE
 description: The NDIS_STATUS_LINK_SPEED_CHANGE status indicates a link speed change.
-ms.assetid: 084e43c9-598c-4c30-8004-2d1876a1cddd
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_LINK_SPEED_CHANGE Network Drivers Starting with Windows Vista

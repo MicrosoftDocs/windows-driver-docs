@@ -1,18 +1,17 @@
 ---
 title: Storport driver support routines
 description: Learn about the Storport driver routines, such as direct memory access and I/O request processing support routines.
-ms.assetid: 15f20a83-43cc-40d4-8fa6-031affca5ee2
 keywords:
 - Storport driver support routines
 - storage WDK
 - storage support routines
-ms.date: 10/08/2019
+ms.date: 03/16/2021
 ms.localizationpriority: medium
 ---
 
 # Storport driver support routines
 
-This page lists the support routines provided by the system-supplied Storport driver.
+This page categorizes some of the support routines provided to miniports by the system-supplied Storport driver. See [storport.h](/windows-hardware/drivers/ddi/storport) for a complete list.
 
 For a list of Storport driver miniport routines, see [Storport Miniport Driver Routines](storport-miniport-driver-routines.md).
 

@@ -1,7 +1,6 @@
 ---
 title: Tracelog Enumguid Display
 description: Tracelog Enumguid Display
-ms.assetid: 9bb93238-98f7-4422-8434-b4dc105ec008
 keywords:
 - Tracelog WDK , providers
 - providers WDK software tracing

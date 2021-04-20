@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_BusRelations
 description: DEVPKEY_Device_BusRelations
-ms.assetid: 590cbf77-3cee-4c74-bad1-ca237986cff0
 keywords: ["DEVPKEY_Device_BusRelations Device and Driver Installation"]
 topic_type:
 - apiref

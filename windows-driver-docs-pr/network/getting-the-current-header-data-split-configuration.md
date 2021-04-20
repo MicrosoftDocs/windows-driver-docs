@@ -1,7 +1,6 @@
 ---
 title: Getting the Current Header-Data Split Configuration
 description: Getting the Current Header-Data Split Configuration
-ms.assetid: 62c5e362-4e19-465d-85a8-a8277cb46f5d
 keywords:
 - header-data split WDK , configuration
 - current header-data split configuration WDK networking

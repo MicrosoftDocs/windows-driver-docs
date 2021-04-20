@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_METADATA structure
 description: Learn about the D3DKMT\_OUTPUTDUPL\_METADATA structure, which is reserved for system use. Do not use in your driver.
-ms.assetid: abf4f00a-05bb-48f6-989e-f1b453fb0708
 keywords: ["D3DKMT_OUTPUTDUPL_METADATA structure Display Devices"]
 topic_type:
 - apiref

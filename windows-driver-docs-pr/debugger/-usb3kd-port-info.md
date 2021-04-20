@@ -1,7 +1,6 @@
 ---
 title: usb3kd.port_info
 description: The usb3kd.port_info command displays information about a USB port in the USB 3.0 tree.
-ms.assetid: 78233FE5-981E-42C4-A100-198CAAA840A0
 keywords: ["usb3kd.port_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

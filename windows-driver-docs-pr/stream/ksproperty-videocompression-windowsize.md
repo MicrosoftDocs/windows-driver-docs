@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE property controls the data rate that describes the average frame size. This property must be implemented.
-ms.assetid: 44cf4bb6-7ddb-4a72-8a77-7dc390aa8c12
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_WINDOWSIZE Streaming Media Devices"]
 topic_type:
 - apiref

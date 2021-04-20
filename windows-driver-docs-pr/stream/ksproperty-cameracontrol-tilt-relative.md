@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_TILT\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_TILT\_RELATIVE property specifies a camera's vertical tilting status.
-ms.assetid: 82702eec-38dc-44a1-bf57-56c9f04bb2d0
 keywords: ["KSPROPERTY_CAMERACONTROL_TILT_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref

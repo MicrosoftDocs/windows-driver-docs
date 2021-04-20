@@ -1,7 +1,6 @@
 ---
 title: Combining Dispatch and Synchronization Modes
 description: Combining Dispatch and Synchronization Modes
-ms.assetid: 39414acb-1397-42d6-8c75-3448d61775c5
 keywords:
 - synchronization WDK UMDF
 - queue dispatch modes WDK UMDF

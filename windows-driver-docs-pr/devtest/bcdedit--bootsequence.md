@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /bootsequence
 description: The bootsequence command sets the one-time boot sequence to be used by the boot manager.
-ms.assetid: 74eb527c-78f3-41d0-bac6-f6fc200096a5
 ms.date: 09/23/2020
 keywords: ["BCDEdit /bootsequence Driver Development Tools"]
 topic_type:

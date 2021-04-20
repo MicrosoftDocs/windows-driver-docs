@@ -1,7 +1,6 @@
 ---
 title: DirectDraw Interfaces for Kernel-Mode Video Transport
 description: DirectDraw Interfaces for Kernel-Mode Video Transport Support
-ms.assetid: 8012f6b0-3b55-438f-8146-4f62e6bafad3
 keywords:
 - kernel-mode video transport WDK DirectDraw , interfaces
 - DirectX VPE support WDK DirectDraw , kernel-mode video transport

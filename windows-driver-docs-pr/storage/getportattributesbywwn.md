@@ -1,7 +1,6 @@
 ---
 title: GetPortAttributesByWWN function
 description: The GetPortAttributesByWWN method retrieves the attributes for the port specified by Port Name.
-ms.assetid: 24b62b1c-9f47-40f1-aa72-849fabcbfbae
 keywords: ["GetPortAttributesByWWN function Storage Devices"]
 topic_type:
 - apiref

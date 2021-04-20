@@ -1,7 +1,6 @@
 ---
 title: Shared Memory Resource Allocation
 description: Shared Memory Resource Allocation
-ms.assetid: cf030a0f-1202-4d10-b9a1-58d031345678
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

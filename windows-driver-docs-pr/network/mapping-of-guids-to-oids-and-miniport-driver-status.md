@@ -1,7 +1,6 @@
 ---
 title: Mapping of GUIDs to OIDs and Miniport Driver Status
 description: Mapping of GUIDs to OIDs and Miniport Driver Status
-ms.assetid: b3c9bb40-2906-4059-b9fa-06f6ababd3f2
 keywords:
 - WMI WDK networking , GUIDs
 - OIDs WDK networking , WMI

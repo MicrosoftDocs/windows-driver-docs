@@ -1,7 +1,6 @@
 ---
 title: Extended Surface Capabilities
 description: Extended Surface Capabilities
-ms.assetid: daa1a310-1cea-48ca-a373-a496b997424f
 keywords:
 - drawing extended surface capabilities WDK DirectDraw , about extended surface capabilities
 - DirectDraw extended surface capabilities WDK Windows 2000 display , about extended surface capabilities

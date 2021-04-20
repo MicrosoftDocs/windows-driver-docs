@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DELAY
 description: The KSPROPERTY\_AUDIO\_DELAY property indicates the time lag that a delay node (KSNODETYPE\_DELAY) introduces into a specified channel.
-ms.assetid: ac260b83-1d7c-49d7-b325-ea0f21646d39
 keywords: ["KSPROPERTY_AUDIO_DELAY Audio Devices"]
 topic_type:
 - apiref

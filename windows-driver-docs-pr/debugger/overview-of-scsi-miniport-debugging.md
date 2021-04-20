@@ -1,7 +1,6 @@
 ---
 title: Overview of SCSI Miniport Debugging
 description: Overview of SCSI Miniport Debugging
-ms.assetid: 9d05d416-aae4-453a-bdb0-2ac9148ad81d
 keywords: ["SCSI Miniport Debugging, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

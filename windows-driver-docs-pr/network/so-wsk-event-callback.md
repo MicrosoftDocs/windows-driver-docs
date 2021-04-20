@@ -1,7 +1,6 @@
 ---
 title: SO_WSK_EVENT_CALLBACK
 description: SO_WSK_EVENT_CALLBACK
-ms.assetid: cb697103-20ef-4667-8823-060a68d904c8
 ms.date: 07/18/2017
 keywords:
  - SO_WSK_EVENT_CALLBACK Network Drivers Starting with Windows Vista

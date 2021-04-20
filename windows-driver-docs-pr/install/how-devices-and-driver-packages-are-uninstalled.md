@@ -1,10 +1,9 @@
 ---
 title: How Devices and Driver Packages are Uninstalled
 description: How Devices and Driver Packages are Uninstalled
-ms.assetid: 0f4f0bbf-ca8f-47ef-b70b-d023bba9b842
 ms.date: 10/07/2020
 ms.localizationpriority: medium
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ---
 
 # How Devices and Driver Packages are Uninstalled

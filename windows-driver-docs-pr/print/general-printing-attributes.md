@@ -1,7 +1,6 @@
 ---
 title: General Printing Attributes
 description: General Printing Attributes
-ms.assetid: 3238c000-05fc-4f6a-a67a-083371007171
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

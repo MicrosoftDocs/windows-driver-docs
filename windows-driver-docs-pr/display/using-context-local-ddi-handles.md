@@ -1,7 +1,6 @@
 ---
 title: Using Context-Local DDI Handles
 description: Using Context-Local DDI Handles
-ms.assetid: 1b3e5c29-9b9e-4c10-8fe0-706255c8fd91
 keywords:
 - Direct3D version 11 WDK Windows 7 display , deferred contexts, using context-local DDI handles
 - Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, using context-local DDI handles

@@ -1,7 +1,6 @@
 ---
 title: Locking rule set (NDIS)
 description: Learn about using rules (NDIS) to verify that your driver correctly manages shared resources, and how to select the Locking rule set.
-ms.assetid: 1123A246-7833-4EAB-B1B8-0C71413CE86B
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

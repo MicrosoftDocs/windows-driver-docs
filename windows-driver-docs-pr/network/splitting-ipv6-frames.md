@@ -1,7 +1,6 @@
 ---
 title: Splitting IPv6 Frames
 description: Splitting IPv6 Frames
-ms.assetid: fe18ccfb-29d0-4b57-9308-a9d4a9c6777a
 keywords:
 - Ethernet frame splitting WDK networking , IPv6 frames
 - IPv6 frames WDK header-data split

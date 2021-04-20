@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_PORT
 description: The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port type.
-ms.assetid: 7513c37f-0c93-4078-ba85-cbc98304880f
 keywords: ["KSPROPERTY_EXTDEVICE_PORT Streaming Media Devices"]
 topic_type:
 - apiref

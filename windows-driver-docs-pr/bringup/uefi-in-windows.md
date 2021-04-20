@@ -1,7 +1,6 @@
 ---
 title: UEFI in Windows
 description: UEFI in Windows
-ms.assetid: 14b54fe3-49f7-4ad8-b9b6-ecc747dff137
 ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---

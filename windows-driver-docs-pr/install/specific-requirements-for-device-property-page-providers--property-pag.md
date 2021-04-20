@@ -1,7 +1,6 @@
 ---
 title: Requirements for Property Page Extension DLLs
 description: Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)
-ms.assetid: bc48d848-a216-442e-97ca-f990f8d243ac
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

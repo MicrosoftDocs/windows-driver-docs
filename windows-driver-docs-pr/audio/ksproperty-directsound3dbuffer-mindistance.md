@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_MINDISTANCE
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MINDISTANCE property specifies the minimum distance for a 3D sound buffer.
-ms.assetid: 998e591d-7c23-4857-908c-4e90918c9a94
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_MINDISTANCE Audio Devices"]
 topic_type:
 - apiref

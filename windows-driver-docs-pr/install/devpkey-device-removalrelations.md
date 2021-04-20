@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_RemovalRelations
 description: DEVPKEY_Device_RemovalRelations
-ms.assetid: c88e2545-0c7b-4f8f-93f2-b9de1ec0444c
 keywords: ["DEVPKEY_Device_RemovalRelations Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Creating Pageable Code in a KMDF Driver
 description: Creating Pageable Code in a KMDF Driver
-ms.assetid: 5c694ae2-2a16-4c2f-84b0-62e26f4121bc
 keywords:
 - pageable drivers WDK KMDF
 - KMDF WDK , pageable drivers

@@ -1,7 +1,6 @@
 ---
 title: CdRomClassGuid
 description: CdRomClassGuid
-ms.assetid: 406c28c9-8ef3-4ccc-bb70-a13b8d1ad64e
 keywords: ["CdRomClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

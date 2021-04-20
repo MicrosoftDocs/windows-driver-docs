@@ -1,7 +1,6 @@
 ---
 title: Pedometer sensor property
 description: The property key for the pedometer.
-ms.assetid: 91A47EEE-094B-47AE-B2B9-E7A32F33FA11
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

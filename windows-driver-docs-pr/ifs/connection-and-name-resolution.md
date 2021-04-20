@@ -1,7 +1,6 @@
 ---
 title: Connection and Name Resolution
 description: Connection and Name Resolution
-ms.assetid: e61d09f1-7951-4291-93ce-e5ccbe0be576
 keywords:
 - mini-redirectors WDK , connections
 - mini-redirectors WDK , name resolution

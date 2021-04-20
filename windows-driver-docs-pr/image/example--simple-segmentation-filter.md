@@ -1,7 +1,6 @@
 ---
 title: Example Simple Segmentation Filter
 description: Example Simple Segmentation Filter
-ms.assetid: 9c77fea4-61d9-4bec-8d8d-35436d00c1ed
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_PINCAPS\_FORMATCHANGE
 description: The KSEVENT\_PINCAPS\_FORMATCHANGE event indicates to the audio stack that the audio data format for the audio device has changed.
-ms.assetid: ca9ee246-7fca-42df-89e0-7ace6b1f808a
 keywords: ["KSEVENT_PINCAPS_FORMATCHANGE Audio Devices"]
 topic_type:
 - apiref

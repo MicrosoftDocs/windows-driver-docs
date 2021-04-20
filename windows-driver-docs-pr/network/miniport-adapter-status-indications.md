@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter Status Indications
 description: Miniport Adapter Status Indications
-ms.assetid: feb5259f-ce9b-40eb-85d2-0064bce692fc
 keywords:
 - status indications WDK networking , miniport adapters
 - miniport adapters WDK networking , status indications

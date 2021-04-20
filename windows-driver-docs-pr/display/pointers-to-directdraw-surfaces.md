@@ -1,7 +1,6 @@
 ---
 title: Pointers to DirectDraw Surfaces
 description: Pointers to DirectDraw Surfaces
-ms.assetid: 5d7c8b22-d2d3-4e40-b7b2-7277e051812c
 keywords:
 - context WDK Direct3D , DirectDraw surface pointers
 - DirectDraw surface pointers WDK Direct3D

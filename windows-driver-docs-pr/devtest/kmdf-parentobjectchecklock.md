@@ -1,7 +1,6 @@
 ---
 title: ParentObjectCheckLock rule (kmdf)
 description: The ParentObjectCheckLock rule specifies that the driver should call WdfWaitLockCreate and WdfSpinLockCreate setting a parent object.
-ms.assetid: 01B47113-F949-4B38-982A-D13AF0EE68E0
 ms.date: 05/21/2018
 keywords: ["ParentObjectCheckLock rule (kmdf)"]
 topic_type:

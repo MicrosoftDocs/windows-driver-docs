@@ -1,7 +1,6 @@
 ---
 title: DIF_REGISTERDEVICE
 description: DIF_REGISTERDEVICE
-ms.assetid: cb5f12f4-d429-4f02-b560-08807ffa3793
 keywords: ["DIF_REGISTERDEVICE Device and Driver Installation"]
 topic_type:
 - apiref

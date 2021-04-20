@@ -1,7 +1,6 @@
 ---
 title: TV Audio Change Event
 description: TV Audio Change Event
-ms.assetid: 85ba81f0-9443-42c7-9886-15b6b702f287
 keywords:
 - TV audio changed event WDK video capture
 - events WDK video capture

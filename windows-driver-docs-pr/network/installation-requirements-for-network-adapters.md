@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network Adapters
 description: Installation Requirements for Network Adapters
-ms.assetid: 682a262a-a712-4fab-a753-d0c6fc08bac8
 keywords:
 - network adapter installation requirements WDK
 - adapters WDK networking , installation requirements

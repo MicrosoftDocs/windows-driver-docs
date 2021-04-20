@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE
 description: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE is a TLV that contains Wi-Fi Direct Background Discover Mode parameters.
-ms.assetid: 987DB282-A992-497F-98B5-0D3DD477B91C
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE Network Drivers Starting with Windows Vista

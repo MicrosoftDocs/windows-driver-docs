@@ -1,7 +1,6 @@
 ---
 title: PagedCode rule (storport)
 description: This rule verifies that when the PAGED\_CODE macro is called, the driver is at IRQL DISPATCH\_LEVEL. Any code executing at IRQL DISPATCH\_LEVEL must be in non-paged memory to avoid causing page faults.
-ms.assetid: 7FED3FEF-E6E5-4C26-8777-0A4BCCE0E1EE
 ms.date: 05/21/2018
 keywords: ["PagedCode rule (storport)"]
 topic_type:

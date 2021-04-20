@@ -1,7 +1,6 @@
 ---
 title: Native 802.11 IHV Extensions DLL Implementation Guidelines
 description: Native 802.11 IHV Extensions DLL Implementation Guidelines
-ms.assetid: ef13de2a-3510-46c5-afb6-0bf1002af5ca
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , implementation guidelines
 - Native 802.11 IHV Extensions DLL WDK , implementation guidelines

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE property specifies the maximum distance for a 3D sound buffer.
-ms.assetid: efa69fe3-834a-42be-a578-f284b07b93c4
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_MAXDISTANCE Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WPP Preprocessor
 description: WPP Preprocessor
-ms.assetid: 92bcb2c4-f6de-4704-8f5c-9a2e5901616a
 keywords:
 - Windows software trace preprocessor WDK , options
 - WPP software tracing WDK , options

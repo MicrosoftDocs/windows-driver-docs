@@ -1,7 +1,6 @@
 ---
 title: Using an IoTimer Routine
 description: Using an IoTimer Routine
-ms.assetid: 9de2d2ec-31c5-4a60-96bf-5da067d2d9db
 keywords: ["IoTimer"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Barcode scanner events
 description: Learn about the barcode scanner events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
-ms.assetid: 'f0a7a525-8fea-4bce-a817-25c69cd47ddd'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

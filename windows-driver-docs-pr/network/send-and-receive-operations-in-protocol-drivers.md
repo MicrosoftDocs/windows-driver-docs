@@ -1,7 +1,6 @@
 ---
 title: Send and Receive Operations in Protocol Drivers
 description: Send and Receive Operations in Protocol Drivers
-ms.assetid: 4759725b-ed0b-4345-9cdc-9411ee29ebdb
 keywords:
 - protocol drivers WDK networking , receive operations
 - NDIS protocol drivers WDK , receive operations

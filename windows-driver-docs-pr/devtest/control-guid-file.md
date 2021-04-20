@@ -1,7 +1,6 @@
 ---
 title: Control GUID File
 description: Control GUID File
-ms.assetid: cf5dd9bf-c9db-4324-abd3-ee0e1b15e14d
 keywords:
 - control GUIDs WDK
 - .ctl files

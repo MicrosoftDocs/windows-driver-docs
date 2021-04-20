@@ -1,7 +1,6 @@
 ---
 title: Building BDA Drivers
 description: Building BDA Drivers
-ms.assetid: 2272fa18-5102-443e-8728-f256444ab044
 keywords:
 - Broadcast Driver Architecture WDK AVStream , building drivers
 - BDA WDK AVStream , building drivers

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDDECOUT\_MODES
 description: The KSPROPERTY\_AUDDECOUT\_MODES property returns the available output modes of the audio decoder.This property is read-only.
-ms.assetid: 5ae62fae-7f13-480f-ba36-3fa72ff547bc
 keywords: ["KSPROPERTY_AUDDECOUT_MODES Streaming Media Devices"]
 topic_type:
 - apiref

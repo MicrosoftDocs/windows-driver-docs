@@ -1,7 +1,6 @@
 ---
 title: GDI Halftone Services
 description: GDI Halftone Services
-ms.assetid: 21112cfc-f7c4-4cce-a9bb-c68d918f5678
 keywords:
 - GDI WDK Windows 2000 display , halftoning
 - graphics drivers WDK Windows 2000 display , halftoning

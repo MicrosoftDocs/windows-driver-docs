@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_PORTATTRIBUTES WMI Class
 description: MS\_SMHBA\_PORTATTRIBUTES WMI Class
-ms.assetid: 26f17443-cb89-4c93-9b67-35acb75b6d03
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

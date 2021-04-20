@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ConfigFlags
 description: DEVPKEY_Device_ConfigFlags
-ms.assetid: 67ff3b29-ba25-4dcd-b21b-75203ee17973
 keywords: ["DEVPKEY_Device_ConfigFlags Device and Driver Installation"]
 topic_type:
 - apiref

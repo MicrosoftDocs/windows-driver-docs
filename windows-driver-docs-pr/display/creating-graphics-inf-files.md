@@ -1,7 +1,6 @@
 ---
 title: Creating Graphics INF Files
 description: Creating Graphics INF Files
-ms.assetid: e56d4881-5ad2-41fc-a6fb-bc72c5106361
 keywords:
 - display driver model WDK Windows 2000 , graphics
 - Windows 2000 display driver model WDK , graphics

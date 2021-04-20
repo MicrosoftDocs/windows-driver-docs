@@ -1,7 +1,6 @@
 ---
 title: Native 802.11 IHV Extensions Topics
 description: Native 802.11 IHV Extensions Topics
-ms.assetid: 14eb9f2b-4f6f-42cc-b367-ac139a446dc4
 keywords:
 - independent hardware vendor extensions WDK Native 802.11
 - IHV extensions WDK Native 802.11

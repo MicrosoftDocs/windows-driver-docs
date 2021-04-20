@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_InstallState
 description: DEVPKEY_Device_InstallState
-ms.assetid: 3bebb3d6-96bb-4c7c-8a7a-c5bf29cb3a2a
 keywords: ["DEVPKEY_Device_InstallState Device and Driver Installation"]
 topic_type:
 - apiref

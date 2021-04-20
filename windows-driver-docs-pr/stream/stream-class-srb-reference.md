@@ -1,7 +1,6 @@
 ---
 title: Stream Class SRB Reference
 description: Stream Class SRB Reference
-ms.assetid: fdd2de58-8825-429a-937a-0bd27a180f2a
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

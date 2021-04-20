@@ -1,7 +1,6 @@
 ---
 title: PlatenColor element
 description: The required PlatenColor element contains a list of ColorEntry elements that describe the color processing capabilities of the platen.
-ms.assetid: 97fd9926-e49d-4b4f-95aa-eb4142c353a3
 keywords: ["PlatenColor element Imaging Devices"]
 topic_type:
 - apiref

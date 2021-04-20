@@ -1,7 +1,6 @@
 ---
 title: Silo driver system requirements
 description: Describes the requirements that the storage silo driver system meets
-ms.assetid: d939a319-f321-455e-a34d-220a3faf6092
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

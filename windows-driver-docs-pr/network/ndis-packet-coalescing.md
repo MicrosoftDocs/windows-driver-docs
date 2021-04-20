@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS Packet Coalescing
 description: Introduction to NDIS Packet Coalescing
-ms.assetid: 500FBF0F-54D9-4675-8E2D-447387DA8798
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

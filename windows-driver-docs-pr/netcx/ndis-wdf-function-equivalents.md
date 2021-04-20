@@ -1,7 +1,6 @@
 ---
 title: NDIS-WDF function equivalents
 description: NDIS-WDF function equivalents
-ms.assetid: 28C8DFA3-5602-422D-89AA-6EA05F501E15
 keywords:
 - NetAdapterCx NDIS-WDF function equivalents, NetCx NDIS-WDF function equivalents
 ms.date: 06/05/2017

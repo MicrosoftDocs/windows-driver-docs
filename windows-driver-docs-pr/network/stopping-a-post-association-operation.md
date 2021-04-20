@@ -1,7 +1,6 @@
 ---
 title: Stopping a Post-Association Operation
 description: Stopping a Post-Association Operation
-ms.assetid: 28400cad-1e77-4bcd-9b9a-103df5f06d10
 keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 - stopping post-association operations

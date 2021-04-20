@@ -1,7 +1,6 @@
 ---
 title: DestinationResponses element
 description: The required DestinationResponses element is a collection of all of the responses to a client's scan destination requests.
-ms.assetid: f373b584-eec9-412e-80b2-3d8a69f4b7ca
 keywords: ["DestinationResponses element Imaging Devices"]
 topic_type:
 - apiref

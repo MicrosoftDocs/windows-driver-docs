@@ -1,7 +1,6 @@
 ---
 title: ATA Port's Interface with ATA Miniport Drivers
 description: ATA Port's Interface with ATA Miniport Drivers
-ms.assetid: c3a9b862-8d6e-4ad7-8061-178b053b820c
 keywords:
 - ATA Port drivers WDK , miniport drivers
 - ATA miniport drivers WDK

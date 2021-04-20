@@ -1,7 +1,6 @@
 ---
 title: Hardware-Assisted Scanning Algorithm
 description: Hardware-Assisted Scanning Algorithm
-ms.assetid: 9a24b985-9667-4424-84e5-b1c728b3c558
 keywords:
 - hardware-assisted scanning WDK video capture
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Write Typed Data (Function Index 30)
 description: This function writes a 32-byte block inside a typed block data region.
-ms.assetid: 0162E7C3-CF1E-452C-908E-D65C090CD365
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

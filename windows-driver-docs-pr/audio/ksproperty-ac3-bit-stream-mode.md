@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_BIT\_STREAM\_MODE
 description: The KSPROPERTY\_AC3\_BIT\_STREAM\_MODE property specifies the bit-stream mode, which is the type of audio service that is encoded into an AC-3 stream.
-ms.assetid: ee3705f5-f16d-4f5e-a551-bea8986d88b6
 keywords: ["KSPROPERTY_AC3_BIT_STREAM_MODE Audio Devices"]
 topic_type:
 - apiref

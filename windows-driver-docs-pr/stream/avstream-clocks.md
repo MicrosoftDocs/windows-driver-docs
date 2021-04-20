@@ -1,7 +1,6 @@
 ---
 title: AVStream Clocks
 description: AVStream Clocks
-ms.assetid: fc1d5bca-72e3-48e2-b46f-09a13bba83b4
 keywords:
 - clocks WDK AVStream
 - AVStream clocks WDK

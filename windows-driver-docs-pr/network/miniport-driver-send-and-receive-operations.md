@@ -1,7 +1,6 @@
 ---
 title: Miniport Driver Send and Receive Operations
 description: Miniport Driver Send and Receive Operations
-ms.assetid: f495cf1f-9896-4259-b885-cff4a0112d17
 keywords:
 - miniport drivers WDK networking , sending data
 - NDIS miniport drivers WDK , sending data

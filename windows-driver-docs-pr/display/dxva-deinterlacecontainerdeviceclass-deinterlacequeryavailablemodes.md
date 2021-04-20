@@ -1,7 +1,6 @@
 ---
 title: DeinterlaceQueryAvailableModes method
 description: The sample DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryAvailableModes function queries for available deinterlacing or frame-rate conversion modes for a particular input video format.
-ms.assetid: be721bde-3c72-4942-9f33-5ea1bf2d187c
 keywords: ["DeinterlaceQueryAvailableModes method Display Devices", "DeinterlaceQueryAvailableModes method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , DeinterlaceQueryAvailableModes method"]
 topic_type:
 - apiref

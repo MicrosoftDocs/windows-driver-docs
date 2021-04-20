@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT
 description: The KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT property holds the result data for a match.
-ms.assetid: A4CDE539-3C99-4E66-B678-AF56BFFEE460
 keywords: ["KSPROPERTY_SOUNDDETECTOR_MATCHRESULT Audio Devices"]
 topic_type:
 - apiref

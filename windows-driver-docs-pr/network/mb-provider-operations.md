@@ -1,7 +1,6 @@
 ---
 title: MB Provider Operations
 description: MB Provider Operations
-ms.assetid: dac7d162-9cf2-458f-9311-766816fe393e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

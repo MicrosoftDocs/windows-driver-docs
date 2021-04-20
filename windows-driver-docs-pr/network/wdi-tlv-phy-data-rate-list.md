@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_DATA_RATE_LIST
 description: WDI_TLV_PHY_DATA_RATE_LIST is a TLV that contains a list of data rates.
-ms.assetid: FFD28866-4983-4C0B-A74D-4EF9A819571E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_DATA_RATE_LIST Network Drivers Starting with Windows Vista

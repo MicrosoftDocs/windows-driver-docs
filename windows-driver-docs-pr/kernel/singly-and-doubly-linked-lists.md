@@ -1,7 +1,6 @@
 ---
 title: Singly and Doubly Linked Lists
 description: Singly and Doubly Linked Lists
-ms.assetid: 3a305f54-7866-4163-a3e4-e078d1927adc
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

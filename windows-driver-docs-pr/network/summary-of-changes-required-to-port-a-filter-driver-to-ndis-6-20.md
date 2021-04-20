@@ -1,7 +1,6 @@
 ---
 title: Summary of Changes Required to Port a Filter Driver to NDIS 6.20
 description: Summary of Changes Required to Port a Filter Driver to NDIS 6.20
-ms.assetid: faf83399-b9ac-41b3-a891-0142ded422b3
 keywords:
 - NDIS 6.20 WDK , porting filter drivers
 - porting filter drivers to NDIS 6.20 WDK

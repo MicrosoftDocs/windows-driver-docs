@@ -1,7 +1,6 @@
 ---
 title: Near field communication (NFC) driver samples
 description: The NFC driver sample in this directory provides a starting point for writing a custom driver for your device.
-ms.assetid: 89DC24ED-ADA8-4703-8619-A2B7E000C044
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

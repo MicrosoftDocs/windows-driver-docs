@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 This topic provides a walkthrough of a simulated firmware update on a virtual HID device.
 
+> [!NOTE]
+> CFU is available in Windows 10, version 2004 (Windows 10 May 2020 Update) and later versions.
+
 ## Build and install the CFU virtual HID device sample
 
 1. Install Visual Studio 2019 and the Windows Driver Kit (WDK) as outlined at [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).

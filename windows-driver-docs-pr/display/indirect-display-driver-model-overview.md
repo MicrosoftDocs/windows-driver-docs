@@ -1,7 +1,6 @@
 ---
 title: Indirect display driver model overview
 description: The indirect display driver model provides a simple user mode driver model to support monitors that are not connected to traditional GPU display outputs.
-ms.assetid: E2E64500-5F99-42A7-8945-B496026EA142
 keywords:
 - Indirect display driver, WDK
 - IDD, WDK

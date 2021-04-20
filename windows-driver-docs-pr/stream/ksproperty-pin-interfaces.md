@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_INTERFACES
 description: This property returns the list of interfaces supported by pins instantiated by a specific pin factory.
-ms.assetid: 5a49c685-d086-4827-87a3-67d1fa80452a
 keywords: ["KSPROPERTY_PIN_INTERFACES Streaming Media Devices"]
 topic_type:
 - apiref

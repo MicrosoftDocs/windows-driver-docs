@@ -1,6 +1,5 @@
 ---
 title: MB interface terms
-ms.assetid: 627F7C95-96E5-43C4-B8AB-DDA5A4392B38
 description: Provides a list of mobile broadband terminology used in the MB interface
 ms.date: 04/20/2017
 ms.localizationpriority: medium

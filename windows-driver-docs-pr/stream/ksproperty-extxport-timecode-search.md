@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH
 description: The KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH property searches to a specific timecode.
-ms.assetid: 34252fce-426b-4f75-b57f-fa86654ffc5f
 keywords: ["KSPROPERTY_EXTXPORT_TIMECODE_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref

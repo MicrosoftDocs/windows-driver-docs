@@ -1,7 +1,6 @@
 ---
 title: C28176
 description: Warning C28176 The member of struct should not be modified by a driver.
-ms.assetid: 837b2dcd-0682-460f-a3ae-ebd82bcc451b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

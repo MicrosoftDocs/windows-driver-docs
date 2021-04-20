@@ -1,7 +1,6 @@
 ---
 title: OID_SRIOV_VF_SERIAL_NUMBER
 description: An overlying driver issues an object identifier (OID) query request of OID_SRIOV_VF_SERIAL_NUMBER to determine the serial number of the PCI Express (PCIe) Virtual Function (VF) network adapter.
-ms.assetid: C4D04C96-94FA-4E01-839C-A9C5026D7AE5
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_VF_SERIAL_NUMBER Network Drivers Starting with Windows Vista

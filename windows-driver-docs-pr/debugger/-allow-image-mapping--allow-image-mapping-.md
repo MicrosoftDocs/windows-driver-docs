@@ -1,7 +1,6 @@
 ---
 title: .allow_image_mapping (Allow Image Mapping)
 description: The .allow_image_mapping command controls whether image files will be mapped.
-ms.assetid: 3d216d17-f2af-48f7-9d91-e12c3c305a67
 keywords: [".allow_image_mapping (Allow Image Mapping) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

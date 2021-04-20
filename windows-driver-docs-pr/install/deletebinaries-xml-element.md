@@ -1,7 +1,6 @@
 ---
 title: deleteBinaries XML Element
 description: The deleteBinaries XML element is an empty element that sets the deleteBinaries flag to ON, which configures DPInst to delete binary files from a system that were copied to the system when a driver package was installed.Element Tag deleteBinaries XML AttributesNoneElement Information Parent elementsdpinstChild elementsNoneData contentsNone permittedDuplicate child elementsNone permitted RemarksBy default, the deleteBinaries flag is set to OFF. To set the deleteBinaries flag to ON, include a deleteBinaries element as a child element of a dpinst element or use the /d DPInst command-line switch. The following code example demonstrates a deleteBinaries element. dpinst ... deleteBinaries/ ... /dpinst Note � Starting with Windows 7, the operating system ignores a setting of ON for the deleteBinaries XML element. The binary files, which were copied to a system when a driver package was installed, can no longer be deleted by using DPInst.�
-ms.assetid: 2711b2c2-b1ec-41cb-aeb2-1d9078740075
 keywords: ["deleteBinaries XML Element Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Control Panel Wizard Replacement
 description: Control Panel Wizard Replacement
-ms.assetid: d4a418b6-a9f9-41c4-99a9-20992abe80e9
 ms.date: 06/09/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: ScannerCurrentTime element
 description: The required ScannerCurrentTime element indicates the current date and time according to the scanner's internal clock.
-ms.assetid: 7103fdb4-dfa4-40b0-b20e-022e2a42bf5c
 keywords: ["ScannerCurrentTime element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Using Common-Buffer System DMA
 description: Using Common-Buffer System DMA
-ms.assetid: ee060aa4-2db4-4bd2-b107-b71acced97fd
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateCommonBuffer", "auto-initialize mode WDK DMA", "continuous DMA WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

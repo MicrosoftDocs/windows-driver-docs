@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCKED
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be locked.
-ms.assetid: 98023f83-2e90-4649-8e85-3e7b7f26b01d
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCKED Streaming Media Devices"]
 topic_type:
 - apiref

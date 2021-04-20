@@ -1,7 +1,6 @@
 ---
 title: WMI Event Tracing
 description: WMI Event Tracing
-ms.assetid: 72505a9a-830a-4529-ba73-31af0fedfeec
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

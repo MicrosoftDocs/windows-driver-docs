@@ -1,7 +1,6 @@
 ---
 title: Mapping Connection Topology
 description: Mapping Connection Topology
-ms.assetid: f11ffc48-a117-4b75-bc19-7a3762e6ba19
 keywords:
 - method sets WDK BDA , mapping connection topology
 - property sets WDK BDA , mapping connection topology

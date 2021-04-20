@@ -1,7 +1,6 @@
 ---
 title: SRB\_GET\_DATA\_INTERSECTION
 description: SRB\_GET\_DATA\_INTERSECTION
-ms.assetid: 67100c7f-dbca-4f75-b884-52e25a666190
 keywords: ["SRB_GET_DATA_INTERSECTION Streaming Media Devices"]
 topic_type:
 - apiref

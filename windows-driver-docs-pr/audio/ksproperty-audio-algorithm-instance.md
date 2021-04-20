@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE
 description: The KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property specifies the digital signal processing (DSP) algorithm that is used to achieve the third-party effect that the node applies to the audio data stream.
-ms.assetid: 8c27f856-de46-42a2-9f1f-e0cef1ee0f6e
 keywords: ["KSPROPERTY_AUDIO_ALGORITHM_INSTANCE Audio Devices"]
 topic_type:
 - apiref

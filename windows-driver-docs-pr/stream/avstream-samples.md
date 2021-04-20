@@ -1,7 +1,6 @@
 ---
 title: AVStream Samples
 description: AVStream samples
-ms.assetid: 18ddd9f1-d8bb-49a7-91bf-a8aeaa9565ad
 keywords:
 - AVStream WDK , samples
 - sample minidrivers WDK AVStream

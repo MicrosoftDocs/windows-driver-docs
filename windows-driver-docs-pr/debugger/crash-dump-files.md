@@ -1,7 +1,6 @@
 ---
 title: Analyze crash dump files by using WinDbg
 description: You can analyze crash dump files by using WinDbg and other Windows debuggers.
-ms.assetid: e7b4883c-6551-4a94-80d2-635f79348a48
 keywords: dump file, crash dump file
 ms.date: 05/23/2017
 ms.localizationpriority: high 

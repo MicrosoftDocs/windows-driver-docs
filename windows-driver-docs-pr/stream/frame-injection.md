@@ -1,7 +1,6 @@
 ---
 title: Frame Injection
 description: Frame Injection
-ms.assetid: cdfb1763-92a8-4a60-8f49-2af34a8beca5
 keywords:
 - frames WDK AVStream
 - injection mode WDK AVStream frames

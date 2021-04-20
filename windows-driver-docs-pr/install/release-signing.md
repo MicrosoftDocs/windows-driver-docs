@@ -1,7 +1,6 @@
 ---
 title: Release Signing
 description: After completing test signing and verifying that the driver is ready for release, the driver package has to be release signed. There are two ways of release signing a driver package.
-ms.assetid: 71499A0A-95D0-411C-84D1-C4B91FA4E6B1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

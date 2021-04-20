@@ -1,7 +1,6 @@
 ---
 title: OID_SRIOV_PF_LUID
 description: An overlying driver issues an object identifier (OID) query request of OID_SRIOV_PF_LUID to receive the locally unique identifier (LUID) associated with the PCI Express (PCIe) Physical Function (PF) of the network adapter.
-ms.assetid: 363D308D-CE88-4F3B-81FF-37A2D86CB7BC
 ms.date: 08/08/2017
 keywords: 
  -OID_SRIOV_PF_LUID Network Drivers Starting with Windows Vista

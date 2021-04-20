@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting GDL Parsing
 description: Troubleshooting GDL Parsing
-ms.assetid: 8c678a2f-b15b-4693-9bed-0edec06b3485
 keywords:
 - GDL WDK , parser
 - parser WDK GDL , troubleshooting parsing

@@ -1,7 +1,6 @@
 ---
 title: XPSDrv Driver Requirements
 description: XPSDrv Driver Requirements
-ms.assetid: 382b53eb-a69a-452a-8403-876640a9129e
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , requirements
 ms.date: 06/15/2020

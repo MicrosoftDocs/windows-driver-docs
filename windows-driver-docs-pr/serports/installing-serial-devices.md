@@ -1,7 +1,6 @@
 ---
 title: Installing Serial Devices
 description: Installing Serial Devices
-ms.assetid: e51ac390-1de0-4377-bcc3-5f179b6ca6df
 keywords:
 - serial devices WDK , installing
 ms.date: 04/20/2017

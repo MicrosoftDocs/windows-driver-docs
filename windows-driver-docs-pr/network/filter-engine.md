@@ -1,7 +1,6 @@
 ---
 title: Filter Engine
 description: Filter Engine
-ms.assetid: 87bf23c7-4086-4016-b712-a083d3d69bbe
 keywords:
 - filter engine WDK Windows Filtering Platform
 ms.date: 04/20/2017

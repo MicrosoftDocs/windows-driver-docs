@@ -1,7 +1,6 @@
 ---
 title: MS\_SM\_TargetInformationMethods WMI Class
 description: MS\_SM\_TargetInformationMethods WMI Class
-ms.assetid: faedf8cf-d69f-4a4c-bc32-fd6df102d027
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

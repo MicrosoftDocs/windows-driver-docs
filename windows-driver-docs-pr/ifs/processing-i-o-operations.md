@@ -1,7 +1,6 @@
 ---
 title: Processing I/O Operations
 description: Processing I/O Operations
-ms.assetid: 750fa89b-dbdf-45ff-bfa5-83c717d2d7bb
 keywords:
 - filter manager WDK file system minifilter , processing I/O operations
 - preoperation callback routines WDK file system minifilter , filter manager

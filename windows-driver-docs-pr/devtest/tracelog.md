@@ -1,7 +1,6 @@
 ---
 title: Tracelog
 description: Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Prompt window. This section describes Tracelog, explains its command syntax, and provides practical examples for its use.
-ms.assetid: aa3c144d-260b-44d2-b41c-d18be40ba541
 keywords:
 - Tracelog WDK
 - software tracing WDK , Tracelog

@@ -1,7 +1,6 @@
 ---
 title: DSM\_PARAMETERS WMI Class
 description: DSM\_PARAMETERS WMI Class
-ms.assetid: c946f8cb-327c-4d5a-a133-0051a405fcad
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

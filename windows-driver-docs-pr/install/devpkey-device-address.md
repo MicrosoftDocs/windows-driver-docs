@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Address
 description: DEVPKEY_Device_Address
-ms.assetid: 48951b9e-0bd0-4f56-9a6f-e8a5aa6c25c2
 keywords: ["DEVPKEY_Device_Address Device and Driver Installation"]
 topic_type:
 - apiref

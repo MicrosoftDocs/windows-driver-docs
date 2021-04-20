@@ -1,7 +1,6 @@
 ---
 title: UAA Class Drivers
 description: UAA Class Drivers
-ms.assetid: 57f8f6fe-53a9-4ef1-b4f6-715232e88fdf
 keywords:
 - HD Audio, Universal Audio Architecture
 - High Definition Audio (HD Audio), Universal Audio Architecture

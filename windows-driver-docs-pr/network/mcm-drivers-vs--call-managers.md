@@ -1,7 +1,6 @@
 ---
 title: MCM Drivers vs. Call Managers
 description: MCM Drivers vs.
-ms.assetid: 374716fb-c192-42fd-bef0-0097d622f791
 keywords:
 - connection-oriented NDIS WDK , call managers
 - CoNDIS WDK networking , call managers

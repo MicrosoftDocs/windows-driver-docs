@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PEAKMETER
 description: The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
-ms.assetid: c8c2c9ed-61ea-4bbe-b376-c956f051416e
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Life Cycle of a Storport Driver
 description: Life Cycle of a Storport Driver
-ms.assetid: 6b48cf8e-83c3-4403-88fd-1bf1f285aafc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

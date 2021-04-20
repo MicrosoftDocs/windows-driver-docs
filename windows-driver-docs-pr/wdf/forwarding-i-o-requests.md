@@ -1,7 +1,6 @@
 ---
 title: Forwarding I/O Requests
 description: Forwarding I/O Requests
-ms.assetid: 75e007e3-1b97-44db-ac86-56aab78222a6
 keywords:
 - forwarding I/O requests WDK KMDF
 - I/O requests WDK KMDF , forwarding

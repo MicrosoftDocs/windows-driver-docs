@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_MAXVIDFPS\_PHOTORES
 description: This property control sets or retrieves the maximum frame rate possible on the capture (preview) video pins at a particular photo resolution.
-ms.assetid: 80A2492B-447A-4ADE-9B0C-54FB53E4163D
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES Streaming Media Devices"]
 topic_type:
 - apiref

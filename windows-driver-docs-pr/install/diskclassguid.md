@@ -1,7 +1,6 @@
 ---
 title: DiskClassGuid
 description: DiskClassGuid
-ms.assetid: eeefc86c-caff-4d1c-b2c1-aefde3bd21ed
 keywords: ["DiskClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

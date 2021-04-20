@@ -1,7 +1,6 @@
 ---
 title: Registering Memory for Operations on a SAN
 description: Registering Memory for Operations on a SAN
-ms.assetid: 5492466e-4765-4d43-b6bc-1d5bc74996ba
 keywords:
 - SAN connection setup WDK , registering memory
 - registering memory for SANs

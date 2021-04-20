@@ -1,7 +1,6 @@
 ---
 title: HD Audio DDI Enumerations
 description: This section describes the enumerations that are used by various HD audio properties and structures.
-ms.assetid: 632DCBFA-1686-4828-9A03-8C4674FAA0FF
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_ClassCoInstallers
 description: DEVPKEY_DeviceClass_ClassCoInstallers
-ms.assetid: c1369006-5329-48c7-afe0-ddce44889bbc
 keywords: ["DEVPKEY_DeviceClass_ClassCoInstallers Device and Driver Installation"]
 topic_type:
 - apiref

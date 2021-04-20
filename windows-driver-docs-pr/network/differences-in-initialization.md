@@ -1,7 +1,6 @@
 ---
 title: Differences in Initialization
 description: Differences in Initialization
-ms.assetid: 1b19e30d-3c10-4b97-9bb4-3233f7f2a195
 keywords:
 - initializing connection-oriented protocols
 ms.date: 04/20/2017

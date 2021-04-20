@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_AGC
 description: The KSPROPERTY\_AUDIO\_AGC property specifies the state of the AGC (automatic gain control) for a channel in an AGC node (KSNODETYPE\_AGC).
-ms.assetid: 72630e9b-a1e7-4319-831a-94f8b856cf93
 keywords: ["KSPROPERTY_AUDIO_AGC Audio Devices"]
 topic_type:
 - apiref

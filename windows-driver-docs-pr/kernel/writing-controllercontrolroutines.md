@@ -1,7 +1,6 @@
 ---
 title: Writing ControllerControl Routines
 description: Writing ControllerControl Routines
-ms.assetid: 9330e0ff-c4bb-4aa6-985e-ef89791f74df
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

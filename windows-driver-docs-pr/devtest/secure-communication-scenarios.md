@@ -1,7 +1,6 @@
 ---
 title: Secure Communication Scenarios
 description: Secure Communication Scenarios
-ms.assetid: 0273f4e7-0b93-4ab1-8564-e51c14e91243
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios

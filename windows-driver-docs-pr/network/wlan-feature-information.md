@@ -1,7 +1,6 @@
 ---
 title: WLAN feature information
 description: This section contains specific WLAN feature information.
-ms.assetid: E8B759CC-695E-418A-A93F-FA7F0E302D6D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

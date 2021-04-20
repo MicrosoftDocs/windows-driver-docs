@@ -1,6 +1,5 @@
 ---
 title: KsProcessingMutex rule ()
-ms.assetid: AD73B241-7B08-4E48-94A1-B6BDE78590E6
 ms.date: 05/21/2018
 description: "Learn more about: KsProcessingMutex rule ()"
 keywords: ["KsProcessingMutex rule ()"]

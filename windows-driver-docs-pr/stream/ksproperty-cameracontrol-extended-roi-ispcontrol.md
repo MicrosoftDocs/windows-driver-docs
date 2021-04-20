@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL property ID that is defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration is used to get or configure the ROI settings and apply the desired processing.
-ms.assetid: 47F6C327-3279-44C2-9B18-50E6EC9C5E77
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL Streaming Media Devices"]
 topic_type:
 - apiref

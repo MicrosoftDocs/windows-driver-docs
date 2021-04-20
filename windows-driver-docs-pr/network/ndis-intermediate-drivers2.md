@@ -1,7 +1,6 @@
 ---
 title: NDIS Intermediate Drivers Guide
 description: NDIS Intermediate Drivers Guide
-ms.assetid: 773d9711-fdea-4541-bb0d-6b07b50892fc
 keywords:
 - intermediate drivers WDK networking
 - network drivers WDK , intermediate drivers

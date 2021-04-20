@@ -1,7 +1,6 @@
 ---
 title: Bluetooth IOCTLs
 description: Bluetooth IOCTLs
-ms.assetid: 384ea4bb-863c-4da7-bf81-85d2de734ef7
 keywords:
 - Bluetooth WDK , IOCTLs
 - IOCTLs WDK Bluetooth

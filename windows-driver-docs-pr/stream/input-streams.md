@@ -1,7 +1,6 @@
 ---
 title: Input Streams
 description: Input Streams
-ms.assetid: 0aa378d8-e7e2-4555-b541-dd1ed77b4a12
 keywords:
 - input streams WDK DVD decoder
 - DVD PACKs WDK DVD decoder

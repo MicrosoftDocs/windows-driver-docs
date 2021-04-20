@@ -1,7 +1,6 @@
 ---
 title: Trace Message Format File
 description: Trace Message Format File
-ms.assetid: ac45475e-bf2d-4fa6-82fc-37ef8f4c0f6c
 keywords:
 - trace message format files WDK
 - TMF files WDK

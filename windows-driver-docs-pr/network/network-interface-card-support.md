@@ -1,7 +1,6 @@
 ---
 title: Network Interface Card Support
 description: Network Interface Card Support
-ms.assetid: de673a37-3870-4995-b4f1-647b502e0773
 keywords:
 - miniport drivers WDK networking , NIC support
 - NDIS miniport drivers WDK , NIC support

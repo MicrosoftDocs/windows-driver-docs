@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DISK\_INFO WMI Class
 description: MPIO\_DISK\_INFO WMI Class
-ms.assetid: 75c66c84-d815-43a5-a70d-1952bf0e8d44
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

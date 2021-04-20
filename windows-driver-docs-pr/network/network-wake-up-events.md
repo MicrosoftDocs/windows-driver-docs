@@ -1,7 +1,6 @@
 ---
 title: About Network Wake-Up Events
 description: About Network Wake-Up Events
-ms.assetid: 85195d44-4d79-4feb-af35-c478dc4319c5
 keywords:
 - wake-up capabilities WDK networking , types
 - NICs WDK networking , wake-up events

@@ -1,7 +1,6 @@
 ---
 title: Power management for HID over the I²C
 description: This section describes power management for devices that support HID over the I²C.
-ms.assetid: 00FE1248-683F-48FE-8422-E51E88224955
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

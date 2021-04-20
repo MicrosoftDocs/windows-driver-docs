@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CREATE_PORT_MAC_ADDRESS
 description: WDI_TLV_CREATE_PORT_MAC_ADDRESS is a TLV that contains a MAC address for OID_WDI_TASK_CREATE_PORT.
-ms.assetid: CE2174E2-CFD7-40E7-B8A2-B96DDB6D6AA4
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CREATE_PORT_MAC_ADDRESS Network Drivers Starting with Windows Vista

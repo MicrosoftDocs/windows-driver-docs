@@ -1,7 +1,6 @@
 ---
 title: Multiplexed CLFS Logs
 description: Multiplexed CLFS Logs
-ms.assetid: bbea9bdc-8bb8-4455-89c4-4735bad85ba0
 keywords: ["Common Log File System WDK kernel , multiplexed logs", "CLFS WDK kernel , multiplexed logs", "multiplexed logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

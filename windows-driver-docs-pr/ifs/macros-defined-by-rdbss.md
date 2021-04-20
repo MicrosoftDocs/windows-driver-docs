@@ -1,7 +1,6 @@
 ---
 title: Macros Defined by RDBSS
 description: Macros Defined by RDBSS
-ms.assetid: 11add885-ecd9-4b43-be42-ef060e847183
 keywords:
 - RDBSS WDK file systems , macros
 - Redirected Drive Buffering Subsystem WDK file systems , macros

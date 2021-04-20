@@ -1,7 +1,6 @@
 ---
 title: Connect your sensor to the Sharks Cove board
 description: This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
-ms.assetid: B081F4B6-D15E-4F1A-A5C0-E19DA806EAB2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,8 +34,6 @@ Here are some examples of how information from the ADXL345 data sheet, and the S
 -   When the **SDO** line is high, the 7-bit I2C address for the accelerometer board is 0x1D, followed by the R/W bit. When the **SDO** line is low (i.e. connected to Ground), the I2C address for the accelerometer board is 0x53, followed by the R/W bit. In the Microsoft SPBAccelerometer sample, it was decided that the address of 0x53 would be used. And that’s why the **SDO** line is connected to a Ground pin (**J1C1 PIN12**) on Sharks Cove.
 
 The connection decisions outlined in the preceding bullets were based on information from the *Theory of Operation* section (page 6) and the *Serial Communications* section (page 8) of the ADXL345 data sheet.
-
-For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](https://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
 
 After successfully connecting your sensor test board to Sharks Cove, read the next topic for guidance on how to [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md).
 

@@ -1,7 +1,6 @@
 ---
 title: Querying VidPN Hardware Capabilities
 description: Querying VidPN Hardware Capabilities
-ms.assetid: fb7939bb-ff7e-4ba8-b801-ac10010c44b7
 keywords:
 - VidPN WDK display , hardware capabilities
 ms.date: 04/20/2017

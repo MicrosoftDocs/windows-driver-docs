@@ -1,7 +1,6 @@
 ---
 title: CoNDIS TAPI Registration
 description: CoNDIS TAPI Registration
-ms.assetid: 656be990-9392-4e8b-ac4a-73e38b75c109
 keywords:
 - CoNDIS WAN drivers WDK networking , TAPI services
 - telephonic services WDK WAN , registering

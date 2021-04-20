@@ -1,7 +1,6 @@
 ---
 title: InputSource element
 description: The optional InputSource element specifies the source of the original document on the scanning device.
-ms.assetid: a49ed5d8-6d49-4997-9704-de1cd6c7d0c7
 keywords: ["InputSource element Imaging Devices"]
 topic_type:
 - apiref

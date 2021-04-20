@@ -1,7 +1,6 @@
 ---
 title: Differences in Changer Class Driver Versions
 description: Differences in Changer Class Driver Versions
-ms.assetid: 4ae4d1b0-cf2f-4c81-b8ae-3a91fd479a89
 keywords:
 - changer drivers WDK storage , class drivers
 - storage changer drivers WDK , class drivers

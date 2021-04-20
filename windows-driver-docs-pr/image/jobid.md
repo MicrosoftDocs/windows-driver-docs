@@ -1,7 +1,6 @@
 ---
 title: JobId element
 description: The required JobId element uniquely identifies a job within a scanner.
-ms.assetid: ae9199c1-c45a-4147-b4f0-f37a9a0f1b22
 keywords: ["JobId element Imaging Devices"]
 topic_type:
 - apiref

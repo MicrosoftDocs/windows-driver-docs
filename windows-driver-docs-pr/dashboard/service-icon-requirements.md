@@ -1,7 +1,6 @@
 ---
 title: Service icon requirements
 description: Service icon requirements
-ms.assetid: ce018a26-f5ce-4fbb-8339-b3207ca5ed68
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

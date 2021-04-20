@@ -1,7 +1,6 @@
 ---
 title: Metadata Overriding Data Driven Test Example
 description: Metadata Overriding Data Driven Test Example
-ms.assetid: F39A556F-1816-4272-ABDE-62164AE09685
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Attaching a Filter Module
 description: Attaching a Filter Module
-ms.assetid: 4441383e-cc22-4fe1-9c46-28d405736daa
 keywords:
 - filter modules WDK networking , attaching
 - attaching filter modules

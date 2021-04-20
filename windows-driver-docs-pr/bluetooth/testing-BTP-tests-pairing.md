@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - Pairing
 description: Bluetooth Test Platform (BTP) pairing tests.
-ms.assetid: 19caf4db-9303-47d1-be12-5ff4b2710bc8
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 
@@ -37,6 +36,8 @@ When using the BM-64-EVB, red and blue LEDs will flash in patterns for indicting
 ## Capturing logs
 
 To capture the Bluetooth logs follow the instructions for the [busiotools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
+
+To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](testing-BTP-tools-btetlparse.md).
 
 ## Known issues
 

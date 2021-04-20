@@ -1,7 +1,6 @@
 ---
 title: Completing a DMA Transaction
 description: Completing a DMA Transaction
-ms.assetid: 90531b72-e51d-451e-ae84-a9bbf0245665
 keywords:
 - DMA transactions WDK KMDF , completing
 - DMA operations WDK KMDF , transactions

@@ -1,7 +1,6 @@
 ---
 title: Common, Camera, and Scanner Properties
 description: Common, Camera, and Scanner Properties
-ms.assetid: 7d988a1b-4c2f-43f7-be09-a250d9ede35c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Writing WIA Properties by a Driver
 description: Writing WIA Properties by a Driver
-ms.assetid: 6d2164ac-0fbc-4ecb-b3bf-a46efbe07f51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

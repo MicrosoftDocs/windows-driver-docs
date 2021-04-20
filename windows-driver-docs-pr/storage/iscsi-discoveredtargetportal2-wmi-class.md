@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTargetPortal2 WMI Class
 description: ISCSI\_DiscoveredTargetPortal2 WMI Class
-ms.assetid: 3ca74715-2997-4f8b-9bca-062b14e404bf
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

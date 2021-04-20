@@ -1,7 +1,6 @@
 ---
 title: INF AddPowerSetting Directive
 description: An AddPowerSetting directive references one or more sections that are used to modify or create power setting information.
-ms.assetid: 0231ba90-5de4-4f5a-83bb-0f73be4b23ae
 keywords:
 - INF AddPowerSetting Directive Device and Driver Installation
 topic_type:

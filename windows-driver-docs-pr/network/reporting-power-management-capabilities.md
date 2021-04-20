@@ -1,7 +1,6 @@
 ---
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
-ms.assetid: cfacd885-e18a-44a5-939d-88e62b573ace
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAGES
 description: The WIA\_DPS\_PAGES property contains the current number of pages to acquire from an automatic document feeder.
-ms.assetid: 51ab2eab-c7b4-4d54-bfc7-d53a8f66c7a9
 keywords: ["WIA_DPS_PAGES Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_NoDisplayClass
 description: DEVPKEY_DeviceClass_NoDisplayClass
-ms.assetid: b604c201-c6db-491f-bd7a-ae097249e98a
 keywords: ["DEVPKEY_DeviceClass_NoDisplayClass Device and Driver Installation"]
 topic_type:
 - apiref

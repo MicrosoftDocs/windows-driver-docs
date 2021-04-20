@@ -1,7 +1,6 @@
 ---
 title: Add or Update a code signing certificate
 description: Add or Update a code signing certificate
-ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

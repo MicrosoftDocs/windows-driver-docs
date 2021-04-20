@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_FORMATS
 description: The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats supported by a filter. This information is returned as a multiple item property.
-ms.assetid: 6d01737e-baef-4a65-90c7-3838cb19b4c9
 keywords: ["KSPROPERTY_MEDIASEEKING_FORMATS Streaming Media Devices"]
 topic_type:
 - apiref

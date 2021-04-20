@@ -1,7 +1,6 @@
 ---
 title: Audio Miniport Object Interfaces
 description: Audio Miniport Object Interfaces
-ms.assetid: 2e79ad90-fecc-47a7-b487-809325a16239
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

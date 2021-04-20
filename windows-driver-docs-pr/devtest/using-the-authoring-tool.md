@@ -1,7 +1,6 @@
 ---
 title: Using the Device Metadata Authoring Wizard
 description: Using the Device Metadata Authoring Wizard
-ms.assetid: 77809258-C14C-481F-AE6C-07580294EBD8
 keywords:
 - Using the Device Metadata Authoring Wizard
 ms.date: 04/20/2017

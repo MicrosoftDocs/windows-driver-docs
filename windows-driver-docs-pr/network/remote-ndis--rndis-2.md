@@ -1,7 +1,6 @@
 ---
 title: Introduction to Remote NDIS (RNDIS)
 description: Introduction to Remote NDIS (RNDIS)
-ms.assetid: 857cec9c-6098-4fd3-9528-fa592da997f4
 keywords:
 - Remote NDIS WDK networking
 - network drivers WDK , Remote NDIS

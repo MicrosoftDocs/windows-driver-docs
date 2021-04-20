@@ -1,7 +1,6 @@
 ---
 title: Unloading a Provider Module
 description: Unloading a Provider Module
-ms.assetid: c6dd6552-2923-4091-9bf1-5833c049aa23
 keywords:
 - provider modules WDK Network Module Registrar , unloading
 - unloading network modules

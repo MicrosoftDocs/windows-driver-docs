@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_USB_HUB
 description: GUID_DEVINTERFACE_USB_HUB
-ms.assetid: 899b77ad-fa98-4078-9207-69b422e3d0d0
 keywords: ["GUID_DEVINTERFACE_USB_HUB Device and Driver Installation"]
 topic_type:
 - apiref

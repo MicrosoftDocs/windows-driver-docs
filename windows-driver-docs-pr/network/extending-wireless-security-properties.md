@@ -1,7 +1,6 @@
 ---
 title: Extending Wireless Security Properties
 description: Extending Wireless Security Properties
-ms.assetid: be6af188-fa60-4ac8-a699-97a3baaec6be
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , security properties
 - security properties WDK Native 802.11 IHV UI Extensions DLL

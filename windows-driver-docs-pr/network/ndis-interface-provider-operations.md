@@ -1,7 +1,6 @@
 ---
 title: NDIS Interface Provider Operations
 description: NDIS Interface Provider Operations
-ms.assetid: cd5c76b0-6b38-44ea-ac1b-02be5d073203
 keywords:
 - NDIS network interfaces WDK , interface providers
 - network interfaces WDK , interface providers

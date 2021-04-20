@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
+> [!NOTE]
+> CFU is available in Windows 10, version 2004 (Windows 10 May 2020 Update) and later versions.
+
 ## Contents
 
 - [1 Introduction](#1-introduction)
@@ -578,7 +581,7 @@ The bits of the Reject Reason byte are described in this table.
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. This value depends on the Status field. For a Status to RR Code mapping see Table 5.2-13. |
-| 8 | Reserved | 24 | Reserved. Do not use. |                                                             |
+| 8 | Reserved | 24 | Reserved. Do not use. |
 
 ###### Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response RR Code Values
 

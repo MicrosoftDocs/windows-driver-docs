@@ -1,7 +1,6 @@
 ---
 title: Using CPSUI with Printer Drivers
 description: Using CPSUI with Printer Drivers
-ms.assetid: 898a855d-6a9a-4f98-9ee4-bad439427326
 keywords:
 - Common Property Sheet User Interface WDK print , displaying property sheet pages
 - CPSUI WDK print , displaying property sheet pages

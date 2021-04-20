@@ -1,7 +1,6 @@
 ---
 title: Kiosk apps for assigned access Best practices
 description: Kiosk apps for assigned access Best practices
-ms.assetid: 2405B5BB-2214-4B40-B3A1-C47073390B21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

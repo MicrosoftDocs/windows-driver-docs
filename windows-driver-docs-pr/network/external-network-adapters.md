@@ -1,7 +1,6 @@
 ---
 title: External Network Adapters
 description: External Network Adapters
-ms.assetid: 4029437C-97EA-4F21-A3F0-3B29DC650233
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

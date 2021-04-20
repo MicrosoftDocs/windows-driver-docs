@@ -1,7 +1,6 @@
 ---
 title: Overview of IHV Extensibility
 description: Overview of IHV Extensibility
-ms.assetid: 446d91e9-3497-4b45-82a6-7f36dd136e08
 keywords:
 - IHV extensions WDK Native 802.11 , about IHV extensibility
 - Native 802.11 IHV Extensions WDK , about IHV extensibility

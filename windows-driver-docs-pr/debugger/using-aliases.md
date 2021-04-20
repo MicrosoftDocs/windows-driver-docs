@@ -1,7 +1,6 @@
 ---
 title: Using Aliases
 description: Using Aliases
-ms.assetid: ee0540d0-5bfd-47ef-92b1-ec1d6954aec7
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

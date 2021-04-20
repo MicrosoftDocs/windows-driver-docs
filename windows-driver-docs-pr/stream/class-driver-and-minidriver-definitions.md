@@ -1,7 +1,6 @@
 ---
 title: Class Driver and Minidriver Definitions
 description: Class Driver and Minidriver Definitions
-ms.assetid: eb428e8b-0c47-4843-8770-c22088ba5c6c
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , class driver/minidriver relationship
 - streaming minidrivers WDK Windows 2000 Kernel , class driver/minidriver relationship

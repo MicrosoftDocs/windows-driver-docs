@@ -1,7 +1,6 @@
 ---
 title: ValidateScanTicketRequest element
 description: The required ValidateScanTicketRequest operation element enables a client to determine if the settings for future scan operations are valid.
-ms.assetid: 366b0d71-1494-48fa-94f5-1832d7f119a4
 keywords: ["ValidateScanTicketRequest element Imaging Devices"]
 topic_type:
 - apiref

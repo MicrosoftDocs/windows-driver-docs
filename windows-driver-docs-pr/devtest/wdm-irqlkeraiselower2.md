@@ -1,7 +1,6 @@
 ---
 title: IrqlKeRaiseLower2 rule (wdm)
 description: The IrqlKeRaiseLower2 rule specifies that drivers use KeLowerIrql to restore the original IRQL raised by a preceding call to KeRaiseIrql or KeRaiseIrqlToDpcLevel.
-ms.assetid: 7e256237-e649-45de-bcd9-b06795a5c5c9
 ms.date: 05/21/2018
 keywords: ["IrqlKeRaiseLower2 rule (wdm)"]
 topic_type:

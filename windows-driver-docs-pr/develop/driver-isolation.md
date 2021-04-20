@@ -2,7 +2,6 @@
 title: Driver Package Isolation
 description: This page describes driver isolation, a requirement for a Windows Driver.
 ms.date: 10/01/2019
-ms.assetid: 3955fb29-ee49-4c3e-ac6d-700dcba3f884
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +26,9 @@ The following table shows legacy driver practices that are no longer allowed for
 
 All isolated driver packages leave their driver package files in the driver store. This means that they specify [**DIRID 13**](../install/using-dirids.md) in their INF to specify the location for driver package files on install.
 
-A kernel mode driver that is running from the Driver Store can call [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) and use that path to find configuration files relative to it.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. UMDF drivers can use [**GetModuleHandleExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example:
+A WDM or KMDF driver that is running from the DriverStore on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from.
+
+Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for configuration files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. UMDF drivers can use [**GetModuleHandleExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example:
 
 ```cpp
 bRet = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
@@ -39,10 +40,6 @@ if (bRet) {
                                       pathLength);
     …
 ```
-
-A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
-
-Alternatively, on Windows 10, version 1803 and later, call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from.
 
 For a file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry for the file in the INF must match the subdir listed in the [**DestinationDirs**](../install/inf-destinationdirs-section.md) entry for the file in the INF.
 
@@ -211,7 +208,7 @@ These registry values supplied by the INF in the “Parameters” subkey for the
 
 If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
 
-* [**IoGetDeviceDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdevicedirectory) (WDM)
+* [**IoGetDeviceDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdevicedirectory) (WDM) with the **DirectoryType** parameter set to **DeviceDirectoryData**
 * [**WdfDeviceRetrieveDeviceDirectoryString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring) (WDF)
 
 ### Service File State
@@ -220,9 +217,10 @@ Both Win32 and driver services read and write state about themselves.
 
 To access its own internal state values, a service uses one of the following options: 
 
-* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM)
-* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (KMDF)
+* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM) with the **DirectoryType** parameter set to **DeviceDirectoryData**
+* [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (KMDF) with the **DirectoryType** parameter set to **DeviceDirectoryData**
 * [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring) (UMDF)
+* [**GetServiceDirectory**](/windows/win32/api/winsvc/nf-winsvc-getservicedirectory) (Win32 Services) with the **eDirectoryType** parameter set to **ServiceDirectoryPersistentState**
 
 To share internal state of the service with other components, use a controlled, versioned interface instead of direct registry or file reads.
 

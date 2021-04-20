@@ -1,7 +1,6 @@
 ---
 title: SRB\_CLOSE\_STREAM
 description: SRB\_CLOSE\_STREAM
-ms.assetid: e118ddd7-fe0e-4834-9ae6-19eef0348b2c
 keywords: ["SRB_CLOSE_STREAM Streaming Media Devices"]
 topic_type:
 - apiref

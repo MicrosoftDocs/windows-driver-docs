@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_PINCAPS\_JACKINFOCHANGE
 description: The KSEVENT\_PINCAPS\_JACKINFOCHANGE event indicates to the audio stack that the jack information for the audio device has changed.
-ms.assetid: 46514043-5044-4373-94ca-b00898aeefba
 keywords: ["KSEVENT_PINCAPS_JACKINFOCHANGE Audio Devices"]
 topic_type:
 - apiref

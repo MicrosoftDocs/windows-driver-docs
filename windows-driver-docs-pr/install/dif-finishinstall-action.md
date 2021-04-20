@@ -1,7 +1,6 @@
 ---
 title: DIF_FINISHINSTALL_ACTION
 description: DIF_FINISHINSTALL_ACTION
-ms.assetid: 76eba79b-7a8a-478e-aaea-8b36eee51846
 keywords: ["DIF_FINISHINSTALL_ACTION Device and Driver Installation"]
 topic_type:
 - apiref

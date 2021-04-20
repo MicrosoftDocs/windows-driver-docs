@@ -1,7 +1,6 @@
 ---
 title: INF Reboot Directive
 description: A Reboot directive indicates that the caller should be notified to reboot the system after installation is complete.
-ms.assetid: 0E2640EA-921D-4677-82EF-EF9707254E66
 keywords:
 - INF Reboot Directive Device and Driver Installation
 topic_type:

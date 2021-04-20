@@ -1,7 +1,6 @@
 ---
 title: Broadcast Driver Architecture Minidrivers
 description: Broadcast Driver Architecture Minidrivers
-ms.assetid: 0ad56dbd-6f79-439f-8dfc-8d118d114ddd
 keywords:
 - Broadcast Driver Architecture WDK AVStream , minidrivers
 - BDA WDK AVStream , minidrivers

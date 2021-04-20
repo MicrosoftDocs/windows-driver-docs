@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION
 description: The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a structure that specifies the current position within the audio data being rendered to the endpoint.
-ms.assetid: 21067580-12FF-4327-B9AA-D16E2635FA12
 keywords: ["KSPROPERTY_AUDIO_PRESENTATION_POSITION Audio Devices"]
 topic_type:
 - apiref

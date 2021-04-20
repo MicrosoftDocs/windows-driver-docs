@@ -1,7 +1,6 @@
 ---
 title: Data offset positions
 description: This section describes Data offset positions for Windows Filtering Platform callout drivers.
-ms.assetid: cf4656cf-b978-4539-9fff-8f0aa5de1b5e
 keywords:
 - Data offset positions network drivers
 ms.date: 11/09/2017

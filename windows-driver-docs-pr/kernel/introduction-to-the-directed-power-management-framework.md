@@ -1,8 +1,7 @@
 ---
 title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
-ms.assetid: 58550c57-3439-4212-b0c6-6a2fbfd38414
-ms.date: 02/21/2020
+ms.date: 04/02/2021
 ms.custom: 19H1
 ---
 
@@ -106,6 +105,7 @@ Testing DFx after an S4 transition is recommended in order to catch any cases wh
 
 ## See Also
 
+- [Directed power management](https://docs.microsoft.com/windows-hardware/design/device-experiences/directed-power-management)
 - [Prepare hardware for modern standby](/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby)
 - [PwrTest](../devtest/pwrtest.md)
 - [PO_FX_DEVICE_V3 structure](/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)

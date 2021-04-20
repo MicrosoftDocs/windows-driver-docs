@@ -59,7 +59,7 @@ The preceding procedure does not add a device interface GUID for an app (UWP app
 
 As part of the driver package, you provide an .inf file that installs Winusb.sys as the function driver for the USB device.
 
-The following example .inf file shows WinUSB installation for most USB devices with some modifications, such as changing **USB\_Install** in section names to an appropriate *DDInstall* value. You should also change the version, manufacturer, and model sections as necessary. For example, provide an appropriate manufacture's name, the name of your signed catalog file, the correct device class, and the vendor identifier (VID) and product identifier (PID) for the device.
+The following example .inf file shows WinUSB installation for most USB devices with some modifications, such as changing **USB\_Install** in section names to an appropriate *DDInstall* value. You should also change the version, manufacturer, and model sections as necessary. For example, provide an appropriate manufacture's name, the name of your signed catalog file, the correct device class, and the vendor identifier (VID) and product identifier (PID) for the device. For info on creating a catalog file, see [Creating a Catalog File for Test-Signing a Driver Package](../install/creating-a-catalog-file-for-test-signing-a-driver-package.md).
 
 Also notice that the setup class is set to "USBDevice". Vendors can use the "USBDevice" setup class for devices that do not belong to another class and are not USB host controllers or hubs.
 

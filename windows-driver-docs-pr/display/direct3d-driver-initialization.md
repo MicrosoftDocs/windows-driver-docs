@@ -1,7 +1,6 @@
 ---
 title: Direct3D Driver Initialization
 description: Direct3D Driver Initialization
-ms.assetid: ef37a570-a94e-4021-b84f-4436aa454ac5
 keywords:
 - initializing Direct3D drivers
 - Direct3D WDK Windows 2000 display , initialization

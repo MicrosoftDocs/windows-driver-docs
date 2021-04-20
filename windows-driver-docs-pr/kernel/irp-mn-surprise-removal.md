@@ -2,7 +2,6 @@
 title: IRP_MN_SURPRISE_REMOVAL
 description: All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 19d6847c-6b64-4552-b8b8-fef1d9b13fc7
 keywords:
  - IRP_MN_SURPRISE_REMOVAL Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

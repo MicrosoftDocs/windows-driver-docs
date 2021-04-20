@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x2E DATA_BUS_ERROR
 description: The DATA_BUS_ERROR bug check has a value of 0x0000002E. This typically indicates that a parity error in system memory has been detected.
-ms.assetid: 117adb1b-49aa-4c4e-ae01-730d1d653c02
 keywords: ["Bug Check 0x2E DATA_BUS_ERROR", "DATA_BUS_ERROR"]
 ms.date: 05/23/2017
 topic_type:

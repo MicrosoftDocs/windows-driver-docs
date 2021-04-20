@@ -1,7 +1,6 @@
 ---
 title: GetJobHistoryResponse element
 description: The required GetJobHistoryResponse element returns a summary of completed jobs.
-ms.assetid: 85c9edb4-fe6c-49a7-899a-71ce65e38852
 keywords: ["GetJobHistoryResponse element Imaging Devices"]
 topic_type:
 - apiref

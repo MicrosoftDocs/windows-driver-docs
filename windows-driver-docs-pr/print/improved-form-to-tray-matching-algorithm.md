@@ -1,7 +1,6 @@
 ---
 title: Improved Form-to-Tray Matching Algorithm
 description: Improved Form-to-Tray Matching Algorithm
-ms.assetid: ce58501d-a2f6-4106-9a99-ad44ff4bf658
 keywords:
 - matching algorithm WDK forms
 - form-to-tray matching algorithm WDK printer

@@ -1,7 +1,6 @@
 ---
 title: Receiving and Translating NIC Addresses
 description: Receiving and Translating NIC Addresses
-ms.assetid: c7171a4d-cc77-427e-8d23-8811f650e543
 keywords:
 - Windows Sockets Direct WDK , initializing SAN usage
 - initializing SAN usage

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverPropPageProvider
 description: DEVPKEY_Device_DriverPropPageProvider
-ms.assetid: 9dabdba0-e179-467b-b0ad-960033a7ab86
 keywords: ["DEVPKEY_Device_DriverPropPageProvider Device and Driver Installation"]
 topic_type:
 - apiref

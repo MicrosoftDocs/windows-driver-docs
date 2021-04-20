@@ -1,7 +1,6 @@
 ---
 title: Differences in Virtual Connections
 description: Differences in Virtual Connections
-ms.assetid: 6e705f31-eec7-4b9c-a46f-ff7641d224c2
 keywords:
 - virtual connections WDK CoNDIS , MCM drivers vs. call managers
 - signaling VCs WDK CoNDIS

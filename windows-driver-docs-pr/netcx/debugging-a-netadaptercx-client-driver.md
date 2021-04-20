@@ -1,7 +1,6 @@
 ---
 title: Debugging a NetAdapterCx client driver
 description: Debugging a NetAdapterCx client driver
-ms.assetid: EE8EA3DA-33E7-4EED-B991-38A21CAA699E
 keywords:
 - debugging NetAdapterCx client drivers, debugging NetAdapterCx client drivers
 ms.date: 06/17/2020

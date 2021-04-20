@@ -1,7 +1,6 @@
 ---
 title: MakeCert Test Certificate
 description: MakeCert Test Certificate
-ms.assetid: 17f63c42-a563-4a57-a3be-ac3b2e97ee3b
 keywords:
 - MakeCert test certificates WDK
 - digital certificates WDK

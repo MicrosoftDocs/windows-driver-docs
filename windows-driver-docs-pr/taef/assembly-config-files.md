@@ -1,7 +1,6 @@
 ---
 title: Assembly Config Files
 description: Assembly Config Files
-ms.assetid: 53BAC457-BB6A-44a8-AD8D-3B621F41A245
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

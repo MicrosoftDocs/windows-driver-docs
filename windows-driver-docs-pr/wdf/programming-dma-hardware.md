@@ -1,7 +1,6 @@
 ---
 title: Programming DMA Hardware
 description: This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its EvtProgramDma event callback function.
-ms.assetid: 5e74fe74-d38f-4cca-b0cf-8a6f170c4dc5
 keywords:
 - DMA operations WDK KMDF , transfers
 - bus-master DMA WDK KMDF , transfers

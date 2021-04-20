@@ -1,7 +1,6 @@
 ---
 title: MPEG-4
 description: MPEG-4
-ms.assetid: 7879acd5-39fe-46b4-a427-43e4ea52315e
 keywords:
 - MPEG-4 WDK DirectX VA
 ms.date: 04/20/2017

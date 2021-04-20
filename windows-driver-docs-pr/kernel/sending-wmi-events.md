@@ -1,7 +1,6 @@
 ---
 title: Sending WMI Events
 description: Sending WMI Events
-ms.assetid: 0d5e62f1-b84e-42b7-be40-8665f0b58ba8
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "dynamic instance names WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

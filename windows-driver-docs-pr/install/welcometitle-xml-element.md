@@ -1,7 +1,6 @@
 ---
 title: welcomeTitle XML Element
 description: welcomeTitle XML Element
-ms.assetid: 480b6d02-b8b1-4e3f-9a00-869cc2b93279
 keywords: ["welcomeTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref

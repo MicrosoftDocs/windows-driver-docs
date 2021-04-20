@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_FILTER\_STATE
 description: The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a GFX filter for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.
-ms.assetid: e0a3bce7-d321-445c-866c-78502b5ea887
 keywords: ["KSPROPERTY_AUDIO_FILTER_STATE Audio Devices"]
 topic_type:
 - apiref

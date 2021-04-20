@@ -1,7 +1,6 @@
 ---
 title: Standard Options
 description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes. 
-ms.assetid: db4578c1-0954-4c51-a11a-923ab7df2b5b
 keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv

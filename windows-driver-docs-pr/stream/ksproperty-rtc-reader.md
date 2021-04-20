@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTC\_READER
 description: The KSPROPERTY\_RTC\_READER property retrieves the relative time counter (RTC) for the current tape position.
-ms.assetid: 728a4504-de60-47c7-a381-3513f2d4745b
 keywords: ["KSPROPERTY_RTC_READER Streaming Media Devices"]
 topic_type:
 - apiref

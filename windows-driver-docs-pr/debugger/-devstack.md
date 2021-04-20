@@ -1,7 +1,6 @@
 ---
 title: devstack
 description: The devstack extension displays a formatted view of the device stack associated with a device object.
-ms.assetid: 2215f166-2053-4525-80cd-be3817510dbd
 keywords: ["devstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

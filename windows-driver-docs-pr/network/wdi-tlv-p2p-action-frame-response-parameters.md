@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS
 description: WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS is a TLV that contains Wi-Fi Direct Action Frame response parameters.
-ms.assetid: 2DFF00A6-FDE2-43EF-93C2-EEA3DBC00D52
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Controlling Multisampling
 description: Controlling Multisampling
-ms.assetid: 73cdfda8-f67a-470b-a17e-0bf78a5d1df1
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, controlling
 - multisample rendering WDK DirectX 8.0 , controlling

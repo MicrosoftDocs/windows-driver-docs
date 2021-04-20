@@ -1,7 +1,6 @@
 ---
 title: WDI tracing with WDILib
 description: The WDILib component currently supports tracing using WPP. The trace provider's GUID is 21ba7b61-05f8-41f1-9048-c09493dcfe38 . The following instructions can be used to collect and view the traces.
-ms.assetid: 2F4FFF67-F88A-4CB0-9980-E3710D4F04EC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

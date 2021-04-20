@@ -1,7 +1,6 @@
 ---
 title: Changing BDA Filter Properties
 description: Changing BDA Filter Properties
-ms.assetid: 1833864a-5759-437c-ba60-0b38602d9e41
 keywords:
 - property sets WDK BDA , filter property changes
 - filter property changes WDK BDA

@@ -1,7 +1,6 @@
 ---
 title: Debugging Previous Versions of Windows
 description: Learn about debugging previous versions of Windows. See topics for debugging different Windows versions and view additional available information.
-ms.assetid: 4751D53D-A7CD-4645-B6E9-A8E06ABF4C6D
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

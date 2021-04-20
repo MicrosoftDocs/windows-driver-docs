@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Support in Windows
 description: DVD Decoder Support in Windows
-ms.assetid: 3a77b6d1-6095-4cf8-8cd4-2e6d80d171c8
 keywords:
 - DVD decoder minidrivers WDK , Windows support
 - decoder minidrivers WDK DVD , Windows support

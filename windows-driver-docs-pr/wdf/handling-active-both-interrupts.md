@@ -1,7 +1,6 @@
 ---
 title: Handling Active-Both Interrupts
 description: Handling Active-Both Interrupts
-ms.assetid: CFA205B1-FDDD-4E27-8CF9-106C8D1CC4EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

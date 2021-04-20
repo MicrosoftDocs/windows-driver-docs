@@ -1,7 +1,6 @@
 ---
 title: StorPortDeprecated rule (storport)
 description: This rule verifies that the driver does not call either of these deprecated routines StorPortValidateRange or StorPortLogError.
-ms.assetid: 90223719-91AB-4D10-88A0-0DBD2D99C5B2
 ms.date: 05/21/2018
 keywords: ["StorPortDeprecated rule (storport)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Mapping the COPP DDI to DirectDraw and DirectX VA
 description: Mapping the COPP DDI to DirectDraw and DirectX VA
-ms.assetid: 737dabab-39f0-44fd-9d34-56d812ffde88
 keywords:
 - copy protection WDK COPP , mapping COPP DDI
 - video copy protection WDK COPP , mapping COPP DDI

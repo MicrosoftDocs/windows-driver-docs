@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_RemovalPolicyDefault
 description: DEVPKEY_Device_RemovalPolicyDefault
-ms.assetid: e51fb2d2-5bc7-440c-8fc8-9e3f461350ea
 keywords: ["DEVPKEY_Device_RemovalPolicyDefault Device and Driver Installation"]
 topic_type:
 - apiref

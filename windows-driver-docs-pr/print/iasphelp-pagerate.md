@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 010f4871-f64f-465f-a78b-a86f91a9f194
 keywords: ["get_PageRate method Print Devices", "get_PageRate method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PageRate method"]
 topic_type:
 - apiref

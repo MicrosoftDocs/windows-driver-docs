@@ -1,7 +1,6 @@
 ---
 title: Example 15 Using Object Reference Tracing
 description: Example 15 Using Object Reference Tracing
-ms.assetid: 3c6102e6-4dac-4d90-ab8f-162dd6d8adf9
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

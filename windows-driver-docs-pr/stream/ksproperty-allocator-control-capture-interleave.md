@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE property informs the Overlay Mixer if interleaved capture is possible.
-ms.assetid: ea38289f-2d4e-4613-ba08-c8ab49f6fce7
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE Streaming Media Devices"]
 topic_type:
 - apiref

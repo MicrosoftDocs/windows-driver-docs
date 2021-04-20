@@ -1,7 +1,6 @@
 ---
 title: Filtering Layer
 description: Filtering Layer
-ms.assetid: db2fd1dc-c080-4f12-8138-7e66c74adacd
 keywords:
 - filtering layer WDK Windows Filtering Platform
 ms.date: 04/20/2017

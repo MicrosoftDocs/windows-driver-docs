@@ -1,7 +1,6 @@
 ---
 title: Asynchronous Rendering
 description: Asynchronous Rendering
-ms.assetid: f291e416-aaee-4639-9410-6d01b3b02097
 keywords:
 - display drivers WDK Windows 2000 , asynchronous rendering
 - asynchronous rendering WDK Windows 2000 display

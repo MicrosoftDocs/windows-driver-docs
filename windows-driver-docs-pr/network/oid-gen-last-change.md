@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_LAST_CHANGE
 description: As a query, use the OID_GEN_LAST_CHANGE OID to determine the time of the last operational state change of a network interface (ifLastChange from RFC 2863).
-ms.assetid: bd96d1ec-2fd0-491f-acb4-c1594ce6a084
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LAST_CHANGE Network Drivers Starting with Windows Vista

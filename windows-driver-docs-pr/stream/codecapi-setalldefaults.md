@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_SETALLDEFAULTS
 description: CODECAPI\_SETALLDEFAULTS
-ms.assetid: 6a50a75f-cbc5-487f-b2cd-34e89eb127a0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

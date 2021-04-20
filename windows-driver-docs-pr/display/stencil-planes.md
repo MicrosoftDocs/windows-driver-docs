@@ -1,7 +1,6 @@
 ---
 title: Stencil Planes
 description: Stencil Planes
-ms.assetid: a2abe78b-7755-45fc-ba02-f2809db5da3e
 keywords:
 - Direct3D WDK Windows 2000 display , stencil planes
 - stencil planes WDK Direct3D

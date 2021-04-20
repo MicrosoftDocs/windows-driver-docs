@@ -1,7 +1,6 @@
 ---
 title: PendedCompletedRequest2 rule (wdm)
 description: The PendedCompletedRequest2 rule specifies that a wait is required after a call to IoCallDriver or PoCallDriver because the dispatch routine could complete a pending IRP.
-ms.assetid: 738B9DEE-D7D4-4E6A-AE2D-F363F1255E8A
 ms.date: 05/21/2018
 keywords: ["PendedCompletedRequest2 rule (wdm)"]
 topic_type:

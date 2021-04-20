@@ -1,7 +1,6 @@
 ---
 title: Modifying Stream Data
 description: Modifying Stream Data
-ms.assetid: 8f591bc1-272c-4e53-8e49-3350c6a3a33e
 keywords:
 - classify callouts WDK Windows Filtering Platform , stream data changes
 - stream data changes WDK Windows Filtering Platform

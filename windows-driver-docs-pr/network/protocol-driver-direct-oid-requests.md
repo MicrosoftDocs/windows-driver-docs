@@ -1,7 +1,6 @@
 ---
 title: Protocol Driver Direct OID Requests
 description: Protocol Driver Direct OID Requests
-ms.assetid: 387d27de-3214-4f93-8f45-9a2f28e5036f
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking

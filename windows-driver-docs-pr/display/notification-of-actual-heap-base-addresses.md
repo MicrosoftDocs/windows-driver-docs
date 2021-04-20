@@ -1,7 +1,6 @@
 ---
 title: Notification of Actual Heap Base Addresses
 description: Notification of Actual Heap Base Addresses
-ms.assetid: b2fe29c7-7c97-41c2-a6be-2c0ef25c5b58
 keywords:
 - heaps WDK DirectDraw
 - display memory WDK DirectDraw , heaps

@@ -1,7 +1,6 @@
 ---
 title: Defining New NTSTATUS Values
 description: Defining New NTSTATUS Values
-ms.assetid: 44211ae4-6bfe-4931-b12c-e590c7aacd97
 keywords: ["NTSTATUS values WDK kernel", "custom NTSTATUS values WDK kernel", "IO_ERR_XXX values"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

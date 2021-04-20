@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_JACK\_CONTAINERID
 description: The KSPROPERTY\_JACK\_CONTAINERID property is implemented as a pin-wise property that is accessed by using the filter handle.
-ms.assetid: 01A157B0-41EE-4713-B5D3-B9BF9C2B80CE
 keywords: ["KSPROPERTY_JACK_CONTAINERID Audio Devices"]
 topic_type:
 - apiref

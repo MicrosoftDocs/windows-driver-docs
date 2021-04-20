@@ -1,7 +1,6 @@
 ---
 title: Registering to Receive Notifications
 description: Registering to Receive Notifications
-ms.assetid: 2442c204-c9d8-49fa-93ae-02623d08119c
 keywords:
 - spooler notification WDK print , registering to receive
 - print spooler notification WDK , registering to receive

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_VPDATAINFO
 description: The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuration state of the video port.
-ms.assetid: 66419d5a-c701-45f4-9ac6-322997e2f000
 keywords: ["KSPROPERTY_VPCONFIG_VPDATAINFO Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS
 description: The KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS property returns the capture driver's mapping of a VRAM surface handle to a VRAM physical address.To use VRAM transport, a capture minidriver must support this property.
-ms.assetid: 071c9152-12f9-4ec1-80d7-6b42fce51bbb
 keywords: ["KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_VOLUME_MOUNT union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_VOLUME\_MOUNT.
-ms.assetid: 3fcc20da-b985-4d08-a0f7-9d95ddfb79d8
 keywords: ["FLT_PARAMETERS for IRP_MJ_VOLUME_MOUNT union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

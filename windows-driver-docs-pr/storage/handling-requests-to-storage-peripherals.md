@@ -1,7 +1,6 @@
 ---
 title: Handling Requests to Storage Peripherals
 description: Handling Requests to Storage Peripherals
-ms.assetid: 3859588e-fc39-4323-a901-8771874e64d2
 keywords:
 - storage class drivers WDK , peripherals
 - class drivers WDK storage , peripherals

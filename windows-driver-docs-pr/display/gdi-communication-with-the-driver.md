@@ -1,7 +1,6 @@
 ---
 title: GDI Communication with the Driver
 description: GDI Communication with the Driver
-ms.assetid: 81d9e87f-883b-4019-86fc-bccde861de46
 keywords:
 - GDI WDK Windows 2000 display , driver communication
 - graphics drivers WDK Windows 2000 display , driver communication

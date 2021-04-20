@@ -1,7 +1,6 @@
 ---
 title: TVOT\_TRACKBAR
 description: TVOT\_TRACKBAR
-ms.assetid: 00140dca-c192-42dc-853d-ae84c602b206
 keywords: ["TVOT_TRACKBAR Print Devices"]
 topic_type:
 - apiref

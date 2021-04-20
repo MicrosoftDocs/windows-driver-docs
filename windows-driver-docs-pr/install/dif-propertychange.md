@@ -1,7 +1,6 @@
 ---
 title: DIF_PROPERTYCHANGE
 description: DIF_PROPERTYCHANGE
-ms.assetid: 62f3380d-8cd1-4f4c-a727-1285de081b9e
 keywords: ["DIF_PROPERTYCHANGE Device and Driver Installation"]
 topic_type:
 - apiref

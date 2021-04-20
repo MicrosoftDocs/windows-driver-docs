@@ -1,7 +1,6 @@
 ---
 title: Header files in the Windows Driver Kit
 description: Header files in the Windows Driver Kit
-ms.assetid: 7d02148d-502d-4b49-9c56-9fff498dd2af
 keywords:
 - driver design decisions WDK , header file changes
 - designing drivers WDK , header file changes

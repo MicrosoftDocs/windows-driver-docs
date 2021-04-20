@@ -1,7 +1,6 @@
 ---
 title: bsc (Update Conditional Breakpoint)
 description: The bsc command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered.
-ms.assetid: 4d491797-3ba2-4a63-a575-67df39484bcf
 keywords: ["bsc (Update Conditional Breakpoint) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

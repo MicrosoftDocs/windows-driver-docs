@@ -1,7 +1,6 @@
 ---
 title: Initializing a Miniport Adapter
 description: Initializing a Miniport Adapter
-ms.assetid: 6d7a23dc-cc09-46d3-89d3-34e8e8f17a51
 keywords:
 - miniport adapters WDK networking , initializing
 - adatpers WDK networking , initializing

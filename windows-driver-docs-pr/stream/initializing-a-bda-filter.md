@@ -1,7 +1,6 @@
 ---
 title: Initializing a BDA Filter
 description: Initializing a BDA Filter
-ms.assetid: 716978f5-4bdd-4673-8c4a-14dc76947fba
 keywords:
 - BDA minidrivers WDK AVStream , filter initialization
 - initializing BDA filters

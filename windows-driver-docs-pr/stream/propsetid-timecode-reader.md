@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_TIMECODE\_READER
 description: PROPSETID\_TIMECODE\_READER
-ms.assetid: 7f115ba5-a6b7-4bae-a562-7e84a98ef420
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

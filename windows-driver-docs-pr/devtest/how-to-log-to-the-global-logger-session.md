@@ -1,7 +1,6 @@
 ---
 title: How to Log to the Global Logger Session
 description: How to Log to the Global Logger Session
-ms.assetid: b5efea00-39cd-4df3-aac4-ade9126f69ed
 keywords:
 - Global Logger trace session WDK , logging
 - boot-time Global Logger trace session WDK , logging

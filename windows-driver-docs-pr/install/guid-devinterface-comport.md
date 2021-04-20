@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_COMPORT
 description: GUID_DEVINTERFACE_COMPORT
-ms.assetid: ce7fbe64-1445-4702-898e-2fc92f96ebf9
 keywords: ["GUID_DEVINTERFACE_COMPORT Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Example 9 Customizing the Trace Log File
 description: Example 9 Customizing the Trace Log File
-ms.assetid: b65b4d15-f058-425a-b2b2-b040265d48ac
 keywords:
 - trace logs WDK
 - logs WDK tracing

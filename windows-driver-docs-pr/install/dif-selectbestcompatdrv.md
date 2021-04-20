@@ -1,7 +1,6 @@
 ---
 title: DIF_SELECTBESTCOMPATDRV
 description: DIF_SELECTBESTCOMPATDRV
-ms.assetid: aa10f39f-718b-4160-9cfa-668fb0349156
 keywords: ["DIF_SELECTBESTCOMPATDRV Device and Driver Installation"]
 topic_type:
 - apiref

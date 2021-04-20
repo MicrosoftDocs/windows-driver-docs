@@ -1,7 +1,6 @@
 ---
 title: Driver Verifier Options
 description: Driver Verifier options and rule classes
-ms.assetid: f251fe07-e68e-4d93-9aa5-9a0bc818756d
 keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier

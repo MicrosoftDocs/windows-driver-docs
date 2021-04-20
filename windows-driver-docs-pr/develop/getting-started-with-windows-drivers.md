@@ -1,5 +1,4 @@
 ---
-ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting Started with Windows Drivers
 description: Windows Drivers allow you to create one driver that will run on on both Windows 10X and Windows Desktop.
 ms.date: 04/28/2020

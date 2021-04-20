@@ -1,7 +1,6 @@
 ---
 title: Tap and Do use cases
 description: Tap and Do use cases
-ms.assetid: DCA97F86-3D27-46CD-9D25-A3D156B18B85
 keywords:
 - NFC
 - near field communications

@@ -1,7 +1,6 @@
 ---
 title: Determining Whether a Device Is Plugged In
 description: Determining Whether a Device Is Plugged In
-ms.assetid: 26dc3c2b-49a6-4bba-b86b-2c93a1914f87
 keywords:
 - reinstalling unplugged devices
 - unplugged device reinstallation WDK

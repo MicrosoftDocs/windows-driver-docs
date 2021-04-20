@@ -1,7 +1,6 @@
 ---
 title: ~s (Change Current Processor)
 description: The ~s command sets which processor is debugged on a multiprocessor system.In kernel mode, ~s changes the current processor.
-ms.assetid: bd036a25-1e3c-4b57-9c7c-5f1730008cd7
 keywords: ["Change Current Processor (~s) command", "multiprocessor computer, Change Current Processor (~s) command", "processors", "~s (Change Current Processor) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

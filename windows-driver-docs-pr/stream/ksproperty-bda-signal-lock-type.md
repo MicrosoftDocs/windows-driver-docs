@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE to determine the current lock type of a signal.
-ms.assetid: 2ddf49c4-f0d1-4918-b564-719c695a83ac
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_TYPE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Allocating DMA Engines
 description: Allocating DMA Engines
-ms.assetid: 45b772ce-e6ae-4102-bad4-734f8f079817
 keywords:
 - HD Audio, DMA engines
 - High Definition Audio (HD Audio), DMA engines

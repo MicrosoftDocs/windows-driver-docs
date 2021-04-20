@@ -1,6 +1,5 @@
 ---
 title: NFC client driver power management requirements
-ms.assetid: FBA0821B-859F-4A44-998E-E00162FBD265
 keywords:
 - NFC
 - near field communications

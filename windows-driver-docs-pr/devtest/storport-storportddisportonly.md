@@ -1,7 +1,6 @@
 ---
 title: StorPortDDIsPortOnly rule (storport)
 description: This rule contains a list of StorPort port-only DDIs (excluding interlocked functions) that should not be called in StorPort miniports.
-ms.assetid: 55922047-5029-4EB8-B363-61C098339F2E
 ms.date: 05/21/2018
 keywords: ["StorPortDDIsPortOnly rule (storport)"]
 topic_type:

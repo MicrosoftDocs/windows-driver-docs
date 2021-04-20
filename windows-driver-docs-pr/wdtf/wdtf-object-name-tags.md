@@ -1,7 +1,6 @@
 ---
 title: WDTF Object Name tags
 description: The WDTF OBJECT_NAME tags are used in WDTF object logging.
-ms.assetid: 25C669DD-12D0-4C78-802F-CB8E26C4FD80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

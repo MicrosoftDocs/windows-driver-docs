@@ -1,7 +1,6 @@
 ---
 title: Code Analysis for Drivers Warnings
 description: Code Analysis for Drivers Warnings
-ms.assetid: 61dba158-7e1b-42ee-9882-0ba9cef77b3c
 keywords:
 - PREfast for Drivers WDK , warnings
 - warnings WDK PREfast for Drivers

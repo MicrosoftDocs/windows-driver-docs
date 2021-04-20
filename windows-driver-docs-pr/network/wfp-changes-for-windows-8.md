@@ -1,7 +1,6 @@
 ---
 title: WFP Changes for Windows 8
 description: WFP Changes for Windows 8
-ms.assetid: B83EC5A5-6169-49AB-A7EC-F2078AA0735E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

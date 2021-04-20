@@ -1,7 +1,6 @@
 ---
 title: Using IWiaItem CreateChildItem to Create Selection Areas
 description: Using IWiaItem CreateChildItem to Create Selection Areas
-ms.assetid: c430d15b-51e9-4419-9cdb-904a0f5ef09b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_BINARY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BINARY identifier represents the base-data-type identifier that indicates that the data type is an array of BYTE-typed unsigned values.
-ms.assetid: ee20f0f1-fff9-41a9-a880-f8f577320e41
 keywords: ["DEVPROP_TYPE_BINARY Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: AVStream Testing and Debugging
 description: AVStream testing and debugging
-ms.assetid: 7a3eeeb5-1ff4-4110-9168-c716cd7776b8
 keywords:
 - testing AVStream WDK streaming media
 - AVStream WDK , testing

@@ -1,7 +1,6 @@
 ---
 title: Customized Halftoning
 description: Customized Halftoning
-ms.assetid: cc14ff92-743b-42ca-b70f-0df768762f01
 keywords:
 - Unidrv, halftoning
 - halftoning WDK Unidrv
@@ -37,7 +36,7 @@ You can specify halftone patterns in a resource DLL, or you can generate them by
 
 The [**IPrintOemUni::HalftonePattern**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method's purpose is to return a usable halftone pattern to Unidrv, which in turn passes it to GDI. The method can either decode a pattern that is stored in a resource DLL in an encrypted form, or it can generate a pattern during execution.
 
-If you implement the **IPrintOemUni::HalftonePattern** file must include an \*HTCallbackID attribute in each halftoning \*Option entry that specifies a halftoning method for which a customized pattern is used.
+If you implement the [**IPrintOemUni::HalftonePattern**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method, your *GPD* file must include an \*HTCallbackID attribute in each halftoning \*Option entry that specifies a halftoning method for which a customized pattern is used.
 
 For more information about this attribute, see [Option Attributes for the Halftone Feature](option-attributes-for-the-halftone-feature.md).
 
@@ -54,6 +53,4 @@ The [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/n
 If a rendering plug-in implements [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing), it can also implement the [**IPrintOemUni::MemoryUsage**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-memoryusage).
 
 For more information about halftoning, see [Halftoning with Unidrv](halftoning-with-unidrv.md).
-
- 
 

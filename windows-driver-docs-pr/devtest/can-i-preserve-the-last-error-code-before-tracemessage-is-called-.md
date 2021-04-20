@@ -1,7 +1,6 @@
 ---
 title: Can I preserve the last-error code before TraceMessage is called
 description: Can I preserve the last-error code before TraceMessage is called
-ms.assetid: 57390fb1-5e01-4b98-960f-0201213d673c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

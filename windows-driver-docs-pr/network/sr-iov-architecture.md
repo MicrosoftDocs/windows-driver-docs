@@ -1,7 +1,6 @@
 ---
 title: SR-IOV Architecture
 description: SR-IOV Architecture
-ms.assetid: 548856F5-823A-4064-A6C3-28CA9FBA3860
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

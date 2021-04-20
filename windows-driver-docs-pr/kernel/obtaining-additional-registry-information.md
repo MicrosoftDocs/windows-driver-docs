@@ -1,7 +1,6 @@
 ---
 title: Obtaining Additional Registry Information
 description: Obtaining Additional Registry Information
-ms.assetid: 989acf63-3bb1-4d9a-a7a8-3eea1e2bc68a
 keywords: ["filtering registry calls WDK kernel , additional information to obtain", "registry filtering drivers WDK kernel , additional information to obtain"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier General Tool and Technical Limitations
 description: Static Driver Verifier General Tool and Technical Limitations
-ms.assetid: d263dee5-2408-4772-96d7-d1895a445fab
 keywords:
 - Static Driver Verifier WDK , limitations
 - StaticDV WDK , limitations
@@ -89,7 +88,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
     For both **try/except** and **try/finally** statements, SDV ignores the **leave** statement.
 
-    For both **try/except** and **try/finally** statements, a jump out of the **try** block prevents analysis of the **except** or **finally** statements. For information about how to rewrite so that you can use a leave statement, see the topic for compiler warning [C6242](/cpp/code-quality/c6242?view=vs-20).
+    For both **try/except** and **try/finally** statements, a jump out of the **try** block prevents analysis of the **except** or **finally** statements. For information about how to rewrite so that you can use a leave statement, see the topic for compiler warning [C6242](/cpp/code-quality/c6242).
 
 -   Ignores pointer arithmetic. For example, it will miss situations in which a pointer is incremented or decremented. This limitation can result in false negative and false positive results.
 

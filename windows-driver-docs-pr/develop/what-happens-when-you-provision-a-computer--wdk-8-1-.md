@@ -1,5 +1,4 @@
 ---
-ms.assetid: 92F58B13-3447-4715-A6D2-69E63FE04A77
 title: What happens when you provision a computer (WDK 8.1)
 description: Here we show what happens when you use version 8.1 of the Windows Driver Kit (WDK) to provision a target computer.
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_DocumentationLink
 description: DEVPKEY_DrvPkg_DocumentationLink
-ms.assetid: a4ae1f6c-edf5-4490-8f92-6d7a24040304
 keywords: ["DEVPKEY_DrvPkg_DocumentationLink Device and Driver Installation"]
 topic_type:
 - apiref

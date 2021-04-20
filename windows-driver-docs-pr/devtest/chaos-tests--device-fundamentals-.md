@@ -1,7 +1,6 @@
 ---
 title: CHAOS Tests (Device Fundamentals)
 description: The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently.
-ms.assetid: FA0D73DC-B0B8-4CA7-8DDC-A2C3EC106C3F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

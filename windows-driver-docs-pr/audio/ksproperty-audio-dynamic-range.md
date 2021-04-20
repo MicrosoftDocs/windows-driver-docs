@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE
 description: The KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE property specifies the dynamic range of the audio stream that is output from a loudness node (KSNODETYPE\_LOUDNESS).
-ms.assetid: bab1cc2c-0751-4425-8546-9587baece585
 keywords: ["KSPROPERTY_AUDIO_DYNAMIC_RANGE Audio Devices"]
 topic_type:
 - apiref

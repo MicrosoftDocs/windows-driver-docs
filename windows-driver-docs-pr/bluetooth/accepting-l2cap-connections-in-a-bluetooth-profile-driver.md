@@ -1,7 +1,6 @@
 ---
 title: Accepting L2CAP Connections in a Bluetooth Profile Driver
 description: Accepting L2CAP Connections in a Bluetooth Profile Driver
-ms.assetid: 26a8238d-717a-438f-84d0-047ce9618928
 keywords:
 - L2CAP profile drivers WDK Bluetooth
 - Logical Link Controller and Adaptation Protocol WDK Bluetooth

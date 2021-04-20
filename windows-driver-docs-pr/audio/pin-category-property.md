@@ -1,7 +1,6 @@
 ---
 title: Pin Category Property
 description: Pin Category Property
-ms.assetid: fd4a4afd-2c17-4002-87ae-21501b1d75c1
 keywords:
 - audio properties WDK , pins
 - WDM audio properties WDK , pins

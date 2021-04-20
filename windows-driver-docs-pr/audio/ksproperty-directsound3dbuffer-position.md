@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_POSITION
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_POSITION property specifies the position of a 3D sound buffer.
-ms.assetid: 727ffb54-f020-473f-8631-1300da0f312c
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_POSITION Audio Devices"]
 topic_type:
 - apiref

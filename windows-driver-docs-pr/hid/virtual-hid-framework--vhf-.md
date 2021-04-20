@@ -1,7 +1,6 @@
 ---
 title: Write a HID source driver by using Virtual HID Framework (VHF)
 description: Learn about writing a HID source driver that reports HID data to the operating system.
-ms.assetid: 26964963-792F-4529-B4FC-110BF5C65B35
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [Virtual HID Framework Callback Functions](/windows-hardware/drivers/ddi/index)
--   [Virtual HID Framework Methods](/windows-hardware/drivers/ddi/index)
--   [Virtual HID Framework Structures](/windows-hardware/drivers/ddi/index)
+-   [Virtual HID Framework Callback Functions](/windows-hardware/drivers/ddi/_hid/#callback-functions)
+-   [Virtual HID Framework Methods](/windows-hardware/drivers/ddi/_hid/#functions)
+-   [Virtual HID Framework Structures](/windows-hardware/drivers/ddi/_hid/#functions)
 
 Learn about writing a HID source driver that reports HID data to the operating system.
 
@@ -99,7 +98,7 @@ Initialize a [**VHF\_CONFIG**](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_con
 
 In the [**VhfCreate**](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate) call, the driver can specify certain configuration options, such as operations that must be processed asynchronously or setting device information (vendor/product IDs).
 
-For example, an application requests a TLC. When the HID class driver pair receives that request, the pair determines the type of request and creates an appropriate [HID Minidriver IOCTL](/windows-hardware/drivers/ddi/index) request and forwards it to VHF. Upon getting the IOCTL request, VHF can handle the request, rely on the HID source driver to process it, or complete the request with STATUS\_NOT\_SUPPORTED.
+For example, an application requests a TLC. When the HID class driver pair receives that request, the pair determines the type of request and creates an appropriate [HID Minidriver IOCTL](/windows-hardware/drivers/ddi/_hid/#hid-minidriver-ioctls) request and forwards it to VHF. Upon getting the IOCTL request, VHF can handle the request, rely on the HID source driver to process it, or complete the request with STATUS\_NOT\_SUPPORTED.
 
 VHF handles these IOCTLs:
 
@@ -207,10 +206,10 @@ MY_SubmitReadReport(
         deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
     }
 
-    status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
+    status = VhfReadReportSubmit(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
 
     if (!NT_SUCCESS(status)) {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfReadReportSubmit failed %!STATUS!", status);
     }
 }
 ```

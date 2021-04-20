@@ -1,7 +1,6 @@
 ---
 title: Initializing a Protocol Driver
 description: Initializing a Protocol Driver
-ms.assetid: 1479d59b-7c8b-495b-86c7-72f1b7e334e4
 keywords:
 - protocol drivers WDK networking , initializing
 - NDIS protocol drivers WDK , initializing

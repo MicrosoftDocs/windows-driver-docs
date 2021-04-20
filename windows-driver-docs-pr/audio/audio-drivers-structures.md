@@ -1,7 +1,6 @@
 ---
 title: Audio Drivers Structures
 description: Audio Drivers Structures
-ms.assetid: 8257342f-474a-42b3-809d-96fdeede398b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Path Priority Order
 description: Path Priority Order
-ms.assetid: 93f8f932-fc7b-4420-8b3e-27194937bed5
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, path priority order
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts, path priority order

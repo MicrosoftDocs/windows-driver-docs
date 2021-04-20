@@ -1,7 +1,6 @@
 ---
 title: SerCx2 Custom-Transmit Transactions
 description: Some serial controller hardware might implement a data-transfer mechanism other than PIO or system DMA for writing data to a serial controller.
-ms.assetid: E72E68BC-A60A-41BE-8606-92A608648042
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

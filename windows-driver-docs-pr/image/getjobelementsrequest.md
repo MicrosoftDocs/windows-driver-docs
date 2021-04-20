@@ -1,7 +1,6 @@
 ---
 title: GetJobElementsRequest element
 description: The required GetJobElementsRequest element requests information that is related to the job that the JobId element identifies.
-ms.assetid: ba8260f4-300f-447e-ad62-d2e4fa2811ef
 keywords: ["GetJobElementsRequest element Imaging Devices"]
 topic_type:
 - apiref

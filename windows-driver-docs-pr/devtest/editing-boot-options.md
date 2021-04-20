@@ -1,7 +1,6 @@
 ---
 title: Editing Boot Options
 description: Editing Boot Options
-ms.assetid: b50b3ac8-154a-4c26-907f-11e274a5c7c8
 keywords:
 - boot options WDK , editing
 - editing boot options

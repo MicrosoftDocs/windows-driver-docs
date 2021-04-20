@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_DIALOGUE\_LEVEL
 description: The KSPROPERTY\_AC3\_DIALOGUE\_LEVEL property specifies the average volume level of spoken dialog within the audio program in an AC-3-encoded stream.
-ms.assetid: 8b88b631-abf7-4407-a7c1-ddacf849a81e
 keywords: ["KSPROPERTY_AC3_DIALOGUE_LEVEL Audio Devices"]
 topic_type:
 - apiref

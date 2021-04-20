@@ -1,7 +1,6 @@
 ---
 title: Multiple Session Copy Protection
 description: Multiple Session Copy Protection
-ms.assetid: f6ac9854-3326-48da-9153-1eec596a157b
 keywords:
 - copy protection WDK video miniport , multiple session
 - multiple session copy protection WDK video miniport

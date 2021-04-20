@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Control Path for OID Requests
 description: Hyper-V Extensible Switch Control Path for OID Requests
-ms.assetid: 69ABBD54-F794-4A0A-8F50-915CA1EDD95C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

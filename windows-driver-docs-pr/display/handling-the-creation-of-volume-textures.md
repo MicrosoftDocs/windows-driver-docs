@@ -1,7 +1,6 @@
 ---
 title: Handling the Creation of Volume Textures
 description: Handling the Creation of Volume Textures
-ms.assetid: d5f521df-cd52-4c7e-9ad2-5df343c96e8c
 keywords:
 - textures WDK DirectX 8.0
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures

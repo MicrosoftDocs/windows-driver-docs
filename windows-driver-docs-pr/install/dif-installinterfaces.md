@@ -1,7 +1,6 @@
 ---
 title: DIF_INSTALLINTERFACES
 description: DIF_INSTALLINTERFACES
-ms.assetid: fd3eb56b-f73e-4699-accf-6bf70e2e54f8
 keywords: ["DIF_INSTALLINTERFACES Device and Driver Installation"]
 topic_type:
 - apiref

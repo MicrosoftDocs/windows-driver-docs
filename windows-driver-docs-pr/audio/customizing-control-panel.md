@@ -1,7 +1,6 @@
 ---
 title: Customizing Control Panel
 description: Customizing Control Panel
-ms.assetid: 9382b359-7c36-4ea6-8665-269eabc20f6e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

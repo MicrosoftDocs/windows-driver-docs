@@ -1,7 +1,6 @@
 ---
 title: Installing the Windows Sockets Switch
 description: Installing the Windows Sockets Switch
-ms.assetid: 69cdec9f-8ed7-48d7-ae6d-a9a9916e3c58
 keywords:
 - Windows Sockets Direct WDK , installing components
 - layered service providers WDK SANs

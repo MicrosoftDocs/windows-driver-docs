@@ -1,7 +1,6 @@
 ---
 title: Format element
 description: The optional Format element indicates a single file format and compression type supported by the scanner.
-ms.assetid: aa15607b-780b-48cb-b63f-b16476f69f70
 keywords: ["Format element Imaging Devices"]
 topic_type:
 - apiref

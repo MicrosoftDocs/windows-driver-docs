@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_STATE
 description: The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's transport mode and state.
-ms.assetid: c508b6ce-2a37-4fca-9edf-66700d9cbd15
 keywords: ["KSPROPERTY_EXTXPORT_STATE Streaming Media Devices"]
 topic_type:
 - apiref

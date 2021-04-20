@@ -1,7 +1,6 @@
 ---
 title: Topology Nodes
 description: Topology Nodes
-ms.assetid: 39827413-2b6b-4925-97bb-e0f3e3428b13
 keywords:
 - topology nodes WDK audio
 - nodes WDK audio , topology

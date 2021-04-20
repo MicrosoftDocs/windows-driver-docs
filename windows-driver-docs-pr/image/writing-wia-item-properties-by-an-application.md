@@ -1,7 +1,6 @@
 ---
 title: Writing WIA Item Properties by an Application
 description: Writing WIA Item Properties by an Application
-ms.assetid: 728f3f73-4815-4d79-ac02-227de7ae9bb7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

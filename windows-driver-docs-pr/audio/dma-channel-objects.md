@@ -1,7 +1,6 @@
 ---
 title: DMA Channel Objects
 description: DMA Channel Objects
-ms.assetid: 2064bbdf-62b7-454f-8764-b2aa21636c02
 keywords:
 - helper objects WDK audio , DMA channel objects
 - DMA channel objects WDK audio
@@ -35,7 +34,7 @@ A DMA channel object can be created for a master or subordinate device:
 
 - A master device uses its own bus-mastering DMA hardware to perform data transfers on the system bus.
 
-For an example of a WaveCyclic device that uses a subordinate DMA channel object, see the Sb16 sample audio driver in the Microsoft Windows Driver Kit (WDK). A master DMA channel object is little more than a backboard for sharing information about the DMA channel between the port and miniport drivers. For more information about master and subordinate devices, see [Introduction to Adapter Objects](../kernel/introduction-to-adapter-objects.md).
+For an example of a WaveCyclic device that uses a subordinate DMA channel object, see the Sb16 sample audio driver in earlier versions of the the Microsoft Windows Driver Kit (WDK). A master DMA channel object is little more than a backboard for sharing information about the DMA channel between the port and miniport drivers. For more information about master and subordinate devices, see [Introduction to Adapter Objects](../kernel/introduction-to-adapter-objects.md).
 
 The DMA channel object for a master or subordinate device exposes the following:
 

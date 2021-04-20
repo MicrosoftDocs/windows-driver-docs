@@ -4,7 +4,6 @@ description: Offloaded Data Transfer
 appliesto:
 - Windows Server 2019
 - Windows Server 2016
-ms.assetid: EDFA6AFB-7D14-44F8-A105-E74182D26398
 ms.date: 10/04/2019
 ms.localizationpriority: medium
 ---

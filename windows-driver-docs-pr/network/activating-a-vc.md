@@ -1,7 +1,6 @@
 ---
 title: Activating a VC
 description: Activating a VC
-ms.assetid: 93bac975-3c9c-424b-a815-b1589b703fb5
 keywords:
 - virtual connections WDK CoNDIS , activating
 - activating virtual connections

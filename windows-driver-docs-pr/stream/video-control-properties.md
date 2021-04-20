@@ -1,7 +1,6 @@
 ---
 title: Video Control Properties
 description: Video Control Properties
-ms.assetid: 3b39295f-b4fa-4d6a-bad8-f759bda284b1
 keywords:
 - video control properties WDK video capture
 - control properties WDK video capture

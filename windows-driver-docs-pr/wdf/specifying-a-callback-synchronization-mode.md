@@ -1,7 +1,6 @@
 ---
 title: Specifying a Callback Synchronization Mode
 description: Specifying a Callback Synchronization Mode
-ms.assetid: 3e041493-1095-47cb-b9a7-879a4cf1bd2e
 keywords:
 - callback synchronization WDK UMDF
 - synchronization WDK UMDF

@@ -1,7 +1,6 @@
 ---
 title: Configuring Optional Filter Driver Services
 description: Configuring Optional Filter Driver Services
-ms.assetid: 698e1b2a-de1a-435a-bc30-0d27d9e15e19
 keywords:
 - filter drivers WDK networking , services
 - NDIS filter drivers WDK , services

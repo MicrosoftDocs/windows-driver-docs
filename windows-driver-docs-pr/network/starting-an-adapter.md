@@ -1,7 +1,6 @@
 ---
 title: Starting an Adapter
 description: Starting an Adapter
-ms.assetid: ff2c8914-2fc2-4182-b47e-685571508b33
 keywords:
 - miniport adapters WDK networking , starting
 - adapters WDK networking , starting

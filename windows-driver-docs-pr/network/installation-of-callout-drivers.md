@@ -1,7 +1,6 @@
 ---
 title: Installation of Callout Drivers
 description: Installation of Callout Drivers
-ms.assetid: 3baefd81-04bc-4a34-b4cd-afa544308a90
 keywords:
 - Windows Filtering Platform callout drivers WDK , installing
 - callout drivers WDK Windows Filtering Platform , installing

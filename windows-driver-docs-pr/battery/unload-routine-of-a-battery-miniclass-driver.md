@@ -1,7 +1,6 @@
 ---
 title: Unload Routine of a Battery Miniclass Driver
 description: Unload Routine of a Battery Miniclass Driver
-ms.assetid: f0acbf94-95d1-4a9d-aafd-1f868c5560cc
 keywords:
 - battery miniclass drivers WDK , routines
 - Unload routine

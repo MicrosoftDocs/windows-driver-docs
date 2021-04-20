@@ -1,7 +1,6 @@
 ---
 title: Specify mobile telephone numbers
 description: Specify mobile telephone numbers
-ms.assetid: 3b7037c5-4ad6-4285-a9dd-05955621d149
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

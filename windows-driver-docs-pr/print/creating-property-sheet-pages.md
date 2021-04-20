@@ -1,7 +1,6 @@
 ---
 title: Creating Property Sheet Pages
 description: Creating Property Sheet Pages
-ms.assetid: 90b1743c-b530-408a-aa30-9ab774166306
 keywords:
 - Common Property Sheet User Interface WDK print , creating property sheet pages
 - CPSUI WDK print , creating property sheet pages

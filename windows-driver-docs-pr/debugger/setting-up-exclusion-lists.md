@@ -1,7 +1,6 @@
 ---
 title: Setting Up Exclusion Lists
 description: Setting Up Exclusion Lists
-ms.assetid: 0b50e8a6-f68c-43e5-b8d5-4b2c40252d38
 keywords: ["SymProxy, exclusion lists"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xAC HAL_MEMORY_ALLOCATION
 description: The HAL_MEMORY_ALLOCATION bug check has a value of 0x000000AC. This bug check indicates that the hardware abstraction layer (HAL) could not obtain sufficient memory.
-ms.assetid: 816e6ab5-ccec-47fb-8618-865cb5bb6cb2
 keywords: ["Bug Check 0xAC HAL_MEMORY_ALLOCATION", "HAL_MEMORY_ALLOCATION"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Paging Video Memory Resources
 description: Paging Video Memory Resources
-ms.assetid: e9734db6-3ad0-4c64-a9c6-15ba956b2dce
 keywords:
 - DMA buffers WDK display , paging video memory resources
 - paging video memory resources WDK display

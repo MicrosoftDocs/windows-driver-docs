@@ -1,7 +1,6 @@
 ---
 title: DDI compliance checking
 description: The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
-ms.assetid: 1E536DE0-071B-4529-B228-DB5DAE71099C
 ms.date: 04/03/2020
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ When you select the DDI compliance checking option, the following rules are incl
 
 [**IrqlExApcLte1**](./wdm-irqlexapclte1.md)
 
-[**IrqlExApcLte2**](/windows-hardware/drivers/ddi/index)
+[**IrqlExApcLte2**](./wdm-irqlexapclte2.md)
 
 [**IrqlExApcLte3**](./wdm-irqlexapclte3.md)
 

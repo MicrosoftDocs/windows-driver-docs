@@ -1,7 +1,6 @@
 ---
 title: Text Printing Attributes
 description: Text Printing Attributes
-ms.assetid: 2ef48385-8bcf-40f9-8820-c2dfeb60143a
 keywords:
 - text printing attributes WDK Unidrv
 - general printer attributes WDK Unidrv , text

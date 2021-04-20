@@ -1,7 +1,6 @@
 ---
 title: Using Default PCL XL Fonts
 description: Using Default PCL XL Fonts
-ms.assetid: 8e6abae5-c86f-4cfc-a379-2dd3f8810474
 keywords:
 - PCL XL vector graphics WDK Unidrv , default fonts
 - default PCL XL fonts

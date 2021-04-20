@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_ROLL
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_ROLL property to get or set a camera's roll setting. This property is optional.
-ms.assetid: 58b09e8d-7c0c-4e32-b124-5722bd09f011
 keywords: ["KSPROPERTY_CAMERACONTROL_ROLL Streaming Media Devices"]
 topic_type:
 - apiref

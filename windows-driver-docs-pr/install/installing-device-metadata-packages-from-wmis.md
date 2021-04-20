@@ -1,7 +1,6 @@
 ---
 title: Installing Device Metadata Packages from WMIS
 description: Installing Device Metadata Packages from WMIS
-ms.assetid: e2466b8a-c9c7-4d0d-9ce7-4648c83fc272
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER
 description: The KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER property specifies the amount of digital zoom to apply to the image.
-ms.assetid: e566dd2b-d99a-4e7f-888e-f0f431618c2d
 keywords: ["KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER Streaming Media Devices"]
 topic_type:
 - apiref

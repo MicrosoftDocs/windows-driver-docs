@@ -1,7 +1,6 @@
 ---
 title: Pin Factories
 description: Pin Factories
-ms.assetid: 1399b8e1-bd73-4052-afa5-3e992be8789b
 keywords:
 - audio filters WDK audio , pin factories
 - pin factories WDK audio

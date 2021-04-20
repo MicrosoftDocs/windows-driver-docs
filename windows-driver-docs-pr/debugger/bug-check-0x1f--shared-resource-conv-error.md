@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1F SHARED_RESOURCE_CONV_ERROR
 description: The SHARED_RESOURCE_CONV_ERROR bug check has a value of 0x0000001F.This bug check appears very infrequently.
-ms.assetid: 36262cbf-29e1-4e75-bb25-ca71bf819272
 keywords: ["Bug Check 0x1F SHARED_RESOURCE_CONV_ERROR", "SHARED_RESOURCE_CONV_ERROR"]
 ms.date: 05/23/2017
 topic_type:

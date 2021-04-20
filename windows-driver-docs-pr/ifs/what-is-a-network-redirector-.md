@@ -1,7 +1,6 @@
 ---
 title: What is a Network Redirector
 description: What is a Network Redirector
-ms.assetid: 5c966d92-7796-4cba-a90e-8c83240655ce
 keywords:
 - network redirectors WDK , about network redirectors
 - redirector drivers WDK , about network redirectors

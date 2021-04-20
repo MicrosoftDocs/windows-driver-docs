@@ -1,7 +1,6 @@
 ---
 title: Install Checked Operating System and HAL (Windows XP and Windows Server 2003)
 description: Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)
-ms.assetid: 51175951-9267-4d92-8b47-4dd2155f4e56
 keywords:
 - checked builds WDK , installing
 - free builds WDK

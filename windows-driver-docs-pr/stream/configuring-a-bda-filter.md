@@ -1,7 +1,6 @@
 ---
 title: Configuring a BDA Filter
 description: Configuring a BDA Filter
-ms.assetid: 4af9efc3-8073-4111-9ad0-8b2fba4d1545
 keywords:
 - method sets WDK BDA , filter configuration
 - property sets WDK BDA , filter configuration

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TVAUDIO\_CURRENTLY\_AVAILABLE\_MODES
 description: The KSPROPERTY\_TVAUDIO\_CURRENTLY\_AVAILABLE\_MODES property retrieves TV audio modes that are available for the device. This property must be implemented.
-ms.assetid: 9c98771a-7a41-469d-a441-da5c1ac5a697
 keywords: ["KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES Streaming Media Devices"]
 topic_type:
 - apiref

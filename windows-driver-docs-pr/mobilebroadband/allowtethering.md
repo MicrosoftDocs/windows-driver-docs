@@ -1,7 +1,6 @@
 ---
 title: AllowTethering
 description: AllowTethering
-ms.assetid: f9b92c46-5e0e-447a-b571-bf549e9a749d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

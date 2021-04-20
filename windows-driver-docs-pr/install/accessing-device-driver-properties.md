@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Driver Properties
 description: Accessing Device Driver Properties
-ms.assetid: 433ad114-46aa-470b-b529-e6b6fb7f6bd7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

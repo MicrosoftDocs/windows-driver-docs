@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_CONTEXT
 description: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_CONTEXT
-ms.assetid: e599a3f7-110b-46fc-8266-3a00ea1efe03
 keywords: ["DEBUG_REQUEST_TARGET_EXCEPTION_CONTEXT Windows Debugging"]
 topic_type:
 - apiref

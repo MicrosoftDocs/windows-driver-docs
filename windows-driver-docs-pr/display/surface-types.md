@@ -1,7 +1,6 @@
 ---
 title: Surface Types
 description: Surface Types
-ms.assetid: 7374b783-ef09-4238-a17a-fafcd9d87b3f
 keywords:
 - DIB WDK GDI
 - device-managed surfaces WDK GDI

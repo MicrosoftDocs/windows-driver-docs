@@ -1,7 +1,6 @@
 ---
 title: NFC class extension
 description: This section describes the interface between the NFC class extension (CX) and the NFC client driver.
-ms.assetid: 64599C5E-7E72-4712-B733-24C078919B84
 keywords:
 - NFC
 - near field communications
@@ -27,10 +26,10 @@ These topics describe the architecture and public interface between the NFC clas
 ## NFC driver DDI
 The following are the Windows-defined NFC driver DDI that are implemented by the NFC CX driver:
 
--   [Near Field Proximity DDI](/windows-hardware/drivers/ddi/index)
--   [NFC Secure Element Management DDI](/windows-hardware/drivers/ddi/index)
+-   [Near Field Proximity DDI](/windows-hardware/drivers/ddi/_nfpdrivers)
+-   [NFC Secure Element Management DDI](/windows-hardware/drivers/ddi/_nfpdrivers)
 -   [Smart Card DDI for contactless smart card access](/previous-versions/dn905601(v=vs.85))
--   [NFC Radio Management DDI](/windows-hardware/drivers/ddi/index)
+-   [NFC Radio Management DDI](/windows-hardware/drivers/ddi/_nfpdrivers)
 -   DTA DDI for NFC Forum certification
 
 ## NFC forum specifications

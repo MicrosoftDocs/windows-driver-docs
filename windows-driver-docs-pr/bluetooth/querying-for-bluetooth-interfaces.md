@@ -1,7 +1,6 @@
 ---
 title: Querying for Bluetooth Interfaces
 description: Querying for Bluetooth Interfaces
-ms.assetid: 56db29cd-26ab-4262-9b9f-40d46372ffe9
 keywords:
 - Bluetooth WDK , interface queries
 - querying Bluetooth interfaces

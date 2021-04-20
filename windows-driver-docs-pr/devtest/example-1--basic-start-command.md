@@ -1,7 +1,6 @@
 ---
 title: Example 1 Basic Start Command
 description: Example 1 Basic Start Command
-ms.assetid: be5abbf0-727d-430b-a427-66cc61f3445c
 keywords:
 - trace sessions WDK , starting
 - start command

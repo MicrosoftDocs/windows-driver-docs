@@ -1,7 +1,6 @@
 ---
 title: Handling Socket Options and Control Codes for a SAN
 description: Handling Socket Options and Control Codes for a SAN
-ms.assetid: 5c07d0e3-b6d7-4daf-8b3f-80aafd7c7a37
 keywords:
 - Windows Sockets Direct WDK , SAN socket options
 - SAN sockets WDK , options

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION property specifies the position of a 3D listener.
-ms.assetid: c2cb6bc2-e983-49c8-a251-ab28879b4fcd
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_POSITION Audio Devices"]
 topic_type:
 - apiref

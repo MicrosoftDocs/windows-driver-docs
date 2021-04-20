@@ -1,7 +1,6 @@
 ---
 title: Crossbar Change Event
 description: Crossbar Change Event
-ms.assetid: 67202a53-d981-47db-9bc1-7de18f9192aa
 keywords:
 - crossbar changed event WDK video capture
 - events WDK video capture

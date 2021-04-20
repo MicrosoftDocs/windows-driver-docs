@@ -1,7 +1,6 @@
 ---
 title: Preventing Errors and Deadlocks While Using Spin Locks
 description: Preventing Errors and Deadlocks While Using Spin Locks
-ms.assetid: 1df563e6-7ad2-4684-9778-ffa1b845ac31
 keywords: ["deadlocks WDK kernel", "recursion WDK kernel", "nested spin lock acquisitions WDK kernel", "pageable data locking WDK kernel", "spin locks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

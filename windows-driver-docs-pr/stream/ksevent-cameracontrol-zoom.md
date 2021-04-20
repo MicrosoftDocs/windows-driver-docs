@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CAMERACONTROL\_ZOOM
 description: The KSEVENT\_CAMERACONTROL\_ZOOM event is triggered when a camera zoom operation has completed or has been canceled.
-ms.assetid: 1580B821-093C-484C-B152-3D4177A8150E
 keywords: ["KSEVENT_CAMERACONTROL_ZOOM Streaming Media Devices"]
 topic_type:
 - apiref

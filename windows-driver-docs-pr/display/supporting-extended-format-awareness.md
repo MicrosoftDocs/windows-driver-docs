@@ -1,7 +1,6 @@
 ---
 title: Supporting Extended Format Awareness
 description: Supporting Extended Format Awareness
-ms.assetid: b473ebf2-75a0-4e3f-8190-d1a557ae6da0
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display
 - Direct3D version 10.1 WDK Windows 7 display , extended format awareness

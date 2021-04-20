@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_EXECUTE_SCSI
 description: Handling SRB_FUNCTION_EXECUTE_SCSI
-ms.assetid: 221e1070-12d8-4870-a23c-426ed4a25b84
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo

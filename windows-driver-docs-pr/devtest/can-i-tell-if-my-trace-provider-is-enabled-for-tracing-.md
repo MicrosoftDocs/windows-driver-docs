@@ -1,7 +1,6 @@
 ---
 title: Can I tell if my trace provider is enabled for tracing
 description: Can I tell if my trace provider is enabled for tracing
-ms.assetid: 8cc4e364-a0bc-4ef3-af3c-c08f3183b548
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Printer Data Files
 description: Printer Data Files
-ms.assetid: 971d3c6d-ecbe-42e8-8d13-b44543738bad
 keywords:
 - GDI printer drivers WDK , data files
 - data files WDK print

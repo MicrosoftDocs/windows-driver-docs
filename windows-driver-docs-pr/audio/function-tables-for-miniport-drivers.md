@@ -1,7 +1,6 @@
 ---
 title: Function Tables for Miniport Drivers
 description: Function Tables for Miniport Drivers
-ms.assetid: 86b8bfa7-0c57-480b-b6f6-7c0214f53773
 keywords:
 - function tables WDK audio
 - audio miniport drivers WDK , function tables

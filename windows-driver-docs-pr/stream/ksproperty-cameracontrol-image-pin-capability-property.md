@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_IMAGE\_PIN\_CAPABILITY\_PROPERTY
 description: User-mode clients use this property to identify whether the camera's image pin and record pin are mutually exclusive. If they are mutually exclusive, then when the record pin is active, the image pin cannot be active, and vice-versa.
-ms.assetid: 4D000551-3AFB-4E14-9C67-EEDAB676AE03
 keywords: ["KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

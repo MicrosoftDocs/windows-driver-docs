@@ -1,7 +1,6 @@
 ---
 title: WaveCyclic Port Driver
 description: WaveCyclic Port Driver
-ms.assetid: c5572ae3-0d91-43a6-a49c-c6c005263f5b
 keywords:
 - WaveCyclic port driver WDK audio
 - PortCls WDK audio , port drivers

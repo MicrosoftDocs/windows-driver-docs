@@ -1171,6 +1171,8 @@
           href: wdm-pnpsamedeviceobject.md
         - name: "TargetRelationNeedsRef"
           href: wdm-targetrelationneedsref.md
+        - name: "UnSafeAllocatePool"
+          href: wdm-unsafeallocatepool.md
         - name: "ZwRegistryCreate"
           href: wdm-zwregistrycreate.md
         - name: "ZwRegistryOpen"
@@ -1374,6 +1376,8 @@
           href: kmdf-nonfdonotpowerpolicyownerapi.md
         - name: "NonPnPDrvPowerPolicyOwnerAPI"
           href: kmdf-nonpnpdrvpowerpolicyownerapi.md
+        - name: "UnSafeAllocatePool"
+          href: kmdf-unsafeallocatepool.md
       - name: "RequestProcessing rule set (KMDF)"
 # Auto-expanded node
         items: 
@@ -1802,7 +1806,7 @@
         - name: "PagedCode"
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
-          href: storport-storportstatuspending.md
+          href: storport-storportstatuspending.md  
   - name: "Static Driver Verifier"
 # Auto-expanded node
     items: 
@@ -1813,6 +1817,7 @@
     - name: "Static Driver Verifier commands (MSBuild)"
       href: -static-driver-verifier-commands--msbuild-.md
     - name: "Introducing Static Driver Verifier"
+      href: introducing-static-driver-verifier.md
 # Auto-expanded node
       items: 
       - name: "Introducing Static Driver Verifier"
@@ -1999,6 +2004,34 @@
           href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
       - name: "Static Driver Verifier Diagnostics"
         href: static-driver-verifier-diagnostics.md
+  - name: "CodeQL and the Static Tools Logo Test"
+# Auto-expanded node
+    items: 
+    - name: "CodeQL and Static Tools Logo Test"
+      href: static-tools-and-codeql.md
+    - name: "Supplemental Windows Driver CodeQL Queries"
+# Auto-expanded node
+      items: 
+      - name: "Supplemental Windows Driver CodeQL Queries"
+        href: codeql-windows-driver-rules.md
+      - name: "Probable UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-probableuseafterfree.md
+      - name: "UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-useafterfree.md
+      - name: "WdkDeprecatedApi (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-wdkdeprecatedapi.md
+      - name: "PaddingByteInformationDisclosure (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-padding-byte-information-disclosure.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md
+      - name: "InfiniteLoop (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-infiniteloop.md 
+      - name: "UninitializedPtrField (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-uninitializedptrfield.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md 
+      - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-hardcodedivcng.md 
   - name: "WDF Verifier Control Application"
 # Auto-expanded node
     items: 

@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_MOUSE
 description: GUID_CLASS_MOUSE
-ms.assetid: 3b6578c7-0462-4fff-bd09-b9c768676ceb
 keywords: ["GUID_CLASS_MOUSE Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Registering an Extension Interface
 description: Registering an Extension Interface
-ms.assetid: 33dc32da-9bc1-40b4-8737-ec132ec36708
 keywords:
 - Winsock Kernel WDK networking , extension interfaces
 - WSK WDK networking , extension interfaces

@@ -1,7 +1,6 @@
 ---
 title: User Interface Functions
 description: User Interface Functions
-ms.assetid: 30ec0628-cac7-46ab-a9f2-c81ca3ad7125
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

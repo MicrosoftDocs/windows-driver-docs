@@ -1,7 +1,6 @@
 ---
 title: Dispatch IRQL Tracking
 description: Dispatch IRQL Tracking
-ms.assetid: ac559f4f-0138-4b9a-8f1b-44a2973fd6a1
 keywords:
 - dispatch level flags WDK networking
 - IRQLs WDK networking

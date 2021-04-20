@@ -1,7 +1,6 @@
 ---
 title: Installing a Segmentation Filter
 description: Installing a Segmentation Filter
-ms.assetid: 39f96c16-2408-460c-8aa3-08b6a6584bef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

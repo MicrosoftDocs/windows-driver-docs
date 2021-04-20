@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /dbgsettings
 description: The /dbgsettings option sets or displays the current global debugger settings for the computer.
-ms.assetid: df2fe55c-2752-4e0c-a4c0-004235b85e22
 ms.date: 04/23/2019
 keywords: ["BCDEdit /dbgsettings Driver Development Tools"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: PDO\_INFORMATION WMI Class
 description: PDO\_INFORMATION WMI Class
-ms.assetid: 1a972905-42ea-4cb2-b937-5ed0f287d80a
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

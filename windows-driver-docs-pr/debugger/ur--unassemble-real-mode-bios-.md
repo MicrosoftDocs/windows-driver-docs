@@ -1,7 +1,6 @@
 ---
 title: ur (Unassemble Real Mode BIOS)
 description: The ur command displays an assembly translation of the specified 16-bit real-mode code.
-ms.assetid: 7ea3421a-3841-47ea-ab40-99d10516bb14
 keywords: ["ur (Unassemble Real Mode BIOS) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

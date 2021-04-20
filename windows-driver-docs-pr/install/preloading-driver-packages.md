@@ -1,7 +1,6 @@
 ---
 title: Preloading Driver Packages
 description: Preloading Driver Packages
-ms.assetid: e617764d-0b48-4cd8-aeac-04d6039aba71
 keywords:
 - installation applications WDK , preloaded driver packages
 - device installation applications WDK , preloaded driver packages

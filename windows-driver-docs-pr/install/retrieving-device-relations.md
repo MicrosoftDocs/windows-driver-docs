@@ -1,7 +1,6 @@
 ---
 title: Retrieving Device Relations
 description: Retrieving Device Relations
-ms.assetid: 2b0ead69-1fda-4024-a7c2-d6350060b5fb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

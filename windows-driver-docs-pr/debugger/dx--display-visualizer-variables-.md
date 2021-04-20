@@ -1,7 +1,6 @@
 ---
 title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
-ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.date: 05/28/2019
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects).
 
 ```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]

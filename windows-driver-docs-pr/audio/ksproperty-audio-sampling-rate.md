@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_SAMPLING\_RATE
 description: The KSPROPERTY\_AUDIO\_SAMPLING\_RATE property specifies the rate at which a node samples its input stream in order to produce its output stream.
-ms.assetid: c5e48678-3b9a-4e5b-ae7b-16f9dcae7492
 keywords: ["KSPROPERTY_AUDIO_SAMPLING_RATE Audio Devices"]
 topic_type:
 - apiref

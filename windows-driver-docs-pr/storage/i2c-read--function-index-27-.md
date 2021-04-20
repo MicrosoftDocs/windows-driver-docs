@@ -1,7 +1,6 @@
 ---
 title: I2C Read (Function Index 27)
 description: This function reads an Inter-Integrated Circuit (I2C) register.
-ms.assetid: 64D8999D-2E10-4836-9C17-7D809D9527BD
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

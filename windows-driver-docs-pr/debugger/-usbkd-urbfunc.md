@@ -1,7 +1,6 @@
 ---
 title: usbkd.urbfunc
 description: The usbkd.urbfunc command displays the name of a URB function code.
-ms.assetid: 111DD6CD-D7DB-4772-B6DD-8EA88587FD1F
 keywords: ["usbkd.urbfunc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

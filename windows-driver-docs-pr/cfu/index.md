@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 Component Firmware Update (CFU) provides Original Equipment Manufacturers (OEMs) and Independent Hardware Vendors (IHVs) a reliable and authenticated method for updating firmware on devices that have shipped to customers. This release contains reference firmware for receiving the firmware payload.
 
+> [!NOTE]
+> CFU is available in Windows 10, version 2004 (Windows 10 May 2020 Update) and later versions.
+
 See the [Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456) blog post and [WinHEC 2018 - Component Firmware Update](https://developer.microsoft.com/windows/hardware/events) video for an introduction to CFU concepts.
 
 ## In this section

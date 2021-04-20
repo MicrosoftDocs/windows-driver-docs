@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ANQP_QUERY_STATUS
 description: WDI_TLV_ANQP_QUERY_STATUS is an unused TLV.
-ms.assetid: C1843AC2-C12E-4F11-B36C-66D75CAA12CD
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ANQP_QUERY_STATUS Network Drivers Starting with Windows Vista

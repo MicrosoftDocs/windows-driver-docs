@@ -1,7 +1,6 @@
 ---
 title: buttons element
 description: The required buttons element specifies one or more buttons that are displayed in the event notification message box on the client computer.
-ms.assetid: bf3718c0-37d9-4b73-a015-8a5a95535381
 keywords: ["buttons element Print Devices"]
 topic_type:
 - apiref

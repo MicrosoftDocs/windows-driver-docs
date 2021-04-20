@@ -1,7 +1,6 @@
 ---
 title: Device Properties
 description: Device Properties
-ms.assetid: 87a43865-74bc-412c-9ae2-3ba38589c8f8
 keywords:
 - device installations WDK , device properties
 - device properties WDK device installations

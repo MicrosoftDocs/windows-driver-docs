@@ -1,7 +1,6 @@
 ---
 title: Handling interrupts in UMDF drivers
 description: Handling Interrupts
-ms.assetid: 5C8CB68A-EAE6-4AF9-8B10-F8B73B50DEB2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

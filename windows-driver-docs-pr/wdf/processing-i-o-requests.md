@@ -1,7 +1,6 @@
 ---
 title: Processing I/O Requests
 description: Learn about processing I/O requests. For example, when a driver receives an I/O request it can requeue, complete, or cancel a request.
-ms.assetid: 90b1cc51-da40-45c1-9d6c-57f637f474d9
 keywords:
 - I/O requests WDK KMDF , processing
 - request objects WDK KMDF , processing I/O requests

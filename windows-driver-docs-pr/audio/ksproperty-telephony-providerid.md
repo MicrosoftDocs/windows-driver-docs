@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_PROVIDERID
 description: The KSPROPERTY\_TELEPHONY\_PROVIDERID property is used by the audio driver to associate a provider identifier to a wave filter.
-ms.assetid: A2BE85E3-068B-41C1-9791-69A929ECEC5C
 keywords: ["KSPROPERTY_TELEPHONY_PROVIDERID Audio Devices"]
 topic_type:
 - apiref

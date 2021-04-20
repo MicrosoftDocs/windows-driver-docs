@@ -1,7 +1,6 @@
 ---
 title: StorPortStatusPending rule (storport)
 description: This rule checks that an SRB is not completed with status SRB\_STATUS\_PENDING.
-ms.assetid: 134BDADA-C475-4D82-A0AB-31410C994AAF
 ms.date: 05/21/2018
 keywords: ["StorPortStatusPending rule (storport)"]
 topic_type:

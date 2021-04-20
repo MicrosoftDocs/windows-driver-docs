@@ -1,7 +1,6 @@
 ---
 title: About Kernel Mode Performance Counters
 description: About Kernel Mode Performance Counters
-ms.assetid: 57655e65-6db4-487d-8831-282e8d30d84e
 ms.date: 08/05/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Tracefmt Concepts
 description: Tracefmt Concepts
-ms.assetid: 42e22b26-b537-4684-af8e-32604a6ffaac
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: f5a701ff-270f-45f5-8c6e-ecf1b8afab20
 keywords: ["get_AvgJobSizeUnit method Print Devices", "get_AvgJobSizeUnit method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AvgJobSizeUnit method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Points to Consider when Restoring Complex Flipping Chains
 description: Points to Consider when Restoring Complex Flipping Chains
-ms.assetid: f368576f-a0a0-4def-888d-abf4fea8f6fb
 keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx

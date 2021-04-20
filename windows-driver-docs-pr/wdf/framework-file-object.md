@@ -1,7 +1,6 @@
 ---
 title: Framework File Object
 description: Framework File Object
-ms.assetid: dd8215ee-2c10-4e49-9d7f-d2295bf219da
 keywords:
 - UMDF objects WDK , file objects
 - framework objects WDK UMDF , file objects

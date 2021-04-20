@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP that the Framework Does Not Support
 description: Handling an IRP that the Framework Does Not Support
-ms.assetid: 0481f335-f63b-4f93-8eb4-523a70082302
 keywords:
 - unsupported WDM IRPs WDK KMDF
 - IRPs WDK KMDF , unsupported

@@ -1,7 +1,6 @@
 ---
 title: WdfObjectGetTypedContext macro
 description: The WdfObjectGetTypedContext macro returns a pointer to an object's context space.
-ms.assetid: de0edae4-7c05-4419-972e-c106875dfff1
 keywords:
  - WdfObjectGetTypedContext macro
 ms.date: 08/23/2017

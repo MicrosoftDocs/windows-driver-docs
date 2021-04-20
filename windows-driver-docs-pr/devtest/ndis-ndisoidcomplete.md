@@ -1,7 +1,6 @@
 ---
 title: NdisOidComplete rule (ndis)
 description: The NdisOidComplete rule verifies that an NDIS miniport driver completes an OID correctly.
-ms.assetid: 344DECA8-F72A-4962-80D0-DDC648A4FC21
 ms.date: 05/21/2018
 keywords: ["NdisOidComplete rule (ndis)"]
 topic_type:

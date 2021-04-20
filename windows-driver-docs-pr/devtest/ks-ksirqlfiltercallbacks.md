@@ -1,7 +1,6 @@
 ---
 title: KsIrqlFilterCallbacks rule ()
 description: The KsIrqlFilterCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a KS filter callback function with the same IRQL it had when the callback function was called.
-ms.assetid: AC27FF93-DC7C-4287-B3D6-2579FAA65A77
 ms.date: 05/21/2018
 keywords: ["KsIrqlFilterCallbacks rule ()"]
 topic_type:

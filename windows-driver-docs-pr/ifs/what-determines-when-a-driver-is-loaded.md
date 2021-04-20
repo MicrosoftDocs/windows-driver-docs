@@ -1,7 +1,6 @@
 ---
 title: File system filter load order
 description: Describes concepts related to loading a file system filter driver
-ms.assetid: fe0f27e4-84d4-483e-8b4e-69c39ae332de
 keywords:
 - filter drivers WDK file system , driver loading
 - file system filter drivers WDK , driver loading

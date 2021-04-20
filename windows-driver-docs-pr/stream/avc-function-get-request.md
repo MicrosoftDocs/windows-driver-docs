@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_REQUEST
 description: AVC\_FUNCTION\_GET\_REQUEST
-ms.assetid: b29df7a8-782b-4014-b47e-7cf917f8e99d
 keywords: ["AVC_FUNCTION_GET_REQUEST Streaming Media Devices"]
 topic_type:
 - apiref
@@ -9,7 +8,7 @@ api_name:
 - AVC_FUNCTION_GET_REQUEST
 api_type:
 - NA
-ms.date: 06/16/2020
+ms.date: 03/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -84,7 +83,7 @@ Ignored for requests.
 
 **SubunitAddr**
   
-Used only when registering to receive unit commands. Set this to the address of nonpaged memory containing the Unit Address encoded according to Section 5.3.3 of the **AV/C** Digital Interface Command Set General Specification, Rev 3.0 (0xff). This specification can be found at the [1394 Trade Association](https://1394ta.org/library-2/) website. Note that for subunit requests, on completion this points to memory containing the subunit address for this virtual subunit instance. The caller may access this nonpaged memory, but must not attempt to free it.
+Used only when registering to receive unit commands. Set this to the address of nonpaged memory containing the Unit Address encoded according to Section 5.3.3 of the 1394 Trade Association **AV/C** Digital Interface Command Set General Specification, Rev 3.0 (0xff). Note that for subunit requests, on completion this points to memory containing the subunit address for this virtual subunit instance. The caller may access this nonpaged memory, but must not attempt to free it.
 
 **AlternateOpcodes**
   

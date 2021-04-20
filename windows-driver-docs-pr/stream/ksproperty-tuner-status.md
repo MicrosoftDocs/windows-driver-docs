@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_STATUS
 description: The KSPROPERTY\_TUNER\_STATUS property retrieves information about the tuning process including the current frequency, phase locked loop (PLL) offset, and signal strength. This property must be implemented.
-ms.assetid: 8613cda2-f39b-4363-a1c7-ac91162b9fca
 keywords: ["KSPROPERTY_TUNER_STATUS Streaming Media Devices"]
 topic_type:
 - apiref

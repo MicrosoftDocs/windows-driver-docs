@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ENABLED\_BARCODE\_TYPES
 description: The WIA\_IPS\_ENABLED\_BARCODE\_TYPES property is used to select the enabled barcodes for which the Bar Code Reader will search in the current session.
-ms.assetid: 7CB9FE6D-5E22-48ED-B948-01CC906CA46D
 keywords: ["WIA_IPS_ENABLED_BARCODE_TYPES Imaging Devices"]
 topic_type:
 - apiref

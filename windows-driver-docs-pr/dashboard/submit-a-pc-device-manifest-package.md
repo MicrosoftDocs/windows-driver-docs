@@ -1,7 +1,6 @@
 ---
 title: Submit a PC device manifest package
 description: Submit a PC device manifest package
-ms.assetid: b96b02b8-8804-403e-9513-7a5d1b730fcd
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

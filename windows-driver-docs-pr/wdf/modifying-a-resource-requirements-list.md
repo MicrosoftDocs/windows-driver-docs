@@ -1,7 +1,6 @@
 ---
 title: Modifying a Resource Requirements List
 description: Modifying a Resource Requirements List
-ms.assetid: 75391dd2-5ae1-4562-97a0-4de21a08b61c
 keywords:
 - hardware resources WDK KMDF , modifying resource requirements lists
 - resource requirements lists WDK KMDF , modifying

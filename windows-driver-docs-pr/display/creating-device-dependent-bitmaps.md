@@ -1,7 +1,6 @@
 ---
 title: Creating Device-Dependent Bitmaps
 description: Creating Device-Dependent Bitmaps
-ms.assetid: da53a8bf-5991-4abb-81f1-2d3a7cb0ff90
 keywords:
 - GDI WDK Windows 2000 display , bitmaps
 - graphics drivers WDK Windows 2000 display , bitmaps

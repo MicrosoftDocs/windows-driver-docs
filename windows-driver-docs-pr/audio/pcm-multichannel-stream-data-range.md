@@ -1,7 +1,6 @@
 ---
 title: PCM Multichannel Stream Data Range
 description: PCM Multichannel Stream Data Range
-ms.assetid: b7e1a5d9-fb8a-46ed-932b-d667e470d4ab
 keywords:
 - PCM multichannel stream data ranges WDK
 ms.date: 04/20/2017

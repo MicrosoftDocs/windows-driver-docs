@@ -1,7 +1,6 @@
 ---
 title: Editing the Boot.ini File
 description: Prior to Windows Vista, BIOS-based computers running Windows store boot options in a Boot.ini text file.
-ms.assetid: 9edbbd5e-36b5-4a80-925d-a007a4469984
 keywords:
 - Bootcfg tool
 - Boot.ini files WDK , editing

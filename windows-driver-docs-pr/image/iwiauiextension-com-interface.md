@@ -1,7 +1,6 @@
 ---
 title: IWiaUIExtension COM Interface
 description: IWiaUIExtension COM Interface
-ms.assetid: 10a8e981-889a-46f0-8bf5-da75632d4d94
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: COPP Status
 description: COPP Status
-ms.assetid: bec8f6b6-17d0-4797-9898-add0629cba4d
 keywords:
 - copy protection WDK COPP , status
 - video copy protection WDK COPP , status

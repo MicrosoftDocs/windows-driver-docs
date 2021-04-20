@@ -1,7 +1,6 @@
 ---
 title: INF Requirements for NDKPI
 description: The INF file for a miniport driver that supports Network Direct kernel (NDK) must meet the following requirements.
-ms.assetid: 1399CEB8-82A5-4F91-833E-66FC5A5663C7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

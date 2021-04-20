@@ -1,7 +1,6 @@
 ---
 title: Header File Changes
 description: Header File Changes
-ms.assetid: 9212aa8d-bb11-4ade-a70c-274a7ffe83ef
 keywords:
 - data formats WDK audio
 - formats WDK audio , data

@@ -1,7 +1,6 @@
 ---
 title: Looping Back NDIS Packets
 description: Looping Back NDIS Packets
-ms.assetid: 85967cd6-6945-46d1-8872-7b000689b6db
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

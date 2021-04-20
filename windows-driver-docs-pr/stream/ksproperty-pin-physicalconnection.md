@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_PHYSICALCONNECTION
 description: Audio adapter drivers use the KSPROPERTY\_PIN\_PHYSICALCONNECTION property to denote physical connections between miniports.
-ms.assetid: a679ce41-93d2-4b46-a26d-ce05408ec6aa
 keywords: ["KSPROPERTY_PIN_PHYSICALCONNECTION Streaming Media Devices"]
 topic_type:
 - apiref

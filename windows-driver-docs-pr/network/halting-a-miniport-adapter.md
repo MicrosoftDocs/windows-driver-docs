@@ -1,7 +1,6 @@
 ---
 title: Halting a Miniport Adapter
 description: Halting a Miniport Adapter
-ms.assetid: fd57a2b1-593d-412b-96b5-eabd3ea392e0
 keywords:
 - miniport adapters WDK networking , halting
 - adapters WDK networking , halting

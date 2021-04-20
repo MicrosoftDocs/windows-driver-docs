@@ -1,7 +1,6 @@
 ---
 title: Displaying a Critical Section
 description: Displaying a Critical Section
-ms.assetid: d55971f6-9112-417d-8fb6-e299c7fc90a7
 keywords: ["critical section", "critical section, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

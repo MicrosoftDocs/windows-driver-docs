@@ -1,7 +1,6 @@
 ---
 title: Starting a Filter Module
 description: Starting a Filter Module
-ms.assetid: 493cb922-22bc-4845-b5a2-6f610559534d
 keywords:
 - filter modules WDK networking , starting
 - starting filter modules
@@ -17,7 +16,7 @@ To start a paused filter module, NDIS calls the filter driver's [*FilterSetModul
 
 If the driver provided an entry point for [*FilterSetModuleOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_set_module_options), the driver can change the partial characteristic for a filter module. For more information, see [Data Bypass Mode](data-bypass-mode.md).
 
-When it calls a filter driver's [*FilterRestart*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function, NDIS passes a pointer to an [**NDIS\_RESTART\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_attributes) structure to filter driver in the **RestartAttributes** member of the [**NDIS\_FILTER\_RESTART\_PARAMETERS**]https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_restart_parameters) structure. Filter drivers can modify the restart attributes that are specified by underlying drivers. For more information about how to modify restart attributes, see *FilterRestart*.
+When it calls a filter driver's [*FilterRestart*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function, NDIS passes a pointer to an [**NDIS\_RESTART\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_attributes) structure to filter driver in the **RestartAttributes** member of the [**NDIS\_FILTER\_RESTART\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_restart_parameters) structure. Filter drivers can modify the restart attributes that are specified by underlying drivers. For more information about how to modify restart attributes, see *FilterRestart*.
 
 **Note**  NDIS calls [*FilterSetModuleOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_set_module_options) for all filter modules in a stack before NDIS calls the [*FilterRestart*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function for any filter module in the stack.
 

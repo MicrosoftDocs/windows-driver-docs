@@ -1,7 +1,6 @@
 ---
 title: HKLM\SYSTEM\CurrentControlSet\Services Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\Services registry tree stores information about each service on the system.
-ms.assetid: c966b029-8171-4db7-9fbb-3a4222ff184b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

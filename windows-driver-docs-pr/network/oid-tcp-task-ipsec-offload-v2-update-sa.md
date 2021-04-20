@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA OID to request that a miniport driver update the specified security associations (SAs) on a NIC.
-ms.assetid: 22849103-9148-4621-b78f-b9f34f2c7ac1
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA Network Drivers Starting with Windows Vista

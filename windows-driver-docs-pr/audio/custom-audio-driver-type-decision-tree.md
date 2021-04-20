@@ -1,7 +1,6 @@
 ---
 title: Custom Audio Driver Type Decision Tree
 description: Custom Audio Driver Type Decision Tree
-ms.assetid: 7b055baa-1843-4e31-a98e-48b05de94e70
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

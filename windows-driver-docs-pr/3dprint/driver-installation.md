@@ -1,7 +1,6 @@
 ---
 title: Driver installation
 description: The print driver provided in this SDK is an experimental 3D printer device driver still under development.
-ms.assetid: 8A13CD6F-DF82-4353-ADE9-06989F83BC87
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---

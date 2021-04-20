@@ -1,7 +1,6 @@
 ---
 title: Primitive Drawing and State Changes
 description: Primitive Drawing and State Changes
-ms.assetid: 01eba14d-234e-48f5-9116-47760dfdae0e
 keywords:
 - Direct3D WDK Windows 2000 display , primitive drawing
 - Direct3D WDK Windows 2000 display , state changes

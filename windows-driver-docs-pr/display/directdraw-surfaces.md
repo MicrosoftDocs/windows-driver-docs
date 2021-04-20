@@ -1,7 +1,6 @@
 ---
 title: DirectDraw Surfaces
 description: DirectDraw Surfaces
-ms.assetid: be99b124-5193-4826-be28-ed6a132b84af
 keywords:
 - drawing surfaces WDK DirectDraw , about surfaces
 - DirectDraw surfaces WDK Windows 2000 display , about surfaces

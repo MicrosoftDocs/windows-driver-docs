@@ -69,7 +69,7 @@ If a target device must be able to receive requests from several clients, this d
 
 ### Interoperability with KMDF
 
-The [SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/index) and [SpbCx Event Callback Functions](/previous-versions/hh450911(v=vs.85)) that are defined by SpbCx use **SPBTARGET** handles to represent open connections to target devices on the bus.
+The [SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/sercx/#functions) and [SpbCx Event Callback Functions](/previous-versions/hh450911(v=vs.85)) that are defined by SpbCx use **SPBTARGET** handles to represent open connections to target devices on the bus.
 However, a controller driver must typically call KMDF methods that require WDFFILEOBJECT handles, instead of **SPBTARGET** handles, to designate target devices.
 
 An **SPBTARGET** object is similar to a WDFFILEOBJECT object. However, an **SPBTARGET** object contains additional, SPB-specific information.
@@ -102,7 +102,7 @@ In addition, this driver can create child objects of the **SPBTARGET** object, s
 
 [IRP_MJ_CREATE](../ifs/irp-mj-create.md)
 
-[SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/index)
+[SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/sercx)
 
 [SpbControllerSetRequestAttributes](/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbcontrollersetrequestattributes)
 

@@ -1,7 +1,6 @@
 ---
 title: Broadcast Driver Architecture Property, Event, and Method Sets
 description: Broadcast Driver Architecture Property, Event, and Method Sets
-ms.assetid: 4323c19a-e47d-4ec6-a39c-3f2e95c526e4
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

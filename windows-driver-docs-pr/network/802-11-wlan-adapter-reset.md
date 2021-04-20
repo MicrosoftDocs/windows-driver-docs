@@ -1,7 +1,6 @@
 ---
 title: 802.11 WLAN Adapter Reset
 description: 802.11 WLAN Adapter Reset
-ms.assetid: 1f993977-b4a1-42ec-8de3-2f4855db93a7
 keywords:
 - adapters WDK 802.11 WLAN , resetting
 - WLAN adapters WDK , resetting

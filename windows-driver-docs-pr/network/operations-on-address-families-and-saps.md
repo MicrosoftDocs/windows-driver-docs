@@ -1,7 +1,6 @@
 ---
 title: Operations on Address Families and SAPs
 description: Operations on Address Families and SAPs
-ms.assetid: 0fc821bb-49a2-4631-8735-ef5217073ba9
 keywords:
 - connection-oriented NDIS WDK , address families
 - CoNDIS WDK networking , address families

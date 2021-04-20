@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PATCH\_CODE\_SEARCH\_DIRECTION
 description: The WIA\_IPS\_PATCH\_CODE\_SEARCH\_DIRECTION property is used to configure the direction (relative to the scan direction) in which the device searches for patch codes on each scan document page.
-ms.assetid: 24541B0D-4B9B-439F-8454-AFDD3D16A448
 keywords: ["WIA_IPS_PATCH_CODE_SEARCH_DIRECTION Imaging Devices"]
 topic_type:
 - apiref

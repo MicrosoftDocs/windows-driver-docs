@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_RECEIVER_COMPONENT
 description: KSCATEGORY_BDA_RECEIVER_COMPONENT
-ms.assetid: f160662e-651c-444f-aa82-cfc73c19e41d
 keywords: ["KSCATEGORY_BDA_RECEIVER_COMPONENT Device and Driver Installation"]
 topic_type:
 - apiref

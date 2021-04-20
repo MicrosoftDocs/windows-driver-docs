@@ -1,7 +1,6 @@
 ---
 title: Installing a Port Class Audio Adapter
 description: Installing a Port Class Audio Adapter
-ms.assetid: 02cea7c1-cf9a-4f4b-9d35-d565fac731ec
 keywords:
 - Port Class audio adapters WDK , installing
 - audio miniport drivers WDK , adapter drivers

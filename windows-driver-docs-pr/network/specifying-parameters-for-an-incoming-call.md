@@ -1,7 +1,6 @@
 ---
 title: Specifying Parameters for an Incoming Call
 description: Specifying Parameters for an Incoming Call
-ms.assetid: f1436c05-f475-454c-b68f-e387821834d4
 keywords:
 - CoNDIS WAN drivers WDK networking , incoming calls
 - telephonic services WDK WAN , incoming calls

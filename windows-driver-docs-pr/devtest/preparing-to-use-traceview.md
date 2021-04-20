@@ -1,7 +1,6 @@
 ---
 title: Preparing to Use TraceView
 description: Preparing to Use TraceView
-ms.assetid: 724e3c8a-7760-4e53-8d44-1927e5ad1efd
 keywords:
 - TraceView WDK , preparing to use
 - files WDK TraceView

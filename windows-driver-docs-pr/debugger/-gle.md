@@ -1,7 +1,6 @@
 ---
 title: gle
 description: The gle extension displays the last error value for the current thread.
-ms.assetid: bed3ce17-6860-421f-ae20-11faa50310ed
 keywords: ["thread, error value", "error value", "gle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

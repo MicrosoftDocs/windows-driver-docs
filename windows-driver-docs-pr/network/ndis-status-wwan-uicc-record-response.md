@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE
 description: Miniport drivers use the NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_UICC_ACCESS_RECORD Query request.
-ms.assetid: 5F729855-1056-43D3-BEF8-A2A2D4CA56CB
 ms.date: 04/10/2019
 keywords: 
  -NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE Network Drivers Starting with Windows Vista

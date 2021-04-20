@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_CROSSBAR
 description: KSCATEGORY_CROSSBAR
-ms.assetid: 0a5edfd5-ad50-4402-8f6d-d6c5018d1ab2
 keywords: ["KSCATEGORY_CROSSBAR Device and Driver Installation"]
 topic_type:
 - apiref

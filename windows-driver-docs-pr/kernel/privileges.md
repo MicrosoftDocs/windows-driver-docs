@@ -1,7 +1,6 @@
 ---
 title: Privileges
 description: Privileges
-ms.assetid: 15deec90-73a3-4443-90b7-de4ec9673169
 keywords: ["privileges WDK objects", "process privileges WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

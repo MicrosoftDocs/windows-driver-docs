@@ -1,7 +1,6 @@
 ---
 title: I/O Verification
 description: I/O Verification
-ms.assetid: 41b77bba-fae8-453b-9872-911f5d5be3e6
 keywords:
 - I/O Verification feature WDK Driver Verifier
 - Level 1 I/O Verification WDK Driver Verifier

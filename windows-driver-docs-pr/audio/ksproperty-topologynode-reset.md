@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGYNODE\_RESET
 description: The KSPROPERTY\_TOPOLOGYNODE\_RESET property resets the node completely, restoring it to its initial state.
-ms.assetid: c7558518-53c5-43c6-94ac-107823e2a0ab
 keywords: ["KSPROPERTY_TOPOLOGYNODE_RESET Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Child Devices and Control Methods
 description: Enumerating Child Devices and Control Methods
-ms.assetid: fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67
 keywords:
 - ACPI devices WDK , enumerating child devices
 - ACPI devices WDK , enumerating control methods

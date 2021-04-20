@@ -1,7 +1,6 @@
 ---
 title: Determining the Buffering Method for an I/O Operation
 description: Determining the Buffering Method for an I/O Operation
-ms.assetid: 219378d9-a9fa-495a-b016-36595a7efb49
 keywords:
 - buffers WDK file system minifilter
 - preoperation callback routines WDK file system minifilter , buffers

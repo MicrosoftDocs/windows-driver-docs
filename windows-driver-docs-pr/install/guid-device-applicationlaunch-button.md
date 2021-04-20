@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
 description: GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
-ms.assetid: d2ca6eab-b0a1-4626-94cb-5b0a66ec6a6f
 keywords: ["GUID_DEVICE_APPLICATIONLAUNCH_BUTTON Device and Driver Installation"]
 topic_type:
 - apiref

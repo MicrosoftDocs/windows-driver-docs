@@ -1,7 +1,6 @@
 ---
 title: Obsolete Interfaces in NDIS 6.20
 description: Obsolete Interfaces in NDIS 6.20
-ms.assetid: 11c3abd5-651e-4f9c-9f0b-ced6c00947f1
 keywords:
 - NDIS 6.20 WDK , obsolete NDIS 6.1 interfaces
 - obsolete NDIS 6.1 interfaces WDK NDIS 6.20

@@ -1,7 +1,6 @@
 ---
 title: Winnt32 Phase of the Network Upgrade Process
 description: Winnt32 Phase of the Network Upgrade Process
-ms.assetid: a83edcfb-e075-4763-8a6a-33879ccf2357
 keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases

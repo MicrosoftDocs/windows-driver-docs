@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration During Configuration Change
 description: Autoconfiguration During Configuration Change
-ms.assetid: 0294d34d-06e4-4e57-8f4d-4100ab482852
 keywords:
 - autoconfiguration WDK printer , during configuration changes
 - printer autoconfiguration WDK printer , during configuration changes

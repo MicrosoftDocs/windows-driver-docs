@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MONITOR
 description: GUID_DEVINTERFACE_MONITOR
-ms.assetid: b75de360-44f3-4e8b-860c-57355757b6dd
 keywords: ["GUID_DEVINTERFACE_MONITOR Device and Driver Installation"]
 topic_type:
 - apiref

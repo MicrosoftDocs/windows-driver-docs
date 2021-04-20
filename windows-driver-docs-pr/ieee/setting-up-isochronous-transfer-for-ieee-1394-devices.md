@@ -1,7 +1,6 @@
 ---
 title: Setting Up Isochronous Transfer for IEEE 1394 Devices
 description: Setting Up Isochronous Transfer for IEEE 1394 Devices
-ms.assetid: 5161da54-0f20-496c-bf64-dc756b987de2
 keywords:
 - isochronous I/O WDK IEEE 1394 bus , setting up
 - bus cycles WDK IEEE 1394 bus

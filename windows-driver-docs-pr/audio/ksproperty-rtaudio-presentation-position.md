@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION
 description: KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presentation information.
-ms.assetid: 333A7432-B78A-4F61-B70D-D4F651F90AF7
 keywords: ["KSPROPERTY_RTAUDIO_PRESENTATION_POSITION Audio Devices"]
 topic_type:
 - apiref

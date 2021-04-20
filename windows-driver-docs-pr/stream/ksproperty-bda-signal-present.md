@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_PRESENT
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_PRESENT to determine whether a signal carrier is present.
-ms.assetid: d3dbe0f7-a308-48e2-9751-0131fa2b512d
 keywords: ["KSPROPERTY_BDA_SIGNAL_PRESENT Streaming Media Devices"]
 topic_type:
 - apiref

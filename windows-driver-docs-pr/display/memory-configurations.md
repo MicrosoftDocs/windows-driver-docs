@@ -1,7 +1,6 @@
 ---
 title: Memory Configurations
 description: Memory Configurations
-ms.assetid: e3341854-13ce-4028-ad75-49e8189ac0f7
 keywords:
 - stride WDK DirectDraw
 - pitch WDK DirectDraw

@@ -1,7 +1,6 @@
 ---
 title: Returning Status
 description: Returning Status
-ms.assetid: fd490517-f4c5-4e20-9eac-6a9ac7d04992
 keywords:
 - status values WDK file system
 - success status values WDK file system

@@ -1,7 +1,6 @@
 ---
 title: Installing the Complete Checked Build
 description: Installing the Complete Checked Build
-ms.assetid: 92953679-ab38-4df2-9241-135b57429b66
 keywords:
 - checked builds WDK , installing
 - complete checked build WDK

@@ -1,16 +1,12 @@
 ---
 title: Accessing User-Space Memory
 description: Accessing User-Space Memory
-ms.assetid: db0b6ba2-4cec-46c1-b13f-aba4c10a2d8c
 keywords: ["memory management WDK kernel , user-space memory", "user-space memory WDK kernel", "virtual user-space memory WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
 ---
 
 # Accessing User-Space Memory
-
-
-
 
 
 A driver cannot directly access memory through user-mode virtual addresses unless it is running in the context of the user-mode thread that caused the driver's current I/O operation and it is using that thread's virtual addresses.

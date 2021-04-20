@@ -1,7 +1,6 @@
 ---
 title: DIF_DESTROYPRIVATEDATA
 description: DIF_DESTROYPRIVATEDATA
-ms.assetid: 4f5d423d-52a5-4f7a-9847-b0e65b1c6f09
 keywords: ["DIF_DESTROYPRIVATEDATA Device and Driver Installation"]
 topic_type:
 - apiref

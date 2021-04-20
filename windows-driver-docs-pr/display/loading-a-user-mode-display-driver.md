@@ -1,7 +1,6 @@
 ---
 title: Loading a User-Mode Display Driver
 description: Loading a User-Mode Display Driver
-ms.assetid: bfebe590-bcde-40cf-9074-8d0f63e0562d
 keywords:
 - INF files WDK display , user-mode driver loading
 - user-mode display drivers WDK Windows Vista , loading

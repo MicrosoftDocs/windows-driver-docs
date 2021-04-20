@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CATEGORY
 description: The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category of a pin factory.
-ms.assetid: 6579408c-9ec5-4b09-9a63-815cec5bd5a3
 keywords: ["KSPROPERTY_PIN_CATEGORY Streaming Media Devices"]
 topic_type:
 - apiref

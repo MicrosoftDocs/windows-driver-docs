@@ -1,7 +1,6 @@
 ---
 title: Power framework (PoFx) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom PoFx driver for your device.
-ms.assetid: BA2CC8F0-E337-4A5E-987F-1B40213F5983
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

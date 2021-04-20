@@ -1,7 +1,6 @@
 ---
 title: Color Control Initialization
 description: Color Control Initialization
-ms.assetid: dd3afcaa-3da0-4515-8b8d-e7429792be23
 keywords:
 - drawing WDK DirectDraw , color control initialization
 - DirectDraw WDK Windows 2000 display , color control initialization

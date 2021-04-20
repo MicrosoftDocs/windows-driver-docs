@@ -1,7 +1,6 @@
 ---
 title: Using SetupAPI to Uninstall Devices and Driver Packages
 description: Using SetupAPI to Uninstall Devices and Driver Packages
-ms.assetid: e170961b-5d12-43d5-b502-3b37e6421f6e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 ### <a href="" id="uninstalling-the-device"></a> Uninstalling the Device
 
-SetupAPI) from the system by using the following methods:
+[SetupAPI](setupapi.md) allows you to uninstall a device and remove the device node (*devnode*) from the system by using the following methods:
 
 -   A device installation application can request that a device be uninstalled by calling the [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) function. When the application calls this function to uninstall a device, it must set the *InstallFunction* parameter to the [**DIF_REMOVE**](./dif-remove.md) code.  For a list of all DIF codes, see [Device Installation Functions](/previous-versions/ff541307(v=vs.85)).
 

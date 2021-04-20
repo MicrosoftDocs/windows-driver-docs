@@ -1,7 +1,6 @@
 ---
 title: Callback Handling Of Nonlocal Display Memory Surfaces
 description: Callback Handling Of Nonlocal Display Memory Surfaces
-ms.assetid: 803c52df-93c4-4124-9e17-6ef6c734a15f
 keywords:
 - display memory WDK DirectDraw , callbacks
 - nonlocal display memory WDK DirectDraw , callbacks

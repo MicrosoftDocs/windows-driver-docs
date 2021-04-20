@@ -1,7 +1,6 @@
 ---
 title: Special Actions for Filter Rules
 description: Special Actions for Filter Rules
-ms.assetid: f2631f39-02bb-4bbc-b63b-6a0200d47bc8
 keywords:
 - filtering trace messages, special actions WDK
 - trace message filters WDK , special actions

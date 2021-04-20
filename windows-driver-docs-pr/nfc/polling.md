@@ -1,7 +1,6 @@
 ---
 title: NFC polling
 description: NFC polling
-ms.assetid: C6C531EC-59AA-4AF5-903E-A726C0E79E47
 keywords:
 - NFC
 - near field communications

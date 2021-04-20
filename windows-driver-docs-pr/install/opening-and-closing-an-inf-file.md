@@ -1,7 +1,6 @@
 ---
 title: Opening and Closing an INF File
 description: Opening and Closing an INF File
-ms.assetid: da270688-4b8b-43b3-afdb-8f31d15ef50c
 keywords:
 - INF files WDK device installations , opening
 - INF files WDK device installations , closing

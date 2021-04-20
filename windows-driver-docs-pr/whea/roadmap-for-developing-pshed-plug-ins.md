@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing PSHED Plug-Ins
 description: Roadmap for Developing PSHED Plug-Ins
-ms.assetid: 3e1eb744-e480-4478-9705-94da8029c382
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

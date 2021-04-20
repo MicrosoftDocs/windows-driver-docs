@@ -1,7 +1,6 @@
 ---
 title: Differences Between the HD Audio DDI Versions
 description: Differences Between the HD Audio DDI Versions
-ms.assetid: e24071d3-9021-40c0-907a-91ada8a1306b
 keywords:
 - HD Audio, DDI version differences
 - High Definition Audio (HD Audio), DDI version differences

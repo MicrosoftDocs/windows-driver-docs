@@ -1,7 +1,6 @@
 ---
 title: Determining the Parent of a Nonpresent Device
 description: Determining the Parent of a Nonpresent Device
-ms.assetid: 2d5948db-5844-4f78-b3a6-2f9f88ee1b24
 keywords:
 - SetupAPI functions WDK , determining parents
 - nonpresent devices WDK

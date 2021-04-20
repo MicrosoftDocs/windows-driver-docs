@@ -1,7 +1,6 @@
 ---
 title: quietInstall XML Element
 description: quietInstall XML Element
-ms.assetid: 1151a68f-17c8-4852-9dc0-ab5dea9d58c6
 keywords: ["quietInstall XML Element Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DeleteDevice rule (wdm)
 description: The DeleteDevice rule specifies that drivers should not rely on the I/O Manager or PnP Manager to keep the DeviceObject alive after a call to IoDeleteDevice.
-ms.assetid: C7068AD1-C9F4-4BB0-8964-24FFB4658AF6
 ms.date: 05/21/2018
 keywords: ["DeleteDevice rule (wdm)"]
 topic_type:

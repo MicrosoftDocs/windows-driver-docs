@@ -1,7 +1,6 @@
 ---
 title: Completing the IRP
 description: Completing the IRP
-ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
 keywords:
 - IRP dispatch routines WDK file system , completing IRPs
 - completing I/O requests WDK file system

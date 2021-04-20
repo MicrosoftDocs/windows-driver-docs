@@ -1,7 +1,6 @@
 ---
 title: e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 description: The e* commands enter into memory the values that you specify.This command should not be confused with the ~E (Thread-Specific Command) qualifier.
-ms.assetid: d21b13ac-2268-4218-b562-4c466956b05d
 keywords: ["e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

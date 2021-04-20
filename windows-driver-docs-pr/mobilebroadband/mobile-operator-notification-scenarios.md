@@ -1,7 +1,6 @@
 ---
 title: Mobile operator notification scenarios
 description: Mobile operator notification scenarios
-ms.assetid: 3749d9ab-3dff-4216-a23b-0e75c04d9a22
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Supporting Stretch Blit Operations
 description: Supporting Stretch Blit Operations
-ms.assetid: 1d279e56-41fd-4189-84d2-858e51db281d
 keywords:
 - blit stretch operations WDK DirectX 9.0
 - stretch blit operations WDK DirectX 9.0

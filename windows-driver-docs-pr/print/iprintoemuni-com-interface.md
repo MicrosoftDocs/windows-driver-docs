@@ -1,7 +1,6 @@
 ---
 title: IPrintOemUni COM Interface
 description: IPrintOemUni COM Interface
-ms.assetid: b120def0-f270-49c6-b12f-10c220801f51
 keywords:
 - IPrintOemUni
 ms.date: 04/20/2017

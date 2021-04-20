@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Registry Entries
 description: Bluetooth Registry Entries
-ms.assetid: a4d2848d-cb3c-4413-b06f-fe4695448f6a
 keywords:
 - Bluetooth WDK , registry entries
 - registry WDK Bluetooth

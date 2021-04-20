@@ -1,7 +1,6 @@
 ---
 title: Installing a Test-Signed Catalog File for a Non-PnP Driver
 description: Installing a Test-Signed Catalog File for a Non-PnP Driver
-ms.assetid: 8586bacc-86c5-4402-84fa-6f1efe967f5d
 keywords:
 - test signing driver packages WDK , catalog files
 - CAT files

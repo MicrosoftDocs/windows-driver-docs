@@ -1,7 +1,6 @@
 ---
 title: IrqlExApcLteInline rule (wdm)
 description: The IrqlExApcLteInline rule specifies that DDIs are only called at proper IRQL levels.
-ms.assetid: 9BE8633E-9390-40FA-8E2E-1FA130B6E638
 ms.date: 05/21/2018
 keywords: ["IrqlExApcLteInline rule (wdm)"]
 topic_type:

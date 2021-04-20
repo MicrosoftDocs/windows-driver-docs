@@ -1,7 +1,6 @@
 ---
 title: GDI Drawing and Related Services
 description: GDI Drawing and Related Services
-ms.assetid: b5df84ae-05cf-49dc-aa49-79f912ecd029
 keywords:
 - GDI WDK Windows 2000 display , drawing services
 - graphics drivers WDK Windows 2000 display , drawing services

@@ -1,7 +1,6 @@
 ---
 title: Win32 API Support for Print Capabilities
 description: Win32 API Support for Print Capabilities
-ms.assetid: 1b40cc3e-c6f6-460f-b514-4ef3a001f563
 keywords:
 - Print Capabilities WDK , Win32 API support
 - DrvDeviceCapabilities

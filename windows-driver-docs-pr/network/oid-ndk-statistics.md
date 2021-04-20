@@ -1,7 +1,6 @@
 ---
 title: OID_NDK_STATISTICS
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_STATISTICS OID to get the NDK statistics of a miniport adapter.
-ms.assetid: 30F16DEC-AEE6-49D4-8599-95374ACBD446
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_STATISTICS Network Drivers Starting with Windows Vista

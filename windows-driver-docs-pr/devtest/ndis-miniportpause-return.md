@@ -1,7 +1,6 @@
 ---
 title: MiniportPause\_Return rule (ndis)
 description: The MiniportPause\_Return rule specifies that the MiniportPause callback function should return only NDIS\_STATUS\_SUCCESS if the pause operation is complete, or NDIS\_STATUS\_PENDING if the miniport driver is in the pausing state.
-ms.assetid: f3751636-6ba2-4126-88e2-1f347bd7dd45
 ms.date: 05/21/2018
 keywords: ["MiniportPause_Return rule (ndis)"]
 topic_type:

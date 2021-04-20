@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_ACOUSTIC_ECHO_CANCEL
 description: KSCATEGORY_ACOUSTIC_ECHO_CANCEL
-ms.assetid: 91440365-be16-4d98-aa91-e186b9ab6359
 keywords: ["KSCATEGORY_ACOUSTIC_ECHO_CANCEL Device and Driver Installation"]
 topic_type:
 - apiref

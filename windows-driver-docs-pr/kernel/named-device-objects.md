@@ -1,7 +1,6 @@
 ---
 title: Named Device Objects
 description: Named Device Objects
-ms.assetid: 4e24f0c1-57b2-4e06-a7f5-9a93d365ac8c
 keywords: ["device objects WDK kernel , named", "named device objects WDK kernel"]
 ms.date: 09/28/2017
 ms.localizationpriority: medium

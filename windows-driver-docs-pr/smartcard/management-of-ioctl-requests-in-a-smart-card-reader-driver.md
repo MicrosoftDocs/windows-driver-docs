@@ -1,7 +1,6 @@
 ---
 title: Management of IOCTL Requests in a Smart Card Reader Driver
 description: Management of IOCTL Requests in a Smart Card Reader Driver
-ms.assetid: 610476fc-59e7-4981-9afa-20ed7cc697c1
 keywords:
 - smart card drivers WDK , IOCTL request management
 - IOCTLs WDK smart card

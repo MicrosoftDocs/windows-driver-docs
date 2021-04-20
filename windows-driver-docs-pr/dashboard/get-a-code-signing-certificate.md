@@ -1,7 +1,6 @@
 ---
 title: Get a code signing certificate
 description: Get a code signing certificate
-ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 - [Buy an SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
-- [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
+- [Buy a Certum EV code signing cert](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
 
 - [Buy an Entrust EV code signing cert](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
 

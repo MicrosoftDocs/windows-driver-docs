@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_Model
 description: DEVPKEY_DrvPkg_Model
-ms.assetid: 54aedf63-50b3-49eb-9638-2984af7de59a
 keywords: ["DEVPKEY_DrvPkg_Model Device and Driver Installation"]
 topic_type:
 - apiref

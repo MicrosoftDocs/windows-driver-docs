@@ -1,7 +1,6 @@
 ---
 title: WavePci Port Driver
 description: WavePci Port Driver
-ms.assetid: 3b4a89d0-f07a-40e1-8c67-62d9cfd96ddd
 keywords:
 - WavePci port driver WDK audio
 - PortCls WDK audio , port drivers

@@ -1,7 +1,6 @@
 ---
 title: verifier
 description: The verifier extension displays the status of Driver Verifier and its actions.
-ms.assetid: e84993e1-da10-4041-8fc7-7f40806ee454
 keywords: ["Driver Verifier", "verifier Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:
@@ -142,8 +141,6 @@ Time stamp:         0000000000000857
     fffff88005f062f2 nsiproxy!NsippGetParameter+0x24a
     fffff88005f086db nsiproxy!NsippDispatchDeviceControl+0xa3
 ```
-
-When using Driver Verifier to test graphics drivers, use the [**!gdikdx.verifier**](-gdikdx-verifier.md) extension instead of **!verifier**.
 
 The values of 4, 8, and 0x20, 0x40, 0x80, and 0x100 are special values for *Flags*. If these values are used, the special arguments listed in the **Parameters** section can be used, and the display will include only the information associated with that flag value.
 

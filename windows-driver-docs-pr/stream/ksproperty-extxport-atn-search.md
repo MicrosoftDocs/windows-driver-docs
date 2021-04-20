@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_ATN\_SEARCH
 description: The KSPROPERTY\_EXTXPORT\_ATN\_SEARCH property searches to a specific absolute track number (ATN) on a tape.
-ms.assetid: e5bc7552-64a8-4567-9dc3-3f2b50411cc6
 keywords: ["KSPROPERTY_EXTXPORT_ATN_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref

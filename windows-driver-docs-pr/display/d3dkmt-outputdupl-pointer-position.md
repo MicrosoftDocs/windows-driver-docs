@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_POINTER\_POSITION structure
 description: Learn about the D3DKMT\_OUTPUTDUPL\_POINTER\_POSITION structure, which is reserved for system use. Do not use in your driver.
-ms.assetid: c05205bf-3f7c-487d-8cce-d708d50eb4d9
 keywords: ["D3DKMT_OUTPUTDUPL_POINTER_POSITION structure Display Devices"]
 topic_type:
 - apiref

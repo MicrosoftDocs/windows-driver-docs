@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_DATAFORMAT
 description: Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current data format.
-ms.assetid: c5f37f1b-7dc6-46d2-aba2-b6c03f07228d
 keywords: ["KSPROPERTY_CONNECTION_DATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

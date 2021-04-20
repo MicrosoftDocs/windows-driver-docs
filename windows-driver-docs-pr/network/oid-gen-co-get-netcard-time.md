@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_GET_NETCARD_TIME
 description: This topic describes the OID_GEN_CO_GET_NETCARD_TIME object identifier (OID).
-ms.assetid: 4dfa0f02-2b37-4b9f-95fe-dd33774dedbc
 keywords:
 - OID_GEN_CO_GET_NETCARD_TIME
 ms.date: 11/02/2017

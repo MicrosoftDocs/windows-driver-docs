@@ -1,7 +1,6 @@
 ---
 title: Callout Driver Programming Considerations
 description: Callout Driver Programming Considerations
-ms.assetid: e470202a-bc3b-41ac-8156-8aac8cd976cd
 keywords:
 - Windows Filtering Platform callout drivers WDK , programming considerations
 - callout drivers WDK Windows Filtering Platform , programming considerations
@@ -50,5 +49,5 @@ The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRE
 ## Related topics
 
 
-[Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)
+[Windows Filtering Platform Callout Drivers](introduction-to-windows-filtering-platform-callout-drivers.md)
 

@@ -1,13 +1,12 @@
 ---
 title: Allocated filter altitudes
 description: Lists file system filter altitudes allocated by Microsoft
-ms.assetid: EC1993FB-5219-4C0C-A76A-05937A461C5A
 ms.date: 03/11/2020
 keywords:
 - filter driver altitude
 - minifilter driver altitude
 ms.localizationpriority: medium
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---
 
 # Allocated filter altitudes

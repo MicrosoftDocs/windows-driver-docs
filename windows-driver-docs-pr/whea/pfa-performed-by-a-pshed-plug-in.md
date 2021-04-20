@@ -1,7 +1,6 @@
 ---
 title: PFA Performed by a PSHED Plug-In
 description: PFA Performed by a PSHED Plug-In
-ms.assetid: e9876c86-b059-406f-a01a-7670ab294098
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , PSHED plug-in
 - PFA WDK WHEA , PSHED plug-in

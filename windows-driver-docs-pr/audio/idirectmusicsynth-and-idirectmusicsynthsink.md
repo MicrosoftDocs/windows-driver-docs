@@ -1,7 +1,6 @@
 ---
 title: IDirectMusicSynth and IDirectMusicSynthSink
 description: IDirectMusicSynth and IDirectMusicSynthSink
-ms.assetid: ce9a353b-9e4b-402b-92bb-948200e3c2ef
 keywords:
 - IDirectMusicSynth interface
 - IDirectMusicSynthSink interface

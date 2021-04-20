@@ -1,7 +1,6 @@
 ---
 title: Set SMS declarations
 description: Set SMS declarations
-ms.assetid: fad7fb60-eb08-43e9-bc58-afb8d6b5633c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

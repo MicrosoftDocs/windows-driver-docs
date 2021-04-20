@@ -1,8 +1,7 @@
 ---
 title: Debugging Resources
 description: Use Debugging Tools for Windows to debug drivers, applications, and services on Windows systems.
-ms.assetid: F2111416-EC6C-4967-B123-9A6101040561
-ms.date: 12/09/2019
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -32,8 +31,7 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 
 A number of [Knowledge Base articles](https://support.microsoft.com/) are available for debugging related topics. This page provides a few examples of Product Support links that are relevant for debugging.
 
-- [2816225: Enabling Debug mode causes Windows to hang if no Debugger is connected](https://support.microsoft.com/help/2816225/enabling-debug-mode-causes-windows-to-hang-if-no-debugger-is-connected/)
-- [311503: Use the Microsoft Symbol Server to obtain debug symbol files](https://support.microsoft.com/help/311503)
+- [Enabling Debug mode causes Windows to hang if no Debugger is connected](/troubleshoot/windows-server/performance/enable-debug-mode-causes-hang)
 
 ## <span id="related_topics"></span>Related topics
 

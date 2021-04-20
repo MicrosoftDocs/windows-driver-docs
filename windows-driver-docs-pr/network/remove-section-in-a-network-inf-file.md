@@ -1,7 +1,6 @@
 ---
 title: Remove Section in a Network INF File
 description: Remove Section in a Network INF File
-ms.assetid: c9be4e98-fa35-4966-895a-aebe29f16289
 keywords:
 - INF files WDK network , Remove section
 - network INF files WDK , Remove section

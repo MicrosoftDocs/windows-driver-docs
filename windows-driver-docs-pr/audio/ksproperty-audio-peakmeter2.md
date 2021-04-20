@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PEAKMETER2
 description: Windows 8 introduces the KSPROPERTY\_AUDIO\_PEAKMETER2 property that reports the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
-ms.assetid: 0A59A482-476D-412C-8D15-D821357C355B
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER2 Audio Devices"]
 topic_type:
 - apiref

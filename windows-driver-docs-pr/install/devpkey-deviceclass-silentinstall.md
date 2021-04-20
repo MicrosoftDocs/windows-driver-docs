@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_SilentInstall
 description: DEVPKEY_DeviceClass_SilentInstall
-ms.assetid: db9ff5d2-020f-47bc-a1e3-2b305b5270e9
 keywords: ["DEVPKEY_DeviceClass_SilentInstall Device and Driver Installation"]
 topic_type:
 - apiref

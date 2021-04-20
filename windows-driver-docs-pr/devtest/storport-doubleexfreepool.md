@@ -1,7 +1,6 @@
 ---
 title: DoubleExFreePool rule (storport)
 description: This rule verifies that the driver does not attempt to free the same block of pool memory twice.
-ms.assetid: D7EAD257-02CA-418C-B67D-FADCB4F7A6C1
 ms.date: 05/21/2018
 keywords: ["DoubleExFreePool rule (storport)"]
 topic_type:

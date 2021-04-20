@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VOLUME
 description: KSNODETYPE\_VOLUME
-ms.assetid: 4776ea69-6492-428e-97ce-dd8842f22c16
 keywords: ["KSNODETYPE_VOLUME Audio Devices"]
 topic_type:
 - apiref

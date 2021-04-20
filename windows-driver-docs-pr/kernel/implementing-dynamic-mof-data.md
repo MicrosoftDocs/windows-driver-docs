@@ -1,7 +1,6 @@
 ---
 title: Implementing Dynamic MOF Data
 description: Implementing Dynamic MOF Data
-ms.assetid: 408c0f64-6257-4ece-bb4d-b1850f8ae3c6
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "dyanmic MOF data WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

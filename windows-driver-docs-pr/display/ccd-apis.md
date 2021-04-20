@@ -1,7 +1,6 @@
 ---
 title: CCD APIs
 description: Connecting and Configuring Display (CCD) APIs
-ms.assetid: b71c1582-a91c-49d8-a3a3-d20f7746c354
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs

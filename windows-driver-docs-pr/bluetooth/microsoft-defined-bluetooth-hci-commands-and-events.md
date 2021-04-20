@@ -1,7 +1,6 @@
 ---
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.assetid: 68E34B92-155B-401E-8D90-5BD1AF036B4D
 ms.date: 02/07/2018
 ms.localizationpriority: medium
 ---

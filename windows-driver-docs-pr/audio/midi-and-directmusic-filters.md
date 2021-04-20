@@ -1,7 +1,6 @@
 ---
 title: MIDI and DirectMusic Filters
 description: MIDI and DirectMusic Filters
-ms.assetid: 622aa4ae-c855-4088-bc1a-30dff7a24d23
 keywords:
 - audio filters WDK audio , MIDI
 - audio filters WDK audio , DirectMusic

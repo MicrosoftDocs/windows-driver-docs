@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_EXCLUSIVELOCK\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_EXCLUSIVELOCK\ routine is called by RDBSS to request that a network mini-redirector open an exclusive lock on a file object.
-ms.assetid: 7f6613d1-63fb-4505-966d-155dc2b80ffe
 keywords: ["MRxLowIOSubmit LOWIO_OP_EXCLUSIVELOCK routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

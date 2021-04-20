@@ -1,7 +1,6 @@
 ---
 title: Requeuing I/O Requests
 description: Requeuing I/O Requests
-ms.assetid: b509959c-b2ab-4f04-9c08-5c5e90726b73
 keywords:
 - I/O requests WDK KMDF , requeuing
 - requeuing I/O requests WDK KMDF

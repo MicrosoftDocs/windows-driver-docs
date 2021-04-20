@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /hypervisorsettings
 description: The /hypervisorsettings command sets or displays the hypervisor debugger settings for the system.
-ms.assetid: e86afc56-0304-4afe-9de5-980e5c83bf4f
 ms.date: 10/01/2020
 keywords: ["BCDEdit /hypervisorsettings Driver Development Tools"]
 topic_type:

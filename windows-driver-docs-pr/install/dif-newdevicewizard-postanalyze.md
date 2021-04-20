@@ -1,7 +1,6 @@
 ---
 title: DIF_NEWDEVICEWIZARD_POSTANALYZE
 description: DIF_NEWDEVICEWIZARD_POSTANALYZE
-ms.assetid: 81d609e6-9562-4738-b3ba-c29b24612f91
 keywords: ["DIF_NEWDEVICEWIZARD_POSTANALYZE Device and Driver Installation"]
 topic_type:
 - apiref

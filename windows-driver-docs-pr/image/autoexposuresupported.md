@@ -1,7 +1,6 @@
 ---
 title: AutoExposureSupported element
 description: The required AutoExposureSupported element specifies whether the scan device supports automatic adjustment of the various exposure settings.
-ms.assetid: 36ef003f-b049-4eb2-8fe3-53aa77db3065
 keywords: ["AutoExposureSupported element Imaging Devices"]
 topic_type:
 - apiref

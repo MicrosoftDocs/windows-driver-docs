@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ETHERTYPE_ENCAP_TABLE
 description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a TLV that contains the Ethertype encapsulations for the association.
-ms.assetid: BAAC7E5B-F13F-4AC8-A3F9-76197F92C7E3
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ETHERTYPE_ENCAP_TABLE Network Drivers Starting with Windows Vista

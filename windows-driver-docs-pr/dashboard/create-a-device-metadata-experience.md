@@ -1,7 +1,6 @@
 ---
 title: Create a device metadata experience
 description: Create a Device Metadata Experience
-ms.assetid: 964ad06e-0f29-441d-b184-61f80a614914
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

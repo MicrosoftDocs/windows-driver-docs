@@ -1,7 +1,6 @@
 ---
 title: Sample Functions for COPP
 description: Sample Functions for COPP
-ms.assetid: 73c9cf1c-c20d-456c-8029-5316fd8979d5
 keywords:
 - copy protection WDK COPP , sample functions
 - video copy protection WDK COPP , sample functions

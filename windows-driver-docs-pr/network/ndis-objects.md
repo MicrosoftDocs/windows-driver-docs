@@ -1,7 +1,6 @@
 ---
 title: NDIS Objects
 description: NDIS Objects
-ms.assetid: 1a1338d7-f668-475b-99a9-4819de0a70c3
 keywords:
 - allocating generic NDIS objects
 - generic NDIS objects WDK networking

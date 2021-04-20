@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration Details
 description: Autoconfiguration Details
-ms.assetid: ba596ce3-724d-45c4-85ee-2486a31a0c01
 keywords:
 - autoconfiguration WDK printer , about printer autoconfiguration
 - printer autoconfiguration WDK printer , about printer autoconfiguration

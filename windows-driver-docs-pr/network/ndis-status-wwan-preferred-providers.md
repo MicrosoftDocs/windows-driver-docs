@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_PREFERRED_PROVIDERS
 description: Miniport drivers use the NDIS_STATUS_WWAN_PREFERRED_PROVIDERS notification to inform the MB Service that the Preferred Provider List (PPL) has changed.
-ms.assetid: b0c06db9-82ca-4f94-80e6-3cf13197abf5
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_PREFERRED_PROVIDERS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_CHANGELISTS
 description: CODECAPI\_CHANGELISTS
-ms.assetid: c1b65350-32b9-4c94-a6d4-74cb9959d737
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

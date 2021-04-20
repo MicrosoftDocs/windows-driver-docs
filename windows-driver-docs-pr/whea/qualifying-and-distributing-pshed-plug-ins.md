@@ -1,7 +1,6 @@
 ---
 title: Qualifying and Distributing PSHED Plug-Ins
 description: Qualifying and Distributing PSHED Plug-Ins
-ms.assetid: fe6cbb01-552f-4b24-b300-168d6311a596
 keywords:
 - digital signatures WDK WHEA), PSHED plug-ins
 - PSHED plug-ins WDK WHEA , qualifying

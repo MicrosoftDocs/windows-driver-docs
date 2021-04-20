@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_CALLHOLD
 description: The KSPROPERTY\_TELEPHONY\_CALLHOLD property is used to control the hold state of a phone call.
-ms.assetid: C683A6AA-35E5-43D3-B882-B13B8A0A4043
 keywords: ["KSPROPERTY_TELEPHONY_CALLHOLD Audio Devices"]
 topic_type:
 - apiref

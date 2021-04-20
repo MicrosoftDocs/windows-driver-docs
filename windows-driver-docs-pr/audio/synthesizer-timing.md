@@ -1,7 +1,6 @@
 ---
 title: Synthesizer Timing
 description: Synthesizer Timing
-ms.assetid: 38aca8b7-f895-4b16-aaac-5a13973cf976
 keywords:
 - synthesizers WDK audio , timing
 - time WDK audio

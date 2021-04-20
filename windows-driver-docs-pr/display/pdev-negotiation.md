@@ -1,7 +1,6 @@
 ---
 title: PDEV Negotiation
 description: PDEV Negotiation
-ms.assetid: d3172dd2-ecf1-4ad8-ba52-776bf712ab7c
 keywords:
 - GDI WDK Windows 2000 display , PDEV negotiation
 - graphics drivers WDK Windows 2000 display , PDEV negotiation

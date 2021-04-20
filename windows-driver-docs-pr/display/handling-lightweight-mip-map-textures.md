@@ -1,7 +1,6 @@
 ---
 title: Handling Lightweight MIP Map Textures
 description: Handling Lightweight MIP Map Textures
-ms.assetid: f541b046-2937-428c-ab98-eb1020728e04
 keywords:
 - MIP map textures WDK DirectX 9.0 , lightweight
 - lightweight MIP-map textures WDK DirectX 9.0

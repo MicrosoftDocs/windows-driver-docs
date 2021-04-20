@@ -1,7 +1,6 @@
 ---
 title: DirectX VPE Initialization
 description: DirectX VPE Initialization
-ms.assetid: 1309a302-f9fc-49cf-a6b8-691d0956beab
 keywords:
 - DirectX VPE support WDK DirectDraw , initialization
 - drawing VPEs WDK DirectDraw , initialization

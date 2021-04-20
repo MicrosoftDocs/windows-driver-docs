@@ -1,7 +1,6 @@
 ---
 title: Imaging device properties
 description: Imaging device properties
-ms.assetid: f41040c5-0eac-450d-b532-9165c543cc1a
 ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---

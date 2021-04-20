@@ -1,7 +1,6 @@
 ---
 title: POS events
 description: Describes the events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
-ms.assetid: '1123b789-c0ee-4490-9081-79c08fc31417'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

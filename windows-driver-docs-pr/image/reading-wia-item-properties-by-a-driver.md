@@ -1,7 +1,6 @@
 ---
 title: Reading WIA Item Properties by a Driver
 description: Reading WIA Item Properties by a Driver
-ms.assetid: 4e592c62-e8bf-4b25-9c65-5a0079d3a857
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

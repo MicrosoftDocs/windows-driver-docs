@@ -1,7 +1,6 @@
 ---
 title: Responding to Check-Verify Requests from the File System
 description: Responding to Check-Verify Requests from the File System
-ms.assetid: 227e65d6-d746-4b16-978d-4d42be9aeb2c
 keywords: ["removable media WDK kernel , check-verify requests", "check-verify requests WDK removable media", "media change requests WDK removable media", "checking removable media changes", "verifying removable media changes"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

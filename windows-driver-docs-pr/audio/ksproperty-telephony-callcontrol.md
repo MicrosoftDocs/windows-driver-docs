@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_CALLCONTROL
 description: The KSPROPERTY\_TELEPHONY\_CALLCONTROL property is used to start and terminate a phone call.
-ms.assetid: AAC2A218-9A2D-4EFE-B609-5078028B2426
 keywords: ["KSPROPERTY_TELEPHONY_CALLCONTROL Audio Devices"]
 topic_type:
 - apiref

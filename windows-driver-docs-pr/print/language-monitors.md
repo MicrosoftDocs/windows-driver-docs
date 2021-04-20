@@ -1,7 +1,6 @@
 ---
 title: Language Monitors
 description: Language Monitors
-ms.assetid: 26ba1c22-390a-4187-b67a-3f3497964f8e
 keywords:
 - print monitors WDK , language monitors
 - language monitors WDK print

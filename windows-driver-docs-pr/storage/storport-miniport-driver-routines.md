@@ -1,7 +1,6 @@
 ---
 title: Storport driver miniport routines
 description: Describes the Storport miniport driver routines and differences between the design of the SCSI port driver and that of the Storport driver.
-ms.assetid: f035cf06-d2ef-41da-a59a-0c00c626e3fb
 keywords:
 - Storport driver support routines
 - storage WDK

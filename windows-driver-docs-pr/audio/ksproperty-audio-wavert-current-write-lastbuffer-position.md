@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION
 description: The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property is used for indicating the last valid byte in the audio buffer.
-ms.assetid: 01EC2F29-D30A-4017-841F-8443D7C4BCF6
 keywords: ["KSPROPERTY_AUDIO_WAVERT_CURRENT_WRITE_LASTBUFFER_POSITION Audio Devices"]
 topic_type:
 - apiref

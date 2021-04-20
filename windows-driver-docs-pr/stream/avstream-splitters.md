@@ -1,7 +1,6 @@
 ---
 title: AVStream Splitters
 description: AVStream Splitters
-ms.assetid: c2cfc183-0f4c-4104-a580-234e0483eee4
 keywords:
 - splitters WDK AVStream
 - AVStream splitters WDK

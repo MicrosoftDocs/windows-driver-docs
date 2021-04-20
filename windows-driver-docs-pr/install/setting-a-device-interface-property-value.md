@@ -1,7 +1,6 @@
 ---
 title: Setting a Device Interface Property Value
 description: Setting a Device Interface Property Value
-ms.assetid: 44cef4e1-9fda-44fb-b37f-342099b5f7a0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

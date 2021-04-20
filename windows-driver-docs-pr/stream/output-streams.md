@@ -1,7 +1,6 @@
 ---
 title: Output Streams
 description: Output Streams
-ms.assetid: 91be637c-f195-4713-bfb0-b41c0346e390
 keywords:
 - output streams WDK DVD decoder
 ms.date: 04/20/2017

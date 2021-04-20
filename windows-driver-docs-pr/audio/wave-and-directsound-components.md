@@ -1,7 +1,6 @@
 ---
 title: Wave and DirectSound Components
 description: Wave and DirectSound Components
-ms.assetid: df00fcaf-49b0-4af1-a12f-bd3fcb9e025d
 keywords:
 - wave components WDK audio
 - wave streams WDK audio

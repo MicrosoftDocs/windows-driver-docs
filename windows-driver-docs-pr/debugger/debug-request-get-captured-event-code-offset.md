@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET
 description: DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET
-ms.assetid: cdf05d4f-8a8c-4b52-b36f-9d00575fdb7b
 keywords: ["DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET Windows Debugging"]
 topic_type:
 - apiref

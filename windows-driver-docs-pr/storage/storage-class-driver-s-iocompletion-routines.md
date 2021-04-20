@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's IoCompletion Routines
 description: Storage Class Driver's IoCompletion Routines
-ms.assetid: 03cf50be-1b7d-4e5b-8ee5-bbdef860d893
 keywords:
 - IoCompletion
 ms.date: 04/20/2017

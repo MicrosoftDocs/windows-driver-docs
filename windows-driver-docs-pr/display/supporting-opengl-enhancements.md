@@ -1,7 +1,6 @@
 ---
 title: Supporting OpenGL Enhancements
 description: Supporting OpenGL Enhancements
-ms.assetid: 5f8b7d96-7941-44ce-bd32-546ec0f32883
 keywords:
 - OpenGL enhancements WDK display
 ms.date: 04/20/2017

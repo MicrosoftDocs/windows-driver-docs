@@ -1,7 +1,6 @@
 ---
 title: Serial driver samples
 description: The driver samples in this directory provide a starting point for writing a custom serial driver for your device.
-ms.assetid: C4C6ED0B-50EA-4483-A81F-FC3C7F5CCE12
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

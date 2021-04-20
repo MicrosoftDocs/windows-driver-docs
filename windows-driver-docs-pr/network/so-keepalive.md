@@ -1,7 +1,6 @@
 ---
 title: SO_KEEPALIVE
 description: SO_KEEPALIVE
-ms.assetid: 47b29218-f227-4d36-b206-d8bf009252c0
 ms.date: 08/08/2017
 keywords: 
  -SO_KEEPALIVE Network Drivers Starting with Windows Vista

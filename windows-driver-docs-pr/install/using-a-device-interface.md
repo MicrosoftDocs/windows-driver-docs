@@ -1,7 +1,6 @@
 ---
 title: Using a Device Interface
 description: Using a Device Interface
-ms.assetid: a41f9ae2-6128-43e2-a6b5-4d0bd45371bd
 keywords:
 - interface classes WDK device installations
 - device interface classes WDK device installations

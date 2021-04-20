@@ -1,7 +1,6 @@
 ---
 title: File Exit
 description: File Exit
-ms.assetid: 2b35a887-7574-413e-bc93-c406eddb110d
 keywords: ["File Exit", "exiting the debugger, File Exit", "quitting the debugger, File Exit", "ending the debugging session, File Exit"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

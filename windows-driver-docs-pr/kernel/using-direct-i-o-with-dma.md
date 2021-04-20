@@ -1,7 +1,6 @@
 ---
 title: Using Direct I/O with DMA
 description: Using Direct I/O with DMA
-ms.assetid: 0e609613-9023-4f35-a9c5-d68c8b676cfe
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O", "DMA transfers WDK kernel , direct I/O"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

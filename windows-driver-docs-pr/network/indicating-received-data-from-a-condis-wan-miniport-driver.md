@@ -1,7 +1,6 @@
 ---
 title: Indicating Received Data from a CoNDIS WAN Miniport Driver
 description: Indicating Received Data from a CoNDIS WAN Miniport Driver
-ms.assetid: d49ea741-df5c-4b65-b899-a751cb2b9929
 keywords:
 - CoNDIS WAN drivers WDK networking , receiving data
 - receiving data WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Usb rule set (KMDF)
 description: Use these rules to verify that your driver correctly handles some specialized KMDF methods for USB devices.
-ms.assetid: E07F4E18-CE93-43A8-AAB4-C3CF8CC790CC
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

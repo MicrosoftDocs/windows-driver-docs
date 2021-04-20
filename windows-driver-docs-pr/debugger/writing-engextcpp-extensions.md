@@ -1,7 +1,6 @@
 ---
 title: Writing EngExtCpp Extensions
 description: Writing EngExtCpp Extensions
-ms.assetid: ac8684f9-26a3-415f-9d96-938ebda29a27
 keywords: ["EngExtCpp extensions, writing"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

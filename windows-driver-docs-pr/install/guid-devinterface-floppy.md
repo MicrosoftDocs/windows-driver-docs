@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_FLOPPY
 description: GUID_DEVINTERFACE_FLOPPY
-ms.assetid: 07d47168-a179-40ef-843b-c1efa6acb395
 keywords: ["GUID_DEVINTERFACE_FLOPPY Device and Driver Installation"]
 topic_type:
 - apiref

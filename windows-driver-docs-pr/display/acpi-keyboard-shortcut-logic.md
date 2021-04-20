@@ -1,7 +1,6 @@
 ---
 title: ACPI Keyboard Shortcut Logic
 description: ACPI Keyboard Shortcut Logic
-ms.assetid: cd62380b-1393-403e-b0e6-c52f60c06936
 keywords:
 - ACPI hotkeys WDK display
 ms.date: 04/20/2017

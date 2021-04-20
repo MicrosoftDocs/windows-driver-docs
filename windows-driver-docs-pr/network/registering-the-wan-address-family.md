@@ -1,7 +1,6 @@
 ---
 title: Registering the WAN Address Family
 description: Registering the WAN Address Family
-ms.assetid: 31443e99-24d8-4276-8345-004b0eeb05d7
 keywords:
 - CoNDIS WAN drivers WDK networking , TAPI address family
 - NdisCmRegisterAddressFamilyEx

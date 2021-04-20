@@ -1,7 +1,6 @@
 ---
 title: Introduction to IPsec Offload Version 2
 description: Introduction to IPsec Offload Version 2
-ms.assetid: d8fd0bf8-f7b6-44ad-a3dc-f10bb20ce651
 keywords:
 - IPsecOV2 WDK TCP/IP transport , about IPsecOV2
 ms.date: 04/20/2017

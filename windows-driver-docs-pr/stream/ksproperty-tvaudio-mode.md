@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TVAUDIO\_MODE
 description: The KSPROPERTY\_TVAUDIO\_MODE property sets the audio mode for the device. This property must be implemented.
-ms.assetid: ef2db4b9-307f-4f70-8c9f-1344420c8cba
 keywords: ["KSPROPERTY_TVAUDIO_MODE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Handling a Bug Check When Driver Verifier is Enabled
 description: Driver Verifier detects driver errors at run time. You can use Driver Verifier along with the analyze debugger command to detect and display information about errors in your driver.
-ms.assetid: 4226B62B-0AA5-4D04-A32D-7DD22FD694E3
 keywords: ["Driver Verifier", "Verifier"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -91,7 +90,7 @@ PROCESS_NAME:  TiWorker.exe
 CURRENT_IRQL:  9
 ```
 
-In the preceding output, you can see the name and description of the rule, **IrqlExApcLte1**, that was violated, and you can select a link to the reference page that describes the rule: <https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1>. You can also select a debugger command link, **!ruleinfo 0x20005**, to get information about the rule. In this case, the rule states that you cannot call [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) if the interrupt request level (IRQL) is greater than APC\_LEVEL. The output shows that the current IRQL is 9, and in wdm.h you can see that APC\_LEVEL has a value of 1. For more information about IRQLs, see [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md).
+In the preceding output, you can see the name and description of the rule, **IrqlExApcLte1**, that was violated, and you can select a link to the reference page that describes the rule: [https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1](../devtest/wdm-irqlexapclte1.md). You can also select a debugger command link, **!ruleinfo 0x20005**, to get information about the rule. In this case, the rule states that you cannot call [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) if the interrupt request level (IRQL) is greater than APC\_LEVEL. The output shows that the current IRQL is 9, and in wdm.h you can see that APC\_LEVEL has a value of 1. For more information about IRQLs, see [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md).
 
 The output of [**!analyze -v**](-analyze.md) continues with a stack trace and information about the code that caused the error. In the following output, you can see that the **OnInterrupt** routine in MyDriver.sys called [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)). **OnInterrupt** is an interrupt service routine that runs at an IRQL greater than APC\_LEVEL, so it is a violation for this routine to call [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)).
 
@@ -161,6 +160,4 @@ BUCKET_ID:  0xc4_IrqlExApcLte1_XDV_VRF_MyDriver!OnInterrupt
 
 
 [Static Driver Verifier](../devtest/static-driver-verifier.md)
-
- 
 

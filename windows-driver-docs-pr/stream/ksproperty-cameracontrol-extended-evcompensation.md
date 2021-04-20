@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_EVCOMPENSATION
 description: The EV Compensation property allows adjustment of exposure control by increments of exposure units or by the Zone system.
-ms.assetid: 1109C533-89CA-4A23-BCF9-D44C28C0C6BF
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION Streaming Media Devices"]
 topic_type:
 - apiref

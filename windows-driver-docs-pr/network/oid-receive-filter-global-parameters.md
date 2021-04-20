@@ -1,7 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_GLOBAL_PARAMETERS
 description: Overlying drivers issue OID query requests of OID_RECEIVE_FILTER_GLOBAL_PARAMETERS to obtain the global receive filtering parameters of a network adapter.
-ms.assetid: be6f7210-d1f9-4490-838a-806488df41da
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_GLOBAL_PARAMETERS Network Drivers Starting with Windows Vista

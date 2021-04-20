@@ -1,7 +1,6 @@
 ---
 title: GetScannerElementsResponse element
 description: The required GetScannerElementsResponse element contains the WSD Scan Service's response to a client's request for information about the scanner.
-ms.assetid: da3cded6-6aa9-4fe6-ad02-9a02d2219075
 keywords: ["GetScannerElementsResponse element Imaging Devices"]
 topic_type:
 - apiref

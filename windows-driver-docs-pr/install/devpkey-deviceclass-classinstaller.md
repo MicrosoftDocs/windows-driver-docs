@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_ClassInstaller
 description: DEVPKEY_DeviceClass_ClassInstaller
-ms.assetid: 7bde624e-37e5-4603-bf8c-1122b7090ab2
 keywords: ["DEVPKEY_DeviceClass_ClassInstaller Device and Driver Installation"]
 topic_type:
 - apiref

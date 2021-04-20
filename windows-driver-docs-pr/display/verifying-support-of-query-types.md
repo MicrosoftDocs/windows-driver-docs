@@ -1,7 +1,6 @@
 ---
 title: Verifying Support of Query Types
 description: Verifying Support of Query Types
-ms.assetid: 0f925796-d827-42ba-9232-8f221919e6d4
 keywords:
 - asynchronous query operations WDK DirectX 9.0 , verifying support of query types
 - query operations WDK DirectX 9.0 , verifying support of query types

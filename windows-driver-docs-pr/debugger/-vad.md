@@ -1,7 +1,6 @@
 ---
 title: vad
 description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
-ms.assetid: 96bd5a38-016d-4ce9-b128-cc730577be45
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

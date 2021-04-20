@@ -1,7 +1,6 @@
 ---
 title: Access Mask
 description: Access Mask
-ms.assetid: eb379196-7a10-4d52-8b81-825550ebbbb0
 keywords:
 - security descriptors WDK file systems , access masks
 - descriptors WDK file systems , access masks

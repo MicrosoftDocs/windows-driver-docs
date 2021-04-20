@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Drivers Overview
 description: Windows Driver Model (WDM) audio drivers make use of the kernel streaming (KS) components, which operate in kernel mode and are part of the operating system.
-ms.assetid: 573a9b6d-6c50-40a6-9241-470ab418eb66
 keywords:
 - WDM audio drivers WDK
 - audio drivers WDK , about audio drivers

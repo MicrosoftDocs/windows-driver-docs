@@ -1,7 +1,6 @@
 ---
 title: Connection and File Control Block Management Routines
 description: Connection and File Control Block Management Routines
-ms.assetid: e56c0cba-7352-4964-b067-57bc90c7f911
 keywords:
 - blocks WDK RDBSS
 - data structures WDK file systems

@@ -1,7 +1,6 @@
 ---
 title: messageBoxUI element
 description: The optional messageBoxUI element is used to display a message box on the client computer.
-ms.assetid: 83fe67fe-72b0-42e2-864e-242b7b9989d9
 keywords: ["messageBoxUI element Print Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Tracefmt
 description: Tracefmt
-ms.assetid: abf23d76-423d-4d1e-afde-83739015bbfd
 keywords:
 - Tracefmt WDK
 - software tracing WDK , Tracefmt

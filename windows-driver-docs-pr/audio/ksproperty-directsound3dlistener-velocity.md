@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_VELOCITY
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_VELOCITY property specifies the velocity vector of a 3D listener.
-ms.assetid: 654a8cd1-c8ad-4d65-9d14-7602d269bcff
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_VELOCITY Audio Devices"]
 topic_type:
 - apiref

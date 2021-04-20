@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_NITZ_INFO
 description: Miniport drivers use the NDIS_STATUS_WWAN_NITZ_INFO notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_NITZ Query request.
-ms.assetid: 8AC20FB1-FD2E-46B4-97F7-56EC7AA79740
 ms.date: 04/11/2019
 keywords: 
  -NDIS_STATUS_WWAN_NITZ_INFO Network Drivers Starting with Windows Vista

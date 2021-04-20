@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA
 description: This extended property control is used by the client to query the driver for the metadata buffer requirements.
-ms.assetid: 6196DFF6-050A-4916-A188-70A89B60B5EA
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA Streaming Media Devices"]
 topic_type:
 - apiref

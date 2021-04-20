@@ -1,7 +1,6 @@
 ---
 title: IrqlDispatch rule (storport)
 description: This rule verifies that the following routines are only called at IRQL DISPATCH\_LEVEL.
-ms.assetid: 93ABD54D-4D63-495A-917B-A387C9353969
 ms.date: 05/21/2018
 keywords: ["IrqlDispatch rule (storport)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_LTE_ATTACH_CONFIG
 description: OID_WWAN_LTE_ATTACH_CONFIG enables the operating system to query or set the default LTE attach context of the inserted SIM's provider (MCC/MNC pair).
-ms.assetid: 7E753513-D6A2-4B67-9AED-83A695C39D3C
 ms.date: 08/22/2018
 keywords: 
  -OID_WWAN_LTE_ATTACH_CONFIG Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Writing IRP Dispatch Routines
 description: Writing IRP Dispatch Routines
-ms.assetid: 8ce88932-cba6-4261-a938-d38133c20355
 keywords:
 - filter drivers WDK file system , IRP dispatch routines
 - file system filter drivers WDK , IRP dispatch routines

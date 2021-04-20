@@ -1,7 +1,6 @@
 ---
 title: DualView Advanced Implementation Details
 description: DualView Advanced Implementation Details
-ms.assetid: 07fb7640-d723-4dc0-9403-9f70a75518f1
 keywords:
 - DualView WDK video miniport
 - SingleView WDK video miniport

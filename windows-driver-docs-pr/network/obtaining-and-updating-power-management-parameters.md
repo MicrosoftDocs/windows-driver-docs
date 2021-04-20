@@ -1,7 +1,6 @@
 ---
 title: Obtaining and Updating Power Management Parameters
 description: Obtaining and Updating Power Management Parameters
-ms.assetid: 46c4d2ab-e6d9-4d23-bf40-0037b80b01af
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

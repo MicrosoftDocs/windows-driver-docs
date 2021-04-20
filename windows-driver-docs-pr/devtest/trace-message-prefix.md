@@ -1,7 +1,6 @@
 ---
 title: Trace Message Prefix
 description: Trace Message Prefix
-ms.assetid: ab400174-cc2a-4cb8-9b7b-390af6464a2e
 keywords:
 - Tracefmt WDK , trace message prefix
 - prefix WDK Tracefmt

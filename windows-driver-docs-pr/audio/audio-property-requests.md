@@ -1,7 +1,6 @@
 ---
 title: Audio Property Requests
 description: Audio Property Requests
-ms.assetid: dcfd139c-fca3-4068-8324-aa2c952dbc1f
 keywords:
 - audio properties WDK , requests
 - WDM audio properties WDK , requests

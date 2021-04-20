@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
-ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
 ms.date: 03/24/2019
 topic_type:

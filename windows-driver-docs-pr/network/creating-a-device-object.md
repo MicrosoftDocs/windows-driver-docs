@@ -1,7 +1,6 @@
 ---
 title: Creating a Device Object (Windows Filtering Platform)
 description: Creating a Device Object
-ms.assetid: 9474e080-b2c3-4c1b-af19-bf269d1c94d4
 keywords:
 - Windows Filtering Platform callout drivers WDK , initializing
 - callout drivers WDK Windows Filtering Platform , initializing

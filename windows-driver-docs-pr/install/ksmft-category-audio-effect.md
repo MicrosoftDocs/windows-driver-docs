@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_AUDIO_EFFECT
 description: KSMFT_CATEGORY_AUDIO_EFFECT
-ms.assetid: a6747c99-3c16-4833-905a-52472a854f77
 keywords: ["KSMFT_CATEGORY_AUDIO_EFFECT Device and Driver Installation"]
 topic_type:
 - apiref

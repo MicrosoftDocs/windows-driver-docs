@@ -1,7 +1,6 @@
 ---
 title: Adding Extensible Switch Destination Port Data to a Packet
 description: Adding Extensible Switch Destination Port Data to a Packet
-ms.assetid: C921D9F8-B6FB-4B53-8CC5-CC941720FF37
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

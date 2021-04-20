@@ -1,7 +1,6 @@
 ---
 title: Deleting a NIC Switch
 description: Deleting a NIC Switch
-ms.assetid: BCC6A38B-F25B-483A-B9FF-D6FF73F9B2F3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

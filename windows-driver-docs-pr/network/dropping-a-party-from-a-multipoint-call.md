@@ -1,7 +1,6 @@
 ---
 title: Dropping a Party from a Multipoint Call
 description: Dropping a Party from a Multipoint Call
-ms.assetid: db23e911-7c70-432e-992a-fdfdf8cb28ae
 keywords:
 - parties WDK CoNDIS
 - multipoint calls WDK CoNDIS

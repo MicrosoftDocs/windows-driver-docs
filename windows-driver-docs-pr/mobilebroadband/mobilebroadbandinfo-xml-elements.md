@@ -1,7 +1,6 @@
 ---
 title: MobileBroadbandInfo XML elements list
 description: MobileBroadbandInfo XML elements list
-ms.assetid: 399a0d58-5464-49b2-a6da-8c645016cc1e
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

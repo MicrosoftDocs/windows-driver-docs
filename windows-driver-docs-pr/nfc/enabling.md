@@ -1,7 +1,6 @@
 ---
 title: Enabling NFP
 description: A client can re-enable previously disabled subscriptions, publications, and presence with IOCTL_NFP_ENABLE.
-ms.assetid: 5F5F3C85-6B66-4335-ADA1-E4B6E702FFCB
 keywords:
 - NFC
 - near field communications
@@ -21,5 +20,4 @@ A client can re-enable previously disabled subscriptions, publications, and pres
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

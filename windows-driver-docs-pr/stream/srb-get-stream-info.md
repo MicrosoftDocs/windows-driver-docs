@@ -1,7 +1,6 @@
 ---
 title: SRB\_GET\_STREAM\_INFO
 description: SRB\_GET\_STREAM\_INFO
-ms.assetid: ff5412ee-6e4f-43f4-a90d-4a2bdfa5d4ae
 keywords: ["SRB_GET_STREAM_INFO Streaming Media Devices"]
 topic_type:
 - apiref

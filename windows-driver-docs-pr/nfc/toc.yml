@@ -1,12 +1,12 @@
 - name: "NFC design guide"
   href: index.md
-- name: "What's new in NFC device drivers"
+- name: "NFC device drivers in Windows 10"
   href: what-s-new-in-nfc-device-drivers.md
 - name: "NFC architecture"
   href: nfc-architecture.md
 - name: "Wi-Fi direct pairing implementation"
   href: wi-fi-direct-paring-implementation.md
-- name: "Near Field Proximity design guide"
+- name: "Near Field Proximity (NFP)"
 # Auto-expanded node
   items: 
   - name: "Near Field Proximity design guide"
@@ -14,13 +14,11 @@
   - name: "Tap and Do"
 # Auto-expanded node
     items: 
-    - name: "Tap and Do"
-      href: tap-and-do.md
     - name: "Tap and Do scenarios"
       href: tap-and-do-scenarios.md
     - name: "Tap and Do use cases"
       href: tap-and-do-use-cases.md
-  - name: "NFP provider model"
+  - name: "NFP provider"
 # Auto-expanded node
     items: 
     - name: "NFP provider model"
@@ -39,7 +37,7 @@
       href: proximity-device-presence-events.md
     - name: "NFP-facilitated peripheral wireless device pairing"
       href: nfp-facilitated-peripheral-wireless-device-pairing.md
-  - name: "NFP device driver requirements"
+  - name: "NFP device drivers"
 # Auto-expanded node
     items: 
     - name: "NFP device driver requirements"
@@ -68,11 +66,9 @@
       href: reserved-ioctl-codes.md
     - name: "Power management"
       href: power-management.md
-    - name: "Protocol support"
+    - name: "Protocol support for NFP drivers"
 # Auto-expanded node
       items: 
-      - name: "Protocol support"
-        href: protocol-support.md
       - name: "NDEF protocol"
         href: ndef-protocol.md
       - name: "Pairing:Bluetooth protocol"
@@ -92,7 +88,7 @@
   items: 
   - name: "Smart card design guide"
     href: design-guide-smart-card.md
-  - name: "Functional flow"
+  - name: "Functional flow for Smart Card"
     href: functional-flow.md
   - name: "Example sequence"
     href: example-sequence.md
@@ -105,11 +101,11 @@
 - name: "Power management"
 # Auto-expanded node
   items: 
-  - name: "Power management"
+  - name: "NFC Power management"
     href: nfc-power-management.md
-  - name: "Polling"
+  - name: "NFC Polling"
     href: polling.md
-- name: "NFC class extension (CX) design guide"
+- name: "NFC class extension (CX)"
 # Auto-expanded node
   items: 
   - name: "NFC class extension (CX) design guide"
@@ -128,10 +124,10 @@
     href: nfc-class-extension-interface.md
   - name: "Class extension state machine"
     href: nfc-class-extension-state-machine.md
-  - name: "Extensibility model"
+  - name: "NFC Class Extensibility model"
 # Auto-expanded node
     items: 
-    - name: "Extensibility model"
+    - name: "NFC Class Extensibility model"
       href: extensibility-model.md
     - name: "Sequence handling"
 # Auto-expanded node

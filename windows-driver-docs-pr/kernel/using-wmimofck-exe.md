@@ -1,7 +1,6 @@
 ---
 title: Using Wmimofck.exe
 description: Using Wmimofck.exe
-ms.assetid: cbf735c4-1c0d-4ff3-8a5c-b9d1de84bca4
 keywords: ["WMI WDK kernel , Wmimofck.exe utility", "Wmimofck.exe utility"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

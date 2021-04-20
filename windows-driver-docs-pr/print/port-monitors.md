@@ -1,7 +1,6 @@
 ---
 title: Port Monitors
 description: Port Monitors
-ms.assetid: 4758ebda-f93e-49fb-8605-17cf43194afc
 keywords:
 - print monitors WDK , port monitors
 - port monitors WDK print

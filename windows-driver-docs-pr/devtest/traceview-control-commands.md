@@ -1,7 +1,6 @@
 ---
 title: TraceView Control Commands
 description: Use a Traceview control command to manage trace sessions.
-ms.assetid: 3ebfb728-7ca7-473d-b4bb-a62d1704aed6
 keywords:
 - TraceView Control Commands Driver Development Tools
 topic_type:

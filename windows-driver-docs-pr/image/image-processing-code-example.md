@@ -1,7 +1,6 @@
 ---
 title: Image Processing Code Example
 description: Image Processing Code Example
-ms.assetid: fe5ac3db-46e0-4162-9add-c3b0ae736926
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

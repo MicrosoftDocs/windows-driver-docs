@@ -1,7 +1,6 @@
 ---
 title: Background of Non-PCM Support
 description: Background of Non-PCM Support
-ms.assetid: 4f0e1101-e4cc-4bde-a178-fb47fe24ae4d
 keywords:
 - non-PCM audio formats WDK , DirectSound
 - non-PCM audio formats WDK , waveOut

@@ -1,26 +1,25 @@
 ---
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
-ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
 # Using a Universal INF File
 
-If you are building a [Windows Driver](../develop/getting-started-with-windows-drivers.md) package, you must use a universal INF file. If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
-
-A universal INF file uses a subset of the [INF syntax](./general-syntax-rules-for-inf-files.md) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
-
-## Why is a universal INF file required on non-desktop editions of Windows?
-
-Some editions of Windows, such as Windows 10X, use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a universal INF file.
+Some editions of Windows use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a *universal INF file*.
 
 A universal INF file installs predictably, with the same result each time. The results of the installation do not depend on the runtime behavior of the system. For example, co-installer references are not valid in a universal INF file because code in an additional DLL cannot be executed on an offline system.
 
-As a result, a driver package with a universal INF file can be configured in advance and added to an offline system.
+A driver package with a universal INF file can be configured in advance and added to an offline system.
 
-You can use the [InfVerif](../devtest/infverif.md) tool to test if your driver's INF file is universal.
+To test if your INF is universal, use `infverif /u`.
+ 
+A [Windows Driver](../develop/getting-started-with-windows-drivers.md) must pass `infverif /w`, which tests `/u` as well as [Driver Package Isolation](../develop/driver-isolation.md).
+
+For a list of InfVerif options, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
+
+If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
 
 ## Which INF sections are invalid in a universal INF file?
 

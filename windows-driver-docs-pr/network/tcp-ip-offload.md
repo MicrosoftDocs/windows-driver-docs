@@ -1,7 +1,6 @@
 ---
 title: TCP/IP Offload Overview
 description: TCP/IP Offload Overview
-ms.assetid: 1f074ce5-2614-47a5-9ee0-a5e43f05273d
 keywords:
 - network drivers WDK , TCP/IP offload
 - TCP/IP offload WDK networking

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY
 description: WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY is a TLV that contains an advertised service entry.
-ms.assetid: C9BBA5D4-EC51-4D03-B997-A95B3168E64F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY Network Drivers Starting with Windows Vista

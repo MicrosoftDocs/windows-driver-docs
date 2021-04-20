@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: cdf4d590-c236-4ed7-a071-fd0ddbb78590
 keywords: ["CalcJobETA method Print Devices", "CalcJobETA method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , CalcJobETA method"]
 topic_type:
 - apiref

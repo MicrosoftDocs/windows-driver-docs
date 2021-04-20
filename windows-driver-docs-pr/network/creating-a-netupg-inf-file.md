@@ -1,7 +1,6 @@
 ---
 title: Creating a Netupg.inf File
 description: Creating a Netupg.inf File
-ms.assetid: 8ee000e0-abd1-4a06-9f38-2a7971bc2c97
 keywords:
 - netupg.inf files WDK
 - network component upgrades WDK , customizing

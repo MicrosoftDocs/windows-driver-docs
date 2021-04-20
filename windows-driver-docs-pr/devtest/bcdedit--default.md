@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /default
 description: The **BCDEdit /default** command sets the default entry that the boot manager will use when the timeout expires.
-ms.assetid: f16c1c73-dc47-49bf-9b91-b8aabdd10a53
 ms.date: 09/23/2020
 keywords: ["BCDEdit /default Driver Development Tools"]
 topic_type:

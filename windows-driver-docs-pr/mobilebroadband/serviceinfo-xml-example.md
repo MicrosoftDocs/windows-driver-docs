@@ -1,7 +1,6 @@
 ---
 title: ServiceInfo XML Example
 description: ServiceInfo XML Example
-ms.assetid: b2114044-ca4b-4c1e-ab2e-73f4f56142b5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

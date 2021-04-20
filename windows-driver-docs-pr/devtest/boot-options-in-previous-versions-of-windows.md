@@ -1,7 +1,6 @@
 ---
 title: Boot Options in Previous Versions of Windows
 description: Describes Boot Options in Previous Versions of Windows
-ms.assetid: 3999f950-3325-4003-8d89-9922734b4987
 keywords:
 - boot options Windows
 - Windows 7 

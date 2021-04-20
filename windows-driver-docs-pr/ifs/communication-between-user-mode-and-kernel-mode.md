@@ -1,7 +1,6 @@
 ---
 title: Communication Between User Mode and Kernel Mode
 description: Communication Between User Mode and Kernel Mode
-ms.assetid: ddfec0d0-ec7d-4f76-91b8-2cc34cfacf4e
 keywords:
 - filter manager WDK file system minifilter , communication server ports
 - communication server ports WDK file system minifilter

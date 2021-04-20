@@ -1,7 +1,6 @@
 ---
 title: Installing a filter driver
 description: Describes how to install a filter driver
-ms.assetid: c31aa104-404e-43e3-9215-2671ae6b12c0
 keywords:
 - file system filter drivers WDK, installing
 - file system minifilter drivers WDK , installing

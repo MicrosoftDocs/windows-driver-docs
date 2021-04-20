@@ -1,7 +1,6 @@
 ---
 title: Creating Device Objects in a Function Driver
 description: Creating Device Objects in a Function Driver
-ms.assetid: 3b988f6d-c50e-412d-85cb-031746535ff4
 keywords:
 - PnP WDK KMDF , function drivers
 - Plug and Play WDK KMDF , function drivers

@@ -1,7 +1,6 @@
 ---
 title: Code Example Finish-Install Actions in a Class Installer
 description: Code Example Finish-Install Actions in a Class Installer
-ms.assetid: 394f321c-2ce4-4773-b5df-e30ce23b7207
 keywords:
 - finish-install actions WDK device installations
 - class installers WDK device installations , finish-install actions

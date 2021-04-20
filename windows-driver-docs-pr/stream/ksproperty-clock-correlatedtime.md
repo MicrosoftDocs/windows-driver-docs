@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_CORRELATEDTIME
 description: Clients use the KSPROPERTY\_CLOCK\_CORRELATEDTIME property to compare the current presentation time on a clock to the current system time.
-ms.assetid: 12c377ec-b000-4256-8765-4da46208088d
 keywords: ["KSPROPERTY_CLOCK_CORRELATEDTIME Streaming Media Devices"]
 topic_type:
 - apiref

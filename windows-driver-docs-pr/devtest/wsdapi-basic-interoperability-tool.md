@@ -1,7 +1,6 @@
 ---
 title: WSDAPI Basic Interoperability Tool
 description: WSDAPI Basic Interoperability Tool
-ms.assetid: c4a610d4-3adf-406d-88d6-0879eb98b54f
 keywords:
 - tools WDK , testing drivers
 - WSDBIT tool WDK

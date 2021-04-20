@@ -1,7 +1,6 @@
 ---
 title: Implementing Image Color Management
 description: Implementing Image Color Management
-ms.assetid: b3184a8b-4f32-4cb0-8f68-777d85110142
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Impact of Network Interface Changes on IPsec Offloads
 description: Impact of Network Interface Changes on IPsec Offloads
-ms.assetid: 7d1b2bf9-31a9-4fc4-92f3-dc7b5e0277e3
 keywords:
 - ESP-protected packets WDK IPsec offload , routing interface changed
 - AH-protected packets WDK IPsec offload , routing interface changed

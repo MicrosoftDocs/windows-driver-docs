@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans Web Portal
 description: This topic describes the implementation step for the Mobile Plans program.
-ms.assetid: 283E45EF-D421-429B-A9AF-BED64BB670B0
 keywords:
 - Windows Mobile Plans Web Portal, Mobile Plans implementation mobile operators
 ms.date: 03/25/2019

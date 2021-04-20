@@ -1,7 +1,6 @@
 ---
 title: Using Registry Values to Enable and Disable Connection Offloading
 description: Using Registry Values to Enable and Disable Connection Offloading
-ms.assetid: dd5d1e8a-0c6f-40d2-8a33-4d6fc70c17d5
 keywords:
 - connection offload WDK TCP/IP transport , registry values
 - registry WDK TCP/IP offload

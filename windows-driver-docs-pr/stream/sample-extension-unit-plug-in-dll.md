@@ -1,7 +1,6 @@
 ---
 title: Sample Extension Unit Plug-in DLL
 description: Sample extension unit plug-in DLL
-ms.assetid: bd9ea70d-7bd0-494d-8d67-7a36a41d005b
 keywords:
 - plug-in DLL WDK USB Video Class
 - extension units WDK USB Video Class , samples, plug-in DLL

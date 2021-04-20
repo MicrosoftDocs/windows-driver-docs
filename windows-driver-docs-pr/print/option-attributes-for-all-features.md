@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for All Features
 description: Option Attributes for All Features
-ms.assetid: 0d269fdf-f4a1-431a-9f07-044289b9f0fa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Accessing Symbols for Debugging
 description: Accessing Symbols for Debugging
-ms.assetid: a0f52dc3-6903-4d63-b74c-5c16960a7cb6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

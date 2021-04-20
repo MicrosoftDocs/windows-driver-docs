@@ -1,7 +1,6 @@
 ---
 title: Error Source Control
 description: Error Source Control
-ms.assetid: f73d9006-a7e7-4a0d-9654-004f53286743
 keywords:
 - Windows Hardware Error Architecture WDK , error source control
 - WHEA WDK , error source control

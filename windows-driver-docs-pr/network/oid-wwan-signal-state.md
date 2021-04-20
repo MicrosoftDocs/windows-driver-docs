@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SIGNAL_STATE
 description: OID_WWAN_SIGNAL_STATE returns or sets the current signal state.
-ms.assetid: 6f5d8fd6-b4cf-4058-a27e-d4f7cea19f47
 ms.date: 04/05/2019
 keywords: 
  -OID_WWAN_SIGNAL_STATE Network Drivers Starting with Windows Vista
@@ -74,7 +73,7 @@ Miniport drivers can return this for specific devices that are aware of device c
 
 Starting in Windows 10, version 1903, OID_WWAN_SIGNAL_STATE has been upgraded to revision 3. This revision enables the host to query new reference signal received power (RSRP) and Signal-to-Noise (SNR) values from the miniport driver. A miniport driver must use revision 3 of this OID and its data structures if the driver supports 5G.
 
-For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
+For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
 Requirements
 ------------
@@ -102,6 +101,4 @@ Requirements
 [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_signal_indication)
 
 [WWAN Signal Strength Operations](./mb-signal-strength-operations.md)
-
- 
 

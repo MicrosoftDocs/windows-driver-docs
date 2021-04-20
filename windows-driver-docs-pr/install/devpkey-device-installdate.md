@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_InstallDate
 description: DEVPKEY_Device_InstallDate
-ms.assetid: 16b26112-1081-40f0-b65b-aafa200aa2eb
 keywords: ["DEVPKEY_Device_InstallDate Device and Driver Installation"]
 topic_type:
 - apiref

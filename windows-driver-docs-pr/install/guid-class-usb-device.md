@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_USB_DEVICE
 description: GUID_CLASS_USB_DEVICE
-ms.assetid: e014f3d5-541d-4e86-a572-b110ec5a822d
 keywords: ["GUID_CLASS_USB_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref

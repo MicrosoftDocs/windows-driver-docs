@@ -1,7 +1,6 @@
 ---
 title: Removing Network Components
 description: Removing Network Components
-ms.assetid: db1928ff-7570-411c-b770-274428a0d432
 keywords:
 - notify objects WDK networking , removing network components
 - network notify objects WDK , removing network components

@@ -1,7 +1,6 @@
 ---
 title: k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 description: The k* commands display the stack frame of the given thread, together with related information.
-ms.assetid: 1061015f-cb0c-490b-b256-e0dedb659f22
 keywords: ["k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

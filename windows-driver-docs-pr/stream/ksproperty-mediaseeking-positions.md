@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_POSITIONS
 description: The KSPROPERTY\_MEDIASEEKING\_POSITIONS property sets the media time and/or the stop time on a filter.
-ms.assetid: 20f0e97a-37bb-4c01-8012-b73bb765f4b9
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITIONS Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Evaluate HVCI driver compatibility
 description: Follow these steps to use to evaluate HVCI driver compatibility of your driver code.
-ms.assetid: 
 ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---

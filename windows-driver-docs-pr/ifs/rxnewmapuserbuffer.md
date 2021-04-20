@@ -1,7 +1,6 @@
 ---
 title: RxNewMapUserBuffer function
 description: RxNewMapUserBuffer returns the user buffer address used for low I/O.
-ms.assetid: 90ab7793-55ed-47f7-b55d-f4205488796c
 keywords: ["RxNewMapUserBuffer function Installable File System Drivers"]
 topic_type:
 - apiref

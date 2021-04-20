@@ -1,7 +1,6 @@
 ---
 title: Incoming Request to Drop a Party from a Multipoint Call
 description: Incoming Request to Drop a Party from a Multipoint Call
-ms.assetid: 3345f6f6-339f-4349-97fd-9ca9d5b2d241
 keywords:
 - parties WDK CoNDIS
 - multipoint calls WDK CoNDIS

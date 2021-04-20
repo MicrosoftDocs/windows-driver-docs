@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID
 description: The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the pin identifier of the source pin for a particular node.
-ms.assetid: 7616e834-462c-4e2c-8a4f-ec20db042e3b
 keywords: ["KSPROPERTY_SELECTOR_SOURCE_NODE_ID Streaming Media Devices"]
 topic_type:
 - apiref

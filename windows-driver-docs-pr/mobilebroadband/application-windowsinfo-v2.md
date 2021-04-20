@@ -1,7 +1,6 @@
 ---
 title: Application (WindowsInfo)
 description: Application (WindowsInfo)
-ms.assetid: e76ede51-e494-47b4-b30a-e354799f66e7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

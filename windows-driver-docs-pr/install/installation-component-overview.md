@@ -1,7 +1,6 @@
 ---
 title: Installation Component Overview
 description: Installation Component Overview
-ms.assetid: 29d14a3a-e89a-47ef-bd36-ee3cdcde2cd7
 keywords:
 - driver packages WDK , installation components
 - packages WDK , installation components

@@ -1,7 +1,6 @@
 ---
 title: Retrieving Network Configuration Interface Pointers
 description: Retrieving Network Configuration Interface Pointers
-ms.assetid: ac3638a1-d039-478e-baec-c73d4d1b6751
 keywords:
 - notify objects WDK networking , interface pointers
 - network notify objects WDK , interface pointers

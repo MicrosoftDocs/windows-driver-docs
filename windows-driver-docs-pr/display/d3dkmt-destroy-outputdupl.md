@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_DESTROY\_OUTPUTDUPL structure
 description: Learn about the D3DKMT\_DESTROY\_OUTPUTDUPL structure, which is reserved for system use. Do not use in your driver.
-ms.assetid: ced3face-7f07-459f-8644-0062cd5db805
 keywords: ["D3DKMT_DESTROY_OUTPUTDUPL structure Display Devices"]
 topic_type:
 - apiref

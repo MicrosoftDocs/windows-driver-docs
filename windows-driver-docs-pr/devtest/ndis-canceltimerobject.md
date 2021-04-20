@@ -1,7 +1,6 @@
 ---
 title: CancelTimerObject rule (ndis)
 description: The CancelTimerObject rule specifies that NdisSetTimerObject and NdisCancelTimerObject are called in alternate order. The ultimate goal is to make sure all timers are cancelled when MiniportHaltEx ends.
-ms.assetid: F31AF8D2-4F40-43A3-893E-53FCC2299730
 ms.date: 05/21/2018
 keywords: ["CancelTimerObject rule (ndis)"]
 topic_type:

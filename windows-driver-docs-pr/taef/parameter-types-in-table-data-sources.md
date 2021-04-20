@@ -1,7 +1,6 @@
 ---
 title: Parameter Types in Table Data Sources
 description: Parameter Types in Table Data Sources
-ms.assetid: 034F171E-716F-4795-9B07-46A109052227
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

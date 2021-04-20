@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY
 description: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY is a TLV that contains an ASP2 Advertised Service Entry.
-ms.assetid: CF7ED750-1987-4784-9E61-516EBBA22B9B
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY Network Drivers Starting with Windows Vista

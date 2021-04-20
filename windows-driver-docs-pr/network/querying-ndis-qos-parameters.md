@@ -1,7 +1,6 @@
 ---
 title: Querying NDIS QoS Parameters
 description: Querying NDIS QoS Parameters
-ms.assetid: 875D39BA-D70D-4450-9F64-D08EAB54BDC2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

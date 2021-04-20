@@ -1,7 +1,6 @@
 ---
 title: eulaNoButton XML Element
 description: eulaNoButton XML Element
-ms.assetid: d3e47943-10c6-4a87-b39e-d13fc49aadd4
 keywords: ["eulaNoButton XML Element Device and Driver Installation"]
 topic_type:
 - apiref

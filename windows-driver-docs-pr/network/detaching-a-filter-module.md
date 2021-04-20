@@ -1,7 +1,6 @@
 ---
 title: Detaching a Filter Module
 description: Detaching a Filter Module
-ms.assetid: ef987f2f-a681-4ddb-959a-1becdf633678
 keywords:
 - filter modules WDK networking , detaching
 - detaching filter modules

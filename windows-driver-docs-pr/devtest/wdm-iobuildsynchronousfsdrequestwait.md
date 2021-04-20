@@ -1,7 +1,6 @@
 ---
 title: IoBuildSynchronousFsdRequestWait rule (wdm)
 description: The IoBuildSynchronousFsdRequestWait rule specifies that KeWaitForSingleObject should be called in the case that IoCallDriver or PoCallDriver returns STATUS\_PENDING.
-ms.assetid: 99C717B3-1125-4DD9-81A8-1DC4F506B719
 ms.date: 05/21/2018
 keywords: ["IoBuildSynchronousFsdRequestWait rule (wdm)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Framework Object Methods
 description: Framework Object Methods
-ms.assetid: f82275c5-15f9-43f5-91bb-b83446526c28
 keywords:
 - framework objects WDK KMDF , methods
 ms.date: 04/20/2017
