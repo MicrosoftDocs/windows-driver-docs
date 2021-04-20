@@ -17,10 +17,10 @@ Documentation updated to WDI version 1.1.9.
 | [WDI message structure](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-wi-fi-messages#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
 | [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV. |
 | [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly Added TLV. |
+| [WDI_TLV_KCK_CONTENT](wdi-tlv-kck-content.md) | Newly Added TLV. |
 | [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly Added TLV. |
 | [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly Added TLV. |
 | [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly Added TLV. |
-| [WDI_TLV_KCK_CONTENT](wdl-tlv-kck-content.md) | Newly Added TLV. |
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly Added TLV type. |
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly Added TLV type. |
 | [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
