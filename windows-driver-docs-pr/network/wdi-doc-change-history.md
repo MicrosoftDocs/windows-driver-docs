@@ -13,30 +13,29 @@ ms.custom: 2004
 Documentation updated to WDI version 1.1.9.
 
 | Topic | Description |
-| --- | --- |
-| [WDI message structure](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-wi-fi-messages#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
-| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV. |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly Added TLV. |
-| [WDI_TLV_KCK_CONTENT](wdi-tlv-kck-content.md) | Newly Added TLV. |
-| [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly Added TLV. |
-| [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly Added TLV. |
-| [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly Added TLV. |
-| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly Added TLV type. |
-| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly Added TLV type. |
-| [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
-| [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
-| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | **Host-WPA3-FIPS** mode added |
-| [WDI_TASK_REQUEST_FTM](/windows-hardware/drivers/network/oid-wdi-task-request-ftm | **ScanTrigger** enum value added</br></br>Description updated for LE with BSS list cache |
-| [WDI_TLV_FTM_RESPONSE](/windows-hardware/drivers/network/wdi-tlv-ftm-response) | **BandwidthUsed** field added</br></br>**PropegationProperty** field added</br></br>**RTT** field changed to signed integer |
+| ----- | ----------- |
+| [WDI message structure](wdi-wi-fi-messages.md#tlvs) | Modified TLV structure and aggregate container to allow for variable-size KCK/KEK |
 | [WDI_AUTH_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added new WDI_AUTH_ALGORITHM **WDI_AUTH_ALGO_OWE** |
 | [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | **WDI_CIPHER_ALGO_GCMP_256** new cipher added</br></br>**WDI_CIPHER_ALGO_BIP_GMAC_256** new cipher added |
+| [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) |
+| [WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | **ScanTrigger** enum value added</br></br>Description updated for LE with BSS list cache |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly added TLV. |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV. |
+| [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
+| [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | **BandwidthUsed** field added</br></br>**PropegationProperty** field added</br></br>**RTT** field changed to signed integer |
+| [WDI_TLV_KCK_CONTENT](wdi-tlv-kck-content.md) | Newly added TLV. |
+| [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly added TLV. |
+| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly added TLV type. |
+| [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly added TLV. |
+| [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly added TLV. |
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | **Host-WPA3-FIPS** mode added |
 
 ## Windows 10, version 1903
 
 Documentation updated to WDI version 1.1.8.
 
 | Topic | Description |
-| --- | --- |
+| ----- | ----------- |
 | [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | Added support for the driver to indicate support for Fine Timing Measurement (FTM). |
 | [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | Newly added task OID that enables WDI to request that the adapter initiate FTM procedures to obtain roundtrip time (RTT) and the Location Configuration Information (LCI) report from BSS targets. |
 | [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md) | Newly added TLV for FTM request. |
@@ -80,7 +79,7 @@ Documentation updated to WDI version 1.1.8.
 Documentation updated to WDI version 1.1.7.
 
 | Topic | Description |
-| --- | --- |
+| ----- | ----------- |
 | [**WDI_PHY_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type) | Added support for 802.11ax PHY. |
 | [**WDI_CONNECTION_QUALITY_HINT**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_connection_quality_hint) | Changed the name of the **WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY** value to **WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT**. No change to the description of this value. |
 | [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) | Added support for unsolicited device service notifications. |
@@ -90,7 +89,7 @@ Documentation updated to WDI version 1.1.7.
 Documentation updated to WDI version 1.1.6.
 
 | Topic | Description |
-| --- | --- |
+| ----- | ----------- |
 | [**WDI_TLV_OS_POWER_MANAGEMENT_FEATURES**](wdi-tlv-os-power-management-features.md) | Added this TLV to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md) to indicate which OS power management (PM) features that the driver supports. |
 | [**WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY**](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) | Updated this TLV to specify that drivers must now return GTK/iGTK key info, if configured, when queried in [OID_WDI_GET_PM_PROTOCOL_OFFLOAD](oid-wdi-get-pm-protocol-offload.md). |
 | [NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED](ndis-status-wdi-indication-cipher-key-updated.md) | Added this indication for drivers to provide notifications of GTK/iGTK key updates when the keys are updated, while the driver is not in the Offload state. |
@@ -101,7 +100,7 @@ Documentation updated to WDI version 1.1.6.
 Documentation updated to WDI version 1.1.5.
 
 | Topic | Description |
-| --- | --- |
+| ----- | ----------- |
 | [WDI_TLV_TCP_OFFLOAD_CAPABILITIES](wdi-tlv-tcp-offload-capabilities.md) | Added new [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md) parameter to indicate whether offloads specified apply to the STA port only or to all ports. |
 | [NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE](ndis-status-wdi-indication-send-ap-association-response-complete.md) | Changed the [**WDI\_TLV\_PHY\_TYPE\_LIST**](wdi-tlv-phy-type-list.md) parameter to make it required. |
 | [User-initiated feedback with IHV trace logging](user-initiated-feedback-with-ihv-trace-logging.md) | Added a new section describing how to add IHV logging to user-initiated feedback scenarios. |
