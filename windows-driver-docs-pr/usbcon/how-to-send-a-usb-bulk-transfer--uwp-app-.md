@@ -225,8 +225,11 @@ This code example shows how to read from a bulk pipe. The example retrieves data
 
             IBuffer buffer = reader.ReadBuffer(bytesRead);
 
-            ShowData (buffer.ToString());
-
+            using (var dataReader = Windows.Storage.Streams.DataReader.FromBuffer(buffer))
+            {
+                dataReader.UnicodeEncoding = Windows.Storage.Streams.UnicodeEncoding.Utf8;
+                ShowData(dataReader.ReadString(buffer.Length));
+            }
         }
     }
 ```
