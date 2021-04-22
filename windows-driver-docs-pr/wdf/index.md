@@ -10,25 +10,28 @@ keywords:
 - framework-based drivers WDK KMDF , about framework-based drivers
 - objects WDK KMDF
 - framework objects WDK KMDF
-ms.date: 10/02/2018
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.custom: 19H1
 ---
 
 # What's New for WDF Drivers in Windows 10
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1903 (March 2019 Update, 19H1) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
+Windows Server 2022 includes Kernel-Mode Driver Framework (KMDF) version 1.33 and User-Mode Driver Framework (UMDF) version 2.33.
 
 You can use these framework versions to build drivers for:
 
 -   Windows 10 (all SKUs)
--   Windows Server, version 1809
+-   Windows Server 2022
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
+
+## New in WDF for Windows Server 2022
+
+See [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
 ## New in WDF for Windows 10, version 2004
 
