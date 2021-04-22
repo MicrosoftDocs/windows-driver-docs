@@ -1,7 +1,7 @@
 ---
 description: Learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.
 title: How to send a USB bulk transfer request (UWP app)
-ms.date: 04/20/2017
+ms.date: 04/22/2021
 ms.localizationpriority: medium
 ---
 
@@ -225,8 +225,11 @@ This code example shows how to read from a bulk pipe. The example retrieves data
 
             IBuffer buffer = reader.ReadBuffer(bytesRead);
 
-            ShowData (buffer.ToString());
-
+            using (var dataReader = Windows.Storage.Streams.DataReader.FromBuffer(buffer))
+            {
+                dataReader.UnicodeEncoding = Windows.Storage.Streams.UnicodeEncoding.Utf8;
+                ShowData(dataReader.ReadString(buffer.Length));
+            }
         }
     }
 ```
