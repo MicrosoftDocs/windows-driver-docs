@@ -15,10 +15,10 @@ Documentation updated to WDI version 1.1.9.
 | Topic | Description |
 | ----- | ----------- |
 | [WDI message structure](wdi-wi-fi-messages.md#tlvs) | Modified TLV structure and aggregate container to allow for variable-size KCK/KEK |
+| [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | **ScanTrigger** enum value added</br></br>Description updated for LE with BSS list cache |
 | [WDI_AUTH_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added new WDI_AUTH_ALGORITHM **WDI_AUTH_ALGO_OWE** |
 | [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | **WDI_CIPHER_ALGO_GCMP_256** new cipher added</br></br>**WDI_CIPHER_ALGO_BIP_GMAC_256** new cipher added |
-| [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) |
-| [WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | **ScanTrigger** enum value added</br></br>Description updated for LE with BSS list cache |
+| [WDI_TLV_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
 | [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly added TLV. |
 | [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV. |
 | [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |

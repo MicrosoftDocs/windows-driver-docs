@@ -3268,6 +3268,10 @@
         href: wdi-tlv-ipv6-checksum-offload.md
       - name: "WDI_TLV_IPV6_LSO_V2"
         href: wdi-tlv-ipv6-lso-v2.md
+      - name: "WDI_TLV_KCK_CONTENT"
+        href: wdi-tlv-kck-content.md
+      - name: "WDI_TLV_KEK_CONTENT"
+        href: wdi-tlv-kek-content.md
       - name: "WDI_TLV_LCI_REPORT_BODY"
         href: wdi-tlv-lci-report-body.md
       - name: "WDI_TLV_LCI_REPORT_STATUS"
