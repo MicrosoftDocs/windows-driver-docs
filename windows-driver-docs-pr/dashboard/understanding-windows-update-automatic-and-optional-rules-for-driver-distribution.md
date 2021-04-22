@@ -66,8 +66,8 @@ The following table summarizes the information above. Windows Update is abbrevia
 |Driver delivery options|OS upgrades|Connecting new device|Device Manager|WU scan|WU Optional updates page|
 |-|-|-|-|-|-|
 |Automatic (both checkboxes)|Yes|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
-|Automatic (to all applicable systems)|No|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
-|Automatic (during Windows Upgrades)|Yes|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Only if the local driver is generic or missing|No|
+|Automatic (to all applicable systems)|Yes|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
+|Automatic (during Windows Upgrades)|Yes|No|Only in Windows 10, version 1909 and earlier|No|Yes|
 |Manual in Windows 10, version 1909 and earlier|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|N/A|
 |Manual in Windows 10, version 2004 and later|No|No|No|No|Yes|
 
