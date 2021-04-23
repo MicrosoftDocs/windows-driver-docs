@@ -5,9 +5,8 @@ keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.date: 04/28/2020
+ms.date: 04/22/2021
 ms.localizationpriority: medium
-ms.custom: 19H1
 ---
 
 # KMDF Version History
@@ -19,6 +18,7 @@ The following table shows the release history of the KMDF library:
 
 |KMDF version|Release method|Included in this version of Windows|Drivers using it run on|
 |--- |--- |--- |--- |
+|1.33|WDK for Windows Server 2022|Windows Server 2022 (Iron)|Windows Server 2022 and later|
 |1.31|Windows 10, version 2004 WDK|Windows 10, version 2004 (May 2020 Update, Vibranium)|Windows 10, version 2004 and later|
 |1.29|Not released in WDK|Windows 10, version 1903 (March 2019 Update, 19H1)|Windows 10, version 1903 and later|
 |1.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
@@ -36,13 +36,18 @@ The following table shows the release history of the KMDF library:
 |1.1|Download only|None|Windows 2000 and later|
 |1.0|Download only|None|Windows XP and later|
 
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2019 to build drivers that run on Windows 10 and later.
 
 For help determining what version of WDF to use, see [Which framework version should I use?](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
 
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/).
 
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+
+## KMDF Version 1.33
+
+* For devices that specify **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE](/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type) enumeration, when calling the [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) macro with *WaitForD0* set to **FALSE**, if the device is still in D0 and the idle timeout period has not yet elapsed, **WdfDeviceStopIdle** returns STATUS_SUCCESS (in previous versions this resulted in a return value of STATUS_PENDING).
+* [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure has two new members (**PoFxDeviceFlags** and **DirectedPoFxEnabled**).
 
 ## KMDF Version 1.31
 
