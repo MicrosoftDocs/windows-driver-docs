@@ -16,7 +16,7 @@ keywords:
 - Kernel Streaming Development Studio WDK AVStream
 - MultiChannel Streaming Tool WDK AVStream
 - USB Video Class descriptor viewer WDK AVStream
-ms.date: 06/16/2020
+ms.date: 04/23/2021
 ms.localizationpriority: medium
 ---
 
@@ -36,11 +36,11 @@ GraphEdt binaries are provided for x86-based and x64-based architectures. GraphE
 
 *KsStudio.exe* (Kernel Streaming Development Studio) is a development tool used to examine multimedia driver properties, pins, and supported media.
 
-The Windows 7 WDK includes KsStudio binaries for the x86-based and x64-based architectures. Additionally, there is a version for Windows XP and Windows 2003 Server in the XP folder (for both x86 and x64). For Windows 7, the binaries are *KsStudio.exe* (the application), *KsStudio.chm* (the help documentation), and *KsMon.sys* (a helper device driver). For XP and Windows 2003 Server, there is also S*ndAnlyz.dll* (a helper file).
+The Windows WDK includes KsStudio binaries for the x86-based and x64-based architectures. For Windows, the binaries are *KsStudio.exe* (the application), and *KsMon.sys* (a helper device driver). 
 
 KsStudio is a kernel development tool, and therefore should be used carefully. *KsStudio.exe* must write a summary log to the starting directory, which must have write access for the user. KsStudio attempts to load its helper driver *KsMon.sys*. This loading is optional and will only succeed if *KsMon.sys* is in the starting directory and the command is run at elevated privilege level. Typically, KsStudio will present a dialog box titled "KS Studio Filter Options," which allows the user to specify parameters, the most important of which are the Classes to enumerate. Use the **Classes** button on that dialog box to select none, any, or all classes.
 
-This is a complex, yet elegant, and very handy development tool for multimedia device authors. For more information, refer to the *KsStudio.chm* help file.
+For more information, see [KsStudio Utility](/windows-hardware/drivers/audio/ksstudio-utility).
 
 ## USBView
 
