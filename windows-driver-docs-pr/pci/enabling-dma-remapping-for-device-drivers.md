@@ -47,7 +47,7 @@ Use the latest Windows 10 build with VT-d/AMD-Vi enabled to test driver function
 
 ## Validating that DMA remapping is enabled for a specific device driver instance
 
-To check if a specific driver has opted into DMA remapping, look in Device Manager, in the device's **Details** tab, for the values corresponding to the DMA remapping policy property. A driver can query the [**DEVPKEY_Device_DmaRemappingPolicy**](../install/devpkey-device-dmaremappingpolicy.md) property to determine if the driver has opted into remapping. This property returns 1 to indicate opt out and 2 to indicate opt in. Note that these return values are not the same as the values for **DmaRemappingCompatible** listed in the previous section.
+To check if a specific driver has opted into DMA remapping, look in Device Manager, in the device's **Details** tab, for the values corresponding to the DMA remapping policy property. A driver can query the [**DEVPKEY_Device_DmaRemappingPolicy**](../install/devpkey-device-dmaremappingpolicy.md) property to determine the DMA remapping capability of the device. See potential return values on that page, and note that these return values are not the same as the values for **DmaRemappingCompatible** listed in the previous section.
 
 ![Device Manager Details Tab](images/device-details-tab-1903.png)
 
