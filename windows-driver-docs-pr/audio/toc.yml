@@ -43,8 +43,21 @@
       href: wdm-audio-terminology.md
     - name: "Sample Audio Drivers"
       href: sample-audio-drivers.md
+  - name: "KsStudio Utility"
+# Auto-expanded node
+    items: 
     - name: "KsStudio Utility"
       href: ksstudio-utility.md
+    - name: "KsStudio Utility - Filters and Filter Factories"
+      href: ksstudio-utility-filters-and-filter-factories.md
+    - name: "KsStudio Utility - Pins and Nodes "
+      href: ksstudio-utility-pins-and-nodes.md
+    - name: "KsStudio Utility - KSProperties and Events"
+      href: ksstudio-utility-ksproperties-and-events.md
+    - name: "KsStudio Utility - KS Monitor"
+      href: ksstudio-utility-ks-monitor.md
+    - name: "KsStudio Utility - Usage Examples"
+      href: ksstudio-utility-usage-examples.md
   - name: "Audio Filters, Pins, and Nodes"
 # Auto-expanded node
     items: 
