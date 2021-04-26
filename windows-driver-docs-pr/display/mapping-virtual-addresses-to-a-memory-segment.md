@@ -1,7 +1,6 @@
 ---
 title: Mapping Virtual Addresses to a Memory Segment
 description: Mapping Virtual Addresses to a Memory Segment
-ms.assetid: 3ff64e33-eceb-4603-a3d9-11cb2f7dac85
 keywords:
 - memory segments WDK display , mapping virtual addresses
 - mapping virtual addresses

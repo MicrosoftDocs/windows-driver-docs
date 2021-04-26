@@ -1,7 +1,6 @@
 ---
 title: Power management considerations for gigabit Ethernet net adapters
 description: Power Management Considerations for Gigabit Ethernet Network Adapters
-ms.assetid: f195d295-0a2a-4c44-a3b4-217dfad76826
 keywords:
 - power management WDK networking , gigabit Ethernet NICs
 - network interface cards WDK networking , transitioning power states

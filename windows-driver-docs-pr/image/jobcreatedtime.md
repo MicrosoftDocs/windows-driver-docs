@@ -1,7 +1,6 @@
 ---
 title: JobCreatedTime element
 description: The optional JobCreatedTime element specifies the time at which the job was created.
-ms.assetid: 34107c3a-d02a-4b86-be1e-cd91e2887479
 keywords: ["JobCreatedTime element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: General Syntax Rules for INF Files
 description: General Syntax Rules for INF Files
-ms.assetid: ba11a229-d0d3-4217-bcf8-9aada2f159aa
 keywords:
 - INF files WDK device installations , general syntax rules
 - INF files WDK device installations , sections

@@ -1,7 +1,6 @@
 ---
 title: Halting a VF Miniport Driver
 description: Halting a VF Miniport Driver
-ms.assetid: 707CE182-E2A7-4703-9A6B-1058194F9414
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

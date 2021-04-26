@@ -1,7 +1,6 @@
 ---
 title: Wave Filters
 description: Wave Filters
-ms.assetid: 9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b
 keywords:
 - audio filters WDK audio , wave
 - wave filters WDK audio
@@ -27,7 +26,7 @@ ms.localizationpriority: medium
 ## <span id="wave_filters"></span><span id="WAVE_FILTERS"></span>
 
 
-Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
+Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
 
 A *wave-rendering* filter receives as input a wave digital audio stream and outputs either an analog audio signal (to a set of speakers or external mixer) or a digital audio stream (to an S/PDIF connector, for example).
 
@@ -103,7 +102,7 @@ For more information, see [Implementation Issues for WavePci Devices](implementa
 ### <span id="wavecyclic_filter"></span><span id="WAVECYCLIC_FILTER"></span>WaveCyclic Filters
 
 > [!NOTE]
-> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's Style Guide for Bias-Free Communications recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the [Microsoft style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
 
 **Note: WaveCyclic Information for previous versions of Windows**
 
@@ -131,7 +130,7 @@ A WaveCyclic miniport driver can implement its own DMA-channel object instead of
 
 The adapter driver's custom [IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) implementation can perform custom handling of data to meet special hardware constraints. For example, the Windows Multimedia functions use wave formats in which 16-bit samples are always signed values, but the audio-rendering hardware might be designed to use unsigned 16-bit values instead. In this case, the driver's custom [**IDmaChannel::CopyTo**](/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyto) method can be written to convert the signed source values to the unsigned destination values that the hardware requires. Although this technique can be useful for working around hardware-design flaws, it can also incur a significant cost in software overhead.
 
-For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
+For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in earlier versions of the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
 
  
 

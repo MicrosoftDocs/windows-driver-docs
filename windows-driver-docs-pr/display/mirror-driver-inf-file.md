@@ -1,7 +1,6 @@
 ---
 title: Mirror Driver INF File
 description: Mirror Driver INF File
-ms.assetid: ee42cb92-7630-4b5e-912c-88c12e54349b
 keywords:
 - display drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
@@ -21,4 +20,4 @@ ms.localizationpriority: medium
 
 Use the *Mirror.inf* sample mirror driver INF file as a template for constructing your own mirror driver INF file.
 
-For more information, see [Installing a Boot Driver](../install/installing-a-boot-start-driver.md) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+For more information, see [Installing a Boot Driver](../install/installing-a-boot-start-driver.md) and [INF File Sections and Directives](../install/index.md).

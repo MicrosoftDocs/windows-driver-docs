@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_ACQUIRE
 description: AVC\_FUNCTION\_ACQUIRE
-ms.assetid: c250d800-1777-44c0-8902-09017eb46c78
 keywords: ["AVC_FUNCTION_ACQUIRE Streaming Media Devices"]
 topic_type:
 - apiref

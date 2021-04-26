@@ -1,7 +1,6 @@
 ---
 title: CcSetReadAheadGranularityEx routine
 description: The CcSetReadAheadGranularityEx routine sets the read-ahead granularity and enables pipelined read-ahead for a cached file.
-ms.assetid: D70C3397-CF37-46E5-BA84-819BC984665A
 keywords: ["CcSetReadAheadGranularityEx routine Installable File System Drivers"]
 topic_type:
 - apiref

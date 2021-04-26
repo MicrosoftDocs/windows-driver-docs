@@ -1,7 +1,6 @@
 ---
 title: DXVA\_DeinterlaceBobDeviceClass DeinterlaceBltEx method
 description: The sample DeinterlaceBltEx function performs deinterlace or frame-rate conversion, combines the deinterlaced or frame-rate converted video with supplied video substreams, and writes the combined output to a destination surface.
-ms.assetid: 12a0e467-54f8-4cca-8ec0-aa8d04480ab6
 keywords: ["DeinterlaceBltEx method Display Devices", "DeinterlaceBltEx method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceBltEx method"]
 topic_type:
 - apiref
@@ -13,8 +12,7 @@ ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
 
-# DXVA\_DeinterlaceBobDeviceClass::DeinterlaceBltEx method
-
+# DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx method
 
 The sample **DeinterlaceBltEx** function performs deinterlace or frame-rate conversion, combines the deinterlaced or frame-rate converted video with supplied video substreams, and writes the combined output to a destination surface.
 
@@ -44,7 +42,7 @@ Supplies the location of the output frame within the sequence of input frames. I
 If a frame-rate conversion is requested, the *rtTargetFrame* time might be different from any of the **rtStart** times or midpoint times of the samples.
 
 *lprcTargetRect* \[in\]
-Supplies a pointer to a [**RECT**](/windows/desktop/api/windef/ns-windef-tagrect) structure that describes the location within the destination surface to which **DeinterlaceBltEx** must write. The driver uses *lprcTargetRect* to determine which pixels to write to. Note that the output image is restricted to the pixels within the rectangle at *lprcTargetRect*. That is, every pixel within the rectangle at *lprcTargetRect* must be written to, and pixels outside the rectangle at *lprcTargetRect* must not be modified.
+Supplies a pointer to a [**RECT**](/windows/win32/api/windef/ns-windef-rect) structure that describes the location within the destination surface to which **DeinterlaceBltEx** must write. The driver uses *lprcTargetRect* to determine which pixels to write to. Note that the output image is restricted to the pixels within the rectangle at *lprcTargetRect*. That is, every pixel within the rectangle at *lprcTargetRect* must be written to, and pixels outside the rectangle at *lprcTargetRect* must not be modified.
 
 *BackgroundColor* \[in\]
 Supplies a [**DXVA\_AYUVsample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_ayuvsample2) structure that identifies the color and opacity level of the background upon which all video stream and substreams are composed. For Microsoft Windows Server 2003 SP1 and Windows XP SP2, the opacity level is not used and should be ignored by the driver.
@@ -89,7 +87,7 @@ The **SampleFlags** member of the [**DXVA\_VideoSample2**](/windows-hardware/dri
 
 The *dwNumSurfaces* parameter indicates the number of elements in the *lpDDSrcSurface* array. The video reference samples are first in the array, followed by the video substreams in Z-order. For more information, see [Input Buffer Order](./input-buffer-order.md). The number of video substreams that the driver receives can range from 0 to 15. When **DeinterlaceBltEx** is called, the driver will typically receive 0 or 1 video substreams. However, the driver must be implemented so that it can process multiple video substreams.
 
-The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
+The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
 <table>
 <colgroup>
@@ -109,7 +107,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpBufferInfo</strong></p></td>
-<td align="left"><p>Points to an array of <a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
+<td align="left"><p>Points to an array of <a href="/windows/win32/api/ddrawint/ns-ddrawint-ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/win32/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dwFunction</strong></p></td>
@@ -117,7 +115,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Points to a filled <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBltEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex)"><strong>DXVA_DeinterlaceBltEx</strong></a> structure.</p></td>
+<td align="left"><p>Points to a filled <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBltEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex)"><strong>DXVA_DeinterlaceBltEx</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -163,11 +161,8 @@ Requirements
 
 [**DXVA\_VideoSample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2)
 
-[**DDMOCOMPBUFFERINFO**](/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)
+[**DDMOCOMPBUFFERINFO**](/windows/win32/api/ddrawint/ns-ddrawint-ddmocompbufferinfo)
 
-[**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
+[**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
-[**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata)
-
- 
-
+[**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata)

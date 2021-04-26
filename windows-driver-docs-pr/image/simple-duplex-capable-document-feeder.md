@@ -1,7 +1,6 @@
 ---
 title: Simple Duplex-Capable Document Feeder
 description: Simple Duplex-Capable Document Feeder
-ms.assetid: 0807f02a-5bbf-4ed1-b381-63e1f37a0e2e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

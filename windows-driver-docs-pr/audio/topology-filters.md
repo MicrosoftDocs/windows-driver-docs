@@ -1,7 +1,6 @@
 ---
 title: Topology Filters
 description: Topology Filters
-ms.assetid: 1b3d35e9-5858-407c-9cd0-06307d82ce58
 keywords:
 - audio filters WDK audio , topology filters
 - topology filters WDK audio

@@ -1,7 +1,6 @@
 ---
 title: Remote Server Query Command
 description: To display a list of available sessions on a local or Remote Server, use the following syntax.
-ms.assetid: c95114a3-2ff5-456b-90e2-4d7bc6346f1f
 keywords: ["Remote Server Query Command Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

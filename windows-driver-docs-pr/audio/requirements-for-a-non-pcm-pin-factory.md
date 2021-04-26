@@ -1,7 +1,6 @@
 ---
 title: Requirements for a Non-PCM Pin Factory
 description: Requirements for a Non-PCM Pin Factory
-ms.assetid: 3ba5da2e-f96f-4645-8a37-dd985287a9f2
 keywords:
 - non-PCM audio formats WDK , pin factories
 - pin factories WDK audio
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="requirements_for_a_non_pcm_pin_factory"></span><span id="REQUIREMENTS_FOR_A_NON_PCM_PIN_FACTORY"></span>
 
 
-Under Windows XP and later, and Microsoft Windows Me, drivers that play non-PCM [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) formats should expose their non-PCM pins according to the following guidelines.
+Under Windows XP and later, and Microsoft Windows Me, drivers that play non-PCM [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) formats should expose their non-PCM pins according to the following guidelines.
 
 First, define a pin factory for your non-PCM data format that is separate from any PCM pin factories. PCM and non-PCM cannot share the same single-instance pin factory because the sole pin instance automatically is allocated to KMixer. If the pin factory supports multiple instances, PCM and non-PCM can coexist on the same pin factory. In this case, however, you cannot guarantee that these pin instances are available to a non-PCM client at runtime - PCM clients might already have allocated them. The safest option is to provide a separate pin factory for your non-PCM format.
 

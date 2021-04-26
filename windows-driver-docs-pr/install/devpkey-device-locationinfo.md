@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_LocationInfo
 description: DEVPKEY_Device_LocationInfo
-ms.assetid: c7eba222-20fe-4868-89e2-9dcef9965cec
 keywords: ["DEVPKEY_Device_LocationInfo Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_LocationInfo to the value that the bus driver returns for a device instance in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](../kernel/irp-mn-query-device-text.md) IRP.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and **SetupDiGetDeviceProperty** to retrieve and set the value of DEVPKEY_Device_LocationInfo.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and **SetupDiGetDeviceProperty** to retrieve and set the value of DEVPKEY_Device_LocationInfo.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LocationInfo property key. Instead, you can use the corresponding SPDRP_LOCATION_INFORMATION identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -78,7 +77,7 @@ Requirements
 
 [**IRP_MN_QUERY_DEVICE_TEXT**](../kernel/irp-mn-query-device-text.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

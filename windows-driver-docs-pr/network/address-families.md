@@ -1,7 +1,6 @@
 ---
 title: Address Families
 description: Address Families
-ms.assetid: d40df44e-f88b-4181-84ab-3fbf37172aaf
 keywords:
 - connection-oriented NDIS WDK , address families
 - CoNDIS WDK networking , address families

@@ -1,7 +1,6 @@
 ---
 title: Overview of Wait/Wake Operation
 description: Overview of Wait/Wake Operation
-ms.assetid: 63453f7e-f656-4efc-bb44-9e2cb0232270
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , about wait/wake IRPs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

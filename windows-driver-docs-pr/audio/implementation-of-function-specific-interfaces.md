@@ -1,7 +1,6 @@
 ---
 title: Implementation of Function-Specific Interfaces
 description: Implementation of Function-Specific Interfaces
-ms.assetid: 6a15c8b5-17ca-4658-bf52-cf9b3307e706
 keywords:
 - audio miniport drivers WDK , Port Class
 - miniport drivers WDK audio , Port Class

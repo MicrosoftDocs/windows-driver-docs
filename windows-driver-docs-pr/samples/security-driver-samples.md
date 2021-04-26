@@ -1,7 +1,6 @@
 ---
 title: Security driver samples
 description: The early launch anti-malware driver sample in this directory provides a starting point for writing a custom driver for your device.
-ms.assetid: 335446EF-0DEA-4C5E-9DE5-B08F07F6BA09
 ms.date: 11/21/2019
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Handling Nonstandard Display Modes
 description: Handling Nonstandard Display Modes
-ms.assetid: 4a3b0064-46d4-40bb-b49b-ac172012a7b7
 keywords:
 - nonstandard display modes WDK DirectX 9.0 , handling
 ms.date: 04/20/2017
@@ -26,7 +25,7 @@ A DirectX 9.0 driver for a device that supports a nonstandard display mode must 
 
 -   Typing "Ctl+Alt+Del" while the DirectX-primary surface is active.
 
-    The kernel specifies the standard primary as the target in a call to the driver's [*DdFlip*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function before any GDI drawing occurs. Therefore, the driver must program the display device to the standard display mode before any GDI drawing. The driver's [*DdDestroySurface*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function for the primary surface is also called. Note that the driver can discard contents of the DirectX-primary surface.
+    The kernel specifies the standard primary as the target in a call to the driver's [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function before any GDI drawing occurs. Therefore, the driver must program the display device to the standard display mode before any GDI drawing. The driver's [*DdDestroySurface*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function for the primary surface is also called. Note that the driver can discard contents of the DirectX-primary surface.
 
 -   Windowed mode and nonstandard formats
 

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SafeRemovalRequired
 description: DEVPKEY_Device_SafeRemovalRequired
-ms.assetid: a162e259-21aa-40d9-a65a-af175a59df6a
 keywords: ["DEVPKEY_Device_SafeRemovalRequired Device and Driver Installation"]
 topic_type:
 - apiref
@@ -68,7 +67,7 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
 -   The device instance is either started or can be ejected automatically by the system.
 
--   The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya).
+-   The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya).
 
 -   The device instance does not have the [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md) device property set to DEVPROP_FALSE.
 
@@ -78,7 +77,7 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
 -   The device instance is either directly removable from its parent device instance or has a removable ancestor in its device tree.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
 
 Requirements
 ------------
@@ -105,9 +104,9 @@ Requirements
 
 [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
+[**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
 
  
 

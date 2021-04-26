@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Driver's HwScsiDmaStarted Routine
 description: SCSI Miniport Driver's HwScsiDmaStarted Routine
-ms.assetid: 697839f0-e912-42a5-abe0-f6bb946c86d8
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiDmaStarted
 - HwScsiDmaStarted

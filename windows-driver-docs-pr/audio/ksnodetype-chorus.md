@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_CHORUS
 description: KSNODETYPE\_CHORUS
-ms.assetid: fa7c4f4a-163d-4d16-a6ba-fa11adeb9ffb
 keywords: ["KSNODETYPE_CHORUS Audio Devices"]
 topic_type:
 - apiref

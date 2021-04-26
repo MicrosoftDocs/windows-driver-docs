@@ -1,7 +1,6 @@
 ---
 title: Calling SetupWriteTextLogError
 description: Calling SetupWriteTextLogError
-ms.assetid: 55edc72a-2d53-4084-a1e4-e7e6515a4990
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Calling SetupWriteTextLogError
 
 
-[**SetupWriteTextLogError**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlogerror) writes information about a SetupAPI-specific error or a Win32 error to a [SetupAPI text log](setupapi-text-logs.md). **SetupWriteTextLogError** writes two consecutive entries to a text log: the first entry contains the same information in the same format as that written by [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) and the second entry logs a corresponding error code and a user-friendly description of the error.
+[**SetupWriteTextLogError**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlogerror) writes information about a SetupAPI-specific error or a Win32 error to a [SetupAPI text log](setupapi-text-logs.md). **SetupWriteTextLogError** writes two consecutive entries to a text log: the first entry contains the same information in the same format as that written by [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog) and the second entry logs a corresponding error code and a user-friendly description of the error.
 
 To call **SetupWriteTextLogError**, an application supplies the same information that it would supply to call **SetupWriteTextLog** and, in addition, supplies the value of a SetupAPI-specific error or a Win32 error.
 
@@ -29,9 +28,9 @@ Where:
 
 -   The *error-description* field contains a user-friendly description of the error.
 
-The following example shows how an application might typically call [**SetupWriteTextLogError**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlogerror) to log information about an error in a text log. The error used in the example is a system start error. The application calls **SetupWriteTextLogError**, supplying the following parameter values:
+The following example shows how an application might typically call [**SetupWriteTextLogError**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlogerror) to log information about an error in a text log. The error used in the example is a system start error. The application calls **SetupWriteTextLogError**, supplying the following parameter values:
 
-- *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in [Log Tokens](log-tokens.md).
+- *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](/windows/win32/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in [Log Tokens](log-tokens.md).
 
 - *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 
@@ -45,7 +44,7 @@ The following example shows how an application might typically call [**SetupWrit
 
 The parameters *LogToken*, *Category*, and *LogFlags* affect the operation of **SetupWriteTextLogError** in the same manner as these parameters affect the operation of **SetupWriteTextLog**.
 
-The following code calls [**SetupWriteTextLogError**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlogerror) to write the log entry for this example:
+The following code calls [**SetupWriteTextLogError**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlogerror) to write the log entry for this example:
 
 ```cpp
 //The LogToken value was previously returned by call to

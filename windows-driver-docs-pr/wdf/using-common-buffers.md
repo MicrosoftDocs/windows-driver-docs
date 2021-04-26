@@ -1,7 +1,6 @@
 ---
 title: Using Common Buffers
 description: Using Common Buffers
-ms.assetid: 81a56f62-917e-4798-b2cc-6469c802fab8
 keywords:
 - DMA operations WDK KMDF , common buffers
 - bus-master DMA WDK KMDF , common buffers
@@ -31,7 +30,7 @@ To allocate a common buffer, your driver's [*EvtDriverDeviceAdd*](/windows-hardw
 
 -   Calls [**WdfCommonBufferGetAlignedVirtualAddress**](/windows-hardware/drivers/ddi/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress) to obtain the buffer's virtual address, which the driver can access.
 
-The following code example is taken from the *Init.c* file of the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample. This code shows how a KMDF driver allocates common buffer space.
+The following code example is taken from the *Init.c* file of the [PLX9x5x](/samples/browse/) sample. This code shows how a KMDF driver allocates common buffer space.
 
 ```cpp
 // Allocate common buffer for building writes

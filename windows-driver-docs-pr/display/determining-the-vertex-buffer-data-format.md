@@ -1,7 +1,6 @@
 ---
 title: Determining the Vertex Buffer Data Format
 description: Determining the Vertex Buffer Data Format
-ms.assetid: e10604f9-e800-40ff-a0e1-0f9389340e9c
 keywords:
 - vertex format WDK Direct3D
 - flexible vertex format WDK Direct3D

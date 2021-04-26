@@ -1,7 +1,6 @@
 ---
 title: Reporting a NIC's IPsec Capabilities
 description: Reporting a NIC's IPsec Capabilities
-ms.assetid: 6ed02d4a-9b5e-4245-a3f9-f0b5fc8366a7
 keywords:
 - task offload WDK TCP/IP transport , IPsec tasks
 - IPsec offload WDK TCP/IP transport , capabilities

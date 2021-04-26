@@ -1,7 +1,6 @@
 ---
 title: Opening Registry Keys for a Device Setup Class
 description: Opening Registry Keys for a Device Setup Class
-ms.assetid: B747EB2B-892C-4465-98E0-245FF7BC1E70
 keywords:
 - registry WDK device installations , opening registry keys for a device setup class
 - device setup classes WDK device installations , opening registry keys
@@ -16,8 +15,8 @@ Do not directly access the registry keys for device setup classes. As with any r
 
 To safely open the registry keys of a [device setup class](./overview-of-device-setup-classes.md), use one of the following [SetupAPI](setupapi.md) functions:
 
--   [**SetupDiOpenClassRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkey)
--   [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) with the *Flags* parameter set to DIOCR_INSTALLER
+-   [**SetupDiOpenClassRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkey)
+-   [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) with the *Flags* parameter set to DIOCR_INSTALLER
 
  
 

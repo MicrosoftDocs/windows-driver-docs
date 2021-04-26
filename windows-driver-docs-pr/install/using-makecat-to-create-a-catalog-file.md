@@ -1,7 +1,6 @@
 ---
 title: Using MakeCat to Create a Catalog File
 description: Using MakeCat to Create a Catalog File
-ms.assetid: c9f9360b-2b1d-4060-af4d-8d281319e181
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Using MakeCat to Create a Catalog File
 
 
-You can use the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a [catalog file](catalog-files.md) for a [driver package](driver-packages.md).
+You can use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a [catalog file](catalog-files.md) for a [driver package](driver-packages.md).
 
 You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
@@ -17,7 +16,7 @@ You must use the MakeCat tool only to create catalog files for driver packages t
 
  
 
-To create a catalog file, you must first manually create a Catalog Definition File (*.cdf*) that describes the catalog header attributes and file entries. Once this file is created, you can then run the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a catalog file. The MakeCat tool does the following when it processes the *.cdf* file:
+To create a catalog file, you must first manually create a Catalog Definition File (*.cdf*) that describes the catalog header attributes and file entries. Once this file is created, you can then run the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a catalog file. The MakeCat tool does the following when it processes the *.cdf* file:
 
 -   Verifies the list of attributes for each file that is listed in the *.cdf* file.
 
@@ -55,7 +54,7 @@ To create a *.cdf* file for the *ToastPkg* sample [driver package](driver-packag
 
      
 
-The following command line shows how to create a catalog file through the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool by using the *tstamd64.cdf* file:
+The following command line shows how to create a catalog file through the [MakeCat](/windows/win32/seccrypto/makecat) tool by using the *tstamd64.cdf* file:
 
 ```cpp
 makecat -v tstamd64.cdf
@@ -63,9 +62,7 @@ makecat -v tstamd64.cdf
 
 After you run the tool, a file that is named *tstamd64.cat* is created.
 
-For more information about the MakeCat tool and its command-line arguments, see the [Using MakeCat](https://go.microsoft.com/fwlink/p/?linkid=70086) website.
+For more information about the MakeCat tool and its command-line arguments, see the [Using MakeCat](/windows/win32/seccrypto/using-makecat) website.
 
 For more information about how to use the MakeCat tool, see [Creating a Catalog File for a Non-PnP Driver Package](creating-a-catalog-file-for-a-non-pnp-driver-package.md).
-
- 
 

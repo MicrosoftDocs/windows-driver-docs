@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 54773231-6240-4f44-9aff-706616af68b6
+description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY structure Display Devices"]
 topic_type:
 - apiref

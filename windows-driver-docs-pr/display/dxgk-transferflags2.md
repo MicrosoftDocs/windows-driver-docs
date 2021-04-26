@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_TRANSFERFLAGS2 structure
 description: The DXGK\_TRANSFERFLAGS2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 5bc690c4-d95a-4048-b716-fb2b12a22a86
 keywords: ["_DXGK_TRANSFERFLAGS2 structure Display Devices", "DXGK_TRANSFERFLAGS2 structure Display Devices"]
 topic_type:
 - apiref

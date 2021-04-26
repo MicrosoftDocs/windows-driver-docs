@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverInfSectionExt
 description: DEVPKEY_Device_DriverInfSectionExt
-ms.assetid: bf6260b4-5df3-4f85-8319-0f864c017e3d
 keywords: ["DEVPKEY_Device_DriverInfSectionExt Device and Driver Installation"]
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverInfSectionExt.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverInfSectionExt.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverInfSectionExt.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfSectionExt property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSectionExt** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
@@ -79,7 +78,7 @@ Requirements
 
 [**INF DDInstall Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

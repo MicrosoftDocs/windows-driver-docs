@@ -1,7 +1,6 @@
 ---
 title: Example DetectSubregions
 description: Example DetectSubregions
-ms.assetid: 8fd5271a-587a-4b29-82a4-b84f70f5478f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

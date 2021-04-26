@@ -1,7 +1,6 @@
 ---
 title: Rendering a Print Job
 description: Rendering a Print Job
-ms.assetid: 78967839-b518-41c0-8825-b00f8b8560e6
 keywords:
 - printer graphics DLL WDK , rendering print jobs
 - graphics DLL WDK printer , rendering print jobs

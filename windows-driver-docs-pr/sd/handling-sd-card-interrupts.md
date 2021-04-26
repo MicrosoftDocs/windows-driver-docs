@@ -1,7 +1,6 @@
 ---
 title: Handling SD Card Interrupts
 description: Handling SD Card Interrupts
-ms.assetid: 40c18af4-6b23-4893-b82f-7fe652929069
 keywords:
 - SD WDK buses , interrupts
 - interrupts WDK SD bus

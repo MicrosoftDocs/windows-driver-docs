@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortHBAAttributes WMI Class
 description: MSFC\_FibrePortHBAAttributes WMI Class
-ms.assetid: 028afadf-1a2d-4792-8b6c-d53359af64c1
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

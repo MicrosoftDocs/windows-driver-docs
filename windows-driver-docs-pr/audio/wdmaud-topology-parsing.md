@@ -1,7 +1,6 @@
 ---
 title: WDMAud Topology Parsing
 description: WDMAud Topology Parsing
-ms.assetid: 8aa3e2e8-c9a2-4c3e-94b1-44a0dc218bf3
 keywords:
 - WDMAud topology parsing WDK audio
 - topology parsing WDK audio

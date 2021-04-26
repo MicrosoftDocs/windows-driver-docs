@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FTM_TARGET_BSS_ENTRY
 description: WDI_TLV_FTM_TARGET_BSS_ENTRY is a TLV that contains information for a BSS target with which Fine Timing Measurement (FTM) procedures should be completed.
-ms.assetid: 04C996C7-8207-4363-A990-5CF39B0333F8
 ms.date: 02/13/2019
 keywords:
  - WDI_TLV_FTM_TARGET_BSS_ENTRY Network Drivers Starting with Windows Vista

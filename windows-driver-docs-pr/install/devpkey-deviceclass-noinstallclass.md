@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_NoInstallClass
 description: DEVPKEY_DeviceClass_NoInstallClass
-ms.assetid: 4b4f1187-570b-40e0-a96c-f3511f46a1be
 keywords: ["DEVPKEY_DeviceClass_NoInstallClass Device and Driver Installation"]
 topic_type:
 - apiref
@@ -64,7 +63,7 @@ Setting the value of DEVPKEY_DeviceClass_NoInstallClass to DEVPROP_TRUE indicate
 
 The **NoInstallClass** registry value for a device setup class can be set by an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF ClassInstall32 section**](./inf-classinstall32-section.md) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_NoInstallClass.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_NoInstallClass.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoInstallClass property key. You can access the value of this property by accessing the corresponding **NoInstallClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
@@ -82,9 +81,9 @@ Requirements
 
 [**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Specifying Hardware IDs for a Multifunction Device
 description: Specifying Hardware IDs for a Multifunction Device
-ms.assetid: e45f7564-89a7-49c0-8011-69e5da3d5651
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ For example, consider a single-function USB printer from the company Contoso, Lt
 </HardwareIDList>
 ```
 
-If the device is a multifunction device, a device container combines all the hardware IDs) for each hardware function on the device. For more information about device containers and container IDs, see [Container IDs](container-ids.md).
+If the device is a multifunction device, a device container combines all the [hardware IDs](hardware-ids.md) from the device nodes (*devnodes*) for each hardware function on the device. For more information about device containers and container IDs, see [Container IDs](container-ids.md).
 
 The following figure shows the relationship between a multifunction device's devnodes and device container.
 

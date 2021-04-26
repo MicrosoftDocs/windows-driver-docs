@@ -1,7 +1,6 @@
 ---
 title: Protocol Binding States and Operations
 description: Protocol Binding States and Operations
-ms.assetid: 669b3de1-7f6b-4e63-8943-c8eaadfa80fc
 keywords:
 - protocol drivers WDK networking , binding operational states
 - NDIS protocol drivers WDK , binding operation states
@@ -242,7 +241,7 @@ A protocol driver can initiate OID requests to set or query information in under
 ## Related topics
 
 
-[Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
+[Writing NDIS Protocol Drivers](initializing-a-protocol-driver.md)
 
  
 

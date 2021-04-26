@@ -1,7 +1,6 @@
 ---
 title: INF AddReg Directive
 description: An AddReg directive references one or more INF-writer-defined add-registry-sections that are used to modify or create registry information.
-ms.assetid: e8162e20-0d8c-4400-9f4d-5f4abe81305b
 keywords:
 - INF AddReg Directive Device and Driver Installation
 topic_type:
@@ -80,8 +79,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | INF Section Containing AddReg Directive                        | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section       | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section | The device's *hardware key* |
 | INF *\[service-install-section\]* section                      | The **Services** key                                                                  |
 | INF *\[event-log-install\]* section                            | The **EventLog** key                                                                  |
 | INF *\[add-interface-section\]* section                        | The device interface's registry key                                                    |
@@ -150,7 +149,7 @@ The given value entry and/or value is of the registry type [REG_MULTI_SZ](/windo
 <a href="" id="0x00020000--flg-addreg-type-expand-sz--"></a>**0x00020000** (FLG_ADDREG_TYPE_EXPAND_SZ)   
 The given *value-entry-name* and/or *value* is of the registry type [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types).
 
-<a href="" id="0x00010001--flg-addreg-type-dword---flg-addreg-type-dword-"></a>**0x00010001** (FLG_ADDREG_TYPE_DWORD) (FLG_ADDREG_TYPE_DWORD)  
+<a href="" id="0x00010001--flg-addreg-type-dword---flg-addreg-type-dword-"></a>**0x00010001** (FLG_ADDREG_TYPE_DWORD)  
 The given *value-entry-name* and/or *value* is of the registry type [REG_DWORD](/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="0x00020001--flg-addreg-type-none-"></a>**0x00020001** (FLG_ADDREG_TYPE_NONE)  
@@ -295,6 +294,8 @@ HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll"
  
 HKR,,TypesSupported,0x00010001,7 
 ```
+
+Note that you can either specify flag values in hexadecimal format, as shown in the example, or you can define string placeholders such as `%FLG_ADDREG_TYPE_DWORD%` in the [Strings] section of each INF file.
 
 ## See also
 

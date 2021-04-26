@@ -1,7 +1,6 @@
 ---
 title: MPEG2_A
 description: MPEG2_A
-ms.assetid: 4f9e2aad-4072-4a49-87df-dfc6b4bf5f56
 keywords:
 - MPEG2_A restricted profile WDK DirectX VA
 ms.date: 04/20/2017
@@ -146,7 +145,7 @@ The following restriction on the [**DXVA\_ConnectMode**](/windows-hardware/drive
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>MBscanMethod</em></p></td>
-<td align="left"><p>May be a value of zero (zigzag) or a value of 1 (alternate vertical) if the <strong>ConfigHostInverseScan</strong> member of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode" data-raw-source="[&lt;strong&gt;DXVA_ConfigPictureDecode&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode)"><strong>DXVA_ConfigPictureDecode</strong></a> is equal to zero.</p></td>
+<td align="left"><p>May be a value of zero (zigzag) or a value of 1 (alternate vertical) if the <strong>ConfigHostInverseScan</strong> member of <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode" data-raw-source="[&lt;strong&gt;DXVA_ConfigPictureDecode&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode)"><strong>DXVA_ConfigPictureDecode</strong></a> is equal to zero.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>H261LoopFilter</p></td>
@@ -162,6 +161,4 @@ The following restriction on the [**DXVA\_ConnectMode**](/windows-hardware/drive
 The contents of any bitstream buffer must contain data in the MPEG-2 main profile video format.
 
 The **bNewQmatrix** member of [**DXVA\_QmatrixData**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_qmatrixdata) equals zero, for i = 2 and 3 when inverse-quantization matrices are used.
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Invalid Key Object Pointers in Registry Notifications
 description: Invalid Key Object Pointers in Registry Notifications
-ms.assetid: 96709c34-63a7-4b4e-8588-c7e8b41b5dea
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -31,7 +30,7 @@ If the second parameter in a registry callback is one of the following **REG\_NO
 
 Because the **Object** member points to a key object that is not in a valid state, the registry filtering driver must not pass the **Object** pointer value as a parameter to a [Windows driver support routine](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbypointer) (for example, **ObReferenceObjectByPointer**).
 
-However, during a [*RegistryCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function) call to handle a **RegNtPreKeyHandleClose** or **RegNtPostKeyHandleClose** notification, a registry filter driver can call a [configuration manager routine](/windows-hardware/drivers/ddi/index) (for example, [**CmGetBoundTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetboundtransaction)) that takes a registry object as a parameter.
+However, during a [*RegistryCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function) call to handle a **RegNtPreKeyHandleClose** or **RegNtPostKeyHandleClose** notification, a registry filter driver can call a configuration manager routine (for example, [**CmGetBoundTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetboundtransaction)) that takes a registry object as a parameter.
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Registering IRP Dispatch Routines
 description: Registering IRP Dispatch Routines
-ms.assetid: 096f4bb7-2326-4e6c-b3db-a2d95ca4982b
 keywords:
 - registering IRP dispatch routines
 - dispatch routines WDK file system

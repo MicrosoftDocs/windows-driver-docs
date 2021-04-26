@@ -1,7 +1,6 @@
 ---
 title: Address and Address Range Syntax
 description: Address and Address Range Syntax
-ms.assetid: 3d4f41f1-07ec-484d-a748-27fbbb9bd0b2
 ms.date: 07/24/2020
 ms.localizationpriority: medium
 ---

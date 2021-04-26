@@ -1,7 +1,6 @@
 ---
 title: Using the Enterprise WDK 10
 description: Describes how to set up a command-line based environment for organization use of the WDK.
-author: Dansimp
 ms.date: 08/25/2017
 ms.localizationpriority: medium
 ---
@@ -43,4 +42,4 @@ Where `<drive\dir>` is the location that the files were extracted to, for exampl
 
 ## See Also
 
-[ MSBuild Reference](/visualstudio/msbuild/msbuild-reference?view=vs-2015)
+[MSBuild Reference](/visualstudio/msbuild/msbuild-reference)

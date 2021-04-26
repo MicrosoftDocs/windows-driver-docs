@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_PACKET_SERVICE
 description: Miniport drivers use the NDIS_STATUS_WWAN_PACKET_SERVICE notification to inform the MB Service when packet service availability changes, including to notify of a change to the type of packet data service currently used.
-ms.assetid: 7a04b54e-e07b-43dc-ba76-086d7521ff60
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_PACKET_SERVICE Network Drivers Starting with Windows Vista

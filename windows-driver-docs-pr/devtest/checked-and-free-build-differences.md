@@ -1,7 +1,6 @@
 ---
 title: Checked and Free Build Differences
 description: There are two distinct builds of the NT-based operating systems that are available free (retail) and checked (debug). There is a third option, called a partial checked build, that combines the elements of the two.
-ms.assetid: 43aebfdb-2605-485c-a3a4-93e03b33aeca
 keywords:
 - checked builds WDK , vs. free builds
 - free builds WDK

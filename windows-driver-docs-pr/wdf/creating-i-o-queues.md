@@ -1,7 +1,6 @@
 ---
 title: Creating I/O Queues
 description: Creating I/O Queues
-ms.assetid: 03b09c94-6b72-4234-b21f-203f93b7a2e8
 keywords:
 - I/O queues WDK KMDF , creating
 - I/O queues WDK KMDF , default

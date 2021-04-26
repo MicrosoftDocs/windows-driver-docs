@@ -1,7 +1,6 @@
 ---
 title: Creating a Catalog File for a Non-PnP Driver Package
 description: Creating a Catalog File for a Non-PnP Driver Package
-ms.assetid: b40a6f42-53a8-468f-abf1-335c5ead3cbd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,13 +8,13 @@ ms.localizationpriority: medium
 # Creating a Catalog File for a Non-PnP Driver Package
 
 
-You can use the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a [catalog file](catalog-files.md) for a non-PnP [driver package](driver-packages.md).
+You can use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a [catalog file](catalog-files.md) for a non-PnP [driver package](driver-packages.md).
 
 **Note**  You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
  
 
-To create a catalog file, you must first manually create a Catalog Definition File (.*.cdf*) that describes the catalog header attributes and file entries. After this file is created, you can then run the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a catalog file
+To create a catalog file, you must first manually create a Catalog Definition File (.*.cdf*) that describes the catalog header attributes and file entries. After this file is created, you can then run the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a catalog file
 
 ### Creating a catalog file
 
@@ -23,7 +22,7 @@ To create a catalog file for a non-PnP driver package, follow these steps:
 
 1.  Use a text editor to create a .*.cdf* file that lists the name of the [catalog file](catalog-files.md) to be created, its attributes, and the names of the files that are to be listed in the catalog file.
 
-2.  Use the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) command-line tool to create the catalog file. For more information about the MakeCat tool, see the [Using MakeCat](https://go.microsoft.com/fwlink/p/?linkid=70086) website.
+2.  Use the [MakeCat](/windows/win32/seccrypto/makecat) command-line tool to create the catalog file. For more information about the MakeCat tool, see the [Using MakeCat](/windows/win32/seccrypto/using-makecat) website.
 
 3.  Install the catalog file on a computer on which the driver will be installed.
 
@@ -66,7 +65,7 @@ CATATTR1=0x10010001:OSAttr:2:6.0
 <hash>File2=File2
 ```
 
-The options that are used in this example are described below. For more information about these options, see the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) website.
+The options that are used in this example are described below. For more information about these options, see the [MakeCat](/windows/win32/seccrypto/makecat) website.
 
 <a href="" id="name-good-cat"></a>Name=Good.cat  
 Specifies the name of the catalog file (*Good.cat*).
@@ -112,6 +111,4 @@ The following example shows how to generate the [catalog file](catalog-files.md)
 ```cpp
 MakeCat -v Good.cdf
 ```
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Shutting Down the Use of a SAN
 description: Shutting Down the Use of a SAN
-ms.assetid: 751104ae-5eb6-45a2-a4bd-e5eb9209eea2
 keywords:
 - SAN shut downs WDK
 - shutting down SAN connections WDK networking

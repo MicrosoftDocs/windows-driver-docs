@@ -1,7 +1,6 @@
 ---
 title: Starting Device Installation Applications through Co-installers
 description: Guidelines for Starting Device Installation Applications through Co-installers
-ms.assetid: 94b21eef-5660-4d05-8eb5-da6589c85e65
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Guidelines for Starting Device Installation Applications through Co-installers
 
 
-The following guidelines must be followed for co-installers which supply finish-install actions:
+The following guidelines must be followed for co-installers which supply finish-install actions (Windows Vista and later versions of Windows) to start *device installation applications*:
 
 -   A co-installer must not exit from its finish-install pages or finish-install action until the device installation application has finished. If a co-installer exits early and another driver requires a restart, Windows might restart the computer before the application has completed.
 
@@ -19,7 +18,7 @@ The following guidelines must be followed for co-installers which supply finish-
 
     A co-installer can detect the new media by listening for a WM_DEVICECHANGED/DBT_DEVICEARRIVAL message with dbch_devicetype set to DBT_DEVTYP_VOLUME and dbcv_flags set to DBTF_MEDIA.
 
-    For more information, see [Detecting Media Insertion or Removal](https://go.microsoft.com/fwlink/p/?linkid=161958).
+    For more information, see [Detecting Media Insertion or Removal](/windows/win32/devio/detecting-media-insertion-or-removal).
 
 -   A co-installer should never assume that the distribution media is available during installation. For example, a co-installer should never use the %1% DirId to find the media from within the co-installer.
 
@@ -27,15 +26,9 @@ The following guidelines must be followed for co-installers which supply finish-
 
 -   If a co-installer starts Windows Internet Explorer to download the device installation application, it must start it in Protected Mode, which has features that protect users against malicious code.
 
-    For more information about starting Internet Explorer in Protected Mode, see [Understanding and Working in Protected Mode Internet Explorer](https://go.microsoft.com/fwlink/p/?linkid=133163).
+    For more information about starting Internet Explorer in Protected Mode, see [Understanding and Working in Protected Mode Internet Explorer](/previous-versions/windows/internet-explorer/ie-developer/).
 
 For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_REGISTER_EXTENSION
 description: SIO_WSK_REGISTER_EXTENSION
-ms.assetid: e7fd6d68-85e8-4c5f-b67f-2193d200130d
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_REGISTER_EXTENSION Network Drivers Starting with Windows Vista
@@ -45,7 +44,7 @@ To register an extension interface, a WSK application calls the [**WskControlSoc
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_in" data-raw-source="[&lt;strong&gt;WSK_EXTENSION_CONTROL_IN&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_in)"><strong>WSK_EXTENSION_CONTROL_IN</strong></a> structure. This structure contains a pointer to the <a href="/windows-hardware/drivers/network/network-programming-interface" data-raw-source="[Network Programming Interface (NPI)](/windows-hardware/drivers/network/network-programming-interface)">Network Programming Interface (NPI)</a> identifier for the extension interface and pointers to the dispatch table and to the context for the WSK application's implementation of the extension interface.</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_in" data-raw-source="[&lt;strong&gt;WSK_EXTENSION_CONTROL_IN&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_in)"><strong>WSK_EXTENSION_CONTROL_IN</strong></a> structure. This structure contains a pointer to the <a href="/windows-hardware/drivers/network/network-programming-interface" data-raw-source="[Network Programming Interface (NPI)](./network-programming-interface.md)">Network Programming Interface (NPI)</a> identifier for the extension interface and pointers to the dispatch table and to the context for the WSK application's implementation of the extension interface.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -53,7 +52,7 @@ To register an extension interface, a WSK application calls the [**WskControlSoc
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_out" data-raw-source="[&lt;strong&gt;WSK_EXTENSION_CONTROL_OUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_out)"><strong>WSK_EXTENSION_CONTROL_OUT</strong></a> structure. This structure receives a pointer to the dispatch table and a pointer to the context for the WSK subsystem's implementation of the extension interface.</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_out" data-raw-source="[&lt;strong&gt;WSK_EXTENSION_CONTROL_OUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_extension_control_out)"><strong>WSK_EXTENSION_CONTROL_OUT</strong></a> structure. This structure receives a pointer to the dispatch table and a pointer to the context for the WSK subsystem's implementation of the extension interface.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -88,6 +87,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

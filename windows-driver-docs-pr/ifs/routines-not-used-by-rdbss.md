@@ -1,7 +1,6 @@
 ---
 title: Routines Not Used by RDBSS
 description: Routines Not Used by RDBSS
-ms.assetid: bf3e2936-05c9-4012-a55b-40022844f5db
 keywords:
 - mini-redirectors WDK , RDBSS
 ms.date: 04/20/2017

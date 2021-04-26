@@ -1,7 +1,6 @@
 ---
 title: MSFC\_TargetEvent WMI Class
 description: MSFC\_TargetEvent WMI Class
-ms.assetid: 251f7526-98e6-495d-a987-83257e968bb8
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

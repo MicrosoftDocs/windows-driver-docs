@@ -1,7 +1,6 @@
 ---
 title: Target Information
 description: Target Information
-ms.assetid: e818c0bb-ba91-4752-8baf-00fff759106f
 keywords: ["Debugger Engine API, targets, info"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Network Module Registrar Topics
 description: Network Module Registrar Topics
-ms.assetid: 23c15c42-94aa-410b-8551-fafa8b24ad86
 keywords:
 - Network Module Registrar WDK
 - NMR WDK
@@ -19,13 +18,13 @@ This section discusses the Network Module Registrar and includes the following t
 
 [Introduction to the Network Module Registrar](introduction-to-the-network-module-registrar.md)
 
-[Network Module Registrar Definitions](nmr-definitions.md)
+[Network Module](network-module.md)
 
 [Architecture Overview](architecture-overview.md)
 
-[Client Module Operations](client-module-operations.md)
+[Initializing and Registering a Client Module](initializing-and-registering-a-client-module.md)
 
-[Provider Module Operations](provider-module-operations.md)
+[Provider Module Operations](initializing-and-registering-a-provider-module.md)
 
 [Programming Considerations](programming-considerations.md)
 

@@ -1,7 +1,6 @@
 ---
 title: m (Move Memory)
 description: The m command copies the contents of memory from one location to another. Do not confuse this command with the ~m (Resume Thread) command.
-ms.assetid: afcac933-6bba-4566-ae07-bb9110f851d2
 keywords: ["m (Move Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

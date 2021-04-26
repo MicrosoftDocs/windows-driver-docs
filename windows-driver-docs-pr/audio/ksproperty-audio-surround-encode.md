@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_SURROUND\_ENCODE
 description: The KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property specifies whether the filter's surround encoder is enabled or disabled. A surround-encoder node (KSNODETYPE\_PROLOGIC\_ENCODER) performs Dolby Surround Pro Logic encoding.
-ms.assetid: 249ee13f-a986-4cb1-906f-55062274df45
 keywords: ["KSPROPERTY_AUDIO_SURROUND_ENCODE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property specifies whether the filter's 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -92,6 +91,4 @@ Requirements
 [**KSNODETYPE\_PROLOGIC\_ENCODER**](ksnodetype-prologic-encoder.md)
 
 [**KSNODETYPE\_PROLOGIC\_DECODER**](ksnodetype-prologic-decoder.md)
-
- 
 

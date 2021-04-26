@@ -1,7 +1,6 @@
 ---
 title: CD-ROM Real-Time Streaming
 description: Streaming (or real-time streaming) is a feature provided by optical drives to allow faster read and write requests.
-ms.assetid: A4093485-076A-4414-A3D2-9285B2AC097B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ Starting in Windows 7, the CD-ROM class driver, Cdrom.sys, supports low-level st
 
 In addition, for kernel-mode components, there are changes in the way Cdrom.sys handles [**IRP\_MJ\_READ**](../kernel/irp-mj-read.md) and [**IRP\_MJ\_WRITE**](../kernel/irp-mj-write.md) requests. The class driver validates that the real-time streaming requests meet the capabilities of the device. To implement this feature, Windows 7 introduced a streaming flag, **SL\_REALTIME\_STREAM**, in the driver's [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location). This flag is asserted for all streaming read or write requests and cleared for all non-streaming requests.
 
-These changes in the storage driver stack allow higher layers (in particular, file system drivers and applications) to perform read/write operations at a guaranteed speed for files containing real-time data. Starting in Windows 7, you can mark a file for real-time streaming by using the [**FSCTL\_MARK\_HANDLE**](/windows/desktop/api/winioctl/ni-winioctl-fsctl_mark_handle) Control Code and specifying the streaming mode by setting **MARK\_HANDLE\_REALTIME** flag in the [**MARK\_HANDLE\_INFO**](/windows/desktop/api/winioctl/ns-winioctl-mark_handle_info) structure.
+These changes in the storage driver stack allow higher layers (in particular, file system drivers and applications) to perform read/write operations at a guaranteed speed for files containing real-time data. Starting in Windows 7, you can mark a file for real-time streaming by using the [**FSCTL\_MARK\_HANDLE**](/windows/win32/api/winioctl/ni-winioctl-fsctl_mark_handle) Control Code and specifying the streaming mode by setting **MARK\_HANDLE\_REALTIME** flag in the [**MARK\_HANDLE\_INFO**](/windows/win32/api/winioctl/ns-winioctl-mark_handle_info) structure.
 
 Figure 1 illustrates the relationship between regular and streaming read and write requests and the UDF file system and CDROM class drivers.
 
@@ -53,7 +52,7 @@ DVD playback applications and file system drivers have a choice of using IOCTLs 
 ## <span id="Specifying_real-time_streaming_for_a_file_using_FSCTLs"></span><span id="specifying_real-time_streaming_for_a_file_using_fsctls"></span><span id="SPECIFYING_REAL-TIME_STREAMING_FOR_A_FILE_USING_FSCTLS"></span>Specifying real-time streaming for a file using FSCTLs
 
 
--   You can mark any file for real-time read behavior, regardless of the file type. To do this, set the **MARK\_HANDLE\_REALTIME** flag in the [**MARK\_HANDLE\_INFO**](/windows/desktop/api/winioctl/ns-winioctl-mark_handle_info) structure, and then send the [**FSCTL\_MARK\_HANDLE**](/windows/desktop/api/winioctl/ni-winioctl-fsctl_mark_handle) control code. Files marked with this flag must be opened for unbuffered I/O.
+-   You can mark any file for real-time read behavior, regardless of the file type. To do this, set the **MARK\_HANDLE\_REALTIME** flag in the [**MARK\_HANDLE\_INFO**](/windows/win32/api/winioctl/ns-winioctl-mark_handle_info) structure, and then send the [**FSCTL\_MARK\_HANDLE**](/windows/win32/api/winioctl/ni-winioctl-fsctl_mark_handle) control code. Files marked with this flag must be opened for unbuffered I/O.
 -   An application can unmark a file that was previously flagged for real-time behavior, by setting the **MARK\_HANDLE\_NOT\_REALTIME** flag in the MARK\_HANDLE\_INFO structure.
 -   If FSCTL\_MARK\_HANDLE control code is sent with MARK\_HANDLE\_REALTIME and either the CD-ROM/DVD drive or media indicate that the real time streaming feature is not supported, IOCTL returns STATUS\_INVALID\_DEVICE\_REQUEST. If the handle is opened without buffering, the STATUS\_INVALID\_DEVICE\_REQUEST is also returned.
 
@@ -72,6 +71,6 @@ The MMC specification recommends that applications indicate the desirable read a
 [**IOCTL\_CDROM\_GET\_PERFORMANCE**](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_performance)  
 [**IOCTL\_CDROM\_SEND\_OPC\_INFORMATION**](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_send_opc_information)  
 [**IOCTL\_CDROM\_SET\_SPEED**](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_set_speed)  
-[**FSCTL\_MARK\_HANDLE**](/windows/desktop/api/winioctl/ni-winioctl-fsctl_mark_handle)  
-[**MARK\_HANDLE\_INFO**](/windows/desktop/api/winioctl/ns-winioctl-mark_handle_info)  
+[**FSCTL\_MARK\_HANDLE**](/windows/win32/api/winioctl/ni-winioctl-fsctl_mark_handle)  
+[**MARK\_HANDLE\_INFO**](/windows/win32/api/winioctl/ns-winioctl-mark_handle_info)  
 [**CDROM\_PERFORMANCE\_REQUEST**](/windows-hardware/drivers/ddi/ntddcdrm/ns-ntddcdrm-_cdrom_performance_request)

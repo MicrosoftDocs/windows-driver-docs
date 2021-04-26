@@ -1,7 +1,6 @@
 ---
 title: NDIS Port Send and Receive Operations
 description: NDIS Port Send and Receive Operations
-ms.assetid: f9a22b7b-5565-4d56-a9b9-22562b6bf0da
 keywords:
 - ports WDK NDIS , send and receive operations
 - NDIS ports WDK , send and receive operations

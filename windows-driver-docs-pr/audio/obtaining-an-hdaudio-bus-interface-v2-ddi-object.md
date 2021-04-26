@@ -1,7 +1,6 @@
 ---
 title: Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object
-ms.assetid: 3aad8c7a-8c89-499a-bfe8-e3facdffcd15
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,7 +28,7 @@ The following table shows the input parameter values that the function driver wr
 </tr>
 <tr class="even">
 <td align="left"><p>USHORT <em>Size</em></p></td>
-<td align="left"><p><strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_V2&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)"><strong>HDAUDIO_BUS_INTERFACE_V2</strong></a>)</p></td>
+<td align="left"><p><strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_V2&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)"><strong>HDAUDIO_BUS_INTERFACE_V2</strong></a>)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>USHORT <em>Version</em></p></td>
@@ -37,7 +36,7 @@ The following table shows the input parameter values that the function driver wr
 </tr>
 <tr class="even">
 <td align="left"><p>PINTERFACE <em>Interface</em></p></td>
-<td align="left"><p>Pointer to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_V2&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)"><strong>HDAUDIO_BUS_INTERFACE_V2</strong></a> structure</p></td>
+<td align="left"><p>Pointer to <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_V2&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)"><strong>HDAUDIO_BUS_INTERFACE_V2</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PVOID <em>InterfaceSpecificData</em></p></td>
@@ -66,7 +65,7 @@ The following table shows the values that the HD Audio bus driver writes into th
 <tbody>
 <tr class="odd">
 <td align="left"><p>USHORT <strong>Size</strong></p></td>
-<td align="left"><p><strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_V2&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)"><strong>HDAUDIO_BUS_INTERFACE_V2</strong></a>)</p></td>
+<td align="left"><p><strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_V2&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)"><strong>HDAUDIO_BUS_INTERFACE_V2</strong></a>)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>USHORT <strong>Version</strong></p></td>
@@ -90,6 +89,4 @@ The following table shows the values that the HD Audio bus driver writes into th
  
 
 In the previous table, the **Context** member points to a context object that contains information that is specific to the particular instance of the baseline HD Audio DDI. The client obtains this baseline HD Audio DDI from the IOCTL. When the client function driver calls any of the routines in the DDI, it must always specify the **Context** member value as the first call parameter. The context information is opaque to the client. The HD Audio bus driver creates a different context object for each client. When the context object is no longer required, the client frees the context object by calling the **InterfaceDereference** routine shown in the previous table. If it is required, a client can create additional references to the object by calling the **InterfaceDereference** routine, but the client is responsible for releasing these references when it no longer requires them.
-
- 
 

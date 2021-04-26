@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_CLOSE (IFS)
 description: IRP\_MJ\_CLOSE
-ms.assetid: 62bb28de-7f89-4009-9ea9-0aa3d6bca0ed
 keywords: ["IRP_MJ_CLOSE Installable File System Drivers"]
 topic_type:
 - apiref

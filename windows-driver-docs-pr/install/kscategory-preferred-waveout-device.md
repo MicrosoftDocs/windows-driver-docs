@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_PREFERRED_WAVEOUT_DEVICE
 description: KSCATEGORY_PREFERRED_WAVEOUT_DEVICE
-ms.assetid: bba79780-e89c-4b19-98e0-84bfdb5bbf25
 keywords: ["KSCATEGORY_PREFERRED_WAVEOUT_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE
 description: The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates a new virtual source.
-ms.assetid: 771c4084-8007-4280-8451-946a26182740
 keywords: ["KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates a new virtual
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source" data-raw-source="[&lt;strong&gt;SYSAUDIO_CREATE_VIRTUAL_SOURCE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)"><strong>SYSAUDIO_CREATE_VIRTUAL_SOURCE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source" data-raw-source="[&lt;strong&gt;SYSAUDIO_CREATE_VIRTUAL_SOURCE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)"><strong>SYSAUDIO_CREATE_VIRTUAL_SOURCE</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -98,6 +97,4 @@ Requirements
 [**SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_create_virtual_source)
 
 [**KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE**](ksproperty-sysaudio-attach-virtual-source.md)
-
- 
 

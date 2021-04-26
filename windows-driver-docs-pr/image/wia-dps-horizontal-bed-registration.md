@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_HORIZONTAL\_BED\_REGISTRATION
 description: The WIA\_DPS\_HORIZONTAL\_BED\_REGISTRATION property contains the registration, or horizontal alignment, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
-ms.assetid: e39f6d9b-ae94-4096-a887-e3e3523fbd08
 keywords: ["WIA_DPS_HORIZONTAL_BED_REGISTRATION Imaging Devices"]
 topic_type:
 - apiref

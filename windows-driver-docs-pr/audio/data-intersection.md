@@ -1,7 +1,6 @@
 ---
 title: Data Intersection
 description: Data Intersection
-ms.assetid: a1588ce0-a091-4bfd-98a9-4d78e2fc847f
 keywords:
 - data-intersection handlers WDK audio , about data intersection
 - data intersections WDK audio

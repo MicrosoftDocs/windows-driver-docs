@@ -1,7 +1,6 @@
 ---
 title: Power IRPs for Individual Devices
 description: Power IRPs for Individual Devices
-ms.assetid: a8d5db12-8f6b-4c65-9814-0bc3e476dd1c
 keywords: ["power IRPs WDK kernel , devices", "device power IRPs WDK kernel", "power sequence values WDK kernel", "working state returns WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

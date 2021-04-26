@@ -23,7 +23,7 @@ This is the ecosystem counterpart of [Number of user mode crashes in Microsoft E
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|30,000 hours of Microsoft Edge Chromium runtime|
 |**Passing criteria**|<= 1 crash per year|
-|**Measure ID**|25481659|
+|**Measure ID**|25389120|
 
 ## Calculation
 

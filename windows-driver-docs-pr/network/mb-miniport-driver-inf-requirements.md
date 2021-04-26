@@ -1,7 +1,6 @@
 ---
 title: MB Miniport Driver INF Requirements
 description: MB Miniport Driver INF Requirements
-ms.assetid: 1f248e1c-7faf-4a11-a4c2-3c0e829e1583
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

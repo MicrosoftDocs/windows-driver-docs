@@ -1,7 +1,6 @@
 ---
 title: Calling SetupWriteTextLogInfLine
 description: Calling SetupWriteTextLogInfLine
-ms.assetid: 7b7a08bf-b97a-4dfe-8695-dc947481ad2b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,11 +8,11 @@ ms.localizationpriority: medium
 # Calling SetupWriteTextLogInfLine
 
 
-An application can call [**SetupWriteTextLogInfLine**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextloginfline) to write a log entry in a [SetupAPI text log](setupapi-text-logs.md) that contains the text of a specified INF file line.
+An application can call [**SetupWriteTextLogInfLine**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextloginfline) to write a log entry in a [SetupAPI text log](setupapi-text-logs.md) that contains the text of a specified INF file line.
 
 To call **SetupWriteTextLogInfLine**, an application supplies the following information:
 
--   The log token for a section in a text log that was obtained by calling [**SetupGetThreadLogToken**](/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or one of the system-defined [log tokens](log-tokens.md). If the log token is associated with a text log section, **SetupWriteTextLogInfLine** writes the log entry in that section. Otherwise, **SetupWriteTextLogInfLine** adds the log entry to a part of the log that is not included in a text log section.
+-   The log token for a section in a text log that was obtained by calling [**SetupGetThreadLogToken**](/windows/win32/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or one of the system-defined [log tokens](log-tokens.md). If the log token is associated with a text log section, **SetupWriteTextLogInfLine** writes the log entry in that section. Otherwise, **SetupWriteTextLogInfLine** adds the log entry to a part of the log that is not included in a text log section.
 
     In addition, whether **SetupWriteTextLogInfLine** writes a log entry, and to which text log **SetupWriteTextLogInfLine** writes the entry, depends on the system-defined log token value.
 
@@ -21,7 +20,7 @@ To call **SetupWriteTextLogInfLine**, an application supplies the following info
 
 -   A flag value that is a bitwise OR of system-defined constants that specify the event level, the indentation depth, and whether to include a time stamp. Event levels are described in [Setting the Event Level for a Text Log](setting-the-event-level-for-a-text-log.md).
 
-    If the event level set for the text log is greater than or equal to the event level for the entry, [**SetupWriteTextLogInfLine**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextloginfline) writes a log entry in the text log. Otherwise, **SetupWriteTextLogInfLine** does not write a log entry in the text log. By using indentation, formatted messages can be arranged to make the information in a section easier to read and understand.
+    If the event level set for the text log is greater than or equal to the event level for the entry, [**SetupWriteTextLogInfLine**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextloginfline) writes a log entry in the text log. Otherwise, **SetupWriteTextLogInfLine** does not write a log entry in the text log. By using indentation, formatted messages can be arranged to make the information in a section easier to read and understand.
 
     For more information, see [Writing Indented Log Entries](writing-indented-log-entries.md).
 
@@ -47,9 +46,9 @@ Where:
 
 -   The *line-number* field contains the line number of the specified line in the INF file.
 
-The following example shows how an application might typically log the text of an INF line in a text log. The INF line in this example is an INF **AddReg** line. The application calls [**SetupWriteTextLogInfLine**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextloginfline), supplying the following input parameter values:
+The following example shows how an application might typically log the text of an INF line in a text log. The INF line in this example is an INF **AddReg** line. The application calls [**SetupWriteTextLogInfLine**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextloginfline), supplying the following input parameter values:
 
--   *LogToken* is set to a log token that was returned by [**SetupGetThreadLogToken**](/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or to a system-defined [log token](log-tokens.md).
+-   *LogToken* is set to a log token that was returned by [**SetupGetThreadLogToken**](/windows/win32/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or to a system-defined [log token](log-tokens.md).
 
 -   *LogFlags* is set to TXTLOG_DETAILS. This example does not include a time stamp or change the indentation depth. In the example, the indentation depth is five monospace text spaces.
 
@@ -57,7 +56,7 @@ The following example shows how an application might typically log the text of a
 
 -   *Context* is set to the INF file context of the INF file line that contains the text "AddReg=HidServ_AddService_AddReg." An INF file context for the line is obtained by calling the **SetupFind*Xxx*Line** functions, which are documented in the Platform SDK.
 
-The values of *LogToken* and *LogFlags* affect the operation of [**SetupWriteTextLogInfLine**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextloginfline) in the same manner as that described for [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog). In addition, **SetupWriteTextLogInfLine** uses the event catalog TXTLOG_INF.
+The values of *LogToken* and *LogFlags* affect the operation of [**SetupWriteTextLogInfLine**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextloginfline) in the same manner as that described for [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog). In addition, **SetupWriteTextLogInfLine** uses the event catalog TXTLOG_INF.
 
 For this example, the following shows the type of log entry that **SetupWriteTextLogInfLine** would write to a text log:
 

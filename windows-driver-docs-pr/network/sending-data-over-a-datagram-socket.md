@@ -1,7 +1,6 @@
 ---
 title: Sending Data over a Datagram Socket
 description: Sending Data over a Datagram Socket
-ms.assetid: 5748ac2a-177f-4fe9-a55b-85eec45d5afa
 keywords:
 - sending datagrams
 - datagram sockets WDK Winsock Kernel

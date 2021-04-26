@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_BUFFER\_SIZE
 description: The WIA\_IPA\_BUFFER\_SIZE property contains the size of the buffer, in bytes, that is used during a data transfer. The WIA minidriver creates and maintains this property.
-ms.assetid: 2feb26fa-674d-4dc2-b8bb-51942cb48737
 keywords: ["WIA_IPA_BUFFER_SIZE Imaging Devices"]
 topic_type:
 - apiref

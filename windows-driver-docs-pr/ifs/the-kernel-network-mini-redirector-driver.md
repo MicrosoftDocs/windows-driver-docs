@@ -1,7 +1,6 @@
 ---
 title: The Kernel Network Mini-Redirector Driver
 description: The Kernel Network Mini-Redirector Driver
-ms.assetid: 13236e5f-1261-4cf1-9c3d-3f1a5ccb3323
 keywords:
 - network redirectors WDK , mini-redirector drivers
 - redirector drivers WDK , mini-redirector drivers

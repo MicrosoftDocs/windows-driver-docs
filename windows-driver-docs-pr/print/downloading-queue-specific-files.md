@@ -1,7 +1,6 @@
 ---
 title: Downloading Queue-Specific Files
 description: Downloading Queue-Specific Files
-ms.assetid: b6aad46a-2934-461a-ad11-6ad699687fc1
 keywords:
 - downloading queue-specific printer files
 - Point and Print WDK , queue-specific files

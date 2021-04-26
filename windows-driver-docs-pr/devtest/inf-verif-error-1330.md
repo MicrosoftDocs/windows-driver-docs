@@ -1,7 +1,6 @@
 ---
 title: InfVerif Error 1330
 description: InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.
-ms.assetid: 6F565E1C-C6FC-4637-B476-FE4E4672CCC3
 ms.date: 03/05/2019
 ms.localizationpriority: medium
 ---
@@ -126,7 +125,7 @@ files differently. To access the target file, the driver now needs to call into 
 
 #### Other User Mode code
 
-* [**CM_Open_DevNode_Key**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
+* [**CM_Open_DevNode_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
 
 > [!NOTE]
 > In this example, the destination location of the files the INF payloads does not affect the solution.  However, to use best practices, the example uses [DIRID](../install/using-dirids.md) 13 since it provides faster installs through fewer file copies.  Please see “[Using DIRIDs](../install/using-dirids.md)” and “[Run from the driver store](../develop/dch-example.md#run-from-the-driver-store)” for more information.

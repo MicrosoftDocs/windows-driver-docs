@@ -1,7 +1,6 @@
 ---
 title: Using an Extension INF File
 description: Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.
-ms.assetid: 124C4E58-7F06-46F5-B530-29A03FA75C0A
 ms.date: 06/05/2017
 ms.localizationpriority: medium
 ---
@@ -105,12 +104,11 @@ The driver validation and submission process is the same for extension INFs as f
 
 ## Uninstalling an extension driver
 
-To uninstall an extension driver, use PnPUtil's `delete` command with the `uninstall` flag. 
+To uninstall an extension driver, use PnPUtil's `delete-driver` command with the `uninstall` flag. This allows the extension driver to be uninstalled without removing the base driver.
 
-To delete the driver package, use `pnputil /delete-driver /uninstall oem0.inf`.
-To force delete the driver package, use `pnputil /delete-driver /uninstall oem1.inf /force`.
+Find the oem<#>.inf name of the driver package to uninstall and use `pnputil /delete-driver oem<#>.inf /uninstall`. 
 
-This allows the extension driver to be uninstalled without removing the base driver.
+`pnputil /enum-drivers` can be used to help identify the appropriate oem<#>.inf name.
 
 ## Example 1: Using an extension INF to set the device friendly name
 

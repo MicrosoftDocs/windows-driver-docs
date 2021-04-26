@@ -1,7 +1,6 @@
 ---
 title: Using GetGlobalAttribute
 description: Using GetGlobalAttribute
-ms.assetid: 0e23ecba-7d89-44f5-b6a7-7d6be9a56765
 keywords:
 - GetGlobalAttribute
 ms.date: 04/20/2017

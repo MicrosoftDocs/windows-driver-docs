@@ -1,7 +1,6 @@
 ---
 title: SetDisplayConfig Summary and Scenarios
 description: SetDisplayConfig Summary and Scenarios
-ms.assetid: f9bce5d4-b511-475c-8e0a-eb60765a3326
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, SetDisplayConfig
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, SetDisplayConfig
@@ -20,11 +19,11 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-The following sections summarize how a caller uses the [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) CCD function and provide scenarios for using **SetDisplayConfig**.
+The following sections summarize how a caller uses the [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) CCD function and provide scenarios for using **SetDisplayConfig**.
 
 ### <span id="setdisplayconfig_summary"></span><span id="SETDISPLAYCONFIG_SUMMARY"></span>SetDisplayConfig Summary
 
-The caller can use [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to apply a topology along with other display settings. That is, the caller can use **SetDisplayConfig** to set the topology, layout, orientation, aspect ratio, bit depth, and so on. The caller can use **SetDisplayConfig** to perform the following operations:
+The caller can use [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to apply a topology along with other display settings. That is, the caller can use **SetDisplayConfig** to set the topology, layout, orientation, aspect ratio, bit depth, and so on. The caller can use **SetDisplayConfig** to perform the following operations:
 
 -   Set a particular topology of sources and targets.
 
@@ -42,19 +41,19 @@ The caller can use [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuse
 
 ### <span id="setdisplayconfig_scenarios"></span><span id="SETDISPLAYCONFIG_SCENARIOS"></span>SetDisplayConfig Scenarios
 
-[**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) is called in the following scenarios:
+[**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) is called in the following scenarios:
 
--   The display control panel applet calls [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to test all the possible options to populate the **multimon** drop-down box.
+-   The display control panel applet calls [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to test all the possible options to populate the **multimon** drop-down box.
 
--   The display control panel applet calls [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to apply the setting that a user selected from the drop-down menu.
+-   The display control panel applet calls [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to apply the setting that a user selected from the drop-down menu.
 
--   The display control panel applet calls [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to apply the settings that a user selected from the user interface. These settings include resolution, layout, orientation, scaling, primary, bit depth, and refresh rate.
+-   The display control panel applet calls [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to apply the settings that a user selected from the user interface. These settings include resolution, layout, orientation, scaling, primary, bit depth, and refresh rate.
 
--   After the user makes a selection, the display hot key calls [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to apply the appropriate setting from the persistence database.
+-   After the user makes a selection, the display hot key calls [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to apply the appropriate setting from the persistence database.
 
--   Tasks under the Control Panel user interface call [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to apply the appropriate setting, which is based on the type of the task.
+-   Tasks under the Control Panel user interface call [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to apply the appropriate setting, which is based on the type of the task.
 
--   The display control panel applet calls [**SetDisplayConfig**](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) to start or stop forced projection on a particular target.
+-   The display control panel applet calls [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) to start or stop forced projection on a particular target.
 
  
 

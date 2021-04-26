@@ -1,7 +1,6 @@
 ---
 title: Operating a Parallel Device Attached to a Parallel Port
 description: Operating a Parallel Device Attached to a Parallel Port
-ms.assetid: 5ad36162-efbe-4be8-954c-964ef12c539a
 keywords:
 - parallel ports WDK , parallel device operation
 - parallel devices WDK
@@ -41,7 +40,7 @@ For more information about support for parallel devices attached to a parallel p
 
 [System-Supplied Parallel Drivers](system-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/index)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/_parports)
 
  
 

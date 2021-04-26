@@ -1,7 +1,6 @@
 ---
 title: Driver Entry Points in Driver Objects
 description: Driver Entry Points in Driver Objects
-ms.assetid: f004c2b3-8435-4c25-82e9-aff3911dc316
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects", "entry points WDK kernel", "driver entry points WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

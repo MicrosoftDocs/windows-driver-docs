@@ -1,7 +1,6 @@
 ---
 title: Introduction to WDM Audio Drivers
 description: Introduction to WDM Audio Drivers
-ms.assetid: 376392a8-b3ae-40c3-8bfa-55df6165cefb
 keywords:
 - audio filters WDK audio , subset of KS filters
 - WDM audio drivers WDK , about WDM audio drivers

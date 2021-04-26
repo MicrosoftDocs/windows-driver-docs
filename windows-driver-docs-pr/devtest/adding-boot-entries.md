@@ -1,7 +1,6 @@
 ---
 title: Adding Boot Entries
 description: Adding Boot Entries in Windows Vista and later, Windows Server 2008 and later, and Windows Recovery Environment
-ms.assetid: 5027d7ea-6f8b-435a-849f-06727068d18b
 keywords:
 - boot options WDK , adding boot entries
 - boot entries WDK

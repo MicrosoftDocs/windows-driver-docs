@@ -1,7 +1,6 @@
 ---
 title: Creating the WIA Driver Item Tree
 description: Creating the WIA Driver Item Tree
-ms.assetid: 3ae489b9-175e-4b1e-a6c8-a72a3a3c212a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

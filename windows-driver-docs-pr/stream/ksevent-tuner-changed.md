@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_TUNER\_CHANGED
 description: The KSEVENT\_TUNER\_CHANGED event propagates an action, such as a channel change, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: 7286e36c-a433-40a0-9281-7eac4ab64cbf
 keywords: ["KSEVENT_TUNER_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,8 +44,8 @@ The KSEVENT\_TUNER\_CHANGED event propagates an action, such as a channel change
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -54,6 +53,4 @@ The KSEVENT\_TUNER\_CHANGED event propagates an action, such as a channel change
  
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
-
- 
 

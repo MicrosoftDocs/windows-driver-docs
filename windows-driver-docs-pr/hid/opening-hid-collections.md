@@ -1,7 +1,6 @@
 ---
 title: Opening HID collections
 description: This section describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device’s HID collections.
-ms.assetid: 97550D1D-2C37-4996-8522-DB18B1AA3C4A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

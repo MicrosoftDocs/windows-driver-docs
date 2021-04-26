@@ -1,7 +1,6 @@
 ---
 title: DIF_INSTALLCLASSDRIVERS
 description: DIF_INSTALLCLASSDRIVERS
-ms.assetid: bdc57254-561e-4027-8f08-ec431d67e947
 keywords: ["DIF_INSTALLCLASSDRIVERS Device and Driver Installation"]
 topic_type:
 - apiref

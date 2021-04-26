@@ -1,7 +1,6 @@
 ---
 title: Diagnosing problems running WDTF-based tests
 description: To help you troubleshoot problems running WDTF-based test, you can use a debugger.
-ms.assetid: 24257B50-ED9C-4D45-A245-1EC855463D33
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

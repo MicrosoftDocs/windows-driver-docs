@@ -1,7 +1,6 @@
 ---
 title: Declaring Functions Using Function Role Types for WDM Drivers
 description: Declaring Functions Using Function Role Types for WDM Drivers
-ms.assetid: 3260b53e-82be-4dbc-8ac5-d0e52de77f9d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -47,59 +46,59 @@ SDV recognizes the types of entry points shown in the following table.
 <tbody>
 <tr class="odd">
 <td align="left"><p>DRIVER_INITIALIZE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize" data-raw-source="[&lt;em&gt;DriverEntry&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize)"><em>DriverEntry</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize" data-raw-source="[&lt;em&gt;DriverEntry&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize)"><em>DriverEntry</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DRIVER_STARTIO</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio" data-raw-source="[&lt;em&gt;StartIO&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio)"><em>StartIO</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio" data-raw-source="[&lt;em&gt;StartIO&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio)"><em>StartIO</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DRIVER_UNLOAD</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload" data-raw-source="[&lt;em&gt;Unload&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload)"><em>Unload</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload" data-raw-source="[&lt;em&gt;Unload&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload)"><em>Unload</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DRIVER_ADD_DEVICE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device" data-raw-source="[&lt;em&gt;AddDevice&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)"><em>AddDevice</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device" data-raw-source="[&lt;em&gt;AddDevice&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)"><em>AddDevice</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
 <strong><em>Dispatch_type</em>(</strong> <em>type</em> <strong>)</strong>
 DRIVER_DISPATCH</td>
-<td align="left"><p>The dispatch routine(s) used by the driver. See <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines" data-raw-source="[Writing Dispatch Routines](../kernel/writing-dispatch-routines.md)">Writing Dispatch Routines</a>.</p></td>
+<td align="left"><p>The dispatch routine(s) used by the driver. See <a href="/windows-hardware/drivers/kernel/writing-dispatch-routines" data-raw-source="[Writing Dispatch Routines](../kernel/writing-dispatch-routines.md)">Writing Dispatch Routines</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IO_COMPLETION_ROUTINE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine" data-raw-source="[&lt;em&gt;IoCompletion&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine)"><em>IoCompletion</em></a></p>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine" data-raw-source="[&lt;em&gt;IoCompletion&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine)"><em>IoCompletion</em></a></p>
 <p>The <em>IoCompletion</em> routine is set by calling <em>IoSetCompletionRoutine</em> or <em>IoSetCompletionRoutineEx</em> and passing the function pointer to the <em>IoCompletion</em> routine as the second parameter.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DRIVER_CANCEL</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel" data-raw-source="[&lt;em&gt;Cancel&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel)"><em>Cancel</em></a></p>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel" data-raw-source="[&lt;em&gt;Cancel&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel)"><em>Cancel</em></a></p>
 <p>The <strong>Cancel</strong> routine is set by calling <strong>IoSetCancelRoutine</strong> and passing the function pointer to the cancellation routine for the IRP as the second parameter to the function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IO_DPC_ROUTINE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine" data-raw-source="[&lt;em&gt;DpcForIsr&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine)"><em>DpcForIsr</em></a></p>
-<p>The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine" data-raw-source="[&lt;em&gt;DpcForIsr&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine)"><em>DpcForIsr</em></a> routine is registered by calling <em>IoInitializeDpcRequest</em> and passing the function pointer to the <em>DpcForIsr</em> routine as the second parameter. To queue the DPC, call <em>IoQueueDpc</em> from the ISR routine by using the same DPC object.</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine" data-raw-source="[&lt;em&gt;DpcForIsr&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine)"><em>DpcForIsr</em></a></p>
+<p>The <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine" data-raw-source="[&lt;em&gt;DpcForIsr&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine)"><em>DpcForIsr</em></a> routine is registered by calling <em>IoInitializeDpcRequest</em> and passing the function pointer to the <em>DpcForIsr</em> routine as the second parameter. To queue the DPC, call <em>IoQueueDpc</em> from the ISR routine by using the same DPC object.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KDEFERRED_ROUTINE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine" data-raw-source="[&lt;em&gt;CustomDpc&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine)"><em>CustomDpc</em></a></p>
-<p>The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine" data-raw-source="[&lt;em&gt;CustomDpc&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine)"><em>CustomDpc</em></a> routine is set by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc" data-raw-source="[&lt;strong&gt;KeInitializeDpc&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc)"><strong>KeInitializeDpc</strong></a> and passing the function pointer to the <em>CustomDpc</em> as the second parameter. To queue the <em>CustomDpc</em> for the driver, call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc" data-raw-source="[&lt;strong&gt;KeInsertQueueDpc&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc)"><strong>KeInsertQueueDpc</strong></a> from the ISR routine by using the same DPC object.</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine" data-raw-source="[&lt;em&gt;CustomDpc&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine)"><em>CustomDpc</em></a></p>
+<p>The <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine" data-raw-source="[&lt;em&gt;CustomDpc&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine)"><em>CustomDpc</em></a> routine is set by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc" data-raw-source="[&lt;strong&gt;KeInitializeDpc&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc)"><strong>KeInitializeDpc</strong></a> and passing the function pointer to the <em>CustomDpc</em> as the second parameter. To queue the <em>CustomDpc</em> for the driver, call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc" data-raw-source="[&lt;strong&gt;KeInsertQueueDpc&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc)"><strong>KeInsertQueueDpc</strong></a> from the ISR routine by using the same DPC object.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>KSERVICE_ROUTINE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine" data-raw-source="[&lt;em&gt;InterruptService&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine)"><em>InterruptService</em></a></p>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine" data-raw-source="[&lt;em&gt;InterruptService&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine)"><em>InterruptService</em></a></p>
 <p>The InterruptService routine (ISR) services a device interrupt and schedules post-interrupt processing of received data, if necessary.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>REQUEST_POWER_COMPLETE</p></td>
-<td align="left"><p>The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-request_power_complete" data-raw-source="[&lt;em&gt;PowerCompletion&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-request_power_complete)"><em>PowerCompletion</em></a> callback routine completes the processing of a power IRP. If the driver needs to perform additional tasks after all other drivers have completed the IRP, the driver registers a <em>PowerCompletion</em> callback routine during the call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp" data-raw-source="[&lt;strong&gt;PoRequestPowerIrp&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)"><strong>PoRequestPowerIrp</strong></a> routine that allocates the IRP.</p></td>
+<td align="left"><p>The <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-request_power_complete" data-raw-source="[&lt;em&gt;PowerCompletion&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-request_power_complete)"><em>PowerCompletion</em></a> callback routine completes the processing of a power IRP. If the driver needs to perform additional tasks after all other drivers have completed the IRP, the driver registers a <em>PowerCompletion</em> callback routine during the call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp" data-raw-source="[&lt;strong&gt;PoRequestPowerIrp&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)"><strong>PoRequestPowerIrp</strong></a> routine that allocates the IRP.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WORKER_THREAD_ROUTINE</p></td>
 <td align="left"><p><em>Routine</em></p>
-<p><em>Routine</em> is the callback routine that is specified in the second parameter to the <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl" data-raw-source="[&lt;strong&gt;ExInitializeWorkItem&lt;/strong&gt;](../kernel/mmcreatemdl.md)"><strong>ExInitializeWorkItem</strong></a> function.</p>
+<p><em>Routine</em> is the callback routine that is specified in the second parameter to the <a href="/windows-hardware/drivers/kernel/mmcreatemdl" data-raw-source="[&lt;strong&gt;ExInitializeWorkItem&lt;/strong&gt;](../kernel/mmcreatemdl.md)"><strong>ExInitializeWorkItem</strong></a> function.</p>
 <p>The <em>Routine</em> should only be declared this way if the driver calls <strong>ExQueueWorkItem</strong> to add the work item to a system queue.</p></td>
 </tr>
 </tbody>

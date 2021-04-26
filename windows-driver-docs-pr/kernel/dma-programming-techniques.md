@@ -1,7 +1,6 @@
 ---
 title: DMA Programming Techniques
 description: DMA Programming Techniques
-ms.assetid: bdd8ffa4-8f09-41ed-b0f8-8edabbe65393
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

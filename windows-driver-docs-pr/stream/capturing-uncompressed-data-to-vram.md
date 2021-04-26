@@ -1,7 +1,6 @@
 ---
 title: Capturing Uncompressed Data to VRAM
 description: Capturing uncompressed data to VRAM
-ms.assetid: efec607d-3337-40a5-812c-57292f201d54
 keywords:
 - VRAM capture WDK AVStream , uncompressed data
 - uncompressed data WDK VRAM capture

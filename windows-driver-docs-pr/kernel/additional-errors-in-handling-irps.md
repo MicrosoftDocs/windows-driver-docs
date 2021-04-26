@@ -1,7 +1,6 @@
 ---
 title: Additional Errors in Handling IRPs
 description: Additional Errors in Handling IRPs
-ms.assetid: fb46e7a8-8181-46d3-a929-cec01fd71f20
 keywords: ["reliability WDK kernel , double-completed IRPs", "double-completed IRPs WDK kernel", "lost IRPs WDK kernel", "reliability WDK kernel , lost IRPs", "converging public IOCTL and private IOCTL paths", "reliability WDK kernel , converge public and private IOCTL paths"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

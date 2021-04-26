@@ -1,7 +1,6 @@
 ---
 title: Making Outgoing Calls
 description: Making Outgoing Calls
-ms.assetid: 295b3f6d-d53b-4030-b7e9-35ab7524d9aa
 keywords:
 - CoNDIS WAN drivers WDK networking , outgoing calls
 - telephonic services WDK WAN , outgoing calls

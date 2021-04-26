@@ -1,7 +1,6 @@
 ---
 title: SetPersistentEntry function
 description: The SetPersistentEntry method adds a binding to the list of bindings associated with the indicated port.
-ms.assetid: 52680641-9f63-4c8e-9538-4c725b9074a3
 keywords: ["SetPersistentEntry function Storage Devices"]
 topic_type:
 - apiref

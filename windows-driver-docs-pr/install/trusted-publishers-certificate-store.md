@@ -1,7 +1,6 @@
 ---
 title: Trusted Publishers Certificate Store
 description: Trusted Publishers Certificate Store
-ms.assetid: e2fcb0ce-82e3-499a-85b9-76e4e742190e
 keywords:
 - driver signing WDK , Trusted Publishers certificate store
 - Trusted Publishers certificate store WDK
@@ -39,7 +38,5 @@ For more information about software restriction policies and using Certificate R
 
 For more information about how to deploy Authenticode certificates in an enterprise by using Group Policy, see the readme file *Selfsign_readme.htm*, which is located in the *src\\general\\build\\driversigning* directory of the WDK.
 
-For more information about certificate stores, see the [Code Signing Best Practices](https://go.microsoft.com/fwlink/p/?linkid=68250) website.
-
- 
+For more information about certificate stores, see the [Code Signing Best Practices](/windows-hardware/test/hlk/) website.
 

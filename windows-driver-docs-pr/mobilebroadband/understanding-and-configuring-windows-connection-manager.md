@@ -1,7 +1,6 @@
 ---
 title: Understanding and configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
-ms.assetid: 5ef0034f-5b30-4484-a11c-ed19931484a2
 ms.date: 05/03/2019
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ This topic describes how Windows automatically manages physical wireless connect
 
 ## <span id="Connection_management_policies"></span><span id="connection_management_policies"></span><span id="CONNECTION_MANAGEMENT_POLICIES"></span>Connection management policies
 
-Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) API or Group Policy.
+Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](/windows/win32/api/wcmapi/nf-wcmapi-wcmsetproperty) API or Group Policy.
 
 ### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections
 
@@ -32,7 +31,7 @@ This policy is configured using the **fMinimizeConnections** Group Policy. It is
 
 #### Versions of Windows before Windows 10, version 1809, build 17763.404
 
-In Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1809, build 17763.404, this policy is a boolean value that can be modified using either Group Policy or the [WcmSetProperty](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) API.
+In Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1809, build 17763.404, this policy is a boolean value that can be modified using either Group Policy or the [WcmSetProperty](/windows/win32/api/wcmapi/nf-wcmapi-wcmsetproperty) API.
 
 If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
 
@@ -197,17 +196,17 @@ To remove a profile from the preferred network list while it is in range, select
 
 An application may create new profiles in the network list using the appropriate media-specific API:
 
--   For Wi-Fi networks, use the [**WlanSetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile) function.
+-   For Wi-Fi networks, use the [**WlanSetProfile**](/windows/win32/api/wlanapi/nf-wlanapi-wlansetprofile) function.
 
--   For mobile broadband networks, use the [**IMbnConnectionProfileManager::CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) method.
+-   For mobile broadband networks, use the [**IMbnConnectionProfileManager::CreateConnectionProfile**](/windows/win32/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) method.
 
-To modify the order of the network list, use the [**WcmSetProfileList**](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetprofilelist) function. We do not recommend using the [**WlanSetProfileList**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofilelist) function, as it may disturb the position of mobile broadband profiles in the network list in unintended ways.
+To modify the order of the network list, use the [**WcmSetProfileList**](/windows/win32/api/wcmapi/nf-wcmapi-wcmsetprofilelist) function. We do not recommend using the [**WlanSetProfileList**](/windows/win32/api/wlanapi/nf-wlanapi-wlansetprofilelist) function, as it may disturb the position of mobile broadband profiles in the network list in unintended ways.
 
 To delete profiles from the network list, use the appropriate media-specific API:
 
--   For Wi-Fi networks, use the [**WlanDeleteProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlandeleteprofile) function.
+-   For Wi-Fi networks, use the [**WlanDeleteProfile**](/windows/win32/api/wlanapi/nf-wlanapi-wlandeleteprofile) function.
 
--   For mobile broadband networks, use the [**IMbnConnectionProfile::Delete**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofile-delete) method.
+-   For mobile broadband networks, use the [**IMbnConnectionProfile::Delete**](/windows/win32/api/mbnapi/nf-mbnapi-imbnconnectionprofile-delete) method.
 
 ### <span id="Command-line"></span><span id="command-line"></span><span id="COMMAND-LINE"></span>Command-line
 

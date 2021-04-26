@@ -1,7 +1,6 @@
 ---
 title: Testing Local Printer Connectivity
 description: Testing Local Printer Connectivity
-ms.assetid: 08a16c04-fc64-4e19-b7f2-7a078bc151a2
 keywords:
 - testing drivers WDK printer
 - printer drivers WDK , testing

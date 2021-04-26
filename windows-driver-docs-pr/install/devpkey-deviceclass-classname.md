@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_ClassName
 description: DEVPKEY_DeviceClass_ClassName
-ms.assetid: dc085e27-06c7-49ca-808f-3d1952cb8aa9
 keywords: ["DEVPKEY_DeviceClass_ClassName Device and Driver Installation"]
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Remarks
 
 The value of DEVPKEY_DeviceClass_ClassName is set by the **Class** directive that is included in the [**INF Version section**](./inf-driverver-directive.md) that installs the device setup class.
 
-You can call [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_ClassName.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_ClassName.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_ClassName property key. For information about how to access the name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](./accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md).
 
@@ -74,11 +73,11 @@ Requirements
 
 [**INF Version section**](./inf-driverver-directive.md)
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiClassNameFromGuid**](/windows/desktop/api/setupapi/nf-setupapi-setupdiclassnamefromguida)
+[**SetupDiClassNameFromGuid**](/windows/win32/api/setupapi/nf-setupapi-setupdiclassnamefromguida)
 
  
 

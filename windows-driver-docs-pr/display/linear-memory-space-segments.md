@@ -1,7 +1,6 @@
 ---
 title: Linear Memory-Space Segments
 description: Linear Memory-Space Segments
-ms.assetid: c937eb39-b9ec-454e-98c5-7f5274328226
 keywords:
 - memory segments WDK display , linear memory-space segments
 - linear memory-space segments WDK display

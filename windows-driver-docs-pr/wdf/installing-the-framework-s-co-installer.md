@@ -1,7 +1,6 @@
 ---
 title: Specifying the KMDF Co-installer in an INF File
 description: If you include a co-installer in your driver package, read this topic for information about sections you must provide in your driver's INF file.
-ms.assetid: e4f476ad-1ab5-44e3-9368-7467479bda85
 keywords:
 - Kernel-Mode Driver Framework WDK , installing drivers
 - framework-based drivers WDK KMDF , installing
@@ -16,6 +15,18 @@ ms.localizationpriority: medium
 
 # Specifying the KMDF Co-installer in an INF File
 
+> [!NOTE]
+> If your driver only targets Windows 10, you do not need to redistribute WDF or provide a Coinstaller in your driver package. To target Windows 10:
+>1. In Visual Studio, in the **Project Settings** property page, under **Driver Settings** -> **Target OS Version**, select **Windows 10 or higher**.  This is equivalent to adding the following to the .vcxproj file: 
+>```xml
+><PropertyGroup Label="Configuration">
+><TargetVersion>Windows10</TargetVersion>
+>```
+>2. In the [INF Manufacturer Section](../install/inf-manufacturer-section.md), specify 10.0 as target OS version, as follows:
+>```inf
+>[Manufacturer]
+>%MyMfg% = MyMfg, NTamd64.10.0
+>```
 
 If you include a co-installer in your [driver package](../install/components-of-a-driver-package.md), read this topic for information about sections you must provide in your driver's INF file. This information does not apply if you provide your own setup application that calls Microsoft-supplied .msu redistributables.
 
@@ -51,7 +62,7 @@ You can avoid creating multiple INF files for multiple versions of the framework
 
 ### <a href="" id="sample-inf-ddinstall-coinstallers-and-ddinstall-wdf-sections"></a>**Sample INF** ***DDInstall*.CoInstallers and** ***DDInstall*.Wdf Sections**
 
-The following code example shows how to create the INF <em>DDInstall</em>**.CoInstallers** section and INF <em>DDInstall</em>**.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](https://go.microsoft.com/fwlink/p/?linkid=256129) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
+The following code example shows how to create the INF <em>DDInstall</em>**.CoInstallers** section and INF <em>DDInstall</em>**.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](/samples/browse/) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
 
 To create *MyDevice.inf*, you must change all **ECHO\_Device** substrings in *Echo.inf* to a name that is appropriate for your product. The following code example uses **MyDevice**.
 
@@ -121,6 +132,3 @@ KmdfLibraryVersion = 1.0
 ....
 =============== End of MyDevice.inf ===============
 ```
-
- 
-

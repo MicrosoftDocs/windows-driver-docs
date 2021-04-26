@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_WRITE (IFS)
 description: IRP_MJ_WRITE
-ms.assetid: 8f16a579-1598-4f70-8d88-dfe877daec31
 keywords: ["IRP_MJ_WRITE Installable File System Drivers"]
 topic_type:
 - apiref
@@ -127,7 +126,7 @@ Length in bytes of the data to be written. If the write operation is successful,
 Remarks
 -------
 
-File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When processing pre-read or pre-write operations, filters that allocate and swap buffers need to round the size of an allocated buffer up to a multiple of the sector size of the associated device. If they do not, the length of data transferred from the underlying file system will exceed the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](https://go.microsoft.com/fwlink/p/?linkid=256055).
+File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When processing pre-read or pre-write operations, filters that allocate and swap buffers need to round the size of an allocated buffer up to a multiple of the sector size of the associated device. If they do not, the length of data transferred from the underlying file system will exceed the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](/samples/browse/).
 
 ## See also
 
@@ -151,6 +150,4 @@ File systems round write and read operations at end of file up to a multiple of 
 [**IRP\_MJ\_WRITE (WDK Kernel Reference)**](../kernel/irp-mj-write.md)
 
 [**ZwWriteFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile)
-
- 
 

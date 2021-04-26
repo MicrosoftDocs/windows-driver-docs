@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - Audio-capable peripheral radios
 description: Bluetooth Test Platform (BTP) supported hardware (audio).
-ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 
@@ -14,6 +13,7 @@ The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to c
 | Radio | Capabilities | Parameter |
 | --- | --- | --- |
 | RN52 | Basic Rate (BR) radio | rn52 (ex. RunPairingTests.bat rn52) |
+| BM64 | Dual Mode radio | bm64 (ex. RunPairingTests.bat bm64) |
 
 ## Audio Sled (RN52 radio)
 
@@ -35,3 +35,31 @@ The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 - Version 3.0 audio module
 - Fully certified Class 2 BR Bluetooth 2.1+EDR
 - Small form factor, low power, surface mount module
+
+## BM-64-EVB-C2 (BM64 Radio)
+
+The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speaker, or multi-speaker peripherals.
+More information can be found via the BM64 page from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64).
+The BM-64-EVB allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci.
+More information can be found via the BM-64-EVB page from [**Microchip**](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/BM-64-EVB-C2).
+
+> [!NOTE]
+> The BM-64-EVB development occurred with the Class 2 stereo audio module version (BM-64-EVB-C2) but should be compatible with the Class 1 audio module (BM-64-EVB-C1).
+
+### BM64 Radio
+
+![Photo of the BM64 Radio](images/BM64.png)
+
+### BM64 Radio on BM64 Evaluation Board
+
+![Photo of the BM-64-EVB](images/BM64-EVB-alpha.png)
+
+### Features
+
+- UART data connection with custom packet structure
+- Supports SPP, A2DP, HFP, and AVRCP profiles
+- Bluetooth v5.0
+- Supports Bluetooth dual-mode (BDR/EDR/BLE)
+- Supports AAC and SBC codecs
+- Heavily featured, surface mount module
+- Using BM-64-EVB does not require a Traduci

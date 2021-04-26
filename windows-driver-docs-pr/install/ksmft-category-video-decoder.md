@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_VIDEO_DECODER
 description: KSMFT_CATEGORY_VIDEO_DECODER
-ms.assetid: 56f2c39a-dea6-4dc0-84bb-f052d27fb084
 keywords: ["KSMFT_CATEGORY_VIDEO_DECODER Device and Driver Installation"]
 topic_type:
 - apiref

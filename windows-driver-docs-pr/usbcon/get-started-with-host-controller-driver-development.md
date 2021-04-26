@@ -20,15 +20,12 @@ In the preceding image,
 -   **USB host controller extension (Ucx01000.sys)** is an abstraction layer to the hub driver above in the stack, and provides a generic mechanism for queuing requests to the underlying host controller driver.
 -   **USB host controller driver** manages the hardware. Usbxhci.sys is one such driver that is provided by Microsoft, that targets xHCI spec compliant USB controller hardware, in particular. It may be necessary for independent hardware developers to write their own host controller driver, rather than use the inbox Usbxhci.sys. For example, for an XHCI hardware that is not fully compliant with the spec and therefore cannot use Usbxhci.sys or for non-XHCI hardware, such as USB over TCP connection.
 
-The bidirectional communication that takes place between UCX and the host controller driver takes place by using [USB host controller extension (UCX) programming interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). Each driver statically links to the entry points in the Microsoft-provided stub library (Ucx01000.lib) when the driver is compiled.
+The bidirectional communication that takes place between UCX and the host controller driver takes place by using [USB host controller extension (UCX) programming interfaces](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). Each driver statically links to the entry points in the Microsoft-provided stub library (Ucx01000.lib) when the driver is compiled.
 
 Here are the device stacks loaded for the host controller driver:
 
 ![ucx device stack](images/ucx-device-stack.png)
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[Universal Serial Bus (USB) Drivers](../index.yml)  
+[USB Driver Development Guide](usb-driver-development-guide.md)

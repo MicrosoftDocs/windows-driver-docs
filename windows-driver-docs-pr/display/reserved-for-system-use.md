@@ -1,7 +1,6 @@
 ---
 title: Reserved For System Use
 description: Reserved For System Use
-ms.assetid: F8181743-8547-4B6C-9F02-7D3BFC4B5258
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

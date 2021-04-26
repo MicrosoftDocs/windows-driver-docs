@@ -1,7 +1,6 @@
 ---
 title: KsStreamPointerClone rule ()
 description: The KsStreamPointerClone rule specifies that a kernel-stream (KS) miniport driver correctly uses the KsStreamPointerClone and KsStreamPointerDelete functions.
-ms.assetid: 5ECF0070-0E36-4A91-B9FA-AA0DB7636B0E
 ms.date: 05/21/2018
 keywords: ["KsStreamPointerClone rule ()"]
 topic_type:
@@ -40,12 +39,10 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p><strong>verifier /domain ks</strong> [<em>options</em>] <strong>/driver</strong> <em>&lt;yourdriver&gt;</em></p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a>.</p></td>
+<p>For more information, see <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

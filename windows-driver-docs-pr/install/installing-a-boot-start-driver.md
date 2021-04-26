@@ -1,7 +1,6 @@
 ---
 title: Installing a Boot-Start Driver
 description: Installing a Boot-Start Driver
-ms.assetid: 0b93233b-266c-4d2e-a5d8-01d2d477dd13
 keywords:
 - Device setup WDK device installations , boot drivers
 - device installations WDK , boot drivers

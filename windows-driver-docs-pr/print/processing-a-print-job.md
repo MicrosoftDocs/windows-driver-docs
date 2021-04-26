@@ -1,7 +1,6 @@
 ---
 title: Processing a Print Job
 description: Processing a Print Job
-ms.assetid: c5e291d9-069c-4877-a167-862ba5794368
 keywords:
 - print processors WDK , print job processing
 - print jobs WDK , processing

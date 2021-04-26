@@ -1,7 +1,6 @@
 ---
 title: DDInstall Section in a Network INF File
 description: DDInstall Section in a Network INF File
-ms.assetid: f6621796-0d1f-4d96-9850-720718e7ac44
 keywords:
 - INF files WDK network , DDInstall section
 - network INF files WDK , DDInstall section

@@ -1,7 +1,6 @@
 ---
 title: AVStream Object Hierarchy
 description: AVStream Object Hierarchy
-ms.assetid: b7d6f06d-6c97-414e-a453-d375e2d7ccf5
 keywords:
 - AVStream object hierarchy WDK
 - objects WDK AVStream

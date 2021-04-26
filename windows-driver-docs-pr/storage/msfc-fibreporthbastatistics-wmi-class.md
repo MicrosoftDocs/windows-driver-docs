@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortHBAStatistics WMI Class
 description: MSFC\_FibrePortHBAStatistics WMI Class
-ms.assetid: 24c787b6-b9f7-4c9b-8d1d-6b2796f65622
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

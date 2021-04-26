@@ -1,7 +1,6 @@
 ---
 title: Resource List Objects
 description: Resource List Objects
-ms.assetid: a7f18d28-b78f-4b00-8cbb-9f62f5e88dfd
 keywords:
 - helper objects WDK audio , resource list objects
 - resource list objects WDK audio

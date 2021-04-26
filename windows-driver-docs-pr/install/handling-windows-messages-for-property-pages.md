@@ -1,7 +1,6 @@
 ---
 title: Handling Windows Messages for Property Pages
 description: Handling Windows Messages for Property Pages
-ms.assetid: 4920a003-59b5-41dc-a8ee-5e034087006a
 keywords:
 - device property pages WDK device installations , Windows messages
 - property pages WDK device installations , Windows messages
@@ -26,7 +25,7 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 In response to a WM_INITDIALOG message, the dialog box procedure initializes information in the property page. Such information might include an icon that represents the device, the friendly name of the device, and its PnP device description.
 
-[**SetupDiLoadClassIcon**](/windows/desktop/api/setupapi/nf-setupapi-setupdiloadclassicon) loads the icons for a specified device class and returns a handle to the loaded large icon that can be used in a subsequent call to **SendDlgItemMessage**. For example:
+[**SetupDiLoadClassIcon**](/windows/win32/api/setupapi/nf-setupapi-setupdiloadclassicon) loads the icons for a specified device class and returns a handle to the loaded large icon that can be used in a subsequent call to **SendDlgItemMessage**. For example:
 
 ```cpp
 if (SetupDiLoadClassIcon(
@@ -44,9 +43,9 @@ if (SetupDiLoadClassIcon(
 
 The handle returned in ClassIcon can be cast to the WPARAM that is required by the SendDlgItemMessage function. In the example, IDC_TEST_ICON identifies the control in the dialog box that receives the STM_SETICON message. The value of IDC_TEST_ICON must be defined in the provider. For additional functions that manipulate icons and bitmaps see [Device Installation Functions](/previous-versions/ff541299(v=vs.85)). For more information about **SendDlgItemMessage**, **DestroyIcon**, and using icons in dialog boxes, see the Windows SDK documentation.
 
-In addition to an icon that represents the device, a typical device property page includes a description or "friendly name" of the device and shows the current settings of device properties. The Plug and Play (PnP) manager stores the PnP properties of each device in the registry. A property page provider can call [**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) to get the value of any such property. If device- or class-specific configuration information has also been stored in the registry as part of the installation process, a property page provider can use other **SetupDiXxx** functions to extract that information for display. For more information, see [Device Installation Functions](/previous-versions/ff541299(v=vs.85)).
+In addition to an icon that represents the device, a typical device property page includes a description or "friendly name" of the device and shows the current settings of device properties. The Plug and Play (PnP) manager stores the PnP properties of each device in the registry. A property page provider can call [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) to get the value of any such property. If device- or class-specific configuration information has also been stored in the registry as part of the installation process, a property page provider can use other **SetupDiXxx** functions to extract that information for display. For more information, see [Device Installation Functions](/previous-versions/ff541299(v=vs.85)).
 
-When certain types of changes occur on the page, the property sheet sends a [WM_NOTIFY](https://go.microsoft.com/fwlink/p/?linkid=181554) message to the dialog box procedure. The dialog box procedure should be prepared to extract the notification code from the message parameters and respond appropriately.
+When certain types of changes occur on the page, the property sheet sends a [WM_NOTIFY](/windows/win32/controls/wm-notify) message to the dialog box procedure. The dialog box procedure should be prepared to extract the notification code from the message parameters and respond appropriately.
 
 For more information about the notifications that a dialog box procedure might encounter, such as the PSN_APPLY or PSN_HELP notifications, and how the procedure should handle them, see [Notifications](https://go.microsoft.com/fwlink/p/?linkid=181555) in the Windows SDK documentation.
 
@@ -56,7 +55,7 @@ The property sheet sends a PSN_APPLY notification message when the user clicks *
 
 When it receives the PSN_APPLY notification, the provider must do the following:
 
-1.  If it has not already done so, get a pointer to the device install parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure) for the device. This structure is available by calling [**SetupDiGetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa), passing the saved *DeviceInfoSet* and *DeviceInfoData* that were passed in the area referenced by the **lParam** member of the PROPSHEETPAGE structure.
+1.  If it has not already done so, get a pointer to the device install parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure) for the device. This structure is available by calling [**SetupDiGetDeviceInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa), passing the saved *DeviceInfoSet* and *DeviceInfoData* that were passed in the area referenced by the **lParam** member of the PROPSHEETPAGE structure.
 
 2.  Ensure that the user's changes are valid.
 
@@ -64,11 +63,9 @@ When it receives the PSN_APPLY notification, the provider must do the following:
 
     However, if the provider can ensure that the changes do not require the device's drivers to be stopped and then restarted, it does not have to set this flag.
 
-4.  Call [**SetupDiSetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) with the changed [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure to set the new parameters.
+4.  Call [**SetupDiSetDeviceInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) with the changed [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure to set the new parameters.
 
 ### <a href="" id="psn-reset-notifications"></a>PSN_RESET Notifications
 
 The property sheet sends a PSN_RESET notification message when the user clicks **Cancel**. In response to this message, the dialog box procedure should discard any changes that were made by the user.
-
- 
 

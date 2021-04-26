@@ -1,7 +1,6 @@
 ---
 title: Filtering Extensions
 description: Filtering Extensions
-ms.assetid: EDE50213-DFA0-4D8B-9E15-12AED8FDE5CA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

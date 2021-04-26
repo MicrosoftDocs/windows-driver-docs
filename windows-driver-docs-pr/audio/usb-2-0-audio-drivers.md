@@ -15,13 +15,13 @@ Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with W
 
 The driver is named: _usbaudio2.sys_ and the associated inf file is _usbaudio2.inf_.
 
-The driver will identify in device manager as "USB Audio Class 2 Device." This name will be overwritten with a USB Product string, if it is available.
+The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with a USB Product string, if it is available.
 
 The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver.
 
 ## Architecture
 
-USBAudio.Sys fits within the wider architecture of Windows USB Audio as shown. 
+usbaudio2.sys fits within the wider architecture of Windows USB Audio as shown. 
 
 ![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom](images/usb-2-0-audio-arch.png)
 
@@ -41,7 +41,7 @@ The driver supports the formats listed below. An alternate setting which specifi
 
 Type I formats (FMT-2 2.3.1):
 
-- PCM Format with 8..32 bits per sample (FMT20 2.3.1.7.1)
+- PCM Format with 8..32 bits per sample (FMT-2 2.3.1.7.1)
 - PCM8 Format (FMT-2 2.3.1.7.2)
 - IEEE_FLOAT Format (FMT-2 2.3.1.7.3)
 
@@ -56,7 +56,7 @@ Type III formats (FMT-2 2.3.3 and A.2.3):
 
 ## Feature descriptions
 
-This section describes the features of the of the USB Audio 2.0 driver.
+This section describes the features of the USB Audio 2.0 driver.
 
 ### Audio function topology
 
@@ -92,7 +92,7 @@ The size of isochronous packets created by the device must be within the limits 
 
 An audio function must implement exactly one AudioControl  Interface Descriptor (ADC-2 4.7) and one or more AudioStreaming Interface Descriptors (ADC-2 4.9). A function with an audio control interface but no streaming interface is not supported.
 
-The driver supports all descriptor types defined in ADC20, section 4. The following subsections provide comments on some specific descriptor types.
+The driver supports all descriptor types defined in ADC-2, section 4. The following subsections provide comments on some specific descriptor types.
 
 ### Class-Specific AS interface descriptor
 
@@ -341,7 +341,7 @@ This USB Audio 2.0 class driver was developed by Thesycon and is supported by Mi
 
 ### See also
 
-[Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
 
 [Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
 

@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for 32-bit Indices
 description: Reporting Support for 32-bit Indices
-ms.assetid: e9ea5f0e-9b95-4671-a947-55692eca8902
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , index buffers
 - index buffers WDK Directx 8.0

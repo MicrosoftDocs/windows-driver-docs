@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAXIMUM_SEND_PACKETS
 description: As a query, the OID_GEN_MAXIMUM_SEND_PACKETS OID specifies the maximum number of send packet descriptors that a miniport driver's MiniportSendPackets function can accept.
-ms.assetid: 7e87285f-26c5-4b7d-99a8-bc0f30c643dc
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAXIMUM_SEND_PACKETS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: WDF Architecture
 description: WDF Architecture
-ms.assetid: e5e2ed4a-5faf-4879-965f-7316fe64edf9
 keywords:
 - kernel-mode drivers WDK KMDF , architecture
 - KMDF WDK , architecture

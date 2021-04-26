@@ -1,7 +1,6 @@
 ---
 title: OID_SWITCH_PARAMETERS
 description: A Hyper-V extensible switch extension issues an object identifier (OID) query request of OID_SWITCH_PARAMETERS to obtain the configuration data of the extensible switch.
-ms.assetid: F2CA0BE5-ED21-4ACF-B26A-4F512D4B15C7
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_PARAMETERS Network Drivers Starting with Windows Vista
@@ -18,7 +17,7 @@ If the OID query request completes successfully, the **InformationBuffer** membe
 Remarks
 -------
 
-When the extension processes the returned [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure, it must not assume that the various string members of the **NDIS\_SWITCH\_PARAMETERS** structure, such as **SwitchName**, are null-terminated. The data types for these string members are type-defined by the [**IF\_COUNTED\_STRING**](/windows/desktop/api/ifdef/ns-ifdef-_if_counted_string_lh) structure. The extension must determine the string length from the value of the **Length** member of this structure.
+When the extension processes the returned [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure, it must not assume that the various string members of the **NDIS\_SWITCH\_PARAMETERS** structure, such as **SwitchName**, are null-terminated. The data types for these string members are type-defined by the [**IF\_COUNTED\_STRING**](/windows/win32/api/ifdef/ns-ifdef-if_counted_string_lh) structure. The extension must determine the string length from the value of the **Length** member of this structure.
 
 **Note**  If the string is null-terminated, the **Length** member must not include the terminating null character.
 
@@ -46,7 +45,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to return the OID_SWITCH_PARAMETERS structure for an OID query request. The underlying miniport edge of the extensible switch sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to return the OID_SWITCH_PARAMETERS structure for an OID query request. The underlying miniport edge of the extensible switch sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -86,6 +85,4 @@ Requirements
 [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters)
 
 [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest)
-
- 
 

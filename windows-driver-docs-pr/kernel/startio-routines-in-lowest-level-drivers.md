@@ -1,7 +1,6 @@
 ---
 title: StartIo Routines in Lowest-Level Drivers
 description: StartIo Routines in Lowest-Level Drivers
-ms.assetid: f79f8929-bcf4-46a2-bf0e-0f8fb0720dd9
 keywords: ["StartIo routines, lowest-level drivers", "I/O control requests WDK kernel", "buffered I/O WDK kernel", "direct I/O WDK kernel", "synchronization WDK IRPs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: watermarkPath XML Element
 description: watermarkPath XML Element
-ms.assetid: 3c64738b-4ead-4e78-a1bd-45d098a11dad
 keywords: ["watermarkPath XML Element Device and Driver Installation"]
 topic_type:
 - apiref

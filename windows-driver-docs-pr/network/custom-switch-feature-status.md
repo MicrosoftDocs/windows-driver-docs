@@ -1,7 +1,6 @@
 ---
 title: Custom Switch Feature Status
 description: Custom Switch Feature Status
-ms.assetid: 2362EE05-9CC9-451D-80D1-C18CC9274BAB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

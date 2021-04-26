@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_FNUMBER
 description: The WIA\_DPC\_FNUMBER property corresponds to the aperture of the lens, in units of the f-stop number scaled by 100.
-ms.assetid: 85f3fbc8-8b20-45a7-8ed6-0d22ac7d7f6f
 keywords: ["WIA_DPC_FNUMBER Imaging Devices"]
 topic_type:
 - apiref

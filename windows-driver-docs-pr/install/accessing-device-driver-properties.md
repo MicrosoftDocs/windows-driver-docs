@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Driver Properties
 description: Accessing Device Driver Properties
-ms.assetid: 433ad114-46aa-470b-b529-e6b6fb7f6bd7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,24 +25,22 @@ For information about how to use property keys to access device driver propertie
 
 To access device driver properties on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) to retrieve a handle to the software key for a device instance. Supply the following parameter values:
+1.  Call [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) to retrieve a handle to the software key for a device instance. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to the device information set that contains the device information element for which to retrieve the global software key.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device information element for which to retrieve the global software key.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device information element for which to retrieve the global software key.
     -   Set *Scope* to DICS_FLAG_GLOBAL.
     -   Set *HwProfile* to zero.
     -   Set *KeyType* to DIREG_DRV, which configures **SetupDiOpenDevRegKey** to retrieve a handle to the software key for a device instance.
     -   Set *samDesired* to a REGSAM-typed value that specifies the access that you require for this key. For all access, set *samDesired* to KEY_ALL_ACCESS.
 
-    If the call to [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) succeeds, **SetupDiOpenDevRegKey** returns a handle to the requested software key. If the function call fails, **SetupDiOpenDevRegKey** returns INVALID_HANDLE_VALUE. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    If the call to [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) succeeds, **SetupDiOpenDevRegKey** returns a handle to the requested software key. If the function call fails, **SetupDiOpenDevRegKey** returns INVALID_HANDLE_VALUE. A subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the most recently logged error code.
 
-2.  Supply the handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) or to [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device instance driver property.
+2.  Supply the handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) or to [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the registry entry value that corresponds to the device instance driver property.
 
-3.  Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the software registry key after access to the key is no longer required.
+3.  Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the software registry key after access to the key is no longer required.
 
 ### <a href="" id="using-setupdigetdriverinstallparams-to-retrieve-driver-rank"></a> Using SetupDiGetDriverInstallParams to Retrieve Driver Rank
 
-On Windows Server 2003, Windows XP, and Windows 2000, you can retrieve the rank of a driver that is currently installed for a device by calling [**SetupDiGetDriverInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa). **SetupDiGetDriverInstallParams** retrieves a pointer to an [**SP_DRVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_drvinstall_params) structure for the driver in the output parameter *DriverInstallParams*. The **Rank** member of the retrieved SP_DRVINSTALL_PARAMS structure contains the driver rank.
-
- 
+On Windows Server 2003, Windows XP, and Windows 2000, you can retrieve the rank of a driver that is currently installed for a device by calling [**SetupDiGetDriverInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa). **SetupDiGetDriverInstallParams** retrieves a pointer to an [**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_drvinstall_params) structure for the driver in the output parameter *DriverInstallParams*. The **Rank** member of the retrieved SP_DRVINSTALL_PARAMS structure contains the driver rank.
 

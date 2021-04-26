@@ -1,7 +1,6 @@
 ---
 title: Unloading a Miniport Driver
 description: Unloading a Miniport Driver
-ms.assetid: c5199a0f-31c3-42e4-8758-cbe480dff682
 keywords:
 - miniport drivers WDK networking , unloading
 - NDIS miniport drivers WDK , unloading

@@ -1,7 +1,6 @@
 ---
 title: Previous WDK versions and other downloads
 description: Install versions of the Windows Driver Kit (WDK), the Windows Debugger (WinDBG), and more.
-ms.assetid: e07d9f05-f8d0-46e5-82e6-c23baa614bb1
 keywords:
 - Windows Driver Kit
 - previous versions
@@ -28,12 +27,22 @@ Enterprise WDK (EWDK), and additional downloads for support purposes. To
 use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
 
+## Runtime requirements
+
+You can run the Windows 10, version 1903 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
+
+|Client OS|Server OS|
+|-|-|
+|Windows 10|Windows Server 2019, Windows Server 2016|
+|Windows 8.1|Windows Server 2012 R2|
+Windows 8|Windows Server 2012|
+Windows 7|Windows Server 2008 R2 SP1|
+
 ## Step 1: Install Visual Studio
 
-Development of drivers is supported for specific versions of Visual
-Studio. To develop a driver for a specific version of Windows, you must
-use one of the versions of Visual Studio that are identified (and linked
-for download) in the following table.
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
+
+The following table indicates which Visual Studio version is required for the different releases of the WDK.
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
@@ -80,16 +89,19 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
+| Windows 10, version 2004 | WDK for Windows 10, version 2004 (10.1094.1)* See Note below |
 | Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
 | Windows 10, version 1809 | [WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) |
 | Windows 10, version 1803 | [WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) |
 | Windows 10, version 1709 | [WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) |
 | Windows 10, version 1703 | [WDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845980) |
 | Windows 10, version 1607 | [WDK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526733)                |
-| Windows 8.1 Update       | [WDK 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393659) (English only) <br/>[WDK 8.1 Update Test Pack](https://go.microsoft.com/fwlink/p/?LinkID=393660) (English only) <br/>[WDK 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) |
+| Windows 8.1 Update       | WDK 8.1 Update (English only) - temporarily unavailable<br/>WDK 8.1 Update Test Pack (English only) - temporarily unavailable <br/>[WDK 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) |
 | Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) |
-| Windows XP <br/>Windows Server 2003 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
+| Windows 7 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
+>[!NOTE]
+>Please review [Hardware development kits for Windows 10, Version 2004](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
 
 > [!IMPORTANT]
 > If you have installed the WDK for Windows 10, version 1703 on a system that had the WDK for Windows 10, version 1607 installed, some files from the earlier version of the WDK might have been removed. To restore these files:
@@ -144,8 +156,7 @@ Framework 4.0.
 
 > [!IMPORTANT]
 > Newer versions of the Visual C++ 2010 Redistributable can cause
-> issues when you install the SDK for Windows 7. For more information, see
-> [Windows SDK Fails to Install with Return Code 5100](https://support.microsoft.com/help/2717426/windows-sdk-fails-to-install-with-return-code-5100) on Microsoft Support.
+> issues when you install the SDK for Windows 7.
 
 Get the standalone debugging tools for Windows XP by first downloading
 the Windows 7 SDK:

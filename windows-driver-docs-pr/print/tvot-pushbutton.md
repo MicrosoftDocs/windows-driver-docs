@@ -1,7 +1,6 @@
 ---
 title: TVOT\_PUSHBUTTON
 description: TVOT\_PUSHBUTTON
-ms.assetid: 47d51066-c1bc-4a84-bc9b-5091100b9f53
 keywords: ["TVOT_PUSHBUTTON Print Devices"]
 topic_type:
 - apiref
@@ -80,7 +79,7 @@ Depends on the **Style** member, as follows.
 <tbody>
 <tr class="odd">
 <td><p>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback)"><strong>_CPSUICALLBACK</strong></a>-typed function.</p></td>
+<td><p>Pointer to a <a href="/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback)"><strong>_CPSUICALLBACK</strong></a>-typed function.</p></td>
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_DLGPROC</p></td>
@@ -92,7 +91,7 @@ Depends on the **Style** member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_HTSETUP</p></td>
-<td><p>Pointer to a <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-devhtadjdata" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-devhtadjdata)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
+<td><p>Pointer to a <a href="/windows/win32/api/winddi/ns-winddi-devhtadjdata" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-devhtadjdata)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -156,12 +155,12 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_CALLBACK"></span><span id="pushbutton_type_callback"></span>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>CPSUI calls the application's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam)"><strong>CPSUICBPARAM</strong></a> structure's <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function's return value.)</p></td>
+<td><p>CPSUI calls the application's <a href="/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam)"><strong>CPSUICBPARAM</strong></a> structure's <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function's return value.)</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="PUSHBUTTON_TYPE_DLGPROC"></span><span id="pushbutton_type_dlgproc"></span>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>The application's dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage)"><strong>DLGPAGE</strong></a>.)</p>
-<p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam)"><strong>CPSUICBPARAM</strong></a> structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
+<td><p>The application's dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage)"><strong>DLGPAGE</strong></a>.)</p>
+<p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a <a href="/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam)"><strong>CPSUICBPARAM</strong></a> structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_HTCLRADJ"></span><span id="pushbutton_type_htclradj"></span>PUSHBUTTON_TYPE_HTCLRADJ</p></td>
@@ -263,6 +262,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

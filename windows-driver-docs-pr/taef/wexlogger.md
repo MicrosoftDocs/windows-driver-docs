@@ -1,7 +1,6 @@
 ---
 title: WexLogger
 description: WexLogger
-ms.assetid: D9F4AD08-19EA-4a6c-AD25-886FBEA334B8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,14 +36,14 @@ LOG_OUTPUT(L"Look, a number! %d", aNumber);
 
 In managed code, it will look like this:
 
-```cpp
+```cs
 Log.Comment("Rendering to the BufferView");
 Log.Comment("Render succeeded");
 ```
 
 In JScript, it will look like this:
 
-```cpp
+```js
 var log = new ActiveXObject("WEX.Logger.Log");
 log.Comment("Rendering to the BufferView");
 log.Comment("Render succeeded");
@@ -324,12 +323,12 @@ Three methods exist to generate WTT logs via the **WexLogger**. All of them requ
     ```
 
 -   If you are consuming WexLogger outside the TAEF framework, and you are not running in a lab environment, you must set the **&lt;YOUR\_PROCESS\_NAME&gt;\_CMD** environment variable to contain this option before calling **LogController::InitializeLogging()**. Example:
-    ```cpp
+    ```cs
     Environment.SetEnvironmentVariable("<YOUR_PROCESS_NAME>_CMD", "/enablewttlogging");
     LogController.InitializeLogging();
     ```
 
-    ```cpp
+    ```cs
     Environment.SetEnvironmentVariable("consoleapplication4_cmd", "/enablewttlogging");
     LogController.InitializeLogging();
     ```
@@ -340,12 +339,12 @@ Three methods exist to generate WTT logs via the **WexLogger**. All of them requ
     te my.test.dll /enablewttlogging /appendwttlogging
     ```
 
-    ```cpp
+    ```cs
     Environment.SetEnvironmentVariable("<YOUR_PROCESS_NAME>_CMD", "/enablewttlogging /appendwttlogging");
     LogController.InitializeLogging();
     ```
 
-    ```cpp
+    ```cs
     Environment.SetEnvironmentVariable("consoleapplication4_cmd", "/enablewttlogging /appendwttlogging");
     LogController.InitializeLogging();
     ```
@@ -400,12 +399,12 @@ With one or more of these options enabled, you will receive extra output every t
 
 Note: If you are consuming WexLogger outside the TAEF framework, you must set the **&lt;YOUR\_PROCESS\_NAME&gt;\_CMD** environment variable to contain these options before calling **LogController::InitializeLogging()**. Example:
 
-```cpp
+```cs
 Environment.SetEnvironmentVariable("<YOUR_PROCESS_NAME>_CMD", "/screencaptureonerror /minidumponerror /stacktraceonerror");
 LogController.InitializeLogging();
 ```
 
-```cpp
+```cs
 Environment.SetEnvironmentVariable("consoleapplication4_cmd", "/screencaptureonerror /minidumponerror /stacktraceonerror");
 LogController.InitializeLogging();
 ```
@@ -426,7 +425,7 @@ A common use for the WexLoggerErrorCallback function would be to write out the e
 
 Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be loaded into both NetFx 2/3/3.5 and NetFx 4 processes. This allows TAEF to run all managed assemblies above NetFx 2. If you're using Wex.Logger outside TAEF, then you need to add a [config file](/previous-versions/visualstudio/visual-studio-2008/ms229689(v=vs.90)) for your exe to configure the NetFx 4 runtime to load NetFx 2/3/3.5 binaries into it's process. The config file should contain the following:
 
-```cpp
+```xml
 <configuration> 
     <startup useLegacyV2RuntimeActivationPolicy="true">
         <supportedRuntime version="v4.0"/>
@@ -439,13 +438,13 @@ Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be load
 
 In order to shield test case authors from the burden of checking return values for each **Log** API call, the managed layer of the WexLogger reports unexpected error conditions via the use of the **LoggerController.WexLoggerError** event. You may subscribe to this event at any time by implementing your own **WexLoggerErrorEventHandler** and using the following familiar syntax for C# event subscription:
 
-```cpp
+```cs
 LogController.WexLoggerError += new WexLoggerEventHandler(My_WexLoggerErrorHandler);
 ```
 
 Here's an example of what your event handler might look like:
 
-```cpp
+```cs
 static void LogController_WexLoggerError(object sender, WexLoggerErrorEventArgs e)
 {
     ConsoleColor originalColor = Console.ForegroundColor;

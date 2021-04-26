@@ -1,7 +1,6 @@
 ---
 title: Halftoning
 description: Halftoning
-ms.assetid: 94cf0d87-055d-470e-94ca-225d519aeb14
 keywords:
 - GDI WDK Windows 2000 display , halftoning
 - graphics drivers WDK Windows 2000 display , halftoning
@@ -23,19 +22,19 @@ Traditional analog halftoning uses a halftoning screen, composed of cells of equ
 
 On a computer, most printing or screen shading also uses a fixed-cell pixel size. To simulate the variable dot size, a combination of cluster pixels simulates the halftone screen. GDI includes halftoning default parameters that provide a good first approximation. Additional device-specific information can be added to the system to improve output.
 
-The driver sends GDI the device-related specifications that GDI needs to do halftoning through the [**GDIINFO**](/windows/desktop/api/winddi/ns-winddi-_gdiinfo) structure returned by the [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev) function. The driver specifies the pattern size with the **ulHTPatternSize** member of GDIINFO, which defines the preferred output format for halftoning. For specific devices, halftoning relates to the halftone pattern sizes. GDI provides numerous predefined pattern sizes from 2 x 2 through 16 x 16.
+The driver sends GDI the device-related specifications that GDI needs to do halftoning through the [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-gdiinfo) structure returned by the [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function. The driver specifies the pattern size with the **ulHTPatternSize** member of GDIINFO, which defines the preferred output format for halftoning. For specific devices, halftoning relates to the halftone pattern sizes. GDI provides numerous predefined pattern sizes from 2 x 2 through 16 x 16.
 
 For each standard pattern size, there is also a modified version. It is identified by the suffix "\_M" on the standard pattern size's name. For example, the defined name of the standard 6-by-6 pattern is HT\_PATSIZE\_6x6, while the name of the modified 6-by-6 pattern is HT\_PATSIZE\_6x6\_M). The modified version gives more color resolution, but can produce a side effect of horizontal or vertical noise. In addition, because each of these pattern sizes is device resolution-dependent, the appropriate pattern size depends upon the specific device.
 
-The tradeoff between pattern size (spatial resolution) and color resolution is determined by the pattern size. A larger halftone pattern produces better color resolution, while a smaller pattern results in the best spatial resolution. Determining the best pattern size is frequently a matter of trial and error. For more information, refer to [**GDIINFO**](/windows/desktop/api/winddi/ns-winddi-_gdiinfo).
+The tradeoff between pattern size (spatial resolution) and color resolution is determined by the pattern size. A larger halftone pattern produces better color resolution, while a smaller pattern results in the best spatial resolution. Determining the best pattern size is frequently a matter of trial and error. For more information, refer to [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-gdiinfo).
 
 Another of the GDIINFO structure members affecting halftoning is **flHTFlags**, which contains flags that describe the device resolution needed for halftoning.
 
-GDI handles color adjustment requests from the application and passes the information down to driver functions through the graphics DDI. If the application selects halftoning and the surface is a standard format *DIB*, GDI processes the bitmap using its halftoning capabilities, after which, the bitmap is sent to the device. In the PostScript driver, the [**EngStretchBlt**](/windows/desktop/api/winddi/nf-winddi-engstretchblt) function can send the bitmap to the printer using either the [**DrvCopyBits**](/windows/desktop/api/winddi/nf-winddi-drvcopybits) or [**DrvBitBlt**](/windows/desktop/api/winddi/nf-winddi-drvbitblt) (in the SRCCOPY mode) functions.
+GDI handles color adjustment requests from the application and passes the information down to driver functions through the graphics DDI. If the application selects halftoning and the surface is a standard format *DIB*, GDI processes the bitmap using its halftoning capabilities, after which, the bitmap is sent to the device. In the PostScript driver, the [**EngStretchBlt**](/windows/win32/api/winddi/nf-winddi-engstretchblt) function can send the bitmap to the printer using either the [**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits) or [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) (in the SRCCOPY mode) functions.
 
 Letting GDI perform the halftoning instead of the PostScript printer, for example, provides a faster output with better WYSIWYG quality. An interface to the PostScript driver allows the user to adjust the halftoning and provides a check box to turn off GDI halftoning if the printer's built-in halftoning capabilities are preferred.
 
-The [**DrvDitherColor**](/windows/desktop/api/winddi/nf-winddi-drvdithercolor) function can return the DCR\_HALFTONE value, which requests that GDI approximate a color using the existing device (halftone) palette. DCR\_HALFTONE can be used with a display driver only when the device contains a device (halftone) palette, such as a VGA-16 adapter card, because it has a standard fixed palette. Monochrome drivers, including most raster printers, can use the *iMode* parameter in *DrvDitherColor* to obtain good gray-scale effects.
+The [**DrvDitherColor**](/windows/win32/api/winddi/nf-winddi-drvdithercolor) function can return the DCR\_HALFTONE value, which requests that GDI approximate a color using the existing device (halftone) palette. DCR\_HALFTONE can be used with a display driver only when the device contains a device (halftone) palette, such as a VGA-16 adapter card, because it has a standard fixed palette. Monochrome drivers, including most raster printers, can use the *iMode* parameter in *DrvDitherColor* to obtain good gray-scale effects.
 
 **Note**   Windows 2000 and later do not support halftoning on 24-bit (or higher) devices.
 

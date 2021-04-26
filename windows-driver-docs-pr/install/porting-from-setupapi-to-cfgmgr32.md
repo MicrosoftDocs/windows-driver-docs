@@ -1,7 +1,6 @@
 ---
 title: Porting code from SetupApi to CfgMgr32
 description: This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead.
-ms.assetid: 36668A17-EA56-464C-A38B-C75BE2359412
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the `api-ms-win-devices-config-l1-1-0.dll` API set (Windows 8 and later) or the `api-ms-win-devices-config-l1-1-1.dll` API set (Windows 8.1 and later). In Windows 10 and later, simply link to `onecore.lib`.
 
-To see a list of functions in the above API sets, please refer to [Windows API Sets](/windows/desktop/apiindex/windows-apisets) or [Onecore.lib: APIs from api-ms-win-devices-config-l1-1-1.dll](/windows/desktop/apiindex/umbrella-lib-onecore#_api-ms-win-devices-config-l1-1-1.dll).
+To see a list of functions in the above API sets, please refer to [Windows API Sets](/windows/win32/apiindex/windows-apisets) or [Onecore.lib: APIs from api-ms-win-devices-config-l1-1-1.dll](/windows/win32/apiindex/umbrella-lib-onecore#_api-ms-win-devices-config-l1-1-1.dll).
 
 The following sections include code examples that applications would typically use.
 
@@ -25,7 +24,7 @@ The following sections include code examples that applications would typically u
 ## Get a list of present devices and retrieve a property for each device
 
 
-This example gets a list of all present devices using [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) and iterates through them to retrieve the device description of each device.
+This example gets a list of all present devices using [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) and iterates through them to retrieve the device description of each device.
 
 ```ManagedCPlusPlus
 VOID
@@ -94,7 +93,7 @@ GetDevicePropertiesSetupapi(
 }
 ```
 
-This example gets a list of all present devices using [**CM_Get_Device_ID_List**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) and iterates through them to retrieve the device description of each device.
+This example gets a list of all present devices using [**CM_Get_Device_ID_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) and iterates through them to retrieve the device description of each device.
 
 ```ManagedCPlusPlus
 VOID
@@ -196,7 +195,7 @@ GetDevicePropertiesCfgmgr32(
 ## Get a list of interfaces, get the device exposing each interface, and get a property from the device
 
 
-This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw). For each interface, it gets the device exposing the interface and gets a property of that device.
+This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw). For each interface, it gets the device exposing the interface and gets a property of that device.
 
 ```ManagedCPlusPlus
 VOID
@@ -284,7 +283,7 @@ GetInterfacesAndDevicePropertySetupapi(
 }
 ```
 
-This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**CM_Get_Device_Interface_List**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista). For each interface, it gets the device exposing the interface and gets a property of that device.
+This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**CM_Get_Device_Interface_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista). For each interface, it gets the device exposing the interface and gets a property of that device.
 
 ```ManagedCPlusPlus
 VOID
@@ -415,7 +414,7 @@ GetInterfacesAndDevicePropertyCfgmgr32(
 ## Get a property from a specific device
 
 
-This example takes a device instance path for a particular device and retrieves a property from it using [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+This example takes a device instance path for a particular device and retrieves a property from it using [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 ```ManagedCPlusPlus
 VOID
@@ -477,7 +476,7 @@ GetDevicePropertySpecificDeviceSetupapi(
 }
 ```
 
-This example takes a device instance path for a particular device and retrieves a property from it using [**CM_Get_DevNode_Property**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw).
+This example takes a device instance path for a particular device and retrieves a property from it using [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw).
 
 ```ManagedCPlusPlus
 void
@@ -530,9 +529,9 @@ GetDevicePropertySpecificDeviceCfgmgr32(
 ## Disable device
 
 
-This example shows how to disable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_DISABLE**.
+This example shows how to disable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_DISABLE**.
 
-**Note**   By default, calling [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_disable_devnode), you must specify the **CM_DISABLE_PERSIST** flag.
+**Note**   By default, calling [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_disable_devnode), you must specify the **CM_DISABLE_PERSIST** flag.
 
 
 
@@ -555,7 +554,7 @@ This example shows how to disable a device using CfgMgr32. To do this with Setup
 ## Enable device
 
 
-This example shows how to enable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_ENABLE**.
+This example shows how to enable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_ENABLE**.
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,
@@ -576,7 +575,7 @@ This example shows how to enable a device using CfgMgr32. To do this with SetupA
 ## Restart device
 
 
-This example shows how to restart a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_PROPCHANGE**.
+This example shows how to restart a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_PROPCHANGE**.
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,

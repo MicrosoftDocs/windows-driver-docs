@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's AddDevice Routine
 description: Storage Class Driver's AddDevice Routine
-ms.assetid: ff07ae84-2748-44b4-88c6-e67f1d4c9268
 keywords:
 - AddDevice routine WDK storage
 ms.date: 04/20/2017

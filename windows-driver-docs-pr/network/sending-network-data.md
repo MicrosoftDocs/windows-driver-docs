@@ -1,7 +1,6 @@
 ---
 title: Sending Network Data
 description: Sending Network Data
-ms.assetid: d3b960a7-bd2e-463c-b08b-5c3e4ecc36d0
 keywords:
 - network data WDK , sending
 - data WDK networking , sending

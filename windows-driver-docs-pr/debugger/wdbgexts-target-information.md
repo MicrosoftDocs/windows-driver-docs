@@ -1,7 +1,6 @@
 ---
 title: WdbgExts Target Information
 description: WdbgExts Target Information
-ms.assetid: 70b26047-2f3a-4d35-861f-a9ca17d1d5f9
 keywords: ["WdbgExts extensions, target"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

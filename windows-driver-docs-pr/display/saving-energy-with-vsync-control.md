@@ -1,7 +1,6 @@
 ---
 title: Saving Energy with VSync Control
 description: Saving Energy with VSync Control
-ms.assetid: d7ee7461-0d2a-4103-9225-57ca10a75a7a
 keywords:
 - display driver model WDK Windows Vista , saving energy
 - Windows Vista display driver model WDK , saving energy
@@ -29,7 +28,7 @@ A Windows Vista with SP1 or later system with a driver that follows the WDDM an
 
 ## Display-Only VSync Requirements for Windows 8 and later versions
 
-In Windows 8 and later versions of the Windows operating system, it's optional for a [kernel mode display-only driver (KMDOD)](/windows-hardware/drivers/ddi/index) to support VSync functionality, as follows:
+In Windows 8 and later versions of the Windows operating system, it's optional for a kernel mode display-only driver (KMDOD) to support VSync functionality, as follows:
 
 - **Display-only driver supports VSync control**
 
@@ -37,7 +36,7 @@ In Windows 8 and later versions of the Windows operating system, it's optional 
 
   In this case the KMDOD must also implement the [*DxgkDdiInterruptRoutine*](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine) and [*DxgkDdiDpcRoutine*](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_dpc_routine) functions in order to report VSync interrupts to the operating system.
 
-  In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [DISPLAYCONFIG_VIDEO_SIGNAL_INFO](/windows/desktop/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure cannot be **D3DKMDT_FREQUENCY_NOTSPECIFIED**.
+  In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [DISPLAYCONFIG_VIDEO_SIGNAL_INFO](/windows/win32/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure cannot be **D3DKMDT_FREQUENCY_NOTSPECIFIED**.
 
 - **Display-only driver does not support VSync control**
 
@@ -45,7 +44,7 @@ In Windows 8 and later versions of the Windows operating system, it's optional 
 
   In this case the Microsoft DirectX graphics kernel subsystem simulates values of VSync interrupts and scan lines based on the current mode and the time of the last simulated VSync.
 
-  In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [DISPLAYCONFIG_VIDEO_SIGNAL_INFO](/windows/desktop/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure must be set to **D3DKMDT_FREQUENCY_NOTSPECIFIED**.
+  In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [DISPLAYCONFIG_VIDEO_SIGNAL_INFO](/windows/win32/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure must be set to **D3DKMDT_FREQUENCY_NOTSPECIFIED**.
 
 If these conditions are not met, the DirectX graphics kernel subsystem will not load the KMDOD.
 

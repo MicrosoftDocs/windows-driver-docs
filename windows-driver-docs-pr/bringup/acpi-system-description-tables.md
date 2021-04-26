@@ -1,8 +1,7 @@
 ---
 title: ACPI system description tables
 description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
-ms.assetid: 6EFCD288-031D-46BB-ABF3-8ADB53E7B4B1
-ms.date: 05/20/2020
+ms.date: 10/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -107,4 +106,10 @@ Windows Server 2016
 
 Windows 10, version 1607
 
-For more information, see the [Windows SMM Security Mitigations Table (WSMT) specification (DOCX download)](https://go.microsoft.com/fwlink/p/?LinkId=786943).
+For more information, see the [Windows SMM Security Mitigations Table (WSMT) specification (DOCX download)](https://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx).
+
+## iSCSI Boot Firmware Table (iBFT)
+
+The iSCSI Boot Firmware (iBF) Table (iBFT) is a block of information that contains various parameters that are useful to the iSCSI Boot process. The iBFT is the mechanism by which iBF parameter values are conveyed to the operating system. The iBF builds and fills in the iBFT. The iBFT is available to the Windows operating system to enable a consistent flow of the boot process.
+
+For more information, see the [iSCSI Boot Firmware Table (iBFT) specification (DOCX download)](https://download.microsoft.com/download/1/e/5/1e5a2287-366c-431a-8e05-b958540230b1/iBFT.docx).

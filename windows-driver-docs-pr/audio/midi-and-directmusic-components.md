@@ -1,7 +1,6 @@
 ---
 title: MIDI and DirectMusic Components
 description: MIDI and DirectMusic Components
-ms.assetid: 6334f332-31ba-4daf-aad1-94bb65d25153
 keywords:
 - WDM audio components WDK
 - user-mode components WDK audio

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_EnumeratorName
 description: DEVPKEY_Device_EnumeratorName
-ms.assetid: 513b298d-31a1-4791-a434-620a0a2edac0
 keywords: ["DEVPKEY_Device_EnumeratorName Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_EnumeratorName to the name of the enumerator for a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_EnumeratorName.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_EnumeratorName.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_EnumeratorName property key. Instead, you can use the corresponding SPDRP_ENUMERATOR_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -76,7 +75,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

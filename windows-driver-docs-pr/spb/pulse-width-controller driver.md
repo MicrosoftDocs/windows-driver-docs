@@ -1,7 +1,6 @@
 ---
 title: PWM driver for an on-SoC PWM module 
 description: PWM controller is part of the SoC and memory-mapped to the SoC address space. Write a kernel-mode driver that manipulates the PWM registers and provides access to applications. 
-ms.assetid: 911375A9-6761-45C1-BB5E-79BC0E4409AC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -484,20 +483,20 @@ PWM IOCTL requests are sent by an application or another driver and are targeted
 
 **Controller IOCTLs**
 
--    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_get_actual_period) 
--    [**IOCTL_PWM_CONTROLLER_GET_INFO**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_get_info) 
--    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_set_desired_period)
+-    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_get_actual_period) 
+-    [**IOCTL_PWM_CONTROLLER_GET_INFO**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_get_info) 
+-    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_set_desired_period)
 
 
 **Pin IOCTLs**
 
--    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_get_active_duty_cycle_percentage)
--    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_set_active_duty_cycle_percentage)
--    [**IOCTL_PWM_PIN_GET_POLARITY**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_get_polarity)
--    [**IOCTL_PWM_PIN_SET_POLARITY**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_set_polarity)
--    [**IOCTL_PWM_PIN_START**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_start)
--    [**IOCTL_PWM_PIN_STOP**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_stop)
--    [**IOCTL_PWM_PIN_IS_STARTED**](/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_is_started)    
+-    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_get_active_duty_cycle_percentage)
+-    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_set_active_duty_cycle_percentage)
+-    [**IOCTL_PWM_PIN_GET_POLARITY**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_get_polarity)
+-    [**IOCTL_PWM_PIN_SET_POLARITY**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_set_polarity)
+-    [**IOCTL_PWM_PIN_START**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_start)
+-    [**IOCTL_PWM_PIN_STOP**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_stop)
+-    [**IOCTL_PWM_PIN_IS_STARTED**](/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_is_started)    
 
 For each IOCTL request, the PWM drivr must verify the following: 
 

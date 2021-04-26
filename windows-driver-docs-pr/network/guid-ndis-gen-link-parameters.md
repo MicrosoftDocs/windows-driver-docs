@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_GEN_LINK_PARAMETERS
 description: This topic describes the GUID_NDIS_GEN_LINK_PARAMETERS GUID for the NDIS WMI interface.
-ms.assetid: 83895adf-2e66-4820-8037-52eb352b82fc
 keywords:
 - GUID_NDIS_GEN_LINK_PARAMETERS, WDK GUID_NDIS_GEN_LINK_PARAMETERS network drivers
 ms.date: 11/22/2017

@@ -1,7 +1,6 @@
 ---
 title: Best practices for handling account arrival and removal events
 description: Best practices for handling account arrival and removal events
-ms.assetid: e299a920-a27e-4832-b81d-1562f86f37e2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Bluetooth HFP DDI Reference
 description: Windows 8 has introduced the GUID\_DEVINTERFACE\_BLUETOOTH\_HFP\_SCO\_HCIBYPASS class, with interfaces that implement I/O control codes (IOCTLs) and structures for the Hands-free profile (HFP) bypass audio driver.
-ms.assetid: 980B7283-56C5-44FA-8992-6DA5BE263FCD
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

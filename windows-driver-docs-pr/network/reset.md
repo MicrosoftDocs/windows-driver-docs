@@ -1,7 +1,6 @@
 ---
 title: Reset
 description: Reset
-ms.assetid: 5f37eca3-08b6-4bac-9d02-8a8ebd8c1904
 keywords:
 - connection-oriented NDIS WDK , resetting NICs
 - CoNDIS WDK networking , resetting NICs

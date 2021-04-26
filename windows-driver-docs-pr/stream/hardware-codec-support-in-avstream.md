@@ -1,7 +1,6 @@
 ---
 title: Hardware Codec Support in AVStream
 description: Hardware codec support in AVStream
-ms.assetid: 19ffd906-e198-4ede-b132-45e53431603c
 keywords:
 - AVStream WDK , hardware codec support
 - hardware codec support WDK AVStream

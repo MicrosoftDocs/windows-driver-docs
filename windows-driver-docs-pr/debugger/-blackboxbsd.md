@@ -2,7 +2,6 @@
 title: blackboxbsd
 description: The blackboxbsd extension displays the secondary boot information for Boot Status Data (BSD).
 keywords: ["blackboxbsd Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 12/06/2018
 ms.topic: article
 ms.prod: windows-hardware

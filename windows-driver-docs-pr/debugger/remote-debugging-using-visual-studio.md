@@ -1,7 +1,6 @@
 ---
 title: Remote Debugging Using Visual Studio
 description: The procedure covers Remote Debugging Using Visual Studio.
-ms.assetid: 9FA347BF-878E-46C8-8459-DC73A8B1EB26
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---

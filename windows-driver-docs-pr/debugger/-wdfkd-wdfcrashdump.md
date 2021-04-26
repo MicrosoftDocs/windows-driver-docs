@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfcrashdump
 description: The wdfkd.wdfcrashdump extension displays error log information and other crash dump information from a minidump file, if the data is present.
-ms.assetid: 419c76b1-e291-4503-8c59-aa46140e40b3
 keywords: ["wdfkd.wdfcrashdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -121,7 +120,7 @@ To display the framework's error log records from a [complete memory dump](compl
 
 **Additional Information**
 
-For information about enabling the inflight trace recorder for your driver, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](../wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md). For more information about debugging WDF drivers, see [Debugging WDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver). For information about KMDF debugging, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
+For information about enabling the inflight trace recorder for your driver, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](../wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md). For more information about debugging WDF drivers, see [Debugging WDF Drivers](./debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). For information about KMDF debugging, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
 ## <span id="see_also"></span>See also
 
@@ -129,6 +128,4 @@ For information about enabling the inflight trace recorder for your driver, see 
 [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md)
 
 [**!wdfkd.wdfsettraceprefix**](-wdfkd-wdfsettraceprefix.md)
-
- 
 

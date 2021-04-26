@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi Hotspot Offloading Constants
 description: This section describes the constants that are defined for the Wi-Fi Hotspot Offloading framework.
-ms.assetid: F09DCB81-C9FF-493B-AE8F-97DE441A4BC3
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---

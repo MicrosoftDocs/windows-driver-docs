@@ -1,7 +1,6 @@
 ---
 title: Power-Up Sequence for a Function or Filter Driver
 description: Power-Up Sequence for a Function or Filter Driver
-ms.assetid: 3E904641-A1E2-400C-A201-2D1D2D359657
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

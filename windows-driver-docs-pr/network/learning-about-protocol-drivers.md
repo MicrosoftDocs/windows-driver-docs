@@ -1,7 +1,6 @@
 ---
 title: Learning About Protocol Drivers
 description: Learning About Protocol Drivers
-ms.assetid: a908f91e-7529-42b5-9a3d-82d2a519d969
 keywords:
 - protocol drivers WDK networking , connectionless lower edge
 - NDIS protocol drivers WDK , connectionless lower edge

@@ -1,7 +1,6 @@
 ---
 title: Raster Data Emission Attributes
 description: Raster Data Emission Attributes
-ms.assetid: 98366b64-f96b-4275-ba25-8483abf705aa
 keywords:
 - data emission raster printing attributes WDK Unidrv
 - emission raster printing attributes WDK Unidrv

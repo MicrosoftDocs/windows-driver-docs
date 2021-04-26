@@ -1,7 +1,6 @@
 ---
 title: Using the Registry in UMDF 1.x Drivers
 description: Using the Registry in UMDF 1.x Drivers
-ms.assetid: 653f996a-9fc8-461f-b284-a5d6795259d6
 keywords:
 - registry WDK UMDF
 - property store objects WDK UMDF

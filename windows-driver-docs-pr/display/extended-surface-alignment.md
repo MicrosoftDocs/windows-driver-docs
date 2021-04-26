@@ -1,7 +1,6 @@
 ---
 title: Extended Surface Alignment
 description: Extended Surface Alignment
-ms.assetid: 3a91a826-7f57-4cad-b236-b41178ac3b17
 keywords:
 - drawing extended surface alignment WDK DirectDraw
 - DirectDraw extended surface alignment WDK Windows 2000 display

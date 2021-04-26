@@ -1,7 +1,6 @@
 ---
 title: CdChangerClassGuid
 description: CdChangerClassGuid
-ms.assetid: f48d6fe8-e75c-49ed-98ad-77d730ea5dbe
 keywords: ["CdChangerClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

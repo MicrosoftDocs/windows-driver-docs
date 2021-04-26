@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_AUDIO\_AVAILABLE
 description: The WIA\_IPC\_AUDIO\_AVAILABLE property is obsolete and should not be used.
-ms.assetid: 7dfff74c-f853-4152-adb4-bdac682dc076
 keywords: ["WIA_IPC_AUDIO_AVAILABLE Imaging Devices"]
 topic_type:
 - apiref

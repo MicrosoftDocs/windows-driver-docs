@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_GET_CALL_DIAGNOSTICS
 description: This topic describes the OID_CO_TAPI_GET_CALL_DIAGNOSTICS object identifier (OID).
-ms.assetid: 5b0b1a96-9d66-4ee3-9b9a-3341ca3a4b5c
 keywords:
 - OID_CO_TAPI_GET_CALL_DIAGNOSTICS
 ms.date: 11/03/2017

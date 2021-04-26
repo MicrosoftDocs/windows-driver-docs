@@ -1,7 +1,6 @@
 ---
 title: IssuerName
 description: IssuerName
-ms.assetid: 189c9b8f-11de-4ef2-9474-b0068b8178bc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

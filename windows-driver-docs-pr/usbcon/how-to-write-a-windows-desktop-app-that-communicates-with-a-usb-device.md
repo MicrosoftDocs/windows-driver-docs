@@ -11,8 +11,8 @@ The easiest way to write a Windows desktop app that communicates with a USB devi
 
 ## Prerequisites
 
-- To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2019 or Microsoft Visual Studio Professional 2019 and then install the WDK. You can find information about how to set up Visual Studio and the WDK on the [WDK download page](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
-- Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=235427).
+- To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2019 or Microsoft Visual Studio Professional 2019 and then install the WDK. You can find information about how to set up Visual Studio and the WDK on the [WDK download page](../download-the-wdk.md).
+- Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](../debugger/index.md).
 
 ## Creating a WinUSB application
 
@@ -65,7 +65,7 @@ To create an application from the template:
 11. Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 12. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
-![winusb application template](images/winusb-template-configuration-manager.png)
+![Screenshot that shows the "Configuration Manager" window with "Debug" and "x64" selected.](images/winusb-template-configuration-manager.png)
 
 ## Building, deploying and debugging the project
 
@@ -81,7 +81,7 @@ You can deploy, install, load, and debug your application and the driver by foll
 
 - **Two computer setup**
 
-  1. Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+  1. Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
         **Note:**  Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser.
   2. On the host computer, open your solution in Visual Studio.
   3. In main.cpp add this line before the OpenDevice call.
@@ -147,7 +147,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
 5. On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
 6. Select and hold (or right-click) the **USB Application1** project, in project properties expand the **Configuration Properties** node and select **Debugging**.
 7. Change **Debugger to launch** to **Remote Windows Debugger**.
-8. Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2015). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
+8. Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](/visualstudio/debugger/remote-debugging?view=vs-2015&preserve-view=true). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
 9. To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
 
 - **Single computer setup:**
@@ -158,7 +158,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
         ![winusb application template](images/winusb-template3.png)
 
         **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
-  3. Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section.
+  3. Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section. **Note** If you see the error `DriverVer set to a date in the future`, set **INF Package project settings > Inf2Cat > General > Use Local Time > Yes**.
   4. Select and hold (or right-click) the **USB Application1** project, in project properties expand the **Configuration Properties** node and select **Debugging**.
   5. Change **Debugger to launch** to **Local Windows Debugger**.
   6. Select and hold (or right-click) the USB Application1 Package project, and select **Unload Project**.
@@ -185,7 +185,7 @@ typedef struct _DEVICE_DATA {
 
 ### Getting the instance path for the device - see RetrieveDevicePath in device.cpp
 
-To access a USB device, the application creates a valid file handle for the device by calling **CreateFile**. For that call, the application must obtain the device path instance. To obtain the device path, the app uses [SetupAPI](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi) routines and specifies the device interface GUID in the INF file that was used to install Winusb.sys. Device.h declares a GUID constant named GUID\_DEVINTERFACE\_USBApplication1. By using those routines, the application enumerates all devices in the specified device interface class and retrieves the device path of the device.
+To access a USB device, the application creates a valid file handle for the device by calling **CreateFile**. For that call, the application must obtain the device path instance. To obtain the device path, the app uses [SetupAPI](../install/setupapi.md) routines and specifies the device interface GUID in the INF file that was used to install Winusb.sys. Device.h declares a GUID constant named GUID\_DEVINTERFACE\_USBApplication1. By using those routines, the application enumerates all devices in the specified device interface class and retrieves the device path of the device.
 
 ```cpp
 HRESULT
@@ -343,25 +343,25 @@ Return value:
 
 In the preceding function, the application gets the device path by calling these routines:
 
-1. [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to get a handle to the *device information set*, an array that contains information about all installed devices that matched the specified device interface class, GUID\_DEVINTERFACE\_USBApplication1. Each element in the array called a *device interface* corresponds to a device that is installed and registered with the system. The device interface class is identified by passing the device interface GUID that you defined in the INF file. The function returns an HDEVINFO handle to the device information set.
-2. [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate the device interfaces in the device information set and obtain information about your device interface.
+1. [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to get a handle to the *device information set*, an array that contains information about all installed devices that matched the specified device interface class, GUID\_DEVINTERFACE\_USBApplication1. Each element in the array called a *device interface* corresponds to a device that is installed and registered with the system. The device interface class is identified by passing the device interface GUID that you defined in the INF file. The function returns an HDEVINFO handle to the device information set.
+2. [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate the device interfaces in the device information set and obtain information about your device interface.
 
     This call requires the following items:
 
-   - An initialized caller-allocated [**SP\_DEVICE\_INTERFACE\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that has its **cbSize** member set to the size of the structure.
+   - An initialized caller-allocated [**SP\_DEVICE\_INTERFACE\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that has its **cbSize** member set to the size of the structure.
    - The HDEVINFO handle from step 1.
    - The device interface GUID that you defined in the INF file.
 
-    [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) looks up the device information set array for the specified index of the device interface and fills the initialized [**SP\_DEVICE\_INTERFACE\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure with basic data about the interface.
+    [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) looks up the device information set array for the specified index of the device interface and fills the initialized [**SP\_DEVICE\_INTERFACE\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure with basic data about the interface.
 
-    **Note**   To enumerate all the device interfaces in the device information set, call [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) in a loop until the function returns **FALSE** and the error code for the failure is ERROR\_NO\_MORE\_ITEMS. The ERROR\_NO\_MORE\_ITEMS error code can be retrieved by calling **GetLastError**. With each iteration, increment the member index.
+    **Note**   To enumerate all the device interfaces in the device information set, call [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) in a loop until the function returns **FALSE** and the error code for the failure is ERROR\_NO\_MORE\_ITEMS. The ERROR\_NO\_MORE\_ITEMS error code can be retrieved by calling **GetLastError**. With each iteration, increment the member index.
 
-    Alternately, you can call [**SetupDiEnumDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo) that enumerates the device information set and returns information about device interface elements, specified by the index, in a caller-allocated [**SP\_DEVINFO\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure. You can then pass a reference to this structure in the *DeviceInfoData* parameter of the [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) function.
+    Alternately, you can call [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo) that enumerates the device information set and returns information about device interface elements, specified by the index, in a caller-allocated [**SP\_DEVINFO\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure. You can then pass a reference to this structure in the *DeviceInfoData* parameter of the [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) function.
 
-3. [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to get detailed data for the device interface. The information is returned in a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure. Because the size of the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure varies, **SetupDiGetDeviceInterfaceDetail** is called twice. The first call gets the buffer size to allocate for the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure. The second call fills the allocated buffer with detailed information about the interface.
-   1. Calls [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) with *DeviceInterfaceDetailData* parameter set to **NULL**. The function returns the correct buffer size in the *requiredlength* parameter. This call fails with the ERROR\_INSUFFICIENT\_BUFFER error code. This error code is expected.
-   2. Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
-   3. Calls [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure's **DevicePath** member.
+3. [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to get detailed data for the device interface. The information is returned in a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_detail_data_a) structure. Because the size of the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure varies, **SetupDiGetDeviceInterfaceDetail** is called twice. The first call gets the buffer size to allocate for the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure. The second call fills the allocated buffer with detailed information about the interface.
+   1. Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) with *DeviceInterfaceDetailData* parameter set to **NULL**. The function returns the correct buffer size in the *requiredlength* parameter. This call fails with the ERROR\_INSUFFICIENT\_BUFFER error code. This error code is expected.
+   2. Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_detail_data_a) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
+   3. Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_detail_data_a) structure's **DevicePath** member.
 
 ### Creating a file handle for the device
 
@@ -448,14 +448,14 @@ Return value:
 ```
 
 1. The app calls **CreateFile** to create a file handle for the device by specifying the device path retrieved earlier. It uses the FILE\_FLAG\_OVERLAPPED flag because WinUSB depends on this setting.
-2. By using the file handle for the device, the app creates a WinUSB interface handle. [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) use this handle to identify the target device instead of the file handle. To obtain a WinUSB interface handle, the app calls [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize) by passing the file handle. Use the received handle in the subsequent calls to get information from the device, and to send I/O requests to the device.
+2. By using the file handle for the device, the app creates a WinUSB interface handle. [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) use this handle to identify the target device instead of the file handle. To obtain a WinUSB interface handle, the app calls [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) by passing the file handle. Use the received handle in the subsequent calls to get information from the device, and to send I/O requests to the device.
 
 ### Release the device handles - see CloseDevice in device.cpp
 
 The template code implements code to release the file handle and the WinUSB interface handle for the device.
 
 - **CloseHandle** to release the handle that was created by **CreateFile**, as described in the [Create a File Handle for the Device](#creating-a-file-handle-for-the-device) section of this walkthrough.
-- [**WinUsb\_Free**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_free) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize).
+- [**WinUsb\_Free**](/windows/win32/api/winusb/nf-winusb-winusb_free) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize).
 
 ```cpp
 VOID
@@ -511,4 +511,4 @@ Next, read these topics to send get device information and send data transfers t
 ## Related topics
 
 [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)  
-[Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)  
+[Provision a computer for driver deployment and testing](../gettingstarted/provision-a-target-computer-wdk-8-1.md)

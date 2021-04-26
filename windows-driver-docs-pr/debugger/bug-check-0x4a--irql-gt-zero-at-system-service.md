@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x4A IRQL_GT_ZERO_AT_SYSTEM_SERVICE
 description: The IRQL_GT_ZERO_AT_SYSTEM_SERVICE bug check has a value of 0x0000004A. This indicates that a thread is returning to user mode from a system call when its IRQL is still above PASSIVE_LEVEL.
-ms.assetid: 0da64630-d446-426a-a51f-34117fe9daa7
 keywords: ["Bug Check 0x4A IRQL_GT_ZERO_AT_SYSTEM_SERVICE", "IRQL_GT_ZERO_AT_SYSTEM_SERVICE"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_MAC_STATISTICS
 description: WDI_TLV_MAC_STATISTICS is a TLV that contains per-peer MAC statistics for OID_WDI_GET_STATISTICS.
-ms.assetid: 47ABF170-76D7-4F17-BA92-56E1FEFF729D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_MAC_STATISTICS Network Drivers Starting with Windows Vista
@@ -39,7 +38,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address" data-raw-source="[&lt;strong&gt;WDI_MAC_ADDRESS&lt;/strong&gt;](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)"><strong>WDI_MAC_ADDRESS</strong></a></td>
+<td><a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address" data-raw-source="[&lt;strong&gt;WDI_MAC_ADDRESS&lt;/strong&gt;](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)"><strong>WDI_MAC_ADDRESS</strong></a></td>
 <td>The MAC address of the peer that these counts are set for. For multicast and broadcast packets, this value is set to FF-FF-FF-FF-FF-FF-FF.</td>
 </tr>
 <tr class="even">
@@ -53,7 +52,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <tr class="even">
 <td>UINT64</td>
 <td>The number of unencrypted received MPDU frames that the MAC layer discarded when the IEEE 802.11 dot11ExcludeUnencrypted management information base (MIB) object is enabled.
-<p>For more information about this MIB object, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-dot11-exclude-unencrypted" data-raw-source="[OID_DOT11_EXCLUDE_UNENCRYPTED](/previous-versions/windows/hardware/wireless/oid-dot11-exclude-unencrypted)">OID_DOT11_EXCLUDE_UNENCRYPTED</a>. MPDU frames are considered unencrypted when the Protected Frame subfield of the Frame Control field in the IEEE 802.11 MAC header is set to zero.</p></td>
+<p>For more information about this MIB object, see <a href="/windows-hardware/drivers/network/oid-dot11-exclude-unencrypted" data-raw-source="[OID_DOT11_EXCLUDE_UNENCRYPTED](/previous-versions/windows/hardware/wireless/oid-dot11-exclude-unencrypted)">OID_DOT11_EXCLUDE_UNENCRYPTED</a>. MPDU frames are considered unencrypted when the Protected Frame subfield of the Frame Control field in the IEEE 802.11 MAC header is set to zero.</p></td>
 </tr>
 <tr class="odd">
 <td>UINT64</td>
@@ -125,6 +124,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

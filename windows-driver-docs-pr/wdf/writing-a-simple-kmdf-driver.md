@@ -1,7 +1,6 @@
 ---
 title: Writing a Simple WDF Driver
 description: This topic describes the minimal functionality you need to write a Kernel-Mode Driver Framework (KMDF) driver. You need the same minimal functionality to write a User-Mode Driver Framework (UMDF) driver starting in UMDF version 2.
-ms.assetid: 6225b81c-e0da-473a-ba38-24846436dae7
 keywords:
 - kernel-mode drivers WDK KMDF , writing a simple driver
 - KMDF WDK , writing a simple driver

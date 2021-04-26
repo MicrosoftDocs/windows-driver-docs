@@ -1,7 +1,6 @@
 ---
 title: Adding a Device Overview
 description: Adding a Device Overview
-ms.assetid: ee01fe71-9c02-4d37-87ca-9788ffa23e76
 keywords:
 - User-Mode Driver Framework WDK , adding devices
 - UMDF WDK , adding devices

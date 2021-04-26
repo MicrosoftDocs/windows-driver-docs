@@ -1,7 +1,6 @@
 ---
 title: BinPlace Capabilities
 description: BinPlace Capabilities
-ms.assetid: 2fd49ce3-8617-4c3e-bb86-8642343ca756
 keywords:
 - BinPlace WDK , capabilities
 - stripping files

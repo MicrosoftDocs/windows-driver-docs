@@ -1,7 +1,6 @@
 ---
 title: Describe your service in the Mobile Broadband Metadata Authoring Wizard
 description: Describe your service in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: 0FA4945C-3CD9-4106-BC47-F89CEF168FDC
 keywords:
 - Describe your service in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
@@ -24,4 +23,4 @@ You can provide descriptive information about your service in Windows, such as m
 - **Description 1**. This optional field isn't used in Windows 8.
 - **Description 2**. This optional field isn't used in Windows 8.
 
-For detailed information about metadata properties, see [Service Metadata Package Schema Reference](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference).
+For detailed information about metadata properties, see [Service Metadata Package Schema Reference](../mobilebroadband/mobilebroadbandinfo-xml-schema.md).

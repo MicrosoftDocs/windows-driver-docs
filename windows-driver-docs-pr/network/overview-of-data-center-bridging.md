@@ -1,7 +1,6 @@
 ---
 title: Overview of Data Center Bridging
 description: Overview of Data Center Bridging
-ms.assetid: FEB3FDBB-8A3C-4907-A6D0-CB5E94BCFEFF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

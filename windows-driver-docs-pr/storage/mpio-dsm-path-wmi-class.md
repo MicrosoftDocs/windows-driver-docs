@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DSM\_Path WMI Class
 description: MPIO\_DSM\_Path WMI Class
-ms.assetid: 4f8d7fb0-2b9a-44dc-bb87-f70285f1b47c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

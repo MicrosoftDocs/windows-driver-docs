@@ -1,7 +1,6 @@
 ---
 title: Points to Consider When Using DMA
 description: Points to Consider When Using DMA
-ms.assetid: 7bbd11d2-858c-4ed6-81a4-74ba003e7dcd
 keywords:
 - bus-master DMA WDK video miniport , considerations
 - DMA bus-master WDK video miniport , considerations

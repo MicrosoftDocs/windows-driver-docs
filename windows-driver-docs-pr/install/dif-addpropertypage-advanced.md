@@ -1,7 +1,6 @@
 ---
 title: DIF_ADDPROPERTYPAGE_ADVANCED
 description: DIF_ADDPROPERTYPAGE_ADVANCED
-ms.assetid: d2b05c45-3536-4997-ac6f-a5b5c95a97da
 keywords: ["DIF_ADDPROPERTYPAGE_ADVANCED Device and Driver Installation"]
 topic_type:
 - apiref
@@ -55,13 +54,13 @@ When a user clicks on the properties for a device in Device Manager or in Contro
 Supplies a handle to the [device information set](./device-information-sets.md) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set. If *DeviceInfoSet* is **NULL**, Windows is requesting property pages for the [device setup class](./overview-of-device-setup-classes.md).
+Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies the device in the device information set. If *DeviceInfoSet* is **NULL**, Windows is requesting property pages for the [device setup class](./overview-of-device-setup-classes.md).
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-Device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) are associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
+Device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) are associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
+An [**SP_ADDPROPERTYPAGE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
 
 ### Installer Output
 
@@ -69,7 +68,7 @@ An [**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_n
 An installer can modify the device installation parameters.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) to supply custom pages.
+An installer can modify the [**SP_ADDPROPERTYPAGE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_newdevicewizard_data) to supply custom pages.
 
 ### Installer Return Value
 
@@ -104,7 +103,7 @@ A co-installer should add custom pages in its preprocessing pass.
 
 If an installer allows a user to set a property that requires Windows to remove and restart the device, the installer must set the DI_FLAGSEX_PROPCHANGE_PENDING flag in the device installation parameters from its **DialogProc** routine.
 
-For more information about how to provide device property pages, see [Providing Device Property Pages](https://docs.microsoft.com/windows-hardware/drivers/install/providing-device-property-pages).
+For more information about how to provide device property pages, see [Providing Device Property Pages](./overview-of-device-property-pages.md).
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
@@ -131,11 +130,9 @@ Requirements
 ## See also
 
 
-[**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data)
+[**SP_ADDPROPERTYPAGE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_newdevicewizard_data)
 
-[**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
-
- 
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 

@@ -1,7 +1,6 @@
 ---
 title: Security
 description: Use the topics in this section to learn more about security in Windows 10 Mobile.
-ms.assetid: 15783e59-f37b-4373-8604-d35c57eedfcc
 ms.date: 08/31/2018
 ms.localizationpriority: medium
 ---
@@ -24,11 +23,11 @@ To create a secure device, the OEM should complete the following tasks.
   <tbody>
     <tr>
       <td>Learn how to sign different types of executable code and other code assets</td>
-      <td>All Windows 10 Mobile binaries need digital signatures to load and execute on a retail phone. For more info, see: <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate">Get a code signing certificate</a>.</td>
+      <td>All Windows 10 Mobile binaries need digital signatures to load and execute on a retail phone. For more info, see: <a href="/windows-hardware/drivers/dashboard/get-a-code-signing-certificate">Get a code signing certificate</a>.</td>
 </tr>
 <tr class="even">
 <td>Understand image validation and encryption</td>
-<td>Windows 10 Mobile includes <a href="https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot">secure boot</a>, a process that validates firmware images before they are allowed to execute. Windows 10 Mobile also provides <a href="https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview">device encryption</a>, a feature that encrypts all user data stored on internal data partitions. OEMs must perform a series of tasks during manufacturing to enable these features.</td>
+<td>Windows 10 Mobile includes <a href="/windows-hardware/drivers/bringup/secure-boot">secure boot</a>, a process that validates firmware images before they are allowed to execute. Windows 10 Mobile also provides <a href="/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview">device encryption</a>, a feature that encrypts all user data stored on internal data partitions. OEMs must perform a series of tasks during manufacturing to enable these features.</td>
 </tr>
 <tr>
 <td>Understand the Security Development Lifecycle (SDL)</td>

@@ -1,7 +1,6 @@
 ---
 title: UMDF 1.x Design Guide
 description: This section contains information that applies only to User-Mode Driver Framework (UMDF) versions 1.11 and earlier.
-ms.assetid: 4e56b62a-640d-4a9d-bf38-118b211d41f6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

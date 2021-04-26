@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_DEMULTIPLEXER
 description: KSMFT_CATEGORY_DEMULTIPLEXER
-ms.assetid: 8cb22e49-67e5-474f-8e71-d540c789c798
 keywords: ["KSMFT_CATEGORY_DEMULTIPLEXER Device and Driver Installation"]
 topic_type:
 - apiref

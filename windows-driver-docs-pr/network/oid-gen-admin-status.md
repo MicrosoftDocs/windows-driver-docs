@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_ADMIN_STATUS
 description: As a query, use the OID_GEN_ADMIN_STATUS OID to determine the administrative status for an interface (ifAdminStatus from RFC 2863).
-ms.assetid: e8f45521-7419-4c11-b84b-36d4d3306fc2
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_ADMIN_STATUS Network Drivers Starting with Windows Vista
@@ -28,7 +27,7 @@ The administrative status is the status that the system administrator requested.
 
 Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_ADMIN\_STATUS**](/windows/desktop/api/ifdef/ne-ifdef-_net_if_admin_status) enumeration.
+If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_ADMIN\_STATUS**](/windows/win32/api/ifdef/ne-ifdef-net_if_admin_status) enumeration.
 
 Requirements
 ------------
@@ -49,7 +48,7 @@ Requirements
 ## See also
 
 
-[**NET\_IF\_ADMIN\_STATUS**](/windows/desktop/api/ifdef/ne-ifdef-_net_if_admin_status)
+[**NET\_IF\_ADMIN\_STATUS**](/windows/win32/api/ifdef/ne-ifdef-net_if_admin_status)
 
 [NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 

@@ -1,7 +1,6 @@
 ---
 title: MSI-X Pre-Registration
 description: MSI-X Pre-Registration
-ms.assetid: 93a09ebd-8a50-4c96-a926-54bb4686a618
 keywords:
 - MSI-X WDK networking , resource-requirements filter function
 - message-signaled interrupts WDK networking , resource-requirements filter function

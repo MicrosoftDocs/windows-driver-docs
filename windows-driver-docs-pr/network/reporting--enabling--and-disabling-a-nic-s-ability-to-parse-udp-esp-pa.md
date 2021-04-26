@@ -1,7 +1,6 @@
 ---
 title: Reporting, Enabling, and Disabling a NIC's Ability to Parse UDP-ESP Packets
 description: Reporting, Enabling, and Disabling a NIC's Ability to Parse UDP-ESP Packets
-ms.assetid: 3a75c5b2-2d94-428e-9b2a-d760e14df552
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , parsing capabilities
 - parsing capabilities WDK IPsec offload

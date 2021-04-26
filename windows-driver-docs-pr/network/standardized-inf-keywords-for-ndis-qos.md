@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for NDIS QoS
 description: Standardized INF Keywords for NDIS QoS
-ms.assetid: 7967D633-850F-4707-9577-9262AEB1A597
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

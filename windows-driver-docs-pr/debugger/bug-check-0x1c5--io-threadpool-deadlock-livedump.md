@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1C5 IO_THREADPOOL_DEADLOCK_LIVEDUMP
 description: The IO_THREADPOOL_DEADLOCK_LIVEDUMP bug check has a value of 0x000001C5. This indicates a kernel mode threadpool encountered a deadlock situation.
-ms.assetid: CBAB931F-E2A9-4843-9565-DC1CA3B557E6
 keywords: ["Bug Check 0x1C5 IO_THREADPOOL_DEADLOCK_LIVEDUMP", "IO_THREADPOOL_DEADLOCK_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:

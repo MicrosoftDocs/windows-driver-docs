@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_POSITIONREGISTER
 description: The KSPROPERTY\_RTAUDIO\_POSITIONREGISTER property maps the position register of an audio device for a particular stream into a virtual memory location that the client can access.The following table summarizes the features of this property.
-ms.assetid: 812072ec-d2a5-4e84-aebe-f24ca0d3cb21
 keywords: ["KSPROPERTY_RTAUDIO_POSITIONREGISTER Audio Devices"]
 topic_type:
 - apiref
@@ -46,8 +45,8 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister_property" data-raw-source="[&lt;strong&gt;KSRTAUDIO_HWREGISTER_PROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister_property)"><strong>KSRTAUDIO_HWREGISTER_PROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister" data-raw-source="[&lt;strong&gt;KSRTAUDIO_HWREGISTER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister)"><strong>KSRTAUDIO_HWREGISTER</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister_property" data-raw-source="[&lt;strong&gt;KSRTAUDIO_HWREGISTER_PROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister_property)"><strong>KSRTAUDIO_HWREGISTER_PROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister" data-raw-source="[&lt;strong&gt;KSRTAUDIO_HWREGISTER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister)"><strong>KSRTAUDIO_HWREGISTER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -121,6 +120,4 @@ Requirements
 [**KSPROPERTY\_AUDIO\_POSITION**](ksproperty-audio-position.md)
 
 [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](ksproperty-rtaudio-hwlatency.md)
-
- 
 

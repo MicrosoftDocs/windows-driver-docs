@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_SUBUNIT\_INFO
 description: AVC\_FUNCTION\_GET\_SUBUNIT\_INFO
-ms.assetid: 1793df9d-b186-425f-a3dd-3054cb9b74bf
 keywords: ["AVC_FUNCTION_GET_SUBUNIT_INFO Streaming Media Devices"]
 topic_type:
 - apiref

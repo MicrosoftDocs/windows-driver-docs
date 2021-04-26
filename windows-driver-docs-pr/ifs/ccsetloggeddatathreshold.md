@@ -1,7 +1,6 @@
 ---
 title: CcSetLoggedDataThreshold routine
 description: The CcSetLoggedDataThreshold routine sets a threshold for when a scan of dirty log pages will initiate a lazy write.
-ms.assetid: 067121C3-3BD6-48EA-BD8E-B28620F799E1
 keywords: ["CcSetLoggedDataThreshold routine Installable File System Drivers"]
 topic_type:
 - apiref

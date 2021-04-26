@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES
 description: The NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES status indicates to NDIS and overlying drivers that the currently enabled hardware capabilities of the NIC switch in a network adapter have changed.
-ms.assetid: 8F5DF045-4993-45E6-A5B9-502B695E3C62
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista

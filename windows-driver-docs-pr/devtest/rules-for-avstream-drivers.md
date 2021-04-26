@@ -1,7 +1,6 @@
 ---
 title: Rules for AVStream Drivers
 description: The DDI compliance rules for AVStream miniport drivers verify the DDI interface protocols between the kernel-streaming driver (ks.sys) and its miniport drivers.
-ms.assetid: 0A104ADF-8607-4708-A0E3-1697F55B0CF5
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -32,7 +31,7 @@ The DDI compliance rules for AVStream miniport drivers verify the DDI interface 
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ks-ksdevicemutex.md" data-raw-source="[&lt;strong&gt;KsDeviceMutex&lt;/strong&gt;](ks-ksdevicemutex.md)"><strong>KsDeviceMutex</strong></a></p></td>
-<td align="left"><p>The <a href="ks-ksdevicemutex.md" data-raw-source="[&lt;strong&gt;KsDeviceMutex&lt;/strong&gt;](ks-ksdevicemutex.md)"><strong>KsDeviceMutex</strong></a> rule specifies that a kernel streaming miniport driver uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksacquiredevice" data-raw-source="[&lt;strong&gt;KsAcquireDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksacquiredevice)"><strong>KsAcquireDevice</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksreleasedevice" data-raw-source="[&lt;strong&gt;KsReleaseDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksreleasedevice)"><strong>KsReleaseDevice</strong></a> in the correct sequence. That is, every call to <strong>KsAcquireDevice</strong> must have a corresponding call to <strong>KsReleaseDevice</strong>.</p></td>
+<td align="left"><p>The <a href="ks-ksdevicemutex.md" data-raw-source="[&lt;strong&gt;KsDeviceMutex&lt;/strong&gt;](ks-ksdevicemutex.md)"><strong>KsDeviceMutex</strong></a> rule specifies that a kernel streaming miniport driver uses <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksacquiredevice" data-raw-source="[&lt;strong&gt;KsAcquireDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksacquiredevice)"><strong>KsAcquireDevice</strong></a> and <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksreleasedevice" data-raw-source="[&lt;strong&gt;KsReleaseDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksreleasedevice)"><strong>KsReleaseDevice</strong></a> in the correct sequence. That is, every call to <strong>KsAcquireDevice</strong> must have a corresponding call to <strong>KsReleaseDevice</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ks-ksfiltermutex.md" data-raw-source="[&lt;strong&gt;KsFilterMutex&lt;/strong&gt;](ks-ksfiltermutex.md)"><strong>KsFilterMutex</strong></a></p></td>
@@ -73,11 +72,11 @@ The DDI compliance rules for AVStream miniport drivers verify the DDI interface 
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ks-ksstreampointerclone.md" data-raw-source="[&lt;strong&gt;KsStreamPointerClone&lt;/strong&gt;](ks-ksstreampointerclone.md)"><strong>KsStreamPointerClone</strong></a></p></td>
-<td align="left"><p>The KsStreamPointerClone rule specifies that a kernel-stream (KS) miniport driver correctly uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone" data-raw-source="[&lt;strong&gt;KsStreamPointerClone&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone)"><strong>KsStreamPointerClone</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete" data-raw-source="[&lt;strong&gt;KsStreamPointerDelete&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete)"><strong>KsStreamPointerDelete</strong></a> functions.</p></td>
+<td align="left"><p>The KsStreamPointerClone rule specifies that a kernel-stream (KS) miniport driver correctly uses the <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone" data-raw-source="[&lt;strong&gt;KsStreamPointerClone&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone)"><strong>KsStreamPointerClone</strong></a> and <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete" data-raw-source="[&lt;strong&gt;KsStreamPointerDelete&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete)"><strong>KsStreamPointerDelete</strong></a> functions.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ks-ksstreampointerlock.md" data-raw-source="[&lt;strong&gt;KsStreamPointerLock&lt;/strong&gt;](ks-ksstreampointerlock.md)"><strong>KsStreamPointerLock</strong></a></p></td>
-<td align="left"><p>The KsStreamPointerLock rule specifies that a kernel-streaming (KS) miniport driver uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerlock" data-raw-source="[&lt;strong&gt;KsStreamPointerLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerlock)"><strong>KsStreamPointerLock</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerunlock" data-raw-source="[&lt;strong&gt;KsStreamPointerUnlock&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerunlock)"><strong>KsStreamPointerUnlock</strong></a> functions in the correct sequence.</p></td>
+<td align="left"><p>The KsStreamPointerLock rule specifies that a kernel-streaming (KS) miniport driver uses the <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerlock" data-raw-source="[&lt;strong&gt;KsStreamPointerLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerlock)"><strong>KsStreamPointerLock</strong></a> and <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerunlock" data-raw-source="[&lt;strong&gt;KsStreamPointerUnlock&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerunlock)"><strong>KsStreamPointerUnlock</strong></a> functions in the correct sequence.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ks-ksstreampointerunlock.md" data-raw-source="[&lt;strong&gt;KsStreamPointerUnlock&lt;/strong&gt;](ks-ksstreampointerunlock.md)"><strong>KsStreamPointerUnlock</strong></a></p></td>
@@ -97,7 +96,7 @@ The DDI compliance rules for AVStream miniport drivers verify the DDI interface 
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ks-kstimedpinsetdevicestate.md" data-raw-source="[&lt;strong&gt;KsTimedPinSetDeviceState&lt;/strong&gt;](ks-kstimedpinsetdevicestate.md)"><strong>KsTimedPinSetDeviceState</strong></a></p></td>
-<td align="left"><p>The KsTimedPinSetDeviceState rule specifies that a AVStream (KS) miniport driver makes state transitions using the AVStream minidriver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate" data-raw-source="[&lt;em&gt;AVStrMiniPinSetDeviceState&lt;/em&gt;](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate)"><em>AVStrMiniPinSetDeviceState</em></a> routine within the required time.</p></td>
+<td align="left"><p>The KsTimedPinSetDeviceState rule specifies that a AVStream (KS) miniport driver makes state transitions using the AVStream minidriver's <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate" data-raw-source="[&lt;em&gt;AVStrMiniPinSetDeviceState&lt;/em&gt;](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate)"><em>AVStrMiniPinSetDeviceState</em></a> routine within the required time.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ks-kstimedprocessingmutex.md" data-raw-source="[&lt;strong&gt;KsTimedProcessingMutex&lt;/strong&gt;](ks-kstimedprocessingmutex.md)"><strong>KsTimedProcessingMutex</strong></a></p></td>
@@ -105,8 +104,6 @@ The DDI compliance rules for AVStream miniport drivers verify the DDI interface 
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

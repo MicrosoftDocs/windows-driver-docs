@@ -1,7 +1,6 @@
 ---
 title: Event Commands
 description: Event Commands
-ms.assetid: e2b9f985-be57-49a9-b546-5cc74b0b061b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

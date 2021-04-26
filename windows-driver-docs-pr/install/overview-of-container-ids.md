@@ -1,7 +1,6 @@
 ---
 title: Overview of Container IDs
 description: Overview of Container IDs
-ms.assetid: fb7a4a31-01f9-4f7e-a35c-9076c7d73a29
 keywords:
 - container IDs WDK , about
 ms.date: 04/20/2017

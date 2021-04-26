@@ -1,7 +1,6 @@
 ---
 title: Handling Lightweight MIP Map Textures
 description: Handling Lightweight MIP Map Textures
-ms.assetid: f541b046-2937-428c-ab98-eb1020728e04
 keywords:
 - MIP map textures WDK DirectX 9.0 , lightweight
 - lightweight MIP-map textures WDK DirectX 9.0
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_lightweight_mip_map_textures_gg"></span><span id="DDK_HANDLING_LIGHTWEIGHT_MIP_MAP_TEXTURES_GG"></span>
 
 
-Because the MIP sublevels of lightweight MIP-map textures are implicit and do not have corresponding DirectDraw surface structures ([**DD\_SURFACE\_LOCAL**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_local), [**DD\_SURFACE\_GLOBAL**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_global) and [**DD\_SURFACE\_MORE**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_more)), a DirectX 9.0 version driver can determine if a MIP-map texture is lightweight and thus avoid creating unnecessary driver surface structures to save memory. To determine if a MIP-map texture is lightweight, the driver verifies if the DDSCAPS3\_LIGHTWEIGHTMIPMAP bit in the **dwCaps3** member of the DDSCAPSEX ([**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85))) structure for the texture surface is set.
+Because the MIP sublevels of lightweight MIP-map textures are implicit and do not have corresponding DirectDraw surface structures ([**DD\_SURFACE\_LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local), [**DD\_SURFACE\_GLOBAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_global) and [**DD\_SURFACE\_MORE**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_more)), a DirectX 9.0 version driver can determine if a MIP-map texture is lightweight and thus avoid creating unnecessary driver surface structures to save memory. To determine if a MIP-map texture is lightweight, the driver verifies if the DDSCAPS3\_LIGHTWEIGHTMIPMAP bit in the **dwCaps3** member of the DDSCAPSEX ([**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85))) structure for the texture surface is set.
 
 Note that all MIP-map textures in DirectX 9.0 are lightweight by default.
 
@@ -34,7 +33,7 @@ The DirectX 9.0 version driver observes the following rules when handling lightw
 
     Therefore, a full surface data structure is required per sublevel.
 
--   Because a video or AGP memory lightweight MIP-map texture is never locked or referenced by other DDIs, such as [*DdBlt*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_blt), the driver determines the sublevel placement for such a MIP-map texture. Therefore, full surfaces (explicit **fpVidmem** members of the [**DD\_SURFACE\_GLOBAL**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_global) structure) for the sublevels of such a MIP-map texture are not required.
+-   Because a video or AGP memory lightweight MIP-map texture is never locked or referenced by other DDIs, such as [*DdBlt*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_blt), the driver determines the sublevel placement for such a MIP-map texture. Therefore, full surfaces (explicit **fpVidmem** members of the [**DD\_SURFACE\_GLOBAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_global) structure) for the sublevels of such a MIP-map texture are not required.
 
 -   Driver-managed lightweight MIP-map textures are also restricted to a single surface and must use exactly the same layout that Direct3D uses with system memory lightweight MIP-map textures. Note that this has no adverse effect (other than implementation cost) because the corresponding resident (video and AGP) MIP-map textures can have their own implementation-specific layout.
 

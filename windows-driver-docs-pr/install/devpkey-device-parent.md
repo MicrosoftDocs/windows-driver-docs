@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Parent
 description: DEVPKEY_Device_Parent
-ms.assetid: 3d56ee87-cbf8-49d7-86ab-30e3862a1a1d
 keywords: ["DEVPKEY_Device_Parent Device and Driver Installation"]
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The DEVPKEY_Device_Parent device property represents the device instance identif
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Parent property.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Parent property.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](./retrieving-device-relations.md).
 
@@ -70,7 +69,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

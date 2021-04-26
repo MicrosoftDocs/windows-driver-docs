@@ -1,7 +1,6 @@
 ---
 title: SpbCx Interfaces
 description: The SPB framework extension (SpbCx) has two interfaces.
-ms.assetid: 2449BB88-1912-43F9-97E6-B56158D92E55
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ Because the SPB controller driver is a kernel-mode driver, it should assign an a
 
 This SDDL string restricts access to the operating system (and its user-mode components), members of the Administrators group, and [User-Mode Driver Framework](../wdf/overview-of-the-umdf.md) (UMDF) drivers. For more information about SDDL strings, see [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
 
-In addition, the [*EvtSpbControllerIoOther*](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_other) function must validate all parameters in the custom I/O control requests that it receives from user-mode clients. For all other *EvtSpb*Xxx functions, SpbCx validates the parameters in I/O requests from user-mode clients before these parameters are passed to the SPB controller driver. For more information about device security, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+In addition, the [*EvtSpbControllerIoOther*](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_other) function must validate all parameters in the custom I/O control requests that it receives from user-mode clients. For all other *EvtSpb*Xxx functions, SpbCx validates the parameters in I/O requests from user-mode clients before these parameters are passed to the SPB controller driver. For more information about device security, see [Securing Device Objects](../kernel/controlling-device-access.md).
 
 All methods and callback functions in the SpbCx DDI that return status codes return NTSTATUS values. The driver-support methods in this DDI follow the usual conventions for KMDF interfaces, and all objects that are used by SpbCx follow the usual conventions for KMDF objects. For more information, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md).
 
@@ -61,6 +60,4 @@ The SpbCx I/O request interface supports the [**IOCTL\_SPB\_LOCK\_CONTROLLER**](
 In addition to the I/O control (IOCTL) codes that are supported by SpbCx, the SPB controller driver can support custom IOCTLs. Clients can send IOCTL requests to file objects that represent target devices on the bus, and these requests arrive in the I/O request queue that is managed by SpbCx. If SpbCx receives a request that has an IOCTL code that it does not support, SpbCx passes the request directly to the controller driver, which performs all handling of the request.
 
 Kernel-mode clients of the SpbCx I/O request interface can send I/O requests at an interrupt request level (IRQL) of either PASSIVE\_LEVEL or DISPATCH\_LEVEL. User-mode clients can send I/O requests only at PASSIVE\_LEVEL. I/O completion can occur at PASSIVE\_LEVEL or DISPATCH\_LEVEL. All I/O requests can return STATUS\_PENDING.
-
- 
 

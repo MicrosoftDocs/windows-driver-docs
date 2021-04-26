@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_FUNCTIONTABLE
 description: Clients use the KSPROPERTY\_CLOCK\_FUNCTIONTABLE property to retrieve the entry points for querying time at DISPATCH\_LEVEL, which enables filters to perform precise rate matching.
-ms.assetid: 6dac5688-fd69-416c-a4e4-da9ccc45c32a
 keywords: ["KSPROPERTY_CLOCK_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ Clients use the KSPROPERTY\_CLOCK\_FUNCTIONTABLE property to retrieve the entry 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable" data-raw-source="[&lt;strong&gt;KSCLOCK_FUNCTIONTABLE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable)"><strong>KSCLOCK_FUNCTIONTABLE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable" data-raw-source="[&lt;strong&gt;KSCLOCK_FUNCTIONTABLE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable)"><strong>KSCLOCK_FUNCTIONTABLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -86,6 +85,4 @@ Requirements
 [**KSCLOCK\_FUNCTIONTABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable)
 
 [**KeQueryInterruptTime**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryinterrupttime)
-
- 
 

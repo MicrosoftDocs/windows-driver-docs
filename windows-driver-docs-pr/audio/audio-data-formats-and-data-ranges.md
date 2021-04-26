@@ -1,7 +1,6 @@
 ---
 title: Audio Data Formats and Data Ranges
 description: Audio Data Formats and Data Ranges
-ms.assetid: 85aa74b4-8e33-49f4-82e7-561baa55c265
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

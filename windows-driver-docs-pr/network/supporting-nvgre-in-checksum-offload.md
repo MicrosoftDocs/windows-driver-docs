@@ -1,7 +1,6 @@
 ---
 title: Supporting NVGRE in Checksum Offload
 description: This section describes supporting NVGRE in checksum offload
-ms.assetid: 933EE18B-917A-40BC-87AA-0F463615A082
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

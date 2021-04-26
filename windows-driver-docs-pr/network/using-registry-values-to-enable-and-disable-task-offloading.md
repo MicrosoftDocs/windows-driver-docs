@@ -1,14 +1,14 @@
 ---
 title: Using Registry Values to Enable and Disable Task Offloading
 description: Using Registry Values to Enable and Disable Task Offloading
-ms.assetid: 32efd685-365c-4347-9599-fe429569d35b
 keywords:
 - task offload WDK TCP/IP transport , registry values
 - registry WDK TCP/IP offload
 - task offload WDK TCP/IP transport , enabling services
 - task offload WDK TCP/IP transport , disabling services
-ms.date: 04/20/2017
+ms.date: 10/30/2020
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q2 
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading
@@ -21,373 +21,94 @@ When you debug a driver's task offload functionality, you might find it useful t
 
 Task offload keywords belong to one of two groups: granular keywords or grouped keywords. *Granular keywords* provide keywords per offload capability--Transport Layer differentiation, IP protocol differentiation. *Grouped keywords* provide combined keywords capability at the transport layer.
 
+## Granular keywords
+
 The granular keywords are defined as follows:
 
-<a href="" id="-ipchecksumoffloadipv4"></a>**\*IPChecksumOffloadIPv4**  
-Describes whether the device enabled or disabled the calculation of IPv4 checksums.
-
-<a href="" id="-tcpchecksumoffloadipv4"></a>**\*TCPChecksumOffloadIPv4**  
-Describes whether the device enabled or disabled the calculation of TCP Checksum over IPv4 packets.
-
-<a href="" id="-tcpchecksumoffloadipv6"></a>**\*TCPChecksumOffloadIPv6**  
-Describes whether the device enabled or disabled the calculation of TCP checksum over IPv6 packets.
-
-<a href="" id="-udpchecksumoffloadipv4"></a>**\*UDPChecksumOffloadIPv4**  
-Describes whether the device enabled or disabled the calculation of UDP Checksum over IPv4 packets.
-
-<a href="" id="-udpchecksumoffloadipv6"></a>**\*UDPChecksumOffloadIPv6**  
-Describes whether the device enabled or disabled the calculation of UDP Checksum over IPv6 packets.
-
-<a href="" id="-lsov1ipv4"></a>**\*LsoV1IPv4**  
-Describes whether the device enabled or disabled the segmentation of large TCP packets over IPv4 for large send offload version 1 (LSOv1).
-
-<a href="" id="-lsov2ipv4"></a>**\*LsoV2IPv4**  
-Describes whether the device enabled or disabled the segmentation of large TCP packets over IPv4 for large send offload version 2 (LSOv2).
-
-<a href="" id="-lsov2ipv6"></a>**\*LsoV2IPv6**  
-Describes whether the device enabled or disabled the segmentation of large TCP packets over IPv6 for large send offload version 2 (LSOv2).
-
-<a href="" id="-ipsecoffloadv1ipv4"></a>**\*IPsecOffloadV1IPv4**  
-Describes whether the device enabled or disabled the calculation of IPsec headers over IPv4.
-
-<a href="" id="-ipsecoffloadv2"></a>**\*IPsecOffloadV2**  
-Describes whether the device enabled or disabled IPsec offload version 2 (IPsecOV2). IPsecOV2 provides support for additional crypto-algorithms, IPv6, and co-existence with large send offload version 2 (LSOv2).
-
-<a href="" id="-ipsecoffloadv2ipv4"></a>**\*IPsecOffloadV2IPv4**  
-Describes whether the device enabled or disabled IPsecOV2 for IPv4 only.
+|Keyword|Description|
+|--- |--- |
+|**\*IPChecksumOffloadIPv4**|Describes whether the device enabled or disabled the calculation of IPv4 checksums.|
+|**\*TCPChecksumOffloadIPv4**|Describes whether the device enabled or disabled the calculation of TCP Checksum over IPv4 packets.|
+|**\*TCPChecksumOffloadIPv6**|Describes whether the device enabled or disabled the calculation of TCP checksum over IPv6 packets.|
+|**\*UDPChecksumOffloadIPv4**|Describes whether the device enabled or disabled the calculation of UDP Checksum over IPv4 packets.|
+|**\*UDPChecksumOffloadIPv6**|Describes whether the device enabled or disabled the calculation of UDP Checksum over IPv6 packets.|
+|**\*LsoV1IPv4**|Describes whether the device enabled or disabled the segmentation of large TCP packets over IPv4 for large send offload version 1 (LSOv1).|
+|**\*LsoV2IPv4**|Describes whether the device enabled or disabled the segmentation of large TCP packets over IPv4 for large send offload version 2 (LSOv2).|
+|**\*LsoV2IPv6**|Describes whether the device enabled or disabled the segmentation of large TCP packets over IPv6 for large send offload version 2 (LSOv2).|
+|**\*IPsecOffloadV1IPv4** |Describes whether the device enabled or disabled the calculation of IPsec headers over IPv4.|
+|**\*IPsecOffloadV2** |Describes whether the device enabled or disabled IPsec offload version 2 (IPsecOV2). IPsecOV2 provides support for additional crypto-algorithms, IPv6, and co-existence with large send offload version 2 (LSOv2).|
+|**\*IPsecOffloadV2IPv4**  |Describes whether the device enabled or disabled IPsecOV2 for IPv4 only.|
 
 The following table describes the granular keywords that you can use to configure offload services.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-<th align="left">EnumDesc</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong><em>IPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>IPv4 Checksum Offload</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>TCPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>TCP Checksum Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong><em>TCPChecksumOffloadIPv6</strong></p></td>
-<td align="left"><p>TCP Checksum Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>UDPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>UDP Checksum Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong><em>UDPChecksumOffloadIPv6</strong></p></td>
-<td align="left"><p>UDP Checksum Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx & Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>LsoV1IPv4</strong></p></td>
-<td align="left"><p>Large Send Offload Version 1 (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong><em>LsoV2IPv4</strong></p></td>
-<td align="left"><p>Large Send Offload V2 (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>LsoV2IPv6</strong></p></td>
-<td align="left"><p>Large Send Offload V2 (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong><em>IPsecOffloadV1IPv4</strong></p></td>
-<td align="left"><p>IPsec Offload Version 1 (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Auth Header Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>ESP Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header & ESP Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>IPsecOffloadV2</strong></p></td>
-<td align="left"><p>IPsec Offload</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Auth Header Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>ESP Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header & ESP Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>*IPsecOffloadV2IPv4</strong></p></td>
-<td align="left"><p>IPsec Offload (IPv4 only)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Auth Header Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>ESP Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header & ESP Enabled</p></td>
-</tr>
-</tbody>
-</table>
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**_IPChecksumOffloadIPv4_**|IPv4 Checksum Offload|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**TCPChecksumOffloadIPv4**|TCP Checksum Offload (IPv4)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**_TCPChecksumOffloadIPv6_**|TCP Checksum Offload (IPv6)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**UDPChecksumOffloadIPv4**|UDP Checksum Offload (IPv4)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**_UDPChecksumOffloadIPv6_**|UDP Checksum Offload (IPv6)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Rx & Tx Enabled|
+|**LsoV1IPv4**|Large Send Offload Version 1 (IPv4)|0|Disabled|
+|||1 (Default)|Enabled|
+|**_LsoV2IPv4_**|Large Send Offload V2 (IPv4)|0|Disabled|
+|||1 (Default)|Enabled|
+|**LsoV2IPv6**|Large Send Offload V2 (IPv6)|0|Disabled|
+|||1 (Default)|Enabled|
+|**_IPsecOffloadV1IPv4_**|IPsec Offload Version 1 (IPv4)|0|Disabled|
+|||1|Auth Header Enabled|
+|||2|ESP Enabled|
+|||3 (Default)|Auth Header & ESP Enabled|
+|**IPsecOffloadV2**|IPsec Offload|0|Disabled|
+|||1|Auth Header Enabled|
+|||2|ESP Enabled|
+|||3 (Default)|Auth Header & ESP Enabled|
+|***IPsecOffloadV2IPv4**|IPsec Offload (IPv4 only)|0|Disabled|
+|||1|Auth Header Enabled|
+|||2|ESP Enabled|
+|||3 (Default)|Auth Header & ESP Enabled|
 
  
 
-**Note**  The INF file can support granular keywords that are displayed in the Advanced Property page of the UI. The miniport driver must read all of the granular settings from the registry at initialization, including settings that are not displayed, to register NDIS offload capabilities.
+> [!NOTE]
+> The INF file can support granular keywords that are displayed in the Advanced Property page of the UI. The miniport driver must read all of the granular settings from the registry at initialization, including settings that are not displayed, to register NDIS offload capabilities.
 
- 
+## Grouped keywords
 
 The grouped keywords are defined as follows:
 
-<a href="" id="-tcpudpchecksumoffloadipv4"></a>**\*TCPUDPChecksumOffloadIPv4**  
-Describes whether the device enabled or disabled the calculation of IP, TCP, and UDP checksum over IPv4.
+|Keyword|Description|
+|--- |--- |
+|**\*TCPUDPChecksumOffloadIPv4**|Describes whether the device enabled or disabled the calculation of IP, TCP, and UDP checksum over IPv4.|
+|**\*TCPUDPChecksumOffloadIPv6**|Describes whether the device enabled or disabled the calculation of TCP and UDP checksum over IPv6.|
 
-<a href="" id="-tcpudpchecksumoffloadipv6"></a>**\*TCPUDPChecksumOffloadIPv6**  
-Describes whether the device enabled or disabled the calculation of TCP and UDP checksum over IPv6.
 
 The following table describes the grouped keywords that you can use to configure offload services.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-<th align="left">EnumDesc</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong><em>TCPUDPChecksumOffloadIPv4</strong></p></td>
-<td align="left"><p>TCP/UDP Checksum Offload (IPv4)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx & Rx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>TCPUDPChecksumOffloadIPv6</strong></p></td>
-<td align="left"><p>TCP/UDP Checksum Offload (IPv6)</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Tx Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Rx Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx & Rx Enabled</p></td>
-</tr>
-</tbody>
-</table>
-
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**_TCPUDPChecksumOffloadIPv4_**|TCP/UDP Checksum Offload (IPv4)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Tx & Rx Enabled|
+|**TCPUDPChecksumOffloadIPv6**|TCP/UDP Checksum Offload (IPv6)|0|Disabled|
+|||1|Tx Enabled|
+|||2|Rx Enabled|
+|||3 (Default)|Tx & Rx Enabled|
  
 
 There are restrictions on the combinations of offloads that can be enabled. For example, if a miniport adapter supports LSOV1 or LSOV2, the miniport adapter also calculates the IP and TCP checksums. For more information about valid combinations of offloads, see [Combining Types of Task Offloads](combining-types-of-task-offloads.md).

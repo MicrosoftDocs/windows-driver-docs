@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_BootInformation WMI Class
 description: MSiSCSI\_BootInformation WMI Class
-ms.assetid: a6ed673a-b5c1-4857-803a-4f0f3cf798d8
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

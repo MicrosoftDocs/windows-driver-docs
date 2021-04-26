@@ -1,7 +1,6 @@
 ---
 title: Installing IDE Controller Minidrivers
 description: Installing IDE Controller Minidrivers
-ms.assetid: c1b41f89-150d-47e9-9bed-04f5796f69bd
 keywords:
 - IDE controller minidrivers WDK storage , installing
 - storage IDE controller minidrivers WDK , installing

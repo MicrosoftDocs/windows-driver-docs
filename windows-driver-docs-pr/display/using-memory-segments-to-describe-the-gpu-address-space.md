@@ -1,7 +1,6 @@
 ---
 title: Using Memory Segments to Describe the GPU Address Space
 description: Using Memory Segments to Describe the GPU Address Space
-ms.assetid: 5ff23d53-0860-44fa-8ce1-c34aa22b8730
 keywords:
 - memory segments WDK display , about memory segments
 - hidden video memory WDK display

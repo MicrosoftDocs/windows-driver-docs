@@ -1,7 +1,6 @@
 ---
 title: Adding Event Tracing to Kernel-Mode Drivers
 description: Adding Event Tracing to Kernel-Mode Drivers
-ms.assetid: 74fdb4b2-aad1-4d8a-b146-40a92e1fdbb5
 keywords:
 - Event Tracing for Windows WDK , kernel-mode
 - ETW WDK , kernel-mode
@@ -249,7 +248,7 @@ In the instrumentation manifest, you defined the names of the event provider and
    #endif
    ```
 
-   Add the **EventRegister\<*provider*\>** macro to your [*DriverEntry*](../wdf/driverentry-for-kmdf-drivers.md) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister\<*provider*\>** function with a call to **EventUnregister\<*provider*\>**. You can unregister the driver in your driver's [</em>*Unload**](<https://msdn.microsoft.com/library/windows/hardware/ff564886>) routine.
+   Add the **EventRegister\<*provider*\>** macro to your [*DriverEntry*](../wdf/driverentry-for-kmdf-drivers.md) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister\<*provider*\>** function with a call to **EventUnregister\<*provider*\>**. You can unregister the driver in your driver's [</em>*Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine.
 
    ```ManagedCPlusPlus
       // DriverEntry function

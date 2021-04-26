@@ -1,7 +1,6 @@
 ---
 title: Properties for WIA Camera Minidrivers
 description: Properties for WIA Camera Minidrivers
-ms.assetid: 3a5e61d7-1ca8-44a8-b24a-7a5929d424a5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Handling Errors
 description: Handling Errors
-ms.assetid: ac4e056e-3304-4934-887a-5cc2b87989bd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Handling Errors
 
 
-The [Direct3D version 10 functions](/windows-hardware/drivers/ddi/index) that a user-mode display driver implements typically have VOID for a return parameter type. The primary exception to this rule is the *CalcPrivate***ObjType***Size*-type function (for example, the [**CalcPrivateResourceSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateresourcesize) function). This type of function returns a SIZE\_T parameter type that indicates the size of the memory region that the driver requires for creating the particular object type through the *Create***ObjType**-type function (for example, [**CreateResource(D3D10)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createresource)).
+The [Direct3D version 10 functions](/windows-hardware/drivers/ddi/_display/#functions) that a user-mode display driver implements typically have VOID for a return parameter type. The primary exception to this rule is the *CalcPrivate***ObjType***Size*-type function (for example, the [**CalcPrivateResourceSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateresourcesize) function). This type of function returns a SIZE\_T parameter type that indicates the size of the memory region that the driver requires for creating the particular object type through the *Create***ObjType**-type function (for example, [**CreateResource(D3D10)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createresource)).
 
 Returning VOID prevents the user-mode display driver from notifying the Direct3D runtime of errors in the conventional way (that is, through a user-mode display driver's function return parameter). Instead, the user-mode display driver must use the Direct3D runtime's [**pfnSetErrorCb**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb) callback function to pass such information back to the runtime. The runtime supplies a pointer to its **pfnSetErrorCb** in the [**D3D10DDI\_CORELAYER\_DEVICECALLBACKS**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks) structure that the **pUMCallbacks** member of the [**D3D10DDIARG\_CREATEDEVICE**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice) structure points to in a call to the [**CreateDevice(D3D10)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
 
@@ -35,7 +34,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 <tbody>
 <tr class="odd">
 <td align="left"><p>NoErrors</p></td>
-<td align="left"><p>The driver should not encounter any errors, including D3DDDIERR_DEVICEREMOVED. The runtime will determine that any call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb" data-raw-source="[&lt;strong&gt;pfnSetErrorCb&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb)"><strong>pfnSetErrorCb</strong></a> is critical.</p></td>
+<td align="left"><p>The driver should not encounter any errors, including D3DDDIERR_DEVICEREMOVED. The runtime will determine that any call to <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb" data-raw-source="[&lt;strong&gt;pfnSetErrorCb&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb)"><strong>pfnSetErrorCb</strong></a> is critical.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowDeviceRemoved</p></td>
@@ -51,7 +50,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 <tr class="odd">
 <td align="left"><p>AllowMapErrors</p></td>
-<td align="left"><p>The driver should check for resource contention. Therefore, the driver can pass DXGI_DDI_ERR_WASSTILLDRAWING through <strong>pfnSetErrorCb</strong> if the D3D10_DDI_MAP_FLAG_DONOTWAIT flag was passed into the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap" data-raw-source="[&lt;strong&gt;ResourceMap&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap)"><strong>ResourceMap</strong></a> function. The driver can also pass D3DDDIERR_DEVICEREMOVED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p></td>
+<td align="left"><p>The driver should check for resource contention. Therefore, the driver can pass DXGI_DDI_ERR_WASSTILLDRAWING through <strong>pfnSetErrorCb</strong> if the D3D10_DDI_MAP_FLAG_DONOTWAIT flag was passed into the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap" data-raw-source="[&lt;strong&gt;ResourceMap&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap)"><strong>ResourceMap</strong></a> function. The driver can also pass D3DDDIERR_DEVICEREMOVED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowGetDataErrors</p></td>
@@ -59,7 +58,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 <tr class="odd">
 <td align="left"><p>AllowWKCheckCounterErrors</p></td>
-<td align="left"><p>The driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter" data-raw-source="[&lt;strong&gt;CheckCounter&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter)"><strong>CheckCounter</strong></a> function should indicate whether it supports any runtime-defined counters. Therefore, the driver can pass DXGI_DDI_ERR_UNSUPPORTED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p>
+<td align="left"><p>The driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter" data-raw-source="[&lt;strong&gt;CheckCounter&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter)"><strong>CheckCounter</strong></a> function should indicate whether it supports any runtime-defined counters. Therefore, the driver can pass DXGI_DDI_ERR_UNSUPPORTED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p>
 <p>The driver cannot return D3DDDIERR_DEVICEREMOVED for any check-type function.</p></td>
 </tr>
 <tr class="even">
@@ -69,8 +68,6 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

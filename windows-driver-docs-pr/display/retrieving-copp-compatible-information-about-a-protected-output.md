@@ -1,7 +1,6 @@
 ---
 title: Retrieving COPP-Compatible Information on Protected Output
 description: The display miniport driver can receive requests to retrieve COPP-compatible information about the protected output that is associated with a graphics adapter's physical output connector.
-ms.assetid: 9114f232-4123-47a8-b43d-62d14b9f6b08
 keywords:
 - OPM WDK display , retrieving COPP-compatible information
 ms.date: 12/06/2018

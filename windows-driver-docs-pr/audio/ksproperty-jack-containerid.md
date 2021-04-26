@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_JACK\_CONTAINERID
 description: The KSPROPERTY\_JACK\_CONTAINERID property is implemented as a pin-wise property that is accessed by using the filter handle.
-ms.assetid: 01A157B0-41EE-4713-B5D3-B9BF9C2B80CE
 keywords: ["KSPROPERTY_JACK_CONTAINERID Audio Devices"]
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ This property can be supported on any bridge pin that is associated with one or 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via filter handle)</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td align="left"><p><strong>GUID</strong></p></td>
 </tr>
 </tbody>
@@ -101,6 +100,4 @@ Requirements
 [**BTHHFP\_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ns-bthhfpddi-_bthhfp_descriptor)
 
 [**IOCTL\_BTHHFP\_DEVICE\_GET\_CONTAINERID**](/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_containerid)
-
- 
 

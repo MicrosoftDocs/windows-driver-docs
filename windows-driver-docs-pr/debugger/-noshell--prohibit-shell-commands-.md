@@ -1,7 +1,6 @@
 ---
 title: .noshell (Prohibit Shell Commands)
 description: The .noshell command prevents you from using .shell commands.
-ms.assetid: 49a83e46-1390-4b60-bd61-a5da80c513e3
 keywords: [".noshell (Prohibit Shell Commands) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

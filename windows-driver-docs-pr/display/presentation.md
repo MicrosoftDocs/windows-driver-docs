@@ -1,7 +1,6 @@
 ---
 title: Presentation
 description: Presentation
-ms.assetid: 23a01b5b-0654-4c43-ac96-a75810fa20df
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , presentation
 - presentation WDK DirectX 8.0
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_presentation_gg"></span><span id="DDK_PRESENTATION_GG"></span>
 
 
-DirectX 8.0 formalizes the concept of "presentation" (or making the results of rendering visible to the user) in the API. Previously, this was accomplished either by page flipping in full screen mode or by blitting in windowed mode. Applications use the new **Present** API to perform either full screen flipping or windowed mode blitting. However, this mechanism is not yet exposed at the DDI level. The runtime simply maps the **Present** API to either the [*DdFlip*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) or [*DdBlt*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) DDI entry points depending on the application mode.
+DirectX 8.0 formalizes the concept of "presentation" (or making the results of rendering visible to the user) in the API. Previously, this was accomplished either by page flipping in full screen mode or by blitting in windowed mode. Applications use the new **Present** API to perform either full screen flipping or windowed mode blitting. However, this mechanism is not yet exposed at the DDI level. The runtime simply maps the **Present** API to either the [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) or [*DdBlt*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) DDI entry points depending on the application mode.
 
 DirectX 8.0 has added two new DirectDraw blt flags that are passed to the driver as notification of when a blt operation is actually part of a **Present** and therefore marks a frame boundary. These new flags are DDBLT\_PRESENTATION and DDBLT\_LAST\_PRESENTATION. Two flags are necessary because clipping may result in a single **Present** call invoking multiple blt operations in the driver. In this case, all of the blts that are invoked as a result of the **Present** operation have the DDBLT\_PRESENTATION flag set. However, only the final blt of the sequence used to perform the **Present** has the DDBLT\_LAST\_PRESENTATION bit set. Therefore, if blt is used to implement a **Present** call, the driver sees zero or more blts with the DDBLT\_PRESENTATION bit set followed by exactly one blt with both the DDLT\_PRESENTATION and DDBLT\_LAST\_PRESENTATION bits set. These flags are never set by the application. Only the runtime is allowed to pass these flags to a blt. In addition, these flags are only passed to drivers supporting the DirectX 8.0 DDI.
 

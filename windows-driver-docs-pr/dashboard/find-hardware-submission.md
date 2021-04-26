@@ -64,7 +64,7 @@ You can use the following driver attributes for keyword searches:
 |SubmissionID |Numeric|19 digit Submission ID|
 |SubmissionName |Text|
 |SubmissionType |Text|Initial, Derived|
-|SubmissionStatus |Text|Complete, Failed, NotSet, Processing, Ready|
+|SubmissionStatus |Text|Complete, Failed, Processing, Ready|
 |IsExtensionDriver |Boolean|False, True|
 |IsUniversalDriver |Boolean|False, True|
 |IsDeclarativeDriver |Boolean|False, True|

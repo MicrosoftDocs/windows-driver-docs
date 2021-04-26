@@ -1,7 +1,6 @@
 ---
 title: USB 3.0 Extensions
 description: This section describes the USB 3.0 debugger extension commands.
-ms.assetid: 7CE2B9F8-50EF-41C0-B306-B7B7A6DA1636
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

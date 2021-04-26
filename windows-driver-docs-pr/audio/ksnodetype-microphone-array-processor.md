@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_MICROPHONE\_ARRAY\_PROCESSOR
 description: KSNODETYPE\_MICROPHONE\_ARRAY\_PROCESSOR
-ms.assetid: b390247c-25d8-406b-8b2a-006a5a596b73
 keywords: ["KSNODETYPE_MICROPHONE_ARRAY_PROCESSOR Audio Devices"]
 topic_type:
 - apiref

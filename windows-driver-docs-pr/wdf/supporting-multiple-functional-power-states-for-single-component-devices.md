@@ -1,7 +1,6 @@
 ---
 title: Single-Component Device, one or more Functional Power States
 description: Describes how to implement Fx state support for a single-component device in a KMDF driver.
-ms.assetid: C7EFD71F-E101-4160-9703-E1DBD507698C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

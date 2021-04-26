@@ -1,7 +1,6 @@
 ---
 title: Eventing Scenarios
 description: Eventing Scenarios
-ms.assetid: 6f7832ed-2b0b-4857-b47e-7db492a53855
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 # Eventing Scenarios
 
-The Eventing scenario tests Eventing, as constrained in the [Device Profile for Web Services (DPWS)](https://schemas.xmlsoap.org/ws/2005/05/devprof/).
+The Eventing scenario tests Eventing, as constrained in the [Devices Profile for Web Services (DPWS)](https://docs.oasis-open.org/ws-dd/ns/dpws/2009/01).
 
 The goal of this scenario is not discovery of the Hosted Service endpoints. This scenario assumes that these endpoints were discovered or provided before starting this scenario.
 

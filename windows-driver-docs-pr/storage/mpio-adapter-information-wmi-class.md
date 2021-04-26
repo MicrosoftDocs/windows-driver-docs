@@ -1,7 +1,6 @@
 ---
 title: MPIO\_ADAPTER\_INFORMATION WMI Class
 description: MPIO\_ADAPTER\_INFORMATION WMI Class
-ms.assetid: 748205a5-d37b-4080-b6ce-9176139cef4a
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

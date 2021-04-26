@@ -1,7 +1,6 @@
 ---
 title: Installing an Advanced Properties Page for a COM Port
 description: Installing an Advanced Properties Page for a COM Port
-ms.assetid: 056fd245-a9d2-4a10-9e92-fe75e51f6770
 keywords:
 - advanced COM port properties page WDK serial devices
 - COM ports WDK serial devices
@@ -22,7 +21,7 @@ To install the system-supplied property page and default dialog box for a COM po
 
 1. Implement a Microsoft Win32 property page provider. For general information about installing property sheet dialogs, see [Providing Device Property Pages](../install/overview-of-device-property-pages.md).
 
-    In the property page provider, call the system-supplied [**SerialDisplayAdvancedSettings**](/windows/desktop/api/msports/nf-msports-serialdisplayadvancedsettings) routine, which displays the system-supplied default dialog box.
+    In the property page provider, call the system-supplied [**SerialDisplayAdvancedSettings**](/windows/win32/api/msports/nf-msports-serialdisplayadvancedsettings) routine, which displays the system-supplied default dialog box.
 
 2. Install the property page provider by setting an **EnumPropPages32** value entry in an *add-registry-section* that is referenced by a device's [**DDInstall section**](../install/inf-ddinstall-section.md). See the description of the **EnumPropPages32** value entry in [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 

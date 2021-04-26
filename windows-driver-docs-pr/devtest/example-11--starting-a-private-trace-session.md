@@ -1,7 +1,6 @@
 ---
 title: Example 11 Starting a Private Trace Session
 description: Example 11 Starting a Private Trace Session
-ms.assetid: e1826811-cb1c-400f-a3e1-aaa6ae83ef42
 keywords:
 - trace sessions WDK , private
 - private trace sessions WDK

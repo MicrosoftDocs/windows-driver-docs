@@ -1,7 +1,6 @@
 ---
 title: ADF Configuration Elements
 description: ADF Configuration Elements
-ms.assetid: 643e551d-3a70-4d52-b45d-c33d1e0ac63e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

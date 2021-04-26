@@ -1,7 +1,6 @@
 ---
 title: Registering a PSHED Plug-In
 description: Registering a PSHED Plug-In
-ms.assetid: 8b710aa2-1477-4906-b5cb-d269d821ea28
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , registering
 - registering PSHED plug-ins WDK WHEA
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 # Registering a PSHED Plug-In
 
 
-A PSHED plug-in registers itself with the PSHED by calling the [**PshedRegisterPlugin**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pshedregisterplugin) function, passing a pointer to an initialized [**WHEA\_PSHED\_PLUGIN\_REGISTRATION\_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_pshed_plugin_registration_packet) structure. A PSHED plug-in typically calls the **PshedRegisterPlugin** function from within either its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function or its [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) function.
+A PSHED plug-in registers itself with the PSHED by calling the [**PshedRegisterPlugin**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pshedregisterplugin) function, passing a pointer to an initialized [**WHEA\_PSHED\_PLUGIN\_REGISTRATION\_PACKET**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_pshed_plugin_registration_packet) structure. A PSHED plug-in typically calls the **PshedRegisterPlugin** function from within either its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function or its [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) function.
 
 A PSHED plug-in can call [**PshedIsSystemWheaEnabled**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pshedissystemwheaenabled) to check whether the system is WHEA-enabled before it calls **PshedRegisterPlugin**.
 
@@ -150,6 +149,4 @@ NTSTATUS
   return STATUS_SUCCESS;
 }
 ```
-
- 
 

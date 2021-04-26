@@ -1,7 +1,6 @@
 ---
 title: Deinterlacing on 64-bit Operating Systems
 description: Deinterlacing on 64-bit Operating Systems
-ms.assetid: ffac0c1a-2c92-4beb-9622-26d10e1a06aa
 keywords:
 - deinterlacing WDK DirectX VA , 64-bit
 - 64-bit WDK DirectX VA

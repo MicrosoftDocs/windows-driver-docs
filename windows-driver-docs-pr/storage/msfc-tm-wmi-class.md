@@ -1,7 +1,6 @@
 ---
 title: MSFC\_TM WMI Class
 description: MSFC\_TM WMI Class
-ms.assetid: c81b9b2a-6381-4ff9-a579-bee53ac8678d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_Exclusive
 description: DEVPKEY_DeviceClass_Exclusive
-ms.assetid: a05ada91-6a6f-4253-aca5-0740294a5c24
 keywords: ["DEVPKEY_DeviceClass_Exclusive Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 You can set the value of DEVPKEY_DeviceClass_Exclusive when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](./inf-classinstall32-section.md) and the information about the registry value **Exclusive** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](./inf-addreg-directive.md).
 
-You can call [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Exclusive.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Exclusive.
 
 Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Exclusive property key. On these earlier versions of Windows, you can use the SPCRP_EXCLUSIVE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./retrieving-spcrp-xxx-properties.md).
 
@@ -80,9 +79,9 @@ Requirements
 
 [**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
 

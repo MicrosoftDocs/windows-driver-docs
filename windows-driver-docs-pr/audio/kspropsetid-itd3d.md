@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Itd3d
 description: KSPROPSETID\_Itd3d
-ms.assetid: 87159be4-740e-47c9-b16f-16ca4d01c793
 keywords: ["KSPROPSETID_Itd3d"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CONTROL\_CHANGE
 description: The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has occurred at a node that represents a hardware volume-control knob, mute switch, or other type of manual control.Usage Summary TableTargetEvent Descriptor TypeEvent Value TypePinKSE\_NODEKSEVENTDATA The event value type (operation data) is a KSEVENTDATA structure that specifies the type of notification to use for an event.
-ms.assetid: 32d8e14c-f21d-4bac-8d98-8aca40e30b60
 keywords: ["KSEVENT_CONTROL_CHANGE Audio Devices"]
 topic_type:
 - apiref
@@ -38,8 +37,8 @@ The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -76,6 +75,4 @@ Requirements
 [**PCEVENT\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request)
 
 [IPortEvents](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportevents)
-
- 
 

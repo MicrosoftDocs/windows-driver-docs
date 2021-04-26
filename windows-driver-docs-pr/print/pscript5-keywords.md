@@ -1,7 +1,6 @@
 ---
 title: Pscript5 Keywords
 description: Pscript5 Keywords
-ms.assetid: a5f4384a-8d78-4dc6-969b-f7a1fa6cb5e7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -53,7 +52,7 @@ Feature and option names that are passed to the helper interface from a Pscript5
 <tr class="even">
 <td><p>%CustomPageSize</p></td>
 <td><p>Custom page size options have a complex format. See note 2 following this table.</p></td>
-<td><p>Read or specify a custom page size setting. Setting this feature also causes the <strong>dmPaperSize</strong> member of the public <a href="https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure to be reset to DMPAPER_CUSTOMSIZE (indicating a PS custom size), and sets the DM_PAPERSIZE bit flag. This feature can be read only if the public DEVMODEW structure indicates that a custom paper size is in use.</p>
+<td><p>Read or specify a custom page size setting. Setting this feature also causes the <strong>dmPaperSize</strong> member of the public <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure to be reset to DMPAPER_CUSTOMSIZE (indicating a PS custom size), and sets the DM_PAPERSIZE bit flag. This feature can be read only if the public DEVMODEW structure indicates that a custom paper size is in use.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="odd">
@@ -116,7 +115,7 @@ Feature and option names that are passed to the helper interface from a Pscript5
 "Portrait"
 "Landscape"
 "RotatedLandscape"</td>
-<td><p>Specify the output orientation. Configuring the orientation by using this technique changes both the private and public <a href="https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure values, when used with the <strong>IPrintCoreHelperPS</strong> interface. This warning does not apply to the <strong>IPrintCoreUI2</strong> interface.</p>
+<td><p>Specify the output orientation. Configuring the orientation by using this technique changes both the private and public <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure values, when used with the <strong>IPrintCoreHelperPS</strong> interface. This warning does not apply to the <strong>IPrintCoreUI2</strong> interface.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="odd">
@@ -223,8 +222,6 @@ Custom page size format is identical to that described in **IPrintCoreUI2**. **E
 
 **Note**   3
 Numeric values are represented as ANSI strings that contain only digit characters. Sign symbols are not allowed. For example, "300" is valid, but "-20", "20.5", and "+300" are all invalid. This note applies to %JobTimeout, %MaxFontSizeAsBitmap, %MinFontAsOutline, %PSMemory, and %WaitTimeout.
-
- 
 
  
 

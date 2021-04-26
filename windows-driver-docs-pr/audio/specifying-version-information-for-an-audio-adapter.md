@@ -1,7 +1,6 @@
 ---
 title: Specifying Version Information for an Audio Adapter
 description: Specifying Version Information for an Audio Adapter
-ms.assetid: 2d1fb5e7-84fe-451f-b53f-bf6017ae94ad
 keywords:
 - audio adapters WDK , version information
 - adapter drivers WDK audio , version information

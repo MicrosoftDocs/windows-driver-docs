@@ -9,7 +9,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # Getting started with Windows drivers
@@ -17,7 +16,7 @@ author: EliotSeattle
 
 Start here to learn fundamental concepts about drivers.
 
-You should already be familiar with the [C programming language](/cpp/c-language/c-language-reference), and you should understand the ideas of function pointers, callback functions, and event handlers. If you are going to write a driver based on User-Mode Driver Framework 1.x, you should be familiar with [C++ and COM](https://go.microsoft.com/fwlink/p?LinkID=317460).
+You should already be familiar with the [C programming language](/cpp/c-language/c-language-reference), and you should understand the ideas of function pointers, callback functions, and event handlers. If you are going to write a driver based on User-Mode Driver Framework 1.x, you should be familiar with [C++ and COM](/windows/win32/learnwin32/learn-to-program-for-windows).
 
 ## <span id="in_this_section"></span>In this section
 
@@ -37,6 +36,4 @@ You should already be familiar with the [C programming language](/cpp/c-language
 [Windows Driver Kit (WDK)](../index.yml)
 
 [Driver Security Guidance](../driversecurity/index.md)
-
- 
 

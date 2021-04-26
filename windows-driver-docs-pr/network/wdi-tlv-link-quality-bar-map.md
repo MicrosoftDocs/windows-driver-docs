@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_LINK_QUALITY_BAR_MAP
 description: WDI_TLV_LINK_QUALITY_BAR_MAP is a TLV that contains the mapping of signal quality to Wi-Fi signal strength bars.
-ms.assetid: 35E073F4-D372-466A-98FF-0AAB1695284E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_LINK_QUALITY_BAR_MAP Network Drivers Starting with Windows Vista

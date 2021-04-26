@@ -1,7 +1,6 @@
 ---
 title: Dynamic Enumeration
 description: Dynamic Enumeration
-ms.assetid: 6e46b456-7d2d-4c6e-8692-7f310366387d
 keywords:
 - dynamic enumeration WDK KMDF
 - child descriptions WDK KMDF
@@ -34,7 +33,7 @@ Before a driver can use a child list, it must configure the child-list object by
 
 Each time a bus driver identifies a child device, it must add the child device's description to a child list. A *child description* consists of a required *identification description* and an optional *address description*.
 
-<a href="" id="identification-description"></a>*Identification Description*  
+<a href="" id="identification-description"></a>*Identification Description*
 An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a [**WDF\_CHILD\_IDENTIFICATION\_DESCRIPTION\_HEADER**](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header) structure.
 
 Typically, an identification description contains a device's [device identification strings](../install/device-identification-strings.md), possibly a serial number, and information about the device's location on the bus, such as a slot number.
@@ -51,7 +50,7 @@ The driver can provide the following set of callback functions, which allow the 
 
 Typically, you will need to provide these callback functions if your driver's identification description structures contain pointers to dynamically allocated buffers. For more information about the purpose of these callback functions, see their reference pages.
 
-<a href="" id="address-description"></a>*Address Description*  
+<a href="" id="address-description"></a>*Address Description*
 An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a [**WDF\_CHILD\_ADDRESS\_DESCRIPTION\_HEADER**](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header) structure.
 
 Address descriptions are optional. If a device's address information cannot change between the time the device is plugged in and the time it is unplugged, all of the device's address information can be stored in an identification description. For example, USB controllers assign addresses to devices when the devices are plugged in, and these addresses do not change.
@@ -114,7 +113,7 @@ If you want your driver to examine the contents of a child list, it can traverse
 
 -   If you need to obtain the address description that is currently contained in a child device description, your driver can call [**WdfChildListRetrieveAddressDescription**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrieveaddressdescription), specifying an identification description. The framework traverses the child list until it finds a child device with a matching identification description, and then it retrieves the address description.
 
--   If you need to obtain a handle to the framework device object that is associated with a particular child device, your driver can call [**WdfChildListRetrievePdo**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievepdo). The framework traverses the child list until it finds a child device with a matching identification description, and then it returns a device object handle.
+-   If you need to obtain a handle to the framework device object that is associated with a particular child device, your driver can call [**WdfChildListRetrievePdo**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievepdo). The framework traverses the child list until it finds a child device with a matching identification description, and then it returns a device object handle. Be sure to wrap the call with [**WdfChildListBeginIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginiteration) and [**WdfChildListEndIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistenditeration) to protect the caller from sudden PnP removal of the PDO on another thread.
 
 ### Accessing a PDO's Identification and Address Descriptions
 

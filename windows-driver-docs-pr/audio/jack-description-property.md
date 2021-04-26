@@ -1,7 +1,6 @@
 ---
 title: Jack Description Property
 description: Jack Description Property
-ms.assetid: 6398efc9-4435-4234-bd72-1ed0f96c9f9f
 ms.date: 05/08/2018
 ms.localizationpriority: medium
 ---

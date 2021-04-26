@@ -1,7 +1,6 @@
 ---
 title: Processing Video Frames
 description: Processing Video Frames
-ms.assetid: 0f613186-1887-4d67-95d6-f562124c69ab
 keywords:
 - video processing WDK DirectX VA , video frame processing
 - video frame processing WDK DirectX VA

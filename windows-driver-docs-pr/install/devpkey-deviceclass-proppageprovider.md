@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_PropPageProvider
 description: DEVPKEY_DeviceClass_PropPageProvider
-ms.assetid: 467a050e-9dd4-4b3b-a942-ee29667ac264
 keywords: ["DEVPKEY_DeviceClass_PropPageProvider Device and Driver Installation"]
 topic_type:
 - apiref
@@ -68,7 +67,7 @@ The value of DEVPKEY_DeviceClass_PropPageProvider is the value of the **EnumProp
 
 The **EnumPropPages32** registry value for a device setup class can set by an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF ClassInstall32 section**](./inf-classinstall32-section.md) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_PropPageProvider.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_PropPageProvider.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_PropPageProvider property key. You can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
@@ -86,9 +85,9 @@ Requirements
 
 [**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
 

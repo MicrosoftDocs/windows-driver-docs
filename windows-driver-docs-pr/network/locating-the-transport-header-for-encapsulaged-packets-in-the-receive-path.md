@@ -1,7 +1,6 @@
 ---
 title: Locating the Transport Header for Received Encapsulated Packets
 description: Locating the Transport Header for Encapsulated Packets in the Receive Path
-ms.assetid: D3BDE575-C9EB-49E3-9B61-FDB99B68ED8E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

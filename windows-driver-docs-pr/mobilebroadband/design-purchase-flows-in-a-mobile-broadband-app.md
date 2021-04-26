@@ -1,7 +1,6 @@
 ---
 title: Design purchase flows in a mobile broadband app
 description: Design purchase flows in a mobile broadband app
-ms.assetid: 1243b255-aac6-4d75-826a-e42482f5ac1b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

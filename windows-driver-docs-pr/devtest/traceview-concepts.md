@@ -1,7 +1,6 @@
 ---
 title: TraceView Concepts
 description: TraceView Concepts
-ms.assetid: 4fab2b23-8f7b-407b-b944-41ac8caf1a75
 keywords:
 - TraceView WDK , terminology
 - trace sessions WDK , groups
@@ -64,7 +63,7 @@ To create a trace session, you must identify the trace providers and locate the 
 
 - Enter the [control GUID](control-guid.md) of the provider and specify the TMF file or the path to a directory where TMF files are stored.
 
-    If you enter a provider name preceded by an asterisk (e.g. ```*SampleProvider```), TraceView will automatically turn the name into a GUID using a standard algorithm. Not all providers follow this standard, but many, such as providers written using [.NET's EventSource](/dotnet/api/system.diagnostics.tracing.eventsource?view=netframework-4.8), do.
+    If you enter a provider name preceded by an asterisk (e.g. ```*SampleProvider```), TraceView will automatically turn the name into a GUID using a standard algorithm. Not all providers follow this standard, but many, such as providers written using [.NET's EventSource Class](/dotnet/api/system.diagnostics.tracing.eventsource), do.
 
 - Select a [registered provider](registered-provider.md) from the list that TraceView assembles and specify the TMF file or the path to a directory where TMF files are stored.
 

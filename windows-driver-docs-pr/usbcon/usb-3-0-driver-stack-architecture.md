@@ -116,11 +116,8 @@ Microsoft provides the following helper libraries to help kernel-mode drivers an
 
 -   Winusb.dll
 
-    Winusb.dll is a user-mode DLL that exposes [WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) for communicating with Winusb.sys, which is loaded as a device's function driver in kernel mode. Applications use these functions to configure the device, retrieve information about the device, and perform I/O operations. For information about using these functions, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    Winusb.dll is a user-mode DLL that exposes [WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) for communicating with Winusb.sys, which is loaded as a device's function driver in kernel mode. Applications use these functions to configure the device, retrieve information about the device, and perform I/O operations. For information about using these functions, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[Universal Serial Bus (USB) Drivers](../index.yml)  
+[USB Driver Development Guide](usb-driver-development-guide.md)

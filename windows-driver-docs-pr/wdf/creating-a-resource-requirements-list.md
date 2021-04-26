@@ -1,7 +1,6 @@
 ---
 title: Creating a Resource Requirements List
 description: Creating a Resource Requirements List
-ms.assetid: 1254aa21-c64b-4c62-93dc-6758cef382f9
 keywords:
 - hardware resources WDK KMDF , creating resource requirements lists
 - resource requirements lists WDK KMDF

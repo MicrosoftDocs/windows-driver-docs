@@ -1,7 +1,6 @@
 ---
 title: Qualifying and Distributing PSHED Plug-Ins
 description: Qualifying and Distributing PSHED Plug-Ins
-ms.assetid: fe6cbb01-552f-4b24-b300-168d6311a596
 keywords:
 - digital signatures WDK WHEA), PSHED plug-ins
 - PSHED plug-ins WDK WHEA , qualifying
@@ -25,15 +24,13 @@ To ensure the quality and integrity of the driver, a PSHED plug-in must be digit
 
 For more information about how to digitally sign a PSHED plug-in, see [Signing Drivers for Public Release](../install/signing-drivers-for-public-release--windows-vista-and-later-.md).
 
-After a PSHED plug-in has obtained a WHQL digital signature, the plug-in can be used in any system for which you request a system logo certification. For more information about the server logo certification process, see [Windows Logo Program](https://go.microsoft.com/fwlink/p/?linkid=26144).
+After a PSHED plug-in has obtained a WHQL digital signature, the plug-in can be used in any system for which you request a system logo certification. For more information about the server logo certification process, see [Windows Logo Program](/windows-hardware/test/hlk/).
 
 PSHED plug-ins will be qualified using a "family" approach, where a specific PSHED plug-in can be qualified for deployment across a class, or family, of hardware platforms.
 
 PSHED plug-ins should be distributed to customers by hardware vendors in a manner similar to how BIOS and system firmware updates are distributed. Also, PSHED plug-ins should interface with the platform firmware in such a way that a single PSHED plug-in can be deployed across a family of hardware platforms.
 
 **Note**  PSHED plug-ins are not distributed to customers through Windows Update.
-
- 
 
  
 

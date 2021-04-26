@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaTopology
 description: KSPROPSETID\_BdaTopology
-ms.assetid: 26d67e68-56a9-4d36-9e33-6fb4486d7cd9
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

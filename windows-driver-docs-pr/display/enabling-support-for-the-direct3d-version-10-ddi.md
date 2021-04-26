@@ -1,7 +1,6 @@
 ---
 title: Enabling Support for the Direct3D Version 10 DDI
 description: Enabling Support for the Direct3D Version 10 DDI
-ms.assetid: ccbfecd2-8609-4e59-ac43-911f57af7980
 ms.date: 10/20/2018
 ms.localizationpriority: medium
 ---

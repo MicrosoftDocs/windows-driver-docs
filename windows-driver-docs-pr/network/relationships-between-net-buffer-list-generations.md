@@ -1,7 +1,6 @@
 ---
 title: Relationships Between NET_BUFFER_LIST Generations
 description: Relationships Between NET_BUFFER_LIST Generations
-ms.assetid: 37b3b08d-4656-47bc-b656-a03f208e4311
 keywords:
 - NET_BUFFER_LIST
 - parent/child NET_BUFFER_LIST relationships WDK networking

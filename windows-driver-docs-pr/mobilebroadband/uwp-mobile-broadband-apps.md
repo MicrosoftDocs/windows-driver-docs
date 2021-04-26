@@ -1,7 +1,6 @@
 ---
 title: UWP mobile broadband apps overview
 description: UWP mobile broadband apps overview
-ms.assetid: bb02397b-0da5-4e09-be1c-8812abec6fd5
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
@@ -66,7 +65,7 @@ If the **AppID** setting is filled out in COSA, Windows will not check for a mat
 
 The following table provides information about the differences between MBAE and MO UWP apps.
 
-|   | Target platform | Delivery mechanism | Icon retrieval |
+|  App type | Target platform | Delivery mechanism | Icon retrieval |
 | --- | --- | --- | --- |
 | MBAE | Windows 8, Windows 8.1, or Windows 10 | Sysdev metadata | Sysdev metadata or COSA if declared as part of the profile | 
 | MO UWP app | Windows 10 (preferably version 1803 and later with the same SDK version) | COSA database | COSA database |

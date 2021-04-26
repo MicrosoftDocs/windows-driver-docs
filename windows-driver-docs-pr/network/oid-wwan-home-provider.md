@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_HOME_PROVIDER
 description: OID_WWAN_HOME_PROVIDER is used to set and retrieve information about the home provider of the cellular service subscription.
-ms.assetid: f7bea146-261d-4d01-9fd5-ae512a1ac083
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_HOME_PROVIDER Network Drivers Starting with Windows Vista

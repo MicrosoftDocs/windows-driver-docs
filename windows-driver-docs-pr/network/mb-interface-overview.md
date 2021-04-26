@@ -1,7 +1,6 @@
 ---
 title: MB Interface Overview
 description: MB Interface Overview
-ms.assetid: fcb79029-4225-4759-a130-6ef8b3f2d25d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

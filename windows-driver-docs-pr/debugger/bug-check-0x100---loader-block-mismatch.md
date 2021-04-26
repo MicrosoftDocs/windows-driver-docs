@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x100 LOADER_BLOCK_MISMATCH
 description: The LOADER_BLOCK_MISMATCH bug check has a value of 0x00000100. This indicates that either the loader block is invalid, or it does not match the system that is being loaded.
-ms.assetid: 4f025141-ab81-4acd-9114-a6701e1000d3
 keywords: ["Bug Check 0x100 LOADER_BLOCK_MISMATCH", "LOADER_BLOCK_MISMATCH"]
 ms.date: 05/23/2017
 topic_type:

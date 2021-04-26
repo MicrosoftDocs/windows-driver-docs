@@ -1,7 +1,6 @@
 ---
 title: Using ECPs to Process IRP_MJ_CREATE in File System Filter Drivers
 description: Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver
-ms.assetid: 969709a9-cdca-4a1a-95a0-0bb89cd17693
 ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Driver Start, Stop, and Device Control
 description: Driver Start, Stop, and Device Control
-ms.assetid: d3608a5f-3bf4-43b1-8c32-55a6fcd4fbe8
 keywords:
 - mini-redirectors WDK , starting
 - mini-redirectors WDK , stopping
@@ -25,7 +24,7 @@ The sequence to start or stop the network mini-redirector is complex. This seque
 
 The [**MRxDevFcbXXXControlFile**](./mrxdevfcbxxxcontrolfile.md) routine is used to receive requests from a user-mode application or service to control the network mini-redirector by making IOCTL or FSCTL calls on a device FCB.
 
-In addition, there are two low I/O routines that handle IOCTL and FSCTL operations on the driver object: [**MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]**](https://msdn.microsoft.com/library/windows/hardware/ff550709) and [**MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]**](https://msdn.microsoft.com/library/windows/hardware/ff550715).
+In addition, there are two low I/O routines that handle IOCTL and FSCTL operations on the driver object: [**MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]**](./mrxlowiosubmit-lowio-op-fsctl-.md) and [**MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]**](./mrxlowiosubmit-lowio-op-ioctl-.md).
 
 A network mini-redirector can also use these low I/O routines to provide control and management of the network mini-redirector from a user-mode application or service.
 
@@ -44,21 +43,19 @@ The following table lists the routines that can be implemented by a network mini
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxdevfcbxxxcontrolfile" data-raw-source="[&lt;strong&gt;MRxDevFcbXXXControlFile&lt;/strong&gt;](./mrxdevfcbxxxcontrolfile.md)"><strong>MRxDevFcbXXXControlFile</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxdevfcbxxxcontrolfile" data-raw-source="[&lt;strong&gt;MRxDevFcbXXXControlFile&lt;/strong&gt;](./mrxdevfcbxxxcontrolfile.md)"><strong>MRxDevFcbXXXControlFile</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to pass a device FCB control request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_DEVICE_CONTROL, IRP_MJ_FILE_SYSTEM_CONTROL, or IRP_MJ_INTERNAL_DEVICE_CONTROL on a device FCB.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx" data-raw-source="[&lt;strong&gt;MRxStart&lt;/strong&gt;](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)"><strong>MRxStart</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx" data-raw-source="[&lt;strong&gt;MRxStart&lt;/strong&gt;](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)"><strong>MRxStart</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to start the network mini-redirector.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxstop" data-raw-source="[&lt;strong&gt;MRxStop&lt;/strong&gt;](./mrxstop.md)"><strong>MRxStop</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ifs/mrxstop" data-raw-source="[&lt;strong&gt;MRxStop&lt;/strong&gt;](./mrxstop.md)"><strong>MRxStop</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to stop the network mini-redirector.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

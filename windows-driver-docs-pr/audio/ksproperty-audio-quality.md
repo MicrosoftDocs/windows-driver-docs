@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_QUALITY
 description: The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level of a node's output stream. This is a property of an SRC node (KSNODETYPE\_SRC).
-ms.assetid: ef57de3b-f7ac-4ecd-915e-27f34fcc2028
 keywords: ["KSPROPERTY_AUDIO_QUALITY Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level of a node's 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -100,6 +99,4 @@ Requirements
 [**KSNODETYPE\_SRC**](ksnodetype-src.md)
 
 [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
 

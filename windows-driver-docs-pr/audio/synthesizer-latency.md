@@ -1,7 +1,6 @@
 ---
 title: Synthesizer Latency
 description: Synthesizer Latency
-ms.assetid: a3134024-77b9-463b-959b-3c910f83014d
 keywords:
 - synthesizers WDK audio , latency
 - latency WDK audio , synthesizers
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 Another consideration in synthesizer timing is latency, which is the difference between the current time and the first time that a note can play. A MIDI message cannot be submitted to the synthesizer and rendered into the output buffer at the current sample time. Allowance should be made for data that has already been placed in the buffer but has not yet been streamed to the wave output device.
 
-The wave sink therefore should implement a latency clock, which is an [**IReferenceClock**](/windows/desktop/wmformat/ireferenceclock) object (described in the Microsoft Windows SDK documentation). The latency clock's [**IReferenceClock::GetTime**](/previous-versions//dd551385(v=vs.85)) method retrieves the sample time up to which data has already been written to the buffer, and converts this to reference time relative to the master clock. The wave sink does conversions between reference and sample time with [**IDirectMusicSynthSink::SampleToRefTime**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-sampletoreftime) and [**IDirectMusicSynthSink::RefTimeToSample**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-reftimetosample), so in this case, the synth calls **IDirectMusicSynthSink::RefTimeToSample** to accomplish the conversion.
+The wave sink therefore should implement a latency clock, which is an [**IReferenceClock**](/windows/desktop/wmformat/ireferenceclock) object (described in the Microsoft Windows SDK documentation). The latency clock's [**IReferenceClock::GetTime**](/previous-versions//dd551385(v=vs.85)) method retrieves the sample time up to which data has already been written to the buffer, and converts this to reference time relative to the master clock. The wave sink does conversions between reference and sample time with [**IDirectMusicSynthSink::SampleToRefTime**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-sampletoreftime) and [**IDirectMusicSynthSink::RefTimeToSample**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-reftimetosample), so in this case, the synth calls **IDirectMusicSynthSink::RefTimeToSample** to accomplish the conversion.
 
-Latency time is all managed by the wave sink. Your implementation of the [**IDirectMusicSynthSink::GetLatencyClock**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-getlatencyclock) method should output a pointer to the latency clock, and this pointer must in turn be retrieved by [**IDirectMusicSynth::GetLatencyClock**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-getlatencyclock). The application uses the latency clock to determine the earliest point in time at which a MIDI message can be queued to play when it is passed to the synthesizer by calling the [**IDirectMusicSynth::PlayBuffer**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-playbuffer) method.
+Latency time is all managed by the wave sink. Your implementation of the [**IDirectMusicSynthSink::GetLatencyClock**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-getlatencyclock) method should output a pointer to the latency clock, and this pointer must in turn be retrieved by [**IDirectMusicSynth::GetLatencyClock**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-getlatencyclock). The application uses the latency clock to determine the earliest point in time at which a MIDI message can be queued to play when it is passed to the synthesizer by calling the [**IDirectMusicSynth::PlayBuffer**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-playbuffer) method.
 
 An example of the latency of a MIDI message is shown in the following figure.
 

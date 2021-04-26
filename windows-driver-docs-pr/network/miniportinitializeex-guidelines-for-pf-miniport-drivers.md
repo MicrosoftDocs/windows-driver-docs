@@ -1,7 +1,6 @@
 ---
 title: MiniportInitializeEx Guidelines for PF Miniport Drivers
 description: MiniportInitializeEx Guidelines for PF Miniport Drivers
-ms.assetid: 338035E7-7677-49FE-A06D-CCFD813B0C10
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

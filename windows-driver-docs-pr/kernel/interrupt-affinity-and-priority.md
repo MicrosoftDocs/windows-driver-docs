@@ -1,7 +1,6 @@
 ---
 title: Interrupt Affinity
 description: Interrupt Affinity
-ms.assetid: e36a52d0-3a94-4017-b4a1-0b41f737523c
 keywords: ["interrupt service routines WDK kernel , affinity", "ISRs WDK kernel , affinity", "affinity policy WDK interrupts", "IRQ_DEVICE_POLICY", "processor affinity WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

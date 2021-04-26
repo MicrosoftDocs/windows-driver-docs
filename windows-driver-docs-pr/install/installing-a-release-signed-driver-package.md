@@ -1,7 +1,6 @@
 ---
 title: Installing a Release-Signed Driver Package
 description: Installing a Release-Signed Driver Package
-ms.assetid: cf25858b-7e04-4093-8c81-19d5c0673bcc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

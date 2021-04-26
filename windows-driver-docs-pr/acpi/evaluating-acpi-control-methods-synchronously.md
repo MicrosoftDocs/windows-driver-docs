@@ -1,7 +1,6 @@
 ---
 title: Evaluating ACPI Control Methods Synchronously
 description: Evaluating ACPI Control Methods Synchronously
-ms.assetid: 3fd8f7bd-bfae-4846-8051-3a0023d565e4
 keywords:
 - ACPI control methods WDK , evaluating synchronously
 - ACPI control methods WDK , input buffer structures

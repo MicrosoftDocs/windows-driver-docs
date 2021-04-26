@@ -1,7 +1,6 @@
 ---
 title: Customized Font Management
 description: Customized Font Management
-ms.assetid: 6e643703-ace1-4660-990c-3a9ca735829d
 keywords:
 - Unidrv, fonts
 - font management WDK Unidrv
@@ -51,7 +50,7 @@ Unidrv provides a callback function, [*UNIFONTOBJ\_GetInfo*](/windows-hardware/d
 
 For device fonts, font descriptions must be provided as explained in the **Unidrv font metrics files** section and the **Glyph translation table files** section.
 
-For cartridge fonts, font descriptions can be provided in resource DLLs and specified using font cartridges file. Font descriptions can also be provided in the form of Unidrv font format files.
+For cartridge fonts, font descriptions can be provided in resource DLLs and specified using [font cartridges](font-cartridges.md) entries in a *GPD* file. Font descriptions can also be provided in the form of Unidrv font format files.
 
 For downloadable PCL soft fonts, font descriptions must be provided as explained in the **Unidrv font format files** section.
 
@@ -77,7 +76,7 @@ Unidrv also supports glyph translation files created for Windows NT 4.0, which u
 
 ### <a href="" id="ddk-unidrv-font-format-files-gg"></a>Unidrv Font Format Files
 
-For cartridge fonts that are not specified using font cartridges soft fonts must be specified using .uff files.
+For cartridge fonts that are not specified using [font cartridges](font-cartridges.md) entries in a GPD file, the fonts must be described in a Unidrv Font Format (.uff) file. Additionally, downloadable *PCL* soft fonts must be specified using .uff files.
 
 A .uff file is a binary file that is constructed using the following sets of structures:
 

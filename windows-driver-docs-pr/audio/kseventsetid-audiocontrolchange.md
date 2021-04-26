@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_AudioControlChange
 description: KSEVENTSETID\_AudioControlChange
-ms.assetid: 5189c284-d53a-4fc4-981c-7d6b3851dab1
 keywords: ["KSEVENTSETID_AudioControlChange"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

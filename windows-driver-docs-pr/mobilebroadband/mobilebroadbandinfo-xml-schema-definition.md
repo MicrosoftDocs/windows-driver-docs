@@ -1,7 +1,6 @@
 ---
 title: MobileBroadbandInfo XML schema definition
 description: MobileBroadbandInfo XML schema definition
-ms.assetid: 4d4a8f0a-99e5-429b-bc56-fdc4818b0a91
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

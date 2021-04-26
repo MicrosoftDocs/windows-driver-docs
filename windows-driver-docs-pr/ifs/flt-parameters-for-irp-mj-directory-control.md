@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_DIRECTORY_CONTROL union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_DIRECTORY_CONTROL.
-ms.assetid: 3dadd64b-7e93-4c75-808d-2f26edb3ebd7
 keywords: ["FLT_PARAMETERS for IRP_MJ_DIRECTORY_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Union component used for IRP_MN_QUERY_DIRECTORY operations.
 Length, in bytes, of the buffer that the **QueryDirectory.DirectoryBuffer** member points to.
 
 **FileName**  
-Pointer to a [**UNICODE_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
+Pointer to a [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
 
 **FileInformationClass**  
 Specifies one of the values described below.

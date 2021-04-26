@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_PRIORITY
 description: Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the priority of a connection.
-ms.assetid: 2037fe95-e176-4714-ad36-65a0e25b29e0
 keywords: ["KSPROPERTY_CONNECTION_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the prio
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspriority" data-raw-source="[&lt;strong&gt;KSPRIORITY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)"><strong>KSPRIORITY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kspriority" data-raw-source="[&lt;strong&gt;KSPRIORITY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)"><strong>KSPRIORITY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -90,6 +89,4 @@ Requirements
 [**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority)
 
 [**KSPIN\_CONNECT**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_connect)
-
- 
 

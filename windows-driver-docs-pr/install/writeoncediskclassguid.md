@@ -1,7 +1,6 @@
 ---
 title: WriteOnceDiskClassGuid
 description: WriteOnceDiskClassGuid
-ms.assetid: 3632a304-54e7-4947-b57f-6cb985c63e8a
 keywords: ["WriteOnceDiskClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

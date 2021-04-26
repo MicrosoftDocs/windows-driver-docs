@@ -1,7 +1,6 @@
 ---
 title: Introduction to Bluetooth Profile Drivers
 description: Introduction to Bluetooth Profile Drivers
-ms.assetid: 86806113-28b6-470c-883c-506ac1205f85
 keywords:
 - Bluetooth WDK , about Bluetooth
 - remote connections WDK Bluetooth

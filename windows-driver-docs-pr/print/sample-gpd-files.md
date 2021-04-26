@@ -1,7 +1,6 @@
 ---
 title: Sample GPD Files
 description: Sample GPD Files
-ms.assetid: 68b4ffa1-8c94-4cda-bc96-887e196cf534
 keywords:
 - Unidrv, GPD files
 - GPD files WDK Unidrv , samples

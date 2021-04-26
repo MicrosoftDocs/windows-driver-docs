@@ -1,7 +1,6 @@
 ---
 title: Attaching a User-Mode Debugger
 description: Attaching a User-Mode Debugger
-ms.assetid: ba8eeabd-946d-46fa-b9ed-b9a674315bd4
 keywords:
 - attaching user-mode debuggers WDK UMDF
 - multiple-device debugger attachments WDK UMDF

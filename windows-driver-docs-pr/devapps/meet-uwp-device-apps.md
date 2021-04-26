@@ -1,7 +1,6 @@
 ---
 title: Meet UWP device apps
 description: This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
-ms.assetid: 395745E6-7A97-4B26-A82C-0729E7B999C6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ When specified as a privileged app in device metadata, UWP device apps can perfo
 
 ![windows store device apps can perform device updates, like firmware updates, in the background](images/deviceupdateuserconsent.png)
 
-To create a background task for device servicing (device updates), use the [DeviceServicingTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308965) trigger. A similar trigger, [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967), which allows for reliable content synchronization, is available for all UWP apps . For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
+To create a background task for device servicing (device updates), use the [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger) trigger. A similar trigger, [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger), which allows for reliable content synchronization, is available for all UWP apps . For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
 **Note**  Device background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization.
 
@@ -95,11 +94,4 @@ For more info about automatic installation, see [Automatic installation for prin
 [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
 
  
-
- 
-
-
-
-
-
 

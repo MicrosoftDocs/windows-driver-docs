@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SYS_CAPS_INFO
 description: OID_WWAN_SYS_CAPS_INFO retrieves information about the modem. It can be sent on any of the NDIS instances exposed by the modem.
-ms.assetid: D158432A-A715-4ABB-969C-F8F80D2DB845
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SYS_CAPS_INFO Network Drivers Starting with Windows Vista

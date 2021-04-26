@@ -1,7 +1,6 @@
 ---
 title: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
 description: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
-ms.assetid: 475bf66a-5b6e-4a06-95f7-b7280dd7276d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

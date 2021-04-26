@@ -1,7 +1,6 @@
 ---
 title: Closing the Communication Server Port
 description: Closing the Communication Server Port
-ms.assetid: 43dfa162-0098-4a9b-9272-9da429cb0108
 keywords:
 - communication server ports WDK file system minifilter
 - ports WDK , file system minifilter

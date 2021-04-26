@@ -1,7 +1,6 @@
 ---
 title: Encoder Implementation and Support
 description: Encoder Implementation and Support
-ms.assetid: 6ba97ff8-815b-490f-920b-6ede4f730e98
 keywords:
 - encoder devices WDK AVStream
 - AVStream WDK , encoder devices
@@ -34,15 +33,15 @@ In Windows XP Service Pack 1, Microsoft defined three kernel streaming property 
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate" data-raw-source="[ENCAPIPARAM_BITRATE](./encapiparam-bitrate.md)">ENCAPIPARAM_BITRATE</a></td>
+<td><a href="/windows-hardware/drivers/stream/encapiparam-bitrate" data-raw-source="[ENCAPIPARAM_BITRATE](./encapiparam-bitrate.md)">ENCAPIPARAM_BITRATE</a></td>
 <td><p>Implement this property set to specify the encoding bit rates supported by the encoder device. See <a href="encoder-code-examples.md" data-raw-source="[Encoder Code Examples](encoder-code-examples.md)">Encoder Code Examples</a> for more details.</p></td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate-mode" data-raw-source="[ENCAPIPARAM_BITRATE_MODE](./encapiparam-bitrate-mode.md)">ENCAPIPARAM_BITRATE_MODE</a></td>
-<td><p>Implement this property set to specify the encoding modes supported by the device. This property set uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode" data-raw-source="[&lt;strong&gt;VIDEOENCODER_BITRATE_MODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)"><strong>VIDEOENCODER_BITRATE_MODE</strong></a> enumeration to specify the supported modes. See <a href="encoder-code-examples.md" data-raw-source="[Encoder Code Examples](encoder-code-examples.md)">Encoder Code Examples</a> for more details.</p></td>
+<td><a href="/windows-hardware/drivers/stream/encapiparam-bitrate-mode" data-raw-source="[ENCAPIPARAM_BITRATE_MODE](./encapiparam-bitrate-mode.md)">ENCAPIPARAM_BITRATE_MODE</a></td>
+<td><p>Implement this property set to specify the encoding modes supported by the device. This property set uses the <a href="/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode" data-raw-source="[&lt;strong&gt;VIDEOENCODER_BITRATE_MODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)"><strong>VIDEOENCODER_BITRATE_MODE</strong></a> enumeration to specify the supported modes. See <a href="encoder-code-examples.md" data-raw-source="[Encoder Code Examples](encoder-code-examples.md)">Encoder Code Examples</a> for more details.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-peak-bitrate" data-raw-source="[ENCAPIPARAM_PEAK_BITRATE](./encapiparam-peak-bitrate.md)">ENCAPIPARAM_PEAK_BITRATE</a></td>
+<td><a href="/windows-hardware/drivers/stream/encapiparam-peak-bitrate" data-raw-source="[ENCAPIPARAM_PEAK_BITRATE](./encapiparam-peak-bitrate.md)">ENCAPIPARAM_PEAK_BITRATE</a></td>
 <td><p>Implement this property set to specify the maximum encoding bit rate of the device.</p></td>
 </tr>
 </tbody>
@@ -67,27 +66,27 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-video-encoder" data-raw-source="[CODECAPI_VIDEO_ENCODER](./codecapi-video-encoder.md)">CODECAPI_VIDEO_ENCODER</a></td>
+<td><a href="/windows-hardware/drivers/stream/codecapi-video-encoder" data-raw-source="[CODECAPI_VIDEO_ENCODER](./codecapi-video-encoder.md)">CODECAPI_VIDEO_ENCODER</a></td>
 <td><p>If your device supports encoding video streams (including auxiliary audio such as TV audio) then implement support for this property set.</p></td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-audio-encoder" data-raw-source="[CODECAPI_AUDIO_ENCODER](./codecapi-audio-encoder.md)">CODECAPI_AUDIO_ENCODER</a></td>
+<td><a href="/windows-hardware/drivers/stream/codecapi-audio-encoder" data-raw-source="[CODECAPI_AUDIO_ENCODER](./codecapi-audio-encoder.md)">CODECAPI_AUDIO_ENCODER</a></td>
 <td><p>If your device is an audio-only encoder, then implement support for this property set instead of CODECAPI_VIDEO_ENCODER.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-setalldefaults" data-raw-source="[CODECAPI_SETALLDEFAULTS](./codecapi-setalldefaults.md)">CODECAPI_SETALLDEFAULTS</a></td>
+<td><a href="/windows-hardware/drivers/stream/codecapi-setalldefaults" data-raw-source="[CODECAPI_SETALLDEFAULTS](./codecapi-setalldefaults.md)">CODECAPI_SETALLDEFAULTS</a></td>
 <td><p>Implement this property set to reset all the encoder device's internal settings, such as encoding bit rate and encoding mode to their default values.</p></td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-allsettings" data-raw-source="[CODECAPI_ALLSETTINGS](./codecapi-allsettings.md)">CODECAPI_ALLSETTINGS</a></td>
+<td><a href="/windows-hardware/drivers/stream/codecapi-allsettings" data-raw-source="[CODECAPI_ALLSETTINGS](./codecapi-allsettings.md)">CODECAPI_ALLSETTINGS</a></td>
 <td><p>Implement this property set to communicate the current settings of the encoder device. This property set is used for communication to and from clients.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-supportsevents" data-raw-source="[CODECAPI_SUPPORTSEVENTS](./codecapi-supportsevents.md)">CODECAPI_SUPPORTSEVENTS</a></td>
+<td><a href="/windows-hardware/drivers/stream/codecapi-supportsevents" data-raw-source="[CODECAPI_SUPPORTSEVENTS](./codecapi-supportsevents.md)">CODECAPI_SUPPORTSEVENTS</a></td>
 <td><p>If your device supports events from user mode--such as to change the encoding mode, bit rate, or other settings--then implement this property set. If you implement this property set, then you must also implement support for the CODECAPI_CHANGELISTS event.</p></td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-currentchangelist" data-raw-source="[CODECAPI_CURRENTCHANGELIST](./codecapi-currentchangelist.md)">CODECAPI_CURRENTCHANGELIST</a></td>
+<td><a href="/windows-hardware/drivers/stream/codecapi-currentchangelist" data-raw-source="[CODECAPI_CURRENTCHANGELIST](./codecapi-currentchangelist.md)">CODECAPI_CURRENTCHANGELIST</a></td>
 <td><p>Implement this property set to determine which encoder parameters were changed in a previous call to set one or more encoder properties.</p></td>
 </tr>
 </tbody>
@@ -106,7 +105,7 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/codecapi-changelists" data-raw-source="[CODECAPI_CHANGELISTS](./codecapi-changelists.md)">CODECAPI_CHANGELISTS</a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/codecapi-changelists" data-raw-source="[CODECAPI_CHANGELISTS](./codecapi-changelists.md)">CODECAPI_CHANGELISTS</a></p></td>
 <td><p>If the device supports responding to user-mode events through the CODECAPI_SUPPORTSEVENTS property set, then implement this event set to return a list of encoder settings that have changed as the result of a client's prior <em>Set</em>-property call to either CODECAPI_SETALLDEFAULTS or CODECAPI_ALLSETTINGS.</p></td>
 </tr>
 </tbody>

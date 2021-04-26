@@ -1,7 +1,6 @@
 ---
 title: CdRomClassGuid
 description: CdRomClassGuid
-ms.assetid: 406c28c9-8ef3-4ccc-bb70-a13b8d1ad64e
 keywords: ["CdRomClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ CdRomClassGuid is an obsolete identifier for the [device interface class](./over
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](https://go.microsoft.com/fwlink/p/?linkid=256093) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The CDROM class driver sample uses CdRomClassGuid to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The CDROM class driver sample uses CdRomClassGuid to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
 
 Requirements
 ------------
@@ -49,6 +48,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md)
-
- 
 

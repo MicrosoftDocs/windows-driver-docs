@@ -1,7 +1,6 @@
 ---
 title: Miniport Interfaces
 description: Miniport Interfaces
-ms.assetid: 50b92adc-a63c-4242-9ec9-4d97151f0f91
 keywords:
 - audio miniport drivers WDK , interfaces
 - miniport drivers WDK audio , interfaces
@@ -59,33 +58,33 @@ Each port driver implements an **IPortXxx** interface, which it presents to the 
 <tbody>
 <tr class="odd">
 <td align="left"><p>WaveCyclic</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic" data-raw-source="[IPortWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic)">IPortWaveCyclic</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic" data-raw-source="[IMiniportWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic)">IMiniportWaveCyclic</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic" data-raw-source="[IPortWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic)">IPortWaveCyclic</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic" data-raw-source="[IMiniportWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic)">IMiniportWaveCyclic</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WavePci</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536905(v=vs.85)" data-raw-source="[IPortWavePci](/previous-versions/windows/hardware/drivers/ff536905(v=vs.85))">IPortWavePci</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci" data-raw-source="[IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci)">IMiniportWavePci</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci" data-raw-source="[IPortWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci)">IPortWavePci</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci" data-raw-source="[IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci)">IMiniportWavePci</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WaveRT</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert" data-raw-source="[IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert)">IPortWaveRT</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert" data-raw-source="[IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert)">IMiniportWaveRT</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert" data-raw-source="[IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert)">IPortWaveRT</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert" data-raw-source="[IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert)">IMiniportWaveRT</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Topology</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology" data-raw-source="[IPortTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology)">IPortTopology</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology" data-raw-source="[IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology)">IMiniportTopology</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology" data-raw-source="[IPortTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology)">IPortTopology</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology" data-raw-source="[IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology)">IMiniportTopology</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MIDI</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportmidi" data-raw-source="[IPortMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportmidi)">IPortMidi</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi" data-raw-source="[IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi)">IMiniportMidi</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportmidi" data-raw-source="[IPortMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportmidi)">IPortMidi</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi" data-raw-source="[IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi)">IMiniportMidi</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DirectMusic</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus" data-raw-source="[IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus)">IPortDMus</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus" data-raw-source="[IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus)">IMiniportDMus</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus" data-raw-source="[IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus)">IPortDMus</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus" data-raw-source="[IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus)">IMiniportDMus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -93,6 +92,4 @@ Each port driver implements an **IPortXxx** interface, which it presents to the 
  
 
 In the preceding table, all **IPortXxx** interfaces are derived from base interface [IPort](/windows-hardware/drivers/ddi/portcls/nn-portcls-iport), and all **IMiniportXxx** interfaces are derived from [IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport).
-
- 
 

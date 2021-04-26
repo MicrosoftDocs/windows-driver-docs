@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_THRESHOLD
 description: The WIA\_IPS\_THRESHOLD property contains the current hardware threshold setting for a device. The WIA minidriver creates and maintains this property.
-ms.assetid: 1d315168-5434-4e99-9e54-cb6e279df3e7
 keywords: ["WIA_IPS_THRESHOLD Imaging Devices"]
 topic_type:
 - apiref

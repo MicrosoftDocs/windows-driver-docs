@@ -1,7 +1,6 @@
 ---
 title: Audio Property Handlers
 description: Audio Property Handlers
-ms.assetid: 4bf176ae-b3fd-47e6-9802-a92ef5e9904f
 keywords:
 - audio properties WDK , handlers
 - WDM audio properties WDK , handlers
@@ -36,7 +35,7 @@ The miniport driver provides an automation table (specified by a [**PCAUTOMATION
 
 A miniport driver can specify a unique property handler routine for each property. However, if a driver handles several similar properties, these can sometimes be consolidated into a single handler routine for convenience. Whether to provide a unique handler for each property or to consolidate several properties into a single handler is an implementation decision to be made by the driver writer and should be transparent to clients that submit property requests.
 
-A user-mode client can send a get, set, or basic-support property request by calling the Microsoft Win32 function [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) with the *dwIoControlCode* call parameter set to IOCTL\_KS\_PROPERTY. The operating system converts this call to an [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp), which it dispatches to the class driver. For more information, see [KS Properties](../stream/ks-properties.md).
+A user-mode client can send a get, set, or basic-support property request by calling the Microsoft Win32 function [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) with the *dwIoControlCode* call parameter set to IOCTL\_KS\_PROPERTY. The operating system converts this call to an [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp), which it dispatches to the class driver. For more information, see [KS Properties](../stream/ks-properties.md).
 
 When a client sends a KS property request (that is, an IOCTL\_KS\_PROPERTY I/O-control IRP) to a filter handle or pin handle, the KS system driver (Ks.sys) delivers the request to the port driver for the filter object or pin object. If the miniport driver provides a handler for the property, the port driver forwards the request to the handler. Before forwarding the request, the port driver converts the information from the property request into the format specified by the [**PCPROPERTY\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcproperty_request) structure. The port driver passes this structure to the miniport driver's handler.
 
@@ -44,7 +43,7 @@ The **MajorTarget** member of PCPROPERTY\_REQUEST points to the primary miniport
 
 In the case of a KS property request sent to a filter handle, the **MinorTarget** member of PCPROPERTY\_REQUEST is **NULL**. In the case of a request sent to a pin handle, **MinorTarget** points to the stream interface for the pin. For example, for a WavePci device, this is a pointer to the stream object's [IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream) interface.
 
-The **Instance** and **Value** members of PCPROPERTY\_REQUEST point to the input and output buffers, respectively, of the KS property request. (The buffers are specified by the *lpInBuffer* and *lpOutBuffer* parameters of the [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function.) These buffers contain the property descriptor (instance data) and property value (operation data), respectively, as described in [Audio Drivers Property Sets](./audio-drivers-property-sets.md). The **Value** member points to the start of the output buffer, but the **Instance** pointer is offset from the start of the input buffer.
+The **Instance** and **Value** members of PCPROPERTY\_REQUEST point to the input and output buffers, respectively, of the KS property request. (The buffers are specified by the *lpInBuffer* and *lpOutBuffer* parameters of the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function.) These buffers contain the property descriptor (instance data) and property value (operation data), respectively, as described in [Audio Drivers Property Sets](./audio-drivers-property-sets.md). The **Value** member points to the start of the output buffer, but the **Instance** pointer is offset from the start of the input buffer.
 
 The input buffer begins with either a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) or [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure. The port driver copies the information from this structure into the PCPROPERTY\_REQUEST structure's **Node**, **PropertyItem**, and **Verb** members. If any data follows the KSPROPERTY or KSNODEPROPERTY structure in the buffer, the port driver loads the **Instance** member with a pointer to this data. Otherwise, it sets **Instance** to **NULL**.
 

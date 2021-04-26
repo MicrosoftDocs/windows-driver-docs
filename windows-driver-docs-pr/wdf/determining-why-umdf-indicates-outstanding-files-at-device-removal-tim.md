@@ -1,7 +1,6 @@
 ---
 title: UMDF Indicates Outstanding Files at Device Removal Time
 description: Describes how to use Wudfext.dll to determine why UMDF indicates that there are outstanding files when you remove a device.
-ms.assetid: 9a8b3b69-1192-40c1-895b-4abfc01c1ca7
 keywords:
 - debugging scenarios WDK UMDF , UMDF indicates outstanding files at device removal time
 - UMDF WDK , debugging scenarios, UMDF indicates outstanding files at device removal time

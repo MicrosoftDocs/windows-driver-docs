@@ -1,7 +1,6 @@
 ---
 title: Deactivating an NDIS Port
 description: Deactivating an NDIS Port
-ms.assetid: 2a5d288f-b6ea-4b63-91a3-44155aae8064
 keywords:
 - ports WDK NDIS , deactivating
 - NDIS ports WDK , deactivating

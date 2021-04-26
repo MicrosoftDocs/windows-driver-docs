@@ -1,7 +1,6 @@
 ---
 title: Features added in prior WDDM 2.X versions
 description: Describes features in prior Windows 10 releases for display and graphics drivers
-ms.assetid: 22793a7e-38fc-4cd8-aafd-09dfed48cb02
 ms.date: 03/24/2020
 ms.localizationpriority: medium
 ms.custom: seodec18, 19H1
@@ -9,7 +8,7 @@ ms.custom: seodec18, 19H1
 
 # Features added in prior WDDM 2.X versions
 
-This page describes display and graphics drivers' features that were added in previous versions of WDDM 2.X for Windows 10. To see new features added for the most recent WDDM 2.X version, see [What's new for Windows 10 display and graphics drivers](what-s-new-for-windows-10-display-and-graphics-drivers.md).
+This page describes display and graphics drivers' features that were added in previous versions of WDDM 2.X for Windows 10. To see features added for the most recent WDDM 2.X version, see [What's new for Windows 10 display and graphics drivers](what-s-new-for-windows-10-display-and-graphics-drivers.md).
 
 ## WDDM 2.6
 
@@ -119,7 +118,6 @@ For more info about raytracing, see:
 
 * [Announcing Microsoft DirectX Raytracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/)
 * [DirectX Raytracing and the Windows 10 October 2018 Update](https://devblogs.microsoft.com/directx/directx-raytracing-and-the-windows-10-october-2018-update/)
-* [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
 
 ### Display Synchronization
 

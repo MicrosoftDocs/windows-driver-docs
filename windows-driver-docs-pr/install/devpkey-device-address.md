@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Address
 description: DEVPKEY_Device_Address
-ms.assetid: 48951b9e-0bd0-4f56-9a6f-e8a5aa6c25c2
 keywords: ["DEVPKEY_Device_Address Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_Address to the address of the device on its bus. For information about the interpretation of a device address, see the **DevicePropertyAddress** value of the *DeviceProperty* parameter of [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty).
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Address.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Address.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Address property key. Instead, you can use the corresponding SPDRP_ADDRESS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -78,7 +77,7 @@ Requirements
 
 [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

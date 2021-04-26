@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_AC3
 description: KSPROPSETID\_AC3
-ms.assetid: 172d8ed8-2dd3-438d-8dc6-f4f1bb128811
 keywords: ["KSPROPSETID_AC3"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

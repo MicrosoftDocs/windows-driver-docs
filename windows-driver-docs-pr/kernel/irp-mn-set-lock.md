@@ -2,7 +2,6 @@
 title: IRP_MN_SET_LOCK
 description: Bus drivers must handle this IRP for their child devices (child PDOs) that support device locking. Function and filter drivers do not handle this request.
 ms.date: 08/12/2017
-ms.assetid: d4e09527-f817-4eb5-b0f5-7584de8888b1
 keywords:
  - IRP_MN_SET_LOCK Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -55,7 +54,7 @@ Operation
 
 If a driver returns success for this IRP, it ensures that the device has been locked or unlocked before completing the IRP.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

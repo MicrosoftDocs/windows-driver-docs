@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging
 description: This section describes how to set up kernel-mode debugging.
-ms.assetid: 268DF246-46AA-4F4E-BCBB-FCA37A3C0353
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.date: 02/20/2020
 ms.localizationpriority: medium
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 This section describes how to set up kernel-mode debugging.
 
 >[!TIP]
->The recommended approach is to use network (KDNET) debugging and use the kdnet utility to configure that automatically. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+>The recommended approach is to use network (KDNET) debugging and use the kdnet utility to configure that automatically. For more information, see **[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)**.
 
 ## <span id="in_this_section"></span>In this section
 

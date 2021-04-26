@@ -2,7 +2,6 @@
 description: Interfaces on a composite USB device can be grouped in collections. The USB Generic Parent Driver (Usbccgp.sys) can enumerate interface collections in four ways.
 title: Overview of Enumeration of Interface Collections on USB Composite Devices
 ms.date: 01/07/2019
-ms.assetid: aa68a774-d5b2-4fd8-aee9-9b72b1e4ad4f
 ms.localizationpriority: medium
 ---
 
@@ -19,15 +18,15 @@ These four methods of enumeration of interface collections are arranged hierarch
 
 2.  **Union Functional Descriptors**
 
-    . If the vendor has enabled CDC and WMCDC enumeration in the USB generic parent driver, the generic parent driver uses *union functional descriptors* (UFDs) to group interfaces into collections. When enabled, this method has precedence over all other methods, except for vendor-supplied callback routines. For more information on the enumeration of devices with UFDs, see [Support for Wireless Mobile Communications Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+    . If the vendor has enabled CDC and WMCDC enumeration in the USB generic parent driver, the generic parent driver uses *union functional descriptors* (UFDs) to group interfaces into collections. When enabled, this method has precedence over all other methods, except for vendor-supplied callback routines.
 
 3.  **Interface Association Descriptors**
 
-    If *interface association descriptors* (IADs) are present, the USB generic parent driver always groups interfaces by using IADs rather than by using legacy methods. Microsoft recommends that vendors use IADs to define interface collections. For more information on the enumeration of devices with IADs, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+    If *interface association descriptors* (IADs) are present, the USB generic parent driver always groups interfaces by using IADs rather than by using legacy methods. Microsoft recommends that vendors use IADs to define interface collections.
 
 4.  **Legacy audio method.**
 
-    The USB generic parent driver is able to enumerate interface collections by using legacy techniques that are reserved for audio functions. The generic parent driver does not use this method if there are any IADs on the device. For more information on the legacy audio method of enumeration, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+    The USB generic parent driver is able to enumerate interface collections by using legacy techniques that are reserved for audio functions. The generic parent driver does not use this method if there are any IADs on the device.
 
 ##  Customizing Enumeration of Interface Collections for Composite Devices
 
@@ -36,22 +35,22 @@ Some USB devices have interface collections that the USB Interface Association D
 
 For the generic parent driver to define custom interface collections, the vendor of the composite device must:
 
-1.  Implement the enumeration callback routine ([**USBC\_START\_DEVICE\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/nc-usbbusif-usbc_start_device_callback)).
-2.  Supply a pointer to the callback routine in the *USB device configuration interface* (**StartDeviceCallback** member of [**USBC\_DEVICE\_CONFIGURATION\_INTERFACE\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_device_configuration_interface_v1)).
+1.  Implement the enumeration callback routine ([**USBC\_START\_DEVICE\_CALLBACK**](/windows-hardware/drivers/ddi/usbbusif/nc-usbbusif-usbc_start_device_callback)).
+2.  Supply a pointer to the callback routine in the *USB device configuration interface* (**StartDeviceCallback** member of [**USBC\_DEVICE\_CONFIGURATION\_INTERFACE\_V1**](/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_device_configuration_interface_v1)).
 3.  Provide an INF file that matches the device ID of the composite device and explicitly loads both the USB generic parent driver and the filter driver.
 
 ### Implementation Considerations
 
 
-The filter driver that contains the enumeration callback routine can be either an upper or a lower filter driver. When the USB generic parent driver receives an [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request to start a composite device, it queries for the USB device configuration interface by sending an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request to the top of the driver stack.
+The filter driver that contains the enumeration callback routine can be either an upper or a lower filter driver. When the USB generic parent driver receives an [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md) request to start a composite device, it queries for the USB device configuration interface by sending an [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) request to the top of the driver stack.
 
-On receiving an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request, the filter driver must check the GUID type in the **InterfaceType** member of the request to verify that the interface that is requested is of type USB\_BUS\_INTERFACE\_USBC\_CONFIGURATION\_GUID. If it is, the filter driver returns a pointer to the interface in the **Interface** member of the IRP.
+On receiving an [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) request, the filter driver must check the GUID type in the **InterfaceType** member of the request to verify that the interface that is requested is of type USB\_BUS\_INTERFACE\_USBC\_CONFIGURATION\_GUID. If it is, the filter driver returns a pointer to the interface in the **Interface** member of the IRP.
 
-The enumeration callback routine must return a pointer to an array of *function descriptors* ([**USBC\_FUNCTION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_function_descriptor)) that describe the interface collections. Each function descriptor contains an array of interface descriptors ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor)) that describe the interface collection. The callback routine must allocate both the function descriptors and the interface descriptors from non-paged pool. The generic parent driver releases this memory. The callback routine must ensure that the **NumberOfInterfaces** member of each **USB\_INTERFACE\_DESCRIPTOR** accurately reports the number of interfaces in the interface collection.
+The enumeration callback routine must return a pointer to an array of *function descriptors* ([**USBC\_FUNCTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_function_descriptor)) that describe the interface collections. Each function descriptor contains an array of interface descriptors ([**USB\_INTERFACE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor)) that describe the interface collection. The callback routine must allocate both the function descriptors and the interface descriptors from non-paged pool. The generic parent driver releases this memory. The callback routine must ensure that the **NumberOfInterfaces** member of each **USB\_INTERFACE\_DESCRIPTOR** accurately reports the number of interfaces in the interface collection.
 
 The generic parent driver creates a physical device object (PDO) for each function descriptor.
 
-The USB device configuration interface and the enumeration callback routine is summarized in [Generic Parent Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#usbccgp).
+The USB device configuration interface and the enumeration callback routine is summarized in [Generic Parent Driver Routines](/windows-hardware/drivers/ddi/_usbref/#usbccgp).
 
 ### USB Generic Parent Driver Loading Mechanism
 
@@ -76,7 +75,7 @@ This image shows an example driver stack for a WMCDC device.
 
 ![sample device configuration and driver stack](images/wmcdc-architecture.png)
 
-In the preceding figure, the WMCDC device contains a single logical handset: an OBEX function and a modem function. A vendor-supplied INF file loads native Windows drivers to manage the modem. The OBEX function is managed by a vendor-supplied user-mode driver that runs in the [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/user-mode-driver-framework-design-guide) (UMDF). The user-mode driver uses the Windows Portable Devices (WPD) protocol to communicate with user applications and the interface that the [WinUSB](winusb.md) exports to communicate with the USB stack. In general, a vendor-supplied INF file will load a separate instance of Winusb.sys for each interface collection that uses Winusb.sys.
+In the preceding figure, the WMCDC device contains a single logical handset: an OBEX function and a modem function. A vendor-supplied INF file loads native Windows drivers to manage the modem. The OBEX function is managed by a vendor-supplied user-mode driver that runs in the [User-Mode Driver Framework](../wdf/user-mode-driver-framework-design-guide.md) (UMDF). The user-mode driver uses the Windows Portable Devices (WPD) protocol to communicate with user applications and the interface that the [WinUSB](winusb.md) exports to communicate with the USB stack. In general, a vendor-supplied INF file will load a separate instance of Winusb.sys for each interface collection that uses Winusb.sys.
 
 ### Registry Settings
 
@@ -98,8 +97,6 @@ HKR,,EnumeratorClass, 0x00000001,02,00,00
 
 The value that you must assign to **EnumeratorClass** is constructed from three 1-byte binary values that are represented in the INF file by pairs of hexadecimal digits: 02, 00, and 00. These three numbers correspond to the values that the USB Implementers Forum has assigned to the CDC device class, CDC device subclass and CDC device protocol, respectively.
 
-For more information about how to configure the registry to correctly enumerate your WMCDC device, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
-
 The following topics further describe the WMCDC:
 
 ### Enumerating Interface Collections on WMCDC
@@ -107,11 +104,11 @@ The following topics further describe the WMCDC:
 
 The USB wireless mobile communication device class (WMCDC) is a subclass of the USB communications device class (CDC). The WMCDC specification extends but does not substantially change the CDC guidelines for defining interface collections. In particular, WMCDC devices must comply with the CDC guidelines for defining interface collections.
 
-CDC interface collections contain a master interface ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor)) that belongs to the communication interface class (`bInterfaceClass = 0x02`) or data interface class (`bInterfaceClass = 0x0A`). If the master interface belongs to the communication interface class (which is the typical situation), the subclass of the master interface (**bInterfaceSubClass**) specifies a CDC *control model*. The control model indicates the type of interfaces included in the interface collection. For a description of the control models that the USB Implementers Forum defines, see the CDC specification and the WMCDC specification.
+CDC interface collections contain a master interface ([**USB\_INTERFACE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor)) that belongs to the communication interface class (`bInterfaceClass = 0x02`) or data interface class (`bInterfaceClass = 0x0A`). If the master interface belongs to the communication interface class (which is the typical situation), the subclass of the master interface (**bInterfaceSubClass**) specifies a CDC *control model*. The control model indicates the type of interfaces included in the interface collection. For a description of the control models that the USB Implementers Forum defines, see the CDC specification and the WMCDC specification.
 
 The master interface of an interface collection is followed by a set of mandatory class-specific functional descriptors, including a union functional descriptor (UFD). The UFD lists the numbers of the interfaces that belong to the collection. The **bMasterInterface** field of the UFD contains the number of the master interface. Zero or more **bSubordinateInterface** fields contain the numbers of the other (subordinate) interfaces in the collection.
 
-For most types of control models, the [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md) creates one physical device object (PDO) for each UFD. But some control models include an audio interface that the generic parent driver enumerates separately from the interface collection that the audio interface belongs to. The audio interface appears in the list of subordinate interfaces (**bSubordinateInterface**) in the UFD of the interface collection, but the generic parent driver creates a separate PDO for the audio interface. Both the PDO for the audio interface and the PDO for the interface collection that the audio interface belongs to are directly above the functional device object (FDO) of the parent composite device in the device object tree. The PDO of the audio interface is not a child of the interface collection. Enumeration of audio interfaces is described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+For most types of control models, the [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md) creates one physical device object (PDO) for each UFD. But some control models include an audio interface that the generic parent driver enumerates separately from the interface collection that the audio interface belongs to. The audio interface appears in the list of subordinate interfaces (**bSubordinateInterface**) in the UFD of the interface collection, but the generic parent driver creates a separate PDO for the audio interface. Both the PDO for the audio interface and the PDO for the interface collection that the audio interface belongs to are directly above the functional device object (FDO) of the parent composite device in the device object tree. The PDO of the audio interface is not a child of the interface collection.
 
 There are two control models whose enumeration characteristics are configurable in the registry: the Wireless Handset Control Model (WHCM), which defines a logical handset, and the Object Exchange Protocol (OBEX) control model. To configure the enumeration characteristics of these two control models, you must provide an INF file that loads an instance of Usbccgp.sys and sets the value of **CdcFlags** in the software key for that instance of Usbccgp.sys. The following table describes the configuration options of **CdcFlags**.
 
@@ -219,7 +216,7 @@ COMPANYNAME.DeviceDesc="USB Phone Parent"
 ### Handling CDC and WMCDC Interface Collections
 
 
-The USB generic parent driver handles Wireless Handset Control Model (WHCM) interfaces in a special way, as described in [Support for Wireless Mobile Communications Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+The USB generic parent driver handles Wireless Handset Control Model (WHCM) interfaces in a special way.
 
 The following list summarizes the most important ways in which the handling of CDC and WMCDC interface collections differs from that of other interface collections:
 
@@ -228,7 +225,7 @@ The following list summarizes the most important ways in which the handling of C
 -   You can configure the USB generic parent driver to create separate physical device objects (PDOs) for OBEX control model interface collections, or to create a single PDO for all OBEX control model interface collections.
 -   The list of interface numbers in a UFD can have gaps. That is, the interface numbers of a UFD can refer to interfaces that are not contiguous. This type of numbering is not valid, for example, for the [USB Interface Association Descriptor (IAD)](usb-interface-association-descriptor.md), whose interfaces must be contiguous and have sequential numbers.
 -   UFDs can include related audio interface collections
--   Hardware identifiers (IDs) for CDC and WMCDC interface collections must include the interface subclass. Other USB interfaces, whose hardware IDs contain a MI\_%02X suffix that specifies the interface number, do not contain information about the interface subclass. The subclass information is included in the hardware ID to allow vendors to provide INF files with hardware ID matches for specific interface collections, instead of relying on the position of the interface in the descriptor layout to determine which driver to load for the collection. The subclass information in the hardware ID also allows a gradual migration path from current vendor-supplied drivers that manage WMCDC interface collections to alternatives, such as user-mode drivers. For examples of CDC and WMCDC hardware IDs, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md). For a general discussion of how USB interface hardware IDs are formatted, see [Identifiers for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/install/identifiers-for-usb-devices).
+-   Hardware identifiers (IDs) for CDC and WMCDC interface collections must include the interface subclass. Other USB interfaces, whose hardware IDs contain a MI\_%02X suffix that specifies the interface number, do not contain information about the interface subclass. The subclass information is included in the hardware ID to allow vendors to provide INF files with hardware ID matches for specific interface collections, instead of relying on the position of the interface in the descriptor layout to determine which driver to load for the collection. The subclass information in the hardware ID also allows a gradual migration path from current vendor-supplied drivers that manage WMCDC interface collections to alternatives, such as user-mode drivers. For a general discussion of how USB interface hardware IDs are formatted, see [Identifiers for USB Devices](../install/identifiers-for-usb-devices.md).
 
 ### CDC and WMCDC Control Models
 
@@ -284,7 +281,7 @@ USB Audio Device class interface collections that occur on CDC and WMCDC devices
 <td><p>Hardware IDs</p></td>
 <td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&Pid_%04x&Rev_%04x&MI_%02x
 USB\Vid_%04x&Pid_%04x&MI_%02x</code></pre>
-<p>The hardware IDs for audio interface collections do not contain interface class-specific information. For an explanation of the formatting of hardware IDs that are associated with audio interface collections, see <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md)">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
+<p>The hardware IDs for audio interface collections do not contain interface class-specific information.</p></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
@@ -301,7 +298,7 @@ USB\Class_01</code></pre>
 
 There are two versions of the Abstract Control Model (ACM). The original version is defined in the *USB Communication Device Class* (CDC) specification. The *USB Wireless Mobile Communication Device Class* (WMCDC) specification contains an extended definition of the ACM.
 
-Interface collections that comply with the WMCDC specification are described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+Interface collections that comply with the WMCDC specification are described on this page.
 
 Interface collections that comply with the CDC specification have the following properties.
 
@@ -854,7 +851,7 @@ USB\Class_0E</code></pre></td>
 
 There are two versions of the Abstract Control Model (ACM). The original version is defined in the USB Communication Device Class (CDC) specification. The USB Wireless Mobile Communication Device Class (WMCDC) specification contains an extended definition of the ACM. ACM collections that contain a fax/modem function should use the WMCDC definition of ACM rather than the original CDC ACM definition.
 
-Interface collections that comply with the CDC specification are described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+Interface collections that comply with the CDC specification are described on this page.
 
 Interface collections that comply with the WMCDC specification have the following properties.
 
@@ -910,7 +907,7 @@ USB\Class_02</code></pre></td>
 <tr class="odd">
 <td><p>Special handling</p></td>
 <td><p>The UFD might reference an audio interface collection that is enumerated independently of the ACM interface collection.</p>
-<p>Interface collections must comply with the special descriptor and endpoint requirements that are specified in section 6.2 of the WMCDC specification. If the interface collection does not comply with the WMCDC requirements but the interface complies with CDC requirements, the USB generic parent driver will enumerate the interface collection and generic hardware IDs with CDC formats, as described in <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md)">Support for the Wireless Mobile Communication Device Class</a>.</p>
+<p>Interface collections must comply with the special descriptor and endpoint requirements that are specified in section 6.2 of the WMCDC specification. If the interface collection does not comply with the WMCDC requirements but the interface complies with CDC requirements, the USB generic parent driver will enumerate the interface collection and generic hardware IDs with CDC formats.</p>
 <p>The compatible IDs of this control model have a match in a Microsoft-supplied INF file. If the operating system does not find a match for one of the hardware IDs in a vendor-supplied INF file, the system automatically loads the native telephony application programming interface (TAPI) modem filter driver to manage the modem function and sets the appropriate TAPI registry settings, unless the protocol code is 0xFE. If the protocol code is 0xFE, the vendor must supply a device or class co-installer to correctly populate the TAPI registry settings.</p></td>
 </tr>
 </tbody>
@@ -1041,7 +1038,7 @@ USB\Class_02</code></pre></td>
 #### WMCDC OBEX Control Model (Multiple PDOs)
 
 
-There are two ways to enumerate Object Exchange Protocol (OBEX) Control Model interface collections: the USB generic parent driver can group all of the OBEX interfaces together and create a single physical device object (PDO) for all of the OBEX interfaces, or the parent driver can create a separate PDO for each OBEX interface. For a description of the hardware IDs that the USB generic parent driver generates for OBEX interfaces that are grouped together, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+There are two ways to enumerate Object Exchange Protocol (OBEX) Control Model interface collections: the USB generic parent driver can group all of the OBEX interfaces together and create a single physical device object (PDO) for all of the OBEX interfaces, or the parent driver can create a separate PDO for each OBEX interface.
 
 When the USB generic parent driver assigns separate PDOs to each OBEX interface, the PDOs have the following properties.
 
@@ -1096,7 +1093,7 @@ USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p>Special handling</p></td>
-<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md)">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
+<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1104,7 +1101,7 @@ USB\Class_02</code></pre></td>
 #### WMCDC OBEX Control Model (Single PDO)
 
 
-There are two ways to enumerate Object Exchange Protocol (OBEX) control model interface collections: the USB generic parent driver can group all of the OBEX interfaces together and create a single physical device object (PDO) for all of the OBEX interfaces, or the parent driver can create a separate PDO for each OBEX interface. For a description of the hardware IDs that the USB generic parent driver generates for OBEX interfaces that are enumerated separately, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
+There are two ways to enumerate Object Exchange Protocol (OBEX) control model interface collections: the USB generic parent driver can group all of the OBEX interfaces together and create a single physical device object (PDO) for all of the OBEX interfaces, or the parent driver can create a separate PDO for each OBEX interface.
 
 When the USB generic parent driver assigns a single PDO to all of the OBEX interfaces, the PDO has the following properties.
 
@@ -1318,7 +1315,4 @@ In these compatible IDs, c(2), s(2), and p(2) contain values that are taken, res
 
 ## Related topics
 [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  
-[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
-
-
-
+[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)

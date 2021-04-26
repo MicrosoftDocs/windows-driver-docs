@@ -1,8 +1,7 @@
 ---
 title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
-ms.assetid: 58550c57-3439-4212-b0c6-6a2fbfd38414
-ms.date: 02/21/2020
+ms.date: 04/02/2021
 ms.custom: 19H1
 ---
 
@@ -22,9 +21,11 @@ DFx does not power down paging or debug devices.
 
 A WDF driver that specifies **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
 
-```
-HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1
-```
+`HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1`
+
+A WDF driver targeting version 31 and above will enable DFx by default. If this is undesired, the driver can opt out of DFx by setting the registry key to 0: 
+
+`HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,0`
 
 Because requesting system-managed idle timeout causes WDF to register with PoFx on the driver's behalf, the driver does not need to register with PoFx in this scenario.
 
@@ -104,6 +105,7 @@ Testing DFx after an S4 transition is recommended in order to catch any cases wh
 
 ## See Also
 
+- [Directed power management](https://docs.microsoft.com/windows-hardware/design/device-experiences/directed-power-management)
 - [Prepare hardware for modern standby](/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby)
 - [PwrTest](../devtest/pwrtest.md)
 - [PO_FX_DEVICE_V3 structure](/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)

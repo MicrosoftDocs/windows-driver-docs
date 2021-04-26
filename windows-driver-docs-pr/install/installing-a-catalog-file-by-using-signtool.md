@@ -1,7 +1,6 @@
 ---
 title: Installing a Catalog File by using SignTool
 description: Installing a Catalog File by using SignTool
-ms.assetid: b3d151af-d49b-468f-a34a-04e5ab875a07
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

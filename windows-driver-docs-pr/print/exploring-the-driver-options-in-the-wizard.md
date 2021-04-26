@@ -1,7 +1,6 @@
 ---
 title: Exploring the Driver Options in the Wizard
 description: This topic explores the driver options in the first section of the Create a v4 Print Driver wizard.
-ms.assetid: 48FF0A37-BBAF-49D1-9BDE-128AED00BEEF
 ms.date: 06/05/2020
 ms.localizationpriority: medium
 ---

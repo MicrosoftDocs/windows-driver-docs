@@ -1,7 +1,6 @@
 ---
 title: Organization of DPC Queues
 description: Organization of DPC Queues
-ms.assetid: df176a6d-d7a7-4d8b-ab1b-fd7f5b89fcbe
 keywords: ["DPC queues WDK kernel", "queues WDK DPC"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_SCAN\_STATUS
 description: The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status of a scanning operation. This property can be implemented optionally.
-ms.assetid: ce7dd30b-84fc-46e2-847c-33c07e60e0f7
 keywords: ["KSPROPERTY_TUNER_SCAN_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status of a scanning 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_scan_status_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_STATUS_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_scan_status_s)"><strong>KSPROPERTY_TUNER_SCAN_STATUS_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_scan_status_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_STATUS_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_scan_status_s)"><strong>KSPROPERTY_TUNER_SCAN_STATUS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_SCAN_STATUS_S</p></td>
 </tr>
 </tbody>
@@ -101,6 +100,4 @@ Requirements
 [**KSPROPERTY\_TUNER\_SCAN\_STATUS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_scan_status_s)
 
 [**TUNER\_ANALOG\_CAPS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tuner_analog_caps_s)
-
- 
 

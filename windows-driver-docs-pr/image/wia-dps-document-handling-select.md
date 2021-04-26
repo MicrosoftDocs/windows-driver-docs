@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT
 description: The WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT property contains the current scanner acquisition source and mode.
-ms.assetid: 17964dc5-8008-4f9c-abcd-cc72c1d6c398
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_SELECT Imaging Devices"]
 topic_type:
 - apiref

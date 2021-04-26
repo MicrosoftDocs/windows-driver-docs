@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 79ec0584-183d-476d-aca2-e85479248091
 keywords: ["get_IsTCPMonSupported method Print Devices", "get_IsTCPMonSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsTCPMonSupported method"]
 topic_type:
 - apiref

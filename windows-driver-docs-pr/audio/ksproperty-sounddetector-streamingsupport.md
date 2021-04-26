@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT
 description: The KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT property indicates whether or not streaming is supported.
-ms.assetid: 3B9B43C0-31EE-4490-AD29-98DA81D1664E
 keywords: ["KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT Audio Devices"]
 topic_type:
 - apiref
@@ -43,7 +42,7 @@ The **KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT** property indicates whether o
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty" data-raw-source="[&lt;strong&gt;KSSOUNDDETECTORPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty"><strong>KSSOUNDDETECTORPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty" data-raw-source="[&lt;strong&gt;KSSOUNDDETECTORPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kssounddetectorproperty)"><strong>KSSOUNDDETECTORPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -89,4 +88,4 @@ Requirements
 
 [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md)
 
-[**KSSOUNDDETECTORPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/)
+[**KSSOUNDDETECTORPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/)

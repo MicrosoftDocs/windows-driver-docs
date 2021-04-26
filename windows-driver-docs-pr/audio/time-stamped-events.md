@@ -1,7 +1,6 @@
 ---
 title: Time-Stamped Events
 description: Time-Stamped Events
-ms.assetid: 8db89e31-bfd7-48cf-9eb2-12ac7784cc31
 keywords:
 - synthesizers WDK audio , time stamps
 - time stamps WDK audio
@@ -31,7 +30,7 @@ What is actually passed into the synthesizer is simply a pointer to the location
 
 The PCM buffer is conceptually cyclical (that is, it is constantly looping). The synthesizer renders the 16-bit numbers that describe the sound into successive slices of the buffer. The slice size is slightly different every time the thread awakens, because the sink cannot wake up exactly every 20 milliseconds. So every time the thread does wake up, it plays catch up to determine how far it should progress through the buffer before going back to sleep.
 
-From the application's perspective, the synth port driver itself has a [**IDirectMusicSynth::GetLatencyClock**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-getlatencyclock) function that gets the clock from the wave sink. So there are two clocks:
+From the application's perspective, the synth port driver itself has a [**IDirectMusicSynth::GetLatencyClock**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-getlatencyclock) function that gets the clock from the wave sink. So there are two clocks:
 
 -   The master clock that everyone, including the wave sink, listens to.
 
@@ -41,7 +40,7 @@ In other words, the application asks for the latency clock, but sees the clock a
 
 The time returned by this latency clock is the earliest time that the buffer can be rendered to, because the synth has already rendered up to that point in the buffer. If the synth had rendered a smaller buffer on its last write, the latency would also be smaller.
 
-Therefore, the wave sink calls [**IDirectMusicSynth::Render**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-render) on the synth, presenting the buffer and requesting that it be filled with rendered data. As shown in the following figure, the synth takes all the time-stamped events that come in as a result of [**IDirectMusicSynth::PlayBuffer**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-playbuffer) function calls.
+Therefore, the wave sink calls [**IDirectMusicSynth::Render**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-render) on the synth, presenting the buffer and requesting that it be filled with rendered data. As shown in the following figure, the synth takes all the time-stamped events that come in as a result of [**IDirectMusicSynth::PlayBuffer**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-playbuffer) function calls.
 
 ![diagram illustrating queuing of time-stamped messages](images/dmevents.png)
 

@@ -1,7 +1,6 @@
 ---
 title: Responding to Battery Tag Queries
 description: Responding to Battery Tag Queries
-ms.assetid: ac22a1d3-413c-4991-ac9c-fbfb2c6f16c6
 keywords:
 - battery tags WDK
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_responding_to_battery_tag_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_TAG_QUERIES_DG"></span>
 
 
-The battery tag is a ULONG counter initialized and incremented by the miniclass driver. The battery class driver calls [*BatteryMiniQueryTag*](/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback) to request the current value of the tag.
+The battery tag is a ULONG counter initialized and incremented by the miniclass driver. The battery class driver calls [*BatteryMiniQueryTag*](/windows/win32/api/batclass/nc-batclass-bclass_query_tag_callback) to request the current value of the tag.
 
 This miniclass driver routine is declared as follows:
 
@@ -27,7 +26,7 @@ NTSTATUS
     );
 ```
 
-The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization ([**BatteryClassInitializeDevice**](/windows/desktop/api/batclass/nf-batclass-batteryclassinitializedevice)). The *BatteryTag* value is created and maintained by the miniclass driver.
+The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization ([**BatteryClassInitializeDevice**](/windows/win32/api/batclass/nf-batclass-batteryclassinitializedevice)). The *BatteryTag* value is created and maintained by the miniclass driver.
 
 Each time a battery is inserted, the miniclass driver must increment the value of the tag, regardless of whether this is a new battery or the same battery that was previously present.
 

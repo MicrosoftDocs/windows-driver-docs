@@ -1,7 +1,6 @@
 ---
 title: Enumerating the Allocated Queues
 description: Enumerating the Allocated Queues
-ms.assetid: 4566314b-ea6b-49e2-bc85-946ed303bc6e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

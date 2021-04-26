@@ -4,7 +4,6 @@ description: Returns the number of bytes that the IHV JavaScript function has pr
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 667DDBEA-14DA-4037-98A1-A2E7DB8B97F5
 keywords: ["ProcessedByteCount method Print Devices", "ProcessedByteCount method Print Devices , IPrinterScriptUsbWritePrintDataProgress interface", "IPrinterScriptUsbWritePrintDataProgress interface Print Devices , ProcessedByteCount method"]
 topic_type:
 - apiref

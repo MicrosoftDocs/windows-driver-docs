@@ -5,15 +5,13 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# USBStress
-
+# USBStress package
 
 USBStress is the combination of a user-mode application (usbstress.exe) and driver installation package for the kernel-mode driver, usbstress.sys.
 
-Those files are included in the [MUTT Software Package](https://docs.microsoft.com/windows-hardware/drivers/usbcon/mutt-software-package).
+Those files are included in the [MUTT Software Package](./mutt-software-package.md).
 
 ## USBStress
-
 
 USBStress is a set of tests focused on the entire USB driver stack and the USB Generic Parent Driver (Usbccgp.sys), and controller and its upstream hubs. USBStress randomly chooses the tests and configures the attached test devices. Due to the random nature of the tests, we recommend that you should run USBStress over a 24 hour time period to allow more test combinations.
 
@@ -23,17 +21,17 @@ The USBStress driver is largely self-driven, that is, most I/O requests are gene
 
 This list summarizes the tests that USBStress performs:
 
--   Selective suspend with remote wake-up.
--   Concurrent read/write requests on bulk, interrupt, and isochronous endpoints and cancellation.
--   Concurrent strings transfer requests and cancellation.
--   Concurrent abort pipe on bulk endpoints and cancellation .
--   Random reset to surprise-remove and re-enumerate.
--   Random reset to surprise-remove and re-enumerate and fail the re-enumeration.
--   Randomly select an available alternate interface .
--   Randomly instruct the device to stall every nth control transfer .
--   Randomly instruct the MUTT Pack (if connected) to disconnect VBUS from the exposed downstream port.
--   Randomly instruct the MUTT Pack (if connected) to simulate an over-current condition on the exposed downstream port .
--   Randomly instruct the MUTT Pack (if connected) to perform a hardware reset on the hub.
+- Selective suspend with remote wake-up.
+- Concurrent read/write requests on bulk, interrupt, and isochronous endpoints and cancellation.
+- Concurrent strings transfer requests and cancellation.
+- Concurrent abort pipe on bulk endpoints and cancellation .
+- Random reset to surprise-remove and re-enumerate.
+- Random reset to surprise-remove and re-enumerate and fail the re-enumeration.
+- Randomly select an available alternate interface .
+- Randomly instruct the device to stall every nth control transfer .
+- Randomly instruct the MUTT Pack (if connected) to disconnect VBUS from the exposed downstream port.
+- Randomly instruct the MUTT Pack (if connected) to simulate an over-current condition on the exposed downstream port .
+- Randomly instruct the MUTT Pack (if connected) to perform a hardware reset on the hub.
 
 To install the usbstress.sys driver for the MUTT device, use MuttUtil with the `-UpdateDriver `option:
 
@@ -49,9 +47,6 @@ Return value: 1
 ```
 
 ## Related topics
-[USB test tools](usb-test-tools.md)  
+
 [Tools in the MUTT software package](mutt-software-package.md)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

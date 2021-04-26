@@ -1,7 +1,6 @@
 ---
 title: Supporting Stream Offsets
 description: Supporting Stream Offsets
-ms.assetid: 2c2ca906-8685-47f5-a2ca-855394b9674f
 keywords:
 - stream offsets WDK DirectX 9.0
 - vertex stream offsets WDK DirectX 9.0

@@ -1,7 +1,6 @@
 ---
 title: Managing NDIS Network Interfaces
 description: Managing NDIS Network Interfaces
-ms.assetid: b4c61b8a-a3ef-449d-9bce-853d91911dc4
 keywords:
 - NDIS network interfaces WDK , managing
 - network interfaces WDK , managing
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS network interface providers register network interfaces with NDIS. Before registering an interface, an interface provider obtains a [**NET\_LUID**](/windows/desktop/api/ifdef/ns-ifdef-net_luid_lh) value for that interface. NDIS assigns an interface index ( *IfIndex* in RFC 2863) to an interface when it is registered.
+NDIS network interface providers register network interfaces with NDIS. Before registering an interface, an interface provider obtains a [**NET\_LUID**](/windows/win32/api/ifdef/ns-ifdef-net_luid_lh) value for that interface. NDIS assigns an interface index ( *IfIndex* in RFC 2863) to an interface when it is registered.
 
 NDIS also provides services that drivers can use to manage entries in the interface stack table (*ifStackTable* in RFC 2863).
 

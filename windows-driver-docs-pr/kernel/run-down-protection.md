@@ -1,7 +1,6 @@
 ---
 title: Run-Down Protection
 description: Starting with Windows XP, run-down protection is available to kernel-mode drivers. Drivers can use run-down protection to safely access objects in shared system memory that are created and deleted by another kernel-mode driver.
-ms.assetid: AF451636-DBA0-4905-9723-73EE7AA9483E
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

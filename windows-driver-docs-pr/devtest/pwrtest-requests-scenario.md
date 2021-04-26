@@ -1,7 +1,6 @@
 ---
 title: PwrTest Requests Scenario
 description: The PwrTest Requests Scenario logs power requests from processes and services running in the system as they happen.
-ms.assetid: 4B082680-5C43-45F6-9A0E-0C23E9B1F282
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -132,7 +131,7 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;Legacy&gt;</strong></td>
-<td align="left"><p>Reports True or False if the caller used legacy <a href="https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate" data-raw-source="[&lt;strong&gt;SetThreadExecutionState function (Windows)&lt;/strong&gt;](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate)"><strong>SetThreadExecutionState function (Windows)</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate" data-raw-source="[&lt;strong&gt;PoSetSystemState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate)"><strong>PoSetSystemState</strong></a> APIs or the newer <a href="https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-powersetrequest" data-raw-source="[&lt;strong&gt;PowerSetRequest function (Windows)&lt;/strong&gt;](/windows/desktop/api/winbase/nf-winbase-powersetrequest)"><strong>PowerSetRequest function (Windows)</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest" data-raw-source="[&lt;strong&gt;PoSetPowerRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest)"><strong>PoSetPowerRequest</strong></a> APIs.</p></td>
+<td align="left"><p>Reports True or False if the caller used legacy <a href="/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate" data-raw-source="[&lt;strong&gt;SetThreadExecutionState function (Windows)&lt;/strong&gt;](/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate)"><strong>SetThreadExecutionState function (Windows)</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate" data-raw-source="[&lt;strong&gt;PoSetSystemState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate)"><strong>PoSetSystemState</strong></a> APIs or the newer <a href="/windows/win32/api/winbase/nf-winbase-powersetrequest" data-raw-source="[&lt;strong&gt;PowerSetRequest function (Windows)&lt;/strong&gt;](/windows/win32/api/winbase/nf-winbase-powersetrequest)"><strong>PowerSetRequest function (Windows)</strong></a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest" data-raw-source="[&lt;strong&gt;PoSetPowerRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest)"><strong>PoSetPowerRequest</strong></a> APIs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;SystemAllowed&gt;</strong></td>
@@ -197,6 +196,4 @@ The following table describes the XML elements that appear in the log file.
 [PwrTest Syntax](pwrtest-syntax.md)
 
 [PowerCfg](/windows-hardware/design/device-experiences/powercfg-command-line-options)
-
- 
 

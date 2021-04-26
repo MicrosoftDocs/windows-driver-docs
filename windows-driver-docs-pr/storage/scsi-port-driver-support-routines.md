@@ -1,7 +1,6 @@
 ---
 title: SCSI Port Driver Support Routines
 description: Describes the SCSI port driver routines.
-ms.assetid: b4bd6afe-77a2-4bd1-a762-5887f77cc737
 keywords:
 - SCSI port driver support routines
 - storage WDK

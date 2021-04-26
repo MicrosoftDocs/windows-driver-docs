@@ -31,7 +31,7 @@ Class drivers for CD-ROM devices handle additional public I/O control codes, alo
 |[IOCTL_CDROM_GET_VOLUME](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_volume)|Obsolete. Determines the current volume for each of its device's audio ports.|
 |[IOCTL_CDROM_LOAD_MEDIA](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_load_media)|Draws a protruding CDROM tray back into the drive.|
 |[IOCTL_CDROM_PAUSE_AUDIO](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_pause_audio)|Obsolete. Suspends audio play.|
-|[IOCTL_CDROM_PLAY_AUDIO_MSF](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_play_audio_msf)|Obsolete. Plays the specified range of the media.|Reads data from the CD-ROM in raw mode.|
+|[IOCTL_CDROM_PLAY_AUDIO_MSF](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_play_audio_msf)|Obsolete. Plays the specified range of the media.|
 |[IOCTL_CDROM_READ_Q_CHANNEL](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_read_q_channel)|Obsolete. Returns the current position, media catalog, or ISRC track data.|
 |[IOCTL_CDROM_READ_TOC](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_read_toc)|Obsolete. Returns the table of contents of the media.|
 |[IOCTL_CDROM_READ_TOC_EX](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_read_toc_ex)|Queries the target device for the table of contents (TOC), the program memory area (PMA), and the absolute time in pregroove (ATIP).|

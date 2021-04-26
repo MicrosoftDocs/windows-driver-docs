@@ -1,7 +1,6 @@
 ---
 title: ndiskd.netfragment
 description: The ndiskd.netfragment extension displays information about a NET_PACKET_FRAGMENT structure.
-ms.assetid: 2075D682-45F5-414D-A8ED-0494B3550C77
 keywords: ["ndiskd.netfragment Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:

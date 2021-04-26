@@ -1,7 +1,6 @@
 ---
 title: Changing State on the Adapter
 description: Changing State on the Adapter
-ms.assetid: bf503a42-ac32-4d68-9ad9-afec69c5fe2a
 keywords:
 - video adapter state changes WDK video miniport
 - states WDK video miniport

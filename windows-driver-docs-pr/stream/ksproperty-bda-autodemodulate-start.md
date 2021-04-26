@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_AUTODEMODULATE\_START
 description: Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_START to automatically determine the modulation parameters of a demodulator node and demodulate the signal.
-ms.assetid: c41a864d-6ed6-4515-bd34-10314e3fdf88
 keywords: ["KSPROPERTY_BDA_AUTODEMODULATE_START Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Vertex Blending
 description: Vertex Blending
-ms.assetid: 58e740fb-01e4-4c8c-8e44-f0c358fd621a
 keywords:
 - lending WDK Direct3D
 - vertex blending WDK Direct3D

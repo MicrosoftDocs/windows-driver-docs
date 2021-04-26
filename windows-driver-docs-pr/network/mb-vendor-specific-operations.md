@@ -1,7 +1,6 @@
 ---
 title: MB Vendor Specific Operations
 description: MB Vendor Specific Operations
-ms.assetid: 92ec8913-4d0b-45d8-91d1-7ce8140d2ef7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

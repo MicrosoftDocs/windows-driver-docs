@@ -1,7 +1,6 @@
 ---
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
-ms.assetid: 9ab8fa19-e75a-4266-accf-4e8b2964f82e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -52,7 +51,7 @@ When the network adapter is waking the computer the following sequence occurs:
 
 Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WAKE\_REASON**](./ndis-status-pm-wake-reason.md) status indications, it must issue this status notification if the network adapter wakes the system. The driver issues this status notification while it is handling the OID set request of [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md) for the transition to a full-power (D0) state.
 
-For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
+For more information, see [NDIS Wake Reason Status Indications](overview-of-ndis-wake-reason-statue-indications.md).
 
  
 

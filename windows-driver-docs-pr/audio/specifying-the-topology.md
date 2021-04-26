@@ -1,7 +1,6 @@
 ---
 title: Specifying the Topology
 description: Specifying the Topology
-ms.assetid: 265cbd87-d40f-4ead-ba6e-a1cef51baf95
 keywords:
 - WDM audio drivers WDK , topology
 - audio drivers WDK , topology
@@ -91,37 +90,37 @@ In the preceding figure, the topology at the top level consists of the connectio
 <tr class="odd">
 <td align="left"><p>Synth</p></td>
 <td align="left"><p>Synthesizer node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-synthesizer" data-raw-source="[&lt;strong&gt;KSNODETYPE_SYNTHESIZER&lt;/strong&gt;](./ksnodetype-synthesizer.md)"><strong>KSNODETYPE_SYNTHESIZER</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-synthesizer" data-raw-source="[&lt;strong&gt;KSNODETYPE_SYNTHESIZER&lt;/strong&gt;](./ksnodetype-synthesizer.md)"><strong>KSNODETYPE_SYNTHESIZER</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DAC</p></td>
 <td align="left"><p>Digital-to-audio converter node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-dac" data-raw-source="[&lt;strong&gt;KSNODETYPE_DAC&lt;/strong&gt;](./ksnodetype-dac.md)"><strong>KSNODETYPE_DAC</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-dac" data-raw-source="[&lt;strong&gt;KSNODETYPE_DAC&lt;/strong&gt;](./ksnodetype-dac.md)"><strong>KSNODETYPE_DAC</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ADC</p></td>
 <td align="left"><p>Analog-to-digital converter node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-adc" data-raw-source="[&lt;strong&gt;KSNODETYPE_ADC&lt;/strong&gt;](./ksnodetype-adc.md)"><strong>KSNODETYPE_ADC</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-adc" data-raw-source="[&lt;strong&gt;KSNODETYPE_ADC&lt;/strong&gt;](./ksnodetype-adc.md)"><strong>KSNODETYPE_ADC</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Volume</p></td>
 <td align="left"><p>Volume-level control node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-volume" data-raw-source="[&lt;strong&gt;KSNODETYPE_VOLUME&lt;/strong&gt;](./ksnodetype-volume.md)"><strong>KSNODETYPE_VOLUME</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-volume" data-raw-source="[&lt;strong&gt;KSNODETYPE_VOLUME&lt;/strong&gt;](./ksnodetype-volume.md)"><strong>KSNODETYPE_VOLUME</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mute</p></td>
 <td align="left"><p>Mute control node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-mute" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUTE&lt;/strong&gt;](./ksnodetype-mute.md)"><strong>KSNODETYPE_MUTE</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-mute" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUTE&lt;/strong&gt;](./ksnodetype-mute.md)"><strong>KSNODETYPE_MUTE</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Sum</p></td>
 <td align="left"><p>Summation node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-sum" data-raw-source="[&lt;strong&gt;KSNODETYPE_SUM&lt;/strong&gt;](./ksnodetype-sum.md)"><strong>KSNODETYPE_SUM</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-sum" data-raw-source="[&lt;strong&gt;KSNODETYPE_SUM&lt;/strong&gt;](./ksnodetype-sum.md)"><strong>KSNODETYPE_SUM</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MUX</p></td>
 <td align="left"><p>Multiplexer node</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-mux" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUX&lt;/strong&gt;](./ksnodetype-mux.md)"><strong>KSNODETYPE_MUX</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/audio/ksnodetype-mux" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUX&lt;/strong&gt;](./ksnodetype-mux.md)"><strong>KSNODETYPE_MUX</strong></a></td>
 </tr>
 </tbody>
 </table>

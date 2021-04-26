@@ -1,7 +1,6 @@
 ---
 title: Install the driver and sample app
 description: This section provides information on installing the driver and the WSD sample app.
-ms.assetid: BF89F0D0-2ED3-4900-996F-BB7B9C8C9B80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

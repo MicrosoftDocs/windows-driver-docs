@@ -1,7 +1,6 @@
 ---
 title: Models Section in a Network INF File
 description: Models Section in a Network INF File
-ms.assetid: 0340a875-ae5a-49c8-9498-1f8aba97e029
 keywords:
 - INF files WDK network , Models section
 - network INF files WDK , Models section

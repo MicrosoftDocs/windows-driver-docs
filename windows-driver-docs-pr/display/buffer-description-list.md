@@ -1,7 +1,6 @@
 ---
 title: Buffer Description List
 description: Buffer Description List
-ms.assetid: 7d820491-2df2-4036-8f3d-e6bcff4cd1f6
 keywords:
 - video decoding WDK DirectX VA , buffer description list
 - decoding video WDK DirectX VA , buffer description list

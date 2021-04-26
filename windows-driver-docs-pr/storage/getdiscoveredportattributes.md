@@ -1,7 +1,6 @@
 ---
 title: GetDiscoveredPortAttributes function
 description: The GetDiscoveredPortAttributes WMI method retrieves the attributes for a specified remote Fibre Channel port.
-ms.assetid: f71a02cf-035a-4de2-bb28-e1141a92795c
 keywords: ["GetDiscoveredPortAttributes function Storage Devices"]
 topic_type:
 - apiref

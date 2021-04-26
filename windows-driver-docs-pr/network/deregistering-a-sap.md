@@ -1,7 +1,6 @@
 ---
 title: Deregistering a SAP
 description: Deregistering a SAP
-ms.assetid: 2d279348-b58e-4d7e-ac8b-211e9b8a0622
 keywords:
 - service access points WDK CoNDIS
 - SAPs WDK CoNDIS

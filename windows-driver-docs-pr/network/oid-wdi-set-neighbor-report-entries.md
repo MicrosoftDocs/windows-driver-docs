@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES
 description: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES sends the list of neighbor reports received from the AP to the LE. This is sent as soon as the UE receives the neighbor report from the currently connected AP.
-ms.assetid: F77FDA4A-3029-4F6E-A82E-B318543484FF
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES Network Drivers Starting with Windows Vista

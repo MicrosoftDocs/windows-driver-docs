@@ -1,7 +1,6 @@
 ---
 title: Retrieving Device Relations
 description: Retrieving Device Relations
-ms.assetid: 2b0ead69-1fda-4024-a7c2-d6350060b5fb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -58,9 +57,9 @@ If the call to **CM_Get_Device_ID_List** succeeds, **CM_Get_Device_ID_List** ret
 
 To retrieve the device instance identifier of a parent device on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call the [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) function to retrieve a device instance handle to the parent device of a device instance.
+1.  Call the [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) function to retrieve a device instance handle to the parent device of a device instance.
 
-2.  Call [**CM_Get_Device_ID**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to retrieve the device instance identifier that is associated with the device instance handle to the parent device that was retrieved by the previous call to **CM_Get_Parent**.
+2.  Call [**CM_Get_Device_ID**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to retrieve the device instance identifier that is associated with the device instance handle to the parent device that was retrieved by the previous call to **CM_Get_Parent**.
 
 This information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Parent property in the unified device property model of Windows Vista and later versions.
 
@@ -68,9 +67,9 @@ This information retrieved by using this procedure is the same as that represent
 
 To retrieve the device instance identifiers of the child devices of a device instance on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call the [**CM_Get_Child**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_child) function to retrieve a device instance handle to the first child device that is associated with a device instance.
+1.  Call the [**CM_Get_Child**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_child) function to retrieve a device instance handle to the first child device that is associated with a device instance.
 
-2.  Call [**CM_Get_Sibling**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_sibling) as many times as it is necessary to enumerate all the sibling devices of the first child device that was retrieved by the call to **CM_Get_Child**.
+2.  Call [**CM_Get_Sibling**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_sibling) as many times as it is necessary to enumerate all the sibling devices of the first child device that was retrieved by the call to **CM_Get_Child**.
 
 3.  Call **CM_Get_Device_ID** to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the calls to **CM_Get_Child** and **CM_Get_Sibling**.
 
@@ -80,13 +79,13 @@ This information retrieved by using this procedure is the same as that represent
 
 To retrieve the device instance identifiers of the sibling devices of device instance Abc on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call the [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) function to retrieve a device instance handle to the parent device of device instance *Abc*.
+1.  Call the [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) function to retrieve a device instance handle to the parent device of device instance *Abc*.
 
-2.  Call the [**CM_Get_Child**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_child) function to retrieve a device instance handle to the first child device of the parent device of device instance *Abc*.
+2.  Call the [**CM_Get_Child**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_child) function to retrieve a device instance handle to the first child device of the parent device of device instance *Abc*.
 
-3.  Call [**CM_Get_Sibling**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_sibling) as many times as is necessary to enumerate all the sibling devices of the first child device of the parent device. This enumeration will also return a handle to device instance *Abc*.
+3.  Call [**CM_Get_Sibling**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_sibling) as many times as is necessary to enumerate all the sibling devices of the first child device of the parent device. This enumeration will also return a handle to device instance *Abc*.
 
-4.  Call [**CM_Get_Device_ID**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the previous calls to **CM_Get_Sibling**. Remove the handle to device instance *Abc* from the list of sibling devices of the first child device of the parent device.
+4.  Call [**CM_Get_Device_ID**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the previous calls to **CM_Get_Sibling**. Remove the handle to device instance *Abc* from the list of sibling devices of the first child device of the parent device.
 
 The information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Siblings property in the unified device property model of Windows Vista and later versions. If a **CM_<em>Xxx</em>** function call listed in this section succeeds, the **CM_<em>Xxx</em>** function retrieves the requested information and returns CR_SUCCESS. Otherwise, the **CM_<em>Xxx</em>** function returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
 

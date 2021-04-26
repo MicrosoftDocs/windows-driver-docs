@@ -1,7 +1,6 @@
 ---
 title: Compressed Picture Decoding
 description: Compressed Picture Decoding
-ms.assetid: 61633a15-72e4-49a4-9a42-684bde21df9e
 keywords:
 - compressed picture decoding WDK DirectX VA
 - picture decoding WDK DirectX VA , compressed

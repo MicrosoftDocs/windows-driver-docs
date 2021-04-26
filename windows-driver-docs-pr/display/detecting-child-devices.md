@@ -1,7 +1,6 @@
 ---
 title: Detecting Child Devices
 description: Detecting Child Devices
-ms.assetid: 36c0c4ef-7810-4e8a-b349-0b7c1f8c2f0c
 keywords:
 - video miniport drivers WDK Windows 2000 , child devices
 - child devices WDK video miniport , detecting

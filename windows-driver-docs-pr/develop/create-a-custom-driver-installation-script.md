@@ -1,5 +1,4 @@
 ---
-ms.assetid: 9F1E79FF-D38E-484A-8AEB-FC9A105BF709
 title: How to create a custom driver installation script
 description: If you need to install more than the driver package on a test computer, you can run custom command scripts at installation.
 ms.date: 04/20/2017

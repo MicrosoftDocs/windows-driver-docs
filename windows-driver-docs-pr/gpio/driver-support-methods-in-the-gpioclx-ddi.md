@@ -1,7 +1,6 @@
 ---
 title: Driver Support Methods in the GpioClx DDI
 description: The GPIO framework extension (GpioClx) is available starting with Windows 8.
-ms.assetid: 179EFB06-6122-4EB0-B9F8-D5A3089D75EE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

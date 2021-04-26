@@ -1,7 +1,6 @@
 ---
 title: Releasing Device and Controller Objects
 description: Releasing Device and Controller Objects
-ms.assetid: 35404401-d3a8-4257-b1a3-b16ebe42b181
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing devices", "releasing controller objects", "device releases WDK kernel", "controller objects WDK kernel , releasing"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Power management enhancements in NDIS 6.20
 description: Introduces NDIS 6.20 power management enhancements to reduce computer power consumption
-ms.assetid: 99900def-66f8-4ba1-a7c1-3a5e9f456ca1
 keywords:
 - NDIS 6.20 WDK , power management enhancements
 - power management WDK networking , NDIS 6.20 enhancements
@@ -34,7 +33,7 @@ The power management interface in NDIS 6.20 and later also supports:
 
 Some of the NDIS device driver interface elements are obsolete for NDIS 6.20 and later drivers. For more information about obsolete interfaces, see [Obsolete Interfaces in NDIS 6.20](obsolete-interfaces-in-ndis-6-20.md).
 
-For more information about power management for NDIS 6.20 and later versions of NDIS, see [Power Management (NDIS 6.20)](power-management--ndis-6-20-.md).
+For more information about power management for NDIS 6.20 and later versions of NDIS, see [Power Management (NDIS 6.20)](ndis-power-management-overview.md).
 
 ## Related topics
 

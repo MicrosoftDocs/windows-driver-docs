@@ -1,7 +1,6 @@
 ---
 title: Removing an ISR
 description: Removing an ISR
-ms.assetid: 23d84edb-763f-4383-b05c-832b4249b604
 keywords: ["interrupt service routines WDK kernel , removing ISRs", "interrupt objects WDK kernel , removing ISRs", "ISRs WDK kernel , removing ISRs", "removing ISRs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: CoNDIS TAPI Shutdown
 description: CoNDIS TAPI Shutdown
-ms.assetid: 97baf489-9a9b-48c8-b0f8-79beea33bc38
 keywords:
 - CoNDIS WAN drivers WDK networking , TAPI services
 - telephonic services WDK WAN , shutdown

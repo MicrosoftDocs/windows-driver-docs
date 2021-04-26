@@ -1,7 +1,6 @@
 ---
 title: Handling the Loss of a COPP Device
 description: Handling the Loss of a COPP Device
-ms.assetid: 7e74b249-34be-44cc-a022-ba6574f2f841
 keywords:
 - copy protection WDK COPP , loss of device
 - video copy protection WDK COPP , loss of device
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-A video session that is set to protected mode must handle scenarios that cause the destruction of a DirectX VA COPP device that is associated with the video session. The following scenarios initiate a call to the display driver's [*DdMoCompDestroy*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback function while content protection on the certified output connector for the video session is possibly enabled:
+A video session that is set to protected mode must handle scenarios that cause the destruction of a DirectX VA COPP device that is associated with the video session. The following scenarios initiate a call to the display driver's [*DdMoCompDestroy*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback function while content protection on the certified output connector for the video session is possibly enabled:
 
 -   Changing the display mode
 

@@ -1,7 +1,6 @@
 ---
 title: SignTool
 description: SignTool (Signtool.exe) is a command-line CryptoAPI tool that digitally-signs files, verifies signatures in files, and time stamps files.
-ms.assetid: c1006c07-f204-4fc0-8f99-36e69cbee96d
 keywords:
 - SignTool Driver Development Tools
 topic_type:
@@ -193,7 +192,7 @@ Specifies an optional hash algorithm to use when searching for a file in a catal
 Configures SignTool to verify that the digital signature of each of the files specified by the *FileName* argument complies with the [kernel-mode code signing policy](../install/kernel-mode-code-signing-policy--windows-vista-and-later-.md) and the [PnP device installation signing requirements](../install/pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of Windows Vista and later versions of Windows. If this option is not specified, SignTool only verifies that a signature complies with the PnP device installation signing requirements.
 
 **/ms**  
-Uses multiple verification semantics. This is the default behavior of a [**WinVerifyTrust function**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on Windows 8 and above.
+Uses multiple verification semantics. This is the default behavior of a [**WinVerifyTrust function**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust) call on Windows 8 and above.
 
 **/o** *Version*  
 Verifies the file as per the operating system version. The format for the *Version* argument is *PlatformID:VerMajor.VerMinor.BuildNumber*

@@ -1,7 +1,6 @@
 ---
 title: Creating Reliable Kernel-Mode Drivers
 description: Creating Reliable Kernel-Mode Drivers
-ms.assetid: 31bbf1fe-dc90-43e0-a53e-eca902ec343e
 keywords: ["kernel-mode drivers WDK , reliability", "reliability WDK kernel", "reliability WDK kernel , about reliable drivers", "IRPs WDK kernel , reliability issues"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

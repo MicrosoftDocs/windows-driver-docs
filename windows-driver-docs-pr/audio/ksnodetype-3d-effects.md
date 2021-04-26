@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_3D\_EFFECTS
 description: KSNODETYPE\_3D\_EFFECTS
-ms.assetid: 8b19423b-c1ad-4b59-bdae-a53bb99469ea
 keywords: ["KSNODETYPE_3D_EFFECTS Audio Devices"]
 topic_type:
 - apiref

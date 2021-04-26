@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfdumpobjects
 description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
-ms.assetid: 2ede7f2e-124c-494d-9188-5a28617a0bdb
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

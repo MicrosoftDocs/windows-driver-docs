@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SYS_CAPS_INFO
 description: Miniport drivers use the NDIS_STATUS_WWAN_SYS_CAPS_INFO notification to inform the MB service about the completion of a previous OID_WWAN_SYS_CAPS_INFO query request.
-ms.assetid: 653A35EC-29BB-458D-B33C-41EF6EF47A6E
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_SYS_CAPS_INFO Network Drivers Starting with Windows Vista

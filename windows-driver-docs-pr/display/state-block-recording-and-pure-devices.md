@@ -1,7 +1,6 @@
 ---
 title: State Block Recording and Pure Devices
 description: State Block Recording and Pure Devices
-ms.assetid: 9959d361-aa92-4209-8f81-deba96498941
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices, state block handling
 - pure devices WDK DirectX 8.0 , state block handling

@@ -1,7 +1,6 @@
 ---
 title: Version Discovery Support
 description: Version Discovery Support
-ms.assetid: 9e37eaad-02b2-43a9-bd1a-4c5b2b02d1b6
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , version discovery support
 - version discovery support WDK Windows 7 display

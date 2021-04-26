@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable.
-ms.assetid: F8DD0475-13CE-464A-A491-AEFA962A96DB
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---

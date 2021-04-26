@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
 description: KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
-ms.assetid: 812a9ec8-3b9e-4cf8-bf69-3b849ff6402a
 keywords: ["KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR Device and Driver Installation"]
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Drivers for KS devices register an instance of KSCATEGORY_MICROPHONE_ARRAY_PROCE
 
 For more information about functional categories for audio devices, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-For more information about how to process a microphone array in Windows Vista, refer to the [Microphone Array Support in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=120592) and the [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=120593) white papers.
+For more information about how to process a microphone array in Windows Vista, refer to the [Microphone Array Support in Windows Vista](/previous-versions/windows/hardware/design/dn613960(v=vs.85)) and the [How to Build and Use Microphone Arrays for Windows Vista](/previous-versions/windows/hardware/design/dn613960(v=vs.85)) white papers.
 
 Requirements
 ------------
@@ -78,6 +77,4 @@ Requirements
 
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS
 description: The WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS property contains the current state of a scanner's installed flatbed, document feeder, or duplexer.
-ms.assetid: b95c64ee-b06c-4786-87d3-d8a0f91dcba2
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_STATUS Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Supplying an INF File
 description: Supplying an INF File
-ms.assetid: 208726d9-6f62-46a4-84a1-6fab3895bbe3
 keywords:
 - driver packages WDK , INF files
 - packages WDK , INF files

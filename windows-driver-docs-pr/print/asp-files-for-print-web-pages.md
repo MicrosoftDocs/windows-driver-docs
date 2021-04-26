@@ -1,7 +1,6 @@
 ---
 title: ASP Files for Print Web Pages
 description: ASP Files for Print Web Pages
-ms.assetid: 01ca39ed-be16-41fb-b432-1cbd0908358d
 keywords:
 - customized print Web pages WDK , ASP files
 - ASP files WDK printer

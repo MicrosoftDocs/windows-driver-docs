@@ -1,7 +1,6 @@
 ---
 title: DUAL\_OPLOCK\_KEY\_ECP\_CONTEXT structure
 description: The DUAL\_OPLOCK\_KEY\_ECP\_CONTEXT structure contains the extra create parameter context for a dual oplock key. Oplocks keys for both a target and a parent file object can be set in this structure.
-ms.assetid: 7E337D2F-7292-4D18-B750-8361A83C8B1F
 keywords: ["DUAL_OPLOCK_KEY_ECP_CONTEXT structure Installable File System Drivers", "PDUAL_OPLOCK_KEY_ECP_CONTEXT structure pointer Installable File System Drivers"]
 topic_type:
 - apiref

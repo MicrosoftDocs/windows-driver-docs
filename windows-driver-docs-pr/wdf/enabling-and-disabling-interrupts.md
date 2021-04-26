@@ -1,7 +1,6 @@
 ---
 title: Enabling and Disabling Interrupts
-description: Enabling and Disabling Interrupts
-ms.assetid: 432907e7-05a3-4a99-a291-33bd1eefa94c
+description: Learn about enabling and disabling interrupts. The driver must provide 'EvtInterruptEnable' and 'EvtInterruptDisable' callback functions for the interrupts.
 keywords:
 - hardware interrupts WDK KMDF , enabling
 - interrupts WDK KMDF , enabling

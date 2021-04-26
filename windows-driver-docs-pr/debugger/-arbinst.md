@@ -1,7 +1,6 @@
 ---
 title: arbinst
 description: The arbinst extension displays information about a specified arbiter.
-ms.assetid: 6aa06283-9cd7-4579-9e5d-40bbaf53f782
 keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

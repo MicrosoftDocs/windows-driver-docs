@@ -1,7 +1,6 @@
 ---
 title: Registry Key Objects
 description: Registry Key Objects
-ms.assetid: c666f0cc-5a8a-4df8-9c65-08e3b044a08f
 keywords:
 - helper objects WDK audio , registry key objects
 - registry key objects WDK audio
@@ -39,15 +38,15 @@ When querying a registry key object for information about a registry entry under
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>KeyBasicInformation</strong></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information" data-raw-source="[&lt;strong&gt;KEY_BASIC_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information)"><strong>KEY_BASIC_INFORMATION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information" data-raw-source="[&lt;strong&gt;KEY_BASIC_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information)"><strong>KEY_BASIC_INFORMATION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>KeyFullInformation</strong></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information" data-raw-source="[&lt;strong&gt;KEY_FULL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information)"><strong>KEY_FULL_INFORMATION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information" data-raw-source="[&lt;strong&gt;KEY_FULL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information)"><strong>KEY_FULL_INFORMATION</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>KeyNodeInformation</strong></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information" data-raw-source="[&lt;strong&gt;KEY_NODE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information)"><strong>KEY_NODE_INFORMATION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information" data-raw-source="[&lt;strong&gt;KEY_NODE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information)"><strong>KEY_NODE_INFORMATION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,6 +74,4 @@ The [IRegistryKey](/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey
 [**IRegistryKey::QueryValueKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-queryvaluekey)
 
 [**IRegistryKey::SetValueKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-setvaluekey)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Virtual Subunit Driver Notes
 description: Virtual Subunit Driver Notes
-ms.assetid: e484f815-73a8-46f1-956e-ee16b1856bd0
 keywords:
 - Avc.sys function driver WDK , virtual subunit drivers
 - virtual subunit drivers WDK AV/C

@@ -1,7 +1,6 @@
 ---
 title: Indicating Changes to the Operational NDIS QoS Parameters
 description: Indicating Changes to the Operational NDIS QoS Parameters
-ms.assetid: BAE99C83-2732-4216-BC49-23F541AA3F10
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

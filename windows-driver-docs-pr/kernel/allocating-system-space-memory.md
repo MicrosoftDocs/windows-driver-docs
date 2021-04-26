@@ -1,7 +1,6 @@
 ---
 title: Allocating System-Space Memory
 description: Allocating System-Space Memory
-ms.assetid: eee425b3-6ddd-4e9d-b51d-1f2c9ea106a5
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "I/O buffer memory allocations WDK kernel", "buffer memory allocations WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -9,9 +8,8 @@ ms.localizationpriority: medium
 
 # Allocating System-Space Memory
 
-
-
-
+>[!IMPORTANT]
+> The ExAllocatePool DDIs discussed in this topic have been deprecated in Windows 10, version 2004 and have been replaced by [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3). For more information, see [Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3](updating-deprecated-exallocatepool-calls.md).
 
 Drivers can use system-allocated space within their [device extensions](device-extensions.md) as global storage areas for device-specific information. Drivers can use only the kernel stack to pass small amounts of data to their internal routines. Some drivers have to allocate additional, larger amounts of system-space memory, typically for I/O buffers.
 

@@ -1,7 +1,6 @@
 ---
 title: Te.Service
 description: Some TAEF features, such as Cross Machine Test Execution and RunAs, require that Te.Service is installed and started.
-ms.assetid: 2F137748-865C-45de-8F60-B607EEB791C0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: General Tips for Blue Screens
 description: General Tips for Blue Screens
-ms.assetid: 692bd17f-16bf-4611-9ada-e524d9246a09
 keywords: ["bug check, troubleshooting"]
 ms.date: 03/30/2020
 ms.localizationpriority: medium

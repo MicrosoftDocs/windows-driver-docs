@@ -1,7 +1,6 @@
 ---
 title: Security descriptors in file systems
 description: Describes file system support of security descriptors
-ms.assetid: 4c3200a8-63f4-4398-aed1-b90150027829
 keywords:
 - security WDK file systems , descriptors
 - security descriptors WDK file systems

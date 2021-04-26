@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter OID Requests
 description: Miniport Adapter OID Requests
-ms.assetid: c3769b1e-c84a-499d-9f93-17a31441a477
 keywords:
 - OIDs WDK networking , miniport adapter requests
 - miniport adapters WDK networking , OID requests

@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_MESSAGE_INDICATOR
 description: GUID_DEVICE_MESSAGE_INDICATOR
-ms.assetid: 6f48dbc7-dca7-4373-b5ff-83ebb5f5c266
 keywords: ["GUID_DEVICE_MESSAGE_INDICATOR Device and Driver Installation"]
 topic_type:
 - apiref

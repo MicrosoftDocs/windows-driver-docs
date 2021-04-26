@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x149 REFS_FILE_SYSTEM
 description: The REFS_FILE_SYSTEM bug check has a value of 0x00000149. This indicates that a file system error has occurred.
-ms.assetid: 899E89E7-46CD-4143-B1DC-7959F01643CF
 keywords: ["Bug Check 0x149 REFS_FILE_SYSTEM", "REFS_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME property temporarily overrides the key frame rate. This property is optional.
-ms.assetid: 068bd5e6-e283-4c8d-8837-c0e0cef4df65
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME property temporarily overri
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCOMPRESSION_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)"><strong>KSPROPERTY_VIDEOCOMPRESSION_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCOMPRESSION_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)"><strong>KSPROPERTY_VIDEOCOMPRESSION_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -86,6 +85,4 @@ Requirements
 [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_VIDEOCOMPRESSION\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)
-
- 
 

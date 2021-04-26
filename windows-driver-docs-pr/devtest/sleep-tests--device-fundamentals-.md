@@ -1,7 +1,6 @@
 ---
 title: Sleep Tests (Device Fundamentals)
 description: The Device Fundamentals Sleep tests run I/O and PnP operations on the specified devices, before and after, or during system sleep state transitions.
-ms.assetid: 38B65078-B436-4C24-B973-032702DB9CBE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test performs critical sleep state transitions on the system and performs I/O on devices before and after each sleep state cycle.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -42,7 +41,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test performs critical sleep state transitions on the system and performs I/O on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_Sleep_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Critical_Sleep_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -54,7 +53,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <p>For more information, see <a href="#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test" data-raw-source="[About the Sleep and PNP disable and enable with IO Before and After test](#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test)">About the Sleep and PNP disable and enable with IO Before and After test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_PNP_DisableEnable_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_PNP_DisableEnable_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -66,7 +65,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <p>For more information, see <a href="#about-the-sleep-with-io-before-and-after-test" data-raw-source="[About the Sleep with IO Before And After test](#about-the-sleep-with-io-before-and-after-test)">About the Sleep with IO Before And After test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_Io_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -77,7 +76,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -131,6 +130,4 @@ This test does the following:
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
 [How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
-
- 
 

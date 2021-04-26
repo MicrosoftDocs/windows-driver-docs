@@ -1,7 +1,6 @@
 ---
 title: Print Ticket Support in Unidrv and PScript5 Print Drivers
 description: Print Ticket Support in Unidrv and PScript5 Print Drivers
-ms.assetid: 8c3d22e8-5bf3-4e4d-aae4-88716b59682a
 keywords:
 - Print Tickets WDK , Unidrv
 - Print Tickets WDK , PScript5

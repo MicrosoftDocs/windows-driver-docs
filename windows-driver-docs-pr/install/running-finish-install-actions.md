@@ -1,7 +1,6 @@
 ---
 title: Running Finish-Install Actions
 description: Running Finish-Install Actions
-ms.assetid: 9a5f8e7c-ba11-4a2a-82dd-32cd91c3cc39
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ Prior to Windows 8, if the initial attempt to complete the finish-install actio
 
 -   While the device remains installed, the next time an administrator logs on.
 
--   If an administrator clicks Scan for hardware changes on the **Action** menu of Device Manager or an installation program calls [**CM_Reenumerate_DevNode**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_reenumerate_devnode) in the context of an administrator.
+-   If an administrator clicks Scan for hardware changes on the **Action** menu of Device Manager or an installation program calls [**CM_Reenumerate_DevNode**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_reenumerate_devnode) in the context of an administrator.
 
-If the device is flagged to perform a finish-install action, the finish-install process calls [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request to installers for the device.
+If the device is flagged to perform a finish-install action, the finish-install process calls [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request to installers for the device.
 
 If an installer has finish-install actions, the installer performs finish-install actions and returns an appropriate error code for the [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request. An installer returns one of the error codes in the following table.
 

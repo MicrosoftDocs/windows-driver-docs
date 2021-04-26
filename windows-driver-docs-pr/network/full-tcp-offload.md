@@ -1,7 +1,6 @@
 ---
 title: Full TCP Offload
 description: Full TCP Offload
-ms.assetid: a940617a-b848-430d-8da1-acd946feba1b
 keywords:
 - TCP offload WDK networking
 - chimney offload WDK networking , full

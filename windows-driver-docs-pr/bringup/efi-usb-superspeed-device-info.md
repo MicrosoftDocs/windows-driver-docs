@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_SUPERSPEED_DEVICE_INFO
 description: EFI_USB_SUPERSPEED_DEVICE_INFO
-ms.assetid: 7861BA16-7499-48A1-9D6A-9BB8F5AA36CE
 ms.date: 05/21/2020
 ms.localizationpriority: medium
 ---

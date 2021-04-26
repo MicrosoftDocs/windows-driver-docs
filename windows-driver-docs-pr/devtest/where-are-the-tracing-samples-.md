@@ -1,7 +1,6 @@
 ---
 title: Where are the tracing samples
 description: Where are the tracing samples
-ms.assetid: 68882242-4956-4492-b3ac-e93b67a993a2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

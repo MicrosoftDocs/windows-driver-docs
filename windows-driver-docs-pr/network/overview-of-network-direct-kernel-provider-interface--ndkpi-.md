@@ -1,7 +1,6 @@
 ---
 title: Overview of Network Direct Kernel Provider Interface (NDKPI)
 description: This section provides an overview of Network Direct Kernel Provider Interface (NDKPI)
-ms.assetid: D9667238-FD2E-44DE-920F-FA4CF3365D93
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -49,10 +48,6 @@ An NDK consumer calls the provider's *NdkOpenAdapter* ([*OPEN\_NDK\_ADAPTER\_HAN
 
 NDK consumers implement the [NDKPI Consumer Callback Functions](/windows-hardware/drivers/ddi/_netvista/), which are called by NDK providers.
 
-## Related topics
-
-
-[Network Direct Kernel Provider Interface (NDKPI)]()
 
  
 

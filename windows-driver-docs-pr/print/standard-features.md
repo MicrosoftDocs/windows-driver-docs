@@ -1,7 +1,6 @@
 ---
 title: Standard Features
 description: Standard Features
-ms.assetid: 5cd90992-5ab8-4cb3-89b0-19e58e55b652
 keywords:
 - printer features WDK Unidrv , standard
 - standard features WDK Unidrv
@@ -103,7 +102,7 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>See <a href="standard-options.md" data-raw-source="[Standard Options](standard-options.md)">Standard Options</a>.</p>
 <p>Customized options are not allowed.</p></td>
 <td><p>Optional. If not specified, the default orientation is PORTRAIT.</p>
-<p>For Windows 7, the <strong>MxdcGetPDEVAdjustment</strong> function has new parameters for landscape rotation. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment" data-raw-source="[&lt;strong&gt;MxdcXDCGetPDEVAdjustment&lt;/strong&gt;](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)"><strong>MxdcXDCGetPDEVAdjustment</strong></a>.</p></td>
+<p>For Windows 7, the <strong>MxdcGetPDEVAdjustment</strong> function has new parameters for landscape rotation. For more information, see <a href="/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment" data-raw-source="[&lt;strong&gt;MxdcXDCGetPDEVAdjustment&lt;/strong&gt;](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)"><strong>MxdcXDCGetPDEVAdjustment</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OutputBin</strong></p></td>

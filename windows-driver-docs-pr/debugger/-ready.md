@@ -1,7 +1,6 @@
 ---
 title: ready
 description: The ready extension displays summary information about each thread in the system in a READY state.
-ms.assetid: 1dc94ceb-7d06-4874-999c-059c86f51ea0
 keywords: ["thread, ready threads", "ready Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

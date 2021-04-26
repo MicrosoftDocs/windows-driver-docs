@@ -1,7 +1,6 @@
 ---
 title: NVMe features supported by StorNVMe
 description: Overview of NVMe features supported by StorNVMe
-ms.assetid: 1c6f78d7-ea00-44d4-95d2-62f5a1c7d568
 ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---

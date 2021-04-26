@@ -1,7 +1,6 @@
 ---
 title: Network Profile Overview
 description: Network Profile Overview
-ms.assetid: b7d902db-4918-4e9f-a7e0-3bb6c5ed1dfb
 keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , about network profiles
 - XML fragments WDK Native 802.11 IHV Extensions DLL

@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_SoundDetector
-description: .
-ms.assetid: FC4A354B-D42C-4199-B613-1E1B75A600C6
+description: Learn about the 'KSPROPSETID_SoundDetector' property set. This set includes 'KSPROPERTY\_SOUNDDETECTOR\_ARMED' and '\_PATTERNS', and \_MATCHRESULT properties.
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

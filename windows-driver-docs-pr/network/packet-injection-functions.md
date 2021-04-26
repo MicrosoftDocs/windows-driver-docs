@@ -1,7 +1,6 @@
 ---
 title: Packet Injection Functions
 description: Packet Injection Functions
-ms.assetid: ebbcafb6-7fbf-40e6-8806-0131aa1d4df5
 keywords:
 - packet injection functions WDK Windows Filtering Platform
 - injection functions WDK Windows Filtering Platform
@@ -29,32 +28,32 @@ A callout driver can call the following WFP functions to inject pended or modifi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0" data-raw-source="[&lt;strong&gt;FwpsInjectForwardAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0)"><strong>FwpsInjectForwardAsync0</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0" data-raw-source="[&lt;strong&gt;FwpsInjectForwardAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0)"><strong>FwpsInjectForwardAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the forwarding data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkReceiveAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0)"><strong>FwpsInjectNetworkReceiveAsync0</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkReceiveAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0)"><strong>FwpsInjectNetworkReceiveAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the receive data path</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkSendAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0)"><strong>FwpsInjectNetworkSendAsync0</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkSendAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0)"><strong>FwpsInjectNetworkSendAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the send data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportReceiveAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0)"><strong>FwpsInjectTransportReceiveAsync0</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportReceiveAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0)"><strong>FwpsInjectTransportReceiveAsync0</strong></a></p></td>
 <td align="left"><p>packet data from the transport, datagram data, ICMP error, or ALE layers</p></td>
 <td align="left"><p>the receive data path</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportSendAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0)"><strong>FwpsInjectTransportSendAsync0</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportSendAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0)"><strong>FwpsInjectTransportSendAsync0</strong></a></p></td>
 <td align="left"><p>packet data from the transport, datagram data, ICMP error, or ALE layers</p></td>
 <td align="left"><p>the send data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0" data-raw-source="[&lt;strong&gt;FwpsStreamInjectAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0)"><strong>FwpsStreamInjectAsync0</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0" data-raw-source="[&lt;strong&gt;FwpsStreamInjectAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0)"><strong>FwpsStreamInjectAsync0</strong></a></p></td>
 <td align="left"><p>TCP data segments</p></td>
 <td align="left"><p>a data stream</p></td>
 </tr>
@@ -87,8 +86,6 @@ If ChecksumInfo.Transmit.NdisPacketTcpChecksum is **TRUE**, the TCP send operati
 In Windows Vista with Service Pack 1 (SP1) and Windows Server 2008, if inMetaValues-&gt;headerIncludeHeaderLength is greater than 0, the outgoing packet is a RAW send reinjection that includes an IP header. To perform RAW send reinjections that include an IP header for Windows Vista with SP1 and Windows Server 2008, you must retreat the cloned packet by the amount in inMetaValues-&gt;headerIncludeHeaderLength and copy the inMetaValues-&gt;headerIncludeHeader over the newly extended space. Then, use FwpsInjectTransportSendAsync0 with the net buffer list for the packet and leave the FWPS\_TRANSPORT\_SEND\_PARAMS0 parameter set to **NULL**. For more information about retreat operations for net buffer lists, see [Retreat and Advance Operations](retreat-and-advance-operations.md).
 
 **Note**  For raw send operations, the net buffer list must contain only a single net buffer. If your net buffer list contains more than one net buffer, you have to convert your net buffer list to a series of net buffer lists, and each in the series must contain a single net buffer. For more information about net buffer list management, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
-
- 
 
  
 

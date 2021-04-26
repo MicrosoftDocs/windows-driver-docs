@@ -1,7 +1,6 @@
 ---
 title: MB identity morphing solution details
 description: Describes configuration requirements and compatible IDs for MB identity morphing devices
-ms.assetid: E4E17B4F-665B-425C-B90B-F60561B71CAB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

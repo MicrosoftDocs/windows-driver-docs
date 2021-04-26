@@ -1,7 +1,6 @@
 ---
 title: CLFS Support for Archiving
 description: CLFS Support for Archiving
-ms.assetid: 5a07d7d2-4939-48f8-bd4c-855af61034fb
 keywords: ["Common Log File System WDK kernel , archiving", "CLFS WDK kernel , archiving", "archiving WDK CLFS", "non-ephemeral logs WDK CLFS", "archive tail WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,6 +1,5 @@
 ---
 title: NFCEE discovery sequence
-ms.assetid: F6894EFD-4140-490B-B0BB-1A9BDA4DCECE
 keywords:
 - NFC
 - near field communications

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_EQ\_LEVEL
 description: The KSPROPERTY\_AUDIO\_EQ\_LEVEL property specifies the equalization levels for an equalization table that contains entries for n frequency bands. This is a property of a channel in an EQ node (KSNODETYPE\_EQUALIZER).
-ms.assetid: 17c34af2-dbeb-472c-9825-9dc64f7f96bd
 keywords: ["KSPROPERTY_AUDIO_EQ_LEVEL Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_EQ\_LEVEL property specifies the equalization levels for 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>LONG array</p></td>
 </tr>
 </tbody>
@@ -132,6 +131,4 @@ Requirements
 [**KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS**](ksproperty-audio-num-eq-bands.md)
 
 [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md)
-
- 
 

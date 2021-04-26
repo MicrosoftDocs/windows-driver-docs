@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS Device Control
 description: Remote NDIS Device Control
-ms.assetid: 52096845-57ee-4da5-95c7-ceae00e8159d
 keywords:
 - Remote NDIS WDK networking , device control
 ms.date: 04/20/2017

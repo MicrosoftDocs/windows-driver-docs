@@ -1,7 +1,6 @@
 ---
 title: Develop an app to handle the MobileOperatorNotification event
 description: Develop an app to handle the MobileOperatorNotification event
-ms.assetid: 3c483888-8ec4-4270-af3e-ef1efc995171
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,8 +36,6 @@ For background event handling, you should use the following best practices:
 -   Consider deferring processing to the next time the app is launched.
 
 -   Consider showing a toast notification and updating tile in response to a background event. Your mobile broadband app can process the background event payload.
-
-For more info on background tasks, see [Introduction to Background Tasks](https://go.microsoft.com/fwlink/p/?linkid=313924).
 
 ## <span id="stepone"></span><span id="STEPONE"></span>Step 1: Background task contract declaration
 

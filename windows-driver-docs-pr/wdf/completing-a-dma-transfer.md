@@ -1,7 +1,6 @@
 ---
 title: Completing a DMA Transfer
 description: Completing a DMA Transfer
-ms.assetid: 86383b9f-9b82-4afa-81ac-2ab09bd8778b
 keywords:
 - DMA operations WDK KMDF , transfers
 - bus-master DMA WDK KMDF , transfers
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 Typically, your driver's [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function completes the processing of each DMA transfer.
 
-First, because multiple DMA transactions can be in progress concurrently, the [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function must determine which DMA transaction the completed transfer is associated with. The callback function can do this by retrieving the transaction handle that the driver stored when it [started the DMA transaction](starting-a-dma-transaction.md). To retrieve the device extension, the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample defines a function called **PLxGetDeviceContext** in its Private.h header file:
+First, because multiple DMA transactions can be in progress concurrently, the [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function must determine which DMA transaction the completed transfer is associated with. The callback function can do this by retrieving the transaction handle that the driver stored when it [started the DMA transaction](starting-a-dma-transaction.md). To retrieve the device extension, the [PLX9x5x](/samples/browse/) sample defines a function called **PLxGetDeviceContext** in its Private.h header file:
 
 ```cpp
 WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(DEVICE_EXTENSION, PLxGetDeviceContext)
@@ -63,6 +62,4 @@ Each of the preceding transfer completion methods informs the framework that a s
 If the [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function detects an error, typically due to a timer expiring or a hardware interrupt signaling a transfer error, the driver can restart the transaction's current transfer.
 
 To restart the transaction's current transfer, the driver's [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function can call [**WdfDmaTransactionDmaCompletedWithLength**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength) with the *TransferredLength* parameter set to zero.
-
- 
 

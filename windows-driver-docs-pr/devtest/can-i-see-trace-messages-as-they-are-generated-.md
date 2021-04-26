@@ -1,7 +1,6 @@
 ---
 title: Can I see trace messages as they are generated
 description: Can I see trace messages as they are generated
-ms.assetid: 21d8606b-5693-4f50-81f9-c5c3a65c0550
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,17 +1,12 @@
 ---
 title: MASM Expressions vs. C++ Expressions
 description: MASM Expressions vs.
-ms.assetid: 3ec06b61-9f17-49b1-b7c5-66a349b5d275
 keywords: ["expressions, MASM and C++", "MASM expressions, MASM vs. C++", "C++ expressions, C++ vs. MASM"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
 
 # MASM Expressions vs. C++ Expressions
-
-
-## <span id="ddk_masm_expressions_vs__c_expressions_dbg"></span><span id="DDK_MASM_EXPRESSIONS_VS__C_EXPRESSIONS_DBG"></span>
-
 
 The most significant differences between MASM expression evaluation and C++ expression evaluation are as follows:
 
@@ -30,10 +25,15 @@ The most significant differences between MASM expression evaluation and C++ expr
 -   MASM expressions might contain references to source lines. These references are indicated by grave accents ( **\`** ). You cannot reference source line numbers in a C++ expression.
 
  
+## See also
 
- 
+[MASM Numbers and Operators](masm-numbers-and-operators.md)
 
+[C++ Numbers and Operators](c---numbers-and-operators.md)
 
+[Mixed Expression Examples](expression-examples.md)
+
+[Sign Extension](sign-extension.md) 
 
 
 

@@ -1,5 +1,4 @@
 ---
-ms.assetid: 602bf657-7ae4-4610-b4c0-9d7260c42063
 title: Distributing a driver package
 description: Distributing a driver package
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ This topic describes how to securely distribute your driver package. This inform
 ## <span id="ddk_windows_update_pg"></span><span id="DDK_WINDOWS_UPDATE_PG"></span>Windows Update
 
 
-* [Driver packages](../install/driver-packages.md) that pass [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
+* [Driver packages](../install/driver-packages.md) that pass [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
 
-Obtaining a WHQL release signature is part of the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). A WHQL release signature consists of a digitally-signed [catalog file](../install/catalog-files.md). The digital signature does not change the driver binary files or the INF file that you submit for testing.
+Obtaining a WHQL release signature is part of the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/). A WHQL release signature consists of a digitally-signed [catalog file](../install/catalog-files.md). The digital signature does not change the driver binary files or the INF file that you submit for testing.
 
 You can distribute a driver package through the Windows Update program if the driver package:
 
@@ -28,7 +27,7 @@ You can distribute a driver package through the Windows Update program if the dr
 
 -   Meets additional requirements that ensure that Windows Update can determine the correct driver package for the user's device, can legally distribute it, and can automatically download it.
 
-Because the requirements of the Windows Update program are frequently updated, you should regularly check the [Windows Update driver publishing](https://go.microsoft.com/fwlink/p/?linkid=8712) Web site.
+Because the requirements of the Windows Update program are frequently updated, you should regularly check the [Windows Update driver publishing](/windows-hardware/test/hlk/) Web site.
 
 ## <span id="ddk_protection_for_system_files_pg"></span><span id="DDK_PROTECTION_FOR_SYSTEM_FILES_PG"></span>Protection for System Files
 
@@ -42,6 +41,4 @@ The types of system files that WFP protects include .sys, .exe, .ocx, and .dll f
 During WHQL testing, the [**Signability**](../devtest/inf2cat.md) program checks a driver's INF file to ensure that it does not attempt to replace system files. A driver package that attempts to replace system files cannot receive a digital signature. A driver package can, however, contain updated versions of files that the vendor supplied to Microsoft to ship with Windows 2000 or later versions of the operating system.
 
 For additional information about Windows File Protection, see the Windows SDK documentation.
-
- 
 

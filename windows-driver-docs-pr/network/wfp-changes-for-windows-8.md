@@ -1,7 +1,6 @@
 ---
 title: WFP Changes for Windows 8
 description: WFP Changes for Windows 8
-ms.assetid: B83EC5A5-6169-49AB-A7EC-F2078AA0735E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,7 +38,7 @@ Several changes have been made in the available functions and behavior of the Wi
     - [*FWPS\_VSWITCH\_RUNTIME\_STATE\_RESTORE\_CALLBACK0*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0)
     - [*FWPS\_VSWITCH\_RUNTIME\_STATE\_SAVE\_CALLBACK0*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_vswitch_runtime_state_save_callback0)
 -   New structures:
-    - [**FWPS\_FILTER2**](/windows/desktop/api/fwpstypes/ns-fwpstypes-fwps_filter2_)
+    - [**FWPS\_FILTER2**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter2)
     - [**FWPS\_VSWITCH\_EVENT\_DISPATCH\_TABLE0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_vswitch_event_dispatch_table0_)
 -   New enumerations:
     - [**FWPS\_CONNECTION\_REDIRECT\_STATE**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_connection_redirect_state_)

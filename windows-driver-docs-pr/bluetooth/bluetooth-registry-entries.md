@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Registry Entries
 description: Bluetooth Registry Entries
-ms.assetid: a4d2848d-cb3c-4413-b06f-fe4695448f6a
 keywords:
 - Bluetooth WDK , registry entries
 - registry WDK Bluetooth
@@ -32,7 +31,7 @@ If the **COD Major** and **COD Type** values are not set or are set to invalid v
 
 Profile drivers can specify scanning parameters settings for their device(s) in their profile driver's INF file to tailor to the specific needs of a given device scenario.
 
-You can override the default system scanning parameters by providing one or more of the following scanning parameters listed below into the AddReg directive. More information on how to use this directive can be found in [INF AddReg Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+You can override the default system scanning parameters by providing one or more of the following scanning parameters listed below into the AddReg directive. More information on how to use this directive can be found in [INF AddReg Directive](../install/inf-addreg-directive.md).
 
 | Value Name                | Type          | Min Value | Max Value                                                                      |
 |----|----|----|----|

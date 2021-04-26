@@ -1,7 +1,6 @@
 ---
 title: Roadmap to Develop MB Miniport Drivers
 description: Roadmap to Develop MB Miniport Drivers
-ms.assetid: 3ef6e899-22dc-4293-80cc-d786b03c6b29
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ To create an MB miniport driver, follow these steps:
 
 -   **Step 3**: Determine additional Windows driver design decisions.
 
-    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](../install/creating-international-inf-files.md).
+    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 -   **Step 4**: Learn about the Windows driver build, test, and debug processes and tools.
 
@@ -44,6 +43,4 @@ To create an MB miniport driver, follow these steps:
     The final step is to sign (optional) and distribute the miniport driver. If your miniport driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual miniport driver.
-
- 
 

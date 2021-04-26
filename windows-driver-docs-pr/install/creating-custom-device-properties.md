@@ -1,7 +1,6 @@
 ---
 title: Creating Custom Device Properties
 description: Creating Custom Device Properties
-ms.assetid: e18fcbe8-6083-451e-b1be-5a543b61c627
 keywords:
 - device properties WDK device installations , creating custom
 ms.date: 04/20/2017

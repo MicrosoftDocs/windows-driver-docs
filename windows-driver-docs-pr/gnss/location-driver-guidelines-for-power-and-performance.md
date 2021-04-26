@@ -1,7 +1,6 @@
 ---
 title: Location driver guidelines for power and performance
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
-ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
 ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
@@ -69,12 +68,12 @@ If the Global Navigation Satellite System (GNSS) driver does not get a position 
 > A persistent connection to the Windows Location Provider (or any other sensor through the Sensor API) should not be kept open.
 
 > [!IMPORTANT]
-> Do not instantiate [**ILocation**](/windows/desktop/api/locationapi/nn-locationapi-ilocation) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager)).
+> Do not instantiate [**ILocation**](/windows/win32/api/locationapi/nn-locationapi-ilocation) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](/windows/win32/api/sensorsapi/nn-sensorsapi-isensormanager)).
 
 > [!NOTE]
 > Sensors should not get data from location sensors of the same type. For instance, a triangulation sensor should not use data from other triangulation sensors.
 
-To access triangulation sensors, call [**ISensorManager::GetSensorByType**](/windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
+To access triangulation sensors, call [**ISensorManager::GetSensorByType**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
 
 > [!NOTE]
 > The Windows Location Provider does not provide any guarantee of accuracy or availability.

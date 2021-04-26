@@ -1,7 +1,6 @@
 ---
 title: Finding and Opening a HID Collection
 description: Finding and Opening a HID Collection
-ms.assetid: b46fdb06-e6ae-4376-994f-69bf6539f2ce
 keywords:
 - collections WDK HID , finding
 - HID collections WDK , finding
@@ -29,13 +28,13 @@ After a user-mode application is loaded, it does the following sequence of opera
 
 -   Calls [**HidD\_GetHidGuid**](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_gethidguid) to obtain the system-defined GUID for HIDClass devices.
 
--   Calls [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to obtain a handle to an opaque device information set that describes the device interfaces supported by all the [HID collections](hid-collections.md) currently installed in the system. The application should specify DIGCF\_PRESENT and DIGCF\_DEVICEINTERFACE in the *Flags* parameter that is passed to **SetupDiGetClassDevs**.
+-   Calls [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) to obtain a handle to an opaque device information set that describes the device interfaces supported by all the [HID collections](hid-collections.md) currently installed in the system. The application should specify DIGCF\_PRESENT and DIGCF\_DEVICEINTERFACE in the *Flags* parameter that is passed to **SetupDiGetClassDevs**.
 
--   Calls [**SetupDiEnumDeviceInterfaces**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) repeatedly to retrieve all the available interface information.
+-   Calls [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) repeatedly to retrieve all the available interface information.
 
--   Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to format interface information for each collection as a SP\_INTERFACE\_DEVICE\_DETAIL\_DATA structure. The **DevicePath** member of this structure contains the user-mode name that the application uses with the Win32 function [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) to obtain a file handle to a HID collection.
+-   Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to format interface information for each collection as a SP\_INTERFACE\_DEVICE\_DETAIL\_DATA structure. The **DevicePath** member of this structure contains the user-mode name that the application uses with the Win32 function [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) to obtain a file handle to a HID collection.
 
--   Calls [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) to obtain a file handle to a HID collection.
+-   Calls [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) to obtain a file handle to a HID collection.
 
 ### Kernel-Mode Driver
 

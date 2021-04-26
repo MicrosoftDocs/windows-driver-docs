@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_VOLUME
 description: The KSPROPERTY\_TELEPHONY\_VOLUME property is used to control the volume for all cellular calls.
-ms.assetid: 3754A7A0-FA50-4831-B449-DED0D3D69418
 keywords: ["KSPROPERTY_TELEPHONY_VOLUME Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The **KSPROPERTY\_TELEPHONY\_VOLUME** property is used to control the volume for
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -90,6 +89,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

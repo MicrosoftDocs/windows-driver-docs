@@ -1,7 +1,6 @@
 ---
 title: Controlling Device Access (WDM)
-description: Controlling Device Access
-ms.assetid: b5e562ad-573b-4b0f-9d85-2410fda16e4e
+description: Learn about controlling device access for WDM drivers, WDM bus drivers, and non-WDM drivers. Access to a device is controlled by a security descriptor.
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device access controls WDK kernel", "non-WDM driver device access WDK kernel", "security descriptors WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

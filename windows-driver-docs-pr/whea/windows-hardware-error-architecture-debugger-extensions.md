@@ -1,7 +1,6 @@
 ---
 title: Windows Hardware Error Architecture Debugger Extensions
 description: Windows Hardware Error Architecture Debugger Extensions
-ms.assetid: 47eaaf7e-31d6-437a-8318-a650d07e0c11
 keywords:
 - WHEA WDK , debugger extensions
 - Windows Hardware Error Architecture WDK , debugger extensions

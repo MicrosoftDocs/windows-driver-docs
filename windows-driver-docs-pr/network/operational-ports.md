@@ -1,7 +1,6 @@
 ---
 title: Operational Ports
 description: Operational Ports
-ms.assetid: 647EBDFD-A100-46A7-B387-BF11004415EC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

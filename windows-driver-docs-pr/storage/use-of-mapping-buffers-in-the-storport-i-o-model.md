@@ -1,7 +1,6 @@
 ---
 title: Use of Mapping Buffers in the Storport I/O Model
 description: Use of Mapping Buffers in the Storport I/O Model
-ms.assetid: cd22ec31-ff4d-42d4-a47d-7b8bd85804be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

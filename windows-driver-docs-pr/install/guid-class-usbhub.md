@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_USBHUB
 description: GUID_CLASS_USBHUB
-ms.assetid: 77232e67-9c8d-4054-b020-2739457d678d
 keywords: ["GUID_CLASS_USBHUB Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ GUID_CLASS_USBHUB is an obsolete identifier for the [device interface class](./o
 Remarks
 -------
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](https://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID_CLASS_USBHUB to be notified if the instances of the GUID_CLASS_USBHUB device interface class are present.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](/samples/browse/). The USBVIEW sample uses GUID_CLASS_USBHUB to be notified if the instances of the GUID_CLASS_USBHUB device interface class are present.
 
 Requirements
 ------------
@@ -49,6 +48,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
-
- 
 

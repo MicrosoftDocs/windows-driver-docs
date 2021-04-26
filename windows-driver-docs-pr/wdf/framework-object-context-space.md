@@ -1,7 +1,6 @@
 ---
 title: Framework Object Context Space
 description: Framework Object Context Space
-ms.assetid: 21a46e04-2330-4a3d-ba72-c04295bfbb3c
 keywords:
 - framework objects WDK KMDF , context space
 - context space WDK KMDF

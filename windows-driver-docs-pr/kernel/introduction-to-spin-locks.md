@@ -1,7 +1,6 @@
 ---
 title: Introduction to Spin Locks
 description: Introduction to Spin Locks
-ms.assetid: a37c0db4-ff9c-4958-a9f4-62b671458d03
 keywords: ["KSPIN_LOCK", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel", "spin locks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

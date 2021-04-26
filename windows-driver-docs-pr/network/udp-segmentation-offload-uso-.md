@@ -1,7 +1,6 @@
 ---
 title: UDP Segmentation Offload (USO)
 description: UDP Segmentation Offload (USO)
-ms.assetid: 7B9E42DD-0DAD-478A-BF6B-B83A0A236E36
 keywords:
 - network drivers WDK , UDP Segmentation Offload (USO)
 - UDP Segmentation Offload (USO) WDK networking
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 # UDP Segmentation Offload (USO)
 
-UDP Segmentation Offload (USO), supported in Windows 10, version 1912 and later, is a feature that enables network interface cards (NICs) to offload the segmentation of UDP datagrams that are larger than the maximum transmission unit (MTU) of the network medium. By doing so, Windows reduces CPU utilization associated with per-packet TCP/IP processing. Requirements for USO are similar to [LSOv2](offloading-the-segmentation-of-large-tcp-packets.md), which is for the TCP transport protocol.
+UDP Segmentation Offload (USO), supported in Windows 10, version 2004 and later, is a feature that enables network interface cards (NICs) to offload the segmentation of UDP datagrams that are larger than the maximum transmission unit (MTU) of the network medium. By doing so, Windows reduces CPU utilization associated with per-packet TCP/IP processing. Requirements for USO are similar to [LSOv2](offloading-the-segmentation-of-large-tcp-packets.md), which is for the TCP transport protocol.
 
 ## Requirements for USO
 

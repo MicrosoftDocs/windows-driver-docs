@@ -1,7 +1,6 @@
 ---
 title: Requesting and Using Surface Memory
 description: Requesting and Using Surface Memory
-ms.assetid: 7913acc6-ff30-4f2a-8389-37a79940ae8b
 keywords:
 - surface memory WDK display
 - listing surfaces WDK display

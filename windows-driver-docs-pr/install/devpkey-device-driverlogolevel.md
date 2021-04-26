@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverLogoLevel
 description: DEVPKEY_Device_DriverLogoLevel
-ms.assetid: 19843a2d-cc60-4e1e-b6b0-29c63b7f7d3f
 keywords: ["DEVPKEY_Device_DriverLogoLevel Device and Driver Installation"]
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverLogoLevel.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverLogoLevel.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverLogoLevel.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -72,7 +71,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

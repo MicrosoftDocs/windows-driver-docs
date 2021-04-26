@@ -1,7 +1,6 @@
 ---
 title: Rectangular Memory Allocation
 description: Rectangular Memory Allocation
-ms.assetid: 27e60130-3a6e-410a-86a7-19acad5ecb53
 keywords:
 - rectangular memory allocation WDK DirectDraw
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ The following diagram illustrates rectangular memory allocation.
 
 ![diagram illustrating rectangular memory allocation](images/ddfig5.png)
 
-In the preceding figure, the starting point (indicated by the **fpStart** member of the [**VIDEOMEMORY**](/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure) of the rectangular heap is calculated by adding the width of the primary surface to the starting address of the primary surface. The width and height are also calculated to give the dimensions of the rectangular heap. If any memory remains below the Windows caches, a heap could be created there.
+In the preceding figure, the starting point (indicated by the **fpStart** member of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure) of the rectangular heap is calculated by adding the width of the primary surface to the starting address of the primary surface. The width and height are also calculated to give the dimensions of the rectangular heap. If any memory remains below the Windows caches, a heap could be created there.
 
-The following pseudocode shows how a [**VIDEOMEMORY**](/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) structure is set up for rectangular memory:
+The following pseudocode shows how a [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure is set up for rectangular memory:
 
 ```cpp
 /*

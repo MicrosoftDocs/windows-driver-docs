@@ -1,7 +1,6 @@
 ---
 title: Specifying an Unload Function
 description: Specifying an Unload Function
-ms.assetid: 3bfac8a5-1367-40bd-81b5-4a7fb9aaaece
 keywords:
 - Windows Filtering Platform callout drivers WDK , initializing
 - callout drivers WDK Windows Filtering Platform , initializing

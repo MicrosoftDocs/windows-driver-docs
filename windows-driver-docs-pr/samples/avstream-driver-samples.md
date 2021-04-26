@@ -1,7 +1,6 @@
 ---
 title: AVStream driver samples
 description: The AVStream driver samples in this directory provide a starting point for writing a custom streaming media driver for your device.
-ms.assetid: 7ABE9DCB-6EF1-4A96-A2EC-B446D4DED7C7
 ms.date: 11/15/2019
 ms.localizationpriority: medium
 ---

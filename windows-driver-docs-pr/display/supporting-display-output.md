@@ -1,7 +1,6 @@
 ---
 title: Supporting Display Output and ACPI Events
 description: A comprehensive approach to system configuration and device power control is built into Windows, based on the ACPI specification.
-ms.assetid: CD5BC59A-4C15-4111-BF4F-13DC04F6874F
 keywords:
 - ACPI display WDK display
 - ACPI-based display hot-keys WDK display

@@ -1,7 +1,6 @@
 ---
 title: Sensor HID class driver
 description: Windows operating system includes an in-box sensor HID Class driver (SensorsHIDClassDriver.dll).
-ms.assetid: F43958F0-5AFD-40E9-A583-FAA25F8C1B7D
 keywords:
 - HID class driver, sensors
 - sensors HID class driver

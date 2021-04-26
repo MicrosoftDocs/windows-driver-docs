@@ -1,7 +1,6 @@
 ---
 title: Bob Deinterlacing Mechanics
 description: Bob Deinterlacing Mechanics
-ms.assetid: 1735f9c6-ac83-4a6a-bc6f-4d4a193876dd
 keywords:
 - bob deinterlacing WDK DirectX VA , mechanics
 - interleaved fields WDK DirectX VA

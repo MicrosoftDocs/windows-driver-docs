@@ -1,7 +1,6 @@
 ---
 title: Exporting a MiniportDevicePnPEventNotify Function
 description: Exporting a MiniportDevicePnPEventNotify Function
-ms.assetid: 1c6dce4e-c452-48ce-b3c9-a3fb7842f060
 keywords:
 - Plug and Play WDK NDIS miniport , event notifications
 - MiniportDevicePnPEventNotify

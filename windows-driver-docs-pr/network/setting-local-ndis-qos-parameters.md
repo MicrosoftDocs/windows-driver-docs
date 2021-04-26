@@ -1,7 +1,6 @@
 ---
 title: Setting Local NDIS QoS Parameters
 description: Setting Local NDIS QoS Parameters
-ms.assetid: 7AB30829-16A0-46BF-8066-506E01E718A4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

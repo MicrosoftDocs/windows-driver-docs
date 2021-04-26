@@ -1,7 +1,6 @@
 ---
 title: Installing Test-Signed Driver Packages
 description: Installing Test-Signed Driver Packages
-ms.assetid: 6abbe51c-0fdf-465f-b1f2-d48e593a4f0e
 keywords:
 - test signing drivers WDK , installing test-signed driver packages
 - driver signing WDK , driver packages

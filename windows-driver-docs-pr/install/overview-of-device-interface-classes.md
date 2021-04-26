@@ -1,7 +1,6 @@
 ---
 title: Overview of Device Interface Classes
 description: Overview of Device Interface Classes
-ms.assetid: e463e3f0-cbc8-490e-a7c4-4837d43c20e3
 keywords:
 - interface classes WDK device installations
 - device interfaces WDK device installations

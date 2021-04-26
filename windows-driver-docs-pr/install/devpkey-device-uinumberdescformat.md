@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_UINumberDescFormat
 description: DEVPKEY_Device_UINumberDescFormat
-ms.assetid: 6720b35e-a65b-4935-8010-aef53e3951e9
 keywords: ["DEVPKEY_Device_UINumberDescFormat Device and Driver Installation"]
 topic_type:
 - apiref
@@ -60,7 +59,7 @@ The DEVPKEY_Device_UINumberDescFormat device property represents a **printf**-co
 Remarks
 -------
 
-You can retrieve the value of DDEVPKEY_Device_UINumberDescFormat by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set this value by calling [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can retrieve the value of DDEVPKEY_Device_UINumberDescFormat by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set this value by calling [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_UINumberDescFormat property key. Instead, you can use the corresponding SPDRP_UI_NUMBER_DESC_FORMAT identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -78,9 +77,9 @@ Requirements
 
 [**INF DDInstall.HW Section**](./inf-ddinstall-hw-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

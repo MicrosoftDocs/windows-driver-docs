@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Interface)
 description: DEVPKEY_NAME (Device Interface)
-ms.assetid: 276862d0-8ab9-4914-9e57-834cc17d0e59
 keywords: ["DEVPKEY_NAME (Device Interface) Device and Driver Installation"]
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ The value of the DEVPKEY_NAME should be used to identify an interface to an end-
 
 The value of DEVPKEY_NAME is the same as the value of the [**DEVPKEY_DeviceInterface_FriendlyName**](devpkey-deviceinterface-friendlyname.md) device property, if DEVPKEY_DeviceInterface_FriendlyName is set. Otherwise, DEVPKEY_NAME does not exist.
 
-You can retrieve the value of DEVPKEY_NAME by calling [**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw).
+You can retrieve the value of DEVPKEY_NAME by calling [**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw).
 
 For information about device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
 
@@ -87,7 +86,7 @@ Requirements
 
 [**INF AddInterface Directive**](./inf-addinterface-directive.md)
 
-[**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
+[**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
  
 

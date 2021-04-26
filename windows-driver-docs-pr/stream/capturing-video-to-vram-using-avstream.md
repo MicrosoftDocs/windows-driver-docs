@@ -1,7 +1,6 @@
 ---
 title: Capturing Video to VRAM using AVStream
 description: Capturing Video to VRAM using AVStream
-ms.assetid: c4ca4a67-83cb-4a89-bc84-e06b1dc67b66
 keywords:
 - AVStream WDK , VRAM capture
 - VRAM capture WDK AVStream

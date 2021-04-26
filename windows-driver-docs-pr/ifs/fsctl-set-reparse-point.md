@@ -1,7 +1,6 @@
 ---
 title: FSCTL_SET_REPARSE_POINT control code
 description: The FSCTL\_SET\_REPARSE\_POINT control code sets a reparse point on a file or directory.
-ms.assetid: db38cc62-845e-4690-a430-a9c834382b56
 keywords: ["FSCTL_SET_REPARSE_POINT control code Installable File System Drivers"]
 topic_type:
 - apiref

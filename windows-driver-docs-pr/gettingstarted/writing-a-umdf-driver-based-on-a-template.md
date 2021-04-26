@@ -1,7 +1,6 @@
 ---
 title: Write a Universal Windows driver (UMDF 2) based on a template
 description: This topic describes how to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-ms.assetid: 03A3E389-8350-4E4B-9345-E50DD425374D
 keywords:
 - Write a UMDF driver
 ms.date: 04/20/2018
@@ -14,7 +13,7 @@ This topic describes how to write a [Universal Windows driver](/windows-hardware
 
 To get started, be sure you have the most recent version of Microsoft Visual Studio and the Windows Driver Kit (WDK). For download links, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 
 ## Create and build a driver
 
@@ -65,7 +64,7 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
 
     ![screen shot of the umdfdriver property pages, showing deployment driver install selected](images/vs2015-deploy.png)
 
-    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](https://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
+    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
     You can see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **UmdfDriver &gt; Driver Files**, and double-click UmdfDriver.inf. The hardware ID is under \[Standard.NT$ARCH$\].
 
     ```ManagedCPlusPlus

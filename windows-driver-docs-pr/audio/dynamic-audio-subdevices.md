@@ -1,7 +1,6 @@
 ---
 title: Dynamic Audio Subdevices
 description: Dynamic Audio Subdevices
-ms.assetid: d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a
 keywords:
 - WDM audio drivers WDK , dynamic subdevices
 - audio drivers WDK , dynamic subdevices

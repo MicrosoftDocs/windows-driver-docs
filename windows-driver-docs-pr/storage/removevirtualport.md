@@ -1,7 +1,6 @@
 ---
 title: RemoveVirtualPort method
 description: The RemoveVirtualPort method removes a virtual port for a specific world wide port name (WWPN) .
-ms.assetid: 47A85B72-821C-4552-BA6E-1742D58B54A4
 keywords: ["RemoveVirtualPort method Storage Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: HID Extensions
 description: This section describes the Human Interface Device (HID) debugger extension commands.
-ms.assetid: 796DB87B-1E04-40FA-90F9-699EE7032B3C
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Cellular COM API Reference
 description: Cellular COM API Reference
-ms.assetid: B0EA1353-A57C-4F93-9A1B-7F018E0AA7B7
 keywords:
 - Cellular COM API Reference WDK, Cellular COM API Windows Phone 8.1
 ms.date: 12/07/2017
@@ -16,4 +15,4 @@ The Cellular COM API was used in Windows Phone 8.1 and is deprecated in Windows 
 
 ## Related topics
 
-[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+[Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_RGB\_GAIN
 description: The WIA\_DPC\_RGB\_GAIN property contains a null-terminated Unicode string that represents the red, green, and blue gain, respectively, that is applied to image data.
-ms.assetid: 26448818-0885-4084-a0f3-c9e25d15dbf2
 keywords: ["WIA_DPC_RGB_GAIN Imaging Devices"]
 topic_type:
 - apiref

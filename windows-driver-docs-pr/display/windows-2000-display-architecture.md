@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Display Architecture
 description: Windows 2000 Display Architecture
-ms.assetid: c18e1464-13b7-4e55-b3e1-77aaf9270f60
 keywords:
 - VGA WDK Windows 2000 display
 - display driver model WDK Windows 2000 , architecture

@@ -1,7 +1,6 @@
 ---
 title: Synthesizer Miniport Driver Overview
 description: Synthesizer Miniport Driver Overview
-ms.assetid: dbd6b95e-f8c8-49f1-ad90-b34821772391
 keywords:
 - miniport drivers WDK audio , synthesizers
 - synthesizers WDK audio , miniport drivers
@@ -48,7 +47,7 @@ The following diagram shows the relationship between the IHV adapter driver and 
 
 ![diagram illustrating the relationship of the adapter driver to the directmusic system](images/dmkmbig.png)
 
-At the topmost level, the driver is exposed via a DirectMusic port driver (an **IDirectMusicPort** interface instance). This is how an application talks to DirectMusic. This port driver communicates downward to a pin instance via standard kernel streaming calls through the [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function (described in the Microsoft Windows SDK documentation).
+At the topmost level, the driver is exposed via a DirectMusic port driver (an **IDirectMusicPort** interface instance). This is how an application talks to DirectMusic. This port driver communicates downward to a pin instance via standard kernel streaming calls through the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function (described in the Microsoft Windows SDK documentation).
 
 Note that the term "port" has two conflicting meanings in the figure above. Avoid confusing the usage of the term port by the DirectMusic API, in user mode above, with the kernel-mode DMus port driver. The terms have similar but slightly different meanings in the two contexts. In particular, note that the **IDirectMusicPort** interface at the top of the figure presents an abstraction of a single pin instance that the DMus port driver implements in the lower half of the figure.
 

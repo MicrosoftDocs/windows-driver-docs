@@ -1,7 +1,6 @@
 ---
 title: SRB\_PROPOSE\_DATA\_FORMAT
 description: SRB\_PROPOSE\_DATA\_FORMAT
-ms.assetid: a15ec7cc-7351-4a63-ad35-e59610205913
 keywords: ["SRB_PROPOSE_DATA_FORMAT Streaming Media Devices"]
 topic_type:
 - apiref

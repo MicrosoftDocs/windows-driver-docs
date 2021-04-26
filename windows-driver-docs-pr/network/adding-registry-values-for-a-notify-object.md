@@ -1,7 +1,6 @@
 ---
 title: Adding Registry Values for a Notify Object
 description: Adding Registry Values for a Notify Object
-ms.assetid: 8872a9b9-b7c5-4c10-b5d4-4fe880fc436f
 keywords:
 - add-registry-sections WDK networking , notify object registry values
 - notify objects WDK networking , registry values

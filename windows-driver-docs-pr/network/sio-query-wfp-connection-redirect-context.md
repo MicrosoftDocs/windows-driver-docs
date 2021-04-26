@@ -1,7 +1,6 @@
 ---
 title: SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code
 description: The SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT socket I/O control operation allows a Winsock client to retrieve the redirect context for a redirect record for a redirected connection.
-ms.assetid: D23971FC-D75F-4C39-BE6A-F0E17F7C1804
 ms.date: 08/08/2017
 keywords: 
  -SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code Network Drivers Starting with Windows Vista
@@ -81,7 +80,7 @@ The caller can perform this query in either of the following ways:
 -   It can set the *OutputBuffer* to a large buffer approximately 1 KB in size. If the output buffer size is not large enough, [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) will return **STATUS\_BUFFER\_TOO\_SMALL** and *OutputSizeReturned* will contain the required size of the buffer. A larger buffer can then be allocated and **WskControlSocket** called again with the **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT** request and *OutputBuffer* set to the larger buffer.
 -   Or it can set the *OutputSize* parameter to 0 and the *OutputBuffer* to NULL and then call [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket). Upon completion, the **WskControlSocket** function retrieves the output buffer size, in bytes, in the *OutputSizeReturned* parameter. An appropriately sized buffer can then be allocated and **WskControlSocket** called again with the **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT** request and *OutputBuffer* set to the buffer.
 
-**Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT (SDK)**](/previous-versions/windows/desktop/legacy/hh859712(v=vs.85)).
+**Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT (SDK)**](/windows/win32/winsock/sio-query-wfp-connection-redirect-context).
 
  
 
@@ -128,7 +127,7 @@ Requirements
 
 [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](sio-query-wfp-connection-redirect-records.md)
 
-[**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT (SDK)**](/previous-versions/windows/desktop/legacy/hh859712(v=vs.85))
+[**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT (SDK)**](/windows/win32/winsock/sio-query-wfp-connection-redirect-context)
 
  
 

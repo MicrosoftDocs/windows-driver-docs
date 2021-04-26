@@ -1,7 +1,6 @@
 ---
 title: Initializing the WIA Minidriver
 description: Initializing the WIA Minidriver
-ms.assetid: 9ccb136b-41f7-438a-9e07-1fd7c8971417
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

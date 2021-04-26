@@ -1,7 +1,6 @@
 ---
 title: Device Installations on 64-Bit Systems
 description: Device Installations on 64-Bit Systems
-ms.assetid: 76d9bff7-6429-4d20-9790-a41ed2cb1bdd
 keywords:
 - 64-bit WDK device installations
 - device installations WDK , 64-bit systems
@@ -23,7 +22,7 @@ If your device will be installed on both 32-bit platforms and 64-bit platforms, 
 
 If you are [writing a device installation application](writing-a-device-installation-application.md), the 32-bit version must be the default version. That is, the 32-bit version should be invoked by Autorun (described in the Microsoft Windows SDK documentation), so that it starts automatically when a user inserts your distribution disk.
 
-The 32-bit version of the application must check the value returned by [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa). If the return value is ERROR_IN_WOW64, the 32-bit application is executing on a 64-bit platform and cannot update inbox drivers. Instead, it must call [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) (described in the Windows SDK documentation) to start the 64-bit version of the application. The 64-bit version can then call **UpdateDriverForPlugAndPlayDevices**, specifying a *FullInfPath* parameter that identifies the location of the 64-bit versions of all files.
+The 32-bit version of the application must check the value returned by [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa). If the return value is ERROR_IN_WOW64, the 32-bit application is executing on a 64-bit platform and cannot update inbox drivers. Instead, it must call [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) (described in the Windows SDK documentation) to start the 64-bit version of the application. The 64-bit version can then call **UpdateDriverForPlugAndPlayDevices**, specifying a *FullInfPath* parameter that identifies the location of the 64-bit versions of all files.
 
  
 

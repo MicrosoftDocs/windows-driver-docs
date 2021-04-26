@@ -1,7 +1,6 @@
 ---
 title: ScannerInfo element
 description: The optional ScannerInfo element contains any administratively assigned descriptive information about the scanner.
-ms.assetid: 41d31209-8269-42ef-99f2-83818eb06f6b
 keywords: ["ScannerInfo element Imaging Devices"]
 topic_type:
 - apiref

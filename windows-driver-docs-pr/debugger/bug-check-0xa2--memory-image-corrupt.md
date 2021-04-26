@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xA2 MEMORY_IMAGE_CORRUPT
 description: The MEMORY_IMAGE_CORRUPT bug check has a value of 0x000000A2. This bug check indicates that corruption has been detected in the image of an executable file in memory.
-ms.assetid: 73990217-4af2-478c-aa5e-39e6bc5811cf
 keywords: ["Bug Check 0xA2 MEMORY_IMAGE_CORRUPT", "MEMORY_IMAGE_CORRUPT"]
 ms.date: 05/23/2017
 topic_type:

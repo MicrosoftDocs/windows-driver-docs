@@ -1,7 +1,6 @@
 ---
 title: Registering KS Proxy Plug-ins
 description: Registering KS Proxy Plug-ins
-ms.assetid: 1f8691cb-5371-4039-a081-7c422dcac5a8
 keywords:
 - Kernel Streaming Proxy WDK AVStream , registering plug-ins
 - registering Kernel Streaming Proxy plug-ins WDK AVStream

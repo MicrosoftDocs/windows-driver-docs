@@ -1,8 +1,7 @@
 ---
 title: Debugging Resources
 description: Use Debugging Tools for Windows to debug drivers, applications, and services on Windows systems.
-ms.assetid: F2111416-EC6C-4967-B123-9A6101040561
-ms.date: 12/09/2019
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +23,7 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 - [Advanced Driver Debugging: Part 2 \[media file\]](https://download.microsoft.com/download/B/1/6/B161948D-EDE1-4AEF-8776-AD485CDDCD9E/TDDR05004.wvx)
 - [Avoiding debugger searches for unneeded symbols](./avoiding-debugger-searches-for-unneeded-symbols.md)
 - [Debugging Kernel-Mode Driver Framework Drivers](../wdf/debugging-kernel-mode-driver-framework-drivers.md)
-- [Debugging WDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver)
+- [Debugging WDF Drivers](./debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 - [BCDEdit /dbgsettings](../devtest/bcdedit--dbgsettings.md)
 -  [Tools for Debugging Drivers](../devtest/tools-for-debugging-drivers.md) (WDK Documentation)
 
@@ -32,8 +31,7 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 
 A number of [Knowledge Base articles](https://support.microsoft.com/) are available for debugging related topics. This page provides a few examples of Product Support links that are relevant for debugging.
 
-- [2816225: Enabling Debug mode causes Windows to hang if no Debugger is connected](https://support.microsoft.com/help/2816225/enabling-debug-mode-causes-windows-to-hang-if-no-debugger-is-connected/)
-- [311503: Use the Microsoft Symbol Server to obtain debug symbol files](https://support.microsoft.com/help/311503)
+- [Enabling Debug mode causes Windows to hang if no Debugger is connected](/troubleshoot/windows-server/performance/enable-debug-mode-causes-hang)
 
 ## <span id="related_topics"></span>Related topics
 

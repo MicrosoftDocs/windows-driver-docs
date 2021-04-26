@@ -1,7 +1,6 @@
 ---
 title: EngExtCpp Extensions
 description: EngExtCpp Extensions
-ms.assetid: 0eed4aa8-c70a-429e-b887-9b35352517ce
 keywords: ["EngExtCpp extensions", "extensions, ExtEngCpp"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

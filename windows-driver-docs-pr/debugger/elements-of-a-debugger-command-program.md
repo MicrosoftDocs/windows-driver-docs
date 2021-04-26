@@ -1,17 +1,12 @@
 ---
 title: Elements of a Debugger Command Program
 description: Elements of a Debugger Command Program
-ms.assetid: f964e358-2f3f-4780-87ea-e1374ae861e6
 keywords: ["debugger command program, elements"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
 
 # Elements of a Debugger Command Program
-
-
-## <span id="ddk_elements_of_a_debugger_command_program_dbg"></span><span id="DDK_ELEMENTS_OF_A_DEBUGGER_COMMAND_PROGRAM_DBG"></span>
-
 
 A *debugger command program* is a small application that consists of debugger commands and control flow tokens, such as **.if**, **.for**, and **.while**. (For a full list of control flow tokens and their syntax, see [Control Flow Tokens](control-flow-tokens.md).)
 
@@ -26,8 +21,6 @@ User-named aliases are evaluated only if they are not next to other text. If you
 You can add comments to a debugger command program by using two dollar signs ([**$$ (Comment Specifier)**](-----comment-specifier-.md)). You should not insert a comment between a token and its elements (such as braces or conditions).
 
 **Note**   You should not use an asterisk ([**\* (Comment Line Specifier)**](----comment-line-specifier-.md)). Because comments that are specified with an asterisk do not end with a semicolon, the rest of the program is disregarded.
-
- 
 
 Typically, you should use MASM syntax within a debugger command program. When you have to use C++ elements (such as specifying a member of a structure or class), you can use the **@@c++( )** token to switch to C++ syntax for that clause.
 

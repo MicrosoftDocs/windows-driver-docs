@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_IconPath
 description: DEVPKEY_DeviceClass_IconPath
-ms.assetid: c81ea18d-dd21-4b5e-8aba-52f7ad6931bf
 keywords: ["DEVPKEY_DeviceClass_IconPath Device and Driver Installation"]
 topic_type:
 - apiref
@@ -60,7 +59,7 @@ The DEVPKEY_DeviceClass_IconPath device property represents an icon list for a [
 Remarks
 -------
 
-You can call [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_IconPath.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_IconPath.
 
 A DEVPKEY_DeviceClass_IconPath value is a [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-typed list of icon resource specifiers in the format that is used by the Windows shell. The format of an icon resource specifier is "*executable-file-path*,*resource-identifier*," where *executable-file-path* contains the fully qualified path of the file on a computer that contains the icon resource and *resource-identifier* specifies an integer that identifies the resource. For example, the icon resource specifier "%SystemRoot%\\system32\\DLL1.dll,-12" contains the executable file path "%SystemRoot%\\system32\\DLL1.dll" and the resource identifier "-12".
 
@@ -76,11 +75,11 @@ Requirements
 ## See also
 
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiLoadClassIcon**](/windows/desktop/api/setupapi/nf-setupapi-setupdiloadclassicon)
+[**SetupDiLoadClassIcon**](/windows/win32/api/setupapi/nf-setupapi-setupdiloadclassicon)
 
  
 

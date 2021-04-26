@@ -1,7 +1,6 @@
 ---
 title: Creating Network INF Files
 description: Creating Network INF Files
-ms.assetid: 6ac4195c-202e-42f2-815e-e8a800aac146
 keywords:
 - INF files WDK network , about INF files
 - network INF files WDK , about INF files
@@ -30,8 +29,8 @@ This section includes:
 ## In this section
 
 
--   [Sections in a Network INF File](sections-in-a-network-inf-file.md)
--   [Installation Requirements for Network Components](installation-requirements-for-network-components.md)
+-   [Sections in a Network INF File](version-section-in-a-network-inf-file.md)
+-   [Installation Requirements for Network Components](installation-requirements-for-network-adapters.md)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Filtering Registry Operations on Application Hives
 description: Initial support for application hives was introduced in Windows Vista.
-ms.assetid: A8D06E25-7CC6-476A-AB55-DAFE19954347
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,7 +10,7 @@ ms.date: 10/17/2018
 
 Initial support for application hives was introduced in Windows Vista. Starting with Windows 8, improved support for application hives is available, and wider use of application hives is expected. Thus, registry filter drivers developed for these versions of Windows, and particularly for Windows 8 and later, must be aware of registry operations on application hives. These drivers should handle such operations efficiently to avoid negatively impacting the user experience.
 
-Application hives are registry hives loaded by user-mode applications to store application-specific state data. An application calls the [**RegLoadAppKey**](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) function to load an application hive.
+Application hives are registry hives loaded by user-mode applications to store application-specific state data. An application calls the [**RegLoadAppKey**](/windows/win32/api/winreg/nf-winreg-regloadappkeya) function to load an application hive.
 
 In contrast to other types of registry hives, application hives are loaded under the \\REGISTRY\\A registry path name instead of under \\REGISTRY\\MACHINE or \\REGISTRY\\USER. The \\REGISTRY\\A path name is special in that there is no way to traverse this path, and an attempt to open a key under \\REGISTRY\\A will fail with error status STATUS\_ACCESS\_DENIED. The only way an application can access a key in an application hive is to use the handle to the root key of the application hive. The application gets this handle from the **RegLoadAppKey** call that loads the hive.
 

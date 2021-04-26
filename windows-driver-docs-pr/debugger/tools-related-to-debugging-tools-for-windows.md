@@ -1,7 +1,6 @@
 ---
 title: Tools Related to Debugging Tools for Windows
 description: This section describes tools that are related to debugging but are not included in the Debugging Tools for Windows package.
-ms.assetid: A121BF0C-53BF-48E0-9000-3BDA255FD884
 ms.date: 06/05/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: scanHardware XML Element
 description: scanHardware XML Element
-ms.assetid: c1af7238-97e9-4c5f-95ea-fbc9f3cc8279
 keywords: ["scanHardware XML Element Device and Driver Installation"]
 topic_type:
 - apiref

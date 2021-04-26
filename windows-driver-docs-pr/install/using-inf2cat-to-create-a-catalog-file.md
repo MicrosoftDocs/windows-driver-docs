@@ -1,7 +1,6 @@
 ---
 title: Using Inf2Cat to Create a Catalog File
 description: Using Inf2Cat to Create a Catalog File
-ms.assetid: 93dea980-eb66-40f0-ac6b-0adaf8376154
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -10,10 +9,6 @@ ms.localizationpriority: medium
 
 
 The Inf2Cat tool can be used to create catalog files for any [driver package](driver-packages.md) that has an INF file. For more information about Inf2Cat and its command-line arguments, see [**Inf2Cat**](../devtest/inf2cat.md).
-
-**Note**  Prior to the Windows Server 2008 Windows Driver Kit (WDK), the Inf2Cat tool was not part of the WDK tools. However, the tool is installed with the Winqual Submission Tools. To download the Winqual Submission tools, go to the Microsoft [Inf2Cat FAQ](https://go.microsoft.com/fwlink/p/?linkid=79443) website. When the Winqual Submission Tools package is installed, [**Inf2Cat**](../devtest/inf2cat.md) is put in the Program Files (x86)\\Microsoft Winqual Submission Tool folder on the system drive.
-
- 
 
 This topic discusses how to create a [catalog file](catalog-files.md) from a driver package's INF file. In this example, the INF file of the *ToastPkg* sample driver package is used. Within the WDK installation directory, this INF file is named *toastpkg.inf* and is located in the *src\\general\\toaster\\toastpkg\\inf* directory.
 

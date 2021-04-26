@@ -1,7 +1,6 @@
 ---
 title: Processing Subrectangles
 description: Processing Subrectangles
-ms.assetid: d00803c0-98e2-4101-bcfc-ef11fea07962
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing
 - subrectangular processing WDK DirectX VA

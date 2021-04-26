@@ -1,7 +1,6 @@
 ---
 title: Framework Driver Object
 description: Framework Driver Object
-ms.assetid: 6e9e568c-7e4f-48bd-b351-4be0e12cc15b
 keywords:
 - UMDF objects WDK , driver objects
 - framework objects WDK UMDF , driver objects

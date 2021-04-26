@@ -1,7 +1,6 @@
 ---
 title: Reading and Writing a Parallel Device
 description: Reading and Writing a Parallel Device
-ms.assetid: f28506b1-fa87-4119-a57a-2b49573197d8
 keywords:
 - parallel devices WDK , reading
 - parallel devices WDK , writing

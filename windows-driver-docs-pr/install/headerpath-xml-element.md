@@ -1,7 +1,6 @@
 ---
 title: headerPath XML Element
 description: headerPath XML Element
-ms.assetid: 9764fed5-75bc-4679-bae0-5bfe738268e2
 keywords: ["headerPath XML Element Device and Driver Installation"]
 topic_type:
 - apiref

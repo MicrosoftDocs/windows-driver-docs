@@ -1,7 +1,6 @@
 ---
 title: Background of Non-PCM Support
 description: Background of Non-PCM Support
-ms.assetid: 4f0e1101-e4cc-4bde-a178-fb47fe24ae4d
 keywords:
 - non-PCM audio formats WDK , DirectSound
 - non-PCM audio formats WDK , waveOut
@@ -31,7 +30,7 @@ Windows XP and later, and Windows Me, support non-PCM formats by allowing non-PC
 
 ### <span id="DirectSound_API"></span><span id="directsound_api"></span><span id="DIRECTSOUND_API"></span>DirectSound API
 
-On legacy waveOut drivers and VxD drivers, DirectSound supports [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) (but not WAVEFORMATEXTENSIBLE) PCM formats for both primary and secondary buffers, with 8 or 16 bits per sample, one or two channels, and a sampling rate between 100 Hz and 100 kHz. VxD drivers can further limit the formats allowed for primary buffers when the cooperative level is set to DSSCL\_WRITEPRIMARY (see the description of the **IDirectSoundBuffer::SetFormat** method in the DirectX SDK). These limitations have not changed in Windows Me or Windows XP.
+On legacy waveOut drivers and VxD drivers, DirectSound supports [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) (but not WAVEFORMATEXTENSIBLE) PCM formats for both primary and secondary buffers, with 8 or 16 bits per sample, one or two channels, and a sampling rate between 100 Hz and 100 kHz. VxD drivers can further limit the formats allowed for primary buffers when the cooperative level is set to DSSCL\_WRITEPRIMARY (see the description of the **IDirectSoundBuffer::SetFormat** method in the DirectX SDK). These limitations have not changed in Windows Me or Windows XP.
 
 WDM drivers can support PCM formats in both WAVEFORMATEX and WAVEFORMATEXTENSIBLE form. For Windows 2000 and later, Windows Me, and Windows 98 SE, drivers can also support the WAVE\_FORMAT\_IEEE\_FLOAT format for both primary and secondary DSBCAPS\_LOCSOFTWARE buffers (mixed by KMixer) in both WAVEFORMATEX and WAVEFORMATEXTENSIBLE form.
 

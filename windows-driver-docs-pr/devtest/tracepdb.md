@@ -1,7 +1,6 @@
 ---
 title: Tracepdb
 description: Tracepdb
-ms.assetid: da7658a8-5fc3-409c-8a34-2aa134b9823b
 keywords:
 - software tracing WDK , Tracepdb
 - Tracepdb WDK
@@ -37,7 +36,7 @@ You can provide the private PDB symbol file for the trace provider or Tracepdb c
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Tracepdb (Tracepdb.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
+<td align="left"><p>Tracepdb (Tracepdb.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
 <p>%WindowsSdkDir%\bin\x64\Tracepdb.exe</p>
 <p>%WindowsSdkDir%\bin\x86\Tracepdb.exe</p>

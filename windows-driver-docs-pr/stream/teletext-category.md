@@ -1,7 +1,6 @@
 ---
 title: Teletext Category
 description: Teletext Category
-ms.assetid: f8eb289f-0b01-43cc-8160-f16dc6de12d9
 keywords:
 - stream categories WDK video capture , teletext
 - teletext category WDK video capture
@@ -37,7 +36,7 @@ When specifying **PINNAME\_VIDEO\_TELETEXT** pins, use the information listed in
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video_vbi" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO_VBI&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video_vbi)"><strong>KS_DATARANGE_VIDEO_VBI</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video_vbi" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO_VBI&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video_vbi)"><strong>KS_DATARANGE_VIDEO_VBI</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
@@ -77,8 +76,6 @@ When specifying **PINNAME\_VIDEO\_TELETEXT** pins, use the information listed in
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

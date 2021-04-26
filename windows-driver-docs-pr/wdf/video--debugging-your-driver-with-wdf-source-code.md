@@ -2,7 +2,6 @@
 title: Video Debugging your driver with WDF source code
 description: This topic contains a video tutorial that shows how to debug your Windows Driver Frameworks (WDF) driver with full access to the WDF source code.
 Search.SourceType: Video
-ms.assetid: 735D71FC-0B35-4C79-8C0A-F3C762095C06
 ms.date: 05/07/2020
 ms.localizationpriority: medium
 ---

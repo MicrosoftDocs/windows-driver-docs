@@ -1,7 +1,6 @@
 ---
 title: bitmap element
 description: The optional bitmap element is used to display a bitmap image to the left of the body text in a message box.
-ms.assetid: 6dd1a82f-7a9e-4ed6-9d0d-76e025331d2c
 keywords: ["bitmap element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The optional **bitmap** element is used to display a bitmap image to the left of the body text in a message box.
 
-The **bitmap** element is defined in the *asyncui* namespace at this URI: https://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **bitmap** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

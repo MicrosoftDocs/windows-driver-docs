@@ -1,7 +1,6 @@
 ---
 title: PCOMPLETE\_LOCK\_IRP\_ROUTINE routine
 description: A file system filter driver (legacy filter) can register a PCOMPLETE\_LOCK\_IRP\_ROUTINE-typed routine as the filter's CompleteLockIrpRoutine callback.
-ms.assetid: 400ff351-5906-4e6e-a708-e71441afe3b8
 keywords: ["CompleteLockIrpRoutine routine Installable File System Drivers", "PCOMPLETE_LOCK_IRP_ROUTINE"]
 topic_type:
 - apiref

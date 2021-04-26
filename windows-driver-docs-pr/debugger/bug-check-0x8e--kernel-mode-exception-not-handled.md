@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x8E KERNEL_MODE_EXCEPTION_NOT_HANDLED
 description: The KERNEL_MODE_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000008E. This bug check indicates that a kernel-mode application generated an exception that the error handler did not catch.
-ms.assetid: 987ee868-5622-44e4-979c-3ae93a98b5b1
 keywords: ["Bug Check 0x8E KERNEL_MODE_EXCEPTION_NOT_HANDLED", "KERNEL_MODE_EXCEPTION_NOT_HANDLED"]
 ms.date: 05/23/2017
 topic_type:

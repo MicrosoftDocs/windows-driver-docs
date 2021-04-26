@@ -2,7 +2,6 @@
 title: IRP_MN_EJECT
 description: Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 ms.date: 08/12/2017
-ms.assetid: 2807eeca-c614-469a-baeb-3d2d65416c57
 keywords:
  - IRP_MN_EJECT Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -55,7 +54,7 @@ For the device to be ejected, the device must be in the D3 device power state (o
 
 Any driver that returns success for this IRP must wait until the device has been ejected before completing the IRP.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

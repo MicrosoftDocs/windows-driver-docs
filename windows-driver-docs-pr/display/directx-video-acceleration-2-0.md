@@ -1,7 +1,6 @@
 ---
 title: DirectX Video Acceleration 2.0
 description: DirectX Video Acceleration 2.0
-ms.assetid: b13b5e3d-fb30-4503-ad3a-5a56411ace85
 keywords:
 - user-mode display drivers WDK Windows Vista , DirectX Video Acceleration
 - DirectX Video Acceleration WDK display , version 2

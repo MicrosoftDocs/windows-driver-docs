@@ -1,7 +1,6 @@
 ---
 title: Determining the Status of a Device
 description: Determining the Status of a Device
-ms.assetid: d250643e-13cb-4657-9235-5fdeb1eab89a
 keywords: ["Plug and Play (PnP), device status", "Plug and Play (PnP), device tree", "device status", "device tree"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

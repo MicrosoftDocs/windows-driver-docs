@@ -1,7 +1,6 @@
 ---
 title: Debugging Printer Driver Components
 description: Debugging Printer Driver Components
-ms.assetid: 550cc8fe-5520-4521-8c4e-9c8c80521357
 keywords:
 - debugging drivers WDK printer
 - printer drivers WDK , debugging

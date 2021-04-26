@@ -1,7 +1,6 @@
 ---
 title: Using Control Device Objects
 description: Using Control Device Objects
-ms.assetid: 6367954f-6916-46df-a5a0-e80f045b69e5
 keywords:
 - control device objects WDK KMDF
 - device objects WDK KMDF
@@ -22,7 +21,7 @@ ms.localizationpriority: medium
 
 A *control device object* is a framework device object that does not support Plug and Play (PnP) or power management operations. Drivers can use control device objects to represent software-only virtual devices or *legacy hardware devices* (that is, devices that do not provide PnP or power management capabilities).
 
-A driver that creates a control device object also typically creates a symbolic link for the device object. Applications can send I/O requests to the control device object by passing the symbolic link name to an API element, such as the Microsoft Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) function.
+A driver that creates a control device object also typically creates a symbolic link for the device object. Applications can send I/O requests to the control device object by passing the symbolic link name to an API element, such as the Microsoft Win32 [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function.
 
 The framework does not attach control device objects to a [device stack](wdm-concepts-for-kmdf-drivers.md#device-stacks). Therefore, when an application sends an I/O request to a control device object, the I/O manager delivers the request directly to the driver that created the control device object, instead of to the driver at the top of the stack. (However, an additional driver can call [**IoAttachDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevice) to attach a device object above the control device object. In this case, the additional driver receives the I/O request first.)
 

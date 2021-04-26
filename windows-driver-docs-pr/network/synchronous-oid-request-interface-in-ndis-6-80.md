@@ -1,7 +1,6 @@
 ---
 title: Synchronous OID request interface in NDIS 6.80
 description: This topic describes the new Synchronous OID request interface in NDIS 6.80
-ms.assetid: 6BF2E800-90A0-48FC-B702-5AD4EC318A35
 keywords: Synchronous OID Requests Interface, Synchronous OID call, WDK Synchronous OIDs, Synchronous OID request
 ms.date: 09/28/2017
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ With Synchronous OID requests, the payload of the call (the OID itself) is exact
 
 The following table describes the differences between Regular OIDs, Direct OIDs, and Synchronous OIDs.
 
-| | Regular OID | Direct OID | Synchronous OID |
+| Attribute | Regular OID | Direct OID | Synchronous OID |
 | --- | --- | --- | --- |
 | Payload | [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) | NDIS_OID_REQUEST | NDIS_OID_REQUEST |
 | OID types | Stats, Query, Set, Method | Stats, Query, Set, Method | Stats, Query, Set, Method |

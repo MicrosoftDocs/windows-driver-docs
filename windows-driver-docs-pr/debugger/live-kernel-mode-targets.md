@@ -1,7 +1,6 @@
 ---
 title: Live Kernel-Mode Targets
 description: Live Kernel-Mode Targets
-ms.assetid: 88820097-4a47-428d-88dd-d0a08e5debdc
 keywords: ["targets, live kernel-mode", "kernel-mode targets"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

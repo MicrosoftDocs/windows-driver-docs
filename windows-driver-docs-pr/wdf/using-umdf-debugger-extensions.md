@@ -1,7 +1,6 @@
 ---
 title: Summary of Debugger Extensions in Wudfext.dll
 description: This topic describes the debugger extension commands in WudfExt.dll, which you can use to debug certain User-Mode Driver Framework (UMDF) drivers.
-ms.assetid: af84ed3a-33a1-4736-9080-c43e87052064
 keywords:
 - UMDF debugger extensions WDK
 - debugger extensions WDK UMDF

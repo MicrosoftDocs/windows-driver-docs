@@ -1,7 +1,6 @@
 ---
 title: Extended Format Aware Requirements
 description: Extended Format Aware Requirements
-ms.assetid: eab9c254-fca7-449d-a6cf-1b20d2e7173c
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format aware requirements
 - extended format aware requirements WDK Windows 7 display

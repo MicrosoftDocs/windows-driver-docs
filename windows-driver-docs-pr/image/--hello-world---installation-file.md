@@ -1,7 +1,6 @@
 ---
 title: Hello World' Installation File
 description: Hello World' Installation File
-ms.assetid: 826f4f99-16bd-4586-9cc1-0afde2fcee65
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

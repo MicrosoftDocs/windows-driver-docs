@@ -1,7 +1,6 @@
 ---
 title: Evaluate HVCI driver compatibility
 description: Follow these steps to use to evaluate HVCI driver compatibility of your driver code.
-ms.assetid: 
 ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---
@@ -238,7 +237,7 @@ Use the following table to interpret the output and determine what driver code c
 <tr class="even">
 <td align="left"><p>Execute Page Mapping</p></td>
 <td align="left"><p>The caller specified an executable memory descriptor list (MDL) mapping.</p>
-<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[MmGetSystemAddressForMdlSafe](../kernel/mm-bad-pointer.md)">MmGetSystemAddressForMdlSafe</a></p>
+<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[MmGetSystemAddressForMdlSafe](../kernel/mm-bad-pointer.md)">MmGetSystemAddressForMdlSafe</a></p>
 </td>
 </tr>
 
@@ -260,7 +259,7 @@ Use the following table to interpret the output and determine what driver code c
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
 <p>This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
-<p> One way that this can occur is when using the <a href="https://docs.microsoft.com/cpp/build/reference/merge-combine-sections" data-raw-source="[/MERGE (Combine Sections)](/cpp/build/reference/merge-combine-sections)">/MERGE (Combine Sections)</a> option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
+<p> One way that this can occur is when using the <a href="/cpp/build/reference/merge-combine-sections" data-raw-source="[/MERGE (Combine Sections)](/cpp/build/reference/merge-combine-sections)">/MERGE (Combine Sections)</a> option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
 </td>
 </tr>
 
@@ -273,7 +272,7 @@ Unsupported Relocs
 
 <p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
 
-<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the <a href="https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking" data-raw-source="[/Gy (COMDAT)](/cpp/build/reference/gy-enable-function-level-linking)">/Gy (COMDAT)</a> option to allow the linker to align module code as much as possible.</p>
+<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the <a href="/cpp/build/reference/gy-enable-function-level-linking" data-raw-source="[/Gy (COMDAT)](/cpp/build/reference/gy-enable-function-level-linking)">/Gy (COMDAT)</a> option to allow the linker to align module code as much as possible.</p>
 
 ```cpp
 #include <pshpack1.h>

@@ -1,7 +1,6 @@
 ---
 title: Registering for Device Interface Change Notification
 description: Registering for Device Interface Change Notification
-ms.assetid: 680e4c5c-dac6-41b1-b754-aee782145ed0
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP", "registering device interface change notifications", "IoRegisterPlugPlayNotification"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

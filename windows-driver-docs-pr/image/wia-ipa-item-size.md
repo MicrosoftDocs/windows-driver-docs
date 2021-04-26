@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_SIZE
 description: The WIA\_IPA\_ITEM\_SIZE property contains the current size, in bytes, of the data that is associated with a WIA item. The WIA minidriver creates and maintains this property.
-ms.assetid: af019c00-715b-43d1-ba14-f20c01871f35
 keywords: ["WIA_IPA_ITEM_SIZE Imaging Devices"]
 topic_type:
 - apiref

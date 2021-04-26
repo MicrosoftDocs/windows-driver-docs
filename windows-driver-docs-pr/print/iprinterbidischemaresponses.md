@@ -4,7 +4,6 @@ description: The IPrinterBidiSchemaResponses interface represents a set of bidi 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 2E68C4AA-D235-46D2-81D6-D6C7E84C2FEF
 keywords: ["IPrinterBidiSchemaResponses interface Print Devices", "IPrinterBidiSchemaResponses interface Print Devices , described"]
 topic_type:
 - apiref

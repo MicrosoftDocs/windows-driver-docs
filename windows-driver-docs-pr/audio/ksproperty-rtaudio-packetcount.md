@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_PACKETCOUNT
 description: KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
-ms.assetid: 904896DE-D135-43B6-AA1F-F49D0748952D
 keywords: ["KSPROPERTY_RTAUDIO_PACKETCOUNT Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets complete
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong" data-raw-source="[&lt;strong&gt;ULONG&lt;/strong&gt;](/dotnet/csharp/language-reference/keywords/ulong)"><strong>ULONG</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/dotnet/csharp/language-reference/keywords/ulong" data-raw-source="[&lt;strong&gt;ULONG&lt;/strong&gt;](/dotnet/csharp/language-reference/keywords/ulong)"><strong>ULONG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -95,6 +94,4 @@ Requirements
 
 
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
-
- 
 

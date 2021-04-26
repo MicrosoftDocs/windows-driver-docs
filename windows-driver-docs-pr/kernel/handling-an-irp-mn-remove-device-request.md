@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP_MN_REMOVE_DEVICE Request
 description: Handling an IRP_MN_REMOVE_DEVICE Request
-ms.assetid: 1e0c8b41-5375-41dd-80eb-e48c0f513e01
 keywords: ["IRP_MN_REMOVE_DEVICE"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_DISABLE_EVENTS
-description: Any WMI driver that registers one or more event blocks must handle this IRP.
+description: Learn about the 'IRP_MN_DISABLE_EVENTS' kernel-mode driver architecture. Any WMI driver that registers one or more event blocks must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 3187643b-27d7-4a6d-8fbe-4f8eb6c251ed
 keywords:
  - IRP_MN_DISABLE_EVENTS Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

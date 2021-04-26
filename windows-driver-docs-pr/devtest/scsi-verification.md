@@ -1,7 +1,6 @@
 ---
 title: SCSI Verification
 description: SCSI Verification
-ms.assetid: dba63137-ff92-480a-bca4-ab651a6bda85
 keywords:
 - SCSI Verification feature WDK Driver Verifier
 - miniport drivers WDK Driver Verifier

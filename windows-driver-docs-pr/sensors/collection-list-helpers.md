@@ -1,7 +1,6 @@
 ---
 title: Collection list helpers
 description: The collection list helper functions are used by the v2 sensor drivers, for working with SENSOR\_COLLECTION\_LIST structures.
-ms.assetid: 9BE06FA6-A171-4760-9D3E-C0183F3C3EFA
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Collection list helpers
 
 
-The collection list helper functions are used by the v2 sensor drivers, for working with [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
+The collection list helper functions are used by the v2 sensor drivers, for working with [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
 
 The helper functions are used along with the sensor device driver software interface (DDSI).
 
@@ -21,9 +20,9 @@ Usage by sensor DDSI
 
 Comments
 
--   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
+-   See [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
 
--   See [**SENSOR\_VALUE\_PAIR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_value_pair) for more information.
+-   See [**SENSOR\_VALUE\_PAIR**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_value_pair) for more information.
 
 **CollectionsListGetFillableCount**
 
@@ -72,11 +71,4 @@ Comments
 [Marshalling helper functions](marshalling-helper-functions.md)
 
  
-
- 
-
-
-
-
-
 

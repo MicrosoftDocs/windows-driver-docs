@@ -1,7 +1,6 @@
 ---
 title: Filtering condition flags
 description: This section describes filtering condition flags.
-ms.assetid: a2493fc5-614f-47df-a818-cdec06dc9f4a
 keywords:
 - Filtering condition flags network drivers
 ms.date: 01/07/2019
@@ -178,7 +177,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00000020</p>
 </td>
 <td>
-<p>Indicates that the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver is an IP packet fragment.</p>
+<p>Indicates that the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver is an IP packet fragment.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V4</dd>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V6</dd>
@@ -194,7 +193,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00000040</p>
 </td>
 <td>
-<p>Indicates that the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver describes a linked list of packet
+<p>Indicates that the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure passed to a callout driver describes a linked list of packet
        fragments.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_INBOUND_IPPACKET_V4</dd>
@@ -281,7 +280,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00004000</p>
 </td>
 <td>
-<p>Indicates that the name of the peer machine that the application is expecting to connect to has been obtained by calling a function such as <a href="https://docs.microsoft.com/windows/desktop/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname"><b>WSASetSocketPeerTargetName</b></a> and not by using the caching heuristics.</p>
+<p>Indicates that the name of the peer machine that the application is expecting to connect to has been obtained by calling a function such as <a href="/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname"><b>WSASetSocketPeerTargetName</b></a> and not by using the caching heuristics.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2008 R2, Windows 7, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V4</dd>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V6</dd>
@@ -306,7 +305,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00010000</p>
 </td>
 <td>
-<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the "Allow the connection if it is secure" firewall rule option will have this flag set. For more information, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)">How to Enable Authenticated Firewall Bypass</a>.</p>
+<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the "Allow the connection if it is secure" firewall rule option will have this flag set. For more information, see <a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)">How to Enable Authenticated Firewall Bypass</a>.</p>
 <p>This flag is also applicable at the following filtering layers in Windows Server 2008, Windows Vista with SP1, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4</dd>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6</dd>

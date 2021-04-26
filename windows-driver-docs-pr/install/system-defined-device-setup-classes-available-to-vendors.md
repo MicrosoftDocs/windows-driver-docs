@@ -1,15 +1,17 @@
 ---  
-title: Class and ClassGuid entries for INF Version Section  
-description: Class and ClassGuid entries for INF Version Section 
-ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
-ms.date: 08/27/2020
+title: System-Defined Device Setup Classes Available to Vendors  
+description: System-Defined Device Setup Classes Available to Vendors 
+ms.date: 11/20/2020
 ms.localizationpriority: medium
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---  
 
-# Class and ClassGuid entries for INF Version Section  
+# System-Defined Device Setup Classes Available to Vendors  
 
 If you're writing a Windows device driver for a specific category of device, you can use the following list to select the right pre-defined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
+
+> [!NOTE]
+> If you're looking for info on reserved classes and GUIDs, see [System-Defined Device Setup Classes Reserved for System Use](system-defined-device-setup-classes-reserved-for-system-use.md).
 
 To see how these entries appear in an INF file, check out [cdrom.inf](https://github.com/microsoft/Windows-driver-samples/blob/aaeca58c5e7b67740a603a3150db225670b42bb6/storage/class/cdrom/src/cdrom.inf#L7-L8) in the [Windows driver samples](https://github.com/microsoft/Windows-driver-samples) repo.
 
@@ -78,7 +80,7 @@ This class includes hard disk controllers, including ATA/ATAPI controllers but n
 **Human Interface Devices (HID)**  
 Class = HIDClass  
 ClassGuid = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}  
-This class includes interactive input devices that are operated by the system-supplied [HID class driver](/previous-versions/jj126193(v=vs.85)). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
+This class includes interactive input devices that are operated by the system-supplied [HID class driver](../hid/hid-architecture.md). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
   
 **IEEE 1284.4 Devices**  
 Class = Dot4  
@@ -140,7 +142,7 @@ This class includes memory devices, such as flash memory cards.
 <a href="" id="modem-"></a>**Modem**  
 Class = Modem  
 ClassGuid = {4d36e96d-e325-11ce-bfc1-08002be10318}  
-This class includes modem devices or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
+This class includes [modem devices](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)). An INF file for a device of this class specifies the features and configuration of the device and stores this information in the registry. An INF file for a device of this class can also be used to install device drivers for a *controllerless modem* or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
   
 <a href="" id="monitor-"></a>**Monitor**  
 Class = Monitor  
@@ -225,7 +227,12 @@ This class includes processor types.
 Class = SCSIAdapter  
 ClassGuid = {4d36e97b-e325-11ce-bfc1-08002be10318}  
 This class includes SCSI HBAs (Host Bus Adapters) and disk-array controllers.  
-  
+ 
+<a href="" id="security-devices-"></a>**Security Devices**
+Class = Securitydevices  
+ClassGuid = {d94ee5d8-d189-4994-83d2-f68d7d41b0e6}  
+(Windows 8.1, Windows 10) This class includes [Trusted Platform Module](/windows/security/information-protection/tpm/trusted-platform-module-top-node) chips. A TPM is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. Any new manufactured device must implement and enable TPM 2.0 by default. For more information, see [TPM Recommendations](/windows/security/information-protection/tpm/tpm-recommendations).
+
 **Sensors**  
 Class = Sensor  
 ClassGuid = {5175d334-c371-4806-b3ba-71fd53c9258d}  
@@ -273,16 +280,8 @@ Class = WPD
 ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}  
 (Windows Vista and later versions of Windows) This class includes WPD devices.  
   
-**Windows SideShow**  
-Class = SideShow  
-ClassGuid = {997b5d8d-c442-4f2e-baf3-9c8e671e9e21}  
-(Windows Vista and later versions of Windows) This class includes all devices that are compatible with Windows SideShow.  
-  
-   
-  
    
   
 
-  
   
   

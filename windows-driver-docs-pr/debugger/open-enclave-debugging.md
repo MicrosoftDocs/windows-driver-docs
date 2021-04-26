@@ -1,7 +1,6 @@
 ---
 title: Open Enclave debugging
 description: Open Enclave debugging
-ms.assetid: 078E3261-0B45-46B2-93BC-E72AA2506086
 ms.date: 08/06/2020
 ms.localizationpriority: medium
 ---

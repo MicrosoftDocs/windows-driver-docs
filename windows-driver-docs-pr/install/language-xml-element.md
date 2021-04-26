@@ -1,7 +1,6 @@
 ---
 title: language XML Element
 description: language XML Element
-ms.assetid: 1fc6a3b4-379e-4fd3-b526-c4193e9e84c5
 keywords: ["language XML Element Device and Driver Installation"]
 topic_type:
 - apiref

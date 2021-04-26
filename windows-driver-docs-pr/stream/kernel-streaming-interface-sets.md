@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Interface Sets
 description: Kernel Streaming Interface Sets
-ms.assetid: 7fb6b137-0e28-4034-8e89-7301f3d2bbba
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

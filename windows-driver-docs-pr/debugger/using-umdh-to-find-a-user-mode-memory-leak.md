@@ -1,7 +1,6 @@
 ---
 title: Using UMDH to Find a User-Mode Memory Leak
 description: Using UMDH to Find a User-Mode Memory Leak
-ms.assetid: b15ed695-3f35-4a72-93ab-3cbfd2e33980
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
 ms.date: 08/16/2018
 ms.localizationpriority: medium

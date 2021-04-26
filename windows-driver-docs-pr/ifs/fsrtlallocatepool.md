@@ -1,7 +1,6 @@
 ---
 title: FsRtlAllocatePool
-description: Obsolete.
-ms.assetid: f20e1db9-e72d-493e-a87e-9c84cd4b8ee5
+description: Learn about the FsRtlAllocatePool. This routine is obsolete, but is exported to support existing driver binaries.
 keywords: ["FsRtlAllocatePool Installable File System Drivers"]
 topic_type:
 - apiref

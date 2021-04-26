@@ -1,7 +1,6 @@
 ---
 title: GDL Construct Delimiters
 description: GDL Construct Delimiters
-ms.assetid: 6f759534-3dc2-4e04-afe0-3f377790be21
 keywords:
 - constructs WDK GDL , delimiters
 - GDL WDK , constructs

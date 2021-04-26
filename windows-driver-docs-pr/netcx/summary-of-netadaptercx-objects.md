@@ -1,7 +1,6 @@
 ---
 title: Summary of NetAdapterCx objects
 description: Summary of NetAdapterCx objects
-ms.assetid: 1635C737-42C6-4957-A3E0-1184A5545441
 keywords:
 - Summary of NetAdapterCx objects, NetCx summary of objects
 ms.date: 11/01/2018

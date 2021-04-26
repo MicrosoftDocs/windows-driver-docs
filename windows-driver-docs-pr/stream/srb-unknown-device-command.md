@@ -1,7 +1,6 @@
 ---
 title: SRB\_UNKNOWN\_DEVICE\_COMMAND
 description: SRB\_UNKNOWN\_DEVICE\_COMMAND
-ms.assetid: 89bc2176-e384-48bf-82d8-4a8ab2bd5159
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

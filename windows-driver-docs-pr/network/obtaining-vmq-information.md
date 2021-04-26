@@ -1,7 +1,6 @@
 ---
 title: Obtaining VMQ Information
 description: Obtaining VMQ Information
-ms.assetid: e851b656-ef59-42e7-b734-17ce9830096a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

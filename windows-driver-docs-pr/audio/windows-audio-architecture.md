@@ -1,7 +1,6 @@
 ---
 title: Windows Audio Architecture
 description: This topic provided a high level summary of the Windows 10 audio architecture.
-ms.assetid: 1FC95504-18AA-4F3B-8E96-005276699694
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,14 +34,14 @@ These older APIs are deprecated.
 -   [DirectShow](/windows/desktop/DirectShow/directshow)
 -   [DirectSound](/previous-versions/windows/desktop/ee416960(v=vs.85))
 -   [PlaySound](/previous-versions/dd743680(v=vs.85))
--   [Windows.Media.MediaControlContract](/uwp/extension-sdks/windows-desktop-extension-sdk)
+-   [Windows.Media.MediaControl](/uwp/api/Windows.Media.MediaControl)
 
 **Low level APIs**
 
 These lower level APIs are recommended for audio streaming.
 
 -   [WASAPI](/windows/desktop/CoreAudio/wasapi) (High performance, but more complicated)
--   [IXAudio2](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) (Typically used for games)
+-   [IXAudio2](/windows/win32/api/xaudio2/nn-xaudio2-ixaudio2) (Typically used for games)
 -   [MIDI](/windows/desktop/Multimedia/about-midi)
 
 This lower level API is recommended for enumeration.

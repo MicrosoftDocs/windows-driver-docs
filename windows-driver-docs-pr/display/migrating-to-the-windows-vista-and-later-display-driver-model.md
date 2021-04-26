@@ -1,7 +1,6 @@
 ---
 title: Migrating to the Windows Display Driver Model (WDDM)
 description: Migrating to the Windows Display Driver Model (WDDM)
-ms.assetid: 7f926aa7-1698-4a4e-a1ce-54a316bdc0cd
 keywords:
 - display driver model WDK Windows Vista , migrating
 - Windows Vista display driver model WDK , migrating
@@ -37,11 +36,11 @@ Although driver writers can reuse low-level hardware-dependent code in their WDD
 
 -   The user-mode display driver must implement and export an [**OpenAdapter**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_openadapter) function, which opens an instance of the graphics adapter. The user-mode display driver must also implement a [**CreateDevice**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdevice) function, which creates representations of display devices that handle collections of rendering state.
 
--   The user-mode display driver's [**CreateResource**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource) function, along with the display miniport driver's [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function, replace the [*DdCanCreateSurface*](/previous-versions/windows/hardware/drivers/ff549213(v=vs.85)), [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)), and [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) functions in XDDM.
+-   The user-mode display driver's [**CreateResource**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource) function, along with the display miniport driver's [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function, replace the [*DdCanCreateSurface*](/previous-versions/windows/hardware/drivers/ff549213(v=vs.85)), [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)), and [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) functions in XDDM.
 
 -   Most of the remaining user-mode display driver functions implement the same functionality that the kernel-mode display driver for XDDM implemented in the following:
     -   The [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function and [**DP2**](/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation) operation codes
-    -   The [motion compensation callback functions](/windows-hardware/drivers/ddi/index) and [DirectX Video Acceleration structures](/windows-hardware/drivers/ddi/index)
+    -   The [motion compensation callback functions](/windows-hardware/drivers/ddi/_display/#functions) and [DirectX Video Acceleration structures](/windows-hardware/drivers/ddi/_display/#structures)
 
  
 

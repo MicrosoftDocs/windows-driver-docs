@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_CAPTURE\_MODE
 description: The WIA\_DPC\_CAPTURE\_MODE property sets the image capture mode.
-ms.assetid: 32d117ac-fa20-49cc-a34e-31a1be88804e
 keywords: ["WIA_DPC_CAPTURE_MODE Imaging Devices"]
 topic_type:
 - apiref

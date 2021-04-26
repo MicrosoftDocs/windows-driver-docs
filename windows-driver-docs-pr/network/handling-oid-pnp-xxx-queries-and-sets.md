@@ -1,7 +1,6 @@
 ---
 title: Handling OID_PNP_Xxx Queries and Sets
 description: Handling OID_PNP_Xxx Queries and Sets
-ms.assetid: 2d5db7fb-2a27-4359-9d75-35939e72de69
 keywords:
 - OID_PNP_Xxx
 - query operations WDK NDIS intermediate
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-The virtual miniport of an intermediate driver must export the [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function. NDIS calls the intermediate driver's *MiniportOidRequest* function when an overlying driver that is bound to the intermediate driver's virtual miniport calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) to query or set information objects (OID\_*Xxx*). NDIS can also call *MiniportOidRequest* on its own behalf. For more information about miniport driver handling of sets and queries to information objects, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
+The virtual miniport of an intermediate driver must export the [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function. NDIS calls the intermediate driver's *MiniportOidRequest* function when an overlying driver that is bound to the intermediate driver's virtual miniport calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) to query or set information objects (OID\_*Xxx*). NDIS can also call *MiniportOidRequest* on its own behalf. For more information about miniport driver handling of sets and queries to information objects, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md).
 
 The intermediate driver should retain information about the capabilities of the underlying miniport adapters that it receives in the [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function. If the miniport adapter is not power management-aware, NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
 

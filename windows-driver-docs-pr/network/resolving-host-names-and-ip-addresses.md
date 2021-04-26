@@ -1,7 +1,6 @@
 ---
 title: Resolving Host Names and IP Addresses
 description: Resolving Host Names and IP Addresses
-ms.assetid: 4a5f421c-6827-4ca2-be88-67ec43dc84b2
 keywords:
 - WSK WDK networking , name resolution
 - Winsock Kernel WDK networking , name resolution
@@ -23,7 +22,7 @@ Beginning with Windows 7, a *kernel name resolution* feature allows kernel-mode
 
 -   [**WskGetNameInfo**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_get_name_info)
 
-These functions perform name-address translation similarly to the user-mode functions [**FreeAddrInfoW**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-freeaddrinfow), [**GetAddrInfoW**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfow), and [**GetNameInfoW**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getnameinfow), respectively.
+These functions perform name-address translation similarly to the user-mode functions [**FreeAddrInfoW**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-freeaddrinfow), [**GetAddrInfoW**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfow), and [**GetNameInfoW**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getnameinfow), respectively.
 
 To take advantage of this feature, you must compile or recompile your driver with the NTDDI\_VERSION macro set to NTDDI\_WIN7 or greater.
 

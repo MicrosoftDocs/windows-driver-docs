@@ -1,7 +1,6 @@
 ---
 title: ScsiReadCapacity
 description: ScsiReadCapacity
-ms.assetid: ee4a0d3f-028b-4d25-badf-393198da3191
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

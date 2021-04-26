@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_OUTPUT\_FULL\_VALUE
 description: The EXT\_TDOP\_OUTPUT\_FULL\_VALUE sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation prints the type and value of the specified typed data.
-ms.assetid: d64f7a38-c9ae-412f-985b-22115d772116
 keywords: ["EXT_TDOP_OUTPUT_FULL_VALUE Windows Debugging"]
 topic_type:
 - apiref

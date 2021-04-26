@@ -1,7 +1,6 @@
 ---
 title: Tuner Events
 description: Tuner Events
-ms.assetid: eb5e0698-2641-4d47-9fa3-d1969a03c795
 keywords:
 - tuner events WDK video capture
 - events WDK video capture
@@ -28,7 +27,7 @@ The [EVENTSETID\_TUNER](./eventsetid-tuner.md) event set contains tuner events. 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-tuner-changed" data-raw-source="[&lt;strong&gt;KSEVENT_TUNER_CHANGED&lt;/strong&gt;](./ksevent-tuner-changed.md)"><strong>KSEVENT_TUNER_CHANGED</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-tuner-changed" data-raw-source="[&lt;strong&gt;KSEVENT_TUNER_CHANGED&lt;/strong&gt;](./ksevent-tuner-changed.md)"><strong>KSEVENT_TUNER_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that the tuner has changed, for example, because of tuning to a new television channel.</p></td>
 </tr>
 </tbody>
@@ -51,13 +50,11 @@ The following table describes the EVENTSETID\_TUNER event that is new for Window
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-tuner-initiate-scan" data-raw-source="[&lt;strong&gt;KSEVENT_TUNER_INITIATE_SCAN&lt;/strong&gt;](./ksevent-tuner-initiate-scan.md)"><strong>KSEVENT_TUNER_INITIATE_SCAN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-tuner-initiate-scan" data-raw-source="[&lt;strong&gt;KSEVENT_TUNER_INITIATE_SCAN&lt;/strong&gt;](./ksevent-tuner-initiate-scan.md)"><strong>KSEVENT_TUNER_INITIATE_SCAN</strong></a></p></td>
 <td><p>Initiates a signal scan and notifies DirectShow when the scan completes.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

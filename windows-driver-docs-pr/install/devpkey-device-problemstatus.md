@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ProblemStatus
 description: DEVPKEY_Device_ProblemStatus
-ms.assetid: 477f835c-6094-4fba-80af-f6032bca7f85
 keywords: ["DEVPKEY_Device_ProblemStatus Device and Driver Installation"]
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ For info on finding problem status in Device Manager or the kernel debugger, see
 
 For more info about NTSTATUS values, see [Using NTSTATUS Values](../kernel/using-ntstatus-values.md).
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ProblemStatus.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ProblemStatus.
 
 Requirements
 ------------
@@ -86,9 +85,9 @@ Requirements
 ## See also
 
 
-[**CM_Get_DevNode_Status**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status)
+[**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

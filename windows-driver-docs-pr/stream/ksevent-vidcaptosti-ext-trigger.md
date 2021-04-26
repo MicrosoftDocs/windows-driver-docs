@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VIDCAPTOSTI\_EXT\_TRIGGER
 description: The KSEVENT\_VIDCAPTOSTI\_EXT\_TRIGGER event propagates an action, such as a when a trigger button is pressed on a video capture device, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: 97f67d22-20c4-460c-9022-04e55e74f6f9
 keywords: ["KSEVENT_VIDCAPTOSTI_EXT_TRIGGER Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,8 +44,8 @@ The KSEVENT\_VIDCAPTOSTI\_EXT\_TRIGGER event propagates an action, such as a whe
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -54,6 +53,4 @@ The KSEVENT\_VIDCAPTOSTI\_EXT\_TRIGGER event propagates an action, such as a whe
  
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
-
- 
 

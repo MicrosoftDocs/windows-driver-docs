@@ -24,22 +24,30 @@
     href: attestation-signing-a-kernel-driver-for-public-release.md
   - name: "How to get a driver signed by Microsoft for multiple versions of Windows"
     href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
+  - name: "Validating driver updates for Modern Standby systems "
+    href: validating-driver-updates-for-modern-standby-systems.md
   - name: "Driver Flighting"
     items:
-    - name: "Overview"
+    - name: "Overview of driver flighting"
       href: driver-flighting.md
+    - name: "Other Policies"
+      items:
+      - name: "Overview of other policies"
+        href: other-policies.md
+      - name: "Extension INF Targeting Rules"
+        href: extension-inf-targeting-rules.md
+      - name: "Driver Release Cadence"
+        href: driver-release-cadence.md
     - name: "Microsoft driver measures"
       href: overview-of-microsoft-driver-measure-dictionary.md
     - name: "Driver measure attributes"
       href: measure-attributes.md
+    - name: "Cohort Failure Report"
+      href: IDR-cohort-report.md
     - name: "Systemic measures"
       items:
       - name: "Driver installation measures"
         items:
-        - name: "Percent of machines that WU reported a successful download"
-          href: pct-machines-wu-success-download.md
-        - name: "Percent of machines that WU reported a successful install"
-          href: pct-machines-wu-success-install.md
         - name: "Percent of machines where the driver install process completes successfully"
           href: pct-machines-where-driver-install-completes-successfully.md
         - name: "Percent of machines that installed a driver update and reported a PnP error code within two days of install"
@@ -136,8 +144,6 @@
             href: user-mode-reliability-for-crashes-in-windows-components.md
           - name: "Number of user mode crashes in Collaboration and Communications Applications"
             href: graphics-user-mode-crashes-collaboration-standard.md
-          - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
-            href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
           - name: "Percent of devices with WinML Runtime Errors"
             href: pct-devices-winml-runtime-error.md
         - name: "Ecosystem audience measures"

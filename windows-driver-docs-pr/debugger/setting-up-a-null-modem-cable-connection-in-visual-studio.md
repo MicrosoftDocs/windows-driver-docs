@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a null-modem cable. 
-ms.assetid: 9E50AA5F-92A2-4360-BB21-A9D4F3E9CA83
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---

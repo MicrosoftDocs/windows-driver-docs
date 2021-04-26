@@ -1,7 +1,6 @@
 ---
 title: Microphone Array Geometry Property
 description: Microphone Array Geometry Property
-ms.assetid: 7f280677-f86d-4687-b992-e2580046bd57
 keywords:
 - mic array WDK audio
 - geometry descriptor WDK audio

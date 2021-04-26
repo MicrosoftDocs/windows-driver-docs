@@ -1,7 +1,6 @@
 ---
 title: Submit a Bulk Metadata Package
 description: Create the components of a bulk metadata package for drivers--device metadata package, device manifest package, and  BulkMetadataSubmission XML document.
-ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 To submit a bulk metadata package:
 
-1. Sign the bulk metadata package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1. Sign the bulk metadata package with the [SignTool](/windows/win32/seccrypto/signtool) tool.
 
 2. Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -27,7 +26,7 @@ Bulk metadata submission packages should be uploaded to the Dashboard by using t
 
 A maximum of 50 devicemetadata-ms or devicemanifest-ms files can be included in a bulk package.
 
-For info about using the Device Metadata Submission Wizard to create a bulk metadata package, see [Creating a device metadata submission package in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=251705).
+For info about using the Device Metadata Submission Wizard to create a bulk metadata package, see [Creating a device metadata submission package in Visual Studio](../devtest/using-the-submission-tool.md).
 
 ### Bulk Metadata Submission Package Contents
 
@@ -71,11 +70,11 @@ Filename1, Filename2, Filename3, Filename4, and so on, must be GUIDs.
 
 To create the BulkMetadataSubmission.xml, see [Creating BulkMetadataSubmission.xml](#creating-bulkmetadatasubmissionxml) below.
 
-To develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
+To develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85)).
 
 To develop the device manifest package, \*.devicemanifest-ms, see [Submit a PC device manifest package](submit-a-pc-device-manifest-package.md).
 
-You can use the Cabarc tool to create these CAB packages. To learn more about this tool, see [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can use the Cabarc tool to create these CAB packages. To learn more about this tool, see [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)).
 
 When you create a \*.bulkmetadata-ms file by using the Cabarc tool, you must create a local directory in which the device metadata packages (\*.devicemetadata-ms), the device manifest packages (\*.devicemanifest-ms), and the BulkMetadataSubmission XML document are at the root of the directory.
 
@@ -85,7 +84,7 @@ When you create a \*.bulkmetadata-ms file by using the Cabarc tool, you must cre
 
 - The GUID for each device metadata package and device manifest package must be unique. When you create a new or revised package, you must create a new GUID.
 
-- For more details about how to create cabinet files, see [Microsoft Cabinet SDK](https://go.microsoft.com/fwlink/p/?LinkId=248844).
+- For more details about how to create cabinet files, see [Microsoft Cabinet SDK](/previous-versions/ms974336(v=msdn.10)).
 
 ## Example
 
@@ -113,7 +112,7 @@ N .\BulkFiles\ DDMMYYYY.bulkmetadata-ms
 ```
 
 >[!Note]
->You can find more information about this tool in [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
+>You can find more information about this tool in [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)).
 
 ## Creating BulkMetadataSubmission.xml
 
@@ -257,7 +256,7 @@ The BulkMetadataSubmission XML schema defines the following elements and attribu
 
 ### Experience Element
 
-The Experience element specifies information for a single experience. For more information about experiences, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
+The Experience element specifies information for a single experience. For more information about experiences, see [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85)).
 
 Based on this information, the Dashboard either creates an experience with the correct information and submits packages to this experience, or updates an existing experience with new packages.
 

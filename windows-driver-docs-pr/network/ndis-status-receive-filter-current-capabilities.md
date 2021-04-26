@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES
 description: The miniport driver issues an NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES status indication when its currently enabled receive filtering capabilities change.
-ms.assetid: 6A1141A3-6E46-4A97-B482-CBE69E3D5075
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -24,7 +23,7 @@ Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
--   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters).
+-   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](./guidelines-for-managing-packet-coalescing-receive-filters.md).
 
 -   [Single Root I/O Virtualization (SR-IOV)](./single-root-i-o-virtualization--sr-iov-.md). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](./setting-a-receive-filter-on-a-virtual-port.md).
 
@@ -87,6 +86,4 @@ Requirements
 [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities)
 
 [OID\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES](./oid-receive-filter-current-capabilities.md)
-
- 
 

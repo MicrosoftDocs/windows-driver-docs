@@ -1,7 +1,6 @@
 ---
 title: A Device Enters a Low-Power State
-description: A Device Enters a Low-Power State
-ms.assetid: 07d7c460-4316-40a9-b502-f7c1bd1182c2
+description: Learn what happens to a device when it enters a low-power state. For example, when a device is idle while the system is still in its working state.
 keywords:
 - power management WDK KMDF , low-power states
 - low-power states WDK KMDF
@@ -40,5 +39,6 @@ For each function and filter driver that supports the device, the framework does
 
 The bus driver is the driver in the stack that is called last. When the framework calls the bus driver's [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) callback function, the callback function sets the power state of the device (a child device of the bus) to a low-power state. The framework specifies the D3 low-power state unless the power policy owner has specified a different low-power state.
 
- 
+> [!NOTE]
+> The method used by the bus driver to set the power state of the child device is bus-specific. For example, the PCI bus power management specification defines a 16-bit Power Management Control / Status register (PMCSR). The lowest two bits ("PowerState") both determine the current power state of the device and are used to set the device into a new power state. When the `pci.sys` PDO receives IRP_MN_SET_POWER/D3, it reads the PMCSR, changes the PowerState bits to 11b (power level D3), and writes back the PMCSR.
 

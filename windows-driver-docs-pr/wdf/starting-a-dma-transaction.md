@@ -1,7 +1,6 @@
 ---
 title: Starting a DMA Transaction
 description: Starting a DMA Transaction
-ms.assetid: fa26ef08-01c0-4502-9cb3-865000242e4a
 keywords:
 - DMA transactions WDK KMDF , starting
 - DMA operations WDK KMDF , transactions
@@ -24,7 +23,7 @@ After your driver has [created and initialized a DMA transaction](creating-and-i
 
 Before your driver calls **WdfDmaTransactionExecute**, the driver must store the DMA transaction handle so that it can be retrieved later when the driver completes each DMA transfer that is associated with the transaction. A good place to store the transaction handle is in the context memory of a framework object, typically the device's framework device object. For more information about using object context memory, see [Framework Object Context Space](framework-object-context-space.md).
 
-The following code example from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample shows how to initialize and then execute a DMA transaction. This code appears in the *Read.c* file.
+The following code example from the [PLX9x5x](/samples/browse/) sample shows how to initialize and then execute a DMA transaction. This code appears in the *Read.c* file.
 
 ```cpp
 VOID PLxEvtIoRead(

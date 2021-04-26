@@ -1,7 +1,6 @@
 ---
 title: IRQL rule set (NDIS)
-description: Use these rules to verify that your driver makes DDI calls at the required IRQL.A driver that does not follow the IRQL rules can cause serious problems during operation that can lead to deadlock conditions or computer crashes.
-ms.assetid: EEFEF8E3-8AB8-46AD-A3BD-DA676F8FA786
+description: Learn about using rules (NDIS) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 <tr class="odd">
 <td align="left"><p><a href="ndis-flags-irql.md" data-raw-source="[&lt;strong&gt;Flags_Irql&lt;/strong&gt;](ndis-flags-irql.md)"><strong>Flags_Irql</strong></a></p></td>
 <td align="left"><p>The <a href="ndis-flags-irql.md" data-raw-source="[&lt;strong&gt;Flags_Irql&lt;/strong&gt;](ndis-flags-irql.md)"><strong>Flags_Irql</strong></a> rule specifies that <strong>KeGetCurrentIrql</strong> must not be called within callback functions that have a dispatch level flag parameter that indicates the current IRQL.</p>
-<p>The correct use of the dispatch level flag can help you avoid unnecessary attempts to set the IRQL. For more information about how to use this flag, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/dispatch-irql-tracking" data-raw-source="[Dispatch IRQL Tracking](../network/dispatch-irql-tracking.md)">Dispatch IRQL Tracking</a>.</p></td>
+<p>The correct use of the dispatch level flag can help you avoid unnecessary attempts to set the IRQL. For more information about how to use this flag, see <a href="/windows-hardware/drivers/network/dispatch-irql-tracking" data-raw-source="[Dispatch IRQL Tracking](../network/dispatch-irql-tracking.md)">Dispatch IRQL Tracking</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ndis-irql-callmanager-function.md" data-raw-source="[&lt;strong&gt;Irql_CallManager_Function&lt;/strong&gt;](ndis-irql-callmanager-function.md)"><strong>Irql_CallManager_Function</strong></a></p></td>
@@ -127,6 +126,4 @@ A driver that does not follow the IRQL rules can cause serious problems during o
     ```
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
-
- 
 

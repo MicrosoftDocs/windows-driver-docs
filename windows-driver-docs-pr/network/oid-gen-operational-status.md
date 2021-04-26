@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_OPERATIONAL_STATUS
 description: As a query, use the OID_GEN_OPERATIONAL_STATUS OID to determine the current operational status of a network interface (ifOperStatus from RFC 2863).
-ms.assetid: fa00d449-6ec0-4e72-8d9c-a453a0b1f3e9
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_OPERATIONAL_STATUS Network Drivers Starting with Windows Vista
@@ -26,7 +25,7 @@ Remarks
 
 NDIS handles this OID for miniport adapters and filter modules, and only [NDIS network interface](./ndis-network-interfaces2.md) providers receive this OID query.
 
-If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_OPER\_STATUS**](/windows/desktop/api/ifdef/ne-ifdef-_net_if_oper_status) enumeration.
+If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_OPER\_STATUS**](/windows/win32/api/ifdef/ne-ifdef-net_if_oper_status) enumeration.
 
 Requirements
 ------------
@@ -47,7 +46,7 @@ Requirements
 ## See also
 
 
-[**NET\_IF\_OPER\_STATUS**](/windows/desktop/api/ifdef/ne-ifdef-_net_if_oper_status)
+[**NET\_IF\_OPER\_STATUS**](/windows/win32/api/ifdef/ne-ifdef-net_if_oper_status)
 
 [NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 

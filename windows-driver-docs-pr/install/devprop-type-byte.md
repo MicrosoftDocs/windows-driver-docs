@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_BYTE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BYTE identifier represents the base-data-type identifier that indicates the data type is a BYTE-typed unsigned integer.
-ms.assetid: cda681f0-948d-4534-bf56-2ad9dd8a845c
 keywords: ["DEVPROP_TYPE_BYTE Device and Driver Installation"]
 topic_type:
 - apiref

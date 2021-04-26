@@ -1,7 +1,6 @@
 ---
 title: Using Proxied Connections Tracking
 description: Using Proxied Connections Tracking
-ms.assetid: 20A737D7-043D-4D05-A15D-85595E48521B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,11 +54,11 @@ The FWPS\_CONNECT\_REQUEST0 structure contains the following members for redirec
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>localRedirectHandle</strong></p></td>
-<td align="left"><p>The redirect handle that the callout driver created by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0" data-raw-source="[&lt;strong&gt;FwpsRedirectHandleCreate0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0)"><strong>FwpsRedirectHandleCreate0</strong></a> function.</p></td>
+<td align="left"><p>The redirect handle that the callout driver created by calling the <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0" data-raw-source="[&lt;strong&gt;FwpsRedirectHandleCreate0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0)"><strong>FwpsRedirectHandleCreate0</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>localRedirectContext</strong></p></td>
-<td align="left"><p>A callout driver context area that the callout driver allocated by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)"><strong>ExAllocatePoolWithTag</strong></a> function.</p></td>
+<td align="left"><p>A callout driver context area that the callout driver allocated by calling the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)"><strong>ExAllocatePoolWithTag</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>localRedirectContextSize</strong></p></td>
@@ -83,6 +82,4 @@ If the redirect status is FWPS\_CONNECTION\_REDIRECTED\_BY\_SELF, the ALE\_CONNE
 If the redirect status is FWPS\_CONNECTION\_REDIRECTED\_BY\_OTHER, the ALE\_CONNECT\_REDIRECT callout could proceed to proxy the connection if it does not trust the other inspector’s result.
 
 If the redirect status is FWPS\_CONNECTION\_PREVIOUSLY\_REDIRECTED\_BY\_SELF, the ALE\_CONNECT\_REDIRECT callout must not perform redirection even if other inspectors’ results are not acceptable. In this case, it must either permit or block the connection (at the ALE\_AUTH\_CONNECT layer).
-
- 
 

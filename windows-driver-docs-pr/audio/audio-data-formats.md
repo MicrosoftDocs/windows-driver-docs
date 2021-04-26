@@ -1,7 +1,6 @@
 ---
 title: Audio Data Formats
 description: Audio Data Formats
-ms.assetid: e16c10ea-0193-4cf4-91a3-4f8d4a0d5cf6
 keywords:
 - data formats WDK audio
 - formats WDK audio , data
@@ -24,7 +23,7 @@ ms.localizationpriority: medium
 ## <span id="audio_data_formats"></span><span id="AUDIO_DATA_FORMATS"></span>
 
 
-To specify the data format for a wave audio stream, the [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure is followed immediately by either a [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or [**KSDSOUND\_BUFFERDESC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdsound_bufferdesc) structure, and the **Specifier** member of KSDATAFORMAT is accordingly set to one of the following two values:
+To specify the data format for a wave audio stream, the [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure is followed immediately by either a [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) or [**KSDSOUND\_BUFFERDESC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdsound_bufferdesc) structure, and the **Specifier** member of KSDATAFORMAT is accordingly set to one of the following two values:
 
 -   KSDATAFORMAT\_SPECIFIER\_WAVEFORMATEX
 

@@ -1,7 +1,6 @@
 ---
 title: Mapping the COPP DDI to DirectDraw and DirectX VA
 description: Mapping the COPP DDI to DirectDraw and DirectX VA
-ms.assetid: 737dabab-39f0-44fd-9d34-56d812ffde88
 keywords:
 - copy protection WDK COPP , mapping COPP DDI
 - video copy protection WDK COPP , mapping COPP DDI
@@ -24,7 +23,7 @@ COPP functionality must be accessed through the [motion compensation callback fu
 
 The COPP DDI can be mapped to the motion compensation callback functions because they do not use typed parameters (that is, their single parameter is a pointer to a structure). In other words, the information in the single parameter that is passed to a motion compensation callback function can be processed according to its information type.
 
-For example, if **DXVA\_COPPGetCertificateLengthFnCode**-type information is passed to the [*DdMoCompRender*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) function, then *DdMoCompRender* can initiate a call to the [*COPPGetCertificateLength*](./coppgetcertificatelength.md) function of the COPP DDI to query for the length in bytes of the certificate used by the graphics hardware. However, if **DXVA\_COPPSequenceStartFnCode**-type information is passed to *DdMoCompRender* instead, then *DdMoCompRender* can initiate a call to the [*COPPSequenceStart*](./coppsequencestart.md) function of the COPP DDI to indicate the start of a protected command and status sequence on the current video session.
+For example, if **DXVA\_COPPGetCertificateLengthFnCode**-type information is passed to the [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) function, then *DdMoCompRender* can initiate a call to the [*COPPGetCertificateLength*](./coppgetcertificatelength.md) function of the COPP DDI to query for the length in bytes of the certificate used by the graphics hardware. However, if **DXVA\_COPPSequenceStartFnCode**-type information is passed to *DdMoCompRender* instead, then *DdMoCompRender* can initiate a call to the [*COPPSequenceStart*](./coppsequencestart.md) function of the COPP DDI to indicate the start of a protected command and status sequence on the current video session.
 
 The following topics describe how the COPP DDI is mapped to the motion compensation callback functions:
 

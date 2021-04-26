@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT
 description: The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified media time from one supported format to another.
-ms.assetid: a465bfcf-85eb-4b14-b614-e26edff6f9bb
 keywords: ["KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>None</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat" data-raw-source="[&lt;strong&gt;KSP_TIMEFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)"><strong>KSP_TIMEFORMAT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat" data-raw-source="[&lt;strong&gt;KSP_TIMEFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)"><strong>KSP_TIMEFORMAT</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -82,6 +81,4 @@ Requirements
 [**KSP\_TIMEFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
 

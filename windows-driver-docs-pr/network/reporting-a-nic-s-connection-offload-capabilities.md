@@ -1,7 +1,6 @@
 ---
 title: Reporting a NIC's Connection Offload Capabilities
 description: Reporting a NIC's Connection Offload Capabilities
-ms.assetid: a9bf798b-382c-4904-b0b2-ed1e54f9c36b
 keywords:
 - connection offload WDK TCP/IP transport , reporting capabilities
 - reporting connection offload capabilities

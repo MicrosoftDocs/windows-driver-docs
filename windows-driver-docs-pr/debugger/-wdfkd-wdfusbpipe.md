@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfusbpipe
 description: The wdfkd.wdfusbpipe extension displays information about a Kernel-Mode Driver Framework (KMDF) USB pipe object's I/O target.
-ms.assetid: 6ae335c4-ac86-4f8c-b22d-cedad72e9cab
 keywords: ["wdfkd.wdfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

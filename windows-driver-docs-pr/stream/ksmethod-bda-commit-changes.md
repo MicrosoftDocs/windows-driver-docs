@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_COMMIT\_CHANGES
 description: Clients use KSMETHOD\_BDA\_COMMIT\_CHANGES to commit a list of requested changes.
-ms.assetid: f6572a4e-2328-4157-80f7-110e0fe58a4f
 keywords: ["KSMETHOD_BDA_COMMIT_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref

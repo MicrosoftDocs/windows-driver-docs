@@ -1,7 +1,6 @@
 ---
 title: Automatic Checks
 description: Automatic Checks
-ms.assetid: ec3cb6a4-d990-4830-914c-064f6c79371a
 keywords:
 - automatic checks WDK Driver Verifier
 - IRQL monitoring WDK Driver Verifier
@@ -100,7 +99,7 @@ Starting in Windows 7, Driver Verifier checks for synchronization objects from s
 
 Synchronization objects must be nonpageable. They must also live in the global, system-wide virtual address space.
 
-A graphics driver can allocate session memory by calling APIs such as [**EngAllocMem**](/windows/desktop/api/winddi/nf-winddi-engallocmem). Unlike the global address space, the session address space is virtualized for each Terminal Server session. This means that the same virtual address that is used in the context of two different sessions refers to two different objects. The Windows kernel must be able to access synchronization objects from any Terminal Server session. Trying to reference a session memory address from a different session has unpredictable results, such as system crashes or silent corruption of another session’s data.
+A graphics driver can allocate session memory by calling APIs such as [**EngAllocMem**](/windows/win32/api/winddi/nf-winddi-engallocmem). Unlike the global address space, the session address space is virtualized for each Terminal Server session. This means that the same virtual address that is used in the context of two different sessions refers to two different objects. The Windows kernel must be able to access synchronization objects from any Terminal Server session. Trying to reference a session memory address from a different session has unpredictable results, such as system crashes or silent corruption of another session’s data.
 
 Starting in Windows 7, when a verified driver initializes a synchronization object by calling APIs such as [**KeInitializeEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeevent) or [**KeInitializeMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializemutex), Driver Verifier checks whether the address of the object falls inside the session virtual address space. If Driver Verifier detects this kind of incorrect address, it issues a [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md), with a parameter 1 value of 0xDF.
 

@@ -1,7 +1,6 @@
 ---
 title: Audio Data Ranges
 description: Audio Data Ranges
-ms.assetid: 690fafda-fb35-43da-9de1-6cbc3bf8eb6c
 keywords:
 - data ranges WDK audio
 - range values WDK audio

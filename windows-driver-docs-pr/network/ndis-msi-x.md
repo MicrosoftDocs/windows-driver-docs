@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS MSI-X
 description: Overview of NDIS MSI-X
-ms.assetid: 5bb374c8-9354-42d3-9754-42e8ff42bdb9
 keywords:
 - miniport drivers WDK networking , MSI-X
 - NDIS miniport drivers WDK , MSI-X
@@ -27,7 +26,7 @@ Miniport drivers that support MSI-X can specify an *interrupt affinity*, which i
 
 MSI-X support can provide significant performance benefits, especially for network interface cards (NICs) that support receive side scaling (RSS). For more information about receive side scaling, see [Receive Side Scaling](./receive-side-scaling-version-2-rssv2-.md).
 
-For more information about line-based interrupts, see [Managing Interrupts](managing-interrupts.md).
+For more information about line-based interrupts, see [Managing Interrupts](registering-and-deregistering-interrupts.md).
 
 This section includes:
 

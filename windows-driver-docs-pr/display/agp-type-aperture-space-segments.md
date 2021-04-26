@@ -1,7 +1,6 @@
 ---
 title: AGP-Type Aperture-Space Segments
 description: AGP-Type Aperture-Space Segments
-ms.assetid: a531f79e-541a-4454-8337-19a99aa046ae
 keywords:
 - memory segments WDK display , AGP-type aperture-space segments
 - AGP-type aperture-space segments WDK display

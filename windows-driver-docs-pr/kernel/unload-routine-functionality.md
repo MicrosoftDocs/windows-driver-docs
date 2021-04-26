@@ -1,7 +1,6 @@
 ---
 title: Unload Routine Functionality
 description: Unload Routine Functionality
-ms.assetid: a36b4687-df1d-498f-b9f3-d13ae2a9a3cd
 keywords: ["Unload routines WDK kernel , functionality"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

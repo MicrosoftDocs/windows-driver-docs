@@ -1,7 +1,6 @@
 ---
 title: Setting the Current Header-Data Split Configuration
 description: Setting the Current Header-Data Split Configuration
-ms.assetid: b5b20ce8-1522-4729-8d0a-bc2d2c5afff2
 keywords:
 - header-data split WDK , configuration
 - current header-data split configuration WDK networking

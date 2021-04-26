@@ -1,7 +1,6 @@
 ---
 title: Installing the radio manager DLL
 description: To install the radio manager DLL, you’ll need to follow the steps below.
-ms.assetid: 49D9DF01-2440-49DE-91C3-2DCAF8CA1C64
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Other Implementation Issues for Audio Drivers
 description: Other Implementation Issues for Audio Drivers
-ms.assetid: 22c3dd79-30af-4ece-a343-2149c38c6caf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

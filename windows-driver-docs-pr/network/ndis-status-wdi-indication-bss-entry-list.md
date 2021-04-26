@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST to inform the host about updates to the BSS entries. This is an unsolicited indication and can be sent at any time.
-ms.assetid: 5b9fd7b1-0817-4b86-9acc-b4f99cb7ae9a
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST Network Drivers Starting with Windows Vista

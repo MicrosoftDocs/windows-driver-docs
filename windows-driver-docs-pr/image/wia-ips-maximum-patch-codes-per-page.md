@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_MAXIMUM\_PATCH\_CODES\_PER\_PAGE
 description: The WIA\_IPS\_MAXIMUM\_PATCH\_CODES\_PER\_PAGE property describes the maximum number of patch codes that the device can and should detect on one document page side when patch code detection is enabled.
-ms.assetid: 91A0DAC0-D8F3-48BB-9DD4-AF50BD8F09AB
 keywords: ["WIA_IPS_MAXIMUM_PATCH_CODES_PER_PAGE Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: APN database overview
 description: APN database overview
-ms.assetid: 699b797e-c225-47ba-96a5-26b15c91a759
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

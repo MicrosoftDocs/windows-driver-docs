@@ -22,4 +22,4 @@ The **KSPROPERTYSETID\_NetworkCameraControl** property set contains the followin
 
 [**KSPROPERTY_NETWORKCAMERACONTROL_URI**](./ksproperty-networkcameracontrol-uri.md)
 
-These property names are defined in the [KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_networkcameracontrol_property) enumeration.
+These property names are defined in the [KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_networkcameracontrol_property) enumeration.

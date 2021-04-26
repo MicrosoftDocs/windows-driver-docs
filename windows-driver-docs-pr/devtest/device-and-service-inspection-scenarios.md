@@ -1,7 +1,6 @@
 ---
 title: Device and Service Inspection Scenarios
 description: Device and Service Inspection Scenarios
-ms.assetid: 25e6ed92-e01c-4349-a614-b71bb08d71cd
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios
@@ -43,9 +42,9 @@ The following table describes this scenario.
 |1.3.5|Display ThisModel metadata.|Nothing|Corresponds to what was sent. For an example of the client output, see [Sample Metadata Response Output](sample-metadata-response-output.md).|
 |1.3.6|Display Host, HostedService, EndpointReference.|Nothing|Corresponds to what was sent. For an example of the client output, see [Sample Metadata Response Output](sample-metadata-response-output.md).|
 |1.3.7|Send a Probe that specifies the following:</br>- Use the default matching rule.</br>- Type to be matched: **wsdp:Device**. (.See the namespace table above, as well as R1020 in the Device Profile for Web Services.)</br>- No wsd:Scopes element.|Responds with a ProbeMatches.|The value for the **wsa:EndpointReference/wsa:Address** is the same as in step 1.2.1.|
-|1.3.8|Send a Probe that specifies the following:</br>- Use a matching rule that is defined in the [Web Services Dynamic Discovery (WS-Discovery)](https://schemas.xmlsoap.org/ws/2005/04/discovery/) specification.</br>- No wsd:Types element.</br>- Use the following as a scope *testdevice*.|Responds with a ProbeMatches.|The value for the **wsa:EndpointReference/wsa:Address** is the same as in step 1.2.1.|
-|1.3.9|Send a Probe that specifies the following:</br>- Use the [Devices Profile for Web Services](https://schemas.xmlsoap.org/ws/2006/02/devprof/) matching rule.</br>- No **wsd:Types** element.</br>- Use the following as a scope *testDEVICE*.|Nothing. This test does not respond with a ProbeMatches.|No message is received; wait 10 seconds.|
-|1.3.10|Send a Probe that specifies the following:</br>- Use the default matching rule.</br>- Use a fictional type to be matched: (for example, https://example.org/this/wont/work:Device).</br>- No **wsd:Scopes** element.|Nothing. This test does not respond with a ProbeMatches.|No message is received; wait 10 seconds.|
+|1.3.8|Send a Probe that specifies the following:</br>- Use a matching rule that is defined in the [Web Services Dynamic Discovery (WS-Discovery)](https://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html) specification.</br>- No wsd:Types element.</br>- Use the following as a scope *testdevice*.|Responds with a ProbeMatches.|The value for the **wsa:EndpointReference/wsa:Address** is the same as in step 1.2.1.|
+|1.3.9|Send a Probe that specifies the following:</br>- Use the [Devices Profile for Web Services](https://docs.oasis-open.org/ws-dd/ns/dpws/2009/01) matching rule.</br>- No **wsd:Types** element.</br>- Use the following as a scope *testDEVICE*.|Nothing. This test does not respond with a ProbeMatches.|No message is received; wait 10 seconds.|
+|1.3.10|Send a Probe that specifies the following:</br>- Use the default matching rule.</br>- Use a fictional type to be matched, for example, `https://example.org/this/wont/work:Device`.</br>- No **wsd:Scopes** element.|Nothing. This test does not respond with a ProbeMatches.|No message is received; wait 10 seconds.|
 |**1.4**|**Directed Probes**| | |
 |1.4.1|Send a wildcard Probe as an HTTP request:</br>- Use the default matching rule.</br>- No **wsd:Types** element.</br>- No **wsd:Scopes** element.</br>- The HTTP address is supplied.|Responds with a ProbeMatches that uses HTTP response.|Confirm that the **wsa:EndpointReference/wsa:Address** for the TestDevice is correct.|
 |**1.5**|**Obtaining Metadata without discovery**| | |

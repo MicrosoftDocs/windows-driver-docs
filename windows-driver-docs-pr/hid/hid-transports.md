@@ -1,7 +1,6 @@
 ---
 title: HID Transport Overview
 description: HID Transport Overview
-ms.assetid: E442CB87-992B-475A-A97F-9C22468BA877
 keywords:
 - HID Transports
 - USB transport

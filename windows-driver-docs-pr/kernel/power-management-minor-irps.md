@@ -2,7 +2,6 @@
 title: Power Management Minor IRPs
 description: Power Management Minor IRPs
 ms.date: 08/12/2017
-ms.assetid: 8af0609f-168b-4455-aae8-1a3c9e40ed47
 ms.localizationpriority: medium
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Low Power on Media Disconnect
 description: Low Power on Media Disconnect
-ms.assetid: 592f3835-47ec-443a-9ab5-e700fed2f7f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -74,7 +73,7 @@ When the media is reconnected the following sequence occurs:
 
 Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WAKE\_REASON**](./ndis-status-pm-wake-reason.md) status indications, it must issue this status notification if the network adapter wakes the system. The driver issues this status notification while it is handling the OID set request of [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md) for the transition to a full-power (D0) state.
 
-For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
+For more information, see [NDIS Wake Reason Status Indications](overview-of-ndis-wake-reason-statue-indications.md).
 
 **Note**  If the miniport driver issues an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](./ndis-status-pm-wake-reason.md) status indication, it must do this before it issues the [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication.
 

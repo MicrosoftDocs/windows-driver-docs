@@ -1,7 +1,6 @@
 ---
 title: PackageInfo XML schema overview
 description: PackageInfo XML schema overview
-ms.assetid: 5873604e-564e-4c8e-bfc7-526aac5767fa
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

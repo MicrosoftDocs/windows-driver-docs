@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA
 description: This extended property control is used by the client to query the driver for the metadata buffer requirements.
-ms.assetid: 6196DFF6-050A-4916-A188-70A89B60B5EA
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA Streaming Media Devices"]
 topic_type:
 - apiref
@@ -84,7 +83,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_METADATAINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo)"><strong>KSCAMERA_EXTENDEDPROP_METADATAINFO</strong></a>),</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_METADATAINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo)"><strong>KSCAMERA_EXTENDEDPROP_METADATAINFO</strong></a>),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>

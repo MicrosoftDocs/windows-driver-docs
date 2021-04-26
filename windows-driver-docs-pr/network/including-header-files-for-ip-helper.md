@@ -1,7 +1,6 @@
 ---
 title: Including Header Files for IP Helper
 description: Including Header Files for IP Helper
-ms.assetid: f4642717-223c-425a-8389-cbbc75567ae3
 keywords:
 - IP Helper WDK networking , including header files
 - header files WDK IP Helper

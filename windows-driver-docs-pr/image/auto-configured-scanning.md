@@ -1,7 +1,6 @@
 ---
 title: Auto-Configured Scanning
 description: Auto-Configured Scanning
-ms.assetid: 6904e216-3eb7-419f-a6ca-198defaeebe0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

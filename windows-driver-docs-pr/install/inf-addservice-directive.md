@@ -1,7 +1,6 @@
 ---
 title: INF AddService Directive
 description: An AddService directive is used within an INF DDInstall.Services section or INF DefaultInstall.Services section.
-ms.assetid: 3314da8b-3fde-462a-a64d-a0514710663a
 keywords:
 - INF AddService Directive Device and Driver Installation
 topic_type:
@@ -281,7 +280,7 @@ Specifies the service trigger event type in one of the following numeric values,
 **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL)
 Indicates that event is triggered when a device of the specified device interface class arrives or is present when the system starts. 
 
-For more information, see [SERVICE_TRIGGER structure](/windows/desktop/api/winsvc/ns-winsvc-_service_trigger)
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger)
 
 **Action**=*action-type*
 
@@ -291,7 +290,7 @@ Specifies the action to take when the specified trigger event occurs.
 
 **0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP) stops the service when the specified trigger event occurs.
 
-For more information, see [SERVICE_TRIGGER structure](/windows/desktop/api/winsvc/ns-winsvc-_service_trigger)
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger)
 
 **SubType**=*trigger-subtype*
 
@@ -299,7 +298,7 @@ Specifies a GUID that identifies the trigger event subtype. The value depends on
 
 When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL), **SubType** specifies the GUID that identifies the device interface class.
 
-For more information, see [SERVICE_TRIGGER structure](/windows/desktop/api/winsvc/ns-winsvc-_service_trigger).
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger).
 
 **DataItem**=*data-type, data*
 
@@ -307,7 +306,7 @@ Optionally specifies the trigger-specific data for a service trigger event.
 
 When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL), an optional DataItem may be specified with a data-type of **0x2** (SERVICE_TRIGGER_DATA_TYPE_STRING) to scope the device interface class to a specific hardware ID or compatible ID.
 
-For more information, see [SERVICE_TRIGGER_SPECIFIC_DATA_ITEM structure](/windows/desktop/api/winsvc/ns-winsvc-_service_trigger_specific_data_item)
+For more information, see [SERVICE_TRIGGER_SPECIFIC_DATA_ITEM structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger_specific_data_item)
 
 The best practice for using the **AddTrigger** directive is to trigger start the service on device interface arrival. For more information, see [Win32 Services Interacting with Devices](./best-practices-win32services-interacting-with-devices.md).
 

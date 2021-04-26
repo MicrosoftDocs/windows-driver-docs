@@ -1,7 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1903
-description: This section describes new features for driver development in Windows 10.
-ms.assetid: 90f7754d-be7a-408d-8b89-b173a86c4fa3
+description: Learn about new features for driver development in Windows 10, such as camera driver features IR Torch and the USB Video Class 1.5 extension.
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ The following is a list of new and updated Audio features in Windows 10, version
 * New Far Field Audio information: 
     * [PKEY_Devices_AudioDevice_Microphone_IsFarField](./audio/pkey-devices-audiodevice-microphone-isfarfield.md)
     * [KSPROPSETID_InterleavedAudio](./audio/kspropsetid-interleavedaudio.md)
-    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://review.docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
+    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](./audio/ksproperty-interleavedaudio-formatinformation.md)
     
 * New jack description information in [USB Audio 2.0 Drivers](./audio/usb-2-0-audio-drivers.md).
 
@@ -75,7 +74,7 @@ New headers that support this feature include the following:
 
 * [Ring.h](/windows-hardware/drivers/ddi/ring/index)
 * [Ringcollection.h](/windows-hardware/drivers/ddi/ringcollection/index)
-* [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/index)
+* Netringiterator.h
 
 The following is a list of NetAdapterCx content updates:
 
@@ -114,7 +113,7 @@ The following features were added to Mobile broadband in Windows 10, version 190
 * New [SIM card (UICC) file/application system access](./network/mb-uicc-application-and-file-system-access.md) feature
 * New [Cellular Time Information (NITZ)](./network/mb-nitz-support.md) feature.
 * New [modem logging with DSS](./network/mb-modem-logging-with-dss.md) feature.
-* New [5G data class support](./network/mb-5g-data-class-support.md) feature.
+* New [5G data class support](./network/mb-5g-operations-overview.md) feature.
 
 ## Power Management Framework
 
@@ -170,11 +169,11 @@ To see what was added in previous versions of WDF, see [KMDF Version History](./
 
 Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
 
+* [Using WHEA on Windows 10](./whea/using-whea-on-windows-10.md)
 * [**WheaAddErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
 * [**WheaReportHwErrorDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
 * [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)
 * [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_error_source_configuration_device_driver)
-* [*WHEA_ERROR_SOURCE_READY_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_ready_device_driver)
 * [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver)
 * [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver)
 

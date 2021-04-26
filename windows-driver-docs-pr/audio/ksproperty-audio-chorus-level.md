@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CHORUS\_LEVEL
 description: The KSPROPERTY\_AUDIO\_CHORUS\_LEVEL property specifies the chorus level. This is a property of a chorus node (KSNODETYPE\_CHORUS).
-ms.assetid: 80541b2c-0fb3-4306-8ed2-e524b5a4c113
 keywords: ["KSPROPERTY_AUDIO_CHORUS_LEVEL Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_CHORUS\_LEVEL property specifies the chorus level. This i
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -94,6 +93,4 @@ Requirements
 [**KSNODETYPE\_CHORUS**](ksnodetype-chorus.md)
 
 [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
 

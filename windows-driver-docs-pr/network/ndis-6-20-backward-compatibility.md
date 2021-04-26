@@ -1,7 +1,6 @@
 ---
 title: NDIS 6.20 Backward Compatibility
 description: NDIS 6.20 Backward Compatibility
-ms.assetid: a2d71cae-aed2-4c23-9ad2-5c32d4ab2294
 keywords:
 - NDIS 6.20 WDK , backward compatibility
 - backward compatibility WDK NDIS 6.20
@@ -33,7 +32,7 @@ NDIS 5.x and earlier NDIS drivers are deprecated in Microsoft Windows versions a
 
 IrDA miniport drivers will not be supported in Microsoft Windows versions after Windows 7.
 
-[IPsec task offload version 1](ipsec-offload-version-1.md) will not be supported in Microsoft Windows versions after Windows 7. All drivers that support IPsec task offload should be updated to support [IPsec task offload version 2](./introduction-to-ipsec-offload-version-2.md).
+[IPsec task offload version 1](background-reading-on-ipsec.md) will not be supported in Microsoft Windows versions after Windows 7. All drivers that support IPsec task offload should be updated to support [IPsec task offload version 2](./introduction-to-ipsec-offload-version-2.md).
 
 Filter intermediate drivers will not be supported in Microsoft Windows versions after Windows 7. You should use the NDIS 6.0 filter drivers interface. For more information about filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers.md).
 

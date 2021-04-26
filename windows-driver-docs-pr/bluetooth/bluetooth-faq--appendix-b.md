@@ -1,7 +1,6 @@
 ---
 title: An Example of a Vendor-Provided INF File in Windows Vista
 description: This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf.
-ms.assetid: 37865571-D632-4A69-A2AB-D0B2570A6F9D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -89,7 +88,7 @@ SourceDisk       = "Windows Vista CD"
 
 1. The **Version** section should have the **CLASSGUID** and **DriverVer** directives set as follows:
     - **CLASSGUID**: Use the Microsoft class GUID for Bluetooth devices ({e0cbf06c cd8b-4647-bb8a-263b43f0f974}), not a third-party GUID.
-    - **DriverVer**: If you want to supersede the default in-box driver, the driver version must be set to provide a higher ranking match than what is in Bth.inf. For more information about configuring a driver to supersede the default in box driver, see [Installing Private Builds of Inbox Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-).
+    - **DriverVer**: If you want to supersede the default in-box driver, the driver version must be set to provide a higher ranking match than what is in Bth.inf. For more information about configuring a driver to supersede the default in box driver, see [Installing Private Builds of Inbox Drivers](../install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md).
 
 2. Hardware IDs. The combination of the VID and the PID must be unique to the manufacturer and device. This ensures that the same hardware ID does not correspond to multiple devices.
 3. **Include** and **Needs** directives. The **Include** directives in these three sections reference Bth.inf. The **Needs** directives indicate which sections from Bth.inf should be processed during device installation.

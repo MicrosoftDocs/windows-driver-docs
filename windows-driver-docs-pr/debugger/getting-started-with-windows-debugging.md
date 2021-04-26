@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Windows Debugging
 description: This section covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see Crash dump analysis using the Windows debuggers (WinDbg).
-ms.assetid: 4981928E-A33D-4F60-AAA0-124C360B7E03
 ms.date: 08/23/2018
 ms.localizationpriority: high 
 ---
@@ -86,7 +85,7 @@ There are multiple debugging extensions that provide parsing of domain-specific 
 
 ## 12. Learn about related Windows internals
 
-This documentation assumes a knowledge of Windows internals. To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/learn/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
+This documentation assumes a knowledge of Windows internals. To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
 
 ## 13. Review additional debugging resources
 

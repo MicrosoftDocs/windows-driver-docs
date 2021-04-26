@@ -602,7 +602,7 @@ SimpleMediaSource::GetEvent(
     }
 
     // Now get the event.
-    RETURN_IF_FAILED (_spEventQueue->GetEvent(dwFlags, ppEvent));
+    RETURN_IF_FAILED (spQueue->GetEvent(dwFlags, ppEvent));
 
     return hr;
 }

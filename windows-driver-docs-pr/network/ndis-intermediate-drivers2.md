@@ -1,7 +1,6 @@
 ---
 title: NDIS Intermediate Drivers Guide
 description: NDIS Intermediate Drivers Guide
-ms.assetid: 773d9711-fdea-4541-bb0d-6b07b50892fc
 keywords:
 - intermediate drivers WDK networking
 - network drivers WDK , intermediate drivers
@@ -23,7 +22,7 @@ NDIS intermediate drivers interface between upper-level protocol drivers and min
 
 -   Monitoring and collecting of network data statistics.
 
-Before attempting to write an intermediate driver, you should read about NDIS miniport and protocol drivers. For more information about NDIS miniport drivers, see [NDIS Miniport Drivers](ndis-miniport-drivers.md). For more information about NDIS protocol drivers, see [NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md).
+Before attempting to write an intermediate driver, you should read about NDIS miniport and protocol drivers. For more information about NDIS miniport drivers, see [NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md). For more information about NDIS protocol drivers, see [NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md).
 
 The following sections introduce intermediate drivers and describe how to create and install such drivers:
 

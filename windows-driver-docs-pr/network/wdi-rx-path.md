@@ -1,7 +1,6 @@
 ---
 title: WDI RX path
 description: This section describes the WDI RX path
-ms.assetid: EEEA7181-4A24-4F40-8A44-65EC38D1A867
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

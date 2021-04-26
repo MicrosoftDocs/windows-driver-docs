@@ -1,7 +1,6 @@
 ---
 title: IOCTL\_COPP\_Command control code
 description: Performs an operation on a COPP DirectX VA device.
-ms.assetid: 8593da3d-8e94-4820-91ce-92eb6d624a40
 keywords: ["IOCTL_COPP_Command control code Display Devices"]
 topic_type:
 - apiref

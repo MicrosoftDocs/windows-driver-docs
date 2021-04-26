@@ -1,7 +1,6 @@
 ---
 title: MIDI Stream Data Range
 description: MIDI Stream Data Range
-ms.assetid: 392eadf7-9c6e-4527-bc84-a2916623c154
 keywords:
 - MIDI stream data ranges WDK audio
 ms.date: 04/20/2017

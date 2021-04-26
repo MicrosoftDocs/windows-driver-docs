@@ -1,7 +1,6 @@
 ---
 title: MPEG-2 (H.262)
 description: MPEG-2 (H.262)
-ms.assetid: d3dbc39f-f749-461b-9928-fa4bf3c72b68
 keywords:
 - MPEG-2 WDK DirectX VA
 - H.262 WDK DirectX VA

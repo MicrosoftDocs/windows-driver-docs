@@ -1,7 +1,6 @@
 ---
 title: Road map for the Windows Display Driver Model (WDDM)
 description: Road map for Developing Drivers for the Windows Display Driver Model (WDDM)
-ms.assetid: 4f7ea2f4-ca2f-4b1d-97be-fb22e81c8080
 ms.date: 12/06/2018
 ms.localizationpriority: medium
 ms.custom: seodec18

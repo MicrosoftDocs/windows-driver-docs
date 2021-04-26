@@ -1,7 +1,6 @@
 ---
 title: Color Attributes
 description: Color Attributes
-ms.assetid: c8de0186-9cf5-43e5-81e7-33351a34c13c
 keywords:
 - color attributes WDK Unidrv
 - general printer attributes WDK Unidrv , color
@@ -51,7 +50,7 @@ The following table lists the color attributes.
 <tr class="even">
 <td><p><strong></em>EnableGDIColorMapping</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>. Indicates whether GDI should perform gamut mapping from display to printer color space.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, Unidrv sets the HT_FLAG_DO_DEVCLR_XFORM flag in the <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a> structure.</p></td>
+<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, Unidrv sets the HT_FLAG_DO_DEVCLR_XFORM flag in the <a href="/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><em>MagentaInCyanDye</strong></p></td>
@@ -86,6 +85,4 @@ The color optimization controlled by the **\*ChangeColorModeOnDoc?** color attri
  
 
 For examples of the color attributes listed on this page, see the [sample GPD files](sample-gpd-files.md).
-
- 
 

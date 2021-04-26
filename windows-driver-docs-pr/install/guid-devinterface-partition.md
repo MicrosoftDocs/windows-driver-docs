@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_PARTITION
 description: GUID_DEVINTERFACE_PARTITION
-ms.assetid: c489b62a-167d-47a9-bfeb-fdd40cc8dece
 keywords: ["GUID_DEVINTERFACE_PARTITION Device and Driver Installation"]
 topic_type:
 - apiref

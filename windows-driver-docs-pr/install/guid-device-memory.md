@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_MEMORY
 description: GUID_DEVICE_MEMORY
-ms.assetid: 8351585d-6538-41aa-891a-b7c1e0b75cef
 keywords: ["GUID_DEVICE_MEMORY Device and Driver Installation"]
 topic_type:
 - apiref

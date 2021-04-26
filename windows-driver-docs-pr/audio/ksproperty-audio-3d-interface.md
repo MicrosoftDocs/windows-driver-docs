@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_3D\_INTERFACE
 description: The KSPROPERTY\_AUDIO\_3D\_INTERFACE property specifies the 3D algorithm to use to process the data in the sound buffer.
-ms.assetid: 76c56e61-23ef-43ad-b66b-2412fd247b6e
 keywords: ["KSPROPERTY_AUDIO_3D_INTERFACE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_3D\_INTERFACE property specifies the 3D algorithm to use 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>GUID</p></td>
 </tr>
 </tbody>
@@ -93,6 +92,4 @@ Requirements
 [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_3D\_EFFECTS**](ksnodetype-3d-effects.md)
-
- 
 

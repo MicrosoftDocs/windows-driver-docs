@@ -1,7 +1,6 @@
 ---
 title: wudfext.umirps
 description: The wudfext.umirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process.
-ms.assetid: bba78784-f4f5-432c-ad5e-837770de79d9
 keywords: ["wudfext.umirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

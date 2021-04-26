@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_COMPORT
 description: GUID_DEVINTERFACE_COMPORT
-ms.assetid: ce7fbe64-1445-4702-898e-2fc92f96ebf9
 keywords: ["GUID_DEVINTERFACE_COMPORT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for serial ports register instances of this device interface class to notify the operating system and applications of the presence of COM ports.
 
-The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](/previous-versions/ff547451(v=vs.85)).
+The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](../serports/using-serial-sys-and-serenum-sys.md).
 
 The following samples (on Github) register an instance of this class for a serial port:
 
@@ -84,6 +83,4 @@ Requirements
 
 
 [**GUID_CLASS_COMPORT**](guid-class-comport.md)
-
- 
 

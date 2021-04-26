@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_GETREADPACKET
 description: KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio packets.
-ms.assetid: BA52CDCE-0178-4C90-A82C-15800DD3709E
 keywords: ["KSPROPERTY_RTAUDIO_GETREADPACKET Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Write a Hello World Windows Driver (KMDF)
 description: This topic describes how to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-ms.assetid: B4200732-67B5-4BD9-8852-81387912A9A4
 keywords:
 - KMDF Hello World
 ms.date: 04/20/2018
@@ -13,9 +12,9 @@ ms.localizationpriority: medium
 
 This topic describes how to write a very small [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
 
-To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=698539), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and the [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
+To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=698539), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
 
-[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 
 ## Create and build a driver
 
@@ -60,6 +59,10 @@ Now that you've created your empty Hello World project and added the Driver.c so
     #include <ntddk.h>
     #include <wdf.h>
     ```
+
+    > [!TIP]
+    > If you can't add `Ntddk.h`, open **Configuration -> C/C++ -> General -> Additional Include Directories** and add `C:\Program Files (x86)\Windows Kits\10\Include\<build#>\km`, replacing `<build#>` with the appropriate directory in your WDK installation.
+    > 
 
     [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
 
@@ -315,10 +318,10 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
 4. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    -   [lm](https://go.microsoft.com/fwlink/p?linkid=399236)
-    -   [.sympath](https://go.microsoft.com/fwlink/p?linkid=399238)
-    -   [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
-    -   [x KmdfHelloWorld!\*](https://go.microsoft.com/fwlink/p?linkid=399240)
+    -   [lm](./device-nodes-and-device-stacks.md)
+    -   [.sympath](../debugger/-sympath--set-symbol-path-.md)
+    -   [.reload](../debugger/-reload--reload-module-.md)
+    -   [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
 
 5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
@@ -334,7 +337,7 @@ For more information about remote debugging, see [Remote Debugging Using WinDbg]
 
 [Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p?linkid=399234)
 
-[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](../debugger/index.md)
 
 [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 

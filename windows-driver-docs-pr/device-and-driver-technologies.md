@@ -1,7 +1,6 @@
 ---
 title: Overview of Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
-ms.assetid: 1ef3e216-1322-42c3-b070-94cddfb2133c
 ms.date: 01/30/2018
 ms.localizationpriority: medium
 ---
@@ -28,6 +27,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Battery Drivers](battery/index.md)
 - [Biometric Drivers](biometric/index.md)
 - [Bluetooth Drivers](bluetooth/index.md)
+- [Component Firmware Update (CFU)](cfu/index.md)
 - [Display drivers](display/index.md)
 - [File system drivers](ifs/index.md)
 - [Global Navigation Satellite System (GNSS) drivers](gnss/index.md)
@@ -55,6 +55,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Smartcard device drivers](smartcard/index.md)
 - [Simple Peripheral Bus (SPB) drivers](spb/index.md)
 - [Storage device drivers](storage/index.md)
+- [Storage Firmware Update (SFU)](sfu/index.md)
 - [Streaming media device drivers](stream/index.md)
 - [Test Authoring and Execution Framework (TAEF)](taef/index.md)
 - [Universal Serial Bus (USB)](usbcon/index.md)

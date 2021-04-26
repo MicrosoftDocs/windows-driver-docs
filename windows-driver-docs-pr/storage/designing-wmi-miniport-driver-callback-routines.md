@@ -1,7 +1,6 @@
 ---
 title: Designing WMI Miniport Driver Callback Routines
 description: Designing WMI Miniport Driver Callback Routines
-ms.assetid: 3bf5b214-e09c-48bc-832b-d0efd3bc8875
 keywords:
 - WMI SRBs WDK storage , designing callback routines
 - callback routines WDK WMI SRBs

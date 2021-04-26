@@ -1,7 +1,6 @@
 ---
 title: Write a MBB-NetAdapterCx client driver
 description: Describes the behavior of MBB-NetAdapter class extension and tasks that a client driver must perform for the MBB moderm.
-ms.assetid: FE69E832-848F-475A-9BF1-BBB198D08A86
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
 ms.date: 03/19/2018
@@ -21,14 +20,14 @@ INF files for MBBCx client drivers are the same as other NetAdapterCx client dri
 
 In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), an MBB client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1. Call [**MbbDeviceInitConfig**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdeviceinitconfig) after calling [*NetAdapterDeviceInitConfig*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterdeviceinitconfig) but before calling [*WdfDeviceCreate*](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE\_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
+1. Call [**MBB_DEVICE_CONFIG_INIT**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbb_device_config_init) after calling [*NetDeviceInitConfig*](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [*WdfDeviceCreate*](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE\_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
 
 2. Call [**MbbDeviceInitialize**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdeviceinitialize) to register MBB device-specific callback functions using an initialized [**MBB_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/mbbcx/ns-mbbcx-_mbb_device_config) structure and the WDFDEVICE object obtained from *WdfDeviceCreate*.
 
 The following example demonstrates how to initialize the MBB device. Error handling has been left out for clarity.
 
 ```C++
-    status = NetAdapterDeviceInitConfig(deviceInit);
+    status = NetDeviceInitConfig(deviceInit);
     status = MbbDeviceInitConfig(deviceInit);
 
     // Set up other callbacks such as Pnp and Power policy
@@ -61,7 +60,7 @@ This message flow diagram illustrates the initialization process.
 
 MBBCx uses the standard MBIM control commands defined in MBIM specification Rev 1.0, sections 8, 9, and 10, for the control plane. Commands and responses are exchanged through a set of callback functions provided by the client driver and APIs provided by MBBCx. MBBCx mimics the operational model of an MBIM device, as defined in MBIM specification Rev 1.0, section 5.3, by using these function calls:
 
-- MBBCx sends an MBIM command message to the client driver by invoking its [*EvtMbbDeviceSendMbimFragment*](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/nc-mbbcx-evt_mbb_device_send_mbim_fragment) callback function. The client driver asynchronously completes this send request by calling [**MbbRequestComplete**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbrequestcomplete).
+- MBBCx sends an MBIM command message to the client driver by invoking its [*EvtMbbDeviceSendMbimFragment*](/windows-hardware/drivers/ddi/mbbcx/nc-mbbcx-evt_mbb_device_send_mbim_fragment) callback function. The client driver asynchronously completes this send request by calling [**MbbRequestComplete**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbrequestcomplete).
 - The client driver signals availability of the result by calling [**MbbDeviceResponseAvailable**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdeviceresponseavailable).
 - MBBCx fetches the MBIM response message from the client driver by invoking its [*EvtMbbDeviceReceiveMbimFragment*](/windows-hardware/drivers/ddi/mbbcx/nc-mbbcx-evt_mbb_device_receive_mbim_fragment) callback function. The client driver asynchronously completes this get-response request by calling [**MbbRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbrequestcompletewithinformation).
 - The MBB client driver may notify MBBCx of an unsolicited device event by calling **MbbDeviceResponseAvailable**. MBBCx then retrieves the information from the client driver similarly to how it fetches MBIM response messages.
@@ -94,7 +93,6 @@ In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the 
     - [**NetAdapterSetDatapathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
     - [**NetAdapterSetLinkLayerCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities)
     - [**NetAdapterSetLinkLayerMtuSize**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayermtusize)
-    - [**NetAdapterSetPowerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetpowercapabilities)
 
 MBBCx invokes this callback function at least once, so there is always one NETADPATER object for the primary PDP context/default EPS bearer. If multiple PDP contexts/EPS bearers are activated, MBBCx might invoke this callback function more times, once for every data session to be established. There must be a one-to-one relationship between the network interface represented by the NETADAPTER object and a data session, as shown in the following diagram.
 

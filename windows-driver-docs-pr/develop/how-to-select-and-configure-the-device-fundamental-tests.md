@@ -1,5 +1,4 @@
 ---
-ms.assetid: DDAF6D33-46D8-4A04-A3DC-C9FE26ABD003
 title: How to select and configure the Device Fundamentals tests
 description: The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests.
 ms.date: 04/20/2017
@@ -8,7 +7,7 @@ ms.localizationpriority: medium
 
 # How to select and configure the Device Fundamentals tests
 
-The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests. The Device Fundamentals tests are a collection of tests that are used both internally at Microsoft for testing the drivers and driver samples that ship with Windows and the WDK, and externally as part of the [Windows Certification Program for Hardware](https://go.microsoft.com/fwlink/p/?linkid=8705). You can run the tests from your development environment. When you run the tests, you can use the same parameters that are used for Windows Certification testing, or you can configure and customize the run-time parameters according to your testing and debugging needs.
+The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests. The Device Fundamentals tests are a collection of tests that are used both internally at Microsoft for testing the drivers and driver samples that ship with Windows and the WDK, and externally as part of the [Windows Certification Program for Hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)). You can run the tests from your development environment. When you run the tests, you can use the same parameters that are used for Windows Certification testing, or you can configure and customize the run-time parameters according to your testing and debugging needs.
 
 ## <span id="Getting_the_most_from_the_Device_Fundamentals_tests"></span><span id="getting_the_most_from_the_device_fundamentals_tests"></span><span id="GETTING_THE_MOST_FROM_THE_DEVICE_FUNDAMENTALS_TESTS"></span>Getting the most from the Device Fundamentals tests
 
@@ -18,7 +17,7 @@ To get the most benefit from the Device Fundamentals tests, your device must be 
 ## <span id="About_the_Device_Fundamentals_Tests"></span><span id="about_the_device_fundamentals_tests"></span><span id="ABOUT_THE_DEVICE_FUNDAMENTALS_TESTS"></span>About the Device Fundamentals Tests
 
 
-The WDK provides the Device Fundamentals tests in two configurations, Basic and Certification. In both configurations, you can edit the test parameters to vary the length of the test, the number of test cycles to perform, and other test parameters, depending upon how you want to test the targeted devices or drivers. The Basic configuration is intended for general driver and device testing and debugging. Use the Basic configuration early on and throughout the development cycle. The tests in the Basic configuration have the same settings that are used in the Windows Certification testing, with the exception of having a shorter run time. In the Certification configuration, the tests have the same settings that are used in the Windows Certification testing. Use the Certification configuration to verify readiness for testing your device or driver for the [Windows Certification Program for Hardware](https://go.microsoft.com/fwlink/p/?linkid=8705).
+The WDK provides the Device Fundamentals tests in two configurations, Basic and Certification. In both configurations, you can edit the test parameters to vary the length of the test, the number of test cycles to perform, and other test parameters, depending upon how you want to test the targeted devices or drivers. The Basic configuration is intended for general driver and device testing and debugging. Use the Basic configuration early on and throughout the development cycle. The tests in the Basic configuration have the same settings that are used in the Windows Certification testing, with the exception of having a shorter run time. In the Certification configuration, the tests have the same settings that are used in the Windows Certification testing. Use the Certification configuration to verify readiness for testing your device or driver for the [Windows Certification Program for Hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 The [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md) include tests in the following categories.
 
@@ -38,7 +37,7 @@ The [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md) include
 
 You can edit the run-time parameters for many of the Device Fundamentals tests. In the Driver Test Group window, an arrow (») next to a test name indicates that the test has parameters that you can change. Select the arrow (») to display the run-time parameters.
 
-One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](../wdtf/index.md) [SDEL](/windows-hardware/drivers/ddi/index) query that identifies the target devices. You can specify a particular device for testing, for example:
+One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](../wdtf/index.md) [SDEL](../wdtf/simple-data-evaluation-language-overview.md) query that identifies the target devices. You can specify a particular device for testing, for example:
 
 **DeviceID=’USB\\ROOT\_HUB\\4&1CD5D022&0’** selects only the device for testing with the specified **DeviceID**.
 
@@ -61,7 +60,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="DQ"></span><span id="dq"></span><em>DQ</em></p></td>
-<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/index" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](../wdtf/index.md)"><strong>WDTF</strong></a><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[SDEL](/windows-hardware/drivers/ddi/index)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
+<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="/windows-hardware/drivers/wdtf/index" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](../wdtf/index.md)"><strong>WDTF</strong></a><a href="/windows-hardware/drivers/ddi/index" data-raw-source="[SDEL](/windows-hardware/drivers/ddi/index)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
 <p>Common examples:</p>
 <p></p>
 <dl>
@@ -143,7 +142,7 @@ WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\000
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="DoConcurrentIO"></span><span id="doconcurrentio"></span><span id="DOCONCURRENTIO"></span><em>DoConcurrentIO</em></p></td>
-<td align="left"><p>True or False. Uses <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/index" data-raw-source="[WDTF](../wdtf/index.md)">WDTF</a> concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
+<td align="left"><p>True or False. Uses <a href="/windows-hardware/drivers/wdtf/index" data-raw-source="[WDTF](../wdtf/index.md)">WDTF</a> concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="FillZeroPageWithNull"></span><span id="fillzeropagewithnull"></span><span id="FILLZEROPAGEWITHNULL"></span><em>FillZeroPageWithNull</em></p></td>
@@ -298,13 +297,13 @@ WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\000
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Disable_Driver_Verifier"></span><span id="disable_driver_verifier"></span><span id="DISABLE_DRIVER_VERIFIER"></span>Disable Driver Verifier</p></td>
-<td align="left"><p>Disables <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> on the test computer.</p>
+<td align="left"><p>Disables <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> on the test computer.</p>
 <p><strong>Parameters:</strong> None</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Driver_Verifier"></span><span id="enable_driver_verifier"></span><span id="ENABLE_DRIVER_VERIFIER"></span>Enable Driver Verifier</p></td>
-<td align="left"><p>You can use this test to enable <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
-<p><strong>Parameters:</strong> - See <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier-options" data-raw-source="[Driver Verifier Options](../devtest/driver-verifier-options.md)">Driver Verifier Options</a>.</p></td>
+<td align="left"><p>You can use this test to enable <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
+<p><strong>Parameters:</strong> - See <a href="/windows-hardware/drivers/devtest/driver-verifier-options" data-raw-source="[Driver Verifier Options](../devtest/driver-verifier-options.md)">Driver Verifier Options</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -318,5 +317,3 @@ WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\000
 * [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md)
 * [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 * [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](../wdtf/to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md)
- 
-

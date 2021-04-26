@@ -1,7 +1,6 @@
 ---
 title: Tracelog Command Syntax
 description: Tracelog has commands (or actions) that start, stop, and control a trace session.
-ms.assetid: 13c85a1e-77ea-47d7-bb97-ff9141a8a531
 keywords:
 - Tracelog Command Syntax Driver Development Tools
 topic_type:

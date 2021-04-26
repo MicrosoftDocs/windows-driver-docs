@@ -1,7 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_GLOBAL_PARAMETERS
 description: Overlying drivers issue OID query requests of OID_RECEIVE_FILTER_GLOBAL_PARAMETERS to obtain the global receive filtering parameters of a network adapter.
-ms.assetid: be6f7210-d1f9-4490-838a-806488df41da
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_GLOBAL_PARAMETERS Network Drivers Starting with Windows Vista
@@ -20,7 +19,7 @@ Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
--   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters).
+-   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](./guidelines-for-managing-packet-coalescing-receive-filters.md).
 
 -   [Single Root I/O Virtualization (SR-IOV)](./single-root-i-o-virtualization--sr-iov-.md). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](./setting-a-receive-filter-on-a-virtual-port.md).
 
@@ -73,6 +72,4 @@ Requirements
 [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
 [**NDIS\_RECEIVE\_FILTER\_GLOBAL\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_global_parameters)
-
- 
 

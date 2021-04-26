@@ -1,7 +1,6 @@
 ---
 title: Enabling and Disabling Interrupts (UMDF 1)
 description: Enabling and Disabling Interrupts
-ms.assetid: 52846461-4F08-4546-93F5-F2469C6E3AD8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

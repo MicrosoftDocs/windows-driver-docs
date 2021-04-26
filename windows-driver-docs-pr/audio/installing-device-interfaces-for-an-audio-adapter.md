@@ -1,7 +1,6 @@
 ---
 title: Installing Device Interfaces for an Audio Adapter
 description: Installing Device Interfaces for an Audio Adapter
-ms.assetid: 824cc6a2-702a-4e51-91b1-ab776b1babf1
 keywords:
 - audio adapters WDK , device interfaces
 - adapter drivers WDK audio , device interfaces

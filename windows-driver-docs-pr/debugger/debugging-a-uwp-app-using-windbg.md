@@ -1,7 +1,6 @@
 ---
 title: Debugging a UWP app using WinDbg
 description: You can debug Universal Windows Platform (UWP) app using WinDbg.
-ms.assetid: 1CE337AC-54C0-4EF5-A374-3ECF1D72BA60
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Debugging a UWP app using WinDbg
 
 
-You can debug Universal Windows Platform (UWP) app using WinDbg. This approach would typically be used for advanced scenarios, where it is not possible to complete the debugging task using the built in Visual Studio debugger. For more information about debugging in Visual Studio, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio?view=vs-2015).
+You can debug Universal Windows Platform (UWP) app using WinDbg. This approach would typically be used for advanced scenarios, where it is not possible to complete the debugging task using the built in Visual Studio debugger. For more information about debugging in Visual Studio, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).
 
 ## <span id="Attaching_to_a_UWP_app"></span><span id="attaching_to_a_uwp_app"></span><span id="ATTACHING_TO_A_UWP_APP"></span>Attaching to a UWP app
 
@@ -46,7 +45,7 @@ Since multiple apps can be contained within a single package, both &lt;PLMPackag
 <tr class="odd">
 <td align="left">&lt;ApplicationId&gt;</td>
 <td align="left"><p>The ApplicationId is located in the application manifest file and can be viewed using the .querypackage or .querypackages command as discussed in this topic.</p>
-<p>For more information about the application manifest file, see <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
+<p>For more information about the application manifest file, see <a href="/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">[&lt;parameters&gt;]</td>
@@ -145,7 +144,7 @@ windbg.exe -plmPackage <PLMPackageName> -plmBgTaskId <BackgroundTaskId>
 <tr class="odd">
 <td align="left">&lt;BackgroundTaskId&gt;</td>
 <td align="left"><p>The BackgroundTaskId can be located using the .querypackages command as described below.</p>
-<p>For more information about the application manifest file, see <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
+<p>For more information about the application manifest file, see <a href="/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -310,7 +309,7 @@ This table lists the parameters for .createpackageapp.
 <tr class="odd">
 <td align="left">&lt;ApplicationId&gt;</td>
 <td align="left"><p>The ApplicationId can be located using .querypackage or .querypackages as discussed earlier in this topic.</p>
-<p>For more information about the application manifest file, see <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
+<p>For more information about the application manifest file, see <a href="/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">[&lt;parameters&gt;]</td>
@@ -503,6 +502,4 @@ Finally, decrement the debug reference count for the package.
 
 
 [Debugging Using WinDbg](debugging-using-windbg.md)
-
- 
 

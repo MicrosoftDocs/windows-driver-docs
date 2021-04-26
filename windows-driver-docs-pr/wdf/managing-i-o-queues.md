@@ -1,7 +1,6 @@
 ---
 title: Managing I/O Queues
 description: Managing I/O Queues
-ms.assetid: 83cc87c8-7e2d-4f79-a580-0519d327e7ba
 keywords:
 - I/O queues WDK KMDF , starting
 - I/O queues WDK KMDF , stopping

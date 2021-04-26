@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_FirstInstallDate
 description: DEVPKEY_Device_FirstInstallDate
-ms.assetid: aedc4f18-51be-4c42-a172-c1fd88cc49b3
 keywords: ["DEVPKEY_Device_FirstInstallDate Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp th
 
  
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
 Requirements
 ------------
@@ -87,7 +86,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

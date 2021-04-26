@@ -1,7 +1,6 @@
 ---
 title: OID_CO_ADD_PVC
 description: This topic describes the OID_CO_ADD_PVC object identifier (OID).
-ms.assetid: 182d5bdb-9cfe-4e9c-a2cf-4d5440bfdb76
 keywords:
 - OID_CO_ADD_PVC
 ms.date: 11/03/2017

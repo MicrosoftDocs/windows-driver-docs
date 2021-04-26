@@ -1,7 +1,6 @@
 ---
 title: Minimal DirectX 8.0 DDI Support
 description: Minimal DirectX 8.0 DDI Support
-ms.assetid: 8758e25e-e54f-42e5-a23d-354af634bce9
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , minimal support
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ DirectX 8.0 provides hardware acceleration by DirectX 7.0 level drivers. However
 
 Reporting DirectX 8.0 style capabilities involves the following steps:
 
--   Handling the new **GetDriverInfo2** variant of the existing [**DdGetDriverInfo**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) entry point.
+-   Handling the new **GetDriverInfo2** variant of the existing [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) entry point.
 
 -   Returning a D3DCAPS8 structure containing the capabilities of the device when requested.
 

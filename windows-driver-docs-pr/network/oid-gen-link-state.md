@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_LINK_STATE
 description: As a query, NDIS and overlying drivers use the OID_GEN_LINK_STATE OID to determine the current link state of a miniport adapter.
-ms.assetid: 75a30054-8700-4b79-902c-c8382a25c0a2
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LINK_STATE Network Drivers Starting with Windows Vista

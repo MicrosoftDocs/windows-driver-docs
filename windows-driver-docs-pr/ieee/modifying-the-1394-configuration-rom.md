@@ -1,7 +1,6 @@
 ---
 title: Modifying the 1394 Configuration ROM
 description: Modifying the 1394 Configuration ROM
-ms.assetid: 3dc4fe53-a26b-44c7-96ef-e7bb6181c958
 keywords:
 - IEEE 1394 WDK buses , modifying Configuration ROMs
 - 1394 WDK buses , modifying Configuration ROMs

@@ -1,7 +1,6 @@
 ---
 title: Using the DxApi Interface
 description: Using the DxApi Interface
-ms.assetid: 9de96d20-6cfc-42e7-821b-8256e0dd9b38
 keywords:
 - drawing kernel-mode video transport WDK DirectDraw , DxApi interface
 - DirectDraw kernel-mode video transport WDK Windows 2000 display , DxApi interface

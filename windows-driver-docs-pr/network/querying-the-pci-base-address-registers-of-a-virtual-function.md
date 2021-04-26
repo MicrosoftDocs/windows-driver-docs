@@ -1,7 +1,6 @@
 ---
 title: Querying the PCI Base Address Registers of a Virtual Function
 description: Querying the PCI Base Address Registers of a Virtual Function
-ms.assetid: 99C2BF61-E87E-4C3B-BE7E-C16B5318EC1A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

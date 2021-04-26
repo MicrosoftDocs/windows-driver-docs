@@ -1,7 +1,6 @@
 ---
 title: Clock Synchronization
 description: Clock Synchronization
-ms.assetid: dc0071b0-a22c-4bb5-90ea-a69e5dcdba6f
 keywords:
 - synthesizers WDK audio , clock synchronization
 - clocks WDK audio , synchronization
@@ -38,13 +37,13 @@ For example, if the master clock is currently at time 420 and the application ha
 
 Suppose an event is marked to play at time 520 in reference time. The synthesizer does its work by rendering notes down into samples and performing all its calculations in sample time. Therefore, it needs to know what a reference time of 520 converts to in sample time. In user mode, the wave sink provides two functions that the synth uses:
 
-[**IDirectMusicSynthSink::SampleToRefTime**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-sampletoreftime)
+[**IDirectMusicSynthSink::SampleToRefTime**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-sampletoreftime)
 
-[**IDirectMusicSynthSink::RefTimeToSample**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-reftimetosample)
+[**IDirectMusicSynthSink::RefTimeToSample**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-reftimetosample)
 
 To do the conversion in this case, the synth calls **IDirectMusicSynthSink::RefTimeToSample** on the wave sink.
 
-The wave sink then gives back a sample time (for example, 600). The note in question gets rendered at sample time 600. Then, when the synth [**IDirectMusicSynth::Render**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-render) method gets called by the wave sink to render the next portion of the stream (for example, from sample time 600 to 800), the note is rendered into the buffer at sample time 600.
+The wave sink then gives back a sample time (for example, 600). The note in question gets rendered at sample time 600. Then, when the synth [**IDirectMusicSynth::Render**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-render) method gets called by the wave sink to render the next portion of the stream (for example, from sample time 600 to 800), the note is rendered into the buffer at sample time 600.
 
 **Note**   The sample time is kept as a 64-bit number to avoid rollover. (A DWORD value rolls over in 27 hours.)
 

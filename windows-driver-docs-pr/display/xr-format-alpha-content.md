@@ -1,7 +1,6 @@
 ---
 title: XR Format Alpha Content
 description: XR Format Alpha Content
-ms.assetid: fcf18d6d-8365-4726-88e0-7ea12ce9703d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , XR format alpha content
 - extended format WDK Windows 7 display , XR format alpha content

@@ -1,7 +1,6 @@
 ---
 title: Minidriver requirements for tablet PCs
 description: Describes the general requirements for vendor-supplied HID minidrivers for pen devices and button devices.
-ms.assetid: 89BE7E13-4D46-4265-9522-D5A51999F633
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ This section focuses on pen and button devices.
 -   A pen device is integrated with the Tablet PC's LCD display and is used to capture the motion of a pen stylus.
 -   A button device supplements the pen device and is used to capture button input. For more information about the Tablet PC, see the Windows XP Tablet PC Edition website
 
-For more information about the Tablet PC, see the [Windows XP Tablet PC Edition](https://go.microsoft.com/fwlink/p/?linkid=275069) website.
+For more information about the Tablet PC, see the [Windows XP Tablet PC Edition](/previous-versions/ms950406(v=msdn.10)) website.
 
 For detailed information about system-supplied software that supports the Tablet PC, see the Tablet PC documentation in the Microsoft Windows SDK.
 
@@ -47,6 +46,4 @@ A Tablet PC button device supplements pen input on a Tablet PC. A button device 
 -   Provide a top-level collection whose usage page is Generic Desktop and whose usage is Keyboard (see [HID usages](hid-usages.md)). The Keyboard collection is only used to report SAS button events. When the SAS button is pressed, the following usages must be reported: Left Control, Left Alt, and Delete.
 
 -   Provide a top-level collection whose usage page is Generic Desktop and whose usage is Tablet PC System Controls. Button events are reported by using a button array whose usage page is Button and the usage values range from 1 to the number of buttons.
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Using Custom Hardware IDs and Compatible IDs
 description: Using Custom Hardware IDs and Compatible IDs
-ms.assetid: 4f0ae082-b601-4322-add8-63941c2bdad3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,7 @@ enumerator\enumerator-specific-device-ID
 
 Where:
 
--   *Enumerator* identifies the bus driver that detects and reports child devices on a bus to the PnP manager.
+-   *Enumerator* identifies the *enumerator* (bus driver) that detects and reports child devices on a bus to the PnP manager.
 
 -   *enumerator-specific-device-ID* is a device identifier specific to the bus driver.
 

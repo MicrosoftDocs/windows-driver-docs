@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_STRENGTH
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_STRENGTH to determine the carrier strength of the signal in mDb (1/1000 of a decibel (DB)).
-ms.assetid: b8b71135-cc0b-4a59-940a-dd766cab3305
 keywords: ["KSPROPERTY_BDA_SIGNAL_STRENGTH Streaming Media Devices"]
 topic_type:
 - apiref

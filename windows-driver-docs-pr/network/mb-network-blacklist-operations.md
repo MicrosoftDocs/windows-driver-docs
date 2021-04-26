@@ -8,10 +8,9 @@ ms.localizationpriority: medium
 # MB Network Blacklist Operations
 
 > [!IMPORTANT]
->
 > ### Bias-free communication
 >
-> Microsoft supports a diverse and inclusionary environment. This article contains references to the word blacklist. The Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes this as an exclusionary word. The word is used in this article for consistency because it’s currently the word that appears in the software. When the software is updated to remove the word, this article will be updated to be in alignment.
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
 
 A device could be required to not register to a network under various scenarios, such as when a specific SIM card is inserted or if a device does not want to register to a specific network. To address these situations, Windows 10, version 1703 is adding modem interfaces to enable the OS to configure blacklists for SIM cards and network providers.
 

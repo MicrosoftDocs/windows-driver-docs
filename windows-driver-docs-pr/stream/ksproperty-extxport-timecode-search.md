@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH
 description: The KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH property searches to a specific timecode.
-ms.assetid: 34252fce-426b-4f75-b57f-fa86654ffc5f
 keywords: ["KSPROPERTY_EXTXPORT_TIMECODE_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH property searches to a specific timec
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
 <td><p>Embedded <strong>TIMECODE</strong> structure</p></td>
 </tr>
 </tbody>
@@ -84,6 +83,4 @@ Requirements
 [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
-
- 
 

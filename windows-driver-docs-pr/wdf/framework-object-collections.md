@@ -1,7 +1,6 @@
 ---
 title: Framework Object Collections
 description: Framework Object Collections
-ms.assetid: e3f29be6-ee4c-487a-8c85-18be8b6a5cdc
 keywords:
 - framework objects WDK KMDF , collections
 - collections WDK KMDF

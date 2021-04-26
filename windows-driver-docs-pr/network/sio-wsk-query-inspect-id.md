@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_QUERY_INSPECT_ID
 description: SIO_WSK_QUERY_INSPECT_ID
-ms.assetid: 6fc3e5ea-61df-47fc-8f79-f9ae272b3544
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_INSPECT_ID Network Drivers Starting with Windows Vista

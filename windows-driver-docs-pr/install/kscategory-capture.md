@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_CAPTURE
 description: KSCATEGORY_CAPTURE
-ms.assetid: b33e9a04-00f2-4cfa-911e-55461ce5aae7
 keywords: ["KSCATEGORY_CAPTURE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_CAPTURE to indicate that the devices support the KSCATEGORY_CAPTURE functional category.
 
-For information about how to register this functional category in an INF file, see the *Ac97smpl.inf* INF file that is included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK.
+For information about how to register this functional category in an INF file, see the *Ac97smpl.inf* INF file that is included with the [AC'97 sample driver](/samples/browse/) that is provided in the WDK.
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
@@ -69,6 +68,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

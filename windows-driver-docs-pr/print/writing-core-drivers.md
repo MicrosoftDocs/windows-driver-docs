@@ -1,7 +1,6 @@
 ---
 title: Writing Core Drivers
 description: Writing Core Drivers
-ms.assetid: 3a41a91b-3cc3-462a-8836-448203ccb4c2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

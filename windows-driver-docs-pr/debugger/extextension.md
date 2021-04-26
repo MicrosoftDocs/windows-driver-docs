@@ -1,7 +1,6 @@
 ---
 title: ExtExtension
 description: The ExtExtension class is the base class for the C++ class that represents the EngExtCpp extension library.
-ms.assetid: 9c6c4633-df49-4f49-8116-d680bb20c3f5
 keywords: ["ExtExtension Windows Debugging"]
 topic_type:
 - apiref

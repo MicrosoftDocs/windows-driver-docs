@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL
 description: GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL
-ms.assetid: 4a0bf1fe-3b68-456b-ba13-156dec1e7700
 keywords: ["GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL Device and Driver Installation"]
 topic_type:
 - apiref

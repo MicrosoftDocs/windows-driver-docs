@@ -1,7 +1,6 @@
 ---
 title: Handling Socket Options and Control Codes for a SAN
 description: Handling Socket Options and Control Codes for a SAN
-ms.assetid: 5c07d0e3-b6d7-4daf-8b3f-80aafd7c7a37
 keywords:
 - Windows Sockets Direct WDK , SAN socket options
 - SAN sockets WDK , options
@@ -68,31 +67,31 @@ Retrieves a pointer to an extension function that a SAN service provider must su
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566311(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRegisterMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566311(v=vs.85))"><strong>WSPRegisterMemory</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566311(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRegisterMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566311(v=vs.85))"><strong>WSPRegisterMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F5-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566279(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPDeregisterMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566279(v=vs.85))"><strong>WSPDeregisterMemory</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566279(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPDeregisterMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566279(v=vs.85))"><strong>WSPDeregisterMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F6-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566313(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRegisterRdmaMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566313(v=vs.85))"><strong>WSPRegisterRdmaMemory</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566313(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRegisterRdmaMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566313(v=vs.85))"><strong>WSPRegisterRdmaMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F7-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566281(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPDeregisterRdmaMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566281(v=vs.85))"><strong>WSPDeregisterRdmaMemory</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566281(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPDeregisterRdmaMemory&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566281(v=vs.85))"><strong>WSPDeregisterRdmaMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F8-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566306(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRdmaWrite&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566306(v=vs.85))"><strong>WSPRdmaWrite</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566306(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRdmaWrite&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566306(v=vs.85))"><strong>WSPRdmaWrite</strong></a></p></td>
 <td align="left"><p>{C0B422F9-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566304(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRdmaRead&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566304(v=vs.85))"><strong>WSPRdmaRead</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566304(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPRdmaRead&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566304(v=vs.85))"><strong>WSPRdmaRead</strong></a></p></td>
 <td align="left"><p>{C0B422FA-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566299(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPMemoryRegistrationCacheCallback&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566299(v=vs.85))"><strong>WSPMemoryRegistrationCacheCallback</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/network/ff566299(v=vs.85)" data-raw-source="[&lt;strong&gt;WSPMemoryRegistrationCacheCallback&lt;/strong&gt;](/previous-versions/windows/hardware/network/ff566299(v=vs.85))"><strong>WSPMemoryRegistrationCacheCallback</strong></a></p></td>
 <td align="left"><p>{E5DA4AF8-D824-48CD-A799-6337A98ED2AF}</p></td>
 </tr>
 </tbody>
@@ -122,6 +121,4 @@ Specifies the number of address structures in the list.
 Array of IP address structures.
 
 The switch uses this IOCTL code internally to decide whether to use a given SAN service provider to execute an application's requests to make connections or to listen for incoming connections. The switch forwards actual application requests for the list of local IP addresses to the TCP/IP provider. The switch also uses the TCP/IP provider to detect changes in address lists that all SAN service providers service. After TCP/IP reports a change, the switch queries all SAN service providers to refresh their lists.
-
- 
 

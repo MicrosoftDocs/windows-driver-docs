@@ -1,7 +1,6 @@
 ---
 title: Windows kernel macros
 description: Windows kernel macros
-ms.assetid: 91366400-3307-4F13-A839-50BA85B7F73E
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
@@ -204,7 +203,7 @@ In fact, **MM_BAD_POINTER** is the base address of an entire page of invalid add
 
 Starting with Windows 8.1, the **MM_BAD_POINTER** macro is defined in the Wdm.h header file. However, driver code that uses this macro definition can run in previous versions of Windows starting with Windows Vista.
 
-Starting with Windows Vista, the [**MmBadPointer**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm64bitphysicaladdress) global variable is available as a pointer to a pointer value that is guaranteed to be an invalid address. However, starting with Windows 8.1, the use of **MmBadPointer** is deprecated, and you should update your drivers to use the **MM_BAD_POINTER** macro instead.
+Starting with Windows Vista, the [**MmBadPointer**](./mm64bitphysicaladdress.md) global variable is available as a pointer to a pointer value that is guaranteed to be an invalid address. However, starting with Windows 8.1, the use of **MmBadPointer** is deprecated, and you should update your drivers to use the **MM_BAD_POINTER** macro instead.
 
 Available starting with Windows 8.1\. Compatible with previous versions of Windows starting with Windows Vista._
 
@@ -219,7 +218,7 @@ _Mdl [in]_
 
 **PMDL**
 
-A pointer to an [**MDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) structure that describes the layout of a virtual memory buffer in physical memory. For more information, see [Using MDLs](using-mdls.md).
+A pointer to an [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) structure that describes the layout of a virtual memory buffer in physical memory. For more information, see [Using MDLs](using-mdls.md).
 
 **Return value**
 
@@ -365,7 +364,7 @@ When the system-address-space mapping that is returned by **MmGetSystemAddressFo
 
 *   If the MDL was built by a call to the **MmBuildMdlForNonPagedPool** routine, **MmGetSystemAddressForMdlSafe** reuses the existing system-address-space mapping instead of creating a new one. In this case, no cleanup is required (that is, unlocking and unmapping are not necessary).
 
-*   If the MDL was built by a call to the **IoBuildPartialMdl** routine, the driver must call either the [**MmPrepareMdlForReuse**]() routine or the [**IoFreeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreemdl) routine to release the system-address-space mapping.
+*   If the MDL was built by a call to the **IoBuildPartialMdl** routine, the driver must call either the **MmPrepareMdlForReuse** routine or the [**IoFreeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreemdl) routine to release the system-address-space mapping.
 
 *   If the MDL was built by a call to the **MmAllocatePagesForMdlEx** routine, the driver must call the **MmUnmapLockedPages** routine to release the system-address-space mapping. If **MmGetSystemAddressForMdlSafe** is called more than one time for an MDL, subsequent **MmGetSystemAddressForMdlSafe** calls simply return the mapping that was created by the first call. One call to **MmUnmapLockedPages** is sufficient to release this mapping.
 
@@ -665,7 +664,7 @@ _DestinationString [out]_
 
 **PANSI_STRING**
 
-Pointer to the [**ANSI_STRING**](/windows/desktop/api/ntdef/ns-ntdef-_string) structure to be initialized.
+Pointer to the [**ANSI_STRING**](/windows/win32/api/ntdef/ns-ntdef-string) structure to be initialized.
 
 _Buffer [in]_
 
@@ -708,7 +707,7 @@ _DestinationString [out]_
 
 **PUNICODE_STRING**
 
-Pointer to the [**UNICODE_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
+Pointer to the [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
 
 _Buffer [in]_
 
@@ -751,7 +750,7 @@ _L1 [in]_
 
 **PLUID**
 
-Specifies the [**LUID**](/windows/desktop/api/ntdef/ns-ntdef-_luid) to check.
+Specifies the [**LUID**](/windows/win32/api/ntdef/ns-ntdef-luid) to check.
 
 **Return value**
 

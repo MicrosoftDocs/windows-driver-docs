@@ -1,7 +1,6 @@
 ---
 title: Application Verifier
 description: Application Verifier
-ms.assetid: b5bb30ab-c05b-4fcc-affe-678285d49076
 keywords:
 - verifying drivers (Application Verifier)
 - driver verification (Application Verifier)

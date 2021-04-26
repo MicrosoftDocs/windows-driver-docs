@@ -1,7 +1,6 @@
 ---
 title: Stereoscopic 3D
 description: Windows 8 provides a consistent API and device driver interface (DDI) platform for stereoscopic 3-D scenarios such as gaming and video playback.
-ms.assetid: 2F83E5C6-E333-4BF6-A133-C65A23DAEF62
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,7 +29,7 @@ Windows 8 provides a consistent API and device driver interface (DDI) platform 
 <td align="left">Optional</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
+<td align="left"><a href="/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics ¦ ProcessingStereoscopicVideoContent</strong></p>
 <p><strong>Device.Display.Monitor.Stereoscopic3DModes</strong></p></td>
 </tr>
@@ -96,6 +95,4 @@ Although stereoscopic 3-D is an optional WDDM 1.2 feature, Direct3D 11 API sup
 For more info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ Processing Stereoscopic Video Content** and **Device.Display.Monitor.Stereoscopic 3D Modes**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
-
- 
 

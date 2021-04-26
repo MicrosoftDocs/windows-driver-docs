@@ -1,7 +1,6 @@
 ---
 title: XPSDrv Installation
 description: XPSDrv Installation
-ms.assetid: 0b5ef114-2862-46f9-bd32-ae09fa4e6a92
 keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers

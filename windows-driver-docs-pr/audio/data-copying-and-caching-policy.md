@@ -1,7 +1,6 @@
 ---
 title: Data Copying and Caching Policy
 description: Data Copying and Caching Policy
-ms.assetid: 1867f2bd-240c-4525-9f02-98b8f1d54b17
 keywords:
 - HD Audio, caching
 - High Definition Audio (HD Audio), caching

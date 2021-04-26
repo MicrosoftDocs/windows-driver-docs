@@ -1,7 +1,6 @@
 ---
 title: Example Usage of WIA Item Flags and Categories
 description: Example Usage of WIA Item Flags and Categories
-ms.assetid: 8c9f7d85-6c84-4df9-9db3-6554d7eddf93
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

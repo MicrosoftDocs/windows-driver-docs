@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverInfPath
 description: DEVPKEY_Device_DriverInfPath
-ms.assetid: ceb1f25b-284c-4a59-a019-dbb5bbb88626
 keywords: ["DEVPKEY_Device_DriverInfPath Device and Driver Installation"]
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverInfPath. A copy of the INF file that installed a device is located in the system INF file directory. The name of the INF file copy is Oem*Nnn*.inf, where *Nnn* is a decimal number from 0 through 9999.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverInfPath.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverInfPath.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfPath property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfPath** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
@@ -77,7 +76,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

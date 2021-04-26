@@ -1,7 +1,6 @@
 ---
 title: D1Latency, D2Latency, and D3Latency
 description: D1Latency, D2Latency, and D3Latency
-ms.assetid: 6ad72b77-ec36-461c-8f4f-030d67e5a135
 keywords: ["D1Latency", "D2Latency", "D3Latency"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Common Property Sheet User Interface
 description: Common Property Sheet User Interface
-ms.assetid: 7af3435a-19e0-40a1-9f94-319d9d323856
 keywords:
 - printer driver customizing WDK , Common Property Sheet User Interface
 - customizing printer drivers WDK , Common Property Sheet User Interface

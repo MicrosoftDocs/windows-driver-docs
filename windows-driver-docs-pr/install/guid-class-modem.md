@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_MODEM
 description: GUID_CLASS_MODEM is an obsolete identifier for the device interface class for modem devices. Starting with Microsoft Windows 2000, use the GUID_DEVINTERFACE_MODEM class identifier for new instances of this class.
-ms.assetid: 0943f619-93cd-4270-88c5-a26217c33304
 keywords: ["GUID_CLASS_MODEM Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
-ms.assetid: b2322972-16be-443f-b46a-7834b4d7ead0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -115,7 +114,7 @@ The Windows wireless platform supports APIs for the following functionality that
 
 -   Register for unsolicited device events from a specific device
 
-For more information, see [**IMbnDeviceService interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice).
+For more information, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).
 
 ### <span id="Legacy_support_and_identity_morphing"></span><span id="legacy_support_and_identity_morphing"></span><span id="LEGACY_SUPPORT_AND_IDENTITY_MORPHING"></span>Legacy support and identity morphing
 
@@ -146,7 +145,7 @@ When the device is first connected to a Windows 7 PC, a typical external mobile
 
 The native Windows 8, Windows 8.1, and Windows 10 class driver eliminates the need for an external USB device to expose itself initially as a mass storage device, since no driver installation is necessary. Windows 8, Windows 8.1, and Windows 10 include the capability to trigger a device’s identity morphing, allowing the device to immediately appear as a mobile broadband device.
 
-To learn how to develop an identity morphing solution, see [**IMbnDeviceService interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice).\]
+To learn how to develop an identity morphing solution, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).\]
 
 ### <span id="Firmware_update_support"></span><span id="firmware_update_support"></span><span id="FIRMWARE_UPDATE_SUPPORT"></span>Firmware update support
 
@@ -154,7 +153,7 @@ Mobile broadband device firmware should be updated by using Windows Update. For 
 
 ### <span id="OMA-DM_client_support"></span><span id="oma-dm_client_support"></span><span id="OMA-DM_CLIENT_SUPPORT"></span>OMA-DM client support
 
-Windows 8.1 added OMA-DM support for enterprises to manage your devices running Windows in BYOD (Bring Your Own Device) scenarios. This extends support for these scenarios by adding enterprise-relevant protocols ([MS-MDE](https://go.microsoft.com/fwlink/?linkid=617595), [MS-MDM](https://go.microsoft.com/fwlink/?linkid=619346)) for use by 3rd-party mobile device management providers and Windows InTune.
+Windows 8.1 added OMA-DM support for enterprises to manage your devices running Windows in BYOD (Bring Your Own Device) scenarios. This extends support for these scenarios by adding enterprise-relevant protocols ([MS-MDE](/openspecs/windows_protocols/ms-mde/5c841535-042e-489e-913c-9d783d741267), [MS-MDM](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f)) for use by 3rd-party mobile device management providers and Windows InTune.
 
 Windows separates OMA-DM support for mobile Network operator configuration from the support for enterprise BYOD. The OMA-DM client in Windows 8.1 and Windows 10 does not support configuring Mobile Operator specific settings natively and is not 3rd party extensible to support mobile network operator requirements. OMA-DM solutions supporting Windows Phone platform are not compatible with the Windows 8.1 OMA-DM client or the Windows 10 OMA-DM client.
 
@@ -201,8 +200,6 @@ The device must report [**WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/wwa
 
 **Note**  
 There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.
-
- 
 
  
 

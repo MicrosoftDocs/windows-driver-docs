@@ -1,7 +1,6 @@
 ---
 title: Determining Receive Filtering Capabilities
 description: Determining Receive Filtering Capabilities
-ms.assetid: 11EE5987-A2DE-4388-86D0-77285453E80A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ The miniport driver reports the complete hardware receive filtering capabilities
 
 3.  Besides SR-IOV, receive filtering is also used in the following interfaces:
 
-    -   [NDIS Packet Coalescing](ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](managing-packet-coalescing-receive-filters.md).
+    -   [NDIS Packet Coalescing](ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](guidelines-for-managing-packet-coalescing-receive-filters.md).
 
     -   [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq--in-ndis-6-20.md). For more information about how to use receive filters in this interface, see [Setting and Clearing VMQ Filters](setting-and-clearing-vmq-filters.md).
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_QUERY\_NOTIFICATION\_SUPPORT
 description: The client application uses the KSPROPERTY\_RTAUDIO\_QUERY\_NOTIFICATION\_SUPPORT property to determine whether the audio driver can notify the client application when a process that is performed on the submitted buffer is completed.
-ms.assetid: 7e0910df-4b76-4e61-9f88-8953860f3abe
 keywords: ["KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The client application uses the `KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT` 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -87,6 +86,4 @@ Requirements
 
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

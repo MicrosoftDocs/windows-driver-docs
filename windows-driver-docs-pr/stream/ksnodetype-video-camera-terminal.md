@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
 description: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
-ms.assetid: b083d9ba-2f76-4e4b-a29c-5cd20d914479
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

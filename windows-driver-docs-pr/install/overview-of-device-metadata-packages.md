@@ -1,7 +1,6 @@
 ---
 title: Overview of Device Metadata Packages
 description: Overview of Device Metadata Packages
-ms.assetid: 1b17bdab-44e4-498b-ab80-f28fa94d9821
 keywords:
 - device metadata packages WDK , about
 ms.date: 04/20/2017
@@ -44,7 +43,7 @@ This document contains data that specifies the display actions that the Devices 
 
 This data is formatted based on the [WindowsInfo XML Schema](/previous-versions/windows/hardware/metadata/ff553992(v=vs.85)).
 
-Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?linkid=145395) website.
+Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)) website.
 
 The file name of the device metadata package uses the following naming convention:
 
@@ -55,6 +54,4 @@ The file name of the device metadata package uses the following naming conventio
 The *&lt;GUID&gt;* file prefix is a globally unique identifier (GUID) that is created for the device metadata package. The GUID for each metadata package file name must be unique. When you create a new or revised metadata package, you must create a new GUID, even if the changes are minor.
 
 For more information, see [Building Device Metadata Packages](building-device-metadata-packages.md).
-
- 
 

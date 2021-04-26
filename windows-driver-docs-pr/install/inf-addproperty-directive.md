@@ -1,7 +1,6 @@
 ---
 title: INF AddProperty Directive
 description: An AddProperty directive references one or more INF file sections that modify the device properties that are set for a device instance, a device setup class, a device interface class, or a device interface.
-ms.assetid: 8fcb1355-f13d-4d96-aa73-62a094a52267
 keywords:
 - INF AddProperty Directive Device and Driver Installation
 topic_type:

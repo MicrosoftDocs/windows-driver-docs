@@ -1,7 +1,6 @@
 ---
 title: CoNDIS Call Manager Registration
 description: CoNDIS Call Manager Registration
-ms.assetid: 63cde3d1-122c-4411-91b6-97e97bdd2df3
 keywords:
 - call managers WDK networking , CoNDIS
 - registering call managers

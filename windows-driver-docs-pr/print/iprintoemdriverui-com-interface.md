@@ -1,7 +1,6 @@
 ---
 title: IPrintOemDriverUI COM Interface
 description: IPrintOemDriverUI COM Interface
-ms.assetid: ed11789f-750d-4f29-b5e0-ab299a1388db
 keywords:
 - IPrintOemDriverUI
 ms.date: 04/20/2017
@@ -31,15 +30,15 @@ The following table lists and describes all the methods that the `IPrintOemDrive
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting" data-raw-source="[&lt;strong&gt;IPrintOemDriverUI::DrvGetDriverSetting&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting)"><strong>IPrintOemDriverUI::DrvGetDriverSetting</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting" data-raw-source="[&lt;strong&gt;IPrintOemDriverUI::DrvGetDriverSetting&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting)"><strong>IPrintOemDriverUI::DrvGetDriverSetting</strong></a></p></td>
 <td><p>Enables a UI plug-in to obtain the current status of printer features and other internal information.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting" data-raw-source="[&lt;strong&gt;IPrintOemDriverUI::DrvUpdateUISetting&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting)"><strong>IPrintOemDriverUI::DrvUpdateUISetting</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting" data-raw-source="[&lt;strong&gt;IPrintOemDriverUI::DrvUpdateUISetting&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting)"><strong>IPrintOemDriverUI::DrvUpdateUISetting</strong></a></p></td>
 <td><p>Enables a UI plug-in to notify the driver of a modified user interface option.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting" data-raw-source="[&lt;strong&gt;IPrintOemDriverUI::DrvUpgradeRegistrySetting&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting)"><strong>IPrintOemDriverUI::DrvUpgradeRegistrySetting</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting" data-raw-source="[&lt;strong&gt;IPrintOemDriverUI::DrvUpgradeRegistrySetting&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting)"><strong>IPrintOemDriverUI::DrvUpgradeRegistrySetting</strong></a></p></td>
 <td><p>Enables a UI plug-in to update device settings stored in the registry.</p></td>
 </tr>
 </tbody>
@@ -48,6 +47,4 @@ The following table lists and describes all the methods that the `IPrintOemDrive
  
 
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-
- 
 

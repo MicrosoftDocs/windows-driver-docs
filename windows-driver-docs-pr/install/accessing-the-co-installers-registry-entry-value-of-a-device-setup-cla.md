@@ -1,7 +1,6 @@
 ---
 title: Access Co-installers Registry Entry Value of Device Setup Class
 description: Accessing the Co-installers Registry Entry Value of a Device Setup Class
-ms.assetid: 731d29df-6fdd-4f25-9758-d7306fef7ec0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

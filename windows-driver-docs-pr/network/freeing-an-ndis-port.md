@@ -1,7 +1,6 @@
 ---
 title: Freeing an NDIS Port
 description: Freeing an NDIS Port
-ms.assetid: ae7b608d-6105-4fdc-b805-0f0101d7c218
 keywords:
 - ports WDK NDIS , freeing
 - NDIS ports WDK , freeing

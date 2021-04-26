@@ -23,7 +23,7 @@ After a successful install, machines can experience post-install PnP errors that
 |**Passing criteria**|<=5% machines encounter a post-install PNP error|
 |**Cohort-enabled**|Yes|
 |**Minimum population per cohort**|500 machines|
-|**Measure ID**|10042784 or 26387262|
+|**Measure ID**|26387262|
 
 ## Calculation
 

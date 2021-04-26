@@ -1,7 +1,6 @@
 ---
 title: DIF_POWERMESSAGEWAKE
 description: DIF_POWERMESSAGEWAKE
-ms.assetid: 73f6e763-0900-4297-ac88-20bbb3ac424d
 keywords: ["DIF_POWERMESSAGEWAKE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -57,18 +56,18 @@ Windows only sends this DIF request if the drivers for the device support power 
 Supplies a handle to the [device information set](./device-information-sets.md) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_powermessagewake_params_a) structure is associated with the *DeviceInfoData*.
+An [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_powermessagewake_params_a) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_powermessagewake_params_a) to supply custom text for a device's power properties page.
+An installer can modify the [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_powermessagewake_params_a) to supply custom text for a device's power properties page.
 
 ### Installer Return Value
 
@@ -111,11 +110,11 @@ Requirements
 ## See also
 
 
-[**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_POWERMESSAGEWAKE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_powermessagewake_params_a)
+[**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_powermessagewake_params_a)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Enabling Color Management
 description: Enabling Color Management
-ms.assetid: 750d1e44-6d1c-4f18-94cb-20f1f846c0d1
 keywords:
 - color management WDK print , enabling
 ms.date: 04/20/2017

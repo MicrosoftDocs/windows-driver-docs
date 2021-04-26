@@ -1,7 +1,6 @@
 ---
 title: DRM Functions and Interfaces
 description: DRM Functions and Interfaces
-ms.assetid: 62c739da-91e8-428e-b76c-ec9621b12597
 keywords:
 - Digital Rights Management WDK audio , functions
 - DRM WDK audio , functions

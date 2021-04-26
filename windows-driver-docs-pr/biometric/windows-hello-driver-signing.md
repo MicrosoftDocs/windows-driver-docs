@@ -1,7 +1,6 @@
 ---
 title: Windows Hello fingerprint driver signature process
 description: Windows Hello fingerprint driver signature process
-ms.assetid: 803f4326-32ce-44b4-a2fb-6c6f245c3728
 keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers
@@ -22,7 +21,8 @@ The biometric signature enforcement date is 6/1/2017, after which drivers that d
 
 ### Step One: Create a biometric driver
 Follow the instructions here to create a biometric driver: 
-https://docs.microsoft.com/windows/desktop/SecBioMet/biometric-service-api-portal
+
+[Windows Biometric Framework](/windows/desktop/SecBioMet/biometric-service-api-portal)
 
 ### Step Two: Test your sensor and self-validate
 Self validate the sensor and driver to ensure they meet Microsoft’s biometric requirements and report findings in the Fingerprint Security Review Template. Documents for the requirements and template can be found within the Fingerprint partner package on Connect. If you do not have access to Connect, contact your Microsoft representative.

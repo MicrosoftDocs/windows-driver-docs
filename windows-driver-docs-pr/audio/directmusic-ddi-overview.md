@@ -1,7 +1,6 @@
 ---
 title: DirectMusic DDI Overview
 description: DirectMusic DDI Overview
-ms.assetid: 95870103-197c-4b7c-b6ee-cac176b62dfc
 keywords:
 - DirectMusic WDK audio , about DirectMusic DDI
 - user-mode synths WDK audio
@@ -27,11 +26,11 @@ Typically, the best design strategy is to first write a software implementation 
 
 DirectMusic uses the following user-mode interfaces to control user-mode synthesizers and communicate with kernel-streaming drivers:
 
-[IDirectMusicSynth](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynth)
+[IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth)
 
 This is the user-mode interface for implementing custom software synths.
 
-[IDirectMusicSynthSink](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynthsink)
+[IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink)
 
 This is the user-mode interface for implementing custom wave sinks in Microsoft DirectX 6.1 and DirectX 7. In DirectX 8 and later, DirectMusic always uses its private wave sink with a user-mode synth, and no public interface is supported for user-mode wave sinks.
 

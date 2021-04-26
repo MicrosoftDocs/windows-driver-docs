@@ -1,7 +1,6 @@
 ---
 title: Adding and Deleting Wake on LAN Patterns
 description: Adding and Deleting Wake on LAN Patterns
-ms.assetid: 87e16ba6-0974-4921-b846-97d105e5dd30
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

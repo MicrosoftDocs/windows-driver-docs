@@ -1,7 +1,6 @@
 ---
 title: .push (Save Debugger State)
 description: The .push command saves the current state of the debugger.
-ms.assetid: 2e0b45d6-35b8-4c86-9c54-df8d16b4dcc2
 keywords: [".push (Save Debugger State) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

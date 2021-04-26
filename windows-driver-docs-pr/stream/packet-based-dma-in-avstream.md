@@ -1,7 +1,6 @@
 ---
 title: Packet-based DMA in AVStream
 description: Packet-based DMA in AVStream
-ms.assetid: 4246819e-d8d6-4302-9477-675ca181b1e3
 keywords:
 - AVStream WDK , hardware
 - hardware WDK AVStream

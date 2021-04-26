@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_DocumentationLink
 description: DEVPKEY_DrvPkg_DocumentationLink
-ms.assetid: a4ae1f6c-edf5-4490-8f92-6d7a24040304
 keywords: ["DEVPKEY_DrvPkg_DocumentationLink Device and Driver Installation"]
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ For privacy reasons, user information and the serial number of device is not inc
 The following example shows the type of HTTP request that would be sent to a web server: http://www.microsoft.com/redirect?prod=DSC530&rev34&type=docs&pver=6.0&spb=pro&olcid=0x409&pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04
 ```
 
-You can set the value of DEVPKEY_DrvPkg_DocumentationLink by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_DocumentationLink by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_DocumentationLink for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -82,4 +81,4 @@ DeviceDocumentationLink,,,,"http://www.microsoft.com/redirect?prod=DSC530&rev34&
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)

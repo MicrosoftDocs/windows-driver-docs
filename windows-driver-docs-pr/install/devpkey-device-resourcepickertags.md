@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ResourcePickerTags
 description: DEVPKEY_Device_ResourcePickerTags
-ms.assetid: 9ad9dddf-3211-4296-a806-1639cfc0f644
 keywords: ["DEVPKEY_Device_ResourcePickerTags Device and Driver Installation"]
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Remarks
 
 You can set the value of DEVPKEY_Device_ResourcePickerTags by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs a device.
 
-You can retrieve the value of PKEY_Device_ResourcePickerTags by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can retrieve the value of PKEY_Device_ResourcePickerTags by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_ResourcePickerTags property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ResourcePickerTags** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
@@ -81,7 +80,7 @@ Requirements
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

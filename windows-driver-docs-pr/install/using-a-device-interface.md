@@ -1,7 +1,6 @@
 ---
 title: Using a Device Interface
 description: Using a Device Interface
-ms.assetid: a41f9ae2-6128-43e2-a6b5-4d0bd45371bd
 keywords:
 - interface classes WDK device installations
 - device interface classes WDK device installations
@@ -27,7 +26,5 @@ Before a kernel-mode component can use a specific device or file object, it must
 
 2.  Get a pointer to a device or file object that corresponds to an instance of the interface.
 
-    To access a specific device object, the driver must call [**IoGetDeviceObjectPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceobjectpointer), passing the Unicode string for the required interface in the *ObjectName* parameter. To access a file object, the driver must call [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes), passing the Unicode string in the *ObjectName* parameter, and then pass the successfully initialized attribute structure in a call to [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile).
-
- 
+    To access a specific device object, the driver must call [**IoGetDeviceObjectPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceobjectpointer), passing the Unicode string for the required interface in the *ObjectName* parameter. To access a file object, the driver must call [**InitializeObjectAttributes**](/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes), passing the Unicode string in the *ObjectName* parameter, and then pass the successfully initialized attribute structure in a call to [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile).
 

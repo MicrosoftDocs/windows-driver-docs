@@ -1,7 +1,6 @@
 ---
 title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_TYPE enumeration
-description: Reserved for system use. Do not use it in your driver.Note  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header. .
-ms.assetid: ceca0ed8-7d46-45e1-86cb-3d0506d26328
+description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_TYPE enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE enumeration Display Devices"]
 topic_type:
 - apiref

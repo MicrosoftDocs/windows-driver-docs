@@ -1,7 +1,6 @@
 ---
 title: GDL Schemas
 description: GDL Schemas
-ms.assetid: 1020bec8-3b34-4391-9e75-9ffcd8b07785
 keywords:
 - GDL WDK , schemas
 - schemas WDK GDL

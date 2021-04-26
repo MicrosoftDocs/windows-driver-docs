@@ -1,7 +1,6 @@
 ---
 title: Handling a System Set-Power IRP in a Bus Driver
 description: Handling a System Set-Power IRP in a Bus Driver
-ms.assetid: e88344bd-4223-4cd5-9428-201d46c6dbb4
 keywords: ["set-power IRPs WDK power management", "bus drivers WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

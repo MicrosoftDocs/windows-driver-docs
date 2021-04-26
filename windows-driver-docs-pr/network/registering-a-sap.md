@@ -1,7 +1,6 @@
 ---
 title: Registering a SAP
 description: Registering a SAP
-ms.assetid: 2b318bf0-4f0e-4db7-850b-510a9f2c7cf0
 keywords:
 - service access points WDK CoNDIS
 - SAPs WDK CoNDIS

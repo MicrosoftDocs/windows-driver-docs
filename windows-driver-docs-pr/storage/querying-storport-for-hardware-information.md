@@ -1,7 +1,6 @@
 ---
 title: Querying Storport for Hardware Information
 description: Querying Storport for Hardware Information
-ms.assetid: 1e807e42-d03f-44be-a0a4-8187e2d5667a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

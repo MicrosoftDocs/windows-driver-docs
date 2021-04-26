@@ -1,7 +1,6 @@
 ---
 title: ITU-T H.263
 description: ITU-T H.263
-ms.assetid: 08926037-da17-4ab0-81c5-9fd78cb1133c
 keywords:
 - ITU-T H.263 WDK DirectX VA
 - H.263 WDK DirectX VA
@@ -81,7 +80,7 @@ The following figure shows how one 8x8 block is placed in the three types of pre
 
 **PB frames (Annex G and M)**: In this mode, macroblocks for a P-frame and a pseudoâˆ’B-frame are multiplexed together into the unique PB-frame picture coding type. The B portion of each macroblock borrows from information encoded for the P portion of the macroblock: the B-frame forward and backward motion vectors are scaled from the P-frame vector, and the reconstructed P-frame macroblock serves as backward reference for the B portion. The PB-frame includes only a pseudoâˆ’B-frame, because the backward prediction for each macroblock can only refer to the reconstructed P macroblock that is contained within the same PB macroblock. However, as with traditional B-frame semantics, a B macroblock within a PB-frame can refer to any location within the forward-reference frame. The limitation of the backward reference creates smaller backward prediction block shapes (as described in H.263 Figure G.2). PB-frames are supported in DirectX VA by representing the P portions of the PB-frame as a P-frame, and the B portions of the PB-frame as a separate B-in-P bidirectionally predicted picture containing a unique B-in-PB type of macroblock that has two motion vectors.
 
-**Deblocking Filter (Annex J)**: Special commands are defined to accelerate deblocking filters, whether used within the motion-compensated prediction must create deblocking commands that observe group of blocks (GOB) or slice segment boundaries, if necessary.
+**Deblocking Filter (Annex J)**: Special commands are defined to accelerate deblocking filters, whether used within the [motion-compensated prediction](motion-compensated-prediction.md) loop as with Annex J, or outside the loop as is the case when deblocking H.261 pictures or H.263 baseline pictures. The *host CPU* must create deblocking commands that observe group of blocks (GOB) or slice segment boundaries, if necessary.
 
 **Reference Picture Selection (Annexes N and U)**: Multiple reference frames are supported by the accelerator using the picture index selection field of each prediction block.
 

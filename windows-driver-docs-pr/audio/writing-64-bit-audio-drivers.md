@@ -1,7 +1,6 @@
 ---
 title: Writing 64-Bit Audio Drivers
 description: Writing 64-Bit Audio Drivers
-ms.assetid: 0b4cbb98-506e-443f-bac2-59dbdbcb1798
 keywords:
 - audio drivers WDK , 64-bit
 - 64-bit WDK audio
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="writing_64_bit_audio_drivers"></span><span id="WRITING_64_BIT_AUDIO_DRIVERS"></span>
 
 
-If you are writing a 64-bit driver or writing a driver that can be compiled to run on both 32- and 64-bit systems, follow the porting guidelines in [Driver Programming Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/miscellaneous-driver-programming-techniques). Some of the pitfalls that you might encounter in writing a 64-bit audio driver are described below.
+If you are writing a 64-bit driver or writing a driver that can be compiled to run on both 32- and 64-bit systems, follow the porting guidelines in [Driver Programming Techniques](../kernel/using-ntstatus-values.md). Some of the pitfalls that you might encounter in writing a 64-bit audio driver are described below.
 
 First and foremost, a potential problem to look for in existing 32-bit driver code is conversion between pointer types and integer types such as DWORD or ULONG. Programmers with experience writing code for 32-bit machines might be used to assuming that a pointer value fits into a DWORD or ULONG. For 64-bit code, this assumption is dangerous. Casting a pointer to type DWORD or ULONG can cause a 64-bit pointer to be truncated. A better approach is to cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer of type DWORD\_PTR or ULONG\_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32- or 64-bit machine.
 
@@ -64,6 +63,4 @@ should be replaced by
 ```
 
 This is preferred even though `ulSlotPhysAddr` might represent the value of a hardware register that is only 32 rather than 64 bits long. For a list of all the new Win64 helper functions for converting between pointer and integer types, see [The New Data Types](../kernel/the-new-data-types.md).
-
- 
 

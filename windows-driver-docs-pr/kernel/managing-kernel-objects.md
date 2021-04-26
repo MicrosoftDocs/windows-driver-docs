@@ -1,7 +1,6 @@
 ---
 title: Managing Kernel Objects
 description: Managing Kernel Objects
-ms.assetid: d45aca94-67b7-444d-8585-713ec982e3bc
 keywords: ["kernel-mode drivers WDK , object management", "object manager WDK kernel", "object management WDK kernel", "referencing objects", "object names WDK user-mode", "object management WDK user-mode", "kernel-mode objects WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

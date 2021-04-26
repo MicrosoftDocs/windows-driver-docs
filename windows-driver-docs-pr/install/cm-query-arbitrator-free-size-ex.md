@@ -1,7 +1,6 @@
 ---
 title: CM_Query_Arbitrator_Free_Size_Ex
 description: CM_Query_Arbitrator_Free_Size_Ex
-ms.assetid: d0d078a3-d1a1-4041-a11d-b41b745d74ba
 keywords: ["CM_Query_Arbitrator_Free_Size_Ex Device and Driver Installation"]
 topic_type:
 - apiref

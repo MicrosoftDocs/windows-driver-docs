@@ -1,7 +1,6 @@
 ---
 title: Creating the Localized MOF File
 description: Creating the Localized MOF File
-ms.assetid: 1cc99e43-b09a-445d-abb6-4a3d73b6d7ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "property qualifiers WDK WMI", "amended classes WDK WMI", "multiple MOF files WDK WMI", "languages WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -49,7 +48,6 @@ Only the properties that have been modified need to be included in the amended c
 
 Localized classes are organized in child namespaces of the namespace containing the original class. Classes for a given locale are found in the MS\_*XXX* child namespace, where *XXX* represents the hexadecimal LCID for that locale. For example, drivers are in the \\root\\wmi namespace by default. An amended class, localized for American English, is found in the \\root\\wmi\\MS\_409 namespace.
 
-For more information about WMI localization, see the [WMI international support](https://go.microsoft.com/fwlink/p/?linkid=8774) website.
 
  
 

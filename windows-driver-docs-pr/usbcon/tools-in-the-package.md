@@ -23,7 +23,7 @@ Before you run the MUTT test commands at an elevated command prompt, make sure y
 
 -   USB IF electrical tests. All of our tests are protocol and state focused. See [USB-IF Compliance Program](https://www.usb.org/compliance) for more information on electrical tests.
 -   Device Fundamental test. For more information, see [How to run devfund tests in Visual Studio for MUTT devices](how-to-run-device-fundamental-tests-in-visual-studio-for-connected-mutt-devices.md).
--   Controller Windows Hardware Certification Kit tests. For more information, see [USB-IF Certification Validation Test (Controller)](https://go.microsoft.com/fwlink/p/?linkid=316509).
+-   Controller Windows Hardware Certification Kit tests. For more information, see [USB-IF Certification Validation Test (Controller)](/previous-versions/windows/hardware/hck/jj124634(v=vs.85)).
 -   Manual test cases for host controllers, as found in Windows Test Guidance document in the section.
 
 ## Topologies for testing USB devices
@@ -40,8 +40,5 @@ Consider the following configurations for USB devices under test:
     ![device is downstream from mutt pack](images/fig14-topology-downstream-muttpack.png)
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

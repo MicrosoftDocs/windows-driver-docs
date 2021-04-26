@@ -1,7 +1,6 @@
 ---
 title: DDI compliance checking
 description: The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
-ms.assetid: 1E536DE0-071B-4529-B228-DB5DAE71099C
 ms.date: 04/03/2020
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ When you select the DDI compliance checking option, the following rules are incl
 
 [**IrqlExApcLte1**](./wdm-irqlexapclte1.md)
 
-[**IrqlExApcLte2**](/windows-hardware/drivers/ddi/index)
+[**IrqlExApcLte2**](./wdm-irqlexapclte2.md)
 
 [**IrqlExApcLte3**](./wdm-irqlexapclte3.md)
 
@@ -134,6 +133,10 @@ Starting in Windows 8.1, the **DDI compliance checking (additional) option** opt
 - [**SpinlockRelease**](./wdm-spinlockrelease.md)
 
 ## Activating the DDI compliance checking (additional) option
+
+>[!Note]
+> **This check is deprecated starting in Windows 10 Insider Preview Build 19042 and above**
+
 
 You can activate the **DDI compliance checking (additional)** rules for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the **DDI compliance checking (additional)** option.
 

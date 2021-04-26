@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 
 # Action interfaces
 
-The action interfaces control an instance of the [IWDTFTarget2](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2) interface. Every plug-in must support this interface. All action interfaces inherit from [IAction](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iaction), either directly or indirectly. 
+The action interfaces control an instance of the [IWDTFTarget2](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2) interface. Every plug-in must support this interface. All action interfaces inherit from [IAction](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iaction), either directly or indirectly.
 
 You can retrieve an action interface for a target by calling the IWDTFTarget2::GetInterface method.
 
 There are two sets of action interfaces: device action interfaces and system action interfaces.
 
-### Device Action Interfaces
+## Device Action Interfaces
 
 | Interface | Description |
 |-|-|
-|[IWDTFDriverPackageAction2](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriverpackageaction/nn-wdtfdriverpackageaction-iwdtfdriverpackageaction2) |  Defines operations and properties that represent a driver package for imported and pre-imported driver packages. |
-|[IWDTFDriverSetupAction2](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2) | Defines operations that control the target device during driver setup. |
+|[IWDTFDriverPackageAction2](/windows-hardware/drivers/ddi/wdtfdriverpackageaction/nn-wdtfdriverpackageaction-iwdtfdriverpackageaction2) |  Defines operations and properties that represent a driver package for imported and pre-imported driver packages. |
+|[IWDTFDriverSetupAction2](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2) | Defines operations that control the target device during driver setup. |
 |[IWDTFEnhancedDeviceTestSupportAction2](/windows-hardware/drivers/ddi/wdtfedtaction/nn-wdtfedtaction-iwdtfenhanceddevicetestsupportaction2) | Defines operations and properties that support the Enhanced Device Test (EDT) filter driver. |
 |[IWDTFEnhancedDeviceTestSupportActions2](/windows-hardware/drivers/ddi/wdtfedtaction/nn-wdtfedtaction-iwdtfenhanceddevicetestsupportactions2) | Defines operations and properties that support the collection of Enhanced Device Test (EDT) actions. |
 |[IWDTFPNPAction2](/windows-hardware/drivers/ddi/wdtfpnpaction/nn-wdtfpnpaction-iwdtfpnpaction2) | Defines operations and properties for the Plug and Play (PNP) device-related test interfaces. |
@@ -32,14 +32,13 @@ There are two sets of action interfaces: device action interfaces and system act
 |[IWDTFSimpleIOEx2](/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleioex2) | Defines operations for a simple synchronous I/O functionality test. |
 |[IWDTFSimpleIOStressAction2](/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2) | Defines operations for a simple asynchronous I/O functionality test. |
 |[IWDTFSimpleIOStressActions2](/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressactions2) | Defines operations for a collection of simple asynchronous I/O functionality tests. |
- 
-### System Action Interfaces
+
+## System Action Interfaces
 
 | Interface | Description |
 |-|-|
-|[IWDTFDriverSetupSystemAction2](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriversetupsystemaction/nn-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2) | Defines operations that control the system during driver setup. |
+|[IWDTFDriverSetupSystemAction2](/windows-hardware/drivers/ddi/wdtfdriversetupsystemaction/nn-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2) | Defines operations that control the system during driver setup. |
 |[IWDTFSystemAction2](/windows-hardware/drivers/ddi/wdtfsystemaction/nn-wdtfsystemaction-iwdtfsystemaction2) | Defines operations and properties that support driver testing. |
- 
 
 ## Remarks
 
@@ -51,17 +50,17 @@ SimpleIO can be easier to use directly, rather than through [IWDTFSimpleIOStress
 
 | Header|
 |-|
-|[WDTFDriverPackageAction.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriverpackageaction/index)|
-|[WDTFDriverSetupDeviceAction.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/index)|
+|[WDTFDriverPackageAction.h](/windows-hardware/drivers/ddi/wdtfdriverpackageaction/index)|
+|[WDTFDriverSetupDeviceAction.h](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/index)|
 |[WDTFInterfaces.h](/windows-hardware/drivers/ddi/wdtfinterfaces/index) |
 |[WDTFEDTAction.h](/windows-hardware/drivers/ddi/wdtfedtaction/index) |
 |[WDTFPNPAction.h](/windows-hardware/drivers/ddi/wdtfpnpaction/index) |
 
-
 ## See also
+
 [IAction](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iaction)
 
-[IWDTFTarget2](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2) 
+[IWDTFTarget2](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2)
 
 [IWDTFTarget2::GetInterface](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getinterface)
 

@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Appendix
 description: Contains Microsoft-defined Bluetooth HCI extension examples and diagrams.
-ms.assetid: 5C3C2479-03F9-4D33-94DA-3371D84C514B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,6 +10,7 @@ ms.localizationpriority: medium
 This section contains Microsoft-defined Bluetooth HCI extension examples and diagrams.
 
 ## Example: Matching patterns for HCI_VS_MSFT_LE_Monitor_Advertisement
+
 This example shows a received HCI_VS_MSFT_LE_Monitor_Advertisement command and the evaluations of 3 different advertisement packets against the command parameters.
 
 Received HCI_VS_MSFT_LE_Monitor_Advertisement command
@@ -500,14 +500,13 @@ When the periodic timer expires at time 13, the average of the advertisement RSS
 
 When RSSI_threshold_low_time_interval expires at instant 15, an advertisement is propagated to the host with RSSI of -85dB. No further advertisements are sent to the host in this example.
 
- ## Flowchart: Advertisement and white list filtering
+ ## Flowchart: Advertisement and allow list filtering
 
-This flowchart provides an example controller implementation of advertisement filtering and white list filtering when an advertisement is received.
+This flowchart provides an example controller implementation of advertisement filtering and allow list filtering when an advertisement is received.
 
 A controller can implement this logic differently, as long as the host is notified of the advertisement or <MSHelp:link tabindex="0" keywords="bltooth.hci_vs_msft_le_monitor_device_event"><b>HCI_VS_MSFT_LE_Monitor_Device_Event</b></MSHelp:link> as specified by the flowchart.
 
 <p><img src="images/HCI_Filtering_Flowchart.png" alt="Microsoft HCI extension filtering flowchart"/></p>
-
 
 ## Sequence diagram: Propagate scan response associated with advertisement
 

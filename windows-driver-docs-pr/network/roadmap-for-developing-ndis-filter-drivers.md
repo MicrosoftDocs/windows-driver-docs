@@ -1,13 +1,11 @@
 ---
 title: Roadmap for Developing NDIS Filter Drivers
 description: Roadmap for Developing NDIS Filter Drivers
-ms.assetid: 346dae93-4cb7-4cb5-a2cf-41be9809fec2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing NDIS Filter Drivers
-
 
 To create a Network Driver Interface Specification (NDIS) filter driver package, follow these steps:
 
@@ -29,7 +27,7 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
 - Step 3: Determine additional Windows driver design decisions.
 
-  For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](../install/creating-international-inf-files.md).
+  For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
@@ -47,21 +45,18 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
   See the porting guides if you are porting an existing driver:
 
-  -   [Porting NDIS 5.x Drivers to NDIS 6.0](/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
-  -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
-  -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
+  - [Porting NDIS 5.x Drivers to NDIS 6.0](/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
+  - [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
+  - [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
   For more information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process will help ensure that you build a driver that works.
 
 - Step 9: Create a driver package for your driver.
 
-  For more information about how to install drivers, see [Providing a Driver Package](/windows-hardware/drivers). For more information about how to install an NDIS driver, see [Installing and Upgrading Network Components](installing-and-upgrading-network-components.md).
+  For more information about how to install drivers, see [Providing a Driver Package](/windows-hardware/drivers). For more information about how to install an NDIS driver, see [Components and Files Used for Network Component Installation](components-and-files-used-for-network-component-installation.md) and [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
 - Step 10: Sign and distribute your driver.
 
   The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Compatibilty Program](/windows-hardware/design/compatibility/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
-
- 
-

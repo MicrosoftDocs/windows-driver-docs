@@ -1,7 +1,6 @@
 ---
 title: PwrTest Device Scenario
 description: The PwrTest Device Scenario monitors device idle statistics.
-ms.assetid: 75C53B6E-3D1F-4E9D-A99E-3060A9CC37BC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -123,11 +122,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;BusyCount&gt;</strong></td>
-<td align="left"><p>The number of times the device driver called <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
+<td align="left"><p>The number of times the device driver called <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;AccruedBusyCount&gt;</strong></td>
-<td align="left"><p>The total number of times the device driver called <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PoSetDeviceBusy</strong></a>.</p></td>
+<td align="left"><p>The total number of times the device driver called <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PoSetDeviceBusy</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;IdlePowerState&gt;</strong></td>

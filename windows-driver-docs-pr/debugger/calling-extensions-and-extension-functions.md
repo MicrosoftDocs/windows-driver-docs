@@ -1,7 +1,6 @@
 ---
 title: Calling Extensions and Extension Functions
 description: Calling Extensions and Extension Functions
-ms.assetid: 0582cdc2-7059-42db-878b-28767a6fe850
 keywords: ["Debugger Engine API, calling extensions"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

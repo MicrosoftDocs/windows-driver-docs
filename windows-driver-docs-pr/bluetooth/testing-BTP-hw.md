@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform supported hardware
 description: Bluetooth Test Platform (BTP) supported hardware.
-ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 
@@ -18,6 +17,7 @@ In the above scenario the Traduci makes several things simpler: It is able to pr
 Additionally, it is important to note that BTP tests do not have a tight dependency on the Traduci. If other external hardware is needed for a test, the BTP is designed to allow easy extensibility to support that scenario.
 
 ## Traduci board
+
 The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
 ![Photo of the Traduci board](images/Traduci_Overhead.jpg)
@@ -31,6 +31,8 @@ The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-241
 
 ## Supported radios
 
-Currently, only the RN42 (BR) and Bluefruit (LE) radios are officially supported. They are both capable of running the pairing and HID tests. More information about these radios can be reviwed at [HID Capable Peripheral Radios](testing-BTP-hw-hid.md).
+More information about officially supported radios can be reviewed at the following pages:
 
-Audio tests are under development. More information on the audio radio that will be used can be reviewed at [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md).
+- [HID Capable Peripheral Radios](testing-BTP-hw-hid.md)
+- [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md)
+- [BM-64-EVB board](testing-BTP-hw-bm64.md)

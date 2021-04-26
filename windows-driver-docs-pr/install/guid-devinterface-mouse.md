@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MOUSE
 description: GUID_DEVINTERFACE_MOUSE
-ms.assetid: c5aff960-a78d-4429-ba3f-f2f91d9a56fa
 keywords: ["GUID_DEVINTERFACE_MOUSE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Drivers for mouse devices register instances of this device interface class to n
 
 The system-supplied [mouse class driver](../hid/keyboard-and-mouse-class-drivers.md) registers an instance of this device interface class for a mouse device. Access an instance of this device interface class by using the I/O interface supported by the mouse class driver.
 
-For general information about supporting mouse devices, see [HID Architecture](/previous-versions/jj126193(v=vs.85)) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
+For general information about supporting mouse devices, see [HID Architecture](../hid/hid-architecture.md) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
 
 The WDK includes sample code for the system-supplied mouse class driver. The mouse class driver uses the obsolete identifier [**GUID_CLASS_MOUSE**](guid-class-mouse.md) to register an instance of this [device setup class](./overview-of-device-setup-classes.md).
 

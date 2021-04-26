@@ -1,7 +1,6 @@
 ---
 title: Defining and Exporting New GUIDs
 description: Defining and Exporting New GUIDs
-ms.assetid: a7deb283-7cab-4f3c-ad96-f8085222456e
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "exporting GUIDs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

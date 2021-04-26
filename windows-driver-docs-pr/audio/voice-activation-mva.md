@@ -1,7 +1,6 @@
 ---
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
-ms.assetid: 48a7e96b-58e8-4a49-b673-14036d4108d5
 ms.date: 09/08/2020
 ms.localizationpriority: medium
 ---
@@ -95,7 +94,7 @@ Validate HW support for [KSPROPSETID_SoundDetector2](kspropsetid-sounddetector2.
 
 ## Sample Code Overview
 
-There is sample code for an audio driver that implements voice activation on GitHub as part of the SYSVAD virtual audio adapter sample. It is recommended to use [this code](https://github.com/Microsoft/Windows-driver-samples/blob/master/audio/sysvad/) as a starting point.
+There is sample code for an audio driver that implements voice activation on GitHub as part of the SYSVAD virtual audio adapter sample. It is recommended to use [this code](https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/) as a starting point.
 
 For more information about the SYSVAD sample audio driver, see [Sample Audio Drivers](./sample-audio-drivers.md).
 
@@ -131,7 +130,7 @@ At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundD
 KSNOTIFICATIONID_SoundDetector is defined in ksmedia.h as shown here.
 
 ```cpp
-// The payload of this notification is a SOUNDDETECTOR_DETECTIONHEADER
+// The payload of this notification is a SOUNDDETECTOR_PATTERNHEADER
 #define STATIC_KSNOTIFICATIONID_SoundDetector\
     0x6389d844, 0xbb32, 0x4c4c, 0xa8, 0x2, 0xf4, 0xb4, 0xb7, 0x7a, 0xfe, 0xad
 DEFINE_GUIDSTRUCT("6389D844-BB32-4C4C-A802-F4B4B77AFEAD", KSNOTIFICATIONID_SoundDetector);

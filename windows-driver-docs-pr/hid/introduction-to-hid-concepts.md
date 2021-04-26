@@ -1,7 +1,6 @@
 ---
 title: HID Application Programming Interface (API)
 description: Introduction to Human Interface Devices (HID) API.
-ms.assetid: 477FF911-5A17-4EA5-9403-1D7B4E8B3BA5
 keywords:
 - Human Interface Devices
 - HID
@@ -40,8 +39,8 @@ These HID APIs are used to move data between an application and a selected devic
 - [HidD\_GetInputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getinputreport)
 - [HidD\_SetFeature](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)
 - [HidD\_SetOutputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)
-- [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile)
-- [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile)
+- [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile)
+- [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile)
 
 ## Report Creation and Interpretation
 
@@ -54,8 +53,8 @@ To interpret the Reports received from a device or to create Reports to be sent 
 These are the HID parser APIs.
 
 - [HidP\_GetButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttoncaps)
-- [HidP\_GetButtons](./hdpi-h-macros.md)
-- [HidP\_GetButtonsEx](./hdpi-h-macros.md)
+- [HidP\_GetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP\_GetButtonsEx](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
 - [HidP\_GetCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getcaps)
 - [HidP\_GetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata)
 - [HidP\_GetExtendedAttributes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getextendedattributes)
@@ -72,13 +71,13 @@ These are the HID parser APIs.
 - [HidP\_IsSameUsageAndPage](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_usage_and_page)
 - [HidP\_MaxDataListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxdatalistlength)
 - [HidP\_MaxUsageListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxusagelistlength)
-- [HidP\_SetButtons](./hdpi-h-macros.md)
+- [HidP\_SetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
 - [HidP\_SetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setdata)
 - [HidP\_SetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setscaledusagevalue)
 - [HidP\_SetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
 - [HidP\_SetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue)
 - [HidP\_SetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevaluearray)
-- [HidP\_UnsetButtons](./hdpi-h-macros.md)
+- [HidP\_UnsetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
 - [HidP\_UnsetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)
 - [HidP\_UsageAndPageListDifference](/previous-versions/windows/hardware/drivers/ff539824(v=vs.85))
 - [HidP\_UsageListDifference](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usagelistdifference)

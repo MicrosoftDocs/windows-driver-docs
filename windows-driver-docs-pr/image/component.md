@@ -1,7 +1,6 @@
 ---
 title: Component element
 description: The required Component element identifies the component that the current DeviceCondition or ConditionHistoryEntry element describes.
-ms.assetid: 1204d8c6-40a2-4b0b-bf86-a739ae96f54a
 keywords: ["Component element Imaging Devices"]
 topic_type:
 - apiref

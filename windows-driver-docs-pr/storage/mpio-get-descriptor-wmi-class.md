@@ -1,7 +1,6 @@
 ---
 title: MPIO\_GET\_DESCRIPTOR WMI Class
 description: MPIO\_GET\_DESCRIPTOR WMI Class
-ms.assetid: 6d48c0b5-c20f-4017-aae5-0b00fa5de18d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

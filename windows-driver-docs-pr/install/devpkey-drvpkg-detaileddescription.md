@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_DetailedDescription
 description: DEVPKEY_DrvPkg_DetailedDescription
-ms.assetid: ee9080d1-8c66-42b3-af48-cb1fbfc332e2
 keywords: ["DEVPKEY_DrvPkg_DetailedDescription Device and Driver Installation"]
 topic_type:
 - apiref
@@ -65,7 +64,7 @@ The detailed description string is in XML format. XML format makes it possible f
 <a href="" id="paragraph-tag"></a>Paragraph tag  
 &lt;p&gt;
 
-You can set the value of DEVPKEY_DrvPkg_DetailedDescription by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DetailedDescription by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_DetailedDescription by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DetailedDescription by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_DetailedDescription for a device instance that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -107,7 +106,7 @@ Requirements
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

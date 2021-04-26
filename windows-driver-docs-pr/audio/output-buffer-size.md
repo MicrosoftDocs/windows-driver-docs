@@ -1,7 +1,6 @@
 ---
 title: Output Buffer Size
 description: Output Buffer Size
-ms.assetid: 386cc6f7-2fab-474a-b997-9ba2457ada0c
 keywords:
 - data-intersection handlers WDK audio , output buffer size
 - output buffers WDK audio
@@ -20,9 +19,9 @@ The miniport driver's [**IMiniport::DataRangeIntersection**](/windows-hardware/d
 
 For a mono or stereo format, the minimum size for the output buffer is either **sizeof**([**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)) or **sizeof**([**KSDATAFORMAT\_DSOUND**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_dsound)), depending on whether a WAVEFORMATEX or DirectSound format has been selected.
 
-If the wave format supports more than two channels, the [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) structure that is embedded at the end of the[**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure expands to occupy an additional number of bytes that is equal to the difference
+If the wave format supports more than two channels, the [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) structure that is embedded at the end of the[**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure expands to occupy an additional number of bytes that is equal to the difference
 
-**sizeof**([**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible)) - **sizeof**([**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex))
+**sizeof**([**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible)) - **sizeof**([**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex))
 
  
 

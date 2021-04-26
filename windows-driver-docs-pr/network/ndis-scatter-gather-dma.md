@@ -1,7 +1,6 @@
 ---
 title: NDIS Scatter/Gather DMA
 description: NDIS Scatter/Gather DMA
-ms.assetid: 70b8321b-7b21-4d11-a9c2-46b0caa26ce6
 keywords:
 - miniport drivers WDK networking , scatter/gather DMA
 - NDIS miniport drivers WDK , scatter/gather DMA
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 # NDIS Scatter/Gather DMA
 
-[!include[NDIS DMA ARM note](ndis-dma-arm-note.md)]
+[!include[NDIS DMA ARM note](../includes/ndis-dma-arm-note.md)]
 
 NDIS miniport drivers can use the Scatter/Gather DMA (SGDMA) method to transfer data between a NIC and system memory. A successful DMA transfer requires the physical address of the data to be in an address range that the NIC supports. HAL provides a mechanism for drivers to obtain the physical address list for an MDL chain and, if necessary, will double-buffer the data to a physical address range.
 

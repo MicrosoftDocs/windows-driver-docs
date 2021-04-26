@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS versions
 description: Overview of NDIS versions
-ms.assetid: 6ecd4040-2831-4238-8080-97edc6a7c3ba
 keywords:
 - network drivers WDK , NDIS versions
 - NDIS WDK , versions in network drivers

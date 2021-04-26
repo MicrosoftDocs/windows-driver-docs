@@ -1,7 +1,6 @@
 ---
 title: Using Request Object Context
 description: Using Request Object Context
-ms.assetid: befb4a22-0640-45e3-890e-6ff17969b017
 keywords:
 - request objects WDK KMDF , context space
 - context space WDK KMDF

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xF1 SCSI_VERIFIER_DETECTED_VIOLATION
 description: The SCSI_VERIFIER_DETECTED_VIOLATION bug check has a value of 0x000000F1. This is the bug check code for all Driver Verifier SCSI Verification violations.
-ms.assetid: babc33f9-a467-4b19-b1a2-1898d0224d4d
 keywords: ["Bug Check 0xF1 SCSI_VERIFIER_DETECTED_VIOLATION", "SCSI_VERIFIER_DETECTED_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:
@@ -108,21 +107,21 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>Delay, in microseconds</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The Storport miniport driver called <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportstallexecution" data-raw-source="[StorPortStallExecution](/windows-hardware/drivers/ddi/storport/nf-storport-storportstallexecution)">StorPortStallExecution</a></strong> and specified a delay longer than 0.1 second, stalling the processor for an excessive length of time.</p></td>
+<td align="left"><p>The Storport miniport driver called <strong><a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportstallexecution" data-raw-source="[StorPortStallExecution](/windows-hardware/drivers/ddi/storport/nf-storport-storportstallexecution)">StorPortStallExecution</a></strong> and specified a delay longer than 0.1 second, stalling the processor for an excessive length of time.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x2002</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p><strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportgetuncachedextension" data-raw-source="[StorPortGetUncachedExtension](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetuncachedextension)">StorPortGetUncachedExtension</a></strong> was not called from the miniport driver's <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[HwStorFindAdapter](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)">HwStorFindAdapter</a></strong> routine. The <strong>StorPortGetUncachedExtension</strong> routine can only be called from the miniport driver's <strong>HwStorFindAdapter</strong> routine and only for a bus-master adapter. A Storport miniport driver must set the <strong>SrbExtensionSize</strong> of the <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data" data-raw-source="[HW_INITIALIZATION_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data)">HW_INITIALIZATION_DATA</a></strong> (Storport) structure before calling <strong>StorPortGetUncachedExtension</strong>.</p></td>
+<td align="left"><p><strong><a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportgetuncachedextension" data-raw-source="[StorPortGetUncachedExtension](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetuncachedextension)">StorPortGetUncachedExtension</a></strong> was not called from the miniport driver's <strong><a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[HwStorFindAdapter](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)">HwStorFindAdapter</a></strong> routine. The <strong>StorPortGetUncachedExtension</strong> routine can only be called from the miniport driver's <strong>HwStorFindAdapter</strong> routine and only for a bus-master adapter. A Storport miniport driver must set the <strong>SrbExtensionSize</strong> of the <strong><a href="/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1" data-raw-source="[HW_INITIALIZATION_DATA](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1)">HW_INITIALIZATION_DATA</a></strong> (Storport) structure before calling <strong>StorPortGetUncachedExtension</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2003</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An invalid address was passed to the <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase" data-raw-source="[StorPortGetDeviceBase](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase)">StorPortGetDeviceBase</a></strong> routine. The <strong>StorPortGetDeviceBase</strong> routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.</p></td>
+<td align="left"><p>An invalid address was passed to the <strong><a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase" data-raw-source="[StorPortGetDeviceBase](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase)">StorPortGetDeviceBase</a></strong> routine. The <strong>StorPortGetDeviceBase</strong> routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x2004</p></td>
@@ -136,7 +135,7 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The Storport miniport driver passed an invalid virtual address to one of the <strong>StorPortRead</strong><em>xxx</em> or <strong>StorPortWrite</strong><em>xxx</em> routines. This usually means the address supplied doesn't map to the common buffer area. The specified <em>Register</em> or <em>Port</em> must be in mapped memory-space range returned by <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase" data-raw-source="[StorPortGetDeviceBase](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase)">StorPortGetDeviceBase</a></strong> routine.</p></td>
+<td align="left"><p>The Storport miniport driver passed an invalid virtual address to one of the <strong>StorPortRead</strong><em>xxx</em> or <strong>StorPortWrite</strong><em>xxx</em> routines. This usually means the address supplied doesn't map to the common buffer area. The specified <em>Register</em> or <em>Port</em> must be in mapped memory-space range returned by <strong><a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase" data-raw-source="[StorPortGetDeviceBase](/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdevicebase)">StorPortGetDeviceBase</a></strong> routine.</p></td>
 </tr>
 </tbody>
 </table>
@@ -156,6 +155,4 @@ This bug check can only occur when Driver Verifier has been instructed to monito
 If you are the driver writer, use the information obtained through this bug check to fix the bugs in your code.
 
 The Driver Verifier **SCSI Verification** option is available only in Windows XP and later. The Driver Verifier **Storport Verification** option is available only in Windows 7 and later. For full details on Driver Verifier, see the Windows Driver Kit.
-
- 
 

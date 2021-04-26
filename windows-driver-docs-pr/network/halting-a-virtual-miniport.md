@@ -1,7 +1,6 @@
 ---
 title: Halting a Virtual Miniport
 description: Halting a Virtual Miniport
-ms.assetid: f53040b1-cbbc-4b13-9bc7-8fae9eb38391
 keywords:
 - halting virtual miniports
 - virtual miniports WDK networking

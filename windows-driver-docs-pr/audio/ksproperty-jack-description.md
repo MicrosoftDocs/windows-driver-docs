@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_JACK\_DESCRIPTION
 description: The KSPROPERTY\_JACK\_DESCRIPTION property is implemented as a multi-item, pin-wise property that is accessed through the filter handle.
-ms.assetid: 005c7edc-8eb2-4387-b818-edef9b9dd4ee
 keywords: ["KSPROPERTY_JACK_DESCRIPTION Audio Devices"]
 topic_type:
 - apiref
@@ -46,8 +45,8 @@ In Windows Vista and later, this property can be supported on any bridge pin tha
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter handle)</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a> followed by an array of <a href="ksjack-description.md" data-raw-source="[&lt;strong&gt;KSJACK_DESCRIPTION&lt;/strong&gt;](ksjack-description.md)"><strong>KSJACK_DESCRIPTION</strong></a> structures</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a> followed by an array of <a href="ksjack-description.md" data-raw-source="[&lt;strong&gt;KSJACK_DESCRIPTION&lt;/strong&gt;](ksjack-description.md)"><strong>KSJACK_DESCRIPTION</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>
@@ -111,6 +110,4 @@ Requirements
 [KSMULTIPLE\_ITEM](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
 [KSPROPERTY](/previous-versions/ff564262(v=vs.85))
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Penetration Tests (Device Fundamentals)
 description: The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces.
-ms.assetid: 53EBAF4B-2CEF-492B-98B8-DA199FDFBC46
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>Disable <a href="iospy.md" data-raw-source="[I/O Spy](iospy.md)">I/O Spy</a> on 1 or more devices.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_DisableSupport.wsc</p>
 <p><strong>Test method:</strong> DisableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
@@ -47,7 +46,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>Enable <a href="iospy.md" data-raw-source="[I/O Spy](iospy.md)">I/O Spy</a> on one or more devices.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_EnableSupport.wsc</p>
 <p><strong>Test method:</strong> EnableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>DFD</em> - specifies the path to the IoSpy data file. The default location is %SystemDrive%\DriverTest\IoSpy</p></td>
 </tr>
@@ -56,7 +55,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>The Fuzz Misc API tests are tests that determine whether the driver can handle a variety of common calls from kernel mode drivers.</p>
 <p>The tests includes the following tests:</p>
 <ul>
-<li><p>Calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile" data-raw-source="[&lt;strong&gt;ZwReadFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile)"><strong>ZwReadFile</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile" data-raw-source="[&lt;strong&gt;ZwWriteFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile)"><strong>ZwWriteFile</strong></a>, specifying valid data buffer pointers, varying lengths (including zero), and varying byte offsets, including zero, -1 and 64-bit bytes offsets.</p></li>
+<li><p>Calls to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile" data-raw-source="[&lt;strong&gt;ZwReadFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile)"><strong>ZwReadFile</strong></a> and <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile" data-raw-source="[&lt;strong&gt;ZwWriteFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile)"><strong>ZwWriteFile</strong></a>, specifying valid data buffer pointers, varying lengths (including zero), and varying byte offsets, including zero, -1 and 64-bit bytes offsets.</p></li>
 <li><p>Calls to cancel I/0 and flush buffers.</p></li>
 <li><p>A series of directory query calls using common file information classes with valid user data buffer pointers and varying buffer lengths (including zero).</p></li>
 <li><p>Directory query calls similar to those issued by programs running under control of the Virtual DOS Machine (VDM).</p></li>
@@ -69,7 +68,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 </ul>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoMiscAPITest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -82,7 +81,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>This test performs the same tests as Fuzz Misc API test and this time passes a blank (zero-length) query and an invalid buffer address to the driver while trying to retrieve the extended attributes of a file.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoMiscAPIWithZeroLengthTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -96,7 +95,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>For detailed information about this test, see <a href="#about-the-fuzz-open-and-close-test" data-raw-source="[About the Fuzz open and close test](#about-the-fuzz-open-and-close-test)">About the Fuzz open and close test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoOpenCloseTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -111,10 +110,10 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>The Fuzz test issues each query or set call at least 1024 times with a valid buffer and a variety of buffer lengths and file information classes. One request of each type is also sent with an invalid buffer pointer and a zero buffer length.</p>
 <p>If you use the <em>ChangeBufferProtectionFlags</em> parameter, which sets the protection option, the Fuzz test varies the security setting on the buffer in each query and set call.</p>
 <p>This test also performs the Fuzz Sub-opens test.</p>
-<p>This test uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile" data-raw-source="[&lt;strong&gt;ZwQueryInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile)"><strong>ZwQueryInformationFile</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile" data-raw-source="[&lt;strong&gt;ZwSetInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile)"><strong>ZwSetInformationFile</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567070" data-raw-source="[&lt;strong&gt;ZwQueryVolumeInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile)"><strong>ZwQueryVolumeInformationFile</strong></a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567112" data-raw-source="[&lt;strong&gt;ZwSetVolumeInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile)"><strong>ZwSetVolumeInformationFile</strong></a> functions.</p>
+<p>This test uses the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile" data-raw-source="[&lt;strong&gt;ZwQueryInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile)"><strong>ZwQueryInformationFile</strong></a>, <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile" data-raw-source="[&lt;strong&gt;ZwSetInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile)"><strong>ZwSetInformationFile</strong></a>, <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile" data-raw-source="[&lt;strong&gt;ZwQueryVolumeInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile)"><strong>ZwQueryVolumeInformationFile</strong></a>, and <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile" data-raw-source="[&lt;strong&gt;ZwSetVolumeInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile)"><strong>ZwSetVolumeInformationFile</strong></a> functions.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoQueryAndSetFileInformationTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -130,7 +129,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>If you use the <em>ChangeBufferProtectionFlags</em> parameter, which sets the protection option, the Fuzz test varies the security setting on the buffer in each query and set call.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoQueryAndSetSecurityTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -152,7 +151,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>A <em>Tailored Random Test</em> is included as part of the random test. The tailored random test uses the results of the random test to examine the drivers response to IOCTL or FSCTL requests in more detail. The tailored random test probes areas that the random test missed and those on which the driver did not respond as expected based on the status returned by the random test calls.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test methods:</strong> DoRandomIOCTLTest, DoRandomFSCTLTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>MinInBuffer</em></p>
 <p><em>MaxInBuffer</em></p>
 <p><em>MinOutBuffer</em></p>
@@ -174,13 +173,13 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <tr class="even">
 <td align="left"><p><span id="fuzz_sub-opens_test"></span>Fuzz Sub-opens test</p></td>
 <td align="left"><p>The test performs a rapid series of calls to open objects in the device's namespace. In these calls, it passes a path that begins with the device and includes arbitrary names and nonsense strings of varying length and content.</p>
-<p>During a <em>Relative Open Test</em>, (also known as a <em>Sub-open Test</em>) the Fuzz test attempts to open objects in the device's <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access" data-raw-source="[namespace](../kernel/controlling-device-namespace-access.md)">namespace</a>.</p>
+<p>During a <em>Relative Open Test</em>, (also known as a <em>Sub-open Test</em>) the Fuzz test attempts to open objects in the device's <a href="/windows-hardware/drivers/kernel/controlling-device-namespace-access" data-raw-source="[namespace](../kernel/controlling-device-namespace-access.md)">namespace</a>.</p>
 <p>During this test, the Fuzz test performs a rapid series of calls to open objects in the namespace of the devices opened by using <a href="#basic-open-operations" data-raw-source="[Basic Open Operations](#basic-open-operations)">Basic Open Operations</a> and other open operations. In these calls, the Fuzz test passes a path that begins with the device and includes arbitrary names and nonsense strings of varying length and content.</p>
-<p>This test determines how the driver or file system manages open requests in its namespace. In particular, if the driver does not support open requests in its namespace, it must prevent unauthorized access, either by failing the requests, or by setting the FILE_DEVICE_SECURE_OPEN device characteristic when it uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice" data-raw-source="[&lt;strong&gt;IoCreateDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)"><strong>IoCreateDevice</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure" data-raw-source="[&lt;strong&gt;IoCreateDeviceSecure&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure)"><strong>IoCreateDeviceSecure</strong></a> to create the device object.</p>
-<p>For more information about the namespace of a device, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access" data-raw-source="[Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md)">Controlling Device Namespace Access</a>.</p>
+<p>This test determines how the driver or file system manages open requests in its namespace. In particular, if the driver does not support open requests in its namespace, it must prevent unauthorized access, either by failing the requests, or by setting the FILE_DEVICE_SECURE_OPEN device characteristic when it uses <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice" data-raw-source="[&lt;strong&gt;IoCreateDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)"><strong>IoCreateDevice</strong></a> or <a href="/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure" data-raw-source="[&lt;strong&gt;IoCreateDeviceSecure&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure)"><strong>IoCreateDeviceSecure</strong></a> to create the device object.</p>
+<p>For more information about the namespace of a device, see <a href="/windows-hardware/drivers/kernel/controlling-device-namespace-access" data-raw-source="[Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md)">Controlling Device Namespace Access</a>.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoSubOpensTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -196,7 +195,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>The Fuzz test records the stream names used in the test.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoSubOpensWithStreamsTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -206,13 +205,13 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Fuzz_Zero-Length_Buffer_FSCTL_test___Fuzz_Zero-Length_Buffer_IOCTL_test"></span><span id="fuzz_zero-length_buffer_fsctl_test___fuzz_zero-length_buffer_ioctl_test"></span><span id="FUZZ_ZERO-LENGTH_BUFFER_FSCTL_TEST___FUZZ_ZERO-LENGTH_BUFFER_IOCTL_TEST"></span>Fuzz Zero-Length Buffer FSCTL test / Fuzz Zero-Length Buffer IOCTL test</p></td>
-<td align="left"><p>This test issues a series of calls to the <a href="https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol" data-raw-source="[&lt;strong&gt;DeviceIoControl function&lt;/strong&gt;](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)"><strong>DeviceIoControl function</strong></a> with input and/or output buffer lengths of 0. The test generates varying file system control codes by using different function codes, device types, data transfer methods, and access requirements.</p>
-<p>During the Zero-Length Buffer Test, the Fuzz test issues a series of calls to the <a href="https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol" data-raw-source="[&lt;strong&gt;DeviceIoControl function&lt;/strong&gt;](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)"><strong>DeviceIoControl function</strong></a> with input and/or output buffer lengths of 0. The test generates varying I/O control codes by using different function codes, device types, data transfer methods, and access requirements. For information about the contents of I/O control codes, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes" data-raw-source="[Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md)">Defining I/O Control Codes</a>.</p>
+<td align="left"><p>This test issues a series of calls to the <a href="/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol" data-raw-source="[&lt;strong&gt;DeviceIoControl function&lt;/strong&gt;](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)"><strong>DeviceIoControl function</strong></a> with input and/or output buffer lengths of 0. The test generates varying file system control codes by using different function codes, device types, data transfer methods, and access requirements.</p>
+<p>During the Zero-Length Buffer Test, the Fuzz test issues a series of calls to the <a href="/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol" data-raw-source="[&lt;strong&gt;DeviceIoControl function&lt;/strong&gt;](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)"><strong>DeviceIoControl function</strong></a> with input and/or output buffer lengths of 0. The test generates varying I/O control codes by using different function codes, device types, data transfer methods, and access requirements. For information about the contents of I/O control codes, see <a href="/windows-hardware/drivers/kernel/defining-i-o-control-codes" data-raw-source="[Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md)">Defining I/O Control Codes</a>.</p>
 <p>To test the driver's handling of invalid buffer pointers, the buffer pointers in these user-mode calls specify addresses high in kernel virtual address space, such as 0xFFFFFC00).</p>
 <p>The Fuzz test performs the Zero-Length Buffer test on all devices opened during the basic and additional open tests. You can customize this test by using the <em>MinFunctionCode</em> and <em>MaxFunctionCode</em> command parameters to specify the range of IOCTL or FSCTL function codes used in the calls and <em>MinDeviceType</em> and <em>MaxDeviceType</em> to specify the range of device types used in the calls.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test methods:</strong> DoZeroLengthBufferIOCTLTest, DoZeroLengthBufferFSCTLTest</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>MinDeviceType</em></p>
 <p><em>MaxDeviceType</em></p>
 <p><em>MinFunctionCode</em></p>
@@ -228,7 +227,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>Runs <a href="ioattack.md" data-raw-source="[I/O Attack](ioattack.md)">I/O Attack</a> on the specified device or devices.</p>
 <p><strong>Test binary:</strong> Devfund_IOAttack_DeleteDataFile.wsc</p>
 <p><strong>Test method:</strong> RunIoAttack</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 </tbody>
@@ -289,6 +288,4 @@ The Open and Close Test uses the same options used in [Basic Open Operations](#b
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
 [How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
-
- 
 

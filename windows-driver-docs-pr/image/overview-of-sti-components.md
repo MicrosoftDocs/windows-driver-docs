@@ -1,7 +1,6 @@
 ---
 title: Overview of STI Components
 description: Overview of STI Components
-ms.assetid: 30aaa622-fb86-42dc-a417-df61e0093db3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -60,7 +59,7 @@ Microsoft STI defines a set of COM interfaces that provide communications paths 
 
 ### <a href="" id="ddk-user-mode-still-image-minidrivers-si"></a>User-Mode Still Image Minidrivers
 
-User-mode still image minidrivers are vendor-supplied components that provide a device-specific, user-mode interface to an appropriate kernel-mode driver. Each of these user-mode drivers must implement the [IStiUSD COM Interface](istiusd-com-interface.md). They communicate with kernel-mode drivers by calling the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) Win32 functions (described in the Microsoft Windows SDK documentation). For more information, see [Creating a User-Mode Still Image Minidriver](creating-a-user-mode-still-image-minidriver.md).
+User-mode still image minidrivers are vendor-supplied components that provide a device-specific, user-mode interface to an appropriate kernel-mode driver. Each of these user-mode drivers must implement the [IStiUSD COM Interface](istiusd-com-interface.md). They communicate with kernel-mode drivers by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) Win32 functions (described in the Microsoft Windows SDK documentation). For more information, see [Creating a User-Mode Still Image Minidriver](creating-a-user-mode-still-image-minidriver.md).
 
 ### <a href="" id="ddk-kernel-mode-still-image-drivers-si"></a>Kernel-Mode Still Image Drivers
 
@@ -84,12 +83,10 @@ Extended capabilities port (ECP) and enhanced parallel port (EPP) modes are supp
 For devices that support the SBP-2 protocol, user-mode drivers can call Microsoft's SBP-2 interface. Otherwise, a vendor-supplied filter driver is required.
 
 <a href="" id="devices-connected-to-a-serial-port"></a>**Devices connected to a serial port**  
-The standard serial port driver is used. (For more information, see [Serial Devices and Drivers](/previous-versions/ff547451(v=vs.85)).)
+The standard serial port driver is used. (For more information, see [Serial Devices and Drivers](../serports/using-serial-sys-and-serenum-sys.md).)
 
 <a href="" id="devices-connected-to-an-infrared-interface"></a>**Devices connected to an infrared interface**  
 Drivers can call the **IrSock** software interface (described in the Microsoft Windows SDK documentation).
 
 A vendor only needs to provide bus drivers for buses that are not supported by Microsoft drivers.
-
- 
 

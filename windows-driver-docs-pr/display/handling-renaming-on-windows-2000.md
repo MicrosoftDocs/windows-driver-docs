@@ -1,7 +1,6 @@
 ---
 title: Handling Renaming on Windows 2000
 description: Handling Renaming on Windows 2000
-ms.assetid: d8f533f8-3037-47c0-986b-bd283bb3804d
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming on Windows 2000
 - vertex buffers WDK DirectX 8.0 , renaming on Windows 2000
@@ -32,7 +31,7 @@ fpVidMem = pMap->pvVirtAddr +
 
 **pvVirtAddr** is the base address of the user-mode mapping of the AGP heap into a given process. **fpStart** is the offset of the base of the AGP heap into the conceptual address space described above and **fpHeapOffset** is the offset of the start of the surface from the base of the same conceptual address space.
 
-Your driver is notified of the conceptual base address of AGP heaps through the [**DdGetDriverInfo**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) callback. When *DdGetDriverInfo* is called with GUID\_UpdateNonLocalHeap the **fpGARTLin** field of the data structure passed is the same value as **fpStart**, that is, the base address of the start of the AGP heap in the conceptual address space. Unfortunately, your driver is not notified of the value of **pvVirtAddr** and it is not visible to the driver through any of the data structures passed to the driver. Therefore, its value has to be computed from the **fpVidMem** computed by the kernel for the vertex buffer on initial creating. Given the **fpVidMem** computed by the kernel, simply subtract the current **fpHeapOffset** less the heap's **fpStart**. Given the **fpHeapOffset** of the new memory to be swapped into the vertex buffer on renaming, the new value of **fpVidMem** can be easily computed.
+Your driver is notified of the conceptual base address of AGP heaps through the [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) callback. When *DdGetDriverInfo* is called with GUID\_UpdateNonLocalHeap the **fpGARTLin** field of the data structure passed is the same value as **fpStart**, that is, the base address of the start of the AGP heap in the conceptual address space. Unfortunately, your driver is not notified of the value of **pvVirtAddr** and it is not visible to the driver through any of the data structures passed to the driver. Therefore, its value has to be computed from the **fpVidMem** computed by the kernel for the vertex buffer on initial creating. Given the **fpVidMem** computed by the kernel, simply subtract the current **fpHeapOffset** less the heap's **fpStart**. Given the **fpHeapOffset** of the new memory to be swapped into the vertex buffer on renaming, the new value of **fpVidMem** can be easily computed.
 
 The following code fragment demonstrates computing a new **fpVidMem** for an AGP surface in a lock call.
 
@@ -69,9 +68,9 @@ pLockData->ddRVal = DD_OK;
 return DDHAL_DRIVER_HANDLED;
 ```
 
-In order to make nonlocal video memory accessible to a user-mode process it is necessary for the memory to be both committed and mapped to the user-mode process. To ensure that this is done when vertex buffer renaming is being performed it is essential, that the new memory for the vertex buffer be allocated using the **Eng***Xxx* function [**HeapVidMemAllocAligned**](/windows/desktop/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned). This guarantees that the memory is committed and mapped before use. **HeapVidMemAllocAligned** returns an offset into the conceptual address space of the AGP heap and, therefore, this pointer can be used as an **fpHeapOffset** directly.
+In order to make nonlocal video memory accessible to a user-mode process it is necessary for the memory to be both committed and mapped to the user-mode process. To ensure that this is done when vertex buffer renaming is being performed it is essential, that the new memory for the vertex buffer be allocated using the **Eng***Xxx* function [**HeapVidMemAllocAligned**](/windows/win32/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned). This guarantees that the memory is committed and mapped before use. **HeapVidMemAllocAligned** returns an offset into the conceptual address space of the AGP heap and, therefore, this pointer can be used as an **fpHeapOffset** directly.
 
-If the driver returns DDHAL\_DRIVER\_HANDLED for a lock of an AGP surface the kernel code returns the value of **lpSurfData** in the [**DD\_LOCKDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_lockdata) data structure to the runtime and application. If the driver returns DDHAL\_DRIVER\_NOTHANDLED the kernel simply returns the value of **fpVidMem** to user mode. Therefore, it is not necessary to return DDHAL\_DRIVER\_HANDLED as long as **fpVidMem** is updated to point to the new user-mode pointer. However, we recommend that the driver both set **fpVidMem** and **lpSurfData** and return DDHAL\_DRIVER\_HANDLED.
+If the driver returns DDHAL\_DRIVER\_HANDLED for a lock of an AGP surface the kernel code returns the value of **lpSurfData** in the [**DD\_LOCKDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_lockdata) data structure to the runtime and application. If the driver returns DDHAL\_DRIVER\_NOTHANDLED the kernel simply returns the value of **fpVidMem** to user mode. Therefore, it is not necessary to return DDHAL\_DRIVER\_HANDLED as long as **fpVidMem** is updated to point to the new user-mode pointer. However, we recommend that the driver both set **fpVidMem** and **lpSurfData** and return DDHAL\_DRIVER\_HANDLED.
 
  
 

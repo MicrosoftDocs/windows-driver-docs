@@ -1,7 +1,6 @@
 ---
 title: HardwareIdList (PackageInfo)
 description: HardwareIdList (PackageInfo)
-ms.assetid: 32bd11f8-767f-4082-b753-efa9debf23cc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

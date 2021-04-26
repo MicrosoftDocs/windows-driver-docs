@@ -1,7 +1,6 @@
 ---
 title: qlocks
 description: The qlocks extension displays the state of all queued spin locks.
-ms.assetid: fdeefedb-c840-410a-94e4-ae42923e82e7
 keywords: ["qlocks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

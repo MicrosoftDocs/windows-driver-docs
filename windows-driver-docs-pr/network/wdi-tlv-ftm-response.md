@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FTM_RESPONSE
 description: WDI_TLV_FTM_RESPONSE is a TLV that contains Fine Timing Measurement (FTM) response information from a BSS target.
-ms.assetid: 7FD63544-F7FF-4593-A525-A6BEA2A56BB7
 ms.date: 02/13/2019
 keywords:
  - WDI_TLV_FTM_RESPONSE Network Drivers Starting with Windows Vista

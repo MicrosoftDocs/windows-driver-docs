@@ -1,7 +1,6 @@
 ---
 title: TraceView Command-Line Interface
 description: TraceView Command-Line Interface
-ms.assetid: da38268f-ebdf-468c-95fe-500ba747047a
 keywords:
 - TraceView WDK , command-line interface
 - commands WDK TraceView

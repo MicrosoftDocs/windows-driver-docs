@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_PROLOGIC\_ENCODER
 description: KSNODETYPE\_PROLOGIC\_ENCODER
-ms.assetid: cca6fe1d-20f8-4112-956b-a1b33b48a4ff
 keywords: ["KSNODETYPE_PROLOGIC_ENCODER Audio Devices"]
 topic_type:
 - apiref

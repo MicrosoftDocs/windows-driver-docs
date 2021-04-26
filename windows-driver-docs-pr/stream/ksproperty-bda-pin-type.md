@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_TYPE
 description: Clients use KSPROPERTY\_BDA\_PIN\_TYPE to retrieve the value that specifies the type of a pin.
-ms.assetid: 3d2a976b-67ff-4469-aa96-7aa8bd5f229e
 keywords: ["KSPROPERTY_BDA_PIN_TYPE Streaming Media Devices"]
 topic_type:
 - apiref

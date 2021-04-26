@@ -1,7 +1,6 @@
 ---
 title: AddDevice Routine of a Battery Miniclass Driver
 description: AddDevice Routine of a Battery Miniclass Driver
-ms.assetid: 1b34e223-e238-4547-bd44-754be2e6749c
 keywords:
 - AddDevice routine WDK battery
 - battery miniclass drivers WDK , routines
@@ -21,7 +20,7 @@ In addition to the tasks required of a PnP *AddDevice* routine, the *AddDevice* 
 
 1.  Create an FDO for the battery and attach the FDO to the device stack for the controller.
 
-2.  Initialize the [**BATTERY\_MINIPORT\_INFO**](/windows/desktop/api/batclass/ns-batclass-battery_miniport_info) structure and call [**BatteryClassInitializeDevice**](/windows/desktop/api/batclass/nf-batclass-batteryclassinitializedevice) to register the miniclass driver with the battery class driver.
+2.  Initialize the [**BATTERY\_MINIPORT\_INFO**](/windows/win32/api/batclass/ns-batclass-battery_miniport_info) structure and call [**BatteryClassInitializeDevice**](/windows/win32/api/batclass/nf-batclass-batteryclassinitializedevice) to register the miniclass driver with the battery class driver.
 
 3.  Perform any other initialization required for the device.
 

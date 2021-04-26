@@ -1,7 +1,6 @@
 ---
 title: Dynamic Subdevice Registration and Unregistration
 description: Dynamic Subdevice Registration and Unregistration
-ms.assetid: 7157b7b3-655b-49d9-be45-c4a86a3cc82d
 keywords:
 - dynamic subdevice WDK audio
 - audio subdevices WDK

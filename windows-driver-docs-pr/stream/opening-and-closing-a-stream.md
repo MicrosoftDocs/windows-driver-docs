@@ -1,7 +1,6 @@
 ---
 title: Opening and Closing a Stream
 description: Opening and Closing a Stream
-ms.assetid: a4895e99-ab2e-482e-b89f-04b01177ec03
 keywords:
 - video capture WDK AVStream , opening streams
 - capturing video WDK AVStream , opening streams

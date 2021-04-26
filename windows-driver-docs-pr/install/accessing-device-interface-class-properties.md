@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Interface Class Properties
 description: Accessing Device Interface Class Properties
-ms.assetid: c9efe273-dc66-4585-8ab5-3842df1c95df
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ For information about how to use property keys to access device setup class prop
 
 ### <a href="" id="accessing-the-default-interface-for-a-device-interface-class"></a> Accessing the Default Interface for a Device Interface Class
 
-To retrieve the default interface for a device interface class, call [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) and supply the following parameter values:
+To retrieve the default interface for a device interface class, call [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) and supply the following parameter values:
 
 -   Set *ClassGuid* to the GUID that represents the device interface class for which to retrieve the default interface.
 
@@ -37,17 +36,17 @@ To retrieve the default interface for a device interface class, call [**SetupDiG
 
 This call will return a device information set that contains a device information element. The device information element that is returned represents the device that supports the default interface for the specified device interface class.
 
-To set the default interface for a device interface class, call [**SetupDiSetDeviceInterfaceDefault**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacedefault) and supply the following parameters values:
+To set the default interface for a device interface class, call [**SetupDiSetDeviceInterfaceDefault**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacedefault) and supply the following parameters values:
 
 -   Set *DeviceInfoSet* to a handle to the device information set that contains the device interface to set as the default for a device interface class.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that specifies the device interface in *DeviceInfoSet*.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that specifies the device interface in *DeviceInfoSet*.
 
 ### <a href="" id="accessing-device-interface-class-properties-that-have-registry-entry-v"></a> Accessing Device Interface Class Properties That Have Registry Entry Values Under the Interface Class Registry Key
 
 To access properties of a device interface class that have corresponding registry entry values under the interface class registry key, follow these steps:
 
-1.  Call the [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) function to open the interface class registry key and supply the following parameter values:
+1.  Call the [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) function to open the interface class registry key and supply the following parameter values:
 
     -   Set *ClassGuid* to a pointer to the GUID that identifies the device interface class of the requested class registry key.
     -   Set *samDesired* to a REGSAM-typed value that specifies the required access permission.
@@ -55,13 +54,11 @@ To access properties of a device interface class that have corresponding registr
     -   Set *MachineName* to a pointer to a NULL-terminated string that contains the name of the computer on which to open the requested class registry key. If the computer is the local computer, set *MachineName* to **NULL**.
     -   Set *Reserved* to **NULL**.
 
-    If this call to [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+    If this call to [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 
-2.  Supply the retrieved handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) and [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device interface class property.
+2.  Supply the retrieved handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) and [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the registry entry value that corresponds to the device interface class property.
 
-3.  Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
+3.  Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the class registry key after access to the key is no longer required.
 
 For information about how to install and use device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and [**INF AddInterface Directive**](inf-addinterface-directive.md).
-
- 
 

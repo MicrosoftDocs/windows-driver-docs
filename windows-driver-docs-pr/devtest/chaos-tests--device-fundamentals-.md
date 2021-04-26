@@ -1,7 +1,6 @@
 ---
 title: CHAOS Tests (Device Fundamentals)
 description: The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently.
-ms.assetid: FA0D73DC-B0B8-4CA7-8DDC-A2C3EC106C3F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,7 +28,7 @@ The CHAOS (Concurrent Hardware and Operating System) tests run various PnP drive
 <td align="left"><p><span id="Disable_Enhanced_Device_Testing__EDT__Support_"></span><span id="disable_enhanced_device_testing__edt__support_"></span><span id="DISABLE_ENHANCED_DEVICE_TESTING__EDT__SUPPORT_"></span>Disable Enhanced Device Testing (EDT) Support</p></td>
 <td align="left"><p>This test uninstalls the test filter driver (msdmfilt.sys) as an upper filter on devices specified using the DQ parameter. This test filter gets installed as part of running tests in this test category</p>
 <p>The PnP driver test uses EDT filter driver to send IRP_MN_CANCEL_REMOVE_DEVICE to target device stacks.</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
@@ -39,7 +38,7 @@ The CHAOS (Concurrent Hardware and Operating System) tests run various PnP drive
 <p><strong>Test binary:</strong> Devfund_ChaosTest.dll</p>
 <p><strong>Test method:</strong> RunCHAOSTest</p>
 <p><strong>Parameters:</strong></p>
-<p><em>DQ</em> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>TestPeriod</em> - Specifies how long to run the test (in minutes).</p></td>
 </tr>
 </tbody>
@@ -63,6 +62,4 @@ The CHAOS (Concurrent Hardware and Operating System) tests run various PnP drive
 [Penetration Tests (Device Fundamentals)](penetration-tests--device-fundamentals-.md)
 
 [PnP Tests (Device Fundamentals)](pnp-tests--device-fundamentals-.md)
-
- 
 

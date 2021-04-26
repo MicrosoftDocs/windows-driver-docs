@@ -1,7 +1,6 @@
 ---
 title: Restarting a Binding
 description: Restarting a Binding
-ms.assetid: 5abec927-cb73-4b02-b977-c4f45bd37c42
 keywords:
 - protocol drivers WDK networking , binding restarts
 - NDIS protocol drivers WDK , binding restarts

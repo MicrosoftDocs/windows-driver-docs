@@ -1,7 +1,6 @@
 ---
 title: IRQL annotations for drivers
 description: When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors.
-ms.assetid: E4C1D490-BE06-483A-90E4-6F3223E269A3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

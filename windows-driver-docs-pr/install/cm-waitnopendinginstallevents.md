@@ -1,7 +1,6 @@
 ---
 title: CM_WaitNoPendingInstallEvents
 description: CM_WaitNoPendingInstallEvents
-ms.assetid: b9922576-9e7e-454f-88e0-948a1e16523f
 keywords: ["CM_WaitNoPendingInstallEvents Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,4 +22,4 @@ This function is reserved for system use.
 #define CM_WaitNoPendingInstallEvents CMP_WaitNoPendingInstallEvents
 ```
 
-In other words, **CM_WaitNoPendingInstallEvents** is simply another name for [**CMP_WaitNoPendingInstallEvents**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents). Since there is no actual function named **CM_WaitNoPendingInstallEvents**, **GetProcAddress** will return **NULL**.
+In other words, **CM_WaitNoPendingInstallEvents** is simply another name for [**CMP_WaitNoPendingInstallEvents**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents). Since there is no actual function named **CM_WaitNoPendingInstallEvents**, **GetProcAddress** will return **NULL**.

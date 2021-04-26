@@ -1,8 +1,12 @@
 ---
 title: IddCx Objects
-description: IddCx uses the extensible UMDF object model to represent graphics objects, they are covered in following sections.
-ms.assetid: B4D40C6B-DCEF-4661-9DF2-411326870014
+description: IddCx uses the extensible UMDF object model to represent graphics objects.
 ms.date: 07/17/2020
+keywords:
+- Indirect display driver objects
+- IDD objects
+- Indirect display driver, UMDF objects
+- IDD, UMDF objects
 ms.localizationpriority: medium
 ---
 

@@ -42,11 +42,15 @@ The following terms are used throughout the Firmware WEG:
 
 - ACPI - Advanced Configuration and Power Interface
 
+- ACHI - Advanced Configuration Host Interface
+
 - BCD - Boot Configuration Data
 
 - BIOS - Basic Input/output System
 
 - CSM - Compatibility Support Module
+
+- EFI - Extensible Fireware Interface 
 
 - eMMC - embedded Multi-Media Controller
 
@@ -60,19 +64,25 @@ The following terms are used throughout the Firmware WEG:
 
 - HSTI / HSTS – Hardware Security Testability Interface / Specification
 
-- HVCI- HyperVisor Code Integrity
+- HVCI - HyperVisor Code Integrity
 
 - IOMMU - Input–output memory management unit
 
 - [INT10](https://en.wikipedia.org/wiki/INT_10H) - BIOS interrupt call used for video basic display
 
-- MAT/MADT – Memory A
+- MAT – Memory Attributes Table
+
+- MADT - Multiple APIC Description Table
 
 - MBR - Master Boot Record
 
 - MOR – Memory Overwrite Request
 
+- NVRAM - Non Volatile Random Access Memory
+
 - OEM - Original Equipment Manufacturer/Manufacturing
+
+- PCIe - Peripheral Component Interconnect express
 
 - RPMC – Replay Protected Monotonic Counter
 
@@ -80,17 +90,27 @@ The following terms are used throughout the Firmware WEG:
 
 - SPI - Serial Peripheral Interface
 
+- SSD - Solid State Drive 
+
 - TCG - Trusted Computing Group
 
 - TPM – Trusted Platform Module
 
 - UEFI - Unified Extensible Firmware Interface
 
+- WAET - Windows ACPI EmulatedDevices Table
+
+- WDDM - Windows Display Driver Model
+
 - WEG – Windows Engineering Guide
+
+- WHQL - Windows Hardware Quality Lab
 
 - WinPE- Windows Pre-installation Environment
 
 - WinRE - Windows Recovery Environment
+
+- WPBT - Windows Platform Binary Table
 
 - WSMT - Windows SMM Security Mitigations Table
 

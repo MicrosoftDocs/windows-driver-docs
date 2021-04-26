@@ -1,7 +1,6 @@
 ---
 title: Opening, Initializing and Closing an SD Card Bus Interface
 description: Opening, Initializing and Closing an SD Card Bus Interface
-ms.assetid: 986a352e-c479-444d-9c65-7958dd638bbb
 keywords:
 - SD WDK buses , opening interfaces
 - SD WDK buses , initializing interfaces

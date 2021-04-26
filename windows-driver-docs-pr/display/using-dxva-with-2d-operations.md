@@ -1,7 +1,6 @@
 ---
 title: Using DXVA with 2D Operations
 description: Using DXVA with 2D Operations
-ms.assetid: a864941d-69ac-48a4-85a2-7e05cd3c9617
 keywords:
 - two-dimensional operations WDK DirectX 9.0 , DXVA
 - 2D operations WDK DirectX 9.0 , DXVA
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_using_dxva_with_2d_operations_gg"></span><span id="DDK_USING_DXVA_WITH_2D_OPERATIONS_GG"></span>
 
 
-DirectX 9.0 and later drivers use the D3DDP2OP\_BLT operation code to perform blits between [DirectX Video Acceleration](directx-video-acceleration.md) (DXVA) surfaces. Therefore, if the runtime detects a DirectX 9.0 or later driver, the runtime must call the driver's [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) function to create any DXVA (or 2D-only) surface.
+DirectX 9.0 and later drivers use the D3DDP2OP\_BLT operation code to perform blits between [DirectX Video Acceleration](directx-video-acceleration.md) (DXVA) surfaces. Therefore, if the runtime detects a DirectX 9.0 or later driver, the runtime must call the driver's [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) function to create any DXVA (or 2D-only) surface.
 
  
 

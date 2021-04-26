@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_QUERY_QUOTA union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_QUERY_QUOTA.
-ms.assetid: b87b008d-f1ce-4dab-9afa-df67aa3dc596
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_QUOTA union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

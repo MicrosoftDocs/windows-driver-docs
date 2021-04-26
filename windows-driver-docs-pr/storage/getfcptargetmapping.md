@@ -1,7 +1,6 @@
 ---
 title: GetFcpTargetMapping function
 description: The GetFcpTargetMapping WMI method retrieves a mapping between the information that uniquely identifies a set of logical units for the operating system and the Fibre Channel protocol (FCP) identifiers for these logical units.
-ms.assetid: 2e4b3554-31de-4eaa-9228-844639a219d5
 keywords: ["GetFcpTargetMapping function Storage Devices"]
 topic_type:
 - apiref

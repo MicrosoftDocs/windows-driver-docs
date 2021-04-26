@@ -1,7 +1,6 @@
 ---
 title: Supporting Plug and Play in a SCSI Miniport Driver
 description: Supporting Plug and Play in a SCSI Miniport Driver
-ms.assetid: c8b148ac-b1ab-4870-8818-5ef1c2d68599
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI
@@ -20,12 +19,7 @@ Although Microsoft Windows 2000 and later operating systems are Plug and Play op
 
 A Plug and Play miniport driver must implement an *HwScsiAdapterControl* routine to stop and manage power to the HBA. No additional routines are required of a Plug and Play miniport driver to accommodate changes in driver initialization.
 
-The SCSI port driver creates PDOs for target devices and the FDO for the miniport driver, and handles requests to add, start or unload the device on behalf of the miniport driver. For general information about Plug and Play drivers, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+The SCSI port driver creates PDOs for target devices and the FDO for the miniport driver, and handles requests to add, start or unload the device on behalf of the miniport driver. For general information about Plug and Play drivers, see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 
  
-
- 
-
-
-
 

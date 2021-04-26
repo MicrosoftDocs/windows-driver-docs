@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG to indicate when there is a change in the TCP offload capabilities of the hardware.
-ms.assetid: 4E73F09A-965F-4F32-AFF7-FDF1E3B2853C
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG Network Drivers Starting with Windows Vista

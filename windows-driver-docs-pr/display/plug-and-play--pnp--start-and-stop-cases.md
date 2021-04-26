@@ -1,7 +1,6 @@
 ---
 title: Plug and Play (PnP) in WDDM 1.2 and later
 description: All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support the following behavior in response to start and stop requests.
-ms.assetid: A95DCFEA-BC1B-4A13-9850-13814725D53E
 keywords:
 - Plug and Play in display drivers WDK display
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers m
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
+<td align="left"><a href="/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics.WDDM12.Display.PnpStopStartSupport</strong></p></td>
 </tr>
 </tbody>
@@ -117,17 +116,17 @@ These are the return codes that the driver should return after a PnP stop proces
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Success__and_driver_returns_mode_information"></span><span id="success__and_driver_returns_mode_information"></span><span id="SUCCESS__AND_DRIVER_RETURNS_MODE_INFORMATION"></span>Success, and driver returns mode information</p></td>
-<td align="left"><p>Before the driver is stopped it must set up a frame buffer, using the current resolution, that the basic display driver can use, and the driver must return this information when the operating system calls the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> function. The saved mode information doesn't have to be compatible with BIOS, and the basic display driver won't offer a BIOS mode until the system is rebooted.</p>
-<p>The operating system guarantees that it won't call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device" data-raw-source="[&lt;em&gt;DxgkDdiStopDevice&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device)"><em>DxgkDdiStopDevice</em></a> if <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> returns <strong>STATUS_SUCCESS</strong>.</p></td>
+<td align="left"><p>Before the driver is stopped it must set up a frame buffer, using the current resolution, that the basic display driver can use, and the driver must return this information when the operating system calls the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> function. The saved mode information doesn't have to be compatible with BIOS, and the basic display driver won't offer a BIOS mode until the system is rebooted.</p>
+<p>The operating system guarantees that it won't call <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device" data-raw-source="[&lt;em&gt;DxgkDdiStopDevice&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device)"><em>DxgkDdiStopDevice</em></a> if <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> returns <strong>STATUS_SUCCESS</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="Success__and_driver_sets_the_Width_and_Height_members_of_the_DXGK_DISPLAY_INFORMATION_structure_to_zero"></span><span id="success__and_driver_sets_the_width_and_height_members_of_the_dxgk_display_information_structure_to_zero"></span><span id="SUCCESS__AND_DRIVER_SETS_THE_WIDTH_AND_HEIGHT_MEMBERS_OF_THE_DXGK_DISPLAY_INFORMATION_STRUCTURE_TO_ZERO"></span>Success, and driver sets the <strong>Width</strong> and <strong>Height</strong> members of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_display_information" data-raw-source="[&lt;strong&gt;DXGK_DISPLAY_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_display_information)"><strong>DXGK_DISPLAY_INFORMATION</strong></a> structure to zero</p></td>
-<td align="left"><p>This scenario is possible only if the system has two graphics cards, no monitors are connected to the current power-on self-test (POST) device, and the operating system calls the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> function to stop the POST device.</p>
+<td align="left"><p><span id="Success__and_driver_sets_the_Width_and_Height_members_of_the_DXGK_DISPLAY_INFORMATION_structure_to_zero"></span><span id="success__and_driver_sets_the_width_and_height_members_of_the_dxgk_display_information_structure_to_zero"></span><span id="SUCCESS__AND_DRIVER_SETS_THE_WIDTH_AND_HEIGHT_MEMBERS_OF_THE_DXGK_DISPLAY_INFORMATION_STRUCTURE_TO_ZERO"></span>Success, and driver sets the <strong>Width</strong> and <strong>Height</strong> members of the <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_display_information" data-raw-source="[&lt;strong&gt;DXGK_DISPLAY_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_display_information)"><strong>DXGK_DISPLAY_INFORMATION</strong></a> structure to zero</p></td>
+<td align="left"><p>This scenario is possible only if the system has two graphics cards, no monitors are connected to the current power-on self-test (POST) device, and the operating system calls the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> function to stop the POST device.</p>
 <p>In this case the current display continues to run on the second graphics adapter, and the basic display driver runs in headless mode on the adapter that supports the POST device.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Failure"></span><span id="failure"></span><span id="FAILURE"></span>Failure</p></td>
-<td align="left"><p>The operating system calls the Windows 7-style PnP stop driver interface through the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device" data-raw-source="[&lt;em&gt;DxgkDdiStopDevice&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device)"><em>DxgkDdiStopDevice</em></a> function.</p>
+<td align="left"><p>The operating system calls the Windows 7-style PnP stop driver interface through the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device" data-raw-source="[&lt;em&gt;DxgkDdiStopDevice&lt;/em&gt;](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device)"><em>DxgkDdiStopDevice</em></a> function.</p>
 <p>For a BIOS-based system, the driver must set the display into a BIOS-compatible mode.</p>
 <p>For a UEFI-based system, the basic display driver runs in headless mode on the graphics adapter.</p></td>
 </tr>
@@ -144,6 +143,4 @@ For further requirements on PnP and other state transitions, see [Providing seam
 For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics.WDDM12.Display.PnpStopStartSupport**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
-
- 
 

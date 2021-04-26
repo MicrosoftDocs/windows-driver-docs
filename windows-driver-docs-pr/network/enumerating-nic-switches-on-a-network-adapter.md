@@ -1,7 +1,6 @@
 ---
 title: Enumerating NIC Switches on a Network Adapter
 description: Enumerating NIC Switches on a Network Adapter
-ms.assetid: 0799A879-2BC0-43C5-A6B6-6D46C74A26FB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

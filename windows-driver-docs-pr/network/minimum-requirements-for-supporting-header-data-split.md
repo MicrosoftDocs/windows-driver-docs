@@ -1,7 +1,6 @@
 ---
 title: Minimum Requirements for Supporting Header-Data Split
 description: Minimum Requirements for Supporting Header-Data Split
-ms.assetid: 32ca214a-5103-4472-bbdb-1338188750d9
 keywords:
 - header-data split WDK , requirements
 - Ethernet frame splitting WDK networking , requirements
@@ -35,7 +34,7 @@ The following list contains the minimum requirements for header-data split suppo
 
 -   Providers must support the header-data split receive indication requirements, including setting the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures, header size requirements, and data backfill requirements. For more information about receive requirements, see [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md).
 
--   Providers must support the [OID\_GEN\_HD\_SPLIT\_PARAMETERS](./oid-gen-hd-split-parameters.md) OID, the [OID\_GEN\_HD\_SPLIT\_CURRENT\_CONFIG](./oid-gen-hd-split-current-config.md) OID, the [**NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG**](./ndis-status-hd-split-current-config.md) status indication, and registry settings. For more information about header-data split parameters and settings, see [Header-Data Split Administration and Configuration](header-data-split-administration-and-configuration.md).
+-   Providers must support the [OID\_GEN\_HD\_SPLIT\_PARAMETERS](./oid-gen-hd-split-parameters.md) OID, the [OID\_GEN\_HD\_SPLIT\_CURRENT\_CONFIG](./oid-gen-hd-split-current-config.md) OID, the [**NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG**](./ndis-status-hd-split-current-config.md) status indication, and registry settings. For more information about header-data split parameters and settings, see [Header-Data Split Administration and Configuration](setting-the-current-header-data-split-configuration.md).
 
 For more information about header-data split requirements for protocol drivers and filter drivers, see [Supporting Header-Data Split in Protocol Driver and Filter Drivers](supporting-header-data-split-in-protocol-driver-and-filter-drivers.md).
 

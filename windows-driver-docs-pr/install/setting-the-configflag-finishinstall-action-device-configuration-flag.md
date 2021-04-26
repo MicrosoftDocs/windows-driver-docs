@@ -1,7 +1,6 @@
 ---
 title: Marking a Device as having a Finish-Install Action to Perform
 description: Marking a Device as having a Finish-Install Action to Perform
-ms.assetid: 7f2560e6-94a7-4dd0-aa2a-e6cdd96c6d9b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

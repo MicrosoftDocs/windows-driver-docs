@@ -8,7 +8,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # Parallel Device Driver Design Guide
@@ -21,4 +20,4 @@ This section includes:
 
 [Vendor-Supplied Parallel Drivers](vendor-supplied-parallel-drivers.md)
 
-[Parallel Devices Reference](/windows-hardware/drivers/ddi/index)
+[Parallel Devices Reference](/windows-hardware/drivers/ddi/_parports)

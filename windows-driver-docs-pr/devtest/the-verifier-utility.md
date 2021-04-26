@@ -1,7 +1,6 @@
 ---
 title: The Verifier Utility
 description: The Verifier Utility
-ms.assetid: e332a6fc-b90c-49e8-8775-5332e9284e4e
 keywords:
 - Verifier utility
 - Driver Verifier WDK , Verifier utility

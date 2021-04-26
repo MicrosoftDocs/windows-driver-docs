@@ -1,7 +1,6 @@
 ---
 title: DSM\_Load\_Balance\_Policy WMI Class
 description: DSM\_Load\_Balance\_Policy WMI Class
-ms.assetid: 7de58fe6-7c95-412a-9135-3894c07137a7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

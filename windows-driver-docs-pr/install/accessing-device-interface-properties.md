@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Interface Properties before Windows Vista
 description: Accessing Device Interface Properties before Windows Vista
-ms.assetid: 48b47d01-ec07-49ca-a03c-c4c387dcfb19
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,29 +26,27 @@ For information about how to install and use device interfaces, see [Device Inte
 
 ### <a href="" id="accessing-device-interface-properties-that-have-corresponding-registry"></a> Accessing Device Interface Properties That Have Corresponding Registry Entry Values
 
-To access device interface properties by using registry entry values on Windows Server 2003, Windows XP, and Windows 2000, first call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey)and supply the following parameters:
+To access device interface properties by using registry entry values on Windows Server 2003, Windows XP, and Windows 2000, first call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey)and supply the following parameters:
 
 -   Set *DeviceInfoSet* to a pointer to a device information set that contains the device interface.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that identifies the device interface.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that identifies the device interface.
 
 -   Set *Reserved* to zero.
 
 -   Set *samDesired* to a REGSAM-typed value that specifies the required access permissions.
 
-If this call to [**SetupDiOpenDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey) succeeds, **SetupDiOpenDeviceInterfaceRegKey** returns the requested handle. If the function call fails, **SetupDiOpenDeviceInterfaceRegKey** returns INVALID_HANDLE_VALUE and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If this call to [**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey) succeeds, **SetupDiOpenDeviceInterfaceRegKey** returns the requested handle. If the function call fails, **SetupDiOpenDeviceInterfaceRegKey** returns INVALID_HANDLE_VALUE and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 
-After you retrieve a handle to the device interface registry key, supply the handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) or [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device interface property.
+After you retrieve a handle to the device interface registry key, supply the handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) or [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the registry entry value that corresponds to the device interface property.
 
-Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
+Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the class registry key after access to the key is no longer required.
 
 ### <a href="" id="using-setupdienumdeviceinterfaces-to-retrieve-information-about-a-devi"></a> Using SetupDiEnumDeviceInterfaces to Retrieve Information About a Device Interface
 
-Another way to retrieve information about a device interface on Windows Server 2003, Windows XP, and Windows 2000 is by calling [**SetupDiEnumDeviceInterfaces**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to retrieve an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure for the interface. An SP_DEVICE_INTERFACE_DATA structure contains the following information:
+Another way to retrieve information about a device interface on Windows Server 2003, Windows XP, and Windows 2000 is by calling [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to retrieve an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure for the interface. An SP_DEVICE_INTERFACE_DATA structure contains the following information:
 
 -   The **Flags** member indicates whether a device interface is active or removed, and whether the device is the default interface for the interface class.
 
 -   The **InterfaceClassGuild** member identifies the interface class GUID.
-
- 
 

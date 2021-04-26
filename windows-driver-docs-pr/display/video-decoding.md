@@ -1,7 +1,6 @@
 ---
 title: Video Decoding
 description: Video Decoding
-ms.assetid: 4e8bf7e9-7a3c-4732-9ac0-4f6f5ef07552
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , video decoding
 - Video Acceleration WDK DirectX , video decoding

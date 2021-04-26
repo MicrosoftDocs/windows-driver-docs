@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DEMUX\_DEST
 description: The KSPROPERTY\_AUDIO\_DEMUX\_DEST property specifies the destination stream to which a demultiplexer directs its input stream. This is a property of a DEMUX node (KSNODETYPE\_DEMUX).
-ms.assetid: 431918da-2267-4fe5-a002-12d16b5f0984
 keywords: ["KSPROPERTY_AUDIO_DEMUX_DEST Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_DEMUX\_DEST property specifies the destination stream to 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -90,6 +89,4 @@ Requirements
 [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85))
-
- 
 

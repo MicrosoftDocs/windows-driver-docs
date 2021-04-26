@@ -1,7 +1,6 @@
 ---
 title: Registering and Deregistering Interrupts
 description: Registering and Deregistering Interrupts
-ms.assetid: 222782f3-092e-417d-ab1b-1988a593caa4
 keywords:
 - interrupts WDK networking , registering
 - interrupts WDK networking , deregistering

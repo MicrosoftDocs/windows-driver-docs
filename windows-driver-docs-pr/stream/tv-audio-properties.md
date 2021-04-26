@@ -1,7 +1,6 @@
 ---
 title: TV Audio Properties
 description: TV Audio Properties
-ms.assetid: 0eed4007-9fd9-4927-8ac7-2e23fd082dec
 keywords:
 - TV audio properties WDK video capture
 - audio properties WDK video capture
@@ -28,21 +27,19 @@ The [PROPSETID\_VIDCAP\_TVAUDIO](./propsetid-vidcap-tvaudio.md) property set con
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-tvaudio-caps" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_CAPS&lt;/strong&gt;](./ksproperty-tvaudio-caps.md)"><strong>KSPROPERTY_TVAUDIO_CAPS</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-tvaudio-caps" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_CAPS&lt;/strong&gt;](./ksproperty-tvaudio-caps.md)"><strong>KSPROPERTY_TVAUDIO_CAPS</strong></a></p></td>
 <td><p>Returns information about the capabilities of the TV audio device, such as whether the hardware supports mono or stereo audio and SAP.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-tvaudio-currently-available-modes" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES&lt;/strong&gt;](./ksproperty-tvaudio-currently-available-modes.md)"><strong>KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-tvaudio-currently-available-modes" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES&lt;/strong&gt;](./ksproperty-tvaudio-currently-available-modes.md)"><strong>KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES</strong></a></p></td>
 <td><p>Returns the currently available TV audio modes, at the time the property was queried.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-tvaudio-mode" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_MODE&lt;/strong&gt;](./ksproperty-tvaudio-mode.md)"><strong>KSPROPERTY_TVAUDIO_MODE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-tvaudio-mode" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_MODE&lt;/strong&gt;](./ksproperty-tvaudio-mode.md)"><strong>KSPROPERTY_TVAUDIO_MODE</strong></a></p></td>
 <td><p>Controls the current audio mode for the TV audio device.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PEAKMETER
 description: The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal level that occurred at a peakmeter node (KSNODETYPE\_PEAKMETER) since the last time the peakmeter node was reset.
-ms.assetid: c8c2c9ed-61ea-4bbe-b376-c956f051416e
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER Audio Devices"]
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal lev
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>

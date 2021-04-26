@@ -1,7 +1,6 @@
 ---
 title: System Sleeping States
 description: System Sleeping States
-ms.assetid: 2fd883b5-4e89-4ce9-b75a-b821348ac860
 keywords: ["system power states WDK kernel , sleeping states", "system sleeping states WDK power management", "sleeping states WDK power management", "S1 WDK power management", "S2 WDK power management", "S3 WDK power management", "S4 WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
 ms.date: 07/30/2020
 ms.localizationpriority: High
@@ -13,7 +12,7 @@ ms.localizationpriority: High
 
 
 
-States S1, S2, S3, and S4 are the sleeping states. A system in one of these states is not performing any computational tasks and appears to be off. Unlike a system in the shutdown state (S5), however, a sleeping system retains memory state, either in the hardware or on disk. The operating system need not be rebooted to return the computer to the working state.
+States S1, S2, S3, and S4 are the sleeping states. A system in one of these states is not performing any computational tasks and appears to be off. Unlike a system in the shutdown state (S5), however, a sleeping system retains memory state, either in RAM or on disk, as specified for each power state below in **System hardware context** sections. The operating system need not be rebooted to return the computer to the working state.
 
 Some devices can wake the system from a sleeping state when certain events occur. In addition, on some computers, an external indicator tells the user that the system is merely sleeping.
 
@@ -25,7 +24,7 @@ Use `powercfg /a` to enumerate all available sleep states on a system. A user ca
 
 Typically, when the user presses the sleep button, the system goes to the S3 system power state.
 
-To restrict the system to a subset of Sx states, a user can provide **MaxSleep** and **MinSleep** fields in https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-system_power_policy (and also https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-administrator_power_policy). 
+To restrict the system to a subset of Sx states, a user can provide **MaxSleep** and **MinSleep** fields in [SYSTEM_POWER_POLICY structure](/windows/win32/api/winnt/ns-winnt-system_power_policy). Also see [ADMINISTRATOR_POWER_POLICY structure](/windows/win32/api/winnt/ns-winnt-administrator_power_policy). 
 
 ### System Power State S1
 

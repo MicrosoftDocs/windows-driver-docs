@@ -1,7 +1,6 @@
 ---
 title: FSCTL_DISMOUNT_VOLUME control code
 description: The FSCTL\_DISMOUNT\_VOLUME control code attempts to dismount a volume regardless of whether the volume is in use.
-ms.assetid: edfff768-3bb3-4b8a-b982-80797ac116fd
 keywords: ["FSCTL_DISMOUNT_VOLUME control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -56,9 +55,9 @@ Status block
 Remarks
 -------
 
-The **FSCTL\_DISMOUNT\_VOLUME** control code will attempt to dismount a volume regardless of whether any other processes are using the volume, which can have unpredictable results for those processes if they do not hold a lock on the volume. For information about locking a volume, see [**FSCTL\_LOCK\_VOLUME**](/windows/desktop/api/winioctl/ni-winioctl-fsctl_lock_volume).
+The **FSCTL\_DISMOUNT\_VOLUME** control code will attempt to dismount a volume regardless of whether any other processes are using the volume, which can have unpredictable results for those processes if they do not hold a lock on the volume. For information about locking a volume, see [**FSCTL\_LOCK\_VOLUME**](/windows/win32/api/winioctl/ni-winioctl-fsctl_lock_volume).
 
-The operating system does not detect unmounted volumes. If an attempt is made to access an unmounted volume, the operating system then tries to mount the volume. For example, a call to [**GetLogicalDrives**](/windows/desktop/api/fileapi/nf-fileapi-getlogicaldrives) triggers the operating system to mount unmounted volumes.
+The operating system does not detect unmounted volumes. If an attempt is made to access an unmounted volume, the operating system then tries to mount the volume. For example, a call to [**GetLogicalDrives**](/windows/win32/api/fileapi/nf-fileapi-getlogicaldrives) triggers the operating system to mount unmounted volumes.
 
 The *FileHandle* handle passed to [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) must be a handle to a volume, opened for direct access. To retrieve a volume handle, call [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile) with the *ObjectAttributes* parameter set to an *ObjectName* of the following form: *\\\\.\\X:* where *X* is a drive letter of the volume, floppy disk drive, or CD-ROM drive. The application must also specify the FILE\_SHARE\_READ and FILE\_SHARE\_WRITE flags in the *ShareAccess* parameter of **ZwCreateFile**.
 

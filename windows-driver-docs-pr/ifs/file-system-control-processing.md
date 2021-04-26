@@ -1,7 +1,6 @@
 ---
 title: File System Control Processing
 description: File System Control Processing
-ms.assetid: 95a610c8-b48c-4fff-bf1f-f9fb6abb0fd9
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , control processing

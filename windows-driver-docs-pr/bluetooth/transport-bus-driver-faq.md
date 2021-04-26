@@ -1,7 +1,6 @@
 ---
 title: Transport Bus Driver FAQ
 description: The following are common questions, scenarios, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
-ms.assetid: 7189EB3B-E071-4145-8308-EFA6D4E89D4B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,8 +21,8 @@ Code 52 = Unsigned driver.
 
 Driver signing is described in greater detail in these topics:
 
--   [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing)
--   [Driver Signing Requirements for Windows](https://msdn.microsoft.com/windows/hardware/gg487317)
+-   [Driver Signing](../install/driver-signing.md)
+-   [Driver Signing Requirements for Windows](/previous-versions/windows/hardware/design/dn653563(v=vs.85))
 
 ## <span id="Why_is_my_serial_bus_driver_not_getting_any_IOCTLs_from_the_Bluetooth_core_stack_"></span><span id="why_is_my_serial_bus_driver_not_getting_any_ioctls_from_the_bluetooth_core_stack_"></span><span id="WHY_IS_MY_SERIAL_BUS_DRIVER_NOT_GETTING_ANY_IOCTLS_FROM_THE_BLUETOOTH_CORE_STACK_"></span>Why is my serial bus driver not getting any IOCTLs from the Bluetooth core stack?
 
@@ -51,10 +50,4 @@ In this situation, the bus driver should complete the D2 transition, and then pr
 There is no way to tag a resource, GPIO or otherwise. This is why the resource order is important. The device driver should establish a convention (e.g. first GPIO resource to appear in the list is for BT\_WAKE and the second one to appear is for HOST\_WAKE).
 
  
-
- 
-
-
-
-
 

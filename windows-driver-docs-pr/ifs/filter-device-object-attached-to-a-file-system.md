@@ -1,7 +1,6 @@
 ---
 title: Filter Device Object Attached to a File System
 description: Filter Device Object Attached to a File System
-ms.assetid: 5fb0ec43-a639-4b2a-8057-3313e9dee457
 keywords:
 - filter device objects WDK file system
 - device object I/O requests WDK file system

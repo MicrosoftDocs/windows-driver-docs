@@ -1,7 +1,6 @@
 ---
 title: Basic Scanning for Flatbed Scanners
 description: Basic Scanning for Flatbed Scanners
-ms.assetid: a1100a8d-752a-4109-b1dc-cf7c4bf5a100
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

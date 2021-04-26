@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_VolumeLimit (stream)
 description: The KSEVENTSETID\_VolumeLimit event set notifies clients when an audio volume limit change event occurs.
-ms.assetid: B71ED9F9-BA2C-43D1-8162-CCA4CD5C5B22
 ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---

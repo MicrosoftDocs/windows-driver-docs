@@ -1,7 +1,6 @@
 ---
 title: ModelID
 description: ModelID
-ms.assetid: 6873f5b6-453e-4f8e-b534-0bc805865905
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

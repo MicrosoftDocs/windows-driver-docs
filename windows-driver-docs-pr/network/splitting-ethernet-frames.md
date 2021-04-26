@@ -1,7 +1,6 @@
 ---
 title: Splitting Ethernet Frames Overview
 description: Splitting Ethernet Frames Overview
-ms.assetid: 7b857dee-2805-4004-8f31-452f0cff0e0c
 keywords:
 - header-data split WDK , Ethernet frame splitting
 - splitting Ethernet frames
@@ -46,7 +45,7 @@ This section includes:
 
 [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md)
 
-[Splitting Frames Other Than TCP and UDP](splitting-frames-other-than-tcp-and-udp.md)
+[Splitting Frames Other Than TCP and UDP](splitting-icmp-frames-and-other-upper-layer-protocol-frames.md)
 
  
 

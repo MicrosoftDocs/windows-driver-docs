@@ -1,7 +1,6 @@
 ---
 title: Communication Between User Mode and Kernel Mode
 description: Communication Between User Mode and Kernel Mode
-ms.assetid: ddfec0d0-ec7d-4f76-91b8-2cc34cfacf4e
 keywords:
 - filter manager WDK file system minifilter , communication server ports
 - communication server ports WDK file system minifilter
@@ -40,13 +39,13 @@ The filter manager provides the following support routines for kernel-mode minif
 
 The following support routines are provided for user-mode applications to communicate with minifilter drivers:
 
-[**FilterConnectCommunicationPort**](/windows/desktop/api/fltuser/nf-fltuser-filterconnectcommunicationport)
+[**FilterConnectCommunicationPort**](/windows/win32/api/fltuser/nf-fltuser-filterconnectcommunicationport)
 
-[**FilterGetMessage**](/windows/desktop/api/fltuser/nf-fltuser-filtergetmessage)
+[**FilterGetMessage**](/windows/win32/api/fltuser/nf-fltuser-filtergetmessage)
 
-[**FilterReplyMessage**](/windows/desktop/api/fltuser/nf-fltuser-filterreplymessage)
+[**FilterReplyMessage**](/windows/win32/api/fltuser/nf-fltuser-filterreplymessage)
 
-[**FilterSendMessage**](/windows/desktop/api/fltuser/nf-fltuser-filtersendmessage)
+[**FilterSendMessage**](/windows/win32/api/fltuser/nf-fltuser-filtersendmessage)
 
 ### <span id="Minifilter_Driver_Callback_Routines_for_Communication_Between_User_Mode_and_Kernel_Mode"></span><span id="minifilter_driver_callback_routines_for_communication_between_user_mode_and_kernel_mode"></span><span id="MINIFILTER_DRIVER_CALLBACK_ROUTINES_FOR_COMMUNICATION_BETWEEN_USER_MODE_AND_KERNEL_MODE"></span>Minifilter Driver Callback Routines for Communication Between User Mode and Kernel Mode
 

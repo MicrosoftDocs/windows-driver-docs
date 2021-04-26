@@ -1,7 +1,6 @@
 ---
 title: Using WDF to Develop a Driver
 description: This topic provides a high-level overview of the framework objects you'll use to develop a Kernel-Mode Driver Framework (KMDF) driver.
-ms.assetid: 421b7eb8-11d3-4a37-8ae8-e2d3d216c9c7
 keywords:
 - kernel-mode drivers WDK KMDF , development steps
 - KMDF WDK , development steps
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 This topic provides a high-level overview of the framework objects you'll use to develop a Kernel-Mode Driver Framework (KMDF) driver. Except where indicated, you'll use the same objects to develop a User-Mode Driver Framework (UMDF) driver starting in UMDF version 2.
 
-Windows Driver Frameworks (WDF) drivers consist of a [**DriverEntry routine**](./driverentry-for-kmdf-drivers.md) and a set of event callback functions that are defined by the [Windows Driver Framework objects](./introduction-to-framework-objects.md) that framework-based drivers use. The callback functions call object methods that the framework exports. The Windows Driver Kit (WDK) contains sample WDF drivers that demonstrate how to implement a driver's event callback functions. You can download these samples from the [Windows Dev Center - Hardware](https://go.microsoft.com/fwlink/p/?linkid=256387). For information about what samples are available, see [Sample KMDF Drivers](sample-kmdf-drivers.md) and [Sample UMDF Drivers](sample-umdf-drivers.md).
+Windows Driver Frameworks (WDF) drivers consist of a [**DriverEntry routine**](./driverentry-for-kmdf-drivers.md) and a set of event callback functions that are defined by the [Windows Driver Framework objects](./introduction-to-framework-objects.md) that framework-based drivers use. The callback functions call object methods that the framework exports. The Windows Driver Kit (WDK) contains sample WDF drivers that demonstrate how to implement a driver's event callback functions. You can download these samples from the [Windows Dev Center - Hardware](/samples/browse/). For information about what samples are available, see [Sample KMDF Drivers](sample-kmdf-drivers.md) and [Sample UMDF Drivers](sample-umdf-drivers.md).
 
 When you create a WDF driver, you will typically do the following:
 
@@ -67,6 +66,4 @@ When you create a WDF driver, you will typically do the following:
 -   Use additional objects and features that the framework provides.
 
     The framework provides additional objects that your driver can use. For more information about these objects, see [WDF Support Objects](./using-memory-buffers.md).
-
- 
 

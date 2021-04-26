@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_POWER_STATE
 description: OID_WDI_SET_POWER_STATE sets the power state of the device.
-ms.assetid: f1453ace-5e36-464e-96f0-e578890cdf3f
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_POWER_STATE Network Drivers Starting with Windows Vista
@@ -150,19 +149,19 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-power-state" data-raw-source="[&lt;strong&gt;WDI_TLV_POWER_STATE&lt;/strong&gt;](./wdi-tlv-power-state.md)"><strong>WDI_TLV_POWER_STATE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-power-state" data-raw-source="[&lt;strong&gt;WDI_TLV_POWER_STATE&lt;/strong&gt;](./wdi-tlv-power-state.md)"><strong>WDI_TLV_POWER_STATE</strong></a></p></td>
 <td></td>
 <td></td>
 <td><p>The power state. This applies to the primary port.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-enable-wake-events" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](./wdi-tlv-enable-wake-events.md)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-enable-wake-events" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](./wdi-tlv-enable-wake-events.md)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a></p></td>
 <td></td>
 <td>X</td>
 <td><p>This field may only appear when the NIC is being put into low power and is armed to wake on any of the specified events (such as D2 on SD IO).</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-power-dx-reason" data-raw-source="[&lt;strong&gt;WDI_TLV_SET_POWER_DX_REASON&lt;/strong&gt;](./wdi-tlv-set-power-dx-reason.md)"><strong>WDI_TLV_SET_POWER_DX_REASON</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-set-power-dx-reason" data-raw-source="[&lt;strong&gt;WDI_TLV_SET_POWER_DX_REASON&lt;/strong&gt;](./wdi-tlv-set-power-dx-reason.md)"><strong>WDI_TLV_SET_POWER_DX_REASON</strong></a></p></td>
 <td></td>
 <td>X</td>
 <td><p>The set power reason.</p></td>
@@ -270,6 +269,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Errors in a Multiprocessor Environment
 description: Errors in a Multiprocessor Environment
-ms.assetid: 8a76b8d6-14d8-4709-8b15-e8b6b5094a1b
 keywords: ["reliability WDK kernel , race conditions", "race conditions WDK kernel", "reliability WDK kernel , multiprocessor environment errors", "multiprocessor environment errors WDK kernel", "locking WDK kernel", "multiple I/O request handling WDK kernel", "I/O requests WDK kernel", "thread conflicts WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

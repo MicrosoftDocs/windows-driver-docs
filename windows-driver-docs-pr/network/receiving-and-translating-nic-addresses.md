@@ -1,7 +1,6 @@
 ---
 title: Receiving and Translating NIC Addresses
 description: Receiving and Translating NIC Addresses
-ms.assetid: c7171a4d-cc77-427e-8d23-8811f650e543
 keywords:
 - Windows Sockets Direct WDK , initializing SAN usage
 - initializing SAN usage
@@ -22,7 +21,7 @@ ms.localizationpriority: medium
 
 
 
-The Windows Sockets switch always uses the [WSK address families](/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)), which contain IP addresses, when it interacts with SAN service providers and SAN NICs. The switch does not use a SAN's native address family. Therefore, a SAN service provider must use its associated proxy driver to retrieve the list of IP addresses assigned to its NICs. The SAN service provider uses these IP addresses when interacting with its proxy driver. The proxy driver must translate between IP addresses and native addresses.
+The Windows Sockets switch always uses the [WSK address families](ws2def-h.md), which contain IP addresses, when it interacts with SAN service providers and SAN NICs. The switch does not use a SAN's native address family. Therefore, a SAN service provider must use its associated proxy driver to retrieve the list of IP addresses assigned to its NICs. The SAN service provider uses these IP addresses when interacting with its proxy driver. The proxy driver must translate between IP addresses and native addresses.
 
 During initialization, a proxy driver typically registers with Transport Driver Interface (TDI) for address change notifications. All Plug and Play (PnP) aware transports, including TCP/IP, supply address change notifications through TDI to clients that have registered for such notifications.
 

@@ -1,7 +1,6 @@
 ---
 title: Account management
 description: Account management
-ms.assetid: 8201a4ac-1344-4a96-b0d5-d4ba8123c4dd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,10 +26,5 @@ Design considerations include the following:
 
     ![account overview](images/mb-fig2-accountoverview.png)
 
-## <span id="related_topics"></span>Related topics
 
-
-[Mobile broadband app scenarios]()
-
- 
 

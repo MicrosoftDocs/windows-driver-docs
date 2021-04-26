@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_TRANSPORT_INFORMATION
 description: KSCATEGORY_BDA_TRANSPORT_INFORMATION
-ms.assetid: 0af3159c-8c44-4c42-8141-944bb734623c
 keywords: ["KSCATEGORY_BDA_TRANSPORT_INFORMATION Device and Driver Installation"]
 topic_type:
 - apiref

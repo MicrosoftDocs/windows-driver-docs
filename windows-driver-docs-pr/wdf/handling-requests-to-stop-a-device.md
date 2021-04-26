@@ -1,7 +1,6 @@
 ---
 title: Handling Requests to Stop a Device
 description: Handling Requests to Stop a Device
-ms.assetid: 4c8f37b3-7961-4c78-a88b-3eec58155e66
 keywords:
 - PnP WDK KMDF , stopping devices
 - Plug and Play WDK KMDF , stopping devices

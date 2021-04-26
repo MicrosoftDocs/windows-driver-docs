@@ -1,7 +1,6 @@
 ---
 title: MSI-X Initialization
 description: MSI-X Initialization
-ms.assetid: 64e79ea1-eb6b-4c94-8bad-dd892b712b28
 keywords:
 - MSI-X WDK networking , initializing
 - message-signaled interrupts WDK networking , initializing

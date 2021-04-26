@@ -1,7 +1,6 @@
 ---
 title: Diagnostics and Debugging
 description: Diagnostics and Debugging
-ms.assetid: 6c5c1b4a-338d-4550-903d-c6905ce743f9
 keywords:
 - RDBSS WDK file systems , diagnostics
 - Redirected Drive Buffering Subsystem WDK file systems , diagnostics
@@ -44,21 +43,21 @@ These routines include the items in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/rxassert" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](./rxassert.md)"><strong>RxAssert</strong></a></p></td>
-<td align="left"><p>This routine sends an assert string in checked builds of RDBSS to a kernel debugger if one is installed. When the rxAssert.h include file is used, Windows kernel <strong>RtlAssert</strong> calls will be redefined to call this <a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/rxassert" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](./rxassert.md)"><strong>RxAssert</strong></a> routine as well.</p>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/rxassert" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](./rxassert.md)"><strong>RxAssert</strong></a></p></td>
+<td align="left"><p>This routine sends an assert string in checked builds of RDBSS to a kernel debugger if one is installed. When the rxAssert.h include file is used, Windows kernel <strong>RtlAssert</strong> calls will be redefined to call this <a href="/windows-hardware/drivers/ifs/rxassert" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](./rxassert.md)"><strong>RxAssert</strong></a> routine as well.</p>
 <p>For retail builds, calls to this routine will bug check.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/rxdbgbreakpoint" data-raw-source="[&lt;strong&gt;RxDbgBreakPoint&lt;/strong&gt;](./rxdbgbreakpoint.md)"><strong>RxDbgBreakPoint</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/rxdbgbreakpoint" data-raw-source="[&lt;strong&gt;RxDbgBreakPoint&lt;/strong&gt;](./rxdbgbreakpoint.md)"><strong>RxDbgBreakPoint</strong></a></p></td>
 <td align="left"><p>This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise, it is handled by the debug system.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference" data-raw-source="[&lt;strong&gt;RxpTrackDereference&lt;/strong&gt;](/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference)"><strong>RxpTrackDereference</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference" data-raw-source="[&lt;strong&gt;RxpTrackDereference&lt;/strong&gt;](/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference)"><strong>RxpTrackDereference</strong></a></p></td>
 <td align="left"><p>This routine is used to track a request to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these reference requests can be accessed by the logging system and WMI. This routine does not perform the dereference operation.</p>
 <p>For retail builds, this routine does nothing.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference" data-raw-source="[&lt;strong&gt;RxpTrackReference&lt;/strong&gt;](/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference)"><strong>RxpTrackReference</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference" data-raw-source="[&lt;strong&gt;RxpTrackReference&lt;/strong&gt;](/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference)"><strong>RxpTrackReference</strong></a></p></td>
 <td align="left"><p>This routine is used to track a request to dereference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these dereference requests can be accessed by the logging system and WMI. This routine does not perform the reference operation.</p>
 <p>For retail builds, this routine does nothing.</p></td>
 </tr>
@@ -141,8 +140,6 @@ In addition to the routines listed in the previous table, a number of macros tha
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

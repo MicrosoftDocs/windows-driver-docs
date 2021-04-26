@@ -1,7 +1,6 @@
 ---
 title: Unload Routine of a Battery Miniclass Driver
 description: Unload Routine of a Battery Miniclass Driver
-ms.assetid: f0acbf94-95d1-4a9d-aafd-1f868c5560cc
 keywords:
 - battery miniclass drivers WDK , routines
 - Unload routine
@@ -21,7 +20,7 @@ The *Unload* routine for a battery miniclass driver ensures that all the driver'
 
 The *Unload* routine should first check to ensure that all its devices have been removed and, if not, do the following for each remaining device:
 
-1.  Call [**BatteryClassUnload**](/windows/desktop/api/batclass/nf-batclass-batteryclassunload) to inform the class driver that the miniclass driver is unloading the device.
+1.  Call [**BatteryClassUnload**](/windows/win32/api/batclass/nf-batclass-batteryclassunload) to inform the class driver that the miniclass driver is unloading the device.
 
 2.  Disable any device notifications from lower drivers, such as the ACPI driver, using that driver's interface.
 

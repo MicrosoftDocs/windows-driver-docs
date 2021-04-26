@@ -1,7 +1,6 @@
 ---
 title: Writing Data Records to a CLFS Stream
 description: Writing Data Records to a CLFS Stream
-ms.assetid: 22bd6d39-b777-4a62-85b1-3d03a7144f7a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reserved space WDK CLFS", "aligned entries WDK CLFS", "writing data records", "buffers WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -49,7 +48,7 @@ Suppose you have a single data buffer that you want to write to a marshalling ar
 </tr>
 <tr class="even">
 <td><p><em>rgWriteEntries</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry" data-raw-source="[&lt;strong&gt;CLFS_WRITE_ENTRY&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry)"><strong>CLFS_WRITE_ENTRY</strong></a> structure.</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry" data-raw-source="[&lt;strong&gt;CLFS_WRITE_ENTRY&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry)"><strong>CLFS_WRITE_ENTRY</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cWriteEntries</em></p></td>
@@ -77,7 +76,7 @@ Suppose you have a single data buffer that you want to write to a marshalling ar
 </tr>
 <tr class="odd">
 <td><p><em>plsn</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn" data-raw-source="[&lt;strong&gt;CLFS_LSN&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn)"><strong>CLFS_LSN</strong></a> structure. (This is an output parameter that receives the LSN of the record that is written.)</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn" data-raw-source="[&lt;strong&gt;CLFS_LSN&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn)"><strong>CLFS_LSN</strong></a> structure. (This is an output parameter that receives the LSN of the record that is written.)</p></td>
 </tr>
 </tbody>
 </table>
@@ -266,6 +265,4 @@ Suppose you want to write a record that has three write entries. The write entri
  
 
 The preceding tables show only a few of the many variations on reserving record space and writing records to CLFS streams. As you think of other variations, keep the following point in mind: The actions performed by **ClfsReserveAndAppendLog** (or **ClfsReserveAndAppendLogAligned**) are atomic. For example, you can make a single call to **ClfsReserveAndAppendLog** that will reserve space for a record and write the record to the stream. The pair of actions (reserve, write) will either succeed as a whole or fail as a whole.
-
- 
 

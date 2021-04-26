@@ -1,7 +1,6 @@
 ---
 title: ndiskd.cxadapter
 description: The ndiskd.cxadapter extension displays information about a NETADAPTER object.
-ms.assetid: 5BE91B1C-9795-4E2C-834A-B7424FF1FCDB
 keywords: ["ndiskd.cxadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

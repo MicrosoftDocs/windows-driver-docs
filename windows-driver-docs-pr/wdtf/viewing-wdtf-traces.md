@@ -1,7 +1,6 @@
 ---
 title: Enabling and Viewing WDTF Traces
 description: Enabling and Viewing WDTF Traces
-ms.assetid: 9bed6042-3691-4a5e-a143-51acf746b1ae
 keywords:
 - Windows Device Testing Framework WDK , tracing events
 - WDTF WDK , tracing events
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 # Enabling and Viewing WDTF Traces
 
-WDTF *Tracing* refers to reporting events that occur internally within WDTF objects. Because WDTF is heavily instrumented, all WDTF objects provide tracing information as they run. WDTF handles tracing by using [WPP Software Tracing](../devtest/wpp-software-tracing.md). This type of tracing is a standardized format that you can read by using WDK tools, including [TraceView](../devtest/using-traceview.md). This topic covers how to use [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) and [Tracefmt](../devtest/tracefmt.md) to view WDTF run-time traces. This topic also discusses how you can programmatically configure WDTF trace levels.
+WDTF *Tracing* refers to reporting events that occur internally within WDTF objects. Because WDTF is heavily instrumented, all WDTF objects provide tracing information as they run. WDTF handles tracing by using [WPP Software Tracing](../devtest/wpp-software-tracing.md). This type of tracing is a standardized format that you can read by using WDK tools, including [TraceView](../devtest/using-traceview.md). This topic covers how to use [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)) and [Tracefmt](../devtest/tracefmt.md) to view WDTF run-time traces. This topic also discusses how you can programmatically configure WDTF trace levels.
 
 ## How to collect and save WDTF Traces
 
@@ -29,7 +28,7 @@ WDTF *Tracing* refers to reporting events that occur internally within WDTF obje
 
 2. Reboot the computer.
 
-See [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) (Logman.exe) for information about other options. For information about creating a trace season, see [Configuring and Starting an AutoLogger Session](/windows/desktop/ETW/configuring-and-starting-an-autologger-session).
+See [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)) (Logman.exe) for information about other options. For information about creating a trace season, see [Configuring and Starting an AutoLogger Session](/windows/desktop/ETW/configuring-and-starting-an-autologger-session).
 
 ### To stop collecting WDTF traces and save log files
 
@@ -94,7 +93,7 @@ For more information about trace levels, see the [**ITracer**](/windows-hardware
 ## Related topics
 
 [Configuring and Starting an AutoLogger Session](/windows/desktop/ETW/configuring-and-starting-an-autologger-session)  
-[Logman](https://go.microsoft.com/fwlink/p/?linkid=136332)  
+[Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11))  
 [Tracefmt](../devtest/tracefmt.md)  
 [TraceView](../devtest/using-traceview.md)  
 [WPP Software Tracing](../devtest/wpp-software-tracing.md)

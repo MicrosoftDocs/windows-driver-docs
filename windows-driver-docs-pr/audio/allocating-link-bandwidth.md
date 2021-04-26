@@ -1,7 +1,6 @@
 ---
 title: Allocating Link Bandwidth
 description: Allocating Link Bandwidth
-ms.assetid: 7a5d5364-d869-4f6a-a7c3-9326ec347150
 keywords:
 - HD Audio, bandwidth
 - High Definition Audio (HD Audio), bandwidth

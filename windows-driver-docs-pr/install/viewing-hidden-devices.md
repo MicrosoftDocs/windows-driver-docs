@@ -1,7 +1,6 @@
 ---
 title: Viewing hidden devices
 description: Viewing hidden devices
-ms.assetid: 5dd02478-9937-4364-bd33-b64ac89c32eb
 keywords:
 - nonpresent devices WDK
 - Device Manager WDK , hidden devices

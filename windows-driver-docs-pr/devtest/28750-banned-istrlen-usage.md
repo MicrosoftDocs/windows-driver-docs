@@ -1,7 +1,6 @@
 ---
 title: C28750
 description: Warning C28750 Banned usage of lstrlen and its variants.
-ms.assetid: 5057FE71-286A-4710-922F-DFC639717C75
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

@@ -1,7 +1,6 @@
 ---
 title: Transmit and receive queues
 description: Transmit and receive queues
-ms.assetid: 4BF61CDF-4B62-47EB-936A-7DE81D62678A
 keywords:
 - NetAdapterCx transmit and receive queues, NetCx transmit and receive queues
 ms.date: 01/24/2019

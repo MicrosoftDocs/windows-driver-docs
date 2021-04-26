@@ -1,7 +1,6 @@
 ---
 title: Setting Symbol and Executable Image Paths in WinDbg
 description: Setting Symbol and Executable Image Paths in WinDbg
-ms.assetid: 8EA2509E-0B47-4D28-B934-F1F58F5CFC45
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

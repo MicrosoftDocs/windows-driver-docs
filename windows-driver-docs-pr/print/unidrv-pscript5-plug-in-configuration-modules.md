@@ -1,7 +1,6 @@
 ---
 title: Unidrv/PScript5 Plug-in Configuration Modules
 description: Unidrv/PScript5 Plug-in Configuration Modules
-ms.assetid: 806175ba-18a9-48f3-8f50-06e794d1f304
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , Unidrv plug-in
 - Version 3 XPS drivers WDK XPSDrv , PScript5 plug-in

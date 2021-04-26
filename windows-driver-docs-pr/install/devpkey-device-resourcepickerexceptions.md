@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ResourcePickerExceptions
 description: DEVPKEY_Device_ResourcePickerExceptions
-ms.assetid: 65a2c709-fe3a-44e2-90f9-4ad6dbcb50bd
 keywords: ["DEVPKEY_Device_ResourcePickerExceptions Device and Driver Installation"]
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Remarks
 
 You can set the value of DEVPKEY_Device_ResourcePickerExceptions by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs a device.
 
-You can retrieve the value of DEVPKEY_Device_ResourcePickerExceptions by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_ResourcePickerExceptions by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_ResourcePickerExceptions property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ResourcePickerExceptions** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
@@ -81,7 +80,7 @@ Requirements
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

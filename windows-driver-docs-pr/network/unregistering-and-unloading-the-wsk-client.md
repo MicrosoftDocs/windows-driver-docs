@@ -1,7 +1,6 @@
 ---
 title: Unregistering and Unloading the WSK Client
 description: Unregistering and Unloading the WSK Client
-ms.assetid: dd9030b1-271f-46e4-9139-b49903ca8313
 keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel

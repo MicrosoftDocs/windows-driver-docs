@@ -1,7 +1,6 @@
 ---
 title: Implementing a HwVidSynchronizeExecutionCallback Routine
 description: When to Implement a HwVidSynchronizeExecutionCallback Routine
-ms.assetid: d33736ca-aff2-421b-a8cc-d09eba76ff7f
 keywords:
 - video miniport drivers WDK Windows 2000 , interrupts
 - interrupts WDK video miniport

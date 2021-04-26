@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP_MN_SURPRISE_REMOVAL Request
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
-ms.assetid: 39a90617-40ad-4c10-95d3-2b618d66d70e
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -136,7 +135,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 </tr>
 <tr class="even">
 <td>PNP_DEVICE_DONT_DISPLAY_IN_UI</td>
-<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities" data-raw-source="[&lt;strong&gt;DEVICE_CAPABILITIES&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)"><strong>DEVICE_CAPABILITIES</strong></a> structure.)</p></td>
+<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities" data-raw-source="[&lt;strong&gt;DEVICE_CAPABILITIES&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)"><strong>DEVICE_CAPABILITIES</strong></a> structure.)</p></td>
 </tr>
 <tr class="odd">
 <td>PNP_DEVICE_FAILED</td>
@@ -146,7 +145,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 <tr class="even">
 <td>PNP_DEVICE_NOT_DISABLEABLE</td>
 <td><p>The device is required when the computer starts. Such a device must not be disabled.</p>
-<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path (<a href="irp-mn-device-usage-notification.md" data-raw-source="[&lt;strong&gt;IRP_MN_DEVICE_USAGE_NOTIFICATION&lt;/strong&gt;](irp-mn-device-usage-notification.md)"><strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong></a> for <strong>DeviceUsageTypePaging</strong>), the driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate" data-raw-source="[&lt;strong&gt;IoInvalidateDeviceState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate)"><strong>IoInvalidateDeviceState</strong></a> and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
+<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path (<a href="irp-mn-device-usage-notification.md" data-raw-source="[&lt;strong&gt;IRP_MN_DEVICE_USAGE_NOTIFICATION&lt;/strong&gt;](irp-mn-device-usage-notification.md)"><strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong></a> for <strong>DeviceUsageTypePaging</strong>), the driver calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate" data-raw-source="[&lt;strong&gt;IoInvalidateDeviceState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate)"><strong>IoInvalidateDeviceState</strong></a> and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
 <p>If this bit is set for a device, the PnP manager propagates this setting to the device's parent device, its parent's parent device, and so forth.</p>
 <p>If this bit is set for a root-enumerated device, the device cannot be disabled or uninstalled.</p></td>
 </tr>

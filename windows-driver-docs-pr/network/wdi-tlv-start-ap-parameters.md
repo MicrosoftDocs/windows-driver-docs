@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_START_AP_PARAMETERS
 description: WDI_TLV_START_AP_PARAMETERS is a TLV that contains the parameters for OID_WDI_TASK_START_AP.
-ms.assetid: 6791754C-9786-4BE4-9915-7333E4E0AFB8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_START_AP_PARAMETERS Network Drivers Starting with Windows Vista
@@ -62,7 +61,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <tr class="even">
 <td>UINT8</td>
 <td>Added in Windows 10, version 1511, WDI version 1.0.10.
-<p>MustUseSpecifiedChannels. This parameter specifies whether the AP can only be started on the channels specified in <a href="/windows-hardware/drivers/network/oid-wdi-task-start-ap" data-raw-source="[OID_WDI_TASK_START_AP](/windows-hardware/drivers/network/oid-wdi-task-start-ap)">OID_WDI_TASK_START_AP</a> task parameters with <a href="wdi-tlv-ap-band-channel.md" data-raw-source="[&lt;strong&gt;WDI_TLV_AP_BAND_CHANNEL&lt;/strong&gt;](wdi-tlv-ap-band-channel.md)"><strong>WDI_TLV_AP_BAND_CHANNEL</strong></a>. Valid values are 0 and 1. If it is set to 1, the AP can only be started from the specified list. If it is not set, the list is meant to be a recommendation of channels that the firmware can pick from, and it may pick another channel if it is not possible to start the AP on any of the specified channels.</p></td>
+<p>MustUseSpecifiedChannels. This parameter specifies whether the AP can only be started on the channels specified in <a href="/windows-hardware/drivers/network/oid-wdi-task-start-ap" data-raw-source="[OID_WDI_TASK_START_AP](./oid-wdi-task-start-ap.md)">OID_WDI_TASK_START_AP</a> task parameters with <a href="wdi-tlv-ap-band-channel.md" data-raw-source="[&lt;strong&gt;WDI_TLV_AP_BAND_CHANNEL&lt;/strong&gt;](wdi-tlv-ap-band-channel.md)"><strong>WDI_TLV_AP_BAND_CHANNEL</strong></a>. Valid values are 0 and 1. If it is set to 1, the AP can only be started from the specified list. If it is not set, the list is meant to be a recommendation of channels that the firmware can pick from, and it may pick another channel if it is not possible to start the AP on any of the specified channels.</p></td>
 </tr>
 </tbody>
 </table>
@@ -97,6 +96,4 @@ Requirements
 
 
 [OID\_WDI\_TASK\_START\_AP](./oid-wdi-task-start-ap.md)
-
- 
 

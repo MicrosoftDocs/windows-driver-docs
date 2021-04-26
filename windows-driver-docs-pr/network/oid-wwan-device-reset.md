@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_RESET
 description: OID_WWAN_DEVICE_RESET
-ms.assetid: CF15A1FD-9E48-458C-80DF-F63636F73962
 keywords:
 - MB device reset, Mobile Broadband device reset, Mobile Broadband miniport driver device reset
 ms.date: 08/18/2017

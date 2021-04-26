@@ -1,7 +1,6 @@
 ---
 title: Dynamic Textures
 description: Dynamic Textures
-ms.assetid: 5e96b33c-a07c-4f58-a016-14d8d925285e
 keywords:
 - textures WDK DirectX 9.0
 - dynamic textures WDK DirectX 9.0

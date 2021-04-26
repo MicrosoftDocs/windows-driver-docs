@@ -1,7 +1,6 @@
 ---
 title: FSCTL_INVALIDATE_VOLUMES control code
 description: The FSCTL\_INVALIDATE\_VOLUMES control code finds and removes all the volumes mounted on the device represented by the specified file object or handle.
-ms.assetid: 26B7EBA2-F3A9-4E5A-961C-C1857AA4FF33
 keywords: ["FSCTL_INVALIDATE_VOLUMES control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -25,10 +24,10 @@ To perform this operation, minifilter drivers call [**FltFsControlFile**](/windo
 **Parameters**
 
 <a href="" id="fileobject"></a>*FileObject*  
-Handle to the device. To obtain a device handle, call the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) function.
+Handle to the device. To obtain a device handle, call the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-Handle to the device. To obtain a device handle, call the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) function.
+Handle to the device. To obtain a device handle, call the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function.
 
 <a href="" id="fscontrolcode"></a>*FsControlCode*  
 Control code for the operation. Use **FSCTL\_INVALIDATE\_VOLUMES** for this operation.

@@ -1,7 +1,6 @@
 ---
 title: WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro
 description: The WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro initializes a driver's WDF_OBJECT_ATTRIBUTES structure and inserts an object's driver-defined context information into the structure.
-ms.assetid: 83e397b1-e37d-451d-9007-3b34993187c3
 keywords:
  - WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro
 ms.date: 08/23/2017

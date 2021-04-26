@@ -1,7 +1,6 @@
 ---
 title: Power Management and PnP in Video Miniport Drivers (XDDM)
 description: Power Management and Plug and Play in Video Miniport Drivers (Windows 2000 Model)
-ms.assetid: e5b2ac53-e492-43de-91a3-5b02c26ee9a3
 keywords:
 - video miniport drivers WDK Windows 2000 , Plug and Play
 - video miniport drivers WDK Windows 2000 , power management
@@ -33,7 +32,5 @@ Miniport drivers must implement the following functions to support PnP and Power
 
 The graphics adapter for a legacy miniport driver cannot be removed from the system while the system is running, nor are legacy miniport drivers automatically detected when added to a running system.
 
-See [Child Devices of the Display Adapter (Windows 2000 Model)](child-devices-of-the-display-adapter--windows-2000-model-.md) for more information about detecting and communicating with an adapter's child devices. For general information about Plug and Play drivers, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
-
- 
+See [Child Devices of the Display Adapter (Windows 2000 Model)](child-devices-of-the-display-adapter--windows-2000-model-.md) for more information about detecting and communicating with an adapter's child devices. For general information about Plug and Play drivers, see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 

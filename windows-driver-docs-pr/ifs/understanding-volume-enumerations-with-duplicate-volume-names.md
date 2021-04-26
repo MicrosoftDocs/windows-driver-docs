@@ -1,7 +1,6 @@
 ---
 title: Understanding Volume Enumerations with Duplicate Volume Names
 description: Understanding Volume Enumerations with Duplicate Volume Names
-ms.assetid: c05982dc-4124-4f9a-93b8-0e56ac296d1b
 keywords:
 - volumes WDK file system , duplicate names
 - volumes WDK file system , enumerating
@@ -37,9 +36,9 @@ Routines and structures affected by this topic include the following:
 
 [**FILTER\_VOLUME\_STANDARD\_INFORMATION**](/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information)
 
-[**FilterVolumeFindFirst**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindfirst)
+[**FilterVolumeFindFirst**](/windows/win32/api/fltuser/nf-fltuser-filtervolumefindfirst)
 
-[**FilterVolumeFindNext**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindnext)
+[**FilterVolumeFindNext**](/windows/win32/api/fltuser/nf-fltuser-filtervolumefindnext)
 
 [**FltEnumerateVolumeInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumeinformation)
 

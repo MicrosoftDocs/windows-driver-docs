@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAD\_COLOR
 description: The WIA\_DPS\_PAD\_COLOR property contains the current pad color that is used when the WIA minidriver pads unaligned data. The WIA minidriver creates and maintains this property.
-ms.assetid: db78fc1b-72e4-4edc-8f4f-9209e6b36aa6
 keywords: ["WIA_DPS_PAD_COLOR Imaging Devices"]
 topic_type:
 - apiref

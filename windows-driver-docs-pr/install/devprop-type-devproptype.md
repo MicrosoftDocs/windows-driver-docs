@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DEVPROPTYPE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
-ms.assetid: d50a26d4-0af5-4cc5-aaa4-8587b64fc1a8
 keywords: ["DEVPROP_TYPE_DEVPROPTYPE Device and Driver Installation"]
 topic_type:
 - apiref

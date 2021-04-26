@@ -1,7 +1,6 @@
 ---
 title: CCD example pseudocode
 description: Example pseudocode for using CCD APIs to set clone view
-ms.assetid: 8ca2c7c4-8e6f-4e4f-9234-eb3e5dc164cc
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, example code
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, example code

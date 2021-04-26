@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_MIXER
 description: KSCATEGORY_MIXER
-ms.assetid: b17696ed-d8d6-4d02-a23b-64ebc8505afd
 keywords: ["KSCATEGORY_MIXER Device and Driver Installation"]
 topic_type:
 - apiref

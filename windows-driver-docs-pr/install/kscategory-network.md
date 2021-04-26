@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_NETWORK
 description: KSCATEGORY_NETWORK
-ms.assetid: 8112f828-e215-433a-9749-1ba965a97700
 keywords: ["KSCATEGORY_NETWORK Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Building for OneCore
 description: You can build a single binary that targets pre-Windows 10 and OneCore editions.
-ms.assetid: ee46801a-4fa5-465a-aa81-5e76eb83d315
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ However, depending on your requirements, you might choose instead to link to `On
 
 A subset of Windows APIs compile cleanly but return runtime errors on non-Desktop OneCore editions (for example Mobile or IoT).
 
-For example, the [**InstallApplication**](/windows/desktop/api/appmgmt/nf-appmgmt-installapplication) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](./validating-windows-drivers.md) tool also reports these problems. The next section describes how to fix them.
+For example, the [**InstallApplication**](/windows/win32/api/appmgmt/nf-appmgmt-installapplication) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](./validating-windows-drivers.md) tool also reports these problems. The next section describes how to fix them.
 
-## Fixing ApiValidator errors by using [**IsApiSetImplemented**](/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
+## Fixing ApiValidator errors by using [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented)
 
 If your code calls non-universal APIs, you might see the following [ApiValidator](./validating-windows-drivers.md) errors:
 
@@ -40,9 +39,9 @@ If your code calls non-universal APIs, you might see the following [ApiValidator
 
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the [API Layering](api-layering.md) requirement for [Windows Drivers](./getting-started-with-windows-drivers.md), wrap these calls with [**IsApiSetImplemented**](/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented).
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the [API Layering](api-layering.md) requirement for [Windows Drivers](./getting-started-with-windows-drivers.md), wrap these calls with [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented).
 
-This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
+This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
 
 The following code samples illustrate how to do this.
 
@@ -92,7 +91,7 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 ## Code sample: Direct usage of API, after evaluating for existence
 
-This sample shows how to call [**IsApiSetImplemented**](/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the [API Layering](api-layering.md) requirement of Windows Drivers with the following [ApiValidator](./validating-windows-drivers.md) output:
+This sample shows how to call [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the [API Layering](api-layering.md) requirement of Windows Drivers with the following [ApiValidator](./validating-windows-drivers.md) output:
 
 ```cpp
 ApiValidation: All binaries are Universal

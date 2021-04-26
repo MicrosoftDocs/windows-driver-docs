@@ -1,7 +1,6 @@
 ---
 title: Installing Windows Symbol Files
 description: Installing Windows Symbol Files
-ms.assetid: fbafb14c-9b92-47c5-9954-5c5ba2301c47
 keywords: ["symbols, Windows", "symbols, user-mode"]
 ms.date: 03/26/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: NDIS QoS Traffic Classes
 description: NDIS QoS Traffic Classes
-ms.assetid: 0DE61F97-7173-4D91-90F3-20EAFB810251
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ NDIS Quality of Service (QoS) traffic classes specify a set of policies that det
 <a href="" id="priority-level-and-flow-control"></a>Priority Level and Flow Control  
 This policy defines the IEEE 802.1p priority level and optional flow control algorithms for the egress traffic.
 
-For more information, see [Priority Levels and Flow Control](priority-levels-and-flow-control.md).
+For more information, see [Priority Levels and Flow Control](ieee-802-1p-priority-levels.md).
 
 <a href="" id="traffic-selection-algorithms--tsas-"></a>Traffic Selection Algorithms (TSAs)  
 This policy specifies how the network adapter selects egress traffic for delivery from its transmit queues. For example, the adapter could select egress packets based on IEEE 802.1p priority or the percentage of the egress bandwidth that is allocated to each traffic class.

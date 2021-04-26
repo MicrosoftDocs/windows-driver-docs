@@ -3,10 +3,13 @@ description: This topic provides information about steps you can try when a data
 title: How to recover from USB pipe errors
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q3
 ---
 
 # How to recover from USB pipe errors
 
+> [!NOTE]
+> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88)
 
 This topic provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this topic cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
 
@@ -44,7 +47,7 @@ To clear an error condition, start with the reset-pipe operation and perform mor
 
 ### Technologies
 
--   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [Kernel-Mode Driver Framework](../wdf/index.md)
 
 ### Prerequisites
 
@@ -52,7 +55,7 @@ To clear an error condition, start with the reset-pipe operation and perform mor
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
 
-    A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
+    A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
 -   The client driver must have a handle to the framework target pipe object. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
@@ -63,40 +66,40 @@ Instructions
 
 The client driver initiates a data transfer by using a USB Request Block (URB). After the request completes, the USB driver stack returns a USBD status code that indicates whether the transfer was successful or it failed. In a failure, the USBD code indicates the reason for failure.
 
--   If you submitted URB by calling the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously) method, check the **Hdr.Status** member of the [**URB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure after the method returns.
--   If you submitted the URB asynchronously by calling the [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method, check the URB status in the [*EVT_WDF_REQUEST_COMPLETION_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine). The *Params* parameter points to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_completion_params) structure. To check the USBD status code, inspect the **Usb-&gt;UsbdStatus** member. For information about the code, see [USBD\_STATUS](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)).
+-   If you submitted URB by calling the [**WdfUsbTargetDeviceSendUrbSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously) method, check the **Hdr.Status** member of the [**URB**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure after the method returns.
+-   If you submitted the URB asynchronously by calling the [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method, check the URB status in the [*EVT_WDF_REQUEST_COMPLETION_ROUTINE*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine). The *Params* parameter points to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_completion_params) structure. To check the USBD status code, inspect the **Usb-&gt;UsbdStatus** member. For information about the code, see [USBD\_STATUS](/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)).
 
 Transfer failures can result from a device error, such as USBD\_STATUS\_STALL\_PID or USBD\_STATUS\_BABBLE\_DETECTED. They can also result due to an error reported by the host controller, such as USBD\_STATUS\_XACT\_ERROR.
 
 ### <a href="" id="determine-whether-the-device-is-connected-to-the-port"></a>Step 2: Determine whether the device is connected to the port
 
-Before issuing any request that resets the pipe or the device, make sure that the device is connected. You can determine the connected state of the device by calling the [**WdfUsbTargetDeviceIsConnectedSynchronous**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceisconnectedsynchronous) method.
+Before issuing any request that resets the pipe or the device, make sure that the device is connected. You can determine the connected state of the device by calling the [**WdfUsbTargetDeviceIsConnectedSynchronous**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceisconnectedsynchronous) method.
 
 ### <a href="" id="cancel-all-pending-transfers-to-the-pipe"></a>Step 3: Cancel all pending transfers to the pipe
 
 Before sending any requests that reset the pipe or port, cancel all pending transfer requests to the pipe, which the USB driver stack has not yet completed. You can cancel requests in one of these ways:
 
--   Stop the I/O target by calling the [**WdfIoTargetStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) method.
+-   Stop the I/O target by calling the [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) method.
 
-    To stop the I/O target, first, get the WDFIOTARGET handle associated with the framework pipe object by calling the [**WdfUsbTargetPipeGetIoTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetiotarget) method. By using the handle, call [**WdfIoTargetStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop). In the call, set the action to **WdfIoTargetCancelSentIo** (see [**WDF\_IO\_TARGET\_SENT\_IO\_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/ne-wdfiotarget-_wdf_io_target_sent_io_action)) to instruct the framework to cancel all requests that the USB driver stack has not completed. For requests that have been completed, the client driver must wait for its completion callback to get invoked by the framework.
+    To stop the I/O target, first, get the WDFIOTARGET handle associated with the framework pipe object by calling the [**WdfUsbTargetPipeGetIoTarget**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetiotarget) method. By using the handle, call [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop). In the call, set the action to **WdfIoTargetCancelSentIo** (see [**WDF\_IO\_TARGET\_SENT\_IO\_ACTION**](/windows-hardware/drivers/ddi/wdfiotarget/ne-wdfiotarget-_wdf_io_target_sent_io_action)) to instruct the framework to cancel all requests that the USB driver stack has not completed. For requests that have been completed, the client driver must wait for its completion callback to get invoked by the framework.
 
 -   Send an abort-pipe request. You can send the request by calling one of these methods:
-    -   Call the [**WdfUsbTargetPipeAbortSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously) method.
+    -   Call the [**WdfUsbTargetPipeAbortSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously) method.
 
-        The call is synchronous and returns only after all pending requests are canceled. [**WdfUsbTargetPipeAbortSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously) takes an optional *Request* parameter. We recommend that you pass a WDFREQUEST handle to a preallocated framework request object. The parameter enables the framework of use the specified request object instead of an internal request object that the driver cannot access. This parameter value ensures that **WdfUsbTargetPipeAbortSynchronously** does not fail due to insufficient memory.
+        The call is synchronous and returns only after all pending requests are canceled. [**WdfUsbTargetPipeAbortSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously) takes an optional *Request* parameter. We recommend that you pass a WDFREQUEST handle to a preallocated framework request object. The parameter enables the framework of use the specified request object instead of an internal request object that the driver cannot access. This parameter value ensures that **WdfUsbTargetPipeAbortSynchronously** does not fail due to insufficient memory.
 
-    -   Call the [**WdfUsbTargetPipeFormatRequestForAbort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforabort) method to format a request object for an abort-pipe request, and then send the request by calling [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method.
+    -   Call the [**WdfUsbTargetPipeFormatRequestForAbort**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforabort) method to format a request object for an abort-pipe request, and then send the request by calling [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method.
 
-        If the driver sends the request asynchronously, then it must specify a pointer to the driver's [*EVT_WDF_REQUEST_COMPLETION_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) that the driver implements. To specify the pointer, call the [**WdfRequestSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetcompletionroutine) method.
+        If the driver sends the request asynchronously, then it must specify a pointer to the driver's [*EVT_WDF_REQUEST_COMPLETION_ROUTINE*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) that the driver implements. To specify the pointer, call the [**WdfRequestSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetcompletionroutine) method.
 
-        The driver can send the request synchronously by specifying WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS as one of the request options in [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend). If you send the request synchronously, then call [**WdfUsbTargetPipeAbortSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously) instead.
+        The driver can send the request synchronously by specifying WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS as one of the request options in [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend). If you send the request synchronously, then call [**WdfUsbTargetPipeAbortSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously) instead.
 
 ### <a href="" id="reset-the-usb-pipe"></a>Step 4: Reset the USB pipe
 
 Start the error recovery by resetting the pipe. You can send a reset-pipe request by calling one of these methods:
 
--   Call the [**WdfUsbTargetPipeResetSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpiperesetsynchronously) to send a reset pipe request synchronously.
--   Call the [**WdfUsbTargetPipeFormatRequestForReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforreset) method to format a request object for a reset-pipe request, and then send the request by calling [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method. Those calls are similar to the ones for the abort-pipe request, as described in step 3.
+-   Call the [**WdfUsbTargetPipeResetSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpiperesetsynchronously) to send a reset pipe request synchronously.
+-   Call the [**WdfUsbTargetPipeFormatRequestForReset**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforreset) method to format a request object for a reset-pipe request, and then send the request by calling [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method. Those calls are similar to the ones for the abort-pipe request, as described in step 3.
 
 **Note**  Do not send any new transfer requests until the reset-pipe operation is complete.
 
@@ -113,9 +116,9 @@ If a reset-pipe operation does not clear the error condition and data transfers 
 1.  Cancel all transfers to the device. To do so, enumerate all pipes in the current configuration and cancel pending requests scheduled for each pipe.
 2.  Stop the I/O target for the device.
 
-    Call the [**WdfUsbTargetDeviceGetIoTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetiotarget) method to get a WDFIOTARGET handle associated with the framework target device object. Then, call [**WdfIoTargetStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) and specify the WDFIOTARGET handle. In call, set the action to **WdfIoTargetCancelSentIo** (WDF\_IO\_TARGET\_SENT\_IO\_ACTION).
+    Call the [**WdfUsbTargetDeviceGetIoTarget**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetiotarget) method to get a WDFIOTARGET handle associated with the framework target device object. Then, call [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) and specify the WDFIOTARGET handle. In call, set the action to **WdfIoTargetCancelSentIo** (WDF\_IO\_TARGET\_SENT\_IO\_ACTION).
 
-3.  Send a reset-port request by calling the [**WdfUsbTargetDeviceResetPortSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceresetportsynchronously) method.
+3.  Send a reset-port request by calling the [**WdfUsbTargetDeviceResetPortSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceresetportsynchronously) method.
 
 A reset-port operation causes the device to get re-enumerated on the USB bus. The USB driver stack preserves the device configuration after the enumeration. The client driver can use the previously obtained pipe handles because the driver stack ensures that existing pipe handles remain valid.
 
@@ -130,11 +133,11 @@ If a reset-port operation does not clear the error condition and data transfers 
 1.  Cancel all transfers to the device. Make sure that you cancel pending request scheduled for each pipe in the current configuration (see step 3).
 2.  Stop the I/O target for the device.
 
-    Call the [**WdfUsbTargetDeviceGetIoTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetiotarget) method to get a WDFIOTARGET handle associated with the framework target device object. Then, call [**WdfIoTargetStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) and specify the WDFIOTARGET handle. In call, set the action to **WdfIoTargetCancelSentIo** (WDF\_IO\_TARGET\_SENT\_IO\_ACTION).
+    Call the [**WdfUsbTargetDeviceGetIoTarget**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetiotarget) method to get a WDFIOTARGET handle associated with the framework target device object. Then, call [**WdfIoTargetStop**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetstop) and specify the WDFIOTARGET handle. In call, set the action to **WdfIoTargetCancelSentIo** (WDF\_IO\_TARGET\_SENT\_IO\_ACTION).
 
 3.  Send a cycle-port request by calling one of these methods:
-    -   Call the [**WdfUsbTargetDeviceCyclePortSynchronously**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecycleportsynchronously) to send a cycle-port request synchronously.
-    -   Call the [**WdfUsbTargetDeviceFormatRequestForCyclePort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceformatrequestforcycleport) method to format a request object for a cycle-port request, and then send the request by calling [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method. Those calls are similar to the ones for the abort-pipe request, as described in step 3.
+    -   Call the [**WdfUsbTargetDeviceCyclePortSynchronously**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecycleportsynchronously) to send a cycle-port request synchronously.
+    -   Call the [**WdfUsbTargetDeviceFormatRequestForCyclePort**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceformatrequestforcycleport) method to format a request object for a cycle-port request, and then send the request by calling [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) method. Those calls are similar to the ones for the abort-pipe request, as described in step 3.
 
 The client driver can send transfer requests to the device only after the cycle-port request has completed. That is because the device node gets removed while the USB driver stack processes the cycle-port request.
 
@@ -145,7 +148,4 @@ As a result of cycle port operation, any application that has a handle open to t
 Similar to the reset-port operation (described in step 6), for a composite device, cycle-port operation affects the entire device and not individual functions of the device.
 
 ## Related topics
-[USB I/O Transfers](usb-device-i-o.md)  
-
-
-
+[USB I/O Transfers](usb-device-i-o.md)

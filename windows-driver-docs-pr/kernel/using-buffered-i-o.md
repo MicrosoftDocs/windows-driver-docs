@@ -1,7 +1,6 @@
 ---
 title: Using Buffered I/O
 description: Using Buffered I/O
-ms.assetid: 69291156-babb-465a-9e80-1766f075768b
 keywords: ["buffered I/O WDK kernel", "buffers WDK I/O , buffered I/O", "data buffers WDK I/O , buffered I/O", "nonpaged system buffers WDK I/O", "I/O control codes WDK kernel , buffered I/O", "I/O WDK kernel , buffered I/O"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Configuring Dispatch Mode for an I/O Queue
 description: Configuring Dispatch Mode for an I/O Queue
-ms.assetid: 7603c3fd-a4cb-4174-ad14-f57efedfe9de
 keywords:
 - synchronization WDK UMDF
 - queue dispatch modes WDK UMDF

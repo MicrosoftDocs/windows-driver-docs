@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CAPABILITIES
 description: The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking capabilities of a filter.
-ms.assetid: f0ee8fed-cdb5-44f9-96c3-d6edf235ea35
 keywords: ["KSPROPERTY_MEDIASEEKING_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KS_SEEKING_CAPABILITIES</p></td>
 </tr>
 </tbody>
@@ -82,6 +81,4 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
 

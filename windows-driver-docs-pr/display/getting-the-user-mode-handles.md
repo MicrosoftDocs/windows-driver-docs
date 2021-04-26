@@ -1,7 +1,6 @@
 ---
 title: Getting the User-Mode Handles
 description: Getting the User-Mode Handles
-ms.assetid: b241bf00-1adb-4ab0-a00e-e922bdc9eee5
 keywords:
 - drawing kernel-mode video transport WDK DirectDraw , user-mode handles
 - DirectDraw kernel-mode video transport WDK Windows 2000 display , user-mode handles
@@ -24,11 +23,11 @@ To get the DirectDraw handle for a DirectDraw object:
 
 1. Call **QueryInterface(**<em>lpDD</em>, &*IID\_IDirectDrawKernel*, &<em>pNewInterface</em>**)** on the DirectDraw interface.
 
-2. Call the [**IDirectDrawKernel::GetKernelHandle**](/windows/desktop/api/ddkernel/nf-ddkernel-idirectdrawkernel-getkernelhandle) method on the new interface.
+2. Call the [**IDirectDrawKernel::GetKernelHandle**](/windows/win32/api/ddkernel/nf-ddkernel-idirectdrawkernel-getkernelhandle) method on the new interface.
 
-The **IDirectDrawKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDraw object. To release the handle, use the [**IDirectDrawKernel::ReleaseKernelHandle**](/windows/desktop/api/ddkernel/nf-ddkernel-idirectdrawkernel-releasekernelhandle) method.
+The **IDirectDrawKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDraw object. To release the handle, use the [**IDirectDrawKernel::ReleaseKernelHandle**](/windows/win32/api/ddkernel/nf-ddkernel-idirectdrawkernel-releasekernelhandle) method.
 
-A user-mode component can also call the [**IDirectDrawKernel::GetCaps**](/windows/desktop/api/ddkernel/nf-ddkernel-idirectdrawkernel-getcaps) method to retrieve the kernel-mode capabilities of the DirectDraw object.
+A user-mode component can also call the [**IDirectDrawKernel::GetCaps**](/windows/win32/api/ddkernel/nf-ddkernel-idirectdrawkernel-getcaps) method to retrieve the kernel-mode capabilities of the DirectDraw object.
 
 ### <span id="code_sample"></span><span id="CODE_SAMPLE"></span>Code Sample
 
@@ -49,9 +48,9 @@ To get the DirectDrawSurface handle:
 
 1. Call **QueryInterface(**<em>lpSurface</em>, &*IID\_IDirectDrawSurfaceKernel*, &<em>pDDSK</em>**)** on the DirectDrawSurface interface.
 
-2. Call the [**IDirectDrawSurfaceKernel::GetKernelHandle**](/windows/desktop/api/ddkernel/nf-ddkernel-idirectdrawsurfacekernel-getkernelhandle) method on the new interface.
+2. Call the [**IDirectDrawSurfaceKernel::GetKernelHandle**](/windows/win32/api/ddkernel/nf-ddkernel-idirectdrawsurfacekernel-getkernelhandle) method on the new interface.
 
-The **IDirectDrawSurfaceKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDrawSurface driver. To release the handle, use the [**IDirectDrawSurfaceKernel::ReleaseKernelHandle**](/windows/desktop/api/ddkernel/nf-ddkernel-idirectdrawsurfacekernel-releasekernelhandle) method.
+The **IDirectDrawSurfaceKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDrawSurface driver. To release the handle, use the [**IDirectDrawSurfaceKernel::ReleaseKernelHandle**](/windows/win32/api/ddkernel/nf-ddkernel-idirectdrawsurfacekernel-releasekernelhandle) method.
 
 ### <span id="code_sample2"></span><span id="CODE_SAMPLE2"></span>Code Sample
 

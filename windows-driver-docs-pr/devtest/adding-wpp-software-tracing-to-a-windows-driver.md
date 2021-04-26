@@ -1,7 +1,6 @@
 ---
 title: Adding WPP Software Tracing to a Windows Driver
 description: To use WPP software tracing in a trace provider, such as a kernel-mode driver or a user-mode application, you need to add code (or instrument) the driver source files and modify the driver project. This section will describe those steps.
-ms.assetid: 487BA8AA-950A-4F3C-9E3E-EBE1DA35D4B1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,8 @@ For convenience, the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/p
             WPP_DEFINE_BIT(NameOfTraceFlag2)  \
             .............................   \
             .............................   \
-            WPP_DEFINE_BIT(NameOfTraceFlag31) 
+            WPP_DEFINE_BIT(NameOfTraceFlag31) \
+            )
     ```
 
     For example, the following code uses myDriverTraceGuid as the *GUIDFriendlyName*. Note that *ControlGUID* has a slightly different format than the standard form of a 32-digit hexadecimal GUID. The *ControlGUID* has the five fields, but they are separated by commas and bracketed by parentheses, instead of the usual hyphens and curly braces. For example, you specify (**(84bdb2e9,829e,41b3,b891,02f454bc2bd7)** instead of {84bdb2e9-829e-41b3-b891-02f454bc2bd7}.
@@ -61,7 +61,7 @@ For convenience, the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/p
             )                             
     ```
 
-    **Tip**  You can copy this code snippet into a header file. Be sure to change the control GUID and the friendly name. You can use GUIDgen.exe to generate the control GUID. The Guidgen.exe is included with Visual Studio (**Tools &gt; Create GUID**). You could also use the Uuidgen.exe tool, which is available from the Visual Studio Command prompt window (type **uuigen.exe /?** for more information).
+    **Tip**  You can copy this code snippet into a header file. Be sure to change the control GUID and the friendly name. You can use GUIDgen.exe to generate the control GUID. The Guidgen.exe is included with Visual Studio (**Tools &gt; Create GUID**). You could also use the Uuidgen.exe tool, which is available from the Visual Studio Command prompt window (type **uuidgen.exe /?** for more information).
 
 
 
@@ -111,11 +111,11 @@ Each trace message function that you use must have a corresponding pair of macro
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="WPP_CONDITIONS_LOGGER"></span><span id="wpp_conditions_logger"></span><strong>WPP_<em>CONDITIONS</em><em>LOGGER</strong></p></td>
+<td align="left"><p><span id="WPP_CONDITIONS_LOGGER"></span><span id="wpp_conditions_logger"></span><strong>WPP_<em>CONDITIONS</em>_LOGGER</strong></p></td>
 <td align="left"><p>Used to find the trace session associated with the provider and returns a handle to the session.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="WPP_CONDITIONS_ENABLED"></span><span id="wpp_conditions_enabled"></span><strong>WPP</em><em>CONDITIONS</em>_ENABLED</strong></p></td>
+<td align="left"><p><span id="WPP_CONDITIONS_ENABLED"></span><span id="wpp_conditions_enabled"></span><strong>WPP_<em>CONDITIONS</em>_ENABLED</strong></p></td>
 <td align="left"><p>Used to determine whether logging is enabled with the specified condition.</p></td>
 </tr>
 </tbody>
@@ -378,15 +378,15 @@ You can use any trace message function you choose, provided the trace message fu
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a></td>
-<td align="left"><p>This is the default trace message function. The advantage of using <a href="https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a> is that the function is already defined for you. You can use the trace flags you specify in the WPP_CONFIG_GUIDS macro. The disadvantage of using <strong>DoTraceMessage</strong>, is that the function only takes one conditional parameter, that is, trace flags. If you want to use trace levels, to log only error or warning messages, you can use <strong>DoDebugTrace</strong> macro, or use <strong>TraceEvents</strong>, which uses both trace flags and trace levels.</p></td>
+<td align="left"><a href="/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a></td>
+<td align="left"><p>This is the default trace message function. The advantage of using <a href="/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a> is that the function is already defined for you. You can use the trace flags you specify in the WPP_CONFIG_GUIDS macro. The disadvantage of using <strong>DoTraceMessage</strong>, is that the function only takes one conditional parameter, that is, trace flags. If you want to use trace levels, to log only error or warning messages, you can use <strong>DoDebugTrace</strong> macro, or use <strong>TraceEvents</strong>, which uses both trace flags and trace levels.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>TraceEvents</strong></td>
 <td align="left"><p>If you create a driver using WDF templates in Visual Studio, this is the default trace message function. The advantage of using <strong>TraceEvents</strong> is that the trace message function, the trace flags, and <a href="trace-level.md" data-raw-source="[Trace Level](trace-level.md)">Trace Level</a> are already defined for you. In addition, the templates also include instrumentation that writes messages to the log file upon function entry and exit.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint" data-raw-source="[&lt;strong&gt;KdPrint&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint)"><strong>KdPrint</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex" data-raw-source="[&lt;strong&gt;KdPrintEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex)"><strong>KdPrintEx</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint" data-raw-source="[&lt;strong&gt;DbgPrint&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint)"><strong>DbgPrint</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex" data-raw-source="[&lt;strong&gt;DbgPrintEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex)"><strong>DbgPrintEx</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint" data-raw-source="[&lt;strong&gt;KdPrint&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint)"><strong>KdPrint</strong></a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex" data-raw-source="[&lt;strong&gt;KdPrintEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex)"><strong>KdPrintEx</strong></a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint" data-raw-source="[&lt;strong&gt;DbgPrint&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint)"><strong>DbgPrint</strong></a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex" data-raw-source="[&lt;strong&gt;DbgPrintEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex)"><strong>DbgPrintEx</strong></a></td>
 <td align="left"><p>The advantage of using the debug print functions is that you do not need to modify your existing debug print statements. You can easily switch from viewing messages in the debugger, to recording trace messages in a file. If you customized the trace message function to include one of the debug print functions, you do not need to do any more work. When you create a trace session with Logman or <a href="tracelog.md" data-raw-source="[Tracelog](tracelog.md)">Tracelog</a>, or another trace controller, you just specify the flags and levels for your provider. Any debug print statements that meet the conditions you specify are printed to the log.</p></td>
 </tr>
 </tbody>

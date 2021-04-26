@@ -1,7 +1,6 @@
 ---
-title: DXVA\_DeinterlaceBobDeviceClass DeinterlaceBlt method
+title: DXVA_DeinterlaceBobDeviceClass DeinterlaceBlt method
 description: The sample DeinterlaceBlt function performs deinterlace or frame-rate conversion by writing the output to a destination surface.
-ms.assetid: 0aa68d0c-8c2b-41fe-9e46-a41b157fbd98
 keywords: ["DeinterlaceBlt method Display Devices", "DeinterlaceBlt method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceBlt method"]
 topic_type:
 - apiref
@@ -13,7 +12,7 @@ ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
 
-# DXVA\_DeinterlaceBobDeviceClass::DeinterlaceBlt method
+# DXVA_DeinterlaceBobDeviceClass::DeinterlaceBlt method
 
 
 The sample *DeinterlaceBlt* function performs deinterlace or frame-rate conversion by writing the output to a destination surface.
@@ -37,17 +36,17 @@ Parameters
 ----------
 
 *rtTargetFrame* \[in\]
-Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a reference sample, as defined in the [**DXVA\_VideoSample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample) structure, or the midpoint between the starting display time and the ending display time. For more information, see the [**DXVA\_DeinterlaceBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt) structure.
+Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a reference sample, as defined in the [**DXVA_VideoSample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample) structure, or the midpoint between the starting display time and the ending display time. For more information, see the [**DXVA_DeinterlaceBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt) structure.
 
 If a frame rate conversion is requested, the **rtTarget** time can be different from any of the **rtStart** times of the reference samples.
 
 *lprcDstRect* \[in\]
-Supplies a pointer to a [**RECT**](/windows/desktop/api/windef/ns-windef-tagrect) structure that describes the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.
+Supplies a pointer to a [**RECT**](/windows/win32/api/windef/ns-windef-rect) structure that describes the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.
 
 *lpDDSDstSurface* \[in\]
 Supplies a pointer to the destination surface. The destination surface can be a D3D render target, a D3D texture, or a D3D texture that is also a render target. The destination surface is always allocated in local video memory.
 
-The pixel format of the destination surface is the one indicated in the [**DXVA\_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps) structure unless a YUV-to-RGB color space conversion is being performed as part of the deinterlace procedure. In this case, the destination surface format is an RGB format with at least 8 bits of precision for each color component.
+The pixel format of the destination surface is the one indicated in the [**DXVA_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps) structure unless a YUV-to-RGB color space conversion is being performed as part of the deinterlace procedure. In this case, the destination surface format is an RGB format with at least 8 bits of precision for each color component.
 
 *lprcSrcRect* \[in\]
 Supplies a pointer to a RECT structure that describes the upper left and lower right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.
@@ -64,12 +63,12 @@ Indicates the alpha value for the surface. A value of 0.0F indicates a transpare
 Return value
 ------------
 
-Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
+Returns zero (S_OK or DD_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
 Remarks
 -------
 
-The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
+The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure. The DD_RENDERMOCOMPDATA structure is filled as follows.
 
 <table>
 <colgroup>
@@ -89,7 +88,7 @@ The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** me
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpBufferInfo</strong></p></td>
-<td align="left"><p>Points to an array of <a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference sample and one for the destination sample. The destination sample is the first element of the array.</p></td>
+<td align="left"><p>Points to an array of <a href="/windows/win32/api/ddrawint/ns-ddrawint-ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/win32/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference sample and one for the destination sample. The destination sample is the first element of the array.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dwFunction</strong></p></td>
@@ -97,7 +96,7 @@ The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** me
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Points to a filled <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBlt&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt)"><strong>DXVA_DeinterlaceBlt</strong></a> structure.</p></td>
+<td align="left"><p>Points to a filled <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBlt&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt)"><strong>DXVA_DeinterlaceBlt</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -106,22 +105,16 @@ The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** me
 </tbody>
 </table>
 
- 
-
 For the DirectX VA device used for deinterlacing, the driver-supplied callback pointed to by **RenderMoComp** is called without calling the display driver-supplied **BeginMoCompFrame** or **EndMoCompFrame** function.
 
-## <span id="see_also"></span>See also
+## See also
 
+[**DD_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
-[**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
+[**DD_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata)
 
-[**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata)
+[**DXVA_DeinterlaceBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt)
 
-[**DXVA\_DeinterlaceBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt)
+[**DXVA_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps)
 
-[**DXVA\_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps)
-
-[**DXVA\_VideoSample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample)
-
- 
-
+[**DXVA_VideoSample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample)

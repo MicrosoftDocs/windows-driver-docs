@@ -9,7 +9,6 @@ keywords:
 - head-mounted display
 - HMD
 - virtual reality
-ms.author: windowsdriverdev
 ms.date: 7/8/2020
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,7 +1,6 @@
 ---
 title: Porting DMA
 description: Porting DMA
-ms.assetid: 457B6459-EE02-4A2C-8D25-81CE1D9265DC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

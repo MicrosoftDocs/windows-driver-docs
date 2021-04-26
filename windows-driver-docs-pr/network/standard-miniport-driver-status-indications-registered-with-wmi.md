@@ -1,7 +1,6 @@
 ---
 title: Standard Miniport Driver Status Indications Registered with WMI
 description: Standard Miniport Driver Status Indications Registered with WMI
-ms.assetid: afebd0a2-c811-4534-9320-02b9292ba81b
 keywords:
 - status indications WDK networking , WMI
 - WMI WDK networking , status indications

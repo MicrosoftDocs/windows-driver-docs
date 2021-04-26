@@ -1,7 +1,6 @@
 ---
 title: DirectX feature improvements in Windows 8
 description: Windows 8 includes Microsoft DirectX feature improvements that benefit developers, end users and system manufacturers.
-ms.assetid: 0622DA0D-41ED-4B47-B090-8D5B85E10EB3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ The feature improvements are in the following areas:
 ## <span id="pixelformats"></span><span id="PIXELFORMATS"></span>Pixel formats (5551, 565, 4444)
 
 
-To better support graphics in low-power configurations using DirectX, the following DirectX 9 pixel formats from the [**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration must be supported in Direct3D for Windows 8:
+To better support graphics in low-power configurations using DirectX, the following DirectX 9 pixel formats from the [**DXGI\_FORMAT**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration must be supported in Direct3D for Windows 8:
 
 -   **DXGI\_FORMAT\_B5G6R5\_UNORM**
 -   **DXGI\_FORMAT\_B5G5R5A1\_UNORM**
@@ -138,7 +137,7 @@ DirectX 10 (or greater)-capable graphics hardware must support cross-process sha
 
 This requirement ensures that stereo applications won't have failures in mono modes. For example: even for cases when stereo is not enabled on the system, applications should be able to create stereo swap chains or arrayed buffers as render targets and then call **Present**. In this case, only the left view is displayed (or if the *prefer right* Microsoft DirectX Graphics Infrastructure (DXGI) present flag is set, only the right view).
 
-Therefore, WDDM 1.2 drivers (Full Graphics & Render devices) must support Direct3D 11 APIs by adding support for cross process sharing of texture arrays. In earlier versions, cross-process shared resources could be only single-layer surfaces. In Windows 8, the maximum size of a shared array is two elements (which is sufficient for stereo). For more information on this requirement, see **Device.Graphics ¦ Stereoscopic3DArraySupport** in [Windows Hardware Certification Requirements](https://go.microsoft.com/fwlink/p/?linkid=324537). Other relevant Microsoft WindowsWindowsWindows HCK requirements are **Device.Graphics ¦ ProcessingStereoscopicVideoContent** and **Device.Display.Monitor.Stereoscopic3DModes**.
+Therefore, WDDM 1.2 drivers (Full Graphics & Render devices) must support Direct3D 11 APIs by adding support for cross process sharing of texture arrays. In earlier versions, cross-process shared resources could be only single-layer surfaces. In Windows 8, the maximum size of a shared array is two elements (which is sufficient for stereo). For more information on this requirement, see **Device.Graphics ¦ Stereoscopic3DArraySupport** in [Windows Hardware Certification Requirements](/previous-versions/windows/hardware/cert-program/). Other relevant Microsoft WindowsWindowsWindows HCK requirements are **Device.Graphics ¦ ProcessingStereoscopicVideoContent** and **Device.Display.Monitor.Stereoscopic3DModes**.
 
 ## <span id="unordered"></span><span id="UNORDERED"></span>UAVs with multi-sample anti-alias sample access
 
@@ -226,6 +225,4 @@ These functions and structures are new or updated for Windows 8:
 -   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddicaps_shader_min_precision)
 -   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION\_SUPPORT**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicaps_shader_min_precision_support)
 -   [**D3DDDICAPS\_TYPE**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddicaps_type)
-
- 
 

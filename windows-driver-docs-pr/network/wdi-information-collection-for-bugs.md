@@ -1,7 +1,6 @@
 ---
 title: WDI information collection for bugs
 description: Bugs in any non-trivial software are inevitable.
-ms.assetid: 551CA7DD-EB1A-41FB-A3D7-472DA7020B51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

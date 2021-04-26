@@ -1,7 +1,6 @@
 ---
 title: Data-driven Class
 description: Data-driven Class
-ms.assetid: 2998D5BB-A873-4df9-86B2-88937736862F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

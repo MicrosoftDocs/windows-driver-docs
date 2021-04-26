@@ -1,7 +1,6 @@
 ---
 title: Photo Sequence Mode
 description: Photo sequence mode enables capturing a sequence of photos in response to a single photo click of the camera.
-ms.assetid: 15F19FE1-6D09-4406-B096-E96D12BAF030
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

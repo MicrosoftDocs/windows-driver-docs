@@ -1,7 +1,6 @@
 ---
 title: Extended Surface Capability Flags
 description: Extended Surface Capability Flags
-ms.assetid: 197d899e-57ab-40f8-9c09-440c2dc6197c
 keywords:
 - drawing extended surface capabilities WDK DirectDraw , flags
 - DirectDraw extended surface capabilities WDK Windows 2000 display , flags

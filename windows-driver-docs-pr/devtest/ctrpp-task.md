@@ -1,7 +1,6 @@
 ---
 title: Ctrpp task
 description: The Windows Driver Kit (WDK) provides the Ctrpp task so that you can run the ctrpp.exe tool when you build your driver using MSBuild.
-ms.assetid: DB457500-5BFF-4488-95EB-EEB3F63947C1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

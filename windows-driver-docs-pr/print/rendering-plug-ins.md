@@ -1,7 +1,6 @@
 ---
 title: Rendering Plug-Ins
 description: Rendering Plug-Ins
-ms.assetid: e55ca083-2790-4929-9e5b-6fce49eb0404
 keywords:
 - printer driver customizing WDK , rendering plug-ins
 - customizing printer drivers WDK , rendering plug-ins

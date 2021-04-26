@@ -2,7 +2,6 @@
 title: FsRtlEnterFileSystem function
 description: The FsRtlEnterFileSystem macro temporarily disables the delivery of normal kernel-mode asynchronous procedure calls (APC). Special kernel-mode APCs are still delivered.
 date: 06/25/2019
-ms.assetid: 6aa6315d-e430-4189-8eb5-9427a2e5ba46
 keywords: ["FsRtlEnterFileSystem function Installable File System Drivers"]
 topic_type:
 - apiref

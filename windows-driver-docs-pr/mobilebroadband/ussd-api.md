@@ -1,7 +1,6 @@
 ---
 title: USSD API
 description: USSD API
-ms.assetid: c5700791-6978-4626-ab69-aa4391247542
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

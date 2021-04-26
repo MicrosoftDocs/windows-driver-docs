@@ -1,7 +1,6 @@
 ---
 title: Retrieving the OPM DDI
 description: Retrieving the OPM DDI
-ms.assetid: 84218245-f5f3-4a6f-88ed-9cd5db224e30
 keywords:
 - OPM WDK display , retrieving DDI
 ms.date: 04/20/2017
@@ -50,7 +49,7 @@ The following sequence shows how the Microsoft DirectX graphics kernel subsystem
    <tr class="even">
    <td align="left"><p><strong>Interface</strong></p></td>
    <td align="left"><p>PINTERFACE</p></td>
-   <td align="left"><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_opm_interface" data-raw-source="[&lt;strong&gt;DXGK_OPM_INTERFACE&lt;/strong&gt;](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_opm_interface)"><strong>DXGK_OPM_INTERFACE</strong></a> structure</p></td>
+   <td align="left"><p>A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_opm_interface" data-raw-source="[&lt;strong&gt;DXGK_OPM_INTERFACE&lt;/strong&gt;](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_opm_interface)"><strong>DXGK_OPM_INTERFACE</strong></a> structure</p></td>
    </tr>
    <tr class="odd">
    <td align="left"><p><strong>InterfaceSpecificData</strong></p></td>
@@ -136,6 +135,4 @@ The following sequence shows how the Microsoft DirectX graphics kernel subsystem
    A pointer to the display miniport driver's [**DxgkDdiOPMDestroyProtectedOutput**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output) function
 
 5. When the display miniport driver is finished using the OPM interface, the driver calls its **InterfaceDereference** routine. The driver should call **InterfaceDereference** before its [**DxgkDdiRemoveDevice**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_remove_device) function is called.
-
- 
 

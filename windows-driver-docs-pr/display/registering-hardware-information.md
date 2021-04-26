@@ -1,7 +1,6 @@
 ---
 title: Registering Hardware Information
 description: Registering Hardware Information
-ms.assetid: 1fec9fcf-3ec7-4926-9ceb-ef1f7f42e963
 keywords:
 - registry WDK display
 - hardware information in registry WDK display
@@ -16,7 +15,7 @@ To display useful information to the user and for assistance in debugging, a dis
 
 To set this information, the driver:
 
-1.  Calls the **IoOpenDeviceRegistryKey** for storing driver-specific information. In this call, the driver specifies the PLUGPLAY\_REGKEY\_DRIVER flag in the *DevInstKeyType* parameter and the KEY\_SET\_VALUE, KEY\_WRITE, or KEY\_ALL\_ACCESS value in the *DesiredAccess* parameter.
+1.  Calls the [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) function to open and obtain a handle to a *software key* for storing driver-specific information. In this call, the driver specifies the PLUGPLAY\_REGKEY\_DRIVER flag in the *DevInstKeyType* parameter and the KEY\_SET\_VALUE, KEY\_WRITE, or KEY\_ALL\_ACCESS value in the *DesiredAccess* parameter.
 
 2.  Calls the [**ZwSetValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey) function several times to set each type of hardware information. In each call, the driver specifies, in the *KeyHandle* parameter, the software-key handle that was obtained from **IoOpenDeviceRegistryKey**.
 
@@ -65,6 +64,4 @@ To set this information, the driver:
     </table>
 
      
-
- 
 

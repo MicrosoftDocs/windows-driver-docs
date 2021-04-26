@@ -1,7 +1,6 @@
 ---
 title: PackageInfo
 description: PackageInfo
-ms.assetid: b74bfc2a-6779-4f53-9e46-71ca8ae26fda
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

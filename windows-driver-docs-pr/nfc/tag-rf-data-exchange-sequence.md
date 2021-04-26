@@ -1,7 +1,6 @@
 ---
 title: Tag RF data exchange sequence
 description: The following figures illustrate state sequences for StateRfDiscovered and StateRfDataXchg for various reader-writer protocols such as T1T, T2T, T3T, and ISO-DEP.
-ms.assetid: F5911609-4531-44B3-9629-CD0A27D40324
 keywords:
 - NFC
 - near field communications

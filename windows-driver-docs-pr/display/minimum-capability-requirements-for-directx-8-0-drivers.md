@@ -1,7 +1,6 @@
 ---
 title: Minimum Capability Requirements for DirectX 8.0 Drivers
 description: Minimum Capability Requirements for DirectX 8.0 Drivers
-ms.assetid: 8c939013-516c-4048-8de5-e95529891ac9
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8
@@ -27,7 +26,7 @@ A DirectX 8.0 driver must explicitly:
 
 -   Handle the new [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) (DP2) drawing tokens.
 
--   Handle [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) for vertex and index buffers even if your driver does not support video memory vertex buffer creation. Handles for system memory vertex and index buffers are passed to the driver.
+-   Handle [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) for vertex and index buffers even if your driver does not support video memory vertex buffer creation. Handles for system memory vertex and index buffers are passed to the driver.
 
 -   Set the new posttransformed clipping flag D3DPMISCCAPS\_CLIPTLVERT if the hardware supports clipping of posttransformed vertex data.
 

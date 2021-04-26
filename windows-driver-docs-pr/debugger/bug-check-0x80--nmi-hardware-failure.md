@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x80 NMI_HARDWARE_FAILURE
 description: The NMI_HARDWARE_FAILURE bug check has a value of 0x00000080. This bug check indicates that a hardware malfunction has occurred.
-ms.assetid: 1b376540-d101-44af-8295-d8078a920c67
 keywords: ["Bug Check 0x80 NMI_HARDWARE_FAILURE", "NMI_HARDWARE_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

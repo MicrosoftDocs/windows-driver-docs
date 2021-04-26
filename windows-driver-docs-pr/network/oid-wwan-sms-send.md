@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SMS_SEND
 description: OID_WWAN_SMS_SEND sends SMS text messages to another MB device.
-ms.assetid: 557d2bdc-8414-4fcb-903c-23bb68955d07
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_SEND Network Drivers Starting with Windows Vista

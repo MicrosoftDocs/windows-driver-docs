@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGYNODE\_ENABLE
 description: The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to turn on or off the topology nodes in an already built topology.
-ms.assetid: 6b9f7a92-97dc-476b-962a-40ccf1987154
 keywords: ["KSPROPERTY_TOPOLOGYNODE_ENABLE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to turn on or off the topo
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -94,6 +93,4 @@ Requirements
 [**KSNODETYPE\_AGC**](ksnodetype-agc.md)
 
 [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)
-
- 
 

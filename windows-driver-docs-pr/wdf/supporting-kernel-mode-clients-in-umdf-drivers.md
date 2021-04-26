@@ -1,7 +1,6 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF Drivers
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver supports kernel-mode clients, starting in UMDF version 2.
-ms.assetid: 5C0180BF-F0C7-4225-8388-C3315C282516
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,13 +32,11 @@ A UMDF driver can process I/O requests from a kernel-mode driver only if the ker
 
 -   The I/O request's buffers must not contain pointers to additional information, because the user-mode driver cannot dereference the pointers.
 
--   If the I/O request contains an [I/O control code](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) that specifies the "neither" buffer access method, the kernel-mode driver must send the I/O request in the process context of the application that created the I/O request. For more information about how to support the "neither" method in a UMDF driver, see [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md).
+-   If the I/O request contains an [I/O control code](../kernel/introduction-to-i-o-control-codes.md) that specifies the "neither" buffer access method, the kernel-mode driver must send the I/O request in the process context of the application that created the I/O request. For more information about how to support the "neither" method in a UMDF driver, see [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md).
 
 -   The UMDF driver might modify an I/O request's output data, in user mode. Therefore, the kernel-mode driver must validate any output data that it receives from the user-mode driver.
 
 -   The kernel-mode client should typically validate the *Information* value that a UMDF driver passes to [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation). If the client is a KMDF driver, it can call [**WdfRequestGetCompletionParams**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetcompletionparams) to obtain this information in an IO\_STATUS\_BLOCK structure.
 
     Typically, the framework does not validate the information value that a UMDF driver passes to [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation). (This parameter usually specifies the number of transferred bytes.) The framework validates the information value only for output buffers, and only for the [buffered I/O](./accessing-data-buffers-in-wdf-drivers.md#direct) data access method. (For example, the framework verifies that the number of transferred bytes does not exceed the output buffer size of a read operation, if the access method is buffered I/O.)
-
- 
 

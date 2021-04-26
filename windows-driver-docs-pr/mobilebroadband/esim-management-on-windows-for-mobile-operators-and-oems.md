@@ -1,7 +1,6 @@
 ---
 title: eSIM management on Windows for mobile operators and OEMs
 description: eSIM management on Windows for mobile operators and OEMs
-ms.assetid: 7D37D297-76FD-46DA-ACC3-73E4BF970524
 ms.date: 05/23/2019
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,9 @@ If you are a mobile operator or OEM and would like to support eSIM management on
 
 Windows provides the capability for Mobile Device Management providers to manage eSIM profiles in enterprise use cases. However, Windows does not limit how ecosystem partners might want to offer this to their own partners and/or customers. As such, the eSIM profile management capability can be supported by integrating with the Windows OMA-DM. This makes it possible to remotely manage the eSIM profiles according to company policies.
 
-If you would like to integrate and work with only one MDM provider, contact that provider directly. If you would like to offer eSIM management to customers using different MDM providers, contact an [orchestrator provider](https://www.idemia.com/esim-management-facilitation). Orchestrator providers act as a proxy that handles MDM onboarding as well as mobile operator onboarding. Their [role](https://www.idemia.com/smart-connect-hub) is to make the process as painless and scalable as possible for all parties.
+If you would like to integrate and work with only one MDM provider, contact that provider directly. If you would like to offer eSIM management to customers using different MDM providers, contact an orchestrator provider. Orchestrator providers act as a proxy that handles MDM onboarding as well as mobile operator onboarding. Their role is to make the process as painless and scalable as possible for all parties. Potential orchestrator providers you could contact include:
+* [HPE’s Device Entitlement Gateway](https://www.hpe.com/emea_europe/en/solutions/digital-communications-services.html)
+* [IDEMIA’s The Smart Connect - Hub](https://www.idemia.com/smart-connect-hub)
 
 ## eSIM management for other audiences
 

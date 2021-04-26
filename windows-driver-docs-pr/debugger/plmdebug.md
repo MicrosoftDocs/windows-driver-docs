@@ -1,7 +1,6 @@
 ---
 title: PLMDebug
 description: PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). 
-ms.assetid: 68BE8F5D-6425-43E2-B5BC-C1D35614AB32
 keywords: ["PLMDebug Windows Debugging"]
 ms.date: 06/03/2020
 topic_type:

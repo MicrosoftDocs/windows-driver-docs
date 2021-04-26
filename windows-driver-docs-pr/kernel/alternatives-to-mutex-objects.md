@@ -1,7 +1,6 @@
 ---
 title: Alternatives to Mutex Objects
 description: Alternatives to Mutex Objects
-ms.assetid: c3b78155-426a-449d-8678-5666a7a12cbd
 keywords: ["kernel dispatcher objects WDK , mutex objects", "dispatcher objects WDK kernel , mutex objects", "mutex objects WDK kernel", "fast mutexes WDK kernel", "guarded mutexes WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE property informs client filters that provide DirectDraw surface allocators (such as the Overlay Mixer) that a capture operation is in progress and that Microsoft DirectDraw surfaces must be allocated at a fixed size regardless of the present size of the overlay. This property is optional.
-ms.assetid: fc759013-9dd7-44fc-a0d7-fd2585975966
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE property informs client filter
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_allocator_control_surface_size_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_allocator_control_surface_size_s)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_allocator_control_surface_size_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_allocator_control_surface_size_s)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S</strong></a></p></td>
 <td><p>Pair of ULONGs</p></td>
 </tr>
 </tbody>
@@ -86,6 +85,4 @@ Requirements
 [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_allocator_control_surface_size_s)
-
- 
 

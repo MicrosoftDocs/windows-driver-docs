@@ -1,7 +1,6 @@
 ---
 title: General I/O Targets
 description: General I/O Targets
-ms.assetid: e5527aa2-a63f-49d8-aa9a-f91efd2ae9ad
 keywords:
 - general I/O targets WDK KMDF
 - I/O targets WDK KMDF , general

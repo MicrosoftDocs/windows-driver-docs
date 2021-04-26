@@ -1,7 +1,6 @@
 ---
 title: Validating Instructions in SvgaHwIoPortXxx
 description: Validating Instructions in SvgaHwIoPortXxx
-ms.assetid: 70fe2acb-10ff-4182-96a5-78bff0d8f8a0
 keywords:
 - video miniport drivers WDK Windows 2000 , VGA, SvgaHwIoPortXxx functions
 - VGA WDK video miniport , SvgaHwIoPortXxx functions

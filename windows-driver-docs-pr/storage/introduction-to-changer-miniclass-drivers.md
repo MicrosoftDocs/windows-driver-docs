@@ -1,7 +1,6 @@
 ---
 title: About Changer Miniclass Drivers
 description: About Changer Miniclass Drivers
-ms.assetid: ce0f78a3-69ae-4ca7-b2e1-f4892e35a230
 keywords:
 - changer drivers WDK storage , miniclass drivers
 - storage changer drivers WDK , miniclass drivers

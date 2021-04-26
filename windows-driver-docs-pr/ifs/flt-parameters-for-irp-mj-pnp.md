@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_PNP union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_PNP.
-ms.assetid: d3ce893b-f113-4c50-8f52-30c7ced25ae0
 keywords: ["FLT_PARAMETERS for IRP_MJ_PNP union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Starting a Device
 description: Starting a Device
-ms.assetid: c52588cf-04c8-420d-a68e-a8754a65d546
 keywords: ["PnP WDK kernel , starting devices", "Plug and Play WDK kernel , starting devices", "starting PnP devices", "DispatchPnP routine", "IoCompletion routine", "failed starts WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

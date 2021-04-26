@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode HAL Library
 description: Windows Kernel-Mode HAL Library
-ms.assetid: 5cfdbf1b-b856-4a0c-9f56-3879482819aa
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: cmreslist
 description: The cmreslist extension displays the CM_RESOURCE_LIST structure for the specified device object.
-ms.assetid: 56b48f62-c638-4082-95d7-5a0c62c94212
 keywords: ["CM_RESOURCE_LIST", "cmreslist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

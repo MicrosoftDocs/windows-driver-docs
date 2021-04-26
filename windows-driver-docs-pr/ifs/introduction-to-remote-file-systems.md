@@ -1,7 +1,6 @@
 ---
 title: Introduction to Remote File Systems
 description: Introduction to Remote File Systems
-ms.assetid: 24fe7b8e-b956-4c27-be12-8317e4f35ba6
 keywords:
 - network redirectors WDK , remote file systems
 - redirector drivers WDK , remote file systems

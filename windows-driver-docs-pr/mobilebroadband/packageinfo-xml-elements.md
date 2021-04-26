@@ -1,7 +1,6 @@
 ---
 title: PackageInfo XML elements list
 description: PackageInfo XML elements list
-ms.assetid: eb08c164-d901-4806-a9f1-f538f3ff00e3
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

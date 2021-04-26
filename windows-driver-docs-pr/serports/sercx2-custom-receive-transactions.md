@@ -1,7 +1,6 @@
 ---
 title: SerCx2 Custom-Receive Transactions
 description: Some serial controller hardware might implement a data-transfer mechanism other than PIO or system DMA for reading data from a serial controller.
-ms.assetid: 29849A8C-6656-444C-BE91-405A4BA2D5B0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ As an option, the driver can implement any or all of the following three functio
 - [*EvtSerCx2CustomReceiveTransactionInitialize*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_custom_receive_transaction_initialize)
 - [*EvtSerCx2CustomReceiveTransactionCleanup*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_custom_receive_transaction_cleanup)
 
-The **SerCx2CustomReceiveTransactionCreate** method creates a custom-receive object and supplies the calling driver with a [**SERCX2CUSTOMRECEIVETRANSACTION**](https://docs.microsoft.com/windows-hardware/drivers/serports/sercx2-object-handlessercx2customreceivetransaction-object-handle) handle to this object. The driver's *EvtSerCx2CustomReceiveTransaction*Xxx** functions all take this handle as their first parameter. The following SerCx2 methods take this handle as their first parameter:
+The **SerCx2CustomReceiveTransactionCreate** method creates a custom-receive object and supplies the calling driver with a [**SERCX2CUSTOMRECEIVETRANSACTION**](./sercx2-object-handles.md#sercx2customreceivetransaction-object-handle) handle to this object. The driver's *EvtSerCx2CustomReceiveTransaction*Xxx** functions all take this handle as their first parameter. The following SerCx2 methods take this handle as their first parameter:
 
 - [**SerCx2CustomReceiveTransactionNewDataNotification**](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactionnewdatanotification)
 - [**SerCx2CustomReceiveTransactionReportProgress**](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactionreportprogress)

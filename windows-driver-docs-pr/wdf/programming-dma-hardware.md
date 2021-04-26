@@ -1,7 +1,6 @@
 ---
 title: Programming DMA Hardware
 description: This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its EvtProgramDma event callback function.
-ms.assetid: 5e74fe74-d38f-4cca-b0cf-8a6f170c4dc5
 keywords:
 - DMA operations WDK KMDF , transfers
 - bus-master DMA WDK KMDF , transfers
@@ -48,7 +47,7 @@ To stop a transaction when the driver detects an error, the [*EvtProgramDma*](/w
 
 4.  Return **FALSE**.
 
-Steps 1 and 4 are illustrated in the following code example, taken from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) callback function for read requests in the *Read.c* file.
+Steps 1 and 4 are illustrated in the following code example, taken from the [PLX9x5x](/samples/browse/) sample’s [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) callback function for read requests in the *Read.c* file.
 
 ```cpp
     // If errors occur in the EvtProgramDma callback,

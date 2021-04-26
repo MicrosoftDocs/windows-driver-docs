@@ -1,7 +1,6 @@
 ---
 title: Color Management of JPEG and PNG Images
 description: Color Management of JPEG and PNG Images
-ms.assetid: ece0578d-bf03-4eee-9568-40ef684ba8a7
 keywords:
 - JPEG color management WDK print
 - PNG color management WDK print

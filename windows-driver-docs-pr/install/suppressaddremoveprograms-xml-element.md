@@ -1,7 +1,6 @@
 ---
 title: suppressAddRemovePrograms XML Element
 description: suppressAddRemovePrograms XML Element
-ms.assetid: ab3bac90-dffa-400b-916a-a7deecbc42d7
 keywords: ["suppressAddRemovePrograms XML Element Device and Driver Installation"]
 topic_type:
 - apiref

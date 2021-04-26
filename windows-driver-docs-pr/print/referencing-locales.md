@@ -1,7 +1,6 @@
 ---
 title: Referencing Locales
 description: Referencing Locales
-ms.assetid: 63ea5534-b2e1-43aa-b45b-e4fe8bb69f49
 keywords:
 - Unidrv, referencing locales
 - GPD files WDK Unidrv , referencing locales

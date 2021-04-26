@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Plug and Play Manager
 description: Windows Kernel-Mode Plug and Play Manager
-ms.assetid: 43d06dbe-da66-4103-8be3-f27ff075a1b4
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -15,7 +14,7 @@ For more information about PnP for drivers, see [Plug and Play](introduction-to-
 
 The PnP manager is actually a subsystem of the I/O manager. For more information about the I/O manager, see [Windows Kernel-Mode I/O Manager](windows-kernel-mode-i-o-manager.md).
 
-For lists of PnP routines, see [Plug and Play Routines](/windows-hardware/drivers/ddi/index).
+For lists of PnP routines, see [Plug and Play Routines](/windows-hardware/drivers/ddi/_kernel/#plug-and-play-routines).
 
 Note that there are no routines that provide a direct interface to the PnP manager; that is, there are no "**Pp**" routines.
 

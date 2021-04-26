@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of Video Miniport Driver function
 description: DriverEntry is the initial entry point into the video miniport driver.
-ms.assetid: b927dd2c-19e1-49bc-b30b-530efe2ba13b
 keywords: ["DriverEntry function Display Devices"]
 topic_type:
 - apiref
@@ -100,23 +99,23 @@ For Microsoft Windows 2000 and later drivers that also support computers running
 <tbody>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_NT4_VIDEO_PORT_CONFIG_INFO</p></td>
-<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SIZE_OF_NT4_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure. If <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize" data-raw-source="[&lt;strong&gt;VideoPortInitialize&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize)"><strong>VideoPortInitialize</strong></a> fails, the video miniport driver should set the <strong>HwInitDataSize</strong> member of the VIDEO_HW_INITIALIZATION_DATA structure to the size of either the Windows 2000 (and later) version of this structure or the Windows NT 4.0 version. Choose the appropriate structure size to match the operating system version on which the miniport driver will run. The video miniport driver should then call <strong>VideoPortInitialize</strong> again. For an example of use, please see the video miniport driver samples that were included in the Windows Driver Development Kit (DDK).</p></td>
+<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure. If <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize" data-raw-source="[&lt;strong&gt;VideoPortInitialize&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize)"><strong>VideoPortInitialize</strong></a> fails, the video miniport driver should set the <strong>HwInitDataSize</strong> member of the VIDEO_HW_INITIALIZATION_DATA structure to the size of either the Windows 2000 (and later) version of this structure or the Windows NT 4.0 version. Choose the appropriate structure size to match the operating system version on which the miniport driver will run. The video miniport driver should then call <strong>VideoPortInitialize</strong> again. For an example of use, please see the video miniport driver samples that were included in the Windows Driver Development Kit (DDK).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_W2K_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows 2000 and later <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows 2000 and later <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SIZE_OF_WXP_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows Vista and later <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows Vista and later <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_WXP_VIDEO_PORT_CONFIG_INFO</p></td>
-<td align="left"><p>The size, in bytes, of the Windows Vista <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows Vista <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -167,6 +166,4 @@ Requirements
 [**VideoPortVerifyAccessRanges**](/windows-hardware/drivers/ddi/video/nf-video-videoportverifyaccessranges)
 
 [**VideoPortZeroMemory**](/windows-hardware/drivers/ddi/video/nf-video-videoportzeromemory)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: When the FilterUnloadCallback Routine Is Called
 description: When the FilterUnloadCallback Routine Is Called
-ms.assetid: 22a3a73e-28be-4483-a7a6-73525e74503d
 keywords:
 - FilterUnloadCallback
 - non-mandatory unload WDK file system minifilter
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The filter manager calls a minifilter driver's [**FilterUnloadCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_filter_unload_callback) routine before unloading the minifilter driver in one of the following ways:
 
--   *Non-mandatory unload*. This type of unload occurs when a user-mode application has called [**FilterUnload**](/windows/desktop/api/fltuser/nf-fltuser-filterunload) or a kernel-mode driver has called [**FltUnloadFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunloadfilter). It also occurs when you type **fltmc unload** at the command prompt.
+-   *Non-mandatory unload*. This type of unload occurs when a user-mode application has called [**FilterUnload**](/windows/win32/api/fltuser/nf-fltuser-filterunload) or a kernel-mode driver has called [**FltUnloadFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunloadfilter). It also occurs when you type **fltmc unload** at the command prompt.
 
 -   *Mandatory unload*. This type of unload occurs when you issue a service stop request by typing **sc stop** or **net stop** at the command prompt. (For more information about the **sc stop** and **net stop** commands, click **Help and Support** on the Start menu.) It also occurs when a user-mode application calls the Microsoft Win32 **ControlService** function, passing the SERVICE\_CONTROL\_STOP control code as the *dwControl* parameter. (For more information about Win32 service functions, see the Microsoft Windows SDK documentation.)
 

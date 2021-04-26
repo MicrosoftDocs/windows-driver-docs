@@ -1,7 +1,6 @@
 ---
 title: EVENTSETID\_CROSSBAR
 description: EVENTSETID\_CROSSBAR
-ms.assetid: 19e8e431-00fd-462b-bb01-e41e0a7b7f6d
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Handling an Interface Object Set Request
 description: Handling an Interface Object Set Request
-ms.assetid: aed27b0b-fff5-4e9f-b368-526a8bf79c59
 keywords:
 - NDIS network interfaces WDK , set requests
 - network interfaces WDK , set requests

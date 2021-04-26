@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME property retrieves a Unicode string containing the Plug and Play device interface name for the specified virtual audio device.
-ms.assetid: 0541ebb3-ad9a-42c6-9cd6-ea7b056821df
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_INTERFACE_NAME Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME property retrieves a Unicode s
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a>+ULONG</p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a>+ULONG</p></td>
 <td align="left"><p>LPWSTR</p></td>
 </tr>
 </tbody>
@@ -89,6 +88,4 @@ Requirements
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE**](ksproperty-sysaudio-device-instance.md)
 
 [**KSPROPERTY\_SYSAUDIO\_INSTANCE\_INFO**](ksproperty-sysaudio-instance-info.md)
-
- 
 

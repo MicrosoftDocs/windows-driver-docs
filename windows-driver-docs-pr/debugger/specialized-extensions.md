@@ -1,7 +1,6 @@
 ---
 title: Specialized Extensions
 description: Specialized Extensions
-ms.assetid: 4329fade-2458-4a60-a06c-4069fc339f3e
 keywords: ["extension commands ( commands), specialized extensions", "extension commands ( commands), specialized extensions, Also see individual extension types"]
 ms.date: 06/05/2020
 ms.localizationpriority: medium
@@ -24,8 +23,6 @@ This section of the reference discusses extension commands in the extension DLLs
 -   [NDIS Extensions (Ndiskd.dll)](ndis-extensions--ndiskd-dll-.md)
 -   [RPC Extensions (Rpcexts.dll)](rpc-extensions--rpcexts-dll-.md)
 -   [ACPI Extensions (Acpikd.dll and Kdexts.dll)](acpi-extensions--acpikd-dll-and-kdexts-dll-.md)
--   [Graphics Driver Extensions (Gdikdx.dll)](graphics-driver-extensions--gdikdx-dll-.md)
--   [Kernel Streaming Extensions (Ks.dll)](kernel-streaming-extensions--ks-dll-.md)
 -   [SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)](scsi-miniport-extensions--scsikd-dll-and-minipkd-dll-.md)
 -   [Windows Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md)
 -   [User-Mode Driver Framework Extensions (Wudfext.dll)](user-mode-driver-framework-extensions--wudfext-dll-.md)

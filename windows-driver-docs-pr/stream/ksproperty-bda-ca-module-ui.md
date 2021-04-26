@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_MODULE\_UI
 description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_UI to retrieve interface data that a CA plugin can display to users.
-ms.assetid: 192161fe-8059-454b-8085-5565c940fbbb
 keywords: ["KSPROPERTY_BDA_CA_MODULE_UI Streaming Media Devices"]
 topic_type:
 - apiref

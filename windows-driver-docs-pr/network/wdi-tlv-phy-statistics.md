@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_STATISTICS
 description: WDI_TLV_PHY_STATISTICS is a TLV that contains per-PHY statistics for OID_WDI_GET_STATISTICS.
-ms.assetid: 2F27FF4E-54AC-4518-AEB0-3518FBC8BE0F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_STATISTICS Network Drivers Starting with Windows Vista
@@ -39,7 +38,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type" data-raw-source="[&lt;strong&gt;WDI_PHY_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type)"><strong>WDI_PHY_TYPE</strong></a></td>
+<td><a href="/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type" data-raw-source="[&lt;strong&gt;WDI_PHY_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_phy_type)"><strong>WDI_PHY_TYPE</strong></a></td>
 <td>The type for this PHY.</td>
 </tr>
 <tr class="even">
@@ -145,6 +144,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

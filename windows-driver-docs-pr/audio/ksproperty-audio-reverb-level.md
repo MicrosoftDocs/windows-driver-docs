@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_REVERB\_LEVEL
 description: The KSPROPERTY\_AUDIO\_REVERB\_LEVEL property specifies the current reverberation level. This is a property of a reverb node (KSNODETYPE\_REVERB).
-ms.assetid: f38396a2-5528-4085-a051-fcfb73e9c1d1
 keywords: ["KSPROPERTY_AUDIO_REVERB_LEVEL Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_REVERB\_LEVEL property specifies the current reverberatio
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -87,6 +86,4 @@ Requirements
 [**KSNODETYPE\_REVERB**](ksnodetype-reverb.md)
 
 [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
 

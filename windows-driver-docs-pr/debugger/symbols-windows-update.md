@@ -37,7 +37,7 @@ If you don’t have access to an online machine with the same version, you’ll 
 
 1. Copy all the WindowsUpdate ETL files from `C:\Windows\logs\WindowsUpdate\` to your online machine.
 
-2. On the online machine, open a PowerShell prompt and run the following [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) PowerShell command. 
+2. On the online machine, open a PowerShell prompt and run the following [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog) PowerShell command. 
 
    ```powershell
    Get-WindowsUpdateLog -ETLPath <path to ETLs>

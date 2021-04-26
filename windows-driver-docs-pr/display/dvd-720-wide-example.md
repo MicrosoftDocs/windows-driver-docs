@@ -1,7 +1,6 @@
 ---
 title: DVD 720-Wide Example
 description: DVD 720-Wide Example
-ms.assetid: 02761bf5-afae-4f38-9178-6a721fcad84e
 keywords:
 - alpha-blend combination WDK DirectX VA , DVD 720-wide example
 - blended pictures WDK DirectX VA , DVD 720-wide example

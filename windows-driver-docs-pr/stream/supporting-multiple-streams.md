@@ -1,7 +1,6 @@
 ---
 title: Supporting Multiple Streams
 description: Supporting Multiple Streams
-ms.assetid: 89f79078-129a-44cc-8b7e-5f5c1c33a473
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , multiple streams
 - streaming minidrivers WDK Windows 2000 Kernel , multiple streams

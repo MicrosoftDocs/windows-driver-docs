@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_PNP_DEVICE_STATE
 description: Function, filter, and bus drivers can handle this request.
 ms.date: 08/12/2017
-ms.assetid: 24362a20-9e9d-4566-bc95-ce52b91056af
 keywords:
  - IRP_MN_QUERY_PNP_DEVICE_STATE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -58,7 +57,7 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 A driver handles this IRP if it has information about the PnP state of a device. A driver can set or clear the flags in the PNP\_DEVICE\_STATE bitmask. If another driver has set a PNP\_DEVICE\_STATE in **Irp-&gt;IoStatus.Information**, a driver must take care to modify the flags in that bitmask rather than overwrite the whole structure.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

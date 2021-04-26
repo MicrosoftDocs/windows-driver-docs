@@ -1,7 +1,6 @@
 ---
 title: SRB_CHANGE_POWER_STATE
 description: SRB_CHANGE_POWER_STATE
-ms.assetid: 61a3e390-1ba2-44e0-b364-e86b10937cd6
 keywords: ["SRB_CHANGE_POWER_STATE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Print Ticket and Print Capabilities Technologies
 description: Print Ticket and Print Capabilities Technologies
-ms.assetid: 12b1881f-1a45-4e7e-a876-b2ca4c9458f9
 keywords:
 - printer drivers WDK , Print Tickets
 - printer drivers WDK , Print Capabilities

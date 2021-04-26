@@ -1,7 +1,6 @@
 ---
 title: Alpha-Blend Combination Set
 description: Alpha-Blend Combination Set
-ms.assetid: e7a11459-4f81-4b6d-a30f-04f4260d0df9
 keywords:
 - alpha-blend combination set WDK DirectX VA
 ms.date: 04/20/2017

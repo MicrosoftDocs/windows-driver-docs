@@ -1,7 +1,6 @@
 ---
 title: Examples of Audio Data Formats and Data Ranges
 description: Examples of Audio Data Formats and Data Ranges
-ms.assetid: f3f5d658-63a5-4420-97fa-e448e3aaea50
 keywords:
 - data formats WDK audio
 - formats WDK audio , data

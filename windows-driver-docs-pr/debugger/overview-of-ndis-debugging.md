@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS Debugging
 description: Overview of NDIS Debugging
-ms.assetid: d15e8a0c-e553-4e0d-84ed-5fdc2026a2d3
 keywords: ["NDIS debugging, overview"]
 ms.date: 05/14/2020
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: messageBoxUI element
 description: The optional messageBoxUI element is used to display a message box on the client computer.
-ms.assetid: 83fe67fe-72b0-42e2-864e-242b7b9989d9
 keywords: ["messageBoxUI element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The optional **messageBoxUI** element is used to display a message box on the client computer.
 
-The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **messageBoxUI** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

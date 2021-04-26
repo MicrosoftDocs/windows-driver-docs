@@ -1,7 +1,6 @@
 ---
 title: PSCRIPT1 Data Type
 description: PSCRIPT1 Data Type
-ms.assetid: 0f39419e-fbb5-423f-8bcb-79a5207a29fd
 keywords:
 - print processors WDK , data types
 - data types WDK print processor

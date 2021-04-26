@@ -1,7 +1,6 @@
 ---
 title: Registering a Class Co-installer
 description: Registering a Class Co-installer
-ms.assetid: a86a4302-ec37-4117-aa5c-4fa84fbb7902
 keywords:
 - class co-installers WDK
 - registering class co-installers

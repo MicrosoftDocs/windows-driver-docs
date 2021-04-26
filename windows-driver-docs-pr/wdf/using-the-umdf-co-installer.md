@@ -1,7 +1,6 @@
 ---
 title: Using the UMDF Co-installer
 description: Using the UMDF Co-installer
-ms.assetid: e5ec2122-1602-487b-baad-4a3d9e47cf58
 keywords:
 - UMDF coinstallers WDK
 - coinstallers WDK UMDF
@@ -16,6 +15,29 @@ ms.localizationpriority: medium
 ---
 
 # Using the UMDF Co-installer
+
+> [!NOTE]
+> If your driver only targets Windows 10, you do not need to redistribute WDF or provide a Coinstaller in your driver package. To target Windows 10:
+>1. In Visual Studio, in the **Project Settings** property page, under **Driver Settings** -> **Target OS Version**, select **Windows 10 or higher**.  This is equivalent to adding the following to the .vcxproj file: 
+>```xml
+><PropertyGroup Label="Configuration">
+><TargetVersion>Windows10</TargetVersion>
+>```
+>2. In the [INF Manufacturer Section](../install/inf-manufacturer-section.md), specify 10.0 as target OS version, as follows:
+>```inf
+>[Manufacturer]
+>%MyMfg% = MyMfg, NTamd64.10.0
+>```
+>
+>You may still need to reference the system-supplied coinstaller as below:
+>
+>```inf
+>[Echo_Install.NT.CoInstallers] 
+>AddReg=CoInstallers_AddReg
+>
+>[CoInstaller.AddReg]
+>HKR,,CoInstallers32,0x00010000,WudfCoinstaller.dll
+>```
 
 
 A co-installer updates the framework version stored on the machine and processes framework-specific INF file sections. This topic describes the two UMDF co-installers and when you need to include one with your [driver installation package](/windows-hardware/drivers) or reference a co-installer in your INF file.
@@ -85,6 +107,4 @@ HKR,,CoInstallers32,0x00010000,WudfCoinstaller.dll
 Your driver's INF file must always contain a **DDInstall.Wdf** section that the co-installer reads after it has been installed. For information about directives that your driver can specify in **DDInstall.Wdf**, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 
 You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](../devtest/stampinf.md) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
-
- 
 

@@ -77,15 +77,15 @@ The executable can then retrieve the device instance ID of the software componen
 
 Next, if the software component is targeting the Universal [target platform](../develop/target-platforms.md), use the following procedure:
 
-1. Call [**CM_Locate_DevNode**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_locate_devnodea) with the device instance ID of the software component to retrieve a device handle.
-2. Call [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to retrieve a handle to that device’s parent.  This parent is the device that added the software component using the [INF AddComponent Directive](inf-addcomponent-directive.md).
-3. Then, to retrieve the device instance ID of the parent, call [**CM_Get_Device_ID**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) on the handle from [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent).
+1. Call [**CM_Locate_DevNode**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_locate_devnodea) with the device instance ID of the software component to retrieve a device handle.
+2. Call [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to retrieve a handle to that device’s parent.  This parent is the device that added the software component using the [INF AddComponent Directive](inf-addcomponent-directive.md).
+3. Then, to retrieve the device instance ID of the parent, call [**CM_Get_Device_ID**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) on the handle from [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent).
 
 If the software component is targeting the Desktop [target platform](../develop/target-platforms.md) only, use the following procedure:
 
-1. Call [**SetupDiCreateDeviceInfoList**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfolist) to create an empty device information set.
-2. Call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) with the software component device's device instance ID.
-3. Call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) with `DEVPKEY_Device_Parent` to retrieve the device instance ID of the parent.
+1. Call [**SetupDiCreateDeviceInfoList**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinfolist) to create an empty device information set.
+2. Call [**SetupDiOpenDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) with the software component device's device instance ID.
+3. Call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) with `DEVPKEY_Device_Parent` to retrieve the device instance ID of the parent.
 
 ## Example
 

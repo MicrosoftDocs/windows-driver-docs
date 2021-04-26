@@ -1,4 +1,4 @@
-- name: "Simple Peripheral Bus (SPB) Driver Design Guide"
+- name: "Simple Peripheral Bus (SPB) Driver"
 # Auto-expanded node
   items: 
   - name: "Simple Peripheral Bus (SPB) Driver Design Guide"
@@ -6,7 +6,7 @@
   - name: "SPB controller drivers"
 # Auto-expanded node
     items: 
-    - name: "SPB controller drivers"
+    - name: "Overview of SPB controller drivers"
       href: spb-controller-drivers.md
     - name: "SPB Framework Extension (SpbCx)"
       href: spb-framework-extension.md
@@ -29,7 +29,7 @@
   - name: "SPB peripheral device drivers"
 # Auto-expanded node
     items: 
-    - name: "SPB peripheral device drivers"
+    - name: "Overview of SPB peripheral device drivers"
       href: spb-peripheral-device-drivers.md
     - name: "Using the SPB I/O Request Interface"
       href: using-the-spb-i-o-request-interface.md
@@ -52,8 +52,6 @@
   - name: "Test with Multi Interface Test Tool (MITT)"
 # Auto-expanded node
     items: 
-    - name: "Test with Multi Interface Test Tool (MITT)"
-      href: testing-with-multi-interface-test-tool--mitt-.md
     - name: "Buy hardware for using MITT"
       href: multi-interface-test-tool--mitt--.md
     - name: "Get started with MITT"

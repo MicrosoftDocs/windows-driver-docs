@@ -1,7 +1,6 @@
 ---
 title: Allocating the Header Buffer
 description: Allocating the Header Buffer
-ms.assetid: 7a6e87ce-a0b8-45ce-961e-f09d5ca919cb
 keywords:
 - header-data split WDK , buffer allocation
 - maximum header size WDK header-data split

@@ -1,7 +1,6 @@
 ---
 title: Breaking Into the Debugger
 description: Breaking Into the Debugger
-ms.assetid: 4fec7170-7480-4a8a-b060-1c8a8c3fb9dc
 keywords: ["breaking into the debugger", "DebugBreak function", "DbgBreakPoint function", "KdBreakPoint function", "DbgBreakPointWithStatus function", "KdBreakPointWithStatus function", "ASSERT macro", "ASSERTMSG macro"]
 ms.date: 07/20/2020
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ User-mode and kernel-mode code use different routines to break into the debugger
 
 A break routine causes an exception to occur in the current process, so that the calling thread can signal the debugger associated with the calling process.
 
-To break into a debugger from a user-mode program, use the [DebugBreak function](/windows/desktop/api/debugapi/nf-debugapi-debugbreak). Its prototype is as follows:
+To break into a debugger from a user-mode program, use the [DebugBreak function](/windows/win32/api/debugapi/nf-debugapi-debugbreak). Its prototype is as follows:
 
 ```cpp
 VOID DebugBreak(VOID);

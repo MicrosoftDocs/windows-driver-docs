@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Source Control
 description: Participating in Error Source Control
-ms.assetid: 4b2e3431-348f-48b1-924e-14b9fb5a48f0
 keywords:
 - Windows Hardware Error Architecture WDK , error source control
 - WHEA WDK , error source control

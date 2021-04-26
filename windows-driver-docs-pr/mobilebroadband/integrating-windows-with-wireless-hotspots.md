@@ -1,7 +1,6 @@
 ---
 title: Introduction to integrating Windows with wireless hotspots
 description: Introduction to integrating Windows with wireless hotspots
-ms.assetid: 948660a2-7ecf-4860-9092-1cfb332cfd04
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

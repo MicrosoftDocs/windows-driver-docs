@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # WinUSB Power Management
 
 
-WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to [**WinUsb\_SetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpowerpolicy).
+WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to [**WinUsb\_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy).
 
 In order to modify the power behavior of WinUSB, default registry settings can be modified in the device's INF. These values must be written to the device specific location in the registry by adding the values in the **HW.AddReg** section of the INF.
 
@@ -31,7 +31,7 @@ HKR,,SystemWakeEnabled,0x00010001,1
 <a href="" id="selective-suspend"></a>**Selective Suspend**  
 Selective suspend can be disabled by any of several system or WinUSB settings. A single setting cannot force WinUSB to enable selective suspend.
 
-The following power policy settings that are specified in [**WinUsb\_SetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpowerpolicy)'s *PolicyType* parameter affect the behavior of selective suspend:
+The following power policy settings that are specified in [**WinUsb\_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)'s *PolicyType* parameter affect the behavior of selective suspend:
 
 -   AUTO\_SUSPEND When set to zero, it does not set the device to selective suspend mode.
 -   SUSPEND\_DELAY Sets the time between when the device becomes idle and when WinUSB requests the device to go into selective suspend.
@@ -104,10 +104,7 @@ All writes and control transfers force the device into the **D0** power state an
 [WinUSB (Winusb.sys) Installation](winusb-installation.md)  
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)  
-[WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
+[WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
 [WinUSB](winusb.md)  
-[**WinUsb\_GetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpowerpolicy)  
-[**WinUsb\_SetPowerPolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpowerpolicy)  
-
-
-
+[**WinUsb\_GetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_getpowerpolicy)  
+[**WinUsb\_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)

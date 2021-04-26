@@ -1,7 +1,6 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.assetid: 822FAF10-DAB3-48D1-B782-0C80B072D3FB
 ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ Custom APOs are implemented as in-process COM objects, so they run in user mode 
 
 Each logical device can be associated with one APO of each type. For more information on modes and effects, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
 
-You can implement an APO by basing your custom class on the CBaseAudioProcessingObject base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves adding new functionality into the CBaseAudioProcessingObject base class to create a customized APO. The CBaseAudioProcessingObject base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
+You can implement an APO by basing your custom class on the CBaseAudioProcessingObject base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves adding new functionality into the CBaseAudioProcessingObject base class to create a customized APO. The CBaseAudioProcessingObject base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
 
 Perform the following steps to implement your custom APOs.
 
@@ -33,16 +32,16 @@ Perform the following steps to implement your custom APOs.
 All custom APOs must have the following general characteristics:
 
 - The APO must have one input and one output connection. These connections are audio buffers and can have multiple channels.
-- An APO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) routine. The APO cannot change the settings of the underlying logical device, including its KS topology.
+- An APO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) routine. The APO cannot change the settings of the underlying logical device, including its KS topology.
 - In addition to IUnknown, APOs must expose the following interfaces:
 
-  - [IAudioProcessingObject](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
+  - [IAudioProcessingObject](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
 
-  - [IAudioProcessingObjectConfiguration](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
+  - [IAudioProcessingObjectConfiguration](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
 
-  - [IAudioProcessingObjectRT](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
+  - [IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
 
-  - [IAudioSystemEffects](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
+  - [IAudioSystemEffects](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
 
 - All APOs must have real-time system compatibility. This means that:
 
@@ -99,7 +98,6 @@ The other projects in the Sysvad sample are summarized below.
 
 |**Project**|**Description**|
 |----|----|
-| PhoneAudioSample       | Sample code for a mobile audio driver.     |
 | TabletAudioSample      | Sample code for an alternate audio driver. |
 | KeywordDetectorAdapter | Sample code for a keyword detector adapter |
 | EndpointsCommon        | Sample code for common endpoints.          |
@@ -118,9 +116,9 @@ The primary header files for the SwapAPO sample is swapapo.h. The other primary 
 
 ## Implementing the COM Object Audio Processing Code
 
-You can wrap a system-supplied APO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized APO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
+You can wrap a system-supplied APO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized APO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
 
-By using **CBaseAudioProcessingObject**, you can more easily implement an APO. If an APO has no special format requirements and operates on the required float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported), [**IAudioProcessingObjectRT::APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess), and **ValidateAndCacheConnectionInfo**.
+By using **CBaseAudioProcessingObject**, you can more easily implement an APO. If an APO has no special format requirements and operates on the required float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported), [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess), and **ValidateAndCacheConnectionInfo**.
 
 To develop your APOs based on the **CBaseAudioProcessingObject** class, perform the following steps:
 
@@ -142,13 +140,13 @@ To develop your APOs based on the **CBaseAudioProcessingObject** class, perform 
 
 2. Implement the following three methods:
 
-    - [**IAudioProcessingObject::IsInputFormatSupported**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported). This method handles format negotiation with the audio engine.
+    - [**IAudioProcessingObject::IsInputFormatSupported**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported). This method handles format negotiation with the audio engine.
 
-    - [**IAudioProcessingObjectRT::APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). This method uses your custom algorithm to perform signal processing.
+    - [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). This method uses your custom algorithm to perform signal processing.
 
     - **ValidateAndCacheConnectionInfo**. This method allocates memory to store format details, for example, channel count, sampling rate, sample depth, and channel mask.
 
-The following C++ code example shows an implementation of the [**APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
+The following C++ code example shows an implementation of the [**APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
 
 ```cpp
 // Custom implementation of APOProcess method
@@ -173,8 +171,6 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 ```
 
 **Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
-
-For desktop PCs, you can provide a user interface to configure the features that you added to the custom APO. For more information about this, see [Implementing a UI for Configuring APOs](/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects).
 
 ## Replacing System-supplied APOs
 
@@ -206,10 +202,10 @@ The rest of the implementation steps are the same as a custom APO.
 
 Implement the following interfaces and methods for the COM component:
 
-- [IAudioProcessingObject](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). The required methods for this interface are: [**Initialize**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-initialize) and [**IsInputFormatSupported.**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported)
-- [IAudioProcessingObjectConfiguration](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The required methods for this interface are: [**LockForProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) and [**UnlockForProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-unlockforprocess)
-- [IAudioProcessingObjectRT](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). The required method for this interface is [**APOProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) and it is the method that implements the DSP algorithm.
-- [IAudioSystemEffects](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). This interface makes the audio engine recognize a DLL as an APO.
+- [IAudioProcessingObject](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). The required methods for this interface are: [**Initialize**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-initialize) and [**IsInputFormatSupported.**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported)
+- [IAudioProcessingObjectConfiguration](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The required methods for this interface are: [**LockForProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) and [**UnlockForProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-unlockforprocess)
+- [IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). The required method for this interface is [**APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) and it is the method that implements the DSP algorithm.
+- [IAudioSystemEffects](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). This interface makes the audio engine recognize a DLL as an APO.
 
 ## Working with Visual Studio and APOs
 
@@ -568,9 +564,9 @@ The audio system monitors the returned HRESULT values from the following four me
 
 - LockForProcess
 
-The failure count value is incremented for an APO every time one of these methods returns a failure code. The failure count is reset to zero when an APO returns a code that indicates that it was successfully incorporated into the audio graph. A successful call to the [**LockForProcess**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) method is a good indication that the APO was successfully incorporated.
+The failure count value is incremented for an APO every time one of these methods returns a failure code. The failure count is reset to zero when an APO returns a code that indicates that it was successfully incorporated into the audio graph. A successful call to the [**LockForProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) method is a good indication that the APO was successfully incorporated.
 
-For [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) in particular, there are a number of reasons why the returned HRESULT code could indicate a failure. The three primary reasons are as follows:
+For [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) in particular, there are a number of reasons why the returned HRESULT code could indicate a failure. The three primary reasons are as follows:
 
 - The graph is running protected content, and the APO is not properly signed.
 

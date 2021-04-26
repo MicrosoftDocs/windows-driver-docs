@@ -1,7 +1,6 @@
 ---
 title: Display Hardware Acceleration Slider
 description: Display Hardware Acceleration Slider
-ms.assetid: af3daa64-196a-4163-872d-713bc4cf0335
 keywords:
 - display drivers WDK Windows 2000 , debugging
 - debugging drivers WDK Windows 2000 display
@@ -32,23 +31,23 @@ Hardware cursor and device-bitmap support are disabled.
 <span id="Level_2"></span><span id="level_2"></span><span id="LEVEL_2"></span>**Level 2**  
 The following display driver functions are not called. Instead, GDI performs the operations in software.
 
--   [**DrvStretchBlt**](/windows/desktop/api/winddi/nf-winddi-drvstretchblt)
+-   [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt)
 
--   [**DrvPlgBlt**](/windows/desktop/api/winddi/nf-winddi-drvplgblt)
+-   [**DrvPlgBlt**](/windows/win32/api/winddi/nf-winddi-drvplgblt)
 
--   [**DrvFillPath**](/windows/desktop/api/winddi/nf-winddi-drvfillpath)
+-   [**DrvFillPath**](/windows/win32/api/winddi/nf-winddi-drvfillpath)
 
--   [**DrvStrokeAndFillPath**](/windows/desktop/api/winddi/nf-winddi-drvstrokeandfillpath)
+-   [**DrvStrokeAndFillPath**](/windows/win32/api/winddi/nf-winddi-drvstrokeandfillpath)
 
--   [**DrvLineTo**](/windows/desktop/api/winddi/nf-winddi-drvlineto)
+-   [**DrvLineTo**](/windows/win32/api/winddi/nf-winddi-drvlineto)
 
--   [**DrvStretchBltROP**](/windows/desktop/api/winddi/nf-winddi-drvstretchbltrop)
+-   [**DrvStretchBltROP**](/windows/win32/api/winddi/nf-winddi-drvstretchbltrop)
 
--   [**DrvTransparentBlt**](/windows/desktop/api/winddi/nf-winddi-drvtransparentblt)
+-   [**DrvTransparentBlt**](/windows/win32/api/winddi/nf-winddi-drvtransparentblt)
 
--   [**DrvAlphaBlend**](/windows/desktop/api/winddi/nf-winddi-drvalphablend)
+-   [**DrvAlphaBlend**](/windows/win32/api/winddi/nf-winddi-drvalphablend)
 
--   [**DrvGradientFill**](/windows/desktop/api/winddi/nf-winddi-drvgradientfill)
+-   [**DrvGradientFill**](/windows/win32/api/winddi/nf-winddi-drvgradientfill)
 
 <span id="Level_3"></span><span id="level_3"></span><span id="LEVEL_3"></span>**Level 3**  
 Microsoft DirectDraw and Direct3D support are disabled.
@@ -56,32 +55,32 @@ Microsoft DirectDraw and Direct3D support are disabled.
 <span id="Level_4"></span><span id="level_4"></span><span id="LEVEL_4"></span>**Level 4**  
 Only the following graphics operations are accelerated.
 
--   [**DrvTextOut**](/windows/desktop/api/winddi/nf-winddi-drvtextout)
+-   [**DrvTextOut**](/windows/win32/api/winddi/nf-winddi-drvtextout)
 
--   [**DrvBitBlt**](/windows/desktop/api/winddi/nf-winddi-drvbitblt)
+-   [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt)
 
--   [**DrvCopyBits**](/windows/desktop/api/winddi/nf-winddi-drvcopybits)
+-   [**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits)
 
--   [**DrvStrokePath**](/windows/desktop/api/winddi/nf-winddi-drvstrokepath)
+-   [**DrvStrokePath**](/windows/win32/api/winddi/nf-winddi-drvstrokepath)
 
 Also, the following display driver functions are not called.
 
--   [**DrvSaveScreenBits**](/windows/desktop/api/winddi/nf-winddi-drvsavescreenbits)
+-   [**DrvSaveScreenBits**](/windows/win32/api/winddi/nf-winddi-drvsavescreenbits)
 
--   [**DrvEscape**](/windows/desktop/api/winddi/nf-winddi-drvescape)
+-   [**DrvEscape**](/windows/win32/api/winddi/nf-winddi-drvescape)
 
--   [**DrvDrawEscape**](/windows/desktop/api/winddi/nf-winddi-drvdrawescape)
+-   [**DrvDrawEscape**](/windows/win32/api/winddi/nf-winddi-drvdrawescape)
 
--   [**DrvResetPDEV**](/windows/desktop/api/winddi/nf-winddi-drvresetpdev)
+-   [**DrvResetPDEV**](/windows/win32/api/winddi/nf-winddi-drvresetpdev)
 
--   [**DrvSetPixelFormat**](/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat)
+-   [**DrvSetPixelFormat**](/windows/win32/api/winddi/nf-winddi-drvsetpixelformat)
 
--   [**DrvDescribePixelFormat**](/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat)
+-   [**DrvDescribePixelFormat**](/windows/win32/api/winddi/nf-winddi-drvdescribepixelformat)
 
--   [**DrvSwapBuffers**](/windows/desktop/api/winddi/nf-winddi-drvswapbuffers)
+-   [**DrvSwapBuffers**](/windows/win32/api/winddi/nf-winddi-drvswapbuffers)
 
 <span id="Level_5"></span><span id="level_5"></span><span id="LEVEL_5"></span>**Level 5**  
-The slider is in the far left position. The panning driver (part of kernel-mode GDI) handles all rendering. GDI calls the display driver's [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev) and [**DrvEnableSurface**](/windows/desktop/api/winddi/nf-winddi-drvenablesurface) functions to create a primary surface and also calls the display driver to set the display mode. The display driver is not called to do any rendering.
+The slider is in the far left position. The panning driver (part of kernel-mode GDI) handles all rendering. GDI calls the display driver's [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) and [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface) functions to create a primary surface and also calls the display driver to set the display mode. The display driver is not called to do any rendering.
 
 Another way to limit display hardware acceleration is to set flags in the **CapabilityOverride** registry entry. For example, setting the 0x2 flag in the **CapabilityOverride** entry is equivalent to placing the hardware acceleration slider at level 3. For a description of the **CapabilityOverride** registry entry, see [Display INF File Sections](display-inf-file-sections.md).
 

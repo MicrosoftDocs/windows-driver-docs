@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RETRY_AFTER
 description: WDI_TLV_RETRY_AFTER is a TLV that contains the duration, in seconds, that should pass before trying to request a new Fine Timing Measurement (FTM) from a target BSS.
-ms.assetid: BFB15FF0-0272-4FDC-AD7A-94ECDA59D0ED
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_RETRY_AFTER Network Drivers Starting with Windows Vista

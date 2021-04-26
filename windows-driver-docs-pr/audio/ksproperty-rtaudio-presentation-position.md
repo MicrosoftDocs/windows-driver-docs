@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION
 description: KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presentation information.
-ms.assetid: 333A7432-B78A-4F61-B70D-D4F651F90AF7
 keywords: ["KSPROPERTY_RTAUDIO_PRESENTATION_POSITION Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presentation informat
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position"><STRONG>KSAUDIO_PRESENTATION_POSITION</STRONG></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position"><STRONG>KSAUDIO_PRESENTATION_POSITION</STRONG></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -92,6 +91,4 @@ Requirements
 
 
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
-
- 
 

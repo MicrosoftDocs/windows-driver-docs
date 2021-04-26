@@ -1,7 +1,6 @@
 ---
 title: GUID_DISPLAY_DEVICE_ARRIVAL
 description: GUID_DISPLAY_DEVICE_ARRIVAL
-ms.assetid: 4915c6b0-b9a7-4602-ae43-032e20353719
 keywords: ["GUID_DISPLAY_DEVICE_ARRIVAL Device and Driver Installation"]
 topic_type:
 - apiref

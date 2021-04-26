@@ -1,7 +1,6 @@
 ---
 title: DirectMusic User-Mode Synth and Synth Sink Interfaces
 description: DirectMusic User-Mode Synth and Synth Sink Interfaces
-ms.assetid: 2b25f605-d9e6-415e-8f45-08f7cdd2f625
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ Interface for a user-mode synth
 
 Interface for a user-mode synth sink
 
-[IDirectMusicSynth](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynth)
+[IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth)
 
-[IDirectMusicSynthSink](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynthsink)
+[IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink)
 
  
 

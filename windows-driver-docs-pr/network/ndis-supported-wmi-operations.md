@@ -1,7 +1,6 @@
 ---
 title: NDIS-Supported WMI Operations
 description: NDIS-Supported WMI Operations
-ms.assetid: 78dfe8a6-25aa-40d4-bc32-19bd1d4a41b1
 keywords:
 - Windows Management Instrumentation WDK networking , NDIS operations
 - WMI WDK networking , NDIS operations

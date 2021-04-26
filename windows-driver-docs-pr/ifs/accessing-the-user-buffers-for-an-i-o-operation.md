@@ -1,7 +1,6 @@
 ---
 title: Accessing the User Buffers for an I/O Operation
 description: Accessing the User Buffers for an I/O Operation
-ms.assetid: 0f4334bf-eec9-4667-af02-537e3357d872
 keywords:
 - buffers WDK file system minifilter
 - FLT_PARAMETERS

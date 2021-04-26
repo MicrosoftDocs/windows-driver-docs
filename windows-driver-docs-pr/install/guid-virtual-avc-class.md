@@ -1,7 +1,6 @@
 ---
 title: GUID_VIRTUAL_AVC_CLASS
 description: GUID_VIRTUAL_AVC_CLASS
-ms.assetid: bd577fd7-f50c-4477-9619-8dd9e849367a
 keywords: ["GUID_VIRTUAL_AVC_CLASS Device and Driver Installation"]
 topic_type:
 - apiref

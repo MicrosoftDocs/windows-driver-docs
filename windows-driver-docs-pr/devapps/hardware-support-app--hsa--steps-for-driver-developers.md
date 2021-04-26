@@ -47,7 +47,7 @@ Now you can use the custom capability to allow access to either an RPC endpoint 
 
 To allow access to an RPC endpoint to a UWP app that has the custom capability, follow these steps:
 
-1. Call [**DeriveCapabilitySidsFromName**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
+1. Call [**DeriveCapabilitySidsFromName**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
 2. Add the SID to your access allowed ACE along with any other SIDs that are needed for the security descriptor of your RPC endpoint.
 3. Create an RPC endpoint using the information from the Security Descriptor.
 
@@ -94,6 +94,40 @@ Status = WdfDeviceAssignInterfaceProperty(
 Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityNameTBD* with a name that is unique within your company, and *MyStorePubId* with your publisher store ID.
 
 For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
+
+To set the property in kernel mode, use code like the following:
+
+```cpp
+#if defined(NTDDI_WIN10_RS2) && (NTDDI_VERSION >= NTDDI_WIN10_RS2)
+
+//
+// Adding Custom Capability:
+//
+// Adds a custom capability to device interface instance that allows a Windows
+// Store device app to access this interface using Windows.Devices.Custom namespace.
+// This capability can be defined either in INF or here as shown below. In order
+// to define it from the INF, uncomment the section "OsrUsb Interface installation"
+// from the INF and remove the block of code below.
+//
+
+static const wchar_t customCapabilities[] = L"microsoft.hsaTestCustomCapability_q536wpkpf5cy2\0";
+
+status = g_pIoSetDeviceInterfacePropertyData(&symbolicLinkName,
+                                              &DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities,
+                                              0,
+                                              0,
+                                              DEVPROP_TYPE_STRING_LIST,
+                                              sizeof(customCapabilities),
+                                              (PVOID)&customCapabilities);
+
+if (!NT_SUCCESS(status)) {
+    TraceEvents(TRACE_LEVEL_ERROR, DBG_PNP,
+                "IoSetDeviceInterfacePropertyData failed to set custom capability property  %!STATUS!\n", status);
+    goto Error;
+}
+
+#endif
+```
 
 ## Preparing the Signed Custom Capability Descriptor (SCCD) file
 

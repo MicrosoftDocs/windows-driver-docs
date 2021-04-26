@@ -1,7 +1,6 @@
 ---
 title: Security Issues for Network Drivers
 description: This section describes security issues specific to network drivers
-ms.assetid: 04400213-9bd4-4dbe-b302-24917450829f
 keywords:
 - network drivers WDK , security
 - security WDK networking
@@ -19,7 +18,7 @@ Beyond following safe coding practices and the general device driver guidance, n
 
 ## OID-specific issues
 
-- A miniport driver, in its [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) functions, should validate any object identifier (OID) value that the driver is requested to set. If the driver determines that the value to be set is out of bounds, it should fail the set request. For more information about object identifiers, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
+- A miniport driver, in its [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) functions, should validate any object identifier (OID) value that the driver is requested to set. If the driver determines that the value to be set is out of bounds, it should fail the set request. For more information about object identifiers, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md).
 
 - If an intermediate driver's *MiniportOidRequest* function does not pass a set operation to an underlying miniport driver, the function should validate the OID value. For more information, see [Intermediate Driver Query and Set Operations](intermediate-driver-query-and-set-operations.md).
 

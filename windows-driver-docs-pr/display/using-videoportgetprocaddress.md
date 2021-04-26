@@ -1,7 +1,6 @@
 ---
 title: Using VideoPortGetProcAddress
 description: Using VideoPortGetProcAddress
-ms.assetid: 48dace7e-7ba3-48bf-9788-469ff42f6fe3
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, VideoPortGetProcAddress
 - VideoPortGetProcAddress

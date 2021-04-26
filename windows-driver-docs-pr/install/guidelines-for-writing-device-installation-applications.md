@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing Device Installation Applications
 description: Guidelines for Writing Device Installation Applications
-ms.assetid: 7f364b95-98ca-479a-8cdb-5e5e77c70cfa
 keywords:
 - installation applications WDK , guidelines
 - device installation applications WDK , guidelines
@@ -28,7 +27,7 @@ Device installation applications *can* do the following:
 
 -   [Install device-specific applications](installing-device-specific-applications.md)
 
-    **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) for software. See the [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
+    **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for software. See the [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
 
      
 
@@ -42,9 +41,9 @@ Device installation applications *must not* do the following:
 
 -   Delete the installed driver files from the system during the uninstall operation, even if the hardware is removed.
 
--   Force any unnecessary system restarts. Restarts are generally not required for installing PnP devices or software applications. The *bRebootRequired* parameter of the [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) function indicates the need for a restart.
+-   Force any unnecessary system restarts. Restarts are generally not required for installing PnP devices or software applications. The *bRebootRequired* parameter of the [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) function indicates the need for a restart.
 
--   Use RunOnce registry keys, because this requires a system restart.
+-   Use RunOnce registry keys to start *device installation applications*, because this requires a system restart.
 
 -   Use a device or class co-installer, or a class installer, to start a device installation application, because the state of the system during device installation cannot be guaranteed to be safe for installing software applications. Specifically, if the device installation application runs during a server-side installation, the system will stop responding.
 
@@ -57,6 +56,4 @@ Device installation applications *must not* do the following:
 -   Use *win.ini* entries to start device installation applications.
 
 -   Force the user to install any device-specific applications, unless the device will not operate without the application. Examples might include utilities for setting configurable keyboard keys or for setting a modem's country/region code, if an inbox application does not support such a capability.
-
- 
 

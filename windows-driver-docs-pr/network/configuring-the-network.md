@@ -1,7 +1,6 @@
 ---
 title: Configuring the Network
 description: Configuring the Network
-ms.assetid: 9529467b-353d-41c3-9d4e-bb5df5c43665
 keywords:
 - notify objects WDK networking , network configuration
 - network notify objects WDK , network configuration

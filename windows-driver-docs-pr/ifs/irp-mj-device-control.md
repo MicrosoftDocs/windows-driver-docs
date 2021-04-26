@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_DEVICE_CONTROL (IFS)
 description: IRP\_MJ\_DEVICE\_CONTROL
-ms.assetid: 7a7f7372-ed69-42c1-95e2-b5a593d77d22
 keywords: ["IRP_MJ_DEVICE_CONTROL Installable File System Drivers"]
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 ## When Sent
 
 
-The IRP\_MJ\_DEVICE\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. Normally this IRP is sent on behalf of a user-mode application that has called the Microsoft Win32 [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function or on behalf of a kernel-mode component that has called [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile).
+The IRP\_MJ\_DEVICE\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. Normally this IRP is sent on behalf of a user-mode application that has called the Microsoft Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function or on behalf of a kernel-mode component that has called [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile).
 
 ## Operation: File System Drivers
 
@@ -68,7 +67,7 @@ Size in bytes of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
 <a href="" id="irpsp--parameters-deviceiocontrol-iocontrolcode"></a>*IrpSp-&gt;Parameters.DeviceIoControl.IoControlCode*  
 IOCTL function code to be passed to the device driver for the target device.
 
-For detailed information about IOCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
+For detailed information about IOCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
 
 <a href="" id="irpsp--parameters-deviceiocontrol-outputbufferlength"></a>*IrpSp-&gt;Parameters.DeviceIoControl.OutputBufferLength*  
 Size in bytes of the buffer pointed to by *Irp-&gt;UserBuffer*.
@@ -93,9 +92,7 @@ Input buffer for kernel-mode requests that use METHOD\_NEITHER.
 
 [**IRP\_MJ\_DEVICE\_CONTROL (WDK Kernel Reference)**](../kernel/irp-mj-device-control.md)
 
-[Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes)
+[Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md)
 
 [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile)
-
- 
 

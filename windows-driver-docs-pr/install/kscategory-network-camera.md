@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_NETWORK_CAMERA
 description: KSCATEGORY_NETWORK_CAMERA
-ms.assetid: FE86C0D5-3512-4DC9-891D-60E46BA33F51
 keywords: ["KSCATEGORY_NETWORK_CAMERA Device and Driver Installation"]
 topic_type:
 - apiref

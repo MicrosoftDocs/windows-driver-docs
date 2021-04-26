@@ -1,7 +1,6 @@
 ---
 title: Creating a Video Processing Device
 description: Creating a Video Processing Device
-ms.assetid: 3bedf0bf-360a-4dad-a7dd-ee73a0f1fc31
 keywords:
 - video processing WDK DirectX VA , creating devices
 ms.date: 04/20/2017

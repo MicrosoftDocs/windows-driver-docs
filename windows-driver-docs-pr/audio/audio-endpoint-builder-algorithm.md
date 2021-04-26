@@ -1,7 +1,6 @@
 ---
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
-ms.assetid: 2338bca7-5743-42c3-9baf-ac4a54cf0393
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

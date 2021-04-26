@@ -1,7 +1,6 @@
 ---
 title: DriverEntry Guidelines for PF Miniport Drivers
 description: DriverEntry Guidelines for PF Miniport Drivers
-ms.assetid: 6F885379-41EC-411E-8909-4DF48042849A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

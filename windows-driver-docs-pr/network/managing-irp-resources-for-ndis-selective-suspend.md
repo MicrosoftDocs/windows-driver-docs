@@ -1,7 +1,6 @@
 ---
 title: Managing IRP Resources for NDIS Selective Suspend
 description: Managing IRP Resources for NDIS Selective Suspend
-ms.assetid: 542A96A7-AD6D-4780-8FEF-34730A663C1A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

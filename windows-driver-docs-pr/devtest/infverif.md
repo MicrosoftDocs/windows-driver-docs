@@ -1,7 +1,6 @@
 ---
 title: InfVerif
-description: InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.
-ms.assetid: 6F565E1C-C6FC-4637-B476-FE4E4672CCC3
+description: Learn about the InfVerif (InfVerif.exe) tool. You can use this tool to test a driver INF file or find out if the INF file is universal.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

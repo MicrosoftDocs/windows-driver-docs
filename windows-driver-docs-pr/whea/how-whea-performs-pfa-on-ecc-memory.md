@@ -1,7 +1,6 @@
 ---
 title: How WHEA Performs PFA on ECC Memory
 description: How WHEA Performs PFA on ECC Memory
-ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
 - PFA WDK WHEA , Error Correction Code memory
@@ -50,4 +49,4 @@ WHEA then adds the memory page into the Boot Configuration Data (BCD) in the sys
 
 For more information about the PFA registry values for WHEA, see [WHEA Policy Settings](whea-pfa-registry-settings.md).
 
-For more information about the system memory manager, see the [Memory Management](https://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
+For more information about the system memory manager, see the [Memory Management](/windows/win32/memory/memory-management) in the Windows SDK documentation.

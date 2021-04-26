@@ -1,7 +1,6 @@
 ---
 title: Error Information Retrieval
 description: Error Information Retrieval
-ms.assetid: 4af06727-9660-4bbc-8c9e-a50c8f2d566d
 keywords:
 - Windows Hardware Error Architecture WDK , error information retrieval
 - WHEA WDK , error information retrieval

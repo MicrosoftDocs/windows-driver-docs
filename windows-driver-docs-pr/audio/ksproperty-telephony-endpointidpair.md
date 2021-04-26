@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR
 description: The KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR property contains the render and capture endpoints for cellular audio routing.
-ms.assetid: 4F163A65-5572-41D0-80B2-493285E2B87B
 keywords: ["KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The **KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR** property contains the render and c
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTIDPAIR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair)"><strong>KSTOPOLOGY_ENDPOINTIDPAIR</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTIDPAIR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair)"><strong>KSTOPOLOGY_ENDPOINTIDPAIR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -90,6 +89,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

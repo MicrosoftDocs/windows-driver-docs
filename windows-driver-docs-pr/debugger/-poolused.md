@@ -1,7 +1,6 @@
 ---
 title: poolused
 description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
-ms.assetid: e801342d-2536-43a3-992b-99942eb3c5ae
 keywords: ["poolused Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

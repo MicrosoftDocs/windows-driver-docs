@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
 description: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
-ms.assetid: 3254C0F1-85C2-472B-938A-F71645703540
 ms.date: 05/21/2020
 ms.localizationpriority: medium
 ---

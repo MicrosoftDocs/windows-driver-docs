@@ -1,7 +1,6 @@
 ---
 title: Installing an Inbox Driver or a Preinstalled Driver
 description: Installing an Inbox Driver or a Preinstalled Driver
-ms.assetid: 6949897e-12e8-4d86-8f20-4b10a612ef72
 keywords:
 - hardware-first installations WDK device installations
 - inbox driver installations WDK
@@ -17,7 +16,5 @@ If there is an inbox driver or a [preinstalled driver](preinstalling-driver-pack
 
 For more information about how driver packages are located during a [hardware-first installation](hardware-first-installation.md), see [Where Windows Searches for Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
-For information about how Windows selects the driver that has the best match to a device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
-
- 
+For information about how Windows selects the driver that has the best match to a device, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 

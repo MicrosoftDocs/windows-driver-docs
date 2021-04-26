@@ -1,7 +1,6 @@
 ---
 title: File Share (SMB) Symbol Server
 description: Running a SMB Symbol Server is simply a matter of creating a file share and granting users access to that file share.
-ms.assetid: C5CF9665-9289-48EB-AA12-8881F812488A
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

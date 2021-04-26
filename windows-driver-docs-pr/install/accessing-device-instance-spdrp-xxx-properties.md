@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Instance SPDRP_Xxx Properties
 description: Accessing Device Instance SPDRP_Xxx Properties
-ms.assetid: 15ee51f8-1904-43ee-8bc2-311688c860e0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,11 +20,11 @@ For information about how to use property keys to access device instance propert
 
 To access device instance properties that correspond to the SPDRP_*Xxx* identifiers on Windows Server 2003, Windows XP, and Windows 2000, use the following SetupAPI functions:
 
--   [**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
+-   [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
 
     This function retrieves a device property that is specified by a SPDRP_*Xxx* identifier.
 
--   [**SetupDiSetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya)
+-   [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya)
 
     This function sets the device property that is specified by a SPDRP_*Xxx* identifier.
 
@@ -36,29 +35,29 @@ To retrieve a device property on Windows Server 2003, Windows XP, and Microsoft 
 1.  Call **SetupDiGetDeviceRegistryProperty** to retrieve the size, in bytes, of the property value. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to retrieve the requested property value.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to retrieve the requested property value.
-    -   Set *Property* to an SPDRP_*Xxx* identifier. For a list of these identifiers and a description of the corresponding device properties, see the description of the *Property* parameter that is included with [**SetupDiSetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya).
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to retrieve the requested property value.
+    -   Set *Property* to an SPDRP_*Xxx* identifier. For a list of these identifiers and a description of the corresponding device properties, see the description of the *Property* parameter that is included with [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya).
     -   Set *PropertyRegDataType* to a pointer to a DWORD-typed variable.
     -   Set *PropertyBuffer* to **NULL**.
     -   Set *PropertyBufferSize* to zero.
     -   Set *RequiredSize* to a pointer to a DWORD-typed variable that receives, the size, in bytes of the property value.
 
-    In response to the call to [**SetupDiSetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya), **SetupDiGetDeviceRegistryProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    In response to the call to [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya), **SetupDiGetDeviceRegistryProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the most recently logged error code.
 
 2.  Call **SetupDiGetDeviceRegistryProperty** again and supply the same parameter values that were supplied in the first call, except for the following changes:
 
     -   Set *PropertyBuffer* to a pointer to a BYTE-typed buffer that receives the requested property value.
     -   Set *PropertyBufferSize* to the size, in bytes, of the *PropertyBuffer* buffer. The first call to **SetupDiGetDeviceRegistryProperty** retrieved the required size of the PropertyBuffer buffer in \**RequiredSize*.
 
-    If the second call to **SetupDiGetDeviceRegistryProperty** succeeds, **SetupDiGetDeviceRegistryProperty** sets \**PropertyRegDataType* to the registry data type of the property value, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+    If the second call to **SetupDiGetDeviceRegistryProperty** succeeds, **SetupDiGetDeviceRegistryProperty** sets \**PropertyRegDataType* to the registry data type of the property value, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 
 ### Setting a Device Property
 
-To set a device property on Windows Server 2003, Windows XP, and Windows 2000, call [**SetupDiSetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) and supply the following parameter values:
+To set a device property on Windows Server 2003, Windows XP, and Windows 2000, call [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) and supply the following parameter values:
 
 -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to set property value.
 
--   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to set property value.
+-   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to set property value.
 
 -   Set *Property* to an SPDRP_*Xxx* identifier.
 
@@ -66,7 +65,5 @@ To set a device property on Windows Server 2003, Windows XP, and Windows 2000, c
 
 -   Set *PropertyBufferSize* to the size, in bytes, of the property value that is supplied in the *PropertyBuffer* buffer.
 
-If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
-
- 
+If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 

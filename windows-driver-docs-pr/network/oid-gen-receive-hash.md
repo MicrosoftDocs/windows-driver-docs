@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_HASH
 description: As a query, NDIS and overlying drivers use the OID_GEN_RECEIVE_HASH OID to obtain the current receive hash calculation settings of a miniport adapter.
-ms.assetid: be120dab-c98d-418f-8777-e2fb37b774a1
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RECEIVE_HASH Network Drivers Starting with Windows Vista

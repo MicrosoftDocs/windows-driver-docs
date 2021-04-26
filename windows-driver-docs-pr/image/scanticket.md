@@ -1,7 +1,6 @@
 ---
 title: ScanTicket element
 description: The required ScanTicket element defines all of the description and processing parameters of the currently identified scan job.
-ms.assetid: d507bd46-8fc4-49d3-9575-2d83fd7ae625
 keywords: ["ScanTicket element Imaging Devices"]
 topic_type:
 - apiref

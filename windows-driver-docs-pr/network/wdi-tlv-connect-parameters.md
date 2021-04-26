@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CONNECT_PARAMETERS
 description: WDI_TLV_CONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
-ms.assetid: 6B2B4E5D-4BF9-4803-A373-FDF64AD3C99B
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONNECT_PARAMETERS Network Drivers Starting with Windows Vista
@@ -36,7 +35,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES**](wdi-tlv-extra-association-request-ies.md) |   | X | The IE blobs that must be included in the association requests sent by the port. This is applicable to any BSSID that the device would associate with. It should be used in addition to the BSSID specific IEs. |
 | [**WDI\_TLV\_PHY\_TYPE\_LIST**](wdi-tlv-phy-type-list.md) |   | X | The list of PHYs that are allowed to be used for the association. If not specified, any supported PHY can be used. If specified, the device must only use the listed PHYs. |
 | [**WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST**](wdi-tlv-disallowed-bssids-list.md) |   | X | The list of BSSIDs that are not allowed to be used for association. If specified, the adapter must not associate to any AP that is in this list. |
-| [**WDI\_TLV\_ALLOWED\_BSSIDS\_LIST**](wdi-tlv-allowed-bssids-list.md) |   | X | The list of BSSIDs that are allowed to be used for association. If WDI specifies 255.255.255.255 then all BSSIDs are allowed. | 
+| [**WDI\_TLV\_ALLOWED\_BSSIDS\_LIST**](wdi-tlv-allowed-bssids-list.md) |   | X | The list of BSSIDs that are allowed to be used for association. If WDI specifies 255.255.255.255 then all BSSIDs are allowed. |
 
 Requirements
 ------------

@@ -1,7 +1,6 @@
 ---
 title: FSCTL_OFFLOAD_READ control code
 description: The FSCTL\_OFFLOAD\_READ control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
-ms.assetid: D9A22A8F-9B7E-4BF7-8FBD-267BE4C8DC59
 keywords: ["FSCTL_OFFLOAD_READ control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -75,10 +74,10 @@ Status block
 <p>-or-</p>
 <p><em>InputBufferLength</em> &lt; <strong>sizeof</strong>(FSCTL_OFFLOAD_READ_INPUT).</p>
 <p>-or-</p>
-<p>One or more of these members of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> are incorrect:</p>
+<p>One or more of these members of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> are incorrect:</p>
 <strong>FileOffset</strong> is not a multiple of the logical sector size of the volume.
 <strong>CopyLength</strong> is not a multiple of the logical sector size of the volume.
-<strong>Size</strong> is not the size of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> structure.
+<strong>Size</strong> is not the size of the <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> structure.
 <strong>FileOffset</strong> + <strong>CopyLength</strong> &gt; <strong>MAXULONGLONG</strong>.</td>
 </tr>
 <tr class="odd">
@@ -119,7 +118,7 @@ Status block
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_END_OF_FILE</strong></p></td>
-<td align="left"><p>The<strong>FileOffset</strong> member of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> begins after end-of-file (EOF).</p></td>
+<td align="left"><p>The<strong>FileOffset</strong> member of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> begins after end-of-file (EOF).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_DISMOUNTED_VOLUME</strong></p></td>
@@ -131,7 +130,7 @@ Status block
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
-<td align="left"><p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_OUTPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)"><strong>FSCTL_OFFLOAD_READ_OUTPUT</strong></a> structure.</p></td>
+<td align="left"><p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_OUTPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)"><strong>FSCTL_OFFLOAD_READ_OUTPUT</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -175,6 +174,4 @@ Requirements
 [**FSCTL\_OFFLOAD\_READ\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)
 
 [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)
-
- 
 

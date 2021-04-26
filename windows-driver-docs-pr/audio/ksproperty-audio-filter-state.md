@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_FILTER\_STATE
 description: The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a GFX filter for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.
-ms.assetid: e0a3bce7-d321-445c-866c-78502b5ea887
 keywords: ["KSPROPERTY_AUDIO_FILTER_STATE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a GFX filter for 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>Array of GUIDs</p></td>
 </tr>
 </tbody>
@@ -88,6 +87,4 @@ Requirements
 
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

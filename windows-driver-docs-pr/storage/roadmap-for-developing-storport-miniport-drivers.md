@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing Storport Miniport Drivers
 description: Roadmap for Developing Storport Miniport Drivers
-ms.assetid: 43a8f1ee-b2d3-4f97-b7e5-d59790ca6754
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

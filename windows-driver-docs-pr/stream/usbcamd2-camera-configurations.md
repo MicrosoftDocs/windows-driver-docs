@@ -1,7 +1,6 @@
 ---
 title: USBCAMD2 Camera Configurations
 description: USBCAMD2 Camera Configurations
-ms.assetid: 9a0dd6f9-aefb-4134-8bd5-31420a16db4a
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
 - Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library

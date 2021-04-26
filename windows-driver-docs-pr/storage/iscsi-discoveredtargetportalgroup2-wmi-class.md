@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTargetPortalGroup2 WMI Class
 description: ISCSI\_DiscoveredTargetPortalGroup2 WMI Class
-ms.assetid: 9285c74c-ad20-4d34-abdb-d5c5db1f9e90
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

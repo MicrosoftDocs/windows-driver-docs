@@ -1,7 +1,6 @@
 ---
 title: Software-First Installation
 description: Software-First Installation
-ms.assetid: 2199316d-17d5-463a-8c97-f89c87473f20
 keywords:
 - installation applications WDK , software-first installations
 - device installation applications WDK , software-first installations
@@ -30,7 +29,7 @@ If the user inserts your distribution medium before plugging in the device, an A
 
 -   If the device is "hot-pluggable," tell the user to plug it in.
 
-    If the bus does not provide hot-plug notification, initiate reenumeration by calling [**CM_Reenumerate_DevNode**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_reenumerate_devnode).
+    If the bus does not provide hot-plug notification, initiate reenumeration by calling [**CM_Reenumerate_DevNode**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_reenumerate_devnode).
 
 -   If the device is not hot-pluggable, tell the user to turn the system off, plug in the device, and turn the system back on.
 

@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_CAMERACONTROL
 description: PROPSETID\_VIDCAP\_CAMERACONTROL
-ms.assetid: 8899a474-fa6f-4d5c-bd68-2433428bb5c5
 keywords: ["KSPROPERTY_VIDCAP_CAMERACONTROL"]
 ms.date: 06/18/2020
 ms.localizationpriority: medium

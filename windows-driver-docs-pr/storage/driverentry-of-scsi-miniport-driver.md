@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of SCSI Miniport Driver routine
 description: Each miniport driver must have a routine explicitly named DriverEntry in order to be loaded.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-ms.assetid: dda79363-06a9-4902-8e04-186293b6c9d4
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.date: 10/17/2018
 Each miniport driver must have a routine explicitly named **DriverEntry** in order to be loaded.
 
 > [!NOTE]
-> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](./storport-miniport-drivers.md) driver models.
+> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](./storport-driver-overview.md) and [Storport miniport](./storport-miniport-drivers.md) driver models.
 
  
 
@@ -64,6 +63,4 @@ Next, **DriverEntry** calls **ScsiPortInitialize**. If a miniport driver support
 [*HwScsiFindAdapter*](/previous-versions/windows/hardware/drivers/ff557300(v=vs.85))
 
 [**ScsiPortInitialize**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: GetPathConfiguration function
 description: The GetPathConfiguration method is used to retrieve the device information for each path.
-ms.assetid: 1661746f-5a5a-48af-b876-c57f19de4923
 keywords: ["GetPathConfiguration function Storage Devices"]
 topic_type:
 - apiref

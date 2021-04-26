@@ -1,7 +1,6 @@
 ---
 title: Identifiers for Secure Digital (SD) Devices
 description: Identifiers for Secure Digital (SD) Devices
-ms.assetid: d5e112b7-29ed-4950-858c-81fe0d19a902
 keywords:
 - device identification strings WDK , SD devices
 - identification strings WDK device , SD devices

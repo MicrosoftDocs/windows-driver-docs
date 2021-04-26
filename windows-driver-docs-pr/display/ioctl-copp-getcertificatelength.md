@@ -1,7 +1,6 @@
 ---
 title: IOCTL\_COPP\_GetCertificateLength control code
 description: Returns the size, in bytes, of the certificate used by the graphics hardware.
-ms.assetid: a65d301a-4b33-45f9-b21e-a2606d752b12
 keywords: ["IOCTL_COPP_GetCertificateLength control code Display Devices"]
 topic_type:
 - apiref

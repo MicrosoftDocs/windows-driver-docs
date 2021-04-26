@@ -1,7 +1,6 @@
 ---
 title: BarcodeScannerTriggerPressed
 description: The BarcodeScannerTriggerPressed event occurs when the barcode scanner trigger is pressed.
-ms.assetid: '6f0a373f-bf3f-4201-9430-3474f84b9037'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

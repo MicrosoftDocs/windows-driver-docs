@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_BROADCAST_BYTES_XMIT
 description: As a query, the OID_GEN_BROADCAST_BYTES_XMIT OID specifies the number of bytes in broadcast packets that are transmitted without errors.
-ms.assetid: a7df77fb-4319-4d15-9c12-5fd718395305
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_BROADCAST_BYTES_XMIT Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Storage Filter Driver's Dispatch Routines
 description: Storage Filter Driver's Dispatch Routines
-ms.assetid: 0d1af035-537f-4632-800b-eb344dc5a3c8
 keywords:
 - storage filter drivers WDK , dispatch routines
 - filter drivers WDK storage , dispatch routines

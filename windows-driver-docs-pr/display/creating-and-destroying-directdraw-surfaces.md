@@ -1,7 +1,6 @@
 ---
 title: Creating and Destroying DirectDraw Surfaces
 description: Creating and Destroying DirectDraw Surfaces
-ms.assetid: d5557897-1810-448e-a2a8-aba96643b19c
 keywords:
 - drawing surfaces WDK DirectDraw , creating
 - DirectDraw surfaces WDK Windows 2000 display , creating
@@ -32,16 +31,16 @@ Direct Draw surfaces are created in a four-stage process. These stages are:
 
 3.  Memory allocation. The DirectDraw runtime allocates memory for any surface that is not allocated by the driver in response to the [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) call. This process is covered in more detail in the following sections.
 
-4.  [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex). This function associates a handle with the surface in question for later use in the DirectX[**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) token stream. The driver also creates its own copy of the surface structure maintained by DirectDraw at this time. For more information about **D3dCreateSurfaceEx**, see the DirectX Driver Development Kit (DDK) documentation.
+4.  [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex). This function associates a handle with the surface in question for later use in the DirectX[**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) token stream. The driver also creates its own copy of the surface structure maintained by DirectDraw at this time. For more information about **D3dCreateSurfaceEx**, see the DirectX Driver Development Kit (DDK) documentation.
 
-**Note**   A DirectDraw driver must never directly allocate user-mode memory for a surface (for example, by calling the [**EngAllocUserMem**](/windows/desktop/api/winddi/nf-winddi-engallocusermem) function). Instead, the driver can have the DirectDraw runtime allocate user-mode memory for a surface.
+**Note**   A DirectDraw driver must never directly allocate user-mode memory for a surface (for example, by calling the [**EngAllocUserMem**](/windows/win32/api/winddi/nf-winddi-engallocusermem) function). Instead, the driver can have the DirectDraw runtime allocate user-mode memory for a surface.
 If the driver allocates the memory directly, a subsequent request to change the video mode by a process other than the one that created the surface, could cause an operating system crash or memory leaks. To have the DirectDraw runtime allocate user-mode memory, the driver should return the DDHAL\_PLEASEALLOC\_USERMEM value from its [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) function. For more information, see the Remarks section on the *DdCreateSurface* reference page.
 
  
 
-Surfaces are destroyed by a single call to the driver's [*DdDestroySurface*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) entry point only if the driver allocated or was involved in allocating the memory for the surface during surface creation. If the DirectDraw runtime allocated the memory and the driver was not involved, the runtime does not call *DdDestroySurface*.
+Surfaces are destroyed by a single call to the driver's [*DdDestroySurface*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) entry point only if the driver allocated or was involved in allocating the memory for the surface during surface creation. If the DirectDraw runtime allocated the memory and the driver was not involved, the runtime does not call *DdDestroySurface*.
 
-Surfaces persist only as long as the mode in which they are created persists. Where there is a mode change, all the surfaces under the driver's control are destroyed, as far as the driver is concerned. There are also other events that can cause all surfaces to be destroyed in this way. It is not necessary for the driver to determine the cause of a [*DdDestroySurface*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) call.
+Surfaces persist only as long as the mode in which they are created persists. Where there is a mode change, all the surfaces under the driver's control are destroyed, as far as the driver is concerned. There are also other events that can cause all surfaces to be destroyed in this way. It is not necessary for the driver to determine the cause of a [*DdDestroySurface*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) call.
 
  
 

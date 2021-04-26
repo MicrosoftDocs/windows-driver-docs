@@ -43,8 +43,21 @@
       href: wdm-audio-terminology.md
     - name: "Sample Audio Drivers"
       href: sample-audio-drivers.md
+  - name: "KsStudio Utility"
+# Auto-expanded node
+    items: 
     - name: "KsStudio Utility"
       href: ksstudio-utility.md
+    - name: "KsStudio Utility - Filters and Filter Factories"
+      href: ksstudio-utility-filters-and-filter-factories.md
+    - name: "KsStudio Utility - Pins and Nodes "
+      href: ksstudio-utility-pins-and-nodes.md
+    - name: "KsStudio Utility - KSProperties and Events"
+      href: ksstudio-utility-ksproperties-and-events.md
+    - name: "KsStudio Utility - KS Monitor"
+      href: ksstudio-utility-ks-monitor.md
+    - name: "KsStudio Utility - Usage Examples"
+      href: ksstudio-utility-usage-examples.md
   - name: "Audio Filters, Pins, and Nodes"
 # Auto-expanded node
     items: 
@@ -1349,6 +1362,8 @@
       href: ksproperty-audio-wide-mode.md
     - name: "KSPROPERTY_AUDIO_WIDENESS"
       href: ksproperty-audio-wideness.md
+    - name: "KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST"
+      href: ksproperty-audioeffectsdiscovery-effectslist.md
     - name: "KSPROPERTY_AUDIOENGINE"
       href: ksproperty-audioengine.md
     - name: "KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE"

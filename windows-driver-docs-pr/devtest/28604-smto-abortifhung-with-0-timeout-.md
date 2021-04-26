@@ -1,7 +1,6 @@
 ---
 title: C28604
 description: Warning C28604 Avoid calling SendMessageTimeout with SMTO_ABORTIFHUNG with a timeout of 0.
-ms.assetid: d9be9747-20f6-4a2b-a841-eaf3255f2f65
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

@@ -1,7 +1,6 @@
 ---
 title: Setting up Video Adapter Access Ranges
 description: Setting up Video Adapter Access Ranges
-ms.assetid: 250c5611-c6f5-49b5-94bc-93a1b43312e6
 keywords:
 - video adapter access ranges WDK video miniport
 - ranges WDK video miniport
@@ -33,7 +32,7 @@ The miniport driver's [*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/n
 
 If *HwVidFindAdapter* cannot get bus-relative access ranges information by calling **VideoPortGetBusData** or **VideoPortGetAccessRanges**, or from the registry with **VideoPortGetDeviceData** or **VideoPortGetRegistryParameters**, the miniport driver should have a set of bus-relative default values for access ranges.
 
-Every *HwVidFindAdapter* function must map each claimed bus-relative physical address range to a range in kernel-mode address space with **VideoPortGetDeviceBase** logical address ranges, particularly in multiple bus machines.
+Every *HwVidFindAdapter* function must map each claimed bus-relative physical address range to a range in kernel-mode address space with [**VideoPortGetDeviceBase**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase) before the miniport driver attempts to communicate with an adapter. The HAL can remap bus-relative access range values to *system space* logical address ranges, particularly in multiple bus machines.
 
 With mapped logical range addresses, the driver can call the **VideoPortRead***Xxx* and **VideoPortWrite***Xxx* functions to read from or write to an adapter. These kernel-mode addresses also can be passed to [**VideoPortCompareMemory**](/windows-hardware/drivers/ddi/video/nf-video-videoportcomparememory), [**VideoPortMoveMemory**](/windows-hardware/drivers/ddi/video/nf-video-videoportmovememory), [**VideoPortZeroDeviceMemory**](/windows-hardware/drivers/ddi/video/nf-video-videoportzerodevicememory), and/or [**VideoPortZeroMemory**](/windows-hardware/drivers/ddi/video/nf-video-videoportzeromemory). For a mapped range in I/O space, the miniport driver calls the **VideoPortReadPort***Xxx* and **VideoPortWritePort***Xxx* functions. For a mapped range in memory, the miniport driver calls the **VideoPortReadRegister***Xxx* and **VideoPortWriteRegister***Xxx* functions.
 
@@ -52,6 +51,4 @@ The [*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_
 The miniport driver of hardware that decodes legacy resources must claim these resources in its **DriverEntry** routine, or if implemented, its *HwVidLegacyResources* routine. Legacy resources are those resources not listed in the device's PCI configuration space but that are decoded by the device. See [Claiming Legacy Resources](claiming-legacy-resources.md) for details.
 
 After a miniport driver is loaded and its [*HwVidInitialize*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_initialize) function is run, the miniport driver's [*HwVidStartIO*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_start_io) function is called to map any access range of video memory that the miniport driver makes visible to its corresponding display driver.
-
- 
 

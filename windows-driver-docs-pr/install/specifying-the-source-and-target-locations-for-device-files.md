@@ -1,7 +1,6 @@
 ---
 title: Specifying the Source and Target Locations for Device Files
 description: Specifying the Source and Target Locations for Device Files
-ms.assetid: e44961e2-e9fb-43d3-aeb9-a625021e56e6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

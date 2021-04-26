@@ -1,7 +1,6 @@
 ---
 title: Direct flip of video memory
 description: The direct flip feature allows for special optimizations to the composition model to reduce power consumption.
-ms.assetid: 00A8FCB1-966A-4176-9840-7EB5BA300C8B
 keywords:
 - direct flip
 - DirectFlip
@@ -36,7 +35,7 @@ The direct flip feature allows for special optimizations to the composition mode
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
+<td align="left"><a href="/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics ¦ DirectFlip</strong></p></td>
 </tr>
 </tbody>
@@ -72,6 +71,4 @@ These functions and structures are new or updated for Windows 8:
 For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ DirectFlip**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
-
- 
 

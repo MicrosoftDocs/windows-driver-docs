@@ -1,7 +1,6 @@
 ---
 title: ConnectionInfo
 description: ConnectionInfo
-ms.assetid: bbdba286-4d28-46b6-bafa-83cbddd883ae
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

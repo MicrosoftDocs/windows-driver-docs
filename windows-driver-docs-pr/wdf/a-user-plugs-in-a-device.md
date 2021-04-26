@@ -1,7 +1,6 @@
 ---
 title: A User Plugs in a Device
-description: A User Plugs in a Device
-ms.assetid: cc047c05-f3aa-4423-98fc-cafd7777e104
+description: Learn what happens when a user plugs in a device. In the example scenario, the device node includes a KMDF bus driver.
 keywords:
 - PnP WDK KMDF , plugging in devices
 - Plug and Play WDK KMDF , plugging in devices

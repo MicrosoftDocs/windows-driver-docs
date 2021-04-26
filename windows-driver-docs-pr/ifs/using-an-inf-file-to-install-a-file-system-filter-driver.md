@@ -1,7 +1,6 @@
 ---
 title: Using an INF File to Install a File System Filter Driver
 description: Using an INF File to Install a File System Filter Driver
-ms.assetid: 0bc70cdb-d115-4329-9fcc-a085a57c5f78
 keywords:
 - INF files WDK file system , installation steps
 ms.date: 04/20/2017
@@ -40,7 +39,7 @@ RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultInstall 132 path-to-inf\infn
 
 ### <span id="Setup_Application"></span><span id="setup_application"></span><span id="SETUP_APPLICATION"></span>Setup Application
 
-[**InstallHinfSection**](/windows/desktop/api/setupapi/nf-setupapi-installhinfsectiona) can also be called from a setup application, as shown in the following code example:
+[**InstallHinfSection**](/windows/win32/api/setupapi/nf-setupapi-installhinfsectiona) can also be called from a setup application, as shown in the following code example:
 
 ```cpp
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 
@@ -54,7 +53,7 @@ If you use a setup application to install your driver, observe the following gui
 
     For more information about how to list your application in Add or Remove Programs, see "Removing an Application" in the Setup and System Administration section of the Windows SDK documentation.
 
--   Setup applications should never copy driver INF files to the Windows INF file directory (*%windir%\\INF*). SetupAPI copies the files there automatically as part of the [**InstallHinfSection**](/windows/desktop/api/setupapi/nf-setupapi-installhinfsectiona) call.
+-   Setup applications should never copy driver INF files to the Windows INF file directory (*%windir%\\INF*). SetupAPI copies the files there automatically as part of the [**InstallHinfSection**](/windows/win32/api/setupapi/nf-setupapi-installhinfsectiona) call.
 
 For more information about setup applications, see [Writing a Device Installation Application](../install/writing-a-device-installation-application.md).
 

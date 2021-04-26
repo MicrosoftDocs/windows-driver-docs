@@ -1,7 +1,6 @@
 ---
 title: Raw and Translated Resources
 description: Raw and Translated Resources
-ms.assetid: dfc1376d-7a1a-421c-82ae-e183cac77ec8
 keywords:
 - hardware resources WDK KMDF , raw resources
 - resource lists WDK KMDF

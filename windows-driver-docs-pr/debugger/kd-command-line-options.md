@@ -1,7 +1,6 @@
 ---
 title: KD Command-Line Options
 description: First-time users of KD should begin with the Debugging Using KD and NTKD section.
-ms.assetid: 76c11b45-8469-4f27-840d-06477d8922b8
 keywords: ["KD Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

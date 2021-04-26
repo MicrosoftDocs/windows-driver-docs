@@ -1,7 +1,6 @@
 ---
 title: Implementing Hardware Offloaded APO Effects
 description: Hardware offloading of audio processing objects (APOs) provides possible performance enhancements, as well as power savings.
-ms.assetid: 159DFFD2-2434-4EDC-A83C-455BA80F74C6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ Two types of APOs can be loaded during hardware offload playback.
 
 In Windows 8, the audio engine has been redesigned to work with audio streams that have been offloaded to a hardware device that is separate from, but connected to, the computer's main audio system. This is referred to as hardware offloading. For more information, see [Hardware-Offloaded Audio Processing](hardware-offloaded-audio-processing.md).
 
-The hardware offloading feature is primarily targeted for low power scenarios with larger buffer sizes. For example, during Low Power Audio (LPA) playback in the capable systems, the audio buffer size or periodicity is set to 1 second so that the CPU doesn’t wake up frequently to process small buffers (e.g., at every 10 milliseconds).
+The hardware offloading feature is primarily targeted for low power scenarios with larger buffer sizes. For example, during Low Power Audio (LPA) playback in the capable systems, the audio buffer size or periodicity may be set to 1 second so that the CPU doesn’t wake up frequently to process small buffers (e.g., at every 10 milliseconds).
 
 Implementing hardware offloaded APOs along with hardware offloaded audio processing provides the ability to maximize power efficiency.
 
@@ -37,7 +36,7 @@ A hardware offloaded APO must follow the same basic requirements and design prin
 
 For hardware offloaded APOs, some additional consideration must be given to supported audio formats.
 
-Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
+Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
 
 ```cpp
 HRESULT IsInputFormatSupported(

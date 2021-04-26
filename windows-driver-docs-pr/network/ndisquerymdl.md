@@ -1,7 +1,6 @@
 ---
 title: NdisQueryMdl macro
 description: The NdisQueryMdl macro retrieves the buffer length, and optionally the base virtual address, from an MDL.
-ms.assetid: 0eccd784-c815-4094-87e5-a3e283abed73
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdl macro Network Drivers Starting with Windows Vista
@@ -81,7 +80,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](../devtest/ndis-irql-netbuffer-function.md)"><strong>Irql_NetBuffer_Function</strong></a></td>
+<td><a href="/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](../devtest/ndis-irql-netbuffer-function.md)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -92,6 +91,4 @@ Requirements
 [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
 
 [**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85))
-
- 
 

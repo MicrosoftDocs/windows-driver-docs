@@ -1,7 +1,6 @@
 ---
 title: Pin-Centric Processing
 description: Pin-centric processing
-ms.assetid: 0b6a02c2-e672-4568-a890-491c721ec3a7
 keywords:
 - pin-centric filters WDK AVStream
 - AVStream pin-centric filters WDK

@@ -1,7 +1,6 @@
 ---
 title: MRxStop routine
 description: TheMRxStop routine is called by RDBSS to stop the network mini-redirector.
-ms.assetid: 7600335e-ab7c-4993-9e27-18e530496b1c
 keywords: ["MRxStop routine Installable File System Drivers", "PMRX_CALLDOWN_CTX"]
 topic_type:
 - apiref

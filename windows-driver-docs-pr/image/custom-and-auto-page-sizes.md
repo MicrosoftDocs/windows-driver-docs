@@ -1,7 +1,6 @@
 ---
 title: Custom and Auto Page Sizes
 description: Custom and Auto Page Sizes
-ms.assetid: a1f5f78d-fc05-4a7e-9d19-c7f40302b85f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

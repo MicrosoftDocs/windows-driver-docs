@@ -1,8 +1,7 @@
 ---
 title: Printer Extensions
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
-ms.assetid: D617A897-D93E-4006-B42D-923CA7F29D7E
-ms.date: 06/12/2020
+ms.date: 01/25/2021
 ms.localizationpriority: medium
 ---
 
@@ -296,8 +295,6 @@ OpenPrinter
 ClosePrinter
 ```
 
-For more information on how to marshal these legacy APIs into .NET, see [How to send raw data to a printer by using Visual C# .NET](https://support.microsoft.com/help/322091) or [How to send raw data to a printer by using Visual Basic .NET](https://support.microsoft.com/help/322090).
-
 ## Printer extension performance best practices
 
 In order to ensure the best user experience, printer extensions should be designed to load as fast as possible. The Printer Extension Sample project is a .NET application, which means that it gets built into an intermediate language (IL) that must be compiled at runtime into the appropriate format for the native processor architecture. During installation, Microsoft recommends that printer extensions are installed according to best practices, to ensure that the app has been compiled for the native system architecture. For more information about code compilation and installation best practices, see [Improving Launch Performance for Your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/).
@@ -320,10 +317,6 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 [Bidi Request and Response Schemas](/previous-versions/dd183368(v=vs.85))
 
 [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview)
-
-[How to send raw data to a printer by using Visual Basic .NET](https://support.microsoft.com/help/322090)
-
-[How to send raw data to a printer by using Visual C# .NET](https://support.microsoft.com/help/322091)
 
 [Improving Launch Performance for Your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
 

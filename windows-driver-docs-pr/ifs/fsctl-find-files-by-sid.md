@@ -1,7 +1,6 @@
 ---
 title: FSCTL_FIND_FILES_BY_SID control code
 description: The FSCTL\_FIND\_FILES\_BY\_SID control code searches a directory for a file whose creator and owner matche the specified SID.
-ms.assetid: fe0953d3-a009-431b-b03b-5d827dc732a1
 keywords: ["FSCTL_FIND_FILES_BY_SID control code Installable File System Drivers"]
 topic_type:
 - apiref

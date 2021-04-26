@@ -1,7 +1,6 @@
 ---
 title: Initializing a General I/O Target in UMDF
 description: Initializing a General I/O Target in UMDF
-ms.assetid: cf1b39c3-4c82-411b-8eef-117ac0fe793e
 keywords:
 - general I/O targets WDK UMDF , initializing
 - initializing general I/O targets WDK UMDF
@@ -28,7 +27,7 @@ If a UMDF driver must send I/O requests to a handle-based interface, such as a n
 
 1.  Call the **QueryInterface** method of the device's [IWDFDevice](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) interface to retrieve a pointer to the [IWDFFileHandleTargetFactory](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffilehandletargetfactory) interface.
 
-2.  Obtain a Win32 handle to a file, named pipe, or socket by calling the Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), **CreateNamedPipe**, or **socket** function.
+2.  Obtain a Win32 handle to a file, named pipe, or socket by calling the Win32 [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **CreateNamedPipe**, or **socket** function.
 
 3.  Call the [**IWDFFileHandleTargetFactory::CreateFileHandleTarget**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdffilehandletargetfactory-createfilehandletarget) method to create a file-handle-based I/O target object for the file, pipe, or socket.
 

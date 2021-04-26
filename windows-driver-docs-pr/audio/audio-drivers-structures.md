@@ -1,7 +1,6 @@
 ---
 title: Audio Drivers Structures
 description: Audio Drivers Structures
-ms.assetid: 8257342f-474a-42b3-809d-96fdeede398b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -12,15 +11,15 @@ ms.localizationpriority: medium
 
 This section describes the structures that are used by WDM audio miniport drivers. The list of structures is as follows:
 
-[**APO\_REG\_PROPERTIES**](/windows/desktop/api/audioenginebaseapo/ns-audioenginebaseapo-apo_reg_properties)
+[**APO\_REG\_PROPERTIES**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apo_reg_properties)
 
-[**APOInitBaseStruct**](/windows/desktop/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitbasestruct)
+[**APOInitBaseStruct**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitbasestruct)
 
-[**APOInitSystemEffects**](/windows/desktop/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects)
+[**APOInitSystemEffects**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects)
 
-[**APOInitSystemEffects2**](/windows/desktop/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2)
+[**APOInitSystemEffects2**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2)
 
-[**AudioFXExtensionParams**](/windows/desktop/api/audioenginebaseapo/ns-audioenginebaseapo-audiofxextensionparams)
+[**AudioFXExtensionParams**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-audiofxextensionparams)
 
 [**DMUS\_KERNEL\_EVENT**](/windows-hardware/drivers/ddi/dmusicks/ns-dmusicks-_dmus_kernel_event)
 
@@ -124,7 +123,7 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**KSP\_DRMAUDIOSTREAM\_CONTENTID**](/windows-hardware/drivers/ddi/drmk/ns-drmk-ksp_drmaudiostream_contentid)
 
-[**KSP\_PINMODE**](/windows/desktop/api/msapofxproxy/ns-msapofxproxy-tagksp_pinmode)
+[**KSP\_PINMODE**](/windows/win32/api/msapofxproxy/ns-msapofxproxy-ksp_pinmode)
 
 [KSRTAUDIO Structures](/windows-hardware/drivers/ddi/ksmedia/index)
 
@@ -140,9 +139,9 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**LOOPEDSTREAMING\_POSITION\_EVENT\_DATA**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-loopedstreaming_position_event_data)
 
-[**MDEVICECAPSEX**](/windows/desktop/api/mmddk/ns-mmddk-mdevicecapsex)
+[**MDEVICECAPSEX**](/windows/win32/api/mmddk/ns-mmddk-mdevicecapsex)
 
-[**MIDIOPENDESC**](/windows/desktop/api/mmddk/ns-mmddk-midiopendesc_tag)
+[**MIDIOPENDESC**](/windows/win32/api/mmddk/ns-mmddk-midiopendesc)
 
 [**RTAUDIO\_GETREADPACKET\_INFO**](/previous-versions/windows/hardware/drivers/mt169891(v=vs.85))
 
@@ -170,8 +169,8 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**SYSAUDIO\_SELECT\_GRAPH**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)
 
-[**UNCOMPRESSEDAUDIOFORMAT**](/windows/desktop/api/audiomediatype/ns-audiomediatype-uncompressedaudioformat)
+[**UNCOMPRESSEDAUDIOFORMAT**](/windows/win32/api/audiomediatype/ns-audiomediatype-uncompressedaudioformat)
 
-[**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex)
+[**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex)
 
 [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible)

@@ -1,7 +1,6 @@
 ---
 title: Power Management
 description: Power Management
-ms.assetid: b47ed463-2292-419a-af16-196382dbd3f1
 keywords:
 - power management WDK printer
 - critical shutdowns WDK printer

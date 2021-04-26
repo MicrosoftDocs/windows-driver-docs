@@ -1,7 +1,6 @@
 ---
 title: Joystick Support Overview
 description: Joystick Support Overview
-ms.assetid: 09fcbdf0-4e70-4144-9afc-4b085a2b4ba7
 keywords:
 - joysticks WDK HID
 - joysticks WDK HID , about joysticks
@@ -31,10 +30,6 @@ The driver model can deal with up to six axes, a POV hat, and a double word of b
 The current virtual joystick driver (VJoyD) allows the configuration of up to 16 devices, any number of which can be driven by minidrivers. The configuration of minidrivers to devices can be one to one or one to many.
 
 This section includes:
-
-[Joystick Driver Model]()
-
-[Minidriver-Supplied Callbacks]()
 
 [Original Interface](original-interface.md)
 

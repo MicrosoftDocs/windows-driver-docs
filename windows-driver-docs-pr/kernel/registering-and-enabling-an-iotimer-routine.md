@@ -1,7 +1,6 @@
 ---
 title: Registering and Enabling an IoTimer Routine
 description: Registering and Enabling an IoTimer Routine
-ms.assetid: d06a6430-5098-492a-8114-d6f390083718
 keywords: ["IoTimer", "IoInitializeTimer", "IoStartTimer", "registering IoTimer routines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

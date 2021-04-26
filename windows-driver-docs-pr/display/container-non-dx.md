@@ -1,7 +1,6 @@
 ---
 title: Container support for non-DX APIs
 description: Non-DX APIs must interact with drivers and kernel more directly, so they are exposed to more complications
-ms.assetid: 6c4a6974-c67b-4710-80c6-48a5b378e088
 ms.date: 05/07/2019
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,7 @@ only overwrite the destination files when they satisfy the "newer" criteria.
 
 In Windows 10 version 2004, the "newer" criteria compares two pieces of information:
 
-- [FileVersion](/windows/desktop/api/verrsrc/ns-verrsrc-vs_fixedfileinfo)
+- [FileVersion](/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo)
 - [LastWriteTime](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information)
 
 When the destination file ends with the .dll or .exe suffix,
@@ -101,12 +100,12 @@ and [D3DDDI_QUERYREGISTRY_INFO](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukm
 
 The default adapter must honor the user's choice that is stored in the OS, which requires:
 
-1. Enumerating adapters through DXGI's [IDXGIFactory::EnumAdapters](/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-enumadapters),
+1. Enumerating adapters through DXGI's [IDXGIFactory::EnumAdapters](/windows/win32/api/dxgi/nf-dxgi-idxgifactory-enumadapters),
 as DXGI honors the user's choice.
 Adapter 0 changes based on the [user's settings](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/).
 2. Match the adapter order gotten through [D3DKMTEnumAdapters2](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtenumadapters2) to DXGI's.
 Adapter identities can be matched up by correlating the LUID between both enumeration techniques.
-DXGI returns its LUID through [IDXGIAdapter::GetDesc](/windows/desktop/api/dxgi/nf-dxgi-idxgiadapter-getdesc).
+DXGI returns its LUID through [IDXGIAdapter::GetDesc](/windows/win32/api/dxgi/nf-dxgi-idxgiadapter-getdesc).
 
 ## DCHU design modifications
 

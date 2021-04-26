@@ -1,7 +1,6 @@
 ---
 title: Introduction to developing SMS apps
 description: Introduction to developing SMS apps
-ms.assetid: 052eb3cc-4a39-4667-8678-b18650f3b5c9
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

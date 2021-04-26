@@ -1,7 +1,6 @@
 ---
 title: WMI Class Qualifiers
 description: WMI Class Qualifiers
-ms.assetid: 62a00184-59b7-496d-b523-f4adb879d402
 keywords: ["class qualifiers WDK WMI", "MOF class qualifiers WDK WMI", "embedded classes WDK WMI", "dynamic MOF qualifiers WDK WMI", "static MOF qualifiers WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -37,7 +36,7 @@ An *embedded class*, which is a class used solely as a data item in another clas
 </tr>
 <tr class="even">
 <td><p><strong>Static</strong></p></td>
-<td><p>Indicates that the data provider supplies instances of static data in the MOF file, rather than supplying instances of the data block at run time. A driver does not register static data blocks with WMI, because the static data resides in the WMI database. Classes marked as <strong>Static</strong> in the MOF file should not be registered by the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo" data-raw-source="[&lt;strong&gt;IRP_MN_REGINFO&lt;/strong&gt;](./irp-mn-reginfo.md)"><strong>IRP_MN_REGINFO</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo-ex" data-raw-source="[&lt;strong&gt;IRP_MN_REGINFO_EX&lt;/strong&gt;](./irp-mn-reginfo-ex.md)"><strong>IRP_MN_REGINFO_EX</strong></a> handlers.</p></td>
+<td><p>Indicates that the data provider supplies instances of static data in the MOF file, rather than supplying instances of the data block at run time. A driver does not register static data blocks with WMI, because the static data resides in the WMI database. Classes marked as <strong>Static</strong> in the MOF file should not be registered by the driver's <a href="/windows-hardware/drivers/kernel/irp-mn-reginfo" data-raw-source="[&lt;strong&gt;IRP_MN_REGINFO&lt;/strong&gt;](./irp-mn-reginfo.md)"><strong>IRP_MN_REGINFO</strong></a> or <a href="/windows-hardware/drivers/kernel/irp-mn-reginfo-ex" data-raw-source="[&lt;strong&gt;IRP_MN_REGINFO_EX&lt;/strong&gt;](./irp-mn-reginfo-ex.md)"><strong>IRP_MN_REGINFO_EX</strong></a> handlers.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Provider("WMIProv")</strong></p></td>
@@ -65,8 +64,6 @@ An *embedded class*, which is a class used solely as a data item in another clas
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

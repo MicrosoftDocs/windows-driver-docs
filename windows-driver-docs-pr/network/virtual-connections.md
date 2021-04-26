@@ -1,7 +1,6 @@
 ---
 title: Virtual Connections
 description: Virtual Connections
-ms.assetid: becb3acf-2a23-408a-8d1f-ff8a1e7ffe61
 keywords:
 - connection-oriented NDIS WDK , virtual connections
 - CoNDIS WDK networking , virtual connections

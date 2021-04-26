@@ -19,7 +19,7 @@ The EMI interface provides the conduit for energy data to be consumed by interes
 
 ## Discovering devices that implement EMI
 
-Clients discover devices that support the EMI through calls to [SetupDiEnumDeviceInterfaces](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) and [SetupDiGetDeviceInterfaceDetail](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila). One instance of an EMI device interface is created for each energy metering device that is EMI-compliant and is present in the system. 
+Clients discover devices that support the EMI through calls to [SetupDiEnumDeviceInterfaces](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) and [SetupDiGetDeviceInterfaceDetail](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila). One instance of an EMI device interface is created for each energy metering device that is EMI-compliant and is present in the system. 
 
 The GUID for the EMI device interface is **{45BD8344-7ED6-49cf-A440-C276C933B053}**, as defined in emi.h. Code can alternatively use GUID_DEVICE_ENERGY_METER to specify this GUID. 
 
@@ -27,15 +27,15 @@ The GUID for the EMI device interface is **{45BD8344-7ED6-49cf-A440-C276C933B053
 
 Client code typically interacts with the EMI using the following process:
 
-1. Call [IOCTL_EMI_GET_VERSION](/windows/desktop/api/emi/ni-emi-ioctl_emi_get_version) and verify the EMI interface version supported by the device in the returned [EMI_VERSION](/windows/desktop/api/emi/ns-emi-emi_version) value. In Windows 10, devices can support EMI_VERSION_V1. In Windows 10 Version 1809, devices can also support EMI_VERSION_V2. Future operating system releases may introduce later versions. 
+1. Call [IOCTL_EMI_GET_VERSION](/windows/win32/api/emi/ni-emi-ioctl_emi_get_version) and verify the EMI interface version supported by the device in the returned [EMI_VERSION](/windows/win32/api/emi/ns-emi-emi_version) value. In Windows 10, devices can support EMI_VERSION_V1. In Windows 10 Version 1809, devices can also support EMI_VERSION_V2. Future operating system releases may introduce later versions. 
 
 2. Call IOCTL_EMI_GET_METADATA_SIZE to get size of the EMI metadata. 
 
-3. Allocate a buffer of the required EMI metadata size and call [IOCTL_EMI_GET_METADATA](/windows/desktop/api/emi/ni-emi-ioctl_emi_get_metadata). Verify that the returned EMI_MEASUREMENT_UNIT is EmiMeasurementUnitPicowattHours. Releases after Windows 10 may define additional unit types. 
+3. Allocate a buffer of the required EMI metadata size and call [IOCTL_EMI_GET_METADATA](/windows/win32/api/emi/ni-emi-ioctl_emi_get_metadata). Verify that the returned EMI_MEASUREMENT_UNIT is EmiMeasurementUnitPicowattHours. Releases after Windows 10 may define additional unit types. 
 
-4. To measure total energy consumption, call [IOCTL_EMI_GET_MEASUREMENT](/windows/desktop/api/emi/ni-emi-ioctl_emi_get_measurement). The AbsoluteEnergy value in the returned [EMI_CHANNEL_MEASUREMENT_DATA structure](/windows/desktop/api/emi/ns-emi-emi_channel_measurement_data) is the total accumulated energy in picowatt-hours with some arbitrary zero-point. In general, you need to compare samples at two different times and subtract the energy values for energy consumption over that interval. 
+4. To measure total energy consumption, call [IOCTL_EMI_GET_MEASUREMENT](/windows/win32/api/emi/ni-emi-ioctl_emi_get_measurement). The AbsoluteEnergy value in the returned [EMI_CHANNEL_MEASUREMENT_DATA structure](/windows/win32/api/emi/ns-emi-emi_channel_measurement_data) is the total accumulated energy in picowatt-hours with some arbitrary zero-point. In general, you need to compare samples at two different times and subtract the energy values for energy consumption over that interval. 
 
-5. To measure average power consumption, call [IOCTL_EMI_GET_MEASUREMENT](/windows/desktop/api/emi/ni-emi-ioctl_emi_get_measurement) at the beginning and end of the desired interval. Subtract the AbsoluteEnergy and AbsoluteTime values of the [EMI_CHANNEL_MEASUREMENT_DATA structure](/windows/desktop/api/emi/ns-emi-emi_channel_measurement_data) returned by the latter sample from those of the earlier sample.
+5. To measure average power consumption, call [IOCTL_EMI_GET_MEASUREMENT](/windows/win32/api/emi/ni-emi-ioctl_emi_get_measurement) at the beginning and end of the desired interval. Subtract the AbsoluteEnergy and AbsoluteTime values of the [EMI_CHANNEL_MEASUREMENT_DATA structure](/windows/win32/api/emi/ns-emi-emi_channel_measurement_data) returned by the latter sample from those of the earlier sample.
 
 For more information see these topics.
 

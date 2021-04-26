@@ -1,7 +1,6 @@
 ---
 title: Option File Fields
 description: Option File Fields
-ms.assetid: 5ca79c91-5d19-4393-aa5e-be3d47e62967
 keywords:
 - options files WDK Static Driver Verifier
 - fields WDK Static Driver Verifier

@@ -1,7 +1,6 @@
 ---
 title: SO_BROADCAST
 description: SO_BROADCAST
-ms.assetid: 24b93d4e-461d-44c3-b721-85cf41a1680a
 ms.date: 08/08/2017
 keywords: 
  -SO_BROADCAST Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_FILE_SYSTEM_CONTROL (IFS)
 description: IRP\_MJ\_FILE\_SYSTEM\_CONTROL
-ms.assetid: 9df42b58-5820-44fd-8e55-0195807be951
 keywords: ["IRP_MJ_FILE_SYSTEM_CONTROL Installable File System Drivers"]
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 ## When Sent
 
 
-The IRP\_MJ\_FILE\_SYSTEM\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called the Microsoft Win32 [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send a file system I/O control (FSCTL) request.
+The IRP\_MJ\_FILE\_SYSTEM\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called the Microsoft Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send a file system I/O control (FSCTL) request.
 
 ## Operation: File System Drivers
 
@@ -50,7 +49,7 @@ File system drivers should handle the following minor function codes:
 </tr>
 <tr class="odd">
 <td align="left"><p>IRP_MN_USER_FS_REQUEST</p></td>
-<td align="left"><p>Indicates an FSCTL request, possibly on behalf of a user-mode application that has called the Microsoft Win32 DeviceIoControl function or on behalf of a kernel-mode component that has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff566441" data-raw-source="[&lt;strong&gt;ZwDeviceIoControlFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile)"><strong>ZwDeviceIoControlFile</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest" data-raw-source="[&lt;strong&gt;IoBuildDeviceIoControlRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)"><strong>IoBuildDeviceIoControlRequest</strong></a>.</p>
+<td align="left"><p>Indicates an FSCTL request, possibly on behalf of a user-mode application that has called the Microsoft Win32 DeviceIoControl function or on behalf of a kernel-mode component that has called <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile" data-raw-source="[&lt;strong&gt;ZwDeviceIoControlFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile)"><strong>ZwDeviceIoControlFile</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest" data-raw-source="[&lt;strong&gt;IoBuildDeviceIoControlRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)"><strong>IoBuildDeviceIoControlRequest</strong></a>.</p>
 <p>For detailed information about FSCTL requests, see "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.</p></td>
 </tr>
 <tr class="even">
@@ -137,7 +136,7 @@ One of the following:
 <a href="" id="irpsp--parameters-filesystemcontrol-fscontrolcode"></a>*IrpSp-&gt;Parameters.FileSystemControl.FsControlCode*  
 FSCTL function code to be passed to the file system or file system filter driver for the target volume. For use with IRP\_MN\_USER\_FS\_REQUEST only.
 
-For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
+For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
 
 <a href="" id="irpsp--parameters-filesystemcontrol-inputbufferlength"></a>*IrpSp-&gt;Parameters.FileSystemControl.InputBufferLength*  
 Size in bytes of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
@@ -178,6 +177,3 @@ Pointer to the VPB for the volume to be verified.
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile)
-
- 
-

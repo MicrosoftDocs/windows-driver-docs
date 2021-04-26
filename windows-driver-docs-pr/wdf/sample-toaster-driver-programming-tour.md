@@ -1,7 +1,6 @@
 ---
 title: Sample Toaster Driver Programming Tour
 description: This topic provides a code walkthrough of the Toaster sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
-ms.assetid: 5977AC09-AB53-4CA4-A35A-0E5A1FEE936F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -88,11 +87,11 @@ The KMDF bus driver services the toaster bus controller, enumerates devices that
   <tbody>
   <tr class="odd">
   <td align="left"><p><a href="" id="---------------------identification-description"></a> Identification Description</p></td>
-  <td align="left"><p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure.</p></td>
+  <td align="left"><p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure.</p></td>
   </tr>
   <tr class="even">
   <td align="left"><p><a href="" id="---------------------address-description"></a> Address Description</p></td>
-  <td align="left"><p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure. Address descriptions are optional. This sample does not use address descriptions.</p></td>
+  <td align="left"><p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure. Address descriptions are optional. This sample does not use address descriptions.</p></td>
   </tr>
   </tbody>
   </table>

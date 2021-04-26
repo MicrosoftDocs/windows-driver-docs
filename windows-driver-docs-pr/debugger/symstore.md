@@ -1,7 +1,6 @@
 ---
 title: SymStore
 description: SymStore
-ms.assetid: acc7bf3a-62ea-4c93-843e-b81d4f71555f
 keywords: ["SymStore, features", "SymStore, using", "symbol stores, SymStore (symstore.exe)"]
 ms.date: 03/27/2018
 ms.localizationpriority: medium

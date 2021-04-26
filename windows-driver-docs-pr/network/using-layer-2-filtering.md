@@ -1,7 +1,6 @@
 ---
 title: Using Layer 2 Filtering
 description: Using Layer 2 Filtering
-ms.assetid: 679E6DE2-4EFB-44F6-936D-2BF611BC9726
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

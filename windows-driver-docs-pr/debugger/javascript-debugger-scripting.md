@@ -1,7 +1,6 @@
 ---
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
-ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.date: 04/09/2019
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ These two topics provide additional information about working with JavaScript in
 
 ## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
-The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/).
+The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/).
 
 **JsProvider.dll**
 
@@ -47,13 +46,7 @@ JavaScript Debugger Scripting is designed to work with all supported versions of
 ## <span id="Loading_the_JavaScript_Scripting_Provider"></span><span id="loading_the_javascript_scripting_provider"></span><span id="LOADING_THE_JAVASCRIPT_SCRIPTING_PROVIDER"></span>Loading the JavaScript Scripting Provider
 
 
-Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. To load the JavaScript provider, use the following command.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
-
-Use the .scriptproviders command to confirm that the JavaScript provider is loaded.
+Before using any of the .script commands, a scripting provider needs to be loaded. Use the .scriptproviders command to confirm that the JavaScript provider is loaded.
 
 ```dbgcmd
 0:000> .scriptproviders
@@ -75,10 +68,13 @@ The following commands are available to work with JavaScript Debugger Scripting.
 
 **Requirements**
 
-Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. To load the JavaScript provider, use the following command.
+Before using any of the .script commands, a scripting provider needs to be loaded. Use the .scriptproviders command to confirm that the JavaScript provider is loaded.
 
 ```dbgcmd
-0:000> .load jsprovider.dll
+0:000> .scriptproviders
+Available Script Providers:
+    NatVis (extension '.NatVis')
+    JavaScript (extension '.js')
 ```
 
 ## <span id=".scriptproviders__list_script_providers_"></span><span id=".SCRIPTPROVIDERS__LIST_SCRIPT_PROVIDERS_"></span>.scriptproviders (List Script Providers)
@@ -171,12 +167,6 @@ function initializeScript()
 
 Use a text editor such as Notepad to create a text file named *HelloWorld.js* that contains the JavaScript code shown above.
 
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
-
 Use the .scriptload command to load and execute the script. Because we used the function name *initializeScript*, the code in the function is run when the script is loaded.
 
 ```dbgcmd
@@ -211,12 +201,6 @@ function addTwoValues(a, b)
 ```
 
 Use a text editor such as Notepad to create a text file named *FirstSampleFunction.js*
-
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
 
 Use the .scriptload command to load the script.
 
@@ -298,12 +282,6 @@ host.diagnostics.debugLog("***> Exiting RunCommands Function \n");
 ```
 
 Use a text editor such as Notepad to create a text file named *RunCommands.js*
-
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
 
 Use the .scriptload command to load the RunCommands script.
 
@@ -404,12 +382,12 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-|Command |[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
-|--- |--- |--- |--- |
-|root|yes|yes| | |
-|initializeScript|yes|yes| | |
-|invokeScript		| |yes| |
-|uninitializeScript | ||yes|
+| Command            | [.scriptload](-scriptload--load-script-.md) | [.scriptrun (Run Script)](-scriptrun--run-script-.md) | [.scriptunload (Unload Script)](-scriptunload--unload-script-.md) |
+|--------------------|---------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------------|
+| root               | yes                                         | yes                                                   |                                                                   |
+| initializeScript   | yes                                         | yes                                                   |                                                                   |
+| invokeScript       |                                             | yes                                                   |                                                                   |
+| uninitializeScript |                                             |                                                       | yes                                                               |
 
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.
@@ -636,11 +614,6 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
   }
 ```
 
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
 
 This command sets a breakpoint on notepad!ShowOpenSaveDialog, and will run the script above whenever that breakpoint is hit.
 
@@ -702,12 +675,6 @@ function performOp64BitValues(a64, b64, op)
 ```
 
 Use a text editor such as Notepad to create a text file named *PlayWith64BitValues.js*
-
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
 
 Use the .scriptload command to load the script.
 
@@ -774,12 +741,6 @@ function comparisonWith64BitValues(a64, b64)
 ```
 
 Use a text editor such as Notepad to create a text file named *ComparisonWith64BitValues.js*
-
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
 
 Use the .scriptload command to load the script.
 
@@ -1208,7 +1169,7 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 -   [WinJS: The Windows library for JavaScript](https://github.com/winjs/winjs)
 
--   [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/)
+-   [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/)
 
 ## <span id="related_topics"></span>Related topics
 

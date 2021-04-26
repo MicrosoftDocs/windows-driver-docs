@@ -1,7 +1,6 @@
 ---
 title: Using the TCP/IP Offload Administrator Interface
 description: Using the TCP/IP Offload Administrator Interface
-ms.assetid: 2418e577-17cd-4db7-adb0-44b705e29d38
 keywords:
 - TCP/IP offload WDK networking , administrator interface
 - offload WDK TCP/IP transport , administrator interface

@@ -1,7 +1,6 @@
 ---
 title: Content IDs and Content Rights
 description: Content IDs and Content Rights
-ms.assetid: aee123e4-bc1b-4ba8-9f8d-a9d207297c8d
 keywords:
 - content rights WDK audio
 - content IDs WDK audio

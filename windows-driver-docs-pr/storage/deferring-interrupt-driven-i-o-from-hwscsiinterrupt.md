@@ -1,7 +1,6 @@
 ---
 title: Deferring Interrupt-Driven I/O from HwScsiInterrupt
 description: Deferring Interrupt-Driven I/O from HwScsiInterrupt
-ms.assetid: 6bedad0c-8995-4c7b-8ee2-415ec63e0eb3
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiInterrupt
 - HwScsiInterrupt
@@ -29,13 +28,11 @@ For example, if a miniport driver must stall for longer than 50 microseconds doi
 
 4.  Return control.
 
-The **ScsiPortNotification** routine calls the *HwScsiEnableInterruptsCallback* routine as a DPC routine. For more information about DPCs, see [DPC Objects and DPCs](https://docs.microsoft.com/windows-hardware/drivers/kernel/dpc-objects-and-dpcs).
+The **ScsiPortNotification** routine calls the *HwScsiEnableInterruptsCallback* routine as a DPC routine. For more information about DPCs, see [DPC Objects and DPCs](../kernel/introduction-to-dpc-objects.md).
 
 If a miniport driver's *HwScsiInterrupt* routine cannot disable interrupts on the HBA but its interrupt-driven transfers can take more than 50 microseconds in the *HwScsiInterrupt* routine, the driver writer should tune the miniport driver by limiting the size of the transfers that it accepts. Otherwise, the mouse pointer will appear "jumpy" and/or serial and parallel throughput will degrade noticeably every time the miniport driver is transferring data concurrently.
 
 Such a miniport driver's *HwScsiFindAdapter* routine should reset the **MaximumTransferLength** value in the PORT\_CONFIGURATION\_INFORMATION to a value that allows the miniport driver to carry out interrupt-driven transfers without noticeably affecting the performance of other system drivers.
 
 Such a miniport driver also might call **ScsiPortNotification** with a miniport driver-supplied *HwScsiTimer* routine. For more information about *HwScsiTimer* routines, which are synchronized with *HwScsiInterrupt* routines, see [SCSI Miniport Driver's HwScsiTimer Routine](scsi-miniport-driver-s-hwscsitimer-routine.md).
-
- 
 

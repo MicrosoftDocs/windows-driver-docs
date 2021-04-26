@@ -1,7 +1,6 @@
 ---
 title: dpinst XML Element
 description: dpinst XML Element
-ms.assetid: d825afb4-a459-4b69-93cb-db57adab3c80
 keywords: ["dpinst XML Element Device and Driver Installation"]
 topic_type:
 - apiref

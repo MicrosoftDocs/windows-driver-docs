@@ -1,7 +1,6 @@
 ---
 title: vprot
 description: The vprot extension displays virtual memory protection information.
-ms.assetid: 7ee863ef-abfd-4ee7-9bac-34472e60f3fa
 keywords: ["memory, memory protection", "vprot Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

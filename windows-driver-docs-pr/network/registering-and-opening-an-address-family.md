@@ -1,7 +1,6 @@
 ---
 title: Registering and Opening an Address Family
 description: Registering and Opening an Address Family
-ms.assetid: 2249adf9-2876-4442-be94-1a966d3f1c88
 keywords:
 - address families WDK networking
 - AFs WDK networking
@@ -31,11 +30,11 @@ After its [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-p
 
 The call to **NdisCmRegisterAddressFamilyEx** advertises the call manager's specific signaling services. A call manager must register an address family each time that its *ProtocolBindAdapterEx* function and is called and successfully binds to a NIC with [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex).
 
-The call manager can support more than one address family across all the miniport drivers to which it is bound. The call manager can also support more than one address family on a single NIC to which it is bound. The call manager must register the same entry points for each address family on the binding. Only one call manager can support a particular type of address family for clients bound to any particular miniport driver. For more information about registering entry points for a call manager, see [CoNDIS Registration](condis-registration.md).
+The call manager can support more than one address family across all the miniport drivers to which it is bound. The call manager can also support more than one address family on a single NIC to which it is bound. The call manager must register the same entry points for each address family on the binding. Only one call manager can support a particular type of address family for clients bound to any particular miniport driver. For more information about registering entry points for a call manager, see [CoNDIS Registration](condis-miniport-driver-registration.md).
 
 ### Registering an Address Family from an MCM Driver
 
-An MCM driver calls **NdisMCmRegisterAddressFamilyEx** from its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function after registering its miniport driver entry points with [**NdisMRegisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver). For more information about regsitering entry points see, [CoNDIS Registration](condis-registration.md). An MCM driver calls [**NdisMCmRegisterAddressFamilyEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmregisteraddressfamilyex) once to advertise its services to connection-oriented clients (see the following figure).
+An MCM driver calls **NdisMCmRegisterAddressFamilyEx** from its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function after registering its miniport driver entry points with [**NdisMRegisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver). For more information about regsitering entry points see, [CoNDIS Registration](condis-miniport-driver-registration.md). An MCM driver calls [**NdisMCmRegisterAddressFamilyEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmregisteraddressfamilyex) once to advertise its services to connection-oriented clients (see the following figure).
 
 ![diagram illustrating registering and opening an address family with an mcm driver](images/fig1-01.png)
 
@@ -47,7 +46,7 @@ A call manager's or MCM driver's call to **Ndis(M)CmRegisterAddressFamily** caus
 
 *ProtocolCoAfRegisterNotify* examines the address-family data to determine whether the client can use the services of this particular CM or MCM driver. Whether the client can make modifications in the (M)CM-supplied address-family data depends on the particular signaling-protocol support of the call manager or MCM driver.
 
-If the client finds the offered call-management services acceptable, *ProtocolCoAfRegisterNotify* allocates a per-AF context area for the client and calls [**NdisClOpenAddressFamilyEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex). **NdisClOpenAddressFamilyEx** does not register the client's connection-oriented entry points with NDIS. For more information about registering connection-oriented entry points with NDIS, see [CoNDIS Registration](condis-registration.md).
+If the client finds the offered call-management services acceptable, *ProtocolCoAfRegisterNotify* allocates a per-AF context area for the client and calls [**NdisClOpenAddressFamilyEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex). **NdisClOpenAddressFamilyEx** does not register the client's connection-oriented entry points with NDIS. For more information about registering connection-oriented entry points with NDIS, see [CoNDIS Registration](condis-miniport-driver-registration.md).
 
 The call to **NdisClOpenAddressFamilyEx** causes NDIS to call the call manager's or MCM driver's [**ProtocolCmOpenAf**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af) function (as shown already in the two earlier figures). *ProtocolCmOpenAf* ensures that the client passed in a valid address family and allocates and initializes the resources necessary to perform operations on behalf of the client that is opening this instance of the address family. *ProtocolCmOpenAf* also stores an NDIS-supplied *NdisAfHandle* that represents the association between the call manager and client for the open address family.
 

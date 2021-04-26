@@ -1,7 +1,6 @@
 ---
 title: Primary and Secondary Interrupts
 description: GPIO interrupt handling is inherently a two-stage process.
-ms.assetid: 731B0E36-4480-4B69-931E-1F7B40B18911
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

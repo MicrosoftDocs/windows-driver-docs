@@ -1,7 +1,6 @@
 ---
 title: Canceling the NDIS Selective Suspend Idle Notification
 description: Canceling the NDIS Selective Suspend Idle Notification
-ms.assetid: 14C19F15-9D0E-4F37-942C-7F7AFE1EBA0B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

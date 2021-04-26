@@ -1,7 +1,6 @@
 ---
 title: WlanAssert rule (ndis)
 description: The WlanAssert rule includes a set of checks validated inside the WDIWIFI driver.
-ms.assetid: CCA68C4D-618A-4DE4-9DEB-2A03DCD38667
 ms.date: 04/08/2020
 keywords: ["WlanAssert rule (ndis)"]
 topic_type:
@@ -50,7 +49,7 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a> and select the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](./ndis-wifi-verification.md)">NDIS/WIFI verification</a> option.</p></td>
+<td align="left"><p>Run <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a> and select the <a href="/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](./ndis-wifi-verification.md)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>

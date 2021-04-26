@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 5a0fb200-a2c2-41f0-8dcf-6eb3361c148e
 keywords: ["Print Pipeline Property Bag Print Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Hyper-V Extensible Switch Extensions
 description: Enumerating Hyper-V Extensible Switch Extensions
-ms.assetid: AC468A8F-5C48-419B-9E9E-D63925E1CE9D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

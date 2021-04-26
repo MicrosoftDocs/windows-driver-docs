@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth Version and Profile Support in Previous Windows Versions
-ms.assetid: 5209DE94-241D-4EFA-BA00-884EC74C8C1B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -158,7 +157,7 @@ Windows support for different versions of the Bluetooth specification depends on
 Windows 8.1 includes the following enhancements to the Bluetooth stack and related software:
 
 -   Inbox radio management control for Bluetooth version 4.0 radios.
--   Windows Runtime API support for [**RFCOMM**](https://docs.microsoft.com/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [**GATT**](https://docs.microsoft.com/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
+-   Windows Runtime API support for [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
 
 ## <span id="What_s_new_in_Windows_8_"></span><span id="what_s_new_in_windows_8_"></span><span id="WHAT_S_NEW_IN_WINDOWS_8_"></span>What’s new in Windows 8?
 
@@ -418,7 +417,7 @@ Therefore, pairing information is preserved if users upgrade from Windows 8 to 
 ## <span id="what_programming_interfaces_were_introduced_in_windows_8.1_"></span><span id="WHAT_PROGRAMMING_INTERFACES_WERE_INTRODUCED_IN_WINDOWS_8.1_"></span>What programming interfaces were introduced in Windows 8.1?
 
 
-Windows 8.1 introduces new Windows Runtime APIs for accessing the [**RFCOMM**](https://docs.microsoft.com/uwp/api/Windows.Devices.Bluetooth.Rfcomm) (over standard Bluetooth) and [**GATT**](https://docs.microsoft.com/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) (over Bluetooth Low Energy).
+Windows 8.1 introduces new Windows Runtime APIs for accessing the [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) (over standard Bluetooth) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) (over Bluetooth Low Energy).
 
 ## <span id="What_programming_interfaces_were_introduced_in_Windows_8_"></span><span id="what_programming_interfaces_were_introduced_in_windows_8_"></span><span id="WHAT_PROGRAMMING_INTERFACES_WERE_INTRODUCED_IN_WINDOWS_8_"></span>What programming interfaces were introduced in Windows 8?
 
@@ -428,14 +427,14 @@ Windows 8 introduces new APIs for accessing Bluetooth Smart peripherals via Blu
 ## <span id="What_programming_interfaces_were_introduced_in_Windows_7_"></span><span id="what_programming_interfaces_were_introduced_in_windows_7_"></span><span id="WHAT_PROGRAMMING_INTERFACES_WERE_INTRODUCED_IN_WINDOWS_7_"></span>What programming interfaces were introduced in Windows 7?
 
 
-Windows 7 introduced new Ex versions of previous APIs to provide enhanced functionality. For example, the BluetoothAuthenticateDeviceEx function lets out-of-band data be passed into the function call for the device that is being authenticated. Similarly, the [**BluetoothRegisterForAuthenticationEx**](https://docs.microsoft.com/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothregisterforauthenticationex) function includes pin request and numeric comparison functionality. Also, the [**BluetoothSendAuthenticationResponseEx**](https://docs.microsoft.com/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothsendauthenticationresponseex) function is called when an authentication request to send the numeric comparison response is received. For more information about the new Ex versions of these APIs, see [Bluetooth Functions](https://docs.microsoft.com/windows/desktop/Bluetooth/bluetooth-functions).
+Windows 7 introduced new Ex versions of previous APIs to provide enhanced functionality. For example, the BluetoothAuthenticateDeviceEx function lets out-of-band data be passed into the function call for the device that is being authenticated. Similarly, the [**BluetoothRegisterForAuthenticationEx**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothregisterforauthenticationex) function includes pin request and numeric comparison functionality. Also, the [**BluetoothSendAuthenticationResponseEx**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsendauthenticationresponseex) function is called when an authentication request to send the numeric comparison response is received. For more information about the new Ex versions of these APIs, see [Bluetooth Functions](/windows/desktop/Bluetooth/bluetooth-functions).
 
 ## <span id="What_programming_interfaces_were_introduced_in_Windows_Vista_"></span><span id="what_programming_interfaces_were_introduced_in_windows_vista_"></span><span id="WHAT_PROGRAMMING_INTERFACES_WERE_INTRODUCED_IN_WINDOWS_VISTA_"></span>What programming interfaces were introduced in Windows Vista?
 
 
 Windows Vista introduced a kernel-mode DDI for Bluetooth wireless technology, which provides access to SCO, SDP, and L2CAP. The DDI is included with Windows Driver Kit (WDK) build 6000, which was released with Windows Vista, and all later builds of the WDK. We do not intend to make the kernel-mode DDI available on earlier versions of Windows. The [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) can be used to verify that kernel-mode Bluetooth drivers comply with standard driver development practices and use the DDI correctly.
 
-Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see the [Bluetooth design guide](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/). The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see [Other WDK downloads](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads) The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
+Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see the [Bluetooth design guide](./index.md). The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see [Other WDK downloads](../other-wdk-downloads.md) The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -443,11 +442,4 @@ Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Blu
 [Bluetooth Support in Windows 10](general-bluetooth-support-in-windows.md)
 
  
-
- 
-
-
-
-
-
 

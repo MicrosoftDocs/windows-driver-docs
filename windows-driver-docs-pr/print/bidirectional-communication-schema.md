@@ -1,7 +1,6 @@
 ---
 title: Bidirectional Communication Schema
 description: Bidirectional Communication Schema
-ms.assetid: b15b1aff-623e-4159-ab0f-ce386a1377eb
 keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print

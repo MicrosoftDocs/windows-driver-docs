@@ -1,7 +1,6 @@
 ---
 title: LogoutFromTarget
 description: LogoutFromTarget
-ms.assetid: 29be7228-2b18-4f88-8a5a-e7406ef91b1c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

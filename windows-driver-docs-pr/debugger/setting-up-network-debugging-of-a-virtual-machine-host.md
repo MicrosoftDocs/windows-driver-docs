@@ -1,15 +1,13 @@
 ---
 title: Setting Up Network Debugging of a Virtual Machine with KDNET
 description: This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
-ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
-ms.date: 07/02/2018
+ms.date: 01/21/2021
 ms.localizationpriority: medium
 ---
 
 # Setting Up Network Debugging of a Virtual Machine - KDNET
 
 This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine (VM).
-
 
 ## Hyper-V Virtual Machine Setup
 
@@ -30,7 +28,6 @@ When the external network switch is configured the following options must be set
 | Connection Type | External Network|
 | Allow management operating system to share this network adapter | Enabled |
 | VLAN ID | Disabled |
-
 
 **3. Disable Secure Boot**
 
@@ -101,11 +98,11 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 > For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
 > 
 
-4. To allow the long key that is used to be cut and pasted, enable enhanced session support. In the VM window, from the **View** pull down menu, enable *Enhanced session*. 
+2. To allow the long key that is used to be cut and pasted, enable enhanced session support. In the VM window, from the **View** pull down menu, enable *Enhanced session*. 
 
-5. On the target VM computer, create a C:\KDNET directory and copy the *kdnet.exe* and *VerifiedNICList.xml* files to that directory.
+3. On the target VM computer, create a C:\KDNET directory and copy the *kdnet.exe* and *VerifiedNICList.xml* files to that directory.
 
-6. On the target computer, open a Command Prompt window as Administrator. Enter this command to verify that the target computer has a supported network adapter.
+4. On the target computer, open a Command Prompt window as Administrator. Enter this command to verify that the target computer has a supported network adapter.
 
     ```console
     C:\KDNET>kdnet
@@ -114,7 +111,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
     busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
     ```
 
-7. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address of the host system you recorded earlier.  Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039. For this example, we will select 50005.
+5. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address of the host system you recorded earlier.  Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039. For this example, we will select 50005.
 
     ```console
     C:\>kdnet <YourIPAddress> <YourDebugPort> 
@@ -128,60 +125,57 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
     Then restart this VM by running shutdown -r -t 0 from this command prompt.
     ```
 
-8. Use CRTL+C to copy the provided windbg output into the command buffer. Doing this avoids attempting to write down the long key value that is returned.
+6. Use CRTL+C to copy the provided windbg output into the command buffer. Doing this avoids attempting to write down the long key value that is returned.
 
-9. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
+7. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
 
-10. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull down menu in the VM. 
+8. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull down menu in the VM. 
 
-11. The VM will be restarted after the debugger is loaded and running. This process is described next. 
+9. The VM will be restarted after the debugger is loaded and running. This process is described next. 
 
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
 
-2. To connect to the target PC, use CTRL+V to paste in the main OS command window the windbg string that was returned by kdnet that you copied earlier.
+1. To connect to the target PC, use CTRL+V to paste in the main OS command window the windbg string that was returned by kdnet that you copied earlier.
 
     ```console
     C:\Debuggers\windbg -k net:port=<YourDebugPort>,key=<YourKey> 
     ```
 
-When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. 
-
-
+When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public.
 
 ## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
 
 Once the debugger is connected, reboot the target computer. To force the VM to completely restart, use this command, from an administrator's command prompt.
 
    ```console
-   shutdown -r -t 0 
+   shutdown -r -t 0
    ```
 
 When the target virtual machine is restarted, the debugger in the host OS should connect. 
 
 After connecting to the VM, hit break on your debugger and you can start debugging. 
 
+To support the debugging connection a Kernel Debug Network Adapter is added and visible in network properties, after the VM is rebooted.
 
-## Troubleshooting KDNET Virtual Machine Network Debugging 
+
+## Troubleshooting KDNET Virtual Machine Network Debugging
 
 If the debugger does not connect, use the ping command from the target VM to verify connectivity. 
 
 ```console
-C:\>Ping <HostComputerIPAddress> 
+C:\>Ping <HostComputerIPAddress>
 ```
 
-*Something didn't work right and I'm not sure what...* 
+*Something didn't work right and I'm not sure what...*
 
-- Ensure you've let WinDbg through your firewall. 
+- Ensure you've let WinDbg through your firewall.
 - Confirm that you are using a unique Key that was generated by BCDEdit or kdnet.
 
-
-*My VMs don't have network connectivity*  
+*My VMs don't have network connectivity*
 
 - Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the Microsoft Kernel Debug Network Adapter by selecting it from the drop down box and then selecting OK in the Virtual Switch Manager dialog box.  After updating your Virtual Switch NIC, make sure to then shutdown and restart your VMs. 
-
-
 
 ## Sequence to add Hyper-V role to a Windows PC
 
@@ -189,20 +183,16 @@ If your target computer is a virtual machine host, you can set up network debugg
 
 Suppose you want to set up network debugging in the following situation.
 
--   The target computer has a single network interface card.
--   You intend to install the Hyper-V role on the target computer.
--   You intend to create one or more virtual machines on the target computer.
+- The target computer has a single network interface card.
+- You intend to install the Hyper-V role on the target computer.
+- You intend to create one or more virtual machines on the target computer.
 
 The best approach is to set up network debugging on the target computer before you install the Hyper-V role. Then the virtual machines will have access to the network.
 
 If you decide to set up network debugging after the Hyper-V role has been installed on the target computer, you must change the network settings for your virtual machines to bridge them to the Microsoft Kernel Network Debug Adapter. Otherwise, the virtual machines will not have access to the network.
-
 
 ## <span id="related_topics"></span>Related topics
 
 [Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port](attaching-to-a-virtual-machine--kernel-mode-.md)
 
 [Setting Up a Network Connection Manually](setting-up-a-network-debugging-connection.md)
-
- 
-

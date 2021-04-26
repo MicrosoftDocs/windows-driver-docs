@@ -1,7 +1,6 @@
 ---
 title: .break
 description: The .break token behaves like the break keyword in C.
-ms.assetid: 577e74d1-824f-424a-b30e-a82fe2d682f1
 keywords: [".break Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

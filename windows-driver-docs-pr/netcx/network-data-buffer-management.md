@@ -1,7 +1,6 @@
 ---
 title: Network data buffer management
 description: Network data buffer management
-ms.assetid: BFE1D376-88FB-41CB-AB6D-A0D6BB83128C
 keywords:
 - WDF Network Adapter Class Extension Buffer Manager, Network data buffer management
 ms.date: 02/20/2018
@@ -66,7 +65,6 @@ MyAdapterSetDatapathCapabilities(
     NET_ADAPTER_TX_CAPABILITIES txCapabilities;
     NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA(&txCapabilities,
                                              &txDmaCapabilities,
-                                             MAX_PACKET_SIZE,
                                              1);
     txCapabilities.FragmentRingNumberOfElementsHint = deviceContext->NumTransmitControlBlocks * MAX_PHYS_BUF_COUNT;
     txCapabilities.MaximumNumberOfFragments = MAX_PHYS_BUF_COUNT;

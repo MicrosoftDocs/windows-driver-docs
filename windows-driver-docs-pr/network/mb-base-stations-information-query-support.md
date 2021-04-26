@@ -1,7 +1,6 @@
 ---
 title: MB base stations information query support
 description: MB base stations information query support
-ms.assetid: 200954a6-0f6c-4c00-86cb-510399f7b713
 keywords:
 - MB base stations information query, Mobile Broadband base stations information query
 ms.date: 08/14/2017
@@ -32,10 +31,10 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 ### Parameters
 
-| | Set | Query | Notification |
+| Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_BASE_STATIONS_INFO_REQ | Not applicable |
-| Response | Not appliable | MBIM_BASE_STATIONS_INFO | Not applicable |
+| Response | Not applicable | MBIM_BASE_STATIONS_INFO | Not applicable |
 
 ### Query
 
@@ -300,7 +299,7 @@ Not applicable.
 
 ### Status codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement)).
 
 ## <a name="mbim_cid_location_info_status"></a>MBIM_CID_LOCATION_INFO_STATUS
 
@@ -319,7 +318,7 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 ### Parameters
 
-| | Set | Query | Notification |
+| Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not appliable | MBIM_LOCATION_INFO | MBIM_LOCATION_INFO |
@@ -350,7 +349,7 @@ This event is sent if the value of *Location Area Code*/*Tracking Area Code* cha
 
 ### Status codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement)).
 
 ## <a name="oid_wwan_base_stations_info"></a>OID_WWAN_BASE_STATIONS_INFO
 

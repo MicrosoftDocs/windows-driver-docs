@@ -1,7 +1,6 @@
 ---
 title: Log Tokens
 description: Log Tokens
-ms.assetid: f666d457-eb0a-4482-a8ac-e2921ab8c5a9
 keywords:
 - log tokens WDK SetupAPI
 - text logs WDK SetupAPI , log tokens
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 SetupAPI text logging uses *log tokens* to write entries in a [SetupAPI text log](setupapi-text-logs.md).
 
-A class installer or co-installer must use the log token that is returned by [**SetupGetThreadLogToken**](/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) to write log entries in a [text log section](format-of-a-text-log-section.md) that was established by the SetupAPI installation operation that called the installer. SetupAPI text logging also provides system-defined log tokens, which an installation application can use to write log entries that are not part of a text log section.
+A class installer or co-installer must use the log token that is returned by [**SetupGetThreadLogToken**](/windows/win32/api/setupapi/nf-setupapi-setupgetthreadlogtoken) to write log entries in a [text log section](format-of-a-text-log-section.md) that was established by the SetupAPI installation operation that called the installer. SetupAPI text logging also provides system-defined log tokens, which an installation application can use to write log entries that are not part of a text log section.
 
 The following system-defined log tokens are provided by SetupAPI text logging:
 

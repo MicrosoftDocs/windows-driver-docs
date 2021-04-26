@@ -1,7 +1,6 @@
 ---
 title: Servicing an Interrupt (UMDF 1)
 description: Servicing an Interrupt
-ms.assetid: 79BA75B3-E10F-4AC1-A2C5-A502BF821188
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -28,7 +27,5 @@ If your driver creates multiple framework queue objects for each device, you mig
 
 Drivers typically complete I/O requests in their [*OnInterruptWorkItem*](/windows-hardware/drivers/ddi/wudfinterrupt/nc-wudfinterrupt-wudf_interrupt_workitem) or [*OnWorkItem*](/windows-hardware/drivers/ddi/wudfworkitem/nc-wudfworkitem-wudf_workitem_function) callback functions.
 
-For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](https://go.microsoft.com/fwlink/p/?linkid=256189) sample driver, available starting in the Windows 8 WDK.
-
- 
+For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](/samples/browse/) sample driver, available starting in the Windows 8 WDK.
 

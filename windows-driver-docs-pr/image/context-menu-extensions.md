@@ -1,7 +1,6 @@
 ---
 title: Context Menu Extensions
 description: Context Menu Extensions
-ms.assetid: 6c52dd43-7f47-476e-acbc-15269d23ea71
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SYMBOL\_RATE
 description: Clients use KSPROPERTY\_BDA\_SYMBOL\_RATE to control the symbol rate of a demodulator node.
-ms.assetid: 11e2e020-3037-4a68-a8d6-c68efd86a518
 keywords: ["KSPROPERTY_BDA_SYMBOL_RATE Streaming Media Devices"]
 topic_type:
 - apiref

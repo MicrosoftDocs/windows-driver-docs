@@ -1,7 +1,6 @@
 ---
 title: Changing the WIA Item Tree Structure
 description: Changing the WIA Item Tree Structure
-ms.assetid: fa6c9d25-4435-43ee-a262-9e267b9a0a69
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

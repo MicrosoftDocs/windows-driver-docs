@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_PORTLUN WMI Class
 description: MS\_SMHBA\_PORTLUN WMI Class
-ms.assetid: 28473b3b-2b88-4abc-81b5-9a6a7f8166e3
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

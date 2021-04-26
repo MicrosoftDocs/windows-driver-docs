@@ -1,7 +1,6 @@
 ---
 title: Starting a BDA Minidriver
 description: Starting a BDA Minidriver
-ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
 keywords:
 - BDA minidrivers WDK AVStream , starting
 - starting BDA minidrivers WDK AVStream

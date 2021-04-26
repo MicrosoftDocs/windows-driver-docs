@@ -1,7 +1,6 @@
 ---
 title: ATA Command Support
 description: ATA Command Support
-ms.assetid: 98149A59-3435-4166-8250-EEFBA44DFD4C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

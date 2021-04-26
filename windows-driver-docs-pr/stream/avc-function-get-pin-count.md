@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_PIN\_COUNT
 description: AVC\_FUNCTION\_GET\_PIN\_COUNT
-ms.assetid: fb455843-c979-479c-ba7c-f84875a9ba6f
 keywords: ["AVC_FUNCTION_GET_PIN_COUNT Streaming Media Devices"]
 topic_type:
 - apiref

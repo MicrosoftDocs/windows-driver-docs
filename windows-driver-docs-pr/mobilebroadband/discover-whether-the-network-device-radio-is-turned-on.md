@@ -1,7 +1,6 @@
 ---
 title: Discover whether the network device radio is turned on
 description: Discover whether the network device radio is turned on
-ms.assetid: deded77d-8810-498c-a5ae-44885189c061
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

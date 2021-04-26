@@ -1,7 +1,6 @@
 ---
 title: Components of a Driver Package
 description: Components of a Driver Package
-ms.assetid: 3e09b17f-9a62-43fd-be00-29fe2e6140c5
 keywords:
 - components WDK
 - driver packages WDK , components

@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_FILE_SYSTEM_CONTROL.
-ms.assetid: d90b9f23-9fae-46e8-b68c-1ba11b3fa17a
 keywords: ["FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -87,7 +86,7 @@ Length, in bytes, of the buffer that the **Neither.InputBuffer**, **Buffered.Sys
 **FsControlCode**  
 FSCTL function code to be passed to the file system, file system filter, or minifilter driver for the target device.
 
-For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation. (This resource may not be available in some languages and countries.)
+For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation. (This resource may not be available in some languages and countries.)
 
 **Neither**  
 Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_NEITHER. For more information about buffering methods, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)

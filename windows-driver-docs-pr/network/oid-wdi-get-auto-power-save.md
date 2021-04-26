@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_GET_AUTO_POWER_SAVE
 description: OID_WDI_GET_AUTO_POWER_SAVE gets the power save state of the port.
-ms.assetid: b7a14348-66ad-4728-986d-05145eb49b27
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_AUTO_POWER_SAVE Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Describing Printer Memory Configurations
 description: Describing Printer Memory Configurations
-ms.assetid: 4a85788a-9713-42fb-a788-4d45f9aaabac
 keywords:
 - Unidrv, printer memory configurations
 - GPD files WDK Unidrv , printer memory configurations

@@ -1,7 +1,6 @@
 ---
 title: Calling ScsiPortXxx from HwScsiFindAdapter
 description: Calling ScsiPortXxx from HwScsiFindAdapter
-ms.assetid: 17cfca31-ff93-4882-872c-ab8af6cdc3cf
 keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter

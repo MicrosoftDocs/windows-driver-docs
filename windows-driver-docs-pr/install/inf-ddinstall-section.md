@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall Section
 description: Each per-Models DDInstall section contains an optional DriverVer directive and one or more directives referencing additional named sections in the INF file, shown here with the most frequently specified INF directives, CopyFiles and AddReg, listed first.
-ms.assetid: 79cba88d-fda1-4b91-bf51-98afd7224bc9
 keywords:
 - INF DDInstall Section Device and Driver Installation
 topic_type:
@@ -237,7 +236,7 @@ Depending on the [device setup class](./overview-of-device-setup-classes.md) tha
 -   [DDInstall Section in a Network INF File](../network/ddinstall-services-section-in-a-network-inf-file.md)
 -   [INF Files for Still Image Devices](../image/inf-files-for-still-image-devices.md)
 -   [INF Files for WIA Devices](../image/inf-files-for-wia-devices.md)
--   [Installation Requirements for Network Components](https://docs.microsoft.com/windows-hardware/drivers/network/installation-requirements-for-network-components)
+-   [Installation Requirements for Network Components](../network/installation-requirements-for-network-adapters.md)
 -   [Specifying WDF Directives in INF Files](../wdf/specifying-wdf-directives-in-inf-files.md)
 
 Examples
@@ -348,6 +347,4 @@ CopyFiles=WDM.CopyFiles.Sys, WDM.CopyFiles.Drv
 [**DelProperty**](inf-delproperty-directive.md)
 
 [**FeatureScore**](inf-featurescore-directive.md)
-
- 
 

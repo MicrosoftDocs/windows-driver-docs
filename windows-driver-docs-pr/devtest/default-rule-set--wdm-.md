@@ -1,7 +1,6 @@
 ---
 title: Default rule set (WDM)
 description: The Default rule set (Default.sdv) specifies the recommended sets of rules to use when you analyze your driver.
-ms.assetid: F03BEEDE-ED6E-4202-9FF5-74A098702E12
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x60 PROCESS_INITIALIZATION_FAILED
 description: The PROCESS_INITIALIZATION_FAILED bug check has a value of 0x00000060.This bug check appears very infrequently.
-ms.assetid: 781190a6-a50f-4b7a-9dea-ac31d2dee325
 keywords: ["Bug Check 0x60 PROCESS_INITIALIZATION_FAILED", "PROCESS_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_ID
 description: Bus drivers must handle requests for BusQueryDeviceID for their child devices (child PDOs). Bus drivers can handle requests for BusQueryHardwareIDs, BusQueryCompatibleIDs, and BusQueryInstanceID for their child devices.
 ms.date: 08/12/2017
-ms.assetid: 3135cb30-a696-4201-8dfc-cdc1a29fe52b
 keywords:
  - IRP_MN_QUERY_ID Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -106,7 +105,7 @@ When returning more than one *hardware ID* and/or more than one *compatible ID*,
 
 Setup checks the IDs against the IDs listed in INF files for possible matches. Setup first scans the hardware IDs list, then the compatible IDs list. Earlier entries are treated as more specific descriptions of the device, and later entries as more general (and thus less optimal) matches for the device. If no match is found in the list of hardware IDs, Setup might prompt the user for installation media before moving on to the list of compatible IDs.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Specifying BusQueryContainerIDs**
 

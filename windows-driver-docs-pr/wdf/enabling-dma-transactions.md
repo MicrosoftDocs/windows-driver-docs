@@ -1,7 +1,6 @@
 ---
 title: Enabling DMA Transactions
 description: Enabling DMA Transactions
-ms.assetid: 87735776-c371-425b-bc53-0c68375c9562
 keywords:
 - DMA transactions WDK KMDF , enabling
 - DMA operations WDK KMDF , transactions
@@ -26,7 +25,7 @@ If your framework-based driver handles I/O operations for DMA devices, your driv
 
 3.  Call [**WdfDmaEnablerSetMaximumScatterGatherElements**](/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements) to specify the maximum number of elements that the device can support in a scatter/gather list, if the device supports scatter/gather operations.
 
-The following code example from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample illustrates how to enable the framework's DMA features. This code appears in the *Init.c file*.
+The following code example from the [PLX9x5x](/samples/browse/) sample illustrates how to enable the framework's DMA features. This code appears in the *Init.c file*.
 
 ```cpp
 WDF_DMA_ENABLER_CONFIG   dmaConfig;

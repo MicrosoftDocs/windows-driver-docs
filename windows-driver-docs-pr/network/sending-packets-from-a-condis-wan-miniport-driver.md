@@ -1,7 +1,6 @@
 ---
 title: Sending Packets from a CoNDIS WAN Miniport Driver
 description: Sending Packets from a CoNDIS WAN Miniport Driver
-ms.assetid: 66c42e90-e0d9-47d1-9e6d-cadb511bcb7a
 keywords:
 - CoNDIS WAN drivers WDK networking , packet sending
 - loopbacks WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Registry Run-Time Library Routines
 description: Registry Run-Time Library Routines
-ms.assetid: 53e55969-3c8e-44ab-8ba7-6abb0ddbfc24
 keywords: ["registry WDK kernel , run-time library routines", "driver registry information WDK kernel , run-time library routines", "run-time library routines WDK kernel", "RtlXxxRegistryYyy routines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -33,23 +32,23 @@ The following table list the operations that drivers can perform by calling the 
 <tbody>
 <tr class="odd">
 <td><p>Create a registry key</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcreateregistrykey" data-raw-source="[&lt;strong&gt;RtlCreateRegistryKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcreateregistrykey)"><strong>RtlCreateRegistryKey</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcreateregistrykey" data-raw-source="[&lt;strong&gt;RtlCreateRegistryKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcreateregistrykey)"><strong>RtlCreateRegistryKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Check whether a registry key exists</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcheckregistrykey" data-raw-source="[&lt;strong&gt;RtlCheckRegistryKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcheckregistrykey)"><strong>RtlCheckRegistryKey</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcheckregistrykey" data-raw-source="[&lt;strong&gt;RtlCheckRegistryKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcheckregistrykey)"><strong>RtlCheckRegistryKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Examine one or more registry-key values</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlqueryregistryvalues" data-raw-source="[&lt;strong&gt;RtlQueryRegistryValues&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlqueryregistryvalues)"><strong>RtlQueryRegistryValues</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlqueryregistryvalues" data-raw-source="[&lt;strong&gt;RtlQueryRegistryValues&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlqueryregistryvalues)"><strong>RtlQueryRegistryValues</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Write a registry-key value</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlwriteregistryvalue" data-raw-source="[&lt;strong&gt;RtlWriteRegistryValue&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlwriteregistryvalue)"><strong>RtlWriteRegistryValue</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlwriteregistryvalue" data-raw-source="[&lt;strong&gt;RtlWriteRegistryValue&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlwriteregistryvalue)"><strong>RtlWriteRegistryValue</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Delete a registry-key value</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue" data-raw-source="[&lt;strong&gt;RtlDeleteRegistryValue&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue)"><strong>RtlDeleteRegistryValue</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue" data-raw-source="[&lt;strong&gt;RtlDeleteRegistryValue&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue)"><strong>RtlDeleteRegistryValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,6 +72,4 @@ status = RtlWriteRegistryValue(RTL_REGISTRY_ABSOLUTE,
 Although you write fewer lines of code when using the **Rtl*Xxx*Registry*Xxx*** routines instead of the **Zw*Xxx*Key** routines, the latter ones are necessary for performing certain operations. For example, no **Rtl*Xxx*Registry*Xxx*** routine exists that corresponds to [**ZwEnumerateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwenumeratekey).
 
 If you perform multiple operations on the same key, the **Zw*Xxx*Key** routines are more efficient—you can use the same open handle for each operation. In contrast, the **Rtl*Xxx*Registry*Xxx*** routines open and close a new handle for each operation.
-
- 
 

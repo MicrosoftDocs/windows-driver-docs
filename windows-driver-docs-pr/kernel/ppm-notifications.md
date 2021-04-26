@@ -1,7 +1,6 @@
 ---
 title: Processor power management (PPM) notifications
 description: Each processor power management (PPM) notification that the PEP's AcceptProcessorNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
-ms.assetid: 4BA89D0F-78F0-44DF-BC9B-0F9F3256CD59
 keywords: [AcceptProcessorNotification callback]
 ms.date: 01/17/2018
 ms.localizationpriority: medium

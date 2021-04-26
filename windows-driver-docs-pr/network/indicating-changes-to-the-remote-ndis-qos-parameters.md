@@ -1,7 +1,6 @@
 ---
 title: Indicating Changes to the Remote NDIS QoS Parameters
 description: Indicating Changes to the Remote NDIS QoS Parameters
-ms.assetid: E09EBF25-96B6-417F-9538-D0BEBE5B9E19
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

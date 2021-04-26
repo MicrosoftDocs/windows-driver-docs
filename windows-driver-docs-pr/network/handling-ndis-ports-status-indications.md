@@ -1,7 +1,6 @@
 ---
 title: Handling NDIS Ports Status Indications
 description: Handling NDIS Ports Status Indications
-ms.assetid: ba3794de-b17e-4878-a65e-6c9f5f8ebbbc
 keywords:
 - ports WDK NDIS , status indications
 - NDIS ports WDK , status indications

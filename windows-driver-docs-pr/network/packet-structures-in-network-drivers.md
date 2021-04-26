@@ -1,7 +1,6 @@
 ---
 title: Packet Structures in Network Drivers
 description: Packet Structures in Network Drivers
-ms.assetid: 01989a73-3f68-431a-ab77-b61f03265c22
 keywords:
 - packets WDK networking
 - network drivers WDK , packets

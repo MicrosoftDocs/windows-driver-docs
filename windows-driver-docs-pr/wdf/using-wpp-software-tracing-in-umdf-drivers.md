@@ -1,7 +1,6 @@
 ---
 title: Using WPP Software Tracing in UMDF Drivers
 description: Using WPP Software Tracing in UMDF Drivers
-ms.assetid: d8469d29-dfc3-41b9-a72d-9dafb3e70123
 keywords:
 - software tracing WDK , framework-based drivers
 - debugging drivers WDK UMDF , software tracing
@@ -97,9 +96,7 @@ Currently, you can modify the following registry values, which are located under
 
 -   The **LogFlushPeriodSeconds** value specifies how often, in seconds, trace messages are written to the trace log.
 
--   The **LogMinidumpType** value contains flags that specify the type of information that a mini-dump file, if produced, will contain. For more information about these flags, see the [MINIDUMP\_TYPE](https://go.microsoft.com/fwlink/p/?linkid=160310) enumeration.
+-   The **LogMinidumpType** value contains flags that specify the type of information that a mini-dump file, if produced, will contain. For more information about these flags, see the [MINIDUMP\_TYPE](/windows/win32/api/minidumpapiset/ne-minidumpapiset-minidump_type) enumeration.
 
 You might find additional registry values under the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF** registry key. You should not modify those values.
-
- 
 

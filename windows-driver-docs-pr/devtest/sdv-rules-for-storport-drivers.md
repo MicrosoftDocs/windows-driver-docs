@@ -1,7 +1,6 @@
 ---
 title: Rules for Storport Drivers
 description: Rules for Storport Drivers
-ms.assetid: C880A30B-8629-4648-B2E3-7AC8F1A9059D
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

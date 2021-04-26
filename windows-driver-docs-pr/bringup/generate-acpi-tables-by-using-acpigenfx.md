@@ -1,12 +1,14 @@
 ---
 title: Generate ACPI tables by using AcpiGenFx
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
-ms.assetid: 46A725C3-609E-45B9-A4BD-033656208E92
-ms.date: 05/22/2020
+ms.date: 09/23/2020
 ms.localizationpriority: medium
 ---
 
 # Generate ACPI tables by using AcpiGenFx
+
+> [!NOTE]
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
 
 ## Summary
 
@@ -26,7 +28,7 @@ ms.localizationpriority: medium
 
 Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 
-In Windows 10, the new C# library, AcpiGenFx, makes it easier for you to write an app that creates ACPI tables that describe the hardware devices and resources on the platform, such as interrupt controllers, SD host controllers, GPIO, and I²C devices. By using the methods and properties exposed by the framework objects, you can describe devices, resources, and dependencies without knowing the exact syntax of the ACPI table or referring to the ACPI specification. Not only does AcpiGenFx generate ACPI Machine Language (ASL) code that is OS-independent, it is also aware of Windows-specific requirements.
+In Windows 10, the new C# library, AcpiGenFx, makes it easier for you to write an app that creates ACPI tables that describe the hardware devices and resources on the platform, such as interrupt controllers, SD host controllers, GPIO, and I<sup>2</sup>C devices. By using the methods and properties exposed by the framework objects, you can describe devices, resources, and dependencies without knowing the exact syntax of the ACPI table or referring to the ACPI specification. Not only does AcpiGenFx generate ACPI Machine Language (ASL) code that is OS-independent, it is also aware of Windows-specific requirements.
 
 The app generates the relevant ACPI table files (\*.aslc and \*.asl) based on those descriptions. At build time, AcpiGenFx statically analyzes the platform description, detecting errors like cyclical or unresolved dependencies, device naming and UUID conflicts, resource to controller mappings, and much more. As a result, the generated ASL code is easier to debug because AcpiGenFx checks for the most common mistakes, and abstracts unique ACPI implementation details.
 
@@ -181,12 +183,12 @@ You can add components to the platform. Typically, those components include proc
 <tr class="odd">
 <td><strong>HidOverI2C</strong></td>
 <td><strong>Platform.AddHidI2CDevice</strong></td>
-<td>Add a HID device connected to the I²C bus.</td>
+<td>Add a HID device connected to the I<sup>2</sup>C bus.</td>
 </tr>
 <tr class="even">
 <td><strong>I2CController</strong></td>
 <td><strong>Platform.AddI2CController</strong></td>
-<td>Add I²C controllers and associated resources such as interrupts, I/O, and events.</td>
+<td>Add I<sup>2</sup>C controllers and associated resources such as interrupts, I/O, and events.</td>
 </tr>
 <tr class="odd">
 <td><strong>KDNet2Usb</strong></td>
@@ -265,7 +267,7 @@ mem.DebugAccessSize = DebugAccessSize.DWordAccess;
 
 In the preceding snippet, the xHCI host controller has interrupt resources and debug support. It has dependencies on a PEP device and a GPIO controller. To see descriptions of those devices, see DSDTSamples.
 
-This example shows how to add an I²C controller to the DSDT.
+This example shows how to add an I<sup>2</sup>C controller to the DSDT.
 
 ```cs
 I2CController i2c = Platform.AddI2CController("I2C1", "I2CCONTR", 0);
@@ -273,7 +275,7 @@ i2c.AddMemory32Fixed(true, 0xf9999000, 0x400, "");
 i2c.AddInterrupt(InterruptType.Level, InterruptActiveLevel.ActiveHigh, SharingLevel.Exclusive, 40);
 ```
 
-Here is the output of the console app with the preceding definition for xHCI host and I²C controllers.
+Here is the output of the console app with the preceding definition for xHCI host and I<sup>2</sup>C controllers.
 
 ```console
 
@@ -366,10 +368,7 @@ void * ReferenceDBG2Table(void) {
 
 1. Set the **SSDT** property to true. This indicates to the framework that this table is an SSDT.
 
-1. Create a device and assign resources. For example, for the sensor device shown here, the sample calls **Platform.AddGenericDevice** and specifies the device name, hardware ID, and unique instance. The sensor device that connects to the I²C serial bus, I2C1, which is described in the DSDT.
-
-> [!NOTE]
-> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's style guide for [Bias-free communications](/style-guide/bias-free-communication) recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
+1. Create a device and assign resources. For example, for the sensor device shown here, the sample calls **Platform.AddGenericDevice** and specifies the device name, hardware ID, and unique instance. The sensor device that connects to the I<sup>2</sup>C serial bus, I2C1, which is described in the DSDT.
 
 ```asl
 namespace SSDTSample

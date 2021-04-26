@@ -1,7 +1,6 @@
 ---
 title: INF ClassInstall32.Services Section
 description: A ClassInstall32.Services section installs a new device setup class (and possibly a class installer) for devices in the new class.
-ms.assetid: 602cf407-f3c0-4342-9e59-87481a0f41ef
 keywords:
 - INF ClassInstall32.Services Section Device and Driver Installation
 topic_type:

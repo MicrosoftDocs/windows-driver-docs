@@ -1,7 +1,6 @@
 ---
 title: MRxDevFcbXXXControlFile routine
 description: The MRxDevFcbXXXControlFile routine is called by RDBSS to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
-ms.assetid: d60449d0-17d0-4303-8d0d-cba091de2b07
 keywords: ["MRxDevFcbXXXControlFile routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

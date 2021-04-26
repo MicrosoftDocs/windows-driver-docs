@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE
 description: The FAULTY_HARDWARE_CORRUPTED_PAGE bug check has a value of 0x0000012B. This bug check indicates that the Windows memory manager detected corruption, and the corruption could only have been caused by a component accessing memory using physical addressing. 
-ms.assetid: caa57d76-946f-4394-bfcf-1dbf3813a55b
 keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CORRUPTED_PAGE"]
 ms.date: 01/18/2019
 topic_type:
@@ -113,7 +112,7 @@ This bugcheck can only occur by memory corruption due to physical memory access.
 
 NOTE:  Compressed Store Manager can detect if the corruption was caused by a single-bit error, and automatically corrects this condition without raising a bug check. This bugcheck is reported by the Compressed Store Manager if the corruption was not caused by a single bit error.
 
-For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 -----

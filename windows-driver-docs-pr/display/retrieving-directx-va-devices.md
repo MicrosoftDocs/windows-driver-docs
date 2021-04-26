@@ -1,7 +1,6 @@
 ---
 title: Retrieving DirectX VA Devices
 description: Retrieving DirectX VA Devices
-ms.assetid: 7af82243-7cb3-4e66-a6ee-3f4220baa459
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , retrieving devices
 - retrieving DirectX VA devices
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_retrieving_directx_va_devices_gg"></span><span id="DDK_RETRIEVING_DIRECTX_VA_DEVICES_GG"></span>
 
 
-Use the following example code to retrieve DirectX VA devices. This code is an implementation of the [*DdMoCompGetGuids*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getguids) callback function. The **GetMoCompGuids** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function.
+Use the following example code to retrieve DirectX VA devices. This code is an implementation of the [*DdMoCompGetGuids*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_getguids) callback function. The **GetMoCompGuids** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function.
 
 ```cpp
 DWORD g_dwDXVANumSupportedGUIDs = 4;

@@ -1,7 +1,6 @@
 ---
 title: Tape Class Driver Routines
 description: Tape class driver routines.
-ms.assetid: 7e3cecc9-4fd5-4806-9b0e-5897635f4930
 keywords:
 - tape class driver routines
 - storage WDK

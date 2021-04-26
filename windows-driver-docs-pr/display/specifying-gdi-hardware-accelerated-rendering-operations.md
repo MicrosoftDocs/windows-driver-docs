@@ -1,7 +1,6 @@
 ---
 title: Specifying GDI Hardware-Accelerated Rendering Operations
 description: Specifying GDI Hardware-Accelerated Rendering Operations
-ms.assetid: 71eb9cdf-0448-48d1-835a-84bbbba13670
 keywords:
 - rendering operations with GDI hardware acceleration WDK display
 ms.date: 04/20/2017
@@ -39,37 +38,37 @@ DXGK\_RENDERKM\_COMMAND contains members that specify characteristics of GDI har
 <tr class="odd">
 <td align="left"><p>alpha blend</p></td>
 <td align="left"><p>AlphaBlend</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_alphablend" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_ALPHABLEND&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_alphablend)"><strong>DXGK_GDIARG_ALPHABLEND</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_alphablend" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_ALPHABLEND&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_alphablend)"><strong>DXGK_GDIARG_ALPHABLEND</strong></a></p></td>
 <td align="left"><p>DXGK_GDIOP_ALPHABLEND = 3</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>bit-block transfer with no stretching</p></td>
 <td align="left"><p>BitBlt</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_bitblt" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_BITBLT&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_bitblt)"><strong>DXGK_GDIARG_BITBLT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_bitblt" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_BITBLT&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_bitblt)"><strong>DXGK_GDIARG_BITBLT</strong></a></p></td>
 <td align="left"><p>DXGK_GDIOP_BITBLT = 1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ClearType and antialiased text pixel blend</p></td>
 <td align="left"><p>ClearTypeBlend</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_cleartypeblend" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_CLEARTYPEBLEND&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_cleartypeblend)"><strong>DXGK_GDIARG_CLEARTYPEBLEND</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_cleartypeblend" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_CLEARTYPEBLEND&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_cleartypeblend)"><strong>DXGK_GDIARG_CLEARTYPEBLEND</strong></a></p></td>
 <td align="left"><p>DXGK_GDIOP_CLEARTYPEBLEND = 7</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>color fill</p></td>
 <td align="left"><p>ColorFill</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_colorfill" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_COLORFILL&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_colorfill)"><strong>DXGK_GDIARG_COLORFILL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_colorfill" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_COLORFILL&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_colorfill)"><strong>DXGK_GDIARG_COLORFILL</strong></a></p></td>
 <td align="left"><p>DXGK_GDIOP_COLORFILL = 2</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>stretched bit-block transfer</p></td>
 <td align="left"><p>StretchBlt</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_stretchblt" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_STRETCHBLT&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_stretchblt)"><strong>DXGK_GDIARG_STRETCHBLT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_stretchblt" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_STRETCHBLT&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_stretchblt)"><strong>DXGK_GDIARG_STRETCHBLT</strong></a></p></td>
 <td align="left"><p>DXGK_GDIOP_STRETCHBLT = 4</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>bit-block transfer with transparency</p></td>
 <td align="left"><p>TransparentBlt</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_transparentblt" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_TRANSPARENTBLT&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_transparentblt)"><strong>DXGK_GDIARG_TRANSPARENTBLT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_transparentblt" data-raw-source="[&lt;strong&gt;DXGK_GDIARG_TRANSPARENTBLT&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gdiarg_transparentblt)"><strong>DXGK_GDIARG_TRANSPARENTBLT</strong></a></p></td>
 <td align="left"><p>DXGK_GDIOP_TRANSPARENTBLT = 6</p></td>
 </tr>
 </tbody>
@@ -82,6 +81,4 @@ The operating system uses the **OpCode** member of DXGK\_RENDERKM\_COMMAND to in
 The operating system will also supply the appropriate value of the DXGK\_RENDERKM\_COMMAND **CommandSize** member, which specifies the size of the current rendering command, in bytes, including the value of **OpCode** and the number of sub-rectangles in the command.
 
 Further information about the capability of the display adapter to perform a bit-block transfer with transparency is provided in the [**D3DKM\_TRANSPARENTBLTFLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_d3dkm_transparentbltflags) structure contained in the DXGK\_GDIARG\_TRANSPARENTBLT-&gt;**Flags** member.
-
- 
 

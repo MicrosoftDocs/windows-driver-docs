@@ -1,7 +1,6 @@
 ---
 title: Reading Restart Records from a CLFS Stream
 description: Reading Restart Records from a CLFS Stream
-ms.assetid: 310545f6-d10d-481e-829d-287b045b98cd
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "reading restart records"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

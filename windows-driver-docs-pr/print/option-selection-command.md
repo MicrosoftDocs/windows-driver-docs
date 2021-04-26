@@ -1,7 +1,6 @@
 ---
 title: Option Selection Command
 description: Option Selection Command
-ms.assetid: 3f47d265-e12f-47e7-8a51-380a2fb4aaaa
 keywords:
 - printer commands WDK Unidrv , option selections
 - option selection commands WDK Unidrv

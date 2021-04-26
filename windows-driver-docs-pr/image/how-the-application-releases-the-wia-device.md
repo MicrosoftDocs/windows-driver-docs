@@ -1,7 +1,6 @@
 ---
 title: How the Application Releases the WIA Device
 description: How the Application Releases the WIA Device
-ms.assetid: 694daed4-d794-4835-a052-27cc498baa10
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: When to Check the Driver's I/O Stack Location
 description: When to Check the Driver's I/O Stack Location
-ms.assetid: ca084221-7b07-4db0-a987-9dd8a66d169c
 keywords: ["dispatch routines WDK kernel , I/O stack locations", "I/O stack locations WDK dispatch routines", "driver I/O stack locations WDK dispatch routines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

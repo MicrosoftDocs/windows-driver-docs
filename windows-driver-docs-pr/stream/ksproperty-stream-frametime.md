@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_FRAMETIME
 description: The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the duration of the next frame based on the particular media stream, and use that information to step-frame a sequence.
-ms.assetid: 0cc218eb-1f21-4b45-ac48-b3e308bddfaf
 keywords: ["KSPROPERTY_STREAM_FRAMETIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the dura
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime" data-raw-source="[&lt;strong&gt;KSFRAMETIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime)"><strong>KSFRAMETIME</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime" data-raw-source="[&lt;strong&gt;KSFRAMETIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime)"><strong>KSFRAMETIME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -86,6 +85,4 @@ Requirements
 [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
 [**KSFRAMETIME**](/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime)
-
- 
 

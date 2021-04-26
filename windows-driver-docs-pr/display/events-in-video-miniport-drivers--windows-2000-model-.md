@@ -1,7 +1,6 @@
 ---
 title: Events in Video Miniport Drivers (Windows 2000 Model)
 description: Events in Video Miniport Drivers (Windows 2000 Model)
-ms.assetid: f6b5ded8-ddb4-4242-9bd3-b12dc96d8f6b
 keywords:
 - video miniport drivers WDK Windows 2000 , events
 - events WDK video miniport
@@ -36,27 +35,27 @@ The following table lists the event-related functions that the video port driver
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportclearevent" data-raw-source="[&lt;strong&gt;VideoPortClearEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportclearevent)"><strong>VideoPortClearEvent</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/video/nf-video-videoportclearevent" data-raw-source="[&lt;strong&gt;VideoPortClearEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportclearevent)"><strong>VideoPortClearEvent</strong></a></p></td>
 <td align="left"><p>Sets a given event object to the nonsignaled state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportcreateevent" data-raw-source="[&lt;strong&gt;VideoPortCreateEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportcreateevent)"><strong>VideoPortCreateEvent</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/video/nf-video-videoportcreateevent" data-raw-source="[&lt;strong&gt;VideoPortCreateEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportcreateevent)"><strong>VideoPortCreateEvent</strong></a></p></td>
 <td align="left"><p>Creates an event object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportdeleteevent" data-raw-source="[&lt;strong&gt;VideoPortDeleteEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportdeleteevent)"><strong>VideoPortDeleteEvent</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/video/nf-video-videoportdeleteevent" data-raw-source="[&lt;strong&gt;VideoPortDeleteEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportdeleteevent)"><strong>VideoPortDeleteEvent</strong></a></p></td>
 <td align="left"><p>Deletes the specified event object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportreadstateevent" data-raw-source="[&lt;strong&gt;VideoPortReadStateEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportreadstateevent)"><strong>VideoPortReadStateEvent</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/video/nf-video-videoportreadstateevent" data-raw-source="[&lt;strong&gt;VideoPortReadStateEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportreadstateevent)"><strong>VideoPortReadStateEvent</strong></a></p></td>
 <td align="left"><p>Returns the current state of a given event object: signaled or nonsignaled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportsetevent" data-raw-source="[&lt;strong&gt;VideoPortSetEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportsetevent)"><strong>VideoPortSetEvent</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/video/nf-video-videoportsetevent" data-raw-source="[&lt;strong&gt;VideoPortSetEvent&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportsetevent)"><strong>VideoPortSetEvent</strong></a></p></td>
 <td align="left"><p>Sets an event object to the signaled state if it was not already in that state, and returns the event object's previous state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportwaitforsingleobject" data-raw-source="[&lt;strong&gt;VideoPortWaitForSingleObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportwaitforsingleobject)"><strong>VideoPortWaitForSingleObject</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/video/nf-video-videoportwaitforsingleobject" data-raw-source="[&lt;strong&gt;VideoPortWaitForSingleObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/nf-video-videoportwaitforsingleobject)"><strong>VideoPortWaitForSingleObject</strong></a></p></td>
 <td align="left"><p>Puts the current thread into a wait state until the given dispatch object is set to the signaled state, or (optionally) until the wait times out.</p></td>
 </tr>
 </tbody>
@@ -67,6 +66,4 @@ The following table lists the event-related functions that the video port driver
 GDI also provides support for events to display drivers. See [Using Events in Display Drivers](using-events-in-display-drivers.md) for more information.
 
 For a broader perspective on events, see [Event Objects](../kernel/event-objects.md) in the *Kernel-Mode Drivers Design Guide*.
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: ELAM Driver Requirements
 description: Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.
-ms.assetid: B00B4361-B531-4D28-A521-0F8B3B48CEA4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -196,6 +195,6 @@ If a boot driver is skipped due to the initialization policy, the Kernel continu
 ## ELAM and Measured Boot
 
 
-If the ELAM driver detects a policy violation (a rootkit, for example), it should immediately call [**Tbsi_Revoke_Attestation**](/windows/desktop/api/tbs/nf-tbs-tbsi_revoke_attestation) to invalidate the PCRs that indicated that the system was in a good state. The function returns an error if there is a problem with measured boot, for example no TPM on the system.
+If the ELAM driver detects a policy violation (a rootkit, for example), it should immediately call [**Tbsi_Revoke_Attestation**](/windows/win32/api/tbs/nf-tbs-tbsi_revoke_attestation) to invalidate the PCRs that indicated that the system was in a good state. The function returns an error if there is a problem with measured boot, for example no TPM on the system.
 
 **Tbsi_Revoke_Attestation** is callable from kernel mode. It extends PCR[12] by an unspecified value and increments the event counter in the TPM. Both actions are necessary, so the trust is broken in all quotes that are created from here forward. As a result, the Measured Boot logs will not reflect the current state of the TPM for the remainder of the time that the TPM is powered up, and remote systems will not be able to form trust in the security state of the system.

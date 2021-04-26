@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_DATAFLOW
 description: The KSPROPERTY\_PIN\_DATAFLOW property specifies the direction of data flow on pins instantiated by the pin factory. Sink pins are entry points into a filter; source pins output from a filter.
-ms.assetid: 3132b344-c4f3-48dc-9829-f4e97d0f18fc
 keywords: ["KSPROPERTY_PIN_DATAFLOW Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_PIN\_DATAFLOW property specifies the direction of data flow on p
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow" data-raw-source="[&lt;strong&gt;KSPIN_DATAFLOW&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow)"><strong>KSPIN_DATAFLOW</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow" data-raw-source="[&lt;strong&gt;KSPIN_DATAFLOW&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow)"><strong>KSPIN_DATAFLOW</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -86,6 +85,4 @@ Requirements
 [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 
 [**KSPIN\_DATAFLOW**](/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow)
-
- 
 

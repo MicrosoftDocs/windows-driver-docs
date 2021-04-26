@@ -1,7 +1,6 @@
 ---
 title: Properties and Data Management
 description: Properties and Data Management
-ms.assetid: 773367dc-26cc-41cf-b8a6-68370ae49306
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

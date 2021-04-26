@@ -1,7 +1,6 @@
 ---
 title: Packet Coalescing Receive Filters
 description: Packet Coalescing Receive Filters
-ms.assetid: B5C17A9D-A495-4A3D-B53E-B10F53C732D4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ Starting with NDIS 6.30, [NDIS receive filters](/windows-hardware/drivers/ddi/_n
 
      
 
-Overlying drivers, such as protocol and filter drivers, download the packet coalescing receive filters to the miniport driver by issuing object identifier (OID) set requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md). For more information, see [Setting Packet Coalescing Receive Filters](setting-packet-coalescing-receive-filters.md).
+Overlying drivers, such as protocol and filter drivers, download the packet coalescing receive filters to the miniport driver by issuing object identifier (OID) set requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md). For more information, see [Setting Packet Coalescing Receive Filters](specifying-a-packet-coalescing-receive-filter.md).
 
 Overlying drivers can also query the packet coalescing receive filters downloaded to the miniport driver. Overlying drivers do this by issuing OID method requests of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](./oid-receive-filter-enum-filters.md) to the miniport driver. For more information, see [Querying Packet Coalescing Receive Filters](querying-packet-coalescing-receive-filters.md).
 

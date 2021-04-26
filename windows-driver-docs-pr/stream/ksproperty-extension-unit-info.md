@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTENSION\_UNIT\_INFO
 description: The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, bNumControls, bNrInPins, and baSourceID members of the Extension Unit Descriptor.
-ms.assetid: a7a2f655-8df7-4260-883f-53d6f5a7c6f3
 keywords: ["KSPROPERTY_EXTENSION_UNIT_INFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)"><strong>KSP_NODE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)"><strong>KSP_NODE</strong></a></p></td>
 <td><p>PVOID</p></td>
 </tr>
 </tbody>

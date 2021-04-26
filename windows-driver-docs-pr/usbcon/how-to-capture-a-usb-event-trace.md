@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # How to capture a USB event trace with Logman
 
 
-This topic provides information about using the [Logman](https://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
+This topic provides information about using the [Logman](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753820(v=ws.10)) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ You can filter events based on keywords depending on your requirements. Here are
 </tr>
 <tr class="even">
 <td><p><strong>FullDataBusTrace</strong></p></td>
-<td><p>Shows all USB transfer events and saves up to 4 KB of bus data for bulk, interrupt, and control transfers. Note that only the first buffer of a chained MDL is logged. Isochronous bus data is never logged (though the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer" data-raw-source="[&lt;strong&gt;URB_ISOCH_TRANSFER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer)"><strong>URB_ISOCH_TRANSFER</strong></a> request structure is saved). For more information, see <a href="how-to-send-chained-mdls.md" data-raw-source="[How to send chained MDLs](how-to-send-chained-mdls.md)">How to send chained MDLs</a> and <a href="transfer-data-to-isochronous-endpoints.md" data-raw-source="[How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md)">How to transfer data to USB isochronous endpoints</a>.</p></td>
+<td><p>Shows all USB transfer events and saves up to 4 KB of bus data for bulk, interrupt, and control transfers. Note that only the first buffer of a chained MDL is logged. Isochronous bus data is never logged (though the <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer" data-raw-source="[&lt;strong&gt;URB_ISOCH_TRANSFER&lt;/strong&gt;](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer)"><strong>URB_ISOCH_TRANSFER</strong></a> request structure is saved). For more information, see <a href="how-to-send-chained-mdls.md" data-raw-source="[How to send chained MDLs](how-to-send-chained-mdls.md)">How to send chained MDLs</a> and <a href="transfer-data-to-isochronous-endpoints.md" data-raw-source="[How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md)">How to transfer data to USB isochronous endpoints</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>HWVerifyHost</strong></p></td>
@@ -164,7 +164,4 @@ Sometimes it is helpful to have the transfer events in your trace log, such as h
 ## Related topics
 [Using USB ETW](using-usb-etw.md)  
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-[Defining Keywords Used to Classify Types of Events](https://docs.microsoft.com/windows/desktop/WES/defining-keywords-used-to-classify-types-of-events)  
-
-
-
+[Defining Keywords Used to Classify Types of Events](/windows/desktop/WES/defining-keywords-used-to-classify-types-of-events)

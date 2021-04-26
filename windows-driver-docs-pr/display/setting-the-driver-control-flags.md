@@ -1,7 +1,6 @@
 ---
 title: Setting the Driver Control Flags
 description: Setting the Driver Control Flags
-ms.assetid: cca51b9c-ce37-4efb-ab42-8eb62b25eb21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

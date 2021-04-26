@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_Model
 description: DEVPKEY_DrvPkg_Model
-ms.assetid: 54aedf63-50b3-49eb-9638-2984af7de59a
 keywords: ["DEVPKEY_DrvPkg_Model Device and Driver Installation"]
 topic_type:
 - apiref
@@ -50,7 +49,7 @@ The DEVPKEY_DrvPkg_Model device [driver package](./driver-packages.md) property 
 Remarks
 -------
 
-You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -92,7 +91,7 @@ Requirements
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

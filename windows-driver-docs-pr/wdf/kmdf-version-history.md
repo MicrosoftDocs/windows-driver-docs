@@ -1,7 +1,6 @@
 ---
 title: KMDF Version History
 description: This topic lists versions of Kernel-Mode Driver Framework (KMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
-ms.assetid: b920937c-2e5d-48cc-81b5-1462f5d03d75
 keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
@@ -50,6 +49,7 @@ For information about the new features for KMDF drivers in Windows 10, see [Wha
 * Added new API [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex)
 * Improved existing API [**WdfDeviceGetSystemPowerAction**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetsystempoweraction)
 * Added new API [**WdfPdoInitRemovePowerDependencyOnParent**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitremovepowerdependencyonparent)
+* [Introduction to the Directed Power Management Framework](../kernel/introduction-to-the-directed-power-management-framework.md)
 
 ## KMDF Version 1.29
 
@@ -155,7 +155,7 @@ Version 1.11 adds the following functionality:
 
 -   Added **DbgWaitForSignalTimeoutInSec** to [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
--   Added [InstallWdf](https://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](https://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](https://go.microsoft.com/fwlink/p/?linkid=256158) samples.
+-   Added [InstallWdf](/samples/browse/), [MultiComp](/samples/browse/), and [SingleComp](/samples/browse/) samples.
 
 ## KMDF Version 1.9
 
@@ -215,6 +215,4 @@ Version 1.9 adds the following functionality:
 
 
 Initial release.
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xBE ATTEMPTED_WRITE_TO_READONLY_MEMORY
 description: The ATTEMPTED_WRITE_TO_READONLY_MEMORY bug check has a value of 0x000000BE. This is issued if a driver attempts to write to a read-only memory segment.
-ms.assetid: d6247828-09ae-4071-9b4f-917af29265bc
 keywords: ["Bug Check 0xBE ATTEMPTED_WRITE_TO_READONLY_MEMORY", "ATTEMPTED_WRITE_TO_READONLY_MEMORY"]
 ms.date: 05/23/2017
 topic_type:

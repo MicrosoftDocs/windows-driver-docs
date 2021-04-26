@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED is an extended property control that allows more global ISO control with more granularity.
-ms.assetid: A9327DB8-422B-410C-8766-D70811BA5C73
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED Streaming Media Devices"]
 topic_type:
 - apiref

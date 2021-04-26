@@ -1,7 +1,6 @@
 ---
 title: Registering FsFilter Callback Routines
 description: Registering FsFilter Callback Routines
-ms.assetid: d040e61c-514e-446b-9e72-934fd4322d3b
 keywords:
 - registering callback routines
 - callback routines WDK file system

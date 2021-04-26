@@ -1,7 +1,6 @@
 ---
 title: WMI Support for Header-Data Split
 description: WMI Support for Header-Data Split
-ms.assetid: f923779d-1170-4307-97d9-9a133a62a002
 keywords:
 - header-data split WDK , configuration
 - WMI WDK networking , header-data split

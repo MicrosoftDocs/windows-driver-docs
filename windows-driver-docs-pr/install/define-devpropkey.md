@@ -1,7 +1,6 @@
 ---
 title: DEFINE_DEVPROPKEY
 description: In Windows Vista and later versions of Windows, the DEFINE_DEVPROPKEY macro creates a DEVPROPKEY structure that represents a device property key in the unified device property model.
-ms.assetid: 9723241d-939e-40b4-8f06-83c99b31c02e
 keywords: ["DEFINE_DEVPROPKEY Device and Driver Installation"]
 topic_type:
 - apiref

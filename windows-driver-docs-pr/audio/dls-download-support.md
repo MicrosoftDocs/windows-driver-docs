@@ -1,7 +1,6 @@
 ---
 title: DLS Download Support
 description: DLS Download Support
-ms.assetid: be080b53-0a9d-47fc-b07b-88052efdf9a8
 keywords:
 - downloadable sounds WDK audio
 - DirectMusic custom rendering WDK audio , downloadable sounds
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 ## <span id="custom_dls"></span><span id="CUSTOM_DLS"></span>
 
 
-If you are writing your own synthesizer, you also have to provide support for downloadable sounds (DLS) so that the application can convert MIDI note messages to particular instrument sounds. Specifically, you should implement your [**IDirectMusicSynth::Download**](/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-download) method so that it can download instrument wave and articulation data to the synthesizer. This method should accept raw data (typically from a collection file) and store it in a form that can be used by your rendering engine.
+If you are writing your own synthesizer, you also have to provide support for downloadable sounds (DLS) so that the application can convert MIDI note messages to particular instrument sounds. Specifically, you should implement your [**IDirectMusicSynth::Download**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-download) method so that it can download instrument wave and articulation data to the synthesizer. This method should accept raw data (typically from a collection file) and store it in a form that can be used by your rendering engine.
 
 When DirectMusic downloads DLS data to the driver, the format of the data buffer is defined in terms of several DirectMusic structures. The downloaded data begins with two structures:
 

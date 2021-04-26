@@ -1,7 +1,6 @@
 ---
 title: Optional Commands
 description: Optional Commands
-ms.assetid: b9c411b1-0061-468a-b900-47c6062aa3b0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -8,7 +8,6 @@ keywords:
 - monitors
 - HMD
 - virtual reality
-ms.author: windowsdriverdev
 ms.date: 11/30/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -16,12 +15,9 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-
 # EDID extension for head-mounted and specialized monitors
 
-*Specification for Display Manufacturers*
-
-This document provides guidance on how to implement an [EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data) CTA (Consumer Technology Association) extension in HMD (Head Mounted Display) or specialized display firmware that will allow  Windows to recognize the display as special and thus enable each layer in the Windows OS to treat them correctly. In this document the terms display and monitor are synonymous.
+This page provides guidance for display manufacturers on how to implement an [EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data) CTA (Consumer Technology Association) extension in HMD (Head Mounted Display) or specialized display firmware that will allow Windows to recognize the display as special and thus enable each layer in the Windows OS to treat them correctly. The terms display and monitor are synonymous.
 
 Without this EDID extension, HMDs and specialized displays have the following problems:
 
@@ -39,7 +35,7 @@ The Video Electronics Standards Association (VESA) has defined standardized fiel
 
 ## Vendor-specific data block (VSDB)
 
-The party responsible for writing the firmware code that contains the EDID must include a CTA extension block and within that block put a Microsoft-defined Vendor Specific Data Block (VSDB). The structure of EDIDs is described in the "VESA Enhanced Extended Display Identification Data Standard" ([E-EDID](https://vesa.org/vesa-standards/standards-summaries/)), see version 1.4, release A, revision 2 with section 2.2 describing extension blocks.  The CTA extension block is defined in the CTA's 861 series documents "A DTV Profile for Uncompressed High-Speed Digital Interfaces".  VSDBs are described in section 7.5.4 in the latest (at time of writing) published version, [CTA-861-G](https://standards.cta.tech/kwspub/published_docs/CTA-861-G-Preview.pdf) including the order of VSDB relative to other data blocks.
+The party responsible for writing the firmware code that contains the EDID must include a CTA extension block and within that block put a Microsoft-defined Vendor Specific Data Block (VSDB). The structure of EDIDs is described in the "VESA Enhanced Extended Display Identification Data Standard" ([E-EDID](https://vesa.org/standards-specifications/)), see version 1.4, release A, revision 2 with section 2.2 describing extension blocks.  The CTA extension block is defined in the CTA's 861 series documents "A DTV Profile for Uncompressed High-Speed Digital Interfaces".  VSDBs are described in [ANSI/CTA-861-G](https://webstore.ansi.org/Standards/ANSI/CTA8612016ANSI) including the order of VSDB relative to other data blocks.
 
 The VSDB structure must have the format and values that are outlined in the following table.
 

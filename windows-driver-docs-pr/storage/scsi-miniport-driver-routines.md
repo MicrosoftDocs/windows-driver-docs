@@ -1,7 +1,6 @@
 ---
 title: Required and Optional SCSI Miniport Driver Routines
 description: Required and Optional SCSI Miniport Driver Routines
-ms.assetid: 6fd1f7af-e8ba-4679-bd8c-f757b57821b0
 keywords:
 - SCSI miniport drivers WDK storage , required routines
 - SCSI miniport drivers WDK storage , optional routines

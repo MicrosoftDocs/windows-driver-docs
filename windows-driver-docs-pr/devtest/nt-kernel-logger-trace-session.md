@@ -1,7 +1,6 @@
 ---
 title: NT Kernel Logger Trace Session
 description: NT Kernel Logger Trace Session
-ms.assetid: d805ae15-8946-4bb6-83b6-d5d31aacd456
 keywords:
 - trace sessions WDK , NT Kernel Logger
 - NT Kernel Logger trace sessions WDK

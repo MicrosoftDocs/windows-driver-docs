@@ -1,5 +1,4 @@
 ---
-ms.assetid: 18A9ACEF-51F8-4BC0-B305-F58287AD321C
 title: Stampinf Properties for Driver Projects
 description: Sets the properties for the Stampinf tool. You can use Stampinf to update common INF and INX file directives when you build the driver.
 ms.date: 04/20/2017
@@ -37,15 +36,15 @@ If you want to add this property page to your project, so that you can run the S
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Architecture"></span><span id="architecture"></span><span id="ARCHITECTURE"></span><strong>Architecture</strong></p></td>
-<td align="left"><p>Specifies the <em>architecture</em> string to replace the $ARCH$ variable that is used in INX files. The default value is $(InfArch), a macro that selects the current active configuration in Visual Studio. Possible values include <strong>x86</strong>, <strong>x64</strong>. This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-a [</strong><em>architecture</em><strong>]</strong>.</p></td>
+<td align="left"><p>Specifies the <em>architecture</em> string to replace the $ARCH$ variable that is used in INX files. The default value is $(InfArch), a macro that selects the current active configuration in Visual Studio. Possible values include <strong>x86</strong>, <strong>x64</strong>. This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-a [</strong><em>architecture</em><strong>]</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Enable_VersionStamp"></span><span id="enable_versionstamp"></span><span id="ENABLE_VERSIONSTAMP"></span><strong>Enable VersionStamp</strong></p></td>
-<td align="left"><p>Enables the version time stamp. If enabled, the <strong>Driver Version Number</strong> must not be empty. The <strong>Driver Version Number</strong> specifies the time that is written in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a> for the version number. If not enabled, see the description of the default behavior for this option under <strong>Driver Version Number</strong>.</p></td>
+<td align="left"><p>Enables the version time stamp. If enabled, the <strong>Driver Version Number</strong> must not be empty. The <strong>Driver Version Number</strong> specifies the time that is written in the <a href="/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a> for the version number. If not enabled, see the description of the default behavior for this option under <strong>Driver Version Number</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Driver_Version_Number"></span><span id="driver_version_number"></span><span id="DRIVER_VERSION_NUMBER"></span><strong>Driver Version Number</strong></p></td>
-<td align="left"><p>Specifies the time that is written in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a> for the version number. The format for the time is <em>hours.minutes.seconds.milliseconds</em> (for example, 11.30.20.15). This option is useful during development because it provides a convenient way to increase the version number of the driver. This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-v [</strong> <em>time</em> <strong>| <em>]</strong>.</p>
+<td align="left"><p>Specifies the time that is written in the <a href="/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a> for the version number. The format for the time is <em>hours.minutes.seconds.milliseconds</em> (for example, 11.30.20.15). This option is useful during development because it provides a convenient way to increase the version number of the driver. This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-v [</strong> <em>time</em> <strong>| <em>]</strong>.</p>
 <p>To use the current time, specify an asterisk (</em>) with this parameter.</p>
 <p><em>Default behavior:</em></p>
 <p>If the <strong>Driver Version Number</strong> is not specified, or if <strong>Enable VersionStamp</strong> is <strong>No</strong> or unspecified, Stampinf uses one of the following version number values:</p>
@@ -54,7 +53,7 @@ If you want to add this property page to your project, so that you can run the S
 <li><p>If the STAMPINF_VERSION environment variable is not specified, Stampinf extracts the version number from the ntverp.h file.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  By default, the STAMPINF_VERSION environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="https://docs.microsoft.com/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015)">How to: Use Environment Variables in a Build</a>.
+<strong>Note</strong>  By default, the STAMPINF_VERSION environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="/visualstudio/msbuild/how-to-use-environment-variables-in-a-build" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)">How to: Use Environment Variables in a Build</a>.
 </div>
 <div>
  
@@ -66,7 +65,7 @@ If you want to add this property page to your project, so that you can run the S
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Driver_Version_Directive_Date"></span><span id="driver_version_directive_date"></span><span id="DRIVER_VERSION_DIRECTIVE_DATE"></span><strong>Driver Version Directive Date</strong></p></td>
-<td align="left"><p>Specifies the date that is written in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a>. The format for the date is <em>month</em>/<em>date</em>/<em>year</em> (for example, <strong>10/20/2011</strong>).</p>
+<td align="left"><p>Specifies the date that is written in the <a href="/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a>. The format for the date is <em>month</em>/<em>date</em>/<em>year</em> (for example, <strong>10/20/2011</strong>).</p>
 <p>To use the current date, specify an asterisk (<strong><em></strong>) with this parameter.</p>
 <p><em>Default behavior:</em></p>
 <p>If the <strong>Driver Version Directive Date</strong> parameter is not specified, or if <strong>Enable DateStamp</strong> is <strong>No</strong> or unspecified, Stampinf uses one of the following date values:</p>
@@ -74,9 +73,9 @@ If you want to add this property page to your project, so that you can run the S
 <li><p>If the STAMPINF_DATE environment variable is set, Stampinf uses the date value that is specified by this environment variable.</p></li>
 <li><p>If the STAMPINF_DATE environment variable is not specified, Stampinf uses the current date.</p></li>
 </ul>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-d [</strong><em>date</em><strong>|</em>]</strong>.</p>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-d [</strong><em>date</em><strong>|</em>]</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  By default, the STAMPINF_DATE environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="https://docs.microsoft.com/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015)">How to: Use Environment Variables in a Build</a>.
+<strong>Note</strong>  By default, the STAMPINF_DATE environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="/visualstudio/msbuild/how-to-use-environment-variables-in-a-build" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)">How to: Use Environment Variables in a Build</a>.
 </div>
 <div>
  
@@ -84,15 +83,15 @@ If you want to add this property page to your project, so that you can run the S
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Driver_Version_Directive_Section"></span><span id="driver_version_directive_section"></span><span id="DRIVER_VERSION_DIRECTIVE_SECTION"></span><strong>Driver Version Directive Section</strong></p></td>
-<td align="left"><p>Specifies the INF section in which to put the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a>. The default location for this directive is the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section" data-raw-source="[&lt;strong&gt;INF Version section&lt;/strong&gt;](../install/inf-version-section.md)"><strong>INF Version section</strong></a>.</p>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-s</strong> <em>section</em>.</p></td>
+<td align="left"><p>Specifies the INF section in which to put the <a href="/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](../install/inf-driverver-directive.md)"><strong>INF DriverVer directive</strong></a>. The default location for this directive is the <a href="/windows-hardware/drivers/install/inf-version-section" data-raw-source="[&lt;strong&gt;INF Version section&lt;/strong&gt;](../install/inf-version-section.md)"><strong>INF Version section</strong></a>.</p>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-s</strong> <em>section</em>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="KMDF_Version_Number"></span><span id="kmdf_version_number"></span><span id="KMDF_VERSION_NUMBER"></span><strong>KMDF Version Number</strong></p></td>
 <td align="left"><p>Specifies the version of KMDF that this driver depends on. This is used to customize the KmdfLibraryVersion and KMDF co-installer name in the INF file. This option replaces the $KMDFVERSION$ and $KMDFCOINSTALLERVERSION$ keywords in the INF file. The string has the following format:</p>
 <p><em>&lt;major_version&gt;</em>.<em>&lt;minor_version&gt;</em></p>
 <p>For example, if you specify 1.5 as the version string, the values 1.5 and 01005 are used for the two keywords (respectively).</p>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-k</strong> <em>KMDFversion</em>.</p></td>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-k</strong> <em>KMDFversion</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="UMDF_Version_Number"></span><span id="umdf_version_number"></span><span id="UMDF_VERSION_NUMBER"></span><strong>UMDF Version Number</strong></p></td>
@@ -100,22 +99,22 @@ If you want to add this property page to your project, so that you can run the S
 <p><em>&lt;major_version&gt;</em>.<em>&lt;minor_version&gt;</em>.<em>&lt;service_version&gt;</em></p>
 <p>(where <em>&lt;service_version&gt;</em> is typically zero).</p>
 <p>For example, if you specify 1.5.0 as the version string, the values 1.5.0 and 01005 are used for the major and minor keywords (respectively).</p>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-u</strong> <em>UMDFversion</em>.</p></td>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-u</strong> <em>UMDFversion</em>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Catalog_File_Name"></span><span id="catalog_file_name"></span><span id="CATALOG_FILE_NAME"></span><strong>Catalog File Name</strong></p></td>
-<td align="left"><p>Specifies the value that is written in the <strong>CatalogFile</strong> directive in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section" data-raw-source="[&lt;strong&gt;INF Version section&lt;/strong&gt;](../install/inf-version-section.md)"><strong>INF Version section</strong></a>. By default, the <strong>CatalogFile</strong> directive is not written.</p>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-c</strong> <em>catalogfile</em>.</p></td>
+<td align="left"><p>Specifies the value that is written in the <strong>CatalogFile</strong> directive in the <a href="/windows-hardware/drivers/install/inf-version-section" data-raw-source="[&lt;strong&gt;INF Version section&lt;/strong&gt;](../install/inf-version-section.md)"><strong>INF Version section</strong></a>. By default, the <strong>CatalogFile</strong> directive is not written.</p>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-c</strong> <em>catalogfile</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Verbose"></span><span id="verbose"></span><span id="VERBOSE"></span><strong>Verbose</strong></p></td>
 <td align="left"><p>Shows verbose Stampinf output.</p>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-n</strong> .</p></td>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-n</strong> .</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Version_Header_Path"></span><span id="version_header_path"></span><span id="VERSION_HEADER_PATH"></span><strong>Version Header Path</strong></p></td>
 <td align="left"><p>Specifies the location of Ntverp.h file. The path represent the fully qualified location of the directory containing Ntverp.h.</p>
-<p>This setting is equivalent to specifying the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-i</strong> <em>path</em>.</p></td>
+<p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-i</strong> <em>path</em>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -130,6 +129,4 @@ If you want to add this property page to your project, so that you can run the S
 * [**INF Version section**](../install/inf-version-section.md)
 * [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
 * [Stampinf task](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552786_task)
-* [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015)
- 
-
+* [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)

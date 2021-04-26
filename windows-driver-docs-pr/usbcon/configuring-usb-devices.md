@@ -16,7 +16,7 @@ Device configuration refers to the tasks that the client driver performs to sele
 
 A WDM-based client driver can select any of the configurations in a USB device.
 
-If your client driver is based on [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) or [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/), you should use the respective framework interfaces for configuring a USB device. If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code selects the first configuration and the default alternate setting in each interface.
+If your client driver is based on [Kernel-Mode Driver Framework](../wdf/index.md) or [User-Mode Driver Framework](../wdf/index.md), you should use the respective framework interfaces for configuring a USB device. If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code selects the first configuration and the default alternate setting in each interface.
 
 ## In this section
 
@@ -58,15 +58,12 @@ For information about special considerations related to the configuration of dev
 Certain restrictions apply if a client driver is using WDF objects or whether the device has a single interface or multiple interfaces. Consider the following restrictions before changing the default configuration:
 
 -   A client driver for a composite device that manages interfaces or interface collections through the [USB Generic Parent Driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys) cannot change the device's configuration value. However, the client driver can configure Usbccgp.sys to select a configuration other than the first (default) configuration. For more information, see [Configuring Usbccgp.sys to Select a Non-Default USB Configuration](selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md).
--   A KMDF-based client driver that is using the framework's [USB I/O Targets](https://docs.microsoft.com/windows-hardware/drivers/wdf/usb-i-o-targets) can select only the first configuration.
+-   A KMDF-based client driver that is using the framework's [USB I/O Targets](../wdf/usb-i-o-targets.md) can select only the first configuration.
 -   [WinUSB](winusb.md) supports only the first configuration.
 -   A class driver frequently lacks support for multiple configurations. If your device implements a class that is defined by a USB class specification, see the [USB Technology](https://go.microsoft.com/fwlink/p/?linkid=8769) website for information about device classes and class specifications. Microsoft provides class drivers for the supported USB device classes. For more information, see [Drivers for the Supported USB Device Classes](supported-usb-classes.md).
 
 ## Related topics
 [USB Driver Development Guide](usb-driver-development-guide.md)  
 [USB Configuration Descriptors](usb-configuration-descriptors.md)  
-[Working with USB Devices](https://docs.microsoft.com/windows-hardware/drivers/wdf/working-with-usb-devices)  
-[Working with USB Interfaces in UMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/working-with-usb-interfaces-in-umdf-1-x-drivers)  
-
-
-
+[Working with USB Devices](../wdf/working-with-usb-devices.md)  
+[Working with USB Interfaces in UMDF](../wdf/working-with-usb-interfaces-in-umdf-1-x-drivers.md)

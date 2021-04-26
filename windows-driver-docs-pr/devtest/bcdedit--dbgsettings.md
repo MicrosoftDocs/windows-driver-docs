@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /dbgsettings
 description: The /dbgsettings option sets or displays the current global debugger settings for the computer.
-ms.assetid: df2fe55c-2752-4e0c-a4c0-004235b85e22
 ms.date: 04/23/2019
 keywords: ["BCDEdit /dbgsettings Driver Development Tools"]
 topic_type:
@@ -68,7 +67,7 @@ bcdedit /set "{dbgsettings}" busparams b.d.f
 
 If you are manually configuring a debugger connection, you must specify the bus parameters. For more information, see [Setting Up KDNET Network Kernel Debugging Manually](../debugger/setting-up-a-network-debugging-connection.md) and [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md).
 
-### Examples
+## Examples
 
 The following command configures the target computer to use an Ethernet connection for debugging and specifies the IP address of the host computer. The command also specifies a port number that the host computer can use to connect to the target computer. 
 

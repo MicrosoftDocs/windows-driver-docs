@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Reported
 description: DEVPKEY_Device_Reported
-ms.assetid: dfec9e24-4d4e-42e4-a229-ad3d060fb1b5
 keywords: ["DEVPKEY_Device_Reported Device and Driver Installation"]
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Remarks
 
 The PnP manager sets the value of DEVPKEY_Device_Reported to DEVPROP_TRUE if the device is a root-enumerated device that the driver for the device reported to the PnP manager by calling IoReportDetectedDevice. Otherwise, the PnP manager sets the value of the property to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Reported.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Reported.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -74,7 +73,7 @@ Requirements
 
 [**IoReportDetectedDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

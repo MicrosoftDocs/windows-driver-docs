@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_CANCEL_REMOVE_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_CANCEL_REMOVE_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 5cadb1e2-7011-42a5-8e41-6473069b25a6
 keywords:
  - IRP_MN_CANCEL_REMOVE_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -57,7 +56,7 @@ The PnP manager calls any **EventCategoryTargetDeviceChange** notification callb
 
 If a file system is mounted on the device, it must undo any operations it did in response to the query-remove notification.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for detailed information about handling remove IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for detailed information about handling remove IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

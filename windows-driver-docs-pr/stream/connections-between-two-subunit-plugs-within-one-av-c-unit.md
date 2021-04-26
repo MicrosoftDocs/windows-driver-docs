@@ -1,7 +1,6 @@
 ---
 title: Connections Between Two Subunit Plugs Within One AV/C Unit
 description: Provides information about connections between two subunit plugs within one AV/C unit
-ms.assetid: 2acd5f23-89b6-40f9-9154-22f1bb51d08c
 keywords:
 - connections WDK AV/C
 - AV/C WDK , connection scenarios

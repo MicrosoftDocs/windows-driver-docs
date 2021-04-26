@@ -7,36 +7,30 @@ ms.localizationpriority: medium
 
 # USB client driver verifier
 
-
 This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
 
--   [What is the USB client driver verifier](#what-is-the-usb-client-driver-verifier)
--   [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
--   [Configuration settings for the USB client driver verifier](#configuration-settings-for-the-usb-client-driver-verifier)
+- [What is the USB client driver verifier](#what-is-the-usb-client-driver-verifier)
+- [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
+- [Configuration settings for the USB client driver verifier](#configuration-settings-for-the-usb-client-driver-verifier)
 
 ## What is the USB client driver verifier
 
-
 The *USB client driver verifier* is a feature of the USB 3.0 driver stack, included in Windows 8. When the verifier is enabled, the USB driver stack fails or modifies certain operations performed by a client driver. Those failures simulate error conditions that might be otherwise difficult to find and can lead to undesirable results later. The simulated failures give you the opportunity to make sure that your driver is able to deal with failures gracefully. The client can deal with errors through error handling code or exercise a different code path.
 
-For example, a client driver supports I/O operations through static streams of a bulk endpoint. By using the verifier, you can make sure that driver's streams logic works regardless of the number of streams supported by various host controllers. To simulate that scenario, you can use the **UsbVerifierStaticStreamCountOverride** setting (discussed later). Each time the driver calls [**USBD\_QueryUsbCapability**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) to determine the maximum number of static streams that the host controller supports, the routine returns a different value.
+For example, a client driver supports I/O operations through static streams of a bulk endpoint. By using the verifier, you can make sure that driver's streams logic works regardless of the number of streams supported by various host controllers. To simulate that scenario, you can use the **UsbVerifierStaticStreamCountOverride** setting (discussed later). Each time the driver calls [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) to determine the maximum number of static streams that the host controller supports, the routine returns a different value.
 
 **Important**  The USB client driver verifier only tests your driver against various xHCI controllers. It simulates some of the inherent 2.0 controller behaviors such as lack of chained MDL support. However, we recommend that you must test your client drivers with the USB 2.0 controllers and not use this tool as a replacement for the same.
 
- 
-
-The Windows Hardware Certification Kit includes an automated test that runs the simulated test cases. For more information, see [USB (USBDEX) Verifier Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh998558(v=vs.85)).
+The Windows Hardware Certification Kit includes an automated test that runs the simulated test cases. For more information, see [USB (USBDEX) Verifier Test](/previous-versions/windows/hardware/hck/hh998558(v=vs.85)).
 
 ## How to enable the USB client driver verifier
 
-
 In order to use the USB client driver verifier, enable it on your target computer on which running Windows 8. The target computer must have an xHCI controller to which the USB device is connected.
 
-The USB client driver verifier is automatically enabled when you enable the [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) for the client driver. Alternatively, you can enable the verifier by setting this registry entry.
+The USB client driver verifier is automatically enabled when you enable the [Driver Verifier](../devtest/driver-verifier.md) for the client driver. Alternatively, you can enable the verifier by setting this registry entry.
 
-**Note**  Enabling [The Windows Driver Foundation (WDF) Verifier control application (WdfVerifier.exe)](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) does not enable the USB client driver verifier automatically.
-
- 
+> [!NOTE]
+> Enabling [The Windows Driver Foundation (WDF) Verifier control application (WdfVerifier.exe)](../devtest/wdf-verifier-control-application.md) does not enable the USB client driver verifier automatically.
 
 ```cpp
 HKEY_LOCAL_MACHINE
@@ -48,12 +42,11 @@ HKEY_LOCAL_MACHINE
                   UsbVerifierEnabled (DWORD)
 ```
 
-The **UsbVerifierEnabled** registry entry takes a DWORD value. When **UsbVerifierEnabled** is 1, the USB client driver verifier is enabled; 0 disables it. If the [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) is enabled for the client driver and **UsbVerifierEnabled** is 0, the USB client driver verifier is disabled.
+The **UsbVerifierEnabled** registry entry takes a DWORD value. When **UsbVerifierEnabled** is 1, the USB client driver verifier is enabled; 0 disables it. If the [Driver Verifier](../devtest/driver-verifier.md) is enabled for the client driver and **UsbVerifierEnabled** is 0, the USB client driver verifier is disabled.
 
 ## Configuration settings for the USB client driver verifier
 
-
-When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
+When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](/windows-hardware/drivers/ddi/_usbref/#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](../devtest/driver-verifier.md). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
 
 Additionally and optionally, you can configure the USB client driver verifier to modify or fail specific routines and specify how often the routine must fail. To configure the verifier, set the registry entries as shown here:
 
@@ -90,8 +83,8 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <td><p><strong>UsbVerifierFailRegistration</strong></p>
 <p>Fails the client driver's calls to these routines:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceCreateWithParameters&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters)"><strong>WdfUsbTargetDeviceCreateWithParameters</strong></a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle" data-raw-source="[&lt;strong&gt;USBD_CreateHandle&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)"><strong>USBD_CreateHandle</strong></a></li>
+<li><a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceCreateWithParameters&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters)"><strong>WdfUsbTargetDeviceCreateWithParameters</strong></a></li>
+<li><a href="/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle" data-raw-source="[&lt;strong&gt;USBD_CreateHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)"><strong>USBD_CreateHandle</strong></a></li>
 </ul></td>
 <td><ul>
 <li>0: Setting is disabled.</li>
@@ -100,7 +93,7 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 </ul></td>
 <td><p><strong>Client driver registration failure.</strong></p>
 <p>One of the initialization tasks of a client driver is to register itself with the underlying driver stack. The registration is required in several subsequent calls.</p>
-<p>For example, the client driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle" data-raw-source="[&lt;strong&gt;USBD_CreateHandle&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)"><strong>USBD_CreateHandle</strong></a> for registration. Let's say the driver assumes that the routine always returns STATUS_SUCCESS, and does not implement code to handle failure. If the routine returns an error NTSTATUS code, the driver can inadvertently ignore the error and proceed with the subsequent calls by using an invalid USBD handle.</p>
+<p>For example, the client driver calls <a href="/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle" data-raw-source="[&lt;strong&gt;USBD_CreateHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)"><strong>USBD_CreateHandle</strong></a> for registration. Let's say the driver assumes that the routine always returns STATUS_SUCCESS, and does not implement code to handle failure. If the routine returns an error NTSTATUS code, the driver can inadvertently ignore the error and proceed with the subsequent calls by using an invalid USBD handle.</p>
 <p>The setting allows you to fail the call so that can you can test the failure code path.</p>
 <p>Expected client driver behavior when registration fails:</p>
 <ul>
@@ -112,8 +105,8 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <td><p><strong>UsbVerifierFailChainedMdlSupport</strong></p>
 <p>Fails the client driver's calls to these routines when the caller passes GUID_USB_CAPABILITY_CHAINED_MDLS in the <em>CapabilityType</em> parameter.</p>
 <ul>
-<li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a></li>
+<li><a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a></li>
+<li><a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a></li>
 </ul></td>
 <td><ul>
 <li>0: Setting is disabled.</li>
@@ -121,7 +114,7 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <li><em>N</em>: The call fails with a probability of 1/<em>N</em>, where <em>N</em> is a hex value between 1 to 0x7FF. For example, if <em>N</em> is 10. The call fails once every 10 calls.</li>
 </ul></td>
 <td><p><strong>Communication with a host controller that does not support chained MDLs.</strong></p>
-<p>In order for the client driver to send chained MDLs (see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/using-mdls" data-raw-source="[MDL](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-mdls)">MDL</a>), the USB driver stack and the host controller must support them.</p>
+<p>In order for the client driver to send chained MDLs (see <a href="/windows-hardware/drivers/kernel/using-mdls" data-raw-source="[MDL](../kernel/using-mdls.md)">MDL</a>), the USB driver stack and the host controller must support them.</p>
 <p>This setting allows you to test the code that is executed when the client driver sends chained MDL requests to the device that is connected to a host controller that does not support them. The call fails regardless of whether the host controller supports chained MDLs.</p>
 <p>For more information about chained MDLs support in the USB driver stack, see <a href="how-to-send-chained-mdls.md" data-raw-source="[How to Send Chained MDLs](how-to-send-chained-mdls.md)">How to Send Chained MDLs</a>.</p>
 <p>Expected client driver behavior when the host controller does not support chained MDLs:</p>
@@ -134,8 +127,8 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <td><p><strong>UsbVerifierFailStaticStreamsSupport</strong></p>
 <p>Fails the client driver's calls to these routines when the caller passes GUID_USB_CAPABILITY_STATIC_STREAMS in the <em>CapabilityType</em> parameter.</p>
 <ul>
-<li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a></li>
+<li><a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a></li>
+<li><a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a></li>
 </ul></td>
 <td><ul>
 <li>0: Setting is disabled.</li>
@@ -155,8 +148,8 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <td><p><strong>UsbVerifierStaticStreamCountOverride</strong></p>
 Changes the value received in the <em>OutputBuffer</em> parameter when the client calls to these routines with GUID_USB_CAPABILITY_STATIC_STREAMS.
 <ul>
-<li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a></li>
+<li><a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a></li>
+<li><a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a></li>
 </ul>
 <p>The <em>OutputBuffer</em> value indicates the maximum number of static streams that the host controller supports.</p></td>
 <td><ul>
@@ -185,7 +178,7 @@ Changes the value received in the <em>OutputBuffer</em> parameter when the clien
 <li><em>N</em>: The request fails with a probability of 1/<em>N</em>, where <em>N</em> is a hex value between 1 to 0x7FF. For example, if <em>N</em> is 10. The request fails once every 10 calls.</li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  The open static-streams request fails if the previous call to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a> failed.
+<strong>Note</strong>  The open static-streams request fails if the previous call to <a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)" data-raw-source="[&lt;strong&gt;USBD_QueryUsbCapability&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))"><strong>USBD_QueryUsbCapability</strong></a> or <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceQueryUsbCapability&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)"><strong>WdfUsbTargetDeviceQueryUsbCapability</strong></a> failed.
 </div>
 <div>
  
@@ -202,14 +195,10 @@ Changes the value received in the <em>OutputBuffer</em> parameter when the clien
 </tbody>
 </table>
 
- 
-
 ## Related topics
-[**USBD\_CreateHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)  
-[**USBD\_QueryUsbCapability**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))  
+
+[**USBD\_CreateHandle**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)  
+[**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))  
 [How to Open and Close Static Streams in a USB Bulk Endpoint](how-to-open-streams-in-a-usb-endpoint.md)  
 [How to Send Chained MDLs](how-to-send-chained-mdls.md)  
-[USB Diagnostics and Test Guide](usb-driver-testing-guide.md)  
-
-
-
+[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)

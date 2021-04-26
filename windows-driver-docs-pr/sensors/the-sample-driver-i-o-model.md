@@ -1,7 +1,6 @@
 ---
 title: Sample driver I/O model
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
-ms.assetid: 86DA1BDE-DD97-45CA-884D-12BD279BD12E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ Windows 8.1 supports an SPB component as a class extension (running in kernel mo
 -   Implements tiered queue structure to manage simultaneous targets and bus-locking requests
 -   Translates buffers from user-mode to kernel-mode
 
-For more information see [Simple Peripheral Bus](https://docs.microsoft.com/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
+For more information see [Simple Peripheral Bus](/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
 
 ### SPB component and the sample driver
 
@@ -149,9 +148,4 @@ Return(RBUF)
 ```
 
  
-
- 
-
-
-
 

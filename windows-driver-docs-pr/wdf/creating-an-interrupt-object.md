@@ -1,7 +1,6 @@
 ---
 title: Creating an Interrupt Object
-description: Creating an Interrupt Object
-ms.assetid: 8bea7498-9fee-4d84-9e6b-976102c54876
+description: Learn about creating an interrupt object. Drivers can create interrupt objects from 'EvtDriverDeviceAdd' and 'EvtDevicePrepareHardware' callback functions.
 keywords:
 - hardware interrupts WDK KMDF , object creation
 - interrupts WDK KMDF , object creation

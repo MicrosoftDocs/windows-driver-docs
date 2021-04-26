@@ -1,7 +1,6 @@
 ---
 title: WIA Item Properties for Film Scanners
 description: WIA Item Properties for Film Scanners
-ms.assetid: a94ca7f2-90ee-49a7-b011-12947485f37b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

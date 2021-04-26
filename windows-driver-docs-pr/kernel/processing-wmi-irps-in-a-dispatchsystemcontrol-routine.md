@@ -1,7 +1,6 @@
 ---
 title: Processing WMI IRPs in a DispatchSystemControl Routine
 description: Processing WMI IRPs in a DispatchSystemControl Routine
-ms.assetid: 9f1fc209-ee32-4270-87e5-e360ca5eca17
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "DispatchSystemControl routine"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

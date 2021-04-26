@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_GET\_CHANGE\_STATE
 description: Clients use KSMETHOD\_BDA\_GET\_CHANGE\_STATE to determine the current change state for a filter.
-ms.assetid: bb635b88-6d51-4d0c-9134-2fc6287a4146
 keywords: ["KSMETHOD_BDA_GET_CHANGE_STATE Streaming Media Devices"]
 topic_type:
 - apiref

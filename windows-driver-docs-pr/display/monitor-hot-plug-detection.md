@@ -1,7 +1,6 @@
 ---
 title: Monitor Hot Plug Detection
 description: Monitor Hot Plug Detection
-ms.assetid: 170d2d5d-fd46-431d-9672-61fa048f7dd2
 keywords:
 - video present networks WDK display , hot plug detection
 - VidPN WDK display , hot plug detection

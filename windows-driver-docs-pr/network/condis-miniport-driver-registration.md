@@ -1,7 +1,6 @@
 ---
 title: CoNDIS Miniport Driver Registration
 description: CoNDIS Miniport Driver Registration
-ms.assetid: 2dfd3bdc-b7b1-4491-b05e-2e8e1f5895b8
 keywords:
 - miniport drivers WDK networking , CoNDIS
 - NDIS miniport drivers WDK , CoNDIS

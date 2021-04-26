@@ -1,7 +1,6 @@
 ---
 title: Create a MobileBroadbandAccount object
 description: Create a MobileBroadbandAccount object
-ms.assetid: 631e885f-67bb-4c30-a82f-352c23cc973a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,11 +37,4 @@ var myNetworkAccountObject = Windows.Networking.NetworkOperators.MobileBroadband
 If your app is not trusted, the property returns an empty collection instead of throwing an exception because users can have accounts from more than one network operator on their computer. The [**AvailableNetworkAccountIds**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccount#Windows_Networking_NetworkOperators_MobileBroadbandAccount_AvailableNetworkAccountIds) property returns only those account IDs that the app’s metadata package is allowed to see. Because the **AvailableNetworkAccountIds** property checks that each account ID has a device associated with it at the time it is retrieved, this property can return an empty collection even if [**CreateFromNetworkAccountId**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccount#Windows_Networking_NetworkOperators_MobileBroadbandAccount_CreateFromNetworkAccountId_System_String_) does not throw an Access Denied exception.
 
 This can happen if no network hardware is detected, or if the network hardware does not have an accessible SIM. A simple way to determine the exact reason why the returned collection is empty is to look at the WWAN logs. After you have collected the logs, search the text log file for entries that contain the text **AvailableNetworkAccountIds**.
-
-## <span id="related_topics"></span>Related topics
-
-
-[Common tasks for mobile broadband Windows Runtime APIs]()
-
- 
 

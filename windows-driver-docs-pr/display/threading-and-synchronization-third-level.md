@@ -1,7 +1,6 @@
 ---
 title: Threading and Synchronization Third Level
 description: Threading and Synchronization Third Level
-ms.assetid: 780d37d9-40c6-4737-9042-473810868227
 keywords:
 - threading WDK display , third level
 - synchronization WDK display , third level

@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfusbinterface
 description: The wudfext.wudfusbinterface extension displays information about a USB interface object.
-ms.assetid: 4c93919a-781d-4bd8-9be2-eecdb75781b1
 keywords: ["wudfext.wudfusbinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

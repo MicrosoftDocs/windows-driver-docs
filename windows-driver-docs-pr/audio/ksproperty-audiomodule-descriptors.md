@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS
 description: KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS is used to retrieves the static data descriptor for each audio module on the endpoint wave filter.
-ms.assetid: EAD613AA-005B-4751-B60E-212853CA40B4
 keywords: ["KSPROPERTY_AUDIOMODULE_DESCRIPTORS Audio Devices"]
 topic_type:
 - apiref

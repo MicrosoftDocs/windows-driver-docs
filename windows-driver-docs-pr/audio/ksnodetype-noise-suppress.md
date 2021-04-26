@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_NOISE\_SUPPRESS
 description: KSNODETYPE\_NOISE\_SUPPRESS
-ms.assetid: 416504e2-38eb-4cfd-ae20-6f1f44a82abd
 keywords: ["KSNODETYPE_NOISE_SUPPRESS Audio Devices"]
 topic_type:
 - apiref

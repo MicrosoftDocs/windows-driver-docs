@@ -1,7 +1,6 @@
 ---
 title: WDI receive operations and offloads
 description: These main categories of operation offloads are configurable.MSDU-level receive operationsFrame forwarding (forwarding decision and actuation)Protocol/Task offloads.
-ms.assetid: 7D2648BC-05F2-4F75-BA01-E0385C83E0E8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -125,7 +124,7 @@ The following is a list of RX operations and offloads.
 <td align="left"><p>Higher-level protocol (task) offloads</p></td>
 <td align="left"><p>Checksum</p></td>
 <td align="left"><p>Checksum: Configurable offload at boot-up if required.</p></td>
-<td align="left"><p>Checksum: The target passes its checksum offload capabilities as part of device caps to WDI during bring-up. For information about capabilities, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_ CHECKSUM_OFFLOAD&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)"><strong>NDIS_TCP_IP_ CHECKSUM_OFFLOAD</strong></a>.</p></td>
+<td align="left"><p>Checksum: The target passes its checksum offload capabilities as part of device caps to WDI during bring-up. For information about capabilities, see <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_ CHECKSUM_OFFLOAD&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)"><strong>NDIS_TCP_IP_ CHECKSUM_OFFLOAD</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -161,6 +160,4 @@ For the case of fragmented packets, the payload type reported by the LE for FIPS
 [**WDI\_EXEMPTION\_ACTION\_TYPE**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_exemption_action_type)
 
 [**WDI\_FRAME\_PAYLOAD\_TYPE**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_frame_payload_type)
-
- 
 

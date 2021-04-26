@@ -1,7 +1,6 @@
 ---
 title: User-Mode WDM Audio Components
 description: User-Mode WDM Audio Components
-ms.assetid: 067944fb-6854-4ae8-81ca-9b8f2eed939e
 keywords:
 - user-mode components WDK audio
 - WinMM system components WDK audio

@@ -1,7 +1,6 @@
 ---
 title: Creating a camera driver MFT for a UWP device app
 description: UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
-ms.assetid: 079CB01E-D16C-4597-8F08-BD75F1D02427
 ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This topic has been deprecated. See the [Device MFT design guide](../stream/dmft-design.md) for updated guidance.
 
-UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](/samples/browse/) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 ## The driver MFT
 
@@ -23,9 +22,9 @@ A Driver MFT is not required for a UWP device app. A device manufacturer may cho
 
 ### How a driver MFT is used
 
-The UWP device app for a camera runs in a different process than the Microsoft Store app that invokes it from the [CameraCaptureUI](https://go.microsoft.com/fwlink/p/?LinkId=317985) API. For the Microsoft Store device app to control a driver MFT, a specific sequence of events across different process spaces must occur.
+The UWP device app for a camera runs in a different process than the Microsoft Store app that invokes it from the [CameraCaptureUI](/uwp/api/Windows.Media.Capture.CameraCaptureUI) API. For the Microsoft Store device app to control a driver MFT, a specific sequence of events across different process spaces must occur.
 
-1. A UWP app wants to capture a photo, so it calls the [CaptureFileAsync](https://go.microsoft.com/fwlink/p/?LinkId=317986) method
+1. A UWP app wants to capture a photo, so it calls the [CaptureFileAsync](/uwp/api/Windows.Media.Capture.CameraCaptureUI) method
 2. Windows requests the driver MFT pointer and the camera's device ID
 3. The driver MFT pointer is passed to a settings host
 4. The host queries device properties for the app ID of the Microsoft Store device app associated with the camera (per device metadata)
@@ -37,7 +36,7 @@ The UWP device app for a camera runs in a different process than the Microsoft S
 
 ### AvStream driver model requirement
 
-Your camera’s driver must use the AvStream driver model. For more info about the AVStream driver model, see [AVStream Minidrivers Design Guide](https://go.microsoft.com/fwlink/p/?LinkID=228585).
+Your camera’s driver must use the AvStream driver model. For more info about the AVStream driver model, see [AVStream Minidrivers Design Guide](../stream/avstream-minidrivers-design-guide.md).
 
 ### How the driver MFT is exposed to apps
 
@@ -57,7 +56,7 @@ In addition to UWP device apps, the driver MFT functionality can be accessed whe
         video.play();
     ```
 
-- Windows.Media.MediaCapture API in a UWP app using the Windows Runtime. For more info on how this API is used, see the [Media Capture](https://go.microsoft.com/fwlink/p/?LinkId=243997) sample.
+- Windows.Media.MediaCapture API in a UWP app using the Windows Runtime. For more info on how this API is used, see the [Media Capture](/samples/browse/) sample.
 
 - Media Foundation’s Source Reader, for apps processing media data. The driver MFT will be exposed to applications as the first (0th) MFT when calling `IMFSourceReaderEx::GetTransformForStream`. The category that will be returned is `MFT_CATEGORY_VIDEO_EFFECT`.
 
@@ -69,7 +68,7 @@ If you have a three-pin or other multi-pin camera, see [Considerations for drive
 
 ## Driver MFT implementation
 
-This section provides information on implementing your driver MFT. For a full example of a driver MFT that works together with a UWP device app, see the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample.
+This section provides information on implementing your driver MFT. For a full example of a driver MFT that works together with a UWP device app, see the [Driver MFT](/samples/browse/) sample.
 
 ### Development tools
 
@@ -102,7 +101,7 @@ HRESULT CDriverMft::GetAttributes(IMFAttributes** ppAttributes)
 }
 ```
 
-In this example, the `MFT_CONNECTED_STREAM_ATTRIBUTE` in the driver MFT’s attribute store is set to point to the device source stream’s attribute store. See [Hardware Handshake Sequence](https://go.microsoft.com/fwlink/p/?LinkId=320139) for further details on how communication between the camera and the MFT is set up.
+In this example, the `MFT_CONNECTED_STREAM_ATTRIBUTE` in the driver MFT’s attribute store is set to point to the device source stream’s attribute store. See [Hardware Handshake Sequence](/windows/win32/medfound/hardware-mfts) for further details on how communication between the camera and the MFT is set up.
 
 ### How to access device source information
 
@@ -132,7 +131,7 @@ To put the driver MFT in passthrough mode, specify the same media type for the i
 
 ### Header files to include
 
-You’ll need to include header files for the `IInspectable` and `IMFTransform` methods that the driver MFT must implement. For a list of header files to include, see **stdafx.h** in the **SampleMFT0** directory of the [UWP device app for camera](https://go.microsoft.com/fwlink/p/?LinkID=227865) sample.
+You’ll need to include header files for the `IInspectable` and `IMFTransform` methods that the driver MFT must implement. For a list of header files to include, see **stdafx.h** in the **SampleMFT0** directory of the [UWP device app for camera](/samples/browse/) sample.
 
 ```cpp
 // required for IInspectable
@@ -244,13 +243,13 @@ library SampleMft0Lib
 
 ### Creating a proxy
 
-The driver MFT is an out-of-process server. To use it in a UWP device app, you must provide marshaling support in a proxy so that your driver MFT interface can be used across process boundaries. You can find an example of this in the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample. The sample uses the MIDL compiler to generate a stubless proxy.
+The driver MFT is an out-of-process server. To use it in a UWP device app, you must provide marshaling support in a proxy so that your driver MFT interface can be used across process boundaries. You can find an example of this in the [Driver MFT](/samples/browse/) sample. The sample uses the MIDL compiler to generate a stubless proxy.
 
 ### Exposing the driver MFT to apps
 
 To write a UWP device app in C# or JavaScript that interacts with a driver MFT, you need to create an additional component in the Microsoft Store device app’s Microsoft Visual Studio project. This component is a wrapper that exposes the driver MFT interfaces in a Windows Runtime Component that is visible to the Microsoft Store device app.
 
-The Wrapper subproject in the [UWP device app for camera](https://go.microsoft.com/fwlink/p/?LinkID=227865) sample provides an example of how to expose your driver MFT to the Windows Runtime so that you can use it from a UWP device app implemented in C# or JavaScript. It is designed to work together with the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample. See the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample page for a step-by-step guide to installing, running, and testing the samples.
+The Wrapper subproject in the [UWP device app for camera](/samples/browse/) sample provides an example of how to expose your driver MFT to the Windows Runtime so that you can use it from a UWP device app implemented in C# or JavaScript. It is designed to work together with the [Driver MFT](/samples/browse/) sample. See the [Driver MFT](/samples/browse/) sample page for a step-by-step guide to installing, running, and testing the samples.
 
 ## Installing and registering the driver MFT
 
@@ -320,10 +319,10 @@ For more info about how to use device metadata to associate your app with your d
 
 [Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
 
-[Hardware Handshake Sequence (Hardware MFTs)](https://go.microsoft.com/fwlink/p/?LinkId=320139)
+[Hardware Handshake Sequence (Hardware MFTs)](/windows/win32/medfound/hardware-mfts)
 
-[AVStream Minidrivers Design Guide](https://go.microsoft.com/fwlink/p/?LinkID=228585)
+[AVStream Minidrivers Design Guide](../stream/avstream-minidrivers-design-guide.md)
 
-[UWP device app for camera sample](https://go.microsoft.com/fwlink/p/?LinkID=227865)
+[UWP device app for camera sample](/samples/browse/)
 
-[Driver MFT sample](https://go.microsoft.com/fwlink/p/?LinkID=251566)
+[Driver MFT sample](/samples/browse/)

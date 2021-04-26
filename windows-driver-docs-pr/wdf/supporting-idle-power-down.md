@@ -1,7 +1,6 @@
 ---
 title: Supporting Idle Power-Down
 description: Some devices can enter a low-power (Dx) state while the system remains in its working (S0) state.
-ms.assetid: d0ce51db-eeb7-45ef-b823-248cd03ee2a9
 keywords:
 - idle power-down WDK KMDF
 - power management WDK KMDF , idle power-down

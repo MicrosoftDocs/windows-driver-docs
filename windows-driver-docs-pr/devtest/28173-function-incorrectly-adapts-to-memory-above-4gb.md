@@ -1,7 +1,6 @@
 ---
 title: C28173
 description: Warning C28173 The current function appears to incorrectly adapt to physical memory above 4 GB.
-ms.assetid: 9332c35e-9d04-4286-9eff-3a639589607e
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

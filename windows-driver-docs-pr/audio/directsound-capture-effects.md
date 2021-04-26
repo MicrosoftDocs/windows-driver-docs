@@ -1,7 +1,6 @@
 ---
 title: DirectSound Capture Effects
 description: DirectSound Capture Effects
-ms.assetid: 5dcadcea-0b6a-447d-828d-a7f256f97088
 keywords:
 - DirectSound WDK audio , capture effects
 - acoustic echo cancellation WDK audio
@@ -43,11 +42,11 @@ A full-duplex DirectSound application can use the **IDirectSoundCaptureFXAec** a
 <tbody>
 <tr class="odd">
 <td align="left"><p>GUID_DSCFX_CLASS_AEC</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel" data-raw-source="[&lt;strong&gt;KSNODETYPE_ACOUSTIC_ECHO_CANCEL&lt;/strong&gt;](./ksnodetype-acoustic-echo-cancel.md)"><strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel" data-raw-source="[&lt;strong&gt;KSNODETYPE_ACOUSTIC_ECHO_CANCEL&lt;/strong&gt;](./ksnodetype-acoustic-echo-cancel.md)"><strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GUID_DSCFX_CLASS_NS</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-noise-suppress" data-raw-source="[&lt;strong&gt;KSNODETYPE_NOISE_SUPPRESS&lt;/strong&gt;](./ksnodetype-noise-suppress.md)"><strong>KSNODETYPE_NOISE_SUPPRESS</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/audio/ksnodetype-noise-suppress" data-raw-source="[&lt;strong&gt;KSNODETYPE_NOISE_SUPPRESS&lt;/strong&gt;](./ksnodetype-noise-suppress.md)"><strong>KSNODETYPE_NOISE_SUPPRESS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,6 +60,4 @@ These topics are discussed in the remainder of this section:
 [Exposing Hardware-Accelerated Capture Effects](exposing-hardware-accelerated-capture-effects.md)
 
 [AEC System Filter](aec-system-filter.md)
-
- 
 

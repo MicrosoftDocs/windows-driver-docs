@@ -1,7 +1,6 @@
 ---
 title: TrustedCertificate (MobileBroadbandInfo)
 description: TrustedCertificate (MobileBroadbandInfo)
-ms.assetid: d22a488d-445e-4011-b881-f2cf49aa4049
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Securing and Releasing Ownership of Virtual Addresses
 description: Securing and Releasing Ownership of Virtual Addresses
-ms.assetid: e7b31c8d-fed4-43e2-bcd2-295e3e17719e
 keywords:
 - proxy drivers WDK SANs , virtual addresses
 - SAN proxy drivers WDK , virtual addresses

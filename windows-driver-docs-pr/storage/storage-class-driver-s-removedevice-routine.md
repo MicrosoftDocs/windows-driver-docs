@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's RemoveDevice Routine
 description: Storage Class Driver's RemoveDevice Routine
-ms.assetid: fbcbfbab-676a-43d3-aa63-0ea5e5f265d2
 keywords:
 - RemoveDevice
 - query-remove requests WDK storage
@@ -41,7 +40,5 @@ If the storage class driver created PDOs at startup (for example, to represent p
 
 Even after a device object has been deleted, if it has a nonzero reference count the device object persists in the system until its reference count reaches zero, then disappears silently. A storage class driver must not attempt to use the device object pointer after the device object has been deleted.
 
-For more information about handling a remove request, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
-
- 
+For more information about handling a remove request, see [Removing a Device](../kernel/understanding-when-remove-irps-are-issued.md).
 

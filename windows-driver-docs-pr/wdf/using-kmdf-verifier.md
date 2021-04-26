@@ -1,7 +1,6 @@
 ---
 title: Using KMDF Verifier
 description: Using KMDF Verifier
-ms.assetid: ab6a0149-9341-435b-b7e7-9c5d6520ebd8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,8 @@ When KMDF Verifier is enabled, the framework breaks into the debugger if a defau
 
 We recommend running Driver Verifier (Verifier.exe) during testing, and adding your own driver and wdf01000.sys to the verify list.
 
-If your driver was built with KMDF version 1.9 or later and you run Verifier.exe, KMDF Verifier is automatically enabled.
+> [!NOTE]
+> KMDF Verifier is automatically enabled when using Driver Verifier's `/standard` settings. If you are using `/flags` instead of the `/standard` driver verifier setting, be aware that on Windows 10, version 1803 or more recent builds, `/flags` is deprecated in favor of `/ruleclasses`. The rule class for WDF is 34. To enable WDF verifier when `/standard` is not used, use `/ruleclasses 34`.
 
 You can also use the [WDF Verifier Control Application (WdfVerifier.exe)](../devtest/wdf-verifier-control-application.md) to enable and disable KMDF Verifier.
 

@@ -1,7 +1,6 @@
 ---
 title: Translating to a SAN Native Address
 description: Translating to a SAN Native Address
-ms.assetid: 959c66f2-4801-47d5-9e80-f18f17057e23
 keywords:
 - proxy drivers WDK SANs , native address translations
 - SAN proxy drivers WDK , native address translations
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-The Windows Sockets switch always uses the [WSK address families](/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)) to interact with a SAN service provider, not the SAN's native address family. Therefore, a proxy driver for a SAN service provider must translate between WSK address families and native addresses accordingly.
+The Windows Sockets switch always uses the [WSK address families](ws2def-h.md) to interact with a SAN service provider, not the SAN's native address family. Therefore, a proxy driver for a SAN service provider must translate between WSK address families and native addresses accordingly.
 
 A proxy driver uses TDI Plug and Play (PnP) notifications to maintain the list of IP addresses assigned to each NIC under its control, as described in [Registering for SAN NIC Notifications](registering-for-san-nic-notifications.md). The proxy driver uses this list to translate between native SAN addresses and IP addresses.
 

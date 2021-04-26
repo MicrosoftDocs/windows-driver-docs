@@ -1,7 +1,6 @@
 ---
 title: WSK_TDI_DEVICENAME_MAPPING
 description: WSK_TDI_DEVICENAME_MAPPING
-ms.assetid: 7636fa80-3908-4808-8fb8-6227ec6e023b
 ms.date: 07/18/2017
 keywords:
  - WSK_TDI_DEVICENAME_MAPPING Network Drivers Starting with Windows Vista
@@ -39,7 +38,7 @@ To map combinations of address family, socket type, and protocol to device names
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_tdi_map_info" data-raw-source="[&lt;strong&gt;WSK_TDI_MAP_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_tdi_map_info)"><strong>WSK_TDI_MAP_INFO</strong></a> structure that contains a list of mappings of combinations of address family, socket type, and protocol to <a href="/previous-versions/windows/hardware/network/ff565091(v=vs.85)" data-raw-source="[TDI](/previous-versions/windows/hardware/network/ff565091(v=vs.85))">TDI</a> device names.</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_tdi_map_info" data-raw-source="[&lt;strong&gt;WSK_TDI_MAP_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_tdi_map_info)"><strong>WSK_TDI_MAP_INFO</strong></a> structure that contains a list of mappings of combinations of address family, socket type, and protocol to <a href="/previous-versions/windows/hardware/network/ff565091(v=vs.85)" data-raw-source="[TDI](/previous-versions/windows/hardware/network/ff565091(v=vs.85))">TDI</a> device names.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -64,7 +63,7 @@ For more information about using TDI transports, see [Using TDI Transports](./us
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](./windows-filtering-platform-callout-drivers2.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](./introduction-to-windows-filtering-platform-callout-drivers.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 
@@ -87,6 +86,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

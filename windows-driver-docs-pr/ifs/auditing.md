@@ -1,7 +1,6 @@
 ---
 title: Auditing
 description: Auditing
-ms.assetid: 0a703a27-91d6-41fc-bd46-a9486842a150
 keywords:
 - security WDK file systems , auditing
 - auditing WDK file systems

@@ -1,7 +1,6 @@
 ---
 title: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc
 description: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables
-ms.assetid: bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5
 keywords:
 - video decoding WDK DirectX VA , formats
 - decoding video WDK DirectX VA , formats
@@ -134,7 +133,7 @@ When *bDXVA\_Func* is used to specify the function associated with a configurati
 
 The most significant 24 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable are set as follows:
 
--   0xFFFF00 when sent by the host software decoder in the **dwFunction** member of the [**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
+-   0xFFFF00 when sent by the host software decoder in the **dwFunction** member of the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
 
 -   0xFFFF08 when sent by the video accelerator in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_encryptprotocolheader) structure.
 
@@ -142,7 +141,7 @@ The least significant 8 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable c
 
 ### <span id="Specifying_an_Operation_to_be_Performed_by_DdMoCompRender"></span><span id="specifying_an_operation_to_be_performed_by_ddmocomprender"></span><span id="SPECIFYING_AN_OPERATION_TO_BE_PERFORMED_BY_DDMOCOMPRENDER"></span>Specifying an Operation to be Performed by DdMoCompRender
 
-When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
+When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
 
  
 

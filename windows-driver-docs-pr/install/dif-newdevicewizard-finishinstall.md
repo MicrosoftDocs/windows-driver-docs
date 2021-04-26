@@ -1,7 +1,6 @@
 ---
 title: DIF_NEWDEVICEWIZARD_FINISHINSTALL
 description: DIF_NEWDEVICEWIZARD_FINISHINSTALL
-ms.assetid: 5d27316b-4e47-4e18-95fe-fd4a63a76626
 keywords: ["DIF_NEWDEVICEWIZARD_FINISHINSTALL Device and Driver Installation"]
 topic_type:
 - apiref
@@ -55,13 +54,13 @@ After Windows installs a device (on successful completion of [**DIF_INSTALLDEVIC
 A handle to the [device information set](./device-information-sets.md) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-A pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
+A pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_NEWDEVICEWIZARD_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*.
+An [**SP_NEWDEVICEWIZARD_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
@@ -112,13 +111,13 @@ Requirements
 
 [**DIF_INSTALLDEVICE**](dif-installdevice.md)
 
-[**SetupDiChangeState**](/windows/desktop/api/setupapi/nf-setupapi-setupdichangestate)
+[**SetupDiChangeState**](/windows/win32/api/setupapi/nf-setupapi-setupdichangestate)
 
-[**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_NEWDEVICEWIZARD_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data)
+[**SP_NEWDEVICEWIZARD_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_newdevicewizard_data)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ConfigFlags
 description: DEVPKEY_Device_ConfigFlags
-ms.assetid: 67ff3b29-ba25-4dcd-b21b-75203ee17973
 keywords: ["DEVPKEY_Device_ConfigFlags Device and Driver Installation"]
 topic_type:
 - apiref
@@ -64,7 +63,7 @@ The value of DEVPKEY_Device_ConfigFlags is set during a device installation to i
 
 The configuration flags are for internal use only.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ConfigFlags and call [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to set DEVPKEY_Device_ConfigFlags.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ConfigFlags and call [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to set DEVPKEY_Device_ConfigFlags.
 
 
 Requirements
@@ -77,9 +76,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

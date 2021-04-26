@@ -1,7 +1,6 @@
 ---
 title: Creating Dispatch Tables
 description: Creating Dispatch Tables
-ms.assetid: 0771aeac-68b2-4dec-8887-a0b313899ce8
 keywords:
 - BDA minidrivers WDK AVStream , dispatch tables
 - dispatch tables WDK AVStream

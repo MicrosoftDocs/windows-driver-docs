@@ -52,7 +52,7 @@ Primitive drivers use the same installation and uninstallation APIs as device dr
 
 ## Primitive drivers targeting only Windows 10 version 1903 and later
 
-Primitive drivers targeted only for Windows 10 version 1903 and later should use [DiInstallDriver](/windows/desktop/api/newdev/nf-newdev-diinstalldriverw) and [DiUninstallDriver](/windows/desktop/api/newdev/nf-newdev-diuninstalldriverw) to properly install and uninstall their software in/from the driver store.
+Primitive drivers targeted only for Windows 10 version 1903 and later should use [DiInstallDriver](/windows/win32/api/newdev/nf-newdev-diinstalldriverw) and [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw) to properly install and uninstall their software in/from the driver store.
 
 Drivers should also use Dirid 13 to properly specify the Driver Store as the desired destination to be installed. For more information about Dirids, see [Using Dirids](../install/using-dirids.md).
 
@@ -68,7 +68,7 @@ LegacyUninstall=1
 The \[DefaultInstall\] and \[DefaultUninstall\] sections **must still be architecture decorated**; however, by including the `LegacyUninstall=1`, Windows ignores the \[DefaultUninstall\] section (in Windows 10 version 1903 and later). By doing so, you can include that section in your INF, where it can be used down-level with a legacy install/uninstall application in order to uninstall the primitive driver package.
 
 Beginning with Windows 10 version 1903, if you pass an architecture-decorated \[DefaultInstall\] or
-\[DefaultUninstall\] section in to the [InstallHInfSection](/windows/desktop/api/setupapi/nf-setupapi-installhinfsectionw) API in setupapi.dll, the driver package will be checked to determine if it supports primitive driver functionality. If it does support primitive driver functionality, rather than process the specified section in the legacy way, the INF is passed to [DiInstallDriver](/windows/desktop/api/newdev/nf-newdev-diinstalldrivera) or [DiUninstallDriver](/windows/desktop/api/newdev/nf-newdev-diuninstalldriverw), as appropriate. 
+\[DefaultUninstall\] section in to the [InstallHInfSection](/windows/win32/api/setupapi/nf-setupapi-installhinfsectionw) API in setupapi.dll, the driver package will be checked to determine if it supports primitive driver functionality. If it does support primitive driver functionality, rather than process the specified section in the legacy way, the INF is passed to [DiInstallDriver](/windows/win32/api/newdev/nf-newdev-diinstalldrivera) or [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw), as appropriate. 
 This way, a single installer can make use of primitive drivers on compatible OS versions and maintain support for previous OS versions.
 
 ## Converting from a device driver INF

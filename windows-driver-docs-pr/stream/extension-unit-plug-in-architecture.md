@@ -1,7 +1,6 @@
 ---
 title: Extension Unit Plug-In Architecture
 description: Extension Unit Plug-In Architecture
-ms.assetid: cf2b32dd-0b65-41ce-b6e8-a9068e232600
 keywords:
 - extension units WDK USB Video Class , architecture
 - Extension Unit controls WDK USB Video Class

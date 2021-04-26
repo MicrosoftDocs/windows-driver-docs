@@ -1,7 +1,6 @@
 ---
-ms.assetid: A1DE1065-9D8F-405F-9807-5F0D3BE6F0AC
 title: Driver Signing Properties
-description: 
+description: "Learn more about: Driver Signing Properties"
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

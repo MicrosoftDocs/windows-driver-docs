@@ -1,7 +1,6 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
-ms.assetid: 933dc761-2616-4bee-8357-dbb6644596c2
 keywords:
 - kernel-mode clients WDK UMDF
 - UMDF drivers WDK UMDF , kernel-mode clients
@@ -55,7 +54,7 @@ A UMDF driver can process I/O requests from a kernel-mode driver only if the ker
 
 -   The I/O request's buffers must not contain pointers to additional information, because the user-mode driver cannot dereference the pointers.
 
--   If the I/O request contains an [I/O control code](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) that specifies the "neither" buffer access method, the kernel-mode driver must send the I/O request in the process context of the application that created the I/O request. For more information about how to support the "neither" method in a UMDF-base driver, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](./accessing-data-buffers-in-umdf-1-x-drivers.md#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
+-   If the I/O request contains an [I/O control code](../kernel/introduction-to-i-o-control-codes.md) that specifies the "neither" buffer access method, the kernel-mode driver must send the I/O request in the process context of the application that created the I/O request. For more information about how to support the "neither" method in a UMDF-base driver, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](./accessing-data-buffers-in-umdf-1-x-drivers.md#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
 
 -   The UMDF driver might modify an I/O request's output data, in user mode. Therefore, the kernel-mode driver must validate any output data that it receives from the user-mode driver.
 
@@ -106,6 +105,4 @@ For UMDF versions earlier than version 1.9, a driver's INF file can include an [
 If the **UpperDriverOk** registry value is set to a nonzero number, the framework allows kernel-mode drivers to load above the user-mode driver. The kernel-mode drivers can forward I/O requests from user-mode applications to the UMDF driver, but kernel-mode drivers cannot send I/O requests that are created in kernel mode to the UMDF driver.
 
 For UMDF versions 1.9 and later, the **UpperDriverOk** registry value is obsolete and supported only for existing drivers. New drivers should use the [UmdfKernelModeClientPolicy](specifying-wdf-directives-in-inf-files.md) directive.
-
- 
 

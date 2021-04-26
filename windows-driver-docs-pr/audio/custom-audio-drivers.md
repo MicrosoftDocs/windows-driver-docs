@@ -1,7 +1,6 @@
 ---
 title: Custom Audio Drivers
 description: Custom Audio Drivers
-ms.assetid: d5f19a72-0b43-4fe1-b0e1-0198344b4d19
 keywords:
 - WDM audio drivers WDK , custom
 - audio drivers WDK , custom

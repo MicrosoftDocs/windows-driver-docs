@@ -1,7 +1,6 @@
 ---
 title: SerCx2 I/O Transactions
 description: SerCx2 simplifies the handling of read (IRP_MJ_READ) and write (IRP_MJ_WRITE) requests for your serial controller driver.
-ms.assetid: C1B3F059-A445-4224-8316-DBF194CE6A80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,11 +29,11 @@ SerCx2 simplifies the handling of read ([**IRP\_MJ\_READ**](/previous-versions/f
 </tr>
 <tr class="even">
 <td><p><a href="sercx2-pio-receive-transactions.md" data-raw-source="[SerCx2 PIO-Receive Transactions](sercx2-pio-receive-transactions.md)">SerCx2 PIO-Receive Transactions</a></p></td>
-<td><p>SerCx2 requires all serial controller drivers to implement support for receive transactions that use programmed I/O (PIO). To start a PIO-receive transaction, SerCx2 calls the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_receive_read_buffer" data-raw-source="[&lt;em&gt;EvtSerCx2PioReceiveReadBuffer&lt;/em&gt;](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_receive_read_buffer)"><em>EvtSerCx2PioReceiveReadBuffer</em></a> event callback function and supplies a read buffer as a parameter.</p></td>
+<td><p>SerCx2 requires all serial controller drivers to implement support for receive transactions that use programmed I/O (PIO). To start a PIO-receive transaction, SerCx2 calls the driver's <a href="/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_receive_read_buffer" data-raw-source="[&lt;em&gt;EvtSerCx2PioReceiveReadBuffer&lt;/em&gt;](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_receive_read_buffer)"><em>EvtSerCx2PioReceiveReadBuffer</em></a> event callback function and supplies a read buffer as a parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="sercx2-pio-transmit-transactions.md" data-raw-source="[SerCx2 PIO-Transmit Transactions](sercx2-pio-transmit-transactions.md)">SerCx2 PIO-Transmit Transactions</a></p></td>
-<td><p>SerCx2 requires all serial controller drivers to implement support for transmit transactions that use programmed I/O (PIO). To start a PIO-transmit transaction, SerCx2 calls the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_transmit_write_buffer" data-raw-source="[&lt;em&gt;EvtSerCx2PioTransmitWriteBuffer&lt;/em&gt;](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_transmit_write_buffer)"><em>EvtSerCx2PioTransmitWriteBuffer</em></a> event callback function and supplies a write buffer as a parameter.</p></td>
+<td><p>SerCx2 requires all serial controller drivers to implement support for transmit transactions that use programmed I/O (PIO). To start a PIO-transmit transaction, SerCx2 calls the driver's <a href="/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_transmit_write_buffer" data-raw-source="[&lt;em&gt;EvtSerCx2PioTransmitWriteBuffer&lt;/em&gt;](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_transmit_write_buffer)"><em>EvtSerCx2PioTransmitWriteBuffer</em></a> event callback function and supplies a write buffer as a parameter.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="sercx2-system-dma-receive-transactions.md" data-raw-source="[SerCx2 System-DMA-Receive Transactions](sercx2-system-dma-receive-transactions.md)">SerCx2 System-DMA-Receive Transactions</a></p></td>

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DmaRemappingPolicy
 description: DEVPKEY_Device_DmaRemappingPolicy
-ms.assetid: 3553debf-dec8-4135-9bd7-6ce2941afa52
 keywords: ["DEVPKEY_Device_DmaRemappingPolicy Device and Driver Installation"]
 topic_type:
 - apiref
@@ -35,7 +34,7 @@ Remarks
 | 0 or the DMA Remapping Policy property is not visible | A DMA remapping INF directive is not specified in the INF file. DMA remapping is not enforced for this device. |
 
 
-You can access the DEVPKEY_Device_DmaRemappingPolicy property by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can access the DEVPKEY_Device_DmaRemappingPolicy property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Requirements
 ------------
@@ -50,6 +49,6 @@ Requirements
 
 [Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)

@@ -1,7 +1,6 @@
 ---
 title: Required WIA Item Properties for Scanner Storage
 description: Required WIA Item Properties for Scanner Storage
-ms.assetid: 53df1700-4f84-4f94-b9ee-215e61b4b1ef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

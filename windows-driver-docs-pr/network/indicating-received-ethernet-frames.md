@@ -1,7 +1,6 @@
 ---
 title: Indicating Received Ethernet Frames
 description: Indicating Received Ethernet Frames
-ms.assetid: 39f35a54-1d80-4a14-b48c-2dbbfde9c86f
 keywords:
 - Ethernet WDK networking
 - frames WDK networking

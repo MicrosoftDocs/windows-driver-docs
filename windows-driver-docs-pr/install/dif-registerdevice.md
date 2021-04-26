@@ -1,7 +1,6 @@
 ---
 title: DIF_REGISTERDEVICE
 description: DIF_REGISTERDEVICE
-ms.assetid: cb5f12f4-d429-4f02-b560-08807ffa3793
 keywords: ["DIF_REGISTERDEVICE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -55,10 +54,10 @@ When an installer reports a previously unknown device in response to a [**DIF_DE
 Supplies a handle to the [device information set](./device-information-sets.md) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters-"></a>Class Installation Parameters   
 None
@@ -73,7 +72,7 @@ A co-installer can return NO_ERROR or a Win32 error code. A co-installer should 
 
 If an installer determines that the device is a duplicate it returns ERROR_DUPLICATE_FOUND.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
@@ -89,13 +88,13 @@ If the installer determines that the device is a duplicate, the installer return
 
 ### Default DIF Code Handler
 
-[**SetupDiRegisterDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiregisterdeviceinfo)
+[**SetupDiRegisterDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiregisterdeviceinfo)
 
 ### Installer Operation
 
 A *device installation application* typically sends this DIF request to register a non-PnP device with the PnP manager. Starting with Microsoft Windows 2000, non-PnP devices must be registered before they can be installed.
 
-An installer typically handles this DIF request to do duplicate detection. Such an installer typically calls the default handler ([**SetupDiRegisterDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiregisterdeviceinfo)) and specifies its detection routine. If the registration is successful and the installer determines that the device is not a duplicate, the installer returns NO_ERROR.
+An installer typically handles this DIF request to do duplicate detection. Such an installer typically calls the default handler ([**SetupDiRegisterDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiregisterdeviceinfo)) and specifies its detection routine. If the registration is successful and the installer determines that the device is not a duplicate, the installer returns NO_ERROR.
 
 A co-installer should perform any operations to handle this DIF request in its preprocessing pass. When the co-installer is called for postprocessing, the device instance has already been registered by either the class installer or the default handler.
 
@@ -128,11 +127,11 @@ Requirements
 
 [**DIF_DETECT**](dif-detect.md)
 
-[**SetupDiRegisterDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiregisterdeviceinfo)
+[**SetupDiRegisterDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiregisterdeviceinfo)
 
-[**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
  
 

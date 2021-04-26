@@ -1,7 +1,6 @@
 ---
 title: Controlling Color Management
 description: Controlling Color Management
-ms.assetid: cb210b8d-fee1-4904-8c50-f03d2445085e
 keywords:
 - color management WDK print , controlling
 ms.date: 04/20/2017

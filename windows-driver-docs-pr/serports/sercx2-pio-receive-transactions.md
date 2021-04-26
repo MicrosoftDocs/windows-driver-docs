@@ -1,7 +1,6 @@
 ---
 title: SerCx2 PIO-Receive Transactions
 description: SerCx2 requires all serial controller drivers to implement support for receive transactions that use programmed I/O (PIO).
-ms.assetid: 00C43A55-ACAF-4AB6-BDFB-F3D9350C4536
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

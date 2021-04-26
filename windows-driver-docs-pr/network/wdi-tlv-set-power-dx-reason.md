@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SET_POWER_DX_REASON
 description: WDI_TLV_SET_POWER_DX_REASON is a TLV that contains the reason for a set power Dx.
-ms.assetid: 339F3461-3478-4C54-B6FB-9F5541859C76
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_POWER_DX_REASON Network Drivers Starting with Windows Vista
@@ -44,7 +43,7 @@ The size (in bytes) of a UINT32.
 <p>Valid values are:</p>
 <ul>
 <li><p>WDI_SET_POWER_DX_REASON_SELETIVE_SUSPEND (1)</p>
-<p>When this value is set, it implies waking on any interesting external events without explicit <a href="wdi-tlv-enable-wake-events.md" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](wdi-tlv-enable-wake-events.md)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a>. This is an idle low power where the device functions transparently to end users as if it were in D0. See <a href="/windows-hardware/drivers/network/wdi-usb-remote-wake-sequence" data-raw-source="[WDI USB remote wake sequence](/windows-hardware/drivers/network/wdi-usb-remote-wake-sequence)">WDI USB remote wake sequence</a> for more information.</p></li>
+<p>When this value is set, it implies waking on any interesting external events without explicit <a href="wdi-tlv-enable-wake-events.md" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](wdi-tlv-enable-wake-events.md)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a>. This is an idle low power where the device functions transparently to end users as if it were in D0. See <a href="/windows-hardware/drivers/network/wdi-usb-remote-wake-sequence" data-raw-source="[WDI USB remote wake sequence](./wdi-usb-remote-wake-sequence.md)">WDI USB remote wake sequence</a> for more information.</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -75,6 +74,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

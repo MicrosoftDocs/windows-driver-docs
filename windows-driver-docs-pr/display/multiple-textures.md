@@ -1,7 +1,6 @@
 ---
 title: Multiple Textures
 description: Multiple Textures
-ms.assetid: 3c7b4ac7-eabc-442d-aede-a65ee3b6e20c
 keywords:
 - texture management WDK Direct3D , multiple textures
 - multiple textures WDK Direct3D

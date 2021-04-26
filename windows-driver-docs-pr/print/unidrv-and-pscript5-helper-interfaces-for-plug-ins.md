@@ -1,7 +1,6 @@
 ---
 title: Unidrv and Pscript5 Helper Interfaces for Plug-ins
 description: Unidrv and Pscript5 Helper Interfaces for Plug-ins
-ms.assetid: 043a38f7-200c-4f1d-b937-4ddd6e2045dd
 keywords:
 - IPrintCoreHelperPS
 - IPrintCoreHelperUni

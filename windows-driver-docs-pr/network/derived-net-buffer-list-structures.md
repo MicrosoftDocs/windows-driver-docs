@@ -1,7 +1,6 @@
 ---
 title: Derived NET_BUFFER_LIST Structures
 description: Derived NET_BUFFER_LIST Structures
-ms.assetid: 6660aef5-ba67-4f15-98b6-547fa753bc76
 keywords:
 - NET_BUFFER_LIST
 - network data WDK , structures

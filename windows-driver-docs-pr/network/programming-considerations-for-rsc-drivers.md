@@ -1,7 +1,6 @@
 ---
 title: Programming Considerations for RSC Drivers
 description: The following sections describe issues to consider when implementing a receive-segment coalescing (RSC)-capable miniport driver.
-ms.assetid: 03FDD557-3918-408A-BD79-64CD52BDD43A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

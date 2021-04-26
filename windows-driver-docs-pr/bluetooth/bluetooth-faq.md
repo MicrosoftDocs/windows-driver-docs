@@ -1,7 +1,6 @@
 ---
 title: Bluetooth FAQ
 description: This FAQ section provides information about Bluetooth wireless technology support for the Windows family of operating systems.
-ms.assetid: 529DD4A2-4E4B-47F4-BD65-BE89EA21E217
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

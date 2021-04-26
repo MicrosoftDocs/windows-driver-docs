@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE
 description: The KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE property indicates the minimum and maximum size of buffer that the hardware audio engine can support for a given data format, at the instance when it is called. The buffer size is specified in bytes.
-ms.assetid: 6A5DF24C-A328-4814-A410-2B1E13402A2B
 keywords: ["KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE Audio Devices"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property indicates the mini
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_buffer_size_range" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_BUFFER_SIZE_RANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_buffer_size_range)"><strong>KSAUDIOENGINE_BUFFER_SIZE_RANGE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_buffer_size_range" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_BUFFER_SIZE_RANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_buffer_size_range)"><strong>KSAUDIOENGINE_BUFFER_SIZE_RANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -89,6 +88,4 @@ Requirements
 [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
-
- 
 

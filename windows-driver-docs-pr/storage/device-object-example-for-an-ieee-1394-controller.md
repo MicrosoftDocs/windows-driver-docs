@@ -1,7 +1,6 @@
 ---
 title: Device Object Example for an IEEE 1394 Controller
 description: Device Object Example for an IEEE 1394 Controller
-ms.assetid: 9a83786b-8821-43b7-bf86-c85f2dcb9749
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage

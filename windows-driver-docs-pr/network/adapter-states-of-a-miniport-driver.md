@@ -1,7 +1,6 @@
 ---
 title: Adapter States of a Miniport Driver
 description: Adapter States of a Miniport Driver
-ms.assetid: 3ca03511-a912-4ee3-bd9f-1bd8e6996c48
 keywords:
 - NDIS miniport drivers WDK , adapter states
 - adapter states WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Alpha-Blend Data Loading
 description: Alpha-Blend Data Loading
-ms.assetid: d61fbb07-a6b0-4623-bb5b-1c1218f570ae
 keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading

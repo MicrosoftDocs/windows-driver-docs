@@ -1,7 +1,6 @@
 ---
 title: Determining the Current Connection Offload Settings
 description: Determining the Current Connection Offload Settings
-ms.assetid: aca377ae-c56b-4f84-8165-4b084bfa9938
 keywords:
 - connection offload WDK TCP/IP transport , current settings
 - current connection offload settings WDK TCP/IP offload

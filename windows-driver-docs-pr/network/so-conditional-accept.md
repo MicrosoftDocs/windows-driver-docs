@@ -1,7 +1,6 @@
 ---
 title: SO_CONDITIONAL_ACCEPT
 description: SO_CONDITIONAL_ACCEPT
-ms.assetid: 8aaaa08b-b239-4648-8c4f-8db2efbda551
 ms.date: 08/08/2017
 keywords: 
  -SO_CONDITIONAL_ACCEPT Network Drivers Starting with Windows Vista

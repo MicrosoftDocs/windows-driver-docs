@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME
 description: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME requests that the IHV component sends Response Action Frames.
-ms.assetid: DA2FF006-BA81-48B9-8AAD-694818E78AEF
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME Network Drivers Starting with Windows Vista

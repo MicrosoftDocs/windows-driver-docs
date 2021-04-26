@@ -1,7 +1,6 @@
 ---
 title: MetadataKey
 description: MetadataKey
-ms.assetid: 1915db47-98bb-40f5-be3b-75e9af80f506
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,8 @@ There are no attributes.
 |Element|Description|
 |----|----|
 |[HardwareIDList](hardwareidlist.md)|The [HardwareIDList](hardwareidlist.md) element specifies one or more hardware identification strings for the device.|
-|[LastModifiedDate](lastmodifieddate.md)|The [LastModifiedDate](lastmodifieddate.md) element specifies the time stamp on which the service metadata package was last changed.|[Locale](locale.md)|The [Locale](locale.md) element specifies the localized version of the service metadata package.|
+|[LastModifiedDate](lastmodifieddate.md)|The [LastModifiedDate](lastmodifieddate.md) element specifies the time stamp on which the service metadata package was last changed.|
+|[Locale](locale.md)|The [Locale](locale.md) element specifies the localized version of the service metadata package.|
 |[ModelIDList](modelidlist.md)|The [ModelIDList](modelidlist.md) element specifies the GUID of each device type or model that is specified within the service metadata package.|
 |[MultipleLocale](multiplelocale.md)|The [MultipleLocale](multiplelocale.md) element specifies whether the service metadata package supports multiple locales.|
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x9C MACHINE_CHECK_EXCEPTION
 description: The MACHINE_CHECK_EXCEPTION bug check has a value of 0x0000009C. This bug check indicates that a fatal machine check exception has occurred.
-ms.assetid: b8945dba-c515-4a30-a36c-ef4feaadabbe
 keywords: ["Bug Check 0x9C MACHINE_CHECK_EXCEPTION", "MACHINE_CHECK_EXCEPTION"]
 ms.date: 05/13/2020
 topic_type:

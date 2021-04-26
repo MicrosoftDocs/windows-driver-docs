@@ -1,7 +1,6 @@
 ---
 title: Using Files In A Driver
 description: Using Files In A Driver
-ms.assetid: 721bf336-1d1d-4677-843d-8af04c6f434d
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "reading data from files", "writing data to files", "reading metadata for file", "writing metadata for file", "driver file objects WDK kernel", "multiple file objects WDK kernel", "kernel-mode drivers WDK , files"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

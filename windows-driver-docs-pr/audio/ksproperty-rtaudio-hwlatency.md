@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_HWLATENCY
 description: The KSPROPERTY\_RTAUDIO\_HWLATENCY property retrieves a description of the stream latency of the audio hardware and its associated data path. The following table summarizes the features of this property.
-ms.assetid: 5083f281-853a-464e-95d3-0fe14fe00c1c
 keywords: ["KSPROPERTY_RTAUDIO_HWLATENCY Audio Devices"]
 topic_type:
 - apiref
@@ -46,8 +45,8 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwlatency"><strong>KSRTAUDIO_HWLATENCY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwlatency"><strong>KSRTAUDIO_HWLATENCY</strong></a></p></td>
 </tr>
 </tbody>
 </table>

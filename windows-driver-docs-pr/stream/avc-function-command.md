@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_COMMAND
 description: AVC\_FUNCTION\_COMMAND
-ms.assetid: 5e1f7f93-83ef-4015-a952-f7efd93ccee5
 keywords: ["AVC_FUNCTION_COMMAND Streaming Media Devices"]
 topic_type:
 - apiref
@@ -9,7 +8,7 @@ api_name:
 - AVC_FUNCTION_COMMAND
 api_type:
 - NA
-ms.date: 06/16/2020
+ms.date: 03/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -98,7 +97,7 @@ On response, this member is set to a value from the **AvcResponseCode** enumerat
 
 **SubunitAddr**
   
-Set this to the address of nonpaged memory containing the desired subunit address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the [1394 Trade Association](https://1394ta.org/library-2/) website. No length is necessary because the subunit address encoding implies this. This parameter is ignored if **SubunitAddrFlag** is zero.
+Set this to the address of nonpaged memory containing the desired subunit address encoded according to Section 5.3.3 of the 1394 Trade Association AV/C Digital Interface Command Set General Specification, Rev 3.0. No length is necessary because the subunit address encoding implies this. This parameter is ignored if **SubunitAddrFlag** is zero.
 
 **AlternateOpcodes**
 

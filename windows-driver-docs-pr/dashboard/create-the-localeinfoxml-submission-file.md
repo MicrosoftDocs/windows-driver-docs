@@ -1,7 +1,6 @@
 ---
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
-ms.assetid: 2b16b045-4d34-418c-8f68-7f688adf8e7e
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -18,7 +17,7 @@ The data in the LocaleInfo.xml document is formatted based on the LocaleInfo XML
 > [!NOTE]
 > The XML document must be saved by using UTF-8 encoding.
 
-For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](https://go.microsoft.com/fwlink/?LinkId=253559).
+For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85)).
 
 ### LocaleInfo XML Schema NameSpace
 

@@ -1,7 +1,6 @@
 ---
 title: Issuing OID_NIC_SWITCH_ALLOCATE_VF Requests
 description: Issuing OID_NIC_SWITCH_ALLOCATE_VF Requests
-ms.assetid: 72285E72-DEC7-4578-9B6C-E616FECD6F41
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

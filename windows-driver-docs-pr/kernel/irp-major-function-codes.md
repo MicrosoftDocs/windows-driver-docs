@@ -2,7 +2,6 @@
 title: IRP Major Function Codes
 description: IRP Major Function Codes
 ms.date: 03/09/2020
-ms.assetid: 11c5b1a9-74c0-47fb-8cce-a008ece9efae
 ms.localizationpriority: medium
 ---
 

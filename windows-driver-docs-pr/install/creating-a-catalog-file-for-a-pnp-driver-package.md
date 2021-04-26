@@ -1,7 +1,6 @@
 ---
 title: Creating a Catalog File for a PnP Driver Package
 description: Creating a Catalog File for a PnP Driver Package
-ms.assetid: 2af431f1-a35d-4312-86f6-a928ef4148df
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

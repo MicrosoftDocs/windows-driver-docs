@@ -1,7 +1,6 @@
 ---
 title: Conditional Compilation and the Build Environment
 description: Conditional Compilation and the Build Environment
-ms.assetid: 7879b6c6-4985-4817-a8bc-b287397df721
 keywords:
 - DBG preprocessor constant
 - debugging code WDK , conditional compilation

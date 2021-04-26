@@ -1,7 +1,6 @@
 ---
 title: Audio driver samples
 description: The audio driver sample in this directory provides a starting point for writing a custom audio driver for your device.
-ms.assetid: 12A4A0F6-292D-4976-ACCC-12AEAF853D74
 ms.date: 11/15/2019
 ms.localizationpriority: medium
 ---

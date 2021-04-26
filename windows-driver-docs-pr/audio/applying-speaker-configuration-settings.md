@@ -1,7 +1,6 @@
 ---
 title: Applying Speaker-Configuration Settings
 description: Applying Speaker-Configuration Settings
-ms.assetid: 98fe96cc-8436-4400-9b39-86d188e085c9
 keywords:
 - failed speaker-configuration requests WDK audio
 ms.date: 04/20/2017

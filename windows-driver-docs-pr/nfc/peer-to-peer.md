@@ -1,6 +1,5 @@
 ---
 title: Peer-to-peer
-ms.assetid: 0234BA57-477E-408C-94C8-8DD8922FD386
 keywords:
 - NFC
 - near field communications
@@ -34,5 +33,4 @@ The Driver MUST support the default SNEP server running over LLCP to exchange ND
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

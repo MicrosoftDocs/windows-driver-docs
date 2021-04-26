@@ -1,7 +1,6 @@
 ---
 title: Create a Stream
 description: Create a Stream
-ms.assetid: 9984275f-7ead-4df2-aa98-a3b4e5e85ae0
 keywords:
 - Avcstrm.sys streaming filter driver WDK , creating streams
 - stream creation WDK AV/C streaming

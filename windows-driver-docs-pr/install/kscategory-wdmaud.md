@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_WDMAUD
 description: KSCATEGORY_WDMAUD
-ms.assetid: a03ea284-6d28-4f6b-9e31-97d66cf7a00d
 keywords: ["KSCATEGORY_WDMAUD Device and Driver Installation"]
 topic_type:
 - apiref

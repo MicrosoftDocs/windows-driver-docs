@@ -1,7 +1,6 @@
 ---
 title: VMQ Transmit Path
 description: VMQ Transmit Path
-ms.assetid: a34f0708-e477-4acc-b854-f00f752be423
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

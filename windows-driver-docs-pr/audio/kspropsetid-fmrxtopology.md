@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_FMRXTopology
 description: The KSPROPSETID\_FMRXTopology property set is used to set FM radio properties.
-ms.assetid: 66ACE82D-F0C2-4BF8-9B16-8A1B3A2C05E0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: AutoExposure element
 description: The required AutoExposure element specifies that the WSD Scan Service should automatically determine the exposure settings for the document.
-ms.assetid: ccc2b246-cfa1-4d79-b968-7b4bbaad17ee
 keywords: ["AutoExposure element Imaging Devices"]
 topic_type:
 - apiref

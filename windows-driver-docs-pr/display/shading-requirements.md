@@ -1,7 +1,6 @@
 ---
 title: Shading Requirements
 description: Shading Requirements
-ms.assetid: 6c4f3dee-a955-4140-8b64-e9289094f530
 keywords:
 - shading WDK Direct3D
 - flat shading WDK Direct3D
@@ -86,7 +85,7 @@ Color-key transparency, which is used to create 2D sprites, replaces some colors
 
 Colorkeying is enabled if the D3DRENDERSTATE\_COLORKEYENABLE render state is set to **TRUE** and the texture surface has the DDRAWISURF\_HASCKEYSRCBLT bit set
 
-Color-key is enabled if the D3DRENDERSTATE\_COLORKEYENABLE render state is set to **TRUE** and the texture surface has the DDRAWISURF\_HASCKEYSRCBLT bit set. (See the **dwFlags** member of the [**DD\_SURFACE\_LOCAL**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_local) structure for more information.) Applications create a texture surface that uses DDSD\_CKSRCBLT and then call the **IDirect3DDevice7::SetRenderState** method with D3DRENDERSTATE\_COLORKEYENABLE and **TRUE**. Both of these must be true for color-key to occur, and applications must be permitted to leave the render state **TRUE** all the time and still selectively use color-key for a subset of a frame's textures (that is, those that have the DDRAWISURF\_HASCKEYSRCBLT bit set). It is up to the driver to correctly handle this behavior. For more information about **IDirect3DDevice7::SetRenderState**, see the Direct3D SDK documentation.
+Color-key is enabled if the D3DRENDERSTATE\_COLORKEYENABLE render state is set to **TRUE** and the texture surface has the DDRAWISURF\_HASCKEYSRCBLT bit set. (See the **dwFlags** member of the [**DD\_SURFACE\_LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) structure for more information.) Applications create a texture surface that uses DDSD\_CKSRCBLT and then call the **IDirect3DDevice7::SetRenderState** method with D3DRENDERSTATE\_COLORKEYENABLE and **TRUE**. Both of these must be true for color-key to occur, and applications must be permitted to leave the render state **TRUE** all the time and still selectively use color-key for a subset of a frame's textures (that is, those that have the DDRAWISURF\_HASCKEYSRCBLT bit set). It is up to the driver to correctly handle this behavior. For more information about **IDirect3DDevice7::SetRenderState**, see the Direct3D SDK documentation.
 
  
 

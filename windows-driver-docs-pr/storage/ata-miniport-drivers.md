@@ -1,7 +1,6 @@
 ---
 title: ATA Miniport Drivers
 description: ATA Miniport Drivers
-ms.assetid: 4e5cf0e3-72c5-43df-b61e-0039c3666de4
 keywords:
 - ATA miniport drivers WDK
 - storage ATA miniport drivers WDK
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 # ATA Miniport Drivers
 
 > [!NOTE]
-> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](./storport-miniport-drivers.md) driver models.
+> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](./storport-driver-overview.md) and [Storport miniport](./storport-miniport-drivers.md) driver models.
 
 ATA miniport drivers work with the ATA port driver. This page lists the routines implemented within ATA miniport drivers that the ATA port driver calls. See [ATA Port Driver Support Routines](ata-port-driver-support-routines.md) for a list of system-supplied ATA port driver routines that ATA miniport drivers can call.
 

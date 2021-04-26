@@ -1,7 +1,6 @@
 ---
 title: HardwareId (PackageInfo)
 description: HardwareId (PackageInfo)
-ms.assetid: edd05106-1bbc-45da-80cc-792d7fcce192
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

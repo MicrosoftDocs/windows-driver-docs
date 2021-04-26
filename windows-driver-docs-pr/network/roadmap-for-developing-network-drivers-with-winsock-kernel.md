@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing Network Drivers with Winsock Kernel
 description: Roadmap for Developing Network Drivers with Winsock Kernel
-ms.assetid: f94952c3-02b1-4bd2-bd73-e6d6d42a06fb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
     [Windows Network Architecture and the OSI Model](windows-network-architecture-and-the-osi-model.md)
 
-    [NDIS Miniport Drivers](ndis-miniport-drivers.md)
+    [NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md)
 
     [Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
@@ -47,7 +46,7 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
 -   **Step 5:** Determine additional Windows driver design decisions.
 
-    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](../install/creating-international-inf-files.md).
+    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 -   **Step 6:** Learn about the Windows driver build, test, and debug processes and tools.
 
@@ -68,6 +67,4 @@ To create a networking driver package that uses the kernel-mode socket programmi
     The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
-
- 
 

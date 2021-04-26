@@ -1,7 +1,6 @@
 ---
 title: NFC driver load order
 description: When ACPI creates the device node to represent the NFCC, PnP matches against the NFC client driver-provided .inf and is installed for that device node.
-ms.assetid: 8094B525-A4A1-42D2-8D1F-4B32D77418E3
 keywords:
 - NFC
 - near field communications

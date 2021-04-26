@@ -1,7 +1,6 @@
 ---
 title: Installing a PCL XL Minidriver
 description: Installing a PCL XL Minidriver
-ms.assetid: 88e4e1a0-8adb-4f40-abeb-a4da761ca4ee
 keywords:
 - PCL XL vector graphics WDK Unidrv , installing minidrivers
 - minidrivers WDK PCL XL

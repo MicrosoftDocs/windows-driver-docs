@@ -1,7 +1,6 @@
 ---
 title: Extension Driver MSI Packaging Requirements
 description: Switch extensions must be packaged in a silently installable MSI file.
-ms.assetid: 300118F9-D9C7-4AFA-B54A-59666BC680F1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

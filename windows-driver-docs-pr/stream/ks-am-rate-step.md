@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_Step
 description: The KS\_AM\_RATE\_Step property is not yet implemented.
-ms.assetid: fc3e3369-335b-4403-876f-c55d4616e290
 keywords: ["KS_AM_RATE_Step Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KS\_AM\_RATE\_Step property is not yet implemented.
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KS_AM_Step</p></td>
 </tr>
 </tbody>
@@ -77,6 +76,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Preloading Driver Packages
 description: Preloading Driver Packages
-ms.assetid: e617764d-0b48-4cd8-aeac-04d6039aba71
 keywords:
 - installation applications WDK , preloaded driver packages
 - device installation applications WDK , preloaded driver packages
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 Plug and Play (PnP) [driver packages](driver-packages.md) can be *preloaded* on a computer as part of a Windows installation or after Windows is installed on a computer. A network administrator can also preload driver packages on a network server that provides the source for driver packages that are installed on network computers. When Windows searches for drivers that match a device, Windows will check whether there are preloaded driver packages that match the device.
 
-How to configure a Windows installation to preload driver packages is outside the scope of this documentation. For information about how to configure a Windows installation to preload driver packages, see [How to Add OEM Plug and Play Drivers to Windows XP](https://go.microsoft.com/fwlink/p/?linkid=3100&ID=314479) and [How to Add OEM Plug and Play Drivers to Windows Installations](https://go.microsoft.com/fwlink/p/?linkid=70235).
+How to configure a Windows installation to preload driver packages is outside the scope of this documentation. For information about how to configure a Windows installation to preload driver packages, see [How to Add OEM Plug and Play Drivers to Windows XP](https://go.microsoft.com/fwlink/p/?linkid=3100&ID=314479) and [How to Add OEM Plug and Play Drivers to Windows Installations](/troubleshoot/windows-server/deployment/add-oem-plug-play-drivers).
 
 After Windows is installed, a [driver package](driver-packages.md) can be preloaded in one of the following ways:
 
@@ -43,5 +42,3 @@ For example, to preload a driver package for a network adapter in the shared dir
 
 > [!NOTE]
 > Specifying network share in DevicePath in a machine with point and print client connection can result in excessive network share access and printing delays. This is because each time printerdata is changed in the server, the client will iterate through DevicePath directories checking for availability of newer print drivers.
- 
-

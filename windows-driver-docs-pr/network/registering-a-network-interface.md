@@ -1,7 +1,6 @@
 ---
 title: Registering a Network Interface
 description: Registering a Network Interface
-ms.assetid: 7e3c3b0f-2013-4133-8b52-fa9e66f963cb
 keywords:
 - NDIS network interfaces WDK , registering
 - network interfaces WDK , registering
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-Whenever a computer restarts, NDIS starts with an empty list of registered network interfaces. An interface provider calls the [**NdisIfRegisterInterface**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface) function whenever it starts or detects an interface and its [**NET\_LUID**](/windows/desktop/api/ifdef/ns-ifdef-net_luid_lh) value is known. The mechanism for starting or detecting an interface is application-specific.
+Whenever a computer restarts, NDIS starts with an empty list of registered network interfaces. An interface provider calls the [**NdisIfRegisterInterface**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface) function whenever it starts or detects an interface and its [**NET\_LUID**](/windows/win32/api/ifdef/ns-ifdef-net_luid_lh) value is known. The mechanism for starting or detecting an interface is application-specific.
 
 **NdisIfRegisterInterface** returns NDIS\_STATUS\_SUCCESS only if NDIS successfully adds the specified interface to its list of known interfaces on the computer. In this case, **NdisIfRegisterInterface** returns an interface index at the *pIfIndex* parameter. However, a call to **NdisIfRegisterInterface** does not imply that the interface is active; this call guarantees only that the interface exists. **NdisIfRegisterInterface** returns NDIS\_STATUS\_RESOURCES if NDIS does not have sufficient resources available to register the interface. **NdisIfRegisterInterface** can also return other NDIS status values.
 

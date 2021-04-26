@@ -1,7 +1,6 @@
 ---
 title: PS/2 (i8042prt) driver
 description: This topic describes the features of I8042prt, the Microsoft Windows 2000 and later system function driver for PS/2-style keyboard and mouse devices.
-ms.assetid: BB1046EE-8780-46ED-8CEB-63110643D325
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -69,5 +68,5 @@ The following is a list of registry keys associated with the PS/2 port driver.
 
 For additional information, please see:
 
-* https://docs.microsoft.com/windows/desktop/sysinfo/about-the-registry
-* https://docs.microsoft.com/windows/desktop/sysinfo/registry-reference
+* [About the Registry](/windows/desktop/sysinfo/about-the-registry)
+* [Registry Reference](/windows/desktop/sysinfo/registry-reference)

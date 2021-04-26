@@ -1,7 +1,6 @@
 ---
 title: Redistributable Framework Components
 description: This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK) for Windows 8.1, and how to determine which ones to add to your driver package.
-ms.assetid: 63fbe66e-fa1b-4a70-a8ea-df4f3df9bad4
 keywords:
 - framework-based drivers WDK KMDF , installing
 - INF files WDK KMDF , about installing KMDF drivers
@@ -11,6 +10,19 @@ ms.localizationpriority: medium
 ---
 
 # Redistributable Framework Components
+
+> [!NOTE]
+> If your driver only targets Windows 10, you do not need to redistribute WDF or provide a Coinstaller in your driver package. To target Windows 10:
+>1. In Visual Studio, in the **Project Settings** property page, under **Driver Settings** -> **Target OS Version**, select **Windows 10 or higher**.  This is equivalent to adding the following to the .vcxproj file: 
+>```xml
+><PropertyGroup Label="Configuration">
+><TargetVersion>Windows10</TargetVersion>
+>```
+>2. In the [INF Manufacturer Section](../install/inf-manufacturer-section.md), specify 10.0 as target OS version, as follows:
+>```inf
+>[Manufacturer]
+>%MyMfg% = MyMfg, NTamd64.10.0
+>```
 
 This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK), and how to determine which ones to add to your driver package.
 

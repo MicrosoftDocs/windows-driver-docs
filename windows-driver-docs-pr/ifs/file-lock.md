@@ -1,7 +1,6 @@
 ---
 title: FILE_LOCK structure
 description: The operating system uses the opaque FILE\_LOCK structure to support the locking of files.
-ms.assetid: 89df2075-c542-4105-847f-9bc7ae4dab50
 keywords: ["FILE_LOCK structure Installable File System Drivers", "PFILE_LOCK structure pointer Installable File System Drivers"]
 topic_type:
 - apiref

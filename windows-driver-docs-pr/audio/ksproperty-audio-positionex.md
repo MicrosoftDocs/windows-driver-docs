@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_POSITIONEX
 description: The KSPROPERTY\_AUDIO\_POSITIONEX property provides the caller with the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
-ms.assetid: 660b1ee9-7c52-4d95-8df9-b1c0dce320e3
 keywords: ["KSPROPERTY_AUDIO_POSITIONEX Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The KSPROPERTY\_AUDIO\_POSITIONEX property provides the caller with the stream p
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITIONEX&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)"><strong>KSAUDIO_POSITIONEX</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITIONEX&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)"><strong>KSAUDIO_POSITIONEX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -95,6 +94,4 @@ Requirements
 [**KSAUDIO\_POSITIONEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

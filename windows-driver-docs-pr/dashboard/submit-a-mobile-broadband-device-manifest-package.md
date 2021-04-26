@@ -1,7 +1,6 @@
 ---
 title: Submit a mobile broadband device manifest package
 description: Submit a mobile broadband device manifest package
-ms.assetid: 080c3f4a-400f-426c-8296-1cd0bdfb0828
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ You can use the same method to submit packages for preview or release.
 
 **To submit a device manifest package**
 
-1.  Sign the devicemanifest-ms package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1.  Sign the devicemanifest-ms package with the [SignTool](/windows/win32/seccrypto/signtool) tool.
 
 2.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -26,6 +25,4 @@ You can use the same method to submit packages for preview or release.
 4.  Browse for and select your new devicemanifest-ms package, and then click **Submit**.
 
 For more information about creating a mobile broadband device submission package, see [Mobile Broadband Device Submission Packages](../mobilebroadband/index.md).
-
- 
 

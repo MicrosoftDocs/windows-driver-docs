@@ -1,7 +1,6 @@
 ---
 title: Value Macros
 description: Value Macros
-ms.assetid: 265b2d35-5e91-4c47-a145-1e9f8c497c2c
 keywords:
 - value macros WDK GPD files
 - referencing macros

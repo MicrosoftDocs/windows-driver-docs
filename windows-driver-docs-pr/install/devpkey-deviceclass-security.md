@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_Security
 description: DEVPKEY_DeviceClass_Security
-ms.assetid: e23fd11b-07ee-4375-841d-1fa9c42d5a28
 keywords: ["DEVPKEY_DeviceClass_Security Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 You can set the value of DEVPKEY_DeviceClass_Security either during or after an installation application installs a device setup class. For more information about how to set this property, see [Creating Secure Device Installations](./creating-secure-device-installations.md).
 
-You can retrieve the value of DEVPKEY_DeviceClass_Security by calling [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw). You can set DEVPKEY_DeviceClass_Security by calling [**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw) or [**SetupDiSetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyexw).
+You can retrieve the value of DEVPKEY_DeviceClass_Security by calling [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw). You can set DEVPKEY_DeviceClass_Security by calling [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw) or [**SetupDiSetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyexw).
 
 Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Security property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./retrieving-spcrp-xxx-properties.md) and [Setting Device Setup Class SPCRP_Xxx Properties](./setting-spcrp-xxx-properties.md).
 
@@ -76,13 +75,13 @@ Requirements
 ## See also
 
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
+[**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
-[**SetupDiSetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyexw)
+[**SetupDiSetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyexw)
 
  
 

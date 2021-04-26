@@ -1,7 +1,6 @@
 ---
 title: File System Filter Driver Classes and Class GUIDs
 description: File System Filter Driver Classes and Class GUIDs
-ms.assetid: dd247b06-4529-4818-9239-b89c25f5c1df
 keywords:
 - GUIDs WDK file system
 - class GUIDs WDK file system

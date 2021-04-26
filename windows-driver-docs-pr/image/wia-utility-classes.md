@@ -1,7 +1,6 @@
 ---
 title: WIA Utility Classes
-ms.assetid: cc20a088-6470-4648-b7d9-999dbd74baf1
-description: 
+description: "Learn more about: WIA Utility Classes"
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_DiscoveryConfig WMI Class
 description: MSiSCSI\_DiscoveryConfig WMI Class
-ms.assetid: dbf170ba-92ab-47bd-a076-5f54129305a5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

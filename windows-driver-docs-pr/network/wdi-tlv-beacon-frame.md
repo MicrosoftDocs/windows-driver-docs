@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BEACON_FRAME
 description: WDI_TLV_BEACON_FRAME is a TLV that contains a beacon frame.
-ms.assetid: 4022B721-B56E-482C-8F97-C4F7820CF6D1
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BEACON_FRAME Network Drivers Starting with Windows Vista

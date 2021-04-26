@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_SET_SECURITY
 description: IRP\_MJ\_SET\_SECURITY
-ms.assetid: 8d8b06b9-5d63-4506-831c-9c533dbe95f4
 keywords: ["IRP_MJ_SET_SECURITY Installable File System Drivers"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Benefits of the Windows Display Driver Model (WDDM)
 description: Benefits of the Windows Display Driver Model (WDDM)
-ms.assetid: 0e8cd1a9-7137-4fd2-91ab-56768713c9f1
 keywords:
 - display driver model WDK Windows Vista , benefits
 - Windows Vista display driver model WDK , benefits
@@ -29,7 +28,7 @@ Creating display drivers is easier using the Windows Display Driver Model (WDDM)
 
     1.  [*DdCanCreateSurface*](/previous-versions/windows/hardware/drivers/ff549213(v=vs.85))
     2.  [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85))
-    3.  [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
+    3.  [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
 
     Surface creation in WDDM requires only the [**CreateResource**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource) user-mode display driver call, which in turn calls the [**pfnAllocateCb**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb) function. A call to the kernel-mode [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function then occurs.
 

@@ -1,7 +1,6 @@
 ---
 title: Coordinating I/O Requests with Component Power State
 description: Coordinating I/O Requests with Component Power State
-ms.assetid: CF74B946-BF62-481A-B8AA-DD106DDB94CA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

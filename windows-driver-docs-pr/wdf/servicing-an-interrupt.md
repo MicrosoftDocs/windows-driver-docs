@@ -1,7 +1,6 @@
 ---
 title: Servicing an Interrupt
-description: Servicing an Interrupt
-ms.assetid: b6306d2c-a7be-4fc3-8123-4d2b5c60c988
+description: Learn how to service a DIRQL interrupt. Servicing an interrupt can consist of two, or sometimes three steps.
 keywords:
 - hardware interrupts WDK KMDF , servicing
 - interrupts WDK KMDF , servicing

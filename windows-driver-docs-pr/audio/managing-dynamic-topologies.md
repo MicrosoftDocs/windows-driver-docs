@@ -1,7 +1,6 @@
 ---
 title: Managing Dynamic Topologies
 description: Managing Dynamic Topologies
-ms.assetid: 324c372b-c8d6-4eed-b4ea-071b3d5412b1
 keywords:
 - dynamic topologies WDK audio
 - jack-presence detection WDK audio
@@ -32,7 +31,7 @@ Each subdevice has an internal topology that consists of the following:
 
 When an adapter driver dynamically removes a subdevice, it frees the hardware resources that are bound to the subdevice's internal topology. The adapter driver can then use these resources to create a new subdevice with a possibly different topology.
 
-When configuring a new audio subdevice, the adapter driver registers the subdevice's driver interface as an instance of one or more [device interface classes](../install/overview-of-device-interface-classes.md), and the I/O manager adds one or more registry entries that contain symbolic links associating the interface classes and interface instances. To access the subdevice, a user-mode client retrieves the symbolic link from the registry and passes it as a call parameter to the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) function. Typically, the client is a Windows API module, such as Dsound.dll or Wdmaud.drv, or a vendor-supplied control panel or audio utility program. For more information about **CreateFile**, see the Microsoft Windows SDK documentation.
+When configuring a new audio subdevice, the adapter driver registers the subdevice's driver interface as an instance of one or more [device interface classes](../install/overview-of-device-interface-classes.md), and the I/O manager adds one or more registry entries that contain symbolic links associating the interface classes and interface instances. To access the subdevice, a user-mode client retrieves the symbolic link from the registry and passes it as a call parameter to the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function. Typically, the client is a Windows API module, such as Dsound.dll or Wdmaud.drv, or a vendor-supplied control panel or audio utility program. For more information about **CreateFile**, see the Microsoft Windows SDK documentation.
 
 When the miniport driver calls the [**IUnregisterSubdevice::UnregisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iunregistersubdevice-unregistersubdevice) method to remove a subdevice, the PortCls system driver (Portcls.sys) tells the I/O manager to remove the symbolic link for the associated device interface from the registry. Components that are registered for device interface removal events receive notification when the interface is removed.
 

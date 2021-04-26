@@ -1,7 +1,6 @@
 ---
 title: Device Power States for Network Adapters
 description: Device Power States for Network Adapters
-ms.assetid: 969aadc9-e797-4a07-9714-8c2c5a6357da
 keywords:
 - NICs WDK networking , power states
 - network interface cards WDK networking , power states

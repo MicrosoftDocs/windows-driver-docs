@@ -1,7 +1,6 @@
 ---
 title: Identifying the Input Source for a Scan Event
 description: Identifying the Input Source for a Scan Event
-ms.assetid: aaa0bbf4-6866-45d7-8150-c6a74d6c46c1
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

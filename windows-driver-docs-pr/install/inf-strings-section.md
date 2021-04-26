@@ -1,7 +1,6 @@
 ---
 title: INF Strings Section
 description: An INF file must have at least one Strings section to define every strkey token specified elsewhere in that INF.
-ms.assetid: 7352aa82-a7cd-4d15-9a9e-e03985f6006e
 keywords:
 - INF Strings Section Device and Driver Installation
 topic_type:

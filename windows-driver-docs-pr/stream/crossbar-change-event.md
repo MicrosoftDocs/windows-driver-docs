@@ -1,7 +1,6 @@
 ---
 title: Crossbar Change Event
 description: Crossbar Change Event
-ms.assetid: 67202a53-d981-47db-9bc1-7de18f9192aa
 keywords:
 - crossbar changed event WDK video capture
 - events WDK video capture
@@ -28,13 +27,11 @@ The [EVENTSETID\_CROSSBAR](./eventsetid-crossbar.md) event set contains the cros
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-crossbar-changed" data-raw-source="[&lt;strong&gt;KSEVENT_CROSSBAR_CHANGED&lt;/strong&gt;](./ksevent-crossbar-changed.md)"><strong>KSEVENT_CROSSBAR_CHANGED</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-crossbar-changed" data-raw-source="[&lt;strong&gt;KSEVENT_CROSSBAR_CHANGED&lt;/strong&gt;](./ksevent-crossbar-changed.md)"><strong>KSEVENT_CROSSBAR_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that the crossbar has changed, for example, because of a new pin routing configuration.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

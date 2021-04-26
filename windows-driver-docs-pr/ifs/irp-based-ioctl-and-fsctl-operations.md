@@ -1,7 +1,6 @@
 ---
 title: IRP-Based IOCTL and FSCTL Operations
 description: IRP-Based IOCTL and FSCTL Operations
-ms.assetid: 08d6cf89-aaba-4aa1-baff-eb6aece2875f
 keywords:
 - IOCTLs WDK file systems
 - FSCTL WDK file system

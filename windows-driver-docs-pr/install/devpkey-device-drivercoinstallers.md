@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverCoInstallers
 description: DEVPKEY_Device_DriverCoInstallers
-ms.assetid: ba85a906-adfa-42f9-b52a-e8a48c8d5076
 keywords: ["DEVPKEY_Device_DriverCoInstallers Device and Driver Installation"]
 topic_type:
 - apiref
@@ -67,7 +66,7 @@ Remarks
 
 The value of DEVPKEY_Device_DriverCoInstallers is supplied by the [**INF *DDInstall*.Coinstallers**](./inf-ddinstall-coinstallers-section.md) section in the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverCoInstallers.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverCoInstallers.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverCoInstallers property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **CoInstallers32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
@@ -83,7 +82,7 @@ Requirements
 
 [**INF *DDInstall*.Coinstallers Section**](./inf-ddinstall-coinstallers-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

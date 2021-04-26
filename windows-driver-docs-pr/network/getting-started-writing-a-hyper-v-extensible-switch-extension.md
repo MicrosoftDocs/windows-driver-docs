@@ -1,7 +1,6 @@
 ---
 title: Getting started writing a Hyper-V Extensible Switch extension
 description: This section describes how to start writing a Hyper-V Extensible Switch extension
-ms.assetid: 91C6ED75-1057-4520-8E8E-28817D8F3C81
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
         [Hyper-V Extensible Switch Enumerations](/windows-hardware/drivers/ddi/ntddndis/index)
         [Hyper-V Extensible Switch Structures and Unions](/windows-hardware/drivers/ddi/_netvista/)
         [Hyper-V Extensible Switch OIDs](./hyper-v-extensible-switch-oids.md)
-        [Hyper-V Extensible Switch Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-status-indications)
+        [Hyper-V Extensible Switch Status Indications](./hyper-v-extensible-switch-status-indications.md)
         [Hyper-V Extensible Switch Macros](/windows-hardware/drivers/ddi/ntddndis/)
     -   Read the online documentation for WFP-based extensions, beginning with [Using Virtual Switch Filtering](using-virtual-switch-filtering.md).
     -   Watch the following instructional videos on extensions.

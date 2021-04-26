@@ -1,7 +1,6 @@
 ---
 title: Specify account information in the Mobile Broadband Metadata Authoring Wizard
 description: Specify account information in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: FFE19760-360F-482C-BBD8-7068D2DD34E5
 keywords:
 - Specify account information in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
@@ -21,7 +20,7 @@ To specify your mobile broadband account information, fill out the following opt
 
     **Internet Profile** is used by Connection Manager to automatically connect to the network. Every mobile broadband subscription can have one default profile that's used to connect to the home network operator. GSM operators who have only one Internet Profile for all subscribers can use the mobile broadband service metadata to provide it to the PC. If you have multiple Purchase APNs, don't specify an Internet Profile here. Instead, use APN Database or Account Provisioning Metadata to set the appropriate Internet APN.
 
-    For more detailed information on the mobile broadband profile schema, see [Service Metadata Package Schema Reference](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference).
+    For more detailed information on the mobile broadband profile schema, see [Service Metadata Package Schema Reference](../mobilebroadband/mobilebroadbandinfo-xml-schema.md).
 
 -   Next to **PIN unlock function**, select **Allow standard users to perform PIN unlock on mobile broadband SIMs** to enable standard users to perform PIN unlock functions on their mobile broadband SIMs for your service.
 
@@ -33,7 +32,5 @@ To specify your mobile broadband account information, fill out the following opt
 
     Trusted certificate hashes are used to validate the digital signature on a provisioning file delivered from the mobile network operator’s web page or captive portal during initial setup. This supports the scenario where a user purchases the service before the mobile broadband app is installed. Both fields should be formatted as Distinguished Names and must match the **Subject** and **Issuer** fields of the digital certificate that's used to sign provisioning files on the purchase web site. For more information about Distinguished Names, see Section RFC 4514 in [String Representation of Distinguished Names on the Internet Engineering Task Force website](https://www.ietf.org/rfc/rfc4514.txt).
 
-    For more information about provisioning, see [Service Metadata Package Schema Reference](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference).
-
- 
+    For more information about provisioning, see [Service Metadata Package Schema Reference](../mobilebroadband/mobilebroadbandinfo-xml-schema.md).
 

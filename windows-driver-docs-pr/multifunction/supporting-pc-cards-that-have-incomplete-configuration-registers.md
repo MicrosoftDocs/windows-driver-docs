@@ -1,7 +1,6 @@
 ---
 title: Supporting PC Cards That Have Incomplete Configuration Registers
 description: Supporting PC Cards That Have Incomplete Configuration Registers
-ms.assetid: 62bdb1e7-ca45-42e6-bdf5-c48fb3ddb3fc
 keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK

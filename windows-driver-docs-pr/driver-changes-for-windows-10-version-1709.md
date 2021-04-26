@@ -1,8 +1,7 @@
 ---
 title: Driver development changes for Windows 10, version 1709
-description: This section describes new features for driver development in Windows 10.
-ms.assetid: 68a5a513-0dab-40f7-b67f-29b76061e1ab
-ms.date: 04/14/2020
+description: Learn about new features for driver development in Windows 10, such as new content sets for Windows debugger.
+ms.date: 04/15/2020
 author: EliotSeattle
 ms.localizationpriority: medium
 ---
@@ -246,9 +245,9 @@ This information is retrieved only when the caller enables the feature in the ho
 
 An application can use these APIs to enable/disable the feature and retrieve the information:
 
-- [WinUsb_GetCurrentFrameNumberAndQpc](/windows/desktop/api/winusb/nf-winusb-winusb_getcurrentframenumberandqpc)
-- [WinUsb_StartTrackingForTimeSync](/windows/desktop/api/winusb/nf-winusb-winusb_starttrackingfortimesync)
-- [WinUsb_StopTrackingForTimeSync](/windows/desktop/api/winusb/nf-winusb-winusb_stoptrackingfortimesync)
+- [WinUsb_GetCurrentFrameNumberAndQpc](/windows/win32/api/winusb/nf-winusb-winusb_getcurrentframenumberandqpc)
+- [WinUsb_StartTrackingForTimeSync](/windows/win32/api/winusb/nf-winusb-winusb_starttrackingfortimesync)
+- [WinUsb_StopTrackingForTimeSync](/windows/win32/api/winusb/nf-winusb-winusb_stoptrackingfortimesync)
 
 Other drivers can send these IOCTL requests to enable/disable the feature and retrieve the information:
 

@@ -1,7 +1,6 @@
 ---
 title: Completing I/O Requests
 description: Completing I/O Requests
-ms.assetid: ec5aef7a-110e-430c-902d-669ccc7095ac
 keywords:
 - I/O requests WDK KMDF , completing
 - completing I/O requests WDK KMDF

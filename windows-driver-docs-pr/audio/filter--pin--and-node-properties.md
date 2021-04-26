@@ -1,7 +1,6 @@
 ---
 title: Filter, Pin, and Node Properties
 description: Filter, Pin, and Node Properties
-ms.assetid: e0d52e97-459f-4095-9cf5-1474117ce66a
 keywords:
 - audio properties WDK , filters
 - WDM audio properties WDK , filters
@@ -68,7 +67,7 @@ The port driver obtains pointers to the miniport driver's property handlers by c
 
 The port driver accesses the miniport driver's filter-property handlers through the **AutomationTable** member of PCFILTER\_DESCRIPTOR. Typically, this automation table contains few handlers because the port driver supplies its own built-in handlers for all the filter properties that SysAudio and WDMAud use to query and configure audio devices.
 
-However, the miniport driver can supply handlers for filter properties such as [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) that provide hardware-dependent information that is not available to the port driver. Two of the sample audio drivers in the Microsoft Windows Driver Kit (WDK) handle the KSPROPERTY\_GENERAL\_COMPONENTID property. For more information, see the miniport driver implementations in the Msvad and Sb16 samples.
+However, the miniport driver can supply handlers for filter properties such as [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) that provide hardware-dependent information that is not available to the port driver. Two of the sample audio drivers in the Microsoft Windows Driver Kit (WDK) handle the KSPROPERTY\_GENERAL\_COMPONENTID property. For more information, see the miniport driver implementations in the Sysvad sample driver, which is discussed in [Sample Audio Drivers](sample-audio-drivers.md).
 
 All the port drivers in Portcls.sys provide handling for the [KSPROPSETID\_Pin](../stream/kspropsetid-pin.md) and [KSPROPSETID\_Topology](../stream/kspropsetid-topology.md) property sets. All the properties in these sets are filter properties, with the exception of [**KSPROPERTY\_TOPOLOGY\_NAME**](../stream/ksproperty-topology-name.md), which is a node property (that uses a filter handle, not a pin handle, to specify the target for the request). The port drivers support the following subset of the KSPROPSETID\_Pin properties:
 

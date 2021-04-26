@@ -1,7 +1,6 @@
 ---
 title: Device Power States
 description: Device Power States
-ms.assetid: 2229f34c-9b88-4e3e-802e-f7be2c7ef168
 keywords: ["device power states WDK kernel", "power states WDK kernel", "states WDK power management", "Dx names WDK power management", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

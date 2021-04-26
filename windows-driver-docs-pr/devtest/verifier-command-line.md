@@ -1,7 +1,6 @@
 ---
 title: Driver Verifier Command Syntax
 description: The following syntax is used when running the Verifier utility in a Command Prompt window.You can type several options on the same single line.
-ms.assetid: 7cdf5277-7187-4e90-b22a-6f828f06e2fb
 keywords:
 - Driver Verifier Command Syntax Driver Development Tools
 topic_type:
@@ -10,7 +9,7 @@ api_name:
 - Driver Verifier Command Syntax
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/12/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +21,7 @@ The following syntax is used when running the Verifier utility in a Command Prom
 You can type several options on the same single line. For example:
 
 ```
-verifier /flags 7 /driver beep.sys flpydisk.sys
+verifier /flags 7 /driver beep.sys disksdd.sys
 ```
 
 **Windows 10**
@@ -32,6 +31,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
 ```
   verifier /standard /all
   verifier /standard /driver NAME [NAME ...]
+  verifier {/ruleclasses | /rc} <options> [<ruleclass_1> <ruleclass_2> ...] /all
   verifier /flags <options> /all
   verifier /flags <options> /driver NAME [NAME ...]
   verifier /rules [OPTION ...]
@@ -160,7 +160,7 @@ Specifies one or more drivers that will be verified. *DriverList* is a list of d
 Specifies one or more drivers that will be excluded from verification. This parameter is applicable only if all drivers are selected for verification. *DriverList* is a list of drivers by binary name, such as Driver.sys. Use a space to separate each driver name. Wildcard values, such as n\*.sys, are not supported.
 
 <span id="________faults______"></span><span id="________FAULTS______"></span> **/faults**   
-(Windows Vista and later) Enables the Low Resources Simulation feature in Driver Verifier. You can use **/faults** in place of **/flags 0x4**. However, you cannot use **/flags 0x4** with the **/faults** subparameters.
+Enables the Low Resources Simulation feature in Driver Verifier. You can use **/faults** in place of **/flags 0x4**. However, you cannot use **/flags 0x4** with the **/faults** subparameters.
 
 You can use the following subparameters of the **/faults** parameter to configure Low Resources Simulation.
 
@@ -263,10 +263,8 @@ Specifies the options for [Systematic low resources simulation](systematic-low-r
 </tbody>
 </table>
 
-
-
 <span id="________flags________Options______"></span><span id="________flags________options______"></span><span id="________FLAGS________OPTIONS______"></span> **/flags** *Options*   
-Activates the specified options after the next reboot. In Windows 2000, this number must be entered in decimal format. In Windows XP and later, this number can be entered in decimal or in hexadecimal (with an **0x** prefix) format. Any combination of the following values is allowed.
+Activates the specified options after the next reboot. This number can be entered in decimal or in hexadecimal (with an **0x** prefix) format. Any combination of the following values is allowed.
 
 <table>
 <colgroup>
@@ -372,7 +370,7 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>32768</p></td>
 <td align="left"><p>0x8000 (bit 15)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8)</p></td>
+<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>65536</p></td>
@@ -390,13 +388,13 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>262144</p></td>
 <td align="left"><p>0x40000 (bit 18)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>524288</p></td>
 <td align="left"><p>0x80000 (bit 19)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2097152</p></td>
@@ -408,7 +406,7 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>8388608</p></td>
 <td align="left"><p>0x800000 (bit 23)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>16777216</p></td>
@@ -425,14 +423,13 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 </tbody>
 </table>
 
-
-
 You cannot use this method to activate the SCSI Verification or Storport Verification options. For information, see [SCSI Verification](scsi-verification.md) and [Storport Verification](dv-storport-verification.md).
+
 
 <span id="________flags________VolatileOptions______"></span><span id="________flags________volatileoptions______"></span><span id="________FLAGS________VOLATILEOPTIONS______"></span> **/flags** *VolatileOptions*   
 Specifies the Driver Verifier options that are changed immediately without rebooting in Windows 2000, Windows XP, and Windows Server 2003. (In Windows Vista, you can use the **/volatile** parameter with all **/flags** values.)
 
-In Windows 2000, enter a number in decimal format. In Windows XP and Windows 2003, enter a number in decimal or in hexadecimal format (with an **0x** prefix).
+Enter a number in decimal or in hexadecimal format (with an **0x** prefix).
 
 Any combination of the following values is permitted.
 
@@ -468,7 +465,50 @@ Any combination of the following values is permitted.
 </tbody>
 </table>
 
+**/ruleclasses** or **/rc** *<ruleclass_1> <ruleclass_2> ... <ruleclass_k>*
 
+The ruleclasses parameter is available starting with Windows Version 1803.
+
+The ruleclasses parameter encompasses a larger set of verification classes than the '/flags' parameter above. While '/flags' is limited to a 32 bit bitmap expression, this option can include more than 32 verification classes. Each positive decimal integer represents a verification class. Multiple classes can be expressed by separating each class id with a space character. The following rule classes IDs are available and leading 0's can be omitted.
+
+**Standard Rule Classes**
+
+ Value | Rule
+|------|------|
+1 | Special pool
+2 | Force IRQL checking
+4 | Pool tracking
+5 | I/O verification
+6 | Deadlock detection
+8 | DMA checking
+9 | Security checks
+12 | Miscellaneous checks
+18 | DDI compliance checking
+34 | WDF Verification
+
+**Additional Rule Classes**
+
+These rule classes are intended for specific scenario testing. Rule classes are marked with `(*)` require I/O Verification (5) that will be automatically enabled. Flags marked with `(**)` support disabling of individual rules. Flags marked with `(***)` are in logging mode by default and require /onecheck in order to crash upon violation.
+
+Flags marked with `(!)` require DIF mode (rule class 36) to be enabled.
+
+ Value | Rule
+|------|------|
+3 | Randomized low resources simulation
+10 | Force pending I/O requests (*)
+11 | IRP logging (*)
+14 | Invariant MDL checking for stack (*)
+15 | Invariant MDL checking for driver (*)
+16 | Power framework delay fuzzing
+17 | Port/miniport interface checking
+19 | Systematic low resources simulation
+20 | DDI compliance checking (additional)
+22 | NDIS/WIFI verification (**)
+24 | Kernel synchronization delay fuzzing
+25 | VM switch verification
+26 | Code integrity checks
+33 | Driver isolation checks (***, !)
+36 | DIF mode
 
 <span id="________iolevel________Level______"></span><span id="________iolevel________level______"></span><span id="________IOLEVEL________LEVEL______"></span> **/iolevel** *Level*   
 (Windows 2000 only) Specifies the level of [I/O Verification](i-o-verification.md).
@@ -553,22 +593,20 @@ Options for rules that can be disabled (advanced).
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>default</strong> <em>ID</em></p></td>
-<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>disable</strong> <em>ID</em></p></td>
-<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 </tbody>
 </table>
 
-
-
 <span id="________standard"></span><span id="________STANDARD"></span> **/standard**  
-(Windows XP and later) Activates the "standard" or default Driver Verifier options after the next boot. The standard options in Windows XP are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), and [DMA Verification](dma-verification.md). This is equivalent to **/flags 0xBB**. Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). This is equivalent to **/flags 0x9BB**. Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md). This is equivalent to **/flags 0x209BB**.
+ Activates the "standard" or default Driver Verifier options after the next boot. The standard options are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), [DMA Verification](dma-verification.md). and [WDF Verification](wdf-verification.md)  Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md).
 
 > [!NOTE]
-> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included. See [Driver Verifier Command Syntax]() for more information.
+> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included.
 
 <span id="________volatile______"></span><span id="________VOLATILE______"></span> **/volatile**   
 Changes the settings without rebooting the computer. Volatile settings take effect immediately.

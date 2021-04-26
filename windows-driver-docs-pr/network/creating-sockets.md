@@ -1,7 +1,6 @@
 ---
 title: Creating Sockets
 description: Creating Sockets
-ms.assetid: 84cd0503-15bd-401f-836c-1fdc8425d073
 keywords:
 - Winsock Kernel WDK networking , socket creation
 - WSK WDK networking , socket creation
@@ -18,7 +17,7 @@ After a Winsock Kernel (WSK) application has successfully attached to the WSK su
 
 A WSK application must specify which category of WSK socket it is creating whenever it creates a new socket. For more information about WSK socket categories, see [Winsock Kernel Socket Categories](winsock-kernel-socket-categories.md).
 
-A WSK application must also specify the address family, socket type, and protocol whenever it creates a new socket. For more information about the address families supported by WSK, see [WSK Address Families](/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)).
+A WSK application must also specify the address family, socket type, and protocol whenever it creates a new socket. For more information about the address families supported by WSK, see [WSK Address Families](ws2def-h.md).
 
 When creating a new socket, a WSK application must provide a socket context value and a pointer to a client dispatch table structure if the application will be enabling any event callback functions on the socket. For more information about enabling event callback functions on a socket, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
 

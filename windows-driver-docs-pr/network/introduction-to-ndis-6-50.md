@@ -1,8 +1,7 @@
 ---
 title: Introduction to NDIS 6.50
 description: This section introduces NDIS 6.50 and describes changes from NDIS 6.40. NDIS 6.50 is included in Windows 10, version 1507 and later.
-ms.assetid: 8D2EA09D-3FA3-467B-861A-AA15C790FCD3
-ms.date: 06/01/2017
+ms.date: 09/30/2020
 ms.localizationpriority: medium
 ---
 
@@ -79,6 +78,7 @@ The following data structures were updated in NDIS 6.50.
 - [NdisMGetDeviceProperty](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetdeviceproperty)
 - [NDIS_SWITCH_OPTIONAL_HANDLERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_optional_handlers)
 - [NDIS_SWITCH_NIC_SAVE_STATE](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)
+- [NDIS_RECEIVE_FILTER_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters)
 
 ## NDIS 6.51
 

@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_CREATE_MAILSLOT.
-ms.assetid: aa223d51-7d13-4244-bad5-db14f1fb0d2c
 keywords:
 - FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT union File System Drivers
 - FLT_PARAMETERS union File System Drivers

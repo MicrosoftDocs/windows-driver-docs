@@ -1,7 +1,6 @@
 ---
 title: Obtaining WDM Information
 description: Obtaining WDM Information
-ms.assetid: a43ffa5b-6166-4624-8dee-a54aaa8c7283
 keywords:
 - WDM information WDK KMDF
 - status information WDK KMDF , WDM

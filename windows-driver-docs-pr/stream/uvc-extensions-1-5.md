@@ -448,11 +448,11 @@ The **SensorFramerate** field contains the measured sensor readout rate in hertz
 
 ###### 2.2.3.4.2 MetadataId_CameraExtrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://docs.microsoft.com/windows/win32/api/mfapi/ns-mfapi-mfcameraextrinsics) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://docs.microsoft.com/windows/win32/api/mfapi/ns-mfapi-mfcameraextrinsic_calibratedtransform) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](/windows/win32/api/mfapi/ns-mfapi-mfcameraextrinsics) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](/windows/win32/api/mfapi/ns-mfapi-mfcameraextrinsic_calibratedtransform) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.3 MetadataId_CameraIntrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://docs.microsoft.com/windows/win32/api/mfapi/ns-mfapi-mfpinholecameraintrinsics) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](/windows/win32/api/mfapi/ns-mfapi-mfpinholecameraintrinsics) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.4 MetadataId_FrameIllumination
 

@@ -36,8 +36,6 @@ The topics in this section show you how to use Visual Studio to perform several 
 
 You'll find videos on the following pages in the Windows driver docs:
 
-- [What's New in HID](https://docs.microsoft.com/windows-hardware/drivers/hid/what-s-new-in-hid)
-- [Capture and view USB traces with Microsoft Message Analyzer](../usbcon/capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md)
 - [Using the Windows Performance Toolkit (WPT) with WDF](../wdf/using-the-windows-performance-toolkit--wpt--with-wdf.md)
 - [Video: Accessing driver IFR logs without a debugger](../wdf/video--accessing-driver-ifr-logs-without-a-debugger.md)
 - [Video: Debugging your driver with WDF source code](../wdf/video--debugging-your-driver-with-wdf-source-code.md)

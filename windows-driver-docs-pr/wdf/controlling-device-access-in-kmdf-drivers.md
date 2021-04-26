@@ -1,7 +1,6 @@
 ---
 title: Controlling Device Access in KMDF Drivers
 description: Controlling Device Access in KMDF Drivers
-ms.assetid: 62bbc69f-0754-4d37-a476-dd2ac3d70de6
 keywords:
 - device access controls WDK KMDF
 - names WDK device objects

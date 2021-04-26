@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT
 description: The KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT property holds the result data for a match.
-ms.assetid: A4CDE539-3C99-4E66-B678-AF56BFFEE460
 keywords: ["KSPROPERTY_SOUNDDETECTOR_MATCHRESULT Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The **KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT** property holds the result data fo
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader" data-raw-source="[&lt;strong&gt;SOUNDDETECTOR_PATTERNHEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader)"><strong>SOUNDDETECTOR_PATTERNHEADER</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader" data-raw-source="[&lt;strong&gt;SOUNDDETECTOR_PATTERNHEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader)"><strong>SOUNDDETECTOR_PATTERNHEADER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -91,6 +90,4 @@ Requirements
 [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader)
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

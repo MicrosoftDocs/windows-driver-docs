@@ -1,7 +1,6 @@
 ---
 title: Overview of Packet Coalescing
 description: Overview of Packet Coalescing
-ms.assetid: E406E89C-247B-4DCB-B309-B742BF0A27E9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,6 +38,6 @@ Packet coalescing involves the following steps:
 
 The following points apply to the support of packet coalescing by NDIS:
 
--   NDIS supports packet coalescing for packets received on the default NDIS port (port 0) assigned to the physical network adapter. NDIS does not support packet coalescing on NDIS ports that are assigned to virtual network adapters. For more information, see [NDIS Ports](ndis-ports.md).
+-   NDIS supports packet coalescing for packets received on the default NDIS port (port 0) assigned to the physical network adapter. NDIS does not support packet coalescing on NDIS ports that are assigned to virtual network adapters. For more information, see [NDIS Ports](overview-of-ndis-ports.md).
 
 -   NDIS supports packet coalescing for packets received on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.

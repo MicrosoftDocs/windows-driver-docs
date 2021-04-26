@@ -1,7 +1,6 @@
 ---
 title: Order of Resources in Start-Device IRP
 description: Order of Resources in Start-Device IRP
-ms.assetid: df55105e-3da3-40cc-9f57-05632cb2d043
 keywords:
 - order of resources WDK PCI
 - start-device IRP WDK PCI

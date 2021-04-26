@@ -1,7 +1,6 @@
 ---
 title: Overview of mobile broadband Windows Runtime APIs
 description: Overview of mobile broadband Windows Runtime APIs
-ms.assetid: 45ec97c4-1a58-48a8-ad50-1cd8fcc4763f
 ms.date: 07/02/2019
 ms.localizationpriority: medium
 ---

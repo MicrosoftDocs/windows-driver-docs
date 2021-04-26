@@ -1,7 +1,6 @@
 ---
 title: Identity (SoftwareInfo)
 description: Identity (SoftwareInfo)
-ms.assetid: fcec93ad-54d4-466e-8fac-888377115689
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

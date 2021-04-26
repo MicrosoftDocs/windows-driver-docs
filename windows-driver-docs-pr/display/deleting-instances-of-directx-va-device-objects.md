@@ -1,7 +1,6 @@
 ---
 title: Deleting Instances of DirectX VA Device Objects
 description: Deleting Instances of DirectX VA Device Objects
-ms.assetid: fab8c6eb-97fa-427e-9fb2-6da249d8d97d
 keywords:
 - deleting instances of DirectX VA device objects
 - removing instances of DirectX VA device objects
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_deleting_instances_of_directx_va_device_objects_gg"></span><span id="DDK_DELETING_INSTANCES_OF_DIRECTX_VA_DEVICE_OBJECTS_GG"></span>
 
 
-Use the following example code to delete instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompDestroy*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback function. The **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function.
+Use the following example code to delete instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompDestroy*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback function. The **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function.
 
 ```cpp
 DWORD APIENTRY

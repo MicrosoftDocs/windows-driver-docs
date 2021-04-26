@@ -21,7 +21,7 @@ Using a bus driver interface gives the client driver several advantages:
 
 In Windows Vista USB, client drivers can themselves expose an interface to assist the [USB Common Class Generic Parent Driver](usb-common-class-generic-parent-driver.md) in defining interface collections for the device it manages.
 
-To get a bus driver interface, the client driver must send an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request to the bus driver. In your client driver:
+To get a bus driver interface, the client driver must send an [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) request to the bus driver. In your client driver:
 
 1.  Create an IRP of the type IRP\_MN\_QUERY\_INTERFACE in the next stack location.
     ```cpp
@@ -30,7 +30,7 @@ To get a bus driver interface, the client driver must send an [**IRP\_MN\_QUERY\
     irpstack->MinorFunction= IRP_MN_QUERY_INTERFACE;
     ```
 
-2.  Allocate memory for the interface and make the stack point to the new memory. For example to allocate memory for the [**USB\_BUS\_INTERFACE\_USBDI\_V0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usb_bus_interface_usbdi_v0) interface:
+2.  Allocate memory for the interface and make the stack point to the new memory. For example to allocate memory for the [**USB\_BUS\_INTERFACE\_USBDI\_V0**](/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usb_bus_interface_usbdi_v0) interface:
     ```cpp
     irpstack->Parameters.QueryInterface.Interface = (USB_BUS_INTERFACE_USBDI_V0) newly allocated interface buffer;
     ```
@@ -48,15 +48,12 @@ To get a bus driver interface, the client driver must send an [**IRP\_MN\_QUERY\
     ntStatus = IoCallDriver(PDO that the client passes URBs to, irp);
     ```
 
-5.  Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the query interface IRP down the stack.
+5.  Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the query interface IRP down the stack.
     ```cpp
     ntStatus = IoCallDriver(PDO that the client passes URBs to, irp);
     ```
 
-For further information about USB interfaces see [Bus Driver Interface Routines for USB Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#usbdi).
+For further information about USB interfaces see [Bus Driver Interface Routines for USB Client Drivers](/windows-hardware/drivers/ddi/_usbref/#usbdi).
 
 ## Related topics
-[Developing Windows client drivers for USB devices](usb-driver-development-guide.md)  
-
-
-
+[Developing Windows client drivers for USB devices](usb-driver-development-guide.md)

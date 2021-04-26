@@ -1,7 +1,6 @@
 ---
 title: Handling Stream Request Blocks
 description: Handling Stream Request Blocks
-ms.assetid: fb4fda0d-54e9-4f1b-a78c-276e770189d5
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , SRBs
 - streaming minidrivers WDK Windows 2000 Kernel , SRBs
@@ -40,17 +39,17 @@ If the class driver is handling synchronization for the minidriver, it queues st
 <tbody>
 <tr class="odd">
 <td><p>device request</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassdevicenotification" data-raw-source="[&lt;strong&gt;StreamClassDeviceNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassdevicenotification)"><strong>StreamClassDeviceNotification</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassdevicenotification" data-raw-source="[&lt;strong&gt;StreamClassDeviceNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassdevicenotification)"><strong>StreamClassDeviceNotification</strong></a></p></td>
 <td><p>ReadyForNextDeviceRequest</p></td>
 </tr>
 <tr class="even">
 <td><p>stream control request</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification)"><strong>StreamClassStreamNotification</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification)"><strong>StreamClassStreamNotification</strong></a></p></td>
 <td><p>ReadyForNextStreamControlRequest</p></td>
 </tr>
 <tr class="odd">
 <td><p>stream data request</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification)"><strong>StreamClassStreamNotification</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassstreamnotification)"><strong>StreamClassStreamNotification</strong></a></p></td>
 <td><p>ReadyForNextStreamDataRequest</p></td>
 </tr>
 </tbody>
@@ -73,6 +72,4 @@ The minidriver can combine 2 and 3 by calling [**StreamClassCompleteRequestAndMa
 The minidriver processes requests asynchronously, so the class driver may need to cancel or time out a request. For these purposes, the minidriver must provide a [*StrMiniCancelPacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_cancel_srb) and a [*StrMiniRequestTimeout*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_request_timeout_handler) routine. The class driver calls the respective minidriver routine when it cancels or times out a request.
 
 The class driver cancels a request when the underlying I/O request is canceled by the operating system. The class driver times out requests that take too long to process -- it decrements a counter of how many seconds until it times out a request in the **TimeoutCounter** member of the stream request block. If the minidriver must defer processing on a request for a long period of time, it should set the **TimeoutCounter** member to zero -- the class driver then will not time out the request. Once the minidriver resumes processing of the request, it should reset **TimeoutCounter** to be equal to the **TimeoutOriginal** member of the stream request block. The minidriver can reset **TimeoutOriginal** to change the length of time before the request times out. See [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) for details.
-
- 
 

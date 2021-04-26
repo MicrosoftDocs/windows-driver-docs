@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Initialization Under Plug and Play
 description: SCSI Miniport Initialization Under Plug and Play
-ms.assetid: bf2f9809-8271-4f0f-a2c4-25127fe9c4aa
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI
@@ -24,4 +23,4 @@ By the time the Plug and Play manager reports a device, it has already allocated
 
 A miniport driver that has been started as a Plug and Play driver might be asked to detect devices that are on nonenumerable buses. This includes buses such as ISA, which require that the miniport driver issue commands on the bus to find its HBA. Devices located during such detection are recorded in the registry and initialized as Plug and Play devices the next time the system is started.
 
-For more information about Plug and Play, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For more information about Plug and Play, see [Plug and Play](../kernel/introduction-to-plug-and-play.md).

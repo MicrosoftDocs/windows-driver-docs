@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
 description: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
-ms.assetid: 451b5a3f-8168-4ac3-85bb-46460999128b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

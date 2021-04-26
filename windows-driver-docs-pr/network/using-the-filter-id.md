@@ -1,7 +1,6 @@
 ---
 title: Using the Filter ID
 description: Using the Filter ID
-ms.assetid: 005AD1CF-37EB-44E8-BFA0-676ACCF69D47
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

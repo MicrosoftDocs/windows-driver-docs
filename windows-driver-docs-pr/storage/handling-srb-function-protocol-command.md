@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_PROTOCOL_COMMAND
 description: Handling SRB_FUNCTION_PROTOCOL_COMMAND
-ms.assetid: 12e9791b-8ddf-4d42-9d89-243bc38eeeb7
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -28,7 +27,7 @@ The miniport should do the following:
 
 ## See Also
 
-[IOCTL_STORAGE_PROTOCOL_COMMAND (*winioctl.h*)](/windows/desktop/api/winioctl/ni-winioctl-ioctl_storage_protocol_command)
+[IOCTL_STORAGE_PROTOCOL_COMMAND (*winioctl.h*)](/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_protocol_command)
 
 [IOCTL_STORAGE_PROTOCOL_COMMAND (*ntddstor.h*)](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command)
 

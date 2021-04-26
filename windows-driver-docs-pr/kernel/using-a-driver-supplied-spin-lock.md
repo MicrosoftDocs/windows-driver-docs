@@ -1,7 +1,6 @@
 ---
 title: Using a Driver-Supplied Spin Lock
 description: Using a Driver-Supplied Spin Lock
-ms.assetid: e81d5c93-47d6-407c-80a2-b2d55f9eb717
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
 ms.date: 05/09/2018
 ms.localizationpriority: medium
@@ -187,7 +186,5 @@ VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 
 The I/O manager always acquires the global cancel spin lock before it calls a *Cancel* routine, so the first task of the *Cancel* routine is to release this spin lock. It then acquires the spin lock that protects the driver's queue of IRPs, removes the current IRP from the queue, releases its spin lock, completes the IRP with STATUS\_CANCELLED and no priority boost, and returns.
 
-For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](https://go.microsoft.com/fwlink/p/?linkid=59531) white paper.
-
- 
+For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](/previous-versions/windows/hardware/design/dn653289(v=vs.85)) white paper.
 

@@ -1,7 +1,6 @@
 ---
 title: COM Interfaces for UI Plug-Ins
 description: COM Interfaces for UI Plug-Ins
-ms.assetid: 9cc6502b-a003-4d0b-857e-4653cf6fa0ea
 keywords:
 - user interface plug-ins WDK print , COM interfaces
 - UI plug-ins WDK print , COM interfaces

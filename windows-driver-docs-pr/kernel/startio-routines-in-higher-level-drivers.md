@@ -1,7 +1,6 @@
 ---
 title: StartIo Routines in Higher-Level Drivers
 description: StartIo Routines in Higher-Level Drivers
-ms.assetid: 8b0e3bef-4a73-4cf8-b71a-6aedf451d648
 keywords: ["StartIo routines, higher-level drivers"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

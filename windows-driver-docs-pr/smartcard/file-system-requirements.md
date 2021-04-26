@@ -1,7 +1,6 @@
 ---
 title: File System Requirements
 description: File System Requirements
-ms.assetid: 2C363978-3C98-4838-8C55-F804D2C75BEC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -300,15 +299,15 @@ Principals can create directories in the card file system with two sets of permi
 <tbody>
 <tr class="odd">
 <td align="left">UserCreateDeleteDirAc</td>
-<td align="left"><p>The user and administrator can create files in the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
-<p>The user and administrator can delete the Directory (if it is not empty) by calling <a href="https://docs.microsoft.com/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
-<p>Everyone can list the contents of the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p></td>
+<td align="left"><p>The user and administrator can create files in the directory by using <a href="/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
+<p>The user and administrator can delete the Directory (if it is not empty) by calling <a href="/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
+<p>Everyone can list the contents of the directory by using <a href="/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">AdminCreateDeleteDirAc</td>
-<td align="left"><p>The administrator can create files in the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
-<p>The administrator can delete the Directory by using <a href="https://docs.microsoft.com/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
-<p>Everyone can list the contents of the directory by using <a href="https://docs.microsoft.com/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p>
+<td align="left"><p>The administrator can create files in the directory by using <a href="/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a>.</p>
+<p>The administrator can delete the Directory by using <a href="/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a>.</p>
+<p>Everyone can list the contents of the directory by using <a href="/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a>.</p>
 <div class="alert">
 <strong>Note</strong>  This ACL is optional. It may be removed from future revisions of the smart card minidriver specification.
 </div>
@@ -390,7 +389,7 @@ The following table lists the access conditions that are available through [**Ca
 </tr>
 <tr class="even">
 <td align="left">EveryoneReadUserWriteAc</td>
-<td align="left"><p>This means that everyone can read the file or get the file information (<a href="https://docs.microsoft.com/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, and that the user and administrator can read the file, write the file, and delete the file.</p></td>
+<td align="left"><p>This means that everyone can read the file or get the file information (<a href="/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, and that the user and administrator can read the file, write the file, and delete the file.</p></td>
 <td align="left">E(R), U(RW), A(RW)</td>
 </tr>
 <tr class="odd">
@@ -400,7 +399,7 @@ The following table lists the access conditions that are available through [**Ca
 </tr>
 <tr class="even">
 <td align="left">EveryoneReadAdminWriteAc</td>
-<td align="left"><p>This means that everyone can read the file or get the file information (<a href="https://docs.microsoft.com/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, but that only the administrator can write the file and delete the file.</p></td>
+<td align="left"><p>This means that everyone can read the file or get the file information (<a href="/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, but that only the administrator can write the file and delete the file.</p></td>
 <td align="left">E(R), U(R), A(RW)</td>
 </tr>
 <tr class="odd">
@@ -468,6 +467,4 @@ The following table lists some sample access conditions for common items.
 -   It is not possible through the smart card minidriver interface to create a PIN file on the card (E(X), U(W), and A(W)).
 -   It is not possible through the smart card minidriver interface to query directory access conditions.
 -   It is only possible through the smart card minidriver interface to create files with a subset of the access condition combinations that are available.
-
- 
 

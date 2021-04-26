@@ -1,7 +1,6 @@
 ---
 title: Hardware notifications support
 description: Windows 10, version 1709 provides an infrastructure for the hardware-agnostic support of notification components such as LEDs and vibration mechanisms.
-ms.assetid: 48df55c4-aa5e-4157-8b90-65ad127d876b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -14,8 +13,6 @@ ms.date: 10/17/2018
 -   Driver developers and OEMs
 
 **Important APIs**
-
--   [Hardware notifications reference](/windows-hardware/drivers/ddi/index)
 
 Windows 10, version 1709 provides an infrastructure for the hardware-agnostic support of notification components such as LEDs and vibration mechanisms. This support is delivered through the introduction of a Kernel-Mode Driver Framework (KMDF) class extension specifically for hardware notification components that allows for the rapid development of client drivers. A KMDF class extension is essentially a KMDF driver that provides a defined set of functionality for a given class of devices, similar to a port driver in the Windows Driver Model (WDM). This section provides an overview of the architecture of the hardware notification class extension. For additional information about the KMDF, see [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md).
 

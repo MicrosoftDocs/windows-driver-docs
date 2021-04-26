@@ -1,7 +1,6 @@
 ---
 title: Opening a Handle to a Registry-Key Object
 description: Opening a Handle to a Registry-Key Object
-ms.assetid: 451e36a1-1cc2-469e-9f54-c02fef7b1666
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel", "opening handle to registry-key object", "handle to registry-key object WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 To open a handle to a registry-key object, carry out the following two-step process:
 
-1.  Create an [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure, and initialize it by calling [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes). You specify the name of the key to manipulate as the *ObjectName* parameter to **InitializeObjectAttributes**.
+1.  Create an [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-_object_attributes) structure, and initialize it by calling [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes). You specify the name of the key to manipulate as the *ObjectName* parameter to **InitializeObjectAttributes**.
 
     If you pass **NULL** as the *RootDirectory* parameter to **InitializeObjectAttributes**, *ObjectName* must be the full path of the registry key, beginning with **\\Registry**. Otherwise, *RootDirectory* must be an open handle to a key, and *ObjectName* is the path that is relative to that key.
 

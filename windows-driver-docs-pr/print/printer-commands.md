@@ -1,7 +1,6 @@
 ---
 title: Printer Commands
 description: Printer Commands
-ms.assetid: 4f47ae57-cfca-4670-823e-526e2f40de82
 keywords:
 - Unidrv, commands
 - GPD files WDK Unidrv , printer commands

@@ -1,7 +1,6 @@
 ---
 title: How NDIS Sets the Power Policy for a Network Adapter
 description: How NDIS Sets the Power Policy for a Network Adapter
-ms.assetid: ede0e33d-16f9-45ec-9e9d-b188f6360b2f
 keywords:
 - network interface cards WDK networking , power policy
 - NICs WDK networking , power policy
@@ -49,39 +48,39 @@ When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in add
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/deviced1-and-deviced2" data-raw-source="[DeviceD1 and DeviceD2](../kernel/deviced1-and-deviced2.md)">DeviceD1 and DeviceD2</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/deviced1-and-deviced2" data-raw-source="[DeviceD1 and DeviceD2](../kernel/deviced1-and-deviced2.md)">DeviceD1 and DeviceD2</a></p></td>
 <td align="left"><p>TRUE if the device supports the D1 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/deviced1-and-deviced2" data-raw-source="[DeviceD1 and DeviceD2](../kernel/deviced1-and-deviced2.md)">DeviceD1 and DeviceD2</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/deviced1-and-deviced2" data-raw-source="[DeviceD1 and DeviceD2](../kernel/deviced1-and-deviced2.md)">DeviceD1 and DeviceD2</a></p></td>
 <td align="left"><p>TRUE if the device supports the D2 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D0 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D1 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D2 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](../kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D3 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/devicestate" data-raw-source="[DeviceState](../kernel/devicestate.md)">DeviceState</a><strong>[PowerSystemMaximum]</strong></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/devicestate" data-raw-source="[DeviceState](../kernel/devicestate.md)">DeviceState</a><strong>[PowerSystemMaximum]</strong></p></td>
 <td align="left"><p>Specifies the highest-powered device state that this device can maintain for each system power state, from <strong>PowerSystemUnspecified</strong> to <strong>PowerSystemShutdown</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/systemwake" data-raw-source="[SystemWake](../kernel/systemwake.md)">SystemWake</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/systemwake" data-raw-source="[SystemWake](../kernel/systemwake.md)">SystemWake</a></p></td>
 <td align="left"><p>Specifies lowest-powered system power state (S0 through S4) from which the device can signal a wake event.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/devicewake" data-raw-source="[DeviceWake](../kernel/devicewake.md)">DeviceWake</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/kernel/devicewake" data-raw-source="[DeviceWake](../kernel/devicewake.md)">DeviceWake</a></p></td>
 <td align="left"><p>Specifies lowest-powered device power state (D0 through D3) from which the device can signal a wake event.</p></td>
 </tr>
 </tbody>
@@ -161,6 +160,4 @@ This option, which is subordinate to the second option that is described earlier
 The **Only allow management stations to bring the computer out of standby** option is clear by default. The user can select this option to specify that only the receipt of a Magic Packet will cause the NIC to generate a wake-up signal to the system.
 
 Whenever a user selects or clears a power management option for a NIC, the system notifies NDIS of the change. NDIS writes the new setting to the registry so that the changed setting persists across restarts.
-
- 
 

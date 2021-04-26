@@ -1,7 +1,6 @@
 ---
 title: Processing Mutex in AVStream
 description: Processing Mutex in AVStream
-ms.assetid: dd84fe3f-352e-4641-99d7-792ccecb0b40
 keywords:
 - AVStream mutexes WDK
 - mutexes WDK AVStream

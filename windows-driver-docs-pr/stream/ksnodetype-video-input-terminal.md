@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
 description: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
-ms.assetid: f0b43fc2-4cb0-420d-bfb7-78d391daa740
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

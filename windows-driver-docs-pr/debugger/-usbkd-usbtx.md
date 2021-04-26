@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbtx
 description: The usbkd.usbtx command displays information from a usbport _HCD_TRANSFER_CONTEXT structure.
-ms.assetid: 603AD207-69D5-4DED-80B5-ADA21E191D47
 keywords: ["usbkd.usbtx Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

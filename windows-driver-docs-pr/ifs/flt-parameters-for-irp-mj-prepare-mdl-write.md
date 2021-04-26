@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_PREPARE_MDL_WRITE union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_PREPARE\_MDL\_WRITE.
-ms.assetid: eebbb8d4-f46d-4aee-aeb3-7edcbd23207a
 keywords: ["FLT_PARAMETERS for IRP_MJ_PREPARE_MDL_WRITE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

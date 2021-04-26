@@ -1,7 +1,6 @@
 ---
 title: Enumerating Cofunctional VidPN Source and Target Modes
 description: Enumerating Cofunctional VidPN Source and Target Modes
-ms.assetid: f1aa6277-7af6-4ba0-8ff1-d562f7029540
 keywords:
 - video present networks WDK display , enumerate target and source modes
 - VidPN WDK display , enumerate target and source modes

@@ -1,7 +1,6 @@
 ---
 title: Bob Deinterlacing Algorithm
 description: Bob Deinterlacing Algorithm
-ms.assetid: ef3220bd-841d-4187-bc86-11b999eae2bd
 keywords:
 - bob deinterlacing WDK DirectX VA , algorithm
 - deinterlacing WDK DirectX VA , bob, algorithm

@@ -1,7 +1,6 @@
 ---
 title: Understanding the WaveRT Port Driver
 description: Understanding the WaveRT Port Driver
-ms.assetid: 2627615a-3fde-4ed6-9f7f-f6d7e5d82b3b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

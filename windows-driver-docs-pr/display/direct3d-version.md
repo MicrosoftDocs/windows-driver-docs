@@ -1,7 +1,6 @@
 ---
 title: DIRECT3D_VERSION
 description: DIRECT3D_VERSION
-ms.assetid: 09032f06-d31f-4d9f-80bd-e6b9b8d5cbaa
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , header files
 - header files WDK DirectX 8.0

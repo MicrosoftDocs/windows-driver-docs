@@ -1,7 +1,6 @@
 ---
 title: Porting NDIS 6.x Drivers to NDIS 6.20
 description: Porting NDIS 6.x Drivers to NDIS 6.20
-ms.assetid: 83fb93c3-a1e8-49b7-930f-90b910afcdb0
 keywords:
 - NDIS 6.20 WDK , porting NDIS 6.x drivers
 - NDIS 6.x drivers WDK

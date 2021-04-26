@@ -1,7 +1,6 @@
 ---
 title: NDIS Filter Driver Installation
 description: NDIS Filter Driver Installation
-ms.assetid: 8e0c47bf-6b63-4be5-98b7-7a99e9efe283
 keywords:
 - filter drivers WDK networking , installation
 - NDIS filter drivers WDK , installation

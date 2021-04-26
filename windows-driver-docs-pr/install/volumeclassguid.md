@@ -1,7 +1,6 @@
 ---
 title: VolumeClassGuid
 description: VolumeClassGuid
-ms.assetid: 30d0db03-fbea-4245-b8d7-ca3a06a54861
 keywords: ["VolumeClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ VolumeClassGuid is an obsolete identifier for the [device interface class](./ove
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076) that uses VolumeClassGuid to enumerate instances of the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](/samples/browse/) that uses VolumeClassGuid to enumerate instances of the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
 Requirements
 ------------
@@ -49,6 +48,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
-
- 
 

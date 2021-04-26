@@ -1,7 +1,6 @@
 ---
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10 version 1709 (Redstone 3) Build 16299
-description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows. The target computer must have a supported network interface card (NIC) or network adapter.
-ms.assetid: 13CC3084-A223-4CDC-8612-2A3851369FB0
+description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 10, version 1709.
 ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Life Cycle of an Object
 description: Life Cycle of an Object
-ms.assetid: e81bfce6-27c4-4916-adc8-9c014d02bee7
 keywords: ["object life cycles WDK kernel", "life cycles WDK objects", "referencing objects", "object reference counts WDK kernel", "temporary objects WDK kernel", "permanent objects WDK kernel", "reference counts WDK objects", "freed objects WDK kernel", "object temporary status WDK kernel", "object permanent status WDK kernel", "automatic object deletions WDK kernel", "object tracking WDK kernel", "open object handles WDK kernel", "counting references WDK objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -53,7 +52,7 @@ Most objects are *temporary*; they exist as long as they are in use, and then th
 
 A temporary object can be accessed by name only as long as its handle count is nonzero. Once the handle count decrements to zero, the object's name is removed from the object manager's namespace. Such objects can still be accessed by pointer as long as their reference count remains greater than zero. Permanent objects can be accessed by name as long as they exist.
 
-An object can be made permanent at the time of its creation by specifying the OBJ\_PERMANENT attribute in the [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure for the object. For more information, see [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes).
+An object can be made permanent at the time of its creation by specifying the OBJ\_PERMANENT attribute in the [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-_object_attributes) structure for the object. For more information, see [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes).
 
 To make a permanent object temporary, use the [**ZwMakeTemporaryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwmaketemporaryobject) routine. This routine causes an object to be automatically deleted once it is no longer in use. (If the object has no open handles, the object's name is immediately removed from the object manager's namespace. The object itself remains until the reference count falls to zero.)
 

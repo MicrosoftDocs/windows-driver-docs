@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_CATEGORY
 description: The WIA\_IPA\_ITEM\_CATEGORY property contains grouped categories for WIA items.
-ms.assetid: 0dde5e1c-ac30-4129-96fb-89ce1950c29b
 keywords: ["WIA_IPA_ITEM_CATEGORY Imaging Devices"]
 topic_type:
 - apiref
@@ -290,7 +289,7 @@ The following table shows the WIA grouped categories and their WIA properties an
 </tr>
 <tr class="odd">
 <td><p>WIA_CATEGORY_AUTO</p></td>
-<td><p>Properties include those for auto-configured scanning. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item" data-raw-source="[WIA Properties Supported by an Auto Item](./wia-properties-supported-by-an-auto-item.md)">WIA Properties Supported by an Auto Item</a>.</p></td>
+<td><p>Properties include those for auto-configured scanning. For more information, see <a href="/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item" data-raw-source="[WIA Properties Supported by an Auto Item](./wia-properties-supported-by-an-auto-item.md)">WIA Properties Supported by an Auto Item</a>.</p></td>
 <td><p>WIA auto item that represents the scanner's auto-configured scanning settings.</p></td>
 </tr>
 </tbody>
@@ -322,6 +321,4 @@ Requirements
 
 
 [**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md)
-
- 
 

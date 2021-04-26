@@ -1,7 +1,6 @@
 ---
 title: bpid
 description: The bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer.
-ms.assetid: 47091651-3b39-4e3d-86cf-a8e95779a025
 keywords: ["bpid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

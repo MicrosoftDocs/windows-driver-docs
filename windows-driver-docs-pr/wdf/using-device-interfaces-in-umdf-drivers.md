@@ -1,7 +1,6 @@
 ---
 title: Using Device Interfaces in UMDF Drivers
 description: Using Device Interfaces in UMDF Drivers
-ms.assetid: acb6da80-bd04-48f0-b42a-96463f091b0a
 keywords:
 - user-mode drivers WDK UMDF , device interfaces
 - UMDF WDK , device interfaces
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
-A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about SetupDi functions, see SetupDi Device Interface Functions.
+A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about SetupDi functions, see SetupDi Device Interface Functions.
 
 Each device interface belongs to a *device interface class*. For example, a driver stack for a CD-ROM device might provide an interface that belongs to the GUID\_DEVINTERFACE\_CDROM class. One of the CD-ROM device's drivers would register an instance of the GUID\_DEVINTERFACE\_CDROM class to inform the system and applications that a CD-ROM device is available. For more information about device interface classes, see [Introduction to Device Interfaces](../install/overview-of-device-interface-classes.md).
 

@@ -1,8 +1,7 @@
 ---
 title: Capabilities Provided by Storport
 description: Capabilities Provided by Storport
-ms.assetid: 30b4d2e4-2004-4d71-8c91-f066e52dd256
-ms.date: 10/08/2019
+ms.date: 03/16/2021
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +45,7 @@ The Storport driver provides the following capabilities:
 
 Storport provides services to the miniport driver by means of the Storport library routines. Miniport driver writers can call these routines rather than coding the functionality that they provide into a single monolithic port driver. Some of the most important services afforded by using these routines are as follows:
 
-- A Storport miniport driver can delegate many OS-dependent initialization operations to Storport's [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) library routine. For example, the Storport driver handles the details related to PnP and DMA mapping. This makes a Storport miniport driver more portable across different versions of the operating system. For an explanation of the initialization duties of a Storport miniport driver, see [Hardware Initialization with Storport](hardware-initialization-with-storport.md).
+- A Storport miniport driver can delegate many OS-dependent initialization operations to Storport's [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) library routine. For example, the Storport driver handles the details related to PnP and DMA mapping. This reduces the amount of work a Storport miniport driver needs to do. For an explanation of the initialization duties of a Storport miniport driver, see [Hardware Initialization with Storport](hardware-initialization-with-storport.md).
 
 - Storport miniport drivers for non-PnP devices are spared the task of locating adapters and reporting their resources to the PnP manager. This is done in [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize).
 

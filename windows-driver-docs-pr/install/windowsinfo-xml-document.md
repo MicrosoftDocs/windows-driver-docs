@@ -1,7 +1,6 @@
 ---
 title: WindowsInfo XML Document
 description: WindowsInfo XML Document
-ms.assetid: 8004d165-46c5-4bf4-849d-ba83205b9f54
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

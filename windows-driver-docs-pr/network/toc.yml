@@ -150,8 +150,6 @@
     href: introduction-to-ndis-pdpi.md
 - name: "NDIS versions"
   items: 
-  - name: "NDIS version guide"
-    href: ndis-version-guide.md
   - name: "Overview of NDIS versions"
     href: overview-of-ndis-versions.md
   - name: "Introductions to NDIS 6.0 and later"
@@ -352,8 +350,6 @@
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md    
 - name: "NDIS Core Functionality"
   items: 
-  - name: "NDIS Drivers and Services"
-    href: ndis-core-functionality2.md
   - name: "NDIS Miniport Drivers"
     items: 
     - name: "Roadmap for Developing NDIS Miniport Drivers"
@@ -382,6 +378,8 @@
           href: miniport-adapter-context.md
         - name: "Virtual Connection Context"
           href: virtual-connection-context.md
+        - name: "Debugger 2PF KDNET Support"
+          href: debugger-2pf-kdnet-support.md
         - name: "Network OIDs"
           href: network-oids.md
       - name: "Sample NDIS Miniport Drivers"
@@ -1894,6 +1892,20 @@
       href: indicating-rss-receive-data.md
     - name: "Supporting RSS in Intermediate Drivers or Filter Drivers"
       href: supporting-rss-in-intermediate-drivers-or-filter-drivers.md
+    - name: "Virtual Machine Multiple Queues (VMMQ)"
+      items:
+      - name: "Overview of Virtual Machine Multiple Queues (VMMQ)"
+        href: overview-of-virtual-machine-multiple-queues.md
+      - name: "VMMQ send and receive processing"
+        href: vmmq-send-and-receive-processing.md
+      - name: "Advertising VMMQ capabilities"
+        href: advertising-vmmq-capabilities.md
+      - name: "Standardized INF keywords for VMMQ"
+        href: standardized-inf-keywords-for-vmmq.md
+      - name: "Allocating VPorts for VMMQ"
+        href: allocating-vports-for-vmmq.md
+      - name: "Enabling, disabling, and updating VMMQ on a VPort"
+        href: updating-vmmq-on-a-vport.md
   - name: "TCP/IP Offload"
     items: 
     - name: "TCP/IP Offload Overview"
@@ -2558,6 +2570,8 @@
       href: hyper-v-extensible-switch-oids.md
     - name: "Hyper-V Extensible Switch Status Indications"
       items: 
+      - name: "Overview"
+        href: hyper-v-extensible-switch-status-indications.md
       - name: "NDIS_STATUS_SWITCH_NIC_STATUS"
         href: ndis-status-switch-nic-status.md
       - name: "NDIS_STATUS_SWITCH_PORT_REMOVE_VF"
@@ -2572,38 +2586,12 @@
         href: ndis-status-receive-queue-state.md
 - name: "Wireless Networking"
   items: 
-  - name: "Wireless Networking Topics"
-    href: wireless-networking2.md
   - name: "WLAN Universal Windows driver model"
     href: wifi-universal-driver-model.md
-  - name: "Cellular architecture and overview"
-    items: 
-    - name: "Cellular architecture and implementation"
-      href: cellular-architecture-and-driver-model.md
-    - name: "Dual SIM"
-      href: dual-sim.md
-    - name: "SIM locking"
-      href: sim-lock.md
-    - name: "SIM toolkit"
-      items: 
-      - name: "SIM toolkit Overview"
-        href: sim-toolkit.md
-      - name: "SIM toolkit commands"
-        href: sim-toolkit-commands.md
-      - name: "Reserved URI to launch SIM toolkit"
-        href: reserved-uri-to-launch-sim-toolkit.md
-    - name: "Cellular COM API"
-      items: 
-      - name: "Cellular COM API design guide"
-        href: cellular-com-api-design-guide.md
-      - name: "Cellular COM API capabilities"
-        href: cellular-com-api-capabilities.md
-      - name: "Communicate with the RIL driver by using IOemCellularModem interface"
-        href: communicate-with-the-ril-driver-by-using-the-ioemcellularmodem-interface.md
   - name: "Mobile Broadband (MB) Design Guide"
     items: 
-    - name: "Mobile Broadband (MB) Design Guide Topics"
-      href: mobile-broadband--mb--design-guide.md
+    - name: "Cellular Architecture"
+      href: cellular-architecture-and-driver-model.md
     - name: "Roadmap to Develop MB Miniport Drivers"
       href: roadmap-to-develop-mb-miniport-drivers.md
     - name: "MB Interface Model"
@@ -2636,6 +2624,10 @@
         href: mb-operational-semantics.md
       - name: "MB Driver Model Versioning"
         href: mb-driver-model-versioning.md
+      - name: "Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)"
+        href: ../netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx.md
+      - name: "MB Driver Stack, Suspend, and Resume"
+        href: mb-mbim-interaction-overview.md
       - name: "MB Miniport driver INF Requirements"
         href: mb-miniport-driver-inf-requirements.md
       - name: "MB Miniport Driver Types"
@@ -2650,50 +2642,40 @@
         href: mb-miniport-driver-error-logging.md
       - name: "MB Miniport Driver Performance Requirements"
         href: mb-miniport-driver-performance-requirements.md
-    - name: "MB Operation Flowcharts"
-      items: 
-      - name: "MB Operation Flowchart Topics"
-        href: mb-operation-flowcharts.md
-      - name: "MB Miniport Driver Initialization"
-        href: mb-miniport-driver-initialization.md
-      - name: "Initialization of a non-SIM-Locked GPRS Device with a Provisioned Context"
-        href: initialization-of-a-non-sim-locked-gprs-device-with-a-provisioned-cont.md
-      - name: "Initialization of SIM-Locked GPRS Device with a User Defined Context"
-        href: initialization-of-sim-locked-gprs-device-with-a-user-defined-context.md
-      - name: "Initialization of a CDMA Packet Device with a Provisioned Context"
-        href: initialization-of-a-cdma-packet-device-with-a-provisioned-context.md
-      - name: "Losing and Regaining Packet Data Service"
-        href: losing-and-regaining-packet-data-service.md
-      - name: "Packet Data Service Handoffs"
-        href: packet-data-service-handoffs.md
-      - name: "Voice Calls during Packet Data Service Connections"
-        href: voice-calls-during-packet-data-service-connections.md
-      - name: "Signal Strength Indication Semantics"
-        href: signal-strength-indication-semantics.md
     - name: "MB Device Readiness"
       href: mb-device-readiness.md
+    - name: "MB Data Connectivity"
+      href: mb-data-connectivity.md
+    - name: "Basic Connectivity Log Filter"
+      href: mb-basic-connectivity-tat.md
     - name: "MB Service Detection and Activation"
       href: mb-service-detection-and-activation.md
-    - name: "MB Radio Power State Operations"
-      href: mb-radio-power-state-operations.md
+    - name: "MB Radio State"
+      href: mb-radio-state.md
     - name: "MB PIN Operations"
       href: mb-pin-operations.md
+    - name: "MB PIN Log Filter"
+      href: mb-pin-filter.md
     - name: "MB Provider Operations"
       href: mb-provider-operations.md
     - name: "MB Registration Operations"
       href: mb-registration-operations.md
-    - name: "MB Packet Service Attach Operations"
+    - name: "MB Packet Service Operations"
       href: mb-packet-service-attach-operations.md
     - name: "MB Signal Strength Operations"
       href: mb-signal-strength-operations.md
     - name: "MB Packet Context Management"
       href: mb-packet-context-management.md
+    - name: "MB Multiple PDP Contexts"
+      href: mb-multiple-pdp.md
     - name: "MB DNS Updates"
       href: mb-dns-updates.md
     - name: "MB SMS Operations"
       href: mb-sms-operations.md
     - name: "MB Vendor Specific Operations"
       href: mb-vendor-specific-operations.md
+    - name: "MB USSD Overview"
+      href: mb-ussd-overview.md
     - name: "MB USSD Operations"
       href: mb-ussd-operations.md
     - name: "MB Device Services"
@@ -2702,12 +2684,16 @@
       href: mb-multimode-multicarrier.md
     - name: "MB Multi-SIM Operations"
       href: mb-multi-sim-operations.md
+    - name: "MB DSSA Filter"
+      href: mb-dssa-filter.md
     - name: "MB Provisioned Context Operations"
       href: mb-provisioned-context-operations.md
     - name: "MB Network Blacklist Operations"
       href: mb-network-blacklist-operations.md
     - name: "MB LTE Attach Operations"
       href: mb-lte-attach-operations.md
+    - name: "LTE Attach Operation Log Filter"
+      href: mb-lte-attach-tat.md
     - name: "MB Protocol Configuration Options (PCO) Operations"
       href: mb-protocol-configuration-options-pco-operations.md
     - name: "MB UICC operations"
@@ -2716,6 +2702,14 @@
         href: mb-low-level-uicc-access.md
       - name: "MB UICC application and file system access"
         href: mb-uicc-application-and-file-system-access.md
+    - name: "MB eSIM Operations"
+      href: mb-esim-operations.md
+    - name: "MB Firmware Upgrade for eSIM"
+      href: mb-fw-upgrade-for-esim.md
+    - name: "eSIM Download and Install Log Filter"
+      href: mb-esim-download-install-tat.md
+    - name: "eSIM Profile Operations Log Filter"
+      href: mb-esim-profile-operations-tat.md
     - name: "MB reset and recovery"
       items:
       - name: "MB Device-based Reset and Recovery and Hang Detection"
@@ -2724,6 +2718,8 @@
           href: mb-device-based-reset-and-recovery.md
         - name: "MB hang detection"
           href: mb-hang-detection.md
+        - name: "MB Device Reset and Recovery (RnR) trace"
+          href: mb-device-based-reset-and-recovery-trace.md
       - name: "MB modem reset operations"
         href: mb-modem-reset-operations.md
     - name: "MB SAR Platform Support"
@@ -2734,10 +2730,20 @@
       href: mb-nitz-support.md
     - name: "MB modem logging with DSS"
       href: mb-modem-logging-with-dss.md
-    - name: "MB 5G operations"
+    - name: "MB 5G Operations"
       items:
-      - name: "MB 5G data class support"
-        href: mb-5g-data-class-support.md
+      - name: "MB 5G Operations Overview"
+        href: mb-5g-operations-overview.md
+      - name: "MB 5G Operations Terminology"
+        href: mb-5g-operations-terminology.md
+      - name: "Windows 5G MBIM Interface"
+        href: windows-5g-mbim-interface.md
+      - name: "NDIS Interface for 5G Data Class Support"
+        href: ndis-interface-for-5g-data-class-support.md
+      - name: "MBIMEx 2.0 – 5G NSA support"
+        href: mbimex-2.0-5g-nsa-support.md
+      - name: "MBIMEx 3.0 – 5G SA Phase 1 support"
+        href: mbimex-3.0-5g-sa-phase-1-support.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
@@ -2868,6 +2874,14 @@
         href: mobile-broadband-class-driver-logs--event-trace-log-tracing.md
       - name: "Mobile Broadband Implementation Guidelines for USB Devices"
         href: mobile-broadband-implementation-guidelines-for-usb-devices.md
+      - name: "Collecting Mobilebroadband Logs"
+        href: mb-collecting-logs.md
+      - name: "Analyzing Mobilebroadband Logs"
+        href: mb-analyzing-logs.md
+      - name: "TextAnalysisTool Filter Files"
+        href: mb-tat-filters.md
+      - name: "netsh mbn test installation"
+        href: mb-netsh-mbn-test.md
   - name: "WLAN network preference and roaming"
     items: 
     - name: "WLAN feature information"
@@ -4180,8 +4194,6 @@
     href: programming-considerations.md
 - name: "Winsock Kernel"
   items: 
-  - name: "Winsock Kernel Topics"
-    href: winsock-kernel4.md
   - name: "Roadmap for Developing Network Drivers with Winsock Kernel"
     href: roadmap-for-developing-network-drivers-with-winsock-kernel.md
   - name: "Introduction to Winsock Kernel"
@@ -4316,8 +4328,6 @@
     href: including-header-files-for-ip-helper.md
 - name: "Windows Filtering Platform Callout Drivers"
   items: 
-  - name: "Windows Filtering Platform Callout Driver Topics"
-    href: windows-filtering-platform-callout-drivers2.md
   - name: "Roadmap for Developing WFP Callout Drivers"
     href: roadmap-for-developing-wfp-callout-drivers.md
   - name: "Introduction to Windows Filtering Platform Callout Drivers"
@@ -4738,8 +4748,12 @@
         href: data-out-endpoint-descriptor.md
 - name: "Kernel Mode SDK Topics for Network Drivers"
   items: 
+  - name: "Overview of Kernel Mode SDK Topics for Network Drivers"
+    href: kernel-mode-sdk-topics-for-network-drivers.md
   - name: "Mstcpip.h"
     items: 
+    - name: "Overview"
+      href: mstcpip-h.md
     - name: "SIO_LOOPBACK_FAST_PATH control code"
       href: sio-loopback-fast-path.md
     - name: "SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code"
@@ -4750,6 +4764,8 @@
       href: sio-set-wfp-connection-redirect-records.md
   - name: "Ntddndis.h"
     items: 
+    - name: "Overview"
+      href: ntddndis-h.md
     - name: "GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES"
       href: guid-ndis-gen-pci-device-custom-properties.md
     - name: "OID_802_3_ADD_MULTICAST_ADDRESS"
@@ -5432,6 +5448,8 @@
       href: oid-wwan-visible-providers.md
   - name: "Ws2def.h"
     items: 
+    - name: "Overview"
+      href: ws2def-h.md
     - name: "AF_INET"
       href: af-inet.md
     - name: "AF_INET6"

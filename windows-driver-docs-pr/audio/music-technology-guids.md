@@ -1,7 +1,6 @@
 ---
 title: Music Technology GUIDs
 description: Music Technology GUIDs
-ms.assetid: 3b7c2907-e67f-458e-809d-080dcc30be1a
 keywords:
 - WDM audio extensions WDK , music technology GUIDs
 - music technology GUIDs WDK audio

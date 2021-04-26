@@ -1,7 +1,6 @@
 ---
 title: GDL Source Files
 description: GDL Source Files
-ms.assetid: 42ba6286-96e2-4ef3-8e24-2053368a1930
 keywords:
 - GDL WDK , source files
 - source files WDK GDL

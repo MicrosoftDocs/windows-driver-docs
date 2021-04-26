@@ -2,7 +2,6 @@
 title: SR-IOV OIDs
 description: This section describes Single Root I/O Virtualization (SR-IOV) OIDs and their characteristics.
 keywords: ["SR-IOV OIDs", "Single Root I/O Virtualization OIDs", "WDK SR-IOV OIDs", "SR-IOV object identifiers"]
-ms.assetid: E93751BF-17BC-4BE7-89F7-53F6C9941120
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

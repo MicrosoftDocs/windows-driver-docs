@@ -677,13 +677,27 @@
       href: enumerating-cofunctional-vidpn-source-and-target-modes.md
     - name: "Determining VidPN Support on a Display Adapter"
       href: determining-whether-a-vidpn-is-supported-on-a-display-adapter.md
-  - name: "Indirect Display Driver Model Overview"
+  - name: "Indirect display drivers (IDDs)"
 # Auto-expanded node
     items: 
-    - name: "Indirect Display Driver Model Overview"
+    - name: "IDD overview"
       href: indirect-display-driver-model-overview.md
-    - name: "IddCx Objects"
+    - name: "IddCx objects"
       href: iddcx-objects.md
+    - name: "IddCx v1.4 updates"
+      items:
+      - name: "Updates for IddCx versions 1.4 and later"
+        href: iddcx1.4-updates.md
+      - name: "IddCx 1.4 updates for console and remote IDDs"
+        href: iddcx1.4-updates-for-console-and-remote-idds.md
+      - name: "IddCx 1.4 updates for remote IDDs"
+        href: iddcx1.4-updates-for-remote-idds.md
+      - name: "Building IddCx v1.4 drivers"
+        href: building-iddcx1.4-drivers.md
+    - name: "IddCx v1.6 updates"
+      href: iddcx1.6-updates.md
+    - name: "EvtIddCxMonitorAssignSwapChain error handling"
+      href: idd-evtiddcxmonitorassignswapchain-error-handling.md
     - name: "Debugging indirect display drivers"
       href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
@@ -727,16 +741,12 @@
     - name: "Timeout Detection and Recovery"
 # Auto-expanded node
       items: 
-      - name: "Timeout Detection and Recovery"
+      - name: "Timeout detection and recovery (TDR)"
         href: timeout-detection-and-recovery.md
-      - name: "Limiting Repetitive GPU Hangs and Recoveries"
-        href: limiting-repetitive-gpu-hangs-and-recoveries.md
-      - name: "TDR Error Messaging"
-        href: tdr-error-messaging.md
-      - name: "TDR Registry Keys"
-        href: tdr-registry-keys.md
-      - name: "TDR changes in Windows 8"
+      - name: "TDR in Windows 8 and later"
         href: tdr-changes-in-windows-8.md
+      - name: "Testing and debugging TDR"
+        href: tdr-registry-keys.md
   - name: "Tips and Requirements for the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items: 
@@ -2489,8 +2499,6 @@
       - name: "Performing COPP Operations"
 # Auto-expanded node
         items: 
-        - name: "Performing COPP Operations"
-          href: performing-copp-operations.md
         - name: "Starting a Protected Video Session"
           href: starting-a-protected-video-session.md
         - name: "Handling Protection Levels"

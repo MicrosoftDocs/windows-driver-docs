@@ -1,7 +1,6 @@
 ---
 title: Detecting Code That Can Be Pageable
 description: Detecting Code That Can Be Pageable
-ms.assetid: 5e8a021d-09c3-4e63-b5a8-7559c384ae3d
 keywords: ["pageable drivers WDK kernel , code detection", "detecting pageable code"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

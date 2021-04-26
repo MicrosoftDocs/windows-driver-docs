@@ -1,7 +1,6 @@
 ---
 title: Tracefmt
 description: Tracefmt
-ms.assetid: abf23d76-423d-4d1e-afde-83739015bbfd
 keywords:
 - Tracefmt WDK
 - software tracing WDK , Tracefmt
@@ -34,7 +33,7 @@ Tracefmt (Tracefmt.exe) is a command-line tool that formats and displays trace m
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Tracefmt (Tracefmt.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
+<td align="left"><p>Tracefmt (Tracefmt.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
 <p>%WindowsSdkDir%\bin\x64\Tracefmt.exe</p>
 <p>%WindowsSdkDir%\bin\x86\Tracefmt.exe</p>
@@ -63,6 +62,4 @@ This section includes:
 [**Tracefmt Commands**](tracefmt-commands.md)
 
 [Tracefmt Examples](tracefmt-examples.md)
-
- 
 

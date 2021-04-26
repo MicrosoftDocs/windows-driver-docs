@@ -1,7 +1,6 @@
 ---
 title: RxDbgBreakPoint function
 description: RxDbgBreakPoint breaks into the kernel debugger if one is installed.
-ms.assetid: 981256a4-2faf-4f9e-acfc-7488230bb62e
 keywords: ["RxDbgBreakPoint function Installable File System Drivers"]
 topic_type:
 - apiref

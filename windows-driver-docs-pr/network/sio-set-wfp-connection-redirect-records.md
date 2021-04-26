@@ -1,7 +1,6 @@
 ---
 title: SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code
 description: The SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control operation allows a Winsock client to specify the redirect record to the new TCP socket used for connecting to the final destination.
-ms.assetid: 51FC55BB-FD7A-4FDE-B1FC-02745AC03E33
 ms.date: 08/08/2017
 keywords: 
  -SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
@@ -76,7 +75,7 @@ The Winsock client must allocate a buffer and specify a pointer to the buffer an
 
 A Winsock client must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The client must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the client must check the IRP status and release all resources that it had previously allocated for the request.
 
-**Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](/previous-versions/windows/desktop/legacy/hh859714(v=vs.85)).
+**Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](/windows/win32/winsock/sio-set-wfp-connection-redirect-records).
 
  
 
@@ -121,7 +120,7 @@ Requirements
 
 [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](sio-query-wfp-connection-redirect-records.md)
 
-[**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](/previous-versions/windows/desktop/legacy/hh859714(v=vs.85))
+[**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](/windows/win32/winsock/sio-set-wfp-connection-redirect-records)
 
  
 

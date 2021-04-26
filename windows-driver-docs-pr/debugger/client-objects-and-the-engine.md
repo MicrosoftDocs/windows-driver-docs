@@ -1,7 +1,6 @@
 ---
 title: Client Objects and the Engine
 description: Client Objects and the Engine
-ms.assetid: 959912c0-bce9-4d5b-9119-1ac07a8ea1ad
 keywords: ["EngExtCpp extensions, client objects"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -28,31 +27,31 @@ An EngExtCpp extension interacts with the [debugger engine](introduction.md#debu
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced" data-raw-source="[IDebugAdvanced](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced)">IDebugAdvanced</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced" data-raw-source="[IDebugAdvanced](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced)">IDebugAdvanced</a></p></td>
 <td align="left"><p><strong>m_Advanced</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient" data-raw-source="[IDebugClient](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient)">IDebugClient</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient" data-raw-source="[IDebugClient](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient)">IDebugClient</a></p></td>
 <td align="left"><p><strong>m_Client</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol" data-raw-source="[IDebugControl](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol)">IDebugControl</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol" data-raw-source="[IDebugControl](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol)">IDebugControl</a></p></td>
 <td align="left"><p><strong>m_Control</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces" data-raw-source="[IDebugDataSpaces](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces)">IDebugDataSpaces</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces" data-raw-source="[IDebugDataSpaces](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces)">IDebugDataSpaces</a></p></td>
 <td align="left"><p><strong>m_Data</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters" data-raw-source="[IDebugRegisters](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters)">IDebugRegisters</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters" data-raw-source="[IDebugRegisters](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters)">IDebugRegisters</a></p></td>
 <td align="left"><p><strong>m_Registers</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols" data-raw-source="[IDebugSymbols](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols)">IDebugSymbols</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols" data-raw-source="[IDebugSymbols](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols)">IDebugSymbols</a></p></td>
 <td align="left"><p><strong>m_Symbols</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects" data-raw-source="[IDebugSystemObjects](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects)">IDebugSystemObjects</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects" data-raw-source="[IDebugSystemObjects](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects)">IDebugSystemObjects</a></p></td>
 <td align="left"><p><strong>m_System</strong></p></td>
 </tr>
 </tbody>
@@ -156,6 +155,4 @@ The members in these tables are initialized each time the extension library is u
 An extension library can also create its own client objects using the method [**IDebugClient::CreateClient**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createclient) or the functions [**DebugCreate**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-debugcreate) or [**DebugConnect**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-debugconnect).
 
 For an overview of client objects, see [Client Objects](client-objects.md).
-
- 
 

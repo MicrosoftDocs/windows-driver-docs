@@ -1,7 +1,6 @@
 ---
 title: Porting Issues Checklist
 description: Porting Issues Checklist
-ms.assetid: 6ab26321-85b8-4a5b-8ca5-af6cbf56ccd6
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -138,7 +137,7 @@ ms.localizationpriority: medium
 
 -   Avoid using computed or hard-coded pointer offsets.
 
-    When working with structures, use the [**FIELD\_OFFSET**](/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
+    When working with structures, use the [**FIELD\_OFFSET**](/windows/win32/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
 
 -   Avoid using hard-coded pointer or handle values.
 
@@ -236,7 +235,7 @@ ms.localizationpriority: medium
 
 <!-- -->
 
--   Use the [**FIELD\_OFFSET**](/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro.
+-   Use the [**FIELD\_OFFSET**](/windows/win32/api/ntdef/nf-ntdef-field_offset) macro.
 
     For example:
 

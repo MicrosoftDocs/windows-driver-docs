@@ -1,7 +1,6 @@
 ---
 title: OID_QOS_PARAMETERS
 description: The Data Center Bridging (DCB) component (Msdcb.sys) issues an object identifier (OID) method request of OID_QOS_PARAMETERS to configure the local NDIS Quality of Service (QoS) parameters on a network adapter.
-ms.assetid: 1CA97C8A-8F5B-4AB2-B68E-DF1FA772C08F
 ms.date: 08/08/2017
 keywords: 
  -OID_QOS_PARAMETERS Network Drivers Starting with Windows Vista
@@ -60,7 +59,7 @@ When the miniport driver handles the OID method request of OID\_QOS\_PARAMETERS,
 
     For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](./managing-the-local-dcbx-willing-state.md).
 
-For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-ndis-qos--parameters).
+For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
 **Note**  Overriding the local QoS parameters should not cause the miniport driver to fail the OID method request of OID\_QOS\_PARAMETERS.
 
@@ -88,7 +87,7 @@ The miniport driver returns one of the following status codes.
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_PENDING</p></td>
-<td><p>The OID request is pending completion. When the miniport driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)"><strong>NdisMOidRequestComplete</strong></a>, NDIS will pass the final status code and results to the OID request completion handler of the caller after the request is completed.</p></td>
+<td><p>The OID request is pending completion. When the miniport driver calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)"><strong>NdisMOidRequestComplete</strong></a>, NDIS will pass the final status code and results to the OID request completion handler of the caller after the request is completed.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_NOT_SUPPORTED</p></td>
@@ -96,11 +95,11 @@ The miniport driver returns one of the following status codes.
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more members of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters)"><strong>NDIS_QOS_PARAMETERS</strong></a> structure contain incorrect values.</p></td>
+<td><p>One or more members of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters)"><strong>NDIS_QOS_PARAMETERS</strong></a> structure contain incorrect values.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than <strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters)"><strong>NDIS_QOS_PARAMETERS</strong></a>). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than <strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters)"><strong>NDIS_QOS_PARAMETERS</strong></a>). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>

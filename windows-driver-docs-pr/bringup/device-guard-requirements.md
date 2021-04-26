@@ -1,7 +1,6 @@
 ---
 title: Secure MOR implementation
 description: Describes the behavior and usage for the MemoryOverwriteRequestControlLock UEFI variable, revision 2.
-ms.assetid: 94F42629-3B76-4EB1-A5FA-4FA13C932CED
 ms.date: 08/13/2020
 ms.localizationpriority: medium
 ---

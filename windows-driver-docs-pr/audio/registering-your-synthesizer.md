@@ -1,7 +1,6 @@
 ---
 title: Registering Your Synthesizer
 description: Registering Your Synthesizer
-ms.assetid: c8cb30ba-97ca-49ee-a6ef-2938a0ab780e
 keywords:
 - DirectMusic custom rendering WDK audio , synthesizers
 - custom rendering in user mode WDK audio , synthesizers
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="registering_your_synthesizer"></span><span id="REGISTERING_YOUR_SYNTHESIZER"></span>
 
 
-After your software synthesizer is created, it must be added to the system registry so that it is available to applications as a DirectMusic port that can be enumerated. When the installation program calls your DLL's [**DllRegisterServer**](/windows/desktop/api/olectl/nf-olectl-dllregisterserver) COM function to tell the DLL to register itself as a COM object, the function can register the synthesizer as well. To do so, the function adds an entry to the list of available software synthesizers by creating a key in the following path:
+After your software synthesizer is created, it must be added to the system registry so that it is available to applications as a DirectMusic port that can be enumerated. When the installation program calls your DLL's [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) COM function to tell the DLL to register itself as a COM object, the function can register the synthesizer as well. To do so, the function adds an entry to the list of available software synthesizers by creating a key in the following path:
 
 ```inf
   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectMusic\SoftwareSynths
@@ -76,7 +75,7 @@ The following example code shows a function, `RegisterSynth`, that can be called
   }
 ```
 
-`CLSIDToStr` is a locally defined function (not shown in the preceding code example) that converts a CLSID value to a character string. It is similar to the [**StringFromCLSID**](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromclsid) function that is described in the Microsoft Windows SDK documentation.
+`CLSIDToStr` is a locally defined function (not shown in the preceding code example) that converts a CLSID value to a character string. It is similar to the [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) function that is described in the Microsoft Windows SDK documentation.
 
  
 

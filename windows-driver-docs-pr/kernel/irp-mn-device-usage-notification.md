@@ -2,7 +2,6 @@
 title: IRP_MN_DEVICE_USAGE_NOTIFICATION
 description: System components send this IRP to ask the drivers for a device whether the device can support a special file.
 ms.date: 08/12/2017
-ms.assetid: d8287ba2-ac0a-4407-b587-a5aa5b3617a2
 keywords:
  - IRP_MN_DEVICE_USAGE_NOTIFICATION Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -95,7 +94,7 @@ A driver responds to this IRP with a procedure like the following:
 
         If status is STATUS\_SUCCESS and **InPath** is **TRUE**, clear the DO\_POWER\_PAGABLE bit.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Supporting Paging, Crash Dump, and Hibernation Files on a Device**
 

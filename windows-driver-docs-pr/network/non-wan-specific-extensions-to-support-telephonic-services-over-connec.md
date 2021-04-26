@@ -1,7 +1,6 @@
 ---
 title: Non-WAN-Specific Extensions for TAPI Over Connection-Oriented NDIS
 description: Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS
-ms.assetid: be677971-8c4a-435a-81b1-ff1ad9d849b4
 keywords:
 - CoNDIS WAN drivers WDK networking , TAPI services
 - telephonic services WDK WAN , non-WAN-specific extensions

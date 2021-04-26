@@ -1,7 +1,6 @@
 ---
 title: Using IRP Completion Routines
 description: Using IRP Completion Routines
-ms.assetid: 82b9ba2b-17db-40e5-be3f-fd77cd986781
 keywords:
 - filter drivers WDK file system , IRP completion routines
 - file system filter drivers WDK , IRP completion routines

@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting GDL Parsing
 description: Troubleshooting GDL Parsing
-ms.assetid: 8c678a2f-b15b-4693-9bed-0edec06b3485
 keywords:
 - GDL WDK , parser
 - parser WDK GDL , troubleshooting parsing
@@ -56,7 +55,13 @@ Solution: The parser internally converts any arbitrary string of whitespace (spa
 <a href="" id="symptom--dom-interface---xpath-query-cannot-find-any-elements-in-the-snapshot---for-example--selectsinglenode---snapshotroot-gdl-attribute----returns-nothing--"></a>Symptom: DOM interface: Xpath Query cannot find any elements in the snapshot (for example, selectSingleNode("/SnapshotRoot/GDL\_ATTRIBUTE") returns nothing).  
 Solution: Xpath assumes that element names without a namespace prefix refer to the null or empty namespace, not the default namespace. The snapshot defines a default namespace and most elements belong to the default namespace.
 
-To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is [https://schemas.microsoft.com/2002/print/gdl/1.0](https://schemas.microsoft.com/2002/print/gdl/1.0) so the call to setProperty might look like the following code example.
+To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is this URI:
+
+```xml
+https://schemas.microsoft.com/2002/print/gdl/1.0
+```
+
+The call to setProperty might look like the following code example:
 
 ```cpp
 XMLDoc->setProperty(L"SelectionNamespaces", "xmlns:gdl=\"https://schemas.microsoft.com/2002/print/gdl/1.0\"");

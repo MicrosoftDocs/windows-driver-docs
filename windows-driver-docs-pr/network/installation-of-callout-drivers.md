@@ -1,7 +1,6 @@
 ---
 title: Installation of Callout Drivers
 description: Installation of Callout Drivers
-ms.assetid: 3baefd81-04bc-4a34-b4cd-afa544308a90
 keywords:
 - Windows Filtering Platform callout drivers WDK , installing
 - callout drivers WDK Windows Filtering Platform , installing
@@ -31,7 +30,7 @@ A callout driver that is currently loaded can be unloaded (stopped) by typing th
 net stop drivername
 ```
 
-A callout driver can also be installed, loaded (started), unloaded (stopped), and/or uninstalled by writing a user-mode application that calls the Win32 Service Control Manager API. For more information about Win32 service control functions, such as **CreateService**, **OpenService**, **StartService**, **ControlService**, and **DeleteService**, see the [Microsoft Windows SDK](https://go.microsoft.com/fwlink/p/?linkid=122165).
+A callout driver can also be installed, loaded (started), unloaded (stopped), and/or uninstalled by writing a user-mode application that calls the Win32 Service Control Manager API. For more information about Win32 service control functions, such as **CreateService**, **OpenService**, **StartService**, **ControlService**, and **DeleteService**, see the [Microsoft Windows SDK](/windows/win32/services/service-reference).
 
 > [!NOTE]
 > Starting in Windows 8 and later, callout drivers cannot be viewed or managed in the Device Manager because the Plug-and-Play (PnP) manager no longer creates device representations for non-PnP (legacy) devices.

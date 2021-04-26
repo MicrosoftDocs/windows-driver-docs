@@ -1,7 +1,6 @@
 ---
 title: Registering a Device Interface Class
 description: Registering a Device Interface Class
-ms.assetid: 1518570d-1cfb-498e-91f7-35f9cc11aff5
 keywords:
 - interface classes WDK device installations
 - registering device interface classes

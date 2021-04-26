@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode WDM Audio Components
 description: Kernel-Mode WDM Audio Components
-ms.assetid: 827997e2-6f07-4635-ac35-4ad026b82eae
 keywords:
 - kernel-mode components WDK audio
 - WDMAud system driver WDK audio

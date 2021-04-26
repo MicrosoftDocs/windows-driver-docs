@@ -1,7 +1,6 @@
 ---
 title: Improved Send and Receive Paths
 description: Improved Send and Receive Paths
-ms.assetid: 7edecb49-576f-4058-92e8-39f14268a130
 keywords:
 - NDIS WDK , sending and receiving data
 - sending data WDK networking

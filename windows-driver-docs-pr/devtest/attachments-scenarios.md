@@ -1,7 +1,6 @@
 ---
 title: Attachments Scenarios
 description: Attachments Scenarios
-ms.assetid: bd563919-961f-40eb-ad5c-26026fc1c0e6
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios

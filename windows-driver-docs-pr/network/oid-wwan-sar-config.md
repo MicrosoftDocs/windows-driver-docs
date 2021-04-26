@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SAR_CONFIG
 description: OID_WWAN_SAR_CONFIG gets or sets information about a mobile broadband (MB) device's Specific Absorption Rate (SAR) back off mode and level.
-ms.assetid: 78B049E0-A80E-42AA-9D81-D45BBCF84FCB
 ms.date: 08/17/2018
 keywords: 
  -OID_WWAN_SAR_CONFIG Network Drivers Starting with Windows Vista
@@ -20,7 +19,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_SAR_CONFIG**](
 
 After each Query or Set request, the miniport driver should return an [**NDIS_WWAN_SAR_CONFIG_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info) structure that contains information for all antennas on the device associated with Mobile Broadband.
 
-For more information about usage of this OID, see [MBIM_CID_MS_SAR_CONFIG](./mb-sar-platform-support.md#mbimcidmssarconfig).
+For more information about usage of this OID, see [MBIM_CID_MS_SAR_CONFIG](./mb-sar-platform-support.md#mbim_cid_ms_sar_config).
 
 ## Requirements
 

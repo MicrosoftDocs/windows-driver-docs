@@ -1,7 +1,6 @@
 ---
 title: PortCls Registry Power Settings
 description: This topic explains the PortCls registry power settings for Windows 8.
-ms.assetid: 148D044E-B736-4526-BDC5-2C180A590C21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,7 +38,7 @@ By default, Windows 8 has power settings that PortCls uses to determine whether
 <td align="left">ConservationIdleTime</td>
 <td align="left">REG_BINARY</td>
 <td align="left">0</td>
-<td align="left">0-second timeout.</td>
+<td align="left">Idle timeout for the device, when the system is on battery power.</td>
 </tr>
 <tr class="even">
 <td align="left">IdlePowerState</td>
@@ -55,7 +54,7 @@ By default, Windows 8 has power settings that PortCls uses to determine whether
 <td align="left">PerformanceIdleTime</td>
 <td align="left">REG_BINARY</td>
 <td align="left">0</td>
-<td align="left">0-second timeout.</td>
+<td align="left">Idle timeout for the device, when the system is on AC power.</td>
 </tr>
 </tbody>
 </table>

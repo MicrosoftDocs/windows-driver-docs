@@ -1,7 +1,6 @@
 ---
 title: gc (Go from Conditional Breakpoint)
 description: The gc command resumes execution from a conditional breakpoint in the same fashion that was used to hit the breakpoint (stepping, tracing, or freely executing).
-ms.assetid: 7850269a-3fc7-48b6-a369-bb020a5e11c3
 keywords: ["gc (Go from Conditional Breakpoint) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

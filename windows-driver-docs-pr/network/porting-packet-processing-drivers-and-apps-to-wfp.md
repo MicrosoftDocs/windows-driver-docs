@@ -1,7 +1,6 @@
 ---
 title: Porting Packet-Processing Drivers and Apps to WFP
 description: Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, and modification, connection monitoring or authorization, IPsec rules and processing, and RPC filtering.
-ms.assetid: 9BB77BB8-1382-4F65-A4E8-80E229F43425
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,23 +28,23 @@ Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, an
 <tbody>
 <tr class="odd">
 <td align="left">Firewall hook or filter hook driver for simple packet filtering.</td>
-<td align="left">User-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
+<td align="left">User-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
 </tr>
 <tr class="even">
 <td align="left">Firewall hook or filter hook driver for deep packet inspection or modification.</td>
-<td align="left">IP layer, Transport layer, or Application Layer Enforcement (ALE) layer callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
+<td align="left">IP layer, Transport layer, or Application Layer Enforcement (ALE) layer callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
 </tr>
 <tr class="odd">
 <td align="left">Transport Driver Interface (TDI) filter driver for simple packet filtering.</td>
-<td align="left">User-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
+<td align="left">User-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
 </tr>
 <tr class="even">
 <td align="left">TDI filter driver for deep packet or stream inspection or modification.</td>
-<td align="left"><p>Transport layer, Stream layer, and/or ALE callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a></p></td>
+<td align="left"><p>Transport layer, Stream layer, and/or ALE callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left">TDI filter driver for TCP connection or User Datagram Protocol (UDP) traffic management.</td>
-<td align="left"><p>For TCP connection management: ALE callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p>
+<td align="left"><p>For TCP connection management: ALE callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p>
 <p>For TCP proxying:</p>
 <ul>
 <li>In Windows Vista: Packet modification callout driver.</li>
@@ -56,19 +55,19 @@ Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, an
 <li>In Windows 8 and later: MAC_FRAME layer callout driver.</li>
 <li>In Windows Vista and Windows 7: NDIS lightweight filter driver.</li>
 </ul>
-<p>For UDP traffic management: Stream or Datagram Data layer callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p></td>
+<p>For UDP traffic management: Stream or Datagram Data layer callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Windows Sockets LSP for simple packet filtering.</td>
-<td align="left">User-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
+<td align="left">User-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</td>
 </tr>
 <tr class="odd">
 <td align="left">Windows Sockets LSP for deep packet inspection or modification.</td>
-<td align="left"><p>IP layer, ALE, Transport (such as Datagram Data), or Stream layer callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p></td>
+<td align="left"><p>IP layer, ALE, Transport (such as Datagram Data), or Stream layer callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Network Device Interface Specification (NDIS) intermediate driver for simple packet filtering.</td>
-<td align="left"><p>For IP-based filtering: User-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p>
+<td align="left"><p>For IP-based filtering: User-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p>
 <p>For MAC-based filtering:</p>
 <ul>
 <li>In Windows 8 and later: MAC_FRAME layer callout driver.</li>
@@ -77,8 +76,8 @@ Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, an
 </tr>
 <tr class="odd">
 <td align="left">NDIS intermediate driver for TCP connection or UDP traffic management.</td>
-<td align="left"><p>TCP connection management: ALE callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p>
-<p>UDP traffic management: ALE or Transport layer callout driver and optional user-mode application or service that uses the <a href="https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p></td>
+<td align="left"><p>TCP connection management: ALE callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p>
+<p>UDP traffic management: ALE or Transport layer callout driver and optional user-mode application or service that uses the <a href="/windows/desktop/FWP/windows-filtering-platform-start-page" data-raw-source="[WFP Win32 API](/windows/desktop/FWP/windows-filtering-platform-start-page)">WFP Win32 API</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">NDIS lightweight filter driver to perform media access control (MAC)-level filtering.</td>
@@ -87,8 +86,6 @@ Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, an
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

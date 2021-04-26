@@ -1,7 +1,6 @@
 ---
 title: DiskClassGuid
 description: DiskClassGuid
-ms.assetid: eeefc86c-caff-4d1c-b2c1-aefde3bd21ed
 keywords: ["DiskClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ DiskClassGuid is an obsolete identifier for the device interface class for hard 
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](https://go.microsoft.com/fwlink/p/?linkid=256103) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The disk class driver sample uses DiskClassGuid to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of the GUID_DEVINTERFACE_DISK device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The disk class driver sample uses DiskClassGuid to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of the GUID_DEVINTERFACE_DISK device interface class.
 
 Requirements
 ------------
@@ -49,6 +48,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Installing Display Miniport and User-Mode Display Drivers
 description: Installation Requirements for Display Miniport and User-Mode Display Drivers
-ms.assetid: f813071d-897d-4100-bc46-326558de2e70
 keywords:
 - display driver model WDK Windows Vista , driver installations
 - Windows Vista display driver model WDK , driver installations
@@ -53,11 +52,9 @@ To ensure proper installation, the following information must be supplied in the
 
 [Overriding Monitor EDIDs with an INF](overriding-monitor-edids.md)
 
-You should refer to the [Overview of INF Files](../install/overview-of-inf-files.md) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives) sections for general help in creating a display miniport driver INF file. For more information about registry root identifiers, such as **HKR**, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
+You should refer to the [Overview of INF Files](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md) sections for general help in creating a display miniport driver INF file. For more information about registry root identifiers, such as **HKR**, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 **Note**   There are no INF sections and directives for uninstalling display drivers that are specific to graphic devices.
-
- 
 
  
 

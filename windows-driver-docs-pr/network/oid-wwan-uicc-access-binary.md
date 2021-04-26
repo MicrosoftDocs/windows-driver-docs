@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_UICC_ACCESS_BINARY
 description: OID_WWAN_UICC_ACCESS_BINARY accesses a UICC binary file, the structure type of which is WwanUiccFileStructureTransparent or WwanUiccFileStructureBerTLV.
-ms.assetid: D93939DB-3879-4B84-B7C9-7E6098C82786
 ms.date: 04/10/2019
 keywords: 
  -OID_WWAN_UICC_ACCESS_BINARY Network Drivers Starting with Windows Vista

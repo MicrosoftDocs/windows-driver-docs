@@ -1,7 +1,6 @@
 ---
 title: DEVPROPKEY structure
 description: In Windows Vista and later versions of Windows, the DEVPROPKEY structure represents a device property key for a device property in the unified device property model.
-ms.assetid: 98986d43-84c0-44e6-83f9-08e872ea5e6d
 keywords: ["DEVPROPKEY structure Device and Driver Installation"]
 topic_type:
 - apiref

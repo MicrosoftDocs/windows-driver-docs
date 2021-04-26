@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_INCOMING_FRAME_INFORMATION
 description: WDI_TLV_P2P_INCOMING_FRAME_INFORMATION is a TLV that contains incoming Wi-Fi Direct action frame information.
-ms.assetid: 7E7EF56D-625B-4B79-9AE4-A9C9B7C8547A
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INCOMING_FRAME_INFORMATION Network Drivers Starting with Windows Vista

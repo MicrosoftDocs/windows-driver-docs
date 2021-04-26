@@ -1,7 +1,6 @@
 ---
 title: WMI Property Qualifiers
 description: WMI Property Qualifiers
-ms.assetid: e2d281b3-913c-43ad-921c-80dc8be09aa0
 keywords: ["MOF property qualifiers WDK WMI", "property qualifiers WDK WMI", "qualifiers WDK WMI", "standard MOF qualifiers WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

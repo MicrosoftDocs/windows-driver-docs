@@ -1,7 +1,6 @@
 ---
 title: Switching Between Standard and Nonstandard Modes
 description: Switching Between Standard and Nonstandard Modes
-ms.assetid: 15939910-b325-47ff-b4ed-bbaeec4149bd
 keywords:
 - nonstandard display modes WDK DirectX 9.0 , switching between standard and nonstandard modes
 - switching between standard and nonstandard modes WDK DirectX 9.0
@@ -35,7 +34,7 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
 
 4.  The driver flips the surface to the nonstandard format.
 
-    While the display device outputs the standard format, the application composes a nonstandard image in one of these back buffers. Once this image is ready for display, the runtime specifies one of the nonstandard surfaces as the target in a call to the driver's [*DdFlip*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function. The driver then reprograms the display device to output the nonstandard format.
+    While the display device outputs the standard format, the application composes a nonstandard image in one of these back buffers. Once this image is ready for display, the runtime specifies one of the nonstandard surfaces as the target in a call to the driver's [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function. The driver then reprograms the display device to output the nonstandard format.
 
 5.  The application runs.
 

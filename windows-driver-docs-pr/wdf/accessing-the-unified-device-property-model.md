@@ -1,7 +1,6 @@
 ---
 title: Accessing the Unified Device Property Model
 description: This topic describes how a Windows Driver Frameworks (WDF) driver retrieves or modifies properties that are exposed through the unified device property model.
-ms.assetid: C81988F9-E0DA-439F-B770-DAD86E33D5F3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ After calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-w
 -   [**WdfFdoInitAllocAndQueryPropertyEx**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitallocandquerypropertyex)
 -   [**WdfFdoInitQueryPropertyEx**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitquerypropertyex)
 
-The *-Ex* methods above differ from their non*-Ex* counterparts in that they allow you to specify properties using the [**WDF\_DEVICE\_PROPERTY\_DATA**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_property_data) structure, instead of the subset that you can specify using [**DEVICE\_REGISTRY\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ne-wudfwdm-device_registry_property).
+The *-Ex* methods above differ from their non*-Ex* counterparts in that they allow you to specify properties using the [**WDF\_DEVICE\_PROPERTY\_DATA**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_property_data) structure, instead of the subset that you can specify using [**DEVICE\_REGISTRY\_PROPERTY**](/windows-hardware/drivers/ddi/wudfwdm/ne-wudfwdm-device_registry_property).
 
 Before receiving device property data, drivers typically call **Wdf*Xxx*QueryProperty** just to obtain the required buffer size. For some properties, the data size can change between when the required size is returned and when the driver calls **Wdf*Xxx*QueryProperty** again. Therefore, drivers should call **Wdf*Xxx*QueryProperty** inside a loop that executes until the return status is not **STATUS\_BUFFER\_TOO\_SMALL**.
 
@@ -40,6 +39,4 @@ UMDF drivers can use the following methods to retrieve or modify [device interfa
 -   [**WdfDeviceQueryInterfaceProperty**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicequeryinterfaceproperty)
 
 To retrieve or modify a device interface property, a KMDF driver must call [**IoGetDeviceInterfacePropertyData**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacepropertydata) or [**IoSetDeviceInterfacePropertyData**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacepropertydata) directly.
-
- 
 

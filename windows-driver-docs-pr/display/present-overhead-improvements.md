@@ -1,6 +1,5 @@
 ---
 title: Present overhead improvements
-ms.assetid: 92B282D6-0D04-4352-AE03-E0A7A43711E7
 description: Improvements to internal swap buffers to reduce GPU processing loads
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -33,7 +32,7 @@ These reference topics describe how to implement this capability in your display
 ## <span id="Texture_format_support_for_shared_surfaces"></span><span id="texture_format_support_for_shared_surfaces"></span><span id="TEXTURE_FORMAT_SUPPORT_FOR_SHARED_SURFACES"></span>Texture format support for shared surfaces
 
 
-Drivers should support both sharing resources and shareable backbuffers for these additional texture formats from the [**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration:
+Drivers should support both sharing resources and shareable backbuffers for these additional texture formats from the [**DXGI\_FORMAT**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration:
 
 - **DXGI\_FORMAT\_A8\_UNORM**
 - **DXGI\_FORMAT\_R8\_UNORM**

@@ -1,7 +1,6 @@
 ---
 title: Installing Scanning Functionality in an MFP with a Single PDO
 description: Installing Scanning Functionality in an MFP with a Single PDO
-ms.assetid: 002ff319-42f9-4034-9bdd-c1e771ed2ba9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ If you register the WIA co-installer as the co-installer of your device, Setup a
 
 **HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\{6bdd1fc6-810f-11d0-bec7-08002be2092f}\\&lt;*device symbolic link*&gt;**
 
-This key is not guaranteed to remain in this location In future operating system versions. To open this key, call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey).
+This key is not guaranteed to remain in this location In future operating system versions. To open this key, call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey).
 
 The WIA service enumerates all Image class PDOs and device interfaces. Therefore, the newly created device interface will be enumerated as a WIA device.
 

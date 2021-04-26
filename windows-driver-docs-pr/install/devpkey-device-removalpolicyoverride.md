@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_RemovalPolicyOverride
 description: DEVPKEY_Device_RemovalPolicyOverride
-ms.assetid: 74b90422-9187-4bbb-9be6-cf2d11e29686
 keywords: ["DEVPKEY_Device_RemovalPolicyOverride Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 The value of DEVPKEY_Device_RemovalPolicyOverride is one of the CM_REMOVAL_POLICY_*Xxx* values that are defined in Cfgmgr32.h.
 
-You can retrieve the value of DEVPKEY_Device_RemovalPolicyOverride by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set this value by calling [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_RemovalPolicyOverride by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set this value by calling [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicyOverride property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY_OVERRIDE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -76,9 +75,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

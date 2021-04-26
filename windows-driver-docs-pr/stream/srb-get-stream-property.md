@@ -1,7 +1,6 @@
 ---
 title: SRB\_GET\_STREAM\_PROPERTY
 description: SRB\_GET\_STREAM\_PROPERTY
-ms.assetid: 579ae9b1-06f0-4f7b-afbf-c5a7df399745
 keywords: ["SRB_GET_STREAM_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

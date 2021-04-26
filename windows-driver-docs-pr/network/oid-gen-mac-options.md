@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAC_OPTIONS
 description: As a query, the OID_GEN_MAC_OPTIONS OID specifies a bitmask that defines optional properties of the underlying driver or a NIC.
-ms.assetid: 2a093bcb-ae6f-491c-a596-03e6f47b0b86
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAC_OPTIONS Network Drivers Starting with Windows Vista

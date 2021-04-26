@@ -1,7 +1,6 @@
 ---
 title: Disable protected DLL verification
 description: Disable protected DLL verification
-ms.assetid: 28b5c4f8-18d3-44ed-a424-92e8e04dcdbc
 keywords: ["Disable protected DLL verification (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

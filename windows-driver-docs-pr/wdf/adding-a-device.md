@@ -1,7 +1,6 @@
 ---
 title: Adding a Device
 description: Adding a Device
-ms.assetid: 233e3315-3044-42d7-867c-0a9e153eb53b
 keywords:
 - User-Mode Driver Framework WDK , adding devices
 - UMDF WDK , adding devices

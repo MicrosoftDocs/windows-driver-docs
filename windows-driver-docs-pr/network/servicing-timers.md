@@ -1,7 +1,6 @@
 ---
 title: Servicing Timers
 description: Servicing Timers
-ms.assetid: 6a80a55b-4c7e-4a48-8903-0a1fb28af153
 keywords:
 - timer services WDK NDIS
 - NDIS timer services WDK

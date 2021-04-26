@@ -1,7 +1,6 @@
 ---
 title: Using Bind or Connect Redirection
 description: Using Bind or Connect Redirection
-ms.assetid: 6b27a9ad-53e9-4e80-bf03-79665f8a82a0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ A WFP connection redirection callout redirects an application's connection reque
 
 A WFP redirect record is a buffer of opaque data that WFP must set on an outbound proxy connection at the **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V4** and **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V6** layers, so that the redirected connection and the original connection are logically related.
 
-Because bind redirection is possible, it is not necessary to support local address and port modifications in a connect redirection. Changing the local address and port as part of connect redirection is not supported.
+Changing the local address and port of a flow is only supported in the bind-redirect layer. This is not supported in the connect-redirect layer.
 
 ### Layers Used for Redirection
 
@@ -220,7 +219,7 @@ Callout drivers that use connect redirection should register at the ALE authoriz
 
 The [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure contains a member called **localRedirectTargetPID**. For any loopback connect redirection to be valid, this field must be populated with the PID of the process that will be responsible for the redirected flow. This is the same data that the engine passes at the ALE authorization connect layers as **FWPS\_METADATA\_FIELD\_LOCAL\_REDIRECT\_TARGET\_ID**.
 
-Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-query-wfp-connection-redirect-records.md) and [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT**](./sio-query-wfp-connection-redirect-context.md) IOCTLs, using [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl), against the original endpoint of the proxy service. Additionally, the [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-set-wfp-connection-redirect-records.md) IOCTL must be issued, using **WSAIoctl**, on the new (proxied) socket.
+Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-query-wfp-connection-redirect-records.md) and [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT**](./sio-query-wfp-connection-redirect-context.md) IOCTLs, using [**WSAIoctl**](/windows/win32/api/winsock2/nf-winsock2-wsaioctl), against the original endpoint of the proxy service. Additionally, the [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-set-wfp-connection-redirect-records.md) IOCTL must be issued, using **WSAIoctl**, on the new (proxied) socket.
 
 ## Related topics
 

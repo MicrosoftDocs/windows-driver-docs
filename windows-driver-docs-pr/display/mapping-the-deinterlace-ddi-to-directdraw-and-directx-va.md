@@ -1,7 +1,6 @@
 ---
 title: Mapping the Deinterlace DDI to DirectDraw and DirectX VA
 description: Mapping the Deinterlace DDI to DirectDraw and DirectX VA
-ms.assetid: a060265f-e1a2-416c-8533-6971cc9e2156
 keywords:
 - deinterlacing WDK DirectX VA , mapping deinterlacing DDI
 - mapping deinterlacing DDI
@@ -23,7 +22,7 @@ Deinterlacing functionality must be accessed through DirectDraw's [motion compen
 
 The deinterlace DDI is divided into two functional groups: the DirectX VA container methods and the DirectX VA device methods. The container methods determine the capabilities of each DirectX VA device that is contained by the display hardware. The device methods direct the device to perform operations specific to the device. A DirectX VA driver can have only one container, but it can support multiple devices.
 
-It is possible to map the deinterlace DDI to the motion compensation callbacks because they do not use typed parameters (that is, their single parameter is a pointer to a structure). In other words, the information in the single parameter that is passed to a motion compensation callback function can be processed according to its information type. For example, if **DXVA\_DeinterlaceBltFnCode**-type information is passed to the [*DdMoCompRender*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) function, *DdMoCompRender* can call the [**DeinterlaceBlt**](./dxva-deinterlacebobdeviceclass-deinterlaceblt.md) function of the deinterlace DDI to perform a bit-block deinterlace of video stream objects. However, if **DXVA\_DeinterlaceQueryModeCapsFnCode**-type information is passed to *DdMoCompRender* instead, *DdMoCompRender* can call the [**DeinterlaceQueryModeCaps**](./dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md) function of the deinterlace DDI to query for the capabilities of a deinterlacing mode.
+It is possible to map the deinterlace DDI to the motion compensation callbacks because they do not use typed parameters (that is, their single parameter is a pointer to a structure). In other words, the information in the single parameter that is passed to a motion compensation callback function can be processed according to its information type. For example, if **DXVA\_DeinterlaceBltFnCode**-type information is passed to the [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) function, *DdMoCompRender* can call the [**DeinterlaceBlt**](./dxva-deinterlacebobdeviceclass-deinterlaceblt.md) function of the deinterlace DDI to perform a bit-block deinterlace of video stream objects. However, if **DXVA\_DeinterlaceQueryModeCapsFnCode**-type information is passed to *DdMoCompRender* instead, *DdMoCompRender* can call the [**DeinterlaceQueryModeCaps**](./dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md) function of the deinterlace DDI to query for the capabilities of a deinterlacing mode.
 
 The following topics describe how the deinterlace DDI is mapped to the motion compensation callbacks:
 

@@ -1,7 +1,6 @@
 ---
 title: Device Manager Problem Codes
 description: Device Manager Problem Codes
-ms.assetid: d08c3dd1-ab2e-4ce6-8bf7-9634c0a5be1f
 keywords: ["Plug and Play (PnP), device manager problem codes", "device manager problem codes", "CM_PROB_XXX"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -36,7 +35,7 @@ Indicates that the device is disabled. (Corresponds to DNF\_DISABLED.)
 <span id="Code_28__CM_PROB_FAILED_INSTALL_"></span><span id="code_28__cm_prob_failed_install_"></span><span id="CODE_28__CM_PROB_FAILED_INSTALL_"></span>**Code 28 (CM\_PROB\_FAILED\_INSTALL)**  
 Indicates that the installation failed and there is no driver selected for this device, although the kernel did not report a problem (and there is no DNF\_XXX match for this the problem). This problem can be the result of an on-board system device (ISA timer, ISA RTC, RAM Memory, and so forth) that does not yet have an INF file.
 
-<span id="Code_31__CM_FAILED_ADD_"></span><span id="code_31__cm_failed_add_"></span><span id="CODE_31__CM_FAILED_ADD_"></span>**Code 31 (CM\_FAILED\_ADD)**  
+<span id="Code_31__CM_PROB_FAILED_ADD_"></span><span id="code_31__cm_failed_add_"></span><span id="CODE_31__CM_FAILED_ADD_"></span>**Code 31 (CM_PROB_FAILED_ADD)**  
 Indicates that the device was not added. Reasons for the failure may include: a driver's **AddDevice** routine returned an error, there is no service listed for the device in the registry, there is more than one service listed, or the controlling driver could not be loaded. (Corresponds to DNF\_ADD\_FAILED.)
 
  

@@ -1,7 +1,6 @@
 ---
 title: Indicating an Incoming Call
 description: Indicating an Incoming Call
-ms.assetid: ca7f4a1f-47a2-4ac0-b4a2-d0367163135f
 keywords:
 - call setup WDK CoNDIS
 - incoming calls WDK CoNDIS

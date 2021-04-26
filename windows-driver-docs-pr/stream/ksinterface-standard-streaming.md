@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_STREAMING
 description: KSINTERFACE\_STANDARD\_STREAMING
-ms.assetid: 04ba6879-1699-4d12-b81e-a90878014325
 keywords: ["KSINTERFACE_STANDARD_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref

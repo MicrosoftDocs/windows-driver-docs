@@ -1,7 +1,6 @@
 ---
 title: EngExtCpp Extension Design Guide
 description: EngExtCpp Extension Design Guide
-ms.assetid: 7fc21b10-9f79-4dab-90cc-5e2609414f72
 keywords: ["EngExtCpp extensions, design guide"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

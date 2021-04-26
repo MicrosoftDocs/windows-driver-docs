@@ -1,7 +1,6 @@
 ---
 title: Wait/Wake Callback Routines
 description: Wait/Wake Callback Routines
-ms.assetid: 55749f14-37eb-45d9-8a2c-9ebf7fb3bc75
 keywords: ["sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending", "callback routines WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: TV Audio Change Event
 description: TV Audio Change Event
-ms.assetid: 85ba81f0-9443-42c7-9886-15b6b702f287
 keywords:
 - TV audio changed event WDK video capture
 - events WDK video capture
@@ -29,13 +28,11 @@ The [KSEVENTSETID\_VIDCAP\_TVAUDIO](./kseventsetid-vidcap-tvaudio.md) event set 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-tvaudio-changed" data-raw-source="[&lt;strong&gt;KSEVENT_TVAUDIO_CHANGED&lt;/strong&gt;](./ksevent-tvaudio-changed.md)"><strong>KSEVENT_TVAUDIO_CHANGED</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-tvaudio-changed" data-raw-source="[&lt;strong&gt;KSEVENT_TVAUDIO_CHANGED&lt;/strong&gt;](./ksevent-tvaudio-changed.md)"><strong>KSEVENT_TVAUDIO_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that TV audio has changed, for example, because of the appearance of a secondary audio program on a newly selected channel.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

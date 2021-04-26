@@ -1,7 +1,6 @@
 ---
 title: Container IDs Generated from a Bus-Specific Unique ID
 description: Container IDs Generated from a Bus-Specific Unique ID
-ms.assetid: 06bd4f06-51f2-4983-9ddc-bff27eaa367e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ Windows 7 and later versions of Windows provide inbox drivers for several of the
 
 The following topics describe how the inbox bus drivers generate container IDs for certain bus types:
 
-[Container IDs for USB Devices](container-ids-for-usb-devices.md)
+[Container IDs for USB Devices](./how-usb-devices-are-assigned-container-ids.md)
 
 [Container IDs for Bluetooth Devices](container-ids-for-bluetooth-devices.md)
 
@@ -34,6 +33,4 @@ The following topics describe how the inbox bus drivers generate container IDs f
 [Container IDs for eSATA Devices](container-ids-for-esata-devices.md)
 
 [Container IDs for PCI Express Devices](container-ids-for-pci-express-devices.md)
-
- 
 

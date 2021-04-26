@@ -1,7 +1,6 @@
 ---
 title: Driver Role in Power Management
 description: Driver Role in Power Management
-ms.assetid: 24b55880-e767-4f18-977e-c4a93332b909
 keywords: ["power management WDK kernel , driver roles in", "system power states WDK kernel , driver roles", "device power states WDK kernel", "driver power support roles WDk kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

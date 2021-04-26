@@ -1,7 +1,6 @@
 ---
 title: Processing Classify Callouts
 description: Processing Classify Callouts
-ms.assetid: 284aeda0-8275-440f-abf4-84a0c61cc4f4
 keywords:
 - Windows Filtering Platform callout drivers WDK , classify callouts
 - callout drivers WDK Windows Filtering Platform , classify callouts
@@ -25,7 +24,7 @@ The implementation of a callout's *classifyFn* callout function depends on what 
 
 [Using a Callout for Deep Inspection of Stream Data](using-a-callout-for-deep-inspection-of-stream-data.md)
 
-[Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md)
+[Inspecting Packet and Stream Data](packet-inspection-points.md)
 
 [Modifying Stream Data](modifying-stream-data.md)
 

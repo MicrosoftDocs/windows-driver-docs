@@ -1,7 +1,6 @@
 ---
 title: NDISWAN Overview
 description: NDISWAN Overview
-ms.assetid: bc092222-5418-4a57-9811-5d97c1c10a73
 keywords:
 - NDISWAN WDK networking
 - NDIS intermediate drivers WDK , NDISWAN driver

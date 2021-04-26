@@ -1,7 +1,6 @@
 ---
 title: Handling the Port Activation PnP Event
 description: Handling the Port Activation PnP Event
-ms.assetid: 433018bf-daf5-4ea1-be3f-63349558f6b7
 keywords:
 - ports WDK NDIS , PnP event notifications
 - NDIS ports WDK , PnP event notifications

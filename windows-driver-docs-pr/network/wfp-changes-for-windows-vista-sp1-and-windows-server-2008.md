@@ -1,7 +1,6 @@
 ---
 title: WFP Changes for Windows Vista SP1 and Windows Server 2008
 description: WFP Changes for Windows Vista SP1 and Windows Server 2008
-ms.assetid: c901dbed-639d-473b-aaf0-8470e9c04009
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ Several changes have been made in the available functions and behavior of the Wi
 
 -   Updated and renamed data field identifiers that were added to FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_*XXX* and FWPS\_LAYER\_INBOUND\_ICMP\_ERROR\_*XXX* layers, listed in [Data Field Identifiers](./data-field-identifiers.md), together with behavior changes
 
--   Additional metadata field identifiers, listed in [Metadata Fields](https://docs.microsoft.com/windows-hardware/drivers/network/metadata-fields) and [Metadata Fields at Each Filtering Layer](./metadata-fields-at-each-filtering-layer.md)
+-   Additional metadata field identifiers, listed in [Metadata Fields](./metadata-field-identifiers.md) and [Metadata Fields at Each Filtering Layer](./metadata-fields-at-each-filtering-layer.md)
 
 -   The following documentation topics are new:
     -   [Developing IPsec-Compatible Callout Drivers](developing-ipsec-compatible-callout-drivers.md)
@@ -34,6 +33,4 @@ Several changes have been made in the available functions and behavior of the Wi
     [*notifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0)
     [**FWPS\_CALLOUT0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout0_)
     [**FWPS\_INCOMING\_METADATA\_VALUES0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_)
-
- 
 

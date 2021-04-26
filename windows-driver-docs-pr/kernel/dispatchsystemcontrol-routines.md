@@ -1,7 +1,6 @@
 ---
 title: DispatchSystemControl Routines
 description: DispatchSystemControl Routines
-ms.assetid: b885a4a3-a9b6-423c-83bb-ee502724b0d0
 keywords: ["dispatch routines WDK kernel , DispatchSystemControl routine", "system control dispatch routines WDK kernel", "IRP_MJ_SYSTEM_CONTROL I/O function code", "DispatchSystemControl routine"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

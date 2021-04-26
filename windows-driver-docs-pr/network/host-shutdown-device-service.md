@@ -1,7 +1,6 @@
 ---
 title: HOST Shutdown Device Service
 description: This topic provides guidelines for Mobile Broadband Interface Model (MBIM)-compliant devices to implement and report the described device service when queried by CID_MBIM_DEVICE_SERVICES.
-ms.assetid: 62BFC796-EDB2-489E-B487-65E2DD7C4256
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

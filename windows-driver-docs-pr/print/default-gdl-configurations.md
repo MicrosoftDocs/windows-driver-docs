@@ -1,7 +1,6 @@
 ---
 title: Default GDL Configurations
 description: Default GDL Configurations
-ms.assetid: 9963513b-52dc-4fb7-8f85-abca2975c36d
 keywords:
 - GDL WDK , configurations
 - parser WDK GDL , creating default configurations

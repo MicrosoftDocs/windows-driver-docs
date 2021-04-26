@@ -1,7 +1,6 @@
 ---
 title: Authoring Tests in C++
 description: Authoring Tests in C++
-ms.assetid: ECADDDD6-5BD4-4c43-803F-47AE44467342
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

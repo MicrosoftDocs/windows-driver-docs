@@ -1,7 +1,6 @@
 ---
 title: Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx
 description: Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx
-ms.assetid: 245be266-f76c-43f6-9ea7-2dc853b1d5e2
 keywords: ["IoConnectInterruptEx", "CONNECT_LINE_BASED", "line-based interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

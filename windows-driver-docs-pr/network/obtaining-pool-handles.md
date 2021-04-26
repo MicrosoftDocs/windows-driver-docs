@@ -1,7 +1,6 @@
 ---
 title: Obtaining Pool Handles
 description: Obtaining Pool Handles
-ms.assetid: 752b0d64-2ca3-4dc0-a6cd-642e96af1f8f
 keywords:
 - pool handles WDK networking
 - protocol drivers WDK networking , pool handles

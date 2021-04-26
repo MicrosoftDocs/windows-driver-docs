@@ -1,7 +1,6 @@
 ---
 title: XPS Filters
 description: XPS Filters
-ms.assetid: dd8044a6-6558-488e-9508-a83718fabb7d
 keywords:
 - XPSDrv printer drivers WDK , render modules
 - render modules WDK XPSDrv , XPS filters

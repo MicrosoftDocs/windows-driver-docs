@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_CompatibleIds
 description: DEVPKEY_Device_CompatibleIds
-ms.assetid: 01858541-9239-48be-8c48-ee163d87e767
 keywords: ["DEVPKEY_Device_CompatibleIds Device and Driver Installation"]
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ Remarks
 
 The value of DEVPKEY_DEVICE_CompatibleIds is set by the *compatible-id* entry values that are supplied for a device in the [**INF Models section**](./inf-models-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_CompatibleIds.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_CompatibleIds.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_CompatibleIds property key. Instead, you can use the corresponding SPDRP_COMPATIBLEIDS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -82,7 +81,7 @@ Requirements
 
 [**INF Models Section**](./inf-models-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

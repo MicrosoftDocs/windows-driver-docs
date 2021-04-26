@@ -1,7 +1,6 @@
 ---
 title: GUID_SERENUM_BUS_ENUMERATOR
 description: GUID_SERENUM_BUS_ENUMERATOR
-ms.assetid: 85d72641-e86c-4611-9509-aea4a3344950
 keywords: ["GUID_SERENUM_BUS_ENUMERATOR Device and Driver Installation"]
 topic_type:
 - apiref

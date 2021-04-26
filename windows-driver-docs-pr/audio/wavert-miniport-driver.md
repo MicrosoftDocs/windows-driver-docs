@@ -1,8 +1,7 @@
 ---
 title: WaveRT Miniport Driver
 description: WaveRT Miniport Driver
-ms.assetid: 154dc921-424f-4021-8f17-5482ceef99a8
-ms.date: 04/20/2017
+ms.date: 10/01/2020
 ms.localizationpriority: medium
 ---
 
@@ -37,39 +36,34 @@ Returns a pointer to a [**DEVICE\_DESCRIPTION**](/windows-hardware/drivers/ddi/w
 
 ### <span id="iminiportwavertstream"></span><span id="IMINIPORTWAVERTSTREAM"></span>IMiniportWaveRTStream
 
-The [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream) interface inherits the methods from the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveRTStream provides the following additional methods:
+The [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream) interface inherits the methods from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveRTStream provides the following additional methods:
 
-[**IMiniportWaveRTStream::AllocateAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536744(v=vs.85))
+[**IMiniportWaveRTStream::AllocateAudioBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-allocateaudiobuffer) Allocates a cyclic buffer for audio data.
 
-Allocates a cyclic buffer for audio data.
+[**IMiniportWaveRTStream::FreeAudioBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-freeaudiobuffer)
 
-[**IMiniportWaveRTStream::FreeAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536745(v=vs.85))
+Frees an audio buffer previously allocated with a call to [**IMiniportWaveRTStream::AllocateAudioBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-allocateaudiobuffer).
 
-Frees an audio buffer previously allocated with a call to [**IMiniportWaveRTStream::AllocateAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536744(v=vs.85)).
-
-[**IMiniportWaveRTStream::GetClockRegister**](/previous-versions/windows/hardware/drivers/ff536746(v=vs.85))
+[**IMiniportWaveRTStream::GetClockRegister**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-getclockregister)
 
 Retrieves the information that the port driver must have to expose the clock register to the audio subsystem and its clients.
 
-[**IMiniportWaveRTStream::GetHWLatency**](/previous-versions/windows/hardware/drivers/ff536747(v=vs.85))
+[**IMiniportWaveRTStream::GetHWLatency**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-gethwlatency)
 
 Retrieves information about sources of stream latency in the audio hardware.
 
-[**IMiniportWaveRTStream::GetPosition**](/previous-versions/windows/hardware/drivers/ff536749(v=vs.85))
+[**IMiniportWaveRTStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-getposition)
 
 Retrieves the current play or record position as a byte offset from the beginning of the buffer.
 
-[**IMiniportWaveRTStream::GetPositionRegister**](/previous-versions/windows/hardware/drivers/ff536752(v=vs.85))
+[**IMiniportWaveRTStream::GetPositionRegister**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-getpositionregister)
 
 Retrieves the information that the port driver must have to expose the position register to the audio subsystem and its clients.
 
-[**IMiniportWaveRTStream::SetFormat**](/previous-versions/windows/hardware/drivers/ff536753(v=vs.85))
+[**IMiniportWaveRTStream::SetFormat**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-setformat)
 
 Sets the data format of the wave stream.
 
-[**IMiniportWaveRTStream::SetState**](/previous-versions/windows/hardware/drivers/ff536756(v=vs.85))
+[**IMiniportWaveRTStream::SetState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-setstate)
 
 Changes the transport state of the audio stream.
-
- 
-

@@ -1,7 +1,6 @@
 ---
 title: Minidriver Synchronization
 description: Minidriver Synchronization
-ms.assetid: 2f560e7a-4717-4b3f-9513-e34fcb2b5e6c
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , synchronization
 - streaming minidrivers WDK Windows 2000 Kernel , synchronization

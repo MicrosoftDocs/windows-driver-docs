@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_P2P_DISCOVER
 description: OID_WDI_TASK_P2P_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.
-ms.assetid: 9425a8d1-af68-488c-8a1e-a9b759f102cc
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_DISCOVER Network Drivers Starting with Windows Vista
@@ -48,56 +47,56 @@ When the task has been completed (either normally or due to an abort), the port 
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-discover-mode" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_DISCOVER_MODE&lt;/strong&gt;](./wdi-tlv-p2p-discover-mode.md)"><strong>WDI_TLV_P2P_DISCOVER_MODE</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-discover-mode" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_DISCOVER_MODE&lt;/strong&gt;](./wdi-tlv-p2p-discover-mode.md)"><strong>WDI_TLV_P2P_DISCOVER_MODE</strong></a></td>
 <td></td>
 <td></td>
 <td>Discovery mode information, such as scan type, count, and time between scans.</td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-scan-dwell-time" data-raw-source="[&lt;strong&gt;WDI_TLV_SCAN_DWELL_TIME&lt;/strong&gt;](./wdi-tlv-scan-dwell-time.md)"><strong>WDI_TLV_SCAN_DWELL_TIME</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-scan-dwell-time" data-raw-source="[&lt;strong&gt;WDI_TLV_SCAN_DWELL_TIME&lt;/strong&gt;](./wdi-tlv-scan-dwell-time.md)"><strong>WDI_TLV_SCAN_DWELL_TIME</strong></a></td>
 <td></td>
 <td></td>
 <td>Scanning dwell time settings.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-discovery-channel-settings" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS&lt;/strong&gt;](./wdi-tlv-p2p-discovery-channel-settings.md)"><strong>WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-discovery-channel-settings" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS&lt;/strong&gt;](./wdi-tlv-p2p-discovery-channel-settings.md)"><strong>WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>Scan duration and list of channels to scan. When specified, the listen settings override those specified in WDI_TLV_SCAN_DWELL_TIME. If this list is empty, the port must scan on all supported channels and use the listen settings from WDI_TLV_SCAN_DWELL_TIME.</td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ssid" data-raw-source="[&lt;strong&gt;WDI_TLV_SSID&lt;/strong&gt;](./wdi-tlv-ssid.md)"><strong>WDI_TLV_SSID</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-ssid" data-raw-source="[&lt;strong&gt;WDI_TLV_SSID&lt;/strong&gt;](./wdi-tlv-ssid.md)"><strong>WDI_TLV_SSID</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>A list of SSIDs that the port should scan for. There can be multiple SSIDs in this list and one of them can be a wildcard. When doing an active scan on a channel, the port must send a probe request for each SSID in the list. If this list is empty, the port must scan for all SSIDs.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-service-name-hash" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_SERVICE_NAME_HASH&lt;/strong&gt;](./wdi-tlv-p2p-service-name-hash.md)"><strong>WDI_TLV_P2P_SERVICE_NAME_HASH</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-service-name-hash" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_SERVICE_NAME_HASH&lt;/strong&gt;](./wdi-tlv-p2p-service-name-hash.md)"><strong>WDI_TLV_P2P_SERVICE_NAME_HASH</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>A list of Service Hash names to be queried. Required if WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY or WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_NAME_ONLY is specified.</td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-vendor-specific-ie" data-raw-source="[&lt;strong&gt;WDI_TLV_VENDOR_SPECIFIC_IE&lt;/strong&gt;](./wdi-tlv-vendor-specific-ie.md)"><strong>WDI_TLV_VENDOR_SPECIFIC_IE</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-vendor-specific-ie" data-raw-source="[&lt;strong&gt;WDI_TLV_VENDOR_SPECIFIC_IE&lt;/strong&gt;](./wdi-tlv-vendor-specific-ie.md)"><strong>WDI_TLV_VENDOR_SPECIFIC_IE</strong></a></td>
 <td></td>
 <td>X</td>
 <td>One or more IEs that must be included in the probe requests sent by the port. These IEs are not used for passive scan.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-service-information-discovery-entry" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY&lt;/strong&gt;](./wdi-tlv-p2p-service-information-discovery-entry.md)"><strong>WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong></a></td>
+<td><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-service-information-discovery-entry" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY&lt;/strong&gt;](./wdi-tlv-p2p-service-information-discovery-entry.md)"><strong>WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>An optional list of Service Information Discovery Entries to be queried. This is required if WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_INFORMATION is specified. The driver is expected to perform a P2P service discovery over probe request/response using the service name hash. For each service entry that contains service information, the driver is expected to perform an ANQP query request/response to query the service information.</td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-asp2-service-information-discovery-entry" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY&lt;/strong&gt;](./wdi-tlv-p2p-asp2-service-information-discovery-entry.md)"><strong>WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-asp2-service-information-discovery-entry" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY&lt;/strong&gt;](./wdi-tlv-p2p-asp2-service-information-discovery-entry.md)"><strong>WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong></a></p></td>
 <td>X</td>
 <td><p>X</p></td>
 <td><p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
 <p>An optional list of ASP2 Service Information Discovery Entries to be queried. This is required if WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_INFORMATION is specified. The driver is expected to perform a P2P service discovery over probe request/response using the service name hash. For each service entry that contains service information, the driver is expected to perform an ANQP query request/response to query the service information.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-include-listen-channel" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL&lt;/strong&gt;](./wdi-tlv-p2p-include-listen-channel.md)"><strong>WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-include-listen-channel" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL&lt;/strong&gt;](./wdi-tlv-p2p-include-listen-channel.md)"><strong>WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL</strong></a></p></td>
 <td></td>
 <td><p>X</p></td>
 <td><p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
@@ -140,6 +139,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

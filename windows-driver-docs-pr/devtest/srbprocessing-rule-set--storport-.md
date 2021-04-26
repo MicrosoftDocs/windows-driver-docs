@@ -1,7 +1,6 @@
 ---
 title: SrbProcessing rule set (Storport)
 description: Use these rules to verify that your driver correctly processes SRB requests.
-ms.assetid: A3BF2AA3-207F-4D74-94B0-6CA215341340
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -36,19 +35,19 @@ Use these rules to verify that your driver correctly processes SRB requests.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-spreturnvalue.md" data-raw-source="[&lt;strong&gt;SpReturnValue&lt;/strong&gt;](storport-spreturnvalue.md)"><strong>SpReturnValue</strong></a></p></td>
-<td align="left"><p>This rule verifies that the driver's implementations of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-virtual_hw_find_adapter" data-raw-source="[&lt;strong&gt;VirtualHwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-virtual_hw_find_adapter)"><strong>VirtualHwStorFindAdapter</strong></a> return a valid status. A valid status is one of the following: <strong>SP_RETURN_FOUND</strong>, <strong>SP_RETURN_ERROR</strong>, <strong>SP_RETURN_BAD_CONFIG</strong>, or <strong>SP_RETURN_NOT_FOUND</strong>.</p></td>
+<td align="left"><p>This rule verifies that the driver's implementations of <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> and <a href="/windows-hardware/drivers/ddi/storport/nc-storport-virtual_hw_find_adapter" data-raw-source="[&lt;strong&gt;VirtualHwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-virtual_hw_find_adapter)"><strong>VirtualHwStorFindAdapter</strong></a> return a valid status. A valid status is one of the following: <strong>SP_RETURN_FOUND</strong>, <strong>SP_RETURN_ERROR</strong>, <strong>SP_RETURN_BAD_CONFIG</strong>, or <strong>SP_RETURN_NOT_FOUND</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storportallocatepool.md" data-raw-source="[&lt;strong&gt;StorPortAllocatePool&lt;/strong&gt;](storportallocatepool.md)"><strong>StorPortAllocatePool</strong></a></p></td>
-<td align="left"><p>This rule verifies that the miniport must not attempt to call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool" data-raw-source="[&lt;strong&gt;StorPortFreePool&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool)"><strong>StorPortFreePool</strong></a> on an deallocated buffer.</p></td>
+<td align="left"><p>This rule verifies that the miniport must not attempt to call <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool" data-raw-source="[&lt;strong&gt;StorPortFreePool&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool)"><strong>StorPortFreePool</strong></a> on an deallocated buffer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-storportallocatepool2.md" data-raw-source="[&lt;strong&gt;StorPortAllocatePool2&lt;/strong&gt;](storport-storportallocatepool2.md)"><strong>StorPortAllocatePool2</strong></a></p></td>
-<td align="left"><p>This rule verifies that the miniport must not attempt to call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatepool" data-raw-source="[&lt;strong&gt;StorPortAllocatePool&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatepool)"><strong>StorPortAllocatePool</strong></a> on an allocated buffer without deallocating it first.</p></td>
+<td align="left"><p>This rule verifies that the miniport must not attempt to call <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatepool" data-raw-source="[&lt;strong&gt;StorPortAllocatePool&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatepool)"><strong>StorPortAllocatePool</strong></a> on an allocated buffer without deallocating it first.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storport-storportbuildio.md" data-raw-source="[&lt;strong&gt;StorPortBuildIo&lt;/strong&gt;](storport-storportbuildio.md)"><strong>StorPortBuildIo</strong></a></p></td>
-<td align="left"><p>This rule verifies that if the StorPort miniport's <a href="storport-storportbuildio.md" data-raw-source="[&lt;strong&gt;StorPortBuildIo&lt;/strong&gt;](storport-storportbuildio.md)"><strong>StorPortBuildIo</strong></a> routine returns <strong>FALSE</strong>, the SRB in question is not passed to <strong>StartIo</strong>. (In such cases, the miniport driver must complete the SRB by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification" data-raw-source="[&lt;strong&gt;StorPortNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification)"><strong>StorPortNotification</strong></a> with a notification type of <strong>RequestComplete</strong> from <strong>StorPortBuildIo</strong> or someplace else).</p></td>
+<td align="left"><p>This rule verifies that if the StorPort miniport's <a href="storport-storportbuildio.md" data-raw-source="[&lt;strong&gt;StorPortBuildIo&lt;/strong&gt;](storport-storportbuildio.md)"><strong>StorPortBuildIo</strong></a> routine returns <strong>FALSE</strong>, the SRB in question is not passed to <strong>StartIo</strong>. (In such cases, the miniport driver must complete the SRB by calling <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification" data-raw-source="[&lt;strong&gt;StorPortNotification&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification)"><strong>StorPortNotification</strong></a> with a notification type of <strong>RequestComplete</strong> from <strong>StorPortBuildIo</strong> or someplace else).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-storportcompleterequest.md" data-raw-source="[&lt;strong&gt;StorPortCompleteRequest&lt;/strong&gt;](storport-storportcompleterequest.md)"><strong>StorPortCompleteRequest</strong></a></p></td>
@@ -60,7 +59,7 @@ Use these rules to verify that your driver correctly processes SRB requests.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-storportfindadapter.md" data-raw-source="[&lt;strong&gt;StorPortFindAdapter&lt;/strong&gt;](storport-storportfindadapter.md)"><strong>StorPortFindAdapter</strong></a></p></td>
-<td align="left"><p>The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine must set the <strong>MaximumTransferLength</strong> and the <strong>NumberOfPhysicalBreaks</strong> fields in the <strong>PORT_CONFIGURATION_INFORMATION</strong> structure. By default, the value of both these fields is <strong>SP_UNINITIALIZED_VALUE</strong>. If either of these fields is still set to <strong>SP_UNINITIALIZED_VALUE</strong> upon exit from <strong>FindAdapter</strong>, the driver fails the rule.</p></td>
+<td align="left"><p>The <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine must set the <strong>MaximumTransferLength</strong> and the <strong>NumberOfPhysicalBreaks</strong> fields in the <strong>PORT_CONFIGURATION_INFORMATION</strong> structure. By default, the value of both these fields is <strong>SP_UNINITIALIZED_VALUE</strong>. If either of these fields is still set to <strong>SP_UNINITIALIZED_VALUE</strong> upon exit from <strong>FindAdapter</strong>, the driver fails the rule.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storport-storportnotification2.md" data-raw-source="[&lt;strong&gt;StorPortNotification2&lt;/strong&gt;](storport-storportnotification2.md)"><strong>StorPortNotification2</strong></a></p></td>
@@ -100,6 +99,4 @@ Use these rules to verify that your driver correctly processes SRB requests.
     ```
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md) and [Static Driver Verifier commands (MSBuild)](./-static-driver-verifier-commands--msbuild-.md).
-
- 
 

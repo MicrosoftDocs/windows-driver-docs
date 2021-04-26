@@ -1,7 +1,6 @@
 ---
 title: Supporting Special Files
 description: Supporting Special Files
-ms.assetid: 350e715f-be36-4999-99a2-6175d9763b3f
 keywords:
 - special files WDK KMDF
 - paging files WDK KMDF

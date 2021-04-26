@@ -1,7 +1,6 @@
 ---
 title: Example 16 Viewing Trace Messages in a Debugger
 description: Example 16 Viewing Trace Messages in a Debugger
-ms.assetid: c548643c-ae0c-47e7-af0a-0d89ed78f281
 keywords:
 - trace message displaying WDK
 - displaying trace messages

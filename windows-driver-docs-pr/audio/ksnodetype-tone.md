@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_TONE
 description: KSNODETYPE\_TONE
-ms.assetid: d9d55db0-8305-403f-8d0c-56c2cd736912
 keywords: ["KSNODETYPE_TONE Audio Devices"]
 topic_type:
 - apiref

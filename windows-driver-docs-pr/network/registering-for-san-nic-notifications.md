@@ -1,7 +1,6 @@
 ---
 title: Registering for SAN NIC Notifications
 description: Registering for SAN NIC Notifications
-ms.assetid: 6a630e7c-3b1a-4f4a-b808-f6b4e2315a42
 keywords:
 - NIC notifications WDK SANs
 - proxy drivers WDK SANs , NIC notifications

@@ -1,7 +1,6 @@
 ---
 title: Handling WMI Requests
 description: Handling WMI Requests
-ms.assetid: d95b736c-045d-4888-8bab-b0a6201f8830
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -31,9 +30,8 @@ All WMI IRPs have the major code [**IRP\_MJ\_SYSTEM\_CONTROL**](./irp-mj-system-
 
 The WMI kernel-mode component sends WMI IRPs any time following a driver's successful registration as a WMI data provider, typically when a user-mode data consumer has requested WMI information for a driver's device. If a driver registers as a WMI data provider by calling [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol), it must handle each subsequent WMI request in one of the following ways:
 
--   Call the kernel-mode WMI library routine **WmiSystemControl** of a PDO. For more information, see [Calling WmiSystemControl to Handle WMI IRPs](calling-wmisystemcontrol-to-handle-wmi-irps.md).
+-   Call the kernel-mode WMI library routine [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol). A driver can call **WmiSystemControl** to handle requests concerning only blocks that do not use dynamic instance names, and that base static instance names on a single base name string or the *device instance ID* of a PDO. For more information, see [Calling WmiSystemControl to Handle WMI IRPs](calling-wmisystemcontrol-to-handle-wmi-irps.md).
 
 -   In its [*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine, process and complete any such request tagged with the pointer to its device object that the driver passed in its call to **IoWMIRegistrationControl**, and forward other [**IRP\_MJ\_SYSTEM\_CONTROL**](./irp-mj-system-control.md) requests to the next lower driver. For more information, see [Processing WMI IRPs in a DispatchSystemControl Routine](processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md).
 
 For a list of the WMI minor IRPs, see [WMI Minor IRPs](wmi-minor-irps.md). 
-

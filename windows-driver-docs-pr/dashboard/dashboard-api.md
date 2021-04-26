@@ -23,7 +23,7 @@ The following steps describe the end-to-end process of using the Microsoft Hardw
 
 Before you start writing code to call the Microsoft Hardware API, make sure that you have completed the following required prerequisites.
 
-* You (or your organization) must have an Azure AD directory and you must have [Global administrator](https://go.microsoft.com/fwlink/?LinkId=746654)  permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Azure AD directory. Otherwise, you can [create a new Azure AD in Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) for no additional charge.
+* You (or your organization) must have an Azure AD directory and you must have [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)  permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Azure AD directory. Otherwise, you can [create a new Azure AD in Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) for no additional charge.
 
 * If an Azure AD application does not already exist, [you must create one](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#create-a-new-azure-ad-application-account-in-your-organizations-directory-and-add-it-to-your-partner-center-account).
 

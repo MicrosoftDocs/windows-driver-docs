@@ -1,7 +1,6 @@
 ---
 title: COPP Video Miniport Driver Template
 description: COPP Video Miniport Driver Template
-ms.assetid: 54a39df8-0916-4df7-9e2d-a2c3aad1a235
 keywords:
 - copy protection WDK COPP , video miniport driver code template
 - video copy protection WDK COPP , video miniport driver code template

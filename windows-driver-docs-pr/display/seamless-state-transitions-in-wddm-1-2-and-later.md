@@ -1,7 +1,6 @@
 ---
 title: Providing seamless state transitions in WDDM 1.2 and later
 description: several features help to minimize screen flashes during the boot process, transitions from lower power states, and transitions back to operating system control.
-ms.assetid: CD2208AA-62B6-4BAD-BE7C-0791B13D1E96
 keywords:
 - state transitions WDK display
 - resume from hibernation WDK display
@@ -34,7 +33,7 @@ Starting in Windows 8, several features help to minimize or eliminate screen fl
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
+<td align="left"><a href="/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>System.Client.Firmware.UEFI.GOP.Display</strong></p>
 <p><strong>Device.Graphics…PnpStopStartSupport</strong></p>
 <p><strong>Device.Graphics…DisplayOutputControl</strong></p></td>
@@ -100,6 +99,4 @@ However, for WDDM versions 1.0 and 1.1 drivers that indicate they don't support 
 In addition, if a mode change occurs while the monitor is turned off, the operating system calls the [*DxgkDdiCommitVidPn*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn) function as described above for WDDM 1.2 drivers, plus it calls *DxgkDdiCommitVidPn* a *second* time with an empty video present network (VidPN) in *pCommitVidPnArg*-&gt;**hFunctionalVidPn** , and none of the flag values set in *pCommitVidPnArg*-&gt;**Flags**.
 
 This two-part calling sequence also occurs when the system resumes after hibernation and monitor sync generation is to remain enabled. In this case the driver should take no action when it receives the second call to [*DxgkDdiCommitVidPn*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn).
-
- 
 

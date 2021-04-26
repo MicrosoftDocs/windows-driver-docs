@@ -1,7 +1,6 @@
 ---
 title: Kernel Mode Performance Monitoring
 description: Kernel Mode Performance Monitoring
-ms.assetid: 317d2f9d-db50-4513-8bbd-28f429236877
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

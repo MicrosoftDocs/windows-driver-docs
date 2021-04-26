@@ -1,7 +1,6 @@
 ---
 title: body element
 description: The required body element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
-ms.assetid: 3343c272-5090-4b60-ab04-08038d2583ff
 keywords: ["body element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The required **body** element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
 
-The **body** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **body** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

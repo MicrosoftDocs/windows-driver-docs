@@ -1,7 +1,6 @@
 ---
 title: Dual SIM
 description: Dual SIM
-ms.assetid: 18521fec-c9fb-48d0-9de2-d0482e4807d6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,13 +23,11 @@ Each UICC slot is associated with an executor. An executor registers to a partic
 
 For phones that have radio type W/G + G, one executor is W/G capable and one executor is G capable. Depending on the UICC slot that the user chooses to use for the data line, that slot is automatically associated with the more capable W/G executor. The following diagrams show the two possible executor associations depending on the UICC slot that the user chose for the data line.
 
-![hwcomponents\-dualsim\-logicalview\-1](images/hwcomponents-dualsim-logicalview.png)![hwcomponents\-dualsim\-logicalview\-2](images/hwcomponents-dualsim-logicalview-2.png)
+![hwcomponents\-dualsim\-logicalview\-1](images/hwcomponents-dualsim-logicalview.png) ![Diagram that shows the second possible executor association.](images/hwcomponents-dualsim-logicalview-2.png)
 
 ### C+G
 
 For phones that have radio type C + G, the slot that contains a CDMA UICC always uses executor 0. If there are two GSM UICCs, the UICC chosen for the data line is associated with executor 0.
-
-For more information about configuring C + G, see [Configure C+G dual SIM settings](/windows-hardware/customize/mobile/mcsf/configure-c-g-dual-sim-settings).
 
 ## UICC swapping
 

@@ -1,7 +1,6 @@
 ---
 title: Installing a Biometric Driver
 description: Installing a Biometric Driver
-ms.assetid: f1ae7346-c55b-484e-a94a-b4e22f5fafed
 keywords:
 - biometric drivers WDK , installing
 - installing biometric drivers WDK biometric

@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfpoolusage
 description: The wdfkd.wdfpoolusage extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver.
-ms.assetid: 6a77b76b-c970-447c-a8dd-e1ceb7add611
 keywords: ["wdfkd.wdfpoolusage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Best Practices for Specifying Hardware IDs
 description: Best Practices for Specifying Hardware IDs
-ms.assetid: 95dcf1b1-b2cd-473f-9660-a91fda20ffc2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

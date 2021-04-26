@@ -1,7 +1,6 @@
 ---
 title: VMR Video Processing
 description: VMR Video Processing
-ms.assetid: 149f881d-1a6e-46b7-9a37-971c7bb7b79d
 keywords:
 - ProcAmp WDK DirectX VA , VMR
 - VMR WDK DirectX VA

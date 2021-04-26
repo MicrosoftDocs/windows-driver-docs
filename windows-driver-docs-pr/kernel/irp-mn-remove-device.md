@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_REMOVE_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_REMOVE_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 0d733cbd-2da8-48a5-afc6-e1e6b8f507a1
 keywords:
  - IRP_MN_REMOVE_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -55,7 +54,7 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 In response to this IRP, drivers perform such tasks as powering down the device, removing the device's software representation (device objects, and so forth), and releasing any resources for the device.
 
-For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_DEVICE Request](./handling-an-irp-mn-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_DEVICE Request](./handling-an-irp-mn-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](./removing-a-device-in-a-function-driver.md).
 
 **Sending This IRP**
 
@@ -91,6 +90,4 @@ Requirements
 [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](irp-mn-query-remove-device.md)
 
 [**IRP\_MN\_SURPRISE\_REMOVAL**](irp-mn-surprise-removal.md)
-
- 
 

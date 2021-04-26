@@ -1,7 +1,6 @@
 ---
 title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4)
 description: Driver Verifier detects that the driver violates one of the NDIS/WiFi time-out rule.
-ms.assetid: 73D4B6DF-E667-4C71-B985-FCDC05837908
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,9 +40,9 @@ Arg4: 9c1f3480, Address of supplemental states (third argument to !ruleinfo).
 
 In the following section of the **!analyze -v** output, the reason why the rule was violated under is shown under the DV\_VIOLATED\_CONDITION field. The DV\_MSDN\_LINK section is also useful to pull up a link to documentation on this rule.
 
-```
 ## Debugging Details:
 
+```
 
 *** ERROR: Module load completed but symbols could not be loaded for NdisTimedOidComplete.sys
 

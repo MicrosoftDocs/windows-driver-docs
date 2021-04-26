@@ -1,7 +1,6 @@
 ---
 title: Software Publisher Certificate
 description: Software Publisher Certificate
-ms.assetid: eb06c630-9a3d-4f53-b00b-b1254c8bbaec
 keywords:
 - catalog files WDK driver signing , SPC
 - Software Publisher Certificate WDK driver signing

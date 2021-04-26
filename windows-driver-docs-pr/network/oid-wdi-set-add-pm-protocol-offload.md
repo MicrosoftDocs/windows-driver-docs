@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD
 description: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD adds a list of one or more protocol offloads for power management.
-ms.assetid: 50c69dd4-352d-484f-81c1-a4c9587ab368
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista

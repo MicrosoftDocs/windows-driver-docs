@@ -1,7 +1,6 @@
 ---
 title: Sharing Transport Addresses
 description: Sharing Transport Addresses
-ms.assetid: 1f5bc91a-75eb-466c-ad7d-cfbe0e83dc17
 keywords:
 - sharing transport addresses
 - binding sockets WDK Winsock Kernel

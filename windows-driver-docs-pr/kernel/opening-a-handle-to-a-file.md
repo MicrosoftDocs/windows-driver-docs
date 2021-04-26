@@ -1,7 +1,6 @@
 ---
 title: Opening a Handle to a File
 description: Opening a Handle to a File
-ms.assetid: 9378282a-ee29-44b6-b206-602eee94ec3b
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "opening handle to file"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 To open a handle to a file, perform the following steps:
 
-1.  Create an [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure, and call the [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes) macro to initialize the structure. You specify the file's object name as the *ObjectName* parameter to **InitializeObjectAttributes**.
+1.  Create an [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-_object_attributes) structure, and call the [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes) macro to initialize the structure. You specify the file's object name as the *ObjectName* parameter to **InitializeObjectAttributes**.
 
 2.  Open a handle to the file by passing the **OBJECT\_ATTRIBUTES** structure to [**IoCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile).
 

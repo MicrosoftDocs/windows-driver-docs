@@ -1,7 +1,6 @@
 ---
 title: Returning Status from Dispatch Routines
 description: Returning Status from Dispatch Routines
-ms.assetid: 76bd651a-344f-4e22-a435-b62fdf2d7ddc
 keywords:
 - IRP dispatch routines WDK file system , returning status
 - status values WDK file system

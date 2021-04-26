@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_UNLOCK\_MULTIPLE\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_UNLOCK\_MULTIPLE\ routine is called by RDBSS to request that the network mini-redirector remove multiple locks held on a file object.
-ms.assetid: 50f7abdf-a3f7-4625-ac54-75e80807d05e
 keywords: ["MRxLowIOSubmit LOWIO_OP_UNLOCK_MULTIPLE routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

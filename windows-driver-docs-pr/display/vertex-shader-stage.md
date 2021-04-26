@@ -1,7 +1,6 @@
 ---
 title: Vertex Shader Stage
 description: Vertex Shader Stage
-ms.assetid: 310ef24a-7647-4f5e-b89f-a3ff330d5df4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

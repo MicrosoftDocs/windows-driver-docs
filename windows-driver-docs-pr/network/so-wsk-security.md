@@ -1,7 +1,6 @@
 ---
 title: SO_WSK_SECURITY
 description: SO_WSK_SECURITY
-ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
 ms.date: 07/18/2017
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
@@ -49,7 +48,7 @@ To apply a security descriptor to a socket, a WSK application calls the [**WskCo
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable must contain a pointer to a cached copy of a security descriptor that was obtained by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client" data-raw-source="[&lt;strong&gt;WskControlClient&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client)"><strong>WskControlClient</strong></a> function with the <a href="wsk-cache-sd.md" data-raw-source="[&lt;strong&gt;WSK_CACHE_SD&lt;/strong&gt;](wsk-cache-sd.md)"><strong>WSK_CACHE_SD</strong></a> control code.</p></td>
+<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable must contain a pointer to a cached copy of a security descriptor that was obtained by calling the <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client" data-raw-source="[&lt;strong&gt;WskControlClient&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client)"><strong>WskControlClient</strong></a> function with the <a href="wsk-cache-sd.md" data-raw-source="[&lt;strong&gt;WSK_CACHE_SD&lt;/strong&gt;](wsk-cache-sd.md)"><strong>WSK_CACHE_SD</strong></a> control code.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -150,6 +149,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

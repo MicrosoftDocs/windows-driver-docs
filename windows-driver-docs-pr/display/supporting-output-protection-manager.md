@@ -1,7 +1,6 @@
 ---
 title: Supporting Output Protection Manager
 description: Supporting Output Protection Manager
-ms.assetid: 2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2
 keywords:
 - COPP WDK DirectX VA , Output Protection Manager
 - Output Protection Manager WDK display

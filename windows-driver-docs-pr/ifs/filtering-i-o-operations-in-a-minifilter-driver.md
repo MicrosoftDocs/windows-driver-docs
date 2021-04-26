@@ -1,7 +1,6 @@
 ---
 title: Filtering I/O Operations in a Minifilter Driver
 description: Filtering I/O Operations in a Minifilter Driver
-ms.assetid: e35944c1-fcc6-44e0-838c-da8d24f95d51
 keywords:
 - preoperation callback routines WDK file system minifilter , guidelines
 - postoperation callback routines WDK file system minifilter , guidelines

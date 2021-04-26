@@ -1,7 +1,6 @@
 ---
 title: IDebugAdvanced2 Request method
 description: The Request method performs a variety of different operations.
-ms.assetid: efb3c93c-5405-418b-a063-afa8e5e9e59a
 keywords: ["Request method Windows Debugging", "Request method Windows Debugging , IDebugAdvanced2 interface", "IDebugAdvanced2 interface Windows Debugging , Request method", "Request method Windows Debugging , IDebugAdvanced3 interface", "IDebugAdvanced3 interface Windows Debugging , Request method"]
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ Specifies which operation to perform. **Request** can be one of the values in th
 </tr>
 <tr class="even">
 <td align="left"><p><a href="debug-request-target-exception-context.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_TARGET_EXCEPTION_CONTEXT&lt;/strong&gt;](debug-request-target-exception-context.md)"><strong>DEBUG_REQUEST_TARGET_EXCEPTION_CONTEXT</strong></a></p></td>
-<td align="left"><p>Return the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/scopes-and-symbol-groups#thread-context" data-raw-source="[thread context](./scopes-and-symbol-groups.md#thread-context)">thread context</a> for the stored event in a user-mode minidump file.</p></td>
+<td align="left"><p>Return the <a href="/windows-hardware/drivers/debugger/scopes-and-symbol-groups#thread-context" data-raw-source="[thread context](./scopes-and-symbol-groups.md#thread-context)">thread context</a> for the stored event in a user-mode minidump file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="debug-request-target-exception-thread.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_TARGET_EXCEPTION_THREAD&lt;/strong&gt;](debug-request-target-exception-thread.md)"><strong>DEBUG_REQUEST_TARGET_EXCEPTION_THREAD</strong></a></p></td>
@@ -82,7 +81,7 @@ Specifies which operation to perform. **Request** can be one of the values in th
 <td align="left"><p>Return the version of Windows that is currently running on the target.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff541575(v=vs.85)" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM&lt;/strong&gt;](/previous-versions/ff541575(v=vs.85))"><strong>DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff541575(v=vs.85)" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM&lt;/strong&gt;](/previous-versions/ff541575(v=vs.85))"><strong>DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM</strong></a></p></td>
 <td align="left"><p>Read a stream from a user-mode minidump target.</p></td>
 </tr>
 <tr class="odd">
@@ -91,7 +90,7 @@ Specifies which operation to perform. **Request** can be one of the values in th
 </tr>
 <tr class="even">
 <td align="left"><p><a href="debug-request-set-local-implicit-command-line.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE&lt;/strong&gt;](debug-request-set-local-implicit-command-line.md)"><strong>DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE</strong></a></p></td>
-<td align="left"><p>Set the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction#debugger-engine" data-raw-source="[debugger engine](./introduction.md#debugger-engine)">debugger engine</a>'s implicit command line.</p></td>
+<td align="left"><p>Set the <a href="/windows-hardware/drivers/debugger/introduction#debugger-engine" data-raw-source="[debugger engine](./introduction.md#debugger-engine)">debugger engine</a>'s implicit command line.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="debug-request-get-captured-event-code-offset.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET&lt;/strong&gt;](debug-request-get-captured-event-code-offset.md)"><strong>DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET</strong></a></p></td>
@@ -211,6 +210,4 @@ Requirements
 [**DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET**](debug-request-get-captured-event-code-offset.md)
 
 [**DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM**](debug-request-read-captured-event-code-stream.md)
-
- 
 

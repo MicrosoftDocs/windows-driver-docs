@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_HAS\_FIELD
 description: The EXT\_TDOP\_HAS\_FIELD sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation determines if a structure contains a specified member.
-ms.assetid: c1486aff-63d3-4ceb-8dce-45a9c5835c99
 keywords: ["EXT_TDOP_HAS_FIELD Windows Debugging"]
 topic_type:
 - apiref

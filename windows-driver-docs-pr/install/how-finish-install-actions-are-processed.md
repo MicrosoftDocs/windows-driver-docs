@@ -1,7 +1,6 @@
 ---
 title: How Finish-Install Actions are Processed
 description: How Finish-Install Actions are Processed
-ms.assetid: 028cce46-018d-496e-bc99-c8bf6158c898
 keywords:
 - finish-install actions WDK device installations
 - default finish-install actions
@@ -28,7 +27,7 @@ Windows processes finish-install actions after all other installation operations
 
 Windows completes the following steps to process an installer's finish-install actions:
 
-1.  At the end of core device installation, Windows calls [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](./dif-newdevicewizard-finishinstall.md) request to the installers for the device.
+1.  At the end of core device installation, Windows calls [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](./dif-newdevicewizard-finishinstall.md) request to the installers for the device.
 
     DIF_NEWDEVICEWIZARD_FINISHINSTALL is the only DIF code that is sent in both the context of core device installation and in the client context. Therefore, a class installer, class co-installer, or device co-installer must indicate that it has finish-install actions during DIF_NEWDEVICEWIZARD_FINISHINSTALL processing, instead of during DIF_INSTALLDEVICE processing.
 
@@ -48,7 +47,7 @@ Windows completes the following steps to process an installer's finish-install a
 
     If a user is signed in without administrative privileges, Windows prompts the user for consent and credentials to run the finish-install actions in an administrator context.
 
-4.  When finish-install operations run, the finish-install process starts and completes any finish-install wizard pages for the device, and then calls [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request to all installers for the device, as described in [Running Finish-Install Actions](running-finish-install-actions.md).
+4.  When finish-install operations run, the finish-install process starts and completes any finish-install wizard pages for the device, and then calls [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_FINISHINSTALL_ACTION**](./dif-finishinstall-action.md) request to all installers for the device, as described in [Running Finish-Install Actions](running-finish-install-actions.md).
 
 5.  After the installers have completed their finish-install actions, Windows runs the default finish-install action, as described in [Running the Default Finish-Install Action](running-the-default-finish-install-action.md).
 

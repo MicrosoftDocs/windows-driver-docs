@@ -1,7 +1,6 @@
 ---
 title: Supporting Printer Change Notifications
 description: Supporting Printer Change Notifications
-ms.assetid: e75c6f89-9cef-4900-af89-edf1f7f786c7
 keywords:
 - print providers WDK , printer change notifications
 - network print providers WDK , printer change notifications

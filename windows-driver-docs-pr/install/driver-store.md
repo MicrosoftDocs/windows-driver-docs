@@ -1,7 +1,6 @@
 ---
 title: Driver Store
 description: Driver Store
-ms.assetid: 17abe3a4-0663-4b8b-8072-2171b4cedbe4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_AUDIO_GFX
 description: KSCATEGORY_AUDIO_GFX
-ms.assetid: 6346d7c6-9ea9-450f-af6a-44dec22bf936
 keywords: ["KSCATEGORY_AUDIO_GFX Device and Driver Installation"]
 topic_type:
 - apiref

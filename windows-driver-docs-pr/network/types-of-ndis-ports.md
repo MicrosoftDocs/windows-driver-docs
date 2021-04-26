@@ -1,7 +1,6 @@
 ---
 title: Types of NDIS Ports
 description: Types of NDIS Ports
-ms.assetid: a77ceb1b-d4b9-4a42-aa5b-685295722fa3
 keywords:
 - ports WDK NDIS , types
 - NDIS ports WDK , types
@@ -40,8 +39,6 @@ The characteristics of an NDIS port vary from one port application to another. F
 
 ## Related topics
 
-
-[NDIS Ports](ndis-ports.md)
 
 [Overview of NDIS Ports](overview-of-ndis-ports.md)
 

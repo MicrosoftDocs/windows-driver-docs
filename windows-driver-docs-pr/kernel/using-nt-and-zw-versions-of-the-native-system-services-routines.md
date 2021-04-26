@@ -1,7 +1,6 @@
 ---
 title: Using Nt and Zw Versions of the Native System Services Routines
 description: Using Nt and Zw Versions of the Native System Services Routines
-ms.assetid: 89627ddb-621d-4d27-acd6-16308689165d
 keywords: ["Native System Services API WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 The Windows native operating system services API is implemented as a set of routines that run in kernel mode. These routines have names that begin with the prefix **Nt** or **Zw**. Kernel-mode drivers can call these routines directly. User-mode applications can access these routines by using system calls.
 
-With a few exceptions, each native system services routine has two slightly different versions that have similar names but different prefixes. For example, calls to [NtCreateFile](https://go.microsoft.com/fwlink/p/?linkid=157250) and [**ZwCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatefile) perform similar operations and are, in fact, serviced by the same kernel-mode system routine. For system calls from user mode, the **Nt** and **Zw** versions of a routine behave identically. For calls from a kernel-mode driver, the **Nt** and **Zw** versions of a routine differ in how they handle the parameter values that the caller passes to the routine.
+With a few exceptions, each native system services routine has two slightly different versions that have similar names but different prefixes. For example, calls to [NtCreateFile](/windows/win32/api/winternl/nf-winternl-ntcreatefile) and [**ZwCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatefile) perform similar operations and are, in fact, serviced by the same kernel-mode system routine. For system calls from user mode, the **Nt** and **Zw** versions of a routine behave identically. For calls from a kernel-mode driver, the **Nt** and **Zw** versions of a routine differ in how they handle the parameter values that the caller passes to the routine.
 
 A kernel-mode driver calls the **Zw** version of a native system services routine to inform the routine that the parameters come from a trusted, kernel-mode source. In this case, the routine assumes that it can safely use the parameters without first validating them. However, if the parameters might be from either a user-mode source or a kernel-mode source, the driver instead calls the **Nt** version of the routine, which determines, based on the history of the calling thread, whether the parameters originated in user mode or kernel mode. For more information about how the routine distinguishes user-mode parameters from kernel-mode parameters, see [**PreviousMode**](previousmode.md).
 
@@ -33,6 +32,4 @@ This section includes the following topics:
 [Specifying Access Rights](access-mask.md)
 
 [NtXxx Routines](ntxxx-routines.md)
-
- 
 

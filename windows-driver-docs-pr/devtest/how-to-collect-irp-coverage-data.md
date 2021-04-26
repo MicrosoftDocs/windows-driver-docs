@@ -1,7 +1,6 @@
 ---
 title: How to Collect IRP Coverage Data
 description: How to Collect IRP Coverage Data
-ms.assetid: f65422fe-f524-41c1-a532-a2c615d65f72
 keywords:
 - Driver Coverage Toolkit WDK , collecting data
 ms.date: 04/20/2017

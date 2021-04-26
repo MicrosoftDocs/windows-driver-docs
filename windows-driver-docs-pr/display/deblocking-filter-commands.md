@@ -1,7 +1,6 @@
 ---
 title: Deblocking Filter Commands
 description: Deblocking Filter Commands
-ms.assetid: 9f20c6fa-c515-43b8-a947-f6290d15bd35
 keywords:
 - macroblocks WDK DirectX VA , deblocking filter commands
 - deblocking filter commands WDK DirectX VA

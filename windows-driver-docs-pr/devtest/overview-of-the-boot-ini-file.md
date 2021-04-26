@@ -1,7 +1,6 @@
 ---
 title: Overview of the Boot.ini File
 description: The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\Boot.ini.
-ms.assetid: bc9bb063-4caa-42fe-bb3d-dc588fbbb8d9
 keywords:
 - Boot.ini files WDK , about Boot.ini files
 - boot loader section WDK boot options
@@ -69,6 +68,6 @@ Each boot entry includes the following elements:
 
 -   *Boot entry parameters*, also known as *boot parameters* or *load options* enable, disable, and configure operating system features. Boot parameters resemble command-line parameters, each beginning with a forward slash (/), such as [**/debug**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200). You can have zero or more boot parameters on each boot entry.
 
-    For a list of boot parameters that are relevant to driver testing and debugging, see [Boot.ini Boot Parameter Reference](/windows-hardware/drivers/ddi/index).
+    For a list of boot parameters that are relevant to driver testing and debugging, see [Boot.ini Boot Parameter Reference](./boot-options-in-a-boot-ini-file.md).
 
 You can have multiple boot entries for the same operating system, each with a different set of boot parameters. Windows creates a standard boot entry when you install the operating system, and you can create additional, customized entries for an operating system by editing Boot.ini.

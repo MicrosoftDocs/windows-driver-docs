@@ -1,7 +1,6 @@
 ---
 title: Dynamic Vertex and Index Buffers
 description: Dynamic Vertex and Index Buffers
-ms.assetid: 81ee22c6-3f98-4767-a4cd-a7907ed8f8a2
 keywords:
 - dynamic vertex WDK DirectX 9.0
 - index buffers WDK DirectX 9.0

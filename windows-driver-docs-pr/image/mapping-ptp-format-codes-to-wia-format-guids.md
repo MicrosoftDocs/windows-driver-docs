@@ -1,7 +1,6 @@
 ---
 title: Mapping PTP Format Codes to WIA Format GUIDs
 description: Mapping PTP Format Codes to WIA Format GUIDs
-ms.assetid: a69269c0-1474-4de5-9a08-94902ef1f089
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

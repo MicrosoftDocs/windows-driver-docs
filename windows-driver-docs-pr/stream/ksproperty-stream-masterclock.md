@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_MASTERCLOCK
 description: The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should be implemented if the pin uses or produces a master clock that can be used for synchronization.
-ms.assetid: b8fb4d7b-e2e3-498c-9f76-4075d3ae0cb2
 keywords: ["KSPROPERTY_STREAM_MASTERCLOCK Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>HANDLE</p></td>
 </tr>
 </tbody>
@@ -88,6 +87,4 @@ Requirements
 
 
 [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
 

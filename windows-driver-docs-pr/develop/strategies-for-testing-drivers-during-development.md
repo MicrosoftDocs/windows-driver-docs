@@ -1,5 +1,4 @@
 ---
-ms.assetid: 3AF1C7EA-A7E0-47C4-A8D0-BB8D432F7EA0
 title: Recommendations for testing driver code and driver package.
 description: When should you start testing? As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented.
 ms.date: 04/20/2017
@@ -33,7 +32,7 @@ Use the following suggestions for testing your driver code and driver package.
 
 -   Sign drivers to facilitate the installation and testing of drivers, as described in [Signing Drivers during Development and Test](../install/introduction-to-test-signing.md).
 
--   Run the **DriverInstall** test that is included as part of the Device Fundamental tests that are provided in the WDK. See [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md) and [How to select and configure the Device Fundamental Tests](how-to-select-and-configure-the-device-fundamental-tests.md). The **DriverInstall** test can be run after the driver has been deployed to the test computer. You can add the **DriverInstall** test to a Driver Test Group. The **DriverInstall** test appears in the **Driver Test Categories** under All Tests\\Basic\\Device Fundamentals\\DriverInstall. You can also use the [**IWDTFDriverPackageAction2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriverpackageaction/nn-wdtfdriverpackageaction-iwdtfdriverpackageaction2) interface to write you own tests.
+-   Run the **DriverInstall** test that is included as part of the Device Fundamental tests that are provided in the WDK. See [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md) and [How to select and configure the Device Fundamental Tests](how-to-select-and-configure-the-device-fundamental-tests.md). The **DriverInstall** test can be run after the driver has been deployed to the test computer. You can add the **DriverInstall** test to a Driver Test Group. The **DriverInstall** test appears in the **Driver Test Categories** under All Tests\\Basic\\Device Fundamentals\\DriverInstall.
 
 -   [Troubleshoot device installation](../install/troubleshooting-device-and-driver-installations.md) problems by using Device Manager to view system information about drivers and devices and by consulting the SetupAPI log. The SetupAPI log contains information about the sequence of operations that occurred during the installation of a device or driver.
 

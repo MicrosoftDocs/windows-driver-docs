@@ -1,7 +1,6 @@
 ---
 title: Making the Most of TAEF
 description: Making the Most of TAEF
-ms.assetid: DCB06C5A-DF2C-4e1c-A297-C9AA5496D162
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -2,7 +2,6 @@
 title: IRP_MN_WRITE_CONFIG
 description: Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Function and filter drivers do not handle this request.
 ms.date: 08/12/2017
-ms.assetid: d57c30b8-83bd-41c9-906d-b8c95f8ca54e
 keywords:
  - IRP_MN_WRITE_CONFIG Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -76,7 +75,7 @@ A bus driver handles this IRP for its child devices (child PDOs).
 
 Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus.Status** and do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

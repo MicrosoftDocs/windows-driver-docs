@@ -1,7 +1,6 @@
 ---
 title: WavePci Miniport Driver
 description: WavePci Miniport Driver
-ms.assetid: 8a166087-d158-4d49-a917-2a5a78b43cb4
 keywords:
 - audio miniport drivers WDK , WavePci
 - miniport drivers WDK audio , WavePci
@@ -42,7 +41,7 @@ Creates a new stream object.
 
 Notifies the miniport driver of a request for service.
 
-The stream interface, [IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream), inherits the methods from the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWavePciStream provides the following additional methods:
+The stream interface, [IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream), inherits the methods from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWavePciStream provides the following additional methods:
 
 [**IMiniportWavePciStream::GetAllocatorFraming**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getallocatorframing)
 

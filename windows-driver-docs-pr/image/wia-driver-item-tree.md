@@ -1,7 +1,6 @@
 ---
 title: WIA Driver Item Tree
 description: WIA Driver Item Tree
-ms.assetid: 67232179-4b9b-49a0-b8b0-5ed0914d4156
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

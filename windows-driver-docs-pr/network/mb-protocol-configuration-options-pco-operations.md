@@ -1,10 +1,9 @@
 ---
 title: MB Protocol Configuration Options (PCO) operations
 description: MB Protocol Configuration Options (PCO) operations
-ms.assetid: 682C507C-5B2C-45E3-99D2-EEC68F8FC715
 keywords:
 - MB PCO options, Mobile Broadband PCO options, MB Protocol Configuration Options, Mobile Broadband Protocol Configuration Options, WDK network drivers, MBB miniport drivers
-ms.date: 09/11/2018
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +11,9 @@ ms.localizationpriority: medium
 
 ## Overview
 
-Windows NDIS definitions for Protocol Configuration Options (PCO) values have typically been generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
+The purpose of Protocol Configuration Options (PCO) is to transfer the external network protocol options associated with a packet data protocol (PDP) context activation. Windows NDIS definitions for PCO values have typically been generic in order to receive full PCO values from the modem and network in the future. However starting with Windows 10 version 1709 some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
+
+## Flows
 
 There are three scenarios where the PCO value will be passed to the host:
 
@@ -111,3 +112,24 @@ Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value h
 #### Status Codes
 
 This CID only uses Generic Status Codes.
+
+## Hardware Lab Kit (HLK) Tests
+See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx). 
+
+In HLK Studio connect to the device Cellular modem driver and run the test: [TestPco](/windows-hardware/test/hlk/testref/c7f8c2c2-ba87-4f51-8666-3fa06dc01451).
+
+## WinRT API
+
+[PCO](/uwp/api/windows.networking.networkoperators.mobilebroadbandpco)
+
+[PCO Background Trigger](/uwp/api/windows.applicationmodel.background.mobilebroadbandpcodatachangetrigger)
+
+## See Also
+
+[NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md)
+
+[**NDIS_WWAN_PCO_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pco_status)
+
+[**WWAN_PCO_VALUE**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pco_value)
+
+[OID_WWAN_PCO](oid-wwan-pco.md)

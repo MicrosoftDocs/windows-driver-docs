@@ -1,7 +1,6 @@
 ---
 title: Named Device Objects
 description: Named Device Objects
-ms.assetid: 4e24f0c1-57b2-4e06-a7f5-9a93d365ac8c
 keywords: ["device objects WDK kernel , named", "named device objects WDK kernel"]
 ms.date: 09/28/2017
 ms.localizationpriority: medium
@@ -25,7 +24,7 @@ A named device object can also have an MS-DOS device name, which is a symbolic l
 > [!IMPORTANT]
 > If you use a named device object you can use [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to help secure it. When you implement [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
 > 
-> In order to allow applications or other WDF drivers to access your PnP device, you should use device interfaces. For more information, see [Using Device Interfaces](../wdf/using-device-interfaces.md). A device interface serves as a symbolic link to your device stack’s PDO. Once way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [SDDL for Device Objects](./sddl-for-device-objects.md).
+> In order to allow applications or other WDF drivers to access your PnP device, you should use device interfaces. For more information, see [Using Device Interfaces](../wdf/using-device-interfaces.md). A device interface serves as a symbolic link to your device stack’s PDO. Once way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](./controlling-device-access.md) and [SDDL for Device Objects](./sddl-for-device-objects.md).
 
 
 This section contains the following subsections:
@@ -33,6 +32,4 @@ This section contains the following subsections:
 [NT Device Names](nt-device-names.md)
 
 [MS-DOS Device Names](introduction-to-ms-dos-device-names.md)
-
- 
 

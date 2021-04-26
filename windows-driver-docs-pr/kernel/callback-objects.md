@@ -1,7 +1,6 @@
 ---
 title: Callback Objects
 description: Callback Objects
-ms.assetid: d6ccb064-5936-4996-a5cd-795803958b5d
 keywords: ["synchronization WDK kernel , callback objects", "callback objects WDK kernel", "objects WDK callback objects", "kernel callback mechanism WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

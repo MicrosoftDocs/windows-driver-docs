@@ -1,7 +1,6 @@
 ---
 title: IStiUSD COM Interface
 description: IStiUSD COM Interface
-ms.assetid: 2f805955-8c66-4c9e-839e-c8a98c6637a8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

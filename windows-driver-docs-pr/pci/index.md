@@ -17,7 +17,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # PCI driver programming guide
@@ -28,8 +27,8 @@ The following table summarizes the PCIe features that are supported by different
 |----|----|
 |Resizable BAR capability</br>See section 7.22.|Windows 10|
 |Atomic Operations</br>See section 6.15.|Windows 10|
-|ACPI additions for FW latency optimizations</br>See [ACPI Additions for FW Latency Optimizations]( https://go.microsoft.com/fwlink/p/?LinkId=787058)|Windows 10|
-|ATS/PRI</br>-  [ATS specification](https://go.microsoft.com/fwlink/p/?LinkId=787061)</br>-  [Errata for the PCI Express&#174; Base Specification Revision 3.1, Single Root I/O Virtualization and Sharing Revision 1.1, Address Translation and Sharing Revision 1.1, and M.2 Specification Revision 1.0](https://go.microsoft.com/fwlink/p/?LinkId=787060)|Windows 10|
+|ACPI additions for FW latency optimizations</br>See [ACPI Additions for FW Latency Optimizations](https://pcisig.com/specifications)|Windows 10|
+|ATS/PRI</br>-  [ATS specification](https://go.microsoft.com/fwlink/p/?LinkId=787061)</br>-  [Errata for the PCI Express&#174; Base Specification Revision 3.1, Single Root I/O Virtualization and Sharing Revision 1.1, Address Translation and Sharing Revision 1.1, and M.2 Specification Revision 1.0](https://pcisig.com/specifications/iov/)|Windows 10|
 |Optimized Buffer Flush/Fill (OBFF)</br>See section 6.19.|-  Windows 8</br>-  Windows Server 2012|
 |Latency Tolerance Reporting (LTR) Capability</br>See section 7.25.|- Windows 8</br>-  Windows Server 2012|
 |Alternative Routing-ID Interpretation (ARI)</br>See section 6.13.|-  Windows 8</br>-  Windows Server 2012|
@@ -48,4 +47,4 @@ The following table summarizes the PCIe features that are supported by different
 
 ## See Also
 
-- [Official PCIe specification](https://pcisig.com/specifications/review-zone)
+[Official PCIe specification](https://pcisig.com/specifications/review-zone)

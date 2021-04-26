@@ -1,7 +1,6 @@
 ---
 title: Caching Registered Memory
 description: Caching Registered Memory
-ms.assetid: e1040f6a-6e65-462a-a79a-5d05d36787b0
 keywords:
 - SAN connection setup WDK , caching registered memory
 - RDMA buffer caching WDK SANs

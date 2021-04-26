@@ -1,7 +1,6 @@
 ---
 title: Installing Device Metadata Packages from WMIS
 description: Installing Device Metadata Packages from WMIS
-ms.assetid: e2466b8a-c9c7-4d0d-9ce7-4648c83fc272
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ When the operating system detects a new device, it queries an online service cal
 
  
 
-If you submit your device metadata package to [Windows Quality Online Services (Winqual)](../dashboard/winqual-submission-tool--winqualexe-.md) when you submit your [driver package](driver-packages.md) to the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) for digital signing, your package will be available to WMIS for download requests made by DMRC on any computer that runs Windows 7 and later versions of Windows.
+If you submit your device metadata package to [Windows Quality Online Services (Winqual)](../dashboard/winqual-submission-tool--winqualexe-.md) when you submit your [driver package](driver-packages.md) to the [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for digital signing, your package will be available to WMIS for download requests made by DMRC on any computer that runs Windows 7 and later versions of Windows.
 
 **Important**  We highly recommended that OEMs distribute device metadata packages only through WMIS. Distribution of device metadata packages through WMIS supports the *hardware-first* installation scenario. In this scenario, a new device is installed before the driver and device-specific software for the device is installed. For more information about this scenario, see [Hardware-First Installation](hardware-first-installation.md).
 
@@ -28,6 +27,4 @@ A device metadata package is installed through WMIS in the following way:
     DMRC first searches the local computer's [device metadata cache](device-metadata-cache.md) and [device metadata store](device-metadata-store.md) for device metadata. If the device is newly installed, or if the device is scheduled for a periodic metadata update, DMRC queries WMIS for available metadata packages for the device.
 
 2.  If a device metadata package is available, DMRC automatically downloads the package from WMIS, extracts the package's device metadata components, and saves them within the [device metadata cache](device-metadata-cache.md).
-
- 
 

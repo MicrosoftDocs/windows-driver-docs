@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for Volume Textures
 description: Reporting Support for Volume Textures
-ms.assetid: da0c1c88-504e-4293-96ca-65cac2e0fe97
 keywords:
 - textures WDK DirectX 8.0
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures

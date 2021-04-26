@@ -1,7 +1,6 @@
 ---
 title: .dump (Create Dump File)
 description: The .dump command creates a user-mode or kernel-mode crash dump file.
-ms.assetid: df6bcf7f-eb2e-4605-87a0-c0a7e9e4776b
 keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.dump) command", ".dump (Create Dump File) Windows Debugging"]
 ms.date: 07/17/2020
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
-ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 [!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 
-This guide walks you through the process of creating a service metadata package on the Windows Dev Center hardware dashboard, previously known as Sysdev (<https://sysdev.microsoft.com>). Service metadata is required to connect a mobile broadband app to your hardware device. When a user plugs a mobile broadband device into their computer, the associated service metadata is downloaded and then the mobile broadband app is automatically downloaded.
+This guide walks you through the process of creating a service metadata package on the Windows Dev Center hardware dashboard, previously known as [Sysdev](https://partner.microsoft.com/dashboard). Service metadata is required to connect a mobile broadband app to your hardware device. When a user plugs a mobile broadband device into their computer, the associated service metadata is downloaded and then the mobile broadband app is automatically downloaded.
 
 You can leverage service metadata to create a deeply integrated experience with Windows. Service metadata packages allow you to include branding information, such as icons and your operator name, configure settings and permissions for accessing SIM hardware and personal hotspots, and provision mobile broadband apps to work with your mobile broadband device.
 
@@ -27,7 +26,7 @@ To create a successful service metadata package, you must complete the steps inc
 
 ### <span id="Register_your_company_with_the_Windows_Dev_Center_hardware_dashboard"></span><span id="register_your_company_with_the_windows_dev_center_hardware_dashboard"></span><span id="REGISTER_YOUR_COMPANY_WITH_THE_WINDOWS_DEV_CENTER_HARDWARE_DASHBOARD"></span>Register your company with the Windows Dev Center hardware dashboard
 
--   Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](/windows-hardware/drivers/dashboard/dashboard-administration) in the Windows Dev Center hardware dashboard help.
+-   Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](../dashboard/get-started-with-the-hardware-dashboard.md) in the Windows Dev Center hardware dashboard help.
 
 -   Your company has a VeriSign code signing certificate to sign the packages.
 
@@ -163,7 +162,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
 **To create a service metadata package**
 
-1.  Navigate to <https://sysdev.microsoft.com>.
+1.  Navigate to sysdev.microsoft.com.
 
 2.  Under the **Device metadata** heading, click **Create mobile broadband experience**.
 

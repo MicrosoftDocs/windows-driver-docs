@@ -1,7 +1,6 @@
 ---
 title: KS Interfaces
 description: KS Interfaces
-ms.assetid: cc6fad32-0587-44a8-92d1-54bc0370e5c0
 keywords:
 - interfaces WDK kernel streaming
 - KSPIN_INTERFACE

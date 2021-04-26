@@ -1,7 +1,6 @@
 ---
 title: FSCTL_REQUEST_FILTER_OPLOCK control code
 description: The FSCTL\_REQUEST\_FILTER\_OPLOCK control code requests a filter opportunistic lock (oplock) on a file.
-ms.assetid: 9d6b2773-db87-492c-8fe9-f5fd4ef2eb7b
 keywords: ["FSCTL_REQUEST_FILTER_OPLOCK control code Installable File System Drivers"]
 topic_type:
 - apiref

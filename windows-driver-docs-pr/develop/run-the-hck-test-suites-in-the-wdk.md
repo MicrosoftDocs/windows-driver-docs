@@ -1,5 +1,4 @@
 ---
-ms.assetid: 3FC63BAD-4B95-40AB-BFBE-88A3274B76E8
 title: How to run the HCK Test Suites in WDK 8.1
 description: To make testing Windows drivers easier in the WDK, starting with WDK 8.1 you can now select HCK test suites to run on the test computers.
 ms.date: 04/20/2017
@@ -8,7 +7,7 @@ ms.localizationpriority: medium
 
 # How to run the HCK Test Suites in WDK 8.1
 
-To make testing Windows drivers easier in the WDK, starting with WDK 8.1 you can now select HCK test suites to run on the test computers. The [HCK test suites](#HCK_test_suites) include the device fundamentals tests, and tests for graphics, imaging, wireless LAN, mobile broadband (CDMA and GSM), and WiFi Direct devices. These are the same tests that are used in the Windows Hardware Certification kit (Windows HCK). See [Windows Certification Program for Hardware](https://go.microsoft.com/fwlink/p/?linkid=8705) for information about the Windows HCK.
+To make testing Windows drivers easier in the WDK, starting with WDK 8.1 you can now select HCK test suites to run on the test computers. The [HCK test suites](#HCK_test_suites) include the device fundamentals tests, and tests for graphics, imaging, wireless LAN, mobile broadband (CDMA and GSM), and WiFi Direct devices. These are the same tests that are used in the Windows Hardware Certification kit (Windows HCK). See [Windows Certification Program for Hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for information about the Windows HCK.
 
 You can run the HCK test from a Command Prompt window or from Visual Studio. In addition, you can copy these tests to a new location—which might be another computer or a USB key drive—and run the tests from that location. Launching the tests automatically sets any local configuration needed to run the tests.
 
@@ -126,7 +125,7 @@ For information about specifying test parameters, see [Device Fundamentals Test 
 
 ### <span id="HCK_devfund"></span><span id="hck_devfund"></span><span id="HCK_DEVFUND"></span>HCK Tests.Basic.Device.Device Fundamentals Test Suite
 
-Use this test suite for general reliability testing of all device types. You must follow the hardware, software, and test requirements for the HCK tests as described in the [Device.Fundamentals Reliability Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309665). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
+Use this test suite for general reliability testing of all device types. You must follow the hardware, software, and test requirements for the HCK tests as described in the [Device.Fundamentals Reliability Testing Prerequisites](/previous-versions/windows/hardware/hck/jj191690(v=vs.85)). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
 
 <table>
 <colgroup>
@@ -142,12 +141,12 @@ Use this test suite for general reliability testing of all device types. You mus
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309665" data-raw-source="[Device.Fundamentals Reliability Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309665)">Device.Fundamentals Reliability Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/jj191690(v=vs.85)" data-raw-source="[Device.Fundamentals Reliability Testing Prerequisites](/previous-versions/windows/hardware/hck/jj191690(v=vs.85))">Device.Fundamentals Reliability Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309669" data-raw-source="[DF - PNP (disable and enable) with IO Before and After (Basic)](https://go.microsoft.com/fwlink/p/?linkid=309669)">DF - PNP (disable and enable) with IO Before and After (Basic)</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=309670" data-raw-source="[DF - Sleep with IO Before and After (Basic)](https://go.microsoft.com/fwlink/p/?linkid=309670)">DF - Sleep with IO Before and After (Basic)</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/dn260411(v=vs.85)" data-raw-source="[DF - PNP (disable and enable) with IO Before and After (Basic)](/previous-versions/windows/hardware/hck/dn260411(v=vs.85))">DF - PNP (disable and enable) with IO Before and After (Basic)</a></p>
+<p><a href="/previous-versions/windows/hardware/hck/dn247481(v=vs.85)" data-raw-source="[DF - Sleep with IO Before and After (Basic)](/previous-versions/windows/hardware/hck/dn247481(v=vs.85))">DF - Sleep with IO Before and After (Basic)</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -156,7 +155,7 @@ Use this test suite for general reliability testing of all device types. You mus
 
 ### <span id="HCK_graphics"></span><span id="hck_graphics"></span><span id="HCK_GRAPHICS"></span>HCK Tests.Basic.Device.Graphics Test Suite
 
-Use this test suite to test graphics adapters or chipsets. You must follow the hardware, software, and test requirements for the HCK tests as described in the [Graphic Adapter or Chipset Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309671). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
+Use this test suite to test graphics adapters or chipsets. You must follow the hardware, software, and test requirements for the HCK tests as described in the [Graphic Adapter or Chipset Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998923(v=vs.85)). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
 
 <table>
 <colgroup>
@@ -172,11 +171,11 @@ Use this test suite to test graphics adapters or chipsets. You must follow the h
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><a href="https://go.microsoft.com/fwlink/p/?linkid=309671" data-raw-source="[Graphic Adapter or Chipset Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309671)">Graphic Adapter or Chipset Testing Prerequisites</a></td>
+<td align="left"><a href="/previous-versions/windows/hardware/hck/hh998923(v=vs.85)" data-raw-source="[Graphic Adapter or Chipset Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998923(v=vs.85))">Graphic Adapter or Chipset Testing Prerequisites</a></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><a href="https://go.microsoft.com/fwlink/p/?linkid=309672" data-raw-source="[Graphic Adapter or Chipset Tests](https://go.microsoft.com/fwlink/p/?linkid=309672)">Graphic Adapter or Chipset Tests</a></td>
+<td align="left"><a href="/previous-versions/windows/hardware/hck/hh998416(v=vs.85)" data-raw-source="[Graphic Adapter or Chipset Tests](/previous-versions/windows/hardware/hck/hh998416(v=vs.85))">Graphic Adapter or Chipset Tests</a></td>
 </tr>
 </tbody>
 </table>
@@ -185,7 +184,7 @@ Use this test suite to test graphics adapters or chipsets. You must follow the h
 
 ### <span id="HCK_imaging"></span><span id="hck_imaging"></span><span id="HCK_IMAGING"></span>HCK Tests.Basic.Device.Imaging Test Suite
 
-Use this test suite to test printers. The test suite uses tests that are part of the HCK [Device.Imaging Testing](https://go.microsoft.com/fwlink/p/?linkid=309673). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
+Use this test suite to test printers. The test suite uses tests that are part of the HCK [Device.Imaging Testing](/previous-versions/windows/hardware/hck/jj123724(v=vs.85)). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
 
 <table>
 <colgroup>
@@ -201,11 +200,11 @@ Use this test suite to test printers. The test suite uses tests that are part of
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309674" data-raw-source="[Printer Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309674)">Printer Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/jj124568(v=vs.85)" data-raw-source="[Printer Testing Prerequisites](/previous-versions/windows/hardware/hck/jj124568(v=vs.85))">Printer Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309675" data-raw-source="[Printer Tests](https://go.microsoft.com/fwlink/p/?linkid=309675)">Printer Tests</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/hh998007(v=vs.85)" data-raw-source="[Printer Tests](/previous-versions/windows/hardware/hck/hh998007(v=vs.85))">Printer Tests</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -214,7 +213,7 @@ Use this test suite to test printers. The test suite uses tests that are part of
 
 ### <span id="HCK_CDMA"></span><span id="hck_cdma"></span>HCK Tests.Basic.Device.Network.MobileBroadband.CDMA Test Suite
 
-Use this test suite to test Mobile Broadband CDMA devices. Follow the guidelines for setting up and configuring your device as described in the [Mobile Broadband Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309676). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
+Use this test suite to test Mobile Broadband CDMA devices. Follow the guidelines for setting up and configuring your device as described in the [Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85)). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
 
 <table>
 <colgroup>
@@ -230,11 +229,11 @@ Use this test suite to test Mobile Broadband CDMA devices. Follow the guidelines
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309676" data-raw-source="[Mobile Broadband Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309676)">Mobile Broadband Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/hh998960(v=vs.85)" data-raw-source="[Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85))">Mobile Broadband Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309677" data-raw-source="[CDMA Tests](https://go.microsoft.com/fwlink/p/?linkid=309677)">CDMA Tests</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/dn293733(v=vs.85)" data-raw-source="[CDMA Tests](/previous-versions/windows/hardware/hck/dn293733(v=vs.85))">CDMA Tests</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -243,7 +242,7 @@ Use this test suite to test Mobile Broadband CDMA devices. Follow the guidelines
 
 ### <span id="HCK_GSM"></span><span id="hck_gsm"></span>HCK Tests.Basic.Device.Network.MobileBroadband.GSM Test Suite
 
-Use this test suite to test Mobile Broadband GSM devices. Follow the guidelines for setting up and configuring your device as described in the [Mobile Broadband Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309676). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
+Use this test suite to test Mobile Broadband GSM devices. Follow the guidelines for setting up and configuring your device as described in the [Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85)). In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
 
 <table>
 <colgroup>
@@ -259,11 +258,11 @@ Use this test suite to test Mobile Broadband GSM devices. Follow the guidelines 
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309676" data-raw-source="[Mobile Broadband Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309676)">Mobile Broadband Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/hh998960(v=vs.85)" data-raw-source="[Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85))">Mobile Broadband Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309678" data-raw-source="[GSM Tests](https://go.microsoft.com/fwlink/p/?linkid=309678)">GSM Tests</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/dn247238(v=vs.85)" data-raw-source="[GSM Tests](/previous-versions/windows/hardware/hck/dn247238(v=vs.85))">GSM Tests</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -272,7 +271,7 @@ Use this test suite to test Mobile Broadband GSM devices. Follow the guidelines 
 
 ### <span id="HCK_WLAN"></span><span id="hck_wlan"></span>HCK Tests.Basic.Device.Network.WLAN Test Suite
 
-Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines for setting up and configuring your device as described in the [Wireless LAN (802.11) Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309679) for the HCK. In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
+Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines for setting up and configuring your device as described in the [Wireless LAN (802.11) Testing Prerequisites](/previous-versions/windows/hardware/hck/jj123847(v=vs.85)) for the HCK. In place of the HCK Studio and HCK controller, you run the basic tests using Visual Studio and WDK 8.1.
 
 <table>
 <colgroup>
@@ -288,11 +287,11 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309679" data-raw-source="[Wireless LAN (802.11) Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=309679)">Wireless LAN (802.11) Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/jj123847(v=vs.85)" data-raw-source="[Wireless LAN (802.11) Testing Prerequisites](/previous-versions/windows/hardware/hck/jj123847(v=vs.85))">Wireless LAN (802.11) Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309680" data-raw-source="[WLAN L1 Tests](https://go.microsoft.com/fwlink/p/?linkid=309680)">WLAN L1 Tests</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/dn247288(v=vs.85)" data-raw-source="[WLAN L1 Tests](/previous-versions/windows/hardware/hck/dn247288(v=vs.85))">WLAN L1 Tests</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -303,6 +302,6 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 * [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
-* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
-* [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893)
+* [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
+* [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_InstanceId
 description: DEVPKEY_Device_InstanceId
-ms.assetid: 74c78289-e140-46da-8005-ef6f441f78ec
 keywords: ["DEVPKEY_Device_InstanceId Device and Driver Installation"]
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Remarks
 
 The value of DEVPKEY_Device_InstanceId is set internally by Windows during the installation of a device instance.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_InstanceId for a device instance.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_InstanceId for a device instance.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_InstanceId property key. For information about how to retrieve a device instance identifier on these earlier versions of Windows, see [Retrieving a Device Instance Identifier](./retrieving-a-device-instance-identifier.md).
 
@@ -72,9 +71,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceInstanceId**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida)
+[**SetupDiGetDeviceInstanceId**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

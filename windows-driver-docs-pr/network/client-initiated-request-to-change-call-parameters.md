@@ -1,7 +1,6 @@
 ---
 title: Client-Initiated Request to Change Call Parameters
 description: Client-Initiated Request to Change Call Parameters
-ms.assetid: 1534dbf9-3ee0-490a-9633-55827ffbcb1a
 keywords:
 - call parameter changes WDK CoNDIS
 - client-initiated call parameter changes WDK CoNDIS

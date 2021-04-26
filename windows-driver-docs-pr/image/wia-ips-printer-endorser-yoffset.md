@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_YOFFSET
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_YOFFSET property is used to configure the vertical coordinate, in thousandths of an inch (0.001 \ 0034;), of the top-left corner of the imprinting/endorsing region, relative to the top-left corner of the physical document to be scanned and imprinted/endorsed. The WIA minidriver creates and maintains this property.
-ms.assetid: C04A4EAC-237A-44D6-AB05-CD561DA72CE8
 keywords: ["WIA_IPS_PRINTER_ENDORSER_YOFFSET Imaging Devices"]
 topic_type:
 - apiref

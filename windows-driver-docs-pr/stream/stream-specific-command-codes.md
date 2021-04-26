@@ -1,7 +1,6 @@
 ---
 title: Stream-Specific Command Codes
 description: Stream-Specific Command Codes
-ms.assetid: b57a1449-6e7a-404a-a513-29a02363c268
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for SR-IOV
 description: Standardized INF Keywords for SR-IOV
-ms.assetid: 5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -170,7 +169,7 @@ The type of the data value.
 <td align="left"><p>REG_DWORD</p></td>
 <td align="left"><p><em>n</em> is the maximum number of PCIe Virtual Functions (VFs) that are supported by the SR-IOV network adapter.</p>
 <div class="alert">
-<strong>Note</strong>  This registry key defines the maximum number of VFs that the network adapter supports. When the miniport driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes" data-raw-source="[&lt;strong&gt;NdisMSetMiniportAttributes&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)"><strong>NdisMSetMiniportAttributes</strong></a>, it can advertise less than this value depending on the available hardware resources on the network adapter. For more information, see <a href="determining-nic-switch-capabilities.md" data-raw-source="[Determining NIC Switch Capabilities](determining-nic-switch-capabilities.md)">Determining NIC Switch Capabilities</a>.
+<strong>Note</strong>  This registry key defines the maximum number of VFs that the network adapter supports. When the miniport driver calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes" data-raw-source="[&lt;strong&gt;NdisMSetMiniportAttributes&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)"><strong>NdisMSetMiniportAttributes</strong></a>, it can advertise less than this value depending on the available hardware resources on the network adapter. For more information, see <a href="determining-nic-switch-capabilities.md" data-raw-source="[Determining NIC Switch Capabilities](determining-nic-switch-capabilities.md)">Determining NIC Switch Capabilities</a>.
 </div>
 <div>
  
@@ -191,6 +190,4 @@ HKR, NicSwitches\0, *SwitchName, 0x00000000, “Default Switch”
 For more information about the syntax of the **AddReg** directive, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 For more information about the default NIC switch, see [NIC Switches](nic-switches.md).
-
- 
 

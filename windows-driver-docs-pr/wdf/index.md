@@ -94,7 +94,7 @@ The rest of this page describes functionality that was added in Windows 10, vers
 ## Automatic Source Level Debugging of Framework Code
 
 
-When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [New support for source-level debugging of WDF code in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=618534), [Debugging with WDF Source](https://go.microsoft.com/fwlink/p/?LinkId=618535), and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
+When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [Debugging with WDF Source](https://go.microsoft.com/fwlink/p/?LinkId=618535) and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
 
 ## Universal Driver Compliance
 
@@ -139,7 +139,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
 You can use the Windows Performance Toolkit (WPT) to view performance data for a given KMDF or UMDF 2 driver. When tracing is enabled, the framework generates ETW events for I/O, PnP, and Power callback paths. You can then view graphs in the Windows Performance Analyzer (WPA) that show I/O throughput rates, CPU utilization, and callback performance. The WPT is included in the Windows Assessment and Deployment Kit (ADK).
 
-For more information, see [New Performance Tools for WDF Drivers in Windows 10]( https://go.microsoft.com/fwlink/p/?LinkId=618537) and [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
+For more information, see [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
 
 ## Additional support for HID drivers in UMDF
 

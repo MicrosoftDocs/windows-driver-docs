@@ -1,7 +1,6 @@
 ---
 title: FLT_FILE_NAME_OPTIONS
 description: FLT\_FILE\_NAME\_OPTIONS
-ms.assetid: 6e21c11e-d2c8-4c57-8225-1fbc365cbbac
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

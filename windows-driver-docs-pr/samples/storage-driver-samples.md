@@ -1,7 +1,6 @@
 ---
 title: Storage driver samples
 description: The storage driver samples in this directory provide a starting point for writing a custom driver for your device.
-ms.assetid: 4FEB911D-78D5-403E-91AB-8A064E31F4FA
 ms.date: 12/02/2019
 ms.localizationpriority: medium
 ---

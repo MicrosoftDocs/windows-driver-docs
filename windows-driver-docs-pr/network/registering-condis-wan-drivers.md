@@ -1,7 +1,6 @@
 ---
 title: Registering CoNDIS WAN Drivers
 description: Registering CoNDIS WAN Drivers
-ms.assetid: e699d1b0-9dbd-4845-b8e3-e83da20e997c
 keywords:
 - CoNDIS WAN drivers WDK networking , registering
 - NdisMRegisterMiniportDriver
@@ -32,7 +31,7 @@ NDIS 6.0 and later drivers must register CoNDIS callback functions as follows:
 
 -   To register its CoNDIS *ProtocolXxx* functions, a client or call managers must call the [**NdisSetOptionalHandlers**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers) function from its [*ProtocolSetOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-set_options) function and must provide an [**NDIS\_PROTOCOL\_CO\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_co_characteristics) structure. Clients must also provide an [**NDIS\_CO\_CLIENT\_OPTIONAL\_HANDLERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_co_client_optional_handlers) structure and call managers must also provide an [**NDIS\_CO\_CALL\_MANAGER\_OPTIONAL\_HANDLERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_co_call_manager_optional_handlers) structure.
 
-For more information about CoNDIS driver registration, see [CoNDIS Registration](condis-registration.md).
+For more information about CoNDIS driver registration, see [CoNDIS Registration](condis-miniport-driver-registration.md).
 
 .
 

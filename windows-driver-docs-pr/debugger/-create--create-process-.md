@@ -1,7 +1,6 @@
 ---
 title: .create (Create Process)
 description: The .create command creates a new target application.
-ms.assetid: 9e34eadf-1f68-4eec-ad6b-d70163d5d876
 keywords: [".create (Create Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

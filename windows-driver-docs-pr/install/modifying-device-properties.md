@@ -1,7 +1,6 @@
 ---
 title: Rules for Modifying Device Properties
 description: Rules for Modifying Device Properties
-ms.assetid: EB554B5C-310A-4b2c-A2D5-22A113415400
 keywords:
 - device properties WDK device installations , rules for modifying
 - device properties WDK device installations , modifying
@@ -17,7 +16,7 @@ Many [device properties](device-properties.md) have complex dependencies on othe
 
 Direct modification of reserved properties could invalidate device installation state. For example, if the [**DEVPKEY_Device_DeviceDesc**](./devpkey-device-devicedesc.md) is changed, system functionality (such as backup, driver rollback, and Windows Update) could break.
 
-The following properties are read-only and can never be set with [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw):
+The following properties are read-only and can never be set with [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw):
 
 -   [**DEVPKEY_Device_Address**](./devpkey-device-address.md)
 

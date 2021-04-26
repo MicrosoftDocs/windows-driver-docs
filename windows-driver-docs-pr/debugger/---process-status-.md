@@ -1,7 +1,6 @@
 ---
 title: (Process Status)
 description: The pipe ( ) command displays status for the specified process, or for all processes that you are currently debugging.Do not confuse this command with the (System Status) command.
-ms.assetid: 78f53049-e949-4431-b6b1-0710da047ced
 keywords: ["(Process Status) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

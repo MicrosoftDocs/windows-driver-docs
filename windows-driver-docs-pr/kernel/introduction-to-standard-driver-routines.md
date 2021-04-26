@@ -1,7 +1,6 @@
 ---
 title: Introduction to Standard Driver Routines
 description: Introduction to Standard Driver Routines
-ms.assetid: 91aaca02-a571-4058-b5af-98277fcbcf9d
 keywords: ["standard driver routines WDK kernel , about standard driver routines", "driver routines WDK kernel , about standard driver routines", "routines WDK kernel , about standard driver routines", "IRPs WDK kernel , standard driver routines", "required standard routines WDK kernel", "optional standard routines WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -38,17 +37,17 @@ Following are two tables. The first table lists required standard routines. The 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize">DriverEntry</a></strong></p></td>
+<td><p><strong><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize">DriverEntry</a></strong></p></td>
 <td><p>Initializes the driver and its driver object.</p></td>
 <td><p><a href="writing-a-driverentry-routine.md" data-raw-source="[Writing a DriverEntry Routine](writing-a-driverentry-routine.md)">Writing a DriverEntry Routine</a></p></td>
 </tr>
 <tr class="even">
-<td><p><em><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device">AddDevice</a></em></p></td>
+<td><p><em><a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device">AddDevice</a></em></p></td>
 <td><p>Initializes devices and creates device objects.</p></td>
 <td><p><a href="writing-an-adddevice-routine.md" data-raw-source="[Writing an AddDevice Routine](writing-an-adddevice-routine.md)">Writing an AddDevice Routine</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchcreate--dispatchclose--and-dispatchcreateclose-routines">Dispatch Routines</a></p></td>
+<td><p><a href="/windows-hardware/drivers/kernel/dispatchcreate--dispatchclose--and-dispatchcreateclose-routines">Dispatch Routines</a></p></td>
 <td><p>Receive and process IRPs.</p></td>
 <td><p><a href="writing-dispatch-routines.md" data-raw-source="[Writing Dispatch Routines](writing-dispatch-routines.md)">Writing Dispatch Routines</a></p></td>
 </tr>
@@ -94,7 +93,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="even">
 <td><p>Deferred Procedure Calls</p></td>
 <td><p>Completes the processing of a device interrupt after an ISR saves the device state.</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-dpc-objects">DPC Objects and DPCs</a></p></td>
+<td><p><a href="/windows-hardware/drivers/kernel/introduction-to-dpc-objects">DPC Objects and DPCs</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><em>SynchCritSection</em></p></td>
@@ -104,7 +103,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="even">
 <td><p><em>AdapterControl</em></p></td>
 <td><p>Initiates DMA operations.</p></td>
-<td><p><a href="adapter-objects-and-dma.md" data-raw-source="[Adapter Objects and DMA](./introduction-to-adapter-objects.md)">Adapter Objects and DMA</a></p></td>
+<td><p><a href="/windows-hardware/drivers/kernel/introduction-to-adapter-objects" data-raw-source="[Adapter Objects and DMA](./introduction-to-adapter-objects.md)">Adapter Objects and DMA</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><em>IoCompletion</em></p></td>
@@ -119,7 +118,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="odd">
 <td><p><em>CustomTimerDpc</em>, <em>IoTimer</em></p></td>
 <td><p>Timing and synchronizing events.</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects">Synchronization Techniques</a></p></td>
+<td><p><a href="/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects">Synchronization Techniques</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -129,6 +128,4 @@ Following are two tables. The first table lists required standard routines. The 
 The current IRP and target device object are input parameters to many standard routines. Every driver processes each IRP in stages through its set of standard routines.
 
 By convention, the system-supplied drivers prepend an identifying, driver-specific or device-specific prefix to the name of every standard routine except **DriverEntry**. As an example, this documentation uses "DD", as shown in the illustration in [Introduction to Driver Objects](introduction-to-driver-objects.md). Following this convention makes it easier to debug and maintain drivers.
-
- 
 

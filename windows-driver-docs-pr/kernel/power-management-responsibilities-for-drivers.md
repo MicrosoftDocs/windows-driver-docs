@@ -1,7 +1,6 @@
 ---
 title: Power Management Responsibilities for Drivers
 description: Power Management Responsibilities for Drivers
-ms.assetid: c42a5b95-76f3-4975-b452-4858bbbe532e
 keywords: ["power management WDK kernel , driver responsibilities", "driver power responsibilities WDk kernel", "conserving power WDK kernel", "power management WDK kernel , power states", "power states WDK kernel", "states WDK power management", "system power states WDK kernel , power management", "device power states WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

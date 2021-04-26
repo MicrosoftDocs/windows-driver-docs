@@ -1,7 +1,6 @@
 ---
 title: About WIA properties
 description: About WIA properties
-ms.assetid: 3f8cc03d-9bc2-4f2b-bccb-f055049a3d4c
 ms.date: 07/09/2018
 ms.localizationpriority: medium
 ---

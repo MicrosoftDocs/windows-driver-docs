@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_VIDEO_ENCODER
 description: KSMFT_CATEGORY_VIDEO_ENCODER
-ms.assetid: aa3725c0-a393-4100-acd5-d8776322b82a
 keywords: ["KSMFT_CATEGORY_VIDEO_ENCODER Device and Driver Installation"]
 topic_type:
 - apiref

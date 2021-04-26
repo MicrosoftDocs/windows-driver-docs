@@ -1,7 +1,6 @@
 ---
 title: Creating a sensor driver
 description: Creating a sensor driver
-ms.assetid: 7a1cea3c-d542-47e9-90f9-18bae4969b9f
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Creating a sensor driver
 
 
-If your sensor uses HID we recommend that rather than creating a driver, you use the inbox HID class driver. If your sensor uses a transport other than HID, you should start with either the [Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample) or the SpbAccelerometer sample.
+If your sensor uses HID we recommend that rather than creating a driver, you use the inbox HID class driver. If your sensor uses a transport other than HID, you should start with either the [Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md) or the SpbAccelerometer sample.
 
 These samples provide basic working implementations for the classes and COM interfaces required by a sensor driver. The following procedure shows the steps that you should follow to create a driver from the samples:
 
@@ -17,7 +16,7 @@ These samples provide basic working implementations for the classes and COM inte
 
 2.  Add a class to handle communication with your device hardware, or with the software data provider if your sensor is a logical sensor.
 
-3.  Add support for events, as needed. You have to write code to create a thread to raise events at a particular time interval. You also have to update the implementation for [**ISensorDriver::OnGetSupportedEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedevents) in SensorDdi.cpp to report the list of events that the driver can raise.
+3.  Add support for events, as needed. You have to write code to create a thread to raise events at a particular time interval. You also have to update the implementation for [**ISensorDriver::OnGetSupportedEvents**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedevents) in SensorDdi.cpp to report the list of events that the driver can raise.
 
 4.  Remove any code that is not needed.
 
@@ -48,7 +47,7 @@ To install your driver for testing, follow these steps:
 
      
 
-If your driver cannot be installed, it is likely that one of the methods in step 2 returned an error code. To debug this problem, you must attach a debugger during installation. For information about how to debug UMDF drivers during loading, see [Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails).
+If your driver cannot be installed, it is likely that one of the methods in step 2 returned an error code. To debug this problem, you must attach a debugger during installation. For information about how to debug UMDF drivers during loading, see [Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start](../wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails.md).
 
 You should also verify that the class ID that you provided in the INF file matches the **GUID** that you used in the IDL file for the driver's coclass.
 
@@ -73,7 +72,4 @@ You may have to uninstall the driver during testing, for example when you want t
 5.  Click **OK**.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

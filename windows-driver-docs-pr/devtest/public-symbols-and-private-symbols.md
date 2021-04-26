@@ -1,7 +1,6 @@
 ---
 title: Public Symbols and Private Symbols
 description: Public Symbols and Private Symbols
-ms.assetid: 83979008-f9ea-4976-8acd-d7efb82947cd
 keywords:
 - BinPlace WDK , public symbols
 - BinPlace WDK , private symbols

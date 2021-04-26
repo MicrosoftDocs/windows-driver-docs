@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_BaseContainerId
 description: DEVPKEY_Device_BaseContainerId
-ms.assetid: ccc20b78-60a3-4351-9809-e2a285ad0a19
 keywords: ["DEVPKEY_Device_BaseContainerId Device and Driver Installation"]
 topic_type:
 - apiref
@@ -117,7 +116,7 @@ Requirements
 
 [**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

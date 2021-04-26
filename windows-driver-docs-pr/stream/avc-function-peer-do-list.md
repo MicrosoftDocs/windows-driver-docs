@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_PEER\_DO\_LIST
 description: AVC\_FUNCTION\_PEER\_DO\_LIST
-ms.assetid: 80ffd94e-788f-4874-b716-3eb66d90e4aa
 keywords: ["AVC_FUNCTION_PEER_DO_LIST Streaming Media Devices"]
 topic_type:
 - apiref

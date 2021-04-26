@@ -1,7 +1,6 @@
 ---
 title: Label Token
 description: Label Token
-ms.assetid: 29b2b4b1-c599-4bea-9d83-3a10eedac4a6
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

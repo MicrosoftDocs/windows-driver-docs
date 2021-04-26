@@ -1,7 +1,6 @@
 ---
 title: TVOT\_LISTBOX
 description: TVOT\_LISTBOX
-ms.assetid: 2426ae5a-33e6-4f16-ad49-ff38ea19e392
 keywords: ["TVOT_LISTBOX Print Devices"]
 topic_type:
 - apiref

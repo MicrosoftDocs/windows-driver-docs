@@ -1,7 +1,6 @@
 ---
 title: Optional WIA Item Properties for Film Scanners
 description: Optional WIA Item Properties for Film Scanners
-ms.assetid: 6c17deed-7840-4ec0-bc19-d695b3e80c38
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

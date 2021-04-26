@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_UNIQUE\_ID
 description: AVC\_FUNCTION\_GET\_UNIQUE\_ID
-ms.assetid: 51b35686-03a9-45b3-8bdc-14cbd24714dc
 keywords: ["AVC_FUNCTION_GET_UNIQUE_ID Streaming Media Devices"]
 topic_type:
 - apiref

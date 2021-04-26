@@ -1,7 +1,6 @@
 ---
 title: WSK_SET_STATIC_EVENT_CALLBACKS
 description: WSK_SET_STATIC_EVENT_CALLBACKS
-ms.assetid: fa95bc7d-c7b2-4cca-a419-ef5eb2520976
 ms.date: 07/18/2017
 keywords:
  - WSK_SET_STATIC_EVENT_CALLBACKS Network Drivers Starting with Windows Vista
@@ -39,7 +38,7 @@ To automatically enable certain event callback functions on every socket it crea
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure that specifies the desired event callback functions to be automatically enabled</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_event_callback_control)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure that specifies the desired event callback functions to be automatically enabled</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -87,6 +86,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

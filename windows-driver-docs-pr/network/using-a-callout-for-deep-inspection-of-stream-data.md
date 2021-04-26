@@ -1,7 +1,6 @@
 ---
 title: Using a Callout for Deep Inspection of Stream Data
 description: Using a Callout for Deep Inspection of Stream Data
-ms.assetid: 433d2d9a-c95e-4315-8678-8614791cd529
 keywords:
 - classify callouts WDK Windows Filtering Platform , deep inspection
 - deep inspection WDK Windows Filtering Platform
@@ -129,9 +128,9 @@ VOID NTAPI
 }
 ```
 
-The value in *filter-&gt;action.type* determines which actions the callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function should return in the **actionType** member of the structure pointed to by the *classifyOut* parameter. For more information about these actions, see the [**FWPS\_ACTION0**](/windows/desktop/api/fwpstypes/ns-fwpstypes-fwps_action0_) structure.
+The value in *filter-&gt;action.type* determines which actions the callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function should return in the **actionType** member of the structure pointed to by the *classifyOut* parameter. For more information about these actions, see the [**FWPS\_ACTION0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_action0) structure.
 
-For more information about packet and stream data inspection, see [Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md).
+For more information about packet and stream data inspection, see [Inspecting Packet and Stream Data](packet-inspection-points.md).
 
  
 

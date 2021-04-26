@@ -1,7 +1,6 @@
 ---
 title: Hardware Resources for Kernel-Mode SPB Peripheral Drivers
 description: Code examples for a KMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
-ms.assetid: ABFFCBEC-16AB-44AF-BEF6-34AEE612EAF7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -106,7 +105,7 @@ if (!NT_SUCCESS(status))
 }
 ```
 
-In the preceding code example, the **DECLARE\_UNICODE\_STRING\_SIZE** macro creates the declaration of an initialized [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) variable named `szDeviceName` that has a buffer large enough to contain a device path name in the format used by the resource hub. This macro is defined in the Ntdef.h header file. The **RESOURCE\_HUB\_PATH\_SIZE** constant specifies the number of bytes in the device path name. The **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** macro generates the device path name from the connection ID. **RESOURCE\_HUB\_PATH\_SIZE** and **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** are defined in the Reshub.h header file.
+In the preceding code example, the **DECLARE\_UNICODE\_STRING\_SIZE** macro creates the declaration of an initialized [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) variable named `szDeviceName` that has a buffer large enough to contain a device path name in the format used by the resource hub. This macro is defined in the Ntdef.h header file. The **RESOURCE\_HUB\_PATH\_SIZE** constant specifies the number of bytes in the device path name. The **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** macro generates the device path name from the connection ID. **RESOURCE\_HUB\_PATH\_SIZE** and **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** are defined in the Reshub.h header file.
 
 The following code example uses the device path name to open a file handle (named `SpbIoTarget`) to the SPB-connected peripheral device.
 
@@ -174,6 +173,4 @@ The preceding code example does the following:
 3.  The call to the **WdfIoTargetSendWriteSynchronously** method sends the write request to the SPB-connected peripheral device. The method returns synchronously, after the write operation completes or times out. If necessary, another driver thread can call [**WdfRequestCancelSentRequest**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcancelsentrequest) to cancel the request.
 
 In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variable named `SpbRequest`, which is a handle to a framework request object that the driver previously created. After the **WdfIoTargetSendWriteSynchronously** call, the driver should typically call the [**WdfRequestReuse**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestreuse) method to prepare the framework request object to be used again.
-
- 
 

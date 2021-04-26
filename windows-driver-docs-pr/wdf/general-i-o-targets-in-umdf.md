@@ -1,7 +1,6 @@
 ---
 title: General I/O Targets in UMDF
 description: General I/O Targets in UMDF
-ms.assetid: 46fac165-3afd-4481-b68d-8d3474e0ff52
 keywords:
 - general I/O targets WDK UMDF
 - I/O targets WDK UMDF , general

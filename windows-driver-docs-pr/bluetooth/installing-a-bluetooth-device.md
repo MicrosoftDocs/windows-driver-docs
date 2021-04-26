@@ -1,7 +1,6 @@
 ---
 title: Installing a Bluetooth Device
 description: Installing a Bluetooth Device
-ms.assetid: 2bf2b2df-260c-42a5-9ee9-6db91f304036
 keywords:
 - Bluetooth WDK , bluetooth driver installations
 - client-side profile drivers WDK Bluetooth
@@ -51,7 +50,7 @@ A user-mode installation application must be written to expose computer function
 
 The installation application must communicate with the Bluetooth driver stack to create a service GUID for the functionality to expose. Vendors specify the service GUID in the application and in their device installation INF file.
 
-The installation application must call the user-mode API [BluetoothSetLocalServiceInfo](https://docs.microsoft.com/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo). Before the application can call this API the application must have the SE\_LOAD\_DRIVER\_NAME security privilege. The following code example demonstrates how to obtain this privilege. **Note** that the example does not demonstrate error handling.
+The installation application must call the user-mode API [BluetoothSetLocalServiceInfo](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo). Before the application can call this API the application must have the SE\_LOAD\_DRIVER\_NAME security privilege. The following code example demonstrates how to obtain this privilege. **Note** that the example does not demonstrate error handling.
 
 ```cpp
 HANDLE procToken;
@@ -73,7 +72,7 @@ AdjustTokenPrivileges(procToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES), (PTOKEN_P
 
 A profile driver's INF file contains information about a Bluetooth device for client-side installation. For a server-side installation, the INF file specifies a device ID that corresponds to the service GUID created by the installation application. All Bluetooth devices are members of the **Bluetooth** class. The Bluetooth class installer (*Bthci.dll*) assists in installing profile drivers.
 
-For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md).
 
 ### Plug and Play IDs
 

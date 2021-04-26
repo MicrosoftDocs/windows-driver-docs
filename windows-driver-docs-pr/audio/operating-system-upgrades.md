@@ -1,7 +1,6 @@
 ---
 title: Operating System Upgrades
 description: Operating System Upgrades
-ms.assetid: f985967e-e6cf-431a-bb7e-7b6d8486709c
 keywords:
 - audio adapters WDK , operating system upgrades
 - adapter drivers WDK audio , operating system upgrades

@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
 description: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
-ms.assetid: 72afc856-8232-492f-b8d2-4e88dd9fe723
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

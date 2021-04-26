@@ -1,7 +1,6 @@
 ---
 title: Querying TV Connector and Copy Protection Hardware
 description: Querying TV Connector and Copy Protection Hardware
-ms.assetid: 7812a3ba-42f1-4872-bfe8-08933802f0c1
 keywords:
 - TV connector WDK video miniport
 - copy protection WDK video miniport , querying
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_querying_tv_connector_and_copy_protection_hardware_gg"></span><span id="DDK_QUERYING_TV_CONNECTOR_AND_COPY_PROTECTION_HARDWARE_GG"></span>
 
 
-A video miniport driver for an adapter that has a TV connector must process the [**IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS**](/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_handle_videoparameters) request in its [*HwVidStartIO*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_start_io) function. When the IOCTL request is IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS, the **InputBuffer** member of the [**VIDEO\_REQUEST\_PACKET**](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) structure points to a [**VIDEOPARAMETERS**](/windows/desktop/api/tvout/ns-tvout-_videoparameters) structure. The **dwCommand** member of that VIDEOPARAMETERS structure specifies whether the miniport driver must provide information about the TV connector (VP\_COMMAND\_GET) or apply specified settings to the TV connector (VP\_COMMAND\_SET).
+A video miniport driver for an adapter that has a TV connector must process the [**IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS**](/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_handle_videoparameters) request in its [*HwVidStartIO*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_start_io) function. When the IOCTL request is IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS, the **InputBuffer** member of the [**VIDEO\_REQUEST\_PACKET**](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) structure points to a [**VIDEOPARAMETERS**](/windows/win32/api/tvout/ns-tvout-videoparameters) structure. The **dwCommand** member of that VIDEOPARAMETERS structure specifies whether the miniport driver must provide information about the TV connector (VP\_COMMAND\_GET) or apply specified settings to the TV connector (VP\_COMMAND\_SET).
 
 When the **dwCommand** member of the VIDEOPARAMETERS structure is VP\_COMMAND\_GET, the miniport driver must do the following:
 
@@ -23,7 +22,7 @@ When the **dwCommand** member of the VIDEOPARAMETERS structure is VP\_COMMAND\_G
 
 -   For each capability that the TV connector supports, set the corresponding flag in the **dwFlags** member of the VIDEOPARAMETERS structure.
 
--   For each flag set in the **dwFlags** member, assign values to the corresponding members of the VIDEOPARAMETERS structure to indicate the capabilities and current settings associated with that flag. See the [**VIDEOPARAMETERS**](/windows/desktop/api/tvout/ns-tvout-_videoparameters) reference page for a list of structure members that correspond to a given flag.
+-   For each flag set in the **dwFlags** member, assign values to the corresponding members of the VIDEOPARAMETERS structure to indicate the capabilities and current settings associated with that flag. See the [**VIDEOPARAMETERS**](/windows/win32/api/tvout/ns-tvout-videoparameters) reference page for a list of structure members that correspond to a given flag.
 
 The **dwMode** member of the VIDEOPARAMETERS structure specifies whether the TV output is optimized for video playback or for displaying the Windows desktop. A value of VIDEO\_MODE\_TV\_PLAYBACK specifies that the TV output is optimized for video playback (that is, flicker filter is disabled and overscan is enabled). A value of VIDEO\_MODE\_WIN\_GRAPHICS specifies that the TV output is optimized for Windows graphics (that is, maximum flicker filter is enabled and overscan is disabled).
 

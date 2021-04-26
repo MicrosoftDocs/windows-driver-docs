@@ -1,7 +1,6 @@
 ---
 title: JobState element
 description: The required JobState element specifies the current state of the job.
-ms.assetid: 7198feea-ce6c-4827-a3b4-c248c6f62e37
 keywords: ["JobState element Imaging Devices"]
 topic_type:
 - apiref

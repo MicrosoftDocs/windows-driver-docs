@@ -1,7 +1,6 @@
 ---
 title: Splitting IPsec Frames
 description: Splitting IPsec Frames
-ms.assetid: 2d6841f2-6eb6-4c59-80fb-5c777fa2bf56
 keywords:
 - Ethernet frame splitting WDK networking , IPsec frames
 - IPsec frame splitting WDK networking

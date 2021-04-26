@@ -1,7 +1,6 @@
 ---
 title: ndiskd.netring
 description: The ndiskd.netring extension displays information about a NET_PACKET_FRAGMENT structure.
-ms.assetid: 342AFF9B-2DC2-4650-8787-DEC70753ABDE
 keywords: ["ndiskd.netring Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:

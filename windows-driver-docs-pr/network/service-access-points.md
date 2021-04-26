@@ -1,7 +1,6 @@
 ---
 title: Service Access Points
 description: Service Access Points
-ms.assetid: a6fab686-6adb-4d77-8f0d-2b48e2e49f1f
 keywords:
 - incoming calls WDK CoNDIS
 - connection-oriented NDIS WDK , service access points

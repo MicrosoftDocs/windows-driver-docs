@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_SEND_REQUEST_ACTION_FRAME_COMPLETE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_SEND_REQUEST_ACTION_FRAME_COMPLETE to indicate information about the Request Action frame sent by OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME.
-ms.assetid: 4c67b512-456f-48ed-bd1c-71a32bcf85f0
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_SEND_REQUEST_ACTION_FRAME_COMPLETE Network Drivers Starting with Windows Vista

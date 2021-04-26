@@ -1,7 +1,6 @@
 ---
 title: Initializing a Callout Driver
 description: Initializing a Callout Driver
-ms.assetid: c9fbc3d9-fcb9-4087-a3d9-d97c64711305
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

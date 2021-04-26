@@ -1,7 +1,6 @@
 ---
 title: WDI transmit operations and offloads
 description: WDI operates in one of two Tx modes Port queuing and PeerTID queuing.
-ms.assetid: 9ADBDAD5-4AFA-4AFA-A829-96EB28CEBAA1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The following is a list of TX operations and offloads.
 <td align="left"><p>Checksum, LSO.</p></td>
 <td align="left"><p>Checksum is a configurable offload at boot-up. Each frame has flags to specify the applicable checksum operations.</p>
 <p>WDI handles LSO segmentation transparently from the TAL/Target if applicable.</p></td>
-<td align="left"><p>Checksum: The target passes to WDI its checksum offload capabilities as part of device caps during bringup. For capability information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_CHECKSUM_OFFLOAD&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)"><strong>NDIS_TCP_IP_CHECKSUM_OFFLOAD</strong></a>.</p>
+<td align="left"><p>Checksum: The target passes to WDI its checksum offload capabilities as part of device caps during bringup. For capability information, see <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_CHECKSUM_OFFLOAD&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)"><strong>NDIS_TCP_IP_CHECKSUM_OFFLOAD</strong></a>.</p>
 <p>WDI handles LSO segmentation transparently from the TAL/Target if applicable.</p></td>
 </tr>
 <tr class="even">
@@ -164,6 +163,4 @@ The network data is submitted in 802.11 packet format to the port (target device
 [**WDI\_TLV\_CONNECTION\_SETTINGS**](./wdi-tlv-connection-settings.md)
 
 [**WDI\_TXRX\_CAPABILITIES**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities)
-
- 
 

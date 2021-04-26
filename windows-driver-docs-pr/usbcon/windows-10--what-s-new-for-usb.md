@@ -18,7 +18,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
     Windows 10 version 1703 provides a class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. 
     The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. 
 
-    [USB Type-C Port Controller Interface driver class extensions reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt805826(v=vs.85))
+    [USB Type-C Port Controller Interface driver class extensions reference](/previous-versions/windows/hardware/drivers/mt805826(v=vs.85))
 
 -   **USB Dual Role support.**
 
@@ -28,7 +28,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)
 
-    [USB dual-role controller driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
+    [USB dual-role controller driver programming reference](/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
 
 -   **New set of programming interfaces for developing a USB Type-C connector driver.**
 
@@ -36,7 +36,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)
 
-    [USB connector manager class extension (UcmCx)](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188011(v=vs.85))
+    [USB connector manager class extension (UcmCx)](/previous-versions/windows/hardware/drivers/mt188011(v=vs.85))
 
 -   **New set of programming interfaces for developing an emulated host controller and a connected virtual device.**
 
@@ -44,15 +44,15 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)
 
-    [Emulated USB host controller driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt628025(v=vs.85))
+    [Emulated USB host controller driver programming reference](/previous-versions/windows/hardware/drivers/mt628025(v=vs.85))
 
 -   **New set of programming interfaces for developing a USB host controller driver.**
 
-    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ddi/index#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
+    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](/windows-hardware/drivers/ddi/index#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
 
     [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
 
-    [USB host controller extension (UCX) reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188009(v=vs.85))
+    [USB host controller extension (UCX) reference](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85))
 
 -   **New set of programming interfaces for developing a USB function controller driver.**
 
@@ -64,13 +64,13 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [Tasks for a function controller client driver](function-client-driver.md)
 
-    [User mode services to UFX programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+    [User mode services to UFX programming reference](/windows-hardware/drivers/ddi/ufxclient)
 
-    [USB function class driver to UFX programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188008(v=vs.85))
+    [USB function class driver to UFX programming reference](/previous-versions/windows/hardware/drivers/mt188008(v=vs.85))
 
-    [USB function controller client driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
+    [USB function controller client driver programming reference](/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
 
-    [USB filter driver for supporting proprietary chargers](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188012(v=vs.85))
+    [USB filter driver for supporting proprietary chargers](/previous-versions/windows/hardware/drivers/mt188012(v=vs.85))
 
 -   **Improved experience for USB CDC (serial) devices.**
 
@@ -79,9 +79,4 @@ This topic highlights the new features and improvements for Universal Serial Bus
     [USB serial driver (Usbser.sys)](usb-driver-installation-based-on-compatible-ids.md)
 
  
-
- 
-
-
-
 

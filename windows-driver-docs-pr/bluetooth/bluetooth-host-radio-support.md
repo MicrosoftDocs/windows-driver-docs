@@ -1,6 +1,5 @@
 ---
 title: Bluetooth host radio support
-ms.assetid: 7AA53797-F8DC-4FA6-9A19-E20289AF50CA
 description: Provides a list of questions and answers about Bluetooth host radio support in Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -12,14 +11,14 @@ This topic provides answers to typical questions about Bluetooth Radio support.
 
 ## Bluetooth host controllers supported in Windows
 
-With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_bltooth/) for more information.
+With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](/windows-hardware/drivers/ddi/_bltooth/) for more information.
 
 ## Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)
 
 A new Bluetooth radio might not match any of the device IDs in the Bluetooth INF (Bth.inf) that is included with Windows. This prevents Windows from loading a Bluetooth stack for the device. IHVs should ensure that their radio works with the native Bluetooth stack in one of the following ways:
 
 * Create an INF for the radio that references Bth.inf. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
-* Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
+* Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 * Force the Bluetooth stack to load
 
 The following procedure uses Device Manager to force the Bluetooth stack to load for a new radio:
@@ -34,7 +33,7 @@ For a detailed description of this procedure, see [Appendix A: How to Install an
 
 IHVs should take the following steps to ensure that their Bluetooth radios have in box support on Windows:
 
-* Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-1-0-descriptors-specification).
+* Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](../usbcon/microsoft-os-1-0-descriptors-specification.md).
 * Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
 * Use the Partner Center to make the INF file available through Windows Update
 
@@ -96,7 +95,7 @@ If IHVs do not want Windows to automatically generate a PDO for their device, th
 
 ## How Group Policy can block Bluetooth radio installation
 
-For details on how to use Group Policy to block the installation of Bluetooth radios, see the “Prevent installation of prohibited devices” section of [Step-by-Step Guide to Controlling Device Installation and Usage with Group Policy](https://go.microsoft.com/fwlink/p/?linkid=324335).
+For details on how to use Group Policy to block the installation of Bluetooth radios, see the “Prevent installation of prohibited devices” section of [Step-by-Step Guide to Controlling Device Installation and Usage with Group Policy](/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
 
 Use the following compatible IDs for the Bluetooth radio:
 

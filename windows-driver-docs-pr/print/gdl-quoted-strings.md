@@ -1,7 +1,6 @@
 ---
 title: GDL Quoted Strings
 description: GDL Quoted Strings
-ms.assetid: 52d6f1bf-0b8c-4aa7-8cc8-1a18def224be
 keywords:
 - constructs WDK GDL , strings
 - GDL WDK , strings

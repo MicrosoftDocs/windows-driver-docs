@@ -1,7 +1,6 @@
 ---
 title: Jack Descriptions for Dynamic Audio Subdevices
 description: Jack Descriptions for Dynamic Audio Subdevices
-ms.assetid: e04f4000-3b93-4f4b-afec-007e5821f125
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

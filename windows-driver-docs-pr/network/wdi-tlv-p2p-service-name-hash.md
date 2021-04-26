@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME_HASH
 description: WDI_TLV_P2P_SERVICE_NAME_HASH is a TLV that contains the hash of a service name.
-ms.assetid: C6204FA9-BDCB-4BF7-8590-FA019B0E41EC
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_NAME_HASH Network Drivers Starting with Windows Vista

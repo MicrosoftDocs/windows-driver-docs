@@ -1,7 +1,6 @@
 ---
 title: About Notify Objects
 description: About Notify Objects
-ms.assetid: 87e4bcb6-dbdc-487d-9e21-0738165bf834
 keywords:
 - notify objects WDK networking , about notify objects
 - network notify objects WDK , about notify objects

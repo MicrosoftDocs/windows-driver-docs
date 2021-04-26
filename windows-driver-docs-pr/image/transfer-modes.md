@@ -1,7 +1,6 @@
 ---
 title: Transfer Modes
 description: Transfer Modes
-ms.assetid: 79af0d8f-dd04-4ff4-a047-f415562a16a5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,11 +23,11 @@ A minidriver can determine the mode in which it was opened by calling [**IStiDev
 
 It is important to note that devices are typically opened in status mode for a relatively long time (for example, the event monitor watches for device events), while they are opened in data mode for a relatively short time (for example, to read in an image). Although the still image architecture allows only one client at a time to open a device in data mode, it might be necessary for a driver to place further restrictions on device access.
 
-For instance, if you are writing a driver for a device connected to a serial port, you might want to call [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) from within the driver's [**IStiUSD::LockDevice**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-lockdevice) method if the device was opened in status mode. This will prohibit other applications from using the port (which might be supporting other devices) while status information is being obtained from the device.
+For instance, if you are writing a driver for a device connected to a serial port, you might want to call [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) from within the driver's [**IStiUSD::LockDevice**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-lockdevice) method if the device was opened in status mode. This will prohibit other applications from using the port (which might be supporting other devices) while status information is being obtained from the device.
 
-For devices connected to dedicated ports, such as SCSI or USB bus devices, it is typically allowable to call [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) from within [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) if status mode is specified, because the device and port will always be dedicated to one client.
+For devices connected to dedicated ports, such as SCSI or USB bus devices, it is typically allowable to call [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) from within [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) if status mode is specified, because the device and port will always be dedicated to one client.
 
-When a device is opened in data mode, [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) is typically called from within **IStiUSD:Initialize**, independent of the bus type.
+When a device is opened in data mode, [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) is typically called from within **IStiUSD:Initialize**, independent of the bus type.
 
  
 

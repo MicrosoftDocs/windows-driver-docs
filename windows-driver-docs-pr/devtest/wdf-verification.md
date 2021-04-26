@@ -1,7 +1,6 @@
 ---
 title: WDF verification
 description: WDF verification for Driver Verifier
-ms.assetid: 9ee72369-878f-4710-a38b-1c93042178bd
 keywords:
 - WDF verification for Driver Verifier
 ms.date: 09/14/2018

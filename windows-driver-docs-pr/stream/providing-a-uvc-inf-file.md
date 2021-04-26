@@ -1,7 +1,6 @@
 ---
 title: Providing a UVC INF File
 description: Providing a UVC INF File
-ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
 keywords:
 - INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class
@@ -59,6 +58,33 @@ Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf
 Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT, DSHOWEXT.Registration
 AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
+```
+
+Additional sections of *Usbvideo.inf* need to be included for completeness
+```INF
+[MyDevice.SERVICES]
+Include=usbvideo.inf
+Needs=USBVideo.NT.SERVICES
+
+[MyDevice.HW]
+Include=usbvideo.inf
+Needs=USBVideo.NT.HW
+
+[MyDevice.WDF]
+Include=usbvideo.inf
+Needs=USBVideo.NT.WDF
+
+[WdmCompanionFilter_CompanionSect]
+CompanionServices = SecureUSBVideo
+
+[WdmCompanionFilter_KmdfSvcSect]
+KmdfLibraryVersion = %KMDF_VERSION%
+
+[SecureUSBVideo_UmdfSvcSect]
+UmdfLibraryVersion = %UMDF_VERSION%
+ServiceBinary = %12%\UMDF\SecureUSBVideo.dll
+ServiceType = SecureCompanion ; allowed options are: Driver (default), SecureCompanion, NonSecureCompanion
+TrustletIdentity = 4096          ; required if it is SecureCompanion
 ```
 
 The INF also needs a CopyFiles section to copy the plug-in into the system folder.

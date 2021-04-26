@@ -1,7 +1,6 @@
 ---
 title: About file system filter drivers
 description: About file system filter drivers
-ms.assetid: 4bff8ad6-624a-429d-b9ec-3f96c3c7c99d
 keywords:
 - filter drivers WDK file system , about file system filter drivers
 - file system filter drivers WDK , about file system filter drivers
@@ -15,13 +14,13 @@ ms.localizationpriority: medium
 
 ## File system filter drivers on Windows
 
-A *file system filter driver* is an optional driver that adds value to or modifies the behavior of a file system. A file system filter driver is a kernel-mode component that runs as part of the Windows executive.
+A *file system filter driver* is an optional driver that adds value to or modifies the behavior of a file system. It is a kernel-mode component that runs as part of the Windows executive.
 
 A file system filter driver can filter I/O operations for one or more file systems or file system volumes. Depending on the nature of the driver, *filter* can mean *log*, *observe*, *modify*, or even *prevent*. Typical applications for file system filter drivers include antivirus utilities, encryption programs, and hierarchical storage management systems.
 
 There are two file system filter models in Windows:
 
-- The [minifilter model](./filter-manager-concepts.md), in which a minifilter uses system-supplied Filter Manager support, thus simplifying filter development
+- The [minifilter model](./filter-manager-concepts.md), in which a filter (also called a minifilter) uses system-supplied Filter Manager support, thus simplifying filter development
 
 - The [legacy file system filter model](./about-file-system-legacy-filter-drivers.md)
 

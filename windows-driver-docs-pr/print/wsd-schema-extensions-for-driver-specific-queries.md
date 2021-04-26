@@ -1,7 +1,6 @@
 ---
 title: WSD Schema Extensions for Driver-Specific Queries
 description: WSD Schema Extensions for Driver-Specific Queries
-ms.assetid: 508a9f87-8fd2-4c95-8efb-5d1d7201981a
 keywords:
 - WSD schema extensions WDK printer
 - schema extensions WDK WSD

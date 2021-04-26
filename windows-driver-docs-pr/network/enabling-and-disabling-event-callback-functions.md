@@ -1,7 +1,6 @@
 ---
 title: Enabling and Disabling Event Callback Functions
 description: Enabling and Disabling Event Callback Functions
-ms.assetid: 52654788-31e2-47c1-8154-f40c42168708
 keywords:
 - WSK WDK networking , events
 - events WDK Winsock Kernel

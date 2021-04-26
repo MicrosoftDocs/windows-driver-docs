@@ -1,7 +1,6 @@
 ---
 title: ELAM driver submission Process
 description: Early Launch Antimalware (ELAM) drivers can be submitted using the listed steps to ensure validation and adherence to documented requirements
-ms.assetid:
 ms.date: 04/27/2017
 ms.localizationpriority: medium
 ---

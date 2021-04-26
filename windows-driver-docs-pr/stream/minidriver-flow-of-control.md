@@ -1,7 +1,6 @@
 ---
 title: Minidriver Flow of Control
 description: Minidriver Flow of Control
-ms.assetid: c3c23d32-4023-445b-bd89-e0b454bec1ed
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , flow of control
 - streaming minidrivers WDK Windows 2000 Kernel , flow of control

@@ -1,7 +1,6 @@
 ---
 title: Maintaining a Network Interface Stack
 description: Maintaining a Network Interface Stack
-ms.assetid: c51a2e5b-28ad-4e86-8b37-1491f85a17bb
 keywords:
 - NDIS network interfaces WDK , stack maintenance
 - network interfaces WDK , stack maintenance

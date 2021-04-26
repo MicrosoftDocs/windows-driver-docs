@@ -1,7 +1,6 @@
 ---
 title: Calling the COPP DDI from the Display Driver
 description: Calling the COPP DDI from the Display Driver
-ms.assetid: d91d8a62-f212-4ae7-be61-b973d6495880
 keywords:
 - calling COPP DDI WDK DirectX VA
 - COPP WDK DirectX VA , calling from the display driver
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.
 
-The display driver initiates calls to the video miniport driver's [COPP DDI](sample-functions-for-copp.md) by using COPP I/O control (IOCTL) requests. The display driver calls the [**EngDeviceIoControl**](/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) function by using a COPP IOCTL to send a synchronous COPP request to the video miniport driver. Graphics Device Interface (GDI) uses a single buffer for both input and output to pass the request to the I/O subsystem. The I/O subsystem routes the request to the video port, which processes the request by using the video miniport driver.
+The display driver initiates calls to the video miniport driver's [COPP DDI](sample-functions-for-copp.md) by using COPP I/O control (IOCTL) requests. The display driver calls the [**EngDeviceIoControl**](/windows/win32/api/winddi/nf-winddi-engdeviceiocontrol) function by using a COPP IOCTL to send a synchronous COPP request to the video miniport driver. Graphics Device Interface (GDI) uses a single buffer for both input and output to pass the request to the I/O subsystem. The I/O subsystem routes the request to the video port, which processes the request by using the video miniport driver.
 
 The following sample data structure and IOCTLs can be used to transfer COPP information between the display driver and the video miniport driver. Your drivers can either use the data structure and IOCTLs or create new ones, as appropriate.
 

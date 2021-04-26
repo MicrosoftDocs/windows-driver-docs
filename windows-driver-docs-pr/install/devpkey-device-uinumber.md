@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_UINumber
 description: DEVPKEY_Device_UINumber
-ms.assetid: 81bd0b71-909d-49c3-8d6c-258c57f80644
 keywords: ["DEVPKEY_Device_UINumber Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_UINumber to the value of the UINumber member of the [**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure for a device instance. The bus driver for a device instance returns this value in response to an [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) request.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_UINumber.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_UINumber.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_UINumber property key. Instead, you can use the corresponding SPDRP_UI_NUMBER identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -80,7 +79,7 @@ Requirements
 
 [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

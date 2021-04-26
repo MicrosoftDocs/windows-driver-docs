@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_OFFLOAD_CURRENT_CONFIG
 description: This topic describes the OID_TCP_OFFLOAD_CURRENT_CONFIG object identifier (OID). 
-ms.assetid: 8DC81A41-1E4D-4F78-80D1-54C79F974CE3
 keywords:
 - OID_TCP_OFFLOAD_CURRENT_CONFIG, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
 ms.date: 02/27/2020

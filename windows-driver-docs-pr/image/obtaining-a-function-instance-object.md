@@ -1,7 +1,6 @@
 ---
 title: Obtaining a Function Instance Object
 description: Obtaining a Function Instance Object
-ms.assetid: 2c750281-031b-4b9f-9012-3b341ebe1cd9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Saving a Filter
 description: Saving a Filter
-ms.assetid: ffddd3c9-8e90-45c6-acba-3540ba10c4a0
 keywords:
 - filtering trace messages, saving WDK
 - trace message filters WDK , saving

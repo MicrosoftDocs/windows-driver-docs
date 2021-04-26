@@ -1,7 +1,6 @@
 ---
 title: Design messages in a mobile broadband app
 description: Design messages in a mobile broadband app
-ms.assetid: 314fd479-7dcf-4559-a195-26e4c020446c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Your mobile broadband app is a convenient way to communicate with your customers
 
 You should not show user-to-user chat text messaging, promotions, and advertisements in the messages section mixed together with operator notifications and alerts because customers might miss important operator notifications. You can display promotions and advertisements in the layout of your app and display user-to-user chat text messages in a separate section of the user interface.
 
-![message](images/message.png)
+![Screenshot that shows an example of the "Messages" window.](images/message.png)
 
 The following table shows some example operator messages and alerts.
 

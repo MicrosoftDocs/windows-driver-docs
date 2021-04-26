@@ -1,7 +1,6 @@
 ---
 title: Simple Data Evaluation Language Overview
 description: WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships.
-ms.assetid: 84c2a1d6-6bec-4aeb-b858-c29f50d74390
 keywords:
 - Windows Device Testing Framework WDK , SDEL
 - WDTF WDK , SDEL
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 # Simple Data Evaluation Language Overview
 
-WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships. The Simple Data Evaluation Language (SDEL) is similar to XPath. For more information about XPath, see [XPath Reference](https://go.microsoft.com/fwlink/p/?linkid=33165).
+WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships. The Simple Data Evaluation Language (SDEL) is similar to XPath. For more information about XPath, see [XPath Reference](/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)).
 
 The following sections within this topic describe how you can use SDEL.
 

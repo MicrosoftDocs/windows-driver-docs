@@ -1,7 +1,6 @@
 ---
 title: Reporting a NIC's LSOV2 TCP-Packet-Segmentation Capabilities
 description: Reporting a NIC's LSOV2 TCP-Packet-Segmentation Capabilities
-ms.assetid: 2894c1a8-503f-4b53-8eb3-5c5eaea150db
 keywords:
 - LSOV2 WDK networking
 - large TCP packet segmentation WDK networking

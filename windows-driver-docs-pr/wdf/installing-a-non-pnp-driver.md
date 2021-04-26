@@ -1,7 +1,6 @@
 ---
 title: Installing a Non-PnP Driver
 description: Installing a Non-PnP Driver
-ms.assetid: 99676d85-feb2-482c-a91b-cfc48be5904c
 keywords:
 - Kernel-Mode Driver Framework WDK , installing drivers
 - framework-based drivers WDK KMDF , installing

@@ -1,7 +1,6 @@
 ---
 title: Supporting header-data split in protocol and filter drivers
 description: Supporting Header-Data Split in Protocol Drivers and Filter Drivers
-ms.assetid: ba1566f2-7da6-4472-b00b-e25bf7acc294
 keywords:
 - header-data split WDK , protocol drivers
 - header-data split WDK , filter drivers

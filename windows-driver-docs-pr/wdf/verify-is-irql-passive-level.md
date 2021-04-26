@@ -1,7 +1,6 @@
 ---
 title: VERIFY_IS_IRQL_PASSIVE_LEVEL macro
 description: The VERIFY_IS_IRQL_PASSIVE_LEVEL macro breaks into the kernel debugger if the driver is not executing at IRQL PASSIVE_LEVEL.
-ms.assetid: 7f1e25af-df66-46a2-8d27-7924677e4d5d
 keywords:
  - VERIFY_IS_IRQL_PASSIVE_LEVEL macro
 ms.date: 08/23/2017
@@ -45,7 +44,7 @@ The **VERIFY_IS_IRQL_PASSIVE_LEVEL** code breaks into a kernel debugger if one o
 
 For more information about registry entries that you can use to debug your driver, see [Registry Entries for Debugging Framework-Based Drivers](./registry-values-for-debugging-kmdf-drivers.md).
 
-For more information about debugging your driver, see [Debugging a KMDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver).
+For more information about debugging your driver, see [Debugging a KMDF Driver](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
 Examples
 --------

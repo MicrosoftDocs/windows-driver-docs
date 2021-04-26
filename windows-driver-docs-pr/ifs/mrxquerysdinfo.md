@@ -1,7 +1,6 @@
 ---
 title: MRxQuerySdInfo routine
 description: TheMRxQuerySdInfo routine is called by RDBSS to request that a network mini-redirector query security descriptor information on a file system object.
-ms.assetid: 5bab05f1-2a79-42c0-ba70-e1124f7b1528
 keywords: ["MRxQuerySdInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

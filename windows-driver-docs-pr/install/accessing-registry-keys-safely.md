@@ -1,7 +1,6 @@
 ---
 title: Accessing Registry Keys Safely
 description: Accessing Registry Keys Safely
-ms.assetid: 81203790-66CB-42ee-82F8-2F0FFF04DF10
 keywords:
 - registry WDK device installations , accessing registry keys safely
 - accessing registry keys safely WDK device installations
@@ -18,11 +17,11 @@ Customer problems have frequently been traced to external components, such as th
 
 -   Modify the access permissions of critical registry keys.
 
-Many of the problems seen with external components are caused by using the KEY_ALL_ACCESS access permission for registry keys. Starting with Windows Server 2003, [**SetupDiCreateDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) grants only KEY_READ and KEY_WRITE access permissions and not KEY_ALL_ACCESS. Starting with Windows Vista, additional KEY_ALL_ACCESS restrictions are enforced.
+Many of the problems seen with external components are caused by using the KEY_ALL_ACCESS access permission for registry keys. Starting with Windows Server 2003, [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya) grants only KEY_READ and KEY_WRITE access permissions and not KEY_ALL_ACCESS. Starting with Windows Vista, additional KEY_ALL_ACCESS restrictions are enforced.
 
 Follow these guidelines to safely access registry keys:
 
--   Use the SetupAPI and *software keys* for a device.
+-   Use the [SetupAPI](setupapi.md) functions only to open registry keys, especially the *hardware keys* and *software keys* for a device.
 
     These functions address common problems that result from restrictions on access permissions.
 
@@ -46,19 +45,17 @@ Follow these guidelines to safely access registry keys:
 
     To open device setup class keys safely, follow these guidelines:
 
-    -   Use [**SetupDiOpenClassRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkey).
+    -   Use [**SetupDiOpenClassRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkey).
 
-    -   Use [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) and set DIOCR_INSTALLER in the *Flags* parameter.
+    -   Use [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) and set DIOCR_INSTALLER in the *Flags* parameter.
 
 -   Do not directly open device interface class keys in the registry. As with any registry key, the location and name of device interface class keys might change between versions of Windows.
 
-    To open device interface class keys safely, use [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) and set DIOCR_INSTALLER in the *Flags* parameter.
+    To open device interface class keys safely, use [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) and set DIOCR_INSTALLER in the *Flags* parameter.
 
 -   Use only INF directives to modify registry keys that are reserved for use by the operating system. For more information, see [Summary of INF Directives](summary-of-inf-directives.md).
 
 -   *Class installers* and *co-installers* cannot call registry functions to create, change, or delete registry values that are reserved for use by the operating system.
 
-For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](https://go.microsoft.com/fwlink/p/?linkid=194542).
-
- 
+For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](/windows/win32/sysinfo/registry-key-security-and-access-rights).
 

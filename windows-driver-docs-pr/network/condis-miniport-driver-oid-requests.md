@@ -1,7 +1,6 @@
 ---
 title: CoNDIS Miniport Driver OID Requests
 description: CoNDIS Miniport Driver OID Requests
-ms.assetid: a283d430-f90c-4704-868b-f4086922737b
 keywords:
 - miniport drivers WDK networking , CoNDIS
 - NDIS miniport drivers WDK , CoNDIS

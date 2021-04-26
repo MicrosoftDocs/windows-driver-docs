@@ -1,7 +1,6 @@
 ---
 title: Introduction to DMA in Windows Driver Framework
 description: Introduction to DMA in Windows Driver Framework
-ms.assetid: 9bcd8ac1-f3dd-4bb3-a671-51c9465f8efa
 keywords:
 - DMA operations WDK KMDF , about DMA operations
 - bus-master DMA WDK KMDF , about DMA operations

@@ -1,7 +1,6 @@
 ---
 title: NDIS protocol driver installation
 description: NDIS protocol driver installation
-ms.assetid: D783E386-91A2-4E6E-8340-78E0FFA14974
 keywords:
 - protocol drivers WDK networking , installation
 - NDIS protocol drivers WDK , installation

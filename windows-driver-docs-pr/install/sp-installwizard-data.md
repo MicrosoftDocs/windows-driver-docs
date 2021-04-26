@@ -1,7 +1,6 @@
 ---
 title: SP_INSTALLWIZARD_DATA
 description: SP_INSTALLWIZARD_DATA
-ms.assetid: 98192da9-4afd-4bfd-a412-4f38f96b7947
 keywords: ["SP_INSTALLWIZARD_DATA Device and Driver Installation"]
 topic_type:
 - apiref

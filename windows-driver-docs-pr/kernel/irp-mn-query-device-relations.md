@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_DEVICE_RELATIONS
 description: The PnP manager sends this request to determine certain relationships among devices.
 ms.date: 08/12/2017
-ms.assetid: 32437c5a-ad92-433c-8255-83775751a44d
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -82,7 +81,7 @@ A driver must reference the PDO of any device that it reports in this IRP ([**Ob
 
 A function or filter driver should be prepared to handle this IRP for a device any time after its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine has completed for the device. Bus drivers should be prepared to handle a query for **BusRelations** immediately after a device is enumerated.
 
-For the general rules about handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md) see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For the general rules about handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md) see [Plug and Play](./introduction-to-plug-and-play.md).
 
 The following subsections describe the specific actions for handling the various queries.
 
@@ -114,7 +113,7 @@ In the example shown in the figure, the PnP manager sends an **IRP\_MN\_QUERY\_D
 
     -   Creates a PDO for any child device that does not already have one.
 
-    -   Marks the PDO inactive for any device that is no longer present on the bus. The bus driver does not delete such PDOs.For more information about when to delete the PDOs, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+    -   Marks the PDO inactive for any device that is no longer present on the bus. The bus driver does not delete such PDOs.For more information about when to delete the PDOs, see [Removing a Device](./removing-a-device-in-a-bus-driver.md).
 
     -   Reports any child devices that are present on the bus.
 
@@ -252,6 +251,4 @@ Requirements
 [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)
 
 [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)
-
- 
 

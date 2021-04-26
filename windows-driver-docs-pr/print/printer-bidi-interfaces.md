@@ -4,7 +4,6 @@ description: Describes printer bidirectional (Bidi) communication interfaces for
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: AFFBA568-7756-4D33-9E14-83A3373A4DC6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

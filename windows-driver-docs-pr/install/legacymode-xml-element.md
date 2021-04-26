@@ -1,7 +1,6 @@
 ---
 title: legacyMode XML Element
 description: The legacyMode XML element is an empty element that sets the legacyMode flag to ON, which configures DPInst to install unsigned drivers and driver packages that have missing files.
-ms.assetid: a070551c-6053-42ba-873c-ac624afecfd0
 keywords: ["legacyMode XML Element Device and Driver Installation"]
 topic_type:
 - apiref

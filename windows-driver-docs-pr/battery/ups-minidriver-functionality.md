@@ -1,7 +1,6 @@
 ---
 title: UPS Minidriver Functionality
 description: UPS Minidriver Functionality
-ms.assetid: a93dbada-bcf7-4963-ba57-c6db5922c66b
 keywords:
 - UPS minidrivers WDK , functionality
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ Additionally, the minidriver must export a [**DLLMain**](/windows/desktop/Dlls/d
 
 Besides exporting these functions, the minidriver must provide initial values for [UPS registry entries](ups-registry-entries.md) and then modify the values as necessary to reflect UPS state changes.
 
-Typically, a UPS minidriver communicates with a UPS unit through a COM port by calling the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile), and [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) functions (described in Windows SDK documentation). The minidriver is responsible for implementing whatever communication protocol the UPS unit supports.
+Typically, a UPS minidriver communicates with a UPS unit through a COM port by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile), and [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) functions (described in Windows SDK documentation). The minidriver is responsible for implementing whatever communication protocol the UPS unit supports.
 
  
 

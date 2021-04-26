@@ -1,7 +1,6 @@
 ---
 title: DRM Functions
 description: DRM Functions
-ms.assetid: 7be96ab4-3c27-4e63-b0dd-71d814d804d7
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

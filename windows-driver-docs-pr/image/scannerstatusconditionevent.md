@@ -1,7 +1,6 @@
 ---
 title: ScannerStatusConditionEvent element
 description: The required ScannerStatusConditionEvent element provides the client with detailed information about a single status change in the scan device.
-ms.assetid: 0a61fe67-ea1e-4143-afb8-edcdf50ee7c4
 keywords: ["ScannerStatusConditionEvent element Imaging Devices"]
 topic_type:
 - apiref

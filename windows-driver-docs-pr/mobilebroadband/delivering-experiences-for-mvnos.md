@@ -1,7 +1,6 @@
 ---
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
-ms.assetid: fcb2a3d4-bc19-4fa5-b81d-b0df287404a8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Relative orientation sensor data fields
 description: This topic provides information about the data fields that are specific to the relative orientation sensor.
-ms.assetid: A48B75DD-5424-48CC-AC8B-251874414FCE
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the relative orientation sensor.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -26,14 +25,7 @@ The following table shows the data fields. For more information about the types 
 ## Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
  
-
- 
-
-
-
-
-
 

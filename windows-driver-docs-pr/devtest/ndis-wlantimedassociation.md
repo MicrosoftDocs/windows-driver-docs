@@ -1,7 +1,6 @@
 ---
 title: WlanTimedAssociation rule (ndis)
 description: The WlanTimedAssociation rule specifies that the NDIS miniport driver finishes the wireless LAN (WLAN) association operation in 10 seconds.
-ms.assetid: 6454C7CF-EC89-44E9-B835-3C2FE0FFB595
 ms.date: 05/21/2018
 keywords: ["WlanTimedAssociation rule (ndis)"]
 topic_type:
@@ -37,7 +36,7 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a> and select the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](./ndis-wifi-verification.md)">NDIS/WIFI verification</a> option.</p></td>
+<td align="left"><p>Run <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a> and select the <a href="/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](./ndis-wifi-verification.md)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
@@ -56,5 +55,3 @@ See also
 [General Connection Operation Guidelines](/previous-versions/windows/hardware/wireless/general-connection-operation-guidelines)
 [OID\_DOT11\_RESET\_REQUEST](/previous-versions/windows/hardware/wireless/oid-dot11-reset-request)
 [NDIS\_STATUS\_DOT11\_ASSOCIATION\_START](/previous-versions/windows/hardware/wireless/ndis-status-dot11-association-start)
- 
-

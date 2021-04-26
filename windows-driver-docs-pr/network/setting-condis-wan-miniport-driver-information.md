@@ -1,7 +1,6 @@
 ---
 title: Setting CoNDIS WAN Miniport Driver Information
 description: Setting CoNDIS WAN Miniport Driver Information
-ms.assetid: 950cb2cb-7f02-4f3c-924a-0d1e7bb19b55
 keywords:
 - CoNDIS WAN drivers WDK networking , information setting
 - OID_WAN_CO_SET_LINK_INFO
@@ -37,7 +36,7 @@ A CoNDIS WAN miniport driver must recognize and respond properly to the followin
 <tbody>
 <tr class="odd">
 <td align="left"><p></p>
-<a href="/windows-hardware/drivers/network/oid-wan-co-set-link-info" data-raw-source="[OID_WAN_CO_SET_LINK_INFO](/windows-hardware/drivers/network/oid-wan-co-set-link-info)">OID_WAN_CO_SET_LINK_INFO</a>
+<a href="/windows-hardware/drivers/network/oid-wan-co-set-link-info" data-raw-source="[OID_WAN_CO_SET_LINK_INFO](./oid-wan-co-set-link-info.md)">OID_WAN_CO_SET_LINK_INFO</a>
 Set information for a VC.</td>
 <td align="left"><p>Required</p></td>
 </tr>
@@ -47,6 +46,4 @@ Set information for a VC.</td>
  
 
 A CoNDIS WAN miniport driver also supports the NDIS [General Objects](/previous-versions/windows/hardware/network/ff546510(v=vs.85)). To learn more about setting information in a CoNDIS miniport driver, see [Querying or Setting Information](querying-or-setting-information.md).
-
- 
 

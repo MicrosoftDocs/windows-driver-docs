@@ -1,12 +1,11 @@
 ---
-title: Overview
-description: Overview
-ms.assetid: 3b2895a2-9a2e-46eb-b8fb-47d6db4a1de0
+title: Oplock Overview
+description: Oplock Overview
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Overview
+# Oplock Overview
 
 
 ## <span id="ddk_network_redirector_design_and_performance_if"></span><span id="DDK_NETWORK_REDIRECTOR_DESIGN_AND_PERFORMANCE_IF"></span>
@@ -44,9 +43,7 @@ Oplocks are granted on stream handles. This means an oplock is granted for a giv
 
 Remember that oplock keys exist on handles, and they are "put on" the handle when the handle is created. You can associate a handle with an oplock key even if no oplocks are granted.
 
-**Note**  It is more accurate to say that the oplock key is associated with the [**FILE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [DuplicateHandle](https://go.microsoft.com/fwlink/p/?linkid=124237). Each of the duplicate handles refers to the same underlying **FILE\_OBJECT** structure.
-
- 
+**Note**  It is more accurate to say that the oplock key is associated with the [**FILE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [DuplicateHandle](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle). Each of the duplicate handles refers to the same underlying **FILE\_OBJECT** structure.
 
  
 

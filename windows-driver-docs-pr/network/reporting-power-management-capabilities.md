@@ -1,7 +1,6 @@
 ---
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
-ms.assetid: cfacd885-e18a-44a5-939d-88e62b573ace
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -32,7 +31,7 @@ Starting with NDIS 6.30, the following flags are defined:
 <a href="" id="ndis-pm-wake-packet-indication-supported"></a>NDIS\_PM\_WAKE\_PACKET\_INDICATION\_SUPPORTED  
 If this flag is set, the network adapter can save the received packet that caused the adapter to generate a wake-up event.
 
-For more information about this power management capability, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
+For more information about this power management capability, see [NDIS Wake Reason Status Indications](overview-of-ndis-wake-reason-statue-indications.md).
 
 <a href="" id="ndis-pm-selective-suspend-supported"></a>NDIS\_PM\_SELECTIVE\_SUSPEND\_SUPPORTED  
 If this flag is set, the miniport driver supports NDIS selective suspend for network adapters.

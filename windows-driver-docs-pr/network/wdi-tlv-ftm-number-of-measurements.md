@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS
 description: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS is a TLV that contains the number of measurements used to provide the round trip time (RTT) for a Fine Timing Measurement (FTM) request.
-ms.assetid: C629B5F5-FB30-4808-A392-69150C5A2FA3
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS Network Drivers Starting with Windows Vista

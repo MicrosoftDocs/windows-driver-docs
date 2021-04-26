@@ -1,7 +1,6 @@
 ---
 title: Transfer Contexts
 description: Transfer Contexts
-ms.assetid: b4eadccd-afb6-4cb5-bf52-704f64d45e40
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

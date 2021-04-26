@@ -29,4 +29,4 @@ One exception to this OID serialization rule is for Wi-Fi miniport adapters that
 
 For more information about WDI UE hang detection, see [UE hang detection: Steps 1-14](./wdi-ue-hang-detection--step-1-to-step-14.md).
 
-For more information about OID requests in NDIS, see [Simplifying your OID request handler](https://go.microsoft.com/fwlink/p/?linkid=846658) on the NDIS blog.
+For more information about OID requests in NDIS, see [Simplifying your OID request handler](/archive/blogs/ndis/simplifying-your-oid-request-handler) on the NDIS blog.

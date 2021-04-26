@@ -1,7 +1,6 @@
 ---
 title: NewDisp Dynamic Reload of a Display Driver
 description: NewDisp Dynamic Reload of a Display Driver
-ms.assetid: 0f8ac27c-8a42-4032-9974-89a7463dccbb
 keywords:
 - newdisp.exe
 - dyanmic driver reloads WDK Windows 2000 display
@@ -37,7 +36,7 @@ Each time *newdisp* is invoked, it reloads the display driver. Assuming that no 
 
 -   Immediately performing another **ChangeDisplaySettings** callback to the original mode, which causes the new display driver DLL to be loaded from *\\system32* directory, and the 16 color VGA display driver DLL to be unloaded.
 
-A reference to the driver instance exists if the driver has active Direct3D, [**WNDOBJ**](/windows/desktop/api/winddi/ns-winddi-_wndobj), or [**DRIVEROBJ**](/windows/desktop/api/winddi/ns-winddi-_driverobj) objects. When *newdisp* is run while a reference to the driver instance exists, the old display driver DLL will never be unloaded, and correspondingly the new display driver DLL will never be loaded.
+A reference to the driver instance exists if the driver has active Direct3D, [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-wndobj), or [**DRIVEROBJ**](/windows/win32/api/winddi/ns-winddi-driverobj) objects. When *newdisp* is run while a reference to the driver instance exists, the old display driver DLL will never be unloaded, and correspondingly the new display driver DLL will never be loaded.
 
 *Newdisp* relies on dynamic driver loading functionality that has been added to Windows 2000 and later to reload the driver without rebooting; consequently, it does not work on Windows NT 4.0 and previous operating system versions. It also does not work if the VGA driver cannot be loaded on the graphics device, or if the native display driver supports a mode of 640x480x16 colors instead of letting that mode be handled by the VGA driver.
 

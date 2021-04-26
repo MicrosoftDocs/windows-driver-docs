@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ROAMING_NEEDED_PARAMETERS
 description: WDI_TLV_ROAMING_NEEDED_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED payload.
-ms.assetid: 152F923C-ECAE-4D50-A7B4-4B2309D5A3B5
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ROAMING_NEEDED_PARAMETERS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Locking a Subvolume of a Volume Texture
 description: Locking a Subvolume of a Volume Texture
-ms.assetid: fff7b9c6-5f83-4691-9e44-99e45897ae3a
 keywords:
 - textures WDK DirectX 8.0
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_locking_a_subvolume_of_a_volume_texture_gg"></span><span id="DDK_LOCKING_A_SUBVOLUME_OF_A_VOLUME_TEXTURE_GG"></span>
 
 
-DirectX 8.1 introduces a new feature that lets a driver lock just a subvolume of a volume texture. When a driver's [*DdLock*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_lock) function is called, the driver can improve system performance by locking just a subvolume instead of the whole volume texture.
+DirectX 8.1 introduces a new feature that lets a driver lock just a subvolume of a volume texture. When a driver's [*DdLock*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_lock) function is called, the driver can improve system performance by locking just a subvolume instead of the whole volume texture.
 
 To indicate support of this feature, the driver must set the D3DDEVCAPS\_SUBVOLUMELOCK bit in the **DevCaps** member of the D3DCAPS8 structure. The driver returns a D3DCAPS8 structure in response to a **GetDriverInfo2** query as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this query is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 

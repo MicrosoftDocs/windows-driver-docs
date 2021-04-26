@@ -1,7 +1,6 @@
 ---
 title: Associating Context with a Data Flow
 description: Associating Context with a Data Flow
-ms.assetid: 75f5838e-626d-4a59-810e-fec9a40640ed
 keywords:
 - classify callouts WDK Windows Filtering Platform , context associated with data flow
 - context WDK Windows Filtering Platform

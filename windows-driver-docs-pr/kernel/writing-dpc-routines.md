@@ -1,7 +1,6 @@
 ---
 title: Writing DPC Routines
 description: Writing DPC Routines
-ms.assetid: a0b93b71-7ee3-4626-b0b8-5dd6e19fba0d
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

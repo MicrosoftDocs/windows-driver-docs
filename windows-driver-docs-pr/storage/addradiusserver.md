@@ -1,7 +1,6 @@
 ---
 title: AddRADIUSServer
 description: AddRADIUSServer
-ms.assetid: c8b540c8-b16c-4804-8698-87ced11a9797
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

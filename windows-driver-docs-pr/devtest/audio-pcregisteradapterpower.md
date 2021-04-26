@@ -1,7 +1,6 @@
 ---
 title: PcRegisterAdapterPower rule (audio)
 description: The PcRegisterAdapterPower rule specifies that a PortCls miniport driver should not Call PcRegisterAdapterPowerManagement twice without an intervening call to PcUnregisterAdapterPowerManagement.Call PcUnregisterAdapterPowerManagement without calling PcRegisterAdapterPowerManagement first.
-ms.assetid: 8F6E6B1D-F19C-469A-BC5A-061996BEA532
 ms.date: 05/21/2018
 keywords: ["PcRegisterAdapterPower rule (audio)"]
 topic_type:
@@ -43,12 +42,10 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain audio</strong>.</p>
 <p>For example:</p>
 <p><strong>verifier /domain audio</strong> [<em>options</em>] <strong>/driver</strong> <em>&lt;yourdriver&gt;</em></p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a>.</p></td>
+<p>For more information, see <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: SCSI Port I/O Model
 description: SCSI Port I/O Model
-ms.assetid: c79fdc99-30ae-4c4a-a130-2b8743bbff7f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

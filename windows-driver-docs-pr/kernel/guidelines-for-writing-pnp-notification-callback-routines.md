@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing PnP Notification Callback Routines
 description: Guidelines for Writing PnP Notification Callback Routines
-ms.assetid: 2153b4c2-f60f-4ac9-8eee-66c5f3a9f414
 keywords: ["notifications WDK PnP , callback routines", "callback routines WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

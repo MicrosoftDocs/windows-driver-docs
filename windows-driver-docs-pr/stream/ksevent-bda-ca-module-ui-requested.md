@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED
 description: Clients use KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED to request notification when interface data is available to retrieve and display to users.
-ms.assetid: c76bbe0d-7cc4-4594-b435-ad738ebbd141
 keywords: ["KSEVENT_BDA_CA_MODULE_UI_REQUESTED Streaming Media Devices"]
 topic_type:
 - apiref

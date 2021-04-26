@@ -1,7 +1,6 @@
 ---
 title: SerCx2 Architectural Overview
 description: SerCx2 works together with a serial controller driver to enable communication between a peripheral driver and a serially connected peripheral device.
-ms.assetid: BA5D8966-ACC5-44ED-8CB8-61D1BCF39522
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

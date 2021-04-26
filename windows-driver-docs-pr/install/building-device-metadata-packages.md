@@ -1,7 +1,6 @@
 ---
 title: Building Device Metadata Packages
 description: Building Device Metadata Packages
-ms.assetid: 8b95a88e-430c-4250-959f-43536fdc1824
 keywords:
 - device metadata packages WDK , building
 ms.date: 04/20/2017
@@ -15,7 +14,7 @@ This topic provides guidelines on how to build device metadata packages.
 
 ### <a href="" id="device-metadata-package-file-names"></a> Device metadata package file names
 
-Before you create the device metadata package file, you must first create a globally unique identifier (GUID) for the metadata package. To do this, use the Guidgen tool *(Guidgen.exe*) that is described in the [GUID Generation](https://go.microsoft.com/fwlink/p/?linkid=145426) website.
+Before you create the device metadata package file, you must first create a globally unique identifier (GUID) for the metadata package. To do this, use the Guidgen tool *(Guidgen.exe*) that is described in the [GUID Generation](/previous-versions/aa475087(v=msdn.10)) website.
 
 The file name of the device metadata package must use the following naming convention:
 
@@ -47,7 +46,7 @@ The following rules apply to device metadata package files:
 
 ### Creating a device metadata package file
 
-The [components of a device metadata package](device-metadata-package-components.md) are stored in a file compressed by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, refer to the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?linkid=145395) website.
+The [components of a device metadata package](device-metadata-package-components.md) are stored in a file compressed by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, refer to the [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)) website.
 
 The following code example shows how to use the Cabarc tool to create a device metadata package file. In this example, the components of the metadata package are located in a local directory named *MyMetadataPackage*. The following list shows the subdirectories and files within the *MyMetadataPackage* directory:
 
@@ -75,8 +74,6 @@ Cabarc.exe -r -p -P .\MyMetadataPackage\
 ```
 
 **Note**  Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID.
-
- 
 
  
 

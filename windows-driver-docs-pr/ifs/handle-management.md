@@ -1,7 +1,6 @@
 ---
 title: Handle Management
 description: Handle Management
-ms.assetid: 09d9c836-1754-4a50-92a3-229a3ae05ccb
 keywords:
 - handles WDK file systems
 - security WDK file systems , minimizing threats

@@ -1,7 +1,6 @@
 ---
 title: New Root-Level-Only GPD Attributes for Windows Vista
 description: New Root-Level-Only GPD Attributes for Windows Vista
-ms.assetid: 09f38459-6062-4d2a-9aee-929aa60193cf
 keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only

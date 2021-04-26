@@ -1,7 +1,6 @@
 ---
 title: Install the sample device and driver on your Sharks Cove board
 description: Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
-ms.assetid: A67EBD9C-9C5A-49D3-9205-37FC4396DF56
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
 
 > [!WARNING]
-> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 ## Install Windows on the Sharks Cove board
 
-For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board) and SharksCove.org.
+For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md) and SharksCove.org.
 ## Modify the ADXL345 to work with the Sharks Cove
 
 
@@ -40,12 +39,12 @@ Attach the ADXL345 pins to the J1C1 header pins as shown here:
 
 A driver development environment has two computers: the *host computer* and the *target computer*. The target computer is also called the *test computer*. You develop and build your driver in Microsoft Visual Studio on the host computer. The debugger runs on the host computer and is available in the Visual Studio user interface. When you test and debug a driver, the driver runs on the target computer. In this case, the Sharks Cove board is the target computer.
 
-On your host computer, install kits and tools as described in [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board).
+On your host computer, install kits and tools as described in [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md).
 
 ## Download and extract the SpbAccelerometer sample
 
 
-On the host computer go to [this page](https://go.microsoft.com/fwlink/p?linkid=506965) and click the download button. Click **Save**, and then click **Open Folder**. Right click SpbAccelerometer Sample Driver (UMDF Version 1).zip, and choose **Extract All**. Specify or browse to a folder for the extracted files. For example, you could extract to c:\\SpbAccelerometer.
+On the host computer go to [this page](/samples/browse/) and click the download button. Click **Save**, and then click **Open Folder**. Right click SpbAccelerometer Sample Driver (UMDF Version 1).zip, and choose **Extract All**. Specify or browse to a folder for the extracted files. For example, you could extract to c:\\SpbAccelerometer.
 
 ## Open the driver solution in Visual Studio
 
@@ -243,11 +242,3 @@ If you need to turn on test signing manually, here are the steps:
 1.  On the host computer, open the SpbAccelerometer solution in Visual Studio.
 2.  In Solution Explorer, double click **package** (lower case), and choose **Properties**. Go to **Driver Install &gt; Deployment**. Check **Enable Deployment**. Check **Remove previous driver versions before deployment**. For **Target computer name**, enter the name of your Sharks Cove board that you provisioned previously. Select **Install and Verify**. Click **OK**.
 3.  On the **Debug** menu, choose **Start Debugging**. Your driver package is automatically copied to the Sharks Cove board. Your driver is automatically installed and loaded. The Windows user-mode debugger (running on the host computer in Visual Studio) automatically attaches to the instance of Wudfhost.exe (running on the Sharks Cove board) that is hosting your driver.
-
-
-
-
-
-
-
-

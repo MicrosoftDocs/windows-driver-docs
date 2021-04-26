@@ -1,7 +1,6 @@
 ---
 title: How to manage print jobs in a UWP device app
 description: In Windows 8.1, UWP device apps for printers can manage print jobs.
-ms.assetid: 30E247DB-E5B0-4CD5-89F5-4227EE20A564
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,11 +30,11 @@ Windows 8.1 introduces new printer extension interfaces in the v4 printer drive
 
 Before you get started:
 
-1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231).
+1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](../print/v4-printer-driver.md).
 2.  Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
 3.  Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 4.  Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-5.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845).
+5.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
 6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
@@ -280,7 +279,7 @@ private void CancelPrintJob_Click(object sender, RoutedEventArgs e)
 
 Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
--   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
+-   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
@@ -297,7 +296,7 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
      
 
@@ -317,15 +316,12 @@ The following steps build your app and install the device metadata.
 
 [Job Management (v4 Printer Driver)](../print/job-management.md)
 
-[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](../print/v4-printer-driver.md)
 
-[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](../print/bidirectional-communication.md)
 
 [Getting started with UWP apps](getting-started.md)
 
 [Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
-
- 
-

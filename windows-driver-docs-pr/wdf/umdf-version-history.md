@@ -1,7 +1,6 @@
 ---
 title: UMDF Version History
 description: This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
-ms.assetid: f3e895c6-6801-4033-adaa-d7d04a46db0a
 keywords:
 - UMDF WDK , revision history
 - UMDF WDK , version information
@@ -48,6 +47,7 @@ For information about the new features for UMDF drivers in Windows 10, see [Wha
 * Added new API [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex)
 * Improved existing API [**WdfDeviceGetSystemPowerAction**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetsystempoweraction)
 * Added per-driver **HostProcessDbgBreakOnDriverLoad** registry value. For info, see [Registry Values for Debugging WDF Drivers](./registry-values-for-debugging-kmdf-drivers.md).
+* [Introduction to the Directed Power Management Framework](../kernel/introduction-to-the-directed-power-management-framework.md)
 
 ## UMDF Version 2.29
 
@@ -209,7 +209,7 @@ Version 1.11 adds the following capabilities to UMDF-based drivers:
 
 -   Enhanced support for [Supporting Idle Power-Down in UMDF-based Drivers](supporting-idle-power-down-in-umdf-drivers.md). The framework can now put the device in the D3cold power state when the idle timeout period expires. The framework can also cause the device to return to its working (D0) state when the system returns to its working (S0) state.
 
--   The following samples are new in UMDF 1.11: [WudfVhidmini](https://go.microsoft.com/fwlink/p/?linkid=256226), [NetNfpProvider](https://go.microsoft.com/fwlink/p/?linkid=256147).
+-   The following samples are new in UMDF 1.11: [WudfVhidmini](/samples/browse/), [NetNfpProvider](/samples/browse/).
 
 ## UMDF Version 1.9
 
@@ -267,6 +267,4 @@ These interfaces add the following capabilities to UMDF-based drivers:
 -   Enhanced ability to [cancel I/O requests](canceling-i-o-requests.md)
 
 -   Enhanced access to the [registry](./using-the-registry-in-umdf-1-x-drivers.md)
-
- 
 

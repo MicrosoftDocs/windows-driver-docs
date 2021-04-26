@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbdevobj
 description: The usbkd.usbdevobj command displays information from a USB device object.
-ms.assetid: 81A284DB-4830-4F7E-876A-31E7DC2F2819
 keywords: ["usbkd.usbdevobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

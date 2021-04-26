@@ -1,7 +1,6 @@
 ---
 title: DIF_ADDPROPERTYPAGE_BASIC
 description: DIF_ADDPROPERTYPAGE_BASIC
-ms.assetid: e6c2c6c6-10e6-45a9-8b50-294bca18c18b
 keywords: ["DIF_ADDPROPERTYPAGE_BASIC Device and Driver Installation"]
 topic_type:
 - apiref

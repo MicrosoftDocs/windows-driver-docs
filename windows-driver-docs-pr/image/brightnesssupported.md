@@ -1,7 +1,6 @@
 ---
 title: BrightnessSupported element
 description: The required BrightnessSupported element specifies whether the scan device supports user control of the scan brightness setting.
-ms.assetid: aa0eb627-694f-45a1-a923-07fc04b0612b
 keywords: ["BrightnessSupported element Imaging Devices"]
 topic_type:
 - apiref

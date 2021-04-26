@@ -10,6 +10,9 @@ ms.localizationpriority: medium
 
 Use this method in the *Microsoft Hardware API* to request cancellation of a shipping label in Microsoft Approval or Gradual Rollout. Before using this method, make sure your shipping label is in Microsoft Approval or Gradual Rollout. For more info about getting a shipping label, see [Get a new shipping label](get-a-shipping-label.md).
 
+> [!NOTE]
+> You cannot cancel a shared shipping label. However, you can revoke sharing after the workflow has completed.
+
 ## Prerequisites
 
 If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before using this method.

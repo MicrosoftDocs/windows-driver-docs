@@ -1,7 +1,6 @@
 ---
 title: Using the Static Driver Verifier Report
 description: Using the Static Driver Verifier Report
-ms.assetid: ca6eaa53-cee5-4caf-b1e1-035ea800779b
 keywords:
 - Static Driver Verifier WDK , verification results
 - StaticDV WDK , verification results
@@ -42,13 +41,13 @@ This procedure works only for defects. SDV does not generate a **Defect Viewer**
 
 The following screen shot shows a Static Driver Verifier Report page.
 
-![screen shot of a static driver verifier report page](images/sdv-defectviewer.png)
+![Screenshot that shows a "Static Driver Verifier Report Page".](images/sdv-defectviewer.png)
 
 ### <span id="review_the_rule"></span><span id="REVIEW_THE_RULE"></span>Review the Rule
 
 Before trying to find the rule violation in the code, become familiar with the rules that the driver violated.
 
-The [Static Driver Verifier Rules](/windows-hardware/drivers/ddi/index) section includes a topic that explains each rule, for example, [CancelSpinLock](./wdm-cancelspinlock.md).
+The [Static Driver Verifier Rules](./static-driver-verifier-rules.md) section includes a topic that explains each rule, for example, [CancelSpinLock](./wdm-cancelspinlock.md).
 
 To see the code for the rule, in the **Source Code** pane of the Static Driver Verifier Report, click the tab with the rule code, such as CancelSpinLock.slic.
 
@@ -119,6 +118,4 @@ You can also click the **Close** button (**X**) for the **Defect Viewer**. It is
 The following screen shot shows how to close the Defect Viewer.
 
 ![screen shot showing how to close the defect viewer for a rule](images/sdv-defectviewerclose.png)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: UsePositionLock
 description: The UsePositionLock registry value changes how PortCls serializes its I/O.
-ms.assetid: AD5AF873-4129-4C82-B251-0469CF6149E9
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -53,7 +52,7 @@ This means that the following miniport’s callbacks are not serialized with the
 
 -   [**IMiniportWaveRTOutputStream::GetPacketCount**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertoutputstream-getpacketcount)
 
--   [**IMiniportWaveRTStream::GetPosition**](/previous-versions/windows/hardware/drivers/ff536749(v=vs.85))
+-   [**IMiniportWaveRTStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-getposition)
 
  
 

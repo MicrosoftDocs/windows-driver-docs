@@ -1,7 +1,6 @@
 ---
 title: Device management namespace objects
 description: The ACPI 5.0 specification defines several types of namespace objects that can be used to manage devices.
-ms.assetid: 26C3312D-B1B0-4843-BF4E-1B03630C0BDD
 ms.date: 06/26/2018
 ms.localizationpriority: medium
 ---
@@ -90,7 +89,7 @@ Additionally, ACPI provides a notification mechanism that ASL can use to notify 
 
 As part of Windows Plug and Play, drivers must be capable of being dynamically enabled and disabled by the user or by the system (for example, for updating a driver).
 
-On-SoC devices are integrated into the SoC chip and cannot be removed. Drivers for most on-SoC devices can be exempted from the requirements for enable and disable. For those drivers that are not exempt, there are driver interfaces for indicating that the driver supports orderly removal. For more information, see the document titled "Reducing PNP Requirements for SoC Drivers" on the [Microsoft Connect web site](https://aka.ms/connect-redirect?DownloadID=47560).
+On-SoC devices are integrated into the SoC chip and cannot be removed. Drivers for most on-SoC devices can be exempted from the requirements for enable and disable. For those drivers that are not exempt, there are driver interfaces for indicating that the driver supports orderly removal. For more information, see the document titled "Reducing PNP Requirements for SoC Drivers" on the [Microsoft Connect web site](/collaborate/connect-redirect?DownloadID=47560).
 
 If a driver supports orderly removal, and the device hardware can be disabled (that is, the device can be configured to stop accessing its assigned resources), then the ACPI namespace node for the device can include the Disable (\_DIS ) object. This method will be evaluated by the operating system whenever the driver is removed. Use of \_DIS has the following additional requirements:
 

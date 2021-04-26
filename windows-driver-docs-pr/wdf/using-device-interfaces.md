@@ -1,7 +1,6 @@
 ---
 title: Using Device Interfaces (WDF)
 description: Using Device Interfaces
-ms.assetid: 98199220-947e-462e-a50c-85d81ca50108
 keywords:
 - device interfaces WDK KMDF
 - registering device interfaces WDK KMDF
@@ -49,7 +48,7 @@ This section shows how a Kernel-Mode Driver Framework (KMDF) driver or a User-Mo
 
 For information on how to do this in a UMDF version 1 driver, see [Using Device Interfaces in UMDF Drivers](using-device-interfaces-in-umdf-drivers.md#accessing-another-drivers-device-interface).
 
-To register for notification of device interface events, a KMDF driver calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification), while a UMDF 2 driver calls [**CM\_Register\_Notification**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification). In both cases, the driver calls the appropriate routine from its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
+To register for notification of device interface events, a KMDF driver calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification), while a UMDF 2 driver calls [**CM\_Register\_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification). In both cases, the driver calls the appropriate routine from its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
 The following code example shows how a local UMDF 2 driver registers for notifications and then opens the remote I/O target.
 
@@ -70,7 +69,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
     ```
 
-2.  The local driver calls [**CM\_Register\_Notification**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) from [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
+2.  The local driver calls [**CM\_Register\_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) from [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
     ```cpp
     DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
@@ -144,7 +143,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
     When calling [**WdfIoTargetOpen**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetopen), the driver optionally registers an [*EvtIoTargetQueryRemove*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove) callback function to receive removal notification, along with the opportunity to decline the removal. If the driver does not provide *EvtIoTargetQueryRemove*, the framework closes the I/O target when the device is removed.
 
-    In rare cases, a UMDF 2 driver can call [**CM\_Register\_Notification**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) a second time, to register for notification of device removal. For example, if the driver calls [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) to get a HANDLE to the device interface, it should register for notification of device removal so that it can properly respond to query remove attempts. In most cases, the UMDF 2 driver calls **CM\_Register\_Notification** only once, and relies on WDF support for device removal.
+    In rare cases, a UMDF 2 driver can call [**CM\_Register\_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) a second time, to register for notification of device removal. For example, if the driver calls [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) to get a HANDLE to the device interface, it should register for notification of device removal so that it can properly respond to query remove attempts. In most cases, the UMDF 2 driver calls **CM\_Register\_Notification** only once, and relies on WDF support for device removal.
 
     ```cpp
     VOID 

@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_INTERFACE
 description: The IRP_MN_QUERY_INTERFACE request enables a driver to export a direct-call interface to other drivers.A bus driver that exports an interface must handle this request for its child devices (child PDOs).
 ms.date: 08/12/2017
-ms.assetid: ae1dab46-c387-4e5f-9368-451e625ddbc1
 keywords:
  - IRP_MN_QUERY_INTERFACE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -108,7 +107,7 @@ A driver that handles this IRP should avoid passing the IRP to another device st
 
 Interfaces can be bus-specific or bus-independent. Bus-specific interfaces are defined in the header files for those buses. The system defines a bus-independent interface, [**BUS\_INTERFACE\_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard), for exporting standard bus interfaces.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 This IRP is used specifically to pass routine entry points between layered kernel-mode drivers for a device. Do not confuse the interfaces exposed by this IRP with *device interfaces*. A device interface is used primarily for exposing a path to a device for use by user-mode components or other kernel components. For more information about device interfaces, see [Device Interface Classes](../install/overview-of-device-interface-classes.md).
 

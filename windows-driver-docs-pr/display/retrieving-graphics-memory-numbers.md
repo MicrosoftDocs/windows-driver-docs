@@ -1,7 +1,6 @@
 ---
 title: Retrieving Graphics Memory Numbers
 description: Retrieving Graphics Memory Numbers
-ms.assetid: ec704093-ad9a-4717-8e9e-537a2848b1c7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,7 +36,7 @@ Software developers who create graphics applications can use the Microsoft Direc
     }
     ```
 
-2.  After the application determines that the display driver model is the WDDM, the application can use the new DirectX version 10 APIs to get the graphics memory numbers. The application gets the graphics memory numbers from the following [**DXGI\_ADAPTER\_DESC**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_adapter_desc) data structure, which is present in Dxgi.h and is included in the DirectX Software Development Kit (SDK).
+2.  After the application determines that the display driver model is the WDDM, the application can use the new DirectX version 10 APIs to get the graphics memory numbers. The application gets the graphics memory numbers from the following [**DXGI\_ADAPTER\_DESC**](/windows/win32/api/dxgi/ns-dxgi-dxgi_adapter_desc) data structure, which is present in Dxgi.h and is included in the DirectX Software Development Kit (SDK).
     ```cpp
     typedef struct DXGI_ADAPTER_DESC {
         WCHAR Description[ 128 ];

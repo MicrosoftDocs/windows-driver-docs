@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.CoInstallers Section
 description: The CoInstallers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
-ms.assetid: 2deb16e1-632a-4169-b718-7e3501e64562
 keywords:
 - INF DDInstall.CoInstallers Section Device and Driver Installation
 topic_type:
@@ -166,7 +165,7 @@ Such a supplemental device-class co-installer must not replace any already regis
 
  
 
-The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to **SetupInstallFromInfSection**.
+The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to [**SetupInstallFromInfSection**](/windows/win32/api/setupapi/nf-setupapi-setupinstallfrominfsectiona) made by a *device installation application*.
 
 Examples
 --------
@@ -246,6 +245,4 @@ Be aware that any <em>DDInstall</em>**.CoInstallers** section in an INF supplied
 
 **UpdateInis**
 [**Version**](inf-version-section.md)
-
- 
 

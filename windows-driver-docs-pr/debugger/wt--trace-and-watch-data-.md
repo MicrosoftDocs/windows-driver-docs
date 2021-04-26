@@ -1,7 +1,6 @@
 ---
 title: wt (Trace and Watch Data)
 description: The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
-ms.assetid: 2dd62a7f-67d9-4b13-b04e-5cd02e6ef9f0
 keywords: ["wt (Trace and Watch Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

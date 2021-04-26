@@ -1,7 +1,6 @@
 ---
 title: Power Manager
 description: Power Manager
-ms.assetid: f7727368-6edd-427b-9fb3-02f80538807b
 keywords: ["power manager WDK kernel", "usage manager WDK power management", "power IRPs WDK kernel , power manager", "system-wide power policy WDK kernel", "power policy WDK kernel", "sleep power management WDK kernel", "hibernation power management WDK kernel", "shutdown power management WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

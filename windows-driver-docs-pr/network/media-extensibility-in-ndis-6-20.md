@@ -1,7 +1,6 @@
 ---
 title: Media Extensibility in NDIS 6.20
 description: Media Extensibility in NDIS 6.20
-ms.assetid: abc240da-be6e-4a7a-a9d1-186633c5bfd3
 keywords:
 - NDIS 6.20 WDK , media extensibility
 - media extensibility WDK NDIS 6.20

@@ -1,7 +1,6 @@
 ---
 title: Encryption Support
 description: Encryption Support
-ms.assetid: d5ce9c02-7126-4775-bb87-dae45b93b652
 keywords:
 - video decoding WDK DirectX VA , encryption
 - decoding video WDK DirectX VA , encryption

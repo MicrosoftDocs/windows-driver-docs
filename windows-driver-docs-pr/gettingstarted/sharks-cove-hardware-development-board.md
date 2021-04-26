@@ -1,7 +1,6 @@
 ---
 title: Sharks Cove hardware development board
 description: Sharks Cove is a hardware development board that you can use to develop hardware and drivers for Windows.
-ms.assetid: D86546BB-B613-4CEE-9A76-3FD269137EE9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,13 +10,9 @@ ms.localizationpriority: medium
 > [!WARNING]
 > The Sharks Cove hardware development board is no longer supported for Windows IoT Core.  For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
-Sharks Cove is a [hardware development board](https://go.microsoft.com/fwlink/p?linkid=506967) that you can use to develop hardware and drivers for Windows.
+Sharks Cove is a [hardware development board](./windows-compatible-hardware-development-boards.md) that you can use to develop hardware and drivers for Windows.
 
 The Intel Sharks Cove board supports driver development for devices that use a variety of interfaces, including GPIO, I2C, I2S, UART, SDIO, and USB. You can also use the Sharks Cove board to develop drivers for cameras and touch screens.
-
-For downloads related to the Sharks Cove board, see [Sharks Cove UEFI Firmware](https://go.microsoft.com/fwlink/p?linkid=403167).
-
-For detailed specifications, see [Sharks Cove Technical Specifications](https://go.microsoft.com/fwlink/p?linkid=403169).
 
 ## Before you start
 
@@ -45,15 +40,15 @@ A driver development environment has two computers: the *host computer* and the 
 To develop hardware and drivers for the Sharks Cove board, you need these kits and tools on the host computer:
 
 - [Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=533470)
-- [Windows Driver Kit (WDK), WDK Test Pack, and Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?LinkId=733614)
+- [Windows Driver Kit (WDK), WDK Test Pack, and Debugging Tools for Windows](../download-the-wdk.md)
 
 On the host computer, first download Visual Studio, then download the WDK, and then download the WDK Test Pack. You do not need to download Debugging Tools for Windows separately, because it is included in the WDK.
 
 ### Documentation
 
-- The online [documentation for the WDK](https://go.microsoft.com/fwlink/p?linkid=317001).
+- The online [documentation for the WDK](../index.yml).
 
-- The online [documentation for Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405).
+- The online [documentation for Debugging Tools for Windows](../debugger/index.md).
 
 - The documentation for Debugging Tools for Windows is also available as a CHM file in the installation directory. Example: C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64\\debugger.chm.
 
@@ -102,7 +97,7 @@ Double click your ISO file, and copy these files to *Root*\\Setup.
 >[!NOTE]
 >If you are running Windows 7, right-click the ISO file, and choose **Burn disk image** . Burn the image to a recordable DVD. Then copy the files from the DVD to *Root*\\Setup.
 
-Get the [Sharks Cove board support package (BSP)](https://go.microsoft.com/fwlink/p?linkid=506954). Copy all the files in the package to *Root*\\SharksCoveBsp.
+Get the Sharks Cove board support package (BSP). Copy all the files in the package to *Root*\\SharksCoveBsp.
 
 Get the [WDK Development Boards Add-on Kit](https://go.microsoft.com/fwlink/p/?linkid=403174). Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
 
@@ -178,7 +173,7 @@ Provisioning the Sharks Cove board is similar to provisioning any other computer
 
 and this topic, which is available on line and in debugger.chm.
 
-- [Setting up Kernel-Mode Debugging using Serial over USB in Visual Studio](https://go.microsoft.com/fwlink/p?linkid=400460)
+- [Setting up Kernel-Mode Debugging using Serial over USB in Visual Studio](../debugger/setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md)
 
 >[!NOTE]
 >Before you provision the Sharks Cove board, you need to disable Secure Boot. Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
@@ -191,12 +186,12 @@ Before you write a device driver for the Sharks Cove board, it is helpful to fam
 
 ## Step 6: Alter the Secondary System Description Table (SSDT)
 
-If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](https://go.microsoft.com/fwlink/p?linkid=399232).
+If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](/previous-versions//hh450903(v=vs.85)).
 
 Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
 
 >[!NOTE]
->See the [SpbAccelerometer driver cookbook](../sensors/spbaccelerometer-driver-cookbook.md) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
+>See the [SpbAccelerometer driver cookbook](../sensors/spbaccelerometer-driver-cookbook.md) for a step-by-step guide to the [SpbAccelerometer sample driver](/samples/browse/) and the ADXL345 accelerometer.
 
 1. Copy the x86 version of ASL.exe to the Sharks Cove board. ASL.exe is included in the WDK.
 
@@ -248,7 +243,7 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
 
 4. Insert a Scope(\_SB\_) entry. Inside your scope entry, insert your own Device entry. For example, here's a scope(\_SB\_) entry and a Device entry for the ADXL345 accelerometer.
 
-    ``` syntax
+```syntax
     Scope(_SB_)
     {
         Device(SPBA)
@@ -309,23 +304,20 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
 
 In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
 
-
-5.  After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
+5. After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
 
     **asl ssdt.asl**
 
     This puts the compiled output in a file named Ssdt.aml.
 
-6.  Verify that test signing is turned on for the Sharks Cove board.
+6. Verify that test signing is turned on for the Sharks Cove board.
 
-    **Note**  Test signing is turned on automatically during provisioning.
-
-
-
+  >[!NOTE]
+  >Test signing is turned on automatically during provisioning.
 
 On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
-**bcdedit /enum {current}**
+`bcdedit /enum {current}`
 
 Verify that you see `testsigning Yes` in the output.
 
@@ -354,8 +346,6 @@ If you need to turn on test signing manually, here are the steps:
     Restart the Sharks Cove board.
 
 ## Step 7: Connect your device to the Sharks Cove board
-
-Get the [specification for the Sharks Cove headers and pins](https://go.microsoft.com/fwlink/p?linkid=506966).
 
 Use the specification to determine which pins to use for your device. For example, suppose you want to connect the ADXL345 accelerometer to an I2C bus. In the specification, you can see that the J1C1 header has the pins you need. Here are some, but not all, of the pins you would use on the J1C1 header.
 
@@ -407,9 +397,9 @@ When you are ready to test your driver on the Sharks Cove board, follow these st
 
 ## Using WinDbg to debug the Sharks Cove board
 
-As an alternative to using Visual Studio to set up kernel-mode debugging, you can do the setup manually. This topic is available on line and in debugger.chm.
+As an alternative to using Visual Studio to set up kernel-mode debugging, you can do the setup manually.
 
-- [Setting up Kernel-Mode Debugging using Serial over USB Manually](https://go.microsoft.com/fwlink/p?linkid=400461)
+- [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md)
 
 As an alternative to using Visual Studio for debugging, you can use WinDbg.
 
@@ -420,24 +410,22 @@ Regardless of whether you use Visual Studio or WinDbg, these hands-on guides are
 
 ## Sample driver code
 
-- [SpbAccelerometer Sample Driver (UMDF Version 1)](https://go.microsoft.com/fwlink/p?linkid=506965)
+- [SpbAccelerometer Sample Driver (UMDF Version 1)](/samples/browse/)
 
 ## Understanding simple peripheral buses
 
-To learn how Windows drivers work with simple peripheral buses, see [Simple Peripheral Buses](https://go.microsoft.com/fwlink/p?linkid=399232).
+To learn how Windows drivers work with simple peripheral buses, see [Simple Peripheral Buses](/previous-versions//hh450903(v=vs.85)).
 
 ## Related topics
 
-[Concepts for all driver developers](https://go.microsoft.com/fwlink/p/?linkid=399233)
+[Concepts for all driver developers](./concepts-and-knowledge-for-all-driver-developers.md)
 
-[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p/?linkid=399234)
+[Developing, Testing, and Deploying Drivers](../develop/index.md)
 
-[Windows Driver Frameworks](https://go.microsoft.com/fwlink/p/?linkid=399235)
+[Windows Driver Frameworks](../wdf/index.md)
 
-[Windows Hardware Developer Center](https://go.microsoft.com/fwlink/p/?linkid=8703)
+[Windows Hardware Developer Center](https://developer.microsoft.com/windows/hardware/)
 
-[WDK Samples for Windows](https://go.microsoft.com/fwlink/p?linkid=394031)
+[WDK Samples for Windows](../samples/index.md)
 
-[Windows Hardware and Driver Developer Community](https://go.microsoft.com/fwlink/p?linkid=393983)
-
-[Technical Support](https://go.microsoft.com/fwlink/p/?linkid=8713)
+[Technical Support](https://support.microsoft.com/)

@@ -1,7 +1,6 @@
 ---
 title: Overview of Executing Tests
 description: Overview of Executing Tests
-ms.assetid: 3D58D074-DC06-4b01-9EB5-7A17E69D6935
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

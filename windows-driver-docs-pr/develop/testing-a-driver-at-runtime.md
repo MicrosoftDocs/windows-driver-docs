@@ -1,5 +1,4 @@
 ---
-ms.assetid: 50BF5B17-B7F0-49F2-9ED6-652DB32D638E
 title: How to test a driver at runtime using Visual Studio
 description: You can use WDK extensions in Visual Studio to conveniently build, deploy, install, and test a driver on a test computer on your network.
 ms.date: 04/20/2017
@@ -50,7 +49,7 @@ To make driver testing on different test targets easier, tests are scheduled to 
 4.  Select **Add/Remove Tests**.
 5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, ARM). By default all tests are shown. To view the test categories, select the folders in the Driver Test Categories drop-down list.
 
-    For example, in WDK 8, to select all of the Device Fundamentals tests that are used in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893), select **All Tests**, **Certification**, and **Device Fundamentals**. For information about the tests, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
+    For example, in WDK 8, to select all of the Device Fundamentals tests that are used in the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/), select **All Tests**, **Certification**, and **Device Fundamentals**. For information about the tests, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
 
     In WDK 8.1, the Device Fundamentals tests are under **All Tests**, **HCK Tests**, **Certification**, and **Device Fundamentals** folder. In WDK 8.1 the Driver Test Categories include the HCK (Basic) Tests. See [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md) for more information.
 
@@ -85,7 +84,7 @@ For information about the driver tests and test categories, see [How to select a
 
 You can write your own driver tests and deploy those tests on test computers. For more information, see [How to write a driver test](how-to-write-a-driver-test-.md).
 
-Running the Device Fundamentals tests in Visual Studio early in the development cycle will help you when are finally ready to test your driver using the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893).
+Running the Device Fundamentals tests in Visual Studio early in the development cycle will help you when are finally ready to test your driver using the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -94,8 +93,6 @@ Running the Device Fundamentals tests in Visual Studio early in the development 
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 * [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
-* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
-* [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893)
+* [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
+* [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
- 
-

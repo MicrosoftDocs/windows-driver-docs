@@ -1,7 +1,6 @@
 ---
 title: Status Indications in an Intermediate Driver
 description: Status Indications in an Intermediate Driver
-ms.assetid: be8d50f9-4a8d-4f3c-a507-e64dedff9a3e
 keywords:
 - intermediate drivers WDK networking , status indications
 - NDIS intermediate drivers WDK , status indications

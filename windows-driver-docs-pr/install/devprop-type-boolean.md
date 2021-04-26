@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_BOOLEAN
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BOOLEAN property type represents the base-data-type identifier that indicates that the data type is a DEVPROP_BOOLEAN-typed Boolean value.
-ms.assetid: f0e960b7-be71-4117-b978-5877e5bf771f
 keywords: ["DEVPROP_TYPE_BOOLEAN Device and Driver Installation"]
 topic_type:
 - apiref

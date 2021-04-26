@@ -1,7 +1,6 @@
 ---
 title: Virtual Ports (VPorts)
 description: Virtual Ports (VPorts)
-ms.assetid: FCE0B5F5-5E2E-493A-BE25-57FB2C8B0389
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

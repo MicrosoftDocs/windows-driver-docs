@@ -1,7 +1,6 @@
 ---
 title: ValidateScanTicketResponse element
 description: The required ValidateScanTicketResponse operation notifies the client whether a client's submitted ScanTicket is valid.
-ms.assetid: 7eea7d33-45de-45bf-8e89-de06f5710073
 keywords: ["ValidateScanTicketResponse element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Stencil Planes
 description: Stencil Planes
-ms.assetid: a2abe78b-7755-45fc-ba02-f2809db5da3e
 keywords:
 - Direct3D WDK Windows 2000 display , stencil planes
 - stencil planes WDK Direct3D
@@ -40,7 +39,7 @@ Specifies which bits the stencil value occupies.
 
 A new flag, DDPF\_STENCILBUFFER, indicates the presence of stencil bits within the z-buffer. The **dwZBufferBitDepth** member, which existed previously, gives the total number of z-buffer bits including the stencil bits.
 
-DirectX 6.0 and later versions drivers should still set the appropriate DDBD\_*Xx* flags in **dwDeviceZBufferBitDepth** for the z-only z-buffer formats they support. If stencil planes are not supported and the DDBD\_*Xx* flags can represent all available z-buffer formats, then setting these flags is sufficient, because they are translated into DDPIXELFORMAT by **IDirect3D7::EnumZBufferFormats**. Otherwise, the Direct3D driver must respond to a [**DdGetDriverInfo**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) query that uses the GUID\_ZPixelFormats GUID by returning a buffer in which the first DWORD indicates the number of valid z-buffer DDPIXELFORMAT structures, followed by the DDPIXELFORMAT structures themselves.
+DirectX 6.0 and later versions drivers should still set the appropriate DDBD\_*Xx* flags in **dwDeviceZBufferBitDepth** for the z-only z-buffer formats they support. If stencil planes are not supported and the DDBD\_*Xx* flags can represent all available z-buffer formats, then setting these flags is sufficient, because they are translated into DDPIXELFORMAT by **IDirect3D7::EnumZBufferFormats**. Otherwise, the Direct3D driver must respond to a [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) query that uses the GUID\_ZPixelFormats GUID by returning a buffer in which the first DWORD indicates the number of valid z-buffer DDPIXELFORMAT structures, followed by the DDPIXELFORMAT structures themselves.
 
 New render states associated with stencil planes are shown in the following table, which lists the render state, the type associated with the render state's value, and a description. For more details on these render states, see the DirectX SDK documentation.
 

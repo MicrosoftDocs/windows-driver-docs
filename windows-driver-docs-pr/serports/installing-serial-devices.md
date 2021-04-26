@@ -1,7 +1,6 @@
 ---
 title: Installing Serial Devices
 description: Installing Serial Devices
-ms.assetid: e51ac390-1de0-4377-bcc3-5f179b6ca6df
 keywords:
 - serial devices WDK , installing
 ms.date: 04/20/2017
@@ -24,4 +23,4 @@ There are no other serial-specific requirements for installing serial devices.
 
 For general information about installing devices, see the [Device Installation Design Guide](../install/index.md) section.
 
-For more information about serial devices, see [Serial Devices and Drivers](/previous-versions/ff547451(v=vs.85)).
+For more information about serial devices, see [Serial Devices and Drivers](using-serial-sys-and-serenum-sys.md).

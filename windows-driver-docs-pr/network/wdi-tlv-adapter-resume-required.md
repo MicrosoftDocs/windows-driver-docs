@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ADAPTER_RESUME_REQUIRED
 description: WDI_TLV_ADAPTER_RESUME_REQUIRED is a TLV that specifies if adapter resume is required.
-ms.assetid: 341B871A-F789-447E-A74C-3274B6B8B14A
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADAPTER_RESUME_REQUIRED Network Drivers Starting with Windows Vista

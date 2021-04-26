@@ -1,7 +1,6 @@
 ---
 title: Configure Non-PnP devices to an RS-232 Port
 description: Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
-ms.assetid: 5106e42e-4f87-47c3-a0ec-f70e77daabd3
 keywords:
 - Plug and Play serial devices WDK
 - serial devices WDK , non-Plug and Play

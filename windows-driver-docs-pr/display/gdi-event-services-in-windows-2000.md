@@ -1,7 +1,6 @@
 ---
 title: GDI Event Services in Windows 2000
 description: GDI Event Services in Windows 2000
-ms.assetid: bf7f2127-cd3e-430c-99fd-62c824394a57
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , GDI event services
 - GDI WDK Windows 2000 display , events
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 [GDI Event Services](gdi-event-services.md) describes a group of GDI event-related functions that a display driver can use for synchronization. While these event-related functions are documented as only available in Microsoft Windows XP and later, most of them are also available in Microsoft Windows 2000. Although most of these event-related functions are available in Windows 2000, using them in a driver implemented for Windows 2000 is discouraged because such a driver could make Windows 2000 unreliable.
 
-The event-related functions that are available in Windows 2000 behave similarly in Windows 2000 as they do in Windows XP except for the [**EngWaitForSingleObject**](/windows/desktop/api/winddi/nf-winddi-engwaitforsingleobject) function. The **EngWaitForSingleObject** implementation in Windows 2000 returns a DWORD value rather than the BOOL value that the Windows XP implementation returns. This DWORD value can be one of the following values:
+The event-related functions that are available in Windows 2000 behave similarly in Windows 2000 as they do in Windows XP except for the [**EngWaitForSingleObject**](/windows/win32/api/winddi/nf-winddi-engwaitforsingleobject) function. The **EngWaitForSingleObject** implementation in Windows 2000 returns a DWORD value rather than the BOOL value that the Windows XP implementation returns. This DWORD value can be one of the following values:
 
 <span id="Zero"></span><span id="zero"></span><span id="ZERO"></span>Zero  
 Indicates that one of the following operations occurred:
@@ -29,7 +28,7 @@ Indicates that one of the following operations occurred:
 <span id="Any_nonzero_value"></span><span id="any_nonzero_value"></span><span id="ANY_NONZERO_VALUE"></span>Any nonzero value  
 This value is an NTSTATUS status value that indicates the specific error condition. For example, STATUS\_TIMEOUT indicates that a time-out occurred.
 
-**Note**   The [**EngClearEvent**](/windows/desktop/api/winddi/nf-winddi-engclearevent) and [**EngReadStateEvent**](/windows/desktop/api/winddi/nf-winddi-engreadstateevent) functions are not available in Windows 2000.
+**Note**   The [**EngClearEvent**](/windows/win32/api/winddi/nf-winddi-engclearevent) and [**EngReadStateEvent**](/windows/win32/api/winddi/nf-winddi-engreadstateevent) functions are not available in Windows 2000.
 
  
 

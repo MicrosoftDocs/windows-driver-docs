@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DOUBLE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DOUBLE identifier represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed IEEE floating-point number.
-ms.assetid: c04f8538-ce0d-4eaf-a4d5-86968dbc18fd
 keywords: ["DEVPROP_TYPE_DOUBLE Device and Driver Installation"]
 topic_type:
 - apiref

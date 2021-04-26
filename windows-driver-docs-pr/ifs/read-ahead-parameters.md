@@ -1,17 +1,15 @@
 ---
 title: Read ahead parameters
 description: read-ahead parameters for  read-ahead granularity and pipelined read-ahead.
-ms.assetid:
 keywords: ["read-ahead parameters"]
 topic_type:
 - apiref
 api_name:
-- read_ahead_parame3ters
+- read_ahead_parameters
 api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author: eliotgra
 ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---

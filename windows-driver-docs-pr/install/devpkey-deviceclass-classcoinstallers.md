@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_ClassCoInstallers
 description: DEVPKEY_DeviceClass_ClassCoInstallers
-ms.assetid: c1369006-5329-48c7-afe0-ddce44889bbc
 keywords: ["DEVPKEY_DeviceClass_ClassCoInstallers Device and Driver Installation"]
 topic_type:
 - apiref
@@ -68,7 +67,7 @@ Each class installer in the class co-installer list is identified by its DLL and
 
 For information about how to install a class co-installer, see [Registering a Class Co-installer](./registering-a-class-co-installer.md).
 
-You can retrieve the value of DEVPKEY_DeviceClass_ClassCoInstallers by calling [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw). You can set DEVPKEY_DeviceClass_ClassCoInstallers by calling [**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw) or [**SetupDiSetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyexw).
+You can retrieve the value of DEVPKEY_DeviceClass_ClassCoInstallers by calling [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw). You can set DEVPKEY_DeviceClass_ClassCoInstallers by calling [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw) or [**SetupDiSetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyexw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_ClassCoInstallers property key. For information about how to access the corresponding information on these earlier versions of Windows, see [Accessing the Co-installers Registry Entry Value of a Device Setup Class](./accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md).
 
@@ -82,13 +81,13 @@ Requirements
 ## See also
 
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
+[**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
-[**SetupDiSetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyexw)
+[**SetupDiSetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyexw)
 
  
 

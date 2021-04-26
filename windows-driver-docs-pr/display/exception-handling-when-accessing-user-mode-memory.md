@@ -1,7 +1,6 @@
 ---
 title: Exception Handling When Accessing User-Mode Memory
 description: Exception Handling When Accessing User-Mode Memory
-ms.assetid: 44ed69a0-da0e-4335-9128-a78a83ea80dd
 keywords:
 - user-mode memory WDK Windows 2000 display
 - user-mode memory WDK Windows 2000 display , exception handling
@@ -31,7 +30,7 @@ In the following scenarios, the runtime secures ownership of memory allocated in
 
 -   The driver updates the render state array to which the **lpdwRStates** member of D3DHAL\_DRAWPRIMITIVES2DATA points. The driver updates this array during a call to its *D3dDrawPrimitives2* function.
 
--   The driver updates its state at the **lpdwStates** member of the [**DD\_GETDRIVERSTATEDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverstatedata) structure during a call to its [**D3dGetDriverState**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverstate) function.
+-   The driver updates its state at the **lpdwStates** member of the [**DD\_GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverstatedata) structure during a call to its [**D3dGetDriverState**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverstate) function.
 
 -   The driver bit-block transfers or accesses a system texture that was allocated in user memory.
 

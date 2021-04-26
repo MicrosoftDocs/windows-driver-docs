@@ -1,7 +1,6 @@
 ---
 title: Overview of Hyper-V Extensible Switch Policies
 description: Overview of Hyper-V Extensible Switch Policies
-ms.assetid: 1D0AC55B-60F7-400E-A376-F3E2F7373A92
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Release Signing
 description: After completing test signing and verifying that the driver is ready for release, the driver package has to be release signed. There are two ways of release signing a driver package.
-ms.assetid: 71499A0A-95D0-411C-84D1-C4B91FA4E6B1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -111,7 +110,7 @@ After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk*
 
 *Excerpt from* [Importing an SPC into a Certificate Store](importing-an-spc-into-a-certificate-store.md):
 
-Starting with Windows Vista, an alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](https://go.microsoft.com/fwlink/p/?linkid=168888) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
+Starting with Windows Vista, an alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732443(v=ws.10)) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
 
 ```cpp
 certutil -user -p pfxpassword -importPFX abc.pfx

@@ -1,7 +1,6 @@
 ---
 title: High Order Surface Render States
 description: High Order Surface Render States
-ms.assetid: c664e0b8-8b96-4f66-bb9c-b87c5d5e7a05
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces, render states
 - high order surfaces WDK DirectX 8.0 , render states

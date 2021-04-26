@@ -1,7 +1,6 @@
 ---
 title: Incoming Request to Change Call Parameters
 description: Incoming Request to Change Call Parameters
-ms.assetid: f7b9483c-070e-4a5d-a1b0-fadb65843a1e
 keywords:
 - call parameter changes WDK CoNDIS
 - incoming call parameter change requests WDK CoNDIS

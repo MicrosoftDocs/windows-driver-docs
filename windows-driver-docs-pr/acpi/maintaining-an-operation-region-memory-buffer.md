@@ -1,7 +1,6 @@
 ---
 title: Maintaining an Operation Region Memory Buffer
 description: Maintaining an Operation Region Memory Buffer
-ms.assetid: 4abe82ec-d8c4-43c1-a72f-5114ba07160e
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI

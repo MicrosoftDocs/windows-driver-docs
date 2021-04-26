@@ -1,7 +1,6 @@
 ---
 title: MPIO\_REGISTERED\_DSM WMI Class
 description: MPIO\_REGISTERED\_DSM WMI Class
-ms.assetid: 3be335bd-e5d8-4611-9ccf-bd7fb0457b61
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

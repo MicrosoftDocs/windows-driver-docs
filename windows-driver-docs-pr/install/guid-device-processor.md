@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_PROCESSOR
 description: GUID_DEVICE_PROCESSOR
-ms.assetid: 47a70d17-5b30-4bae-9f24-f77f3e26e7fc
 keywords: ["GUID_DEVICE_PROCESSOR Device and Driver Installation"]
 topic_type:
 - apiref

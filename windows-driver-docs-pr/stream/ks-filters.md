@@ -1,7 +1,6 @@
 ---
 title: KS Filters
 description: KS Filters
-ms.assetid: caf46279-17f3-4bb4-8b8a-a1673f9fa28f
 keywords:
 - filters WDK kernel streaming
 - KS filters WDK kernel streaming

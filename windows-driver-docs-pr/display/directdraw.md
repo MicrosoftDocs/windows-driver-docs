@@ -1,7 +1,6 @@
 ---
 title: DirectDraw
 description: DirectDraw
-ms.assetid: b7f1194e-0f5e-444e-a71c-6a4a836547d9
 keywords:
 - DirectDraw WDK Windows 2000 display
 - Windows 2000 display driver model WDK , DirectDraw
@@ -31,7 +30,7 @@ Driver writers who are creating Microsoft DirectDraw drivers for Microsoft Windo
 
 -   *dvp.h* is used when the driver supports the DirectDraw video port extensions (VPE).
 
--   *dxmini.h* is used when the video miniport driver includes support for kernel-mode video transport, the DxApi interface (functions specified by the [**DXAPI\_INTERFACE**](/windows/desktop/api/dxmini/ns-dxmini-_dxapi_interface) structure).
+-   *dxmini.h* is used when the video miniport driver includes support for kernel-mode video transport, the DxApi interface (functions specified by the [**DXAPI\_INTERFACE**](/windows/win32/api/dxmini/ns-dxmini-dxapi_interface) structure).
 
 -   *ddkmapi.h* is used by video capture drivers to access the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function. DirectDraw, in turn, calls upon the DxApi interface.
 
@@ -43,7 +42,7 @@ Driver writers who are creating Microsoft DirectDraw drivers for Microsoft Windo
 
 The *ddraw.h* header file is shipped with the Windows SDK; all other header files are included with the Windows Driver Kit (WDK). The Windows Driver Development Kit (DDK) also contains sample code for a DirectDraw driver in the *p3samp* video display directory.
 
-Reference pages for DirectDraw driver functions, callbacks, and structures can be found in [DirectDraw Driver Functions](/windows-hardware/drivers/ddi/index) and [DirectDraw Driver Structures](/windows-hardware/drivers/ddi/index).
+Reference pages for DirectDraw driver functions, callbacks, and structures can be found in [DirectDraw Driver Functions](/windows-hardware/drivers/ddi/_display/#functions) and [DirectDraw Driver Structures](/windows-hardware/drivers/ddi/_display/#structures).
 
 For more information about DirectDraw, see the Windows SDK. DirectDraw driver writers can send questions and comments by email to <em>directx@microsoft.com</em>.
 

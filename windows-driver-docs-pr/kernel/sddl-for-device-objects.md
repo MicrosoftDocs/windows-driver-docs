@@ -1,7 +1,6 @@
 ---
 title: SDDL for Device Objects
 description: SDDL for Device Objects
-ms.assetid: c0e4432a-4429-4ecd-a2e5-f93a9e3caf48
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "Security Descriptor Definition Language WDK device objects", "SDDL WDK device objects", "IoCreateDeviceSecure", "security descriptors WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -259,7 +258,7 @@ The following SIDs deserve special mention.
 <td><p>UD</p></td>
 <td><p>User-Mode Drivers</p>
 <p>This SID grants access to user-mode drivers. Currently, this SID covers only drivers that are written for the User-Mode Driver Framework (UMDF). This SID is available starting with Windows 8.</p>
-<p>In earlier versions of Windows, which do not recognize the "UD" abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="/windows-hardware/drivers/wdf/controlling-device-access" data-raw-source="[Controlling Device Access](/windows-hardware/drivers/wdf/controlling-device-access)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
+<p>In earlier versions of Windows, which do not recognize the "UD" abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="/windows-hardware/drivers/wdf/controlling-device-access" data-raw-source="[Controlling Device Access](../wdf/controlling-device-access.md)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -319,6 +318,4 @@ Also note that traversal access is not granted to normal users. As such, this mi
  
 
 Note that the above SDDL strings do not include any inheritance modifiers. As such, they are only appropriate for device objects and should not be used for files or registry keys. For more information about specifying inheritance using SDDL, see the Microsoft Windows SDK documentation.
-
- 
 

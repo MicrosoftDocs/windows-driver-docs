@@ -1,7 +1,6 @@
 ---
 title: VMQ Receive Path
 description: VMQ Receive Path
-ms.assetid: e59907fc-94dc-45c4-943d-1628c63961dc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_RATEMATCH
 description: The KSPROPERTY\_GM\_RATEMATCH property is not currently supported.
-ms.assetid: b712d709-e871-49e9-b92e-c439be1687ac
 keywords: ["KSPROPERTY_GM_RATEMATCH Streaming Media Devices"]
 topic_type:
 - apiref

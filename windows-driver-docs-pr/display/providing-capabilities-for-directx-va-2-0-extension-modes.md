@@ -1,7 +1,6 @@
 ---
 title: Providing Capabilities for DirectX VA 2.0 Extension Modes
 description: Providing Capabilities for DirectX VA 2.0 Extension Modes
-ms.assetid: 86283ac8-a56c-4da9-a3ef-6f4d694130a7
 keywords:
 - DirectX Video Acceleration WDK display , extended support
 - Video Acceleration WDK DirectX , extended support

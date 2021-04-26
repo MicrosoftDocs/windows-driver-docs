@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Characteristics
 description: DEVPKEY_Device_Characteristics
-ms.assetid: 148557aa-2246-4cd9-9008-d920ffb64845
 keywords: ["DEVPKEY_Device_Characteristics Device and Driver Installation"]
 topic_type:
 - apiref
@@ -64,7 +63,7 @@ The value of DEVPKEY_Device_Characteristics is a bitwise OR of the FILE_*Xxx* fi
 
 You can set the value of DEVPKEY_Device_Characteristics by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF DDInstall.HW section**](./inf-ddinstall-hw-section.md) that installs a device.
 
-You can retrieve the value of DEVPKEY_Device_Characteristics by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_Characteristics by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Characteristics property key. Instead, you can use the corresponding SPDRP_CHARACTERISTICS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -84,9 +83,9 @@ Requirements
 
 [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

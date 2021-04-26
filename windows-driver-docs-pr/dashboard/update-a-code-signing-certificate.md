@@ -1,7 +1,6 @@
 ---
 title: Add or Update a code signing certificate
 description: Add or Update a code signing certificate
-ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ As a Partner Center administrator, you’re responsible for keeping your digital
 
 Partner Center supports multiple certificates associated with a single account.  If you want to add additional certificates using this same process.
 
-If you’re registering your company on dashboard for the first time, see [Establish a new company](/windows-hardware/drivers/dashboard/dashboard-administration).
+If you’re registering your company on dashboard for the first time, see [Get started with the hardware dashboard program](get-started-with-the-hardware-dashboard.md).
 
 > [!IMPORTANT]
 > The certificate uploaded and used for all Partner Center submission packages has changed:
@@ -50,7 +49,7 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 * [Before you sign in](./get-started-with-the-hardware-dashboard.md)
 
-* [Establish a new company](/windows-hardware/drivers/dashboard/dashboard-administration)
+* [Get started with the hardware dashboard program](get-started-with-the-hardware-dashboard.md)
 
 * [Hardware certification submissions](./hardware-certification-submissions.md)
 

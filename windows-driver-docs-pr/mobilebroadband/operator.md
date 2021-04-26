@@ -1,7 +1,6 @@
 ---
 title: Operator
 description: Operator
-ms.assetid: 770ad50d-d42d-49ad-a302-e839a0ca1fb4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

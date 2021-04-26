@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_CHARACTERS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_CHARACTERS property describes the maximum number of characters (excluding the NULL terminator) that the Imprinter/Endorser item can print or endorse on each page.
-ms.assetid: B78BC67D-2B49-4A0E-A275-2A9A8F97F84E
 keywords: ["WIA_IPS_PRINTER_ENDORSER_MAX_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Required Dispatch Routines
 description: Required Dispatch Routines
-ms.assetid: 9b760ac7-7f31-47ad-bf84-7d79c6b24ebd
 keywords: ["dispatch routines WDK kernel , required", "required dispatch routines WDK kernel"]
 ms.date: 12/06/2018
 ms.localizationpriority: medium

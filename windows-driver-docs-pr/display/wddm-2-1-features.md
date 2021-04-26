@@ -1,7 +1,6 @@
 ---
 title: WDDM 2.1 Features
 description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 2.1.
-ms.assetid: 7dc0d0ad-98da-4bd6-bed9-f70525b682bc
 ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---
@@ -173,7 +172,7 @@ WDDM 2.1 graphics drivers have different INF requirements as compared to the WDD
 
 3. WDDM 2.1 graphics driver INF changes for “Driver Store" installation.
 
-For more info, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+For more info, see [INF File Sections and Directives](../install/index.md).
 
 Driver files, 32 and 64 bit, will remain in and be loaded from the driver store. WoW64 file system redirection does not apply to the driver store. IHVs may specify subfolders by using standard INF syntax to create, for example, a WoW64 folder under the unique driver store folder if desired.
 

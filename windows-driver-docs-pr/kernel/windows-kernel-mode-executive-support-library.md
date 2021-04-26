@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Executive Support Library
 description: Windows Kernel-Mode Executive Support Library
-ms.assetid: cfb8c6c0-9454-4dc6-98e8-c41cbf1c0cad
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

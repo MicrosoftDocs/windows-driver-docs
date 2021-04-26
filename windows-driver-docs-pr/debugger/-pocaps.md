@@ -1,7 +1,6 @@
 ---
 title: pocaps
 description: The pocaps extension displays the power capabilities of the target computer.
-ms.assetid: 011d923a-a5c4-4d3b-ba06-fe5dc884adaa
 keywords: ["pocaps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

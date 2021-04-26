@@ -1,7 +1,6 @@
 ---
 title: Creating IOCTL Requests in Drivers
 description: Creating IOCTL Requests in Drivers
-ms.assetid: 155e2577-0e9a-4c0b-a25a-8516ce3de631
 keywords: ["I/O control codes WDK kernel , creating requests", "control codes WDK IOCTLs , creating requests", "IOCTLs WDK kernel , creating requests", "synchronization WDK IRPs", "embedded pointers WDK IOCTLs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -51,6 +50,6 @@ Nevertheless, a pair of class/port drivers that define internal I/O control code
 
 -   Private data buffers are accessible in an arbitrary thread context by the port driver.
 
-Display drivers can call the GDI function [**EngDeviceIoControl**](/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) to send privately defined, device-specific I/O control requests, as well as system-defined public I/O control requests, through the system video port driver down to the corresponding adapter-specific [video miniport drivers](../display/video-miniport-drivers-in-the-windows-2000-display-driver-model.md).
+Display drivers can call the GDI function [**EngDeviceIoControl**](/windows/win32/api/winddi/nf-winddi-engdeviceiocontrol) to send privately defined, device-specific I/O control requests, as well as system-defined public I/O control requests, through the system video port driver down to the corresponding adapter-specific [video miniport drivers](../display/video-miniport-drivers-in-the-windows-2000-display-driver-model.md).
 
-Any user-mode component of a driver package can call [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) to send I/O control requests to a driver stack. The I/O manager creates an [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) request and delivers it to the highest-level driver.
+Any user-mode component of a driver package can call [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) to send I/O control requests to a driver stack. The I/O manager creates an [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) request and delivers it to the highest-level driver.

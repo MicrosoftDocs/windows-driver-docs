@@ -1,7 +1,6 @@
 ---
 title: Updating Driver Files
 description: Updating Driver Files
-ms.assetid: e232abd9-4e51-4fa7-a00c-f5e184706222
 keywords:
 - Hardware Update Wizard WDK
 - updating driver files
@@ -36,12 +35,12 @@ Drivers are updated whenever one of the following occurs:
 
 Use the following guidelines when you write installation software and INF files that update existing drivers.
 
--   Installation software can call [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), supplying an INF file and a hardware ID, to update drivers for devices that match the hardware ID.
+-   Installation software can call [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), supplying an INF file and a hardware ID, to update drivers for devices that match the hardware ID.
 
     Starting with Windows Vista, installation software can also call one of the following to update drivers:
 
-    -   [**DiInstallDriver**](/windows/desktop/api/newdev/nf-newdev-diinstalldrivera), which pre-installs a driver and then installs the driver on devices present in the system that the driver supports.
-    -   [**DiInstallDevice**](/windows/desktop/api/newdev/nf-newdev-diinstalldevice), which installs a specified driver from the driver store on a specified device that is present in the system.
+    -   [**DiInstallDriver**](/windows/win32/api/newdev/nf-newdev-diinstalldrivera), which pre-installs a driver and then installs the driver on devices present in the system that the driver supports.
+    -   [**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice), which installs a specified driver from the driver store on a specified device that is present in the system.
 
     For more information, see [Writing a Device Installation Application](writing-a-device-installation-application.md).
 
@@ -61,7 +60,5 @@ Use the following guidelines when you write installation software and INF files 
 
 -   When updating a class installer, class co-installer, or service DLL, you must give the new version a new file name.
 
-For more information about INF files, see [Creating an INF File](overview-of-inf-files.md) and [INF File Sections and Directives](inf-file-sections-and-directives.md).
-
- 
+For more information about INF files, see [Creating an INF File](overview-of-inf-files.md) and [INF File Sections and Directives](./index.md).
 

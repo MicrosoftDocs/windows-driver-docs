@@ -1,7 +1,6 @@
 ---
 title: Porting NDIS miniport drivers to NetAdapterCx
 description: Porting NDIS miniport drivers to NetAdapterCx
-ms.assetid: F5C798C6-B746-43CB-BF63-DBA7DD0975ED
 keywords:
 - Porting miniport drivers to the Network Adapter Class Extension, porting to the Network Adapter WDF Class Extension, porting NDIS 6.x to NetAdapterCx
 ms.date: 01/22/2019
@@ -74,16 +73,6 @@ You'll call the methods equivalent to [**NdisMSetMiniportAttributes**](/windows-
 
 For info on the callbacks you'll need to provide and when to start a net adapter, see [Device and adapter initialization](device-and-adapter-initialization.md).
 
-## Creating queues to manage control requests
-
-Next, still in [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), set up the object identifier (OID) path. The OID path is modeled like a WDF queue, but you'll be getting OIDs instead of WDFREQUESTs.
-
-There are two high level approaches you might take when porting this. The first option is to register a [*EVT_NET_REQUEST_DEFAULT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netrequestqueue/nc-netrequestqueue-evt_net_request_default) handler that receives OID requests in a very similar way to how a miniport driver receives requests from NDIS. This is the easiest port, since you'll likely just need to adjust a function signature from your old MINIPORT_OID_REQUEST handler.
-
-The other option is to break apart your OID handler's switch statement and provide a separate handler for each individual OID. You might choose this option if your device requires OID-specific functionality.
-
-If you used the [**Direct OID Request Interface in NDIS 6.1**](../network/direct-oid-request-interface-in-ndis-6-1.md), replace it with a parallel WDF queue. Similarly, the regular (serial) request interface in NDIS should become a sequential WDF queue.
-
 ## Reading configuration from the registry
 
 Next, replace calls to [**NdisOpenConfigurationEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenconfigurationex) and related functions with the `NetConfiguration*` methods. The `NetConfiguration*` methods are similar to the `Ndis*Configuration*` functions, and you won't need to restructure your code.
@@ -153,7 +142,7 @@ Device removal for a WDF NIC driver is the same as in any other WDF device drive
 
 Your *MiniportHaltEx* handler will likely be distributed between [*EVT_WDF_DEVICE_D0_EXIT*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) and [*EVT_WDF_DEVICE_RELEASE_HARDWARE*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware).
 
-The WDF client does not need to delete the NetAdapter or any of the OID and datapath queues that it created. WDF deletes these objects automatically.
+The WDF client does not need to delete the NetAdapter or any of the datapath queues that it created. WDF deletes these objects automatically.
 
 You can delete *MiniportShutdownEx*, *MiniportResetEx* and *MiniportCheckForHangEx*. These callbacks are no longer supported.
 

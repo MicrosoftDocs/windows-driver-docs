@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Manipulate Memory
 description: Boot Parameters to Manipulate Memory
-ms.assetid: 04504216-20b5-4c65-a1e2-6eec7480ce17
 keywords:
 - memory-related boot options WDK
 - boot parameters WDK

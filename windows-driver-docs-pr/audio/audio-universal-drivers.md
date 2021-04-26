@@ -1,7 +1,6 @@
 ---
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
-ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
 ms.date: 10/18/2019
 ms.localizationpriority: medium
 ---
@@ -114,7 +113,6 @@ The traditional INF files continue to be available in the SYSVAD sample.
 | File name                      | Description                                                                    |
 |--------------------------------|--------------------------------------------------------------------------------|
 | tabletaudiosample.inf          | A desktop monolitic INF file that contains all of the information needed to install the driver. |
-| phoneaudiosample.inf           | A phone monolitic INF file that contains all of the information needed to install the driver.   |
 
 ### APO vendor specific tuning parameters and feature configuration
 
@@ -128,7 +126,7 @@ To implement an end user UI, use a Hardware Support App (HSA) for a Windows Univ
 
 ### Programmatically launching UWP Hardware Support Apps
 
-To programmatically launch a UWP Hardware Support App, based on a driver event (for example, when a new audio device is connected), use the Windows Shell APIs. The Windows 10 Shell APIs support a method for launching UWP UI based on resource activation, or directly via [IApplicationActivationManager](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication). You can find more details on automated launching for UWP applications in [Automate launching Windows 10 UWP apps](/windows/uwp/xbox-apps/automate-launching-uwp-apps#launch-activation).  
+To programmatically launch a UWP Hardware Support App, based on a driver event (for example, when a new audio device is connected), use the Windows Shell APIs. The Windows 10 Shell APIs support a method for launching UWP UI based on resource activation, or directly via [IApplicationActivationManager](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication). You can find more details on automated launching for UWP applications in [Automate launching Windows 10 UWP apps](/windows/uwp/xbox-apps/automate-launching-uwp-apps#launch-activation).  
 
 ### APO and device driver vendor use of the AudioModules API
 
@@ -216,26 +214,3 @@ Follow these steps to install the driver using the PnpUtil on the target system.
 
 5. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the Microsoft Virtual Audio Device (WDM) - Sysvad Sample driver.
 
-## Building the Sysvad Universal Audio Sample for Windows 10 Mobile
-
-Complete the following steps to build the sysvad sample for Windows 10 Mobile.
-
-1. Locate the Mobile inf file (phoneaudiosample.inf) and set the manufacturer name to a value such as "Contoso"
-
-2. Build the following projects in the sysvad solution:
-
-   - EndPointsCommon
-
-   - PhoneAudioSample
-
-3. Locate the output directory for the build from the . For example with a default location of Visual Studio in could be located in a directory like this:
-
-   ```cmd
-   C:\Program Files (x86)\Windows Kits\10\src\audio\sysvad\x64\Debug\package`
-   ```
-
-4. Follow the guidance in [Creating packages](/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) to create a package that contains the driver files for a mobile image.
-
-5. To install a mobile driver package (.spkg file), you will need to combine packages into a mobile OS image. Use ImgGen to add the .spkg driver package to a full flash update (FFU) image that can then be flashed to a mobile device. It may be necessary to remove other audio drivers that exist in the mobile image to allow for testing of the sysvad virtual audio driver.
-
-6. After the OS image contains the driver package is running, play a sound clip and validate that the sysvad phone audio sample is functional. You can establish a kernel debugger connection to monitor the sysvad virtual driver on a mobile device.

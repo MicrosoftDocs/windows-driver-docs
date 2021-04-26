@@ -1,7 +1,6 @@
 ---
 title: Granting Oplocks
 description: Granting Oplocks
-ms.assetid: 7faf17ef-1596-4952-9575-616f66b37ed6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ Oplocks are requested through [FSCTL](https://go.microsoft.com/fwlink/p/?linkid=
 
 -   FSCTL\_REQUEST\_OPLOCK
 
-The first four FSCTLs in the list are used to request legacy oplocks. The last FSCTL is used to request Windows 7 oplocks with the REQUEST\_OPLOCK\_INPUT\_FLAG\_REQUEST flag specified in the **Flags** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure, passed as the *lpInBuffer* parameter of [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239). In a similar manner, [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) can be used to request Windows 7 oplocks from kernel mode. A file system minifilter must use [**FltAllocateCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata) and [**FltPerformAsynchronousIo**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltperformasynchronousio) to request a Windows 7 oplock. To specify which of the four Windows 7 oplocks is required, one or more of the flags OPLOCK\_LEVEL\_CACHE\_READ, OPLOCK\_LEVEL\_CACHE\_HANDLE, or OPLOCK\_LEVEL\_CACHE\_WRITE is set in the **RequestedOplockLevel** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](./fsctl-request-oplock.md).
+The first four FSCTLs in the list are used to request legacy oplocks. The last FSCTL is used to request Windows 7 oplocks with the REQUEST\_OPLOCK\_INPUT\_FLAG\_REQUEST flag specified in the **Flags** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure, passed as the *lpInBuffer* parameter of [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol). In a similar manner, [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) can be used to request Windows 7 oplocks from kernel mode. A file system minifilter must use [**FltAllocateCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata) and [**FltPerformAsynchronousIo**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltperformasynchronousio) to request a Windows 7 oplock. To specify which of the four Windows 7 oplocks is required, one or more of the flags OPLOCK\_LEVEL\_CACHE\_READ, OPLOCK\_LEVEL\_CACHE\_HANDLE, or OPLOCK\_LEVEL\_CACHE\_WRITE is set in the **RequestedOplockLevel** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](./fsctl-request-oplock.md).
 
 When a request is made for an oplock and the oplock can be granted, the file system returns STATUS\_PENDING (because of this, oplocks are never granted for synchronous I/O). The FSCTL IRP does not complete until the oplock is broken. If the oplock cannot be granted, an appropriate error code is returned. The most commonly returned error codes are STATUS\_OPLOCK\_NOT\_GRANTED and STATUS\_INVALID\_PARAMETER (and their equivalent user-mode analogs).
 
@@ -68,7 +67,7 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>If opened for SYNCHRONOUS access, STATUS_OPLOCK_NOT_GRANTED is returned (oplocks are not granted for synchronous I/O requests).</li>
 </ul></li>
-<li>There are no <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-kernel-transaction-manager" data-raw-source="[TxF](../kernel/windows-kernel-mode-kernel-transaction-manager.md)">TxF</a> transactions on any stream of the file.
+<li>There are no <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-kernel-transaction-manager" data-raw-source="[TxF](../kernel/windows-kernel-mode-kernel-transaction-manager.md)">TxF</a> transactions on any stream of the file.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -251,8 +250,4 @@ The following table identifies the required conditions necessary to grant an opl
  
 
 **Note**   Read and Level 2 oplocks may coexist on the same stream, and Read and Read-Handle oplocks may coexist, but Level 2 and Read-Handle oplocks may not coexist.
-
- 
-
- 
 

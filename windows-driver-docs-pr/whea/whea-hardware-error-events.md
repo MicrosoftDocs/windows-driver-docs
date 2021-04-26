@@ -1,7 +1,6 @@
 ---
 title: WHEA Hardware Error Events
 description: WHEA Hardware Error Events
-ms.assetid: c9f88e3b-3915-4a77-8d60-f0f3da514abc
 keywords:
 - events WDK WHEA , about events
 - Windows Hardware Error Architecture WDK , events

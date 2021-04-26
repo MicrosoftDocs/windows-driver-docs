@@ -1,7 +1,6 @@
 ---
 title: NDIS Port OID Requests
 description: NDIS Port OID Requests
-ms.assetid: 361f9adf-2bf6-4aa8-b66b-fe9304b14550
 keywords:
 - ports WDK NDIS , OID requests
 - NDIS ports WDK , OID requests

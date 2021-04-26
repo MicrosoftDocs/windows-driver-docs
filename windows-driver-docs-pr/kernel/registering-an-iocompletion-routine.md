@@ -1,7 +1,6 @@
 ---
 title: Registering an IoCompletion Routine
 description: Registering an IoCompletion Routine
-ms.assetid: 413d8463-b2ce-44b6-846c-f853b5cd580e
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

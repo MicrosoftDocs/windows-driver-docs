@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_LOUDNESS
 description: KSNODETYPE\_LOUDNESS
-ms.assetid: 46359718-353a-4d8f-a9a6-99363f9b3a6e
 keywords: ["KSNODETYPE_LOUDNESS Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: CPixel Support Methods for Lightweight MIP Maps
 description: CPixel Support Methods for Lightweight MIP Maps
-ms.assetid: 79204a0c-c3a8-4059-a1be-9febf20a8cbd
 keywords: ["CPixel interface, described"]
 ms.date: 01/05/2018
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 This section describes the methods defined for the **CPixel** class. These methods are used to recover the layout of lightweight system memory MIP-map textures. Method prototypes are defined in the *pixel.hpp* file. This file along with *pixel.cpp* and *pixlib.cpp* were originally included in the Microsoft Windows Driver Development Kit (DDK) and are used to build the *PixLib.lib* support library. (The DDK preceded the Windows Driver Kit \[WDK\].)
 
-For more information about the *PixLib.lib* library, see the [PixLib](https://go.microsoft.com/fwlink/p/?linkid=256156) sample in the Hardware Dev Center.
+For more information about the *PixLib.lib* library, see the [PixLib](/samples/browse/) sample in the Hardware Dev Center.
 
 For your driver to use the following **CPixel** class methods, you must include the *pixel.hpp* file in your code and link to *PixLib.lib* when you build your driver.
 
@@ -65,10 +64,4 @@ For your driver to use the following **CPixel** class methods, you must include 
  
 
  
-
- 
-
-
-
-
 

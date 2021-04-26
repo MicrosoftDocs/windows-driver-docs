@@ -1,7 +1,6 @@
 ---
 title: SetInitiatorNodeName
 description: SetInitiatorNodeName
-ms.assetid: 68b3cb2c-9dd6-42ac-a4bf-b7504ac8e05f
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

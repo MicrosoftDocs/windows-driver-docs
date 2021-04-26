@@ -1,7 +1,6 @@
 ---
 title: Supporting Passive-Level Interrupts
 description: Starting with framework version 1.11, WDF drivers can create interrupt objects that require passive-level handling.
-ms.assetid: E464F885-928C-40BC-A09F-7A7921F8FF37
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

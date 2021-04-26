@@ -1,7 +1,6 @@
 ---
 title: Returning Status from a FilterUnloadCallback Routine
 description: Returning Status from a FilterUnloadCallback Routine
-ms.assetid: 6fdaadc7-860d-49d6-833c-64624f435fd3
 keywords:
 - status values WDK file system
 - returning status WDK file system

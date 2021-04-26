@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE is a property ID that is used to turn on and off face authentication.
-ms.assetid: 240AABDB-585B-462E-B391-1CB55BA563D5
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -118,7 +117,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be <strong>sizeof</strong>(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + <strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting)"><strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong></a>).</p></td>
+<td><p>This must be <strong>sizeof</strong>(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + <strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting)"><strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong></a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>

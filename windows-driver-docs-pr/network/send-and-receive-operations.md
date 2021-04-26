@@ -1,7 +1,6 @@
 ---
 title: Send and Receive Operations
 description: Send and Receive Operations
-ms.assetid: 216bfed2-92f8-4480-95fc-9909d7c1f533
 keywords:
 - network data WDK , sending
 - network data WDK , receiving

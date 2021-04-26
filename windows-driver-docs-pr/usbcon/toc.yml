@@ -269,7 +269,7 @@
   - name: "Overview of USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
   - name: "Capture and view USB traces with Microsoft Message Analyzer"
-    href: capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md
+    href: ./usb-event-tracing-for-windows.md
   - name: "How to capture a USB event trace with Logman"
     href: how-to-capture-a-usb-event-trace.md
   - name: "Using activity ID GUIDs in USB ETW traces"
@@ -378,7 +378,7 @@
       href: content-security-features-in-the-composite-client-generic-parent-drive.md
   - name: "Winusb.sys"
     items: 
-    - name: "WinUSB (Winusb.sys)"
+    - name: "Introduction to WinUSB (Winusb.sys)"
       href: winusb.md
     - name: "WinUSB Architecture and Modules"
       href: winusb-architecture.md

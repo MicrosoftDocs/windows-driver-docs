@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Driver's DriverEntry Routine
 description: SCSI Miniport Driver's DriverEntry Routine
-ms.assetid: b143bb19-2c9e-4e43-841f-a3c47c7f1a1b
 keywords:
 - DriverEntry WDK storage
 ms.date: 10/08/2019

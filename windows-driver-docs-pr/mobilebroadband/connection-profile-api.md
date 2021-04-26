@@ -1,7 +1,6 @@
 ---
 title: Connection Profile API
 description: Connection Profile API
-ms.assetid: 671b0df6-4f4b-4867-86dd-5eb832d86b4b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,7 @@ This API also includes a status change event that notifies the application whene
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
-[Network Information sample](https://go.microsoft.com/fwlink/p/?linkid=227013)
+[Network Information sample](/samples/browse/)
 
 [**NetworkStatusChangedEventHandler delegate**](/uwp/api/windows.networking.connectivity.networkstatuschangedeventhandler)
-
- 
 

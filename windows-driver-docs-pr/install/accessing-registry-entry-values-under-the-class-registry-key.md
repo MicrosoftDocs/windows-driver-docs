@@ -1,7 +1,6 @@
 ---
 title: Accessing Registry Entry Values Under the Class Registry Key
 description: Accessing Registry Entry Values Under the Class Registry Key
-ms.assetid: 771b5751-db9f-43fa-90d1-1c43918a3a80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ For information about how to use property keys to access device setup class prop
 
 To access these properties on Windows Server 2003, Windows XP, and Windows 2000, open the class registry key and use the Windows registry functions to access the registry entry values that correspond to these properties.
 
-To retrieve a handle to the class registry key for a device setup class, call the [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) function and supply the following parameter values:
+To retrieve a handle to the class registry key for a device setup class, call the [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) function and supply the following parameter values:
 
 -   Set *ClassGuid* to a pointer to the GUID that identifies the device setup class of the requested class registry key.
 
@@ -31,11 +30,9 @@ To retrieve a handle to the class registry key for a device setup class, call th
 
 -   Set *Reserved* to **NULL**.
 
-If this call to [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If this call to [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 
-After you retrieve a handle to the class registry key, supply the handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) and [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device setup class property.
+After you retrieve a handle to the class registry key, supply the handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) and [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the registry entry value that corresponds to the device setup class property.
 
-Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
-
- 
+Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the class registry key after access to the key is no longer required.
 

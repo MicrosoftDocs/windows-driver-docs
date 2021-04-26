@@ -1,7 +1,6 @@
 ---
 title: Constraints on Dispatch Routines
 description: Constraints on Dispatch Routines
-ms.assetid: 5b2acaea-1f66-4285-9a36-5ab0f440f6b4
 keywords:
 - IRP dispatch routines WDK file system , constraints
 ms.date: 04/20/2017
@@ -30,7 +29,7 @@ Note: For information about which types of IRPs are used in paging I/O, see [Dis
 
 ### <span id="Constraints_on_Processing_IRPs"></span><span id="constraints_on_processing_irps"></span><span id="CONSTRAINTS_ON_PROCESSING_IRPS"></span>Constraints on Processing IRPs
 
--   If the IRP parameters include any user-space addresses, these must be validated before they are used. For more information, see [Errors in Buffered I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-buffered-i-o).
+-   If the IRP parameters include any user-space addresses, these must be validated before they are used. For more information, see [Errors in Buffered I/O](../kernel/failure-to-check-the-size-of-buffers.md).
 
 -   Additionally, if the IRP contains an IOCTL or FSCTL buffer that was sent from a 32-bit platform to a 64-bit platform, the buffer contents may need to be thunked. For more information, see [Supporting 32-Bit I/O in Your 64-Bit Driver](../kernel/supporting-32-bit-i-o-in-your-64-bit-driver.md).
 
@@ -77,6 +76,4 @@ Note: For information about setting completion routines, see [Using Completion R
 ### <span id="Constraints_on_Posting_IRPs_to_a_Work_Queue"></span><span id="constraints_on_posting_irps_to_a_work_queue"></span><span id="CONSTRAINTS_ON_POSTING_IRPS_TO_A_WORK_QUEUE"></span>Constraints on Posting IRPs to a Work Queue
 
 -   If a dispatch routine posts IRPs to a work queue, it must call [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending) before posting each IRP to the worker queue. Otherwise, the IRP could be dequeued, completed by another driver routine, and freed by the system before the call to **IoMarkIrpPending** occurs, thereby causing a crash.
-
- 
 

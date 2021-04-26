@@ -1,7 +1,6 @@
 ---
 title: JavaScript Constraints
 description: The v4 printer driver model supports extended constraint and PrintTicket handling derived from the v3 IPrintOemPrintTicketProvider interface.
-ms.assetid: CD2EF726-CF0F-4BB6-9F41-794699568F17
 ms.date: 06/05/2020
 ms.localizationpriority: medium
 ---

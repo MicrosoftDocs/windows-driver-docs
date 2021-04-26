@@ -1,7 +1,6 @@
 ---
 title: Tap and Do use cases
 description: Tap and Do use cases
-ms.assetid: DCA97F86-3D27-46CD-9D25-A3D156B18B85
 keywords:
 - NFC
 - near field communications
@@ -15,8 +14,6 @@ ms.localizationpriority: medium
 # Tap and Do use cases
 
 Windows provides several use cases to support the *Tap and Do* gesture. Each use case initiates a particular action between devices. The following table lists the use cases available.
-
- 
 
 | Use case          | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
@@ -32,20 +29,20 @@ Windows provides several use cases to support the *Tap and Do* gesture. Each use
 
 NFP use cases generally belong in one of two categories.
 
--   *Personal*
+- *Personal*
 
     This category of use cases involves the user of the system only.
 
-    - No other person is involved.
+  - No other person is involved.
     - The user is directly manipulating the Windows system with another device such as a tag, a card, a peripheral wireless device, or a smaller smart device such as a mobile phone.
     - The user has complete control over the use case from trust, confidence, and physical perspectives.
--   *Interpersonal*
+- *Interpersonal*
 
     This category of use cases involves two users working together, with at least one user using a Windows system.
 
-    - Another user is always involved.
-    - The other user may also be using a Windows system, or they may be using another device such as a mobile phone.
-    - The two users must work cooperatively to carry out the use case. That includes aligning the devices to trigger actions to occur.
+  - Another user is always involved.
+  - The other user may also be using a Windows system, or they may be using another device such as a mobile phone.
+  - The two users must work cooperatively to carry out the use case. That includes aligning the devices to trigger actions to occur.
 
 ## Tap and Setup
 
@@ -53,7 +50,7 @@ NFP use cases generally belong in one of two categories.
 
 Use category: personal or enterprise (interpersonal).
 
-**Use case example**
+### Use case example: Tap and Setup
 
 1. An NFP-enabled device is placed near a computer to trigger device setup.
 2. Windows detects the device and presents a toast user interface (UI) inviting the user to proceed with installing the device. If the user accepts, device pairing and setup proceed. If the user declines, pairing does not occur and device setup does not proceed. In such a case, the user must tap again to initiate pairing if desired.
@@ -65,7 +62,7 @@ Use category: personal or enterprise (interpersonal).
 
 Use category: personal.
 
-**Use case example**
+### Use case example: Tap and Reconnect
 
 1. An NFP-enabled device is placed near a computer to trigger device reconnection.
 2. Windows detects the device and presents a toast UI inviting the user to proceed with installing the device. If the user accepts, device pairing proceeds. If the user declines, pairing does not occur. In such a case, the user must tap again to initiate pairing if desired.
@@ -77,7 +74,7 @@ Use category: personal.
 
 Use category: personal or interpersonal.
 
-**Use case example**
+### Use case example: Tap and Use
 
 1. A user wants to play a game with their friend. They both start apps that are designed for NFP. The app may prompt both users to tap their computers together.
 2. Once the users tap their computers together, the API is triggered and information set to be transmitted is exchanged between the computers. That may include setting up a channel over a wireless link so that the apps are able to communicate with each other.
@@ -88,7 +85,7 @@ Use category: personal or interpersonal.
 
 Use category: personal or interpersonal.
 
-**Use case example**
+### Use case example: Tap and Launch
 
 1. A user wants to play a game with their friend. They both start apps that are designed for NFP. The app may prompt both users to tap their computers together.
 2. The second user is not running the app but has it installed. They are invited to launch the app. If they decline the invitation, nothing happens.
@@ -100,22 +97,10 @@ Use category: personal or interpersonal.
 
 Use category: personal or interpersonal.
 
-**Use case example**
+### Use case example: Tap and Acquire
 
 1. A user wants to play a game with a friend and starts an app. The app may prompt them to tap their computer to another computer.
 2. The second user does not have the app installed. They are invited to acquire the app the friend is inviting them to use. If they decline the invitation, nothing happens.
-3. If they accept the invitation, they can acquire the app. The app will not start automatically. To do that, they will either need to run it directly and tap again with their friend (the *Tap and Use* use case), or simply tap again with their friend to launch the app (the *Tap and Launch* use case).
-
-## Tap and Acquire
-
-*Tap and Acquire* is an interaction for app acquisition. Using this experience, a user running an app on their computer will be able to invite a friend to obtain the same app if they do not have it installed.
-
-Use category: personal or interpersonal.
-
-**Use case example**
-
-1. A user wants to play a game with a friend and starts the app. The app may prompt to tap their computer to another computer.
-2. The second user does not have the app installed. They are invited to acquire the app. If they decline the invitation, nothing happens.
 3. If they accept the invitation, they can acquire the app. The app will not start automatically. To do that, they will either need to run it directly and tap again with their friend (the *Tap and Use* use case), or simply tap again with their friend to launch the app (the *Tap and Launch* use case).
 
 ## Tap and Send
@@ -124,7 +109,7 @@ Use category: personal or interpersonal.
 
 Use category: personal or interpersonal.
 
-**Use case example**
+### Use case example: Tap and Send
 
 1. A user viewing a web page within an Internet browser on their computer taps their computer to the computer of another user.
 2. The sending user is presented with a UI to send the URL of the webpage they are viewing.
@@ -136,7 +121,7 @@ Use category: personal or interpersonal.
 
 Use category: personal or interpersonal.
 
-**Use case example**
+### Use case example: Tap and Receive
 
 1. A user taps their computer to a device that their friend is holding that is sharing content. Or they tap their computer against a poster on a wall that contains an embedded tag. The tag has content available to be read.
 2. The user is invited to receive the content. If they decline the invitation, nothing happens. If they accept the invitation, they are presented with the progress of the receive action.

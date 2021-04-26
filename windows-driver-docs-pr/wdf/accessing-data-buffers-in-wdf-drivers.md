@@ -1,7 +1,6 @@
 ---
 title: Accessing Data Buffers in WDF Drivers (KMDF or UMDF)
 description: When a Windows Driver Frameworks (WDF) driver receives a read, write, or device I/O control request, the request object contains either an input buffer, an output buffer, or both.
-ms.assetid: ceba2279-b0fb-4261-b439-723d5dad967b
 keywords:
 - request processing WDK KMDF , data buffers
 - data buffers WDK KMDF

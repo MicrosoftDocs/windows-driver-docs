@@ -1,7 +1,6 @@
 ---
 title: Determining Task Offload Capabilities
 description: Determining Task Offload Capabilities
-ms.assetid: 9348a595-7bc0-467e-aeaf-e23100c99524
 keywords:
 - task offload WDK TCP/IP transport , capabilities
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ NDIS supports task offload services that are enhanced forms of the NDIS 5.1 and 
 
 NDIS provides the offload hardware capabilities and the current configuration of the underlying miniport adapter to protocol drivers in the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure. NDIS provides the task offload hardware capabilities and current configuration of the underlying miniport adapter to filter drivers in the [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_attach_parameters) structure.
 
-Administrative applications use object identifier (OID) queries to obtain task offload capabilities of a miniport adapter. However, overlying drivers should avoid using OID queries. Protocol drivers must handle changes in the task offload capabilities that underlying drivers report. Miniport drivers can report changes in task offload capabilities in status indications. For a list of status indications, see [NDIS 6.0 TCP/IP Offload Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-tcp-ip-offload-status-indications).
+Administrative applications use object identifier (OID) queries to obtain task offload capabilities of a miniport adapter. However, overlying drivers should avoid using OID queries. Protocol drivers must handle changes in the task offload capabilities that underlying drivers report. Miniport drivers can report changes in task offload capabilities in status indications. For a list of status indications, see [NDIS 6.0 TCP/IP Offload Status Indications](ndis-status-task-offload-current-config.md).
 
 Administrative applications (or overlying drivers) can determine the current task offload configuration of a network interface card (NIC) by querying the [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](./oid-tcp-offload-current-config.md) OID.
 

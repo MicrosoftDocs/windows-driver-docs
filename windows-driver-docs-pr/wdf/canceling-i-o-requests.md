@@ -1,7 +1,6 @@
 ---
 title: Canceling I/O Requests
 description: Canceling I/O Requests
-ms.assetid: 9a486fa4-7fd3-4433-88aa-34a54d9b1e16
 keywords:
 - request processing WDK KMDF , canceling requests
 - I/O requests WDK KMDF , canceling

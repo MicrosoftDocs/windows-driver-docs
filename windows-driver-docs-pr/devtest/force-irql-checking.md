@@ -1,7 +1,6 @@
 ---
 title: Force IRQL Checking
 description: Force IRQL Checking
-ms.assetid: cb972a72-6504-4ed7-9618-2830192fda1d
 keywords:
 - Force IRQL Checking feature WDK Driver Verifier
 - IRQL monitoring WDK Driver Verifier

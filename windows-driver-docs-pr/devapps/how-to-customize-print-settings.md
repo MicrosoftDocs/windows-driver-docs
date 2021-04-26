@@ -1,7 +1,6 @@
 ---
 title: How to customize print settings (UWP device apps)
 description: This topic introduces the advanced print settings flyout, and shows how the C# version of the Print settings and print notifications sample replaces the default flyout with a custom flyout.
-ms.assetid: 099BD9B2-1AA6-49A5-AB84-0AF6FA0EFB26
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -42,11 +41,11 @@ To invoke the flyout for advanced print settings:
 
 Before you get started:
 
-1. Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231).
+1. Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](../print/v4-printer-driver.md).
 2. Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
 3. Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 4. Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-5. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845).
+5. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
 6. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
 
 >[!NOTE]
@@ -101,12 +100,12 @@ Before building your app, you should work with your designers and your marketing
 
 ### Design guidelines
 
-It's important to review the [UWP app flyout guidelines](https://go.microsoft.com/fwlink/p/?LinkId=317078) before designing your custom flyout. The guidelines help ensure that your flyout provides an intuitive experience that is consistent with other UWP apps.
+It's important to review the [UWP app flyout guidelines](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/) before designing your custom flyout. The guidelines help ensure that your flyout provides an intuitive experience that is consistent with other UWP apps.
 
 For the main page of your app, keep in mind that Windows 8.1 can display multiple apps in various sizes on a single monitor. See the following guidelines to learn more about how your app can reflow gracefully between screen sizes, window sizes, and orientations.
 
 - [Guidelines for window sizes and scaling to screens](https://go.microsoft.com/fwlink/p/?LinkId=311830)
-- [Guidelines for resizing windows to tall and narrow layouts](https://go.microsoft.com/fwlink/p/?LinkId=311831)
+- [Guidelines for resizing windows to tall and narrow layouts](/previous-versions/windows/hh465371(v=win.10))
 
 ### Flyout dimensions
 
@@ -456,7 +455,7 @@ async private void OnSaveRequested(object sender, PrintTaskConfigurationSaveRequ
 
 The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample demonstrates how to set defined features, which covers most print options. However, some options require a custom UI to get a user-specified value. For example, if an app used the advanced print settings to specify a custom page size, it would take these steps to save the user-specified value:
 
-1. Retrieve the print ticket during app activation. App activation for print settings is described earlier in [Step 3: Handle activation](#step3).
+1. Retrieve the print ticket during app activation. App activation for print settings is described earlier in [Step 3: Handle activation](#step-3-handle-activation).
 
 2. Check if the page size option is specified. In a C# or JS app, the print helper class can check for this option. In a C++ app, call QueryInterface on IPrintSchemaOption to retrieve IPrintSchemaPageMediaSizeOption.
 
@@ -591,7 +590,7 @@ The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?
 
 Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
-- You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
+- You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
     >[!NOTE]
     >To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
@@ -607,7 +606,7 @@ The following steps build your app and install the device metadata.
 4. Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5. Edit and save device metadata. To link the device app to your device, you must associate the device app with your device
     >[!NOTE]
-    >If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
+    >If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
     1. If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2. Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
@@ -639,11 +638,11 @@ If your custom flyout for advanced print settings disappears immediately after i
 
 ## Related topics
 
-[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](../print/v4-printer-driver.md)
 
-[Printer Extension Interfaces (v4 Print Driver)](https://go.microsoft.com/fwlink/p/?LinkID=299887)
+[Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
 
-[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](../print/bidirectional-communication.md)
 
 [Getting started with UWP apps](getting-started.md)
 

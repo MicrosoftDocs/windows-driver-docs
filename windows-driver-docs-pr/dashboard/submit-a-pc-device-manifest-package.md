@@ -1,7 +1,6 @@
 ---
 title: Submit a PC device manifest package
 description: Submit a PC device manifest package
-ms.assetid: b96b02b8-8804-403e-9513-7a5d1b730fcd
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ You can use the same method to submit packages for preview or release.
 
 ### To submit a device manifest package
 
-1. Sign the devicemanifest-ms package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1. Sign the devicemanifest-ms package with the [SignTool](/windows/win32/seccrypto/signtool) tool.
 
 2. Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -79,9 +78,9 @@ GUID1.devicemanifest-ms
 
 To create the LocaleInfo.xml and PcMetadataSubmission.xml, see below.
 
-To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753)
+To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85))
 
-You can use the Cabarc tool to create these CAB packages. You can find more information about this tool in [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843)
+You can use the Cabarc tool to create these CAB packages. You can find more information about this tool in [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10))
 
 When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must create a local directory in which the device metadata package (\*.devicemetadata-ms), the LocaleInfo XML document, and the PcMetadataSubmission XML document are at the root of the directory.
 
@@ -91,7 +90,7 @@ When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must c
 
 - The GUID for each PC device manifest submission and device metadata package must be unique. When you create a new or revised package, you must create a new GUID.
 
-- For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=248844).
+- For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](/previous-versions/ms974336(v=msdn.10)).
 
 #### Example (device manifest)
 
@@ -113,7 +112,7 @@ N .\PCFiles\ GUID.devicemanifest-ms
 .\PcPackages\LocaleInfo.xml
 ```
 
-You can find more information about this tool in the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can find more information about this tool in the [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)).
 
 ## Creating PcMetadataSubmission.xml
 
@@ -126,7 +125,7 @@ The data in the PcMetadataSubmission.xml document is formatted based on the PcMe
 >[!NOTE]
 >The XML document must be saved by using UTF-8 encoding.
 
-For more information about ComputerHardwareID, see [How to Create a Device Metadata Package for Devices and Printers](https://go.microsoft.com/fwlink/p/?LinkId=253559).
+For more information about ComputerHardwareID, see [How to Create a Device Metadata Package for Devices and Printers](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85)).
 
 #### PcMetadataSubmission XML Schema NameSpace
 

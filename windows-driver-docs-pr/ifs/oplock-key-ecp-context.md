@@ -1,7 +1,6 @@
 ---
 title: OPLOCK_KEY_ECP_CONTEXT structure
 description: The OPLOCK_KEY_ECP_CONTEXT structure is used to attach an oplock key to a file.
-ms.assetid: 029dd105-162a-4674-a3d5-b54a91fa4be2
 keywords: ["OPLOCK_KEY_ECP_CONTEXT structure Installable File System Drivers", "POPLOCK_KEY_ECP_CONTEXT structure pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -38,7 +37,7 @@ Reserved. Must be set to zero.
 
 ## Remarks
 
-For information about how to use ECPs to associate extra information with a file when the file is created, see [Using Extra Create Parameters with an IRP_MJ_CREATE Operation](https://docs.microsoft.com/windows-hardware/drivers/ifs/using-extra-create-parameters-with-an-irp-mj-create-operation).
+For information about how to use ECPs to associate extra information with a file when the file is created, see [Using Extra Create Parameters with an IRP_MJ_CREATE Operation](./using-ecps-to-process-irp-mj-create-operations-in-a-file-system-minifilter.md).
 
 A minifilter should not alter the contents of the OPLOCK_KEY_ECP_CONTEXT structure when it sees the ECP coming down from above. You should use it to retrieve information about the oplock key ECP only. For more information about this issue, see [System-Defined ECPs](./system-defined-ecps.md).
 

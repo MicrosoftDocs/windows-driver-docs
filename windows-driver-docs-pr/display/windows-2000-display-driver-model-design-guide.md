@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Display Driver Model (XDDM) Design Guide
 description: Windows 2000 Display Driver Model (XDDM) Design Guide
-ms.assetid: 24cb232b-e289-45c8-8d55-42614a4dfd54
 keywords:
 - display devices WDK
 - display driver model WDK Windows 2000
@@ -42,15 +41,9 @@ The following sections describe the Windows 2000 display driver model:
 
 -   [GDI](gdi.md)
 
-**Note**   The documentation for the Windows 2000 display driver model no longer includes information about how to create a display driver that runs on the Microsoft Windows 98/Me platforms. If you want to create a display driver for Windows 98/Me, you can use the WDK documentation that released with Windows Vista. You can obtain the WDK for Windows Vista RTM from the [Microsoft Connect website](https://go.microsoft.com/fwlink/p/?linkid=101629).
+**Note**   The documentation for the Windows 2000 display driver model no longer includes information about how to create a display driver that runs on the Microsoft Windows 98/Me platforms. If you want to create a display driver for Windows 98/Me, you can use the WDK documentation that released with Windows Vista. You can obtain the WDK for Windows Vista RTM from the [Microsoft Connect website](/collaborate/connect-redirect).
 
  
 
  
-
- 
-
-
-
-
 

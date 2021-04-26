@@ -1,7 +1,6 @@
 ---
 title: Allocating Resources for a Virtual Function
 description: Allocating Resources for a Virtual Function
-ms.assetid: 00191D2C-E093-4DB7-AC82-8E8E5A74656F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

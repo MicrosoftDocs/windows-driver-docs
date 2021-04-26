@@ -1,7 +1,6 @@
 ---
 title: Restrictions on Pageable Code in Storage Drivers
 description: Restrictions on Pageable Code in Storage Drivers
-ms.assetid: 1958f22f-5563-41e9-9c3f-dec8a4ac80c0
 keywords:
 - storage drivers WDK , pageable code restrictions
 - pageable code restrictions WDK storage
@@ -27,7 +26,5 @@ Routines such as [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driv
 
 Special considerations apply to drivers that manage storage devices in the paging path. A driver is in the "paging path" if it participates in I/O operations on the paging file. When a storage driver is in the paging path, its [**DispatchPower**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine for IRP\_MJ\_POWER requests must not be pageable.
 
-By default, the code for kernel-mode drivers is not pageable, nor is the global memory used by kernel-mode drivers pageable. For information about how to make code pageable, see [Making Driver Code or Data Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/making-driver-code-or-data-pageable).
-
- 
+By default, the code for kernel-mode drivers is not pageable, nor is the global memory used by kernel-mode drivers pageable. For information about how to make code pageable, see [Making Driver Code or Data Pageable](../kernel/detecting-code-that-can-be-pageable.md).
 

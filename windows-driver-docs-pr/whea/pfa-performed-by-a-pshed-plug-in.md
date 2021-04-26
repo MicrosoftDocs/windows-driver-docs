@@ -1,7 +1,6 @@
 ---
 title: PFA Performed by a PSHED Plug-In
 description: PFA Performed by a PSHED Plug-In
-ms.assetid: e9876c86-b059-406f-a01a-7670ab294098
 keywords:
 - predictive failure analysis (PFA) WDK WHEA , PSHED plug-in
 - PFA WDK WHEA , PSHED plug-in
@@ -62,7 +61,7 @@ WHEA then adds the memory page into the Boot Configuration Data (BCD) store on t
 
 
 
-For more information about the system memory manager, see [Memory Management](https://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
+For more information about the system memory manager, see [Memory Management](/windows/win32/memory/memory-management) in the Windows SDK documentation.
 
 
 10. The Windows kernel generates an ETW event and logs the error information in the system event log.

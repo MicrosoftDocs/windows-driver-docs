@@ -1,7 +1,6 @@
 ---
 title: OID_802_3_CURRENT_ADDRESS
 description: OID_802_3_CURRENT_ADDRESS
-ms.assetid: 36815f3e-7edc-486f-9c16-948119c469fc
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_CURRENT_ADDRESS Network Drivers Starting with Windows Vista

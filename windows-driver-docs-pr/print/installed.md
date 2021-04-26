@@ -1,7 +1,6 @@
 ---
 title: Installed (WSD)
 description: The Web Services for Devices (WSD) Installed construct indicates whether a printer feature that matches a given set of criteria has been installed.
-ms.assetid: f05add2a-d37e-4eb5-8408-dd5eeef4b13c
 keywords:
 - Installed construct
 ms.date: 06/05/2020

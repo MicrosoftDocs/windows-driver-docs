@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_LowerFilters
 description: DEVPKEY_DeviceClass_LowerFilters
-ms.assetid: 39bc784e-a8be-4921-9a12-f423fe502019
 keywords: ["DEVPKEY_DeviceClass_LowerFilters Device and Driver Installation"]
 topic_type:
 - apiref
@@ -70,7 +69,7 @@ Remarks
 
 The value of DEVPKEY_DeviceClass_LowerFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](./installing-a-filter-driver.md) and [**INF ClassInstall32 Section**](./inf-classinstall32-section.md).
 
-You can call [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_LowerFilters.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_LowerFilters.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_LowerFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **LowerFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
@@ -86,11 +85,11 @@ Requirements
 
 [**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa)
+[**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: MRxQueryDirectory routine
 description: The MRxQueryDirectory routine is called by RDBSS to request that a network mini-redirector query information on a file directory.
-ms.assetid: 26c7c7fa-7dfa-43fb-a1db-cfc2fc40b969
 keywords: ["MRxQueryDirectory routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

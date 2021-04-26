@@ -1,7 +1,6 @@
 ---
 title: WaveCyclic Miniport Driver
 description: WaveCyclic Miniport Driver
-ms.assetid: 8a4811e9-e52b-4183-8d11-482883500f82
 keywords:
 - audio miniport drivers WDK , WaveCyclic
 - miniport drivers WDK audio , WaveCyclic
@@ -44,7 +43,7 @@ Initializes the miniport object.
 
 Creates a new stream object.
 
-The stream interface, [IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream), inherits the methods in the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveCyclicStream provides the following additional methods:
+The stream interface, [IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream), inherits the methods in the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveCyclicStream provides the following additional methods:
 
 [**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition)
 

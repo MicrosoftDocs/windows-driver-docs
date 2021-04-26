@@ -1,7 +1,6 @@
 ---
 title: FSCTL_OFFLOAD_WRITE control code
 description: The FSCTL\_OFFLOAD\_WRITE control code initiates an offload write for a block of data in a storage system that supports offload write primitives.
-ms.assetid: A40C6D4C-D31D-423E-B7B0-51151EEDD30F
 keywords: ["FSCTL_OFFLOAD_WRITE control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -75,11 +74,11 @@ Status block
 <p>-or-</p>
 <p><em>InputBufferLength</em> &lt; <strong>sizeof</strong>(FSCTL_OFFLOAD_WRITE_INPUT).</p>
 <p>-or-</p>
-<p>One or more of these members of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> are incorrect:</p>
+<p>One or more of these members of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> are incorrect:</p>
 <strong>FileOffset</strong> is not a multiple of the logical sector size of the volume.
 <strong>CopyLength</strong> is not a multiple of the logical sector size of the volume.
 <strong>TransferOffset</strong> is not a multiple of the logical sector size of the volume.
-<strong>Size</strong> is not the size of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> structure.
+<strong>Size</strong> is not the size of the <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> structure.
 <strong>FileOffset</strong> &gt; Valid Data Length (VDL) for the file.
 <strong>FileOffset</strong> + <strong>CopyLength</strong> &gt; <strong>MAXULONGLONG</strong>.</td>
 </tr>
@@ -121,7 +120,7 @@ Status block
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_END_OF_FILE</strong></p></td>
-<td align="left"><p>The <strong>FileOffset</strong> member of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> begins after end-of-file (EOF).</p></td>
+<td align="left"><p>The <strong>FileOffset</strong> member of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> begins after end-of-file (EOF).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_DISMOUNTED_VOLUME</strong></p></td>
@@ -137,9 +136,9 @@ Status block
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
-<td align="left"><p><em>InputBufferLength</em> is too small for <em>InputBuffer</em> to contain an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> structure.</p>
+<td align="left"><p><em>InputBufferLength</em> is too small for <em>InputBuffer</em> to contain an <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)"><strong>FSCTL_OFFLOAD_WRITE_INPUT</strong></a> structure.</p>
 <p>-or-</p>
-<p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_OUTPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output)"><strong>FSCTL_OFFLOAD_WRITE_OUTPUT</strong></a> structure.</p></td>
+<p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_WRITE_OUTPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output)"><strong>FSCTL_OFFLOAD_WRITE_OUTPUT</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -181,6 +180,4 @@ Requirements
 [**FSCTL\_OFFLOAD\_WRITE\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)
 
 [**FSCTL\_OFFLOAD\_WRITE\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output)
-
- 
 

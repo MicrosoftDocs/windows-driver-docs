@@ -1,7 +1,6 @@
 ---
 title: NDIS QoS Traffic Classifications
 description: NDIS QoS Traffic Classifications
-ms.assetid: 62D7B69F-A64E-4E3C-9AEA-8C56495E3FF5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

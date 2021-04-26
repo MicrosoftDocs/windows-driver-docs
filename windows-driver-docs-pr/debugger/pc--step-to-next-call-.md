@@ -1,7 +1,6 @@
 ---
 title: pc (Step to Next Call)
 description: The pc command executes the program until a call instruction is reached.
-ms.assetid: 4b9b786c-2ecc-44a6-a82b-0641d7991abc
 keywords: ["pc (Step to Next Call) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

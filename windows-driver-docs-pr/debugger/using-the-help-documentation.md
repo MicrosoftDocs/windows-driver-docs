@@ -1,7 +1,6 @@
 ---
 title: Using the Help Documentation
 description: Using the Help Documentation
-ms.assetid: ad826f45-3bad-4e10-811f-26ebf4f06c4d
 keywords: ["HTML Help", "searching the Help file", "index of the Help file", "favorites in the Help file", "printing topics from the Help file", "hh.exe", "help file", "help file, overview", "help file, searching"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

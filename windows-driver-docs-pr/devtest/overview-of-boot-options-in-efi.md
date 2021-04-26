@@ -1,7 +1,6 @@
 ---
 title: Overview of Boot Options in EFI
 description: Overview of Boot Options in EFI
-ms.assetid: 2237d321-75e6-4723-9f08-484bd9097360
 keywords:
 - NVRAM boot options WDK , about EFI NVRAM boot options
 - EFI NVRAM boot options WDK , about EFI NVRAM boot options
@@ -105,7 +104,7 @@ Enterprise</code></pre></td>
 <tr class="even">
 <td align="left"><p><strong>OsLoadOptions</strong></p></td>
 <td align="left"><p>Specifies the <em>boot parameters</em> for the entry. <em>Boot parameters</em> are commands to enable, disable, and configure features of the operating system. The EFI Boot Manager passes these parameters to the bootable device or system to be interpreted and implemented.</p>
-<p>For a list of the boot parameters that are related to driver debugging and testing, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-in-a-boot-ini-file" data-raw-source="[Boot Options in a Boot.ini File](./boot-options-in-a-boot-ini-file.md)">Boot Options in a Boot.ini File</a>.</p></td>
+<p>For a list of the boot parameters that are related to driver debugging and testing, see <a href="/windows-hardware/drivers/devtest/boot-options-in-a-boot-ini-file" data-raw-source="[Boot Options in a Boot.ini File](./boot-options-in-a-boot-ini-file.md)">Boot Options in a Boot.ini File</a>.</p></td>
 <td align="left"><pre space="preserve"><code>OsLoadOptions: /debug
 /debugport=COM1 /baudrate=57600</code></pre></td>
 </tr>

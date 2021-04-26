@@ -1,7 +1,6 @@
 ---
 title: SetGenerationalGuid
 description: SetGenerationalGuid
-ms.assetid: cf8e57e5-afdf-4bc2-9849-5df3fbbdd6c5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

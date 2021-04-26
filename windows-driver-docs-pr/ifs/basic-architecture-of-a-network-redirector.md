@@ -1,7 +1,6 @@
 ---
 title: Basic Architecture of a Network Redirector
 description: Basic Architecture of a Network Redirector
-ms.assetid: 60a7c79d-b89f-4c8b-9619-bd48c9e1efac
 keywords:
 - network redirectors WDK , architecture
 - redirector drivers WDK , architecture
@@ -43,7 +42,7 @@ A network redirector may also need several other components:
 
 -   An administration tool is occasionally needed to provide access from user-mode to the kernel-mode driver for special configuration, diagnostics, and administration. This tool can also be used to enable or disable tracing and logging for troubleshooting problems. The tool would communicate with the kernel driver by using various custom private IOCTLs. This tool might also provide access to the Service Control Manager (SCM) to manage an intermediary service where global data is stored securely for the user-mode Network Provider DLL.
 
-**Note**   TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](../network/windows-filtering-platform-callout-drivers2.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
+**Note**   TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](../network/introduction-to-windows-filtering-platform-callout-drivers.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 

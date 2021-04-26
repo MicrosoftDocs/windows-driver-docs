@@ -1,7 +1,6 @@
 ---
 title: Initializing a Header-Data Split Provider
 description: Initializing a Header-Data Split Provider
-ms.assetid: 19a01906-6a05-4f57-a22a-911138095c84
 keywords:
 - header-data split WDK , initializing provider
 - initializing header-data split providers

@@ -1,7 +1,6 @@
 ---
 title: Handling a Wait/Wake IRP in a Bus Driver (PDO)
 description: Handling a Wait/Wake IRP in a Bus Driver (PDO)
-ms.assetid: 9583b935-26e1-49c6-827d-932762af114d
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "bus drivers WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -38,6 +37,10 @@ Like other power IRPs, each wait/wake IRP must be passed all the way down the de
 6.  Return STATUS\_PENDING from the *DispatchPower* routine.
 
 7.  When a wake-up signal arrives, call **IoCompleteRequest** to complete the pending wait/wake IRP, setting **Irp-IoStatus.Status** to STATUS\_SUCCESS, and specifying a priority boost of IO\_NO\_INCREMENT.
+
+> [!NOTE]
+> During device removal, normally the power policy owner (PPO) should have cancelled the wait-wake IRP. But in case the PPO does not do so, as a resiliency mechanism we recommend that the bus PDO complete the IRP with a failure status. The bus PDO should do this when handling both IRP_MN_SURPRISE_REMOVE and IRP_MN_REMOVE_DEVICE.
+
 
 ### For Devices That Do Not Support Wake-Up
 

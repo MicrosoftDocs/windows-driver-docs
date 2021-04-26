@@ -1,7 +1,6 @@
 ---
 title: Using Automatic Synchronization
 description: Using Automatic Synchronization
-ms.assetid: be7d3c0e-c3cf-4104-ab81-5ecdcb9163c8
 keywords:
 - synchronization WDK KMDF
 - automatic synchronization WDK KMDF
@@ -53,15 +52,15 @@ If your driver enables automatic synchronization of the callback functions that 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Queue object</p></td>
-<td align="left"><p><a href="request-handlers.md" data-raw-source="[Request handlers](request-handlers.md)">Request handlers</a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state" data-raw-source="[&lt;em&gt;EvtIoQueueState&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state)"><em>EvtIoQueueState</em></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume" data-raw-source="[&lt;em&gt;EvtIoResume&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume)"><em>EvtIoResume</em></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop" data-raw-source="[&lt;em&gt;EvtIoStop&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop)"><em>EvtIoStop</em></a></p></td>
+<td align="left"><p><a href="request-handlers.md" data-raw-source="[Request handlers](request-handlers.md)">Request handlers</a>, <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state" data-raw-source="[&lt;em&gt;EvtIoQueueState&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state)"><em>EvtIoQueueState</em></a>, <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume" data-raw-source="[&lt;em&gt;EvtIoResume&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume)"><em>EvtIoResume</em></a>, <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop" data-raw-source="[&lt;em&gt;EvtIoStop&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop)"><em>EvtIoStop</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>File object</p></td>
-<td align="left"><p>All <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdffileobject/" data-raw-source="[callback functions](/windows-hardware/drivers/ddi/wdffileobject/)">callback functions</a></p></td>
+<td align="left"><p>All <a href="/windows-hardware/drivers/ddi/wdffileobject/" data-raw-source="[callback functions](/windows-hardware/drivers/ddi/wdffileobject/)">callback functions</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Request object</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel" data-raw-source="[&lt;em&gt;EvtRequestCancel&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel)"><em>EvtRequestCancel</em></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel" data-raw-source="[&lt;em&gt;EvtRequestCancel&lt;/em&gt;](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel)"><em>EvtRequestCancel</em></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -243,6 +242,4 @@ Before you decide whether your driver should set an object's execution level to 
 For DPC objects, and for timer objects that do not represent [passive-level timers](using-timers.md), note that you cannot set the **AutomaticSerialization** member of the configuration structure to **TRUE** if you have set the parent device's execution level to **WdfExecutionLevelPassive**. This is because the framework will acquire the device object's [callback synchronization locks](using-framework-locks.md) at IRQL = PASSIVE\_LEVEL and therefore the locks cannot be used to synchronize the DPC or timer object callback functions, which must execute at IRQL = DISPATCH\_LEVEL. In such a case, your driver should use [framework spin locks](using-framework-locks.md#framework-spin-locks) in any device, DPC, or timer object callback functions that must be synchronized with each other.
 
 Also note that for timer objects that *do* represent passive-level timers, you can set the **AutomaticSerialization** member of the configuration structure to TRUE *only* if the parent device's execution level is set to **WdfExecutionLevelPassive**.
-
- 
 

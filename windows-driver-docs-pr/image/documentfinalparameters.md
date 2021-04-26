@@ -1,7 +1,6 @@
 ---
 title: DocumentFinalParameters element
 description: The required DocumentFinalParameters element contains the actual DocumentParameters element that the scan device uses for image acquisition.
-ms.assetid: 54e3c96c-70a1-48c5-8718-45b0a71ff9b1
 keywords: ["DocumentFinalParameters element Imaging Devices"]
 topic_type:
 - apiref

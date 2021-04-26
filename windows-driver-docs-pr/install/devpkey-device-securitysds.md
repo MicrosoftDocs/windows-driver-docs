@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SecuritySDS
 description: DEVPKEY_Device_SecuritySDS
-ms.assetid: 8ac8c683-da8e-4425-8a2a-c4182e5cef93
 keywords: ["DEVPKEY_Device_SecuritySDS Device and Driver Installation"]
 topic_type:
 - apiref
@@ -60,7 +59,7 @@ The DEVPKEY_Device_SecuritySDS device property represents a security descriptor 
 Remarks
 -------
 
-You can retrieve the value of DEVPKEY_Device_SecuritySDS by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set his value by calling [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_SecuritySDS by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set his value by calling [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_SecuritySDS property key. Instead, you can use the corresponding SPDRP_SECURITY_SDS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -74,9 +73,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

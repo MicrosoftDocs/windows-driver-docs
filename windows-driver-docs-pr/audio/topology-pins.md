@@ -1,7 +1,6 @@
 ---
 title: Topology Pins
 description: Topology Pins
-ms.assetid: b434e2a7-4acc-4ef1-9db9-8f1b82f68de3
 keywords:
 - topology pins WDK audio
 - pins WDK audio , topology

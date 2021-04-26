@@ -1,7 +1,6 @@
 ---
 title: Manipulating 3-D Virtual Textures Directly from Hardware
 description: Manipulating 3-D Virtual Textures Directly from Hardware
-ms.assetid: 5390f62d-3359-4f19-ab6c-07239e598b20
 keywords:
 - three-dimensional textures WDK display
 - textures WDK display

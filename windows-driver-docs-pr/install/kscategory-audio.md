@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_AUDIO
 description: KSCATEGORY_AUDIO
-ms.assetid: 5acdca77-ed90-4f20-bdcc-5f51312c9dd7
 keywords: ["KSCATEGORY_AUDIO Device and Driver Installation"]
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Drivers for KS audio devices register instances of this device interface class t
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-For information about how to register this functional category in an INF file, see the Help files *INFViewer.html* and *ac97smpl.inf*, which are included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
+For information about how to register this functional category in an INF file, see the Help files *INFViewer.html* and *ac97smpl.inf*, which are included with the [AC'97 sample driver](/samples/browse/) in the WDK.
 
 Requirements
 ------------
@@ -69,6 +68,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

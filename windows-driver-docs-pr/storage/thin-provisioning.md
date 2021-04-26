@@ -1,7 +1,6 @@
 ---
 title: Thin Provisioning
 description: Thin Provisioning
-ms.assetid: 0D65DDCC-D207-4EA8-B5D6-56DF57221EE3
 ms.date: 10/04/2019
 ms.localizationpriority: medium
 ---

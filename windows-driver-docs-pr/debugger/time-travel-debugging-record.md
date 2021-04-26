@@ -31,7 +31,7 @@ To launch an executable and record a TTD trace, follow these steps.
 
 6. The recording dialog appears indicating the trace is being recorded.
 
-    ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up-dialog.png)
+    ![Screenshot that shows the TTD recording popup "Stop and Debug" and "Cancel" buttons.](images/ttd-recording-pop-up-dialog.png)
 
 7. See [How to record](#HOWTORECORD) for information on recording.
 

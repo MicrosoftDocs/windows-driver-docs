@@ -1,7 +1,6 @@
 ---
 title: PCD Source File Format
 description: PCD Source File Format
-ms.assetid: 8651d6ca-7cd7-4c07-aa66-2766dd2222e0
 keywords:
 - Plotter Driver WDK print , minidrivers
 - MSPlot WDK print , minidrivers
@@ -59,7 +58,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>COLORINFO</strong></p></td>
-<td><p>Thirty DWORD-sized values representing the contents of a <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-colorinfo" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-colorinfo)"><strong>COLORINFO</strong></a> structure.</p></td>
+<td><p>Thirty DWORD-sized values representing the contents of a <a href="/windows/win32/api/winddi/ns-winddi-colorinfo" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-colorinfo)"><strong>COLORINFO</strong></a> structure.</p></td>
 <td><p></p>
 {
 {6810,3050,0}, // xr, yr, Yr
@@ -91,7 +90,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>DevicePelsDPI</strong></p></td>
-<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a>.</p></td>
+<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a>.</p></td>
 <td><p>The default is zero, causing GDI to calculate a value.</p></td>
 </tr>
 <tr class="odd">
@@ -114,7 +113,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>InitString</strong></p></td>
-<td><p>Quoted C-language string representing commands sent to the printer by the driver's <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvstartpage" data-raw-source="[&lt;strong&gt;DrvStartPage&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvstartpage)"><strong>DrvStartPage</strong></a> function.</p></td>
+<td><p>Quoted C-language string representing commands sent to the printer by the driver's <a href="/windows/win32/api/winddi/nf-winddi-drvstartpage" data-raw-source="[&lt;strong&gt;DrvStartPage&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvstartpage)"><strong>DrvStartPage</strong></a> function.</p></td>
 <td><p>NULL string.</p></td>
 </tr>
 <tr class="odd">
@@ -282,6 +281,4 @@ FormInfo {"Roll Paper 24 in",    609600,      0, 0, 0, 0, 0}
 FormInfo {"ANSI A 8.5 x 11 in",  215900, 279400, 0, 0, 0, 0}
 FormInfo {"ISO A4 210 x 297 mm", 210000, 297000, 0, 0, 0, 0}
 ```
-
- 
 

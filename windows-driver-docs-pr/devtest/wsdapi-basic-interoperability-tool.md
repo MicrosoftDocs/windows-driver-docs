@@ -1,7 +1,6 @@
 ---
 title: WSDAPI Basic Interoperability Tool
 description: WSDAPI Basic Interoperability Tool
-ms.assetid: c4a610d4-3adf-406d-88d6-0879eb98b54f
 keywords:
 - tools WDK , testing drivers
 - WSDBIT tool WDK
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 # WSDAPI Basic Interoperability Tool
 
-The [Device Profile for Web Services (DPWS)](https://schemas.xmlsoap.org/ws/2005/05/devprof/) is a reference specification that assembles and constrains a number of Web Services (WS) specifications. The [Web Services on Devices (WSD)](/windows/win32/wsdapi/wsd-portal) API (WSDAPI) is an implementation of DPWS that is included with Windows. Windows uses WSDAPI to discover DPWS devices of any type, and also uses WSDAPI to issue control messages to several device classes, such as printers, scanners, and network projectors.
+The [Devices Profile for Web Services (DPWS)](https://docs.oasis-open.org/ws-dd/ns/dpws/2009/01) is a reference specification that assembles and constrains a number of Web Services (WS) specifications. The [Web Services on Devices (WSD)](/windows/win32/wsdapi/wsd-portal) API (WSDAPI) is an implementation of DPWS that is included with Windows. Windows uses WSDAPI to discover DPWS devices of any type, and also uses WSDAPI to issue control messages to several device classes, such as printers, scanners, and network projectors.
 
 The WSDAPI Basic Interoperability Tool (WSDBIT) can be used to verify that Windows can interoperate with non-WSDAPI DPWS stacks. This tool is intended primarily for device developers who are implementing DPWS and who want to test interoperability with Windows. Some WSDBIT tests require that the device implement a special test interface that is used to exercise advanced DPWS functionality, such as [SOAP Message Transmission Optimization Mechanism (MTOM)](https://www.w3.org/TR/2005/REC-soap12-mtom-20050125/) (which is used for message attachments) and [Web Services Eventing](/previous-versions/ms951233(v=msdn.10)). These interfaces are not strictly required. However, they are the only way to cover this functionality in WSDBIT.
 

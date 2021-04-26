@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_SET\_STATE
 description: AVCSTRM\_SET\_STATE
-ms.assetid: 890ae8d1-d7e2-40a4-af7f-b6df32d845e4
 keywords: ["AVCSTRM_SET_STATE Streaming Media Devices"]
 topic_type:
 - apiref

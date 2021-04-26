@@ -1,7 +1,6 @@
 ---
 title: WSD Scan Service Job and Document Elements
 description: WSD Scan Service Job and Document Elements
-ms.assetid: 208d24d0-0505-41ed-bffd-9edb30d3a01a
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

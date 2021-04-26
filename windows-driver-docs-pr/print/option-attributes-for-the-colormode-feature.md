@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the ColorMode Feature
 description: Option Attributes for the ColorMode Feature
-ms.assetid: e6f68a50-f044-406e-b92c-8449d126bceb
 keywords:
 - ColorMode Feature
 ms.date: 04/20/2017
@@ -56,13 +55,13 @@ LIST (RED, GREEN, BLUE)
 </tr>
 <tr class="odd">
 <td><p></em><strong>DrvBPP</strong></p></td>
-<td><p>Numeric value indicating the number of bits per pixel that Unidrv should use for its bitmap rendering buffer. The bitmap format is a Windows <a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-device-independent-bitmap--dib-" data-raw-source="&lt;em&gt;device-independent bitmap (DIB)&lt;/em&gt;"><em>device-independent bitmap (DIB)</em></a>, and valid values are 1, 4, 8, 16, 24, or 32.</p></td>
+<td><p>Numeric value indicating the number of bits per pixel that Unidrv should use for its bitmap rendering buffer. The bitmap format is a Windows <a href="/windows-hardware/drivers/#wdkgloss-device-independent-bitmap--dib-" data-raw-source="&lt;em&gt;device-independent bitmap (DIB)&lt;/em&gt;"><em>device-independent bitmap (DIB)</em></a>, and valid values are 1, 4, 8, 16, 24, or 32.</p></td>
 <td><p>Optional. If not specified, the default value is 1. (For color printers, a value of 1 is referred to as "planar mode".)</p>
 <p>Windows DIBs always use one color plane.</p></td>
 </tr>
 <tr class="even">
 <td><p><em><strong>IPCallbackID</strong></p></td>
-<td><p>Positive numeric value, passed to the rendering plug-in's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing" data-raw-source="[&lt;strong&gt;IPrintOemUni::ImageProcessing&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing)"><strong>IPrintOemUni::ImageProcessing</strong></a> method as its <strong>IPCallbackID</strong> argument.</p></td>
+<td><p>Positive numeric value, passed to the rendering plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing" data-raw-source="[&lt;strong&gt;IPrintOemUni::ImageProcessing&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing)"><strong>IPrintOemUni::ImageProcessing</strong></a> method as its <strong>IPCallbackID</strong> argument.</p></td>
 <td><p>Required if a <a href="rendering-plug-ins.md" data-raw-source="[rendering plug-in](rendering-plug-ins.md)">rendering plug-in</a> is supplied that contains an <strong>IPrintOemUni::ImageProcessing</strong> method.</p></td>
 </tr>
 <tr class="odd">
@@ -90,6 +89,4 @@ For examples, see the [sample GPD files](sample-gpd-files.md).
 For information about additional option attributes, see [Option Attributes for All Features](option-attributes-for-all-features.md).
 
 Also see [Controlling Image Quality](controlling-image-quality.md).
-
- 
 

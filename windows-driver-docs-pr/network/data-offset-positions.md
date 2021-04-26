@@ -1,7 +1,6 @@
 ---
 title: Data offset positions
 description: This section describes Data offset positions for Windows Filtering Platform callout drivers.
-ms.assetid: cf4656cf-b978-4539-9fff-8f0aa5de1b5e
 keywords:
 - Data offset positions network drivers
 ms.date: 11/09/2017
@@ -417,7 +416,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 </td>
 <td>
 <p>Not applicable.</p>
-<div class="alert"><b>Note</b>  For these filtering layers, the <i><em>layerData</em></i> parameter contains a pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0"><b>FWPS_CONNECT_REQUEST0</b></a> structure. This structure does  not reference a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
+<div class="alert"><b>Note</b>  For these filtering layers, the <i><em>layerData</em></i> parameter contains a pointer to an <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0"><b>FWPS_CONNECT_REQUEST0</b></a> structure. This structure does  not reference a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
 <div> </div>
 </td>
 </tr>
@@ -428,7 +427,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 </td>
 <td>
 <p>Not applicable.</p>
-<div class="alert"><b>Note</b>  For these filtering layers, the  <i><em>layerData</em></i> parameter contains a pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0"><b>FWPS_BIND_REQUEST0</b></a> structure. This structure does  not reference a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
+<div class="alert"><b>Note</b>  For these filtering layers, the  <i><em>layerData</em></i> parameter contains a pointer to an <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0"><b>FWPS_BIND_REQUEST0</b></a> structure. This structure does  not reference a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
 <div> </div>
 </td>
 </tr>

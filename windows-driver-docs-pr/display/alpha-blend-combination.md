@@ -1,7 +1,6 @@
 ---
 title: Alpha-Blend Combination
 description: Alpha-Blend Combination
-ms.assetid: 567810da-ad8d-4ceb-b914-868632384d09
 keywords:
 - alpha-blend combination WDK DirectX VA
 - blended pictures WDK DirectX VA
@@ -36,21 +35,19 @@ The following structures are used to implement alpha-blend combination.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription" data-raw-source="[&lt;strong&gt;DXVA_BufferDescription&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription)"><strong>DXVA_BufferDescription</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription" data-raw-source="[&lt;strong&gt;DXVA_BufferDescription&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription)"><strong>DXVA_BufferDescription</strong></a></p></td>
 <td align="left"><p>Specifies the alpha-blend combination buffer to be used. This buffer governs the generation of a blended picture from a source picture and alpha-blending information.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination" data-raw-source="[&lt;strong&gt;DXVA_BlendCombination&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination)"><strong>DXVA_BlendCombination</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination" data-raw-source="[&lt;strong&gt;DXVA_BlendCombination&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination)"><strong>DXVA_BlendCombination</strong></a></p></td>
 <td align="left"><p>Specifies how a blended picture is generated from an alpha-blend combination buffer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine" data-raw-source="[&lt;strong&gt;DXVA_ConfigAlphaCombine&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine)"><strong>DXVA_ConfigAlphaCombine</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine" data-raw-source="[&lt;strong&gt;DXVA_ConfigAlphaCombine&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine)"><strong>DXVA_ConfigAlphaCombine</strong></a></p></td>
 <td align="left"><p>Establishes the configuration for how alpha-blending combination operations are to be performed.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: E (Windows Debugger Glossary)
 description: Glossary page - E
-ms.assetid: 1e32bd40-8c77-4c6b-913c-6ec26707ed36
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

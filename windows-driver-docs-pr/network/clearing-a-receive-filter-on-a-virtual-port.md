@@ -1,7 +1,6 @@
 ---
 title: Clearing a Receive Filter on a Virtual Port
 description: Clearing a Receive Filter on a Virtual Port
-ms.assetid: 8431322B-2BF0-4F82-AAAE-0E0396BBC857
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

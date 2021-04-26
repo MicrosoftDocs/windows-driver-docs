@@ -1,7 +1,6 @@
 ---
 title: Multipacket Messages
 description: Multipacket Messages
-ms.assetid: 58979799-4618-43b9-a6dc-0635f6ade9b3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -117,7 +116,7 @@ The following table is an example of a multipacket message that is made up of tw
 <tr class="even">
 <td align="left"><p>72</p></td>
 <td align="left"><p>4</p></td>
-<td align="left"><p>MessageType (start of second <a href="https://docs.microsoft.com/previous-versions/ff570635(v=vs.85)" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_PACKET_MSG&lt;/strong&gt;](/previous-versions/ff570635(v=vs.85))"><strong>REMOTE_NDIS_PACKET_MSG</strong></a>)</p></td>
+<td align="left"><p>MessageType (start of second <a href="/previous-versions/ff570635(v=vs.85)" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_PACKET_MSG&lt;/strong&gt;](/previous-versions/ff570635(v=vs.85))"><strong>REMOTE_NDIS_PACKET_MSG</strong></a>)</p></td>
 <td align="left"><p>0x1</p></td>
 </tr>
 <tr class="odd">
@@ -188,8 +187,6 @@ The following table is an example of a multipacket message that is made up of tw
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

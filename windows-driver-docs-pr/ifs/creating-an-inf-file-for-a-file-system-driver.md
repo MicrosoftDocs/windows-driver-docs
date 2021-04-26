@@ -1,7 +1,6 @@
 ---
 title: Creating an INF File for a File System Driver
 description: Creating an INF File for a File System Driver
-ms.assetid: 4b67159f-a5a5-46da-9500-a9c6b6995da4
 keywords:
 - INF files WDK file system , creating
 - SetupAPI WDK file system
@@ -23,7 +22,7 @@ The Windows Setup and Device Installer Services, known collectively as [SetupAPI
 
 A file system driver's INF file provides instructions that SetupAPI uses to install the driver. The INF file is a text file that specifies the files that must be present for your driver to run and the source and destination directories for the driver files. An INF file also contains driver configuration information that SetupAPI stores in the registry, such as the driver's start type and load order group.
 
-For more information about INF files and how they are created, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
+For more information about INF files and how they are created, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating system. For more information about creating such an INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md) and [Creating International INF Files](../install/creating-international-inf-files.md).
 
@@ -33,7 +32,7 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components, incl
 
 - The [**SignTool**](../devtest/signtool.md) command-line tool, located in the \bin\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
-- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](https://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
+- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) logo signatures.
 
 - With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 

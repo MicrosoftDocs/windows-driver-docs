@@ -1,7 +1,6 @@
 ---
 title: SAL 2.0 Annotations for Windows Drivers
 description: The Microsoft Source Code Annotation Language (SAL) includes annotations that are specific to the analysis of Windows drivers and the related kernel code.
-ms.assetid: 2CD181B8-4E1D-457A-9FF9-DAB3AB932730
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -80,7 +79,7 @@ The Microsoft Source Code Annotation Language (SAL) includes annotations that ar
 <tr class="even">
 <td align="left"><p><strong><em>Flt_CompletionContext_Outptr</em></strong></p></td>
 <td align="left"><a href="-flt-completioncontext-outptr--annotation.md" data-raw-source="[_Flt_CompletionContext_Outptr_ Annotation](-flt-completioncontext-outptr--annotation.md)"><em>Flt_CompletionContext_Outptr</em> Annotation</a></td>
-<td align="left"><p>Use the <strong><em>Flt_CompletionContext_Outptr</em></strong> annotation when you declare file system minifilter pre-operation callback functions (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback" data-raw-source="[&lt;strong&gt;PFLT_PRE_OPERATION_CALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback)"><strong>PFLT_PRE_OPERATION_CALLBACK</strong></a>). Place this annotation on the <em>CompletionContext</em> parameter. This annotation directs the code analysis tool to check that the <em>CompletionContext</em> is correct for the FLT_PREOP_CALLBACK_STATUS return value.</p></td>
+<td align="left"><p>Use the <strong><em>Flt_CompletionContext_Outptr</em></strong> annotation when you declare file system minifilter pre-operation callback functions (<a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback" data-raw-source="[&lt;strong&gt;PFLT_PRE_OPERATION_CALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback)"><strong>PFLT_PRE_OPERATION_CALLBACK</strong></a>). Place this annotation on the <em>CompletionContext</em> parameter. This annotation directs the code analysis tool to check that the <em>CompletionContext</em> is correct for the FLT_PREOP_CALLBACK_STATUS return value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -91,6 +90,4 @@ The Microsoft Source Code Annotation Language (SAL) includes annotations that ar
 
 
 [Using SAL Annotations to Reduce C/C++ Code Defects](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)
-
- 
 

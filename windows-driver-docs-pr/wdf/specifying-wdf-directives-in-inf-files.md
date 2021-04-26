@@ -1,7 +1,6 @@
 ---
 title: Specifying WDF Directives in INF Files
 description: Specifying WDF Directives in INF Files
-ms.assetid: aefc678e-dc81-47dc-a84b-f1a79c16cad9
 keywords:
 - WDF directives WDK UMDF
 - DDInstall section WDK UMDF
@@ -73,20 +72,19 @@ Indicates whether the framework should allow the driver to use any of the direct
 
 If **UmdfDirectHardwareAccess** is set to **AllowDirectHardwareAccess**, the framework allows the driver to use UMDF interfaces that perform direct hardware access.
 
-You must specify **AllowDirectHardwareAccess** if your UMDF driver accesses hardware resources such as registers or ports, interrupts, [general-purpose I/O](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpio-driver-support-overview) (GPIO) pins, or serial bus connections such as I2C, SPI, and serial port. Your driver receives all of these resources through the *ResourcesRaw* and *ResourcesTranslated* parameters of its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function.
+You must specify **AllowDirectHardwareAccess** if your UMDF driver accesses hardware resources such as registers or ports, interrupts, [general-purpose I/O](../gpio/gpio-driver-support-overview.md) (GPIO) pins, or serial bus connections such as I2C, SPI, and serial port. Your driver receives all of these resources through the *ResourcesRaw* and *ResourcesTranslated* parameters of its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function.
 
 > [!NOTE]
-> Starting with UMDF version 2.15, a UMDF driver does not need to specify **AllowDirectHardwareAccess** in order to receive hardware resource lists in its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback routine. If you don't specify it, the driver does not have the access rights to use these resources, with one exception:
-> If the device is assigned one or more connection resources (**CmResourceTypeConnection**) and one or more interrupt resources (**CmResourceTypeInterrupt**), the driver can call [**WdfInterruptCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate) from its [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback routine (but not from [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)).
+> Starting with UMDF version 2.15, a UMDF driver does not need to specify **AllowDirectHardwareAccess** in order to receive hardware resource lists in its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback routine. If you don't specify it, the driver does not have the access rights to use these resources, with one exception:
+> If the device is assigned one or more connection resources (**CmResourceTypeConnection**) and one or more interrupt resources (**CmResourceTypeInterrupt**), the driver can call [**WdfInterruptCreate**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate) from its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback routine (but not from [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)).
 
  
 
 For information about connecting a UMDF driver to particular types of resources, see:
 
--   [Connecting a UMDF Driver to GPIO I/O Pins](https://docs.microsoft.com/windows-hardware/drivers/gpio/connecting-a-umdf-driver-to-gpio-i-o-pins)
--   [Hardware Resources for User-Mode SPB Peripheral Drivers](https://docs.microsoft.com/windows-hardware/drivers/spb/hardware-resources-for-user-mode-spb-peripheral-drivers)
--   [Connection IDs for SPB-Connected Peripheral Devices](https://docs.microsoft.com/windows-hardware/drivers/spb/connection-ids-for-spb-connected-peripheral-devices)
--   [Connecting a UMDF Peripheral Driver to a Serial Port](https://docs.microsoft.com/previous-versions/hh406559(v=vs.85))
+-   [Hardware Resources for User-Mode SPB Peripheral Drivers](../spb/hardware-resources-for-user-mode-spb-peripheral-drivers.md)
+-   [Connection IDs for SPB-Connected Peripheral Devices](../spb/connection-ids-for-spb-connected-peripheral-devices.md)
+-   [Connecting a UMDF Peripheral Driver to a Serial Port](/previous-versions/hh406559(v=vs.85))
 
 If **UmdfDirectHardwareAccess** is set to **RejectDirectHardwareAccess**, the framework does not allow drivers to use any direct hardware access features. The default value is **RejectDirectHardwareAccess**.
 
@@ -126,7 +124,7 @@ To ensure that a UMDF co-installer installs the device, only one **UmdfServiceOr
 
 **UmdfImpersonationLevel** = <*level*>  
 
-Informs the framework about the maximum impersonation level that the UMDF driver can have. A **UmdfImpersonationLevel** directive is optional; if an impersonation level is not specified, the default is **Identification**. When an application opens a file handle, the application can grant a greater impersonation level to the driver. However, the driver cannot call the [**IWDFIoRequest::Impersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) method to request an impersonation level that is greater than the level that **UmdfImpersonationLevel** specifies. The possible values for this directive are:
+Informs the framework about the maximum impersonation level that the UMDF driver can have. A **UmdfImpersonationLevel** directive is optional; if an impersonation level is not specified, the default is **Identification**. When an application opens a file handle, the application can grant a greater impersonation level to the driver. However, the driver cannot call the [**IWDFIoRequest::Impersonate**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) method to request an impersonation level that is greater than the level that **UmdfImpersonationLevel** specifies. The possible values for this directive are:
 
 -   **Anonymous**
 
@@ -136,15 +134,15 @@ Informs the framework about the maximum impersonation level that the UMDF driver
 
 -   **Delegation**
 
-These values correspond to the values that are specified in the [**SECURITY\_IMPERSONATION\_LEVEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_security_impersonation_level) enumeration.
+These values correspond to the values that are specified in the [**SECURITY\_IMPERSONATION\_LEVEL**](/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_security_impersonation_level) enumeration.
 
 ## UmdfMethodNeitherAction
 
 **UmdfMethodNeitherAction** = <**Copy** | **Reject**>  
 
-Indicates whether the framework will accept (**Copy**) or reject (**Reject**) a device's I/O requests, if the request objects contain I/O control codes that specify the [METHOD\_NEITHER](https://docs.microsoft.com/windows-hardware/drivers/kernel/buffer-descriptions-for-i-o-control-codes) buffer access method. A **UmdfMethodNeitherAction** directive is optional. If the directive is not specified, the default value is **Reject**.
+Indicates whether the framework will accept (**Copy**) or reject (**Reject**) a device's I/O requests, if the request objects contain I/O control codes that specify the [METHOD\_NEITHER](../kernel/buffer-descriptions-for-i-o-control-codes.md) buffer access method. A **UmdfMethodNeitherAction** directive is optional. If the directive is not specified, the default value is **Reject**.
 
-For more information about supporting the METHOD\_NEITHER buffer access method in UMDF-based drivers, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-data-buffers-in-umdf-1-x-drivers#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
+For more information about supporting the METHOD\_NEITHER buffer access method in UMDF-based drivers, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](./accessing-data-buffers-in-umdf-1-x-drivers.md#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
 
 ## UmdfDispatcher
 
@@ -171,13 +169,13 @@ UmdfDispatcher=NativeUSB
 
 **UmdfKernelModeClientPolicy** = <**AllowKernelModeClients** | **RejectKernelModeClients**>  
 
-To allow kernel-mode drivers to load above a user-mode driver in earlier UMDF versions, see [Kernel-mode Client Support in Earlier UMDF Versions](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-kernel-mode-clients-in-umdf-1-x-drivers#kernel-mode-client-support-in-earlier-umdf-versions).
+To allow kernel-mode drivers to load above a user-mode driver in earlier UMDF versions, see [Kernel-mode Client Support in Earlier UMDF Versions](./supporting-kernel-mode-clients-in-umdf-1-x-drivers.md#kernel-mode-client-support-in-earlier-umdf-versions).
 
 Indicates whether the framework should allow the driver to receive I/O requests from kernel-mode drivers.
 
 If **UmdfKernelModeClientPolicy** is set to **AllowKernelModeClients**, the framework allows kernel-mode drivers to load above a user-mode driver, and it delivers I/O requests from kernel-mode drivers to the user-mode driver.
 
-If **UmdfKernelModeClientPolicy** is set to **RejectKernelModeClients**, the framework does not allow kernel-mode drivers to load above a user-mode driver, and it does not deliver I/O requests from any kernel-mode drivers to the user-mode driver. If a driver's INF file does not contain this directive, the default value is **RejectKernelModeClients**. For more information, see [Supporting Kernel-mode Clients](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-kernel-mode-clients-in-umdf-1-x-drivers).
+If **UmdfKernelModeClientPolicy** is set to **RejectKernelModeClients**, the framework does not allow kernel-mode drivers to load above a user-mode driver, and it does not deliver I/O requests from any kernel-mode drivers to the user-mode driver. If a driver's INF file does not contain this directive, the default value is **RejectKernelModeClients**. For more information, see [Supporting Kernel-mode Clients](./supporting-kernel-mode-clients-in-umdf-1-x-drivers.md).
 
 
 ## UmdfFileObjectPolicy
@@ -186,7 +184,7 @@ If **UmdfKernelModeClientPolicy** is set to **RejectKernelModeClients**, the fra
 
 **UmdfFileObjectPolicy** = <**RejectNullAndUnknownFileObjects** | **AllowNullAndUnknownFileObjects**>   
 
-Indicates whether the framework should allow processing of I/O requests ([IWDFIoRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest)) that are either not associated with a file object ([IWDFFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile)) or are associated with an unknown file object (a file object for which a driver has not previously seen a create request).
+Indicates whether the framework should allow processing of I/O requests ([IWDFIoRequest](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest)) that are either not associated with a file object ([IWDFFile](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile)) or are associated with an unknown file object (a file object for which a driver has not previously seen a create request).
 
 If **UmdfFileObjectPolicy** is set to **RejectNullAndUnknownFileObjects**, the framework does not allow processing of requests that are associated with a NULL or unknown file object.
 

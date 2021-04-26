@@ -1,7 +1,6 @@
 ---
 title: DTrace Live Dump
 description: DTrace supports live dump file creation using using LKD(). 
-ms.assetid: bbf23d76-423d-4d1e-afde-83739015bbf1
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace
@@ -112,7 +111,7 @@ These example settings below, show setting the maximum number of full live dumps
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl" /f /t REG_DWORD /v AlwaysKeepMemoryDump /d 1`
 
-For more information on these settings, see [WER Settings](https://docs.microsoft.com/windows/win32/wer/wer-settings).
+For more information on these settings, see [WER Settings](/windows/win32/wer/wer-settings).
 
 ### Disable throttling
 

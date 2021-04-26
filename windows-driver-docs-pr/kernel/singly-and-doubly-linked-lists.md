@@ -1,7 +1,6 @@
 ---
 title: Singly and Doubly Linked Lists
 description: Singly and Doubly Linked Lists
-ms.assetid: 3a305f54-7866-4163-a3e4-e078d1927adc
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 
 ### Singly Linked Lists
 
-The operating system provides built-in support for singly linked lists that use [**SINGLE\_LIST\_ENTRY**](/windows/desktop/api/ntdef/ns-ntdef-_single_list_entry) structures. A singly linked list consists of a list head plus some number of list entries. (The number of list entries is zero if the list is empty.) Each list entry is represented as a **SINGLE\_LIST\_ENTRY** structure. The list head is also represented as a **SINGLE\_LIST\_ENTRY** structure.
+The operating system provides built-in support for singly linked lists that use [**SINGLE\_LIST\_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-single_list_entry) structures. A singly linked list consists of a list head plus some number of list entries. (The number of list entries is zero if the list is empty.) Each list entry is represented as a **SINGLE\_LIST\_ENTRY** structure. The list head is also represented as a **SINGLE\_LIST\_ENTRY** structure.
 
 Each **SINGLE\_LIST\_ENTRY** structure contains a **Next** member that points to another **SINGLE\_LIST\_ENTRY** structure. In the **SINGLE\_LIST\_ENTRY** structure that represents the list head, the **Next** member points to the first entry in the list, or is NULL if the list is empty. In the **SINGLE\_LIST\_ENTRY** structure that represents an entry in the list, the **Next** member points to the next entry of the list, or is NULL if this entry is the last in the list.
 
-The routines that manipulate a singly linked list take a pointer to a [**SINGLE\_LIST\_ENTRY**](/windows/desktop/api/ntdef/ns-ntdef-_single_list_entry) that represents the list head. They update the **Next** pointer so that it points to the first entry of the list after the operation.
+The routines that manipulate a singly linked list take a pointer to a [**SINGLE\_LIST\_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-single_list_entry) that represents the list head. They update the **Next** pointer so that it points to the first entry of the list after the operation.
 
 Suppose that the *ListHead* variable is a pointer to the **SINGLE\_LIST\_ENTRY** structure that represents the list head. A driver manipulates *ListHead* as follows:
 
@@ -80,7 +79,7 @@ The system also provides an alternative implementation of atomic singly linked l
 
 ### Doubly Linked Lists
 
-The operating system provides built-in support for doubly linked lists that use [**LIST\_ENTRY**](/windows/desktop/api/ntdef/ns-ntdef-_list_entry) structures. A doubly linked list consists of a list head plus some number of list entries. (The number of list entries is zero if the list is empty.) Each list entry is represented as a **LIST\_ENTRY** structure. The list head is also represented as a **LIST\_ENTRY** structure.
+The operating system provides built-in support for doubly linked lists that use [**LIST\_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-list_entry) structures. A doubly linked list consists of a list head plus some number of list entries. (The number of list entries is zero if the list is empty.) Each list entry is represented as a **LIST\_ENTRY** structure. The list head is also represented as a **LIST\_ENTRY** structure.
 
 Each **LIST\_ENTRY** structure contains an **Flink** member and a **Blink** member. Both members are pointers to **LIST\_ENTRY** structures.
 
@@ -90,7 +89,7 @@ In the **LIST\_ENTRY** structure that represents an entry in the list, the **Fli
 
 (While these rules may seem surprising at first glance, they allow the list insertion and removal operations to implemented with no conditional code branches.)
 
-The routines that manipulate a doubly linked list take a pointer to a [**LIST\_ENTRY**](/windows/desktop/api/ntdef/ns-ntdef-_list_entry) that represents the list head. These routines update the **Flink** and **Blink** members in the list head so that these members point to the first and last entries in the resulting list.
+The routines that manipulate a doubly linked list take a pointer to a [**LIST\_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-list_entry) that represents the list head. These routines update the **Flink** and **Blink** members in the list head so that these members point to the first and last entries in the resulting list.
 
 Suppose that the *ListHead* variable is a pointer to the **LIST\_ENTRY** structure that represents the list head. A driver manipulates *ListHead* as follows:
 
@@ -110,7 +109,7 @@ Suppose that the *ListHead* variable is a pointer to the **LIST\_ENTRY** structu
 
 -   To append a list to the tail of another list, use [**AppendTailList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-appendtaillist).
 
-A [**LIST\_ENTRY**](/windows/desktop/api/ntdef/ns-ntdef-_list_entry), by itself, only has **Blink** and **Flink** members. To store your own data in the lists, embed the **LIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
+A [**LIST\_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-list_entry), by itself, only has **Blink** and **Flink** members. To store your own data in the lists, embed the **LIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
 ```cpp
 typedef struct {

@@ -1,14 +1,13 @@
 ---
 title: Reg2inf
 description: Reg2inf is a tool that converts registry keys to make a driver package universal.
-ms.assetid: e43a137e-c08a-4715-84f7-32cda67399e3
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
 # Reg2inf
  
-The Driver Package INF Registry Conversion Tool (`reg2inf.exe`) tool converts a registry key and its values or a COM .dll implementing a [**DllRegisterServer**](/windows/desktop/api/olectl/nf-olectl-dllregisterserver) routine into a set of [INF AddReg directives](../install/inf-addreg-directive.md) for inclusion into a driver package INF file.  This tool is particularly useful for converting existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into INF AddReg directives in order to make an INF file universal.  For more info about universal INF files, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+The Driver Package INF Registry Conversion Tool (`reg2inf.exe`) tool converts a registry key and its values or a COM .dll implementing a [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) routine into a set of [INF AddReg directives](../install/inf-addreg-directive.md) for inclusion into a driver package INF file.  This tool is particularly useful for converting existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into INF AddReg directives in order to make an INF file universal.  For more info about universal INF files, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
  
 Starting in Windows 10 version 1709, the tool ships as part of the WDK 10 installation. You can find it in the \tools subdirectory of your WDK 10 installation, for example `c:\Program Files(x86)\Windows Kits\10\tools\`. 
 

@@ -1,7 +1,6 @@
 ---
 title: WPP Software Tracing
 description: This section describes how to use the Windows software trace preprocessor (WPP) to trace the operation of a software component trace provider.
-ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900
 keywords:
 - Windows software trace preprocessor WDK
 - WPP software tracing WDK
@@ -40,7 +39,7 @@ WPP software tracing supplements and enhances [WMI event tracing](../kernel/wmi-
 <td align="left"><p>WPP software tracing is primarily intended for debugging code during development. If you want to publish events that can be consumed by applications interested in structured ETW events, in addition to tracing during development, use the following:</p>
 <ul>
 <li>For kernel-mode drivers, use the <a href="event-tracing-for-windows--etw-.md" data-raw-source="[Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md)">Event Tracing for Windows (ETW)</a> API.</li>
-<li>For user-mode drivers or applications, use the <a href="https://docs.microsoft.com/windows/desktop/ETW/event-tracing-portal" data-raw-source="[Event Tracing](/windows/desktop/ETW/event-tracing-portal)">Event Tracing</a> (Windows Desktop) API.</li>
+<li>For user-mode drivers or applications, use the <a href="/windows/desktop/ETW/event-tracing-portal" data-raw-source="[Event Tracing](/windows/desktop/ETW/event-tracing-portal)">Event Tracing</a> (Windows Desktop) API.</li>
 </ul>
 For more information, see <a href="tools-for-software-tracing.md" data-raw-source="[When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md)">When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?</a></td>
 </tr>
@@ -81,13 +80,11 @@ For more information about ETW, see [Event Tracing for Windows](/windows-hardwar
 
 **Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](/windows/desktop/ETW/about-event-tracing#providers) for more information.
 
-For information about the [WMI library support routines](/windows-hardware/drivers/ddi/index) that support WPP software tracing, see:
+For information about the WMI library support routines that support WPP software tracing, see:
 
 [**WmiQueryTraceInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmiquerytraceinformation)
 
 [**WmiTraceMessage**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessage)
 
 [**WmiTraceMessageVa**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessageva)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Returning Error Codes from COPP Functions
 description: Returning Error Codes from COPP Functions
-ms.assetid: a42fba73-59b2-4106-ba2b-9e96cd8524c8
 keywords:
 - copy protection WDK COPP , error codes
 - video copy protection WDK COPP , error codes
@@ -43,7 +42,7 @@ The COPP DDI can return the E\_FAIL and DDERR\_GENERIC error codes; however, bec
 
 The Remarks section for each COPP function specifies the DDERR\_ error codes that the COPP function can report. The COPP DDI should not be required to return any other DDERR\_ error codes.
 
-When propagating error information from the COPP DDI in the video miniport driver to the display driver, you should not use the return value from the [**EngDeviceIoControl**](/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) function, because the Windows kernel manipulates the error value that is returned from the IOCTL to **EngDeviceIoControl**. Instead, error information should be passed through the *lpInBuffer* parameter of **EngDeviceIoControl**. For more information, see [Calling the COPP DDI from the Display Driver](calling-the-copp-ddi-from-the-display-driver.md) and the example code in [COPP Video Miniport Driver Template](copp-video-miniport-driver-template.md) and [Performing COPP Operations](performing-copp-operations-example.md).
+When propagating error information from the COPP DDI in the video miniport driver to the display driver, you should not use the return value from the [**EngDeviceIoControl**](/windows/win32/api/winddi/nf-winddi-engdeviceiocontrol) function, because the Windows kernel manipulates the error value that is returned from the IOCTL to **EngDeviceIoControl**. Instead, error information should be passed through the *lpInBuffer* parameter of **EngDeviceIoControl**. For more information, see [Calling the COPP DDI from the Display Driver](calling-the-copp-ddi-from-the-display-driver.md) and the example code in [COPP Video Miniport Driver Template](copp-video-miniport-driver-template.md) and [Performing COPP Operations](performing-copp-operations-example.md).
 
  
 

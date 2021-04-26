@@ -1,7 +1,6 @@
 ---
 title: Obtaining Information About an I/O Request
 description: Obtaining Information About an I/O Request
-ms.assetid: a686ea00-6987-480a-a4ce-892e1efbed87
 keywords:
 - request processing WDK KMDF , obtaining information about
 - I/O requests WDK KMDF , obtaining information about

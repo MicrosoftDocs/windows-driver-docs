@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_AUDIO_DECODER
 description: KSMFT_CATEGORY_AUDIO_DECODER
-ms.assetid: 0a6ae714-89c4-44c5-a03d-473396a3886e
 keywords: ["KSMFT_CATEGORY_AUDIO_DECODER Device and Driver Installation"]
 topic_type:
 - apiref

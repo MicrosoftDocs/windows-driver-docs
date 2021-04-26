@@ -1,7 +1,6 @@
 ---
 title: Loading an OpenGL Installable Client Driver
 description: Loading an OpenGL Installable Client Driver
-ms.assetid: 2b244bbf-f26c-4307-a347-a29e12c6d496
 keywords:
 - OpenGL ICD WDK display
 - loading drivers WDK display

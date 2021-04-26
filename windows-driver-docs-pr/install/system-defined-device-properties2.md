@@ -1,7 +1,6 @@
 ---
 title: System-Defined Device Properties
 description: System-Defined Device Properties
-ms.assetid: 9d823a9f-0802-4e92-bf94-abb5b0e7b9ee
 keywords:
 - device properties WDK device installations , system-defined
 ms.date: 04/20/2017

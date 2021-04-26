@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_UPLOAD
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_UPLOAD property is used to report whether the Imprinter/Endorser item supports upload image (graphic) data transfers. This property is initialized and maintained by the WIA minidriver.
-ms.assetid: BCA1F340-5BF8-429A-90B9-9638E52E61DE
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS_UPLOAD Imaging Devices"]
 topic_type:
 - apiref

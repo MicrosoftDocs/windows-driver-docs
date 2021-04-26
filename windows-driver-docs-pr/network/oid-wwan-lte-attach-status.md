@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_LTE_ATTACH_STATUS
 description: OID_WWAN_LTE_ATTACH_STATUS is used to inform the OS of the last used LTE attach context.
-ms.assetid: 394650CF-5410-40C6-8749-D941DF68D303
 ms.date: 08/23/2018
 keywords: 
  -OID_WWAN_LTE_ATTACH_STATUS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Defaults Section of a TxtSetup.oem File
 description: The Defaults section lists the default driver(s) for each hardware component supported by this file. Windows highlights the default selection when it presents a list of drivers to the user.
-ms.assetid: 5f7fc7c8-543d-442a-911d-320aa19c72f0
 keywords: ["Defaults Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Features of Serial and Serenum
 description: Features of Serial and Serenum
-ms.assetid: 47202203-935a-4e1a-9b05-5555f7cbcfa8
 keywords:
 - serial devices WDK , Serial driver
 - serial devices WDK , Serenum driver

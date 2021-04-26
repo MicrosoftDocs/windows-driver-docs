@@ -1,7 +1,6 @@
 ---
 title: Driver Verifier Manager (Windows 2000)
 description: Driver Verifier Manager (Windows 2000)
-ms.assetid: d1266d2d-2388-472d-a1c4-875ed24913d4
 keywords:
 - Driver Verifier Manager
 - Verifier utility

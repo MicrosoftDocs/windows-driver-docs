@@ -1,7 +1,6 @@
 ---
 title: Creating Custom Property Pages
 description: Creating Custom Property Pages
-ms.assetid: 2481450f-ebb2-40e3-8a42-eabaecc1c7e4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 When a [device property page provider](types-of-device-property-page-providers.md) handles a request to create a property page for its device or device class, the provider should take the following steps:
 
-1.  Call [**SetupDiGetClassInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassinstallparamsa) to get the current class install parameters for the device. For example:
+1.  Call [**SetupDiGetClassInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassinstallparamsa) to get the current class install parameters for the device. For example:
 
     ```cpp
     SP_ADDPROPERTYPAGE_DATA AddPropertyPageData;
@@ -68,7 +67,7 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 7.  Repeat steps 2 through 6 for each additional custom property page.
 
-8.  Call [**SetupDiSetClassInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclassinstallparamsa) to set the new class install parameters, which include the updated property page structure.
+8.  Call [**SetupDiSetClassInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclassinstallparamsa) to set the new class install parameters, which include the updated property page structure.
 
 9.  Return NO_ERROR.
 

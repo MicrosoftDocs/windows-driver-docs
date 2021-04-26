@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An audio or video device may support specific rendering profiles. For example, an audio streaming device may stream a particular type of content at a specific bitrate over multiple channels. The content type, streaming bitrate, and channel count are referred to as a *rendering profile*.
 
-WPD applications will often retrieve a rendering profile from the driver. For more information about how an application retrieves a rendering profile, see the [Retrieving the Rendering Capabilities Supported by a Device](https://go.microsoft.com/fwlink/p/?linkid=150363) topic in the WPD SDK.
+WPD applications will often retrieve a rendering profile from the driver. For more information about how an application retrieves a rendering profile, see the [Retrieving the Rendering Capabilities Supported by a Device](/previous-versions//ms740263(v=vs.85)) topic in the WPD SDK.
 
 This topic describes how the WpdWudfSampleDriver driver implements support for audio streaming in the *Helpers.cpp* module.
 
@@ -149,9 +149,4 @@ HRESULT GetPreferredAudioProfile(
 ```
 
  
-
- 
-
-
-
 

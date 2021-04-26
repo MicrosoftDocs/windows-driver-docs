@@ -1,7 +1,6 @@
 ---
 title: Debugging Printer Drivers and Spooler Components
 description: Debugging Printer Drivers and Spooler Components
-ms.assetid: baa793b8-fda5-4ec2-b670-954abf809b4c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

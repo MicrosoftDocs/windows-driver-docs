@@ -1,7 +1,6 @@
 ---
 title: JSConstraintsDebug
 description: JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for JavaScript Constraints while developing a V4 printer driver.
-ms.assetid: 48C39A2C-7EA6-4BAA-B5E8-3B426C9697B3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](../download-the-wdk.md)">Windows Driver Kit downloads</a>.</p></td>
+<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](../download-the-wdk.md)">Windows Driver Kit downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -31,13 +30,13 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 
 The tool executes each of the following relevant entry point APIs on the JavaScript constraints of the targeted driver against the user provided print ticket:
 
-[**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
+[**PTGetPrintCapabilities**](/windows/win32/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
 
-[**PTConvertDevModeToPrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
+[**PTConvertDevModeToPrintTicket**](/windows/win32/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
 
-[**TConvertPrintTicketToDevMode**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
+[**TConvertPrintTicketToDevMode**](/windows/win32/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
 
-[**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
+[**PTMergeAndValidatePrintTicket**](/windows/win32/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
 
 During execution the tool will prompt for an appropriate IDE debugger such as Visual Studio. Upon selection, the constraints source code will be opened and stopped at a JavaScript debugger statement.
 
@@ -164,6 +163,4 @@ Test merge and validate operations between two custom print tickets.
 ```
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml PrintTicket2.xml
 ```
-
- 
 

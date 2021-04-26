@@ -1,7 +1,6 @@
 ---
 title: Specifying Access Rights
 description: Specifying Access Rights
-ms.assetid: 8ef4b4bb-5f4e-4095-b4ab-1182c0f75619
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
@@ -39,7 +38,7 @@ The following standard specific access rights apply to all types of executive ob
 </tr>
 <tr class="odd">
 <td><p>SYNCHRONIZE</p></td>
-<td><p>The caller can perform a wait operation on the object. (For example, the object can be passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects" data-raw-source="[&lt;strong&gt;KeWaitForMultipleObjects&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)"><strong>KeWaitForMultipleObjects</strong></a>.)</p></td>
+<td><p>The caller can perform a wait operation on the object. (For example, the object can be passed to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects" data-raw-source="[&lt;strong&gt;KeWaitForMultipleObjects&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)"><strong>KeWaitForMultipleObjects</strong></a>.)</p></td>
 </tr>
 <tr class="even">
 <td><p>WRITE_DAC</p></td>

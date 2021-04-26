@@ -1,7 +1,6 @@
 ---
 title: Download the Windows Driver Kit (WDK)
 description: Download instructions for the latest released version of the Windows Driver Kit (WDK)
-ms.assetid: 7b5e253b-3bcd-41e3-a646-0f95ce416f87
 keywords:
 - Windows Driver Kit
 - WDK
@@ -17,7 +16,7 @@ ms.custom: 19H1
 The WDK is used to develop, test, and deploy Windows drivers.
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
-* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
+* [Review known issues](wdk-known-issues.md)
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
@@ -67,21 +66,42 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.25)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)
 ```
 
-### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 2004
+### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.685 for Windows 10, version 2004
+* [Download SDK for Windows 10, version 2004](https://aka.ms/windowssdk)
+
+This SDK is strongly recommended and will eventually be made available through Visual Studio
+
+
+### ![download icon](images/download-install.png) Step 2: Install Refreshed WDK for Windows 10, version 2004
 
 * [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
+> [!TIP]
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2019\WDK.vsix.
+
 ## Enterprise WDK (EWDK) for Windows 10, version 2004
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.3.0 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.7.0 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
 * [Download the EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019)
+
+> You can use the Visual Studio interface with the build tools provided in the EWDK.
+>
+>1.	Mount the EWDK ISO.
+>2.	Run `LaunchBuildEnv.cmd`.
+>3.	In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
+>4.	Launch devenv.exe from the same environment, using the full file path. 
+>Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
+>
+>Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2019 works with the EWDK that contain VS16.X build tools. 
+
+
 
 ## Driver samples for Windows 10
 

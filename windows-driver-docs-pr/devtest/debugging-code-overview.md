@@ -1,7 +1,6 @@
 ---
 title: Debugging Code Overview
 description: Debugging Code Overview
-ms.assetid: 2c76e569-61cd-44b0-b8e5-032ab2c48fdb
 keywords:
 - debugging drivers WDK , debugging code
 - debugging code WDK

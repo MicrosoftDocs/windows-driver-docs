@@ -1,7 +1,6 @@
 ---
 title: Closing a Session to the Filter Engine
 description: Closing a Session to the Filter Engine
-ms.assetid: e145fb8c-fe9f-4834-8df0-f2ceb5b13b09
 keywords:
 - Windows Filtering Platform callout drivers WDK , closing sessions
 - callout drivers WDK Windows Filtering Platform , closing sessions

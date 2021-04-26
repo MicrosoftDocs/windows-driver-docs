@@ -1,7 +1,6 @@
 ---
 title: ALE Endpoint Lifetime Management
 description: ALE Endpoint Lifetime Management
-ms.assetid: cbf54062-4ced-4cf6-babf-e9e4e1ddf302
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

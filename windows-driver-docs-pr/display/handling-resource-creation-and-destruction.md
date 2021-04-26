@@ -1,7 +1,6 @@
 ---
 title: Handling Resource Creation and Destruction
 description: Handling Resource Creation and Destruction
-ms.assetid: d443bdc3-1c5a-4372-9e6a-b8a4d21499b9
 keywords:
 - resource creation WDK display
 - resource destruction WDK display

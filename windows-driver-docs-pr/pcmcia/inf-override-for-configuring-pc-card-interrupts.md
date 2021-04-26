@@ -1,7 +1,6 @@
 ---
 title: INF Override for Configuring PC Card Interrupts
 description: INF Override for Configuring PC Card Interrupts
-ms.assetid: 90c951c4-0106-426a-b650-aeb93b893206
 keywords:
 - IRQ routing WDK PCMCIA bus
 - PCMCIA WDK buses , IRQ routing

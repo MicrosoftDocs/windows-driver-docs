@@ -1,7 +1,6 @@
 ---
 title: HS_NETWORK_PROFILE structure
 description: The HS_NETWORK_PROFILE structure is provided by the plugin and contains information required for connection to the target network. Each instance of the Network Profile is uniquely associated with a corresponding HS_NETWORK_IDENTITY structure.
-ms.assetid: 55e8786c-d7b8-48f3-9e54-312183cf8fb3
 keywords: 
 - HS_NETWORK_PROFILE structure Network Drivers Starting with Windows Vista
 - PHS_NETWORK_PROFILE structure pointer Network Drivers Starting with Windows Vista

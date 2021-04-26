@@ -1,7 +1,6 @@
 ---
 title: Responding to Battery Information Queries
 description: Responding to Battery Information Queries
-ms.assetid: 5d215ff8-d41f-471e-bc54-570a94f3c23f
 keywords:
 - battery information WDK
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_responding_to_battery_information_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_INFORMATION_QUERIES_DG"></span>
 
 
-The battery class driver calls the [*BatteryMiniQueryInformation*](/windows/desktop/api/batclass/nc-batclass-bclass_query_information_callback) routine to get a variety of information about the current battery. This routine is declared as follows:
+The battery class driver calls the [*BatteryMiniQueryInformation*](/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback) routine to get a variety of information about the current battery. This routine is declared as follows:
 
 ```cpp
 typedef 
@@ -30,7 +29,7 @@ NTSTATUS
     );
 ```
 
-The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the [**BATTERY\_MINIPORT\_INFO**](/windows/desktop/api/batclass/ns-batclass-battery_miniport_info) structure at device initialization. The *BatteryTag* parameter is a value previously returned by [*BatteryMiniQueryTag*](/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback).
+The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the [**BATTERY\_MINIPORT\_INFO**](/windows/win32/api/batclass/ns-batclass-battery_miniport_info) structure at device initialization. The *BatteryTag* parameter is a value previously returned by [*BatteryMiniQueryTag*](/windows/win32/api/batclass/nc-batclass-bclass_query_tag_callback).
 
 The *Level* parameter specifies the kind of information requested. The miniclass driver formats the information as a [**BATTERY\_INFORMATION**](/previous-versions/ff536283(v=vs.85)) structure and returns it at the address supplied by *Buffer*, with a pointer to its length in *ReturnedLength*.
 

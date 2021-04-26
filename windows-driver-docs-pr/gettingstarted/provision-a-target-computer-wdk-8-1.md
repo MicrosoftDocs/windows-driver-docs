@@ -1,7 +1,6 @@
 ---
 title: Provision a computer for driver deployment and testing (WDK 10)
 description: Provisioning a target or test computer is the process of configuring a computer for automatic driver deployment, testing, and debugging. To provision a computer, use Microsoft Visual Studio.
-ms.assetid: A2615EE9-316E-4AE2-BBAA-B9E153090016
 ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ The host and target computers must be able to ping each other by name. This migh
 
 2. [Install the WDK](../download-the-wdk.md). You do not need to install Visual Studio, however, unless you plan on doing driver development on the target computer.
 
-3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](https://go.microsoft.com/fwlink/p/?LinkID=309386).
+3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)).
 
     If the target computer uses an ARM processor, install the Windows Debug Policy. This can be done only by Microsoft or the manufacturer of the target computer. You do not need to disable Secure Boot.
 
@@ -33,9 +32,9 @@ The host and target computers must be able to ping each other by name. This migh
 
 5. If the target computer is running an N or KN version of Windows, install the Media Feature Pack for N and KN versions of Windows:
 
-    - [Media Feature Pack for N and KN versions of Windows 8.1](https://go.microsoft.com/fwlink/p?linkid=329737)
-    - [Media Feature Pack for N and KN versions of Windows 8](https://go.microsoft.com/fwlink/p?linkid=329738)
-    - [Media Feature Pack for N and KN versions of Windows 7](https://go.microsoft.com/fwlink/p?linkid=329739)
+    - [Media Feature Pack for N and KN versions of Windows 10](https://www.microsoft.com/download/details.aspx?id=48231)
+    - [Media Feature Pack for N and KN versions of Windows 8.1](https://www.microsoft.com/download/details.aspx?id=40744)
+    - [Media Feature Pack for N and KN versions of Windows 8](https://www.microsoft.com/download/details.aspx?id=30685)
 
 6. If your target computer is running Windows Server, find the DriverTest folder that was just created by WDK Test Target Setup MSI. (Example: c:\\DriverTest). Select and hold (or right-click) the **DriverTest** folder, and choose **Properties**. On the **Security** tab, give **Modify** permission to the **Authenticated Users** group.
 
@@ -64,11 +63,11 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 5. Select a type of debugging connection, and enter the required parameters.
 
-    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=223405).
+    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](../debugger/index.md).
 
 6. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 
-> [!TIP]
+> [!NOTE]
 > Provisioning virtual machines through the WDK's automatic provisioning process is not supported. However, you can test drivers on a VM by setting up the target VM manually as described in the [step by step echo lab](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
 ## See Also

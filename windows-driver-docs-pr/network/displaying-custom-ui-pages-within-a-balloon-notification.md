@@ -1,7 +1,6 @@
 ---
 title: Displaying Custom UI Pages within a Balloon Notification
 description: Displaying Custom UI Pages within a Balloon Notification
-ms.assetid: 5ed2ba59-88ae-4379-b729-1d741b30a7a0
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , balloon notifications
 - balloon notifications WDK
@@ -36,11 +35,11 @@ When processing a custom UI request as a balloon notification, the operating sys
 
     When the operating system calls the **IWizardExtension::AddPages** method, the Native 802.11 IHV UI Extensions DLL returns an array of handles for PROPSHEETPAGE structures representing the custom UI pages.
 
-    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607). For more information about the PROPSHEETPAGE structure, refer to the documentation in the Microsoft Windows SDK.
+    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](/windows/win32/api/shobjidl/nn-shobjidl-iwizardextension). For more information about the PROPSHEETPAGE structure, refer to the documentation in the Microsoft Windows SDK.
 
-5.  Navigates through the UI pages as specified by the Native 802.11 IHV UI Extensions DLL through **IWizardSite** COM interface. For more information about this interface, see [IWizardSite COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56608).
+5.  Navigates through the UI pages as specified by the Native 802.11 IHV UI Extensions DLL through **IWizardSite** COM interface. For more information about this interface, see [IWizardSite COM Interface](/windows/win32/api/shobjidl/nn-shobjidl-iwizardsite).
 
-While the custom UI is displayed, the Native 802.11 IHV UI Extensions DLL can read or write context-specific data through the [IPropertyBag COM interface](https://go.microsoft.com/fwlink/p/?linkid=56610). For more information about this process, see [Accessing Profile and Context Data](accessing-profile-and-context-data.md). After the display of the custom UI has completed, the Native 802.11 IHV UI Extensions DLL can return the user-entered response data to the Native 802.11 IHV Extensions DLL by calling **WlanSendUIResponse** . The DLL passes in the GUID for the UI request as well as a pointer to a buffer that contains the response data.
+While the custom UI is displayed, the Native 802.11 IHV UI Extensions DLL can read or write context-specific data through the [IPropertyBag COM interface](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196(v=vs.85)). For more information about this process, see [Accessing Profile and Context Data](accessing-profile-and-context-data.md). After the display of the custom UI has completed, the Native 802.11 IHV UI Extensions DLL can return the user-entered response data to the Native 802.11 IHV Extensions DLL by calling **WlanSendUIResponse** . The DLL passes in the GUID for the UI request as well as a pointer to a buffer that contains the response data.
 
 After the Native 802.11 IHV UI Extensions DLLcalls **WlanSendUIResponse**, the operating system will call the Native 802.11 IHV Extension DLL's [*Dot11ExtIhvProcessUIResponse*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_process_ui_response) IHV Handler function to forward the response data for the custom UI.
 

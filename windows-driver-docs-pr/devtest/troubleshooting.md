@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting the metadata authoring wizards
 description: Troubleshooting the metadata authoring wizards
-ms.assetid: EBAF4289-DA23-4FFE-8CC0-DD21021CBA86
 keywords:
 - Troubleshooting the Metadata Authoring Wizard
 ms.date: 04/20/2017
@@ -10,123 +9,20 @@ ms.localizationpriority: medium
 
 # Troubleshooting the metadata authoring wizards
 
-
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273). \]
+This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8.
 
 If you receive any of the following error messages, refer to the Resolution column in the table to resolve the issue.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left">Tool</td>
-<td align="left">Screen</td>
-<td align="left">Error message</td>
-<td align="left">Resolution</td>
-</tr>
-<tr class="even">
-<td align="left">Metadata Authoring Wizard</td>
-<td align="left">Welcome</td>
-<td align="left">ERROR: You must specify a folder location</td>
-<td align="left">Enter a folder path.</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Welcome</td>
-<td align="left">ERROR: FolderLocation.Text folder does not exist</td>
-<td align="left">Correct the file path.</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Welcome</td>
-<td align="left">The chosen file doesn't exist</td>
-<td align="left">Correct the file path or name.</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Welcome</td>
-<td align="left">XML File error</td>
-<td align="left"><p>Correct the XML error.</p>
-<p>Error examples:</p>
-<ul>
-<li>Was expecting the first child of {0} to be {1}, but found {2} instead.</li>
-<li>Was expecting {0} to be followed by {1}, but found {2} instead.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Finish</td>
-<td align="left">Package creation failed:</td>
-<td align="left"><p>Change the parameter based on the instructions.</p>
-<p>Error examples:</p>
-<ul>
-<li>You must specify the ModelName for the device (locale {0})</li>
-<li>You must associate this package with at least one HardwareID or ModelID</li>
-<li>You must specify a primary category for this device</li>
-</ul>
-<p>Warning examples:</p>
-<ul>
-<li>ModelNumber ({0}) is not specified</li>
-<li>DeviceDescription 2 ({0}) is not specified</li>
-<li>The generic icon will be determined by the primary category selection</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Association</td>
-<td align="left">Invalid format : "Value" - don't add { } in the beginning and end.</td>
-<td align="left">Remove the {} and try again.</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Association</td>
-<td align="left">Invalid GUID format: "Value"</td>
-<td align="left">Type the correct GUID and try again.</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Icon</td>
-<td align="left">There were problems with the icon file: "Error Message" Icon Validation Error</td>
-<td align="left">The icon can't be found or doesn't meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.
-<p>Error examples:</p>
-<ul>
-<li>Error: Image 256x256 transparency needs to be set.</li>
-<li>Error: Image 48x48:32bit+Alpha does not exist.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Submission Wizard</td>
-<td align="left">Select metadata packages</td>
-<td align="left">There is already a package with that name in the list</td>
-<td align="left">Create a new GUID for the device metadata package.</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Select metadata packages</td>
-<td align="left">There was a problem loading the package:</td>
-<td align="left">Change the parameter based on the instructions.</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Finish</td>
-<td align="left">There was a problem creating the submission package:</td>
-<td align="left">Change the parameter based on the instructions.</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+|Tool|Screen|Error message|Resolution|
+|----|----|----|----|
+|Metadata Authoring Wizard|Welcome|ERROR: You must specify a folder location|Enter a folder path.|
+|Metadata Authoring Wizard|Welcome|ERROR: FolderLocation.Text folder does not exist|Correct the file path.|
+|Metadata Authoring Wizard|Welcome|The chosen file doesn't exist|Correct the file path or name.|
+|Metadata Authoring Wizard|Welcome|XML File error|Correct the XML error.</br>**Error examples:**</br></br>Was expecting the first child of {0} to be {1}, but found {2} instead.</br></br>Was expecting {0} to be followed by {1}, but found {2} instead.|
+|Metadata Authoring Wizard|Finish|Package creation failed:|Change the parameter based on the instructions.</br>**Error examples:**</br></br>You must specify the ModelName for the device (locale {0})</br></br>You must associate this package with at least one HardwareID or ModelID</br></br>You must specify a primary category for this device.</br></br>**Warning examples:**</br></br>ModelNumber ({0}) is not specified</br></br>DeviceDescription 2 ({0}) is not specified</br></br>The generic icon will be determined by the primary category selection|
+|Metadata Authoring Wizard|Association|Invalid format : "Value" - don't add { } in the beginning and end.|Remove the {} and try again.|
+|Metadata Authoring Wizard|Association|Invalid GUID format: "Value"|Type the correct GUID and try again.|
+|Metadata Authoring Wizard|Icon|There were problems with the icon file: "Error Message" Icon Validation Error|The icon can't be found or doesn't meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.</br></br>**Error examples:**</br></br>Error: Image 256x256 transparency needs to be set.</br></br>Error: Image 48x48:32bit+Alpha does not exist.|
+|Submission Wizard|Select metadata packages|There is already a package with that name in the list|Create a new GUID for the device metadata package.|
+|Submission Wizard|Select metadata packages|There was a problem loading the package:|Change the parameter based on the instructions.|
+|Submission Wizard|Finish|There was a problem creating the submission package:|Change the parameter based on the instructions.|

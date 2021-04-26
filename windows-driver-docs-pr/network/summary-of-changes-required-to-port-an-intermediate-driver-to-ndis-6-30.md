@@ -1,7 +1,6 @@
 ---
 title: Summary of changes to port an intermediate driver to NDIS 6.30
 description: To update an NDIS 6.x intermediate (IM) driver to support NDIS 6.30, you must modify it as outlined in the following sections.
-ms.assetid: 02FAC8B2-16B1-49C2-8B3A-29535A698CEA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

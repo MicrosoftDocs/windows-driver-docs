@@ -1,7 +1,6 @@
 ---
 title: Processing Subrectangles without Stretching
 description: Processing Subrectangles without Stretching
-ms.assetid: ee59b06c-a3fb-41ac-875e-754d20a5eaa6
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing
 - subrectangular processing WDK DirectX VA

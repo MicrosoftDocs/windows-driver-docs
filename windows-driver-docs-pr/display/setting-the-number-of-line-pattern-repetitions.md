@@ -1,7 +1,6 @@
 ---
 title: Setting the Number of Line Pattern Repetitions
 description: Setting the Number of Line Pattern Repetitions
-ms.assetid: 090b823a-59d0-40e1-8feb-0b03b7f08fee
 keywords:
 - line pattern repetitions WDK Direct3D
 ms.date: 04/20/2017

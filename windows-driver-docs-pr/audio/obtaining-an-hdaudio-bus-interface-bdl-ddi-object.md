@@ -1,7 +1,6 @@
 ---
 title: Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object
-ms.assetid: 142eb2f0-6c6d-4441-8ad7-0875546c1ab2
 keywords:
 - HDAUDIO_BUS_INTERFACE_BDL structure
 ms.date: 04/20/2017
@@ -33,7 +32,7 @@ The following table shows the input parameter values that the function driver wr
 </tr>
 <tr class="even">
 <td align="left"><p>USHORT <em>Size</em></p></td>
-<td align="left"><p><strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_BDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)"><strong>HDAUDIO_BUS_INTERFACE_BDL</strong></a>)</p></td>
+<td align="left"><p><strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_BDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)"><strong>HDAUDIO_BUS_INTERFACE_BDL</strong></a>)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>USHORT <em>Version</em></p></td>
@@ -41,7 +40,7 @@ The following table shows the input parameter values that the function driver wr
 </tr>
 <tr class="even">
 <td align="left"><p>PINTERFACE <em>Interface</em></p></td>
-<td align="left"><p>Pointer to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_BDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)"><strong>HDAUDIO_BUS_INTERFACE_BDL</strong></a> structure</p></td>
+<td align="left"><p>Pointer to <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_BDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)"><strong>HDAUDIO_BUS_INTERFACE_BDL</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PVOID <em>InterfaceSpecificData</em></p></td>
@@ -70,7 +69,7 @@ The following table shows the values that the HD Audio bus driver writes into th
 <tbody>
 <tr class="odd">
 <td align="left"><p>USHORT <strong>Size</strong></p></td>
-<td align="left"><p><strong>sizeof</strong>(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_BDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)"><strong>HDAUDIO_BUS_INTERFACE_BDL</strong></a>)</p></td>
+<td align="left"><p><strong>sizeof</strong>(<a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl" data-raw-source="[&lt;strong&gt;HDAUDIO_BUS_INTERFACE_BDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)"><strong>HDAUDIO_BUS_INTERFACE_BDL</strong></a>)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>USHORT <strong>Version</strong></p></td>
@@ -94,6 +93,4 @@ The following table shows the values that the HD Audio bus driver writes into th
  
 
 In the preceding table, the **Context** member points to a context object that contains information that is specific to the particular instance of the HDAUDIO\_BUS\_INTERFACE\_BDL version of the DDI that the client obtains from the IOCTL. As explained previously, when calling any of the routines in the DDI, the client function driver must always specify the **Context** pointer value as the first call parameter.
-
- 
 

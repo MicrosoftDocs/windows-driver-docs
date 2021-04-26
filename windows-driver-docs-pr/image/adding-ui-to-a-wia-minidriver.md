@@ -1,7 +1,6 @@
 ---
 title: Adding UI to a WIA Minidriver
 description: Adding UI to a WIA Minidriver
-ms.assetid: 70440de2-0554-4f5b-9ce4-fe060d3077a4
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

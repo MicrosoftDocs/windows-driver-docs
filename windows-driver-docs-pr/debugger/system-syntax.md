@@ -1,7 +1,6 @@
 ---
 title: System Syntax
 description: System Syntax
-ms.assetid: f2b327cd-8ba5-45f3-9116-756df82358f4
 keywords: ["system, command syntax", "(system identifier)", "system, system identifier ( )", "syntax rules for commands, systems", "syntax rules for commands, (system identifier)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Picture Resampling Control
 description: Picture Resampling Control
-ms.assetid: 08d74812-3393-4461-91c4-644ecc5ad428
 keywords:
 - picture resampling WDK DirectX VA
 - spatial scalable video coding WDK DirectX VA

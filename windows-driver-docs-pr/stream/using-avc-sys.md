@@ -1,7 +1,6 @@
 ---
 title: Using Avc.sys
 description: Using Avc.sys
-ms.assetid: 3b4ec139-ff01-40bd-8e29-92f554180585
 keywords:
 - Avc.sys function driver WDK , about Avc.sys function driver
 - AV/C WDK , Avc.sys usage

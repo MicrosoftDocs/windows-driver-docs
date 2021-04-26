@@ -1,7 +1,6 @@
 ---
 title: The radio-manager file list
 description: The following table describes the files that are found in the radio manager DLL.
-ms.assetid: 70A8B11F-89FF-49E3-933E-2BB66D5E1BF6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

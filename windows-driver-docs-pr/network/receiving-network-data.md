@@ -1,7 +1,6 @@
 ---
 title: Receiving Network Data
 description: Receiving Network Data
-ms.assetid: d929c956-73dc-433f-9e60-bc3f8e0bcc14
 keywords:
 - network data WDK , receiving
 - data WDK networking , receiving
@@ -24,7 +23,7 @@ The following figure illustrates a basic receive operation, which involves a min
 
 ![diagram illustrating a basic receive operation](images/netbufferreceive.png)
 
-Miniport drivers call the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function to indicated [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures to higher level drivers. Every NET\_BUFFER structure should usually be attached to a separate [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. This allows protocol drivers to create a subset of the original list of NET\_BUFFER\_LIST structures and forward them to different clients. Some drivers, for example native IEEE 802.11 miniport drivers, might attach more than one NET\_BUFFER structure to a NET\_BUFFER\_LIST structure.
+Miniport drivers call the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function to indicate [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures to higher level drivers. Every NET\_BUFFER structure should usually be attached to a separate [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. This allows protocol drivers to create a subset of the original list of NET\_BUFFER\_LIST structures and forward them to different clients. Some drivers, for example native IEEE 802.11 miniport drivers, might attach more than one NET\_BUFFER structure to a NET\_BUFFER\_LIST structure.
 
 After linking all the NET\_BUFFER\_LIST structures, a miniport driver passes a pointer to the first NET\_BUFFER\_LIST structure in the list to the **NdisMIndicateReceiveNetBufferLists** function. NDIS examines the NET\_BUFFER\_LIST structures and it calls the [**ProtocolReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_receive_net_buffer_lists) function of each protocol driver that is associated with the NET\_BUFFER\_LIST structures. NDIS passes a subset of the list that includes only the NET\_BUFFER\_LIST structures that are associated with the correct binding to each protocol driver. NDIS matches the **NetBufferListFrameType** value that is specified in the NET\_BUFFER\_LIST structure to the frame type that each protocol driver registers.
 

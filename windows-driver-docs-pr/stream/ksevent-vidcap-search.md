@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VIDCAP\_SEARCH
 description: The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a search has been completed.
-ms.assetid: 07c7ef26-4f88-40cf-84f2-14cc702f37d5
 keywords: ["KSEVENT_VIDCAP_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref
@@ -45,8 +44,8 @@ The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a search has been comp
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +58,4 @@ Remarks
 Clients might register for this event when searching for a particular track, for instance, in order to be notified when the search completes.
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](/windows-hardware/drivers/ddi/_stream/index).
-
- 
 

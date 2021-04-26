@@ -1,7 +1,6 @@
 ---
 title: Subdevice Creation
 description: Subdevice Creation
-ms.assetid: e4ba1209-adc6-48c3-9633-247e9e3849bc
 keywords:
 - audio adapters WDK , subdevices
 - adapter drivers WDK audio , subdevices

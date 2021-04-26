@@ -1,7 +1,6 @@
 ---
 title: WIA Root Item
 description: WIA Root Item
-ms.assetid: cf4d1056-3437-4ba7-8a87-421e91afd02a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

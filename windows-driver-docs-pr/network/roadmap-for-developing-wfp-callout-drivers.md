@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing WFP Callout Drivers
 description: Roadmap for Developing WFP Callout Drivers
-ms.assetid: 98c857d9-e4a6-4a7f-8427-642763864f3e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,11 +20,11 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
 
 -   Step 3: Determine the Windows driver model for your WFP callout driver.
 
-    WFP callout drivers can be written either by using the Windows Driver Model (WDM) or the Kernel Mode Driver Framework (KMDF). For more information about how to select a driver model, see [Choosing a Driver Model](../gettingstarted/choosing-a-driver-model.md). For more information about WDM, see [Introduction to Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-windows-drivers) and [Writing WDM Drivers](../kernel/writing-wdm-drivers.md). For more information about KMDF, see [WDF Driver Development Guide](../wdf/index.md).
+    WFP callout drivers can be written either by using the Windows Driver Model (WDM) or the Kernel Mode Driver Framework (KMDF). For more information about how to select a driver model, see [Choosing a Driver Model](../gettingstarted/choosing-a-driver-model.md). For more information about WDM, see [Introduction to Windows Drivers](../kernel/overview-of-windows-components.md) and [Writing WDM Drivers](../kernel/writing-wdm-drivers.md). For more information about KMDF, see [WDF Driver Development Guide](../wdf/index.md).
 
 -   Step 4: Determine additional Windows driver design decisions.
 
-    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](../install/creating-international-inf-files.md).
+    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 -   Step 5: Learn about the Windows driver build, test, and debug processes and tools.
 
@@ -50,6 +49,4 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
     The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
-
- 
 

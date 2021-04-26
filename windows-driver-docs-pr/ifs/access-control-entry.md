@@ -1,7 +1,6 @@
 ---
 title: Access Control Entry
 description: Access Control Entry
-ms.assetid: 4dc72f43-e5a7-441d-8586-f8893b9c1084
 keywords:
 - security descriptors WDK file systems , access control entry
 - descriptors WDK file systems , access control entry

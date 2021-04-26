@@ -1,19 +1,18 @@
 ---
 title: Running InfVerif from the command line
 description: This topic lists the options that are available when you run InfVerif.exe from the command line.
-ms.assetid: CC2DB624-FFEE-4049-ACE7-4A24B330BADB
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
 # Running InfVerif from the command line
 
-
 This topic lists the options that are available when you run InfVerif.exe from the command line.
+
 > [!NOTE]
 > InfVerif requires that each combined path and file name must be less than 260 characters.
 
-```
+```syntax
 USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <path>]
                     [/osver TargetOSVersion>] [/product <ias file>] <files>
 
@@ -21,7 +20,7 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
         Display verbose file logging details.
 
 /k
-        Reports errors for Windows Update submission. (mode)
+        Reports errors for Hardware Dev Center submission. (mode; checks error codes 1100-1299)
 
 /u
         Reports errors if INF is not Universal. (mode)
@@ -49,12 +48,17 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
         Validates all include/needs directives against
         the product definition in the ias file.
 
+/recurse
+        Process INF files that match the specified file pattern in the current directory and all subdirectories.
+
 <files>
         A space-separated list of INF files to analyze.
         Wildcards (*) may be used.
 
 Only one mode option may be passed at a time.
 ```
+
+For info on error codes, see [INF Validation Errors and Warnings](./inf-validation-errors-and-warnings.md)
 
 The verbose option adds a line to the output that specifies if the INF is valid or not.  Certain arguments are tagged as modes, where only one should be passed.
 
@@ -66,7 +70,7 @@ For examples of *TargetOSVersion* formatting, see Remarks section of [INF Manufa
 
 To validate multiple INF files, provide multiple filenames or use a wildcard:
 
-```
+```command
 infverif.exe /w test1.inf test2.inf
 infverif.exe /w test*.inf
 ```

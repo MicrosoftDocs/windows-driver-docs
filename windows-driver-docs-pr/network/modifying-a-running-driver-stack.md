@@ -1,7 +1,6 @@
 ---
 title: Modifying a Running Driver Stack
 description: Modifying a Running Driver Stack
-ms.assetid: b8279471-50f4-46f5-8c77-d354dd9b94b5
 keywords:
 - driver stacks WDK networking , modifying a running stack
 ms.date: 04/20/2017

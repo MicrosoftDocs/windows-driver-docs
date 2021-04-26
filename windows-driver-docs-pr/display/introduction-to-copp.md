@@ -1,7 +1,6 @@
 ---
 title: Introduction to COPP
 description: Introduction to COPP
-ms.assetid: a5f77c60-418d-4931-8922-ca2ae080da2e
 keywords:
 - copy protection WDK COPP , about COPP
 - video copy protection WDK COPP , about COPP

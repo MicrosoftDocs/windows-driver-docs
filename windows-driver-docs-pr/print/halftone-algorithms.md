@@ -1,7 +1,6 @@
 ---
 title: Halftone Algorithms
 description: Halftone Algorithms
-ms.assetid: 1831f952-4c83-4dfa-87e7-1c755f143227
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , halftone algorithms
 - PCL-5e WDK Unidrv , halftone algorithms

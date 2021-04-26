@@ -1,7 +1,6 @@
 ---
 title: Installing a Test Certificate on a Test Computer
 description: Installing a Test Certificate on a Test Computer
-ms.assetid: b28bd334-cd75-4ea1-8f1b-d9cd5b417b53
 keywords:
 - test certificates WDK
 - installing test certificates WDK

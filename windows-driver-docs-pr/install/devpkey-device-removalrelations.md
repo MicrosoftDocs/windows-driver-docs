@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_RemovalRelations
 description: DEVPKEY_Device_RemovalRelations
-ms.assetid: c88e2545-0c7b-4f8f-93f2-b9de1ec0444c
 keywords: ["DEVPKEY_Device_RemovalRelations Device and Driver Installation"]
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The DEVPKEY_Device_RemovalRelations device property represents the [**removal re
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_RemovalRelations.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_RemovalRelations.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](./retrieving-device-relations.md).
 
@@ -70,7 +69,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

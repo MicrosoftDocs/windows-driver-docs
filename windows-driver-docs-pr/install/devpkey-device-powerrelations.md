@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_PowerRelations
 description: DEVPKEY_Device_PowerRelations
-ms.assetid: 616e6d02-9047-491b-b7e7-758e1804dff5
 keywords: ["DEVPKEY_Device_PowerRelations Device and Driver Installation"]
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The DEVPKEY_Device_PowerRelations device property represents the [**power relati
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PowerRelations.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PowerRelations.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](./retrieving-device-relations.md).
 
@@ -70,7 +69,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Handling IRPs
 description: Handling IRPs
-ms.assetid: 5fb6d2b9-17ee-4e76-95e9-dd5a7d1e79de
 keywords: ["kernel-mode drivers WDK , IRPs", "IRPs WDK kernel", "I/O request packets WDK kernel See IRPs WDK kernel", "IRP WDK See IRPs WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

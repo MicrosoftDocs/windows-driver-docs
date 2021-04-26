@@ -1,7 +1,6 @@
 ---
 title: DLL Start Operations
 description: DLL Start Operations
-ms.assetid: cab7a4f9-35dc-44fc-bdd0-30bac8beb652
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , start operations
 - starting IHV Extensions DLL

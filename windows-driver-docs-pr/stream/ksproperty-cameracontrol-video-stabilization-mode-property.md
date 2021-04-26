@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROPERTY
 description: User-mode clients use this property to get or set a camera's video stabilization characteristics. This property is optional.
-ms.assetid: DB0CAC1A-502E-4072-903F-CFD0FAEFE928
 keywords: ["KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ User-mode clients use this property to get or set a camera's video stabilization
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s)"><strong>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s)"><strong>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +81,4 @@ Requirements
 [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_CAMERACONTROL\_VIDEOSTABILIZATION\_MODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s)
-
- 
 

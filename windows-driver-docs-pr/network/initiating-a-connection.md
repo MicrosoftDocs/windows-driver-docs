@@ -1,7 +1,6 @@
 ---
 title: Initiating a Connection
 description: Initiating a Connection
-ms.assetid: 5e5ab033-b01a-45e2-acd4-7ea8931a621d
 keywords:
 - SAN connection setup WDK , initiating connections
 - initiating SAN connections
@@ -28,7 +27,7 @@ After creating and binding the SAN socket, the switch executes a connect request
 
 1.  The switch calls the SAN service provider's [**WSPEventSelect**](/previous-versions/windows/hardware/network/ff566287(v=vs.85)) function. In this call, the switch passes the FD\_CONNECT code and the event object to be associated with that code. The call to **WSPEventSelect** requests notification of connection events and informs the SAN service provider that any subsequent [**WSPConnect**](/previous-versions/windows/hardware/network/ff566275(v=vs.85)) call executes in nonblocking mode.
 
-2.  After the **WSPEventSelect** function returns, the switch calls the SAN service provider's **WSPConnect** function. In this call, the switch passes the destination address in the format of one of the [WSK address families](/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)). The SAN service provider's proxy driver maps this destination address to a native address and attempts to establish the connection.
+2.  After the **WSPEventSelect** function returns, the switch calls the SAN service provider's **WSPConnect** function. In this call, the switch passes the destination address in the format of one of the [WSK address families](ws2def-h.md). The SAN service provider's proxy driver maps this destination address to a native address and attempts to establish the connection.
 
 3.  If the SAN service provider's **WSPConnect** function can complete or fail the connection operation immediately, it returns the appropriate success or failure code. If the SAN service provider's **WSPConnect** function cannot complete a connection request immediately, the SAN service provider's connection operation proceeds asynchronously in another thread. The SAN service provider's **WSPConnect** function returns with the error WSAEWOULDBLOCK to indicate that the socket is marked as nonblocking and that the connection operation cannot be completed immediately.
 

@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_CURRENTCHANGELIST
 description: CODECAPI\_CURRENTCHANGELIST
-ms.assetid: f783857f-d1a1-417f-8f69-198b6f328a69
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

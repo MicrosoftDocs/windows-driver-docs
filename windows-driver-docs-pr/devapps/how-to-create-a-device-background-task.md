@@ -1,7 +1,6 @@
 ---
 title: Creating a device background task in Windows 8.1
 description: This topic describes how to create a device background task that uses the DeviceUseTrigger or DeviceServicingTrigger.
-ms.assetid: 34263DB8-BB42-480B-AF7F-CC45772E6E84
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,20 +8,20 @@ ms.localizationpriority: medium
 # Creating a device background task in Windows 8.1 (UWP device apps)
 
 
-In Windows 8.1, your UWP app can synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also perform device updates, such as firmware updates. This topic describes how to create a device background task that uses the [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967) or [DeviceServicingTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308965). Device background agents that use these triggers are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated. For more info about device background tasks, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
+In Windows 8.1, your UWP app can synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also perform device updates, such as firmware updates. This topic describes how to create a device background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) or [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger). Device background agents that use these triggers are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated. For more info about device background tasks, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-**Note**  This topic corresponds to the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ). The Custom USB device sample demonstrates a background task that performs device sync with the DeviceUseTrigger. To see an example of a background task that performs a firmware update with the DeviceServicingTrigger, download the [Firmware update USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=309186).
+**Note**  This topic corresponds to the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975). The Custom USB device sample demonstrates a background task that performs device sync with the DeviceUseTrigger.
 
 
 
-Although the device background task in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) features a DeviceUseTrigger, everything discussed in this topic can also be applied to device background tasks that use DeviceServicingTrigger. The only difference between using the two triggers are the policy checks made by Windows.
+Although the device background task in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975) features a DeviceUseTrigger, everything discussed in this topic can also be applied to device background tasks that use DeviceServicingTrigger. The only difference between using the two triggers are the policy checks made by Windows.
 
 ## <span id="The_app_manifest"></span><span id="the_app_manifest"></span><span id="THE_APP_MANIFEST"></span>The app manifest
 
 
 To use a device background task, your app must declare it in the app manifest file of your foreground app, like is done for system-triggered background tasks. For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-In this example from an app package manifest file, **DeviceLibrary.SyncContent** is an entry points from the foreground app. **DeviceLibrary.SyncContent** is the entry point for the background task that uses the [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967).
+In this example from an app package manifest file, **DeviceLibrary.SyncContent** is an entry points from the foreground app. **DeviceLibrary.SyncContent** is the entry point for the background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger).
 
 ```XML
 <Extensions>
@@ -39,7 +38,7 @@ In this example from an app package manifest file, **DeviceLibrary.SyncContent**
 
 The device background task class implements the `IBackgroundTask` interface and contains the actual code you create to either sync or update your peripheral device. The background task class is executed when the background task is triggered and from the entry point provided in your app’s application manifest.
 
-The device background class in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) contains the code to perform a sync to a USB device using the [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967) background task. For complete details, download the sample. For more info about implementing `IBackgroundTask` and the background task infrastructure of Windows see [Supporting your app with background tasks](https://go.microsoft.com/fwlink/p/?LinkID=254337).
+The device background class in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) contains the code to perform a sync to a USB device using the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) background task. For complete details, download the sample. For more info about implementing `IBackgroundTask` and the background task infrastructure of Windows see [Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10)).
 
 Key portions of the device background task in [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) include:
 
@@ -52,13 +51,13 @@ Key portions of the device background task in [Custom USB device sample](https:/
 ## <span id="The_foreground_app"></span><span id="the_foreground_app"></span><span id="THE_FOREGROUND_APP"></span>The foreground app
 
 
-The foreground app in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) registers and triggers a device background task that uses [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967). This section provides an overview of the steps your foreground app will take to register, trigger and handle progress for a device background task.
+The foreground app in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) registers and triggers a device background task that uses [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger). This section provides an overview of the steps your foreground app will take to register, trigger and handle progress for a device background task.
 
 The foreground app in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) performs the following steps to use a device background task:
 
-1.  Creates new [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967) and `BackgroundTaskRegistration` objects.
+1.  Creates new [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) and `BackgroundTaskRegistration` objects.
 
-2.  Checks to see if any background tasks were previously registered by this app and cancels them by calling the [BackgroundTaskRegistration.Unregister](https://go.microsoft.com/fwlink/p/?LinkId=309315) method on the task.
+2.  Checks to see if any background tasks were previously registered by this app and cancels them by calling the [BackgroundTaskRegistration.Unregister](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) method on the task.
 
 3.  The private `SetupBackgroundTask` method registers the background task that will sync with the device. The `SetupBackgroundTask` method is called from the `SyncWithDeviceAsync` method in the next step.
 
@@ -97,27 +96,15 @@ The foreground app in the [Custom USB device sample](https://go.microsoft.com/fw
     1.  The private `Sync_Click` event handler calls the `SyncWithDeviceAsync` method described in the previous steps.
     2.  The private `CancelSync_Click` event handler calls the private `CancelSyncWithDevice` method to cancel the background task.
 
-8.  The private `CancelSyncWithDevice` method unregisters and cancels any active device syncs so the device can be reopened by using the [BackgroundTaskRegistration.Unregister](https://go.microsoft.com/fwlink/p/?LinkId=309315) method.
+8.  The private `CancelSyncWithDevice` method unregisters and cancels any active device syncs so the device can be reopened by using the [BackgroundTaskRegistration.Unregister](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) method.
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 )
 
-[Firmware update USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=309186)
-
 [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
 
-[Launching, resuming, and multitasking](https://go.microsoft.com/fwlink/p/?LinkId=309316)
+[Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
 
-[Supporting your app with background tasks](https://go.microsoft.com/fwlink/p/?LinkID=254337)
-
-
-
-
-
-
-
-
-
-
+[Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))

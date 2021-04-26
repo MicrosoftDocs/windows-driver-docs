@@ -1,6 +1,6 @@
 ---
 title: Net ring element management
-description: USB Dual Role controllers are now supported in Windows, starting with Windows 10.
+description: Learn about net ring element management. Manage your structures and their elements during network data transfer.
 ms.date: 06/12/2019
 ms.localizationpriority: medium
 ---

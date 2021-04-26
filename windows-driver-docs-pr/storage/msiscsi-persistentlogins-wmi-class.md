@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_PersistentLogins WMI Class
 description: MSiSCSI\_PersistentLogins WMI Class
-ms.assetid: 259220f8-af38-42b4-a0e3-88b4c396173d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

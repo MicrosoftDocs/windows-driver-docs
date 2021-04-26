@@ -1,7 +1,6 @@
 ---
 title: MRxSetEaInfo routine
 description: TheMRxSetEaInfo routine is called by RDBSS to request that a network mini-redirector set extended attribute information on a file system object.
-ms.assetid: 6882ab3c-a679-491b-a35f-71cfbf77bb39
 keywords: ["MRxSetEaInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

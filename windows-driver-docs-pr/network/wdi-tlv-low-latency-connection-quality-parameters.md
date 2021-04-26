@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS
 description: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS is a TLV that contains low latency connection quality parameters.
-ms.assetid: F6C26267-AC6F-4810-913B-46DA99498BE2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS Network Drivers Starting with Windows Vista

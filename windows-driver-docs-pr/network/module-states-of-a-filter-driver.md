@@ -1,7 +1,6 @@
 ---
 title: Module States of a Filter Driver
 description: Module States of a Filter Driver
-ms.assetid: 139679d6-d3dc-433b-a35a-eb1e5ed3cb33
 keywords:
 - filter drivers WDK networking , module states
 - NDIS filter drivers WDK , module states

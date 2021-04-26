@@ -1,7 +1,6 @@
 ---
 title: DefaultScanTicket element
-description: .
-ms.assetid: 1c0f15c8-b14f-4607-8655-36e1397082e6
+description: Learn about the 'DefaultScanTicket' element. See code examples and view additional available resources.
 keywords: ["DefaultScanTicket element Imaging Devices"]
 topic_type:
 - apiref

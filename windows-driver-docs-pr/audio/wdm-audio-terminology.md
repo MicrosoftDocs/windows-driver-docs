@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Terminology
 description: WDM Audio Terminology
-ms.assetid: bb36a66a-84dc-46c2-adcb-761d0acec3a1
 keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , about audio drivers

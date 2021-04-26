@@ -1,7 +1,6 @@
 ---
 title: Tracefmt Commands
 description: To use Tracefmt, type the commands in a Command Prompt window.
-ms.assetid: 79e56383-ce67-4716-98d6-4266b76a4b0a
 keywords:
 - Tracefmt Commands Driver Development Tools
 topic_type:

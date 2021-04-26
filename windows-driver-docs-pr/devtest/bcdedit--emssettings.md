@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /emssettings
 description: The /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. To enable or disable EMS, use the /ems option. The /emssettings option does not enable or disable EMS for any boot entry.
-ms.assetid: 010e852d-ff97-4280-b35b-f1881e249e42
 ms.date: 07/03/2018
 keywords: ["BCDEdit /emssettings Driver Development Tools"]
 topic_type:
@@ -24,13 +23,16 @@ Syntax
     bcdedit /emssettings [ BIOS ] | [ EMSPORT: port | [EMSBAUDRATE: baudrate] ] 
 ```
 
+> [!NOTE]
+> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+
 Parameters
 ----------
 
 **BIOS**   
 Specifies that the system will use BIOS settings for the EMS configuration. This works only on systems that have EMS support provided by the BIOS.
 
- **EMSPORT:** *port*   
+**EMSPORT:** *port*   
 Specifies the serial port to use as the EMS port. This parameter should not be specified with the **BIOS** option.
 
 **EMSBAUDRATE:** *baudrate*   

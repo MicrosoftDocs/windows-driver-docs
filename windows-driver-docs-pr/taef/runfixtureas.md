@@ -1,7 +1,6 @@
 ---
 title: RunFixtureAs
 description: TAEF provides a mechanism to execute test fixtures within a different context than their corresponding tests.
-ms.assetid: FAFF5265-5268-412E-86A5-149B187B1376
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Tracefmt Output File
 description: Tracefmt Output File
-ms.assetid: 55c8964c-992f-468c-83ea-0316fcb12110
 keywords:
 - Tracefmt WDK , output files
 - output files WDK Tracefmt

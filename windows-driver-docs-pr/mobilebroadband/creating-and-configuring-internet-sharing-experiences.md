@@ -1,7 +1,6 @@
 ---
 title: Creating and configuring Internet Sharing experiences
 description: Creating and configuring Internet Sharing experiences
-ms.assetid: 11906ee4-68f5-4be6-a3ab-6af3253c8a11
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

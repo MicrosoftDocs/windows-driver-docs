@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DevNodeStatus
 description: DEVPKEY_Device_DevNodeStatus
-ms.assetid: 538a78f0-c704-444e-8314-38b2e0421c39
 keywords: ["DEVPKEY_Device_DevNodeStatus Device and Driver Installation"]
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Remarks
 
 The value of DEVPKEY_Device_DevNodeStatus is a bitwise OR of the DN_*Xxx* bit flags that are defined in Cfg.h.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DevNodeStatus.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DevNodeStatus.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to access the status of a device instance on these earlier versions of Windows, see [Retrieving the Status and Problem Code for a Device Instance](./retrieving-the-status-and-problem-code-for-a-device-instance.md).
 
@@ -72,9 +71,9 @@ Requirements
 ## See also
 
 
-[**CM_Get_DevNode_Status**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status)
+[**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

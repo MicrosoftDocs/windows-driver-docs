@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
 description: KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
-ms.assetid: bb38f814-b0e5-4590-9ab1-6edd17b84ce9
 keywords: ["KSINTERFACE_MEDIA_WAVE_BUFFERED Streaming Media Devices"]
 topic_type:
 - apiref

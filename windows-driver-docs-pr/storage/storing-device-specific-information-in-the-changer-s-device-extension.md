@@ -1,7 +1,6 @@
 ---
 title: Storing Device-Specific Information in the Changer's Device Extension
 description: Storing Device-Specific Information in the Changer's Device Extension
-ms.assetid: 72048d84-1c2d-4f3c-b5e8-f55a812ad567
 keywords:
 - changer drivers WDK storage , device-specific data storage
 - storage changer drivers WDK , device-specific data storage

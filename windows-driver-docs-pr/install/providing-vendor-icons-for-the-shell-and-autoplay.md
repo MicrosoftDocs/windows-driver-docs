@@ -1,7 +1,6 @@
 ---
 title: Providing Icons for a Device
 description: Providing Icons for a Device
-ms.assetid: 2e3afbf6-57f6-4b83-b10a-c33d9b1c1731
 keywords:
 - AutoPlay icons WDK
 - custom icons WDK device installations
@@ -70,7 +69,7 @@ The **Icons** and **NoMediaIcons** value entries are stored under the **Device P
 
 * `NoMediaIcons [REG_MULTI_SZ] = %SystemRoot%\system32\noicon.ico`
 
-To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
+To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey).
 
 From kernel mode, use [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_RANGE
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_RANGE to control the tuner range, that is, the domain on which to find a particular carrier frequency.
-ms.assetid: 2f2aa515-3f3c-419f-a817-0d597466ec85
 keywords: ["KSPROPERTY_BDA_RF_TUNER_RANGE Streaming Media Devices"]
 topic_type:
 - apiref

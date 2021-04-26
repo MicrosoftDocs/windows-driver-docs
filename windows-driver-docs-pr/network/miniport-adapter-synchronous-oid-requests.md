@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter Synchronous OID Requests
-description: This topic describes miniport adapter Synchronous OID requests
-ms.assetid: E169972C-2EFF-4005-B279-9EFC53B431E2
+description: Learn about miniport adapter Synchronous OID requests. See a table that shows the relationship between the Synchronous OID and standard OID request interfaces.
 keywords: Miniport Adapter Synchronous OID Requests Interface, Miniport Adapter Synchronous OID call, WDK Miniport Adapter Synchronous OIDs, Miniport Adapter Synchronous OID request
 ms.date: 09/28/2017
 ms.localizationpriority: medium

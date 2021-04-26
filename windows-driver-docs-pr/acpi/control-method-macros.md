@@ -1,7 +1,6 @@
 ---
 title: Control Method Macros
 description: Control Method Macros
-ms.assetid: cffcfb7a-c949-4bc9-a92f-349f5637ab84
 keywords:
 - ACPI control methods WDK , macros
 ms.date: 04/20/2017

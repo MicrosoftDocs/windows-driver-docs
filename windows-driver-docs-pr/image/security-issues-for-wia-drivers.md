@@ -1,7 +1,6 @@
 ---
 title: Security Issues for WIA Drivers
 description: Security Issues for WIA Drivers
-ms.assetid: 5d8fc015-cbf5-43a3-8f65-3ebb17754417
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

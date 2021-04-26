@@ -1,7 +1,6 @@
 ---
 title: Introduction to Connection-Oriented NDIS
 description: Introduction to Connection-Oriented NDIS
-ms.assetid: c74f8e60-c041-48e9-8aa1-98a9cb9eb869
 keywords:
 - connection-oriented NDIS WDK
 - CoNDIS WDK networking
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 This section describes connection-oriented NDIS (CoNDIS). Most CoNDIS 6.0 and later driver operations have not changed from their CoNDIS 5.*x* versions. For more information about the differences between CoNDIS 5.x and CoNDIS 6.0, see [Porting CoNDIS 5.x Drivers to CoNDIS 6.0](/previous-versions/windows/hardware/network/porting-a-condis-5-x-driver-to-condis-6-0).
 
-Unless noted otherwise, CoNDIS drivers provide the same services as connectionless NDIS drivers. You should be familiar with connectionless NDIS drivers before you attempt to write CoNDIS drivers. For more information about connectionless NDIS drivers, see [Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md), [Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md), and [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md).
+Unless noted otherwise, CoNDIS drivers provide the same services as connectionless NDIS drivers. You should be familiar with connectionless NDIS drivers before you attempt to write CoNDIS drivers. For more information about connectionless NDIS drivers, see [Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md), [Writing NDIS Protocol Drivers](initializing-a-protocol-driver.md), and [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md).
 
 The following sections describe connection-oriented NDIS:
 
@@ -29,9 +28,9 @@ The following sections describe connection-oriented NDIS:
 
 [Connection-Oriented Timing Features](connection-oriented-timing-features.md)
 
-[CoNDIS Registration](condis-registration.md)
+[CoNDIS Registration](condis-miniport-driver-registration.md)
 
-[Connection-Oriented Operations](connection-oriented-operations.md)
+[Connection-Oriented Operations](connection-oriented-operations-performed-by-clients.md)
 
  
 

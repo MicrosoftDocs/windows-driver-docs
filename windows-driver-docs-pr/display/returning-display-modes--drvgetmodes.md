@@ -1,7 +1,6 @@
 ---
 title: Returning Display Modes DrvGetModes
 description: Returning Display Modes DrvGetModes
-ms.assetid: 1010235a-0609-4380-8b83-7d8c649c2404
 keywords:
 - display drivers WDK Windows 2000 , desktop management
 - desktop management WDK Windows 2000 display
@@ -14,61 +13,52 @@ ms.localizationpriority: medium
 
 # Returning Display Modes: DrvGetModes
 
+The display driver must also support [**DrvGetModes**](/windows/win32/api/winddi/nf-winddi-drvgetmodes). This function gives GDI a pointer to an array of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structures. The structures define the attributes of the display for the various modes that it supports, including the dimension (in both pixels and millimeters), number of planes, bits per plane, color information, and so on.
 
-## <span id="ddk_returning_display_modes_drvgetmodes_gg"></span><span id="DDK_RETURNING_DISPLAY_MODES_DRVGETMODES_GG"></span>
-
-
-The display driver must also support [**DrvGetModes**](/windows/desktop/api/winddi/nf-winddi-drvgetmodes). This function gives GDI a pointer to an array of [**DEVMODEW**](/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structures. The structures define the attributes of the display for the various modes that it supports, including the dimension (in both pixels and millimeters), number of planes, bits per plane, color information, and so on.
-
-The order in which a driver writes the available display modes to memory when the [**DrvGetModes**](/windows/desktop/api/winddi/nf-winddi-drvgetmodes) function is called can affect the final display mode that Windows chooses. In general, if an application does not specify a default mode, the system will select the first matching mode in the list supplied by the driver.
+The order in which a driver writes the available display modes to memory when the [**DrvGetModes**](/windows/win32/api/winddi/nf-winddi-drvgetmodes) function is called can affect the final display mode that Windows chooses. In general, if an application does not specify a default mode, the system will select the first matching mode in the list supplied by the driver.
 
 For example, suppose that the current display mode is
 
-800x600x32bpp@60Hz DMDO\_DEFAULT DMDFO\_CENTER
+800x600x32bpp@60Hz DMDO_DEFAULT DMDFO_CENTER
 
 and the driver specifies the list of available display modes as follows:
 
-**A.** 600x800x32bpp@60Hz DMDO\_270 DMDFO\_STRETCH
+| Mode | Mode details |
+| ---- | ------------ |
+| **A** | 600x800x32bpp@60Hz DMDO_270 DMDFO_STRETCH |
+| **B** | 600x800x32bpp@60Hz DMDO_90 DMDFO_STRETCH |
+| **C** | 600x800x32bpp@60Hz DMDO_90 DMDFO_CENTER |
+| **D** | 600x800x32bpp@60Hz DMDO_270 DMDFO_CENTER |
 
-**B.** 600x800x32bpp@60Hz DMDO\_90 DMDFO\_STRETCH
+* **Case 1**
 
-**C.** 600x800x32bpp@60Hz DMDO\_90 DMDFO\_CENTER
+  If an application attempts to set the monitor to 600x800x32bpp@60Hz, but the DM_DISPLAYORIENTATION and DM_DISPLAYFIXEDOUTPUT flags are not set in the **dmFields** member of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew), the system must choose the orientation and fixed output modes. In this case the system will choose display mode **C** because it is the first listed mode that matches the current DMDFO_CENTER setting.
 
-**D.** 600x800x32bpp@60Hz DMDO\_270 DMDFO\_CENTER
+* **Case 2**
 
-**Case 1**
+  If the application attempts to set the monitor to 600x800x32bpp@60Hz DMDFO_STRETCH, the system will choose display mode **A**.
 
-If an application attempts to set the monitor to 600x800x32bpp@60Hz, but the DM\_DISPLAYORIENTATION and DM\_DISPLAYFIXEDOUTPUT flags are not set in the **dmFields** member of [**DEVMODEW**](/windows/desktop/api/wingdi/ns-wingdi-_devicemodew), the system must choose the orientation and fixed output modes. In this case the system will choose display mode C because it is the first listed mode that matches the current DMDFO\_CENTER setting.
+* **Case 3**
 
-**Case 2**
+  If the application attempts to set the monitor to 600x800x32bpp@60Hz DMDO_270, the system will choose display mode **D**.
 
-If the application attempts to set the monitor to 600x800x32bpp@60Hz DMDFO\_STRETCH, the system will choose display mode A.
+* **Case 4**
 
-**Case 3**
+  If the application attempts to set the monitor to 600x800x32bpp@60Hz DMDO_DEFAULT, the system will fail to find an acceptable match.
 
-If the application attempts to set the monitor to 600x800x32bpp@60Hz DMDO\_270, the system will choose display mode D.
-
-**Case 4**
-
-If the application attempts to set the monitor to 600x800x32bpp@60Hz DMDO\_DEFAULT, the system will fail to find an acceptable match.
-
-One exception applies to these rules: when the system seeks a match for the display orientation, and the orientation is not specified and the current mode cannot be matched, the system will give DMDO\_DEFAULT priority over other display orientations.
+One exception applies to these rules: when the system seeks a match for the display orientation, and the orientation is not specified and the current mode cannot be matched, the system will give DMDO_DEFAULT priority over other display orientations.
 
 For example, suppose that the current display mode is
 
-600x800x32bpp@60Hz DMDO\_90 DMDFO\_STRETCH
+600x800x32bpp@60Hz DMDO_90 DMDFO_STRETCH
 
 and the driver specifies the list of available display modes as follows:
 
-**A.** 800x600x32bpp@60Hz DMDO\_180 DMDFO\_CENTER
+| Mode | Mode details |
+| ---- | ------------ |
+| **A** | 800x600x32bpp@60Hz DMDO_180 DMDFO_CENTER |
+| **B** | 800x600x32bpp@60Hz DMDO_180 DMDFO_STRETCH |
+| **C** | 800x600x32bpp@60Hz DMDO_DEFAULT DMDFO_CENTER |
+| **D** | 800x600x32bpp@60Hz DMDO_DEFAULT DMDFO_STRETCH |
 
-**B.** 800x600x32bpp@60Hz DMDO\_180 DMDFO\_STRETCH
-
-**C.** 800x600x32bpp@60Hz DMDO\_DEFAULT DMDFO\_CENTER
-
-**D.** 800x600x32bpp@60Hz DMDO\_DEFAULT DMDFO\_STRETCH
-
-In this situation, if the application attempts to set the monitor to 800x600x32bpp@60Hz, the system will choose display mode D.
-
- 
-
+In this situation, if the application attempts to set the monitor to 800x600x32bpp@60Hz, the system will choose display mode **D**.

@@ -1,7 +1,6 @@
 ---
 title: Preparing for Porting
 description: Preparing for Porting
-ms.assetid: 355CD834-6B64-4E6F-AA17-AE1145F269CA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ In some ways, converting a driver from WDM to Windows Driver Frameworks (WDF) is
 
 The following general guidelines apply to porting a driver:
 
--   Refer to the [samples](https://go.microsoft.com/fwlink/p/?linkid=256387). WDF ships with a rich set of samples, most of which are ports of the similarly named WDM drivers.
+-   Refer to the [samples](/samples/browse/). WDF ships with a rich set of samples, most of which are ports of the similarly named WDM drivers.
 -   Work incrementally. Because the framework implements default behavior for I/O, Plug and Play, power management, and WMI requests, you can code and debug one device or driver feature at a time.
 -   For Kernel-Mode Driver Framework (KMDF), implement WMI event tracing to provide detailed trace logs for use in debugging.
 -   In many situations, the WDF defaults provide greater functionality than the existing WDM driver might have implemented. Before trying to port complicated code—particularly for synchronization or queue management—be certain what WDF provides. It might save a considerable amount of time spent porting the driver.
@@ -40,10 +39,4 @@ The answers to these questions determine how the core of the WDF driver is struc
 Finally, if the driver supports WMI (also KMDF only), you must understand how to gather the data it exports and which WMI callbacks the driver requires.
 
  
-
- 
-
-
-
-
 

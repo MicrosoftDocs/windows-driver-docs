@@ -1,7 +1,6 @@
 ---
 title: Summary of Framework Objects
 description: Summary of Framework Objects
-ms.assetid: 799284a5-91c0-47b0-8f20-75a5f8e2284d
 keywords:
 - framework objects WDK KMDF , listed
 - framework objects WDK KMDF , summary

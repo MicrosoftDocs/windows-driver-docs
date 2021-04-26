@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - HID
 description: Bluetooth Test Platform (BTP) HID tests.
-ms.assetid: b5b039bb-af0f-446f-9657-aa0e137a3437
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 
@@ -33,6 +32,8 @@ As a test starts the red LED next to the 12 pin adapter will turn on once the co
 ## Capturing Logs ##
 
 To capture the Bluetooth logs, follow the instructions at [The Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
+
+To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](testing-BTP-tools-btetlparse.md).
 
 ## Known issues ##
 

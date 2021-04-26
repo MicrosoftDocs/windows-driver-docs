@@ -1,7 +1,6 @@
 ---
 title: finishTitle XML Element
 description: finishTitle XML Element
-ms.assetid: d8730b49-9cc0-46f4-88a1-fd5543063277
 keywords: ["finishTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref

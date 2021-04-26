@@ -1,7 +1,6 @@
 ---
 title: Driver Coverage Filter Driver
 description: Driver Coverage Filter Driver
-ms.assetid: 8d345081-b9be-4e22-9276-dacd7815f506
 keywords:
 - Driver Coverage Toolkit WDK , filter driver
 ms.date: 04/20/2017

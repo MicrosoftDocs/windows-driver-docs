@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's IoCompletion Routines
 description: Storage Class Driver's IoCompletion Routines
-ms.assetid: 03cf50be-1b7d-4e5b-8ee5-bbdef860d893
 keywords:
 - IoCompletion
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ A storage class driver must have one or more [**IoCompletion**](/windows-hardwar
 
 As described in [Storage Class Driver's BuildRequest Routine](storage-class-driver-s-buildrequest-routine.md), storage class drivers are responsible for freeing the memory they allocate for SRBs, whether back to a lookaside list or to nonpaged pool. Like any other higher-level kernel-mode driver, they are also responsible for releasing any IRPs that they allocate, such as an IRP to split up a transfer request as described in [Storage Class Driver's SplitTransferRequest Routine](storage-class-driver-s-splittransferrequest-routine.md).
 
-A class driver's *IoCompletion* routine is ultimately responsible for ensuring that the I/O status block is set and for completing the original IRP. Note that completing an IRP can include translating an error returned in the SRB's **ScsiStatus** member or **SenseInfoBuffer** member into an NTSTATUS-type value and/or logging an error, as described in [Completing IRPs in Dispatch Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/completing-irps-in-dispatch-routines).
+A class driver's *IoCompletion* routine is ultimately responsible for ensuring that the I/O status block is set and for completing the original IRP. Note that completing an IRP can include translating an error returned in the SRB's **ScsiStatus** member or **SenseInfoBuffer** member into an NTSTATUS-type value and/or logging an error, as described in [Completing IRPs in Dispatch Routines](../kernel/how-to-complete-an-irp-in-a-dispatch-routine.md).
 
 When certain kinds of errors occur in processing a request, a storage port driver freezes its internal queue for the target logical unit (LU) and sets SRB\_STATUS\_QUEUE\_FROZEN on completion of the request. Consequently, class drivers usually have internal routines to change the status of the queue for their device I/O requests. For more information, see [Storage Class Driver's ReleaseQueue Routine](storage-class-driver-s-releasequeue-routine.md).
 
@@ -27,6 +26,4 @@ If the driver's *BuildRequest* routine requested that the port driver return req
 Storage class drivers are responsible for retrying requests that fail due to target controller errors, bus resets, or request time-outs. When the port driver returns a particular request with its **SrbStatus** set to indicate such an error, the class driver can call a *RetryRequest* routine from its *IoCompletion* routine or, possibly, from its *InterpretRequestSense* routine. For more information, see [Storage Class Driver's RetryRequest Routine](storage-class-driver-s-retryrequest-routine.md).
 
 For general information about *IoCompletion* routines, see [Completing IRPs](../kernel/completing-irps.md).
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: Instruction Token
 description: Instruction Token
-ms.assetid: bfeee1ad-aaf3-41d0-a667-15d22eccd1e9
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

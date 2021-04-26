@@ -1,7 +1,6 @@
 ---
 title: Sample PrintTicket File for PIN Printing
 description: Here is a sample PrintTicket file to show how to specify PIN printing.
-ms.assetid: FC1BE797-7097-4BEF-A530-3846CED3E400
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

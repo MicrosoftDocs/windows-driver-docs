@@ -1,7 +1,6 @@
 ---
 title: Audio Devices Troubleshooting
 description: Audio Devices Troubleshooting
-ms.assetid: 9e800f71-9c90-4084-b879-32300e6706fd
 ms.date: 12/19/2019
 ms.localizationpriority: medium
 ---

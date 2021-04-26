@@ -1,7 +1,6 @@
 ---
 title: Writing an Error or Warning Log Entry
 description: Writing an Error or Warning Log Entry
-ms.assetid: 80393368-7430-46ca-a53e-c94b7e8acfa0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,15 +8,15 @@ ms.localizationpriority: medium
 # Writing an Error or Warning Log Entry
 
 
-The following example shows how an application might typically call [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) to write an error or warning entry in a [SetupAPI text log](setupapi-text-logs.md). However, if an event is associated with a SetupAPI-specific error or a Win32 error, an application can call [**SetupWriteTextLogError**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlogerror) instead. **SetupWriteTextLogError** facilitates logging and interpreting information about these types of errors.
+The following example shows how an application might typically call [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog) to write an error or warning entry in a [SetupAPI text log](setupapi-text-logs.md). However, if an event is associated with a SetupAPI-specific error or a Win32 error, an application can call [**SetupWriteTextLogError**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlogerror) instead. **SetupWriteTextLogError** facilitates logging and interpreting information about these types of errors.
 
 For information about calling **SetupWriteTextLog** to log an error message, see [Logging an Error Message](#logging-an-error-message) and for information about calling **SetupWriteTextLog** to log a warning message, see [Logging a Warning Message](#logging-a-warning-message).
 
 ### <a href="" id="logging-an-error-message"></a> Logging an Error Message
 
-In this example, the application calls [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog), supplying the following parameter values:
+In this example, the application calls [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog), supplying the following parameter values:
 
--   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
+-   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](/windows/win32/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
 
 -   *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 
@@ -27,7 +26,7 @@ In this example, the application calls [**SetupWriteTextLog**](/windows/desktop/
 
 -   The comma-separated list supplies the variable ErrorCode.
 
-The following code calls [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) to write a log entry for this example:
+The following code calls [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog) to write a log entry for this example:
 
 ```cpp
 //The LogToken value was previously returned by call to
@@ -49,7 +48,7 @@ The *entry_prefix* field "!!! " indicates that the log entry is an error message
 
 ### <a href="" id="logging-a-warning-message"></a> Logging a Warning Message
 
-Logging a warning message is almost identical to logging an error message. The difference is the settings for the event level. Set *Flags* to TXTLOG_WARNING instead of TXTLOG_ERROR. If **SetupWriteTextLog** is called as described in [Logging an Error Message](#logging-an-error-message), except that *Flags* is set to a bitwise OR of TXTLOG_WARNING and TXTLOG_TIMESTAMP, [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) would write the following log entry:
+Logging a warning message is almost identical to logging an error message. The difference is the settings for the event level. Set *Flags* to TXTLOG_WARNING instead of TXTLOG_ERROR. If **SetupWriteTextLog** is called as described in [Logging an Error Message](#logging-an-error-message), except that *Flags* is set to a bitwise OR of TXTLOG_WARNING and TXTLOG_TIMESTAMP, [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog) would write the following log entry:
 
 ```cpp
 !  2005/02/13 22:06:28.109:    :  Application error (1111) 

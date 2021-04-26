@@ -1,7 +1,6 @@
 ---
 title: Power Management for WDM Lower Edge
 description: Power Management for WDM Lower Edge
-ms.assetid: e4504206-b303-4623-bb10-a19acbcede03
 keywords:
 - NDIS-WDM miniport drivers WDK networking , power management
 - lower edge of NDIS miniport drivers WDK networking , power management
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS handles all Plug and Play (PnP) and power management IRPs for NDIS-WDM miniport drivers. Therefore, NDIS-WDM miniport drivers should respond to PnP and power management OIDs, based on device capabilities, as described in [Power Management for NDIS Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-0-and-ndis-6-1-). For more information about these OIDs, see [Power Management (NDIS 6.0 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-0-and-ndis-6-1-).
+NDIS handles all Plug and Play (PnP) and power management IRPs for NDIS-WDM miniport drivers. Therefore, NDIS-WDM miniport drivers should respond to PnP and power management OIDs, based on device capabilities, as described in [Power Management for NDIS Miniport Drivers](required-and-optional-oids-for-power-management.md).
 
  
 

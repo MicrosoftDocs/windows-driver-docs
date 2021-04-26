@@ -1,7 +1,6 @@
 ---
 title: Specifying Paper Orientation
 description: Specifying Paper Orientation
-ms.assetid: 2d62e1ff-965b-4fd7-922c-319ec1bc39a5
 keywords:
 - Unidrv, paper orientation
 - paper orientation WDK Unidrv

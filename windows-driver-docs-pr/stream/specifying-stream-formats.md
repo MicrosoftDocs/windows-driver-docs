@@ -1,7 +1,6 @@
 ---
 title: Specifying Stream Formats
 description: Specifying Stream Formats
-ms.assetid: 60ef129c-f4a1-4eb5-97d9-6be6c7803258
 keywords:
 - video capture WDK AVStream , stream formats
 - capturing video WDK AVStream , stream formats

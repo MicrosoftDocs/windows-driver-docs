@@ -1,7 +1,6 @@
 ---
 title: Attribute Tokens in SDEL
 description: Describes SDEL attribute tokens used to define characteristics of target devices and computers.
-ms.assetid: C11d22D4-31E2-99E8-841F-A8249539A39F
 keywords:
 - SDEL
 - attribute tokens
@@ -89,7 +88,7 @@ The following table describes the attributes in the root namespace that are vali
 |UINumber|VT_I4|UINumber for the device.|
 |UpperClassFilters|VT_ARRAY of VARIANT with VT_BSTR|The service names of every driver attached as an upper class filter on the target device.|
 |UpperClassFiltersBinaryNames|VT_ARRAY of VARIANT with VT_BSTR|Names of binaries of all upper class filter drivers for device target.|
-|UpperFilters|VT_ARRAY of VARIANT with VT_BSTR|The service names of every driver that is attached as an upper filter on the target device.||
+|UpperFilters|VT_ARRAY of VARIANT with VT_BSTR|The service names of every driver that is attached as an upper filter on the target device.|
 |UpperFiltersBinaryNames|VT_ARRAY of VARIANT with VT_BSTR|Names of all upper filter drivers for device target|
 
 ## Root Keywords for a System Target

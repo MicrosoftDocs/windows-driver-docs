@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 08/16/2017
+ms.date: 01/21/2021
 ms.localizationpriority: medium
 ---
 
@@ -31,20 +31,22 @@ Starting in Windows 10 version 1709, you can specify that a Universal Windows Pl
 
 A developer account on the Microsoft Store is required. Hardware partners will need a Microsoft Store account that is different from their Hardware partner account. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
 
-To create a Microsoft Store account, go to the [UWP apps sign up page](https://go.microsoft.com/fwlink/p/?LinkId=302197). For more info, see [Opening a developer account](/windows/uwp/publish/opening-a-developer-account).
+To create a Microsoft Store account, go to the [UWP apps sign up page](https://developer.microsoft.com/store/register/). For more info, see [Opening a developer account](/windows/uwp/publish/opening-a-developer-account).
 
 ## Choosing a programming language for the app
 
 If your app will communicate with a driver, you can use [Windows.Devices.Custom](/uwp/api/windows.devices.custom), which is part of the WinRT API, and therefore available in JavaScript, C#, and C++.
 
-If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, or wrap the RPC calls using .NET interop (PInvoke).  For more info, see [Calling Native Functions from Managed Code](/cpp/dotnet/calling-native-functions-from-managed-code).
+If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, C++/CLI, or wrap the RPC calls using .NET interop (PInvoke).  For more info, see [Calling Native Functions from Managed Code](/cpp/dotnet/calling-native-functions-from-managed-code) and [.NET programming with C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-160&preserve-view=true).
 
 ## Contact the custom capability owner
 
 Now you're ready to request access to a custom capability from a capability owner.  You'll need to gather the following info:
 
 - App PFN (Package Family Name) from the Microsoft Store
+
 - Name of the custom capability
+
 - Signature Hash of the app signing cert which can be generated from your .cer file using certutil.exe. The certificate must be SHA-256.
 
 To generate the signature hash, run `C:\Windows\System32\certutil.exe -dump CertificateName.cer`.
@@ -89,7 +91,7 @@ Next, modify your [app package manifest](/uwp/schemas/appxpackage/appx-package-m
 </Package>
 ```
 
-Then copy the SCCD file to the package root of the appx package. In Visual Studio's solution explorer, right-click on “project-&gt; Add -&gt; Existing Item…” to add the SCCD to your project.
+Then copy the SCCD file to the package root of the appx package. In Visual Studio's solution explorer, right-click on "project-&gt; Add -&gt; Existing Item…" to add the SCCD to your project.
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
 
@@ -110,12 +112,18 @@ To pre-install a UWP app with custom capabilities, use [DISM - Deployment Image 
 When the target machine is in Developer Mode, you can try the following steps to debug app registration failure:
 
 1. Remove the custom capability entry from your AppX manifest.
-2. Build your app and deploy it.
-3. In a PowerShell window, type `Get-AppxPackage`.
-4. Look for your app in the list and verify the exact package family name for your app.
-5. Update your SCCD with the package family name.
-6. Add the custom capability entry back into your AppX manifest.
-7. Rebuild and deploy.
+
+1. Build your app and deploy it.
+
+1. In a PowerShell window, type `Get-AppxPackage`.
+
+1. Look for your app in the list and verify the exact package family name for your app.
+
+1. Update your SCCD with the package family name.
+
+1. Add the custom capability entry back into your AppX manifest.
+
+1. Rebuild and deploy.
 
 ## See Also
 

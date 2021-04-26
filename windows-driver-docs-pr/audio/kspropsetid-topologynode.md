@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_TopologyNode
 description: KSPROPSETID\_TopologyNode
-ms.assetid: 0b6696aa-e80d-4806-9fbb-7de701164877
 keywords: ["KSPROPSETID_TopologyNode"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 14e6d6db-c429-4d80-840b-c4e0102c9380
 keywords: ["get_LongPaperName method Print Devices", "get_LongPaperName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_LongPaperName method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
 description: Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: 1A540E7F-CA03-4CFA-8711-6CDBD7E152AD
 keywords:
 - Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
@@ -82,6 +81,6 @@ More than one Hardware ID can be used to specify a service. For example, you can
 
 4. Click **OK** to return to the **Associations** tab.
 
-For detailed information about the Hardware ID for each service style, see [Service Metadata Package Schema Reference for Windows 8](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference).
+For detailed information about the Hardware ID for each service style, see [Service Metadata Package Schema Reference for Windows 8](../mobilebroadband/mobilebroadbandinfo-xml-schema.md).
 
 For more information about matching, see [Delivering experiences for MVNOs](../mobilebroadband/delivering-experiences-for-mvnos.md).

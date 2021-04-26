@@ -1,7 +1,6 @@
 ---
 title: How to Release-Sign a Driver Package
 description: How to Release-Sign a Driver Package
-ms.assetid: f02c0a50-01f1-456c-b432-c4d9e8cbc566
 keywords:
 - release-signing drivers WDK
 - driver signing WDK , release-signing packages
@@ -31,7 +30,7 @@ This section provides the basic steps that you have to follow when you release-s
 
 Each topic in this section describes a separate procedure in the release-signing process, and provides the general information that you have to understand about the procedure. In addition, each topic points you to other topics that provide detailed information about the procedure.
 
-**Note**  This section discusses the steps involved when a driver publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](https://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
+**Note**  This section discusses the steps involved when a driver publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) has [test categories](/windows-hardware/test/hlk/) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
 
  
 
@@ -60,6 +59,3 @@ This section contains the following topics:
 [Configuring a Computer to Support Release-Signing](configuring-a-computer-to-support-release-signing.md)
 
 [Installing a Release-Signed Driver Package](installing-a-release-signed-driver-package.md)
-
- 
-

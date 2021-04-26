@@ -1,7 +1,6 @@
 ---
 title: Framework Object Creation Errors
 description: Framework Object Creation Errors
-ms.assetid: f5345c88-1c3a-4b32-9c93-c252713f7641
 keywords:
 - framework objects WDK KMDF , creation errors
 - errors WDK KMDF
@@ -47,7 +46,5 @@ If the **Size** member of any framework-defined structure does not match the str
 
 If the framework cannot allocate memory for the new object, it can return STATUS\_INSUFFICIENT\_RESOURCES.
 
-Individual object creation methods might also return additional [NTSTATUS values](https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values). For more information about each creation method's additional return values, see the method's reference page.
-
- 
+Individual object creation methods might also return additional [NTSTATUS values](../kernel/using-ntstatus-values.md). For more information about each creation method's additional return values, see the method's reference page.
 

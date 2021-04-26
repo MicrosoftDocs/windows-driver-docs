@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_InstallState
 description: DEVPKEY_Device_InstallState
-ms.assetid: 3bebb3d6-96bb-4c7c-8a7a-c5bf29cb3a2a
 keywords: ["DEVPKEY_Device_InstallState Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_InstallState to one of the CM_INSTALL_STATE_*Xxx* values that are defined in Cfgmgr32.h. The CM_INSTALL_STATE_*Xxx* values correspond to the [**DEVICE_INSTALL_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_install_state) enumeration values.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_InstallState.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_InstallState.
 
 Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_InstallState property key. Instead, you can use the corresponding SPDRP_INSTALL_STATE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -76,7 +75,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

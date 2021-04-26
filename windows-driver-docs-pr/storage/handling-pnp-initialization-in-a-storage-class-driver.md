@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Initialization in a Storage Class Driver
 description: Handling PnP Initialization in a Storage Class Driver
-ms.assetid: 472e52c8-a214-418b-a82f-fd4a9bcc894e
 keywords:
 - storage class drivers WDK , PnP
 - class drivers WDK storage , PnP
@@ -36,7 +35,5 @@ For more information about initializing storage class drivers, see the following
 
 [Storage Class Driver's AddDevice Routine](storage-class-driver-s-adddevice-routine.md)
 
-Also see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
-
- 
+Also see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 

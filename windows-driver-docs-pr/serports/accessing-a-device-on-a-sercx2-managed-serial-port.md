@@ -1,7 +1,6 @@
 ---
 title: Accessing a Device on a SerCx2-Managed Serial Port
 description: SerCx2 and a serial controller driver jointly manage a serial port to which a peripheral device is permanently connected.
-ms.assetid: EF7F42D3-21A5-42F8-86AB-897281DF4F18
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -36,16 +35,14 @@ SerCx2 and a serial controller driver jointly manage a serial port to which a pe
 </tr>
 <tr class="odd">
 <td><p><a href="sercx2-handling-of-read-and-write-requests.md" data-raw-source="[SerCx2 Handling of Read and Write Requests](sercx2-handling-of-read-and-write-requests.md)">SerCx2 Handling of Read and Write Requests</a></p></td>
-<td><p>A peripheral driver sends write (<a href="https://docs.microsoft.com/previous-versions/ff546904(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_WRITE&lt;/strong&gt;](/previous-versions/ff546904(v=vs.85))"><strong>IRP_MJ_WRITE</strong></a>) and read (<a href="https://docs.microsoft.com/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.</p></td>
+<td><p>A peripheral driver sends write (<a href="/previous-versions/ff546904(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_WRITE&lt;/strong&gt;](/previous-versions/ff546904(v=vs.85))"><strong>IRP_MJ_WRITE</strong></a>) and read (<a href="/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="reading-data-from-a-sercx2-managed-serial-port.md" data-raw-source="[Reading Data from a SerCx2-Managed Serial Port](reading-data-from-a-sercx2-managed-serial-port.md)">Reading Data from a SerCx2-Managed Serial Port</a></p></td>
-<td><p>A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read (<a href="https://docs.microsoft.com/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) requests to the serial port.</p></td>
+<td><p>A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read (<a href="/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) requests to the serial port.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

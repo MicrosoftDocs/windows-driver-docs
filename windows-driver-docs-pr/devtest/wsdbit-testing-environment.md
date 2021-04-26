@@ -1,7 +1,6 @@
 ---
 title: WSDBIT Testing Environment
 description: WSDBIT Testing Environment
-ms.assetid: 6fa6f6f7-859a-4424-a71d-600f82b23f89
 keywords:
 - WSDBIT tool WDK , testing environment
 - WSDAPI Basic Interoperability Tool WDK , testing environment
@@ -48,11 +47,11 @@ The following table describes service and interoperability test case dependencie
 
 The test device should host three kinds of services:
 
-- https://schemas.example.org/SimpleService
+- `https://schemas.example.org/SimpleService`
 
-- https://schemas.example.org/AttachmentService
+- `https://schemas.example.org/AttachmentService`
 
-- https://schemas.example.org/EventingService
+- `https://schemas.example.org/EventingService`
 
 ### SimpleService
 
@@ -68,7 +67,7 @@ The **SimpleService** service has four methods:
 
 ### AttachmentService
 
-The **AttachmentService** service sends and receives attachments. The attachment data to send and receive is included in the \\interop directory as two separate files: Image1.jpg and Image2.jpg. This service has two methods:
+The **AttachmentService** service sends and receives attachments. The attachment data to send and receive is included in the \\interop directory as two separate files: `Image1.jpg` and `Image2.jpg`. This service has two methods:
 
 - **OneWayAttachment** is a one-way method with an attachment as a parameter.
 

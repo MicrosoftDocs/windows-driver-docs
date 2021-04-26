@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Unbinding Operations
 description: Intermediate Driver Unbinding Operations
-ms.assetid: d316385a-9481-4708-9e09-06d0424acd8f
 keywords:
 - intermediate drivers WDK networking , binding
 - NDIS intermediate drivers WDK , binding

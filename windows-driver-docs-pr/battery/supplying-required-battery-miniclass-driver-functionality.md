@@ -1,7 +1,6 @@
 ---
 title: Supplying Required Battery Miniclass Driver Functionality
 description: Supplying Required Battery Miniclass Driver Functionality
-ms.assetid: d33d3c8c-f867-40dc-901c-6b0dd5d57dac
 keywords:
 - battery miniclass drivers WDK , routines
 - routines WDK battery
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_supplying_required_battery_miniclass_driver_functionality_dg"></span><span id="DDK_SUPPLYING_REQUIRED_BATTERY_MINICLASS_DRIVER_FUNCTIONALITY_DG"></span>
 
 
-In addition to the routines required to support [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play), a battery miniclass driver must have the following routines:
+In addition to the routines required to support [Plug and Play](../kernel/introduction-to-plug-and-play.md), a battery miniclass driver must have the following routines:
 
 [DriverEntry](driverentry-routine-of-a-battery-miniclass-driver.md)
 
@@ -26,17 +25,17 @@ In addition to the routines required to support [Plug and Play](https://docs.mic
 
 [DispatchSystemControl](dispatchsystemcontrol-routine-of-a-battery-miniclass-driver.md)
 
-[*BatteryMiniQueryTag*](/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback)
+[*BatteryMiniQueryTag*](/windows/win32/api/batclass/nc-batclass-bclass_query_tag_callback)
 
-[*BatteryMiniQueryStatus*](/windows/desktop/api/batclass/nc-batclass-bclass_query_status_callback)
+[*BatteryMiniQueryStatus*](/windows/win32/api/batclass/nc-batclass-bclass_query_status_callback)
 
-[*BatteryMiniQueryInformation*](/windows/desktop/api/batclass/nc-batclass-bclass_query_information_callback)
+[*BatteryMiniQueryInformation*](/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback)
 
-[*BatteryMiniSetInformation*](/windows/desktop/api/batclass/nc-batclass-bclass_set_information_callback)
+[*BatteryMiniSetInformation*](/windows/win32/api/batclass/nc-batclass-bclass_set_information_callback)
 
-[*BatteryMiniSetStatusNotify*](/windows/desktop/api/batclass/nc-batclass-bclass_set_status_notify_callback)
+[*BatteryMiniSetStatusNotify*](/windows/win32/api/batclass/nc-batclass-bclass_set_status_notify_callback)
 
-[*BatteryMiniDisableStatusNotify*](/windows/desktop/api/batclass/nc-batclass-bclass_disable_status_notify_callback)
+[*BatteryMiniDisableStatusNotify*](/windows/win32/api/batclass/nc-batclass-bclass_disable_status_notify_callback)
 
 [Unload](unload-routine-of-a-battery-miniclass-driver.md)
 
@@ -49,6 +48,4 @@ Battery miniclass drivers must include the following header files:
 -   Batclass.h
 
 -   Ntddk.h or Wdm.h
-
- 
 

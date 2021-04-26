@@ -1,7 +1,6 @@
 ---
 title: Differences in WDM Versions
 description: Differences in WDM Versions
-ms.assetid: 735b01c4-4eff-4c8e-ab60-3813d1830112
 keywords: ["WDM drivers WDK kernel , versions", "versions WDK WDM", "compatibility WDK WDM", "cross-system compatibility WDK WDM", "Plug and Play WDK WDM", "driver support routines WDK WDM", "power management WDK WDM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ The simplest way to ensure cross-system compatibility is to write a driver that 
 
 ### WDM Differences in Driver Support Routines
 
-The Windows Driver Kit (WDK) reference page for each [driver support routine](/windows-hardware/drivers/ddi/index) indicates if the routine is restricted to specific versions of WDM, or if its behavior is different on different operating system versions. Before using any driver support routine in a cross-system driver, be sure to understand any version-specific restrictions or behaviors.
+The Windows Driver Kit (WDK) reference page for each driver support routine indicates if the routine is restricted to specific versions of WDM, or if its behavior is different on different operating system versions. Before using any driver support routine in a cross-system driver, be sure to understand any version-specific restrictions or behaviors.
 
 ### WDM Differences in Plug and Play
 

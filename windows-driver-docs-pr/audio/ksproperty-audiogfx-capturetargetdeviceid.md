@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID
 description: The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to inform a GFX filter of the Plug and Play device ID of the audio device that is the source of the capture stream.
-ms.assetid: df4505c5-f9ff-4f8a-8521-90031c0b23e4
 keywords: ["KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to inform a GFX
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>WCHAR array</p></td>
 </tr>
 </tbody>
@@ -90,6 +89,4 @@ Requirements
 
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

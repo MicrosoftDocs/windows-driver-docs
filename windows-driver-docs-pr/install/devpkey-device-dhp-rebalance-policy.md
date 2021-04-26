@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DHP_Rebalance_Policy
 description: DEVPKEY_Device_DHP_Rebalance_Policy
-ms.assetid: a882a114-9d1b-41ca-ab24-c2cdda952177
 keywords: ["DEVPKEY_Device_DHP_Rebalance_Policy Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_DHP_Rebalance_Policy
 
 
-The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that indicates whether a device will participate in resource rebalancing following a [dynamic hardware partitioning (DHP)](../kernel/dynamic-hardware-partitioning-techniques.md) processor hot-add operation.
+The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that indicates whether a device will participate in resource rebalancing following a [dynamic hardware partitioning (DHP)](../kernel/introduction-to-dynamic-hardware-partitioning.md) processor hot-add operation.
 
 <table>
 <colgroup>
@@ -72,7 +71,7 @@ The default behavior for devices in the Network Adapter (Class = Net) device set
 
 This device property does not affect whether a device will participate in a resource rebalance that is initiated for other reasons.
 
-You can access the DEVPKEY_Device_DHP_Rebalance_Policy property by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can access the DEVPKEY_Device_DHP_Rebalance_Policy property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Requirements
 ------------
@@ -97,9 +96,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
-
- 
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 

@@ -1,7 +1,6 @@
 ---
 title: Handling Status Indications in a CoNDIS Protocol Driver
 description: Handling Status Indications in a CoNDIS Protocol Driver
-ms.assetid: 948df51b-0561-4b67-b87f-e1652bb18772
 keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE
 description: The KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE property is used to communicate to the audio driver that single-radio voice call continuity (SRVCC) is beginning or ending.
-ms.assetid: 9CEDAFE7-014F-4670-958D-6D3687D2D24A
 keywords: ["KSPROPERTY_TELEPHONY_PROVIDERCHANGE Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The **KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE** property is used to communicate to
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstelephony_providerchange" data-raw-source="[&lt;strong&gt;KSTELEPHONY_PROVIDERCHANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstelephony_providerchange)"><strong>KSTELEPHONY_PROVIDERCHANGE</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstelephony_providerchange" data-raw-source="[&lt;strong&gt;KSTELEPHONY_PROVIDERCHANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstelephony_providerchange)"><strong>KSTELEPHONY_PROVIDERCHANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -92,6 +91,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION notification to inform the MB Service about a device service subscription in response to an OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS set request.NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure.
-ms.assetid: E2B839AE-F81A-41EE-8374-F830B79D1E74
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION Network Drivers Starting with Windows Vista

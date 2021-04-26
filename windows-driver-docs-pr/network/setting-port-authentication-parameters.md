@@ -1,7 +1,6 @@
 ---
 title: Setting Port Authentication Parameters
 description: Setting Port Authentication Parameters
-ms.assetid: 88ac8229-d1d5-4287-8b5d-3a7b9b1f2e89
 keywords:
 - ports WDK NDIS , OID requests
 - NDIS ports WDK , OID requests

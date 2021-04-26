@@ -1,7 +1,6 @@
 ---
 title: Survey of Software Tracing Tools
 description: Survey of Software Tracing Tools
-ms.assetid: d6b5d131-ed03-4961-9680-1c4ded35de96
 keywords:
 - software tracing WDK , tools listed
 - tracing WDK , tools listed

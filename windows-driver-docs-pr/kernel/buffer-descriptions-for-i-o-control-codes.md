@@ -1,7 +1,6 @@
 ---
 title: Buffer Descriptions for I/O Control Codes
 description: Buffer Descriptions for I/O Control Codes
-ms.assetid: a458f3fb-a6c7-42ae-870e-1617a96b496f
 keywords: ["I/O control codes WDK kernel , buffer descriptions", "control codes WDK IOCTLs , buffer descriptions", "IOCTLs WDK kernel , buffer descriptions", "buffer descriptions WDK IOCTLs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,14 +12,14 @@ ms.localizationpriority: medium
 
 
 
-I/O control codes are contained in [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests. The I/O manager creates these requests as a result of calls to [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) (described in the Microsoft Windows SDK documentation) and [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
+I/O control codes are contained in [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests. The I/O manager creates these requests as a result of calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) (described in the Microsoft Windows SDK documentation) and [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
 
-Because [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest** accept both an input buffer and an output buffer as arguments, all **IRP\_MJ\_DEVICE\_CONTROL** and **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests supply both an input buffer and an output buffer. The way the system describes these buffers is dependent on the data transfer type. The transfer type is specified by the *TransferType* value in the [**CTL\_CODE**](defining-i-o-control-codes.md) macro that creates IOCTL code values.
+Because [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest** accept both an input buffer and an output buffer as arguments, all **IRP\_MJ\_DEVICE\_CONTROL** and **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests supply both an input buffer and an output buffer. The way the system describes these buffers is dependent on the data transfer type. The transfer type is specified by the *TransferType* value in the [**CTL\_CODE**](defining-i-o-control-codes.md) macro that creates IOCTL code values.
 
 The system describes buffers for each *TransferType* value as follows:
 
 <a href="" id="method-buffered"></a>METHOD\_BUFFERED  
-For this transfer type, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This buffer represents both the input buffer and the output buffer that are specified in calls to [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. The driver transfers data out of, and then into, this buffer.
+For this transfer type, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This buffer represents both the input buffer and the output buffer that are specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. The driver transfers data out of, and then into, this buffer.
 
 For input data, the buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure. For output data, the buffer size is specified by **Parameters.DeviceIoControl.OutputBufferLength** in the driver's **IO\_STACK\_LOCATION** structure.
 
@@ -29,7 +28,7 @@ The size of the space that the system allocates for the single input/output buff
 <a href="" id="method-in-direct-or-method-out-direct"></a>METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT  
 For these transfer types, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This represents the buffer that is specified in calls to **DeviceIoControl** and **IoBuildDeviceIoControlRequest**. The buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's **IO\_STACK\_LOCATION** structure.
 
-For these transfer types, IRPs also supply a pointer to an MDL at **Irp-&gt;MdlAddress**. This represents the buffer that is specified in calls to [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. This buffer can be used as either an input buffer or an output buffer, as follows:
+For these transfer types, IRPs also supply a pointer to an MDL at **Irp-&gt;MdlAddress**. This represents the buffer that is specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. This buffer can be used as either an input buffer or an output buffer, as follows:
 
 -   METHOD\_IN\_DIRECT is specified if the driver that handles the IRP receives data in the buffer when it is called. The MDL describes an input buffer, and specifying METHOD\_IN\_DIRECT ensures that the executing thread has read-access to the buffer.
 

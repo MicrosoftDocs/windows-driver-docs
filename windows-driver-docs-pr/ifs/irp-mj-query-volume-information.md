@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_QUERY_VOLUME_INFORMATION
 description: IRP\_MJ\_QUERY\_VOLUME\_INFORMATION
-ms.assetid: 1e762c75-70bd-4397-b244-df97b317b3bf
 keywords: ["IRP_MJ_QUERY_VOLUME_INFORMATION Installable File System Drivers"]
 topic_type:
 - apiref
@@ -114,39 +113,39 @@ Specifies the type of volume information to be returned by the file system. This
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileFsAttributeInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_attribute_information" data-raw-source="[&lt;strong&gt;FILE_FS_ATTRIBUTE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_attribute_information)"><strong>FILE_FS_ATTRIBUTE_INFORMATION</strong></a> structure that contains attribute information about the file system responsible for the volume.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_attribute_information" data-raw-source="[&lt;strong&gt;FILE_FS_ATTRIBUTE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_attribute_information)"><strong>FILE_FS_ATTRIBUTE_INFORMATION</strong></a> structure that contains attribute information about the file system responsible for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsControlInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> structure that contains file system control information about the volume.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> structure that contains file system control information about the volume.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsDeviceInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_fs_device_information" data-raw-source="[&lt;strong&gt;FILE_FS_DEVICE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_fs_device_information)"><strong>FILE_FS_DEVICE_INFORMATION</strong></a> structure that contains device information for the volume.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_fs_device_information" data-raw-source="[&lt;strong&gt;FILE_FS_DEVICE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_fs_device_information)"><strong>FILE_FS_DEVICE_INFORMATION</strong></a> structure that contains device information for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsDriverPathInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_driver_path_information" data-raw-source="[&lt;strong&gt;FILE_FS_DRIVER_PATH_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_driver_path_information)"><strong>FILE_FS_DRIVER_PATH_INFORMATION</strong></a> structure that contains information about whether a specified driver is in the I/O path for the volume. The originator of the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request must store the name of the driver into the <strong>FILE_FS_DRIVER_PATH_INFORMATION</strong> structure before sending the IRP to the file system volume device stack.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_driver_path_information" data-raw-source="[&lt;strong&gt;FILE_FS_DRIVER_PATH_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_driver_path_information)"><strong>FILE_FS_DRIVER_PATH_INFORMATION</strong></a> structure that contains information about whether a specified driver is in the I/O path for the volume. The originator of the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request must store the name of the driver into the <strong>FILE_FS_DRIVER_PATH_INFORMATION</strong> structure before sending the IRP to the file system volume device stack.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsFullSizeInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_full_size_information" data-raw-source="[&lt;strong&gt;FILE_FS_FULL_SIZE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_full_size_information)"><strong>FILE_FS_FULL_SIZE_INFORMATION</strong></a> structure that contains information about the total amount of space available on the volume.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_full_size_information" data-raw-source="[&lt;strong&gt;FILE_FS_FULL_SIZE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_full_size_information)"><strong>FILE_FS_FULL_SIZE_INFORMATION</strong></a> structure that contains information about the total amount of space available on the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsObjectIdInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsSizeInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_size_information" data-raw-source="[&lt;strong&gt;FILE_FS_SIZE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_size_information)"><strong>FILE_FS_SIZE_INFORMATION</strong></a> structure containing information about the amount of space on the volume that is available to the user associated with the thread which originated the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_size_information" data-raw-source="[&lt;strong&gt;FILE_FS_SIZE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_size_information)"><strong>FILE_FS_SIZE_INFORMATION</strong></a> structure containing information about the amount of space on the volume that is available to the user associated with the thread which originated the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsVolumeInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_volume_information" data-raw-source="[&lt;strong&gt;FILE_FS_VOLUME_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_volume_information)"><strong>FILE_FS_VOLUME_INFORMATION</strong></a> that contains information about the volume such as the volume label, serial number, and creation time.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_volume_information" data-raw-source="[&lt;strong&gt;FILE_FS_VOLUME_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_volume_information)"><strong>FILE_FS_VOLUME_INFORMATION</strong></a> that contains information about the volume such as the volume label, serial number, and creation time.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsSectorSizeInformation</strong></p></td>
-<td align="left"><p>Return a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_sector_size_information" data-raw-source="[&lt;strong&gt;FILE_FS_SECTOR_SIZE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_sector_size_information)"><strong>FILE_FS_SECTOR_SIZE_INFORMATION</strong></a> structure that contains information about the physical and logical sector sizes of a volume.</p></td>
+<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_sector_size_information" data-raw-source="[&lt;strong&gt;FILE_FS_SECTOR_SIZE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_sector_size_information)"><strong>FILE_FS_SECTOR_SIZE_INFORMATION</strong></a> structure that contains information about the physical and logical sector sizes of a volume.</p></td>
 </tr>
 </tbody>
 </table>
@@ -189,6 +188,4 @@ Length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*. On return, t
 [**ZwQueryVolumeInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile)
 
 [**ZwSetVolumeInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile)
-
- 
 

@@ -1,7 +1,6 @@
 ---
 title: AVStream Allocators
 description: AVStream Allocators
-ms.assetid: cda90faa-d4e3-4f17-aa5a-87dcde314bfd
 keywords:
 - AVStream allocators WDK
 - allocators WDK AVStream

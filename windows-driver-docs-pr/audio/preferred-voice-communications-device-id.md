@@ -1,7 +1,6 @@
 ---
 title: Preferred Voice-Communications Device ID
 description: Preferred Voice-Communications Device ID
-ms.assetid: ed0fbba3-cc9e-48d6-9ab5-360f8aab3ed6
 keywords:
 - WDM audio extensions WDK , voice-communication device IDs
 - voice-communication device IDs WDK audio

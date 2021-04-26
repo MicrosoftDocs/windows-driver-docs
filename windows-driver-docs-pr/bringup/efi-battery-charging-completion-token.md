@@ -1,7 +1,6 @@
 ---
 title: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 description: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
-ms.assetid: 1151643e-8b22-4034-b043-ac4d44c01082
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

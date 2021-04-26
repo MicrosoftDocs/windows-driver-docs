@@ -1,7 +1,6 @@
 ---
 title: DispatchDeviceControl in Higher-Level Drivers
 description: DispatchDeviceControl in Higher-Level Drivers
-ms.assetid: baff49c4-8764-4b65-84f4-ce5e10d51ed2
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

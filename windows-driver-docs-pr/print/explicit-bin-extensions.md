@@ -1,7 +1,6 @@
 ---
 title: Explicit Bin Extensions
 description: Explicit Bin Extensions
-ms.assetid: a9f7f290-1af8-4312-b348-c1c98a3fc4a6
 keywords:
 - explicit bin extensions WDK printer
 ms.date: 04/20/2017
@@ -31,7 +30,7 @@ You can further extend an implicit bin extension by using the special construct,
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>An enumerator in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
+<td><p>An enumerator in the <a href="/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>drvPrinterEvent</strong></p></td>
@@ -83,6 +82,4 @@ The preceding example results in the following query:
 ```cpp
 \Printer.Finishing.OutputBins.TopBin:Status
 ```
-
- 
 

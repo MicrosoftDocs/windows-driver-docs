@@ -1,7 +1,6 @@
 ---
 title: Synchronizing the Use of a Parallel Port
 description: Synchronizing the Use of a Parallel Port
-ms.assetid: ea3a1998-9e31-4047-9193-6b402db222c9
 keywords:
 - parallel ports WDK , synchronization
 - synchronization WDK parallel ports
@@ -25,7 +24,7 @@ A client uses the following device control requests to allocate and free a paral
 
 [**IOCTL\_INTERNAL\_PARALLEL\_PORT\_FREE**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_parallel_port_free)
 
-A kernel-mode client can also use the system-supplied [parallel port callback routines](/windows-hardware/drivers/ddi/index) that are obtained by using an [**IOCTL\_INTERNAL\_GET\_PARALLEL\_PORT\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_parallel_port_info) request. This request returns a [**PARALLEL\_PORT\_INFORMATION**](/windows-hardware/drivers/ddi/parallel/ns-parallel-_parallel_port_information) structure that includes the following pointers to system-supplied callbacks:
+A kernel-mode client can also use the system-supplied [parallel port callback routines](/windows-hardware/drivers/ddi/_parports/) that are obtained by using an [**IOCTL\_INTERNAL\_GET\_PARALLEL\_PORT\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_parallel_port_info) request. This request returns a [**PARALLEL\_PORT\_INFORMATION**](/windows-hardware/drivers/ddi/parallel/ns-parallel-_parallel_port_information) structure that includes the following pointers to system-supplied callbacks:
 
 -   The **TryAllocatePort** member is a pointer to a [*PPARALLEL\_TRY\_ALLOCATE\_ROUTINE*](/previous-versions/windows/hardware/drivers/ff544550(v=vs.85)) callback, which is a nonblocking routine that tries to allocate a parallel port.
 

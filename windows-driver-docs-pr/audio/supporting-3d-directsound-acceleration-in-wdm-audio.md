@@ -1,7 +1,6 @@
 ---
 title: Supporting 3D DirectSound Acceleration in WDM Audio
 description: Supporting 3D DirectSound Acceleration in WDM Audio
-ms.assetid: 7524c15a-e487-43b6-9101-7cdd0c5e6e0c
 keywords:
 - hardware acceleration WDK DirectSound , 3D mixing
 - 3D mixing WDK audio

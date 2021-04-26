@@ -1,7 +1,6 @@
 ---
 title: Synchronization and Threaded DPCs
 description: Synchronization and Threaded DPCs
-ms.assetid: b4f2c77b-226c-4229-bcbb-5eebabdc28a4
 keywords: ["threaded DPCs WDK kernel", "synchronization WDK kernel , interrupts", "queued spin locks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

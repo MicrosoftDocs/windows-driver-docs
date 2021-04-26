@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Port and Network Adapter States
 description: Hyper-V Extensible Switch Port and Network Adapter States
-ms.assetid: 1E2075E3-D7CC-4364-ABB2-D5969DB361B5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -131,8 +130,8 @@ The following table describes the operations that are allowed based on the state
 <thead>
 <tr class="header">
 <th align="left">Component state</th>
-<th align="left">Calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port" data-raw-source="[&lt;em&gt;ReferenceSwitchPort&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port)"><em>ReferenceSwitchPort</em></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port" data-raw-source="[&lt;em&gt;DereferenceSwitchPort&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port)"><em>DereferenceSwitchPort</em></a> allowed?</th>
-<th align="left">Calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic" data-raw-source="[&lt;em&gt;ReferenceSwitchNic&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic)"><em>ReferenceSwitchNic</em></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic" data-raw-source="[&lt;em&gt;DereferenceSwitchNic&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic)"><em>DereferenceSwitchNic</em></a> allowed?</th>
+<th align="left">Calls to <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port" data-raw-source="[&lt;em&gt;ReferenceSwitchPort&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port)"><em>ReferenceSwitchPort</em></a> or <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port" data-raw-source="[&lt;em&gt;DereferenceSwitchPort&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port)"><em>DereferenceSwitchPort</em></a> allowed?</th>
+<th align="left">Calls to <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic" data-raw-source="[&lt;em&gt;ReferenceSwitchNic&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic)"><em>ReferenceSwitchNic</em></a> or <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic" data-raw-source="[&lt;em&gt;DereferenceSwitchNic&lt;/em&gt;](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic)"><em>DereferenceSwitchNic</em></a> allowed?</th>
 </tr>
 </thead>
 <tbody>
@@ -263,8 +262,6 @@ The following table describes the operations that are allowed based on the state
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

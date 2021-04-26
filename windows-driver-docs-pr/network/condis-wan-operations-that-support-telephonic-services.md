@@ -1,7 +1,6 @@
 ---
 title: CoNDIS WAN Operations that Support Telephonic Services
 description: CoNDIS WAN Operations that Support Telephonic Services
-ms.assetid: 698d7667-8620-4f98-aa57-e48195f612e3
 keywords:
 - CoNDIS WAN drivers WDK networking , telephonic services
 - telephonic services WDK WAN
@@ -36,7 +35,7 @@ The following topics describe the NDPROXY driver more fully. These topics also d
 
 [CoNDIS TAPI Shutdown](condis-tapi-shutdown.md)
 
-[Call Manager Requirements for Voice Streaming](call-manager-requirements-for-voice-streaming.md)
+[Call Manager Requirements for Voice Streaming](responding-to-an-oid-co-tapi-line-caps-query.md)
 
 [Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS](non-wan-specific-extensions-to-support-telephonic-services-over-connec.md)
 

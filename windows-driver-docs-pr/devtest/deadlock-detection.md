@@ -1,7 +1,6 @@
 ---
 title: Deadlock Detection
 description: Deadlock Detection
-ms.assetid: ecda3e19-218d-484a-973d-8406bed8d820
 keywords:
 - Deadlock Detection feature WDK Driver Verifier
 - deadlocks WDK Driver Verifier

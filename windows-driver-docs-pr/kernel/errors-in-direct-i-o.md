@@ -1,7 +1,6 @@
 ---
 title: Errors in Direct I/O
 description: Errors in Direct I/O
-ms.assetid: 9efc2875-3402-4e2e-871b-3cc1d8f45360
 keywords: ["reliability WDK kernel , direct I/O", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O", "zero-length buffers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

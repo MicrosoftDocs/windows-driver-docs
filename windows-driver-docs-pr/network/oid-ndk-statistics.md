@@ -1,7 +1,6 @@
 ---
 title: OID_NDK_STATISTICS
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_STATISTICS OID to get the NDK statistics of a miniport adapter.
-ms.assetid: 30F16DEC-AEE6-49D4-8599-95374ACBD446
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_STATISTICS Network Drivers Starting with Windows Vista
@@ -28,7 +27,7 @@ The NDK-capable miniport driver must provide the **CounterSet** member, which is
 
 The counters are published to tools such as [perfmon](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731067(v=ws.11)) (see the [NetworkDirect Activity](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997022(v=ws.11)) performance counter) and made available programmatically with the Performance Data Helper (PDH) and Performance Library (PERFLIB) programming interfaces. For more information about these interfaces, see [Performance Counters](/windows/desktop/PerfCtrs/performance-counters-portal).
 
-These counters are also available by calling the [Get-NetAdapterStatistics](/powershell/module/network-adapter/get-netadapterstatistics) PowerShell cmdlet with the **RdmaStatistics** attribute. For more information about the **RdmaStatistics** attribute, see [**MSFT\_NetAdapterStatisticsSettingData**](/previous-versions/windows/desktop/netadaptercimprov/msft-netadapterstatisticssettingdata).
+These counters are also available by calling the [Get-NetAdapterStatistics](/powershell/module/netadapter/get-netadapterstatistics) PowerShell cmdlet with the **RdmaStatistics** attribute. For more information about the **RdmaStatistics** attribute, see [**MSFT\_NetAdapterStatisticsSettingData**](/previous-versions/windows/desktop/netadaptercimprov/msft-netadapterstatisticssettingdata).
 
 Requirements
 ------------

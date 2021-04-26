@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_ALLOCATIONGROUPOUT structure
 description: The DXGK\_ALLOCATIONGROUPOUT structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 4aafe036-09a5-4e2d-a2ea-b81d0ba05ec1
 keywords: ["_DXGK_ALLOCATIONGROUPOUT structure Display Devices", "DXGK_ALLOCATIONGROUPOUT structure Display Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: The PnP Manager Redistributes System Resources
-description: The PnP Manager Redistributes System Resources
-ms.assetid: fc88ae0a-5b78-4292-a101-29d2fc383555
+description: Learn how the PnP manager redistributes system resources. This occurs when a user adds a device that requires resources already assigned elsewhere.
 keywords:
 - PnP WDK KMDF , redistributing resources
 - Plug and Play WDK KMDF , redistributing resources

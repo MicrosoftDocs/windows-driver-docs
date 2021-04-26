@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ClassGuid
 description: DEVPKEY_Device_ClassGuid
-ms.assetid: 32527200-dd3d-4e2b-acf3-9005ab511e60
 keywords: ["DEVPKEY_Device_ClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Remarks
 
 The value of DEVPKEY_Device_ClassGuid is set by the INF ClassGUID directive that is supplied by the [**INF Version section**](./inf-addservice-directive.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ClassGuid.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ClassGuid.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_ClassGuid property key. Instead, you can use the corresponding SPDRP_CLASSGUID identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -78,7 +77,7 @@ Requirements
 
 [**INF Version Section**](./inf-version-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

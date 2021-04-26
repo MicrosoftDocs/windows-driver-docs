@@ -1,7 +1,6 @@
 ---
 title: Enhanced Transmission Selection (ETS) Algorithm
 description: Enhanced Transmission Selection (ETS) Algorithm
-ms.assetid: 952ECB1E-96AD-4717-8E49-68558E7E9AD4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

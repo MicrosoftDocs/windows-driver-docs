@@ -1,7 +1,6 @@
 ---
 title: Write a Universal Windows driver (KMDF) based on a template
 description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-ms.assetid: 1E15A136-94BB-46C1-A438-9562C6BDCE7E
 keywords:
 - Write a KMDF driver
 ms.date: 04/20/2018
@@ -69,7 +68,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     ![screen shot of the kmdfdriver package property pages window, showing deployment driver install selected](images/vs2015-kmdfdriver-property-pages.png)
 
     > [!NOTE]
-    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](https://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfDriver &gt; Driver Files** and double-click KmdfDriver.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfDriver &gt; Driver Files** and double-click KmdfDriver.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
     ```C++
     [Standard.NT$ARCH$]

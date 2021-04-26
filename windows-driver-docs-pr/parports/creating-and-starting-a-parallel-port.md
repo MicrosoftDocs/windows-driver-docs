@@ -1,7 +1,6 @@
 ---
 title: Creating and Starting a Parallel Port
 description: Creating and Starting a Parallel Port
-ms.assetid: 75c82353-6490-47e9-9278-ec0981af9ae9
 keywords:
 - parallel ports WDK , creating
 - parallel ports WDK , starting

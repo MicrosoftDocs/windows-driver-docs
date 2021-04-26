@@ -1,7 +1,6 @@
 ---
 title: installAllOrNone XML Element
 description: installAllOrNone XML Element
-ms.assetid: f5634def-c9a1-45db-88ce-f652171d19c9
 keywords: ["installAllOrNone XML Element Device and Driver Installation"]
 topic_type:
 - apiref

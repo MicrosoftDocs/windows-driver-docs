@@ -1,7 +1,6 @@
 ---
 title: Command Execution Order
 description: Command Execution Order
-ms.assetid: 2bf7438c-bfb0-407f-9c80-be3b8a9322f9
 keywords:
 - printer commands WDK Unidrv , execution order
 - sequence numbers WDK Unidrv

@@ -1,7 +1,6 @@
 ---
 title: WlanTimedConnectRequest rule (ndis)
 description: The WlanTimedConnectRequest rule verifies that an OID\_DOT11\_CONNECT\_REQUEST is followed by a NDIS\_STATUS\_DOT11\_CONNECTION\_START within 10 seconds.
-ms.assetid: F40D92B1-CA48-4060-B9E2-A965900EAF7B
 ms.date: 05/21/2018
 keywords: ["WlanTimedConnectRequest rule (ndis)"]
 topic_type:
@@ -39,7 +38,7 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a> and select the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](./ndis-wifi-verification.md)">NDIS/WIFI verification</a> option.</p></td>
+<td align="left"><p>Run <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](./driver-verifier.md)">Driver Verifier</a> and select the <a href="/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](./ndis-wifi-verification.md)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
@@ -57,5 +56,3 @@ See also
 --------
 
 [General Connection Operation Guidelines](/previous-versions/windows/hardware/wireless/general-connection-operation-guidelines)
- 
-

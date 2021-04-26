@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_HEIGHT
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_HEIGHT property along with WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MIN\_HEIGHT, WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_WIDTH, and WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MIN\_WIDTH are used to report the minimum and maximum dimensions, in pixels, of the images that can be uploaded to the Imprinter/Endorser to be rendered. The WIA minidriver creates and maintains this property.
-ms.assetid: 96010EAE-835D-48F7-8EB4-27BAF05252A0
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_HEIGHT Imaging Devices"]
 topic_type:
 - apiref

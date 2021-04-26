@@ -1,7 +1,6 @@
 ---
 title: Virtual Subunit Driver Stack
 description: Virtual Subunit Driver Stack
-ms.assetid: 5aa1804f-b871-4577-8e8a-ce4ad5150ee0
 keywords:
 - virtual subunit driver stack WDK AV/C
 - driver stacks WDK AV/C

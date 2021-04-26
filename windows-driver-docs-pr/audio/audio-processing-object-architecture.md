@@ -1,7 +1,6 @@
 ---
 title: Audio Processing Object Architecture
 description: Architecture for Audio Processing Object APOs used for software based digital signal processing for Windows audio streams.
-ms.assetid: 2F57B4C7-8C83-4DDF-BFAF-B9308752E91D
 ms.date: 10/18/2019
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ Software based effects are inserted in the software device pipe on stream initia
 Any effects applied in hardware DSP need to be advertised via a proxy APO. Microsoft provides a default proxy APO (MsApoFxProxy.dll). To use the Microsoft provided APO, this property set and property must be supported.
 
 -   [KSPROPSETID\_AudioEffectsDiscovery](./kspropsetid-audioeffectsdiscovery.md)
--   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
+-   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](./ksproperty-audioeffectsdiscovery-effectslist.md)
 
 Optionally, you can implement your own proxy APO.
 

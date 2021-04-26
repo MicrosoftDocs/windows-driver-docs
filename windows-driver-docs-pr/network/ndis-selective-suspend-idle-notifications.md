@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS Selective Suspend Idle Notifications
 description: Overview of NDIS Selective Suspend Idle Notifications
-ms.assetid: 958A2588-A847-4699-9906-95FB47CA1CDC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

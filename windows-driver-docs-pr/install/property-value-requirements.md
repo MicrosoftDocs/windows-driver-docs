@@ -1,7 +1,6 @@
 ---
 title: Property Value Requirements
 description: Property Value Requirements
-ms.assetid: 05512f3d-fe64-4de0-848c-c983d883fc60
 keywords:
 - device properties WDK device installations , property value requirements
 ms.date: 04/20/2017
@@ -34,12 +33,12 @@ Windows enforces the device property value size requirements that are listed in 
 <td align="left"><p>The specified size of the supplied data must be the number of bytes of an array of zero or more base-data-type values.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>A <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-security-descriptor" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR&lt;/strong&gt;](./devprop-type-security-descriptor.md)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong></a> data type value</p></td>
+<td align="left"><p>A <a href="/windows-hardware/drivers/install/devprop-type-security-descriptor" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR&lt;/strong&gt;](./devprop-type-security-descriptor.md)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong></a> data type value</p></td>
 <td align="left"><p>The specified size of the supplied data must be the number of bytes of a variable-length, self-relative SECURITY_DESCRIPTOR structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>A <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](./devprop-type-string.md)"><strong>DEVPROP_TYPE_STRING</strong></a> data type value, a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-security-descriptor-string" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING&lt;/strong&gt;](./devprop-type-security-descriptor-string.md)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING</strong></a> data type value, or a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string-indirect" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_INDIRECT&lt;/strong&gt;](./devprop-type-string-indirect.md)"><strong>DEVPROP_TYPE_STRING_INDIRECT</strong></a> data type value</p></td>
-<td align="left"><p>The specified size of the supplied data must be the number of bytes of a Unicode <a href="https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types" data-raw-source="[REG_SZ](/windows/desktop/SysInfo/registry-value-types)">REG_SZ</a> string, including the NULL-terminator.</p></td>
+<td align="left"><p>A <a href="/windows-hardware/drivers/install/devprop-type-string" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](./devprop-type-string.md)"><strong>DEVPROP_TYPE_STRING</strong></a> data type value, a <a href="/windows-hardware/drivers/install/devprop-type-security-descriptor-string" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING&lt;/strong&gt;](./devprop-type-security-descriptor-string.md)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING</strong></a> data type value, or a <a href="/windows-hardware/drivers/install/devprop-type-string-indirect" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_INDIRECT&lt;/strong&gt;](./devprop-type-string-indirect.md)"><strong>DEVPROP_TYPE_STRING_INDIRECT</strong></a> data type value</p></td>
+<td align="left"><p>The specified size of the supplied data must be the number of bytes of a Unicode <a href="/windows/desktop/SysInfo/registry-value-types" data-raw-source="[REG_SZ](/windows/desktop/SysInfo/registry-value-types)">REG_SZ</a> string, including the NULL-terminator.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>A list of DEVPROP_TYPE_STRING-typed strings, a list of DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING-typed strings, or a DEVPROP_TYPE_STRING_LIST data type value</p></td>
@@ -51,8 +50,6 @@ Windows enforces the device property value size requirements that are listed in 
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

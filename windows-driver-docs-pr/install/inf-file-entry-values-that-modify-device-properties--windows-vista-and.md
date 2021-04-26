@@ -1,7 +1,6 @@
 ---
 title: INF File Entry Values That Modify Device Properties
 description: INF File Entry Values That Modify Device Properties
-ms.assetid: 5ce0875f-2687-42d9-b980-ed184b552a62
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

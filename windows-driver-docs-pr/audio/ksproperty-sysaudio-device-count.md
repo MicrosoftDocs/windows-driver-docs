@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property retrieves a count specifying the number of virtual audio devices that a DirectSound application program has to choose from.
-ms.assetid: c70b6b5e-78fc-4f03-99cf-892297e592be
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_COUNT Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property retrieves a count specifying th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -90,6 +89,4 @@ Requirements
 
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

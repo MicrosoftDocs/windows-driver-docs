@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_CAPABILITIES
 description: The PnP manager sends this IRP to get the capabilities of a device, such as whether the device can be locked or ejected.Function and filter drivers can handle this request if they alter the capabilities supported by the bus driver.
 ms.date: 08/12/2017
-ms.assetid: 3c968a46-5bfb-4579-b09a-ad6bce4d9e3b
 keywords:
  - IRP_MN_QUERY_CAPABILITIES Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -59,7 +58,7 @@ After the device stack is built and drivers have started the device, the PnP man
 
 Drivers should add capabilities before they pass the IRP to the next lower driver.
 
-Drivers should remove capabilities after all lower drivers have finished with the IRP. A driver does not typically remove capabilities that have been set by other drivers, but it might do so if it has special information about the capabilities of the device in a certain configuration. See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for information about postponing IRP processing until lower drivers have finished.
+Drivers should remove capabilities after all lower drivers have finished with the IRP. A driver does not typically remove capabilities that have been set by other drivers, but it might do so if it has special information about the capabilities of the device in a certain configuration. See [Plug and Play](./introduction-to-plug-and-play.md) for information about postponing IRP processing until lower drivers have finished.
 
 After a device is enumerated and its drivers are loaded, its capabilities should not change. A device's capabilities might change if the device is removed and re-enumerated.
 
@@ -69,7 +68,7 @@ If a driver handles this IRP, it should check the **DEVICE\_CAPABILITIES** **Ver
 
 Drivers that handle this IRP can set some **DEVICE\_CAPABILITIES** fields but must not set the **Size** and **Version** fields. These fields are only set by the component that sent the IRP.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

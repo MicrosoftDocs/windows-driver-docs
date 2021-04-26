@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_PHYSICAL_MEDIUM_EX
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM_EX OID specifies the types of physical media that a miniport adapter supports.
-ms.assetid: cbac8c9b-d7fe-4588-8a64-599d04a77a72
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PHYSICAL_MEDIUM_EX Network Drivers Starting with Windows Vista

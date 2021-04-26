@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PHOTOMETRIC\_INTERP
 description: The WIA\_IPS\_PHOTOMETRIC\_INTERP property contains the current setting for white and black pixels. The WIA minidriver creates and maintains this property.
-ms.assetid: 5d48ec37-68bb-446a-9236-c88d26f8a549
 keywords: ["WIA_IPS_PHOTOMETRIC_INTERP Imaging Devices"]
 topic_type:
 - apiref

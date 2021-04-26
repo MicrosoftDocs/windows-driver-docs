@@ -1,7 +1,6 @@
 ---
 title: Introduction to IPsec Offload Version 2
 description: Introduction to IPsec Offload Version 2
-ms.assetid: d8fd0bf8-f7b6-44ad-a3dc-f10bb20ce651
 keywords:
 - IPsecOV2 WDK TCP/IP transport , about IPsecOV2
 ms.date: 04/20/2017
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-IPsec offload version 2 (IPsecOV2) extends services that are provided in IPsec offload version 1 (IPsecOV1). For more information about IPsecOV1 offload and IPsec, see [IPsec Offload Version 1](ipsec-offload-version-1.md).
+IPsec offload version 2 (IPsecOV2) extends services that are provided in IPsec offload version 1 (IPsecOV1). For more information about IPsecOV1 offload and IPsec, see [IPsec Offload Version 1](background-reading-on-ipsec.md).
 
 An NDIS 6.1 and later miniport driver reports the IPsecOV2 offload capabilities of a miniport adapter to NDIS. To report IPsec capabilities:
 

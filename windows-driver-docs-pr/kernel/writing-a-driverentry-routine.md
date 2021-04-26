@@ -1,7 +1,6 @@
 ---
 title: Writing a DriverEntry Routine
 description: Writing a DriverEntry Routine
-ms.assetid: c33bc82b-6181-4e31-b272-aaadb2d9b058
 keywords: ["standard driver routines WDK kernel , DriverEntry routine", "driver routines WDK kernel , DriverEntry routine", "routines WDK kernel , DriverEntry routine", "DriverEntry WDK kernel", "DriverEntry WDK kernel , about DriverEntry routine", "driver initialization WDK kernel", "initializing drivers"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

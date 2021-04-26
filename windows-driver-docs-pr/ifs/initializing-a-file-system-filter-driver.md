@@ -1,7 +1,6 @@
 ---
 title: Initializing a File System Filter Driver
 description: Initializing a File System Filter Driver
-ms.assetid: 8a487665-0210-49f5-af91-de78de982506
 keywords:
 - initializing filter drivers
 - filter drivers WDK file system , initializing

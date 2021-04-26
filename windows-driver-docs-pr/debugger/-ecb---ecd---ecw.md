@@ -1,7 +1,6 @@
 ---
 title: ecb, ecd, ecw
 description: The ecb, ecd, and ecw extensions write to the PCI configuration space.
-ms.assetid: ab5f5164-7666-48ac-aeba-5f238c2625f6
 keywords: ["ecb, ecd, ecw Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

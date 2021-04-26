@@ -1,7 +1,6 @@
 ---
 title: Writing an Information Log Entry
 description: Writing an Information Log Entry
-ms.assetid: 624d2a3e-2a11-47fd-941e-1ab59e299821
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,13 +8,13 @@ ms.localizationpriority: medium
 # Writing an Information Log Entry
 
 
-The following example shows how an application might typically call [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) to write an information entry in a [SetupAPI text log](setupapi-text-logs.md) that is not a warning message or an error message.
+The following example shows how an application might typically call [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog) to write an information entry in a [SetupAPI text log](setupapi-text-logs.md) that is not a warning message or an error message.
 
 For information about calling **SetupWriteTextLog** to log an error message, see [Calling SetupWriteTextLog to Log an Error or Warning Entry](writing-an-error-or-warning-log-entry.md).
 
-The application calls [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog), supplying the following parameter values:
+The application calls [**SetupWriteTextLog**](/windows/win32/api/setupapi/nf-setupapi-setupwritetextlog), supplying the following parameter values:
 
--   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
+-   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](/windows/win32/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
 
 -   *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 

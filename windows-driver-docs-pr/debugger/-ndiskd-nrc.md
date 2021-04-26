@@ -1,7 +1,6 @@
 ---
 title: ndiskd.nrc
 description: The ndiskd.nrc extension displays information about a NET_PACKET_FRAGMENT structure.
-ms.assetid: 366851FC-98B5-4322-AEDF-DBA20AA4FC9F
 keywords: ["ndiskd.nrc Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:

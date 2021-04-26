@@ -1,7 +1,6 @@
 ---
 title: Using Aspect Ratio and Custom Scaling Modes
 description: Using Aspect Ratio and Custom Scaling Modes
-ms.assetid: cafb6597-64a2-4d0f-bf7b-ab37f9a53bdc
 keywords:
 - aspect ratio scaling WDK display
 - custom scaling WDK display
@@ -54,7 +53,7 @@ The correspondence of user-mode API scaling values to the display miniport drive
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><a href="https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig" data-raw-source="[&lt;strong&gt;SetDisplayConfig&lt;/strong&gt;](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig)"><strong>SetDisplayConfig</strong></a> API Scaling Value</th>
+<th align="left"><a href="/windows/win32/api/winuser/nf-winuser-setdisplayconfig" data-raw-source="[&lt;strong&gt;SetDisplayConfig&lt;/strong&gt;](/windows/win32/api/winuser/nf-winuser-setdisplayconfig)"><strong>SetDisplayConfig</strong></a> API Scaling Value</th>
 <th align="left">DDI Scaling Value</th>
 </tr>
 </thead>
@@ -130,6 +129,4 @@ DMM will always confirm that the driver interface &gt;= **DXGKDDI\_INTERFACE\_VE
 The values of the scaling types **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** and **D3DKMDT\_VPPS\_CUSTOM** introduced with Windows 7 are stored in the CCD connection database that is associated with a graphics processing unit (GPU). If the user moves a monitor from one GPU with a driver that supports these scaling members to another GPU, the second GPU might not be supported by the original driver. In this case the operating system will map these scaling types to the system default scaling.
 
 If both GPUs support the scaling types **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** and **D3DKMDT\_VPPS\_CUSTOM**, and the driver for the first GPU implements the **D3DKMDT\_VPPS\_CUSTOM** custom scaling request, then if the user switches the monitor to the second GPU, the driver for the second GPU will probably not know how to interpret the custom scaling request. In this case the second driver should fail a call to the [**DxgkDdiCommitVidPn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn) function and should return the **STATUS\_GRAPHICS\_VIDPN\_MODALITY\_NOT\_SUPPORTED** status code; the operating system will map this scaling type to the system default scaling.
-
- 
 

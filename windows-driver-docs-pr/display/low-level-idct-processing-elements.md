@@ -1,7 +1,6 @@
 ---
 title: Low-Level IDCT Processing Elements
 description: Low-Level IDCT Processing Elements
-ms.assetid: 7736a226-1122-4380-b09f-a8560c0cd609
 keywords:
 - macroblocks WDK DirectX VA , IDCT
 - low-level IDCT WDK DirectX VA

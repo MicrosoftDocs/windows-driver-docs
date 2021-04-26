@@ -1,7 +1,6 @@
 ---
 title: Secure Key Injection
 description: Secure Key Injection
-ms.assetid: 21F8ED59-B04C-40D3-AEED-015890798215
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -104,7 +103,7 @@ The following steps describes the process as shown in the previous figure:
 16. By using one of the algorithms that the card supports, the server application generates a symmetric key (S1). The symmetric key S1 is encrypted with K1 and returned to the client application. The server application also returns information about the encryption algorithm and the type of padding that was used to encrypt S1.
 17. The client application calls [**CardImportSessionKey**](/previous-versions/dn468731(v=vs.85)) with an encrypted key data BLOB along with the reference to K1 and any padding information to be used to decrypt the BLOB.
 
-    For more information about key data BLOBs, see [**BCRYPT\_KEY\_DATA\_BLOB\_HEADER**](/windows/desktop/api/bcrypt/ns-bcrypt-_bcrypt_key_data_blob_header).
+    For more information about key data BLOBs, see [**BCRYPT\_KEY\_DATA\_BLOB\_HEADER**](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_key_data_blob_header).
 
 18. The minidriver passes the encrypted BLOB data to the smart card for decryption.
 19. After the symmetric key is decrypted, the smart card returns a reference to the symmetric key to the minidriver.

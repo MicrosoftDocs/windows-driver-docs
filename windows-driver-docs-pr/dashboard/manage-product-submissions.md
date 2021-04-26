@@ -44,10 +44,10 @@ Methods for managing product submissions
     https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/
     ```
 
-    The response body contains a [Submission resource](get-product-data.md#submission-resource) which includes the ID of the submission, the shared access signature (SAS) URI for uploading the product (driver) package for the submission to Azure Blob storage. [!NOTE] > A SAS URI provides access to a secure resource in Azure storage without requiring account keys. For background information about SAS URIs and their use with Azure Blob storage, see [Shared Access Signatures, Part 1: Understanding the SAS model](/azure/storage/common/storage-sas-overview)  and [Shared Access Signatures, Part 2: Create and use a SAS with Blob storage](/azure/storage/common/storage-sas-overview) .
+    The response body contains a [Submission resource](get-product-data.md#submission-resource) which includes the ID of the submission, the shared access signature (SAS) URI for uploading the product (driver) package for the submission to Azure Blob Storage. [!NOTE] > A SAS URI provides access to a secure resource in Azure storage without requiring account keys. For background information about SAS URIs and their use with Azure Blob Storage, see [Shared Access Signatures, Part 1: Understanding the SAS model](/azure/storage/common/storage-sas-overview)  and [Shared Access Signatures, Part 2: Create and use a SAS with Blob storage](/azure/storage/common/storage-sas-overview) .
 
-5. **Upload your package** to the Azure Blob storage at the location specified by the SAS URI in the previous step.
-The following C# code example demonstrates how to upload a package to Azure Blob storage using the [CloudBlockBlob](/dotnet/api/microsoft.windowsazure.storage.blob.cloudblockblob)  class in the Azure Storage Client Library for .NET. This example assumes that the package has already been written to a stream object.
+5. **Upload your package** to the Azure Blob Storage at the location specified by the SAS URI in the previous step.
+The following C# code example demonstrates how to upload a package to Azure Blob Storage using the [CloudBlockBlob](/dotnet/api/microsoft.azure.storage.blob.cloudblockblob/) class in the Azure Storage Client Library for .NET. This example assumes that the package has already been written to a stream object.
 
     ```json
     string sasUrl = "https://productingestionbin1.blob.core.windows.net/ingestion/26920f66-b592-4439-9a9d-fb0f014902ec?sv=2014-02-14&sr=b&sig=usAN0kNFNnYE2tGQBI%2BARQWejX1Guiz7hdFtRhyK%2Bog%3D&se=2016-06-17T20:45:51Z&sp=rwl";
@@ -68,7 +68,7 @@ The following C# code example demonstrates how to upload a package to Azure Blob
     https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}
     ```
 
-    To confirm the submission status, review the *commitStatus* value in the response body. This value should change from *commitReceived* to *commitCompleted* if the request succeeds or to *commitFailed* if there are errors in the request. If there are errors, the *error* field contains further details about the error.
+    To confirm the submission status, review the **commitStatus** value in the response body. This value should change from **CommitReceived** to **CommitComplete** if the request succeeds or to **CommitFailed** if there are errors in the request. If there are errors, the *error* field contains further details about the error.
 
    >[!NOTE]
    >The main Search page refreshes about every 10 minutes. To view all of your results as you create them, click **Driver List Page (all)**, at the top of the **Drivers** page of the Partner Center. Although the page takes some time to process and load if you have a lot of submissions, both successful and unsuccessful submissions should be listed when it does load. For more info, see [Find a hardware submission](./find-hardware-submission.md).

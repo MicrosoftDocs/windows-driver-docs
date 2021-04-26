@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Pin
 description: KSPROPSETID\_Pin
-ms.assetid: a74a9cb2-2809-4e03-95da-71eeb5f079e9
 ms.date: 06/26/2020
 ms.localizationpriority: medium
 ---

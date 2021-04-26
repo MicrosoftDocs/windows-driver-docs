@@ -1,7 +1,6 @@
 ---
 title: Processing with Busy Present Queues
 description: Processing with Busy Present Queues
-ms.assetid: 5fce137b-001c-49f6-85ad-94c9eead9aa0
 keywords:
 - busy present queues WDK DirectX 9.0
 - present queues WDK DirectX 9.0
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_processing_with_busy_present_queues_gg"></span><span id="DDK_PROCESSING_WITH_BUSY_PRESENT_QUEUES_GG"></span>
 
 
-A DirectX 9.0 version driver must return the DDERR\_WASSTILLDRAWING value from a call to its [*DdFlip*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function if the runtime passed the DDFLIP\_DONOTWAIT flag in the **dwFlags** member of the [**DD\_FLIPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_flipdata) structure and the driver is unable to schedule a presentation, for example, if the present queue is full or if the driver is waiting for a vsync interval. The runtime calls the driver's *DdFlip* function with DDFLIP\_DONOTWAIT set if an application called the **IDirect3DSwapChain9::Present** method with the D3DPRESENT\_DONOTWAIT flag set. If the driver cannot schedule a presentation, its *DdFlip* function returns DDERR\_WASSTILLDRAWING in the **ddRVal** member of DD\_FLIPDATA. The application's **Present** method in turn returns DDERR\_WASSTILLDRAWING, which lets the application perform other processing.
+A DirectX 9.0 version driver must return the DDERR\_WASSTILLDRAWING value from a call to its [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function if the runtime passed the DDFLIP\_DONOTWAIT flag in the **dwFlags** member of the [**DD\_FLIPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_flipdata) structure and the driver is unable to schedule a presentation, for example, if the present queue is full or if the driver is waiting for a vsync interval. The runtime calls the driver's *DdFlip* function with DDFLIP\_DONOTWAIT set if an application called the **IDirect3DSwapChain9::Present** method with the D3DPRESENT\_DONOTWAIT flag set. If the driver cannot schedule a presentation, its *DdFlip* function returns DDERR\_WASSTILLDRAWING in the **ddRVal** member of DD\_FLIPDATA. The application's **Present** method in turn returns DDERR\_WASSTILLDRAWING, which lets the application perform other processing.
 
 The D3DPRESENT\_DONOTWAIT flag is new for DirectX 9.0. The DDFLIP\_DONOTWAIT flag has been available since DirectX 7.0. If a DirectX 7.0 application were to set DDFLIP\_DONOTWAIT in a call to the **IDirectDrawSurface7::Flip** method, a DirectX 7.0 or later driver's *DdFlip* function would receive the DDFLIP\_DONOTWAIT flag.
 

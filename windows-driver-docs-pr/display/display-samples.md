@@ -1,7 +1,6 @@
 ---
 title: Display Samples
 description: Display Samples
-ms.assetid: 4595369c-20fa-4c8d-ad1d-aada97ab9fc2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -63,7 +62,7 @@ Windows Server 2003
 Windows XP</td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
-<td align="left"><p>Demonstrates how to implement the <a href="https://docs.microsoft.com/windows-hardware/drivers/display/cpixel-support-methods-for-lightweight-mip-maps" data-raw-source="[CPixel](./cpixel-support-methods-for-lightweight-mip-maps.md)">CPixel</a> class.</p></td>
+<td align="left"><p>Demonstrates how to implement the <a href="/windows-hardware/drivers/display/cpixel-support-methods-for-lightweight-mip-maps" data-raw-source="[CPixel](./cpixel-support-methods-for-lightweight-mip-maps.md)">CPixel</a> class.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mirror - Mirror driver for mirroring GDI content</p></td>
@@ -107,8 +106,6 @@ Windows Vista</td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

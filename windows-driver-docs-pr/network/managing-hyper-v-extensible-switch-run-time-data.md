@@ -1,7 +1,6 @@
 ---
 title: Managing Hyper-V Extensible Switch Run-Time Data
 description: Managing Hyper-V Extensible Switch Run-Time Data
-ms.assetid: 08A353F5-D8CB-4645-9337-8169D302F6F2
 ms.date: 12/04/2018
 ms.localizationpriority: medium
 ---
@@ -39,7 +38,7 @@ If the extension has run-time port data to save, it must follow these guidelines
 1.  The extension sets the **ExtensionId** member to the GUID value that uniquely identifies the driver.
 2.  The extension sets the **ExtensionFriendlyName** member to the name of the driver.
 
-    **Note**  The NDIS\_SWITCH\_EXTENSION\_FRIENDLYNAME data type is type-defined by the [**IF\_COUNTED\_STRING**](/windows/desktop/api/ifdef/ns-ifdef-_if_counted_string_lh) structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the **Length** member of this structure. If the string is NULL-terminated, the **Length** member must not include the terminating NULL character.     
+    **Note**  The NDIS\_SWITCH\_EXTENSION\_FRIENDLYNAME data type is type-defined by the [**IF\_COUNTED\_STRING**](/windows/win32/api/ifdef/ns-ifdef-if_counted_string_lh) structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the **Length** member of this structure. If the string is NULL-terminated, the **Length** member must not include the terminating NULL character.     
 
 3.  If a feature class is associated with the saved run-time data, the extension sets the **FeatureClassId** with the GUID that uniquely identifies the class.
 
@@ -53,7 +52,7 @@ OID method requests of [OID\_SWITCH\_NIC\_SAVE](./oid-switch-nic-save.md) are ul
 
 ### Handling the OID\_SWITCH\_NIC\_SAVE\_COMPLETE Request
 
-When a Hyper-V child partition that has a network adapter connection to an extensible switch port is paused or its state is being saved, the Hyper-V extensible switch interface is notified. This causes the protocol edge of the extensible switch to issue an object identifier (OID) method request of [OID\_SWITCH\_NIC\_SAVE](./oid-switch-nic-save.md) down the extensible switch driver stack. For more information about this procedure, see [Handling the OID\_SWITCH\_NIC\_SAVE Request]().
+When a Hyper-V child partition that has a network adapter connection to an extensible switch port is paused or its state is being saved, the Hyper-V extensible switch interface is notified. This causes the protocol edge of the extensible switch to issue an object identifier (OID) method request of [OID\_SWITCH\_NIC\_SAVE](./oid-switch-nic-save.md) down the extensible switch driver stack.
 
 When every Hyper-V extensible switch extension has saved its run-time data, the protocol edge of the extensible switch notifies underlying extensions that the save operation has completed. The protocol edge does this by issuing an OID set request of [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](./oid-switch-nic-save-complete.md) down the extensible switch driver stack.
 

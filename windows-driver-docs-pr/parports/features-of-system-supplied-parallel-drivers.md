@@ -1,7 +1,6 @@
 ---
 title: Features of System-Supplied Parallel Drivers
 description: Features of System-Supplied Parallel Drivers
-ms.assetid: 6d579a88-4608-4333-9789-e10c562fc644
 keywords:
 - system-supplied parallel drivers WDK , about system-supplied parallel drivers
 - Parclass driver
@@ -29,13 +28,13 @@ Windows 2000 includes the following drivers:
 
 -   *Parport* is the parallel port function driver. The executable image of Parport is *parport.sys*.
 
-The operation of Parclass and Parport is closely connected through [internal device control requests for parallel ports](/windows-hardware/drivers/ddi/index) and [parallel port callback routines](/windows-hardware/drivers/ddi/index).
+The operation of Parclass and Parport is closely connected through [Internal Device Control Requests for Parallel Ports](/windows-hardware/drivers/ddi/parallel) and [parallel port callback routines](/windows-hardware/drivers/ddi/index).
 
 In Windows XP and later, Parclass is removed, and Parport provides the function of both the parallel port function driver and the parallel port bus driver. The executable image of Parport in Windows XP is *parport.sys*.
 
 The system-supplied function driver for parallel ports creates a functional device object (FDO) that represents each parallel port enumerated in the system. The system-supplied bus driver for parallel ports creates a physical device object (PDO) that represents each parallel device that the bus driver enumerates on a port. Clients, for example [vendor-supplied parallel drivers](vendor-supplied-parallel-drivers.md), operate a parallel device through the interfaces provided by a parallel device's PDO and the FDO of the device's parent port.
 
-Except for minor operational differences described throughout the parallel documentation, the [client interfaces to system-supplied parallel drivers](/windows-hardware/drivers/ddi/index) is the same in Windows 2000 as in Windows XP and later.
+Except for minor operational differences described throughout the parallel documentation, the [client interfaces to system-supplied parallel drivers](/windows-hardware/drivers/ddi/_parports/) is the same in Windows 2000 as in Windows XP and later.
 
 The system-supplied parallel drivers support:
 
@@ -85,7 +84,7 @@ For more information about how to operate parallel ports and devices attached to
 
 [Vendor-Supplied Parallel Drivers](vendor-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/index)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/_parports)
 
 For information about parallel port and device standards, see the following specifications:
 

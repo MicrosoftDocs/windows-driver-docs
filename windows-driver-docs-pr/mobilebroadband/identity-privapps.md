@@ -1,7 +1,6 @@
 ---
 title: Identity (SoftwareInfo - priviliged applications)
 description: Identity (SoftwareInfo - priviliged applications)
-ms.assetid: 405ec2ee-ea4a-468b-b75b-365ffce03cdb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

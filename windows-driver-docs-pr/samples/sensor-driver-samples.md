@@ -1,7 +1,6 @@
 ---
 title: Sensor driver samples
 description: The driver samples in this directory provide a starting point for writing a custom sensor driver for your device.
-ms.assetid: D3B69433-6427-40B2-B3A1-8F48E014BE63
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

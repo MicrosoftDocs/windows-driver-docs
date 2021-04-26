@@ -1,7 +1,6 @@
 ---
 title: Remote Targets
 description: Remote Targets
-ms.assetid: ed7ea3dc-07d1-481c-90e0-7f0b0e77ad42
 keywords: ["Debugger Engine API, targets, remote", "Debugger Engine API, debugging servers", "Debugger Engine API, process servers", "Debugger Engine API, kernel connection servers", "Debugger Engine API, smart clients"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

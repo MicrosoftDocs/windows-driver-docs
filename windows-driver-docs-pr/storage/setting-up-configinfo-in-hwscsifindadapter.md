@@ -1,7 +1,6 @@
 ---
 title: Setting up ConfigInfo in HwScsiFindAdapter
 description: Setting up ConfigInfo in HwScsiFindAdapter
-ms.assetid: f9c5d23d-feab-4cc4-9cd9-29c21d4fdf0b
 keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter

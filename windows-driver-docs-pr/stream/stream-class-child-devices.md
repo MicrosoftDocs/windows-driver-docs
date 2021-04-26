@@ -1,7 +1,6 @@
 ---
 title: Stream Class Child Devices
 description: Stream Class Child Devices
-ms.assetid: 2885a77d-5e39-4730-b715-99f0a426f273
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , child devices
 - streaming minidrivers WDK Windows 2000 Kernel , child devices

@@ -1,7 +1,6 @@
 ---
 title: Querying for the Display of a Custom UI
 description: Querying for the Display of a Custom UI
-ms.assetid: 89f39281-db97-4cbe-8753-43ab30d840c8
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , querying
 - querying custom UI display
@@ -34,7 +33,7 @@ Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](/windows-hardware/drivers/ddi/wlani
 
 -   The class ID (CLSID) of **IWizardExtension** COM interface that is implemented within the Native 802.11 IHV UI Extensions DLL. The CLSID is used to request a specific custom UI that is supported by the DLL.
 
-    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607).
+    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](/windows/win32/api/shobjidl/nn-shobjidl-iwizardextension).
 
 -   A buffer that contains data in a proprietary format that is defined by the independent hardware vendor (IHV) and processed by the specified **IWizardExtension** COM interface. For example, the buffer could contain the default values that are displayed within the custom UI.
 

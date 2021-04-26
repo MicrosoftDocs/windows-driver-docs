@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_VPMUX
 description: KSCATEGORY_VPMUX
-ms.assetid: d63ecb2b-f1f7-4f02-a82e-4ed17d1f83d9
 keywords: ["KSCATEGORY_VPMUX Device and Driver Installation"]
 topic_type:
 - apiref

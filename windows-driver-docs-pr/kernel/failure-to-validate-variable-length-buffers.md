@@ -1,7 +1,6 @@
 ---
 title: Failure to Validate Variable-Length Buffers
 description: Failure to Validate Variable-Length Buffers
-ms.assetid: 0cc4be22-8197-421a-a5a6-2e7b89a79a38
 keywords: ["input buffers WDK kernel", "variable-length input buffers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

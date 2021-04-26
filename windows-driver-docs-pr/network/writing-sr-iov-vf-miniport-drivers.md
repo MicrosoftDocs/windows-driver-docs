@@ -1,7 +1,6 @@
 ---
 title: Writing SR-IOV VF Miniport Drivers Overview
 description: Writing SR-IOV VF Miniport Drivers Overview
-ms.assetid: 15CA65DD-AAAB-4EDA-8743-8A3E63E50190
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

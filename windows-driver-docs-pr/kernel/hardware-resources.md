@@ -1,7 +1,6 @@
 ---
 title: Hardware Resources
 description: Hardware Resources
-ms.assetid: c7a6997b-34f9-4dd9-b384-2321a8b5ce54
 keywords: ["resource descriptors WDK PnP", "PnP WDK kernel , hardware resources", "Plug and Play WDK kernel , hardware resources", "resource requirements lists WDK PnP", "resource lists WDK PnP", "assigned resources WDK PnP", "requirements lists WDK PnP", "registry WDK PnP", "logical configurations WDK PnP", "boot configurations WDK PnP", "forced configurations WDK PnP", "filtered configurations WDK PnP", "override configurations WDK PnP", "configuration types WDK PnP", "allocated configurations WDK PnP", "basic configurations WDK PnP", "Hardware Resources"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -27,7 +26,7 @@ When the PnP manager assigns resources to a device, it keeps track of these assi
 
 Kernel-mode code specifies resource lists by using [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) structures (either as input to system routines or in response to IRPs). User-mode code specifies resource lists using [PnP configuration manager structures](/previous-versions/ff549718(v=vs.85)) as input to [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)).
 
-The PnP manager stores resource requirements lists and resource lists in the registry, where they can be viewed by using Regedit.exe. Drivers can access these lists indirectly through [Plug and Play routines](/windows-hardware/drivers/ddi/index) and [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md). User-mode applications can use [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)). (Drivers and applications must not directly access these lists using registry functions because the storage format is subject to change in a future release.)
+The PnP manager stores resource requirements lists and resource lists in the registry, where they can be viewed by using Regedit.exe. Drivers can access these lists indirectly through Plug and Play routines and [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md). User-mode applications can use [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)). (Drivers and applications must not directly access these lists using registry functions because the storage format is subject to change in a future release.)
 
 ### <a href="" id="ddk-logical-configurations-kg"></a>Logical Configurations
 
@@ -57,7 +56,7 @@ A resource list identifying resources currently in use by a device instance. Onl
 
 Device drivers are responsible for determining a PnP-compatible device's basic configuration, filtered configuration, and boot configuration, and for returning that information in response to IRPs sent by the PnP manager. (For more information, see [Adding a PnP Device to a Running System](adding-a-pnp-device-to-a-running-system.md).) Driver installation software can create override configurations, forced configurations, and, for non-PnP devices, boot configurations. The PnP manager maintains each device instance's allocated configuration.
 
-A priority is assigned to each configuration when it is created. If the PnP manager finds that a device instance has been assigned several logical configurations of the same type, it attempts to use the one with the highest priority first. If that configuration results in resource conflicts, it tries the configuration with the next lower priority. (For a list of configuration priorities, see [**CM\_Add\_Empty\_Log\_Conf**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_add_empty_log_conf).)
+A priority is assigned to each configuration when it is created. If the PnP manager finds that a device instance has been assigned several logical configurations of the same type, it attempts to use the one with the highest priority first. If that configuration results in resource conflicts, it tries the configuration with the next lower priority. (For a list of configuration priorities, see [**CM\_Add\_Empty\_Log\_Conf**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_add_empty_log_conf).)
 
  
 

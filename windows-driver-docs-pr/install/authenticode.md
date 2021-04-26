@@ -1,7 +1,6 @@
 ---
 title: Authenticode Digital Signatures
 description: Authenticode Digital Signatures
-ms.assetid: b4cddf64-dc1a-47b7-803d-afb1e175c9d5
 keywords:
 - Authenticode WDK driver signing
 - driver signing WDK , Authenticode
@@ -27,9 +26,7 @@ Authenticode code signing does not alter the executable portions of a driver. In
 
 -   With digitally-signed [catalog files](catalog-files.md) (*.cat*), the signing process requires generating a file hash value from the contents of each file within a [driver package](driver-packages.md). This hash value is included in a catalog file. The catalog file is then signed with an embedded signature. In this way, catalog files are a type of detached signature.
 
-**Note**  The [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has test categories for a variety of device types. The list of test categories can be found at [HLK API Reference](/windows-hardware/test/hlk/api/hlk-api-reference). If a test category for the device type is included in this list, the software publisher should obtain a [WHQL release signature](whql-release-signature.md) for the [driver package](driver-packages.md) However, if the HCK does not have a test program for the device type, the software publisher can sign the driver package by using the Microsoft Authenticode technology. For more information about this process, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
-
- 
+**Note**  The [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) has test categories for a variety of device types. The list of test categories can be found at [HLK API Reference](/windows-hardware/test/hlk/api/hlk-api-reference). If a test category for the device type is included in this list, the software publisher should obtain a [WHQL release signature](whql-release-signature.md) for the [driver package](driver-packages.md) However, if the HCK does not have a test program for the device type, the software publisher can sign the driver package by using the Microsoft Authenticode technology. For more information about this process, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_BROADCAST_FRAMES_RCV
 description: As a query, the OID_GEN_BROADCAST_FRAMES_RCV OID specifies the number of broadcast packets that are received without errors.
-ms.assetid: c9b09318-a12e-4429-b05c-fee525ab33f5
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_BROADCAST_FRAMES_RCV Network Drivers Starting with Windows Vista

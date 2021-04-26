@@ -1,7 +1,6 @@
 ---
 title: Coexistence with other File System Filter Drivers
 description: Coexistence with other File System Filter Drivers
-ms.assetid: 595f9fa1-0ed7-4f99-a026-bf00bbf8bf33
 keywords:
 - security WDK file systems , coexistence
 - coexistence WDK file systems

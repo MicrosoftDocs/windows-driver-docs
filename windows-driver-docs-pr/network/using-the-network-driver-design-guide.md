@@ -1,7 +1,6 @@
 ---
 title: Navigating the Network Driver Design Guide
 description: Navigating the Network Driver Design Guide
-ms.assetid: 8d9cbf3c-5eec-4409-ab4c-595bb921832d
 keywords:
 - network drivers WDK , documentation
 ms.date: 04/20/2017
@@ -58,7 +57,7 @@ An *intermediate driver* interfaces between upper-level protocol drivers and min
 
 Intermediate drivers can also manage hardware when they are configured as a *miniport-intermediate driver*.
 
-For more information about the Windows network architecture and programming considerations, see [Network Architecture for Kernel-Mode Drivers](network-architecture-for-kernel-mode-drivers.md) and [Network Driver Programming Considerations](network-driver-programming-considerations.md).
+For more information about the Windows network architecture and programming considerations, see [Network Architecture for Kernel-Mode Drivers](windows-network-architecture-and-the-osi-model.md) and [Network Driver Programming Considerations](network-driver-programming-considerations.md).
 
 For more information about network INF files, which are used to install network components, see [Installing Network Components](installing-network-components.md). If your network driver requires a notify object--for example, to control bindings--also see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
@@ -77,12 +76,12 @@ The following additional driver models are available to use particular hardware 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Scalable Networking](/windows-hardware/drivers/ddi/_netvista/)">Scalable Networking</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Scalable Networking](/windows-hardware/drivers/ddi/_netvista/)">Scalable Networking</a></p></td>
 <td align="left"><p>Networking technologies that support the offload of tasks to a network adapter, such as the following:</p>
 <ul>
 <li><p><a href="header-data-split.md" data-raw-source="[Header-Data Split](header-data-split.md)">Header-Data Split</a>, a service that splits the header and the data in received Ethernet frames into separate buffers.</p></li>
-<li><p><a href="ndis-receive-side-scaling2.md" data-raw-source="[Receive Side Scaling](./receive-side-scaling-version-2-rssv2-.md)">Receive Side Scaling</a>, a network driver technology that improves network performance on multiprocessor systems.</p></li>
-<li><p><a href="ndis-tcp-chimney-offload.md" data-raw-source="[TCP Chimney Offload](/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload)">TCP Chimney Offload</a>, an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
+<li><p><a href="/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-" data-raw-source="[Receive Side Scaling](./receive-side-scaling-version-2-rssv2-.md)">Receive Side Scaling</a>, a network driver technology that improves network performance on multiprocessor systems.</p></li>
+<li><p><a href="/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload" data-raw-source="[TCP Chimney Offload](/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload)">TCP Chimney Offload</a>, an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
 <li><p><a href="tcp-ip-offload.md" data-raw-source="[TCP/IP Offload](tcp-ip-offload.md)">TCP/IP Offload</a>, an offload of tasks or connections to a network adapter that has the appropriate capabilities.</p></li>
 <li><p><a href="overview-of-network-direct-kernel-provider-interface--ndkpi-.md" data-raw-source="[Network Direct Kernel Provider Interface (NDKPI)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md)">Network Direct Kernel Provider Interface (NDKPI)</a>, which enables kernel-mode Windows components, such as SMB server and client, to use remote direct memory access (RDMA) functionality that is provided by independent hardware vendors (IHVs).</p></li>
 <li><p><a href="network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md" data-raw-source="[Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>, which makes it possible to use Generic Routing Encapsulation (GRE)-encapsulated packets with:</p>
@@ -104,15 +103,15 @@ The following additional driver models are available to use particular hardware 
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Wireless Networking](/windows-hardware/drivers/ddi/_netvista/)">Wireless Networking</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Wireless Networking](/windows-hardware/drivers/ddi/_netvista/)">Wireless Networking</a></p></td>
 <td align="left"><p>Networking capabilities that include Native 802.11 Wireless LAN.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Network Module Registrar](/windows-hardware/drivers/ddi/_netvista/)">Network Module Registrar</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Network Module Registrar](/windows-hardware/drivers/ddi/_netvista/)">Network Module Registrar</a></p></td>
 <td align="left"><p>A system facility that allows a driver to attach network modules to one another.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/)">Winsock Kernel</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/)">Winsock Kernel</a></p></td>
 <td align="left"><p>A kernel-mode Network Programming Interface (NPI).</p></td>
 </tr>
 <tr class="even">
@@ -120,7 +119,7 @@ The following additional driver models are available to use particular hardware 
 <td align="left"><p>A set of utility functions that enable drivers to retrieve and modify information about the network configuration of the local computer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="windows-filtering-platform-callout-drivers2.md" data-raw-source="[Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)">Windows Filtering Platform Callout Drivers</a></p></td>
+<td align="left"><p><a href="introduction-to-windows-filtering-platform-callout-drivers.md" data-raw-source="[Windows Filtering Platform Callout Drivers](introduction-to-windows-filtering-platform-callout-drivers.md)">Windows Filtering Platform Callout Drivers</a></p></td>
 <td align="left"><p>A kernel-mode interface that enables deep inspection, packet modification, stream modification, and logging of network data.</p></td>
 </tr>
 <tr class="even">
@@ -128,13 +127,11 @@ The following additional driver models are available to use particular hardware 
 <td align="left"><p>A type of network connection that uses Windows Sockets Direct to support a high-performance, connection-oriented network.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff570659(v=vs.85)" data-raw-source="[Remote NDIS (RNDIS)](/previous-versions/ff570659(v=vs.85))">Remote NDIS (RNDIS)</a></p></td>
+<td align="left"><p><a href="/previous-versions/ff570659(v=vs.85)" data-raw-source="[Remote NDIS (RNDIS)](/previous-versions/ff570659(v=vs.85))">Remote NDIS (RNDIS)</a></p></td>
 <td align="left"><p>A class specification that defines a system-provided, bus-independent message set over a USB bus.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

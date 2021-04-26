@@ -1,7 +1,6 @@
 ---
 title: Implementing WMI
 description: Implementing WMI
-ms.assetid: 5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9
 keywords: ["WMI WDK kernel", "Windows Management Instrumentation WDK kernel", "extensions WDK WMI", "measurement data WDK WMI", "instrumentation data WDK WMI", "user-mode WMI WDK", "WMI WDK user-mode", "Windows Management Instrumentation WDK user-mode", "kernel-mode drivers WDK , WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ This section describes kernel-mode Windows Management Instrumentation (WMI) exte
 
 For more information about the user-mode WMI API, refer to [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page) in the Windows SDK.
 
-If you are implementing a KMDF-based driver, refer to [Supporting WMI in Framework-Based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-wmi-in-kmdf-drivers).
+If you are implementing a KMDF-based driver, refer to [Supporting WMI in Framework-Based Drivers](../wdf/introduction-to-wmi-for-kmdf-drivers.md).
 
 This section includes the following information about kernel-mode WMI:
 
@@ -46,6 +45,4 @@ This section includes the following information about kernel-mode WMI:
 [WMI Event Tracing](wmi-event-tracing.md)
 
 [Testing and Troubleshooting WMI Driver Support](general-techniques-for-testing-wmi-driver-support.md)
-
- 
 

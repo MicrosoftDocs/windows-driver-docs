@@ -1,7 +1,6 @@
 ---
 title: TVOT\_COMBOBOX
 description: TVOT\_COMBOBOX
-ms.assetid: 186acda6-f87c-4e0f-95b8-d76823354cfd
 keywords: ["TVOT_COMBOBOX Print Devices"]
 topic_type:
 - apiref

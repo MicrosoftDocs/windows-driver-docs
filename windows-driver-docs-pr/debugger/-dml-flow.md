@@ -1,7 +1,6 @@
 ---
 title: .dml_flow (Unasemmble with Links)
 description: The .dml_flow command displays a disassembled code block and provides links that you can use to construct a code flow graph.
-ms.assetid: 32B50228-05A5-4BA7-88B1-54D4E502EB85
 keywords: [".dml_flow (Unasemmble with Links) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

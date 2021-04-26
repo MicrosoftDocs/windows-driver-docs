@@ -1,7 +1,6 @@
 ---
 title: htrace
 description: The htrace extension displays stack trace information for one or more handles.
-ms.assetid: 1da92c8d-8f77-4b30-a908-bcc33ad05cce
 keywords: ["handle, htrace extension", "htrace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

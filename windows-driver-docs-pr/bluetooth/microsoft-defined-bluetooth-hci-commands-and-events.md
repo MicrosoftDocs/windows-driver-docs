@@ -1,7 +1,6 @@
 ---
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.assetid: 68E34B92-155B-401E-8D90-5BD1AF036B4D
 ms.date: 02/07/2018
 ms.localizationpriority: medium
 ---
@@ -132,8 +131,9 @@ The controller shall always complete this command promptly with a Command Comple
 |0x00000000&#160;00000010 |Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br/>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440).|
 |0x00000000 00000020|Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities.|
 |0x00000000 00000040|Reserved.|
-|0x00000000 00000080|Controller supports the RSSI monitoring of LE extended advertisements without sampling.|
-|0xFFFFFFFF&#160;FFFFFFF0|Bits reserved for future definition. Must be zero.|
+|0x00000000 00000080|Reserved.|
+|0x00000000 00000100|Reserved.|
+|0xFFFFFFFF&#160;FFFFFE00|Bits reserved for future definition. Must be zero.|
 
 **Microsoft_event_prefix_length** (1 octet):
 
@@ -533,7 +533,7 @@ HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable sets the state of the advertiseme
 |---|---|---|---|
 |HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable|Chosen base code |<ul><li>Subcommand_opcode</li><li>Enable</li>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
 
-If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing white list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
+If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing allow list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
 
 If _Enable_ is set to 0x01, this command enables all filters that were set with a previously-issued [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) command. The controller shall reject an HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable command if it does not toggle the filter state:
 
@@ -555,7 +555,7 @@ Enable (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x00| Revert to current white list behavior, but continue monitoring devices based on the _Condition_s from  [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) commands.|
+|0x00| Revert to current allow list behavior, but continue monitoring devices based on the _Condition_s from  [HCI_VS_MSFT_LE_Monitor_Advertisement](#hci_vs_msft_le_monitor_advertisement) commands.|
 |0x01|Enable all issued HCI_VS_MSFT_LE_Monitor_Advertisement commands on the controller.|
 
 #### Return_parameter

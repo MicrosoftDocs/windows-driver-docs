@@ -1,7 +1,6 @@
 ---
 title: High Definition Audio DDI
 description: High Definition Audio DDI
-ms.assetid: d471777c-0002-4caa-a06e-c58e449b7678
 keywords:
 - HD Audio
 - High Definition Audio (HD Audio)

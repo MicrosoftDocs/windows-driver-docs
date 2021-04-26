@@ -1,7 +1,6 @@
 ---
 title: Context monitoring
 description: A monitored fence object is an advanced form of fence synchronization which allows either a CPU core or a graphics processing unit (GPU) engine to signal or wait on a particular fence object, allowing for very flexible synchronization between GPU engines, or across CPU cores and GPU engines.
-ms.assetid: B593FC24-3F8B-4C8A-BBF9-8EF88B748536
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ Upon creation, the graphics kernel returns a fence object composed of the follow
 </tr>
 <tr class="even">
 <td align="left"><p><span id="FenceValueCPUVirtualAddress"></span><span id="fencevaluecpuvirtualaddress"></span><span id="FENCEVALUECPUVIRTUALADDRESS"></span>FenceValueCPUVirtualAddress</p></td>
-<td align="left"><p>Read-only mapping of the fence value (64bits) for the CPU. This address is mapped WB (cacheable) from the point of view of the CPU on platforms supporting I/O coherency, UC (uncached) on other platforms. Allows the CPU to keep track of the fence progress by simply reading this memory location. The CPU is not allowed to write to this memory location. To signal the fence, the CPU is required to call the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromcpucb" data-raw-source="[&lt;em&gt;SignalSynchronizationObjectFromCpuCb&lt;/em&gt;](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromcpucb)"><em>SignalSynchronizationObjectFromCpuCb</em></a>.</p>
+<td align="left"><p>Read-only mapping of the fence value (64bits) for the CPU. This address is mapped WB (cacheable) from the point of view of the CPU on platforms supporting I/O coherency, UC (uncached) on other platforms. Allows the CPU to keep track of the fence progress by simply reading this memory location. The CPU is not allowed to write to this memory location. To signal the fence, the CPU is required to call the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromcpucb" data-raw-source="[&lt;em&gt;SignalSynchronizationObjectFromCpuCb&lt;/em&gt;](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromcpucb)"><em>SignalSynchronizationObjectFromCpuCb</em></a>.</p>
 <p>Adapters which support <em>IoMmu</em> should use this address for GPU access. The address is mapped as read-write in this case.</p></td>
 </tr>
 <tr class="odd">
@@ -78,6 +77,4 @@ A new [*SignalSynchronizationObjectFromCpuCb*](/windows-hardware/drivers/ddi/d3d
 
 
 A new [*WaitForSynchronizationObjectFromCpuCb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromcpucb) has been added to allow the CPU to wait on a monitored fence object. Two forms of wait operations are available. In the first form, the *WaitForSynchronizationObjectFromCpuCb* callback blocks until the wait has been satisfied. In the second form, *WaitForSynchronizationObjectFromCpuCb* takes a handle to a CPU event that will be signaled once the waiting condition has been satisfied.
-
- 
 

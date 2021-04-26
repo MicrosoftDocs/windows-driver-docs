@@ -1,7 +1,6 @@
 ---
 title: Initializing and Unloading a SAN Proxy Driver
 description: Initializing and Unloading a SAN Proxy Driver
-ms.assetid: 1c602f7d-a1c2-429a-a297-4290a7cbfd9f
 keywords:
 - proxy drivers WDK SANs , initializing
 - SAN proxy drivers WDK , initializing

@@ -1,7 +1,6 @@
 ---
 title: Retroactively Requiring Free-Threaded CalcPrivate DDIs
 description: Retroactively Requiring Free-Threaded CalcPrivate DDIs
-ms.assetid: a25fbe8e-737a-4b47-8293-7cf13ebc8ac2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Compressed Picture Decoding Set
 description: Compressed Picture Decoding Set
-ms.assetid: 7d6e2050-663e-4370-a210-1d319cfbde6d
 keywords:
 - compressed picture decoding set WDK DirectX VA
 ms.date: 04/20/2017

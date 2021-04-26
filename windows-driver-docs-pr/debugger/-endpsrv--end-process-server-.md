@@ -1,7 +1,6 @@
 ---
 title: .endpsrv (End Process Server)
 description: The .endpsrv command causes the current process server or KD connection server to close.
-ms.assetid: 3f8d0a85-f0f4-4c13-ab52-e4d99ba3599c
 keywords: [".endpsrv (End Process Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

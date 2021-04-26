@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY\_MULTIPLIER
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY\_MULTIPLIER along with KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY to control the frequency setting of the tuner node.
-ms.assetid: bca395b5-3993-42c0-880d-eb38d3b933bb
 keywords: ["KSPROPERTY_BDA_RF_TUNER_FREQUENCY_MULTIPLIER Streaming Media Devices"]
 topic_type:
 - apiref

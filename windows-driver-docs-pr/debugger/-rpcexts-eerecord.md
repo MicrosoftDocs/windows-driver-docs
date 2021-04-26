@@ -1,7 +1,6 @@
 ---
 title: rpcexts.eerecord
 description: The rpcexts.eerecord extension displays the contents of an extended error information record.
-ms.assetid: 3c861842-d3ac-4c7d-88e3-d00233189b74
 keywords: ["rpcexts.eerecord Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: usbkd._ehciregs
 description: The usbkd._ehciregs command displays the operational and root hub port status registers of a USB EHCI host controller.
-ms.assetid: BFD58E6B-BC51-4F2F-B597-8C815826F931
 keywords: ["usbkd._ehciregs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

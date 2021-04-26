@@ -1,7 +1,6 @@
 ---
 title: OID_PM_PROTOCOL_OFFLOAD_LIST
 description: As a query, overlying drivers can use the OID_PM_PROTOCOL_OFFLOAD_LIST OID to enumerate the protocol offloads that are set on an underlying network adapter.
-ms.assetid: 95ace77b-e583-4611-8460-af67b4d4805d
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_PROTOCOL_OFFLOAD_LIST Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: DMA Transactions and DMA Transfers
 description: DMA Transactions and DMA Transfers
-ms.assetid: afcbe756-1a45-410b-8260-2c2c611e6a70
 keywords:
 - DMA transactions WDK KMDF
 - DMA operations WDK KMDF , transactions

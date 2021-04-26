@@ -1,7 +1,6 @@
 ---
 title: Supporting Single-Pixel-Wide Antialiased Lines
 description: Supporting Single-Pixel-Wide Antialiased Lines
-ms.assetid: f1e0df18-25d8-4ebd-b920-5cfbe5acf096
 keywords:
 - single-pixel-wide lines WDK DirectX 9.0
 - alias single-pixel-wide lines WDK DirectX 9.0

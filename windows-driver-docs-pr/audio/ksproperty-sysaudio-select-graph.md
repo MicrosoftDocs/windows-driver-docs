@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH
 description: The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include an optional node in the graph that SysAudio builds for a pin instance on a virtual audio device.
-ms.assetid: 1107e20e-9ba8-4fda-8457-c357426a9cda
 keywords: ["KSPROPERTY_SYSAUDIO_SELECT_GRAPH Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include a
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph" data-raw-source="[&lt;strong&gt;SYSAUDIO_SELECT_GRAPH&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)"><strong>SYSAUDIO_SELECT_GRAPH</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph" data-raw-source="[&lt;strong&gt;SYSAUDIO_SELECT_GRAPH&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)"><strong>SYSAUDIO_SELECT_GRAPH</strong></a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
@@ -96,6 +95,4 @@ Requirements
 [**SYSAUDIO\_SELECT\_GRAPH**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)
 
 [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
- 
 

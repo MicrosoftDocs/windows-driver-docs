@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Porting Legacy Filter Drivers
 description: Guidelines for Porting Legacy Filter Drivers
-ms.assetid: 6dd9637e-e9b3-4434-996c-c3f8ce6584c4
 keywords:
 - filter manager WDK file system minifilter , porting legacy drivers
 - porting legacy filter drivers
@@ -73,18 +72,18 @@ The following table lists common operations in a legacy filter driver and how th
 </tr>
 <tr class="odd">
 <td align="left"><p>Pend operation in the preoperation callback routine</p></td>
-<td align="left"><p>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer" data-raw-source="[&lt;strong&gt;FltLockUserBuffer&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer)"><strong>FltLockUserBuffer</strong></a> as needed to ensure that any user buffers are properly locked so that they can be accessed in a worker thread.</p>
-<p>Queue the work to a worker thread by calling support routines such as <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatedeferredioworkitem" data-raw-source="[&lt;strong&gt;FltAllocateDeferredIoWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatedeferredioworkitem)"><strong>FltAllocateDeferredIoWorkItem</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuedeferredioworkitem" data-raw-source="[&lt;strong&gt;FltQueueDeferredIoWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuedeferredioworkitem)"><strong>FltQueueDeferredIoWorkItem</strong></a>.</p>
+<td align="left"><p>Call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer" data-raw-source="[&lt;strong&gt;FltLockUserBuffer&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer)"><strong>FltLockUserBuffer</strong></a> as needed to ensure that any user buffers are properly locked so that they can be accessed in a worker thread.</p>
+<p>Queue the work to a worker thread by calling support routines such as <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatedeferredioworkitem" data-raw-source="[&lt;strong&gt;FltAllocateDeferredIoWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatedeferredioworkitem)"><strong>FltAllocateDeferredIoWorkItem</strong></a> and <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuedeferredioworkitem" data-raw-source="[&lt;strong&gt;FltQueueDeferredIoWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuedeferredioworkitem)"><strong>FltQueueDeferredIoWorkItem</strong></a>.</p>
 <p>Return FLT_PREOP_PENDING from the preoperation callback routine.</p>
-<p>When ready to return the I/O operation to the filter manager, call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation" data-raw-source="[&lt;strong&gt;FltCompletePendedPreOperation&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation)"><strong>FltCompletePendedPreOperation</strong></a>.</p>
+<p>When ready to return the I/O operation to the filter manager, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation" data-raw-source="[&lt;strong&gt;FltCompletePendedPreOperation&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation)"><strong>FltCompletePendedPreOperation</strong></a>.</p>
 <p>See <a href="pending-an-i-o-operation-in-a-preoperation-callback-routine.md" data-raw-source="[Pending an I/O Operation in a Preoperation Callback Routine](pending-an-i-o-operation-in-a-preoperation-callback-routine.md)">Pending an I/O Operation in a Preoperation Callback Routine</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Pend operation in the postoperation callback routine</p></td>
-<td align="left"><p>In the preoperation callback routine, call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer" data-raw-source="[&lt;strong&gt;FltLockUserBuffer&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer)"><strong>FltLockUserBuffer</strong></a> to ensure that user buffers are properly locked so that they can be accessed in a worker thread.</p>
-<p>Queue the work to a worker thread by calling support routines such as <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocategenericworkitem" data-raw-source="[&lt;strong&gt;FltAllocateGenericWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocategenericworkitem)"><strong>FltAllocateGenericWorkItem</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuegenericworkitem" data-raw-source="[&lt;strong&gt;FltQueueGenericWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuegenericworkitem)"><strong>FltQueueGenericWorkItem</strong></a>.</p>
+<td align="left"><p>In the preoperation callback routine, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer" data-raw-source="[&lt;strong&gt;FltLockUserBuffer&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer)"><strong>FltLockUserBuffer</strong></a> to ensure that user buffers are properly locked so that they can be accessed in a worker thread.</p>
+<p>Queue the work to a worker thread by calling support routines such as <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocategenericworkitem" data-raw-source="[&lt;strong&gt;FltAllocateGenericWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocategenericworkitem)"><strong>FltAllocateGenericWorkItem</strong></a> and <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuegenericworkitem" data-raw-source="[&lt;strong&gt;FltQueueGenericWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueuegenericworkitem)"><strong>FltQueueGenericWorkItem</strong></a>.</p>
 <p>Return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the postoperation callback routine.</p>
-<p>When ready to return the I/O operation to the filter manager, call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpostoperation" data-raw-source="[&lt;strong&gt;FltCompletePendedPostOperation&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpostoperation)"><strong>FltCompletePendedPostOperation</strong></a>.</p>
+<p>When ready to return the I/O operation to the filter manager, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpostoperation" data-raw-source="[&lt;strong&gt;FltCompletePendedPostOperation&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpostoperation)"><strong>FltCompletePendedPostOperation</strong></a>.</p>
 <p>See <a href="pending-an-i-o-operation-in-a-postoperation-callback-routine.md" data-raw-source="[Pending an I/O Operation in a Postoperation Callback Routine](pending-an-i-o-operation-in-a-postoperation-callback-routine.md)">Pending an I/O Operation in a Postoperation Callback Routine</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -94,14 +93,14 @@ The following table lists common operations in a legacy filter driver and how th
 </tr>
 <tr class="even">
 <td align="left"><p>Complete the operation in the preoperation callback routine</p></td>
-<td align="left"><p>Set the final operation status and information in the <strong>IoStatus</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
+<td align="left"><p>Set the final operation status and information in the <strong>IoStatus</strong> member of the <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
 <p>Return FLT_PREOP_COMPLETE from the preoperation callback routine.</p>
 <p>See <a href="completing-an-i-o-operation-in-a-preoperation-callback-routine.md" data-raw-source="[Completing an I/O Operation in a Preoperation Callback Routine](completing-an-i-o-operation-in-a-preoperation-callback-routine.md)">Completing an I/O Operation in a Preoperation Callback Routine</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Complete the operation after it has been pended in the preoperation callback routine</p></td>
-<td align="left"><p>Set the final operation status and information in the <strong>IoStatus</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
-<p>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation" data-raw-source="[&lt;strong&gt;FltCompletePendedPreOperation&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation)"><strong>FltCompletePendedPreOperation</strong></a> from the worker thread processing the I/O operation, passing FLT_PREOP_COMPLETE as the <em>CallbackStatus</em> parameter.</p>
+<td align="left"><p>Set the final operation status and information in the <strong>IoStatus</strong> member of the <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
+<p>Call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation" data-raw-source="[&lt;strong&gt;FltCompletePendedPreOperation&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation)"><strong>FltCompletePendedPreOperation</strong></a> from the worker thread processing the I/O operation, passing FLT_PREOP_COMPLETE as the <em>CallbackStatus</em> parameter.</p>
 <p>See <a href="completing-an-i-o-operation-in-a-preoperation-callback-routine.md" data-raw-source="[Completing an I/O Operation in a Preoperation Callback Routine](completing-an-i-o-operation-in-a-preoperation-callback-routine.md)">Completing an I/O Operation in a Preoperation Callback Routine</a>.</p></td>
 </tr>
 <tr class="even">
@@ -111,7 +110,7 @@ The following table lists common operations in a legacy filter driver and how th
 </tr>
 <tr class="odd">
 <td align="left"><p>Do completion work at safe IRQL</p></td>
-<td align="left"><p>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdocompletionprocessingwhensafe" data-raw-source="[&lt;strong&gt;FltDoCompletionProcessingWhenSafe&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdocompletionprocessingwhensafe)"><strong>FltDoCompletionProcessingWhenSafe</strong></a> from the postoperation callback routine.</p>
+<td align="left"><p>Call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdocompletionprocessingwhensafe" data-raw-source="[&lt;strong&gt;FltDoCompletionProcessingWhenSafe&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdocompletionprocessingwhensafe)"><strong>FltDoCompletionProcessingWhenSafe</strong></a> from the postoperation callback routine.</p>
 <p>See <a href="ensuring-that-completion-processing-is-performed-at-safe-irql.md" data-raw-source="[Ensuring that Completion Processing is Performed at Safe IRQL](ensuring-that-completion-processing-is-performed-at-safe-irql.md)">Ensuring that Completion Processing is Performed at Safe IRQL</a>.</p></td>
 </tr>
 <tr class="even">
@@ -122,8 +121,8 @@ The following table lists common operations in a legacy filter driver and how th
 </tr>
 <tr class="odd">
 <td align="left"><p>Fail a successful create operation</p></td>
-<td align="left"><p>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen" data-raw-source="[&lt;strong&gt;FltCancelFileOpen&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen)"><strong>FltCancelFileOpen</strong></a> from the postoperation callback routine for the create operation.</p>
-<p>Set an appropriate error NTSTATUS value in the <strong>IoStatus</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
+<td align="left"><p>Call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen" data-raw-source="[&lt;strong&gt;FltCancelFileOpen&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen)"><strong>FltCancelFileOpen</strong></a> from the postoperation callback routine for the create operation.</p>
+<p>Set an appropriate error NTSTATUS value in the <strong>IoStatus</strong> member of the <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
 <p>Return FLT_POSTOP_FINISHED_PROCESSING.</p>
 <p>See <a href="failing-an-i-o-operation-in-a-postoperation-callback-routine.md" data-raw-source="[Failing an I/O Operation in a Postoperation Callback Routine](failing-an-i-o-operation-in-a-postoperation-callback-routine.md)">Failing an I/O Operation in a Postoperation Callback Routine</a>.</p></td>
 </tr>
@@ -134,8 +133,8 @@ The following table lists common operations in a legacy filter driver and how th
 </tr>
 <tr class="odd">
 <td align="left"><p>Modify the parameters for an I/O operation</p></td>
-<td align="left"><p>Set the modified parameter values in the <strong>Iopb</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
-<p>Mark the FLT_CALLBACK_DATA structure as dirty by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetcallbackdatadirty" data-raw-source="[&lt;strong&gt;FltSetCallbackDataDirty&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetcallbackdatadirty)"><strong>FltSetCallbackDataDirty</strong></a>, except when you have modified the contents of the <strong>IoStatus</strong> member of the FLT_CALLBACK_DATA structure.</p>
+<td align="left"><p>Set the modified parameter values in the <strong>Iopb</strong> member of the <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data" data-raw-source="[&lt;strong&gt;FLT_CALLBACK_DATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)"><strong>FLT_CALLBACK_DATA</strong></a> structure for the operation.</p>
+<p>Mark the FLT_CALLBACK_DATA structure as dirty by calling <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetcallbackdatadirty" data-raw-source="[&lt;strong&gt;FltSetCallbackDataDirty&lt;/strong&gt;](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetcallbackdatadirty)"><strong>FltSetCallbackDataDirty</strong></a>, except when you have modified the contents of the <strong>IoStatus</strong> member of the FLT_CALLBACK_DATA structure.</p>
 <p>See <a href="modifying-the-parameters-for-an-i-o-operation.md" data-raw-source="[Modifying the Parameters for an I/O Operation](modifying-the-parameters-for-an-i-o-operation.md)">Modifying the Parameters for an I/O Operation</a>.</p></td>
 </tr>
 <tr class="even">
@@ -144,8 +143,6 @@ The following table lists common operations in a legacy filter driver and how th
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

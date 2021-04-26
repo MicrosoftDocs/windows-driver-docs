@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_CONSOLE_LOCKED
 description: CM_PROB_CONSOLE_LOCKED
-ms.assetid: b2086640-0103-41ee-8d60-db1126e482de
 keywords:
 - CM_PROB_CONSOLE_LOCKED
 ms.date: 02/28/2020
@@ -26,5 +25,5 @@ This Device Manager error message indicates that the device is blocked from enum
 
 ### Recommended Resolution
 
-For more info on Kernel DMA Protection, see https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.
+For more info on Kernel DMA Protection, see [Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt).
 
