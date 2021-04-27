@@ -42,6 +42,8 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 - [Video stabilization registry settings](oem-guidance-on-registry-keys-for-video-stabilization.md)
 
+- [OEM guidance on TorchControl shared usage registry setting](oem-guidance-on-registry-keys-for-shared-torch-usage.md)
+
 - [Extended camera controls](standardized-extended-controls-.md)
 
 - [Camera driver bring up guide](windows-hello-camera-driver-bring-up-guide.md)
