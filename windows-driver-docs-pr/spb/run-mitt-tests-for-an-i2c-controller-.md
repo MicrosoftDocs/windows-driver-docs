@@ -98,7 +98,6 @@ Device(TP3) {
       })
       Return(RBUF)
     }
-  }
 }
 
 //TP4 1.4 Mhz High Speed, optional target
