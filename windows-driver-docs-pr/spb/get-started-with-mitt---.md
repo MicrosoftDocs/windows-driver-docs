@@ -1,7 +1,7 @@
 ---
 title: Get started with MITT
 description: To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.
-ms.date: 04/20/2017
+ms.date: 04/27/2021
 ms.localizationpriority: medium
 ---
 
@@ -11,7 +11,7 @@ To run MITT tests, you must install the MITT firmware on a new MITT board. These
 
 ## Before you begin
 
-- [Download the MITT software package](/previous-versions/dn919810(v=vs.85)).
+- [Download the MITT software package](download-the-mitt-software-package.md)
 - [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md)
 - Know how to run Windows command shell with elevated privilege. Installation of the test tools requires an elevated command window. For that window, you can open a Command Prompt window by using the **Run as administrator** option.
 
@@ -52,7 +52,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 4. Right-click on the node and choose **Update Driver Software...**.
 5. Select **Browse my computer for driver software** in the **Update Driver Software** dialog.
 6. Select **Let me pick from a list of device drivers on my computer**.
-7. Select **Show All Devices** and click **Next** in the **Select your device’s type from the list below** page.
+7. Select **Show All Devices** and click **Next** in the **Select your device's type from the list below** page.
 8. Click on **Have Disk...** on the **Select the device driver you want to install for this hardware** page.
 9. Browse to the MITT installation directory (Program Files\\MITT\\*&lt;architecture&gt;* or Program Files (x86)\\MITT\\*&lt;architecture&gt;*) in the **Install From Disk dialog** and click **Ok**.
 10. Under **Manufacturer** select **Microsoft**. Under **Model** select **USB MUTT DEFAULT** from the list and click **Next**.
@@ -75,7 +75,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
     The preceding output shows a successful installation of the first firmware image.
 
-14. Run **MuttUtil.exe –UpdateFirmware** again for the second chip, after the first firmware update is complete. The second chip’s firmware cannot be updated until the first chip is installed.
+14. Run **MuttUtil.exe –UpdateFirmware** again for the second chip, after the first firmware update is complete. The second chip's firmware cannot be updated until the first chip is installed.
 
     ![mitt firmware upgrade](images/mitt-setup3.png)
 
