@@ -26,7 +26,7 @@ However, in Windows 2000 and Windows 98, the WDM audio framework forces all the 
 
 KMixer handles WAVE\_FORMAT\_PCM on all WDM operating systems. Windows 2000 and later, and Windows 98 SE, extend KMixer to support not only WAVE\_FORMAT\_IEEE\_FLOAT but also [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) variants of PCM and IEEE-float formats. Because KMixer supports no non-PCM formats, an attempt to pass non-PCM data through KMixer fails.
 
-Windows XP and later, and Windows Me, support non-PCM formats by allowing non-PCM audio data to simply bypass KMixer. Specifically, waveOut non-PCM data flows directly to PortCls (or USBAudio) instead of first passing through KMixer. Any mixing of non-PCM data must be done in hardware, but applications that use non-PCM data in a format such as AC-3 or WMA Pro typically do not require mixing and drivers typically do not support hardware mixing in that format.
+Windows supports non-PCM formats by allowing non-PCM audio data to simply bypass KMixer. Specifically, waveOut non-PCM data flows directly to PortCls (or USBAudio) instead of first passing through KMixer. Any mixing of non-PCM data must be done in hardware, but applications that use non-PCM data in a format such as AC-3 or WMA Pro typically do not require mixing and drivers typically do not support hardware mixing in that format.
 
 ### <span id="DirectSound_API"></span><span id="directsound_api"></span><span id="DIRECTSOUND_API"></span>DirectSound API
 

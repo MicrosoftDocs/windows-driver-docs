@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="accessing_the_preferred_device_id"></span><span id="ACCESSING_THE_PREFERRED_DEVICE_ID"></span>
 
 
-In Windows Me, and Windows 2000 and later, the Windows multimedia functions **waveInMessage**, **waveOutMessage**, and **midiOutMessage** can retrieve the device ID of the preferred device. These three functions get the preferred device IDs for wave input, wave output, and MIDI output, respectively. This information is useful to application programs that, for example, allow users to select a device to open from a list of two or more devices. Such an application typically needs to indicate which among the devices in the list is the preferred device.
+The Windows multimedia functions **waveInMessage**, **waveOutMessage**, and **midiOutMessage** can retrieve the device ID of the preferred device. These three functions get the preferred device IDs for wave input, wave output, and MIDI output, respectively. This information is useful to application programs that, for example, allow users to select a device to open from a list of two or more devices. Such an application typically needs to indicate which among the devices in the list is the preferred device.
 
 The preferred device is the device that the user selects through the multimedia control panel, mmsys.cpl. If a Windows multimedia or DirectSound application does not explicitly specify a device, the preferred device is selected by default.
 
