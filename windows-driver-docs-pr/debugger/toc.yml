@@ -464,6 +464,8 @@
       href: source-code.md
     - name: "Source Path"
       href: source-path.md
+    - name: "Source Code Extended Access"
+      href: source-code-extended-access.md
     - name: "Using a Source Server"
       href: using-a-source-server.md
     - name: "SrcSrv"
