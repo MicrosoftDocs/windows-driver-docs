@@ -114,6 +114,8 @@
         href: testing-BTP-hw-hid.md
       - name: "Audio Capable Radios"
         href: testing-BTP-hw-audio.md
+      - name: "Wi-Fi Capable Radios"
+        href: testing-BTP-hw-wifi.md
       - name: "BM-64-EVB board"
         href: testing-BTP-hw-bm64.md
       - name: "Human Device Adapter"
@@ -130,6 +132,8 @@
         href: testing-BTP-tests-audio.md
       - name: "Testing Bluetooth Audio and HID"
         href: testing-BTP-tests-audio-hid.md
+      - name: "Testing Bluetooth Audio and Wi-Fi"
+        href: testing-BTP-tests-wifi.md
       - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
     - name: "BTP Diagnostic Tools"

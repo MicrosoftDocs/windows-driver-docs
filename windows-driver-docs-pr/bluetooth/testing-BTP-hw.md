@@ -35,5 +35,5 @@ More information about officially supported radios can be reviewed at the follow
 
 - [HID Capable Peripheral Radios](testing-BTP-hw-hid.md)
 - [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md)
-- [BM-64-EVB board](testing-BTP-hw-bm64.md)
 - [Wi-Fi Capable Peripheral Radios](testing-BTP-hw-wifi.md)
+- [BM-64-EVB board](testing-BTP-hw-bm64.md)
