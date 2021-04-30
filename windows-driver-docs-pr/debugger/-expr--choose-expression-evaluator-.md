@@ -61,8 +61,7 @@ Displays the list of possible expression types.
 
  
 
-Remarks
--------
+## Remarks
 
 When you use the **.expr** command without an argument, the debugger displays the current default expression type.
 
@@ -70,9 +69,17 @@ The [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md) command,
 
 For more information about how to control which syntax is used, see [Evaluating Expressions](evaluating-expressions.md). For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
- 
 
- 
+## See also
+
+[? (Evaluate Expression)](---evaluate-expression-.md)
+
+[MASM Numbers and Operators](masm-numbers-and-operators.md)
+
+[C++ Numbers and Operators](c---numbers-and-operators.md)
+
+
+
 
 
 
