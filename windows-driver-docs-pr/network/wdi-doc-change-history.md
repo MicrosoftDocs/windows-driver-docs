@@ -1,7 +1,7 @@
 ---
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
-ms.date: 09/10/2020
+ms.date: 04/30/2021
 ms.localizationpriority: medium
 ms.custom: 2004
 ---
@@ -19,15 +19,15 @@ Documentation updated to WDI version 1.1.9.
 | [WDI_AUTH_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added new WDI_AUTH_ALGORITHM **WDI_AUTH_ALGO_OWE** |
 | [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | **WDI_CIPHER_ALGO_GCMP_256** new cipher added</br></br>**WDI_CIPHER_ALGO_BIP_GMAC_256** new cipher added |
 | [WDI_TLV_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly added TLV. |
-| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV. |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly added TLV type. |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV type. |
 | [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
 | [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | **BandwidthUsed** field added</br></br>**PropegationProperty** field added</br></br>**RTT** field changed to signed integer |
-| [WDI_TLV_KCK_CONTENT](wdi-tlv-kck-content.md) | Newly added TLV. |
-| [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly added TLV. |
+| [WDI_TLV_KCK_CONTENT](wdi-tlv-kck-content.md) | Newly added TLV type. |
+| [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly added TLV type. |
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly added TLV type. |
-| [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly added TLV. |
-| [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly added TLV. |
+| [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly added TLV type. |
+| [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly added TLV type. |
 | [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | **Host-WPA3-FIPS** mode added |
 
 ## Windows 10, version 1903
@@ -227,7 +227,7 @@ Documentation updated to WDI version 1.0.10.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows-hardware/drivers/network/wdi-tlv-ap-band-channel" data-raw-source="[&lt;strong&gt;WDI_TLV_AP_BAND_CHANNEL&lt;/strong&gt;](./wdi-tlv-ap-band-channel.md)"><strong>WDI_TLV_AP_BAND_CHANNEL</strong></a></p></td>
-<td align="left"><p>Newly added TLV.</p></td>
+<td align="left"><p>Newly added TLV type.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-capabilities" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_CAPABILITIES&lt;/strong&gt;](./wdi-tlv-p2p-capabilities.md)"><strong>WDI_TLV_P2P_CAPABILITIES</strong></a></p></td>
@@ -235,7 +235,7 @@ Documentation updated to WDI version 1.0.10.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows-hardware/drivers/network/wdi-tlv-pldr-support" data-raw-source="[&lt;strong&gt;WDI_TLV_PLDR_SUPPORT&lt;/strong&gt;](./wdi-tlv-pldr-support.md)"><strong>WDI_TLV_PLDR_SUPPORT</strong></a></p></td>
-<td align="left"><p>Newly added TLV.</p></td>
+<td align="left"><p>Newly added TLV type.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows-hardware/drivers/network/wdi-tlv-start-ap-parameters" data-raw-source="[&lt;strong&gt;WDI_TLV_START_AP_PARAMETERS&lt;/strong&gt;](./wdi-tlv-start-ap-parameters.md)"><strong>WDI_TLV_START_AP_PARAMETERS</strong></a></p></td>

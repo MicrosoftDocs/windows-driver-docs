@@ -2,7 +2,7 @@
 title: WDI_TLV_KCK_CONTENT
 description: WDI_TLV_KCK_CONTENT is a TLV that contains .
 ms.assetid: 
-ms.date: 09/10/2020
+ms.date: 04/30/2021
 keywords:
  - WDI_TLV_KCK_CONTENT Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_KCK\_CONTENT
 
-WDI\_TLV\_KCK\_CONTENT is a TLV that contains .
+WDI\_TLV\_KCK\_CONTENT is a TLV that contains cipher algorithm key data.
 
 ## TLV Type
 
@@ -26,26 +26,10 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 | --- | --- |
 | UINT8\[\] | Specifies KCK content cipher algorithm key data. |
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10, Version 2004</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wditypes.hpp</td>
-</tr>
-</tbody>
-</table>
+|     |     |
+| --- | --- |
+| **Minimum supported client** | Windows 10, Version 2004 |
+| **Minimum supported server** | Windows Server 2016 |
+| **Header** | Wditypes.pp |

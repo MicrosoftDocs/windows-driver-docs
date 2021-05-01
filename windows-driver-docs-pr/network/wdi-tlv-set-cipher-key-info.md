@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_SET_CIPHER_KEY_INFO
 description: WDI_TLV_SET_CIPHER_KEY_INFO is a TLV that contains cipher key mapping key information for OID_WDI_SET_ADD_CIPHER_KEYS.
-ms.date: 09/10/2020
+ms.date: 04/30/2021
 keywords:
  - WDI_TLV_SET_CIPHER_KEY_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -28,33 +28,17 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO**](wdi-tlv-cipher-key-type-info.md) | | | Specifies the cipher key type information. |
 | [**WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT**](wdi-tlv-cipher-key-receive-sequence-count.md) | | X | Specifies the initial 48-bit value of Packet Number (PN), which is used for replay protection. This is optional if the cipher algorithm is WDI\_CIPHER\_ALGO\_WEP40, WDI\_CIPHER\_ALGO\_WEP104, or WDI\_CIPHER\_ALGO\_WEP. |
 | [**WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY**](wdi-tlv-cipher-key-ccmp-key.md) | | X | Specifies the CCMP cipher algorithm key data. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_CCMP. |
-| [**WDI_TLV_CIPHER_KEY_GCMP_256_KEY**](wdi-tlv-cipher-key-gcmp-256-key.md) | | X | Contains GCMP_256 cipher algorithm key data. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_GCMP\_256. |
+| [**WDI_TLV_CIPHER_KEY_GCMP_256_KEY**](wdi-tlv-cipher-key-gcmp-256-key.md) | | X | Contains GCMP\_256 cipher algorithm key data. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_GCMP\_256. |
 | [**WDI\_TLV\_CIPHER\_KEY\_TKIP\_INFO**](wdi-tlv-cipher-key-tkip-info.md) | | X | Specifies the TKIP information. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_TKIP. |
 | [**WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY**](wdi-tlv-cipher-key-bip-key.md) | | X | Specifies the BIP key. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_BIP. |
-| [**WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY**](wdi-tlv-cipher-key-bip-gmac-256-key.md) | | X | Present ony if cipher algorithm is WDI\_CIPHER\_ALGO\_BIP\_GMAC\_256. |
+| [**WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY**](wdi-tlv-cipher-key-bip-gmac-256-key.md) | | X | Contains GMAC\_256 cipher algorithm key data. This is only present if cipher algorithm is WDI\_CIPHER\_ALGO\_BIP\_GMAC\_256. |
 | [**WDI\_TLV\_CIPHER\_KEY\_WEP\_KEY**](wdi-tlv-cipher-key-wep-key.md) | | X | Specifies the WEP key. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_WEP40, WDI\_CIPHER\_ALGO\_WEP104, or WDI\_CIPHER\_ALGO\_WEP |
 | [**WDI\_TLV\_CIPHER\_KEY\_IHV\_KEY**](wdi-tlv-cipher-key-ihv-key.md) | | X | Specifies the IHV cipher key. This is only present if [**WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO**](wdi-tlv-cipher-key-type-info.md) is in the range WDI\_CIPHER\_ALGO\_IHV\_START to WDI\_CIPHER\_ALGO\_IHV\_END. |
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wditypes.hpp</td>
-</tr>
-</tbody>
-</table>
+|     |     |
+| --- | --- |
+| **Minimum supported client** | Windows 10 |
+| **Minimum supported server** | Windows Server 2016 |
+| **Header** | Wditypes.hpp |

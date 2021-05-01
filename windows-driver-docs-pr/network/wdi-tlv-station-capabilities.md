@@ -2,7 +2,7 @@
 title: WDI_TLV_STATION_CAPABILITIES
 description: WDI_TLV_STATION_CAPABILITIES is a TLV that contains the capabilities of a station.
 ms.assetid: 567445F1-EEDC-4302-B709-ED76D044A971
-ms.date: 09/10/2020
+ms.date: 04/30/2021
 keywords:
  - WDI_TLV_STATION_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -47,26 +47,10 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | The maximum number of target STAs that can be queried per FTM request task. |
 | UINT8 | Specifics whether the driver supports the FIPS mode.<br /><br />If the field is set to DOT11_EXTSTA_ATTRIBUTES_SAFEMODE_OID_SUPPORTED with no other bits set, the driver implements the 802.11 safe mode of operation.<br /><br />If the field is set to DOT11_EXTSTA_ATTRIBUTES_SAFEMODE_CERTIFIED the NIC has received a validation certificate from the National Institute of Standards and Technology (NIST) under Federal Information Processing Standards (FIPS) Publication 140-2, Security Requirements for Cryptographic Modules. In this mode the hardware is responsible for ensuring compliance to FIPS standard.<br /><br />If the field is set to zero (0), FIPS mode is not implemented by the NIC.<br /><br />**Operating system support for FIPS is anticipated in a future release of Windows.**<br /><br />**NOTE** that FIPS mode requires the driver to indicate support for WDI_AUTH_ALGO_WPA3 auth and WDI_CIPHER_ALGO_GCMP_256 cipher pairs in the unicast and multicast algo pairs. It must also indicate support for WDI_AUTH_ALGO_WPA3 auth and WDI_CIPHER_ALGO_BIP_GMAC_256 cipher in the Multicast Management algo pairs. |
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wditypes.hpp</td>
-</tr>
-</tbody>
-</table>
+|     |     |
+| --- | --- |
+| **Minimum supported client** | Windows 10 |
+| **Minimum supported server** | Windows Server 2016 |
+| **Header** | Wditypes.hpp |

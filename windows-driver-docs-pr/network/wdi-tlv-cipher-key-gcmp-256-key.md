@@ -2,7 +2,7 @@
 title: WDI_TLV_CIPHER_KEY_GCMP_256_KEY
 description: WDI_TLV_CIPHER_KEY_GCMP_256_KEY is a TLV that contains GCMP 256 cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
 ms.assetid: 
-ms.date: 09/10/2020
+ms.date: 04/30/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_GCMP_256_KEY Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium
@@ -26,26 +26,10 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 | --- | --- |
 | UINT8\[\] | Specifies GCMP 256 cipher algorithm key data. |
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10, Version 2004</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wditypes.hpp</td>
-</tr>
-</tbody>
-</table>
+|     |     |
+| --- | --- |
+| **Minimum supported client** | Windows 10, Version 2004 |
+| **Minimum supported server** | Windows Server 2016 |
+| **Header** | Wditypes.hpp |
