@@ -28,8 +28,8 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 ## Requirements
 
-|     |     |
-| --- | --- |
+| &nbsp; | &nbsp; |
+| ------ | ------ |
 | **Minimum supported client** | Windows 10, Version 2004 |
 | **Minimum supported server** | Windows Server 2016 |
 | **Header** | Wditypes.hpp |

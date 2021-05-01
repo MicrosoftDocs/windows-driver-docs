@@ -37,8 +37,8 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
 ## Requirements
 
-|     |     |
-| --- | --- |
+| &nbsp; | &nbsp; |
+| ------ | ------ |
 | **Minimum supported client** | Windows 10 |
 | **Minimum supported server** | Windows Server 2016 |
 | **Header** | Wditypes.hpp |
