@@ -11,13 +11,11 @@ ms.localizationpriority: medium
 
 OID_WWAN_REGISTER_PARAMS sets or returns an MB device's 5G-specific registration parameters. 
 
-Before turning on the device radio, the host typically sends an OID_WWAN_REGISTER_PARAMS set request to configure the device with the desired registration parameters. These registration parameters include information such as a default PDU session hint.
+Before turning on the device radio, the host typically sends an OID_WWAN_REGISTER_PARAMS set request to configure the device with the desired registration parameters. This OID's payload contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure that specifies the registration parameters, such as a default PDU session hint. If the device accepts these parameters, it will use them during 5G registration requests. 
 
-For set requests, this OID's payload contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure that specifies the new SAR configuration for the modem. The parameters set in this structure, if accepted by the device, shall be used by the device during 5G registration requests. 
+The host may send an OID_WWAN_REGISTER_PARAMS set request at any time. When the device receives this request, it must compare the new parameters to any parameters it previously used for 5G registration. If there are differences, the device should use the newly received parameters for the next 5G registration. The host can also use the **ReRegisterIfNeeded** parameter to force immediate 5G re-registration.  
 
-The host may send this set command at any time. Upon receiving the command, the device shall compare the new parameters to any parameters it previously used for 5G registration. If there are differences, the device shall use the newly received parameters for the next 5G registration. The host can also use the **ReRegisterIfNeeded** parameter to force immediate 5G re-registration.  
-
-The host may use this OID to query the registration parameters currently used by an MB device for 5G registration. Unsolicited notifications are not valid.
+The host may use this OID to query the registration parameters that an MB device is currently using for 5G registration. 
 
 ## Remarks
 
