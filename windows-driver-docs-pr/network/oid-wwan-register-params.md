@@ -1,0 +1,50 @@
+---
+title: OID_WWAN_REGISTER_PARAMS
+description: OID_WWAN_REGISTER_PARAMS sets 5G-specific registration parameters to an MB device. 
+ms.date: 05/13/2021
+keywords: 
+ -OID_WWAN_REGISTER_PARAMS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
+---
+
+# OID_WWAN_REGISTER_PARAMS
+
+OID_WWAN_REGISTER_PARAMS sets or returns an MB device's 5G-specific registration parameters. 
+
+Before turning on the device radio, the host typically sends an OID_WWAN_REGISTER_PARAMS set request to configure the device with the desired registration parameters. These registration parameters include information such as a default PDU session hint.
+
+For set requests, this OID's payload contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure that specifies the new SAR configuration for the modem. The parameters set in this structure, if accepted by the device, shall be used by the device during 5G registration requests. 
+
+The host may send this set command at any time. Upon receiving the command, the device shall compare the new parameters to any parameters it previously used for 5G registration. If there are differences, the device shall use the newly received parameters for the next 5G registration. The host can also use the **ReRegisterIfNeeded** parameter to force immediate 5G re-registration.  
+
+The host may use this OID to query the registration parameters currently used by an MB device for 5G registration. Unsolicited notifications are not valid.
+
+## Remarks
+
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](/windows-hardware/drivers/network/ndis-status-wwan-register-params-state) status notification containing a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
+
+For a failured set or query response, the information shall be null and the **InformationBufferLength** shall be zero.
+
+In a successful set response, the **WWAN_REGISTRATION_PARAMS_INFO** structure shall contain the parameters set by the host and accepted by the device.
+
+In a successful query response:
+
+* If the parameters have been set by the host and accepted by the device since the device was rebooted or a different SIM was inserted, the structure shall contain the parameters set by the host and accepted by the device.
+
+* If the parameters have not been set by the host and accepted by the device since the device was rebooted or a different SIM was inserted, the structure shall contain the parameters that the device will most likely use for 5G registration.
+
+For more information about usage of this OID, see MBIM_CID_MS_REGISTRATION_PARAMS in the [MBIMEx 3.0 specification](https://download.microsoft.com/download/8/3/a/83a64106-a1f4-4a03-811f-4dbef2e3bf7a/MBIM%20extensions%20for%205G.docx).
+
+
+## Requirements
+
+|Requirement|Value|
+|-|-|
+|Version|Windows Server 2022. NDIS 6.84 and later.|
+|Header|Ntddndis.h (include Ndis.h)|
+
+## See also
+
+[**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info)
+
+[NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](/windows-hardware/drivers/network/ndis-status-wwan-register-params-state)
