@@ -1,7 +1,7 @@
 ---
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
-ms.date: 04/09/2019
+ms.date: 02/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -803,16 +803,19 @@ In order to allow a debugger extension to maintain precision, a set of math func
 | bitwiseShiftRight | .bitwiseShiftRight(value) | Shifts the 64-bit value right by the given amount and returns the result                                      |
 | toString          | .toString(\[radix\])      | Converts the 64-bit value to a display string in the default radix (or the optionally supplied radix)         |
 
+This method is also available.
 
+| **Method Name**   | **Signature**             | **Description**                                                                                               |
+|-------------------|---------------------------|---------------------------------------------------------------------------------------------------------------|
+| compareTo | .compareTo(str:string) | Compares two strings. |
 
-## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
+## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging
 
 This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](-scriptdebug--debug-javascript-.md) command.
 
->[!NOTE] 
+>[!NOTE]
 > To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
 >
-
 
 Use this sample code to explore debugging a JavaScript. For this walkthrough, we will name it DebuggableSample.js and save it in the C:\MyScripts directory.
 

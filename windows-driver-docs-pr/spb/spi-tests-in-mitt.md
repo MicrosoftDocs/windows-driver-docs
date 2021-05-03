@@ -1,7 +1,7 @@
 ---
 title: SPI tests in MITT
 description: SPI test modules that are included in the MITT software package.
-ms.date: 04/20/2017
+ms.date: 04/27/2021
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ SPI test modules that are included in the MITT software package can be used to t
 ## Before you begin
 
 - Get a MITT board and a SPI or UART adapter board. See [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md).
-- [Download the MITT software package](/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
+- [Download the MITT software package](download-the-mitt-software-package.md). Install it on the system under test.
 - Install MITT firmware on the MITT board. See [Get started with MITT](./get-started-with-mitt---.md).
 
 ## Hardware setup
@@ -35,7 +35,7 @@ SPI test modules that are included in the MITT software package can be used to t
 
 ## Test driver and ACPI configuration
 
-Perform these steps on the system under test that has the I²C controller:
+Perform these steps on the system under test that has the I<sup>2</sup>C controller:
 
 1. Install WITTTest driver included in the MITT software package by running this command:
 

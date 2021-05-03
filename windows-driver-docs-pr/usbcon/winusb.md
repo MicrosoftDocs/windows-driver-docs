@@ -1,7 +1,6 @@
 ---
 title: Introduction to WinUSB (Winusb.sys)
 description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
-title: WinUSB (Winusb.sys)
 ms.date: 04/12/2021
 ms.localizationpriority: High
 ms.custom: contperf-fy21q4
@@ -12,7 +11,7 @@ ms.custom: contperf-fy21q4
 WinUSB is a generic driver for USB devices that is included with all versions of Windows since Windows Vista.  It includes:
 
 * A kernel-mode driver (Winusb.sys)
-* A user-mode dynamic link library (Winusb.dll) that exposes [WinUSB functions](windows/win32/api/winusb/#functions). You can use these functions to manage USB devices with user-mode software.
+* A user-mode dynamic link library (Winusb.dll) that exposes WinUSB functions described in [winusb.h](/windows/win32/api/winusb#functions). You can use these functions to manage USB devices with user-mode software.
 
 By default, Winusb.sys is installed in the device's kernel-mode stack as an upper filter driver, and apps communicate with the device's UMDF function driver to issue read, write, or device I/O control requests. In this configuration, Winusb.sys serves as the device stack's Plug and Play and power owner.
 

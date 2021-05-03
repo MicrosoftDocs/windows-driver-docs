@@ -1,18 +1,18 @@
 ---
 title: UART tests in MITT
-description: The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board’s UART interface acts as a UART loopback device.
-ms.date: 04/20/2017
+description: The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board's UART interface acts as a UART loopback device.
+ms.date: 04/27/2021
 ms.localizationpriority: medium
 ---
 
 # UART tests in MITT
 
-The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board’s UART interface acts as a UART loopback device.
+The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board's UART interface acts as a UART loopback device.
 
 ## Before you begin
 
 - Get a MITT board and a UART adapter board. See [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md).
-- [Download the MITT software package](/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
+- [Download the MITT software package](download-the-mitt-software-package.md). Install it on the system under test.
 - Install MITT firmware on the MITT board. See [Get started with MITT](./get-started-with-mitt---.md).
 
 ## Hardware setup

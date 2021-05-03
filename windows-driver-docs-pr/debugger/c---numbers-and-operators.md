@@ -9,6 +9,12 @@ ms.custom: contperf-fy21q3
 
 # C++ Numbers and Operators
 
+This topic describes the use of the C++ expression syntax with the Windows Debugging tools.
+
+The debugger accepts two different kinds of numeric expressions: C++ expressions and MASM expressions. Each of these expressions follows its own syntax rules for input and output.
+
+For more information about when each syntax type is used, see [Evaluating Expressions](evaluating-expressions.md) and [? (Evaluate Expression)](---evaluate-expression-.md).
+
 The C++ expression parser supports all forms of C++ expression syntax. The syntax includes all data types (including pointers, floating-point numbers, and arrays) and all C++ unary and binary operators.
 
 The Watch and the Locals windows in the debugger always uses the C++ expression evaluator.
@@ -87,7 +93,6 @@ unsigned int64 5
 ```
 
 For more information about registers and pseudo-registers, see [Register Syntax](register-syntax.md) and [Pseudo-Register Syntax](pseudo-register-syntax.md).
-
 
 ## Numbers in C++ Expressions
 
