@@ -69,7 +69,7 @@
   - name: "Bluetooth Certification"
     href: bluetooth-certification.md
   - name: "Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista"
-    href: bluetooth-faq--appendix-a.md
+    href: bluetooth-faq--appendix-a.yml
   - name: "Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista"
     href: bluetooth-faq--appendix-b.md
   - name: "Bluetooth Appendix"

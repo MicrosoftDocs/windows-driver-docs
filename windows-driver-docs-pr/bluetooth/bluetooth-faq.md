@@ -17,7 +17,7 @@ Additional frequently asked questions are located in the following topics:
 [Bluetooth Host Radio Support](bluetooth-host-radio-support.md)
 [Bluetooth User Interface](bluetooth-user-interface.md)
 [Bluetooth Certification](bluetooth-certification.md)
-[Appendix A](bluetooth-faq--appendix-a.md)
+[Appendix A](bluetooth-faq--appendix-a.yml)
 [Appendix B](bluetooth-faq--appendix-b.md)
 ## <span id="How_many_Bluetooth_radios_can_Windows_support_"></span><span id="how_many_bluetooth_radios_can_windows_support_"></span><span id="HOW_MANY_BLUETOOTH_RADIOS_CAN_WINDOWS_SUPPORT_"></span>How many Bluetooth radios can Windows support?
 

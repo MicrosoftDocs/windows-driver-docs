@@ -27,7 +27,7 @@ The following procedure uses Device Manager to force the Bluetooth stack to load
 2. To run the Update Driver Software Wizard, right-click the Bluetooth radio item and select **Update Driver Software**.
 3. Use the wizard to force the Bluetooth stack to install.
 
-For a detailed description of this procedure, see [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.md).
+For a detailed description of this procedure, see [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.yml).
 
 ## Ensure in-box support for Bluetooth radios
 
