@@ -12,7 +12,7 @@ summary: |
 
 
 sections:
-  - name: 
+  - name: Ignored
     questions:
       - question: |
           Step 1: Start Device Manager and Select the Bluetooth Radio
