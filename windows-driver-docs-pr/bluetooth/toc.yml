@@ -55,7 +55,7 @@
 - name: "Bluetooth Frequently Asked Questions"
   items: 
   - name: "Bluetooth FAQ"
-    href: bluetooth-faq.md
+    href: bluetooth-faq.yml
   - name: "Bluetooth Version and Profile Support in Windows 10"
     href: general-bluetooth-support-in-windows.md
   - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
