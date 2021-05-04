@@ -131,6 +131,6 @@ If SDV reports timeouts or fails to return useful results, you might need to cha
 
 [Using Function Role Type Declarations](using-function-role-type-declarations.md)
 
-[Static Driver Verifier Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules)
+[Static Driver Verifier Rules](./static-driver-verifier-rules.md)
 
 [Code Analysis tool](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120))

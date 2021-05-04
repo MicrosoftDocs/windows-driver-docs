@@ -59,7 +59,7 @@ You can also call [**WdfUsbTargetDeviceSelectConfig**](/windows-hardware/drivers
 
 For related information, see:
 
--   [How to select a configuration for a USB device](/windows-hardware/drivers/usbcon/how-to-select-a-configuration-for-a-usb-device)
+-   [How to select a configuration for a USB device](../usbcon/how-to-select-a-configuration-for-a-usb-device.md)
 -   [How to select an alternate setting in a USB interface](../usbcon/index.md)
 
 ## <a href="" id="obtaining-device-information"></a> Obtaining Device Information
@@ -152,6 +152,4 @@ Formats an I/O request that contains a URB. The driver must call [**WdfRequestSe
 Returns a device's USBD configuration handle. Some URBs require this handle.
 
 For general conceptual background on URBs, see [Allocating and Building URBs](../usbcon/how-to-add-xrb-support-for-client-drivers.md).
-
- 
 

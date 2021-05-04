@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # INF Models Section
 
 
-A per-manufacturer *Models* section identifies at least one device, references the *DDInstall* section of the INF file for that device, and specifies a unique-to-the-model-section [hardware identifier (ID)](hardware-ids.md) for that device.
+A per-manufacturer *Models* section identifies at least one device, references the *DDInstall* section of the INF file for that device, and specifies a unique-to-the-model-section Hardware identifier (ID) for that device.
 
 Any entry in the per-manufacturer *Models* section can also specify one or more additional device IDs for models that are compatible with the device designated by the initial hardware ID and are controlled by the same drivers.
 
@@ -41,7 +41,7 @@ Identifies a device to be installed, expressed as any unique combination of visi
 Specifies the undecorated name of the INF install sections to be used for the device (and compatible models of device, if any). For more information, see [**INF *DDInstall* Section**](inf-ddinstall-section.md).
 
 <a href="" id="hw-id"></a>*hw-id*  
-Specifies a vendor-defined [hardware ID](hardware-ids.md) string that identifies a device, which the PnP manager uses to find an INF-file match for this device. Such a hardware ID has one of the following formats:
+Specifies a vendor-defined Hardware ID string that identifies a device, which the PnP manager uses to find an INF-file match for this device. Such a hardware ID has one of the following formats:
 
 <a href="" id="enumerator-enumerator-specific-device-id"></a>*enumerator\\enumerator-specific-device-id*  
 Is the typical format for individual PnP devices reported to the PnP manager by a single enumerator. For example, `USB\VID_045E&PID_00B` identifies the Microsoft HID keyboard device on a USB bus. Depending on the enumerator, such a specification can even include the device's hardware revision number as, for example, `PCI\VEN_1011&DEV_002&SUBSYS_00000000&REV_02`.
@@ -95,6 +95,7 @@ This example shows a per-manufacturer *Models* section with some representative 
 
 ## See also
 
+[Hardware identifiers (HWIds)](hardware-ids.md)
 
 [**ControlFlags**](inf-controlflags-section.md)
 

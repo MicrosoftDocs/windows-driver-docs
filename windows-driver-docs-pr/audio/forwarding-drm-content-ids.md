@@ -82,7 +82,4 @@ For simplicity, the preceding discussion assumes that each module in the data pa
 
 A typical secure data path consists of the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) followed by a wave filter that represents the audio rendering device. The filter is implemented as a WaveCyclic or WavePci miniport driver in combination with the corresponding port driver. To verify that the data path is secure, DRMK forwards the content ID to KMixer, which in turn forwards the content ID to the filter. The port driver, which implements the generic filter functionality, receives the content ID and forwards it to the miniport driver. Specifically, the port driver calls the **DrmForwardContentToInterface** function to forward the content ID to the stream object that the miniport driver has instantiated to represent the wave-output pin on the audio rendering device. One of the parameter values for this call is a pointer to the stream object's [IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream) or [IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream) interface. Through this interface, the function queries the stream object for its **IDrmAudioStream** interface and calls that interface's **SetContentId** method.
 
-For more information, see the implementations of the **SetContentId** method in the sb16 and msvad sample drivers in the Microsoft Windows Driver Kit (WDK).
-
- 
-
+For more information, see the implementations of the **SetContentId** method in the Sysvad sample driver, which is discussed in [Sample Audio Drivers](sample-audio-drivers.md).

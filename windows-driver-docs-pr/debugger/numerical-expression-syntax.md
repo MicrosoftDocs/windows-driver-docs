@@ -2,7 +2,7 @@
 title: Numerical Expression Syntax
 description: Numerical Expression Syntax
 keywords: ["expressions", "numerical expressions", "MASM expressions", "C++ expressions", "syntax rules for commands, numerical expressions", "syntax rules for commands, MASM expressions", "syntax rules for commands, C++ expressions"]
-ms.date: 05/23/2017
+ms.date: 04/26/2021
 ms.localizationpriority: medium
 ---
 
@@ -16,6 +16,8 @@ The debugger accepts two different kinds of numeric expressions: *C++ expression
 
 For more information about when each syntax type is used, see [Evaluating Expressions](evaluating-expressions.md).
 
+Use the [.expr (Choose Expression Evaluator)](-expr--choose-expression-evaluator-.md) command to display or change the expression evaluator after the debugger is running.
+
 This section includes the following topics:
 
 [MASM Numbers and Operators](masm-numbers-and-operators.md)
@@ -24,9 +26,14 @@ This section includes the following topics:
 
 [MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
 
-[Expression Examples](expression-examples.md)
+[Mixed Expression Examples](expression-examples.md)
 
 [Sign Extension](sign-extension.md)
+
+[? (Evaluate Expression)](---evaluate-expression-.md)
+
+[.expr (Choose Expression Evaluator)](-expr--choose-expression-evaluator-.md)
+
 
  
 

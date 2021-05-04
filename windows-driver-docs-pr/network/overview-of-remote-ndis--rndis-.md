@@ -55,7 +55,5 @@ This section includes the following additional topics:
 ## Related topics
 
 
-[USB class drivers included in Windows](/windows-hardware/drivers/usbcon/supported-usb-classes)
-
- 
+[USB class drivers included in Windows](../usbcon/supported-usb-classes.md)
 

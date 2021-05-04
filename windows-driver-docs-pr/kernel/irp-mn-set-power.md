@@ -54,7 +54,7 @@ The following table shows the contents of **IRP_MN_SET_POWER.Parameters.Power.{S
 |Hybrid Sleep to...|S4|Hibernate|S0|S3|S4|Sleep with hibernation file (Fast S4)|
 |...Wake|S0|Sleep|S3|S0|S0||
 |...Wake/PwrLost|S0|Sleep|S4|S0|S0||
-|Hibernate to...|S4|Hibernate|S0|S4|S4|||
+|Hibernate to...|S4|Hibernate|S0|S4|S4||
 |...Wake|S0|Sleep|S4|S0|S0||
 |Hybrid Shutdown to...|S4|Hibernate|S0|S5|S4|Apps closed, user logged off as if shutdown (Hiber Boot)|
 |...Fast Startup|S0|Sleep|S4|S0|S0||

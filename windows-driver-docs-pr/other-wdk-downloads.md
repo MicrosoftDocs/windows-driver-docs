@@ -156,8 +156,7 @@ Framework 4.0.
 
 > [!IMPORTANT]
 > Newer versions of the Visual C++ 2010 Redistributable can cause
-> issues when you install the SDK for Windows 7. For more information, see
-> [Windows SDK Fails to Install with Return Code 5100](https://support.microsoft.com/help/2717426/windows-sdk-fails-to-install-with-return-code-5100) on Microsoft Support.
+> issues when you install the SDK for Windows 7.
 
 Get the standalone debugging tools for Windows XP by first downloading
 the Windows 7 SDK:

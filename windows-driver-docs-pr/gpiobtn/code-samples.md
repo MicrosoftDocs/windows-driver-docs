@@ -38,7 +38,7 @@ This section includes code samples and sample descriptors for interface implemen
 <td align="left"><p>This topic contains ACPI descriptor samples.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="hid-button-report-descriptors.md" data-raw-source="[HID button report descriptors](hid-button-report-descriptors.md)">HID button report descriptors</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/hid/acpi-button-device" data-raw-source="[HID button report descriptors](../hid/acpi-button-device.md)">HID button report descriptors</a></p></td>
 <td align="left"><p>This topic contains sample HID button report descriptors.</p></td>
 </tr>
 </tbody>
@@ -47,9 +47,4 @@ This section includes code samples and sample descriptors for interface implemen
  
 
  
-
- 
-
-
-
 

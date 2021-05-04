@@ -19,7 +19,7 @@ Miniport drivers process OID\_WWAN\_DRIVER\_CAPS synchronously and should immedi
 Remarks
 -------
 
-For more information about using this OID, see [MB Miniport Driver Initialization](./mb-miniport-driver-initialization.md).
+For more information about using this OID, see [MB Miniport Driver Initialization](mb-device-readiness.md#mb-miniport-driver-initialization).
 
 Miniport drivers should not access the provider network, or the Subscriber Identity Module (SIM card), when processing query operations.
 
@@ -52,7 +52,7 @@ Requirements
 ## See also
 
 
-[MB Miniport Driver Initialization](./mb-miniport-driver-initialization.md)
+[MB Miniport Driver Initialization](mb-device-readiness.md#mb-miniport-driver-initialization)
 
 [**NDIS\_WWAN\_DRIVER\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps)
 

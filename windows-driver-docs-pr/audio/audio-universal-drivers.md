@@ -113,7 +113,6 @@ The traditional INF files continue to be available in the SYSVAD sample.
 | File name                      | Description                                                                    |
 |--------------------------------|--------------------------------------------------------------------------------|
 | tabletaudiosample.inf          | A desktop monolitic INF file that contains all of the information needed to install the driver. |
-| phoneaudiosample.inf           | A phone monolitic INF file that contains all of the information needed to install the driver.   |
 
 ### APO vendor specific tuning parameters and feature configuration
 
@@ -215,26 +214,3 @@ Follow these steps to install the driver using the PnpUtil on the target system.
 
 5. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the Microsoft Virtual Audio Device (WDM) - Sysvad Sample driver.
 
-## Building the Sysvad Universal Audio Sample for Windows 10 Mobile
-
-Complete the following steps to build the sysvad sample for Windows 10 Mobile.
-
-1. Locate the Mobile inf file (phoneaudiosample.inf) and set the manufacturer name to a value such as "Contoso"
-
-2. Build the following projects in the sysvad solution:
-
-   - EndPointsCommon
-
-   - PhoneAudioSample
-
-3. Locate the output directory for the build from the . For example with a default location of Visual Studio in could be located in a directory like this:
-
-   ```cmd
-   C:\Program Files (x86)\Windows Kits\10\src\audio\sysvad\x64\Debug\package`
-   ```
-
-4. Follow the guidance in [Creating packages](/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) to create a package that contains the driver files for a mobile image.
-
-5. To install a mobile driver package (.spkg file), you will need to combine packages into a mobile OS image. Use ImgGen to add the .spkg driver package to a full flash update (FFU) image that can then be flashed to a mobile device. It may be necessary to remove other audio drivers that exist in the mobile image to allow for testing of the sysvad virtual audio driver.
-
-6. After the OS image contains the driver package is running, play a sound clip and validate that the sysvad phone audio sample is functional. You can establish a kernel debugger connection to monitor the sysvad virtual driver on a mobile device.

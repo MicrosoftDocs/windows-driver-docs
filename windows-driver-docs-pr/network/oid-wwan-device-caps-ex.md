@@ -44,7 +44,7 @@ When the host queries capabilities using this OID, the miniport driver must chec
 
 Additionally, in the **WwanOptionalServiceCaps** field of the **WWAN_DEVICE_CAPS_EX** structure, a new optional service bit is defined that covers support of all new 5G-related extensions.
 
-For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
+For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
 Requirements
 ------------

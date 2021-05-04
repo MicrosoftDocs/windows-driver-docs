@@ -54,6 +54,8 @@
     items: 
     - name: "Buy hardware for using MITT"
       href: multi-interface-test-tool--mitt--.md
+    - name: "Download the MITT software package"
+      href: download-the-mitt-software-package.md
     - name: "Get started with MITT"
       href: get-started-with-mitt---.md
     - name: "Audio playback fidelity tests in MITT"

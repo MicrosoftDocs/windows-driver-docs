@@ -51,7 +51,7 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 In Windows 8.1 and earlier versions of the operating system, Usbser.sys is not automatically loaded when a USB-to-serial device is attached to a computer. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) by using the **Include** directive. The directive is required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications require to find the device and talk to it. That INF specifies "Usbser" as a lower filter driver in a device stack.
 
-The INF also needs to specify the device setup class as **Modem** to use mdmcpq.inf. Under the [Version] section of the INF, specify the **Modem** and the device class GUID. for details, see [System-Supplied Device Setup Classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use).
+The INF also needs to specify the device setup class as **Modem** to use mdmcpq.inf. Under the [Version] section of the INF, specify the **Modem** and the device class GUID. for details, see [System-Supplied Device Setup Classes](../install/system-defined-device-setup-classes-reserved-for-system-use.md).
 
 ``` syntax
 [DDInstall.NT]
@@ -67,7 +67,7 @@ include=mdmcpq.inf
 AddReg=LowerFilterAddReg
 ```
 
-For more information, see [this KB article](https://support.microsoft.com/help/837637/how-to-use-or-to-reference-the-usbser-sys-driver-from-universal-serial/).
+For more information, see [How to use or reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](/troubleshoot/windows-client/deployment/how-to-use-reference-usbser-driver-universal-serial-bus).
 
 ## Configure selective suspend for Usbser.sys
 

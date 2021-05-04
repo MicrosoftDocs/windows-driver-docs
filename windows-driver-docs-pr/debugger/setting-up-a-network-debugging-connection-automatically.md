@@ -162,11 +162,11 @@ The host computer can use any network adapter, but the target computer must use 
 
 Begining with Windows 10 October 2020 Update (20H2), the following options are supported to enable four types of debugging.
 
-*b* - enables bootmgr debugging. For more information see [BCDEdit /bootdebug](/windows-hardware/drivers/devtest/bcdedit--bootdebug).
+*b* - enables bootmgr debugging. For more information see [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md).
 
-*w* - enables winload debugging. For more information see [BCDEdit /bootdebug](/windows-hardware/drivers/devtest/bcdedit--bootdebug).
+*w* - enables winload debugging. For more information see [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md).
 
-*h* - enables hypervisor debugging. For more information see [BCDEdit /hypervisorsettings](/windows-hardware/drivers/devtest/bcdedit--hypervisorsettings).
+*h* - enables hypervisor debugging. For more information see [BCDEdit /hypervisorsettings](../devtest/bcdedit--hypervisorsettings.md).
 
 *k* - enables kernel debugging. For more information see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md).
 

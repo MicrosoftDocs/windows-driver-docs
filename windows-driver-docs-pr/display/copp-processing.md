@@ -38,15 +38,9 @@ The following topics describe the COPP DDI and how to support COPP:
 
 [Returning Error Codes from COPP Functions](returning-error-codes-from-copp-functions.md)
 
-[Performing COPP Operations](performing-copp-operations.md)
+[Performing COPP Operations](./performing-copp-operations-example.md)
 
 [Implementation Tips and Requirements for COPP](implementation-tips-and-requirements-for-copp.md)
 
  
-
- 
-
-
-
-
 

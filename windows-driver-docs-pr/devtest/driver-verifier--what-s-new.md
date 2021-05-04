@@ -19,17 +19,15 @@ ms.localizationpriority: medium
 ## Driver Verifier in Windows 10 (*Updated: May 8, 2018*)
 
 > [!IMPORTANT]
-> Starting in versions after Windows 10 1803, running Driver Verifier will no longer automatically enable Windows Driver Framework (WDF) verification. Please note the following:
+> For info about enabling WDF Verifier on Windows 10, version 1803 or more recent releases, see [Using KMDF Verifier](../wdf/using-kmdf-verifier.md).
 
 * You can still enable WDF verification as part of Driver Verifier's `/standard` flags. See [Driver Verifier Command Syntax](./verifier-command-line.md) for more information.
 * This change will impact you if you are enabling DV with syntax `/flags 0x209BB` as WDF verification will no longer be automatically enabled.
 
 Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 
-* New [Rules for Audio Drivers](/windows-hardware/drivers/devtest/rules-for-audio-drivers)
-* New [Rules for AVStream Drivers](/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
-* Four new [Rules for KMDF Drivers](/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
-* Three new [Rules for NDIS Drivers](/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
+* New [Rules for Audio Drivers](./rules-for-audio-drivers.md)
+* New [Rules for AVStream Drivers](./rules-for-avstream-drivers.md)
 
 ## Driver Verifier in Windows 8-1 (*Updated: June 17, 2013*)
 

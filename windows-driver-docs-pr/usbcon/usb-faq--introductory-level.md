@@ -33,7 +33,6 @@ This topic presents frequently asked questions for driver developers who are new
 - [What characters or bytes are valid in a USB serial number?](#what-characters-or-bytes-are-valid-in-a-usb-serial-number)
 - [What LANGID is used in a string request on localized builds of Windows?](#what-langid-is-used-in-a-string-request-on-localized-builds-of-windows)
 - [What LANGID is used to extract a device's serial number?](#what-langid-is-used-to-extract-a-devices-serial-number)
-- [What is the maximum USB transfer size for different Windows versions?](#what-is-the-maximum-usb-transfer-size-for-different-windows-versions)
 - [How should numbers be assigned to multiple interfaces on a composite device?](#how-should-numbers-be-assigned-to-multiple-interfaces-on-a-composite-device)
 - [What are the major restrictions imposed by Usbccgp.sys?](#what-are-the-major-restrictions-imposed-by-usbccgpsys)
 - [How do I enable debug tracing for USB core binaries?](#how-do-i-enable-debug-tracing-for-usb-core-binaries)
@@ -533,10 +532,6 @@ A USB device indicates the presence of a serial number by setting the iSerialNum
 
 A USB device indicates the presence of a serial number by setting the iSerialNumber field of the USB device descriptor to the serial number's string index. To retrieve the serial number, Windows issues a string request with the language identifier (LANGID) set to 0x0409 (U.S. English). Windows always uses this LANGID to retrieve USB serial numbers, even for versions of Windows that are localized for other languages.
 
-## What is the maximum USB transfer size for different Windows versions?
-
-See [Maximum size of USB transfers on various operating systems](https://support.microsoft.com/help/832430/maximum-size-of-usb-transfers-on-various-operating-systems).
-
 ## How should numbers be assigned to multiple interfaces on a composite device?
 
 Windows treats USB devices that have more than one interface on the first configuration as composite devices.
@@ -547,8 +542,6 @@ For Windows XP Service Pack 1 and earlier versions of Windows:
 - Interface numbers must be consecutive and increasing.
 
 For Windows XP Service Pack 2 and later versions of Windows, interface numbers are only required to be increasing, not consecutive.
-
-For additional information about interface numbers, see [Composite USB devices whose interfaces are not sequentially numbered do not work in Windows XP](https://support.microsoft.com/help/814560).
 
 Alternate settings for an interface should be assigned as follows for all versions of Windows:
 
@@ -590,7 +583,7 @@ The major restrictions imposed on hardware devices and drivers by **Usbccgp.sys*
 
 See the blog post about [How to include and view WPP trace messages in a driver’s public PDB files](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/archive/2013/06/29/wpp-blog-post.aspx).
 
-For additional information about USB core stack debugging, see [How to enable verbose debug tracing in various drivers and subsystems](https://support.microsoft.com/help/314743).
+For information about USB devices and ETW events, see [Debugging USB device issues by using ETW events](./best-practices--debugging-usb-device-problems.md).
 
 ## Does Windows support Interface Association Descriptors?
 

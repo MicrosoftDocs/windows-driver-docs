@@ -98,7 +98,6 @@ The other projects in the Sysvad sample are summarized below.
 
 |**Project**|**Description**|
 |----|----|
-| PhoneAudioSample       | Sample code for a mobile audio driver.     |
 | TabletAudioSample      | Sample code for an alternate audio driver. |
 | KeywordDetectorAdapter | Sample code for a keyword detector adapter |
 | EndpointsCommon        | Sample code for common endpoints.          |

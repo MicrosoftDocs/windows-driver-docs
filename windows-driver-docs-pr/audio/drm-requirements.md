@@ -21,9 +21,7 @@ ms.localizationpriority: medium
 
 This section presents the requirements that an audio miniport driver must meet to pass DRM-compliance testing by Microsoft Windows Hardware Quality Lab (WHQL). These requirements apply specifically to WaveCyclic and WavePci [audio miniport drivers](audio-miniport-drivers.md), which are hardware-specific counterparts to the WavePci and WaveCyclic port drivers in the Port Class Library (Portcls.sys). DRM-compliance testing is not currently available for USB drivers.
 
-In Windows Me and in Windows XP and later, only trusted audio drivers can play DRM-protected content. Windows identifies a trusted driver by means of a DRM-specific digital signature that is stored in the driver's .cat (catalog) files. Microsoft issues a DRM signature only for a driver that passes the DRM-compliance test as part of the hardware-compatibility testing administered by WHQL.
-
-For Windows Me drivers, the DRM-compliance test is optional and is performed only at the hardware vendor's request. The DRM signature is separate from and in addition to the Windows-logo signature. Note that a driver that passes the Windows-logo test but not the DRM-compliance test still can play content that is not protected by DRM security.
+In Windows XP and later, only trusted audio drivers can play DRM-protected content. Windows identifies a trusted driver by means of a DRM-specific digital signature that is stored in the driver's .cat (catalog) files. Microsoft issues a DRM signature only for a driver that passes the DRM-compliance test as part of the hardware-compatibility testing administered by WHQL.
 
 For Windows XP and later, however, the DRM-compliance test is a required part of WHQL testing. A driver must pass the DRM-compliance test in order to qualify for the "Designed for Windows XP" logo.
 

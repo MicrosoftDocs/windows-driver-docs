@@ -87,9 +87,7 @@ Requirements
 
 [**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85))
 
-[RtlAssert](/windows-hardware/drivers/ifs/rxassert)
+[RtlAssert]()
 
 [**RxDbgBreakPoint**](rxdbgbreakpoint.md)
-
- 
 

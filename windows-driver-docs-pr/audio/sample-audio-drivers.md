@@ -11,6 +11,7 @@ keywords:
 - Gfx sample audio driver WDK audio
 - Mpu401 sample audio driver WDK audio
 - Msvad sample audio driver WDK audio
+- Sysvad sample audio driver WDK audio
 - Sb16 sample audio driver WDK audio
 - Stdunk sample audio driver WDK audio
 ms.date: 04/20/2017
@@ -32,10 +33,6 @@ The *sysvad* solution file contains the following projects.
 -   **TabletAudioSample**
 
     The *TabletAudioSample* project demonstrates how to develop a WDM audio driver that exposes support for multiple audio devices. Some of these audio devices are embedded (speakers, mic arrays) in the system while others are pluggable (headphone speaker/mic, Bluetooth headsets speaker/mic). The driver uses WaveRT and audio offloading for rendering devices. The driver uses a "virtual audio device" instead of an actual hardware-based adapter and highlights the different aspects of the audio offloading WDM audio driver architecture. For more information about the Windows audio engine, see [Hardware-Offloaded Audio Processing (Windows Drivers)](hardware-offloaded-audio-processing.md).
-
--   **PhoneAudioSample**
-
-    The *PhoneAudioSample* project is very similar to the *TabletAudioSample* project. It includes optimizations for mobile devices.
 
 -   **EndpointsCommon**
 

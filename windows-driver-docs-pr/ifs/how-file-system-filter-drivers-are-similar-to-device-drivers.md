@@ -27,6 +27,6 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **Other Similarities**
 
-  - Like device drivers, file system filter drivers can receive [Introduction to I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) (IOCTLs). Note that file system filter drivers can also receive and define [file system control codes](/windows-hardware/drivers/ifs/fsctl-add-overlay) (FSCTLs).
+  - Like device drivers, file system filter drivers can receive [I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) (IOCTLs). Note that file system filter drivers can also receive and define [file system control codes](./fsctl-add-overlay.md) (FSCTLs).
 
   - Like device drivers, file system filter drivers can be configured to be loaded at system startup time or to be loaded later, after the system startup process is complete.

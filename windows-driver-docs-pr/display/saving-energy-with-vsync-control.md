@@ -28,7 +28,7 @@ A Windows Vista with SP1 or later system with a driver that follows the WDDM an
 
 ## Display-Only VSync Requirements for Windows 8 and later versions
 
-In Windows 8 and later versions of the Windows operating system, it's optional for a [kernel mode display-only driver (KMDOD)](/windows-hardware/drivers/ddi/index) to support VSync functionality, as follows:
+In Windows 8 and later versions of the Windows operating system, it's optional for a kernel mode display-only driver (KMDOD) to support VSync functionality, as follows:
 
 - **Display-only driver supports VSync control**
 

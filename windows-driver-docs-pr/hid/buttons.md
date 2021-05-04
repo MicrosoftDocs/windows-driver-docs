@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Use the Microsoft-provided button driver for GPIO buttons; otherwise, implement your driver that injects HID data to the operating system.
 
-Buttons (Power, Windows, volume and rotation lock) are typically used for tasks that occur while the physical keyboard is not available to the user, on form factors such as convertibles or slates. Buttons declare themselves to the operating system as HID devices by supplying [HID button report descriptors](../gpiobtn/hid-button-report-descriptors.md). This allows the system to interpret the purpose and events of those buttons in a standardized way. When a button state changes, that event is mapped to a [HID Usages](hid-usages.md). A HID transport minidriver reports those events to upper-level drivers that then send details to HID clients in user mode or kernel mode.
+Buttons (Power, Windows, volume and rotation lock) are typically used for tasks that occur while the physical keyboard is not available to the user, on form factors such as convertibles or slates. Buttons declare themselves to the operating system as HID devices by supplying [HID button report descriptors](./acpi-button-device.md). This allows the system to interpret the purpose and events of those buttons in a standardized way. When a button state changes, that event is mapped to a [HID Usages](hid-usages.md). A HID transport minidriver reports those events to upper-level drivers that then send details to HID clients in user mode or kernel mode.
 
 For physical general-purpose I/O (GPIO) buttons, the HID transport minidriver is a Microsoft-provided in-box driver that reports the events based on the interrupts that are received on the defined GPIO hardware resources.
 
@@ -64,4 +64,4 @@ For step-by-step guidance, see [Getting Started with Universal Windows drivers](
 
 ## Related topics
 
-[Human Interface Device](/windows-hardware/drivers/hid/)
+[Human Interface Device](./index.md)

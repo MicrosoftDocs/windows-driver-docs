@@ -1,7 +1,7 @@
 ---
 title: Low Latency Audio
 description: This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
-ms.date: 04/20/2017
+ms.date: 01/19/2021
 ms.localizationpriority: medium
 ---
 
@@ -410,27 +410,39 @@ The following three sections will explain each new feature in more depth.
 
 A driver operates under various constraints when moving audio data between the OS, the driver, and the hardware. These constraints may be due to the physical hardware transport that moves data between memory and hardware, and/or due to the signal processing modules within the hardware or associated DSP.
 
-In Windows 10 the driver can express its buffer size capabilities using the DEVPKEY\_KsAudio\_PacketSize\_Constraints device property. This property allows the user to define the absolute minimum buffer size that is supported by the driver, as well as specific buffer size constraints for each signal processing mode (the mode-specific constraints need to be higher than the drivers minimum buffer size, otherwise they are ignored by the audio stack). For example, the following code snippet shows how a driver can declare that the absolute minimum supported buffer size is 1ms, but default mode supports 128 frames (which corresponds to 3 ms, if we assume 48 kHz sample rate).
+Beginning in Windows 10, version 1607, the driver can express its buffer size capabilities using the DEVPKEY\_KsAudio\_PacketSize\_Constraints2 device property. This property allows the user to define the absolute minimum buffer size that is supported by the driver, as well as specific buffer size constraints for each signal processing mode (the mode-specific constraints need to be higher than the drivers minimum buffer size, otherwise they are ignored by the audio stack).
+
+For example, the following code snippet shows how a driver can declare that the absolute minimum supported buffer size is 2 ms, but default mode supports 128 frames (which corresponds to 3 ms, if we assume 48 kHz sample rate).
 
 ```cpp
-// Describe constraints for small buffers
+ 
+//
+// Describe buffer size constraints for WaveRT buffers
+//
 static struct
 {
-    KSAUDIO_PACKETSIZE_CONSTRAINTS TransportPacketConstraints;
+    KSAUDIO_PACKETSIZE_CONSTRAINTS2 TransportPacketConstraints;
     KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT AdditionalProcessingConstraints[1];
 } SysvadWaveRtPacketSizeConstraintsRender =
 {
     {
-        1 * HNSTIME_PER_MILLISECOND,                // 1 ms minimum processing interval
-        FILE_256_BYTE_ALIGNMENT,                    // 256 byte packet size alignment
-        0,                                          // reserved
-        1,                                          // 1 processing constraint below
+        2 * HNSTIME_PER_MILLISECOND,                // 2 ms minimum processing interval
+        FILE_BYTE_ALIGNMENT,                        // 1 byte packet size alignment
+        0,                                          // no maximum packet size constraint
+        2,                                          // 2 processing constraints follow
         {
             STATIC_AUDIO_SIGNALPROCESSINGMODE_DEFAULT,          // constraint for default processing mode
-            128,                                  // 128 samples per processing frame
-            0,                                    // N/A hns per processing frame
-       },
+            128,                                                // 128 samples per processing frame
+            0,                                                  // NA hns per processing frame
+        },
     },
+    {
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_MOVIE,            // constraint for movie processing mode
+            1024,                                               // 1024 samples per processing frame
+            0,                                                  // NA hns per processing frame
+        },
+    }
 };
 ```
 

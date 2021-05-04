@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use).
+You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](./system-defined-device-setup-classes-reserved-for-system-use.md).
 
 If your device meets both of the following criteria, you should assign it to an existing device setup class:
 
@@ -35,6 +35,4 @@ If you think a new device setup class is needed, your new class should be based 
 Before creating a new device setup class, contact Microsoft to find out if a new system-supplied device setup class is being planned for your device type
 
 You can create a new device setup class by using an INF file. In addition to installing support for a device, an INF file can initialize a new device setup class for the device. Such an INF file has an [**INF ClassInstall32 section**](inf-classinstall32-section.md).
-
- 
 

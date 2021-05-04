@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 08/06/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,6 +13,67 @@ ms.localizationpriority: medium
 ![Small logo on windbg preview](images/windbgx-preview-logo.png)
 
 This topic provides information on what's new in the WinDbg Preview debugger.
+
+## 1.2104.13002.0
+
+### Smart number selection and search
+
+A convenient productivity feature of WinDbgNext is the ability to detect patterns in the command window. To do this, select any text, and all other instances of that text highlighted. Because this highlighting is useful when looking at memory patterns, it now will also highlight equivalent numbers in other radixes,  no matter how the number is formatted in hex, decimal, or scientific notation. For more information about numbering schemes, see [n (Set Number Base)](n--set-number-base-.md)).
+
+Example:
+
+When selecting `0x000001e2fb3f6160`, all other instances are highlighted no matter the format.
+
+![Image showing six or so examples of numbers being highlighted based on one number being selected](images\windbgx-command-highlighting.png)
+
+This feature works with semi-temporary highlights as well. Ctrl + Double Click on a number to highlight all its instances. You can keep track of multiple important numbers throughout your command history this way (to clear the highlight, Ctrl + Double Click on the number again). Finally, this feature also works when searching numbers with Ctrl + F.
+
+### Source Code Extended Access
+
+The source path command (.srcpath, .lsrcpath (Set Source Path))[-srcpath---lsrcpath--set-source-path-.md] has been updated to include a new tag – *DebugInfoD*. For more information, see [Source Code Extended Access](source-code-extended-access.md).
+
+### Host and guest states of WOW processes in the data model
+
+When debugging a 32-bit WOW process from a 64-bit context, users can now access both the host and guest states within the data model.
+
+32 bit guest state examples:
+
+`dx @$curprocess.Environment`
+
+`dx @$curthread.Environment`
+
+`dx @$curthread.Stack`
+
+64 bit host state examples:
+
+`dx @$curprocess.NativeEnvironment`
+
+`dx @$curthread.NativeEnvironment`
+
+`dx @$curthread.NativeStack`
+
+
+#### Javascript Debugging Improvements
+
+Javascript loaded in the UI can now be directly debugged within the console using the .scriptdebug command. For more information, see [JavaScript Debugger Scripting - JavaScript Debugging](javascript-debugger-scripting.md#javascript-debugging).
+
+### Accessibility improvements
+
+With WinDbgNext we are committed to building a debugger that is inclusive to engineers with disabilities, we are continuously improving accessibility. The following improvements have been made.
+
+- Command window links can now be clicked via the keyboard (Shift+Enter)
+- Improved keyboard navigation of main menu
+- Improved keyboard navigation of ribbon
+- Increased contrast on UI elements
+
+### New “Overwrite” data access type for Time Travel Debugger
+
+Time Travel Debugger (TTD) now provides an “Overwrite” data access type. Memory queries such as `dx @$cursession.TTD.Memory()` now have an additional column showing the old values of writes.
+
+### Other fixes, improvements, and updates
+
+- Added feature to automatically detect and apply workaround for USB 3.1 hardware issue when both kernel debugging host and target are USB 3.1 controllers.
+- Added a new UI shortcut: Ctrl + Shift + Click over a DML link will to copy it to the clipboard
 
 ## 1.0.2007.01003
 

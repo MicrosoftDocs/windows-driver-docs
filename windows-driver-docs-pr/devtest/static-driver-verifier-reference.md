@@ -27,7 +27,5 @@ This section includes:
 ## <span id="related_topics"></span>Related topics
 
 
-[DDI Compliance Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules)
-
- 
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 

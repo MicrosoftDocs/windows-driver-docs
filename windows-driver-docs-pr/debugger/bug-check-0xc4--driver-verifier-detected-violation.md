@@ -35,7 +35,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x01|Current IRQL|Pool type|Size of allocation, in bytes|The driver attempted to allocate paged memory with IRQL > APC_LEVEL.|
 |0x02|Current IRQL|Pool type|Size of allocation, in bytes|The driver attempted to allocate nonpaged memory with IRQL > DISPATCH_LEVEL.|
 |0x03| | | |The caller is trying to allocate more than one page of must succeed pool, but one page is the maximum allowed by this API. |
-|0x10|Bad Address|0|0|The driver attempted to free an address that was not returned from an allocate call.|
+|0x10|Bad Address| 0 | 0 |The driver attempted to free an address that was not returned from an allocate call.|
 |0x11|Current IRQL|Pool type|Address of pool|The driver attempted to free paged pool with IRQL > APC_LEVEL.|
 |0x12|Current IRQL|Pool type|Address of pool|The driver attempted to free nonpaged pool with IRQL > DISPATCH_LEVEL.|
 |0x13 or 0x14|Reserved|Pointer to pool header|Pool header contents|The driver attempted to free memory pool which was already freed.|
@@ -55,8 +55,8 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x3A|Current IRQL|Thread APC disable count|Mutex|The driver tried to release a mutex "unsafe" with IRQL not equal to APC_LEVEL on entry.|
 |0x3B|Current IRQL|Object to wait on|Time out parameter|KeWaitXxx routine is being called at DISPATCH_LEVEL or higher.|
 |0x3C|Handle passed to routine|Object type|0|The driver called [ObReferenceObjectByHandle](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) with a bad handle.|
-|0x3D|0|0|Address of the bad resource|The driver passed a bad (unaligned) resource to [ExAcquireResourceExclusive](../kernel/mmcreatemdl.md).|
-|0x3E|0|0|0|The driver called [KeLeaveCriticalRegion](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion) for a thread that is not currently in a critical region.|
+|0x3D| 0 | 0 |Address of the bad resource|The driver passed a bad (unaligned) resource to [ExAcquireResourceExclusive](../kernel/mmcreatemdl.md).|
+|0x3E| 0 | 0 |0|The driver called [KeLeaveCriticalRegion](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion) for a thread that is not currently in a critical region.|
 |0x3F|Object address|New object reference count. -1: dereference case  1: reference case|0|The driver applied [ObReferenceObject](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) to an object that has a reference count of zero, or the driver applied [ObDereferenceObject](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) to an object that has a reference count of zero.|
 |0x40|Current IRQL|Spin lock address|0|The driver called [KeAcquireSpinLockAtDpcLevel](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlockatdpclevel) with IRQL < DISPATCH_LEVEL.|
 |0x41|Current IRQL|Spin lock address|0|The driver called [KeReleaseSpinLockFromDpcLevel](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlockfromdpclevel) with IRQL < DISPATCH_LEVEL.|
@@ -118,7 +118,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0xB9 |Address being unmapped.|MDL address.|Reserved|MmUnmapLockedPages called with a bad user space address.|
 |0xC0 |Address of the IRP|0|Reserved|The driver called [IoCallDriver](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) with interrupts disabled.|
 |0xC1 |Address of the driver dispatch routine|Reserved|Reserved|A driver dispatch routine was returned with interrupts disabled.|
-|0xC2 |0|0|0|The driver called a Fast I/O dispatch routine after interrupts were disabled.|
+|0xC2 | 0 | 0 |0|The driver called a Fast I/O dispatch routine after interrupts were disabled.|
 |0xC3 |Address of the driver Fast I/O dispatch routine|Reserved|Reserved|A driver Fast I/O dispatch routine was returned with interrupts disabled.|
 |0xC5 |Address of the driver dispatch routine|The current thread's APC disable count|The thread's APC disable count prior to calling the driver dispatch routine|A driver dispatch routine has changed the thread's APC disable count. The APC disable count is decremented each time a driver calls [KeEnterCriticalRegion](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion), [FsRtlEnterFileSystem](../ifs/fsrtlenterfilesystem.md), or acquires a mutex. The APC disable count is incremented each time a driver calls [KeLeaveCriticalRegion](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion), [KeReleaseMutex](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasemutex), or [FsRtlExitFileSystem](../ifs/fsrtlexitfilesystem.md). Because these calls should always be in pairs, the APC disable count should be zero whenever a thread is exited. A negative value indicates that a driver has disabled APC calls without re-enabling them. A positive value indicates that the reverse is true.|
 |0xC6 |Address of the driver Fast I/O dispatch routine|Current thread's APC disable count|The thread's APC disable count prior to calling the Fast I/O driver dispatch routine|A driver Fast I/O dispatch routine has changed the thread's APC disable count. The APC disable count is decremented each time a driver calls [KeEnterCriticalRegion](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion), [FsRtlEnterFileSystem](../ifs/fsrtlenterfilesystem.md), or acquires a mutex. The APC disable count is incremented each time a driver calls [KeLeaveCriticalRegion](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion), [KeReleaseMutex](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasemutex), or [FsRtlExitFileSystem](../ifs/fsrtlexitfilesystem.md). Because these calls should always be in pairs, the APC disable count should be zero whenever a thread is exited. A negative value indicates that a driver has disabled APC calls without re-enabling them. A positive value indicates that the reverse is true.|
@@ -136,7 +136,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0xDB |Address of the device object|Reserved|Reserved|An attempt was made to delete a device object that was not deregistered from WMI.|
 |0xDC |Reserved|Reserved|Reserved|An invalid RegHandle value was specified as a parameter of the function [EtwUnregister](/windows-hardware/drivers/ddi/wdm/nf-wdm-etwunregister).|
 |0xDD |Address of the call to EtwRegister|Starting address of the unloading driver|For Windows 8 and later versions, this parameter is the ETW RegHandle value.|An attempt was made to unload a driver without calling [EtwUnregister](/windows-hardware/drivers/ddi/wdm/nf-wdm-etwunregister).|
-|0xDF |Synchronization object address|0|0|The synchronization object is in session address space. Synchronization objects are not allowed in session address space because they can be manipulated from another session or from system threads that have no session virtual address space.|
+|0xDF |Synchronization object address| 0 | 0 |The synchronization object is in session address space. Synchronization objects are not allowed in session address space because they can be manipulated from another session or from system threads that have no session virtual address space.|
 |0xE0 |User-mode address that is used as a parameter|Size ,in bytes, of the address range that is used as a parameter|Reserved|A call was made to an operating system kernel function that specified a user-mode address as a parameter.|
 |0xE1 |Address of the synchronization object|Reserved|Reserved|A synchronization object was found to have an address that was either invalid or pageable.|
 |0xE2 |Address of the IRP|User-mode address present in the IRP|Reserved|An IRP with Irp->RequestorMode set to KernelMode was found to have a user-mode address as one of its members.|
@@ -156,56 +156,56 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 
 ### 0x105 to 0x140
 
-|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
-|--- |--- |--- |--- |--- |
-|0x105 |Address of the IRP|0|0|The driver uses ExFreePool instead of IoFreeIrp to release the IRP.|
-|0x10A |0|0|0|The driver attempts to charge pool quota to the Idle process.|
-|0x10B |0|0|0|The driver attempts to charge pool quota from a DPC routine. This is incorrect because the current process context is undefined.|
-|0x110 |0|0|0|Address of the Interrupt Service Routine|Address of the extended context that was saved before it executed the ISR|Address of the extended context was saved after it executed the ISR|The interrupt service routine (ISR) for the driver has corrupted the extended thread context.|
-|0x111 |Address of the Interrupt Service Routine|IRQL before executing ISR|IRQL after executing ISR|The interrupt Service Routine returned a changed IRQL.|
-|0x115 |The address of the thread responsible for the shutdown, that might be deadlocked.|0|0|Driver Verifier detected that the system has taken longer than 20 minutes and shutdown is not complete.|
-|0x11A |Current IRQL|0|0|The driver calls KeEnterCriticalRegion at IRQL > APC_LEVEL.|
-|0x11B |Current IRQL|0|0|The driver calls KeLeaveCriticalRegion at IRQL > APC_LEVEL.|
+| Parameter 1 | Parameter 2        | Parameter 3 | Parameter 4 | Cause of Error                                                      |
+|-------------|--------------------|-------------|-------------|---------------------------------------------------------------------|
+| 0x105       | Address of the IRP | 0           | 0           | The driver uses ExFreePool instead of IoFreeIrp to release the IRP. |
+| 0x10A       | 0                  | 0           | 0           | The driver attempts to charge pool quota to the Idle process.       |
+| 0x10B       | 0                  | 0           |0            |The driver attempts to charge pool quota from a DPC routine. This is incorrect because the current process context is undefined.|
+| 0x110       | Address of the Interrupt Service Routine | Address of the extended context that was saved before it executed the ISR |Address of the extended context was saved after it executed the ISR|The interrupt service routine (ISR) for the driver has corrupted the extended thread context.|
+|0x111 | Address of the Interrupt Service Routine|IRQL before executing ISR|IRQL after executing ISR|The interrupt Service Routine returned a changed IRQL.|
+|0x115 | The address of the thread responsible for the shutdown, that might be deadlocked.| 0 | 0 |Driver Verifier detected that the system has taken longer than 20 minutes and shutdown is not complete.|
+|0x11A | Current IRQL| 0| 0| The driver calls KeEnterCriticalRegion at IRQL > APC_LEVEL.|
+|0x11B | Current IRQL| 0| 0|The driver calls KeLeaveCriticalRegion at IRQL > APC_LEVEL.|
 |0x120 |Address of the IRQL value|Address of the Object to wait on|Address of Timeout value|The thread waits at IRQL > DISPATCH_LEVEL. Callers of KeWaitForSingleObject or KeWaitForMultipleObjects must run at IRQL <= DISPATCH_LEVEL.|
 |0x121 |Address of the IRQL value|Address of the Object to wait on|Address of Timeout value|The thread waits at IRQL equals DISPATCH_LEVEL and the Timeout is NULL. Callers of KeWaitForSingleObject or KeWaitForMultipleObjects can run at IRQL <= DISPATCH_LEVEL. If a NULL pointer is supplied for Timeout, the calling thread remains in a wait state until the Object is signaled.|
 |0x122 |Address of the IRQL value|Address of the Object to wait on|Address of the Timeout value|The thread waits at DISPATCH_LEVEL and Timeout value is not equal to zero (0). If the Timeout != 0, the callers of KeWaitForSingleObject or KeWaitForMultipleObjects must run at IRQL <= APC_LEVEL.|
-|0x123 |Address of the Object to wait on|0|0|The caller of KeWaitForSingleObject or KeWaitForMultipleObjects specified the wait as UserMode, but the Object is on the kernel stack.|
-|0x130 |Address of work item|0|0|The work item is in session address space. Work items are not allowed in session address space because they can be manipulated from another session or from system threads that have no session virtual address space.|
-|0x131 |Address of work item|0|0|The work item is in pageable memory. Work items have to be in nonpageable memory because the kernel uses them at DISPATCH_LEVEL.|
-|0x135|Address of IRP|Number of milliseconds allowed between the [IoCancelIrp](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocancelirp) call and the completion for this IRP|0|The canceled IRP did not completed in the expected time The driver took longer than expected to complete the canceled IRP.|
-|0x13A|Address of the pool block being freed|Incorrect value|Address of the incorrect value|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
-|0x13B|Address of the pool block being freed|Address of the incorrect value|Address of a pointer to the incorrect memory page|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
-|0x13C|Address of the pool block being freed|Incorrect value|Address of the incorrect value|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
-|0x13D|Address of the pool block being freed|Address of the incorrect value|Correct value that was expected|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
-|0x13E|Pool block address specified by the caller|Pool block address tracked by Driver Verifier|Pointer to the pool block address that is tracked by Driver Verifier|The pool block address specified by the caller of [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) is different from the address tracked by Driver Verifier.|
+|0x123 |Address of the Object to wait on| 0 | 0 |The caller of KeWaitForSingleObject or KeWaitForMultipleObjects specified the wait as UserMode, but the Object is on the kernel stack.|
+|0x130 |Address of work item| 0 | 0 |The work item is in session address space. Work items are not allowed in session address space because they can be manipulated from another session or from system threads that have no session virtual address space.|
+|0x131 |Address of work item| 0 | 0 |The work item is in pageable memory. Work items have to be in nonpageable memory because the kernel uses them at DISPATCH_LEVEL.|
+|0x135 |Address of IRP|Number of milliseconds allowed between the [IoCancelIrp](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocancelirp) call and the completion for this IRP|0|The canceled IRP did not completed in the expected time The driver took longer than expected to complete the canceled IRP.|
+|0x13A |Address of the pool block being freed|Incorrect value|Address of the incorrect value|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
+|0x13B |Address of the pool block being freed|Address of the incorrect value|Address of a pointer to the incorrect memory page|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
+|0x13C |Address of the pool block being freed|Incorrect value|Address of the incorrect value|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
+|0x13D |Address of the pool block being freed|Address of the incorrect value|Correct value that was expected|The driver has called [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.|
+|0x13E |Pool block address specified by the caller|Pool block address tracked by Driver Verifier|Pointer to the pool block address that is tracked by Driver Verifier|The pool block address specified by the caller of [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) is different from the address tracked by Driver Verifier.|
 |0x13F|Address of the pool block being freed|Number of bytes being freed|Pointer to the number of bytes tracked by Driver Verifier|The number of bytes of memory being freed in the call to [ExFreePool](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) is different from the number of bytes tracked by Driver Verifier.|
-|0x140|Current IRQL|MDL address|Associated virtual address with this MDL|A non-locked MDL was constructed from either pageable or tradable memory.|
-|0x141|Highest physical address the driver requested for allocation|Number of bytes to allocate|0|The driver is explicitly requesting physical memory under 4GB.|
+|0x140 |Current IRQL|MDL address|Associated virtual address with this MDL|A non-locked MDL was constructed from either pageable or tradable memory.|
+|0x141 |Highest physical address the driver requested for allocation|Number of bytes to allocate|0|The driver is explicitly requesting physical memory under 4GB.|
 
 ### 0x1000 to 0x100B - Deadlocks
 
-|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
-|--- |--- |--- |--- |--- |
-|0x1000 |Address of the resource|Reserved|Reserved|Self-deadlock: The current thread has tried to recursively and exclusively acquire a resource which it only owns shared. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1001 |Address of the resource that was the final cause of the deadlock|Reserved|Reserved|Deadlock: A lock hierarchy violation has been found. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active. (Use the [!deadlock](-deadlock.md) extension for further information.)|
-|0x1002 |Address of the resource|Reserved|Reserved|Uninitialized resource: A resource has been acquired without having been initialized first. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1003 |Address of the resource that is being released deadlocked|Address of the resource that should have been released first|Reserved|Unexpected release: A resource has been released in an incorrect order. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1004 |Address of the resource|Address of the thread that acquired the resource|Address of the current thread|Unexpected thread: The wrong thread releases a resource. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1005 |Address of the resource|Reserved|Reserved|Multiple initialization: A resource is initialized more than one time. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1007 |Address of the resource|Reserved|Reserved|Unacquired resource: A resource is released before it has been acquired. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1008 |Lock address|Reserved|Reserved|The driver tried to acquire a lock by using an API that is mismatched for this lock type.|
-|0x1009 |Lock address|Reserved|Reserved|The driver tried to release a lock by using an API that is mismatched for this lock type.|
-|0x100A |Owner thread address|Reserved|The terminated thread owns the lock.|
-|0x100B |Lock address|Owner thread address|Reserved|The deleted lock is still owned by a thread.|
-|0x1010 |Device object to which the Write IRP was issued.|The address of the IRP.|System-Space Virtual Address for the buffer that the MDL describes.|Invariant MDL buffer contents for Write Irp were modified.|
-|0x1011 |Device object to which the Write IRP was issued.|The address of the IRP.|System-Space Virtual Address for the buffer that the MDL describes.|Invariant MDL buffer contents for Read Irp were modified during dispatch or buffer backed by dummy pages.|
-|0x1012 |A pointer to the string describing the violation.|Data that is involved in this corruption (0 if not used).|Data that is involved in this corruption (0 if not used).|Verifier extension state storage detected corruption.|
-|0x1013 |A pointer to the driver object.|A pointer to the captured original I/O callbacks.|Reserved (unused).|Verifier detected internal corruption in the captured original I/O callbacks.|
+| Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4 | Cause of Error |
+|-------------|-------------|-------------|-------------|----------------|
+|0x1000 | Address of the resource| Reserved | Reserved | Self-deadlock: The current thread has tried to recursively and exclusively acquire a resource which it only owns shared. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1001 | Address of the resource that was the final cause of the deadlock|Reserved|Reserved|Deadlock: A lock hierarchy violation has been found. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active. (Use the [!deadlock](-deadlock.md) extension for further information.)|
+|0x1002 | Address of the resource|Reserved|Reserved|Uninitialized resource: A resource has been acquired without having been initialized first. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1003 | Address of the resource that is being released deadlocked|Address of the resource that should have been released first|Reserved|Unexpected release: A resource has been released in an incorrect order. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1004 | Address of the resource|Address of the thread that acquired the resource|Address of the current thread|Unexpected thread: The wrong thread releases a resource. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1005 | Address of the resource|Reserved|Reserved|Multiple initialization: A resource is initialized more than one time. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1007 | Address of the resource|Reserved|Reserved|Unacquired resource: A resource is released before it has been acquired. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1008 | Lock address|Reserved|Reserved|The driver tried to acquire a lock by using an API that is mismatched for this lock type.|
+|0x1009 | Lock address|Reserved|Reserved|The driver tried to release a lock by using an API that is mismatched for this lock type.|
+|0x100A | Owner thread address|Reserved|The terminated thread owns the lock.|
+|0x100B | Lock address|Owner thread address|Reserved|The deleted lock is still owned by a thread.|
+|0x1010 | Device object to which the Write IRP was issued.|The address of the IRP.|System-Space Virtual Address for the buffer that the MDL describes.|Invariant MDL buffer contents for Write Irp were modified.|
+|0x1011 | Device object to which the Write IRP was issued.|The address of the IRP.|System-Space Virtual Address for the buffer that the MDL describes.|Invariant MDL buffer contents for Read Irp were modified during dispatch or buffer backed by dummy pages.|
+|0x1012 | A pointer to the string describing the violation.|Data that is involved in this corruption (0 if not used).|Data that is involved in this corruption (0 if not used).|Verifier extension state storage detected corruption.|
+|0x1013 | A pointer to the driver object.|A pointer to the captured original I/O callbacks.|Reserved (unused).|Verifier detected internal corruption in the captured original I/O callbacks.|
 
 ### 0x2000 to 0x2005 - Code Integrity Issues
 
-|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
-|--- |--- |--- |--- |--- |
+| Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4 | Cause of Error |
+|-------------|-------------|-------------|-------------|----------------|
 |0x2000 |The address in the driver's code where the error was detected. |Pool Type. | Pool Tag (if provided).|Code Integrity Issue: The caller specified an executable pool type. (Expected: NonPagedPoolNx) |
 |0x2001 |The address in the driver's code where the error was detected. |Page Protection (WIN32_PROTECTION_MASK). | 0 |Code Integrity Issue: The caller specified an executable page protection. (Expected: cleared PAGE_EXECUTE* bits) |
 |0x2002 |The address in the driver's code where the error was detected. |Page Priority (MM_PAGE_PRIORITY logically OR'd with MdlMapping*). |0|Code Integrity Issue: The caller specified an executable MDL mapping. (Expected: MdlMappingNoExecute) |
@@ -240,7 +240,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x00020003 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlDispatch](../devtest/wdm-irqldispatch.md). The IrqlDispatch rule specifies that the driver must call certain routines only when IRQL = DISPATCH_LEVEL|
 |0x00020004 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlExAllocatePool](../devtest/wdm-irqlexallocatepool.md). The IrqlExAllocatePool rule specifies that the driver calls [ExAllocatePoolWithTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and [ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) only when at IRQL<=DISPATCH_LEVEL.|
 |0x00020005 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlExApcLte1](../devtest/wdm-irqlexapclte1.md). The IrqlExApcLte1 rule specifies that the driver calls ExAcquireFastMutex and ExTryToAcquireFastMutex only at IRQL <= APC_LEVEL.|
-|0x00020006 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlExApcLte2](/windows-hardware/drivers/ddi/index). The IrqlExApcLte2 rule specifies that the driver calls certain routines only when IRQL <= APC_LEVEL.|
+|0x00020006 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlExApcLte2](../devtest/wdm-irqlexapclte2.md). The IrqlExApcLte2 rule specifies that the driver calls certain routines only when IRQL <= APC_LEVEL.|
 |0x00020007 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlExApcLte3](../devtest/wdm-irqlexapclte3.md). The IrqlExApcLte3 rule specifies that the driver must call certain executive support routines only when IRQL <= APC_LEVEL.|
 |0x00020008 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlExPassive](../devtest/wdm-irqlexpassive.md). The IrqlExPassive rule specifies that the driver must call certain executive support routines only when IRQL = PASSIVE_LEVEL.|
 |0x00020009 |Pointer to the string that describes the violated rule condition.|Optional pointer to the rule state variable(s).|Reserved|The driver violated the DDI compliance rule [IrqlIoApcLte](../devtest/wdm-irqlioapclte.md). The IrqlIoApcLte rule specifies that the driver must call certain I/O manager routines only when IRQL <= APC_LEVEL.|

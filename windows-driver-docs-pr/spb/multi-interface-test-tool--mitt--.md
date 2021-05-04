@@ -55,4 +55,4 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
 ## Related topics
 
-[Testing with Multi Interface Test Tool (MITT)](./testing-with-multi-interface-test-tool--mitt-.md)
+[Testing with Multi Interface Test Tool (MITT)]()

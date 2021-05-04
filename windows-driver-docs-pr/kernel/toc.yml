@@ -248,6 +248,8 @@
     href: managing-memory-for-drivers.md
   - name: "Overview of Windows Memory Space"
     href: overview-of-windows-memory-space.md
+  - name: "Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3"
+    href: updating-deprecated-exallocatepool-calls.md
   - name: "Allocating System-Space Memory"
     href: allocating-system-space-memory.md
   - name: "POOL_FLAGS"

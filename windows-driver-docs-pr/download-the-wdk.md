@@ -16,7 +16,7 @@ ms.custom: 19H1
 The WDK is used to develop, test, and deploy Windows drivers.
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
-* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
+* [Review known issues](wdk-known-issues.md)
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
@@ -66,10 +66,10 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.25)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)
 ```
 
-### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.16385 for Windows 10, version 2004
+### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.19041.685 for Windows 10, version 2004
 * [Download SDK for Windows 10, version 2004](https://aka.ms/windowssdk)
 
-This SDK is strongly recommended and will eventually be made available thru Visual Studio
+This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
 ### ![download icon](images/download-install.png) Step 2: Install Refreshed WDK for Windows 10, version 2004
@@ -77,6 +77,9 @@ This SDK is strongly recommended and will eventually be made available thru Visu
 * [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
 The WDK Visual Studio extension is included in the default WDK installation.
+
+> [!TIP]
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2019\WDK.vsix.
 
 ## Enterprise WDK (EWDK) for Windows 10, version 2004
 
@@ -94,7 +97,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 >2.	Run `LaunchBuildEnv.cmd`.
 >3.	In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
 >4.	Launch devenv.exe from the same environment, using the full file path. 
->Example: `C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professionial|Enterprise%\Common7\IDE\devenv.exe`
+>Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 >
 >Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2019 works with the EWDK that contain VS16.X build tools. 
 

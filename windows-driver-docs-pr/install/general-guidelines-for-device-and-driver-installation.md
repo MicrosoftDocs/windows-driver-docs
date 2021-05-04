@@ -21,9 +21,7 @@ To provide the best possible user experience, use the following guidelines to de
 
 -   Leave your INF files on the system after installation; do not delete them. The INF file is used not only when the device or driver is first installed, but also when the user requests a driver update through Device Manager.
 
--   Use one of the [System-Defined Device Setup Classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). Do not define your own setup class unless there is a compelling reason to do so.
+-   Use one of the [System-Defined Device Setup Classes](./system-defined-device-setup-classes-reserved-for-system-use.md). Do not define your own setup class unless there is a compelling reason to do so.
 
 -   Do not make assumptions about the location, format, or meaning of registry keys or values. For more information about registry keys and trees, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
-
- 
 

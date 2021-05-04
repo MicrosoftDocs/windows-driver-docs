@@ -1,7 +1,7 @@
 ---
 title: Capacitive touch tests in MITT
 description: Capacitive touch tests in the MITT software package require MCATT (Microsoft Capacitive Applications Test Tool).
-ms.date: 04/20/2017
+ms.date: 04/27/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +20,7 @@ You can use MCATT for these test cases:
 - Get a MITT board. See [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md).
 - Get a touch simulator pad and a band cable to connect to the adapter.
 - Get an MCATT expansion board that has a 40-pin adapter to connect the MITT board to the touch simulator pad.
-- [Download the MITT software package](/previous-versions/dn919810(v=vs.85)).
+- [Download the MITT software package](download-the-mitt-software-package.md)
 - Install MITT firmware on the MITT board. See [Get started with MITT](./get-started-with-mitt---.md).
 
 ## Hardware setup

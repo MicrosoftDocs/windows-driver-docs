@@ -581,7 +581,7 @@ The bits of the Reject Reason byte are described in this table.
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. This value depends on the Status field. For a Status to RR Code mapping see Table 5.2-13. |
-| 8 | Reserved | 24 | Reserved. Do not use. |                                                             |
+| 8 | Reserved | 24 | Reserved. Do not use. |
 
 ###### Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response RR Code Values
 

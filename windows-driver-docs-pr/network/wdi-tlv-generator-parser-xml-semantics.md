@@ -7,6 +7,8 @@ ms.localizationpriority: medium
 
 # WDI TLV generator/parser XML semantics
 
+TLV (Type-Length-Value) is a protocol design where each bit of data is contained in a stream of bytes that has a standard Type and Length header.
+
 The TLV generator/parser XML file is a list of messages, containers (TLVs), and property groups (structs). This topic covers the XML syntax.
 
 - [`<message />`](#message-)

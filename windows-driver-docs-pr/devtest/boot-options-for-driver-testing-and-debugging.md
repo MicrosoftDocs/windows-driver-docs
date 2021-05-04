@@ -45,7 +45,7 @@ This section includes:
 - [Overview of Boot Options in Windows](boot-options-in-windows.md).
 - [Boot Options Identifiers](boot-options-identifiers.md)
 - [Editing Boot Options](editing-boot-options.md)
-- [BCD Boot Options Reference](/windows-hardware/drivers/devtest/bcd-boot-options-reference)
+- [BCD Boot Options Reference](./bcd-boot-options-reference.md)
 - [Using Boot Parameters](using-boot-parameters.md)
 - [BCD Boot Options Reference](bcd-boot-options-reference.md)
 - [Boot Options in Previous Versions of Windows](boot-options-in-previous-versions-of-windows.md)

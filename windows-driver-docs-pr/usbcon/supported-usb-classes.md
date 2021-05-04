@@ -34,7 +34,7 @@ The current list of USB class specifications and class codes is documented in th
 
 Windows categorizes devices by *device setup classes*, which indicate the functionality of the device.
 
-Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use).
+Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](../install/system-defined-device-setup-classes-reserved-for-system-use.md).
 
 Two important device setup classes for USB devices are as follows:
 
@@ -66,7 +66,7 @@ The device setup classes are different from USB device classes discussed earlier
       <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="/windows-hardware/drivers/audio/">Audio Device Technologies for Windows</a> website.</td>
     </tr>
     <tr>
-      <td rowspan="4">Communications and CDC Control (02h)</td>
+      <td rowspan="5">Communications and CDC Control (02h)</td>
         <tr>
         <td><strong>Ports</strong></br>{4D36E978-E325-11CE-BFC1-08002BE10318}</td>
         <td>Usbser.sys</br>Usbser.inf</td>
@@ -79,6 +79,12 @@ The device setup classes are different from USB device classes discussed earlier
         <td>Usbser.sys</br>Custom INF that references mdmcpq.inf</td>
         <td>Windows 10 for desktop editions</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
         <td>In Windows 8.1 and earlier versions, Usbser.sys is not automatically loaded. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) and includes \[Install\] and \[Needs\] sections.<p>Starting with Windows Vista, you can enable CDC and Wireless Mobile CDC (WMCDC) support by setting a registry value, as described in <a href="/windows-hardware/drivers/usbcon/support-for-interface-collections">Support for the Wireless Mobile Communication Device Class</a>.<p>When CDC support is enabled, the <a href="usb-common-class-generic-parent-driver.md">USB Common Class Generic Parent Driver</a> enumerates interface collections that correspond to CDC and WMCDC Control Models, and assigns physical device objects (PDO) to these collections.</td>
+      </tr>
+      <tr>
+        <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Dh (NCM)</td>
+        <td>UsbNcm.sys</br>UsbNcm.inf</td>
+        <td>Windows Insider Preview</td>
+        <td>Microsoft provides the UsbNcm.sys driver to operate devices that comply with <a href="https://www.usb.org/document-library/network-control-model-devices-specification-v10-and-errata-and-adopters-agreement">Usb NCM</a>. The source code for this driver is available at <a href="https://github.com/microsoft/NCM-Driver-for-Windows">NCM-Driver-for-Windows</a>.</td>
       </tr>
       <tr>
         <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Eh (MBIM)</td>
@@ -220,7 +226,7 @@ The device setup classes are different from USB device classes discussed earlier
 {4d36e972-e325-11ce-bfc1-08002be10318}<p><strong>Note</strong>  Supports SubClass 04h and Protocol 01h</td>
       <td>Rndismp.sys</br>Rndismp.inf</td>
       <td>Windows 10 for desktop editions</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Vista</td>
-      <td>Prior to Windows Vista, support for CDC is limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (<strong>bInterfaceProtocol</strong>) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see the <a href="/windows-hardware/drivers/network/">Networking and Wireless Technologies</a> website.</td>
+      <td><p><strong>Note</strong> Microsoft recommends that hardware vendors build USB NCM compatible devices instead. USB NCM is a public USB-IF protocol that offers better throughput performance.</p><p>Prior to Windows Vista, support for CDC was limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (<strong>bInterfaceProtocol</strong>) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see <a href="/windows-hardware/drivers/network/">Networking and Wireless Technologies</a>.</td>
     </tr>
     <tr>
       <td>Application Specific (FEh)</td>

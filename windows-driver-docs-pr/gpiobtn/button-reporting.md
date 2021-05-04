@@ -26,7 +26,7 @@ The in-box GPIO button driver reports the button presses and combinations listed
 
 All non-GPIO based implementations must follow the same reporting scheme.
 
-The order of definition is Power, Windows, Volume Up, Volume Down, and Rotation Lock. For examples of how to create HID descriptors for these, see [HID button report descriptors](hid-button-report-descriptors.md).
+The order of definition is Power, Windows, Volume Up, Volume Down, and Rotation Lock. For examples of how to create HID descriptors for these, see [HID button report descriptors](../hid/acpi-button-device.md).
 
 **Note**  
 Previous requirements described the use of **Win + O** for Rotation Lock. Although this combination is still functional, it is not impervious to keyboard layout changes, whereas **Win + F14** is layout-agnostic.
@@ -37,11 +37,11 @@ Previous requirements described the use of **Win + O** for Rotation Lock. Althou
 
 | Individual button reporting | Source              | Usage requirements      | Report trigger         | Repeated |
 |-----------------------------|---------------------|-------------------------|------------------------|----------|
-| Power                       | System Control      | 0x84 (Power)            | Physical Button – Up   | No       |
+| Power                       | System Control      | 0x81 (Power)            | Physical Button – Up   | No       |
 | Windows                     | Keyboard            | 0xE3 (Win)              | Physical Button – Up   | No       |
 | Volume Up                   | Consumer Collection | 0xE9 (Volume Up)        | Physical Button – Down | Yes      |
 | Volume Down                 | Consumer Collection | 0xEA (Volume Down)      | Physical Button – Down | Yes      |
-| Rotation Lock               | Keyboard            | 0xE3 = 0x69 (Win + F14) | Physical Button – Down | No       |
+| Rotation Lock               | Keyboard            | 0xE3 + 0x69 (Win + F14) | Physical Button – Down | No       |
 
  
 
@@ -95,8 +95,6 @@ The following keyboard combinations must be reported based on their completion, 
 -   For full guidance and implementation for the Power button, see [Power Button Behaviors and implementation](/collaborate/connect-redirect?DownloadID=47452).
 -   For Connected Standby guidance for buttons, see [Connected Standby Wake Sources](/collaborate/connect-redirect?DownloadID=49891).
 -   For additional guidance on ACPI implementation, see [ACPI Design Guide](/collaborate/connect-redirect?DownloadID=48755).
-
- 
 
  
 

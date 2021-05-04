@@ -39,7 +39,7 @@ Device installation security is controlled by *security descriptors*. The primar
 
 ### Security Settings for Devices and Interfaces
 
-The system supplies default security descriptors for all [system-supplied device setup classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). Generally, these descriptors allow full access for system administrators and read/write/execute access for users. (The security descriptors that control access to a device also control access to the device's [device interface classes](./overview-of-device-interface-classes.md), if any.)
+The system supplies default security descriptors for all [system-supplied device setup classes](./system-defined-device-setup-classes-reserved-for-system-use.md). Generally, these descriptors allow full access for system administrators and read/write/execute access for users. (The security descriptors that control access to a device also control access to the device's [device interface classes](./overview-of-device-interface-classes.md), if any.)
 
 INF files for WDM drivers can specify security settings, either per class or per device, that override the system's default settings. Vendors who create a new device setup class should specify a security descriptor for the class. Generally, specifying a device-specific security descriptor is not necessary. It might be useful to supply a device-specific security descriptor if different types of devices that belong to the same class have significantly different types of users.
 
@@ -88,4 +88,3 @@ Additionally, after an installation completes you can do the following:
 -   Use Registry Editor to view the security settings that are assigned to a registry entry.
 
 -   Use **My Computer** to view the security settings that are assigned to a file.
-
