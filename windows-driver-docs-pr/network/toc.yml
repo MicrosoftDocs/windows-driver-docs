@@ -1162,6 +1162,24 @@
         href: ndisquerymdl.md
       - name: "NdisQueryMdlOffset"
         href: ndisquerymdloffset.md
+  - name: "NDIS packet timestamping"
+    items: 
+    - name: "Overview of NDIS packet timestamping"
+      href: overview-of-ndis-packet-timestamping.md
+    - name: "Reporting timestamping capabilities"
+      href: reporting-timestamping-capabilities.md
+    - name: "Attaching timestamps to packets"
+      href: attaching-timestamps-to-packets.md
+    - name: "NDIS packet timestamping status indications"
+      items: 
+      - name: "NDIS_STATUS_TIMESTAMP_CAPABILITY"
+        href: ndis-status-timestamp-capability.md
+      - name: "NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG"
+        href: ndis-status-timestamp-current-config.md
+    - name: "Standardized INF keywords for NDIS packet timestamping"
+      href: standardized-inf-keywords-for-ndis-packet-timestamping.md
+    - name: "Querying timestamping capabilities and configuration"
+      href: querying-timestamping-capabilities-and-configuration.md
   - name: "NDIS Ports"
     items: 
     - name: "Introduction to NDIS Ports"
@@ -5328,6 +5346,12 @@
       href: oid-tcp4-offload-stats.md
     - name: "OID_TCP6_OFFLOAD_STATS"
       href: oid-tcp6-offload-stats.md
+    - name: "OID_TIMESTAMP_CAPABILITY"
+      href: oid-timestamp-capability.md
+    - name: "OID_TIMESTAMP_CURRENT_CONFIG"
+      href: oid-timestamp-current-config.md
+    - name: "OID_TIMESTAMP_GET_CROSSTIMESTAMP"
+      href: oid-timestamp-get-crosstimestamp.md
     - name: "OID_TUNNEL_INTERFACE_RELEASE_OID"
       href: oid-tunnel-interface-release-oid.md
     - name: "OID_TUNNEL_INTERFACE_SET_OID"
