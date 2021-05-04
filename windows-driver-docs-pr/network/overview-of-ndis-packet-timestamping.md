@@ -13,9 +13,9 @@ Many NICs can generate timestamps in their hardware when a packet is received or
 
 You may want to enable timestamping support to improve the accuracy of clock synchronization applications. The miniport driver should disable all types of timestamping support by default. 
 
-Specifically, NDIS packet timestamping makes hardware timestamps available to the operating system so that applications implementing the PTP protocol can use them. The PTP is a protocol that utilizes hardware timestamps to achieve more accurate time synchronization between systems. It does this by accounting for delays that occur when a packet traverses a network. The PTP uses timestamps to compute the time a packet spends within the network stack of the machine before being sent from or received by the wire. The PTP can then use these calculations to improve time synchronization accuracy. 
+Specifically, NDIS packet timestamping makes hardware timestamps available to the operating system so that applications implementing the PTP protocol with UDP as the transport can use them. PTP is a protocol that can utilize hardware timestamps to achieve more accurate time synchronization between systems.
 
-The closer timestamp generation is to when a packet is sent or received by the network adapter hardware, the more accurate the synchronization application. Previously, applications on Windows could only report timestamps generated at the application layer. NDIS packet timestamping improves time synchronization accuracy by enabling applications to report timestamps generated in the NIC hardware.  
+The closer timestamp generation is to when a packet is sent or received by the network adapter hardware, the more accurate the synchronization application. NDIS packet timestamping can help improve the accuracy of time synchronization applications by enabling them to use timestamps generated in the NIC hardware.  
 
 NDIS packet timestamping enables PTP version 2 applications (as defined by IEEE) operating in the two-step mode to use the NIC’s hardware timestamping capabilities. In two-step mode, timestamps in PTP packets are retrieved from the hardware and conveyed as separate messages rather than being generated on the fly in the hardware.
 

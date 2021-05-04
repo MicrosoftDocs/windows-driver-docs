@@ -20,7 +20,7 @@ For more information about standardized INF keywords, see [Standardized INF Keyw
 
 ## \*PtpHardwareTimestamp INF keyword
 
-The **\*PtpHardwareTimestamp** keyword is defined to enable or disable support for hardware timestamping for Precision Time Protocol (PTP) version 2 packets.
+The **\*PtpHardwareTimestamp** keyword is defined to enable or disable support for hardware timestamping for Precision Time Protocol (PTP) version 2 packets using UDP as the transport.
 
 The default setting for the **\*PtpHardwareTimestamp** keyword is disabled and the miniport driver should disable all types of hardware timestamping support in the NIC hardware by default.
 
