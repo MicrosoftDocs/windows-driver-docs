@@ -245,7 +245,7 @@
   - name: "USB Type-C Connector System Software Interface (UCSI) driver"
     href: ucsi.md
   - name: "FAQ: USB Type-C connector on a Windows system"
-    href: faq--usb-type-c-connector-on-a-windows-system.md
+    href: faq--usb-type-c-connector-on-a-windows-system.yml
   - name: "Developing Windows drivers for USB Type-C connectors"
     items: 
     - name: "Overview of developing Windows drivers for USB Type-C connectors"
