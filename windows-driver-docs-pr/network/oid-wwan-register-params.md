@@ -1,6 +1,6 @@
 ---
 title: OID_WWAN_REGISTER_PARAMS
-description: OID_WWAN_REGISTER_PARAMS sets 5G-specific registration parameters to an MB device. 
+description: OID_WWAN_REGISTER_PARAMS sets or returns the parameters that an MB device uses during 5G registration requests.
 ms.date: 05/13/2021
 keywords: 
  -OID_WWAN_REGISTER_PARAMS Network Drivers Starting with Windows Vista
@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 
 # OID_WWAN_REGISTER_PARAMS
 
-OID_WWAN_REGISTER_PARAMS sets or returns an MB device's 5G-specific registration parameters. 
+OID_WWAN_REGISTER_PARAMS sets or returns the parameters that an MB device uses during 5G registration requests.
 
 Before turning on the device radio, the host typically sends an OID_WWAN_REGISTER_PARAMS set request to configure the device with the desired registration parameters. This OID's payload contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure that specifies the registration parameters, such as a default PDU session hint. If the device accepts these parameters, it will use them during 5G registration requests. 
 
-The host may send an OID_WWAN_REGISTER_PARAMS set request at any time. When the device receives this request, it must compare the new parameters to any parameters it previously used for 5G registration. If there are differences, the device should use the newly received parameters for the next 5G registration. The host can also use the **ReRegisterIfNeeded** parameter to force immediate 5G re-registration.  
+The host may send an OID_WWAN_REGISTER_PARAMS set request at any time. When the device receives this request, it must compare the new parameters to any parameters it previously used for 5G registration. If there are differences, the device should use the newly received parameters for the next 5G registration. The host can also use the [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure's **ReRegisterIfNeeded** parameter to force immediate 5G re-registration.  
 
 The host may use this OID to query the registration parameters that an MB device is currently using for 5G registration. 
 
