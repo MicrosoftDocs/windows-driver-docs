@@ -5,10 +5,8 @@ metadata:
   ms.date: 04/20/2017
   ms.localizationpriority: medium
     
-title: |
-    Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista
-summary: |
-    This appendix describes the procedure for forcing the Bluetooth driver that is included with Windows Vista to install on a new Bluetooth radio. Windows XP SP2 uses a similar procedure, although some of the details are different.
+title: 'Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista'
+summary: This appendix describes the procedure for forcing the Bluetooth driver that is included with Windows Vista to install on a new Bluetooth radio. Windows XP SP2 uses a similar procedure, although some of the details are different.
 
 
 sections:
@@ -21,6 +19,8 @@ sections:
             1.  Select **Start**, navigate to **All Programs &gt; Accessories &gt; Command Prompt**, select and hold (or right-click) **Command Prompt**, and then select and hold (or right-click) **Run as administrator** to open a command window with elevated privileges.
             
             2.  Type the following: **Devmgmt.msc**
+            Under **Other Devices**, find the entry for the Bluetooth radio on the Device Manager list of devices. In the following figure, the radio’s name is ”UGT”. On some portable computers, you might be required to first turn on the Bluetooth radio by using a key combination such as Fn+F5.
+            
             Under **Other Devices**, find the entry for the Bluetooth radio on the Device Manager list of devices. In the following figure, the radio’s name is ”UGT”. On some portable computers, you might be required to first turn on the Bluetooth radio by using a key combination such as Fn+F5.
             
             ![Screenshot that shows "Device Manager" with "U G T" right-clicked and "Update Driver Software..." selected.](images/bthnewhwstep1.jpg)
