@@ -28,7 +28,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p></p>
 <a href="windows-10--what-s-new-for-usb.md" data-raw-source="[Windows 10: What's new for USB](windows-10--what-s-new-for-usb.md)">Windows 10: What's new for USB</a>
 <p>Overview of new features and improvements in USB in Windows 10.</p>
-<a href="usb-faq--introductory-level.md" data-raw-source="[USB FAQ](usb-faq--introductory-level.md)">USB FAQ</a>
+<a href="usb-faq--introductory-level.yml" data-raw-source="[USB FAQ](usb-faq--introductory-level.yml)">USB FAQ</a>
 <p>Frequently asked questions from driver developers about the USB stack and features that are supported in USB.</p>
 <a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md)">Microsoft OS Descriptors for USB Devices</a>
 <p>Windows defines MS OS descriptors that allows better enumeration when connected to system running Windows operating system</p>
