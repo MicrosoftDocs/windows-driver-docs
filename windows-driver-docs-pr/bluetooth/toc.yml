@@ -118,6 +118,8 @@
         href: testing-BTP-hw-wifi.md
       - name: "BM-64-EVB board"
         href: testing-BTP-hw-bm64.md
+      - name: "Model 2433 ESP32"
+        href: testing-BTP-hw-esp32.md
       - name: "Human Device Adapter"
         href: testing-BTP-human-device-adapter.md
     - name: "BTP Tests"
