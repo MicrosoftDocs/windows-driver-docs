@@ -73,7 +73,7 @@
   - name: "Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista"
     href: bluetooth-faq--appendix-b.yml
   - name: "Bluetooth Appendix"
-    href: bluetooth-faq--appendix-c.md
+    href: bluetooth-faq--appendix-c.yml
 - name: "Transport Bus Driver for Bluetooth Power Control Handling"
   items: 
   - name: "Transport Bus Driver for Bluetooth Power Control Handling Guidelines"

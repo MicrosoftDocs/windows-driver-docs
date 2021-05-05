@@ -12,7 +12,7 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          'Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista'
+          Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista
         answer: |
           This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf. This particular example is implemented to install a radio that is compatible with version 2.0 plus EDR of the Bluetooth specification in Windows XP or Windows Vista. The INF files for other types of Bluetooth devices are similar.
           
