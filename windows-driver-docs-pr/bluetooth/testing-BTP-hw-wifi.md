@@ -12,20 +12,20 @@ The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to c
 
 | Radio | Capabilities | Parameter |
 | --- | --- | --- |
-| ESP32 | Wi-Fi soft AP and server | esp32wifi (ex. WiFiCoexistenceTest.bat rn52 esp32wifi) |
+| ESP32 | Wi-Fi soft AP and server | esp32wifi (ex. RunWiFiCoexScenarioTests.bat rn52 esp32wifi) |
 
 ## Wi-Fi Sled (ESP32 radio)
 
 The ESP32 is a microcontorller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IOT devices.
 More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
 The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device.
-More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled).
+More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://store.digilentinc.com/pmod-esp32-wireless-communication-module).
 
 ### ESP32 Radio
 
 ![Photo of the Model 2433 ESP32 Radio](images/ESP32.png)
 
-### RN52 Radio on BTP-compatible sled
+### ESP32 Radio on BTP-compatible sled
 
 ![Photo of the Model 2433 ESP32 Radio on a sled](images/Traduci_and_ESP32.jpg)
 

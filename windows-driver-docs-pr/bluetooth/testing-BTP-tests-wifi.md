@@ -22,8 +22,8 @@ Features and purchasing information for supported radios can be found at [Suppor
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Ensure that all existing network and VPN connections are disconnected, and that "Connect Automatically" is unchecked. Then run either:
 
-- `RunCoexScenarioTests.bat <bluetooth radio name> <wifi radio name>` from an elevated command prompt or
-- `RunCoexScenarioTests.ps1 <bluetooth radio name> <wifi radio name>` from an elevated PowerShell console
+- `RunWiFiCoexScenarioTests.bat <bluetooth radio name> <wifi radio name>` from an elevated command prompt or
+- `RunWiFiCoexScenarioTests.ps1 <bluetooth radio name> <wifi radio name>` from an elevated PowerShell console
 
 Information on available radio name parameters can be found in [here](testing-BTP-hw.md#supported-radios).
 
