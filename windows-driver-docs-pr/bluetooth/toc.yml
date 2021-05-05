@@ -85,7 +85,7 @@
   - name: "Serial Bus Driver Layer"
     href: serial-bus-driver-layer.md
   - name: "Transport Bus Driver FAQ"
-    href: transport-bus-driver-faq.md
+    href: transport-bus-driver-faq.yml
 - name: "Bluetooth LE Proximity Profile Device and App"
   items: 
   - name: "Bluetooth LE Proximity Profile Overview"
