@@ -19,7 +19,6 @@ sections:
             1.  Select **Start**, navigate to **All Programs &gt; Accessories &gt; Command Prompt**, select and hold (or right-click) **Command Prompt**, and then select and hold (or right-click) **Run as administrator** to open a command window with elevated privileges.
             
             2.  Type the following: **Devmgmt.msc**
-            Under **Other Devices**, find the entry for the Bluetooth radio on the Device Manager list of devices. In the following figure, the radio’s name is ”UGT”. On some portable computers, you might be required to first turn on the Bluetooth radio by using a key combination such as Fn+F5.
             
             Under **Other Devices**, find the entry for the Bluetooth radio on the Device Manager list of devices. In the following figure, the radio’s name is ”UGT”. On some portable computers, you might be required to first turn on the Bluetooth radio by using a key combination such as Fn+F5.
             
