@@ -1,7 +1,7 @@
 ---
 title: WDI message structure
 description: This section describes the structure for WDI command messages
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 ms.localizationpriority: medium
 ---
 

@@ -2,7 +2,7 @@
 title: WDI_TLV_OWE_DH_IE
 description: WDI_TLV_OWE_DH_IE is a TLV that must be included in the association request sent by the station when the auth type is OWE. 
 ms.assetid:
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 keywords:
  - WDI_TLV_OWE_DH_IENetwork Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium

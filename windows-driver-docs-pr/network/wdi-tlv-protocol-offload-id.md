@@ -2,7 +2,7 @@
 title: WDI_TLV_PROTOCOL_OFFLOAD_ID
 description: WDI_TLV_PROTOCOL_OFFLOAD_ID is a TLV that contains the protocol offload identifier.
 ms.assetid: 
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 keywords:
  - WDI_TLV_PROTOCOL_OFFLOAD_ID Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium

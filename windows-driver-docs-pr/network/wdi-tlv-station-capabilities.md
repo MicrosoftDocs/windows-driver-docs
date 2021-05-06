@@ -2,7 +2,7 @@
 title: WDI_TLV_STATION_CAPABILITIES
 description: WDI_TLV_STATION_CAPABILITIES is a TLV that contains the capabilities of a station.
 ms.assetid: 567445F1-EEDC-4302-B709-ED76D044A971
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 keywords:
  - WDI_TLV_STATION_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

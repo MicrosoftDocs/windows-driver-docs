@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_CONNECT_PARAMETERS
 description: WDI_TLV_CONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
-ms.date: 07/18/2017
+ms.date: 05/06/2021
 keywords:
  - WDI_TLV_CONNECT_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

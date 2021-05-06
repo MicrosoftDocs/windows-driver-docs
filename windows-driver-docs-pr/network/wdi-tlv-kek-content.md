@@ -1,8 +1,8 @@
 ---
 title: WDI_TLV_KEK_CONTENT
-description: WDI_TLV_KEK_CONTENT is a TLV that contains .
+description: WDI_TLV_KEK_CONTENT is a TLV that contains an IEEE 802.11 key encryption key (KEK).
 ms.assetid: 
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 keywords:
  - WDI_TLV_KEK_CONTENT Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_KEK\_CONTENT
 
-WDI\_TLV\_KEK\_CONTENT is a TLV that contains cipher algorithm key data.
+WDI\_TLV\_KEK\_CONTENT is a TLV that contains an IEEE 802.11 key encryption key (KEK).
 
 ## TLV Type
 
@@ -24,7 +24,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 | Type | Description |
 | --- | --- |
-| UINT8\[\] | Specifies KEK content cipher algorithm key data. |
+| UINT8\[\] | Specifies an IEEE 802.11 key encryption key (KEK). |
 
 ## Requirements
 

@@ -1,7 +1,7 @@
 ---
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 ms.localizationpriority: medium
 ms.custom: 2004
 ---

@@ -1,8 +1,8 @@
 ---
 title: WDI_TLV_REPLAY_COUNTER
-description: WDI_TLV_REPLAY_COUNTER is a TLV that contains .
+description: WDI_TLV_REPLAY_COUNTER is a TLV that contains a UINT64 value that represents a replay counter.
 ms.assetid: 
-ms.date: 04/30/2021
+ms.date: 05/06/2021
 keywords:
  - WDI_TLV_REPLAY_COUNTER Network Drivers Starting with Windows 10, Version 2004
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_REPLAY\_COUNTER
 
-WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains GCMP 256 cipher algorithm key data.
+WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains a UINT64 value that represents a replay counter.
 
 ## TLV Type
 
@@ -18,13 +18,13 @@ WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains GCMP 256 cipher algorithm key d
 
 ## Length
 
-The size (in bytes) of the array of UINT8 elements. The array must contain 1 or more elements.
+The size (in bytes) of a UINT64.
 
 ## Values
 
 | Type | Description |
 | --- | --- |
-| UINT8\[\] | Specifies GCMP 256 cipher algorithm key data. |
+| UINT64 | A replay counter |
 
 ## Requirements
 
