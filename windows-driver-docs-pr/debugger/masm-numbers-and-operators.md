@@ -4,6 +4,7 @@ description: MASM Numbers and Operators
 keywords: ["expressions, MASM expression syntax", "numerical expressions (MASM)", "MASM expressions, numbers", "MASM expressions, operators", "operators (MASM)", "(MASM prefix)", "binary operators", "shift operators", "unary operators"]
 ms.date: 04/30/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q4
 ---
 
 # MASM Numbers and Operators
