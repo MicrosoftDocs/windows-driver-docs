@@ -41,4 +41,4 @@ This functionality is available starting in
 | 18363.1533 | [KB5001396](https://support.microsoft.com/topic/april-22-2021-kb5001396-os-build-18363-1533-preview-e67788f0-4e70-4f9b-9c5e-ff977310eeea)|
 | 17763.1911| [KB5001384](https://support.microsoft.com/topic/april-22-2021-kb5001384-os-build-17763-1911-preview-e471f445-59be-42cb-8c57-5db644cbc698)|
 - By default this registry value does not exist. 
-- TorchControl does not have an event mechanism to notify state changes thus by controlling the torch from multiple applications may cause the torch being in different state than one application thinks if the state was change by another application.
+- TorchControl does not have an event mechanism to notify state changes thus by controlling the torch from multiple applications may cause the torch being in different state than one application thinks if the state was changed by another application.
