@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 The following steps are intended for use by an ITPro in a scenario where they need to convert from Legacy MBR+CSM to UEFI+GPT. Usually this process starts with a system that has Windows 7 x64 installed.
 
-For x86 OS systems, see the section in the [Firmware WEG FAQ](frequently-asked-questions.md) about "What is the dependency on 32-bit vs. 64-bit UEFI?".
+For x86 OS systems, see the section in the [Firmware WEG FAQ](frequently-asked-questions.yml) about "What is the dependency on 32-bit vs. 64-bit UEFI?".
 
 Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or have checked with the OEM to ensure that the system has the following:
 
