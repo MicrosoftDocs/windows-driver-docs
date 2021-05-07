@@ -24,7 +24,7 @@ The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow throug
 
 [Switch from legacy MBR disk to GPT disk with Windows 10](switch-from-legacy-mbr-disk-to-gpt-disk-with-windows-10.md)
 
-[Firmware WEG FAQ](frequently-asked-questions.md)
+[Firmware WEG FAQ](frequently-asked-questions.yml)
 
 [Configure system firmware for Windows 7 and later update for Windows 10](configure-system-firmware-for-windows-7-and-later-update-for-windows-10.md)
 
