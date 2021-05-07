@@ -1,9 +1,8 @@
 ---
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
-ms.date: 05/06/2021
+ms.date: 05/07/2021
 ms.localizationpriority: medium
-ms.custom: 2004
 ---
 
 # WDI doc change history
@@ -14,21 +13,21 @@ Documentation updated to WDI version 1.1.9.
 
 | Topic | Description |
 | ----- | ----------- |
-| [WDI message structure](wdi-wi-fi-messages.md#tlvs) | Modified TLV structure and aggregate container to allow for variable-size KCK/KEK |
-| [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | **ScanTrigger** enum value added</br></br>Description updated for LE with BSS list cache |
-| [WDI_AUTH_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added new WDI_AUTH_ALGORITHM **WDI_AUTH_ALGO_OWE** |
-| [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | **WDI_CIPHER_ALGO_GCMP_256** new cipher added</br></br>**WDI_CIPHER_ALGO_BIP_GMAC_256** new cipher added |
-| [WDI_TLV_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
+| [WDI message structure](wdi-wi-fi-messages.md#tlvs) | Modified TLV structure and aggregate container to allow for variable-size KCK/KEK. |
+| [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | **ScanTrigger** enum value added.</br></br>Description updated for LE with BSS list cache. |
+| [WDI_AUTH_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added new WDI_AUTH_ALGORITHM **WDI_AUTH_ALGO_OWE**. |
+| [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | **WDI_CIPHER_ALGO_GCMP_256** new cipher added.</br></br>**WDI_CIPHER_ALGO_BIP_GMAC_256** new cipher added. |
+| [WDI_TLV_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md). |
 | [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly added TLV type. |
 | [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV type. |
-| [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
-| [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | **BandwidthUsed** field added</br></br>**PropegationProperty** field added</br></br>**RTT** field changed to signed integer |
+| [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md). |
+| [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | **BandwidthUsed** field added.</br></br>**PropegationProperty** field added.</br></br>**RTT** field changed to signed integer. |
 | [WDI_TLV_KCK_CONTENT](wdi-tlv-kck-content.md) | Newly added TLV type. |
 | [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly added TLV type. |
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly added TLV type. |
 | [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly added TLV type. |
 | [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly added TLV type. |
-| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | **Host-WPA3-FIPS** mode added |
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | **Host-WPA3-FIPS** mode added. |
 
 ## Windows 10, version 1903
 

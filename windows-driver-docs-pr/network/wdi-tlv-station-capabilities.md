@@ -1,8 +1,7 @@
 ---
 title: WDI_TLV_STATION_CAPABILITIES
 description: WDI_TLV_STATION_CAPABILITIES is a TLV that contains the capabilities of a station.
-ms.assetid: 567445F1-EEDC-4302-B709-ED76D044A971
-ms.date: 05/06/2021
+ms.date: 05/07/2021
 keywords:
  - WDI_TLV_STATION_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -34,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The maximum length of the WEP key value. |
 | UINT32 | The maximum number per STA default key tables. |
 | UINT8 | Supported QoS flags. Specifies whether the device supports WMM.<br />Valid values are 0 (not supported) and 1 (supported).|
-| UINT8 | Specifies whether host-FIPS mode is implemented.<br /><br />If the field is set to DOT11_EXTSTA_ATTRIBUTES_SAFEMODE_OID_SUPPORTED with no other bits set, the driver implements the 802.11 safe mode of operation.<br /><br />If the field is set to DOT11_EXTSTA_ATTRIBUTES_SAFEMODE_CERTIFIED, the NIC has received a validation certificate from the National Institute of Standards and Technology (NIST) under Federal Information Processing Standards (FIPS) Publication 140-2, Security Requirements for Cryptographic Modules. In this mode, the hardware is responsible for ensuring compliance to FIPS standard.<br /><br />If the field is set to zero (0), FIPS mode is not implemented by the NIC. |
+| UINT8 | Specifies whether host-FIPS mode is implemented.<br /><br />If the field is set to [DOT11_EXTSTA_ATTRIBUTES_SAFEMODE_OID_SUPPORTED](/windows-hardware/drivers/ddi/windot11/ns-windot11-dot11_extsta_attributes#revision--dot11_extsta_attributes_revision_2-or-higher) with no other bits set, the driver implements the 802.11 safe mode of operation.<br /><br />If the field is set to DOT11_EXTSTA_ATTRIBUTES_SAFEMODE_CERTIFIED, the NIC has received a validation certificate from the National Institute of Standards and Technology (NIST) under Federal Information Processing Standards (FIPS) Publication 140-2, Security Requirements for Cryptographic Modules. In this mode, the hardware is responsible for ensuring compliance to FIPS standard.<br /><br />If the field is set to zero (0), FIPS mode is not implemented by the NIC. |
 | UINT8 | Specifies whether 802.11w MFP capability is supported.<br />Valid values are 0 (not supported) and 1 (supported). |
 | UINT8 | Specifies whether auto power save is supported.<br />Valid values are 0 (not supported) and 1 (supported). |
 | UINT8 | Specifies whether the adapter maintains the Station BSS List cache.<br />Valid values are 0 (no) and 1 (yes). |

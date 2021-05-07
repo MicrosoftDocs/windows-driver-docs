@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_CONFIGURED_CIPHER_KEY
 description: WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains a list of configured ciphers to be set in OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
-ms.date: 05/06/2021
+ms.date: 05/07/2021
 keywords:
  - WDI_TLV_CONFIGURED_CIPHER_KEY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -39,6 +39,6 @@ The size (in bytes) of the following values.
 
 | &nbsp; | &nbsp; |
 | ------ | ------ |
-| **Minimum supported client** | Windows 10, Version 2004 |
+| **Minimum supported client** | Windows 10, version 2004 |
 | **Minimum supported server** | Windows Server 2016 |
 | **Header** | Wditypes.hpp |
