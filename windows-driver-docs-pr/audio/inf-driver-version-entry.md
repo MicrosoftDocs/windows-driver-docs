@@ -31,9 +31,7 @@ The version parameter *w.x.y.z* specifies a version number.
 
 Each of *w*, *x*, *y*, and *z* must be an integer that is greater than or equal to zero and less than 65535.
 
-For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device).
+For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](../install/how-windows-selects-a-driver-for-a-device.md).
 
 In Windows 2000, Windows XP and later, the INF file for a driver package must provide a **DriverVer** directive.
-
- 
 
