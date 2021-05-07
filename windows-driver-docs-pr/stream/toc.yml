@@ -53,7 +53,7 @@
   href: 360-camera-video-capture.md
 - name: "Flashlight (Lamp) Support"
   href: flashlight-support.md
-  name: "TorchControl shared usage registry settings"
+- name: "TorchControl shared usage registry settings"
   href: oem-guidance-on-registry-keys-for-shared-torch-usage.md
 - name: "Streaming Media Samples"
   href: streaming-media-samples.md
