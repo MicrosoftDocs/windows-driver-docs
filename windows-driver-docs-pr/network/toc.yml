@@ -3102,10 +3102,14 @@
         href: wdi-tlv-checksum-offload-v6-tx-parameters.md
       - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
         href: wdi-tlv-cipher-key-bip-key.md
+      - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
+        href: wdi-tlv-cipher-key-bip-gmac-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
         href: wdi-tlv-cipher-key-ccmp-key.md
       - name: "WDI_TLV_CIPHER_KEY_GCMP_KEY"
         href: wdi-tlv-cipher-key-gcmp-key.md
+      - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
+        href: wdi-tlv-cipher-key-gcmp-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_ID"
         href: wdi-tlv-cipher-key-id.md
       - name: "WDI_TLV_CIPHER_KEY_IHV_KEY"
@@ -3210,15 +3214,15 @@
         href: wdi-tlv-ft-rsnie.md
       - name: "WDI_TLV_FT_SNONCE"
         href: wdi-tlv-ft-snonce.md
-      - name: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS
+      - name: "WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS"
         href: wdi-tlv-ftm-number-of-measurements.md
-      - name: WDI_TLV_FTM_REQUEST_TIMEOUT
+      - name: "WDI_TLV_FTM_REQUEST_TIMEOUT"
         href: wdi-tlv-ftm-request-timeout.md
-      - name: WDI_TLV_FTM_RESPONSE
+      - name: "WDI_TLV_FTM_RESPONSE"
         href: wdi-tlv-ftm-response.md
-      - name: WDI_TLV_FTM_RESPONSE_STATUS
+      - name: "WDI_TLV_FTM_RESPONSE_STATUS"
         href: wdi-tlv-ftm-response-status.md
-      - name: WDI_TLV_FTM_TARGET_BSS_ENTRY
+      - name: "WDI_TLV_FTM_TARGET_BSS_ENTRY"
         href: wdi-tlv-ftm-target-bss-entry.md
       - name: "WDI_TLV_GET_AUTO_POWER_SAVE"
         href: wdi-tlv-get-auto-power-save.md
@@ -3264,9 +3268,13 @@
         href: wdi-tlv-ipv6-checksum-offload.md
       - name: "WDI_TLV_IPV6_LSO_V2"
         href: wdi-tlv-ipv6-lso-v2.md
-      - name: WDI_TLV_LCI_REPORT_BODY
+      - name: "WDI_TLV_KCK_CONTENT"
+        href: wdi-tlv-kck-content.md
+      - name: "WDI_TLV_KEK_CONTENT"
+        href: wdi-tlv-kek-content.md
+      - name: "WDI_TLV_LCI_REPORT_BODY"
         href: wdi-tlv-lci-report-body.md
-      - name: WDI_TLV_LCI_REPORT_STATUS
+      - name: "WDI_TLV_LCI_REPORT_STATUS"
         href: wdi-tlv-lci-report-status.md
       - name: "WDI_TLV_LINK_QUALITY_BAR_MAP"
         href: wdi-tlv-link-quality-bar-map.md
@@ -3306,6 +3314,8 @@
         href: wdi-tlv-operation-mode.md
       - name: "WDI_TLV_OS_POWER_MANAGEMENT_FEATURES"
         href: wdi-tlv-os-power-management-features.md
+      - name: "WDI_TLV_OWE_DH_IE"
+        href: wdi-tlv-owe-dh-ie.md
       - name: "WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT"
         href: wdi-tlv-p2p-action-frame-device-context.md
       - name: "WDI_TLV_P2P_ACTION_FRAME_IES"
@@ -3508,6 +3518,8 @@
         href: wdi-tlv-privacy-exemption-entry.md
       - name: "WDI_TLV_PROBE_RESPONSE_FRAME"
         href: wdi-tlv-probe-response-frame.md
+      - name: "WDI_TLV_PROTOCOL_OFFLOAD_ID"
+        href: wdi-tlv-protocol-offload-id.md
       - name: "WDI_TLV_RADIO_STATE"
         href: wdi-tlv-radio-state.md
       - name: "WDI_TLV_RADIO_STATE_PARAMETERS"
@@ -3520,45 +3532,47 @@
         href: wdi-tlv-receive-coalescing-config.md
       - name: "WDI_TLV_RECEIVE_FILTER_FIELD"
         href: wdi-tlv-receive-filter-field.md
-      - name: WDI_TLV_REQUEST_LCI_REPORT
+      - name: "WDI_TLV_REPLAY_COUNTER"
+        href: wdi-tlv-replay-counter.md
+      - name: "WDI_TLV_REQUEST_LCI_REPORT"
         href: wdi-tlv-request-lci-report.md
-      - name: WDI_TLV_RETRY_AFTER
+      - name: "WDI_TLV_RETRY_AFTER"
         href: wdi-tlv-retry-after.md
       - name: "WDI_TLV_ROAMING_NEEDED_PARAMETERS"
         href: wdi-tlv-roaming-needed-parameters.md
       - name: "WDI_TLV_RSN_KEY_INFO"
         href: wdi-tlv-rsn-key-info.md
-      - name: WDI_TLV_RTT
+      - name: "WDI_TLV_RTT"
         href: wdi-tlv-rtt.md
-      - name: WDI_TLV_RTT_ACCURACY
+      - name: "WDI_TLV_RTT_ACCURACY"
         href: wdi-tlv-rtt-accuracy.md
-      - name: WDI_TLV_RTT_VARIANCE
+      - name: "WDI_TLV_RTT_VARIANCE"
         href: wdi-tlv-rtt-variance.md
-      - name: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN
+      - name: "WDI_TLV_SAE_ANTI_CLOGGING_TOKEN"
         href: wdi-tlv-sae-anti-clogging-token.md
-      - name: WDI_TLV_SAE_COMMIT_REQUEST
+      - name: "WDI_TLV_SAE_COMMIT_REQUEST"
         href: wdi-tlv-sae-commit-request.md
-      - name: WDI_TLV_SAE_COMMIT_RESPONSE
+      - name: "WDI_TLV_SAE_COMMIT_RESPONSE"
         href: wdi-tlv-sae-commit-response.md
-      - name: WDI_TLV_SAE_CONFIRM
+      - name: "WDI_TLV_SAE_CONFIRM"
         href: wdi-tlv-sae-confirm.md
-      - name: WDI_TLV_SAE_CONFIRM_REQUEST
+      - name: "WDI_TLV_SAE_CONFIRM_REQUEST"
         href: wdi-tlv-sae-confirm-request.md
-      - name: WDI_TLV_SAE_CONFIRM_RESPONSE
+      - name: "WDI_TLV_SAE_CONFIRM_RESPONSE"
         href: wdi-tlv-sae-confirm-response.md
-      - name: WDI_TLV_SAE_ELEMENT
+      - name: "WDI_TLV_SAE_ELEMENT"
         href: wdi-tlv-sae-element.md
-      - name: WDI_TLV_SAE_FINITE_CYCLIC_GROUP
+      - name: "WDI_TLV_SAE_FINITE_CYCLIC_GROUP"
         href: wdi-tlv-sae-finite-cyclic-group.md
-      - name: WDI_TLV_SAE_INDICATION_TYPE
+      - name: "WDI_TLV_SAE_INDICATION_TYPE"
         href: wdi-tlv-sae-indication-type.md
-      - name: WDI_TLV_SAE_REQUEST_TYPE
+      - name: "WDI_TLV_SAE_REQUEST_TYPE"
         href: wdi-tlv-sae-request-type.md
-      - name: WDI_TLV_SAE_SCALAR
+      - name: "WDI_TLV_SAE_SCALAR"
         href: wdi-tlv-sae-scalar.md
-      - name: WDI_TLV_SAE_SEND_CONFIRM
+      - name: "WDI_TLV_SAE_SEND_CONFIRM"
         href: wdi-tlv-sae-send-confirm.md
-      - name: WDI_TLV_SAE_STATUS
+      - name: "WDI_TLV_SAE_STATUS"
         href: wdi-tlv-sae-status.md
       - name: "WDI_TLV_SAFE_MODE_PARAMETERS"
         href: wdi-tlv-safe-mode-parameters.md
@@ -3690,7 +3704,7 @@
         href: oid-wdi-task-p2p-send-request-action-frame.md
       - name: "OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME"
         href: oid-wdi-task-p2p-send-response-action-frame.md
-      - name: OID_WDI_TASK_REQUEST_FTM
+      - name: "OID_WDI_TASK_REQUEST_FTM"
         href: oid-wdi-task-request-ftm.md
       - name: "OID_WDI_TASK_ROAM"
         href: oid-wdi-task-roam.md
@@ -3782,7 +3796,7 @@
         href: oid-wdi-set-remove-pm-protocol-offload.md
       - name: "OID_WDI_SET_REMOVE_WOL_PATTERN"
         href: oid-wdi-set-remove-wol-pattern.md
-      - name: OID_WDI_SET_SAE_AUTH_PARAMS
+      - name: "OID_WDI_SET_SAE_AUTH_PARAMS"
         href: oid-wdi-set-sae-auth-params.md
       - name: "OID_WDI_SET_TCP_OFFLOAD_PARAMETERS"
         href: oid-wdi-set-tcp-offload-parameters.md
@@ -3852,13 +3866,13 @@
         href: ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_RADIO_STATUS"
         href: ndis-status-wdi-indication-radio-status.md
-      - name: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
+      - name: "NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE"
         href: ndis-status-wdi-indication-request-ftm-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE"
         href: ndis-status-wdi-indication-roam-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED"
         href: ndis-status-wdi-indication-roaming-needed.md
-      - name: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
+      - name: "NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED"
         href: ndis-status-wdi-indication-sae-auth-params-needed.md
       - name: "NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE"
         href: ndis-status-wdi-indication-scan-complete.md
@@ -3904,142 +3918,142 @@
       href: wpa3-sae-authentication.md
     - name: "WDI doc change history"
       href: wdi-doc-change-history.md
-  - name: Native 802.11 IHV Extensions
+  - name: "Native 802.11 IHV Extensions"
     items:
-    - name: Native 802.11 IHV Extensions Topics
+    - name: "Native 802.11 IHV Extensions Topics"
       href: native-802-11-ihv-extensions.md
-    - name: Overview of IHV Extensibility
+    - name: "Overview of IHV Extensibility"
       href: overview-of-ihv-extensibility.md
-    - name: Installing Native 802.11 IHV Extensions
+    - name: "Installing Native 802.11 IHV Extensions"
       href: installing-native-802-11-ihv-extensions.md
-    - name: Native 802.11 IHV Extensions DLL
+    - name: "Native 802.11 IHV Extensions DLL"
       items:
-      - name: Native 802.11 IHV Extensions DLL Topics
+      - name: "Native 802.11 IHV Extensions DLL Topics"
         href: native-802-11-ihv-extensions-dll4.md
-      - name: Native 802.11 IHV Extensions DLL Overview
+      - name: "Native 802.11 IHV Extensions DLL Overview"
         href: native-802-11-ihv-extensions-dll-overview.md
-      - name: Native 802.11 IHV Extensibility Functions
+      - name: "Native 802.11 IHV Extensibility Functions"
         href: native-802-11-ihv-extensibility-functions.md
-      - name: Native 802.11 IHV Handler Functions
+      - name: "Native 802.11 IHV Handler Functions"
         href: native-802-11-ihv-handler-functions.md
-      - name: Native 802.11 IHV Extensions DLL Implementation Guidelines
+      - name: "Native 802.11 IHV Extensions DLL Implementation Guidelines"
         href: native-802-11-ihv-extensions-dll-implementation-guidelines.md
-      - name: DLL Start/Stop Operations
+      - name: "DLL Start/Stop Operations"
         items: 
-        - name: DLL Start/Stop Operations Topics
+        - name: "DLL Start/Stop Operations Topics"
           href: dll-start-stop-operations.md
-        - name: DLL Start Operations
+        - name: "DLL Start Operations"
           href: dll-start-operations.md
-        - name: DLL Stop Operations
+        - name: "DLL Stop Operations"
           href: dll-stop-operations.md
-      - name: 802.11 WLAN Adapter Management
+      - name: "802.11 WLAN Adapter Management"
         items:
-        - name: 802.11 WLAN Adapter Management Topics
+        - name: "802.11 WLAN Adapter Management Topics"
           href: 802-11-wlan-adapter-management.md
-        - name: 802.11 WLAN Adapter Arrival
+        - name: "802.11 WLAN Adapter Arrival"
           href: 802-11-wlan-adapter-arrival.md
-        - name: 802.11 WLAN Adapter Removal
+        - name: "802.11 WLAN Adapter Removal"
           href: 802-11-wlan-adapter-removal.md
-        - name: 802.11 WLAN Adapter Reset
+        - name: "802.11 WLAN Adapter Reset"
           href: 802-11-wlan-adapter-reset.md
-        - name: 802.11 WLAN Adapter Communication Channel
+        - name: "802.11 WLAN Adapter Communication Channel"
           href: 802-11-wlan-adapter-communication-channel.md
-      - name: Managing Network Profiles
+      - name: "Managing Network Profiles"
         items:
-        - name: Network Profile Management
+        - name: "Network Profile Management"
           href: network-profile-management.md
-        - name: Network Profile Overview
+        - name: "Network Profile Overview"
           href: network-profile-overview.md
-        - name: Creating Network Profile Extensions
+        - name: "Creating Network Profile Extensions"
           href: creating-network-profile-extensions.md
-        - name: Validating Network Profile Extensions
+        - name: "Validating Network Profile Extensions"
           href: validating-network-profile-extensions.md
-      - name: User Interaction
+      - name: "User Interaction"
         items:
-        - name: Interaction with the User
+        - name: "Interaction with the User"
           href: interaction-with-the-user.md
-        - name: Requesting User Interaction
+        - name: "Requesting User Interaction"
           href: requesting-user-interaction.md
-        - name: Processing Session Changes
+        - name: "Processing Session Changes"
           href: processing-session-changes.md
-      - name: Pre-Association Operations
+      - name: "Pre-Association Operations"
         items:
-        - name: Pre-Association Operations Topics
+        - name: "Pre-Association Operations Topics"
           href: pre-association-operations.md
-        - name: Pre-Association Operation Overview
+        - name: "Pre-Association Operation Overview"
           href: pre-association-operation-overview.md
-        - name: Pre-Association Operation Guidelines
+        - name: "Pre-Association Operation Guidelines"
           href: pre-association-operation-guidelines.md
-      - name: Post-Association Operations
+      - name: "Post-Association Operations"
         items:
-        - name: Post-Association Operations Overview
+        - name: "Post-Association Operations Overview"
           href: post-association-operations.md
-        - name: Performing a Post-Association Operation
+        - name: "Performing a Post-Association Operation"
           href: performing-a-post-association-operation.md
-        - name: Stopping a Post-Association Operation
+        - name: "Stopping a Post-Association Operation"
           href: stopping-a-post-association-operation.md
-        - name: Interface to the Native 802.11 802.1X Module
+        - name: "Interface to the Native 802.11 802.1X Module"
           href: interface-to-the-native-802-11-802-1x-module.md
-      - name: Transferring Network Data in Native 802.11 IHV extensions
+      - name: "Transferring Network Data in Native 802.11 IHV extensions"
         items:
-        - name: Native 802.11 IHV extension send and receive operations
+        - name: "Native 802.11 IHV extension send and receive operations"
           href: send-and-receive-operations3.md
-        - name: IEEE EtherType Handling
+        - name: "IEEE EtherType Handling"
           href: ieee-ethertype-handling.md
-        - name: Send Operations
+        - name: "Send Operations"
           href: send-operations.md
-        - name: Receive Operations
+        - name: "Receive Operations"
           href: receive-operations.md
-      - name: Sending and Receiving Notifications
+      - name: "Sending and Receiving Notifications"
         items:
-        - name: Notification Operations
+        - name: "Notification Operations"
           href: notification-operations.md
-        - name: Sending Notifications
+        - name: "Sending Notifications"
           href: sending-notifications.md
-        - name: Receiving Notifications
+        - name: "Receiving Notifications"
           href: receiving-notifications.md
-      - name: Virtual Station
+      - name: "Virtual Station"
         href: virtual-station.md
-    - name: Native 802.11 IHV UI Extensions DLL
+    - name: "Native 802.11 IHV UI Extensions DLL"
       items:
-      - name: Native 802.11 IHV UI Extensions DLL Topics
+      - name: "Native 802.11 IHV UI Extensions DLL Topics"
         href: native-802-11-ihv-ui-extensions-dll2.md
-      - name: Windows SDK References
+      - name: "Windows SDK References"
         href: windows-sdk-references.md
-      - name: Native 802.11 IHV UI Extensions DLL Overview
+      - name: "Native 802.11 IHV UI Extensions DLL Overview"
         href: native-802-11-ihv-ui-extensions-dll-overview.md
-      - name: Native 802.11 IHV UI Extensions COM Interfaces
+      - name: "Native 802.11 IHV UI Extensions COM Interfaces"
         href: native-802-11-ihv-ui-extensions-com-interfaces.md
-      - name: Wireless Network Profile Property Extension
+      - name: "Wireless Network Profile Property Extension"
         items:
-        - name: Extending the Properties for Wireless Network Profiles
+        - name: "Extending the Properties for Wireless Network Profiles"
           href: extending-the-properties-for-wireless-network-profiles.md
-        - name: Extending Wireless Connection Properties
+        - name: "Extending Wireless Connection Properties"
           href: extending-wireless-connection-properties.md
-        - name: Extending Wireless Security Properties
+        - name: "Extending Wireless Security Properties"
           href: extending-wireless-security-properties.md
-        - name: Extending Microsoft 802.1X Security Settings
+        - name: "Extending Microsoft 802.1X Security Settings"
           href: extending-microsoft-802-1x-security-settings.md
-        - name: Extending the UI for Proprietary 802.1X Security Methods
+        - name: "Extending the UI for Proprietary 802.1X Security Methods"
           href: extending-the-ui-for-proprietary-802-1x-security-methods.md
-        - name: Extending the UI for Standard 802.1X Security Methods
+        - name: "Extending the UI for Standard 802.1X Security Methods"
           href: extending-the-ui-for-standard-802-1x-security-methods.md
-      - name: Extending the Advanced Properties for Wireless Network Adapters
+      - name: "Extending the Advanced Properties for Wireless Network Adapters"
         href: extending-the-advanced-properties-for-wireless-network-adapters.md
-      - name: Custom UI Display Requests
+      - name: "Custom UI Display Requests"
         items:
-        - name: Handling Requests for the Display of a Custom UI
+        - name: "Handling Requests for the Display of a Custom UI"
           href: handling-requests-for-the-display-of-a-custom-ui.md
-        - name: Requesting the Display of a Custom UI
+        - name: "Requesting the Display of a Custom UI"
           href: requesting-the-display-of-a-custom-ui.md
-        - name: Querying for the Display of a Custom UI
+        - name: "Querying for the Display of a Custom UI"
           href: querying-for-the-display-of-a-custom-ui.md
-        - name: Displaying Custom UI Pages within a Balloon Notification
+        - name: "Displaying Custom UI Pages within a Balloon Notification"
           href: displaying-custom-ui-pages-within-a-balloon-notification.md
-        - name: Displaying Custom UI Pages within the Network Connection Wizard
+        - name: "Displaying Custom UI Pages within the Network Connection Wizard"
           href: displaying-custom-ui-pages-within-the-network-connection-wizard.md
-        - name: Accessing Profile and Context Data
-          href: accessing-profile-and-context-data.md    
+        - name: "Accessing Profile and Context Data"
+          href: accessing-profile-and-context-data.md
   - name: "Wi-Fi Hotspot Offloading Guide"
     items: 
     - name: "Wi-Fi Hotspot Offloading Overview"

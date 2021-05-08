@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_CONNECT_PARAMETERS
 description: WDI_TLV_CONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
-ms.date: 07/18/2017
+ms.date: 05/07/2021
 keywords:
  - WDI_TLV_CONNECT_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -9,16 +9,13 @@ ms.localizationpriority: medium
 
 # WDI\_TLV\_CONNECT\_PARAMETERS
 
-
 WDI\_TLV\_CONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_CONNECT](./oid-wdi-task-connect.md) and [OID\_WDI\_TASK\_ROAM](./oid-wdi-task-roam.md).
 
 ## TLV Type
 
-
 0x33
 
 ## Length
-
 
 The sum (in bytes) of the sizes of all contained TLVs.
 
@@ -36,27 +33,12 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_PHY\_TYPE\_LIST**](wdi-tlv-phy-type-list.md) |   | X | The list of PHYs that are allowed to be used for the association. If not specified, any supported PHY can be used. If specified, the device must only use the listed PHYs. |
 | [**WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST**](wdi-tlv-disallowed-bssids-list.md) |   | X | The list of BSSIDs that are not allowed to be used for association. If specified, the adapter must not associate to any AP that is in this list. |
 | [**WDI\_TLV\_ALLOWED\_BSSIDS\_LIST**](wdi-tlv-allowed-bssids-list.md) |   | X | The list of BSSIDs that are allowed to be used for association. If WDI specifies 255.255.255.255 then all BSSIDs are allowed. |
+| [**WDI\_TLV\_OWE\_DH\_IE**](wdi-tlv-owe-dh-ie.md) |   | X | Diffie-Hellman Extension IE blob that must be included in the association request sent by the station when auth type is OWE. This is applicable to any BSSID that the device would associate with and should be included in addition to the other associated req vendor IEs. |
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wditypes.hpp</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+| ------ | ------ |
+| **Minimum supported client** | Windows 10 |
+| **Minimum supported server** | Windows Server 2016 |
+| **Header** | Wditypes.hpp |
