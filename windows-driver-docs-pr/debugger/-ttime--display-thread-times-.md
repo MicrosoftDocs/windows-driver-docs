@@ -49,8 +49,7 @@ The **.ttime** command displays the running times for a thread.
 
  
 
-Remarks
--------
+## Remarks
 
 This command only works in user mode. In kernel mode you should use [**!thread**](-thread.md) instead. This command works with user-mode minidumps as long as they were created with the **/mt** or **/ma** options; see [User-Mode Dump Files](user-mode-dump-files.md) for details.
 

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Returns a value of '2' to inform USBMon that the method call was successful, with more work to be completed.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Retry(
@@ -28,24 +27,20 @@ HRESULT Retry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *value* \[out, retval\]  
 Value indicating a successful method call, with more work to be done.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **Retry** is a read-only method. USBMon should process any Bidi Schema updates (including Bidi Events) in a printerBidiSchemaResponses object, and then call the **Retry** method again to allow the IHV code to continue processing the data. The number of bytes processed from the print data stream (printData) is returned in the writePrintDataProgress object associated with the print job.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_BLANK\_PAGES** property.
 
@@ -64,8 +63,7 @@ The following table describes the valid values for the **WIA\_IPS\_BLANK\_PAGES*
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

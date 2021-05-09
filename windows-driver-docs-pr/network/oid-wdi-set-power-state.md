@@ -246,8 +246,7 @@ The following diagrams show interactions and sequences of transitions between D0
 -   D2 notArmToWake: Kept power, no reinitialization required.
 -   D3 notArmtoWake: Might be Hot or Cold. Cold requires that context be restored.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -16,8 +16,7 @@ Query requests are not supported.
 
 Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later completing the request with the [**NDIS\_WWAN\_NETWORK\_IDLE\_HINT**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_idle_hint) structure that indicates the network idle hint.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

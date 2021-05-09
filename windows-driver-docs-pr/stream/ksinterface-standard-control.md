@@ -20,8 +20,7 @@ ms.localizationpriority: medium
 
 The KSINTERFACE\_STANDARD\_CONTROL interface is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

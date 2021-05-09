@@ -21,8 +21,7 @@ The rule uses three different states. The state changes when a timer is set or c
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -36,8 +36,7 @@ This rule also states that when the routine ends, the driver must not have exclu
 </tbody>
 </table>
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -62,13 +61,11 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))
 [**ExReleaseResourceForThreadLite**](/previous-versions/ff545585(v=vs.85))
 [**ExReleaseResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite)
-See also
---------
+## See also
 
 [**Preventing Errors and Deadlocks While Using Spin Locks**](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

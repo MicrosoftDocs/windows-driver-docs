@@ -56,13 +56,11 @@ The KSPROPERTY\_DVDCOPY\_DISC\_KEY property retrieves the disc key information f
 
 The property value (operation data) is a KS\_DVDCOPY\_DISCKEY structure that describes the DVD's disc key.
 
-Remarks
--------
+## Remarks
 
 For more information about the disc key, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

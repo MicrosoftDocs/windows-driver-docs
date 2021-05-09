@@ -12,15 +12,13 @@ ms.localizationpriority: medium
 
 As a query, the OID\_GEN\_FRIENDLY\_NAME OID returns the friendly name of a miniport adapter.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_FRIENDLY\_NAME OID returns the friendly name of a miniport adapter.
 
 Friendly names are intended to help the user quickly and accurately identify a miniport adapter--for example, "PCI Ethernet Adapter" and "Virtual Private Networking Adapter" are considered friendly names.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS to retrieve a list of connect
 
  
 
-Remarks
--------
+## Remarks
 
 The returned BDA\_TEMPLATE\_CONNECTION structure describes a connection in a template topology.
 
 The list of connections between pins and nodes in a template topology is an array of BDA\_TEMPLATE\_CONNECTION structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ The KSPROPERTY\_CONNECTION\_STATE property sets the current run state of the pin
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns one of the following values:
 
@@ -94,8 +93,7 @@ This property returns one of the following values:
 
 The pin only reads or writes data in the **KSSTATE\_RUN** state. Both individual pins and the KS filter as a whole may support this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

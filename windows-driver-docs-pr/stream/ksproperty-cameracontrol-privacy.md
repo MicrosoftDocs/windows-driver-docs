@@ -56,13 +56,11 @@ The KSPROPERTY\_CAMERACONTROL\_PRIVACY property specifies whether to prevent vid
 
 The property value (operation data) is a LONG that specifies whether privacy mode is enable or disabled. A value of 0 indicates that the camera sensor can capture video images, and a value of 1 indicates that the camera sensor is prevented from capturing video images.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure specifies whether the camera sensor should capture video.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

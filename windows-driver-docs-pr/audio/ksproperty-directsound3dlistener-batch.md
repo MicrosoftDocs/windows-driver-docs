@@ -64,15 +64,13 @@ The property value (operation data) is of type BOOL and specifies the batch-mode
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 When this property transitions from **TRUE** to **FALSE** the miniport driver should put all cached properties into effect immediately. If possible, any cached properties should be put into effect simultaneously.
 
 For more information about batch-mode settings for 3D listeners, see the description of the **IDirectSound3DListener::CommitDeferredSettings** method in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

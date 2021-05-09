@@ -16,8 +16,7 @@ In order to issue the **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** status indicati
 
 For more information on this process, see [Guidelines for Issuing an **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** Status Indication](#issuing).
 
-Remarks
--------
+## Remarks
 
 A PCIe VF is created and allocated by an underlying physical adapter that supports the SR-IOV interface. Once created, the virtualization stack attaches, or *assigns*, the VF to a Hyper-V child partition. The guest operating system that runs in this partition exposes a virtual machine (VM) network adapter that is bound to the VF of the underlying SR-IOV physical adapter.
 
@@ -95,8 +94,7 @@ The forwarding extension can remove the assignment by issuing an **NDIS\_STATUS\
 
 For more information on how to issue an **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** status indication, see [Guidelines for Issuing an **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** Status Indication](#issuing).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

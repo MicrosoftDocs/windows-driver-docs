@@ -18,8 +18,7 @@ Miniport drivers must process both *set* and *query* requests asynchronously, in
 
 *Set* operations are only required to be supported by multi-carrier capable devices. The MB service will only *set* the home provider to multi-carrier providers reported by the miniport via OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS or OID\_WWAN\_VISIBLE\_PROVIDERS. *Set* operations have an input buffer of NDIS\_WWAN\_SET\_HOME\_PROVIDER.
 
-Remarks
--------
+## Remarks
 
 A *set* operation should not require the user to unlock the device regardless if the current SIM or target SIM is in a locked state.
 
@@ -35,8 +34,7 @@ For more information about using this OID, see [WWAN Provider Operations](./mb-p
 
 Miniport drivers can access the Subscriber Identity Module (SIM card) when processing query operations, but should not access the provider network.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

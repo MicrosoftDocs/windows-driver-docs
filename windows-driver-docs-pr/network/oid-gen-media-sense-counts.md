@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 As a query, the OID\_GEN\_MEDIA\_SENSE\_COUNTS OID returns the number of times the miniport adapter reported a media state change.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_MEDIA\_SENSE\_COUNTS OID returns the number of times the miniport adapter reported a media state change.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPS\_LAMP\_AUTO\_OFF property enables the programmatic control of how long a lamp will be kept on when a scanner is not in use; this lamp could be a dedicated lamp (for a transparency adapter) or the main scanner lamp (for dedicated film scanners).
 
@@ -34,8 +33,7 @@ You should implement WIA\_IPS\_LAMP\_AUTO\_OFF only if the device supports an au
 
 The valid values for WIA\_IPS\_LAMP\_AUTO\_OFF range from 0 through 4095 seconds.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

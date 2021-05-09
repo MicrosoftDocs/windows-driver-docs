@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_USB_HUB [device interface class](./overview-of-device-inte
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied USB port driver registers instances of GUID_DEVINTERFACE_USB_HUB to notify the operating system and applications of the presence of the root hub of host controller devices. The system-supplied USB hub driver registers instances of this class for additional hub devices, if any, that are supported by the host controller.
 
@@ -53,8 +52,7 @@ The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application]
 
 You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

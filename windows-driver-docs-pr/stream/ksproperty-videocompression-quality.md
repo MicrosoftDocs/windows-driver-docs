@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDECOMPRESSION\_QUALITY property controls the video compression
 
 The property value (operation data) is a LONG that specifies a video compression quality value.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOCOMPRESSION\_S structure specifies the quality metric.
 
@@ -67,8 +66,7 @@ Minidrivers that support this property should set the **KS\_CompressionCaps\_Can
 
 Values for this property range from 0 to 10000. Zero indicates the lowest quality, 10000 the highest. The minidriver determines its own default value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

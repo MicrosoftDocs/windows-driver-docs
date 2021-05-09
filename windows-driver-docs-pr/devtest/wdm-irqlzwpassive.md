@@ -68,8 +68,7 @@ DriverCloseResources (
 }
 ```
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -112,8 +111,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)
 [**ZwCreateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)

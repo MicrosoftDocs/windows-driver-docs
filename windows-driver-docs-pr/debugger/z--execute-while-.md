@@ -66,8 +66,7 @@ Specifies the condition to test. If this condition evaluates to a nonzero value,
 
  
 
-Remarks
--------
+## Remarks
 
 In many debugger commands, the semicolon is used to separate unrelated commands. However, in the **z** command, a semicolon separates the "z" from the *Command* parameter.
 

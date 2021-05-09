@@ -69,8 +69,7 @@ Wdfkd.dll
 
 KMDF 1, UMDF 2
 
-Remarks
--------
+## Remarks
 
 If you omit the *DriverName* parameter, the default driver name is used. Use the [**!wdfkd.wdfgetdriver**](-wdfkd-wdfgetdriver.md) extension to display the default driver name, and use the [**!wdfkd.wdfsetdriver**](-wdfkd-wdfsetdriver.md) extension to set the default driver name.
 

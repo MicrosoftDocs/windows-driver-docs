@@ -59,8 +59,7 @@ This bug check appears very infrequently.
 
  
 
-Remarks
--------
+## Remarks
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 

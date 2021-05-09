@@ -31,8 +31,7 @@ The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](/windows-hardware/d
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

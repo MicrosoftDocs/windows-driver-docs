@@ -167,8 +167,7 @@ After any connection-oriented event callback functions are enabled on a listenin
 
 For more information about enabling and disabling a socket's event callback functions, see [Enabling and Disabling Event Callback Functions](./enabling-and-disabling-event-callback-functions.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

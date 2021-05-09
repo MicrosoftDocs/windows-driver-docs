@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_MEDIA\_CONNECT status indicates that the status of a device's network connection has changed from disconnected to connected. For example, a device connects when it comes within range of an access point (for a wireless device) or when the user connects the device's network cable.
 
-Remarks
--------
+## Remarks
 
 NDIS translates NDIS\_STATUS\_MEDIA\_CONNECT status indications to [**NDIS\_STATUS\_LINK\_STATE**](ndis-status-link-state.md) status indications for overlying NDIS 6.0 drivers.
 
@@ -21,8 +20,7 @@ NDIS 5.*x* and earlier miniport drivers indicate an [**NDIS\_STATUS\_MEDIA\_DISC
 
 For more information about NDIS\_STATUS\_MEDIA\_CONNECT, see [Indicating Connection Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546856(v=vs.85)) and [Media Status Indications for 802.11 Networks](/previous-versions/windows/hardware/network/ff549301(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

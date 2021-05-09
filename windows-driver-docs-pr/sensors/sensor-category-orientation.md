@@ -344,8 +344,7 @@ This category includes the following platform-defined data fields.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

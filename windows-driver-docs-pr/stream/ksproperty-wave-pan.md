@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan setting.
 
 The property value (operation data) is a KSWAVE\_PAN structure the describes the left and right pan level.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

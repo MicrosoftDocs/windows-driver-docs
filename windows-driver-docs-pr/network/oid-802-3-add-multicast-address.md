@@ -20,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested.
 
-Remarks
--------
+## Remarks
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the 6-byte address to be added to the multicast address list.
 
@@ -35,8 +34,7 @@ The miniport driver can set a limit on the number of multicast addresses that th
 
 To delete a previously added multicast address, make a set request with the [OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS](oid-802-3-delete-multicast-address.md) OID. The overlying driver can add a given multicast address multiple times. If NDIS succeeds the first add request for a given multicast address, NDIS will succeed all subsequent add requests for that address. To delete a multicast address that was added more than once, the overlying driver must delete the address the same number of times that it added the address.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

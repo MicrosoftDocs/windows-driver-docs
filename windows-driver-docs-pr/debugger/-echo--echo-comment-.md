@@ -53,8 +53,7 @@ Specifies the text to display. You can also enclose *String* in quotation marks 
 
  
 
-Remarks
--------
+## Remarks
 
 The **.echo** command causes the debugger to display *String* immediately after you enter the command.
 

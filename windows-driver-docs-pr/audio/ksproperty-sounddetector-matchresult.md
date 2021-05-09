@@ -55,13 +55,11 @@ The **KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT** property holds the result data fo
 
 A [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader) structure followed by the result data payload.
 
-Remarks
--------
+## Remarks
 
 The result data includes a [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader) identifying the format of the result data as well as the OEMDLLCOM object to process the result data.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

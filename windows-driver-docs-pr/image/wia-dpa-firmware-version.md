@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The value of the WIA\_DPA\_FIRMWARE\_VERSION property must be a string value, such as "1.0.4" or "1.0abc".
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

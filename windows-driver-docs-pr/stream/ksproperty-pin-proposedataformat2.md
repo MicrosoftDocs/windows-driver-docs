@@ -52,8 +52,7 @@ The OS uses the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** property to determine if
 
  
 
-Remarks
--------
+## Remarks
 
 The property descriptor is a [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) followed by a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) specifying a count of variable size attributes that follow the **KSMULTIPLE\_ITEM**. Each attribute starts with a [**KSATTRIBUTE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute) header followed by data specific to the attribute. The attributes act as parameters for the property request, specifying the proposed data formats.
 
@@ -167,8 +166,7 @@ This code sample shows how to initialize the structure.
     input.SignalProcessingModeAttribute.SignalProcessingMode = gProcessingMode;
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

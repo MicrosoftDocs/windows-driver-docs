@@ -57,8 +57,7 @@ The CANNOT\_WRITE\_CONFIGURATION bug check has a value of 0x00000075. This bug c
 
  
 
-Cause
------
+## Cause
 
 The CANNOT\_WRITE\_CONFIGURATION bug check typically occurs if the system is out of pool and the Windows operating system cannot reopen the hive.
 

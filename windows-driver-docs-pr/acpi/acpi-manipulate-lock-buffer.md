@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_MANIPULATE\_LOCK\_BUFFER macro is reserved for internal use only with an [**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock) and [**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

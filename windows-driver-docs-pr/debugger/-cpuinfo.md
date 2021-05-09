@@ -37,8 +37,7 @@ Kdexts.dll
 
 For more information about debugging multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
-Remarks
--------
+## Remarks
 
 The **!cpuinfo** extension command can be used when performing [local kernel debugging](performing-local-kernel-debugging.md).
 

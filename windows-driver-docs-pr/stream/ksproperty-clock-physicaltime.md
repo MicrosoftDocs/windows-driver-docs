@@ -54,8 +54,7 @@ Clients use the KSPROPERTY\_CLOCK\_PHYSICAL\_TIME property to determine the curr
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a value of type LONGLONG, representing the current physical time in 100-nanosecond units.
 
@@ -63,8 +62,7 @@ The physical time of a clock is an ever-progressing counter. Unlike the presenta
 
 Clocks are not required to support a 100-nanosecond resolution. To determine the clock resolution, clients can use the [**KSPROPERTY\_CLOCK\_RESOLUTION**](ksproperty-clock-resolution.md) request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

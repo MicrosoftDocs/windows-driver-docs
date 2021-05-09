@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 As a query, the OID\_GEN\_INIT\_TIME\_MS OID returns the time in milliseconds that a driver required to initialize.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_INIT\_TIME\_MS OID returns the time in milliseconds that a driver required to initialize.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -17,8 +17,7 @@ WDI\_TLV\_CIPHER\_KEY\_GCMP\_KEY (0x12F) is an unused TLV.
 
 0x12F
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

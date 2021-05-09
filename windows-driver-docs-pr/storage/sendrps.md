@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **SendRPS** WMI method sends a read port status block (RPS) request to the indicated port or domain controller.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SendRPS(
@@ -37,8 +36,7 @@ void SendRPS(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
 On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
@@ -67,18 +65,15 @@ The size in bytes of the data that was actually retrieved. The miniport driver r
 *RspBuffer*   
 The results of the RPS command. The miniport driver returns this information in the **RspBuffer** member of a [**SendRPS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrps_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -60,15 +60,13 @@ The property value (operation data) is a structure of type KSAUDIO\_DYNAMIC\_RAN
 
 A KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 By default, the values for the **QuietCompression** and **LoudCompression** members of the KSAUDIO\_DYNAMIC\_RANGE structure are set to zero percent. This produces the full dynamic range of the audio stream. The miniport driver sets the property to its default value when it instantiates the pin whose data path contains the node.
 
 Some devices might not support changes to **QuietCompression** and **LoudCompression**. If the client attempts to change a value that the device does not support, the miniport driver should return an error.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

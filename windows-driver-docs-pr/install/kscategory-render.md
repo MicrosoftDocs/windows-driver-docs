@@ -44,8 +44,7 @@ The KSCATEGORY_RENDER [device interface class](./overview-of-device-interface-cl
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio adapter devices register an instance of KSCATEGORY_RENDER to indicate that the devices support the KSCATEGORY_RENDER functional category.
 
@@ -53,8 +52,7 @@ For information about how to register this functional category in an INF file, s
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a set request, NDIS and protocol drivers use the OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD OID to remove a power management protocol offload from a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a **ULONG** protocol offload identifier.
 
-Remarks
--------
+## Remarks
 
 NDIS and protocol drivers use the OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD OID to remove a protocol offload from the underlying network adapter.
 
@@ -43,8 +42,7 @@ The information buffer is too small. NDIS sets the **DATA.SET\_INFORMATION.Bytes
 <a href="" id="ndis-status-file-not-found"></a>**NDIS\_STATUS\_FILE\_NOT\_FOUND**  
 The protocol offload identifier in the OID request is not valid.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,13 +14,11 @@ All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs 
 
 If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_QUERY\_SINGLE\_INSTANCE** request, WMI in turn calls that driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 WMI sends this IRP to query for a single instance of a given data block.
 
@@ -67,8 +65,7 @@ STATUS\_WMI\_INSTANCE\_NOT\_FOUND
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to the value entered into **WnodeHeader.BufferSize**. This value includes the length of the static instance name.
 
-Operation
----------
+## Operation
 
 A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
@@ -98,8 +95,7 @@ If the driver locates the instance and can handle the request, it fills in the *
 
 If the instance is valid but the driver cannot handle the request, it can return any appropriate error status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

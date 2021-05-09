@@ -21,8 +21,7 @@ The **!dml\_proc** extension displays a list of processes and provides links for
 !dml_proc
 ```
 
-Remarks
--------
+## Remarks
 
 The following image shows a portion of the output displayed by **!dml\_proc**.
 

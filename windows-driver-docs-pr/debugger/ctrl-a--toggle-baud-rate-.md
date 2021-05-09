@@ -61,8 +61,7 @@ CTRL+ALT+A
 
  
 
-Remarks
--------
+## Remarks
 
 This will cycle through all available baud rates for the kernel debugging connection.
 

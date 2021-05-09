@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The value that the WIA\_IPA\_ITEM\_SIZE property contains is the total size of the data that is being transferred. If this value is zero, the WIA minidriver has no information about the exact size of the data. (This situation is common for compressed data.)
 
@@ -41,8 +40,7 @@ If WIA\_IPA\_ITEM\_SIZE is set to zero and TYMED is configured for a file transf
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

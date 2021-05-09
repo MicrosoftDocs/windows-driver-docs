@@ -241,8 +241,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The Microsoft Windows operating system detects a violation of the software license agreement.
 

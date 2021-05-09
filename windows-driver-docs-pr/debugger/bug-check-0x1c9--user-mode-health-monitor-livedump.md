@@ -97,8 +97,7 @@ The USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP bug check has a value of 0x000001C9. I
        A subclass of WatchdogSourceRhsResourceTypeDeadlock.
 </pre>
 
-## Cause
------
+## ## Cause
 One or more critical user mode components failed to satisfy a health check.
 
 Hardware mechanisms such as watchdog timers can detect that basic kernel 
@@ -118,8 +117,7 @@ to other servers.
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
-## See Also
-----------
+## ## See Also-
 
 [Troubleshooting a Failover Cluster using Windows Error Reporting](/windows-server/failover-clustering/troubleshooting-using-wer-reports)
 

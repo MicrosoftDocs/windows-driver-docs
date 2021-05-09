@@ -20,8 +20,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 -   Additional buffer space for the data to be written to the specified VF configuration block.
 
-Remarks
--------
+## Remarks
 
 A VF configuration block is used for backchannel communication between the PF and VF miniport drivers. The IHV can define one or more VF configuration blocks for the miniport drivers. Each VF configuration block has an IHV-defined format, length, and block ID.
 
@@ -88,8 +87,7 @@ The miniport driver returns one of the following status codes for the OID set re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

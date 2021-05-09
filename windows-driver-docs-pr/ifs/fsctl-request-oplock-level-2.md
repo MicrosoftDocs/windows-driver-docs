@@ -37,8 +37,7 @@ Opaque oplock object pointer for the file.
 <a href="" id="opencount"></a>*OpenCount*  
 Specifies the locking state of the file. Set this parameter to a nonzero ULONG value if there are byte-range locks on the file, or zero otherwise.
 
-Status block
-------------
+## Status block
 
 [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) returns FLT\_PREOP\_PENDING for this operation if the oplock was granted. Otherwise, it returns FLT\_PREOP\_COMPLETE.
 
@@ -73,8 +72,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

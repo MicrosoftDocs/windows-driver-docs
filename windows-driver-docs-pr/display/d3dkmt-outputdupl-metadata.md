@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_METADATA {
@@ -33,8 +32,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_METADATA {
 } D3DKMT_OUTPUTDUPL_METADATA;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -48,8 +46,7 @@ Members
 
 **BufferSizeRequired**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -60,15 +60,13 @@ The property value (operation data) is of type FLOAT and specifies the rolloff f
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Rolloff is the amount of attenuation that is applied to sounds, based on the listener's distance from the sound source. A rolloff factor of zero means that no attenuation is applied to a sound regardless of its distance from the listener. Factors larger than 1 exaggerate the real-world attenuation of sound with distance.
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetRolloffFactor** and **IDirectSound3DListener::SetRolloffFactor** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

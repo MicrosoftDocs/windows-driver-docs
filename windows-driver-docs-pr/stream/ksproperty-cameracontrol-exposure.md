@@ -111,15 +111,13 @@ This value is expressed in log base 2 seconds, thus, for values less than zero, 
 
  
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the length of exposure.
 
 Every video capture minidriver that supports this property must define its own range and default value for this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

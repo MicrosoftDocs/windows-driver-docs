@@ -943,13 +943,11 @@ The following table lists additional **I/O Verification** errors that can appear
 </tbody>
 </table>
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for a description of the cause.
 
-Resolution
-----------
+## Resolution
 
 This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. For more information, see "How to control Driver Verifier" in [Driver Verifier](../devtest/driver-verifier.md). You might consider updating or removing the driver which caused this problem as well.
 

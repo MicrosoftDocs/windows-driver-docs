@@ -56,15 +56,13 @@ The KSPROPERTY\_EXTXPORT\_ATN\_SEARCH property searches to a specific absolute t
 
 The property value (operation data) is a DWORD that specifies the absolute track number.
 
-Remarks
--------
+## Remarks
 
 The **dwAbsTrackNumber** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the absolute track number to search to.
 
 This method is defined, but not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

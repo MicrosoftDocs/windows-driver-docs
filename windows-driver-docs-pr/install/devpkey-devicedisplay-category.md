@@ -52,8 +52,7 @@ The DEVPKEY_DeviceDisplay_Category device property represents one or more functi
 
  
 
-Remarks
--------
+## Remarks
 
 Device categories for a physical device are specified through the [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85)) XML element in a [device metadata package](./overview-of-device-metadata-packages.md). Each instance of that device in a system inherits the device categories for that physical device.
 
@@ -69,8 +68,7 @@ The **Devices and Printers** user interface in Control Panel displays the primar
 
 You can access the DEVPKEY_DeviceDisplay_Category property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

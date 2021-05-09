@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type DS3DVECTOR that speci
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 For more information about the position of a DirectSound 3D buffer, see the following in the Microsoft Windows SDK documentation:
 
@@ -69,8 +68,7 @@ For more information about the position of a DirectSound 3D buffer, see the foll
 
 -   The **IDirectSound3DBuffer::GetPosition** and **IDirectSound3DBuffer::SetPosition** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -78,8 +78,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
 For more information about issuing the **p** command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 When you specify *Count*, each instruction is displayed as it is stepped through.
 

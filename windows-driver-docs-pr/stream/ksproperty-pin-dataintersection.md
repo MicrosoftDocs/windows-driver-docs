@@ -54,8 +54,7 @@ A client uses the KSPROPERTY\_PIN\_DATAINTERSECTION property to find a data form
 
  
 
-Remarks
--------
+## Remarks
 
 To specify this property, provide a [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) structure followed by a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure and a sequence of 64-bit aligned [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structures. The **PinId** member of **KSP\_PIN** specifies the pin factory.
 
@@ -65,8 +64,7 @@ Stream minidrivers do not need to handle this property directly; the stream clas
 
 For more information, see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

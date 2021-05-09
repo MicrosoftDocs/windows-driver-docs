@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO property retrieves the video compressi
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S structure that specifies video compression settings such as the stream whose compression capabilities are to be queried, default key frame rate, default predicted frame rate, default quality setting, number of quality settings, and various compression capabilities.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

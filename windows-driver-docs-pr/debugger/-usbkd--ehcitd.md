@@ -32,8 +32,7 @@ Address of a **usbehci!\_TRANSFER\_CONTEXT** structure.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 This example shows one way to get the address of a **usbehci!\_TRANSFER\_CONTEXT** structure. Use [**!\_ehciep**](-usbkd--ehciep.md) to display information about an endpoint.
 

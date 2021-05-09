@@ -14,8 +14,7 @@ Overlying drivers issue an object identifier (OID) set request of OID\_SRIOV\_RE
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SRIOV\_RESET\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_reset_vf_parameters) structure. The overlying driver specifies the identifier of the VF to be reset through the **VFId** member of this structure.
 
-Remarks
--------
+## Remarks
 
 A VF can be reset through a PCI Express (PCIe) Function Level Reset (FLR). Because the FLR request is a privileged operation, it can only be performed by the PF miniport driver that runs in the management operating system of a Hyper-V parent partition. Overlying drivers that run in the management operating system are notified of the FLR request and issue the OID set request of OID\_SRIOV\_RESET\_VF to the PF miniport driver.
 
@@ -68,8 +67,7 @@ The PF miniport driver returns one of the following status codes for the set req
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

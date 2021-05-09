@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_CURRENT\_CHANNEL\_PARAMETERS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

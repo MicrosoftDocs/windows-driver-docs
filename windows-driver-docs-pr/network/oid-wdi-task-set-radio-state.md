@@ -43,8 +43,7 @@ Before the host turns off the radio, it disconnects all peers and stops any Grou
 [NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS](ndis-status-wdi-indication-radio-status.md)
 This indication is used to report changes in the radio state for the adapter. This is sent both when a software radio change is triggered by the host and when a hardware radio state change is detected by the adapter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

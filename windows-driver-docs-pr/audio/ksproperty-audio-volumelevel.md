@@ -73,13 +73,11 @@ If a value is specified beyond the range of the filter, the request to set this 
 
 A KSPROPERTY\_AUDIO\_VOLUMELEVEL property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The property descriptor for this property specifies a channel number. If the stream that passes through the volume node contains *n* channels, the channels are numbered 0 through *n*-1. For more information, see [Exposing Multichannel Nodes](./exposing-multichannel-nodes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

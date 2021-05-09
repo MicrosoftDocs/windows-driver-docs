@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write (image acquisitions); read-only (image storage)
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_COMPRESSION property to determine the image compression type, or the application sets this property to configure the compression setting.
 
@@ -98,8 +97,7 @@ All WIA 2.0 minidrivers must set the initial value of this property to its defau
 
 The access rights of the WIA\_IPA\_COMPRESSION property are read/write for all image acquisitions but read-only for stored image items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

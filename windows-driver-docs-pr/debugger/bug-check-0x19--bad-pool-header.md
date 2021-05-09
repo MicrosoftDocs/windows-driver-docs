@@ -130,15 +130,13 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
-Cause
------
+## Cause
 
 The pool is already corrupted at the time of the current request.
 
 This may or may not be due to the caller.
 
-Resolution
-----------
+## Resolution
 
 The internal pool links must be walked using the kernel debugger to figure out a possible cause of the problem.
 

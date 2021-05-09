@@ -47,8 +47,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The **!xhci\_dumpall** command is the parent command for this set of commands.
 

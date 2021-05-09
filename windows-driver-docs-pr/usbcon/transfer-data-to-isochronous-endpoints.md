@@ -238,8 +238,7 @@ Total length transferred is 360,000 bytes.
 
 The **UrbIsochronousTransfer.IsoPacket\[i\]**.Length member does not imply the length of each packet of the isochronous URB. **IsoPacket\[i\].Length** is updated by the USB driver stack to indicate the actual number of bytes that are received from the device for isochronous IN transfers. For isochronous OUT transfers, the driver stack ignores the value that is set in **IsoPacket\[i\].Length**.
 
-Remarks
--------
+## Remarks
 
 **Specify the starting USB frame number for the transfer**
 

@@ -52,13 +52,11 @@ The DEVPKEY_DeviceInterface_Restricted device interface property indicates that 
 
  
 
-Remarks
--------
+## Remarks
 
 You can call [**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve the value of DEVPKEY_DeviceInterface_Restricted.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

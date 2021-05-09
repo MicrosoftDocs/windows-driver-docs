@@ -49,8 +49,7 @@ The **.echotime** command displays the current time.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.echotime** command displays the time to the computer that the debugger is running on.
 

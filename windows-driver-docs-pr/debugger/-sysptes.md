@@ -69,8 +69,7 @@ Displays detailed information about any system PTEs that are allocated to mappin
 
 For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To examine a specific PTE, use the [**!pte**](-pte.md) extension.
 

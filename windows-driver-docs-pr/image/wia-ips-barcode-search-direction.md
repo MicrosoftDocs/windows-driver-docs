@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION** property.
 
@@ -72,8 +71,7 @@ The following table describes the valid values for the **WIA\_IPS\_BARCODE\_SEAR
 
 This property is required for all Barcode Reader items, but it can be implemented to support only the WIA\_BARCODE\_AUTO\_SEARCH value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

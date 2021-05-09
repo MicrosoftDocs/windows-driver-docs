@@ -61,8 +61,7 @@ CTRL+ALT+V
 
  
 
-Remarks
--------
+## Remarks
 
 When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. Every MODULE LOAD operation that is sent to the debugger will be displayed. And every time a driver or DLL is loaded by the operating system, the debugger will be notified.
 

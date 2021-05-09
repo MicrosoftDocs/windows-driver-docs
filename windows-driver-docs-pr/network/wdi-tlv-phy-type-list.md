@@ -31,8 +31,7 @@ The size (in bytes) of the array of [**WDI\_PHY\_TYPE**](/windows-hardware/drive
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

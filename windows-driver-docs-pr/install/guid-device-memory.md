@@ -44,15 +44,13 @@ The GUID_DEVICE_MEMORY [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers instances of this device interface class to notify the operating system and applications of the presence of ACPI memory devices.
 
 For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

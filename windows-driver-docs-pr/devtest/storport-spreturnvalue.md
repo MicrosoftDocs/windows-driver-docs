@@ -19,8 +19,7 @@ This rule verifies that the driver's implementations of [**HwStorFindAdapter**](
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

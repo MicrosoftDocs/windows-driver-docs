@@ -56,8 +56,7 @@ Find NBLs that contain an NB that straddles the given physical address.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Enter the **!ndiskd.nblpool** command with no parameters to see a list of all allocated NBL pools. In this example, look for the NBL pool allocated by the kernel debugger network interface card (kdnic) with the KDNr Tag. Its handle is ffffdf80147e4a40.
 

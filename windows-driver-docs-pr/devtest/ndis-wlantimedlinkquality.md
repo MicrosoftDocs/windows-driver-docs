@@ -22,8 +22,7 @@ The **WlanTimedLinkQuality** rule specifies the NDIS\_STATUS\_DOT11\_LINK\_QUALI
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0009400B)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -43,14 +42,12 @@ How to test
 
  
 
-Applies to
-----------
+## Applies to
 
 [**MiniportHaltEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt)
 [**MiniportOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)
 [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)
 [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)
-See also
---------
+## See also
 
 [NDIS\_STATUS\_DOT11\_LINK\_QUALITY](/previous-versions/windows/hardware/wireless/ndis-status-dot11-link-quality)

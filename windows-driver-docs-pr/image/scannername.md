@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerName** element specifies the administratively assigned user-friendly name of the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerName xml:lang="..."
@@ -27,8 +26,7 @@ Usage
 </wscn:ScannerName xml:lang="...">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -56,8 +54,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 A character string that specifies the scanner's user-friendly name.
 
@@ -85,15 +82,13 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The configuration of the **ScannerName** element's value is implementation-specific; for example, you can configure this value through the scanner's local console or the device's web server. If a device has only one hosted service, its friendly name and **ScannerName** element should have the same value. If the device contains several hosted services, **ScannerName** should identify the scanner.
 
 A scan device can return multiple versions of this element to enable support for multiple localized languages by using the **xml:lang** attribute.
 
-Examples
---------
+## Examples
 
 The following code example shows how you can use the ScannerName element.
 

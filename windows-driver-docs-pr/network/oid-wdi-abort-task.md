@@ -152,8 +152,7 @@ UINT32
 N/A
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

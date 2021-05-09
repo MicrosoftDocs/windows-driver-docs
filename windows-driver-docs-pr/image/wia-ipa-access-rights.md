@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_FLAG
 
 Access Rights: Read/write or read-only (depending on the item's ability to have its access rights changed)
 
-Remarks
--------
+## Remarks
 
 *Access rights* control the ability of an application to delete items in the WIA item tree. The WIA minidriver creates and maintains the WIA\_IPA\_ACCESS\_RIGHTS property.
 
@@ -72,8 +71,7 @@ The following table describes the constants that are valid with WIA\_IPA\_ACCESS
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -57,8 +57,7 @@ The SET\_OF\_INVALID\_CONTEXT bug check has a value of 0x00000030. This indicate
 
  
 
-Cause
------
+## Cause
 
 This bug check occurs when some routine attempts to set the stack pointer in the trap frame to a lower value than the current stack pointer value.
 

@@ -31,8 +31,7 @@ The **Reboot** directive is almost never specified in INF files for installation
 
 When the reboot directive is specified, the caller will be notified that a system reboot is required to complete the installation of any devices using this INF install section. When the installation has been initiated through a function such as [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), [**DiInstallDriver**](/windows/win32/api/newdev/nf-newdev-diinstalldrivera), or [**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice), this will result in the *NeedReboot* out parameter of these routines being set to TRUE.
 
-Remarks
--------
+## Remarks
 
 On Windows 7 and earlier, the installation of a device using a driver with the **Reboot** directive will always result in the caller being notified that a system reboot is required to complete the installation.
 

@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_LNB\_LOF\_HIGH\_BAND to inform the RF tuner node ab
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the RF tuner node.
 
@@ -63,8 +62,7 @@ The property value specifies the LOF that is used by the LNB for high-band signa
 
 The LNB gathers the RF signal reflected by the satellite dish, shifts the frequency of the RF signal down by the high-band LOF amount, and sends the resulting signal to the RF tuner.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

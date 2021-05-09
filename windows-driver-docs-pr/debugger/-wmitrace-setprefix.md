@@ -162,8 +162,7 @@ tracedrv_c258: TracedrvDispatchDeviceControl: 0af4.0c64: 07/25/2003-13:55:39.998
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK documentation. For information about trace message format files, see the "Trace Message Prefix" topic in the WDK documentation.
 
-Remarks
--------
+## Remarks
 
 When used with no parameters, **!wmitrace.setprefix** displays the current value of the trace message prefix.
 

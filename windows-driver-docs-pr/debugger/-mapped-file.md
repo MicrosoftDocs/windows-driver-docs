@@ -54,8 +54,7 @@ The **!mapped\_file** extension can only be used during live, nonremote debuggin
 
 For more information about file mapping, see [MapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) in the Windows SDK.
 
-Remarks
--------
+## Remarks
 
 Here are three examples. The first two addresses used are mapped from a file, and the third is not.
 

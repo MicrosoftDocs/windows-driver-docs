@@ -54,13 +54,11 @@ Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precisio
 
  
 
-Remarks
--------
+## Remarks
 
 The delay introduced in the **Error** member is in addition to that in the **Granularity** member. For example, a clock with a **Granularity** of one and **Error** of two would be able to issue clock event notifications every 300 nanoseconds.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

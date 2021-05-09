@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 **DriverEntry** initializes a tape miniclass driver. This routine is required.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 ULONG DriverEntry(
@@ -29,8 +28,7 @@ ULONG DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Argument1* \[in\]  
 Pointer to a driver context that a tape miniclass driver passes to [**TapeClassInitialize**](/windows-hardware/drivers/ddi/minitape/nf-minitape-tapeclassinitialize). The format of the context information is OS-specific and must not be interpreted by portable tape miniclass drivers.
@@ -38,13 +36,11 @@ Pointer to a driver context that a tape miniclass driver passes to [**TapeClassI
 *Argument2* \[in\]  
 Pointer to a second context structure that a tape miniclass driver passes to **TapeClassInitialize**. The format of the context information is OS-specific and must not be interpreted by portable tape miniclass drivers.
 
-Return value
-------------
+## Return value
 
 **DriverEntry** returns the value returned by its call to **TapeClassInitialize**.
 
-Remarks
--------
+## Remarks
 
 **DriverEntry** is the initial entry point for a tape miniclass driver.
 
@@ -54,8 +50,7 @@ Since **TapeClassInitialize** performs most of the required driver initializatio
 
 **DriverEntry** calls **TapeClassInitialize** and passes the address of TAPE\_INIT\_DATA\_EX and the two pointers that were passed to **DriverEntry** (*Argument1* and *Argument2*). **TapeClassInitialize** completes driver initialization and returns status to the tape miniclass driver's **DriverEntry** routine. **DriverEntry** returns the status that it received from **TapeClassInitialize**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

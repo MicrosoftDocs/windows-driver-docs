@@ -57,13 +57,11 @@ The AGP\_ILLEGALLY\_REPROGRAMMED bug check has a value of 0x00000106. This indic
 
  
 
-Cause
------
+## Cause
 
 This bug check is typically caused by an unsigned, or improperly tested, video driver.
 
-Resolution
-----------
+## Resolution
 
 Check the video manufacturer's Web site for updated display drivers or use VGA mode.
 

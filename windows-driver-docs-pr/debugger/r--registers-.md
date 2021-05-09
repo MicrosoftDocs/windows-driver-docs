@@ -170,8 +170,7 @@ Displays the registers used in the current instruction. If no registers are used
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify *Register*, the **r** command displays all the non-floating-point registers, and the **rF** command displays all the floating-point registers. You can change this behavior by using the [**rm (Register Mask)**](rm--register-mask-.md) command.
 

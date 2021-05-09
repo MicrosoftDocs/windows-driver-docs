@@ -49,8 +49,7 @@ This message is sent to a Remote NDIS device from a host to reset the device and
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

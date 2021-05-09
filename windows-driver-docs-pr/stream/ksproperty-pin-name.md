@@ -54,15 +54,13 @@ The client uses KSPROPERTY\_PIN\_NAME to retrieve the Registry name of a pin fac
 
  
 
-Remarks
--------
+## Remarks
 
 Specify this property using KSP\_PIN, where the member specifies the pin factory for which to return the registry name.
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

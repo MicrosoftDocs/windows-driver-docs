@@ -31,13 +31,11 @@ The MICROCODE\_REVISION\_MISMATCH bug check has a value of 0x0000017E. It indica
 |4| The processor index of the mismatching processor.|
 
 
-## Cause
------
+## ## Cause
 One or more processors in the multiprocessor configuration have inconsistent microcode loaded. 
 This bugcheck indicates that faulty system firmware has mistakenly applied a microcode update to only a subset of processors in the host configuration. System firmware must apply microcode updates to all processors in a uniform fashion. 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

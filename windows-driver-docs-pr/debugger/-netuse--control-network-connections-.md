@@ -64,8 +64,7 @@ Specifies the password that is associated with the *User* account. You must encl
 
  
 
-Remarks
--------
+## Remarks
 
 The **.netuse** command behaves like the **net use** Microsoft MS-DOS command.
 

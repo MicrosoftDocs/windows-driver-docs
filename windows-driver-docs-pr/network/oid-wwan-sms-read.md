@@ -18,8 +18,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 Callers requesting to read SMS text messages provide an NDIS\_WWAN\_SMS\_READ structure to indicate which SMS messages the caller wants the miniport to return.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
@@ -35,8 +34,7 @@ Miniport drivers must logically project a single SMS text message store across a
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

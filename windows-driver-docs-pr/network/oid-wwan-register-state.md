@@ -17,8 +17,7 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Callers requesting to set the network provider to register with provide an [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_register_state) structure to the miniport driver with the appropriate information.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Registration Operations](./mb-registration-operations.md).
 
@@ -50,8 +49,7 @@ The host can also query the currently preferred data classes from the miniport d
 
 For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -59,8 +59,7 @@ This command cannot be used in script files.
 
  
 
-Remarks
--------
+## Remarks
 
 When **.idle\_cmd** is used with no parameters it displays the current idle command.
 

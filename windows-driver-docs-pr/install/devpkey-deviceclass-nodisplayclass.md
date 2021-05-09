@@ -56,8 +56,7 @@ The DEVPKEY_DeviceClass_NoDisplayClass device property represents a Boolean flag
 
  
 
-Remarks
--------
+## Remarks
 
 If the value of DEVPKEY_DeviceClass_NoDisplayClass is set to DEVPROP_TRUE, Device Manager does not display devices in the device setup class. If this value is not set to DEVPROP_TRUE, the Device Manager does display devices in the device setup class.
 
@@ -67,8 +66,7 @@ You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupa
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoDisplayClass property key. You can access the value of this property by accessing the corresponding **NoDisplayClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Format** element indicates a single file format and compression type supported by the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Format wscn:Override="" wscn:UsedDefault=""
@@ -32,8 +31,7 @@ Usage
 </wscn:Format wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -68,8 +66,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -185,8 +182,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the image **Format** element is unsupported, then the scanner must reject the request and return the **ClientErrorDocumentFormatNotSupported** error code.
 

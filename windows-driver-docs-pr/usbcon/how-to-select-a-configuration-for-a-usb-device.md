@@ -266,8 +266,7 @@ NTSTATUS CompletionRoutine ( PDEVICE_OBJECT DeviceObject,
 }
 ```
 
-Remarks
--------
+## Remarks
 
 **Disabling a Configuration for a USB Device:**
 

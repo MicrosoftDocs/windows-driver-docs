@@ -44,8 +44,7 @@ The KSCATEGORY_AUDIO_SPLITTER [device interface class](./overview-of-device-inte
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_INNER\_FEC\_RATE to control the binary convolution 
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the BinaryConvolutionCodeRate enumerated type identifies a binary convolution scheme.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

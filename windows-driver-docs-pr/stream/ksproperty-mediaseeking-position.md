@@ -54,13 +54,11 @@ KSPROPERTY\_MEDIASEEKING\_POSITION retrieves the media time of a filter.
 
  
 
-Remarks
--------
+## Remarks
 
 The media time is returned as a value of type LONGLONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

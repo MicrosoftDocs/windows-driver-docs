@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 A minidriver should report the WIA\_DPS\_PLATEN\_COLOR as a vector of four BYTE values in the form of an RGBQUAD structure (which is described in the Microsoft Windows SDK documentation). The WIA minidriver creates and maintains this property.
 
 An application reads WIA\_DPS\_PLATEN\_COLOR to get the scanner's platen color. This color can help the application post-process the final image.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -22,13 +22,11 @@ Upper and lower-filter drivers do not handle this IRP.
 
 0x0D
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP when it is preparing to allocate resource(s) to a device.
 
@@ -55,8 +53,7 @@ Upper and lower-filter drivers do not handle this IRP. Such a driver calls **IoS
 
 The parent bus driver does not handle this IRP. It leaves **Irp-&gt;IoStatus** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 The PnP manager sends an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request to the parent bus driver for the device, before the function driver has attached its device object to the device stack. To give the function driver an opportunity to modify the device's resource requirements, if appropriate, the PnP manager later sends an **IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS** request to the full device stack. The PnP manager sends this IRP before it allocates hardware resources to the device during initial device configuration. The PnP manager might also send this IRP during resource rebalancing.
 
@@ -86,8 +83,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

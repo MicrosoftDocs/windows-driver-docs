@@ -54,8 +54,7 @@ Specifies a processor. If *Processor* is omitted, the current processor is used.
 
 This extension command can only be used with an Itanium-based target computer.
 
-Remarks
--------
+## Remarks
 
 This extension displays the interrupt history record without referencing the program counter symbols. To display the interrupt history record using the program counter symbols, use the [**!ihs**](-ihs.md) extension. To enable the interrupt history record, add **/configflag=32** to the boot entry options.
 

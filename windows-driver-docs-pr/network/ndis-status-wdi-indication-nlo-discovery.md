@@ -44,8 +44,7 @@ The indication of NLO discovery happens in the following two cases.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

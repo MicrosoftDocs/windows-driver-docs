@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectReferenceWithTag** macro increments the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID WdfObjectReferenceWithTag(
@@ -24,8 +23,7 @@ VOID WdfObjectReferenceWithTag(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
@@ -33,15 +31,13 @@ A handle to a framework object.
 *Tag* \[in\]  
 A driver-defined value that the framework stores as an identification tag for the object reference.
 
-Return value
-------------
+## Return value
 
 None.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-Remarks
--------
+## Remarks
 
 If your driver calls **WdfObjectReferenceWithTag** to increment a reference count, the driver must call [**WdfObjectDereferenceWithTag**](wdfobjectdereferencewithtag.md) to decrement the count.
 
@@ -51,8 +47,7 @@ You can view the tag, line number, and file name values by using the **!wdftagtr
 
 For more information about object reference counts, see [Framework Object Life Cycle](./framework-object-life-cycle.md).
 
-Examples
---------
+## Examples
 
 The following code example increments an object's reference count and assigns a tag value to the reference.
 
@@ -63,8 +58,7 @@ WdfObjectReferenceWithTag(
                           );
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

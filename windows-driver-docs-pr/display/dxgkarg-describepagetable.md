@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_DESCRIBEPAGETABLE structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_DESCRIBEPAGETABLE {
@@ -32,8 +31,7 @@ typedef struct _DXGKARG_DESCRIBEPAGETABLE {
 } DXGKARG_DESCRIBEPAGETABLE;
 ```
 
-Members
--------
+## Members
 
 **CoverageStart**
 Reserved for system use.
@@ -50,8 +48,7 @@ Reserved for system use.
 **SubtableOffset2**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

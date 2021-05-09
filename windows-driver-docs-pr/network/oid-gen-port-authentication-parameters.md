@@ -20,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Optional. Mandatory for NDIS ports. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 Miniport drivers that support NDIS ports must support this OID.
 
@@ -29,8 +28,7 @@ If a miniport driver does not support this OID, the miniport driver should retur
 
 If the miniport driver supports this OID, the driver returns NDIS\_STATUS\_SUCCESS and provides the receive port direction, port control state, and authenticate state in an [**NDIS\_PORT\_AUTHENTICATION\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_authentication_parameters) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

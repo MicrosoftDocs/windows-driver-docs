@@ -65,8 +65,7 @@ If the MAC is to function as a Wi-Fi Direct device port, **uOpmodeMask** contain
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE](ndis-status-wdi-indication-create-port-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

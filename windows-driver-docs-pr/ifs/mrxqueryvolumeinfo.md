@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxQueryVolumeInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query volume information.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxQueryVolumeInfo;
@@ -31,14 +30,12 @@ NTSTATUS MRxQueryVolumeInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxQueryVolumeInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -93,8 +90,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxQueryVolumeInfo* in either of the following cases:
 
@@ -144,8 +140,7 @@ For this case of an IRP\_MJ\_FILE\_SYSTEM\_CONTROL request, the **AssociatedIrp.
 
 If a request is initiated as an IRP\_MJ\_FILE\_SYSTEM\_CONTROL to *MRxQueryVolumeInfo* with a return value of STATUS\_SUCCESS or STATUS\_BUFFER\_OVERFLOW, RDBSS copies the **ObjectId** member of the FILE\_FS\_OBJECTID\_INFORMATION structure passed in the **Info.Buffer** member of RX\_CONTEXT structure to the **NetRoot-&gt;DiskParameters.VolumeId** member of the FCB structure and to the **AssociatedIrp.SystemBuffer.VolumeId** member of the IRP. If the call to *MRxQueryVolumeInfo* was successful, RDBSS sets the **Type** member of the LINK\_TRACKING\_INFORMATION structure. If the **NetRoot-&gt;Flags** member of the FCB structure has the NETROOT\_FLAG\_DFS\_AWARE\_NETROOT bit set, the **Type** member is set by RDBSS to **DfsLinkTrackingInformation**. If the **NetRoot-&gt;Flags** member of the FCB structure does not have the NETROOT\_FLAG\_DFS\_AWARE\_NETROOT bit set, the **Type** member is set by RDBSS to **NtfsLinkTrackingInformation**. On success, RDBSS sets the **IoStatus.Information** member of the IRP to the size of a LINK\_TRACKING\_INFORMATION structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

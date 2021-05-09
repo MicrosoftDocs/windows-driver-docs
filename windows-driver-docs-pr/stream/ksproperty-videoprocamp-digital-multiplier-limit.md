@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER\_LIMIT property specifies the 
 
 The property value (operation data) is a LONG that specifies a camera's upper digital multiplier limit. The value specifies the maximum value of the digital multiplier that the device can apply to the optical image.
 
-Remarks
--------
+## Remarks
 
 When making a set request, the client should supply a digital multiplier value in the **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S structure.
 
@@ -65,8 +64,7 @@ A client might use a set request to establish a user-defined upper limit for dig
 
 When making a get request, the client receives one of the preceding values in the **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

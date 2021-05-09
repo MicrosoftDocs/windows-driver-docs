@@ -54,8 +54,7 @@ Clients use the KSPROPERTY\_PIN\_DATARANGES property to determine the data range
 
  
 
-Remarks
--------
+## Remarks
 
 Specify this property using KSP\_PIN, where the **PinId** member specifies the pin factory for which to return acceptable data ranges.
 
@@ -65,8 +64,7 @@ Stream minidrivers do not need to handle this property directly; the stream clas
 
 For more information, see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -53,8 +53,7 @@ Specifies the address of a list header.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension is designed to be used at the beginning of the system boot process while Ntldr is running. It displays a memory allocation list that includes the start, end, and type of each page range.
 

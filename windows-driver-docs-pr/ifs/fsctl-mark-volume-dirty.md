@@ -47,8 +47,7 @@ Not used with this operation. Set to **NULL**.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used with this operation. Set to 0.
 
-Status block
-------------
+## Status block
 
 The [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
 
@@ -89,13 +88,11 @@ The [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-
 
  
 
-Remarks
--------
+## Remarks
 
 **ReFS:  **This code is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

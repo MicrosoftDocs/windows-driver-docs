@@ -22,8 +22,7 @@ The **WlanConnectionRoaming** rule verifies the miniport driver correctly follow
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) ( 0x00093005)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -43,13 +42,11 @@ How to test
 
  
 
-Applies to
-----------
+## Applies to
 
 [**MiniportHaltEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt)
 [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)
-See also
---------
+## See also
 
 [General Connection Operation Guidelines](/previous-versions/windows/hardware/wireless/general-connection-operation-guidelines)
 [NDIS\_STATUS\_DOT11\_CONNECTION\_START](/previous-versions/windows/hardware/wireless/ndis-status-dot11-connection-start)

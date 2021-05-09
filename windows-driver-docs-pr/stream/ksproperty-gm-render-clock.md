@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_GM\_RENDER\_CLOCK property is not currently supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

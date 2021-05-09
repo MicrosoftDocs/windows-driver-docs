@@ -48,8 +48,7 @@ Specifies the hexadecimal virtual address of the location in user space where th
 
  
 
-Remarks
--------
+## Remarks
 
 The **!ubp** extension sets a breakpoint in user space. The breakpoint is set on the actual physical page, not just the virtual page.
 

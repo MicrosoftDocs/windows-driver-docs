@@ -57,8 +57,7 @@ The property value (operation data) is a structure of type KSAUDIO\_POSITIONEX t
 
 The KSPROPERTY\_AUDIO\_POSITIONEX property request returns S\_OK if the call was successful. Otherwise, it returns the appropriate HRESULT error code.
 
-Remarks
--------
+## Remarks
 
 Typically, audio applications must monitor the current position of an audio stream. This position is specified as a byte offset from the beginning of the stream. There are two possible interpretations of the stream position information:
 
@@ -68,8 +67,7 @@ Typically, audio applications must monitor the current position of an audio stre
 
 A driver that supports the KSPROPERTY\_AUDIO\_POSITIONEX property generates a timestamp window for the stream position value. The timestamp window is the interval between the timestamp that is sampled before stream position is determined and the timestamp that is taken after the stream position is determined. The caller then determines whether it can use the timestamp window.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

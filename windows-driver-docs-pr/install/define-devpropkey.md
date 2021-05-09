@@ -69,15 +69,13 @@ A byte-typed variable that supplies the value of the **data4\[7\]** member of th
 <a href="" id="pid"></a>*pid*  
 A DEVPROPID-typed variable that supplies the value of the **pid** (property identifier) member of the DEVPROPKEY structure. The property identifier must be greater than or equal to two.
 
-Remarks
--------
+## Remarks
 
 The DEFINE_DEVPROPKEY structure is part of the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
 The DEFINE_DEVPROPKEY macro can be used to create a [**DEVPROPKEY**](./devpropkey.md) structure that represents a custom device property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

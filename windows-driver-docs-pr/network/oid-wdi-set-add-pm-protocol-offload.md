@@ -37,8 +37,7 @@ This property provides information to enable the device/firmware to implement th
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDISETPOWERPSTATE DxgkDdiSetPowerPState;
@@ -33,8 +32,7 @@ NTSTATUS APIENTRY DxgkDdiSetPowerPState(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *DriverContext* \[in\]
 
@@ -42,8 +40,7 @@ Parameters
 
 *RequestedComponentPState* \[in\]
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

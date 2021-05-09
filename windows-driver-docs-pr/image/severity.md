@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Severity** element specifies the severity level of the current [**DeviceCondition**](devicecondition.md) or [**ConditionHistoryEntry**](conditionhistoryentry.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Severity>
@@ -26,13 +25,11 @@ Usage
 </wscn:Severity>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -92,8 +89,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service determines the **Severity** level that is assigned to each error condition.
 

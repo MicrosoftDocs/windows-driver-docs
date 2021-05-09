@@ -117,8 +117,7 @@ A flag that performs a bitwise AND of the value entry value to that of the exist
 <a href="" id="value"></a>*value*  
 The value that the add operation uses to modify a property value, depending on the property data type and the value of the *flags* entry.
 
-Remarks
--------
+## Remarks
 
 The **AddProperty** directive can be used to modify a system-defined device property or a custom device property. This directive can be specified under any of the sections shown in the formal syntax statement above.
 
@@ -126,8 +125,7 @@ Each *add-property-section* name must be unique within an INF file, but the sect
 
 For more information about how to use the INF **AddProperty** directive, see [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
-Examples
---------
+## Examples
 
 The following example of an add property section includes two line entries: the first line entry sets the **DeviceModel** property by name, and the second line entry sets a custom device property by specifying a custom property key GUID.
 

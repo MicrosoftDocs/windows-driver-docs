@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeMipVolumeOffset** method determines the subvolume offset of a mipmap volume texture.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 static void  ComputeMipVolumeOffset(
@@ -32,8 +31,7 @@ static void  ComputeMipVolumeOffset(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pDescTopLevel*
 Pointer to a D3DVOLUME\_DESC structure that describes the top level of the mipmap texture volume.
@@ -50,20 +48,17 @@ Pointer to a D3DBOX structure that describes the subvolume or **NULL** if the ca
 *pLockedBoxData*
 Pointer to a D3DLOCKED\_BOX structure that receives the pointer or offset to the locked volume region.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 Given the surface description, the level of the mipmap volume, a pointer to the top level, and the subvolume, **CPixel::ComputeMipVolumeOffset** returns a pointer or offset to the locked box region in the **pBits** member of the D3DLOCKED\_BOX structure at **pLockedBoxData**.
 
 For more information about D3DLOCKED\_BOX, D3DVOLUME\_DESC, and D3DBOX, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

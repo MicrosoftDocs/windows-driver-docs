@@ -52,8 +52,7 @@ The **DeviceInterfaceEnabled** device property represents a Boolean flag that in
 
  
 
-Remarks
--------
+## Remarks
 
 If the value of DEVPKEY_DeviceInterface_Enabled is DEVPROP_TRUE, the interface is enabled. Otherwise, the interface is not enabled.
 
@@ -63,8 +62,7 @@ Windows Server 2003, Windows XP, and Windows 2000 support this property, but do 
 
 For more information about device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

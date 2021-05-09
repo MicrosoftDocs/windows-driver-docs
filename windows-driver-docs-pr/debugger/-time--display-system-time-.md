@@ -54,8 +54,7 @@ Specifies the offset from Greenwich Mean Time, in hours. A negative value of *Ho
 
  
 
-Remarks
--------
+## Remarks
 
 The system time variables control performance counter behavior.
 

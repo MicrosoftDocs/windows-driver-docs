@@ -71,8 +71,7 @@ The **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/d
 
 This property control is asynchronous and not cancelable.
 
-Remarks
--------
+## Remarks
 
 ### Getting the property
 
@@ -125,8 +124,7 @@ The driver sets the current EV compensation stepping in **Flags**. The members o
 
 When the property is set, a KSPROPERTY\_TYPE\_SET request, the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) will contain the EV compensation stepping to use. The new number of step units used for compensation are set in **Value** member of [**KSCAMERA\_EXTENDEDPROP\_EVCOMPENSATION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_evcompensation).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

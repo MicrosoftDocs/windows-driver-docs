@@ -55,8 +55,7 @@ Specifies a session. If this parameter is omitted, then the desktop heap informa
 
 For information about desktops or desktop heaps, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The desktop heap information for the session is arranged by window station.
 

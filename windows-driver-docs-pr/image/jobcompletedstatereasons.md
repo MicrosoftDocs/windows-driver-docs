@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobCompletedStateReasons** element is a collection of all additional information about how and why a scan job completed.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobCompletedStateReasons>
@@ -26,8 +25,7 @@ Usage
 </wscn:JobCompletedStateReasons>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobCompletedStateReasons** element contains zero or more [**JobStateReason**](jobstatereason.md) elements, each of which contains a reason for how or why the scan job completed. The WSD Scan Service sends the **JobCompletedStateReasons** element to the client through the [**JobEndStateEvent**](jobendstateevent.md) event element.
 

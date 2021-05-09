@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectAddCustomTypeWithData** macro associates a framework object with a custom type, and optionally associates this pair with a data buffer and event callback functions.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS WdfObjectAddCustomTypeWithData(
@@ -27,8 +26,7 @@ NTSTATUS WdfObjectAddCustomTypeWithData(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_handle*   
 A handle to a framework object.
@@ -45,8 +43,7 @@ A pointer to the driver's [*EvtCleanupCallback*](/windows-hardware/drivers/ddi/w
 *_destroy*   
 A pointer to the driver's [*EvtDestroyCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback function, or NULL. This parameter is optional.
 
-Return value
-------------
+## Return value
 
 **WdfObjectAddCustomTypeWithData** returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 
@@ -83,8 +80,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 If your driver calls **WdfObjectAddCustomTypeWithData** with a pointer to a data buffer, the driver can provide an [*EvtCleanupCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDestroyCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback function to deallocate the memory buffer when the object is deleted.
 
@@ -92,8 +88,7 @@ For more information about object custom types, see [Framework Object Custom Typ
 
 For a code example, see [**WdfObjectAddCustomType**](wdfobjectaddcustomtype.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

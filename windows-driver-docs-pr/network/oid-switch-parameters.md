@@ -14,8 +14,7 @@ A Hyper-V extensible switch extension issues an object identifier (OID) query re
 
 If the OID query request completes successfully, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 When the extension processes the returned [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure, it must not assume that the various string members of the **NDIS\_SWITCH\_PARAMETERS** structure, such as **SwitchName**, are null-terminated. The data types for these string members are type-defined by the [**IF\_COUNTED\_STRING**](/windows/win32/api/ifdef/ns-ifdef-if_counted_string_lh) structure. The extension must determine the string length from the value of the **Length** member of this structure.
 
@@ -56,8 +55,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -35,8 +35,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_RECEIVE\_COALESCE\_OFFLOAD\_CAPABILITIES**](wdi-tlv-receive-coalesce-offload-capabilities.md) |                                |          | Receive Offload capabilities.       |
 | [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md) |   |   | Indicates whether offloads apply to the STA port only or on all ports. Currently applicable to 802.11ad adapters only. |
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

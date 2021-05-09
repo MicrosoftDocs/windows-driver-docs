@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **SendRNID** WMI method sends a request node identification data (RNID) command to the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SendRNID(
@@ -33,8 +32,7 @@ void SendRNID(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *wwn*   
 A worldwide name for the port to which the RNID command is sent. This information is delivered to the miniport driver in the **wwn** member of a [**SendRNID\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_in) structure.
@@ -51,18 +49,15 @@ The size in bytes of the results of the RNID command. The miniport driver return
 *ResponseBuffer*   
 The results of the RNID command. The miniport driver returns this information in the **ResponseBuffer** member of a [**SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendrnid_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

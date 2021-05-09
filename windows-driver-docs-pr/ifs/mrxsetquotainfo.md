@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The*MRxSetQuotaInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set quota information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetQuotaInfo;
@@ -31,14 +30,12 @@ NTSTATUS MRxSetQuotaInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetQuotaInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -79,8 +76,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetQuotaInfo* in response to receiving an [**IRP\_MJ\_SET\_QUOTA**](irp-mj-set-quota.md) request.
 
@@ -90,8 +86,7 @@ The *Info.Buffer* member is set to the user buffer from I/O request packet. This
 
 The **Info.LengthRemaining** member is set to **IrpSp-&gt;Parameters.SetQuota.Length**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

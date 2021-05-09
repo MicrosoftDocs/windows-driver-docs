@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a query, overlying drivers can use the OID\_PM\_WOL\_PATTERN\_LIST OID to enumerate the wake on LAN patterns that are set on an underlying network adapter. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a list of [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structures that describe the currently added WOL patterns.
 
-Remarks
--------
+## Remarks
 
 NDIS handles the query for miniport drivers. NDIS drivers can use the OID\_PM\_WOL\_PATTERN\_LIST OID to get a list of wake on LAN patterns that are set on an underlying network adapter.
 
@@ -37,8 +36,7 @@ The information buffer was too short. NDIS set the **DATA.QUERY\_INFORMATION.Byt
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

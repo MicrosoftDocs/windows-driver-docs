@@ -18,13 +18,11 @@ Bus drivers must handle this request for their child devices that require hardwa
 
 0x0B
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP when a device is enumerated, prior to allocating resources to a device, and when a driver reports that its device's resource requirements have changed.
 
@@ -47,8 +45,7 @@ A driver that handles this IRP sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCE
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a pointer to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) that contains the requested information. On an error, the driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 If a bus driver returns a resource requirements list in response to this IRP, it allocates an **IO\_RESOURCE\_REQUIREMENTS\_LIST** from paged memory. The PnP manager frees the buffer when it is no longer needed.
 
@@ -64,8 +61,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

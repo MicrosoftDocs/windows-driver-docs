@@ -57,8 +57,7 @@ The property value is of type **KSAUDIOENGINE\_DESCRIPTOR** and it indicates the
 
 The **KSPROPERTY\_AUDIOENGINE\_DESCRIPTOR** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

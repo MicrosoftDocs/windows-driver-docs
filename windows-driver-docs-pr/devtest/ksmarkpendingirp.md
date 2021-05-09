@@ -28,8 +28,7 @@ To mark the IRP as pending, use the [**IoMarkIrpPending**](/windows-hardware/dri
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00081008)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -75,8 +74,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-See also
---------
+## See also
 
 [*AVStrMiniFilterClose*](/previous-versions/ff556307(v=vs.85))
 [*AVStrMiniPinClose*](/previous-versions/ff556329(v=vs.85))

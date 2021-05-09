@@ -22,8 +22,7 @@ The KsCallbackReturn rule specifies that a kernel-streaming (KS) miniport driver
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00081005)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -46,8 +45,7 @@ How to test
 
  
 
-See also
---------
+## See also
 
 [Driver Verifier](./driver-verifier.md)
 [*AVStrMiniPinSetDeviceState*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate)

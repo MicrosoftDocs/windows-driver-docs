@@ -51,8 +51,7 @@ Causes the zeroed pages list to be verified.
 
  
 
-Remarks
--------
+## Remarks
 
 At present, this extension will only check the zeroed pages list to make sure that all pages in that list are zeroed. The appropriate syntax is:
 

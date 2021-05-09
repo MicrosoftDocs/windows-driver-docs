@@ -33,15 +33,13 @@ The DPC\_WATCHDOG\_TIMEOUT bug check has a value of 0x00000102. This indicates t
 
  
 
-Cause
------
+## Cause
 
 This bug check typically means that either an ISR is hung at an IRQL that is below clock level and above dispatch level, or a DPC routine is hung on the specified processor.
 
 For example for StorPort Miniport drivers, StorPort.sys handles I/O completions in a routine that runs at DISPATCH\_LEVEL and that serially calls the I/O completion routines of all IRPs that have just completed. If I/O completion routines singly or together take too much time, the keyboard and/or mouse may stop responding. It is also possible that the Windows DPC Watchdog timer routine will decide that the StorPort routine has taken excessive time to finish.
 
-Resolution
-----------
+## Resolution
 
 A kernel driver in the storage stack can reduce the problem's likelihood by efficient coding of the driver's I/O completion routine. If it is still not possible to do all necessary processing in the completion routine in enough time, the routine can create a work element for the I/O work, queue up the element to a work queue and return STATUS\_MORE\_PROCESSING\_REQUIRED; a worker thread of the driver should then find the work element, do the work and do IoCallerDriver for the IRP to ensure the IRP's further I/O processing.
 

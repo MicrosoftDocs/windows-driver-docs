@@ -47,8 +47,7 @@ The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has 
 
 The event value type (operation data) is a KSEVENTDATA structure that specifies the type of notification to use for an event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

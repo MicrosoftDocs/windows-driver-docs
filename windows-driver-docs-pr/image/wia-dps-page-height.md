@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads WIA\_DPS\_PAGE\_HEIGHT to determine the physical dimensions of the page that is being scanned. If the extent settings are different from the known page sizes, this property reports the height of the page whose [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md) property is set to WIA\_PAGE\_CUSTOM (which is a value of the WIA\_DPS\_PAGE\_SIZE property).
 
 WIA\_DPS\_PAGE\_HEIGHT must provide a measurement in thousandths of an inch that is equivalent to the pixel value reported by the [**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md) property, which reports the height, in pixels, of the page to be scanned.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The **HS\_DEVICE\_IDENTITY** structure contains information about the device model and manufacturer.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_DEVICE_IDENTITY {
@@ -28,8 +27,7 @@ typedef struct _HS_DEVICE_IDENTITY {
 } HS_DEVICE_IDENTITY, *PHS_DEVICE_IDENTITY;
 ```
 
-Members
--------
+## Members
 
 **dwSystemType**  
 The type of SIM, whether GSM or CDMA.
@@ -46,8 +44,7 @@ Another name for the phone manufacturer and model.
 **wszDeviceModel**  
 The device model name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

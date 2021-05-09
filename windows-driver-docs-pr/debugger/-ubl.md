@@ -45,8 +45,7 @@ The **!ubl** extension lists all user-space breakpoints and their current status
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the use and display of user-space breakpoints:
 

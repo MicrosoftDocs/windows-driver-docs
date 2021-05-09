@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPC\_POWER\_MODE property to determine what power source the camera is using.
 
@@ -60,8 +59,7 @@ The following table describes the constants that are valid with WIA\_DPC\_POWER\
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

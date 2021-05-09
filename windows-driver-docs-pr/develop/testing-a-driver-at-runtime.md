@@ -77,8 +77,7 @@ For information about deploying a driver automatically at build time, see [Deplo
 
 -   From the **Driver** menu, select **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
 
-Remarks
--------
+## Remarks
 
 For information about the driver tests and test categories, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md). For information about the testing framework, see [Test Authoring and Execution Framework](../taef/index.md) (TAEF) and [Windows Driver Test Framework](../wdtf/index.md) (WDTF).
 

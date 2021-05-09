@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct D3DKMT_PRESENT_MULTIPLANE_OVERLAY {
@@ -40,8 +39,7 @@ typedef struct D3DKMT_PRESENT_MULTIPLANE_OVERLAY {
 } D3DKMT_PRESENT_MULTIPLANE_OVERLAY;
 ```
 
-Members
--------
+## Members
 
 **hDevice**
 
@@ -65,8 +63,7 @@ Members
 
 **Duration**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

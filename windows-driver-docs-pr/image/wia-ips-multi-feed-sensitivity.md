@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER) when [**WIA\_IPS\_MULTI\_FEED**](wia-ips-multi-feed.md) is supported with at least one other value besides WIA\_MULTI\_FEED\_DETECT\_DISABLED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

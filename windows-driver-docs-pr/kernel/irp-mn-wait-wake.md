@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 This IRP enables a driver to awaken a sleeping system or to awaken a sleeping device.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
 
-When Sent
----------
+## When Sent
 
 A driver that owns power policy targets this IRP to its PDO to enable its device to awaken in response to an external event, such as an incoming phone call. A driver must call [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to send this IRP.
 
@@ -65,8 +63,7 @@ The IRP has been canceled.
 
 If a driver must fail this IRP, it completes the IRP immediately and does not pass the IRP to the next-lower driver.
 
-Operation
----------
+## Operation
 
 A driver sends **IRP\_MN\_WAIT\_WAKE** for either of two reasons:
 
@@ -90,8 +87,7 @@ To cancel an **IRP\_MN\_WAIT\_WAKE**, a driver calls [**IoCancelIrp**](/windows-
 
 -   The system is going to sleep and the device wake signal must not awaken it.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -32,13 +32,11 @@ Specifies a structure containing information about compression capabilities for 
 <a href="" id="recvcapabilities"></a>**RecvCapabilities**  
 Specifies a structure containing information about compression capabilities for receiving data.
 
-Remarks
--------
+## Remarks
 
 For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

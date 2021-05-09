@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_CAPTURE\_DELAY property is not intended to be used to describe the time between frames for single-initiation, multiple captures such as burst or time lapse, which have separate interval properties ([**WIA\_DPC\_BURST\_INTERVAL**](wia-dpc-burst-interval.md) and [**WIA\_DPC\_TIMELAPSE\_INTERVAL**](wia-dpc-timelapse-interval.md), respectively). In those cases, WIA\_DPC\_CAPTURE\_DELAY still serves as an initial delay before the first image in the series is captured, independent of the time between frames. For no precapture delay, this property should be set to zero
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

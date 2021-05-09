@@ -54,8 +54,7 @@ Ntsdexts.dll</td>
 
 To view memory protection information for all memory ranges owned by the target process, use [**!vadump**](-vadump.md). For information about memory protection, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The **!vprot** extension command can be used for both live debugging and dump file debugging.
 

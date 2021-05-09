@@ -32,8 +32,7 @@ Address of a **usbhub!\_HUB\_EXCEPTION\_RECORD** structure.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbhub!\_HUB\_EXCEPTION\_RECORD**. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

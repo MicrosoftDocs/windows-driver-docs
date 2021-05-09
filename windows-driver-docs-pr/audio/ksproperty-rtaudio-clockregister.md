@@ -61,8 +61,7 @@ The property value (operation data) is a pointer to a KSRTAUDIO\_HWREGISTER stru
 
 A KSPROPERTY\_RTAUDIO\_CLOCKREGISTER property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an error code that indicates a failure.
 
-Remarks
--------
+## Remarks
 
 Some audio devices contain clock registers. A clock register is a wall clock counter that starts running when the hardware powers up and stops when the hardware powers down. Software uses clock registers to synchronize between two or more controller devices by measuring the relative drift between the hardware clocks of the device.
 
@@ -74,8 +73,7 @@ The mapping of the clock register is destroyed when the pin closes. The client c
 
 It is typically faster to read a clock register than it is to send a [**KSPROPERTY\_CLOCK\_TIME**](../stream/ksproperty-clock-time.md) request, which requires transitions between user-mode and kernel-mode for user-mode clients.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

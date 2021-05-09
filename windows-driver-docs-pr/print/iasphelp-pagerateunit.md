@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **PageRateUnit** enables an ASP Web page to determine the units in which the page rate is expressed.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PageRateUnit(
@@ -31,8 +30,7 @@ HRESULT get_PageRateUnit(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives a value that indicates the units used in the page rate. The four possible values are shown in the following table.
@@ -70,8 +68,7 @@ A caller-supplied pointer to a memory location that receives a value that indica
 
 These values correspond to the constants PRINTRATEUNIT\_PPM, PRINTRATEUNIT\_CPS, PRINTRATEUNIT\_LPM, and PRINTRATEUNIT\_IPM, which are defined in the Wingdi.h header file. For more information about these constants, see the description of the **DeviceCapabilities** function in the Windows SDK documentation.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -116,8 +113,7 @@ objPrinter.Open strPrinter
 PtrPageRate = objPrinter.PageRateUnit
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

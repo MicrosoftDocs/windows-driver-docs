@@ -54,13 +54,11 @@ User-mode clients use this property to get or set a camera's region of interest 
 
  
 
-Remarks
--------
+## Remarks
 
 The property ID is **KSPROPERTY\_CAMERACONTROL\_REGION\_OF\_INTEREST\_PROPERTY\_ID**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

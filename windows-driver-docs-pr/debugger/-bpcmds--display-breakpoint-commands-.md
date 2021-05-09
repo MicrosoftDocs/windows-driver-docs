@@ -50,8 +50,7 @@ The **.bpcmds** command displays the commands that were used to set each of the 
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, see [Using Breakpoints](using-breakpoints.md).
 
-Remarks
--------
+## Remarks
 
 If it is unclear whether a particular breakpoint is set at an address, at a symbolic reference, or at a symbol, use the **.bpcmds** command to shows which breakpoint command was used to create it. The command that was used to create a breakpoint determines its nature:
 

@@ -22,15 +22,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Mandatory. Set and query.
 
-Remarks
--------
+## Remarks
 
 For a query, if a miniport driver does not support interrupt moderation, the driver must specify **NdisInterruptModerationNotSupported** in the **InterruptModeration** member of the NDIS\_INTERRUPT\_MODERATION\_PARAMETERS structure.
 
 For a set, if the driver reported **NdisInterruptModerationNotSupported** in response to the OID\_GEN\_INTERRUPT\_MODERATION query, the driver should return NDIS\_STATUS\_INVALID\_DATA in response to the set request. The miniport driver receives an [**NDIS\_INTERRUPT\_MODERATION\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_interrupt_moderation_parameters) structure. If the **InterruptModeration** member of NDIS\_INTERRUPT\_MODERATION\_PARAMETERS is set to **NdisInterruptModerationEnabled**, the miniport driver should enable interrupt moderation. Otherwise, it should disable interrupt moderation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

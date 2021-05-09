@@ -54,13 +54,11 @@ The KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE property queries a pin for the size 
 
  
 
-Remarks
--------
+## Remarks
 
 See the **StreamHeaderSize** member of [**KSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin) for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -52,8 +52,7 @@ KeReleaseSpinLock (&Lock, OldIrql);
 
 For more information about IRQL levels, see [Dispatch Routines and IRQLs](../kernel/dispatch-routines-and-irqls.md) and [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md).
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -101,8 +100,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 NtSetInformationFile
 

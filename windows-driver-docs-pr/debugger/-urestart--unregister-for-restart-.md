@@ -21,8 +21,7 @@ The **.urestart** command unregisters the debugging session for restart in case 
 .urestart
 ```
 
-Remarks
--------
+## Remarks
 
 This command does not work for elevated debugger sessions.
 

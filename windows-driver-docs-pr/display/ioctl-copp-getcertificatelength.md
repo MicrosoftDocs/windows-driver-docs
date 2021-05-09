@@ -42,8 +42,7 @@ The miniport driver returns a pointer to a ULONG-typed variable in the VRP **Out
 
 The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to sizeof(ULONG).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

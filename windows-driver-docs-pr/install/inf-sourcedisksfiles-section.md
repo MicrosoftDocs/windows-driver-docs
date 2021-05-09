@@ -49,8 +49,7 @@ If this value is omitted from an entry, the named source file is assumed to be i
 <a href="" id="size"></a>*size*  
 This optional value specifies the uncompressed size, in bytes, of the given file.
 
-Remarks
--------
+## Remarks
 
 A **SourceDisksFiles** section can have any number of entries, one for each file on the distribution disks. Any INF with a **SourceDisksFiles** section must also have an [**INF SourceDisksNames section**](inf-sourcedisksnames-section.md). By convention, **SourceDisksNames** and **SourceDisksFiles** sections follow the [**INF Version section**](inf-version-section.md). (These sections are omitted from a system-supplied INF, which instead specifies a **LayoutFile** entry in its **Version** section.)
 
@@ -66,8 +65,7 @@ During installation, SetupAPI functions look for architecture-specific **SourceD
 
  
 
-Examples
---------
+## Examples
 
 The following example shows a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and a corresponding SourceDisksFiles section.  Note that this example has only a **SourceDisksFiles.x86** section, specifying the files for the x86 architecture.  An INF that supports another architecture will need a corresponding **SourceDisksFiles** section for that architecture, or the use of an undecorated [**SourceDisksFiles**] section, which supports all architectures.
 

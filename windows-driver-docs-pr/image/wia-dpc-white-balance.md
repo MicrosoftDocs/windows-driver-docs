@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes possible values for the WIA\_DPC\_WHITE\_BALANCE property:
 
@@ -78,8 +77,7 @@ The following table describes possible values for the WIA\_DPC\_WHITE\_BALANCE p
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

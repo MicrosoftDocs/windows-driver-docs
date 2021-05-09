@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's trans
 
 The property value (operation data) is a TRANSPORT\_STATE structure that describes the current mode and state of the external transport. For example when the mode is set to play, the state might be set to freeze (paused).
 
-Remarks
--------
+## Remarks
 
 The **XPrtState** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the mode and state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

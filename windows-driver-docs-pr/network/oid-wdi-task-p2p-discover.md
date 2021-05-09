@@ -116,8 +116,7 @@ When the task has been completed (either normally or due to an abort), the port 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

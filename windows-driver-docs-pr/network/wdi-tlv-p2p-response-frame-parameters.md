@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_P2P\_RESPONSE\_FRAME\_PARAMETERS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -53,8 +53,7 @@ The **.ecxr** command displays the context record that is associated with the cu
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 The **.ecxr** command locates the current exception's context information and displays the important registers for the specified context record.
 

@@ -14,8 +14,7 @@ NDIS issues an object identifier (OID) method request of OID\_SRIOV\_VF\_INVALID
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SRIOV\_VF\_INVALIDATE\_CONFIG\_BLOCK\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_vf_invalidate_config_block_info) structure. This structure specifies one or more Virtual Function (VF) configuration blocks whose data has been changed (*invalidated*) by the PF miniport driver.
 
-Remarks
--------
+## Remarks
 
 A VF configuration block is used for backchannel communication between the PF and VF miniport drivers. The IHV can define one or more VF configuration blocks for the device. Each VF configuration block has an IHV-defined format, length, and block ID.
 
@@ -97,8 +96,7 @@ The miniport driver returns one of the following status codes for the OID method
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

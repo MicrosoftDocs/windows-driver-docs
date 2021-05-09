@@ -106,8 +106,7 @@ Sensor drivers can specify one of a set of platform-defined icons, or a custom i
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

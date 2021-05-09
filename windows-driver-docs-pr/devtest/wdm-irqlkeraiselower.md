@@ -23,8 +23,7 @@ This rule permits nested calls to **KeRaiseIrql**, **KeRaiseIrqlToDpcLevel**, an
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,13 +48,11 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**KeLowerIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kelowerirql)
 [**KeRaiseIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirql)
-See also
---------
+## See also
 
 [**IrqlKeDispatchLte**](wdm-irqlkedispatchlte.md)
 [**IrqlKeRaiseLower2**](wdm-irqlkeraiselower2.md)

@@ -56,15 +56,13 @@ The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display
 
 The property value (operation data) is a KSPROPERTY\_COMPOSIT\_ON (a type-defined Boolean). Specify **TRUE** to turn on the subpicture display, or specify **FALSE** to turn off the subpicture display.
 
-Remarks
--------
+## Remarks
 
 If subpicture display is disabled then the decoder must still decode the subpicture data but not display it. This facilitates instant display when a subpicture-enable command is received.
 
 There is a force-display subpicture command in the subpicture data command stream that can override the KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

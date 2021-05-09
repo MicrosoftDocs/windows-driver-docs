@@ -52,8 +52,7 @@ Specifies the PTE.
 
 For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To examine the contents of a specific PTE, use the [**!pte**](-pte.md) extension.
 

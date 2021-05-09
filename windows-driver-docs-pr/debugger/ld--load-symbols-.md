@@ -55,8 +55,7 @@ Changes the name selected for the match. By default the module name is matched, 
 
  
 
-Remarks
--------
+## Remarks
 
 The debugger's default behavior is to use *lazy symbol loading* (also known as [deferred symbol loading](deferred-symbol-loading.md)). This means that symbols are not actually loaded until they are needed.
 

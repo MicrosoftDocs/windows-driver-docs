@@ -86,8 +86,7 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 
 The property value is a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure followed by a sequence of GUIDs.
 
-Remarks
--------
+## Remarks
 
 The pattern GUID has these characteristics:
 
@@ -99,8 +98,7 @@ The pattern GUID has these characteristics:
 
 - It implies a format for the result data defined by the OEM.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

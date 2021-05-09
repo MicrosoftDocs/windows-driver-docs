@@ -46,8 +46,7 @@ The DEVPKEY_Numa_Proximity_Domain device property represents the proximity domai
 
  
 
-Remarks
--------
+## Remarks
 
 The value DEVPKEY_Numa_Proximity_Domain is a numeric value that represents a domain ID.
 
@@ -61,8 +60,7 @@ The value of this property is owned by Windows and should be treated as read-onl
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

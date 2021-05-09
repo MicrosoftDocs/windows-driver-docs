@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
@@ -32,8 +31,7 @@ typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
 } D3DDDI_OPENALLOCATIONINFO2;
 ```
 
-Members
--------
+## Members
 
 **hAllocation**
 
@@ -45,8 +43,7 @@ Members
 
 **Reserved**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

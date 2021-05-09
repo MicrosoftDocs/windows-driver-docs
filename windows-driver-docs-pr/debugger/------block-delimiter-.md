@@ -28,8 +28,7 @@ A pair of braces ( **{ }** ) is used to surround a block of statements within a 
 
 For information about debugger command programs and control flow tokens, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 When each block is entered, all aliases within the block are evaluated. If you alter the value of an alias at some point within a command block, commands subsequent to that point will not use the new alias value unless they are within a subordinate block.
 

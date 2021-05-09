@@ -14,8 +14,7 @@ Overlying drivers issue object identifier (OID) method requests of OID\_RECEIVE\
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters) structure. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an **NDIS\_RECEIVE\_QUEUE\_PARAMETERS** structure that has a new queue identifier.
 
-Remarks
--------
+## Remarks
 
 The OID method request of OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE is optional for NDIS 6.20 and later miniport drivers. It is mandatory for miniport drivers that support the virtual machine queue (VMQ) interface.
 
@@ -86,8 +85,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

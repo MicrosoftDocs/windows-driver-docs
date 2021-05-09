@@ -56,8 +56,7 @@ The DEVPKEY_DeviceClass_SilentInstall device property represents a Boolean flag 
 
  
 
-Remarks
--------
+## Remarks
 
 If the value of DEVPKEY_DeviceClass_SilentInstall is set to DEVPROP_TRUE, Windows installs a driver for a device without displaying any user interface items if the driver is already preinstalled in the driver store. Otherwise, Windows does not suppress the display of user interface items.
 
@@ -67,8 +66,7 @@ You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupa
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_SilentInstall property key. You can access the value of this property by accessing the corresponding **SilentInstall** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

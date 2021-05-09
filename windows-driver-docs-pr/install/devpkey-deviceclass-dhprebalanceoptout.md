@@ -72,8 +72,7 @@ This device property does not affect whether a device class participates in a re
 
 You can access the DEVPKEY_DeviceClass_DHPRebalanceOptOut property by calling [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) and [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,8 +44,7 @@ The KSCATEGORY_VIDEO [device interface class](./overview-of-device-interface-cla
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS video devices register instances of KSCATEGORY_VIDEO to indicate to the operating system that the devices support the KSCATEGORY_VIDEO functional category.
 
@@ -57,8 +56,7 @@ For general information about video devices, see [Video Capture Devices](../stre
 
 For information about other device interface classes for video devices, see [**KSCATEGORY_TVAUDIO**](kscategory-tvaudio.md) and [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

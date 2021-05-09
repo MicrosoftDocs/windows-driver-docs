@@ -37,8 +37,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If the AMLI Debugger prompt appears suddenly, this is a useful command to use.
 

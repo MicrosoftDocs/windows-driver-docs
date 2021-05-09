@@ -446,13 +446,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 Parameter 1 indicates the specific cause of the BUGCODE\_NDIS\_DRIVER bug check.
 
-Remarks
--------
+## Remarks
 
 The BUGCODE\_NDIS\_DRIVER bugcheck indendifies problems in network drivers. Often, the problem is caused by a NDIS miniport driver. You can get a complete list of NDIS miniport drivers by using [**!ndiskd.netadapter**](-ndiskd-netadapter.md). You can get a bigger picture overview of the network stack with [**!ndiskd.netreport**](-ndiskd-netreport.md).
 

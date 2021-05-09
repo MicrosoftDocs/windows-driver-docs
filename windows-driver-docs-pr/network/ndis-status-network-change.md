@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_NETWORK\_CHANGE status indicates a network change to allow overlying drivers to initiate renegotiation of network addresses.
 
-Remarks
--------
+## Remarks
 
 NDIS miniport drivers can generate this status indication to request the overlying protocol drivers to renegotiate layer three addresses.
 
@@ -40,8 +39,7 @@ An older 802.1X wireless miniport driver that emulates 802.3 generated an [**NDI
 
 The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_NETWORK\_CHANGE\_TYPE).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,8 +14,7 @@ NDIS protocol drivers issue object identifier (OID) set requests of OID\_RECEIVE
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_FREE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_free_parameters) structure with a queue identifier of type **NDIS\_RECEIVE\_QUEUE\_ID**.
 
-Remarks
--------
+## Remarks
 
 The OID set request of OID\_RECEIVE\_FILTER\_FREE\_QUEUE is optional for NDIS 6.20 and later miniport drivers. It is mandatory for miniport drivers that support the virtual machine queue interface.
 
@@ -109,8 +108,7 @@ NDIS returns one of the following status codes for this request:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

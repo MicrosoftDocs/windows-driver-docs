@@ -55,8 +55,7 @@ Specifies the directory to which the symbol files should be copied. Copies do no
 
  
 
-Remarks
--------
+## Remarks
 
 Many times, symbols are stored on a network. The symbol access can often be slow, or you may need to transport your debugging session to another computer where you no longer have network access. In such scenarios, the **.copysym** command can be used to copy the symbols you need for your session to a local directory.
 

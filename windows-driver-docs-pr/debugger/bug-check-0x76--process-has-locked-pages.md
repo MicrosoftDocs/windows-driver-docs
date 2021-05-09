@@ -61,13 +61,11 @@ The PROCESS\_HAS\_LOCKED\_PAGES bug check has a value of 0x00000076. This bug ch
 
  
 
-Cause
------
+## Cause
 
 The driver either failed to unlock pages that it locked (parameter 1 value is 0x0), or the driver is attempting to unlock pages that have not been locked or that have already been unlocked (parameter 1 value is 0x1).
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 

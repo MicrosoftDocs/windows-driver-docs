@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE or WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_RGB\_GAIN property is parsed as follows: *R*:*G*:*B*. *R* represents the red gain, *G* represents the green gain, and *B* represents the blue gain. For example, for an RGB ratio of red=4, green=2, blue=3, the RGB string could be "4:2:3" or "2000:1000:1500". These values are relative to each other. You can use larger numbers for added granularity, but the color will be same if the ratio of red, green, and blue remains the same. The string parser for this property value should support UINT16 integers for *R*, *G*, and *B*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

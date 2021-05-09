@@ -20,8 +20,7 @@ ms.custom: seodec18
 
 The sample **DeinterlaceQueryModeCaps** function queries the driver to determine the input capabilities of a particular deinterlace mode and any additional video processing that might be supported on that mode.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT DeinterlaceQueryModeCaps(
@@ -31,8 +30,7 @@ HRESULT DeinterlaceQueryModeCaps(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pGuidDeinterlaceMode* \[in\]
 Supplies a pointer to the GUID used to specify the deinterlace mode.
@@ -43,13 +41,11 @@ Supplies a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva
 *lpDeinterlaceCaps* \[out\]
 Receives a pointer to a [**DXVA\_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps) structure that contains the capabilities of the deinterlace mode.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The driver is queried by the *VMR* for the capabilities of a deinterlace mode after the VMR has determined the deinterlace modes available for a particular video format. The driver returns available modes from a call to its [**DeinterlaceQueryAvailableModes**](dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes.md) function.
 
@@ -104,8 +100,7 @@ The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

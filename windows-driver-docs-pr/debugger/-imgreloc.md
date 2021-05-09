@@ -48,8 +48,7 @@ Specifies the base address of the image.
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

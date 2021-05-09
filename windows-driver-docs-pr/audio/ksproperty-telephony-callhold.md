@@ -57,13 +57,11 @@ The property value is of type BOOL and specifies whether the phone call is on ho
 
 A **KSPROPERTY\_TELEPHONY\_CALLHOLD** property request returns **TRUE** if the call in on hold; otherwise, it returns **FALSE**.
 
-Remarks
--------
+## Remarks
 
 If you set the **KSPROPERTY\_TELEPHONY\_CALLHOLD** property with a value of **TRUE**, the phone call will be placed on hold. The expected behavior is that both transmission and reception will be muted. No data will be sent or received in this case. The audio driver will update the call state ([**TELEPHONY\_CALLSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-telephony_callstate)) to **TELEPHONY\_CALLSTATE\_HOLD**. If you set the **KSPROPERTY\_TELEPHONY\_CALLHOLD** property with a value of **FALSE**, the phone call will be taken off of hold state, and the call state will be updated to **TELEPHONY\_CALLSTATE\_ENABLED**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

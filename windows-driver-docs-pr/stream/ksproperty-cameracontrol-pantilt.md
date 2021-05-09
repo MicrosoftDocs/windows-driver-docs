@@ -62,13 +62,11 @@ When making a pan request, specify a positive value to rotate the camera to the 
 
 When making a tilt request, a positive value tilts the camera up and a negative value tilts the camera down.
 
-Remarks
--------
+## Remarks
 
 The **Value1** member of the [**KSPROPERTY\_CAMERACONTROL\_S2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s2) or [**KSPROPERTY\_CAMERACONTROL\_NODE\_S2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s2) structures specifies the pan setting. The **Value2** member specifies the tilt setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

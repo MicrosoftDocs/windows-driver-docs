@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_COMPORT [device interface class](./overview-of-device-inte
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for serial ports register instances of this device interface class to notify the operating system and applications of the presence of COM ports.
 
@@ -59,8 +58,7 @@ The following samples (on Github) register an instance of this class for a seria
 
 [**GUID_CLASS_COMPORT**](guid-class-comport.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_COMPORT instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -53,8 +53,7 @@ The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning capabilities o
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_SCAN\_CAPS\_S structure that specifies the supported network types and whether the driver or firmware for the tuning device can support hardware-assisted scanning operations.
 
-Remarks
--------
+## Remarks
 
 The driver should return at least one of the following GUIDs for the network types that it supports. These GUIDs are defined in *Bdamedia.h* and should be referenced from *Bdamedia.h*. For more information about these GUIDs, see [Broadcast Network Type GUIDs](broadcast-network-type-guids.md).
 
@@ -66,8 +65,7 @@ The driver should return at least one of the following GUIDs for the network typ
 
 -   ANALOG\_FM\_NETWORK\_TYPE
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

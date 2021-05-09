@@ -52,8 +52,7 @@ The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a property value chang
 
  
 
-Remarks
--------
+## Remarks
 
 Clients might register for this event to be notified if a user flips a switch on the device, changing a property value. For this event to be available, the hardware implementation must provide support for this feature.
 

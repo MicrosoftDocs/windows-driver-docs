@@ -44,13 +44,11 @@ The KSCATEGORY_TEXT [device interface class](./overview-of-device-interface-clas
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_TEXT to indicate that the devices support the KSCATEGORY_TEXT functional category.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,8 +56,7 @@ Specifies the base address for a page directory of a desired process. The user-m
 
 For more information about the user-mode address context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 Generally, when you are doing kernel debugging, the only visible user-mode address space is the one associated with the current process.
 

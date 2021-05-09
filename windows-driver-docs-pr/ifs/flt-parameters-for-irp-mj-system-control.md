@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_SYSTEM\_CONTROL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -35,8 +34,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **WMI**  
 Structure containing the following members.
@@ -53,8 +51,7 @@ The meaning of this parameter depends on the minor function code for the operati
 **Buffer**  
 The meaning of this parameter depends on the minor function code for the operation. (See the following Remarks section.)
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_SYSTEM\_CONTROL operations contains the parameters for a system-control operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
@@ -84,8 +81,7 @@ The meaning of the IRP\_MJ\_SYSTEM\_CONTROL parameters depends on the minor func
 
 IRP\_MJ\_SYSTEM\_CONTROL is an IRP-based operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

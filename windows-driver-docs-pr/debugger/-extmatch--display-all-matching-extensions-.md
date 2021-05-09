@@ -64,8 +64,7 @@ Specifies a pattern that the extension must contain. *Pattern*can contain a vari
 
  
 
-Remarks
--------
+## Remarks
 
 To display a list of loaded extension DLLs, use the [**.chain**](-chain--list-debugger-extensions-.md) command.
 

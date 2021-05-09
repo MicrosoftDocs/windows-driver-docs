@@ -56,8 +56,7 @@ The process ID of the user-mode debugger.
 
 For more details, see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md). For information about how to find the process ID of the debugger, see [Finding the Process ID](finding-the-process-id.md).
 
-Remarks
--------
+## Remarks
 
 When you are controlling the user-mode debugger from the kernel debugger and the system is in sleep mode, this command can be used to wake up the debugger before the sleep timer runs out.
 

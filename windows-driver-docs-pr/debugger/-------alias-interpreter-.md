@@ -48,8 +48,7 @@ Prevents any alias evaluation. Regardless of whether *Alias* is defined, **${/v:
 
 For an explanation of how to use aliases, see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 If no switches are used and the alias is currently defined, **${**<em>Alias</em>**}** is replaced by the alias equivalent. If no switches are used and the alias is not defined, **${**<em>Alias</em>**}** always retains its literal value of **${**<em>Alias</em>**}**.
 

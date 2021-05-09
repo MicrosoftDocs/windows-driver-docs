@@ -56,8 +56,7 @@ Specifies the locale that you want. If you omit this parameter, the debugger dis
 
 For more information about locale, see the **setlocale** routine reference page.
 
-Remarks
--------
+## Remarks
 
 The locale controls how Unicode strings are displayed.
 

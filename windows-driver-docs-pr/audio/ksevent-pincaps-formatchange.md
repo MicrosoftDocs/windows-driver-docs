@@ -47,8 +47,7 @@ The `KSEVENT_PINCAPS_FORMATCHANGE` event indicates to the audio stack that the a
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
-Remarks
--------
+## Remarks
 
 When an audio port driver calls the [**EventHandler**](/windows-hardware/drivers/ddi/portcls/nc-portcls-pcpfnevent_handler) routine for its miniport driver, it passes a [**PCEVENT\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request) structure. This structure contains a pointer to a [**PCEVENT\_ITEM**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcevent_item) structure that is used to describe an event that is supported by a filter, pin, or node.
 
@@ -71,8 +70,7 @@ To obtain a description of the pins, nodes, connections and properties supported
 
 When the miniport driver detects a dynamic format change, it must call the [**IPortEvents::GenerateEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-generateeventlist) method to signal the `KSEVENT_PINCAPS_FORMATCHANGE` event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

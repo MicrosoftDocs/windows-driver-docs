@@ -45,8 +45,7 @@ WDI\_P2P\_DEVICE\_TYPE consists of the following elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

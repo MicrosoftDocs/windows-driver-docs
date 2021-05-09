@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DIP\_STI\_GEN\_CAPABILITIES property to determine the generic STI capabilities of the device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

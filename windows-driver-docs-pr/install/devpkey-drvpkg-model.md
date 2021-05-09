@@ -46,8 +46,7 @@ The DEVPKEY_DrvPkg_Model device [driver package](./driver-packages.md) property 
 
  
 
-Remarks
--------
+## Remarks
 
 You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
@@ -64,8 +63,7 @@ DeviceModel,,,,"DSC-530"
 ...
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

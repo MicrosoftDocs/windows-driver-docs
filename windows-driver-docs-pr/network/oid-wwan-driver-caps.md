@@ -16,8 +16,7 @@ Set requests are not supported.
 
 Miniport drivers process OID\_WWAN\_DRIVER\_CAPS synchronously and should immediately return with the response buffer containing an [**NDIS\_WWAN\_DRIVER\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps) structure that describes the version of the MB driver model implemented by the miniport driver when completing query requests.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [MB Miniport Driver Initialization](mb-device-readiness.md#mb-miniport-driver-initialization).
 
@@ -29,8 +28,7 @@ When the MB Service is initialized or restarted, the miniport driver may already
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED in the case of any initialization error. If a miniport driver returns NDIS\_STATUS\_NOT\_SUPPORTED, the MB Service will ignore the device and will not proceed with any other OIDs.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ The NdisStallExecution\_Delay rule specifies that **NdisStallExecution** must ne
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisStallExecution**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisstallexecution)

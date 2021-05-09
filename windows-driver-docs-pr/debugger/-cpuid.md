@@ -52,8 +52,7 @@ Specifies the processor whose information will be displayed. If you omit this pa
 
 For more information about how to debug multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
-Remarks
--------
+## Remarks
 
 The **!cpuid** extension works during live user-mode or kernel-mode debugging, local kernel debugging, and debugging of dump files. However, user-mode minidump files contain only information about the active processor.
 

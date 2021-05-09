@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_METHOD\_NEXT\_ARGUMENT structure returns a pointer to the next [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure in an array of ACPI\_METHOD\_ARGUMENT structures.
 
-Syntax
-------
+## Syntax
 
 ```cpp
  ACPI_METHOD_NEXT_ARGUMENT(
@@ -21,24 +20,20 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Argument*   
 A pointer to an ACPI\_METHOD\_ARGUMENT structure in an array of ACPI\_METHOD\_ARGUMENT structures.
 
-Return value
-------------
+## Return value
 
 A pointer to the next ACPI\_METHOD\_ARGUMENT structure in an array of ACPI\_METHOD\_ARGUMENT structures.
 
-Remarks
--------
+## Remarks
 
 Given a pointer to an ACPI\_METHOD\_ARGUMENT structure in an array of such structures, a driver can use this macro to calculate a pointer to the next structure in the array, if one exists.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

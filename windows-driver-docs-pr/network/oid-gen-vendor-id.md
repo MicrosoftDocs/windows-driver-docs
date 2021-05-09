@@ -29,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The IEEE code uniquely identifies the vendor and is the same as the three bytes appearing at the beginning of the NIC hardware address.
 
@@ -38,8 +37,7 @@ Vendors without an IEEE-registered code should use the value 0xFFFFFF.
 
 Independent hardware vendor's filter drivers or intermediate drivers might query this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

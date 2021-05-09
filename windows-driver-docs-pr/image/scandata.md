@@ -17,15 +17,13 @@ ms.localizationpriority: medium
 
 The required **ScanData** element contains the binary data that represents the scanned image.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanData/>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -53,8 +51,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ScanData** element contains an **xop:Include** element that specifies the location of the scan data relative to the SOAP Envelope/Body of a [**RetrieveImageResponse**](retrieveimageresponse.md) operation element. The actual scan data is appended to the SOAP Envelope/Body as a binary attachment.
 

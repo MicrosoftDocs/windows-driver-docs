@@ -70,15 +70,13 @@ In Windows 10, five additional mode are defined:
 
 For more information, see [Audio Signal Processing Modes](./audio-signal-processing-modes.md).
 
-Remarks
--------
+## Remarks
 
 The basic support handler for **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** should be handed a **KSP\_PIN** structure, and should advertise support only on non-loopback streaming pins. Audio drivers should support signal processing modes only on host and offload pins. For loopback or bridge pins the audio driver should still support the property, but return a **KSMULTIPLE\_ITEM** structure with its *Count* parameter set to zero (0).
 
 Any audio miniport driver that is developed to work with the Microsoft audio port Class driver (Portcls) can implement the [**IMiniportAudioSignalProcessing::GetModes**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes) method.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

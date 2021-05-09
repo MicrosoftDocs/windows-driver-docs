@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ValidateScanTicketResponse** operation notifies the client whether a client's submitted [**ScanTicket**](scanticket.md) is valid.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidateScanTicketResponse>
@@ -26,8 +25,7 @@ Usage
 </wscn:ValidateScanTicketResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,13 +53,11 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The client submits the [**ScanTicket**](scanticket.md) element to be checked in the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. The WSD Scan Service must respond with a **ValidateScanTicketResponse** element that contains all validation information after successfully processing **ValidateScanTicketRequest**.
 
-Examples
---------
+## Examples
 
 The following code example shows a response to a client when it has submitted a valid scan ticket.
 

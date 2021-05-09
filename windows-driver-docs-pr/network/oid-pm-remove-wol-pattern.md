@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a set, NDIS and protocol drivers use the OID\_PM\_REMOVE\_WOL\_PATTERN OID to remove a power management wake on LAN (WOL) pattern from a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a ULONG pattern identifier.
 
-Remarks
--------
+## Remarks
 
 NDIS and protocol drivers use OID\_PM\_REMOVE\_WOL\_PATTERN to remove a wake on LAN (WOL) pattern from the underlying network adapter.
 
@@ -91,8 +90,7 @@ NDIS returns one of the following status codes for this request:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

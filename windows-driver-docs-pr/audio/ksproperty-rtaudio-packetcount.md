@@ -59,8 +59,7 @@ The property value is a variable of type ULONG.
 
 A KSPROPERTY\_RTAUDIO\_PACKETCOUNT property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 From the packet count, the OS can derive the stream position of the packets it writes into the WaveRT buffer. The OS can also derive the WaveRT buffer position of the next packet to write within the WaveRT buffer. For WaveRT drivers, the driver signals a single notification event as it transfers data from each packet of the WaveRT buffer. Therefore the event alone cannot indicate which packet within the WaveRT buffer is being transferred. In normal operation this is not a concern but in underflow cases correction is more easily achieved by querying the packet count from which the OS can determine which packet to write next.
 
@@ -70,8 +69,7 @@ The OS may get this property at any time. However it generally gets this propert
 
 The driver should reset the packet count to 0 when the stream is in KSSTATE\_STOP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

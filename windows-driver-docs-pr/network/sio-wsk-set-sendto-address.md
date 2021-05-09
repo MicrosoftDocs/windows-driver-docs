@@ -121,8 +121,7 @@ To clear a fixed destination transport address for a datagram socket, a WSK appl
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or clear a fixed destination transport address for a datagram socket.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

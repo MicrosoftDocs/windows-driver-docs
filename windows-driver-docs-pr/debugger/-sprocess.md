@@ -122,8 +122,7 @@ Displays help for this extension in the Debugger Command window. This help text 
 
 For information about sessions and processes in kernel mode, see [Changing Contexts](changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The output of this extension is similar to that of [**!process**](-process.md), except that the addresses of \_MM\_SESSION\_SPACE and \_MMSESSION are displayed as well.
 

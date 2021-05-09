@@ -23,8 +23,7 @@ The class identifier (CLSID) of the COM object is a detector pattern type GUID r
 
 The interface design attempts to keep the object implementation stateless. In other words, the implementation should require no state to be stored between method calls. In fact, internal C++ classes likely do not need any member variables beyond those required to implement a COM object in general.
 
-Members
--------
+## Members
 
 The **IKeywordDetectorOemAdapter** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface but does not have additional members.
 

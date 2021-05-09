@@ -44,8 +44,7 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 
  
 
-Requirements
-------------
+## Requirements
 
 **Minimum supported client**: Windows 7
 

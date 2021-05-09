@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONINFO2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONINFO2 {
@@ -41,8 +40,7 @@ typedef struct _DXGK_ALLOCATIONINFO2 {
 } DXGK_ALLOCATIONINFO2;
 ```
 
-Members
--------
+## Members
 
 **pPrivateDriverData**
 Reserved for system use.
@@ -86,8 +84,7 @@ Reserved for system use.
 **Reserved**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

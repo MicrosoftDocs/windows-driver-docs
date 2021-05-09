@@ -55,8 +55,7 @@ Specifies the name of a symbol file.
 
  
 
-Remarks
--------
+## Remarks
 
 If you do not specify a symbol filed, the loaded symbol is tested. Otherwise, if you specify a .pdb or .dbg symbol file path, the loaded symbol is tested against the loaded module.
 

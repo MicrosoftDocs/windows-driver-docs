@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_IPS\_FILM\_SCAN\_MODE property
 
@@ -40,8 +39,7 @@ The following table describes the constants that are valid with the WIA\_IPS\_FI
 
 This property is required for the root item in the WIA item tree of film scanners and transparency adapters.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

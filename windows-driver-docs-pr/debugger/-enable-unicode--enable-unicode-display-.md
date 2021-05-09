@@ -56,8 +56,7 @@ Displays all 16-bit (USHORT) arrays and pointers as Unicode strings.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.enable\_unicode** command affects the output of the [**dt (Display Type)**](dt--display-type-.md) command.
 

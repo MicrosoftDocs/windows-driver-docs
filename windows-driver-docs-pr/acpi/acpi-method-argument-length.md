@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_METHOD\_ARGUMENT\_LENGTH macro calculates the size, in bytes, of a variable-length [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure that contains data of a specified size, in bytes.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 void ACPI_METHOD_ARGUMENT_LENGTH(
@@ -21,24 +20,20 @@ void ACPI_METHOD_ARGUMENT_LENGTH(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DataLength*   
 The size, in bytes, of data in the **Data** array of an ACPI\_METHOD\_ARGUMENT structure.
 
-Return value
-------------
+## Return value
 
 The size, in bytes, of a variable-length ACPI\_METHOD\_ARGUMENT structure that can contains a **Data** array whose size, in bytes, is *DataLength*.
 
-Remarks
--------
+## Remarks
 
 A driver can use this macro to calculate the required size, in bytes, of a variable-length ACPI\_METHOD\_ARGUMENT structure that can contain a **Data** array of a specified size, in bytes.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

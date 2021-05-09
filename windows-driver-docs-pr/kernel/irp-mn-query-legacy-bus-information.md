@@ -12,12 +12,10 @@ ms.localizationpriority: medium
 
 This IRP is reserved for system use.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

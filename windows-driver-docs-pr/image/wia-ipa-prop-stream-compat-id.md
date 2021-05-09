@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If a device driver implements the WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property, applications use this property to determine whether the device supports a set of values.
 
@@ -100,8 +99,7 @@ The following table describes the constants that are valid with WIA\_IPA\_PROP\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

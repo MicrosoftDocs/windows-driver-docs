@@ -16,8 +16,7 @@ A TCP connection in silent mode will not send any data or control packets on the
 
 To perform this operation, call the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
-Parameters
-----------
+## Parameters
 
 *RequestType* \[in\]  
 Use **WskIoctl** for this operation.
@@ -43,8 +42,7 @@ Use **NULL** for this operation.
 *OutputSizeReturned* \[out\]  
 Use **NULL** for this operation.
 
-Remarks
--------
+## Remarks
 
 A WSK application must specify a pointer to an IRP when calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to enable silent mode.
 
@@ -54,8 +52,7 @@ The WSK application before calling [**WskControlSocket**](/windows-hardware/driv
 
 The only valid operation on this socket is [**WskCloseSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

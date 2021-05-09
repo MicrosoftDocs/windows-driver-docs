@@ -31,8 +31,7 @@ In each [**NDIS\_ROUTING\_DOMAIN\_ENTRY**](/windows-hardware/drivers/ddi/ntddndi
 
 If no multi-tenancy configuration parameters are set on the VM network adapter, the network adapter miniport driver sets the **DATA.QUERY\_INFORMATION.BytesWritten** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to zero and returns **NDIS\_STATUS\_SUCCESS**. In this case, the data within the **DATA.QUERY\_INFORMATION.InformationBuffer** member is not modified by the miniport driver.
 
-Remarks
--------
+## Remarks
 
 ### Return Status Codes
 
@@ -67,8 +66,7 @@ The VM network adapter miniport driver returns one of the following status codes
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

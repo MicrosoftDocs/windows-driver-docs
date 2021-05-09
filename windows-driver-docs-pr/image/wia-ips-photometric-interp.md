@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPS\_PHOTOMETRIC\_INTERP property to determine the value assigned to white or black pixels (depending on what the application is doing).
 
@@ -64,8 +63,7 @@ If a device can be set to only a single value, create a WIA\_PROP\_LIST type, an
 
 The WIA\_IPS\_PHOTOMETRIC\_INTERP property is required for all image acquisition items and stored images.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

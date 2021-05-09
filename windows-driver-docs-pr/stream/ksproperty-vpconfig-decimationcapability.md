@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_DECIMATIONCAPABILITY property indicates if the size of
 
 The property value (operation data) is a Boolean. Specify **TRUE** if the hardware can reduce the video image dimensions, or specify **FALSE** if the hardware cannot reduce the dimensions.
 
-Remarks
--------
+## Remarks
 
 A property value of **TRUE** specifies that the video image can be reduced in size. **FALSE** specifies that the image can still be resized, but would also be clipped to the rectangle instead of scaled.
 
@@ -65,8 +64,7 @@ KSPROPERTY\_VPCONFIG\_DECIMATION\_CAPABILITY property requests return STATUS\_SU
 
 When this property is used by KSPROPSETID\_VPVBIConfig, all property requests must return STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

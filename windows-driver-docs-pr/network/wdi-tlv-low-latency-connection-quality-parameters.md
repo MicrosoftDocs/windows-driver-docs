@@ -32,8 +32,7 @@ The size (in bytes) of the array of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

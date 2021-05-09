@@ -55,13 +55,11 @@ The following table summarizes the features of this property.
 
 A KSPROPERTY\_RTAUDIO\_HWLATENCY property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 After the [WaveRT miniport driver](./wavert-miniport-driver.md) has allocated the cyclic buffer (see [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md)) the client can send a KSPROPERTY\_RTAUDIO\_HWLATENCY property request to the driver for hardware-latency information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

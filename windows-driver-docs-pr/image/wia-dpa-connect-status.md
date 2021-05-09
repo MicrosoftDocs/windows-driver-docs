@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table lists the possible values for the WIA\_DPA\_CONNECT\_STATUS property.
 
@@ -58,8 +57,7 @@ The following table lists the possible values for the WIA\_DPA\_CONNECT\_STATUS 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

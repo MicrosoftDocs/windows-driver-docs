@@ -55,8 +55,7 @@ Parameter 1 is the only parameter of interest; this identifies the nature of the
 
  
 
-Cause
------
+## Cause
 
 The PCI driver detected an error in a device or BIOS being verified.
 

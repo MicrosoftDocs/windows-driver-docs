@@ -149,8 +149,7 @@ In the following instances of this bug check, the meaning of the parameters depe
 
  
 
-Remarks
--------
+## Remarks
 
 This bug check code only occurs on Windows 2000 and Windows XP. In Windows Server 2003 and later, the corresponding code is [**bug check 0x7C**](bug-check-0x7c--bugcode-ndis-driver.md) (BUGCODE\_NDIS\_DRIVER).
 

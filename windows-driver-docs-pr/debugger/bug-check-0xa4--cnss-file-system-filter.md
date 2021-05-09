@@ -57,13 +57,11 @@ The CNSS\_FILE\_SYSTEM\_FILTER bug check has a value of 0x000000A4. This bug che
 
  
 
-Cause
------
+## Cause
 
 The CNSS\_FILE\_SYSTEM\_FILTER bug check might occur because nonpaged pool memory is full. If the nonpaged pool memory is completely full, this error can stop the system. However, during the indexing process, if the amount of available nonpaged pool memory is very low, another kernel-mode driver that requires nonpaged pool memory can also trigger this error.
 
-Resolution
-----------
+## Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This memory sincrease the quantity of nonpaged pool memory available to the kernel.
 

@@ -14,8 +14,7 @@ Overlying drivers and user-mode applications issue object identifier (OID) query
 
 After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_INFO\_ARRAY**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_info_array) structure that is followed by an [**NDIS\_RECEIVE\_QUEUE\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_info) structure for each filter.
 
-Remarks
--------
+## Remarks
 
 NDIS obtained the information from an internal cache of the data that it received from the [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](oid-receive-filter-allocate-queue.md) and [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md) OID requests.
 
@@ -60,8 +59,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

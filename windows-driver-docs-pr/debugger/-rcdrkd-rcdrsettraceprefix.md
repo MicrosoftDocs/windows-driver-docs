@@ -32,13 +32,11 @@ The trace message prefix string.
 
 Rcdrkd.dll
 
-Remarks
--------
+## Remarks
 
 Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](../devtest/trace-message-prefix.md).
 
-Examples
---------
+## Examples
 
 In the following example, the trace message prefix is originally **%7!u!: %!FUNC! -** . The parameter **%7!u!** specifies that the prefix includes the message sequence number. The parameter **%!FUNC!** specifies that the prefix includes the name of the function that generated the message. The example calls **!rcdrsettraceprefix** to change the prefix string to **%7!u!**. After that, the log display includes message sequence numbers, but does not include function names.
 

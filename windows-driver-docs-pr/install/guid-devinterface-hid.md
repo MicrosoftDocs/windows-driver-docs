@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_HID [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for HID collections register instances of this device interface class to notify the operating system and applications of the presence of HID collections.
 
@@ -59,8 +58,7 @@ For information about the device interface class for mouse devices, see [**GUID_
 
 The [**GUID_CLASS_INPUT**](guid-class-input.md) is an obsolete identifier for this device interface class; use GUID_DEVINTERFACE_HID instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

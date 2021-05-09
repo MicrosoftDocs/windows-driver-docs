@@ -62,13 +62,11 @@ Positive values cause a clockwise rotation of the camera along the image-viewing
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must be -180 through +180 and the default value must be 0.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the roll setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

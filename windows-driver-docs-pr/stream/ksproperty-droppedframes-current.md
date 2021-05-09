@@ -56,13 +56,11 @@ The KSPROPERTY\_DROPPED\_FRAMES\_CURRENT property dynamically retrieves the vide
 
 The property value (operation data) is a KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S structure that specifies the current picture number, the count of dropped frames, and the average size of the frames captured.
 
-Remarks
--------
+## Remarks
 
 The counts of frames captured and frames dropped should reset when the stream state transitions from stop to pause.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

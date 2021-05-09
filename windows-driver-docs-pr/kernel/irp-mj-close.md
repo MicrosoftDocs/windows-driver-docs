@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Every driver must handle close requests in a [*DispatchClose*](separate-dispatchcreate-and-dispatchclose-routines.md) routine, with the possible exception of a driver whose device cannot be disabled or removed from the machine without bringing down the system. A disk driver whose device holds the system page file is an example of such a driver. Note that the driver of such a device also cannot be unloaded dynamically.
 
-When Sent
----------
+## When Sent
 
 Receipt of this request indicates that the last handle of the file object that is associated with the target device object has been closed and released. All outstanding I/O requests have been completed or canceled.
 
@@ -27,8 +26,7 @@ None
 
 None
 
-Operation
----------
+## Operation
 
 Many device and intermediate drivers merely set STATUS\_SUCCESS in the I/O status block of the IRP and complete the close request. However, what a given driver does on receipt of a close request depends on the driver's design. In general, a driver should undo whatever actions it takes on receipt of the [**IRP\_MJ\_CREATE**](irp-mj-create.md) request. Device drivers whose device objects are exclusive, such as a serial driver, also can reset the hardware on receipt of a close request.
 
@@ -36,8 +34,7 @@ The **IRP\_MJ\_CLOSE** request is not necessarily sent in the context of the pro
 
 The **IRP\_MJ\_CLOSE** request will always be sent at PASSIVE\_LEVEL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

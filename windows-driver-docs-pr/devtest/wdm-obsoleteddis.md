@@ -19,8 +19,7 @@ The **ObsoleteDDIs** rule specifies that drivers should not call [**FsRtlPrivate
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -48,8 +48,7 @@ Specifies a 64-bit FILETIME structure.
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

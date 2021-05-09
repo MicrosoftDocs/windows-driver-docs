@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The **WDF_PTR_ADD_OFFSET** macro adds an offset value to an address and returns the resulting address.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PVOID WDF_PTR_ADD_OFFSET(
@@ -22,8 +21,7 @@ PVOID WDF_PTR_ADD_OFFSET(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_ptr*   
 Specifies an address.
@@ -31,13 +29,11 @@ Specifies an address.
 *_offset*   
 Specifies the offset value in bytes.
 
-Return value
-------------
+## Return value
 
 Returns a pointer to the resulting address.
 
-Remarks
--------
+## Remarks
 
 This macro invokes [**WDF_PTR_ADD_OFFSET_TYPE**](wdf-ptr-add-offset-type.md) with the *_type* parameter set to PVOID.
 
@@ -80,8 +76,7 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
             );
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

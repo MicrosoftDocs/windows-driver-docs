@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DATE property type represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed value that specifies the number of days since December 31, 1899. For example, January 1, 1900, is 1.0; January 2, 1900, is 2.0; and so on.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_DATE can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -32,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_DATE, call the correspond
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

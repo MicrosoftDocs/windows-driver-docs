@@ -44,15 +44,13 @@ The GUID_AVC_CLASS [device interface class](./overview-of-device-interface-class
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [AV/C client driver](../stream/av-c-client-drivers2.md) [Avc.sys](../stream/using-avc-sys.md) registers an instance of GUID_AVC_CLASS to represent an external AV/C unit on a 1394 bus.
 
 For information about the device interface class for virtual AV/C devices, see [**GUID_VIRTUAL_AVC_CLASS**](guid-virtual-avc-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

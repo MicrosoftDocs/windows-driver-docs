@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_VOLUME property specifies a wave device's volume setting.
 
 The property value (operation data) is a KSWAVE\_VOLUME structure that describes the amount of left and right attenuation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

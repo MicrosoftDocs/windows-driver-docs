@@ -57,13 +57,11 @@ The SYSTEM\_EXIT\_OWNED\_MUTEX bug check has a value of 0x00000039. This indicat
 
  
 
-Cause
------
+## Cause
 
 The worker routine returned while it still owned a mutex object. The current worker thread will proceed to run other unrelated work items, and the mutex will never be released.
 
-Resolution
-----------
+## Resolution
 
 A debugger is required to analyze this problem. To find the driver that caused the error, use the **ln** (List Nearest Symbols) debugger command:
 

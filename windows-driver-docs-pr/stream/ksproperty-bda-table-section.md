@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_TABLE\_SECTION to inform nodes about the table sect
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the LNB amplifier node.
 
 The BDA\_TABLE\_SECTION structure describes the table section.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

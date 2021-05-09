@@ -56,8 +56,7 @@ The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug chec
 
  
 
-Cause
------
+## Cause
 
 The BAD\_SYSTEM\_CONFIG\_INFO bug check occurs if the SYSTEM hive is corrupt. However, this corruption is unlikely, because the boot loader, checks a hive for corruption when it loads the hive.
 
@@ -65,8 +64,7 @@ This bug check can also occur if some critical registry keys and values are miss
 
 Looking up the NT status value returned in parameter 4 can provide additional information, see [NTSTATUS Values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) for a listing. 
 
-Resolution
-----------
+## Resolution
 
 Check in the Windows system eventlog to see if there are any registry related error events. If there are see if the event lists a hive or specific key that the error occurred in.
 

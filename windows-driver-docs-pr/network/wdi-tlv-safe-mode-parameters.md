@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_SAFE\_MODE\_PARAMETERS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

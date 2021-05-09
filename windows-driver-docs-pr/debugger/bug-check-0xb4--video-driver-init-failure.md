@@ -26,8 +26,7 @@ The VIDEO\_DRIVER\_INIT\_FAILURE bug check has a value of 0x000000B4. This indic
 
 None
 
-Cause
------
+## Cause
 
 The system was not able to go into graphics mode because no display drivers were able to start.
 

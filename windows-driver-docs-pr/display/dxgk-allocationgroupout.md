@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONGROUPOUT structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONGROUPOUT {
@@ -29,8 +28,7 @@ typedef struct _DXGK_ALLOCATIONGROUPOUT {
 } DXGK_ALLOCATIONGROUPOUT;
 ```
 
-Members
--------
+## Members
 
 **NbAllocationGroup**
 Reserved for system use.
@@ -38,8 +36,7 @@ Reserved for system use.
 **pAllocationGroupDescriptor**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

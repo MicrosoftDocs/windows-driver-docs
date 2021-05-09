@@ -34,8 +34,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The event log chronicles the most recent 150 events that occurred in the interpreter.
 

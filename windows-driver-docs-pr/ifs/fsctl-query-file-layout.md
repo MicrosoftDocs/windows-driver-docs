@@ -44,8 +44,7 @@ A pointer to a caller-allocated [**QUERY\_FILE\_LAYOUT\_OUTPUT**](/windows-hardw
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. The size of *OutputBuffer* must be large enough to contain a [**QUERY\_FILE\_LAYOUT\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_query_file_layout_output) along with the file layout and stream layout structures returned.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value, such as one of these values:
 
@@ -86,8 +85,7 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 To retrieve all the layout entries for a volume, the FSCTL\_QUERY\_FILE\_LAYOUT request is issued multiple times until **STATUS\_END\_OF\_FILE** is returned. While **STATUS\_SUCCESS** is returned, a caller can continue to send an FSCTL\_QUERY\_FILE\_LAYOUT request for the remaining layout entries.
 
@@ -95,8 +93,7 @@ The enumeration of layout entries may be restarted at any time by including the 
 
 **ReFS:  **This code is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

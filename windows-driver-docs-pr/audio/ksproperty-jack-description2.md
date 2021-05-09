@@ -69,13 +69,11 @@ KSJACK\_DESCRIPTION2\[0\]
 
 KSJACK\_DESCRIPTION2\[N-1\]
 
-Remarks
--------
+## Remarks
 
 Each KSJACK\_DESCRIPTION2 structure must only contain information about one jack.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -64,15 +64,13 @@ The property value (operation data) is of type ULONG and specifies the chorus le
 
 A KSPROPERTY\_AUDIO\_CHORUS\_LEVEL property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to get and set the volume level of the chorus echo.
 
 Chorus is a voice-doubling effect that is created by echoing the original sound with a slight delay and slightly modulating the delay of the echo. For more information, see the description of the **IDirectSoundFXChorus** interface in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

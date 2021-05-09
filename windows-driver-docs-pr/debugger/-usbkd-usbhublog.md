@@ -35,8 +35,7 @@ The number of log entries to display. To display the entire log, set this parame
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

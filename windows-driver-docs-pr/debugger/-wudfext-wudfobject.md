@@ -67,8 +67,7 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use **!wudfext.wudfobject** to list, for example, the child objects of an **IWDFDevice** object, which generally include the device's queues.
 

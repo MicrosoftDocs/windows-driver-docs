@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The*MRxStop* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to stop the network mini-redirector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN_CTX MRxStop;
@@ -32,8 +31,7 @@ NTSTATUS MRxStop(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that requested the network mini-redirector to stop.
@@ -41,8 +39,7 @@ A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that req
 *RxDeviceObject* \[in, out\]  
 A pointer to the RDBSS\_DEVICE\_OBJECT structure for this network mini-redirector.
 
-Return value
-------------
+## Return value
 
 *MRxStop* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -71,8 +68,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxStop* stops and uninitializes the network mini-redirector from the RDBSS perspective. Stopping the network mini-redirector may likely require releasing memory allocations and other system resources.
 
@@ -94,8 +90,7 @@ If *MRxStop* returns STATUS\_SUCCESS, RDBSS sets the state of RDBSS to RDBSS\_ST
 
 A network mini-redirector would normally maintain an internal variable indicating whether the network mini-redirector is started. For example, a network mini-redirector might track when it is stopped, started, and when a start operation or stop operation is in progress.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

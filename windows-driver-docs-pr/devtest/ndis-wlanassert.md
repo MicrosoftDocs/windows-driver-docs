@@ -35,8 +35,7 @@ The *violation text* will be provided as parameter two in the 0xC4 bug check.
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) ( 0x00093004)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -54,8 +53,7 @@ How to test
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [TxTransferCompleteIndication](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_transfer_complete_ind)
 
@@ -73,8 +71,7 @@ Applies to
 
 [NdisMDeregisterWdiMiniportDriver](/windows-hardware/drivers/ddi/dot11wdi/nf-dot11wdi-ndismderegisterwdiminiportdriver)
 
-See also
---------
+## See also
 
 [WDI IHV driver interfaces](../network/wdi-ihv-driver-interfaces.md)
 

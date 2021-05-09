@@ -55,11 +55,9 @@ The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a struc
 
 The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

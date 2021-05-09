@@ -52,8 +52,7 @@ A pointer to the object or a path.
 
 For more information about the Global Flags utility (GFlags), see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The object reference tracing feature of Windows records sequential stack traces whenever an object reference counter is incremented or decremented.
 
