@@ -56,8 +56,7 @@ Before the client driver can enumerate pipes, make sure these requirements are m
 
     For a UMDF client driver, the framework selects the first configuration and the default alternate setting for each interface in that configuration.
 
-Instructions
-------------
+## Instructions
 
 ### Getting USB pipe handles - KMDF client driver
 

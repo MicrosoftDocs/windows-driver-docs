@@ -49,8 +49,7 @@ Before the client driver can select an alternate setting, make sure these requir
 
     If you are using USB templates, the code selects the first configuration and the default alternate setting in each interface.
 
-Instructions
-------------
+## Instructions
 
 ### Select an alternate setting - KMDF client driver
 

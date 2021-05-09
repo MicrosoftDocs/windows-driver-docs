@@ -120,8 +120,7 @@ This example in this topic simplifies USBSAMP implementation of isochronous tran
 
 The following procedure elaborates the preceding steps and shows calculations and routines that a client driver can use to build and send an isochronous transfer request for a high-speed isochronous endpoint. The values used in the procedure are based on the example endpoint characteristics described earlier.
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="get-the-size-of-an-isochronous-packet--"></a>Step 1: Get the size of an isochronous packet.
 

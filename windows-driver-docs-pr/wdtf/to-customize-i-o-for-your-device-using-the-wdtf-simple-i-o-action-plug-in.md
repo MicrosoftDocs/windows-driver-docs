@@ -16,8 +16,7 @@ To get the most benefit from the Device Fundamental tests and tests you might ha
 -   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see [How to test a driver package](/windows-hardware/drivers).
 -   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="create-a-project-for-a-wdtf-simple-i-o-action-plug-in-"></a>Step 1: Create a project for a WDTF Simple I/O Action plug-in
 
