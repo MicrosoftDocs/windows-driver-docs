@@ -55,8 +55,7 @@ This extension command can only be used with an Itanium target computer.
 
 For more information, consult an Intel architecture manual.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

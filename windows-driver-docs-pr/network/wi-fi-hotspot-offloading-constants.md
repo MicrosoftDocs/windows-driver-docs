@@ -121,8 +121,7 @@ Specifies EAP-AKA’ (AKA Prime) authentication.
 0x00010000  
 Specifies use of custom realm value for network authentication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

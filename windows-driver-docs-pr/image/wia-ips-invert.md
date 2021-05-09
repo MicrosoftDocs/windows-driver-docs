@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPS\_FILM\_SCAN\_MODE property is not related to [**WIA\_IPS\_ORIENTATION**](wia-ips-orientation.md). WIA\_IPS\_ORIENTATION describes the orientation of the document to be scanned in relationship to the direction of the scan; in contrast, WIA\_IPS\_FILM\_SCAN\_MODE describes an operation that is to be applied to an image after it is scanned.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

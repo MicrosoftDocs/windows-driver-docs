@@ -82,8 +82,7 @@ The adapter must not violate regulatory restrictions when performing a scan.
 
 This notification is used by the device to tell the host about updates to the BSS entries. It can be sent at any time.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

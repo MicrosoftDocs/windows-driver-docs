@@ -35,8 +35,7 @@ Exts.dll
 
 For information about thread environment blocks, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The TEB is the user-mode portion of Microsoft Windows thread control structures.
 

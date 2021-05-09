@@ -60,13 +60,11 @@ The property value (operation data) is a structure of type KSTIME that specifies
 
 A KSPROPERTY\_AUDIO\_LATENCY property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to query the stream latency of a pin on an AEC filter. For more information, see [Exposing Hardware-Accelerated Capture Effects](./exposing-hardware-accelerated-capture-effects.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

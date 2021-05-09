@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DIP\_HW\_CONFIG property to determine the device's connection type.
 
@@ -72,8 +71,7 @@ The following table describes the possible values for WIA\_DIP\_HW\_CONFIG.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

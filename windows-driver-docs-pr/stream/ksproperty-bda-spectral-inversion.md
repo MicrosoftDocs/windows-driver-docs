@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_SPECTRAL\_INVERSION to control the setting for spec
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the SpectralInversion enumerated type identifies a setting for spectral inversion.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

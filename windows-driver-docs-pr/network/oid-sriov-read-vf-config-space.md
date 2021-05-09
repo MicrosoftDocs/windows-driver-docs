@@ -18,8 +18,7 @@ After a successful return from this OID method request, the **InformationBuffer*
 
 -   Additional buffer space for the data to be read from the PCI configuration space.
 
-Remarks
--------
+## Remarks
 
 The VF miniport driver runs in the guest operating system of a Hyper-V child partition. Because of this, the VF miniport driver cannot directly access hardware resources, such as the VF's PCI configuration space. Only the miniport driver for the PCIe Physical Function (PF) can access the PCI configuration space for a VF. The PF miniport driver runs in the management operating system of a Hyper-V parent partition and has privileged access to the VF resources.
 
@@ -83,8 +82,7 @@ The PF miniport driver returns one of the following status codes for the OID met
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -57,8 +57,7 @@ Be aware that a single device can have more than one *hw-id* value. The PnP mana
 <a href="" id="compatible-id"></a>*compatible-id*  
 Specifies a vendor-defined [compatible ID](compatible-ids.md) string that identifies compatible devices. Any number of *compatible-id* values can be specified for an entry in the *Models* section, each separated from the next by a comma (**,**). All such compatible devices and/or device models are controlled by the same driver as the device designated by the initial *hw-id*.
 
-Remarks
--------
+## Remarks
 
 Each *models-section-name* must be listed in the [**INF Manufacturer section**](inf-manufacturer-section.md) of the INF file. There can be one or more entries in any per-manufacturer *Models* section, depending on how many devices (and drivers) the INF file installs for a particular manufacturer.
 
@@ -74,8 +73,7 @@ A *models section name* can include a *TargetOSVersion* decoration. For more inf
 
  
 
-Examples
---------
+## Examples
 
 This example shows a per-manufacturer *Models* section with some representative entries from the system mouse class installer's INF file, defining the [***DDInstall***](inf-ddinstall-section.md) sections for some devices/models.
 

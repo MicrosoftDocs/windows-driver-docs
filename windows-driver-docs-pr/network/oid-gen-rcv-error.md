@@ -29,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The count is identical to the *ifInErrors* counter described in RFC 2863.
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

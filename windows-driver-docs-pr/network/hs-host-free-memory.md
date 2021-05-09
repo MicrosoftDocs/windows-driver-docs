@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_HOST\_FREE\_MEMORY** function frees any memory that was allocated earlier by a call to [**HS\_HOST\_ALLOCATE\_MEMORY**](hs-host-allocate-memory.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef VOID (WINAPI *HS_HOST_FREE_MEMORY)(
@@ -24,8 +23,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPluginContext* \[in\]  
 Context handle for the plugin making the call to this function.
@@ -33,13 +31,11 @@ Context handle for the plugin making the call to this function.
 *pvBuffer* \[in, optional\]  
 Pointer to the memory buffer.
 
-Return value
-------------
+## Return value
 
 This function is called by the plugin to communicate with the host and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

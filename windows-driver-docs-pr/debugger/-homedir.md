@@ -49,8 +49,7 @@ Specifies the new directory to use as the home directory.
 
  
 
-Remarks
--------
+## Remarks
 
 If the **!homedir** extension is used with no argument, the current home directory is displayed.
 

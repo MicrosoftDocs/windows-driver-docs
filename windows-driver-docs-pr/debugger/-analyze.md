@@ -76,8 +76,7 @@ Ext.dll
 
 For sample analysis of a user-mode exception and of a kernel-mode stop error (that is, crash), and for more information about how **!analyze** uses the triage.ini file, see [Using the !analyze Extension](using-the--analyze-extension.md).
 
-Remarks
--------
+## Remarks
 
 In user mode, **!analyze** displays information about the current exception.
 

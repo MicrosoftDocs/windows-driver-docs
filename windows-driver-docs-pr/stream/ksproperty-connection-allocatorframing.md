@@ -54,8 +54,7 @@ In the stream class model, clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAM
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a [**KSALLOCATOR\_FRAMING**](/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing), which describes the framing requirements for the pin. For example, the **FrameSize** member specifies the frame size of data on the pin.
 
@@ -63,8 +62,7 @@ AVStream minidrivers should use [**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX*
 
 See [KS Allocators](./ks-allocators.md). and [AVStream Allocators](./avstream-allocators.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

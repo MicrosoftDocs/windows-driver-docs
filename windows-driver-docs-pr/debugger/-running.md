@@ -55,8 +55,7 @@ Causes a stack trace to be displayed for each processor.
 
 For more information about debugging multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
-Remarks
--------
+## Remarks
 
 With no options, **!running** will display the affinity of all active processors and all idle processors. For all active processors, it will also display the current and next thread fields from the process control block (PRCB) and the state of the 16 built-in queued spin locks.
 

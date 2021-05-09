@@ -44,15 +44,13 @@ The MOUNTDEV_MOUNTED_DEVICE_GUID [device interface class](./overview-of-device-i
 
  
 
-Remarks
--------
+## Remarks
 
 The MOUNTDEV_MOUNTED_DEVICE_GUID identifier for this device interface class is an alias for the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
 The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK includes the [ClassPnP Storage Class Driver Library](/samples/browse/) that uses MOUNTDEV_MOUNTED_DEVICE_GUID to register instances of the GUID_DEVINTERFACE_VOLUME device interface class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPKEY identifier represents the base-data-type identifier that indicates the data type is a DEVPROPKEY-typed device property key.
 
-Remarks
--------
+## Remarks
 
 The DEVPROP_TYPE_DEVPROPKEY property type can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -32,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_DEVPROPKEY, call the corr
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

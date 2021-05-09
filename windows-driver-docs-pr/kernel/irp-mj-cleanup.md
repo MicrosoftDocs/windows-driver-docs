@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routines.
 
-When Sent
----------
+## When Sent
 
 Receipt of this request indicates that the last handle for a file object that is associated with the target device object has been closed (but, due to outstanding I/O requests, might not have been released).
 
@@ -27,8 +26,7 @@ None
 
 None
 
-Operation
----------
+## Operation
 
 This IRP is sent in the context of the process that closed the file object handle. Therefore, the driver should release process-specific resources, such as user memory, that the driver previously locked or mapped.
 
@@ -38,8 +36,7 @@ Otherwise, the driver must cancel and complete only the currently queued IRPs th
 
 For more information about handling this request, see [DispatchCleanup Routines](./dispatchcleanup-routines.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPA\_BUFFER\_SIZE property is identical to the [**WIA\_IPA\_MIN\_BUFFER\_SIZE**](wia-ipa-min-buffer-size.md) property.
 
@@ -39,8 +38,7 @@ An application can read WIA\_IPA\_BUFFER\_SIZE to determine the driver-specified
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

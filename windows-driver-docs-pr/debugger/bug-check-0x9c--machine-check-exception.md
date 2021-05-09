@@ -95,8 +95,7 @@ If the processor is based on a newer x86-based architecture and has the MCA feat
 </table>
 
 
-Remarks
--------
+## Remarks
 
 This bug check occurs only in the following circumstances.
 

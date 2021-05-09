@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuratio
 
 The property value (operation data) is a KS\_AMVPDATAINFO structure that describes the properties of the video port.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

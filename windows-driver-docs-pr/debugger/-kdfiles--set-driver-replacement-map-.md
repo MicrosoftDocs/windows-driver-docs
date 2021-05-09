@@ -75,8 +75,7 @@ Deletes the existing driver replacement map. (This option does not alter the map
 
 For more information about and examples of driver replacement and the replacement of other kernel-mode modules, a description of the format for driver replacement map files, and restrictions for using this feature, see [Mapping Driver Files](mapping-driver-files.md).
 
-Remarks
--------
+## Remarks
 
 If you use the **.kdfiles** command without parameters, the debugger displays the path and name of the current driver replacement map file and the current set of replacement associations.
 
@@ -117,8 +116,7 @@ For more information about enabling boot debugging, see [BCDEdit /bootdebug](../
 
 The use of the high speed/low latency KD transport KDNET is recommended to minimize system performance impacts.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

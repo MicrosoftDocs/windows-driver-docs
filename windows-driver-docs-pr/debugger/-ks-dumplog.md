@@ -52,8 +52,7 @@ Optional. Specifies the number of log entries to display. If *Entries* is zero o
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can stop the log display by pressing [**CTRL+C**](ctrl-c--break-.md).
 

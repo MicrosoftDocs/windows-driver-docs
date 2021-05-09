@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_SEGMENTDESCRIPTOR2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_SEGMENTDESCRIPTOR2 {
@@ -32,8 +31,7 @@ typedef struct _DXGK_SEGMENTDESCRIPTOR2 {
 } DXGK_SEGMENTDESCRIPTOR2;
 ```
 
-Members
--------
+## Members
 
 **Flags**
 Reserved for system use.
@@ -50,8 +48,7 @@ Reserved for system use.
 **CpuTranslatedAddress**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

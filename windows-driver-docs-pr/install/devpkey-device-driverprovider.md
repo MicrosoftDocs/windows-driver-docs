@@ -57,8 +57,7 @@ The DEVPKEY_Device_DriverProvider device property represents the name of the pro
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_Device_DriverProvider is supplied by the **Provider** directive that is included in the [**INF Version section**](./inf-driverver-directive.md) of a device INF file.
 
@@ -66,8 +65,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ProviderName** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

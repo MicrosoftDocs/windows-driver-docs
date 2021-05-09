@@ -16,8 +16,7 @@ Miniport drivers may also use this notification to inform the MB Service about t
 
 This notification uses the [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

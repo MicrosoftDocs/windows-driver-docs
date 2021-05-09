@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -65,8 +64,7 @@ If an RF tuner node returns **TRUE**, a phase-lock-loop (PLL) lock is typically 
 
 If a demodulator node returns **TRUE**, a signal quality of at least 20% is indicated.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

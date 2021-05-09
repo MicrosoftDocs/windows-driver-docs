@@ -24,13 +24,11 @@ This section describes the query-interface IRP as a general mechanism. Drivers t
 
 0x08
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 A driver or system component sends this IRP to get information about an interface exported by a driver for a device.
 
@@ -92,8 +90,7 @@ If a function or filter driver does not handle this IRP, it calls [**IoSkipCurre
 
 If a bus driver does not export the requested interface and therefore does not handle this IRP for a child PDO, the bus driver leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 A driver handles this IRP if the parameters specify an interface the driver supports.
 
@@ -129,8 +126,7 @@ See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The 
 
 A driver typically sends this IRP to the top of the device stack in which the driver is attached. If a driver sends this IRP to a different device stack, the driver must register for target device notification on the other device if the other device is not an ancestor of the device that the driver is servicing. Such a driver calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) with an *EventCategory* of **EventCategoryTargetDeviceChange**. When the driver receives notification of type GUID\_TARGET\_DEVICE\_QUERY\_REMOVE, the driver must dereference the interface. The driver can requery for the interface if it receives a subsequent GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED notification.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

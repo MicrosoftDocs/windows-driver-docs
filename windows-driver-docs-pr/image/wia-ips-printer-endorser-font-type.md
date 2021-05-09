@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-Write
 
-Remarks
--------
+## Remarks
 
 The accepted values for the **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property are shown in the following table.
 
@@ -55,8 +54,7 @@ The accepted values for the **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property is optional for the Imprinter/Endorser items. When this is not supported, the printer/endorser device does not support font configuration.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

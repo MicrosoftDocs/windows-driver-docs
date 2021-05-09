@@ -54,8 +54,7 @@ The current number of pins this pin factory has instantiated, as well as the max
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a structure of type KSPIN\_CINSTANCES:
 
@@ -78,8 +77,7 @@ This property specifies the per-filter maximum for a given pin factory. Use the 
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

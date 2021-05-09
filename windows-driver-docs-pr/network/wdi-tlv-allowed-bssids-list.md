@@ -31,8 +31,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/dr
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

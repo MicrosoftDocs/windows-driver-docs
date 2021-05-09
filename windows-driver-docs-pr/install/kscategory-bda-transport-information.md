@@ -44,15 +44,13 @@ The KSCATEGORY_BDA_TRANSPORT_INFORMATION [device interface class](./overview-of-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_TRANSPORT_INFORMATION to indicate to the operating system that the devices support a BDA transport information filter.
 
 For more information about the KS functional category for BDA transport information filters, see [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

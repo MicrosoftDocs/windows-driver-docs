@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The **HOTSPOT\_PLUGIN\_APIS** structure contains the Hotspot plugin APIs function table. This function table is returned by the plugin when [**HSPluginInitPlugin**](hsplugininitplugin.md) is called to initialize the plugin. The table contains functions that are called by the hotspot host to communicate with the plugin.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HOTSPOT_PLUGIN_APIS {
@@ -34,8 +33,7 @@ typedef struct _HOTSPOT_PLUGIN_APIS {
 } HOTSPOT_PLUGIN_APIS, *PHOTSPOT_PLUGIN_APIS;
 ```
 
-Members
--------
+## Members
 
 **HSPluginQuerySupportedSIMs**  
 API called during plugin initialization.
@@ -92,8 +90,7 @@ API called to de-initialize and clean up the plugin before unloading.
 
 Called by the hotspot host to notify the plugin that it is about to be unloaded. For more information, see [**HS\_PLUGIN\_DEINIT**](hs-plugin-deinit.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

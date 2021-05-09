@@ -20,15 +20,13 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_SMS\_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status) structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must use NDIS\_STATUS\_WWAN\_SMS\_STATUS to inform the MB Service about the arrival of all non-class-0 (flash/alert) messages. To inform the MB Service about class-0 (flash/alert) message arrival, miniport drivers must use [**NDIS\_STATUS\_WWAN\_SMS\_RECEIVE**](ndis-status-wwan-sms-receive.md).
 
 This indication could be a transactional notification for a *query* request of OID\_WWAN\_SMS\_STATUS or an unsolicited event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

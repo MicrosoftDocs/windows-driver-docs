@@ -32,13 +32,11 @@ Address of the \_DEVICE\_CONTEXT structure that represents the device.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 **!device\_info** and [**!ucx\_device**](-usb3kd-ucx-device.md) both display information about a device, but the information displayed is different. The output of **!device\_info** is from the point of view of the USB 3.0 hub driver, and the output of **!ucx\_device** is from the point of view of the USB host controller extension driver. For example, the **!device\_info** output includes information about configuration and interface descriptors, and **!ucx\_device** output includes information about endpoints.
 
-Examples
---------
+## Examples
 
 You can obtain the address of the device context structure by looking at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of the device context structure is 0xfffffa8005abd0c0.
 

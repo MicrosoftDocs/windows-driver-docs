@@ -22,8 +22,7 @@ The visible provider list returned by the device should have the provider state 
 
 The **Rssi** and **ErrorRate** members of WWAN\_PROVIDER2 structure should be set if available.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Provider Operations](./mb-provider-operations.md).
 
@@ -37,8 +36,7 @@ Devices that do not support scanning for visible providers while connected shoul
 
 Both GSM-based and CDMA-based devices must support scanning for visible providers while in registered mode. However, miniport drivers are not required to support scanning for visible provider while a Packet Data Protocol (PDP) context is active (for example, the device is connected to the provider's network).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

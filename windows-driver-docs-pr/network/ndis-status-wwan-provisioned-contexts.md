@@ -16,15 +16,13 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts) structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must set the **ElementType** member of the NDIS\_WWAN\_PROVISIONED\_CONTEXTS structure's **ContextListHeader** to **WwanStructContext**.
 
 In some cases, the list of provisioned contexts is updated by the network either Over-The-Air (OTA) or by Short Message Service (SMS). The miniport driver must update the list of provisioned contexts accordingly. Thereafter, miniport drivers must notify the MB Service about the updates using this INDICATION with the updated list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

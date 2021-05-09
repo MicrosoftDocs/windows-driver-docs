@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_NUMVIDEOFORMAT property obtains the maximum number of 
 
 The property value (operation data) is a DWORD that specifies the maximum number of pixel formats.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

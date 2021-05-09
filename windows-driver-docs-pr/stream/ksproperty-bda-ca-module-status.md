@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_CA\_MODULE\_STATUS to determine status on the CA mo
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the CA module status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

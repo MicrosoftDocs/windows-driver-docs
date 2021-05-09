@@ -58,13 +58,11 @@ For asynchronous media types, logical bits 0-31 indicate the respective byte to 
 <a href="" id="recvaccm"></a>**RecvACCM**  
 As described for **SendACCM**.
 
-Remarks
--------
+## Remarks
 
 Possible values for **SendFramingBits** and **RecvFramingBits** include any the underlying driver returned in response to the [OID\_WAN\_CO\_GET\_INFO](oid-wan-co-get-info.md) query.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

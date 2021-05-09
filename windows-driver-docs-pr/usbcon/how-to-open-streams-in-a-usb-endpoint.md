@@ -136,8 +136,7 @@ The client driver can close streams after the driver is finished using them. How
 
 The close-handle request closes all streams that were previously opened by the client driver. The client driver cannot use the request to close specific streams in the endpoint.
 
-Remarks
--------
+## Remarks
 
 **Best practices for sending a static streams request**
 

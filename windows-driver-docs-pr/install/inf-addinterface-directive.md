@@ -45,8 +45,7 @@ References the name of a section elsewhere in the INF file. This typically conta
 <a href="" id="flags"></a>*flags*  
 If specified, this entry must be zero.
 
-Remarks
--------
+## Remarks
 
 If the [device interface class](./overview-of-device-interface-classes.md) identified by a specified **{**<em>InterfaceClassGUID</em>**}** is not installed already, the system setup code installs that class in the system. Any INF file that installs a new class also has an [**INF InterfaceInstall32 section**](inf-interfaceinstall32-section.md). This section contains the specified **{**<em>InterfaceClassGUID</em>**}** and references an *interface-install-section* that sets up interface-specific installation operations for that class.
 
@@ -80,8 +79,7 @@ An *add-registry-section* referenced within an *add-interface-section* is specif
 
 An **HKR** specified in such an *add-registry-section* section designates the run-time accessible state registry key for a device interface.  The driver can access state stored in this registry key at runtime by calling [**IoOpenDeviceInterfaceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a HANDLE to the state registry key.  User mode components can query the state by calling [**CM_Open_Device_Interface_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw).
 
-Examples
---------
+## Examples
 
 This example shows some of the expansion of the *DDInstall*.**Interfaces** section for a particular audio device that supports system-defined kernel-streaming interfaces.
 

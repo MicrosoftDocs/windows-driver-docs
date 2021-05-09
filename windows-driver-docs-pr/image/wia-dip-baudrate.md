@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The value of the WIA\_DIP\_BAUDRATE property should be "Empty" if the device is not connected by a serial cable.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

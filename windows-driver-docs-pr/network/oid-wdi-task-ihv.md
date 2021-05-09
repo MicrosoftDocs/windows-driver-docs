@@ -35,8 +35,7 @@ The task is initiated by the sending [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_
 
 [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_COMPLETE](ndis-status-wdi-indication-ihv-task-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

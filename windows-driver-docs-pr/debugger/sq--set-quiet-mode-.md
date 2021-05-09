@@ -50,8 +50,7 @@ sq{e|d}
 
  
 
-Remarks
--------
+## Remarks
 
 The **sqe** command turns quiet mode on, and the **sqd** command turns it off. The **sq** command turns on and off quiet mode. Each of these commands also displays the new quiet mode status.
 

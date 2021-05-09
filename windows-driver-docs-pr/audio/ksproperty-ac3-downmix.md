@@ -60,13 +60,11 @@ The property value (operation data) is a KSAC3\_DOWNMIX structure that specifies
 
 A KSPROPERTY\_AC3\_DOWNMIX property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Downmixing is required if the number of channels being output by the decoder is less than the number of channels encoded in the AC-3 stream.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

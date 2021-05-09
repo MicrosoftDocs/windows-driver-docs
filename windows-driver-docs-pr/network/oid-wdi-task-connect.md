@@ -67,8 +67,7 @@ The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both 
 
 [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

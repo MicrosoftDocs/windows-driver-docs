@@ -18,8 +18,7 @@ Miniport drivers must process set requests asynchronously, initially returning *
 
 Miniport drivers should return **NDIS\_STATUS\_NOT\_SUPPORTED** if they do not support this operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

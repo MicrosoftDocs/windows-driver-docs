@@ -61,8 +61,7 @@ Causes the display to include a list of all processes in the job.
 
 For information about job objects, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

@@ -26,8 +26,7 @@ The **!usbkd.usbhcdlistlogs** command displays a list of all functional device o
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 This example shows a portion of the output of the **!usbhcdlistlogs** command.
 

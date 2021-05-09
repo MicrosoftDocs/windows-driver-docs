@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The*MRxSetVolumeInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set volume information.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetVolumeInfo;
@@ -31,14 +30,12 @@ NTSTATUS MRxSetVolumeInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetVolumeInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -87,8 +84,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetVolumeInfo* in response to receiving an [**IRP\_MJ\_SET\_VOLUME\_INFORMATION**](irp-mj-set-volume-information.md) request.
 
@@ -100,8 +96,7 @@ The **Info.Buffer** member is set to **Irp-&gt;AssociatedIrp.SystemBuffer**.
 
 The **Info.LengthRemaining** member is set to **IrpSp-&gt;Parameters.SetVolume.Length**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

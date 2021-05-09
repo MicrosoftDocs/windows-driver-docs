@@ -54,8 +54,7 @@ AVStream clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX property t
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a [**KSALLOCATOR\_FRAMING\_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing_ex), which describes the framing requirements for an AVStream pin.
 
@@ -63,8 +62,7 @@ Minidrivers running under stream class should use [**KSPROPERTY\_CONNECTION\_ALL
 
 See [KS Allocators](./ks-allocators.md). and [AVStream Allocators](./avstream-allocators.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

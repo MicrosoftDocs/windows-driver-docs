@@ -54,8 +54,7 @@ No additional data. The data in the header is sufficient.
 
 [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,8 +44,7 @@ The KSCATEGORY_VIDEO_CAMERA GUID is defined as follows:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

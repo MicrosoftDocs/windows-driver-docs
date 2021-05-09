@@ -57,8 +57,7 @@ The INVALID\_WORK\_QUEUE\_ITEM bug check has a value of 0x00000096. This bug che
 
  
 
-Cause
------
+## Cause
 
 The INVALID\_WORK\_QUEUE\_ITEM bug check occurs when **KeRemoveQueue** removes a queue entry whose **flink** or **blink** field is **NULL**.
 

@@ -20,8 +20,7 @@ ms.custom: seodec18
 
 The sample *ProcAmpControlQueryCaps* function allows the *VMR* to query the driver to determine input requirements of the ProcAmp control device and additional video processing operations that might be supported. The query can occur at the same time that the ProcAmp adjustments operation is being performed.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcAmpControlQueryCaps(
@@ -30,8 +29,7 @@ HRESULT ProcAmpControlQueryCaps(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpVideoDescription* \[in\]
 Supplies a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure that defines the ProcAmp control parameters for the video to be processed.
@@ -39,13 +37,11 @@ Supplies a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva
 *lpProcAmpCaps* \[out\]
 Receives a pointer to a [**DXVA\_ProcAmpControlCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolcaps) structure that contains the driver capabilities for ProcAmp control operations.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The driver reports its capabilities to a user-mode component for the ProcAmp control mode in the [**DXVA\_ProcAmpControlCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolcaps) structure pointed to by *lpProcAmpCaps*.
 
@@ -118,8 +114,7 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps(
 }
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

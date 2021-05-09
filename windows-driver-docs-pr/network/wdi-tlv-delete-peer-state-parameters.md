@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_DELETE\_PEER\_STATE\_PARAMETERS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

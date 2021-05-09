@@ -145,8 +145,7 @@ This directive references one or more INF sections used to specify files that ar
 
 For more information, see [**INF UnregisterDlls Directive**](inf-unregisterdlls-directive.md).
 
-Remarks
--------
+## Remarks
 
 **DefaultInstall** sections must not be used for device installations. Use **DefaultInstall** sections only for the installation of class filter drivers, class co-installers, file system filters, and kernel driver services that are not associated with a device node (*devnode*).
 
@@ -170,8 +169,7 @@ For more information about **InstallHinfSection**, see the Microsoft Windows SDK
 
 For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-Examples
---------
+## Examples
 
 The following example shows a typical **DefaultInstall** section:
 

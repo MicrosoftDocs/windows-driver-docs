@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddNull method adds a new response of type BIDI\_NULL to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddNull(
@@ -28,19 +27,16 @@ HRESULT AddNull(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema name.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

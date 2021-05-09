@@ -56,8 +56,7 @@ Specifies the ATE to display.
 
 For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 This extension is only available on Itanium-based computers.
 

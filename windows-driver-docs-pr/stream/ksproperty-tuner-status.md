@@ -56,11 +56,9 @@ The KSPROPERTY\_TUNER\_STATUS property retrieves information about the tuning pr
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_STATUS\_S structure that specifies the current frequency, PLL offset, and signal strength.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

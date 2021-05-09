@@ -62,8 +62,7 @@ The property value (operation data) is a pointer to a null-terminated string of 
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

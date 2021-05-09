@@ -76,8 +76,7 @@ The rest of the symbol flags' bit-set can contain the following bit-flags.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

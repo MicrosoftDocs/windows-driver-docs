@@ -19,8 +19,7 @@ The **RemoveLockReleasePnp** rule verifies that calls to [**IoAcquireRemoveLock*
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock)

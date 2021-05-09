@@ -47,8 +47,7 @@ Not used. Set to NULL.
 <a href="" id="outputbufferlength--in-"></a>*OutputBufferLength \[in\]*  
 Set to 0.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -85,15 +84,13 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 When the backing source to remove is a Windows Imaging Format (WIM) file, the input buffer will contain a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**WIM\_PROVIDER\_REMOVE\_OVERLAY\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_remove_overlay_input) structure. The *InputBufferLength* in this case will be **sizeof**(WOF\_EXTERNAL\_INFO) + **sizeof**(**WIM\_PROVIDER\_REMOVE\_OVERLAY\_INPUT**). The **DataSourceId** value in **WIM\_PROVIDER\_REMOVE\_OVERLAY\_INPUT** must be for a WIM file previously added in an [**FSCTL\_ADD\_OVERLAY**](fsctl-add-overlay.md) request.
 
 Additional backing providers will define their own specific input parameter structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

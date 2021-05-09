@@ -31,8 +31,7 @@ The size (in bytes) of the array of WDI\_CHANNEL\_NUMBER (UINT32) structures. Th
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

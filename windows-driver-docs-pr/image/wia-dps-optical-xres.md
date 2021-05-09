@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE.
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

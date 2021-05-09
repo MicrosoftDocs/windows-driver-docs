@@ -16,13 +16,11 @@ Bus drivers must handle this IRP for their child devices (child PDOs) that suppo
 
 0x12
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to direct driver(s) to lock the device and prevent device eject, or to unlock the device.
 
@@ -49,8 +47,7 @@ If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** 
 
 Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
-Operation
----------
+## Operation
 
 If a driver returns success for this IRP, it ensures that the device has been locked or unlocked before completing the IRP.
 
@@ -60,8 +57,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -21,8 +21,7 @@ The following diagram illustrates a query request.
 
 Set requests are not applicable.
 
-Remarks
--------
+## Remarks
 
 It is critical for the driver to report service extension capability as a whole including from the driver to the actual device. If a driver supports a service but it is not supported by the underlying hardware, then the service capabilities should be marked as FALSE.
 
@@ -46,8 +45,7 @@ Additionally, in the **WwanOptionalServiceCaps** field of the **WWAN_DEVICE_CAPS
 
 For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

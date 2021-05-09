@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectReference** macro increments the reference count for a specified framework object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID WdfObjectReference(
@@ -23,21 +22,18 @@ VOID WdfObjectReference(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
 
-Return value
-------------
+## Return value
 
 None.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-Remarks
--------
+## Remarks
 
 If your driver calls **WdfObjectReference** to increment a reference count, the driver must call [**WdfObjectDereference**](wdfobjectdereference.md) to decrement the count.
 
@@ -45,8 +41,7 @@ Instead of calling **WdfObjectReference**, a driver can call [**WdfObjectReferen
 
 For more information about object reference counts, see [Framework Object Life Cycle](./framework-object-life-cycle.md).
 
-Examples
---------
+## Examples
 
 The following code example increments an object's reference count.
 
@@ -54,8 +49,7 @@ The following code example increments an object's reference count.
 WdfObjectReference(Object); 
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

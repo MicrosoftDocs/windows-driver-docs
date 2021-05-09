@@ -59,8 +59,7 @@ This command is only supported in Windows XP and later versions of Windows.
 
  
 
-Remarks
--------
+## Remarks
 
 **Child processes** are additional processes launched by the original target application.
 

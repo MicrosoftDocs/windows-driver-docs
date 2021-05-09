@@ -54,13 +54,11 @@ KSPROPERTY\_CONNECTION\_STARTAT is an optional property that is implemented by f
 
  
 
-Remarks
--------
+## Remarks
 
 This property should only be requested when the pin is in a pause state, to transition the pin into a run state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

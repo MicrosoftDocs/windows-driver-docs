@@ -19,8 +19,7 @@ The **WdfIoQueueFindRequestFailed** rule specifies that [**WdfIoQueueRetrieveFou
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoQueueFindRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuefindrequest)
 [**WdfIoQueueRetrieveFoundRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrievefoundrequest)

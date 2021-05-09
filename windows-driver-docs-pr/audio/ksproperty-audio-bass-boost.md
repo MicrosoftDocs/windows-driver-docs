@@ -60,13 +60,11 @@ The property value (operation data) is of type BOOL and indicates whether bass b
 
 A KSPROPERTY\_AUDIO\_BASS\_BOOST property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 A tone node can support properties for controlling treble level, mid-frequency level, bass level, and bass boost. For more information, see [**KSNODETYPE\_TONE**](ksnodetype-tone.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

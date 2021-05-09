@@ -30,13 +30,11 @@ KSMETHOD with **Flags** member set to KSMETHOD\_TYPE\_NONE.
 
 None
 
-Remarks
--------
+## Remarks
 
 When the network provider makes a KSMETHOD\_BDA\_COMMIT\_CHANGES request, the list of changes are committed on the underlying filter, at which point the filter resets its state and a new cycle can begin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

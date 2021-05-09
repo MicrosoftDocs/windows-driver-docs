@@ -50,8 +50,7 @@ The DEVPKEY_DrvPkg_DetailedDescription device property represents a detailed des
 
  
 
-Remarks
--------
+## Remarks
 
 The detailed description string is in XML format. XML format makes it possible for Windows to format the display of the information based on the following subset of supported Hypertext Markup Language (HTML) tags. The operation of these tags resembles the operation of HTML tags.
 
@@ -79,8 +78,7 @@ DeviceDetailedDescription,,,,"<xml><h1>Microsoft DiscoveryCam 530</h1><h2>Overvi
 ...
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

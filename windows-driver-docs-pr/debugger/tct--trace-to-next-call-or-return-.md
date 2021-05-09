@@ -75,8 +75,7 @@ Specifies the number of **call** or **return** instructions that the debugger mu
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **tct** command causes the target to begin executing. This execution continues until the debugger reaches a **call** or **return** instruction or encounters a breakpoint.
 

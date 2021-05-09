@@ -39,7 +39,6 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 To determine the breakpoint number of a breakpoint, use the [**!amli bl**](-amli-bl.md) extension.

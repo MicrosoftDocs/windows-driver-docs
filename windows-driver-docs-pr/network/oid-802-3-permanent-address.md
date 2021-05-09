@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The address of the NIC encoded in the hardware.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -47,8 +47,7 @@ None. Set to NULL.
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 Set to 0.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -81,13 +80,11 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 As a result of the delete operation, the contents of the file are read from the backing source and the entire file is written to the volume.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

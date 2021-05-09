@@ -44,15 +44,13 @@ The KSCATEGORY_FILESYSTEM [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_FILESYSTEM to indicate to the operating system that the devices support the KSCATEGORY_FILESYSTEM functional category.
 
 The KSCATEGORY_FILESYSTEM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md) functional categories.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

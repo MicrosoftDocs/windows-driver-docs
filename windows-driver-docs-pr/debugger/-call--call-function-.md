@@ -70,8 +70,7 @@ Clears any existing call on the current thread, and resets the context of the cu
 
  
 
-Remarks
--------
+## Remarks
 
 The specified function is called by the current thread of the current process.
 

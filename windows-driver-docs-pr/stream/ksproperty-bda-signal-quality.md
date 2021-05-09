@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data suc
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -79,8 +78,7 @@ In the case of digital signals, this percentage can be computed by examining pac
 
 -   20 percent indicates that the demodulator is aware that a properly modulated signal exists but cannot produce enough data to be useful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

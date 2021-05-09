@@ -40,8 +40,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If neither *MethodName* nor *CodeAddress* is specified and you are issuing this command from an AMLI
 

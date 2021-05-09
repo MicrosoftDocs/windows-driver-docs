@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS** status indicates to NDIS and overlying drivers that the current virtual machine (VM) queue parameters have changed on the network adapter.
 
-Remarks
--------
+## Remarks
 
 The miniport driver must issue an **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS** status indication when the current VM queue parameters have changed on the network adapter. The VM queue parameters could change when one of the following conditions is true:
 
@@ -45,8 +44,7 @@ When the miniport driver initializes the **Header** member of this structure, it
 
 Overlying drivers can use the **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS** status indication to determine the current VM queue parameters on the network adapter. Alternatively, these drivers can also issue object identifier (OID) query requests of [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md) to obtain these parameters at any time.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

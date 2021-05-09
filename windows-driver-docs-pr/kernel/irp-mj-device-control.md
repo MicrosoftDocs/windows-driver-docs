@@ -14,8 +14,7 @@ Every driver whose device objects belong to a particular device type (see [Speci
 
 Higher-level drivers usually pass these requests on to an underlying device driver. Each device driver in a driver stack is assumed to support this request, along with a set of device type-specific, public or private IOCTLs. For more information about IOCTLs for specific device types, see device type-specific documentation in the Microsoft Windows Driver Kit (WDK).
 
-When Sent
----------
+## When Sent
 
 Any time following the successful completion of a create request.
 
@@ -31,8 +30,7 @@ Other input parameters depend on the I/O control code's value. For more informat
 
 Output parameters depend on the I/O control code's value. For more information, see [Buffer Descriptions for I/O Control Codes](./buffer-descriptions-for-i-o-control-codes.md).
 
-Operation
----------
+## Operation
 
 A driver receives this I/O control code because user-mode thread has called the Microsoft Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function, or a higher-level kernel-mode driver has set up the request. Possibly, a user-mode driver has called **DeviceIoControl**, passing in a driver-defined (also called *private*) I/O control code, to request device- or driver-specific support from a closely coupled, kernel-mode device driver.
 
@@ -42,8 +40,7 @@ On receipt of a device I/O control request, a device driver examines the I/O con
 
 For general information about I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) requests, see [Using I/O Control Codes](./introduction-to-i-o-control-codes.md). See also [Device Type-Specific I/O Requests](./device-type-specific-i-o-requests.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

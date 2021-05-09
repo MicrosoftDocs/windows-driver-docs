@@ -31,14 +31,12 @@ The IPI\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001DB. It indicates tha
 |4| Reserved. |
 
 
-## Cause
------
+## ## Cause
 
 A processor has been stuck in an IPI loop for more than the allowed time.
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

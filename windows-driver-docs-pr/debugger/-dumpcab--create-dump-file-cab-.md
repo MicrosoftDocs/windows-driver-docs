@@ -59,8 +59,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 
 For more details on crash dumps, see [Crash Dump Files](crash-dump-files.md).
 
-Remarks
--------
+## Remarks
 
 This command can only be used if you are already debugging a dump file.
 

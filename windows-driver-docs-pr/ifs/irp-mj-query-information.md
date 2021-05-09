@@ -178,8 +178,7 @@ Type of file information to be queried. This member can be one of the following 
 <a href="" id="irpsp--parameters-queryfile-length"></a>*IrpSp-&gt;Parameters.QueryFile.Length*
 Length, in bytes, of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
 
-Remarks
--------
+## Remarks
 
 The IRP\_MJ\_QUERY\_INFORMATION operation is always buffered by the I/O manager. The *Irp-&gt;AssociatedIrp.SystemBuffer* that is used to return the requested file or directory information is allocated by the I/O manager from non-paged pool memory. As a result, the *Irp-&gt;AssociatedIrp.SystemBuffer* returned by the operating system will always be a valid address for the length specified in *IrpSp-&gt;Parameters.QueryFile.Length*.
 

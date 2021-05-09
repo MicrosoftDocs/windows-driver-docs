@@ -57,13 +57,11 @@ The INCONSISTENT\_IRP bug check has a value of 0x0000002A. This indicates that a
 
  
 
-Cause
------
+## Cause
 
 An IRP was discovered to be in an inconsistent state. Usually this means some field of the IRP was inconsistent with the remaining state of the IRP. An example would be an IRP that was being completed, but was still marked as being queued to a driver's device queue.
 
-Remarks
--------
+## Remarks
 
 This bug check code is not currently being used in the system, but exists for debugging purposes.
 

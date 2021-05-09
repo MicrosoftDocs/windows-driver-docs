@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 This required **Name** element identifies the section of the WSD Scan Service schema that the client wants data for when it calls [**GetScannerElementsRequest**](getscannerelementsrequest.md) or [**GetJobElementsRequest**](getjobelementsrequest.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Name>
@@ -26,13 +25,11 @@ Usage
 </wscn:Name>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required.
 
@@ -130,8 +127,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The Qname must identify the top-level element within the WSD Scan Service schema that the client wants information for. The client must specify both the schema namespace and element name.
 

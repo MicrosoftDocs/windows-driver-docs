@@ -32,15 +32,13 @@ Valid Values: WIA\_PROP\_RANGE (from zero through the maximum number of pages th
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 If the WIA\_DPS\_SCAN\_AHEAD\_PAGES property is zero, scan ahead is disabled, and the scanner will not scan ahead any pages.
 
 If the scanner performs data transfers on the buffered scan-ahead item, the scanner will retrieve the buffered pages. WIA properties cannot be changed during a scan-ahead operation. WIA\_DPS\_SCAN\_AHEAD\_PAGES is optional.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

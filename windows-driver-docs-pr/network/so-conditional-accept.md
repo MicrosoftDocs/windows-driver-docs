@@ -127,8 +127,7 @@ Some transport protocols might not support conditional accept mode on listening 
 
 For more information about conditionally accepting incoming connections, see [Listening for and Accepting Incoming Connections](./listening-for-and-accepting-incoming-connections.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

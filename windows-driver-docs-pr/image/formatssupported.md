@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FormatsSupported** element is a collection of elements that list the document file formats that the scanner supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FormatsSupported>
@@ -26,8 +25,7 @@ Usage
 </wscn:FormatsSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Each [**FormatValue**](formatvalue.md) element specifies a file format that describes both the file type and compression type.
 

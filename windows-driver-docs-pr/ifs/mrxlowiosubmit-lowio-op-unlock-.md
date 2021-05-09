@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector remove a single lock on a file object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxLowIOSubmit[LOWIO_OP_UNLOCK];
@@ -31,14 +30,12 @@ NTSTATUS MRxLowIOSubmit[LOWIO_OP_UNLOCK](
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\]* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -91,8 +88,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS calls *MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\]* in response to receiving an [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md) request with a minor code of IRP\_MN\_UNLOCK\_SINGLE.
 
@@ -114,8 +110,7 @@ If the *MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\]* routine can take a long time to com
 
 The **LowIoContext.ResourceThreadId** member of RX\_CONTEXT can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

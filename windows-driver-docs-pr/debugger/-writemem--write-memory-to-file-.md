@@ -55,8 +55,7 @@ Specifies the memory range to be written to the file. For syntax details, see [A
 
  
 
-Remarks
--------
+## Remarks
 
 The memory is copied literally to the file. It is not parsed in any way.
 

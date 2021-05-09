@@ -60,15 +60,13 @@ The property value (operation data) is a structure of type KSDS3D\_BUFFER\_ALL t
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_ALL property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The KSDS3D\_BUFFER\_ALL structure is similar to the DS3DBUFFER structure, which is described in the Microsoft Windows SDK documentation.
 
 DirectSound uses this property to implement the **IDirectSound3DBuffer::GetAllParameters** and **IDirectSound3DBuffer::SetAllParameters** methods, which are described in the Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

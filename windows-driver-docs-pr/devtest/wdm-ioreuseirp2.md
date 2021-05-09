@@ -19,8 +19,7 @@ The **IoReuseIrp2** rule specifies that a driver should use [**IoReuseIrp**](/wi
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoReuseIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreuseirp)

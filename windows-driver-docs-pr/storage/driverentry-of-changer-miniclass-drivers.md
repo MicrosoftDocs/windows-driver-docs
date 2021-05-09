@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Microsoft Windows 2000, changer miniclass drivers do not have a **DriverEntry** routine, but in Windows XP and later operating systems a miniclass driver must have a **DriverEntry** routine with the following characteristics.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS DriverEntry(
@@ -29,8 +28,7 @@ NTSTATUS DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Argument1* \[in\]  
 Pointer to operating system-specific information.
@@ -38,20 +36,17 @@ Pointer to operating system-specific information.
 *Argument2* \[in\]  
 Pointer to operating system-specific information.
 
-Return value
-------------
+## Return value
 
 The miniclass driver's **DriverEntry** routine must return the value returned by the [**ChangerClassInitialize**](/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassinitialize) routine.
 
-Remarks
--------
+## Remarks
 
 Parameters **Argument1** and **Argument2** point to operating system-specific information. A Miniclass driver should *not* attempt to interpret these parameters. Instead, it should pass these parameters to the **ChangerClassInitialize** routine.
 
 **ChangerClassInitialize** performs most of the initialization required by the miniclass driver. The principal task of the minidriver in its **DriverEntry** routine is to load the entry points to its command processing routines into an [**MCD\_INIT\_DATA**](/windows-hardware/drivers/ddi/mcd/ns-mcd-_mcd_init_data) structure and pass the address of this structure to the **ChangerClassInitialize** routine.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

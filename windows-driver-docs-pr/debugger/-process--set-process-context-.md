@@ -70,8 +70,7 @@ Specifies the address of the process that you want. (More precisely, this parame
 
 For more information about the process context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 Typically, when you are doing kernel debugging, the only visible user-mode address space is the one that is associated with the current process.
 

@@ -19,8 +19,7 @@ This rule verifies that the driver does not call either of these deprecated rout
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror)
 [**StorPortValidateRange**](/windows-hardware/drivers/ddi/storport/nf-storport-storportvalidaterange)

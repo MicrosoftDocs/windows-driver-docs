@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxZeroExtend* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector truncate the contents of a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxZeroExtend;
@@ -31,14 +30,12 @@ NTSTATUS MRxZeroExtend(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxZeroExtend* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as the following:
 
@@ -63,8 +60,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxZeroExtend* is called as part of cleanup operations if the file object was not marked for deletion and the file object is not a paging file. *MRxZeroExtend* is called to ensure that the portion between the valid data length and the file size is zero-extended. After calling *MRxZeroExtend*, RDBSS sets the **Header.ValidDataLength.QuadPart** member of the structure of an FCB structure equal to the **Header.FileSize.QuadPart** member of the FCB structure.
 
@@ -72,8 +68,7 @@ A call to *MRxZeroExtend* will be followed by a call to [**MRxCleanupFobx**](/pr
 
 RDBSS ignores the return value from *MRxZeroExtend*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

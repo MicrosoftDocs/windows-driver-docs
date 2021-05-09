@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The **HS\_MAC\_ADDRESS** structure contains the host Media Access Control (MAC) address.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_MAC_ADDRESS {
@@ -24,14 +23,12 @@ typedef struct _HS_MAC_ADDRESS {
 } HS_MAC_ADDRESS, *PHS_MAC_ADDRESS;
 ```
 
-Members
--------
+## Members
 
 **ucHSMacAddress**  
 The MAC address.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

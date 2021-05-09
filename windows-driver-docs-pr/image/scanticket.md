@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanTicket** element defines all of the description and processing parameters of the currently identified scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanTicket>
@@ -26,8 +25,7 @@ Usage
 </wscn:ScanTicket>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -78,8 +76,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ScanTicket** element contains the values for the scanner settings for the current job that the client selected. The client constructs the **ScanTicket** by using only those values that the scanner supports. The client obtains such values by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation and asking for the scanner's [**DefaultScanTicket**](defaultscanticket.md) element.
 

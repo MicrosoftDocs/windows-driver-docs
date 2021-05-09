@@ -24,13 +24,11 @@ The PnP manager sends this request to determine certain relationships among devi
 
 0x07
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to gather information about devices with a relationship to the specified device.
 
@@ -72,8 +70,7 @@ typedef struct _DEVICE_RELATIONS {
 } DEVICE_RELATIONS, *PDEVICE_RELATIONS;
 ```
 
-Operation
----------
+## Operation
 
 If a driver returns relations in response to this **IRP\_MN\_QUERY\_DEVICE\_RELATIONS**, the driver allocates a **DEVICE\_RELATIONS** structure from paged memory that contains a count and the appropriate number of device object pointers. The PnP manager frees the structure when it is no longer needed. If a driver replaces a **DEVICE\_RELATIONS** structure that another driver allocated, the driver must free the previous structure.
 
@@ -207,8 +204,7 @@ Drivers can query a device stack for **TargetDeviceRelation**. See [Handling IRP
 
 If a driver sent this IRP to get the PDO to report in response to an **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** for **TargetDeviceRelation** that the driver received, then the driver reports the PDO and frees the returned relations structure when the IRP completes. If a driver initiated this IRP for another reason, the driver frees the relations structure when the IRP completes and dereferences the PDO when it is no longer needed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

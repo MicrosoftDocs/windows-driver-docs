@@ -44,15 +44,13 @@ The KSCATEGORY_QUALITY [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_QUALITY to indicate to the operating system that the devices support the KSCATEGORY_QUALITY functional category.
 
 For more information, see [Quality Management](../stream/quality-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

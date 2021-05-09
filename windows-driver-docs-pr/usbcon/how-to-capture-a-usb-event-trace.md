@@ -59,8 +59,7 @@ The preceding capture session generates an etl file, named usbtrace.etl. The tra
 
 The file contains event traces from the USB 3.0 and USB 2.0 driver stacks. If you want to reduce the event traces to just one USB driver stack, remove the other driver stack from your next trace session. You can do so by modifying the command sequence shown in step 2 to remove the "logman update" lines corresponding to the driver stack you want to remove from the trace session.
 
-Remarks
--------
+## Remarks
 
 **Capture filters for USB 3.0 driver stack events**
 

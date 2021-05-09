@@ -19,8 +19,7 @@ The **RemoveLockCheck** rule verifies that calls to [**IoAcquireRemoveLock**](/w
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExInterlockedInsertHeadList**](/previous-versions/ff545397(v=vs.85))
 [**ExInterlockedInsertTailList**](/previous-versions/ff545402(v=vs.85))
@@ -60,7 +58,6 @@ Applies to
 [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock)
 [**IoReleaseRemoveLockAndWait**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelockandwait)
 [**RemoveHeadList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)
-See also
---------
+## See also
 
 [Using Remove Locks](../kernel/using-remove-locks.md)

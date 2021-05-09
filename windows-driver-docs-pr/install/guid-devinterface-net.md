@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_NET [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers of network devices register instances of this device interface class to notify other network components and applications of the presence of network devices.
 
@@ -53,8 +52,7 @@ NDIS registers instances of this interface class for NDIS miniport drivers.
 
 For information about network devices and drivers, see [Network Design Guide](../network/index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

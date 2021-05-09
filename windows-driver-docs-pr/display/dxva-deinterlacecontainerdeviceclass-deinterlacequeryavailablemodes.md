@@ -18,8 +18,7 @@ ms.custom: seodec18
 
 The sample *DeinterlaceQueryAvailableModes* function queries for available deinterlacing or frame-rate conversion modes for a particular input video format.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 HRESULT DeinterlaceQueryAvailableModes(
@@ -29,8 +28,7 @@ HRESULT DeinterlaceQueryAvailableModes(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpVideoDescription* \[in\]
 Supplies a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure that contains a description of the video stream for the deinterlacing or frame-rate conversion to be performed.
@@ -41,13 +39,11 @@ Receives a pointer to the number of deinterlace or frame-rate conversion modes t
 *pGuidsDeinterlaceModes* \[in, out\]
 Receives a pointer to an array of GUIDs that represent the deinterlace or frame-rate conversion modes that are supported by the driver.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The *lpVideoDescription* parameter is passed to the driver so that the driver can support the resolution and format of the source video. For example, the driver might be able to perform a three-field adaptive deinterlace of 480i content, but it might only be able to bob 1080i content. For more information, see [Video Content for Deinterlace and Frame-Rate Conversion](./video-content-for-deinterlace-and-frame-rate-conversion.md).
 

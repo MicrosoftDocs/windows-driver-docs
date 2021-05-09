@@ -16,8 +16,7 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) structure.
 
-Remarks
--------
+## Remarks
 
 CDMA-based miniport drivers can automatically initiate packet-attach service if there is no resource allocation/release is possible and can send the event notification to the MB Service.
 
@@ -47,8 +46,7 @@ Miniport drivers should return *set* results according to the following rules:
 
 -   Never return transient states for the *set* request. Only the final states **WwanPacketServiceStateAttached** or **WwanPacketServiceStateDetached** must be returned after the successful completion of the packet service operation with WWAN\_STATUS\_SUCCESS
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

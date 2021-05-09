@@ -64,8 +64,7 @@ Causes the display to be a much longer and more detailed list of the driver imag
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about drivers and their memory use, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 An explanation of this command's display is given in the following table:
 

@@ -52,8 +52,7 @@ The **KSEVENT\_CAMERACONTROL\_FOCUS** event is triggered when a camera focus ope
 
  
 
-Remarks
--------
+## Remarks
 
 For more information, see [**KSPROPERTY\_CAMERACONTROL\_S\_EX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s_ex).
 

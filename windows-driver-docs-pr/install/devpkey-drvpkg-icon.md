@@ -46,8 +46,7 @@ The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that W
 
  
 
-Remarks
--------
+## Remarks
 
 Each icon in the list is specified by a path of an icon file (\*.ico) or a reference to an icon resource in an executable file.
 
@@ -90,8 +89,7 @@ DeviceIcon,,,,"SomeResource.dll,-2","SomeIcon.icon"
 ...
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

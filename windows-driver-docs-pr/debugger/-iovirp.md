@@ -48,8 +48,7 @@ Specifies the address of an IRP tracked by the Driver Verifier. If *IRP* is 0 or
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

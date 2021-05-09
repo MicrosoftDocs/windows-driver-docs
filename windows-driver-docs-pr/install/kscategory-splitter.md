@@ -44,8 +44,7 @@ The KSCATEGORY_SPLITTER [device interface class](./overview-of-device-interface-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio adapter devices register an instance of KSCATEGORY_SPLITTER to indicate to the operating system that the devices support the KSCATEGORY_SPLITTER functional category.
 
@@ -53,8 +52,7 @@ The KSCATEGORY_SPLITTER functional category is one of the [**KSPROPERTY_TOPOLOGY
 
 For general information about splitters, see [AVStream Splitters](../stream/avstream-splitters.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

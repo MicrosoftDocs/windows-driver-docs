@@ -55,8 +55,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 *Object* must be a filter or a pin. For a pin, a single queue is displayed. For a filter, multiple queues are displayed.
 

@@ -32,8 +32,7 @@ The **.break** token behaves like the **break** keyword in C.
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The **.break** token can be used within any [**.for**](-for.md), [**.while**](-while.md), or [**.do**](-do.md) loop.
 

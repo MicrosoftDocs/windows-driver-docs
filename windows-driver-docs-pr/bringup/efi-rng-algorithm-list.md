@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 This data structure contains a list of the supported Random Number Generation (RNG) algorithms.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 typedef struct _EFI_RNG_ALGORITHM_LIST {
@@ -29,8 +28,7 @@ typedef struct _EFI_RNG_ALGORITHM_LIST {
 } EFI_RNG_ALGORITHM_LIST, *PEFI_RNG_ALGORITHM_LIST;
 ```
 
-Members
--------
+## Members
 
 **AlgorithmsCount**  
 The number of algorithms in the list.
@@ -38,8 +36,7 @@ The number of algorithms in the list.
 **Algorithms**  
 Pointer to a list of RNG algorithms. Each algorithm is `sizeof(EFI_GUID)` bytes long. It is the caller's responsibility to free this memory by using EFI\_BOOT\_SERVICES-&gt;FreePool().
 
-Remarks
--------
+## Remarks
 
 An implementation may support one or more ways to provide RNG values. The list of supported RNG algorithms is represented in this structure.
 

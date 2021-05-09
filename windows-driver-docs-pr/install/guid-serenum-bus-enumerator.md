@@ -19,13 +19,11 @@ ms.date: 10/17/2018
 
 GUID_SERENUM_BUS_ENUMERATOR is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for Plug and Play (PnP) serial ports. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR**](guid-devinterface-serenum-bus-enumerator.md) class identifier for new instances of this class.
 
-Remarks
--------
+## Remarks
 
 The WDK includes the serial enumerator sample ([*serenum*](/previous-versions/ff546505(v=vs.85))). The serial enumerator uses GUID_SERENUM_BUS_ENUMERATOR to register instances of this device interface class. The serenum sample is included in the *src\\kernel* directory of the WDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

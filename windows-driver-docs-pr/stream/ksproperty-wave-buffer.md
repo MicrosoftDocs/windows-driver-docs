@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_BUFFER property describes a wave device's buffer.
 
 The property value (operation data) is a KSWAVE\_BUFFER structure that describes the looping attributes of the buffer, buffer size (in bytes), and starting address of the buffer.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

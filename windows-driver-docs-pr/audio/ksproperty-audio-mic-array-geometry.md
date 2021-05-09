@@ -63,8 +63,7 @@ If the buffer size of the request is set to zero, the property request will retu
 
 If the buffer size of the request is set to any buffer size that is too small to accommodate the returned structure, the request returns a status of STATUS\_BUFFER\_TOO\_SMALL. The request will then use the return status block to indicate the size of the [**KSAUDIO\_MIC\_ARRAY\_GEOMETRY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mic_array_geometry) structure that is supported by the pin.
 
-Remarks
--------
+## Remarks
 
 The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property only supports KSPROPERTY\_TYPE\_GET requests. In order for the client to determine the correct size of buffer necessary to accommodate the entire geometry structure, it must first make the request with a zero buffer size. The client can then use the value returned in the status block to set the buffer size correctly and then make another property request with the correctly sized buffer.
 
@@ -74,8 +73,7 @@ For more information about how to process a microphone array in Windows, refer t
 
 [Microphone Array Support in Windows (white paper)](/previous-versions/windows/hardware/design/dn613960(v=vs.85))
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

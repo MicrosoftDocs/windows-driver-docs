@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
@@ -30,8 +29,7 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 } D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE"></span><span id="d3dkmt_multiplane_overlay_ycbcr_flag_nominal_range"></span><span id="D3DKMT_MULTIPLANE_OVERLAY_YCBCR_FLAG_NOMINAL_RANGE"></span>**D3DKMT\_MULTIPLANE\_OVERLAY\_YCbCr\_FLAG\_NOMINAL\_RANGE**
 
@@ -39,8 +37,7 @@ Constants
 
 <span id="D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC"></span><span id="d3dkmt_multiplane_overlay_ycbcr_flag_xvycc"></span><span id="D3DKMT_MULTIPLANE_OVERLAY_YCBCR_FLAG_XVYCC"></span>**D3DKMT\_MULTIPLANE\_OVERLAY\_YCbCr\_FLAG\_xvYCC**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

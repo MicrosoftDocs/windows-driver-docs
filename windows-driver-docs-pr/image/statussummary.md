@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **StatusSummary** element contains a summary of the scan device's current status.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:StatusSummary>
@@ -26,8 +25,7 @@ Usage
 </wscn:StatusSummary>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must include the **StatusSummary** element when it sends a [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md) event element to the client. The scanner's current state and reasons for why it is in this state are specified in the [**ScannerState**](scannerstate.md) and [**ScannerStateReasons**](scannerstatereasons.md) elements, respectively.
 

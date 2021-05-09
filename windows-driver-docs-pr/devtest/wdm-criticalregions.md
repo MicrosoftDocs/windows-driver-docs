@@ -26,8 +26,7 @@ The WDK documentation of **KeEnterCriticalRegion** and **KeLeaveCriticalRegion**
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00040003)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -70,8 +69,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**ExEnterCriticalRegionAndAcquireResourceExclusive**](/previous-versions/windows/hardware/drivers/dn308550(v=vs.85))
 [**ExReleaseResourceAndLeaveCriticalRegion**](/previous-versions/windows/hardware/drivers/dn308551(v=vs.85))

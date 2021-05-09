@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **CancelJobRequest** operation enables a client to cancel a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CancelJobRequest>
@@ -26,13 +25,11 @@ Usage
 </wscn:CancelJobRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -60,8 +57,7 @@ None
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 [**JobId**](jobid.md)
 

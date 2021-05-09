@@ -49,8 +49,7 @@ The **!timer** extension displays a detailed listing of all system timer use.
 
 For information about timer objects, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The **!timer** extension displays the timer tree, which stores all timer objects in the system.
 

@@ -42,13 +42,11 @@ Specifies that the address is a physical address.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The output the [**!xhci\_trb**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
-Examples
---------
+## Examples
 
 In the following example, **0x844d7c00** is the virtual address of a TRB. The **1** is the count, which specifies how many consecutive TRBs to display.
 

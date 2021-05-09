@@ -54,13 +54,11 @@ The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the 
 
  
 
-Remarks
--------
+## Remarks
 
 The property returns the extent as a LONGLONG, with the same resolution format as the presentation time.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

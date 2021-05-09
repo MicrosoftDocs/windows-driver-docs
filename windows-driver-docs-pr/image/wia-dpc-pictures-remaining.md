@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If the WIA\_DPC\_PICTURES\_REMAINING property settings change and the changes affect the size of the images that the camera device produces, the WIA minidriver should update the number of remaining pictures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

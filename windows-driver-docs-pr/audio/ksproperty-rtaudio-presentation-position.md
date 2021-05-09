@@ -58,8 +58,7 @@ The property value is a [**KSAUDIO\_PRESENTATION\_POSITION**](/windows-hardware/
 
 A KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 The OS may periodically get this property from the driver to retrieve recent presentation position information from the driver in order to allow upper layers to synchronize video or other activity with the audio stream.
 
@@ -67,8 +66,7 @@ The value returned in the u64PositionInBlocks member of [**KSAUDIO\_PRESENTATION
 
 This does not mean that KSPROPERTY\_RTAUDIO\_PACKETCOUNT and KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION, if called simultaneously, would return values that refer to the same sample. KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns information about the samples transferred from the WaveRT buffer to the hardware, while KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns information about samples presented at the output of the system. These are two different pieces of information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

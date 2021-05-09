@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmMinimumSize** element specifies the smallest size original that an end user can scan with the film scanning option.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmMinimumSize>
@@ -26,8 +25,7 @@ Usage
 </wscn:FilmMinimumSize>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The [**Width**](width.md) child element specifies the minimum size of media that the film scanning input source supports in the fast scan direction. The [**Height**](height.md) child element specifies the minimum size of media that the film scanning input source supports in the slow scan direction.
 

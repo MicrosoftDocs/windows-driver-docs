@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The DEVPROP_TYPE_STRING_INDIRECT identifier represents the base-data-type identifier for a NULL-terminated Unicode string that contains an indirect string reference.
 
-Remarks
--------
+## Remarks
 
 An indirect string reference describes a string resource that contains the actual string. The indirect string reference can appear in one of the following formats:
 
@@ -74,8 +73,7 @@ Custom and standard string-type PnP static-text is localized when you set the pr
 
 Note: PE images can use either resource table type (STRINGTABLE resources, or message-table resources).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

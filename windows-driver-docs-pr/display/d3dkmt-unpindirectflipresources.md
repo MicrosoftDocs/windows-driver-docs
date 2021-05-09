@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_UNPINDIRECTFLIPRESOURCES {
@@ -30,8 +29,7 @@ typedef struct _D3DKMT_UNPINDIRECTFLIPRESOURCES {
 } D3DKMT_UNPINDIRECTFLIPRESOURCES;
 ```
 
-Members
--------
+## Members
 
 **hDevice**
 
@@ -39,8 +37,7 @@ Members
 
 **pResourceList**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

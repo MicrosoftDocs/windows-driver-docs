@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 Typically, a device uses the WIA\_DPC\_EXPOSURE\_TIME property only when the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE\_MANUAL or EXPOSUREMODE\_SHUTTER\_PRIORITY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -24,8 +24,7 @@ A **CopyINF** directive causes specified INF files to be copied to the target sy
 CopyINF=filename1.inf[,filename2.inf]...
 ```
 
-Remarks
--------
+## Remarks
 
 System support for the **CopyINF** directive is available in Microsoft Windows XP and later versions of Windows.
 
@@ -56,8 +55,7 @@ Starting with Windows 10, version 1511, under certain circumstances (for exampl
 
 For more information about how to copy INF files, see [Copying INFs](copying-inf-files.md).
 
-Examples
---------
+## Examples
 
 ```inf
 [MyMfDevice.NTx86]

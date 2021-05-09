@@ -39,8 +39,7 @@ The hardware ID can be fairly generic, such as PCI\\VEN_1234&DEV_1234, or very s
 
 Only one PnP hardware ID can be specified per HardwareId directive. To specify multiple hardware IDs, use multiple HardwareId directives, one per line.
 
-Remarks
--------
+## Remarks
 
 During a [hardware-first installation](hardware-first-installation.md), the user installs a hardware device before installing the drivers for that device. In this case, the Found New Hardware Wizard prompts the user for the distribution medium.
 

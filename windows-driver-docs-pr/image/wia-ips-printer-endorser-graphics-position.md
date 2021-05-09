@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with **WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_POSITION**.
 
@@ -98,8 +97,7 @@ The WIA\_PRINTER\_ENDORSER\_ GRAPHICS\_DEVICE\_DEFAULT value is the required def
 
 This property is required and valid for all Imprinter/Endorser items that report a value of nonzero (True) for [**WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS**](wia-ips-printer-endorser-graphics.md). The property is invalid otherwise.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

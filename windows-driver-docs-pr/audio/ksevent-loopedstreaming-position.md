@@ -53,8 +53,7 @@ The event value type (operation data) is a LOOPEDSTREAMING\_POSITION\_EVENT\_DAT
 
 This event is intended only for internal use by the system.
 
-Remarks
--------
+## Remarks
 
 In Windows Server 2003, Windows XP, Windows 2000, Windows Me, and Windows 98, the WavePci and WaveCyclic port drivers contain their own built-in handlers for KSEVENT\_LOOPEDSTREAMING\_POSITION events. WavePci and WaveCyclic miniport drivers should not implement handlers for these events.
 
@@ -64,8 +63,7 @@ A looped buffer is a data buffer for an audio stream of type [**KSINTERFACE\_STA
 
 For more information about looped buffers, buffer positions, and play and record cursors, see [Audio Position Property](./audio-position-property.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

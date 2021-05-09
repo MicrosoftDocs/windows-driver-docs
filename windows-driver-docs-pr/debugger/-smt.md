@@ -42,8 +42,7 @@ The **!smt** extension displays a summary of the simultaneous multithreaded proc
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

@@ -64,8 +64,7 @@ Specifies the symbol options to be changed. *Flags* must be the sum of the bit f
 
 For a list and description of each symbol option, its bit flag, and other methods of setting and clearing these options, see [Setting Symbol Options](symbol-options.md).
 
-Remarks
--------
+## Remarks
 
 Without any arguments, **.symopt** displays the current symbol options.
 

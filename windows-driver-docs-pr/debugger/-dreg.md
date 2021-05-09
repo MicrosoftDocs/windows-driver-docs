@@ -76,8 +76,7 @@ Specifies the name of the registry value to be displayed. If an asterisk (\*) is
 
 For information about the registry, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!dreg** extension can be used to display the registry during user-mode debugging.
 

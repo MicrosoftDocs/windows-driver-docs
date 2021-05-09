@@ -52,8 +52,7 @@ The DEVPKEY_DeviceInterface_ClassGuid device property represents the GUID that i
 
  
 
-Remarks
--------
+## Remarks
 
 The format of {*device-interface-class*} key value is "{*nnnnnnnn*-*nnnn*-*nnnn*-*nnnn*-*nnnnnnnnnnnn*}", where each *n* is a hexadecimal digit.
 
@@ -63,8 +62,7 @@ Windows Server 2003, Windows XP, and Windows 2000 support this property, but do 
 
 For information about how to install and accessing device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

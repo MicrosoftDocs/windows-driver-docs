@@ -44,8 +44,7 @@ The GUID_DEVICE_SYS_BUTTON [device interface class](./overview-of-device-interfa
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers an instance of this device interface class to notify the operating system and applications of the presence of system power button devices. I8042prt, the system-supplied driver for PS/2-style keyboard and mouse devices, also registers an instance of this class for a keyboard that supports a system power button.
 
@@ -53,8 +52,7 @@ For information about supplying WDM [function drivers](../kernel/function-driver
 
 For information about PS/2-style keyboard and mouse devices, see [Non-HIDClass Keyboard and Mouse Devices](../hid/keyboard-and-mouse-class-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

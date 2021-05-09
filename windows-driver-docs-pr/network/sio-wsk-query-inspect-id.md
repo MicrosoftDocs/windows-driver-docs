@@ -69,8 +69,7 @@ If a WSK application calls the **WskControlSocket** function to query the inspec
 
 For more information about conditionally accepting connections, see [Listening for and Accepting Incoming Connections](./listening-for-and-accepting-incoming-connections.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

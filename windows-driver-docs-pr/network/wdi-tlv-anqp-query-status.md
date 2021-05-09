@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_ANQP\_QUERY\_STATUS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -61,8 +61,7 @@ The command **.dml\_start c:\\MyFavoriteCommands.txt** will display the file as 
 
 ![screen shot of dml file output](images/dmlstart02.png)
 
-Remarks
--------
+## Remarks
 
 For information about DML tags that can be used in DML files, see dml.doc in the installation folder for Debugging Tools for Windows.
 

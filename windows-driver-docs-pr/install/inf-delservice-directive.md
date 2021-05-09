@@ -52,8 +52,7 @@ Optionally specifies one of **System**, **Security**, or **Application**. This c
 <a href="" id="eventname"></a>*EventName*  
 Optionally specifies the name for the event log. This can be omitted if it is identical to the specified *ServiceName* entry.
 
-Remarks
--------
+## Remarks
 
 This directive is rarely used. The only services that can be safely deleted are those that were used only in earlier versions of the operating system, and are therefore never used for the currently installed version.
 

@@ -19,8 +19,7 @@ This rule verifies that waits or data allocation are not performed inside **Star
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortStallExecution**](/windows-hardware/drivers/ddi/storport/nf-storport-storportstallexecution)
 [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85))

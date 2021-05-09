@@ -48,8 +48,7 @@ Specifies the number of the breakpoint to be enabled. An asterisk (\*) indicates
 
  
 
-Remarks
--------
+## Remarks
 
 This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 

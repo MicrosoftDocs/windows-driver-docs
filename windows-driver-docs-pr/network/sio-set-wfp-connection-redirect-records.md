@@ -83,8 +83,7 @@ For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel
 
 The client can get the status of the IRP by checking *Irp-&gt;IoStatus.Status*. *Irp-&gt;IoStatus.Status* will be set to **STATUS\_SUCCESS** if the request is successful. Otherwise, it will contain **STATUS\_INTEGER\_OVERFLOW**, or **STATUS\_ACCESS\_DENIED** if the call is not successful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

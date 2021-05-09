@@ -60,15 +60,13 @@ The property value (operation data) is a structure of type KSAUDIO\_PREFERRED\_S
 
 A KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The [SysAudio system driver](./kernel-mode-wdm-audio-components.md#sysaudio-system-driver) uses this property to inform a wave playback, wave record, MIDI, or mixer device when it is selected to be the new preferred device, or when a previously selected preferred device is deselected.
 
 For information about preferred devices, see [**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

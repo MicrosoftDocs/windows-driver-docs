@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WDFVERIFY** macro tests a logical expression and, if the expression evaluates to **FALSE**, breaks into the kernel debugger.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID WDFVERIFY(
@@ -23,19 +22,16 @@ VOID WDFVERIFY(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *exp*   
 A logical expression that WDFVERIFY tests.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The code for the **WDFVERIFY** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration.
 
@@ -43,8 +39,7 @@ The **WDFVERIFY** code breaks into a kernel debugger only if the **VerifyOn** va
 
 For more information about debugging your driver, see [Debugging a KMDF Driver](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
-Examples
---------
+## Examples
 
 The following code example breaks into the debugger if an attempt to reuse a request object fails.
 
@@ -53,8 +48,7 @@ status = WdfRequestReuse(Request, &params);
 WDFVERIFY(NT_SUCCESS(status));
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

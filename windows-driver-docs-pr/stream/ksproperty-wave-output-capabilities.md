@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave
 
 The property value (operation data) is a KSWAVE\_OUTPUT\_CAPABILITIES structure that describes the output capabilities of a wave device, including the maximum number of audio channels, the range of bits per sample, the range of sampling frequency, the total and active number of connections.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

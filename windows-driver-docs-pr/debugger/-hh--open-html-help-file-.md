@@ -58,8 +58,7 @@ You cannot use this command when you are performing [remote debugging through Re
 
 For more information about the Help documentation, see [Using the Help File](using-the-help-documentation.md).
 
-Remarks
--------
+## Remarks
 
 The **.hh** command opens the Debugging Tools for Windows documentation (Debugger.chm). If you specify *Text*, the debugger opens the **Index** pane in the documentation and searches for *Text* as a keyword in the index. If you do not specify *Text*, the debugger opens the **Contents** pane of the documentation.
 

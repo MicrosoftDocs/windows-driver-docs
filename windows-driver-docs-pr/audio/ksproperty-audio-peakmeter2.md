@@ -78,8 +78,7 @@ A KSPROPERTY\_AUDIO\_PEAKMETER2 property request returns STATUS\_SUCCESS to indi
 </table>
 
 
-Remarks
--------
+## Remarks
 
 The KSPROPERTY\_AUDIO\_PEAKMETER2 property is almost identical to the [**KSPROPERTY\_AUDIO\_PEAKMETER**](ksproperty-audio-peakmeter.md) property. The KSPROPERTY\_AUDIO\_PEAKMETER2 property was introduced with Windows 8 to provide improved hardware metering of a pin topology. The legacy KSPROPERTY\_AUDIO\_PEAKMETER property is deprecated and should no longer be used.
 
@@ -93,8 +92,7 @@ A KS audio filter handles this property request synchronously. If the request su
 
 The system sends an IOCTL\_KS\_PROPERTY request for the KSPROPERTY\_AUDIO\_PEAKMETER2 property at IRQL PASSIVE\_LEVEL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

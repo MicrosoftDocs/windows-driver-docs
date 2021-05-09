@@ -78,8 +78,7 @@ Parameter 1 identifies the type of violation.
 
  
 
-Remarks
--------
+## Remarks
 
 The MUP maintains context information on a per-file object basis for all file objects it handles.
 

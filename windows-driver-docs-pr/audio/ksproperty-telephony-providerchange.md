@@ -57,15 +57,13 @@ The property value is of type [**KSTELEPHONY\_PROVIDERCHANGE**](/windows-hardwar
 
 A **KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE** property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The audio stack uses the [**KSTELEPHONY\_PROVIDERCHANGE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstelephony_providerchange) property to indicate the start and the end of SRVCC to the audio driver. This property communicates the call type (LTE packet-switched, WLAN packet-switched, or circuit-switched) and the provider change operation (begin, end, or cancel) to driver. The call type is ignored when the provider operation is for ending the SRVCC.
 
 When the provider change operation is **TELEPHONY\_PROVIDERCHANGEOP\_BEGIN**, the driver updates that provider’s call state to **TELEPHONY\_CALLSTATE\_PROVIDERTRANSITION**. When the provider change operation is **TELEPHONY\_PROVIDERCHANGEOP\_END**, the driver updates that provider’s call state to **TELEPHONY\_CALLSTATE\_ENABLED**. During SRVCC, the driver must continue to use the associated [**KSNODETYPE\_TELEPHONY\_BIDI**](ksnodetype-telephony-bidi.md) endpoint, and it does not change the jack states of this endpoint. When the provider change operation is **TELEPHONY\_PROVIDERCHANGEOP\_CANCEL**, SRVCC is being canceled, and the driver should revert back to a pre-SRVCC call.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

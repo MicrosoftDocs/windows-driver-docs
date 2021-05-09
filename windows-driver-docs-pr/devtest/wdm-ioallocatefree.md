@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The **IoAllocateFree** rule specifies that a driver should use [**IoFreeIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp) only on IRPs that were previously allocated with [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp).
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -43,8 +42,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExInterlockedInsertHeadList**](/previous-versions/ff545397(v=vs.85))
 [**ExInterlockedInsertTailList**](/previous-versions/ff545402(v=vs.85))

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The KSJACK\_DESCRIPTION structure specifies the physical attributes of an audio jack.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct {
@@ -34,8 +33,7 @@ typedef struct {
 } KSJACK_DESCRIPTION, *PKSJACK_DESCRIPTION;
 ```
 
-Members
--------
+## Members
 
 **ChannelMapping**  
 Specifies the mapping of the audio channels to the corresponding speaker positions. **ChannelMapping** is a bitmask of the KSAUDIO\_SPEAKER\_*XXX* flags (for example, SPEAKER\_FRONT\_LEFT | SPEAKER\_FRONT\_RIGHT), which are defined in the header file Ksmedia.h. **ChannelMapping** should be nonzero only for analog rendering pins. For capture pins or for digital rendering pins, set this member to 0.
@@ -267,15 +265,13 @@ Specifies the type of port represented by the jack. The value of this member is 
 **IsConnected**  
 Indicates whether there is an external device connected to the jack. If the audio controller supports jack detection on this pin, the value of **IsConnected** should accurately indicate whether the jack is occupied by a plug at any given time. This value should always be set to **TRUE** for devices that do not support jack detection.
 
-Remarks
--------
+## Remarks
 
 This structure is used by the [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md) property in Windows Vista and later. It describes an audio jack that is part of a connection between an endpoint device and a hardware device in an audio adapter. When a user needs to plug an endpoint device into a jack or unplug it from a jack, an audio application can use the descriptive information in the structure to help the user to find the jack.
 
 When an audio device does not expose a physically accessible jack, the audio device uses the **eGeoLocNotApplicable** value to indicate to Windows and Windows-based apps that there is no physical jack. As such, there is no geometric location either. For example, the audio device can be integrated into the motherboard, without any accessible jacks.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

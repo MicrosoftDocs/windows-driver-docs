@@ -63,8 +63,7 @@ Kdexts.dll
 
 For information about kernel stacks, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The **!stacks** extension gives a brief summary of the state of every thread. You can use this extension instead of the [**!process**](-process.md) extension to get a quick overview of the system, especially when debugging multithread issues such as resource conflicts or deadlocks.
 

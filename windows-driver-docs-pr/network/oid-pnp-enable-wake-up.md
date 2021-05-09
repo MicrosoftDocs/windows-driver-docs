@@ -40,8 +40,7 @@ The miniport driver should clear the wake-up capabilities that NDIS set with OID
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) or [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

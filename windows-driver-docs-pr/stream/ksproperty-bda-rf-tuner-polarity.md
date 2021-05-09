@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY to control the polarity setting
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -63,8 +62,7 @@ The property value specifies the polarity to set for the transmitted signal.
 
 For some transmissions, particularly satellite transmissions, the signal may be polarized. This property informs the tuner node about the polarization of the transmitted signal. The Polarization enumerated type contains values that specify the polarity of the signal.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

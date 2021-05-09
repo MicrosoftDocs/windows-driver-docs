@@ -64,8 +64,7 @@ Causes the display of each function to include only the return address; argument
 
 For information about thread scheduling and the READY state, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The output from this extension is similar to that of [**!thread**](-thread.md), except that only ready threads are displayed, and they are sorted in order of decreasing priority.
 

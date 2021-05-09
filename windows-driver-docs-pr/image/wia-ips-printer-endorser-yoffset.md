@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver can update the valid range of values and the current value (if it becomes out of range) to the closest available position when the [**WIA\_IPS\_PRINTER\_ENDORSER**](wia-ips-printer-endorser.md) property is changed to a new specific input source (in other words, from flatbed to feeder).
 
 This property is optional for all Imprinter/Endorser data source items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

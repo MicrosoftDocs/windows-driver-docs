@@ -20,8 +20,7 @@ ms.custom: seodec18
 
 The sample **ProcAmpControlQueryRange** function allows the *VMR* to query the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcAmpControlQueryRange(
@@ -31,8 +30,7 @@ HRESULT ProcAmpControlQueryRange(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *VideoProperty* \[in\]
 Identifies the ProcAmp control property for which the driver should return information. The following are possible values for this parameter.
@@ -76,13 +74,11 @@ Supplies a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva
 *lpPropRange* \[out\]
 Receives a pointer to a [**DXVA\_VideoPropertyRange**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videopropertyrange) structure that specifies the range, step size, and default value for the ProcAmp.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code (for example, E\_NOTIMPL). Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 For each ProcAmp property, the VMR queries the driver to determine the minimum, maximum, step size, and default value. If the hardware does not support a particular ProcAmp control property, the driver should return E\_NOTIMPL from the **ProcAmpControlQueryRange** function.
 
@@ -177,8 +173,7 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
 }
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

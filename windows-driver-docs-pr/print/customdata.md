@@ -35,8 +35,7 @@ This resource may not be available in some languages and countries.
 </customData>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -124,13 +123,11 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The custom data that you capture must be provided as a **CDATA** type.
 
-Examples
---------
+## Examples
 
 The following code example shows how you can use the **customData** element to obtain your custom data.
 

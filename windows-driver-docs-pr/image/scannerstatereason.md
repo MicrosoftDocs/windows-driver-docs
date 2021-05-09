@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ScannerStateReason** element specifies one piece of information about why the scanner is in its current state.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerStateReason>
@@ -26,13 +25,11 @@ Usage
 </wscn:ScannerStateReason>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -121,8 +118,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Some of these reasons describe scanner state that the scanner cannot enter according to the currently defined WSD Scan Service operation set. For example, the scanner can be **Paused** even though there is no "*PauseScanner*" operation. Such states are present because some other protocol or console action can cause the scanner to enter that state.
 

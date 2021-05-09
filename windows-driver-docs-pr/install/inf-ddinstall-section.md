@@ -202,8 +202,7 @@ This directive indicates that the caller should be prompted to reboot the system
 
 For more information, see [**INF Reboot Directive**](inf-reboot-directive.md).
 
-Remarks
--------
+## Remarks
 
 Throughout the Windows Driver Kit (WDK) documentation, the term *DDInstall* is used to refer to an *install-section-name*, with or without platform extensions. Therefore, "*DDInstall* section" means "a named section within an INF, having the format \[*install-section-name*\] or \[<em>install-section-name</em>**.nt***xxx*\]". When you create names for *DDInstall* sections, you should include a device-specific prefix, such as **\[WDMPNPB003_Device\]** or **\[GPR400.Install.NT\]**.
 
@@ -239,8 +238,7 @@ Depending on the [device setup class](./overview-of-device-setup-classes.md) tha
 -   [Installation Requirements for Network Components](../network/installation-requirements-for-network-adapters.md)
 -   [Specifying WDF Directives in INF Files](../wdf/specifying-wdf-directives-in-inf-files.md)
 
-Examples
---------
+## Examples
 
 This example shows the expansion of the *DDInstall* sections, **Ser_Inst** and **Inp_Inst**. These sections are referenced in the example for the [**INF *Models* section**](inf-models-section.md).
 

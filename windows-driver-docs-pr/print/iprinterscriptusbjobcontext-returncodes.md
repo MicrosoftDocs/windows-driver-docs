@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Returns an object that can supply return code values that an IHV has defined for their JavaScript functions.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ReturnCodes(
@@ -28,24 +27,20 @@ HRESULT ReturnCodes(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *ppReturnCodes* \[out, retval\]  
 The return code values for the IHV JavaScript functions. The return code values are represented by the [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md) interface.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 The IHV must develop an interface that implements a property bag associated with the current print job. The IHV JavaScript functions can then use this property bag to store properties or data that is specific to the print job that is currently being processed. This property bag exists for the duration of the current job only.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -52,8 +52,7 @@ The DEVPKEY_DeviceClass_Name device property represents the friendly name of a [
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_DeviceClass_Name is set by an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF ClassInstall32 section**](./inf-classinstall32-section.md) that installs the class. To set the friendly name for a class, use an **AddReg** directive to set the **(Default)** registry entry value for the class.
 
@@ -61,8 +60,7 @@ You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupa
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Name property key. For information about how to access the friendly name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](./accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

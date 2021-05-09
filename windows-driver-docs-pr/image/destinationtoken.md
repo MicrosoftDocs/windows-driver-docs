@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **DestinationToken** element contains a device-specific string that the scanner assigns to the current client destination.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DestinationToken>
@@ -26,13 +25,11 @@ Usage
 </wscn:DestinationToken>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -63,8 +60,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client includes the **DestinationToken** token when it sends a [**CreateScanJobRequest**](createscanjobrequest.md) operation element after the [**ScanAvailableEvent**](scanavailableevent.md) event. The WSD Scan Service uses the specified string to check that the correct client is sending the scan request.
 

@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **MaximumResolution** property enables an ASP Web page to determine a printer's maximum resolution.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_MaximumResolution(
@@ -31,14 +30,12 @@ HRESULT get_MaximumResolution(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied location to receive a numeric value representing the printer's maximum resolution, in dots per inch.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -81,8 +78,7 @@ objPrinter.Open strPrinter
 MaxRes = objPrinter.MaximumResolution
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -92,8 +92,7 @@ A KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property request returns STATU
 
  
 
-Remarks
--------
+## Remarks
 
 The base address is the virtual memory address at the start of the cyclic buffer. The client can directly access the buffer at this address. The buffer is contiguous in virtual memory. The driver determines whether the buffer is contiguous in physical memory.
 
@@ -105,8 +104,7 @@ If a KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property request succeeds, 
 
 Closing the pin automatically frees the buffer that was allocated through this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

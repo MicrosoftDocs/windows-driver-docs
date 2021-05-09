@@ -19,8 +19,7 @@ The **EvtIoResumeGetParam** rule specifies that [**WdfRequestGetParameters**](/w
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestGetParameters**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetparameters)

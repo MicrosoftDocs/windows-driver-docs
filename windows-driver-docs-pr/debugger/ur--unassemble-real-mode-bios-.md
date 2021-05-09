@@ -61,8 +61,7 @@ Specifies the beginning of the memory range to disassemble. Eight instructions o
 
 For more information about how to debug BIOS code, see [Debugging BIOS Code](debugging-bios-code.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify *Range* or *Address*, the disassembly begins at the current address and extends eight instructions on an x86-based processor.
 

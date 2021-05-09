@@ -44,15 +44,13 @@ The GUID_DEVICE_PROCESSOR [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers an instance of this device interface class to notify the operating system and applications of the presence of processor devices.
 
 For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

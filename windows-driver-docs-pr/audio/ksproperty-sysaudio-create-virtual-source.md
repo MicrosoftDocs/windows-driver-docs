@@ -62,8 +62,7 @@ The property value (operation data) is a ULONG variable containing the virtual s
 
 A KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to create a mixer-line virtual source such as a volume or mute control.
 
@@ -75,8 +74,7 @@ The user controls the volume levels of various audio sources through the SndVol3
 
 SysAudio intercepts volume changes made to these devices and applies them to its virtual sources. For example, if a software MIDI synthesizer that converts a MIDI file to wave data is connected to one of the virtual audio device's wave-rendering pins, SysAudio applies midiOut*Xxx* volume changes to the pin (instead of **waveOut**_Xxx_ volume changes). Similarly, if the [Redbook system driver](./kernel-mode-wdm-audio-components.md#redbook-system-driver), which converts digital audio from a CD player to wave data, is connected to one of the virtual audio device's wave-rendering pins, SysAudio applies AUXCAPS\_CDAUDIO volume changes to the pin. For more information about the AUXCAPS\_CDAUDIO structure, see the Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

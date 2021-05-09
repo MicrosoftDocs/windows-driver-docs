@@ -56,8 +56,7 @@ Specifies the physical device object (PDO) for the LUN.
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 A LUN is typically referred to as a *device*. Thus, this extension displays information about a device on an adapter.
 

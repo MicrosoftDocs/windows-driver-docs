@@ -89,8 +89,7 @@ This category includes the following platform-defined data fields.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

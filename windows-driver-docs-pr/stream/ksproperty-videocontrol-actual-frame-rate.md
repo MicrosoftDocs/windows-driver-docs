@@ -57,8 +57,7 @@ The KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE property retrieves the frame r
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE\_S structure that specifies actual frame rate information at the time of query, such as the dimensions (width and height) of the image, current actual frame rate, and current maximum available frame rate.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

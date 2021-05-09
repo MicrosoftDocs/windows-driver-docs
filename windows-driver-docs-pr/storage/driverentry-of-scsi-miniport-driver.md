@@ -22,8 +22,7 @@ Each miniport driver must have a routine explicitly named **DriverEntry** in ord
 
  
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 ULONG DriverEntry(
@@ -32,8 +31,7 @@ ULONG DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Argument1* \[in\]  
 Is a pointer with which the miniport driver must call **ScsiPortInitialize**.
@@ -41,13 +39,11 @@ Is a pointer with which the miniport driver must call **ScsiPortInitialize**.
 *Argument2* \[in\]  
 Is a pointer with which the miniport driver must call **ScsiPortInitialize**.
 
-Return value
-------------
+## Return value
 
 **DriverEntry** returns the value returned by **ScsiPortInitialize**. If it calls **ScsiPortInitialize** more than once, **DriverEntry** returns the lowest value returned by **ScsiPortInitialize**.
 
-Remarks
--------
+## Remarks
 
 A miniport driver's **DriverEntry** routine allocates memory on the stack and initializes a HW\_INITIALIZATION\_DATA structure with zeros. **DriverEntry** must zero all members in the HW\_INITIALIZATION\_DATA structure before initializing it with values appropriate to the HBA(s) the miniport driver supports.
 

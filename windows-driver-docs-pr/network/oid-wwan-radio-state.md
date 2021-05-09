@@ -16,8 +16,7 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Callers requesting to set the MB device's radio power state provide an [**NDIS\_WWAN\_SET\_RADIO\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_radio_state) structure to the miniport driver with the appropriate information.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [MB Radio State](mb-radio-state.md).
 
@@ -80,8 +79,7 @@ With a multi-executor supported modem, there are power benefits to configuring r
 
 As an example, if the modem has two executors and one of the executors' radio is off while the other is on, then the modem may keep the RF front end powered on to maintain registration on the executor whose radio is on but does not need to do scanning/pinging/location updates or other cellular services for the executor that is turned off. If both radios are turned off, the modem can turn off its RF front end and bring the overall hardware to a lower power state. The implementation specifics are left to each IHV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

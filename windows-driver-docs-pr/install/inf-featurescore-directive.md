@@ -38,8 +38,7 @@ This value specifies the ranking score for the driver based on its feature conte
 
 A lower *featurescore* value specifies a better feature score rank, where 0x00 is the best feature score rank. If the **FeatureScore** directive is not specified, Windows uses a default feature score rank of 0xFF for the driver.
 
-Remarks
--------
+## Remarks
 
 If Windows detects multiple drivers for the same device, it must first determine which driver is the best driver to install. To accomplish this, Windows assigns each driver an overall rank based on several factors, or scores, such as the following:
 

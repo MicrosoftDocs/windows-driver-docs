@@ -66,8 +66,7 @@ Shows the current owner of the NBL.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 In the following example, NBL tracking has been enabled to extract a handle for an NBL from the NBL log. For more information about NBL tracking and the NBL log, see [**!ndiskd.nbllog**](-ndiskd-nbllog.md).
 

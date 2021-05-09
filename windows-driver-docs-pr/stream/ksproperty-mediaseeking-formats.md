@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats 
 
  
 
-Remarks
--------
+## Remarks
 
 This property can return a multiple item property. The requester is responsible for supplying a buffer of adequate size.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

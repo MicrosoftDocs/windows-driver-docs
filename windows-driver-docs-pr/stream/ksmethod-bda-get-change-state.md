@@ -30,8 +30,7 @@ KSMETHOD with **Flags** member set to KSMETHOD\_TYPE\_READ.
 
 Value from the BDA\_CHANGE\_STATE enumerated type that identifies the current change state for the filter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

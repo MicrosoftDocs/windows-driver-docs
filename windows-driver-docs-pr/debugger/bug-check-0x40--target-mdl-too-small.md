@@ -26,13 +26,11 @@ The TARGET\_MDL\_TOO\_SMALL bug check has a value of 0x00000040. This indicates 
 
 None
 
-Cause
------
+## Cause
 
 This is a driver bug. A driver has called the **IoBuildPartialMdl** function and passed it an MDL to map part of a source MDL, but the target MDL is not large enough to map the entire range of addresses requested.
 
-Resolution
-----------
+## Resolution
 
 The source and target MDLs, as well as the address range length to be mapped, are the first, second, and fourth arguments to the **IoBuildPartialMdl** function. Therefore, doing a stack trace on this particular function might help during the debugging process. Ensure that your code is correctly calculating the necessary size for the target MDL for the address range length that you are passing to this function.
 

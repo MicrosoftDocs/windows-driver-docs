@@ -26,13 +26,11 @@ The NMI\_HARDWARE\_FAILURE bug check has a value of 0x00000080. This bug check i
 
 None
 
-Cause
------
+## Cause
 
 A variety of hardware malfunctions can cause the NMI\_HARDWARE\_FAILURE bug check. The exact cause is difficult to determine.
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Remove any hardware or drivers that have been recently installed. Make sure that all memory modules are of the same type.
 

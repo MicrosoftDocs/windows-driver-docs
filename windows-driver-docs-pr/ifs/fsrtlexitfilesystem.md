@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The **FsRtlExitFileSystem** macro re-enables the delivery of normal kernel-mode APCs that were disabled by a preceding call to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID FsRtlExitFileSystem(
@@ -28,19 +27,16 @@ VOID FsRtlExitFileSystem(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 **   
 None
 
-Return value
-------------
+## Return value
 
 This function does not return a value.
 
-Remarks
--------
+## Remarks
 
 Every file system driver entry point routine must call [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) immediately before acquiring a resource required in performing a file I/O request and call **FsRtlExitFileSystem** immediately afterward. This ensures that the routine cannot be suspended while running and thus block other file I/O requests.
 
@@ -52,8 +48,7 @@ The only time when a file system filter driver should disable normal kernel APCs
 
 It is not necessary to disable normal kernel APCs before calling [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85)) because this routine calls [**KeRaiseIrqlToDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel), which disables both normal and special kernel APCs. It is also not necessary to do so before calling [**ExAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) or [**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md), because these routines disable normal kernel APCs.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

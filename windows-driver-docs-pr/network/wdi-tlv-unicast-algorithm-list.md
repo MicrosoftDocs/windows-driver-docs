@@ -44,8 +44,7 @@ WDI\_ALGO\_PAIRS consists of the following elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

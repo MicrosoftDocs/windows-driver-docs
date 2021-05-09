@@ -14,15 +14,13 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_IP\_ADDRESS\_STATE notification to 
 
 This notification uses the [**NDIS\_WWAN\_IP\_ADDRESS\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ip_address_state) structure.
 
-Remarks
--------
+## Remarks
 
 This notification must be sent on the NDIS port associated with the additional PDP context session.
 
 Miniport drivers should send this notification after an additional PDP context has been successfully activated and the IP configuration has been acquired for that context. If the device indicates unsolicited IP configuration changes post-context activation, then miniport drivers should send an unsolicited indication with this notification with the updated IP configuration.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

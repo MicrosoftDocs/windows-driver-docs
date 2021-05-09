@@ -135,13 +135,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Parameter 1 indicates the specific cause of the BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP bugcheck.
 
-Remarks
--------
+## Remarks
 
 NDIS has detected and recovered from a serious problem in another network driver. Although the system was not halted, this problem may later cause connectivity problems or a fatal bugcheck.
 

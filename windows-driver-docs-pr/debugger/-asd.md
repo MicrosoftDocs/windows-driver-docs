@@ -55,8 +55,7 @@ Determines the number of tokens to display.
 
 You can use the [**!dumpfa**](-dumpfa.md) extension to debug the [**!analyze**](-analyze.md) extension.
 
-Remarks
--------
+## Remarks
 
 The **!asd** extension is useful only when you are debugging the [**!analyze**](-analyze.md) extension.
 

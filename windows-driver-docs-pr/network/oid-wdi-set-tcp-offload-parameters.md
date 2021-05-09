@@ -37,8 +37,7 @@ The lower edge driver (LE) must use the contents of [**WDI\_TLV\_TCP\_SET\_OFFLO
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

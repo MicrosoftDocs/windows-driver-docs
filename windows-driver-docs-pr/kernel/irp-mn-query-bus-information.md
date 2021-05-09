@@ -18,13 +18,11 @@ Bus drivers should handle this request for their child devices (PDOs). Function 
 
 0x15
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP when a device is enumerated.
 
@@ -49,8 +47,7 @@ On success, a bus driver sets **Irp-&gt;IoStatus.Information** to a pointer to a
 
 Function and filter drivers do not handle this IRP.
 
-Operation
----------
+## Operation
 
 The information returned in response to this IRP is available to the function and filter drivers for devices on the bus. Function and filter drivers can call [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to request a **DevicePropertyBusTypeGuid**, **DevicePropertyLegacyBusType**, or **DevicePropertyBusNumber**. Function and filter drivers that support devices on more than one bus can use this information to determine on which bus a particular device resides.
 
@@ -87,8 +84,7 @@ Reserved for system use. Drivers must not send this IRP.
 
 Call [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to get information about the bus to which a device is attached.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

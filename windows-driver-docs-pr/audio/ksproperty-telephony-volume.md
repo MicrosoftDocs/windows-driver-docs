@@ -57,13 +57,11 @@ The property value is of type LONG and specifies the cellular call volume.
 
 A **KSPROPERTY\_TELEPHONY\_VOLUME** property request returns the cellular call volume.
 
-Remarks
--------
+## Remarks
 
 For cellular calls, only this volume is applicable to cellular data, and the endpoint volume has no effect. This property must be settable even when there is no active phone call in the system. Basic support for this property should return the minimum volume, the maximum volume, and the volume ranges.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

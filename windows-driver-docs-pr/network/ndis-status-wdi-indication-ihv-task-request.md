@@ -28,8 +28,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST to reques
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

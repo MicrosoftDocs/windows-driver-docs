@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_USB_DEVICE [device interface class](./overview-of-device-i
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied USB hub driver registers instances of GUID_DEVINTERFACE_USB_DEVICE to notify the system and applications of the presence of USB devices that are attached to a USB hub.
 
@@ -53,8 +52,7 @@ The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application]
 
 You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

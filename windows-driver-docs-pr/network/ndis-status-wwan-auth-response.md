@@ -16,8 +16,7 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This NDIS status notification uses the [NDIS\_WWAN\_AUTH\_RESPONSE](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

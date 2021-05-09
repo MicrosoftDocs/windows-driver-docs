@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The **IoBuildFsdIrpSignalEventInCompletion** rule specifies that the driver should call [**KeSetEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetevent) in the completion routine when the **Irp-&gt;PendingReturned** flag is set and the completion routine is processing a locally created asynchronous IRP.
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -43,8 +42,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine)
 [**IoSetCompletionRoutineEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)

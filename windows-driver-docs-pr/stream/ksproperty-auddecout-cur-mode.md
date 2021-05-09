@@ -56,8 +56,7 @@ The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output
 
 The property value (operation data) is a DWORD that represents the current output mode of the audio decoder.
 
-Remarks
--------
+## Remarks
 
 The property value can be one of the following mode constants defined in the header file *ksmedia.h*:
 
@@ -76,8 +75,7 @@ We recommend that you specify a default value for the KSPROPERTY\_AUDDECOUT\_CUR
 
 For more information, see [Audio Miniport Drivers](../audio/audio-miniport-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,13 +56,11 @@ The KSPROPERTY\_RTC\_READER property retrieves the relative time counter (RTC) f
 
 The property value (operation data) is a TIMECODE\_SAMPLE structure that specifies the relative time counter of the current tape position.
 
-Remarks
--------
+## Remarks
 
 The **TimecodeSamp** member of the KSPROPERTY\_TIMECODE\_S structure describes the relative time counter for the current tape position.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

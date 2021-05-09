@@ -52,8 +52,7 @@ The address of a power thermal zone that you want to display. If this parameter 
 
 To view the system's power capabilities, use the [**!pocaps**](-pocaps.md) extension command. To view the system's power policy, use the [**!popolicy**](-popolicy.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 To stop execution at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 

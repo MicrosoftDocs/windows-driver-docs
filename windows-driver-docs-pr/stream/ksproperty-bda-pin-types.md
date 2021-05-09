@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_PIN\_TYPES to retrieve a list of pin types.
 
  
 
-Remarks
--------
+## Remarks
 
 In a template topology each pin type can only occur once, but it can occur multiple times in an actual topology. This list of pin types is an array of KSPIN\_DESCRIPTOR\_EX structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -60,8 +60,7 @@ The property value (operation data) is a WCHAR array that contains the device ID
 
 A KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The target for this set-only property request is a GFX filter that is configured for use as either a capture- or render/capture-GFX filter.
 
@@ -69,8 +68,7 @@ To determine the size of the buffer needed to hold the property value, see [Basi
 
 For additional information about device IDs, see [Device Identification Strings](../install/device-identification-strings.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

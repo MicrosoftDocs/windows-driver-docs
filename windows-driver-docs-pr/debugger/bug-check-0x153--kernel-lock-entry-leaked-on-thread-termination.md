@@ -61,8 +61,7 @@ The KERNEL\_LOCK\_ENTRY\_LEAKED\_ON\_THREAD\_TERMINATION bug check has a value o
 
  
 
-Cause
------
+## Cause
 
 This is typically caused when a thread never released a lock it previously acquired (e.g. by relying on another thread to release it), or if the thread did not supply a consistent set of flags to lock package APIs.
 

@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_RATE property works in conjunction with [**KSPROPERTY\_S
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAM\_RATE should be implemented if a pin allows rate changes, or the interface between topologically-related pins is different and results in a different time stamp format being used.
 
@@ -69,8 +68,7 @@ This property should also be used to translate the interface and time units spec
 
 If the pin also produces a clock, a rate change must not change the slope of the physical time, because any client using the clock for rate matching is expecting the slope to be as if the underlying hardware were running at a nominal 1.0 rate. This means that a pin that cannot ensure that the physical clock slope remains consistent without significant drift cannot accept rate adjustment requests.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

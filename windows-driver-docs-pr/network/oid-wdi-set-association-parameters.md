@@ -35,8 +35,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

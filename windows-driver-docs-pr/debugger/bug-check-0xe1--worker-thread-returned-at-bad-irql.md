@@ -57,13 +57,11 @@ The WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL bug check has a value of 0x000000E1.
 
  
 
-Cause
------
+## Cause
 
 A worker thread completed and returned with IRQL &gt;= DISPATCH\_LEVEL.
 
-Resolution
-----------
+## Resolution
 
 To find the driver that caused the error, use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) debugger command:
 

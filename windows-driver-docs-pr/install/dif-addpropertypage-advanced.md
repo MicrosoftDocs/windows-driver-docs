@@ -107,8 +107,7 @@ For more information about how to provide device property pages, see [Providing 
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -16,13 +16,11 @@ Function, filter, and bus drivers can handle this request.
 
 0x14
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP after the drivers for a device return success from the [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md) request sent when a device is first started. This IRP is not sent on a start after a stop for resource rebalancing. The PnP manager also sends this IRP when a driver for the device calls [**IoInvalidateDeviceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate).
 
@@ -50,8 +48,7 @@ If a function or filter driver does not handle this IRP, it calls [**IoSkipCurre
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then by each next lower driver in the stack.
 
@@ -63,8 +60,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

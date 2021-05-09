@@ -60,8 +60,7 @@ The property value (operation data) is a ULONG variable into which SysAudio writ
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 SysAudio enumerates a unique virtual audio device for each enabled hardware device in the system that performs wave rendering. In each instance, the virtual audio device is composed of the hardware device, the [KMixer system driver](./kernel-mode-wdm-audio-components.md#kmixer-system-driver), and other audio components. A DirectSound application program selects a particular hardware device by selecting the virtual audio device that incorporates the hardware device.
 
@@ -69,8 +68,7 @@ For example, if three audio cards are plugged into the system bus and each conta
 
 SysAudio maintains its list of virtual audio devices in the system registry under the category KSCATEGORY\_AUDIO\_DEVICE. This category is reserved exclusively for use by SysAudio. DirectSound does not directly access information about the virtual audio devices from the system registry. Instead, it queries SysAudio for the properties of the virtual audio devices.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

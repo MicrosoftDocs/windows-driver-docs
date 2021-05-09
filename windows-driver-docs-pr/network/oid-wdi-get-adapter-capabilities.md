@@ -141,8 +141,7 @@ If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](./wdi-
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

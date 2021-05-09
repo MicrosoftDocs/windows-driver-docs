@@ -56,13 +56,11 @@ The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
 
 The property value (operation data) is a KS\_AM\_ExactRateChange structure.
 
-Remarks
--------
+## Remarks
 
 This property always returns STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

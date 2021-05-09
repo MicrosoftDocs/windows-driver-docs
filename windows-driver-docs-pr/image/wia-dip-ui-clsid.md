@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The UI CLSID value that is contained in the WIA\_DIP\_UI\_CLSID property is obtained from the driver's INF file. If no UI CLSID is specified, the WIA service supplies a default value. This property is used only internally by the WIA service when UI is being displayed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

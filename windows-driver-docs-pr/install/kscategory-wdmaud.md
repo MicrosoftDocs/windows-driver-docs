@@ -44,8 +44,7 @@ The KSCATEGORY_WDMAUD [device interface class](./overview-of-device-interface-cl
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

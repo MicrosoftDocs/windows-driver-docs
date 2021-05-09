@@ -320,8 +320,7 @@ If set to the letter **A**, directs the PCMCIA bus driver to turn on audio enabl
 
 Each **MfCardConfig** entry supplies information about a single function of the multifunction device. When a set of **LogConfig** directives each reference a discrete *log-config-section* in the INF's [***DDInstall*.LogConfigOverride**](inf-ddinstall-logconfigoverride-section.md) section, each *log-config-section* must have its entries, including **MfCardConfig** entries, listed in the same order.
 
-Remarks
--------
+## Remarks
 
 A **LogConfig** directive can be specified under any per-manufacturer, per-models [**INF *DDInstall* section**](inf-ddinstall-section.md) or [**INF *DDInstall*.LogConfigOverride section**](inf-ddinstall-logconfigoverride-section.md).
 
@@ -351,8 +350,7 @@ During installation, one and only one resource from each entry in a given *log-c
 
 For example, to ensure two I/O port ranges for a particular device, two **IOConfig=** entries must be specified in the *log-config-section* for that device. On the other hand, if a device requires no IRQ, its INF can omit the **IRQConfig** entry from the *log-config-sections*.
 
-Examples
---------
+## Examples
 
 This example shows some valid **PcCardConfig** entries for a PCMCIA device.
 

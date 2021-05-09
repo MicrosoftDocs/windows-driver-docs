@@ -18,8 +18,7 @@ Miniport drivers must process set requests asynchronously, initially returning N
 
 Miniport drivers should return NDIS\_STATUS\_ADAPTER\_NOT\_OPEN if the device service session is not open.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

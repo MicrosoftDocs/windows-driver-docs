@@ -44,15 +44,13 @@ The KSCATEGORY_INTERFACETRANSFORM [device interface class](./overview-of-device-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_INTERFACETRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_INTERFACETRANSFORM functional category.
 
 The KSCATEGORY_INTERFACETRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md) functional categories.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

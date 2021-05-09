@@ -19,13 +19,11 @@ ms.date: 10/17/2018
 
 GUID_CLASS_KEYBOARD is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for keyboard devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md) class identifier for new instances of this class.
 
-Remarks
--------
+## Remarks
 
 The HID samples that are provided in the WDK include the keyboard class driver. The keyboard class driver uses GUID_CLASS_KEYBOARD to register instances of this device interface class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -59,8 +59,7 @@ For a description of the *TargetOSVersion* decoration, see the following **Remar
 
  
 
-Remarks
--------
+## Remarks
 
 Any INF file that installs one or more devices must have a **Manufacturer** section. An IHV/OEM-supplied INF file typically specifies only a single entry in this section. If multiple entries are specified, each entry must be on a separate line of the INF.
 
@@ -233,8 +232,7 @@ In this case, Windows looks for an [**INF *Models* section**](inf-models-section
 
 If you want an INF to explicitly exclude a specific operating system version, product type, or suite, create an empty [**INF *Models* section**](inf-models-section.md). For example, an empty section named **\[FooMfg.NTx86.6.0\]** prohibits installation on x86-based operating system versions 6.0 and higher.
 
-Examples
---------
+## Examples
 
 This example shows a **Manufacturer** section typical to an INF for a single IHV.
 

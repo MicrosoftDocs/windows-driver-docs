@@ -32,8 +32,7 @@ Address of a **usbport!\_TRANSACTION\_TRANSLATOR** structure. To get the transac
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_TRANSACTION\_TRANSLATOR** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

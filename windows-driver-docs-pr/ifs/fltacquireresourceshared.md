@@ -20,8 +20,7 @@ ms.localizationpriority: medium
 
 The **FltAcquireResourceShared** routine acquires the given resource for shared access by the calling thread.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID FltAcquireResourceShared(
@@ -29,19 +28,16 @@ VOID FltAcquireResourceShared(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Resource* \[in, out\]  
 Pointer to an opaque ERESOURCE structure. This structure must be allocated by the caller from nonpaged pool and initialized by calling [**ExInitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite) or [**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
 
@@ -71,8 +67,7 @@ To initialize a resource for reuse, call [**ExReinitializeResourceLite**](/windo
 
 For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](../kernel/introduction-to-eresource-routines.md) in the Kernel Architecture Design Guide.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

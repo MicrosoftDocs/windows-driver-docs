@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_VERSION** structure contains the minimum and maximum hotspot host versions supported by the plugin.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_PLUGIN_VERSION {
@@ -25,8 +24,7 @@ typedef struct _HS_PLUGIN_VERSION {
 } HS_PLUGIN_VERSION, *PHS_PLUGIN_VERSION;
 ```
 
-Members
--------
+## Members
 
 **dwVerMin**  
 The minimum hotspot host version supported by the plugin.
@@ -34,8 +32,7 @@ The minimum hotspot host version supported by the plugin.
 **dwVerMax**  
 The maximum hotspot host version supported by the plugin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

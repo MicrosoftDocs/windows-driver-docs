@@ -19,8 +19,7 @@ The **MiniportPause\_Return** rule specifies that the [*MiniportPause*](/windows
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

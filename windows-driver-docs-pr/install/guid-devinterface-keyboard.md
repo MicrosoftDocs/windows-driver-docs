@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_KEYBOARD [device interface class](./overview-of-device-int
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for keyboard devices register instances of this device interface class to notify the system and applications of the presence of keyboard devices.
 
@@ -57,8 +56,7 @@ The WDK includes sample code for the system-supplied keyboard class driver. The 
 
 For information about the device interface class for mouse devices, see [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

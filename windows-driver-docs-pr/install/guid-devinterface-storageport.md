@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_STORAGEPORT [device interface class](./overview-of-device-
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied drivers for storage port devices register instances of GUID_DEVINTERFACE_STORAGEPORT to notify the operating system and applications of the presence of storage device adapters.
 
@@ -53,8 +52,7 @@ For more information about storage drivers, see [Storage Drivers](../storage/sto
 
 [**StoragePortClassGuid**](storageportclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_STORAGEPORT device interface class. For new instances of this class, use GUID_DEVINTERFACE_STORAGEPORT instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

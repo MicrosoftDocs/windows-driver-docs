@@ -56,8 +56,7 @@ The DEVPKEY_Device_Security device property represents a security descriptor str
 
  
 
-Remarks
--------
+## Remarks
 
 You can set the value of DEVPKEY_Device_Security by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF *DDInstall*.HW section**](./inf-ddinstall-hw-section.md) of the INF file that installs a device.
 
@@ -65,8 +64,7 @@ You can retrieve the value of DEVPKEY_Device_Security by calling [**SetupDiGetDe
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Security property key. Instead, you can use the corresponding SPDRP_SECURITY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

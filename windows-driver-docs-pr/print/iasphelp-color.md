@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **Color** property enables an ASP Web page to determine if a printer supports color printing.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_Color(
@@ -31,14 +30,12 @@ HRESULT get_Color(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive **TRUE** if the printer supports color printing, or **FALSE** if it does not.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -81,8 +78,7 @@ objPrinter.Open strPrinter
 HasColor = objPrinter.Color
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

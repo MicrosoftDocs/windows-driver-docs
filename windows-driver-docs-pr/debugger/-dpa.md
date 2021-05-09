@@ -70,8 +70,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 Pool instrumentation must be enabled in Win32k.sys in order for this extension to work.
 

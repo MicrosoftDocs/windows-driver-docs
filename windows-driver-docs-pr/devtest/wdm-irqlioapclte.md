@@ -30,8 +30,7 @@ The **IrqlIoApcLte** rule specifies that the driver calls the following I/O mana
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020009), [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -56,15 +55,13 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoDeleteDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice)
 [**IoGetInitialStack**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetinitialstack)
 [**IoRaiseHardError**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioraiseharderror)
 [**IoRaiseInformationalHardError**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioraiseinformationalharderror)
-See also
---------
+## See also
 
 [**Managing Hardware Priorities**](../kernel/managing-hardware-priorities.md)
 [**Preventing Errors and Deadlocks While Using Spin Locks**](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

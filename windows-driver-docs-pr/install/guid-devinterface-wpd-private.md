@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_WPD_PRIVATE [device interface class](./overview-of-device-
 
  
 
-Remarks
--------
+## Remarks
 
 GUID_DEVINTERFACE_WPD_PRIVATE should be used only for private devices that are used by custom WPD applications. Generic WPD drivers and clients of WPD devices should not use instances of this device interface class.
 
@@ -53,8 +52,7 @@ Custom applications can enumerate private devices that register this interface b
 
 For information about the device interface class for generic WPD devices, see [**GUID_DEVINTERFACE_WPD**](guid-devinterface-wpd.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

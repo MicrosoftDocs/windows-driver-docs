@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_AddLink WMI method configures the WMI provider to inform the WMI client of fabric link events.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_AddLink(
@@ -28,24 +27,20 @@ void SM_AddLink(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a SM\_AddLink\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_EventControl WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

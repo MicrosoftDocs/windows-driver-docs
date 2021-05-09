@@ -73,8 +73,7 @@ This message is sent to a Remote NDIS device from a host when it needs to query 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

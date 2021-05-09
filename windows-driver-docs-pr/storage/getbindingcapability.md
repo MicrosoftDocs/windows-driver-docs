@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetBindingCapability** method retrieves the binding capabilities for the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetBindingCapability(
@@ -31,8 +30,7 @@ void GetBindingCapability(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN\[8\]*   
 A worldwide name that indicates the port whose persistent bindings will be retrieved.
@@ -43,18 +41,15 @@ On return, contains the status of the operation. For a list of allowed values an
 *BindType*   
 Indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the [HBA\_BIND\_TYPE](hba-bind-type.md) WMI class qualifier.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

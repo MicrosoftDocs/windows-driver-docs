@@ -54,8 +54,7 @@ The KSPROPERTY\_PIN\_DATAFLOW property specifies the direction of data flow on p
 
  
 
-Remarks
--------
+## Remarks
 
 Specify the pin factory in the **PinId** member of the [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) structure.
 
@@ -63,8 +62,7 @@ KSPROPERTY\_PIN\_DATAFLOW returns an enumeration of type [**KSPIN\_DATAFLOW**](/
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -109,8 +109,7 @@ Ntsdexts.dll</td>
 
 For more information about handles, see the [**!htrace**](-htrace.md) extension, the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
 

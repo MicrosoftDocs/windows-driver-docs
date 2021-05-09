@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The setting of the WIA\_DPC\_FNUMBER property is typically valid only when the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE\_MANUAL or EXPOSUREMODE\_APERTURE\_PRIORITY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

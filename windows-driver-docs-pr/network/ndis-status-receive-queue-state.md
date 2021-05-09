@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE status indicates to overlying drivers that the queue state of a virtual machine queue (VMQ) receive queue has changed.
 
-Remarks
--------
+## Remarks
 
 NDIS 6.20 and later miniport drivers that support the virtual machine queue interface generate this status indication.
 
@@ -25,8 +24,7 @@ After the miniport driver receives the [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](./oid
 
 If the miniport driver stopped the DMA for some other reason (for example, it freed the last filter on a queue), the queue should not enter the *DMA Stopped* state. However, the DMA can be stopped in the *Paused* or *Running* states if there are no filters set on the queue.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

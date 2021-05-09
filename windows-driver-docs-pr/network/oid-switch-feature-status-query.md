@@ -18,8 +18,7 @@ After a successful return from this OID method request, the **InformationBuffer*
 
 -   An [**NDIS\_SWITCH\_FEATURE\_STATUS\_CUSTOM**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_feature_status_custom) structure that contains the feature status information for the extensible switch.
 
-Remarks
--------
+## Remarks
 
 For guidelines on how to handle an OID set request of OID\_SWITCH\_FEATURE\_STATUS\_QUERY, see [Managing Custom Switch Feature Status Information](./managing-custom-switch-feature-status-information.md).
 
@@ -56,8 +55,7 @@ The extension returns one of the following status codes for the OID method reque
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

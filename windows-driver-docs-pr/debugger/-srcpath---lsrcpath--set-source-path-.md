@@ -66,8 +66,7 @@ For details and other ways to change this path, see [Source Path](source-path.md
 > Starting with version x.y.z, released in April 2021, additional source code formats are supported including source link 1 and source link 2, using the DebugInfoD path element. For more information, see [Source Code Extended Access](source-code-extended-access.md).
 > 
 
-Remarks
--------
+## Remarks
 
 If you include `srv*` in your source path, the debugger uses [SrcSrv](srcsrv.md) to retrieve source files from locations specified in the target modules' symbol files. For more information about using srv\* in a source path, see [Using a Source Server](using-a-source-server.md) and [**.srcfix**](-srcfix---lsrcfix--use-source-server-.md).
 

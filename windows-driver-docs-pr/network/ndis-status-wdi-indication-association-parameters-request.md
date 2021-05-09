@@ -30,8 +30,7 @@ This indication can be sent by the adapter when it finds a BSS entry that is a c
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

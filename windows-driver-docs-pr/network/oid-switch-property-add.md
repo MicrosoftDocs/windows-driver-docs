@@ -22,8 +22,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
      
 
-Remarks
--------
+## Remarks
 
 A forwarding extension can handle the OID set request of OID\_SWITCH\_PROPERTY\_ADD. All other types of extensions must call [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the next extension in the extensible switch driver stack.
 
@@ -89,8 +88,7 @@ If the extension does not complete the OID set request of OID\_SWITCH\_PROPERTY\
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

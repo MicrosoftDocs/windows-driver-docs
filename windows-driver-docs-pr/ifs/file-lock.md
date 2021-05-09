@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The operating system uses the opaque FILE\_LOCK structure to support the locking of files.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _FILE_LOCK {
@@ -35,8 +34,7 @@ typedef struct _FILE_LOCK {
 } FILE_LOCK, *PFILE_LOCK;
 ```
 
-Members
--------
+## Members
 
 **CompleteLockIrpRoutine**  
 Reserved for system use.
@@ -62,8 +60,7 @@ Reserved for system use.
 **LockRequestsInProgress**  
 Reserved for system use.
 
-Remarks
--------
+## Remarks
 
 File system drivers, legacy filesystem filter drivers and minifilters can use a variety of routines to create and use FILE\_LOCK objects, as well as to test for read/write access to files.
 
@@ -77,8 +74,7 @@ File system drivers, legacy filesystem filter drivers and minifilters can use a 
 
 After a FILE\_LOCK has been initialized, routines such as [**FsRtlCheckLockForReadAccess**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforreadaccess), [**FltCheckLockForWriteAccess**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltchecklockforwriteaccess), and [**FsRtlFastCheckLockForRead**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforread) can be used to determine if the file can be accessed by other threads.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

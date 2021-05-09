@@ -54,15 +54,13 @@ Clients use the KSPROPERTY\_PIN\_CTYPES property to determine how many pin types
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_PIN\_CTYPES returns a value of type ULONG, specifying the number of pin factories the KS filter supports.
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

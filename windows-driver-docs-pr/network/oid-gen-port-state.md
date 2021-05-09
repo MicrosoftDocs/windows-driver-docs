@@ -20,15 +20,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID and miniport drivers do not receive this OID query.
 
 If the query succeeds, NDIS returns NDIS\_STATUS\_SUCCESS and returns the port state information in an [**NDIS\_PORT\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

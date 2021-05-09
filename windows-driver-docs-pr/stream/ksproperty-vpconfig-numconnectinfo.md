@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO property obtains the maximum number of 
 
 The property value (operation data) is a DWORD that describes the maximum number of video port configurations.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

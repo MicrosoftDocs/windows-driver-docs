@@ -67,8 +67,7 @@ Specifies the category whose APIs will be displayed. Only one category can be sp
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 Without any options, **!logexts.logc** will display the current list of available categories and will indicate which ones are enabled and disabled.
 

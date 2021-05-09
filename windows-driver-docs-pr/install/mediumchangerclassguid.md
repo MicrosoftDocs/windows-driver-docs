@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 MediumChangerClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for medium changer devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MEDIUMCHANGER**](guid-devinterface-cdchanger.md) class identifier for new instances of this class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -83,8 +83,7 @@ ProcessRequest (
 }
 ```
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -127,13 +126,11 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 [**ExAllocatePoolWithTagPriority**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
-See also
---------
+## See also
 
 [**Managing Hardware Priorities**](../kernel/managing-hardware-priorities.md)
 [**Preventing Errors and Deadlocks While Using Spin Locks**](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

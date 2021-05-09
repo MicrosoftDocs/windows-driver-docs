@@ -32,8 +32,7 @@ Address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure. To get the transfer
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

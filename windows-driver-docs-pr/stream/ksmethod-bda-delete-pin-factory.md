@@ -30,13 +30,11 @@ KSM\_PIN with the **Flags** member of the **Method** member set to KSMETHOD\_TYP
 
 None
 
-Remarks
--------
+## Remarks
 
 Specifies the pin factory to delete in the **PinId** member of the KSM\_PIN structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

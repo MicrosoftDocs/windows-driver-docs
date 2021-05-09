@@ -47,20 +47,17 @@ None. Set to NULL.
 <a href="" id="outputbufferlength--in-"></a>*OutputBufferLength \[in\]*  
 Set to 0.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate NTSTATUS values is returned.
 
-Remarks
--------
+## Remarks
 
 When the backing provider for the data source added is the WIM provider, the input buffer will contain a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**WIM\_PROVIDER\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info) structure. The *InputBufferLength* in this case will be **sizeof**(**WOF\_EXTERNAL\_INFO**) + **sizeof**(**WIM\_PROVIDER\_EXTERNAL\_INFO**).
 
 Individually compressed files offer good compression for data which will not be modified, including executable files. If these are opened for write the file will be transparently decompressed. To specify an individually compressed file,, the input buffer will contain a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_provider_external_info_v1) structure. The *InputBufferLength* in this case will be **sizeof**(**WOF\_EXTERNAL\_INFO**) + **sizeof**(**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**). Individual compressed files are available starting with Windows 10.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

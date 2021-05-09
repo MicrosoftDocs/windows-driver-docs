@@ -77,8 +77,7 @@ The possible values include the following.
 </table>
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

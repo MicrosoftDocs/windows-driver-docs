@@ -32,15 +32,13 @@ AAddress of the device extension for the host controller's functional device obj
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The output the **!xhci\_commandring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 The command ring is a data structure used by the USB 3.0 host controller driver to pass commands to the host controller.
 
-Examples
---------
+## Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 

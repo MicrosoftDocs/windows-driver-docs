@@ -32,8 +32,7 @@ Address of a **HIDP\_PREPARSED\_DATA** structure. To get the address of a **HIDP
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 This example shows how to use [**!hidpdo**](-hidkd-hidpdo.md) followed by **!hidppd**. The output of **!hidpdo** shows the address of a **HIDP\_PREPARSED\_DATA** structure.
 

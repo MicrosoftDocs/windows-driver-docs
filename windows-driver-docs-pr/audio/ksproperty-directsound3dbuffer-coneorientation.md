@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type DS3DVECTOR that speci
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEORIENTATION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 For more information about the orientation of the sound projection cone for a DirectSound 3D buffer, see the following in the Microsoft Windows SDK documentation:
 
@@ -69,8 +68,7 @@ For more information about the orientation of the sound projection cone for a Di
 
 -   The **IDirectSound3DBuffer::GetConeOrientation** and **IDirectSound3DBuffer::SetConeOrientation** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

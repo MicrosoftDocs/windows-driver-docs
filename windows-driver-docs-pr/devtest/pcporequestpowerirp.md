@@ -22,8 +22,7 @@ This rule verifies that a PortCls miniport driver should not call [**PoRequestPo
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0007100A)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

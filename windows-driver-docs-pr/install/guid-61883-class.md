@@ -44,15 +44,13 @@ The GUID_61883_CLASS [device interface class](./overview-of-device-interface-cla
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for devices in the 61883 device setup class register instances of this device interface class to notify the operating system and applications of the presence of 61883 devices. The 61883 device interface class includes IEEE 1394 devices that support the IEC-61883 protocol. For information about 61883 devices and drivers, see [IEC-61883 Client Drivers](../ieee/iec-61883-client-drivers.md).
 
 For information about the device setup class for 1394 bus devices, see [**BUS1394_CLASS_GUID**](bus1394-class-guid.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

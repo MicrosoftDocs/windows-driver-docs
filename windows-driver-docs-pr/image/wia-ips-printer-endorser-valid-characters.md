@@ -32,15 +32,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 All Imprinter/Endorser items must support all characters that occur in the [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS**](wia-ips-printer-endorser-valid-format-specifiers.md) values (if any), including the '$' character. If the Imprinter/Endorser supports the WiaImgFmt\_CSV value for [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md), the ',' (comma) character must not be listed by **WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**.
 
 This property is optional for all Imprinter/Endorser data source items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -31,8 +31,7 @@ The size (in bytes) of the array of UINT16 elements. The array must contain 1 or
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

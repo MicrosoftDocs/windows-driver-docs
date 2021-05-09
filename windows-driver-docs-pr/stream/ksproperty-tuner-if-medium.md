@@ -56,15 +56,13 @@ KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermediate frequenc
 
 The property value (operation data) is a KSPIN\_MEDIUM structure that specifies the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency.
 
-Remarks
--------
+## Remarks
 
 The **IFMedium** member of the KSPROPERTY\_TUNER\_IF\_MEDIUM\_S structure specifies the Medium GUID of the intermediate frequency pin.
 
 If the video capture minidriver supports KSPROPERTY\_TUNER\_IF\_MEDIUM, then *kstvtune.ax* creates an additional pin that represents the hardware-based MPEG-2 transport stream originating at the tuner. This pin is used solely to define graph topology. Data samples flowing through the user-mode stream from this pin on *kstvtune.ax* consist of [**KS\_TVTUNER\_CHANGE\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_tvtuner_change_info) structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_CAPABILITIES property retrieves the capabilities of a
 
 The property value (operation data) is a DEVCAPS structure that describes the capabilities of the external device.
 
-Remarks
--------
+## Remarks
 
 The **Capabilities** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's capabilities.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

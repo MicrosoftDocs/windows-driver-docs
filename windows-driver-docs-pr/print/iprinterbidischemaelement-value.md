@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The Value method returns the Bidi Schema element value.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Value(
@@ -28,14 +27,12 @@ HRESULT Value(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pValue* \[out, retval\]  
 The returned element value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 

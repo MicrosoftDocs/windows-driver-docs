@@ -21,8 +21,7 @@ If the driver calls a *WDFxxxSendXXXSynchronously* method without setting a vali
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +46,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoTargetSendIoctlSynchronously**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetsendioctlsynchronously)
 [**WdfIoTargetSendReadSynchronously**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetsendreadsynchronously)

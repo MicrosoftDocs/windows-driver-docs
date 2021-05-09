@@ -42,8 +42,7 @@ The **!gs** extension analyzes a /GS stack overflow.
 
  
 
-Remarks
--------
+## Remarks
 
 The **!gs**extension helps debug buffer overruns. Run **!gs**when you encounter a STATUS\_STACK\_BUFFER\_OVERRUN error, as the following example shows.
 

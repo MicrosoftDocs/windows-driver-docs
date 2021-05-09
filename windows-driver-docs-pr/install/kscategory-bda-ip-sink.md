@@ -44,15 +44,13 @@ The KSCATEGORY_BDA_IP_SINK [device interface class](./overview-of-device-interfa
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_IP_SINK to indicate that the devices support a BDA IP sink filter.
 
 For more information, see [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

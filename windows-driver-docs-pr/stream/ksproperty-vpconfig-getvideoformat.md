@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an array of supporte
 
 The property value (operation data) is a DDPIXELFORMAT structure that describes the pixel format of the video port.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indicates to overlying drivers that a power management protocol offload was rejected.
 
-Remarks
--------
+## Remarks
 
 NDIS or miniport drivers can generate the NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indication when either of them removes an offloaded protocol. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a ULONG for the protocol offload identifier of the rejected protocol offload. NDIS provided the protocol offload identifier in the **ProtocolOffloadId** member of the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
 
@@ -29,8 +28,7 @@ The infrastructure might not have enough resources to accommodate all of the pro
 
 For example, a network adapter can use the AP's proxy ARP to support ARP offload.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

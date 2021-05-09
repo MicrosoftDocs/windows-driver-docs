@@ -14,8 +14,7 @@ As a query, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_HASH OID to ob
 
 As a set, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_HASH OID to configure the receive hash calculations on a miniport adapter. The miniport driver receives an NDIS\_RECEIVE\_HASH\_PARAMETERS structure.
 
-Remarks
--------
+## Remarks
 
 For NDIS miniport drivers, the query is not requested.
 
@@ -31,8 +30,7 @@ An overlying driver can use the OID\_GEN\_RECEIVE\_HASH OID to enable and config
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

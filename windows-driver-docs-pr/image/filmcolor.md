@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmColor** element contains the list of color processing capabilities that the film scanning input source supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmColor>
@@ -26,8 +25,7 @@ Usage
 </wscn:FilmColor>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **FilmColor** element contains the information that is needed to determine the type of color processing and acquisition that the scanner's film scanning input source supports.
 

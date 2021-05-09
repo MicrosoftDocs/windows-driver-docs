@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

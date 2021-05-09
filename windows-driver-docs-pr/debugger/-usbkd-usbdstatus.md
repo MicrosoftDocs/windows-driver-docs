@@ -32,8 +32,7 @@ The hexadecimal value of a USBD status code. These codes are defined in usb.h.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of the output of **!usbdstatus**.
 

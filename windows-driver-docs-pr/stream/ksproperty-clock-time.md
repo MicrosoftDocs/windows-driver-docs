@@ -54,8 +54,7 @@ Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presen
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a value of type LONGLONG, specifying the current presentation time in 100-nanosecond units.
 
@@ -63,8 +62,7 @@ The presentation time of a clock can be reversed, unlike the physical time. The 
 
 Clocks are not required to support a 100-nanosecond resolution. To determine the clock resolution, clients can use the [**KSPROPERTY\_CLOCK\_RESOLUTION**](ksproperty-clock-resolution.md) request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

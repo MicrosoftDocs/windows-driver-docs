@@ -40,8 +40,7 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK.
 
-Remarks
--------
+## Remarks
 
 This extension is designed for performance logs and events, which cannot be formatted for human-readable display. To display the trace messages in a trace session buffer, along with header data, use [**!wmitrace.logdump**](-wmitrace-logdump.md).
 

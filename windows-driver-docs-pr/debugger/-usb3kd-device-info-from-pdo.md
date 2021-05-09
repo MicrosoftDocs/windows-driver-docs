@@ -32,13 +32,11 @@ Address of the physical device object (PDO) of a USB device or hub.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 **!device\_info\_from\_pdo** and [**!ucx\_device**](-usb3kd-ucx-device.md) both display information about a device, but the information displayed is different. The output of **!device\_info\_from\_pdo** is from the point of view of the USB 3.0 hub driver, and the output of **!ucx\_device** is from the point of view of the USB host controller extension driver. For example, the **!device\_info\_from\_pdo** output includes information about configuration and interface descriptors, and **!ucx\_device** output includes information about endpoints.
 
-Examples
---------
+## Examples
 
 You can get the address of the PDO from the output of [**!usb\_tree**](-usb3kd-usb-tree.md) or from a variety of other debugger commands. For example, the [**!devnode**](-devnode.md) command displays the addresses of PDOs. In the following example, the USBSTOR device node is the direct child of the USBHUB3 node. The address of the PDO for the USBSTOR node is 0xfffffa80059c3800.
 

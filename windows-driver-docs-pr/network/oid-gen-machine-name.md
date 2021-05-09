@@ -29,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 The information buffer passed in this request contains an array of Unicode characters that represents the local computer name. The **InformationBufferLength** value that is supplied to the [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function specifies the length of this array in bytes, not including a NULL terminator.
 
 NDIS sets OID\_GEN\_MACHINE\_NAME only once after a miniport driver completes initialization. Under Windows XP, NDIS does not dynamically notify miniport drivers of a change in the computer name. After changing the computer name, a user must restart the computer so that NDIS notifies miniport drivers of the new computer name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

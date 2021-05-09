@@ -52,8 +52,7 @@ The DEVPKEY_Device_SessionId device property represents a value that indicates t
 
  
 
-Remarks
--------
+## Remarks
 
 The Terminal Server feature supports Plug and Play (PnP) device redirection. Device redirection determines whether a device can be accessed by applications and services within all Terminal Services sessions or whether a device can be accessed only within a particular Terminal Services session. The accessibility of a device within a Terminal Services session is determined by the setting of DEVPKEY_Device_SessionId for a device, as follows:
 
@@ -67,8 +66,7 @@ You can access the DEVPKEY_Device_SessionId property by calling [**SetupDiGetDev
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_FT\_R1KHID is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

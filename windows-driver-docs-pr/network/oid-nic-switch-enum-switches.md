@@ -22,8 +22,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
      
 
-Remarks
--------
+## Remarks
 
 Overlying drivers and user-mode applications issue OID query requests of OID\_NIC\_SWITCH\_ENUM\_SWITCHES to enumerate the NIC switches created on a network adapter.
 
@@ -74,8 +73,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_SWITCHES request, it returns one o
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

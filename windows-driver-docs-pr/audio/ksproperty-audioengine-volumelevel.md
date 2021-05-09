@@ -70,13 +70,11 @@ For a Set request, the property value is of type **KSAUDIOENGINE\_VOLUMELEVEL**,
 
 The [**KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS**](ksproperty-audioengine-supporteddeviceformats.md) property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The property descriptor for **KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL** specifies a channel number. If the stream that passes through the audio engine node contains *n* channels, the channels are numbered 0 through *n-1*. Also note that a channel value of 0xFFFFFFFF indicates that the request applies to all channels. If a property request is made while the stream is not in a running state, the volume level is immediately set to the requested level. If the stream leaves the run state while a volume level ramp is in progress, the volume level of the stream is immediately set to the target level of the current fade. If a new property request is made while an existing volume level ramp is in progress, the new ramp request must begin from the current volume level - the level that the volume had reached when the new request arrived.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

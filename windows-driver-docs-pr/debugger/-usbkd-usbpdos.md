@@ -26,8 +26,7 @@ The **!usbkd.usbpdos** command displays information about all physical device ob
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here's an example of the output of the **!usbpdos** command.
 

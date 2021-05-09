@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING_LIST property type represents the base-data-type identifier that indicates that the data type is a [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-typed list of Unicode strings.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_STRING_LIST cannot be combined with the property-data-type modifiers.
 
@@ -32,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_STRING_LIST, call the cor
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

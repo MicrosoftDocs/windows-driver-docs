@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxShouldTryToCollapseThisOpen* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector indicate if RDBSS should try and collapse an open request onto an existing file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxShouldTryToCollapseThisOpen;
@@ -31,14 +30,12 @@ NTSTATUS MRxShouldTryToCollapseThisOpen(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxShouldTryToCollapseThisOpen* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as the following:
 
@@ -63,8 +60,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxShouldTryToCollapseThisOpen* is called to determine if an open request should not be collapsed.
 
@@ -76,8 +72,7 @@ The call to *MRxShouldTryToCollapseThisOpen* could be a change notify request fo
 
 RDBSS disallows collapsing opens if the **Create.NtCreateParameters.CreateOptions** member of the RX\_CONTEXT structure has the FILE\_OPEN\_FOR\_BACKUP\_INTENT option or the FILE\_DELETE\_ON\_CLOSE option set.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

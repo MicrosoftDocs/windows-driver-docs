@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 You should use the [**WIA\_DPC\_FOCAL\_LENGTH**](wia-dpc-focal-length.md) property for optical zoom and the [**WIA\_DPC\_DIGITAL\_ZOOM**](wia-dpc-digital-zoom.md) property for digital zoom adjustments.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

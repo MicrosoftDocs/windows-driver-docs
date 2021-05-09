@@ -57,15 +57,13 @@ The property value is of type UINT and specifies the provider ID.
 
 A **KSPROPERTY\_TELEPHONY\_PROVIDERID** property request returns a UINT value that represents the provider ID that the audio driver associates to the wave filter.
 
-Remarks
--------
+## Remarks
 
 The radio stack has a concept of provider ID (executor ID) and call type (packet or circuit-switched) to connect the phone call instance to a specific hardware path. This concept will continue to be used to communicate to the audio driver which path in hardware to use.
 
 This hardware path will be controlled by sending properties on a wave filter for each provider. The audio driver will associate a provider ID to the wave filter. This provider ID will also be set on the associated cellular streaming endpoints. The provider ID for the wave filter must not change at runtime. The audio stack will query the provider ID from the driver by using the **KSPROPERTY\_TELEPHONY\_PROVIDERID** property . After this provider ID is discovered, all the calls for that provider ID will be sent to the particular wave filter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

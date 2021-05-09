@@ -42,8 +42,7 @@ The miniport driver can set a limit on the number of multicast addresses that th
 
 For a query request, NDIS returns a multicast address list that is the union of all multicast address lists for all protocol bindings.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -67,8 +67,7 @@ Omitting the address does not display any context record information, but it doe
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 The information from a context record can be used to assist in debugging a system halt where an unhandled exception has occurred and an exact stack trace is not available. The **.cxr** command displays the important registers for the specified context record.
 

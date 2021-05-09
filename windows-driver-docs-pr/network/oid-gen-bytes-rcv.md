@@ -20,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for miniport drivers. See the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) OID for more information about statistics.
 
@@ -29,8 +28,7 @@ The total byte count is the sum of the receive-directed byte count, receive-mult
 
 The count is identical to the *ifInOctets* counter described in RFC 2863.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -60,13 +60,11 @@ The SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD bug check h
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 This driver failed to cancel lookaside lists, DPCs, worker threads, or other such items before unload. Subsequently, the system attempted to access the driver's former location at a raised IRQL.
 
-Resolution
-----------
+## Resolution
 
 To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace. If the driver that caused the error has been identified, activate Driver Verifier and attempt to replicate this bug.
 

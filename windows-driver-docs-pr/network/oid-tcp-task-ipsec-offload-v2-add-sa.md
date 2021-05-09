@@ -22,8 +22,7 @@ As a set, the TCP/IP transport uses the OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\
 
  
 
-Remarks
--------
+## Remarks
 
 All NDIS 6.1 and 6.20 miniport drivers that support IPsec offload version 2 (IPsecOV2) must support this OID.
 
@@ -37,8 +36,7 @@ If the request fails, none of the SAs in the linked list were offloaded. If fail
 
 The miniport driver reports the maximum number of SAs that a NIC can support in the **SaOffloadCapacity** member of the [**NDIS\_IPSEC\_OFFLOAD\_V2**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ipsec_offload_v2) structure during initialization. If necessary, the TCP/IP transport can set the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA](oid-tcp-task-ipsec-offload-v2-delete-sa.md) OID to request that the miniport driver delete an SA from the NIC.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

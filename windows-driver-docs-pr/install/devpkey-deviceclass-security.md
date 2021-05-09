@@ -56,8 +56,7 @@ The DEVPKEY_DeviceClass_Security device property represents a security descripto
 
  
 
-Remarks
--------
+## Remarks
 
 You can set the value of DEVPKEY_DeviceClass_Security either during or after an installation application installs a device setup class. For more information about how to set this property, see [Creating Secure Device Installations](./creating-secure-device-installations.md).
 
@@ -65,8 +64,7 @@ You can retrieve the value of DEVPKEY_DeviceClass_Security by calling [**SetupDi
 
 Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Security property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./retrieving-spcrp-xxx-properties.md) and [Setting Device Setup Class SPCRP_Xxx Properties](./setting-spcrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)
