@@ -40,8 +40,7 @@ Before a client driver can open or close streams, the driver must have:
 
   **WDM drivers:  **Obtain a USBD pipe handle by sending a select-configuration or select-interface request. For more information, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
 
-Instructions
-------------
+## Instructions
 
 ### How to open static streams
 

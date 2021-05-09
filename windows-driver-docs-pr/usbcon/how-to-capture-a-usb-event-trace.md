@@ -21,8 +21,7 @@ Event trace log files can grow very quickly, but a smaller log file is easier to
 
 Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver stack traces, which were introduced in Windows 7. Event traces from the USB 2.0 driver stack can be captured on a Windows 8 computer. The way you capture event traces from USB 2.0 and USB 3.0 driver stacks is similar. You can capture events from the USB 2.0 or USB 3.0 driver stack independently. When you connect a USB 2.0 device to a USB 3.0 host controller, you get event traces from the USB 3.0 driver stack. In that case, you will view new USB 3.0 driver stack events for a USB 2.0 device.
 
-Instructions
-------------
+## Instructions
 
 **To collect USB trace events**
 

@@ -30,8 +30,7 @@ A composite driver creates a physical device object (PDO) for each function in t
 
 In Windows 8, the USB driver stack for USB 3.0 devices supports those features. In addition, function suspend and function remote wake-up implementation has been added to the Microsoft-provided [USB generic parent driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys), which is the Windows default composite driver. If you are writing a custom composite driver, your driver must handle requests related to function suspend and remote wake-up requests, as per the following procedure.
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="determine-whether-the-usb-driver-stack-supports-function-suspend"></a>Step 1: Determine Whether the USB Driver Stack Supports Function Suspend
 

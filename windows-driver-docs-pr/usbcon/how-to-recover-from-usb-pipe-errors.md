@@ -59,8 +59,7 @@ To clear an error condition, start with the reset-pipe operation and perform mor
 
 -   The client driver must have a handle to the framework target pipe object. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="determine-the-cause-of-the-error-condition"></a>Step 1: Determine the cause of the error condition
 
