@@ -63,8 +63,7 @@ Ntsdexts.dll</td>
 
 You can also set these flags by using the Global Flags utility (Gflags.exe).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!gflag** extension displays the current global flag settings.
 

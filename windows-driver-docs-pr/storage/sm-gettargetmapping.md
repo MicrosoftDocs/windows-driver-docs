@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_GetTargetMapping WMI method retrieves a mapping between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for these logical units.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_GetTargetMapping(
@@ -34,8 +33,7 @@ void SM_GetTargetMapping(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the port whose table of mappings is to be retrieved. This information is delivered to the miniport driver in the HbaPortWWN member of a GetTargetMapping\_IN structure.
@@ -58,18 +56,15 @@ The total number of mappings that are retrieved by the SM\_GetTargetMapping meth
 *Entry*   
 An array of structures of type MS\_SMHBA\_SCSIENTRY that describe an HBA's bindings between the operating system and the fibre channel protocol (FCP) identifiers.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

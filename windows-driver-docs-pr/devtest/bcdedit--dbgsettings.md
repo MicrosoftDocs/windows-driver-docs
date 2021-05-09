@@ -33,8 +33,7 @@ bcdedit /dbgsettings USB [TARGETNAME:targetname] [/start startpolicy] [/noumex]
 bcdedit /dbgsettings 1394 [CHANNEL:channel] [/start startpolicy] [/noumex] NOTE: The 1394 TRANSPORT IS DEPRECATED
 ```
 
-Parameters
-----------
+## Parameters
 
 ## NET
 
@@ -196,8 +195,7 @@ The default values for the dbgsettings are shown in the following table.
 |noumex|Yes|
 
 
-See also
---------
+## See also
 
 For information about Windows debugging tools, see [Windows Debugging](../debugger/index.md). 
 

@@ -72,8 +72,7 @@ Turns on or turns off all options.
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md). For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 If you omit *Option*, the previously set options are displayed. In this case, the **l+** and **l-** commands have identical effects. However, you must include a plus sign (**+**) or minus sign (-) for the **l** command to work.
 

@@ -29,8 +29,7 @@ When there is a change in the TCP offload capabilities of the hardware, the LE s
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

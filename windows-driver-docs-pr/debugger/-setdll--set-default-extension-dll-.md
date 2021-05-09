@@ -57,8 +57,7 @@ The name and path of the extension DLL. If the full path was specified when the 
 
 For details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md). For details on executing extension commands, see [Using Debugger Extension Commands](using-debugger-extension-commands.md).
 
-Remarks
--------
+## Remarks
 
 The debugger maintains a default extension DLL that is implicitly loaded when the debugger is started. This allows the user to specify an extension command without first having to load an extension DLL. This command allows modification of which DLL is loaded as the default DLL.
 

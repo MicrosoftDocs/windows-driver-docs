@@ -30,8 +30,7 @@ KSM\_PIN with the **Flags** member of the **Method** member set to KSMETHOD\_TYP
 
 ULONG, representing the identifier of the pin factory.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -61,8 +61,7 @@ This message is sent from a Remote NDIS device to a host to indicate a change in
 
  
 
-Remarks
--------
+## Remarks
 
 The most common use of REMOTE\_NDIS\_INDICATE\_STATUS\_MSG is to indicate the state of the link for an 802.3 device. A status value of RNDIS\_STATUS\_MEDIA\_CONNECT indicates a transition from disconnected (for example no 802.3 link pulse) to connected state (802.3 link pulse detected). A status value of RNDIS\_STATUS\_MEDIA\_DISCONNECT indicates a transition from connected to disconnected state. The device must send REMOTE\_NDIS\_INDICATE\_STATUS\_MSG with one of these values every time the 802.3 link state changes. No status buffer is required to return these two common indications.
 
@@ -109,8 +108,7 @@ This message is used to report an error condition only in circumstances where th
 
 -   On receiving a [**REMOTE\_NDIS\_PACKET\_MSG**](remote-ndis-packet-msg.md) with unacceptable contents.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

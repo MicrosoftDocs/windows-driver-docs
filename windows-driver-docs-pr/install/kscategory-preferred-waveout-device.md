@@ -44,15 +44,13 @@ The KSCATEGORY_PREFERRED_WAVEIN_DEVICE [device interface class](./overview-of-de
 
  
 
-Remarks
--------
+## Remarks
 
 A user selects the preferred wave input device in the Multimedia property pages in the Control Panel.
 
 This functional category is reserved for exclusive use by the system-supplied [WDM Audio Components](../audio/wdm-audio-components.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **PendingJobCount** property enables an ASP Web page to determine the number of pending print jobs.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PendingJobCount(
@@ -31,14 +30,12 @@ HRESULT get_PendingJobCount(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives the number of pending print jobs.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -82,8 +79,7 @@ objPrinter.CalcJobETA
 PendingJobs = objPrinter.PendingJobCount
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -78,8 +78,7 @@ The property value (operation data) is a ULONG that specifies whether frame rate
 
  
 
-Remarks
--------
+## Remarks
 
 Auto-exposure priority determines whether the camera can dynamically vary the frame rate depending on lighting conditions.
 
@@ -93,8 +92,7 @@ In order to use KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY, you must se
 
 The default value for KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY is zero.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

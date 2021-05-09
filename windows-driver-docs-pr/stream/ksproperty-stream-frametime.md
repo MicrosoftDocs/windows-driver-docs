@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the dura
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAM\_FRAMETIME is an optional property that should be implemented if a pin recognizes the specifics of the media type it is transporting.
 
@@ -63,8 +62,7 @@ The property is supported by rendering pins and is used to return the duration o
 
 The duration is measured in terms of the presentation time units provided by the pin. This is dependent on the interface and the numerator/denominator pair used in the presentation time. This does not apply to streams that are not oriented toward any specific media type, such as generic file readers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

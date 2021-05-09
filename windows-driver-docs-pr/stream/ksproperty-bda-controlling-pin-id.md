@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_CONTROLLING\_PIN\_ID to retrieve the controlling pi
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the controlling pin ID.
 
 Nodes are associated with one pin in the filter, either an input pin or an output pin. Nodes can only be accessed through the controlling pin because nodes do not have their own file handle. The network provider can use this property and the KSP\_BDA\_NODE\_PIN structure to query for the controlling pin for each node in the BDA template connection list (KSTOPOLOGY\_CONNECTION or BDA\_TEMPLATE\_CONNECTION array).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

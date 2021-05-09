@@ -57,15 +57,13 @@ The DRIVER\_OVERRAN\_STACK\_BUFFER bug check has a value of 0x000000F7. This ind
 
  
 
-Cause
------
+## Cause
 
 A driver overran a stack-based buffer (or local variable) in a way that would have overwritten the function's return address and jumped back to an arbitrary address when the function returned.
 
 This is the classic "buffer overrun" hacking attack. The system has been brought down to prevent a malicious user from gaining complete control of it.
 
-Resolution
-----------
+## Resolution
 
 Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to get a stack trace.
 

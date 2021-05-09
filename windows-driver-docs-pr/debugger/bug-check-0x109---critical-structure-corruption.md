@@ -252,8 +252,7 @@ The value of Parameter 4 indicates the type of corrupted region.
 
  
 
-Cause
------
+## Cause
 
 There are generally three different causes for this bug check:
 
@@ -263,8 +262,7 @@ There are generally three different causes for this bug check:
 
 3.  A hardware corruption occurred. For example, the kernel code or data could have been stored in memory that failed.
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 

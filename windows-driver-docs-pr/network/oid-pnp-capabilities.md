@@ -109,8 +109,7 @@ If the underlying network adapter is not PM-aware, the intermediate driver shoul
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

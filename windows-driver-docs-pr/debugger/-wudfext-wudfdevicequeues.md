@@ -52,8 +52,7 @@ Specifies the address of the **IWDFDevice** interface for which to display infor
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following is an example of the **!wudfext.wudfdevicequeues** display:
 

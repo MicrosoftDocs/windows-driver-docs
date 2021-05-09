@@ -21,8 +21,7 @@ The underlying driver returns zero, indicating that it supports no options.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

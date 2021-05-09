@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a query, overlying drivers can use the OID\_PM\_PROTOCOL\_OFFLOAD\_LIST OID to enumerate the protocol offloads that are set on an underlying network adapter. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a list of [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structures that describe the currently active protocol offloads.
 
-Remarks
--------
+## Remarks
 
 NDIS handles the query for miniport drivers. NDIS drivers can use the OID\_PM\_PROTOCOL\_OFFLOAD\_LIST OID to get a list of protocol offloads that are set on an underlying network adapter.
 
@@ -35,8 +34,7 @@ The information buffer was too short. NDIS set the **DATA.QUERY\_INFORMATION.Byt
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

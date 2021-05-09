@@ -39,15 +39,13 @@ Specifies that the address is a physical address.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The output of the **!xhci\_transferring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 The transfer ring is a structure used by the USB 3.0 host controller driver to maintain a list of transfer request blocks (TRBs). This command takes the virtual or physical address of a transfer ring, but displays the physical address of the TRBs. This is done so the command can correctly traverse LINK TRBs.
 
-Examples
---------
+## Examples
 
 To obtain the address of the transfer ring, look at the output of the [**!xhci\_deviceslots**](-usb3kd-xhci-deviceslots.md) command. In the following example, the virtual address of the transfer ring is 0xfffffa8005b2fe00.
 

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the six that are valid with this property.
 
@@ -74,8 +73,7 @@ The following table describes the six that are valid with this property.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

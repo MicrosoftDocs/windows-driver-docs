@@ -54,13 +54,11 @@ The KSPROPERTY\_STREAMALLOCATOR\_STATUS property retrieves the current status of
 
  
 
-Remarks
--------
+## Remarks
 
 The status of the allocator indicates the framing specifications and the currently allocated frames.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -26,8 +26,7 @@ The KsProcessingMutex rule specifies that a KS miniport driver uses the processi
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0008100B)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -50,7 +49,6 @@ How to test
 
  
 
-See also
---------
+## See also
 
 [Processing Mutex in AVStream](../stream/processing-mutex-in-avstream.md)

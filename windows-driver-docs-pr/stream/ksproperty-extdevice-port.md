@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port typ
 
 The property value (operation data) is a ULONG that specifies the external device's connection port. For example 1394 or USB.
 
-Remarks
--------
+## Remarks
 
 The **DevPort** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's port type. The **DevPort** member may be set to equal DEV\_PORT\_1394, DEV\_PORT\_USB, etc. These tokens are defined in the *xprtdefs.h* file in the Microsoft DirectX SDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

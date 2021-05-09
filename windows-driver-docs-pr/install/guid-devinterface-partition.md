@@ -44,15 +44,13 @@ The GUID_DEVINTERFACE_PARTITION [device interface class](./overview-of-device-in
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [storage drivers](../storage/storage-drivers.md) register an instance of GUID_DEVINTERFACE_PARTITION for a partition that is a child device of a [storage device](../storage/index.md).
 
 [**PartitionClassGuid**](partitionclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_PARTITION device interface class. For new instances of this class, use GUID_DEVINTERFACE_PARTITION instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

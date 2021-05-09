@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_ALLOCATOR property is an optional property that should b
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value is always a **NULL** handle. However, support is determined by whether the call returns successfully.
 
@@ -63,8 +62,7 @@ The property sets the handle of the allocator assigned to the stream connection 
 
 An allocator handle is obtained and can be used to set the allocator for another filter pin. A filter using the allocator must reference the object to obtain a pointer to a file object and dereference the file object when a new allocator is assigned or when the connection is closed. The property can also be queried to determine if this connection point supports providing an allocator.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

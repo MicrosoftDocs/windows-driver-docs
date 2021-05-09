@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddText method adds a new response of type BIDI\_TEXT to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddText(
@@ -29,8 +28,7 @@ HRESULT AddText(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +36,11 @@ The schema.
 *bstrValue* \[in\]  
 The text.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

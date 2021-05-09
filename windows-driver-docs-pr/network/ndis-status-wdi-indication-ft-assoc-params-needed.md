@@ -33,8 +33,7 @@ For a connection where Initial Mobility Domain is successfully done, the LE shou
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -52,8 +52,7 @@ The **KSEVENT\_DEVICE\_PREEMPTED** event is triggered when a device has been pre
 
  
 
-Remarks
--------
+## Remarks
 
 A preemption event is triggered in the following scenario.
 

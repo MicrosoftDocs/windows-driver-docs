@@ -16,13 +16,11 @@ Miniport drivers must process set requests asynchronously, initially returning N
 
 Query requests are not supported.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must process requests to create (activate) new NDIS ports asynchronously in order to prevent deadlocks.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

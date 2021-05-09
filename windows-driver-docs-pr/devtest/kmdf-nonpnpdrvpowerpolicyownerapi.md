@@ -35,8 +35,7 @@ If the driver does not register the [*EvtDriverDeviceAdd*](/windows-hardware/dri
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

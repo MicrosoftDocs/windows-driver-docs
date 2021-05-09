@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If the WIA minidriver does not supply a version resource, the WIA service supplies the value "0.0.0.0" as a default. An application reads WIA\_DIP\_DRIVER\_VERSION to determine the version of the WIA minidriver DLL.
 
@@ -42,8 +41,7 @@ Also beginning with Windows Vista, if the **IPAutoconfigurationEnabled** registr
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

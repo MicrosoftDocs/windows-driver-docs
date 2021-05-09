@@ -54,8 +54,7 @@ Specifies the address of a processor control registers file.
 
 This extension command can only be used with an Itanium-based target computer.
 
-Remarks
--------
+## Remarks
 
 Do not confuse the **!pcrs** extension with the [**!pcr**](-pcr.md) extension, which displays the current status of the processor control region.
 

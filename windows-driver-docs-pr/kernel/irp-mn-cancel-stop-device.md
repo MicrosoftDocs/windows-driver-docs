@@ -16,13 +16,11 @@ All PnP drivers must handle this IRP.
 
 0x06
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP, at some point after an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](irp-mn-query-stop-device.md), to inform the drivers for a device that the device will not be disabled (Windows 98/Me only) or stopped for resource reconfiguration.
 
@@ -43,8 +41,7 @@ None
 
 A driver must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS for this IRP. If a driver fails this IRP, the device is left in an inconsistent state.
 
-Operation
----------
+## Operation
 
 This IRP must be handled first by the parent bus driver for a device and then by each higher driver in the device stack.
 
@@ -58,8 +55,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for detailed information
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

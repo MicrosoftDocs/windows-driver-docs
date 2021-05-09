@@ -61,8 +61,7 @@ Specifies the beginning of the memory range in physical memory to disassemble. E
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify a parameter for the **up** command, the disassembly begins at the current address and extends eight instructions on an x86-based processor.
 

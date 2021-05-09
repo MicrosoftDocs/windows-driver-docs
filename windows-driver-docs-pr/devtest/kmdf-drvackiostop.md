@@ -24,8 +24,7 @@ In some circumstances it might be appropriate to suppress this warning. If the d
 **Bug check(s) found with this rule**: [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](../debugger/bug-check-0x9f--driver-power-state-failure.md)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -50,8 +49,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)
 [**WdfFdoInitSetFilter**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetfilter)

@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_NODE\_TYPES to retrieve a list of node types.
 
  
 
-Remarks
--------
+## Remarks
 
 In a template topology each node type can only occur once, but it can occur multiple times in an actual topology. This list of node types is an array of KSNODE\_DESCRIPTOR structures. Typically, the index of each element in this array is used to identify each particular node type.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_RemovePersistentBinding method removes one or more persistent bindings to the specified SCSI IDs for the specified adapter port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_RemovePersistentBinding(
@@ -32,8 +31,7 @@ void SM_RemovePersistentBinding(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the port whose persistent bindings will be removed.
@@ -50,18 +48,15 @@ A list of MS\_SMHBA\_BINDINGENTRY types for persistent binding.
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a GetPersistentBinding\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

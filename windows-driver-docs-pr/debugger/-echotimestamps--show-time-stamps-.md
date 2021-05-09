@@ -61,8 +61,7 @@ Turns on the display of time stamp information.
 
 For more information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see "The DbgPrint Buffer" in [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).
 
-Remarks
--------
+## Remarks
 
 When you use the **.echotimestamps** command without parameters, the display of time stamps is turned on or off, and the new state is displayed.
 

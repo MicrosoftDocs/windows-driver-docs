@@ -14,8 +14,7 @@ The protocol edge of the Hyper-V extensible switch issues an object identifier (
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure.
 
-Remarks
--------
+## Remarks
 
 When it receives the OID set request of OID\_SWITCH\_NIC\_SAVE\_COMPLETE, the extension must follow these guidelines:
 
@@ -52,8 +51,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

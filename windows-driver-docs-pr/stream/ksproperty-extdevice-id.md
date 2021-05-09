@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalize
 
 The property value (operation data) is a DWORD array that specifies the external device's unique node Id
 
-Remarks
--------
+## Remarks
 
 The **NodeUniqueID** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's unique node Id.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

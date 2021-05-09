@@ -31,8 +31,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/d
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

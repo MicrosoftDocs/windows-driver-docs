@@ -26,13 +26,11 @@ The **!usbkd.usbver** command displays the USBD interface version of the USB dri
 
 Usbkd.dll
 
-Remarks
--------
+## Remarks
 
 The value of the USBD interface version is stored in the variable `usbport!usbd_version`.
 
-Examples
---------
+## Examples
 
 Here is an example of the output of **!usbkd.usbver**.
 

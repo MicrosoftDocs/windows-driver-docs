@@ -108,8 +108,7 @@ If **MustUseSpecifiedChannel** in [**WDI\_TLV\_START\_AP\_PARAMETERS**](./wdi-tl
 
 [NDIS\_STATUS\_WDI\_INDICATION\_START\_AP\_COMPLETE](ndis-status-wdi-indication-start-ap-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

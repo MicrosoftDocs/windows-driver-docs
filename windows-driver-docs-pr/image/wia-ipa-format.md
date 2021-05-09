@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 If you can set the device to only a single value, create a WIA\_PROP\_LIST type, and place the valid value in it.
 
@@ -262,8 +261,7 @@ Formats that are marked with two asterisks (\*\*) are for Windows 8 and later v
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WiaImgFmt\_BMP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

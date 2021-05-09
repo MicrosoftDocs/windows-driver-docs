@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver creates and maintains this property.
 
@@ -297,8 +296,7 @@ The following table shows the WIA grouped categories and their WIA properties an
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector issue file system control request on remote file.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxLowIOSubmit[LOWIO_OP_FSCTL];
@@ -31,14 +30,12 @@ NTSTATUS MRxLowIOSubmit[LOWIO_OP_FSCTL](
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -95,8 +92,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS calls *MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]* in response to receiving an [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md) request.
 
@@ -128,8 +124,7 @@ The file system control code (FSCTL) requests handled by a network mini-redirect
 
 While the *MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member of RX\_CONTEXT can be used to release the input resource on behalf of another thread. When an asynchronous routine completes, the input resource that was acquired from the initial thread can be released.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

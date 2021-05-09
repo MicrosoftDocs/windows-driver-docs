@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **eHS\_UNLOAD\_REASON** enumeration indicates the reason for the plugin to get unloaded.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _eHS_UNLOAD_REASON { 
@@ -45,8 +44,7 @@ typedef enum _eHS_UNLOAD_REASON {
 } eHS_UNLOAD_REASON;
 ```
 
-Constants
----------
+## Constants
 
 <a href="" id="hs-unload-reason-none"></a>**HS\_UNLOAD\_REASON\_NONE**  
 No specific reason for the unload operation.
@@ -117,8 +115,7 @@ The plugin is being unloaded because Wi-Fi functionality was switched off in the
 <a href="" id="hs-unload-reason-max"></a>**HS\_UNLOAD\_REASON\_MAX**  
 Indicates an out-of-range value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

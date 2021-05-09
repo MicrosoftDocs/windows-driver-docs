@@ -68,8 +68,7 @@ Specifies a string to be entered into memory. The **ea** and **eza** commands wi
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 This command exists in the following forms. The second characters of the **ed** and **eD** commands are case-sensitive.
 

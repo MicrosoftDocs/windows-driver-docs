@@ -58,8 +58,7 @@ Specifies the amount of memory to be freed, in bytes. The actual memory freed wi
 
  
 
-Remarks
--------
+## Remarks
 
 The **.dvfree** command calls **VirtualFreeEx** to free an existing memory allocation. Unless the **/d** option is specified, the pages containing this memory are released.
 

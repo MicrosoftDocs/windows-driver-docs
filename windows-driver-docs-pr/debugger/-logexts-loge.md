@@ -52,8 +52,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 If Logger has not yet been injected into the target application by the [**!logexts.logi**](-logexts-logi.md) extension, the **!logexts.loge** extension will inject Logger into the target and then enable logging.
 

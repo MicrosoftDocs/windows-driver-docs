@@ -17,8 +17,7 @@ WDI\_TLV\_PHY\_TYPE\_LIST (0x69) is an unused TLV.
 
 0x69
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

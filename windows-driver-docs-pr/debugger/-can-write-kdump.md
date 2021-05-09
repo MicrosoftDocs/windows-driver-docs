@@ -60,8 +60,7 @@ Specifies that the extension should determine if there is enough space for a ful
 
  
 
-Remarks
--------
+## Remarks
 
 If no *Option* is specified, then the extension will determine if there is enough space for a summary kernel dump.
 

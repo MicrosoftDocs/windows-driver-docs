@@ -54,8 +54,7 @@ Kdextx86.dll</td>
 
 For information about objects and the object manager, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The attributes pertaining to the specified object are listed. Valid attributes are:
 

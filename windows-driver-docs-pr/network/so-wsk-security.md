@@ -130,8 +130,7 @@ A WSK application must call the [**WskControlClient**](/windows-hardware/drivers
 
 For more information about the SECURITY\_DESCRIPTOR structure, see the reference page for SECURITY\_DESCRIPTOR in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

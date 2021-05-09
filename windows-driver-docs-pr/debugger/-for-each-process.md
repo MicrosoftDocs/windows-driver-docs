@@ -60,8 +60,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 
 For general information about processes, see [Threads and Processes](controlling-threads-and-processes.md). For information about manipulating or obtaining information about processes, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 If no arguments are supplied, the debugger displays a list of all processes, along with time and priority statistics. This is equivalent to entering [**!process @\#Process 0**](-process.md) as the *CommandString* value.
 

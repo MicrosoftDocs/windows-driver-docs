@@ -62,8 +62,7 @@ This extension can be used only in Windows Vista and later versions of Windows.
 
 The [**!whea**](-whea.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](../whea/index.md) in the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The following example shows how the [**!whea**](-whea.md) extension can be used to obtain the address of an error record, and then the contents of this record can be displayed by the **!errrec** extension:
 

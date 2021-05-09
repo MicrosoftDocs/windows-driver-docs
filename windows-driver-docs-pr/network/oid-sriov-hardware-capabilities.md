@@ -14,8 +14,7 @@ An overlying driver issues an object identifier (OID) query request of OID\_SRIO
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to the [**NDIS\_SRIOV\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_capabilities) structure.
 
-Remarks
--------
+## Remarks
 
 The [**NDIS\_SRIOV\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_capabilities) structure contains information about the hardware capabilities of the network adapter, such as whether the adapter supports SR-IOV and whether the miniport driver is managing the adapter's PCI Express (PCIe) Physical Function (PF) or Virtual Function (VF). These capabilities can include the hardware capabilities that are currently disabled by the INF file settings or through the **Advanced** properties page.
 
@@ -64,8 +63,7 @@ When NDIS handles the OID\_SRIOV\_HARDWARE\_CAPABILITIES request, it returns one
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **eHS\_NETWORK\_STATE** enumeration indicates whether a network is a hotspot network.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _eHS_NETWORK_STATE { 
@@ -26,8 +25,7 @@ typedef enum _eHS_NETWORK_STATE {
 } eHS_NETWORK_STATE;
 ```
 
-Constants
----------
+## Constants
 
 <a href="" id="hs-network-state-not-a-hotspot"></a>**HS\_NETWORK\_STATE\_NOT\_A\_HOTSPOT**  
 Indicates the network is not a hotspot network.
@@ -41,8 +39,7 @@ Indicates the device can connect automatically to the hotspot network.
 <a href="" id="hs-network-state-max"></a>**HS\_NETWORK\_STATE\_MAX**  
 Indicates an out-of-range value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

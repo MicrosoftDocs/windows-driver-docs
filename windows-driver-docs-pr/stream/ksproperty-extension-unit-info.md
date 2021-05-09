@@ -54,8 +54,7 @@ The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, 
 
  
 
-Remarks
--------
+## Remarks
 
 This property is available in Windows Vista and later, and the SDK for Microsoft DirectX 9.2 or later versions.
 
@@ -105,8 +104,7 @@ ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
         &ulBytesReturned);
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -57,13 +57,11 @@ To use VRAM transport, a capture minidriver must support this property.
 
 A KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error code.
 
-Remarks
--------
+## Remarks
 
 The capture driver should perform the mapping in the handler for this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

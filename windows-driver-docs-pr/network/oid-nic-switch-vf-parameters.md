@@ -16,8 +16,7 @@ NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for mini
 
 When the OID method request is made, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 The overlying driver or user-mode application specifies the VF to query by setting the **VFId** member of the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure to the identifier of the VF. The overlying driver or application obtains the VF identifier through one of the following ways:
 
@@ -80,8 +79,7 @@ NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for mini
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -20,8 +20,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 -   A [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor) structure which follows the [**NDIS\_SRIOV\_BAR\_RESOURCES\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_bar_resources_info) structure. The **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structure contains information about the memory resources that were allocated to the specified BAR.
 
-Remarks
--------
+## Remarks
 
 NDIS issues an OID method request of OID\_SRIOV\_BAR\_RESOURCES to obtain the system physical address and length of the memory resources that were allocated to a VF BAR. Before it issues the OID method request, NDIS formats the [**NDIS\_SRIOV\_BAR\_RESOURCES\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_bar_resources_info) structure in the following way:
 
@@ -82,8 +81,7 @@ The PF miniport driver returns one of the following status codes for the method 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

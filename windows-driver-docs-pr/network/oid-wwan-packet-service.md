@@ -17,8 +17,7 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Callers requesting to set the current packet service state provide an [**NDIS\_WWAN\_SET\_PACKET\_SERVICE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_packet_service) structure to the miniport driver with the appropriate information.
 
-Remarks
--------
+## Remarks
 
 See [WWAN Packet Service Attach Operations](./mb-packet-service-attach-operations.md) for more information about using this OID.
 
@@ -42,8 +41,7 @@ If the modem is registered in a 5G domain, it returns the 5G frequency range of 
 
 For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

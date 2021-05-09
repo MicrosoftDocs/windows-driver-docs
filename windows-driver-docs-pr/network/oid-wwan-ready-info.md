@@ -16,8 +16,7 @@ Set requests are not supported.
 
 Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) status notification containing an [**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure that indicates the MB device's ready-state when completing query requests.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [MB device Readiness](./mb-device-readiness.md).
 
@@ -39,8 +38,7 @@ Miniport drivers should follow these steps to provide a good user experience:
 
 -   Miniport drivers that require a specific firmware revision must ensure that the correct firmware revision is available. If the firmware revision is not available, the miniport driver should complete the event notification transaction by setting **ReadyInfo.ReadyState** to *WwanReadyStateFailure*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

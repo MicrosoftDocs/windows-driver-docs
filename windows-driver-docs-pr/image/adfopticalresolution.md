@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ADFOpticalResolution** element specifies the maximum optical resolution at which the front or back side of the automatic document feeder (ADF) can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFOpticalResolution>
@@ -26,8 +25,7 @@ Usage
 </wscn:ADFOpticalResolution>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Resolution is specified as a [**Width**](width.md) × [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

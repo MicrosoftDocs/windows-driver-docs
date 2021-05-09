@@ -44,8 +44,7 @@ Instructions
 
     For information about those URB functions, see [**\_URB\_HEADER**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header).
 
-Remarks
--------
+## Remarks
 
 For code example that queries the underlying USB driver stack to determine whether the driver stack can accept chained MDLs, see [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)).
 

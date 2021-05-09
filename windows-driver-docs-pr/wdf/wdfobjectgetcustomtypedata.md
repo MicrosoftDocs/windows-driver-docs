@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectGetCustomTypeData** macro retrieves the data that the driver previously associated with a framework object and custom type.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PULONG WdfObjectGetCustomTypeData(
@@ -24,8 +23,7 @@ PULONG WdfObjectGetCustomTypeData(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
@@ -33,18 +31,15 @@ A handle to a framework object.
 *Type* \[in\]  
 The symbol name of a custom type.
 
-Return value
-------------
+## Return value
 
 **WdfObjectGetCustomTypeData** returns the data that the driver associated with a framework object and custom type in a previous call to [**WdfObjectAddCustomTypeWithData**](wdfobjectaddcustomtypewithdata.md).
 
-Remarks
--------
+## Remarks
 
 For more information about object driver types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

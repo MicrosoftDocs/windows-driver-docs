@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific
 
  
 
-Remarks
--------
+## Remarks
 
 The property value specifies the program to make inaccessible.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxQueryDirectory* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query information on a file directory.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxQueryDirectory;
@@ -31,14 +30,12 @@ NTSTATUS MRxQueryDirectory(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxQueryDirectory* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -87,8 +84,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 Before calling *MRxQueryDirectory*, RDBSS modifies the following members in the RX\_CONTEXT structure pointed to by the *RxContext* parameter:
 
@@ -112,8 +108,7 @@ For a wild card query ("\*.\*", for example), RDBSS will set the **UnicodeQueryT
 
 If the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryDirectory*, then RDBSS will call [**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest) passing the RX\_CONTEXT structure to a worker queue for processing by the file system process (FSP).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

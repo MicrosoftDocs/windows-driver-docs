@@ -16,8 +16,7 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_SIGNAL\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) structure.
 
-Remarks
--------
+## Remarks
 
 By default, miniport drivers must notify the MB Service if the Rssi value changes by at least +/-5 decibels from the last reported value, or at a maximum frequency of one indication every 5 seconds. The threshold value is specified in the **SignalState.RssiThreshold** member of the NDIS\_WWAN\_SIGNAL\_STATE structure; while the maximum frequency value is specified in the **SignalState.RssiInterval** member.
 
@@ -25,8 +24,7 @@ The **DeviceCaps.WwanCellularClass** member of the NDIS\_WWAN\_DEVICE\_CAPS stru
 
 Applications should never poll for signal strength. Only in special situations, such as startup, an application might use a *query* request to obtain signal strength.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

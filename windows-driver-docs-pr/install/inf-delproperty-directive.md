@@ -80,8 +80,7 @@ If the property data type is [**DEVPROP_TYPE_STRING_LIST**](./devprop-type-strin
 <a href="" id="value"></a>*value*  
 If the property data type is DEVPROP_TYPE_STRING_LIST and the flags entry is **0x00000001**, the *value* entry value supplies the string that the delete operation uses to search for matching strings in the existing string list and, if a matching string is found, the delete operation removes the matching string from the existing string list.
 
-Remarks
--------
+## Remarks
 
 In general, an INF file should not be used to delete device properties that might be set by a system component or by another INF file. The primary purpose of the **DelProperty** directive is for use in an INF file that updates a previous device installation and a property that was set for a previous device installation is no longer required.
 
@@ -89,8 +88,7 @@ A *del-property-section* name must be unique within an INF file, but the section
 
 For more information about how to use the **DelProperty** directive, see [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
-Examples
---------
+## Examples
 
 The following example of a delete property section includes two line entries: the first line entry includes a *property-name* entry value that deletes the **DeviceModel** property, and the second line entry deletes the string "DeleteThisString" from a custom device property value whose data type is DEVPROP_TYPE_STRING_LIST. In the second line, the *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e," the *property-identifier* entry value is "2," and the *flags* entry value is "0x00000001,"
 

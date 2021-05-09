@@ -49,15 +49,13 @@ This message is sent by the host to terminate the network connection. Unlike the
 
  
 
-Remarks
--------
+## Remarks
 
 It is optional for the device to implement REMOTE\_NDIS\_HALT\_MSG. If implemented, the device sends this message to the host through the control channel only when the device is in a state initialized by Remote NDIS. The device must terminate all communication immediately after sending this message. Sending this message causes the device to enter a state not initialized by Remote NDIS.
 
 All outstanding requests and packets should be discarded on receipt of this message.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -69,8 +69,7 @@ Starting with Windows XP, setting this to **0x10** forces Windows to use *tag-or
 <a href="" id="tag-file"></a>*tag-file*  
 Starting with Windows XP, if *flags* is set to **0x10**, this optional value specifies the name of a *tag file* supplied on the distribution medium, either in the *installation root* or in the subdirectory specified by *path*. The value should specify the file name and extension without path information. For more information, see the Remarks section.
 
-Remarks
--------
+## Remarks
 
 A **SourceDisksNames** section can have any number of entries, one for each distribution disk. Any INF with a **SourceDisksNames** section must also have an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md). (By convention, **SourceDisksNames** and **SourceDisksFiles** sections follow the [**INF Version section**](inf-version-section.md).)
 
@@ -102,8 +101,7 @@ During installation, SetupAPI functions look for architecture-specific **SourceD
 
 SetupAPI functions use the **SourceDisksNames** and **SourceDisksNames.**<em>architecture</em> sections that are in the same INF file as the relevant [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) section.
 
-Examples
---------
+## Examples
 
 In the following example, the *write.exe* file is the same for all Windows platforms and is located in the *\\common* subdirectory, under the installation root, on a CD-ROM distribution disc. The *cmd.exe* file is a platform-specific file that is only used on x86-based platforms.
 

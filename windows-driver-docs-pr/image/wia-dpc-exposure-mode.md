@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application changes the WIA\_DPC\_EXPOSURE\_MODE property to control the exposure mode of the camera device.
 
@@ -80,8 +79,7 @@ The following table describes the constants that are valid with WIA\_DPC\_EXPOSU
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ The client uses the KSPROPERTY\_PIN\_GLOBALCINSTANCES to determine the current n
 
  
 
-Remarks
--------
+## Remarks
 
 Specify this property using KSP\_PIN, where the **PinId** member specifies the pin factory.
 
@@ -80,8 +79,7 @@ The class driver does not handle this property; the stream minidriver must provi
 
 KSPROPERTY\_PIN\_GLOBALCINSTANCES specifies the absolute current and maximum number of instances, over all instances of the filter. To determine per-filter values, use [**KSPROPERTY\_PIN\_CINSTANCES**](ksproperty-pin-cinstances.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

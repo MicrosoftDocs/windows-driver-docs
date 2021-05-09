@@ -52,8 +52,7 @@ Clients use KSPROPERTY\_BDA\_SYMBOL\_RATE to control the symbol rate of a demodu
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the symbol rate.
 

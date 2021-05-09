@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Device drivers can optionally handle an **IRP\_MJ\_SET\_INFORMATION** request.
 
-When Sent
----------
+## When Sent
 
 The operating system sends an **IRP\_MJ\_SET\_INFORMATION** request to set metadata about a file or file handle. For example, when a driver calls [**ZwSetInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile), the operating system sends an **IRP\_MJ\_SET\_INFORMATION** request.
 
@@ -31,15 +30,13 @@ The **Parameters.SetFile.Length** member specifies the length of the buffer that
 
 None
 
-Operation
----------
+## Operation
 
 Drivers are not required to handle this request, and drivers that do are not required to handle every possible value of **Parameters.SetFile.FileInformationClass**. The driver's dispatch routine should return an error code such as STATUS\_INVALID\_DEVICE\_REQUEST for any values that it does not handle.
 
 Not all of the possible values of [**FILE\_INFORMATION\_CLASS**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_file_information_class) can occur.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

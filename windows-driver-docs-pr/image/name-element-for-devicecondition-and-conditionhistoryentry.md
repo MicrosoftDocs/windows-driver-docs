@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Name** element names the current error condition that is specified in a [**DeviceCondition**](devicecondition.md) or [**ConditionHistoryEntry**](conditionhistoryentry.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Name>
@@ -26,13 +25,11 @@ Usage
 </wscn:Name>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -116,8 +113,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Some error names are valid for only certain [**Component**](component.md) elements.
 

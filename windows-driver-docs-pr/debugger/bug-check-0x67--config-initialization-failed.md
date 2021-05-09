@@ -57,8 +57,7 @@ The CONFIG\_INITIALIZATION\_FAILED bug check has a value of 0x00000067. This bug
 
  
 
-Cause
------
+## Cause
 
 The registry could not allocate the pool that it needed to contain the registry files. This situation should never occur, because the register allocates this pool early enough in system initialization so that plenty of paged pool should be available.
 

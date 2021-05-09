@@ -23,8 +23,7 @@ ms.localizationpriority: medium
 
 The **AvgJobSize** property enables an ASP Web page to determine the average job size in a sequence of print jobs.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_AvgJobSize(
@@ -32,14 +31,12 @@ HRESULT get_AvgJobSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives the average job size. For more information about this parameter, see the following Remarks section.
 
-Return value
-------------
+## Return value
 
 This method returns S\_OK on success.
 
@@ -58,8 +55,7 @@ objPrinter.CalcJobETA
 JobSizeAvg = objPrinter.AvgJobSize
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

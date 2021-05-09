@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WAN\_FRAGMENT status indicates that a WAN-capable miniport driver has received a partial packet from a remote node.
 
-Remarks
--------
+## Remarks
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later miniport drivers should use the CoNDIS WAN interface. For more information about NDIS\_STATUS\_WAN\_FRAGMENT, see [**NDIS\_STATUS\_WAN\_CO\_FRAGMENT**](ndis-status-wan-co-fragment.md).
 
@@ -21,8 +20,7 @@ The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions
 
 For more information about NDIS\_STATUS\_WAN\_FRAGMENT, see [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546867(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

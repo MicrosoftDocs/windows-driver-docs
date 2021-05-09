@@ -60,15 +60,13 @@ The property value (operation data) is of type BOOL. Setting this value to **TRU
 
 A KSPROPERTY\_AEC\_NOISE\_FILL\_ENABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 An AEC node inserts background comfort noise into the capture stream in order to avoid the unnatural silence that occurs when the captured data stream is set to zero after perfect echo cancellation.
 
 When the filter containing the AEC node is created or the node is reset, background noise filling is disabled by default.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

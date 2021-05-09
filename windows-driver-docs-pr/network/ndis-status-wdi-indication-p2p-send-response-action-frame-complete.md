@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

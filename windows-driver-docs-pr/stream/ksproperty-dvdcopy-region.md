@@ -56,13 +56,11 @@ The KSPROPERTY\_DVDCOPY\_REGION property specifies the DVD copy-protection regio
 
 The property value (operation data) is a KS\_DVDCOPY\_REGION structure that describes the region code for the nationality or language.
 
-Remarks
--------
+## Remarks
 
 For more information about language restrictions, see [DVD Regionalization](./dvd-regionalization.md) and [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

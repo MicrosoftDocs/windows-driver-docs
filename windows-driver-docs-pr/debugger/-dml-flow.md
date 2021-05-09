@@ -30,8 +30,7 @@ The address of an instruction from which the target address can be reached.
 <span id="Target"></span><span id="target"></span><span id="TARGET"></span>*Target*  
 An address in the code block to be disassembled.
 
-Remarks
--------
+## Remarks
 
 Consider the call stack shown in the following example.
 

@@ -22,8 +22,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
      
 
-Remarks
--------
+## Remarks
 
 Overlying drivers and user-mode applications issue OID method requests of OID\_NIC\_SWITCH\_ENUM\_VFS to enumerate the VFs attached to a network adapter's NIC switch.
 
@@ -86,8 +85,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VFS request, it returns one of the
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -34,8 +34,7 @@ No additional parameters. The data in the header is sufficient.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

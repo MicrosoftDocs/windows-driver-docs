@@ -48,8 +48,7 @@ Specifies a PNPISA Card. If *Card* is 0 or omitted, all the devices and cards on
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

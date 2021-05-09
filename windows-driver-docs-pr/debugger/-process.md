@@ -71,8 +71,7 @@ Kdexts.dll
 
 For information about processes in kernel mode, see [Changing Contexts](changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The following is an example of a **!process 0 0** display:
 

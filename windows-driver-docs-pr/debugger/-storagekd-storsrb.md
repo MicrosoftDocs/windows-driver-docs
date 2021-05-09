@@ -44,8 +44,7 @@ Specifies the address of the SRB.
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storsrb** display:
 

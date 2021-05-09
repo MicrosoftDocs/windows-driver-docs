@@ -24,8 +24,7 @@ This rule verifies that if the StorPort miniport's **StorPortBuildIo** routine r
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

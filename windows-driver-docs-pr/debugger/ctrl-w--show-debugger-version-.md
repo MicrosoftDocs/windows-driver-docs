@@ -59,8 +59,7 @@ CTRL+ALT+W
 
  
 
-Remarks
--------
+## Remarks
 
 This has the same effect as the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command, except that the latter command displays the Windows operating system version as well.
 

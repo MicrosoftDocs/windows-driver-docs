@@ -102,8 +102,7 @@ This default handler provides a way for dispatch routines to fulfill the require
 
 For more information, see the [DRIVER_DISPATCH](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
-See also
---------
+## See also
 
 [KsAddDevice](/windows-hardware/drivers/ddi/ks/nf-ks-ksadddevice)
 

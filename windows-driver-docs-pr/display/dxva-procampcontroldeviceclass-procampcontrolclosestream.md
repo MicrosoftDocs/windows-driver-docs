@@ -18,8 +18,7 @@ ms.custom: seodec18
 
 The sample **ProcAmpCloseStream** function closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcAmpControlCloseStream(
@@ -27,19 +26,16 @@ HRESULT ProcAmpControlCloseStream(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 **
 None
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure, which points to the driver-supplied [*DdMoCompDestroy*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback.
 

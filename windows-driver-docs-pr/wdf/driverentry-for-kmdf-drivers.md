@@ -17,8 +17,7 @@ ms.date: 10/17/2018
 
 **DriverEntry** is the first driver-supplied routine that is called after a driver is loaded. It is responsible for initializing the driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS DriverEntry(
@@ -27,8 +26,7 @@ NTSTATUS DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DriverObject* \[in\]  
 A pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure that represents the driver's WDM driver object.
@@ -36,13 +34,11 @@ A pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dr
 *RegistryPath* \[in\]  
 A pointer to a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that specifies the path to the driver's [Parameters key](./introduction-to-registry-keys-for-drivers.md) in the registry.
 
-Return value
-------------
+## Return value
 
 If the routine succeeds, it must return STATUS\_SUCCESS. Otherwise, it must return one of the error status values that are defined in *ntstatus.h*.
 
-Remarks
--------
+## Remarks
 
 Like all WDM drivers, framework-based drivers must have a **DriverEntry** routine, which is called after the driver is loaded. A framework-based driver's **DriverEntry** routine must:
 
@@ -90,8 +86,7 @@ DriverEntry(
 }
 ```
 
-Examples
---------
+## Examples
 
 The following code example shows the Serial (KMDF) sample driver's **DriverEntry** routine.
 

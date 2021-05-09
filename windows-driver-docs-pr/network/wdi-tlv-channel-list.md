@@ -31,8 +31,7 @@ The size (in bytes) of the array of [**WDI\_CHANNEL\_MAPPING\_ENTRY**](/windows-
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

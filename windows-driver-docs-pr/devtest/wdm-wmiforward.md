@@ -27,8 +27,7 @@ For more information about processing WMI minor IRPs, see [**WMI Requirements fo
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -53,14 +52,12 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver)
-See also
---------
+## See also
 
 [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md)
 [**Handling WMI Requests**](../kernel/handling-wmi-requests.md)

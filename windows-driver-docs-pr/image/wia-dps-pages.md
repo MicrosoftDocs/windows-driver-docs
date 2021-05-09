@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE (from zero through the maximum number of pages th
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_PAGES property to determine a document feeder's page capacity. The application also sets this property to the number of pages it is going to scan. The WIA minidriver creates and maintains WIA\_DPS\_PAGES.
 
@@ -63,8 +62,7 @@ If you set WIA\_DPS\_PAGES to 1, the scanner will process one of the sides of th
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

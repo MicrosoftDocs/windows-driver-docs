@@ -65,8 +65,7 @@ This example shows three dump files are loaded. System 1 is active and system 2 
 ```
 
 
-Remarks
--------
+## Remarks
 
 To work with multiple systems, you can use the [.opendump](-opendump--open-dump-file-.md) to debug multiple crash dumps at the same time. For more information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 

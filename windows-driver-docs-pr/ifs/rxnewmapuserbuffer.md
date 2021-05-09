@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 **RxNewMapUserBuffer** returns the user buffer address used for low I/O.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PVOID RxNewMapUserBuffer(
@@ -28,19 +27,16 @@ PVOID RxNewMapUserBuffer(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in\]  
 A pointer to the RX\_CONTEXT structure for this request.
 
-Return value
-------------
+## Return value
 
 **RxNewMapUserBuffer** returns a mapped address pointer on success or **NULL** on failure.
 
-Remarks
--------
+## Remarks
 
 If an MDL exists, then the assumption is that the MDL describes the user buffer, and the system address for the MDL is returned by **RxNewMapUserBuffer**. Otherwise, the user buffer is returned directly by **RxNewMapUserBuffer**.
 
@@ -48,8 +44,7 @@ The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress
 
 Note that the **RxNewMapUserBuffer** routine is only available on Windows XP and Windows 2000.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

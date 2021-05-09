@@ -22,8 +22,7 @@ If the OID query request completes successfully, the **InformationBuffer** membe
 
      
 
-Remarks
--------
+## Remarks
 
 The OID\_SWITCH\_PORT\_ARRAY OID must only be issued when the Hyper-V extensible switch has completed activation. Please see [Querying the Hyper-V Extensible Switch Configuration](./querying-the-hyper-v-extensible-switch-configuration.md) for more details.
 
@@ -66,8 +65,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

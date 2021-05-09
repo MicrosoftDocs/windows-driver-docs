@@ -100,8 +100,7 @@ A miniport driver must not call the [**NdisMOidRequestComplete**](/windows-hardw
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00091001)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -121,8 +120,7 @@ How to test
 
  
 
-Applies to
-----------
+## Applies to
 
 [**MiniportDevicePnPEventNotify**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_device_pnp_event_notify)
 [**MiniportOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)

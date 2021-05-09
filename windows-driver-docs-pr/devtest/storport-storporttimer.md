@@ -19,8 +19,7 @@ The **HW\_TIMER** routine must be defined if a call to **StorPortNotification(Re
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortNotification**](/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification)

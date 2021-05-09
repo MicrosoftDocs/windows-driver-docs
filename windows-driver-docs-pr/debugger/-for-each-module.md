@@ -186,8 +186,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
 For more information about how to define and use aliases as shortcuts for entering character strings (including use of the ${ } token), see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!for\_each\_module** extension displays general information about the loaded modules. This information is similar to the information that the following command shows.
 

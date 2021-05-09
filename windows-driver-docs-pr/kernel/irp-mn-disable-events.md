@@ -14,13 +14,11 @@ Any WMI driver that registers one or more event blocks must handle this IRP. A d
 
 If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_DISABLE\_EVENTS** request, WMI in turn calls that driver's [*DpWmiFunctionControl*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_function_control_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 WMI sends this IRP to inform the driver that a data consumer has requested no further notification of an event.
 
@@ -51,8 +49,7 @@ STATUS\_INVALID\_DEVICE\_REQUEST
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
@@ -68,8 +65,7 @@ It is unnecessary for the driver to check whether events are already disabled fo
 
 For details about defining event blocks, see [Designing WMI Data and Event Blocks](./designing-wmi-data-and-event-blocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

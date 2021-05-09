@@ -54,8 +54,7 @@ This property returns the minimum number of pins that the pin factory must insta
 
  
 
-Remarks
--------
+## Remarks
 
 Specify this property using KSP\_PIN, where the member specifies the relevant pin factory.
 
@@ -63,8 +62,7 @@ KSPROPERTY\_PIN\_NECESSARYINSTANCES returns a value of type ULONG, specifying th
 
 The class driver does not handle this property; the stream minidriver must provide handling on its own.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

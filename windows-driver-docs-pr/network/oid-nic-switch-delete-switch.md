@@ -20,8 +20,7 @@ NDIS issues this OID set request to the miniport driver of the network adapter's
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_DELETE\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_delete_switch_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 An OID set request of OID\_NIC\_SWITCH\_DELETE\_SWITCH deletes a NIC switch that was previously created through an OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](oid-nic-switch-create-switch.md).
 
@@ -117,8 +116,7 @@ NDIS returns one of the following status codes for this request:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

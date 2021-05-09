@@ -56,13 +56,11 @@ The KSPROPERTY\_TVAUDIO\_CURRENTLY\_AVAILABLE\_MODES property retrieves TV audio
 
 The property value (operation data) is a ULONG that specifies the currently available TV audio modes, such as stereo or mono audio and multiple language settings.
 
-Remarks
--------
+## Remarks
 
 The **Mode** member of the KSPROPERTY\_TVAUDIO\_S structure specifies the audio mode. It contains a bitwise ORing of the KS\_TVAUDIO\_MODE\_\* flags indicating the modes supported by the device at the time the information was requested.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

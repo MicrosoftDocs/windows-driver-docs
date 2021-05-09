@@ -61,8 +61,7 @@ The CLUSTER\_SVHDX\_LIVEDUMP bug check has a value of 0x0000019D. This indicates
 
  
 
-Cause
------
+## Cause
 
 When SVHDX detects that current state might cause some sort of inconsistency it will generate live dump with this status code. Parameter1 has code pointing to what scenario this live dump is created for. Other parameters should be interpreted in context of the reason code.
 

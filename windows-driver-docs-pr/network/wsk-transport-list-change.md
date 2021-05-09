@@ -61,8 +61,7 @@ An IRP is required for this client control operation.
 
 The WSK subsystem will cancel any pending IRPs if the WSK application calls [**WskDeregister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) to detach itself from the WSK subsystem.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

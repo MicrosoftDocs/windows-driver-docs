@@ -58,8 +58,7 @@ Displays details about the pending IRPs.
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The list of pending UM IRPs that are displayed have either been presented to the driver or are waiting to be presented to the driver.
 

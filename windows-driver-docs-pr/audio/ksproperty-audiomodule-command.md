@@ -57,15 +57,13 @@ The property value type is a undefined. The implementer can create a module spec
 
 **KSPROPERTY\_AUDIOMODULE\_COMMAND** returns audio module command specific information.
 
-Remarks
--------
+## Remarks
 
 Support for the **KSPROPERTY\_AUDIOMODULE\_COMMAND** property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [**KSAUDIOMODULE\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the **KSAUDIOMODULE\_PROPERTY** in the input buffer to send custom commands.
 
 For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

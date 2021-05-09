@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type KSAUDIO\_POSITION tha
 
 A KSPROPERTY\_AUDIO\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound uses the KSPROPERTY\_AUDIO\_POSITION property to implement the **IDirectSoundBuffer::GetCurrentPosition** and **IDirectSoundBuffer::SetCurrentPosition** methods. The Windows multimedia functions **waveInGetPosition** and **waveOutGetPosition** also use this property. For more information about DirectSound and the Windows multimedia functions, see the Microsoft Windows SDK documentation.
 
@@ -69,8 +68,7 @@ WaveCyclic and WavePci miniport drivers do not need to implement property handle
 
 For more information, see [Audio Position Property](./audio-position-property.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000007E.
 </tbody>
 </table>
 
-Cause
------
+## Cause
 
 This bug check indicates that a system thread generated an exception that the error handler did not catch. To interpret it, you must identify which exception was generated.
 
@@ -70,8 +69,7 @@ Common exception codes include the following:
 For a complete list of exception codes, see [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
 
-Resolution
-----------
+## Resolution
 
 If you plan to debug this problem, the exception address (parameter 2) should identify the driver or function that caused this problem.
 
@@ -94,8 +92,7 @@ For more information about WinDbg and **!analyze**, see the following topics:
  - [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
 
-Remarks
--------
+## Remarks
 
 If you are not equipped to use the Windows debugger to work on this problem, you should use some basic troubleshooting techniques:
 

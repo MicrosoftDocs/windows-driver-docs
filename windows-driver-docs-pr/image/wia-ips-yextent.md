@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_YEXTENT property to mark the upper-left corner (that is, the height) of a selection area to acquire. The WIA minidriver creates and maintains this property.
 
@@ -45,8 +44,7 @@ A driver must also update the [**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md), WIA\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

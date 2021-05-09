@@ -21,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiUpdatePageDirectory* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS APIENTRY DxgkDdiUpdatePageDirectory(
@@ -31,8 +30,7 @@ NTSTATUS APIENTRY DxgkDdiUpdatePageDirectory(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hDevice*
 This parameter is reserved for system use.
@@ -40,8 +38,7 @@ This parameter is reserved for system use.
 *pUpdatePageDirectory*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

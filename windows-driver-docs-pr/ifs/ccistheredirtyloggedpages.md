@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CcIsThereDirtyLoggedPages** routine determines whether a volume contains any files that have dirty log data in the system cache.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 BOOLEAN CcIsThereDirtyLoggedPages(
@@ -29,8 +28,7 @@ BOOLEAN CcIsThereDirtyLoggedPages(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DeviceObject* \[in\]  
 A pointer to a device object associated with the volume to check.
@@ -38,20 +36,17 @@ A pointer to a device object associated with the volume to check.
 *NumberOfDirtyPages* \[in, optional\]  
 An optional pointer to an **ULONG** buffer that receives the number of dirty log pages on the volume associated with *DeviceObject*.
 
-Return value
-------------
+## Return value
 
 The **CcIsThereDirtyLoggedPages** routine returns **TRUE** if the volume contains one or more cached files whose log data has been modified in the cache, but not yet flushed to disk. Otherwise, this routine returns **FALSE**.
 
-Remarks
--------
+## Remarks
 
 This routine will return **TRUE** if any dirty log pages exist. It will also return **TRUE** if there are any log pages currently queued to the volume.
 
 Unlike [**CcIsThereDirtyDataEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccistheredirtydataex), the **CcIsThereDirtyLoggedPages** routine uses a file system device object to locate the volume cache information to check for dirty log pages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

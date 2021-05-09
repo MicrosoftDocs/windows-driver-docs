@@ -48,8 +48,7 @@ Specifies the number of the breakpoint to be cleared. An asterisk (\*) indicates
 
  
 
-Remarks
--------
+## Remarks
 
 This will permanently delete a breakpoint set with [**!ubp**](-ubp.md).
 

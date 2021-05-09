@@ -91,8 +91,7 @@ Deletes a 4096-byte block of the cache, beginning at *Address*.
 
  
 
-Remarks
--------
+## Remarks
 
 If **.cache** is used with no arguments, the current cache size, status, and options are displayed.
 

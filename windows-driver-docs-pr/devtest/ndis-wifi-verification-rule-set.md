@@ -113,8 +113,7 @@ ms.localizationpriority: medium
 
  
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

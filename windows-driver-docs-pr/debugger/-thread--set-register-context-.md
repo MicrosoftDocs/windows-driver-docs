@@ -70,8 +70,7 @@ The address of the thread. If this is omitted or zero, the thread context is res
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 Generally, when you are doing kernel debugging, the only visible registers are the ones associated with the current thread.
 

@@ -57,15 +57,13 @@ The MUST\_SUCCEED\_POOL\_EMPTY bug check has a value of 0x00000041. This indicat
 
  
 
-Cause
------
+## Cause
 
 No driver is permitted to request must-succeed pool.
 
 If a must-succeed request cannot be filled, this bug check is issued.
 
-Resolution
-----------
+## Resolution
 
 Replace or rewrite the driver which is making the request. A driver should not request must-succeed pool. Instead, it should ask for normal pool and gracefully handle the scenario where the pool is temporarily empty.
 

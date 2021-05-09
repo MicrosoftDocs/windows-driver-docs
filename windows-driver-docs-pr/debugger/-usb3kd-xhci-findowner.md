@@ -32,13 +32,11 @@ Virtual or physical address of a common buffer.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 A common buffer is a block of physically contiguous memory that’s addressable by hardware. The USB 3.0 driver stack uses common buffers to communicate with USB 3.0 host controllers. Suppose the system crashes, and you come across an address that you suspect might be common buffer memory. If the address is common buffer memory, this command tells you which USB 3.0 host controller the memory belongs to (in case you that you have more than one USB 3.0 controller) and what the memory is used for.
 
-Examples
---------
+## Examples
 
 The following example calls [**!xhci\_resourceusage**](-usb3kd-xhci-resourceusage.md) to list the addresses of some common buffers.
 

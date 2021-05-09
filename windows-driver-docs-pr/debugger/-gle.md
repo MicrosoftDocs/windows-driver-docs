@@ -54,8 +54,7 @@ Ntsdexts.dll</td>
 
 For more information about the [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) routine, see the Micorosft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 The **!gle** extension displays the value of [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) and tries to decode this value.
 

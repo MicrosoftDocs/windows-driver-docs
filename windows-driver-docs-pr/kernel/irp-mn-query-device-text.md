@@ -18,13 +18,11 @@ Bus drivers must handle this request for their child devices if the bus supports
 
 0x0C
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends two of these IRPs when a device is enumerated: one to query the device description and one to query the location information.
 
@@ -49,8 +47,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 On success, a bus driver sets **Irp-&gt;IoStatus.Information** to a pointer to a driver-allocated block of memory containing a WCHAR buffer with the requested information. On an error, the bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 Bus drivers are strongly encouraged to return device descriptions for their child devices. This string is displayed in the **Found New Hardware** pop-up window if no INF match is found for the device.
 
@@ -70,8 +67,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

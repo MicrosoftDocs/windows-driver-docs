@@ -148,8 +148,7 @@ The following constants are used to specify the handling status of an exception 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

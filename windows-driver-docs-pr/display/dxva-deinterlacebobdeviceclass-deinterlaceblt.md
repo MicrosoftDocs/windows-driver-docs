@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The sample *DeinterlaceBlt* function performs deinterlace or frame-rate conversion by writing the output to a destination surface.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 HRESULT DeinterlaceBlt(
@@ -32,8 +31,7 @@ HRESULT DeinterlaceBlt(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *rtTargetFrame* \[in\]
 Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a reference sample, as defined in the [**DXVA_VideoSample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample) structure, or the midpoint between the starting display time and the ending display time. For more information, see the [**DXVA_DeinterlaceBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlaceblt) structure.
@@ -60,13 +58,11 @@ Indicates the number of surfaces in the **lpDDSrcSurfaces** array.
 *fAlpha* \[in\]
 Indicates the alpha value for the surface. A value of 0.0F indicates a transparent surface. A value of 1.0F indicates an opaque surface.
 
-Return value
-------------
+## Return value
 
 Returns zero (S_OK or DD_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure. The DD_RENDERMOCOMPDATA structure is filled as follows.
 

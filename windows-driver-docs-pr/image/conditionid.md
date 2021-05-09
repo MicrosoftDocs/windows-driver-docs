@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ConditionId** element uniquely identifies the device condition that was just cleared.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ConditionId>
@@ -26,13 +25,11 @@ Usage
 </wscn:ConditionId>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. An integer value that is equivalent to the Id attribute of a previously reported DeviceCondition element.
 
@@ -60,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ConditionId** element must be the **Id** attribute of a **DeviceCondition** element that the WSD Scan Service previously reported through [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md).
 

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ScannerLocation** element specifies the administratively assigned location of the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerLocation xml:lang="..."
@@ -27,8 +26,7 @@ Usage
 </wscn:ScannerLocation xml:lang="...">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -56,8 +54,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 A character string that specifies the scanner's location.
 
@@ -85,13 +82,11 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The configuration of the **ScannerLocation** element's value is implementation-specific; for example, you can configure this value through the scanner's local console or the device's web server. A scan device can return multiple versions of this element to enable support for multiple localized languages by using the **xml:lang** attribute.
 
-Examples
---------
+## Examples
 
 The following code example shows how you can use the ScannerLocation element.
 

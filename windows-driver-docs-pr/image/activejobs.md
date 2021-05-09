@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ActiveJobs** element contains a list of all currently active scan jobs.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ActiveJobs>
@@ -26,8 +25,7 @@ Usage
 </wscn:ActiveJobs>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ActiveJobs** element contains all jobs that have not yet completed processing. The state of active jobs could be scanning, pending, or stopped. **ActiveJobs** is empty when there are no currently active jobs.
 

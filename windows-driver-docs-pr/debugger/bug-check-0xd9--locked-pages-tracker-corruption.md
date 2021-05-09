@@ -77,8 +77,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The error is indicated by the value of Parameter 1.
 

@@ -18,8 +18,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 
 
-Remarks
--------
+## Remarks
 
 Miniport drivers obtain the local NDIS QoS parameters through an OID method request of OID\_QOS\_PARAMETERS. These parameters define how the network adapter prioritizes transmit, or *egress*, packets. For more information about these parameters, see [Overview of NDIS QoS Parameters](./overview-of-ndis-qos-parameters.md).
 
@@ -110,8 +109,7 @@ The miniport driver returns one of the following status codes.
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

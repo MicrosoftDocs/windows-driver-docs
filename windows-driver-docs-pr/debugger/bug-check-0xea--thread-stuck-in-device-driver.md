@@ -58,15 +58,13 @@ The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This 
 
  
 
-Cause
------
+## Cause
 
 A device driver is spinning in an infinite loop, most likely waiting for hardware to become idle.
 
 This usually indicates problem with the hardware itself, or with the device driver programming the hardware incorrectly. Frequently, this is the result of a bad video card or a bad display driver.
 
-Resolution
-----------
+## Resolution
 
 Use the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command together with Parameter 1. Then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to find the location where the thread is stuck.
 

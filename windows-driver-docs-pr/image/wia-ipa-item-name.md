@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The *item name* is the same as the item name that is specified in a call to the [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function.
 
 An application reads the WIA\_IPA\_ITEM\_NAME property to determine which item it is currently using. Each item must have a unique name. The WIA service creates and maintains WIA\_IPA\_ITEM\_NAME.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

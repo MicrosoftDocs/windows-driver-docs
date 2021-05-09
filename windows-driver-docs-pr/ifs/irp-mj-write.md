@@ -123,8 +123,7 @@ Key value associated with a byte-range lock on the target file.
 
 Length in bytes of the data to be written. If the write operation is successful, the number of bytes written is returned in the **Information** member of the IO\_STATUS\_BLOCK structure pointed to by *Irp-&gt;IoStatus*.
 
-Remarks
--------
+## Remarks
 
 File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When processing pre-read or pre-write operations, filters that allocate and swap buffers need to round the size of an allocated buffer up to a multiple of the sector size of the associated device. If they do not, the length of data transferred from the underlying file system will exceed the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](/samples/browse/).
 

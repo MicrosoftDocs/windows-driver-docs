@@ -57,8 +57,7 @@ The NO\_MORE\_IRP\_STACK\_LOCATIONS bug check has a value of 0x00000035. This bu
 
  
 
-Cause
------
+## Cause
 
 A higher-level driver has attempted to call a lower-level driver through the **IoCallDriver** interface, but there are no more stack locations in the packet. This will prevent the lower-level driver from accessing its parameters.
 

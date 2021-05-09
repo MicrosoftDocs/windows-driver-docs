@@ -35,8 +35,7 @@ Cipher keys that are marked as Static should not be cleared on a roam. They can 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

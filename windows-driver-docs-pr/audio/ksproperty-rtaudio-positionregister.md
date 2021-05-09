@@ -61,8 +61,7 @@ The property value (operation data) is a KSRTAUDIO\_HWREGISTER structure into wh
 
 A KSPROPERTY\_RTAUDIO\_POSITIONREGISTER property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 Typically, audio applications must monitor the current position of an audio stream. This position is specified as a byte offset from the beginning of the stream:
 
@@ -88,8 +87,7 @@ The mapping of the position register is destroyed when the pin closes. The clien
 
 It is typically faster to read the position register than it is to send a KSPROPERTY\_AUDIO\_POSITION request, which requires transitions between user-mode and kernel-mode for user-mode clients.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

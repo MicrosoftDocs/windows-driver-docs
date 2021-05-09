@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_PRINTER\_ENDORSER** property.
 
@@ -97,8 +96,7 @@ The following table describes the optional values for the **WIA\_IPS\_PRINTER\_E
 
 This property must be supported by all Imprinter/Endorser data source items. The required default value is **WIA\_PRINTER\_ENDORSER\_DISABLED**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](./dispatchread--dispatchwrite--and-dispatchreadwrite-routines.md) or [*DispatchReadWrite*](./dispatchread--dispatchwrite--and-dispatchreadwrite-routines.md) routine, as must any higher-level driver layered over such a device driver.
 
-When Sent
----------
+## When Sent
 
 Any time following the successful completion of a create request.
 
@@ -39,15 +38,13 @@ Depending on whether the underlying device driver sets up the target device obje
 
 None
 
-Operation
----------
+## Operation
 
 On receipt of a write request, a higher-level driver sets up the I/O stack location in the IRP for the next-lower driver, or it creates and sets up additional IRPs for one or more lower drivers. It can set up its [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, which is optional for the input IRP but required for driver-created IRPs, by calling [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine). Then, the driver passes the request on to the next-lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 On receipt of a write request, a device driver transfers data from system memory to its device. The device driver sets the **Information** field of the I/O status block to the number of bytes transferred when it completes the IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,15 +44,13 @@ The GUID_DEVINTERFACE_TAPE [device interface class](./overview-of-device-interfa
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [tape class driver](../storage/tape-drivers-overview.md) registers an instance of GUID_DEVINTERFACE_TAPE to notify the operating system and applications of the presence of tape storage devices.
 
 For more information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

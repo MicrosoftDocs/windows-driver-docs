@@ -32,8 +32,7 @@ Address of the physical device object (PDO) of a device that is connected to a U
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the PDO of a USB device. Enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

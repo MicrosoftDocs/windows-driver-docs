@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **JobStateReason** element specifies one reason why a job is in its current state.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobStateReason>
@@ -26,13 +25,11 @@ Usage
 </wscn:JobStateReason>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -128,8 +125,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 You must support the values that represent conditions that WSD Scan Service implementations can detect. Therefore, you can support only a subset of allowed values if specific **JobStateReason** reasons are undetectable in your implementation.
 

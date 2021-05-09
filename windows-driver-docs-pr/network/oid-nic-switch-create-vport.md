@@ -16,8 +16,7 @@ Overlying drivers issue this OID method request to the miniport driver for the n
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 The overlying driver initializes the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure with the configuration information about the nondefault VPort to be created. The configuration information includes the PCIe function to which the nondefault VPort is attached and the number of queue pairs for the nondefault VPort.
 
@@ -78,8 +77,7 @@ NDIS or the PF miniport driver returns one of the following status codes for the
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

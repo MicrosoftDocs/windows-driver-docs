@@ -80,8 +80,7 @@ A null-terminated string that specifies the file name.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Size, in bytes, of the data returned in the buffer that is pointed to by the *OutputBuffer* parameter.
 
-Remarks
--------
+## Remarks
 
 When [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) process the **FSCTL\_FIND\_FILES\_BY\_SID** control code, these routines check every file and directory on the volume. This operation might be slow if there are many files on the volume, even if the directory to search is very small.
 

@@ -14,8 +14,7 @@ An overlying driver issues an object identifier (OID) set request of OID\_SRIOV\
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SRIOV\_SET\_VF\_POWER\_STATE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_set_vf_power_state_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 When the PF miniport driver is issued this OID set request, it must follow these guidelines:
 
@@ -66,8 +65,7 @@ The PF miniport driver returns one of the following status codes for the OID set
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object's driver-defined context information into the object's [**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
@@ -24,8 +23,7 @@ void WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_attributes*   
 A pointer to an object's [**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
@@ -33,13 +31,11 @@ A pointer to an object's [**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/d
 *_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
 
-Return value
-------------
+## Return value
 
 This macro does not return a value.
 
-Remarks
--------
+## Remarks
 
 You should use the WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro after calling [**WDF_OBJECT_ATTRIBUTES_INIT**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init).
 
@@ -47,8 +43,7 @@ For more information about using the WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macr
 
 For a code example that uses this macro, see [**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

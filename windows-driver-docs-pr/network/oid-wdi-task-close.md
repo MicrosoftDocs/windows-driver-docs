@@ -28,8 +28,7 @@ None
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE](ndis-status-wdi-indication-close-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,15 +44,13 @@ The KSCATEGORY_BDA_NETWORK_EPG [device interface class](./overview-of-device-int
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_EPG to indicate to the operating system that the devices support a BDA EPG filter.
 
 For more information, see [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

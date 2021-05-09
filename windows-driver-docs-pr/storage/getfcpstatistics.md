@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetFCPStatistics** WMI method returns FCP traffic statistics for the indicated SCSI logical unit on the indicated local HBA.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetFCPStatistics(
@@ -31,8 +30,7 @@ void GetFCPStatistics(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
 On return, contains a WMI qualifier value that indicates the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFCPStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_out) structure.
@@ -43,18 +41,15 @@ On return, contains a structure of type [**HBAScsiID**](/windows-hardware/driver
 *FC4Statistics*   
 On return, contains a structure of type [**MSFC\_FC4STATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics) that holds statistics for the indicated SCSI logical unit. The miniport driver returns this information in the **FC4Statistics** member of a [**GetFCPStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

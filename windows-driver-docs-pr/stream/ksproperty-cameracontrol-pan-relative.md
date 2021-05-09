@@ -85,8 +85,7 @@ The property value (operation data) is a LONG that specifies a camera's relative
 
  
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the [**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) structure specifies the relative pan.
 
@@ -98,8 +97,7 @@ When making a set request, the client should supply one of the values in the pre
 
 When making a get request, the client receives one of the values in the preceding table in the **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure. The value indicates the current pan status of the camera.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

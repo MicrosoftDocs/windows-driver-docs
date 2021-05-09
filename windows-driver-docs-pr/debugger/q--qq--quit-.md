@@ -50,8 +50,7 @@ qq
 
  
 
-Remarks
--------
+## Remarks
 
 In user-mode debugging, the **q** command ends the debugging session and closes the target application.
 

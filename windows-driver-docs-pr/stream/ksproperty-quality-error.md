@@ -54,15 +54,13 @@ The KSPROPERTY\_QUALITY\_ERROR property is an optional property that should be i
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_QUALITY\_ERROR has a property value of type [**KSQUALITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality) structure. Use this structure to get or set the proportion of frames currently being used and the delta from optimal frame receipt time.
 
 The class driver does not handle this property; the stream minidriver must provide handling on its own.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

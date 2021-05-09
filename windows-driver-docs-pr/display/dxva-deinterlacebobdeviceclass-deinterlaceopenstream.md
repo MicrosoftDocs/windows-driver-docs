@@ -18,8 +18,7 @@ ms.custom: seodec18
 
 The sample *DeinterlaceOpenStream* function creates and opens a deinterlace stream object.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT DeinterlaceOpenStream(
@@ -27,19 +26,16 @@ HRESULT DeinterlaceOpenStream(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpVideoDescription* \[in\]
 Supplies a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure that indicates the type of video to be deinterlaced or rate-converted. The pointer is passed to the driver so that the driver can support the resolution and format of the source video. For example, the driver might be able to perform a three-field adaptive deinterlace of 480i content, but it might only be able to bob 1080i content. All drivers should be able to support bob using the existing *bit-block transfer* hardware.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 After a deinterlace mode GUID is found using the [**DeinterlaceQueryAvailableModes**](dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes.md) function, the deinterlace stream object can be created. This object allows a display driver to reserve any hardware resources that are required to perform the requested deinterlace operations.
 

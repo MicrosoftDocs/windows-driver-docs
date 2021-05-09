@@ -101,13 +101,11 @@ Parameter 4 indicates the type of violation.
 
 The \_POOL\_TYPE codes are enumerated in ntddk.h. In particular, zero indicates nonpaged pool and one indicates paged pool.
 
-Cause
------
+## Cause
 
 A driver has written to an invalid section of the special pool.
 
-Resolution
-----------
+## Resolution
 
 Obtain a backtrace of the current thread. This backtrace will usually reveal the source of the error.
 

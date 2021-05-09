@@ -301,13 +301,11 @@ Expected tag is DmaVrfy0.
 
  
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for a description of the cause.
 
-Resolution
-----------
+## Resolution
 
 This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. You might also consider removing the driver that caused this problem.
 

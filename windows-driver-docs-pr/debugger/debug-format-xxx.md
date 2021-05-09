@@ -185,8 +185,7 @@ The following bit-flags apply to all crash dump files.
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -55,8 +55,7 @@ Specifies the hexadecimal selector value of the last selector to be displayed. I
 
  
 
-Remarks
--------
+## Remarks
 
 No more than 256 selectors can be displayed by this command.
 

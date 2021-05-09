@@ -52,8 +52,7 @@ The DEVPKEY_Device_InstallDate device property specifies the time stamp when the
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_InstallDate with the time stamp that specifies when the device instance was last installed in the system.
 
@@ -61,8 +60,7 @@ This time stamp value changes for each successive update of the device driver. F
 
 You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

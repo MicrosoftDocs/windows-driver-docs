@@ -42,8 +42,7 @@ The miniport driver returns a pointer to a [**DXVA\_COPPStatusOutput**](/windows
 
 The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to sizeof(DXVA\_COPPStatusOutput).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -35,8 +35,7 @@ Address of one of the following:
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

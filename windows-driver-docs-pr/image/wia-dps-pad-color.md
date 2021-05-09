@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPS\_PAD\_COLOR property should be reported as a vector of four BYTE values in the form of an RGBQUAD structure (which is described in the Microsoft Windows SDK documentation).
 
 An application reads WIA\_DPS\_PAD\_COLOR to get the padding color that is used.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

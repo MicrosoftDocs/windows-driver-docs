@@ -26,8 +26,7 @@ The IO1\_INITIALIZATION\_FAILED bug check has a value of 0x00000069. This bug ch
 
 None
 
-Cause
------
+## Cause
 
 There is very little information available to analyze this error.
 

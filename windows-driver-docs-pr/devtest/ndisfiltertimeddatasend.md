@@ -24,8 +24,7 @@ You can use a kernel debugger to help identify the cause of the problem. Check R
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) ( 0x00092011)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

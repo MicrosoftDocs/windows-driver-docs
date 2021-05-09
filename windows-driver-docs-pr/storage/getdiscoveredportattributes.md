@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetDiscoveredPortAttributes** WMI method retrieves the attributes for a specified remote Fibre Channel port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetDiscoveredPortAttributes(
@@ -32,8 +31,7 @@ void GetDiscoveredPortAttributes(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortIndex*   
 The index of the local port of type Nx\_Port through which to query the discovered remote port. This information is delivered to the miniport driver in the **PortIndex** member of a [**GetDiscoveredPortAttributes\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getdiscoveredportattributes_in) structure.
@@ -47,18 +45,15 @@ On return, contains a WMI qualifier value that indicates the status of the opera
 *PortAttributes*   
 A structure of type [**MSFC\_HBAPortAttributesResults**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults) in which attributes for the discovered FC\_Port may be returned. The miniport driver returns this information in the **PortAttributes** member of a [**GetDiscoveredPortAttributes\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getdiscoveredportattributes_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

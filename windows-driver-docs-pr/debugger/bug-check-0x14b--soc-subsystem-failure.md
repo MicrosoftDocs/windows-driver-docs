@@ -57,8 +57,7 @@ The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates 
 
  
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
@@ -110,8 +109,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

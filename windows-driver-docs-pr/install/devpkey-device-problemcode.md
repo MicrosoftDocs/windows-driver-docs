@@ -52,8 +52,7 @@ The DEVPKEY_Device_ProblemCode device property represents the problem code for a
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_Device_ProblemCode is one of the CM_PROB_*Xxx* problem codes that are defined in Cfg.h.
 
@@ -65,8 +64,7 @@ For info on finding problem status in Device Manager or the kernel debugger, see
 
 For additional information that may help with the problem code, see [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

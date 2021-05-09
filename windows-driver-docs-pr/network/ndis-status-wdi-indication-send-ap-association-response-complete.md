@@ -29,8 +29,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPO
 | [**WDI\_TLV\_PHY\_TYPE\_LIST**](./wdi-tlv-phy-type-list.md) |   |   | The list of PHY types. |
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

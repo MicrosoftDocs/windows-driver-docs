@@ -111,8 +111,7 @@ The REMOTE\_NDIS\_INITIALIZE\_CMPLT message is sent by the Remote NDIS device to
 
  
 
-Remarks
--------
+## Remarks
 
 The *Status* field should be set to RNDIS\_STATUS\_SUCCESS if the device initialized successfully; otherwise, it is set to an error code that indicates the failure. The device should return the highest Remote NDIS protocol version that it can support, in *MajorVersion* and *MinorVersion*--the combined version number should be less than or equal to the version number the host specified in the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](remote-ndis-initialize-msg.md) message.
 
@@ -124,8 +123,7 @@ In this message, the Remote NDIS device indicates the following:
 
 -   Maximum size in bytes of a single data transfer that the device expects to receive from the host. The device can specify the byte alignment it expects for each Remote NDIS message that is part of a multimessage transfer to it. This alignment value is specified in terms of powers of two. For example, this value is set to 3 to indicate 8-byte alignment.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

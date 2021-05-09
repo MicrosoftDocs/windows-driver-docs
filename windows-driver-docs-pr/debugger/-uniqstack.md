@@ -57,8 +57,7 @@ Causes frame numbers to be displayed.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension is similar to the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command, except that it does not display duplicate stacks.
 

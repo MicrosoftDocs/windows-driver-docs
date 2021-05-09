@@ -138,8 +138,7 @@ Specifies if the adapter, when given a set of service name instances, can perfor
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

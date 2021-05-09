@@ -38,8 +38,7 @@ If the send fails for any reason, an empty [NDIS\_STATUS\_WDI\_INDICATION\_SEND\
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPONSE\_COMPLETE](ndis-status-wdi-indication-send-ap-association-response-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

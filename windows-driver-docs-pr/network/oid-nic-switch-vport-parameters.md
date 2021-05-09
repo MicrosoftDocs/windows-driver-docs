@@ -22,8 +22,7 @@ The overlying driver specifies the VPort for the OID method or set request by se
 
 -   From a previous OID method request of [OID\_NIC\_SWITCH\_ENUM\_VPORTS](oid-nic-switch-enum-vports.md).
 
-Remarks
--------
+## Remarks
 
 OID\_NIC\_SWITCH\_VPORT\_PARAMETERS can be used in either [OID method requests](#oid-method-requests) or [OID set requests](#oid-set-requests).
 
@@ -94,8 +93,7 @@ NDIS or the PF miniport driver returns the following status code for set or meth
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

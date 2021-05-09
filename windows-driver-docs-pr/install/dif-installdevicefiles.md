@@ -99,8 +99,7 @@ If a [system-provided device installation component](./system-provided-device-in
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

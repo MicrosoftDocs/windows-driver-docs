@@ -90,8 +90,7 @@ A KSPROPERTY\_ RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT property request returns S
 
  
 
-Remarks
--------
+## Remarks
 
 This property is used to register user-mode events for DMA-driven event notification.
 
@@ -99,8 +98,7 @@ When the pin is placed into the *run* state (KSSTATE\_RUN) the registered events
 
 After you stop the pin, and prior to the time when you close it, each registered event is unregistered via a call to [**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

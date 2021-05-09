@@ -58,8 +58,7 @@ Specifies the return value to display. If you include *Value*, **.fnret** casts 
 
  
 
-Remarks
--------
+## Remarks
 
 If you include the *Value* parameter, the **.fnret** command only casts this value to the proper type and displays the results.
 

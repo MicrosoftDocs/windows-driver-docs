@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A WIA\_DPC\_DIGITAL\_ZOOM value of 10 corresponds to the absence of digital zoom (1X), which is the standard scene size that the camera captures. A value of 20 corresponds to a 2X zoom, where the camera captures one-fourth of the standard scene size.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

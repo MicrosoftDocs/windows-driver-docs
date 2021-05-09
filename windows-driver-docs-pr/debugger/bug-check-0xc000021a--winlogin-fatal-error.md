@@ -52,15 +52,13 @@ The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that 
 </tbody>
 </table>
 
-Cause
------
+## Cause
 
 This error occurs when a user-mode subsystem, such as WinLogon or the Client Server Run-Time Subsystem (CSRSS), has been fatally compromised and security can no longer be guaranteed. In response, the operating system switches to kernel mode. Microsoft Windows cannot run without WinLogon or CSRSS. Therefore, this is one of the few cases where the failure of a user-mode service can shut down the system.
 
 Mismatched system files can also cause this error. This mismatch can occur if you have restored your hard disk from a backup. Some backup programs might skip restoring system files that they determine are in use.
 
-Resolution
-----------
+## Resolution
 
 Running the kernel debugger may not be useful in this situation because the actual error occurred in a user-mode process.
 
@@ -78,8 +76,7 @@ If you have recently restored your hard disk from a backup, check if there is an
 
 -   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
-Remarks
--------
+## Remarks
 
 - Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 

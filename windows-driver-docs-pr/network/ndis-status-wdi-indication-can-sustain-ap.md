@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP to indicate
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -76,8 +76,7 @@ In the initial release of Windows XP, the AEC algorithm that the [AEC system fil
 
 A KSPROPERTY\_AEC\_MODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

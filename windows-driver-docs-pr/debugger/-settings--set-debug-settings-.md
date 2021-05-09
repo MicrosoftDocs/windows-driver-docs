@@ -111,8 +111,7 @@ On launch, the debugger will load all the settings from config.xml in the direct
 
 When auto save is enabled, the settings in the Debugger.Settings namespace will be automatically saved when exiting the debugger.
 
-Remarks
--------
+## Remarks
 
 You can exchange debug xml settings files with others to duplicate their debug settings.
 

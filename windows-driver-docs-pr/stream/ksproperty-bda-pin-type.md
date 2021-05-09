@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_PIN\_TYPE to retrieve the value that specifies the 
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the pin type.
 
 When the network provider creates a pin for a filter using KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY, it specifies a pin type from the list of pin types included in the filter's BDA template topology. KSPROPERTY\_BDA\_PIN\_TYPE returns this pin type. In the filter's BDA template topology each pin type can only occur once, but it can occur multiple times in an actual topology. The value for the pin type corresponds to the index of the element in the zero-based array of pin types. This array of pin types is an array of KSPIN\_DESCRIPTOR\_EX structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -18,8 +18,7 @@ When the miniport driver makes this status indication, it sets the **StatusBuffe
 
  
 
-Remarks
--------
+## Remarks
 
 The miniport driver issues an **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE** status indication under the following conditions:
 
@@ -43,8 +42,7 @@ For information on how the miniport driver issues an **NDIS\_STATUS\_QOS\_OPERAT
 
 For more information about the various types of NDIS QoS parameters, see [Overview of NDIS QoS Parameters](./overview-of-ndis-qos-parameters.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

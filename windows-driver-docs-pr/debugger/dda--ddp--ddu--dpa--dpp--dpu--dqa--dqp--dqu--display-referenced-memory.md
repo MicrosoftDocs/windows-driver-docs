@@ -67,8 +67,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 The second and third characters of this command are case-sensitive.
 

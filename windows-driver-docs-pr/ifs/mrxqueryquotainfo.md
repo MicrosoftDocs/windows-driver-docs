@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxQueryQuotaInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query quota information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxQueryQuotaInfo;
@@ -31,14 +30,12 @@ NTSTATUS MRxQueryQuotaInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxQueryQuotaInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -89,8 +86,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxQueryQuotaInfo* in response to receiving an [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md) request.
 
@@ -118,8 +114,7 @@ On success, the network mini-redirector should set the **Info.LengthRemaining** 
 
 If the call to *MRxQueryQuotaInfo* is successful, the **InformationToReturn** member of the RX\_CONTEXT structure should be set to the length of quota information returned. If the call is unsuccessful, the **InformationToReturn** member of RX\_CONTEXT should be set to zero.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

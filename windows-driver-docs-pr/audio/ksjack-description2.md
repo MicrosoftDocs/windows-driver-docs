@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The `KSJACK_DESCRIPTION2` structure specifies the capabilities and the current state of a jack that supports jack presence detection.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _tagKSJACK_DESCRIPTION2 {
@@ -29,8 +28,7 @@ typedef struct _tagKSJACK_DESCRIPTION2 {
 } KSJACK_DESCRIPTION2, *PKSJACK_DESCRIPTION2;
 ```
 
-Members
--------
+## Members
 
 **DeviceStateInfo**  
 Specifies the lower 16 bits of the DWORD parameter. This parameter indicates whether the jack is currently active, streaming, idle, or hardware not ready.
@@ -63,13 +61,11 @@ Specifies the lower 16 bits of the DWORD parameter. This parameter is a flag and
 
 For more information about dynamic format change, see [Dynamic Format Change](./dynamic-format-change.md).
 
-Remarks
--------
+## Remarks
 
 If an audio device lacks jack presence detection, the **IsConnected** member of the [**KSJACK\_DESCRIPTION**](ksjack-description.md) structure must always be set to **TRUE**. To remove the ambiguity that results from this dual meaning of the **TRUE** value for **IsConnected**, a client application can call [IKsJackDescription2::GetJackDescription2](/windows/win32/api/devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2) to read the **JackCapabilities** flag of the `KSJACK_DESCRIPTION2` structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint does in fact support jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted to accurately reflect the insertion status of the jack.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

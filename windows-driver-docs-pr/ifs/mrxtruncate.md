@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxTruncate* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector truncate the contents of a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxTruncate;
@@ -31,14 +30,12 @@ NTSTATUS MRxTruncate(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxTruncate* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -63,8 +60,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxTruncate* is called as part of cleanup operations if both of the following conditions are true:
 
@@ -78,8 +74,7 @@ A call to *MRxTruncate* will be followed by a call to [**MRxCleanupFobx**](/prev
 
 RDBSS ignores the return value from *MRxTruncate*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

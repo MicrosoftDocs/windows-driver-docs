@@ -22,8 +22,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
      
 
-Remarks
--------
+## Remarks
 
 Before it issues an OID method request of OID\_SWITCH\_PORT\_PROPERTY\_ENUM, the extensible switch extension must follow these guidelines:
 
@@ -64,8 +63,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

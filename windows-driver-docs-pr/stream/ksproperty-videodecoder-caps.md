@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDEODECODER\_CAPS property describes the basic capabilities of 
 
 The property value (operation data) is a KSPROPERTY\_VIDEODECODER\_CAPS\_S structure that specifies the hardware capabilities of the video decoder device, such as supported standards, settling time, and horizontal sync pulses the video decoder produces during the vertical sync period.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

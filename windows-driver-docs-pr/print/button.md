@@ -33,8 +33,7 @@ This resource may not be available in some languages and countries.
   buttonID = "xs:string"/>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -108,13 +107,11 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Buttons will be displayed at the bottom of the message box.
 
-Examples
---------
+## Examples
 
 The following code example shows how to use the **button** element to display **OK** and **CANCEL** buttons next to each other.
 

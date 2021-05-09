@@ -68,8 +68,7 @@ The contents of the dispatch table structures are extension interface-specific.
 
 For more information about registering an extension interface, see [Registering an Extension Interface](./registering-an-extension-interface.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

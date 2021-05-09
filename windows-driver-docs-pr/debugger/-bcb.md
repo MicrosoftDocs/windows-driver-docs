@@ -54,8 +54,7 @@ For information about cache management, see the Microsoft Windows SDK documentat
 
 For information about other cache management extensions, use the [**!cchelp**](-cchelp.md) extension.
 
-Remarks
--------
+## Remarks
 
 This extension is available for Windows 2000 only. In Windows XP or later, use the [**dt nt!\_BCB Address**](dt--display-type-.md) command to display the buffer control block directly.
 

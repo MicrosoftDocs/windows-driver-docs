@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_ICM\_PROFILE\_NAME property to determine the ICM profile to use when processing the image. The WIA service creates and maintains this property based on the ICMProfiles entry in the driver installation file.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

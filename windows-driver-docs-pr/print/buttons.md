@@ -32,8 +32,7 @@ This resource may not be available in some languages and countries.
 </buttons>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -83,8 +82,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 See [**button**](button.md) for a code example that shows how to use the **buttons** element to enclose two **button** elements that display an **OK** and a **CANCEL** button.
 

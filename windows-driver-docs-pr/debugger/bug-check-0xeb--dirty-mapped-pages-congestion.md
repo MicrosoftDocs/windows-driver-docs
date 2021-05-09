@@ -59,8 +59,7 @@ The DIRTY\_MAPPED\_PAGES\_CONGESTION bug check has a value of 0x000000EB. This i
 
  
 
-Cause
------
+## Cause
 
 The file system driver stack has deadlocked and most of the modified pages are destined for the file system. Because the file system is non-operational, the system has crashed because none of the modified pages can be reused without losing data. Any file system or filter driver in the stack may be at fault.
 

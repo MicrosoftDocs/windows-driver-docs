@@ -14,8 +14,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE notif
 
 This notification uses the [**NDIS\_WWAN\_SET\_HOME\_PROVIDER**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

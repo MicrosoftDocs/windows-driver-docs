@@ -32,8 +32,7 @@ The TAEF command to run the tests uses the following syntax:
 Te.exe [/name:<Test Method>] [<Test Name>.dll | <Test Name.wsc> ]  [/rebootStateFile=<file> ] [/enablewttlogging]  [/P:"DQ= <>" ]  
 ```
 
-Remarks
--------
+## Remarks
 
 You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:**_&lt;test method&gt;_) is optional. For the test names and test methods, see the [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md) and [Te.exe Command Options](../taef/te-exe-command-line-parameters.md) .
 

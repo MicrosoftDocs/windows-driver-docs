@@ -60,8 +60,7 @@ If the driver support this property but it doesn’t have any audio modules, it 
 
 For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

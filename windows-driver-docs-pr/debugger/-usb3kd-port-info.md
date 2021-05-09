@@ -32,8 +32,7 @@ Address of a \_PORT\_CONTEXT structure.
 
 Usb3kd.dll
 
-Examples
---------
+## Examples
 
 To obtain the address of the port context, look at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of a port context is 0xfffffa8005abe0c0.
 

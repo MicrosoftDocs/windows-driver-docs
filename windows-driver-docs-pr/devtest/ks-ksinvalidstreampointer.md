@@ -46,8 +46,7 @@ This code also violates the rule.
 KsStreamPointerDelete (NULL);
 ```
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -88,8 +87,7 @@ How to test
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 KsStreamPointerDelete
 

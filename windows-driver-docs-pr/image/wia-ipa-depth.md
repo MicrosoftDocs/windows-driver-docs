@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_DEPTH property to determine the bit depth setting of an image. An application may also set this property to the desired bit depth, or to the WIA\_DEPTH\_AUTO value.
 
@@ -39,8 +38,7 @@ The WIA\_DEPTH\_AUTO value (defined as 0 bits per pixel) is valid for all progra
 
 When the **WIA\_IPA\_DEPTH** property is set to WIA\_DEPTH\_AUTO, the WIA mini-driver must update the [**WIA\_IPA\_DATATYPE**](wia-ipa-datatype.md) property on the same item to WIA\_DATA\_AUTO (which must be a supported value if the device supports automatic color). When the **WIA\_IPA\_DATATYPE** value WIA\_DATA\_AUTO is supported, the **WIA\_IPA\_DEPTH** value WIA\_DEPTH\_AUTO is no longer optional and becomes a required value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

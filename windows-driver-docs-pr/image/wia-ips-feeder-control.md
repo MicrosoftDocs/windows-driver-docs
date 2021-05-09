@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_FEEDER\_CONTROL** property.
 
@@ -66,8 +65,7 @@ If WIA\_FEEDER\_CONTROL\_MANUAL is set and the WIA minidriver receives a [**IWia
 
 This property is valid only for the Feeder item (WIA\_CATEGORY\_FEEDER) and is optional.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

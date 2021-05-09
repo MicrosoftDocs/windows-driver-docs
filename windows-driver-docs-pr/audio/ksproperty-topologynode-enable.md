@@ -60,15 +60,13 @@ The property value (operation data) is of type BOOL and specifies whether the no
 
 A KSPROPERTY\_TOPOLOGYNODE\_ENABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Enabling an already enabled node or disabling an already disabled node has no effect, but should not be treated as an error.
 
 Disabling a node turns off the transformation that the node performs on the stream that passes through the node. In the case of an AEC, AGC, or noise-suppression node ([**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md), [**KSNODETYPE\_AGC**](ksnodetype-agc.md), or [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)), for example, a disabled node operates in pass-through mode (that is, it performs no operation on the stream as it flows from the node's input pin to its output pin).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

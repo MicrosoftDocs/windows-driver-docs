@@ -69,8 +69,7 @@ KSJACK\_DESCRIPTION\[0\]
 
 KSJACK\_DESCRIPTION\[N-1\]
 
-Remarks
--------
+## Remarks
 
 Each KSJACK\_DESCRIPTION structure must have information about one jack. For example, an output bridge pin that supports 5.1 audio over three stereo jacks, would require a data buffer of size
 
@@ -78,8 +77,7 @@ sizeof(KSMULTIPLE\_ITEM) + 3 \* sizeof(KSJACK\_DESCRIPTION)
 
 and each KSJACK\_DESCRIPTION structure would have a two-bit ChannelMapping value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

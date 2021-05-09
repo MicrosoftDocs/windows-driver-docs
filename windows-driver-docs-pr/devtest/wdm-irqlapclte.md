@@ -22,8 +22,7 @@ The **IrqlApcLte** rule specifies that the driver calls [**ObGetObjectSecurity**
 **Bug check(s) found with this rule**: [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md), [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020002)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -66,13 +65,11 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**ObGetObjectSecurity**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obgetobjectsecurity)
 [**ObReleaseObjectSecurity**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreleaseobjectsecurity)
-See also
---------
+## See also
 
 [**Managing Hardware Priorities**](../kernel/managing-hardware-priorities.md)
 [**Preventing Errors and Deadlocks While Using Spin Locks**](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

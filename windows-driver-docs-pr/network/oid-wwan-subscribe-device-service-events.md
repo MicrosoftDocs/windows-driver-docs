@@ -16,8 +16,7 @@ Miniport drivers must process set requests asynchronously, initially returning N
 
 Callers requesting to set the MB device service event subscription list provide a [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_subscribe_device_service_events) structure to the miniport driver with the appropriate information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

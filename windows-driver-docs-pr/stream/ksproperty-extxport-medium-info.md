@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO property retrieves information about an e
 
 The property value (operation data) is a MEDIUM\_INFO structure that describes the media loaded into the external device. For example cassette tape, tape grade and write protection.
 
-Remarks
--------
+## Remarks
 
 The **MediumInfo** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

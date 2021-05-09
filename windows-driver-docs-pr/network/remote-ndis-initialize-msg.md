@@ -67,8 +67,7 @@ This message is sent by the host to a Remote NDIS device to initialize the netwo
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

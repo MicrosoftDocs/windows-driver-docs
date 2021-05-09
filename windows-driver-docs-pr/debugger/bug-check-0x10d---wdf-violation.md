@@ -213,13 +213,11 @@ If Parameter 1 is equal to 0xB, then an attempt to acquire or release a lock was
 
  
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for an explanation of the cause.
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
 

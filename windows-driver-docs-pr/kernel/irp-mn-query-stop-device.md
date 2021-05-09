@@ -16,13 +16,11 @@ All PnP drivers must handle this IRP.
 
 0x05
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to query whether a device can be stopped to rebalance resources.
 
@@ -47,8 +45,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 A bus driver can set **Irp-&gt;IoStatus.Status** to STATUS\_RESOURCE\_REQUIREMENTS\_CHANGED to indicate success for the IRP but also to request that the PnP manager requery the resource requirements for the device before sending the stop IRP.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then passed down to each lower driver in the stack.
 
@@ -60,8 +57,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

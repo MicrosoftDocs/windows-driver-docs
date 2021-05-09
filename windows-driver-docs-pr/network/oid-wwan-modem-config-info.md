@@ -16,13 +16,11 @@ MBB drivers must process query requests asynchronously, initially returning NDIS
 
 Set requests are not applicable.
 
-Remarks
--------
+## Remarks
 
 The MBB driver may not have valid information yet from the modem during early queries. The non-valid information will be set to zero.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

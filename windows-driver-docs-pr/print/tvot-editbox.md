@@ -109,8 +109,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](./customizing-cpsui-supported-window-controls.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

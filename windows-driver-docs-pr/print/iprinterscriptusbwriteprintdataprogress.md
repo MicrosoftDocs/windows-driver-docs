@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter in the **writePrintData** JavaScript function call.
 
-Members
--------
+## Members
 
 The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
 

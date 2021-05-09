@@ -103,8 +103,7 @@ The WDI interface itself is unchanged and continues to use units of milliseconds
 
 [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-p2p-send-request-action-frame-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

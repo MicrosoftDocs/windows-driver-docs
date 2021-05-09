@@ -27,8 +27,7 @@ For more information about how a driver should respond to [**IRP\_MN\_SURPRISE\_
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -53,13 +52,11 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoDeleteDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice)
 [**IoDetachDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodetachdevice)
-See also
---------
+## See also
 
 [**Handling an IRP\_MN\_SURPRISE\_REMOVAL Request**](../kernel/handling-an-irp-mn-surprise-removal-request.md)
 [Analyzing a Driver Using Verification and Code Analysis Tools](/windows-hardware/drivers)

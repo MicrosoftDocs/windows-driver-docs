@@ -52,8 +52,7 @@ Specifies the hexadecimal address of the critical section.
 
 For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 If you do not know the address of the critical section, you should use the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension. This displays all critical sections that have been initialized by calling **RtlInitializeCriticalSection**.
 

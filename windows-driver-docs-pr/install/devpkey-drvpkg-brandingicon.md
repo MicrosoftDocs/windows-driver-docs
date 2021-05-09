@@ -46,8 +46,7 @@ The DEVPKEY_DrvPkg_BrandingIcon device property represents a list of icons that 
 
  
 
-Remarks
--------
+## Remarks
 
 A branding icon can be specified as an .ico file or as a resource within an executable file.
 
@@ -55,8 +54,7 @@ The format of an icon list is the same as that described for the [**DEVPKEY_DrvP
 
 You can set the value of DEVPKEY_DrvPkg_BrandingIcon by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs a device. You can retrieve the value of DEVPKEY_DrvPkg_BrandingIcon by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

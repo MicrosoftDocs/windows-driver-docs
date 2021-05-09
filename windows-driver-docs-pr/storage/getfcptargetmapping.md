@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetFcpTargetMapping** WMI method retrieves a mapping between the information that uniquely identifies a set of logical units for the operating system and the Fibre Channel protocol (FCP) identifiers for these logical units.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetFcpTargetMapping(
@@ -34,8 +33,7 @@ void GetFcpTargetMapping(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN\[8\]*   
 A worldwide name for the port whose table of mappings is to be retrieved. This information is delivered to the miniport driver in the **HbaPortWWN** member of a [**GetFcpTargetMapping\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_in) structure.
@@ -55,18 +53,15 @@ Indicates the total number of mappings retrieved by the **GetFcpTargetMapping** 
 *Entry\[\]*   
 An array of structures of type [**HBAFCPScsiEntry**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpscsientry) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

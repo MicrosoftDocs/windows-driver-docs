@@ -102,8 +102,7 @@ Length in bytes of the buffer pointed to by *IrpSp-&gt;Parameters.QueryEa.EaList
 <a href="" id="irpsp--parameters-queryea-length"></a>*IrpSp-&gt;Parameters.QueryEa.Length*  
 Length in bytes of the output buffer.
 
-Remarks
--------
+## Remarks
 
 When a short buffer is supplied and STATUS\_BUFFER\_OVERFLOW is returned, NTFS returns the last whole FILE\_FULL\_EA\_INFORMATION entry that fits. When a short buffer is supplied and STATUS\_BUFFER\_TOO\_SMALL is returned, NTFS could not fit any FILE\_FULL\_EA\_INFORMATION entries.
 

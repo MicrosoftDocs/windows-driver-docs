@@ -72,13 +72,11 @@ The filter will succeed a set-property request that specifies a value that is be
 
 A KSPROPERTY\_AUDIO\_TREBLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 A tone node can support properties for controlling treble level, mid-frequency level, bass level, and bass boost. For more information, see [**KSNODETYPE\_TONE**](ksnodetype-tone.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_UPLOAD\_URL property describes a URL that images or objects, after they are acquired from a device, can be uploaded to in one of the following scenarios:
 
@@ -39,8 +38,7 @@ The WIA\_DPC\_UPLOAD\_URL property describes a URL that images or objects, after
 
 The Microsoft Windows operating system does not upload images.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

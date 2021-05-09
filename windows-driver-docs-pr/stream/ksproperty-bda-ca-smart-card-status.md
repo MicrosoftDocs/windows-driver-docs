@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS to determine status on the 
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the smart card reader status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

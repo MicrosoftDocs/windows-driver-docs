@@ -44,15 +44,13 @@ The GUID_DISPLAY_DEVICE_ARRIVAL [device interface class](./overview-of-device-in
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied components of the [Windows Vista Display Driver Model](../display/windows-vista-display-driver-model-design-guide.md) register instances of this device interface class to notify the operating system and applications of the presence of display adapters.
 
 For information about the device interface class for display views that are supported by display adapters, see [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,8 +44,7 @@ The KSCATEGORY_VIRTUAL [device interface class](./overview-of-device-interface-c
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

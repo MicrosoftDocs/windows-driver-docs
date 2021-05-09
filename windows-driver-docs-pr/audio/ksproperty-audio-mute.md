@@ -60,8 +60,7 @@ The property value is of type BOOL and indicates whether the channel of a given 
 
 A KSPROPERTY\_AUDIO\_MUTE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -47,8 +47,7 @@ Specifies the amount of detail to display. This parameter can be set to 0, 1, or
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storclass** display:
 

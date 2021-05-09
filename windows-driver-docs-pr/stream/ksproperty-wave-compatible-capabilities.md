@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_COMPATIBLE\_CAPABILITIES property determines a device's wa
 
 The property value (operation data) is a KSWAVE\_COMPATCAPS structure that describes if the wave device accepts input, produces output, or does both.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

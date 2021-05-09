@@ -96,8 +96,7 @@ void Good2(int *x)
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanRegionWidth** element specifies the width of the scan region in the fast scan direction.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegionWidth wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault=""
@@ -29,8 +28,7 @@ Usage
 </wscn:ScanRegionWidth wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer from 1 through the InputMediaSize height.[**InputMediaSize**](inputmediasize.md)
 
@@ -101,8 +98,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 For more information about the scan region parameters, see [**ScanRegion**](scanregion.md).
 

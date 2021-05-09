@@ -18,8 +18,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
  
 
-Remarks
--------
+## Remarks
 
 Miniport drivers register the currently-enabled NDIS QoS hardware capabilities of a network adapter when its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function is called. The driver registers these capabilities by following these steps:
 
@@ -72,8 +71,7 @@ NDIS handles the OID query request of OID\_QOS\_CURRENT\_CAPABILITIES request fo
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

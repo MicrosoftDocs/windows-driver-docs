@@ -16,8 +16,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 Set requests are not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

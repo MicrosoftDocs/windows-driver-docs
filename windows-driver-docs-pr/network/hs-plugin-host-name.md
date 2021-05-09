@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_HOST\_NAME** structure contains the host name.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_PLUGIN_HOST_NAME {
@@ -24,14 +23,12 @@ typedef struct _HS_PLUGIN_HOST_NAME {
 } HS_PLUGIN_HOST_NAME, *PHS_PLUGIN_HOST_NAME;
 ```
 
-Members
--------
+## Members
 
 **pszHostName**  
 Pointer to the host name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS to retrieve from a PID filter
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the PID filter node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

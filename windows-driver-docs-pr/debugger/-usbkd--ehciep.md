@@ -32,8 +32,7 @@ Address of a **usbehci!\_ENDPOINT\_DATA** structure. To find addresses of **usbe
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 This example shows one way to get the address of a **usbehci!\_ENDPOINT\_DATA** structure. Start with the [**!usb2tree**](-usbkd-usb2tree.md) command.
 

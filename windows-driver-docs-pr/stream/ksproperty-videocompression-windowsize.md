@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE property controls the data rate tha
 
 The property value (operation data) is a LONG that specifies a data rate that represents the average frame size.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOCOMPRESSION\_S structure specifies the window size.
 
@@ -65,8 +64,7 @@ Minidrivers that support this property should set the **KS\_CompressionCaps\_Can
 
 For a window of size *n,* the average frame size of any consecutive *n* frames must not exceed the stream's specified data rate, although *individual* frames may be larger or smaller. For example, if the data rate has been set to 150 kilobytes per second (KBps) on a 15 frame per second (fps) movie, the *average* size of each frame must therefore be less than or equal to 10 kilobytes. Individual frames may be larger or smaller just so long as the average size (calculated across 15 frames per second of movie) is less than or equal to 10 kilobytes.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

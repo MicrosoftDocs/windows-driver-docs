@@ -44,8 +44,7 @@ The KSCATEGORY_PROXY [device interface class](./overview-of-device-interface-cla
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

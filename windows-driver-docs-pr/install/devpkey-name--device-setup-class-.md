@@ -46,8 +46,7 @@ The DEVPKEY_NAME device property represents the name of a [device setup class](.
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the value of DEVPKEY_NAME to identify a device setup class to an end-user in a user interface item.
 
@@ -57,8 +56,7 @@ You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupa
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY_DeviceClass_Name and DEVPKEY_DeviceClass_ClassName.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

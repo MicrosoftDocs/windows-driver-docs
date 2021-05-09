@@ -50,8 +50,7 @@ Size of the output buffer pointed to by *OutputBuffer*. *OutputBufferLength* mus
 <a href="" id="lengthreturned--out-"></a>*LengthReturned \[out\]*  
 Specifies the number of bytes written into *OutputBuffer* on successful completion.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -92,8 +91,7 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 The **WOF\_EXTERNAL\_FILE\_ID** structure returned in *OutputBuffer* contains unique file identifiers for backed files. The structure is defined in ntifs.h as the following.
 
@@ -105,8 +103,7 @@ typedef struct _WOF_EXTERNAL_FILE_ID {
 
 A **FSCTL\_ENUM\_EXTERNAL\_BACKING** request is issued successively to retrieve the identifiers for each file on the volume having backing source. When all the files are enumerated, the STATUS\_NO\_MORE\_FILES status code is returned.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

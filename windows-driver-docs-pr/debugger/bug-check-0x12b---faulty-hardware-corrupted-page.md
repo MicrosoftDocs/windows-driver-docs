@@ -101,8 +101,7 @@ This bug check indicates that a single-bit error was found in this page. This is
 </table>
 
 
-## Cause
------
+## ## Cause
 
 This bugcheck can only occur by memory corruption due to physical memory access. The causes for physical memory corruption include:
 
@@ -121,8 +120,7 @@ For more information on Windows memory manager and memory compression, see [Wind
 
 To investigate if this bug check is caused by defective RAM hardware, run the Windows Memory Diagnostics tool. In the control panel search box, type Memory, and then select *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

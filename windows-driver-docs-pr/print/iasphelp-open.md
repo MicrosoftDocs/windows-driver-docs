@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **Open** method enables an ASP Web page to open access to a printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Open(
@@ -31,14 +30,12 @@ HRESULT Open(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrPrinterName* \[in\]  
 Caller-supplied pointer to a string containing a printer name.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +79,7 @@ Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
 objPrinter.Open strPrinter
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

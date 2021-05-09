@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 When the [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md) property is supported, this property is valid only for the Feeder item (WIA\_CATEGORY\_FEEDER), and is optional.
 
 A value of 0 means "undefined/unknown number of pages."
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

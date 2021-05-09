@@ -16,13 +16,11 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the NDIS\_WWAN\_SERVICE\_ACTIVATION\_STATUS structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must return the service activation status in response to an OID set request of [OID\_WWAN\_SERVICE\_ACTIVATION](oid-wwan-service-activation.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -68,8 +68,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 For more information about stack traces, see the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands.
 
-Remarks
--------
+## Remarks
 
 The [**!stacks**](-stacks.md) kernel-mode extension also display information about stacks, including a brief summary of the state of every thread.
 

@@ -85,8 +85,7 @@ The property value (operation data) is a LONG that specifies a camera's relative
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request, you should provide one of the values in the preceding table in the **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure.
 
@@ -94,8 +93,7 @@ When making a get request, the client receives one of the values in the precedin
 
 Set requests will fail if the Auto-Exposure mode control is in Auto mode or Aperture Priority mode.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

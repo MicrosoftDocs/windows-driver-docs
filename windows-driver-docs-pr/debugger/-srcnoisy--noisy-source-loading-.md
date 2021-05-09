@@ -64,8 +64,7 @@ Displays all information displayed by options 1 and 2.
 
  
 
-Remarks
--------
+## Remarks
 
 With no parameters, **.srcnoisy** will display the current status of noisy source loading.
 

@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_RATECAPABILITY property allows a graph manager to query 
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAM\_RATECAPABILITY should be implemented if a pin allows rate changes, or the interface between topologically-related pins is different and results in the use of a different time stamp format. The property can also be used to translate time stamp formats in general, such as skip degradation requests.
 
@@ -69,8 +68,7 @@ It is important to support this property if Interface changes are made even if r
 
 Rate capability requests can only be performed in Pause or Run state and become invalid after changing to any other state. Queries where the rate is initially 1.0 should always succeed as they typically are just requests to translate time stamp formats.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

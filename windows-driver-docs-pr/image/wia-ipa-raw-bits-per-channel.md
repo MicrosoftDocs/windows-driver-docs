@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL property should be reported as a vector that contains as many byte values as there are channels, where the first byte corresponds to the number of bits in the first channel, the second byte to the number of bits in the second channel, and so on. The vector must contain as many entries as the [**WIA\_IPA\_CHANNELS\_PER\_PIXEL**](wia-ipa-channels-per-pixel.md) property reports there are channels. The driver sets WIA\_IPA\_CHANNELS PER\_PIXEL when the application sets [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) to WiaImgFmt\_RAW.
 
@@ -90,8 +89,7 @@ The following table describes the required number of entries in WIA\_IPA\_RAW\_B
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

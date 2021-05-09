@@ -54,15 +54,13 @@ Clients use the KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME property to compare th
 
  
 
-Remarks
--------
+## Remarks
 
 The KSCORRELATED\_TIME structure contains the current clock time in the **Time** member and the correlated physical time in the **SystemTime** member.
 
 Also see [KS Clocks](./ks-clocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

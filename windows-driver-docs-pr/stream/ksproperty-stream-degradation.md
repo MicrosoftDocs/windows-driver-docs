@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_DEGRADATION property is an optional property that should
 
  
 
-Remarks
--------
+## Remarks
 
 When queried, the property returns the size and count of the structures to be returned in [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) format, followed by [**KSDEGRADE**](/previous-versions/ff561671(v=vs.85)) structures.
 
@@ -63,8 +62,7 @@ On a query, this property returns the size and count of the structures to be ret
 
 A client can query this property to retrieve the current degradation settings or it can set this property to change the current degradation settings. The degradation settings are used to modify the usage of resources by a filter pin in response to a quality management (QM) complaint, or to adjust quality back to some higher level. This is typically used by a quality manager to adjust degradation settings, and query the type of setting that can be adjusted and their current values. It may pass multiple KSDEGRADE structures when setting values. For more information about quality managers, see [Quality Management](./quality-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

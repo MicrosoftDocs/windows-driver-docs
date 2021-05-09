@@ -51,8 +51,7 @@ Specifies the expression to evaluate. *Expression* can include any MASM operator
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The extension module includes two extension-specific operators which can be used in address parameters to extension commands:
 

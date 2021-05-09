@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified 
 
  
 
-Remarks
--------
+## Remarks
 
 Also see [KS Properties](./ks-properties.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

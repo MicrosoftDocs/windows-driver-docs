@@ -16,8 +16,7 @@ Overlying drivers issue this OID set request to the miniport driver for the netw
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_move_filter_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS validates the members of the [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_move_filter_parameters) structure before it forwards the OID set request to the PF miniport driver.
 
@@ -66,8 +65,7 @@ The PF miniport driver returns one of the following status codes for the OID set
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

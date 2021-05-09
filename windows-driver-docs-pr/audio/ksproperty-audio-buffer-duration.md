@@ -57,13 +57,11 @@ The property value is of type ULONG and represents the client buffer duration th
 
 A KSPROPERTY\_AUDIO\_BUFFER\_DURATION property request returns STATUS\_SUCCESS to indicate that the property request has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 You can adjust the duration of the request for isochronous audio data capture to help improve the performance of your USB audio device. A shorter duration reduces latency but it also means that the USB audio stack must make more frequent deferred procedure calls (DPC), which may cause degraded performance.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

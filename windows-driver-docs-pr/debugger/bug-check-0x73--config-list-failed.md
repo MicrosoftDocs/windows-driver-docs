@@ -57,8 +57,7 @@ The CONFIG\_LIST\_FAILED bug check has a value of 0x00000073. This bug check ind
 
  
 
-Cause
------
+## Cause
 
 The registry hive that cannot be linked might be SAM, SECURITY, SOFTWARE, or DEFAULT. The hive is valid, because it was loaded successfully.
 

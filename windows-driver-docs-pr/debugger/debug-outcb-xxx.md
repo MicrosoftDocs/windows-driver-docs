@@ -31,8 +31,7 @@ The possible values include the following.
 |DEBUG_OUTCB_EXPLICIT_FLUSH|Notification of an explicit output flush, flags and argument are zero.|
 
 
-Requirements
-------------
+## Requirements
 
 **Header**: DbgEng.h (include DbgEng.h)
 

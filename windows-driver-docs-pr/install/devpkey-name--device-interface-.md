@@ -46,8 +46,7 @@ The DEVPKEY_NAME device interface property represents the name of a device inter
 
  
 
-Remarks
--------
+## Remarks
 
 The value of the DEVPKEY_NAME should be used to identify an interface to an end-user in a user interface item.
 
@@ -59,8 +58,7 @@ For information about device interfaces, see [Device Interface Classes](./overvi
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support a property that corresponds to DEVPKEY_DeviceInterface_FriendlyName.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

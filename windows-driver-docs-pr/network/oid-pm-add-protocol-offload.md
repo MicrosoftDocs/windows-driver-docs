@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a set, NDIS protocol drivers use the OID\_PM\_ADD\_PROTOCOL\_OFFLOAD OID to add a protocol offload for power management to a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS 6.20 and later protocol drivers use OID\_PM\_ADD\_PROTOCOL\_OFFLOAD OID to add a protocol offload for power management to a network adapter. If the request is successful, the network adapter must generate and transmit the necessary response packets for the offloaded protocol when the network adapter is in a low power state.
 
@@ -57,8 +56,7 @@ The network adapter does not support the requested protocol offload.
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_IPA\_SUPPRESS\_PROPERTY\_PAGE property.
 
@@ -58,8 +57,7 @@ The following table describes the constants that are valid with the WIA\_IPA\_SU
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

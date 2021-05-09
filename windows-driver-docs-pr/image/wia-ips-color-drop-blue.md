@@ -27,13 +27,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 When the [**WIA\_IPS\_COLOR\_DROP**](wia-ips-color-drop.md) property is supported, this property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is required. Valid values for this property are between 0 and 100, inclusive.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKCB_COMPLETEPSTATETRANSITION DxgkCbCompletePStateTransition;
@@ -33,8 +32,7 @@ VOID APIENTRY CALLBACK* DxgkCbCompletePStateTransition(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hAdapter* \[in\]
 
@@ -42,13 +40,11 @@ Parameters
 
 *CompletedPState* \[in\]
 
-Return value
-------------
+## Return value
 
 This callback function does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

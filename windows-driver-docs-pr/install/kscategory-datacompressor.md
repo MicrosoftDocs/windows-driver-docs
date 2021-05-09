@@ -44,8 +44,7 @@ The KSCATEGORY_DATACOMPRESSOR [device interface class](./overview-of-device-inte
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DATACOMPRESSOR to indicate to the operating system that the devices support the KSCATEGORY_DATACOMPRESSOR functional category.
 
@@ -53,8 +52,7 @@ The KSCATEGORY_DATACOMPRESSOR functional category is one of the [**KSPROPERTY_TO
 
 For information about the device interface class that is defined for the KS functional category that decompresses a data stream, see [**KSCATEGORY_DATADECOMPRESSOR**](kscategory-datadecompressor.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

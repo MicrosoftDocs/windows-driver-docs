@@ -22,8 +22,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
      
 
-Remarks
--------
+## Remarks
 
 Overlying drivers and user-mode applications issue OID query requests of OID\_NIC\_SWITCH\_ENUM\_VPORTS to enumerate the VPorts that are allocated on a network adapter's NIC switch.
 
@@ -90,8 +89,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VPORTS request, it returns one of 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The value of the WIA\_DPC\_BATTERY\_STATUS property should be an integer from 0 through 100. An application reads this property to determine the remaining battery life of the camera device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

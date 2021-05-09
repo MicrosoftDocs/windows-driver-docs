@@ -28,8 +28,7 @@ The overlying driver specifies the NIC switch for the OID method or set request 
 
  
 
-Remarks
--------
+## Remarks
 
 The overlying driver issues OID\_NIC\_SWITCH\_PARAMETERS requests in the following way:
 
@@ -90,8 +89,7 @@ NDIS or the PF miniport driver returns the following status codes for set or met
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

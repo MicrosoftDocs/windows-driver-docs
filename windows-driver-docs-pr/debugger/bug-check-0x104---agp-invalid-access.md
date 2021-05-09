@@ -57,13 +57,11 @@ The AGP\_INVALID\_ACCESS bug check has a value of 0x00000104. This indicates tha
 
  
 
-Cause
------
+## Cause
 
 Typically, this bug check is caused by an unsigned or improperly tested video driver. It can also be caused by an old BIOS.
 
-Resolution
-----------
+## Resolution
 
 Check for display driver and computer BIOS updates.
 

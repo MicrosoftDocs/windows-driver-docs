@@ -60,8 +60,7 @@ The property value (operation data) is of type ULONG and specifies the device ID
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE set-property request opens the virtual audio device specified by the device ID contained in the property value. The last device to be opened is referred to as the current device.
 
@@ -69,8 +68,7 @@ Some SysAudio properties allow the current device to be identified by a null dev
 
 A get-property request retrieves the device ID of the current (last opened) virtual audio device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

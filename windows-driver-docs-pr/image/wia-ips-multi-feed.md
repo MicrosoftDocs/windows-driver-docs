@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_MULTI\_FEED** property.
 
@@ -70,8 +69,7 @@ This property is optional, and is valid only for the Feeder data source item (re
 
 When the WIA minidriver sets the MULTIPLE\_FEED bit for the [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](wia-dps-document-handling-status.md) property, the minidriver should clear this bit (flag) as soon as the minidriver detects that the feeder is unloaded, is reloaded, or a new scan job begins.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -29,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers.
 
 The high byte is the major version number; the low byte is the minor version number.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

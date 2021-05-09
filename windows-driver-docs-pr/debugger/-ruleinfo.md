@@ -37,8 +37,7 @@ Sub-state information about the violation. This is the fourth argument of the **
 
 ext.dll
 
-Remarks
--------
+## Remarks
 
 This command applies only to rules in the Driver Verifier extension; that is, rules that have an ID greater than or equal to 0x10000.
 

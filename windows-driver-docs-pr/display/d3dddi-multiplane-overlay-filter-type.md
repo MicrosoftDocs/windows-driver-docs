@@ -24,8 +24,7 @@ Reserved for system use. Do not use it in your driver.
 
  
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE {
@@ -37,8 +36,7 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE {
 } D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DDDI_MULTIPLANE_OVERLAY_FILTER_CAPS_BRIGHTNESS"></span><span id="d3dddi_multiplane_overlay_filter_caps_brightness"></span>**D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_CAPS\_BRIGHTNESS**
 
@@ -50,8 +48,7 @@ Constants
 
 <span id="D3DDDI_MULTIPLANE_OVERLAY_FILTER_CAPS_STRETCH_QUALITY"></span><span id="d3dddi_multiplane_overlay_filter_caps_stretch_quality"></span>**D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_CAPS\_STRETCH\_QUALITY**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

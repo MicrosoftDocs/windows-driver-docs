@@ -56,13 +56,11 @@ The KSPROPERTY\_DVDCOPY\_DEC\_KEY2 property retrieves the second bus key that is
 
 The property value (operation data) is a KS\_DVDCOPY\_BUSKEY structure that describes the DVD decoder's second bus key.
 
-Remarks
--------
+## Remarks
 
 For more information about the second bus key, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

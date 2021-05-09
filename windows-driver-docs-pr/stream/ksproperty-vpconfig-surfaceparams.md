@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_SURFACEPARAMS property specifies the video port surfac
 
 The property value (operation data) is a KSVPSURFACEPARAMS structure that describes the surface pitch and *x* and *y* origin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

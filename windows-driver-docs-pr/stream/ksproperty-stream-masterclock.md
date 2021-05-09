@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 
  
 
-Remarks
--------
+## Remarks
 
 The property returns a **NULL** handle when queried. Support is determined by whether the call returns successfully.
 
@@ -67,8 +66,7 @@ A filter does not need to support the property when it neither produces a master
 
 Also see [KS Clocks](./ks-clocks.md) and [AVStream Clocks](./avstream-clocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

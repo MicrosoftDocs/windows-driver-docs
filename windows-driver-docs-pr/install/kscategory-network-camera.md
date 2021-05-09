@@ -45,8 +45,7 @@ The KSCATEGORY_NETWORK_CAMERA GUID is defined as follows:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -65,8 +65,7 @@ To display information about the system session and all system tokens in a check
 
 For information about logon sessions, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension on a free build:
 

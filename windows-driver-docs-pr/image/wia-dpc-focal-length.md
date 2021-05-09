@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The values of the WIA\_DPC\_FOCAL\_LENGTH property correspond to the focal length in millimeters multiplied by 100. The focal length determines the optical zoom.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

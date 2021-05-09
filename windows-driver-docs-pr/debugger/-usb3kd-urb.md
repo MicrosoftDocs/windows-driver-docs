@@ -32,8 +32,7 @@ Address of the URB.
 
 Usb3kd.dll
 
-Examples
---------
+## Examples
 
 The following example shows the address of a URB (0xfffffa8005a2cbe8) in the output of the [**!xhci\_deviceslots**](-usb3kd-xhci-deviceslots.md) command.
 

@@ -49,8 +49,7 @@ The **!pcitree** extension displays information about PCI device objects, includ
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about PCI buses and PCI device objects, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

@@ -16,15 +16,13 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_PREFERRED\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers) structure.
 
-Remarks
--------
+## Remarks
 
 In some cases, the PPL (for GSM-based devices) is updated by the network either Over-The-Air (OTA) or by Short Message Service (SMS). The miniport driver must update the PPL accordingly. Afterwards, miniport drivers must notify the MB Service about the updates using this INDICATION with the updated PPL. For GSM-based networks, the **PreferredListHeader** member of the NDIS\_WWAN\_PREFERRED\_PROVIDERS structure must point to the updated PPL.
 
 Miniport drivers use this INDICATION to inform the MB Service about the update as a result of a [OID\_WWAN\_PREFERRED\_PROVIDERS](oid-wwan-preferred-providers.md) set request from the MB Service. A response to an OID\_WWAN\_PREFERRED\_PROVIDERS set request must contain zero elements in the **PreferredListHeader** member.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -62,8 +62,7 @@ No property value (operation data) is defined for this property. Specify the pro
 
 A KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is typically used to force an AEC node into the graph for a pin instance.
 
@@ -73,8 +72,7 @@ You can override SysAudio's default behavior by first sending SysAudio a KSPROPE
 
 A KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH set-property request affects only pin instances that are created after the request. The request has no effect on any previously instantiated pins.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

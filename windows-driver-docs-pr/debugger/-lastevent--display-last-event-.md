@@ -53,8 +53,7 @@ The **.lastevent** command displays the most recent exception or event that occu
 
 For more information about exceptions and events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
-Remarks
--------
+## Remarks
 
 Breaking into the debugger always creates an exception. There is always a *last event* when the debugger accepted command input. If you break into the debugger by using [**CTRL+C**](ctrl-c--break-.md), [CTRL+BREAK](debug---break.md), or Debug | Break, an exception code of 0x80000003 is created.
 

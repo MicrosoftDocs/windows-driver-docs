@@ -56,13 +56,11 @@ The KSPROPERTY\_VIDEOPROCAMP\_COLORENABLE property controls the color enable set
 
 The property value (operation data) is a LONG that specifies a camera's color enable setting. This value may be either 0 or 1. The default value for this property is 1. A value of 0 indicates that color is disabled. A value of 1 indicates that color is enabled.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the color enable setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

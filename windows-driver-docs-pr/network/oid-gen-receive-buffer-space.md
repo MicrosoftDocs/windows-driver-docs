@@ -29,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 A protocol driver can use this OID as a guide for advertising its receive window after it establishes sessions with remote nodes.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

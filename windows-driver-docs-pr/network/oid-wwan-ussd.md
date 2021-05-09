@@ -20,8 +20,7 @@ Windows does not send an OID\_WWAN\_USSD request to a miniport driver if a previ
 
 When a request is canceled, the miniport driver must respond to both the canceled request and the cancel request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

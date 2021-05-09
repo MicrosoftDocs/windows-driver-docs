@@ -45,8 +45,7 @@ The **!symsrv** extension closes the symbol server client.
 
  
 
-Remarks
--------
+## Remarks
 
 The **!symsrv close** extension will close any active symbol server client.
 

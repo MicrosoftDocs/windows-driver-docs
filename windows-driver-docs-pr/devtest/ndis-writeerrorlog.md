@@ -33,8 +33,7 @@ if (p == NULL)
 }
 ```
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS property to determine whether a scanner device is ready to use. Reading this property is an ideal way to check whether paper is in the feeder before a user acquires an image. The WIA minidriver creates and maintains this property.
 
@@ -162,8 +161,7 @@ The following table describes the constants that are valid with Windows Vista on
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

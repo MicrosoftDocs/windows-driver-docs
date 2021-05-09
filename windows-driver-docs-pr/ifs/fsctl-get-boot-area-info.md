@@ -46,8 +46,7 @@ A pointer to a [**BOOT\_AREA\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-nti
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 The size of the output buffer, in bytes.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns an appropriate NTSTATUS value such as one of the following:
 
@@ -84,13 +83,11 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 **FSCTL\_GET\_BOOT\_AREA\_INFO** control code can be used on FastFAT and exFAT devices. This capability supports the use of BitLocker for devices such as flash drives.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

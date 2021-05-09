@@ -56,15 +56,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_CONTRAST property controls a camera's contrast (lu
 
 The property value (operation data) is a LONG that specifies a camera's contrast setting. The contrast value is expressed as a gain factor multiplied by 100.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the contrast value.
 
 Every video capture minidriver must define a range and default value for the **Value** member of this property. The required range must be 0 to 10000. The default value must be 100 (1x).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

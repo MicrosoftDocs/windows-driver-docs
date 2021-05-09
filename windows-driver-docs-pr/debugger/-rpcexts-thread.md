@@ -54,8 +54,7 @@ Specifies the address of the thread environment block (TEB).
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension displays the per-thread RPC information. A field in the per-thread RPC information is the extended error information for this thread.
 

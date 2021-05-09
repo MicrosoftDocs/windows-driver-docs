@@ -31,8 +31,7 @@ If a protocol driver tries to add a duplicate pattern, the miniport driver shoul
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling [**NdisRequest**](/previous-versions/windows/hardware/network/ff554681(v=vs.85)) or [**NdisCoRequest**](/previous-versions/windows/hardware/network/ff551877(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

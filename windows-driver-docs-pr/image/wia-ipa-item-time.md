@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver creates and maintains the WIA\_IPA\_ITEM\_TIME property. This property should be reported as a vector of eight WORD values in the form of a SYSTEMTIME structure (which is described in the Microsoft Windows SDK documentation).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -29,8 +29,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to i
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

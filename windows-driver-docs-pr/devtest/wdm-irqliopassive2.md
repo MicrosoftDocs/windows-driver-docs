@@ -28,8 +28,7 @@ The **IrqlIoPassive2** rule specifies that the driver calls the following I/O Ma
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0002000B)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -72,8 +71,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**IoCheckShareAccess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocheckshareaccess)
 [**IoConnectInterrupt**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterrupt)

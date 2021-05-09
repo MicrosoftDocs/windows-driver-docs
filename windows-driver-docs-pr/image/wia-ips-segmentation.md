@@ -25,8 +25,7 @@ Valid values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the values that are defined for the WIA\_IPS\_SEGMENTATION property.
 
@@ -59,8 +58,7 @@ You must implement WIA\_IPS\_SEGMENTATION for scanner flatbed and film items if 
 
 You can package a driver with a segmentation filter and still have WIA\_IPS\_SEGMENTATION set to WIA\_DONT\_USE\_SEGMENTATION\_FILTER for one of its items (for example, the film item). This situation could occur if the scanner uses fixed frames for film scanning, but not for scanning from the flatbed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

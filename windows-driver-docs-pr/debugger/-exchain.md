@@ -59,8 +59,7 @@ Displays information that is obtained by walking the CRT function tables, even i
 
 The **!exchain** extension is available only for an x86-based target computer.
 
-Remarks
--------
+## Remarks
 
 The **!exchain** extension displays the list of exception handlers for the current thread.
 

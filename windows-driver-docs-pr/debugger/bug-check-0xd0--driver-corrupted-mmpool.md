@@ -58,15 +58,13 @@ The DRIVER\_CORRUPTED\_MMPOOL bug check has a value of 0x000000D0. This indicate
 
  
 
-Cause
------
+## Cause
 
 The kernel attempted to access pageable memory (or perhaps completely invalid memory) when the IRQL was too high. The ultimate cause of this problem is almost certainly a driver that has corrupted the system pool.
 
 In most cases, this bug check results if a driver corrupts a large allocation (PAGE\_SIZE or larger). Smaller allocations result in [**bug check 0xC5**](bug-check-0xc5--driver-corrupted-expool.md) (DRIVER\_CORRUPTED\_EXPOOL).
 
-Resolution
-----------
+## Resolution
 
 If you have recently installed any new software, check to see if it is properly installed. Check for updated drivers on the manufacturer's website.
 

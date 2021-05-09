@@ -108,8 +108,7 @@ When completing the IRP, the subsystem will set *Irp-&gt;IoStatus.Status* to **S
 ## Return value
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

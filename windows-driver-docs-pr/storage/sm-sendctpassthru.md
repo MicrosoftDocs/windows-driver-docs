@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendCTPassThru WMI method sends a common transport (CT) pass-through command to the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendCTPassThru(
@@ -35,8 +34,7 @@ void SM_SendCTPassThru(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the HBA through which the target is accessed. This information is delivered to the miniport driver in the PortWWN member of a SendCTPassThru\_IN structure.
@@ -62,18 +60,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *ResponseBuffer*   
 The results of the common transport command. The miniport driver returns this information in the ResponseBuffer member of a SM\_SendCTPassThru\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

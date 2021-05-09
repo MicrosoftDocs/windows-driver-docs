@@ -71,8 +71,7 @@ Specifies the session pool.
 
 For information about memory pools and pool tags, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This command can take a significant amount of time to execute, depending on the size of pool memory that must be searched. To speed up this execution, increase the COM port speed with the [**CTRL+A (Toggle Baud Rate)**](ctrl-a--toggle-baud-rate-.md) key, or use the [**.cache (Set Cache Size)**](-cache--set-cache-size-.md) command to increase the cache size (to approximately 10 MB).
 
