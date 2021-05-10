@@ -36,7 +36,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <td><p>A USB device has endpoints that are used to for data transfers. On the host side, endpoints are represented by pipes. This topic differentiates between those two terms.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="usb-faq--introductory-level.md" data-raw-source="[USB in Windows - FAQ](usb-faq--introductory-level.md)">USB in Windows - FAQ</a></p></td>
+<td><p><a href="usb-faq--introductory-level.yml" data-raw-source="[USB in Windows - FAQ](usb-faq--introductory-level.yml)">USB in Windows - FAQ</a></p></td>
 <td><p>This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.</p></td>
 </tr>
 </tbody>

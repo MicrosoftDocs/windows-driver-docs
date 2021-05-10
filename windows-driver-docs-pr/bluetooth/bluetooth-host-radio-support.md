@@ -17,7 +17,7 @@ With Windows, a Bluetooth radio can be packaged as an external dongle or embedde
 
 A new Bluetooth radio might not match any of the device IDs in the Bluetooth INF (Bth.inf) that is included with Windows. This prevents Windows from loading a Bluetooth stack for the device. IHVs should ensure that their radio works with the native Bluetooth stack in one of the following ways:
 
-* Create an INF for the radio that references Bth.inf. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
+* Create an INF for the radio that references Bth.inf. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.yml).
 * Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 * Force the Bluetooth stack to load
 
@@ -27,14 +27,14 @@ The following procedure uses Device Manager to force the Bluetooth stack to load
 2. To run the Update Driver Software Wizard, right-click the Bluetooth radio item and select **Update Driver Software**.
 3. Use the wizard to force the Bluetooth stack to install.
 
-For a detailed description of this procedure, see [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.md).
+For a detailed description of this procedure, see [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.yml).
 
 ## Ensure in-box support for Bluetooth radios
 
 IHVs should take the following steps to ensure that their Bluetooth radios have in box support on Windows:
 
 * Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](../usbcon/microsoft-os-1-0-descriptors-specification.md).
-* Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
+* Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.yml).
 * Use the Partner Center to make the INF file available through Windows Update
 
 It is no longer possible to add radios to the in-box Bth.inf file.
@@ -69,7 +69,7 @@ Windows supports vendor-supplied Bluetooth profiles. The GUIDs for those profile
 
 When users pair a Bluetooth device with a computer, the device’s profiles are compared to the profiles that are listed in Bth.inf. If the device profile does not match one of those profiles, users receive a dialog box that asks them to provide appropriate vendor software.
 
-Vendors that want a vendor-specific profile must use their own GUID and reference it in a vendor-specific INF file. This INF file can use Include and Needs directives to reference the appropriate Bth.inf sections and directives. For an example of a vendor-specific INF file, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
+Vendors that want a vendor-specific profile must use their own GUID and reference it in a vendor-specific INF file. This INF file can use Include and Needs directives to reference the appropriate Bth.inf sections and directives. For an example of a vendor-specific INF file, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.yml).
 
 ## Bluetooth profiles and protocols that are enabled by default
 
