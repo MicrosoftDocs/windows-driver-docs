@@ -52,6 +52,6 @@ The srv* allows native source link version 1 or version 2 files to be downloaded
 
 [Using a Source Server](using-a-source-server.md)
 
-[Source Link](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink)
+[Source Link](/dotnet/standard/library-guidance/sourcelink)
 
 [ELFUTILS DEBUGINFOD](https://sourceware.org/elfutils/Debuginfod.html)

@@ -36,8 +36,7 @@ Drivers that have errors related to IRQL can cause serious problems and could ca
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x20007), [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
 
 
-Example
--------
+## Example
 
 The following code violates this rule:
 

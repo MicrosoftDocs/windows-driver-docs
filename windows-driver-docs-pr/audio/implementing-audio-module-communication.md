@@ -5,8 +5,7 @@ ms.date: 07/07/2017
 ms.localizationpriority: medium
 ---
 
-Implementing Audio Module Communication
-========================================================================================
+# Implementing Audio Module Communication
 
 An Audio Module	is a distinct piece of audio processing logic performing a relatively atomic function. An audio module may reside in the audio driver or in audio DSP. An example audio module would be DSP-based audio processing.
 
@@ -26,9 +25,7 @@ So many OEMs would like to build their audio configuration applications on UWP. 
 Starting in Windows 10, release 1703, the Audio Modules UWP API allows the configuration application and user mode components to communicate with modules in the kernel and hardware layer that are discoverable through a new KS property set.
 Audio IHV and ISVs can write applications and services that can communicate with their hardware modules using a well-defined interface provided by Windows. For more information about the audio modules API, see [Windows.Media.Devices Namespace](/uwp/api/Windows.Media.Devices)
 
-
-<span id="Audio_Module_Definitions"></span>Audio Module Definitions
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Audio Module Definitions
 These definitions are specific to audio modules.
 
 Term | Definition
@@ -36,27 +33,24 @@ Term | Definition
 Audio Module	| A distinct piece of audio processing logic performing a relatively atomic function. May reside in the audio driver or in audio DSP. An example audio module would be an Audio Processing Object (APO).
 
 
-<span id="Common_Definitions"></span>Common Audio Definitions
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Common Audio Definitions
 These definitions are typically used when working with audio drivers.
 
-Term | Definition
------------- | -------------
-OEM	| Original Equipment Manufacturer
-IHV	| Independent Hardware Vendor
-ISV	| Independent Software Vendor
- |
-HSA	| Hardware Support Application
-UWP	| Universal Windows Platform
- | 
-APO	| Audio Processing Object
-DSP	| Digital Signal Processing
+| Term | Definition                      |
+|------|---------------------------------|
+| OEM  | Original Equipment Manufacturer |
+| IHV  | Independent Hardware Vendor     |
+| ISV  | Independent Software Vendor     |
+| HSA  | Hardware Support Application    |
+| UWP  | Universal Windows Platform      |
+| APO  | Audio Processing Object         |
+| DSP  | Digital Signal Processing       |
 
-<span id="Architecture"></span>Architecture 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Architecture 
+
 Audio Modules puts in place a Windows supported mechanism to send messages between user mode and kernel mode audio components. An important distinction is that Audio Modules standardizes the transport pipeline. It does not establish the communication protocol over that transport and relies on the ISVs and IHVs to define the protocol. The intent is to allow existing third party designs to migrate easily to Audio Modules with very little changes.
 
-<Diagram Pending>
+\<Diagram Pending\>
 
 The Audio Module API provides access to the modules through two different targeting methods: the KS wave filter and an initialized KS pin (stream). The placement and access to specific modules is implementation specific.
 
@@ -78,8 +72,7 @@ The Audio Modules APIs define how to enumerate and send commands to the modules.
 
 The recommended approach is exposing a global driver module. The global driver module would handle custom commands for these topology specific requests.
 
-<span id="Audio_Module_DDIs"></span>Audio Module DDIs
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Audio Module DDIs
  
 **Kernel Streaming Audio Module Properties** 
 
@@ -149,8 +142,8 @@ Support for the [KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID](./ksproperty-aud
 For more information, see [KSAUDIOMODULE_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
-<span id="PortCls_Helper"></span>PortCls Helper - Audio Module Notifications
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### PortCls Helper - Audio Module Notifications
+
  A new port interface has been added to assist driver developers to send notifications to Audio Module clients. 
 
 #### PortCls.h:

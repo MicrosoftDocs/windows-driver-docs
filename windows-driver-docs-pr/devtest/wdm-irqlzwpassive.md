@@ -22,8 +22,7 @@ The **IrqlZwPassive** rule specifies that the driver calls [**ZwClose**](/window
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x2001F)
 
 
-Example
--------
+## Example
 
 The following code violates this rule:
 

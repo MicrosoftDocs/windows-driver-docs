@@ -53,8 +53,8 @@ Systems are assigned ordinals in the order that the debugger attaches to them.
 
 When debugging begins, the current system is the one that caused the present exception or debug event (or the one that the debugger most recently attached to). That system remains the current system until you specify a new one by using a [**||s (Set Current System)**](--s--set-current-system-.md) command or by using the [Processes and Threads window](processes-and-threads-window.md) in WinDbg.
 
-Example
--------
+### Example
+
 This example shows three dump files are loaded. System 1 is active and system 2 caused the debug event.
 
 ```dbgcmd

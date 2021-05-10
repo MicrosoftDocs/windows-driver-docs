@@ -12,8 +12,8 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /toolsdisplayorder
-============
+# BCDEdit /toolsdisplayorder
+
 
 The **BCDEdit /toolsdisplayorder** command sets the display order to be used by the boot manager when displaying the tools menu.
 

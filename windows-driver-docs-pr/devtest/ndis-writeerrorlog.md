@@ -21,8 +21,7 @@ Generally, it is a good practice to log an error entry in the log whenever an al
 
 **Driver model: NDIS**
 
-Example
--------
+## Example
 
 ```
 // an example of how to log an error if memory allocation fails PVOID p;
