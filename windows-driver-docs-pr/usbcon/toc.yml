@@ -19,7 +19,7 @@
   - name: "USB endpoints and their pipes"
     href: usb-endpoints-and-their-pipes.md
   - name: "USB in Windows - FAQ"
-    href: usb-faq--introductory-level.md
+    href: usb-faq--introductory-level.yml
 - name: "Building USB devices for Windows"
   items:
   - name: "Overview of building USB devices for Windows"
@@ -245,7 +245,7 @@
   - name: "USB Type-C Connector System Software Interface (UCSI) driver"
     href: ucsi.md
   - name: "FAQ: USB Type-C connector on a Windows system"
-    href: faq--usb-type-c-connector-on-a-windows-system.md
+    href: faq--usb-type-c-connector-on-a-windows-system.yml
   - name: "Developing Windows drivers for USB Type-C connectors"
     items: 
     - name: "Overview of developing Windows drivers for USB Type-C connectors"
