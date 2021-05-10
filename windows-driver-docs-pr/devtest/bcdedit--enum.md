@@ -12,8 +12,8 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /enum
-============
+# BCDEdit /enum
+
 
 The **BCDEdit /enum** command lists entries in Boot Configuration Data (BCD) store. The /enum command is the default,
 so running "bcdedit" without parameters is equivalent to running "bcdedit /enum ACTIVE".

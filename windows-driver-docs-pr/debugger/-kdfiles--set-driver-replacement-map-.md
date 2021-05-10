@@ -24,7 +24,7 @@ The **.kdfiles** command reads a file and uses its contents as the driver replac
 .kdfiles
 ```
 
-## <span id="ddk_meta_set_driver_replacement_map_dbg"></span><span id="DDK_META_SET_DRIVER_REPLACEMENT_MAP_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______MapFile______"></span><span id="_______mapfile______"></span><span id="_______MAPFILE______"></span> *MapFile*   
@@ -85,8 +85,8 @@ If the specified file is in the correct driver replacement map file format, the 
 
 After the file has been read, the driver replacement map is not affected by subsequent changes to the file (unless these changes are followed by another **.kdfiles** command).
 
-User Mode File Replacement
--------
+### User Mode File Replacement
+
 
 User Mode File Replacement was added in version 2004 of Windows. This support enables the following user mode files to be replaced with .kdfiles.
 

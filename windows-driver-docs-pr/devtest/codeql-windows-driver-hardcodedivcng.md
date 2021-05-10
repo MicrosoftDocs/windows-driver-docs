@@ -17,7 +17,7 @@ Randomization is crucial for some encryption schemes to achieve semantic securit
 
 All symmetric block ciphers must also be used with an appropriate initialization vector (IV) according to the mode of operation being used.
 
-If using a randomized scheme such as CBC, it is recommended to use cryptographically secure pseudorandom number generator such as [BCryptGenRandom](https://docs.microsoft.com/windows/win32/api/bcrypt/nf-bcrypt-bcryptgenrandom).
+If using a randomized scheme such as CBC, it is recommended to use cryptographically secure pseudorandom number generator such as [BCryptGenRandom](/windows/win32/api/bcrypt/nf-bcrypt-bcryptgenrandom).
 
 ## Additional Details
 
@@ -25,6 +25,6 @@ This query can be found in the [Microsoft GitHub CodeQL repository](https://gith
 
 ## Additional References:
 
-- [BCryptEncrypt function (bcrypt.h)](https://docs.microsoft.com/windows/win32/api/bcrypt/nf-bcrypt-bcryptencrypt)
-- [BCryptGenRandom function (bcrypt.h)](https://docs.microsoft.com/windows/win32/api/bcrypt/nf-bcrypt-bcryptgenrandom)
+- [BCryptEncrypt function (bcrypt.h)](/windows/win32/api/bcrypt/nf-bcrypt-bcryptencrypt)
+- [BCryptGenRandom function (bcrypt.h)](/windows/win32/api/bcrypt/nf-bcrypt-bcryptgenrandom)
 - [Initialization vector (Wikipedia)](https://en.wikipedia.org/wiki/Initialization_vector)
