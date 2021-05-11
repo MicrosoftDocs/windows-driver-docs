@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Determining Whether a Leak Exists
 
 
-If Windows performance is degrading over time and you suspect that a memory leak may be involved, use Windows Performance Monitor to investigate whether there is a memory leak. This process will not tell you what the source of the leak is, nor whether it is user mode or kernel mode. For general information on Performance Monitor, see [Using Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc749115).
+If Windows performance is degrading over time and you suspect that a memory leak may be involved, use Windows Performance Monitor to investigate whether there is a memory leak. This process will not tell you what the source of the leak is, nor whether it is user mode or kernel mode. 
 
 Begin by launching Performance Monitor. To open Performance Monitor, use one of the following procedures:
 
