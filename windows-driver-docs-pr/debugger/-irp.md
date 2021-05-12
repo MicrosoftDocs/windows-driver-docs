@@ -59,8 +59,7 @@ For detailed information on decoding the IRP structure including the returned Ar
 - Developing Drivers with the Windows Driver Foundation Guy Smith and Penny Orwick
 
 
-Remarks
--------
+## Remarks
 
 The output also indicates under what conditions the completion routine for each stack location will be called once the IRP has completed and the stack location is processed. There are three possibilities:
 

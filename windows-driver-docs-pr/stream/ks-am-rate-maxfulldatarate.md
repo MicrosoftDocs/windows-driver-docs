@@ -56,8 +56,7 @@ The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate
 
 The property value (operation data) is a KS\_AM\_MaxFullDataRate (which is a type-defined LONG).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

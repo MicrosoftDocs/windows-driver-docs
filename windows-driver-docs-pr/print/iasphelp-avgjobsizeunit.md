@@ -23,8 +23,7 @@ ms.localizationpriority: medium
 
 The **AvgJobSizeUnit** property enables an ASP Web page to determine the units of the average job size.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_AvgJobSizeUnit(
@@ -32,8 +31,7 @@ HRESULT get_AvgJobSizeUnit(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives one of the values in the following table. The value indicates the units that are associated with the average job size.
@@ -63,8 +61,7 @@ A caller-supplied pointer to a memory location that receives one of the values i
 
  
 
-Return value
-------------
+## Return value
 
 This method returns S\_OK on success.
 
@@ -85,8 +82,7 @@ JobUnits = objPrinter.AvgJobSizeUnit
 ' If JobUnits = 2 then job size is in units of bytes
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -60,15 +60,13 @@ The property value (operation data) is of type BOOL and indicates whether the su
 
 A KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 In Microsoft Windows XP and later, the [KMixer system driver](./kernel-mode-wdm-audio-components.md#kmixer-system-driver) supports the KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property.
 
 If enabled, the surround-encoder node encodes the four-channel input stream (with channels for left, right, center, and back speakers) to a surround-encoded stereo output stream. This output stream can be decoded by a [**KSNODETYPE\_PROLOGIC\_DECODER**](ksnodetype-prologic-decoder.md) node, for example. It can also be played through the audio device's analog stereo outputs, which can be connected to an external surround decoder that directly drives left, right, center, and back speakers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

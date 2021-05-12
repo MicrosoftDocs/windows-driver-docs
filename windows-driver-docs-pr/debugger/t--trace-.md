@@ -78,8 +78,7 @@ Specifies a debugger command to execute after the trace is performed. This comma
 
 For more information about how to issue the **t** command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 When you specify *Count*, each instruction is displayed as it is stepped through.
 

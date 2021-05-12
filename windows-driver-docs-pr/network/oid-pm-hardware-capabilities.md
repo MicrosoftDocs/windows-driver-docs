@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a query, overlying drivers can use the OID\_PM\_HARDWARE\_CAPABILITIES OID to query the power management hardware capabilities of a network adapter. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS handles the query for miniport drivers. Starting with NDIS 6.20, miniport drivers supply the power management hardware capabilities during initialization in the **PowerManagementCapabilitiesEx** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
 
@@ -33,8 +32,7 @@ The information buffer was too short. NDIS set the **DATA.QUERY\_INFORMATION.Byt
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

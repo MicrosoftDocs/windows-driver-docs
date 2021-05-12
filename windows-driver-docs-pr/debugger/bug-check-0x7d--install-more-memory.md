@@ -57,13 +57,11 @@ The INSTALL\_MORE\_MEMORY bug check has a value of 0x0000007D. This bug check in
 
  
 
-Cause
------
+## Cause
 
 The Windows operating system does not have sufficient memory to complete the startup process.
 
-Resolution
-----------
+## Resolution
 
 Install more memory.
 

@@ -56,8 +56,7 @@ The DEVPKEY_Device_BaseContainerId device property represents the *GUID* value o
 
  
 
-Remarks
--------
+## Remarks
 
 The PnP manager determines the container ID for a devnode by using one of the following methods:
 
@@ -89,8 +88,7 @@ The DEVPKEY_Device_BaseContainerId property can be used to force the grouping of
 
 For more information about container IDs, see [Container IDs](./container-ids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

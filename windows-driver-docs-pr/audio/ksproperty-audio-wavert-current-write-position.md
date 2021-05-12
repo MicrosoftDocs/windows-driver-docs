@@ -55,8 +55,7 @@ The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION property request specifi
 
 The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 To better understand how to interpret the information provided by this property request, assume a circular buffer of size n bytes. The initial write position, before any data is written, is 0. Data is written to the buffer in chunks that are a multiple of [**WAVEFORMATEX.nBlockAlign**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) bytes.
 
@@ -73,8 +72,7 @@ if new write position = old write position, we’ve had a glitch
      log a "duplicate write position" glitch event
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

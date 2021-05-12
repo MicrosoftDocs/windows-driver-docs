@@ -67,8 +67,7 @@ For more information about enabling and disabling a socket's event callback func
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

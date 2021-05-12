@@ -20,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. For NDIS interface providers only.
 
-Remarks
--------
+## Remarks
 
 The administrative status is the status that the system administrator requested.
 
@@ -29,8 +28,7 @@ Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and ther
 
 If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_ADMIN\_STATUS**](/windows/win32/api/ifdef/ne-ifdef-net_if_admin_status) enumeration.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

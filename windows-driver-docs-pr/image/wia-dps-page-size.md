@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 To select the dimensions of the page to scan, an application sets WIA\_DPS\_PAGE\_SIZE. The WIA minidriver creates and maintains this property.
 
@@ -146,8 +145,7 @@ WIA_IPS_YEXTENT = 850
 WIA_IPS_XRES = 100
 WIA_IPS_YRES = 100
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

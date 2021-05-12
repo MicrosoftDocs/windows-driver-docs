@@ -31,8 +31,7 @@ The size (in bytes) of an NDIS\_STATUS.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

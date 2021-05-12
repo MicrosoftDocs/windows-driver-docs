@@ -24,8 +24,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not implemented. (See Remarks section.)
 
-Remarks
--------
+## Remarks
 
 Miniport drivers supply the supported packet filters during initialization.
 
@@ -35,8 +34,7 @@ NDIS passes the information to protocol drivers in the **SupportedPacketFilters*
 
 The values in **SupportedPacketFilters** are a bitwise OR of the filter type flags. For a list of the filter type flags, see the [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md) OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

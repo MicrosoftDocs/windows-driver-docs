@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type KSAUDIO\_COPY\_PROTEC
 
 A KSPROPERTY\_AUDIO\_COPY\_PROTECTION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property is a property of an audio device that supports a protection scheme similar to the Serial Copy Management System (SCMS). The property indicates whether a digital stream is protected by copyright and whether it is an original stream or a copy.
 
@@ -75,8 +74,7 @@ SCMS can provide three levels of protection of audio content:
 
 The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property is separate from and unrelated to the implementation of [Digital Rights Management (DRM)](./digital-rights-management.md) and the Secure Audio Path (SAP) for Windows Media. For information about SAP, see the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

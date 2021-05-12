@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK** function notifies the plugin that the device will be disconnected from the network.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_DISCONNECT_FROM_NETWORK)(
@@ -23,19 +22,16 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pNetworkIdentity* \[in\]  
 Pointer to the [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure for the network from which the device is to be disconnected.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

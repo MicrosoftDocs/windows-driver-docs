@@ -481,7 +481,7 @@ It is important to note that a query's classification of "error", "warning", or 
 
 #### Can I generate a DVL on Visual Studio solutions? 
 
-No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](/visualstudio/get-started/tutorial-projects-solutions#:~:text=A%20solution%20is%20simply%20a,projects%20that%20the%20solution%20contains.).  Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md).
+No, DVL generation must be run at the project level and cannot be run on [Visual Studio solutions](/visualstudio/get-started/tutorial-projects-solutions).  Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md).
 
 #### Can I generate a Driver Verification Log (DVL) outside of the context of msbuild or Visual Studio?
 

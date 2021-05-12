@@ -25,8 +25,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling Ndis(Co)Request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

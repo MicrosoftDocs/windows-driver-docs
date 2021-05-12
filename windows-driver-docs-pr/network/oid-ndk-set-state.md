@@ -14,8 +14,7 @@ As a set request, NDIS and overlying drivers use the OID\_NDK\_SET\_STATE OID to
 
 NDIS 6.30 and later miniport drivers that provide NDK services must support this OID. Otherwise, this OID is optional.
 
-Remarks
--------
+## Remarks
 
 NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure pointing to a **BOOLEAN** and **InformationBufferLength** member equal to sizeof(**BOOLEAN**).
 
@@ -41,8 +40,7 @@ To enable or disable its NDK functionality, the miniport driver's [*MiniportOidR
 
 An NDK-capable miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function must return **STATUS\_SUCCESS** for an OID\_NDK\_SET\_STATE OID request unless a failure occurs. The driver must not return **NDIS\_STATUS\_PENDING**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

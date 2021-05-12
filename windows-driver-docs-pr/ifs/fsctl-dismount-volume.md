@@ -47,13 +47,11 @@ Not used with this operation. Set to **NULL**.
 <a href="" id="outputbufferlength--in-"></a>*OutputBufferLength \[in\]*  
 Not used with this operation. Set to zero.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
 
-Remarks
--------
+## Remarks
 
 The **FSCTL\_DISMOUNT\_VOLUME** control code will attempt to dismount a volume regardless of whether any other processes are using the volume, which can have unpredictable results for those processes if they do not hold a lock on the volume. For information about locking a volume, see [**FSCTL\_LOCK\_VOLUME**](/windows/win32/api/winioctl/ni-winioctl-fsctl_lock_volume).
 
@@ -65,8 +63,7 @@ If the specified volume is a system volume or contains a page file, the operatio
 
 If the specified volume is locked by another process, the operation fails.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

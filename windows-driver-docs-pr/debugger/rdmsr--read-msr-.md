@@ -52,8 +52,7 @@ Specifies the address of the MSR.
 
  
 
-Remarks
--------
+## Remarks
 
 The **rdmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 

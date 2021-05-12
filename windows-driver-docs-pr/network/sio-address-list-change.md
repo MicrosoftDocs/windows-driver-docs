@@ -63,8 +63,7 @@ To be notified when there has been a change to the list of local transport addre
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to be notified of a change to the list of local transport addresses for a socket's address family. The WSK subsystem queues the IRP and returns STATUS\_PENDING. If a change is made to the list of local transport addresses for the socket's address family, the WSK subsystem completes the IRP. When the IRP's completion routine is called, the WSK application can use the [**SIO\_ADDRESS\_LIST\_QUERY**](sio-address-list-query.md) socket I/O control operation to query the new list of local transport addresses for the socket's address family.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

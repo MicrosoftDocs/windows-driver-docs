@@ -16,8 +16,7 @@ Miniport drivers must process the set request asynchronously, initially returnin
 
 Query requests are not supported.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must process requests to delete (deactivate) NDIS ports asynchronously in order to prevent deadlocks.
 
@@ -27,8 +26,7 @@ Upon receiving an OID\_WWAN\_DELETE\_MAC request, miniport drivers should deacti
 
 When the driver receives a surprise removal, the driver blocks and cancels all further OIDs. This means that the driver filters out OID\_WWAN\_DELETE\_MAC even though Windows sends a call with OID\_WWAN\_DELETE\_MAC as part of the [*FILTER\_DETACH*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_detach) call.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

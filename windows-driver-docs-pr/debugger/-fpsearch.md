@@ -51,8 +51,7 @@ If set, the debugger displays the raw content of each page on the free list as i
 
  
 
-Remarks
--------
+## Remarks
 
 The display for an address includes the virtual address, the page frame number (PFN), the pool tag, size, whether the data at the address is pageable, the thread ID, and the call stack at the time of deallocation.
 

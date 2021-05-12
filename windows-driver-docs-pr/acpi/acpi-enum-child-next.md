@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_ENUM\_CHILD\_NEXT macro calculates a pointer to the next [**ACPI\_ENUM\_CHILD**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_child) structure in an array of variable length ACPI\_ENUM\_CHILD structures.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 void ACPI_ENUM_CHILD_NEXT(
@@ -21,24 +20,20 @@ void ACPI_ENUM_CHILD_NEXT(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Child*   
 A pointer to a variable of type ACPI\_ENUM\_CHILD for which to return a nonaligned pointer to the next ACPI\_ENUM\_CHILD structure in an array of variable-length ACPI\_ENUM\_CHILD structures.
 
-Return value
-------------
+## Return value
 
 A pointer to the next ACPI\_ENUM\_CHILD structure in an array of variable-length ACPI\_ENUM\_CHILD structures.
 
-Remarks
--------
+## Remarks
 
 After a driver uses an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request to retrieve an array of child device names in an [**ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_output_buffer) request, the driver can use this macro to determine a sequence of pointers to the variable-length ACPI\_ENUM\_CHILD structures in the **Children** array that the output buffer contains.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

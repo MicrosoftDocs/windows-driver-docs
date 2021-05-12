@@ -35,8 +35,7 @@ Turns off the hiding of injected code
 <span id="_______help______"></span><span id="_______HELP______"></span> **help**   
 Displays help for this command.
 
-Remarks
--------
+## Remarks
 
 If you enter this command with no parameter, it displays help for the command.
 

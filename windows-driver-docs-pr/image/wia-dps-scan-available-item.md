@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 In Windows 7 and later, WIA\_DPS\_SCAN\_AVAILABLE\_ITEM is an optional property of the root item in the WIA item tree of a WIA scanner device. An application can query this property to determine the input source (flatbed, automatic document feeder, or film-scanning adapter) to scan from, or the storage location to transfer data from.
 
@@ -40,8 +39,7 @@ When a scan event occurs, the driver immediately sets the WIA\_DPS\_SCAN\_AVAILA
 
 For more information about this property, see [Identifying the Input Source for a Scan Event](./identifying-the-input-source-for-a-scan-event.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

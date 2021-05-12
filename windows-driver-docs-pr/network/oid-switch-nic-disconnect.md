@@ -14,8 +14,7 @@ The protocol edge of the Hyper-V extensible switch issues an object identifier (
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 The **Index** member of the [**NDIS\_SWITCH\_NIC\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_parameters) structure specifies the index of a network adapter for which the disconnect notification is being made. The network adapter with the specified **Index** value is connected to the extensible switch port specified by the **PortId** member. For more information on these index values, see [Network Adapter Index Values](./network-adapter-index-values.md).
 
@@ -76,8 +75,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

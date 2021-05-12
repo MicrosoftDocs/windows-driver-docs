@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_START to automatically determine th
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

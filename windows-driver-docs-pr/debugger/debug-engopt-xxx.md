@@ -222,8 +222,7 @@ and operations by default.</p>
 </table>
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WDFDEVICE_INIT** structure is an opaque structure that is defined and allocated by the framework.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 struct WDFDEVICE_INIT {
@@ -23,8 +22,7 @@ struct WDFDEVICE_INIT {
 };
 ```
 
-Members
-----------
+## Members---
 
 Function and filter drivers receive a pointer to this structure as input to a [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function or as a return value from [**WdfControlDeviceInitAllocate**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate).
 
@@ -46,8 +44,7 @@ Your driver must not call [**WdfDeviceInitFree**](/windows-hardware/drivers/ddi/
 The **WDFDEVICE_INIT** structure is available in version 1.0 and later versions of KMDF.
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

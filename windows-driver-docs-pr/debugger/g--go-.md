@@ -80,8 +80,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 If *Thread* is specified, then the **g** command is executed with the specified thread unfrozen and all others frozen. For example, if the **~123g**, **~\#g**, or **~\*g** command is specified, the specified threads are unfrozen and all others are frozen.
 

@@ -48,8 +48,7 @@ The **IrqlExApcLte2** rule specifies that the driver calls the following routine
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020006), [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -92,8 +91,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**CmRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback)
 [**CmRegisterCallbackEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallbackex)

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A device driver enumerates the supported values of the WIA\_DPC\_FOCUS\_MODE property, and an application writes this property to set the focus mode for the camera device.
 
@@ -64,8 +63,7 @@ The following table describes the constants that are valid with the WIA\_DPC\_FO
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

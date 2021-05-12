@@ -127,8 +127,7 @@ As an alternative to creating your own output control bit-field, you can use one
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

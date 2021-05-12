@@ -57,13 +57,11 @@ The EXFAT\_FILE\_SYSTEM bug check has a value of 0x0000012C. This bug check indi
 
  
 
-Cause
------
+## Cause
 
 This bug check is caused by the file system as a last resort when its internal accounting is in an unsupportable state and to continue poses a large risk of data loss. The file system never causes this bug check when the on disk structures are corrupted, the disk sectors go bad, or a memory allocation fails. Bad sectors could lead to a bug check, for example, when a page fault occurs in kernel code or data and the memory manager cannot read the pages. However, for this bug check, the file system is not the cause.
 
-Resolution
-----------
+## Resolution
 
 **To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command together with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 

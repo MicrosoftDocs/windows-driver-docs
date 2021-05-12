@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_ORIENTATION property to define the original orientation of a page or image to be acquired. For more information about how to use WIA\_IPS\_ORIENTATION, see [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md).
 
@@ -78,8 +77,7 @@ The WIA\_IPS\_ORIENTATION property is required for ADF items and optional for al
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

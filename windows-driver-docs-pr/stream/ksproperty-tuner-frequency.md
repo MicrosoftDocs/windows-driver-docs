@@ -56,13 +56,11 @@ The KSPROPERTY\_TUNER\_FREQUENCY property sets or gets the current frequency or 
 
 The property value (operation data) is a ULONG that specifies the current frequency of the tuner. This value is specified in hertz (Hz).
 
-Remarks
--------
+## Remarks
 
 The **Frequency** member of the KSPROPERTY\_TUNER\_FREQUENCY\_S structure specifies the current tuner frequency.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

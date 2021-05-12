@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_PIDFILTER\_UNMAP\_PIDS to inform the PID filter nod
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the PID filter node.
 
@@ -63,8 +62,7 @@ The BDA\_PID\_UNMAP structure describes a map of packets identified with specifi
 
 Any PID in this list that is not passed by the node is ignored.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

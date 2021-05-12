@@ -35,8 +35,7 @@ The port must indicate these packets in any of the following situations:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

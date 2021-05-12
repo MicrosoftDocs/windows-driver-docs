@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Exposure** element specifies the exposure settings of the document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Exposure wscn:MustHonor=""
@@ -27,8 +26,7 @@ Usage
 </wscn:Exposure wscn:MustHonor="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -100,8 +98,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Exposure** element can contain a [**AutoExposure**](autoexposure.md) or [**ExposureSettings**](exposuresettings.md) element, but not both. **AutoExposure** specifies that the device should automatically employ image processing techniques to reduce the background of the document to a white image. **ExposureSettings** specifies the specific **Exposure** adjustment values that the WSD Scan Service should apply to the image data after acquisition.
 

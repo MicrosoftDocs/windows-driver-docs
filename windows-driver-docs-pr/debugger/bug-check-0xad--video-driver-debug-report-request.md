@@ -57,8 +57,7 @@ The VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST bug check has a value of 0x000000AD. T
 
  
 
-Remarks
--------
+## Remarks
 
 The video port created a non-fatal minidump on behalf of the video driver during run time because the video driver requested a debug report.
 

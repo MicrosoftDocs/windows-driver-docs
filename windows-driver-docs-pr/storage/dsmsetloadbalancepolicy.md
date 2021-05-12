@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The **DsmSetLoadBalancePolicy** method is used to set the DSM load balance policy.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void DsmSetLoadBalancePolicy(
@@ -29,8 +28,7 @@ void DsmSetLoadBalancePolicy(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *LoadBalancePolicy*   
 A [**DsmSetLoadBalancePolicy\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicy_out) structure.
@@ -38,18 +36,15 @@ A [**DsmSetLoadBalancePolicy\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/ns-m
 *Status*   
 The status of the operation.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [DSM\_LB\_Operations](dsm-lb-operations-wmi-class.md) WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

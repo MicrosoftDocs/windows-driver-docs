@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_STOP\_POST\_CONNECT\_AUTH** function is called to notify the plugin to stop the authentication process.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_STOP_POST_CONNECT_AUTH)(
@@ -23,19 +22,16 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pNetworkIdentity* \[in\]  
 The [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure that uniquely identifies the network.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

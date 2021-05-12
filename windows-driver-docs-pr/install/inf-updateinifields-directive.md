@@ -81,8 +81,7 @@ Use a space character as a separator when adding the specified *new-field* entry
 <a href="" id="bit-one---1"></a>Bit one = **1**  
 Use a comma (,) as a separator when adding the specified *new-field* entry to the given line of the INI file.
 
-Remarks
--------
+## Remarks
 
 The **UpdateIniFields** directive is almost never specified in INF files for installations on Windows because it is not necessary to have INI files on their distribution media. However, the **UpdateIniFields** directive is valid in any of the sections shown in the formal syntax statement, as well as in INF-writer-defined sections referenced by an [**AddInterface**](inf-addinterface-directive.md) directive or referenced in an [**InterfaceInstall32**](inf-interfaceinstall32-section.md) section.
 

@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_VERSION property retrieves the version of an external
 
 The property value (operation data) is WCHAR array that contains the external device's version. The array is a free-format string.
 
-Remarks
--------
+## Remarks
 
 The **pawchString** member of the KSPROPERTY\_EXTDEVICE\_S structure describes the external device's version.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

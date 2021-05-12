@@ -78,13 +78,11 @@ Specifies the number of bytes of compressed data transmitted. A miniport driver 
 <a href="" id="bytesreceivedcompressed"></a>**BytesReceivedCompressed**  
 Specifies the number of bytes of compressed data received. A miniport driver returns a nonzero value only if it supports compression.
 
-Remarks
--------
+## Remarks
 
 If the underlying driver or its NIC does not support compression, the driver returns zero for the **Bytes..Uncompressed/Compressed** members.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

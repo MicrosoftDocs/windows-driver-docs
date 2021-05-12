@@ -35,8 +35,7 @@ This rule does not recognize other methods of disabling normal APC delivery. For
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -61,8 +60,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))
 [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))
@@ -74,8 +72,7 @@ Applies to
 [**KeEnterGuardedRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keenterguardedregion)
 [**KeLeaveCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion)
 [**KeLeaveGuardedRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleaveguardedregion)
-See also
---------
+## See also
 
 [**Managing Hardware Priorities**](../kernel/managing-hardware-priorities.md)
 [**Preventing Errors and Deadlocks While Using Spin Locks**](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

@@ -32,13 +32,11 @@ Address of the device extension for the host controller's functional device obje
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The output the **!xhci\_resourceusage** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
-Examples
---------
+## Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 

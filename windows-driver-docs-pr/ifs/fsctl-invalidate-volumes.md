@@ -44,20 +44,17 @@ Not used with this operation; set to **NULL**.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) return STATUS\_SUCCESS if the operation succeeds or an appropriate NTSTATUS value.
 
-Remarks
--------
+## Remarks
 
 FSCTL\_INVALIDATE\_VOLUMES is sent to the file system's control (that is, named) device object, not to a volume device object. For more information about Control Device Objects, see [Creating the Control Device Object](./creating-the-control-device-object.md).
 
 FAT and NTFS file systems handle surprise removal by responding to IRP\_MJ\_PNP/IRP\_MN\_SURPRISE\_REMOVAL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

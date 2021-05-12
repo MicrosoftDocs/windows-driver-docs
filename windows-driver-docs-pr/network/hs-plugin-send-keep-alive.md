@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_SEND\_KEEP\_ALIVE** function is called by the host to send a network connection keep-alive message. It will be called at the frequency specified in the **dwKeepAliveTimeMins** member of the plugin's [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_SEND_KEEP_ALIVE)(
@@ -23,20 +22,17 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
 **   
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_PAGE\_WIDTH property to determine the physical dimensions of the page that is being scanned. If the extent settings are different from known page sizes, this property reports the width of the page whose [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md) property is set to WIA\_PAGE\_CUSTOM. The WIA minidriver creates and maintains WIA\_DPS\_PAGE\_WIDTH.
 
 WIA\_DPS\_PAGE\_WIDTH must provide a measurement equivalent to the value of the [**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md) property, which reports the width, in pixels, of the page to scan.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

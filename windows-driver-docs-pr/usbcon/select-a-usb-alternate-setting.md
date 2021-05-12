@@ -49,8 +49,7 @@ Before the client driver can select an alternate setting, make sure these requir
 
     If you are using USB templates, the code selects the first configuration and the default alternate setting in each interface.
 
-Instructions
-------------
+## Instructions
 
 ### Select an alternate setting - KMDF client driver
 
@@ -152,8 +151,7 @@ Exit:
 9.  Release the WinUSB handle obtained in step 3 by calling the [**WinUsb\_Free**](/windows/win32/api/winusb/nf-winusb-winusb_free) function.
 10. If you are finished using [**IWDFUsbInterface**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface) methods, release all interface pointers retrieved in step 2.
 
-Remarks
--------
+## Remarks
 
 For a KMDF client driver, in its [**WdfUsbInterfaceSelectSetting**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfaceselectsetting) call, the driver can supply a pointer to a driver-defined pipe context. The client driver can store information about pipes in the pipe context. For more information about pipe information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 

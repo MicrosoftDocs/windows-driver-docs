@@ -56,8 +56,7 @@ The DEVPKEY_DeviceInterface_FriendlyName device property represents the friendly
 
  
 
-Remarks
--------
+## Remarks
 
 The **FriendlyName** registry value for a device interface class is set by an [**INF AddInterface directive**](./inf-addinterface-directive.md) that is included in the [**INF *DDInstall*.Interface section**](./inf-ddinstall-interfaces-section.md) of the INF file that installs a device interface.
 
@@ -69,8 +68,7 @@ Windows Server 2003, Windows XP, and Windows 2000 support this property, but do 
 
 For information about device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

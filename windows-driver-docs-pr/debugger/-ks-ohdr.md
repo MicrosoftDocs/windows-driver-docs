@@ -58,8 +58,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!ks.ohdr** command works similarly to [**!ks.objhdr**](-ks-objhdr.md) in that it displays details of a KS object header. The difference is that the caller provides the direct address of the KS object header, instead of the address of the associated file object.
 

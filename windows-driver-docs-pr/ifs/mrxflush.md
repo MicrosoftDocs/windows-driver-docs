@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxFlush* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector write the contents of a file system object to storage. RDBSS issues this call in response to receiving an [**IRP\_MJ\_FLUSH\_BUFFERS**](irp-mj-flush-buffers.md) request.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxFlush;
@@ -31,14 +30,12 @@ NTSTATUS MRxFlush(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxFlush* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as the following:
 
@@ -63,13 +60,11 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxFlush* handles network requests for file flush.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

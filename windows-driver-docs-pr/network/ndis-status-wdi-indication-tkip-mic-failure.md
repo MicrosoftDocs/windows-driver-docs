@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE to indica
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

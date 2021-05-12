@@ -18,8 +18,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 The overlying driver specifies the identifier of the VF to be freed through the **VFId** member of this structure. The driver obtained this identifier from an earlier OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md).
 
-Remarks
--------
+## Remarks
 
 An overlying driver issues an OID set request of OID\_NIC\_SWITCH\_FREE\_VF to free the resources for a VF. These resources were previously allocated through an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md).
 
@@ -101,8 +100,7 @@ NDIS returns one of the following status codes for this request:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

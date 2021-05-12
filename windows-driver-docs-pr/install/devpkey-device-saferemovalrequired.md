@@ -52,8 +52,7 @@ The DEVPKEY_Device_SafeRemovalRequired device property represents a Boolean valu
 
  
 
-Remarks
--------
+## Remarks
 
 If this property for a hot-plug device instance has a value of DEVPROP_TRUE, the device instance requires safe removal from the computer. In this case, Windows displays the **Safely Remove Hardware** icon in the notification area on the right side of the taskbar. When the user clicks this icon, the system starts the **Safely Remove Hardware** program. By using this program, the user can instruct the system to prepare the device instance for removal before it can be surprise-removed from the computer.
 
@@ -79,8 +78,7 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
 You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

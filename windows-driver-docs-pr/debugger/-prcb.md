@@ -52,8 +52,7 @@ Specifies the processor to retrieve the PRCB information from. If *Processor* is
 
 For information about the PCR and the PRCB, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The PRCB is an extension of the processor control region (PCR). To display the PCR, use the [**!pcr**](-pcr.md) extension.
 

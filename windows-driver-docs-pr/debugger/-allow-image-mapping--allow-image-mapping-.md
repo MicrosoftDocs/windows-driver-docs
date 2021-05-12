@@ -60,8 +60,7 @@ Allows image files to be mapped.
 
  
 
-Remarks
--------
+## Remarks
 
 With no parameters, **.allow\_image\_mapping** will display whether image file mapping is currently allowed. By default, this mapping is allowed.
 

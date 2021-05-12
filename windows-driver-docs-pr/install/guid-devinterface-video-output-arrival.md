@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL [device interface class](./overview-o
 
  
 
-Remarks
--------
+## Remarks
 
 This Windows operating system does not use this device interface class.
 
@@ -53,8 +52,7 @@ For information about display devices, see [Windows Vista Display Driver Model](
 
 For information about the device interface class for display adapters, see [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

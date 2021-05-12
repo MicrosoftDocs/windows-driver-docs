@@ -57,8 +57,7 @@ The property value is of type [**KSTOPOLOGY\_ENDPOINTID**](/windows-hardware/dri
 
 A **KSPROPERTY\_FMRX\_ENDPOINTID** property request returns the name and the pin ID of the current render endpoint for the FM radio.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

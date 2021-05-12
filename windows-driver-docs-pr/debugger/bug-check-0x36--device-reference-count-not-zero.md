@@ -57,8 +57,7 @@ The DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO bug check has a value of 0x00000036. Thi
 
  
 
-Cause
------
+## Cause
 
 A device driver has attempted to delete one of its device objects from the system, but the reference count for that object was non-zero.
 

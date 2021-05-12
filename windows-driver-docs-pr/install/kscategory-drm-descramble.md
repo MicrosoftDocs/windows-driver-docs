@@ -44,15 +44,13 @@ The KSCATEGORY_DRM_DESCRAMBLE [device interface class](./overview-of-device-inte
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DRM_DESCRAMBLE to indicate to the operating system that the devices support the KSCATEGORY_DRM_DESCRAMBLE functional category.
 
 For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

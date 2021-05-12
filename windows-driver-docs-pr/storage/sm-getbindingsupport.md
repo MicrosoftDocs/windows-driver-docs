@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_GetBindingSupport method retrieves the binding capabilities that are currently enabled for the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_GetBindingSupport(
@@ -31,8 +30,7 @@ void SM_GetBindingSupport(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the port whose persistent bindings will be retrieved.
@@ -46,18 +44,15 @@ The status of the operation. For a list of allowed values and their descriptions
 *Flags*   
 A bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features that are related to persistent binding. For a list of values that this parameter can have, see the description of the HBA\_BIND\_TYPE WMI class qualifier.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

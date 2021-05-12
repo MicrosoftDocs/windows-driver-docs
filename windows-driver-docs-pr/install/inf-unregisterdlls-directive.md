@@ -67,15 +67,13 @@ If the control is an executable file, this is a command string that is passed to
 
 If the control is not an executable file, this specifies the command-line argument to pass to the **DllInstall** function.
 
-Remarks
--------
+## Remarks
 
 Each *unregister-dll-section* name must be unique to the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
 For more information about OLE controls and self unregistration, see the Windows SDK documentation.
 
-Examples
---------
+## Examples
 
 ```inf
 [Dialer]

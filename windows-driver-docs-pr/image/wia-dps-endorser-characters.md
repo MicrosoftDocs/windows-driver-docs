@@ -32,13 +32,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An "endorser" is a printer that is installed on a scanner that imprints a text message on every page that is scanned. The WIA minidriver should validate the setting of the [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md) property against the valid character set in the WIA\_DPS\_ENDORSER\_CHARACTERS property. The minidriver creates and maintains this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

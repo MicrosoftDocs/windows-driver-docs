@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_SHARPNESS property can use either a list of values or a range of values. The minimum value represents the least amount of sharpness, and the maximum value represents the maximum sharpness. Typically, a value in the middle of the range represents normal, or default, sharpness.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

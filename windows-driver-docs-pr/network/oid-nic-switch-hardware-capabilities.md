@@ -14,8 +14,7 @@ An overlying driver issues an object identifier (OID) query request of OID\_NIC\
 
 After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
 
-Remarks
--------
+## Remarks
 
 The [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure contains information about the hardware capabilities of a NIC switch on the network adapter. These capabilities can include the hardware capabilities that are currently disabled by the INF file settings or through the **Advanced** properties page.
 
@@ -66,8 +65,7 @@ NDIS handles the OID query request of OID\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES r
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

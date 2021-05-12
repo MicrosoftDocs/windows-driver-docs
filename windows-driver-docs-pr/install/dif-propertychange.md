@@ -100,8 +100,7 @@ When Windows sends a DIF_INSTALLDEVICE request to install a device for the first
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

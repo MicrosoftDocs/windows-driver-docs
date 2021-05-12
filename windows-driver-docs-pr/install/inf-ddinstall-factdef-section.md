@@ -123,8 +123,7 @@ If both **R** and **W** are specified or if neither is specified, read/write is 
 <a href="" id="irqconfig--irqattrs--irqnum"></a>**IRQConfig=**\[<em>IRQattrs</em>**:**\]*IRQNum*  
 Specifies the bus-relative IRQ that the device uses as a decimal number. *IRQattrs* is omitted if the device uses a bus-relative, edge-triggered IRQ. Otherwise, specify **L** to indicate a level-triggered IRQ, and **LS** if the device can share the IRQ line listed in this entry.
 
-Remarks
--------
+## Remarks
 
 The specified *DDInstall* section must be referenced in a device-specific entry under the per-manufacturer *Models* section of the INF file. The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a <em>DDInstall</em>**.FactDef** section name in cross-operating system and/or cross-platform INF files. For more information about these system-defined extensions, see [Creating an INF File](overview-of-inf-files.md).
 
@@ -134,8 +133,7 @@ For example, the INF for a device that used two DMA channels would have two **DM
 
 The INF files of manually installed devices for which the factory-default logical configuration settings can be changed should also use the **LogConfig** directive in their *DDInstall* sections. In general, such an INF should specify the entries in each of its log config sections and in its <em>DDInstall</em>**.FactDef** section in the same order.
 
-Examples
---------
+## Examples
 
 This **IOConfig** entry specifies an I/O port region, 8 bytes in size, which can start at 2F8.
 

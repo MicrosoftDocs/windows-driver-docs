@@ -63,8 +63,7 @@ Specifies the address of the kernel APC to be displayed.
 
 For information about APCs, see the Windows Driver Kit (WDK) documentation and Microsoft Windows Internals by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Without any parameters, **!apc** displays all APCs.
 

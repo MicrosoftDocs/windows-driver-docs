@@ -44,8 +44,7 @@ The KSCATEGORY_AUDIO_DEVICE [device interface class](./overview-of-device-interf
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

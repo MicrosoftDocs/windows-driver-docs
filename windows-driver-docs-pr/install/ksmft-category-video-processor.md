@@ -44,8 +44,7 @@ The KSMFT_CATEGORY_VIDEO_PROCESSOR [device interface class](./overview-of-device
 
  
 
-Remarks
--------
+## Remarks
 
 AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_VIDEO_PROCESSOR functional category.
 
@@ -53,8 +52,7 @@ For more information about device interface classes for AVStream devices with ha
 
 For more information about how to register this functional category in an INF file, see the *Hiddigi.inf* file, which is included with the *src\\input\\hiddigi* sample drivers in the WDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

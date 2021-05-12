@@ -62,8 +62,7 @@ For an overview of JavaScript debugging, see  [JavaScript Debugger Scripting - J
 >
 
 
-Remarks
--------
+## Remarks
 
 Before you debug a JavaScript completed the following steps.
 

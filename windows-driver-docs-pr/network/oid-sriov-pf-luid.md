@@ -14,8 +14,7 @@ An overlying driver issues an object identifier (OID) query request of OID\_SRIO
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to the [**NDIS\_SRIOV\_PF\_LUID\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_pf_luid_info) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS generates a LUID for the PF before NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function of the miniport driver for the PF. This LUID is valid until NDIS calls the [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function of the driver.
 
@@ -62,8 +61,7 @@ When NDIS handles the OID\_SRIOV\_PF\_LUID request, it returns one of the follow
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

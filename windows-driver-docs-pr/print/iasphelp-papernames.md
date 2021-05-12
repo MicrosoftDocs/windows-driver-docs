@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **PaperNames** property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PaperNames(
@@ -31,14 +30,12 @@ HRESULT get_PaperNames(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied location to receive a pointer to a set of strings representing all the paper forms for the printer.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -83,8 +80,7 @@ objPrinter.Open strPrinter
 PaperNameArray = objPrinter.PaperNames
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

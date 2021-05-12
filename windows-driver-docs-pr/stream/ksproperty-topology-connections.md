@@ -54,13 +54,11 @@ The KSPROPERTY\_TOPOLOGY\_CONNECTIONS property queries all connections between n
 
  
 
-Remarks
--------
+## Remarks
 
 The KSMULTIPLE\_ITEM header is followed by a KSTOPOLOGY\_CONNECTION structure, which describes a single data-path connection in a KS filter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

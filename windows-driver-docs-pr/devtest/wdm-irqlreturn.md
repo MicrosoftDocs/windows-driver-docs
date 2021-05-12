@@ -19,8 +19,7 @@ The **IrqlReturn** rule specifies that the driver's dispatch routines return at 
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-See also
---------
+## See also
 
 [**Dispatch Routines and IRQLs**](../kernel/dispatch-routines-and-irqls.md)

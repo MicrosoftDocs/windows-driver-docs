@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendRLS WMI method sends a read link status (RLS) through the indicated local port. This RLS is sent to the indicated remote port to retrieve a link error status block that is associated with the remote port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendRLS(
@@ -34,8 +33,7 @@ void SM_SendRLS(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the local port through which the RLS command is sent. This information is delivered to the miniport driver in the HbaPortWWN member of a SM\_SendRLS\_IN structure.
@@ -58,18 +56,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *RespBuffer*   
 The results of the RLS command. The miniport driver returns this information in the RespBuffer member of a SM\_SendRLS\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerElements** contains all of the scanner information that is being returned to a client.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerElements>
@@ -26,8 +25,7 @@ Usage
 </wscn:ScannerElements>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service returns the **ScannerElements** element in the [**GetScannerElementsResponse**](getscannerelementsresponse.md) operation.
 

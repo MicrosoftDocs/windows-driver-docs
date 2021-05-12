@@ -56,8 +56,7 @@ Specifies the ID numbers of the breakpoints to disable. You can specify any numb
 
 For more information about how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 When a breakpoint is disabled, the system does not check whether the conditions that are specified in the breakpoint are valid.
 

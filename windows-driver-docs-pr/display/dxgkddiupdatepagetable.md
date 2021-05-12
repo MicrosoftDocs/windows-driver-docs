@@ -21,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiUpdatePageTable* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_UPDATEPAGETABLE DxgkDdiUpdatePageTable;
@@ -34,8 +33,7 @@ NTSTATUS DxgkDdiUpdatePageTable(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hDevice*
 This parameter is reserved for system use.
@@ -43,8 +41,7 @@ This parameter is reserved for system use.
 *pUpdatePageTable*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

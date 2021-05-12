@@ -60,13 +60,11 @@ The property value (operation data) is of type ULONG and specifies the number of
 
 A KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used in conjunction with the [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md) and [**KSPROPERTY\_AUDIO\_EQ\_LEVEL**](ksproperty-audio-eq-level.md) properties to determine the lengths of the arrays that contain the values for those properties.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ScanRegionXOffset** element specifies the distance from the fast scan lead edge to the beginning of the scan region.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegionXOffset wscn:MustHonor=""                        wscn:Override=""                        wscn:UsedDefault=""
@@ -29,8 +28,7 @@ Usage
 </wscn:ScanRegionXOffset wscn:MustHonor=""                        wscn:Override=""                        wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer between 0 and the InputSize width.[**InputSize**](inputsize.md)
 
@@ -101,8 +98,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 For more information about the scan region parameters, see [**ScanRegion**](scanregion.md).
 

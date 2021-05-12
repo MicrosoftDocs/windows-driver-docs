@@ -52,8 +52,7 @@ The DEVPKEY_Device_SafeRemovalRequiredOverride device property represents the sa
 
  
 
-Remarks
--------
+## Remarks
 
 This device property can be used to override the result of the heuristic that Windows Plug and Play (PnP) uses to calculate the value of the [**DEVPKEY_Device_SafeRemovalRequired**](devpkey-device-saferemovalrequired.md) device property. This override is performed as follows:
 
@@ -69,8 +68,7 @@ This device property can be used to override the result of the heuristic that Wi
 
 You can retrieve the value of DEVPKEY_Device_SafeRemovalRequiredOverride by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw). You can also set this value by calling [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

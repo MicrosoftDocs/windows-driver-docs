@@ -181,8 +181,7 @@ Specifies the field name that links a linked list. The *Address* parameter must 
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 The **dt** command output will always display signed numbers in base 10, and unsigned numbers in hexadecimal.
 

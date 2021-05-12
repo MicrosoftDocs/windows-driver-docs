@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_PNP**](irp-mj-pnp.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -41,8 +40,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **Pnp**  
 **StartDevice**  
@@ -75,15 +73,13 @@ Union component used for the IRP\_MN\_QUERY\_DEVICE\_TEXT operation. For more in
 **UsageNotification**  
 Union component used for the IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION operation. For more information about the parameters for this operation, see the reference entry for [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](../kernel/irp-mn-device-usage-notification.md).
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP\_MJ\_PNP**](irp-mj-pnp.md) operations contains the parameters for an IRP-based Plug and Play (PnP) operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
 The IRP\_MJ\_PNP operation is an IRP-based operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

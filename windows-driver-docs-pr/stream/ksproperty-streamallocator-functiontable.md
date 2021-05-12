@@ -54,15 +54,13 @@ The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function t
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE is only used by allocators supporting the DISPATCH\_LEVEL function interface. Allocators supporting this property must be able to allocate and free frames for IRQL of DISPATCH\_LEVEL and lower. This property is accessible only from kernel mode.
 
 Because the DISPATCH\_LEVEL interface is closely associated with the IRP-based interface, acquiring the function table is likely to result in the creation of an internal notification event to allow pending I/O to be completed when frames are returned to the free list. When the handle to the allocator is closed, the function table pointers are invalid and the associated events are automatically disabled.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

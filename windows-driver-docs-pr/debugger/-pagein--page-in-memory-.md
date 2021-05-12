@@ -61,8 +61,7 @@ Specifies the address to page in.
 
  
 
-Remarks
--------
+## Remarks
 
 After you run the **.pagein** command, you must use the [**g (Go)**](g--go-.md) command to resume program execution. After a brief time, the target computer automatically breaks into the debugger again.
 
@@ -76,8 +75,7 @@ In Windows Server 2003 and Windows XP, you can page in only user-mode addresses 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -18,13 +18,11 @@ Function and filter drivers can handle this request if they alter the capabiliti
 
 0x09
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to the bus driver for a device immediately after the device is enumerated. The PnP manager sends this IRP again after all the drivers for a device have started the device. A driver can send this IRP to get the capabilities for a device.
 
@@ -49,8 +47,7 @@ If a function or filter driver does not handle this IRP, it calls [**IoSkipCurre
 
 A bus driver sets **Irp-&gt;IoStatus.Status** and completes the IRP.
 
-Operation
----------
+## Operation
 
 When a device is enumerated, but before the function and filter drivers are loaded for the device, the PnP manager sends an **IRP\_MN\_QUERY\_CAPABILITIES** request to the parent bus driver for the device. The bus driver must set any relevant values in the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure and return it to the PnP manager.
 
@@ -84,8 +81,7 @@ See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The 
 
 -   Deallocate the IRP and the **DEVICE\_CAPABILITIES** structure when they are no longer needed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

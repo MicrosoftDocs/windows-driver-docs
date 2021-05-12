@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_DPS\_PREVIEW property.
 
@@ -58,8 +57,7 @@ The following table describes the constants that are valid with the WIA\_DPS\_PR
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

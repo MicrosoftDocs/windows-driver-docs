@@ -31,8 +31,7 @@ The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an 
 |3| The current IRP at the time of failure.|
 |4| File encryption context at the time of failure.|
 
-## Cause
------
+## ## Cause
 
 An EFS error condition has occurred such that cannot be handled without data loss or data corruption.
 
@@ -47,8 +46,7 @@ Use the debugger [!IRP](-irp.md) command to investigate parameter 3 for a possib
 
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

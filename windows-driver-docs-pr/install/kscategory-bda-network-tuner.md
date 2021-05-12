@@ -44,8 +44,7 @@ The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](./overview-of-device-i
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_TUNER to indicate to the operating system that the devices support a BDA network tuner filter.
 
@@ -53,8 +52,7 @@ For an example of how to register this functional category in an INF file, see t
 
 For more information about the KS functional category for the network tuner filters, see [Common Control Nodes and Filters](../stream/common-control-nodes-and-filters.md) and [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

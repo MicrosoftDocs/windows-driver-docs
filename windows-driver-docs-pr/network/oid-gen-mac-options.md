@@ -29,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers.
 
@@ -89,8 +88,7 @@ Reserved for NDIS internal use.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -83,8 +83,7 @@ If the specified subkey already exists in the registry, do not transfer the INI-
 <a href="" id="bit-one---1"></a>Bit one = **1**  
 If the specified subkey already exists in the registry, replace its value entry with the INI-supplied information.
 
-Remarks
--------
+## Remarks
 
 The **Ini2Reg** directive is valid in any of the sections shown in the formal syntax statement. This directive is also valid in INF-writer-defined sections referenced by an [**AddInterface**](inf-addinterface-directive.md) directive or referenced in an [**InterfaceInstall32**](inf-interfaceinstall32-section.md) section.
 

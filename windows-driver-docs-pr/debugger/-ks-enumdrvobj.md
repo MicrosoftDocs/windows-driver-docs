@@ -52,8 +52,7 @@ Specifies a pointer to a WDM driver object.
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Since **!ks.enumdrvobj** enumerates every device chained off a WDM driver object, it is equivalent to invoking [**!ks.enumdevobj**](-ks-enumdevobj.md) on every device chained off a given driver.
 

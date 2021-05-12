@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_I2C [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of I2C interfaces that perform transactions with monitor child devices.
 
@@ -53,8 +52,7 @@ If a display miniport driver supports a direct-call I2C interface for this [devi
 
 For information about the I2C bus, see [I2C Bus and Child Devices of the Display Adapter](../display/i2c-bus-and-child-devices-of-the-display-adapter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

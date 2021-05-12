@@ -49,8 +49,7 @@ ENTER
 
  
 
-Remarks
--------
+## Remarks
 
 In CDB and KD, pressing the ENTER key by itself at a command prompt reissues the command that you previously entered.
 

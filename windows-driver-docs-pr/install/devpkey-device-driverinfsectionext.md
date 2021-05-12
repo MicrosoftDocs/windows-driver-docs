@@ -57,8 +57,7 @@ The DEVPKEY_Device_DriverInfSectionExt device driver property represents the pla
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverInfSectionExt.
 
@@ -66,8 +65,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfSectionExt property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSectionExt** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

@@ -61,8 +61,7 @@ A WSK application can specify zero in the *OutputSize* parameter and **NULL** in
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH property searches to a specific timec
 
 The property value (operation data) is an embedded **TIMECODE** structure member of the KSPROPERTY\_EXTXPORT\_S structure that describes the specific timecode to search to, including frame, second, minute and hour.
 
-Remarks
--------
+## Remarks
 
 This method is defined, but not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

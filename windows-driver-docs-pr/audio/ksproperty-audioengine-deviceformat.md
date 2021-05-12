@@ -55,8 +55,7 @@ The **KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT** property request retrieves or alte
 
 The **KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -58,15 +58,13 @@ The DRIVER\_CORRUPTED\_EXPOOL bug check has a value of 0x000000C5. This indicate
 
  
 
-Cause
------
+## Cause
 
 The kernel attempted to access pageable memory (or perhaps completely invalid memory) when the IRQL was too high. The ultimate cause of this problem is almost certainly a driver that has corrupted the system pool.
 
 In most cases, this bug check results if a driver corrupts a small allocation (less than PAGE\_SIZE). Larger allocations result in [**bug check 0xD0**](bug-check-0xd0--driver-corrupted-mmpool.md) (DRIVER\_CORRUPTED\_MMPOOL).
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. If you have recently installed any new software, check to see if it is properly installed. Check for updated drivers on the manufacturer's website.
 

@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_NONE, or WIA\_PROP\_LIST
 
 Access Rights: Read-only or read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPC\_THUMB\_WIDTH value to get an estimated size for displaying thumbnail images in its user interface.
 
 If the value or WIA\_DPC\_THUMB\_WIDTH is WIA\_PROP\_NONE, the access rights must be read-only. If the value is WIA\_PROP\_LIST, the access rights must be read/write.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

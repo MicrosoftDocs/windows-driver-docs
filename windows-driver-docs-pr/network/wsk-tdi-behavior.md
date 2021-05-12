@@ -76,8 +76,7 @@ The *Irp* parameter must be **NULL** for this client control operation.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -21,8 +21,7 @@ Event trace log files can grow very quickly, but a smaller log file is easier to
 
 Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver stack traces, which were introduced in Windows 7. Event traces from the USB 2.0 driver stack can be captured on a Windows 8 computer. The way you capture event traces from USB 2.0 and USB 3.0 driver stacks is similar. You can capture events from the USB 2.0 or USB 3.0 driver stack independently. When you connect a USB 2.0 device to a USB 3.0 host controller, you get event traces from the USB 3.0 driver stack. In that case, you will view new USB 3.0 driver stack events for a USB 2.0 device.
 
-Instructions
-------------
+## Instructions
 
 **To collect USB trace events**
 
@@ -59,8 +58,7 @@ The preceding capture session generates an etl file, named usbtrace.etl. The tra
 
 The file contains event traces from the USB 3.0 and USB 2.0 driver stacks. If you want to reduce the event traces to just one USB driver stack, remove the other driver stack from your next trace session. You can do so by modifying the command sequence shown in step 2 to remove the "logman update" lines corresponding to the driver stack you want to remove from the trace session.
 
-Remarks
--------
+## Remarks
 
 **Capture filters for USB 3.0 driver stack events**
 

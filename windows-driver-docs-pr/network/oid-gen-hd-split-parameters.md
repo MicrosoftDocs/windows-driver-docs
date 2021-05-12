@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a set, NDIS and overlying drivers or user-mode applications use the OID\_GEN\_HD\_SPLIT\_PARAMETERS OID to set the current header-data split settings of a miniport adapter. NDIS 6.1 and later miniport drivers that provide header-data split services must support this OID. Otherwise, this OID is optional.
 
-Remarks
--------
+## Remarks
 
 The **InformationBuffer** member of [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [**NDIS\_HD\_SPLIT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hd_split_parameters) structure.
 
@@ -21,8 +20,7 @@ NDIS might set the OID\_GEN\_HD\_SPLIT\_PARAMETERS OID when an NDIS 5.*x* protoc
 
 NDIS will send this OID to the miniport driver only if header-data split was enabled with the NDIS\_HD\_SPLIT\_ENABLE\_HEADER\_DATA\_SPLIT flag in the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_hd_split_attributes) structure during miniport initialization.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

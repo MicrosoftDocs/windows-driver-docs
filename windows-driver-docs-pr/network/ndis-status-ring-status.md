@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_RING\_STATUS status indicates the ring status of a line. A WAN-capable miniport driver can use this status to report a ring failure.
 
-Remarks
--------
+## Remarks
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
@@ -27,8 +26,7 @@ NDIS\_RING\_SIGNAL\_LOSS
 
 These values specify ring conditions that are the reason for the status indication. For more information about NDIS\_STATUS\_RING\_STATUS, see [Reporting Hardware Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff564044(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

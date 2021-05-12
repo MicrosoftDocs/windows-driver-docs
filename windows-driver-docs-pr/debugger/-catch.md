@@ -30,8 +30,7 @@ It does not behave like the **catch** keyword in C++.
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The **.catch** token is followed by braces enclosing one or more commands.
 

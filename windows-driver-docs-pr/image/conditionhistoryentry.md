@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ConditionHistoryEntry** element provides details about one of the past conditions on the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ConditionHistoryEntry wscn:Id="..."
@@ -27,8 +26,7 @@ Usage
 </wscn:ConditionHistoryEntry wscn:Id="...">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -106,8 +104,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service specifies a unique identifier in the **Id** attribute for this **ConditionHistoryEntry** element. The client can use **Id**, along with the value of the [**Time**](time.md) element, to determine if an error condition is new or has gone away. The WSD Scan Service must not reuse the identifier for as long as possible. This delay ensures that clients can accurately keep track of individual **ConditionHistoryEntry** elements.
 

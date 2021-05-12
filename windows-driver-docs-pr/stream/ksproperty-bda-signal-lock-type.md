@@ -51,8 +51,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE to determine the current lock ty
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -60,8 +59,7 @@ The returned [**BDA\_LockType**](/windows-hardware/drivers/ddi/bdamedia/ne-bdame
 
 The RF tuner node should provide this indication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ Audio adapter drivers use the KSPROPERTY\_PIN\_PHYSICALCONNECTION property to de
 
  
 
-Remarks
--------
+## Remarks
 
 Specify this property using KSP\_PIN, where the member specifies the relevant pin factory.
 
@@ -67,8 +66,7 @@ Audio adapter drivers register connections with [**PcRegisterPhysicalConnection*
 
 Subsequently, the SysAudio system driver (*sysaudio.sys*) queries this property and builds the graph accordingly. SysAudio uses this property to determine which wave filter pin is connected to which topology filter pin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

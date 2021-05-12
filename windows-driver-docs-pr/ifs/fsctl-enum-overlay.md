@@ -50,8 +50,7 @@ Size of the buffer pointed to by *OutputBuffer*, in bytes.
 <a href="" id="lengthreturned--out-"></a>*LengthReturned \[out\]*  
 Specifies the number of bytes written into *OutputBuffer* on successful completion.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -88,15 +87,13 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 When enumerating the data sources for the WIM provider, the output buffer will contain an array of [**WIM\_PROVIDER\_OVERLAY\_ENTRY**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_update_overlay_input) structures. The size of the output buffer must be large enough to contain all the overlay entries or the call will return STATUS\_BUFFER\_TOO\_SMALL.
 
 Additional backing providers will define their own specific enumeration structures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

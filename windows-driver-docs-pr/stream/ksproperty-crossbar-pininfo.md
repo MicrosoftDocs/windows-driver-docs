@@ -56,8 +56,7 @@ The KSPROPERTY\_CROSSBAR\_PININFO property retrieves the type of physical connec
 
 The property value (operation data) is a KSPROPERTY\_CROSSBAR\_PININFO\_S structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

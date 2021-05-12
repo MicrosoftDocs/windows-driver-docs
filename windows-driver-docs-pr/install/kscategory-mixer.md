@@ -44,15 +44,13 @@ The KSCATEGORY_MIXER [device interface class](./overview-of-device-interface-cla
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_MIXER to indicate to the operating system that the devices support the KSCATEGORY_MIXER functional category.
 
 For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

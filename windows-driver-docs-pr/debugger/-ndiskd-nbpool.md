@@ -43,8 +43,7 @@ Find NBs that straddle the given physical address.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Enter the **!ndiskd.nbpool** command with no parameters to see a list of all allocated NB pools. In this example, look for the NB pool allocated by the Netio service with the Nnbf Tag. Its handle is ffffdf801308ca40.
 

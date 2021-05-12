@@ -44,8 +44,7 @@ The KSCATEGORY_VPMUX [device interface class](./overview-of-device-interface-cla
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_VPMUX to indicate to the operating system that the devices support the KSCATEGORY_VPMUX functional category.
 
@@ -53,8 +52,7 @@ For general information about video devices, see [Video Capture Devices](../stre
 
 For information about the device interface class for video devices, see [**KSCATEGORY_VIDEO**](kscategory-video.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

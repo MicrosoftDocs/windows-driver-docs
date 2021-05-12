@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 All drivers must be prepared to service **IRP\_MJ\_PNP** requests in a [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends **IRP\_MJ\_PNP** requests during enumeration, resource rebalancing, and any other time Plug and Play activity occurs on the system. Drivers can also send certain **IRP\_MJ\_PNP** requests, depending on the minor function code.
 
@@ -27,13 +26,11 @@ Depends on the value at **MinorFunction** in the current I/O stack location of t
 
 Depends on the value at **MinorFunction** in the current I/O stack location of the IRP.
 
-Operation
----------
+## Operation
 
 See [Plug and Play Minor IRPs](plug-and-play-minor-irps.md) for detailed information about **IRP\_MJ\_PNP** requests.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectAddCustomType** macro associates a framework object with a custom type.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS WdfObjectAddCustomType(
@@ -24,8 +23,7 @@ NTSTATUS WdfObjectAddCustomType(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_handle*   
 A handle to a framework object.
@@ -33,8 +31,7 @@ A handle to a framework object.
 *_type*   
 The driver-defined name for the custom type.
 
-Return value
-------------
+## Return value
 
 **WdfObjectAddCustomType** returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 
@@ -71,15 +68,13 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 **WdfObjectAddCustomType** is a simplified version of [**WdfObjectAddCustomTypeWithData**](wdfobjectaddcustomtypewithdata.md).
 
 For more information about object driver types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
-Examples
---------
+## Examples
 
 This example code shows how to add a custom type to a queue.
 
@@ -115,8 +110,7 @@ End:
     return status;    
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

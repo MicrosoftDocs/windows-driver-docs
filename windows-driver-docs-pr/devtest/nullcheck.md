@@ -96,8 +96,7 @@ void Good2(int *x)
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

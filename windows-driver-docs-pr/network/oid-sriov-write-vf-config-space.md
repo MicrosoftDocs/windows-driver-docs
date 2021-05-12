@@ -20,8 +20,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 -   Additional buffer space that contains the data to be written to the PCI configuration space.
 
-Remarks
--------
+## Remarks
 
 The VF miniport driver runs in the guest operating system of a Hyper-V child partition. Because of this, the VF miniport driver cannot directly access hardware resources, such as the VF's PCI configuration space. Only the PF miniport driver, which runs in the management operating system of a Hyper-V parent partition, can access the PCI configuration space for a VF.
 
@@ -84,8 +83,7 @@ The PF miniport driver returns one of the following status codes for the OID set
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_PARCLASS [device interface class](./overview-of-device-int
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for parallel devices that are attached to parallel ports register instances of GUID_DEVINTERFACE_PARCLASS to notify the operating system and applications of the presence of parallel devices.
 
@@ -57,8 +56,7 @@ For information about the device interface class for parallel ports, see [**GUID
 
 [**GUID_PARCLASS_DEVICE**](guid-parclass-device.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_PARCLASS instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

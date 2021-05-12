@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 TapeClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for tape [storage devices](../storage/index.md). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_TAPE**](guid-devinterface-tape.md) class identifier for new instances of this class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

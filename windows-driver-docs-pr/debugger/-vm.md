@@ -77,8 +77,7 @@ Causes the display to include working set owner thread stacks.
 
 The [**!memusage**](-memusage.md) extension command can be used to analyze physical memory usage. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the short output produced when *Flags* is 1:
 

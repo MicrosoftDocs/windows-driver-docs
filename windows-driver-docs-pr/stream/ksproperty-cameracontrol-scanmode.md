@@ -56,13 +56,11 @@ The KSPROPERTY\_CAMERACONTROL\_SCANMODE property specifies the scanning mode of 
 
 The property value (operation data) is a LONG that specifies whether interlace mode should be enabled. A value of 0 indicates that the interlace mode is enabled, and a value of 1 indicates that the progressive (or non-interlace) mode is enabled.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure specifies whether interlace mode should be enabled.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

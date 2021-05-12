@@ -58,8 +58,7 @@ Specifies the thread or threads to resume. For more information about the syntax
 
 For more information about the suspend count and how suspended threads behave and for a list of other commands that control the suspending and freezing of threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

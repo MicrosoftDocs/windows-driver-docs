@@ -120,8 +120,7 @@ This example in this topic simplifies USBSAMP implementation of isochronous tran
 
 The following procedure elaborates the preceding steps and shows calculations and routines that a client driver can use to build and send an isochronous transfer request for a high-speed isochronous endpoint. The values used in the procedure are based on the example endpoint characteristics described earlier.
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="get-the-size-of-an-isochronous-packet--"></a>Step 1: Get the size of an isochronous packet.
 
@@ -238,8 +237,7 @@ Total length transferred is 360,000 bytes.
 
 The **UrbIsochronousTransfer.IsoPacket\[i\]**.Length member does not imply the length of each packet of the isochronous URB. **IsoPacket\[i\].Length** is updated by the USB driver stack to indicate the actual number of bytes that are received from the device for isochronous IN transfers. For isochronous OUT transfers, the driver stack ignores the value that is set in **IsoPacket\[i\].Length**.
 
-Remarks
--------
+## Remarks
 
 **Specify the starting USB frame number for the transfer**
 

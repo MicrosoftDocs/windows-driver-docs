@@ -45,8 +45,7 @@ None
 
  
 
-Remarks
--------
+## Remarks
 
 The !powertriage extension displays the following information.
 

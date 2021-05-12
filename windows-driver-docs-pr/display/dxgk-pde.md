@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_PDE structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_PDE {
@@ -37,8 +36,7 @@ typedef struct _DXGK_PDE {
 } DXGK_PDE;
 ```
 
-Members
--------
+## Members
 
 **Valid**
 Reserved for system use.
@@ -58,8 +56,7 @@ Reserved for system use.
 **PageTableSizeInPages**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

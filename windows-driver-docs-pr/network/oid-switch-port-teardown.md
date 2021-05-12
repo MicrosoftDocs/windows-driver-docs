@@ -14,8 +14,7 @@ The protocol edge of the Hyper-V extensible switch issues an object identifier (
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 The **PortId** member of the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure specifies the extensible switch port for which the connect notification is being made. The extensible switch extension must update any cached information about the port that it obtained in the following ways:
 
@@ -78,8 +77,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

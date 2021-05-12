@@ -46,8 +46,7 @@ The DEVPKEY_NAME device property represents the name of a device instance.
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_NAME device should be used to identify a device instance to an end-user in a user interface item.
 
@@ -57,8 +56,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY_Device_FriendlyName and DEVPKEY_Device_DeviceDesc.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

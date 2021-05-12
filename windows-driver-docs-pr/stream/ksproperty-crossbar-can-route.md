@@ -56,13 +56,11 @@ The KSPROPERTY\_CROSSBAR\_CAN\_ROUTE property retrieves whether the device is ca
 
 The property value (operation data) is a ULONG that specifies whether the streaming minidriver supports a specified routing between the two pins. A nonzero value indicates that routing is supported. If the minidriver does not support routing between the two pins, this value is zero.
 
-Remarks
--------
+## Remarks
 
 The **CanRoute** member of the KSPROPERTY\_CROSSBAR\_ROUTE\_S structure indicates if the device is capable of supporting a specified routing.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

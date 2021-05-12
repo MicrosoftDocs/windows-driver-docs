@@ -25,8 +25,7 @@ Not used.
 <span id="OutBuffer"></span><span id="outbuffer"></span><span id="OUTBUFFER"></span>*OutBuffer*  
 The memory at the current event's instruction pointer. Up to 64 bytes of memory may be returned.
 
-Remarks
--------
+## Remarks
 
 The memory returned is a snapshot of the memory taken when the event occurred. It does not reflect any changes that may have been made to the target's memory since the event.
 

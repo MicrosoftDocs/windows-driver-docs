@@ -49,8 +49,7 @@ Provides the address of the FxDevice to display.
 
  
 
-Remarks
--------
+## Remarks
 
 The !fxdevice extension displays the following information when it is present on the target system.
 

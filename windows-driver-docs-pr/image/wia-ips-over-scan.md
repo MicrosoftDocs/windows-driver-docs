@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_OVER\_SCAN** property.
 
@@ -68,8 +67,7 @@ The following table describes the valid values for the **WIA\_IPS\_OVER\_SCAN** 
 
 This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is optional. When the property is supported, WIA\_OVER\_SCAN\_DISABLED is the required default value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

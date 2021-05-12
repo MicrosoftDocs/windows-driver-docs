@@ -55,13 +55,11 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_KEEPALIVE\_MSG**](remote
 
  
 
-Remarks
--------
+## Remarks
 
 If the device implements the option of sending [**REMOTE\_NDIS\_KEEPALIVE\_MSG**](remote-ndis-keepalive-msg.md), the host will respond with REMOTE\_NDIS\_KEEPALIVE\_CMPLT through the control channel.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

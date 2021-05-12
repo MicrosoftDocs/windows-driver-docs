@@ -19,15 +19,13 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_MASK_TYPE mask can be combined in a bitwise AND with a [property-data-type identifier](/previous-versions/ff541476(v=vs.85)) to extract the [**base-data-type identifier**](/previous-versions/ff537793(v=vs.85)) from a property-data-type identifier.
 
-Remarks
--------
+## Remarks
 
 This mask cannot be used as a base-data-type identifier, a property-data-type modifier, or a property-data-type identifier.
 
 For information about how to extract the DEVPROP_TYPEMOD_Xxx [**property-data-type modifier**](/previous-versions/ff549770(v=vs.85)) from a property-data-type identifier, see [**DEVPROP_MASK_TYPEMOD**](devprop-mask-typemod.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

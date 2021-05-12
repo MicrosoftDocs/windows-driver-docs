@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HSPluginInitPlugin** function is exported by the plugin DLL and is called to initialize the plugin.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DWORD HSPluginInitPlugin(
@@ -29,8 +28,7 @@ DWORD HSPluginInitPlugin(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPluginContext* \[in\]  
 A handle, provided by the host, that the plugin is required to save and then use when it needs to make a request to the host by way of the host handler functions.
@@ -57,8 +55,7 @@ Pointer to the [**HOTSPOT\_PLUGIN\_APIS**](hotspot-plugin-apis.md) structure tha
 *\*pPluginProfile* \[out\]  
 Pointer to a [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure, returned by the plugin, that provides information about the plugin.
 
-Remarks
--------
+## Remarks
 
 During initialization, the host provides the following:
 
@@ -69,8 +66,7 @@ During initialization, the host provides the following:
 
 The plugin returns a pointer to its own function table and a pointer to its [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

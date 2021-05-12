@@ -60,8 +60,7 @@ The TRAP\_CAUSE\_UNKNOWN bug check has a value of 0x00000012. This indicates tha
 </tbody>
 </table>
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 

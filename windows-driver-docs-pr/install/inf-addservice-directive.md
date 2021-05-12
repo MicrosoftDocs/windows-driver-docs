@@ -94,8 +94,7 @@ For example, an INF would specify **Security** only if the to-be-installed drive
 <a href="" id="eventname"></a>*EventName*  
 Optionally specifies a name to use for the event log. If omitted, this defaults to the given *ServiceName*.
 
-Remarks
--------
+## Remarks
 
 The system-defined and case-insensitive extensions can be inserted into a <em>DDInstall</em>**.Services** section that contains an **AddService** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
 
@@ -391,8 +390,7 @@ An *event-log-install-section* can also use the [**DelReg**](inf-delreg-directiv
 
 While a [**BitReg**](inf-bitreg-directive.md) directive is also valid within an INF-writer-defined *event-log-install*-*section*, it is almost never used, because the standard value entries for device driver event logging are not bitmasks.
 
-Examples
---------
+## Examples
 
 This example shows the service-install and event-log-install sections referenced by the **AddService** directive as already shown earlier in the example for [***DDInstall*.Services**](inf-ddinstall-services-section.md).
 

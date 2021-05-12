@@ -56,8 +56,7 @@ Before the client driver can enumerate pipes, make sure these requirements are m
 
     For a UMDF client driver, the framework selects the first configuration and the default alternate setting for each interface in that configuration.
 
-Instructions
-------------
+## Instructions
 
 ### Getting USB pipe handles - KMDF client driver
 
@@ -701,8 +700,7 @@ In UMDF, the client driver uses a pipe index to send data transfer requests. A p
 
 One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbinterface-getwinusbhandle) to obtain a WinUSB handle and then call [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). For example, the driver can call the [**WinUsb\_ReadPipe**](/windows/win32/api/winusb/nf-winusb-winusb_readpipe) or [**WinUsb\_WritePipe**](/windows/win32/api/winusb/nf-winusb-winusb_writepipe) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
-Remarks
--------
+## Remarks
 
 ### Pipe handles for WDM-based client drivers
 

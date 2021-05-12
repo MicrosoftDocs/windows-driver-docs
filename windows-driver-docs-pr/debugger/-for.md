@@ -40,8 +40,7 @@ Specifies one or more commands that will be executed repeatedly as long as the c
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 If all the work is being done by the increment commands, you can omit *Condition* entirely and simply use an empty pair of braces.
 

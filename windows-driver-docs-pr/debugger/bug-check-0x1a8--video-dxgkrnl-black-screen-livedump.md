@@ -40,14 +40,12 @@ The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8.
 
 0x8: Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
 
-## Cause
------
+## ## Cause
 
 User initiated DXGKRNL live dump for black screen scenarios. See the values for parameter 1 for the source of the triggered live dump. 
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **CreateScanJobResponse** element contains the WSD Scan Service's response to a client's scan request.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CreateScanJobResponse>
@@ -26,8 +25,7 @@ Usage
 </wscn:CreateScanJobResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -64,8 +62,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **CreateScanJobResponse** operation element.
 
@@ -80,8 +77,7 @@ If the client has made a valid scan request, the WSD Scan Service must return th
 
 The client must retrieve the actual image data from the Scan Service by sending one or more [**RetrieveImageRequest**](retrieveimagerequest.md) operation elements. The client has 60 seconds to send a **RetrieveImageRequest** operation element after the Scan Service has responded to the client's [**CreateScanJobRequest**](createscanjobrequest.md). If the Scan Service does not receive a **RetrieveImageRequest** within this time, it should abort the job with a [**JobStateReason**](jobstatereason.md) of **JobTimedOut**. If the job consists of multiple documents, this time-out applies between each successive **RetrieveImageRequest/Response** operation.
 
-Examples
---------
+## Examples
 
 The following code example illustrates a WSD Scan Service response to a CreateScanJobRequest.
 

@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 You should map values for the WIA\_IPS\_THRESHOLD property in a range from 0 through 255. The default value is 128.
 
 An application sets WIA\_IPS\_THRESHOLD to change the hardware threshold value. This value is valid only if the [**WIA\_IPA\_DATATYPE**](wia-ipa-datatype.md) property is equal to WIA\_DATA\_THRESHOLD. If a device does not allow WIA\_DATA\_THRESHOLD to be changed, it should report the default value of 128.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -35,8 +35,7 @@ Address of one of the following:
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of an EHCI host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

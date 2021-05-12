@@ -148,8 +148,7 @@ Kdexts.dll
 
 For information about the registry and its components, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Here is an example. First use **!reg hivelist** to get a list of hive addresses.
 

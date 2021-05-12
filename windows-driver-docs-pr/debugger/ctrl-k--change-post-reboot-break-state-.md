@@ -65,8 +65,7 @@ CTRL+ALT+K
 
 For an overview of related commands and an explanation of how the reboot process affects the debugger, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 
-Remarks
--------
+## Remarks
 
 This control key causes the kernel debugger to cycle through the following three states:
 

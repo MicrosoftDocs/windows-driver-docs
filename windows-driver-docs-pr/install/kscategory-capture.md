@@ -44,8 +44,7 @@ The KSCATEGORY_CAPTURE [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_CAPTURE to indicate that the devices support the KSCATEGORY_CAPTURE functional category.
 
@@ -53,8 +52,7 @@ For information about how to register this functional category in an INF file, s
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -47,8 +47,7 @@ Ntsdexts.dll</td>
 
  
 
-Remarks
--------
+## Remarks
 
 The KUSER\_SHARED\_DATA page gives resource and other information about the user who is currently logged on.
 

@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPA\_BITS\_PER\_CHANNEL property is similar to the [**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](wia-ipa-raw-bits-per-channel.md) property (which is used for the raw formats).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

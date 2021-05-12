@@ -51,8 +51,7 @@ CTRL+F  ENTER
 
  
 
-Remarks
--------
+## Remarks
 
 Under typical conditions, CTRL+F is identical to the standard break commands ([**CTRL+C**](ctrl-c--break-.md) in KD and CDB, and [Debug | Break](debug---break.md) or CTRL+BREAK in WinDbg.)
 

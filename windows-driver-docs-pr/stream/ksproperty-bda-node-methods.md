@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_NODE\_METHODS to retrieve a list of methods support
 
  
 
-Remarks
--------
+## Remarks
 
 The list of methods supported by a node is a list of GUIDs.
 
 The network provider will use this property to query the capabilities of each node in the BDA template connection list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

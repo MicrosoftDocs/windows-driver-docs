@@ -58,8 +58,7 @@ Specifies the complete command line for the new process. *CommandLine* may conta
 
  
 
-Remarks
--------
+## Remarks
 
 This command can be used when CDB is dormant, or if it is already debugging one or more processes. It cannot be used when WinDbg is dormant.
 

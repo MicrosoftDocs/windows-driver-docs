@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CcSetLogHandleForFileEx** routine sets a log handle for a file and tracking callback functions for the file log.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID CcSetLogHandleForFileEx(
@@ -31,8 +30,7 @@ VOID CcSetLogHandleForFileEx(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *FileObject* \[in\]
 Pointer to the file object for the file for which the log handle is to be stored.
@@ -82,20 +80,17 @@ Pointer to an opaque structure that is used to identify this client.
 
 A value between 0 and 100 indicating percentage of log usage.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 **CcSetLogHandleForFileEx** sets a log handle for a file, for use in subsequent calls to [**CcGetDirtyPages**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccgetdirtypages).
 
 Callbacks for *FlushToLsnRoutine* and *QueryLogUsageRoutine* are required. These values must not be NULL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

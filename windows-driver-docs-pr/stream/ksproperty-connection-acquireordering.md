@@ -54,15 +54,13 @@ The KSPROPERTY\_CONNECTION\_ACQUIREORDERING property is an optional property tha
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns **TRUE** if state change ordering is significant. If **FALSE** is to be returned, the property need not be implemented.
 
 This read-only property is used to determine whether the Stop-to-Acquire state change is significant for this communication sink pin. If the property is not implemented, the assumption is that ordering is not significant. For IRP-based data flow, this would be implemented by a pin when it forwards streaming IRPs rather than creating new IRPs for requests, and thus needs to indicate correct stack depth to the connected source pin. If the pin did not forward IRPs, then recalculation of stack depth would not be important, as the stack depth for the filter would be static.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

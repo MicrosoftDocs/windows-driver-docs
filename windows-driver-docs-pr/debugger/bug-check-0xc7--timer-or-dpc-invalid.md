@@ -93,13 +93,11 @@ The TIMER\_OR\_DPC\_INVALID bug check has a value of 0x000000C7. This is issued 
 
  
 
-Cause
------
+## Cause
 
 This condition is usually caused by a driver failing to cancel a timer or DPC before freeing the memory where it resides.
 
-Resolution
-----------
+## Resolution
 
 If you are the driver writer, use the information obtained through this bug check to fix the bugs in your code.
 

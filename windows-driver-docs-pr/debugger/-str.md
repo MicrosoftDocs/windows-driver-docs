@@ -52,8 +52,7 @@ Specifies the hexadecimal address of the ANSI\_STRING or OEM\_STRING structure.
 
 For more information about ANSI\_STRING structures, see the Microsoft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 ANSI strings are counted 8-bit character strings, as defined in the following structure:
 

@@ -29,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
 
@@ -90,8 +89,7 @@ Suppose a transport passes addresses through an intermediate driver down to an u
 
 A protocol can set the **AddressCount** member of TRANSPORT\_ADDRESS to zero to notify a miniport driver or other layered driver to clear the list of network-layer addresses on a bound interface. If **AddressCount** is set to zero, the **AddressType** member in NETWORK\_ADDRESS\_LIST is valid and the **AddressType** members in NETWORK\_ADDRESS structures are not valid. On the other hand, a protocol can set **AddressCount** to a nonzero value to notify a miniport driver or other layered driver to change the list of network-layer addresses on a bound interface. In this case, the **AddressType** member in NETWORK\_ADDRESS\_LIST is not valid and the **AddressType** members in NETWORK\_ADDRESS structures are valid.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

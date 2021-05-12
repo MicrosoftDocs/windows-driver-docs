@@ -77,8 +77,7 @@ Specifies the process ID of the new target application.
 
  
 
-Remarks
--------
+## Remarks
 
 This command can be used when CDB is dormant, or if it is already debugging one or more processes. It cannot be used when WinDbg is dormant.
 

@@ -23,8 +23,7 @@ NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_COMPLETE indicates the completion of [
 
 This indication contains no additional data. The data in the header is sufficient. The completion status from the message is not forwarded to anyone.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

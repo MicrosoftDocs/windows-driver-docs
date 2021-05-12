@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_PATCH\_CODE\_READER** property.
 
@@ -87,8 +86,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

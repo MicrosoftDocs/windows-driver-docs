@@ -20,8 +20,7 @@ NDIS issues this OID method request to the miniport driver of the network adapte
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 When it receives the OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, the PF miniport driver must do the following:
 
@@ -96,8 +95,7 @@ The PF miniport driver returns one of the following status codes for the OID met
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

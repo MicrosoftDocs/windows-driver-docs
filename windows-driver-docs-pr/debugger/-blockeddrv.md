@@ -45,8 +45,7 @@ The **!blockeddrv** extension displays the list of blocked drivers on the target
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

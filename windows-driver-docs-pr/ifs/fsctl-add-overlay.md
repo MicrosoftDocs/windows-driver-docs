@@ -47,8 +47,7 @@ A pointer to the output buffer, which contains any resultant information from th
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 Size of the buffer pointed to by *OutputBuffer*.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -85,15 +84,13 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 When the backing source added is a Windows Imaging Format (WIM) file, the input buffer will contain a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**WIM\_PROVIDER\_ADD\_OVERLAY\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_add_overlay_input) structure. The *InputBufferLength* in this case will be **sizeof**(**WOF\_EXTERNAL\_INFO**) + **sizeof**(**WIM\_PROVIDER\_ADD\_OVERLAY\_INPUT**). On completion of the request, the data pointed to by *OutputBuffer* contains a single LARGE\_INTEGER value which is the new data source identifier for the WIM file.
 
 Other backing providers will define their own specific input parameter structures and output data types.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

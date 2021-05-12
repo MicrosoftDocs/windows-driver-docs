@@ -54,8 +54,7 @@ This optional entry specifies the particular sections that must be processed dur
 
 **Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 
-Remarks
--------
+## Remarks
 
 The *DDInstall* section name must be referenced by a device/models-specific entry under the per-manufacturer *Models* section of the INF file. For information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions in cross-platform INF files, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
@@ -65,8 +64,7 @@ For more information about how to create a GUID, see [Using GUIDs in Drivers](..
 
 When a driver is loaded, it must call [**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) once for each **{**<em>InterfaceClassGUID</em>**}** value specified in the INF's <em>DDInstall</em>**.Interfaces** section that the driver supports on the underlying device, to enable the interface for run-time use by higher level components. Instead of registering support for a device interface in an INF, a device driver can call [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) before making its initial call to **IoSetDeviceInterfaceState**. Usually, a PnP function or filter driver makes this call from its [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
 
-Examples
---------
+## Examples
 
 This example shows the <em>DDInstall</em>**.nt.Interfaces** section in the INF file for the system-supplied WDM audio device/driver shown as examples for the [**INF *DDInstall* section**](inf-ddinstall-section.md) and the [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) .
 

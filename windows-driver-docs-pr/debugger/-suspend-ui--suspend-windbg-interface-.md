@@ -63,8 +63,7 @@ This command is available only in WinDbg and cannot be used in script files.
 
 For information about debugging information windows, see [Using Debugging Information Windows](using-debugging-information-windows.md).
 
-Remarks
--------
+## Remarks
 
 Without any parameters, **.suspend\_ui** displays whether debugging information windows are currently suspended.
 

@@ -38,8 +38,7 @@ Type of the value stored in the slot.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all per-processor slot variables. The following example output has excised the middle portion of the list for brevity.
 

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a set, NDIS protocol drivers use the OID\_PM\_ADD\_WOL\_PATTERN OID to add a power management wake-on-LAN pattern to a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS 6.20 and later protocol drivers use OID\_PM\_ADD\_WOL\_PATTERN to add a Wake on LAN (WOL) pattern to a network adapter. The OID request contains criterion that the network adapter must compare to incoming packets when it is in a low power state. The network adapter must generate a wake up event when it receives a packet that matches the pattern criteria.
 
@@ -55,8 +54,7 @@ The network adapter does not support the requested WOL pattern.
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

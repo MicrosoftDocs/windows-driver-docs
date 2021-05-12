@@ -39,8 +39,7 @@ Opaque oplock object pointer for the file.
 <a href="" id="opencount"></a>*OpenCount*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
 [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) always returns FLT\_PREOP\_COMPLETE for this operation.
 
@@ -71,8 +70,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

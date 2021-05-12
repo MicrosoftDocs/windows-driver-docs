@@ -49,8 +49,7 @@ qd
 
  
 
-Remarks
--------
+## Remarks
 
 The **qd** command detaches from a target application and ends the debugging session, leaving the target still running. However, this command is supported only on Microsoft Windows XP and later versions of Windows. On Windows 2000, **qd** generates a warning message and has no effect.
 

@@ -53,8 +53,7 @@ al
 
 For more information about how to use aliases, see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 The **al** command lists all user-named aliases. But this command does not list fixed-name aliases ($u0 to $u9).
 

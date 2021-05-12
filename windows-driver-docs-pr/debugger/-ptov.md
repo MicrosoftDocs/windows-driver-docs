@@ -48,8 +48,7 @@ Specifies the directory base for the process. To determine the directory base, u
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example. First, use [**.process**](-process--set-process-context-.md) and [**!process**](-process.md) to determine the directory base of the current process:
 

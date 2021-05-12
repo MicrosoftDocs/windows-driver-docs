@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_SET\_AUTO\_POWER\_SAVE is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

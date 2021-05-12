@@ -16,13 +16,11 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_RADIO\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state) structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers should return both the current hardware-based and software-based radio power states in response to a query request
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

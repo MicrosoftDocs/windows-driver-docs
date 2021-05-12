@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The vendor description is obtained from the INF file. An application reads the WIA\_DIP\_VEND\_DESC property to get a description of the device vendor.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

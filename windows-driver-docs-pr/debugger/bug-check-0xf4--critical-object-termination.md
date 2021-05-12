@@ -59,14 +59,12 @@ The CRITICAL\_OBJECT\_TERMINATION bug check has a value of 0x000000F4. This indi
 
  
 
-Cause
------
+## Cause
 
 Several processes and threads are necessary for the operation of the system. When they are terminated for any reason, the system can no longer function.
 
  
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  

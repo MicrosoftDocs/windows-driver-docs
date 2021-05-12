@@ -53,8 +53,7 @@ The **.crash** command causes the target computer to issue a bug check.
 
 For an overview of related commands and a description of the options available after a system crash, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 
-Remarks
--------
+## Remarks
 
 This command will immediately cause the target computer to crash.
 

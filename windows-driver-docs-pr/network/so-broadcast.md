@@ -122,8 +122,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 The default state of this socket option is that broadcast messages are not allowed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

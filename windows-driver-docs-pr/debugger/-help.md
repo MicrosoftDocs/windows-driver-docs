@@ -41,8 +41,7 @@ Displays only the help text for the specified command. This feature is not suppo
 
 This extension is supported by most extension DLLs.
 
-Remarks
--------
+## Remarks
 
 Some individual commands will also display a help text if you use the **/?** or **-?** parameter with the command name.
 

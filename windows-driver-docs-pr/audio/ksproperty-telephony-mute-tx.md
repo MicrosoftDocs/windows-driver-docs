@@ -57,8 +57,7 @@ The property value is of type BOOL and specifies whether the data transmitted fr
 
 A **KSPROPERTY\_TELEPHONY\_MUTE\_TX** property request returns **TRUE** if the phone call is muted; it returns **FALSE** if the phone call is unmuted.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

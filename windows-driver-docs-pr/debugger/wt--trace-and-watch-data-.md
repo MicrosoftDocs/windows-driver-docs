@@ -121,8 +121,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 
 For more information about issuing the **wt** command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **wt** command is useful if you want information about the behavior of a specific function, but you do not want to step through the function. Instead, go to the beginning of that function and then issue the **wt** command.
 

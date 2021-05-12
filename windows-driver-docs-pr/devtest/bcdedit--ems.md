@@ -12,8 +12,8 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /ems
-============
+# BCDEdit /ems
+
 
 The **BCDEdit /ems** option enables or disables Emergency Management Services (EMS) for the specified operating system boot entry.
 

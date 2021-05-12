@@ -39,13 +39,11 @@ LogConfig=log-config-section[,log-config-section]...]
 
 The section entries and values that are used with <em>DDInstall</em>**.LogConfigOverride** sections are specified within *log-config-sections* referenced by [**INF LogConfig directives**](inf-logconfig-directive.md).
 
-Remarks
--------
+## Remarks
 
 The configuration data that is specified in a *log-config-section* for a Plug and Play device is a preferred hardware resource configuration, but is not an absolute requirement. Some or all of the specified hardware resource configuration data might not be accepted by the device's underlying bus driver. In this situation, the device driver is assigned the hardware resources that were originally reported by the bus driver.
 
-Examples
---------
+## Examples
 
 The following example shows a <em>DDInstall</em>**.LogConfigOverride** section and a corresponding *log-config-section* for a PCMCIA device.
 

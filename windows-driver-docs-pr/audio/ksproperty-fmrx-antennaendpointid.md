@@ -59,8 +59,7 @@ The property value is of type [**KSTOPOLOGY\_ENDPOINTID**](/windows-hardware/dri
 
 A KSPROPERTY\_FMRX\_ANTENNAENDPOINTID property request returns the name and the pin id of the endpoint to be used as FM radio antenna.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

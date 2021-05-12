@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_INPUT\_CAPABILITIES property returns a wave device's input
 
 The property value (operation data) is a KSWAVE\_INPUT\_CAPABILITIES structure that describes the input capabilities of a wave device, including the maximum number of audio channels, the range of bits per sample, the range of sampling frequency, and the total and active number of connections.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

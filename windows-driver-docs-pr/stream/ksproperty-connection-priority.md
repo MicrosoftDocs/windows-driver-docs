@@ -54,8 +54,7 @@ Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the prio
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a structure of type [**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority) that contains a priority class and subclass.
 
@@ -67,8 +66,7 @@ The priority values have global significance: a client can use the reported valu
 
 KSPROPERTY\_CONNECTION\_PRIORITY is optional. Clients treat pins that do not support it as having priority KSPRIORITY\_NORMAL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -57,8 +57,7 @@ The DEVPKEY_Device_ResourcePickerTags device property represents resource picker
 
  
 
-Remarks
--------
+## Remarks
 
 You can set the value of DEVPKEY_Device_ResourcePickerTags by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs a device.
 
@@ -66,8 +65,7 @@ You can retrieve the value of PKEY_Device_ResourcePickerTags by calling [**Setup
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_ResourcePickerTags property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ResourcePickerTags** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

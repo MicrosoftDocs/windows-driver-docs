@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY to inform the RF tuner node 
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the RF tuner node.
 
@@ -65,8 +64,7 @@ If a client sends a KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY request to tune an RF 
 
 Likewise, if a client sends a KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY request to tune an RF tuner to a specific frequency and this frequency is less than the switch frequency, then the RF tuner should send a command to the LNB to switch to the low-band LOF. The RF tuner should then expect that the LNB device shifts the frequency of the incoming RF signal by the low-band LOF amount, which was specified using KSPROPERTY\_BDA\_LNB\_LOF\_LOW\_BAND.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -102,8 +102,7 @@ Kdexts.dll
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This example finds the IRP in the nonpaged pool that is going to set user event FF9E4F48 upon completion:
 

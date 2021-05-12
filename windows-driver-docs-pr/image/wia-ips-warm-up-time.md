@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application can read the WIA\_IPS\_WARM\_UP\_TIME property to determine the maximum warm-up time for a device. The application can then present a "waiting for the device to warm up" dialog box to let users know that a wait or pause might occur before anything happens.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

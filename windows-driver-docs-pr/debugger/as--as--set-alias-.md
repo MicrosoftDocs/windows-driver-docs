@@ -113,8 +113,7 @@ Specifies the commands whose outputs become the alias equivalent. This string ca
 
 For more information about how to use aliases, see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 If you do not use any switches, the **as** command uses the rest of the line as the alias equivalent.
 

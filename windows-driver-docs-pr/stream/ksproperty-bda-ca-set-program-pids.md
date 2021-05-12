@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS to set the list of packet id
 
  
 
-Remarks
--------
+## Remarks
 
 The BDA\_PROGRAM\_PID\_LIST structure contains the list of packet identifiers for a specified program.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,13 +14,11 @@ All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs 
 
 If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_QUERY\_ALL\_DATA** request, WMI in turn calls that driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 WMI sends this IRP to query for all instances of a given data block.
 
@@ -71,8 +69,7 @@ STATUS\_WMI\_GUID\_NOT\_FOUND
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to the number of bytes written to the buffer at **Parameters.WMI.Buffer**.
 
-Operation
----------
+## Operation
 
 A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
@@ -88,8 +85,7 @@ If the driver supports the data block, it must do the following:
 
 -   Fill in a [**WNODE\_ALL\_DATA**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_all_data) structure at **Parameters.WMI.Buffer** with data for all instances of that data block.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

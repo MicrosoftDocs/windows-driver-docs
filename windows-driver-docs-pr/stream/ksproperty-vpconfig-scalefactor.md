@@ -56,13 +56,11 @@ The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to
 
 The property value (operation data) is a KS\_AMVPSIZE structure that specifies the width and height of the video port.
 
-Remarks
--------
+## Remarks
 
 When this property is used by KSPROPSETID\_VPVBIConfig, all property requests must return STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

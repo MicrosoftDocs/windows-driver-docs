@@ -19,8 +19,7 @@ This rule checks that an SRB is not completed with status **SRB\_STATUS\_PENDING
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortNotification**](/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification)

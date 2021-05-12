@@ -30,8 +30,7 @@ This extension has no parameters.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 The following example shows that the debugee machine has a Checked Ndis build.
 

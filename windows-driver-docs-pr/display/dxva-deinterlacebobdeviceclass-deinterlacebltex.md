@@ -16,8 +16,7 @@ ms.localizationpriority: medium
 
 The sample **DeinterlaceBltEx** function performs deinterlace or frame-rate conversion, combines the deinterlaced or frame-rate converted video with supplied video substreams, and writes the combined output to a destination surface.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 HRESULT DeinterlaceBltEx(
@@ -33,8 +32,7 @@ HRESULT DeinterlaceBltEx(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *rtTargetFrame* \[in\]
 Supplies the location of the output frame within the sequence of input frames. If pure deinterlacing is performed, the target time should coincide with one of the **rtStart** times or midpoint times (that is, (**rtStart**+**rtEnd**)/2) of a sample, as defined in the [**DXVA\_VideoSample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2) structure.
@@ -65,13 +63,11 @@ Supplies the number of samples in the *lpDDSrcSurfaces* array.
 *fAlpha* \[in\]
 Supplies the planar-transparency value that the driver should apply to the output destination surface image, which is a composite of background color, video stream, and video substreams. For Windows Server 2003 SP1 and Windows XP SP2, this value is always 1.0F, which indicates that the overall image is opaque and that no alpha blending on the overall image is required.
 
-Return value
-------------
+## Return value
 
 Returns 0 (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The **DeinterlaceBltEx** function performs the deinterlace or frame-rate conversion operation and simultaneously combines supplied video substreams with the deinterlaced or frame-rate converted video. The **DeinterlaceBltEx** function then writes the output to the destination surface. Note that **DeinterlaceBltEx** can be called with a progressive video sample, in which case the driver should not perform a deinterlace operation. The driver should combine the video with the supplied video substreams and convert each stream as indicated by the *lprcTargetRect* and *BackgroundColor* paramters and the **rcSrc** and **rcDst** members of the [**DXVA\_VideoSample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2) structures in the array that is passed in the *pDDSrcSurfaces* parameter.
 
@@ -128,8 +124,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 
 For the DirectX VA device used for deinterlacing, the driver-supplied callback pointed to by **RenderMoComp** is called without calling the display driver-supplied **BeginMoCompFrame** or **EndMoCompFrame** function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

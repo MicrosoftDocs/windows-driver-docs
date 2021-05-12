@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_XEXTENT property to mark the upper-left corner (that is, the width) of the selection area to acquire. The minidriver creates and maintains this property.
 
@@ -45,8 +44,7 @@ A driver must also to update the WIA\_IPS\_XEXTENT, WIA\_IPS\_XPOS, WIA\_IPS\_YE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

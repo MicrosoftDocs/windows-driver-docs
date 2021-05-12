@@ -48,8 +48,7 @@ Specifies a loaded module, either by name or by base address.
 
  
 
-Remarks
--------
+## Remarks
 
 Module addresses can be determined by using the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command.
 

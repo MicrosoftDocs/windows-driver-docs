@@ -55,8 +55,7 @@ Specifies the amount of detail to display. This parameter can take 0, 1, or 2 as
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!scsikd.classext** display:
 

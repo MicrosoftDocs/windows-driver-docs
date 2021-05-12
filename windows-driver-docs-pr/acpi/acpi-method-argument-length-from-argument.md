@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 void ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT(
@@ -21,24 +20,20 @@ void ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Argument*   
 A pointer to an ACPI\_METHOD\_ARGUMENT structure.
 
-Return value
-------------
+## Return value
 
 The size, in bytes, of the data that is contained in the **Data** array of the ACPI\_METHOD\_ARGUMENT structure that *Argument* points to.
 
-Remarks
--------
+## Remarks
 
 A driver can use this macro to determine the size, in bytes, of the data in the **Data** array of an ACPI\_METHOD\_ARGUMENT structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

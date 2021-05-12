@@ -18,13 +18,11 @@ Function drivers must handle this IRP if their device can contain a paging file,
 
 0x16
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The system sends this IRP when it is creating or deleting a paging file, dump file, or hibernation file. If a device has a power management relationship that falls outside of the conventional parent-child relationship, the driver can send this IRP to propagate device usage information to another device stack. For more information, see the description of the **PowerRelations** request in [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](irp-mn-query-device-relations.md).
 
@@ -49,8 +47,7 @@ Drivers set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate 
 
 Drivers do not modify the **Irp-&gt;IoStatus.Information** field; it remains at zero, as set by the component sending the IRP.
 
-Operation
----------
+## Operation
 
 A driver handles this IRP on the IRP's way down the device stack and on the IRP's way back up the stack.
 
@@ -140,8 +137,7 @@ See [Power Management](./introduction-to-power-management.md) for more informati
 
 A driver can send an **IRP\_MN\_DEVICE\_USAGE\_INFORMATION** IRP, but only to propagate device usage information to another device stack. A driver is never the initial source of device usage information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

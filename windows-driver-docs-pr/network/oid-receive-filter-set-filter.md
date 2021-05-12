@@ -19,8 +19,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure. If the overlying driver is creating a new receive filter, NDIS updates this structure with a new filter identifier.
 
-Remarks
--------
+## Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
@@ -100,8 +99,7 @@ The NDIS version of the miniport driver is an earlier version than 6.20.
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for other reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

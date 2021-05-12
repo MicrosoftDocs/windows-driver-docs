@@ -62,13 +62,11 @@ The property value (operation data) is a structure of type KSCOMPONENTID that sp
 
 A KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound does not communicate directly with the miniport driver for the audio hardware that underlies each of SysAudio's virtual audio devices. Thus, DirectSound is unable to query the wave-rendering device directly for its component-ID information. The KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property provides a means for DirectSound to obtain this information indirectly through SysAudio.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

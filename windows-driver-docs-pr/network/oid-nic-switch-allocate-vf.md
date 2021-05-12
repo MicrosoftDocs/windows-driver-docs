@@ -16,8 +16,7 @@ Overlying drivers issue this OID method request to the miniport driver for the n
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 The PF miniport driver allocates software resources for a VF when the driver handles an object identifier (OID) method request of OID\_NIC\_SWITCH\_ALLOCATE\_VF. Even though the hardware resources have been allocated for a VF, it is considered to be nonoperational until the PF miniport driver successfully completes the OID\_NIC\_SWITCH\_ALLOCATE\_VF.
 
@@ -68,8 +67,7 @@ The PF miniport driver returns one of the following status codes for the OID met
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

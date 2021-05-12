@@ -33,8 +33,7 @@ It is possible to detach the debugger from the current process.
 <span id="S_FALSE"></span><span id="s_false"></span>S\_FALSE  
 It is not possible to detach the debugger from the current process.
 
-Remarks
--------
+## Remarks
 
 Only targets running on Microsoft Windows XP or later versions of Windows support detaching the debugger from the process.
 

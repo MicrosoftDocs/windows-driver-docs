@@ -16,8 +16,7 @@ This OID request is also used to encapsulate OID requests that were issued to ot
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. This structure specifies the forwarding information for the OID request. This structure also contains a pointer to the original **NDIS\_OID\_REQUEST** structure of the OID request that is being forwarded.
 
-Remarks
--------
+## Remarks
 
 When OID requests arrive at the Hyper-V extensible switch interface, it encapsulates them in order to forward them down the extensible switch control path. These OID requests include the following:
 
@@ -100,8 +99,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

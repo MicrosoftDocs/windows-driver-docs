@@ -54,8 +54,7 @@ Clients can use the KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT property to propos
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) specifying the proposed data format.
 
@@ -63,8 +62,7 @@ The KS filter returns STATUS\_SUCCESS if the pin can be reset to the proposed da
 
 Also see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

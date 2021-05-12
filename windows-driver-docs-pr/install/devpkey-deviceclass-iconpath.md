@@ -56,8 +56,7 @@ The DEVPKEY_DeviceClass_IconPath device property represents an icon list for a [
 
  
 
-Remarks
--------
+## Remarks
 
 You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_IconPath.
 
@@ -65,8 +64,7 @@ A DEVPKEY_DeviceClass_IconPath value is a [REG_MULTI_SZ](/windows/desktop/SysInf
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property. For information about how to access icon information for a device setup class on these versions of Windows, see [Accessing Icon Properties of a Device Setup Class](./accessing-icon-properties-of-a-device-setup-class.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

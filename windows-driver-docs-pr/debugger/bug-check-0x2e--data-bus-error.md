@@ -57,8 +57,7 @@ The DATA\_BUS\_ERROR bug check has a value of 0x0000002E. This typically indicat
 
  
 
-Cause
------
+## Cause
 
 This error is almost always caused by a hardware problem -- a configuration issue, defective hardware, or incompatible hardware.
 
@@ -66,8 +65,7 @@ The most common hardware problems that can cause this error are defective RAM, L
 
 This bug check can also be caused when a device driver attempts to access an address in the 0x8*xxxxxxx* range that does not exist (in other words, that does not have a physical address mapping).
 
-Resolution
-----------
+## Resolution
 
 **Resolving a hardware problem:** If hardware has recently been added to the system, remove it to see if the error recurs.
 

@@ -54,15 +54,13 @@ The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the pin identifier
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request, the client must specify a valid pin identifier in the **Value** member of the property descriptor structure.
 
 When making a get request, the client receives the pin identifier in the **Value** member of the property descriptor structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

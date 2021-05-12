@@ -121,8 +121,7 @@ If the WAN miniport driver is called subsequently with OID\_WAN\_CO\_SET\_LINK\_
 <a href="" id="desiredaccm"></a>**DesiredACCM**  
 The Asynchronous Control Character Map is negotiated. This member is relevant only for asynchronous media types.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

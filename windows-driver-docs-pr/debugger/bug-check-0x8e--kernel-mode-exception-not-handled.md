@@ -53,8 +53,7 @@ The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000008E. T
 </tbody>
 </table>
 
-Cause
------
+## Cause
 
 The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED bug check is a very common bug check. To interpret it, you must identify which exception was generated.
 
@@ -68,8 +67,7 @@ Common exception codes include the following:
 
 For a complete list of exception codes, see the Ntstatus.h file that is located in the inc directory of the Microsoft Windows Driver Kit (WDK).
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If you are not equipped to debug this problem, you should use some basic troubleshooting techniques:

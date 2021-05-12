@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

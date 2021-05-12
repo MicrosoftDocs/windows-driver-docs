@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **SetBindingSupport** method sets the binding capabilities that are currently enabled for the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SetBindingSupport(
@@ -31,8 +30,7 @@ void SetBindingSupport(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name that indicates the port whose persistent bindings will be retrieved.
@@ -43,18 +41,15 @@ A bitmap that indicates the ability of an HBA and its miniport driver to provide
 *HBAStatus*   
 On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

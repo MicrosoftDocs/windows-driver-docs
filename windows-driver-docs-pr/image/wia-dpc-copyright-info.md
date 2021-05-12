@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A device uses the WIA\_DPC\_COPYRIGHT\_INFO property to populate the Copyright field in every EXIF image that it captures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

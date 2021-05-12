@@ -21,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiDescribePageTable* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_DESCRIBEPAGETABLE DxgkDdiDescribePageTable;
@@ -34,8 +33,7 @@ NTSTATUS DxgkDdiDescribePageTable(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hDevice*
 This parameter is reserved for system use.
@@ -43,8 +41,7 @@ This parameter is reserved for system use.
 *pDescribePageTable*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

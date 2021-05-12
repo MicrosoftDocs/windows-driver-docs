@@ -44,13 +44,11 @@ The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](./overview-of-device-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for [Bluetooth radios](/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)) register instances of this device interface class to notify the operating system and applications of the presence of Bluetooth radios.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

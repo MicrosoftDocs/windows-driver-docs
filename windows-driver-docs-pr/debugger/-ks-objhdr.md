@@ -58,8 +58,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Levels and flags for **!ks.objhdr** are identical to those described in [**!ks.dump**](-ks-dump.md).
 

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

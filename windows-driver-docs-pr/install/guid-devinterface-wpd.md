@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_WPD [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for devices that support the WPD device-driver interface (DDI) register instances of GUID_DEVINTERFACE_WPD to notify the operating system and applications that WPD devices are present.
 
@@ -57,8 +56,7 @@ Clients can enumerate WPD devices that register this interface by calling **IPor
 
 For information about the device interface class for private WPD devices, see [**GUID_DEVINTERFACE_WPD_PRIVATE**](guid-devinterface-wpd-private.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

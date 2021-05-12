@@ -26,13 +26,11 @@ The **!usbkd.usbportmddevext** command displays a **usbport!\_DEVICE\_EXTENSION*
 
 Usbkd.dll
 
-Remarks
--------
+## Remarks
 
 Use this command only when you are debugging a crash dump file that was generated as a result of [**Bug Check 0xFE: BUGCODE\_USB\_DRIVER**](bug-check-0xfe--bugcode-usb-driver.md).
 
-Examples
---------
+## Examples
 
 Here is an example of the output of **!usbportmddevext**.
 

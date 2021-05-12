@@ -21,8 +21,7 @@ Applies to any DDI that changes the IRQL level within Storport miniport entry po
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

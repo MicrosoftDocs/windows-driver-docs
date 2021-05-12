@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The **Height** element specifies a height value that the scan device supports for scanner configuration elements that require a height.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Height wscn:Override="" wscn:UsedDefault=""
@@ -28,8 +27,7 @@ Usage
 </wscn:Height wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -64,8 +62,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. For possible values, see the specific parent element.
 
@@ -105,8 +102,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The value of the **Height** element depends on its parent element. For more information about whether **Height** is required or optional and about its possible values, see the appropriate parent value.
 

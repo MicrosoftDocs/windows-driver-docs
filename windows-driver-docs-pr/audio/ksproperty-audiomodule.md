@@ -21,8 +21,7 @@ The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are used by audio
 
 For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum  { 
@@ -32,8 +31,7 @@ typedef enum  {
 } KSPROPERTY_AUDIOMODULE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="KSPROPERTY_AUDIOMODULE_DESCRIPTORS__"></span><span id="ksproperty_audiomodule_descriptors__"></span>**KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS**   
 Specifies the ID for the [**KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS**](ksproperty-audiomodule-descriptors.md) property.
@@ -44,13 +42,11 @@ Specifies the ID for the [**KSPROPERTY\_AUDIOMODULE\_COMMAND**](ksproperty-audio
 <span id="KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID"></span><span id="ksproperty_audiomodule_notification_device_id"></span>**KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID**  
 Specifies the ID for the [**KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID**](ksproperty-audiomodule-notification-device-id.md) property.
 
-Remarks
--------
+## Remarks
 
 All KS Property calls must be non-blocking because the hardware effects are part of the processing chain and should not wait.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

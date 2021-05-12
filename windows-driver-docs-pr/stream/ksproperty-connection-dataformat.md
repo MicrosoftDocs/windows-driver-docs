@@ -54,8 +54,7 @@ Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current d
 
  
 
-Remarks
--------
+## Remarks
 
 This property takes a [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure specifying the requested data format.
 
@@ -63,8 +62,7 @@ KS filters only need to support this property if they allow clients to reset the
 
 For more information about the KSPROPERTY\_CONNECTION\_DATAFORMAT property, see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md) and [Data Range Intersections in AVStream](./data-range-intersections-in-avstream.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

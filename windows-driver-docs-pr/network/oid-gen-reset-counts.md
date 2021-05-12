@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 As a query, the OID\_GEN\_RESET\_COUNTS OID returns the number of times the miniport adapter was reset.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_RESET\_COUNTS OID returns the number of times the miniport adapter was reset.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

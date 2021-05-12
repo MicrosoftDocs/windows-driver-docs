@@ -56,13 +56,11 @@ The KSPROPERTY\_DVDCOPY\_DVD\_KEY1 property retrieves the first bus key that is 
 
 The property value (operation data) is a KS\_DVDCOPY\_BUSKEY structure that describes the DVD decoders first bus key.
 
-Remarks
--------
+## Remarks
 
 For more information about the first bus key, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

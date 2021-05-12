@@ -179,8 +179,7 @@ Specifies arguments for the format string, as in **printf**. The number of argum
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The color settings that you can choose by using the *Options* parameter are by default all set to black text on a white background. To make best use of these options, you must first use [View | Options](view---options.md) to open the Options dialog box and change the color settings for Debugger Command window messages.
 

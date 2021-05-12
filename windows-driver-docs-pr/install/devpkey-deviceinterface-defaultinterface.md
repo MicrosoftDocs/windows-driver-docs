@@ -52,8 +52,7 @@ The DEVPKEY_DeviceInterfaceClass_DefaultInterface device property represents the
 
  
 
-Remarks
--------
+## Remarks
 
 For information about how to install and using device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
 
@@ -61,8 +60,7 @@ You can retrieve the value of DEVPKEY_DeviceInterfaceClass_DefaultInterface by c
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterfaceClass_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing Device Interface Class Properties](./accessing-device-interface-class-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

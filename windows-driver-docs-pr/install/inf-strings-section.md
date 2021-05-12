@@ -70,8 +70,7 @@ To summarize, any string must be enclosed in a pair of double quotation mark cha
 
 The system INF parser discards the outermost enclosing pair of double quotation marks characters delimiting such a string, along with any leading or trailing white space characters outside the double quotation marks string delimiters.
 
-Remarks
--------
+## Remarks
 
 Because the system INF parser strips the outermost pair of enclosing double quotation marks from any **"**<em>quoted string</em>**"** defining a %*strkey*% token, many of the system INF files define all %*strkey*% tokens as **"**<em>quoted string</em><strong>"</strong>s to avoid the unintended loss of leading and trailing whitespaces during INF parsing. The use of **"**<em>quoted string</em><strong>"</strong>s also ensures that especially long string values that wrap across lines cannot be truncated, and that strings with ending backslashes cannot be concatenated to the next line in the INF file.
 
@@ -106,8 +105,7 @@ All %*strkey*% tokens must be defined within the INF file in which they are refe
 
 In an INF **Strings** section, the maximum length, in characters, of a substitution string, including a terminating NULL character, is 4096 (Windows Vista and later versions of Windows) and 512 (Windows Server 2003, Windows XP, and Windows 2000). After string substitution, the maximum length, in characters, of an INF file string is 4096, including a terminating NULL character.
 
-Examples
---------
+## Examples
 
 The following example shows a fragment of a **Strings** section from a system-supplied locale-specific *dvd.inf* for installations in English-speaking countries/regions.
 

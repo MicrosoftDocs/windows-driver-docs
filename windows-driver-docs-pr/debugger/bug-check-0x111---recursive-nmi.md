@@ -21,8 +21,7 @@ The RECURSIVE\_NMI bug check has a value of 0x00000111. This bug check indicates
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
-Remarks
--------
+## Remarks
 
 This bug check occurs when there is an error in the system management interrupt (SMI) code, and an SMI interrupts an NMI and enables interrupts. Execution then continues with NMIs enabled, and another NMI interrupts the NMI in progress.
 

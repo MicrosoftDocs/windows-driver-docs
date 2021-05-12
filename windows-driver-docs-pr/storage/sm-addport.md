@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_AddPort WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_AddPort(
@@ -30,8 +29,7 @@ void SM_AddPort(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name (WWN) that indicates the port whose events are to be reported.
@@ -42,18 +40,15 @@ The type of the event. The values that can be assigned to this member are define
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a SM\_AddPort\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_EventControl WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

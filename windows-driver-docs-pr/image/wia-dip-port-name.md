@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DIP\_PORT\_NAME property to determine the port name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

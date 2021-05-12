@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONGROUPDESCRIPTOR structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONGROUPDESCRIPTOR {
@@ -29,8 +28,7 @@ typedef struct _DXGK_ALLOCATIONGROUPDESCRIPTOR {
 } DXGK_ALLOCATIONGROUPDESCRIPTOR;
 ```
 
-Members
--------
+## Members
 
 **MinimumVirtualAddress**
 Reserved for system use.
@@ -38,8 +36,7 @@ Reserved for system use.
 **MaximumVirtualAddress**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

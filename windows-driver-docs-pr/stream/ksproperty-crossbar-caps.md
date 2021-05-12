@@ -56,8 +56,7 @@ The KSPROPERTY\_CROSSBAR\_CAPS property retrieves the crossbar capabilities of t
 
 The property value (operation data) is a pair of ULONGs that specify the number of audio and video input pins on the crossbar, and the number of audio and video output pins on the crossbar.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

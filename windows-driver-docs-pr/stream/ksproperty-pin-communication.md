@@ -54,8 +54,7 @@ The KSPROPERTY\_PIN\_COMMUNICATION property specifies the direction of IRP flow 
 
  
 
-Remarks
--------
+## Remarks
 
 The KS filter returns one of the following values, which specifies the communication direction of a pin instantiated by this pin factory:
 
@@ -78,8 +77,7 @@ Source pins send IRPs to sink pins. A source pin may read or write data, and a s
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using Stream Request Blocks to query for more information where necessary.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

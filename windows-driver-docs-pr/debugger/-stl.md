@@ -61,8 +61,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 The verbose options will only take effect if the debugger's verbose mode is enabled.
 

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The Name method returns the Bidi schema element name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Name(
@@ -28,19 +27,16 @@ HRESULT Name(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pbstrSchema* \[out, retval\]  
 The returned element name.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

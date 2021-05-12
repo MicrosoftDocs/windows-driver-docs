@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxDevFcbXXXControlFile* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxDevFcbXXXControlFile;
@@ -31,14 +30,12 @@ NTSTATUS MRxDevFcbXXXControlFile(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxDevFcbXXXControlFile* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -79,8 +76,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxDevFcbXXXControlFile* handles IOCTL and FSCTL requests related to the device FCB that are sent to the network mini-redirector.
 
@@ -100,8 +96,7 @@ If this was an IRP\_MJ\_DEVICE\_CONTROL or IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL re
 
 If *MRxDevFcbXXXControlFile* returns STATUS\_SUCCESS, then the routine was successful. Any other return value indicates that an error occurred.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

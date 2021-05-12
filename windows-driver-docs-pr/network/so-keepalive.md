@@ -131,8 +131,7 @@ Keep-alive packets are sent by the underlying network transport. Not all network
 
 For more information about using keep-alive packets, see *RFC 1122*, section 4.2.3.6, "TCP Keep-Alives".
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

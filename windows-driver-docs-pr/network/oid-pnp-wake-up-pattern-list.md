@@ -29,8 +29,7 @@ For each wake-up pattern, the **InformationBuffer** member of the [**NDIS\_OID\_
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling Ndis(Co)Request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

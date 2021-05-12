@@ -28,8 +28,7 @@ None
 
 [NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP\_COMPLETE](ndis-status-wdi-indication-stop-ap-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

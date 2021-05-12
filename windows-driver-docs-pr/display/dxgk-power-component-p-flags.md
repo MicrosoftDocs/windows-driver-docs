@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_POWER_COMPONENT_P_FLAGS {
@@ -33,15 +32,13 @@ typedef struct _DXGK_POWER_COMPONENT_P_FLAGS {
 } DXGK_POWER_COMPONENT_P_FLAGS;
 ```
 
-Members
--------
+## Members
 
 **Reserved**
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

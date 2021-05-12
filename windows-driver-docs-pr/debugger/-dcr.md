@@ -66,8 +66,7 @@ Causes the display to include more in-depth information about all of the DCR fie
 
 This extension command can only be used with an Itanium-based target computer.
 
-Remarks
--------
+## Remarks
 
 The DCR specifies default parameters for the processor status register values on interruption. The DCR also specifies some additional global controls, as well as whether or not speculative load faults can be deferred.
 

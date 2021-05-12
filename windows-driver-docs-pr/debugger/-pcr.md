@@ -56,8 +56,7 @@ Specifies the processor to retrieve the PCR information from. If *Processor* is 
 
 For information about the PCR and the PRCB, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The processor control block (PRCB) is an extension of the PCR. It can be displayed with the [**!prcb**](-prcb.md) extension.
 

@@ -41,8 +41,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory. See [OID\_GEN\_MEDIA\_SUPPORTED (NDIS 5.1)](/previous-versions/windows/hardware/network/ff560254(v=vs.85)).
 
-Remarks
--------
+## Remarks
 
 NDIS 6.0 and later miniport drivers do not receive this OID request. NDIS handles this OID with a cached value that miniport drivers supply during initialization.
 
@@ -123,8 +122,7 @@ For more information about Native 802.11 miniport drivers, see [Native 802.11 Wi
 
 If the underlying miniport driver returns **NULL** for this query, or if an experimental media type is used, the driver must indicate receive operations using the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function. Any protocol that is bound to such an underlying miniport driver receives all such indications, that is, the protocol driver cannot filter receive operations with [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -31,8 +31,7 @@ The size (in bytes) of a UINT16.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -37,8 +37,7 @@ Kdexts.dll
 
 For more information, see [ACPI Debugging](acpi-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension is equivalent to [**!amli dns**](-amli-dns.md).
 

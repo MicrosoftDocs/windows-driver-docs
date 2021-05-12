@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The **DriverEntry** function provides the Microsoft DirectX graphics kernel subsystem with a set of pointers to functions implemented by the display miniport driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS DriverEntry(
@@ -29,8 +28,7 @@ NTSTATUS DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DriverObject* \[in\]
 A pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure that represents the driver formed by the (display miniport, display port) driver pair.
@@ -38,13 +36,11 @@ A pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dr
 *RegistryPath* \[in\]
 A pointer to a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that supplies the path to the driver's registry key.
 
-Return value
-------------
+## Return value
 
 **DriverEntry** calls [**DxgkInitialize**](/windows-hardware/drivers/ddi/dispmprt/nf-dispmprt-dxgkinitialize) and must return the value returned by **DxgkInitialize**.
 
-Remarks
--------
+## Remarks
 
 **DriverEntry** must perform the following steps:
 
@@ -153,8 +149,7 @@ The following structures and enumeration are also used with kernel mode display-
 * [DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_present_displayonly_progress)
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

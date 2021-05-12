@@ -33,8 +33,7 @@ typedef VOID ( *FreeCallback)(
 *Buffer* \[in\]  
 A pointer to the [**FSRTL_PER_FILE_CONTEXT**](/previous-versions/ff547352(v=vs.85)) or the [**FSRTL_PER_STREAM_CONTEXT**](/previous-versions/ff547357(v=vs.85)) structure to be freed.
 
-## Return value
-------------
+## ## Return value
 
 None
 

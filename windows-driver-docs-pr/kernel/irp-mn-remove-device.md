@@ -16,13 +16,11 @@ All PnP drivers must handle this IRP.
 
 0x02
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager uses this IRP to direct drivers to remove a device's software representation (device objects, and so forth). The PnP manager sends this IRP when a device has been removed in an orderly fashion (for example, initiated by a user in the Unplug or Eject Hardware program), by surprise (a user pulls the device from its slot without prior warning), or when the user requests to update driver(s).
 
@@ -47,8 +45,7 @@ None
 
 A driver must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS. Drivers must not fail this IRP.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then by each lower driver in the stack.
 
@@ -62,8 +59,7 @@ Reserved for system use. Drivers must not send this IRP.
 
 If a bus driver detects that one (or more) of its child devices (child PDOs) has been physically removed from the computer, the bus driver calls [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) to report the change to the PnP manager. The PnP manager then sends remove IRPs for any devices that have disappeared.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

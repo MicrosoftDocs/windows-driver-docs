@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetFcpPersistentBinding** method retrieves the bindings that an HBA miniport driver uses to map the information that an operating system uses to identify its logical units to the Fibre Channel protocol (FCP) identifiers for the logical units.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetFcpPersistentBinding(
@@ -33,8 +32,7 @@ void GetFcpPersistentBinding(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *InEntryCount*   
 Indicates the number of binding entries that the WMI provider can report in the *Entry* parameter.
@@ -51,18 +49,15 @@ Indicates the total number of persistent bindings retrieved by the **GetFcpPersi
 *Entry\[\]*   
 An array of structures of type [**HBAFCPBindingEntry**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_CA\_MODULE\_UI to retrieve interface data that a CA
 
  
 
-Remarks
--------
+## Remarks
 
 The BDA\_CA\_MODULE\_UI structure contains the user interface (UI) data.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

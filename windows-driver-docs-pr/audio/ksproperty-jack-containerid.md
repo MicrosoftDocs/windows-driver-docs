@@ -59,8 +59,7 @@ The property value (instance data) is a GUID.
 
 KSPROPERTY\_JACK\_CONTAINERID property request returns a GUID that has the container ID of the device that is associated with the physical jack, or other wired or wireless connection.
 
-Remarks
--------
+## Remarks
 
 The audio driver should support this property if and only if the following are true:
 
@@ -70,8 +69,7 @@ The audio driver should support this property if and only if the following are t
 
 The KSPROPERTY\_JACK\_CONTAINERID property only needs to be populated if the audio endpoint is in a different piece of plastic from the audio adapter. By default the audio endpoint will inherit the container ID of its parent.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

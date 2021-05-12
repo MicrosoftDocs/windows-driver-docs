@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA\_IPA\_ITEM\_FLAGS property.
 
@@ -193,8 +192,7 @@ The following table describes the flags that are valid in Windows Vista and late
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

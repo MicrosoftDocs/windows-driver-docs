@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ExposureSettings** element contains individual adjustment values that the WSD Scan Service should apply to the image data after acquisition.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ExposureSettings>
@@ -26,8 +25,7 @@ Usage
 </wscn:ExposureSettings>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

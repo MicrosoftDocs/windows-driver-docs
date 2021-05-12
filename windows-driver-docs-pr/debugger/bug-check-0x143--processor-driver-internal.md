@@ -75,8 +75,7 @@ Parameter 4 - Pointer to processor device context (FDO_DATA) corresponding to th
 
  
 
-Cause
------
+## Cause
 
 The processor driver detected an irreconcilable condition which prompted it to bugcheck. This likely happens during the processor idle and perf-state change execution, which may involve other entities such has kernel, HAL and the Power Engine Plugin (PEP). Information from bugcheck will help identify which of the assumptions made by the processor driver in dealing with other entities was violated. The root cause may lie in other entities and a dump file may reveal more information to ascertain the reason for the bugcheck.
 

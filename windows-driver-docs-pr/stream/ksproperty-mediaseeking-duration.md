@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_DURATION property retrieves the media duration on 
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns the media duration as a value of type LONGLONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

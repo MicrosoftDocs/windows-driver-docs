@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetFC4Statistics** WMI method reports traffic statistics on a port of type Nx\_Port for the indicated FC-4 protocol.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetFC4Statistics(
@@ -32,8 +31,7 @@ void GetFC4Statistics(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
 On return, contains a WMI qualifier value that indicates the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFC4Statistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfc4statistics_out) structure.
@@ -47,18 +45,15 @@ A value that indicates the type FC-4 protocol. For an explanation of FC4 types, 
 *FC4Statistics*   
 On return, contains a structure of type [**MSFC\_FC4STATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics) that holds statistics for the specified FC-4 protocol. The miniport driver returns this information in the **FC4Statistics** member of a [**GetFC4Statistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfc4statistics_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

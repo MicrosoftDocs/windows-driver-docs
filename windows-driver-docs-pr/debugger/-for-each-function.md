@@ -82,8 +82,7 @@ Displays help for this extension.
 
 Ext.dll
 
-Remarks
--------
+## Remarks
 
 The following example shows how to list all function names, in the PCI module, that match the pattern \*read\*.
 

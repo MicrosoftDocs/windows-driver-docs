@@ -16,13 +16,11 @@ Bus drivers for buses with configuration space must handle this request for thei
 
 0x0F
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 A driver or other system component sends this IRP to read the configuration space of a device's parent bus.
 
@@ -116,8 +114,7 @@ On success, a bus driver sets **Irp-&gt;IoStatus.Information** to the number of 
 
 If a bus driver is unable to complete this request immediately it can mark the IRP pending, return STATUS\_PENDING, and complete the IRP at a later time.
 
-Operation
----------
+## Operation
 
 A bus driver handles this IRP for its child devices (child PDOs).
 
@@ -147,8 +144,7 @@ A driver can access a bus's configuration space at DISPATCH\_LEVEL through a bus
 
 For example, to read configuration space from DISPATCH\_LEVEL, a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.GetBusData** routine.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

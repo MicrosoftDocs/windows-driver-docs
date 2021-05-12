@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE to in
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

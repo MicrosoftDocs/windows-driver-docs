@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **CompressionQualityFactor** element specifies an idealized integer amount of image quality, on a scale from 0 through 100.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CompressionQualityFactor wscn:MustHonor=""                               wscn:Override=""                               wscn:UsedDefault=""
@@ -29,8 +28,7 @@ Usage
 </wscn:CompressionQualityFactor wscn:MustHonor=""                               wscn:Override=""                               wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer in the range from 0 through 100.
 
@@ -104,8 +101,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Any lossy compression type uses the integer value to determine the amount of acceptable image loss, where a higher value indicates a higher image quality and a correspondingly larger file size. A value of 100 indicates that the device should use the least amount of compression that it supports to produce the highest image quality possible. Currently, JPEG compression is the only supported lossy compression type.
 

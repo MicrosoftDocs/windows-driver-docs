@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_FLAG
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A driver uses the intent settings to pre-set item properties based on an application's intended use of an image. These properties might include, for example, maximum quality and minimum size.
 
@@ -113,8 +112,7 @@ An application sets the WIA\_IPS\_CUR\_INTENT property to auto-set the WIA prope
 
 WIA\_IPS\_CUR\_INTENT is required for all image acquisition enabled items; it is not available for storage items or stored image items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

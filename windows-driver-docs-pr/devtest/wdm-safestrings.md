@@ -23,8 +23,7 @@ If a kernel-mode driver uses the user-mode safe string functions, the driver vio
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,7 +48,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-See also
---------
+## See also
 
 [**Using Safe String Functions**](../kernel/using-safe-string-functions.md)

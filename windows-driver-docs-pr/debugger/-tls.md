@@ -51,8 +51,7 @@ Specifies the thread environment block (TEB). If this is 0 or omitted, the curre
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

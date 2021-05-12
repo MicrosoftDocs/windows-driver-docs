@@ -56,13 +56,11 @@ User-mode clients use the KSPROPERTY\_TUNER\_MODE property to get or set the tun
 
 The property value (operation data) is a ULONG that specifies a tuner's current tuning mode.
 
-Remarks
--------
+## Remarks
 
 The **Mode** member of the KSPROPERTY\_TUNER\_MODE\_S structure specifies the current tuner mode.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

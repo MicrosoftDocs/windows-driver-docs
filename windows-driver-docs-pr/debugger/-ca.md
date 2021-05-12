@@ -102,8 +102,7 @@ If none of the last three flags are specified, all three types of control area a
 
 For information about control areas, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To get a list of the control areas of all mapped files, use the [**!memusage**](-memusage.md) extension.
 

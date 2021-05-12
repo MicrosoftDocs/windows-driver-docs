@@ -17,8 +17,7 @@ ms.date: 10/17/2018
 
 The **RemoveVirtualPort** method removes a virtual port for a specific world wide port name (WWPN) .
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void RemoveVirtualPort(
@@ -27,8 +26,7 @@ void RemoveVirtualPort(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *WWPN\[8\]*   
 The world wide port name of the virtual port to remove.
@@ -36,8 +34,7 @@ The world wide port name of the virtual port to remove.
 *Status*   
 On return, contains the status of the operation.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 

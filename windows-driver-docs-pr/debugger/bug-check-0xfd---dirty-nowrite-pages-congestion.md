@@ -57,13 +57,11 @@ The DIRTY\_NOWRITE\_PAGES\_CONGESTION bug check has a value of 0x000000FD. This 
 
  
 
-Cause
------
+## Cause
 
 This bug check usually occurs because the component that owns the modified non-writeable pages failed to write out these pages after marking the relevant files as "do not write" to memory management. This indicates a driver bug.
 
-Resolution
-----------
+## Resolution
 
 For more information about which driver is causing the problem, use the [**!vm 3**](-vm.md) extension, followed by [**!memusage 1**](-memusage.md) .
 

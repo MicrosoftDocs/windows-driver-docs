@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WW\_INDICATION status is the same as the [**NDIS\_STATUS\_MEDIA\_SPECIFIC\_INDICATION**](ndis-status-media-specific-indication.md) status.
 
-Remarks
--------
+## Remarks
 
 For more information about NDIS\_STATUS\_WW\_INDICATION, see [OID\_WW\_GEN\_INDICATION\_REQUEST](/previous-versions/windows/hardware/network/ff561411(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

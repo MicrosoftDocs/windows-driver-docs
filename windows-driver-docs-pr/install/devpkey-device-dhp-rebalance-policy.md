@@ -52,8 +52,7 @@ The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that 
 
  
 
-Remarks
--------
+## Remarks
 
 On a dynamically partitionable server that is running Windows Server 2008 or later versions of Windows Server, the operating system initiates a system-wide resource rebalance whenever a new processor is dynamically added to the system. The DEVPKEY_Device_DHP_Rebalance_Policy device property determines whether a device participates in such a resource rebalance. The device participates in resource rebalancing under the following circumstances:
 
@@ -73,8 +72,7 @@ This device property does not affect whether a device will participate in a reso
 
 You can access the DEVPKEY_Device_DHP_Rebalance_Policy property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

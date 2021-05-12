@@ -57,13 +57,11 @@ The property value is of type LONG and specifies the FM radio volume.
 
 A **KSPROPERTY\_FMRX\_VOLUME** property request returns the volume of the FM radio.
 
-Remarks
--------
+## Remarks
 
 The FM volume and routing (endpoint selection) is controlled by the **KSPROPERTY\_FMRX\_VOLUME** and [**KSPROPERTY\_FMRX\_ENDPOINTID**](ksproperty-fmrx-endpointid.md) properties on the topology filter. Basic support for the **KSPROPERTY\_FMRX\_VOLUME** property should return the minimum volume, maximum volume, and the volume ranges.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

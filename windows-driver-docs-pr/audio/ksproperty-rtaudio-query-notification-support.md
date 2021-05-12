@@ -57,13 +57,11 @@ The property value is a variable of type BOOL.
 
 In response to a `KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT` property request, the driver returns a **TRUE** or **FALSE** value. This value depends on whether the driver supports the property.
 
-Remarks
--------
+## Remarks
 
 None
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

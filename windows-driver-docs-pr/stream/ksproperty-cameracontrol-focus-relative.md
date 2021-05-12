@@ -85,8 +85,7 @@ The property value (operation data) is a LONG that specifies a camera's relative
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request, provide one of the values in the preceding table in the **Value** member of the KSPROPERTY\_CAMERACONTROL\_NODE\_S structure.
 
@@ -96,8 +95,7 @@ Note that a particular device might support only a certain speed range. To deter
 
 Some devices support only a single focus speed. In this case, the sign of the **Value** member simply indicates whether the lens should shorten its focus or lengthen it.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

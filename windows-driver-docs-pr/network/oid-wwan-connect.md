@@ -16,8 +16,7 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Callers requesting to set the Packet Data Protocol (PDP) context state of the MB device provide an [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_context_state) structure to the miniport driver with the appropriate information.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Packet Context Management](./mb-packet-context-management.md).
 
@@ -63,8 +62,7 @@ For response to query requests, miniport driver sends the NDIS\_STATUS\_WWAN\_CO
 
 In rare, but specific circumstances, the MB Service on Windows 7 may attempt to auto-connect before connectivity to the Internet has been determined for pre-existing connections or during a momentary disruption in Internet connectivity of pre-existing connections. This could result in simultaneous MB and WLAN/Ethernet connections. For example, this can occur during system boot when MB and other connections are attempted simultaneously and the Network List Manager service is still attempting to determine the Internet connectivity of other connections using active and passive methods. It could also occur due to temporary outages in network infrastructure like a corporate proxy server or an ISP network. Thus, the MB Service may attempt to auto-connect to the internet regardless of whether the "Auto-connect only if no alternate Internet connection is available" option is selected.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

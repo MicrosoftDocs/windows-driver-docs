@@ -38,8 +38,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 A disabled breakpoint can be re-enabled by using the [**!amli be**](-amli-be.md) extension.
 

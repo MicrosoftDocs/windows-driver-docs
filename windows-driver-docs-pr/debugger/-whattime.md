@@ -48,8 +48,7 @@ The number of ticks.
 
  
 
-Remarks
--------
+## Remarks
 
 The output is displayed as *HH:MM:SS.mmm*. Here is an example:
 

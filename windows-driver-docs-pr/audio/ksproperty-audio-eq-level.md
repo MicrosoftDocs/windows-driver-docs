@@ -96,8 +96,7 @@ This scale has a resolution of 1/65536 decibel.
 
 A KSPROPERTY\_AUDIO\_EQ\_LEVEL property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The filter will succeed a KSPROPERTY\_AUDIO\_EQ\_LEVEL set-property request that specifies a value that is beyond the range of the filter but will clamp the value to the supported range. In a subsequent request to get this property, however, it will output the actual value used.
 
@@ -105,8 +104,7 @@ The number of equalization bands can be determined by first submitting a [**KSPR
 
 The center frequencies of the equalization bands are specified by the [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md) property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,15 +44,13 @@ The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](./overview-of-dev
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_RECEIVER_COMPONENT to indicate to the operating system that the devices support a BDA receiver filter.
 
 For more information about the KS functional category for a BDA receiver filters, see [Common Control Nodes and Filters](../stream/common-control-nodes-and-filters.md), [Starting a BDA Minidriver](../stream/starting-a-bda-minidriver.md), and [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

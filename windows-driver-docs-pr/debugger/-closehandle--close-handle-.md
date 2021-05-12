@@ -56,8 +56,7 @@ Causes all handles owned by the target application to be closed.
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the [**!handle**](-handle.md) extension to display the existing handles.
 

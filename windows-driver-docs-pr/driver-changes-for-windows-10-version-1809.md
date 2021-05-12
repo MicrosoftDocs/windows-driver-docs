@@ -112,8 +112,8 @@ Several new APIs have been added in the core kernel:
   * [ExInitializePushLock function](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepushlock)
   * [ExReleasePushLockExclusive macro](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleasepushlockexclusive)
   * [ExReleasePushLockShared macro](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleasepushlockshared)
-* [KzLowerIrql](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kzlowerirql) and [KzRaiseIrql](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kzraiseirql) were moved to a supported extern forceinline for kernel components targeting Windows 8 and later versions, instead of relying on the forwarders to instantiate a special case of the inline functions.
-* Flattening Portal Bridge (FPB) for PCI is now supported. For more information, see [PCI-SIG](https://pcisig.com) for the Official Specification. The new APIs (_PCI_FPB_*) are declared in [Ntddk.h](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/).
+* [KzLowerIrql](/windows-hardware/drivers/ddi/wdm/nf-wdm-kzlowerirql) and [KzRaiseIrql](/windows-hardware/drivers/ddi/wdm/nf-wdm-kzraiseirql) were moved to a supported extern forceinline for kernel components targeting Windows 8 and later versions, instead of relying on the forwarders to instantiate a special case of the inline functions.
+* Flattening Portal Bridge (FPB) for PCI is now supported. For more information, see [PCI-SIG](https://pcisig.com) for the Official Specification. The new APIs (_PCI_FPB_*) are declared in [Ntddk.h](/windows-hardware/drivers/ddi/ntddk/).
 
 ## <a name="networking-1809"></a>Networking
 

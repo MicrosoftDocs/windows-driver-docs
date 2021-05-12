@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **RetrieveImageRequest** operation element contains the client's request to retrieve scan data from the device after a scan job has been created.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:RetrieveImageRequest>
@@ -26,8 +25,7 @@ Usage
 </wscn:RetrieveImageRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -61,8 +59,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **RetrieveImageRequest** operation element.
 
@@ -116,8 +113,7 @@ This operation might also return the following errors:
 
      
 
-Examples
---------
+## Examples
 
 The following code example shows a client request to retrieve image data for the job identified by JobId 1.
 

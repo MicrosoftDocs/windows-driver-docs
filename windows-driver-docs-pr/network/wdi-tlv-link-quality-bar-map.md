@@ -45,8 +45,7 @@ WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS consists of the following elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

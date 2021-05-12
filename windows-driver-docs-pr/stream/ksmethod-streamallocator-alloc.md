@@ -19,8 +19,7 @@ The **KSMETHOD\_STREAMALLOCATOR\_ALLOC** method is used by a client to allocate 
 
 For example, a kernel-mode client could use the following sample code to allocate a frame:
 
-Remarks
--------
+## Remarks
 
 ```cpp
 Method.Identifier.Set = KSMETHODSETID_StreamAllocator;

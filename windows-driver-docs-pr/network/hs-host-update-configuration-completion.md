@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION** function indicates the success or failure of a request to check for updates.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_HOST_UPDATE_CONFIGURATION_COMPLETION)(
@@ -24,8 +23,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPluginContext* \[in\]  
 Context handle for the plugin making the call to this function.
@@ -33,18 +31,15 @@ Context handle for the plugin making the call to this function.
 *UpdateResult* \[in\]  
 The [**eHS\_UPDATE\_RESULT**](ehs-update-result.md) enumeration value that indicates the result of the request to check for updates.
 
-Return value
-------------
+## Return value
 
 This function is called by the plugin to communicate with the host and does not return a value.
 
-Remarks
--------
+## Remarks
 
 The plugin must call this function to inform the host of the result of a previous call to [**HS\_PLUGIN\_CHECK\_FOR\_UPDATES**](hs-plugin-check-for-updates.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

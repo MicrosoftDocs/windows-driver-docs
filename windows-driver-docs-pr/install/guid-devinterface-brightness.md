@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_BRIGHTNESS [device interface class](./overview-of-device-i
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of brightness control interfaces for monitor child devices.
 
@@ -53,8 +52,7 @@ If the display miniport driver supports a direct-call brightness control interfa
 
 For information about brightness devices, see [Supporting Brightness Controls on Integrated Display Panels](../display/supporting-brightness-controls-on-integrated-display-panels.md) and [Brightness Control Interface]().
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

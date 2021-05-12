@@ -84,15 +84,13 @@ The center frequency (in Hz) for equalization band N-1.
 
 A KSPROPERTY\_AUDIO\_EQ\_BANDS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The number of equalization bands can be determined by first submitting a [**KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS**](ksproperty-audio-num-eq-bands.md) request.
 
 The equalization levels for the frequency bands are specified by the [**KSPROPERTY\_AUDIO\_EQ\_LEVEL**](ksproperty-audio-eq-level.md) property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

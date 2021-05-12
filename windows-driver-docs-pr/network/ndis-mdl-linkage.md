@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NDIS\_MDL\_LINKAGE** macro retrieves a pointer to the next MDL that is associated with the specified MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PVOID NDIS_MDL_LINKAGE(
@@ -21,24 +20,20 @@ PVOID NDIS_MDL_LINKAGE(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
 
-Return value
-------------
+## Return value
 
 **NDIS\_MDL\_LINKAGE** returns a pointer to an MDL or **NULL** if there is no next MDL.
 
-Remarks
--------
+## Remarks
 
 The **NDIS\_MDL\_LINKAGE** macro provides an MDL-based version of the [**NDIS\_BUFFER\_LINKAGE**](/previous-versions/windows/hardware/network/ff556919(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

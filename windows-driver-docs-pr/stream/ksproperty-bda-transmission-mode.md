@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_TRANSMISSION\_MODE to control the setting on a demo
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the TransmissionMode enumerated type identifies a setting for how broadcast signals are transmitted.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

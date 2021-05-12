@@ -53,8 +53,7 @@ Specifies the expression to evaluate.
 
  
 
-Remarks
--------
+## Remarks
 
 The input and output of the **?** command depend on whether you are using MASM expression syntax or C++ expression syntax. For more information about these kinds of expression syntax, see [Evaluating Expressions](evaluating-expressions.md) and [Numerical Expression Syntax](numerical-expression-syntax.md).
 

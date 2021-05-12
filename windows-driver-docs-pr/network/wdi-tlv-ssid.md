@@ -31,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. An array length of 0 is allo
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

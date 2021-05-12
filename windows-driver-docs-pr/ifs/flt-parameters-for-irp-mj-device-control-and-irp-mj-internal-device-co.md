@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -65,8 +64,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **DeviceIoControl**  
 **Common**  
@@ -122,8 +120,7 @@ User-mode virtual address of the input buffer that the original requester of the
 **OutputBuffer**  
 User-mode virtual address of the output buffer that the original requester of the operation supplied. The I/O Manager and Filter Manager do not validate these addresses. To ensure that user-space addresses are valid, the minifilter must use routines such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread), [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), and [**FltLockUserBuffer**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltlockuserbuffer), enclosing all buffer references in **try/except** blocks. For more information, see [Errors in Referencing User-Space Addresses](../kernel/errors-in-referencing-user-space-addresses.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) operations contains the parameters for an IRP-based device-I/O-control information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
@@ -131,8 +128,7 @@ IRP\_MJ\_DEVICE\_CONTROL can be an IRP-based operation or a fast I/O operation.
 
 IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL is an IRP-based I/O operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

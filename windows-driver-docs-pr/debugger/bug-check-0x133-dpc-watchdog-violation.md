@@ -63,8 +63,7 @@ The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check
 
  
 
-Cause
------
+## Cause
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
@@ -126,8 +125,7 @@ For more information see the following topics:
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
-Remarks
--------
+## Remarks
 
 In general this stop code is caused by faulty driver code that under certain conditions, does not complete its work within the allotted time frame.
 

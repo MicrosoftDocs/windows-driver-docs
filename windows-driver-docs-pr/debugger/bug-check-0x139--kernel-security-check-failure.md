@@ -69,8 +69,7 @@ The following table describes possible values for Parameter 1.
 |   39 | An export suppressed call target couldn't be made a valid call target. |
  
 
-Cause
------
+## Cause
 
 Using the parameter 1 table, and a dump file, it is possible to narrow down the cause for many bug checks of this type.
 
@@ -88,8 +87,7 @@ In most cases, you can identify the corrupted data structure by walking the link
 
 Because many system components internally utilize LIST\_ENTRY lists, various types of resource mismanagement by a driver using system APIs might cause linked list corruption in a system-managed linked list.
 
-Resolution
-----------
+## Resolution
 
 Determining the cause of this issues typically requires the use of the debugger to gather additional information. Multiple dump files should be examined to see if this stop code has similar characteristics, such as the code that is running when the stop code appears.
 

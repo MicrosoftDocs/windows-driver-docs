@@ -122,8 +122,7 @@ An installer handles this DIF request to participate in selecting a driver for a
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

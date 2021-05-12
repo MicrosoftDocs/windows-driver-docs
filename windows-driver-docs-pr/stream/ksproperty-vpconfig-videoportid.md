@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_VIDEOPORTID property returns the Microsoft DirectDraw 
 
 The property value (operation data) is a ULONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

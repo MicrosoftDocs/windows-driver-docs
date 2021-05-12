@@ -48,8 +48,7 @@ Specifies the address of the failure analysis entry that is displayed.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.dumpfa** extension is useful only to debug the [**!analyze**](-analyze.md) extension, as the following example shows.
 

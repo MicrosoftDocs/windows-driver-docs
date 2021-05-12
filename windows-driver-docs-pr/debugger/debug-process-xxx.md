@@ -46,8 +46,7 @@ The process options only apply to live user-mode debugging.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

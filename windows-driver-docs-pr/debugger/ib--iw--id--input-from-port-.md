@@ -54,8 +54,7 @@ The address of the port.
 
  
 
-Remarks
--------
+## Remarks
 
 The **ib** command reads a single byte, the **iw** command reads a word, and the **id** command reads a double word.
 

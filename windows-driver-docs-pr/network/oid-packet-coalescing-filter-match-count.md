@@ -14,8 +14,7 @@ NDIS issues an OID query request of OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUN
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a caller-allocated ULONG64 variable. Before a successful return from the query request, the driver updates the ULONG64 variable with the number of packets that have matched receive filters on the network adapter.
 
-Remarks
--------
+## Remarks
 
 Starting with NDIS 6.30, drivers that support [NDIS packet coalescing](./ndis-packet-coalescing.md) must support OID query requests of OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT.
 
@@ -48,8 +47,7 @@ The information buffer was too short. The driver sets the **DATA.SET\_INFORMATIO
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for other reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

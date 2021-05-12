@@ -28,15 +28,13 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_CONTRAST property can contain either a list of values or a range of values.
 
 The minimum supported value for WIA\_DPC\_CONTRAST represents the least amount of contrast, and the maximum value represents the most contrast. Typically, a value in the middle of the range represents normal, or default, contrast.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

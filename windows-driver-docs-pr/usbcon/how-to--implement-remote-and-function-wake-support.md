@@ -30,8 +30,7 @@ A composite driver creates a physical device object (PDO) for each function in t
 
 In Windows 8, the USB driver stack for USB 3.0 devices supports those features. In addition, function suspend and function remote wake-up implementation has been added to the Microsoft-provided [USB generic parent driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys), which is the Windows default composite driver. If you are writing a custom composite driver, your driver must handle requests related to function suspend and remote wake-up requests, as per the following procedure.
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="determine-whether-the-usb-driver-stack-supports-function-suspend"></a>Step 1: Determine Whether the USB Driver Stack Supports Function Suspend
 
@@ -236,8 +235,7 @@ Exit:
 
 The composite driver then sends the **D2** IRP down to the USB driver stack. If all other functions are in suspend state, the USB driver stack suspends the port by manipulating certain port registers on the controller.
 
-Remarks
--------
+## Remarks
 
 In the mouse function example, because the remote wake-up feature is enabled (see step 4), the mouse function generates a resume signal on the wire upstream to the host controller when the user wiggles the mouse. The controller then notifies the USB driver stack by sending a notification packet that contains information about the function that woke up. For information about the Function Wake Notification, see Figure 8-17 in the USB 3.0 specification.
 

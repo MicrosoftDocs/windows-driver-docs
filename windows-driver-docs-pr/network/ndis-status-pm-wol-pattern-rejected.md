@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED status indicates to overlying drivers that a power management wake on LAN (WOL) pattern was rejected.
 
-Remarks
--------
+## Remarks
 
 NDIS or miniport drivers can generate the NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED status indication when either of them removes a WOL pattern. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a ULONG for the WOL pattern identifier of the rejected WOL pattern. NDIS provided the WOL pattern identifier in the **PatternId** member of the [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure.
 
@@ -25,8 +24,7 @@ A WiFi driver might cache wake-up patterns locally. When the driver processes an
 
 The infrastructure might not have enough resources to accommodate all of the wake-up patterns. In this case, the infrastructure can accept a partial list of the wake-up patterns. When the miniport driver completes the OID\_PM\_PARAMETERS set request, the driver must make NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED status indications for each of the WOL patterns that the access point (AP) rejects.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

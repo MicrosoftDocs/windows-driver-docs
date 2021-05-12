@@ -24,7 +24,7 @@ The **.kdfiles** command reads a file and uses its contents as the driver replac
 .kdfiles
 ```
 
-## <span id="ddk_meta_set_driver_replacement_map_dbg"></span><span id="DDK_META_SET_DRIVER_REPLACEMENT_MAP_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______MapFile______"></span><span id="_______mapfile______"></span><span id="_______MAPFILE______"></span> *MapFile*   
@@ -75,8 +75,7 @@ Deletes the existing driver replacement map. (This option does not alter the map
 
 For more information about and examples of driver replacement and the replacement of other kernel-mode modules, a description of the format for driver replacement map files, and restrictions for using this feature, see [Mapping Driver Files](mapping-driver-files.md).
 
-Remarks
--------
+## Remarks
 
 If you use the **.kdfiles** command without parameters, the debugger displays the path and name of the current driver replacement map file and the current set of replacement associations.
 
@@ -86,8 +85,8 @@ If the specified file is in the correct driver replacement map file format, the 
 
 After the file has been read, the driver replacement map is not affected by subsequent changes to the file (unless these changes are followed by another **.kdfiles** command).
 
-User Mode File Replacement
--------
+### User Mode File Replacement
+
 
 User Mode File Replacement was added in version 2004 of Windows. This support enables the following user mode files to be replaced with .kdfiles.
 
@@ -117,8 +116,7 @@ For more information about enabling boot debugging, see [BCDEdit /bootdebug](../
 
 The use of the high speed/low latency KD transport KDNET is recommended to minimize system performance impacts.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

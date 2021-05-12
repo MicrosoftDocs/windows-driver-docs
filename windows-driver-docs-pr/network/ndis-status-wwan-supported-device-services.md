@@ -16,8 +16,7 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

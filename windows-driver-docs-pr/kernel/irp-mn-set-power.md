@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 This IRP notifies a driver of a change to the system power state or sets the device power state for a device.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
 
-When Sent
----------
+## When Sent
 
 Either the system power manager or a device power policy owner can send this IRP.
 
@@ -75,8 +73,7 @@ A driver must not fail a request to set the system power state.
 
 Function and filter drivers that are located above a bus driver must not fail a request to set a device power state. The bus driver can fail a device power-up request if the device is removed or in the process of being removed.
 
-Operation
----------
+## Operation
 
 The power manager or a driver can request an **IRP\_MN\_SET\_POWER** IRP. The power manager sends this IRP for one of the following reasons:
 
@@ -154,8 +151,7 @@ After the bus driver completes the power-up IRP, function and filter drivers han
 
 For more information, see [Handling IRP\_MN\_SET\_POWER for Device Power States](./handling-irp-mn-set-power-for-device-power-states.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

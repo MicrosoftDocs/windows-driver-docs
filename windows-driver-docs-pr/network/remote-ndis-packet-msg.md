@@ -205,8 +205,7 @@ The following table defines the format of a per-packet information data record.
 
  
 
-Remarks
--------
+## Remarks
 
 Each REMOTE\_NDIS\_PACKET\_MSG may contain one or more OOB data records. *NumOOBDataElements* indicates the number of OOB data records in this message. The OOB data records must appear in sequence. The *OOBDataLength* field indicates the length in bytes of the entire OOB data block. The *OOBDataOffset* field indicates the byte offset from the beginning of the *DataOffset* field to the beginning of the OOB data block. For more information about OOB packet data, see the NDIS specification in the Windows 2000 DDK.
 
@@ -224,8 +223,7 @@ A Remote NDIS device transfers NDIS packets, encapsulated as **REMOTE\_NDIS\_PAC
 
 For more information about out-of-band packet data or per-packet-info data, see the Windows 2000 DDK NDIS sections.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

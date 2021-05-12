@@ -56,13 +56,11 @@ The KSPROPERTY\_VIDEODECODER\_STANDARD property controls the current analog vide
 
 The property value (operation data) is a ULONG that specifies the current analog video standard.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEODECODER\_S structure specifies the current analog video standard.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

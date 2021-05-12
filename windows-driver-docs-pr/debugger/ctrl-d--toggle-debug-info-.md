@@ -61,8 +61,7 @@ CTRL+ALT+D
 
  
 
-Remarks
--------
+## Remarks
 
 When this is toggled on, the debugger outputs information about the communication between the host computer and the target computer.
 

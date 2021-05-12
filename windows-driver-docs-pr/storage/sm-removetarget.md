@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_RemoveTarget WMI method configures the WMI provider so that it stops passing events that are associated with the indicated target to the WMI client.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_RemoveTarget(
@@ -31,8 +30,7 @@ void SM_RemoveTarget(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A 64-bit worldwide name (WWN) that uniquely identifies the local port that should be removed from the list of ports whose events are reported to the WMI client. For more information about worldwide names, see the T11 committee's *Fibre Channel HBA API* specification.
@@ -46,18 +44,15 @@ The events to stop reporting. If this member is zero, the WMI provider client st
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a SM\_RemoveTarget\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_EventControl WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

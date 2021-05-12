@@ -59,15 +59,13 @@ The STATUS\_CANNOT\_LOAD\_REGISTRY\_FILE bug check has a value of 0xC0000218. Th
 
 This bug check displays a descriptive text message. The name of the damaged file is displayed as part of the message.
 
-Cause
------
+## Cause
 
 This error occurs if a necessary registry hive file cannot be loaded. Usually this means the file is corrupt or is missing.
 
 In rare instances, this error can be caused by a driver that has corrupted the registry image in memory, or by a memory error in this region.
 
-Resolution
-----------
+## Resolution
 
 Try using the startup recovery mechanism (for example Startup Repair, Recovery Console, or Emergency Recovery Disk) provided by the operating system. If the problem is a missing or corrupt registry file, that usually fixes the problem.
 

@@ -56,8 +56,7 @@ The DEVPKEY_DeviceClass_NoUseClass device property represents a Boolean flag tha
 
  
 
-Remarks
--------
+## Remarks
 
 If the value of DEVPKEY_DeviceClass_NoUseClass is set to **1**, the PnP manager and SetupAPI do not use the device setup class. Otherwise, they do use the device setup class.
 
@@ -67,8 +66,7 @@ You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupa
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoUseClass property key. You can access the value of this property by accessing the corresponding **NoUseClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

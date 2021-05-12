@@ -52,8 +52,7 @@ The DEVPKEY_Device_DriverLogoLevel device property represents the Microsoft Wind
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverLogoLevel.
 
@@ -61,8 +60,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

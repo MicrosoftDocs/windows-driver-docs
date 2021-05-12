@@ -30,13 +30,11 @@ KSMETHOD with **Flags** member set to KSMETHOD\_TYPE\_NONE.
 
 None
 
-Remarks
--------
+## Remarks
 
 Before committing a list of changes, the network provider makes a KSMETHOD\_BDA\_CHECK\_CHANGES request to determine whether the requested changes will work. The minidriver may reserve resources when this request is made, to guarantee that the resources are available.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
