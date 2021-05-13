@@ -21,30 +21,34 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 >When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
 1. Open Visual Studio. On the **File** menu, choose **New &gt; Project**.
-2. In the New Project dialog box, in the left pane, go to **Visual C++ &gt; Windows Drivers &gt; WDF**. Select **User Mode Driver (UMDF V2)**.
-3. In the **Name** field, enter "UmdfDriver" as the project name.
-4. In the **Location** field, enter the directory where you want to create the new project.
-5. Check **Create directory for solution**. Select **OK**.
+1. In the **Create a new project** dialog box, select **C++** in the left dropdown, choose **Windows** in the middle dropdown, and choose **Driver** in the right dropdown.
+1. Select **User Mode Driver (UMDF V2)** from the list of project types. Select **Next**.
 
-    ![screen shot of the new project dialog box, showing wdf and user mode driver selected ](images/vs2015-umdf2-template.png)
+    :::image type="content" source="images/vs2019-umdf2-template.png" alt-text="Screen shot of the new project dialog box, showing user mode driver selected.":::
+
+1. In the **Configure your new project** dialog box, enter "UmdfDriver" in the **Project name** field.
+1. In the **Location** field, enter the directory where you want to create the new project.
+1. Check **Place solution and project in the same directory** and select **Create**.
+
+    :::image type="content" source="images/vs2019-umdf2-configure.png" alt-text="Screen shot of the project configuration dialog box.":::
 
     Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named UmdfDriver. To see the driver source code, open any of the files under **Source Files**. Driver.c and Device.c are good places to start.
 
-    ![screen shot of solution explorer showing the files in the driver project](images/vs2015-umdf2-solution-explorer.png)
+    :::image type="content" source="images/vs2019-umdf2-solution-explorer.png" alt-text="Screen shot of solution explorer showing the files in the driver project.":::
 
-6. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'UmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
-7. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
-8. To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
+1. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'UmdfDriver' (1 of 1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
+1. To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
 
     Verify that the build output includes:
 
     ``` syntax
-    >  Driver is a Universal Driver.
+    >    Driver is 'Universal'.
     ```
 
     When you've verified that the solution built successfully, you can close Visual Studio.
 
-9. To see the built driver, in File Explorer, go to your **UmdfDriver** folder, and then to **x64\\Debug\\UmdfDriver**. The directory includes the following files:
+1. To see the built driver, in File Explorer, go to your **UmdfDriver** folder, and then to **x64\\Debug\\UmdfDriver**. The directory includes the following files:
 
     * UmdfDriver.dll -- the user-mode driver file
     * UmdfDriver.inf -- an information file that Windows uses when you install the driver
