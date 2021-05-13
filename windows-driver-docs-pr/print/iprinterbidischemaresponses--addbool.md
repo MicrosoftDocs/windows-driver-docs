@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddBool method adds a new response of type BIDI\_BOOL to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT  AddBool(
@@ -29,8 +28,7 @@ HRESULT  AddBool(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +36,11 @@ The schema.
 *bValue* \[in\]  
 The new value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

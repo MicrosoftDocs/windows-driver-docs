@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **Community** property enables an ASP Web page to obtain a print server's Simple Network Management Protocol (SNMP) community name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_Community(
@@ -31,14 +30,12 @@ HRESULT get_Community(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to a community name string.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -83,8 +80,7 @@ objPrinter.Open strPrinter
 CommName = objPrinter.Community
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

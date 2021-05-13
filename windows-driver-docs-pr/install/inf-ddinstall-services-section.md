@@ -56,8 +56,7 @@ This optional entry specifies the section that must be processed during the inst
 
 **Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 
-Remarks
--------
+## Remarks
 
 <em>DDInstall</em>**.Services** sections should have the same platform and operating system decorations as their related [***DDInstall***](inf-ddinstall-section.md) sections. For example, an <em>install-section-name</em>**.ntx86** section would have a corresponding <em>install-section-name</em>**.ntx86.Services** section.
 
@@ -65,8 +64,7 @@ The specified *DDInstall* section must be referenced in a device/models-specific
 
 For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-Examples
---------
+## Examples
 
 This example shows the <em>DDInstall</em>**.Services** section for the **Ser_Inst** section shown as an example for the [**INF *DDInstall* section**](inf-ddinstall-section.md).
 

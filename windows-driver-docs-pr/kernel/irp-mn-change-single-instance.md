@@ -14,13 +14,11 @@ All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs 
 
 If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_CHANGE\_SINGLE\_INSTANCE** request, WMI in turn calls that driver's [*DpWmiSetDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_set_datablock_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 WMI sends this IRP to change all data items in a single instance of a data block.
 
@@ -59,8 +57,7 @@ STATUS\_WMI\_SET\_FAILURE
 
 On success, the driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 If a driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiSetDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_set_datablock_callback) routine, or returns STATUS\_WMI\_READ\_ONLY if the driver does not define the routine.
 
@@ -92,8 +89,7 @@ If the driver locates the instance and can handle the request, it sets the writa
 
 If the instance is valid but the driver cannot handle the request, it can return any appropriate error status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

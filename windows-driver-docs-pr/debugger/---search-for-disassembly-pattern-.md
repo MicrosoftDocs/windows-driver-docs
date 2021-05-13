@@ -62,8 +62,7 @@ Specifies the number of instructions to search. If you omit *Size*, the search c
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 If you previously used the **\#** command and you omit *Address*, the search begins where the previous search ended.
 

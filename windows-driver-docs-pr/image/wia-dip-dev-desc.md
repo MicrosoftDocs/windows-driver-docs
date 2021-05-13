@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The device description string that the WIA\_DIP\_DEV\_DESC property contains is obtained from the driver's INF file. An application reads this property to get a description of the device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 As a query, the OID\_GEN\_PHYSICAL\_MEDIUM\_EX OID specifies the types of physical media that a miniport adapter supports.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers. The miniport driver supplies the physical medium value during initialization.
 
@@ -31,8 +30,7 @@ Newer networks transfer packets that might appear like standard media, but that 
 
 To clearly distinguish an 802.3 NIC from an emulated 802.3 NIC for which there is no physical medium type defined, NDIS 6.0 and later and later versions require 802.3 miniport drivers to report an **NdisPhysicalMedium802\_3** media type.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

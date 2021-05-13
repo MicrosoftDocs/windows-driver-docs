@@ -36,8 +36,7 @@ If Address is specified, this command displays the trace messages from the log b
 
 Rcdrkd.dll
 
-Examples
---------
+## Examples
 
 The following example shows a portion of the output of the **!rcdrlogdump**command.
 

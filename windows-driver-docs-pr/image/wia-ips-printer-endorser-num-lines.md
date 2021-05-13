@@ -25,13 +25,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_NUM\_LINES** property is optional for the Imprinter/Endorser items. When this property is not supported, only a single line of text is allowed on each side of a document.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

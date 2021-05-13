@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmScanModeValue** element identifies a specific film exposure type that the film scanning option supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmScanModeValue>
@@ -26,13 +25,11 @@ Usage
 </wscn:FilmScanModeValue>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -93,8 +90,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 You can both extend and subset the allowed values for this element.
 

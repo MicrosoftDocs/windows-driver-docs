@@ -33,8 +33,7 @@ Specifies the extension DLL whose version number is to be displayed.
 
 This extension is available in most extension DLLs.
 
-Remarks
--------
+## Remarks
 
 If the extension DLL version does not match the debugger version, error messages will be displayed.
 

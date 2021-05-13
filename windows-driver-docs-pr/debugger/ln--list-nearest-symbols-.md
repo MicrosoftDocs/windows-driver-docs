@@ -56,8 +56,7 @@ Specifies that the output is displayed using [Debugger Markup Language (DML)](de
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the **ln** command to help determine what a pointer is pointing to. This command can also be useful when you are looking at a corrupted stack to determine which procedure made a call.
 

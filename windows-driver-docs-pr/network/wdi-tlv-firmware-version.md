@@ -31,8 +31,7 @@ The size (in bytes) of the array of char elements. The array must contain 1 or m
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -121,8 +121,7 @@ SOCK\_RAW + IPPROTO\_*Xxx*
 Connection-Oriented Sockets
 SOCK\_STREAM + IPPROTO\_TCP
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

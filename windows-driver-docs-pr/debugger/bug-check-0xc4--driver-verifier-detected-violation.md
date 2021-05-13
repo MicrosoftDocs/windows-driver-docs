@@ -326,13 +326,11 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x0009400B |Pointer to the string that describes the violated rule condition.|Address of internal rule state (second argument to !ruleinfo).|Address of supplemental states (third argument to !ruleinfo).|The driver violated the NDIS/WIFI verification rule [WlanTimedLinkQuality](../devtest/ndis-wlantimedlinkquality.md).|
 |0x0009400C |Pointer to the string that describes the violated rule condition.|Address of internal rule state (second argument to !ruleinfo).|Address of supplemental states (third argument to !ruleinfo).|The driver violated the NDIS/WIFI verification rule [WlanTimedScan](../devtest/ndis-wlantimedscan.md).|
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for a description of the cause. Further information can be obtained by using the [**!analyze -v**](-analyze.md) extension.
 
-Resolution
-----------
+## Resolution
 
 This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. You might also consider removing the driver that caused this problem.
 
@@ -340,8 +338,7 @@ If you are the driver writer, use the information obtained through this bug chec
 
 For full details on Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
-Remarks
--------
+## Remarks
 
 The \_POOL\_TYPE codes are enumerated in Ntddk.h. In particular, **0** (zero) indicates nonpaged pool and **1** (one) indicates paged pool.
 

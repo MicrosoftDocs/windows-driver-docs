@@ -162,8 +162,7 @@ Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info ab
 <a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=** *PackageType*  
 Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info about the DIFx deprecation, see [DIFx Guidelines](difx-guidelines.md).
 
-Remarks
--------
+## Remarks
 
 When a [driver package](driver-packages.md) passes Microsoft Windows Hardware Quality Lab (WHQL) testing, WHQL returns *.cat* catalog files to the IHV or OEM. Each *.cat* file contains a digitally encrypted signature for the driver package. The IHV or OEM must list these *.cat* files in the INF **Version** section and must supply the files on the distribution media, in the same location as the INF file. The *.cat* files must be uncompressed.
 
@@ -173,8 +172,7 @@ When a [driver package](driver-packages.md) passes Microsoft Windows Hardware Qu
 
 For more information, see [Driver Signing](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
-Examples
---------
+## Examples
 
 The following example shows a **Version** section typical of a simple device-driver INF, followed by the required [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) sections implied by the entries specified in this sample **Version** section:
 

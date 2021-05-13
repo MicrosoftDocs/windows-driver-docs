@@ -44,8 +44,7 @@ The KSCATEGORY_ENCODER [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_ENCODER to indicate to the operating system that the devices support the KSCATEGORY_ENCODER functional category.
 
@@ -53,8 +52,7 @@ For an example of how to register this functional category in an INF file, see t
 
 For information about encoders, see [Encoder Devices](../stream/encoder-devices.md) and [Encoder Installation and Registration](../stream/encoder-installation-and-registration.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

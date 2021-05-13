@@ -77,8 +77,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 The **!list** extension will go through the linked list and issue the specified command once for each list element.
 

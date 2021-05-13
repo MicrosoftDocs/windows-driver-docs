@@ -53,8 +53,7 @@ The **.bugcheck** command displays the data from a bug check on the target compu
 
 For more information about bug checks, see [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md). For a description of individual bug checks, see the [Bug Check Code Reference](bug-check-code-reference2.md) section.
 
-Remarks
--------
+## Remarks
 
 This command displays the current bug check data. (This bug check data will be accessible until the crashed machine is rebooted.)
 

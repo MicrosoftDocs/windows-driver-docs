@@ -42,8 +42,7 @@ The **!frozen** extension displays the state of each processor.
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

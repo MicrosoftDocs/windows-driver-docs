@@ -61,8 +61,7 @@ Displays information about the internal framework.
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following is an example of the **!wudfext.umdevstack** display:
 

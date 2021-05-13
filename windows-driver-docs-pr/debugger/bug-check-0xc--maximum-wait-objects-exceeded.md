@@ -26,8 +26,7 @@ The MAXIMUM\_WAIT\_OBJECTS\_EXCEEDED bug check has a value of 0x0000000C. This i
 
 None
 
-Cause
------
+## Cause
 
 This bug check results from the improper use of **KeWaitForMultipleObjects** or **FsRtlCancellableWaitForMultipleObjects**.
 

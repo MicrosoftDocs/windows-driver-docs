@@ -32,13 +32,11 @@ Address of the \_UCXCONTROLLER\_PRIVCONTEXT structure that represents the contro
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The USB host controller extension driver (Ucx*Version*.sys) provides a layer of abstraction between the USB 3.0 hub driver and the USB 3.0 host controller driver. The extension driver has its own representation of host controllers, devices, and endpoints. The output the [**!ucx\_controller**](-usb3kd-device-info.md) command is based on the data structures maintained by the extension driver. For more information about the USB host controller extension driver and the USB 3.0 host controller driver, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 
-Examples
---------
+## Examples
 
 To obtain the address of the UCX controller private context, look at the output of the [**!ucx\_controller\_list**](-usb3kd-ucx-controller-list.md) command. In the following example, the address of the private context is 0xfffffa80052da050.
 

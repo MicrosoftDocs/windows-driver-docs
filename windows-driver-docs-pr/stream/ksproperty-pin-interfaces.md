@@ -54,8 +54,7 @@ This property returns the list of interfaces supported by pins instantiated by a
 
  
 
-Remarks
--------
+## Remarks
 
 Specify KSPROPERTY\_PIN\_INTERFACES using KSP\_PIN, where the **PinId** member specifies the pin factory for which to return available interfaces.
 
@@ -63,8 +62,7 @@ This property returns the interfaces ordered by class driver preference.
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

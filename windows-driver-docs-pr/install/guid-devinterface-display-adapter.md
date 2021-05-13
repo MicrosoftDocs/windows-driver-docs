@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_DISPLAY_ADAPTER [device interface class](./overview-of-dev
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied display drivers register an instance of this device interface class to notify the operating system and applications of the presence of a display view.
 
@@ -53,8 +52,7 @@ For information about display devices, see [Windows Vista Display Driver Model](
 
 For information about the device interface class for display adapters, see [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_QUERY\_VOLUME\_INFORMATION**](irp-mj-query-volume-information.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -34,8 +33,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **QueryVolumeInformation**  
 Structure containing the following members.
@@ -111,15 +109,13 @@ Type of volume information that the file system returns. One of the following:
 **VolumeBuffer**  
 Pointer to the output buffer where the volume information is to be returned.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_QUERY\_VOLUME\_INFORMATION operations contains the parameters for an IRP-based query-volume-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
 IRP\_MJ\_QUERY\_VOLUME\_INFORMATION is an IRP-based operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

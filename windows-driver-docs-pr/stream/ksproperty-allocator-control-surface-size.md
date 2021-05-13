@@ -56,15 +56,13 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE property informs client filter
 
 The property value (operation data) is a pair of ULONGs that specify the width and height of overlay surfaces.
 
-Remarks
--------
+## Remarks
 
 Minidrivers that support this property return a KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE\_S structure that describes the width and height of the required overlay surface. The Overlay Mixer allocates overlay surfaces of this size. If this is not the size specified in the MediaType during pin connection, then the video is scaled at the video port to this size. No other scaling at the video port occurs regardless of the scaling abilities of the VGA chip.
 
 The Overlay Mixer always queries this new property if the mixer is connected to this property's upstream filter through a video port on its primary input pin. If that filter does not implement this property, the Overlay Mixer assumes that it is not capturing data and scales the video at the video port as necessary to keep the video displayed correctly.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

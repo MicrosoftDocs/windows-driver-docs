@@ -24,8 +24,7 @@ This rule verifies the following NDIS macros:
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -50,8 +49,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NDIS\_LOWER\_IRQL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndis_lower_irql)
 [**NDIS\_RAISE\_IRQL\_TO\_DISPATCH**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndis_raise_irql_to_dispatch)

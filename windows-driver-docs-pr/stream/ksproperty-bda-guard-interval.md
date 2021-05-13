@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_GUARD\_INTERVAL to control the setting for guard in
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the GuardInterval enumerated type identifies a setting for guard interval.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

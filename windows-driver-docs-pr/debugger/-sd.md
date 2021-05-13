@@ -40,8 +40,7 @@ Exts.dll
 
 For an application and an example of this command, see [Determining the ACL of an Object](determining-the-acl-of-an-object.md). For information about security descriptors, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Also see [**!sid**](-sid.md) and [**!acl**](-acl.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

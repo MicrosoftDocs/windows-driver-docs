@@ -112,8 +112,7 @@ The miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

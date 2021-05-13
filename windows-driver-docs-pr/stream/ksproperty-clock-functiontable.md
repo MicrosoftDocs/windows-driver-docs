@@ -54,8 +54,7 @@ Clients use the KSPROPERTY\_CLOCK\_FUNCTIONTABLE property to retrieve the entry 
 
  
 
-Remarks
--------
+## Remarks
 
 The *FileObject* parameter that the client supplies when it makes calls to these entry points specifies the file object underlying the file handle that was returned when the clock instance was created.
 
@@ -63,8 +62,7 @@ The *SystemTime* parameter points to the location to store the correlated system
 
 Also see [KS Clocks](./ks-clocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

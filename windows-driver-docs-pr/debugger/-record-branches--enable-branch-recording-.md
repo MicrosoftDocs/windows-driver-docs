@@ -50,8 +50,7 @@ The **.record\_branches** command enables the recording of branches that the tar
 
  
 
-Remarks
--------
+## Remarks
 
 The **.record\_branches 1** command enables the recording of branches in the target's code. The **.record\_branches 0** command disables this recording.
 

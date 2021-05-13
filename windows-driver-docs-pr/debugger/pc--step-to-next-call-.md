@@ -75,8 +75,7 @@ Specifies the number of **call** instructions that the debugger must encounter f
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **pc** command causes the target to begin executing. This execution continues until a **call** instruction is reached or a breakpoint is encountered.
 

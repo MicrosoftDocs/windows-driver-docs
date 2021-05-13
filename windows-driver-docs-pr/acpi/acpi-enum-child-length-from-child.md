@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_ENUM\_CHILD\_LENGTH\_FROM\_CHILD macro calculates the size, in bytes, of a variable-length [**ACPI\_ENUM\_CHILD**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_child) structure.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 void ACPI_ENUM_CHILD_LENGTH_FROM_CHILD(
@@ -21,24 +20,20 @@ void ACPI_ENUM_CHILD_LENGTH_FROM_CHILD(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Child*   
 A pointer to a structure of type ACPI\_ENUM\_CHILD for which to calculate the size, in bytes, of the structure.
 
-Return value
-------------
+## Return value
 
 The size, in bytes, of the ACPI\_ENUM\_CHILD structure that *Child* points to.
 
-Remarks
--------
+## Remarks
 
 A driver can use this macro to calculate the size, in bytes, of the ACPI\_ENUM\_CHILD structures in an [**ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_output_buffer) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

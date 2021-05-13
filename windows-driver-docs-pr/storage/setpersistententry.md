@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The **SetPersistentEntry** method adds a binding to the list of bindings associated with the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SetPersistentEntry(
@@ -30,8 +29,7 @@ void SetPersistentEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name that indicates the port whose persistent bindings will be changed.
@@ -42,18 +40,15 @@ A structure of type [**HBAFCPBindingEntry2**](/windows-hardware/drivers/ddi/hbap
 *HBAStatus*   
 On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetPersistentEntry\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setpersistententry_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

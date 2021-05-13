@@ -52,8 +52,7 @@ The DEVPKEY_Device_ContainerId device property is used by the Plug and Play (PnP
 
  
 
-Remarks
--------
+## Remarks
 
 Starting with Windows 7, the PnP manager uses the device container and its identifier (*ContainerID*) to group one or more *devnodes* that originated from and belong to each instance of a particular physical device. The ContainerID for a device instance is referenced through the DEVPKEY_Device_ContainerId device property.
 
@@ -75,8 +74,7 @@ The DEVPKEY_Device_ContainerId can be used to determine the device container gro
 
 For more information about ContainerIDs, see [Container IDs](./container-ids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

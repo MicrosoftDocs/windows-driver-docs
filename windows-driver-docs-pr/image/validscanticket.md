@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ValidScanTicket** element contains a valid [**ScanTicket**](scanticket.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidScanTicket>
@@ -26,8 +25,7 @@ Usage
 </wscn:ValidScanTicket>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client submits a [**ScanTicket**](scanticket.md) for validation through the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. If the submitted **ScanTicket** contains invalid settings, the WSD Scan Service must return a **ValidScanTicket** element in which it has changed any invalid settings to be valid settings. The Scan Service returns validation information, which includes **ValidScanTicket**, in [**ValidateScanTicketResponse**](validatescanticketresponse.md).
 

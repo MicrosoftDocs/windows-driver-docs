@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE {
@@ -29,15 +28,13 @@ typedef enum _D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE {
 } D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_SUBMITTED"></span><span id="d3dkmt_flipmodel_independent_flip_stage_flip_submitted"></span>**D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE\_FLIP\_SUBMITTED**
 
 <span id="D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_COMPLETE"></span><span id="d3dkmt_flipmodel_independent_flip_stage_flip_complete"></span>**D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE\_FLIP\_COMPLETE**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

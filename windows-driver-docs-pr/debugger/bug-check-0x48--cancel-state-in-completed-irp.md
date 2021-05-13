@@ -57,8 +57,7 @@ The CANCEL\_STATE\_IN\_COMPLETED\_IRP bug check has a value of 0x00000048. This 
 
  
 
-Cause
------
+## Cause
 
 An IRP that had a *Cancel* routine set was completed normally, without cancellation. But after it was complete, a driver called the IRP's *Cancel* routine.
 
@@ -66,8 +65,7 @@ This could be caused by a driver that completed the IRP and then attempted to ca
 
 It could also be caused by two drivers each trying to access the same IRP in an improper way.
 
-Resolution
-----------
+## Resolution
 
 The cancel routine parameter can be used to determine which driver or stack caused the bug check.
 

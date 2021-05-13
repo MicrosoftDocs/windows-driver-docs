@@ -44,15 +44,13 @@ The GUID_DEVICE_BATTERY [device interface class](./overview-of-device-interface-
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [battery class driver](../battery/battery-class-driver-functionality.md) registers an instance of this device interface class for a battery device on behalf of a battery miniclass driver.
 
 For information about battery devices and drivers, see [Overview of System Battery Management](../battery/overview-of-system-battery-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

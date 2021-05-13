@@ -42,8 +42,7 @@ Exts.dll
 
 For information about SIDs, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, or *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Also see [**!sd**](-sd.md) and [**!acl**](-acl.md).
 
-Remarks
--------
+## Remarks
 
 Here are two examples, one without the friendly name shown, and one with:
 

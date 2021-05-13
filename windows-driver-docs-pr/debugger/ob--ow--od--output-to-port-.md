@@ -57,8 +57,7 @@ Specifies the hexadecimal value to write to the port.
 
  
 
-Remarks
--------
+## Remarks
 
 The **ob** command writes a single byte, the **ow** command writes a word, and the **od** command writes a double word.
 

@@ -70,8 +70,7 @@ Specifies the name of a library extension. Required only for *Command* values of
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The extension module contains an extensibility framework that allows separate components to be built and linked into Ks.dll. These extra components are called library extensions.
 

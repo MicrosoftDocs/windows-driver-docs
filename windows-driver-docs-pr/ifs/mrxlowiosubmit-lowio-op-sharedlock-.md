@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network redirector open a shared lock on a file object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK];
@@ -31,14 +30,12 @@ NTSTATUS MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK](
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -95,8 +92,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS calls *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* in response to receiving an [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md) request with a minor code of IRP\_MN\_LOCK if **IrpSp-&gt;Flags** does not have the SL\_EXCLUSIVE\_LOCK bit set.
 
@@ -120,8 +116,7 @@ If the *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* routine can take a long time to
 
 The **LowIoContext.ResourceThreadId** member of the RX\_CONTEXT structure can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

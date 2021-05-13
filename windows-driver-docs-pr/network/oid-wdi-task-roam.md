@@ -49,8 +49,7 @@ The scan and AP selection requirements for this task are same as for [OID\_WDI\_
 
 [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

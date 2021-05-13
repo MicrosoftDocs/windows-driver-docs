@@ -44,8 +44,7 @@ Specifies the address of a Storport unit device object. If *Address* is omitted,
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storunit** display:
 

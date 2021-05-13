@@ -54,8 +54,7 @@ This extension command can only be used with an x86-based target computer.
 
 For information about IPIs, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

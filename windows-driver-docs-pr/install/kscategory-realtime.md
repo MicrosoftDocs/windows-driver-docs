@@ -44,8 +44,7 @@ The KSCATEGORY_REALTIME [device interface class](./overview-of-device-interface-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_REALTIME to indicate to the operating system that the devices support the KSCATEGORY_REALTIME functional category.
 
@@ -53,8 +52,7 @@ Devices that register this functional category are operated by the system-suppli
 
 For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](/samples/browse/) in the WDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

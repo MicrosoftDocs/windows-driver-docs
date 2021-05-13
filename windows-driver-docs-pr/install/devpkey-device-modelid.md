@@ -52,8 +52,7 @@ The DEVPKEY_Device_ModelId device property matches a device to a [device metadat
 
  
 
-Remarks
--------
+## Remarks
 
 The DEVPKEY_Device_ModelId device property provides support for IHVs and OEMs to uniquely identify devices that share the same manufacturer and model. By using a model identifier (ModelID), OEMs and IHVs can match the device model that they distribute to their own branded device metadata package.
 
@@ -61,8 +60,7 @@ The DEVPKEY_Device_ModelId device property contains the value of the [**ModelID*
 
 For more information, see [Device Metadata Packages](./overview-of-device-metadata-packages.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_CONTRAST property to the hardware's contrast value. The WIA minidriver creates and maintains this property.
 
@@ -37,8 +36,7 @@ Values for WIA\_IPS\_CONTRAST should be mapped in a range from −1000 through 1
 
 WIA\_IPS\_CONTRAST is required for all image acquisition items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

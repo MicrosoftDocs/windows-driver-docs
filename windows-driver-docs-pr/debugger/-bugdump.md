@@ -52,8 +52,7 @@ Specifies the component whose callback data is to be examined. If omitted, all b
 
 For more information, see [Reading Bug Check Callback Data](reading-bug-check-callback-data.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used after a bug check has occurred, or when you are debugging a kernel-mode crash dump file.
 

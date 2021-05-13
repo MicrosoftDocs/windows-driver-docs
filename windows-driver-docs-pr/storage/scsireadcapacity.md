@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **ScsiReadCapacity** WMI method sends a SCSI read capacity command to the indicated device.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void ScsiReadCapacity(
@@ -38,8 +37,7 @@ void ScsiReadCapacity(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
 On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**ScsiReadCapacity\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_scsireadcapacity_out) structure.
@@ -71,18 +69,15 @@ The results of the SCSI read capacity command. The miniport driver returns this 
 *SenseBuffer*   
 The SCSI sense data that results from the SCSI read capacity command. The miniport driver returns this information in the **SenseBuffer** member of a [**ScsiReadCapacity\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_scsireadcapacity_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

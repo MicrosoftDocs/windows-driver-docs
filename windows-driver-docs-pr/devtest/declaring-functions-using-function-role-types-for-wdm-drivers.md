@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Declaring Functions Using Function Role Types for WDM Drivers
 
 > [!NOTE]
-> Starting in Windows 10 Version 2004, [Static Driver Verifier](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/devtest/static-driver-verifier) (SDV) no longer requires annotations to identify role types of dispatch routines for WDM drivers.  Please follow the guidance in the *Basic and Advanced Initializations* section of this page.
+> Starting in Windows 10 Version 2004, [Static Driver Verifier](/windows-hardware/drivers/devtest/static-driver-verifier) (SDV) no longer requires annotations to identify role types of dispatch routines for WDM drivers.  Please follow the guidance in the *Basic and Advanced Initializations* section of this page.
 
 To inform SDV about the driver's entry points when you analyze a WDM driver, you must declare functions using function role type declarations. The function role types are defined in Wdm.h. Each entry point in the *DriverEntry* routine in your WDM driver must be declared by specifying the corresponding role type. The role types are predefined typedefs that correspond to the recognized entry points in a WDM driver.
 

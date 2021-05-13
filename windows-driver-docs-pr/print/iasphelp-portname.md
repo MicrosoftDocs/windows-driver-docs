@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **PortName** property enables an ASP Web page to obtain a printer's port name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PortName(
@@ -31,14 +30,12 @@ HRESULT get_PortName(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied location to receive a pointer to a string representing the printer's port name.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -81,8 +78,7 @@ objPrinter.Open strPrinter
 PtrPortName = objPrinter.PortName
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

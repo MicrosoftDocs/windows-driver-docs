@@ -57,8 +57,7 @@ The property value is of type ULONG and represents the last valid byte in the Wa
 
 The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 If a client app uses the KSPROPERTY\_TYPE\_BASICSUPPORT flag when it sends a KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property request to the audio driver and STATUS\_SUCCESS is returned, it confirms that the driver supports the newly added KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property.
 
@@ -66,8 +65,7 @@ When a client app performs the very last write operation to the audio buffer to 
 
 If you develop an audio driver that was not designed to work with the audio port class driver (Portcls), then you have to implement your own property handler for the this new KS property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

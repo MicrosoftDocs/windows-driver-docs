@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_TRANSFERFLAGS2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_TRANSFERFLAGS2 {
@@ -37,8 +36,7 @@ typedef struct _DXGK_TRANSFERFLAGS2 {
 } DXGK_TRANSFERFLAGS2;
 ```
 
-Members
--------
+## Members
 
 **Swizzle**
 Reserved for system use.
@@ -58,8 +56,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -22,8 +22,7 @@ The KsTimedDeviceCallbacks rule specifies that a kernel-streaming (KS) miniport 
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00082002)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -46,7 +45,6 @@ How to test
 
  
 
-See also
---------
+## See also
 
 [Locking and Unlocking Stream Pointers](../stream/locking-and-unlocking-stream-pointers.md)

@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WAN\_LINE\_DOWN status indicates that a WAN-capable miniport driver has lost an established connection with a remote node.
 
-Remarks
--------
+## Remarks
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
@@ -21,8 +20,7 @@ The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions
 
 For more information about NDIS\_STATUS\_WAN\_LINE\_DOWN, see [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546867(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

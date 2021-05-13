@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Specifies the possible values of data transferred in a bidi operation
 
-Syntax
-------
+## Syntax
 
 ```cpp
 typedef enum _PRINTERBIDISCHEMAELEMENTTYPE { 
@@ -35,8 +34,7 @@ typedef enum _PRINTERBIDISCHEMAELEMENTTYPE {
 } PRINTERBIDISCHEMAELEMENTTYPE;
 ```
 
-Constants
----------
+## Constants
 
 **PrinterBidiSchemaElementType\_Null**  
 No data.

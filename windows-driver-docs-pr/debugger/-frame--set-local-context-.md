@@ -78,8 +78,7 @@ Specifies an additional quantity of frames past the base pointer. For example, i
 
 For more information about the local context and other context settings, see [Changing Contexts](changing-contexts.md). For more information about how to display local variables and other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 When an application is running, the meaning of local variables depends on the location of the program counter, because the scope of such variables extends only to the function that they are defined in. If you do not use the **.frame** command, the debugger uses the scope of the current function (the current frame on the stack) as the [local context](changing-contexts.md#local-context).
 

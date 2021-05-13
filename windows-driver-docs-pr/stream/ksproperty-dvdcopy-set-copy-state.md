@@ -56,8 +56,7 @@ The KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE property sets the copy state of the DV
 
 The property value (operation data) is a KS\_DVDCOPY\_SET\_COPY\_STATE structure that describes the copyright protection state of the DVD decoder stream.
 
-Remarks
--------
+## Remarks
 
 This property indicates whether this pin requires CSS authentication. If the property is not implemented, the default is assumed to be the **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** value from the [**KS\_DVDCOPYSTATE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ks_dvdcopystate) enumeration.
 
@@ -76,8 +75,7 @@ Indicates the start of a title key negotiation sequence.
 <span id="KS_DVDCOPYSTATE_DONE"></span><span id="ks_dvdcopystate_done"></span>**KS\_DVDCOPYSTATE\_DONE**  
 Indicates the completion of a key negotiation sequence.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

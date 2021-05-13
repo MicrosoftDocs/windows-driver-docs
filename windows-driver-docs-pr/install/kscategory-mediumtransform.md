@@ -44,15 +44,13 @@ The KSCATEGORY_MEDIUMTRANSFORM [device interface class](./overview-of-device-int
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register an instance of KSCATEGORY_MEDIUMTRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_MEDIUMTRANSFORM functional category.
 
 The KSCATEGORY_MEDIUMTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md) functional categories.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

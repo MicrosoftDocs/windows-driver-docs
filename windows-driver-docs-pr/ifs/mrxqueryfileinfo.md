@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The*MRxQueryFileInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query file information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxQueryFileInfo;
@@ -31,14 +30,12 @@ NTSTATUS MRxQueryFileInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxQueryFileInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -90,8 +87,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxQueryFileInfo* in response to receiving an [**IRP\_MJ\_QUERY\_INFORMATION**](irp-mj-query-information.md) request.
 
@@ -115,8 +111,7 @@ On success, the network mini-redirector should set the **Info.LengthRemaining** 
 
 RDBSS does not support requests with the SL\_INDEX\_SPECIFIED bit of the **IrpSp-&gt;Flags** set. A network mini-redirector will not receive calls to *MRxQueryFileInfo* with the SL\_INDEX\_SPECIFIED bit of **IrpSp-&gt;Flags** set.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

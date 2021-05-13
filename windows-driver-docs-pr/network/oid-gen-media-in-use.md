@@ -29,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS 6.0 and later miniport drivers do not receive this OID request. NDIS handles this OID with a cached value that miniport drivers supply during initialization.
 
 This OID provides the same information as the [OID\_GEN\_MEDIA\_SUPPORTED](oid-gen-media-supported.md) OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

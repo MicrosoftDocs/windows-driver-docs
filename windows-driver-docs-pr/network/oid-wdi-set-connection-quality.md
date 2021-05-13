@@ -38,8 +38,7 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

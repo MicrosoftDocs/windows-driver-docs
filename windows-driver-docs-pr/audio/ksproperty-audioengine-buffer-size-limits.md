@@ -55,13 +55,11 @@ The **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property indicates the mini
 
 A **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 It is important to note that before a caller calls the **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property, the caller fills in the fields of a [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure. So when **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** is called, the audio driver receives a KSP\_NODE followed by a filled-in **KSDATAFORMAT\_WAVEFORMATEX** structure from the caller. The driver uses the data format information in this structure to determine the min and max buffer sizes to accommodate the specified data format. Upon a successful call to this property, the kernel streaming (KS) filter then fills in the **MinBufferBytes** and **MaxBufferBytes** fields of the [**KSAUDIOENGINE\_BUFFER\_SIZE\_RANGE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_buffer_size_range) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

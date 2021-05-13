@@ -47,15 +47,13 @@ Each Signature Type has a corresponding attribute and value, as listed below. Us
 -   **SignatureAttributes.PETrust**: PETrust = true
 -   **SignatureAttributes.WindowsHello**: WindowsHello = true
 
-Remarks
--------
+## Remarks
 
 These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM. For more info, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/).
 
 These INF sections should be used when requesting additional signatures regardless of the target OS.
 
-Examples
---------
+## Examples
 
 The following examples demonstrate how to enumerate and request additional signatures for audio:
 

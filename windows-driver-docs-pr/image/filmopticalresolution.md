@@ -17,15 +17,13 @@ ms.localizationpriority: medium
 
 The required **FilmOpticalResolution** element specifies the maximum optical resolution at which the film scanning input source can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmOpticalResolution/>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -53,8 +51,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

@@ -31,8 +31,7 @@ The size (in bytes) of a [**WDI\_TYPE\_PMK\_NAME**](/windows-hardware/drivers/dd
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

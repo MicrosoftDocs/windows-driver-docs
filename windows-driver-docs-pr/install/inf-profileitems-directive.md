@@ -134,8 +134,7 @@ DisplayResource="%11%\shell32.dll",22019
 
 Use this entry to support Windows Multilingual User Interface (MUI). If this entry is not used, the string specified by the **Name** entry is displayed.
 
-Remarks
--------
+## Remarks
 
 A given *profile-items-section* name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -143,8 +142,7 @@ Each *profile-items-section* contains detailed information for creating or remov
 
 Any of the string parameters specified in the *profile-items-section* entries can be specified by using a %*strkey*% token, as described in [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-Examples
---------
+## Examples
 
 The following INF file excerpt shows how to use the *profile-items-section* to add Calculator to the Start Menu.
 

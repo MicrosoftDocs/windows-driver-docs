@@ -26,8 +26,7 @@ The UNSUPPORTED\_PROCESSOR bug check has a value of 0x0000005D. This indicates t
 
 None
 
-Cause
------
+## Cause
 
 Windows requires a higher-grade processor than the one you are using.
 

@@ -23,8 +23,7 @@ Because a driver's [**Cancel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,12 +48,10 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoSetCancelRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcancelroutine)
 [**IoSetStartIoAttributes**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iosetstartioattributes)
-See also
---------
+## See also
 
 [**CancelSpinLock**](wdm-cancelspinlock.md)

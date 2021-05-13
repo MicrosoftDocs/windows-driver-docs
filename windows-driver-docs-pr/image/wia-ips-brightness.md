@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_BRIGHTNESS property to the hardware's brightness value. The WIA minidriver creates and maintains this property.
 
@@ -37,8 +36,7 @@ Values for WIA\_IPS\_BRIGHTNESS should be mapped in a range from −1000 through
 
 WIA\_IPS\_BRIGHTNESS is required for all image acquisition items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

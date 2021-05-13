@@ -57,15 +57,13 @@ The MBR\_CHECKSUM\_MISMATCH bug check has a value of 0x0000008B. This bug check 
 
  
 
-Cause
------
+## Cause
 
 The MBR\_CHECKSUM\_MISMATCH bug check occurs during the boot process when the MBR checksum that the Microsoft Windows operating system calculates does not match the checksum that the loader passes in.
 
 This error typically indicates a virus.
 
-Resolution
-----------
+## Resolution
 
 There are many forms of viruses and not all can be detected. Typically, the newer viruses usually can be detected only by a virus scanner that has recently been upgraded. You should boot with a write-protected disk that contains a virus scanner and try to clean out the infection.
 

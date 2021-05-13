@@ -33,8 +33,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

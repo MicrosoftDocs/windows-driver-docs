@@ -52,8 +52,7 @@ Specifies the pointer to the thread stack.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 For a common use of this extension, see [Analyzing a Stuck Call Problem](analyzing-a-stuck-call-problem.md).
 

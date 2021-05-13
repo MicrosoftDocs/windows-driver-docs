@@ -14,13 +14,11 @@ All drivers that support methods within data blocks must handle this IRP. A driv
 
 If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_EXECUTE\_METHOD** request, WMI in turn calls that driver's [*DpWmiExecuteMethod*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_execute_method_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 WMI sends this IRP to execute a method associated with a data block.
 
@@ -71,8 +69,7 @@ STATUS\_WMI\_ITEMID\_NOT\_FOUND
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to the number of bytes written to the buffer at **Parameters.WMI.Buffer**.
 
-Operation
----------
+## Operation
 
 A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
@@ -114,8 +111,7 @@ If the method generates output, the driver writes the output data to the buffer 
 
 If the instance is valid but the driver cannot handle the request, it can return any appropriate error status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

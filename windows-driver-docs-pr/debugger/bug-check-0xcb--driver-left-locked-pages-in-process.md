@@ -98,8 +98,7 @@ If the I/O manager locked these pages, the parameters have the following meaning
 
  
 
-Remarks
--------
+## Remarks
 
 This bug check is issued only if the registry value **\\\\HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management\\TrackLockedPages** is equal to DWORD 1. If this value is not set, the system will issue the less-informative [**bug check 0x76**](bug-check-0x76--process-has-locked-pages.md) (PROCESS\_HAS\_LOCKED\_PAGES).
 

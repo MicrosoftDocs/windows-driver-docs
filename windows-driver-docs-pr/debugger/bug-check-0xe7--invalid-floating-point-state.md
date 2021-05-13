@@ -65,8 +65,7 @@ Parameter 1 indicates which validity check failed. Parameter 4 is not used. The 
 
  
 
-Cause
------
+## Cause
 
 While restoring the previously-saved floating-point state for a thread, the state was found to be invalid.
 

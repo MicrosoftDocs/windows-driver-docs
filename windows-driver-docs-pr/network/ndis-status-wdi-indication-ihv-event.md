@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT to pass IHV speci
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDEDECODER\_STATUS property retrieves status information from t
 
 The property value (operation data) is a KSPROPERTY\_VIDEODECODER\_STATUS\_S structure that specifies the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -30,8 +30,7 @@ Before sending the registration request, make sure that:
 -   The underlying USB driver stack supports USB 3.0 devices. To do so, call [**USBD\_IsInterfaceVersionSupported**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_isinterfaceversionsupported) and pass USBD\_INTERFACE\_VERSION\_602 as the version to check.
 
 For a code example, see [How to Implement Function Suspend in a Composite Driver](how-to--implement-remote-and-function-wake-support.md).
-Instructions
-------------
+## Instructions
 
 ### Register a Composite Device
 

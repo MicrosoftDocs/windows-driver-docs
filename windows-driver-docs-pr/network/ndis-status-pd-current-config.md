@@ -24,8 +24,7 @@ The miniport driver calls [**NdisMIndicateStatusEx**](/windows-hardware/drivers/
 
 -   **StatusBufferSize** must be set to **sizeof**(ULONG).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

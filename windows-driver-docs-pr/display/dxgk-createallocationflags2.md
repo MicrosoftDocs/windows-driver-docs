@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_CREATEALLOCATIONFLAGS2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_CREATEALLOCATIONFLAGS2 {
@@ -34,8 +33,7 @@ typedef struct _DXGK_CREATEALLOCATIONFLAGS2 {
 } DXGK_CREATEALLOCATIONFLAGS2;
 ```
 
-Members
--------
+## Members
 
 **Resource**
 Reserved for system use.
@@ -46,8 +44,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

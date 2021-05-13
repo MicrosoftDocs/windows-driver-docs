@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ADFSupportsDuplex** element specifies whether the attached automatic document feeder (ADF) supports scanning both sides of the media.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFSupportsDuplex>
@@ -26,13 +25,11 @@ Usage
 </wscn:ADFSupportsDuplex>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, 1, false, or true.**false** or **true**
 
@@ -60,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scan device has an ADF that supports duplex scanning, the WSD Scan Service should return 1 (**true**); otherwise, it should return 0 (**false**).
 

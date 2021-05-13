@@ -70,15 +70,13 @@ This scale has a resolution of 1/65536 decibel.
 
 A KSPROPERTY\_AUDIO\_MID property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The filter will succeed a KSPROPERTY\_AUDIO\_MID set-property request that specifies a value that is beyond the range of the filter but will clamp the value to the supported range. In a subsequent request to get this property, however, it will output the actual value used.
 
 A tone node can support properties for controlling treble level, mid-frequency level, bass level, and bass boost. For more information, see [**KSNODETYPE\_TONE**](ksnodetype-tone.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

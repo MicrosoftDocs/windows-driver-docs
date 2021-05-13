@@ -45,8 +45,7 @@ The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the au
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
-Remarks
--------
+## Remarks
 
 For information about how to implement support for the KSEVENT\_PINCAPS\_VOLUMELIMITCHANGE event, see the **Remarks** section of [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md).
 

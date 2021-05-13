@@ -20,8 +20,7 @@ ms.localizationpriority: medium
 
 The **FltAcquireResourceExclusive** routine acquires the given resource for exclusive access by the calling thread.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID FltAcquireResourceExclusive(
@@ -29,19 +28,16 @@ VOID FltAcquireResourceExclusive(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Resource* \[in, out\]  
 A pointer to an opaque ERESOURCE structure. This structure must be allocated by the caller from nonpaged pool and initialized by calling [**ExInitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite) or [**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This routine is available on Windows XP with Service Pack 2 (SP2), Windows Server 2003 with Service Pack 1 (SP1), and later versions of Windows.
 
@@ -76,8 +72,7 @@ To initialize a resource for reuse, call [**ExReinitializeResourceLite**](/windo
 
 For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](../kernel/introduction-to-eresource-routines.md) in the Kernel Architecture Design Guide.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

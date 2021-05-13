@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **GetScannerElementsRequest** element enables a client to request information about the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetScannerElementsRequest>
@@ -26,8 +25,7 @@ Usage
 </wscn:GetScannerElementsRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetScannerElementsRequest** operation.
 
@@ -66,8 +63,7 @@ If the Scan Service successfully processes **GetScannerElementsRequest**, it ret
 
 This operation can return all of the [**common WSD Scan Service operation error codes**](common-wsd-scan-service-operation-error-codes.md). For more information about how to report errors, see [WSD Scan Service Operation Error Reporting](wsd-scan-service-operation-error-reporting.md).
 
-Examples
---------
+## Examples
 
 In the following code example, the client specifies a single QName value (wscn:ScannerDescription) to query for the scanner's description.
 

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddFloat method adds a new response of type BIDI\_FLOAT to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddFloat(
@@ -29,8 +28,7 @@ HRESULT AddFloat(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
  *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +36,11 @@ The schema.
  *fValue* \[in\]  
 The new floating point value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ Specifies the new maximum depth of the specified look-aside list. This parameter
 
 For information about look-aside lists, see the [Using Lookaside Lists](../kernel/using-lookaside-lists.md) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Look-aside lists are multiprocessor-safe mechanisms for managing pools of fixed-size entries from either paged or nonpaged memory.
 
@@ -77,8 +76,7 @@ Lookaside "" @ 0xfffff88001294f80  Tag(hex): 0x7366744e "Ntfs"
     Hit Rate       =         99% Hit Rate   =        100%
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

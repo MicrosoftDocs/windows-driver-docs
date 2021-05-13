@@ -54,13 +54,11 @@ Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming sta
 
  
 
-Remarks
--------
+## Remarks
 
 Also see [KS Properties](./ks-properties.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

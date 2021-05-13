@@ -60,8 +60,7 @@ The property value (operation data) is of type ULONG and specifies sampling rate
 
 A KSPROPERTY\_AUDIO\_SAMPLING\_RATE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The miniport driver should return an error on a set-property request if the node does not support the specified sampling rate.
 
@@ -73,8 +72,7 @@ This property is used to control the sampling rate for the following node types:
 
 -   SRC node ([**KSNODETYPE\_SRC**](ksnodetype-src.md))
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

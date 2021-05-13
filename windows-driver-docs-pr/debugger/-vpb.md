@@ -52,8 +52,7 @@ Specifies the hexadecimal address of the VPB.
 
 For information about VPBs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example. First, the device tree is displayed with the [**!devnode**](-devnode.md) extension:
 

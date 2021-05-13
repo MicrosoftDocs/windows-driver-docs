@@ -21,8 +21,7 @@ The **IrqlNtifsApcPassive** rule specifies that the driver calls the DDIs listed
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x20024)
 
 
-Example
--------
+## Example
 
 The following code violates this rule:
 
@@ -52,8 +51,7 @@ KeReleaseSpinLock (&Lock, OldIrql);
 
 For more information about IRQL levels, see [Dispatch Routines and IRQLs](../kernel/dispatch-routines-and-irqls.md) and [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md).
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -101,8 +99,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 NtSetInformationFile
 

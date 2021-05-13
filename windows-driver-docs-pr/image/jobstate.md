@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobState** element specifies the current state of the job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobState>
@@ -26,13 +25,11 @@ Usage
 </wscn:JobState>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -116,8 +113,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 When the **JobState** element is contained in a [**JobEndStateEvent**](jobendstateevent.md) event or [**JobHistory**](jobhistory2.md) element, **JobState** represents the completed state of a job. Otherwise, **JobState** specifies the current state of the job.
 

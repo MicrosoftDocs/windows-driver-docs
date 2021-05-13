@@ -21,9 +21,9 @@ This section describes some strategies for testing driver, and information about
 To prepare a driver for public distribution, you should run the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
-For more information, see [Run the DevFund Tests via the command-line](https://review.docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line).
+For more information, see [Run the DevFund Tests via the command-line](/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line).
 
-## 
+
 <table>
 <colgroup>
 <col width="50%" />

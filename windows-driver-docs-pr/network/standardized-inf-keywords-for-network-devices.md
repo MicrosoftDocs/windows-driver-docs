@@ -82,6 +82,8 @@ In addition, standardized keywords that are specific to networking technologies 
 
 [Standardized INF Keywords for NVGRE Task Offload](standardized-inf-keywords-for-nvgre-task-offload.md)
 
+[Standardized INF Keywords for NDIS Packet Timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md)
+
 [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md)
 
 [Standardized INF Keywords for Power Management](standardized-inf-keywords-for-power-management.md)

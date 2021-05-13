@@ -116,8 +116,7 @@ The size of the value represents the desired tilt speed; a higher value represen
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request to pan the camera, the client should supply one of the values in the preceding table in **Value1** member of the property descriptor structure.
 
@@ -129,8 +128,7 @@ Note that a particular device might support only a certain speed range. To deter
 
 Some devices support only a single pan or tilt speed. In this case, the sign of the **Value1** or **Value2** member indicates which direction to pan.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

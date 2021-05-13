@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START to disable any transform tha
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

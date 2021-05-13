@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_OUTER\_FEC\_TYPE to control the outer forward error
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the FECMethod enumerated type identifies an FEC type.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

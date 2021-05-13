@@ -52,8 +52,7 @@ Specifies the address of the extended error record.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension displays the contents of one extended error information record in the debugger. In most cases, it is easier to use [**!rpcexts.eeinfo**](-rpcexts-eeinfo.md), which displays the whole chain. If the chain is very long and you wish to see only one record, use **!eerecord** instead.
 

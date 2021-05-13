@@ -112,8 +112,7 @@ Specifies a pattern that the image path must match. Pattern can contain a variet
 
  
 
-Remarks
--------
+## Remarks
 
 The **lm** command lists all of the modules and the status of symbols for each module.
 
@@ -151,8 +150,7 @@ fb0ae000 fb0b0000   splitter.sys
 fb040000 fb043000   Sfloppy.SYS
 ```
 
-Examples
---------
+## Examples
 
 The following two examples show the **lm** command once without any options and once with the sm option. Compare the sort order in the two examples.
 

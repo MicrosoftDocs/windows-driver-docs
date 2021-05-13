@@ -66,8 +66,7 @@ For a get-property request, a value of **TRUE** or **FALSE** indicates whether t
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALLOCATION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

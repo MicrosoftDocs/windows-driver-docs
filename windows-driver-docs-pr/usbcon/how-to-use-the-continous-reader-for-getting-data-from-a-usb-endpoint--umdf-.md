@@ -55,8 +55,7 @@ Before the client driver can use the continuous reader, make sure that these req
 
 -   The client driver must have a handle to the framework target pipe object for the IN endpoint. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-Instructions
-------------
+## Instructions
 
 ### Using the continuous reader - KMDF client driver
 

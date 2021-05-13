@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A value of 0xFFFF for the WIA\_DPC\_FOCUS\_DISTANCE property corresponds to a setting that is greater than 655 meters.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

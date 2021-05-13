@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property to determine whether a scanner has a flatbed, document feeder, or duplexer installed. You can also use this property to further define the installed features. The WIA minidriver creates and maintains this property.
 
@@ -208,8 +207,7 @@ The following table describes the constants that are valid with Windows XP only;
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

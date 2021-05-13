@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The OID\_GEN\_NDIS\_RESERVED\_1 OID is reserved for NDIS. NDIS drivers do not use this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

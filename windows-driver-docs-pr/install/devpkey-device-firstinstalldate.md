@@ -52,8 +52,7 @@ The DEVPKEY_Device_FirstInstallDate device property specifies the time stamp whe
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp that specifies when the device instance was first installed in the system.
 
@@ -63,8 +62,7 @@ Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp th
 
 You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

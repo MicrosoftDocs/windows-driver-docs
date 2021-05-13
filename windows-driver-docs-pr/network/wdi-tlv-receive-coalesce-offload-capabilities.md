@@ -52,8 +52,7 @@ The size (in bytes) of the below values.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

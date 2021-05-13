@@ -56,8 +56,7 @@ The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
 
 The property value (operation data) is a KS\_AM\_SimpleRateChange structure that describes a simple rate change for an MPEG-2 stream, such as fast-forward or rewind.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,13 +56,11 @@ The KSPROPERTY\_VIDEOCONTROL\_MODE property controls the mode of image productio
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_CAPS\_S structure that specifies the video-control capabilities of a minidriver, such as image flipping or event triggering abilities.
 
-Remarks
--------
+## Remarks
 
 The **Mode** member of the KSPROPERTY\_VIDEOCONTROL\_MODE\_S structure specifies the video control mode.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -32,13 +32,11 @@ The numeric value of a USBD status code.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 USBD status codes are defined in Usb.h.
 
-Examples
---------
+## Examples
 
 The following example passes the numeric value 0x80000200 to the **!usbdstatus** command. The command returns the name of the status code, USBD\_STATUS\_INVALID\_URB\_FUNCTION.
 

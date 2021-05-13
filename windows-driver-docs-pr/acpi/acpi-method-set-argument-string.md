@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a string value.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 void ACPI_METHOD_SET_ARGUMENT_STRING(
@@ -22,8 +21,7 @@ void ACPI_METHOD_SET_ARGUMENT_STRING(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Argument*   
 A pointer to an ACPI\_METHOD\_ARGUMENT structure.
@@ -31,18 +29,15 @@ A pointer to an ACPI\_METHOD\_ARGUMENT structure.
 *StrData*   
 A pointer to a NULL-terminated ASCII string.
 
-Return value
-------------
+## Return value
 
 This macro does not return a value.
 
-Remarks
--------
+## Remarks
 
 A driver can use this macro to set the members of an ACPI\_METHOD\_ARGUMENT structure that supplies a NULL-terminated ASCII string.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

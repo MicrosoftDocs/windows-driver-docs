@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE (single 'array'/vector value)
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES** property.
 
@@ -82,8 +81,7 @@ The WIA minidriver can extend this list with additional custom values defined as
 
 This property is required for all Patch Code Reader items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

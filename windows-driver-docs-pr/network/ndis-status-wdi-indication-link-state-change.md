@@ -34,8 +34,7 @@ In Station and P2P Client cases, the Peer MAC Address is set to the BSSID of the
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

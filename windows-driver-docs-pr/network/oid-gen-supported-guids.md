@@ -29,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 Each structure in the array specifies the mapping of a custom GUID (globally unique identifier) to either a custom OID or to an NDIS\_STATUS that the miniport driver sends through the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function.
 
@@ -110,8 +109,7 @@ NDIS also translates changes in NIC status into GUIDs that are recognized by WMI
 
 If a miniport driver supports customs GUIDs, it must support OID\_GEN\_SUPPORTED\_GUIDS. This OID returns to NDIS the mapping of custom GUIDs to custom OIDs or NDIS\_STATUS strings. After querying the miniport driver using OID\_GEN\_SUPPORTED\_GUIDS, NDIS registers the miniport driver's custom GUIDs with WMI.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

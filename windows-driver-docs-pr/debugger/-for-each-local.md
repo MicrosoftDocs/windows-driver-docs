@@ -60,8 +60,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
 For more information about how to display and change local variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!for\_each\_local** extension lists local variables. For more information about the local variables, use the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command.
 

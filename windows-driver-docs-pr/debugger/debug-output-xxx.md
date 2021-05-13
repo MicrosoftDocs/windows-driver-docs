@@ -100,8 +100,7 @@ The possible values include the following.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

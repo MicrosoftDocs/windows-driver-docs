@@ -30,8 +30,7 @@ The PDC\_LOCK\_WATCHDOG\_LIVEDUMP bug check has a value of 0x0000017C. This indi
 |4| Reserved. |
 
 
-## Cause
------
+## ## Cause
 A thread has been holding the PDC lock for too long. A livedump is created to provide information to investigate. 
 
 (This code can never be used for a real bugcheck.)
@@ -42,8 +41,7 @@ A thread has been holding the PDC lock for too long. A livedump is created to pr
 Use the debugger [!thread](-thread.md) command to display the thread holding the lock that is provided in parameter 1.  Analyze that code to determine why it is holding the lock beyond the timeout period.
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

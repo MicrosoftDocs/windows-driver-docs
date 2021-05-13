@@ -57,8 +57,7 @@ To use VRAM transport, a capture minidriver must support this property.
 
 A KSPROPERTY\_DISPLAY\_ADAPTER\_GUID property returns STATUS\_SUCCESS to indicate that it has completed successfully. If the Property Type Value is incorrect, it returns STATUS\_INVALID\_PARAMETER.
 
-Remarks
--------
+## Remarks
 
 The minidriver should return the adapter identifier of the first head on the GPU.
 
@@ -66,8 +65,7 @@ The capture GUID uniquely identifies a VRAM subsystem with which the capture dev
 
 AVStream matches this GUID with the GUID of the downstream render pin to verify that both capture and render pins are on the same graphics adapter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

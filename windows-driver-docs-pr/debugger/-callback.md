@@ -57,8 +57,7 @@ This extension command can only be used with an x86-based target computer.
 
 For information about system traps, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 If the system has not experienced a system trap, this extension will not produce useful data.
 

@@ -60,15 +60,13 @@ The PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000000CC. T
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 The Driver Verifier Special Pool option has caught the system accessing memory which was earlier freed. This usually indicates a system-driver synchronization problem.
 
 For information about the special pool, consult the Driver Verifier section of the Windows Driver Kit.
 
-Remarks
--------
+## Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 

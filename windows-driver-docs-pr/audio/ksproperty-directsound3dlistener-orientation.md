@@ -60,13 +60,11 @@ The property value (operation data) is a structure of type KSDS3D\_LISTENER\_ORI
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_ORIENTATION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetOrientation** and **IDirectSound3DListener::SetOrientation** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_GetPersistentBinding method retrieves the bindings that an HBA miniport driver uses. These bindings map the OS-specific LUN information to the fibre channel protocol (FCP) identifiers for the logical units.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_GetPersistentBinding(
@@ -34,8 +33,7 @@ void SM_GetPersistentBinding(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the port whose persistent bindings will be retrieved.
@@ -58,18 +56,15 @@ The total number of persistent bindings that are retrieved by the SM\_GetPersist
 *Bindings*   
 An array of structures of type MS\_SMHBA\_BINDINGENTRY that describe an HBA's bindings between the operating system and the fibre channel protocol (FCP) identifiers.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

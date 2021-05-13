@@ -21,8 +21,7 @@ If the driver sends any requests while it holds a spinlock, it could cause a dea
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,16 +46,14 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)
 [**WdfSpinLockAcquire**](/previous-versions/windows/hardware/drivers/ff550040(v=vs.85))
 [**WdfSpinLockRelease**](/previous-versions/windows/hardware/drivers/ff550044(v=vs.85))
 [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)
 [**KeReleaseSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock)
-See also
---------
+## See also
 
 [Completing I/O Requests](../wdf/completing-i-o-requests.md)
 [Synchronizing Cancel and Completion Code](../wdf/synchronizing-cancel-and-completion-code.md)

@@ -72,8 +72,7 @@ Prefixes each line of disassembly with the line number of the source code.
 
 For a description of assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 Using **.asm** by itself displays the current state of the options.
 

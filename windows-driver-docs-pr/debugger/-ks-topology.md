@@ -58,8 +58,7 @@ Not currently available.
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 For help, issue a **!ks.topology** command with no arguments.
 

@@ -54,13 +54,11 @@ The KSPROPERTY\_NUM\_SOURCES property specifies the number of input pins on the 
 
  
 
-Remarks
--------
+## Remarks
 
 When making a get request, the client receives the number of available source pins in the **Value** member of the property descriptor structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

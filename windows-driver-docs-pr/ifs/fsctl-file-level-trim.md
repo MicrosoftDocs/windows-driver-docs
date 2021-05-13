@@ -47,8 +47,7 @@ A pointer to an optional [**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drive
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. This value must be at least **sizeof**([**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)) if **FILE\_LEVEL\_TRIM\_OUTPUT** is included in *OutputBuffer*. Otherwise, this is set to 0.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or possibly one of the following values.
 
@@ -93,8 +92,7 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 Performing trim on certain storage devices can significantly improve their future write performance. Trim also returns resources to the allocation pool in storage systems that are thinly provisioned. When files are deleted on a virtual disk, the size of the virtual disk file itself is not changed. The data ranges freed on the virtual disk are not trimmed on the physical storage where the virtual disk file resides. A virtual disk device can notify the file system that certain data ranges in a virtual disk file can be trimmed on the physical storage device with an **FSCTL\_FILE\_LEVEL\_TRIM** request. The file system will then issue a trim request to the physical storage. An **FSCTL\_FILE\_LEVEL\_TRIM** request could also be issued by service applications managing database or memory swap files.
 
@@ -114,8 +112,7 @@ With sparse files (files with the **ATTRIBUTE\_FLAG\_SPARSE** attribute set), a 
 
 When included in *OutputBuffer*, the **NumRangesProcessed** member of the [**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_output) will indicate the number of trim ranges successfully processed. If an error occurs during the processing of the trim ranges, **NumRangesProcessed** will specify the starting index of the remaining unprocessed ranges, ending at the **NumRanges** member of [**FILE\_LEVEL\_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) - 1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

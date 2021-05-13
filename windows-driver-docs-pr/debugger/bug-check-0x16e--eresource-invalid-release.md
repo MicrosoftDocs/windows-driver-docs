@@ -33,8 +33,7 @@ The ERESOURCE\_INVALID\_RELEASE bug check has a value of 0x0000016E. This indica
 
  
 
-Cause
------
+## Cause
 
 This bugcheck will hit if a call to ExSetOwnerPointerEx was skipped by the API client (if a cross-thread release was intended) or if the caller accidentally passed in a value other that supplied by ExGetCurrentResourceThread.
 

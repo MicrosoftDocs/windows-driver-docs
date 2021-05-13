@@ -44,13 +44,11 @@ The KSCATEGORY_NETWORK [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_NETWORK to indicate to the operating system that the devices support the KSCATEGORY_NETWORK functional category.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_GETCONNECTINFO property retrieves all possible video p
 
 The property value (operation data) is a DDVIDEOPORTCONNECT structure that describes the configuration of a video port connection.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -58,8 +58,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 
 For more general information about threads, see [Threads and Processes](controlling-threads-and-processes.md). For more information about manipulating or obtaining information about threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 If no arguments are supplied, the debugger displays a list of all threads, along with thread wait states. This is equivalent to entering [**!thread @\#Thread 2**](-process.md) as the *CommandString* value.
 

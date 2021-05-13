@@ -47,8 +47,7 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE](ndis-status-wdi-indication-dot11-reset-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

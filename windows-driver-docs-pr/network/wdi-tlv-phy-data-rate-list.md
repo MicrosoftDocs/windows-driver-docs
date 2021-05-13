@@ -44,8 +44,7 @@ WDI\_DATA\_RATE\_LIST consists of the following elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -52,8 +52,7 @@ The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a search has been comp
 
  
 
-Remarks
--------
+## Remarks
 
 Clients might register for this event when searching for a particular track, for instance, in order to be notified when the search completes.
 

@@ -75,8 +75,7 @@ Specifies the address at which execution stops. This address must match the exac
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **ta** command causes the target to begin executing. This execution continues until the specified instruction is reached or a breakpoint is encountered.
 

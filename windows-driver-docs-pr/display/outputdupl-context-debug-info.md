@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _OUTPUTDUPL_CONTEXT_DEBUG_INFO {
@@ -33,8 +32,7 @@ typedef struct _OUTPUTDUPL_CONTEXT_DEBUG_INFO {
 } OUTPUTDUPL_CONTEXT_DEBUG_INFO;
 ```
 
-Members
--------
+## Members
 
 **Status**
 
@@ -48,8 +46,7 @@ Members
 
 **ProcessName**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

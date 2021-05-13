@@ -52,8 +52,7 @@ The DEVPKEY_Device_DriverRank device property represents the rank of the driver 
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverRank.
 
@@ -63,8 +62,7 @@ Windows Server 2003, Windows XP, and Windows 2000 support this property, but do 
 
 For information about driver rank, see [How Windows Ranks Drivers](./how-setup-ranks-drivers--windows-vista-and-later-.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

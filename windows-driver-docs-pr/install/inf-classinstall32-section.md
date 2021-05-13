@@ -114,8 +114,7 @@ Is valid in this section but almost never used.
 
 For more information, see [**INF UpdateIniFields Directive**](inf-updateinifields-directive.md).
 
-Remarks
--------
+## Remarks
 
 You should include a **ClassInstall32** section in a device INF file only to install a new custom device setup class. INF files for devices in an installed class, whether a [system-supplied device setup class](./system-defined-device-setup-classes-reserved-for-system-use.md) or a custom class, should not include a **ClassInstall32** section. Because the system processes a **ClassInstall32** section only if a class is not already installed, you cannot use a **ClassInstall32** section to reinstall or change the settings for a class that is already installed. In particular, you cannot use a **ClassInstall32** section to add a class co-installer or a class filter driver for a class that is already installed. For information about how to install co-installers and filter drivers, see [Writing a Co-installer](writing-a-co-installer.md) and [Installing a Filter Driver](installing-a-filter-driver.md).
 
@@ -165,8 +164,7 @@ Setting the predefined **SilentInstall**, **NoDisplayClass**, and **NoInstallCla
 
 A **ClassInstall32** section can contain **AddReg** directives to set the **DeviceType**, **DeviceCharacteristics**, and **Security** for devices of its setup class. See the [**INF AddReg Directive**](inf-addreg-directive.md) for more information.
 
-Examples
---------
+## Examples
 
 This example shows the **ClassInstall32** section, along with the named section it references with the [**AddReg directive**](inf-addreg-directive.md), of the INF for the system display class installer.
 

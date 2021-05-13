@@ -40,8 +40,7 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For help in starting a trace session, see "Tracelog" in the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 Before you use this extension, start a trace session, and specify that the trace messages should be sent to the debugger. For example, if you use [**!wmitrace.start**](-wmitrace-start.md) to start the session, use the **-kd** parameter. If you use Tracelog to start the trace session, use its **-kd** parameter. Tracelog (tracelog.exe) is a trace controller included in the Windows Driver Kit.
 

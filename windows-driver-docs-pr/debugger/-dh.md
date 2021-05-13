@@ -67,8 +67,7 @@ Ntsdexts.dll</td>
 
  
 
-Remarks
--------
+## Remarks
 
 The [**!lmi**](-lmi.md) extension extracts the most important information from the image header and displays it in a concise summary format. That extension is frequently more useful than **!dh**.
 

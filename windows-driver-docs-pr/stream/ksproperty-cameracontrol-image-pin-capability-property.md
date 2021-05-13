@@ -52,8 +52,7 @@ User-mode clients use this property to identify whether the camera's image pin a
 
  
 
-Remarks
--------
+## Remarks
 
 If a driver implements this property and identifies that the image pin is exclusive with the record pin, the media streaming pipeline prevents a "take photo" command from coming to the driver while a recording is taking place.
 

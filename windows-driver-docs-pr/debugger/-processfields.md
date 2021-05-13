@@ -49,8 +49,7 @@ The **!processfields** extension displays the names and offsets of the fields wi
 
 For information about the EPROCESS block, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the EPROCESS structure directly:
 

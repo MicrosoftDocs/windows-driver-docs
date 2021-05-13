@@ -53,8 +53,7 @@ The DEVPKEY_Device_ProblemStatus device property is an NTSTATUS value that is se
 
  
 
-Remarks
--------
+## Remarks
 
 For info on finding problem status in Device Manager or the kernel debugger, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
 
@@ -62,8 +61,7 @@ For more info about NTSTATUS values, see [Using NTSTATUS Values](../kernel/using
 
 You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ProblemStatus.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

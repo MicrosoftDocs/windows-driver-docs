@@ -74,8 +74,7 @@ Causes the display to include Wait context block information.
 
 For information about Driver Verifier, see the Windows Driver Kit (WDK) documentation. For information about DMA, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich David Solomon.
 
-Remarks
--------
+## Remarks
 
 Invalid arguments (for example, **!dma 1**) generate a brief help text.
 

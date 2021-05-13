@@ -172,13 +172,11 @@ The number of bytes in multicast/functional packets that are transmitted without
 <a href="" id="ifhcoutbroadcastoctets"></a>**ifHCOutBroadcastOctets**  
 The number of bytes in broadcast packets that are transmitted without errors. This count is the same value that [OID\_GEN\_BROADCAST\_BYTES\_XMIT](oid-gen-broadcast-bytes-xmit.md) returns.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must implement the statistics counters and report the correct statistics values. The statistics counters are unsigned 64-bit values. The miniport driver returns the statistics in an NDIS\_STATISTICS\_INFO structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

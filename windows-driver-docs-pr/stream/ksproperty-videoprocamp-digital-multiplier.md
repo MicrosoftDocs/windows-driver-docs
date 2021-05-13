@@ -56,8 +56,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER property specifies the amount 
 
 The property value (operation data) is a LONG that specifies a camera's digital multiplier setting. The value specifies the digital multiplier value that the camera applies to the image.
 
-Remarks
--------
+## Remarks
 
 When making a set request, the client should supply a digital multiplier value in the **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S structure.
 
@@ -65,8 +64,7 @@ To determine the range of digital multiplier values supported by the device, an 
 
 When making a get request, the client receives a value of type LONG in the **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

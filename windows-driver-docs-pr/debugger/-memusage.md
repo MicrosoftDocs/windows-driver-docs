@@ -127,8 +127,7 @@ Control Valid Standby Dirty Shared Locked PageTables  name
 
 The first column displays the address of the control area structure that describes each mapped structure. Use the [**!ca**](-ca.md) extension command to display these control areas.
 
-Remarks
--------
+## Remarks
 
 You can use the [**!vm**](-vm.md) extension command to analyze virtual memory use. This extension is typically more useful than **!memusage**. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 

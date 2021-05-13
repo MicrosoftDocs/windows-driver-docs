@@ -21,8 +21,7 @@ The **.rrestart** command registers the debugging session for restart in case of
 .rrestart
 ```
 
-Remarks
--------
+## Remarks
 
 This command does not work for elevated debugger sessions.
 

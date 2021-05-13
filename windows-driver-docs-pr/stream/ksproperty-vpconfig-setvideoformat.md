@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video format. The for
 
 The property value (operation data) is a DDPIXELFORMAT structure that specifies the video format to use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

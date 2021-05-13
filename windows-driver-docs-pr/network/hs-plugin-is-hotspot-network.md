@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_IS\_HOTSPOT\_NETWORK** function is called by the host to determine if a specified network is a hotspot network.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_IS_HOTSPOT_NETWORK)(
@@ -25,8 +24,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pNetworkIdentity* \[in\]  
 Pointer to the [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure for the network from which the device is to be disconnected.
@@ -37,13 +35,11 @@ An [**eHS\_NETWORK\_STATE**](ehs-network-state.md) enumeration value that indica
 *\*pNetworkProfile* \[out, optional\]  
 Pointer to the [**HS\_NETWORK\_PROFILE**](hs-network-profile.md) structure for the network.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

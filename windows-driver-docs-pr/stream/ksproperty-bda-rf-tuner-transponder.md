@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER to inform the tuner node of 
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -63,8 +62,7 @@ The property value specifies the transponder number to set.
 
 Some tuning spaces have all of the information about how to acquire a frequency imbedded in hardware. These tuning spaces specify a transponder number. This property informs the tuner node of this transponder number. The tuner hardware can then automatically determine the tuning characteristics needed to acquire the intermediate frequency. In this case, the other properties in the KSPROPSETID\_BdaFrequencyFilter property set are set to −1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

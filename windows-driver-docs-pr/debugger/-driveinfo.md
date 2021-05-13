@@ -52,8 +52,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 The drive information displayed by this extension is obtained by querying the underlying file system; for example:
 

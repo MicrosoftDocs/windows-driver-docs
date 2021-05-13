@@ -18,8 +18,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
  
 
-Remarks
--------
+## Remarks
 
 When NDIS handles the OID query request of OID\_QOS\_OPERATIONAL\_PARAMETERS successfully, it returns the operational NDIS QoS parameters that it had cached from the previous [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](./ndis-status-qos-operational-parameters-change.md) status indication that was issued by the miniport driver. The driver issues this status indication to report on the initial set of operational NDIS QoS parameters. The driver also issues this status indication whenever the operational NDIS QoS parameters change.
 
@@ -68,8 +67,7 @@ NDIS returns one of the following status codes.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -62,13 +62,11 @@ The **KSPROPERTY\_ONESHOT\_RECONNECT** property returns STATUS\_SUCCESS if the r
 
  
 
-Remarks
--------
+## Remarks
 
 You can implement the [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md) pin property in your driver. This implementation allows you to check the connection status of the endpoint after you make a **KSPROPERTY\_ONESHOT\_RECONNECT** property request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

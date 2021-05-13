@@ -117,8 +117,7 @@ The default size of a socket's receive buffer is transport-specific. Some transp
 
 If this socket option is set on a listening socket, all incoming connections that are accepted on that listening socket have their receive buffer set to the same size that is specified for the listening socket. A WSK application can call the **WskControlSocket** function on an accepted socket to override the size of the receive buffer that was inherited from the listening socket.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

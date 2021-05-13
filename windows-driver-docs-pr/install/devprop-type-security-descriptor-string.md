@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING identifier represents the base-data-type identifier that indicates the data type is a NULL-terminated Unicode string that contains a security descriptor in the Security Descriptor Definition Language (SDDL) format.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING can be combined only with the [**DEVPROP_TYPEMOD_LIST**](devprop-typemod-list.md) property-data-type modifier.
 
@@ -32,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRIN
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

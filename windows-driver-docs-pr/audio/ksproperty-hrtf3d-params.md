@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type KSDS3D\_HRTF\_PARAMS\
 
 A KSPROPERTY\_HRTF3D\_PARAMS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

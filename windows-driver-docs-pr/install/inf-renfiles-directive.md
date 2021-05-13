@@ -62,8 +62,7 @@ Specifies the new name to be given to the file on the destination.
 <a href="" id="old-source-file-name"></a>*old-source-file-name*  
 Specifies the old name of the file.
 
-Remarks
--------
+## Remarks
 
 **Important**  This directive must be used carefully. We highly recommend that you do not use the **RenFiles** directive in the INF file for a Plug and Play (PnP) function driver.
 
@@ -82,8 +81,7 @@ The [**DestinationDirs**](inf-destinationdirs-section.md) section of the INF fil
 
  
 
-Examples
---------
+## Examples
 
 This example shows a section referenced by a **RenFiles** directive.
 

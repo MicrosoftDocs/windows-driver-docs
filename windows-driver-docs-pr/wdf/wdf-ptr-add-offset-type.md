@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The **WDF_PTR_ADD_OFFSET_TYPE** macro adds an offset value to an address and returns the resulting address cast to the specified type.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 _type WDF_PTR_ADD_OFFSET_TYPE(
@@ -23,8 +22,7 @@ _type WDF_PTR_ADD_OFFSET_TYPE(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_ptr*   
 Specifies an address.
@@ -35,13 +33,11 @@ Specifies the offset value in bytes.
 *_type*   
 Specifies the data type to return.
 
-Return value
-------------
+## Return value
 
 Returns a pointer to the resulting address. You select the data type of the return value in the *_type* parameter of the macro.
 
-Remarks
--------
+## Remarks
 
 The macro is defined as follows:
 
@@ -50,8 +46,7 @@ The macro is defined as follows:
     ((_type) (((PUCHAR) (_ptr)) + (_offset)))
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

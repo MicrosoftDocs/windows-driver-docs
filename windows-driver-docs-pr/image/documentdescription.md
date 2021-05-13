@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **DocumentDescription** element defines all of the description attributes that pertain to the basic creation information of the currently identified [**Document**](document.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentDescription>
@@ -26,8 +25,7 @@ Usage
 </wscn:DocumentDescription>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

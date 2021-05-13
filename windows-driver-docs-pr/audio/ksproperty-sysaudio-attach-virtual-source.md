@@ -60,13 +60,11 @@ The property descriptor (instance data) is a structure of type SYSAUDIO\_ATTACH\
 
 A KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property attaches a virtual source to a pin instance on the virtual audio device. For more information, see [**KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE**](ksproperty-sysaudio-create-virtual-source.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

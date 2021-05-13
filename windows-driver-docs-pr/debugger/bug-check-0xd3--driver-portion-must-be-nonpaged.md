@@ -60,13 +60,11 @@ The DRIVER\_PORTION\_MUST\_BE\_NONPAGED bug check has a value of 0x000000D3. Thi
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 This bug check is usually caused by drivers that have incorrectly marked their own code or data as pageable.
 
-Resolution
-----------
+## Resolution
 
 To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace.
 

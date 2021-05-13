@@ -71,8 +71,7 @@ If the **WskControlSocket** function returns STATUS\_BUFFER\_OVERFLOW, the varia
 
 The [**SIO\_ADDRESS\_LIST\_CHANGE**](sio-address-list-change.md) socket I/O control operation allows a WSK application to be notified when there has been a change to the list of local transport addresses for a socket's address family.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

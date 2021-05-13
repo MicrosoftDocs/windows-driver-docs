@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-Write
 
-Remarks
--------
+## Remarks
 
 The valid values for this property are shown in the following table.
 
@@ -40,8 +39,7 @@ The valid values for this property are shown in the following table.
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_PADDING** property is optional for the Imprinter/Endorser items. When this property is not supported, the printer/endorser device does not support padding.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

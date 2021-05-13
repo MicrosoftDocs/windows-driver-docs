@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddString method adds a new response of type BIDI\_STRING to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddString(
@@ -29,8 +28,7 @@ HRESULT AddString(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +36,11 @@ The schema.
 *bstrValue* \[in\]  
 The string response.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

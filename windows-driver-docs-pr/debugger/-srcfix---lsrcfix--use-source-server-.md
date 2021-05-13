@@ -62,8 +62,7 @@ The **.srcfix** command is available on all debuggers. The **.lsrcfix** command 
 
 For more information on setting the local source path for a remote client, see [**WinDbg Command-Line Options**](windbg-command-line-options.md). For details about [SrcSrv](srcsrv.md), see [Using a Source Server](using-a-source-server.md). For details on the source path and the local source path, see [Source Path](source-path.md). For more information about commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).
 
-Remarks
--------
+## Remarks
 
 When you add `srv*` to the source path, the debugger uses [SrcSrv](srcsrv.md) to retrieve source files from locations specified in the target modules' symbol files. Using `srv*` in the source path is fundamentally different from using `srv*` in the symbol path. In the symbol path, you can specify a symbol server location along with the `srv*` (for example, `.sympath SRV*https://msdl.microsoft.com/download/symbols`). In the source path, srv\* stands alone, separated from all other elements by semicolons.
 

@@ -56,15 +56,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_SATURATION property controls the saturation, or ch
 
 The property value (operation data) is a LONG that specifies a camera's saturation setting. The value of the saturation setting is expressed as gain multiplied by 100.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the saturation setting.
 
 Every video capture minidriver must define a range and default value for this property. The required range must be 0 through 10000. The default value must be 100 (1x).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

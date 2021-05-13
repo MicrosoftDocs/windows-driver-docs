@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_FAST\_IO\_CHECK\_IF\_POSSIBLE.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -35,8 +34,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **FastIoCheckIfPossible**  
 Structure containing the following members.
@@ -53,15 +51,13 @@ Key value associated with a byte-range lock on the target file. If the range to 
 **CheckForReadOperation**  
 Specifies whether this operation is to check for a read or write operation. It is set to **TRUE** for a read operation and **FALSE** for a write operation.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_FAST\_IO\_CHECK\_IF\_POSSIBLE operations contains the parameters for a **FastIoCheckIfPossible** operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
 IRP\_MJ\_FAST\_IO\_CHECK\_IF\_POSSIBLE is a fast I/O operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

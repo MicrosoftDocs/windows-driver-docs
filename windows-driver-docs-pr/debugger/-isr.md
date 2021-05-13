@@ -66,8 +66,7 @@ Displays details about all ISR fields, including those that are ignored or reser
 
 This extension command can only be used with an Itanium target computer.
 
-Remarks
--------
+## Remarks
 
 Here are a couple of examples of output from this extension:
 

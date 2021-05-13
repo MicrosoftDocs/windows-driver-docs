@@ -18,8 +18,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
  
 
-Remarks
--------
+## Remarks
 
 The [**NDIS\_QOS\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure contains information about the NDIS QoS hardware capabilities of a network adapter. These capabilities can include hardware capabilities that are currently disabled by INF file settings or through the **Advanced** properties page.
 
@@ -78,8 +77,7 @@ NDIS handles the OID query request of OID\_QOS\_HARDWARE\_CAPABILITIES request f
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

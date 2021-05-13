@@ -64,8 +64,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 A cyclic redundancy check (CRC) check on the memory range has failed.
 

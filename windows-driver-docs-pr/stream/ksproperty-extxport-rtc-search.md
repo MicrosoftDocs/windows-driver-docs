@@ -56,15 +56,13 @@ The KSPROPERTY\_EXTXPORT\_RTC\_SEARCH property searches to a relative time count
 
 The property value (operation data) is a DWORD that specifies the timecode, in hour:minute:second:frame, to search to on a tape.
 
-Remarks
--------
+## Remarks
 
 The **dwTimecode** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the relative time counter setting to search to.
 
 This method is defined, but not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

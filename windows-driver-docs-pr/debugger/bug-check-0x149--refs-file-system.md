@@ -42,8 +42,7 @@ The REFS\_FILE\_SYSTEM bug check has a value of 0x00000149. This indicates that 
 
  
 
-Resolution
-----------
+## Resolution
 
 If you see RefsExceptionFilter on the stack then the 2nd and 3rd parameters are the exception record and context record. Do a [**.exr**](-exr--display-exception-record-.md) on the 2nd parameter to view the exception information, then do a [**.cxr**](-cxr--display-context-record-.md) on the 3rd parameter and [**kb**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  to obtain a more informative stack trace.
 

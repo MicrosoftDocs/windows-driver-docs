@@ -102,8 +102,7 @@ It is reset to false when:
 
 The property value is a BOOL indicating the arming state of the detector.
 
-Remarks
--------
+## Remarks
 
 The OS sets this true to engage the detector.
 
@@ -111,8 +110,7 @@ Setting this true while no keyword patterns are set ([**KSPROPERTY\_SOUNDDETECTO
 
 Note: If this property is true, subsequently setting [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) automatically resets this to false, as mentioned above.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

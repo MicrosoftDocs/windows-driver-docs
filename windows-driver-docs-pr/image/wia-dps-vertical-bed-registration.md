@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_DPS\_VERTICAL\_BED\_REGISTRATION property.
 
@@ -62,8 +61,7 @@ The following table describes the constants that are valid with the WIA\_DPS\_VE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

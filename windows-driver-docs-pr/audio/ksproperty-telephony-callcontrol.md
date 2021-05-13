@@ -55,8 +55,7 @@ The KSPROPERTY\_TELEPHONY\_CALLCONTROL property is used to start and terminate a
 
 A KSPROPERTY\_TELEPHONY\_CALLCONTROL property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_TELEPHONY\_CALLCONTROL contains information about CallType and CallControlOp.
 
@@ -64,8 +63,7 @@ TELEPHONY\_CALLCONTROLOP\_ENABLE will start cellular call from audio driver pers
 
 TELEPHONY\_CALLCONTROLOP\_DISABLE will terminate cellular call from audio driver perspective, update jack state for associated cellular bidi endpoint to unplugged and update call state to Disabled. Call type is ignored in this case.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

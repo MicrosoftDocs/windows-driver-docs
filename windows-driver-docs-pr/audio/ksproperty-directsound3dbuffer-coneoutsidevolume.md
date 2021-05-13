@@ -60,8 +60,7 @@ The property value (operation data) is of type LONG and specifies the cone-outsi
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEOUTSIDEVOLUME property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 For more information about the cone-outside sound volume for a DirectSound 3D buffer, see the following in the Microsoft Windows SDK documentation:
 
@@ -69,8 +68,7 @@ For more information about the cone-outside sound volume for a DirectSound 3D bu
 
 -   The **IDirectSound3DBuffer::GetOutsideVolume** and **IDirectSound3DBuffer::SetOutsideVolume** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

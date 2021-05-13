@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The*MRxCreate* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that the network mini-redirector create a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxCreate;
@@ -31,14 +30,12 @@ NTSTATUS MRxCreate(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxCreate* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -95,8 +92,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxCreate* is called by RDBSS to request that the network mini-redirector open a file system object across the network. This call is issued by RDBSS in response to receiving an [**IRP\_MJ\_CREATE**](irp-mj-create.md) request.
 
@@ -114,8 +110,7 @@ If the *MRxCreate* request was for a file overwrite and *MRxCreate* returned STA
 
 Before returning, *MRxCreate* must set the **CurrentIrp-&gt;IoStatus.Information** member of the RX\_CONTEXT structure pointed to by the *RxContext* parameter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

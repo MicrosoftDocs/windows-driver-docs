@@ -94,8 +94,7 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 
 The property value is a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure followed by a sequence of 64-bit aligned detection patterns. Each pattern starts with a [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader) followed by the pattern payload.
 
-Remarks
--------
+## Remarks
 
 The driver shall not complete the “set” request until:
 
@@ -109,8 +108,7 @@ The OS requires this behavior to avoid race conditions between a detected a keyw
 
 The OS waits at least 2 seconds for this request to complete.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -20,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. For NDIS interface providers only.
 
-Remarks
--------
+## Remarks
 
 An [NDIS network interface](./ndis-network-interfaces2.md) provider can assign unique alias strings for its interfaces. If the name should remain associated with the same interface, the provider can make the strings persistent after the computer restarts and reinitializations.
 
@@ -29,8 +28,7 @@ Only NDIS network interface providers, and therefore not miniport drivers or fil
 
 If the interface provider returns NDIS\_STATUS\_SUCCESS, the result of the query is an alias string that is returned in an NDIS\_IF\_COUNTED\_STRING structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

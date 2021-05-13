@@ -31,8 +31,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 For NDIS 6.0 and later miniport drivers, the query is not requested and the set is mandatory. NDIS handles the query for miniport drivers. The miniport driver reports the packet filter information during initialization.
 
@@ -174,8 +173,7 @@ For more information about the NetMon and ExtAP operating modes, see the followi
 
 [Extensible Access Point Operation Mode](/previous-versions/windows/hardware/wireless/extensible-access-point-operation-mode)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

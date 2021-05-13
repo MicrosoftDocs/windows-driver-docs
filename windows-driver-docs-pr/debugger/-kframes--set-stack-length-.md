@@ -52,8 +52,7 @@ Specifies the number of stack frames to display when a stack trace command is us
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the **.kframes** command to set the default length of a stack trace display. This length controls the number of frames that the [**k, kb, kp, kP, and kv**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands display and the number of DWORD\_PTRs that the **kd** command displays.
 

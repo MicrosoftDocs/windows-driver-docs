@@ -59,8 +59,7 @@ The property value (instance data) is a KSJACK\_SINK\_INFORMATION structure.
 
 A KSPROPERTY\_JACK\_SINK\_INFO property request returns information in a **KSJACK\_SINK\_INFORMATION** structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

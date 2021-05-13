@@ -20,8 +20,7 @@ ms.localizationpriority: medium
 
 The KSINTERFACE\_MEDIA\_WAVE\_QUEUED interface is private for Windows XP and later. It should not be used by the minidriver.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

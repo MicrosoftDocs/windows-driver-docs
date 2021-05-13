@@ -24,8 +24,7 @@ Reserved for system use. Do not use it in your driver.
 
  
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DDDI_MULITPLANE_OVERLAY_FILTER {
@@ -35,8 +34,7 @@ typedef struct _D3DDDI_MULITPLANE_OVERLAY_FILTER {
 } D3DDDI_MULTIPLANE_OVERLAY_FILTER;
 ```
 
-Members
--------
+## Members
 
 **FilterType**
 
@@ -44,8 +42,7 @@ Members
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

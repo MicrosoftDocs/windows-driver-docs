@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_MODULATION\_TYPE to control the demodulator type su
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value from the ModulationType enumerated type identifies a demodulator type.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

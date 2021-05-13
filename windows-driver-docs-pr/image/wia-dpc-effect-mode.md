@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_DPC\_EFFECT\_MODE property.
 
@@ -62,8 +61,7 @@ The following table describes the constants that are valid with the WIA\_DPC\_EF
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

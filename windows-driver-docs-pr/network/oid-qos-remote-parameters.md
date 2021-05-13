@@ -18,8 +18,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
  
 
-Remarks
--------
+## Remarks
 
 When NDIS handles the OID request of OID\_QOS\_REMOTE\_PARAMETERS successfully, it returns the remote NDIS QoS parameters that it had cached from the previous [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](./ndis-status-qos-remote-parameters-change.md) status indication that was issued by the miniport driver. The driver issues this status indication to report on the initial set of remote NDIS QoS parameters. The driver also issues this status indication whenever the remote NDIS QoS parameters change.
 
@@ -68,8 +67,7 @@ NDIS returns one of the following status codes.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,13 +54,11 @@ User-mode clients use this property to get or set a camera's video stabilization
 
  
 
-Remarks
--------
+## Remarks
 
 The property ID is **KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROPERTY\_ID**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **IPAddress** property enables an ASP Web page to obtain a printer's IP address.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_IPAddress(
@@ -31,14 +30,12 @@ HRESULT get_IPAddress(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to an IP address string.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -83,8 +80,7 @@ objPrinter.Open strPrinter
 PrinterIP = objPrinter.IPAddress
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 **\_RxAllocatePoolWithTag** allocates memory from a pool with a four-byte tag at the beginning of the block that can be used to help catch instances of memory trashing.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID* _RxAllocatePoolWithTag(
@@ -32,8 +31,7 @@ VOID* _RxAllocatePoolWithTag(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Type*   
 The type of the pool to be allocated. This parameter can be one of the following enumeration values for POOL\_TYPE:
@@ -56,13 +54,11 @@ A pointer to the source file name where the memory allocation occurred. This par
 *LineNumber*   
 The line number in the source file where the memory allocation occurred. This parameter is not currently used.
 
-Return value
-------------
+## Return value
 
 **RxAllocatePoolWithTag** returns **NULL** if there is insufficient memory in the free pool to satisfy the request. Otherwise, the routine returns a pointer to the allocated memory.
 
-Remarks
--------
+## Remarks
 
 It is recommended that the **RxAllocatePoolWithTag** macro be called instead of using this routine directly. On retail builds, this macro is defined to call [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag). On checked builds, this macro is defined to call **\_RxAllocatePoolWithTag**.
 
@@ -76,8 +72,7 @@ Memory allocated with **\_RxAllocatePoolWithTag** should be released by calling 
 
 Callers of **\_RxAllocatePoolWithTag** must be executing at IRQL &lt;= DISPATCH\_LEVEL. A caller executing at DISPATCH\_LEVEL must specify a **NonPagedPool** value for the *Type* parameter. A caller executing at IRQL &lt;= APC\_LEVEL can specify any POOL\_TYPE value for the *Type* parameter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

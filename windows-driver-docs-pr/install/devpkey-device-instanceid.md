@@ -52,8 +52,7 @@ The DEVPKEY_Device_InstanceId device property represents the device instance ide
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_Device_InstanceId is set internally by Windows during the installation of a device instance.
 
@@ -61,8 +60,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_InstanceId property key. For information about how to retrieve a device instance identifier on these earlier versions of Windows, see [Retrieving a Device Instance Identifier](./retrieving-a-device-instance-identifier.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

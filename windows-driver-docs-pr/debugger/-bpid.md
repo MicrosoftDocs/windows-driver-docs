@@ -78,8 +78,7 @@ Specifies the process ID of the desired process on the target computer. If you a
 
 This extension command is supported on x86-based, x64-based target computers.
 
-Remarks
--------
+## Remarks
 
 This command is especially useful when redirecting input and output from a user-mode debugger to the kernel debugger. It causes the user-mode target application to break into the user-mode debugger, which in turn requests input from the kernel debugger. See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for details.
 

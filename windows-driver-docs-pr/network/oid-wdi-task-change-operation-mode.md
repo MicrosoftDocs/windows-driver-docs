@@ -33,8 +33,7 @@ OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE configures the operation mode for the po
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CHANGE\_OPERATION\_MODE\_COMPLETE](ndis-status-wdi-indication-change-operation-mode-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

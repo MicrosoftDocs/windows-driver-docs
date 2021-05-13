@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device'
 
 The property value (operation data) is a ULONG that specifies the current load medium. For example eject, open tray or closed tray.
 
-Remarks
--------
+## Remarks
 
 The **LoadMedium** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the load medium.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

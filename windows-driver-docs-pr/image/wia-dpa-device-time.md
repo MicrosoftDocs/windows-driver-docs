@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 When the WIA\_DPA\_DEVICE\_TIME property is read, the minidriver should check the device's current clock time and should always return the current time. This property is supported only by devices that have an internal clock. If the device clock can be set, this property is read/write; otherwise, it is read-only. WIA devices report time in a SYSTEMTIME structure (which is described in the Microsoft Windows SDK documentation).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

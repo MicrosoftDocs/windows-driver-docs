@@ -46,8 +46,7 @@ The **!minipkd.help** extension displays help text for the Minipkd.dll extension
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If an error message similar to the following appears, it indicates that the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols.
 

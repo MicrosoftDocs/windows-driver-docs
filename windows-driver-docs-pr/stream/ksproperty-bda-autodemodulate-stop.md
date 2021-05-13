@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_STOP to stop demodulating the signa
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

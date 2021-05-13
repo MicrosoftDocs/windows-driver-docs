@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **RotationValue** element specifies a single rotation value supported by the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:RotationValue>
@@ -26,13 +25,11 @@ Usage
 </wscn:RotationValue>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A numeric value that must be 0, 90, 180, or 270.
 
@@ -60,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **RotationValue** element specifies the number of degrees that the scanner should rotate each image of a scanned document. All rotations are applied in the clockwise direction.
 

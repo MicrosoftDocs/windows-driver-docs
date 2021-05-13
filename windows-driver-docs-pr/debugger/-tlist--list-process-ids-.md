@@ -65,8 +65,7 @@ Specifies the file name to be displayed, or a pattern that the file name of the 
 
 For other methods of displaying processes, see [Finding the Process ID](finding-the-process-id.md).
 
-Remarks
--------
+## Remarks
 
 Each process ID is displayed with an **0n** prefix, to emphasize that the PID is a decimal number.
 

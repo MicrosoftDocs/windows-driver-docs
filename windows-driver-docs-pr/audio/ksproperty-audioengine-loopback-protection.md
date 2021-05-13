@@ -55,15 +55,13 @@ The **KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION** property request allows th
 
 The KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The input buffer that is associated with this property call is populated with an enumeration value of type CONSTRICTOR\_OPTION. So the input buffer is either set to CONSTRICTOR\_OPTION\_DISABLE or CONSTRICTOR\_OPTION\_MUTE.
 
 If there are any active streams with CONSTRICTOR\_OPTION\_MUTE in effect, then the KS loopback tap for this audio output will emit silence. If all the active streams have CONSTRICTOR\_OPTION\_DISABLE in effect (which is the default state), then and only then does the loopback tap contain meaningful data.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

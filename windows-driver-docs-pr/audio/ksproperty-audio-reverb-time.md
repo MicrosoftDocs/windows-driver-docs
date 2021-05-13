@@ -60,8 +60,7 @@ The property value is of type ULONG, and it specifies the number of seconds for 
 
 A KSPROPERTY\_AUDIO\_REVERB\_TIME property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

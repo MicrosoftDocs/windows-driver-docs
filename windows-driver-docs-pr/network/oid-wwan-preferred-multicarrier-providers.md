@@ -22,8 +22,7 @@ On error miniports should set the **uStatus** member of NDIS\_WWAN\_PREFERRED\_M
 
 The **Rssi** and **ErrorRate** members of WWAN\_PROVIDER2 structure should be set if available.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

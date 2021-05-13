@@ -56,13 +56,11 @@ The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of th
 
 The property value (operation data) is a KS\_COPY\_MACROVISION structure the specifies the Macrovision level of the data stream.
 
-Remarks
--------
+## Remarks
 
 For more information about Macrovision level, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

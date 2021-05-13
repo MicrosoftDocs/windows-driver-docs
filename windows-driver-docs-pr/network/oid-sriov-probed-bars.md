@@ -20,8 +20,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 -   An array of ULONG values for each BAR of the PCIe network adapter. The maximum number of elements within this array is PCI\_TYPE0\_ADDRESSES.
 
-Remarks
--------
+## Remarks
 
 The PCI bus driver, which runs in the management operating system of the Hyper-V parent partition, queries the memory or I/O address space requirements of each PCI Base Address Register (BAR) of the network adapter. The PCI bus driver performs this query when it first detects the adapter on the bus.
 
@@ -88,8 +87,7 @@ The PF miniport driver returns one of the following status codes for the query r
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -80,8 +80,7 @@ The adapter should auto-negotiate the duplex state with the link partner. If thi
 <a href="" id="ndis-link-state-pause-functions-auto-negotiated"></a>NDIS\_LINK\_STATE\_PAUSE\_FUNCTIONS\_AUTO\_NEGOTIATED  
 The miniport driver should auto-negotiate the support for pause frames with the other end. If this flag is not set, the miniport driver should use the pause frame support that is specified in the **PauseFunctions** member.
 
-Remarks
--------
+## Remarks
 
 **Note**  Setting OID\_GEN\_LINK\_PARAMETERS can cause a loss of connectivity. Miniport drivers must reconfigure the miniport adapter when this OID is set. For example, the miniport driver can reset the miniport adapter with the resulting loss of existing connections. The specific mechanism for reconfiguration is application dependent.
 
@@ -89,8 +88,7 @@ Remarks
 
 If the link state of the miniport adapter changes because of the OID\_GEN\_LINK\_PARAMETERS set request, the miniport driver should generate an [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication to notify NDIS and overlying drivers of the new link state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -57,13 +57,11 @@ The NTFS\_FILE\_SYSTEM bug check has a value of 0x00000024. This indicates a pro
 
  
 
-Cause
------
+## Cause
 
 One possible cause of this bug check is disk corruption. Corruption in the NTFS file system or bad blocks (sectors) on the hard disk can induce this error. Corrupted hard drive (SATA/IDE) drivers can also adversely affect the system's ability to read and write to disk, thus causing the error.
 
-Resolution
-----------
+## Resolution
 
 **To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 

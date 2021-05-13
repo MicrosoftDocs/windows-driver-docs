@@ -33,8 +33,7 @@ It is expected that the listen channel reported by the driver is honored if list
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

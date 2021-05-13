@@ -33,8 +33,7 @@ The WORKER\_THREAD\_RETURNED\_WHILE\_ATTACHED\_TO\_SILO bug check has a value of
 
  
 
-Cause
------
+## Cause
 
 To investigate use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md)command on parameter 1 to help identify the mis-behaving driver.
 

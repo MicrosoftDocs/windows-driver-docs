@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Component** element identifies the component that the current [**DeviceCondition**](devicecondition.md) or [**ConditionHistoryEntry**](conditionhistoryentry.md) element describes.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Component>
@@ -26,13 +25,11 @@ Usage
 </wscn:Component>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -68,8 +65,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 You can both extend and subset the allowed values for this element.
 

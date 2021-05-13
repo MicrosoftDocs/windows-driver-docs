@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_DATATYPE property to determine the data type of an image. The application writes this property to set the current data type of the image that is about to be transferred.
 
@@ -159,8 +158,7 @@ Check the [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md) property to determine the bit 
 
 The WIA\_IPA\_DATATYPE property usually contains a single value for cameras.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

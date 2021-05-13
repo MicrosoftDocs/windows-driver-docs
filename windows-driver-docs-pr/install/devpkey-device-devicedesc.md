@@ -56,8 +56,7 @@ The DEVPKEY_Device_DeviceDesc device property represents a description of a devi
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_Device_DeviceDesc is set by the *device-description* entry value that is supplied by the [**INF Models section**](./inf-models-section.md) of the INF file that installs a device.
 
@@ -67,8 +66,7 @@ You can retrieve the value of the [**DEVPKEY_NAME**](devpkey-name--device-instan
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DeviceDesc property key. Instead, these earlier versions of Windows use the corresponding SPDRP_DEVICEDESC identifier to access the value of the property. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

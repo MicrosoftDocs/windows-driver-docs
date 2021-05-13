@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **InputMediaSize** element specifies the size of the media to be scanned for the current job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:InputMediaSize>
@@ -26,8 +25,7 @@ Usage
 </wscn:InputMediaSize>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **InputMediaSize** element contains the width and height of the input media to be scanned, specified in the [**Width**](width.md) and [**Height**](height.md) elements, respectively.
 

@@ -49,8 +49,7 @@ Valid wake reason values are:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

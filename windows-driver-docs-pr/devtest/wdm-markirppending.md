@@ -19,8 +19,7 @@ The **MarkIrpPending** rule specifies that whenever a driver dispatch routine ca
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,16 +44,14 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending)
 [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver)
 [**RemoveHeadList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)
-See also
---------
+## See also
 
 [**MarkingInterlockedQueuedIrps**](wdm-markinginterlockedqueuedirps.md)
 [**Synchronizing IRP Cancellation**](../kernel/synchronizing-irp-cancellation.md)

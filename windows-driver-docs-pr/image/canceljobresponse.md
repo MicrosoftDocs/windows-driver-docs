@@ -17,21 +17,18 @@ ms.localizationpriority: medium
 
 The required **CancelJobResponse** operation element acknowledges a client's job cancelation request.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CancelJobResponse />
 </wscn:CancelJobResponse />
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -45,8 +42,7 @@ There are no child elements.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 [**CancelJobRequest**](canceljobrequest.md)
 

@@ -56,8 +56,7 @@ Displays all long integers in the default radix.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.enable\_long\_status** command affects the output of the [**dt (Display Type)**](dt--display-type-.md) command.
 

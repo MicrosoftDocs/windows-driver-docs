@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_DISK [device interface class](./overview-of-device-interfa
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied storage class drivers register an instance of GUID_DEVINTERFACE_DISK for a hard disk storage device.
 
@@ -53,8 +52,7 @@ The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the W
 
 For information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

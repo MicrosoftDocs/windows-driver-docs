@@ -36,8 +36,7 @@ Drivers that have errors related to IRQL can cause serious problems and could ca
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x20007), [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
 
 
-Example
--------
+## Example
 
 The following code violates this rule:
 
@@ -100,8 +99,7 @@ ProcessRequest (
 }
 ```
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -144,8 +142,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))
 [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))
@@ -153,8 +150,7 @@ Applies to
 [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85))
 [**ExConvertExclusiveToSharedLite**](/previous-versions/ff544558(v=vs.85))
 [**ExDeleteResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite)
-See also
---------
+## See also
 
 [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md)
 [Preventing Errors and Deadlocks While Using Spin Locks](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

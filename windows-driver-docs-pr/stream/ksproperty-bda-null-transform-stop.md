@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP to restart the transform that
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_UPDATEPAGEDIRECTORY structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_UPDATEPAGEDIRECTORY {
@@ -31,8 +30,7 @@ typedef struct _DXGKARG_UPDATEPAGEDIRECTORY {
 } DXGKARG_UPDATEPAGEDIRECTORY;
 ```
 
-Members
--------
+## Members
 
 **pPageDirectory**
 Reserved for system use.
@@ -46,8 +44,7 @@ Reserved for system use.
 **PDEArray**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

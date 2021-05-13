@@ -26,13 +26,11 @@ The ACPI\_BIOS\_FATAL\_ERROR bug check has a value of 0x000000E0. This indicates
 
 The parameters for this bug check are issued by the BIOS, not by Windows. They can only be interpreted by the hardware vendor.
 
-Cause
------
+## Cause
 
 Your computer's BIOS has reported that a component in the system is so faulty that there is no way for Windows to operate. The BIOS is indicating that there is no alternative but to issue a bug check.
 
-Resolution
-----------
+## Resolution
 
 You can determine which component is faulty by running the diagnostic disk or tool that was included with your computer.
 

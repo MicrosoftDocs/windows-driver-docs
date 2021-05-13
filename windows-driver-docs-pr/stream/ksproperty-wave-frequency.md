@@ -56,8 +56,7 @@ The KSPROPERTY\_WAVE\_FREQUENCY property specifies a wave device's frequency set
 
 The property value (operation data) is a ULONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

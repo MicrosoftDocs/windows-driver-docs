@@ -2,7 +2,7 @@
 title: Debug Windows Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 01/20/2021
+ms.date: 05/04/2021
 ms.localizationpriority: medium
 ---
 
@@ -141,7 +141,7 @@ Enable kernel mode debugging on the target system by completing the following st
 3. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown.
 
     ```console
-    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
+    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
 **Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
@@ -150,7 +150,7 @@ Enable kernel mode debugging on the target system by completing the following st
 
     ```console
     C:\> bcdedit /dbgsettings
-    key                     1.2.3.4
+    key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     debugtype               NET
     hostip                  169.168.1.1
     port                    50000
@@ -183,7 +183,7 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
 
     ```console
-    WinDbg –k net:port=50000,key=1.2.3.4
+    WinDbg –k net:port=50000,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
 **-&gt;On the target system**
@@ -515,7 +515,7 @@ View information about the driver by performing the following steps.
 1.  If you closed the debugger, open it again using the following command in the administrator command prompt window.
 
     ```dbgcmd
-    WinDbg -k net:port=50000,key=1.2.3.4
+    WinDbg -k net:port=50000,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
 2.  Use Ctrl+Break (Scroll Lock) to break into the code running on the target system.

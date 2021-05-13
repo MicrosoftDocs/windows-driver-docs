@@ -32,8 +32,7 @@ Address of a **usbport!\_USBD\_DEVICE\_HANDLE** structure. To get the device han
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_USBD\_DEVICE\_HANDLE** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

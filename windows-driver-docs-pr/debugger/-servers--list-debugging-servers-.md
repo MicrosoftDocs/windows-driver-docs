@@ -53,8 +53,7 @@ The **.servers** command lists all debugging servers that have been established 
 
 For full details on debugging servers, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The output of the **.servers** command lists all the debugging servers started by the debugger on which this command is issued. The output is formatted so that it can be used literally as the argument for the -remote command-line option or pasted into the WinDbg dialog box.
 

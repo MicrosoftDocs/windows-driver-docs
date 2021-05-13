@@ -24,8 +24,7 @@ ms.localizationpriority: medium
 
 The `GetTree` method enables an ASP Web page to obtain the values associated with a set of subnodes beneath a specified root SNMP OID.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT GetTree(
@@ -34,8 +33,7 @@ HRESULT GetTree(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *varTree* \[in\]  
 Caller-supplied string identifying a root SNMP OID.
@@ -43,8 +41,7 @@ Caller-supplied string identifying a root SNMP OID.
 *varValue* \[out\]  
 Caller-supplied location to receive the address of a two-dimensional array containing SNMP OID strings and associated values.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -94,8 +91,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 OIDValueArray = objSNMP.GetTree ("43.18.1.1.2")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

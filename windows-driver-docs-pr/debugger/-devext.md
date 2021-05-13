@@ -45,8 +45,7 @@ Kdexts.dll
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For more information about device extensions, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The **!usbhub**, **!hidfdo**, and **!hidpdo** extensions are obsolete; their functionality has been integrated into **!devext**.
 

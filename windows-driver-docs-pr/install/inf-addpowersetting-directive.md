@@ -222,8 +222,7 @@ If the **Value** directive is used to specify allowed values, *default-setting-i
 <a href="" id="default-setting-value-"></a>*default-setting-value*   
 If the **ValueRange** directive is used to specify allowed values, *default-setting-value* is one of the allowed values that are specified by the **ValueRange** directive. If the **Value** directive is used to specify allowed values, this entry does not apply.
 
-Remarks
--------
+## Remarks
 
 An *add-power-setting-section* name must be unique in an INF file, but it can be referenced by more than one **AddPowerSetting** directive in the same INF file. Each section name must follow the general rules that are described in [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -256,8 +255,7 @@ An optional value that can be used to aid debugging or to provide an additional 
 
 For more information about how to specify language-neutral registry values, see [Rendering Shell and Registry Strings](/previous-versions//ms776232(v=vs.85)).
 
-Examples
---------
+## Examples
 
 The following two examples define power settings that control the brightness of an LCD. The first example shows how to use the **Value** directive to define a minimum, a medium, and a maximum LCD brightness value.
 

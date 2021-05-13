@@ -44,8 +44,7 @@ The KSCATEGORY_VBICODEC [device interface class](./overview-of-device-interface-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_VBICODEC to indicate to the operating system that the devices support the KSCATEGORY_VBICODEC functional category.
 
@@ -53,8 +52,7 @@ For general information about video devices, see [Video Capture Devices](../stre
 
 For more information about video blanking, see [Streaming Data from a Video Capture Device](../stream/streaming-data-from-a-video-capture-device.md) and [VBI Category](../stream/vbi-category.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

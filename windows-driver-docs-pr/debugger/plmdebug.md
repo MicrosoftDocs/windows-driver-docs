@@ -79,15 +79,13 @@ Activates a background task. Note that not all background tasks can be activated
 
 `plmdebug.exe /activatebgtask "{29421c11-1e1a-47a4-9121-949ce9e25456}"`
 
-Remarks
--------
+## Remarks
 
 You must call **plmdebug /enableDebug** before you call any of the suspend, resume, or terminate functions.
 
 The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
 
-Examples
---------
+## Examples
 
 **Example 1**
 

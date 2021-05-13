@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The IPrinterScriptUsbJobContext interface is passed as a parameter to the **startPrintJob** JavaScript function.
 
-Members
--------
+## Members
 
 The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContext** also has these types of members:
 
@@ -65,8 +64,7 @@ The **IPrinterScriptUsbJobContext** interface has these methods.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

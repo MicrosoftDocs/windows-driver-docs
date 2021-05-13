@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Time** element specifies the time at which a condition occurred.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Time>
@@ -26,13 +25,11 @@ Usage
 </wscn:Time>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
 
@@ -63,8 +60,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The specified **Time** is according to the internal clock of the scanner.
 

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The*MRxSetSdInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set security descriptor information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetSdInfo;
@@ -31,14 +30,12 @@ NTSTATUS MRxSetSdInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetSdInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -95,8 +92,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetSdInfo* in response to receiving an [**IRP\_MJ\_SET\_SECURITY**](irp-mj-set-security.md) request.
 
@@ -106,8 +102,7 @@ The **SetSecurity.SecurityInformation** member is set to **IrpSp-&gt;Parameters.
 
 The **SetSecurity.SecurityDescriptor** member is set to **IrpSp-&gt;Parameters.SetSecurity.SecurityDescriptor**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

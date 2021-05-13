@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_OPER\_STATUS status indicates the current operational state of an NDIS network interface to overlying drivers.
 
-Remarks
--------
+## Remarks
 
 NDIS generates this status indication; NDIS miniport drivers should not generate this status indication.
 
@@ -21,8 +20,7 @@ NDIS supplies an [**NDIS\_OPER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/
 
 The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_OPER\_STATE).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

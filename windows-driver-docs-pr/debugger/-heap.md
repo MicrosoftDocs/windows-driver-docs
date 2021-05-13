@@ -424,8 +424,7 @@ Book: *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 For information on using the Heap memory process logger, see [Example 11: Starting a Private Trace Session](../devtest/example-11--starting-a-private-trace-session.md)
 
-Remarks
--------
+## Remarks
 
 This extension command can be used to perform a variety of tasks.
 

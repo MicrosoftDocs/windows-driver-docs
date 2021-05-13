@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_STOPPOSITION property retrieves the stop media tim
 
  
 
-Remarks
--------
+## Remarks
 
 The stop media time is the time that can be set if a stop time is supported by the filter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

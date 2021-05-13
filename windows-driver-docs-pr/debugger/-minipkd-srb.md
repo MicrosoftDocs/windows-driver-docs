@@ -52,8 +52,7 @@ Specifies the address of an SRB.
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The addresses of all currently active requests can be found in the *SRB* fields of the output from the [**!minipkd.req**](-minipkd-req.md) command.
 

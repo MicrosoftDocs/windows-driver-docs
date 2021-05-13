@@ -83,8 +83,7 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 
 For information about LPCs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This extension is not supported in Windows Vista and later versions of Windows.
 

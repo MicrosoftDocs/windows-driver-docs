@@ -116,8 +116,7 @@ This byte-sized mask, expressed in hexadecimal notation, specifies which bits to
 <a href="" id="byte-to-modify"></a>*byte-to-modify*  
 This byte-sized value, expressed in decimal, specifies the zero-based index of the byte within the [REG_BINARY](/windows/desktop/SysInfo/registry-value-types)-type value to be modified.
 
-Remarks
--------
+## Remarks
 
 Each *bit-registry-section* name must be unique to the INF file, but it can be referenced by **BitReg** directives in other sections of the same INF. Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -125,8 +124,7 @@ The value of an existing [REG_BINARY](/windows/desktop/SysInfo/registry-value-ty
 
 Using a **BitReg** directive requires the definition of another INF file section. However, the value of an existing [REG_BINARY](/windows/desktop/SysInfo/registry-value-types)-type value entry can be modified bit-by-bit in such a section, thereby preserving the values of all remaining bits.
 
-Examples
---------
+## Examples
 
 The following example shows a bit-registry section for a fictional application.
 

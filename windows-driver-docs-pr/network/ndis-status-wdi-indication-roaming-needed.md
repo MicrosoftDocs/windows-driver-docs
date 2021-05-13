@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION to indicate t
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

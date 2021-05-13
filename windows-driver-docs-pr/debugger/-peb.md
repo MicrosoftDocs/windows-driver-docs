@@ -54,8 +54,7 @@ Ntsdexts.dll</td>
 
 For information about process environment blocks, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The PEB is the user-mode portion of Microsoft Windows process control structures.
 

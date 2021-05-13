@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_P2P\_ACTION\_FRAME\_DEVICE\_CONTEXT is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

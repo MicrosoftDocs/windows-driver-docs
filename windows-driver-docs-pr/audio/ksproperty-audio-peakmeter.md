@@ -82,15 +82,13 @@ A KSPROPERTY\_AUDIO\_PEAKMETER property request returns STATUS\_SUCCESS to indic
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A KS audio filter handles this property request synchronously. If the request succeeds, it resets the peakmeter, which initializes the accumulated peak value to zero. If the request does not succeed, the peakmeter is not changed.
 
 The system sends an IOCTL\_KS\_PROPERTY request for the KSPROPERTY\_AUDIO\_PEAKMETER property at IRQL PASSIVE\_LEVEL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

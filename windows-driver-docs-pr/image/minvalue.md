@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **MinValue** element specifies the minimum value that the scan device supports for scanner configuration elements that require a range of values.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:MinValue>
@@ -26,13 +25,11 @@ Usage
 </wscn:MinValue>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. For possible values, see the specific parent element.
 
@@ -66,8 +63,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The value of the **MinValue** element depends on its parent element. For the possible values, see the appropriate parent element.
 

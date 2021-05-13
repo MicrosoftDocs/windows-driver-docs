@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_CHECK\_FOR\_UPDATES** function checks for configuration updates at the frequency specified in the **dwProfileUpdateTimeDays** member of the plugin’s [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_CHECK_FOR_UPDATES)(
@@ -23,20 +22,17 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
 **   
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

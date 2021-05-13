@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The [**CcSetLoggedDataThreshold**](ccistheredirtyloggedpages.md) routine sets a threshold for when a scan of dirty log pages will initiate a lazy write.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID CcSetLoggedDataThreshold(
@@ -29,8 +28,7 @@ VOID CcSetLoggedDataThreshold(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *LogHandle* \[in\]  
 Log handle for the new threshold.
@@ -38,20 +36,17 @@ Log handle for the new threshold.
 *NumberOfPages* \[in\]  
 The threshold number in dirty log pages for the log specified by *LogHandle*.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The threshold value in *NumberOfPages* is used only if the value returned in the *PercentageUsed* parameter of the *QueryLogUsageRoutine* callback routine is 0. The *QueryLogUsageRoutine* callback is set with a call to [**CcSetLogHandleForFileEx**](ccsetloghandleforfileex.md).
 
 The [**CcSetLoggedDataThreshold**](ccistheredirtyloggedpages.md) routine is used to set a fixed value in number of dirty log pages when a log full percentage is not used.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

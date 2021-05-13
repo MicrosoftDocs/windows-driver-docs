@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The list of valid values for the WIA\_DPC\_PICT\_HEIGHT property has a one-to-one correspondence with the list of valid values for the [**WIA\_DPC\_PICT\_WIDTH**](wia-dpc-pict-width.md) property. If the individual width and height are linearly settable and orthogonal to each other, you can express them as a range.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

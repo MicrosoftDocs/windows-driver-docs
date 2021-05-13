@@ -29,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS ignores any value returned by a deserialized driver in response to a query of OID\_GEN\_MAXIMUM\_SEND\_PACKETS. NDIS does not adjust the size of the array of packet descriptors that it supplies to a deserialized miniport driver's *MiniportSendPackets* function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

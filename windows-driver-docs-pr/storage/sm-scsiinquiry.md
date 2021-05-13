@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_ScsiInquiry WMI method sends a SCSI inquiry command to the indicated device.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_ScsiInquiry(
@@ -40,8 +39,7 @@ void SM_ScsiInquiry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the HBA through which the target is accessed. This information is delivered to the miniport driver in the HbaPortWWN member of a [**ScsiInquiry\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_scsiinquiry_in) structure.
@@ -82,18 +80,15 @@ The results of the SCSI inquiry command. The miniport driver returns this inform
 *SenseBuffer*   
 The SCSI sense data that results from the SCSI inquiry command. The miniport driver returns this information in the SenseBuffer member of a [**ScsiInquiry\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_scsiinquiry_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_ScsiInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -70,13 +70,11 @@ The apparent width of the stereo image should increase linearly with linear incr
 
 A KSPROPERTY\_AUDIO\_WIDENESS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This is a property of a wideness node ([**KSNODETYPE\_STEREO\_WIDE**](ksnodetype-stereo-wide.md)). A wideness node can add spaciousness to an existing stereo (two-channel) stream. To achieve this effect, the node processes the stream to make some sounds appear to originate from positions outside the region that is framed by the left and right speakers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

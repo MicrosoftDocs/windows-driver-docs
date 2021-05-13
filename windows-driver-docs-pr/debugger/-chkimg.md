@@ -2,7 +2,7 @@
 title: chkimg
 description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 05/07/2021
 topic_type:
 - apiref
 api_name:
@@ -163,10 +163,6 @@ Specifies the module to check. *Module* can be the name of the module, the start
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
 <td align="left"><p><strong>Windows XP and later</strong></p></td>
 <td align="left"><p>Ext.dll</p></td>
 </tr>
@@ -175,8 +171,7 @@ Specifies the module to check. *Module* can be the name of the module, the start
 
  
 
-Remarks
--------
+## Remarks
 
 When you use **!chkimg**, it compares the image of an executable file in memory to the copy of the file that resides on a symbol store.
 
@@ -203,11 +198,15 @@ be000015-be000016  2 bytes - win32k!VeryUsefulFunction+15 (0x8)
 
 Occasionally, a driver alters part of the Microsoft Windows kernel by using hooks, redirection, or other methods. Even a driver that is no longer on the stack might have altered part of the kernel. You can use the **!chkimg** extension as a file comparison tool to determine which parts of the Windows kernel (or any other image) are being altered by drivers and exactly how the parts are being changed. This comparison is most effective on full dump files.
 
+### Check each loaded module
+
 You can also use **!chkimg** together with the [**!for\_each\_module**](-for-each-module.md) extension to check the image of each loaded module. The following example shows this situation.
 
 ```dbgcmd
 !for_each_module !chkimg @#ModuleName 
 ```
+
+### !analyze example
 
 Suppose that you encounter a bug check, for example, and begin by using [**!analyze**](-analyze.md).
 
@@ -253,7 +252,7 @@ bf920e55 c20400           ret     0x4
 bf920e58 8b510c           mov     edx,[ecx+0xc]
 ```
 
-Then, use **!chkimg -f**to fix the memory corruption.
+Then, use **!chkimg -f** to fix the memory corruption.
 
 ```dbgcmd
 kd> !chkimg win32k -f
@@ -276,9 +275,14 @@ bf920e57 2bf0             sub     esi,eax
 bf920e59 d1fe             sar     esi,1
 ```
 
- 
+### Investigate storage and memory corruption
 
- 
+Random file and memory corruption can be difficult to investigate. One tool to consider in some situations is enabling additional memory checking, for example using driver verifier. For information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
+
+For testing physical memory use the Windows Memory Diagnostics tool. It's use and other general techniques are described in [Blue Screen Data](blue-screen-data.md).
+
+Use the scan disk utility to identify file system errors. Select and hold (or right-click) on the drive you want to scan and select **Properties**. Select **Tools**. Select the **Check now** button.
+
 
 
 

@@ -42,8 +42,7 @@ None
 
 The miniport driver does not set the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

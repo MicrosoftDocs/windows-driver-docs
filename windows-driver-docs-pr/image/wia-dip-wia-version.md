@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads WIA\_DIP\_WIA\_VERSION to determine the version of WIA that is installed on the computer.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

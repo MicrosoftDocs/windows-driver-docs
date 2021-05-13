@@ -44,15 +44,13 @@ The GUID_DEVINTERFACE_IMAGE [device interface class](./overview-of-device-interf
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied kernel-mode drivers for WIA devices register an instance of this device interface class to notify the operating system and applications of the presence of WIA devices.
 
 For information about WIA drivers and STI drivers, see [Windows Image Acquisition Drivers](../image/windows-image-acquisition-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

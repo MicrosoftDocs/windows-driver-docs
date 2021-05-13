@@ -79,8 +79,7 @@ Specifies one or more byte values with which to fill memory.
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 This command fills the memory area specified by *range* with the specified *pattern*, repeated as many times as necessary.
 

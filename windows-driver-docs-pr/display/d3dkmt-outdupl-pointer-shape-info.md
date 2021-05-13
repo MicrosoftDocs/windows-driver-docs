@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
@@ -32,8 +31,7 @@ typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
 } D3DKMT_OUTDUPL_POINTER_SHAPE_INFO;
 ```
 
-Members
--------
+## Members
 
 **Type**
 
@@ -45,8 +43,7 @@ Members
 
 **HotSpot**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

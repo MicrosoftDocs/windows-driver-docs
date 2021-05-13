@@ -14,13 +14,11 @@ Any WMI driver that registers one or more of its data blocks as potentially time
 
 If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_ENABLE\_COLLECTION** request, WMI in turn calls that driver's [*DpWmiFunctionControl*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_function_control_callback) routine.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 WMI sends this IRP to request the driver to start accumulating data for a data block that the driver registered as expensive to collect.
 
@@ -51,8 +49,7 @@ STATUS\_INVALID\_DEVICE\_REQUEST
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 A driver registers a data block as expensive to collect by setting WMIREG\_FLAG\_EXPENSIVE in the **Flags** member of the [**WMIREGGUID**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw) or [**WMIGUIDREGINFO**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmiguidreginfo) structure. The driver passes these structures to WMI when it registers or updates the data block. A driver need not accumulate data for such a block until it receives an explicit request to start data collection.
 
@@ -68,8 +65,7 @@ If the block is valid and was registered with WMIREG\_FLAG\_EXPENSIVE, the drive
 
 It is unnecessary for the driver to check whether data collection is already enabled for the data block. WMI sends only a single request to enable a data block after the first data consumer enables the block. WMI will not send another request to enable without an intervening disable request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_CAPABILITIES property retrieves an external device's t
 
 The property value (operation data) is a ULONG that specifies the capabilities of the external transport.
 
-Remarks
--------
+## Remarks
 
 The **Capabilities** member of the KSPROPERTY\_EXTXPORT\_S structure describes transport-specific capabilities.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -25,8 +25,7 @@ The **/debug** boot option enables or disables kernel debugging of the Windows o
 bcdedit /debug [{ID}] { on | off }
 ```
 
-Parameters
-----------
+## Parameters
 
 **{**<em>ID</em>**}**   
 

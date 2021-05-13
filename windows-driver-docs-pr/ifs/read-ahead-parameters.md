@@ -18,8 +18,7 @@ ms.localizationpriority: medium
 
 The **READ_AHEAD_PARAMETERS** structure contains publicly exposed read ahead parameters.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _READ_AHEAD_PARAMETERS {
@@ -32,8 +31,7 @@ typedef struct _READ_AHEAD_PARAMETERS {
 } READ_AHEAD_PARAMETERS, *PREAD_AHEAD_PARAMETERS;
 ```
 
-Members
-----------
+## Members---
 
 *NodeByteSize* \[in\]  
 Size of the node in bytes.
@@ -51,13 +49,11 @@ The request size in bytes, to be used when performing pipelined read-aheads. Eac
 The growth of read ahead as a percentage of the data that has already been ready by the application so far. 
 
 
-Remarks
--------
+## Remarks
 
 None 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

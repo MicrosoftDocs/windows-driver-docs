@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 This IRP queries a device to determine whether the system power state or the device power state can be changed.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
 
-When Sent
----------
+## When Sent
 
 The power manager or a device power policy owner sends this IRP to determine whether it can change the system or device power state, typically to go to sleep. A driver must call [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to allocate and send this IRP.
 
@@ -49,8 +47,7 @@ None.
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS to indicate that the device can enter the requested state. A driver sets any appropriate failure status to indicate that it cannot enter the requested state.
 
-Operation
----------
+## Operation
 
 The parameters for **IRP\_MN\_QUERY\_POWER** are identical to those for [**IRP\_MN\_SET\_POWER**](irp-mn-set-power.md). Rather than notifying drivers of an irrevocable change to the power state, however, **IRP\_MN\_QUERY\_POWER** queries whether the system or a device can enter a particular power state.
 
@@ -86,8 +83,7 @@ By returning STATUS\_SUCCESS, the driver guarantees that it will not start any o
 
 On Windows 2000 and later systems, when the IRP specifies **PowerDeviceD1**, **PowerDeviceD2**, or **PowerDeviceD3**, the value at **Parameters.Power.ShutdownType** provides information about the current system power IRP, if a system power IRP is active. In this case, the value at **ShutdownType** indicates the currently requested system power state, or **PowerActionNone** if a system request is not outstanding. On Windows 98/Me, this field always contains **PowerActionNone** when the IRP requests a device power state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

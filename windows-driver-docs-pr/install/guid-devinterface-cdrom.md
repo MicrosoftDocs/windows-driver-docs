@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_CDROM [device interface class](./overview-of-device-interf
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied class driver for CD-ROM storage devices registers instances of this device interface class to notify the operating system and applications of the presence of a CD-ROM device.
 
@@ -55,8 +54,7 @@ For information about the device interface class for CD-ROM changer devices, see
 
 For information about storage devices, see [Storage Drivers](../storage/storage-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

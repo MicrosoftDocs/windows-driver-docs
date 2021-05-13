@@ -13,7 +13,7 @@ The MITT software package contains several tools to be used to test simple perip
 
 **Size**: 20.2 MB
 
-[**Download the MITT software package**](https://download.microsoft.com/download/7/7/0/7703f03c-9d1f-45fc-a625-9647dc495ee2/mitt.msi)
+[**Download the MITT software package**](https://download.microsoft.com/download/7/7/0/7703F03C-9D1F-45FC-A625-9647DC495EE2/MITT.msi)
 
 ## Tools in the software package
 

@@ -64,8 +64,7 @@ Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same 
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from **!ks.pciaudio**:
 

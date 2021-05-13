@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 **DriverEntry** is the initial entry point into the video miniport driver.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 ULONG DriverEntry(
@@ -29,8 +28,7 @@ ULONG DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Context1* \[in\]
 Pointer to a context value with which the miniport driver must call [**VideoPortInitialize**](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize). This context value identifies the driver object created by the system for this miniport driver.
@@ -38,13 +36,11 @@ Pointer to a context value with which the miniport driver must call [**VideoPort
 *Context2* \[in\]
 Pointer to a second context value with which the miniport driver must call [**VideoPortInitialize**](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize). This context value identifies the registry path for this miniport driver.
 
-Return value
-------------
+## Return value
 
 **DriverEntry** returns the value returned by [**VideoPortInitialize**](/windows-hardware/drivers/ddi/video/nf-video-videoportinitialize).
 
-Remarks
--------
+## Remarks
 
 Each miniport driver must have a function explicitly named **DriverEntry** in order to be loaded. **DriverEntry** is called directly by the I/O system.
 
@@ -124,8 +120,7 @@ For Microsoft Windows 2000 and later drivers that also support computers running
 
 **DriverEntry** should be made pageable.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

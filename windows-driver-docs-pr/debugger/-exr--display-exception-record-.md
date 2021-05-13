@@ -53,8 +53,7 @@ Specifies the address of the exception record. If you specify **-1** as the addr
 
  
 
-Remarks
--------
+## Remarks
 
 The **.exr** command displays information that is related to an exception that the debugger encountered on the target computer. The information that is displayed includes the exception address, the exception code, the exception flags, and a variable list of parameters to the exception.
 

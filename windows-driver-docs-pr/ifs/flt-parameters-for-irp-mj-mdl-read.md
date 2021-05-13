@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_MDL\_READ.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -35,8 +34,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **MdlRead**  
 Structure containing the following members.
@@ -53,8 +51,7 @@ Key value associated with a byte-range lock on the target file. If the range to 
 **MdlChain**  
 Pointer to a variable that receives a pointer to a chain of one or more memory descriptor lists (MDL) that describe the pages containing the data to be read.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_MDL\_READ operations contains the parameters for a fast I/O **MdlRead** operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
@@ -62,8 +59,7 @@ If a fast I/O IRP\_MJ\_MDL\_READ request fails, the issuer of the I/O determines
 
 IRP\_MJ\_MDL\_READ is a fast I/O operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

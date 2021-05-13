@@ -42,8 +42,7 @@ The miniport driver returns an array of bytes in the VRP **OutputBuffer**. The a
 
 The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to the value in the **OutputBufferLength** member of the VRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

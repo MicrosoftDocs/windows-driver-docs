@@ -56,8 +56,7 @@ Specifies the hexadecimal address of the CSR process.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension displays the process address, process ID, sequence number, flags, and reference count. If verbose mode is selected, additional details are displayed, and thread information is shown for each process.
 

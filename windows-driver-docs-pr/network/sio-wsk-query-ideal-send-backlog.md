@@ -69,8 +69,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 A connection-oriented socket can be notified of changes to the ideal send backlog size by enabling its [*WskSendBacklogEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_backlog_event) event callback function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

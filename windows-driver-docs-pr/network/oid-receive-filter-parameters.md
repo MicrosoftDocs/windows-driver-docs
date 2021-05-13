@@ -20,8 +20,7 @@ After a successful return from the OID method request, the **InformationBuffer**
 
 -   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures that specifies the filter test criterion for a field in a network packet header.
 
-Remarks
--------
+## Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
@@ -54,8 +53,7 @@ The information buffer was too short. NDIS sets the **DATA.QUERY\_INFORMATION.By
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for other reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

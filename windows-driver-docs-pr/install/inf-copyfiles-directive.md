@@ -131,8 +131,7 @@ Do *not* specify ACE strings that grant write access to nonprivileged users.
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
-Remarks
--------
+## Remarks
 
 Windows only copies a [driver package](driver-packages.md) to its destination location as part of a driver installation if the file has an INF **CopyFiles** directive. When it copies files, the operating system automatically generates temporary file names, when necessary, and renames the copied source files the next time that the operating system is started.
 
@@ -155,8 +154,7 @@ Starting with Windows Vista, the following points also apply to the INF **CopyFi
 -   When the DIFx tools preinstall a driver package in the [driver store](driver-store.md), they only copy a file from the driver package source to the driver store if the file has a corresponding INF **CopyFiles** directive.
 -   As part of a Windows upgrade, Windows only copies a driver package file to the [driver store](driver-store.md) as part of a driver migration if the file has an INF **CopyFiles** directive.
 
-Examples
---------
+## Examples
 
 This example shows how the [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md) sections specify the paths for copy-file (and delete-file) operations that occur in processing a simple device-driver INF. (The same INF was also used previously as examples of [**Version**](inf-version-section.md), **SourceDisksNames**, and **SourceDisksFiles** sections.)
 

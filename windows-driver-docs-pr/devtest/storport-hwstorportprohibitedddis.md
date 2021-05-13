@@ -19,8 +19,7 @@ This rule contains a list of WDM DDIs (excluding interlocked functions) that sho
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoReadPartitionTable**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreadpartitiontable)  
 [**IoReadPartitionTableEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreadpartitiontableex)  

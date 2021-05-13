@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerStatusConditionClearedEvent** element informs the client that a previously reported [**DeviceCondition**](devicecondition.md) condition has been cleared at the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerStatusConditionClearedEvent>
@@ -26,8 +25,7 @@ Usage
 </wscn:ScannerStatusConditionClearedEvent>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,13 +53,11 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service sends a **ScannerStatusConditionClearedEvent** element when a device condition that is identified in [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md) has been cleared. **ScannerStatusConditionClearedEvent** contains a [**DeviceConditionCleared**](deviceconditioncleared.md) element that contains the cleared condition and the time at which it was cleared.
 
-Examples
---------
+## Examples
 
 The following code example shows how the device notifies a client that the previous condition that ConditionId 1543 identified has cleared:
 

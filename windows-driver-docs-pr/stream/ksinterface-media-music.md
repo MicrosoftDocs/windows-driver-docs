@@ -20,8 +20,7 @@ ms.localizationpriority: medium
 
 The KSINTERFACE\_MEDIA\_MUSIC interface is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

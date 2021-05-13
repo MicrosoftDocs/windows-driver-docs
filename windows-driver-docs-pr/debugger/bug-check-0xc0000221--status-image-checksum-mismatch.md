@@ -24,15 +24,13 @@ The STATUS\_IMAGE\_CHECKSUM\_MISMATCH bug check has a value of 0xC0000221. This 
 ## STATUS\_IMAGE\_CHECKSUM\_MISMATCH Parameters
 
 
-Cause
------
+## Cause
 
 This bug check results from a serious error in a driver or other system file. The file header checksum does not match the expected checksum.
 
 This can also be caused by faulty hardware in the I/O path to the file (a disk error, faulty RAM, or a corrupted page file).
 
-Resolution
-----------
+## Resolution
 
 To remedy this error, run the Emergency Recovery Disk (ERD) and allow the system to repair or replace the missing or damaged driver file on the system partition.
 

@@ -44,15 +44,13 @@ The KSCATEGORY_AUDIO_GFX [device interface class](./overview-of-device-interface
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio adapter devices register instances of KSCATEGORY_AUDIO_GFX to indicate to the operating system that the devices support the KSCATEGORY_AUDIO_GFX functional category.
 
 For information about other device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -21,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiSubmitRender* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_SUBMITRENDER DxgkDdiSubmitRender;
@@ -34,8 +33,7 @@ NTSTATUS DxgkDdiSubmitRender(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hContext*
 This parameter is reserved for system use.
@@ -43,8 +41,7 @@ This parameter is reserved for system use.
 *pSubmitRender*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

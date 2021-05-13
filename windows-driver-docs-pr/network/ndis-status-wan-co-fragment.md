@@ -12,15 +12,13 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WAN\_CO\_FRAGMENT status indicates that a CoNDIS WAN miniport driver has received a partial packet from the endpoint of a VC.
 
-Remarks
--------
+## Remarks
 
 The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a pointer to an [**NDIS\_WAN\_CO\_FRAGMENT**](/previous-versions/windows/hardware/network/ff559030(v=vs.85)) structure. The NDIS\_WAN\_CO\_FRAGMENT structure describes the reason that the partial packet was received.
 
 For more information about NDIS\_STATUS\_WAN\_CO\_FRAGMENT, see [Indicating CoNDIS WAN Miniport Driver Status](./indicating-condis-wan-miniport-driver-status.md). For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers](./implementing-condis-wan-miniport-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,15 +44,13 @@ The KSCATEGORY_CLOCK [device interface class](./overview-of-device-interface-cla
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_CLOCK to indicate to the operating system that the devices support the KSCATEGORY_CLOCK functional category.
 
 For more information about kernel streaming clocks, see [KS Minidriver Architecture](../stream/ks-minidriver-architecture.md), [KS Clocks](../stream/ks-clocks.md), and [AVStream Clocks](../stream/avstream-clocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

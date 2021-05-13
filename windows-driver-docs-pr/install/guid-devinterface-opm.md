@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_OPM [device interface class](./overview-of-device-interfac
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of OPM device interfaces.
 
@@ -53,8 +52,7 @@ If a display miniport driver supports a direct-call OPM interface for this [devi
 
 For information about OPM, see [Supporting Output Protection Manager](../display/supporting-output-protection-manager.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

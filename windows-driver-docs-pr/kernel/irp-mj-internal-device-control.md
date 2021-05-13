@@ -14,8 +14,7 @@ In general, any replacement for an existing driver that supports internal device
 
 Drivers that replace certain lower-level system drivers are required to handle this request. For example, a replacement for the system parallel port driver must continue to support existing parallel class drivers. Note that certain system drivers that handle this request cannot be replaced, in particular, the system-supplied SCSI and video port drivers.
 
-When Sent
----------
+## When Sent
 
 Any time after the successful completion of a create request.
 
@@ -31,8 +30,7 @@ Other input parameters depend on the I/O control code's value. For more informat
 
 Output parameters depend on the I/O control code's value. For more information, see [Buffer Descriptions for I/O Control Codes](./buffer-descriptions-for-i-o-control-codes.md).
 
-Operation
----------
+## Operation
 
 Drivers receive **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests when another driver calls either [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) or [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) to create a request.
 
@@ -42,8 +40,7 @@ The requested operation is device- or driver-specific.
 
 For general information about I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, see [Using I/O Control Codes](./introduction-to-i-o-control-codes.md). See also [Device Type-Specific I/O Requests](./device-type-specific-i-o-requests.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -90,8 +90,7 @@ The Winsock client must not free the allocated buffer till the IRP is completed 
 
 The client can get the status of the IRP by checking *Irp-&gt;IoStatus.Status*. *Irp-&gt;IoStatus.Status* will be set to **STATUS\_SUCCESS** if the request is successful. Otherwise, it will contain **STATUS\_INTEGER\_OVERFLOW**, **STATUS\_NOT\_FOUND**, **STATUS\_BUFFER\_TOO\_SMALL**, or **STATUS\_ACCESS\_DENIED** if the call is not successful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

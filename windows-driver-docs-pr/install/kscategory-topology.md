@@ -44,8 +44,7 @@ The KSCATEGORY_TOPOLOGY [device interface class](./overview-of-device-interface-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio adapter devices register instances of KSCATEGORY_TOPOLOGY to indicate to the operating system that the devices support the KSCATEGORY_TOPOLOGY functional category.
 
@@ -55,8 +54,7 @@ The [AC'97 sample driver](/samples/browse/) that is provided in the WDK enumerat
 
 The sysfx sample in the WDK registers instances of this device interface class. The sysfx sample is located in the *src\\audio\\sysfx directory* of the WDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

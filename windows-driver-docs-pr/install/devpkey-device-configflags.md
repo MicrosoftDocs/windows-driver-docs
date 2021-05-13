@@ -56,8 +56,7 @@ The DEVPKEY_Device_ConfigFlags device property represents the configuration flag
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_Device_ConfigFlags is set during a device installation to indicate the current configuration of a device.
 
@@ -66,8 +65,7 @@ The configuration flags are for internal use only.
 You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ConfigFlags and call [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to set DEVPKEY_Device_ConfigFlags.
 
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

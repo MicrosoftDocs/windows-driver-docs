@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **MibErrorDscp** property enables an ASP Web page to convert a Simple Network Management Protocol (SNMP) management information base (MIB) error code into a text description of the error.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_MibErrorDscp(
@@ -32,8 +31,7 @@ HRESULT get_MibErrorDscp(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *dwError* \[in\]  
 Caller-supplied SNMP MIB error code.
@@ -41,8 +39,7 @@ Caller-supplied SNMP MIB error code.
 *pVal* \[out\]  
 Caller-supplied location to receive a pointer to a string containing a text description of the error.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -84,8 +81,7 @@ Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
 MIBErrorString = objPrinter.MibErrorDscp(ErrorCodeMIB)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

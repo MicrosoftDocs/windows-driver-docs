@@ -18,8 +18,7 @@ Miniport drivers must process query and set requests asynchronously, initially r
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support the specified device service or operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

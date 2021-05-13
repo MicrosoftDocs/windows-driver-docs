@@ -81,8 +81,7 @@ Ntsdexts.dll</td>
 
  
 
-Remarks
--------
+## Remarks
 
 The module listing includes all entry points into each module.
 

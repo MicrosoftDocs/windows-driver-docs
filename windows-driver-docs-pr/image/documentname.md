@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **DocumentName** element contains the name of the document that the client supplies.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentName>
@@ -26,13 +25,11 @@ Usage
 </wscn:DocumentName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any character string.
 
@@ -60,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must supply a value to store the document on the client.
 

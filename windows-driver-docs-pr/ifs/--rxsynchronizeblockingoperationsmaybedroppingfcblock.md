@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** synchronizes blocking I/O requests to the same work queue.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS __RxSynchronizeBlockingOperationsMaybeDroppingFcbLock(
@@ -30,8 +29,7 @@ NTSTATUS __RxSynchronizeBlockingOperationsMaybeDroppingFcbLock(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT of the operation being synchronized.
@@ -42,8 +40,7 @@ A pointer to the LIST\_ENTRY for the queue.
 *DropFcbLock* \[in\]  
 A Boolean value that indicates if the FCB resource should be released. If this parameter is **TRUE**, then the FCB resource will be released.
 
-Return value
-------------
+## Return value
 
 **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value such as one of the following:
 
@@ -72,8 +69,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 The **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** routine synchronizes blocking I/O requests to the same work queue. RDBSS uses **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** internally to synchronize named pipe operations. The work queue is the queue referenced by the file object extension (FOBX) associated with the **pFcb** member of the RX\_CONTEXT structure pointed to by *RxContext*.
 
@@ -91,8 +87,7 @@ The following two macros are defined on Windows XP and Windows 2000 for calling 
 
 **RxSynchronizeBlockingOperationsAndDropFcbLock** - calls with the *DropFcbLock* parameter set to **TRUE**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

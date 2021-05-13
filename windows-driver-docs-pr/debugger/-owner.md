@@ -51,8 +51,7 @@ Specifies the symbol within *Module* whose owner is desired. An asterisk (\*) at
 
  
 
-Remarks
--------
+## Remarks
 
 If no parameters are used and a fault has occurred, **!owner** will display the name of the owner of the faulting module or function.
 

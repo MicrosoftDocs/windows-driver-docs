@@ -54,8 +54,7 @@ The KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES property specifies the list of data r
 
  
 
-Remarks
--------
+## Remarks
 
 The **PinId** member of the [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) structure specifies the pin factory for which to query.
 
@@ -67,8 +66,7 @@ Stream minidrivers do not need to handle this property directly; the stream clas
 
 For more information, see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

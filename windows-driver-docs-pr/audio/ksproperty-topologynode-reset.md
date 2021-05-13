@@ -60,8 +60,7 @@ The property value (operation data) is of type BOOL and indicates whether the no
 
 A KSPROPERTY\_TOPOLOGYNODE\_RESET property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

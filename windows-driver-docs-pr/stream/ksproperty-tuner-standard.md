@@ -56,8 +56,7 @@ The KSPROPERTY\_TUNER\_STANDARD property retrieves the current analog video stan
 
 The property value (operation data) is a ULONG that specifies the tuning standard of the tuner.
 
-Remarks
--------
+## Remarks
 
 The **Standard** member of the KSPROPERTY\_TUNER\_STANDARD\_S structure specifies the current analog video standard.
 
@@ -65,8 +64,7 @@ This property is used only when the current mode is KSPROPERTY\_TUNER\_MODE\_TV.
 
 Analog TV signals can be broadcast in accordance with several different analog TV standards such as NTSC, PAL, or SECAM. Clients use the KSPROPERTY\_TUNER\_MODE\_CAPS property to query the supported standards, and use KSPROPERTY\_TUNER\_STANDARD to get or set the current standard for a TV tuner device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

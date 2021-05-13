@@ -19,8 +19,7 @@ This rule verifies that the driver's calls to certain synchronization functions 
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))
 [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))

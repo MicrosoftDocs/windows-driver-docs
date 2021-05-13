@@ -108,8 +108,7 @@ Within a multistring registry entry, delete all strings matching a string value 
 <a href="" id="value"></a>*value*  
 (Windows XP and later versions of Windows.) Specifies a registry value, if *flags* indicates that a registry value is required.
 
-Remarks
--------
+## Remarks
 
 A **DelReg** directive can be specified under any of the sections shown in the formal syntax statement above. This directive can also be specified under any of the following INF-writer-defined sections:
 
@@ -133,8 +132,7 @@ For Windows XP and later versions of Windows, the following is also permitted (t
 reg-root-string, subkey,,0x4000
 ```
 
-Examples
---------
+## Examples
 
 This example shows how the system-supplied COM/LPT ports class installer's INF removes stale NT-specific registry information about COM ports from the registry.
 

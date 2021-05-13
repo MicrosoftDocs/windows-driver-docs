@@ -62,8 +62,7 @@ Causes the debugger to copy all loaded symbol files.
 
  
 
-Remarks
--------
+## Remarks
 
 This command is particularly useful when you have been performing remote debugging through a process server, but wish to begin debugging locally instead. In this case you can use the .send\_file -s command to copy all the symbol files that the debugger has been using to the process server. These symbol files can then be used by a debugger running on the local computer.
 

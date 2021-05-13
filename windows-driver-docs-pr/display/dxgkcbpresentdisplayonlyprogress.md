@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKCB_PRESENT_DISPLAYONLY_PROGRESS pfnPresentDisplayOnlyProgress;
@@ -32,20 +31,17 @@ void APIENTRY CALLBACK* pfnPresentDisplayOnlyProgress(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hAdapter* \[in\]
 
 *pProgress* \[in\]
 
-Return value
-------------
+## Return value
 
 This callback function does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

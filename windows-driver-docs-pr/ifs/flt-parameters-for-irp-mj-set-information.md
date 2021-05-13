@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_SET\_INFORMATION**](irp-mj-set-information.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -43,8 +42,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **SetFileInformation**  
 Structure containing the following members.
@@ -125,8 +123,7 @@ Reserved for system use. Do not use.
 **InfoBuffer**  
 Pointer to an input buffer that contains the file information to be set.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_SET\_INFORMATION operations contains the parameters for a set-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
@@ -134,8 +131,7 @@ IRP\_MJ\_SET\_INFORMATION is an IRP-based operation.
 
 The **AdvanceOnly** member is set to **TRUE** by the cache manager to notify the file system to advance the current valid data length on the disk to the new valid data length in **EndOfFile**. If **AdvanceOnly** is **FALSE**, a new file size, in the **EndOfFile** member, is being set which can be larger or smaller than the current file size.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

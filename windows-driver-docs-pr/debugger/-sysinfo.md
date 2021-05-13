@@ -107,8 +107,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 This extension is useful only when the dump file is a System Crash File (.dmp) that has not been converted to a minidump file from a kernel or full dump file, or the live system has finished starting and is online (for example, at the log-in prompt).
 

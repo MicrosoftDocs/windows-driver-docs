@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Only file system drivers process **IRP\_MJ\_FILE\_SYSTEM\_CONTROL** requests. For more information about the use of this IRP major function code by file system drivers, see [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](../ifs/irp-mj-file-system-control.md). For more information about file system drivers, see [File System Drivers](../ifs/index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
