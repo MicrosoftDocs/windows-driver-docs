@@ -21,10 +21,6 @@ This section includes the following topics:
 [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md)
 
  
-
- 
-
-
-
+For info on viewing certificates, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
 
 
