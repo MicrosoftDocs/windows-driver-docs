@@ -2834,6 +2834,8 @@
         href: ndis-status-wwan-radio-state.md
       - name: "NDIS_STATUS_WWAN_READY_INFO"
         href: ndis-status-wwan-ready-info.md
+      - name: "NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE"
+        href: ndis-status-wwan-register-params-state.md
       - name: "NDIS_STATUS_WWAN_REGISTER_STATE"
         href: ndis-status-wwan-register-state.md
       - name: "NDIS_STATUS_WWAN_SAR_CONFIG"
@@ -5456,6 +5458,8 @@
       href: oid-wwan-radio-state.md
     - name: "OID_WWAN_READY_INFO"
       href: oid-wwan-ready-info.md
+    - name: "OID_WWAN_REGISTER_PARAMS"
+      href: oid-wwan-register-params.md
     - name: "OID_WWAN_REGISTER_STATE"
       href: oid-wwan-register-state.md
     - name: "OID_WWAN_SAR_CONFIG"
