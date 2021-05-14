@@ -13,14 +13,9 @@ ms.localizationpriority: medium
 
 NDIS Poll Mode is an OS controlled polling execution model that drives the network interface datapath.
 
-((Main problem is solves: improves the system function so it doesn't get overwhelmed?
--does it provide faster packet processing? when would onewantsot use this?
+NDIS Poll Mode offers an alternative to the traditional NDIS datapath model where drivers defer I/O operations to DPCs. In place of DPCs, NDIS polls the miniport driver for receive indications and send completions. 
 
-OR (for ex) How RSS improves system performance))
-
-NDIS Poll Mode offers an alternative to the traditional NDIS datapath model where I/O operations are deferred to DPCs. In place of DPCs, NDIS polls the miniport driver for receive indications and send completions. 
-
-Poll Mode gives the OS more flexibility when making scheduling decisions and moves the complexity of those decisions away from NIC drivers into NDIS. To achieve this, Poll Mode provides the following functionality:
+Poll Mode gives the OS more flexibility when making scheduling decisions and moves the complexity of those decisions away from NIC drivers into NDIS. To achieve this, Poll Mode provides:
 1. A mechanism for the OS to exert back pressure on the NIC. 
 2. A mechanism for the OS to finely control interrupts. 
 
@@ -34,28 +29,31 @@ The following sequence diagram illustrates how the hardware and the driver coord
 When there's no network activity the hardware has the Rx interrupt enabled. When an Rx packet arrives:
 1. The hardware generates an interrupt and NDIS calls the driver’s [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function (ISR).
 
-1. The driver does very little work in the ISR because they run at a very high IRQL. The driver disables the interrupt from the ISR and defers the hardware processing to a DPC. 
+1. The driver does very little work in the ISR because they run at a very high IRQL. The driver disables the interrupt from the ISR and defers the hardware processing to a [*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function (DPC). 
 
-1. NDIS eventually calls the driver's [*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function and the driver drains any completions from the hardware queue and indicates them to the OS. 
+1. NDIS eventually calls the driver's DPC and the driver drains any completions from the hardware queue and indicates them to the OS. 
  
-Deferring I/O operations to DPCs results in two pain points that can affect the network stack: 
+Two pain points can affect the network stack when the driver defers I/O operations to a DPC:
+ 
 1. The driver has no idea if the system is capable of processing the data that is being indicated, which results in the driver having no choice other than draining as many elements as possible from is hardware queue and indicating up the stack. (What is the consequence of this?)
 
 1. Since the driver is using a DPC to defer work from its ISR all the indications are made at DISPATCH_LEVEL, which can overwhelm the system when longs indication chains are made.  
 
-### Introducing Poll objects 
+### Introducing the Poll object 
 
-NDIS Poll Mode resolves the two pain points associated with DPCs by introducing the Poll object. A Poll object is an execution context construct. Miniport drivers can use Poll objects in place of DPCs when dealing with datapath operations. 
+NDIS Poll Mode introduces the Poll object to resolve the two pain points associated with DPCs. A Poll object is an execution context construct. Miniport drivers can use a Poll object in place of a DPC when dealing with datapath operations. 
 
-The Poll object: 
+A Poll object offers the following: 
 
-* Has serialization guarantees. Once you are running code from within a Poll object's execution context you are guaranteed that no other code related to the same execution context will run. This allows a NIC driver to have a lock free implementation of its datapath. 
+* It has serialization guarantees. Once you are running code from within a Poll object's execution context you are guaranteed that no other code related to the same execution context will run. This allows a NIC driver to have a lock free implementation of its datapath. 
 
-* Is closely tied to a notification mechanism. This keeps the OS and the NIC in sync regarding when work needs to be processed. 
+* It is closely tied to a notification mechanism. This keeps the OS and the NIC in sync regarding when work needs to be processed. 
 
-* The execution can move between IRQL levels transparently to the driver 
-* Has a concept of iteration and interrupts built in, so the driver is not forced to reenable interrupts every time it has finished the deferred procedure call (but we aren't using DPCss. )
-* Offers a way for NDIS to set work limits per iteration 
+* The execution can move between IRQL levels transparently to the driver. 
+
+* It has a concept of iteration and interrupts built in. In the traditional model, drivers are forced to re-enable interrupts every time they finish a DPC. With NDIS Poll Mode, drivers do not need to re-enable interrupts each polling iteration.
+
+* It provides a way for NDIS to set work limits per iteration. 
 
 ### Polling model
 
@@ -63,16 +61,15 @@ The following sequence diagram illustrates how the same hypothetical PCIe NIC dr
 
 [Polling diagram]
 
-When an Rx packet arrives:
-1. Like the traditional NDIS datapath model, the hardware generates an interrupt and NDIS calls the driver’s [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function (ISR).
+Like in the traditional NDIS datapath model, when an Rx packet arrives the hardware generates an interrupt, NDIS calls the driver’s ISR, and the driver disables the interrupt from the ISR. At this point, the polling model diverges:
 
-1. The driver disables the interrupt from the ISR.
+1. Instead of queueing a DPC, the driver [queues a Poll object](#queuing-a-poll-object-for-execution) (that it [previously created](#creating-a-poll-object)) from the ISR to notify NDIS that new work is ready to be processed.
 
-1. Instead of queueing a DPC the driver queues a pre-created and initialized Poll object to notify NDIS that new work is ready to be processed. Specify ndisrequestpoll function? 
+1. At some point in the future NDIS calls the driver's [poll iteration handler](#implementing-the-poll-iteration-handler) to process the work. Unlike a DPC, the driver is not allowed to indicate as many Rx NBLs as there are elements ready in its hardware queue. The driver should instead check the handler's poll data parameter to get the maximum number of NBLs it can indicate.
+ 
+    Once the driver fetches up to the maximum number of Rx packets it should initialize NBLs and add them to the NBL queue provided by the poll function and exit the callback. The driver shouldn't enable the interrupt before exiting.
 
-1. At some point in the future NDIS calls the driver's [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) routine to process the work. However unlike a DPC, the driver is not allowed to indicate as many Rx NBLs as there are elements ready in its hardware queue. Instead the driver should check one of the poll function (speify? or maybe don't mention specifics until below) parameters to know what is the limit. 
-
-Once the driver fetches up to the maximum number of Rx packets it should initialize NBLs and add them to the NBL queue provided by the poll function and exit the callback. Notice how the driver should not enable the interrupt before exiting the poll function. The OS will keep polling the driver until it assesses no forward progress is being made, at which point the OS stops the polling and asks the driver to reenable the interrupt. 
+1. NDIS continues to poll the driver until it assesses that the driver is no longer making forward progress. At this point the NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
 
 ## Creating a Poll object
 
@@ -81,10 +78,7 @@ To create a Poll object, the miniport driver does the following in its [*Minipor
 1. Allocates an [**NDIS_POLL_CHARACTERISTICS**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_characteristics) structure to specify entry points for the [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) and [*NdisSetPollNotification*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_set_poll_notification) callback functions.
 1. Calls [**NdisRegisterPoll**](/windows-hardware/drivers/ddi/poll/nf-poll-ndisregisterpoll) to create the Poll object and store it in the miniport context.
 
-
-** The following code example provides the implementation for the receive queue flow presented in Section 3. 
-
-The following example shows how a miniport driver might create a Poll object. Note that error handling is omitted for simplicity.
+The following example shows how a miniport driver might create a Poll object for a receive queue flow. Error handling is omitted for simplicity.
 
 ```C++
 NDIS_SET_POLL_NOTIFICATION NdisSetPollNotification; 
@@ -120,7 +114,7 @@ MiniportInitialize(
 
 ## Queuing a Poll object for execution 
 
-In the ISR miniport routine the driver calls [**NdisRequestPoll**](/windows-hardware/drivers/ddi/poll/nf-poll-ndisrequestpoll) to queue the Poll object for execution. For simplicity this example only shows receive handling and ignores the sharing of interrupt lines. 
+From an ISR, miniport drivers call [**NdisRequestPoll**](/windows-hardware/drivers/ddi/poll/nf-poll-ndisrequestpoll) to  queue a Poll object for execution. The following example shows receive handling but ignores the sharing of interrupt lines for simplicity.  
 
 ```C++
 BOOLEAN 
@@ -144,11 +138,27 @@ MiniportIsr(
 } 
 ```
 
-## Poll iteration handler
+## Implementing the Poll iteration handler
 
-Miniport drivers implement the [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback function that NDIS will poll for receive indications and send completions.
+When the driver calls [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md), NDIS will invoke the [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback to poll for receive indications and send completions. NDIS will keep invoking *NdisPoll* while the driver is making forward progress on receive indications or transmit completions. 
 
-**grab decription from ndispoll ddi.
+From *NdisPoll*, the driver must check the **receive** or **transmit** parameters of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can indicate or complete. 
+
+For receive indications, the driver should:
+1. Fetch up to the maximum number of Rx packets it can indicate.
+1. Initialize the NBLs.
+1. Add them to the NBL queue provided by the [**NDIS_POLL_RECEIVE_DATA**](ns-poll-ndis_poll_receive_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter). 
+1. Exit the callback. 
+
+For transmit completions, the driver should:
+1. Fetch up to the maximum number of Tx packets it can complete. 
+1. Complete the NBLs.
+1. Add them to the NBL queue provided by the [**NDIS_POLL_TRANSMIT_DATA**](ns-poll-ndis_poll_transmit_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter).
+1. Exit the callback. 
+
+The driver shouldn't enable the Poll object's interrupt before exiting the *NdisPoll* function. NDIS will keep polling the driver until it assesses that no forward progress is being made. At this point NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
+
+Here's how a driver might implement *NdisPoll* for a receive queue flow.
 
 ```C++
 _Use_decl_annotations_ 
@@ -185,19 +195,11 @@ NdisPoll(
 } 
 ```
 
-## Enabling and disabling Poll notification
+## Managing interrupts
 
-or 
+Miniport drivers implement the [*NdisSetPollNotification*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_set_poll_notification) callback to enable or disable the interrupt associated with a Poll object. NDIS typically invokes the *NdisSetPollNotification* callback when it detects that the miniport driver is not making forward progress in [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll). NDIS uses *NdisSetPollNotification* to tell the driver that it will stop invoking *NdisPoll*. The driver should invoke [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md) when new work is ready to be processed.
 
-
-## Transferring/Polling? network data (how is this different from ndis?)
-
-## Managing/Handling interrupts
-
-Miniport drivers implement the [*NdisSetPollNotification*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_set_poll_notification) callback function to enable or disable the interrupt associated with a Poll object.
-(to et the OS.NDIS control the interrupt associated with a Poll)
-
-NDIS typically invokes the NdisSetPollNotification callback when it detects that the miniport driver is not making forward progress in NdisPoll. NDIS uses NdisSetPollNotification to tell the driver that it will stop invoking NdisPoll. The driver should invoke NdisRequestPoll when new work is ready to be processed.
+Here's how a driver might implement *NdisSetPollNotification* for a receive queue flow.
 
 ```C++
 _Use_decl_annotations_ 
