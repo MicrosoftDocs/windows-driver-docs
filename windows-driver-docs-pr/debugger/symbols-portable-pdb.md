@@ -16,7 +16,7 @@ The Portable PDB (Program Database) format describes an encoding of debugging in
 
 The physical layout of the data is described in the ECMA-335-II Chapter 24 and the Portable PDB debugging metadata format introduces no changes to the fundamental structure. For more information on ECMA-335 see, [Standard ECMA-335 Common Language Infrastructure](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
 
-For complete information on the portable PDB format, see [Portable PDB v1.0: Format Specification](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.Metadata/specs/PortablePdb-Metadata.md).
+For complete information on the portable PDB format, see [Portable PDB v1.0: Format Specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/PortablePdb-Metadata.md).
 
 ## Code sample to read portable PDB files
 
