@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. For more about the benefits of the BM64, refer to the [Audio Capable Radios](testing-BTP-hw-audio.md).
+The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. For more about the benefits of the BM64, refer to the [Audio Capable Devices](testing-BTP-hw-audio.md).
   
 This section will cover how to set up and use a BM-64-EVB-C2 for testing with BTP.
 
@@ -28,10 +28,11 @@ Download and extract the newest BM64 software kit from [**Microchip**](https://w
 Some configuration notes before starting:
 
 - For using external MCU / PC control **(For running BM64 firmware, EEPROM updates, BTP tests)**
+  - SW13 should have all positions switched to OFF
   - SW46 should have all positions switched to OFF
   - SW47 should have all positions switched to OFF
 - For using internal MCU control **(For running stand-alone Microchip examples)**
-  - SW46 should have all positions switched to ON expect for #2
+  - SW46 should have all positions switched to ON except for #2
   - SW47 should have all positions switched to ON
 - JP33 should be connected **ONLY** if uploading new firmware to the PIC microcontroller.
 - SW9 should be configured based on the current goal
@@ -114,7 +115,7 @@ After firmware and EEPROM updates occur, the UART messaging capabilies of the BM
 
 ## Using the BM-64-EVB
 
-After new firmware and EEPROM is installed, make sure JP33 jumper is removed and SW9 positions 1 and 2 are both OFF. Additionally, set all positions of SW46 and SW47 to OFF. These are the same settings as in the [Verifying Installation with SPKCommand](testing-BTP-hw-bm64.md#verifying-installation-with-spkcommand).
+After new firmware and EEPROM is installed, make sure JP33 jumper is removed and SW9 positions 1 and 2 are both OFF. Additionally, set all positions of SW13, SW46 and SW47 to OFF. These are the same settings as in the [Verifying Installation with SPKCommand](testing-BTP-hw-bm64.md#verifying-installation-with-spkcommand).
 
 After settings are verified, simply connect a Micro-B USB cable between P3 (labeled *UART* on the EVB) and the test machine.
 Optionally, 3.5mm jack headphones or speakers can be connected to P7 (labeled *SPK* on the EVB) for audio output if enabled in the EEPROM.
@@ -163,6 +164,7 @@ The first common issue is the board is not configured correctly using switches a
 - SW9: Ensure position 1 and 2 are both set to OFF.
 - P3: Verify the Micro-B USB is plugged into the *UART* port.
 - JP33: Verify the jumper is removed.
+- SW13: Ensure all positions are switched to OFF
 - SW46: Ensure all positions are switched to OFF (in the direction of the BM64 radio on the board)
 - SW47: Ensure all positions are switched to OFF (in the direction of the BM64 radio on the board)
 
