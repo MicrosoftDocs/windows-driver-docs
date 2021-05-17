@@ -48,6 +48,7 @@
       "author": "tedhudek",
       "ms.author": "tedhudek",
       "ms.topic": "article",
+      "recommendations": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "Win.wdkdocs",
