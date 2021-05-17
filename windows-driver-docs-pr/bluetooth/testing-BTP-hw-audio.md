@@ -19,6 +19,10 @@ The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to c
 
 The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral such as a speaker or headset). It is currently planned to be supported upcoming BTP audio tests. More information can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
 
+## Acquire Hardware 
+
+MCCC sells a PMOD version of the RN52 Audio Sled [here](https://store.mcci.com/collections/frontpage/products/rn52-sled).
+
 ### RN52 Radio
 
 ![Photo of the RN52 Radio](images/RN52.png)
