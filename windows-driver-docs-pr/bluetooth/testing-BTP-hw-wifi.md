@@ -21,7 +21,7 @@ More information can be found via the ESP32 page from [**Espressif**](https://ww
 The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device.
 More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://store.digilentinc.com/pmod-esp32-wireless-communication-module).
 
-### ESP32 RaDevicedio
+### ESP32 Device
 
 ![Photo of the Model 2433 ESP32 Device](images/ESP32.png)
 
