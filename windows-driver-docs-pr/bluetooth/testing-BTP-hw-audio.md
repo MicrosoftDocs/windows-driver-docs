@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Audio Capable Peripheral Devices
 
-The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to communicate with any device module. The audio devices and breakouts listed here take a device module and break out the necessary pins to the required 12-pin layout.
+The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to communicate with any device module. The audio devices and breakouts listed here take a radio module and break out the necessary pins to the required 12-pin layout.
 
 | Device | Capabilities | Parameter |
 | --- | --- | --- |
