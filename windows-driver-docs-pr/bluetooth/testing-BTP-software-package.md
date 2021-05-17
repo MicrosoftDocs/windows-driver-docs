@@ -34,12 +34,15 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 | Test Tool | Description | Filename |
 | --- | --- | --- |
 | ConfigureMachineForBtp | - Provided as a CMD script and a PowerShell script.</br>- Configures a test machine for running BTP tests.</br>- Intended to be run before first test is run on a new machine or OS install.</br> | ConfigureMachineForBtp.bat</br>ConfigureMachineForBtp.ps1 |
+| GetProcessorArchitectureName | - Provided as a PowerShell script.</br>- Allows other scripts to identify the current machine's architecture | GetProcessorArchitectureName.ps1 |
 | RunPairingTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the Bluetooth pairing tests.</br>- Supports custom arguments if provided.</br> | RunPairingTests.bat</br>RunPairingTests.ps1 |
 | RunHIDTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the Bluetooth HID tests.</br>- Supports custom arguments if provided.</br> | RunHIDTests.bat</br>RunHIDTests.ps1 |
 | RunTaefTest | - PowerShell helper script for running TAEF tests given the test dll name and test parameters.</br> | RunTeafTests.ps1 |
 | RunAudioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs audio tests including glitch detection and audio volume validation.</br>- Supports custom arguments if provided</br> | RunAudioTests.bat</br>RunAudioTests.ps1 |
 | RunAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs audio and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunAudioHidScenarioTests.bat</br>RunAudioHidScenarioTests.ps1 |
 | RunBatteryTests | - Provided as a CMD script and a PowerShell script.</br>- Runs battery tests.</br>- Supports custom arguments if provided</br> | RunBatteryTests.bat</br>RunBatteryTests.ps1 |
+| Bluefruit52 Firmware | - Compiled binaries for Bluefruit 52 device. | BtpBluefruit_nRF52840.ino.zip |
+| ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino</br>WiFi-ESP32.ino.partitions |
 
 ### Architecture Dependent Binaries
 
