@@ -142,16 +142,16 @@ MiniportIsr(
 
 When the driver calls [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md), NDIS will invoke the [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback to poll for receive indications and send completions. NDIS will keep invoking *NdisPoll* while the driver is making forward progress on receive indications or transmit completions. 
 
-From *NdisPoll*, the driver must check the **receive** or **transmit** parameters of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can indicate or complete. 
-
-For receive indications, the driver should:
-1. Fetch up to the maximum number of Rx packets it can indicate.
+For receive indications, the driver should do the following in *NdisPoll*:
+1. Check the **receive** parameter of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can indicate.
+1. Fetch up to the maximum number of Rx packets.
 1. Initialize the NBLs.
 1. Add them to the NBL queue provided by the [**NDIS_POLL_RECEIVE_DATA**](ns-poll-ndis_poll_receive_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter). 
 1. Exit the callback. 
 
-For transmit completions, the driver should:
-1. Fetch up to the maximum number of Tx packets it can complete. 
+For transmit completions, the driver should do the following in *NdisPoll*:
+1. Check the **transmit** parameters of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can complete.
+1. Fetch up to the maximum number of Tx packets. 
 1. Complete the NBLs.
 1. Add them to the NBL queue provided by the [**NDIS_POLL_TRANSMIT_DATA**](ns-poll-ndis_poll_transmit_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter).
 1. Exit the callback. 
