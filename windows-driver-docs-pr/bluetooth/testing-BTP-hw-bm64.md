@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. For more about the benefits of the BM64, refer to the [Audio Capable Radios](testing-BTP-hw-audio.md).
+The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. For more about the benefits of the BM64, refer to the [Audio Capable Devices](testing-BTP-hw-audio.md).
   
 This section will cover how to set up and use a BM-64-EVB-C2 for testing with BTP.
 

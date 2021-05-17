@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The Model 2433 ESP32 is a custom ESP32 board with a 12 pin adapter fit for the Traduci that exercises WiFi connections for BTP. For more about the benefits of the ESP32, refer to the [WiFi Capable Radios](testing-BTP-hw-wifi.md).
+The Model 2433 ESP32 is a custom ESP32 board with a 12 pin adapter fit for the Traduci that exercises WiFi connections for BTP. For more about the benefits of the ESP32, refer to the [WiFi Capable Devices](testing-BTP-hw-wifi.md).
   
 This section will cover how to set up and use a Model 2433 ESP32 for testing with BTP.
 
