@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 
 NDIS Poll Mode is an OS controlled polling execution model that drives the network interface datapath.
 
-NDIS Poll Mode offers an alternative to the traditional NDIS datapath model where drivers defer I/O operations to DPCs. In place of DPCs, NDIS polls the miniport driver for receive indications and send completions. 
+Previously, NDIS had no formal definition of a datapath execution context. NDIS drivers typically relied on Deferred Procedure Calls (DPCs) to implement their execution model. NDIS Poll Mode offers an alternative to the DPC model and similar execution tools. 
 
-Poll Mode gives the OS more flexibility when making scheduling decisions and moves the complexity of those decisions away from NIC drivers into NDIS. To achieve this, Poll Mode provides:
+Poll Mode gives the OS more flexibility when making scheduling decisions and moves the complexity of those decisions away from NIC drivers and into NDIS. To achieve this Poll Mode provides:
 1. A mechanism for the OS to exert back pressure on the NIC. 
 2. A mechanism for the OS to finely control interrupts. 
 
 NDIS Poll Mode is available to NDIS 6.0 and later miniport drivers.
 
-### The traditional NDIS datapath model
-The following sequence diagram illustrates how the hardware and the driver coordinate to handle a burst of Rx packets in the traditional NDIS datapath model. In this example, the hardware is standard in terms of PCIe NICs. It has a receive hardware queue and an interrupt mask for that queue. 
+### The DPC model
+The following sequence diagram illustrates a typical example of how an NDIS miniport driver handles a burst of Rx packets using a DPC. In this example the hardware is standard in terms of PCIe NICs. It has a receive hardware queue and an interrupt mask for that queue. 
 
 ![Diagram illustrating NDIS DPC model](images/ndis-traditional-dpc-diagram.png)
 
@@ -35,11 +35,11 @@ When there's no network activity the hardware has the Rx interrupt enabled. When
  
 Two pain points can affect the network stack when the driver defers I/O operations to a DPC:
  
-1. The driver has no idea if the system is capable of processing the data that is being indicated, which results in the driver having no choice other than draining as many elements as possible from is hardware queue and indicating up the stack. (What is the consequence of this?)
+1. The driver doesn't know if the system is capable of processing all of the data that is being indicated, so the driver has no choice but to drain as many elements as possible from its hardware queue and indicate them up the stack. 
 
-1. Since the driver is using a DPC to defer work from its ISR all the indications are made at DISPATCH_LEVEL, which can overwhelm the system when longs indication chains are made.  
+1. Since the driver is using a DPC to defer work from its ISR, all the indications are made at DISPATCH_LEVEL which can overwhelm the system when longs indication chains are made.  
 
-### Introducing the Poll object 
+### Introduction to Poll objects 
 
 NDIS Poll Mode introduces the Poll object to resolve the two pain points associated with DPCs. A Poll object is an execution context construct. Miniport drivers can use a Poll object in place of a DPC when dealing with datapath operations. 
 
@@ -51,25 +51,25 @@ A Poll object offers the following:
 
 * The execution can move between IRQL levels transparently to the driver. 
 
-* It has a concept of iteration and interrupts built in. In the traditional model, drivers are forced to re-enable interrupts every time they finish a DPC. With NDIS Poll Mode, drivers do not need to re-enable interrupts each polling iteration.
+* It has a concept of iteration and interrupts built in. When using DPCs, drivers are forced to re-enable interrupts every time they finish a DPC. With NDIS Poll Mode, drivers do not need to re-enable interrupts each polling iteration.
 
 * It provides a way for NDIS to set work limits per iteration. 
 
-### Polling model
+### The NDIS Poll Mode model
 
 The following sequence diagram illustrates how the same hypothetical PCIe NIC driver handles a burst of Rx packets using a Poll object instead of a DPC. 
 
-![Diagram illustrating NDIS Poll Mode](images/ndis-poll-mode-sequence-diagram1.png)
+![Diagram illustrating NDIS Poll Mode](images/ndis-poll-mode-sequence-diagram.png)
 
-Like in the traditional NDIS datapath model, when an Rx packet arrives the hardware generates an interrupt, NDIS calls the driver’s ISR, and the driver disables the interrupt from the ISR. At this point, the polling model diverges:
+Like the DPC model, when an Rx packet arrives the hardware generates an interrupt, NDIS calls the driver’s ISR, and the driver disables the interrupt from the ISR. At this point the Poll Mode model diverges:
 
 1. Instead of queueing a DPC, the driver [queues a Poll object](#queuing-a-poll-object-for-execution) (that it [previously created](#creating-a-poll-object)) from the ISR to notify NDIS that new work is ready to be processed.
 
 1. At some point in the future NDIS calls the driver's [poll iteration handler](#implementing-the-poll-iteration-handler) to process the work. Unlike a DPC, the driver is not allowed to indicate as many Rx NBLs as there are elements ready in its hardware queue. The driver should instead check the handler's poll data parameter to get the maximum number of NBLs it can indicate.
  
-    Once the driver fetches up to the maximum number of Rx packets it should initialize NBLs and add them to the NBL queue provided by the poll function and exit the callback. The driver shouldn't enable the interrupt before exiting.
+    Once the driver fetches up to the maximum number of Rx packets it should initialize NBLs, add them to the NBL queue provided by the poll handler, and exit the callback. The driver shouldn't enable the interrupt before exiting.
 
-1. NDIS continues to poll the driver until it assesses that the driver is no longer making forward progress. At this point the NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
+1. NDIS continues to poll the driver until it assesses that the driver is no longer making forward progress. At this point NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
 
 ## Creating a Poll object
 
@@ -140,7 +140,8 @@ MiniportIsr(
 
 ## Implementing the Poll iteration handler
 
-When the driver calls [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md), NDIS will invoke the [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback to poll for receive indications and send completions. NDIS will keep invoking *NdisPoll* while the driver is making forward progress on receive indications or transmit completions. 
+NDIS invokes the miniport driver's [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback to poll for receive indications and send completions. NDIS first invokes *NdisPoll* when the driver calls [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md) to queue a Poll object.
+NDIS will keep invoking *NdisPoll* while the driver is making forward progress on receive indications or transmit completions. 
 
 For receive indications, the driver should do the following in *NdisPoll*:
 1. Check the **receive** parameter of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can indicate.
@@ -150,7 +151,7 @@ For receive indications, the driver should do the following in *NdisPoll*:
 1. Exit the callback. 
 
 For transmit completions, the driver should do the following in *NdisPoll*:
-1. Check the **transmit** parameters of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can complete.
+1. Check the **transmit** parameter of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can complete.
 1. Fetch up to the maximum number of Tx packets. 
 1. Complete the NBLs.
 1. Add them to the NBL queue provided by the [**NDIS_POLL_TRANSMIT_DATA**](ns-poll-ndis_poll_transmit_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter).
