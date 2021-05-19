@@ -428,6 +428,8 @@
           href: synchronizing-with-interrupts.md
         - name: "Interrupt Moderation"
           href: interrupt-moderation.md
+      - name: "NDIS Poll Mode"
+        href: ndis-poll-mode.md
       - name: "Miniport Adapter OIDs"
         items: 
         - name: "Miniport Adapter OID Requests"
