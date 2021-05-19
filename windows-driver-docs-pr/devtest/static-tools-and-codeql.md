@@ -47,8 +47,8 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 C:\> mkdir C:\codeql-home
 ```
 
-2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/)
-3. Download the latest version of the zip file. For example for 64 bit Windows "codeql-win64.zip".
+2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6)
+3. Download version **2.4.6** of the zip file if you are certifying a driver for the Windows Hardware Compatibility Program in 2021. For example for 64 bit Windows "codeql-win64.zip". 
 4. Unzip the codeql folder in the zip file to a directory, for example,  `C:\codeql-home\codeql\`.
 5. Confirm that the CodeQL command works by displaying the help.
 
