@@ -92,6 +92,8 @@
       href: audio-property-handlers.md
     - name: "Basic Support Queries for Audio Properties"
       href: basic-support-queries-for-audio-properties.md
+    - name: "Default Audio Endpoint Selection Starting in Windows 10"
+      href: default-audio-endpoint-selection.md
     - name: "Audio Endpoint Builder Algorithm"
       href: audio-endpoint-builder-algorithm.md
     - name: "Dynamic Subdevice Registration and Unregistration"
