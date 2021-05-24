@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/driver-changes-for-windows-10-version-1709.md",
+            "redirect_URL":  "/windows-hardware/drivers/what-s-new-in-driver-development",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/winsock-kernel4.md",
             "redirect_URL":  "/windows-hardware/drivers/network/introduction-to-winsock-kernel",
             "redirect_document_id":  false
