@@ -1,15 +1,15 @@
-- name: "What's new in driver development for Windows 10, version 2004"
+- name: "What's new in driver development for Windows Server 2022"
   href: what-s-new-in-driver-development.md
 - name: "New in previous releases"
   items: 
+  - name: "What's new in driver development for Windows 10, version 2004"
+    href: driver-changes-for-windows-10-version-2004.md
   - name: "What's new in driver development for Windows 10, version 1903"
     href: driver-changes-for-windows-10-version-1903.md
   - name: "What's new in driver development for Windows 10, version 1809"
     href: driver-changes-for-windows-10-version-1809.md
   - name: "What's new in driver development for Windows 10, version 1803"
     href: driver-changes-for-windows-10-version-1803.md
-  - name: "What's new in driver development for Windows 10, version 1709"
-    href: driver-changes-for-windows-10-version-1709.md
 - name: "Downloads"
   items: 
   - name: "Download the Windows Driver Kit (WDK)"
