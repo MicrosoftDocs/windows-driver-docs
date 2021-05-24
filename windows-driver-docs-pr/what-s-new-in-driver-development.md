@@ -13,30 +13,7 @@ This section provides information about the new features and updates to Windows 
 
 This section describes new features and updates for driver development in Windows Server 2022.
 
-### Windows Drivers
 
-
-
-### Windows Hardware Error Architecture (WHEA)
-
-
-### Display and Graphics Drivers
-
-See [What's New for Windows 10 Display and Graphics Drivers](./display/what-s-new-for-windows-10-display-and-graphics-drivers.md) for more details about these new features.
-
-### Storage Drivers
-
-
-
-### Windows Debugger
-
-#### WinDbg Preview
-
-
-#### Stop Codes
-
-
-### Driver Security
 
 
 ## Related Topics
