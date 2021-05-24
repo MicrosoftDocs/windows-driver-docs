@@ -1,6 +1,6 @@
 ---
-title: What's new in driver development
-description: This section describes new features for driver development in Windows 10.
+title: Driver development changes for Windows 10, version 2004
+description: This section describes new features for driver development in Windows 10, version 2004.
 ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
