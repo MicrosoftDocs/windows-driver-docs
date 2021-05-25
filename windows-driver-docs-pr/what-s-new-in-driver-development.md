@@ -7,10 +7,6 @@ ms.localizationpriority: medium
 
 # <a name="top"></a>What's new in driver development
 
-This section provides information about the new features and updates to Windows driver development in Windows 10.
-
-## What's new in Windows Server 2022 (latest)
-
 This section describes new features and updates for driver development in Windows Server 2022.
 
 ## Kernel DMA/MDL updates
