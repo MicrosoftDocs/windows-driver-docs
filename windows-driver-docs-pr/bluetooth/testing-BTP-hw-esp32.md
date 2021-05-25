@@ -45,7 +45,7 @@ arduino-cli core update-index --additional-urls https://dl.espressif.com/dl/pack
 arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
 ```
 
-2. Connect the Hardware and 
+2. Connect the Hardware 
     Using a USB Serial to UART board (like the one shown below) ![ESP32 with USB to UART board](images/ESP32_and_UART.png)
     1. Connect the GND of the Serial board to the GND of the ESP32
     2. Connect the RX of the Serial board to the TX of the ESP32
@@ -55,23 +55,21 @@ arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/
     5. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
     ![ESP32 powered on by Traduci](images/Traduci_and_ESP32.jpg)
 
-
-Run `arduino-cli board list` to detect which COM port is associated with the UART to USB Serial board.
-
-Once everything is wired correctly, and the COM port is identified, switch the ESP32 into boot mode by moving SW1 to the ON position.
-![ESP32 enable boot mode](images/ESP32Boot.png)
+    6. Run `arduino-cli board list` to identify the COM port associated with the UART to USB Serial board.
+    7. Move SW1 to the ON position to switch the ESP32 into boot mode.
+    ![ESP32 enable boot mode](images/ESP32Boot.png)
 
 3. Upload the Firmware
-Run `arduino-cli upload -p <COM port from previous step here> --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin`
+    Run `arduino-cli upload -p <COM port from previous step here> --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin`
 
-Wait for “Connecting ….____....” to show up on the terminal.
+    Wait for `Connecting ….____....` to show  on the terminal.
 
-Press BTN1 to reset the board.
-![ESP32 reset button](images/ESP32Reset.png)
+    Press BTN1 to reset the board.
+    ![ESP32 reset button](images/ESP32Reset.png)
 
-Once the upload is done, switch boot mode off by moving SW1 to the OFF position.
-
-Press BTN1 again to reset the board and start the program.
+    Wait for upload to finish. 
+    # NOTE: what denotes finish? how does the user know they are done???s
+    Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
 
 ## Updating ESP32 Firmware via Traduci.cmd
 
