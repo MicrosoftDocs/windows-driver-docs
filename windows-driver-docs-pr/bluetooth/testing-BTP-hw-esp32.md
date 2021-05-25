@@ -16,7 +16,10 @@ This section will cover how to set up and use a Model 2433 ESP32 for testing wit
 
 ![Photo of the Model 2433 ESP32](images/ESP32.png)
 
-##  Required Hardware 
+## Suported Tests
+    link to wifi coex tests goes here
+
+## Hardware 
 
 The ESP32 can be purchased via [MCCI] (https://store.mcci.com/products/esp32-sled/)
 

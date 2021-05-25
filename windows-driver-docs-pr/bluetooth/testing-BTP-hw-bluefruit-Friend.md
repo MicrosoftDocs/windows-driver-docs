@@ -12,3 +12,4 @@ The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafrui
 - Fully certified Low Energy Bluetooth 4.1 radio
 - Configurable ATT database
 - Small form factor, low power, surface mount module
+
