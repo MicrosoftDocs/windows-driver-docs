@@ -64,12 +64,3 @@ For information on what was new for drivers in past Windows releases, see the fo
 * [Driver development changes for Windows 10, version 1803](driver-changes-for-windows-10-version-1803.md)
 
 [Back to Top](#top)
-
-## Deprecated features
-
-The following table describes Windows driver development features that have been removed in Windows 10.
-
-| Driver technology | Feature | Deprecated in |
-|--|--|--|
-| Mobile Operator Scenarios (Networking) | [AllowStandardUserPinUnlock](./mobilebroadband/allowstandarduserpinunlock.md) | Windows 10, version 1709 |
-| Mobile Operators | Mobile broadband app experience apps with Sysdev metadata packages are deprecated in favor of MO UWP APPS and COSA. | Windows 10, version 1803 |
