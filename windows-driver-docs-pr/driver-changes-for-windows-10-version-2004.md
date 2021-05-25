@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # <a name="top"></a>What's new in Windows 10, version 2004
 
-This section provides information about the new features and updates to Windows driver development in Windows 10, version 2004 (Windows 10 May 2020 Update).
+This section describes new features and updates for driver development in Windows 10, version 2004 (Windows 10 May 2020 Update).
 
 ### Windows Drivers
 
