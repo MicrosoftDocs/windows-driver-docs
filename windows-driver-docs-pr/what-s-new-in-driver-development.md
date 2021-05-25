@@ -70,8 +70,6 @@ For information on what was new for drivers in past Windows releases, see the fo
 The following table describes Windows driver development features that have been removed in Windows 10.
 
 | Driver technology | Feature | Deprecated in |
-|---|---|---|
-| GNSS/Location | [Geolocation driver sample for Windows 8.1](./gnss/sensors-geolocation-driver-sample.md) and related documentation | Windows 10, version 1709 |
+|--|--|--|
 | Mobile Operator Scenarios (Networking) | [AllowStandardUserPinUnlock](./mobilebroadband/allowstandarduserpinunlock.md) | Windows 10, version 1709 |
-| Scan/Image | [WSD (Web Services for Devices) Challenger](./image/challenging-a-disconnected-scanner-with-the-wsd-challenger.md) functionality and related documentation | Windows 10, version 1709 |
-|Mobile Operators| Mobile broadband app experience apps with Sysdev metadata packages are deprecated in favor of MO UWP APPS and COSA. | Windows 10, version 1803|
+| Mobile Operators | Mobile broadband app experience apps with Sysdev metadata packages are deprecated in favor of MO UWP APPS and COSA. | Windows 10, version 1803 |
