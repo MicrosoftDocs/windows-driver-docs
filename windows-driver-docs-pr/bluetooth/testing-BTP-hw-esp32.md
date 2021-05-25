@@ -21,7 +21,7 @@ This section will cover how to set up and use a Model 2433 ESP32 for testing wit
 
 ## Hardware 
 
-The ESP32 can be purchased via [MCCI] (https://store.mcci.com/products/esp32-sled/)
+The ESP32 can be purchased via [MCCI](https://store.mcci.com/products/esp32-sled/)
 
 The ESP32 can also be purchased via [Digilent](https://store.digilentinc.com/pmod-esp32-wireless-communication-module/).
 
@@ -37,8 +37,8 @@ If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Trad
 This is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd).  
 
 1. Acquire and setup the Arduino-CLI
-Download the latest version of the [Arduino-CLI](https://arduino.github.io/arduino-cli/latest/installation/#download)
 
+Download the latest version of the [Arduino-CLI](https://arduino.github.io/arduino-cli/latest/installation/#download)
 If not done already, add the Arduino-cli to your [PATH variable](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/path).
 To aquire the ESP32 board packages, run the following from a cmd prompt:
 ```console
@@ -49,7 +49,7 @@ arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/
 ```
 
 2. Connect the Hardware 
-    Using a USB Serial to UART board (like the one shown below) ![ESP32 with USB to UART board](images/ESP32_and_UART.png)
+Using a USB Serial to UART board (like the one shown below) & jumper wires ![ESP32 with USB to UART board](images/ESP32_and_UART.png)
     1. Connect the GND of the Serial board to the GND of the ESP32
     2. Connect the RX of the Serial board to the TX of the ESP32
     3. Connect the TX of the Serial board to the RX of the ESP32
@@ -57,22 +57,21 @@ arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/
     4. Connect the ESP32 device to Port JD on the Traduci for power delivery.
     5. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
     ![ESP32 powered on by Traduci](images/Traduci_and_ESP32.jpg)
-
     6. Run `arduino-cli board list` to identify the COM port associated with the UART to USB Serial board.
     7. Move SW1 to the ON position to switch the ESP32 into boot mode.
     ![ESP32 enable boot mode](images/ESP32Boot.png)
 
 3. Upload the Firmware
-    Run `arduino-cli upload -p <COM port from previous step here> --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin`
+    
+Run `arduino-cli upload -p <COM port from previous step here> --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin`
 
-    Wait for `Connecting ….____....` to show  on the terminal.
+Wait for `Connecting ….____....` to show  on the terminal.
 
-    Press BTN1 to reset the board.
-    ![ESP32 reset button](images/ESP32Reset.png)
+Press BTN1 to reset the board.
+![ESP32 reset button](images/ESP32Reset.png)
 
-    Wait for upload to finish. 
-    # NOTE: what denotes finish? how does the user know they are done???s
-    Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
+Wait for the `ESP32 firmware is up to date` to show on the terminal and indicate the process is done.
+Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
 
 ## Updating ESP32 Firmware via Traduci.cmd
 
