@@ -23,7 +23,30 @@ New API pages:
 [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-dma_common_buffer_extended_configuration) structure
 
 Updated:
+
 [**DMA_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (new field **CreateCommonBufferFromMdl**)
+
+## NetAdapterCx
+
+* The new [NetAdapterCx platform-level device reset (PLDR)](./netcx/platform-level-device-reset.md) feature provides an effective way to reset and recover malfunctioning network devices without rebooting the system.
+
+* NetAdapterCx support for the following hardware offloads has been updated:
+
+    * [Checksum offload](./netcx/checksum-offload.md)
+
+    *  [Generic send offload (GSO)](./netcx/gso-offload.md)
+
+    * [Receive Segment Coalescing (RSC)](./netcx/rsc-offload.md)
+
+## Networking
+
+New network driver documentation and features include:
+
+* The new [NDIS packet timestamping](./network/overview-of-ndis-packet-timestamping.md) feature supports the hardware timestamping capability of a network interface card (NIC) for the Precision Time Protocol (PTP) version 2.
+
+* The new [NDIS Poll Mode](/windows-hardware/drivers/ddi/poll) feature is an OS controlled polling execution model that drives the network interface datapath.
+
+* The [Virtual Machine Multiple Queues (VMMQ)](./network/overview-of-virtual-machine-multiple-queues.md) NIC offload technology extends Native RSS (RSSv1) to a Hyper-V virtual environment.
 
 ## Windows Driver Frameworks (WDF)
 
