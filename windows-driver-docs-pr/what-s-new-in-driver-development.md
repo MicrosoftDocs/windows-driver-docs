@@ -13,14 +13,14 @@ This section describes new features and updates for driver development in Window
 
 New API pages:
 
-[*PCREATE_COMMON_BUFFER_FROM_MDL*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pcreate-common-buffer-from-mdl) callback function
-[**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_dma_common_buffer_extended_configuration_type) enumeration
-[**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_ACCESS_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-dma_common_buffer_extended_configuration_access_type) enumeration
-[**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-dma_common_buffer_extended_configuration) structure
+* [*PCREATE_COMMON_BUFFER_FROM_MDL*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pcreate-common-buffer-from-mdl) callback function
+* [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_dma_common_buffer_extended_configuration_type) enumeration
+* [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_ACCESS_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-dma_common_buffer_extended_configuration_access_type) enumeration
+* [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-dma_common_buffer_extended_configuration) structure
 
 Updated:
 
-[**DMA_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (new field **CreateCommonBufferFromMdl**)
+* [**DMA_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (new field **CreateCommonBufferFromMdl**)
 
 ## NetAdapterCx
 
@@ -49,7 +49,10 @@ New network driver documentation and features include:
 In Windows Server 2022, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.33 and User-Mode Driver Framework (UMDF) version 2.33.
 
 For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](./wdf/index.md).
-To see what was added in previous versions of WDF, see [KMDF Version History](./wdf/kmdf-version-history.md) and [UMDF Version History](./wdf/umdf-version-history.md).
+To see what was added in previous versions of WDF, see:
+
+* [KMDF Version History](./wdf/kmdf-version-history.md)
+* [UMDF Version History](./wdf/umdf-version-history.md)
 
 ## Related Topics
 
