@@ -19,11 +19,11 @@ This section describes new features and updates for driver development in Window
 
 * NetAdapterCx support for the following hardware offloads has been updated:
 
-    * [Checksum offload](checksum-offload.md)
+    * [Checksum offload](./netcx/checksum-offload.md)
 
-    *  [Generic send offload (GSO)](gso-offload.md)
+    *  [Generic send offload (GSO)](./netcx/gso-offload.md)
 
-    * [Receive Segment Coalescing (RSC)](rsc-offload.md)
+    * [Receive Segment Coalescing (RSC)](./netcx/rsc-offload.md)
 
 ## Networking
 
