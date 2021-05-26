@@ -67,14 +67,14 @@ MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
 ### ![download icon](images/download-install.png) Step 1.5 Install Windows SDK, version 2104 (Build 10.0.20348.1)
-* [Download SDK for Windows 10, version 2004](https://aka.ms/windowssdk)
+* [Download SDK for Windows 10, version 2104 (Build 10.0.20348.1](https://aka.ms/windowssdk)
 
 This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
 ### ![download icon](images/download-install.png) Step 2: Install WDK for Windows Server 2022
 
-* [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
+* [Download WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
