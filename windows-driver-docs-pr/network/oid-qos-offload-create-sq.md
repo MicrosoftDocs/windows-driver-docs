@@ -41,7 +41,7 @@ NDIS handles the OID set request of OID_QOS_OFFLOAD_CREATE_SQ for miniport drive
 
 [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters)
 
-[**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_offload_capabilities)
+[**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_offload_capabilities)
 
 [OID_QOS_HARDWARE_CAPABILITIES](oid-qos-hardware-capabilities.md)
 
