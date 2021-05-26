@@ -28,8 +28,8 @@ You can run the WDK for Windows Server 2022 on Windows 7 and later, and use it t
 |-|-|
 |Windows 10|Windows Server 2022, Windows Server 2019, Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
-Windows 8|Windows Server 2012|
-Windows 7|Windows Server 2008 R2 SP1|
+|Windows 8|Windows Server 2012|
+|Windows 7|Windows Server 2008 R2 SP1|
 
 ## WDK for Windows Server 2022
 
