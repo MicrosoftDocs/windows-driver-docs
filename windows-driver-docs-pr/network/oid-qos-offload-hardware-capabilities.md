@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 An overlying driver issues an OID query request of OID_QOS_OFFLOAD_HARDWARE_CAPABILITIES to obtain the Quality of Service (QoS) offload hardware capabilities of a miniport adapter.
 
-After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_offload_capabilities) structure.
+After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_offload_capabilities) structure.
 
 ## Remarks
 
-The [**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_offload_capabilities) structure specifies the hardware and current Hardware Quality of Service (QoS) offload capabilities of a miniport adapter.
+The [**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_offload_capabilities) structure specifies the hardware and current Hardware Quality of Service (QoS) offload capabilities of a miniport adapter.
 
 ### Return Status Codes
 
@@ -43,7 +43,7 @@ NDIS handles the OID query request of OID_QOS_OFFLOAD_HARDWARE_CAPABILITIES for 
 
 [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
-[**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_offload_capabilities)
+[**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_offload_capabilities)
 
 [OID_QOS_OFFLOAD_CURRENT_CAPABILITIES](oid-qos-offload-current-capabilities.md)
 
