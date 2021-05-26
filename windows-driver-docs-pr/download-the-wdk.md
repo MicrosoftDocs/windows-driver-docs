@@ -83,7 +83,7 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 ## Enterprise WDK (EWDK) for Windows Server 2022
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.9.2 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.9.2 and MSVC toolset v14.28.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
