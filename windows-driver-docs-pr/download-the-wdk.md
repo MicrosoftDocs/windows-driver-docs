@@ -45,9 +45,9 @@ The following editions of Visual Studio 2019 support driver development for this
 
 When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows Server 2022 may not be the default SDK. To select the correct SDK:
 
-In **Visual Studio Installer**, on the **Individual components** tab, search for Windows 10 SDK (10.0.20348.1), select this version and continue with install. Note that Visual Studio will automatically install Windows 10 SDK (10.0.20348.1) on your machine.
+In **Visual Studio Installer**, on the **Individual components** tab, search for Windows 10 SDK, vesrion 2104 (Build 10.0.20348.1), select this version and continue with install. Note that Visual Studio will automatically install Windows 10 SDK, version 2104 (Build 10.0.20348.1) on your machine.
 
-If you already have Visual Studio 2019 installed, you can install the **Windows 10 SDK (10.0.20348.1)** by using the **Modify** button in Visual Studio install.
+If you already have Visual Studio 2019 installed, you can install the **Windows 10 SDK, version 2104 (Build 10.0.20348.1)** by using the **Modify** button in Visual Studio install.
 
 WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
 
@@ -66,13 +66,13 @@ MSVC v142 - VS 2019 C++ x64/x86 build tools (Latest)
 MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon](images/download-install.png) Step 1.5 Install Refreshed Windows SDK 10.0.20348.1 for Windows Server 2022
+### ![download icon](images/download-install.png) Step 1.5 Install Windows SDK, version 2104 (Build 10.0.20348.1)
 * [Download SDK for Windows 10, version 2004](https://aka.ms/windowssdk)
 
 This SDK is strongly recommended and will eventually be made available through Visual Studio
 
 
-### ![download icon](images/download-install.png) Step 2: Install Refreshed WDK for Windows Server 2022
+### ![download icon](images/download-install.png) Step 2: Install WDK for Windows Server 2022
 
 * [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
