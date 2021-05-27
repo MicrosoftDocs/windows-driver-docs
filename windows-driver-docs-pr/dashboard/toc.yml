@@ -128,8 +128,6 @@
             href: graphics-tdr-integrated-gpu.md
           - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
             href: myriad-drivers-rolled-back-standard.md
-          - name: "Number of machines that had a blue screen caused by a crash in the graphics kernel"
-            href: number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
           - name: "Number of user mode crashes in Microsoft Photos app"
             href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
           - name: "Number of user mode for crashes in creative applications"
