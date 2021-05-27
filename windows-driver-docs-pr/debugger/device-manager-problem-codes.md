@@ -36,7 +36,7 @@ Indicates that the device is disabled. (Corresponds to DNF\_DISABLED.)
 Indicates that the installation failed and there is no driver selected for this device, although the kernel did not report a problem (and there is no DNF\_XXX match for this the problem). This problem can be the result of an on-board system device (ISA timer, ISA RTC, RAM Memory, and so forth) that does not yet have an INF file.
 
 <span id="Code_31__CM_PROB_FAILED_ADD_"></span><span id="code_31__cm_failed_add_"></span><span id="CODE_31__CM_FAILED_ADD_"></span>**Code 31 (CM_PROB_FAILED_ADD)**  
-Indicates that the device was not added. Reasons for the failure may include: a driver's **AddDevice** routine returned an error, there is no service listed for the device in the registry, there is more than one service listed, or the controlling driver could not be loaded. (Corresponds to DNF\_ADD\_FAILED.)
+Indicates that the device was not added. Reasons for the failure may include: a driver's **AddDevice** routine returned an error or there is no service listed for the device in the registry. (Corresponds to DNF\_ADD\_FAILED.)
 
  
 
