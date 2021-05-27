@@ -10,12 +10,25 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. This section will cover how to set up and use a BM-64-EVB-C2 for testing with BTP.
+The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speaker, or multi-speaker peripherals.
+More information can be found via the BM64 page from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64).
+The BM-64-EVB allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci.
+More information can be found via the BM-64-EVB page from [**Microchip**](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/BM-64-EVB-C2).
 
-![Photo of the BM-64-EVB](images/BM64-EVB-alpha.png)
 ## Required Hardware
 
 The BM-64-EVB-C2 can be purchased via [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/BM-64-EVB-C2/6152245).
+
+> [!NOTE]
+> The BM-64-EVB development occurred with the Class 2 stereo audio module version (BM-64-EVB-C2) but should be compatible with the Class 1 audio module (BM-64-EVB-C1).
+
+### BM64 Device
+
+![Photo of the BM64 Device](images/BM64.png)
+
+### BM64 Device on BM64 Evaluation Board
+
+![Photo of the BM-64-EVB](images/BM64-EVB-alpha.png)
 
 
 ## Suported Tests
@@ -184,7 +197,13 @@ If BM-64-EVB correctly responds using the MSPK v1.35 tool, then the board can be
 
 
 ## Features
-
+- UART data connection with custom packet structure
+- Supports SPP, A2DP, HFP, and AVRCP profiles
+- Bluetooth v5.0
+- Supports Bluetooth dual-mode (BDR/EDR/BLE)
+- Supports AAC and SBC codecs
+- Heavily featured, surface mount module
+- Using BM-64-EVB does not require a Traduci
 
 ## Known test failures
-
+ With version 1.7.2 both standalone Audio tests will fail as will some Audio-HID tests due to backend architecture changes. If this breaks you, please file a bug or email btpsupport@microsoft.com

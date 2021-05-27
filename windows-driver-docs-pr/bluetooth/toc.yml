@@ -110,12 +110,14 @@
       items:
       - name: "Traduci board"
         href: testing-BTP-hw.md
-      - name: "HID Capable Devices"
-        href: testing-BTP-hw-hid.md
-      - name: "Audio Capable Devices"
-        href: testing-BTP-hw-audio.md
-      - name: "Wi-Fi Capable Devices"
-        href: testing-BTP-hw-wifi.md
+      - name: "RN42"
+        href: testing-BTP-hw-rn42.md
+      - name: "Bluefruit Feather"
+        href: testing-BTP-hw-bluefruit-Feather.md
+      - name: "Bluefruit Friend"
+        href: testing-BTP-hw-bluefruit-Friend.md
+      - name: "RN52"
+        href: testing-BTP-hw-rn52.md
       - name: "BM-64-EVB board"
         href: testing-BTP-hw-bm64.md
       - name: "Model 2433 ESP32"

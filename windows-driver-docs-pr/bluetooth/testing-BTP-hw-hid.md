@@ -6,6 +6,9 @@ ms.localizationpriority: medium
 
 ---
 
+
+# !!! TO DELETE !!!
+
 # HID Capable Peripheral Devices
 
 The Bluetooth Test Platform (BTP) Traduci requires a 12-pin connector to communicate with any device module. The HID devices and breakouts listed here take a radio module and break out the necessary pins to a 12-pin layout.

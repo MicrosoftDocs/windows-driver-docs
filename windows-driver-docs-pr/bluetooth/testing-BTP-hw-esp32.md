@@ -10,12 +10,20 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The Model 2433 ESP32 is a custom ESP32 board with a 12 pin adapter fit for the Traduci that exercises WiFi connections for BTP. For more about the benefits of the ESP32, refer to the [WiFi Capable Devices](testing-BTP-hw-wifi.md).
+The Model 2433 ESP32 is a custom ESP32 board with a 12 pin adapter fit for the Traduci that exercises WiFi connections for BTP. The ESP32 is a microcontorller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IOT devices.
+More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
+The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device.
+More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://store.digilentinc.com/pmod-esp32-wireless-communication-module).
   
 This section will cover how to set up and use a Model 2433 ESP32 for testing with BTP.
 
+### ESP32 Device
+
 ![Photo of the Model 2433 ESP32](images/ESP32.png)
 
+### ESP32 Device on BTP-compatible sled
+
+![Photo of the Model 2433 ESP32 Device on a sled](images/Traduci_and_ESP32.jpg)
 ## Suported Tests
     link to wifi coex tests goes here
 
@@ -30,6 +38,9 @@ USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.s
 ## Getting Started 
 
 If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd)
+
+> [!NOTE]
+> The ESP32 device can **only** be plugged into the Traduci board 12-pin port labeled 'JD'.
 
 ## Updating ESP32 Firmware manually
 
@@ -82,6 +93,12 @@ This flashing process does not require the use of a UART to USB Serial board. Th
 
 ## Features
 
+- Wi-Fi, Bluetooth LE, and Bluetooth communication available
+- 20.5 dBm output power at the antenna
+- Custom firmware to enable updates delivered through the Traduci
+- 12-pin Pmod connector with SPI and UART interfaces
+- Supports creation of Wi-Fi soft access points
+- Supports Http web server capabilities
 
 
 

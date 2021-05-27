@@ -16,6 +16,16 @@ The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 | --- | --- | --- |
 | RN52 | Basic Rate (BR) radio | rn52 (ex. RunPairingTests.bat rn52) |
 
+## Suported Tests
+    link to pairing tests goes here
+    link to audio  tests goes here
+    link to audio-hid
+    link to wi-fi coex
+
+## Hardware 
+
+The PMOD + Audio header RN52 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/rn52-sled)
+
 ### RN52 Device
 
 ![Photo of the RN52 Device](images/RN52.png)
@@ -26,6 +36,8 @@ The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 
 > [!NOTE]
 > The RN52 device can **only** be plugged into the Traduci board 12-pin port labeled 'JA'.
+
+## Features
 
 - UART data connection with AT commands to configure software
 - Supports SPP, A2DP, HFP, and AVRCP profiles
