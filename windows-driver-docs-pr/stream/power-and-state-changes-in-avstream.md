@@ -42,5 +42,7 @@ In this scenario, steps 5 and 6 are the steps that are reversed from the expecte
 
 Additionally, when an application is streaming and the system initiates a power down sequence, a capture graph that is running is always placed in a pause state. If the graph was already stopped, it remains stopped.
 
- 
+> [!NOTE]
+>
+> An AVStream minidriver is *NOT* a device power policy owner, so it should not call <b>PoRequestPowerIrp</b>. By default, KS (ksthunk.sys) creates a device power IRP when it receives a system power IRP. 
 
