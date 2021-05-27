@@ -27,7 +27,6 @@ The ESP32 can also be purchased via [Digilent](https://store.digilentinc.com/pmo
 
 USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731)
 
-
 ## Getting Started 
 
 If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd)
@@ -81,6 +80,7 @@ If the ESP32 already has BTP compatible firmware installed, future updates can b
 This flashing process does not require the use of a UART to USB Serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-manually)
 
 
+## Features
 
 
 

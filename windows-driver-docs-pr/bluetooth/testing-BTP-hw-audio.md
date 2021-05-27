@@ -63,3 +63,4 @@ More information can be found via the BM-64-EVB page from [**Microchip**](https:
 - Supports AAC and SBC codecs
 - Heavily featured, surface mount module
 - Using BM-64-EVB does not require a Traduci
+.

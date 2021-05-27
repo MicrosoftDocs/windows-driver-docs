@@ -12,6 +12,10 @@ ms.localizationpriority: medium
 
 The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as a HID peripheral such as a keyboard or mouse. It is currently supported by the BTP pairing and HID tests. More info can be found at [Digilent](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/) and through the [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42) RN42 reference.
 
+| Device | Capabilities | Parameter |
+| --- | --- | --- |
+| RN42 | Basic Rate (BR) radio | rn42 (ex. RunPairingTests.bat rn42) |
+
 ## Suported Tests
     link to pairing tests goes here
     link to hid tests goes here
@@ -30,6 +34,8 @@ The Pmod BT2 device can be purchased via [Digilent](https://store.digilentinc.co
 
 > [!NOTE]
 > The RN42 device can **only** be plugged into Bluetooth Test Platform Traduci board port labeled 'JB'.
+
+## Features
 
 - UART data connection
 - Supports HID profile and Bluetooth data links

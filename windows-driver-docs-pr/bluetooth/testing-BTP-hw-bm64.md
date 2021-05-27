@@ -10,14 +10,16 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. For more about the BM64, refer to the [Audio Capable Devices](testing-BTP-hw-audio.md).
-  
-This section will cover how to set up and use a BM-64-EVB-C2 for testing with BTP.
+The BM-64-EVB is a stand-alone evaluation board that tests audio and pairing for BTP. This section will cover how to set up and use a BM-64-EVB-C2 for testing with BTP.
 
 ![Photo of the BM-64-EVB](images/BM64-EVB-alpha.png)
 ## Required Hardware
 
 The BM-64-EVB-C2 can be purchased via [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/BM-64-EVB-C2/6152245).
+
+
+## Suported Tests
+    link to audios & audio hid tests goes here
 
 ## Getting Started
 
@@ -178,3 +180,11 @@ the [Verifying Installation with SPKCommand](testing-BTP-hw-bm64.md#verifying-in
 
 Another solution is using a different version of the SPKCommand. To do so, download and extract the MSPK v1.35 BM64 software kit from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64) on the *Documents / Software Libraries/Firmware* tab. Inside the MSPK v1.35 kit, locate the `SPKCommandSetTool v192.006.exe` tool (found at `BM64 Software & Tools (MSPKv1.35)\Tools\SPK CommandSet Tool`). Run through the same instructions in the [Verifying Installation with SPKCommand](testing-BTP-hw-bm64.md#verifying-installation-with-spkcommand) using the MSPK v1.35 version of the SPKCommand tool.
 If BM-64-EVB correctly responds using the MSPK v1.35 tool, then the board can be used with BTP.
+
+
+
+## Features
+
+
+## Known test failures
+

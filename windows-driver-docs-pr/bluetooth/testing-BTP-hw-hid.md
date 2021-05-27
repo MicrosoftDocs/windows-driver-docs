@@ -13,6 +13,9 @@ The Bluetooth Test Platform (BTP) Traduci requires a 12-pin connector to communi
 | Device | Capabilities | Parameter |
 | --- | --- | --- |
 | RN42 | Basic Rate (BR) radio | rn42 (ex. RunPairingTests.bat rn42) |
+
+| Device | Capabilities | Parameter |
+| --- | --- | --- |
 | Bluefruit | Low Energy (LE) radio | bluefruit (ex. RunPairingTests.bat bluefruit) |
 
 ## PMOD BT2 (RN42 device)
