@@ -7673,6 +7673,11 @@
       "source_path": "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-measures",
+      "redirect_document_id": false
     }
   ]
 }
