@@ -83,7 +83,7 @@ The device setup classes are different from USB device classes discussed earlier
       <tr>
         <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Dh (NCM)</td>
         <td>UsbNcm.sys</br>UsbNcm.inf</td>
-        <td>Windows Insider Preview</td>
+        <td>Windows Server 2022</td>
         <td>Microsoft provides the UsbNcm.sys driver to operate devices that comply with <a href="https://www.usb.org/document-library/network-control-model-devices-specification-v10-and-errata-and-adopters-agreement">Usb NCM</a>. The source code for this driver is available at <a href="https://github.com/microsoft/NCM-Driver-for-Windows">NCM-Driver-for-Windows</a>.</td>
       </tr>
       <tr>
