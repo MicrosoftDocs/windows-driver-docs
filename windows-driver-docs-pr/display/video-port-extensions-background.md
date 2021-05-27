@@ -1,7 +1,6 @@
 ---
 title: Video Port Extensions Background
 description: Video Port Extensions Background
-ms.assetid: 77bed8d3-4fe5-4159-88e9-d6565aea9117
 keywords:
 - DirectX VPE support WDK DirectDraw , about video port extensions
 - drawing VPEs WDK DirectDraw , about video port extensions

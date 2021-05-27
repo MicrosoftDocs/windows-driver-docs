@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_REGISTRY_TOO_LARGE
 description: CM_PROB_REGISTRY_TOO_LARGE
-ms.assetid: 8870ea57-4ae4-48a0-9d56-c5d0da8e1525
 keywords:
 - CM_PROB_REGISTRY_TOO_LARGE
 ms.date: 04/20/2017

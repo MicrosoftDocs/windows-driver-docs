@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_DRIVER\_VERSION
 description: The WIA\_DIP\_DRIVER\_VERSION property contains the current DLL version of a WIA minidriver. The WIA service creates and maintains this property.
-ms.assetid: 708d85b0-0daa-40d9-af38-6bf69834750b
 keywords: ["WIA_DIP_DRIVER_VERSION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If the WIA minidriver does not supply a version resource, the WIA service supplies the value "0.0.0.0" as a default. An application reads WIA\_DIP\_DRIVER\_VERSION to determine the version of the WIA minidriver DLL.
 
@@ -43,8 +41,7 @@ Also beginning with Windows Vista, if the **IPAutoconfigurationEnabled** registr
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

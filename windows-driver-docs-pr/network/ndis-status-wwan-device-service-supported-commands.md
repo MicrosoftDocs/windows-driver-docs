@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS notification to report the completion of a query of OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS.NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure.
-ms.assetid: 3EFEFB4B-6B13-44D7-8788-140B90103A93
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS Network Drivers Starting with Windows Vista
@@ -11,14 +10,13 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS notification to report the completion of a query of [OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-enumerate-device-service-commands).
+Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS notification to report the completion of a query of [OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](./oid-wwan-enumerate-device-service-commands.md).
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -40,14 +38,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-enumerate-device-service-commands)
+[OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](./oid-wwan-enumerate-device-service-commands.md)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands)
-
- 
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands)
 
  
-
-
-
 

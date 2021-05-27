@@ -1,7 +1,6 @@
 ---
 title: ks.pciaudio
 description: The ks.pciaudio extension displays a list of FDOs currently attached to PortCls.
-ms.assetid: 30d74f14-1cff-4b18-996a-8c91c20edebe
 keywords: ["ks.pciaudio Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,8 +64,7 @@ Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same 
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from **!ks.pciaudio**:
 

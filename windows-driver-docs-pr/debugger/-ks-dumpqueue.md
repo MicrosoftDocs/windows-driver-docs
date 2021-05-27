@@ -1,7 +1,6 @@
 ---
 title: ks.dumpqueue
 description: The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
-ms.assetid: d641b4e6-73d9-4c44-b2c6-0b6c688da368
 keywords: ["ks.dumpqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 *Object* must be a filter or a pin. For a pin, a single queue is displayed. For a filter, multiple queues are displayed.
 

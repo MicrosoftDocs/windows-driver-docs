@@ -1,7 +1,6 @@
 ---
 title: Notify Objects for Network Components
 description: Notify Objects for Network Components
-ms.assetid: 5b5c5da2-7163-44cf-8e8a-c736278f2535
 keywords:
 - notify objects WDK networking
 - network notify objects WDK
@@ -35,13 +34,7 @@ The following sections describe notify objects and explain how to develop them:
 
 [Creating a Notify Object](creating-a-notify-object.md)
 
-For reference information for the interface methods that support notify objects, see [Notify Objects](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559161(v=vs.85)).
+For reference information for the interface methods that support notify objects, see [Notify Objects](/previous-versions/windows/hardware/network/ff559161(v=vs.85)).
 
  
-
- 
-
-
-
-
 

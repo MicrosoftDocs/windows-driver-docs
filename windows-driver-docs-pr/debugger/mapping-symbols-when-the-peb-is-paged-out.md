@@ -1,7 +1,6 @@
 ---
 title: Mapping Symbols When the PEB is Paged Out
 description: Mapping Symbols When the PEB is Paged Out
-ms.assetid: dba9e686-81fc-4efa-a5c7-293b9e47e0b1
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

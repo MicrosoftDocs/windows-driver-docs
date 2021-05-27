@@ -1,12 +1,11 @@
 ---
-title: Overview
-description: Overview
-ms.assetid: 3b2895a2-9a2e-46eb-b8fb-47d6db4a1de0
+title: Oplock Overview
+description: Oplock Overview
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Overview
+# Oplock Overview
 
 
 ## <span id="ddk_network_redirector_design_and_performance_if"></span><span id="DDK_NETWORK_REDIRECTOR_DESIGN_AND_PERFORMANCE_IF"></span>
@@ -40,18 +39,11 @@ Some oplocks seem quite similar. In particular, R seems similar to Level 2, RW s
 
 The core functionality of the oplock package is implemented in the kernel (primarily through *FsRtlXxx* routines). File systems call into this package to implement the oplock functionality in their file system. This document describes how the NTFS file system interoperates with the kernel oplock package. Other file systems function in a similar manner though there might be minor differences.
 
-Oplocks are granted on stream handles. This means an oplock is granted for a given open of a stream. Starting with Windows 7, the stream handle can be associated with an *oplock key*, that is, a GUID value that is used to identify multiple handles that belong to the same client cache view (see the note later in this topic). The oplock key can be explicitly provided (to [**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex)) when the handle is created. If an oplock key is not explicitly specified when the handle is created, the system will treat the handle as having a unique oplock key associated with it, such that its key will differ from any other key on any other handle. If a file operation is received on a handle other than the one on which the oplock was granted, and the oplock key that is associated with the oplock's handle differs from the key that is associated with the operation's handle, and that operation is not compatible with the currently granted oplock, then that oplock is broken. The oplock breaks even if it is the same process or thread performing the incompatible operation. For example, if a process opens a stream for which an exclusive oplock is granted and the same process then opens the same stream again, using a different (or no) oplock key, the exclusive oplock is broken immediately.
+Oplocks are granted on stream handles. This means an oplock is granted for a given open of a stream. Starting with Windows 7, the stream handle can be associated with an *oplock key*, that is, a GUID value that is used to identify multiple handles that belong to the same client cache view (see the note later in this topic). The oplock key can be explicitly provided (to [**IoCreateFileEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex)) when the handle is created. If an oplock key is not explicitly specified when the handle is created, the system will treat the handle as having a unique oplock key associated with it, such that its key will differ from any other key on any other handle. If a file operation is received on a handle other than the one on which the oplock was granted, and the oplock key that is associated with the oplock's handle differs from the key that is associated with the operation's handle, and that operation is not compatible with the currently granted oplock, then that oplock is broken. The oplock breaks even if it is the same process or thread performing the incompatible operation. For example, if a process opens a stream for which an exclusive oplock is granted and the same process then opens the same stream again, using a different (or no) oplock key, the exclusive oplock is broken immediately.
 
 Remember that oplock keys exist on handles, and they are "put on" the handle when the handle is created. You can associate a handle with an oplock key even if no oplocks are granted.
 
-**Note**  It is more accurate to say that the oplock key is associated with the [**FILE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [DuplicateHandle](https://go.microsoft.com/fwlink/p/?linkid=124237). Each of the duplicate handles refers to the same underlying **FILE\_OBJECT** structure.
+**Note**  It is more accurate to say that the oplock key is associated with the [**FILE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [DuplicateHandle](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle). Each of the duplicate handles refers to the same underlying **FILE\_OBJECT** structure.
 
  
-
- 
-
- 
-
-
-
 

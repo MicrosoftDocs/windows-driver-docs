@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_LATENCY
 description: The KSPROPERTY\_AUDIO\_LATENCY property is used to report the delay (or amount of audio buffering) that is associated with the stream.
-ms.assetid: d155e3a5-e3e6-4381-9bbe-2a16b0be47b3
 keywords: ["KSPROPERTY_AUDIO_LATENCY Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_AUDIO\_LATENCY property is used to report the delay (or amount o
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstime" data-raw-source="[&lt;strong&gt;KSTIME&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstime)"><strong>KSTIME</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kstime" data-raw-source="[&lt;strong&gt;KSTIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kstime)"><strong>KSTIME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,13 +60,11 @@ The property value (operation data) is a structure of type KSTIME that specifies
 
 A KSPROPERTY\_AUDIO\_LATENCY property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
-This property is used to query the stream latency of a pin on an AEC filter. For more information, see [Exposing Hardware-Accelerated Capture Effects](https://docs.microsoft.com/windows-hardware/drivers/audio/exposing-hardware-accelerated-capture-effects).
+This property is used to query the stream latency of a pin on an AEC filter. For more information, see [Exposing Hardware-Accelerated Capture Effects](./exposing-hardware-accelerated-capture-effects.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,16 +82,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
-[**KSTIME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstime)
-
- 
-
- 
-
-
-
-
-
+[**KSTIME**](/windows-hardware/drivers/ddi/ks/ns-ks-kstime)
 

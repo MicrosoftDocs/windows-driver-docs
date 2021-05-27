@@ -1,7 +1,6 @@
 ---
 title: Macroblock Partitioning
 description: Macroblock Partitioning
-ms.assetid: 8b21df67-0f59-4c6d-8db6-f7ff7c982587
 keywords:
 - decoding video WDK DirectX VA , macroblock prediction
 - video decoding WDK DirectX VA , macroblock prediction

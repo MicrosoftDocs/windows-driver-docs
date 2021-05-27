@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 description: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
-ms.assetid: 30177e51-5312-4a24-972e-0c1c2d183d18
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -27,17 +26,17 @@ It does the following before sending this IRP to the drivers for a device:
 
 -   Notifies all kernel-mode drivers that registered for notification on the device (or a related device).
 
-    This includes drivers that registered for notification on the device, on one of the device's descendants, or on one of the device's removal relations. A driver registers for this notification by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) with an event category of **EventCategoryTargetDeviceChange**.
+    This includes drivers that registered for notification on the device, on one of the device's descendants, or on one of the device's removal relations. A driver registers for this notification by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) with an event category of **EventCategoryTargetDeviceChange**.
 
     In response to this notification, a driver either prepares for device removal (closes handles to the device) or fails the query.
 
--   Sends [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device) IRPs to the drivers for the device's descendants.
+-   Sends [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](./irp-mn-query-remove-device.md) IRPs to the drivers for the device's descendants.
 
 -   (Windows 2000 and later systems) If a file system is mounted on the device, the PnP manager sends a query-remove request to the file system and any file system filters. If there are open handles to the device, the file system typically fails the query-remove request. If not, the file system typically locks the volume to prevent future creates from succeeding. If a mounted file system does not support a query-remove request, the PnP manager fails the query-remove request for the device.
 
 If all of the above steps succeed, the PnP manager sends the **IRP\_MN\_QUERY\_REMOVE\_DEVICE** to the drivers for the device.
 
-An **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles remove IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+An **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles remove IRPs in its [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the following:
 
@@ -49,19 +48,19 @@ In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the follo
 
     -   If a component has an open handle to the device. (This is an issue on Windows 98/Me only. Windows 2000 and later versions of Windows track open handles and fail the query if there are open handles after the **IRP\_MN\_QUERY\_REMOVE\_DEVICE** completes.)
 
-    -   If a driver has been notified (through an [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-device-usage-notification) IRP) that the device is in the path for a paging, crash dump, or hibernation file.
+    -   If a driver has been notified (through an [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](./irp-mn-device-usage-notification.md) IRP) that the device is in the path for a paging, crash dump, or hibernation file.
 
-    -   If the driver has an outstanding interface reference against the device. That is, the driver provided an interface in response to an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request and the interface has not been dereferenced.
+    -   If the driver has an outstanding interface reference against the device. That is, the driver provided an interface in response to an [**IRP\_MN\_QUERY\_INTERFACE**](./irp-mn-query-interface.md) request and the interface has not been dereferenced.
 
 2.  If the device cannot be removed, fail the query-remove IRP.
 
-    Set **Irp-&gt;IoStatus.Status** to an appropriate error status (typically STATUS\_UNSUCCESSFUL), call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) with IO\_NO\_INCREMENT, and return from the driver's *DispatchPnP* routine. Do not pass the IRP to the next lower driver.
+    Set **Irp-&gt;IoStatus.Status** to an appropriate error status (typically STATUS\_UNSUCCESSFUL), call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) with IO\_NO\_INCREMENT, and return from the driver's *DispatchPnP* routine. Do not pass the IRP to the next lower driver.
 
-3.  If the driver previously sent an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) request to enable the device for wake-up, cancel the wait-wake IRP.
+3.  If the driver previously sent an [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) request to enable the device for wake-up, cancel the wait-wake IRP.
 
 4.  Record the previous PnP state of the device.
 
-    A driver should record the PnP state that the device was in when the driver received the [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device) request because the driver must return the device to that state if the query is canceled ([**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device)). The previous state is typically "started", which is the state that the device enters when the driver successfully completes an [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request.
+    A driver should record the PnP state that the device was in when the driver received the [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](./irp-mn-query-remove-device.md) request because the driver must return the device to that state if the query is canceled ([**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](./irp-mn-cancel-remove-device.md)). The previous state is typically "started", which is the state that the device enters when the driver successfully completes an [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request.
 
     However, other previous states are possible. For example, the user might have disabled the device through Device Manager. Or, in response to an **IRP\_MN\_QUERY\_CAPABILITIES** request, the parent bus driver (or a filter driver on the bus driver) might have reported that the device's hardware is disabled. In either case, the driver for the disabled device can receive an **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request before it receives an **IRP\_MN\_START\_DEVICE** request.
 
@@ -71,7 +70,7 @@ In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the follo
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP to the next lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
     -   Propagate the status from **IoCallDriver** as the return status from the *DispatchPnP* routine.
 
@@ -81,18 +80,13 @@ In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the follo
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Complete the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) with IO\_NO\_INCREMENT.
+    -   Complete the IRP ([**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) with IO\_NO\_INCREMENT.
 
     -   Return from the *DispatchPnP* routine.
 
-If any driver in the device stack fails an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, the PnP manager sends an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** to the device stack. This prevents drivers from requiring an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine for a query-remove IRP to detect whether a lower driver failed the IRP.
+If any driver in the device stack fails an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, the PnP manager sends an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** to the device stack. This prevents drivers from requiring an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine for a query-remove IRP to detect whether a lower driver failed the IRP.
 
 Once a driver succeeds an **IRP\_MN\_QUERY\_REMOVE\_DEVICE** and it considers the device to be in the remove-pending state, the driver must fail any subsequent create requests for the device. The driver processes all other IRPs as usual, until the driver receives an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** or an **IRP\_MN\_REMOVE\_DEVICE**.
 
  
-
- 
-
-
-
 

@@ -1,5 +1,5 @@
 ---
-Description: Setting Property Values
+description: Setting Property Values
 title: Setting Property Values
 ms.date: 04/20/2017
 ms.localizationpriority: medium

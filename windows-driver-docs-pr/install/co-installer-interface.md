@@ -1,7 +1,6 @@
 ---
 title: Co-installer Interface
 description: Co-installer Interface
-ms.assetid: affcf2a5-5dbb-49bd-916c-bc99302b5bd8
 keywords:
 - co-installers WDK device installations , interface
 - interface WDK co-installer
@@ -29,13 +28,13 @@ typedef DWORD
 ```
 
 <a href="" id="installfunction"></a>*InstallFunction*  
-Specifies the device installation request being processed, in which the co-installer has the option of participating. These requests are specified using DIF codes, such as DIF_INSTALLDEVICE. For more information, see [Device Installation Function Codes](https://docs.microsoft.com/previous-versions/ff541307(v=vs.85)).
+Specifies the device installation request being processed, in which the co-installer has the option of participating. These requests are specified using DIF codes, such as DIF_INSTALLDEVICE. For more information, see [Device Installation Function Codes](/previous-versions/ff541307(v=vs.85)).
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
 Supplies a handle to a [device information set](device-information-sets.md).
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally identifies a device that is the target of the device installation request. If this parameter is non-**NULL**, it identifies a device information element in the device information set. *DeviceInfoData* is non-**NULL** when [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) calls a device-specific co-installer. A class-specific co-installer can be called with a DIF request that has a **NULL***DeviceInfoData*, such as DIF_DETECT or DIF_FIRSTTIMESETUP.
+Optionally identifies a device that is the target of the device installation request. If this parameter is non-**NULL**, it identifies a device information element in the device information set. *DeviceInfoData* is non-**NULL** when [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) calls a device-specific co-installer. A class-specific co-installer can be called with a DIF request that has a **NULL***DeviceInfoData*, such as DIF_DETECT or DIF_FIRSTTIMESETUP.
 
 <a href="" id="context"></a>*Context*  
 Points to a [**COINSTALLER_CONTEXT_DATA**](#coinstaller-context-data) structure.
@@ -77,10 +76,4 @@ The following list describes the members of this structure:
 -   **PrivateData** points to a co-installer-allocated buffer. If a co-installer sets this pointer and requests postprocessing, **SetupDiCallClassInstaller** passes the pointer to the co-installer when it calls the co-installer for postprocessing.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Tile resources
 description: For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient.
-ms.assetid: D48D2046-64A6-4B0E-9235-84DD2A83DB39
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ This means that the paging operation needs to be queued behind a graphics proces
 
 In theory, in today's packet based scheduling we could implement the wait portion of the operation in the device paging queue, monitor the wait and submit the paging operation to the shared system context after the wait condition has been satisfied. However, as we move beyond packet based scheduling and onto hardware scheduling we want to ensure that we can use GPU to GPU synch primitives for the interlocked operations to ensure the best possible performance.
 
-To solve this problem, we're introducing the notion of a per-context paging companion context. The paging companion context is lazily created on the first call to [*UpdateGpuVirtualAddress*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) and is used for all page table updates that require interlocked synchronization. *UpdateGpuVirtualAddress* takes a GPU monitored fence object and a specific fence value as parameters. The companion context waits on this monitored fence does the page table update and then increments the monitored fence object and signals it. This allows the rendering context to tightly synchronize with the companion context.
+To solve this problem, we're introducing the notion of a per-context paging companion context. The paging companion context is lazily created on the first call to [*UpdateGpuVirtualAddress*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) and is used for all page table updates that require interlocked synchronization. *UpdateGpuVirtualAddress* takes a GPU monitored fence object and a specific fence value as parameters. The companion context waits on this monitored fence does the page table update and then increments the monitored fence object and signals it. This allows the rendering context to tightly synchronize with the companion context.
 
 Page table update using the companion context is illustrated below.
 
@@ -38,7 +37,7 @@ We opted for a per-process privileged GPU virtual address space rather than re-u
 
 The per-process privileged GPU virtual address space is initialized such that the process GPU page tables are visible through the address space making it possible for update command to update the various page table entries using the GPU. Further, all tile pools created by a process are also mapped into the address space.
 
-The way page table entries are updated by the companion context is a bit special and requires some explaining. When a *map* operation is queued for execution on the shared system context, the video memory manager knows the physical addresses being mapped to and those physical addresses can appear directly in the associated paging buffer. [*UpdatePageTable*](https://docs.microsoft.com/windows-hardware/drivers/display/dxgkddiupdatepagetable) paging operations are used in this case and the video memory manager guarantees that paging operations on some specific pages will complete before those pages are reused for some other purpose.
+The way page table entries are updated by the companion context is a bit special and requires some explaining. When a *map* operation is queued for execution on the shared system context, the video memory manager knows the physical addresses being mapped to and those physical addresses can appear directly in the associated paging buffer. [*UpdatePageTable*](./dxgkddiupdatepagetable.md) paging operations are used in this case and the video memory manager guarantees that paging operations on some specific pages will complete before those pages are reused for some other purpose.
 
 However, for synchronous updates of page tables on the companion context, things are more difficult. The video memory manager knows the physical page of tile pool being referenced at the time the update operations are built, however, given those operations will be queued behind an arbitrary long GPU wait (the app could even deadlock and never signal), the video memory manager doesn't know what the physical page of the tile pool will be at the time the paging operation actually do get executed and the video memory manager can't keep the tile pool at that location for an arbitrary long time.
 
@@ -57,15 +56,9 @@ This mechanism is illustrated below:
 ## <span id="_Update_GPU_virtual_address_on_GPUs_with_CPU_VIRTUAL_page_table_update_mode"></span><span id="_update_gpu_virtual_address_on_gpus_with_cpu_virtual_page_table_update_mode"></span><span id="_UPDATE_GPU_VIRTUAL_ADDRESS_ON_GPUS_WITH_CPU_VIRTUAL_PAGE_TABLE_UPDATE_MODE"></span> Update GPU virtual address on GPUs with CPU\_VIRTUAL page table update mode
 
 
-On GPUs, which support the **DXGK\_PAGETABLEUPDATE\_CPU\_VIRTUAL** page table update mode, the **CopyPageTableEntries** operation will not be used. These are integrated GPU, which do not use paging buffers. The video memory manager will defer the update operation until the right time and use the [*UpdatePageTable*](https://docs.microsoft.com/windows-hardware/drivers/display/dxgkddiupdatepagetable) operations to setup page tables.
+On GPUs, which support the **DXGK\_PAGETABLEUPDATE\_CPU\_VIRTUAL** page table update mode, the **CopyPageTableEntries** operation will not be used. These are integrated GPU, which do not use paging buffers. The video memory manager will defer the update operation until the right time and use the [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations to setup page tables.
 
-The disadvantage of this method is that the [*UpdatePageTable*](https://docs.microsoft.com/windows-hardware/drivers/display/dxgkddiupdatepagetable) operations are not parallel with rendering operations. The advantage is that the driver does not need to implement support for paging buffers and implement *UpdatePageTable* as an immediate operation.
-
- 
+The disadvantage of this method is that the [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations are not parallel with rendering operations. The advantage is that the driver does not need to implement support for paging buffers and implement *UpdatePageTable* as an immediate operation.
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode Video Transport
 description: Kernel-Mode Video Transport
-ms.assetid: 3acaabc7-8d9f-441b-9170-2e5a4e0ce114
 keywords:
 - drawing kernel-mode video transport WDK DirectDraw , about kernel-mode video transport
 - DirectDraw kernel-mode video transport WDK Windows 2000 display , about kernel-mode video transport

@@ -1,7 +1,6 @@
 ---
 title: Debugging Environments
 description: Starting with Windows Driver Kit (WDK) 8.0, the driver development environment and the Windows debugger are integrated into Microsoft Visual Studio.
-ms.assetid: 13F9D82A-4C04-425A-A063-B349DB5C8E08
 keywords: ["WinDbg", "KD", "CDB", "NTSD"]
 ms.date: 02/20/2020
 ms.localizationpriority: medium
@@ -40,7 +39,7 @@ WinDbg is a graphical-interface counterpart to CDB/NTSD and to KD/NTKD.
 
 ### <span id="KD"></span><span id="kd"></span>KD
 
-Microsoft Kernel Debugger (KD) is a character-based console program that enables in-depth analysis of kernel-mode activity on all NT-based operating systems. You can use KD can to debug kernel-mode components and drivers, or to monitor the behavior of the operating system itself. KD also supports multiprocessor debugging.
+Microsoft Kernel Debugger (KD) is a character-based console program that enables in-depth analysis of kernel-mode activity on all NT-based operating systems. You can use KD to debug kernel-mode components and drivers, or to monitor the behavior of the operating system itself. KD also supports multiprocessor debugging.
 
 Typically, KD does not run on the computer being debugged. You need two computers (the *host computer* and the *target computer*) for kernel-mode debugging.
 

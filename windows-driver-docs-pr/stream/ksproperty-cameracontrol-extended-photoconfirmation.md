@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION property ID that is defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration is used to set and get the photo confirmation settings in the driver.
-ms.assetid: 3EF6FF15-6805-4D91-B053-1BF6C5D5BEF2
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to set and get the photo confirmation settings in the driver.
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to set and get the photo confirmation settings in the driver.
 
 ## Usage summary table
 
@@ -43,14 +42,14 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that 
 </tbody>
 </table>
 
-For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the following flag values are used to turn photo confirmation on or off. By default, the driver should have **KSPROPERTY\_PHOTOCONFIRMATION\_ON** set. The flag values are defined as follows.
+For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the following flag values are used to turn photo confirmation on or off. By default, the driver should have **KSPROPERTY\_PHOTOCONFIRMATION\_ON** set. The flag values are defined as follows.
 
 ```cpp
 #define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_OFF     0x0000000000000000 
 #define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_ON      0x0000000000000001
 ```
 
-If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_OFF**, the driver preview pin must not produce a photo frame or produce the [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation) structure that contains photo confirmation metadata. If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_ON**, the driver preview pin must produce a photo frame and produce the **KSCAMERA\_METADATA\_PHOTOCONFIRMATION** structure that contains photo confirmation metadata.
+If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_OFF**, the driver preview pin must not produce a photo frame or produce the [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation) structure that contains photo confirmation metadata. If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_ON**, the driver preview pin must produce a photo frame and produce the **KSCAMERA\_METADATA\_PHOTOCONFIRMATION** structure that contains photo confirmation metadata.
 
 The table below contains the descriptions and requirements for the **KSCAMERA\_EXTENDEDPROP\_HEADER** structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property.
 
@@ -76,7 +75,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>).</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>

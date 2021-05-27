@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x121 DRIVER_VIOLATION
 description: The DRIVER_VIOLATION bug check has a value of 0x00000121. This bug check indicates that a driver has caused a violation.
-ms.assetid: 4a5d1d84-a958-45a6-9511-b5b4ecd4c067
 keywords: ["Bug Check 0x121 DRIVER_VIOLATION", "DRIVER_VIOLATION"]
 ms.date: 10/08/2019
 topic_type:
@@ -53,7 +52,6 @@ Parameter 1 indicates the type of violation.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
-Use a kernel debugger and view the call stack to determine the name of the driver that caused the violation: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
+Use a kernel debugger and view the call stack to determine the name of the driver that caused the violation: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.

@@ -1,7 +1,6 @@
 ---
 title: Verify background events
 description: Verify background events
-ms.assetid: c840f555-2e09-409d-9d4f-4d9e8bd8d5a5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,7 +29,7 @@ Next, check that you can successfully authenticate to the network. In particular
 ## <span id="related_topics"></span>Related topics
 
 
-[Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
+[Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
 
  
 

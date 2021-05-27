@@ -1,7 +1,6 @@
 ---
 title: ValidationInfo element
 description: The required ValidationInfo element contains all ScanTicket validation information in response to a client's ValidateScanTicketRequest.
-ms.assetid: c727cbd7-6da0-4750-b36e-3b65e56015fa
 keywords: ["ValidationInfo element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ValidationInfo** element contains all [**ScanTicket**](scanticket.md) validation information in response to a client's [**ValidateScanTicketRequest**](validatescanticketrequest.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidationInfo>
@@ -27,8 +25,7 @@ Usage
 </wscn:ValidationInfo>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -76,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ValidationInfo** element contains elements that define whether the client's [**ScanTicket**](scanticket.md) is valid and, if not, what data the WSD Scan Service changed to make the ticket valid. The Scan Service returns this information in its [**ValidateScanTicketResponse**](validatescanticketresponse.md) operation.
 

@@ -1,7 +1,6 @@
 ---
 title: Configuration of COM Ports
 description: Configuration of COM Ports
-ms.assetid: 519ca9c8-bc67-4a85-87ae-6015c6212dea
 keywords:
 - COM ports WDK serial devices
 - serial devices WDK , COM ports
@@ -19,6 +18,6 @@ Starting with Windows 2000, a COM port is a type of serial port that complies wi
 
 - To ensure compatibility with most applications that access COM ports, you should assign a symbolic link name that uses the standard naming convention "COM<em>&lt;n&gt;</em>", where *&lt;n&gt;* is the COM port number (for example, COM1). If you use a COM<em>&lt;n&gt;</em> name, you must obtain the COM port number *&lt;n&gt;* from the [COM port database](com-port-database.md). COM port numbers should only be used with COM<em>&lt;n&gt;</em> names.
 
-By default, the combined operation of the class installer for the Ports [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) and the Serial function driver configure a device as a COM port.
+By default, the combined operation of the class installer for the Ports [device setup class](../install/overview-of-device-setup-classes.md) and the Serial function driver configure a device as a COM port.
 
 For information about how the Ports class installer and Serial create a COM port device interface for a COM port, see [External Naming of COM Ports](external-naming-of-com-ports.md).

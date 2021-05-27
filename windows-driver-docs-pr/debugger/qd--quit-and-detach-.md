@@ -1,7 +1,6 @@
 ---
 title: qd (Quit and Detach)
 description: The qd command ends the debugging session and leaves any user-mode target application running.
-ms.assetid: 3282c78b-6c4b-4c1b-a086-4890c3140ab9
 keywords: ["qd (Quit and Detach) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ qd
 
  
 
-Remarks
--------
+## Remarks
 
 The **qd** command detaches from a target application and ends the debugging session, leaving the target still running. However, this command is supported only on Microsoft Windows XP and later versions of Windows. On Windows 2000, **qd** generates a warning message and has no effect.
 

@@ -1,7 +1,6 @@
 ---
 title: CreateVirtualPort method
 description: The CreateVirtualPort method creates a virtual port with a specific world wide port name (WWPN) .
-ms.assetid: B4274FB7-2850-4E17-ACDE-5592B0390E8B
 keywords: ["CreateVirtualPort method Storage Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.date: 10/17/2018
 
 The **CreateVirtualPort** method creates a virtual port with a specific world wide port name (WWPN) .
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void CreateVirtualPort(
@@ -31,8 +29,7 @@ void CreateVirtualPort(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *WWPN\[8\]*   
 The world wide port name of the virtual port to create.
@@ -49,22 +46,14 @@ A symbolic name for the virtual port.
 *Status*   
 On return, contains the status of the operation.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
 ## <span id="see_also"></span>See also
 
 
-[NPIV Status Codes](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
+[NPIV Status Codes](/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

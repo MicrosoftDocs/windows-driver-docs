@@ -1,7 +1,6 @@
 ---
 title: Introduction to the NetAdapterCx data path
 description: Introduction to the NetAdapterCx data path
-ms.assetid: D2AC8269-F2D5-4FDC-A59E-6A35DBB18FF0
 keywords:
 - NetAdapterCx transferring network data, NetCx transferring network data
 ms.date: 07/01/2019
@@ -21,3 +20,4 @@ The following topics explain in detail how to transfer network data in your NetA
 - [Transmit and receive queues](transmit-and-receive-queues.md)
 - [Introduction to net rings](introduction-to-net-rings.md)
 - [Network data buffer management](network-data-buffer-management.md)
+- [Introduction to hardware offloads](introduction-to-hardware-offloads.md)

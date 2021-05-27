@@ -1,7 +1,6 @@
 ---
 title: Minimal Interoperability Configuration Sets
 description: Minimal Interoperability Configuration Sets
-ms.assetid: 2390c710-8693-4af4-903f-89068436141d
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , restricted profiles
 - Video Acceleration WDK DirectX , restricted profiles

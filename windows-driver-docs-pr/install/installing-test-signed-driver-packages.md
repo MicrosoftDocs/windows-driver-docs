@@ -1,7 +1,6 @@
 ---
 title: Installing Test-Signed Driver Packages
 description: Installing Test-Signed Driver Packages
-ms.assetid: 6abbe51c-0fdf-465f-b1f2-d48e593a4f0e
 keywords:
 - test signing drivers WDK , installing test-signed driver packages
 - driver signing WDK , driver packages
@@ -35,13 +34,7 @@ Starting with Windows Vista, a test-signed [driver package](driver-packages.md) 
 
 For an overview of how to install a test-signed driver package, see [Installing a Test-Signed Driver Package on the Test Computer](installing-a-test-signed-driver-package-on-the-test-computer.md).
 
-For more information about how to troubleshoot installation problems, see [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md).
+For more information about how to troubleshoot installation problems, see [Troubleshooting Install and Load Problems with Signed Driver Packages](./detecting-driver-load-errors.md).
 
  
-
- 
-
-
-
-
 

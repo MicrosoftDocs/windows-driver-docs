@@ -1,7 +1,6 @@
 ---
 title: GetActiveJobsResponse element
 description: The required GetActiveJobsResponse element returns a summary of job-related variables for all currently active scan jobs.
-ms.assetid: 77efef7f-451d-49f8-80c1-6ab12c98ee7b
 keywords: ["GetActiveJobsResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **GetActiveJobsResponse** element returns a summary of job-related variables for all currently active scan jobs.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetActiveJobsResponse>
@@ -27,8 +25,7 @@ Usage
 </wscn:GetActiveJobsResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetActiveJobsResponse** operation.
 
@@ -65,8 +61,7 @@ A client can call [**GetActiveJobsRequest**](getactivejobsrequest.md) to determi
 
 **GetActiveJobsResponse** contains an [**ActiveJobs**](activejobs.md) element that contains a summary of all jobs.
 
-Examples
---------
+## Examples
 
 The following code example shows how to return the fact that there are no active scan jobs.
 

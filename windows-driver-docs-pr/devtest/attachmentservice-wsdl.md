@@ -1,7 +1,6 @@
 ---
 title: AttachmentService WSDL
 description: AttachmentService WSDL
-ms.assetid: 1a886bd8-5eb4-4990-9d39-bacbbbbe3d3d
 keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL
@@ -14,17 +13,16 @@ ms.localizationpriority: medium
 
 # AttachmentService WSDL
 
-
 The following code sample shows the AttachmentService WSDL.
 
-```
-<wsdl:definitions 
- targetNamespace="http://schemas.example.org/AttachmentService" 
+```command
+<wsdl:definitions
+ targetNamespace="http://schemas.example.org/AttachmentService"
  xmlns:tns="http://schemas.example.org/AttachmentService"
- xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" 
- xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
- xmlns:wsdp="http://schemas.xmlsoap.org/ws/2005/05/devprof" 
- xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" 
+ xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:wsdp="http://schemas.xmlsoap.org/ws/2005/05/devprof"
+ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
  xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/"
  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
  xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
@@ -36,23 +34,23 @@ The following code sample shows the AttachmentService WSDL.
  </wsp:Policy>
 
  <wsdl:types>
- <xs:schema 
+ <xs:schema
    targetNamespace="http://schemas.example.org/AttachmentService"
-   xmlns:tns="http://schemas.example.org/AttachmentService" 
+   xmlns:tns="http://schemas.example.org/AttachmentService"
    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   elementFormDefault="qualified" 
+   elementFormDefault="qualified"
    blockDefault="#all" >
  <xs:element name="OneWayAttachment" type="tns:AttachmentType" />
  <xs:complexType name="AttachmentType" >
  <xs:sequence>
  <xs:element name="Param" type="xs:base64Binary" />
- <xs:any minOccurs="0" maxOccurs="unbounded" 
+ <xs:any minOccurs="0" maxOccurs="unbounded"
  namespace="##other" processContents="lax" />
  </xs:sequence>
  <xs:anyAttribute namespace="##other"
  processContents="lax" />
  </xs:complexType>
- <xs:element name="TwoWayAttachmentRequest"    
+ <xs:element name="TwoWayAttachmentRequest"
  type="tns:AttachmentType" />
  <xs:element name="TwoWayAttachmentResponse"
  type="tns:AttachmentType" />
@@ -111,7 +109,7 @@ The following code sample shows the AttachmentService WSDL.
  </wsdl:binding>
 
  <wsdl:service name="AttachmentService">
- <wsdl:port 
+ <wsdl:port
  name="AttachmentPort"
  binding="tns:AttachmentServiceSoap12Binding">
  <wsoap12:address
@@ -121,12 +119,3 @@ The following code sample shows the AttachmentService WSDL.
 
 </wsdl:definitions>
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_EXT\_DEVICE
 description: PROPSETID\_EXT\_DEVICE
-ms.assetid: fe1a14dc-b337-462b-ac2a-10eef036ef7f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

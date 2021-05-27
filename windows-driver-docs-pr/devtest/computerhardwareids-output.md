@@ -1,7 +1,6 @@
 ---
 title: ComputerHardwareIds Output
 description: ComputerHardwareIds Output
-ms.assetid: 38a08dda-92db-4389-9c2c-91fe17a88051
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -34,13 +33,7 @@ Hardware IDs
 {d7be59e5-29b5-589a-b49d-de7265ef6a7b}    <- Manufacturer + Family + ProductName
 ```
 
-In this example, the vendor (Contoso Inc.) would typically use the second hardware ID (d7be59e5-29b5-589a-b49d-de7265ef6a7b) for the value of the [**HardwareID**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff546114(v=vs.85)) element in the [PackageInfo XML document](https://docs.microsoft.com/windows-hardware/drivers/install/packageinfo-xml-document) of the vendor's device metadata package.
+In this example, the vendor (Contoso Inc.) would typically use the second hardware ID (d7be59e5-29b5-589a-b49d-de7265ef6a7b) for the value of the [**HardwareID**](/previous-versions/windows/hardware/metadata/ff546114(v=vs.85)) element in the [PackageInfo XML document](../install/packageinfo-xml-document.md) of the vendor's device metadata package.
 
  
-
- 
-
-
-
-
 

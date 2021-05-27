@@ -1,7 +1,21 @@
 - name: "Streaming media devices design guide"
   href: index.md
 - name: "Device firmware update for USB devices without using a co-installer"
-  href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+# Auto-expanded node
+  items: 
+  - name: "Device firmware update for USB devices without using a co-installer"
+    href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+- name: "Network camera design guide"
+# Auto-expanded node
+  items: 
+  - name: "Network camera design guide"
+    href: network-camera-design-guide.md
+  - name: "KSPROPERTYSETID_NetworkCameraControl"
+    href: kspropertysetid-networkcameracontrol.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
+    href: ksproperty-networkcameracontrol-ntp.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
+    href: ksproperty-networkcameracontrol-uri.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
@@ -25,6 +39,8 @@
     href: infrared-stream-support-in-uvc.md
   - name: "Camera class INF file setting for Universal camera drivers"
     href: camera-driver-inf-file-class-setting.md
+  - name: "Driver support for Camera UVC Control Cache"
+    href: camera-device-uvc-control-cache.md
   - name: "Microsoft extensions to USB Video Class 1.5 specification"
     href: uvc-extensions-1-5.md
 - name: "Windows Hello Camera driver bring up guide"
@@ -37,6 +53,8 @@
   href: 360-camera-video-capture.md
 - name: "Flashlight (Lamp) Support"
   href: flashlight-support.md
+- name: "TorchControl shared usage registry settings"
+  href: oem-guidance-on-registry-keys-for-shared-torch-usage.md
 - name: "Streaming Media Samples"
   href: streaming-media-samples.md
 - name: "OEM guidance on settings for the Windows 10 in-box camera app"
@@ -46,20 +64,20 @@
 - name: "Universal camera driver model for Windows 10"
 # Auto-expanded node
   items: 
-  - name: "Universal camera driver model for Windows 10"
+  - name: "Universal camera driver model design guide for Windows 10"
     href: windows-10-technical-preview-camera-drivers-design-guide.md
-  - name: "New camera driver interfaces for Windows 10"
+  - name: "Universal camera driver interfaces for Windows 10"
 # Auto-expanded node
     items: 
-    - name: "New camera driver interfaces for Windows 10"
+    - name: "Universal camera driver reference for Windows 10"
       href: windows-10-technical-preview-camera-drivers-reference.md
-    - name: "New camera driver controls for Windows 10"
+    - name: "Universal camera driver controls for Windows 10"
       href: camera-driver-controls.md
-    - name: "New camera driver enumerations for Windows 10"
+    - name: "Universal camera driver enumerations for Windows 10"
       href: camera-driver-enumerations.md
-    - name: "New camera driver functions for Windows 10"
+    - name: "Universal camera driver functions for Windows 10"
       href: camera-driver-functions.md
-    - name: "New camera driver structures for Windows 10"
+    - name: "Universal camera driver structures for Windows 10"
       href: camera-driver-structures.md
 - name: "AVStream Minidrivers Design Guide"
 # Auto-expanded node
@@ -917,6 +935,8 @@
       href: ksproperty-pin-interfaces.md
     - name: "KSPROPERTY_PIN_MEDIUMS"
       href: ksproperty-pin-mediums.md
+    - name: "KSPROPERTY_PIN_MODEDATAFORMATS"
+      href: ksproperty-pin-modedataformats.md
     - name: "KSPROPERTY_PIN_NAME"
       href: ksproperty-pin-name.md
     - name: "KSPROPERTY_PIN_NECESSARYINSTANCES"
@@ -1544,6 +1564,8 @@
       href: ksproperty-cameracontrol-extended-photomode2.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE"
       href: ksproperty-cameracontrol-extended-profile.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION"
+      href: ksproperty-cameracontrol-extended-relativepaneloptimization.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS"
       href: ksproperty-cameracontrol-extended-roi-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL"

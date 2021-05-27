@@ -1,7 +1,6 @@
 ---
 title: Registering for Device Interface Change Notification
 description: Registering for Device Interface Change Notification
-ms.assetid: 680e4c5c-dac6-41b1-b754-aee782145ed0
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP", "registering device interface change notifications", "IoRegisterPlugPlayNotification"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-A driver registers for notification of device interface arrival and removal events by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
+A driver registers for notification of device interface arrival and removal events by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
 
 The following information applies to calling this routine for device interface change notification:
 
@@ -27,18 +26,13 @@ The following information applies to calling this routine for device interface c
 
     This flag directs the PnP manager to register the *CallbackRoutine* for future device interface arrivals and departures of the specified class and to call the *CallbackRoutine* immediately for any relevant device interfaces that are already active.
 
-    A driver can call [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to get a list of existing interfaces of a specific class and then register its callback routine without this flag, but using the flag is easier and avoids a potential timing issue.
+    A driver can call [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to get a list of existing interfaces of a specific class and then register its callback routine without this flag, but using the flag is easier and avoids a potential timing issue.
 
 -   Specify a driver-defined *Context*, if appropriate, that the PnP manager will pass to the callback routine.
 
 A driver that opens a handle to a device in response to a device interface arrival notification should register for **EventCategoryTargetDeviceChange** events on the device. (See [Using PnP Target Device Change Notification](using-pnp-target-device-change-notification.md).)
 
-A driver cancels notification registration by calling [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
+A driver cancels notification registration by calling [**IoUnregisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
 
  
-
- 
-
-
-
 

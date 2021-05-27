@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfdumpobjects
 description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
-ms.assetid: 2ede7f2e-124c-494d-9188-5a28617a0bdb
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the address to track leaked objects. This address is displayed in the 
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If the UMDF object tracking option (**TrackObjects**) has been enabled in WDF Verifier, you can use **!wudfext.wudfdumpobjects** to see any leaked objects that remain after the driver unloads.
 

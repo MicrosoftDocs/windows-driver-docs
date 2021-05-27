@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BSS_SELECTION_PARAMETERS
 description: WDI_TLV_BSS_SELECTION_PARAMETERS is a TLV that contains WDI_BSS_SELECTION_FLAGS that are used by host for BSS selection.
-ms.assetid: 5EDA0FAC-DF2E-437B-BB4F-F69468CE856E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_SELECTION_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_BSS\_SELECTION\_PARAMETERS
 
 
-WDI\_TLV\_BSS\_SELECTION\_PARAMETERS is a TLV that contains [**WDI\_BSS\_SELECTION\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bss_selection_flags) that are used by host for BSS selection.
+WDI\_TLV\_BSS\_SELECTION\_PARAMETERS is a TLV that contains [**WDI\_BSS\_SELECTION\_FLAGS**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bss_selection_flags) that are used by host for BSS selection.
 
 ## TLV Type
 
@@ -28,12 +27,11 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                     |
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| UINT32 | [**WDI\_BSS\_SELECTION\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bss_selection_flags) that are used by the host for BSS selection. |
+| UINT32 | [**WDI\_BSS\_SELECTION\_FLAGS**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_bss_selection_flags) that are used by the host for BSS selection. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

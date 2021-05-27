@@ -1,7 +1,6 @@
 ---
 title: Edit Write Window Text to File
 description: Edit Write Window Text to File
-ms.assetid: 7a86a8e4-7ab8-46ba-9bd5-4aef81cd1f29
 keywords: ["Edit Write Window Text to File"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

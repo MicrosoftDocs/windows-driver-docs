@@ -1,7 +1,6 @@
 ---
 title: GDL Configurations
 description: GDL Configurations
-ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL

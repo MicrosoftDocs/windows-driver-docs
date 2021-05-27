@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_AUDIO\_DATA\_FORMAT
 description: The WIA\_IPC\_AUDIO\_DATA\_FORMAT property is obsolete and should not be used.
-ms.assetid: 8b7ec009-ac27-4087-ac88-1efadcd6bdd8
 keywords: ["WIA_IPC_AUDIO_DATA_FORMAT Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

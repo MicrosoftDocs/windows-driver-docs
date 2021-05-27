@@ -1,7 +1,6 @@
 ---
 title: Changing Floating-Point Control State
 description: Changing Floating-Point Control State
-ms.assetid: de1ace72-ee3c-4adc-8e40-0d687b18cc25
 keywords:
 - floating-point control state WDK display
 ms.date: 04/20/2017

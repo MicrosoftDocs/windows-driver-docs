@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SafeRemovalRequiredOverride
 description: DEVPKEY_Device_SafeRemovalRequiredOverride
-ms.assetid: 8289effe-3849-41bf-b870-69e3d8cb8850
 keywords: ["DEVPKEY_Device_SafeRemovalRequiredOverride Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_SafeRemovalRequiredOverride device property represents the sa
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -47,14 +52,13 @@ The DEVPKEY_Device_SafeRemovalRequiredOverride device property represents the sa
 
  
 
-Remarks
--------
+## Remarks
 
 This device property can be used to override the result of the heuristic that Windows Plug and Play (PnP) uses to calculate the value of the [**DEVPKEY_Device_SafeRemovalRequired**](devpkey-device-saferemovalrequired.md) device property. This override is performed as follows:
 
 -   If the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE and the device instance is removable or has a removable ancestor, PnP sets the DEVPKEY_Device_SafeRemovalRequired device property to DEVPROP_TRUE and does not use the heuristic.
 
-    **Note**  A device instance is considered removable if its removable device capability is set. For more information, see [Overview of the Removable Device Capability](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-the-removable-device-capability).
+    **Note**  A device instance is considered removable if its removable device capability is set. For more information, see [Overview of the Removable Device Capability](./overview-of-the-removable-device-capability.md).
 
      
 
@@ -62,10 +66,9 @@ This device property can be used to override the result of the heuristic that Wi
 
 -   If the DEVPKEY_Device_SafeRemovalRequiredOverride device property is either not set or set to DEVPROP_FALSE, PnP sets the DEVPKEY_Device_SafeRemovalRequired device property to a value that is determined by using the heuristic.
 
-You can retrieve the value of DEVPKEY_Device_SafeRemovalRequiredOverride by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw). You can also set this value by calling [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_SafeRemovalRequiredOverride by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw). You can also set this value by calling [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,16 +90,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
-
- 
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
-
-
-
-
-
 

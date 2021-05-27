@@ -1,7 +1,6 @@
 ---
 title: Registry Key Objects
 description: Registry Key Objects
-ms.assetid: c666f0cc-5a8a-4df8-9c65-08e3b044a08f
 keywords:
 - helper objects WDK audio , registry key objects
 - registry key objects WDK audio
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="registry_key_objects"></span><span id="REGISTRY_KEY_OBJECTS"></span>
 
 
-The PortCls system driver implements the [IRegistryKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey) interface for the benefit of miniport drivers. An IRegistryKey object represents a registry key. Miniport drivers use registry key objects to do the following:
+The PortCls system driver implements the [IRegistryKey](/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey) interface for the benefit of miniport drivers. An IRegistryKey object represents a registry key. Miniport drivers use registry key objects to do the following:
 
 -   Create and delete registry keys
 
@@ -23,7 +22,7 @@ The PortCls system driver implements the [IRegistryKey](https://docs.microsoft.c
 
 -   Query and set registry keys
 
-When querying a registry key object for information about a registry entry under the specified key, the query can output the information in one of three formats, each of which uses a different key-query structure. The following table shows the [**KEY\_INFORMATION\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_key_information_class) enumeration values that indicate which of the three key-query structures is output by the query.
+When querying a registry key object for information about a registry entry under the specified key, the query can output the information in one of three formats, each of which uses a different key-query structure. The following table shows the [**KEY\_INFORMATION\_CLASS**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_key_information_class) enumeration values that indicate which of the three key-query structures is output by the query.
 
 <table>
 <colgroup>
@@ -39,47 +38,40 @@ When querying a registry key object for information about a registry entry under
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>KeyBasicInformation</strong></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information" data-raw-source="[&lt;strong&gt;KEY_BASIC_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information)"><strong>KEY_BASIC_INFORMATION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information" data-raw-source="[&lt;strong&gt;KEY_BASIC_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information)"><strong>KEY_BASIC_INFORMATION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>KeyFullInformation</strong></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information" data-raw-source="[&lt;strong&gt;KEY_FULL_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information)"><strong>KEY_FULL_INFORMATION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information" data-raw-source="[&lt;strong&gt;KEY_FULL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information)"><strong>KEY_FULL_INFORMATION</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>KeyNodeInformation</strong></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information" data-raw-source="[&lt;strong&gt;KEY_NODE_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information)"><strong>KEY_NODE_INFORMATION</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information" data-raw-source="[&lt;strong&gt;KEY_NODE_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information)"><strong>KEY_NODE_INFORMATION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-To open an existing registry key or create a new registry key, an adapter driver can call the [**PcNewRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewregistrykey) function, and a miniport driver can call the port driver's [**IPort::NewRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-newregistrykey) method. The two calls are similar, except that the **PcNewRegistryKey** function requires two additional parameters, *DeviceObject* and *SubDevice*. For more information, see **PcNewRegistryKey**.
+To open an existing registry key or create a new registry key, an adapter driver can call the [**PcNewRegistryKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewregistrykey) function, and a miniport driver can call the port driver's [**IPort::NewRegistryKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-newregistrykey) method. The two calls are similar, except that the **PcNewRegistryKey** function requires two additional parameters, *DeviceObject* and *SubDevice*. For more information, see **PcNewRegistryKey**.
 
-When a miniport driver creates a new [IRegistryKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey) object, the object either opens an existing subkey or creates a new registry subkey if none exists. In either case, the registry key object stores the handle to the key. When that object is later released and its reference count decrements to zero, the object automatically closes its handle to the key.
+When a miniport driver creates a new [IRegistryKey](/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey) object, the object either opens an existing subkey or creates a new registry subkey if none exists. In either case, the registry key object stores the handle to the key. When that object is later released and its reference count decrements to zero, the object automatically closes its handle to the key.
 
-The [IRegistryKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey) interface supports the following methods:
+The [IRegistryKey](/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey) interface supports the following methods:
 
-[**IRegistryKey::DeleteKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-deletekey)
+[**IRegistryKey::DeleteKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-deletekey)
 
-[**IRegistryKey::EnumerateKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-enumeratekey)
+[**IRegistryKey::EnumerateKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-enumeratekey)
 
-[**IRegistryKey::EnumerateValueKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-enumeratevaluekey)
+[**IRegistryKey::EnumerateValueKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-enumeratevaluekey)
 
-[**IRegistryKey::NewSubKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-newsubkey)
+[**IRegistryKey::NewSubKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-newsubkey)
 
-[**IRegistryKey::QueryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-querykey)
+[**IRegistryKey::QueryKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-querykey)
 
-[**IRegistryKey::QueryRegistryValues**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-queryregistryvalues)
+[**IRegistryKey::QueryRegistryValues**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-queryregistryvalues)
 
-[**IRegistryKey::QueryValueKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-queryvaluekey)
+[**IRegistryKey::QueryValueKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-queryvaluekey)
 
-[**IRegistryKey::SetValueKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-setvaluekey)
-
- 
-
- 
-
-
-
+[**IRegistryKey::SetValueKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iregistrykey-setvaluekey)
 

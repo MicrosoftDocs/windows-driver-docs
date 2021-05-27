@@ -1,7 +1,6 @@
 ---
 title: Setting Device Object Registry Properties After Installation
 description: Setting Device Object Registry Properties After Installation
-ms.assetid: e9415497-f61e-49ba-9376-9255e51e72a8
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,9 +12,9 @@ ms.localizationpriority: medium
 
 
 
-A user-mode program can use the [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) to get or set the registry settings for the properties of a driver's device object. Normally these functions are used by installation software, but they can be used by any user-mode program. (The program must be executed by a user that has Administrator access.)
+A user-mode program can use the [device installation functions](/previous-versions/ff541299(v=vs.85)) to get or set the registry settings for the properties of a driver's device object. Normally these functions are used by installation software, but they can be used by any user-mode program. (The program must be executed by a user that has Administrator access.)
 
-The [**SetupDiGetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) and [**SetupDiSetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) functions get and set the registry key for each specified property. The *Property* parameter specifies the property to get or set. The *PropertyBuffer* points to the destination buffer (when getting the property) or source buffer (when setting the property) for the property.
+The [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) and [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) functions get and set the registry key for each specified property. The *Property* parameter specifies the property to get or set. The *PropertyBuffer* points to the destination buffer (when getting the property) or source buffer (when setting the property) for the property.
 
 The correspondence between values for the *Property* parameter and actual properties is as follows.
 
@@ -45,7 +44,7 @@ The correspondence between values for the *Property* parameter and actual proper
 </tr>
 <tr class="even">
 <td><p>SPDRP_SECURITY</p></td>
-<td><p>Security descriptor as a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
+<td><p>Security descriptor as a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p>SPDRP_SECURITY_SDS</p></td>
@@ -58,14 +57,7 @@ The correspondence between values for the *Property* parameter and actual proper
 
 Note that two different ways are provided to get or set the security descriptor. You can specify the SPDRP\_SECURITY value to treat the security descriptor as a **SECURITY\_DESCRIPTOR** structure, or SPDRP\_SECURITY\_SDS to treat the security descriptor as an SDDL string. For more information about SDDL strings, see [SDDL for Device Objects](sddl-for-device-objects.md).
 
-For Windows XP and later operating systems, programs can also get and set the property values for a device setup class. Use the [**SetupDiGetClassRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassregistrypropertya) and [**SetupDiSetClassRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclassregistrypropertya) functions to get and set the property values for a device setup class.
+For Windows XP and later operating systems, programs can also get and set the property values for a device setup class. Use the [**SetupDiGetClassRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassregistrypropertya) and [**SetupDiSetClassRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclassregistrypropertya) functions to get and set the property values for a device setup class.
 
-For more information about using the **SetupDi*Xxx*** functions, see [Using Device Installation Functions](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-installation-functions).
-
- 
-
- 
-
-
-
+For more information about using the **SetupDi*Xxx*** functions, see [Using Device Installation Functions](../install/using-device-installation-functions.md).
 

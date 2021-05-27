@@ -1,14 +1,13 @@
 ---
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
-ms.assetid: 1f16a690-4453-4563-a4b1-44bbd5d02f47
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Application (SoftwareInfo)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Application element specifies the associated device notification handler.
 

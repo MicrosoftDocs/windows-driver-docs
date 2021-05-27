@@ -1,9 +1,8 @@
 ---
 title: ndiskd.protocol
 description: The ndiskd.protocol command displays information about an NDIS protocol driver. 
-ms.assetid: c1d349d5-b0ba-4665-a399-1bc5cd55dde6
 keywords: ["ndiskd.protocol Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/26/2020
 topic_type:
 - apiref
 api_name:
@@ -15,29 +14,25 @@ ms.localizationpriority: medium
 
 # !ndiskd.protocol
 
-
 The **!ndiskd.protocol** command displays information about an NDIS protocol driver. If you run this extension with no parameters, !ndiskd will display a list of NDIS protocol drivers that are active on the system.
 
 ```console
 !ndiskd.protocol [-handle <x>] [-findname <any>] 
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of an NDIS protocol.
+Optional handle of an NDIS protocol.
 
 <span id="_______-findname______"></span><span id="_______-FINDNAME______"></span> *-findname*   
 Filters protocols by name prefix.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Enter the **!ndiskd.protocol** command to see a list of all NDIS protocols, their handles, and open bindings to miniports (if any). In the following example, look for the TCPIP6TUNNEL protocol's handle, ffff8083e1a95c00.
 
@@ -114,25 +109,14 @@ HANDLERS
     DirectOidRequestCompleteHandler        fffff80e2e398120  bp
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
-
- 
-
- 
-
-
-
-
-
-

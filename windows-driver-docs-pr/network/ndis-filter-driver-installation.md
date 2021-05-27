@@ -1,7 +1,6 @@
 ---
 title: NDIS Filter Driver Installation
 description: NDIS Filter Driver Installation
-ms.assetid: 8e0c47bf-6b63-4be5-98b7-7a99e9efe283
 keywords:
 - filter drivers WDK networking , installation
 - NDIS filter drivers WDK , installation
@@ -18,7 +17,7 @@ To install a filter driver, you must provide a single INF file. The configuratio
 
 The filter driver INF file defines a network service. Filter drivers do not have a miniport INF file. For an example filter driver INF file, see the [ndislwf](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/ndis/filter) sample driver.
 
-Once you have provided your filter driver INF file, to install or uninstall your filter driver you must use the `INetCfg` family of [Network Configuration Interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559080(v=vs.85)). For example, to install or remove network components, call into the [INetCfgClassSetup](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547709(v=vs.85)) interface. You can either call into these interfaces programmatically or you can indirectly call them with [netcfg.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/netcfg), which calls `INetCfg` for you. You cannot use [SetupAPI](../install/setupapi.md) to install or uninstall an NDIS filter driver.
+Once you have provided your filter driver INF file, to install or uninstall your filter driver you must use the `INetCfg` family of [Network Configuration Interfaces](/previous-versions/windows/hardware/network/ff559080(v=vs.85)). For example, to install or remove network components, call into the [INetCfgClassSetup](/previous-versions/windows/hardware/network/ff547709(v=vs.85)) interface. You can either call into these interfaces programmatically or you can indirectly call them with [netcfg.exe](/windows-server/administration/windows-commands/netcfg), which calls `INetCfg` for you. You cannot use [SetupAPI](../install/setupapi.md) to install or uninstall an NDIS filter driver.
 
 For an example of calling into `INetCfg` through code, see the [Bindview Network Configuration Utility sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/config/bindview).
 

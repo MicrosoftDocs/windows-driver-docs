@@ -1,7 +1,6 @@
 ---
 title: TraceLogging Examples
 description: The source code in this topic demonstrates how to use TraceLogging.
-ms.assetid: 0FD7D517-D46A-4D76-A5E1-3267DBB09A29
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -144,8 +143,8 @@ void BasicDataTypes()
         g_hProvider,
         "Other Types",
         TraceLoggingGuid(g, "GUID"), 
-        TraceLoggingFileTime(ft, "Current Time (SYSTEMTIME)"), 
-        TraceLoggingSystemTime(st, "Current Time (FILETIME)"), 
+        TraceLoggingFileTime(ft, "Current Time (FILETIME)"), 
+        TraceLoggingSystemTime(st, "Current Time (SYSTEMTIME)"), 
         TraceLoggingSid(&sid1, "SID"),  
         TraceLoggingPointer((LPCVOID)&g, "void*"),
         TraceLoggingIntPtr(iptr, "INT_PTR"),

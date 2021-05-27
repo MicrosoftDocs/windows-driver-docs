@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID
 description: The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to inform a GFX filter of the Plug and Play device ID of the audio device that is the source of the capture stream.
-ms.assetid: df4505c5-f9ff-4f8a-8521-90031c0b23e4
 keywords: ["KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to inform a GFX
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>WCHAR array</p></td>
 </tr>
 </tbody>
@@ -61,17 +60,15 @@ The property value (operation data) is a WCHAR array that contains the device ID
 
 A KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The target for this set-only property request is a GFX filter that is configured for use as either a capture- or render/capture-GFX filter.
 
-To determine the size of the buffer needed to hold the property value, see [Basic Support Queries for Audio Properties](https://docs.microsoft.com/windows-hardware/drivers/audio/basic-support-queries-for-audio-properties).
+To determine the size of the buffer needed to hold the property value, see [Basic Support Queries for Audio Properties](./basic-support-queries-for-audio-properties.md).
 
-For additional information about device IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
+For additional information about device IDs, see [Device Identification Strings](../install/device-identification-strings.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -89,14 +86,5 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 

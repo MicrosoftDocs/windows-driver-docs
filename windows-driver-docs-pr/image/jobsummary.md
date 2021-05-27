@@ -1,7 +1,6 @@
 ---
 title: JobSummary element
 description: The optional JobSummary element contains a summary about a scan job.
-ms.assetid: db81cad5-d157-403c-b3a4-1e5f91f858da
 keywords: ["JobSummary element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **JobSummary** element contains a summary about a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobSummary>
@@ -27,8 +25,7 @@ Usage
 </wscn:JobSummary>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -88,8 +85,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the parent element of the **JobSummary** element is [**ActiveJobs**](activejobs.md), **JobSummary** contains a summary of information about one job that is currently active within the scan device.
 

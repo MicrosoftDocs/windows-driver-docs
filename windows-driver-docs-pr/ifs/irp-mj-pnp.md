@@ -1,7 +1,6 @@
 ---
-title: IRP_MJ_PNP
+title: IRP_MJ_PNP (IFS)
 description: IRP\_MJ\_PNP
-ms.assetid: aec2f309-02a1-460a-b674-33ad18286347
 keywords: ["IRP_MJ_PNP Installable File System Drivers"]
 topic_type:
 - apiref
@@ -13,7 +12,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_PNP
+# IRP\_MJ\_PNP (IFS)
 
 
 ## When Sent
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
 The Plug and Play Manager sends the IRP\_MJ\_PNP request whenever Plug and Play activity occurs on the system. Other operating system components, as well as other kernel-mode drivers, can also send certain IRP\_MJ\_PNP requests, depending on the minor function code.
 
-For more information about Plug and Play IRP processing requirements for drivers, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For more information about Plug and Play IRP processing requirements for drivers, see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 
-For reference information about IRP\_MJ\_PNP minor function codes, see [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps).
+For reference information about IRP\_MJ\_PNP minor function codes, see [Plug and Play Minor IRPs](../kernel/plug-and-play-minor-irps.md).
 
 ## Operation: File System Drivers
 
@@ -74,8 +73,8 @@ File system filter drivers should handle PnP IRPs according to the following gui
 
 -   When a volume is about to be removed gracefully by the user, the PnP Manager sends an IRP\_MN\_QUERY\_REMOVE\_DEVICE request. On receiving this IRP, the filter must close all open handles on the volume and pass the IRP down to the next-lower driver on the stack. This is very important. If the driver fails to close all open handles, this prevents the volume from being dismounted, which in turn prevents the physical device from being ejected.
 
-    &gt; \[!Note\]
-    &gt;  On receiving an IRP\_MN\_QUERY\_REMOVE\_DEVICE request, the FAT file system immediately dismounts all volumes that it can safely remove. Thus any filter attached to a FAT volume should expect that its filter device object will be freed before the filter's completion routine is called. The NTFS file system does not do this. Thus a filter attached to an NTFS volume can expect that its device object will still be attached to the volume when the filter's completion routine is called.
+> [!NOTE]
+> On receiving an IRP\_MN\_QUERY\_REMOVE\_DEVICE request, the FAT file system immediately dismounts all volumes that it can safely remove. Thus any filter attached to a FAT volume should expect that its filter device object will be freed before the filter's completion routine is called. The NTFS file system does not do this. Thus a filter attached to an NTFS volume can expect that its device object will still be attached to the volume when the filter's completion routine is called.
 
      
 
@@ -94,13 +93,13 @@ File system filter drivers should handle PnP IRPs according to the following gui
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a Plug and Play request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a Plug and Play request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 Pointer to the target device object.
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 This pointer should be **NULL** for PnP IRPs.
@@ -120,32 +119,23 @@ One of the following:
 ## See also
 
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
+[**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_PNP (WDK Kernel Reference)**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp)
+[**IRP\_MJ\_PNP (WDK Kernel Reference)**](../kernel/irp-mj-pnp.md)
 
-[**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device)
+[**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](../kernel/irp-mn-cancel-remove-device.md)
 
-[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device)
+[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](../kernel/irp-mn-query-remove-device.md)
 
-[**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device)
+[**IRP\_MN\_REMOVE\_DEVICE**](../kernel/irp-mn-remove-device.md)
 
-[**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device)
+[**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md)
 
-[**IRP\_MN\_SURPRISE\_REMOVAL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal)
-
- 
-
- 
-
-
-
-
-
+[**IRP\_MN\_SURPRISE\_REMOVAL**](../kernel/irp-mn-surprise-removal.md)
 

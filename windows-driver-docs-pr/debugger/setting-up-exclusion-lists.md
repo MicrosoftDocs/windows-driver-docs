@@ -1,7 +1,6 @@
 ---
 title: Setting Up Exclusion Lists
 description: Setting Up Exclusion Lists
-ms.assetid: 0b50e8a6-f68c-43e5-b8d5-4b2c40252d38
 keywords: ["SymProxy, exclusion lists"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -32,7 +31,7 @@ mso*
 Alternatively, you can store the exclusions in the registry. Create a key named
 
 ```text
-HKLM\ Software\Microsoft\Symbol Server\Exclusions
+HKLM\Software\Microsoft\Symbol Server\Exclusions
 ```
 
 Store the file name list as string values (REG\_SZ) within this key. The name of the string value acts as the file name to exclude. The contents of the string value can be used as a comment describing why the file is being excluded.

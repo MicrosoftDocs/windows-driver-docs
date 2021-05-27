@@ -1,13 +1,12 @@
 ---
-title: Debug Universal Drivers - Step-by-Step Lab (Echo Kernel Mode)
+title: Debug Windows Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
-ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 02/27/2020
+ms.date: 05/04/2021
 ms.localizationpriority: medium
 ---
 
-# <span id="debugger.debug_universal_drivers_-_step_by_step_lab__echo_kernel-mode_"></span>Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
+# Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)
 
 This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 
@@ -56,7 +55,7 @@ The lab has the following eleven sections.
 
 - [Section 1: Connect to a kernel mode WinDbg session](#connectto)
 - [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
-- [Section 3: Download and build the KMDF Universal Echo Driver](#download)
+- [Section 3: Download and build the KMDF Echo Driver](#download)
 - [Section 4: Install the KMDF Echo driver sample on the target system](#install)
 - [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
 - [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
@@ -78,7 +77,7 @@ This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF E
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://docs.microsoft.com/windows-hardware/drivers) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](/windows-hardware/drivers) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 ### <span id="Configure__kernel_mode_debugging_using_ethernet"></span><span id="configure__kernel_mode_debugging_using_ethernet"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_ETHERNET"></span>Configure kernel–mode debugging using ethernet
 
@@ -142,7 +141,7 @@ Enable kernel mode debugging on the target system by completing the following st
 3. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown.
 
     ```console
-    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
+    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
 **Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
@@ -151,7 +150,7 @@ Enable kernel mode debugging on the target system by completing the following st
 
     ```console
     C:\> bcdedit /dbgsettings
-    key                     1.2.3.4
+    key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     debugtype               NET
     hostip                  169.168.1.1
     port                    50000
@@ -184,7 +183,7 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
 
     ```console
-    WinDbg –k net:port=50000,key=1.2.3.4
+    WinDbg –k net:port=50000,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
 **-&gt;On the target system**
@@ -232,7 +231,7 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 
 **Enable Debugger Markup Language (DML) with .prefer\_dml**
 
-Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
+Some debug commands display text using Debugger Markup Language that you can select to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
 
@@ -320,9 +319,9 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
-## <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
+## <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF echo driver
 
-*In Section 3, you will download and build the KMDF universal echo driver.*
+*In Section 3, you will download and build the KMDF echo driver.*
 
 Typically, you would be working with your own driver code when you use WinDbg. To become familiar with WinDbg operation, the KMDF Template "Echo" sample driver is used. With the source code available, it will also be easier to understand the information that is displayed in WinDbg. In addition, this sample is used to illustrate how you can single step through native kernel mode code. This technique can be very valuable for debugging complex kernel mode code issues.
 
@@ -332,13 +331,13 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     You can use a browser to view the echo sample in GitHub here:
 
-    [https://github.com/Microsoft/Windows-driver-samples/tree/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf](https://github.com/Microsoft/Windows-driver-samples/blob/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf/ReadMe.md)
+    [https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/)
 
     You can read about the sample here:
 
-    <https://github.com/Microsoft/Windows-driver-samples/blob/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf/ReadMe.md>
+    <https://github.com/microsoft/Windows-driver-samples/blob/master/general/echo/kmdf/README.md>
 
-    You can browse all of the universal driver samples here:
+    You can browse all of the Windows driver samples here:
 
     <https://github.com/Microsoft/Windows-driver-samples>
 
@@ -346,13 +345,13 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     ![github windows-driver-samples highlighting the general folder and the download zip button](images/debuglab-image-github.png)
 
-    a. This lab, shows how to download the universal driver samples in one zip file.
+    a. This lab, shows how to download the driver samples in one zip file.
 
     <https://github.com/Microsoft/Windows-driver-samples/archive/master.zip>
 
     b. Download the master.zip file to your local hard drive.
 
-    c. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files are extracted.
+    c. Select and hold (or right-click) *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files are extracted.
 
     d. After the files are extracted, navigate to the following subfolder.
 
@@ -360,7 +359,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 2.  **Open the driver solution in Visual Studio**
 
-    In Microsoft Visual Studio, click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\general\\echo\\kmdf*). Double-click the *kmdfecho* solution file to open it.
+    In Microsoft Visual Studio, select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\general\\echo\\kmdf*). Double-click the *kmdfecho* solution file to open it.
 
     In Visual Studio, locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has three projects.
 
@@ -368,7 +367,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 3.  **Set the sample's configuration and platform**
 
-    In Solution Explorer, right-click **Solution 'kmdfecho' (3 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
+    In Solution Explorer, select and hold (or right-click) **Solution 'kmdfecho' (3 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
 
 4.  **Set the runtime library**
 
@@ -384,7 +383,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 6.  **Build the sample using Visual Studio**
 
-    In Visual Studio, click **Build** &gt; **Build Solution**.
+    In Visual Studio, select **Build** &gt; **Build Solution**.
 
     If all goes well, the build windows should display a message indicating that the build for all three projects succeeded.
 
@@ -417,15 +416,15 @@ In the next section, you will copy the code to the target system, and install an
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 
-**-&gt; On the target system**
-
 The computer where you install the driver is called the *target computer* or the *test computer*. Typically, this is a separate computer from the computer on which you develop and build the driver package. The computer where you develop and build the driver is called the *host computer*.
 
-The process of moving the driver package to the target computer and installing the driver is called *deploying* the driver. You can deploy the sample echo driver, automatically or manually.
+The process of moving the driver package to the target computer and installing the driver is called *deploying* the driver.
 
-Before you manually deploy a driver, you must prepare the target computer by turning on test signing. You also need to locate the DevCon tool in your WDK installation. After that you’re ready to run the built driver sample.
+Before you deploy a test signed driver, you must prepare the target computer by enabling test signing. You also need to locate the DevCon tool in your WDK installation and copy that to the target system.
 
 To install the driver on the target system, perform the following steps.
+
+**-&gt; On the target system**
 
 **Enable test signed drivers**
 
@@ -435,23 +434,25 @@ a. Open Windows Settings.
 
 b. In Update and Security, select **Recovery**.
 
-c. Under Advanced startup, click **Restart Now**.
+c. Under Advanced startup, select **Restart Now**.
 
-d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then click Restart button. 
+d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then select Restart button.
 
 e. Select Disable driver signature enforcement by pressing the **F7** key.
 
 f. Reboot the target computer.
-
 
 **&lt;- On the host system**
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
 *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
-Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy all the files from the built driver described earlier on the host computer and save them to the folder that you created on the target computer.
 
-Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
+Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy devcon.exe to the target system. Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. Copy all the files from the built driver described earlier on the host computer and save them to the same folder that you created on the target computer.
+
+**-&gt; On the target system**
+
+On the target computer, select and hold (or right-click) the certificate file, and select **Install**, then follow the prompts to install the test certificate.
 
 If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md).
 
@@ -471,11 +472,13 @@ On the target computer, open a Command Prompt window as Administrator. Navigate 
 If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder called *C:\\Tools*, then try using the following command:
 
 **c:\\tools\\devcon install echo.inf root\\ECHO**
-A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
+A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
 ![windows security warning - windows can't verify the publisher of this driver software](images/debuglab-image-install-security-warning.png)
 
-For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+>[!TIP]
+> If you have any issues with the installation, check the following file for more information.
+`%windir%\inf\setupapi.dev.log`
 
 After successfully installing the sample driver, you're now ready to test it.
 
@@ -512,7 +515,7 @@ View information about the driver by performing the following steps.
 1.  If you closed the debugger, open it again using the following command in the administrator command prompt window.
 
     ```dbgcmd
-    WinDbg -k net:port=50000,key=1.2.3.4
+    WinDbg -k net:port=50000,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
 2.  Use Ctrl+Break (Scroll Lock) to break into the code running on the target system.
@@ -583,7 +586,7 @@ set ENABLE_OPTIMIZER=0
 
    For information, see [**lm**](lm--list-loaded-modules-.md).
 
-2. Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can click on. Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
+2. Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can select. Select the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
 
    ```dbgcmd
    0: kd> x /D Echo!a*
@@ -736,7 +739,7 @@ This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/driver-stacks) and [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks).
+**Note**  For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
 ## <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
 
@@ -834,17 +837,17 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
     In Windows, open **Device Manager** using the icon or by entering **mmc devmgmt.msc**. In Device Manager, expand the **Samples** node.
 
-9.  Right-click the KMDF Echo driver entry and select **Disable** from the menu.
+9.  Select and hold (or right-click) the KMDF Echo driver entry and select **Disable** from the menu.
 
-10. Right-click the KMDF Echo driver entry again and select **Enable** from the menu.
+10. Select and hold (or right-click) the KMDF Echo driver entry again and select **Enable** from the menu.
 
 11. **&lt;- On the host system**
 
-    When the driver is enabled, the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) debug breakpoint should fire, and the execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output will display "Breakpoint 1 hit".
+    When the driver is enabled, the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) debug breakpoint should fire, and the execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output will display "Breakpoint 1 hit".
 
     ![windbg showing sample code locals and command windows](images/debuglab-image-breakpoint-echo-deviceadd.png)
 
-12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. The Brace character “}” will be highlighted as shown.
+12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. The Brace character “}” will be highlighted as shown.
 
     ![code window showing brace character highlighted at start of adddevice routine](images/debuglab-image-breakpoint-end-deviceadd.png)
 
@@ -882,7 +885,7 @@ You can modify existing breakpoints by using the following commands:
 
 
 
-Alternatively, you can also modify breakpoints by clicking **edit** &gt; **breakpoints** in WinDbg. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
+Alternatively, you can also modify breakpoints by selecting **edit** &gt; **breakpoints** in WinDbg. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
 
 
 
@@ -959,7 +962,7 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 *In Section 8, you will display information about variables and call stacks.*
 
-This lab assumes that you are stopped at the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
+This lab assumes that you are stopped at the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
 
 **&lt;- On the host system**
 
@@ -1018,7 +1021,7 @@ To display the call stack, use the k\* commands.
 
 **&lt;-On the host system**
 
-1. If you want to keep the call stack available, you can click **view** &gt; **call stack** to view it. Click on the columns at the top of the window to toggle the display of additional information.
+1. If you want to keep the call stack available, you can select **view** &gt; **call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
 ![windbg display call stacks window](images/debuglab-image-display-callstacks.png)
 
@@ -1453,7 +1456,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by clicking **view** &gt; **registers**. For more information see [**r (Registers)**](r--registers-.md).
+Alternatively, you can display the contents of the registers by selecting **view** &gt; **registers**. For more information see [**r (Registers)**](r--registers-.md).
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
@@ -1502,13 +1505,3 @@ OSR <https://www.osr.com/>
 [Specialized Debugging Techniques](specialized-debugging-techniques.md)
 
 [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md)
-
-
-
-
-
-
-
-
-
-

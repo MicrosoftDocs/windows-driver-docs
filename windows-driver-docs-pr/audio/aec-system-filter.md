@@ -1,7 +1,6 @@
 ---
 title: AEC System Filter
 description: AEC System Filter
-ms.assetid: 45865e8c-7080-428f-b436-6004a8d5c011
 keywords:
 - acoustic echo cancellation WDK audio
 - AEC WDK audio
@@ -149,12 +148,7 @@ All of the AEC system filter's pins use the data-format parameter values shown i
 
  
 
-For more information about the **MajorFormat**, **SubFormat**, and **Specifier** members, see [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)). For an example of a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) data-range descriptor that uses these three parameter values, see [PCM Stream Data Range](pcm-stream-data-range.md).
+For more information about the **MajorFormat**, **SubFormat**, and **Specifier** members, see [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)). For an example of a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) data-range descriptor that uses these three parameter values, see [PCM Stream Data Range](pcm-stream-data-range.md).
 
  
-
- 
-
-
-
 

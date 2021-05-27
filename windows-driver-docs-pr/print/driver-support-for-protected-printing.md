@@ -1,7 +1,6 @@
 ---
 title: Driver Support for Protected Printing
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
-ms.assetid: 43569030-224F-46C6-963F-FC3BE24A0FB3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,11 @@ Windows 8.1 also allows administrators to specify a default PIN in order to red
 
 ## Print Schema Changes
 
-Windows 8.1 has introduced new Print Schema keywords that you can use in PrintTicket and PrintCapabilities documents to specify protected printing. These keywords are defined in the new *printschemakeywordsv11* namespace. Here is the URI for this namespace: [https://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11](https://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11).
+Windows 8.1 has introduced new Print Schema keywords that you can use in PrintTicket and PrintCapabilities documents to specify protected printing. These keywords are defined in the new *printschemakeywordsv11* namespace. Here is the URI for this namespace:
+
+```xml
+https://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11
+```
 
 To see how to specify protected printing in a PrintTicket file, see [Sample PrintTicket File for PIN Printing](sample-printticket-file-for-pin-printing.md). And to see how to specify protected printing in a PrintCapabilities file, see [Sample PrintCapabilities File for PIN Printing](sample-printcapabilities-file-for-pin-printing.md).
 
@@ -110,18 +113,18 @@ If your driver uses a PPD file, add the following new keywords using this syntax
 <td><p>Minimum length of the supported PIN numeric string.</p>
 <p>This value must be at least 4 and no greater than 15.</p></td>
 <td>Root</td>
-<td><p>”int” (QuotedValue)</p>
+<td><p>"int" (QuotedValue)</p>
 <p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td></em>MSJobPasscodeMinLength: ”4”</td>
+<td></em>MSJobPasscodeMinLength: "4"</td>
 </tr>
 <tr class="even">
 <td><strong><em>MSJobPasscodeMaxLength</strong></td>
 <td><p>Maximum length of the supported PIN numeric string.</p>
 <p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <b>MSJobPasscodeMinLength</b> value.</p></td>
 <td>Root</td>
-<td><p>”int” (QuotedValue)</p>
+<td><p>"int" (QuotedValue)</p>
 <p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td>*MSJobPasscodeMaxLength: ”9”</td>
+<td>*MSJobPasscodeMaxLength: "9"</td>
 </tr>
 </tbody>
 </table>
@@ -192,21 +195,21 @@ Here is an example of a GPD file specifying JobPasscode with an Installable Hard
 *%******************************************************************************
 *Feature: JobPasscode
 {
-    *Name: ”Job Passcode”
+    *Name: "Job Passcode"
     *DefaultOption: OFF
     *ConcealFromUI: TRUE
-    *PrintSchemaKeywordMap: “JobPasscode”
+    *PrintSchemaKeywordMap: "JobPasscode"
 
     *Option: OFF
     {
-     *PrintSchemaKeywordMap: “Off”
-        *Name: ”Off”
+     *PrintSchemaKeywordMap: "Off"
+        *Name: "Off"
     }
 
     *Option: ON
     {
-     *PrintSchemaKeywordMap: “On”
-        *Name: ”On”
+     *PrintSchemaKeywordMap: "On"
+        *Name: "On"
     }
 }
 
@@ -272,8 +275,8 @@ Microsoft recommends that to minimize the rendering requirements on the client o
 
 ### Printer extensions
 
-Printer extensions should be able to display a control for protected printing in their print preferences UI. This ensures that users of desktop apps can configure the protected printing feature when using the printer extension. Microsoft is making changes that will allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to support protected printing from printer extensions.
+Printer extensions should be able to display a control for protected printing in their print preferences UI. This ensures that users of desktop apps can configure the protected printing feature when using the printer extension. Microsoft is making changes that will allow the [**IPrintSchemaTicket**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to support protected printing from printer extensions.
 
 ### UWP device apps
 
-Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.
+Microsoft is also making changes to allow the [**IPrintSchemaTicket**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.

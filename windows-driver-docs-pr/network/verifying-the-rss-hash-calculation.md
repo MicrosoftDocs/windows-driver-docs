@@ -1,7 +1,6 @@
 ---
 title: Verifying the RSS Hash Calculation
 description: Verifying the RSS Hash Calculation
-ms.assetid: 321a2c3e-98f8-464b-96ad-8b6fc34d5261
 keywords:
 - receive-side scaling WDK networking , hash
 - RSS WDK networking , hash

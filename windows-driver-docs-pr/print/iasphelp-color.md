@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: aa075ce7-15fd-4c24-b704-b7b240414d05
 keywords: ["get_Color method Print Devices", "get_Color method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Color method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **Color** property enables an ASP Web page to determine if a printer supports color printing.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_Color(
@@ -32,14 +30,12 @@ HRESULT get_Color(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive **TRUE** if the printer supports color printing, or **FALSE** if it does not.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 HasColor = objPrinter.Color
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

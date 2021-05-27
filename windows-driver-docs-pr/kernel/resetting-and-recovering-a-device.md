@@ -1,7 +1,6 @@
 ---
 title: Resetting and recovering a device
 description: The GUID_DEVICE_RESET_INTERFACE_STANDARD interface defines a standard way for function drivers to attempt to reset and recover a malfunctioning device.
-ms.assetid: 507192FF-77BB-4446-AAA0-3F44E1CB2E72
 keywords: [GUID_DEVICE_RESET_INTERFACE_STANDARD]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -125,7 +124,7 @@ Asl <test>.asl
 2. Rename SSDT.aml to acpitabl.dat. 
 3. Copy acpitabl.dat to %systemroot%\system32 on the test system. 
 4. Enable test signing on the test system. 
-      Bcdedit /set GUID_DEVICE_RESET_INTERFACE_STANDARD testsigning on
+      Bcdedit /set testsigning on
 
 5. Reboot the test system. 
 6. Verify that the table is loaded. In Windows Debugger, use these commands. 

@@ -1,7 +1,6 @@
 ---
 title: Get Operational Statistics (Function Index 13)
 description: This function returns counters that track operations performed by the NVDIMM-N.
-ms.assetid: D396F42E-9B11-46D7-8D9C-FE00B4998DEC
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function returns counters that track operations performed by the NVDIMM-N.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

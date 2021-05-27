@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for Network Devices
 description: Standardized INF Keywords for Network Devices
-ms.assetid: F79AFB63-D404-4A5C-9515-82FFEB667048
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,7 +29,7 @@ The following standard INF keywords are mandatory for connectionless NDIS 6.0 an
 
 -   **\*PhysicalMediaType**
 
-If the mandatory keywords are missing from the driver's INF file, NDIS does not call the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
+If the mandatory keywords are missing from the driver's INF file, NDIS does not call the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
 Standardized keywords are required for NDIS 6.0 and later miniport drivers if both of the following are true:
 
@@ -83,6 +82,8 @@ In addition, standardized keywords that are specific to networking technologies 
 
 [Standardized INF Keywords for NVGRE Task Offload](standardized-inf-keywords-for-nvgre-task-offload.md)
 
+[Standardized INF Keywords for NDIS Packet Timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md)
+
 [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md)
 
 [Standardized INF Keywords for Power Management](standardized-inf-keywords-for-power-management.md)
@@ -96,10 +97,4 @@ In addition, standardized keywords that are specific to networking technologies 
 [Standardized INF Keywords for Virtual Machine Queue (VMQ)](standardized-inf-keywords-for-vmq.md)
 
  
-
- 
-
-
-
-
 

@@ -1,9 +1,8 @@
 ---
 title: Client and Server Examples
 description: Client and Server Examples
-ms.assetid: 78dea1c0-6e94-4980-8042-375f11386d53
 keywords: ["remote debugging through the debugger, examples"]
-ms.date: 05/23/2017
+ms.date: 06/08/2020
 ms.localizationpriority: medium
 ---
 
@@ -41,10 +40,10 @@ net use \\BOX17\ipc$ /user:Contoso
 
 When prompted, the technician enters the password for the Contoso account.
 
-The technician is not sure what name was used for the named pipe, so she queries BOX17 for available debugging servers.
+The technician is not sure what name was used for the named pipe, so  they query BOX17 for available debugging servers.
 
 ```console
-G:\Debugging Tools> cdb -QR \\BOX17 
+G:\Debugging Tools> cdb -QR \\BOX17
 Servers on \\BOX17:
 Debugger Server - npipe:Pipe=MainPipe
 Remote Process Server - npipe:Pipe=AnotherPipe

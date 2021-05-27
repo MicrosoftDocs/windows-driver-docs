@@ -1,7 +1,6 @@
 ---
 title: DXGK\_POWER\_P\_COMPONENT structure
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: 31D76B3B-E939-404B-9EE4-FFCDFCD304C8
+description: Learn about the DXGK\_POWER\_P\_COMPONENT structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_POWER_P_COMPONENT structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_POWER_P_COMPONENT {
@@ -31,8 +29,7 @@ typedef struct _DXGK_POWER_P_COMPONENT {
 } DXGK_POWER_P_COMPONENT;
 ```
 
-Members
--------
+## Members
 
 **StateCount**
 
@@ -40,8 +37,7 @@ Members
 
 **Flags**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

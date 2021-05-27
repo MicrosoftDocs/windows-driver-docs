@@ -1,21 +1,20 @@
 ---
 title: OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
 description: This topic describes OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
-ms.assetid: F59D861C-B7DB-4C28-8842-4FDBAE1B95F1
 keywords: OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES, OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES RSSv2
 ms.date: 10/11/2017
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
-
 # OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
+
+[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
 
 The OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES OID is sent to [RSSv2](receive-side-scaling-version-2-rssv2-.md)-capable miniport drivers to perform moves of individual indirection table entries. This OID is a [Synchronous OID](synchronous-oid-request-interface-in-ndis-6-80.md), meaning it cannot return NDIS_STATUS_PENDING. It is issued as a Method request only, at IRQL == DISPATCH_LEVEL. 
 
 This call uses the *XxxSynchronousOidRequest* entry point, where *Xxx* is either *Miniport* or *Filter* depending on the type of driver receiving the request. This entry point causes a system bug check if it sees an NDIS_STATUS_PENDING return status.
 
-OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES uses the [NDIS_RSS_SET_INDIRECTION_ENTRIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries) structure to instruct a miniport adapter to synchronously perform a set of actions, where each action moves a single entry of the RSS indirection table of a specified VPort to a target specified CPU.
+OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES uses the [NDIS_RSS_SET_INDIRECTION_ENTRIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries) structure to instruct a miniport adapter to synchronously perform a set of actions, where each action moves a single entry of the RSS indirection table of a specified VPort to a target specified CPU.
 
 ## Remarks
 
@@ -32,9 +31,9 @@ OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES must be issued to a miniport adapter w
 
 This OID is invoked only at IRQL == DISPATCH_LEVEL.
 
-Miniport drivers should be prepared to handle at least as many indirection table entry move actions as they advertise in the [NDIS_NIC_SWITCH_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. This is defined in the **NumberOfIndirectionTableEntriesPerNonDefaultVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** member of that structure, or **128** in Native RSS mode.
+Miniport drivers should be prepared to handle at least as many indirection table entry move actions as they advertise in the [NDIS_NIC_SWITCH_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. This is defined in the **NumberOfIndirectionTableEntriesPerNonDefaultVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** member of that structure, or **128** in Native RSS mode.
 
-Miniport drivers should attempt to execute as many entries as they can and update the **EntryStatus** member of each [NDIS_RSS_SET_INDIRECTION_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry) with the result of the operation.
+Miniport drivers should attempt to execute as many entries as they can and update the **EntryStatus** member of each [NDIS_RSS_SET_INDIRECTION_ENTRY](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry) with the result of the operation.
 
 ### OID handler for OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
 
@@ -49,12 +48,12 @@ The OID handler for OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES is expected to beh
     - Each indirection table entry index is within the configured range. This range is either 0xFFFF or is in the [0...NumberOfIndirectionTableEntries - 1] range set by the [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) OID. The 0xFFFF and 0xFFFE entry indices have special meanings: 0xFFFF defines the default processor, while 0xFFFE defines the primary processor. On error, the handler sets the **EntryStatus** field of the entry to NDIS_STATUS_INVALID_PARAMETER.
     - The upper layer and the miniport driver expect that the ITE points to the current processor (actor CPU) before the move. In other words, the ITE cannot be redirected remotely. If this is not true, set the **EntryStatus** field of the entry to NDIS_STATUS_NOT_ACCEPTED.
     - All target processors are valid and are part of the miniport adapter's RSS set. Else, set the **EntryStatus** field of the entry to NDIS_STATUS_INVALID_DATA.
-- Either subsequently or as part of the parameter validation pass, validate the resource situation. Validate that the number of queues to be used after a full batch move (evacuation) does not exceed the **NumberOfQueues** set in the [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2) structure during an [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) request. Otherwise, NDIS_STATUS_NO_QUEUES is returned. NDIS_STATUS_NO_QUEUES should be used for all conditions that represent a violation of the configured number of queues. NDIS_STATUS_RESOURCES should only be used to designate transient out-of-memory conditions.
+- Either subsequently or as part of the parameter validation pass, validate the resource situation. Validate that the number of queues to be used after a full batch move (evacuation) does not exceed the **NumberOfQueues** set in the [NDIS_RECEIVE_SCALE_PARAMETERS_V2](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2) structure during an [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) request. Otherwise, NDIS_STATUS_NO_QUEUES is returned. NDIS_STATUS_NO_QUEUES should be used for all conditions that represent a violation of the configured number of queues. NDIS_STATUS_RESOURCES should only be used to designate transient out-of-memory conditions.
 - As part of resource checks, for each scaling entity (for example, VPort), the miniport driver must handle a condition when all ITEs that point to the currrent CPU are moved away from it..
 
 If all of the above checks pass, the miniport driver should be able to unconditionally apply the new configuration and must set the **EntryStatus** field of each entry to NDIS_STATUS_SUCCESS.
 
-In general, the handler for this OID should be very light weight. It should not call NDIS or operating system services other than for possible synchronization operations like spinlocks and [**NdisMConfigMSIXTableEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismconfigmsixtableentry).
+In general, the handler for this OID should be very light weight. It should not call NDIS or operating system services other than for possible synchronization operations like spinlocks and [**NdisMConfigMSIXTableEntry**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismconfigmsixtableentry).
 
 The miniport driver should not call NDIS to indicate status or PnP events.
 
@@ -92,17 +91,14 @@ This OID returns the following status codes when an error occurs:
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1709
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
 - [Receive Side Scaling Version 2 (RSSv2)](receive-side-scaling-version-2-rssv2-.md)
-- [NDIS_RSS_SET_INDIRECTION_ENTRIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries)
-- [NDIS_RSS_SET_INDIRECTION_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry)
-- [NDIS_NIC_SWITCH_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities)
+- [NDIS_RSS_SET_INDIRECTION_ENTRIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries)
+- [NDIS_RSS_SET_INDIRECTION_ENTRY](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry)
+- [NDIS_NIC_SWITCH_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities)
 - [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md)
-- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2)
-
+- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2)

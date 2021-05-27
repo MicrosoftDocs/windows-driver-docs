@@ -1,7 +1,6 @@
 ---
 title: Window Undock All
 description: Window Undock All
-ms.assetid: 6d3b4704-7681-4b07-a8c6-335660a01ad9
 keywords: ["Window Undock All", "undocked windows, Window Undock All"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

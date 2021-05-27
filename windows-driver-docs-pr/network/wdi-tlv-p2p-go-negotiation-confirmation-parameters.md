@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
 description: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS is a TLV that contains incoming GO Negotiation Confirmation parameters.
-ms.assetid: 69A20B64-C2B9-4C96-8119-EE64E80201EB
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS Network Drivers Starting with Windows Vista
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

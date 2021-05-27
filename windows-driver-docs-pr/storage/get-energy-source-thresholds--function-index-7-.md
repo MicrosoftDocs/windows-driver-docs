@@ -1,7 +1,6 @@
 ---
 title: Get Energy Source Thresholds (Function Index 7)
 description: This function returns warning and error thresholds which, if hit or surpassed, indicate a problem with the Energy Source (ES).
-ms.assetid: 12B7D7CF-DB65-42A5-9831-F0D85BED2574
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function returns warning and error thresholds which, if hit or surpassed, indicate a problem with the Energy Source (ES). This function may return a failure status if the ES is host-managed and the platform does not support thresholds.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

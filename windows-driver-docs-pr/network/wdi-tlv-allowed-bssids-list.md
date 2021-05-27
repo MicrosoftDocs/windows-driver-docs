@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ALLOWED_BSSIDS_LIST
 description: WDI_TLV_ALLOWED_BSSIDS_LIST is a TLV that contains a list of BSSIDs that are allowed to be used for association.
-ms.assetid: A53C5EB2-1D77-4380-86C7-291D2BF4FCFC
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ALLOWED_BSSIDS_LIST Network Drivers Starting with Windows Vista
@@ -21,19 +20,18 @@ WDI\_TLV\_ALLOWED\_BSSIDS\_LIST is a TLV that contains a list of BSSIDs that are
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                  | Description                                                   |
 |-------------------------------------------------------|---------------------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of BSSIDs that are allowed to be used for association. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of BSSIDs that are allowed to be used for association. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: HS_SIM_IDENTITY structure
 description: The HS_SIM_IDENTITY structure contains SIM identification information required for EAP-SIM or EAP-AKA authentication.
-ms.assetid: b45fac33-79de-4006-9dcb-95725be11ec1
 keywords: 
 - HS_SIM_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_SIM_IDENTITY structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HS\_SIM\_IDENTITY structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_SIM\_IDENTITY** structure contains SIM identification information required for EAP-SIM or EAP-AKA authentication.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_SIM_IDENTITY {
@@ -30,8 +28,7 @@ typedef struct _HS_SIM_IDENTITY {
 } HS_SIM_IDENTITY, *PHS_SIM_IDENTITY;
 ```
 
-Members
--------
+## Members
 
 **SimType**  
 The type of SIM, whether GSM or CDMA, or none. If the network is GSM, the **dwMNC** and **dwMCC** pair of fields will be defined, whereas for CDMA the **dwSID** and **dwNID** pair of fields must be defined.
@@ -59,8 +56,7 @@ The System Identification Number (SID) of the CDMA network.
 **dwEapMethods**  
 The EAP authentication method.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -74,16 +70,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
-## See also
-
-
-[Extensible Authentication Protocol](https://docs.microsoft.com/previous-versions/windows/desktop/eap/eap-start-page)
-
- 
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)
 description: An overview of the Mobile Broadband (MBB) WDF class extension (MBBCx).
-ms.assetid: FA4D1C2D-270B-40C4-A922-8ABDDE4D8444
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
 ms.date: 07/01/2019
@@ -16,9 +15,9 @@ Starting in the next release of Windows 10, the Windows Driver Kit (WDK) include
 
 An MBB-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
 
-- Call [standard WDF APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_wdf/) for common device tasks like Pnp and Power management.
-- Call [NetAdapterCx APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/#netadaptercx) for common network device operations like transmitting or receiving network packets.
-- Call [MbbCx APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/#mbbcx) for MBB-specific control path operations like MBIM message handling.
+- Call [standard WDF APIs](/windows-hardware/drivers/ddi/_wdf/) for common device tasks like Pnp and Power management.
+- Call [NetAdapterCx APIs](/windows-hardware/drivers/ddi/_netvista/#netadaptercx) for common network device operations like transmitting or receiving network packets.
+- Call [MbbCx APIs](/windows-hardware/drivers/ddi/_netvista/#mbbcx) for MBB-specific control path operations like MBIM message handling.
 
 Before you begin, you should familiarize yourself with these concepts:
 

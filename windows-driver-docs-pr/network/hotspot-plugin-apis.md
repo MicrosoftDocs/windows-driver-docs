@@ -1,7 +1,6 @@
 ---
 title: HOTSPOT_PLUGIN_APIS structure
 description: The HOTSPOT_PLUGIN_APIS structure contains the Hotspot plugin APIs function table.
-ms.assetid: eee56f84-2c7f-4218-b7ec-b4fc0181d767
 keywords: 
 - HOTSPOT_PLUGIN_APIS structure Network Drivers Starting with Windows Vista
 - PHOTSPOT_PLUGIN_APIS structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HOTSPOT\_PLUGIN\_APIS structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HOTSPOT\_PLUGIN\_APIS** structure contains the Hotspot plugin APIs function table. This function table is returned by the plugin when [**HSPluginInitPlugin**](hsplugininitplugin.md) is called to initialize the plugin. The table contains functions that are called by the hotspot host to communicate with the plugin.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HOTSPOT_PLUGIN_APIS {
@@ -35,8 +33,7 @@ typedef struct _HOTSPOT_PLUGIN_APIS {
 } HOTSPOT_PLUGIN_APIS, *PHOTSPOT_PLUGIN_APIS;
 ```
 
-Members
--------
+## Members
 
 **HSPluginQuerySupportedSIMs**  
 API called during plugin initialization.
@@ -93,8 +90,7 @@ API called to de-initialize and clean up the plugin before unloading.
 
 Called by the hotspot host to notify the plugin that it is about to be unloaded. For more information, see [**HS\_PLUGIN\_DEINIT**](hs-plugin-deinit.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

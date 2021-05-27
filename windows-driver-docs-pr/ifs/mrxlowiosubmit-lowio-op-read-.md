@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_READ\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_READ\ routine is called by RDBSS to issue a read request to the network mini-redirector.
-ms.assetid: 26a173d8-e3ab-4c63-8390-133afd35b51a
 keywords: ["MRxLowIOSubmit LOWIO_OP_READ routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxLowIOSubmit\[LOWIO\_OP\_READ\] routine
 
 
-The *MRxLowIOSubmit\[LOWIO\_OP\_READ\]* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to issue a read request to the network mini-redirector.
+The *MRxLowIOSubmit\[LOWIO\_OP\_READ\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to issue a read request to the network mini-redirector.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxLowIOSubmit[LOWIO_OP_READ];
@@ -32,14 +30,12 @@ NTSTATUS MRxLowIOSubmit[LOWIO_OP_READ](
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxLowIOSubmit\[LOWIO\_OP\_READ\]* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -84,8 +80,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS calls *MRxLowIOSubmit\[LOWIO\_OP\_READ\]* in response to receiving an [**IRP\_MJ\_READ**](irp-mj-read.md) request.
 
@@ -105,10 +100,9 @@ The **LowIoContext.ParamsFor.ReadWrite.ByteCount** member is set to the value of
 
 A read request is normally implemented by a network mini-redirector as an asynchronous operation because it can take considerable time. The operation usually consists of sending a network request to the remote server. The response is obtained when the read request is completed on the server. This is an example of an operation for which the network mini-redirector may need to register a context for handling cancellations initiated locally.
 
-While the *MRxLowIOSubmit\[LOWIO\_OP\_READ\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
+While the *MRxLowIOSubmit\[LOWIO\_OP\_READ\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -146,14 +140,7 @@ Requirements
 
 [**MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]**](mrxlowiosubmit-lowio-op-write-.md)
 
-[**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx)
+[**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: ScanDestination element
 description: The required ScanDestination element specifies a single scan destination on the client.
-ms.assetid: 3cd685b2-36b2-4f28-a80f-a68204631e0c
 keywords: ["ScanDestination element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanDestination** element specifies a single scan destination on the client.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanDestination>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScanDestination>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -73,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client includes one or more **ScanDestination** elements within the **ScanDestinations** element that it sends when it creates a subscription. The WSD Scan Service uses the information that is provided within **ScanDestination** to create appropriate [**ScanAvailableEvent**](scanavailableevent.md) event elements.
 

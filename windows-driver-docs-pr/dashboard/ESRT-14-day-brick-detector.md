@@ -23,9 +23,9 @@ This is to detect machines that have potentially bricked.
 |**Audience**|Retail and Insider|
 |**Time period**|28 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum instances**|250|
+|**Minimum instances**|170|
 |**Passing criteria**|> 50%|
-|**Measure ID**|23095170|
+|**Measure ID**|23260732|
 
 ## Calculation
 

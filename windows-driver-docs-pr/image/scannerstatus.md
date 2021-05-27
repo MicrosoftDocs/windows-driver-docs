@@ -1,7 +1,6 @@
 ---
 title: ScannerStatus element
 description: The required ScannerStatus element contains the current status of the scanner-related information that automata (such as time and changing conditions in the scanner) control.
-ms.assetid: 39a1bbc1-acee-4ac8-8b14-35a3be5076ae
 keywords: ["ScannerStatus element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerStatus** element contains the current status of the scanner-related information that automata (such as time and changing conditions in the scanner) control.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerStatus>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScannerStatus>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

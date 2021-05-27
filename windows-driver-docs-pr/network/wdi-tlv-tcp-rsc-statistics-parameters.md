@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS
 description: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS is a TLV that contains TCP RSC statistics for OID_WDI_TCP_RSC_STATISTICS.
-ms.assetid: C1459DF6-6492-4C1F-A22D-2BDC6492B29C
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS
 
 
-WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS is a TLV that contains TCP RSC statistics for [OID\_WDI\_TCP\_RSC\_STATISTICS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-tcp-rsc-statistics).
+WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS is a TLV that contains TCP RSC statistics for [OID\_WDI\_TCP\_RSC\_STATISTICS](./oid-wdi-tcp-rsc-statistics.md).
 
 ## TLV Type
 
@@ -35,8 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -60,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

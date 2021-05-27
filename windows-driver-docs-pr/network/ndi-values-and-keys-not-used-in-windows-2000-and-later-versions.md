@@ -1,7 +1,6 @@
 ---
 title: Deprecated Ndi Values and Keys 
 description: Ndi Values and Keys deprecated in Windows 2000 and Later Versions
-ms.assetid: 932e1c83-feb6-47a8-bed3-847ee4094b9e
 keywords:
 - add-registry-sections WDK networking , Ndi values and keys
 - Ndi key WDK networking

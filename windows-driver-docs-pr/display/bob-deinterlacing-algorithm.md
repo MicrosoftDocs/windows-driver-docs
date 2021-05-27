@@ -1,7 +1,6 @@
 ---
 title: Bob Deinterlacing Algorithm
 description: Bob Deinterlacing Algorithm
-ms.assetid: ef3220bd-841d-4187-bc86-11b999eae2bd
 keywords:
 - bob deinterlacing WDK DirectX VA , algorithm
 - deinterlacing WDK DirectX VA , bob, algorithm
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_bob_deinterlacing_algorithm_gg"></span><span id="DDK_BOB_DEINTERLACING_ALGORITHM_GG"></span>
 
 
-If your display driver implements the DXVA [deinterlacing DDI](https://docs.microsoft.com/windows-hardware/drivers/display/deinterlace-ddi), it must support the bob-style deinterlacing algorithm in addition to any proprietary deinterlacing algorithms. Following is a description of the bob-style deinterlacing algorithm:
+If your display driver implements the DXVA [deinterlacing DDI](./deinterlace-ddi.md), it must support the bob-style deinterlacing algorithm in addition to any proprietary deinterlacing algorithms. Following is a description of the bob-style deinterlacing algorithm:
 
 Input is a field F<sub>in</sub>(i,j) of size MxN such that 0 &lt;= i &lt;= M-1 and 0 &lt;= j &lt;=N-1, where i and j are row and column indices, respectively.
 
@@ -36,10 +35,4 @@ Each definition uses a finite impulse response (FIR) filter with an impulse resp
 The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = 1/16). This filter should be implemented as (9\*(b+c)-(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
 
  
-
- 
-
-
-
-
 

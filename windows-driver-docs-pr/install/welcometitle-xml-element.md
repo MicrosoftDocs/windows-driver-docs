@@ -1,7 +1,6 @@
 ---
 title: welcomeTitle XML Element
 description: welcomeTitle XML Element
-ms.assetid: 480b6d02-b8b1-4e3f-9a00-869cc2b93279
 keywords: ["welcomeTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # welcomeTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **welcomeTitle** XML element customizes the bold text of the welcome title that appears at the top of the DPInst welcome page.
 
@@ -83,11 +82,4 @@ If a **welcomeTitle** element is not specified, DPInst displays the default welc
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

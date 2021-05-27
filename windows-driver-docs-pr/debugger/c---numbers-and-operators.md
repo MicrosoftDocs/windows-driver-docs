@@ -1,21 +1,100 @@
 ---
 title: C++ Numbers and Operators
 description: C++ Numbers and Operators
-ms.assetid: e5d3ac7f-fd79-48bb-b927-9ad72570dcbe
 keywords: ["expressions, C++ expression syntax", "C++ expressions, numbers", "C++ expressions, operators", "numerical expressions, C++", "operators, C++", "precedence rules (C++)", "methods", "methods, syntax", "members of classes"]
-ms.date: 05/23/2017
+ms.date: 03/31/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q3
 ---
 
 # C++ Numbers and Operators
 
+This topic describes the use of the C++ expression syntax with the Windows Debugging tools.
 
-## <span id="ddk_c_numbers_and_operators_dbg"></span><span id="DDK_C_NUMBERS_AND_OPERATORS_DBG"></span>
+The debugger accepts two different kinds of numeric expressions: C++ expressions and MASM expressions. Each of these expressions follows its own syntax rules for input and output.
 
+For more information about when each syntax type is used, see [Evaluating Expressions](evaluating-expressions.md) and [? (Evaluate Expression)](---evaluate-expression-.md).
 
 The C++ expression parser supports all forms of C++ expression syntax. The syntax includes all data types (including pointers, floating-point numbers, and arrays) and all C++ unary and binary operators.
 
-### <span id="numbers_in_c___expressions"></span><span id="NUMBERS_IN_C___EXPRESSIONS"></span>Numbers in C++ Expressions
+The Watch and the Locals windows in the debugger always uses the C++ expression evaluator.
+
+In this example the [?? (Evaluate C++ Expression)](----evaluate-c---expression-.md) command displays the value of the instruction pointer register.
+
+```dbgcmd
+0:000> ?? @eip
+unsigned int 0x771e1a02
+```
+
+We can use C++ operators, such as the sizeof function to determine the size of structures.
+
+```dbgcmd
+0:000> ?? (sizeof(_TEB))
+unsigned int 0x1000
+```
+
+## Set the Expression Evaluator to C++
+
+Use the [.expr (Choose Expression Evaluator)](-expr--choose-expression-evaluator-.md) to see what the default expression evaluator is and change it to C++.
+
+```dbgcmd
+0:000> .expr
+Current expression evaluator: MASM - Microsoft Assembler expressions
+0:000> .expr /s c++
+Current expression evaluator: C++ - C++ source expressions
+```
+
+Now that the default expression evaluator has been changed, the [? (Evaluate Expression)](---evaluate-expression-.md) command can be used to display C++ expressions. This example display the value of the instruction pointer register. 
+
+```dbgcmd
+0:000> ? @eip
+Evaluate expression: 1998461442 = 771e1a02
+```
+The register reference of @eip is described in more detail in [Register Syntax](register-syntax.md).
+
+In this example add the hex value of 0xD to the eip register.
+
+```dbgcmd
+0:000> ? @eip + 0xD
+Evaluate expression: 1998461455 = 771e1a0f
+```
+
+## Registers and Pseudo-Registers in C++ Expressions
+
+You can use registers and pseudo-registers within C++ expressions. You must add an at sign ( **@** ) before the register or pseudo-register.
+
+The expression evaluator automatically performs the proper cast. Actual registers and integer-value pseudo-registers are cast to ULONG64. All addresses are cast to PUCHAR, **$thread** is cast to ETHREAD\*, **$proc** is cast to EPROCESS\*, **$teb** is cast to TEB\*, and **$peb** is cast to PEB\*.
+
+
+This example displays the TEB.
+
+```dbgcmd
+0:000>  ?? @$teb
+struct _TEB * 0x004ec000
+   +0x000 NtTib            : _NT_TIB
+   +0x01c EnvironmentPointer : (null) 
+   +0x020 ClientId         : _CLIENT_ID
+   +0x028 ActiveRpcHandle  : (null) 
+   +0x02c ThreadLocalStoragePointer : 0x004ec02c Void
+   +0x030 ProcessEnvironmentBlock : 0x004e9000 _PEB
+   +0x034 LastErrorValue   : 0xbb
+   +0x038 CountOfOwnedCriticalSections : 0
+```
+
+You cannot change a register or pseudo-register by an assignment or side-effect operator. You must use the [r (Registers)](r--registers-.md) command to change these values.
+
+This example sets the pseudo register to a value of 5 and then displays it.
+
+```dbgcmd
+0:000> r $t0 = 5
+
+0:000> ?? @$t0
+unsigned int64 5
+```
+
+For more information about registers and pseudo-registers, see [Register Syntax](register-syntax.md) and [Pseudo-Register Syntax](pseudo-register-syntax.md).
+
+## Numbers in C++ Expressions
 
 Numbers in C++ expressions are interpreted as decimal numbers, unless you specify them in another manner. To specify a hexadecimal integer, add **0x** before the number. To specify an octal integer, add **0** (zero) before the number.
 
@@ -29,13 +108,13 @@ The *output* of the C++ expression evaluator keeps the data type that the C++ ex
 
 You can use the **0n** (decimal) prefix for some *output*, but you cannot use it for C++ expression input.
 
-### <span id="characters_and_strings_in_c___expressions"></span><span id="CHARACTERS_AND_STRINGS_IN_C___EXPRESSIONS"></span>Characters and Strings in C++ Expressions
+## Characters and Strings in C++ Expressions
 
 You can enter a character by surrounding it with single quotation marks ( ' ). The standard C++ escape characters are permitted.
 
 You can enter string literals by surrounding them with double quotation marks ( " ). You can use **\\"** as an escape sequence within such a string. However, strings have no meaning to the [expression evaluator](evaluating-expressions.md).
 
-### <span id="symbols_in_c___expressions"></span><span id="SYMBOLS_IN_C___EXPRESSIONS"></span>Symbols in C++ Expressions
+## Symbols in C++ Expressions
 
 In a C++ expression, each symbol is interpreted according to its type. Depending on what the symbol refers to, it might be interpreted as an integer, a data structure, a function pointer, or any other data type. If you use a symbol that does not correspond to a C++ data type (such as an unmodified module name) within a C++ expression, a syntax error occurs.
 
@@ -45,7 +124,35 @@ You can use a grave accent ( **\`** ) or an apostrophe ( **'** ) in a symbol nam
 
 When you add the **&lt;** and **&gt;** delimiters after a template name, you can add spaces between these delimiters.
 
-### <span id="operators_in_c___expressions"></span><span id="OPERATORS_IN_C___EXPRESSIONS"></span>Operators in C++ Expressions
+In C++ expressions, each symbol is interpreted according to its type. Depending on what the symbol refers to, it might be interpreted as an integer, a data structure, a function pointer, or any other data type. A symbol that does not correspond to a C++ data type (such as an unmodified module name) creates a syntax error.
+
+If a symbol might be ambiguous, precede it with the module name and an exclamation point ( ! ). If the symbol name could be interpreted as a hexadecimal number, precede it with the module name and an exclamation point ( ! ) or only an exclamation point. In order to specify that a symbol is meant to be local, omit the module name, and include a dollar sign and an exclamation point ( $! ) before the symbol name. For more information about interpreting symbols, see Symbol Syntax and Symbol Matching.
+
+## Structures in C++ Expressions
+
+The C++ expression evaluator casts pseudo-registers to their appropriate types. For example, **$teb** is cast as a TEB\*. 
+
+```dbgcmd
+0:000> ??  @$teb
+struct _TEB * 0x004ec000
+   +0x000 NtTib            : _NT_TIB
+   +0x01c EnvironmentPointer : (null) 
+   +0x020 ClientId         : _CLIENT_ID
+   +0x028 ActiveRpcHandle  : (null) 
+   +0x02c ThreadLocalStoragePointer : 0x004ec02c Void
+   +0x030 ProcessEnvironmentBlock : 0x004e9000 _PEB
+   +0x034 LastErrorValue   : 0xbb
+   +0x038 CountOfOwnedCriticalSections : 0
+```
+
+The following example displays the process ID in the TEB structure showing the use of a pointer to a member of referenced structure.
+
+```dbgcmd
+0:000> ??  @$teb->ClientId.UniqueProcess
+void * 0x0000059c
+```
+
+## Operators in C++ Expressions
 
 You can always use parentheses to override precedence rules.
 
@@ -57,7 +164,11 @@ Pointer arithmetic is supported and offsets are scaled correctly. Note that you 
 
 As in C++, if you use operators with invalid data types, a syntax error occurs. The debugger's C++ expression parser uses slightly more relaxed rules than most C++ compilers, but all major rules are enforced. For example, you cannot shift a non-integer value.
 
-You can use the following operators. The operators in each cell take precedence over those in lower cells. Operators in the same cell are of the same precedence and are parsed from left to right. As with C++, expression evaluation ends when its value is known. This ending enables you to effectively use expressions such as **?? myPtr && \*myPtr**.
+You can use the following operators. The operators in each cell take precedence over those in lower cells. Operators in the same cell are of the same precedence and are parsed from left to right. 
+
+As with C++, expression evaluation ends when its value is known. This ending enables you to effectively use expressions such as **?? myPtr && \*myPtr**.
+
+### Reference and Type Casting
 
 <table>
 <colgroup>
@@ -103,6 +214,23 @@ You can use the following operators. The operators in each cell take precedence 
 <p>Typecast (always performed)</p>
 <p>Typecast (always performed)</p></td>
 </tr>
+</tbody>
+</table>
+
+### Value Operations
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left"><p><strong>(</strong><em>type</em><strong>)</strong> <em>Value</em></p>
 <p><strong>sizeof</strong> <em>value</em></p>
@@ -133,6 +261,23 @@ You can use the following operators. The operators in each cell take precedence 
 <td align="left"><p>Pointer to member of structure</p>
 <p>Pointer to member of referenced structure</p></td>
 </tr>
+</tbody>
+</table>
+
+### Arithmetic
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left"><p><em>Value</em> <strong></em></strong> <em>Value</em></p>
 <p><em>Value</em> <strong>/</strong> <em>Value</em></p>
@@ -189,6 +334,39 @@ You can use the following operators. The operators in each cell take precedence 
 <td align="left"><p><em>Value</em> <strong>||</strong> <em>Value</em></p></td>
 <td align="left"><p>Logical OR</p></td>
 </tr>
+</tbody>
+</table>
+
+The examples below, assume that the pseudo registers are set as shown.
+
+```dbgcmd
+0:000> r $t0 = 0
+0:000> r $t1 = 1
+0:000> r $t2 = 2
+```
+
+```dbgcmd
+0:000> ?? @$t1 + @$t2
+unsigned int64 3
+0:000> ?? @$t2/@$t1
+unsigned int64 2
+0:000> ?? @$t2|@$t1
+unsigned int64 3
+```
+### Assignment
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left">
 <p><em>LValue</em> <strong>=</strong> <em>Value</em></p>
@@ -214,6 +392,23 @@ You can use the following operators. The operators in each cell take precedence 
 <p>OR and assign</p>
 <p>XOR and assign</p></td>
 </tr>
+</tbody>
+</table>
+
+### Evaluation
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td align="left"><p><em>Value</em> <strong>?</strong> <em>Value</em> <strong>:</strong> <em>Value</em></p></td>
 <td align="left"><p>Conditional evaluation</p></td>
@@ -225,19 +420,8 @@ You can use the following operators. The operators in each cell take precedence 
 </tbody>
 </table>
 
- 
 
-### <span id="registers_and_pseudo_registers_in_c___expressions"></span><span id="REGISTERS_AND_PSEUDO_REGISTERS_IN_C___EXPRESSIONS"></span>Registers and Pseudo-Registers in C++ Expressions
-
-You can use registers and pseudo-registers within C++ expressions. You must add an at sign ( **@** ) before the register or pseudo-register.
-
-The expression evaluator automatically performs the proper cast. Actual registers and integer-value pseudo-registers are cast to ULONG64. All addresses are cast to PUCHAR, **$thread** is cast to ETHREAD\*, **$proc** is cast to EPROCESS\*, **$teb** is cast to TEB\*, and **$peb** is cast to PEB\*.
-
-You cannot change a register or pseudo-register by an assignment or side-effect operator. You must use the [**r (Registers)**](r--registers-.md) command to change these values.
-
-For more information about registers and pseudo-registers, see [Register Syntax](register-syntax.md) and [Pseudo-Register Syntax](pseudo-register-syntax.md).
-
-### <span id="macros_in_c___expressions"></span><span id="MACROS_IN_C___EXPRESSIONS"></span>Macros in C++ Expressions
+### Macros in C++ Expressions
 
 You can use macros within C++ expressions. You must add a number sign (\#) before the macros.
 
@@ -282,12 +466,28 @@ You can use the following macros. These macros have the same definitions as the 
 </tbody>
 </table>
 
- 
 
- 
+This example shows the use of the #FIELD_OFFSET macro, to calculate the byte offset to a field in a structure.
 
- 
+```dbgcmd
+0:000> ?? #FIELD_OFFSET(_PEB, BeingDebugged)
+long 0n2
+```
 
+## See Also 
+
+[MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
+ 
+[?? (Evaluate C++ Expression)](----evaluate-c---expression-.md)
+
+[? (Evaluate Expression)](---evaluate-expression-.md) 
+
+[.expr (Choose Expression Evaluator)](-expr--choose-expression-evaluator-.md)
+
+[Sign Extension](sign-extension.md) 
+
+[Mixed Expression Examples](expression-examples.md)
+ 
 
 
 

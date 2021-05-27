@@ -1,7 +1,6 @@
 ---
 title: Installing Windows Symbol Files
 description: Installing Windows Symbol Files
-ms.assetid: fbafb14c-9b92-47c5-9954-5c5ba2301c47
 keywords: ["symbols, Windows", "symbols, user-mode"]
 ms.date: 03/26/2017
 ms.localizationpriority: medium
@@ -14,7 +13,7 @@ Before you debug the Windows kernel, a driver or app, you need access to the pro
 You can connect to the Microsoft Symbol Server with one simple use of the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command. For full details, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 > [!IMPORTANT]
-> We are no longer publishing the offline symbol packages for Windows. The faster Windows update cadence means the Windows debugging symbols are quickly made out of  date. We have made significant improvements to the online [Microsoft Symbol Server](microsoft-public-symbols.md) where symbols for all Windows versions and updates are available. You can find more about this in this [blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). 
+> We are no longer publishing the offline symbol packages for Windows. The faster Windows update cadence means the Windows debugging symbols are quickly made out of  date. We have made significant improvements to the online [Microsoft Symbol Server](microsoft-public-symbols.md) where symbols for all Windows versions and updates are available. You can find more about this in this [blog entry](/archive/blogs/windbg/update-on-microsofts-symbol-server). 
 >
 > For information on how to retrieve symbols for a machine that is not connected to the Internet, see [Using a Manifest File with SymChk](using-a-manifest-file-with-symchk.md).
 

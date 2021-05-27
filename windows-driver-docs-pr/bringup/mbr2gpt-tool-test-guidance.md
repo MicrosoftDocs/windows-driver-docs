@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 **MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt but can also be run from the full Windows 10 operating system (OS).
 
-For detailed usage information and troubleshooting guidance, see the [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) documentation.
+For detailed usage information and troubleshooting guidance, see the [MBR2GPT](/windows/deployment/mbr-to-gpt) documentation.
 
 ## Sample checklist when verifying conversion from BIOS/MBR to UEFI/GPT
 
@@ -95,8 +95,8 @@ Restore data and settings using USMT Load State.
 
 ## Troubleshooting
 
-Refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or Microsoft Endpoint Configuration Manager/Microsoft Deployment Toolkit (MDT) task sequences, you can script handlers for the returned codes that are discussed in the documentation.
+Refer to the MBR2GPT.EXE [Troubleshooting](/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or Microsoft Endpoint Configuration Manager/Microsoft Deployment Toolkit (MDT) task sequences, you can script handlers for the returned codes that are discussed in the documentation.
 
 ## Related resources
 
-[MBR2GPT.EXE](https://docs.microsoft.com/windows/deployment/mbr-to-gpt)
+[MBR2GPT.EXE](/windows/deployment/mbr-to-gpt)

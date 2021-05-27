@@ -1,7 +1,6 @@
 ---
 title: ube
 description: The ube extension re-enables a user-space breakpoint.
-ms.assetid: caa13c30-e03a-44fd-9221-66e44eec88af
 keywords: ["ube Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,8 +48,7 @@ Specifies the number of the breakpoint to be enabled. An asterisk (\*) indicates
 
  
 
-Remarks
--------
+## Remarks
 
 This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 

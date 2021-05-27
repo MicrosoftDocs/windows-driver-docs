@@ -1,7 +1,6 @@
 ---
 title: ks.dumpbag
 description: The ks.dumpbag extension displays the contents of the object bag for the specified object.
-ms.assetid: a97b4794-b5dc-45a8-b1e9-5a626959020e
 keywords: ["ks.dumpbag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!ks.dumpbag** display for a filter:
 

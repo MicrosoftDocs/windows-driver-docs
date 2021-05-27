@@ -1,7 +1,6 @@
 ---
 title: lm (List Loaded Modules)
 description: The lm command displays the specified loaded modules. The output includes the status and the path of the module.
-ms.assetid: ee2283bd-4d3f-4e30-8b32-e286a415bb3a
 keywords: ["lm (List Loaded Modules) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -113,8 +112,7 @@ Specifies a pattern that the image path must match. Pattern can contain a variet
 
  
 
-Remarks
--------
+## Remarks
 
 The **lm** command lists all of the modules and the status of symbols for each module.
 
@@ -152,8 +150,7 @@ fb0ae000 fb0b0000   splitter.sys
 fb040000 fb043000   Sfloppy.SYS
 ```
 
-Examples
---------
+## Examples
 
 The following two examples show the **lm** command once without any options and once with the sm option. Compare the sort order in the two examples.
 

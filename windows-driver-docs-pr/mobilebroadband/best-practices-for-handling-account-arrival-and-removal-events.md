@@ -1,7 +1,6 @@
 ---
 title: Best practices for handling account arrival and removal events
 description: Best practices for handling account arrival and removal events
-ms.assetid: e299a920-a27e-4832-b81d-1562f86f37e2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,21 +14,14 @@ Mobile broadband accounts can be added or removed during the lifetime of the mob
 
 -   Do not assume that the user has removed the hardware. Hardware might be temporarily unavailable during sleep/resume of the machine, depending on the behavior of the driver or the bus.
 
--   Do not release any started account watcher objects without calling their [**Stop**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Stop) method first. Account watchers, like all Windows Runtime (WinRT) objects, are reference counted. Calling [**Start**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Start) increments their reference count (**Stop** decrements it). If you release a started account watcher, it will keep triggering events but you cannot call **Stop** on the handle that you’ve just released.
+-   Do not release any started account watcher objects without calling their [**Stop**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Stop) method first. Account watchers, like all Windows Runtime (WinRT) objects, are reference counted. Calling [**Start**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Start) increments their reference count (**Stop** decrements it). If you release a started account watcher, it will keep triggering events but you cannot call **Stop** on the handle that you’ve just released.
 
--   Remember that account watcher objects automatically stop when the app gets suspended by Windows, and restart when the app resumes. This is the same result as if your app had called [**Stop**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Stop) and [**Start**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Start), and results in the same events. Use these events to bring the app up-to-date with anything significant that occurred during the time that it was suspended.
+-   Remember that account watcher objects automatically stop when the app gets suspended by Windows, and restart when the app resumes. This is the same result as if your app had called [**Stop**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Stop) and [**Start**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Start), and results in the same events. Use these events to bring the app up-to-date with anything significant that occurred during the time that it was suspended.
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-using-mobile-broadband-windows-runtime-api.md)
+[Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-handling-account-arrival-and-removal-events.md)
 
  
-
- 
-
-
-
-
-
 

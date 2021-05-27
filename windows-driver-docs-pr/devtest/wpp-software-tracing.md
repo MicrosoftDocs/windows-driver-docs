@@ -1,7 +1,6 @@
 ---
 title: WPP Software Tracing
 description: This section describes how to use the Windows software trace preprocessor (WPP) to trace the operation of a software component trace provider.
-ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900
 keywords:
 - Windows software trace preprocessor WDK
 - WPP software tracing WDK
@@ -24,7 +23,7 @@ This section describes how to use the *Windows software trace preprocessor* (WPP
 
 -   A user-mode driver, application, or dynamic-link library (DLL).
 
-WPP software tracing supplements and enhances [WMI event tracing](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-event-tracing) by adding ways to simplify tracing the operation of the trace provider. It is an efficient mechanism for the trace provider to log real-time binary messages. The logged messages can subsequently be converted to a human-readable trace of the operation of the trace provider.
+WPP software tracing supplements and enhances [WMI event tracing](../kernel/wmi-event-tracing.md) by adding ways to simplify tracing the operation of the trace provider. It is an efficient mechanism for the trace provider to log real-time binary messages. The logged messages can subsequently be converted to a human-readable trace of the operation of the trace provider.
 
 <table>
 <colgroup>
@@ -40,7 +39,7 @@ WPP software tracing supplements and enhances [WMI event tracing](https://docs.m
 <td align="left"><p>WPP software tracing is primarily intended for debugging code during development. If you want to publish events that can be consumed by applications interested in structured ETW events, in addition to tracing during development, use the following:</p>
 <ul>
 <li>For kernel-mode drivers, use the <a href="event-tracing-for-windows--etw-.md" data-raw-source="[Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md)">Event Tracing for Windows (ETW)</a> API.</li>
-<li>For user-mode drivers or applications, use the <a href="https://docs.microsoft.com/windows/desktop/ETW/event-tracing-portal" data-raw-source="[Event Tracing](https://docs.microsoft.com/windows/desktop/ETW/event-tracing-portal)">Event Tracing</a> (Windows Desktop) API.</li>
+<li>For user-mode drivers or applications, use the <a href="/windows/desktop/ETW/event-tracing-portal" data-raw-source="[Event Tracing](/windows/desktop/ETW/event-tracing-portal)">Event Tracing</a> (Windows Desktop) API.</li>
 </ul>
 For more information, see <a href="tools-for-software-tracing.md" data-raw-source="[When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md)">When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?</a></td>
 </tr>
@@ -57,9 +56,9 @@ WPP software tracing is supported on Microsoft Windows 2000 and later versions o
 
 The basic process for adding WPP software tracing to a driver or application, includes the following steps. If you use one of the Visual Studio templates provided in the WDK for creating a WDF driver, much of the work is done for you.
 
--   Define a control GUID that uniquely identifies the driver or application as a [trace provider](trace-provider.md). The provider specifies this GUID in its definition of the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro and in a related control file used by [Tracelog](tracelog.md) or another [Trace Controller](trace-controller.md).
+-   Define a control GUID that uniquely identifies the driver or application as a [trace provider](trace-provider.md). The provider specifies this GUID in its definition of the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro and in a related control file used by [Tracelog](tracelog.md) or another [Trace Controller](trace-controller.md).
 
--   Add the required WPP-related C preprocessor directives and WPP macro calls to the provider's source files, as described in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md) and in [WPP Software Tracing Reference](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556205(v=vs.85)).
+-   Add the required WPP-related C preprocessor directives and WPP macro calls to the provider's source files, as described in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md) and in [WPP Software Tracing Reference](/previous-versions/windows/hardware/previsioning-framework/ff556205(v=vs.85)).
 
 -   Modify the Visual Studio project to run the WPP preprocessor and build the driver, as described in [Step 6](adding-wpp-software-tracing-to-a-windows-driver.md#step-6-modify-the-visual-studio-project-to-run-the-wpp-preprocessor-and-build-the-solution) of Adding WPP Software Tracing to a Windows Driver. You can refer to the [WPP Preprocessor](wpp-preprocessor.md) for more build time options.
 
@@ -75,24 +74,17 @@ The basic process for adding WPP software tracing to a driver or application, in
 -   [WPP Preprocessor](wpp-preprocessor.md)
 -   [Tracing and Diagnosability for WDF Drivers](tracing-and-diagnosability-for-wdf-drivers.md)
 
-**Note**   Event Tracing for Windows (ETW) and WPP support most types of kernel-mode and user-mode drivers. However, ETW and WPP use types that are not available for certain types of drivers, such as miniport drivers. To determine whether a particular driver type is supported, add basic WPP macros to the driver, such as [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) and [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)). If the code does not compile because the types that are used are not defined, ETW and WPP cannot support the driver type.
-For more information about ETW, see [Event Tracing](https://go.microsoft.com/fwlink/p/?linkid=179202) in the Windows SDK documentation.
+**Note**   Event Tracing for Windows (ETW) and WPP support most types of kernel-mode and user-mode drivers. However, ETW and WPP use types that are not available for certain types of drivers, such as miniport drivers. To determine whether a particular driver type is supported, add basic WPP macros to the driver, such as [WPP\_INIT\_TRACING](/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) and [WPP\_CLEANUP](/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)). If the code does not compile because the types that are used are not defined, ETW and WPP cannot support the driver type.
 
-**Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing#providers) for more information.
+For more information about ETW, see [Event Tracing for Windows](/windows-hardware/test/wpt/event-tracing-for-windows).
 
-For information about the [WMI library support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) that support WPP software tracing, see:
+**Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](/windows/desktop/ETW/about-event-tracing#providers) for more information.
 
-[**WmiQueryTraceInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-wmiquerytraceinformation)
+For information about the WMI library support routines that support WPP software tracing, see:
 
-[**WmiTraceMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessage)
+[**WmiQueryTraceInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmiquerytraceinformation)
 
-[**WmiTraceMessageVa**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessageva)
+[**WmiTraceMessage**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessage)
 
- 
-
- 
-
-
-
-
+[**WmiTraceMessageVa**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessageva)
 

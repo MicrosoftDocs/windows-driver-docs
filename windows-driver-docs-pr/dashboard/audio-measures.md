@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 Whenever an application (or Windows component) wants to play or record audio, it uses one of various audio APIs.
 
-All of the audio APIs eventually invoke the core audio API call [IAudioClient::Initialize](https://docs.microsoft.com/windows/win32/api/audioclient/nf-audioclient-iaudioclient-initialize). This creates the connection between the application and the Windows audio engine, and a connection between the Windows audio engine and the audio driver.
+All of the audio APIs eventually invoke the core audio API call [IAudioClient::Initialize](/windows/win32/api/audioclient/nf-audioclient-iaudioclient-initialize). This creates the connection between the application and the Windows audio engine, and a connection between the Windows audio engine and the audio driver.
 
 If the IAudioClient::Initialize call fails, then the application is, with some exceptions, unable to use audio. Some IAudioClient::Initialize errors are benign and are ignored; a list of these errors is provided in the [appendix](measure-appendix.md).
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CROSSBAR\_CAPS
 description: The KSPROPERTY\_CROSSBAR\_CAPS property retrieves the crossbar capabilities of the device (the number of input and output pins on the crossbar). This property must be implemented.
-ms.assetid: f7dd806c-065d-48c7-ab58-3f5ef95451d5
 keywords: ["KSPROPERTY_CROSSBAR_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_CROSSBAR\_CAPS property retrieves the crossbar capabilities of t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_caps_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAPS_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_caps_s)"><strong>KSPROPERTY_CROSSBAR_CAPS_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_caps_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAPS_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_caps_s)"><strong>KSPROPERTY_CROSSBAR_CAPS_S</strong></a></p></td>
 <td><p>Pair of ULONGs</p></td>
 </tr>
 </tbody>
@@ -57,8 +56,7 @@ The KSPROPERTY\_CROSSBAR\_CAPS property retrieves the crossbar capabilities of t
 
 The property value (operation data) is a pair of ULONGs that specify the number of audio and video input pins on the crossbar, and the number of audio and video output pins on the crossbar.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,16 +74,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
-[**KSPROPERTY\_CROSSBAR\_CAPS\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_caps_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_CROSSBAR\_CAPS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_crossbar_caps_s)
 

@@ -4,7 +4,6 @@ description: The Name method returns the Bidi schema element name.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 682B3DFE-EE21-4C96-B585-1D63287C33A0
 keywords: ["Name method Print Devices", "Name method Print Devices , IPrinterBidiSchemaElement interface", "IPrinterBidiSchemaElement interface Print Devices , Name method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The Name method returns the Bidi schema element name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Name(
@@ -29,19 +27,16 @@ HRESULT Name(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pbstrSchema* \[out, retval\]  
 The returned element name.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

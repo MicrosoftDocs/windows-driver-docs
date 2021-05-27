@@ -1,9 +1,8 @@
 ---
 title: ndiskd.netreport
 description: The ndiskd.netreport extension generates a visual report of the entire network stack.
-ms.assetid: 0FC134A8-8D91-4299-8D15-4E8EDD9ED855
 keywords: ["ndiskd.netreport Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/23/2020
 topic_type:
 - apiref
 api_name:
@@ -15,15 +14,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.netreport
 
-
 The **!ndiskd.netreport** extension generates a visual report of the entire network stack. The report **!ndiskd.netreport** generates is an HTML file, and it will give you a link to its location. The HTML file contains detailed information about the network stack, so if you need to share it for analysis you can email it instead of having to send a large crash dump file.
 
 ```console
 !ndiskd.netreport [-outputpath <str>] [-jsononly] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-outputpath______"></span><span id="_______-OUTPUTPATH______"></span> *-outputpath*   
 Specifies where to write the report file.
@@ -31,12 +28,11 @@ Specifies where to write the report file.
 <span id="_______-jsononly______"></span><span id="_______-JSONONLY______"></span> *-jsononly*   
 Only writes the raw data, no HTML.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Run the **!ndiskd.netreport** extension to draw a box diagram of your network stack.
 
@@ -66,7 +62,7 @@ By checking the "Show data flows" box, you can see the paths where the data is f
 
 This second example from an active system also shows another difference from the first example, which used a crash dump file. The target debugee machine in the second example was provisioned for kernel debugging over a network, so you can see the network adapter on the stack with the data flows is the Microsoft Kernel Debug Network Adapter. This adapter is usually hidden unless kernel debugging has been enabled on the debugee machine. In reality, the Kernel Debug Network Adapter has reserved the machine's Ethernet adapter for the debug session, so traffic is flowing over Ethernet.
 
-The ability to visualize the network stack and see where traffic is flowing can enable you to quickly identify where a problem might be. This can be particularly helpful for virtual switches or servers, which have more complicated network diagrams than the previous examples. For example, on a Windows Server that uses NIC Teaming, you can see if multiple network stacks cross each other to balance the traffic load and identify if there is an issue at the bottom of one stack that is affecting another stack. To see an example of a network debug report that shows this, see [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311). For more information about NIC Teaming, see [Using NIC Teaming for Network Subsystem Performance](https://docs.microsoft.com/previous-versions/dn567652(v=vs.85)).
+The ability to visualize the network stack and see where traffic is flowing can enable you to quickly identify where a problem might be. This can be particularly helpful for virtual switches or servers, which have more complicated network diagrams than the previous examples. For example, on a Windows Server that uses NIC Teaming, you can see if multiple network stacks cross each other to balance the traffic load and identify if there is an issue at the bottom of one stack that is affecting another stack. To see an example of a network debug report that shows this, see [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack). For more information about NIC Teaming, see [Using NIC Teaming for Network Subsystem Performance](/previous-versions/dn567652(v=vs.85)).
 
 **!ndiskd.netreport** also has other tabs at the top of the page for System, Summaries, and Data Flows (if applicable). These tabs contain further useful information about the state of the network stack. The following image shows the Network Interfaces tab, under the Summaries tab. The table in this tab lets you see more information about the names and identifiers for the network interfaces in the system.
 
@@ -76,14 +72,13 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 ![network debug report data flows](images/!ndiskd-netreport-activesystem-dataflows.png)
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
@@ -91,14 +86,4 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 [**!ndiskd.nbllog**](-ndiskd-nbllog.md)
 
-[Using NIC Teaming for Network Subsystem Performance](https://docs.microsoft.com/previous-versions/dn567652(v=vs.85))
-
- 
-
- 
-
-
-
-
-
-
+[Using NIC Teaming for Network Subsystem Performance](/previous-versions/dn567652(v=vs.85))

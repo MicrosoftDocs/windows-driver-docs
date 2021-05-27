@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DSM\_Path WMI Class
 description: MPIO\_DSM\_Path WMI Class
-ms.assetid: 4f8d7fb0-2b9a-44dc-bb87-f70285f1b47c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -51,13 +50,7 @@ class MPIO_DSM_Path
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DSM\_Path**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_mpio_dsm_path) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DSM\_Path**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_mpio_dsm_path) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

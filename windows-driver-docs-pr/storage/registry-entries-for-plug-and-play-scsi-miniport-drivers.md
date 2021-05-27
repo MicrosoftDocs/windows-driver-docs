@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for Plug and Play SCSI Miniport Drivers
 description: Registry Entries for Plug and Play SCSI Miniport Drivers
-ms.assetid: d4c7c8ee-9d04-4fd4-9b70-2630d2ce6401
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI
@@ -24,7 +23,7 @@ To support Plug and Play, a SCSI miniport driver must:
 
 -   Have a **PnPInterface** entry in the registry that indicates the interfaces for that the miniport driver supports Plug and Play.
 
-Installing a miniport driver as a service for a SCSI HBA is customarily done by providing an setup information (INF) file that matches the Plug and Play hardware ID for a given HBA to the correct driver to control that device. For details about setting up an INF file, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play)*.*
+Installing a miniport driver as a service for a SCSI HBA is customarily done by providing an setup information (INF) file that matches the Plug and Play hardware ID for a given HBA to the correct driver to control that device. For details about setting up an INF file, see [Plug and Play](../kernel/introduction-to-plug-and-play.md)*.*
 
 Unless a miniport driver is installed as a service for an HBA, the **PnPInterface** registry entry will *prevent* the miniport driver from initializing. The specified interfaces are initialized only when Plug and Play locates an appropriate HBA. If no service is properly assigned to the HBA, Plug and Play will never determine which driver to notify when it detects the device. This behavior is by design and a miniport driver should not attempt to circumvent it.
 
@@ -46,9 +45,4 @@ The values preceding REG\_DWORD correspond to the INTERFACE\_TYPE enumerated typ
 After the **PnPInterface** values are set in the registry and the system is restarted, the miniport driver can be initialized as a Plug and Play driver. During initialization, the SCSI port driver checks the registry to determine whether the miniport driver should be run as a Plug and Play or legacy driver. The SCSI port driver checks the registry for each interface type that the miniport driver supports (for example, PCI and ISA). This is intended primarily to simplify debugging for writers of multiple-interface miniport drivers. The miniport driver writer should make sure that a miniport driver is capable of being run as a Plug and Play driver for all interfaces that driver supports.
 
  
-
- 
-
-
-
 

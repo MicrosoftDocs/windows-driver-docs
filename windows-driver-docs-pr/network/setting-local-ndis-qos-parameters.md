@@ -1,7 +1,6 @@
 ---
 title: Setting Local NDIS QoS Parameters
 description: Setting Local NDIS QoS Parameters
-ms.assetid: 7AB30829-16A0-46BF-8066-506E01E718A4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Local NDIS Quality of Service (QoS) parameters specify the locally provisioned QoS settings for a miniport driver and its network adapter. Miniport drivers obtain the local NDIS QoS parameters in the following ways:
 
--   Through an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) that is issued by the Data Center Bridging (DCB) component (Msdcb.sys). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that specifies the local NDIS QoS parameters.
+-   Through an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](./oid-qos-parameters.md) that is issued by the Data Center Bridging (DCB) component (Msdcb.sys). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that specifies the local NDIS QoS parameters.
 
     For more information on the DCB component, see [NDIS QoS Architecture for Data Center Bridging](ndis-qos-architecture-for-data-center-bridging.md).
 
@@ -19,11 +18,11 @@ Local NDIS Quality of Service (QoS) parameters specify the locally provisioned Q
 
      
 
--   Through proprietary settings that are stored in the system registry and defined by the independent hardware vendor (IHV) for the network adapter. The miniport driver reads these settings when its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function is called by NDIS.
+-   Through proprietary settings that are stored in the system registry and defined by the independent hardware vendor (IHV) for the network adapter. The miniport driver reads these settings when its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function is called by NDIS.
 
 -   Through proprietary settings issued to the miniport driver through a management application developed by the IHV.
 
-When the DCB component issues an OID method request of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters), the **NDIS\_QOS\_PARAMETERS\_WILLING** flag of the **NDIS\_QOS\_PARAMETERS.Flags** member specifies how the miniport driver resolves its operational QoS parameters from the local NDIS QoS parameters. Based on this flag, the driver resolves the local QoS parameters in the following ways:
+When the DCB component issues an OID method request of [OID\_QOS\_PARAMETERS](./oid-qos-parameters.md), the **NDIS\_QOS\_PARAMETERS\_WILLING** flag of the **NDIS\_QOS\_PARAMETERS.Flags** member specifies how the miniport driver resolves its operational QoS parameters from the local NDIS QoS parameters. Based on this flag, the driver resolves the local QoS parameters in the following ways:
 
 -   If the **NDIS\_QOS\_PARAMETERS\_WILLING** flag is set, the miniport driver must enable the local DCB Exchange (DCBX) Willing state. This allows the driver to be remotely configured with QoS parameters. In this case, the driver resolves its operational QoS parameters based on the remote QoS parameters.
 
@@ -47,17 +46,11 @@ If the local DCBX Willing state is disabled, the miniport driver must follow the
 
      
 
--   The miniport driver should *apply* the local QoS parameters that are contained in the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure when it resolves its operational NDIS QoS parameters. If the driver applies these local QoS parameters, it must not use any remote QoS parameters that it received from the remote peer.
+-   The miniport driver should *apply* the local QoS parameters that are contained in the [**NDIS\_QOS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure when it resolves its operational NDIS QoS parameters. If the driver applies these local QoS parameters, it must not use any remote QoS parameters that it received from the remote peer.
 
     For more information on this procedure, see [Resolving Operational NDIS QoS Parameters](resolving-operational-ndis-qos-parameters.md).
 
 For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](managing-the-local-dcbx-willing-state.md).
 
  
-
- 
-
-
-
-
 

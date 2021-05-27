@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1C4 DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP
 description: The DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP bug check has a value of 0x000001C4.
-ms.assetid: B5C00570-477C-4C0C-B8B9-A7796FC33D63
 keywords: ["Bug Check 0x1C4 DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP", "DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Bug Check 0x1C4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP
 
 
-The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP bug check has a value of 0x000001C4. This indicates that a device driver attempting to corrupt the system has been detected. This is because the driver was specified in the registry as being suspect (by the administrator) and the kernel has enabled substantial checking of this driver. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP bug check has a value of 0x000001C4. This indicates that a device driver attempting to corrupt the system has been detected. This is because the driver was specified in the registry as being suspect (by the administrator) and the kernel has enabled substantial checking of this driver. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -431,10 +430,3 @@ The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP bug check has a value of 0x0
     Parameter 3 - Address of internal rule state (second argument to !ruleinfo).
     Parameter 4 - Address of supplemental states (third argument to !ruleinfo).
 ```
-
-
-
-
-
-
-

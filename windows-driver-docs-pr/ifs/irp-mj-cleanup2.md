@@ -1,14 +1,13 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_CLEANUP operation
 description: Checking the Oplock State of an IRP_MJ_CLEANUP operation
-ms.assetid: 5e078575-cbb8-4460-9986-4c546b8c20be
 ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of an IRP_MJ_CLEANUP operation
 
-The following [oplock break](https://docs.microsoft.com/windows-hardware/drivers/ifs/breaking-oplocks) conditions apply only when a *stream* is being closed.
+The following [oplock break](./breaking-oplocks.md) conditions apply only when a *stream* is being closed.
 
 ### Conditions for Level 2 and Read request types
 

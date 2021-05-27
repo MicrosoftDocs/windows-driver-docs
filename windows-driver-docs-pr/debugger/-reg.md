@@ -1,7 +1,6 @@
 ---
 title: reg
 description: The reg extension displays and searches through registry data.
-ms.assetid: 97944c84-da2e-4859-bf99-75d05413314d
 keywords: ["reg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -149,8 +148,7 @@ Kdexts.dll
 
 For information about the registry and its components, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Here is an example. First use **!reg hivelist** to get a list of hive addresses.
 

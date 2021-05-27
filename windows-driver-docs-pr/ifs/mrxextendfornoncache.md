@@ -1,7 +1,6 @@
 ---
 title: MRxExtendForNonCache routine
 description: The MRxExtendForNonCache routine is called by RDBSS to request that a network mini-redirector extend a file when the file is not being cached by the cache manager.
-ms.assetid: 80ec5142-7188-45ba-a1cb-73be99ce1ac4
 keywords: ["MRxExtendForNonCache routine Installable File System Drivers", "PMRX_EXTENDFILE_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxExtendForNonCache routine
 
 
-The *MRxExtendForNonCache* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector extend a file when the file is not being cached by the cache manager.
+The *MRxExtendForNonCache* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector extend a file when the file is not being cached by the cache manager.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_EXTENDFILE_CALLDOWN MRxExtendForNonCache;
@@ -34,8 +32,7 @@ ULONG MRxExtendForNonCache(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
@@ -44,15 +41,13 @@ A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is 
 A pointer to the LARGE\_INTEGER value indicating the byte count of the new file size.
 
 *pNewAllocationSize* \[out\]  
-A pointer to the LARGE\_INTEGER for storing the new allocation size when [**MRxExtendForCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_extendfile_calldown) returns.
+A pointer to the LARGE\_INTEGER for storing the new allocation size when [**MRxExtendForCache**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_extendfile_calldown) returns.
 
-Return value
-------------
+## Return value
 
 *MRxExtendForNonCache* returns STATUS\_SUCCESS on success or an error code on failure.
 
-Remarks
--------
+## Remarks
 
 *MRxExtendForNonCache* handles network requests to extend the file for non-cached I/O.
 
@@ -64,8 +59,7 @@ Before calling *MRxExtendForNonCache*, RDBSS modifies the following members in t
 
 A network mini-redirector that caches file or directory information may need to invalidate its cache information when the file is extended.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,27 +81,27 @@ Requirements
 ## See also
 
 
-[**MRxAreFilesAliased**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkfcb_calldown)
+[**MRxAreFilesAliased**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkfcb_calldown)
 
-[**MRxCleanupFobx**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549841(v=vs.85))
+[**MRxCleanupFobx**](/previous-versions/windows/hardware/drivers/ff549841(v=vs.85))
 
-[**MRxCloseSrvOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown)
+[**MRxCloseSrvOpen**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown)
 
 [**MRxCollapseOpen**](mrxcollapseopen.md)
 
 [**MRxCreate**](mrxcreate.md)
 
-[**MRxDeallocateForFcb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_deallocate_for_fcb)
+[**MRxDeallocateForFcb**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_deallocate_for_fcb)
 
-[**MRxDeallocateForFobx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_deallocate_for_fobx)
+[**MRxDeallocateForFobx**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_deallocate_for_fobx)
 
-[**MRxExtendForCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_extendfile_calldown)
+[**MRxExtendForCache**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_extendfile_calldown)
 
 [**MRxFlush**](mrxflush.md)
 
-[**MRxForceClosed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_forceclosed_calldown)
+[**MRxForceClosed**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_forceclosed_calldown)
 
-[**MRxIsLockRealizable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_is_lock_realizable)
+[**MRxIsLockRealizable**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_is_lock_realizable)
 
 [**MRxShouldTryToCollapseThisOpen**](mrxshouldtrytocollapsethisopen.md)
 
@@ -116,11 +110,4 @@ Requirements
 [**MRxZeroExtend**](mrxzeroextend.md)
 
  
-
- 
-
-
-
-
-
 

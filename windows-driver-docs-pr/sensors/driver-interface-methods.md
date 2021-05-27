@@ -1,6 +1,5 @@
 ---
 title: Driver interface methods
-ms.assetid: 675F4188-3B9A-421B-98EF-FE063B550231
 description: Interface methods supported by the sensor driver.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -8,22 +7,20 @@ ms.localizationpriority: medium
 
 # Driver interface methods
 
-
 A sensor driver must support the sensor platform's device-driver interface (DDI). The pseudocode demonstrates this using the following methods:
 
--   DDIOnClientConnect(sensorID, clientID)
--   DDIOnClientDisconnect(sensorID, clientID)
--   DDIOnClientSubscribeToEvents(sensorID, clientID)
--   DDIOnClientUnsubscribeFromEvents(sensorID, clientID)
--   DDIOnSetCRI(sensorID, requestedCRI)
--   DDIOnSetCS(sensorID, requestedCSs)
--   DDIOnSetLDA(sensorID, requestedLDA)
--   DDIOnGetProperties(sensorID, CRI, CS\[\], LDA)
--   DDIOnGetDatafields(sensorID, datafields\[\])
--   DDIHandleAsyncDataEvent(sensorID, inputReport)
+- DDIOnClientConnect(sensorID, clientID)
+- DDIOnClientDisconnect(sensorID, clientID)
+- DDIOnClientSubscribeToEvents(sensorID, clientID)
+- DDIOnClientUnsubscribeFromEvents(sensorID, clientID)
+- DDIOnSetCRI(sensorID, requestedCRI)
+- DDIOnSetCS(sensorID, requestedCSs)
+- DDIOnSetLDA(sensorID, requestedLDA)
+- DDIOnGetProperties(sensorID, CRI, CS\[\], LDA)
+- DDIOnGetDatafields(sensorID, datafields\[\])
+- DDIHandleAsyncDataEvent(sensorID, inputReport)
 
 ## Client connections
-
 
 The **DDIOnClientConnect** and **DDIOnClientDisonnect** methods demonstrate how a driver handles the connection and disconnection of a client.
 
@@ -107,7 +104,6 @@ DDIOnClientDisconnect(sensorID, clientID)
 
 ## Client event subscriptions
 
-
 The **DDIOnClientSubscribeToEvents** and **DDIOnClientUnsubscribeFromEvents** methods demonstrate how a driver handles event subscriptions.
 
 ```cpp
@@ -149,7 +145,6 @@ DDIOnClientUnsubscribeFromEvents(sensorID, clientID)
 ```
 
 ## Sensor reporting fields
-
 
 The **DDIOnSetCRI**, **DDIOnSetCS**, and **DDIOnSetLDA** methods demonstrate how a driver sets the current report interval, change sensitivity, and location data accuracy fields.
 
@@ -242,7 +237,6 @@ DDIOnSetLDA(sensorID, clientID, requestedLDA) //OnSetProperties, location only
 
 ## Property and datafield retrieval
 
-
 The **DDIOnGetProperties** and **DDIOnGetDatafields** methods demonstrate how a driver retrieves properties and datafields.
 
 ```cpp
@@ -303,7 +297,6 @@ DDIOnGetDatafields(sensorID, datafields[])
 
 ## Supporting asynchronous events
 
-
 The **DDIHandleAsyncDataEvent** method demonstrates how a driver supports asynchronous events.
 
 ```cpp
@@ -335,7 +328,7 @@ DDIHandleAsyncDataEvent(sensorID, buffer)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
+[Introduction to the Sensor and Location Platform in Windows](./index.md)
 
-
+[Sensor Driver Logic](./driver-logic--pseudo-code-.md)

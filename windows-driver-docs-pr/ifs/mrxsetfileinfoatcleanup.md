@@ -1,7 +1,6 @@
 ---
 title: MRxSetFileInfoAtCleanup routine
 description: The MRxSetFileInfoAtCleanup routine is called by RDBSS to request that a network mini-redirector set file information on a file system object at cleanup.
-ms.assetid: 099244ee-cc66-4500-9fee-a10238aaa66c
 keywords: ["MRxSetFileInfoAtCleanup routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxSetFileInfoAtCleanup routine
 
 
-The *MRxSetFileInfoAtCleanup* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector set file information on a file system object at cleanup.
+The *MRxSetFileInfoAtCleanup* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set file information on a file system object at cleanup.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetFileInfoAtCleanup;
@@ -32,19 +30,16 @@ NTSTATUS MRxSetFileInfoAtCleanup(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetFileInfoAtCleanup* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value.
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetFileInfoAtCleanup* during cleanup, when the last handle to a file object is closed. This is different than the close operation which is invoked when the last reference to a file object is deleted.
 
@@ -70,8 +65,7 @@ RDBSS ignores the return value from *MRxSetFileInfoAtCleanup*.
 
 A network mini-redirector can choose to do nothing in this routine and return STATUS\_SUCCESS. Any changes to the file size or timestamps will be handled during the cleanup operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -93,7 +87,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -118,11 +112,4 @@ Requirements
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
  
-
- 
-
-
-
-
-
 

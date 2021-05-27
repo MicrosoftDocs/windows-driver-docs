@@ -1,7 +1,6 @@
 ---
 title: Boot Options Identifiers
 description: Describes Boot Options Identifiers
-ms.assetid: bd0caf3f-bb35-4242-a10a-4efa91a21797
 keywords:
 - boot options Windows
 - identifiers
@@ -130,7 +129,7 @@ inherit                 {globalsettings}
 
 ```
 
-Use the bcdedit /all command to see all of the settings.  
+Use the bcdedit /enum all command to see all of the settings.  
 
 ```console
 C:\>bcdedit /enum all

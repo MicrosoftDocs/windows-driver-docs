@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_PORT_STATE
 description: Miniport drivers that support NDIS ports use the NDIS_STATUS_PORT_STATE status indication to indicate changes in the state of an NDIS port.
-ms.assetid: 28e76963-af06-4a00-83ef-14e009cf35ec
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PORT_STATE Network Drivers Starting with Windows Vista
@@ -13,13 +12,11 @@ ms.localizationpriority: medium
 
 Miniport drivers that support NDIS ports use the NDIS\_STATUS\_PORT\_STATE status indication to indicate changes in the state of an NDIS port.
 
-Remarks
--------
+## Remarks
 
-Miniport drivers must set the port number in the **PortNumber** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure. The **StatusBuffer** member of this structure contains a pointer to an [**NDIS\_PORT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state) structure.
+Miniport drivers must set the port number in the **PortNumber** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure. The **StatusBuffer** member of this structure contains a pointer to an [**NDIS\_PORT\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -41,14 +38,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_PORT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state)
+[**NDIS\_PORT\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state)
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
-
- 
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
  
-
-
-
 

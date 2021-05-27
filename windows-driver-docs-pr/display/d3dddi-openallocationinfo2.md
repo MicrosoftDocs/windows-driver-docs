@@ -1,7 +1,6 @@
 ---
 title: D3DDDI\_OPENALLOCATIONINFO2 structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 5C439C23-75B1-422C-850D-6980CC89539B
+description: Learn about the D3DDDI\_OPENALLOCATIONINFO2 structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DDDI_OPENALLOCATIONINFO2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
@@ -33,8 +31,7 @@ typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
 } D3DDDI_OPENALLOCATIONINFO2;
 ```
 
-Members
--------
+## Members
 
 **hAllocation**
 
@@ -46,8 +43,7 @@ Members
 
 **Reserved**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: INF SharedDriver Entry
 description: INF SharedDriver Entry
-ms.assetid: 36d094b4-481d-41bb-b034-345b0743456e
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - SharedDriver entry WDK non-HID keyboard/mouse
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 **\[ControlFlags\]**
 
 <em>SharedDriver</em>**=**<em>install-section-name</em>***,***<em>warning-text-string</em>
-Before the keyboard or mouse class installer installs a PS/2 device, it checks for a *SharedDriver* entry in the [INF **ControlFlags** section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section) for the device. If such an entry value exists, the class installer notifies the user by displaying the warning text string, and provides the user the option to cancel changing the PS/2 port driver.
+Before the keyboard or mouse class installer installs a PS/2 device, it checks for a *SharedDriver* entry in the [INF **ControlFlags** section](../install/inf-controlflags-section.md) for the device. If such an entry value exists, the class installer notifies the user by displaying the warning text string, and provides the user the option to cancel changing the PS/2 port driver.
 
 ### Entries and Values
 
@@ -32,9 +31,4 @@ Specifies a device's *DDInstall* section.
 Specifies a string the class installer uses to warn a user before changing the PS/2 port driver.
 
  
-
- 
-
-
-
 

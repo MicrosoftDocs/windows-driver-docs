@@ -1,7 +1,6 @@
 ---
 title: Unregistering and Unloading the WSK Client
 description: Unregistering and Unloading the WSK Client
-ms.assetid: dd9030b1-271f-46e4-9139-b49903ca8313
 keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel
@@ -12,17 +11,17 @@ ms.localizationpriority: medium
 # Unregistering and Unloading the WSK Client
 
 
-Any Winsock Kernel (WSK) application that uses the [Network Module Registrar (NMR)](network-module-registrar2.md) for attaching to the WSK subsystem must unregister with NMR before unloading. When a WSK application unregisters with the NMR by calling the [**NmrDeregisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrderegisterclient) function, the NMR calls the application's [*ClientDetachProvider*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_detach_provider_fn) callback function so that the application can detach itself from the WSK subsystem as part of the WSK application's unregistration process.
+Any Winsock Kernel (WSK) application that uses the [Network Module Registrar (NMR)](network-module-registrar2.md) for attaching to the WSK subsystem must unregister with NMR before unloading. When a WSK application unregisters with the NMR by calling the [**NmrDeregisterClient**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrderegisterclient) function, the NMR calls the application's [*ClientDetachProvider*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_detach_provider_fn) callback function so that the application can detach itself from the WSK subsystem as part of the WSK application's unregistration process.
 
 Furthermore, in the unlikely, but possible, case of the WSK subsystem unregistering with the NMR, the NMR also calls the WSK application's *ClientDetachProvider* callback function so that the application can detach itself from the WSK subsystem as part of the WSK subsystem's unregistration process.
 
 The NMR calls a WSK application's *ClientDetachProvider* callback function only once. If both the WSK application and the WSK subsystem unregister with the NMR, the NMR calls the WSK application's *ClientDetachProvider* callback function only after the first unregistration is initiated.
 
-If there are no calls in progress to any of the WSK functions in WSK\_PROVIDER\_DISPATCH at the time that the NMR calls the WSK application's *ClientDetachProvider* callback function, the WSK application should return STATUS\_SUCCESS from its *ClientDetachProvider* callback function. Otherwise, the WSK application must return STATUS\_PENDING from its *ClientDetachProvider* callback function, and it must call the [**NmrClientDetachProviderComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrclientdetachprovidercomplete) function after all of the calls in progress to the WSK functions in WSK\_PROVIDER\_DISPATCH have returned. A WSK application calls the **NmrClientDetachProviderComplete** function to notify the NMR that the application has detached from the WSK subsystem. However, the WSK subsystem will not allow the detachment procedure to be completed fully until all open sockets are closed by the WSK application. For more information, see [Closing a Socket](closing-a-socket.md).
+If there are no calls in progress to any of the WSK functions in WSK\_PROVIDER\_DISPATCH at the time that the NMR calls the WSK application's *ClientDetachProvider* callback function, the WSK application should return STATUS\_SUCCESS from its *ClientDetachProvider* callback function. Otherwise, the WSK application must return STATUS\_PENDING from its *ClientDetachProvider* callback function, and it must call the [**NmrClientDetachProviderComplete**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrclientdetachprovidercomplete) function after all of the calls in progress to the WSK functions in WSK\_PROVIDER\_DISPATCH have returned. A WSK application calls the **NmrClientDetachProviderComplete** function to notify the NMR that the application has detached from the WSK subsystem. However, the WSK subsystem will not allow the detachment procedure to be completed fully until all open sockets are closed by the WSK application. For more information, see [Closing a Socket](closing-a-socket.md).
 
 After a WSK application has notified the NMR that detachment is complete, either by returning STATUS\_SUCCESS from its *ClientDetachProvider* callback function or by calling the **NmrClientDetachProviderComplete** function, the application must not make any further calls to any of the WSK functions in WSK\_PROVIDER\_DISPATCH.
 
-If a WSK application implements a [*ClientCleanupBindingContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_cleanup_binding_context_fn) callback function, the NMR calls the application's *ClientCleanupBindingContext* callback function after both the WSK application and the WSK subsystem have completed detachment from each other. A WSK application's *ClientCleanupBindingContext* callback function should perform any necessary cleanup of the data contained within the application's binding context structure. It should then free the memory for the binding context structure if the application dynamically allocated memory for the structure.
+If a WSK application implements a [*ClientCleanupBindingContext*](/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_client_cleanup_binding_context_fn) callback function, the NMR calls the application's *ClientCleanupBindingContext* callback function after both the WSK application and the WSK subsystem have completed detachment from each other. A WSK application's *ClientCleanupBindingContext* callback function should perform any necessary cleanup of the data contained within the application's binding context structure. It should then free the memory for the binding context structure if the application dynamically allocated memory for the structure.
 
 For example:
 
@@ -89,7 +88,7 @@ VOID
 }
 ```
 
-A WSK application's [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function must ensure that the application is unregistered from the [NMR](network-module-registrar2.md) before the application is unloaded from system memory. A WSK application must not return from its *Unload* function until after it has been completely unregistered from the NMR. If the call to **NmrDeregisterClient** returns STATUS\_PENDING, the WSK application must call the **NmrWaitForClientDeregisterComplete** function to wait for the unregistration to complete before it returns from its *Unload* function.
+A WSK application's [**Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function must ensure that the application is unregistered from the [NMR](network-module-registrar2.md) before the application is unloaded from system memory. A WSK application must not return from its *Unload* function until after it has been completely unregistered from the NMR. If the call to **NmrDeregisterClient** returns STATUS\_PENDING, the WSK application must call the **NmrWaitForClientDeregisterComplete** function to wait for the unregistration to complete before it returns from its *Unload* function.
 
 For example:
 
@@ -125,10 +124,4 @@ VOID
 A WSK application is not required to call **NmrDeregisterClient** from within its *Unload* function. For example, if a WSK application is a subcomponent of a complex driver, the unregistration of the WSK application might occur when the WSK application subcomponent is deactivated. However, in such a situation the driver must still ensure that the WSK application has been completely unregistered from the NMR before returning from its *Unload* function.
 
  
-
- 
-
-
-
-
 

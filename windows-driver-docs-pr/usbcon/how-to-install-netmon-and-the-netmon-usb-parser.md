@@ -1,5 +1,5 @@
 ---
-Description: This topic provides installation information about Netmon and the USB ETW parsers.
+description: This topic provides installation information about Netmon and the USB ETW parsers.
 title: How to install Netmon and USB ETW Parsers
 ms.date: 04/20/2017
 ms.localizationpriority: medium

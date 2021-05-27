@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_PROTOCOLSTATISTICS WMI Class
 description: MS\_SMHBA\_PROTOCOLSTATISTICS WMI Class
-ms.assetid: 718ae583-254d-4807-b8e2-5eb39017c097
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -38,15 +37,9 @@ class MS_SMHBA_PROTOCOLSTATISTICS
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_PROTOCOLSTATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics)
+[**MS\_SMHBA\_PROTOCOLSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: ks.objhdr
 description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
-ms.assetid: 105b1c03-fc89-4c0f-91d0-42e88f07c71c
 keywords: ["ks.objhdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Levels and flags for **!ks.objhdr** are identical to those described in [**!ks.dump**](-ks-dump.md).
 

@@ -1,7 +1,6 @@
 ---
 title: Viewing and Editing Memory and Registers in Visual Studio
 description: The procedure covers Viewing and Editing Memory and Registers in Visual Studio.
-ms.assetid: BE365305-F1C7-4D29-885A-55D040D5D900
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 >
 
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](../index.yml).
 
 Visual Studio provides several windows that you can use to view local variables, global variables, registers, and arbitrary memory buffers. To open any of the following windows, from the **Debug** menu, choose **Windows**.
 
@@ -24,10 +23,4 @@ Visual Studio provides several windows that you can use to view local variables,
 -   Memory
 
  
-
- 
-
-
-
-
 

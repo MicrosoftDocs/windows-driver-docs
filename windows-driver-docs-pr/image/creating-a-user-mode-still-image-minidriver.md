@@ -1,7 +1,6 @@
 ---
 title: Creating a User-Mode Still Image Minidriver
 description: Creating a User-Mode Still Image Minidriver
-ms.assetid: 94fdbeba-5b4a-4b66-b381-ec362b6d38c9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

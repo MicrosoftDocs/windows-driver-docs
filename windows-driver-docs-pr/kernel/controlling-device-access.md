@@ -1,13 +1,12 @@
 ---
-title: Controlling Device Access
-description: Controlling Device Access
-ms.assetid: b5e562ad-573b-4b0f-9d85-2410fda16e4e
+title: Controlling Device Access (WDM)
+description: Learn about controlling device access for WDM drivers, WDM bus drivers, and non-WDM drivers. Access to a device is controlled by a security descriptor.
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device access controls WDK kernel", "non-WDM driver device access WDK kernel", "security descriptors WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
 ---
 
-# Controlling Device Access
+# Controlling Device Access (WDM)
 
 
 
@@ -19,9 +18,9 @@ Access to a device is controlled by a security descriptor (and the ACL it contai
 
 When a WDM driver (other than certain bus drivers) creates a device object, the Plug and Play manager determines a security descriptor for the device. The order of operations is as follows.
 
-1.  The PnP manager calls the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
+1.  The PnP manager calls the driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
 
-2.  The driver's *AddDevice* routine calls [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) to create the device object and attach it to the device object stack.
+2.  The driver's *AddDevice* routine calls [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) to create the device object and attach it to the device object stack.
 
 3.  The PnP manager updates the security descriptor for the newly-created device object.
 
@@ -41,7 +40,7 @@ If a device is operated in raw mode, then the PnP manager cannot determine a sec
 
 ### Controlling Device Access for WDM Bus Drivers
 
-A WDM bus driver must provide a security descriptor for the PDO of every device that can be operated in raw mode. Use [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) to create the device object with a security descriptor.
+A WDM bus driver must provide a security descriptor for the PDO of every device that can be operated in raw mode. Use [**IoCreateDeviceSecure**](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) to create the device object with a security descriptor.
 
 If the bus driver does not operate a device in raw mode, then it is not required to supply a security descriptor. The PnP manager determines the security descriptor, as described above. The bus driver can supply a security descriptor if it must ensure that its PDOs have stricter security settings than the default descriptor. Any descriptor specified by the bus driver is overridden by settings in the registry.
 
@@ -56,9 +55,4 @@ Use the **IoCreateDeviceSecure** routine to create the named device object and t
 The system overrides the default security descriptor with any security settings in the registry for the specified class GUID. The driver must specify its own unique GUID for the device. Use the GuidGen tool to generate a unique GUID. (GuidGen is included in the Microsoft Windows SDK.)
 
  
-
- 
-
-
-
 

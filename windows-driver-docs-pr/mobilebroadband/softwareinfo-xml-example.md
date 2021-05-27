@@ -1,14 +1,13 @@
 ---
 title: SoftwareInfo XML Example
 description: SoftwareInfo XML Example
-ms.assetid: 3ee92b21-ed4e-4ed9-9199-3f43f2f8ec00
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # SoftwareInfo XML Example
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-schema.md) to specify the attributes of the Contoso Wireless service:
 
@@ -38,12 +37,3 @@ The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-sch
 
 </SoftwareInfo>
 ```
-
- 
-
- 
-
-
-
-
-

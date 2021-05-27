@@ -1,7 +1,6 @@
 ---
 title: .foreach
 description: The .foreach token parses the output of one or more debugger commands and uses each value in this output as the input to one or more additional commands.
-ms.assetid: 646c86c2-a436-43d6-b0d8-32dbd423120e
 keywords: [".foreach Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,8 +60,7 @@ Specifies one or more commands which will be executed for each token. Whenever t
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 When the output from *InCommands*, the *InString* string, or the *InFile* file is parsed, any number of spaces, tabs, or carriage returns is treated as a single delimiter. Each of the resulting pieces of text is used to replace *Variable* when it appears within *OutCommands*.
 

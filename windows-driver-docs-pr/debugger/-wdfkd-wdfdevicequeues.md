@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfdevicequeues
 description: The wdfkd.wdfdevicequeues extension displays information about all of the framework queue objects that belong to a specified device.
-ms.assetid: bd0e7fcc-b561-48fb-901a-605e9d647b61
 keywords: ["wdfkd.wdfdevicequeues Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md) and [**!wdfkd.wdfqueue**](-wdfkd-wdfqueue.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows the display from the **!wdfkd.wdfdevicequeues** extension.
 

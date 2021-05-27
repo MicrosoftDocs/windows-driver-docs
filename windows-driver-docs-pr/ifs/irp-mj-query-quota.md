@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_QUERY_QUOTA
 description: IRP\_MJ\_QUERY\_QUOTA
-ms.assetid: eb48b5ef-7eac-49d4-ab23-2d3efe783fa3
 keywords: ["IRP_MJ_QUERY_QUOTA Installable File System Drivers"]
 topic_type:
 - apiref
@@ -29,7 +28,7 @@ The filter driver should pass this IRP down to the next-lower driver on the stac
 
 ## Parameters
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a query quota information request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a query quota information request:
 
 ### *DeviceObject*  
 
@@ -54,7 +53,7 @@ Pointer to a system-supplied buffer to be used as an intermediate system buffer,
 
 ### *Irp->IoStatus*
 
-Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
 ### *Irp->UserBuffer*  
 
@@ -86,7 +85,7 @@ Length, in bytes, of the buffer pointed to by *Irp->UserBuffer*.
 
 ### *IrpSp->Parameters.QueryQuota.SidList*
 
-Optional pointer to a list of SIDs whose quota information is to be returned. Each entry in the list is a [**FILE\_GET\_QUOTA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_get_quota_information) structure. This structure is defined as follows:
+Optional pointer to a list of SIDs whose quota information is to be returned. Each entry in the list is a [**FILE\_GET\_QUOTA\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_get_quota_information) structure. This structure is defined as follows:
 
 ```cpp
 typedef struct _FILE_GET_QUOTA_INFORMATION {
@@ -112,18 +111,18 @@ Optional pointer to a SID that indicates that the returned information is to sta
 
 ## See also
 
-[**FILE\_GET\_QUOTA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_get_quota_information)
+[**FILE\_GET\_QUOTA\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_get_quota_information)
 
-[**FILE\_QUOTA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_quota_information)
+[**FILE\_QUOTA\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_quota_information)
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IoCheckQuotaBufferValidity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckquotabuffervalidity)
+[**IoCheckQuotaBufferValidity**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckquotabuffervalidity)
 
-[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
+[**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**IRP\_MJ\_SET\_QUOTA**](irp-mj-set-quota.md)

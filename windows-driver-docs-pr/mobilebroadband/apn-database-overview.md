@@ -1,7 +1,6 @@
 ---
 title: APN database overview
 description: APN database overview
-ms.assetid: 699b797e-c225-47ba-96a5-26b15c91a759
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -53,12 +52,12 @@ Specifically, the APN database includes the following data:
 
 -   **Certificate Data** Certificate information for account provisioning metadata. This includes Certificate Issuer Name and Subject Name, and is used to verify that Account Provisioning that is provided by a purchase web site comes from the user’s authorized web service.
 
-For more information on the APN database XML schema, see [APN database schema reference](apn-database-schema-reference.md).
+For more information on the APN database XML schema, see [APN database schema reference](apn-schema-definition.md).
 
 ## <span id="abndbsub"></span><span id="ABNDBSUB"></span>APN database submission and maintenance
 
 
-If you want to request a new APN or update an existing one, see [COSA/APN database submission](cosa-apn-database-submission.md).
+If you want to request a new APN or update an existing one, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
  
 
 

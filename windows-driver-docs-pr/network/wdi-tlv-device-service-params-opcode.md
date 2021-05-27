@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opcode specific to the device service.
-ms.assetid: A0C9E728-E0E5-47C1-AEB8-E001057FA35A
 ms.date: 06/15/2018
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE Network Drivers Starting with Windows Vista
@@ -28,8 +27,9 @@ The size, in bytes, of a UINT8.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1809 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1809
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp
+

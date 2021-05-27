@@ -1,7 +1,6 @@
 ---
 title: DXGKCB\_PRESENT\_DISPLAYONLY\_PROGRESS callback function
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: 8970246b-b46f-464f-93b2-973cc351ed07
+description: Learn about the DXGKCB\_PRESENT\_DISPLAYONLY\_PROGRESS callback function, which is reserved for system use. Do not use it in your driver.
 keywords: ["pfnPresentDisplayOnlyProgress callback function Display Devices", "DXGKCB_PRESENT_DISPLAYONLY_PROGRESS"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKCB_PRESENT_DISPLAYONLY_PROGRESS pfnPresentDisplayOnlyProgress;
@@ -33,20 +31,17 @@ void APIENTRY CALLBACK* pfnPresentDisplayOnlyProgress(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hAdapter* \[in\]
 
 *pProgress* \[in\]
 
-Return value
-------------
+## Return value
 
 This callback function does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

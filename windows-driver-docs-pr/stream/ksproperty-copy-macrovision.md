@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_COPY\_MACROVISION
 description: The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of the data stream.
-ms.assetid: 6863bcf6-06bc-4bd2-896e-43c083aa07d5
 keywords: ["KSPROPERTY_COPY_MACROVISION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of th
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision" data-raw-source="[&lt;strong&gt;KS_COPY_MACROVISION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)"><strong>KS_COPY_MACROVISION</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision" data-raw-source="[&lt;strong&gt;KS_COPY_MACROVISION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)"><strong>KS_COPY_MACROVISION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,13 +56,11 @@ The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of th
 
 The property value (operation data) is a KS\_COPY\_MACROVISION structure the specifies the Macrovision level of the data stream.
 
-Remarks
--------
+## Remarks
 
-For more information about Macrovision level, see [DVD Copyright Protection](https://docs.microsoft.com/windows-hardware/drivers/stream/dvd-copyright-protection).
+For more information about Macrovision level, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,5 @@ Requirements
 ## See also
 
 
-[**KS\_COPY\_MACROVISION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)
-
- 
-
- 
-
-
-
-
-
+[**KS\_COPY\_MACROVISION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_copy_macrovision)
 

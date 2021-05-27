@@ -1,7 +1,6 @@
 ---
 title: MS\_SM\_AdapterInformationQuery WMI Class
 description: MS\_SM\_AdapterInformationQuery WMI Class
-ms.assetid: 3a396a73-6ade-455a-ac3f-fd0175cc704e
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -99,15 +98,9 @@ class MS_SM_AdapterInformationQuery
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SM\_AdapterInformationQuery**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_sm_adapterinformationquery)
+[**MS\_SM\_AdapterInformationQuery**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_sm_adapterinformationquery)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

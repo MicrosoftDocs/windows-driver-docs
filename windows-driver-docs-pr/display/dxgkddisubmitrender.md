@@ -1,7 +1,6 @@
 ---
 title: DXGKDDI\_SUBMITRENDER callback function
 description: The DxgkDdiSubmitRender function is reserved for system use. Do not implement it in your driver.
-ms.assetid: a409f737-72e9-43b0-be81-c373b151f5d9
 keywords: ["DxgkDdiSubmitRender callback function Display Devices", "DXGKDDI_SUBMITRENDER"]
 topic_type:
 - apiref
@@ -22,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiSubmitRender* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_SUBMITRENDER DxgkDdiSubmitRender;
@@ -35,8 +33,7 @@ NTSTATUS DxgkDdiSubmitRender(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hContext*
 This parameter is reserved for system use.
@@ -44,8 +41,7 @@ This parameter is reserved for system use.
 *pSubmitRender*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

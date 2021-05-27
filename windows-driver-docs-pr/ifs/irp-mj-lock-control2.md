@@ -1,14 +1,13 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_LOCK_CONTROL operation
 description: Checking the Oplock State of an IRP_MJ_LOCK_CONTROL operation
-ms.assetid: 6e0a5287-9a22-465f-b345-c9af556e6cdb
 ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of an IRP_MJ_LOCK_CONTROL operation
 
-The following [oplock break](https://docs.microsoft.com/windows-hardware/drivers/ifs/breaking-oplocks) conditions apply on every byte range lock operation on the given stream.
+The following [oplock break](./breaking-oplocks.md) conditions apply on every byte range lock operation on the given stream.
 
 ### Conditions for a Level 2 request type
 

@@ -1,7 +1,6 @@
 ---
 title: \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function
 description: \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock synchronizes blocking I/O requests to the same work queue.
-ms.assetid: 350294ca-9790-4996-bcb5-1423db762c6e
 keywords: ["__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** synchronizes blocking I/O requests to the same work queue.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS __RxSynchronizeBlockingOperationsMaybeDroppingFcbLock(
@@ -31,8 +29,7 @@ NTSTATUS __RxSynchronizeBlockingOperationsMaybeDroppingFcbLock(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT of the operation being synchronized.
@@ -43,8 +40,7 @@ A pointer to the LIST\_ENTRY for the queue.
 *DropFcbLock* \[in\]  
 A Boolean value that indicates if the FCB resource should be released. If this parameter is **TRUE**, then the FCB resource will be released.
 
-Return value
-------------
+## Return value
 
 **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value such as one of the following:
 
@@ -73,14 +69,13 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 The **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** routine synchronizes blocking I/O requests to the same work queue. RDBSS uses **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** internally to synchronize named pipe operations. The work queue is the queue referenced by the file object extension (FOBX) associated with the **pFcb** member of the RX\_CONTEXT structure pointed to by *RxContext*.
 
 A network mini-redirector may use **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** to synchronize operations on a separate queue that is maintained by the network mini-redirector.
 
-If *RxContext* is marked for an asynchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will add the *RxContext* to the queue and return STATUS\_PENDING. If *RxContext* is marked for a synchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will block and *RxContext* is resumed when a call is made to [**RxResumeBlockedOperations\_Serially**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxresumeblockedoperations_serially).
+If *RxContext* is marked for an asynchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will add the *RxContext* to the queue and return STATUS\_PENDING. If *RxContext* is marked for a synchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will block and *RxContext* is resumed when a call is made to [**RxResumeBlockedOperations\_Serially**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxresumeblockedoperations_serially).
 
 If the blocking I/O request was canceled, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** returns STATUS\_CANCELLED to indicate the error.
 
@@ -92,8 +87,7 @@ The following two macros are defined on Windows XP and Windows 2000 for calling 
 
 **RxSynchronizeBlockingOperationsAndDropFcbLock** - calls with the *DropFcbLock* parameter set to **TRUE**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -119,28 +113,21 @@ Requirements
 ## See also
 
 
-[**RxCompleteRequest\_Real**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxcompleterequest_real)
+[**RxCompleteRequest\_Real**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxcompleterequest_real)
 
-[**RxCreateRxContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxcreaterxcontext)
+[**RxCreateRxContext**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxcreaterxcontext)
 
-[**RxDereference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxdereference)
+[**RxDereference**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxdereference)
 
-[**RxDereferenceAndDeleteRxContext\_Real**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxdereferenceanddeleterxcontext_real)
+[**RxDereferenceAndDeleteRxContext\_Real**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxdereferenceanddeleterxcontext_real)
 
-[**RxInitializeContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxinitializecontext)
+[**RxInitializeContext**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxinitializecontext)
 
-[**RxPrepareContextForReuse**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxpreparecontextforreuse)
+[**RxPrepareContextForReuse**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxpreparecontextforreuse)
 
-[**RxResumeBlockedOperations\_Serially**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxresumeblockedoperations_serially)
+[**RxResumeBlockedOperations\_Serially**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxresumeblockedoperations_serially)
 
-[**\_\_RxSynchronizeBlockingOperations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-__rxsynchronizeblockingoperations)
-
- 
+[**\_\_RxSynchronizeBlockingOperations**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-__rxsynchronizeblockingoperations)
 
  
-
-
-
-
-
 

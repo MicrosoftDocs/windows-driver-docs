@@ -1,7 +1,6 @@
 ---
 title: Debug initial command
 description: Debug initial command
-ms.assetid: 0af0b53d-455f-4cdb-b956-9d7e49601733
 keywords: ["Debug initial command (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

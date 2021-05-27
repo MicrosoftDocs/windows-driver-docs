@@ -1,7 +1,6 @@
 ---
 title: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
 description: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
-ms.assetid: 99b9f180-018b-47c4-ab8d-dc037e3f637a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-In order to determine private TWAIN-supported capabilities, a TWAIN application notifies the TWAIN compatibility layer, which then sends the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to the WIA driver's [**IStiUSD::Escape**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method. The following pseudocode implementation of the **Escape** method demonstrates how it should respond to the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to report private TWAIN-support capabilities.
+In order to determine private TWAIN-supported capabilities, a TWAIN application notifies the TWAIN compatibility layer, which then sends the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to the WIA driver's [**IStiUSD::Escape**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method. The following pseudocode implementation of the **Escape** method demonstrates how it should respond to the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to report private TWAIN-support capabilities.
 
 **Note**   The **Escape** method in this example is the same as the one shown in [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md), although the focus of each sample is a different escape code.
 
@@ -168,9 +167,4 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
 ```
 
  
-
- 
-
-
-
 

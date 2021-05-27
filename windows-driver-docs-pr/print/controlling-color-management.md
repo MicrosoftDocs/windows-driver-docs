@@ -1,7 +1,6 @@
 ---
 title: Controlling Color Management
 description: Controlling Color Management
-ms.assetid: cb210b8d-fee1-4904-8c50-f03d2445085e
 keywords:
 - color management WDK print , controlling
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware. The driver determines which component is managing color correction by examining flags within the [**BRUSHOBJ**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_brushobj) and [**XLATEOBJ**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_xlateobj) structures that are passed to its implementations of graphics DDI drawing functions. The following flags are defined:
+Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware. The driver determines which component is managing color correction by examining flags within the [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-brushobj) and [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-xlateobj) structures that are passed to its implementations of graphics DDI drawing functions. The following flags are defined:
 
 <table>
 <colgroup>
@@ -54,9 +53,4 @@ The following topics describe driver support for these color management scenario
 [Color Management of JPEG and PNG Images](color-management-of-jpeg-and-png-images.md)
 
  
-
- 
-
-
-
 

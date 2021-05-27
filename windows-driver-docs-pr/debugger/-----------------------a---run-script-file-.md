@@ -1,7 +1,6 @@
 ---
 title: $ , $ , $$ , $$ , $$ a (Run Script File)
 description: The $ , $ , $$ , $$ , and $$ a commands read the contents of the specified script file and use its contents as debugger command input.
-ms.assetid: b3584680-765d-4aaf-ad43-c7d73552e5fb
 keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (Run Script File) command", "Run Script File ($ ) command", "Run Script File ($ ) command", "Run Script File ($$ ) command", "Run Script File ($$ ) comm", "$ , $ , $$ , $$ , $$ a (Run Script File) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -60,8 +59,7 @@ Specifies any number of string arguments for the debugger to pass to the script.
 
  
 
-Remarks
--------
+## Remarks
 
 The **$$&lt;** and **$&lt;** tokens execute the commands that are found in the script file literally. However, with **$&lt;** you can specify any file name, including one that contains semicolons. Because **$&lt;** allows semicolons to be used in the file name, you cannot concatenate **$&lt;** with other debugger commands, because a semicolon cannot be used both as a command separator and as part of a file name.
 
@@ -141,8 +139,7 @@ Script files can be nested. If the debugger encounters one of these tokens in a 
 
 In WinDbg, you can paste the additional command text in the Debugger Command window.
 
-Examples
---------
+## Examples
 
 The following example demonstrates how to pass arguments to a script file, Myfile.txt. Assume that the file contains the following text:
 

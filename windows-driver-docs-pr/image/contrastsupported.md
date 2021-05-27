@@ -1,7 +1,6 @@
 ---
 title: ContrastSupported element
 description: The required ContrastSupported element specifies whether the scan device supports user control of the scan contrast setting.
-ms.assetid: 9b865f9f-b5f6-4bb3-9f24-3df896845e96
 keywords: ["ContrastSupported element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ContrastSupported** element specifies whether the scan device supports user control of the scan contrast setting.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ContrastSupported>
@@ -27,13 +25,11 @@ Usage
 </wscn:ContrastSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, 1, false, or true.**falsetrue**
 
@@ -61,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scan device allows user control of the scan contrast setting, the WSD Scan Service should return 1 (**true**); otherwise, it should return 0 (**false**).
 

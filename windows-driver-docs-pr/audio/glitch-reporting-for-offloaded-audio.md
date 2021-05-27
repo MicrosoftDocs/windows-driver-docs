@@ -1,7 +1,6 @@
 ---
 title: Glitch Reporting for Offloaded Audio
 description: This topic explains the mechanism that an audio driver must use when it has to report glitching errors in connection with hardware-offloaded audio streams.
-ms.assetid: 9FF2A5D6-9382-4EE6-AA21-DCF47210F73B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,14 +28,9 @@ typedef enum
 } EPcMiniportEngineEvent;
 ```
 
-For more information about this enum, see [**EPcMiniportEngineEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ne-portcls-epcminiportengineevent).
+For more information about this enum, see [**EPcMiniportEngineEvent**](/windows-hardware/drivers/ddi/portcls/ne-portcls-epcminiportengineevent).
 
 And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Driver Implementation Details](driver-implementation-details.md).
 
  
-
- 
-
-
-
 

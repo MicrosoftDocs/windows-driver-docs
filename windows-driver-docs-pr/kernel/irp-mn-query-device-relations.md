@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_DEVICE_RELATIONS
 description: The PnP manager sends this request to determine certain relationships among devices.
 ms.date: 08/12/2017
-ms.assetid: 32437c5a-ad92-433c-8255-83775751a44d
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -21,16 +20,19 @@ The PnP manager sends this request to determine certain relationships among devi
 
 -   Bus drivers might handle **EjectionRelations** requests for their child devices (child PDOs).
 
-Major Code
-----------
+## Value
+
+0x07
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 The PnP manager sends this IRP to gather information about devices with a relationship to the specified device.
 
-The PnP manager queries a device's **BusRelations** (child devices) when the device is enumerated and at other times while the device is active, such as when a driver calls the [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) routine to indicate that a child device has arrived or departed.
+The PnP manager queries a device's **BusRelations** (child devices) when the device is enumerated and at other times while the device is active, such as when a driver calls the [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) routine to indicate that a child device has arrived or departed.
 
 The PnP manager queries a device's **RemovalRelations** before it removes a device's drivers. The PnP manager queries for **RemovalRelations** and **EjectionRelations** before it ejects a device.
 
@@ -45,7 +47,7 @@ For **TargetDeviceRelation** requests, the PnP manager sends this IRP at IRQL = 
 ## Input Parameters
 
 
-The **Parameters.QueryDeviceRelations.Type** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure specifies the type of relations that are being queried. Possible values include **BusRelations**, **EjectionRelations**, **RemovalRelations**, **TargetDeviceRelation**, and **PowerRelations**.
+The **Parameters.QueryDeviceRelations.Type** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure specifies the type of relations that are being queried. Possible values include **BusRelations**, **EjectionRelations**, **RemovalRelations**, **TargetDeviceRelation**, and **PowerRelations**.
 
 The **FileObject** member of the current **IO\_STACK\_LOCATION** structure points to a valid file object only if **Parameters.QueryDeviceRelations.Type** is **TargetDeviceRelation**.
 
@@ -68,16 +70,15 @@ typedef struct _DEVICE_RELATIONS {
 } DEVICE_RELATIONS, *PDEVICE_RELATIONS;
 ```
 
-Operation
----------
+## Operation
 
 If a driver returns relations in response to this **IRP\_MN\_QUERY\_DEVICE\_RELATIONS**, the driver allocates a **DEVICE\_RELATIONS** structure from paged memory that contains a count and the appropriate number of device object pointers. The PnP manager frees the structure when it is no longer needed. If a driver replaces a **DEVICE\_RELATIONS** structure that another driver allocated, the driver must free the previous structure.
 
-A driver must reference the PDO of any device that it reports in this IRP ([**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)). The PnP manager removes the reference when appropriate.
+A driver must reference the PDO of any device that it reports in this IRP ([**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)). The PnP manager removes the reference when appropriate.
 
-A function or filter driver should be prepared to handle this IRP for a device any time after its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine has completed for the device. Bus drivers should be prepared to handle a query for **BusRelations** immediately after a device is enumerated.
+A function or filter driver should be prepared to handle this IRP for a device any time after its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine has completed for the device. Bus drivers should be prepared to handle a query for **BusRelations** immediately after a device is enumerated.
 
-For the general rules about handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md) see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For the general rules about handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md) see [Plug and Play](./introduction-to-plug-and-play.md).
 
 The following subsections describe the specific actions for handling the various queries.
 
@@ -85,7 +86,7 @@ The following subsections describe the specific actions for handling the various
 
 When the PnP manager queries for the bus relations (child devices) of an adapter or controller, the bus driver must return a list of pointers to the PDOs of any devices physically present on the bus. The bus driver reports all devices, regardless of whether they have been started. The bus driver might need to power up its bus device to determine which children are present.
 
-**Warning**   A device object cannot be passed to any routine that takes a PDO as an argument until the PnP manager creates a device node (*devnode*) for that object. (If the driver does pass a device object, the system will bug check with [**Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xca--pnp-detected-fatal-error).) The PnP manager creates the devnode in response to the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request. The driver can safely assume that the PDO's devnode has been created when it receives an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request.
+**Warning**   A device object cannot be passed to any routine that takes a PDO as an argument until the PnP manager creates a device node (*devnode*) for that object. (If the driver does pass a device object, the system will bug check with [**Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR**](../debugger/bug-check-0xca--pnp-detected-fatal-error.md).) The PnP manager creates the devnode in response to the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request. The driver can safely assume that the PDO's devnode has been created when it receives an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request.
 
  
 
@@ -109,7 +110,7 @@ In the example shown in the figure, the PnP manager sends an **IRP\_MN\_QUERY\_D
 
     -   Creates a PDO for any child device that does not already have one.
 
-    -   Marks the PDO inactive for any device that is no longer present on the bus. The bus driver does not delete such PDOs.For more information about when to delete the PDOs, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+    -   Marks the PDO inactive for any device that is no longer present on the bus. The bus driver does not delete such PDOs.For more information about when to delete the PDOs, see [Removing a Device](./removing-a-device-in-a-bus-driver.md).
 
     -   Reports any child devices that are present on the bus.
 
@@ -125,9 +126,9 @@ In the example shown in the figure, the PnP manager sends an **IRP\_MN\_QUERY\_D
 
 4.  An optional lower filter, if present, typically does not handle this IRP. Such a filter driver passes the IRP down the stack. If a lower-filter driver handles this IRP, it can add PDO(s) to the list of child devices but it must not delete any PDOs created by other drivers.
 
-5.  The parent bus driver does not handle this IRP, unless it is the only driver in the device stack (the device is in raw mode). As with all PnP IRPs, the parent bus driver completes the IRP with [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
+5.  The parent bus driver does not handle this IRP, unless it is the only driver in the device stack (the device is in raw mode). As with all PnP IRPs, the parent bus driver completes the IRP with [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
 
-    If there are one or more bus filter drivers in the device stack, such drivers might handle the IRP on its way down to the bus driver and/or on the IRP's way back up the device stack (if there are [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines). According to the PnP IRP rules, such a driver can add PDOs to the IRP on its way down the stack and/or modify the relations list on the IRP's way back up the stack (in *IoCompletion* routines).
+    If there are one or more bus filter drivers in the device stack, such drivers might handle the IRP on its way down to the bus driver and/or on the IRP's way back up the device stack (if there are [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines). According to the PnP IRP rules, such a driver can add PDOs to the IRP on its way down the stack and/or modify the relations list on the IRP's way back up the stack (in *IoCompletion* routines).
 
 **EjectionRelations Request**
 
@@ -141,17 +142,17 @@ Only a parent bus driver can respond to an **EjectionRelations** query for one o
 
 Starting with Windows 7, the **PowerRelations** query enables a driver to specify a power management relationship outside of the conventional relationship between a parent bus that supports PnP enumeration and an enumerated child device on the bus. For example, if a bus driver cannot enumerate a child device on the bus, or if a device is a child of more than one bus, the **PowerRelations** query can describe the child device's power relations with the bus or buses.
 
-The PnP manager issues a **PowerRelations** query for a device when the driver for the device calls the [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) routine and specifies a *Type* parameter value of **PowerRelations**.
+The PnP manager issues a **PowerRelations** query for a device when the driver for the device calls the [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) routine and specifies a *Type* parameter value of **PowerRelations**.
 
 In response to this query, the driver for the target device (that is, the device that is the target for the query) supplies a **DEVICE\_RELATIONS** structure that contains pointers to the PDOs of any other devices that must be turned on by the power manager before the target device is turned on. Conversely, these other devices must be turned off only after the target device is turned off. The power manager uses the information from the query to guarantee that these devices are turned on and off in the correct order.
 
-This ordering guarantee applies only to global system sleep state transitions, which include transitions to and from the S1, S2, S3 (*sleep*), S4 (*hibernate*), and S5 (*shutdown*) system power states. The **PowerRelations** ordering guarantee does not apply to Dx device power state transitions while the system stays in the S0 (*running*) system state, except in the case of [Directed Runtime Power Management (DFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework) transitions.
+This ordering guarantee applies only to global system sleep state transitions, which include transitions to and from the S1, S2, S3 (*sleep*), S4 (*hibernate*), and S5 (*shutdown*) system power states. The **PowerRelations** ordering guarantee does not apply to Dx device power state transitions while the system stays in the S0 (*running*) system state, except in the case of [Directed Runtime Power Management (DFx)](./introduction-to-the-directed-power-management-framework.md) transitions.
 
 If the target device is on the device path for a special file (such as the paging file, hibernate file, or crash dump file), the driver for the target device must perform an additional step when it handles an [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](irp-mn-device-usage-notification.md) IRP in which **InPath** is **TRUE**. This driver must ensure that the devices whose PDOs are supplied for the **PowerRelations** query can also support being in the device path for the special file. To confirm this support, the driver for the target device must first send the **IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION** IRP to each of these devices, and this IRP must specify the same **UsageNotification.Type** as the target device. Only if all the devices that receive this IRP complete the IRP with a success status code can the driver for the target device complete its **IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION** IRP successfully. Otherwise, this driver must complete this IRP with a failure status code.
 
 When this same driver handles an **IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION** IRP for which **InPath** is **FALSE**, the driver must send the **IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION** IRP to the same set of dependent devices as for the case in which **InPath** is **TRUE**. However, the driver should never complete this IRP with a failure status code when **InPath** is **FALSE**.
 
-The driver that responds to the **PowerRelations** query should register for target device change notifications on all devices whose PDOs are supplied for the **PowerRelations** query. To register for these notifications, the driver can call the [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) routine and specify an *EventCategory* parameter value of **EventCategoryTargetDeviceChange**.
+The driver that responds to the **PowerRelations** query should register for target device change notifications on all devices whose PDOs are supplied for the **PowerRelations** query. To register for these notifications, the driver can call the [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) routine and specify an *EventCategory* parameter value of **EventCategoryTargetDeviceChange**.
 
 **RemovalRelations Request**
 
@@ -171,7 +172,7 @@ The following list summarizes the situations in which you can safely acquire a p
 
 -   Device object in a PnP
 
-    A device object that is in a PnP device stack learns about the stack's PDO when the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine for the device is called. The driver can safely cache the pointer to the PDO if the use of the pointer is properly synchronized with incoming [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) messages by using the [remove lock routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+    A device object that is in a PnP device stack learns about the stack's PDO when the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine for the device is called. The driver can safely cache the pointer to the PDO if the use of the pointer is properly synchronized with incoming [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) messages by using the [remove lock routines](/windows-hardware/drivers/ddi/index).
 
 -   Device object in a non-PnP stack, not at bottom of stack
 
@@ -179,13 +180,13 @@ The following list summarizes the situations in which you can safely acquire a p
 
 -   File object for the device
 
-    Given a file object for the device, a driver can call [**IoGetRelatedDeviceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetrelateddeviceobject) to get the device object and then follow the instructions in the preceding list item.
+    Given a file object for the device, a driver can call [**IoGetRelatedDeviceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetrelateddeviceobject) to get the device object and then follow the instructions in the preceding list item.
 
 -   Handle to the device object
 
-    Given a handle to the device object, a driver can call [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) to get the file object for the device and then follow the instructions in the preceding list item.
+    Given a handle to the device object, a driver can call [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) to get the file object for the device and then follow the instructions in the preceding list item.
 
-A parent bus driver must handle a **TargetDeviceRelation** relations query for its child devices. The bus driver references the child device's PDO with [**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) and returns a pointer to the PDO in the **DEVICE\_RELATIONS** structure. There is only one PDO pointer in the structure for this relation type. The PnP manager removes the reference to the PDO when the driver or application unregisters for notification on the device.
+A parent bus driver must handle a **TargetDeviceRelation** relations query for its child devices. The bus driver references the child device's PDO with [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) and returns a pointer to the PDO in the **DEVICE\_RELATIONS** structure. There is only one PDO pointer in the structure for this relation type. The PnP manager removes the reference to the PDO when the driver or application unregisters for notification on the device.
 
 Only a parent bus driver responds to a **TargetDeviceRelation** query. Function and filter drivers must pass it to the next lower driver in the device stack. If a bus driver receives this IRP as the function driver for its adapter or controller, the bus driver is performing the tasks of a function driver and must pass the IRP to the next lower driver.
 
@@ -195,7 +196,7 @@ If a driver is not in a PDO-based stack, the driver sends a new target-device-re
 
 Drivers must not send **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** to request **BusRelations**. Drivers are not restricted from sending this IRP for **RemovalRelations** or **EjectionRelations**, but it is not likely that a driver would do so.
 
-Drivers can query a device stack for **TargetDeviceRelation**. See [Handling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps) for information about sending IRPs. The following steps apply specifically to this IRP:
+Drivers can query a device stack for **TargetDeviceRelation**. See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The following steps apply specifically to this IRP:
 
 -   Set the values in the next I/O stack location of the IRP: set **MajorFunction** to [**IRP\_MJ\_PNP**](irp-mj-pnp.md), set **MinorFunction** to **IRP\_MN\_QUERY\_DEVICE\_RELATIONS**, set **Parameters.QueryDeviceRelations.Type** to **TargetDeviceRelation**, and set **Irp-&gt;FileObject** to a valid file object.
 
@@ -203,8 +204,7 @@ Drivers can query a device stack for **TargetDeviceRelation**. See [Handling IRP
 
 If a driver sent this IRP to get the PDO to report in response to an **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** for **TargetDeviceRelation** that the driver received, then the driver reports the PDO and frees the returned relations structure when the IRP completes. If a driver initiated this IRP for another reason, the driver frees the relations structure when the IRP completes and dereferences the PDO when it is no longer needed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -222,15 +222,15 @@ Requirements
 ## See also
 
 
-[*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)
+[*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)
 
-[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
+[**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 
-[**IoGetRelatedDeviceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetrelateddeviceobject)
+[**IoGetRelatedDeviceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetrelateddeviceobject)
 
-[**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations)
+[**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations)
 
-[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)
+[**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
@@ -242,16 +242,9 @@ Requirements
 
 [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)
+[**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)
 
-[**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)
-
- 
-
- 
-
-
-
+[**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)
 

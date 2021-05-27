@@ -1,7 +1,6 @@
 ---
 title: SimpleService WSDL
 description: SimpleService WSDL
-ms.assetid: 4fb5fcb7-9821-47c8-ae0d-3e73f8ee30c5
 keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL
@@ -14,10 +13,9 @@ ms.localizationpriority: medium
 
 # SimpleService WSDL
 
-
 The following code sample shows the SimpleService WSDL.
 
-```
+```xml
 <wsdl:definitions
     targetNamespace="http://schemas.example.org/SimpleService"
     xmlns:tns="http://schemas.example.org/SimpleService"
@@ -29,11 +27,11 @@ The following code sample shows the SimpleService WSDL.
     xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
     xmlns:wsf="http://schemas.xmlsoap.org/ws/2004/09/transfer">
- 
+
     <wsp:Policy wsu:Id="Simple">
         <wsdp:Profile />
     </wsp:Policy>
- 
+
     <wsdl:types>
         <xs:schema
             targetNamespace="http://schemas.example.org/SimpleService"
@@ -169,7 +167,7 @@ The following code sample shows the SimpleService WSDL.
         <wsdl:part name="parameters" element="tns:AnyCheckResponse" />
     </wsdl:message>
 
- 
+
     <wsdl:portType name="SimpleService">
         <wsdl:operation name="OneWay">
             <wsdl:input
@@ -201,7 +199,7 @@ The following code sample shows the SimpleService WSDL.
                 wsa:Action="http://schemas.example.org/SimpleService/AnyCheckResponse"/>
         </wsdl:operation>
     </wsdl:portType>
- 
+
     <wsdl:binding name="SimpleServiceSoap12Binding" type="tns:SimpleService">
         <wsoap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
         <wsp:PolicyReference URI="#Simple" wsdl:required="true" />
@@ -243,7 +241,7 @@ The following code sample shows the SimpleService WSDL.
             </wsdl:output>
         </wsdl:operation>
     </wsdl:binding>
- 
+
     <wsdl:service name="SimpleService">
         <wsdl:port
             name="SimplePort"
@@ -251,15 +249,6 @@ The following code sample shows the SimpleService WSDL.
             <wsoap12:address location="http://localhost/WebService/Simple.asmx" />
         </wsdl:port>
     </wsdl:service>
- 
-</wsdl:definitions> 
+
+</wsdl:definitions>
 ```
-
- 
-
- 
-
-
-
-
-

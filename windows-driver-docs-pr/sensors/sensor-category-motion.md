@@ -1,7 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_MOTION
 description: The SENSOR\_CATEGORY\_MOTION category contains sensors that provide information that is related to physical movement.
-ms.assetid: 9189aefc-e92d-483c-80da-f61339b14ebd
 keywords: ["SENSOR_CATEGORY_MOTION Sensor Devices"]
 topic_type:
 - apiref
@@ -155,8 +154,7 @@ This category includes the following platform-defined data fields.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: How do I redefine an fprintf function as a tracing call
 description: How do I redefine an fprintf function as a tracing call
-ms.assetid: def82d48-454b-421b-a63d-695dae733fd0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

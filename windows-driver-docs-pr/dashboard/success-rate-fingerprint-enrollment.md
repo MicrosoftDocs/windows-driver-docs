@@ -8,7 +8,7 @@ ms.localizationpriority: medium
  
 # Success rate of Fingerprint Enrollment
 
-## Description
+## Description 
 
 If a user has a fingerprint sensor attached to their device, they will be offered to enroll their fingerprint to use it as an unlock gesture. The enrollment experience will be launched during the Windows out of box experience or can be launched from settings. This measure monitors success rate of completing that experience.
 

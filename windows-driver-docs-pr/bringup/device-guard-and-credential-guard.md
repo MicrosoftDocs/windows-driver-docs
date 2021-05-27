@@ -1,36 +1,19 @@
 ---
-title: Device Guard and Credential Guard
-description: Device Guard and Credential Guard
-ms.date: 05/07/2018
+title: Hypervisor-Protected Code Integrity (HVCI) 
+description: Hypervisor-Protected Code Integrity (HVCI) 
+ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---
 
 
+# Hypervisor-Protected Code Integrity (HVCI)
 
-# Device Guard and Credential Guard
-
-
-Device Guard is one of Windows security features that is a combination of enterprise-related hardware, firmware, and software security features. When configured together, it will lock down a device so that it can only run trusted applications.
-
-Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-
-Device Guard and Credential Guard are optional features, that when implemented and enabled, reduce the exposed attack surface to malware by requiring additional protectors be enabled on the device.
+Hypervisor-Protected Code Integrity can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification.
 
 ## Related resources
 
-[Device Guard deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
+[Code integrity checking](../devtest/code-integrity-checking.md)
 
-[Driver compatibility requirements](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
+[Hypervisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
 
-[What's new in Credential Guard?](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1507-and-1511)
-
-[Hypervisor Code Integrity Readiness Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
-
-[Driver compatibility with Device Guard in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
-
-
-
-
-
-
-
+[Driver compatibility with HVCI in Windows 10](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)

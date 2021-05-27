@@ -1,8 +1,7 @@
 ---
 title: Print schema glossary
-description: Glossary page
+description: A glossary of terms regarding the 3D print schema. The glossary includes explanations for terms such as assembly, nozzle, raft. 
 Robots: noindex, nofollow
-ms.assetid: 70B4C1B6-F076-4D58-A9A6-46DA9CBF5151
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

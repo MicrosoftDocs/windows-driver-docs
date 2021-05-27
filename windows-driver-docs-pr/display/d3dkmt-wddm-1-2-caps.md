@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_WDDM\_1\_2\_CAPS structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 0cd26fad-4772-4631-81fc-da2ddb7dc9a1
+description: Learn about the D3DKMT\_WDDM\_1\_2\_CAPS structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_WDDM_1_2_CAPS structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_WDDM_1_2_CAPS {
@@ -45,8 +43,7 @@ typedef struct _D3DKMT_WDDM_1_2_CAPS {
 } D3DKMT_WDDM_1_2_CAPS;
 ```
 
-Members
--------
+## Members
 
 **PreemptionCaps**
 
@@ -74,8 +71,7 @@ Members
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

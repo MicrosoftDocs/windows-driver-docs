@@ -1,7 +1,6 @@
 ---
 title: GUID_SERENUM_BUS_ENUMERATOR
 description: GUID_SERENUM_BUS_ENUMERATOR
-ms.assetid: 85d72641-e86c-4611-9509-aea4a3344950
 keywords: ["GUID_SERENUM_BUS_ENUMERATOR Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,15 +17,13 @@ ms.date: 10/17/2018
 # GUID_SERENUM_BUS_ENUMERATOR
 
 
-GUID_SERENUM_BUS_ENUMERATOR is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for Plug and Play (PnP) serial ports. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR**](guid-devinterface-serenum-bus-enumerator.md) class identifier for new instances of this class.
+GUID_SERENUM_BUS_ENUMERATOR is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for Plug and Play (PnP) serial ports. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR**](guid-devinterface-serenum-bus-enumerator.md) class identifier for new instances of this class.
 
-Remarks
--------
+## Remarks
 
-The WDK includes the serial enumerator sample ([*serenum*](https://docs.microsoft.com/previous-versions/ff546505(v=vs.85))). The serial enumerator uses GUID_SERENUM_BUS_ENUMERATOR to register instances of this device interface class. The serenum sample is included in the *src\\kernel* directory of the WDK.
+The WDK includes the serial enumerator sample ([*serenum*](/previous-versions/ff546505(v=vs.85))). The serial enumerator uses GUID_SERENUM_BUS_ENUMERATOR to register instances of this device interface class. The serenum sample is included in the *src\\kernel* directory of the WDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -51,11 +48,4 @@ Requirements
 [**GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR**](guid-devinterface-serenum-bus-enumerator.md)
 
  
-
- 
-
-
-
-
-
 

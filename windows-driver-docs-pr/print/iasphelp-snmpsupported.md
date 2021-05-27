@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 17e3986b-3eb6-4c9d-ae4f-338e9cce439a
 keywords: ["get_SNMPSupported method Print Devices", "get_SNMPSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_SNMPSupported method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **SNMPSupported** property enables an ASP Web page to determine if SNMP is being used with a printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_SNMPSupported(
@@ -32,14 +30,12 @@ HRESULT get_SNMPSupported(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive **TRUE** if SNMP is being used with the printer, or **FALSE** if it is not.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 UsingSNMP = objPrinter.SNMPSupported
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

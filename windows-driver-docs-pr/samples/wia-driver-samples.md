@@ -11,4 +11,4 @@ The samples in this directory provide a starting point for writing a custom WIA 
 
 | Sample | Description |
 | --- | --- |
-| [Windows Image Acquisition (WIA) driver sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples) | Demonstrates how to write a custom WIA driver for your device. |
+| [Windows Image Acquisition (WIA) driver sample](/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples) | Demonstrates how to write a custom WIA driver for your device. |

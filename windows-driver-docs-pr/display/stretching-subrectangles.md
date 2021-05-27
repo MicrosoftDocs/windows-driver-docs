@@ -1,7 +1,6 @@
 ---
 title: Stretching Subrectangles
 description: Stretching Subrectangles
-ms.assetid: c8642ea4-67e9-4a15-9636-8d7efbfd8c9e
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing
 - subrectangular processing WDK DirectX VA

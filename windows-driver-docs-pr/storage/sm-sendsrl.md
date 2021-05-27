@@ -1,7 +1,6 @@
 ---
 title: SM\_SendSRL function
 description: The SM\_SendSRL WMI method sends a scan remote loop (SRL) command through the indicated port to the indicated domain controller.
-ms.assetid: 44090e8d-ffb2-48a9-a574-5bf067ffa952
 keywords: ["SM_SendSRL function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendSRL WMI method sends a scan remote loop (SRL) command through the indicated port to the indicated domain controller.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendSRL(
@@ -36,8 +34,7 @@ void SM_SendSRL(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the local port through which the SRL command is sent. This information is delivered to the miniport driver in the HbaPortWWN member of a SM\_SendSRL\_IN structure.
@@ -63,18 +60,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *RespBuffer*   
 The results of the RPS command. The miniport driver returns this information in the RespBuffer member of a SM\_SendRPS\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -98,14 +92,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendSRL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendsrl_out)
+[**SM\_SendSRL\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendsrl_out)
 
  
-
- 
-
-
-
-
-
 

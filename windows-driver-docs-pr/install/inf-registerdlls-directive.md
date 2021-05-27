@@ -1,7 +1,6 @@
 ---
 title: INF RegisterDlls Directive
 description: A RegisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
-ms.assetid: 59da13e6-f801-4efe-8cd3-d0305e503c24
 keywords:
 - INF RegisterDlls Directive Device and Driver Installation
 topic_type:
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 A **RegisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 
-```ini
+```inf
 [DDInstall]
   
 RegisterDlls=register-dll-section[,register-dll-section]...
@@ -29,7 +28,7 @@ RegisterDlls=register-dll-section[,register-dll-section]...
 
 Each INF section referenced by a **RegisterDlls** directive must have the following entry format:
 
-```ini
+```inf
 [register-dll-section] 
   
 dirid,[subdir],filename,registration-flags[,[timeout][,argument]] 
@@ -66,8 +65,7 @@ If the control is an executable file, this is a command string that is passed to
 
 If the control is not an executable file, this specifies the command-line argument to pass to the **DllInstall** function.
 
-Remarks
--------
+## Remarks
 
 Each *register-dll-section* name must be unique to the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -79,10 +77,9 @@ The following rules apply to the use of the **RegisterDlls** directive for devic
 
 For more information about OLE controls and self registration, see the Windows SDK documentation.
 
-Examples
---------
+## Examples
 
-```ini
+```inf
 [Dialer]
 RegisterDlls = DialerRegSvr
 [DialerUninstall]

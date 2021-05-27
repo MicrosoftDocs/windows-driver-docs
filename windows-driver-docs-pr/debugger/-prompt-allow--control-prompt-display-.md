@@ -1,7 +1,6 @@
 ---
 title: .prompt_allow (Control Prompt Display)
 description: The .prompt_allow command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
-ms.assetid: 916114f9-0a68-4423-ba28-a5f0da8a1af9
 keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -81,8 +80,7 @@ The symbol for the current instruction. This symbol includes the current module,
 
 For more information about commands that affect execution, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 You can use the **.prompt\_allow** command without parameters to show which items are displayed and are not displayed. Every time that you run **.prompt\_allow**, the debugger changes the status of only the specified items.
 

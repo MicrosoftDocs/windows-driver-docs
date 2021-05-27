@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TCP_RSC_STATISTICS
 description: OID_WDI_TCP_RSC_STATISTICS is a get command that queries the RSC statistics of the hardware.
-ms.assetid: 9079DD03-597D-4B6D-8515-ECF5DAC2A41A
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
@@ -28,12 +27,11 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                                              | Multiple TLV instances allowed | Optional | Description                         |
 |--------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
-| [**WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tcp-rsc-statistics-parameters) |                                |          | TCP RSC statistics of the hardware. |
+| [**WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS**](./wdi-tlv-tcp-rsc-statistics-parameters.md) |                                |          | TCP RSC statistics of the hardware. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

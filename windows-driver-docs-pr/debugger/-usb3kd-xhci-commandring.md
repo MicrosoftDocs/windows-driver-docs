@@ -1,7 +1,6 @@
 ---
 title: usb3kd.xhci_commandring
 description: The usb3kd.xhci_commandring extension displays information about the command ring data structure associated with a USB 3.0 host controller.
-ms.assetid: 3099F3F1-B881-4BBD-90F5-59DC2DFECF3B
 keywords: ["usb3kd.xhci_commandring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,15 +32,13 @@ AAddress of the device extension for the host controller's functional device obj
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
-The output the **!xhci\_commandring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the **!xhci\_commandring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 The command ring is a data structure used by the USB 3.0 host controller driver to pass commands to the host controller.
 
-Examples
---------
+## Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
@@ -94,14 +91,7 @@ DequeueIndex: 24 EnqueueIndex: 24 CycleState: 0
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

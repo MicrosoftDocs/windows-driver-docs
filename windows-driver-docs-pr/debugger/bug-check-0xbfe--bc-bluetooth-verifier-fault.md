@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xBFE BC_BLUETOOTH_VERIFIER_FAULT
 description: The BC_BLUETOOTH_VERIFIER_FAULT bug check has a value of 0x00000BFE. This indicates that a driver has caused a violation.
-ms.assetid: EC1368CE-46A2-4B69-8405-3118503D35C2
 keywords: ["Bug Check 0xBFE BC_BLUETOOTH_VERIFIER_FAULT", "BC_BLUETOOTH_VERIFIER_FAULT"]
 ms.date: 05/23/2017
 topic_type:
@@ -96,10 +95,9 @@ The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This ind
 
 
 
-Resolution
-----------
+## Resolution
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 Parameter 1 describes the type of violation. Look at the call stack to determine the misbehaving driver.
 
 

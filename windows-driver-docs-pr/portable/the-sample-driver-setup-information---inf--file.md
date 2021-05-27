@@ -1,5 +1,5 @@
 ---
-Description: The Sample Driver Setup Information (.inf) File
+description: The Sample Driver Setup Information (.inf) File
 title: The Sample Driver Setup Information (.inf) File
 ms.date: 04/20/2017
 ms.localizationpriority: medium

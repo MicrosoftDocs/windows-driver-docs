@@ -1,7 +1,6 @@
 ---
 title: NX Pool Opt-In Mechanisms
 description: To port kernel-mode driver code to Windows 8 from earlier versions of Windows, you should use the NonPagedPoolNx type of memory pool as a best practice.
-ms.assetid: 9C868569-14EC-4915-8553-FD2D94C5A855
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -15,7 +14,7 @@ These porting aids use one or both of the following techniques to enable the dri
 
 -   Use a `#define` preprocessor statement to create a globally defined macro name.
 
--   Call an inline function from the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine.
+-   Call an inline function from the [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine.
 
 For most kernel-mode driver code, these porting aids enable developers to update their drivers with minimal effort.
 
@@ -52,9 +51,4 @@ For most kernel-mode driver code, these porting aids enable developers to update
  
 
  
-
- 
-
-
-
 

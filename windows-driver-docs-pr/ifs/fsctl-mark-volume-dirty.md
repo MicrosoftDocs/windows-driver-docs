@@ -1,7 +1,6 @@
 ---
 title: FSCTL_MARK_VOLUME_DIRTY control code
 description: The FSCTL\_MARK\_VOLUME\_DIRTY control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
-ms.assetid: 9062b212-fc8a-4467-b32f-047fc3702445
 keywords: ["FSCTL_MARK_VOLUME_DIRTY control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,18 +19,18 @@ ms.localizationpriority: medium
 
 The **FSCTL\_MARK\_VOLUME\_DIRTY** control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance"></a>*Instance*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer to the minifilter driver instance that is initiating the FSCTL request.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer to the minifilter driver instance that is initiating the FSCTL request.
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file pointer object specifying the volume to be marked dirty. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file pointer object specifying the volume to be marked dirty. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. A handle to the volume that is to be marked dirty. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle to the volume that is to be marked dirty. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode"></a>*FsControlCode*  
 Control code for the operation. Use **FSCTL\_MARK\_VOLUME\_DIRTY** for this operation.
@@ -48,10 +47,9 @@ Not used with this operation. Set to **NULL**.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used with this operation. Set to 0.
 
-Status block
-------------
+## Status block
 
-The [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
+The [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
 
 <table>
 <colgroup>
@@ -90,13 +88,11 @@ The [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/d
 
  
 
-Remarks
--------
+## Remarks
 
 **ReFS:  **This code is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -114,18 +110,11 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**FSCTL\_IS\_VOLUME\_DIRTY**](fsctl-is-volume-dirty.md)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

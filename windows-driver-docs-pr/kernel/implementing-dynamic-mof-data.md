@@ -1,7 +1,6 @@
 ---
 title: Implementing Dynamic MOF Data
 description: Implementing Dynamic MOF Data
-ms.assetid: 408c0f64-6257-4ece-bb4d-b1850f8ae3c6
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "dyanmic MOF data WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,14 +22,9 @@ A driver's schema can be published dynamically by including binary MOF data in t
 
 4.  Register as supporting MSWmi\_MofData\_GUID, which is a GUID defined in wmidata.h.
 
-5.  Return selected binary data to WMI in response to both the [**IRP\_MN\_QUERY\_ALL\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-all-data) or [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-single-instance) requests for MSWmi\_MofData\_GUID.
+5.  Return selected binary data to WMI in response to both the [**IRP\_MN\_QUERY\_ALL\_DATA**](./irp-mn-query-all-data.md) or [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](./irp-mn-query-single-instance.md) requests for MSWmi\_MofData\_GUID.
 
 For more information about the wmimofck utility see [Using wmimofck.exe](using-wmimofck-exe.md).
 
  
-
- 
-
-
-
 

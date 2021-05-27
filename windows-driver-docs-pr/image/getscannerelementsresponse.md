@@ -1,7 +1,6 @@
 ---
 title: GetScannerElementsResponse element
 description: The required GetScannerElementsResponse element contains the WSD Scan Service's response to a client's request for information about the scanner.
-ms.assetid: da3cded6-6aa9-4fe6-ad02-9a02d2219075
 keywords: ["GetScannerElementsResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **GetScannerElementsResponse** element contains the WSD Scan Service's response to a client's request for information about the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetScannerElementsResponse>
@@ -27,8 +25,7 @@ Usage
 </wscn:GetScannerElementsResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -56,15 +53,13 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetScannerElementsResponse** operation element.
 
 When a client successfully queries for scanner information through a [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation, the Scan Service must respond with a **GetScannerElementsResponse** operation element that contains the requested information.
 
-Examples
---------
+## Examples
 
 In the following code example, the WSD Scan Service returns the scanner's description.
 

@@ -1,7 +1,6 @@
 ---
 title: arbinst
 description: The arbinst extension displays information about a specified arbiter.
-ms.assetid: 6aa06283-9cd7-4579-9e5d-40bbaf53f782
 keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -58,8 +57,7 @@ Specifies how much information to display for each arbiter. At present, the only
 
 See also the [**!arbiter**](-arbiter.md) extension.
 
-Remarks
--------
+## Remarks
 
 For the arbiter specified, **!arbinst** displays each allocated range of system resources, some optional flags, the PDO attached to that range (in other words, the range's owner), and the service name of this owner (if known).
 

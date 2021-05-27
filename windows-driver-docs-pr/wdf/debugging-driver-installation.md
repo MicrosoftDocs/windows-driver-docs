@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting KMDF and UMDF Driver Installation
 description: Troubleshooting KMDF and UMDF Driver Installation
-ms.assetid: b0b71adc-cb6e-4b84-a5bf-bd1269bcf315
 keywords:
 - Kernel-Mode Driver Framework WDK , installing drivers
 - framework-based drivers WDK KMDF , installing
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The framework's co-installer creates debugging messages. You can see these messages in a debugger.
 
-Additionally, the co-installer writes its debugging messages to the [Setup action log](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-text-logs) (*%windir%\\setupact.log*) file. The Setup action log contains the version of the co-installer and the driver specified in the driver's INF file. You should verify that these are as expected.
+Additionally, the co-installer writes its debugging messages to the [Setup action log](../install/setupapi-text-logs.md) (*%windir%\\setupact.log*) file. The Setup action log contains the version of the co-installer and the driver specified in the driver's INF file. You should verify that these are as expected.
 
 ## Examining KMDF Installation
 
@@ -107,12 +106,3 @@ WudfUpdate: Error updating UMDF - error(22) The device does not recognize the co
 ```
 
 In this scenario, the on-disk version of the UMDF runtime was older than the version of the co-installer. However, in this case the update was unsuccessful. The co-installer points to additional log files where you can find more information regarding the reason for the failure.
-
-
-
-
-
-
-
-
-

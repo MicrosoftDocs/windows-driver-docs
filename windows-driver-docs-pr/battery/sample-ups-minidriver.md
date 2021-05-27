@@ -1,7 +1,6 @@
 ---
 title: Sample UPS Minidriver
 description: Sample UPS Minidriver
-ms.assetid: 56ab63ec-26d2-4ae7-bae3-8a33d66f6152
 keywords:
 - UPS minidrivers WDK , samples
 ms.date: 04/01/2019

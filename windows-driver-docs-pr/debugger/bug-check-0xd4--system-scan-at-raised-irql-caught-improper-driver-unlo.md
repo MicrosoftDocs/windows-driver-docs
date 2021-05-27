@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD4 SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD
 description: The SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD bug check has a value of 0x000000D4. This indicates that a driver did not cancel pending operations before unloading.
-ms.assetid: 4c0e69d1-737c-4dd7-b52a-4cd5eeadcbb9
 keywords: ["Bug Check 0xD4 SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD", "SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,22 +60,15 @@ The SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD bug check h
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 This driver failed to cancel lookaside lists, DPCs, worker threads, or other such items before unload. Subsequently, the system attempted to access the driver's former location at a raised IRQL.
 
-Resolution
-----------
+## Resolution
 
-To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) command to get a stack trace. If the driver that caused the error has been identified, activate Driver Verifier and attempt to replicate this bug.
+To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace. If the driver that caused the error has been identified, activate Driver Verifier and attempt to replicate this bug.
 
-For full details on [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier), see the Windows Driver Kit.
-
- 
+For full details on [Driver Verifier](../devtest/driver-verifier.md), see the Windows Driver Kit.
 
  
-
-
-
 

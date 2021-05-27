@@ -1,7 +1,6 @@
 ---
 title: Sending a Wait/Wake IRP
 description: Sending a Wait/Wake IRP
-ms.assetid: ed582644-af51-4841-be59-6a3deb6d9de5
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , sending", "sending wait/wake IRPs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The minor power IRP code [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) provides for waking a device or waking the system. Drivers of devices that can wake themselves or the system send **IRP\_MN\_WAIT\_WAKE** requests. The system sends **IRP\_MN\_WAIT\_WAKE** requests only to devices that always wake the system, such as the power-on switch.
+The minor power IRP code [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) provides for waking a device or waking the system. Drivers of devices that can wake themselves or the system send **IRP\_MN\_WAIT\_WAKE** requests. The system sends **IRP\_MN\_WAIT\_WAKE** requests only to devices that always wake the system, such as the power-on switch.
 
 A driver sends an **IRP\_MN\_WAIT\_WAKE** request for one of two reasons:
 
@@ -28,9 +27,4 @@ A driver sends an **IRP\_MN\_WAIT\_WAKE** request for one of two reasons:
 Whether a device is prepared to wake itself or the system, the actions its drivers must take are the same. The primary difference lies in how the device and system hardware respond to the initial wake-up signal. Driver behavior is the same in either case.
 
  
-
- 
-
-
-
 

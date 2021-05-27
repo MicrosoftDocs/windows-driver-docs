@@ -1,7 +1,6 @@
 ---
 title: Integrate a mobile broadband app with other Windows components
 description: Integrate a mobile broadband app with other Windows components
-ms.assetid: 70469f6b-70a8-4ebc-b315-08ddeffbdc0f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ This topic contains the following sections:
 ## App settings
 
 
-You can use [App settings](https://docs.microsoft.com/windows/uwp/app-settings/guidelines-for-app-settings) to include settings for your apps configuration. Some examples of these are as follows:
+You can use [App settings](/windows/uwp/app-settings/guidelines-for-app-settings) to include settings for your apps configuration. Some examples of these are as follows:
 
 -   Sign in and sign out
 
@@ -63,7 +62,7 @@ Your mobile broadband app can have a number of error cases that should be dealt 
 
 -   **Form field validation errors** Appears when a user enters incorrect information into a form. Validation errors should be shown inline so that the user knows the field with which the error is associated.
 
-For guidance on how to present errors, see [Laying out your UI](https://docs.microsoft.com/previous-versions/windows/apps/hh465304(v=win.10)). In the example below, a notification bar is displayed at the top of the page.
+For guidance on how to present errors, see [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10)). In the example below, a notification bar is displayed at the top of the page.
 
 ![notification bar shows errors](images/mb-fig1-notificationbarerrors.png)
 
@@ -105,7 +104,7 @@ The following examples show how some pages look when side by side with another a
 
 ![services page side by side with another app](images/mb-fig3-snappedview-servicespage.png)
 
-Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10)).
+Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](/previous-versions/windows/apps/hh452681(v=win.10)).
 
 ## <span id="launchpts"></span><span id="LAUNCHPTS"></span>Launch points
 
@@ -146,7 +145,7 @@ A toast notification should be used only for information of high interest to the
 
 ### <span id="splash"></span><span id="SPLASH"></span>Splash screen
 
-You can use splash screen to promote branding. For more info about the splash screen, see [Adding a splash screen](https://docs.microsoft.com/previous-versions/windows/apps/hh465332(v=win.10)).
+You can use splash screen to promote branding. For more info about the splash screen, see [Adding a splash screen](/previous-versions/windows/apps/hh465332(v=win.10)).
 
 ![splash screen](images/mb-fig4-splash-screen.png)
 
@@ -168,9 +167,9 @@ Inappropriate design for operator notifications:
 
 ### <span id="resources"></span><span id="RESOURCES"></span>Additional resources
 
--   [Working with tiles, badges, and toast notifications](https://docs.microsoft.com/previous-versions/windows/apps/hh868259(v=win.10))
+-   [Working with tiles, badges, and toast notifications](/previous-versions/windows/apps/hh868259(v=win.10))
 
--   [Guidelines and checklist for toast notifications](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-badges-notifications)
+-   [Guidelines and checklist for toast notifications](/windows/uwp/controls-and-patterns/tiles-badges-notifications)
 
 ## <span id="related_topics"></span>Related topics
 
@@ -178,11 +177,4 @@ Inappropriate design for operator notifications:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

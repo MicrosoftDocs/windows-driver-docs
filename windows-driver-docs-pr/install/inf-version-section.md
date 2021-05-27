@@ -1,7 +1,6 @@
 ---
 title: INF Version Section
 description: By convention, the Version section appears first in INF files. Every INF file must have this section.
-ms.assetid: 53e30950-28a3-4ae3-a351-a917b02c84a5
 keywords:
 - INF Version Section Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 By convention, the **Version** section appears first in INF files. Every INF file must have this section.
 
-```ini
+```inf
 [Version]
  
 Signature="signature-name"
@@ -64,7 +63,7 @@ Some class installers put additional requirements on how the signature value mus
 An INF must supply OS-specific installation information by appending system-defined extensions to its *DDInstall* sections, whether the *signature-name* is <strong>$Windows NT$</strong>or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
 
 <a href="" id="class-class-name"></a>**Class=**<em>class-name</em>  
-For any standard type of device, this specifies the name of the [device setup class](device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)).
+For any standard type of device, this specifies the name of the [device setup class](./overview-of-device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](./system-defined-device-setup-classes-reserved-for-system-use.md).
 
 If an INF specifies a **Class,** it should also specify the corresponding system-defined GUID value for its **ClassGUID** entry. Specifying the matching GUID value for a device of any predefined device setup class can install the device and its drivers faster because this helps the system setup code to optimize its INF searching.
 
@@ -77,11 +76,11 @@ This entry is irrelevant to an INF that installs neither a new device driver und
  
 
 <a href="" id="classguid--nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn-"></a>**ClassGuid={**<em>nnnnnnnn</em>**-***nnnn***-***nnnn***-***nnnn***-**<em>nnnnnnnnnnnn</em>**}**  
-Specifies the [device setup class](device-setup-classes.md) GUID. The GUID value is formatted as shown here, where each *n* is a hexadecimal digit.
+Specifies the [device setup class](./overview-of-device-setup-classes.md) GUID. The GUID value is formatted as shown here, where each *n* is a hexadecimal digit.
 
 This GUID value specifies the device setup class subkey in the registry **...\\Class** tree under which to write registry information for the drivers of devices that are installed from this INF file. This class-specific GUID value also identifies the device class installer for the type of device and class-specific property page provider, if any.
 
-For a new [device setup class](device-setup-classes.md), the INF must specify a newly generated **ClassGUID** value. For more information about how to create GUIDs, see [Using GUIDs in Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-guids-in-drivers). Also see Device Setup Classes.
+For a new [device setup class](./overview-of-device-setup-classes.md), the INF must specify a newly generated **ClassGUID** value. For more information about how to create GUIDs, see [Using GUIDs in Drivers](../kernel/using-guids-in-drivers.md). Also see Device Setup Classes.
 
 **Note**  This entry is required for device drivers that are installed through the PnP manager.
 
@@ -91,7 +90,11 @@ Specifies the extension ID GUID when authoring an extension INF. The GUID value 
 When creating the initial version of an extension INF, the INF must specify a newly generated **ExtensionId** value. However, when updating an existing extension INF, the **ExtensionId** must remain the same so that multiple related versions of the extension INF are versioned against each other instead of being treated as independent extension INFs that may be simultaneously installed on the same device instance. For more information about how to author extension INFs, see [Using an Extension INF File](using-an-extension-inf-file.md).
 
 **Note**  This entry is only required when creating an extension INF, as identified by specifying `Class = Extension` and `ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}`.
- 
+
+**ClassVer=**<em>major</em>**.**<em>minor</em>
+
+Reserved for system use unless explicitly required by a device class such as Printer. For example, see [V4 Driver INF](../print/v4-driver-inf.md).
+
 
 <a href="" id="provider--inf-creator-"></a>**Provider=%**<em>INF-creator</em>**%**  
 Identifies the provider of the INF file. Typically, this is specified as an **%**<em>OrganizationName</em>**%** token that is expanded later in the INF file's [**Strings**](inf-strings-section.md) section. The maximum length, in characters, of a provider name is LINE_LEN.
@@ -159,8 +162,7 @@ Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info ab
 <a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=** *PackageType*  
 Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info about the DIFx deprecation, see [DIFx Guidelines](difx-guidelines.md).
 
-Remarks
--------
+## Remarks
 
 When a [driver package](driver-packages.md) passes Microsoft Windows Hardware Quality Lab (WHQL) testing, WHQL returns *.cat* catalog files to the IHV or OEM. Each *.cat* file contains a digitally encrypted signature for the driver package. The IHV or OEM must list these *.cat* files in the INF **Version** section and must supply the files on the distribution media, in the same location as the INF file. The *.cat* files must be uncompressed.
 
@@ -170,12 +172,11 @@ When a [driver package](driver-packages.md) passes Microsoft Windows Hardware Qu
 
 For more information, see [Driver Signing](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
-Examples
---------
+## Examples
 
 The following example shows a **Version** section typical of a simple device-driver INF, followed by the required [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) sections implied by the entries specified in this sample **Version** section:
 
-```ini
+```inf
 [Version]
 Signature="$Windows NT$"
 Class=SCSIAdapter
@@ -214,13 +215,4 @@ Floppy_Description = "Adaptec Drivers Disk"
 [**SourceDisksFiles**](inf-sourcedisksfiles-section.md)
 
 [**Strings**](inf-strings-section.md)
-
- 
-
- 
-
-
-
-
-
 

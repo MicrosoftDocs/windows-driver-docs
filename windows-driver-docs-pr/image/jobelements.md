@@ -1,7 +1,6 @@
 ---
 title: JobElements element
 description: The required JobElements element contains all of the job-related elements that a client requests through a call to GetJobElementsRequest.
-ms.assetid: ac7d8749-272d-4817-bc80-8f220e06436c
 keywords: ["JobElements element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobElements** element contains all of the job-related elements that a client requests through a call to [**GetJobElementsRequest**](getjobelementsrequest.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobElements>
@@ -27,8 +25,7 @@ Usage
 </wscn:JobElements>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -70,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service returns the **JobElements** element in [**GetJobElementsResponse**](getjobelementsresponse.md).
 

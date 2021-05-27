@@ -1,7 +1,6 @@
 ---
 title: About Network Virtualization using Generic Routing Encapsulation (NVGRE)
 description: This section describes Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
-ms.assetid: D1BE5659-4491-411B-9D32-9CB7A141A240
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,54 +15,39 @@ The following figure shows a GRE-encapsulated packet. On the wire, NVGRE-encapsu
 
 NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Offload, which makes it possible to use NVGRE-formatted packets with:
 
--   Large Send Offload (LSO)
--   Virtual Machine Queue (VMQ)
--   Transmit (Tx) checksum offload (IPv4, TCP, UDP)
--   Receive (Rx) checksum offload (IPv4, TCP, UDP)
+- Large Send Offload (LSO)
+- Virtual Machine Queue (VMQ)
+- Transmit (Tx) checksum offload (IPv4, TCP, UDP)
+- Receive (Rx) checksum offload (IPv4, TCP, UDP)
 
 **Note**  It is possible for a protocol driver to offload "mixed mode" packets, which means packets in which the inner and outer IP header versions are different. For example, a packet could have outer IP header as IPv6 and the inner IP header as IPv4.
 
- 
-
 **Note**  It is also possible for a protocol driver to offload an NVGRE-formatted packet that has no inner TCP or UDP header. For example, an IP packet could have an inner payload that is an Internet Control Message Protocol (ICMP) packet.
-
- 
 
 For more information about NVGRE, see the following Internet Draft:
 
--   [NVGRE: Network Virtualization using Generic Routing Encapsulation](https://ietfreport.isoc.org/idref/draft-sridharan-virtualization-nvgre/)
+- [NVGRE: Network Virtualization using Generic Routing Encapsulation](https://tools.ietf.org/html/rfc7637)
 
 NVGRE is based on Generic Routing Encapsulation (GRE). For more information about GRE, see the following resources:
 
--   [RFC 2784: Generic Routing Encapsulation (GRE)](https://tools.ietf.org/html/rfc2784)
--   [RFC 2890: Key and Sequence Number Extensions to GRE](https://tools.ietf.org/html/rfc2890)
+- [RFC 2784: Generic Routing Encapsulation (GRE)](https://tools.ietf.org/html/rfc2784)
+- [RFC 2890: Key and Sequence Number Extensions to GRE](https://tools.ietf.org/html/rfc2890)
 
 This section includes:
 
--   [Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)
--   [Supporting NVGRE in Large Send Offload (LSO)](supporting-nvgre-in-large-send-offload--lso-.md)
--   [Supporting NVGRE in Checksum Offload](supporting-nvgre-in-checksum-offload.md)
--   [Supporting NVGRE in RSS and VMQ Receive Task Offloads](supporting-nvgre-in-rss-and-vmq-receive-task-offloads.md)
--   [Locating the Transport Header for Encapsulated Packets in the Receive Path](locating-the-transport-header-for-encapsulaged-packets-in-the-receive-path.md)
--   [Determining the NVGRE Task Offload Capabilities of a Network Adapter](determining-the-nvgre-task-offload-capabilities-of-a-network-adapter.md)
--   [Querying and Changing NVGRE Task Offload State](querying-and-changing-nvgre-task-offload-state.md)
--   [Standardized INF Keywords for NVGRE Task Offload](standardized-inf-keywords-for-nvgre-task-offload.md)
+- [Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)
+- [Supporting NVGRE in Large Send Offload (LSO)](supporting-nvgre-in-large-send-offload--lso-.md)
+- [Supporting NVGRE in Checksum Offload](supporting-nvgre-in-checksum-offload.md)
+- [Supporting NVGRE in RSS and VMQ Receive Task Offloads](supporting-nvgre-in-rss-and-vmq-receive-task-offloads.md)
+- [Locating the Transport Header for Encapsulated Packets in the Receive Path](locating-the-transport-header-for-encapsulaged-packets-in-the-receive-path.md)
+- [Determining the NVGRE Task Offload Capabilities of a Network Adapter](determining-the-nvgre-task-offload-capabilities-of-a-network-adapter.md)
+- [Querying and Changing NVGRE Task Offload State](querying-and-changing-nvgre-task-offload-state.md)
+- [Standardized INF Keywords for NVGRE Task Offload](standardized-inf-keywords-for-nvgre-task-offload.md)
 
 ## Related topics
-
 
 [Offloading Checksum Tasks](offloading-checksum-tasks.md)
 
 [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
 
 [TCP/IP Task Offload](task-offload.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS
 description: This topic describes the OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS object identifier (OID).
-ms.assetid: a56affc9-4118-4322-85bc-f979b70e0dad
 keywords:
 - OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS
 ms.date: 11/03/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS
 
-The OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS OID requests a call manager or MCM driver to translate NDIS call parameters (passed in a [CO_CALL_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure to the client's [ProtocolClIncomingCall](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cl_incoming_call) function) to TAPI call parameters. The client uses the translated TAPI call parameters returned by the call manager or MCM driver to determine whether to accept or reject the incoming call.
+The OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS OID requests a call manager or MCM driver to translate NDIS call parameters (passed in a [CO_CALL_PARAMETERS](/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure to the client's [ProtocolClIncomingCall](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cl_incoming_call) function) to TAPI call parameters. The client uses the translated TAPI call parameters returned by the call manager or MCM driver to determine whether to accept or reject the incoming call.
 
 This request uses a CO_TAPI_TRANSLATE_NDIS_CALLPARAMS structure, which is defined as follows:
 
@@ -28,10 +27,10 @@ The members of this structure contain the following information:
 The client must set the CO_TAPI_FLAG_INCOMING_CALL bit in **ulFlags**.
 
 **NdisCallParams**  
-Specifies an [NDIS_VAR_DATA_DESC](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset from the beginning of the NDIS_VAR_DATA_DESC structure to a [CO_CALL_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure. The NDIS_VAR_DATA_DESC structure also contains the length of the CO_CALL_PARAMETERS structure. The client fills in the CO_CALL_PARAMETERS structure with the NDIS call parameters to be translated to TAPI call parameters.
+Specifies an [NDIS_VAR_DATA_DESC](/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset from the beginning of the NDIS_VAR_DATA_DESC structure to a [CO_CALL_PARAMETERS](/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure. The NDIS_VAR_DATA_DESC structure also contains the length of the CO_CALL_PARAMETERS structure. The client fills in the CO_CALL_PARAMETERS structure with the NDIS call parameters to be translated to TAPI call parameters.
 
 **LineCallInfo**  
-Specifies an [NDIS_VAR_DATA_DESC](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset from the beginning of the NDIS_VAR_DATA_DESC structure to a LINE_CALL_INFO structure. The NDIS_VAR_DATA_DESC structure also contains the length of the CO_CALL_PARAMETERS structure. The LINE_CALL_INFO structure specifies the TAPI call parameters into which the given NDIS call parameters have been translated. For more information about the LINE_CALL_INFO structure, see the Windows SDK and the ndistapi.h header file.
+Specifies an [NDIS_VAR_DATA_DESC](/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset from the beginning of the NDIS_VAR_DATA_DESC structure to a LINE_CALL_INFO structure. The NDIS_VAR_DATA_DESC structure also contains the length of the CO_CALL_PARAMETERS structure. The LINE_CALL_INFO structure specifies the TAPI call parameters into which the given NDIS call parameters have been translated. For more information about the LINE_CALL_INFO structure, see the Windows SDK and the ndistapi.h header file.
 
 ## Remarks
 
@@ -39,8 +38,5 @@ If the request is successful, the call manager or MCM driver fills in the LINE_C
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

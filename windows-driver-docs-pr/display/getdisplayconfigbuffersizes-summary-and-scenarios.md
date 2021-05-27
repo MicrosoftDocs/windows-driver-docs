@@ -1,7 +1,6 @@
 ---
 title: GetDisplayConfigBufferSizes Summary and Scenarios
 description: GetDisplayConfigBufferSizes Summary and Scenarios
-ms.assetid: b0d14ba7-fe61-49e9-81c5-097e6e07a51a
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, GetDisplayConfigBufferSizes
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, GetDisplayConfigBufferSizes
@@ -20,21 +19,15 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-The following sections summarize how a caller uses [**GetDisplayConfigBufferSizes**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdisplayconfigbuffersizes) CCD function and provide scenarios for using **GetDisplayConfigBufferSizes**.
+The following sections summarize how a caller uses [**GetDisplayConfigBufferSizes**](/windows/win32/api/winuser/nf-winuser-getdisplayconfigbuffersizes) CCD function and provide scenarios for using **GetDisplayConfigBufferSizes**.
 
 ### <span id="getdisplayconfigbuffersizes_summary"></span><span id="GETDISPLAYCONFIGBUFFERSIZES_SUMMARY"></span>GetDisplayConfigBufferSizes Summary
 
-The caller can use [**GetDisplayConfigBufferSizes**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdisplayconfigbuffersizes) to obtain information that the caller requires for the [**QueryDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-querydisplayconfig) CCD function.
+The caller can use [**GetDisplayConfigBufferSizes**](/windows/win32/api/winuser/nf-winuser-getdisplayconfigbuffersizes) to obtain information that the caller requires for the [**QueryDisplayConfig**](/windows/win32/api/winuser/nf-winuser-querydisplayconfig) CCD function.
 
 ### <span id="getdisplayconfigbuffersizes_scenarios"></span><span id="GETDISPLAYCONFIGBUFFERSIZES_SCENARIOS"></span>GetDisplayConfigBufferSizes Scenarios
 
-[**GetDisplayConfigBufferSizes**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdisplayconfigbuffersizes) is always called before calling [**QueryDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-querydisplayconfig).
+[**GetDisplayConfigBufferSizes**](/windows/win32/api/winuser/nf-winuser-getdisplayconfigbuffersizes) is always called before calling [**QueryDisplayConfig**](/windows/win32/api/winuser/nf-winuser-querydisplayconfig).
 
  
-
- 
-
-
-
-
 

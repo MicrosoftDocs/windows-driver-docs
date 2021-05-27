@@ -1,7 +1,6 @@
 ---
 title: Installing Plug and Play Serial Ports and COM Ports
 description: Installing Plug and Play Serial Ports and COM Ports
-ms.assetid: 48a489a1-6ed9-4e17-a7b5-0f2325486ab6
 keywords:
 - Serial driver WDK , Plug and Play devices
 - Plug and Play serial devices WDK

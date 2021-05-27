@@ -1,8 +1,7 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver architecture
 description: Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
-ms.assetid: 11B54F92-DC84-4D74-9BBE-C85047AD2167
-ms.date: 05/17/2018
+ms.date: 10/27/2020
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
 
-## Architecure overview
+## Architecture overview
 
 The following high-level component block diagram shows how the Global Navigation Satellite System (GNSS) UMDF 2.0 driver integrates with the Windows 10 platform.
 
@@ -40,7 +39,7 @@ The components in the diagram are described here:
 
 ## Support for Global Navigation Satellite System (GNSS) devices and drivers that follow the legacy Windows model
 
-The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver).
+The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](/windows-hardware/drivers/ddi/gnssdriver).
 
 Therefore, Windows devices with a GNSS device that integrate with the Sensor v1.0 class extension model that existed in Windows 7, Windows 8, and Windows 8.1 are expected to continue working in Windows 10 without the need of any changes. It is strongly recommended for these drivers (and any new drivers) to be published to Windows Update to improve the upgrade process for our users.
 
@@ -80,13 +79,13 @@ The interaction between the GNSS adapter and the GNSS driver falls under the fol
 
 To support extensibility and adaptability of the GNSS stack on Windows platforms, the GNSS adapter and the GNSS driver establish a common understanding of the various well-defined capabilities of the underlying GNSS stack, as well as the support provided by the Windows platform. The capability aspects are well defined by Microsoft as part of this GNSS interface definition and will evolve as more innovation in the GNSS space continues and a diverse set of chipsets/drivers emerge in the market. The GNSS adapter queries the various capabilities of the underlying GNSS driver/device at the time of initialization or on as-needed basis and accordingly optimizes the interaction with the GNSS driver.
 
-The capability information exchange between the GNSS adapter and the GNSS driver is done using the control codes [**IOCTL\_GNSS\_SEND\_PLATFORM\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_send_platform_capability) and [**IOCTL\_GNSS\_GET\_DEVICE\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_device_capability).
+The capability information exchange between the GNSS adapter and the GNSS driver is done using the control codes [**IOCTL\_GNSS\_SEND\_PLATFORM\_CAPABILITY**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_send_platform_capability) and [**IOCTL\_GNSS\_GET\_DEVICE\_CAPABILITY**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_device_capability).
 
 ### Global Navigation Satellite System (GNSS) driver command and configuration
 
 The GNSS adapter may perform one-time configuration or periodic re-configuration of the GNSS driver. Similarly the GNSS adapter may execute certain GNSS-specific commands through the driver. This is accomplished by defining a command execution protocol between the driver and the high level operating system (HLOS). Depending on the specific command type, the intended action may take effect immediately or after a system restart. Similar to GNSS device capability information, the GNSS commands are also well-defined by Microsoft as part of this GNSS interface definition and will continue evolving with future innovations and diversification of GNSS devices/drivers.
 
-Device command execution and configuration is done using the control code [**IOCTL\_GNSS\_SEND\_DRIVERCOMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_send_drivercommand).
+Device command execution and configuration is done using the control code [**IOCTL\_GNSS\_SEND\_DRIVERCOMMAND**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_send_drivercommand).
 
 ### Position information
 
@@ -102,16 +101,16 @@ The only mandatory position session type required by every GNSS hardware and GNS
 
 The act of retrieving position information from the GNSS driver happens through a stateful, unique fix session, consisting of the following actions:
 
-1. **Start fix session:** The GNSS adapter initiates a start fix session (as a result of a request from an LBS application). The GNSS adapter sets the specific requirements and preferences association with the request, and intimates the GNSS driver to start the engine to get the fix by issuing control code [**IOCTL\_GNSS\_START\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession).
+1. **Start fix session:** The GNSS adapter initiates a start fix session (as a result of a request from an LBS application). The GNSS adapter sets the specific requirements and preferences association with the request, and intimates the GNSS driver to start the engine to get the fix by issuing control code [**IOCTL\_GNSS\_START\_FIXSESSION**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession).
 
-1. **Get device position (fix data):** Once a fix session is started, the GNSS adapter issues control code [**IOCTL\_GNSS\_GET\_FIXDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) to start waiting for a fix from the driver. When a new position information is available from the engine , the GNSS driver responds to this pending get fix request.
+1. **Get device position (fix data):** Once a fix session is started, the GNSS adapter issues control code [**IOCTL\_GNSS\_GET\_FIXDATA**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) to start waiting for a fix from the driver. When a new position information is available from the engine , the GNSS driver responds to this pending get fix request.
 
     > [!NOTE]
-    > If fix session type is LKG fix (rather than current fix), the position information comes from the driver’s cache.
+    > If fix session type is LKG fix (rather than current fix), the position information comes from the driver's cache.
 
     The GNSS adapter makes sure that an asynchronous I/O request is always available for the GNSS driver to return the fix data when available. Depending on the nature of the fix, if more fix data is expected, the GNSS adapter issues another I/O request (using the same IOCTL) and this sequence continues till no more data will be available or the fix session is stopped.
 
-1. **Modify fix session:** If the GNSS driver does not support multiplexing of fix sessions of the same type the GNSS adapter may issue an [**IOCTL\_GNSS\_MODIFY\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_modify_fixsession) for that fix session type when it does multiplexing at its level.
+1. **Modify fix session:** If the GNSS driver does not support multiplexing of fix sessions of the same type the GNSS adapter may issue an [**IOCTL\_GNSS\_MODIFY\_FIXSESSION**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_modify_fixsession) for that fix session type when it does multiplexing at its level.
 
 1. **Stop fix session:** The GNSS adapter issues a stop fix session when no further position information pertaining to a specific fix session is either needed or expected.
 
@@ -135,7 +134,7 @@ The geofencing offloading support involves the following requirements:
 
 - Ideally, the GNSS hardware should understand the initial geofence tracking state for each geofence and use it to only report changes from this initial state. If the GNSS hardware does not support this functionality it will report the initial state to the HLOS every time a geofence is created.
 
-- The GNSS hardware tracks the device’s current position in a power-efficient way and wakes up the AP whenever the device has entered and/or exited a tracked geofence. The GNSS driver passes the geofence alerts to the HLOS.
+- The GNSS hardware tracks the device's current position in a power-efficient way and wakes up the AP whenever the device has entered and/or exited a tracked geofence. The GNSS driver passes the geofence alerts to the HLOS.
 
 - Under low satellite signal and other transient error conditions, the GNSS engine may be unable to reliably track the existing geofences. The GNSS engine shall be able to detect the tracking interruptions and the GNSS driver shall pass the tracking status error alert to the HLOS. The HLOS switches to the default AP-based geofence tracking till the GNSS hardware is able to recover and track geofences again.
 
@@ -181,15 +180,15 @@ From time to time, the GNSS driver may need assistance data or helper actions fr
 
 Since the GNSS driver is unable to initiate a request to the upper layer on its own, this type of operations can be accomplished by the GNSS adapter proactively seeking such request from the GNSS driver and thereby always keeping one or more pending IRPs so that the GNSS driver can respond back on such pending requests. On receipt of request for assistance/helper date, the GNSS adapter fetches the data (or executes the specific action on behalf of the GNSS driver), and subsequently injects the needed information to the GNSS driver through another **DeviceIoControl** call.
 
-The notification from the driver is handled through a common event model. For example, for GNSS assistance, the GNSS adapter uses control code [**IOCTL\_GNSS\_LISTEN\_AGNSS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_agnss) to receive the AGNSS request from the GNSS driver. Subsequently the GNSS adapter fetches the AGNSS assistance data and issues [**IOCTL\_GNSS\_INJECT\_AGNSS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_inject_agnss) to push the data into the GNSS driver.
+The notification from the driver is handled through a common event model. For example, for GNSS assistance, the GNSS adapter uses control code [**IOCTL\_GNSS\_LISTEN\_AGNSS**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_agnss) to receive the AGNSS request from the GNSS driver. Subsequently the GNSS adapter fetches the AGNSS assistance data and issues [**IOCTL\_GNSS\_INJECT\_AGNSS**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_inject_agnss) to push the data into the GNSS driver.
 
-This notification mechanism is also used for receiving geofence-related alert data and status updates. The adapter uses control code [**IOCTL\_GNSS\_LISTEN\_GEOFENCE\_ALERT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofence_alert) for receiving individual geofence alerts, and [**IOCTL\_GNSS\_LISTEN\_GEOFENCES\_TRACKINGSTATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofences_trackingstatus) for receiving changes in the overall status of geofence tracking.
+This notification mechanism is also used for receiving geofence-related alert data and status updates. The adapter uses control code [**IOCTL\_GNSS\_LISTEN\_GEOFENCE\_ALERT**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofence_alert) for receiving individual geofence alerts, and [**IOCTL\_GNSS\_LISTEN\_GEOFENCES\_TRACKINGSTATUS**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofences_trackingstatus) for receiving changes in the overall status of geofence tracking.
 
 ### Global Navigation Satellite System (GNSS) driver logging
 
 For diagnostic purposes, the GNSS driver should log errors and other diagnostic information using the Microsoft prescribed logging mechanism (WPP) described below or ETW. It is recommended for drivers to use WPP for logging purposes rather than ETW, although both mechanisms are supported. Among the reasons for WPP being recommended is the availability of tools that can help driver debugging.
 
-The driver must not log any information, human-readable or otherwise, other than through this prescribed logging technique. For more information, see [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+The driver must not log any information, human-readable or otherwise, other than through this prescribed logging technique. For more information, see [WPP Software Tracing](../devtest/wpp-software-tracing.md).
 
 Logging messages with WPP software tracing is similar to using Windows event logging services. The driver logs a message ID and unformatted binary data in a log file. Subsequently, a postprocessor converts the information in the log file to a human-readable form. However, WPP software tracing supports message formats that are more capable and flexible than that supported by the event logging services. For example, WPP software tracing has built-in support for IP addresses, GUIDs, system IDs, time stamps, and other useful data types. In addition, users can add custom data types relevant to their application.
 
@@ -215,7 +214,7 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 1. **Configuration:** The mobile operators provision the device and change configuration using the configuration mechanism imposed by the OMA protocol standards. For example, SUPL standard requires the SUPL configuration to be done based on the UICC and/or be done using the SUPL OMA configuration profile information obtained via OMA-DM or OMA-CP.
 
     > [!NOTE]
-    > Certain functionality available in phone for configuration purposes (OMA-DM and OMA CP) was not available in other platforms until Windows 10. Starting in Windows 10 all platforms can support SUPL configuration via the SUPL Configuration Service Provider (CSP), as far as the new GNSS DDI is used. The provisioning injected through the CSP can come from the image itself (through provxml or multivariant) or from the mobile operator via OMA-DM or OMA-CP.
+    > Certain functionality available in phone for configuration purposes (OMA-DM and OMA CP) was not available in other platforms until Windows 10. Starting in Windows 10 all platforms can support SUPL configuration via the SUPL Configuration Service Provider (CSP), as far as the new GNSS DDI is used. The provisioning injected through the CSP can come from the image itself (through provxml or multivariant) or from the mobile operator via OMA-DM or OMA-CP. SUPL CSP is defined in [SUPL CSP](/windows/client-management/mdm/supl-csp).
 
     Windows 10 defines a proprietary technology, device management using a Configuration Service Provider (CSP), for interpreting and extracting the configuration data. Microsoft provides a CSP for consuming the OMA configuration and pushing the configuration to the GNSS driver through the GNSS adapter.
 
@@ -224,7 +223,7 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 
     Only one SUPL configuration is supported in a system, including in cases of dual SIM devices. Microsoft provides the functionality to reconfigure SUPL based on UICC and on UICC change. In addition to this, in case of the device roaming, the HLOS re-configures the SUPL client to work in standalone mode. This document defines the IOCTLs for pushing such configuration data for a variety of mobile operation protocols (SUPL 1.0 and 2.0, v2UPL, and so on).
 
-1. **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver).
+1. **Handling of user consent for NI requests:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](/windows-hardware/drivers/ddi/gnssdriver).
 
 In order to implement a fully functional SUPL client the IHV stack will need to make use of interfaces or general functionality available in/through the OS platform. The following is the list of functionality available in Windows 10 that IHVs can leverage to implement their SUPL client:
 
@@ -309,17 +308,17 @@ The sequence description is as follows:
 
 1. The GNSS adapter issues IOCTLs for any driver-specific configuration or commands. The GNSS driver performs the needed action and completes the I/O operation.
 
-1. The GNSS adapter issues an [**IOCTL\_GNSS\_START\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession), along with the parameters specifying the type and other aspects of the fix. On receipt of this IOCTL, the GNSS driver interacts with the underlying device to start receiving fixes and subsequently completes the I/O operation.
+1. The GNSS adapter issues an [**IOCTL\_GNSS\_START\_FIXSESSION**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession), along with the parameters specifying the type and other aspects of the fix. On receipt of this IOCTL, the GNSS driver interacts with the underlying device to start receiving fixes and subsequently completes the I/O operation.
 
-1. The GNSS adapter issues an [**IOCTL\_GNSS\_GET\_FIXDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) and waits for the I/O completion. Whenever the GNSS driver has an available intermediate fix, it returns the data by completing the I/O operation.
+1. The GNSS adapter issues an [**IOCTL\_GNSS\_GET\_FIXDATA**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) and waits for the I/O completion. Whenever the GNSS driver has an available intermediate fix, it returns the data by completing the I/O operation.
 
 1. Step 6 is repeated till the GNSS driver indicates that no more fixes are expected (final fix received).
 
-1. The GNSS adapter issues [**IOCTL\_GNSS\_STOP\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_stop_fixsession). The GNSS driver does the needed cleanup operation associated with the original fix request.
+1. The GNSS adapter issues [**IOCTL\_GNSS\_STOP\_FIXSESSION**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_stop_fixsession). The GNSS driver does the needed cleanup operation associated with the original fix request.
 
 1. The GNSS adapter closes the driver file handle using the **CloseHandle** API.
 
-The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/).
+The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](/windows-hardware/drivers/ddi/gnssdriver/).
 
 ## Distance-based tracking session
 
@@ -413,259 +412,29 @@ The following acronyms are used in this section:
 
 The following table provides some scenarios for handling single shot and time-based tracking sessions simultaneously:
 
-<table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Case</th>
-<th>SS active?</th>
-<th>TBT active?</th>
-<th>Case details</th>
-<th>Acceptable interval of fixes</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Case 1</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time of the TBT periodic session started with remaining timeout &gt;= interval</p></td>
-<td><p>Same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent.</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Case 2</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time of the TBT periodic session started with remaining timeout &lt; interval</p></td>
-<td><p>Interval remains the same as the SS timeout, until the SS session is satisfied.</p>
-<p>Then the interval can be updated to be the same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Case 3</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session started while there is an ongoing TBT periodic session started with timeout &gt;= interval</p></td>
-<td><p>Same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Case 4</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session started while there is an ongoing TBT periodic session started with timeout &lt; interval</p></td>
-<td><p>Interval changes to be the same as the SS timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval.</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent.</p></li>
-<li><p>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Case 5</p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p>TBT periodic session started with interval modified</p></td>
-<td><p>Session with modem is updated to the new interval to be the same as TBT interval. If needed the modem session will be restarted.</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Not applicable</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent.</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Case 6</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout &gt;= interval</p></td>
-<td><p>Same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Case 7</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout &lt; interval</p></td>
-<td><p>Interval changes to be the same as the SS remaining timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval.</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Case | SS active? | TBT active? | Case details | Acceptable interval of fixes | Comments |
+|:-|:-|:-|:-|:-|:-|
+| 1 | X | X | SS session ongoing at the time of the TBT periodic session started with remaining timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received. |
+| 2 | X | X | SS session ongoing at the time of the TBT periodic session started with remaining timeout < interval | Interval remains the same as the SS timeout, until the SS session is satisfied.<br>Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li></ul> |
+| 3 | X | X | SS session started while there is an ongoing TBT periodic session started with timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li></ul> |
+| 4 | X | X | SS session started while there is an ongoing TBT periodic session started with timeout < interval | Interval changes to be the same as the SS timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li> |
+| 5 |  | X | TBT periodic session started with interval modified | Session with modem is updated to the new interval to be the same as TBT interval. If needed the modem session will be restarted. | SS session behavior:<br><ul><li>Not applicable</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li> |
+| 6 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li></ul> |
+| 7 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout < interval | Interval changes to be the same as the SS remaining timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>ession closed immediately after stop is received./li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li>  |
 
 If there are simultaneously both a time-based and a distance-based tracking session, the GNSS engine accuracy tracking can be set to work with the smallest of the two. The following table also provide some guidelines for the case of disparate values for the accuracy required when there are simultaneous single shot and tracking sessions:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Case</th>
-<th>SS accuracy</th>
-<th>DBT or TBT accuracy</th>
-<th>Overall GNSS engine accuracy</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Case 1</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>Not applicable</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr class="even">
-<td><p>Case 2</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>Not applicable</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Case 3</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>High</p></td>
-<td><p>High</p></td>
-<td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
-</tr>
-<tr class="even">
-<td><p>Case 4</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>High</p></td>
-<td><p>High</p></td>
-<td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Case 5</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>Medium/Low --&gt; High then back to Medium/Low after the SS session is complete</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p>
-<p><strong>DBT or TBT session behavior:</strong> It is OK for this session to temporarily receive high accuracy results. However, after the SS session is served, the accuracy of this session should return to Medium/Low.</p></td>
-</tr>
-<tr class="even">
-<td><p>Case 6</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Case 7</p></td>
-<td><p>Not applicable</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr class="even">
-<td><p>Case 8</p></td>
-<td><p>Not applicable</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Case 9</p></td>
-<td><p>High</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>High</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session was already getting high accuracy fixes or intermediate fixes, so no changes.</p></td>
-</tr>
-<tr class="even">
-<td><p>Case 10</p></td>
-<td><p>High</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>High then changes to Medium/Low after the SS session is complete</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session can continue getting high accuracy fixes or intermediate fixes, until the SS session is complete. Then it shall change to medium/low accuracy fixes.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Case 11</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr class="even">
-<td><p>Case 12</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-</tbody>
-</table>
+| Case | SS accuracy | DBT or TBT accuracy | Overall GNSS engine accuracy | Comments |
+|--|--|--|--|--|
+| 1 | Medium/Low --> High | Not applicable | Medium/Low --> High | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available. |
+| 2 | High --> Medium/Low | Not applicable | High --> Medium/Low | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
+| 3 | Medium/Low --> High | High | High | <b>SS session behavior:</b> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained. |
+| 4 | High --> Medium/Low | High | High | <b>SS session behavior:</b> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained. |
+| 5 | Medium/Low --> High | Medium/Low | Medium/Low --> High then back to Medium/Low after the SS session is complete | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.<br><br><b>DBT or TBT session behavior:</b> It is OK for this session to temporarily receive high accuracy results. However, after the SS session is served, the accuracy of this session should return to Medium/Low. |
+| 6 | High --> Medium/Low | Medium/Low | High --> Medium/Low | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
+| 7 | Not applicable | Medium/Low --> High | Medium/Low --> High | b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available. |
+| 8 | Not applicable | High --> Medium/Low | High --> Medium/Low | <b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
+| 9 | High | Medium/Low --> High | High | <b>DBT or TBT session behavior:</b> Session was already getting high accuracy fixes or intermediate fixes, so no changes. |
+| 10 | High | High --> Medium/Low | High then changes to Medium/Low after the SS session is complete | <b>DBT or TBT session behavior:</b> Session can continue getting high accuracy fixes or intermediate fixes, until the SS session is complete. Then it shall change to medium/low accuracy fixes. |
+| 11 | Medium/Low< | Medium/Low --> High | Medium/Low --> High | <b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available. |
+| 12 | Medium/Low | High --> Medium/Low | High --> Medium/Low | <b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |

@@ -1,7 +1,6 @@
 ---
 title: wsle
 description: The wsle extension displays all working set list entries (WSLEs).
-ms.assetid: 9540ac44-a44b-4af6-acdd-baa275e8d004
 keywords: ["wsle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ Kdexts.dll
 
 For information about working sets, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This extension can take a significant amount of time to execute.
 

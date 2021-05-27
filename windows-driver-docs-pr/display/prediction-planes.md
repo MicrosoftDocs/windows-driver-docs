@@ -1,7 +1,6 @@
 ---
 title: Prediction Planes
 description: Prediction Planes
-ms.assetid: 967d52d1-c4e1-4a81-a1ad-40a09040c3a8
 keywords:
 - decoding video WDK DirectX VA , macroblock prediction
 - video decoding WDK DirectX VA , macroblock prediction

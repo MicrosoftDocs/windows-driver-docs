@@ -1,7 +1,6 @@
 ---
 title: Features of Serial and Serenum
 description: Features of Serial and Serenum
-ms.assetid: 47202203-935a-4e1a-9b05-5555f7cbcfa8
 keywords:
 - serial devices WDK , Serial driver
 - serial devices WDK , Serenum driver
@@ -9,7 +8,7 @@ keywords:
 - Serenum driver WDK , about Serenum driver
 - Serial service WDK
 - serial drivers WDK
-ms.date: 04/20/2017
+ms.date: 04/17/2020
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +28,7 @@ Serial is used as:
 
 -   A function driver for legacy and Plug and Play serial devices.
 
--   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](https://go.microsoft.com/fwlink/p/?LinkId=799534).
+-   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](../pcmcia/index.md).
 
     Serial's operation as a filter driver is identical to its operation as a function driver.
 
@@ -60,9 +59,4 @@ Serenum does not support the Windows Driver Model, and should only be used with 
 Starting with Windows 2000, Serenum supports Serial and other serial port function drivers that need to enumerate a serial port. Hardware vendors do not have to create their own enumerator for serial ports. For example, a device driver can use Serenum to enumerate the devices that are attached to the individual serial ports on a multiport device.
 
  
-
- 
-
-
-
 

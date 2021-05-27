@@ -1,7 +1,6 @@
 ---
 title: Initialization sequence
 description: The figure below illustrates a high-level set of NCI packets that are exchanged by the NFC CX and the NFCC during initialization.
-ms.assetid: 4977E1D4-2546-4573-B555-FA87DB8A2168
 keywords:
 - NFC
 - near field communications
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Initialization sequence
 
 
-The figure below illustrates a high-level set of NCI packets that are exchanged by the NFC CX and the NFCC during initialization. Prior to start of the initialization, the NFC CX driver invokes the client driver’s Pre-Init sequence handler if one is registered. StateInit comprises the following high-level sequences: NCI reset, NCI initialization, standard NCI configuration of parameters, and RF Interface and RF Protocol mapping. Note, the NFC client driver can set the defaults of some of the NCI configuration parameters used during initialization through NFC CX interface functions such as [**NfcCxSetRfDiscoveryConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetrfdiscoveryconfig) and [**NfcCxSetLlcpConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetllcpconfig). Following the completion of initialization, the initialize complete sequence handler is invoked. The next state after initialization is completed is StateRfIdle.
+The figure below illustrates a high-level set of NCI packets that are exchanged by the NFC CX and the NFCC during initialization. Prior to start of the initialization, the NFC CX driver invokes the client driver’s Pre-Init sequence handler if one is registered. StateInit comprises the following high-level sequences: NCI reset, NCI initialization, standard NCI configuration of parameters, and RF Interface and RF Protocol mapping. Note, the NFC client driver can set the defaults of some of the NCI configuration parameters used during initialization through NFC CX interface functions such as [**NfcCxSetRfDiscoveryConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetrfdiscoveryconfig) and [**NfcCxSetLlcpConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetllcpconfig). Following the completion of initialization, the initialize complete sequence handler is invoked. The next state after initialization is completed is StateRfIdle.
 
 ![initialization sequence](images/initializationsequence.png)
 
@@ -33,6 +32,5 @@ Some NFCC firmware implementations have an out of band mechanism, i.e. outside t
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

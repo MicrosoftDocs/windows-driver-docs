@@ -1,7 +1,6 @@
 ---
 title: Obtaining the Original Source Path of an Installed INF File
 description: Obtaining the Original Source Path of an Installed INF File
-ms.assetid: 7e086248-b11d-43ee-9afa-fad6f2136dc8
 keywords:
 - SetupAPI functions WDK , INF files
 - paths WDK SetupAPI

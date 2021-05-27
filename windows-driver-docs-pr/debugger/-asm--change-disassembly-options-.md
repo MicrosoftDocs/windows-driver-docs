@@ -1,7 +1,6 @@
 ---
 title: .asm (Change Disassembly Options)
 description: The .asm command controls how disassembly code will be displayed.
-ms.assetid: c963c4f2-3bfc-4551-9b7b-74473a63eb11
 keywords: ["Change Disassembly Options (.asm) command", "assembly debugging, Change Disassembly Options (.asm) command", ".asm (Change Disassembly Options) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -73,8 +72,7 @@ Prefixes each line of disassembly with the line number of the source code.
 
 For a description of assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 Using **.asm** by itself displays the current state of the options.
 

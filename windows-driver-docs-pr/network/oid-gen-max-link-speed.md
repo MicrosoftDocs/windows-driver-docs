@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAX_LINK_SPEED
 description: As a query, NDIS and overlying drivers use the OID_GEN_MAX_LINK_SPEED OID to determine the maximum supported transmit and receive link speeds of a miniport adapter.
-ms.assetid: 4009c5c6-57ec-47f5-80d6-d69df797857f
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAX_LINK_SPEED Network Drivers Starting with Windows Vista
@@ -21,15 +20,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 The miniport driver supplies the maximum link speed during initialization.
 
-To specify the maximum link speeds, set the **MaxXmitLinkSpeed** and **MaxRcvLinkSpeed** members of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function. If a miniport driver does not support this OID, the driver should return NDIS\_STATUS\_NOT\_SUPPORTED. If the miniport driver supports this OID, it returns the maximum link speeds in an [**NDIS\_LINK\_SPEED**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed) structure.
+To specify the maximum link speeds, set the **MaxXmitLinkSpeed** and **MaxRcvLinkSpeed** members of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function. If a miniport driver does not support this OID, the driver should return NDIS\_STATUS\_NOT\_SUPPORTED. If the miniport driver supports this OID, it returns the maximum link speeds in an [**NDIS\_LINK\_SPEED**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -47,16 +44,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_LINK\_SPEED**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed)
+[**NDIS\_LINK\_SPEED**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed)
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
 
-[**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
-
- 
+[**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
 
  
-
-
-
 

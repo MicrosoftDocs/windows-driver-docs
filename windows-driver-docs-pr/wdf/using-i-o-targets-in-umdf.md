@@ -1,7 +1,6 @@
 ---
 title: Using I/O Targets in UMDF
 description: Using I/O Targets in UMDF
-ms.assetid: 5633242c-ffab-4af5-9650-7449395deb6b
 keywords:
 - user-mode drivers WDK UMDF , I/O targets
 - UMDF WDK , I/O targets

@@ -1,7 +1,6 @@
 ---
 title: devstack
 description: The devstack extension displays a formatted view of the device stack associated with a device object.
-ms.assetid: 2215f166-2053-4525-80cd-be3817510dbd
 keywords: ["devstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the device object. This can be the hexadecimal address of the DEVICE\_
 
 For information about device stacks, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 If *DeviceObject* specifies the name of the device but supplies no prefix, the prefix "\\Device\\" is assumed. Note that this command will check to see if *DeviceObject* is a valid address or device name before using the expression evaluator.
 

@@ -1,14 +1,13 @@
 ---
 title: ExperienceID
 description: ExperienceID
-ms.assetid: 550527ae-fef9-46c6-816b-d842fe472b68
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ExperienceID
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ExperienceID element specifies a GUID representing the device experience. This GUID is used to group one or more metadata packages for the same device identifiers independent of the packages’ locale.
 
@@ -74,13 +73,7 @@ There are no child elements.
 
 In Windows 8.1 and Windows 10, the ExperienceID is created by the Service Metadata Wizard on the Windows Dev Center Dashboard.
 
-In Windows 8 the ExperienceID can be specified by the service metadata developer, or automatically generated and added to the service metadata using the [Device Metadata Authoring Wizard](https://go.microsoft.com/fwlink/?linkid=620032). If the ExperienceID is not specified in the service metadata package, the Windows Dev Center Dashboard creates a GUID and updates the ExperienceID element within the metadata package when the mobile network operator or mobile virtual network operator submits the service metadata package.
+In Windows 8 the ExperienceID can be specified by the service metadata developer, or automatically generated and added to the service metadata using the [Device Metadata Authoring Wizard](../devtest/device-metadata-authoring-wizard-portal.md). If the ExperienceID is not specified in the service metadata package, the Windows Dev Center Dashboard creates a GUID and updates the ExperienceID element within the metadata package when the mobile network operator or mobile virtual network operator submits the service metadata package.
 
  
-
- 
-
-
-
-
 

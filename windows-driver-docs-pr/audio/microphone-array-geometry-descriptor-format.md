@@ -1,13 +1,11 @@
 ---
 title: Microphone Array Geometry Descriptor Format
 description: Microphone Array Geometry Descriptor Format
-ms.assetid: 83fae1e2-cc67-4322-8250-f642508383ef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Microphone Array Geometry Descriptor Format
-
 
 A USB audio microphone array must describe itself to the system to which it is connected. This means that the parameters that are required to describe the array must be embedded in the array device itself. Array geometry information is retrieved from the device by using a **GET\_MEM** request.
 
@@ -220,13 +218,9 @@ Information about USB audio device geometry must be provided in a standard forma
 </tbody>
 </table>
 
- 
-
-For a detailed example about how to use this information format in a descriptor for a 4-element microphone array, see Appendix A of the [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=306613) white paper.
+For a detailed example about how to use this information format in a descriptor for a 4-element microphone array, see Appendix A of the [How to Build and Use Microphone Arrays for Windows Vista](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/MicArrays_guide.doc) white paper.
 
 **Note**  
-
- 
 
 -   When you include a version number in the microphone array information, it allows the descriptor to be updated after the original specifications are implemented. The version number is a BCD value. For example, the current version (1.0) is represented as 0x0100.
 
@@ -236,14 +230,6 @@ For a detailed example about how to use this information format in a descriptor 
 
 -   X-y-z coordinates are expressed in millimeters. The value can range from -32767 to 32767, inclusive.
 
--   For information about the orientation, axes, and the positive directions of the angles of the coordinate system, see Appendix B in the microphone array white paper.
+-   For information about the orientation, axes, and the positive directions of the angles of the coordinate system, see Appendix B in the microphone array white paper referenced above.
 
 -   Frequency values are expressed in Hz. The range of frequency values is bounded only by the size of the field from **wWorkFreqBandLo** to **wWorkFreqBandHi**.
-
- 
-
- 
-
-
-
-

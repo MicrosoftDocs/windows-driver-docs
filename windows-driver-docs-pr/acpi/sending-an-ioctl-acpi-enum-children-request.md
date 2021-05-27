@@ -1,7 +1,6 @@
 ---
 title: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 description: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
-ms.assetid: cbad53dd-4320-4920-9d16-231d0aaae839
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,13 +8,13 @@ ms.localizationpriority: medium
 # Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
 
 
-A driver typically uses a sequence of two [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) requests to enumerate the objects of interest in the namespace of the device to which the request is sent. The driver sends the first request to obtain the size of a driver-allocated output buffer that is required to contain the path and name of the objects. The driver sends the second request to return the path and name of the objects in a driver-allocated output buffer.
+A driver typically uses a sequence of two [**IOCTL\_ACPI\_ENUM\_CHILDREN**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) requests to enumerate the objects of interest in the namespace of the device to which the request is sent. The driver sends the first request to obtain the size of a driver-allocated output buffer that is required to contain the path and name of the objects. The driver sends the second request to return the path and name of the objects in a driver-allocated output buffer.
 
 The following code example shows how to send a sequence of two synchronous IOCTL\_ACPI\_ENUM\_CHILDREN requests to recursively enumerate all the child devices of the parent device to which the requests are sent. The code performs the following sequence of operations to handle the first request:
 
-1.  Sets the input buffer for the first request. The input buffer is an [**ACPI\_ENUM\_CHILDREN\_INPUT\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_input_buffer) structure with **Signature** set to ENUM\_CHILDREN\_INPUT\_BUFFER\_SIGNATURE and **Flags** set to ENUM\_CHILDREN\_MULTILEVEL.
+1.  Sets the input buffer for the first request. The input buffer is an [**ACPI\_ENUM\_CHILDREN\_INPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_input_buffer) structure with **Signature** set to ENUM\_CHILDREN\_INPUT\_BUFFER\_SIGNATURE and **Flags** set to ENUM\_CHILDREN\_MULTILEVEL.
 
-2.  Sets the output buffer for the first request. The output buffer is set to an [**ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_output_buffer) structure. This output buffer contains only one [**ACPI\_ENUM\_CHILD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_child) structure which is not large enough to return a name of a device.
+2.  Sets the output buffer for the first request. The output buffer is set to an [**ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_children_output_buffer) structure. This output buffer contains only one [**ACPI\_ENUM\_CHILD**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_enum_child) structure which is not large enough to return a name of a device.
 
 3.  Calls a caller-supplied [SendDownStreamIrp Function](senddownstreamirp-function.md) to send the first request synchronously to the parent device.
 
@@ -29,7 +28,7 @@ After the example code obtains the required size of the output buffer, it perfor
 
 2.  Calls the driver-supplied **SendDownStreamIrp** function to send the second request synchronously to the parent device.
 
-3.  Checks that the ACPI driver set the **Signature** member to ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER\_SIGNATURE, sets **NumberOfChildren** to one or more (indicating that the path and name of at least one object was returned), and sets the **Information** member of the [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) to the allocated size of the output buffer.
+3.  Checks that the ACPI driver set the **Signature** member to ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER\_SIGNATURE, sets **NumberOfChildren** to one or more (indicating that the path and name of at least one object was returned), and sets the **Information** member of the [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) to the allocated size of the output buffer.
 
 4.  Processes the array of child object names in the output buffer.
 
@@ -125,9 +124,4 @@ After the example code obtains the required size of the output buffer, it perfor
 ```
 
  
-
- 
-
-
-
 

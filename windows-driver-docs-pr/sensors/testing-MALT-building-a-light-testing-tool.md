@@ -1,15 +1,17 @@
 ---
-title: Building a Light Testing Tool (MALT)
+
+title: Building a Light and Color Testing Tool (MALT)
 author: windows-driver-content
-description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light testing solution.
+description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
+
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Building a Light Testing Tool (MALT)
+# Building a Light and Color Testing Tool (MALT)
 
-This topic provides instructions and requirements on how to use (and build if neccessary) a tool for testing and calibrating screen brightness. The MALT (**M**icrosoft **A**mbient **L**ight **T**ool) is provided for reference. 
+This topic provides instructions and requirements on how to use (and build if neccessary) a tool for testing and calibrating screen brightness and color. The MALT (**M**icrosoft **A**mbient **L**ight **T**ool) is provided for reference. 
 
 Please use these instructions for leveraging ideas and concepts into your testing solution. The microcontroller API is published for you to further leverage tests published in the HLK and elsewhere. Your feedback will help improve this guide.
 
@@ -28,7 +30,7 @@ You will need the following components.
 * [Power supply for light source](https://www.superbrightleds.com/moreinfo/led-panel-light/square-12v-led-panel-light-fixture-1ft-x-1ft-35w/2184/#tab/PowerSupplies/subtab/powersupply)
 * [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
 * 2 [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
-* 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/TCS34727FN/TCS34727FNCT-ND/3737677)
+* 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/AS73211-AQFT/AS73211-AQFT-ND/7802175)
 * [Light enclosure](#step-1---assemble-light-enclosure)
 
 ## Instructions
@@ -39,14 +41,14 @@ Controlling light exposed to the system under test (SUT) is key to accurate test
 
 ![light enclosure](images/box.png)
 
-The enclosure we used for laptops was 16"x16"x12", with a 10"x10" aperture at the top of the enclosure.  The [model](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Schematics/enclosure) can be 3D printed. 
+The enclosure we used for laptops was 16"x16"x12", with a 10"x10" aperture at the top of the enclosure.  The [model](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Schematics/enclosure) can be 3D printed.
 
 #### Light enclosure tips
 
 An effective light enclosure will provide a sterile light environment where light cast on the panel (or device) under test will be from the controlled light source and not environmental. The following are examples of light boxes.
 
 * [Custom 3D printed case](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Schematics/enclosure)
-* [Storage Tote](http://www.sterilite.com/SelectProduct.html?id=955&ProductCategory=182&section=1)
+* [Storage Tote](https://www.sterilite.com/SelectProduct.html?id=955&ProductCategory=182&section=1)
 * Cardboard box
 
 The enclosure needs to be large enough for the SUT and remove it from external light influence The light fixture can be placed on top or mounted inside the enclosure.
@@ -70,7 +72,6 @@ Connect the LED light panel to the power supply and connect it to the DAC. The m
 
 ![sensor schematic](images/SensorPCB.png)
 
-
 ### Step 3 - Connect the microcontroller
 
 Connect the sensors to the microcontroller and the microcontroller to the PC. For our purposes, we have the PC controlling the tests be the same as the system under test (SUT).
@@ -80,8 +81,6 @@ The following diagram shows how various parts of MALT are connected.
 ![block diagram](images/BlockDiagram.png)
 
 Through the MALT PCB, we are able to connect the Arduino board to the sensor PCB and the light source. More details can be found in the MALT PCB KiCad project.
-
-![MALT schematic](images/MaltPCB.png)
 
 ### Step 4- Start testing
 

@@ -1,9 +1,8 @@
 ---
 title: Processor Breakpoints (ba Breakpoints)
 description: Processor Breakpoints (ba Breakpoints)
-ms.assetid: 2681cebd-dce2-48f1-8953-9af65d15f378
 keywords: ["breakpoints, processor breakpoints", "breakpoints, data breakpoints", "breakpoints, software breakpoints", "breakpoints, BP versus BA", "software breakpoint", "software breakpoint, overview", "software breakpoint, limitations", "processor breakpoint", "processor breakpoint, overview"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 ms.localizationpriority: medium
 ---
 
@@ -70,8 +69,6 @@ On a multiprocessor computer, each processor breakpoint applies to all processor
 Software breakpoints, unlike processor breakpoints, are controlled by the debugger. When the debugger sets a software breakpoint at some location, it temporarily replaces the contents of that memory location with a break instruction. The debugger remembers the original contents of this location, so that if this memory is displayed in the debugger, the debugger will show the original contents of that memory location, not the break instruction. When the target process executes the code at this location, the break instruction causes the process to break into the debugger. After you have performed whatever actions you choose, you can cause the target to resume execution, and execution will resume with the instruction that was originally in that location.
 
 ### <span id="availability_of_processor_breakpoint_types"></span><span id="AVAILABILITY_OF_PROCESSOR_BREAKPOINT_TYPES"></span>Availability of Processor Breakpoint Types
-
-On Windows Server 2003 with Service Pack 1 (SP1), on an Itanium-based computer that uses WOW64 to emulate x86, processor breakpoints do not work with the **e** (execute) option but they do work with the **r** (read/write) and **w** (write) options.
 
 The **i** (i/o) option is available only during kernel-mode debugging, with a target computer that is running Windows XP or a later version of Windows on an x86-based processor.
 

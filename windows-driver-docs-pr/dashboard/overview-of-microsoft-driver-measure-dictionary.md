@@ -2,7 +2,7 @@
 title: Microsoft driver measure
 description: Publishers and authors use the descriptions of the Microsoft driver measures to better understand the criteria Microsoft uses in evaluating driver quality during driver flighting
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Microsoft distributes thousands of drivers via the Windows Update service, servicing millions of machines and users each month. Safely delivering the right driver at scale requires evaluating driver quality through real-world verification during distribution.
 
-This document is a reference to publishers and authors of Windows device drivers.  Publishers and authors can better understand the criteria Microsoft uses in evaluating driver quality during the [driver flighting process](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). Becoming familiar with the driver quality criteria will help driver publishers understand how Microsoft reached a decision about releasing their driver.
+This document is a reference to publishers and authors of Windows device drivers.  Publishers and authors can better understand the criteria Microsoft uses in evaluating driver quality during the [driver flighting process](./driver-flighting.md). Becoming familiar with the driver quality criteria will help driver publishers understand how Microsoft reached a decision about releasing their driver.
 
 Keywords in **bold** have corresponding definitions in the glossary.
 
@@ -40,6 +40,18 @@ Each measure has its own calculation logic, which is an algorithm that parses te
 
 A measure is failing when its Current Value does not meet its Passing Criteria, triggering an investigation that may result in remediation, such as a flight rejection or an in-market expiration.
 
+## Evaluating by Targeting Cohort
+
+A driver can be developed to support multiple systems and devices. It is not always sufficient or accurate to evaluate a driver’s quality aggregating its measure results across all of its targeting devices (See definition of targeting cohorts below). To ensure there is not a low performing targeting cohort, we analyze the cohorts to find any that fail to meet the measure requirements. All driver measures will be used to evaluate driver quality by targeting cohorts, as they are enabled to support evaluation by targeting cohorts. Refer to each measure definition page for the new measure attribute 'cohort-capable'. If a measure is marked as 'cohort-capable', the measure is enabled to support evaluation by targeting cohorts.
+
+### Targeting Cohorts/Clusters Definition
+
+A targeting cohort/cluster is defined as a set of Windows systems and devices that a shipping label specifies and shares the same targeting attributes, including HWID, CHID, and OS version.
+
+### Cohort Evaluation Pass/Fail Criteria
+
+If one or more driver measures fail to meet its passing criteria, the targeting cohort does not pass (it’s fails). **A driver can be rejected if one or more failures is detected on one or more targeting cohorts.**  The minimum instances for cohorts will be added to the measure definition page upon enablement.
+
 ## Data sources for measures
 
 To evaluate driver quality, measures incorporate data from machines running in two distinct customer groups: **Windows Insider Program (WIP)** and **Retail**.
@@ -54,14 +66,16 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 
 [Audio measures](audio-measures.md)
 
-[Bluetooth measures](bluetooth-measures.md)
-
 [Camera measures](camera-measures.md)
+
+[Fingerprint measures](fingerprint-measures.md)
 
 [Firmware measures](firmware-measures.md)
 
 [Graphics measures](graphics-measures.md)
 
 [Wi-Fi measures](wi-fi-measures.md)
+
+[Cohort Failure Report](IDR-cohort-report.md)
 
 [Glossary](measures-glossary.md)

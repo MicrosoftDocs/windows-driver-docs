@@ -1,7 +1,6 @@
 ---
 title: Using Layer 2 Filtering
 description: Using Layer 2 Filtering
-ms.assetid: 679E6DE2-4EFB-44F6-936D-2BF611BC9726
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,13 +22,13 @@ This section includes the following topics:
 
 ## Injecting MAC Frames
 
-A callback driver calls the [**FwpsInjectMacReceiveAsync0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectmacreceiveasync0) function to reinject a previously absorbed MAC frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or to inject an invented MAC frame in the inbound data path.
+A callback driver calls the [**FwpsInjectMacReceiveAsync0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectmacreceiveasync0) function to reinject a previously absorbed MAC frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or to inject an invented MAC frame in the inbound data path.
 
-A callback driver calls the [**FwpsInjectMacSendAsync0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectmacsendasync0) function to reinject a previously absorbed MAC frame (or a clone of the frame) back to the layer 2 outbound data path it was intercepted from, or to inject an invented MAC frame in the outbound data path.
+A callback driver calls the [**FwpsInjectMacSendAsync0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectmacsendasync0) function to reinject a previously absorbed MAC frame (or a clone of the frame) back to the layer 2 outbound data path it was intercepted from, or to inject an invented MAC frame in the outbound data path.
 
 The *netBufferLists* parameter can be a [NET\_BUFFER\_LIST](net-buffer-list-structure.md) chain. However the completion function could be invoked multiple times each, completing a segment (or single NET\_BUFFER\_LIST) of the chain.
 
-Injected frames could get classified again if the packets match the same filter as originally classified. Therefore, as with callouts at IP layers, layer 2 callouts must also protect against infinite packet inspection by calling [**FwpsQueryPacketInjectionState0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsquerypacketinjectionstate0).
+Injected frames could get classified again if the packets match the same filter as originally classified. Therefore, as with callouts at IP layers, layer 2 callouts must also protect against infinite packet inspection by calling [**FwpsQueryPacketInjectionState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsquerypacketinjectionstate0).
 
 Also, you must have callouts at the layer where you inject. Otherwise, your injected [NET\_BUFFER\_LIST](net-buffer-list-structure.md) will not be completed to your completion function, and the NET\_BUFFER\_LIST will go further up the stack. In this case, the behavior is undefined, because NDIS will try to pass the injected NET\_BUFFER\_LIST to the next component in the stack.
 
@@ -39,16 +38,16 @@ The [NET\_BUFFER\_LIST](net-buffer-list-structure.md)**Status** member contains 
 
 By default, a callout driver can only classify network buffer lists individually. However, a callout driver can classify [NET\_BUFFER\_LIST](net-buffer-list-structure.md) chains for better performance, if it does both of the following:
 
--   Specifies the **FWP\_CALLOUT\_FLAG\_ALLOW\_L2\_BATCH\_CLASSIFY** flag in the **Flags** member of the [**FWPS\_CALLOUT2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout2_) structure.
--   Registers a [*classifyFn2*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn2) function that can classify [NET\_BUFFER\_LIST](net-buffer-list-structure.md) chains.
+-   Specifies the **FWP\_CALLOUT\_FLAG\_ALLOW\_L2\_BATCH\_CLASSIFY** flag in the **Flags** member of the [**FWPS\_CALLOUT2**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout2_) structure.
+-   Registers a [*classifyFn2*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn2) function that can classify [NET\_BUFFER\_LIST](net-buffer-list-structure.md) chains.
 
 > [!WARNING]
 > However, if a callout driver does set the **FWP_CALLOUT_FLAG_ALLOW_L2_BATCH_CLASSIFY** flag, it cannot use the following functions to modify NET_BUFFER_LISTs.
 > 
-> - [FwpsReferenceNetBufferList0](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsreferencenetbufferlist0)
-> - [FwpsDereferenceNetBufferList0](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsdereferencenetbufferlist0)
-> - [FwpsAllocateCloneNetBufferList0](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsallocateclonenetbufferlist0)
-> - [FwpsFreeCloneNetBufferList0](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsfreeclonenetbufferlist0)
+> - [FwpsReferenceNetBufferList0](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsreferencenetbufferlist0)
+> - [FwpsDereferenceNetBufferList0](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsdereferencenetbufferlist0)
+> - [FwpsAllocateCloneNetBufferList0](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsallocateclonenetbufferlist0)
+> - [FwpsFreeCloneNetBufferList0](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsfreeclonenetbufferlist0)
 >
 > With this flag set, **FwpsAllocateCloneNetBufferList0** will always return an **INVALID_PARAMETER** error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET\_BUFFER\_LISTs, causing send and receive operations to stop.
 
@@ -66,19 +65,13 @@ Run-time Filtering Layer Identifiers for virtual switch filtering include:
 
 Data Field Identifiers for virtual switch filtering include:
 
-[**FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_ETHERNET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_inbound_mac_frame_ethernet_)
+[**FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_ETHERNET**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_inbound_mac_frame_ethernet_)
 
-[**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_ETHERNET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_outbound_mac_frame_ethernet_)
+[**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_ETHERNET**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_outbound_mac_frame_ethernet_)
 
-[**FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_NATIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_inbound_mac_frame_native_)
+[**FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_NATIVE**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_inbound_mac_frame_native_)
 
-[**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_NATIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_outbound_mac_frame_native_)
-
- 
+[**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_NATIVE**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_outbound_mac_frame_native_)
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Getting started writing a Hyper-V Extensible Switch extension
 description: This section describes how to start writing a Hyper-V Extensible Switch extension
-ms.assetid: 91C6ED75-1057-4520-8E8E-28817D8F3C81
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,12 +17,12 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
 
 1. Learn the extension architecture and programming model.
     -   Read the online documentation for NDIS-based extensions, beginning with [Hyper-V Extensible Switch](hyper-v-extensible-switch.md). Capture, filtering, and forwarding extensions use the standard NDIS filtering API. The NDIS interfaces have been enhanced to provide configuration, notifications, and identification of virtual switches and virtual machines.
-        [Hyper-V Extensible Switch Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-        [Hyper-V Extensible Switch Enumerations](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/index)
-        [Hyper-V Extensible Switch Structures and Unions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-        [Hyper-V Extensible Switch OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-oids)
-        [Hyper-V Extensible Switch Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-status-indications)
-        [Hyper-V Extensible Switch Macros](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-macros)
+        [Hyper-V Extensible Switch Functions](/windows-hardware/drivers/ddi/_netvista/)
+        [Hyper-V Extensible Switch Enumerations](/windows-hardware/drivers/ddi/ntddndis/index)
+        [Hyper-V Extensible Switch Structures and Unions](/windows-hardware/drivers/ddi/_netvista/)
+        [Hyper-V Extensible Switch OIDs](./hyper-v-extensible-switch-oids.md)
+        [Hyper-V Extensible Switch Status Indications](./hyper-v-extensible-switch-status-indications.md)
+        [Hyper-V Extensible Switch Macros](/windows-hardware/drivers/ddi/ntddndis/)
     -   Read the online documentation for WFP-based extensions, beginning with [Using Virtual Switch Filtering](using-virtual-switch-filtering.md).
     -   Watch the following instructional videos on extensions.
         -   [TechEd session on Hyper-V Extensible Switch](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2012/VIR307)
@@ -34,7 +33,7 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
 
 2.  Set up your development environment.
     -   Install Microsoft Visual Studio Professional.
-    -   Download and install [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+    -   Download and install [Windows Driver Kit](../download-the-wdk.md).
 
 3.  Study the sample extensions.
     -   Download the [NDIS forwarding extension sample](https://go.microsoft.com/fwlink/p/?LinkId=618935).
@@ -49,11 +48,11 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
     -   You can familiarize yourself with the extension build process by using Visual Studio to compile and run the sample extensions.
 
 6.  Learn about the Windows certification (logo) process for getting an extension signed.
-    -   An extension must pass the tests in the [Windows Hardware Certification Kit (HCK)](https://docs.microsoft.com/previous-versions/windows/hardware/cert-program/).
-    -   The requirements for an extension are listed under the Filter.Driver.vSwitchExtension.ExtensionRequirements in the [Windows Hardware Certification Requirements - Filter Driver](https://docs.microsoft.com/previous-versions/windows/hardware/cert-program/windows-hardware-certification-requirements---filter-driver) .
+    -   An extension must pass the tests in the [Windows Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/cert-program/).
+    -   The requirements for an extension are listed under the Filter.Driver.vSwitchExtension.ExtensionRequirements in the [Windows Hardware Certification Requirements - Filter Driver](/previous-versions/windows/hardware/cert-program/windows-hardware-certification-requirements---filter-driver) .
 
 7.  Set up your Windows Hardware Certification Kit environment.
-    -   Download and install the [Windows Hardware Certification Kit](https://msdn.microsoft.com/windows/hardware/hh852359).
+    -   Download and install the [Windows Hardware Certification Kit](/windows-hardware/test/hlk/).
 
 8.  Run the WHCK tests for extensions:
     -   Filter.Driver.Fundamentals
@@ -61,7 +60,7 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
     -   Filter.Driver.vSwitchExtension
 
 9.  After your final extension passes WHCK certification, submit it to Microsoft.
-    -   Your extension must be submitted as an MSI install package with a specific format to ensure that it can be tracked and deployed by management packages, such as [System Center Virtual Machine Manager (SCVMM) 2012](https://docs.microsoft.com/previous-versions/technet-magazine/hh300651(v=msdn.10)). The MSI format is defined in [Extension Driver MSI Packaging Requirements](https://docs.microsoft.com/windows-hardware/drivers/network/extension-driver-msi-packaging-requirements).
+    -   Your extension must be submitted as an MSI install package with a specific format to ensure that it can be tracked and deployed by management packages, such as [System Center Virtual Machine Manager (SCVMM) 2012](/previous-versions/technet-magazine/hh300651(v=msdn.10)). The MSI format is defined in [Extension Driver MSI Packaging Requirements](./extension-driver-msi-packaging-requirements.md).
 
 10. List your extension on WindowsServerCatalog.com.
     -   List a brief description of your extension on WindowsServerCatalog.com.

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_FORMAT
 description: The WIA\_IPA\_FORMAT property contains the current format of the image that is about to be transferred. The WIA minidriver creates and maintains this property.
-ms.assetid: 5b60b45f-16ad-45c4-97f0-d92099f698b9
 keywords: ["WIA_IPA_FORMAT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 If you can set the device to only a single value, create a WIA\_PROP\_LIST type, and place the valid value in it.
 
@@ -263,8 +261,7 @@ Formats that are marked with two asterisks (\*\*) are for Windows 8 and later v
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WiaImgFmt\_BMP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FibrePortHBAAttributes WMI Class
 description: MSFC\_FibrePortHBAAttributes WMI Class
-ms.assetid: 028afadf-1a2d-4792-8b6c-d53359af64c1
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -38,15 +37,9 @@ class MSFC_FibrePortHBAAttributes {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FibrePortHBAAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fibreporthbaattributes)
+[**MSFC\_FibrePortHBAAttributes**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fibreporthbaattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

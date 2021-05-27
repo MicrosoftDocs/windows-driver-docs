@@ -1,7 +1,6 @@
 ---
 title: FSCTL_FILE_LEVEL_TRIM control code
 description: The FSCTL\_FILE\_LEVEL\_TRIM control code provides a method to trim data ranges with in a file.
-ms.assetid: AD8A7A15-8B53-41DA-A6E4-BD1825C8CB45
 keywords: ["FSCTL_FILE_LEVEL_TRIM control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,38 +19,37 @@ ms.localizationpriority: medium
 
 The **FSCTL\_FILE\_LEVEL\_TRIM** control code provides a method to trim data ranges with in a file. The file trim ranges are translated to the underlying storage device allowing it to optimize its resource organization to improve access performance. An **FSCTL\_FILE\_LEVEL\_TRIM** request allows a virtual disk file to remain allocated at a fixed size while trimming physical storage to correspond to data ranges freed on the virtual disk.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance--in-"></a>*Instance \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file object pointer to the file which has the data to be trimmed. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The file handle of the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The file handle of the file which has the data to be trimmed. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
-Control code for the operation. Use **FSCTL\_REMOVE\_OVERLAY** for this operation.
+Control code for the operation. Use **FSCTL\_FILE\_LEVEL\_TRIM** for this operation.
 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
-A pointer to the input buffer, which must contain a **FSCTL\_FILE\_LEVEL\_TRIM** structure.
+A pointer to a [**FILE\_LEVEL\_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which contains an array of trim ranges for the file.
 
 <a href="" id="inputbufferlength--in-"></a>*InputBufferLength \[in\]*  
-A pointer to a [**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which contains an array of trim ranges for the file.
+Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. This value must be at least sizeof([**FILE\_LEVEL\_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)).
 
 <a href="" id="outputbuffer--out-"></a>*OutputBuffer \[out\]*  
-A pointer to an optional [**FILE\_LEVEL\_TRIM\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which receives the result of the trim operation.
+A pointer to an optional [**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which receives the result of the trim operation.
 
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
-Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. This value must be at least **sizeof**([**FILE\_LEVEL\_TRIM\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)) if **FILE\_LEVEL\_TRIM\_OUTPUT** is included in *OutputBuffer*. Otherwise, this is set to 0.
+Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. This value must be at least **sizeof**([**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)) if **FILE\_LEVEL\_TRIM\_OUTPUT** is included in *OutputBuffer*. Otherwise, this is set to 0.
 
-Status block
-------------
+## Status block
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS or possibly one of the following values.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or possibly one of the following values.
 
 <table>
 <colgroup>
@@ -94,12 +92,11 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 Performing trim on certain storage devices can significantly improve their future write performance. Trim also returns resources to the allocation pool in storage systems that are thinly provisioned. When files are deleted on a virtual disk, the size of the virtual disk file itself is not changed. The data ranges freed on the virtual disk are not trimmed on the physical storage where the virtual disk file resides. A virtual disk device can notify the file system that certain data ranges in a virtual disk file can be trimmed on the physical storage device with an **FSCTL\_FILE\_LEVEL\_TRIM** request. The file system will then issue a trim request to the physical storage. An **FSCTL\_FILE\_LEVEL\_TRIM** request could also be issued by service applications managing database or memory swap files.
 
-The **FSCTL\_FILE\_LEVEL\_TRIM** control code will attempt to trim the selected byte ranges of a file from a storage device. The byte ranges are contained in the **Ranges** array in the [**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure. Included in the **Ranges** array are one or more [**FILE\_LEVEL\_TRIM\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_range) structures.
+The **FSCTL\_FILE\_LEVEL\_TRIM** control code will attempt to trim the selected byte ranges of a file from a storage device. The byte ranges are contained in the **Ranges** array in the [**FILE\_LEVEL\_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure. Included in the **Ranges** array are one or more [**FILE\_LEVEL\_TRIM\_RANGE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_range) structures.
 
 Including overlapping ranges in the range array is not necessarily an error condition. This is dependant on how extent processing is handled by the underlying storage.
 
@@ -113,10 +110,9 @@ A file trim is performed outside of any transaction. The trim operation cannot b
 
 With sparse files (files with the **ATTRIBUTE\_FLAG\_SPARSE** attribute set), a trim range in an unallocated portion of the file is ignored.
 
-When included in *OutputBuffer*, the **NumRangesProcessed** member of the [**FILE\_LEVEL\_TRIM\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_output) will indicate the number of trim ranges successfully processed. If an error occurs during the processing of the trim ranges, **NumRangesProcessed** will specify the starting index of the remaining unprocessed ranges, ending at the **NumRanges** member of [**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) - 1.
+When included in *OutputBuffer*, the **NumRangesProcessed** member of the [**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_output) will indicate the number of trim ranges successfully processed. If an error occurs during the processing of the trim ranges, **NumRangesProcessed** will specify the starting index of the remaining unprocessed ranges, ending at the **NumRanges** member of [**FILE\_LEVEL\_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) - 1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -138,26 +134,19 @@ Requirements
 ## See also
 
 
-[**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)
+[**FILE\_LEVEL\_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)
 
-[**FILE\_LEVEL\_TRIM\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_output)
+[**FILE\_LEVEL\_TRIM\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_output)
 
-[**FILE\_LEVEL\_TRIM\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_range)
+[**FILE\_LEVEL\_TRIM\_RANGE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_range)
 
-[**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatefile)
+[**FltCreateFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatefile)
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)
+[**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
-
- 
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: TraceView Concepts
 description: TraceView Concepts
-ms.assetid: 4fab2b23-8f7b-407b-b944-41ac8caf1a75
 keywords:
 - TraceView WDK , terminology
 - trace sessions WDK , groups
@@ -56,7 +55,7 @@ For more information, see [Using TraceView Workspaces](using-traceview-workspace
 
 To create a trace session, you must identify the trace providers and locate the formatting instructions for the binary trace messages that the providers generate. You can do this any one of the following ways:
 
-- Locate the executable binary for the source code that lines the providers. TraceView can extract all the information necessary to enable and format [TraceLogging](https://docs.microsoft.com/windows/desktop/tracelogging/trace-logging-portal) and manifested ETW events. It will also attempt to locate the [PDB symbol file](pdb-symbol-files.md) to enable any [WPP Software Tracing](wpp-software-tracing.md) providers.
+- Locate the executable binary for the source code that lines the providers. TraceView can extract all the information necessary to enable and format [TraceLogging](/windows/desktop/tracelogging/trace-logging-portal) and manifested ETW events. It will also attempt to locate the [PDB symbol file](pdb-symbol-files.md) to enable any [WPP Software Tracing](wpp-software-tracing.md) providers.
 
 - Locate the [PDB symbol file](pdb-symbol-files.md) for the source code that includes [WPP Software Tracing](wpp-software-tracing.md) providers. TraceView can extract from the PDB file all of the information that it needs to identify the providers and format their trace messages.
 
@@ -64,7 +63,7 @@ To create a trace session, you must identify the trace providers and locate the 
 
 - Enter the [control GUID](control-guid.md) of the provider and specify the TMF file or the path to a directory where TMF files are stored.
 
-    If you enter a provider name preceded by an asterisk (e.g. ```*SampleProvider```), TraceView will automatically turn the name into a GUID using a standard algorithm. Not all providers follow this standard, but many, such as providers written using [.NET's EventSource](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource?view=netframework-4.8), do.
+    If you enter a provider name preceded by an asterisk (e.g. ```*SampleProvider```), TraceView will automatically turn the name into a GUID using a standard algorithm. Not all providers follow this standard, but many, such as providers written using [.NET's EventSource Class](/dotnet/api/system.diagnostics.tracing.eventsource), do.
 
 - Select a [registered provider](registered-provider.md) from the list that TraceView assembles and specify the TMF file or the path to a directory where TMF files are stored.
 

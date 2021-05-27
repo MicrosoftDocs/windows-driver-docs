@@ -1,7 +1,6 @@
 ---
 title: DTrace Code Samples 
-description: DTrace supports the D programing language. This topic provide D code samples.
-ms.assetid: abf23d76-423d-4d1e-afde-83739015bbff
+description: Learn about DTrace, which supports the D programing language. See code samples and view additional available support.
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace
@@ -242,7 +241,7 @@ This program is designed to continue to monitor memory usage. Press CTRL+C to ex
 
 ## Identifying heap free time breakdown for an activity
 
-This sample provides a breakdown of the  [RtlFreeHeap](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlfreeheap) function into sub-functions and display max time taken for these functions to execute.
+This sample provides a breakdown of the  [RtlFreeHeap](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlfreeheap) function into sub-functions and display max time taken for these functions to execute.
 
 ```dtrace
 /* Mark script destructive as we call "cls" in the tick-1sec provider*/

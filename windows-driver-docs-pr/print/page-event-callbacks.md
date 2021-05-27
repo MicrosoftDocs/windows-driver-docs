@@ -1,7 +1,6 @@
 ---
 title: Page Event Callbacks
 description: Page Event Callbacks
-ms.assetid: 891f62ec-d009-42c8-8143-73bfe737a946
 keywords:
 - callback functions WDK CPSUI
 - Common Property Sheet User Interface WDK print , callbacks
@@ -25,12 +24,7 @@ When a user interacts with a property sheet page, the operation system sends not
 
 -   If the application created a customized page that is not supplied by CPSUI, it must provide a dialog box procedure. For more information, see [Dialog Box Procedures and CPSUI](dialog-box-procedures-and-cpsui.md).
 
-A CPSUI application supplies CPSUI with the address of a page event callback when it calls the [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function.
+A CPSUI application supplies CPSUI with the address of a page event callback when it calls the [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function.
 
  
-
- 
-
-
-
 

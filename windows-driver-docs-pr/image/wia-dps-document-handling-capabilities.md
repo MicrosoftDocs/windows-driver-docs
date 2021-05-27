@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES
 description: The WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property contains the capabilities of a scanner.
-ms.assetid: 19c9cbd0-19ef-4d44-85f1-25e71f9a92bc
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property to determine whether a scanner has a flatbed, document feeder, or duplexer installed. You can also use this property to further define the installed features. The WIA minidriver creates and maintains this property.
 
@@ -89,7 +87,7 @@ The following table describes the constants that are valid with Windows 7 only.
 <tbody>
 <tr class="odd">
 <td><p>AUTO_SOURCE</p></td>
-<td><p>The device supports <a href="https://docs.microsoft.com/windows-hardware/drivers/image/auto-configured-scanning" data-raw-source="[auto-configured scanning](https://docs.microsoft.com/windows-hardware/drivers/image/auto-configured-scanning)">auto-configured scanning</a>.</p></td>
+<td><p>The device supports <a href="/windows-hardware/drivers/image/auto-configured-scanning" data-raw-source="[auto-configured scanning](./auto-configured-scanning.md)">auto-configured scanning</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -209,8 +207,7 @@ The following table describes the constants that are valid with Windows XP only;
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -224,12 +221,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: GDL Preprocessor Guidelines
 description: GDL Preprocessor Guidelines
-ms.assetid: dc8450ca-cacc-458c-a05b-8566d04d8bae
 keywords:
 - preprocessor directives WDK GDL , guidelines
 - directives WDK GDL , source file preprocessor directives

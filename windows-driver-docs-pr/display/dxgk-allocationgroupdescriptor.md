@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_ALLOCATIONGROUPDESCRIPTOR structure
 description: The DXGK\_ALLOCATIONGROUPDESCRIPTOR structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 74ca560d-b5ec-40f1-a064-4972c7908fc9
 keywords: ["_DXGK_ALLOCATIONGROUPDESCRIPTOR structure Display Devices", "DXGK_ALLOCATIONGROUPDESCRIPTOR structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONGROUPDESCRIPTOR structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONGROUPDESCRIPTOR {
@@ -30,8 +28,7 @@ typedef struct _DXGK_ALLOCATIONGROUPDESCRIPTOR {
 } DXGK_ALLOCATIONGROUPDESCRIPTOR;
 ```
 
-Members
--------
+## Members
 
 **MinimumVirtualAddress**
 Reserved for system use.
@@ -39,8 +36,7 @@ Reserved for system use.
 **MaximumVirtualAddress**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

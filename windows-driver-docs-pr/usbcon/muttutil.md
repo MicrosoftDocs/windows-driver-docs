@@ -1,5 +1,5 @@
 ---
-Description: MuttUtil performs various tasks on MUTT devices.
+description: MuttUtil performs various tasks on MUTT devices.
 title: MuttUtil
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -7,28 +7,26 @@ ms.localizationpriority: medium
 
 # MuttUtil
 
-
 MuttUtil performs various tasks on [MUTT devices](microsoft-usb-test-tool--mutt--devices.md).
 
--   Updates the firmware of the test devices.
--   Installs drivers for MUTT devices.
--   Verifies that the devices are installed without errors.
--   Changes the operating bus speed of the device.
--   Configures the device to send a resume wake signal after a specified time period.
--   For the MUTT Pack, it sets the hub to operate at full or high speed; as a single-TT or multi-TT hub.
+- Updates the firmware of the test devices.
+- Installs drivers for MUTT devices.
+- Verifies that the devices are installed without errors.
+- Changes the operating bus speed of the device.
+- Configures the device to send a resume wake signal after a specified time period.
+- For the MUTT Pack, it sets the hub to operate at full or high speed; as a single-TT or multi-TT hub.
 
-MuttUtil is embedded in the installation section of the included test scripts to ensure that the test device is properly upgraded to latest firmware. The tool is included in the [MUTT Software Package](https://go.microsoft.com/fwlink/p/?linkid=617710).
+MuttUtil is embedded in the installation section of the included test scripts to ensure that the test device is properly upgraded to latest firmware. The tool is included in the [MUTT Software Package](./index.md).
 
 ## How to run MuttUtil
 
-
-**MuttUtil Help**
+### MuttUtil Help
 
 Run the following command to get a list of command-line options:
 
 `MUTTUtil.exe`
 
-**Finding all MUTT devices attached to the system**
+### Finding all MUTT devices attached to the system
 
 `MUTTUtil.exe -list`
 
@@ -44,9 +42,9 @@ The preceding command indicates that the system has a SuperMUTT (1) and a MUTT P
 
 PROBLEM CODE 28 for the MUTT Pack device indicates that no driver is loaded for the device.
 
-**Change the personality of a MUTT device**
+### Change the personality of a MUTT device
 
-MUTT devices are also used as test devices for the [USB UWP app sample](https://go.microsoft.com/fwlink/p/?linkid=309716). For that scenario, the firmware must be updated by running the `-SetWinRTUsb` option. In this exercise, SuperMUTT device is set to WinRT personality.
+MUTT devices are also used as test devices for the [USB UWP app sample](/samples/browse/). For that scenario, the firmware must be updated by running the `-SetWinRTUsb` option. In this exercise, SuperMUTT device is set to WinRT personality.
 
 To change it back to MUTT personality, use this command:
 
@@ -66,7 +64,7 @@ Return value: 1
 
 Notice that the hardware ID is changed to USB\\VID\_045E&PID\_078F&REV\_0037. The revision version indicates the firmware version number.
 
-**Installing a driver for a MUTT device**
+### Installing a driver for a MUTT device
 
 Specify the INF file for the driver that contains installation information. For example,
 
@@ -82,7 +80,7 @@ DEVICE :  0 : USB\VID_045E&PID_078F&REV_0034 :             0  : USBTCD
 Return value: 1
 ```
 
-The preceding command replaces the existing driver with the specified USBTCD.sys driver. The driver is included in the [MUTT Software Package](https://go.microsoft.com/fwlink/p/?linkid=617710).
+The preceding command replaces the existing driver with the specified USBTCD.sys driver. The driver is included in the [MUTT Software Package](./index.md).
 
 If you have multiple MUTT devices attached, you can update the driver simultaneously.
 
@@ -90,7 +88,7 @@ If you have multiple MUTT devices attached, you can update the driver simultaneo
 
 The preceding command installs USBTCD.sys for device 0, Winusb.sys for device 1, and so on.
 
-**Updating the firmware on a MUTT device**
+### Updating the firmware on a MUTT device
 
 `MuttUtil.exe -UpdateFirmware`
 
@@ -123,7 +121,7 @@ Another way of updating the firmware is by writing it to the EEPROM or RAM direc
 
 To erase EEPROM, use the `-EraseEEPROM` option
 
-**Disconnecting, reconnecting, and re-enumerating the device**
+### Disconnecting, reconnecting, and re-enumerating the device
 
 `MuttUtil.exe -Reconnect`
 
@@ -137,7 +135,7 @@ To reset the hub of a MUTT Pack or a SuperMUTT Pack device, use this command:
 
 `MuttUtil.exe -# 1 -ResetHub`
 
-**Changing the speed of the device**
+### Changing the speed of the device
 
 You can change the device speed of MUTT devices by using this command:
 
@@ -151,7 +149,7 @@ If you want to change the speed of the hub, of a MUTT Pack or SuperMUTT Pack, to
 
 `MuttUtil.exe -# 1 -HubFS`
 
-**Sending a resume signal to wake up the system**
+### Sending a resume signal to wake up the system
 
 Typically, a resume signal are sent by the device (in low power) upon certain user action. You can simulate that behavior by using this command:
 
@@ -161,7 +159,7 @@ The command configures the device to send a resume signal, 5 seconds after the b
 
 You can also configure the device to disconnect and reconnect in a certain period of time after the bus suspends by using the `-DisconnectAfterSuspend` option.
 
-**Setting and clearing overcurrent on the port downstream port - MUTT Pack and SuperMUTT Pack**
+### Setting and clearing overcurrent on the port downstream port - MUTT Pack and SuperMUTT Pack
 
 These commands set and clear the overcurrent pin for the exposed port of the Mutt-Pack.
 
@@ -169,7 +167,7 @@ These commands set and clear the overcurrent pin for the exposed port of the Mut
 
 `MuttUtil.exe -# 1 -ClearOvercurrent`
 
-**Converting the hub to a TT high speed hub - MUTT Pack and SuperMUTT Pack**
+### Converting the hub to a TT high speed hub - MUTT Pack and SuperMUTT Pack
 
 You can set the hub to operate as a multi-TT high speed hub or a single-TT high speed hub by using these commands:
 
@@ -178,9 +176,6 @@ You can set the hub to operate as a multi-TT high speed hub or a single-TT high 
 `MuttUtil.exe -# 1 -HubHSSingleTT`
 
 ## Related topics
-[USB test tools](usb-test-tools.md)  
+
 [Tools in the MUTT software package](mutt-software-package.md)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-

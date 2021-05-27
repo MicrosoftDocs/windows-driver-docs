@@ -1,7 +1,6 @@
 ---
 title: Building and Loading a WDF Driver
 description: This topic describes how to select a target operating system and framework version for a driver project in Visual Studio. It also describes the co-installer and how to determine if you should include this component in your driver package.
-ms.assetid: 82c77b1f-4bf0-46d9-bae3-822e9be5a7fb
 keywords:
 - kernel-mode drivers WDK KMDF , building drivers
 - KMDF WDK , building drivers
@@ -46,7 +45,7 @@ If you're building your driver project for the latest version of Windows and the
 Otherwise, follow these steps:
 
 -   Right-click the solution and select **Configuration Manager**.  Set **Project Configuration** to the desired value (for example **Debug**).
--   Right-click the driver project and select **Properties**.  Open **Configuration Properties->Driver Settings->Driver Model**.  Change the **KMDF Version Minor (Target Version)** or **UMDF Version Minor (Target Version)** value in the [Driver Model Settings](../develop/driver-model-settings-properties-for-driver-projects.md) to the desired value.  For info about **KMDF Version Minor (Minimum Required)** and **UMDF Version Minor (Minimum Required)**, see [Specifying Minimum Required](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows#specifying-minimum-required).
+-   Right-click the driver project and select **Properties**.  Open **Configuration Properties->Driver Settings->Driver Model**.  Change the **KMDF Version Minor (Target Version)** or **UMDF Version Minor (Target Version)** value in the [Driver Model Settings](../develop/driver-model-settings-properties-for-driver-projects.md) to the desired value.  For info about **KMDF Version Minor (Minimum Required)** and **UMDF Version Minor (Minimum Required)**, see [Specifying Minimum Required](./building-a-wdf-driver-for-multiple-versions-of-windows.md#specifying-minimum-required).
 
 You can use the Windows Driver Kit (WDK) that ships with Windows 10 to build KMDF 1.9-1.29 drivers, as well as UMDF 1.9-2.29 drivers.
 
@@ -62,5 +61,4 @@ When you build a Windows Driver Frameworks (WDF) project in Microsoft Visual Stu
 
 The stub file contains a special entry point routine: **FxDriverEntry**. MSBuild sets the stub's **FxDriverEntry** routine as the initial entry point for framework-based drivers.
 
-When the operating system loads a framework-based driver, it also loads the stub file and the library's loader. Next, the system calls the stub file's **FxDriverEntry** routine. This routine then calls the loader. The loader determines the version of the framework library that the driver requires and then loads the correct [version of the library](framework-library-versioning.md) as a kernel-mode service (if it is not already loaded). Finally, the library calls the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine.
-
+When the operating system loads a framework-based driver, it also loads the stub file and the library's loader. Next, the system calls the stub file's **FxDriverEntry** routine. This routine then calls the loader. The loader determines the version of the framework library that the driver requires and then loads the correct [version of the library](framework-library-versioning.md) as a kernel-mode service (if it is not already loaded). Finally, the library calls the driver's [**DriverEntry**](./driverentry-for-kmdf-drivers.md) routine.

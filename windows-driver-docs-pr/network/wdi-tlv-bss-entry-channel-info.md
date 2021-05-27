@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_CHANNEL_INFO
 description: WDI_TLV_BSS_ENTRY_CHANNEL_INFO is a TLV that contains BSS entry channel information.
-ms.assetid: 01DA2EDA-2BE2-4E4F-AE5D-8E07EEF691FE
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_CHANNEL_INFO Network Drivers Starting with Windows Vista
@@ -33,8 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

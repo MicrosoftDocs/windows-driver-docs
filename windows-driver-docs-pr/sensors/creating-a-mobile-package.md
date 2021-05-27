@@ -1,7 +1,6 @@
 ---
 title: Creating a mobile package
 description: This topic provides information about creating a package for installing the sample driver on a mobile device.
-ms.assetid: E929D80D-17BF-4079-8CF9-972020306358
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -69,12 +68,6 @@ After creating the *adxl345acc.pkg.xml* file as shown in the preceding steps, yo
 
 If you installed the WDK to the default location, then you can find **pkggen.exe** in the following location: *%WPDKCONTENTROOT%\Tools\bin\i386*
 
-Refer to [Command-line arguments for package generator](https://docs.microsoft.com/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator) for instructions on how to create a package for your mobile device. See [Creating Mobile Pacakages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) for a more comprehensive introduction.
-
 ## Related topics
 
-[Creating mobile packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85))
-
 [Review the INX file](review-and-revise-the-inf-file.md)
-
-[Command-line arguments for package generator](https://docs.microsoft.com/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator)

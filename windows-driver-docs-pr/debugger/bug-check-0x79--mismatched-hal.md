@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x79 MISMATCHED_HAL
 description: The MISMATCHED_HAL bug check has a value of 0x00000079 that indicates that the HAL revision level or configuration does not match that of the kernel or the computer.
-ms.assetid: 2d063c2a-c647-4436-b005-04f71a4d2b66
 keywords: ["Bug Check 0x79 MISMATCHED_HAL", "MISMATCHED_HAL"]
 ms.date: 05/23/2017
 topic_type:
@@ -81,8 +80,7 @@ When Parameter 1 equals 0x2, the following build type codes are used:
 
 -   3: Single-processor checked build
 
-Cause
------
+## Cause
 
 The MISMATCHED\_HAL bug check often occurs when a user manually updates Ntoskrnl.exe or Hal.dll.
 
@@ -90,8 +88,7 @@ The error can also indicate that one of those two files is out of date. Or the c
 
 The Ntoskrnl.exe kernel file is for single-processor systems and Ntkrnlmp.exe is for multiprocessor systems. However, these file names correspond to the files on the installation media.After you have installed the Windows operating system, the file is renamed to Ntoskrnl.exe, regardless of the source file that is used. The HAL file also uses the name Hal.dll after installation, but there are several possible HAL files on the installation media on older versions of Windows.
 
-Resolution
-----------
+## Resolution
 
 Restart the computer by using the product CD or the Windows Setup disks. At the Welcome screen, press F10 to start the Recovery Console. Use the **Copy** command to copy the correct HAL or kernel file from the original CD into the appropriate folder on the hard disk. The **Copy** command detects whether the file that you are copying is in the Microsoft compressed file format. If so, it automatically expands the file that is copied on the target drive.
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM
 description: Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific program.
-ms.assetid: 07792113-6d47-4836-8db2-6960fb14ab87
 keywords: ["KSPROPERTY_BDA_CA_REMOVE_PROGRAM Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific
 
  
 
-Remarks
--------
+## Remarks
 
 The property value specifies the program to make inaccessible.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,7 @@ Requirements
 
 [**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

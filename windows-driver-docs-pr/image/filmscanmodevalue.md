@@ -1,7 +1,6 @@
 ---
 title: FilmScanModeValue element
 description: The required FilmScanModeValue element identifies a specific film exposure type that the film scanning option supports.
-ms.assetid: 62d72190-f1c5-4b2f-af6a-a3c530cc51ed
 keywords: ["FilmScanModeValue element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmScanModeValue** element identifies a specific film exposure type that the film scanning option supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmScanModeValue>
@@ -27,13 +25,11 @@ Usage
 </wscn:FilmScanModeValue>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -94,8 +90,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 You can both extend and subset the allowed values for this element.
 

@@ -1,7 +1,6 @@
 ---
 title: Hardware-Resident Fonts
 description: Hardware-Resident Fonts
-ms.assetid: 359735c2-bfa3-4c32-82a5-1d455c4eacb1
 keywords:
 - printer font descriptions WDK Unidrv , hardware-resident fonts
 - hardware-resident fonts WDK Unidrv

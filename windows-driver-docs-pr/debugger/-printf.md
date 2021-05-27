@@ -1,7 +1,6 @@
 ---
 title: .printf
 description: The .printf token behaves like the printf statement in C.
-ms.assetid: 16ad25c4-7df3-490e-80da-2beaddec3230
 keywords: [".printf Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -180,8 +179,7 @@ Specifies arguments for the format string, as in **printf**. The number of argum
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The color settings that you can choose by using the *Options* parameter are by default all set to black text on a white background. To make best use of these options, you must first use [View | Options](view---options.md) to open the Options dialog box and change the color settings for Debugger Command window messages.
 

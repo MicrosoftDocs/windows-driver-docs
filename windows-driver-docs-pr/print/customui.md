@@ -1,7 +1,6 @@
 ---
 title: customUI element
 description: The optional customUI element specifies a custom user interface to be displayed on a client computer.
-ms.assetid: 4408dcf2-0928-4ecb-97eb-0027eceef457
 keywords: ["customUI element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # customUI element
 
-
 The optional **customUI** element specifies a custom user interface to be displayed on a client computer.
 
-The **customUI** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **customUI** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <customUI
@@ -32,8 +35,7 @@ Usage
 </customUI>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -121,13 +123,11 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Because the **bidi** attribute is set to **true** in the following example, the **IHVFunction** entry point function in the *Abc.dll* DLL will be called. **IHVfunction** returns the **CDATA** type data.
 
-Examples
---------
+## Examples
 
 The following code example shows how to use the **customUI** element to call and display a custom user interface on a client computer.
 

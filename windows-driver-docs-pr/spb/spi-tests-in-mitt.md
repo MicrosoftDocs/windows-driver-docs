@@ -1,33 +1,21 @@
 ---
 title: SPI tests in MITT
 description: SPI test modules that are included in the MITT software package.
-ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
-ms.date: 04/20/2017
+ms.date: 04/27/2021
 ms.localizationpriority: medium
 ---
 
 # SPI tests in MITT
 
-
-**Last updated**
-
--   January, 2015
-
-**Applies to:**
-
--   Windows 8.1
-
 SPI test modules that are included in the MITT software package can be used to test data transfers for a SPI controller on the system under test and its driver. The MITT board acts as a client device connected to the SPI bus.
 
-## Before you begin...
+## Before you begin
 
-
--   Get a MITT board and a SPI or UART adapter board. See [Buy hardware for using MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--).
--   [Download the MITT software package](https://docs.microsoft.com/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
--   Install MITT firmware on the MITT board. See [Get started with MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/get-started-with-mitt---).
+- Get a MITT board and a SPI or UART adapter board. See [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md).
+- [Download the MITT software package](download-the-mitt-software-package.md). Install it on the system under test.
+- Install MITT firmware on the MITT board. See [Get started with MITT](./get-started-with-mitt---.md).
 
 ## Hardware setup
-
 
 ![spi mitt test](images/spi.jpg)
 
@@ -35,44 +23,38 @@ SPI test modules that are included in the MITT software package can be used to t
 |---------------|----------------------------------------------|---------------------|--------------------------------------|
 | SPI           | All lines needed (SCLK, MISO, MOSI, SS, GND) | ACPI table          | Simple block header (on debug board) |
 
-
-
-1.  Connect the SPI adapter to **JC1** on the MITT board.
-2.  Use the jumper on the SPI adapter board to select the correct SPI voltage. The jumper can be used to select between 3.3V and 1.8V.
-3.  Connect SCLK, MOSI, MISO, SS, and GND to the system under test.
+1. Connect the SPI adapter to **JC1** on the MITT board.
+2. Use the jumper on the SPI adapter board to select the correct SPI voltage. The jumper can be used to select between 3.3V and 1.8V.
+3. Connect SCLK, MOSI, MISO, SS, and GND to the system under test.
 
     ![spi wiring](images/spiwiring.png)
 
-4.  On the MITT board, set switch **SW1** to the high position. This position enables the default mode for SPI when the MITT is powered. You can directly connect the board (without the SPI adapter board) if the signal is at 3.3V.
+4. On the MITT board, set switch **SW1** to the high position. This position enables the default mode for SPI when the MITT is powered. You can directly connect the board (without the SPI adapter board) if the signal is at 3.3V.
 
     ![spi power](images/spi-power.png)
 
 ## Test driver and ACPI configuration
 
+Perform these steps on the system under test that has the I<sup>2</sup>C controller:
 
-Perform these steps on the system under test that has the I²C controller:
-
-1.  Install WITTTest driver included in the MITT software package by running this command:
+1. Install WITTTest driver included in the MITT software package by running this command:
 
     **pnputil –a witttest.inf**
 
     ![intall witt driver for the mitt board](images/mitt-install-witt.png)
 
-    **Note**  PnpUtil.exe is included in %SystemRoot%\\System32.
+    >[!NOTE]
+    >PnpUtil.exe is included in %SystemRoot%\\System32.
 
+2. Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
 
-
-2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](https://docs.microsoft.com/windows-hardware/drivers/bringup/microsoft-asl-compiler).
-
-    **Note**  Change "\\\\\_SB\_.SPI1" to ACPI entry name for the SPI controller to test as shown here. It defines three test targets with SPI frequency at 1Mhz, 5Mhz, and 20Mhz.
-
-
-
+    >[!NOTE]
+    >Change "\\\\\_SB\_.SPI1" to ACPI entry name for the SPI controller to test as shown here. It defines three test targets with SPI frequency at 1Mhz, 5Mhz, and 20Mhz.
 
 ``` syntax
 Device(TP1) {
-    Name (_HID, "SPT0001") 
-    Name (_CID, "WITTTest") 
+    Name (_HID, "SPT0001")
+    Name (_CID, "WITTTest")
     Method(_CRS, 0x0, NotSerialized)
     {
       Name (RBUF, ResourceTemplate ()
@@ -83,8 +65,8 @@ Device(TP1) {
     }
 }
 Device(TP2) {
-    Name (_HID, "SPT0002") 
-    Name (_CID, "WITTTest") 
+    Name (_HID, "SPT0002")
+    Name (_CID, "WITTTest")
     Method(_CRS, 0x0, NotSerialized)
     {
       Name (RBUF, ResourceTemplate ()
@@ -95,8 +77,8 @@ Device(TP2) {
     }
 }
 Device(TP3) {
-    Name (_HID, "SPT0003") 
-    Name (_CID, "WITTTest") 
+    Name (_HID, "SPT0003")
+    Name (_CID, "WITTTest")
     Method(_CRS, 0x0, NotSerialized)
     {
       Name (RBUF, ResourceTemplate ()
@@ -109,14 +91,12 @@ Device(TP3) {
 
 ```
 
-
 ## SPI automation tests
 
-
-1.  Create a folder on the system under test.
-2.  Copy the TAEF binaries to the folder and then add it to your PATH environment variable. The required TAEF binaries are in %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF .
-3.  Copy Muttutil.dll and Mittspitest.dll from the MITT software package to the folder.
-4.  View all MITT SPI tests by using the **/list** option:
+1. Create a folder on the system under test.
+2. Copy the TAEF binaries to the folder and then add it to your PATH environment variable. The required TAEF binaries are in %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF .
+3. Copy Muttutil.dll and Mittspitest.dll from the MITT software package to the folder.
+4. View all MITT SPI tests by using the **/list** option:
 
 You are now ready to run SPI tests. You can run a single test, all tests at once, or run tests manually.
 
@@ -126,13 +106,4 @@ You are now ready to run SPI tests. You can run a single test, all tests at once
 
 ## SPI adapter schematic
 
-
 ![spi schematic](images/spi-schematic.png)
-
-
-
-
-
-
-
-

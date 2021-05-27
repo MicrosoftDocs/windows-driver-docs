@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbfaildata
 description: The usbkd.usbfaildata command displays the failure data (if any) stored for a USB device.
-ms.assetid: 08FD3F82-73E3-4616-92EB-D562ECAB8A96
 keywords: ["usbkd.usbfaildata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of the physical device object (PDO) of a device that is connected to a U
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the PDO of a USB device. Enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -58,14 +56,7 @@ Now pass the address of the PDO to **!usbkd.usbfaildata**.
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

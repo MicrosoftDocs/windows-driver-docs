@@ -1,7 +1,6 @@
 ---
 title: $ (Alias Interpreter)
 description: A dollar sign followed by a pair of braces ( $ ) evaluates to a variety of values related to the specified user-named alias.
-ms.assetid: 5182ed99-259e-4e58-8d69-38a702bd8113
 keywords: ["$ (Alias Interpreter) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -49,8 +48,7 @@ Prevents any alias evaluation. Regardless of whether *Alias* is defined, **${/v:
 
 For an explanation of how to use aliases, see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 If no switches are used and the alias is currently defined, **${**<em>Alias</em>**}** is replaced by the alias equivalent. If no switches are used and the alias is not defined, **${**<em>Alias</em>**}** always retains its literal value of **${**<em>Alias</em>**}**.
 

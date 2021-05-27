@@ -1,7 +1,6 @@
 ---
 title: Background Reading on IPsec
 description: Background Reading on IPsec
-ms.assetid: b7316027-a66c-4630-88d4-fa3c66f735f8
 keywords:
 - ESP-protected packets WDK IPsec offload , background reading
 - AH-protected packets WDK IPsec offload , background reading

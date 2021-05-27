@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's Internal Routines
 description: Storage Class Driver's Internal Routines
-ms.assetid: 44017d1d-2866-4b5e-87ea-69cbc6611c25
 keywords:
 - storage class drivers WDK , internal routines
 - class drivers WDK storage , internal routines

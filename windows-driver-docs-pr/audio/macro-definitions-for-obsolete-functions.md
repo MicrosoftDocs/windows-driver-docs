@@ -1,7 +1,6 @@
 ---
 title: Macro Definitions for Obsolete Functions
 description: Macro Definitions for Obsolete Functions
-ms.assetid: 3d69b089-4875-4860-b5eb-3b5edcf3fc89
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeMipVolumeSize method
 description: The CPixel ComputeMipVolumeSize method determines the amount of memory required to allocate a mipmap texture volume.
-ms.assetid: f759421a-a41e-4705-8a18-124f7efb059b
 keywords: ["ComputeMipVolumeSize method Display Devices", "ComputeMipVolumeSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipVolumeSize method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeMipVolumeSize** method determines the amount of memory required to allocate a mipmap texture volume.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeMipVolumeSize(
@@ -33,8 +31,7 @@ static UINT ComputeMipVolumeSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *cpWidth*
 Specifies the width in pixels of the mipmap volume.
@@ -51,18 +48,15 @@ Specifies the number of levels of the mipmap volume texture.
 *Format*
 Uses a value from the D3DFORMAT enumeration to specify the surface format.
 
-Return value
-------------
+## Return value
 
 Returns the size, in bytes, of the mipmap volume.
 
-Remarks
--------
+## Remarks
 
 For more information about D3DFORMAT, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

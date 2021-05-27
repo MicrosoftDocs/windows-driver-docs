@@ -1,7 +1,6 @@
 ---
 title: Breakpoints
 description: Breakpoints
-ms.assetid: f805667c-7ee1-4f66-bfc5-7e3b90b35b86
 keywords: ["Debugger Engine, breakpoints"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

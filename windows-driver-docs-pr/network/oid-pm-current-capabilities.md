@@ -1,7 +1,6 @@
 ---
 title: OID_PM_CURRENT_CAPABILITIES
 description: As a query, overlying drivers can use the OID_PM_CURRENT_CAPABILITIES OID to query the currently available power management capabilities of a network adapter.
-ms.assetid: b35ce325-a1aa-43e0-bf68-cb2ab89dff76
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -11,25 +10,24 @@ ms.localizationpriority: medium
 # OID\_PM\_CURRENT\_CAPABILITIES
 
 
-As a query, overlying drivers can use the OID\_PM\_CURRENT\_CAPABILITIES OID to query the currently available power management capabilities of a network adapter. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
+As a query, overlying drivers can use the OID\_PM\_CURRENT\_CAPABILITIES OID to query the currently available power management capabilities of a network adapter. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS handles the query for miniport drivers. Starting with NDIS 6.20, miniport drivers supply the power management hardware capabilities during initialization. However, NDIS can hide some capabilities from the protocol driver. For example, NDIS might report different capabilities when a user disables some or all of the power management capabilities.
 
 Note that the current power management capabilities that NDIS reports to a protocol driver are not necessarily the same as the hardware capabilities that the miniport driver reported to NDIS.
 
-NDIS reports the power management capabilities of an underlying network adapter to overlying protocol drivers in the **PowerManagementCapabilitiesEx** member of the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure during the bind operation. Therefore, protocol drivers do not have to query the OID.
+NDIS reports the power management capabilities of an underlying network adapter to overlying protocol drivers in the **PowerManagementCapabilitiesEx** member of the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure during the bind operation. Therefore, protocol drivers do not have to query the OID.
 
-NDIS issues an [**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-capabilities-change) status indication to report changes in the power management capabilities that are available to overlying drivers.
+NDIS issues an [**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](./ndis-status-pm-capabilities-change.md) status indication to report changes in the power management capabilities that are available to overlying drivers.
 
-If the underlying network adapter has an NDIS 6.1 or older miniport driver, NDIS translates the power management capabilities of the underlying network adapter to an [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
+If the underlying network adapter has an NDIS 6.1 or older miniport driver, NDIS translates the power management capabilities of the underlying network adapter to an [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
 NDIS returns one of the following status codes for the request:
 
 <a href="" id="ndis-status-success"></a>NDIS\_STATUS\_SUCCESS  
-The request completed successfully. The **InformationBuffer** points to an [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
+The request completed successfully. The **InformationBuffer** points to an [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
 <a href="" id="ndis-status-pending"></a>NDIS\_STATUS\_PENDING  
 The request is pending completion. NDIS will pass the final status code and results to the OID request completion handler of the caller after the request is complete.
@@ -40,8 +38,7 @@ The information buffer was too short. NDIS set the **DATA.QUERY\_INFORMATION.Byt
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -63,18 +60,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
+[**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
-[**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities)
+[**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities)
 
-[**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-capabilities-change)
-
- 
+[**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](./ndis-status-pm-capabilities-change.md)
 
  
-
-
-
 

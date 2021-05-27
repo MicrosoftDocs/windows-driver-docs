@@ -1,7 +1,6 @@
 ---
 title: Power Management for I/O Queues
 description: Power Management for I/O Queues
-ms.assetid: 2e1bf9d2-615b-49b0-b677-f41b23c42eda
 keywords:
 - power management WDK KMDF , I/O queues
 - I/O queues WDK KMDF , power management
@@ -35,7 +34,7 @@ As you are designing your driver, you should group the I/O requests that your dr
 
 Unless you are writing a filter driver, or a driver for a stack that does not communicate with hardware, it is likely that your driver will receive some requests that require the device to be in its working state, together with some that do not.
 
-To support these two types of requests, the framework provides two types of I/O queues: those that are *power-managed* and those that are not. When your driver creates each of its I/O queues, it sets the **PowerManaged** member in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure to either **WdfTrue** or **WdfFalse** to indicate one of the following:
+To support these two types of requests, the framework provides two types of I/O queues: those that are *power-managed* and those that are not. When your driver creates each of its I/O queues, it sets the **PowerManaged** member in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure to either **WdfTrue** or **WdfFalse** to indicate one of the following:
 
 -   If your driver sets **PowerManaged** to **WdfTrue**, the queue is power-managed.
 
@@ -56,10 +55,4 @@ For more information about power-managed I/O queues, see [Using Power-Managed I/
 A few drivers require some direct control over Plug and Play (PnP) and power management operations. These drivers can use *self-managed I/O*. For more information, see [Using Self-Managed I/O](using-self-managed-i-o.md).
 
  
-
- 
-
-
-
-
 

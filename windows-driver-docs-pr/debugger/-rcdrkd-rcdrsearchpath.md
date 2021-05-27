@@ -1,7 +1,6 @@
 ---
 title: rcdrkd.rcdrsearchpath
 description: The rcdrkd.rcdrsearchpath extension sets the search path for trace message format (TMF) and trace message control (TMC) files.
-ms.assetid: AB19DC1B-009E-445A-B66B-5CC7EF54086F
 keywords: ["rcdrkd.rcdrsearchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Path to the format files.
 
 Rcdrkd.dll
 
-Remarks
--------
+## Remarks
 
 The search path set by this command takes precedence over the search path specified in the TRACE\_FORMAT\_SEARCH\_PATH environment variable.
 

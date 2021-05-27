@@ -1,7 +1,6 @@
 ---
 title: Using IWiaItem CreateChildItem to Create Selection Areas
 description: Using IWiaItem CreateChildItem to Create Selection Areas
-ms.assetid: c430d15b-51e9-4419-9cdb-904a0f5ef09b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-WIA applications should read the [**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-supports-child-item-creation) property to determine whether the film scanning item supports creating of child items. The film scanner items can contain child items (that is, frames) in the item tree that *cannot* be deleted. The application can delete WIA items that are marked with the [**WIA\_IPA\_ACCESS\_RIGHTS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-access-rights) settings of (WIA\_PROP\_READ | WIA\_ITEM\_WRITE | WIA\_ITEM\_CAN\_BE\_DELETED).
+WIA applications should read the [**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](./wia-ips-supports-child-item-creation.md) property to determine whether the film scanning item supports creating of child items. The film scanner items can contain child items (that is, frames) in the item tree that *cannot* be deleted. The application can delete WIA items that are marked with the [**WIA\_IPA\_ACCESS\_RIGHTS**](./wia-ipa-access-rights.md) settings of (WIA\_PROP\_READ | WIA\_ITEM\_WRITE | WIA\_ITEM\_CAN\_BE\_DELETED).
 
 ### Creating Dynamic Film Items
 
@@ -23,9 +22,4 @@ A WIA application calls **IWiaItem::CreateChildItem** (described in the Microsof
  
 
  
-
- 
-
-
-
 

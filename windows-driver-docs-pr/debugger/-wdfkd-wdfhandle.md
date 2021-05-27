@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfhandle
 description: The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
-ms.assetid: 9365218e-2647-4e54-baba-8774d4ab3ae1
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows the output of the **!wdfhandle** extension with bit 4 set in the *Flags* parameter (so the output displays information about the child objects).
 

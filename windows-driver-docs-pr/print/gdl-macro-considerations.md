@@ -1,7 +1,6 @@
 ---
 title: GDL Macro Considerations
 description: GDL Macro Considerations
-ms.assetid: b1e3e32f-2f5f-47ae-b69b-7645ada59c2a
 keywords:
 - GDL WDK , macros
 - macros WDK GDL , considerations

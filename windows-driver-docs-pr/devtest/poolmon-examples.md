@@ -1,7 +1,6 @@
 ---
 title: PoolMon Examples
 description: PoolMon Examples
-ms.assetid: aff0abdd-7d68-49b8-b9a1-71ab866c8487
 keywords:
 - PoolMon WDK , examples
 - Memory Pool Monitor WDK , examples
@@ -262,7 +261,7 @@ When the memory management for the printer driver is working properly, the value
 
 ### <span id="For_More_Information"></span><span id="for_more_information"></span><span id="FOR_MORE_INFORMATION"></span>For More Information
 
-If you believe you have identified a leaking driver, go to the [Microsoft support](https://go.microsoft.com/fwlink/p/?linkid=8713) website and search the Knowledge Base for relevant articles.
+If you believe you have identified a leaking driver, go to the [Microsoft support](https://support.microsoft.com/) website and search the Knowledge Base for relevant articles.
 
 ### <span id="ddk_example_5_monitor_a_terminal_server_session_tools"></span><span id="DDK_EXAMPLE_5_MONITOR_A_TERMINAL_SERVER_SESSION_TOOLS"></span>Example 5: Monitor a Terminal Server Session
 

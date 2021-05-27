@@ -1,7 +1,6 @@
 ---
 title: storagekd.storadapter
 description: The storagekd.storadapter extension displays information about the specified Storport adapter.
-ms.assetid: E7EBC2F7-676A-4DD9-ADAA-5C240299013C
 keywords: ["storagekd.storadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,8 +44,7 @@ Specifies the address of a Storport adapter device object. If *Address* is omitt
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storadapter** display:
 

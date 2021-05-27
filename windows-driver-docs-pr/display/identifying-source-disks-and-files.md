@@ -1,7 +1,6 @@
 ---
 title: Identifying Source Disks and Files
 description: Identifying Source Disks and Files
-ms.assetid: 0eb8fe7f-1e44-4f3d-8567-31a2cd659805
 keywords:
 - INF files WDK display , identifying source disks or files
 - source disks WDK display
@@ -26,13 +25,7 @@ UserModeDriverName1.dll  = 3426
 UserModeDriverName2.dll  = 3426
 ```
 
-For more information about the **SourceDisksNames** and **SourceDisksFiles** sections, see [**INF SourceDisksNames Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section) and [**INF SourceDisksFiles Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section).
+For more information about the **SourceDisksNames** and **SourceDisksFiles** sections, see [**INF SourceDisksNames Section**](../install/inf-sourcedisksnames-section.md) and [**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md).
 
  
-
- 
-
-
-
-
 

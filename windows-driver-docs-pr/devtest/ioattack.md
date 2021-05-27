@@ -1,7 +1,6 @@
 ---
 title: IoAttack
 description: The Penetration Tests (Device Fundamentals) test, Run I/O Attack, performs the fuzz tests
-ms.assetid: ae0eda5c-534e-44c2-a997-66fe1337ca9f
 ms.date: 07/10/2018
 ms.localizationpriority: medium
 ---
@@ -13,17 +12,17 @@ ms.localizationpriority: medium
 >
 > As an alternative to these tools, consider using the fuzzing tests available in the HLK. Here are a few to consider.
 > 
-> [DF - Fuzz random IOCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/236b8ad5-0ba1-4075-80a6-ae9dafb71c94)
+> [DF - Fuzz random IOCTL test (Reliability)](/windows-hardware/test/hlk/testref/236b8ad5-0ba1-4075-80a6-ae9dafb71c94)
 >
-> [DF - Fuzz sub-opens test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80)
+> [DF - Fuzz sub-opens test (Reliability)](/windows-hardware/test/hlk/testref/92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80)
 >
-> [DF - Fuzz zero length buffer FSCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/5f5f6c7e-d5db-4ff1-8cee-da47203ab070)
+> [DF - Fuzz zero length buffer FSCTL test (Reliability)](/windows-hardware/test/hlk/testref/5f5f6c7e-d5db-4ff1-8cee-da47203ab070)
 >
-> [DF - Fuzz random FSCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/e529e34e-076a-4978-926f-7eca333e8f4d)
+> [DF - Fuzz random FSCTL test (Reliability)](/windows-hardware/test/hlk/testref/e529e34e-076a-4978-926f-7eca333e8f4d)
 >
-> [DF - Fuzz Misc API test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/fb305d04-6e8c-4dfc-9984-9692df82fbd8)
+> [DF - Fuzz Misc API test (Reliability)](/windows-hardware/test/hlk/testref/fb305d04-6e8c-4dfc-9984-9692df82fbd8)
 >
-> You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
+> You can also use the [Kernel synchronization delay fuzzing](./kernel-synchronization-delay-fuzzing.md) that is included with Driver Verifier.
 >
 
 
@@ -31,9 +30,9 @@ The [Penetration Tests (Device Fundamentals)](penetration-tests--device-fundamen
 
 Before running IoAttack on a test system, you must do the following:
 
--   Enable kernel-mode debugging on the test computer. This is done when you configure a computer for testing, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)).
+-   Enable kernel-mode debugging on the test computer. This is done when you configure a computer for testing, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), or [Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85)).
 
--   Run the **Enable Driver Verifier test** to enable [Driver Verifier](driver-verifier.md) options on all of the drivers in the driver stack for the devices to be tested. In particular, you should enable the [Special Pool](special-pool.md) option. In the **Add or Remove Driver Tests** dialog box, the **Enable Driver Verifier test** is under All Tests\\Driver Verifier. See [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers). For information about selecting and configuring tests and tool parameters, see [How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)
+-   Run the **Enable Driver Verifier test** to enable [Driver Verifier](driver-verifier.md) options on all of the drivers in the driver stack for the devices to be tested. In particular, you should enable the [Special Pool](special-pool.md) option. In the **Add or Remove Driver Tests** dialog box, the **Enable Driver Verifier test** is under All Tests\\Driver Verifier. See [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers). For information about selecting and configuring tests and tool parameters, see [How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
 
 -   Remove [IoSpy](iospy.md) from the test system. To do this, run the **Disable I/O Spy** test.
 
@@ -42,10 +41,4 @@ If any of these steps have been performed, you must reboot the test system befor
 For more information about how to run fuzz tests, see [How to Perform Fuzz tests with IoSpy and IoAttack](how-to-perform-fuzz-tests-with-iospy-and-ioattack.md).
 
  
-
- 
-
-
-
-
 

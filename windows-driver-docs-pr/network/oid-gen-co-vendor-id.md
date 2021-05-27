@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_VENDOR_ID
 description: This topic describes the OID_GEN_CO_VENDOR_ID object identifier (OID).
-ms.assetid: ec8d47e4-0b2f-4ca8-9227-330030a2ede5
 keywords:
 - OID_GEN_CO_VENDOR_ID
 ms.date: 11/02/2017
@@ -18,8 +17,6 @@ Vendors without an IEEE-registered code should use the value 0xFFFFFF.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

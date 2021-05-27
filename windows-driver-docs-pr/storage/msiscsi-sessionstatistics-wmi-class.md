@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_SessionStatistics WMI Class
 description: MSiSCSI\_SessionStatistics WMI Class
-ms.assetid: fc9afa1b-dad3-4f3d-9fe2-e37d402f7bef
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -93,7 +92,7 @@ class MSiSCSI_SessionStatistics : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_SessionStatistics**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_sessionstatistics) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_SessionStatistics**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_sessionstatistics) data structure.
 
 Initiators must register the MSiSCSI\_SessionStatistics class with the following dynamic instance name for the session:
 
@@ -104,10 +103,4 @@ targetname_#
 The number sign (\#) is the value in the **USID** member of this class.
 
  
-
- 
-
-
-
-
 

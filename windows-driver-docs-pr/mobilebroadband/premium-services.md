@@ -1,7 +1,6 @@
 ---
 title: Premium services
 description: Premium services
-ms.assetid: 23c68c28-686c-4396-ac07-21d3c2bcca1c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,14 +15,7 @@ You can use your mobile broadband app to let users discover and consume addition
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
+[Mobile broadband app scenarios](./account-management.md)
 
  
-
- 
-
-
-
-
-
 

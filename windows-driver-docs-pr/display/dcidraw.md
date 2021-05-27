@@ -1,7 +1,6 @@
 ---
 title: DCIDraw
 description: DCIDraw
-ms.assetid: 212d86bd-0782-4c21-8a63-937070fd1e24
 keywords: ["DCIDraw Display Devices"]
 topic_type:
 - apiref

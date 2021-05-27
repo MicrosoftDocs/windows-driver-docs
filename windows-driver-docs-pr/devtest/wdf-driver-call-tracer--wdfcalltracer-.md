@@ -1,7 +1,6 @@
 ---
 title: WDF Driver Call Tracer (WdfCallTracer)
 description: WDF Driver Call Tracer (WdfCallTracer)
-ms.assetid: 67ad4b5e-9117-435e-bd81-90069a806d3c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

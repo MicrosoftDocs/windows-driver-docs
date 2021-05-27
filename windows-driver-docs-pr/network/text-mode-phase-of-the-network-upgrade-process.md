@@ -1,7 +1,6 @@
 ---
 title: Text Mode Phase of the Network Upgrade Process
 description: Text Mode Phase of the Network Upgrade Process
-ms.assetid: 4878e0ae-194a-459c-bebf-75259b1eed2d
 keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases

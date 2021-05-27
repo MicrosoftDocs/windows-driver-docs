@@ -1,7 +1,6 @@
 ---
 title: V4 Driver Setup Concepts
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
-ms.assetid: C1DF5496-14CF-4BF4-B85C-AF1A691C7AF2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -28,7 +27,7 @@ For example: 1284\_CID\_FA\_PCL5e\_Laser
 
 If CompatibleIDs are already implemented in existing devices, the print driver should continue to use those CompatibleIDs.
 
-CompatibleIDs are not used in the installation of TCP/IP-based print devices. As a result, users will need to identify an appropriate driver using only the name of the driver. Where print class drivers are concerned, we recommend that manufacturers provide compatibility lists on their web sites for any devices that are supported by a print class driver. For more information about how to implement CompatibleIDs in your hardware, including a full list of rules and restrictions, see [How to Implement Compatible IDs in Printing Devices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613942(v=vs.85)).
+CompatibleIDs are not used in the installation of TCP/IP-based print devices. As a result, users will need to identify an appropriate driver using only the name of the driver. Where print class drivers are concerned, we recommend that manufacturers provide compatibility lists on their web sites for any devices that are supported by a print class driver. For more information about how to implement CompatibleIDs in your hardware, including a full list of rules and restrictions, see [How to Implement Compatible IDs in Printing Devices](/previous-versions/windows/hardware/design/dn613942(v=vs.85)).
 
 Microsoft supports a few standard CompatibleIDs in order to support several manufacturer-neutral (standard) print class drivers. The following table shows these standard CompatibleIDs and their associated PDL file types.
 
@@ -132,7 +131,7 @@ c. Solution \#2 – The PnP devnode is extraneous: The setup program removes the
 
 **Driver Ranking**. The introduction of v4 print drivers does not modify the Plug and Play ranking behavior. When a device is plugged in, the available driver with the highest score will be selected. If the selected driver is a print class driver, and there is a better ranked, matching driver on the Windows Update site, then the selected driver will automatically be replaced the next time the user downloads updates for Windows.
 
-For more information about driver ranking, see [How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-).
+For more information about driver ranking, see [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md).
 
 ## Driver Setup Best Practices
 
@@ -176,9 +175,6 @@ c. CompatibleID lines: "Print Class Driver name" = INSTALL\_SECTION,,1284\_CID\_
 2. Print class driver INFs must not define any bus enumerators (for example, WSDPRINT\)
 
 ## Related topics
-[How to Implement Compatible IDs in Printing Devices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613942(v=vs.85))  
-[How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)  
-[Port Monitor MIB (PWG 5107.1-2005)](https://www.pwg.org/standards.html)  
-
-
-
+[How to Implement Compatible IDs in Printing Devices](/previous-versions/windows/hardware/design/dn613942(v=vs.85))  
+[How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md)  
+[Port Monitor MIB (PWG 5107.1-2005)](https://www.pwg.org/standards.html)

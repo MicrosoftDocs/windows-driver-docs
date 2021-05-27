@@ -1,7 +1,6 @@
 ---
 title: Using IRP Completion Routines
 description: Using IRP Completion Routines
-ms.assetid: 82b9ba2b-17db-40e5-be3f-fd77cd986781
 keywords:
 - filter drivers WDK file system , IRP completion routines
 - file system filter drivers WDK , IRP completion routines
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 # Using IRP Completion Routines
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-File system filter drivers use completion routines that are similar to those used by device drivers. A *completion routine* performs completion processing on an IRP. Any driver routine that passes an IRP down to the next-lower-level driver can optionally register a completion routine for the IRP by calling [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) before calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+File system filter drivers use completion routines that are similar to those used by device drivers. A *completion routine* performs completion processing on an IRP. Any driver routine that passes an IRP down to the next-lower-level driver can optionally register a completion routine for the IRP by calling [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) before calling [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 Every IRP completion routine is defined as follows:
 
@@ -33,7 +32,7 @@ NTSTATUS
 
 Completion routines are called at IRQL <= DISPATCH_LEVEL, in an arbitrary thread context.
 
-Because they can be called at IRQL DISPATCH_LEVEL, completion routines cannot call kernel-mode routines that must be called at a lower IRQL, such as [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice). For the same reason, any data structures that are used in a completion routine must be allocated from nonpaged pool.
+Because they can be called at IRQL DISPATCH_LEVEL, completion routines cannot call kernel-mode routines that must be called at a lower IRQL, such as [**IoDeleteDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice). For the same reason, any data structures that are used in a completion routine must be allocated from nonpaged pool.
 
 This section discusses the following topics:
 

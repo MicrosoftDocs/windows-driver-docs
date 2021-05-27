@@ -1,7 +1,6 @@
 ---
 title: GetActiveJobsRequest element
 description: The required GetActiveJobsRequest element requests a summary of all currently active jobs in the scan device.
-ms.assetid: 4dc7bc64-b62f-4634-8f0e-64039b9f8609
 keywords: ["GetActiveJobsRequest element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,15 +17,13 @@ ms.localizationpriority: medium
 
 The required **GetActiveJobsRequest** element requests a summary of all currently active jobs in the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetActiveJobsRequest/>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -40,8 +37,7 @@ There are no child elements.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetActiveJobsRequest** operation.
 
@@ -49,8 +45,7 @@ A client calls **GetActiveJobsRequest** to retrieve a list that contains a summa
 
 This operation can return all of the [**common WSD Scan Service operation error codes**](common-wsd-scan-service-operation-error-codes.md). For more information about how to report errors, see [WSD Scan Service Operation Error Reporting](wsd-scan-service-operation-error-reporting.md).
 
-Examples
---------
+## Examples
 
 The following code example shows a request for all active scan jobs.
 

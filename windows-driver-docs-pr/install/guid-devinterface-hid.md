@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_HID
 description: GUID_DEVINTERFACE_HID
-ms.assetid: af2ebdaf-b7e9-4f79-abb6-60f1fb954b55
 keywords: ["GUID_DEVINTERFACE_HID Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_HID
 
 
-The GUID_DEVINTERFACE_HID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [HID collections](https://docs.microsoft.com/windows-hardware/drivers/hid/hid-collections).
+The GUID_DEVINTERFACE_HID [device interface class](./overview-of-device-interface-classes.md) is defined for [HID collections](../hid/hid-collections.md).
 
 <table>
 <colgroup>
@@ -45,12 +44,11 @@ The GUID_DEVINTERFACE_HID [device interface class](https://docs.microsoft.com/wi
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for HID collections register instances of this device interface class to notify the operating system and applications of the presence of HID collections.
 
-The system-supplied [HID class driver](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)) registers an instance of this device interface class for a HID collection. For example, the HID class driver registers an interface for a USB keyboard or mouse device. Access a HID collection by using the I/O interface supported by the HID class driver.
+The system-supplied [HID class driver](../hid/hid-architecture.md) registers an instance of this device interface class for a HID collection. For example, the HID class driver registers an interface for a USB keyboard or mouse device. Access a HID collection by using the I/O interface supported by the HID class driver.
 
 For information about HID devices and drivers, see [HIDClass Devices](../hid/binding-minidrivers-to-the-hid-class.md).
 
@@ -60,8 +58,7 @@ For information about the device interface class for mouse devices, see [**GUID_
 
 The [**GUID_CLASS_INPUT**](guid-class-input.md) is an obsolete identifier for this device interface class; use GUID_DEVINTERFACE_HID instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,11 +83,4 @@ Requirements
 [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md)
 
  
-
- 
-
-
-
-
-
 

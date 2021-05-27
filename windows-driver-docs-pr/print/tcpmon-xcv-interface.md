@@ -1,7 +1,6 @@
 ---
 title: TCPMON Xcv Interface
 description: TCPMON Xcv Interface
-ms.assetid: 7b2b1cff-ab8f-44e0-9327-dc60a0072bf5
 keywords:
 - print monitors WDK , TCPMON Xcv
 - transceive (Xcv) interface WDK print
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) and [**XcvDataPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvdataport) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.
+This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](/previous-versions/ff564255(v=vs.85)) and [**XcvDataPort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvdataport) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.
 
 To obtain a handle to an Xcv interface for either a local machine or a remote machine, call the **OpenPrinter** function (described in the Microsoft Windows SDK documentation). The following code example illustrates how to obtain an Xcv handle to a port:
 
@@ -38,7 +37,7 @@ if (OpenPrinter("<ServerName>\\,XcvPort <PortName>", &hXcv, &Defaults )
 }
 ```
 
-In the code example, *ServerName* and *PortName* represent server and port name strings. Once you have obtained the handle, you can query information that is specific to the TCPMON port monitor, or you can change the port configuration. Note that the access you require for the port monitor must be specified in the **DesiredAccess** member of the PRINTER\_DEFAULTS structure (or pass **NULL** if no special security is required). For certain calls to the [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) function (such as when the AddPort and DeletePort commands are specified -- see [TCPMON Xcv Commands](tcpmon-xcv-commands.md)), SERVER\_ACCESS\_ADMINISTER privilege is required. For details about the **OpenPrinter** function and the access rights that may be requested in the PRINTER\_DEFAULTS structure, see the Windows SDK documentation.
+In the code example, *ServerName* and *PortName* represent server and port name strings. Once you have obtained the handle, you can query information that is specific to the TCPMON port monitor, or you can change the port configuration. Note that the access you require for the port monitor must be specified in the **DesiredAccess** member of the PRINTER\_DEFAULTS structure (or pass **NULL** if no special security is required). For certain calls to the [**XcvData**](/previous-versions/ff564255(v=vs.85)) function (such as when the AddPort and DeletePort commands are specified -- see [TCPMON Xcv Commands](tcpmon-xcv-commands.md)), SERVER\_ACCESS\_ADMINISTER privilege is required. For details about the **OpenPrinter** function and the access rights that may be requested in the PRINTER\_DEFAULTS structure, see the Windows SDK documentation.
 
 If the port does not yet exist, the Xcv handle can be obtained from the server by specifying the monitor name. (In the case of the standard TCP/IP port monitor port, this is "Standard TCP/IP Port".) The following code example illustrates how to obtain an Xcv data handle to a port monitor:
 
@@ -60,7 +59,7 @@ if (OpenPrinter("<ServerName>\\,XcvMonitor <MonitorName>", &hXcv, &Defaults )
 }
 ```
 
-In the code example, *ServerName* and *PortName* represent server and port name strings. Once you have obtained the Xcv data handle, you can issue instructions and requests to the monitor by calling the [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) function.
+In the code example, *ServerName* and *PortName* represent server and port name strings. Once you have obtained the Xcv data handle, you can issue instructions and requests to the monitor by calling the [**XcvData**](/previous-versions/ff564255(v=vs.85)) function.
 
 Note that the return value from the **XcvData** function indicates only whether the data was correctly sent to the port monitor. A return value of **TRUE** does not indicate that the operation was successful. To determine whether the operation was successful, inspect the value in \**pdwStatus*. These status values are summarized in the following table:
 
@@ -113,9 +112,4 @@ Note that the return value from the **XcvData** function indicates only whether 
  
 
  
-
- 
-
-
-
 

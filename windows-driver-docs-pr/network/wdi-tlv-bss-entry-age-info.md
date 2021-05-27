@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_AGE_INFO
 description: WDI_TLV_BSS_ENTRY_AGE_INFO is a TLV that contains age information for a BSS entry.
-ms.assetid: 3D0DC599-2A66-45E9-B02C-32291A028139
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_AGE_INFO Network Drivers Starting with Windows Vista
@@ -40,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <tbody>
 <tr class="odd">
 <td>UINT64</td>
-<td>Timestamp of when this BSS entry was most recently discovered. The timestamp should be obtained with <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetcurrentsystemtime" data-raw-source="[&lt;strong&gt;NdisGetCurrentSystemTime&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetcurrentsystemtime)"><strong>NdisGetCurrentSystemTime</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime" data-raw-source="[&lt;strong&gt;KeQuerySystemTime&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime)"><strong>KeQuerySystemTime</strong></a>.</td>
+<td>Timestamp of when this BSS entry was most recently discovered. The timestamp should be obtained with <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetcurrentsystemtime" data-raw-source="[&lt;strong&gt;NdisGetCurrentSystemTime&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetcurrentsystemtime)"><strong>NdisGetCurrentSystemTime</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime" data-raw-source="[&lt;strong&gt;KeQuerySystemTime&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime)"><strong>KeQuerySystemTime</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>UINT8</td>
@@ -52,8 +51,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,11 +73,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

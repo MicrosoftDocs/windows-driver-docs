@@ -1,7 +1,6 @@
 ---
 title: requestClose element
 description: The optional requestClose element is used to close an event notification message on the client computer.
-ms.assetid: b2f21ab2-9205-483c-9f56-1c877edb7da2
 keywords: ["requestClose element Print Devices"]
 topic_type:
 - apiref
@@ -17,7 +16,13 @@ ms.localizationpriority: medium
 
 The optional **requestClose** element is used to close an event notification message on the client computer.
 
-The **requestClose** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **requestClose** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

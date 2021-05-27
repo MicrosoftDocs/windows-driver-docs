@@ -1,7 +1,6 @@
 ---
 title: Implementation Overview
 description: This topic is an overview of the implementation key points that you must be aware of, when you develop a driver for an audio adapter that is capable of processing hardware-offloaded audio streams.
-ms.assetid: B93B9A6D-7317-482B-A0B8-298CE8F21193
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ As you can see in the preceding figure, a KS-filter topology represents the data
 For more information about the pins in this new type of KS-filter topology, see [Architectural Overview](architectural-overview.md).
 The actual service in the user mode audio system that "leads" to the discovery of the audio adapter and its driver, is the AudioEndpointBuilder. The AudioEndpointBuilder service monitors the **KSCATEGORY\_AUDIO** class for device interface arrivals and removals. When an audio device driver registers a new instance of the **KSCATEGORY\_AUDIO** device interface class, a device interface arrival notification is fired off. The AudioEndpointBuilder service detects the device interface arrival notification and uses an algorithm to examine the topology of the audio devices in the system so that it can take appropriate action.
 
-So when you develop your audio driver to support an adapter that is capable of processing offloaded-audio, your driver must use the newly-defined [**KSNODETYPE\_AUDIO\_ENGINE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-audio-engine) audio endpoint to expose the capabilities of the hardware audio engine. For more information about the audio endpoint discovery process, see [Audio Endpoint Builder Algorithm](audio-endpoint-builder-algorithm.md).
+So when you develop your audio driver to support an adapter that is capable of processing offloaded-audio, your driver must use the newly-defined [**KSNODETYPE\_AUDIO\_ENGINE**](./ksnodetype-audio-engine.md) audio endpoint to expose the capabilities of the hardware audio engine. For more information about the audio endpoint discovery process, see [Audio Endpoint Builder Algorithm](audio-endpoint-builder-algorithm.md).
 
 ## <span id="User_Interface_Considerations"></span><span id="user_interface_considerations"></span><span id="USER_INTERFACE_CONSIDERATIONS"></span>User Interface Considerations
 
@@ -50,9 +49,4 @@ If a UWP app streams media content and uses Media Foundation, Media Engine, or t
 UWP apps that use WASAPI or streaming communications have to explicitly opt-in for hardware offloading.
 
  
-
- 
-
-
-
 

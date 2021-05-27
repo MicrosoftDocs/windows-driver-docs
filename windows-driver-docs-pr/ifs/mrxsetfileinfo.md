@@ -1,7 +1,6 @@
 ---
 title: MRxSetFileInfo routine
 description: The MRxSetFileInfo routine is called by RDBSS to request that a network mini-redirector set file information on a file system object.
-ms.assetid: 4fd8cdc4-2973-4a91-b773-c84cf6f64f70
 keywords: ["MRxSetFileInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.localizationpriority: medium
 # MRxSetFileInfo routine
 
 
-The *MRxSetFileInfo* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector set file information on a file system object.
+The *MRxSetFileInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set file information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetFileInfo;
@@ -32,14 +30,12 @@ NTSTATUS MRxSetFileInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetFileInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -96,8 +92,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetFileInfo* in response to receiving an [**IRP\_MJ\_SET\_INFORMATION**](irp-mj-set-information.md) request.
 
@@ -109,8 +104,7 @@ The **Info.Buffer** member is set to **Irp-&gt;AssociatedIrp.SystemBuffer**.
 
 The **Info.Length** member is set to **IrpSp-&gt;Parameters.SetFile.Length**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -132,7 +126,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -157,11 +151,4 @@ Requirements
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
  
-
- 
-
-
-
-
-
 

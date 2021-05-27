@@ -1,5 +1,5 @@
 ---
-Description: Functional-Category Retrieval
+description: Functional-Category Retrieval
 title: Functional-Category Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium

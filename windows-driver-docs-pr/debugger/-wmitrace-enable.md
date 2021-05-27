@@ -1,7 +1,6 @@
 ---
 title: wmitrace.enable
 description: The wmitrace.enable extension enables a provider for the specified Event Tracing for Windows (ETW) trace session.
-ms.assetid: 5a27fa00-7d52-43f7-84f4-82c5b5af1c06
 keywords: ["wmitrace.enable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ This extension is available in Windows 7 and later versions of Windows.
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 After using this extension, you must resume program execution (for example, by using the [**g (Go)**](g--go-.md) command) in order for it to take effect. After a brief time, the target computer automatically breaks into the debugger again.
 

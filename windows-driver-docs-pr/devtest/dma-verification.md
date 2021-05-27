@@ -1,7 +1,6 @@
 ---
 title: DMA Verification
 description: DMA Verification
-ms.assetid: ffcb718a-63f5-49ff-9d36-67b2aa59761f
 keywords:
 - DMA Verification feature WDK Driver Verifier
 - HAL Verification WDK Driver Verifier
@@ -97,9 +96,9 @@ When DMA Verification is active, Driver Verifier detects misuses of DMA routines
 
 -   Attempting to map a zero-length buffer for transfer.
 
--   Calling the obsolete function [**HalGetAdapter**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) (all drivers must use [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter) instead).
+-   Calling the obsolete function [**HalGetAdapter**](/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) (all drivers must use [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter) instead).
 
-Driver Verifier monitors the driver's behavior and issues bug check 0xE6 if any of these violations occur. See [**Bug Check 0xE6**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xe6--driver-verifier-dma-violation) (DRIVER\_VERIFIER\_DMA\_VIOLATION) for a list of the bug check parameters.
+Driver Verifier monitors the driver's behavior and issues bug check 0xE6 if any of these violations occur. See [**Bug Check 0xE6**](../debugger/bug-check-0xe6--driver-verifier-dma-violation.md) (DRIVER\_VERIFIER\_DMA\_VIOLATION) for a list of the bug check parameters.
 
 ### <span id="when_is_dma_verification_useful_"></span><span id="WHEN_IS_DMA_VERIFICATION_USEFUL_"></span>When is DMA Verification Useful?
 
@@ -111,7 +110,7 @@ DMA Verification can also be an effective way to detect memory corruption, since
 
 ### <span id="monitoring_dma_verification"></span><span id="MONITORING_DMA_VERIFICATION"></span>Monitoring DMA Verification
 
-The kernel debugger extension **!dma** can be used to display a wealth of DMA information. It can display various details about the behavior of each DMA adapter. There is a detailed example of the **!dma** extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.
+The kernel debugger extension **!dma** can be used to display a wealth of DMA information. It can display various details about the behavior of each DMA adapter. There is a detailed example of the **!dma** extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -151,10 +150,4 @@ You can activate the DMA Verification feature for one or more drivers by using D
     The DMA Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
  
-
- 
-
-
-
-
 

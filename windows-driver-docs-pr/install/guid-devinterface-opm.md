@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_OPM
 description: GUID_DEVINTERFACE_OPM
-ms.assetid: bd999b09-d531-4b89-a306-83e1ca7cac64
 keywords: ["GUID_DEVINTERFACE_OPM Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_OPM
 
 
-The GUID_DEVINTERFACE_OPM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://docs.microsoft.com/windows-hardware/drivers/display/windows-vista-display-driver-model-design-guide) and support output protection management (OPM) for monitor child devices.
+The GUID_DEVINTERFACE_OPM [device interface class](./overview-of-device-interface-classes.md) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](../display/windows-vista-display-driver-model-design-guide.md) and support output protection management (OPM) for monitor child devices.
 
 <table>
 <colgroup>
@@ -45,17 +44,15 @@ The GUID_DEVINTERFACE_OPM [device interface class](https://docs.microsoft.com/wi
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of OPM device interfaces.
 
-If a display miniport driver supports a direct-call OPM interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_OPM to specify the interface type.
+If a display miniport driver supports a direct-call OPM interface for this [device setup class](./overview-of-device-setup-classes.md), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_OPM to specify the interface type.
 
-For information about OPM, see [Supporting Output Protection Manager](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-output-protection-manager).
+For information about OPM, see [Supporting Output Protection Manager](../display/supporting-output-protection-manager.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,10 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

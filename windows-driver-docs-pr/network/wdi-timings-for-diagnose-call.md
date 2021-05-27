@@ -1,7 +1,6 @@
 ---
 title: Timings for diagnose call
 description: The timing requirements of Diagnose to collect debug information are as follows.
-ms.assetid: A21687FE-1398-4722-89E3-BFB511AA48E3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,16 +17,9 @@ At the level of **DiagnoseLevelFirmwareImageDump** or **DiagnoseLevelDriverState
 ## Related topics
 
 
-[**eDiagnoseLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-ediagnoselevel)
+[**eDiagnoseLevel**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-ediagnoselevel)
 
-[*MiniportWdiAdapterHangDiagnose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose)
-
- 
+[*MiniportWdiAdapterHangDiagnose*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose)
 
  
-
-
-
-
-
 

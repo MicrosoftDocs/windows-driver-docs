@@ -1,7 +1,6 @@
 ---
 title: Installing Legacy COM Ports
 description: Installing Legacy COM Ports
-ms.assetid: 9cf2a22c-fb4e-4f15-8410-021d2b4f2ce1
 keywords:
 - legacy COM ports WDK serial devices
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ Serial detects the presence of legacy ports by reading corresponding COM port su
 
 When Serial is loaded it determines which legacy ports were not previously detected by checking the **LegacyDiscovered** entry value for a legacy port. If this entry value does not exist or is zero, Serial performs the following tasks:
 
-1. Calls [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice) to report the device to the Plug and Play manager.
+1. Calls [**IoReportDetectedDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice) to report the device to the Plug and Play manager.
 
 2. Sets the **LegacyDiscovered** entry value for the port to 0x00000001, which indicates that the port has been reported.
 
@@ -26,5 +25,4 @@ When Serial is loaded it determines which legacy ports were not previously detec
 
 The **IoReportDetectedDevice** call marks the port as a root-enumerated device. On subsequent system boots, the Plug and Play manager automatically configures the device based on the information in its INF file.
 
-The Plug and Play manager creates the following [compatible IDs](https://docs.microsoft.com/windows-hardware/drivers/install/compatible-ids) for a legacy COM port: DETECTEDInternal\\Serial and DETECTED\\Serial.
-
+The Plug and Play manager creates the following [compatible IDs](../install/compatible-ids.md) for a legacy COM port: DETECTEDInternal\\Serial and DETECTED\\Serial.

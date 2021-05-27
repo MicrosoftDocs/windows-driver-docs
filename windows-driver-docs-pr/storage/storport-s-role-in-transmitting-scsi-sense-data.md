@@ -1,7 +1,6 @@
 ---
 title: Storport's Role in Transmitting SCSI Sense Data
 description: Storport's Role in Transmitting SCSI Sense Data
-ms.assetid: 18f2f4e0-f49b-4026-b18f-26b413f05970
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

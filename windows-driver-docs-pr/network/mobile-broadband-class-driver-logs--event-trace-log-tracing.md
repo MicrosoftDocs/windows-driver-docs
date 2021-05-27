@@ -1,7 +1,6 @@
 ---
 title: Mobile Broadband Class Driver Logs Event Trace Log Tracing
 description: This topic provides information to help engineers work with the Mobile Broadband Class Driver event trace logs to review and troubleshoot issues.
-ms.assetid: 9742BFCA-CC22-497A-B11F-D3E89F0B4FE6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

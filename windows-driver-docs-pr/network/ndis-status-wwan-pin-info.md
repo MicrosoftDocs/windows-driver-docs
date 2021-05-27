@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_PIN_INFO
 description: Miniport drivers use the NDIS_STATUS_WWAN_PIN_INFO notification to respond to OID query and set requests of OID_WWAN_PIN. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS_WWAN_PIN_INFO structure.
-ms.assetid: fa3c2467-2240-423b-b91b-f7e19d5be353
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_PIN_INFO Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to respond t
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_PIN\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure.
+This notification uses the [**NDIS\_WWAN\_PIN\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers should return information about the Personal Identity Number (PIN) that the MB device currently expects in response to a query request. Miniport drivers should return the status notification filled in as described in sections below in response to a set request.
 
@@ -80,8 +78,7 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
 -   If there is an active PDP context at the time of PIN1 blocking, miniport drivers must deactivate the PDP context and send notifications to the operating system about the PDP deactivation and link state change.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -108,9 +105,4 @@ Requirements
 [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md)
 
  
-
- 
-
-
-
 

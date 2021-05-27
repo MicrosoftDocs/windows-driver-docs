@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbtt
 description: The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure.
-ms.assetid: 4D599BCE-C6C3-42B3-BDCE-EE9E47FA6AB7
 keywords: ["usbkd.usbtt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of a **usbport!\_TRANSACTION\_TRANSLATOR** structure. To get the transac
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_TRANSACTION\_TRANSLATOR** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -47,21 +45,14 @@ Here is one way to find the address of a **usbport!\_TRANSACTION\_TRANSLATOR** s
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext) to get the address of `GlobalTtListHead`. Pass that address to [**!usbkd.usblist**](-usbkd-usblist.md), which will display addresses of **\_TRANSACTION\_TRANSLATOR** structures.
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](-usbkd-usbhcdext.md) to get the address of `GlobalTtListHead`. Pass that address to [**!usbkd.usblist**](-usbkd-usblist.md), which will display addresses of **\_TRANSACTION\_TRANSLATOR** structures.
 
 ## <span id="see_also"></span>See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WdfObjectIsCustomType macro
 description: The WdfObjectIsCustomType macro determines whether a framework object is of a specified custom type.
-ms.assetid: EE3CC41D-6FBA-49A2-A2A0-C7E818F6FAAA
 keywords:
  - WdfObjectIsCustomType macro
 ms.date: 08/23/2017
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectIsCustomType** macro determines whether a framework object is of a specified custom type.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 BOOLEAN WdfObjectIsCustomType(
@@ -25,8 +23,7 @@ BOOLEAN WdfObjectIsCustomType(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
@@ -34,18 +31,15 @@ A handle to a framework object.
 *Type* \[in\]  
 The symbol name of a custom type.
 
-Return value
-------------
+## Return value
 
 Returns TRUE if the specified object is of the specified custom type. Otherwise, returns FALSE.
 
-Remarks
--------
+## Remarks
 
-For more information about object custom types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
+For more information about object custom types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,11 +78,4 @@ Requirements
 [**WdfObjectGetCustomTypeData**](wdfobjectgetcustomtypedata.md)
 
  
-
- 
-
-
-
-
-
 

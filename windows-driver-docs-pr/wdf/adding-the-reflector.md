@@ -1,7 +1,6 @@
 ---
 title: Specifying the Reflector in an INF File
 description: Specifying the Reflector in an INF File
-ms.assetid: 3676c99d-4e13-4385-910a-251232b00d4c
 keywords:
 - reflectors WDK UMDF
 - AddService
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Specifying the Reflector in an INF File
 
 
-To add the reflector (WUDFRd.sys) to the kernel-mode device stack, the INF file of a UMDF driver must include an [**AddService directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) in an [**INF DDInstall.Services section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-services-section). The reflector can be an upper filter, a lower filter, or the service for the device, depending on the configuration of the user-mode stack.
+To add the reflector (WUDFRd.sys) to the kernel-mode device stack, the INF file of a UMDF driver must include an [**AddService directive**](../install/inf-addservice-directive.md) in an [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md). The reflector can be an upper filter, a lower filter, or the service for the device, depending on the configuration of the user-mode stack.
 
 The following code example shows how the INF file for a UMDF function driver might add the reflector.
 
@@ -27,7 +26,7 @@ AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
 
 In this example, the driver specifies the 0x2 (SPSVCINST\_ASSOCSERVICE) flag (ORed into the *flags* parameter above) to assign the reflector as the function driver in the kernel-mode device stack.
 
-The **AddService** directive also sets the 0x000001f8 flags to prevent overwriting any preexisting configuration for the service. For more information about these flags, see the *flags* parameter of the [**AddService directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive).
+The **AddService** directive also sets the 0x000001f8 flags to prevent overwriting any preexisting configuration for the service. For more information about these flags, see the *flags* parameter of the [**AddService directive**](../install/inf-addservice-directive.md).
 
 The following code example, taken from the WUDFVhidmini sample, shows an **AddService** directive for a UMDF filter driver.
 
@@ -96,10 +95,4 @@ UMDF drivers cannot specify a unique service name for the reflector on operating
 If the reflector is not added, UMDF is never loaded. The device might start, but the host process is not present and the device will not operate properly.
 
  
-
- 
-
-
-
-
 

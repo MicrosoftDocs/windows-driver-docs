@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_XEXTENT
 description: The WIA\_IPS\_XEXTENT property contains the current width, in pixels, of a selected image to acquire.
-ms.assetid: 00e8f705-5c2a-40ac-8635-b21a5d3315a3
 keywords: ["WIA_IPS_XEXTENT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_XEXTENT property to mark the upper-left corner (that is, the width) of the selection area to acquire. The minidriver creates and maintains this property.
 
@@ -46,8 +44,7 @@ A driver must also to update the WIA\_IPS\_XEXTENT, WIA\_IPS\_XPOS, WIA\_IPS\_YE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DITHER\_SELECT
 description: The WIA\_DPS\_DITHER\_SELECT property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: a7153d11-2c1e-495c-aa2a-af66df6c80c8
 keywords: ["WIA_DPS_DITHER_SELECT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

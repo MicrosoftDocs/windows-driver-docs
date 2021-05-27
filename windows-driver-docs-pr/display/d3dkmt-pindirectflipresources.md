@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_PINDIRECTFLIPRESOURCES structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: c5c79876-a9b5-44fa-9545-3995118520d0
+description: Learn about the D3DKMT\_PINDIRECTFLIPRESOURCES structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_PINDIRECTFLIPRESOURCES structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_PINDIRECTFLIPRESOURCES {
@@ -31,8 +29,7 @@ typedef struct _D3DKMT_PINDIRECTFLIPRESOURCES {
 } D3DKMT_PINDIRECTFLIPRESOURCES;
 ```
 
-Members
--------
+## Members
 
 **hDevice**
 
@@ -40,8 +37,7 @@ Members
 
 **pResourceList**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

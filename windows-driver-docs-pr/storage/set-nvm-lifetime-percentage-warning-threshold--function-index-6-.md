@@ -1,7 +1,6 @@
 ---
 title: Set NVM Lifetime Percentage Warning Threshold (Function Index 6)
 description: This function sets the warning threshold for remaining non-volatile memory lifetime percentage.
-ms.assetid: B5568876-D9E1-4086-8819-FC5FF6BC2C15
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function sets the warning threshold for remaining non-volatile memory lifetime percentage.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

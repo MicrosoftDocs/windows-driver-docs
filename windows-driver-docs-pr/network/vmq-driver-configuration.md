@@ -1,7 +1,6 @@
 ---
 title: VMQ Driver Configuration
 description: VMQ Driver Configuration
-ms.assetid: 69133958-fbc0-4bae-9ca1-56e8152db500
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

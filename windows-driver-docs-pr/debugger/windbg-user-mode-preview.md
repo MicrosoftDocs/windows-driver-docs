@@ -38,7 +38,7 @@ Specify the following options:
 - Enable Debug child process
 - Record with Time Travel Debugging
 
-![Launch Executable (advanced) dialog box with advanced options](images/windbgx-launch-executable-advanced.png)
+![Screenshot that shows the Launch Executable (advanced) dialog box with advanced options.](images/windbgx-launch-executable-advanced.png)
 
 ## Attach to a process
 

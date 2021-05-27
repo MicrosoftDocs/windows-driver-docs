@@ -4,7 +4,6 @@ description: Returns a value of '1' to inform USBMon that the method call failed
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: EEFDB8CA-5B6F-46E5-B181-074354E8B0EE
 keywords: ["Failure method Print Devices", "Failure method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , Failure method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Returns a value of '1' to inform USBMon that the method call failed.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Failure(
@@ -29,24 +27,20 @@ HRESULT Failure(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *value* \[out, retval\]  
 Value that indicates a failed method call.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **Failure** is a read-only method. When USBMon receives this failure value, it cleans up the Job Context object and returns an error code to the print spooler.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

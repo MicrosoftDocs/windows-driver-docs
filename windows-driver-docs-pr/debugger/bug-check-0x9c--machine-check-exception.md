@@ -1,9 +1,8 @@
 ---
 title: Bug Check 0x9C MACHINE_CHECK_EXCEPTION
 description: The MACHINE_CHECK_EXCEPTION bug check has a value of 0x0000009C. This bug check indicates that a fatal machine check exception has occurred.
-ms.assetid: b8945dba-c515-4a30-a36c-ef4feaadabbe
 keywords: ["Bug Check 0x9C MACHINE_CHECK_EXCEPTION", "MACHINE_CHECK_EXCEPTION"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -95,108 +94,10 @@ If the processor is based on a newer x86-based architecture and has the MCA feat
 </tbody>
 </table>
 
- 
 
-On an Itanium-based processor, the parameters have the following meaning.
+## Remarks
 
-**Note**  Parameter 1 indicates the type of violation.
-
- 
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter 1</th>
-<th align="left">Parameter 2</th>
-<th align="left">Parameter 3</th>
-<th align="left">Parameter 4</th>
-<th align="left">Cause</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0x1</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x2</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>The error code</p></td>
-<td align="left"><p>The system abstraction layer (SAL) returned an error for SAL_GET_STATEINFO while processing MCA.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x3</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>The error code</p></td>
-<td align="left"><p>SAL returned an error for SAL_CLEAR_STATEINFO while it processed MCA.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x4</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Firmware (FW) reported a fatal MCA.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x5</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>There are two possible causes:</p>
-<ul>
-<li><p>SAL reported a recoverable MCA, but this recovery is not currently supported.</p></li>
-<li><p>SAL generated an MCA but could not produce an error record.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0xB</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0xC</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>The error code</p></td>
-<td align="left"><p>SAL returned an error for SAL_GET_STATEINFO while processing an INIT event.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0xD</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>The error code</p></td>
-<td align="left"><p>SAL returned an error for SAL_CLEAR_STATEINFO while it processed an INIT event.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0xE</p></td>
-<td align="left"><p>The address of the log</p></td>
-<td align="left"><p>The size of the log</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Remarks
--------
-
-In Windows Vista and later operating systems, this bug check occurs only in the following circumstances.
+This bug check occurs only in the following circumstances.
 
 -   WHEA is not fully initialized.
 -   All processors that rendezvous have no errors in their registers.

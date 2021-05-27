@@ -1,7 +1,6 @@
 ---
 title: Assigning Precedence to Protection Levels
 description: Assigning Precedence to Protection Levels
-ms.assetid: 87a63d30-4aa2-4835-87bc-1acb062bde26
 keywords:
 - protection levels WDK display , assigning precedence
 - protection levels WDK display , ACP precedence
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 
 A precedence value is assigned to each protection level for each protection type. This way, a physical output can determine which protection level to use if two or more protected outputs are associated with the physical output and each protected output has a different protection level.
 
-The Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) can make more than one call to a display miniport driver's [**DxgkDdiOPMCreateProtectedOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output) function to create more than one protected output for a particular physical output. Furthermore, each of these protected outputs can have a different protection level for the same output protection type.
+The Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) can make more than one call to a display miniport driver's [**DxgkDdiOPMCreateProtectedOutput**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output) function to create more than one protected output for a particular physical output. Furthermore, each of these protected outputs can have a different protection level for the same output protection type.
 
-For example, suppose that a graphics adapter has one composite output that has the CGMS-A protection type, and that protected outputs A and B are both associated with that composite output. Next, suppose that protected output A's [**CGMS-A protection level**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_dxgkmdt_opm_cgmsa) is set to DXGKMDT\_OPM\_CGMSA\_COPY\_NO\_MORE while protected output B's CGMS-A protection level is set to DXGKMDT\_OPM\_CGMSA\_COPY\_ONE\_GENERATION. In this situation, the physical output cannot use both protection levels. Therefore, because the physical output can output only one CGMS-A protection level at a time, the physical output must use the CGMS-A protection level with the higher precedence.
+For example, suppose that a graphics adapter has one composite output that has the CGMS-A protection type, and that protected outputs A and B are both associated with that composite output. Next, suppose that protected output A's [**CGMS-A protection level**](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_dxgkmdt_opm_cgmsa) is set to DXGKMDT\_OPM\_CGMSA\_COPY\_NO\_MORE while protected output B's CGMS-A protection level is set to DXGKMDT\_OPM\_CGMSA\_COPY\_ONE\_GENERATION. In this situation, the physical output cannot use both protection levels. Therefore, because the physical output can output only one CGMS-A protection level at a time, the physical output must use the CGMS-A protection level with the higher precedence.
 
 The following sections show which protection level a physical output should use (from highest to lowest precedence) when different protected outputs instruct the physical output to use different protection levels. Note that these tables apply to protected outputs with COPP or OPM semantics.
 
@@ -164,10 +163,4 @@ When different protected outputs instruct the physical output to use different D
  
 
  
-
- 
-
-
-
-
 

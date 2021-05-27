@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x77 KERNEL_STACK_INPAGE_ERROR
 description: The KERNEL_STACK_INPAGE_ERROR bug check has a value of 0x00000077. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
-ms.assetid: 203a6d0f-0caa-46ed-9bab-61bbde1c8016
 keywords: ["Bug Check 0x77 KERNEL_STACK_INPAGE_ERROR", "KERNEL_STACK_INPAGE_ERROR"]
 ms.date: 05/23/2017
 topic_type:
@@ -99,8 +98,7 @@ If the first parameter is any value other than 0, 1, or 2, the parameters have t
 
  
 
-Cause
------
+## Cause
 
 If the first parameter is 0 or 1, the stack signature in the kernel stack was not found. This error is probably caused by defective hardware, such as a RAM error.
 
@@ -122,8 +120,7 @@ These status codes are the most common ones that have specific causes. For more 
 
 A virus infection can also cause this bug check.
 
-Resolution
-----------
+## Resolution
 
 **Resolving a bad block problem:** If you can restart the computer after the error, Autochk runs automatically and attempts to map the bad sector to prevent it from being used anymore.
 

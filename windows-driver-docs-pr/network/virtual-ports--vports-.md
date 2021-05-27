@@ -1,7 +1,6 @@
 ---
 title: Virtual Ports (VPorts)
 description: Virtual Ports (VPorts)
-ms.assetid: FCE0B5F5-5E2E-493A-BE25-57FB2C8B0389
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,17 +22,17 @@ The NIC switch bridges network traffic from the physical port to one or more VPo
 
 Each VPort has a unique identifier (*VPortId*) that is unique for the NIC switch on the network adapter. A default VPort always exists on the default NIC switch and can never be deleted. The default VPort has the VPortId of NDIS\_DEFAULT\_VPORT\_ID.
 
-When the PF miniport driver handles an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-switch), it creates the NIC switch and the default VPort for that switch. The default VPort is always attached to the PF and is always in an operational state.
+When the PF miniport driver handles an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](./oid-nic-switch-create-switch.md), it creates the NIC switch and the default VPort for that switch. The default VPort is always attached to the PF and is always in an operational state.
 
-Nondefault VPorts are created through OID method requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-vport). Only one nondefault VPort can be attached to a VF. Once attached, the default is in an operational state. One or more nondefault VPorts can also be created and attached to the PF. These VPorts are nonoperational when created and can become operational through an OID set request of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-vport-parameters).
+Nondefault VPorts are created through OID method requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](./oid-nic-switch-create-vport.md). Only one nondefault VPort can be attached to a VF. Once attached, the default is in an operational state. One or more nondefault VPorts can also be created and attached to the PF. These VPorts are nonoperational when created and can become operational through an OID set request of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](./oid-nic-switch-vport-parameters.md).
 
-**Note**  After a VPort becomes operational, it can only become nonoperational when it is deleted through an OID request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-delete-vport).
+**Note**  After a VPort becomes operational, it can only become nonoperational when it is deleted through an OID request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](./oid-nic-switch-delete-vport.md).
 
 
 
-Each VPort has one or more hardware queue pairs associated with it for receiving and transmitting packets. The default queue pair on the network adapter is reserved for use by the default VPort. Queue pairs for nondefault VPorts are allocated and assigned when the VPort is created through the [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-vport) request.
+Each VPort has one or more hardware queue pairs associated with it for receiving and transmitting packets. The default queue pair on the network adapter is reserved for use by the default VPort. Queue pairs for nondefault VPorts are allocated and assigned when the VPort is created through the [OID\_NIC\_SWITCH\_CREATE\_VPORT](./oid-nic-switch-create-vport.md) request.
 
-Nondefault VPorts are created and configured through OID method requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-vport). The default VPort and nondefault VPorts are reconfigured through OID set requests of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-vport-parameters). Each OID request contains an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure that specifies the following configuration parameters:
+Nondefault VPorts are created and configured through OID method requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](./oid-nic-switch-create-vport.md). The default VPort and nondefault VPorts are reconfigured through OID set requests of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](./oid-nic-switch-vport-parameters.md). Each OID request contains an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure that specifies the following configuration parameters:
 
 -   The PCIe function to which the VPort is attached.
 
@@ -55,7 +54,7 @@ Starting with NDIS 6.30 in Windows Server 2012, only one nondefault VPort can be
 
     Each nondefault VPort can be configured to have a different number of queue pairs. This is known as *asymmetric allocation* of queue pairs. If the NIC does not allow for such an asymmetric allocation, each nondefault VPort is configured to have equal number of queue pairs. This is known as *symmetric allocation* of queue pairs. For more information, see [Symmetric and Asymmetric Assignment of Queue Pairs](symmetric-and-asymmetric-assignment-of-queue-pairs.md).
 
-    **Note**  The PF miniport driver reports on whether it supports asymmetric allocation of queue pairs during [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize). For more information, see [Initializing a PF Miniport Driver](initializing-a-pf-miniport-driver.md).
+    **Note**  The PF miniport driver reports on whether it supports asymmetric allocation of queue pairs during [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize). For more information, see [Initializing a PF Miniport Driver](initializing-a-pf-miniport-driver.md).
 
 
 
@@ -71,9 +70,9 @@ The number of queue pairs assigned to each VPort is not changed dynamically. The
 
     Different interrupt moderation types can be specified for different VPorts. This allows the virtualization stack to control the number of interrupts generated by a particular VPort.
 
-In addition to configuration parameters, overlying drivers can configure receive filters for each VPort by issuing OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter). The NIC switch performs the specified receive filtering on a VPort basis.
+In addition to configuration parameters, overlying drivers can configure receive filters for each VPort by issuing OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md). The NIC switch performs the specified receive filtering on a VPort basis.
 
-Receive filters parameters for VPorts include packet filtering conditions, such as a list of media access control (MAC) addresses and the virtual LAN (VLAN) identifiers. Filters for MAC addresses and VLAN identifiers are always specified together in the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) associated with the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) request. The NIC switch must filter incoming packets to the switch whose destination MAC address and VLAN identifier matches any receive filter condition that was set on the VPort. The NIC switch filters packets received from either another VPort or from the external physical port. If the packet matches a filter, the NIC switch must forward it to the VPort.
+Receive filters parameters for VPorts include packet filtering conditions, such as a list of media access control (MAC) addresses and the virtual LAN (VLAN) identifiers. Filters for MAC addresses and VLAN identifiers are always specified together in the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) associated with the [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md) request. The NIC switch must filter incoming packets to the switch whose destination MAC address and VLAN identifier matches any receive filter condition that was set on the VPort. The NIC switch filters packets received from either another VPort or from the external physical port. If the packet matches a filter, the NIC switch must forward it to the VPort.
 
 Multiple MAC address and VLAN identifier pairs may be set on the VPort. If only a MAC address is set, the receive filter specifies that the VPort should receive packets that match the following condition:
 
@@ -81,13 +80,4 @@ Multiple MAC address and VLAN identifier pairs may be set on the VPort. If only 
 
 -   The packet has a VLAN tag or (if a VLAN tag is present) a VLAN identifier of zero.
 
-Nondefault VPorts are deleted through OID set requests of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-vport). The default VPort is only deleted when the NIC switch is deleted through an OID set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-delete-switch).
-
-
-
-
-
-
-
-
-
+Nondefault VPorts are deleted through OID set requests of [OID\_NIC\_SWITCH\_DELETE\_VPORT](./oid-nic-switch-create-vport.md). The default VPort is only deleted when the NIC switch is deleted through an OID set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](./oid-nic-switch-delete-switch.md).

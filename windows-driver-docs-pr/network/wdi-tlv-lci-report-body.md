@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_LCI_REPORT_BODY
 description: WDI_TLV_LCI_REPORT_BODY is a TLV that contains the Location Configuration Report (LCI) for a Fine Timing Measuremement (FTM) request.
-ms.assetid: D80AB500-0B4F-47AC-ADF7-DDB5635FF1F2
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_LCI_REPORT_BODY Network Drivers Starting with Windows Vista
@@ -31,8 +30,6 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

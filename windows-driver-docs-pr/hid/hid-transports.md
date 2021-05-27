@@ -1,7 +1,6 @@
 ---
 title: HID Transport Overview
 description: HID Transport Overview
-ms.assetid: E442CB87-992B-475A-A97F-9C22468BA877
 keywords:
 - HID Transports
 - USB transport
@@ -34,7 +33,7 @@ If a device requires a transport other than USB, Bluetooth, Bluetooth LE, or I²
 
 - **Report Descriptor Length**
 
-    A transport minidriver submits report descriptors to Hidclass in a [**HID\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_descriptor) structure. Regardless of the size defined by the transport protocol for transferring HID report descriptor with their devices, the actual report descriptor size is limited during the communication between Hidclass and HID minidrivers.
+    A transport minidriver submits report descriptors to Hidclass in a [**HID\_DESCRIPTOR**](/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_descriptor) structure. Regardless of the size defined by the transport protocol for transferring HID report descriptor with their devices, the actual report descriptor size is limited during the communication between Hidclass and HID minidrivers.
 
 - **TLCs in a Report Descriptor**
 
@@ -54,4 +53,4 @@ If a device requires a transport other than USB, Bluetooth, Bluetooth LE, or I²
 
 ## See Also
 
-[USB Generic HID Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/f7949ab5-dd13-4c74-876f-6d54ff85e213) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers.
+[USB Generic HID Test](/windows-hardware/test/hlk/testref/f7949ab5-dd13-4c74-876f-6d54ff85e213) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers.

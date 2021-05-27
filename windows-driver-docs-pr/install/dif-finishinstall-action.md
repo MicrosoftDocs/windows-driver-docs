@@ -1,7 +1,6 @@
 ---
 title: DIF_FINISHINSTALL_ACTION
 description: DIF_FINISHINSTALL_ACTION
-ms.assetid: 76eba79b-7a8a-478e-aaea-8b36eee51846
 keywords: ["DIF_FINISHINSTALL_ACTION Device and Driver Installation"]
 topic_type:
 - apiref
@@ -24,7 +23,7 @@ A DIF_FINISHINSTALL_ACTION request allows an installer to run finish-install act
 
 In Windows 8 and later versions, finish-install actions do not automatically run as part of device installation. To complete a device finish-install action, a user must click on “Finish installing device software” in the Action Center to complete the installation.
 
-For more information, see [Running Finish-Install Actions](https://docs.microsoft.com/windows-hardware/drivers/install/running-finish-install-actions).
+For more information, see [Running Finish-Install Actions](./running-finish-install-actions.md).
 
 In Windows 7, the finish-install process runs only in the context of a user with administrator credentials at one of the following times:
 
@@ -62,13 +61,13 @@ If a user is signed in without administrative privileges, Windows prompts the us
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-A handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device being installed.
+A handle to the [device information set](./device-information-sets.md) that contains the device being installed.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-A pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device being installed.
+A pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device being installed.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters (a [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure) associated with *DeviceInfoData*.
+There are device installation parameters (a [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure) associated with *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -115,20 +114,19 @@ An installer returns one of the values that are listed in the following table.
 
 ### Default DIF Code Handler
 
-Windows 7 uses [**SetupDiFinishInstallAction**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)).
+Windows 7 uses [**SetupDiFinishInstallAction**](/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)).
 
-There is no default DIF Code Handler in Windows 8 and later versions, and [**SetupDiFinishInstallAction**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) has been removed.
+There is no default DIF Code Handler in Windows 8 and later versions, and [**SetupDiFinishInstallAction**](/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85)) has been removed.
 
 ### Comments
 
 Because device installation cannot determine from an ERROR_DI_DO_DEFAULT return code or a NO_ERROR return code whether a finish-install action actually succeeded, the installer should notify the user of the status of a finish-installer action.
 
-For more information about finish-install actions, see [How Device Installation Processes Finish-Install Actions](https://docs.microsoft.com/windows-hardware/drivers/install/how-finish-install-actions-are-processed) and [Implementing Finish-Install Actions](https://docs.microsoft.com/windows-hardware/drivers/install/implementing-finish-install-actions).
+For more information about finish-install actions, see [How Device Installation Processes Finish-Install Actions](./how-finish-install-actions-are-processed.md) and [Implementing Finish-Install Actions](./implementing-finish-install-actions.md).
 
-For general information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes) and [Calling Default DIF Code Handlers](https://docs.microsoft.com/windows-hardware/drivers/install/calling-the-default-dif-code-handlers).
+For general information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md) and [Calling Default DIF Code Handlers](./calling-the-default-dif-code-handlers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -150,14 +148,7 @@ Requirements
 ## See also
 
 
-[**SetupDiFinishInstallAction**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85))
+[**SetupDiFinishInstallAction**](/previous-versions/windows/hardware/previsioning-framework/ff551022(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

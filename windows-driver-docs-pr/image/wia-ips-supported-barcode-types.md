@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_SUPPORTED\_BARCODE\_TYPES
 description: The WIA\_IPS\_SUPPORTED\_BARCODE\_TYPES property is used by the WIA minidriver to list all barcode types supported (understood) by the Barcode Reader.
-ms.assetid: 38CA1167-25DB-4495-B31A-F996671E2686
 keywords: ["WIA_IPS_SUPPORTED_BARCODE_TYPES Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE (single array/vector value)
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_SUPPORTED\_BARCODE\_TYPES** property.
 
@@ -235,8 +233,7 @@ The WIA minidriver can extend this list with additional custom values defined as
 
 This property is required for all Barcode Reader items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_FILETIME
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_FILETIME property type represents the base-data-type identifier that indicates that the data type is a FILETIME-typed value.
-ms.assetid: e81585ae-ee47-456b-b29b-24217fab5f9a
 keywords: ["DEVPROP_TYPE_FILETIME Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_FILETIME property type represents the base-data-type identifier that indicates that the data type is a FILETIME-typed value.
 
-Remarks
--------
+## Remarks
 
 We recommend that all time values be represented in Coordinated Universal Time (UTC) units.
 
@@ -35,8 +33,7 @@ To set a property whose base data type is DEVPROP_TYPE_FILETIME, call the corres
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE
 description: The KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE property is used to enable and disable dynamic tracking of a node's sampling rate.
-ms.assetid: ff99c670-ef93-4730-8be4-1ed7c01c5381
 keywords: ["KSPROPERTY_AUDIO_DYNAMIC_SAMPLING_RATE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE property is used to enable and di
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -61,8 +60,7 @@ The property value (operation data) is of type BOOL and specifies whether dynami
 
 A KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to control dynamic tracking in the following node types:
 
@@ -72,8 +70,7 @@ This property is used to control dynamic tracking in the following node types:
 
 -   SRC node ([**KSNODETYPE\_SRC**](ksnodetype-src.md))
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,7 +88,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSPROPERTY\_AUDIO\_SAMPLING\_RATE**](ksproperty-audio-sampling-rate.md)
 
@@ -100,13 +97,4 @@ Requirements
 [**KSNODETYPE\_DAC**](ksnodetype-dac.md)
 
 [**KSNODETYPE\_SRC**](ksnodetype-src.md)
-
- 
-
- 
-
-
-
-
-
 

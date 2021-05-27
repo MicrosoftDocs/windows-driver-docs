@@ -1,7 +1,6 @@
 ---
 title: CTRL+B (Quit Local Debugger)
 description: The CTRL+B key causes the debugger to terminate abruptly. This does not end a remote debugging session.
-ms.assetid: f70f4c40-244f-4abf-982f-d738800ac621
 keywords: ["CTRL+B (Quit Local Debugger) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ CTRL+B  ENTER
 
  
 
-Remarks
--------
+## Remarks
 
 In CDB, the [**q (Quit)**](q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
 

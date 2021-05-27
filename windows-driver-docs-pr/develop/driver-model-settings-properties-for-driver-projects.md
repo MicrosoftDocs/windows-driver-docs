@@ -1,5 +1,4 @@
 ---
-ms.assetid: 3D0CB4E7-D1BC-44AA-93D9-5CCDE98C9691
 title: Driver Model Settings Properties for Driver Projects
 description: Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
 ms.date: 04/20/2017
@@ -13,8 +12,8 @@ Sets the basic properties for a kernel-mode or user-mode driver, including the W
 ## Setting driver model properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Driver Model Settings**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Driver Model Settings**.
 3.  Set the properties for the project.
 
 **Type of driver**  
@@ -24,19 +23,19 @@ Possible values are:
 
 * **WDM** (including all miniport/port drivers such as NDIS or StorPort).
 * **KMDF** A KMDF driver.
-* **Export driver (WDM)** A WDM driver that exports functions which other drivers can call. For more information, see [Creating Export Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-export-drivers).
+* **Export driver (WDM)** A WDM driver that exports functions which other drivers can call. For more information, see [Creating Export Drivers](../kernel/creating-export-drivers.md).
 
 **KMDF Version Major**  
 When the type of driver is KMDF, this option specifies the major version of KMDF that will be used when compiling your driver.
 
 The KMDF\_VERSION\_MAJOR entry informs the MSBuild utility that it must link the driver to the KMDF library.
 
-For more information, see [Framework Library Versioning](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-library-versioning).
+For more information, see [Framework Library Versioning](../wdf/framework-library-versioning.md).
 
 **KMDF Version Minor (Target Version)** (was **KMDF Version Minor** prior to Windows 10, version 1803)
 When the type of driver is KMDF, this option specifies the minor version of KMDF that will be used when compiling your driver.
 
-For more information, see [Framework Library Versioning](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-library-versioning). If you do not specify **KMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
+For more information, see [Framework Library Versioning](../wdf/framework-library-versioning.md). If you do not specify **KMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
 * Windows 10: 1.15
 * Windows 8 / Windows 8.1: 1.11
 * Windows 7: 1.9
@@ -47,7 +46,7 @@ Starting in KMDF version 1.25 and UMDF version 2.25 on Windows 10 version 1803 (
 For details, see [Building a WDF driver for multiple versions of Windows](../wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
 **UMDF Version Major**  
-When you have a UMDF driver, this option specifies the major version of UMDF that will be used when compiling your driver. See [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history). When you have a UMDF driver, the **Configuration type** is **Dynamic Library (.dll)**.
+When you have a UMDF driver, this option specifies the major version of UMDF that will be used when compiling your driver. See [UMDF Version History](../wdf/umdf-version-history.md). When you have a UMDF driver, the **Configuration type** is **Dynamic Library (.dll)**.
 
 **UMDF Version Minor (Target Version)** (was **UMDF Version Minor** prior to Windows 10, version 1803)
 When you have a UMDF driver, this option specifies the minor version of UMDF that will be used when compiling your driver. If you do not specify **UMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
@@ -75,17 +74,10 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
 ## Related topics
 
 
-* [Framework Library Versioning](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-library-versioning)
-* [Building and Loading a Framework-based Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver)
-* [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history)
-* [Building UMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver)
-* [Creating Export Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-export-drivers)
+* [Framework Library Versioning](../wdf/framework-library-versioning.md)
+* [Building and Loading a Framework-based Driver](../wdf/building-and-loading-a-kmdf-driver.md)
+* [UMDF Version History](../wdf/umdf-version-history.md)
+* [Building UMDF Drivers](../wdf/building-and-loading-a-kmdf-driver.md)
+* [Creating Export Drivers](../kernel/creating-export-drivers.md)
  
-
- 
-
-
-
-
-
 

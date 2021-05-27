@@ -1,7 +1,6 @@
 ---
 title: Impersonation
 description: Impersonation
-ms.assetid: 368c6741-b51a-4629-8ae6-a7848c07c0fc
 keywords:
 - security WDK file systems , adding security checks
 - security checks WDK file systems , impersonation
@@ -20,17 +19,17 @@ Some file systems might find it useful to perform operations on behalf of the or
 
 The key routines needed for impersonation include:
 
--   [**PsImpersonateClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psimpersonateclient) [**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex)--initiates impersonation. Unless a specific thread is indicated, the impersonation is done in the current thread context.
+-   [**PsImpersonateClient**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psimpersonateclient) [**SeImpersonateClientEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex)--initiates impersonation. Unless a specific thread is indicated, the impersonation is done in the current thread context.
 
 -   **PsRevertToSelf**--terminates impersonation within the current thread context.
 
--   [**PsReferencePrimaryToken**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psreferenceprimarytoken)--holds a reference on the primary (process) token for the specified process. This function may be used to capture the token for any process on the system.
+-   [**PsReferencePrimaryToken**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psreferenceprimarytoken)--holds a reference on the primary (process) token for the specified process. This function may be used to capture the token for any process on the system.
 
--   [**PsDereferencePrimaryToken**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psdereferenceprimarytoken)--releases a reference on a previously referenced primary token.
+-   [**PsDereferencePrimaryToken**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psdereferenceprimarytoken)--releases a reference on a previously referenced primary token.
 
--   [**SeCreateClientSecurityFromSubjectContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-secreateclientsecurityfromsubjectcontext)--returns a client security context useful for impersonation from a subject context (provided to the FSD during the **IRP\_MJ\_CREATE** handling, for example).
+-   [**SeCreateClientSecurityFromSubjectContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-secreateclientsecurityfromsubjectcontext)--returns a client security context useful for impersonation from a subject context (provided to the FSD during the **IRP\_MJ\_CREATE** handling, for example).
 
--   [**SeCreateClientSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-secreateclientsecurity)--creates a client security context based upon the security credentials of an existing thread on the system.
+-   [**SeCreateClientSecurity**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-secreateclientsecurity)--creates a client security context based upon the security credentials of an existing thread on the system.
 
 -   **ImpersonateSecurityContext**--impersonates security context within ksecdd.sys, the kernel security service.
 
@@ -110,9 +109,4 @@ NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
 There are numerous variants of this impersonation code that are available to file systems developers, but this provides a basic illustration of the technique.
 
  
-
- 
-
-
-
 

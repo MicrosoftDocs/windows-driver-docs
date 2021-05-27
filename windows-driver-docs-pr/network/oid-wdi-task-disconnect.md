@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_DISCONNECT
 description: OID_WDI_TASK_DISCONNECT is used to terminate a connection with a peer.
-ms.assetid: 03566fbd-5043-4166-bd33-0ed48f85f370
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DISCONNECT Network Drivers Starting with Windows Vista
@@ -26,7 +25,7 @@ This command is used to disconnect from an Access Point or a Wi-Fi Direct GO, an
 
 | TLV                                                                            | Multiple TLV instances allowed | Optional | Description                |
 |--------------------------------------------------------------------------------|--------------------------------|----------|----------------------------|
-| [**WDI\_TLV\_DISCONNECT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-disconnect-parameters) |                                |          | The disconnect parameters. |
+| [**WDI\_TLV\_DISCONNECT\_PARAMETERS**](./wdi-tlv-disconnect-parameters.md) |                                |          | The disconnect parameters. |
 
  
 
@@ -42,8 +41,7 @@ When the port gets disconnected from the network, it sends the disassociation in
 
 Before the disassociation indication is sent, the port must clear the state associated with the peer. This includes any keys and 802.1x port authorization information associated with the peer. The port must not trigger a roam on its own.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -67,9 +65,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

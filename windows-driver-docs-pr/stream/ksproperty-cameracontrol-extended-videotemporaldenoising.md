@@ -57,7 +57,7 @@ The following table describes the flag capabilities.
 | KSCAMERA_EXTENDEDPROP_VIDEOTEMPORALDENOISING_OFF | This is a mandatory capability if KSCAMERA_EXTENDEDPROP_VIDEOTEMPORALDENOISING_AUTO is not supported and optional if it is. When specified, Video Temporal Denoising is disabled in the driver at all time for all supported pins streaming pixels in the visible spectrum of light. |
 | KSCAMERA_EXTENDEDPROP_VIDEOTEMPORALDENOISING_ON | This is a mandatory capability if KSCAMERA_EXTENDEDPROP_VIDEOTEMPORALDENOISING_AUTO is not supported and optional if it is. When specified, Video Temporal Denoising is enabled in the driver at all time for all supported pins streaming pixels in the visible spectrum of light. |
 
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 | Member | Description |
 | --- | --- |

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_POSITIONEX
 description: The KSPROPERTY\_AUDIO\_POSITIONEX property provides the caller with the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
-ms.assetid: 660b1ee9-7c52-4d95-8df9-b1c0dce320e3
 keywords: ["KSPROPERTY_AUDIO_POSITIONEX Audio Devices"]
 topic_type:
 - apiref
@@ -44,8 +43,8 @@ The KSPROPERTY\_AUDIO\_POSITIONEX property provides the caller with the stream p
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITIONEX&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)"><strong>KSAUDIO_POSITIONEX</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITIONEX&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)"><strong>KSAUDIO_POSITIONEX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,8 +57,7 @@ The property value (operation data) is a structure of type KSAUDIO\_POSITIONEX t
 
 The KSPROPERTY\_AUDIO\_POSITIONEX property request returns S\_OK if the call was successful. Otherwise, it returns the appropriate HRESULT error code.
 
-Remarks
--------
+## Remarks
 
 Typically, audio applications must monitor the current position of an audio stream. This position is specified as a byte offset from the beginning of the stream. There are two possible interpretations of the stream position information:
 
@@ -69,8 +67,7 @@ Typically, audio applications must monitor the current position of an audio stre
 
 A driver that supports the KSPROPERTY\_AUDIO\_POSITIONEX property generates a timestamp window for the stream position value. The timestamp window is the interval between the timestamp that is sampled before stream position is determined and the timestamp that is taken after the stream position is determined. The caller then determines whether it can use the timestamp window.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -92,16 +89,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIO\_POSITIONEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)
+[**KSAUDIO\_POSITIONEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_positionex)
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 

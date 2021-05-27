@@ -1,7 +1,6 @@
 ---
 title: FltAcquireResourceExclusive routine
 description: The FltAcquireResourceExclusive routine acquires the given resource for exclusive access by the calling thread.
-ms.assetid: 3736582e-33eb-4967-acfa-4b9d2b8cd87f
 keywords: ["FltAcquireResourceExclusive routine Installable File System Drivers"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.localizationpriority: medium
 
 The **FltAcquireResourceExclusive** routine acquires the given resource for exclusive access by the calling thread.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID FltAcquireResourceExclusive(
@@ -30,19 +28,16 @@ VOID FltAcquireResourceExclusive(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Resource* \[in, out\]  
-A pointer to an opaque ERESOURCE structure. This structure must be allocated by the caller from nonpaged pool and initialized by calling [**ExInitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite) or [**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
+A pointer to an opaque ERESOURCE structure. This structure must be allocated by the caller from nonpaged pool and initialized by calling [**ExInitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite) or [**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This routine is available on Windows XP with Service Pack 2 (SP2), Windows Server 2003 with Service Pack 1 (SP1), and later versions of Windows.
 
@@ -58,27 +53,26 @@ The following circumstances determine whether or when the caller is given exclus
 
 -   If the resource is currently owned as exclusive by another thread, or if the caller only has shared access to the resource, the current thread is put into a wait state until the resource can be acquired.
 
-&gt; \[!Note\]
-&gt;   If two threads each hold a shared lock on the same resource and both attempt to acquire the lock exclusively without releasing their shared lock, they will deadlock. This means that each thread will wait for the other to release its shared hold on the lock, and neither will release its shared hold until the other does.
+> [!NOTE]
+> If two threads each hold a shared lock on the same resource and both attempt to acquire the lock exclusively without releasing their shared lock, they will deadlock. This means that each thread will wait for the other to release its shared hold on the lock, and neither will release its shared hold until the other does.
 
  
 
-**FltAcquireResourceExclusive** is a wrapper for [**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351) that disables normal kernel APC delivery.
+**FltAcquireResourceExclusive** is a wrapper for [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85)) that disables normal kernel APC delivery.
 
-Because **FltAcquireResourceExclusive** disables normal kernel APC delivery, it is not necessary to call [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) or [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) before calling **FltAcquireResourceExclusive**.
+Because **FltAcquireResourceExclusive** disables normal kernel APC delivery, it is not necessary to call [**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) or [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) before calling **FltAcquireResourceExclusive**.
 
 To release the resource after it is acquired, call [**FltReleaseResource**](fltreleaseresource.md). Every successful call to **FltAcquireResourceExclusive** must be matched by a subsequent call to **FltReleaseResource**.
 
 To acquire a resource for shared access, call [**FltAcquireResourceShared**](fltacquireresourceshared.md).
 
-To delete a resource from the system's resource list, call [**ExDeleteResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite).
+To delete a resource from the system's resource list, call [**ExDeleteResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite).
 
-To initialize a resource for reuse, call [**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
+To initialize a resource for reuse, call [**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
-For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-eresource-routines) in the Kernel Architecture Design Guide.
+For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](../kernel/introduction-to-eresource-routines.md) in the Kernel Architecture Design Guide.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -112,13 +106,13 @@ Requirements
 ## See also
 
 
-[**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351)
+[**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))
 
-[**ExDeleteResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite)
+[**ExDeleteResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite)
 
-[**ExInitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite)
+[**ExInitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite)
 
-[**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite)
+[**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite)
 
 [**FltAcquireResourceShared**](fltacquireresourceshared.md)
 
@@ -126,14 +120,7 @@ Requirements
 
 [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md)
 
-[**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion)
+[**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Synth
 description: KSPROPSETID\_Synth
-ms.assetid: ff5efd85-0b4d-4625-b029-fecf325bcacb
 keywords: ["KSPROPSETID_Synth"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium
@@ -16,9 +15,6 @@ ms.localizationpriority: medium
 The `KSPROPSETID_Synth` property set contains properties that are global to the configuration of a synth node ([**KSNODETYPE\_SYNTHESIZER**](ksnodetype-synthesizer.md)).
 
 Property items in this set are specified by KSPROPERTY\_SYNTH enumeration values, as defined in header file Dmusprop.h.
-
-## <span id="ddk_ksproperty_synth_caps_ks"></span><span id="DDK_KSPROPERTY_SYNTH_CAPS_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -46,8 +42,8 @@ The KSPROPERTY\_SYNTH\_CAPS property is used by the system to determine the capa
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthcaps" data-raw-source="[&lt;strong&gt;SYNTHCAPS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthcaps)"><strong>SYNTHCAPS</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthcaps" data-raw-source="[&lt;strong&gt;SYNTHCAPS&lt;/strong&gt;](/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthcaps)"><strong>SYNTHCAPS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -66,16 +62,13 @@ The property value (operation data) is a structure of type SYNTHCAPS and specifi
 
 -   Rendering effects
 
-For more information, see [**SYNTHCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthcaps).
+For more information, see [**SYNTHCAPS**](/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthcaps).
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
 A KSPROPERTY\_SYNTH\_CAPS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
 For more information about synthesizer capabilities, see the **IDirectMusicPort::GetCaps** method and the DMUS\_PORTCAPS structure in the Microsoft Windows SDK documentation.
-
-## <span id="ddk_ksproperty_synth_channelgroups_ks"></span><span id="DDK_KSPROPERTY_SYNTH_CHANNELGROUPS_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -103,7 +96,7 @@ The KSPROPERTY\_SYNTH\_CHANNELGROUPS property is used by the system to set or ge
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -144,9 +137,6 @@ A KSPROPERTY\_SYNTH\_CAPS property request returns STATUS\_SUCCESS to indicate t
 
 For more information about channel groups, see the descriptions of the **IDirectMusicPort::GetNumChannelGroups** and **IDirectMusicPort::SetNumChannelGroups** methods in the Microsoft Windows SDK documentation.
 
-## <span id="ddk_ksproperty_synth_latencyclock_ks"></span><span id="DDK_KSPROPERTY_SYNTH_LATENCYCLOCK_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_LATENCYCLOCK property is used to query the miniport driver for the stream's current latency-clock time, which is always greater than the master-clock time.
@@ -173,7 +163,7 @@ The KSPROPERTY\_SYNTH\_LATENCYCLOCK property is used to query the miniport drive
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONGLONG</p></td>
 </tr>
 </tbody>
@@ -222,12 +212,9 @@ A KSPROPERTY\_SYNTH\_LATENCYCLOCK get-property request should return a latency-c
 
 For more information about latency clocks, see the following:
 
--   The discussion of the KSPROPERTY\_SYNTH\_LATENCYCLOCK property in [Latency Clocks](https://docs.microsoft.com/windows-hardware/drivers/audio/latency-clocks).
+-   The discussion of the KSPROPERTY\_SYNTH\_LATENCYCLOCK property in [Latency Clocks](./latency-clocks.md).
 
 -   The descriptions of the **IDirectMusicPort::GetLatencyClock** and **IReferenceClock::GetTime** methods in the Microsoft Windows SDK documentation.
-
-## <span id="ddk_ksproperty_synth_portparameters_ks"></span><span id="DDK_KSPROPERTY_SYNTH_PORTPARAMETERS_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -255,8 +242,8 @@ The KSPROPERTY\_SYNTH\_PORTPARAMETERS property is used to get the configuration 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a> + <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams" data-raw-source="[&lt;strong&gt;SYNTH_PORTPARAMS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams)"><strong>SYNTH_PORTPARAMS</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams" data-raw-source="[&lt;strong&gt;SYNTH_PORTPARAMS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams)"><strong>SYNTH_PORTPARAMS</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a> + <a href="/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams" data-raw-source="[&lt;strong&gt;SYNTH_PORTPARAMS&lt;/strong&gt;](/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams)"><strong>SYNTH_PORTPARAMS</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams" data-raw-source="[&lt;strong&gt;SYNTH_PORTPARAMS&lt;/strong&gt;](/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_portparams)"><strong>SYNTH_PORTPARAMS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -306,9 +293,6 @@ By convention, the driver also fills in values for parameters that do not have c
 
 The miniport driver's KSPROPERTY\_SYNTH\_PORTPARAMETERS handler should be prepared to correctly handle requests for sample-rate changes.
 
-## <span id="ddk_ksproperty_synth_runningstats_ks"></span><span id="DDK_KSPROPERTY_SYNTH_RUNNINGSTATS_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_RUNNINGSTATS property is used to query the miniport driver for the synthesizer's performance statistics.
@@ -335,8 +319,8 @@ The KSPROPERTY\_SYNTH\_RUNNINGSTATS property is used to query the miniport drive
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_stats" data-raw-source="[&lt;strong&gt;SYNTH_STATS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_stats)"><strong>SYNTH_STATS</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_stats" data-raw-source="[&lt;strong&gt;SYNTH_STATS&lt;/strong&gt;](/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synth_stats)"><strong>SYNTH_STATS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -392,9 +376,6 @@ The synthesizer's performance statistics are continuously updated while the devi
 
 For additional information, see the description of the **IDirectMusicPort::GetRunningStats** method and the DMUS\_SYNTHSTATS structure in the Microsoft Windows SDK documentation.
 
-## <span id="ddk_ksproperty_synth_voicepriority_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOICEPRIORITY_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_VOICEPRIORITY property specifies what priority a particular voice in a MIDI synthesizer should have when the miniport driver needs to bump voices from its voice cache.
@@ -421,7 +402,7 @@ The KSPROPERTY\_SYNTH\_VOICEPRIORITY property specifies what priority a particul
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a> + <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthvoicepriority_instance" data-raw-source="[&lt;strong&gt;SYNTHVOICEPRIORITY_INSTANCE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthvoicepriority_instance)"><strong>SYNTHVOICEPRIORITY_INSTANCE</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a> + <a href="/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthvoicepriority_instance" data-raw-source="[&lt;strong&gt;SYNTHVOICEPRIORITY_INSTANCE&lt;/strong&gt;](/windows-hardware/drivers/ddi/dmusprop/ns-dmusprop-_synthvoicepriority_instance)"><strong>SYNTHVOICEPRIORITY_INSTANCE</strong></a></p></td>
 <td align="left"><p>DWORD</p></td>
 </tr>
 </tbody>
@@ -516,9 +497,6 @@ A KSPROPERTY\_SYNTH\_VOICEPRIORITY property request returns STATUS\_SUCCESS to i
 
 For more information about voice priorities, see the descriptions of the **IDirectMusicPort::GetChannelPriority** and **IDirectMusicPort::SetChannelPriority** methods in the Microsoft Windows SDK documentation.
 
-## <span id="ddk_ksproperty_synth_volume_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOLUME_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_VOLUME property gets or sets the volume level of a synthesizer device.
@@ -545,7 +523,7 @@ The KSPROPERTY\_SYNTH\_VOLUME property gets or sets the volume level of a synthe
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -582,10 +560,6 @@ A KSPROPERTY\_SYNTH\_VOLUME property request returns STATUS\_SUCCESS to indicate
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_ksproperty_synth_volumeboost_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOLUMEBOOST_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -613,7 +587,7 @@ The KSPROPERTY\_SYNTH\_VOLUMEBOOST property specifies the amount by which a synt
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -650,17 +624,8 @@ A KSPROPERTY\_SYNTH\_VOLUMEBOOST property request returns STATUS\_SUCCESS to ind
 </tbody>
 </table>
 
- 
 
 No other boost should be added to the output. The synthesizer should follow strict DLS Level-1 conventions for articulation.
 
 This property is used to equalize the volume of the synthesizer with other audio output in the system, and boost amounts should therefore be interpreted in a consistent manner across all devices.
-
- 
-
- 
-
-
-
-
 

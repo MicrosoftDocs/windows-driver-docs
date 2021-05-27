@@ -1,7 +1,6 @@
 ---
 title: Component-Level Performance State Management
 description: Starting with Windows 10, the power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device.
-ms.assetid: D5341D6D-7C71-43CB-9C70-7E939B32C33F
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -37,18 +36,15 @@ To register a device component for performance state management by PoFx, a drive
 
 1.  The driver registers the device components to be managed by PoFx. For more information, see [Component-Level Power Management](component-level-power-management.md).
 
-2.  The driver registers support for performance states by calling [**PoFxRegisterComponentPerfStates**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregistercomponentperfstates). As part of the registration call, drivers can either define a given component’s performance state themselves or defer to the platform extension plug-in (PEP) to define them instead.
+2.  The driver registers support for performance states by calling [**PoFxRegisterComponentPerfStates**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregistercomponentperfstates). As part of the registration call, drivers can either define a given component’s performance state themselves or defer to the platform extension plug-in (PEP) to define them instead.
 
     Either the device driver or the PEP must hold knowledge of the performance states, including the number of performance state sets per component, the type of performance state (discrete or range-based), and the details of the values and count of the actual performance states. If the PEP does not support performance states, the driver may still register for performance state support with PoFx and notify the OS of performance state changes for logging and analysis in Windows Performance Analyzer (WPA).
 
-    In either case, upon successful completion of [**PoFxRegisterComponentPerfStates**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregistercomponentperfstates), the driver has a [**PO\_FX\_COMPONENT\_PERF\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_component_perf_info) structure that contains the registered performance state sets.
+    In either case, upon successful completion of [**PoFxRegisterComponentPerfStates**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregistercomponentperfstates), the driver has a [**PO\_FX\_COMPONENT\_PERF\_INFO**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_component_perf_info) structure that contains the registered performance state sets.
 
-3.  When the driver decides a component should change performance states, it calls [**PoFxIssueComponentPerfStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxissuecomponentperfstatechange) or [**PoFxIssueComponentPerfStateChangeMultiple**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxissuecomponentperfstatechangemultiple). PoFx invokes the driver-provided [**ComponentPerfStateCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_perf_state_callback) routine when the performance state change is complete.
+3.  When the driver decides a component should change performance states, it calls [**PoFxIssueComponentPerfStateChange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxissuecomponentperfstatechange) or [**PoFxIssueComponentPerfStateChangeMultiple**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxissuecomponentperfstatechangemultiple). PoFx invokes the driver-provided [**ComponentPerfStateCallback**](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_perf_state_callback) routine when the performance state change is complete.
 
-4.  The driver is informed by the [**ComponentPerfStateCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_perf_state_callback) routine whether the PEP succeeded or denied the performance state change. If the PEP succeeded the change, the driver then performs whatever work it needs to take to change the performance state from its perspective. If the PEP denied the change, the driver may choose to do nothing or retry the request again with the same or an alternate performance state.
+4.  The driver is informed by the [**ComponentPerfStateCallback**](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_perf_state_callback) routine whether the PEP succeeded or denied the performance state change. If the PEP succeeded the change, the driver then performs whatever work it needs to take to change the performance state from its perspective. If the PEP denied the change, the driver may choose to do nothing or retry the request again with the same or an alternate performance state.
 
 ## Related topics
-[Device Power Management Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
-
-
+[Device Power Management Reference](/windows-hardware/drivers/ddi/_kernel/#power-management-routines)

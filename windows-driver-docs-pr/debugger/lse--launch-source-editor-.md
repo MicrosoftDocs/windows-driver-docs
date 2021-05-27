@@ -1,7 +1,6 @@
 ---
 title: lse (Launch Source Editor)
 description: The lse command opens an editor for the current source file.
-ms.assetid: 2f66b5c3-1cd6-4641-8dea-5e3a11c87db0
 keywords: ["lse (Launch Source Editor) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,8 +46,7 @@ lse
 
  
 
-Remarks
--------
+## Remarks
 
 The **lse** command opens an editor for the current source file. This command is equivalent to clicking **Edit this file** in the shortcut menu of the [Source window](source-window.md) in WinDbg.
 

@@ -1,7 +1,6 @@
 ---
-title: Using Device Interfaces
+title: Using Device Interfaces (WDF)
 description: Using Device Interfaces
-ms.assetid: 98199220-947e-462e-a50c-85d81ca50108
 keywords:
 - device interfaces WDK KMDF
 - registering device interfaces WDK KMDF
@@ -11,33 +10,37 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Using Device Interfaces
+# Using Device Interfaces (WDF)
 
 
 
 
 
-A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about **SetupDi** functions, see [Using Device Interface Functions](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-installation-functions).
+A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about **SetupDi** functions, see [Using Device Installation Functions](../install/using-device-installation-functions.md).
 
-Each device interface belongs to a *device interface class*. For example, a driver stack for a CD-ROM device might provide an interface that belongs to the GUID\_DEVINTERFACE\_CDROM class. One of the CD-ROM device's drivers would register an instance of the GUID\_DEVINTERFACE\_CDROM class to inform the system and applications that a CD-ROM device is available. For more information about device interface classes, see [Introduction to Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-interface-classes).
+Each device interface belongs to a *device interface class*. For example, a driver stack for a CD-ROM device might provide an interface that belongs to the GUID\_DEVINTERFACE\_CDROM class. One of the CD-ROM device's drivers would register an instance of the GUID\_DEVINTERFACE\_CDROM class to inform the system and applications that a CD-ROM device is available. For more information about device interface classes, see [Overview of Device Interface Classes](../install/overview-of-device-interface-classes.md).
 
 ### Registering a Device Interface
 
-To register an instance of a device interface class, a framework-based driver can call [**WdfDeviceCreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from within its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function. If the driver supports multiple instances of the interface, it can assign a unique reference string to each instance.
+To register an instance of a device interface class, a framework-based driver can call [**WdfDeviceCreateDeviceInterface**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from within its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function. If the driver supports multiple instances of the interface, it can assign a unique reference string to each instance.
 
-After the driver has registered a device interface, the driver can call [**WdfDeviceRetrieveDeviceInterfaceString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedeviceinterfacestring) to obtain the symbolic link name that the system has assigned to the device interface.
+After the driver has registered a device interface, the driver can call [**WdfDeviceRetrieveDeviceInterfaceString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedeviceinterfacestring) to obtain the symbolic link name that the system has assigned to the device interface.
 
-For information about other ways that drivers can register device interfaces, see [Registering a Device Interface Class](https://docs.microsoft.com/windows-hardware/drivers/install/registering-a-device-interface-class).
+For information about other ways that drivers can register device interfaces, see [Registering a Device Interface Class](../install/registering-a-device-interface-class.md).
 
 ### Enabling and Disabling a Device Interface
 
-After a driver calls [**WdfDeviceCreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface), the framework automatically enables all of a device's interfaces when the device goes through PnP enumeration and disables the interfaces when the device undergoes PnP removal. If the driver specified a physical device object (PDO) when it called **WdfDeviceCreateDeviceInterface**, the framework re-enables the device's interfaces if a disabled device is re-enabled.
+After a driver calls [**WdfDeviceCreateDeviceInterface**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), the framework automatically enables all of a device's interfaces when the device goes through PnP enumeration and disables the interfaces when the device undergoes PnP removal. 
 
-A driver can disable and re-enable a device interface if necessary. For example, if a driver determines that its device has stopped responding, the driver can call [**WdfDeviceSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate) to disable the device's interfaces and prohibit applications from obtaining new handles to the interface. (Existing handles to the interface are not affected.) If the device later becomes available, the driver can call **WdfDeviceSetDeviceInterfaceState** again to reenable the interfaces.
+Note that any device power state changes or PnP resource rebalance does not change the interface's state. To prevent the interface from being automatically enabled during PnP start, call [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) (set the *EnableInterface* parameter to FALSE) for that interface. 
+ 
+Interfaces created after the device already starts won't be automatically enabled. The driver must call [**WdfDeviceSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate) or [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) to enable such interfaces. 
+
+A driver can disable and re-enable a device interface if necessary. For example, if a driver determines that its device has stopped responding, the driver can call [**WdfDeviceSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate) or [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) to disable the device's interfaces and prohibit applications from obtaining new handles to the interface. (Existing handles to the interface are not affected.) If the device later becomes available, the driver can call **WdfDeviceSetDeviceInterfaceState** or **WdfDeviceSetDeviceInterfaceStateEx** again to reenable the interfaces.
 
 ### Receiving Requests to Access a Device Interface
 
-When an application or kernel-mode component requests access to a driver's device interface, the framework calls the driver's [*EvtDeviceFileCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_file_create) callback function. The driver can call [**WdfFileObjectGetFileName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdffileobject/nf-wdffileobject-wdffileobjectgetfilename) to obtain the name of the device or file that the application or kernel-mode component is accessing. If the driver specified a reference string when it registered the device interface, the operating system includes the reference string in the file or device name that **WdfFileObjectGetFileName** returns.
+When an application or kernel-mode component requests access to a driver's device interface, the framework calls the driver's [*EvtDeviceFileCreate*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_file_create) callback function. The driver can call [**WdfFileObjectGetFileName**](/windows-hardware/drivers/ddi/wdffileobject/nf-wdffileobject-wdffileobjectgetfilename) to obtain the name of the device or file that the application or kernel-mode component is accessing. If the driver specified a reference string when it registered the device interface, the operating system includes the reference string in the file or device name that **WdfFileObjectGetFileName** returns.
 
 ### Accessing Another Driver's Device Interface
 
@@ -45,11 +48,11 @@ This section shows how a Kernel-Mode Driver Framework (KMDF) driver or a User-Mo
 
 For information on how to do this in a UMDF version 1 driver, see [Using Device Interfaces in UMDF Drivers](using-device-interfaces-in-umdf-drivers.md#accessing-another-drivers-device-interface).
 
-To register for notification of device interface events, a KMDF driver calls [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification), while a UMDF 2 driver calls [**CM\_Register\_Notification**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification). In both cases, the driver calls the appropriate routine from its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
+To register for notification of device interface events, a KMDF driver calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification), while a UMDF 2 driver calls [**CM\_Register\_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification). In both cases, the driver calls the appropriate routine from its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
 The following code example shows how a local UMDF 2 driver registers for notifications and then opens the remote I/O target.
 
-1.  The remote driver registers for a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add).
+1.  The remote driver registers for a device interface by calling [**WdfDeviceCreateDeviceInterface**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add).
     ```cpp
         UNICODE_STRING ref;
         RtlInitUnicodeString(&ref, MY_HID_FILTER_REFERENCE_STRING);
@@ -66,7 +69,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
     ```
 
-2.  The local driver calls [**CM\_Register\_Notification**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) from [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
+2.  The local driver calls [**CM\_Register\_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) from [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
     ```cpp
     DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
@@ -136,11 +139,11 @@ The following code example shows how a local UMDF 2 driver registers for notific
     ```
 
 
-4.  From the work item callback function, the local driver calls [**WdfIoTargetCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate) to create the remote target, and [**WdfIoTargetOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetopen) to open a remote I/O target.
+4.  From the work item callback function, the local driver calls [**WdfIoTargetCreate**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate) to create the remote target, and [**WdfIoTargetOpen**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetopen) to open a remote I/O target.
 
-    When calling [**WdfIoTargetOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetopen), the driver optionally registers an [*EvtIoTargetQueryRemove*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove) callback function to receive removal notification, along with the opportunity to decline the removal. If the driver does not provide *EvtIoTargetQueryRemove*, the framework closes the I/O target when the device is removed.
+    When calling [**WdfIoTargetOpen**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetopen), the driver optionally registers an [*EvtIoTargetQueryRemove*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove) callback function to receive removal notification, along with the opportunity to decline the removal. If the driver does not provide *EvtIoTargetQueryRemove*, the framework closes the I/O target when the device is removed.
 
-    In rare cases, a UMDF 2 driver can call [**CM\_Register\_Notification**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) a second time, to register for notification of device removal. For example, if the driver calls [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) to get a HANDLE to the device interface, it should register for notification of device removal so that it can properly respond to query remove attempts. In most cases, the UMDF 2 driver calls **CM\_Register\_Notification** only once, and relies on WDF support for device removal.
+    In rare cases, a UMDF 2 driver can call [**CM\_Register\_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) a second time, to register for notification of device removal. For example, if the driver calls [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) to get a HANDLE to the device interface, it should register for notification of device removal so that it can properly respond to query remove attempts. In most cases, the UMDF 2 driver calls **CM\_Register\_Notification** only once, and relies on WDF support for device removal.
 
     ```cpp
     VOID 
@@ -158,4 +161,4 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
 ## Related topics
 
-[Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal)
+[Registering for Notification of Device Interface Arrival and Device Removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md)

@@ -1,7 +1,6 @@
 ---
 title: PKEY\_AudioEngine\_OEMPeriod
 description: PKEY\_AudioEngine\_OEMPeriod
-ms.assetid: e0cefdbf-7016-4609-a898-592a40b5d430
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The Windows audio engine runs at predetermined intervals that are referred to as the *periodicity* of the audio engine. In Windows 7 and later versions of Windows, the audio engine runs with a periodicity of 10ms by default. In Windows 7, you can use an INF file and a new registry key, **PKEY\_AudioEngine\_OEMPeriod**, to customize the periodicity for your audio device driver. This is a per endpoint setting.
 
-The following excerpt from an INF file shows how to use the [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) to customize the periodicity for an audio device driver.
+The following excerpt from an INF file shows how to use the [**INF AddReg directive**](../install/inf-addreg-directive.md) to customize the periodicity for an audio device driver.
 
 ```inf
 [Version]
@@ -56,10 +55,4 @@ The periodicity of 8ms is represented in HNSTIME units as 80000. In hexadecimal 
 Periodicity is specified as a VT\_BLOB data type. This is represented by a decimal value of 65. In hexadecimal format 65 is represented by the value 41 and the preceding INF file excerpt shows the REG\_BINARY data sequence with its first value of 41.
 
  
-
- 
-
-
-
-
 

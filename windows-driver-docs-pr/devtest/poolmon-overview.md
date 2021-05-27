@@ -1,7 +1,6 @@
 ---
 title: PoolMon Overview
 description: PoolMon Overview
-ms.assetid: c540e156-f0ce-4ac2-88e3-2e199b513abe
 keywords:
 - PoolMon WDK , about PoolMon
 - Memory Pool Monitor WDK , about Memory Pool Monitor

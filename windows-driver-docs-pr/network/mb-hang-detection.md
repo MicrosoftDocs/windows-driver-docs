@@ -1,7 +1,6 @@
 ---
 title: MB hang detection
 description: MB hang detection
-ms.assetid: D3D222F7-96BE-48F7-8074-8820E43E3C7B
 keywords:
 - MB hang detection, Mobile Broadband hang detection, Mobile Broadband miniport driver hang detection
 ms.date: 08/09/2018
@@ -63,3 +62,5 @@ After the surprise-removal, all drivers in the stack including `WMBCLASS` must r
 ## Related links
 
 [MB Device-based Reset and Recovery](mb-device-based-reset-and-recovery.md)
+
+[MB Device-based Reset and Recovery Trace](mb-device-based-reset-and-recovery-trace.md)

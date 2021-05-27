@@ -1,7 +1,6 @@
 ---
 title: DeviceProperties_RunDLL Function Prototype
 description: DeviceProperties_RunDLL Function Prototype
-ms.assetid: 15c93f6d-56e7-4872-a94b-0c948e2cd76f
 keywords:
 - device properties dialog box WDK device installations
 - invoking device properties dialog box

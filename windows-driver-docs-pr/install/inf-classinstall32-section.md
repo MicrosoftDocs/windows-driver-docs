@@ -1,7 +1,6 @@
 ---
 title: INF ClassInstall32 Section
 description: A ClassInstall32 section installs a new device setup class (and possibly a class installer) for devices in the new class.
-ms.assetid: c1da44ca-3b99-43de-99ef-56fbe67b46c2
 keywords:
 - INF ClassInstall32 Section Device and Driver Installation
 topic_type:
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
  
 
-A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
+A **ClassInstall32** section installs a new [device setup class](./overview-of-device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-```ini
+```inf
 [ClassInstall32] | 
 [ClassInstall32.nt] | 
 [ClassInstall32.ntx86] |
@@ -56,7 +55,7 @@ An **HKR** specification in any *add-registry-section* designates the **..Class\
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
 <a href="" id="addproperty-add-property-section--add-property-section-----"></a>**AddProperty=**<em>add-property-section</em>\[**,**<em>add-property-section</em>\] ...  
-(Windows Vista and later versions of Windows) References one or more INF file sections that modify [device properties](device-properties.md) that are set for a [device setup class](device-setup-classes.md). You should use an [**INF AddProperty directive**](inf-addproperty-directive.md) only to set a device setup class property that is new to Windows Vista or later versions of Windows operating systems.
+(Windows Vista and later versions of Windows) References one or more INF file sections that modify [device properties](device-properties.md) that are set for a [device setup class](./overview-of-device-setup-classes.md). You should use an [**INF AddProperty directive**](inf-addproperty-directive.md) only to set a device setup class property that is new to Windows Vista or later versions of Windows operating systems.
 
 For device class properties that were introduced earlier on Windows Server 2003, Windows XP, or Windows 2000, and that have corresponding registry entry values, you should continue to use [**INF AddReg directives**](inf-addreg-directive.md) to set the device setup class properties. These guidelines apply to system-defined properties and custom properties.
 
@@ -79,7 +78,7 @@ However, if a particular **{**<em>SetupClassGUID</em>**}** subkey exists in the 
 For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
 <a href="" id="delproperty-del-property-section--del-property-section-----"></a>**DelProperty=**<em>del-property-section</em>\[**,**<em>del-property-section</em>\] ...  
-(Windows Vista and later versions of Windows) References one or more INF file sections that delete [device properties](device-properties.md) that are set for a [device setup class](device-setup-classes.md). You should use an [**INF DelProperty directive**](inf-delproperty-directive.md) only to delete a device setup class property that is new to Windows Vista or later versions of Windows operating systems.
+(Windows Vista and later versions of Windows) References one or more INF file sections that delete [device properties](device-properties.md) that are set for a [device setup class](./overview-of-device-setup-classes.md). You should use an [**INF DelProperty directive**](inf-delproperty-directive.md) only to delete a device setup class property that is new to Windows Vista or later versions of Windows operating systems.
 
 For device class properties that were introduced earlier on Windows Server 2003, Windows XP, or Windows 2000, and that have corresponding registry entry values, you should continue to use [**INF DelReg directives**](inf-delreg-directive.md) to delete the device setup class properties. These guidelines apply to system-defined properties and custom properties.
 
@@ -115,10 +114,9 @@ Is valid in this section but almost never used.
 
 For more information, see [**INF UpdateIniFields Directive**](inf-updateinifields-directive.md).
 
-Remarks
--------
+## Remarks
 
-You should include a **ClassInstall32** section in a device INF file only to install a new custom device setup class. INF files for devices in an installed class, whether a [system-supplied device setup class](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)) or a custom class, should not include a **ClassInstall32** section. Because the system processes a **ClassInstall32** section only if a class is not already installed, you cannot use a **ClassInstall32** section to reinstall or change the settings for a class that is already installed. In particular, you cannot use a **ClassInstall32** section to add a class co-installer or a class filter driver for a class that is already installed. For information about how to install co-installers and filter drivers, see [Writing a Co-installer](writing-a-co-installer.md) and [Installing a Filter Driver](installing-a-filter-driver.md).
+You should include a **ClassInstall32** section in a device INF file only to install a new custom device setup class. INF files for devices in an installed class, whether a [system-supplied device setup class](./system-defined-device-setup-classes-reserved-for-system-use.md) or a custom class, should not include a **ClassInstall32** section. Because the system processes a **ClassInstall32** section only if a class is not already installed, you cannot use a **ClassInstall32** section to reinstall or change the settings for a class that is already installed. In particular, you cannot use a **ClassInstall32** section to add a class co-installer or a class filter driver for a class that is already installed. For information about how to install co-installers and filter drivers, see [Writing a Co-installer](writing-a-co-installer.md) and [Installing a Filter Driver](installing-a-filter-driver.md).
 
 Usually, a **ClassInstall32** section has one or more **AddReg** directives to add entries under a system-provided *SetupClassGUID* subkey in the registry. These entries can include a class-specific "friendly name," class installer path, class icon, property page provider, and so forth.
 
@@ -130,7 +128,7 @@ To support a multiplatform distribution of driver files, construct platform-spec
 
  
 
-Starting with Windows 2000, every installed device is associated with a [device setup class](device-setup-classes.md) in the registry. If the INF for a device to be installed is not associated with a new device class installer, or if its **ClassGUID=** specification in the **Version** section does not match a system-defined setup class GUID, that device's registry subkey is created under **..Class\\{**<em>UnknownClassGUID</em>**}**.
+Starting with Windows 2000, every installed device is associated with a [device setup class](./overview-of-device-setup-classes.md) in the registry. If the INF for a device to be installed is not associated with a new device class installer, or if its **ClassGUID=** specification in the **Version** section does not match a system-defined setup class GUID, that device's registry subkey is created under **..Class\\{**<em>UnknownClassGUID</em>**}**.
 
 The INF for any device class installer typically has an **AddReg** directive in its **ClassInstall32** section, to define at least one named section that creates a friendly name for its kind of device. The setup code automatically creates a *SetupClassGUID* subkey in the registry from the value supplied for the **ClassGUID=** entry in the INF's **Version** section when the first device of that (new) setup class is installed.
 
@@ -138,7 +136,7 @@ Under this *SetupClassGUID* subkey, such an INF also provides registry informati
 
 Such a class-specific add-registry section has the following general form:
 
-```ini
+```inf
 [SetupClassAddReg]
  
 HKR,,,,%DevClassName% ; device-class friendly name 
@@ -166,12 +164,11 @@ Setting the predefined **SilentInstall**, **NoDisplayClass**, and **NoInstallCla
 
 A **ClassInstall32** section can contain **AddReg** directives to set the **DeviceType**, **DeviceCharacteristics**, and **Security** for devices of its setup class. See the [**INF AddReg Directive**](inf-addreg-directive.md) for more information.
 
-Examples
---------
+## Examples
 
 This example shows the **ClassInstall32** section, along with the named section it references with the [**AddReg directive**](inf-addreg-directive.md), of the INF for the system display class installer.
 
-```ini
+```inf
 [ClassInstall32] 
 AddReg=display_class_addreg
 
@@ -183,7 +180,7 @@ HKR,,Icon,,"-1"
 
 By contrast, this example shows the add-registry section referenced in the system CD-ROM INF's **ClassInstall32** section. It sets up a class-specific property-page provider for the CD-ROM devices/drivers that it installs. This INF also sets the **SilentInstall** and **NoInstallClass** value entries in the CD-ROM class key to **TRUE** (**1**).
 
-```ini
+```inf
 [cdrom_class_addreg]
 HKR,,,,%CDClassName%
 HKR,,EnumPropPages32,,"SysSetup.Dll,CdromPropPageProvider"
@@ -217,20 +214,11 @@ HKR,,Icon,,"101"
 
 [**RenFiles**](inf-renfiles-directive.md)
 
-[**SetupDiBuildClassInfoListEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuildclassinfolistexa)
+[**SetupDiBuildClassInfoListEx**](/windows/win32/api/setupapi/nf-setupapi-setupdibuildclassinfolistexa)
 
 [**UpdateIniFields**](inf-updateinifields-directive.md)
 
 [**UpdateInis**](inf-updateinis-directive.md)
 
 [**Version**](inf-version-section.md)
-
- 
-
- 
-
-
-
-
-
 

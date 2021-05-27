@@ -1,7 +1,6 @@
 ---
 title: GUID_BTHPORT_DEVICE_INTERFACE
 description: GUID_BTHPORT_DEVICE_INTERFACE
-ms.assetid: 2e23912c-ab5b-4c4d-94c7-e763544cc2f5
 keywords: ["GUID_BTHPORT_DEVICE_INTERFACE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_BTHPORT_DEVICE_INTERFACE
 
 
-The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [Bluetooth radios](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)).
+The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](./overview-of-device-interface-classes.md) is defined for [Bluetooth radios](/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)).
 
 <table>
 <colgroup>
@@ -45,13 +44,11 @@ The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](https://docs.microsof
 
  
 
-Remarks
--------
+## Remarks
 
-Drivers for [Bluetooth radios](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)) register instances of this device interface class to notify the operating system and applications of the presence of Bluetooth radios.
+Drivers for [Bluetooth radios](/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)) register instances of this device interface class to notify the operating system and applications of the presence of Bluetooth radios.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -71,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

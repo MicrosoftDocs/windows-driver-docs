@@ -1,7 +1,6 @@
 ---
 title: How Container IDs are Generated
 description: How Container IDs are Generated
-ms.assetid: baa3c045-05ee-4012-97a3-c6e575c897be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Starting with Windows 7, the Plug and Play (PnP) manager generates a container I
 
 -   A bus driver provides a container ID.
 
-    When assigning a container ID to a devnode, the PnP manager first checks whether the bus driver of the devnode can provide a container ID. Bus drivers provide a container ID through an [**IRP_MN_QUERY_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id) request with the **Parameters.QueryId.IdType** field set to **BusQueryContainerID**.
+    When assigning a container ID to a devnode, the PnP manager first checks whether the bus driver of the devnode can provide a container ID. Bus drivers provide a container ID through an [**IRP_MN_QUERY_ID**](../kernel/irp-mn-query-id.md) request with the **Parameters.QueryId.IdType** field set to **BusQueryContainerID**.
 
     A bus driver can either obtain a genuine container ID that was embedded in the physical device hardware, or use a bus-specific unique ID from the device hardware to generate a container ID. Some examples of bus-specific unique IDs are a device's serial number or a media access control (MAC) address in the device's firmware.
 
@@ -27,7 +26,7 @@ For more information, see [Container IDs Generated from a Bus-Specific Unique ID
 
 -   The PnP manager generates a container ID through the removable device capability.
 
-    If a bus driver cannot provide a container ID for a devnode that it is enumerating, the PnP manager uses the removable device capability to generate a container ID for all devnodes enumerated for the device. The bus driver reports this device capability in response to an [**IRP_MN_QUERY_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request.
+    If a bus driver cannot provide a container ID for a devnode that it is enumerating, the PnP manager uses the removable device capability to generate a container ID for all devnodes enumerated for the device. The bus driver reports this device capability in response to an [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) request.
 
     For more information, see [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
 
@@ -48,12 +47,3 @@ For more information, see [Container IDs Generated from a Removable Device Capab
 
 
 In addition to these methods, the system uses ACPI BIOS object settings to specify device container groupings. For more information, see [Using ACPI for Device Container Grouping](using-acpi-for-device-container-grouping.md).
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x152 INVALID_PUSH_LOCK_FLAGS
 description: The INVALID_PUSH_LOCK_FLAGS bug check has a value of 0x00000152. This indicates that the flags supplied to one of push lock APIs were invalid.
-ms.assetid: E225CF12-42E8-490B-865D-E8153C388874
 keywords: ["Bug Check 0x152 INVALID_PUSH_LOCK_FLAGS", "INVALID_PUSH_LOCK_FLAGS"]
 ms.date: 05/23/2017
 topic_type:

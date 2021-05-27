@@ -1,7 +1,6 @@
 ---
 title: Identifying Backup Files for Deleted Boot Entries
 description: Identifying Backup Files for Deleted Boot Entries
-ms.assetid: ba1bcd10-83cb-4d28-9360-7927b169f056
 keywords:
 - NVRAM boot options WDK , backup file searches
 - EFI NVRAM boot options WDK , backup file searches

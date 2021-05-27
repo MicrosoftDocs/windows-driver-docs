@@ -1,13 +1,11 @@
 ---
 title: Selection
 description: Selection
-ms.assetid: 5DFE5B52-4D58-491c-9363-95E4A2FD680C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Selection
-
 
 Test Authoring and Execution Framework (TAEF) provides a mechanism to selectively run or omit certain tests based on the metadata information you provide. The following section goes through various examples of how to use this selection mechanism with TE.exe.
 
@@ -17,7 +15,7 @@ You can run TE.exe from a command prompt window.
 TE <test_binaries> [/select:<selection criteria>]
 ```
 
-This section describes the TE.exe **/select:**<em>selection criteria</em> option. For more information about TE.exe, see [TE.exe Command Options](te-exe-command-line-parameters.md).
+This section describes the TE.exe **/select**:*selection criteria* option. For more information about TE.exe, see [TE.exe Command Options](te-exe-command-line-parameters.md).
 
 The selection criteria gets applied globally to all the test binaries that have been mentioned at the command prompt. Let's consider two test\_binaries: **Examples\\CPP.SelectionCriteria1.Example.dll** and **Examples\\CPP.SelectionCriteria2.Example.dll** . The following example shows the properties, or metadata, specified at the various levels in these test\_binaries. You can also obtain this by specifying the **/listproperties** option in the Command Prompt window.
 
@@ -111,10 +109,10 @@ Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteri
 
 When using selection criteria, there are some things useful to keep in mind:
 
--   "**and**", "**not**", and "**or**" are **reserved** words and are **case insensitive**.
--   **metadata property names and values are case insensitive**, for example "C2" in the example, would match "c2" and "C2". Hence if you have one function with metadata "property" and another with "Property" and the selection criteria is looking for "PROPERTY", it would match both of these.
--   **String value in the selection query string should be included in single quotes. Within a string value in selection query "?" is a single wildcard character and "\*" is 0 or more wildcard characters.**
--   While using quotes at your command prompt, **be mindful of smart quotes when you copy over a selection query**. If you copy over a selection query from an Outlook e-mail, you may accidentally have smart quotes, and TAEF may be unable to parse it. Type out the quotes instead.
+- "**and**", "**not**", and "**or**" are **reserved** words and are **case insensitive**.
+- **metadata property names and values are case insensitive**, for example "C2" in the example, would match "c2" and "C2". Hence if you have one function with metadata "property" and another with "Property" and the selection criteria is looking for "PROPERTY", it would match both of these.
+- **String value in the selection query string should be included in single quotes. Within a string value in selection query "?" is a single wildcard character and "\*" is 0 or more wildcard characters.**
+- While using quotes at your command prompt, **be mindful of smart quotes when you copy over a selection query**. If you copy over a selection query from an Outlook e-mail, you may accidentally have smart quotes, and TAEF may be unable to parse it. Type out the quotes instead.
 
 Let's go over some quick examples of compound selection criteria and what they would execute.
 
@@ -125,7 +123,7 @@ Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteri
 
 Will run:
 
--   Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211
+- Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211
 
 ``` syntax
 Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteria2.Example.dll \
@@ -134,7 +132,7 @@ Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteri
 
 Will run:
 
--   Examples\\CPP.SelectionCriteria1.Example.dll - class11::method112
+- Examples\\CPP.SelectionCriteria1.Example.dll - class11::method112
 
 ``` syntax
 Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteria2.Example.dll \
@@ -143,8 +141,8 @@ Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteri
 
 Will run:
 
--   Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111
--   Examples\\CPP.SelectionCriteria2.Example.dll - class22::method221
+- Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111
+- Examples\\CPP.SelectionCriteria2.Example.dll - class22::method221
 
 ``` syntax
 Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteria2.Example.dll \
@@ -153,8 +151,8 @@ Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteri
 
 Will run all tests where BackwardsCompatibility value has not been specified. (See the following items.)
 
--   Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class12::method121
--   Examples\\CPP.SelectionCriteria2.Example.dll - class22::method221
+- Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class12::method121
+- Examples\\CPP.SelectionCriteria2.Example.dll - class22::method221
 
 ``` syntax
 Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteria2.Example.dll \
@@ -172,8 +170,8 @@ will run all tests where either the BackwardsCompatibility is not specified or, 
 
 In the example, this would selectively run:
 
--   Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class12::method121,
--   Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211, class22::method221
+- Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class12::method121,
+- Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211, class22::method221
 
 ``` syntax
 Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteria2.Example.dll /select:"@Owner='???'"
@@ -183,32 +181,31 @@ will only run tests that have property owner value containing only 3 characters.
 
 In our example, this would match "C" and run only:
 
--   Examples\\CPP.SelectionCriteria1.Example.dll - class12::method121
+- Examples\\CPP.SelectionCriteria1.Example.dll - class12::method121
 
 ``` syntax
 Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteria2.Example.dll /select:"@Priority>=1"
 ```
 
-NOTE: This is good example of how you can use "&gt;=", "&lt;=", "&gt;" and "&lt;" where propertyvalues are floatvalues.
+>[!NOTE]
+>This is good example of how you can use "&gt;=", "&lt;=", "&gt;" and "&lt;" where propertyvalues are floatvalues.
 
 In our example this would run all methods except Examples\\CPP.SelectionCriteria2.Example.dll - class22::method221, where no prority has been specified. In other words, this would run:
 
--   Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class11::method112, class12::method121
--   Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211.
+- Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class11::method112, class12::method121
+- Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211.
 
 NOTE that you can use "/select" in conjuction with other command options like "/list" "/listproperties" etc.
 
-## <span id="Smart_Quotes"></span><span id="smart_quotes"></span><span id="SMART_QUOTES"></span>Smart Quotes
+## Smart Quotes
 
-
-You may encounter smart quotes in your selection criteria if you are copying over a selection criteria from Outlook or Word document back over to your command prompt. You can find more information about what smart quotes are on: <http://en.wikipedia.org/wiki/Smart_quotes> and [Smart quotes: The hidden scourge of text meant for computer consumption](https://devblogs.microsoft.com/oldnewthing/?p=19033)
+You may encounter smart quotes in your selection criteria if you are copying over a selection criteria from Outlook or Word document back over to your command prompt. You can find more information about what smart quotes are on [Smart quotes: The hidden scourge of text meant for computer consumption](https://devblogs.microsoft.com/oldnewthing/?p=19033)
 
 There is no easy way to avoid smart quotes - best approach is to delete all of the " double quotes and ' single quotes in the selection criteria after you have copied it over to the command prompt and retype the quotes part of the query.
 
 There is an options setting to turn them off when creating messages in Outlook. Type "smart quotes" into the Outlook help box to find this.
 
-## <span id="Quick_Name_based_selection"></span><span id="quick_name_based_selection"></span><span id="QUICK_NAME_BASED_SELECTION"></span>Quick Name based selection
-
+## Quick Name based selection
 
 TAEF allows a quick selection based on name at the command prompt using the '/name' command line parameter:
 
@@ -236,12 +233,3 @@ Te.exe Examples\CPP.SelectionCriteria1.Example.dll Examples\CPP.SelectionCriteri
 ```
 
 Note that if both **/name** and **/select** are provided at the command prompt, then /name is ignored and /select takes precedence.
-
- 
-
- 
-
-
-
-
-

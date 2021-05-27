@@ -1,7 +1,6 @@
 ---
 title: GetFcpTargetMapping function
 description: The GetFcpTargetMapping WMI method retrieves a mapping between the information that uniquely identifies a set of logical units for the operating system and the Fibre Channel protocol (FCP) identifiers for these logical units.
-ms.assetid: 2e4b3554-31de-4eaa-9228-844639a219d5
 keywords: ["GetFcpTargetMapping function Storage Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetFcpTargetMapping** WMI method retrieves a mapping between the information that uniquely identifies a set of logical units for the operating system and the Fibre Channel protocol (FCP) identifiers for these logical units.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetFcpTargetMapping(
@@ -35,17 +33,16 @@ void GetFcpTargetMapping(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN\[8\]*   
-A worldwide name for the port whose table of mappings is to be retrieved. This information is delivered to the miniport driver in the **HbaPortWWN** member of a [**GetFcpTargetMapping\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_in) structure.
+A worldwide name for the port whose table of mappings is to be retrieved. This information is delivered to the miniport driver in the **HbaPortWWN** member of a [**GetFcpTargetMapping\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_in) structure.
 
 *InEntryCount*   
 Indicates the number of binding entries that the WMI provider can report in the *Entry* parameter.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFcpTargetMapping\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFcpTargetMapping\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_out) structure.
 
 *TotalEntryCount*   
 Indicates the total number of persistent bindings associated with the HBA.
@@ -54,20 +51,17 @@ Indicates the total number of persistent bindings associated with the HBA.
 Indicates the total number of mappings retrieved by the **GetFcpTargetMapping** method. This value will be less than or equal to *TotalEntryCount*.
 
 *Entry\[\]*   
-An array of structures of type [**HBAFCPScsiEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpscsientry) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
+An array of structures of type [**HBAFCPScsiEntry**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpscsientry) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAFCPInfo WMI Class](msfc-hbafcpinfo-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -95,16 +89,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**GetFcpTargetMapping\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_in)
+[**GetFcpTargetMapping\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_in)
 
-[**GetFcpTargetMapping\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_out)
-
- 
+[**GetFcpTargetMapping\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcptargetmapping_out)
 
  
-
-
-
-
-
 

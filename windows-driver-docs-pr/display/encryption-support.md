@@ -1,7 +1,6 @@
 ---
 title: Encryption Support
 description: Encryption Support
-ms.assetid: d5ce9c02-7126-4775-bb87-dae45b93b652
 keywords:
 - video decoding WDK DirectX VA , encryption
 - decoding video WDK DirectX VA , encryption
@@ -42,13 +41,7 @@ The precise number of steps for initializing the encryption protocol depends on 
 
 Each data set that is exchanged between the host and accelerator to pass the necessary encryption initialization parameters must be prefixed by the encryption protocol type GUID. This GUID distinguishes the data of one type of encryption from the data of another. This is necessary because one type of encryption could be used for one DirectX VA buffer, and another type of encryption could be used for another DirectX VA buffer.
 
-The [**DXVA\_EncryptProtocolHeader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_encryptprotocolheader) structure is used to indicate that an encryption protocol is being used as well as the type of encryption being used.
+The [**DXVA\_EncryptProtocolHeader**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_encryptprotocolheader) structure is used to indicate that an encryption protocol is being used as well as the type of encryption being used.
 
  
-
- 
-
-
-
-
 

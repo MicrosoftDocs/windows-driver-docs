@@ -1,7 +1,6 @@
 ---
 title: Understanding Tracefmt
 description: Understanding Tracefmt
-ms.assetid: 614be46f-8c44-43da-b4ec-7fd7195e2c08
 keywords:
 - Tracefmt WDK , about Tracefmt
 - TMF files WDK , Tracefmt

@@ -1,7 +1,6 @@
 ---
 title: Determine Why UMDF Driver Fails to Load or Device Fails to Start
 description: This topic describes troubleshooting steps you can use when a UMDF driver fails to load or an associated device fails to start.
-ms.assetid: 366c0ab4-8d06-4dac-a301-f433cf7978bd
 keywords:
 - debugging scenarios WDK UMDF , UMDF driver fails to load
 - debugging scenarios WDK UMDF , UMDF device fails to start
@@ -23,11 +22,11 @@ You can use the following technique with both UMDF version 1 and 2 drivers.
 1.  Check setup by ensuring that the following files are correct:
     -   Driver's INF file.
 
-        Use the [ChkINF](https://docs.microsoft.com/windows-hardware/drivers/devtest/chkinf) tool to validate the driver's INF file.
+        Use the [InfVerif](../devtest/infverif.md) tool to validate the driver's INF file.
 
     -   %windir%\\inf\\setupapi.dev.log (setupapi.log on Windows XP), %windir%\\setupact.log, and %windir%\\temp\\wudf\_update.log files.
 
-2.  If you did not find any setup issues, enable the **HostProcessDbgBreakOnStart** registry entry by using the [WDF Verifier control application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) (WdfVerifier.exe). By enabling **HostProcessDbgBreakOnStart**, you will make the driver host process for the device (WUDFHost.exe) break into the debugger shortly after WUDFHost.exe starts but before your driver DLL loads.
+2.  If you did not find any setup issues, enable the **HostProcessDbgBreakOnStart** registry entry by using the [WDF Verifier control application](../devtest/wdf-verifier-control-application.md) (WdfVerifier.exe). By enabling **HostProcessDbgBreakOnStart**, you will make the driver host process for the device (WUDFHost.exe) break into the debugger shortly after WUDFHost.exe starts but before your driver DLL loads.
 
     You should enable **HostProcessDbgBreakOnStart** with a user-mode debugger and not a kernel-mode debugger. A kernel-mode debugger, by default, does not receive user-mode module load and unload notifications. Therefore, you will not be able to set deferred breakpoints.
 
@@ -42,23 +41,17 @@ You can use the following technique with both UMDF version 1 and 2 drivers.
     2.  If your driver DLL does load, for subsequent steps, you can also use the **HostProcessDbgBreakOnDriverLoad** registry entry. Having **HostProcessDbgBreakOnDriverLoad** set causes WUDFHost.exe to break into the debugger after your driver DLL is loaded. **HostProcessDbgBreakOnDriverLoad** can also be used with the kernel-mode debugger because at this point in the driver loading and device starting process you can set breakpoints in your driver code.
     3.  This step applies to UMDF version 1 drivers only. Verify that your driver's **DllGetClassObject** routine is called. Verify that the class identifier (ID) for your driver is correct. Verify that **DllGetClassObject** runs successfully and returns a driver object (for example, bu Foo!DllGetClassObject).
 
-    4.  For UMDF version 1, verify that your driver's [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method is called. Verify that the method creates a device and returns successfully (for example, bu Foo!CMyDriver::OnDeviceAdd).
+    4.  For UMDF version 1, verify that your driver's [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method is called. Verify that the method creates a device and returns successfully (for example, bu Foo!CMyDriver::OnDeviceAdd).
 
-        For UMDF version 2, verify that your driver's [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function is called. Verify that the function creates a device and returns successfully (for example, bu Foo!MyDriverDeviceAdd).
+        For UMDF version 2, verify that your driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function is called. Verify that the function creates a device and returns successfully (for example, bu Foo!MyDriverDeviceAdd).
 
-    5.  For UMDF version 1, verify that your driver's [**IPnpCallbackHardware::OnPrepareHardware**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware) or [**IPnpCallback::OnD0Entry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-ond0entry) method is called. Verify that the method returns successfully (for example, bu Foo!CMyDevice::OnPrepareHardware or Foo!CMyDevice::OnD0Entry).
+    5.  For UMDF version 1, verify that your driver's [**IPnpCallbackHardware::OnPrepareHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware) or [**IPnpCallback::OnD0Entry**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-ond0entry) method is called. Verify that the method returns successfully (for example, bu Foo!CMyDevice::OnPrepareHardware or Foo!CMyDevice::OnD0Entry).
 
-        For UMDF version 2, verify that your driver's [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) or [*EvtDeviceD0Entry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) function is called. Verify that the function returns successfully (for example, bu Foo!MyDevicePrepareHardware or Foo!MyDeviceD0Entry).
+        For UMDF version 2, verify that your driver's [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) or [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) function is called. Verify that the function returns successfully (for example, bu Foo!MyDevicePrepareHardware or Foo!MyDeviceD0Entry).
 
     6.  If each of the previous operations run successfully but the operation that follows does not run, you should check the following items:
         1.  Verify that every driver above and below your driver in the user-mode stack also successfully performs these operations.
-        2.  Verify that the kernel stack below your driver successfully completes the [**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) and [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) IRPs.
+        2.  Verify that the kernel stack below your driver successfully completes the [**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md) and [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md) IRPs.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Driver Support for DirectSound
 description: Driver Support for DirectSound
-ms.assetid: a32a2a01-4ecd-485f-8293-402a0bcc8336
 keywords:
 - WDM audio drivers WDK , DirectSound
 - audio drivers WDK , DirectSound

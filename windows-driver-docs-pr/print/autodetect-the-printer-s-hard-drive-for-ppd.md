@@ -1,7 +1,6 @@
 ---
 title: Autodetect the Printer's Hard Drive for PPD
 description: Autodetect the Printer's Hard Drive for PPD
-ms.assetid: 0f2eba5c-1a05-4aaf-8780-266d2339570e
 keywords:
 - autodetecting printer hard drive WDK printer autoconfiguration
 - PPD files WDK autoconfiguration , autodetecting hard drive

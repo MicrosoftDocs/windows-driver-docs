@@ -1,7 +1,6 @@
 ---
 title: Setting Error Source Information
 description: Setting Error Source Information
-ms.assetid: 87c61c3e-768a-4784-b9ec-1ec85d65ea81
 keywords:
 - error sources WDK WHEA , setting information
 - errors WDK WHEA , error sources
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Setting Error Source Information
 
 
-A user-mode application can set the information for a particular [error source](hardware-errors-and-error-sources.md) that is supported by the hardware platform by calling the [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. In this situation, the application provides a [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structure that describes the information to be set for the specified error source.
+A user-mode application can set the information for a particular [error source](hardware-errors-and-error-sources.md) that is supported by the hardware platform by calling the [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) method. In this situation, the application provides a [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structure that describes the information to be set for the specified error source.
 
 The following code example shows how to set the error source information for a particular error source.
 
@@ -168,14 +167,9 @@ An application typically sets the information for an error source when it modifi
 
 2.  Modify the contents of the WHEA\_ERROR\_SOURCE\_DESCRIPTOR structure to change the configuration of the error source.
 
-3.  Set the error source information for the error source by calling the [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method
+3.  Set the error source information for the error source by calling the [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) method
 
 Any changes that are made to the configuration of an error source will not take effect until after the system is restarted.
 
  
-
- 
-
-
-
 

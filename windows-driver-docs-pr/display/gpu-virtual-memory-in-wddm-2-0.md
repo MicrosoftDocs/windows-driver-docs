@@ -1,7 +1,6 @@
 ---
 title: GPU virtual memory in WDDM 2.0
 description: This section provides details about GPU virtual memory, including why the changes were made and how drivers will use it.
-ms.assetid: 88A99A31-9B84-4594-8A93-1C2783F7390D
 ms.date: 06/20/2019
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ This section provides details about GPU virtual memory, including why the change
 
 ## Introduction
 
-Under Windows Display Driver Model (WDDM) v1.x, the device driver interface (DDI) is built such that graphics processing unit (GPU) engines are expected to reference memory through segment physical addresses. As segments are shared across applications and over committed, resources gets relocated through their lifetime and their assigned physical addresses change. This leads to the need to track memory references inside command buffers through allocation and patch location lists, and to patch those buffers with the correct physical memory reference before submission to a GPU engine. This tracking and patching is expensive and essentially imposes a scheduling model where the video memory manager has to inspect every packet before it can be submitted to an engine.
+Under Windows Display Driver Model (WDDM) v1.x, the device driver interface (DDI) is built such that graphics processing unit (GPU) engines are expected to reference memory through segment physical addresses. As segments are shared across applications and over committed, resources get relocated through their lifetime and their assigned physical addresses change. This leads to the need to track memory references inside command buffers through allocation and patch location lists, and to patch those buffers with the correct physical memory reference before submission to a GPU engine. This tracking and patching is expensive and essentially imposes a scheduling model where the video memory manager has to inspect every packet before it can be submitted to an engine.
 
 As more hardware vendors move toward a hardware based scheduling model, where work is submitted to the GPU directly from user mode and where the GPU manages the various queue of work itself, it is necessary to eliminate the need for the video memory manager to inspect and patch every command buffer before submission to a GPU engine.
 

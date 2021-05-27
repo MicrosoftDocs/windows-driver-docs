@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS is a TLV that contains incoming GO Negotiation Response parameters.
-ms.assetid: 78C9B274-FAF0-4B2E-98A9-865A65105DA1
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
@@ -33,14 +32,13 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                             | Specifies the tie-breaker field of the GO Intent.                                                                                                                               |
 | UINT16                                            | Specifies the GO Configuration Timeout in milliseconds.                                                                                                                         |
 | UINT16                                            | Specifies the Client Configuration Timeout in milliseconds.                                                                                                                     |
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Intended interface address. Specifies the local MAC Address for future Wi-Fi Direct connection.                                                                                 |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Intended interface address. Specifies the local MAC Address for future Wi-Fi Direct connection.                                                                                 |
 | UINT8                                             | Specifies the Wi-Fi Direct Group capability bitmask. The bitmask matches those defined in Table 13-Group Capability Bitmap definition of the Wi-Fi P2P technical specification. |
 | UINT8                                             | Specifies the bits set by the operating system in the Group capability bitmap above.                                                                                            |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -64,9 +62,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_NETWORK_TUNER
 description: KSCATEGORY_BDA_NETWORK_TUNER
-ms.assetid: d3f9d393-c8a1-4280-8796-a1de755f9508
 keywords: ["KSCATEGORY_BDA_NETWORK_TUNER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_NETWORK_TUNER
 
 
-The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a network tuner in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index) (BDA).
+The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a network tuner in the [broadcast driver architecture](/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -45,17 +44,15 @@ The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://docs.microsoft
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_TUNER to indicate to the operating system that the devices support a BDA network tuner filter.
 
 For an example of how to register this functional category in an INF file, see the INF file *BDASwTunerATSC.inf*. *BDASwTunerATSC.inf* is included with the BDA sample generic tuner in the *src\\swtuner\\BDAtuner\\gentuner* subdirectory of the WDK.
 
-For more information about the KS functional category for the network tuner filters, see [Common Control Nodes and Filters](https://docs.microsoft.com/windows-hardware/drivers/stream/common-control-nodes-and-filters) and [BDA Filter Category GUIDs](https://docs.microsoft.com/windows-hardware/drivers/stream/bda-filter-category-guids).
+For more information about the KS functional category for the network tuner filters, see [Common Control Nodes and Filters](../stream/common-control-nodes-and-filters.md) and [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,10 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

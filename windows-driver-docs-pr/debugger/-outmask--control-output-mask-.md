@@ -1,7 +1,6 @@
 ---
 title: .outmask (Control Output Mask)
 description: The .outmask command controls the current output mask.
-ms.assetid: a925f948-a746-4fed-9ccd-95513f41e3bf
 keywords: ["Control Output Mask (.outmask) command", ".outmask (Control Output Mask) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,8 +66,7 @@ Restores the output mask to the default value. This parameter is equivalent to *
 
  
 
-Remarks
--------
+## Remarks
 
 Each output mask flag enables the debugger to display certain output in the [Debugger Command Window](debugger-command-window.md). If all of the mask flags are set, all output is displayed.
 

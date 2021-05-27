@@ -1,7 +1,6 @@
 ---
 title: INF File Entries
 description: INF File Entries
-ms.assetid: 8af2cbe7-f249-4e2f-940f-b50bc451cabe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,15 +17,15 @@ Using a microdriver for your device requires additional entries in the setup inf
 
 The following applies to Microsoft Windows Millennium Edition (Me), Windows XP, and later operating systems.
 
-In the space in the [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) where your WIA minidriver normally would be referenced, the INF should list *wiafbdrv.dll* as the driver. This is the component that implements the WIA flatbed driver.
+In the space in the [**INF AddReg Directive**](../install/inf-addreg-directive.md) where your WIA minidriver normally would be referenced, the INF should list *wiafbdrv.dll* as the driver. This is the component that implements the WIA flatbed driver.
 
-Be sure that the [**INF CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) includes both your microdriver and *wiafbdrv.dll*, which is copied from the Windows CAB files. The rest of the INF file is the same as for other WIA devices.
+Be sure that the [**INF CopyFiles Directive**](../install/inf-copyfiles-directive.md) includes both your microdriver and *wiafbdrv.dll*, which is copied from the Windows CAB files. The rest of the INF file is the same as for other WIA devices.
 
 ### Windows XP INF File Entries
 
 The following information applies to Windows XP and later. Windows Me INF files do not use **Include** and **Needs** directives, and so cannot use this style of INF.
 
-The [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) should contain the directive **Include**=sti.inf. Additionally, the **Needs** directive should reference **STI.MICRODRIVERSection**, as well as the appropriate device type section. This will supply the necessary USDClass and CLSID **AddReg** directives, so these do not need to be explicitly included in the INF.
+The [**INF DDInstall Section**](../install/inf-ddinstall-section.md) should contain the directive **Include**=sti.inf. Additionally, the **Needs** directive should reference **STI.MICRODRIVERSection**, as well as the appropriate device type section. This will supply the necessary USDClass and CLSID **AddReg** directives, so these do not need to be explicitly included in the INF.
 
 **Note**  It is not necessary to include *wiafbdrv.dll* in your **CopyFiles** directive.
 
@@ -35,9 +34,4 @@ The [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/driv
 The INF included with the WIA microdriver on the Windows Driver Kit (WDK) CD uses this new method to reference the microdriver.
 
  
-
- 
-
-
-
 

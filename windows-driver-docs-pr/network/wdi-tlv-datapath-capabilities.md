@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DATAPATH_CAPABILITIES
 description: WDI_TLV_DATAPATH_CAPABILITIES is a TLV that contains datapath capabilities.
-ms.assetid: 7B545858-56A2-4655-91D5-37CA4EB61E1E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DATAPATH_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -39,7 +38,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_interconnect_type" data-raw-source="[&lt;strong&gt;WDI_INTERCONNECT_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_interconnect_type)"><strong>WDI_INTERCONNECT_TYPE</strong></a> (UINT32)</td>
+<td><a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_interconnect_type" data-raw-source="[&lt;strong&gt;WDI_INTERCONNECT_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_interconnect_type)"><strong>WDI_INTERCONNECT_TYPE</strong></a> (UINT32)</td>
 <td>Interconnect type.</td>
 </tr>
 <tr class="even">
@@ -86,8 +85,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -109,11 +107,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

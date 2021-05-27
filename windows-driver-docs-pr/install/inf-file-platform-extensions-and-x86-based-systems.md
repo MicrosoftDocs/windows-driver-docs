@@ -1,7 +1,6 @@
 ---
 title: INF File Platform Extensions and x86-Based Systems
 description: INF File Platform Extensions and x86-Based Systems
-ms.assetid: d0e1c6ba-32c4-413d-b0d9-620e3617a62b
 keywords:
 - x86 INF file platform extensions WDK
 ms.date: 04/20/2017
@@ -92,7 +91,7 @@ To create a single cross-operating system INF file for x86-based systems that ru
 
 2.  Include an INF **Manufacturer** section that includes a *manufacturer-identifier* that specifies the *Models* section name for the device, but does not specify an optional **.nt** or **.ntx86** platform extension. For example, the following **Manufacturer** section specifies a *Models* section name of "AbcModelSection" for an Abc device.
 
-    ```ini
+    ```inf
     [Manufacturer]
     ; The manufacturer-identifier for the Abc device.
     %ManufacturerName%=AbcModelSection
@@ -100,14 +99,14 @@ To create a single cross-operating system INF file for x86-based systems that ru
 
 3.  Include a *Models* section whose name matches the *Models* section name that is specified by the *manufacturer-identifier* in the **Manufacturer** section. For example, the following AbcModelSection section for an Abc device includes a *device-description* that specifies an *install-section-name* of "AbcInstallSection."
 
-    ```ini
+    ```inf
     [AbcModelSection]
     %AbcDeviceName%=AbcInstallSection,Abc-hw-id
     ```
 
 4.  Include a *DDInstall* section whose name matches the *install-section-name* that is specified by the *Models* section. For example, the *device-description* in the AbcModelSection section specifies the following AbcInstallSection section for an Abc device. Windows processes this section to install the Abc device on x86-based systems that run Windows 2000 and later versions of Windows.
 
-    ```ini
+    ```inf
     [AbcInstallSection]
     ; Install section entries go here.
     ...

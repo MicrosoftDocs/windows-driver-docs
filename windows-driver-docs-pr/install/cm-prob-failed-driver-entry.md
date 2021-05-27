@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_FAILED_DRIVER_ENTRY
 description: CM_PROB_FAILED_DRIVER_ENTRY
-ms.assetid: e1345892-69db-4135-be5b-1d182a2a1d66
 keywords:
 - CM_PROB_FAILED_DRIVER_ENTRY
 ms.date: 04/20/2017

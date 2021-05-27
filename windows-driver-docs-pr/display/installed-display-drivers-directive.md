@@ -1,7 +1,6 @@
 ---
 title: Installed display drivers directive
 description: The installed display drivers directive is a software device setting that gives the proper name for the UMD that is installed as part of the driver package.
-ms.assetid: 7104129C-57B1-4F37-B1E0-D86529C9866E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

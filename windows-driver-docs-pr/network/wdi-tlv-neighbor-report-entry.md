@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_NEIGHBOR_REPORT_ENTRY
 description: WDI_TLV_NEIGHBOR_REPORT_ENTRY is a TLV that contains a neighbor report.
-ms.assetid: 23A0AA84-3EDA-4D6F-9140-2361C0CF55AA
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NEIGHBOR_REPORT_ENTRY Network Drivers Starting with Windows Vista
@@ -36,8 +35,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

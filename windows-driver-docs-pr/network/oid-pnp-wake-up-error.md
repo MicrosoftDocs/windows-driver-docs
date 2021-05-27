@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_WAKE_UP_ERROR
 description: OID_PNP_WAKE_UP_ERROR
-ms.assetid: e6386a35-7077-45b3-bc0c-164477168a55
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_WAKE_UP_ERROR Network Drivers Starting with Windows Vista
@@ -20,8 +19,7 @@ The data type for this OID is a ULONG value.
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling Ndis(Co)Request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

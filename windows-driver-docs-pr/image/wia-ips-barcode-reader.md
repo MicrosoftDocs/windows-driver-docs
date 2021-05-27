@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_BARCODE\_READER
 description: The WIA\_IPS\_BARCODE\_READER property is used by the WIA minidriver to list the available barcode reader location (one/fixed or multiple) and by the application client to select one of these locations and enable barcode detection.
-ms.assetid: EED6CE6D-38CC-4368-8722-5765849C5A7D
 keywords: ["WIA_IPS_BARCODE_READER Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_BARCODE\_READER** property.
 
@@ -129,8 +127,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

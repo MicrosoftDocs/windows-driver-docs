@@ -1,7 +1,6 @@
 ---
 title: Determining Why the Reflector Terminated the Host Process
 description: This topic describes how you can analyze why the reflector terminated the driver host process (WUDFHost.exe).
-ms.assetid: c80b117b-597a-494a-bc28-5a918d2a9279
 keywords:
 - debugging scenarios WDK UMDF , reflector terminates the host process
 - UMDF WDK , debugging scenarios, reflector terminates the host process
@@ -49,11 +48,11 @@ reg add "HKLM\Software\Microsoft\windows NT\CurrentVersion\Wudf" /v LogEnable /t
 
 In other cases, you might need to attach to a live kernel-mode target to determine why the reflector terminated the host process. To set up your debugging session, follow the steps described in [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md#kd).
 
-Once you have established a connection, use !wdfkd.wdfumtriage to examine the UMDF drivers, display the outstanding IRPs by using the [**!wdfkd.wdfumirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirps) UMDF debugger extension ([**!wudfext.umirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirps) for UMDF version 1).
+Once you have established a connection, use !wdfkd.wdfumtriage to examine the UMDF drivers, display the outstanding IRPs by using the [**!wdfkd.wdfumirps**](../debugger/-wdfkd-wdfumirps.md) UMDF debugger extension ([**!wudfext.umirps**](../debugger/-wudfext-umirps.md) for UMDF version 1).
 
 -   If a PnP IRP or a power IRP is pending, determine why the driver causes the IRP to hang by examining threads in the host process.
 
-    You can use the [**!process**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process) extension to examine the threads running in the host process. The **0x1f** flags value shows you the stack trace for each thread.
+    You can use the [**!process**](../debugger/-process.md) extension to examine the threads running in the host process. The **0x1f** flags value shows you the stack trace for each thread.
 
     **!process** *&lt;process addr&gt;* **0x1f**
 
@@ -62,4 +61,3 @@ Once you have established a connection, use !wdfkd.wdfumtriage to examine the UM
 
  
 
- 

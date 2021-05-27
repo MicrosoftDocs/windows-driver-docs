@@ -1,5 +1,5 @@
 ---
-Description: The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
+description: The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
 title: Overview of implementing power management in USB client drivers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -12,9 +12,9 @@ The topics in this section examine the ways in which the WDM power model interac
 
 Power management abilities of USB devices that comply with the Universal Serial Bus (USB) specification have a rich and complex set of power management features. It is important to understand how these features interact with the Windows Driver Model (WDM), and in particular how Microsoft Windows has adapted standard USB features to support the system wakeup architecture.
 
-For information about WDM power management in kernel-mode drivers, see [Implementing Power Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-power-management).
+For information about WDM power management in kernel-mode drivers, see [Implementing Power Management](../kernel/introduction-to-power-management.md).
 
-USB client drivers based on kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) should use the mechanisms supported by the base technology and respective frameworks for managing power for a USB device. For information about managing power in KMDF-based client drivers, see [Supporting PnP and Power Management in Your Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-your-driver); for UMDF-based client drivers, see [PnP and Power Management in UMDF-based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/pnp-and-power-management-in-umdf-drivers).
+USB client drivers based on kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) should use the mechanisms supported by the base technology and respective frameworks for managing power for a USB device. For information about managing power in KMDF-based client drivers, see [Supporting PnP and Power Management in Your Driver](../wdf/supporting-pnp-and-power-management-in-your-driver.md); for UMDF-based client drivers, see [PnP and Power Management in UMDF-based Drivers](../wdf/pnp-and-power-management-in-umdf-drivers.md).
 
 ## In this section
 
@@ -61,7 +61,4 @@ USB client drivers based on kernel-mode driver framework (KMDF) and user-mode dr
  
 
 ## Related topics
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[USB Driver Development Guide](usb-driver-development-guide.md)

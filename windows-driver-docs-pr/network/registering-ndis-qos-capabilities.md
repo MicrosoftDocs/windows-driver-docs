@@ -1,7 +1,6 @@
 ---
 title: Registering NDIS QoS Capabilities
 description: Registering NDIS QoS Capabilities
-ms.assetid: 03D70079-37A4-4FAA-BF18-ACED3A9E8267
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ Miniport drivers regsiter the following Quality of Service (QoS) capabilities wi
 
 For more information about the NDIS QoS INF keyword settings, see [Standardized INF Keywords for NDIS QoS](standardized-inf-keywords-for-ndis-qos.md).
 
-The miniport driver reports the hardware NDIS QoS capabilities of the underlying network adapter through an [**NDIS\_QOS\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure that is initialized in the following way:
+The miniport driver reports the hardware NDIS QoS capabilities of the underlying network adapter through an [**NDIS\_QOS\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure that is initialized in the following way:
 
 1.  The miniport driver initializes the **Header** member. The driver sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_QOS\_CAPABILITIES.
 
@@ -65,25 +64,19 @@ The miniport driver reports the hardware NDIS QoS capabilities of the underlying
 
      
 
-When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver registers the NDIS QoS attributes of the network adapter by following these steps:
+When NDIS calls the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver registers the NDIS QoS attributes of the network adapter by following these steps:
 
-1.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
+1.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
-    The miniport driver sets the **HardwareQOSCapabilities** member to a pointer to the previouslyinitialized [**NDIS\_QOS\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure.
+    The miniport driver sets the **HardwareQOSCapabilities** member to a pointer to the previouslyinitialized [**NDIS\_QOS\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure.
 
-    If the registry setting for the **\*QOS** INF keyword has a value of one, the NDIS QoS capabilities are enabled on the network adapter. The miniport driver sets the **CurrentQOSCapabilities** members to a pointer to the same [**NDIS\_QOS\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure.
+    If the registry setting for the **\*QOS** INF keyword has a value of one, the NDIS QoS capabilities are enabled on the network adapter. The miniport driver sets the **CurrentQOSCapabilities** members to a pointer to the same [**NDIS\_QOS\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure.
 
     If the registry setting for the **\*QOS** INF keyword has a value of zero, the NDIS QoS capabilities are disabled on the network adapter. The miniport driver must set the **CurrentQOSCapabilities** member to NULL.
 
-2.  The driver calls [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
+2.  The driver calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
  
-
- 
-
-
-
-
 

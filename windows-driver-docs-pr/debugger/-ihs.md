@@ -1,7 +1,6 @@
 ---
 title: ihs
 description: The ihs extension displays the interrupt history record for the specified processor, using program counter symbols.
-ms.assetid: 3b91e8aa-5639-4273-9da4-1927d2ae8c62
 keywords: ["interrupt history record", "ihs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Specifies a processor. If *Processor* is omitted, the current processor is used.
 
 This extension command can only be used with an Itanium target computer.
 
-Remarks
--------
+## Remarks
 
 To display the interrupt history record without using program counter symbols, use the [**!ih**](-ih.md) extension. To enable the interrupt history record, add **/configflag=32** to the boot entry options.
 

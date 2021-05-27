@@ -1,7 +1,6 @@
 ---
 title: minipkd.help
 description: The minipkd.help extension displays help text for the Minipkd.dll extension commands.
-ms.assetid: 5629aec8-8c9d-4ed0-91fb-c8d020f78405
 keywords: ["minipkd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,8 +46,7 @@ The **!minipkd.help** extension displays help text for the Minipkd.dll extension
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If an error message similar to the following appears, it indicates that the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols.
 

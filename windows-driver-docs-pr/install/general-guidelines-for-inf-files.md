@@ -1,7 +1,6 @@
 ---
 title: General Guidelines for INF Files
 description: General Guidelines for INF Files
-ms.assetid: a0394708-46ed-47f8-a629-0c7d3088df3b
 keywords:
 - INF files WDK device installations , general guidelines
 ms.date: 04/20/2017
@@ -15,15 +14,15 @@ ms.localizationpriority: medium
 
 INF files have many common parts and follow a single set of syntax rules. However, they are also as different as the variety of devices that are supported by Microsoft Windows. When you write an INF file, refer to the following sources of information:
 
--   This section and the [INF File Sections and Directives](inf-file-sections-and-directives.md) reference material.
+-   This section and the [INF File Sections and Directives](./index.md) reference material.
 
 -   The documentation for your class of device.
 
-    For example, if your device is a printer, see [Installing and Configuring Printer Drivers](https://docs.microsoft.com/windows-hardware/drivers/print/installing-and-configuring-printer-drivers).
+    For example, if your device is a printer, see [Installing and Configuring Printer Drivers](../print/installing-and-configuring-printer-drivers.md).
 
 -   WDK tools for INF files.
 
-    For more information, see [Tools for INF Files](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-inf-files). These tools are included in the \\Tools subdirectory of the WDK.
+    For more information, see [Tools for INF Files](../devtest/tools-for-inf-files.md). These tools are included in the \\Tools subdirectory of the WDK.
 
 -   Sample INF files and INF files for similar devices.
 
@@ -42,9 +41,3 @@ Do not arbitrarily modify the time stamps of your INF files, as a version contro
 - INF names should be named in a way that reduces the chance of conflicts with INFs from other vendors.  For example, the INF name could include in it, either as a prefix or a suffix, an abbreviation of your company name.
 - If you have two different variants of the same driver package differing in aspects such as branding strings, settings, etc., those two driver packages should have unique names.
 - Each time you update an INF or any file the INF references, you should update the date and version in the INF.
- 
-
-
-
-
-

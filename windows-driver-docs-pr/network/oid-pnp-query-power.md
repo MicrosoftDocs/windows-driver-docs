@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_QUERY_POWER
 description: OID_PNP_QUERY_POWER
-ms.assetid: 62675042-3339-48de-97bb-58bfa05e1b39
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_QUERY_POWER Network Drivers Starting with Windows Vista
@@ -35,8 +34,7 @@ An OID\_PNP\_QUERY\_POWER request is always followed by an OID\_PNP\_SET\_POWER 
 
 An intermediate driver must always return NDIS\_STATUS\_SUCCESS to a query of OID\_PNP\_QUERY\_POWER. An intermediate driver should never propagate an OID\_PNP\_QUERY\_POWER request to an underlying miniport driver.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

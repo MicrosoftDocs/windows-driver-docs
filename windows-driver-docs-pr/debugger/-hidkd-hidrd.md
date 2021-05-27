@@ -1,7 +1,6 @@
 ---
 title: hidkd.hidrd
 description: The hidkd.hidrd command displays a HID report descriptor in both raw and parsed format.
-ms.assetid: 8A9D76F2-7A36-4458-83A4-EDCB153EC45A
 keywords: ["hidkd.hidrd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,8 +35,7 @@ The length, in bytes, of the raw report descriptor data. To get the length, use 
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 This example shows how to use the [**!hidfdo**](-hidkd-hidfdo.md) command followed by the **!hidrd** command. The output of **!hidfdo** shows both the address and length of the raw report descriptor data.
 

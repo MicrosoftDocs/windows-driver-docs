@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.CoInstallers Section
 description: The CoInstallers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
-ms.assetid: 2deb16e1-632a-4169-b718-7e3501e64562
 keywords:
 - INF DDInstall.CoInstallers Section Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 This optional section registers one or more device-specific co-installers supplied on the distribution media to supplement the operations of existing device class installers.
 
-```ini
+```inf
 [install-section-name.CoInstallers] |
 [install-section-name.nt.CoInstallers] | 
 [install-section-name.ntx86.CoInstallers] | 
@@ -66,7 +65,7 @@ However, system INF files that install co-installers never use this directive in
 For more information, see [**INF CopyFiles Directive**](inf-copyfiles-directive.md).
 
 <a href="" id="include-filename-inf--filename2-inf----"></a>**Include=**<em>filename</em>**.inf**\[**,**<em>filename2</em>**.inf**\]...  
-Specifies one or more additional system-supplied INF files that contain sections needed to install the co-installers for this device or [device setup class](device-setup-classes.md). If this entry is specified, usually so is a **Needs** entry. (For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md)).
+Specifies one or more additional system-supplied INF files that contain sections needed to install the co-installers for this device or [device setup class](./overview-of-device-setup-classes.md). If this entry is specified, usually so is a **Needs** entry. (For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md)).
 
 <a href="" id="needs-inf-section-name--inf-section-name----"></a>**Needs=**<em>inf-section-name</em>\[**,**<em>inf-section-name</em>\]...  
 Specifies the particular sections that must be processed during the installation of this device. Typically, such a named section is a <em>DDInstall</em>**.CoInstallers** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a <em>DDInstall</em>**.CoInstallers** section of the included INF.
@@ -108,8 +107,7 @@ This entry is valid in this section but almost never used.
 
 For more information, see [**INF Ini2Reg Directive**](inf-ini2reg-directive.md).
 
-Remarks
--------
+## Remarks
 
 The specified *DDInstall* section must be referenced in a device/models-specific entry under the per-manufacturer *Models* section of the INF file.
 
@@ -129,9 +127,9 @@ All co-installer files must be copied into the *%SystemRoot%\\system32* director
 
 ### Registering Device-Specific Co-installers
 
-Registering one or more device-specific co-installers requires adding a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-typed value entry to the registry. Specify an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive, by using the following general form:
+Registering one or more device-specific co-installers requires adding a [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-typed value entry to the registry. Specify an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive, by using the following general form:
 
-```ini
+```inf
 [DDInstall.CoInstallers_DeviceAddReg]
  
 HKR,,CoInstallers32,0x00010000,"DevSpecificCoInstall.dll
@@ -149,7 +147,7 @@ For more information, see [Registering a Device-Specific Co-installer](registeri
 
 To add a value entry (and setup-class subkey, if it does not exist already) for one or more device-class co-installers to the registry, an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive has the following general form:
 
-```ini
+```inf
 [DDInstall.CoInstallers_ClassAddReg]
  
 HKLM,System\CurrentControlSet\Control
@@ -158,22 +156,21 @@ HKLM,System\CurrentControlSet\Control
  ...
 ```
 
-Each entry in such an add-registry section is listed as a single line within the INF file, and each supplied class co-installer DLL must have a unique name. If the supplied co-installers should be used for more than one [device setup class](device-setup-classes.md), this add-registry section can have more than one entry, each with the appropriate *SetupClassGUID* value.
+Each entry in such an add-registry section is listed as a single line within the INF file, and each supplied class co-installer DLL must have a unique name. If the supplied co-installers should be used for more than one [device setup class](./overview-of-device-setup-classes.md), this add-registry section can have more than one entry, each with the appropriate *SetupClassGUID* value.
 
-Such a supplemental device-class co-installer must not replace any already registered co-installers for an existing class installer. Therefore, the class co-installer must have a unique name and the [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value supplied must be appended (as indicated by the **8** in the *flags* value **0x0010008**) to the class-specific co-installer entries, if any, already present in the **{**<em>SetupClassGUID</em>**}** subkey.
+Such a supplemental device-class co-installer must not replace any already registered co-installers for an existing class installer. Therefore, the class co-installer must have a unique name and the [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-type value supplied must be appended (as indicated by the **8** in the *flags* value **0x0010008**) to the class-specific co-installer entries, if any, already present in the **{**<em>SetupClassGUID</em>**}** subkey.
 
 **Note**  The [SetupAPI](setupapi.md) functions never append a duplicate <em>DevClssCoInstall</em>**.dll** to a value entry if a co-installer of the same name is already registered.
 
  
 
-The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to **SetupInstallFromInfSection**.
+The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to [**SetupInstallFromInfSection**](/windows/win32/api/setupapi/nf-setupapi-setupinstallfrominfsectiona) made by a *device installation application*.
 
-Examples
---------
+## Examples
 
 This example shows the *DDInstall*.**CoInstallers** section for IrDA serial network adapters. The system-supplied INF for these IrDA (serial) NICs supplies a co-installer to the system IrDA class installer.
 
-```ini
+```inf
 ; DDInstall section
 [PNP.NT]
 AddReg=ISIR.reg, Generic.reg, Serial.reg
@@ -246,13 +243,4 @@ Be aware that any <em>DDInstall</em>**.CoInstallers** section in an INF supplied
 
 **UpdateInis**
 [**Version**](inf-version-section.md)
-
- 
-
- 
-
-
-
-
-
 

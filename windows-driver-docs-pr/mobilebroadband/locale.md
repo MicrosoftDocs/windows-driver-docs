@@ -1,14 +1,13 @@
 ---
 title: Locale
 description: Locale
-ms.assetid: 1cf8d075-a1b3-4554-83d5-71fd5059c1c4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Locale
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Locale element specifies the locale of the service metadata package. A service metadata package can specify single or multiple locales. To use multiple locales, you must set the [MultipleLocale](multiplelocale.md) element to **true**.
 

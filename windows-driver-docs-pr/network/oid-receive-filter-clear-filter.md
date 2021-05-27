@@ -1,7 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_CLEAR_FILTER
 description: Overlying drivers issue OID set requests of OID_RECEIVE_FILTER_CLEAR_FILTER to clear a receive filter on a network adapter.
-ms.assetid: 5e92a11a-468e-431d-b4e5-7b0da3847e8a
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_CLEAR_FILTER Network Drivers Starting with Windows Vista
@@ -13,24 +12,23 @@ ms.localizationpriority: medium
 
 Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_CLEAR\_FILTER to clear a receive filter on a network adapter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_CLEAR\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_CLEAR\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
--   [NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters).
+-   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](./guidelines-for-managing-packet-coalescing-receive-filters.md).
 
--   [Single Root I/O Virtualization (SR-IOV)](https://docs.microsoft.com/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port).
+-   [Single Root I/O Virtualization (SR-IOV)](./single-root-i-o-virtualization--sr-iov-.md). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](./setting-a-receive-filter-on-a-virtual-port.md).
 
--   [Virtual Machine Queue (VMQ)](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-machine-queue--vmq--in-ndis-6-20). For more information about how to use receive filters in this interface, see [Setting and Clearing VMQ Filters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters).
+-   [Virtual Machine Queue (VMQ)](./virtual-machine-queue--vmq--in-ndis-6-20.md). For more information about how to use receive filters in this interface, see [Setting and Clearing VMQ Filters](./setting-and-clearing-vmq-filters.md).
 
 The OID set request of OID\_RECEIVE\_FILTER\_CLEAR\_FILTER is mandatory for miniport drivers that support the NDIS packet coalescing, SR-IOV, or VMQ interface.
 
 An overlying driver, such as an NDIS protocol or filter driver, uses the OID\_RECEIVE\_FILTER\_CLEAR\_FILTER set request to clear a previously set filter. Only the driver that set the receive filter can clear it.
 
-The overlying driver clears a receive filter by setting the **FilterId** member of the [**NDIS\_RECEIVE\_FILTER\_CLEAR\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters) structure to the identifier for the filter. The driver obtained the filter identifier from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md).
+The overlying driver clears a receive filter by setting the **FilterId** member of the [**NDIS\_RECEIVE\_FILTER\_CLEAR\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters) structure to the identifier for the filter. The driver obtained the filter identifier from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md).
 
 ### Additional Instructions for NDIS Packet Coalescing
 
@@ -64,7 +62,7 @@ The following points apply to miniport and overlying drivers that support the VM
 
 ### Return status codes
 
-The miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function returns one of the following values for this request:
+The miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function returns one of the following values for this request:
 
 <table>
 <colgroup>
@@ -84,7 +82,7 @@ The miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
-<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)"><strong>NdisMOidRequestComplete</strong></a> function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
+<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)"><strong>NdisMOidRequestComplete</strong></a> function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_ACCEPTED</strong></p></td>
@@ -107,10 +105,9 @@ The request is pending completion. NDIS will pass the final status code and resu
 The filter identifier is not valid.
 
 <a href="" id="ndis-status-invalid-length"></a>**NDIS\_STATUS\_INVALID\_LENGTH**  
-The information buffer is too small. NDIS sets the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.
+The information buffer is too small. NDIS sets the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to the minimum buffer size that is required.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -132,20 +129,12 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
-[**NDIS\_RECEIVE\_FILTER\_CLEAR\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters)
+[**NDIS\_RECEIVE\_FILTER\_CLEAR\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters)
 
 [OID\_NIC\_SWITCH\_DELETE\_VPORT](oid-nic-switch-delete-vport.md)
 
 [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](oid-receive-filter-free-queue.md)
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
-
- 
-
- 
-
-
-
-

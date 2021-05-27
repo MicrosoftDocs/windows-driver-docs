@@ -1,7 +1,6 @@
 ---
 title: Arm NVDIMM-N (Function Index 20)
 description: This function arms the NVDIMM-N for save operations in the event of a power loss.
-ms.assetid: 15D21B5A-2320-4C22-9957-ECC0EB46B02E
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function arms the NVDIMM-N for save operations in the event of a power loss. The platform is responsible for choosing the appropriate save trigger.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 
@@ -55,8 +54,8 @@ None.
 
  
 
-&gt; \[!Note\]   
-&gt;This is a synchronous function. It returns only when the arm operation has finished or timed out. If the operation takes longer than the timeout defined in \**ARM\_TIMEOUT0* (0, 0x20) and \**ARM\_TIMEOUT1* (0, 0x21), the platform shall abort this function before it returns.
+> [!NOTE]
+> This is a synchronous function. It returns only when the arm operation has finished or timed out. If the operation takes longer than the timeout defined in \**ARM\_TIMEOUT0* (0, 0x20) and \**ARM\_TIMEOUT1* (0, 0x21), the platform shall abort this function before it returns.
 
  
 

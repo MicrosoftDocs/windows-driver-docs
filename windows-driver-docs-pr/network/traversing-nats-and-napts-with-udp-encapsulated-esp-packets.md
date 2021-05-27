@@ -1,7 +1,6 @@
 ---
 title: Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets
 description: Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets
-ms.assetid: 9bfd6a7c-2c24-419e-b82d-ef6ef8fe1fa5
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , transversing NATs and NAPTs
 - network address translators WDK IPsec offload
@@ -40,14 +39,8 @@ To support UDP-ESP encapsulation, a miniport driver or the NIC (or both) must:
 -   Maintain a list of SAs that the transport has offloaded to the NIC.
 
 -   Support the following OIDs:
-    -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-add-udpesp-sa)
-    -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-delete-udpesp-sa)
+    -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](./oid-tcp-task-ipsec-add-udpesp-sa.md)
+    -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](./oid-tcp-task-ipsec-delete-udpesp-sa.md)
 
  
-
- 
-
-
-
-
 

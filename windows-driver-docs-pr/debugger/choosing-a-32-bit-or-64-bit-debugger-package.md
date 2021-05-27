@@ -1,7 +1,6 @@
 ---
 title: Choosing the 32-Bit or 64-Bit Debugging Tools
 description: When you install Debugging Tools for Windows, you get both a 32-bit set of tools and a 64-bit set of tools.
-ms.assetid: 26aaaf11-1005-4ae7-8f27-4ae0812faa81
 keywords: ["32-bit debugger package", "32-bit debugging tools", "64-bit debugger package", "64-bit debugging tools", "installation, choosing between 32-bit and 64-bit packages"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Data Out Endpoint Descriptor
 description: Data Out Endpoint Descriptor
-ms.assetid: 59a001c8-3723-4549-80ed-28ea8901dd87
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

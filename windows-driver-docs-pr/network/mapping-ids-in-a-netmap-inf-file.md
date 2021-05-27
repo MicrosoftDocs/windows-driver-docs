@@ -1,7 +1,6 @@
 ---
 title: Mapping IDs in a Netmap.inf File
 description: Mapping IDs in a Netmap.inf File
-ms.assetid: 7cab4aa1-8b0b-4cdc-a093-b91be6170961
 keywords:
 - network component upgrades WDK , netmap.inf files
 - upgrading network components WDK , netmap.inf files

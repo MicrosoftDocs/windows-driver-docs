@@ -1,7 +1,6 @@
 ---
 title: scsikd.scsiext
 description: The scsikd.scsiext extension displays detailed information about the specified SCSI port extension.
-ms.assetid: 0fcb0545-eb5a-4500-8e14-a5296624c80b
 keywords: ["scsikd.scsiext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the device object or device extension of a SCSI port extension.
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a functional device object (FDO); this can be obtained from the **DO** field or **DevExt** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 

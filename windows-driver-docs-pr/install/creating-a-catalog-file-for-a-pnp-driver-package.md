@@ -1,7 +1,6 @@
 ---
 title: Creating a Catalog File for a PnP Driver Package
 description: Creating a Catalog File for a PnP Driver Package
-ms.assetid: 2af431f1-a35d-4312-86f6-a928ef4148df
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ To create an unsigned catalog file for a driver package, follow these steps:
 
 1. Add the required INF **CatalogFile**=<em>FileName</em>**.Cat** entry or INF **CatalogFile.**<em>PlatformExtension</em>=<em>unique-filename</em>**.Cat** entries to the [**INF Version section**](inf-version-section.md) of a [driver package's](driver-packages.md) INF file. For information about how to use platform extensions, see [Cross-Platform INF Files](cross-platform-inf-files.md).
 
-2. Use the [**Inf2Cat**](https://docs.microsoft.com/windows-hardware/drivers/devtest/inf2cat) tool to verify that the driver package can be signed for the target platforms and to generate the unsigned [catalog files](catalog-files.md) (*.cat* files) that apply to the target platforms.
+2. Use the [**Inf2Cat**](../devtest/inf2cat.md) tool to verify that the driver package can be signed for the target platforms and to generate the unsigned [catalog files](catalog-files.md) (*.cat* files) that apply to the target platforms.
 
 Use the following Inf2Cat command to create unsigned catalog files:
 
@@ -59,10 +58,4 @@ Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:Vista_X
 ```
 
  
-
- 
-
-
-
-
 

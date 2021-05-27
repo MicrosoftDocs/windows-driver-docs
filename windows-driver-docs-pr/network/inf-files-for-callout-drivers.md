@@ -1,7 +1,6 @@
 ---
 title: INF Files for Callout Drivers
 description: INF Files for Callout Drivers
-ms.assetid: 2cdaf6a4-3297-4081-a64e-7ab5dc74e7e8
 keywords:
 - Windows Filtering Platform callout drivers WDK , installing
 - callout drivers WDK Windows Filtering Platform , installing
@@ -15,19 +14,19 @@ ms.localizationpriority: medium
 
 A Windows Filtering Platform callout driver is installed by a setup information file (INF) file. INF files for callout drivers contain only the following INF file sections:
 
-[**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section)
+[**INF Version Section**](../install/inf-version-section.md)
 
-[**INF SourceDisksNames Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section)
+[**INF SourceDisksNames Section**](../install/inf-sourcedisksnames-section.md)
 
-[**INF SourceDisksFiles Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section)
+[**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md)
 
-[**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section)
+[**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md)
 
-[**INF DefaultInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-section)
+[**INF DefaultInstall Section**](../install/inf-defaultinstall-section.md)
 
-[**INF DefaultInstall.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-services-section)
+[**INF DefaultInstall.Services Section**](../install/inf-defaultinstall-services-section.md)
 
-[**INF Strings Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section)
+[**INF Strings Section**](../install/inf-strings-section.md)
 
 For example:
 

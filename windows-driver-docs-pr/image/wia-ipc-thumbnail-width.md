@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_THUMBNAIL\_WIDTH
 description: The WIA\_IPC\_THUMBNAIL\_WIDTH property contains the current width, in pixels, of the thumbnail image that is stored on a device. The WIA minidriver creates and maintains this property.
-ms.assetid: 028086b3-41cd-475d-91fb-0f2751a851d7
 keywords: ["WIA_IPC_THUMBNAIL_WIDTH Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Loading Debugger Extension DLLs
 description: Loading Debugger Extension DLLs
-ms.assetid: 6ca70732-cbf6-44fd-a020-c297b40d41f6
 keywords: ["extension commands ( commands), loading", "loading extension commands", "nt4fre directory", "nt4chk directory", "w2kfre directory", "w2kchk directory", "winxp directory", "winext directory"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

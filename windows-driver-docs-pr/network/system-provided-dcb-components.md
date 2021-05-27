@@ -1,7 +1,6 @@
 ---
 title: System-Provided DCB Components
 description: System-Provided DCB Components
-ms.assetid: 64C9ADEF-5512-41E4-AE7B-DFEF1B94FC5F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

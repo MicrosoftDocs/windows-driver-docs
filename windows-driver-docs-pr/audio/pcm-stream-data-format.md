@@ -1,7 +1,6 @@
 ---
 title: PCM Stream Data Format
 description: PCM Stream Data Format
-ms.assetid: 86599e55-e771-4d6e-ad59-6dc905c53cd8
 keywords:
 - PCM stream data formats WDK
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="pcm_stream_data_format"></span><span id="PCM_STREAM_DATA_FORMAT"></span>
 
 
-This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM stream.
+This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM stream.
 
 ```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT_WAVEFORMATEX);
@@ -34,9 +33,4 @@ This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/
 ```
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Method Sets
 description: Kernel Streaming Method Sets
-ms.assetid: 570a2db3-72a9-49ca-8cdf-c421cd9e908f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -14,13 +13,7 @@ ms.localizationpriority: medium
 
 This section discusses the [KSMETHODSETID\_StreamAllocator](ksmethodsetid-streamallocator.md) method set.
 
-Also see [KS Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-methods).
+Also see [KS Methods](./ks-methods.md).
 
  
-
- 
-
-
-
-
 

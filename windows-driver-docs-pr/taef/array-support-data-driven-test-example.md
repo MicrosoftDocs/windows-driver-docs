@@ -1,7 +1,6 @@
 ---
 title: Array Support Data Driven Test Example
 description: Array Support Data Driven Test Example
-ms.assetid: ECCDE395-C887-4485-8C8F-312EFCFD16A2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ Previous sections have already covered the basics of data driven test authoring 
 -   **Arrays are variable length, homogeneous type set of elements that are treated as a single parameter.**
 -   **To specify an array type, you need to explicitly specify the type of the parameter in the ParameterTypes block and add an Array="true" attribute.**
 
-The parameter types that are supported are listed [here](parameter-types-in-table-data-sources.md).
+The parameter types that are supported are listed in [Parameter Types in Table Data Sources](parameter-types-in-table-data-sources.md).
 
 If any other data type is specified, the test throws a warning and considers it to be a String. In the case of arrays, the data type would be considered to be of type String\[\].
 

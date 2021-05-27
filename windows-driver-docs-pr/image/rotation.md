@@ -1,7 +1,6 @@
 ---
 title: Rotation element
 description: The optional Rotation element specifies the amount to rotate each image of the scanned document.
-ms.assetid: df12cd79-7c3e-4be5-9d7c-237ec014e9c1
 keywords: ["Rotation element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Rotation** element specifies the amount to rotate each image of the scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Rotation wscn:MustHonor=""               wscn:Override=""               wscn:UsedDefault=""
@@ -30,8 +28,7 @@ Usage
 </wscn:Rotation wscn:MustHonor=""               wscn:Override=""               wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -73,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. One of 0, 90, 180, or 270.
 
@@ -105,8 +101,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The integer value of the **Rotation** element specifies the clockwise rotation to apply to each image of the scanned document. All WSD Scan Services must support the value 0 (that is, no rotation).
 

@@ -1,7 +1,6 @@
 ---
 title: Interface Descriptor for Communication Class Interface
 description: Interface Descriptor for Communication Class Interface
-ms.assetid: e3873a58-34fc-4ca0-8c45-197401cbf08b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

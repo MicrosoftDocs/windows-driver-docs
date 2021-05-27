@@ -1,7 +1,6 @@
 ---
 title: Invoke Device Properties Dialog Box in Installation Application
 description: Invoking a Device Properties Dialog Box Programmatically in an Installation Application
-ms.assetid: c573acac-581e-44f1-b46b-eceb1f3d5484
 keywords:
 - device properties dialog box WDK device installations
 - invoking device properties dialog box

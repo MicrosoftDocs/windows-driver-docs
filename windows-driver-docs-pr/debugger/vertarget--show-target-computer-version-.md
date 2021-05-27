@@ -1,7 +1,6 @@
 ---
 title: vertarget (Show Target Computer Version)
 description: The vertarget command displays the current version of the Microsoft Windows operating system of the target computer.
-ms.assetid: 27aa26ac-6343-412f-a0ed-6d5e3546827b
 keywords: ["vertarget (Show Target Computer Version) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

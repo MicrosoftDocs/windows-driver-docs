@@ -1,7 +1,6 @@
 ---
 title: Using Winsock Kernel Functions vs. Event Callback Functions
 description: Using Winsock Kernel Functions vs.
-ms.assetid: 63a3f933-f74a-4cb8-a7a9-9498e1c17afa
 keywords:
 - Winsock Kernel WDK networking , functions
 - WSK WDK networking , functions
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 # Using Winsock Kernel Functions vs. Event Callback Functions
 
 
-For certain socket operations, a Winsock Kernel (WSK) application can either call one of the socket's WSK functions to perform the operation or implement and enable an event callback function on the socket that the WSK subsystem calls when the [event](winsock-kernel-events.md) associated with the operation occurs. For example, when receiving data on a connection-oriented socket, a WSK application can either make calls to the socket's [**WskReceive**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive) function, or implement and enable a [*WskReceiveEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback function on the socket. The requirements of a WSK application dictate which method the application should use. Examples for how to use both methods are provided throughout the WSK documentation.
+For certain socket operations, a Winsock Kernel (WSK) application can either call one of the socket's WSK functions to perform the operation or implement and enable an event callback function on the socket that the WSK subsystem calls when the [event](winsock-kernel-events.md) associated with the operation occurs. For example, when receiving data on a connection-oriented socket, a WSK application can either make calls to the socket's [**WskReceive**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive) function, or implement and enable a [*WskReceiveEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event) event callback function on the socket. The requirements of a WSK application dictate which method the application should use. Examples for how to use both methods are provided throughout the WSK documentation.
 
 The following lists summarize some key points for each method.
 
@@ -48,10 +47,4 @@ The following lists summarize some key points for each method.
  
 
  
-
- 
-
-
-
-
 

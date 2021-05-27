@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1000007F UNEXPECTED_KERNEL_MODE_TRAP_M
 description: The UNEXPECTED_KERNEL_MODE_TRAP_M bug check has a value of 0x1000007F.
-ms.assetid: 913355b6-f569-4535-a6cc-bdc6071b76ff
 keywords: ["Bug Check 0x1000007F UNEXPECTED_KERNEL_MODE_TRAP_M", "UNEXPECTED_KERNEL_MODE_TRAP_M"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +23,7 @@ Bug check 0x1000007F has the same meaning and parameters as [**bug check 0x7F**]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## Resolution
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
  
 

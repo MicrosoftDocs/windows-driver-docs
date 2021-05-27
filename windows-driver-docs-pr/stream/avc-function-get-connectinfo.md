@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_CONNECTINFO
 description: AVC\_FUNCTION\_GET\_CONNECTINFO
-ms.assetid: d4230024-a765-47f0-9958-9f71761f7b85
 keywords: ["AVC_FUNCTION_GET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -104,13 +103,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PRECONNECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_preconnect_info), [**AVCPRECONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PRECONNECT\_INFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_preconnect_info), [**AVCPRECONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
  
-
- 
-
-
-
-
 

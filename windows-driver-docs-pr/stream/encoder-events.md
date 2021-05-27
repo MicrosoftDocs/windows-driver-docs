@@ -1,7 +1,6 @@
 ---
 title: Encoder Events
 description: Encoder Events
-ms.assetid: 4aa6877e-8963-41ba-a7b5-4ca312d851bf
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

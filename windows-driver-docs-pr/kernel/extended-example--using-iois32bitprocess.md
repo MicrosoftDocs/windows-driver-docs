@@ -1,7 +1,6 @@
 ---
 title: Extended Example Using IoIs32bitProcess
 description: Extended Example Using IoIs32bitProcess
-ms.assetid: bb73d16c-9f9f-41ff-ac0b-8af31c6f55f4
 keywords: ["32-bit I/O support WDK 64-bit , IoIs32bitProcess", "IoIs32bitProcess"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The following example shows how to modify a 32-bit driver for 64-bit by adding a call to [**IoIs32bitProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iois32bitprocess). Note that this example shows only the portions of the driver code that need to be modified.
+The following example shows how to modify a 32-bit driver for 64-bit by adding a call to [**IoIs32bitProcess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iois32bitprocess). Note that this example shows only the portions of the driver code that need to be modified.
 
 ### Original Driver Code
 
@@ -127,9 +126,4 @@ TestdrvFsControl (
 ```
 
  
-
- 
-
-
-
 

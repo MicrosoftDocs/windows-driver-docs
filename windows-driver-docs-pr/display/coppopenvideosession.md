@@ -1,7 +1,6 @@
 ---
 title: COPPOpenVideoSession function
 description: The sample COPPOpenVideoSession function initializes the COPP DirectX VA device object that is used for the current video session.
-ms.assetid: 4fc318c8-c999-4623-91da-3a3fea83d7b4
 keywords:
 - copy protection WDK COPP , video miniport driver code template
 - video copy protection WDK COPP , video miniport driver code template

@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_GUEST_ASSIGNMENT_FAILED
 description: CM_PROB_GUEST_ASSIGNMENT_FAILED
-ms.assetid: 9b4b0b7d-4b37-42b0-bba6-06251e53bcfa
 keywords:
 - CM_PROB_GUEST_ASSIGNMENT_FAILED
 ms.date: 02/28/2020
@@ -22,5 +21,4 @@ This Device Manager error message indicates that the device did not start becaus
 
 ### Recommended Resolution
 
-For more info, see [Plan for Deploying Devices using Discrete Device Assignment](https://docs.microsoft.com/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment).
-
+For more info, see [Plan for Deploying Devices using Discrete Device Assignment](/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment).

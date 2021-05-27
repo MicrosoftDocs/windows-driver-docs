@@ -1,7 +1,6 @@
 ---
 title: SendCTPassThru function
 description: The SendCTPassThru WMI method sends a common transport (CT) passthrough command to the indicated port.
-ms.assetid: 7f512980-5aff-4359-b52e-7fcef9627e1f
 keywords: ["SendCTPassThru function Storage Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.date: 10/17/2018
 
 The **SendCTPassThru** WMI method sends a common transport (CT) passthrough command to the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SendCTPassThru(
@@ -36,42 +34,38 @@ void SendCTPassThru(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
 
 *PortWWN*   
-A worldwide name for the HBA through which the target is accessed. This information is delivered to the miniport driver in the **PortWWN** member of a [**SendCTPassThru\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in) structure.
+A worldwide name for the HBA through which the target is accessed. This information is delivered to the miniport driver in the **PortWWN** member of a [**SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in) structure.
 
 *RequestBufferCount*   
-The size in bytes of the buffer that will hold the results of the common transport command. The miniport driver returns this information in the **RequestBufferCount** member of a [**SendCTPassThru\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in) structure.
+The size in bytes of the buffer that will hold the results of the common transport command. The miniport driver returns this information in the **RequestBufferCount** member of a [**SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in) structure.
 
 *RequestBuffer*   
-The results of the common transport command. The miniport driver returns this information in the **RequestBuffer** member of a [**SendCTPassThru\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in) structure.
+The results of the common transport command. The miniport driver returns this information in the **RequestBuffer** member of a [**SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in) structure.
 
 *TotalResponseBufferCount*   
-The size in bytes of the results common transport command. The miniport driver returns this information in the **TotalResponseBufferCount** member of a [**SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
+The size in bytes of the results common transport command. The miniport driver returns this information in the **TotalResponseBufferCount** member of a [**SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
 
 *ActualResponseBufferCount*   
-The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualResponseBufferCount** member of a [**SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
+The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualResponseBufferCount** member of a [**SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
 
 *ResponseBuffer*   
-The results of the common transport command. The miniport driver returns this information in the **ResponseBuffer** member of a [**SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
+The results of the common transport command. The miniport driver returns this information in the **ResponseBuffer** member of a [**SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -99,16 +93,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SendCTPassThru\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in)
+[**SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_in)
 
-[**SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out)
-
- 
+[**SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sendctpassthru_out)
 
  
-
-
-
-
-
 

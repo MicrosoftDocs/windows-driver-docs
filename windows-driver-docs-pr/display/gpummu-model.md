@@ -1,7 +1,6 @@
 ---
 title: GpuMmu model
 description: In the GpuMmu model, the graphics processing unit (GPU) has its own memory management unit (MMU) which translates per-process GPU virtual addresses to physical addresses.
-ms.assetid: FFDFD647-2F00-4AC3-A41A-4224562A51ED
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ Each process has separate CPU and GPU virtual address spaces that use distinct p
 
 Although the video memory manager is responsible for managing the GPU virtual address space and its underlying page tables, the video memory manager doesn't automatically assign GPU virtual addresses to allocations. This responsibility falls onto the user mode driver.
 
-The video memory manager offers two set of services to the user mode driver. First, the user mode driver may allocate video memory through the existing [*Allocate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb) callback and free that memory through the existing [*Deallocate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocatecb) callback. Just like today, this returns the user mode driver a handle to a video memory manager allocation, which can be operated on by a GPU engine. Such allocation represents only the physical portion of an allocation and may be referenced by an engine, operating physically, through allocation list reference.
+The video memory manager offers two set of services to the user mode driver. First, the user mode driver may allocate video memory through the existing [*Allocate*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb) callback and free that memory through the existing [*Deallocate*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocatecb) callback. Just like today, this returns the user mode driver a handle to a video memory manager allocation, which can be operated on by a GPU engine. Such allocation represents only the physical portion of an allocation and may be referenced by an engine, operating physically, through allocation list reference.
 
 For engines running in the virtual mode, a GPU virtual address needs to be explicitly assigned to an allocation before it may be accessed virtually. For this purpose the video memory manager offers the user mode driver services to reserve or free GPU virtual addresses and to map specific allocation ranges into the GPU virtual address space of a process. These services are very flexible and allow the user mode driver fine grain control over a process GPU virtual address space. The user mode driver may decide to either assign a very specific GPU virtual address to an allocation, or let video memory manager automatically pick an available one, possibly specifying some min and max GPU virtual address constrains. A single allocation may have multiple GPU virtual address mappings associated with it and services are provided to the user mode driver to implement the *Tile Resource contract*.
 
@@ -30,10 +29,4 @@ The *GpuMmu* model is illustrated below:
 ![gpummu model](images/gpummu-model.1.png)
 
  
-
- 
-
-
-
-
 

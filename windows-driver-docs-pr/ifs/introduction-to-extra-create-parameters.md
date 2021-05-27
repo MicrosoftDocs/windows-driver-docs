@@ -1,20 +1,19 @@
 ---
 title: Introduction to Extra Create Parameters
 description: Introduction to Extra Create Parameters
-ms.assetid: e32aeec6-1a0a-4d21-8358-89d9fc0a15eb
 ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---
 
 # Introduction to Extra Create Parameters
 
-Extra create parameters (ECPs) are structures that can contain additional information for file creates. A create operation can have any number of ECPs, which are attached using an ECP_LIST. Operating system components use ECPs to associate additional information with the [**IRP_MJ_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation on a file.
+Extra create parameters (ECPs) are structures that can contain additional information for file creates. A create operation can have any number of ECPs, which are attached using an ECP_LIST. Operating system components use ECPs to associate additional information with the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation on a file.
 
 Drivers can also use ECPs to process or associate additional information with the IRP_MJ_CREATE operation on a file in the following situations:
 
-- When a kernel-mode driver calls the [**FltCreateFileEx2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2) or [**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefileex) routine to create or open the file
+- When a kernel-mode driver calls the [**FltCreateFileEx2**](/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2) or [**IoCreateFileEx**](/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefileex) routine to create or open the file
 
-- When a file system filter driver processes the [**IRP_MJ_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation for the file
+- When a file system filter driver processes the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation for the file
 
 The following sections describe how to define, attach, and use ECPs. The following sections also describe operating system-defined ECPs.
 

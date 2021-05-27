@@ -1,7 +1,6 @@
 ---
 title: Using Direct I/O
 description: Using Direct I/O
-ms.assetid: e40b4657-833f-404c-8472-2e33564129a5
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,9 +18,9 @@ Generally, mass-storage device drivers request direct I/O for transfer requests,
 
 The I/O manager determines that an I/O operation is using direct I/O as follows:
 
--   For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests, DO\_DIRECT\_IO is set in the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
+-   For [**IRP\_MJ\_READ**](./irp-mj-read.md) and [**IRP\_MJ\_WRITE**](./irp-mj-write.md) requests, DO\_DIRECT\_IO is set in the **Flags** member of the [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
 
--   For [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests, the IOCTL code's value contains METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT as the *TransferType* value in the IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
+-   For [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests, the IOCTL code's value contains METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT as the *TransferType* value in the IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
 Drivers that use direct I/O will sometimes also use buffered I/O to handle some IRPs. In particular, drivers typically use buffered I/O for some I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** requests that require data transfers, regardless of whether the driver uses direct I/O for read and write operations.
 
@@ -34,9 +33,4 @@ Setting up a direct I/O transfer varies slightly, depending on whether DMA or PI
 Drivers must take steps to maintain cache coherency during DMA and PIO transfers. For more information, see [Maintaining Cache Coherency](maintaining-cache-coherency.md).
 
  
-
- 
-
-
-
 

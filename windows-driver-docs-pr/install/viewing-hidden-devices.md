@@ -1,7 +1,6 @@
 ---
 title: Viewing hidden devices
 description: Viewing hidden devices
-ms.assetid: 5dd02478-9937-4364-bd33-b64ac89c32eb
 keywords:
 - nonpresent devices WDK
 - Device Manager WDK , hidden devices
@@ -36,8 +35,8 @@ Device Manager lists the devices that are installed in the computer. By default,
 > [!NOTE]
 > Users should never have to view nonpresent devices because a nonpresent device should not have their attention and should not cause any problems. If a user has to view your device when it is not present, there is likely a problem with your driver design. However, during testing, a developer might have to view such devices.
 
-To include hidden devices in Device Manager display, click **View** and select **Show hidden devices**.
+To include hidden devices in Device Manager display, select **View** and select **Show hidden devices**.
 
-Prior to Windows 8, to view nonpresent devices, you must set the environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1** before you open Device Manager, then open Device Manager, and on the View menu, click **Show hidden devices**.
+Prior to Windows 8, to view nonpresent devices, you must set the environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1** before you open Device Manager, then open Device Manager, and on the View menu, select **Show hidden devices**.
 
 To permanently set the user environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1**, use the **Advanced** tab of the system property sheet. After you set this environment variable, run Device Manager and select **Show hidden devices**.

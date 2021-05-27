@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: dd26ac4b-ecef-4b4d-a050-d3e429ff0542
+description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT {
@@ -36,8 +34,7 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 } D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO"></span><span id="dxgkmt_multiplane_overlay_stereo_format_mono"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT\_MONO**
 
@@ -55,8 +52,7 @@ Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD"></span><span id="dxgkmt_multiplane_overlay_stereo_format_checkerboard"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT\_CHECKERBOARD**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

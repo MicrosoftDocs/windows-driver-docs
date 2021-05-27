@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Driver's HwScsiTimer Routine
 description: SCSI Miniport Driver's HwScsiTimer Routine
-ms.assetid: 57ac7a6e-ada5-4185-89cf-b6c5ef9006d4
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiTimer
 - HwScsiTimer
@@ -16,13 +15,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_scsi_miniport_drivers_hwscsitimer_routine_kg"></span><span id="DDK_SCSI_MINIPORT_DRIVERS_HWSCSITIMER_ROUTINE_KG"></span>
 
 
-A miniport driver that does not have an [**HwScsiInterrupt**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557312(v=vs.85)) routine because it manages all HBA I/O operations by polling should have an [*HwScsiTimer*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557327(v=vs.85))routine. However, miniport drivers with *HwScsiInterrupt* routines frequently have *HwScsiTimer* routines as well.
+A miniport driver that does not have an [**HwScsiInterrupt**](/previous-versions/windows/hardware/drivers/ff557312(v=vs.85)) routine because it manages all HBA I/O operations by polling should have an [*HwScsiTimer*](/previous-versions/windows/hardware/drivers/ff557327(v=vs.85))routine. However, miniport drivers with *HwScsiInterrupt* routines frequently have *HwScsiTimer* routines as well.
 
-While a miniport driver can call [**ScsiPortStallExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportstallexecution) to wait for a state change on the HBA, miniport drivers should *never* call this routine to wait for longer than one millisecond except, possibly, for an operation performed only when a miniport driver is initializing. **ScsiPortStallExecution** ties up the processor for the given interval, preventing other code in the system from doing useful work.
+While a miniport driver can call [**ScsiPortStallExecution**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportstallexecution) to wait for a state change on the HBA, miniport drivers should *never* call this routine to wait for longer than one millisecond except, possibly, for an operation performed only when a miniport driver is initializing. **ScsiPortStallExecution** ties up the processor for the given interval, preventing other code in the system from doing useful work.
 
 Instead of calling **ScsiPortStallExecution** with large input intervals and wasting many CPU cycles, a miniport driver should have an *HwScsiTimer* routine. One or more *HwScsiTimer* routines are particularly useful if the HBA does not generate a completion interrupt for every operation or if any commonly requested operation, such as a bus reset, takes longer than a millisecond.
 
-After the HBA has been programmed for such an operation, the miniport driver calls [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestTimerCall**, a pointer to its HBA-specific device extension containing context about the operation, its *HwScsiTimer* entry point, and a driver-determined interval.
+After the HBA has been programmed for such an operation, the miniport driver calls [**ScsiPortNotification**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestTimerCall**, a pointer to its HBA-specific device extension containing context about the operation, its *HwScsiTimer* entry point, and a driver-determined interval.
 
 **ScsiPortNotification** synchronizes calls to the *HwScsiTimer* routine with those to the *HwScsiInterrupt* routine so that it cannot execute concurrently while the *HwScsiTimer* routine is running.
 
@@ -31,9 +30,4 @@ After the HBA has been programmed for such an operation, the miniport driver cal
 The interval passed in to **ScsiPortNotification** is in microseconds, and the minimum overhead for each call to an *HwScsiTimer* routine is approximately 10 microseconds. An input interval of zero cancels the preceding request to call the *HwScsiTimer* routine, provided it has not been called or dispatched for execution on another processor in a NT-based SMP machine.
 
  
-
- 
-
-
-
 

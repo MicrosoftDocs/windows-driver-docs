@@ -1,7 +1,6 @@
 ---
 title: The x86 Processor
 description: This section provides information on the x86 Processor
-ms.assetid: 9827d7d3-4b7e-43dd-98c0-0b437bf4bd67
 keywords: x86 processor, i386 processor"
 ms.date: 05/23/2017
 ms.localizationpriority: medium

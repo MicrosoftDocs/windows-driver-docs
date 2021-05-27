@@ -1,7 +1,6 @@
 ---
 title: PlatenMaximumSize element
 description: The required PlatenMaximumSize element specifies the largest size document that an end user can scan on the flatbed platen.
-ms.assetid: dedeb5cf-588f-48dd-aea9-78c2a17f19e6
 keywords: ["PlatenMaximumSize element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **PlatenMaximumSize** element specifies the largest size document that an end user can scan on the flatbed platen.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:PlatenMaximumSize>
@@ -27,8 +25,7 @@ Usage
 </wscn:PlatenMaximumSize>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -73,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The [**Width**](width.md) child element specifies the maximum size of media that the platen supports in the fast scan direction. The [**Height**](height.md) child element specifies the maximum size of media that the platen supports in the slow scan direction.
 

@@ -1,7 +1,6 @@
 ---
 title: Proximity Profile Implementation Details
 description: To achieve a power-efficient design, device implementations must observe specific requirements to ensure that they remain compatible with Windows.
-ms.assetid: 0FFDF345-EA14-4564-AA8A-7E44E9DB28DA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,13 +25,7 @@ As mentioned in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md), W
 ## <span id="Monitoring_the_connection_state"></span><span id="monitoring_the_connection_state"></span><span id="MONITORING_THE_CONNECTION_STATE"></span>Monitoring the connection state
 
 
-Apps can monitor the connection state of GATT devices by using a PnpObjectWatcher and monitor the PnP "Connected" property of the service Device Object. This technique is demonstrated in the [Bluetooth Generic Attribute Profile - Heart Rate Service](https://go.microsoft.com/fwlink/p/?linkid=301978) sample.
+Apps can monitor the connection state of GATT devices by using a PnpObjectWatcher and monitor the PnP "Connected" property of the service Device Object. This technique is demonstrated in the [Bluetooth Generic Attribute Profile - Heart Rate Service](/samples/browse/) sample.
 
  
-
- 
-
-
-
-
 

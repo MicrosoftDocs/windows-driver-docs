@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SCAN_DWELL_TIME
 description: WDI_TLV_SCAN_DWELL_TIME is a TLV that contains scanning dwell time settings.
-ms.assetid: A0C597E7-879C-43CC-BB86-4908AC31828F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SCAN_DWELL_TIME Network Drivers Starting with Windows Vista
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

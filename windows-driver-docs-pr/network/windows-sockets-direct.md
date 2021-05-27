@@ -1,7 +1,6 @@
 ---
 title: Windows Sockets Direct Overview
 description: Windows Sockets Direct Overview
-ms.assetid: 9e153a77-c4d4-4425-8f36-5ab9d6a80386
 keywords:
 - system area networks WDK , Windows Sockets Direct
 - SAN WDK , Windows Sockets Direct

@@ -1,7 +1,6 @@
 ---
 title: .logopen (Open Log File)
 description: The .logopen command sends a copy of the events and commands from the Debugger Command window to a new log file.
-ms.assetid: 00ccc09b-3fd7-462f-a688-2f7b45b584fb
 keywords: ["Open Log File (.logopen) command", "log file, Open Log File (.logopen) command", ".logopen (Open Log File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ Automatically chooses a file name based on the name of the target process or tar
 
  
 
-Remarks
--------
+## Remarks
 
 If you already have a log file open when you run the **.logopen** command, the debugger closes it. If you specify a file name that already exists, the file's contents are overwritten.
 

@@ -1,7 +1,6 @@
 ---
 title: Driver protection
 description: Along with every virtual address, the video memory manager allows independent hardware vendors (IHVs) to define a driver / hardware specific protection (i.e.
-ms.assetid: 3D636BD1-683D-49B4-A7E5-176853EA11EE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ Along with every virtual address, the video memory manager allows independent ha
 
  
 
-When mapping or reserving a GPU virtual address range the driver may specify a 64-bit driver protection value. The specified driver protection is used by the video memory manager when initializing the page table entry corresponding to that specific virtual address. In particular, driver protection is given back to the driver for any [*BuildPagingBuffer*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer)**DXGK\_OPERATION\_UPDATE\_PAGE\_TABLE** corresponding to the specified virtual address.
+When mapping or reserving a GPU virtual address range the driver may specify a 64-bit driver protection value. The specified driver protection is used by the video memory manager when initializing the page table entry corresponding to that specific virtual address. In particular, driver protection is given back to the driver for any [*BuildPagingBuffer*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer)**DXGK\_OPERATION\_UPDATE\_PAGE\_TABLE** corresponding to the specified virtual address.
 
 Multiple virtual addresses may be mapped to a single allocation using different driver protections. Page table entries for each of these virtual addresses will be updated using the appropriate driver protection.
 
@@ -52,18 +51,12 @@ During paging operations the allocation will be copied in chunks:
 4. Copy allocation range \[A4, A5\] with driver protection P4
 5. Copy allocation range \[A5, Size\] with driver protection 0
 It is possible that paging process page table entries will be set with one driver protection value when an allocation is evicted and set to a different value when the allocation is committed. It is assumed that the driver should refresh the allocation data after the virtual address mapping is updated.
-For example, consider a case when the current allocation mapping set is M1 and the user mode driver called [*UpdateGpuVirtualAddress*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) with mapping set M2. Just before the mapping set M2 is applied, the allocation can be evicted by the video memory manager. The mapping set M2 is applied and the allocation is committed back. Now the allocation content in the local memory segment might be different from the original.
+For example, consider a case when the current allocation mapping set is M1 and the user mode driver called [*UpdateGpuVirtualAddress*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) with mapping set M2. Just before the mapping set M2 is applied, the allocation can be evicted by the video memory manager. The mapping set M2 is applied and the allocation is committed back. Now the allocation content in the local memory segment might be different from the original.
 
 ## <span id="Tiled_Resources"></span><span id="tiled_resources"></span><span id="TILED_RESOURCES"></span>Tiled Resources
 
 
-For tiled resources, driver protection is specified when reserving a virtual address range. A user mode driver call to [*UpdateGpuVirtualAddress*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) will inherit the virtual address current driver protection.
+For tiled resources, driver protection is specified when reserving a virtual address range. A user mode driver call to [*UpdateGpuVirtualAddress*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) will inherit the virtual address current driver protection.
 
  
-
- 
-
-
-
-
 

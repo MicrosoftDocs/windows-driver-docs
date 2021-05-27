@@ -1,7 +1,6 @@
 ---
 title: Mutexes in AVStream
 description: Mutexes in AVStream
-ms.assetid: 011edaaa-7449-41c3-8cfb-0d319901af8b
 keywords:
 - AVStream mutexes WDK
 - mutexes WDK AVStream

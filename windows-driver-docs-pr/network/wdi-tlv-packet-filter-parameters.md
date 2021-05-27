@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PACKET_FILTER_PARAMETERS
 description: WDI_TLV_PACKET_FILTER_PARAMETERS is a TLV that contains packet filter parameters for OID_WDI_SET_RECEIVE_PACKET_FILTER.
-ms.assetid: 5B26DA60-BC5D-4CC5-A620-C076CECF22C0
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PACKET_FILTER_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_PACKET\_FILTER\_PARAMETERS
 
 
-WDI\_TLV\_PACKET\_FILTER\_PARAMETERS is a TLV that contains packet filter parameters for [OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-receive-packet-filter).
+WDI\_TLV\_PACKET\_FILTER\_PARAMETERS is a TLV that contains packet filter parameters for [OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER](./oid-wdi-set-receive-packet-filter.md).
 
 ## TLV Type
 
@@ -28,12 +27,11 @@ The size (in bytes) of a UINT32.
 
 | Type                                                                      | Description                                |
 |---------------------------------------------------------------------------|--------------------------------------------|
-| [**WDI\_PACKET\_FILTER\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_packet_filter_type) (UINT32) | Specifies the desired Wi-Fi packet filter. |
+| [**WDI\_PACKET\_FILTER\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_packet_filter_type) (UINT32) | Specifies the desired Wi-Fi packet filter. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

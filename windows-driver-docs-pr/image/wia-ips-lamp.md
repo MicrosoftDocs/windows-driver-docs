@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_LAMP
 description: The WIA\_IPS\_LAMP property contains the current configuration setting for a scanner's lamp. The WIA minidriver creates and maintains this property.
-ms.assetid: a5eb83cf-824a-4c7c-a7e3-2f9af5a2eb3c
 keywords: ["WIA_IPS_LAMP Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPS\_LAMP property enables the programmatic control of the scanner lamp; this lamp could be a dedicated lamp (for a transparency adapter) or the main scanner lamp (for dedicated film scanners).
 
@@ -58,8 +56,7 @@ The following table describes the constants that are valid with WIA\_IPS\_LAMP.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

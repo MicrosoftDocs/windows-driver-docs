@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_SUPERMIX
 description: KSNODETYPE\_SUPERMIX
-ms.assetid: fae4d315-b599-4226-8f1d-e1757320afb2
 keywords: ["KSNODETYPE_SUPERMIX Audio Devices"]
 topic_type:
 - apiref

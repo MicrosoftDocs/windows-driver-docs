@@ -1,7 +1,6 @@
 ---
 title: HS_PLUGIN_PROFILE structure
 description: The HS_PLUGIN_PROFILE structure provides information about the plugin. The members of this structure are set by the plugin during execution of the HSPluginInitPlugin function that is called by the host.
-ms.assetid: 0c4f7088-737e-479a-b46e-a55e96719775
 keywords: 
 - HS_PLUGIN_PROFILE structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_PROFILE structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_PROFILE structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_PROFILE** structure provides information about the plugin. The members of this structure are set by the plugin during execution of the [**HSPluginInitPlugin**](hsplugininitplugin.md) function that is called by the host.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_PLUGIN_PROFILE {
@@ -32,8 +30,7 @@ typedef struct _HS_PLUGIN_PROFILE {
 } HS_PLUGIN_PROFILE, *PHS_PLUGIN_PROFILE;
 ```
 
-Members
--------
+## Members
 
 **dwPluginCapabilities**  
 Required.
@@ -73,8 +70,7 @@ Network-specific realm value.
 **dwSupportedSIMCount**  
 The size of the list pointed to by **pSupported SIMs**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Closed Captioning Streams
 description: Closed Captioning Streams
-ms.assetid: ee6cfac6-c532-4e73-81b2-ee767d2d6a4d
 keywords:
 - closed captioning streams WDK DVD decoder
 - group of pictures WDK DVD decoder

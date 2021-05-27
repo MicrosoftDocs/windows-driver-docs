@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_DYNAMIC\_FORMAT\_CHANGE
 description: Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal that a dynamic format change has occurred.
-ms.assetid: 7f8cf67b-274b-4342-a9f7-7fab5345bbc9
 keywords: ["KSEVENT_DYNAMIC_FORMAT_CHANGE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -20,13 +19,11 @@ ms.localizationpriority: medium
 
 Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal that a dynamic format change has occurred.
 
-Remarks
--------
+## Remarks
 
-AVStream hardware codec drivers generate KSEVENT\_DYNAMIC\_FORMAT\_CHANGE. For more information, see [Supporting Dynamic Format Changes in AVStream Codecs](https://docs.microsoft.com/windows-hardware/drivers/stream/supporting-dynamic-format-changes-in-avstream-codecs).
+AVStream hardware codec drivers generate KSEVENT\_DYNAMIC\_FORMAT\_CHANGE. For more information, see [Supporting Dynamic Format Changes in AVStream Codecs](./supporting-dynamic-format-changes-in-avstream-codecs.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -46,10 +43,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

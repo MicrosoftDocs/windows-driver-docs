@@ -1,7 +1,6 @@
 ---
 title: gn, gN (Go with Exception Not Handled)
 description: The gn and gN commands continue execution of the given thread without marking the exception as having been handled. This allows the application's exception handler to handle the exception.
-ms.assetid: b6f69882-b30a-45b7-b777-1b4857719e7f
 keywords: ["gn, gN (Go with Exception Not Handled) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -83,8 +82,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 If the debugger is not stopped at a breakpoint, **gn** and **gN** behave identically. If the debugger is stopped at a breakpoint, **gn** will not work; you must capitalize the "N" to execute this command. This is a safety precaution, since it is rarely wise to continue a breakpoint unhandled.
 

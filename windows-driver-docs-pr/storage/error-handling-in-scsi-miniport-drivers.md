@@ -1,7 +1,6 @@
 ---
 title: Error Handling in SCSI Miniport Drivers
 description: Error Handling in SCSI Miniport Drivers
-ms.assetid: 0d9a2d60-c8e5-48f6-9c1f-d593e59095c8
 keywords:
 - SCSI miniport drivers WDK storage , errors
 - errors WDK SCSI
@@ -41,7 +40,7 @@ Every SCSI miniport driver must notify the system port driver about the followin
 
 For a data underrun, the miniport driver must update the SRB's **DataTransferLength** to indicate how much data actually was transferred.
 
-In addition, the miniport driver should use the following guidelines to log some of the preceding errors by passing the SRB to [**ScsiPortLogError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportlogerror):
+In addition, the miniport driver should use the following guidelines to log some of the preceding errors by passing the SRB to [**ScsiPortLogError**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportlogerror):
 
 Log an error at the discretion of the driver writer for SRB\_STATUS\_ERROR.
 
@@ -59,7 +58,7 @@ Always log an error for SRB\_STATUS\_PHASE\_SEQUENCE\_FAILURE.
 
 Always log an error for SRB\_STATUS\_BUSY for hardware errors.
 
-To log an error, a miniport driver calls [**ScsiPortLogError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportlogerror) by using one of the following system-defined error or warning codes:
+To log an error, a miniport driver calls [**ScsiPortLogError**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportlogerror) by using one of the following system-defined error or warning codes:
 
 SP\_BUS\_PARITY\_ERROR maps to SRB\_STATUS\_PARITY\_ERROR
 
@@ -81,12 +80,7 @@ SP\_BAD\_FW\_ERROR (where FW is *firmware*)
 
 SP\_BAD\_FW\_WARNING
 
-[**ScsiPortLogError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportlogerror) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
+[**ScsiPortLogError**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportlogerror) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
 
  
-
- 
-
-
-
 

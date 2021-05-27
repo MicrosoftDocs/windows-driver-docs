@@ -1,7 +1,6 @@
 ---
 title: How do I include the source line number in the trace message prefix
 description: How do I include the source line number in the trace message prefix
-ms.assetid: 07fbdd27-59a9-4fe1-8662-6c2489efdb7f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

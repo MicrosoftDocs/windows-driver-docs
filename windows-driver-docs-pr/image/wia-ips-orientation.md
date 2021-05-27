@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ORIENTATION
 description: The WIA\_IPS\_ORIENTATION property describes the current orientation of the document to scan. The WIA minidriver creates and maintains this property.
-ms.assetid: e963d0d1-020c-4ec1-8b67-a89b1fd3e545
 keywords: ["WIA_IPS_ORIENTATION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_ORIENTATION property to define the original orientation of a page or image to be acquired. For more information about how to use WIA\_IPS\_ORIENTATION, see [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md).
 
@@ -79,8 +77,7 @@ The WIA\_IPS\_ORIENTATION property is required for ADF items and optional for al
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

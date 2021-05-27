@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION
 description: The DRIVER_VERIFIER_DMA_VIOLATION bug check has a value of 0x000000E6. This is the bug check code for all Driver Verifier DMA Verification violations.
-ms.assetid: badf8948-356c-4728-b34e-02f1638630a6
 keywords: ["Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION", "DRIVER_VERIFIER_DMA_VIOLATION"]
 ms.date: 05/07/2019
 topic_type:
@@ -21,6 +20,8 @@ The DRIVER\_VERIFIER\_DMA\_VIOLATION bug check has a value of 0x000000E6. This i
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
+> [!NOTE]
+> The E6 major bugcheck code can be observed when Driver Verifier is not enabled. Please see the [DMA Verification](../devtest/dma-verification.md) page for more information if you are experiencing this code without Driver Verifier enabled. 
 
 ## DRIVER\_VERIFIER\_DMA\_VIOLATION Parameters
 
@@ -300,24 +301,17 @@ Expected tag is DmaVrfy0.
 
  
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for a description of the cause.
 
-Resolution
-----------
+## Resolution
 
 This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. You might also consider removing the driver that caused this problem.
 
 If you are the driver writer, use the information obtained through this bug check to fix the bugs in your code.
 
-For more information on Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+For more information on Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
  
-
- 
-
-
-
 

@@ -2,7 +2,6 @@
 title: IRP_MJ_WRITE
 description: Every device driver that transfers data from the system to its device must handle write requests in a DispatchWrite or DispatchReadWrite routine, as must any higher-level driver layered over such a device driver.
 ms.date: 08/12/2017
-ms.assetid: d0db505e-2b3c-4b69-83ef-1a52e37e5d1a
 keywords:
  - IRP_MJ_WRITE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,10 +10,9 @@ ms.localizationpriority: medium
 # IRP\_MJ\_WRITE
 
 
-Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchread--dispatchwrite--and-dispatchreadwrite-routines) or [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchread--dispatchwrite--and-dispatchreadwrite-routines) routine, as must any higher-level driver layered over such a device driver.
+Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](./dispatchread--dispatchwrite--and-dispatchreadwrite-routines.md) or [*DispatchReadWrite*](./dispatchread--dispatchwrite--and-dispatchreadwrite-routines.md) routine, as must any higher-level driver layered over such a device driver.
 
-When Sent
----------
+## When Sent
 
 Any time following the successful completion of a create request.
 
@@ -27,7 +25,7 @@ The driver's I/O stack location in the IRP indicates how many bytes to transfer 
 
 Some drivers use the value at **Parameters.Write.Key** to sort incoming write requests into a driver-determined order in the device queue or in a driver-managed internal queue of IRPs.
 
-Certain types of drivers also use the value at **Parameters.Write.ByteOffset**, which indicates the starting offset for the transfer operation. For example, see the [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-write) topic in the Installable File System (IFS) documentation.
+Certain types of drivers also use the value at **Parameters.Write.ByteOffset**, which indicates the starting offset for the transfer operation. For example, see the [**IRP\_MJ\_WRITE**](../ifs/irp-mj-write.md) topic in the Installable File System (IFS) documentation.
 
 Depending on whether the underlying device driver sets up the target device object's **Flags** with DO\_BUFFERED\_IO or with DO\_DIRECT\_IO, data is transferred from one of the following:
 
@@ -40,15 +38,13 @@ Depending on whether the underlying device driver sets up the target device obje
 
 None
 
-Operation
----------
+## Operation
 
-On receipt of a write request, a higher-level driver sets up the I/O stack location in the IRP for the next-lower driver, or it creates and sets up additional IRPs for one or more lower drivers. It can set up its [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, which is optional for the input IRP but required for driver-created IRPs, by calling [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine). Then, the driver passes the request on to the next-lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+On receipt of a write request, a higher-level driver sets up the I/O stack location in the IRP for the next-lower driver, or it creates and sets up additional IRPs for one or more lower drivers. It can set up its [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, which is optional for the input IRP but required for driver-created IRPs, by calling [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine). Then, the driver passes the request on to the next-lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 On receipt of a write request, a device driver transfers data from system memory to its device. The device driver sets the **Information** field of the I/O status block to the number of bytes transferred when it completes the IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -66,20 +62,15 @@ Requirements
 ## See also
 
 
-[*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+[*DispatchReadWrite*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+[*DispatchWrite*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
+[**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 
-[*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine)
+[*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine)
 
-[**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine)
-
- 
+[**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine)
 
  
-
-
-
 

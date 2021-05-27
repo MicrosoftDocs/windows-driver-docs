@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 ## Description
 
 Percent of machines that WU reported a successful download within the last 28 days
-
+ 
 For more information about Windows Update error codes, see:
-* [Windows Update error codes by component](https://docs.microsoft.com/windows/deployment/update/windows-update-error-reference)
-* [Windows Update common errors and mitigation](https://docs.microsoft.com/windows/deployment/update/windows-update-errors)
+* [Windows Update error codes by component](/windows/deployment/update/windows-update-error-reference)
+* [Windows Update common errors and mitigation](/windows/deployment/update/windows-update-errors)
 
 ## Measure attributes
 

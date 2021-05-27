@@ -1,7 +1,6 @@
 ---
 title: Install the sensor driver
 description: This topic shows you how to install the sensor driver on a development board.
-ms.assetid: 01CC1903-A36B-4ECC-856D-6196EC606973
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic shows you how to install the sensor driver on a development board, after you update the secondary system description table (SSDT) for the development board.
 
-This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](https://docs.microsoft.com/windows-hardware/get-started/adk-install), and follow the instructions to install Windows 10.
+This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](/windows-hardware/get-started/adk-install), and follow the instructions to install Windows 10.
 
 After you finish installing the operating system on the Sharks Cove, See [Build the sensor driver](build-the-sensor-driver.md) to learn how to build a driver in Microsoft Visual Studio. Then return here to continue.
 
@@ -146,9 +145,9 @@ Perform the following tasks to update the SSDT, and load it to replace the facto
     }
     ```
 
-2. In Notepad, click **File** &gt; **Save As**. Then click the **Save as type** dropdown box, and select **All Files**.
+2. In Notepad, select **File** &gt; **Save As**. Then select the **Save as type** dropdown box, and select **All Files**.
 
-3. In the **File name** box, type *ssdt.asl*, then click **Save**, and close Notepad.
+3. In the **File name** box, type *ssdt.asl*, then select **Save**, and close Notepad.
 
 4. In the Command prompt window, use the **dir** command to make sure that you can see the default file now listed as *ssdt-old.asl*, and the new file listed as *ssdt.asl*.
 
@@ -201,20 +200,15 @@ You must connect your sensor to the Sharks Cove before you install the sensor dr
 
 3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang.](images/dev-manager.png)
 
-4. Right-click the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and click **Browse my computer for driver software**.
+4. Select and hold (or right-click) the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and select **Browse my computer for driver software**.
 
-5. Browse to the ADXL345 driver on the flash drive, then click **Next**. Follow the screen prompts to install the sensor driver.
+5. Browse to the ADXL345 driver on the flash drive, then select **Next**. Follow the screen prompts to install the sensor driver.
 
 6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer](images/dev-mgr-sensors.png)
 
-For information about how to use Visual Studio to deploy a driver to a client computer (like the Sharks Cove), see [Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers/develop/deploying-a-driver-to-a-test-computer).
+For information about how to use Visual Studio to deploy a driver to a client computer (like the Sharks Cove), see [Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md).
 
 After successfully installing the sample sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md) for information about how to test a sensor.
 
  
-
- 
-
-
-
 

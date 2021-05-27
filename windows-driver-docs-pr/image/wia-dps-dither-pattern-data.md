@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DITHER\_PATTERN\_DATA
 description: The WIA\_DPS\_DITHER\_PATTERN\_DATA property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 740d1581-e756-4a27-bac7-52804dad2cb6
 keywords: ["WIA_DPS_DITHER_PATTERN_DATA Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

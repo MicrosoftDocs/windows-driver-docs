@@ -1,7 +1,6 @@
 ---
 title: prcb
 description: The prcb extension displays the processor control block (PRCB).
-ms.assetid: 747695a1-8a5d-4d30-9315-91f4bf7f568e
 keywords: ["processor control block", "prcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the processor to retrieve the PRCB information from. If *Processor* is
 
 For information about the PCR and the PRCB, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The PRCB is an extension of the processor control region (PCR). To display the PCR, use the [**!pcr**](-pcr.md) extension.
 

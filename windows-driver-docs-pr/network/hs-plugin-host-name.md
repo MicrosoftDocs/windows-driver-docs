@@ -1,7 +1,6 @@
 ---
 title: HS_PLUGIN_HOST_NAME structure
 description: The HS_PLUGIN_HOST_NAME structure contains the host name.
-ms.assetid: 3995fff6-6992-4dd6-a94c-a27b2ee44436
 keywords: 
 - HS_PLUGIN_HOST_NAME structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_HOST_NAME structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_HOST\_NAME structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_HOST\_NAME** structure contains the host name.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_PLUGIN_HOST_NAME {
@@ -25,14 +23,12 @@ typedef struct _HS_PLUGIN_HOST_NAME {
 } HS_PLUGIN_HOST_NAME, *PHS_PLUGIN_HOST_NAME;
 ```
 
-Members
--------
+## Members
 
 **pszHostName**  
 Pointer to the host name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

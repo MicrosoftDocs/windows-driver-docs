@@ -1,7 +1,6 @@
 ---
 title: Driver initialization
 description: Driver initialization
-ms.assetid: 9886BBBC-7EE5-45AF-AEDD-75C0885C622B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ ACPI allows Windows to control a device’s configuration and power management. 
 
 To install a sensor device and driver on your Windows SoC device, you’ll need to update the DSDT table with a corresponding node. This node has information about the sample device’s controllers and connectors. Here’s how Windows and your driver use the data in the node:
 
-1.  1. The Plug and Play (PnP) manager gets device connection information from the ACPI driver.
+1.  The Plug and Play (PnP) manager gets device connection information from the ACPI driver.
 2.  The PnP manager then creates a connection ID to represent the bus connection.
 3.  The PnP manager passes the connection ID to the sample driver as a hardware resource.
 4.  The sample driver uses the connection ID to open a logical connection to the sensor device, and gets a handle to the connection.
@@ -76,7 +75,7 @@ In addition to updating the DSDT table, you’ll need to update the Windows setu
 
 The methods below are invoked by Windows or by the driver during the early initialization phase. The preliminary device-initialization methods apply to any device supported by your driver. They appear in the module Device.cpp.
 
-|     | Method                        | Invoked By                                                         | Purpose                                                                                                       |
+|  Step   | Method                        | Invoked By                                                         | Purpose                                                                                                       |
 |-----|-------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | 1   | **DllGetClassObject**         | WUDFHost.exe                                                       | Gets the driver’s class object. (Required for any COM DLL.)                                                   |
 | 2   | **CMyDevice::OnQueryRemove**  | WUDFx.dll (a component of the Windows user-mode driver framework). |                                                                                                               |
@@ -102,7 +101,7 @@ The methods below are invoked by the driver during initialization to prepare the
 
 If you’re porting the sample driver to support another device, such as a compass, you’ll create a parallel module, CompassDevice.cpp. Replace the CAccelerometerDevice class with a CCompassDevice class and revise the methods in the sample’s module to support your device’s objects, data, and interrupt.
 
-|     | Method                                                 | Invoked by                                                         | Purpose                                                                                                                |
+| Step    | Method                                                 | Invoked by                                                         | Purpose                                                                                                                |
 |-----|--------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**                       | WUDFx.dll (a component of the Windows user-mode driver framework). | Start the operations required to make the given device accessible by the driver.                                       |
 | 2   | **CSensorDdi::Initialize**                             | **CMyDevice::OnPrepareHardware**                                   | Create and initialize the sensor device object.                                                                        |
@@ -129,7 +128,7 @@ If you’re porting the sample driver to support another device, such as a compa
 
 The methods below are invoked by the driver during initialization to open a file handle to the underlying SPB controller. (Note that the first four methods of this sequence are the same as the first four methods in the data-connection sequence.)
 
-|     | Method                                      | Invoked by                                                         | Purpose                                                                                                                                          |
+| Step   | Method                                      | Invoked by                                                         | Purpose                                                                                                                                          |
 |-----|---------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**            | WUDFx.dll (a component of the Windows user-mode driver framework). | Starts the operations required to make the given device accessible by the driver.                                                                |
 | 2   | **CSensorDdi::Initialize**                  | **CMyDevice::OnPrepareHardware**                                   | Creates and initializes the sensor device object.                                                                                                |
@@ -153,7 +152,7 @@ The methods below are invoked by the driver during initialization to open a file
 
 The methods below are invoked by the driver during initialization to get the properties and data fields supported by the sensor. For the Windows sensor platform, the accelerometer properties correspond to read or read-write data, such as the sensor’s report interval or its minimum supported report interval. The data fields correspond to the actual accelerometer readings along its X-, Y-, and Z-axis. (Note that the first three methods of this sequence are the same as the first three methods in the previous data-connection, and SPB request-object, sequences.)
 
-|     | Method                                             | Invoked by                                                         | Purpose                                                                                                               |
+| Step  | Method                                             | Invoked by                                                         | Purpose                                                                                                               |
 |-----|----------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**                   | WUDFx.dll (a component of the Windows user-mode driver framework). | Starts the operations required to make the given device accessible by the driver.                                     |
 | 2   | **CSensorDdi::Initialize**                         | **CMyDevice::OnPrepareHardware**                                   | Creates and initialize the sensor device object.                                                                      |
@@ -179,7 +178,7 @@ The methods below are invoked by the driver during initialization to get the pro
 
 The methods below are invoked by the driver during initialization to initialize the persistent unique identifier (PUID) for the sensor. Windows uses the **PUID** to persist data across device sessions. (Note that the first four methods of this sequence are the same as the first four methods in the previous property and data-field sequence.)
 
-|     | Method                                             | Invoked by                                                         | Purpose                                                                                                   |
+| Step  | Method                                             | Invoked by                                                         | Purpose                                                                                                   |
 |-----|----------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**                   | WUDFx.dll (a component of the Windows user-mode driver framework). | Starts the operations required to make the given device accessible by the driver.                         |
 | 2   | **CSensorDdi::Initialize**                         | **CMyDevice::OnPrepareHardware**                                   | Creates and initialize the sensor device object.                                                          |
@@ -203,7 +202,7 @@ The methods below are invoked by the driver during initialization to initialize 
 
 The Windows sensor platform supports default property values for sensor type, manufacturer’s name, sensor model, and serial number. The code in the SpbAccelerometer sample sets these properties as part of the driver and device initialization phase. The methods below are invoked by the driver, during initialization, to set the default values for the accelerometer. (Note that the first four methods of this sequence are the same as the first four methods in the previous property-setting sequences.)
 
-|     | Method                                             | Invoked by                                                         | Purpose                                                                                           |
+| Step   | Method                                             | Invoked by                                                         | Purpose                                                                                           |
 |-----|----------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**                   | WUDFx.dll (a component of the Windows user-mode driver framework). | Starts the operations required to make the given device accessible by the driver.                 |
 | 2   | **CSensorDdi::Initialize**                         | **CMyDevice::OnPrepareHardware**                                   | Create and initialize the sensor device object.                                                   |
@@ -226,7 +225,7 @@ The Windows sensor platform supports default property values for sensor type, ma
 
 The Windows sensor platform supports read-only and read-write properties for sensors and this is true of the default properties as well. The code in the SpbAccelerometer sample gets the list of writeable (or settable) default properties as part of the driver and device initialization phase. The methods below are invoked by the driver, during initialization, to get these properties for the accelerometer. (Note that the first four methods of this sequence are the same as the first four methods in the previous property-setting sequences.)
 
-|     | Method                                             | Invoked by                                                         | Purpose                                                                                           |
+| Step   | Method                                             | Invoked by                                                         | Purpose                                                                                           |
 |-----|----------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**                   | WUDFx.dll (a component of the Windows user-mode driver framework). | Start the operations required to make the given device accessible by the driver.                  |
 | 2   | **CSensorDdi::Initialize**                         | **CMyDevice::OnPrepareHardware**                                   | Creates and initialize the sensor device object.                                                  |
@@ -251,7 +250,7 @@ The Windows sensor platform supports events. An application registers an event h
 
 To support the event model in the sensor platform, the driver must activate a thread to handle the event notifications. The methods below are invoked by the driver during initialization to perform this activation. (Note that the first three methods of this sequence are the same as the first three methods in a number of the previous sequences.)
 
-|     | Method                                         | Invoked by                                                         | Purpose                                                                              |
+| Step   | Method                                         | Invoked by                                                         | Purpose                                                                              |
 |-----|------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnPrepareHardware**               | WUDFx.dll (a component of the Windows user-mode driver framework). | Starts the operations required to make the given device accessible by the driver.    |
 | 2   | **CSensorDdi::Initialize**                     | **CMyDevice::OnPrepareHardware**                                   | Creates and initializes the sensor device object.                                    |
@@ -284,7 +283,7 @@ The Windows sensor platform has a class extension of the Sensor API that provide
 
 The final sequence of methods in the device and driver initialization configures the ADXL345 and places it in standby mode. (This sequence of write and read operations is repeated multiple times until the device is configured.)
 
-|     | Method                                          | Invoked by                                                         | Purpose                                                                               |
+| Step  | Method                                          | Invoked by                                                         | Purpose                                                                               |
 |-----|-------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | 1   | **CMyDevice::OnD0Entry**                        | WUDFx.dll (a component of the Windows user-mode driver framework). | Invoked when a new device appears on the system.                                      |
 | 2   | **CSensorDdi::Start**                           | **CMyDevice::OnD0Entry**                                           | A pass-through method that calls CSensorDevice::Start.                                |
@@ -300,7 +299,7 @@ The final sequence of methods in the device and driver initialization configures
 
 Most of the device-configuration work takes place through a series of **CAccelerometerDevice::WriteRegister** and **CAccelerometerDevice::ReadRegister** method calls. The driver uses the ::**WriteRegister** method to write a value to one of the ADXL345 registers; it then examines the value returned in the corresponding ::**ReadRegister** method to verify that the write operation succeeded. Here's a complete sequence of write and read operations.
 
-|     | Method                                  | Register | Data                | Purpose                                                                                                            |
+| Step | Method                                  | Register | Data                | Purpose                                                                                                            |
 |-----|-----------------------------------------|----------|---------------------|--------------------------------------------------------------------------------------------------------------------|
 | 1   | **CAccelerometerDevice::WriteRegister** | **0x2d** | **'\\0' (0x00)**    | Resets the sensor’s power-control register and place the device in standby mode.                                   |
 | 2   | **CAccelerometerDevice::ReadRegister**  | **0x2d** | **'\\0' (0x00)**    | The returned register values indicate that the write operation succeeded.                                          |
@@ -317,7 +316,6 @@ Most of the device-configuration work takes place through a series of **CAcceler
 | 13  | **CAccelerometerDevice::WriteRegister** | **0x2f** | **'\\0x10' (0x10)** | Sets the INT\_MAP (interrupt mapping) register. A value of 0x10 requests that the Watermark is mapped to INT2 pin. |
 | 14  | **CAccelerometerDevice::ReadRegister**  | **0x2f** | **'\\0x10' (0x10)** | The returned register value indicates that the write operation succeeded.                                          |
 
- 
 
 After the driver and device have been configured, the initialization sequence is complete and apps can start receiving sensor data.
 

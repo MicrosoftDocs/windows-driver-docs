@@ -1,18 +1,21 @@
 ---
-title: Allocated Altitudes
-description: Allocated Altitudes
-ms.assetid: EC1993FB-5219-4C0C-A76A-05937A461C5A
+title: Allocated filter altitudes
+description: Lists file system filter altitudes allocated by Microsoft
 ms.date: 03/11/2020
+keywords:
+- filter driver altitude
+- minifilter driver altitude
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q1
 ---
 
-# Allocated Altitudes
+# Allocated filter altitudes
 
-A file system minifilter driver developed to the Filter Manager model must have a unique identifier called an altitude that defines its position relative to other minifilters present in the file system stack. Minifilter altitudes are allocated by Microsoft based on minifilter requirements and load order group.
+The following table lists the filter altitude allocations for each of the following load order groups. NOTE: this page is updated 1-2 times per year.
 
-To request a minifilter altitude number, see [Minifilter Altitude Request](minifilter-altitude-request.md).
-
-The altitude allocations assigned as of this page's publish date are listed below for each of the following load order groups (NOTE: this page is updated 1-2 times per year).
+* See [Load order groups and altitudes for filter drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md) for more information about altitudes and load order groups.
+* Filter altitudes are allocated by Microsoft based on filter requirements and load order group. To request a filter altitude number, see [Filter altitude request](minifilter-altitude-request.md).
+* To see how a driver uses its altitude number in its INF file, see [Creating an INF file for a filter driver](creating-an-inf-file-for-a-minifilter-driver.md).
 
 ## <span id="420000_-_429999__Filter"></span><span id="420000_-_429999__filter"></span><span id="420000_-_429999__FILTER"></span>420000 - 429999: Filter
 

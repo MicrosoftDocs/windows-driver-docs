@@ -1,7 +1,6 @@
 ---
 title: Name Element for DeviceCondition and ConditionHistoryEntry element
 description: The required Name element names the current error condition that is specified in a DeviceCondition or ConditionHistoryEntry element.
-ms.assetid: 1ac530ed-dc31-4af0-a89b-0860a36bbfeb
 keywords: ["Name Element for DeviceCondition and ConditionHistoryEntry element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Name** element names the current error condition that is specified in a [**DeviceCondition**](devicecondition.md) or [**ConditionHistoryEntry**](conditionhistoryentry.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Name>
@@ -27,13 +25,11 @@ Usage
 </wscn:Name>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -117,8 +113,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Some error names are valid for only certain [**Component**](component.md) elements.
 

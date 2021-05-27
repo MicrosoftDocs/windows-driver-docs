@@ -1,7 +1,6 @@
 ---
 title: SKU differentiation directive
 description: With Windows Server 2008 and Windows Vista SP1, the in-box display driver INFs were modified to include a new value that represented the drivers as Client Only, meaning that the drivers would not install on server SKUs of Windows.
-ms.assetid: 9E31BD57-41B6-40DF-AF27-8EAC66BDFE09
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,7 @@ independent hardware vendors (IHVs) can use ProductType INF values to indicate t
 
 Therefore, even if a client-only driver package exists in the driver store of a server system, that driver is not installable.
 
-The [**INF Manufacturer Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) topic shows how to add *TargetOSVersion* to filter device installations based on various criteria. One of these criteria is *ProductType*, which can be used to specify a category of SKUs on which the package can be installed. The following values are defined for *ProductType*:
+The [**INF Manufacturer Section**](../install/inf-manufacturer-section.md) topic shows how to add *TargetOSVersion* to filter device installations based on various criteria. One of these criteria is *ProductType*, which can be used to specify a category of SKUs on which the package can be installed. The following values are defined for *ProductType*:
 
 ``` syntax
 0x0000001 (VER_NT_WORKSTATION)
@@ -92,10 +91,4 @@ IHV_DeviceName.ZZZ = "Foo Datacenter Name (Microsoft Corporation - WDDM v1.2)"
 ```
 
  
-
- 
-
-
-
-
 

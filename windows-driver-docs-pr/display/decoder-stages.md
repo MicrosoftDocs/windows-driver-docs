@@ -1,7 +1,6 @@
 ---
 title: Decoder Stages
 description: Decoder Stages
-ms.assetid: 34562b2a-9568-440d-b6ec-dbd1e5004d56
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , video decoding
 - Video Acceleration WDK DirectX , video decoding

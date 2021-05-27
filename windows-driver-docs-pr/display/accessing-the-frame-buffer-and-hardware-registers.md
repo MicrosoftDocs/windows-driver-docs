@@ -1,7 +1,6 @@
 ---
 title: Accessing the Frame Buffer and Hardware Registers
 description: Accessing the Frame Buffer and Hardware Registers
-ms.assetid: 6f735f33-0bb7-45b8-ac01-f34ec4937a8b
 keywords:
 - frame buffers WDK Windows 2000 display
 - reduce display driver size WDK Windows 2000

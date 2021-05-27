@@ -1,7 +1,6 @@
 ---
 title: AVStream Headers
 description: AVStream Headers
-ms.assetid: 2afd5a1f-385a-4370-b751-e6f5d28d1d4e
 keywords:
 - AVStream headers WDK
 - headers WDK AVStream

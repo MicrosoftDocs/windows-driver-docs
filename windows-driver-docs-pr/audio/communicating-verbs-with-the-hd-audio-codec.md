@@ -1,7 +1,6 @@
 ---
 title: Communicating Verbs with the HD Audio Codec
 description: Communicating Verbs with the HD Audio Codec
-ms.assetid: d93013fa-5b09-4616-bc71-5d3838337717
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The IOCTL\_AZALIABUS\_SENDVERBS IOCTL is used by the Hdau.exe pin configuration tool when you define sound topologies for your audio adapters. Do not use this IOCTL for other purposes. This information about IOCTL\_AZALIABUS\_SENDVERBS is provided to document its design and implementation only. This IOCTL is supported in the Windows 7 Hdaudio.sys audio class driver.
 
-High definition (HD) audio codecs are able to receive and respond to verbs. These verbs and the responses of the codecs to these verbs are documented as part of [The HD Audio Specification](https://go.microsoft.com/fwlink/p/?linkid=169394).
+High definition (HD) audio codecs are able to receive and respond to verbs. These verbs and the responses of the codecs to these verbs are documented as part of [The HD Audio Specification](https://www.intel.com/content/www/us/en/products/docs/chipsets/high-definition-audio.html).
 
 In Windows 7 and later versions of the Windows operating systems, the HD audio class driver uses the IOCTL\_AZALIABUS\_SENDVERBS IOCTL to communicate verbs with the audio codec. IOCTL\_AZALIABUS\_SENDVERBS is defined as shown in the following example:
 
@@ -21,7 +20,7 @@ In Windows 7 and later versions of the Windows operating systems, the HD audio c
 
 For more information about FILE\_DEVICE\_UNKNOWN, METHOD\_BUFFERED, and FILE\_ANY\_ACCESS, see the Devioctl.h header file in the Windows SDK.
 
-To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239) function with the following parameters.
+To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function with the following parameters.
 
 ```cpp
 BOOL DeviceIoControl(
@@ -36,7 +35,7 @@ BOOL DeviceIoControl(
 );
 ```
 
-If the call to [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) for a more detailed error message.
+If the call to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) for a more detailed error message.
 
 When the audio driver must change pin configuration defaults, it can use IOCTL\_AZALIABUS\_SENDVERBS to send and receive Set and Get verbs from the audio codec. If communication with the audio codec is not about pin configuration, the audio codec only responds to the Get verb.
 
@@ -156,9 +155,4 @@ typedef struct _UserModeCodecResponsePacket
 ```
 
  
-
- 
-
-
-
 

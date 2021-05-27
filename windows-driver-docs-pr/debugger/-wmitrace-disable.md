@@ -1,7 +1,6 @@
 ---
 title: wmitrace.disable
 description: The wmitrace.disable extension disables a provider for the specified Event Tracing for Windows (ETW) trace session.
-ms.assetid: b993bfa4-2d3d-4739-9d5e-0cb714369742
 keywords: ["wmitrace.disable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,8 +43,7 @@ This extension is available in Windows 7 and later versions of Windows.
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 After using this extension, you must resume program execution (for example, by using the [**g (Go)**](g--go-.md) command) in order for it to take effect. After a brief time, the target computer automatically breaks into the debugger again.
 

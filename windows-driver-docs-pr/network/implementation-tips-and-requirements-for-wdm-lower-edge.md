@@ -1,7 +1,6 @@
 ---
 title: Implementation Tips and Requirements for WDM Lower Edge
 description: Implementation Tips and Requirements for WDM Lower Edge
-ms.assetid: 760c62ec-eeca-4b62-97ec-7cda5ee353a8
 keywords:
 - NDIS-WDM miniport drivers WDK networking , implemention tips
 - lower edge of NDIS miniport drivers WDK networking , driver implemention
@@ -20,7 +19,7 @@ This topic describes tips and requirements for implementing an NDIS-WDM miniport
 
 When implementing an NDIS-WDM miniport driver, keep the following in mind:
 
--   Building an NDIS-WDM miniport driver requires that the NDIS\_WDM flag is defined before the Ndis.h header file is included. Defining the NDIS\_WDM flag ensures that Ndis.h automatically includes the appropriate WDM header file. The NDIS\_WDM flag should be either embedded at the start of the miniport driver's source code or set in the miniport driver's Sources file. An NDIS-WDM miniport driver requires a WDM header file to call kernel-mode routines such as [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) and [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp).
+-   Building an NDIS-WDM miniport driver requires that the NDIS\_WDM flag is defined before the Ndis.h header file is included. Defining the NDIS\_WDM flag ensures that Ndis.h automatically includes the appropriate WDM header file. The NDIS\_WDM flag should be either embedded at the start of the miniport driver's source code or set in the miniport driver's Sources file. An NDIS-WDM miniport driver requires a WDM header file to call kernel-mode routines such as [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) and [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp).
 
 -   Function calls for a particular bus-driver interface require the header files for that bus driver.
 
@@ -34,10 +33,4 @@ When implementing an NDIS-WDM miniport driver, keep the following in mind:
     For the preceding scenarios, the NDIS-WDM miniport driver should call the appropriate WDM routines to allocate or release resources for the non-NDIS entity.
 
  
-
- 
-
-
-
-
 

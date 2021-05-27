@@ -1,7 +1,6 @@
 ---
 title: Enable application verifier
 description: Enable application verifier
-ms.assetid: a91e244e-e3b6-4975-8385-1da06cc3ae83
 keywords: ["Enable application verifier (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -44,4 +43,4 @@ The **Enable application verifier** flag enables system features that are used f
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-This flag enables only the most basic detection features. To test user-mode applications reliably, use Application Verifier (appverif.exe). For more information, see [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier).
+This flag enables only the most basic detection features. To test user-mode applications reliably, use Application Verifier (appverif.exe). For more information, see [Application Verifier](../devtest/application-verifier.md).

@@ -1,7 +1,6 @@
 ---
 title: Buffering State Control
 description: Buffering State Control
-ms.assetid: 16590332-9d0d-4d8b-8304-a3fa9269c0e2
 keywords:
 - RDBSS WDK file systems , buffering state
 - Redirected Drive Buffering Subsystem WDK file systems , buffering state
@@ -37,13 +36,13 @@ The amount of computational effort involved in identifying the SRV\_OPEN structu
 
 There are two routines provided in RDBSS for indicating buffering state changes to SRV\_OPEN structures:
 
--   [**RxIndicateChangeOfBufferingState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate) for registering the request
+-   [**RxIndicateChangeOfBufferingState**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate) for registering the request
 
--   [**RxIndicateChangeOfBufferingStateForSrvOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen) for associating a SRV\_OPEN structure with the key
+-   [**RxIndicateChangeOfBufferingStateForSrvOpen**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen) for associating a SRV\_OPEN structure with the key
 
 Note that the key associations are irreversible and will last the lifetime of the associated SRV\_OPEN structure.
 
-Network mini-redirectors that need an auxiliary mechanism for establishing the mapping from multiplex IDs to the SRV\_OPEN structure can use [**RxIndicateChangeOfBufferingState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate), while the network mini-redirectors that do not require this assistance can use [**RxIndicateChangeOfBufferingStateForSrvOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen).
+Network mini-redirectors that need an auxiliary mechanism for establishing the mapping from multiplex IDs to the SRV\_OPEN structure can use [**RxIndicateChangeOfBufferingState**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate), while the network mini-redirectors that do not require this assistance can use [**RxIndicateChangeOfBufferingStateForSrvOpen**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen).
 
 The buffering manager in RDBSS processes these requests in different stages. It maintains the requests received from the various underlying network mini-redirectors in one of several lists.
 
@@ -70,26 +69,19 @@ RDBSS provides the following routines to manage buffering state that can be used
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxchangebufferingstate" data-raw-source="[&lt;strong&gt;RxChangeBufferingState&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxchangebufferingstate)"><strong>RxChangeBufferingState</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxchangebufferingstate" data-raw-source="[&lt;strong&gt;RxChangeBufferingState&lt;/strong&gt;](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxchangebufferingstate)"><strong>RxChangeBufferingState</strong></a></p></td>
 <td align="left"><p>This routine is called to process a buffering state change request.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate" data-raw-source="[&lt;strong&gt;RxIndicateChangeOfBufferingState&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate)"><strong>RxIndicateChangeOfBufferingState</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate" data-raw-source="[&lt;strong&gt;RxIndicateChangeOfBufferingState&lt;/strong&gt;](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstate)"><strong>RxIndicateChangeOfBufferingState</strong></a></p></td>
 <td align="left"><p>This routine is called to register a buffering state change request (an oplock break indication, for example) for later processing.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen" data-raw-source="[&lt;strong&gt;RxIndicateChangeOfBufferingStateForSrvOpen&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen)"><strong>RxIndicateChangeOfBufferingStateForSrvOpen</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen" data-raw-source="[&lt;strong&gt;RxIndicateChangeOfBufferingStateForSrvOpen&lt;/strong&gt;](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen)"><strong>RxIndicateChangeOfBufferingStateForSrvOpen</strong></a></p></td>
 <td align="left"><p>This routine is called to register a buffering state change request (an oplock break indication, for example) for later processing.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
- 
-
- 
-
-
-
 

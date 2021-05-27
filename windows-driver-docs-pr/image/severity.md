@@ -1,7 +1,6 @@
 ---
 title: Severity element
 description: The required Severity element specifies the severity level of the current DeviceCondition or ConditionHistoryEntry element.
-ms.assetid: 51c08a50-0c2b-40d9-883e-32460c2024ad
 keywords: ["Severity element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Severity** element specifies the severity level of the current [**DeviceCondition**](devicecondition.md) or [**ConditionHistoryEntry**](conditionhistoryentry.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Severity>
@@ -27,13 +25,11 @@ Usage
 </wscn:Severity>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -93,8 +89,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service determines the **Severity** level that is assigned to each error condition.
 

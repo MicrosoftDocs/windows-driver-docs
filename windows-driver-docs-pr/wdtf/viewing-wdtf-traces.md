@@ -1,7 +1,6 @@
 ---
 title: Enabling and Viewing WDTF Traces
 description: Enabling and Viewing WDTF Traces
-ms.assetid: 9bed6042-3691-4a5e-a143-51acf746b1ae
 keywords:
 - Windows Device Testing Framework WDK , tracing events
 - WDTF WDK , tracing events
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 # Enabling and Viewing WDTF Traces
 
-WDTF *Tracing* refers to reporting events that occur internally within WDTF objects. Because WDTF is heavily instrumented, all WDTF objects provide tracing information as they run. WDTF handles tracing by using [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing). This type of tracing is a standardized format that you can read by using WDK tools, including [TraceView](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-traceview). This topic covers how to use [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) and [Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt) to view WDTF run-time traces. This topic also discusses how you can programmatically configure WDTF trace levels.
+WDTF *Tracing* refers to reporting events that occur internally within WDTF objects. Because WDTF is heavily instrumented, all WDTF objects provide tracing information as they run. WDTF handles tracing by using [WPP Software Tracing](../devtest/wpp-software-tracing.md). This type of tracing is a standardized format that you can read by using WDK tools, including [TraceView](../devtest/using-traceview.md). This topic covers how to use [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)) and [Tracefmt](../devtest/tracefmt.md) to view WDTF run-time traces. This topic also discusses how you can programmatically configure WDTF trace levels.
 
 ## How to collect and save WDTF Traces
 
@@ -29,7 +28,7 @@ WDTF *Tracing* refers to reporting events that occur internally within WDTF obje
 
 2. Reboot the computer.
 
-See [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) (Logman.exe) for information about other options. For information about creating a trace season, see [Configuring and Starting an AutoLogger Session](https://docs.microsoft.com/windows/desktop/ETW/configuring-and-starting-an-autologger-session).
+See [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)) (Logman.exe) for information about other options. For information about creating a trace season, see [Configuring and Starting an AutoLogger Session](/windows/desktop/ETW/configuring-and-starting-an-autologger-session).
 
 ### To stop collecting WDTF traces and save log files
 
@@ -47,7 +46,7 @@ See [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) (Logman.exe) for 
 
 ## How to view WDTF traces
 
-Viewing WDTF traces requires formatting the ETL files. The following steps show how to use [Tracefmt.exe](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt) to convert the ETL files to text or CSV files.
+Viewing WDTF traces requires formatting the ETL files. The following steps show how to use [Tracefmt.exe](../devtest/tracefmt.md) to convert the ETL files to text or CSV files.
 
 ### To view WDTF Traces
 
@@ -69,11 +68,11 @@ Viewing WDTF traces requires formatting the ETL files. The following steps show 
 
 All WDTF objects provide tracing information as they run.
 
-WDTF provides a set of configurable [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) levels. For information on how to set the **TTraceLevel** of a specific object instance at run-time, see the [**ITracing::SetTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) method.
+WDTF provides a set of configurable [**TTraceLevel**](/windows-hardware/drivers/ddi/index) levels. For information on how to set the **TTraceLevel** of a specific object instance at run-time, see the [**ITracing::SetTraceLevel**](/windows-hardware/drivers/ddi/index) method.
 
-For information on how to set the default [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) for an interface, see the [Windows Device Testing Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+For information on how to set the default [**TTraceLevel**](/windows-hardware/drivers/ddi/index) for an interface, see the [Windows Device Testing Framework Reference](/windows-hardware/drivers/ddi/index).
 
-For a detailed description of the types of traces included in each [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), see the [**ITracer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) interface. You can globally configure these levels yourself using the **ITracer**'s registry TraceLevel Path.
+For a detailed description of the types of traces included in each [**TTraceLevel**](/windows-hardware/drivers/ddi/index), see the [**ITracer**](/windows-hardware/drivers/ddi/index) interface. You can globally configure these levels yourself using the **ITracer**'s registry TraceLevel Path.
 
 The following table describes the trace levels that you can set.
 
@@ -89,12 +88,12 @@ The following table describes the trace levels that you can set.
 
 When you are debugging by using trace content, consider setting the trace levels to 1 for all objects and then setting trace levels much higher for the objects that you are examining.
 
-For more information about trace levels, see the [**ITracer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) interface.
+For more information about trace levels, see the [**ITracer**](/windows-hardware/drivers/ddi/index) interface.
 
 ## Related topics
 
-[Configuring and Starting an AutoLogger Session](https://docs.microsoft.com/windows/desktop/ETW/configuring-and-starting-an-autologger-session)  
-[Logman](https://go.microsoft.com/fwlink/p/?linkid=136332)  
-[Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt)  
-[TraceView](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-traceview)  
-[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)  
+[Configuring and Starting an AutoLogger Session](/windows/desktop/ETW/configuring-and-starting-an-autologger-session)  
+[Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11))  
+[Tracefmt](../devtest/tracefmt.md)  
+[TraceView](../devtest/using-traceview.md)  
+[WPP Software Tracing](../devtest/wpp-software-tracing.md)

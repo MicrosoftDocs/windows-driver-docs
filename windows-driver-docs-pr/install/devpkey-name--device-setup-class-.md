@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Setup Class)
 description: DEVPKEY_NAME (Device Setup Class)
-ms.assetid: cc953918-f11a-464c-95cc-ee2a9aa68b7a
 keywords: ["DEVPKEY_NAME (Device Setup Class) Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # DEVPKEY_NAME (Device Setup Class)
 
 
-The DEVPKEY_NAME device property represents the name of a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
+The DEVPKEY_NAME device property represents the name of a [device setup class](./overview-of-device-setup-classes.md).
 
 <table>
 <colgroup>
@@ -47,19 +46,17 @@ The DEVPKEY_NAME device property represents the name of a [device setup class](h
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the value of DEVPKEY_NAME to identify a device setup class to an end-user in a user interface item.
 
 If DEVPKEY_DeviceClass_Name is set, the value of DEVPKEY_NAME is the same as the value of the [**DEVPKEY_DeviceClass_Name**](devpkey-deviceclass-name.md) device property. Otherwise, the DEVPKEY_NAME value is the same as the value of the [**DEVPKEY_DeviceClass_ClassName**](devpkey-deviceclass-classname.md) device property.
 
-You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_NAME for a device setup class.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_NAME for a device setup class.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY_DeviceClass_Name and DEVPKEY_DeviceClass_ClassName.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,20 +82,13 @@ Requirements
 
 [**DEVPKEY_DeviceClass_Name**](devpkey-deviceclass-name.md)
 
-[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiGetClassDescription**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdescriptiona)
+[**SetupDiGetClassDescription**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptiona)
 
-[**SetupDiClassNameFromGuid**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiclassnamefromguida)
-
- 
+[**SetupDiClassNameFromGuid**](/windows/win32/api/setupapi/nf-setupapi-setupdiclassnamefromguida)
 
  
-
-
-
-
-
 

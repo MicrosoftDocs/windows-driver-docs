@@ -1,13 +1,12 @@
 ---
-title: Microsoft Bluetooth Test Platform
+title: Microsoft Bluetooth Test Platform supported hardware
 description: Bluetooth Test Platform (BTP) supported hardware.
-ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 
 ---
 
-# Bluetooth Testing Platform Supported Hardware #
+# Bluetooth Testing Platform Supported Hardware
 
 The Bluetooth Test Platform (BTP) makes use of specialized hardware to make Bluetooth testing easier. The Traduci board is used to more easily allow software on a host device (like a PC) to communicate with external radios over a sideband.
 
@@ -17,7 +16,8 @@ In the above scenario the Traduci makes several things simpler: It is able to pr
 
 Additionally, it is important to note that BTP tests do not have a tight dependency on the Traduci. If other external hardware is needed for a test, the BTP is designed to allow easy extensibility to support that scenario.
 
-## Traduci board ##
+## Traduci board
+
 The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
 ![Photo of the Traduci board](images/Traduci_Overhead.jpg)
@@ -29,8 +29,10 @@ The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-241
 - Unlabled pins can easily be statically assigned to HIGH or LOW depending on the needs of the radio plugged into the port
 - The Traduci does not currently support hardware handshaking using CTS and RTS
 
-## Supported radios ##
+## Supported radios
 
-Currently, only the RN42 (BR) and Bluefruit (LE) radios are officially supported. They are both capable of running the pairing and HID tests. More information about these radios can be reviwed at [HID Capable Peripheral Radios](testing-BTP-hw-hid.md).
+More information about officially supported radios can be reviewed at the following pages:
 
-Audio tests are under development. More information on the audio radio that will be used can be reviewed at [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md).
+- [HID Capable Peripheral Radios](testing-BTP-hw-hid.md)
+- [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md)
+- [BM-64-EVB board](testing-BTP-hw-bm64.md)

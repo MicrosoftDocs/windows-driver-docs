@@ -1,7 +1,6 @@
 ---
 title: Handling WMI Requests
 description: Handling WMI Requests
-ms.assetid: d95b736c-045d-4888-8bab-b0a6201f8830
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,11 +12,11 @@ ms.localizationpriority: medium
 
 
 
-All drivers must set a dispatch table entry point for a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine to handle WMI requests. If a driver [registers as a WMI data provider](registering-as-a-wmi-data-provider.md), it must handle all WMI requests. Otherwise, the driver must forward all WMI requests to the next lower driver.
+All drivers must set a dispatch table entry point for a [*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine to handle WMI requests. If a driver [registers as a WMI data provider](registering-as-a-wmi-data-provider.md), it must handle all WMI requests. Otherwise, the driver must forward all WMI requests to the next lower driver.
 
-All WMI IRPs have the major code [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control) and a one of the following minor codes:
+All WMI IRPs have the major code [**IRP\_MJ\_SYSTEM\_CONTROL**](./irp-mj-system-control.md) and a one of the following minor codes:
 
--   [**IRP\_MN\_REGINFO**](irp-mn-reginfo.md), [**IRP\_MN\_REGINFO\_EX**](irp-mn-reginfo-ex.md)—Queries or updates a driver's registration information after the driver has called [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol).
+-   [**IRP\_MN\_REGINFO**](irp-mn-reginfo.md), [**IRP\_MN\_REGINFO\_EX**](irp-mn-reginfo-ex.md)—Queries or updates a driver's registration information after the driver has called [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol).
 
 -   [**IRP\_MN\_QUERY\_ALL\_DATA**](irp-mn-query-all-data.md), [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](irp-mn-query-single-instance.md)—Queries for all instances or a single instance of a given data block.
 
@@ -29,16 +28,10 @@ All WMI IRPs have the major code [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.mic
 
 -   [**IRP\_MN\_EXECUTE\_METHOD**](irp-mn-execute-method.md)—Requests the driver to execute a method associated with a data block.
 
-The WMI kernel-mode component sends WMI IRPs any time following a driver's successful registration as a WMI data provider, typically when a user-mode data consumer has requested WMI information for a driver's device. If a driver registers as a WMI data provider by calling [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol), it must handle each subsequent WMI request in one of the following ways:
+The WMI kernel-mode component sends WMI IRPs any time following a driver's successful registration as a WMI data provider, typically when a user-mode data consumer has requested WMI information for a driver's device. If a driver registers as a WMI data provider by calling [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol), it must handle each subsequent WMI request in one of the following ways:
 
--   Call the kernel-mode WMI library routine **WmiSystemControl** of a PDO. For more information, see [Calling WmiSystemControl to Handle WMI IRPs](calling-wmisystemcontrol-to-handle-wmi-irps.md).
+-   Call the kernel-mode WMI library routine [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol). A driver can call **WmiSystemControl** to handle requests concerning only blocks that do not use dynamic instance names, and that base static instance names on a single base name string or the *device instance ID* of a PDO. For more information, see [Calling WmiSystemControl to Handle WMI IRPs](calling-wmisystemcontrol-to-handle-wmi-irps.md).
 
--   In its [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine, process and complete any such request tagged with the pointer to its device object that the driver passed in its call to **IoWMIRegistrationControl**, and forward other [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control) requests to the next lower driver. For more information, see [Processing WMI IRPs in a DispatchSystemControl Routine](processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md).
+-   In its [*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine, process and complete any such request tagged with the pointer to its device object that the driver passed in its call to **IoWMIRegistrationControl**, and forward other [**IRP\_MJ\_SYSTEM\_CONTROL**](./irp-mj-system-control.md) requests to the next lower driver. For more information, see [Processing WMI IRPs in a DispatchSystemControl Routine](processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md).
 
 For a list of the WMI minor IRPs, see [WMI Minor IRPs](wmi-minor-irps.md). 
-
- 
-
-
-
-

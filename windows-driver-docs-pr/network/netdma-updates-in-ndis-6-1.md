@@ -1,7 +1,6 @@
 ---
 title: NetDMA Updates in NDIS 6.1
 description: NetDMA Updates in NDIS 6.1
-ms.assetid: ec19ac6e-78b3-4da5-baef-e02fc9947c0e
 keywords:
 - NetDMA WDK networking , about NetDMA interface
 ms.date: 01/09/2019
@@ -17,4 +16,4 @@ The NetDMA interface provides offloading of direct memory access (DMA) to networ
 
 The NetDMA interface is an optional service that is provided for NICs and other drivers.
 
-For more information about NetDMA, see [NetDMA Drivers](netdma-drivers.md).
+For more information about NetDMA, see [NetDMA Drivers](/previous-versions/windows/hardware/network/netdma-drivers).

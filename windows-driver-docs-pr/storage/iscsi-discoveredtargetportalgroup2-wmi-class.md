@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTargetPortalGroup2 WMI Class
 description: ISCSI\_DiscoveredTargetPortalGroup2 WMI Class
-ms.assetid: 9285c74c-ad20-4d34-abdb-d5c5db1f9e90
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -15,13 +14,7 @@ This class is similar to the [ISCSI\_DiscoveredTargetPortalGroup WMI class](iscs
 
 The ISCSI\_DiscoveredTargetPortalGroup2 class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortalGroup2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportalgroup2) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortalGroup2**](/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportalgroup2) data structure.
 
  
-
- 
-
-
-
-
 

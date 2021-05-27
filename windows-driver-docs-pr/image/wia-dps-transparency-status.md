@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY\_STATUS
 description: The WIA\_DPS\_TRANSPARENCY\_STATUS property is obsolete and should not be used.
-ms.assetid: 276a8d13-6b3b-468b-a165-b40d4b101f4a
 keywords: ["WIA_DPS_TRANSPARENCY_STATUS Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

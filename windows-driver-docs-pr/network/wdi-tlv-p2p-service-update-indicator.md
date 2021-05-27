@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR
 description: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR is a TLV that contains a Wi-Fi Direct service update indicator.
-ms.assetid: C90579C9-55DD-4E32-BEA3-EB156F4A422C
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

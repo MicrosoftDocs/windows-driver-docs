@@ -1,7 +1,6 @@
 ---
 title: Memory Management for Windows Drivers
 description: Kernel-mode drivers allocate memory for purposes such as storing internal data, buffering data during I/O operations, and sharing memory with other kernel-mode and user-mode components.
-ms.assetid: e030a37c-26ab-4177-9980-4336928975e1
 keywords: ["memory management WDK kernel", "available space WDK kernel", "free space WDK kernel", "space WDK See memory WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,9 +16,9 @@ Kernel-mode drivers allocate memory for purposes such as storing internal data, 
 
 The *memory manager* is the kernel component that performs the memory management operations in Windows. For more information, see [Windows Kernel-Mode Memory Manager](windows-kernel-mode-memory-manager.md).
 
-The memory manager implements a number of kernel-mode support routines that drivers call to allocate and manage memory. For more information, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/windows-hardware/drivers/ddi/_kernel/#memory-allocation-and-buffer-management).
+The memory manager implements a number of kernel-mode support routines that drivers call to allocate and manage memory. For more information, see [Memory Allocation and Buffer Management](/windows-hardware/drivers/ddi/_kernel/#memory-allocation-and-buffer-management).
 
-The memory-management capabilities of kernel-mode drivers are different from those of user-mode applications. For more information about memory management for applications, see [Memory Management](https://docs.microsoft.com/windows/desktop/Memory/memory-management).
+The memory-management capabilities of kernel-mode drivers are different from those of user-mode applications. For more information about memory management for applications, see [Memory Management](/windows/desktop/Memory/memory-management).
 
 ## In this section
 
@@ -38,9 +37,4 @@ The memory-management capabilities of kernel-mode drivers are different from tho
 -   [Using MDLs](using-mdls.md)
 
  
-
- 
-
-
-
 

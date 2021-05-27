@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY\_FLAGS enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: e4199b1a-b339-4b0d-8540-2c582675f24f
+description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_FLAGS enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_FLAGS enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum D3DKMT_MULTIPLANE_OVERLAY_FLAGS {
@@ -30,15 +28,13 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_FLAGS {
 } D3DKMT_MULTIPLANE_OVERLAY_FLAGS;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP"></span><span id="d3dkmt_multiplane_overlay_flag_vertical_flip"></span>**D3DKMT\_MULTIPLANE\_OVERLAY\_FLAG\_VERTICAL\_FLIP**
 
 <span id="D3DKMT_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP"></span><span id="d3dkmt_multiplane_overlay_flag_horizontal_flip"></span>**D3DKMT\_MULTIPLANE\_OVERLAY\_FLAG\_HORIZONTAL\_FLIP**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

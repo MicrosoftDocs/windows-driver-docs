@@ -1,7 +1,6 @@
 ---
 title: Deleting a Rule
 description: Deleting a Rule
-ms.assetid: 3692c1c5-e090-43b0-9661-b8f720248826
 keywords:
 - filtering trace messages, deleting rules WDK
 - trace message filters WDK , deleting rules

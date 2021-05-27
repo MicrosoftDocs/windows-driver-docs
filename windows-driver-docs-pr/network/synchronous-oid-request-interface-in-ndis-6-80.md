@@ -1,7 +1,6 @@
 ---
 title: Synchronous OID request interface in NDIS 6.80
 description: This topic describes the new Synchronous OID request interface in NDIS 6.80
-ms.assetid: 6BF2E800-90A0-48FC-B702-5AD4EC318A35
 keywords: Synchronous OID Requests Interface, Synchronous OID call, WDK Synchronous OIDs, Synchronous OID request
 ms.date: 09/28/2017
 ms.localizationpriority: medium
@@ -19,9 +18,9 @@ With Synchronous OID requests, the payload of the call (the OID itself) is exact
 
 The following table describes the differences between Regular OIDs, Direct OIDs, and Synchronous OIDs.
 
-| | Regular OID | Direct OID | Synchronous OID |
+| Attribute | Regular OID | Direct OID | Synchronous OID |
 | --- | --- | --- | --- |
-| Payload | [NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) | NDIS_OID_REQUEST | NDIS_OID_REQUEST |
+| Payload | [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) | NDIS_OID_REQUEST | NDIS_OID_REQUEST |
 | OID types | Stats, Query, Set, Method | Stats, Query, Set, Method | Stats, Query, Set, Method |
 | Can be issued by | Protocols, filters | Protocols, filters | Protocols, filters |
 | Can be completed by | Miniports, filters | Miniports, filters | Miniports, filters |
@@ -64,7 +63,7 @@ Regular or Direct OID requests are dispatched recursively. The following diagram
 
 If there are enough filters installed, NDIS will be forced to allocate a new thread stack to keep recursing deeper.
 
-NDIS considers an [NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to be valid for only a single hop along the stack. If a filter driver wants to pass the request down to the next lower driver (which is the case for the vast majority of OIDs), the filter driver *must* insert several dozen lines of boilerplate code to clone the OID request. This boilerplate has several problems:
+NDIS considers an [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to be valid for only a single hop along the stack. If a filter driver wants to pass the request down to the next lower driver (which is the case for the vast majority of OIDs), the filter driver *must* insert several dozen lines of boilerplate code to clone the OID request. This boilerplate has several problems:
 
 1. It forces a memory allocation to clone the OID. Hitting the memory pool is both slow and makes it impossible to guarantee forward progress of the OID request.
 2. The OID structure design must remain the same over time because all filter drivers hard-code the mechanics of copying the contents of one NDIS_OID_REQUEST to another.
@@ -192,4 +191,3 @@ For more info about implementing the Synchronous OID request interface in driver
 - [Miniport Adapter OID Requests](miniport-adapter-oid-requests.md)
 - [Filter Module OID Requests](filter-module-oid-requests.md)
 - [Protocol Driver OID Requests](protocol-driver-oid-requests.md)
-

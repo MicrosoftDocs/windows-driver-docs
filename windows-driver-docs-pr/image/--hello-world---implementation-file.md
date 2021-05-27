@@ -1,7 +1,6 @@
 ---
 title: Hello World' Implementation File
 description: Hello World' Implementation File
-ms.assetid: f81df130-44de-48c5-bfd1-d7e7084e91de
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

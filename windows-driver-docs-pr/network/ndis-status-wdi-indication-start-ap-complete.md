@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_START_AP_COMPLETE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_START_AP_COMPLETE to indicate the completion of OID_WDI_TASK_START_AP.
-ms.assetid: 24f63533-2eee-4559-8feb-02488ce75fc2
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_START_AP_COMPLETE Network Drivers Starting with Windows Vista
@@ -24,8 +23,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_START\_AP\_COMPLETE to indic
 
 This indication contains no additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: minipkd.lun
 description: The minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN).
-ms.assetid: f78b2c15-ecfc-4138-b595-a6e3f0f7f93c
 keywords: ["minipkd.lun Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Specifies the physical device object (PDO) for the LUN.
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 A LUN is typically referred to as a *device*. Thus, this extension displays information about a device on an adapter.
 

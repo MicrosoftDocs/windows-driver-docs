@@ -1,7 +1,6 @@
 ---
 title: Writing UPS Minidrivers
 description: Writing UPS Minidrivers
-ms.assetid: 85142cbf-cb3b-4ccf-a005-8fcb7a7ad12b
 keywords:
 - UPS minidrivers WDK
 - simple signaling WDK
@@ -42,14 +41,9 @@ For more information about UPS minidrivers, see the following topics:
 
 [Installing UPS Minidrivers](installing-ups-minidrivers.md)
 
-**Note**   Windows Vista and later versions of Windows do not support UPS units that are connected to COM ports. These Windows versions continue to support UPS units connected over [USB](https://docs.microsoft.com/windows-hardware/drivers/).
+**Note**   Windows Vista and later versions of Windows do not support UPS units that are connected to COM ports. These Windows versions continue to support UPS units connected over [USB](../index.yml).
 
  
 
  
-
- 
-
-
-
 

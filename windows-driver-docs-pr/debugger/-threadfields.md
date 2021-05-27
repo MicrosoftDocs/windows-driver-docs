@@ -1,7 +1,6 @@
 ---
 title: threadfields
 description: The threadfields extension displays the names and offsets of the fields within the executive thread (ETHREAD) block.
-ms.assetid: 1b36e922-9079-4dc5-911a-f635ec026084
 keywords: ["threadfields Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,8 +49,7 @@ The **!threadfields** extension displays the names and offsets of the fields wit
 
 For information about the ETHREAD block, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the ETHREAD structure directly:
 

@@ -1,7 +1,6 @@
 ---
 title: Message transmission
 description: Message transmission
-ms.assetid: 96C5CE38-25EE-425A-A7C5-05990CBE2C3E
 keywords:
 - NFC
 - near field communications
@@ -33,6 +32,4 @@ There is no mechanism defined in the NFP device driver interface to inform clien
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

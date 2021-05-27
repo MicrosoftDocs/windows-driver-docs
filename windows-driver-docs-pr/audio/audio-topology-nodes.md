@@ -1,7 +1,6 @@
 ---
 title: Audio Topology Nodes
 description: Audio Topology Nodes
-ms.assetid: d999955b-d620-41c9-b42d-6870ce1d4b93
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_audio_topology_nodes_ks"></span><span id="DDK_AUDIO_TOPOLOGY_NODES_KS"></span>
 
 
-The WDM audio driver framework defines a standard set of topology nodes for audio devices. A miniport driver describes the device's audio topology by specifying a set of nodes and the connections between the nodes. The [SysAudio system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#sysaudio-system-driver) uses this information to construct the audio filter graphs that it presents to client applications.
+The WDM audio driver framework defines a standard set of topology nodes for audio devices. A miniport driver describes the device's audio topology by specifying a set of nodes and the connections between the nodes. The [SysAudio system driver](./kernel-mode-wdm-audio-components.md#sysaudio-system-driver) uses this information to construct the audio filter graphs that it presents to client applications.
 
 Each data path in the topology begins or ends at a pin and passes through some number of nodes, which can be thought of as beads strung along the data path. Each node in the data path is identified by a node ID (essentially an index) that uniquely identifies that node within the data path. Two pin instances could have nodes with the same ID, but the combination of pin instance and node ID uniquely identifies each node within the audio topology.
 
@@ -93,10 +92,4 @@ The following list contains the more commonly used audio topology node types:
 [**KSNODETYPE\_VOLUME**](ksnodetype-volume.md)
 
  
-
- 
-
-
-
-
 

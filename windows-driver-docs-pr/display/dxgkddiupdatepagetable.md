@@ -1,7 +1,6 @@
 ---
 title: DXGKDDI\_UPDATEPAGETABLE callback function
 description: The DxgkDdiUpdatePageTable function is reserved for system use. Do not implement it in your driver.
-ms.assetid: 08328e82-d1cc-4c50-bc96-7382232676ab
 keywords: ["DxgkDdiUpdatePageTable callback function Display Devices", "DXGKDDI_UPDATEPAGETABLE"]
 topic_type:
 - apiref
@@ -22,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiUpdatePageTable* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_UPDATEPAGETABLE DxgkDdiUpdatePageTable;
@@ -35,8 +33,7 @@ NTSTATUS DxgkDdiUpdatePageTable(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hDevice*
 This parameter is reserved for system use.
@@ -44,8 +41,7 @@ This parameter is reserved for system use.
 *pUpdatePageTable*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

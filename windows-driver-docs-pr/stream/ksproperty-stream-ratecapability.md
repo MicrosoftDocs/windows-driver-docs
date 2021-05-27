@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_RATECAPABILITY
 description: The KSPROPERTY\_STREAM\_RATECAPABILITY property allows a graph manager to query all connection points involved in the flow of a particular stream (obtained through KSPROPERTY\_PIN\_DATAROUTING) for their capability in adjusting a requested rate to the nominal rate.
-ms.assetid: 73e3bf4e-2815-4890-ba12-77fbe7a7c589
 keywords: ["KSPROPERTY_STREAM_RATECAPABILITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,16 +46,15 @@ The KSPROPERTY\_STREAM\_RATECAPABILITY property allows a graph manager to query 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksrate" data-raw-source="[&lt;strong&gt;KSRATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksrate)"><strong>KSRATE</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksrate_capability" data-raw-source="[&lt;strong&gt;KSRATE_CAPABILITY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksrate_capability)"><strong>KSRATE_CAPABILITY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksrate" data-raw-source="[&lt;strong&gt;KSRATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksrate)"><strong>KSRATE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksrate_capability" data-raw-source="[&lt;strong&gt;KSRATE_CAPABILITY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksrate_capability)"><strong>KSRATE_CAPABILITY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAM\_RATECAPABILITY should be implemented if a pin allows rate changes, or the interface between topologically-related pins is different and results in the use of a different time stamp format. The property can also be used to translate time stamp formats in general, such as skip degradation requests.
 
@@ -70,8 +68,7 @@ It is important to support this property if Interface changes are made even if r
 
 Rate capability requests can only be performed in Pause or Run state and become invalid after changing to any other state. Queries where the rate is initially 1.0 should always succeed as they typically are just requests to translate time stamp formats.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -89,16 +86,7 @@ Requirements
 ## See also
 
 
-[**KSRATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksrate)
+[**KSRATE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksrate)
 
-[**KSRATE\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksrate_capability)
-
- 
-
- 
-
-
-
-
-
+[**KSRATE\_CAPABILITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksrate_capability)
 

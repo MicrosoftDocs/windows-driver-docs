@@ -1,7 +1,6 @@
 ---
 title: Monitor Filter Drivers
 description: Monitor Filter Drivers
-ms.assetid: cf2bd4c5-d586-4202-ad79-4e7ff9ad6061
 keywords:
 - filter drivers WDK monitors
 ms.date: 04/20/2017

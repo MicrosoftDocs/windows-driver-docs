@@ -1,7 +1,6 @@
 ---
 title: Overview of the Enhanced Storage Certificate Management Tool
 description: Overview of the Enhanced Storage Certificate Management Tool
-ms.assetid: 963e6510-d62f-421f-9c3d-781092f98969
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -47,7 +46,7 @@ The Enhanced Storage Certificate Management tool performs these functions by iss
 
 Where:
 
--   *USB\_Hardware\_ID* that is the hardware or compatible identifier (ID) of the USB storage device. For more information about these IDs, see [Identifiers for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/install/identifiers-for-usb-devices).
+-   *USB\_Hardware\_ID* that is the hardware or compatible identifier (ID) of the USB storage device. For more information about these IDs, see [Identifiers for USB Devices](../install/identifiers-for-usb-devices.md).
 
 -   A GUID that represents the device instance.
 
@@ -64,10 +63,4 @@ For example, the following is an example of the volume name for a USB storage de
 In order to issue IEEE 1667 commands to an ACT on a USB storage device, the user might need to be authenticated to use the device. Authentication is based on the PCp certificate and private key that is available to the user. If the user does not have the correct PCp certificate and private key, the user will not have access to the device for provisioning through the Enhanced Storage Certificate Management tool.
 
  
-
- 
-
-
-
-
 

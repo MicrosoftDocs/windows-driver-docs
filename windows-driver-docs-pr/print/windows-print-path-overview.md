@@ -1,7 +1,6 @@
 ---
 title: Windows Print Path Overview
 description: Windows Print Path Overview
-ms.assetid: c06e122b-a4d8-4b3a-9db0-0bc8f2728177
 keywords:
 - XPSDrv printer drivers WDK , print paths
 - print paths WDK XPSDrv

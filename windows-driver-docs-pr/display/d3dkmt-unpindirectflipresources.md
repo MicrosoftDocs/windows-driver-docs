@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_UNPINDIRECTFLIPRESOURCES structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: c875a30c-41e4-478c-b8b0-c1fb32672915
+description: Learn about the D3DKMT\_UNPINDIRECTFLIPRESOURCES structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_UNPINDIRECTFLIPRESOURCES structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_UNPINDIRECTFLIPRESOURCES {
@@ -31,8 +29,7 @@ typedef struct _D3DKMT_UNPINDIRECTFLIPRESOURCES {
 } D3DKMT_UNPINDIRECTFLIPRESOURCES;
 ```
 
-Members
--------
+## Members
 
 **hDevice**
 
@@ -40,8 +37,7 @@ Members
 
 **pResourceList**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

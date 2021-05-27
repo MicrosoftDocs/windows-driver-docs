@@ -1,7 +1,6 @@
 ---
 title: Encoder Code Examples
-description: Encoder Code Examples
-ms.assetid: cbe773ad-2222-4d62-8e1e-6d47418a3e7c
+description: Encoder code examples
 keywords:
 - variable bit rates WDK encoder
 - encoder devices WDK AVStream
@@ -18,20 +17,19 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Encoder Code Examples
+# Encoder code examples
 
+The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](/samples/microsoft/windows-driver-samples/avstream-simulated-hardware-sample-driver-avshws/). They demonstrate the following:
 
-The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083). They demonstrate the following:
+- How to specify the encoder's supported bit rates
 
--   How to specify the encoder's supported bit rates
+- How to specify the bit rate encoding modes supported by an encoder
 
--   How to specify the bit rate encoding modes supported by an encoder
+- How to specify metadata values at run time under the encoder device's *Device Parameters\\Capabilities* registry key
 
--   How to specify metadata values at run time under the encoder device's *Device Parameters\\Capabilities* registry key
+## Implementing Supported Bit Rates
 
-### **Implementing Supported Bit Rates**
-
-The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
+The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](./encapiparam-bitrate.md) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
 
 ```cpp
 const KSPROPERTY_STEPPING_LONG BitRateRanges [] = {
@@ -110,13 +108,12 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
 };
 ```
 
-**Note**   The *get*-property handler returns the encoding bit rate, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
+> [!NOTE]
+> The *get*-property handler returns the encoding bit rate, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
- 
+## Implementing Supported Encoding Bit Rate Modes
 
-### **Implementing Supported Encoding Bit Rate Modes**
-
-The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE\_MODE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate-mode) property.
+The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE\_MODE](./encapiparam-bitrate-mode.md) property.
 
 Define the encoding modes supported by the encoder:
 
@@ -189,11 +186,10 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
 };
 ```
 
-**Note**   The *get*-property handler should return the encoding bit rate mode, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
+> [!NOTE]
+> The *get*-property handler should return the encoding bit rate mode, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
- 
-
-The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structure's automation table.
+The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structure's automation table.
 
 ```cpp
 DEFINE_KSPROPERTY_SET_TABLE(PropertyTable) {
@@ -219,8 +215,8 @@ DEFINE_KSAUTOMATION_TABLE(FilterTestTable) {
     DEFINE_KSAUTOMATION_EVENTS_NULL
 };
 
-const 
-KSFILTER_DESCRIPTOR 
+const
+KSFILTER_DESCRIPTOR
 FilterDescriptor = {
     ...,
     &FilterTestTable, // Automation Table
@@ -229,11 +225,12 @@ FilterDescriptor = {
 };
 ```
 
-### <a href="" id="specifying-the-encoder-s-capabilities-in-the-registry"></a>**Specifying the Encoder's Capabilities in the Registry**
+## Specifying the Encoder's Capabilities in the Registry
 
 The following code sample demonstrates how to create a *Capabilities* registry key under the *Device Parameters* registry key, and how to create and specify sub keys and values under the *Capabilities* key. Execute this code when the driver initializes.
 
-**Note:** The following code assumes the presence of a single hardware encoder per physical device. If your hardware contains more than one encoder then you must iterate through the list returned in the call to the **IoGetDeviceInterfaces** function and register the capabilities for each encoder.
+> [!NOTE]
+> The following code assumes the presence of a single hardware encoder per physical device. If your hardware contains more than one encoder then you must iterate through the list returned in the call to the **IoGetDeviceInterfaces** function and register the capabilities for each encoder.
 
 ```cpp
 /**************************************************************************
@@ -243,7 +240,7 @@ IN Pdo: PhysicalDeviceObject
 IN categoryGUID: Category GUID eg KSCATEGORY_CAPTURE
 
 1. Get Symbolic name for interface
-2. Open registry key for storing information about a 
+2. Open registry key for storing information about a
    particular device interface instance
 3. Create Capabilities key under "Device Parameters" key
 4. Create a DWORD value "TestCapValueDWORD" under Capabilities
@@ -255,9 +252,9 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
 {
 
     // 1. Get Symbolic name for interface
-    // pSymbolicNameList can contain multiple strings if pdo is NULL. 
-    // Driver should parse this list of string to get 
-    // the one corresponding to current device interface instance. 
+    // pSymbolicNameList can contain multiple strings if pdo is NULL.
+    // Driver should parse this list of string to get
+    // the one corresponding to current device interface instance.
     PWSTR  pSymbolicNameList = NULL;
 
     NTSTATUS ntStatus = IoGetDeviceInterfaces(
@@ -270,7 +267,7 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
         HANDLE hDeviceParametersKey = NULL;
         UNICODE_STRING symbolicName;
 
-        // 2. Open registry key for storing information about a 
+        // 2. Open registry key for storing information about a
         // particular device interface instance
         RtlInitUnicodeString(&symbolicName, pSymbolicNameList);
         ntStatus = IoOpenDeviceInterfaceRegistryKey(
@@ -281,7 +278,7 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
         {
             OBJECT_ATTRIBUTES objAttribSubKey;
             UNICODE_STRING subKey;
- 
+
             // 3. Create Capabilities key under "Device Parameters" key
             RtlInitUnicodeString(&subKey,L"Capabilities");
             InitializeObjectAttributes(&objAttribSubKey,
@@ -289,9 +286,9 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
                 OBJ_KERNEL_HANDLE,
                 hDeviceParametersKey,
                 NULL);
- 
+
             HANDLE hCapabilityKeyHandle = NULL;
- 
+
             ntStatus = ZwCreateKey(&hCapabilityKeyHandle,
                     KEY_READ|KEY_WRITE|KEY_SET_VALUE,
                     &objAttribSubKey,
@@ -303,12 +300,12 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
             {
                 OBJECT_ATTRIBUTES objAttribDwordKeyVal;
                 UNICODE_STRING subValDword;
- 
-                // 4. Create a DWORD value "TestCapValueDWORD" under Capabilities 
+
+                // 4. Create a DWORD value "TestCapValueDWORD" under Capabilities
                 RtlInitUnicodeString(&subValDword,L"TestCapValueDWORD");
- 
+
                 ULONG data = 0xaaaaaaaa;
- 
+
                 ntStatus = ZwSetValueKey(hCapabilityKeyHandle,&subValDword,0,REG_DWORD,&data,sizeof(ULONG));
                 ZwClose(hCapabilityKeyHandle);
             }
@@ -316,15 +313,7 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
         ZwClose(hDeviceParametersKey);
         ExFreePool(pSymbolicNameList);
     }
- 
+
     return ntStatus;
 }
 ```
-
- 
-
- 
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdpow
 description: The usbkd.usbhcdpow command displays the power state history for a USB host controller or root hub.
-ms.assetid: 49D803E3-0D65-48D4-98C5-BFE4DB2C2985
 keywords: ["usbkd.usbhcdpow Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,8 +35,7 @@ Address of one of the following:
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of an EHCI host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -114,14 +112,7 @@ dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

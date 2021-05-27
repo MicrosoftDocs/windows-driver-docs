@@ -1,7 +1,6 @@
 ---
 title: GPIO buttons and indicators implementation guide
 description: Windows 8 introduced support for general-purpose I/O (GPIO) buttons and indicators by using a HID miniport class driver.
-ms.assetid: E073E15A-7068-43D0-9DBA-7DD2E7FE2993
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -63,23 +62,20 @@ As part of Windows 8.1 investments, the **msgpio** button driver brings importan
 
 -   Augmented logging to speed up investigations.
 -   Improved synchronization and error handling to enhance the robustness.
--   The new ConvertibleSlateMode [Unattended Windows Setup](https://go.microsoft.com/fwlink/p/?linkid=276788) to be used on non-GPIO laptops to statically set the mode to laptop as part of the OEM image customization.
+-   The new ConvertibleSlateMode [Unattended Windows Setup](/previous-versions/windows/it-pro/windows-8.1-and-8/ff699026(v=win.10)) to be used on non-GPIO laptops to statically set the mode to laptop as part of the OEM image customization.
 
 For questions about GPIO buttons and indicator implementation, send an e-mail to the Microsoft support group at dockingsupport@microsoft.com.
 
 ## <span id="related_topics"></span>Related topics
-[Power Button Behaviors and Implementation](https://aka.ms/connect-redirect?DownloadID=47452)  
-[Connected Standby Wake Sources](https://aka.ms/connect-redirect?DownloadID=49891)  
-[ACPI Design Guide](https://aka.ms/connect-redirect?DownloadID=48755)  
-[GetSystemMetrics function](https://go.microsoft.com/fwlink/p/?linkid=324686)  
-[Keyboard Enhancements in Windows 8](https://go.microsoft.com/fwlink/p/?linkid=324536)  
-[Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/index)  
-[Certification requirements for Windows desktop apps](https://go.microsoft.com/fwlink/p/?linkid=306131)  
-[HID over I²C](https://go.microsoft.com/fwlink/p/?linkid=324690)  
-[GPIO tests in MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/gpio-tests-in-mitt)  
-[Windows System Image Manager Technical Reference](https://go.microsoft.com/fwlink/p/?linkid=324691)  
-[Unattended Windows Setup Reference](https://go.microsoft.com/fwlink/p/?linkid=276788)  
-[Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?linkid=310164)  
-
-
-
+[Power Button Behaviors and Implementation](/collaborate/connect-redirect?DownloadID=47452)  
+[Connected Standby Wake Sources](/collaborate/connect-redirect?DownloadID=49891)  
+[ACPI Design Guide](/collaborate/connect-redirect?DownloadID=48755)  
+[GetSystemMetrics function](/windows/win32/api/winuser/nf-winuser-getsystemmetrics)  
+[Keyboard Enhancements in Windows 8](/previous-versions/windows/hardware/design/dn613956(v=vs.85))  
+[Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index)  
+[Certification requirements for Windows desktop apps](/windows/win32/win_cert/certification-requirements-for-windows-desktop-apps)  
+[HID over I²C](../hid/hid-over-i2c-guide.md)  
+[GPIO tests in MITT](../spb/gpio-tests-in-mitt.md)  
+[Windows System Image Manager Technical Reference](/previous-versions/windows/it-pro/windows-vista/cc722301(v=ws.10))  
+[Unattended Windows Setup Reference](/previous-versions/windows/it-pro/windows-8.1-and-8/ff699026(v=win.10))  
+[Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?linkid=310164)

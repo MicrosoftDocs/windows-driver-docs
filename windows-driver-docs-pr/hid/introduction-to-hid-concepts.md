@@ -1,7 +1,6 @@
 ---
 title: HID Application Programming Interface (API)
 description: Introduction to Human Interface Devices (HID) API.
-ms.assetid: 477FF911-5A17-4EA5-9403-1D7B4E8B3BA5
 keywords:
 - Human Interface Devices
 - HID
@@ -22,26 +21,26 @@ There are three categories of HID APIs: device discovery and setup, data movemen
 
 These HID APIs are used to identify the properties of a HID device and to establish communication with that device. Applications use these APIs to identify a Top Level Collection.
 
-- [HidD\_GetAttributes](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getattributes)
-- [HidD\_GetHidGuid](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_gethidguid)
-- [HidD\_GetIndexedString](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getindexedstring)
-- [HidD\_GetManufacturerString](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getmanufacturerstring)
-- [HidD\_GetPhysicalDescriptor](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getphysicaldescriptor)
-- [HidD\_GetPreparsedData](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata)
-- [HidD\_GetProductString](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getproductstring)
-- [HidD\_GetSerialNumberString](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getserialnumberstring)
-- [HidD\_GetNumInputBuffers](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getnuminputbuffers)
-- [HidD\_SetNumInputBuffers](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setnuminputbuffers)
+- [HidD\_GetAttributes](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getattributes)
+- [HidD\_GetHidGuid](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_gethidguid)
+- [HidD\_GetIndexedString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getindexedstring)
+- [HidD\_GetManufacturerString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getmanufacturerstring)
+- [HidD\_GetPhysicalDescriptor](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getphysicaldescriptor)
+- [HidD\_GetPreparsedData](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata)
+- [HidD\_GetProductString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getproductstring)
+- [HidD\_GetSerialNumberString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getserialnumberstring)
+- [HidD\_GetNumInputBuffers](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getnuminputbuffers)
+- [HidD\_SetNumInputBuffers](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setnuminputbuffers)
 
 ## Data Movement
 
 These HID APIs are used to move data between an application and a selected device.
 
-- [HidD\_GetInputReport](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getinputreport)
-- [HidD\_SetFeature](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)
-- [HidD\_SetOutputReport](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)
-- [ReadFile](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile)
-- [WriteFile](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-writefile)
+- [HidD\_GetInputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getinputreport)
+- [HidD\_SetFeature](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)
+- [HidD\_SetOutputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)
+- [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile)
+- [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile)
 
 ## Report Creation and Interpretation
 
@@ -53,32 +52,32 @@ To interpret the Reports received from a device or to create Reports to be sent 
 
 These are the HID parser APIs.
 
-- [HidP\_GetButtonCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttoncaps)
-- [HidP\_GetButtons](https://docs.microsoft.com/windows-hardware/drivers/hid/hdpi-h-macros)
-- [HidP\_GetButtonsEx](https://docs.microsoft.com/windows-hardware/drivers/hid/hdpi-h-macros)
-- [HidP\_GetCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getcaps)
-- [HidP\_GetData](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata)
-- [HidP\_GetExtendedAttributes](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getextendedattributes)
-- [HidP\_GetLinkCollectionNodes](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getlinkcollectionnodes)
-- [HidP\_GetScaledUsageValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getscaledusagevalue)
-- [HidP\_GetSpecificButtonCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificbuttoncaps)
-- [HidP\_GetSpecificValueCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificvaluecaps)
-- [HidP\_GetUsages](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages)
-- [HidP\_GetUsagesEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex)
-- [HidP\_GetUsageValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue)
-- [HidP\_GetUsageValueArray](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray)
-- [HidP\_GetValueCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps)
-- [HidP\_InitializeReportForID](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_initializereportforid)
-- [HidP\_IsSameUsageAndPage](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_usage_and_page)
-- [HidP\_MaxDataListLength](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxdatalistlength)
-- [HidP\_MaxUsageListLength](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxusagelistlength)
-- [HidP\_SetButtons](https://docs.microsoft.com/windows-hardware/drivers/hid/hdpi-h-macros)
-- [HidP\_SetData](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setdata)
-- [HidP\_SetScaledUsageValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setscaledusagevalue)
-- [HidP\_SetUsages](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
-- [HidP\_SetUsageValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue)
-- [HidP\_SetUsageValueArray](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevaluearray)
-- [HidP\_UnsetButtons](https://docs.microsoft.com/windows-hardware/drivers/hid/hdpi-h-macros)
-- [HidP\_UnsetUsages](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)
-- [HidP\_UsageAndPageListDifference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff539824(v=vs.85))
-- [HidP\_UsageListDifference](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usagelistdifference)
+- [HidP\_GetButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttoncaps)
+- [HidP\_GetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP\_GetButtonsEx](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP\_GetCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getcaps)
+- [HidP\_GetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata)
+- [HidP\_GetExtendedAttributes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getextendedattributes)
+- [HidP\_GetLinkCollectionNodes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getlinkcollectionnodes)
+- [HidP\_GetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getscaledusagevalue)
+- [HidP\_GetSpecificButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificbuttoncaps)
+- [HidP\_GetSpecificValueCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificvaluecaps)
+- [HidP\_GetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages)
+- [HidP\_GetUsagesEx](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex)
+- [HidP\_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue)
+- [HidP\_GetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray)
+- [HidP\_GetValueCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps)
+- [HidP\_InitializeReportForID](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_initializereportforid)
+- [HidP\_IsSameUsageAndPage](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_usage_and_page)
+- [HidP\_MaxDataListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxdatalistlength)
+- [HidP\_MaxUsageListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxusagelistlength)
+- [HidP\_SetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP\_SetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setdata)
+- [HidP\_SetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setscaledusagevalue)
+- [HidP\_SetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
+- [HidP\_SetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue)
+- [HidP\_SetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevaluearray)
+- [HidP\_UnsetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP\_UnsetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)
+- [HidP\_UsageAndPageListDifference](/previous-versions/windows/hardware/drivers/ff539824(v=vs.85))
+- [HidP\_UsageListDifference](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usagelistdifference)

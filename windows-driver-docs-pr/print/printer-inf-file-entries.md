@@ -1,7 +1,6 @@
 ---
 title: Printer INF File Entries
 description: Printer INF File Entries
-ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
 keywords:
 - INF files WDK print , entries
 - dependent files WDK printer
@@ -70,7 +69,7 @@ Also note that v4 print drivers use a Manifest file. For more information, see [
 
  
 
-**Note**  **2 (ExcludeFromSelect)**: The *device ID* of a device that should not be shown in the **Select Device** dialog or in the Add Printer Wizard. For printers, this includes all PnP entries of devices that have duplicate device descriptions in the INF file; for example, devices that have multiple entries for infrared and parallel enumeration or for another bus. The ExcludeFromSelect entry, unlike all others in this table, must appear in the Control Flags section of the INF file. See [**INF ControlFlags Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section) for more information.
+**Note**  **2 (ExcludeFromSelect)**: The *device ID* of a device that should not be shown in the **Select Device** dialog or in the Add Printer Wizard. For printers, this includes all PnP entries of devices that have duplicate device descriptions in the INF file; for example, devices that have multiple entries for infrared and parallel enumeration or for another bus. The ExcludeFromSelect entry, unlike all others in this table, must appear in the Control Flags section of the INF file. See [**INF ControlFlags Section**](../install/inf-controlflags-section.md) for more information.
 
  
 
@@ -128,11 +127,8 @@ A maximum of 64 dependent files can be specified for each printer model.
 
 ## Related topics
 [Bidirectional Communication Schema](bidirectional-communication-schema.md)  
-[**INF ControlFlags Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section)  
+[**INF ControlFlags Section**](../install/inf-controlflags-section.md)  
 [Installing Customized Driver Components](installing-customized-driver-components.md)  
 [Point-and-print](introduction-to-point-and-print.md)  
 [Printer INF file Install section](printer-inf-file-install-sections.md)  
-[V4 Driver Manifest](v4-driver-manifest.md)  
-
-
-
+[V4 Driver Manifest](v4-driver-manifest.md)

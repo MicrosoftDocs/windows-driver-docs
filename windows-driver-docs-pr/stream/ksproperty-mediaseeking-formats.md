@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_FORMATS
 description: The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats supported by a filter. This information is returned as a multiple item property.
-ms.assetid: 6d01737e-baef-4a65-90c7-3838cb19b4c9
 keywords: ["KSPROPERTY_MEDIASEEKING_FORMATS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>PVOID</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats 
 
  
 
-Remarks
--------
+## Remarks
 
 This property can return a multiple item property. The requester is responsible for supplying a buffer of adequate size.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,13 +77,4 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
-
- 
-
-
-
-
-
 

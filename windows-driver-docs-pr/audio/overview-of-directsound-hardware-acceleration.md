@@ -1,7 +1,6 @@
 ---
 title: Overview of DirectSound Hardware Acceleration
 description: Overview of DirectSound Hardware Acceleration
-ms.assetid: 1f18f88a-2dd6-4b7a-b083-f43ab58571b3
 keywords:
 - hardware acceleration WDK DirectSound , about DirectSound hardware acceleration
 ms.date: 10/27/2017
@@ -32,10 +31,5 @@ If an audio device provides a sufficient number of hardware mixing pins, all of 
 
 For more information, see the discussion of voice management in the Microsoft Windows SDK documentation.
 
-DirectSound can use two types of hardware mixer pins: 2D and 3D. A 2D pin performs SRC, attenuation, and mixing, but not 3D positioning. DirectSound can use a 2D pin to do 3D positioning by performing the necessary attenuation and frequency calculations in software and applying the results to the appropriate nodes on the 2D pin. In contrast, a 3D pin contains a 3D node that is able to calculate its own 3D effects directly from the 3D-buffer and 3D-listener properties instead of relying on DirectSound to do this. For a list of the properties of a 3D node, see [**KSNODETYPE\_3D\_EFFECTS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-3d-effects). For more information about 2D and 3D pins, see [Supporting 2D DirectSound Acceleration in WDM Audio](supporting-2d-directsound-acceleration-in-wdm-audio.md) and [Supporting 3D DirectSound Acceleration in WDM Audio](supporting-3d-directsound-acceleration-in-wdm-audio.md).
-
- 
-
-
-
+DirectSound can use two types of hardware mixer pins: 2D and 3D. A 2D pin performs SRC, attenuation, and mixing, but not 3D positioning. DirectSound can use a 2D pin to do 3D positioning by performing the necessary attenuation and frequency calculations in software and applying the results to the appropriate nodes on the 2D pin. In contrast, a 3D pin contains a 3D node that is able to calculate its own 3D effects directly from the 3D-buffer and 3D-listener properties instead of relying on DirectSound to do this. For a list of the properties of a 3D node, see [**KSNODETYPE\_3D\_EFFECTS**](./ksnodetype-3d-effects.md). For more information about 2D and 3D pins, see [Supporting 2D DirectSound Acceleration in WDM Audio](supporting-2d-directsound-acceleration-in-wdm-audio.md) and [Supporting 3D DirectSound Acceleration in WDM Audio](supporting-3d-directsound-acceleration-in-wdm-audio.md).
 

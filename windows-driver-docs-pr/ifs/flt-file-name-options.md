@@ -1,7 +1,6 @@
 ---
 title: FLT_FILE_NAME_OPTIONS
 description: FLT\_FILE\_NAME\_OPTIONS
-ms.assetid: 6e21c11e-d2c8-4c57-8225-1fbc365cbbac
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ typedef ULONG FLT_FILE_NAME_OPTIONS;
     #define FLT_FILE_NAME_ALLOW_QUERY_ON_REPARSE          0x04000000
 ```
 
-Bits 0 through 7 indicate the file format, which can be queried by using the [**FltGetFileNameFormat**](https://docs.microsoft.com/previous-versions/ff543030(v=vs.85)) macro. For an explanation of these formats, see [**FLT_FILE_NAME_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_file_name_information). The following values are currently defined.
+Bits 0 through 7 indicate the file format, which can be queried by using the [**FltGetFileNameFormat**](/previous-versions/ff543030(v=vs.85)) macro. For an explanation of these formats, see [**FLT_FILE_NAME_INFORMATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_file_name_information). The following values are currently defined.
 
 | Value | Meaning |
 | ----- | ------- |
@@ -35,7 +34,7 @@ Bits 0 through 7 indicate the file format, which can be queried by using the [**
 | FLT_FILE_NAME_OPENED | The name that was used when the handle was opened to this file. This name is not normalized. |
 | FLT_FILE_NAME_SHORT | The short (8.3) name for the file. The short name for a file does not include the volume name, directory path, or stream name. This name is not normalized. |
 
-Bits 8 through 15 specify the file name query method to be used by the Filter Manager, which can be queried by using the [**FltGetFileNameQueryMethod**](https://docs.microsoft.com/previous-versions/ff543040(v=vs.85)) macro. For an explanation of these values, see [**FltGetFileNameInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformation). The following values are currently defined.
+Bits 8 through 15 specify the file name query method to be used by the Filter Manager, which can be queried by using the [**FltGetFileNameQueryMethod**](/previous-versions/ff543040(v=vs.85)) macro. For an explanation of these values, see [**FltGetFileNameInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformation). The following values are currently defined.
 
 | Value | Meaning |
 | ----- | ------- |
@@ -56,20 +55,19 @@ Bits 24 through 31 are used by name provider minifilters to specify the file nam
 
 ## Requirements
 
-|   |   |
-| - | - |
-| **Header** | fltkernel.h (include fltkernel.h) |
+****Header****: fltkernel.h (include fltkernel.h)
+
 
 ## Related topics
 
-[**FLT_FILE_NAME_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_file_name_information)
+[**FLT_FILE_NAME_INFORMATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_file_name_information)
 
-[**FltGetDestinationFileNameInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdestinationfilenameinformation)
+[**FltGetDestinationFileNameInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdestinationfilenameinformation)
 
-[**FltGetFileNameFormat**](https://docs.microsoft.com/previous-versions/ff543030(v=vs.85))
+[**FltGetFileNameFormat**](/previous-versions/ff543030(v=vs.85))
 
-[**FltGetFileNameInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformation)
+[**FltGetFileNameInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformation)
 
-[**FltGetFileNameInformationUnsafe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformationunsafe)
+[**FltGetFileNameInformationUnsafe**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformationunsafe)
 
-[**FltGetFileNameQueryMethod**](https://docs.microsoft.com/previous-versions/ff543040(v=vs.85))
+[**FltGetFileNameQueryMethod**](/previous-versions/ff543040(v=vs.85))

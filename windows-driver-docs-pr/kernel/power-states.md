@@ -1,7 +1,6 @@
 ---
 title: Power States
 description: Power States
-ms.assetid: 33043903-9db6-4c51-b33c-921ade237ccf
 keywords: ["power management WDK kernel , power states", "power states WDK kernel", "states WDK power management", "system power states WDK kernel", "device power states WDK kernel", "power consumption levels WDK kernel", "consumption levels WDK power management", "computing activity WDK power management", "physical device objects WDK power management", "PDOs WDK power management", "functional device objects WDK power management", "FDOs WDK power management", "filter DOs WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

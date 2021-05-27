@@ -1,7 +1,6 @@
 ---
 title: Security Threat Models
 description: Security Threat Models
-ms.assetid: a505df1a-82c0-4e0b-88bb-d96654a098fb
 keywords:
 - security WDK file systems , threat models
 - threat models WDK file systems

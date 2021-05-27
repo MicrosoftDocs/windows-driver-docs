@@ -1,7 +1,6 @@
 ---
 title: GDI Halftoning Capabilities
 description: GDI Halftoning Capabilities
-ms.assetid: 57274fd5-fdf6-4041-b52c-4e409465d159
 keywords:
 - GDI WDK Windows 2000 display , rendering engine
 - graphics drivers WDK Windows 2000 display , rendering engine

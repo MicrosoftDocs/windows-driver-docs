@@ -1,7 +1,6 @@
 ---
 title: Using the System-Supplied Multifunction Bus Driver
 description: Using the System-Supplied Multifunction Bus Driver
-ms.assetid: 75fe659d-5311-4bc6-adfb-fd608e10c718
 keywords:
 - multifunction devices WDK , system-supplied bus drivers
 - system-supplied multifunction bus drivers WDK
@@ -28,9 +27,9 @@ To use mf.sys, a multifunction device must meet the following requirements:
 
 -   The device's underlying bus must have a multifunction standard.
 
--   The [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) of the child functions must be identical and must match those of the parent device. When queried for the device capabilities of a child function ([**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities)), the mf.sys driver reports the device capabilities of the parent device.
+-   The [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) of the child functions must be identical and must match those of the parent device. When queried for the device capabilities of a child function ([**IRP\_MN\_QUERY\_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md)), the mf.sys driver reports the device capabilities of the parent device.
 
--   The driver for the bus on which the multifunction device resides, such as pcmcia.sys, must handle any [**IRP\_MN\_READ\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config) and [**IRP\_MN\_WRITE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-write-config) requests. The mf.sys driver just passes these IRPs to the parent bus driver.
+-   The driver for the bus on which the multifunction device resides, such as pcmcia.sys, must handle any [**IRP\_MN\_READ\_CONFIG**](../kernel/irp-mn-read-config.md) and [**IRP\_MN\_WRITE\_CONFIG**](../kernel/irp-mn-write-config.md) requests. The mf.sys driver just passes these IRPs to the parent bus driver.
 
 -   The functions must be independent: they cannot have start-order dependencies; the resource requirements for one function cannot be expressed in terms of the resources of another function (for example, function1 uses I/O port X and function2 uses portX + 200); and each function must be able to operate as a separate device, even if it is serviced by the same driver(s) as another function.
 
@@ -91,9 +90,4 @@ The PnP manager treats each child device like a typical device, locating INF fil
 The illustration focuses on the function drivers and parent bus drivers and their associated FDOs and PDOs. Any filter drivers (and filter DOs) are omitted for simplicity.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_SecurityConfigOperations WMI Class
 description: MSiSCSI\_SecurityConfigOperations WMI Class
-ms.assetid: 27056bae-ba73-409f-b55e-453ed46a61d2
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

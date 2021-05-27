@@ -1,7 +1,6 @@
 ---
 title: Support for TWAIN-Compatible Applications
 description: Support for TWAIN-Compatible Applications
-ms.assetid: 8135178f-a432-4200-81c3-8e12112637f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

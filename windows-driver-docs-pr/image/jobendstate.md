@@ -1,7 +1,6 @@
 ---
 title: JobEndState element
 description: The required JobEndState element describes the final state of the current scan job.
-ms.assetid: c69b5988-ca0d-441f-9b65-e5692a17ccb3
 keywords: ["JobEndState element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobEndState** element describes the final state of the current scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobEndState>
@@ -27,8 +25,7 @@ Usage
 </wscn:JobEndState>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -88,8 +85,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobEndState** element contains child elements that describe various aspects about the end state of a scan job. The WSD Scan Service sends a **JobEndState** element to a client through the [**JobEndStateEvent**](jobendstateevent.md) element.
 

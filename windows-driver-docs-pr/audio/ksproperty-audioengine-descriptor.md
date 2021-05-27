@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_DESCRIPTOR
 description: The audio driver for the offload-capable hardware solution uses KSPROPERTY\_AUDIOENGINE\_DESCRIPTOR to provide information about the node that represents the hardware audio engine.
-ms.assetid: 1D912155-6DB2-4AFF-949F-47C19E47678C
 keywords: ["KSPROPERTY_AUDIOENGINE_DESCRIPTOR Audio Devices"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The audio driver for the offload-capable hardware solution uses **KSPROPERTY\_AU
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor)"><strong>KSAUDIOENGINE_DESCRIPTOR</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor)"><strong>KSAUDIOENGINE_DESCRIPTOR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,8 +57,7 @@ The property value is of type **KSAUDIOENGINE\_DESCRIPTOR** and it indicates the
 
 The **KSPROPERTY\_AUDIOENGINE\_DESCRIPTOR** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +79,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIOENGINE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor)
+[**KSAUDIOENGINE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor)
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
-
- 
-
- 
-
-
-
-
-
 

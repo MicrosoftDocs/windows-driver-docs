@@ -1,9 +1,8 @@
 ---
 title: ndiskd.dbglevel
 description: The ndiskd.dbglevel extension displays and optionally changes the current NDIS debug level. Warning ndiskd.dbglevel has been superceded by WPP and Driver Verifier.
-ms.assetid: D134FD03-DABA-4558-A5C3-C365F77BD69A
 keywords: ["ndiskd.dbglevel Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -14,7 +13,6 @@ ms.localizationpriority: medium
 ---
 
 # !ndiskd.dbglevel
-
 
 The **!ndiskd.dbglevel** extension displays and optionally changes the current NDIS debug level.
 
@@ -45,48 +43,43 @@ If you click on the link at the bottom of the warning, !ndiskd will give you mor
     !wmitrace.enable ndis {DD7A21E6-A651-46D4-B7C2-66543067B869} -level 4 -flag 0x31f3
 ```
 
- 
+For more information about WPP, see [WPP Software Tracing](../devtest/wpp-software-tracing.md).
 
-For more information about WPP, see [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+For more information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
-For more information about Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
-
-For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/wmi-tracing-extensions--wmitrace-dll-).
+For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md).
 
 ```console
-!ndiskd.dbglevel [-level <str>] 
+!ndiskd.dbglevel [-level <str>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-level______"></span><span id="_______-LEVEL______"></span> *-level*   
 The level of debugging verbosity. Possible values are:
 
--   NONE - disables debug tracing
--   FATAL - enables fatal errors to be printed
--   ERROR - enables errors to be printed
--   WARN - enables warnings to be printed
--   INFO - enables informational messages to be printed
--   VERBOSE - enables all debug traces to be printed
+- NONE - disables debug tracing
+- FATAL - enables fatal errors to be printed
+- ERROR - enables errors to be printed
+- WARN - enables warnings to be printed
+- INFO - enables informational messages to be printed
+- VERBOSE - enables all debug traces to be printed
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Remarks
--------
+### Remarks
 
 This extension applies to checked NDIS.sys only. To check the build info of NDIS.sys, run the [**!ndiskd.ndis**](-ndiskd-ndis.md) extension.
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
@@ -94,18 +87,8 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 [**!ndiskd.ndis**](-ndiskd-ndis.md)
 
-[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)
+[WPP Software Tracing](../devtest/wpp-software-tracing.md)
 
-[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)
+[Driver Verifier](../devtest/driver-verifier.md)
 
-[WMI Tracing Extensions (Wmitrace.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/wmi-tracing-extensions--wmitrace-dll-)
-
- 
-
- 
-
-
-
-
-
-
+[WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md)

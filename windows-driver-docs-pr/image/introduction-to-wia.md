@@ -1,7 +1,6 @@
 ---
 title: Introduction to WIA
 description: Introduction to WIA
-ms.assetid: 51674b06-f9d5-4e35-a2ec-9d6cc0a09ef3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

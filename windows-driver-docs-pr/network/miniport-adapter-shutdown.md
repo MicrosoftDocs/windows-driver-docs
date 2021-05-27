@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter Shutdown
 description: Miniport Adapter Shutdown
-ms.assetid: 57d964f1-03c7-4b54-9d04-1d187c96e052
 keywords:
 - miniport adapters WDK networking , shutdown
 - adapters WDK networking , shutdown
@@ -20,17 +19,17 @@ ms.localizationpriority: medium
 
 
 
-An NDIS miniport driver must register a [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) function during miniport driver initialization.
+An NDIS miniport driver must register a [*MiniportShutdownEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) function during miniport driver initialization.
 
-NDIS calls an NDIS miniport driver's [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) function when the system is shutting down. *MiniportShutdownEx* restores the hardware to a known state.
+NDIS calls an NDIS miniport driver's [*MiniportShutdownEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) function when the system is shutting down. *MiniportShutdownEx* restores the hardware to a known state.
 
-The *ShutdownAction* parameter that NDIS passed to [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) informs the miniport driver of the reason for the shutdown.
+The *ShutdownAction* parameter that NDIS passed to [*MiniportShutdownEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) informs the miniport driver of the reason for the shutdown.
 
 The shutdown handler can be called as a result of a user operation, in which case it runs at IRQL = PASSIVE\_LEVEL. It can also be called as a result of an unrecoverable system error, in which case it can be running at any IRQL.
 
-[*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) should call no **Ndis*Xxx*** functions. The miniport driver can call functions for reading and writing I/O ports or disabling the DMA engine to return the hardware to a known state.
+[*MiniportShutdownEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) should call no **Ndis*Xxx*** functions. The miniport driver can call functions for reading and writing I/O ports or disabling the DMA engine to return the hardware to a known state.
 
-Unlike [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt), [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) should not release any allocated resources. *MiniportShutdownEx* should just stop the NIC.
+Unlike [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt), [*MiniportShutdownEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) should not release any allocated resources. *MiniportShutdownEx* should just stop the NIC.
 
 ## Related topics
 
@@ -41,14 +40,7 @@ Unlike [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/dd
 
 [Miniport Adapter States and Operations](miniport-adapter-states-and-operations.md)
 
-[Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+[Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
  
-
- 
-
-
-
-
-
 

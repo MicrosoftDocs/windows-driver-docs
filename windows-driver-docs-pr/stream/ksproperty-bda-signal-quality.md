@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_QUALITY
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data successfully extracted from the signal as a percent.
-ms.assetid: 8967400d-3a10-475a-997a-d756837c3438
 keywords: ["KSPROPERTY_BDA_SIGNAL_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data suc
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -80,8 +78,7 @@ In the case of digital signals, this percentage can be computed by examining pac
 
 -   20 percent indicates that the demodulator is aware that a properly modulated signal exists but cannot produce enough data to be useful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -99,14 +96,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DEVICE\_ID
 description: The WIA\_DPS\_DEVICE\_ID property contains a unique Function Instance identifier for a web services scanner device.
-ms.assetid: 48c45b94-86b1-41b5-89bc-e3270ad56d7e
 keywords: ["WIA_DPS_DEVICE_ID Imaging Devices"]
 topic_type:
 - apiref
@@ -28,13 +27,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver initializes this property at run time by reading the PKEY\_PNPX\_ID device property from the Function Instance object.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

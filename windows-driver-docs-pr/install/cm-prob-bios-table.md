@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_BIOS_TABLE
 description: CM_PROB_BIOS_TABLE
-ms.assetid: 99c6b674-82a0-4b2d-a89b-ea8888a997e8
 keywords:
 - CM_PROB_BIOS_TABLE
 ms.date: 04/20/2017

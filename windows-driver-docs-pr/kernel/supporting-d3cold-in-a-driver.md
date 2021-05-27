@@ -1,7 +1,6 @@
 ---
 title: Supporting D3cold in a Driver
 description: Starting with Windows 8, the D3 (off) device power state is divided into two distinct substates, D3hot and D3cold.
-ms.assetid: D085820E-EDAC-4353-8500-207F77D9CC1F
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -50,7 +49,7 @@ The following topics contain more information about supporting D3cold in a devic
 </tr>
 <tr class="odd">
 <td><p><a href="using-guid-d3cold-support-interface.md" data-raw-source="[Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface](using-guid-d3cold-support-interface.md)">Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface</a></p></td>
-<td><p>Starting with Windows 8, drivers can call the routines in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967714" data-raw-source="[GUID_D3COLD_SUPPORT_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714)">GUID_D3COLD_SUPPORT_INTERFACE</a> interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold. The two primary routines in this interface are <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support" data-raw-source="[&lt;em&gt;SetD3ColdSupport&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support)"><em>SetD3ColdSupport</em></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-get_idle_wake_info" data-raw-source="[&lt;em&gt;GetIdleWakeInfo&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-get_idle_wake_info)"><em>GetIdleWakeInfo</em></a>.</p></td>
+<td><p>Starting with Windows 8, drivers can call the routines in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967714" data-raw-source="[GUID_D3COLD_SUPPORT_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714)">GUID_D3COLD_SUPPORT_INTERFACE</a> interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold. The two primary routines in this interface are <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support" data-raw-source="[&lt;em&gt;SetD3ColdSupport&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support)"><em>SetD3ColdSupport</em></a> and <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-get_idle_wake_info" data-raw-source="[&lt;em&gt;GetIdleWakeInfo&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-get_idle_wake_info)"><em>GetIdleWakeInfo</em></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="surprise-wake-up.md" data-raw-source="[Surprise Wake-Up](surprise-wake-up.md)">Surprise Wake-Up</a></p></td>
@@ -60,11 +59,4 @@ The following topics contain more information about supporting D3cold in a devic
 </table>
 
  
-
- 
-
- 
-
-
-
 

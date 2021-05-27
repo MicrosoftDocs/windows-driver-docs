@@ -1,7 +1,6 @@
 ---
 title: INF ControlFlags Section
 description: A ControlFlags section identifies devices for which Windows should take certain unique actions during installation.
-ms.assetid: 529060b6-ee4b-49a8-b723-5eda47e9f561
 keywords:
 - INF ControlFlags Section Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 A **ControlFlags** section identifies devices for which Windows should take certain unique actions during installation.
 
-```ini
+```inf
 [ControlFlags]
 
 ExcludeFromSelect=* | 
@@ -106,8 +105,7 @@ After Windows installs the [driver package](driver-packages.md) for the device, 
 
 3.  If the device-specific software is not installed on the computer, the PnP manager presents the solution to the user and provides a link for downloading the software. The user can then choose to download and install this software by following the instructions presented in the solution.
 
-Remarks
--------
+## Remarks
 
 Typically, a **ControlFlags** section has one or more **ExcludeFromSelect** entries to identify devices that are listed in the per-manufacturer [**INF Models section**](inf-models-section.md), but which should not be displayed to the end-user as options during manual installations.
 
@@ -124,12 +122,11 @@ An INF writer should use the **InteractiveInstall** directive sparingly and only
 
 INF files that exclusively install PnP devices can have a **ControlFlags** section unless they set the **NoInstallClass** value entry in their respective *SetupClassGUID* registry keys to **TRUE**. For more information about these registry keys, see [**INF ClassInstall32 Section**](inf-classinstall32-section.md).
 
-Examples
---------
+## Examples
 
 This example of the **ControlFlags** section in the system mouse class installer INF suppresses the display of devices/models that cannot be installed on x86 platforms.
 
-```ini
+```inf
 [ControlFlags]
 ; Exclude all bus mice and InPort mice for x86 platforms
 ExcludeFromSelect.ntx86=*PNP0F0D,*PNP0F11,*PNP0F00,*PNP0F02,*PNP0F15
@@ -139,7 +136,7 @@ ExcludeFromSelect=UNKNOWN_MOUSE
 
 The following INF file fragment shows two devices: one that is fully PnP-capable and requires no user intervention during installation and another that requires its own driver and cannot use any other driver. Specifying **InteractiveInstall** for the second device forces Windows to install this device in a user's context (a user who has administrative rights). This includes prompting the user for the location of the driver files (INF file, driver file, and so on) as required.
 
-```ini
+```inf
 ; ...
 [Manufacturer]
 %Mfg% = ModelsSection

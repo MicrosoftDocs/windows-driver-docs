@@ -1,7 +1,6 @@
 ---
 title: Unidrv Renderer
 description: Unidrv Renderer
-ms.assetid: 5c19eb9c-149b-4587-a12d-f01164231b51
 keywords:
 - Unidrv, renderer
 - renderer WDK Unidrv

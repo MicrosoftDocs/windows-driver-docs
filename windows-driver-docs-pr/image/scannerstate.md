@@ -1,7 +1,6 @@
 ---
 title: ScannerState element
 description: The required ScannerState element identifies the current state of the scanning portion of the scan device.
-ms.assetid: 64cd5319-a52d-4ff3-976c-060886381d11
 keywords: ["ScannerState element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScannerState** element identifies the current state of the scanning portion of the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerState>
@@ -27,13 +25,11 @@ Usage
 </wscn:ScannerState>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following string values.
 
@@ -72,8 +68,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 

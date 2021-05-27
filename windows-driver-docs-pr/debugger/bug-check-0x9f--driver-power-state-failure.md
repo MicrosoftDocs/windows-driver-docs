@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x9F DRIVER_POWER_STATE_FAILURE
 description: This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
-ms.assetid: f767fe80-0ec0-45e4-9949-467f50ac601c
 keywords: ["Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,7 +66,7 @@ Parameter 1 indicates the type of violation.
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Time-out value, in seconds.</p></td>
 <td align="left"><p>The thread currently holding onto the Plug-and-Play (PnP) lock.</p></td>
-<td align="left"><p>nt!TRIAGE_9F_POWER.</p></td>
+<td align="left"><p>nt!TRIAGE_9F_PNP.</p></td>
 <td align="left"><p>The power state transition timed out waiting to synchronize with the PnP subsystem.</p></td>
 </tr>
 <tr class="odd">
@@ -298,8 +297,7 @@ To help you determine the cause of the error, consider the following questions:
 
 - Refer to the additional techniques described above under parameter 0x3.
 
-## Remarks
-----------
+## ## Remarks---
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
 

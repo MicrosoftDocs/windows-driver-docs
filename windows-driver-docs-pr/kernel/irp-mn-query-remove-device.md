@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_QUERY_REMOVE_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_QUERY_REMOVE_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 95ec9ed8-014f-4d01-bed7-3aeb29cd9e73
 keywords:
  - IRP_MN_QUERY_REMOVE_DEVICE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,12 +12,15 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
-Major Code
-----------
+## Value
+
+0x01
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 The PnP manager sends this IRP to inform drivers that a device is about to be removed from the computer and to query whether the device can be removed without disrupting the computer. The PnP manager also sends this IRP if a user requests to update driver(s) for the device.
 
@@ -39,21 +41,19 @@ None
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as STATUS\_UNSUCCESSFUL.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then passed down to each lower driver in the stack.
 
 In response to this IRP, drivers indicate whether the device can be removed without disrupting the computer.
 
-For more information about handling this IRP, see [Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-query-remove-device-request). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+For more information about handling this IRP, see [Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request](./handling-an-irp-mn-query-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](./removing-a-device-in-a-function-driver.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,11 +76,4 @@ Requirements
 [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](irp-mn-device-usage-notification.md)
 
 [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)
-
- 
-
- 
-
-
-
 

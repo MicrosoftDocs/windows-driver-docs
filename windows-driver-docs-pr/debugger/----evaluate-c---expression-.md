@@ -1,7 +1,6 @@
 ---
 title: (Evaluate C++ Expression)
 description: The double question mark ( ) command evaluates and displays the value of an expression according to C++ expression rules.
-ms.assetid: 3a15a0a3-03d0-4807-a6df-054de819c0a0
 keywords: ["(Evaluate C++ Expression) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -53,19 +52,21 @@ Specifies the C++ expression to evaluate. For more information about the syntax,
 
  
 
-Remarks
--------
+## Remarks
 
 The **??** command evaluates symbols in the expression in the context of the current thread and process.
 
 If you want to evaluate a part of the **Expression** expression according to MASM expression rules, enclose that part in parentheses and add two at signs ( **@@** ) before it. For more information about MASM expressions and C++ expressions, see [Evaluating Expressions](evaluating-expressions.md) and [Numerical Expression Syntax](numerical-expression-syntax.md).
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**? (Evaluate Expression)**](---evaluate-expression-.md)
 
 [**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
+
+[Evaluating Expressions](evaluating-expressions.md) 
+
+[Numerical Expression Syntax](numerical-expression-syntax.md)
 
  
 

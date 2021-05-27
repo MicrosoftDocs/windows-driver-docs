@@ -1,7 +1,6 @@
 ---
 title: Marking Formats for Gamma and Linear Conversion
 description: Marking Formats for Gamma and Linear Conversion
-ms.assetid: 1285b04e-b67a-46d2-82b2-3cde433bf578
 keywords:
 - gamma correction WDK DirectX 9.0 , marking formats for gamma conversion
 - marking formats for conversion WDK DirectX 9.0
@@ -20,17 +19,11 @@ A DirectX 9.0 version driver marks texture formats for linear or gamma conversio
 
 Texture content is typically stored in sRGB format, which is gamma corrected. However, for the pixel pipeline to perform accurate blending operations on sRGB-formatted textures, the driver must convert those textures to a linear format before reading from them. When the pixel pipeline is ready to write those textures out to the render target, the driver must convert those textures back to sRGB format. In this way, the pixel pipeline performs all operations in linear space.
 
-The driver specifies the following flags in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for a texture surface's format to mark the format for conversion:
+The driver specifies the following flags in the **dwOperations** member of the [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for a texture surface's format to mark the format for conversion:
 
 -   D3DFORMAT\_OP\_SRGBREAD to indicate whether a texture is gamma 2.2 corrected or not (sRGB or not), and if it must be converted to a linear format by the driver either for blending operations or for the sampler at lookup time.
 
 -   D3DFORMAT\_OP\_SRGBWRITE to indicate whether the pixel pipeline should gamma correct back to sRGB space when writing out to the render target.
 
  
-
- 
-
-
-
-
 

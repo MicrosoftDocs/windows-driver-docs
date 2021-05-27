@@ -1,7 +1,6 @@
 ---
 title: Unicode Representations in XML Snapshots
 description: Unicode Representations in XML Snapshots
-ms.assetid: 6efb7b2d-ab4d-4caf-a7e1-ed3bfab14453
 keywords:
 - snapshots WDK GDL , Unicode representations
 - Unicode representations WDK GDL

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_STRENGTH
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_STRENGTH to determine the carrier strength of the signal in mDb (1/1000 of a decibel (DB)).
-ms.assetid: b8b71135-cc0b-4a59-940a-dd766cab3305
 keywords: ["KSPROPERTY_BDA_SIGNAL_STRENGTH Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_STRENGTH to determine the carrier strength 
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -64,8 +62,7 @@ The returned value specifies the carrier strength of the signal in mDb.
 
 A strength of 0 is nominal strength as expected for the given type of broadcast network. Subnominal strengths are reported as positive mDb. Super-nominal strengths are reported as negative mDb.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,14 +80,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

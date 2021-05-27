@@ -1,7 +1,6 @@
 ---
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
-ms.assetid: ba60fddd-a248-4afb-9390-f9277ef1f094
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -67,9 +66,9 @@ You must provide the following information to include in the APN database:
 
 ### <span id="detect"></span><span id="DETECT"></span>Detect Internet access
 
-When Windows first connects to a network to determine Internet connectivity, it performs various network tests. The destination site for these tests is msftncsi.com, which is a reserved domain that is used exclusively for connectivity testing.
+When Windows first connects to a network to determine Internet connectivity, it performs various network tests. The destination site for these tests is `www.msftconnecttest.com`, which is a reserved domain that is used exclusively for connectivity testing.
 
-To avoid false positives or false negatives, your network must allow access to www.msftncsi.com only when a user has general Internet access. A user who is connected to your network without having an active data plan must not have access to www.msftncsi.com.
+To avoid false positives or false negatives, your network must allow access to `www.msftconnecttest.com` only when a user has general Internet access. A user who is connected to your network without having an active data plan must not have access to `www.msftconnecttest.com`. For more info, see [An Internet Explorer or Edge window opens when your computer connects to a corporate network or a public network](https://support.microsoft.com/en-us/help/4494446/an-internet-explorer-or-edge-window-opens-when-your-computer-connects).
 
 ### <span id="webaccess"></span><span id="WEBACCESS"></span>Web site access
 
@@ -144,7 +143,7 @@ After a user has purchased a data plan or otherwise activated the mobile broadba
 
 -   Instruct the computer to reconnect the mobile broadband device
 
-The same account provisioning metadata that can be applied to a computer by using a mobile broadband app can also be applied by a mobile broadband website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) method. If it is present, the browser can transfer account provisioning metadata to Windows.
+The same account provisioning metadata that can be applied to a computer by using a mobile broadband app can also be applied by a mobile broadband website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) method. If it is present, the browser can transfer account provisioning metadata to Windows.
 
 For more info about account provisioning metadata, see [Account provisioning](account-provisioning.md).
 
@@ -154,10 +153,4 @@ Account provisioning metadata must be signed with an extended validation (EV) ce
  
 
  
-
- 
-
-
-
-
 

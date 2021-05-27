@@ -1,7 +1,6 @@
 ---
 title: Introduction to Image Processing Filters
 description: Introduction to Image Processing Filters
-ms.assetid: 59fc1bc1-c783-43df-9778-ea4306f6dd50
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ The image processing filter is a WIA extension. The image processing filter serv
 
 -   To enable accurate live previews. The image processing filter is used from a new for Windows Vista WIA Preview component (described in the Microsoft Windows SDK documentation) that provides accurate live previews. In this context, "live" means that an application won't have to re-acquire the image from the scanner once it changes a few property settings, which are discussed later in this section. The previews are accurate since the filtering is actually performed by a vendor component on the actual preview image rather than just a random filter on a totally separate image.
 
-In order to provide accurate previews, a filter should implement [**brightness**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-brightness) and [**contrast**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-contrast) properties at a minimum. This is so the common UI, which provides brightness and contrast controls to the user, can display accurate previews.
+In order to provide accurate previews, a filter should implement [**brightness**](./wia-ips-brightness.md) and [**contrast**](./wia-ips-contrast.md) properties at a minimum. This is so the common UI, which provides brightness and contrast controls to the user, can display accurate previews.
 
 The image processing filter is always executed when an image is scanned. So there is no way for an application to get the image from the scanner without having the image processing filter applied first. An application does not need to be aware of the filter.
 
@@ -33,9 +32,4 @@ The following figure shows the image processing filter being loaded by WIA compo
 ![diagram illustrating the image processing filter being loaded by wia components into the application's process](images/wia-components-app-process.png)
 
  
-
- 
-
-
-
 

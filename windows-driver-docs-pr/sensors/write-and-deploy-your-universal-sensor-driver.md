@@ -1,7 +1,6 @@
 ---
 title: Write and deploy your universal sensor driver
 description: This topic provides guidance on how to write and deploy your universal sensor driver, using the user mode driver framework (UMDF) version 2.
-ms.assetid: FA888CB3-5B43-47CB-907D-76C6E6B6DE5D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,9 +13,9 @@ This topic provides guidance on how to write and deploy your universal sensor dr
 ## Write a generic UMDF 2.0 driver
 
 
-To build a generic UMDF 2.0 driver, see [Getting Started with Universal Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers), and follow the steps in the section titled [Building a Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-universal-driver), to build a Universal Windows driver using the **User Mode Driver (UMDF V2)** template.
+To build a generic UMDF 2.0 driver, see [Getting Started with Universal Windows Drivers](../develop/getting-started-with-windows-drivers.md), and follow the steps in the section titled [Building a Universal Windows driver](../develop/building-a-windows-driver.md), to build a Universal Windows driver using the **User Mode Driver (UMDF V2)** template.
 
-## Customize the generic UMDF 2.0 driver fies
+## Customize the generic UMDF 2.0 driver files
 
 
 When you develop and build this generic UMDF 2.0 driver, it will create quite a few boilerplate files, including the following:
@@ -37,11 +36,4 @@ After updating the generic files to customize them for your sensor, see the foll
 -   [Review the INX file](review-and-revise-the-inf-file.md)
 -   [Build the sensor driver](build-the-sensor-driver.md)
 -   [Install the sensor driver](install-the-sensor-driver.md)
-
- 
-
- 
-
-
-
 

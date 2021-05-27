@@ -1,7 +1,6 @@
 ---
 title: Device Installations and System Restarts
 description: Device Installations and System Restarts
-ms.assetid: c09d2150-60ae-4912-86f5-6489c818853e
 keywords:
 - device installations WDK , reboots
 - installing devices WDK , reboots
@@ -29,7 +28,7 @@ For these earlier devices, a user typically must shut down the system before phy
  
 
 <a href="" id="updating-a-driver-for-a-system-boot-device--"></a>Updating a driver for a system boot device.   
-If a device can potentially hold the system's paging, hibernation, or crash dump file, its drivers must service [**IRP_MN_DEVICE_USAGE_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-device-usage-notification) requests. The system sends this request before putting one of these files on the disk. If the drivers succeed the request, they must fail any subsequent [**IRP_MN_QUERY_REMOVE_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device) requests. When a driver for the device fails an IRP_MN_QUERY_REMOVE_DEVICE request, the system prompts the user to restart the system.
+If a device can potentially hold the system's paging, hibernation, or crash dump file, its drivers must service [**IRP_MN_DEVICE_USAGE_NOTIFICATION**](../kernel/irp-mn-device-usage-notification.md) requests. The system sends this request before putting one of these files on the disk. If the drivers succeed the request, they must fail any subsequent [**IRP_MN_QUERY_REMOVE_DEVICE**](../kernel/irp-mn-query-remove-device.md) requests. When a driver for the device fails an IRP_MN_QUERY_REMOVE_DEVICE request, the system prompts the user to restart the system.
 
 **Note**  The device's setup files should not initiate a system restart.
 
@@ -49,10 +48,4 @@ The section includes the following topics:
 [Initiating System Restarts During Device Installations](initiating-system-restarts-during-device-installations.md)
 
  
-
- 
-
-
-
-
 

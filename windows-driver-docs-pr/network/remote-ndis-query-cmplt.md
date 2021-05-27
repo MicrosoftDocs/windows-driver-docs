@@ -1,7 +1,6 @@
 ---
 title: 'REMOTE_NDIS_QUERY_CMPLT'
-Description: 'A Remote NDIS device will respond to a REMOTE_NDIS_QUERY_MSG message with a REMOTE_NDIS_QUERY_CMPLT message.'
-ms.assetid: 357e2ade-0b67-42c3-b1e1-dcc4b7ec5cda
+description: 'A Remote NDIS device will respond to a REMOTE_NDIS_QUERY_MSG message with a REMOTE_NDIS_QUERY_CMPLT message.'
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
@@ -68,8 +67,7 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_QUERY\_MSG**](remote-ndi
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

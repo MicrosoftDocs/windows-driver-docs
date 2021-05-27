@@ -1,12 +1,12 @@
 ---
 title: Number of user of user mode crashes in Microsoft Edge
-description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Edge, caused by the graphics drivers, over total runtime in years 
+description: Learn about the measure that monitors how often Microsoft Edge crashes, in relation to the Microsoft Edge runtime on all devices with the driver.
 ms.topic: article
 ms.date: 05/20/2019
 ms.localizationpriority: medium
 ---
 
-# Number of user mode reliability for crashes in Microsoft Edge, normalized by usage, is less than or equal to the baseline goal
+# Number of user mode reliability for crashes in Microsoft Edge, normalized by usage, is less than or equal to the baseline goal (Ecosystem)
 
 ## Description
 

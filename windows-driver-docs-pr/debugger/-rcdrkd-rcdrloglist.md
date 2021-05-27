@@ -1,7 +1,6 @@
 ---
 title: rcdrkd.rcdrloglist
 description: The rcdrkd.rcdrloglist extension displays a list of the recorder logs owned by a driver or a set of drivers.
-ms.assetid: D4D3C313-EFD4-482B-B4A3-307F2407D2BA
 keywords: ["rcdrkd.rcdrloglist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,13 +32,11 @@ The name of a driver, not including the .sys extension.
 
 Rcdrkd.dll
 
-Remarks
--------
+## Remarks
 
 This command is relevant only for drivers that log messages to different logs by using the WppRecorder API.
 
-Examples
---------
+## Examples
 
 The following example displays a list of all recorder logs owned by the USB 3.0 host controller driver (usbxhci.sys).
 

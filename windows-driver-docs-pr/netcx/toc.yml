@@ -11,7 +11,7 @@
 - name: "INF files for NetAdapterCx client drivers"
   href: inf-files-for-netadaptercx-client-drivers.md
 - name: "Managing the lifetime of objects in NetAdapterCx"
-  items: 
+  items:
   - name: "Summary of NetAdapterCx objects"
     href: summary-of-netadaptercx-objects.md
   - name: "Device and adapter initialization"
@@ -19,21 +19,27 @@
   - name: "Power-up sequence for a NetAdapterCx client driver"
     href: power-up-sequence-for-a-netadaptercx-client-driver.md
   - name: "Power-down sequence for a NetAdapterCx client driver"
-    href: power-down-sequence-for-a-netadaptercx-client-driver.md  
+    href: power-down-sequence-for-a-netadaptercx-client-driver.md
 - name: "Accessing configuration information"
   href: accessing-configuration-information.md
-- name: "Handling control requests"
-  href: handling-control-requests.md
 - name: "Debugging a NetAdapterCx client driver"
   href: debugging-a-netadaptercx-client-driver.md
 - name: "Transferring network data"
-  items: 
+  items:
   - name: "Introduction to the NetAdapterCx data path"
     href: transferring-network-data.md
   - name: "Packet descriptors and extensions"
     href: packet-descriptors-and-extensions.md
   - name: "NetAdapterCx hardware offloads"
-    href: netadaptercx-hardware-offloads.md
+    items: 
+    - name: "Introduction to NetAdapterCx hardware offloads"
+      href: introduction-to-hardware-offloads.md
+    - name: "Checksum offload"
+      href: checksum-offload.md
+    - name: "Generic Segmentation Offload (GSO)"
+      href: gso-offload.md
+    - name: "Receive Segment Coalescing (RSC) offload"
+      href: rsc-offload.md
   - name: "Transmit and receive queues"
     href: transmit-and-receive-queues.md
   - name: "Network data buffer management"
@@ -49,17 +55,19 @@
     - name: "Canceling network data with net rings"
       href: canceling-network-data-with-net-rings.md
     - name: "Net ring element management"
-      href: "net-ring-element-management.md"
+      href: net-ring-element-management.md
 - name: "NetAdapterCx receive side scaling (RSS)"
   href: netadaptercx-receive-side-scaling-rss-.md
-- name: "Configuring power management"
+- name: "Configuring NetAdapterCx power management"
   href: configuring-power-management.md
 - name: "NDIS-WDF function equivalents"
   href: ndis-wdf-function-equivalents.md
 - name: "NetAdapterCx limitations"
   href: netadaptercx-limitations.md
+- name: "Recovering an unresponsive NIC with NetAdapterCx PLDR"
+  href: platform-level-device-reset.md
 - name: "Mobile Broadband (MBB) WDF class extension (MBBCx)"
-  items: 
+  items:
   - name: "Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)"
     href: mobile-broadband-mbb-wdf-class-extension-mbbcx.md
   - name: "Writing an MBBCx client driver"

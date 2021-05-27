@@ -1,7 +1,6 @@
 ---
 title: Using KDbgCtrl
 description: Using KDbgCtrl
-ms.assetid: 386e8861-dd55-440c-9309-7e8cf6c27690
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
 ms.date: 05/17/2018
 ms.localizationpriority: medium
@@ -16,7 +15,7 @@ To use this tool, your target computer must be running Windows Server 2003 or a 
 
 KDbgCtrl can control five different settings: Full Kernel Debugging, Automatic Kernel Debugging, User-Mode Error Handling, Blocking of Kernel Debugging, and the size of the DbgPrint buffer.
 
-To use KDbgCtrl, you must have already enabled kernel debugging in the boot settings of the target computer before the last boot. KDbgCtrl cannot be used to enable kernel debugging if this was not done. See [Boot Parameters to Enable Debugging](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-enable-debugging) for details on these boot settings.
+To use KDbgCtrl, you must have already enabled kernel debugging in the boot settings of the target computer before the last boot. KDbgCtrl cannot be used to enable kernel debugging if this was not done. See [Boot Parameters to Enable Debugging](../devtest/boot-parameters-to-enable-debugging.md) for details on these boot settings.
 
 ### <span id="full_kernel_debugging"></span><span id="FULL_KERNEL_DEBUGGING"></span>Full Kernel Debugging
 
@@ -126,10 +125,4 @@ kdbgctrl -sdb 0x100000
 ```
 
  
-
- 
-
-
-
-
 

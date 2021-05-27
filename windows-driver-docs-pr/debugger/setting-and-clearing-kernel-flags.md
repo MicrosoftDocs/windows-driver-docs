@@ -1,7 +1,6 @@
 ---
 title: Setting and Clearing Kernel Flags
 description: Setting and Clearing Kernel Flags
-ms.assetid: 6bca8007-2d9f-4b93-b5fb-300c262604c8
 keywords: ["GFlags, kernel flags", "GFlags, run-time settings"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfsettraceprefix
 description: The wdfkd.wdfsettraceprefix extension sets the trace prefix format string.
-ms.assetid: dec47b55-4b6a-4ff5-8622-4a377a1903b8
 keywords: ["wdfkd.wdfsettraceprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The trace prefix string is prepended to each trace message in the Kernel-Mode Driver Framework (KMDF) error log. The TRACE\_FORMAT\_PREFIX environment variable also controls the trace prefix string.
 

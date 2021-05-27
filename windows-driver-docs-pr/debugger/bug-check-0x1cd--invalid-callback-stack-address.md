@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x1CD: INVALID\_CALLBACK\_STACK\_ADDRESS 
+# Bug Check 0x1CD: INVALID\_CALLBACK\_STACK\_ADDRESS 
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

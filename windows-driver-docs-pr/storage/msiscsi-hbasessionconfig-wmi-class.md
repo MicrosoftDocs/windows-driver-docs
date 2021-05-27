@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_HBASessionConfig WMI Class
 description: MSiSCSI\_HBASessionConfig WMI Class
-ms.assetid: ef3ac7d0-be4a-457e-b837-a6434776dfc1
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -64,13 +63,7 @@ class MSiSCSI_HBASessionConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBASessionConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_hbasessionconfig) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBASessionConfig**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_hbasessionconfig) data structure.
 
  
-
- 
-
-
-
-
 

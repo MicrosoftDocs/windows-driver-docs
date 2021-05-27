@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD MUTEX_LEVEL_NUMBER_VIOLATION
 description: The MUTEX_LEVEL_NUMBER_VIOLATION bug check has a value of 0x0000000D.This bug check appears very infrequently.
-ms.assetid: beffa1ef-7499-44b9-90fb-0c8af7f0f2be
 keywords: ["Bug Check 0xD MUTEX_LEVEL_NUMBER_VIOLATION", "MUTEX_LEVEL_NUMBER_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:

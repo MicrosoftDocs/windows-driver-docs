@@ -19,7 +19,7 @@ Human Interface Devices (HID) is a device class definition to replace PS/2-style
 
 HID devices today include a broad range of devices such as alphanumeric displays, bar code readers, volume controls on speakers/headsets, auxiliary displays, sensors and many others. Many hardware vendors also use HID for their proprietary devices.
 
-HID began with USB but was designed to be bus-agnostic. It was designed for low latency, low bandwidth devices but with flexibility to specify the rate in the underlying transport. The specification for HID over USB was ratified by the [USB-IF](https://www.usb.org/about) in 1996 and support over additional transports followed soon after. Details on currently supported transports can be found in [HID Transports Supported in Windows](https://docs.microsoft.com/windows-hardware/drivers/hid/hid-transports). 3rd-party, vendor-specific transports are also allowed via custom transport drivers.
+HID began with USB but was designed to be bus-agnostic. It was designed for low latency, low bandwidth devices but with flexibility to specify the rate in the underlying transport. The specification for HID over USB was ratified by the [USB-IF](https://www.usb.org/about) in 1996 and support over additional transports followed soon after. Details on currently supported transports can be found in [HID Transports Supported in Windows](./hid-transports.md). 3rd-party, vendor-specific transports are also allowed via custom transport drivers.
 
 ## HID Concepts
 

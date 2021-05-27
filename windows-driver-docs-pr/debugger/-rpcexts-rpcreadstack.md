@@ -1,7 +1,6 @@
 ---
 title: rpcexts.rpcreadstack
 description: The rpcexts.rpcreadstack extension reads an RPC client-side stack and retrieves the call information.
-ms.assetid: e0988ac9-dc6e-4a4f-9096-6af2e70dcd42
 keywords: ["rpcexts.rpcreadstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the pointer to the thread stack.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 For a common use of this extension, see [Analyzing a Stuck Call Problem](analyzing-a-stuck-call-problem.md).
 

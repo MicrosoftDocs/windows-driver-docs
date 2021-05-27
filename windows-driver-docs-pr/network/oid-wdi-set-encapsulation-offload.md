@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_ENCAPSULATION_OFFLOAD
 description: OID_WDI_SET_ENCAPSULATION_OFFLOAD is sent by the OS to indicate that the lower edge driver (LE) should start doing the TCP Checksum/LSO offloads.
-ms.assetid: 1095DBE0-2C6B-40F4-8E01-39F4BBA2FDBC
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ENCAPSULATION_OFFLOAD Network Drivers Starting with Windows Vista
@@ -27,8 +26,8 @@ When this message is received, the LE should indicate its current encapsulation 
 
 | TLV                                                                                                                   | Multiple TLV instances allowed | Optional | Description                                     |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------|
-| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-encapsulation-offload-v4-parameters) |                                |          | Specifies if IPv4 offloading should be started. |
-| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-encapsulation-offload-v6-parameters) |                                |          | Specifies if IPv6 offloading should be started. |
+| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](./wdi-tlv-set-encapsulation-offload-v4-parameters.md) |                                |          | Specifies if IPv4 offloading should be started. |
+| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](./wdi-tlv-set-encapsulation-offload-v6-parameters.md) |                                |          | Specifies if IPv6 offloading should be started. |
 
  
 
@@ -37,8 +36,7 @@ When this message is received, the LE should indicate its current encapsulation 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -62,9 +60,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

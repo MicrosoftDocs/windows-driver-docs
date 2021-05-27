@@ -1,7 +1,6 @@
 ---
 title: DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enumeration
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: 17d77f4f-e1ad-45d6-9cba-1dfcaea2577b
+description: Learn about the DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
@@ -31,8 +29,7 @@ typedef enum _DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
 } DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE"></span><span id="dxgkmt_multiplane_overlay_stereo_flip_none"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_NONE**
 
@@ -40,8 +37,7 @@ Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1"></span><span id="dxgkmt_multiplane_overlay_stereo_flip_frame1"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_FRAME1**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

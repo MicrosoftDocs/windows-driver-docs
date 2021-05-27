@@ -1,7 +1,6 @@
 ---
 title: DXGKCB\_COMPLETEPSTATETRANSITION callback function
-description: Reserved for system use. Do not use it in your driver.
-ms.assetid: F0EF1B1F-58C3-4D6D-BF9A-0621CC82ED6B
+description: Learn about the DXGKCB\_COMPLETEPSTATETRANSITION callback function, which is reserved for system use. Do not use it in your driver.
 keywords: ["DxgkCbCompletePStateTransition callback function Display Devices", "DXGKCB_COMPLETEPSTATETRANSITION"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKCB_COMPLETEPSTATETRANSITION DxgkCbCompletePStateTransition;
@@ -34,8 +32,7 @@ VOID APIENTRY CALLBACK* DxgkCbCompletePStateTransition(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hAdapter* \[in\]
 
@@ -43,13 +40,11 @@ Parameters
 
 *CompletedPState* \[in\]
 
-Return value
-------------
+## Return value
 
 This callback function does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE
 description: The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function table of the given allocator.
-ms.assetid: 5a55c808-2960-41c7-b242-69d1e10d0015
 keywords: ["KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,23 +46,21 @@ The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Allocator</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable" data-raw-source="[&lt;strong&gt;KSSTREAMALLOCATOR_FUNCTIONTABLE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable)"><strong>KSSTREAMALLOCATOR_FUNCTIONTABLE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable" data-raw-source="[&lt;strong&gt;KSSTREAMALLOCATOR_FUNCTIONTABLE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable)"><strong>KSSTREAMALLOCATOR_FUNCTIONTABLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE is only used by allocators supporting the DISPATCH\_LEVEL function interface. Allocators supporting this property must be able to allocate and free frames for IRQL of DISPATCH\_LEVEL and lower. This property is accessible only from kernel mode.
 
 Because the DISPATCH\_LEVEL interface is closely associated with the IRP-based interface, acquiring the function table is likely to result in the creation of an internal notification event to allow pending I/O to be completed when frames are returned to the free list. When the handle to the allocator is closed, the function table pointers are invalid and the associated events are automatically disabled.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,14 +78,5 @@ Requirements
 ## See also
 
 
-[**KSSTREAMALLOCATOR\_FUNCTIONTABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable)
-
- 
-
- 
-
-
-
-
-
+[**KSSTREAMALLOCATOR\_FUNCTIONTABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable)
 

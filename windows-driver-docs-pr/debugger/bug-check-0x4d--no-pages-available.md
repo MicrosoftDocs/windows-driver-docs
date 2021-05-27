@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x4D NO_PAGES_AVAILABLE
 description: The NO_PAGES_AVAILABLE bug check has a value of 0x0000004D. This indicates that no free pages are available to continue operations.
-ms.assetid: c1f8fb33-a01c-4455-87a7-59aa6ba7cb37
 keywords: ["Bug Check 0x4D NO_PAGES_AVAILABLE", "NO_PAGES_AVAILABLE"]
 ms.date: 12/27/2018
 topic_type:
@@ -32,8 +31,7 @@ The NO\_PAGES\_AVAILABLE bug check has a value of 0x0000004D. This indicates tha
 |4|The most recent modified write error status.|
 
 
-Cause
------
+## Cause
 
 To see general memory statistics, use the [**!vm 3**](-vm.md) extension.
 

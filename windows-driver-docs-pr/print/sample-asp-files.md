@@ -1,7 +1,6 @@
 ---
 title: Sample ASP Files
 description: Sample ASP Files
-ms.assetid: 52a555e2-a84f-4f28-869b-dbf22d1c16b3
 keywords:
 - customized print Web pages WDK , ASP files
 - ASP files WDK printer

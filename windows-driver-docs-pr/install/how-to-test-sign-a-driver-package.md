@@ -1,7 +1,6 @@
 ---
 title: How to Test-Sign a Driver Package
 description: How to Test-Sign a Driver Package
-ms.assetid: 992f0974-0b0e-4c96-ad16-c5894067896c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This section provides information about the basic steps that you have to follow when you test-sign a [driver package](driver-packages.md). 
 
-Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign kernel-mode binaries by using self-signed certificates, such as those the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool generates. This capability allows developers to test kernel-mode binaries on Windows with driver signature verification enabled.
+Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign kernel-mode binaries by using self-signed certificates, such as those the [**MakeCert**](../devtest/makecert.md) tool generates. This capability allows developers to test kernel-mode binaries on Windows with driver signature verification enabled.
 
 Windows supports test-signed drivers only for development and testing purposes. Test-signed drivers must not be used for production purposes or released to customers.
 
@@ -34,7 +33,7 @@ Each topic in this section describes a separate procedure in the test-signing pr
 Throughout this section, separate computers are used for the various processes involved in test-signing a driver. These computers are referred to as follows:
 
 <a href="" id="signing-computer"></a>**Signing computer**  
-This is the computer that is used to test-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. In order to use the [driver signing tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed.
+This is the computer that is used to test-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. In order to use the [driver signing tools](../devtest/tools-for-signing-drivers.md), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed.
 
 <a href="" id="test-computer"></a>**Test computer**  
 This is the computer that is used to install and test the test-signed driver package. This computer must be running Windows Vista or later versions of Windows.
@@ -66,10 +65,4 @@ This section includes the following topics:
 [Installing a Test-Signed Driver Package on the Test Computer](installing-a-test-signed-driver-package-on-the-test-computer.md)
 
  
-
- 
-
-
-
-
 

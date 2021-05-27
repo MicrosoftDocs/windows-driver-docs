@@ -1,7 +1,6 @@
 ---
 title: MB identity morphing solution overview
 description: The solution maps the morphing device’s USB configuration to a set of USB functions.
-ms.assetid: 4A3EDD12-00CC-48A0-BCD9-8F64E90FA9F6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

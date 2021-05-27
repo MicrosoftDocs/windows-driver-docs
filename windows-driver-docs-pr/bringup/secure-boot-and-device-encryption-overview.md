@@ -1,7 +1,6 @@
 ---
 title: Secure boot and device encryption overview
 description: This topic provides an overview of secure boot and device encryption functionality, with emphasis on key OEM requirements and considerations.
-ms.assetid: 4e206bd2-7bb4-48c2-9e01-8da041e798ef
 ms.date: 05/02/2017
 ms.localizationpriority: medium
 ---
@@ -52,7 +51,7 @@ OEMs should be aware of the following requirements and considerations related to
 
 -   As part of the secure boot enablement process during manufacturing, the Replay Protected Memory Block (RPMB) on the eMMC part must be provisioned. After this provisioning occurs, the specific eMMC part and the SoC component in the device are bound together; the eMMC part cannot be removed and reused in another device with an OS that makes use of the RPMB.
 
--   After secure boot is enabled, all drivers and apps on the device must be signed in order for them to be loaded by the operating system. For more information, see [Code signing](https://docs.microsoft.com/previous-versions/windows/hardware/code-signing/dn756634(v=vs.85)).
+-   After secure boot is enabled, all drivers and apps on the device must be signed in order for them to be loaded by the operating system. For more information, see [Code signing](/previous-versions/windows/hardware/code-signing/dn756634(v=vs.85)).
 
 ## Device encryption
 
@@ -80,9 +79,4 @@ You should be aware of the following requirements and considerations related to 
 -   After device encryption is enabled on a device, apps that run outside of the main OS (for example, customer care apps in UEFI) cannot write data to the encrypted partitions on the device. Only apps in the main OS or the update OS can write data to the encrypted partitions.
 
  
-
- 
-
-
-
 

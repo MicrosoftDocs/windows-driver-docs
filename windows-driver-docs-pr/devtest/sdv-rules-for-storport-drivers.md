@@ -1,7 +1,6 @@
 ---
 title: Rules for Storport Drivers
 description: Rules for Storport Drivers
-ms.assetid: C880A30B-8629-4648-B2E3-7AC8F1A9059D
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Rules for Storport Drivers
 
 
-This section lists and describes the [DDI compliance rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-rule) for Storport drivers that you can include in a verification of your driver.
+This section lists and describes the [DDI compliance rules](./static-driver-verifier-rule.md) for Storport drivers that you can include in a verification of your driver.
 
 ## In this section
 
@@ -61,10 +60,4 @@ This section lists and describes the [DDI compliance rules](https://docs.microso
  
 
  
-
- 
-
-
-
-
 

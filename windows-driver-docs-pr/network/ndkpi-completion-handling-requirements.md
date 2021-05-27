@@ -1,7 +1,6 @@
 ---
 title: NDKPI Completion Handling Requirements
 description: NDK consumers and NDK providers must follow these requirements for NDKPI completion handling.
-ms.assetid: 87150E2F-64F2-4EAB-A8B3-8E77622BE36C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,20 +13,20 @@ NDK consumers and NDK providers must follow these requirements for NDKPI complet
 ## The Rules for NdkGetCqResults, NdkGetCqResultsEx, and NdkArmCq Functions
 
 
-The consumer will always serialize its calls to these provider functions on the same completion queue (CQ) object ([**NDK\_CQ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_cq)):
+The consumer will always serialize its calls to these provider functions on the same completion queue (CQ) object ([**NDK\_CQ**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_cq)):
 
--   *NdkGetCqResults* ([*NDK\_FN\_GET\_CQ\_RESULTS*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_cq_results))
--   *NdkGetCqResultsEx* ([*NDK\_FN\_GET\_CQ\_RESULTS\_EX*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_cq_results_ex))
--   *NdkArmCq* ([*NDK\_FN\_ARM\_CQ*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_arm_cq))
+-   *NdkGetCqResults* ([*NDK\_FN\_GET\_CQ\_RESULTS*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_cq_results))
+-   *NdkGetCqResultsEx* ([*NDK\_FN\_GET\_CQ\_RESULTS\_EX*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_cq_results_ex))
+-   *NdkArmCq* ([*NDK\_FN\_ARM\_CQ*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_arm_cq))
 
 This means not only that the consumer will never call the same provider function multiple times concurrently, but also that it will never call any combination of these functions concurrently on the same CQ from multiple threads.
 
-An **NdkOperationTypeReceiveAndInvalidate** completion that occurs as a result of a remote *NdkSendAndInvalidate* ([*NDK\_FN\_SEND\_AND\_INVALIDATE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_send_and_invalidate)) call must still be retrievable using *NdkGetCqResults* (not *NdkGetCqResultsEx*n). Doing so must still invalidate the specified token on the receiver, but will not notify the receiving consumer of this invalidation (the consumer must use *NdkGetCqResultsEx* to get this information). A later *NdkInvalidate* ([*NDK\_FN\_INVALIDATE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_invalidate)) for the same token will fail, as usual.
+An **NdkOperationTypeReceiveAndInvalidate** completion that occurs as a result of a remote *NdkSendAndInvalidate* ([*NDK\_FN\_SEND\_AND\_INVALIDATE*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_send_and_invalidate)) call must still be retrievable using *NdkGetCqResults* (not *NdkGetCqResultsEx*n). Doing so must still invalidate the specified token on the receiver, but will not notify the receiving consumer of this invalidation (the consumer must use *NdkGetCqResultsEx* to get this information). A later *NdkInvalidate* ([*NDK\_FN\_INVALIDATE*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_invalidate)) for the same token will fail, as usual.
 
 ## The Rules for Notification Callbacks
 
 
-The provider must call the *NdkCqNotificationCallback* ([*NDK\_FN\_CQ\_NOTIFICATION\_CALLBACK*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_cq_notification_callback)) callback only once, and only after the consumer has armed the *NdkCqNotificationCallback* callback by calling *NdkArmCq*. That is, the provider must clear the arm and call the *NdkCqNotificationCallback* callback when the conditions for calling the *NdkCqNotificationCallback* callback occur (in other words, when request completions are queued in the CQ).
+The provider must call the *NdkCqNotificationCallback* ([*NDK\_FN\_CQ\_NOTIFICATION\_CALLBACK*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_cq_notification_callback)) callback only once, and only after the consumer has armed the *NdkCqNotificationCallback* callback by calling *NdkArmCq*. That is, the provider must clear the arm and call the *NdkCqNotificationCallback* callback when the conditions for calling the *NdkCqNotificationCallback* callback occur (in other words, when request completions are queued in the CQ).
 
 If there are completions already present in the CQ when the consumer calls *NdkArmCq*, the provider will behave as follows:
 
@@ -80,14 +79,7 @@ The following table shows the resulting arm type if *NdkArmCq* is called a secon
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

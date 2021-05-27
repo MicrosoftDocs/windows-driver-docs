@@ -1,7 +1,6 @@
 ---
 title: Abort a Stream
 description: Abort a Stream
-ms.assetid: 46c726b6-8553-4588-9be1-2cf7779efec5
 keywords:
 - Avcstrm.sys streaming filter driver WDK , aborting streams
 - abort streams WDK AV/C streaming
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-When a subunit encounters special conditions, such as device removal or stream data IOCTL cancellation, then the streaming operation should be aborted. The abort operation *Request* is synchronous, but the abort completion is not. Only the first abort stream request is accepted and processed; duplicate requests will be ignored but returned with STATUS\_SUCCESS. The AV/C Streaming filter driver, *Avcstrm.sys,* then schedules a work item to abort streaming. When a stream is aborted, it starts to complete the [**AVCSTRM\_READ**](https://docs.microsoft.com/windows-hardware/drivers/stream/avcstrm-read)/[**AVCSTRM\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/stream/avcstrm-write) request with STATUS\_CANCELLED. The stream state is not changed with the abort request, and the data stream still must be closed to clean up and release resources.
+When a subunit encounters special conditions, such as device removal or stream data IOCTL cancellation, then the streaming operation should be aborted. The abort operation *Request* is synchronous, but the abort completion is not. Only the first abort stream request is accepted and processed; duplicate requests will be ignored but returned with STATUS\_SUCCESS. The AV/C Streaming filter driver, *Avcstrm.sys,* then schedules a work item to abort streaming. When a stream is aborted, it starts to complete the [**AVCSTRM\_READ**](./avcstrm-read.md)/[**AVCSTRM\_WRITE**](./avcstrm-write.md) request with STATUS\_CANCELLED. The stream state is not changed with the abort request, and the data stream still must be closed to clean up and release resources.
 
 In the abort work item routine, AV/C Streaming will first stop the isochronous data transfer, but it does not affect the stream state. AV/C Streaming then goes through the attached streams data queue to detach stream buffers and return them with STATUS\_CANCELLED.
 
@@ -39,9 +38,4 @@ Status =
 When a data stream is aborted, it can be resumed (if the device has not been removed) after its stream state has been reset to **KSSTATE\_STOP** by its client application.
 
  
-
- 
-
-
-
 

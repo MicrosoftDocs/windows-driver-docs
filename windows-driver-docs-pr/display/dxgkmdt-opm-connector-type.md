@@ -1,7 +1,6 @@
 ---
 title: DXGKMDT\_OPM\_CONNECTOR\_TYPE enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 57A2F351-99F1-425A-99E3-1167CEFF9FDD
+description: Learn about the DXGKMDT\_OPM\_CONNECTOR\_TYPE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["DXGKMDT_OPM_CONNECTOR_TYPE enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _DXGKMDT_OPM_CONNECTOR_TYPE {
@@ -45,8 +43,7 @@ typedef enum _DXGKMDT_OPM_CONNECTOR_TYPE {
 } DXGKMDT_OPM_CONNECTOR_TYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGKMDT_OPM_CONNECTOR_TYPE_OTHER"></span><span id="dxgkmdt_opm_connector_type_other"></span>**DXGKMDT\_OPM\_CONNECTOR\_TYPE\_OTHER**
 
@@ -82,8 +79,7 @@ Constants
 
 <span id="DXGKMDT_OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL"></span><span id="dxgkmdt_opm_copp_compatible_connector_type_internal"></span>**DXGKMDT\_OPM\_COPP\_COMPATIBLE\_CONNECTOR\_TYPE\_INTERNAL**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

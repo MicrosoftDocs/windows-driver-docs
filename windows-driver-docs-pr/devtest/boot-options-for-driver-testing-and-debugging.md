@@ -1,7 +1,6 @@
 ---
 title: Tools for Changing Boot Options for Driver Testing and Debugging
 description: Tools for Changing Boot Options for Driver Testing and Debugging
-ms.assetid: 4fd58868-7a43-42e3-adf9-5a82593c1675
 keywords:
 - tools WDK , boot options
 - driver development tools WDK , boot options
@@ -43,13 +42,10 @@ By editing boot options, you can:
 
 This section includes:
 
-- [Introduction to Boot Options](introduction-to-boot-options.md)
 - [Overview of Boot Options in Windows](boot-options-in-windows.md).
 - [Boot Options Identifiers](boot-options-identifiers.md)
 - [Editing Boot Options](editing-boot-options.md)
-- [BCD Boot Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+- [BCD Boot Options Reference](./bcd-boot-options-reference.md)
 - [Using Boot Parameters](using-boot-parameters.md)
-- [Bypassing Boot Options](bypassing-boot-options.md)
 - [BCD Boot Options Reference](bcd-boot-options-reference.md)
 - [Boot Options in Previous Versions of Windows](boot-options-in-previous-versions-of-windows.md)
-

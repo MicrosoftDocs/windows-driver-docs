@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP
 description: The CLUSTER_CSVFS_LIVEDUMP bug check has a value of 0x00000188. This indicates that CSVFS initiated this livedump to help debug an inconsistent state.
-ms.assetid: 220B0CDB-6E10-4262-A07C-042E8BA21D7F
 keywords: ["Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP", "CLUSTER_CSVFS_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ The CLUSTER\_CSVFS\_LIVEDUMP bug check has a value of 0x00000188. This indicates
 
  
 
-Cause
------
+## Cause
 
 First parameter contains the reason code When CSVFS detects that current state might cause data corruption or other sort of inconsistency it would generate live dump with this status code. Parameter1 has code pointing to what scenario this live dump is created for. Other parameters should be interpreted in context of the reason code.
 

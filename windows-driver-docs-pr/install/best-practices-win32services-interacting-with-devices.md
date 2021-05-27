@@ -1,7 +1,6 @@
 ---
 title: Win32 Services Interacting with Devices
 description: Win32 Services Interacting with Devices
-ms.assetid: 0ecc6979-25b3-41eb-8d6f-9eee3b80a56f
 ms.date: 03/02/2020
 ms.localizationpriority: medium
 ---
@@ -10,17 +9,17 @@ ms.localizationpriority: medium
 
 ## Motivation:
 
-An ideal Win32 service installed via [INF AddService](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) that interacts with devices behaves similar to how a *driver* interacts with *devices*.  A driver is loaded and unloaded depending on the presence of a device, and a Win32 service that interacts with devices should follow this same pattern of **starting** and **stopping** depending on the presence of a device.  
+An ideal Win32 service installed via [INF AddService](./inf-addservice-directive.md) that interacts with devices behaves similar to how a *driver* interacts with *devices*.  A driver is loaded and unloaded depending on the presence of a device, and a Win32 service that interacts with devices should follow this same pattern of **starting** and **stopping** depending on the presence of a device.  
 
 Services should start only when a device interface is present to interact and stopped when the associated device is no longer present.  This design pattern ensures a robust service that minimizes undesired and undefined behavior.  We will walk through how a service should be designed to follow this pattern.
 
 ## Service Install
 
-To install the service, use the [INF AddService](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) directive.  This will allow you to create and start the service.
+To install the service, use the [INF AddService](./inf-addservice-directive.md) directive.  This will allow you to create and start the service.
 
 Add the flag that makes the service demand-start.  This can be accomplished by setting **StartType=0x3** which makes the service trigger started.
 
-The final step in this section is to use the **AddTrigger** directive to make the service start when a device interface arrives (see [AddService](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) for more details regarding **AddTrigger**).  Below is an example of how AddTrigger should be used:
+The final step in this section is to use the **AddTrigger** directive to make the service start when a device interface arrives (see [AddService](./inf-addservice-directive.md) for more details regarding **AddTrigger**).  Below is an example of how AddTrigger should be used:
 
 ```
 [UserSvc_AddTrigger]
@@ -41,7 +40,7 @@ Note that the HardwareId specified in DataItem is optional and generally only ne
 
 ## Service Runtime
 	
-From a runtime perspective, the first step for your service should be to register for device interface notifications.  Prescriptive guidance on how to accomplish this can be found on this page: [Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).
+From a runtime perspective, the first step for your service should be to register for device interface notifications.  Prescriptive guidance on how to accomplish this can be found on this page: [Registering for Notification of Device Interface Arrival and Device Removal](./registering-for-notification-of-device-interface-arrival-and-device-removal.md).
 
 In particular, you should use **CM_Register_Notification** with the **CM_NOTIFY_FILTERY_TYPE_DEVICEINTERFACE** flag to accomplish the appropriate registration of device interface notifications.
 
@@ -56,11 +55,11 @@ Once you have registered for notifications, you can find your desired device int
 >[!NOTE] 
 >Note, there is a chance that the interface arrives between registering for notifications and finding the desired device interface.  In that case, the interface will be listed in both the notification callback and the list of interfaces.
 
-Once you have found the desired device interface, open a handle to the interface via [CreateFile](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea).  
+Once you have found the desired device interface, open a handle to the interface via [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilea).  
 
 The next step is to register for secondary per-interface notifications to operate and manage the device. This can be done using **CM_Register_Notification** with the **CM_NOTIFY_FILTER_TYPE_DEVICEHANDLE** flag.  This will ensure that when a device is going away, the handle can be released accordingly.
 
-Device interface arrivals and removals should be tracked so that the removal of the last device interface means the service can be stopped.  Once the last interface has been removed, stop your service (detailed information can be found on this [page](https://docs.microsoft.com/windows/desktop/Services/service-servicemain-function)). This can be accomplished by following these steps:
+Device interface arrivals and removals should be tracked so that the removal of the last device interface means the service can be stopped.  Once the last interface has been removed, stop your service (detailed information can be found on this [page](/windows/desktop/Services/service-servicemain-function)). This can be accomplished by following these steps:
 
 1. Post **SERVICE_STOP_PENDING** state to SCM to indicate the service is going down
 2. Unitialize/clean-up everything the service was using
@@ -76,4 +75,4 @@ This flow will ensure that the service starts on the arrival of a device interfa
 
 There is a sample on GitHub that walks through how a service can leverage this flow of events.  The sample can be found here: [Win32 Service Sample](https://github.com/microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc).
 
-Additionally, you can find useful documentation regarding **AddTrigger** on the [AddService](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) page.
+Additionally, you can find useful documentation regarding **AddTrigger** on the [AddService](./inf-addservice-directive.md) page.

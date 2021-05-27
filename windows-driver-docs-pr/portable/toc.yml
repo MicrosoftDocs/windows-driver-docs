@@ -80,8 +80,6 @@
           href: supporting-autoplay.md
       - name: "The MTP Setup Information (.inf) File"
         href: the-mtp-setup-information---inf--file.md
-      - name: "Verifying Structure and Syntax for Setup Information Files"
-        href: verifying-structure-and-syntax-for-setup-information-files.md
       - name: "The COM Component Files"
         href: the-com-component-files.md
       - name: "The Windows Driver Frameworks Files"

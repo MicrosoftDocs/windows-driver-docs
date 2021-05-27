@@ -1,7 +1,6 @@
 ---
 title: Driver-Defined WMI Data Items
 description: Driver-Defined WMI Data Items
-ms.assetid: 97b64571-95ff-4d61-9fa0-5690e9f29345
 keywords: ["data types WDK WMI", "embedded classes WDK WMI", "data items WDK WMI", "WMI WDK kernel , driver-defined data items", "driver-defined data items WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ A data item in a class definition of WMI data or event block can be one of the f
 
 When sending a data block to WMI, a driver must align the start of the block on an 8-byte boundary. All subsequent data items in the block must be aligned on the corresponding alignment for the data type. A **boolean** or **uint8** should be aligned on a 1-byte boundary. A **sint16**, **uint16**, or **string** item should be aligned on a 2-byte boundary, and so on. Arrays should be aligned based upon the base type of the array. An array of bytes should be aligned on a byte boundary, an array of uint64 should be aligned on an 8-byte boundary, and so on. An embedded class should be aligned based upon the natural alignment of the embedded class which is defined to be the largest element within the embedded class. For example, if an embedded class has a **uint64**, the class should be aligned on an 8-byte boundary. WMI data item alignment follows the same conventions as the **/Zp8** switch on the Microsoft C compiler.
 
-A driver writer does not necessarily have to define data items in a block other than the required items **InstanceName** and **Active**. For example, an empty event block can serve as notification that an event occurred, without additional data. Or a data block might simply enumerate instance names in response to an [**IRP\_MN\_QUERY\_ALL\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-all-data) request.
+A driver writer does not necessarily have to define data items in a block other than the required items **InstanceName** and **Active**. For example, an empty event block can serve as notification that an event occurred, without additional data. Or a data block might simply enumerate instance names in response to an [**IRP\_MN\_QUERY\_ALL\_DATA**](./irp-mn-query-all-data.md) request.
 
 The following table lists the MOF data types that can be used to define items in a WMI data or event block. For more information about MOF data types, see the Microsoft Windows SDK.
 
@@ -114,9 +113,4 @@ The following table lists the MOF data types that can be used to define items in
  
 
  
-
- 
-
-
-
 

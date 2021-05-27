@@ -1,7 +1,6 @@
 ---
 title: Using GUIDs in Drivers
 description: Using GUIDs in Drivers
-ms.assetid: b70a2f64-dd7b-4d76-a4cf-dcb60ce0585c
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "header files WDK GUIDs", "kernel-mode drivers WDK , GUIDs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Drivers and other system components use *globally unique identifiers* (GUIDs) to identify a variety of items. System components define GUIDs for items such as [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), PnP events, WMI events, and still image events. Driver writers can create GUIDs for items such as [device interface classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes), custom PnP events, and custom WMI events. Drivers and applications include header files that define the GUIDs that they use.
+Drivers and other system components use *globally unique identifiers* (GUIDs) to identify a variety of items. System components define GUIDs for items such as [device setup classes](../install/overview-of-device-setup-classes.md), PnP events, WMI events, and still image events. Driver writers can create GUIDs for items such as [device interface classes](../install/overview-of-device-interface-classes.md), custom PnP events, and custom WMI events. Drivers and applications include header files that define the GUIDs that they use.
 
 This section includes the following topics:
 
@@ -24,9 +23,4 @@ This section includes the following topics:
 For information about using GUIDs in user-mode applications, see Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL to indicate which operating channel a given Wi-Fi Direct port is operating on.
-ms.assetid: 170e5df7-3128-4942-869d-45206022dfaa
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_GROUP_OPERATING_CHANNEL Network Drivers Starting with Windows Vista
@@ -22,13 +21,12 @@ For a Wi-Fi Direct GO port, this must be indicated during [OID\_WDI\_TASK\_START
 
 | Type                                                                                         | Multiple TLV instances allowed | Optional | Description                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-number)                    |                                |          | The operating channel the given Wi-Fi Direct port is operating on. |
-| [**WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-indicate-reason) |                                |          | The reason for sending the indication.                             |
+| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](./wdi-tlv-p2p-channel-number.md)                    |                                |          | The operating channel the given Wi-Fi Direct port is operating on. |
+| [**WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON**](./wdi-tlv-p2p-channel-indicate-reason.md) |                                |          | The reason for sending the indication.                             |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -52,9 +50,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

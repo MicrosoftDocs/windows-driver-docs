@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_METHODS
 description: Clients use KSPROPERTY\_BDA\_NODE\_METHODS to retrieve a list of methods supported on a node.
-ms.assetid: 143456dc-1910-4db4-8584-9cd19d09e8ce
 keywords: ["KSPROPERTY_BDA_NODE_METHODS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_NODE\_METHODS to retrieve a list of methods support
 
  
 
-Remarks
--------
+## Remarks
 
 The list of methods supported by a node is a list of GUIDs.
 
 The network provider will use this property to query the capabilities of each node in the BDA template connection list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,16 +78,9 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeMethods**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodemethods)
+[**BdaPropertyNodeMethods**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodemethods)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
-
-
-
-
 

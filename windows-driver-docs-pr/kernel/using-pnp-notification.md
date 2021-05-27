@@ -1,7 +1,6 @@
 ---
 title: Using PnP Notification
 description: Using PnP Notification
-ms.assetid: cc6c9106-37b3-473c-bbd2-89701d698fdf
 keywords: ["notifications WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

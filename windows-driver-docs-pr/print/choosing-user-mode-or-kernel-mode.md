@@ -1,7 +1,6 @@
 ---
 title: Choosing User Mode or Kernel Mode
 description: Choosing User Mode or Kernel Mode
-ms.assetid: 1e63d01e-8cf2-488a-89e8-d4a3ff5cfe19
 keywords:
 - printer graphics DLL WDK , user-mode vs. kernel-mode
 - graphics DLL WDK printer , user-mode vs. kernel-mode
@@ -70,7 +69,7 @@ The following table shows allowed printer driver execution modes:
 
 ### Using the Graphics DDI in User Mode
 
-A user-mode printer graphics DLL is not limited to calling the [GDI Support Services](https://docs.microsoft.com/windows-hardware/drivers/display/gdi-support-services) and other Eng-prefixed graphics DDI callback functions. However, there are some rules that must be followed:
+A user-mode printer graphics DLL is not limited to calling the [GDI Support Services](../display/gdi-support-services.md) and other Eng-prefixed graphics DDI callback functions. However, there are some rules that must be followed:
 
 -   Like kernel-mode graphics DLLs, user-mode graphics DLLs must call the graphics DDIs that create or modify a drawing surface. These callback functions are the GDI Support Services, and calling Win32 equivalents of these drawing functions is not allowed.
 
@@ -78,19 +77,19 @@ A user-mode printer graphics DLL is not limited to calling the [GDI Support Serv
 
 -   The following list of Eng-prefixed graphics DDI functions cannot be called by user-mode DLLs:
 
-    [**EngCreatePath**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engcreatepath)
+    [**EngCreatePath**](/windows/win32/api/winddi/nf-winddi-engcreatepath)
 
-    [**EngGetType1FontList**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-enggettype1fontlist)
+    [**EngGetType1FontList**](/windows/win32/api/winddi/nf-winddi-enggettype1fontlist)
 
-    [**EngMapModule**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engmapmodule)
+    [**EngMapModule**](/windows/win32/api/winddi/nf-winddi-engmapmodule)
 
-    [**EngDebugBreak**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engdebugbreak)
+    [**EngDebugBreak**](/windows/win32/api/winddi/nf-winddi-engdebugbreak)
 
--   User-mode printer graphics DLLs can continue to use graphics DDI functions for [GDI floating-point services](https://docs.microsoft.com/windows-hardware/drivers/display/gdi-floating-point-services).
+-   User-mode printer graphics DLLs can continue to use graphics DDI functions for [GDI floating-point services](../display/gdi-floating-point-services.md).
 
 ### Converting an Existing Printer Graphics DLL to User Mode
 
-If you have previously developed a printer graphics DLL that executes in kernel mode, you can convert the DLL to user-mode execution. To convert, simply add a [**DrvQueryDriverInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydriverinfo) function to the DLL, and then follow the rules for [building a printer graphics DLL](building-a-printer-graphics-dll.md).
+If you have previously developed a printer graphics DLL that executes in kernel mode, you can convert the DLL to user-mode execution. To convert, simply add a [**DrvQueryDriverInfo**](/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo) function to the DLL, and then follow the rules for [building a printer graphics DLL](building-a-printer-graphics-dll.md).
 
 ### Creating a New Printer Graphics DLL in User Mode
 
@@ -246,14 +245,9 @@ To develop a new printer graphics DLL that executes in user mode, you can contin
 
 <!-- -->
 
--   For functions that create or modify a drawing service, new drivers must continue to call [GDI support services](https://docs.microsoft.com/windows-hardware/drivers/display/gdi-support-services) and not their Win32 equivalents.
+-   For functions that create or modify a drawing service, new drivers must continue to call [GDI support services](../display/gdi-support-services.md) and not their Win32 equivalents.
 
--   Instead of using graphics DDI functions for [GDI Floating-Point Services](https://docs.microsoft.com/windows-hardware/drivers/display/gdi-floating-point-services), you can use the FLOAT data type.
-
- 
+-   Instead of using graphics DDI functions for [GDI Floating-Point Services](../display/gdi-floating-point-services.md), you can use the FLOAT data type.
 
  
-
-
-
 

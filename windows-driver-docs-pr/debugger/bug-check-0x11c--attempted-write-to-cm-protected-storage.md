@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x11C ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE
 description: The ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE bug check has a value of 0x0000011C that indicates that a write was attempted to the protected storage of the configuration manager.
-ms.assetid: 5a322457-51d7-4832-8eeb-1fdc99f313e8
 keywords: ["Bug Check 0x11C ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE", "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE bug check has a value of 0x0000
 
  
 
-Remarks
--------
+## Remarks
 
 When it is possible, the name of the driver that is attempting the write operation is printed as a Unicode string on the bug check screen and then saved in KiBugCheckDriver.
 

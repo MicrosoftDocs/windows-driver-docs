@@ -1,7 +1,6 @@
 ---
 title: .tss (Display Task State Segment)
 description: The .tss command displays a formatted view of the saved Task State Segment (TSS) information for the current processor.
-ms.assetid: 3f73b7cf-56a8-434a-bc4d-2e8ab3af9f94
 keywords: ["Display Task State Segment (.tss) command", "task state segment (TSS)", "TSS (task state segment)", ".tss (Display Task State Segment) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Address of the TSS.
 
  
 
-Remarks
--------
+## Remarks
 
 The address of the TSS can be found by examining the output of the [**!pcr**](-pcr.md) extension.
 

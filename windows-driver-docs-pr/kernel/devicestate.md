@@ -1,7 +1,6 @@
 ---
 title: DeviceState
 description: DeviceState
-ms.assetid: 4cf650ea-cccf-411c-809f-0a01e2ceb067
 keywords: ["DeviceState"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The **DeviceState** member of [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) is an array of [**DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) values that are indexed by [**SYSTEM\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) values ranging from **PowerSystemWorking** to **PowerSystemShutdown**. Each element of the array contains the maximum (highest-powered) device power state that the device can support for the system power state denoted by the index, or **PowerDeviceUnspecified** if the system power state is not supported.
+The **DeviceState** member of [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) is an array of [**DEVICE\_POWER\_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) values that are indexed by [**SYSTEM\_POWER\_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) values ranging from **PowerSystemWorking** to **PowerSystemShutdown**. Each element of the array contains the maximum (highest-powered) device power state that the device can support for the system power state denoted by the index, or **PowerDeviceUnspecified** if the system power state is not supported.
 
 For example, on a system that supports only S0, S4, and S5 [system power states](system-power-states.md), the **DeviceState** array for a device that supports only the D0 and D3 states contains the values shown in the following table.
 
@@ -108,9 +107,4 @@ The bus driver or ACPI filter sets these values based on the capabilities of the
 As a general rule, higher-level drivers should not change these values. However, in the rare circumstances in which such a change is necessary, a driver can specify a lower (less-powered) state than the bus driver or ACPI filter originally returned. For example, assume that **DeviceState**\[**PowerSystemSleeping1**\] maps to **PowerDeviceD2**, as in the table above. A driver can change this value to **PowerDeviceD3**, but not to **PowerDeviceD1** or **PowerDeviceD0**.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: ScannerInfo element
 description: The optional ScannerInfo element contains any administratively assigned descriptive information about the scanner.
-ms.assetid: 41d31209-8269-42ef-99f2-83818eb06f6b
 keywords: ["ScannerInfo element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ScannerInfo** element contains any administratively assigned descriptive information about the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerInfo xml:lang="..."
@@ -28,8 +26,7 @@ Usage
 </wscn:ScannerInfo xml:lang="...">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -57,8 +54,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 A character string that provides descriptive information about the scanner.
 
@@ -86,13 +82,11 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The configuration of the **ScannerInfo** element's value is implementation-specific; for example, you can configure this value through the scanner's local console or the device's web server. A scan device can return multiple versions of this element to enable support for multiple localized languages by using the **xml:lang** attribute.
 
-Examples
---------
+## Examples
 
 The following code example shows how you can use the ScannerInfo element.
 

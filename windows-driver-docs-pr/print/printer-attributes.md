@@ -1,7 +1,6 @@
 ---
 title: Printer Attributes
 description: Printer Attributes
-ms.assetid: 46254c16-ecd3-47a4-ab2e-5a6687cde1ee
 keywords:
 - Unidrv, printer attributes
 - GPD file entries WDK Unidrv , printer attributes

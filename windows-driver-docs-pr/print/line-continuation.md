@@ -1,7 +1,6 @@
 ---
 title: Line Continuation
 description: Line Continuation
-ms.assetid: ee4dbb3d-ba9d-45bb-82dd-ecee4682ae63
 keywords:
 - GPD file entries WDK Unidrv , line continuations
 - line continuations WDK GPD files

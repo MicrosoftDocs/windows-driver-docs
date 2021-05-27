@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_CREATEALLOCATION2 structure
 description: The DXGKARG\_CREATEALLOCATION2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 4796f378-78e0-4119-9ab4-d25d61fca7de
 keywords: ["_DXGKARG_CREATEALLOCATION2 structure Display Devices", "DXGKARG_CREATEALLOCATION2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_CREATEALLOCATION2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_CREATEALLOCATION2 {
@@ -34,8 +32,7 @@ typedef struct _DXGKARG_CREATEALLOCATION2 {
 } DXGKARG_CREATEALLOCATION2;
 ```
 
-Members
--------
+## Members
 
 **pPrivateDriverData**
 Reserved for system use.
@@ -55,8 +52,7 @@ Reserved for system use.
 **Flags**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

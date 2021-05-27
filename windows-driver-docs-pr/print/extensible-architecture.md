@@ -1,7 +1,6 @@
 ---
 title: Extensible Architecture
 description: Extensible Architecture
-ms.assetid: 48a9c3ea-282c-4d3c-83ca-dc7051fe5002
 keywords:
 - direct consumption WDK XPSDrv
 - scalable consumption WDK XPSDrv

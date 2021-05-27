@@ -1,7 +1,6 @@
 ---
 title: Registry Settings for Serenum
 description: Registry Settings for Serenum
-ms.assetid: c8a8f1b7-ea58-49ed-98e0-40297ec9a769
 keywords:
 - Serenum driver WDK , registry settings
 - registry WDK serial devices
@@ -18,15 +17,15 @@ This topic describes the entry values that Serenum uses for an RS-232 port in Mi
 The following registry entry values are under the Plug and Play hardware device registry key for an RS-232 port:
 
 <a href="" id="portname--reg-sz-"></a>**PortName** (REG\_SZ)  
-Specifies the name of the port. Serenum reads this value and returns the port name in response to an [**IOCTL\_SERENUM\_GET\_PORT\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serenum_get_port_name) request.
+Specifies the name of the port. Serenum reads this value and returns the port name in response to an [**IOCTL\_SERENUM\_GET\_PORT\_NAME**](/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serenum_get_port_name) request.
 
 <a href="" id="identifier--reg-sz-"></a>**Identifier** (REG\_SZ)  
 Specifies the name of the port. Serenum reads this value. Support for the **Identifier** entry value is provided only for compatibility with some legacy PCMCIA devices. The use of the **Identifier** entry value is obsolete and should not be implemented with drivers in Windows 2000 and later. Serenum returns the port name in response to an IOCTL\_SERENUM\_GET\_PORT\_NAME request.
 
 <a href="" id="skipenumerations--reg-dword-"></a>**SkipEnumerations** (REG\_DWORD)  
-In Windows XP and later, this entry value controls when Serenum enumerates a port in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) request for **BusRelations**. 
+In Windows XP and later, this entry value controls when Serenum enumerates a port in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](../kernel/irp-mn-query-device-relations.md) request for **BusRelations**. 
 
-Each time the system builds a serial port device stack, Serenum sets the *enumeration mode* that it uses to enumerate a port. During the initialization of a port's device stack, Serenum's [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine reads the port's **SkipEnumerations** entry value and sets the enumeration mode as described in the following table.
+Each time the system builds a serial port device stack, Serenum sets the *enumeration mode* that it uses to enumerate a port. During the initialization of a port's device stack, Serenum's [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine reads the port's **SkipEnumerations** entry value and sets the enumeration mode as described in the following table.
 
 <table>
 <colgroup>

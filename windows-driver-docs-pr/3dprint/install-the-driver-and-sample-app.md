@@ -1,7 +1,6 @@
 ---
 title: Install the driver and sample app
 description: This section provides information on installing the driver and the WSD sample app.
-ms.assetid: BF89F0D0-2ED3-4900-996F-BB7B9C8C9B80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -121,12 +120,7 @@ By default, Windows blocks port 80 on a machine, so you will need to update Wind
 
 Ad-hoc discovery can be performed by implementing a UDP server that listens to discovery events on port 3702.
 
-For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](https://docs.microsoft.com/windows/desktop/WsdApi/discovery-and-metadata-exchange-message-patterns).
+For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](/windows/desktop/WsdApi/discovery-and-metadata-exchange-message-patterns).
 
  
-
- 
-
-
-
 

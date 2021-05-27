@@ -1,7 +1,6 @@
 ---
 title: C28158
 description: Warning C28158 No IRQL was saved.
-ms.assetid: f1ae0de8-e2c8-4aa5-b2db-8aecff68c872
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

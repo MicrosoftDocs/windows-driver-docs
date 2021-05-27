@@ -1,7 +1,6 @@
 ---
 title: FSCTL_MARK_AS_SYSTEM_HIVE control code
 description: The FSCTL\_MARK\_AS\_SYSTEM\_HIVE control code informs the file system that the specified file contains the registry's system hive.
-ms.assetid: de3cb340-2485-4bc5-bc2a-3c34cee2d6b3
 keywords: ["FSCTL_MARK_AS_SYSTEM_HIVE control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -22,15 +21,15 @@ The **FSCTL\_MARK\_AS\_SYSTEM\_HIVE** control code informs the file system that 
 
 Only kernel-level components can use this filesystem control code.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. File object pointer for the user file. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. File object pointer for the user file. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. Handle for the user file. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. Handle for the user file. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode"></a>*FsControlCode*  
 The control code for the operation. Use **FSCTL\_MARK\_AS\_SYSTEM\_HIVE** for this operation.
@@ -47,13 +46,11 @@ Not used. Assign a value of **NULL** to this parameter.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used.
 
-Status block
-------------
+## Status block
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function returns the appropriate NTSTATUS error code.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function returns the appropriate NTSTATUS error code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -69,10 +66,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

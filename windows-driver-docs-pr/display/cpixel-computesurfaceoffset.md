@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeSurfaceOffset method
 description: The CPixel ComputeSurfaceOffset method determines the subrectangular offset of a surface.
-ms.assetid: 3589ea80-94f8-418b-895d-c52310536e45
 keywords: ["ComputeSurfaceOffset method Display Devices", "ComputeSurfaceOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeSurfaceOffset method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeSurfaceOffset** method determines the subrectangular offset of a surface.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 static void ComputeSurfaceOffset(
@@ -32,8 +30,7 @@ static void ComputeSurfaceOffset(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pDescTopLevel*
 Pointer to a D3DSURFACE\_DESC structure that describes the surface.
@@ -47,20 +44,17 @@ Pointer to a RECT structure that describes the subrectangular region or **NULL**
 *pLockedRectData*
 Pointer to a D3DLOCKED\_RECT structure that receives the pointer or offset to the locked rectangular region.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 Given the surface description, a pointer to the beginning of the surface, and the subrectangle, **CPixel::ComputeSurfaceOffset** returns a pointer or offset to the locked rectangular region in the **pBits** member of the D3DLOCKED\_RECT structure at **pLockedRectData**.
 
 For more information about D3DLOCKED\_RECT, D3DSURFACE\_DESC, and RECT, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

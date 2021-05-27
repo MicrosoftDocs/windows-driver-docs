@@ -1,7 +1,6 @@
 ---
 title: NX and Execute Pool Types
 description: To indicate whether memory allocated from a nonpaged pool should be no-execute (NX), you can use two new pool types starting with Windows 8.
-ms.assetid: 954AC53F-270D-4149-AE5D-6BEA7EFAA761
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -9,7 +8,7 @@ ms.date: 10/17/2018
 # NX and Execute Pool Types
 
 
-To indicate whether memory allocated from a nonpaged pool should be no-execute (NX), you can use two new pool types starting with Windows 8. These pool types are designated by the following [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) enumeration values:
+To indicate whether memory allocated from a nonpaged pool should be no-execute (NX), you can use two new pool types starting with Windows 8. These pool types are designated by the following [**POOL\_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) enumeration values:
 
 <a href="" id="nonpagedpoolnx"></a>**NonPagedPoolNx**  
 NX nonpaged pool. Instructions cannot be executed in memory allocated from this pool.
@@ -24,9 +23,4 @@ For existing drivers that are built for Windows 7 and earlier versions of Windo
 If a driver written for Windows 7 or an earlier version of Windows is built for Windows 8 or a later version of Windows, instances of the **NonPagedPool** pool type should be replaced by either **NonPagedPoolNx** or **NonPagedPoolExecute**. The driver developer either can explicitly perform this replacement, or can implicitly perform the replacement by using one of the opt-in mechanisms that is provided to aid developers in porting their drivers to Windows 8. For more information, see [NX Pool Opt-In Mechanisms](nx-pool-opt-in-mechanisms.md).
 
  
-
- 
-
-
-
 

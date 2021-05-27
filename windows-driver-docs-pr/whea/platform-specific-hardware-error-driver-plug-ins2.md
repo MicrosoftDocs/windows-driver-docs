@@ -1,7 +1,6 @@
 ---
 title: Platform-Specific Hardware Error Driver Plug-Ins
 description: Platform-Specific Hardware Error Driver Plug-Ins
-ms.assetid: 473d9206-9db2-4bc7-bc76-6be2fb77b20b
 keywords:
 - Windows Hardware Error Architecture WDK , platform-specific hardware error driver plug-ins
 - hardware errors WDK WHEA , platform-specific hardware error driver plug-ins

@@ -1,7 +1,6 @@
 ---
 title: TList Commands
 description: The syntax of the TList command is as follows
-ms.assetid: d1527ffe-ea80-4e02-9a32-b6eccddc1c6a
 keywords: TList Commands, Windows debugging
 ms.date: 05/23/2017
 topic_type:

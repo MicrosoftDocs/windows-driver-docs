@@ -1,7 +1,6 @@
 ---
 title: WCIFS\_REDIRECTION\_ECP\_CONTEXT structure
 description: Describes the redirection state of a file for a specific create operation.
-ms.assetid: 6101490D-54B9-4A34-ADB5-9CC2B855691D
 keywords: ["WCIFS_REDIRECTION_ECP_CONTEXT structure Installable File System Drivers", "PWCIFS_REDIRECTION_ECP_CONTEXT structure pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Describes the redirection state of a file for a specific create operation.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _WCIFS_REDIRECTION_ECP_CONTEXT {
@@ -32,8 +30,7 @@ typedef struct _WCIFS_REDIRECTION_ECP_CONTEXT {
 } WCIFS_REDIRECTION_ECP_CONTEXT, *PWCIFS_REDIRECTION_ECP_CONTEXT;
 ```
 
-Members
--------
+## Members
 
 **Size**  
 The size of the structure, `sizeof(WCIFS_REDIRECTION_ECP_CONTEXT)`.
@@ -88,8 +85,7 @@ The identifier of the backing file.
 **VolumeGuid**  
 The GUID-based identifier of the disk volume where the backing file resides.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

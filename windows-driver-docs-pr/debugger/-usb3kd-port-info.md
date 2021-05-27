@@ -1,7 +1,6 @@
 ---
 title: usb3kd.port_info
 description: The usb3kd.port_info command displays information about a USB port in the USB 3.0 tree.
-ms.assetid: 78233FE5-981E-42C4-A100-198CAAA840A0
 keywords: ["usb3kd.port_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of a \_PORT\_CONTEXT structure.
 
 Usb3kd.dll
 
-Examples
---------
+## Examples
 
 To obtain the address of the port context, look at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of a port context is 0xfffffa8005abe0c0.
 
@@ -85,14 +83,7 @@ Port Event History:
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

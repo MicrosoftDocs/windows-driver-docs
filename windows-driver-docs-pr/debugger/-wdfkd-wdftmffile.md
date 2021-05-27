@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdftmffile
 description: The wdfkd.wdftmffile extension sets the trace message format (.tmf) file to use when the debugger is formatting KMDF error logs for the wdfkd.wdflogdump or wdfkd.wdfcrashdump.
-ms.assetid: 7099440c-bfea-472f-b9ee-943026afdb81
 keywords: ["wdfkd.wdftmffile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,8 +39,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If your driver uses a KMDF version earlier than 1.11, you must use the **!wdfkd.wdftmffile** extension before you can use the [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md) extensions.
 
@@ -55,13 +53,7 @@ kd> !wdftmffile tools\tracing\<platform>\wdf1005.tmf
 
 Note that the path might be different for the version of the Windows Driver Kit (WDK) that you are using. Also note that the .tmf file's name represents the version of KMDF that you are using. For example, Wdf1005.tmf is the .tmf file for KMDF version 1.5.
 
-For information about how to view the KMDF log during a debugging session, see [Using the Framework's Event Logger](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-s-event-logger).
+For information about how to view the KMDF log during a debugging session, see [Using the Framework's Event Logger](../wdf/using-the-framework-s-event-logger.md).
 
  
-
- 
-
-
-
-
 

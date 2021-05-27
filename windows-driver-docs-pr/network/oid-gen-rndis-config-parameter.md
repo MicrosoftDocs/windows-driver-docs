@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RNDIS_CONFIG_PARAMETER
 description: As a set, the OID_GEN_RNDIS_CONFIG_PARAMETER is used to set device-specific parameters.
-ms.assetid: 79e74e8b-7811-46a5-8ede-f6cca92967b0
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RNDIS_CONFIG_PARAMETER Network Drivers Starting with Windows Vista
@@ -30,13 +29,11 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
-The OID\_GEN\_RNDIS\_CONFIG\_PARAMETER is used with RNDIS devices. The host uses it to set device-specific parameters. It is not used by miniport drivers. For more information about this OID, see [Setting Device-Specific Parameters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-device-specific-parameters).
+The OID\_GEN\_RNDIS\_CONFIG\_PARAMETER is used with RNDIS devices. The host uses it to set device-specific parameters. It is not used by miniport drivers. For more information about this OID, see [Setting Device-Specific Parameters](./setting-device-specific-parameters.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -52,9 +49,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

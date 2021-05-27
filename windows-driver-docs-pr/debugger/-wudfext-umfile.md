@@ -1,7 +1,6 @@
 ---
 title: wudfext.umfile
 description: The wudfext.umfile extension displays information about a UMDF intra-stack file.
-ms.assetid: cd796f73-702e-488d-929d-ac77801c74f4
 keywords: ["wudfext.umfile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

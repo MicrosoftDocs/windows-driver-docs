@@ -1,7 +1,6 @@
 ---
 title: ks.automation
 description: The ks.automation extension displays any automation items associated with the given object.
-ms.assetid: a8fd790f-2793-4e6e-a500-f61646be2c89
 keywords: ["ks.automation Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies a pointer to the object for which to display automation items. (Automa
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command with a filter address obtained from [**!ks.enumdevobj**](-ks-enumdevobj.md).
 

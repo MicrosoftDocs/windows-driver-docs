@@ -1,7 +1,6 @@
 ---
 title: WIA Item Properties for Flatbed Scanners
 description: WIA Item Properties for Flatbed Scanners
-ms.assetid: 464549e5-8cdf-4e85-91a9-fa9a12f2a53b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes the required and optional WIA item properties for a scanner flatbed item and child items. For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties).
+This section describes the required and optional WIA item properties for a scanner flatbed item and child items. For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](./wia-properties.md).
 
 This section includes:
 
@@ -27,9 +26,4 @@ This section includes:
 [Flatbed Child Item Properties](flatbed-child-item-properties.md)
 
  
-
- 
-
-
-
 

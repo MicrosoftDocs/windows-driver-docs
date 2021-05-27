@@ -1,7 +1,6 @@
 ---
 title: Interpreting Bug Check 0xCB
 description: Interpreting Bug Check 0xCB
-ms.assetid: 82951e2b-cbb2-45d2-a6b8-4fddece035ce
 keywords: ["kernel streaming debugging, video stream stall, bug check 0xcb"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

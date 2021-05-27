@@ -1,7 +1,6 @@
 ---
 title: C28152
 description: Warning C28152 The return from an AddDevice-like function unexpectedly DO_DEVICE_INITIALIZING.
-ms.assetid: df2b68dc-b22b-4aaa-b1ba-b34bfdd9b886
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
@@ -24,13 +23,7 @@ The **AddDevice** routine must contain code similar to the following to clear th
 FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 ```
 
-For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/adddevice-routines-in-function-or-filter-drivers)
+For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](../kernel/adddevice-routines-in-function-or-filter-drivers.md)
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
-title: Processing I/O Requests
+title: Processing I/O Requests (UMDF 1)
 description: Processing I/O Requests
-ms.assetid: d12e879e-3aeb-4e88-82de-47e06e7ac482
 keywords:
 - I/O requests WDK UMDF
 - request processing WDK UMDF
@@ -13,7 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Processing I/O Requests
+# Processing I/O Requests (UMDF 1)
 
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]

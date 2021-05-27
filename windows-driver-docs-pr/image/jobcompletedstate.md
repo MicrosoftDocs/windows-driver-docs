@@ -1,7 +1,6 @@
 ---
 title: JobCompletedState element
 description: The required JobCompletedState element specifies a job's final job state.
-ms.assetid: 41dc029b-2315-465a-8490-1f4e50db0188
 keywords: ["JobCompletedState element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobCompletedState** element specifies a job's final job state.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobCompletedState>
@@ -27,13 +25,11 @@ Usage
 </wscn:JobCompletedState>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values from the [**JobState**](jobstate.md) element:
 
@@ -66,8 +62,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service sends a **JobCompletedState** element to the client within the [**JobEndStateEvent**](jobendstateevent.md) event element.
 

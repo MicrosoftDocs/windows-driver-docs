@@ -1,7 +1,6 @@
 ---
 title: Flushing Cached Data during DMA Operations
 description: Flushing Cached Data during DMA Operations
-ms.assetid: 1b984b47-82cc-46b9-acad-73c5ed63e246
 keywords: ["DMA transfers WDK kernel , data integrity", "KeFlushIoBuffers", "FlushAdapterBuffers", "flushing cached data"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-In some platforms, the processor and system DMA controller (or bus-master DMA adapters) exhibit cache coherency anomalies. The following guidelines enable drivers that use version 1 or 2 of the DMA operations interface (see [**DMA\_OPERATIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations)) to maintain coherent cache states across all supported processor architectures, including architectures that do not contain hardware to automatically enforce cache coherency.
+In some platforms, the processor and system DMA controller (or bus-master DMA adapters) exhibit cache coherency anomalies. The following guidelines enable drivers that use version 1 or 2 of the DMA operations interface (see [**DMA\_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations)) to maintain coherent cache states across all supported processor architectures, including architectures that do not contain hardware to automatically enforce cache coherency.
 
 **Note**  The guidelines in this topic apply only to drivers that use versions 1 and 2 of the DMA operations interface. Drivers that use version 3 of this interface must follow a different set of guidelines. For more information, see [Version 3 of the DMA Operations Interface](version-3-of-the-dma-operations-interface.md).
 
@@ -21,11 +20,11 @@ In some platforms, the processor and system DMA controller (or bus-master DMA ad
 
 **To maintain data integrity during DMA operations, lowest-level drivers must follow these guidelines**
 
-1.  Call [**KeFlushIoBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keflushiobuffers) before beginning a transfer operation to maintain consistency between data that might be cached in the processor and the data in memory.
+1.  Call [**KeFlushIoBuffers**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keflushiobuffers) before beginning a transfer operation to maintain consistency between data that might be cached in the processor and the data in memory.
 
-    If a driver calls [**AllocateCommonBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) with the *CacheEnabled* parameter set to **TRUE**, the driver must call **KeFlushIoBuffers** before beginning a transfer operation to/from its buffer.
+    If a driver calls [**AllocateCommonBuffer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) with the *CacheEnabled* parameter set to **TRUE**, the driver must call **KeFlushIoBuffers** before beginning a transfer operation to/from its buffer.
 
-2.  Call [**FlushAdapterBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pflush_adapter_buffers) at the end of each device transfer operation to be sure any remainder bytes in the system DMA controller's buffers have been written into memory or to the subordinate device.
+2.  Call [**FlushAdapterBuffers**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pflush_adapter_buffers) at the end of each device transfer operation to be sure any remainder bytes in the system DMA controller's buffers have been written into memory or to the subordinate device.
 
     Or, call **FlushAdapterBuffers** at the end of each transfer operation for a given IRP to be sure all data has been read into system memory or written out to a bus-master DMA device.
 
@@ -46,9 +45,4 @@ The driver of a bus-master DMA device also should call **FlushAdapterBuffers** a
 **FlushAdapterBuffers** returns a Boolean, value that indicates whether the requested flush operation was successful. A driver can use this value to determine how to set the I/O status block when completing an IRP for a DMA read or write operation.
 
  
-
- 
-
-
-
 

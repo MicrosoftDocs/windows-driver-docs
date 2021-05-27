@@ -1,7 +1,6 @@
 ---
 title: Raising sensor events
 description: Raising sensor events
-ms.assetid: a6e428f8-1613-4e8d-813d-5a54824dab82
 keywords:
 - sensor events
 - event handler
@@ -55,9 +54,9 @@ static const DWORD g_dwDefaultInterval = 1000; // one second
 
 ### Lifetime Management
 
-The callback class, named CSensorDdi, which implements [ISensorDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver), creates an instance of the CSampleEvents event class when the first client subscribes to events. The callback class destroys the CSampleEvents instance when clients are no longer subscribed to events.
+The callback class, named CSensorDdi, which implements [ISensorDriver](/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver), creates an instance of the CSampleEvents event class when the first client subscribes to events. The callback class destroys the CSampleEvents instance when clients are no longer subscribed to events.
 
-CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the same methods that the class extension uses, such as [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields).
+CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the same methods that the class extension uses, such as [**ISensorDriver::OnGetDataFields**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields).
 
 The following code example contains the method implementations for the CSampleEvents event class.
 
@@ -260,7 +259,4 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

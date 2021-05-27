@@ -1,7 +1,6 @@
 ---
 title: Add Hardware and Model IDs in the Device Metadata Authoring Wizard
 description: Add Hardware and Model IDs in the Device Metadata Authoring Wizard
-ms.assetid: 1BF563AE-B37B-4105-BA76-2D13F88B2BBD
 keywords:
 - Add Hardware and Model IDs in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
@@ -35,13 +34,7 @@ To associate the Hardware IDs and Model IDs for your device metadata package, cl
 3.  In the box that appears, enter the GUID value for the Model ID.
 4.  Click **OK**.
 
-For detailed information about the Hardware ID for each device style, see the [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
+For detailed information about the Hardware ID for each device style, see the [Overview of Device Metadata Packages](../install/overview-of-device-metadata-packages.md).
 
  
-
- 
-
-
-
-
 

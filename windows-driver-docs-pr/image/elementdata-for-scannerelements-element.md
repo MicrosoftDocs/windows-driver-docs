@@ -1,7 +1,6 @@
 ---
 title: ElementData for ScannerElements element
 description: The required ElementData element contains the data that is returned for a scanner-related schema request.
-ms.assetid: 852a7f8a-cd87-467b-8793-8a7d7943f2a9
 keywords: ["ElementData for ScannerElements element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ElementData** element contains the data that is returned for a scanner-related schema request.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ElementData Name="" Valid=""
@@ -29,8 +27,7 @@ Usage
 </wscn:ElementData Name="" Valid="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -112,8 +109,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client calls [**GetScannerElementsRequest**](getscannerelementsrequest.md) to determine the values of scanner-related elements. The WSD Scan Service returns this information in the **ElementData** element through the [**GetScannerElementsResponse**](getscannerelementsresponse.md) operation.
 

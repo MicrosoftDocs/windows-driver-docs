@@ -1,7 +1,6 @@
 ---
 title: Installing a Non-PnP Driver
 description: Installing a Non-PnP Driver
-ms.assetid: 99676d85-feb2-482c-a91b-cfc48be5904c
 keywords:
 - Kernel-Mode Driver Framework WDK , installing drivers
 - framework-based drivers WDK KMDF , installing
@@ -29,7 +28,4 @@ PFN_WDFPREDEVICEREMOVE     pfnWdfPreDeviceRemove;
 PFN_WDFPOSTDEVICEREMOVE   pfnWdfPostDeviceRemove;
 ```
 
-For a non-PnP KMDF driver, simply call the SCM API to create the service. For more info, see [Installing a Service](https://docs.microsoft.com/windows/win32/services/installing-a-service).
-
-
-
+For a non-PnP KMDF driver, simply call the SCM API to create the service. For more info, see [Installing a Service](/windows/win32/services/installing-a-service).

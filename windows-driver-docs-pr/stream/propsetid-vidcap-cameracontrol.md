@@ -1,23 +1,18 @@
 ---
 title: PROPSETID\_VIDCAP\_CAMERACONTROL
 description: PROPSETID\_VIDCAP\_CAMERACONTROL
-ms.assetid: 8899a474-fa6f-4d5c-bd68-2433428bb5c5
 keywords: ["KSPROPERTY_VIDCAP_CAMERACONTROL"]
-ms.date: 11/28/2017
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
 
 # PROPSETID\_VIDCAP\_CAMERACONTROL
 
-
-## <span id="ddk_propsetid_vidcap_cameracontrol_ks"></span><span id="DDK_PROPSETID_VIDCAP_CAMERACONTROL_KS"></span>
-
-
 The PROPSETID\_VIDCAP\_CAMERACONTROL property set controls camera device settings. The controls it provides are a subset of the ITU T.RDC standard.
 
 The KSPROPERTY\_VIDCAP\_CAMERACONTROL enumeration in Ksmedia.h specifies the properties of this set.
 
-Support for this property set is optional and should be implemented only by minidrivers of devices that offer camera control settings. For more information, see the [ITU](https://go.microsoft.com/fwlink/p/?linkid=8741) website.
+Support for this property set is optional and should be implemented only by minidrivers of devices that offer camera control settings. For more information, see the [ITU](https://www.itu.int/) website.
 
 Prior to USB video class, this enumeration contained the following properties:
 
@@ -35,7 +30,7 @@ Prior to USB video class, this enumeration contained the following properties:
 
 [**KSPROPERTY\_CAMERACONTROL\_TILT**](ksproperty-cameracontrol-tilt.md)
 
-With the introduction of the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver), the following properties were added to the KSPROPERTY\_VIDCAP\_CAMERACONTROL enumeration. These properties are supported in Windows Vista and later versions of Windows:
+With the introduction of the [USB Video Class Driver](./usb-video-class-driver.md), the following properties were added to the KSPROPERTY\_VIDCAP\_CAMERACONTROL enumeration.
 
 [**KSPROPERTY\_CAMERACONTROL\_SCANMODE**](ksproperty-cameracontrol-scanmode.md)
 
@@ -65,24 +60,14 @@ With the introduction of the [USB Video Class Driver](https://docs.microsoft.com
 
 The DirectShow **IAMCameraControl** interface (see the Microsoft DirectShow documentation in the Windows Software Development Kit (SDK)) provides access to the properties of this set.
 
-## <span id="Windows_8_extended_camera_control_properties"></span><span id="windows_8_extended_camera_control_properties"></span><span id="WINDOWS_8_EXTENDED_CAMERA_CONTROL_PROPERTIES"></span>Windows 8 extended camera control properties
-
+## Windows 8 extended camera control properties
 
 Starting with Windows 8, these additional properties are supported for user-mode clients to get or set a camera's control settings:
 
 [**KSPROPERTY\_CAMERACONTROL\_FLASH\_PROPERTY**](ksproperty-cameracontrol-flash-property.md)
 
-[**KSPROPERTY\_CAMERACONTROL\_IMAGE\_PIN\_CAPABILITY\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s)
+[**KSPROPERTY\_CAMERACONTROL\_IMAGE\_PIN\_CAPABILITY\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s)
 
 [**KSPROPERTY\_CAMERACONTROL\_REGION\_OF\_INTEREST\_PROPERTY**](ksproperty-cameracontrol-region-of-interest-property.md)
 
 [**KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROPERTY**](ksproperty-cameracontrol-video-stabilization-mode-property.md)
-
- 
-
- 
-
-
-
-
-

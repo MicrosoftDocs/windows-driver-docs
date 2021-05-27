@@ -1,7 +1,6 @@
 ---
 title: .fnret (Display Function Return Value)
 description: The .fnret command displays information about a function's return value.
-ms.assetid: b7ce3047-5b0a-43ba-877f-76235139d66c
 keywords: [".fnret (Display Function Return Value) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ Specifies the return value to display. If you include *Value*, **.fnret** casts 
 
  
 
-Remarks
--------
+## Remarks
 
 If you include the *Value* parameter, the **.fnret** command only casts this value to the proper type and displays the results.
 

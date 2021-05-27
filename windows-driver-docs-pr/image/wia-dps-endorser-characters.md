@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_ENDORSER\_CHARACTERS
 description: The WIA\_DPS\_ENDORSER\_CHARACTERS property contains all of the valid characters that an application can use to create valid endorser strings.
-ms.assetid: 7bf0676b-df85-486b-a448-ab7275ac846d
 keywords: ["WIA_DPS_ENDORSER_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref
@@ -33,13 +32,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An "endorser" is a printer that is installed on a scanner that imprints a text message on every page that is scanned. The WIA minidriver should validate the setting of the [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md) property against the valid character set in the WIA\_DPS\_ENDORSER\_CHARACTERS property. The minidriver creates and maintains this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: FormatValue element
 description: The required FormatValue element specifies a single supported file format and compression type.
-ms.assetid: 0331f44d-6343-45f7-85a7-303733f3ee75
 keywords: ["FormatValue element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FormatValue** element specifies a single supported file format and compression type.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FormatValue>
@@ -27,13 +25,11 @@ Usage
 </wscn:FormatValue>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
@@ -146,8 +142,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 You can both extend and subset the allowed values for this element.
 

@@ -1,7 +1,6 @@
 ---
 title: How do you define custom data types
 description: How do you define custom data types
-ms.assetid: 849f83ae-5fe7-447b-9d02-3d980757bf7d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED is an extended property control that allows more global ISO control with more granularity.
-ms.assetid: A9327DB8-422B-410C-8766-D70811BA5C73
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ The new KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL flag is defined in ksmedia\_phone.h 
 #define KSCAMERA_EXTENDEDPROP_ISO_MANUAL          0x0080000000000000
 ```
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields for the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields for the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control.
 
 The Windows 8.1 KS\_CAMERACONTROL\_EXTENDED\_ISO remains unchanged without the support of integer manual ISO. The driver should only support the new KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control. If both of these controls are supported, the pipeline will default to the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control.
 

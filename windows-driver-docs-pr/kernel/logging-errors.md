@@ -1,7 +1,6 @@
 ---
 title: Logging Errors
 description: Logging Errors
-ms.assetid: 02d77bdf-f94d-47c6-8824-d5643cf4a89c
 keywords: ["errors WDK kernel", "logs WDK kernel", "logging errors WDK kernel", "log files WDK kernel", "messages WDK error logs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

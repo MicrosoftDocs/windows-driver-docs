@@ -1,7 +1,6 @@
 ---
 title: ln (List Nearest Symbols)
 description: The ln command displays the symbols at or near the given address.
-ms.assetid: ff01ace7-398a-4e32-9d58-00873eca3201
 keywords: ["ln (List Nearest Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Specifies that the output is displayed using [Debugger Markup Language (DML)](de
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the **ln** command to help determine what a pointer is pointing to. This command can also be useful when you are looking at a corrupted stack to determine which procedure made a call.
 

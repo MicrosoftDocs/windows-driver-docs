@@ -1,7 +1,6 @@
 ---
 title: Stampinf Command Options
 description: Stampinf is a command-line tool that updates common INF file directives.
-ms.assetid: 409b1bcc-9e19-4a95-a459-fc9f1ec41ea1
 keywords:
 - Stampinf Command Options Driver Development Tools
 topic_type:
@@ -39,10 +38,10 @@ Stampinf -f filename
 Specifies the INF or INX file to process.
 
 <span id="-s_section"></span><span id="-S_SECTION"></span>**-s** *section*  
-Specifies the INF section in which to put the [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive). The default location for this directive is the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
+Specifies the INF section in which to put the [**INF DriverVer directive**](../install/inf-driverver-directive.md). The default location for this directive is the [**INF Version section**](../install/inf-version-section.md).
 
 <span id="_______-d_________date_____"></span><span id="_______-D_________DATE_____"></span> **-d** \[ *date* | **\\**<em>\]  
-Specifies the date that is written in the [INF DriverVer directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive). The format for the date is month/date/year</em> (for example, **-d 10/20/2011**).
+Specifies the date that is written in the [INF DriverVer directive](../install/inf-driverver-directive.md). The format for the date is month/date/year</em> (for example, **-d 10/20/2011**).
 
 To use the current date, specify an asterisk (\*) with this parameter.
 
@@ -53,17 +52,17 @@ If the **-d** parameter is not specified or is specified without any options, St
 -   If the STAMPINF\_DATE environment variable is not specified, Stampinf uses the current date.
 
 <span id="_______-a_________architecture______________"></span><span id="_______-A_________ARCHITECTURE______________"></span> **-a \[** *architecture* **\]**   
-Specifies the *architecture* string to replace the $ARCH$ variable that is used in INX files. The $ARCH$ variable is used to customize a **TargetOSVersion** decoration in an [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section), and its respective section name, to a specific platform. For more information about the $ARCH$ variable, see [Using INX Files to Create INF Files](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-inx-files-to-create-inf-files).
+Specifies the *architecture* string to replace the $ARCH$ variable that is used in INX files. The $ARCH$ variable is used to customize a **TargetOSVersion** decoration in an [**INF Manufacturer section**](../install/inf-manufacturer-section.md), and its respective section name, to a specific platform. For more information about the $ARCH$ variable, see [Using INX Files to Create INF Files](../wdf/using-inx-files-to-create-inf-files.md).
 
 The values for the *architecture* string are **x86**, **64** (for Itanium-based platforms), and **x64** (for amd64 platforms).
 
 If the **-a** parameter is not specified or is specified without any options, Stampinf uses the value that is specified by the Platform environment variable, which is set in the build environment window.
 
 <span id="_______-c________catalogfile______"></span><span id="_______-C________CATALOGFILE______"></span> **-c** *catalogfile*   
-Specifies the value that is written in the **CatalogFile** directive in the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section). By default, the **CatalogFile** directive is not written.
+Specifies the value that is written in the **CatalogFile** directive in the [**INF Version section**](../install/inf-version-section.md). By default, the **CatalogFile** directive is not written.
 
 <span id="_______-v_________time_____"></span><span id="_______-V_________TIME_____"></span> **-v \[** *time* **| \*\]**  
-Specifies the time that is written in the [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) for the version number. The format for the time is *hours.minutes.seconds.milliseconds* (for example, 11.30.20.15). This option is useful during development because it provides a convenient way to increase the version number of the driver.
+Specifies the time that is written in the [**INF DriverVer directive**](../install/inf-driverver-directive.md) for the version number. The format for the time is *hours.minutes.seconds.milliseconds* (for example, 11.30.20.15). This option is useful during development because it provides a convenient way to increase the version number of the driver.
 
 To use the current time, specify an asterisk (\*) with this parameter.
 
@@ -97,12 +96,12 @@ Specifies the location of the Ntverp.h file. The *path* represents a fully-quali
 
 ### Comments
 
-The date value that Stampinf puts in the [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) is not based on *Coordinated Universal Time* (UTC), which is also known as *Greenwich Mean Time*. However, [**Inf2Cat**](inf2cat.md) interprets the date value of this INF directive as a UTC value. This could lead to errors if the local date value that is used by Stampinf is interpreted by Inf2Cat as a UTC value for tomorrow's date. To avoid this problem, do *one* of the following:
+The date value that Stampinf puts in the [**INF DriverVer directive**](../install/inf-driverver-directive.md) is not based on *Coordinated Universal Time* (UTC), which is also known as *Greenwich Mean Time*. However, [**Inf2Cat**](inf2cat.md) interprets the date value of this INF directive as a UTC value. This could lead to errors if the local date value that is used by Stampinf is interpreted by Inf2Cat as a UTC value for tomorrow's date. To avoid this problem, do *one* of the following:
 
 -   Set the STAMPINF\_DATE environment variable to the appropriate UTC date value. Now run Stampinf without specifying the **-d** parameter. This instructs Stampinf to use the date value that is specified by the STAMPINF\_DATE environment variable.  Now both Stampinf and Inf2Cat use UTC.
 -   Change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both Stampinf and Inf2Cat use local time.
 
-When you develop your driver, you can set the environment variable PRIVATE\_DRIVER\_PACKAGE. When this variable is set, Stampinf sets the date and version that is used for the [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) to the current date and time, regardless of the command line settings. In addition, Stampinf sets the **CatalogFile** directive. Stampinf writes **CatalogFile=delta.cat** in the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section), unless a catalog was already specified with the **-c** command option.
+When you develop your driver, you can set the environment variable PRIVATE\_DRIVER\_PACKAGE. When this variable is set, Stampinf sets the date and version that is used for the [**INF DriverVer directive**](../install/inf-driverver-directive.md) to the current date and time, regardless of the command line settings. In addition, Stampinf sets the **CatalogFile** directive. Stampinf writes **CatalogFile=delta.cat** in the [**INF Version section**](../install/inf-version-section.md), unless a catalog was already specified with the **-c** command option.
 
 Type the following command in a build window to enable this development mode:
 
@@ -111,10 +110,4 @@ set PRIVATE_DRIVER_PACKAGE=1
 ```
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: CTRL+R (Re-synchronize)
 description: The CTRL+R key synchronizes with the target computer.
-ms.assetid: 95ffa380-af90-4d56-b973-038e7ccc6760
 keywords: ["CTRL+R (Re-synchronize) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,8 +65,7 @@ CTRL+ALT+R
 
 For other methods of re-establishing contact with the target, see [Synchronizing with the Target Computer](synchronizing-with-the-target-computer.md).
 
-Remarks
--------
+## Remarks
 
 This attempts to synchronize the host computer with the target computer. Use this key if the target is not responding.
 

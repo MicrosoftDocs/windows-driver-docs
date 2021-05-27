@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode WDM Audio Components
 description: Kernel-Mode WDM Audio Components
-ms.assetid: 827997e2-6f07-4635-ac35-4ad026b82eae
 keywords:
 - kernel-mode components WDK audio
 - WDMAud system driver WDK audio
@@ -131,7 +130,7 @@ The DRMK system driver (Drmk.sys) is the KS filter that decrypts audio streams c
 
 The Splitter system driver (Splitter.sys) is the KS filter that creates two or more output streams from a single input capture stream. The Splitter driver transparently copies the input stream to two more output streams independently of the format of the input stream.
 
-The Splitter driver is supported by Windows Me, and Microsoft Windows XP and later. For more information, see [AVStream Splitters](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-splitters).
+The Splitter driver is supported by Microsoft Windows XP and later. For more information, see [AVStream Splitters](../stream/avstream-splitters.md).
 
 ### <span id="port_class_adapter_driver_and_portcls_system_driver"></span><span id="PORT_CLASS_ADAPTER_DRIVER_AND_PORTCLS_SYSTEM_DRIVER"></span>Port Class Adapter Driver and PortCls System Driver
 
@@ -159,7 +158,7 @@ To work with the system-supplied drivers, hardware vendors should design their a
 
 -   Updates to the AV/C Audio Subunit Specifications currently in process
 
-These specifications are available at the [1394 Trade Association](https://go.microsoft.com/fwlink/p/?linkid=8728) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
+These specifications are available at the [1394 Trade Association](https://1394ta.org/) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
 
 When an audio device identifies itself as an IEEE 1394-compliant audio device during Plug and Play device enumeration, the system automatically loads the AVCAudio driver to drive the device. AVCAudio drives the device directly, without the aid of a proprietary adapter driver. This means that a device that complies with the appropriate IEEE 1394 specifications requires no proprietary adapter driver.
 
@@ -171,16 +170,11 @@ The following figure shows the driver hierarchy for an IEEE 1394 audio device in
 
 For more information about the driver components in the figure, see the following sections:
 
-[AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview)
+[AVStream Overview](../stream/avstream-overview.md)
 
-[AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
+[AV/C Client Drivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [IEEE 1394 Bus](https://developer.microsoft.com/windows/hardware)
 
  
-
- 
-
-
-
 

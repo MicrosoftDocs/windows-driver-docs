@@ -1,7 +1,6 @@
 ---
 title: Test presence or need for custom WDTF simple I/O action plug-ins
 description: If you have configured a remote computer for testing using Visual Studio, you can run a utility test that displays all the devices that have WDTF Simple I/O plug-ins.
-ms.assetid: 7AD2F8DD-8428-4C30-A3B0-B6678986DCCD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,10 +14,9 @@ If you have configured a remote computer for testing using Visual Studio, you ca
 
 -   Device under test is installed on the test computer.
 -   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see How to test driver package.
--   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+-   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-Instructions
-------------
+## Instructions
 
 ### Test your device to see if you need to customize the WDTF Simple I/O Action Plug-in
 
@@ -29,7 +27,7 @@ The WDK provides a utility test you can run to determine whether there is a WDTF
 3.  In the Driver Test Group window, click **Add/Remove Tests**.
 4.  In the **Add or Remove Tests** dialog box, select **All Tests\\Utilities** from the **Device Test Categories** list, and add the test **Display devices that have WDTF Simple I/O plug-ins**. Click **OK**. Save the test group.
 5.  Run the test group that includes the utility test **Display devices that have WDTF Simple I/O plug-ins**.
-6.  Open the TestTextlog for the test and verify that your device is reported as a device that has a WDTF Simple I/O plug-in. If your device is listed, you do not need to create a Simple I/O plug-in for your device. You can run the Device Fundamental tests and the correct plug-in for your device type will automatically be selected. For information about the provided tests, see [How to select and configure the Device Fundamental tests](https://docs.microsoft.com/windows-hardware/drivers).
+6.  Open the TestTextlog for the test and verify that your device is reported as a device that has a WDTF Simple I/O plug-in. If your device is listed, you do not need to create a Simple I/O plug-in for your device. You can run the Device Fundamental tests and the correct plug-in for your device type will automatically be selected. For information about the provided tests, see [How to select and configure the Device Fundamental tests](/windows-hardware/drivers).
 
     If there is no I/O plug-in for your device, you need to create one by customizing the provided WDTF Simple I/O Action Plug-in template.
 
@@ -55,7 +53,4 @@ WDTF_TEST                 : INFO  :      Generic volume (G:) STORAGE\VOLUME\_??_
 
 ## Related topics
 [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md)  
-[Provided WDTF Simple I/O plug-ins](provided-wdtf-simpleio-plug-ins.md)  
-
-
-
+[Provided WDTF Simple I/O plug-ins](provided-wdtf-simpleio-plug-ins.md)

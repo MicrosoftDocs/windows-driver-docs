@@ -1,7 +1,6 @@
 ---
 title: usb3kd.ucx_controller_list
 description: The usb3kd.ucx_controller_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys.
-ms.assetid: 57565A2A-A409-46CE-B7F9-F1CD521960E5
 keywords: ["usb3kd.ucx_controller_list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,8 +41,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The [**!ucx\_controller\_list**](-usb3kd-device-info.md) command is the parent command for this set of commands.
 
@@ -51,21 +49,14 @@ The [**!ucx\_controller\_list**](-usb3kd-device-info.md) command is the parent c
 -   [**!ucx\_device**](-usb3kd-ucx-device.md)
 -   [**!ucx\_endpoint**](-usb3kd-ucx-endpoint.md)
 
-The USB host controller extension driver (Ucx*Version*.sys) provides a layer of abstraction between the USB 3.0 hub driver and the USB 3.0 host controller driver. The extension driver has its own representation of host controllers, devices, and endpoints. The outputs of the commands in the [**!ucx\_controller\_list**](-usb3kd-device-info.md) family are based on the data structures maintained by the extension driver. For more information about the USB host controller extension driver and the USB 3.0 host controller driver, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](https://go.microsoft.com/fwlink/p/?LinkID=249153) video.
+The USB host controller extension driver (Ucx*Version*.sys) provides a layer of abstraction between the USB 3.0 hub driver and the USB 3.0 host controller driver. The extension driver has its own representation of host controllers, devices, and endpoints. The outputs of the commands in the [**!ucx\_controller\_list**](-usb3kd-device-info.md) family are based on the data structures maintained by the extension driver. For more information about the USB host controller extension driver and the USB 3.0 host controller driver, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P) video.
 
 ## <span id="see_also"></span>See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

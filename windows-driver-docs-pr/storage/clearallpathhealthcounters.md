@@ -1,7 +1,6 @@
 ---
 title: ClearAllPathHealthCounters function
 description: The ClearAllPathsHealthCounters method is used to clear all gathered MPIO health statistics of every path that is managed by MPIO.
-ms.assetid: b5aaef8f-1a9a-4717-877a-1347390b8071
 keywords: ["ClearAllPathHealthCounters function Storage Devices"]
 topic_type:
 - apiref
@@ -20,30 +19,25 @@ ms.date: 10/17/2018
 
 The ClearAllPathsHealthCounters method is used to clear all gathered MPIO health statistics of every path that is managed by MPIO.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 unknown ClearAllPathHealthCounters(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MPIO\_WMI\_METHODS WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

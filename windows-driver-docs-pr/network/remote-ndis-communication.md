@@ -1,7 +1,6 @@
 ---
 title: 'Remote NDIS Communication'
-Description: 'Remote NDIS Communication'
-ms.assetid: abaa4434-4043-4265-92b9-81383c2080ce
+description: 'Remote NDIS Communication'
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 This section includes the following topics:
 
-[Remote NDIS Control Messages](remote-ndis-control-messages.md)
+[Remote NDIS Control Messages](remote-ndis-initialize-msg.md)
 
 [Remote NDIS Data Message](remote-ndis-data-message.md)
 

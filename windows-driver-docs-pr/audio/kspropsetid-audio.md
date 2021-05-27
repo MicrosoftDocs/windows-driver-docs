@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Audio
 description: KSPROPSETID\_Audio
-ms.assetid: b65620c1-0460-430d-999d-f46fe0a2702d
 keywords: ["KSPROPSETID_Audio"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

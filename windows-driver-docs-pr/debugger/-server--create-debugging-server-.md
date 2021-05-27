@@ -1,7 +1,6 @@
 ---
 title: .server (Create Debugging Server)
 description: The .server command starts a debugging server, allowing a remote connection to the current debugging session.
-ms.assetid: 39979a53-d6e7-4660-8884-3044da0b60de
 keywords: ["Create Debugging Server (.server) command", "remote debugging through the debugger, Create Debugging Server (.server) command", ".server (Create Debugging Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -100,8 +99,7 @@ Causes the debugger to enable the necessary port connections for TCP or named pi
 
 For full details on how to start a debugging server, see [**Activating a Debugging Server**](activating-a-debugging-server.md). For examples, see [Client and Server Examples](client-and-server-examples.md).
 
-Remarks
--------
+## Remarks
 
 This command turns the current debugger into a debugging server. This allows you to start the server after the debugger is already running, whereas the -server [command-line option](command-line-options.md) can only be issued when the debugger is started.
 

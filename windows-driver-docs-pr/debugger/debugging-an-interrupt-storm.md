@@ -1,38 +1,35 @@
 ---
 title: Debugging an Interrupt Storm
 description: Debugging an Interrupt Storm
-ms.assetid: b863cb9c-dce0-4572-b0ed-6f7d3a6ba472
 keywords: ["pending IRPs", "I/O Request Packet (IRP), pending"]
-ms.date: 05/23/2017
+ms.date: 05/15/2020
 ms.localizationpriority: medium
 ---
 
 # Debugging an Interrupt Storm
 
-
 ## <span id="ddk_debugging_pending_irps_dbg"></span><span id="DDK_DEBUGGING_PENDING_IRPS_DBG"></span>
-
 
 One of the most common examples of a stalled system is an interrupt storm. An *interrupt storm* is a level-triggered interrupt signal that remains in the asserted state.
 
 The following events can cause an interrupt storm:
 
--   A hardware device does not release its interrupt signal after being directed to do so by the device driver.
+- A hardware device does not release its interrupt signal after being directed to do so by the device driver.
 
--   A device driver does not instruct its hardware to release the interrupt signal, because it does not detect that the interrupt was initiated from its hardware.
+- A device driver does not instruct its hardware to release the interrupt signal, because it does not detect that the interrupt was initiated from its hardware.
 
--   A device driver claims the interrupt even though the interrupt was not initiated from its hardware. This situation can only occur when multiple devices are sharing the same IRQ.
+- A device driver claims the interrupt even though the interrupt was not initiated from its hardware. This situation can only occur when multiple devices are sharing the same IRQ.
 
--   The edge level control register (ELCR) is not set correctly.
+- The edge level control register (ELCR) is not set correctly.
 
--   Edge and level interrupt-triggered devices share an IRQ (for example, a COM port and a PCI SCSI controller).
+- Edge and level interrupt-triggered devices share an IRQ (for example, a COM port and a PCI SCSI controller).
 
 This example demonstrates one method for detecting and debugging an interrupt storm.
 
 When the machine hangs, use a kernel debugger to break in. Use the **!irpfind** extension command to look for pending IRPs. Then, use the **!irp** extension to obtain details about any pending IRPs. For example:
 
 ```dbgcmd
-kd> !irp 81183468 
+kd> !irp 81183468
 Irp is active with 2 stacks 2 is current (= 0x811834fc)
  No Mdl Thread 00000000:  Irp stack trace.
      cmd  flg cl Device   File     Completion-Context
@@ -59,7 +56,7 @@ f714ef78 80067cc2 00000000 00000240 8000017c ntoskrnl!KiDispatchInterrupt
 f714ef78 80501cb5 00000000 00000240 8000017c halacpi!HalpDispatchInterrupt2ndEnt  
 ```
 
-Notice that the section in bold is an interrupt dispatch. If you use the **g** command and break in again, you will very likely see a different stack trace, but you will still see an interrupt dispatch. To determine which interrupt is responsible for the system stall, look at the second parameter passed into **HalBeginSystemInterrupt** (in this case, 0x3B). The standard rule is that the interrupt vector displayed (0x3B) is the IRQ line plus 0x30, so the interrupt is number 0xB. Running another stack trace may provide more information about which device issued the interrupt service request (ISR). In this case, a second stack trace has the following result:
+Notice that the section starting with `halacpi!HalBeginSystemInterrupt` is an interrupt dispatch. If you use the **g** command and break in again, you will very likely see a different stack trace, but you will still see an interrupt dispatch. To determine which interrupt is responsible for the system stall, look at the second parameter passed into **HalBeginSystemInterrupt** (in this case, 0x3B). The standard rule is that the interrupt vector displayed (0x3B) is the IRQ line plus 0x30, so the interrupt is number 0xB. Running another stack trace may provide more information about which device issued the interrupt service request (ISR). In this case, a second stack trace has the following result:
 
 ```dbgcmd
 kd> kb
@@ -91,7 +88,7 @@ The system is currently running the ISR for the video card. The system will run 
 Use the **!arbiter 4** extension to determine which devices are on IRQ 0xB. If there is only one device on IRQ 0xB, you have found the cause of the problem.. If there is more than one device sharing the interrupt (99% of the cases), you will need to isolate the device either by manually programming LNK nodes (which is destructive to the system state), or by removing or disabling hardware.
 
 ```dbgcmd
-kd> !arbiter 4 
+kd> !arbiter 4
 DEVNODE 8149a008 (HTREE\ROOT\0)
   Interrupt Arbiter "RootIRQ" at 80472a20
     Allocated ranges:
@@ -168,7 +165,7 @@ DEVNODE 8149a008 (HTREE\ROOT\0)
           000000000000000e - 000000000000000e       8145bb50  (atapi)
  000000000000000f - 000000000000000f       8145b970  (atapi)
         Possible allocation:
-          < none > 
+          < none >
 ```
 
 In this case, the audio, Universal Serial Bus (USB), network interface card (NIC), and video are all using the same IRQ.
@@ -176,15 +173,15 @@ In this case, the audio, Universal Serial Bus (USB), network interface card (NIC
 To find out which ISR claims ownership of the interrupt, examine the return value from the ISR. Simply disassemble the ISR using the **U** command with address given in the **!arbiter** display, and set a breakpoint on the last instruction of the ISR (which will be a 'ret' instruction). Note that using the command **g &lt;address&gt;** is the equivalent of setting a breakpoint on that address:
 
 ```dbgcmd
-kd> g bfe33e7b 
+kd> g bfe33e7b
 ds1wdm!AdapterIsr+ad:
 bfe33e7b c20800           ret     0x8 
 ```
 
-Use the **r** command to examine the registers. In particular, look at the EAX register. If the portion of the register contents in bold (in the following code example) is anything other then zero, this ISR claimed the interrupt. Otherwise, the interrupt was not claimed, and the operating system will call the next ISR. This example shows that the video card is not claiming the interrupt:
+Use the **r** command to examine the registers. In particular, look at the EAX register. If the EAX register contents shown in the following code example is anything other then zero, this ISR claimed the interrupt. Otherwise, the interrupt was not claimed, and the operating system will call the next ISR. This example shows that the video card is not claiming the interrupt:
 
 ```dbgcmd
-kd> r 
+kd> r
 eax=00000000 ebx=813f4ff0 ecx=00000010 edx=ffdff848 esi=8145d168 edi=813f4fc8
 eip=bfe33e7b esp=f714eec4 ebp=f714eee0 iopl=0         nv up ei pl zr na po nc
 cs=0008  ss=0010  ds=0023  es=0023  fs=0030  gs=0000             efl=00000246
@@ -195,7 +192,7 @@ bfe33e7b c20800           ret     0x8
 In fact, in this case, the interrupt is not claimed by any of the devices on IRQ 0xb. When you encounter this problem, you should also check to see if each piece of hardware associated with the interrupt is actually enabled. For PCI, this is easy -- look at the CMD register displayed by the **!pci** extension output:
 
 ```dbgcmd
-kd> !pci 0 0 
+kd> !pci 0 0
 PCI Bus 0
 00:0  8086:7190.03  Cmd[0006:.mb...]  Sts[2210:c....]  Device  Host bridge
 01:0  8086:7191.03  Cmd[0107:imb..s]  Sts[0220:.6...]  PciBridge 0->1-1  PCI-PCI bridge
@@ -204,18 +201,9 @@ PCI Bus 0
 07:0  8086:7110.02  Cmd[000f:imb...]  Sts[0280:.....]  Device  ISA bridge
 07:1  8086:7111.01  Cmd[0005:i.b...]  Sts[0280:.....]  Device  IDE controller
 07:2  8086:7112.01  Cmd[0005:i.b...]  Sts[0280:.....]  Device  USB host controller
-07:3  8086:7113.02  Cmd[0003:im....]  Sts[0280:.....]  Device  Class:6:80:0 
+07:3  8086:7113.02  Cmd[0003:im....]  Sts[0280:.....]  Device  Class:6:80:0
 ```
 
-Note that the audio chip's CMD register is zero. This means the audio chip is effectively disabled at this time. This also means that the audio chip will not be capable of responding to accesses by the driver.
+Note that the audio chip (labeled "Audio device") CMD register is zero. This means the audio chip is effectively disabled at this time. This also means that the audio chip will not be capable of responding to accesses by the driver.
 
 In this case, the audio chip needs to be manually re-enabled.
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Show loader snaps
 description: Show loader snaps
-ms.assetid: fb3843fe-451f-444c-a690-862253df944e
 keywords: ["Show loader snaps (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

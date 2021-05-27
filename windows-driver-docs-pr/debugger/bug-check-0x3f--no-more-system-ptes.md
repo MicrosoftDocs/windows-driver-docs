@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x3F NO_MORE_SYSTEM_PTES
 description: The NO_MORE_SYSTEM_PTES bug check has a value of 0x0000003F. This is the result of a system which has performed too many I/O actions.
-ms.assetid: b8164ec3-87c3-4629-ab70-6addbf368b76
 keywords: ["Bug Check 0x3F NO_MORE_SYSTEM_PTES", "NO_MORE_SYSTEM_PTES"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,15 +58,13 @@ The NO\_MORE\_SYSTEM\_PTES bug check has a value of 0x0000003F. This is the resu
 
  
 
-Cause
------
+## Cause
 
 In almost all cases, the system is not actually out of PTEs. Rather, a driver has requested a large block of memory, but there is no contiguous block of sufficient size to satisfy this request.
 
 Often video drivers will allocate large amounts of kernel memory that must succeed. Some backup programs do the same.
 
-Resolution
-----------
+## Resolution
 
 **A possible work-around:** Modify the registry to increase the total number of system PTEs. If this does not help, remove any recently-installed software, especially backup utilities or disk-intensive applications.
 

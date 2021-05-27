@@ -1,7 +1,6 @@
 ---
 title: UWP device apps for internal devices
 description: This topic introduces the ways that UWP device apps can access internal devices.
-ms.assetid: 864EDABF-C734-425D-A532-A01E545E4E51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic introduces the ways that UWP device apps can access internal devices. *Internal devices* are devices that reside inside or are integrated with the PC enclosure.
 
-**Note**  Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](https://go.microsoft.com/fwlink/p/?LinkId=250938).
+**Note**  Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](/uwp/api/).
 
  
 
@@ -42,8 +41,8 @@ When an OEM/component supplier needs to access an internal device in a way that 
 
 | Device protocol API | Namespace                                                                               | Access type                      |
 |---------------------|-----------------------------------------------------------------------------------------|----------------------------------|
-| USB                 | [Windows.Devices.Usb](https://go.microsoft.com/fwlink/p/?LinkId=306694)                  | exclusive read & exclusive write |
-| HID                 | [Windows.Devices.HumanInterfaceDevice](https://go.microsoft.com/fwlink/p/?LinkId=306697) | shared read & exclusive write    |
+| USB                 | [Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)                  | exclusive read & exclusive write |
+| HID                 | [Windows.Devices.HumanInterfaceDevice](/uwp/api/Windows.Devices.HumanInterfaceDevice) | shared read & exclusive write    |
 
  
 
@@ -51,9 +50,9 @@ To access peripheral devices that use only Microsoft class drivers - the most co
 
 For more info, see:
 
--   [Writing apps for USB devices](https://go.microsoft.com/fwlink/p/?LinkId=324880)
--   [Supporting human interface devices (HID)](https://go.microsoft.com/fwlink/p/?LinkId=324881)
--   [Supporting Bluetooth devices](https://go.microsoft.com/fwlink/p/?LinkId=324882)
+-   [Writing apps for USB devices](/previous-versions/windows/apps/dn263144(v=win.10))
+-   [Supporting human interface devices (HID)](/previous-versions/windows/apps/dn263140(v=win.10))
+-   [Supporting Bluetooth devices](/previous-versions/windows/apps/dn264587(v=win.10))
 -   [Device driver requirements](step-1--create-a-uwp-device-app.md) (from step 1 of the step-by-step guide)
 -   [Creating device metadata](step-2--create-device-metadata.md) (step 2 of the step-by-step guide)
 
@@ -81,11 +80,4 @@ For more info about these workflows, see [UWP device apps design guide for speci
 [Identifying the location of internal cameras (UWP device apps)](identifying-the-location-of-internal-cameras.md)
 
  
-
- 
-
-
-
-
-
 

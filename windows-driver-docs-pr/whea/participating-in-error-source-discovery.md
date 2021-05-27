@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Source Discovery
 description: Participating in Error Source Discovery
-ms.assetid: 349c8f06-be79-4a40-8b9f-cbefc563f6de
 keywords:
 - Windows Hardware Error Architecture WDK , error source discovery
 - WHEA WDK , error source discovery
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 # Participating in Error Source Discovery
 
 
-To participate in error source discovery, a PSHED plug-in must implement a [*GetAllErrorSources*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_all_error_sources) callback function. A PSHED plug-in that participates in error source discovery can also implement an optional [*GetErrorSourceInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_error_source_info) callback function.
+To participate in error source discovery, a PSHED plug-in must implement a [*GetAllErrorSources*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_all_error_sources) callback function. A PSHED plug-in that participates in error source discovery can also implement an optional [*GetErrorSourceInfo*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_error_source_info) callback function.
 
 The following code example shows how to implement these callback functions.
 
@@ -101,9 +100,4 @@ NTSTATUS
 A PSHED plug-in that participates in error source discovery must specify the **PshedFADiscovery** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
  
-
- 
-
-
-
 

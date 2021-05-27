@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_DEV\_TYPE
 description: The WIA\_DIP\_DEV\_TYPE property contains a device type and device subtype.
-ms.assetid: 685c1cfa-cc3b-42e6-aef3-359ae7220715
 keywords: ["WIA_DIP_DEV_TYPE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The device type and subtype are obtained from the driver's INF file of the device file. An application reads the WIA\_DIP\_DEV\_TYPE property to determine whether it is using a scanner, camera, or video device.
 
@@ -75,10 +73,9 @@ The following table describes the possible values for the device type.
 
  
 
-For more information about INF files, see [INF Files for WIA Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-wia-devices). The **StiDeviceType***Xxx* constants are defined in *Sti.h*.
+For more information about INF files, see [INF Files for WIA Devices](./inf-files-for-wia-devices.md). The **StiDeviceType***Xxx* constants are defined in *Sti.h*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -94,10 +91,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

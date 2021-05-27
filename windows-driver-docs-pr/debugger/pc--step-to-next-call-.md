@@ -1,7 +1,6 @@
 ---
 title: pc (Step to Next Call)
 description: The pc command executes the program until a call instruction is reached.
-ms.assetid: 4b9b786c-2ecc-44a6-a82b-0641d7991abc
 keywords: ["pc (Step to Next Call) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -76,8 +75,7 @@ Specifies the number of **call** instructions that the debugger must encounter f
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **pc** command causes the target to begin executing. This execution continues until a **call** instruction is reached or a breakpoint is encountered.
 

@@ -1,5 +1,5 @@
 ---
-Description: Supporting Client Contexts
+description: Supporting Client Contexts
 title: Supporting Client Contexts
 ms.date: 04/20/2017
 ms.localizationpriority: medium

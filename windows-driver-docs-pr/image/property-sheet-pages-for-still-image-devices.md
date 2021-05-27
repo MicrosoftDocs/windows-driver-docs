@@ -1,7 +1,6 @@
 ---
 title: Property Sheet Pages for Still Image Devices
 description: Property Sheet Pages for Still Image Devices
-ms.assetid: ef77e57d-f791-4afa-8d51-67e78b60cf57
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

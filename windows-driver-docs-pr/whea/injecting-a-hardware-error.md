@@ -1,7 +1,6 @@
 ---
 title: Injecting a Hardware Error
 description: Injecting a Hardware Error
-ms.assetid: c27c79d9-c0b2-433b-b3f4-7674c361f1aa
 keywords:
 - injecting hardware errors WDK WHEA
 - errors WDK WHEA , injecting, WHEA WDK , injecting
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 # Injecting a Hardware Error
 
-
-A user-mode application can inject a hardware error into the hardware platform by calling the [**WHEAErrorInjectionMethods::InjectError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. An application injects hardware errors into the hardware platform to test and validate the system's hardware error handling functionality.
+A user-mode application can inject a hardware error into the hardware platform by calling the [**WHEAErrorInjectionMethods::InjectError**](/windows-hardware/drivers/ddi/_whea/) method. An application injects hardware errors into the hardware platform to test and validate the system's hardware error handling functionality.
 
 The following code example shows how to inject a hardware error.
 
@@ -89,6 +87,7 @@ VariantClear(&Parameter);
 // should be set with the necessary data.
 Parameter.vt = VT_UI8;
 Parameter.ullVal = (ULONGLONG)0;
+
 Result =
   pInParameters->Put(
     L"Parameter1",
@@ -96,6 +95,7 @@ Result =
     &Parameter,
     0
     );
+
 Result =
   pInParameters->Put(
     L"Parameter2",
@@ -103,6 +103,7 @@ Result =
     &Parameter,
     0
     );
+
 Result =
   pInParameters->Put(
     L"Parameter3",
@@ -110,6 +111,7 @@ Result =
     &Parameter,
     0
     );
+
 Result =
   pInParameters->Put(
     L"Parameter4",
@@ -117,6 +119,7 @@ Result =
     &Parameter,
     0
     );
+
 VariantClear(&Parameter);
 
 // Call the InjectErrorRtn method indirectly by
@@ -127,8 +130,8 @@ Result =
     MethodName,
     0,
     NULL,
-    &pInParameters,
- &pOutParameters,
+    pInParameters,
+    &pOutParameters,
     NULL
     );
 
@@ -146,8 +149,9 @@ Result =
     NULL,
     NULL
     );
+
 Status = Parameter.ulval;
-VariantClear(Parameter);
+VariantClear(&Parameter);
 
 // Free up resources
 SysFreeString(ClassName);
@@ -157,11 +161,3 @@ pInParametersClass->Release();
 pClass->Release();
 pOutParameters->Release();
 ```
-
- 
-
- 
-
-
-
-

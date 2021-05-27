@@ -1,7 +1,6 @@
 ---
 title: Using the DevCon Tool to Install a Driver Package
 description: Using the DevCon Tool to Install a Driver Package
-ms.assetid: d77573e0-7866-46a5-88bc-c911bbd2a165
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ The example in this topic uses the *ToastPkg* sample [driver package](driver-pac
 
 To install the driver package through DevCon, do the following:
 
-1.  To use the DevCon tool, the user must be a member of the Administrators group on the test computer and run DevCon from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to *Cmd.exe*, right-click the *Cmd.exe* shortcut, and select **Run as administrator**.
+1.  To use the DevCon tool, the user must be a member of the Administrators group on the test computer and run DevCon from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to *Cmd.exe*, select and hold (or right-click) the *Cmd.exe* shortcut, and select **Run as administrator**.
 
 2.  From the elevated, Command Prompt window, enter the following:
 

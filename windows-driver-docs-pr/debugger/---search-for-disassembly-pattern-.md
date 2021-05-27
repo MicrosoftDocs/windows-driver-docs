@@ -1,7 +1,6 @@
 ---
 title: \# (Search for Disassembly Pattern)
 description: The number sign (#) command searches for the specified pattern in the disassembly code.
-ms.assetid: 834dd432-94b8-4bf6-9318-09a118eab5ab
 keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -63,8 +62,7 @@ Specifies the number of instructions to search. If you omit *Size*, the search c
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 If you previously used the **\#** command and you omit *Address*, the search begins where the previous search ended.
 

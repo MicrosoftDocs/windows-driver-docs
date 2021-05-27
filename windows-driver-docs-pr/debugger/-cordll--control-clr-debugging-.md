@@ -1,7 +1,6 @@
 ---
 title: .cordll (Control CLR Debugging)
 description: The .cordll command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
-ms.assetid: d46965b3-4f20-4e25-82e6-79e7fb9b4838
 keywords: ["Control CLR Debugging (.cordll) command", "CLR (common language runtime)", ".cordll (Control CLR Debugging) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -15,7 +14,6 @@ ms.localizationpriority: medium
 
 # .cordll (Control CLR Debugging)
 
-
 The **.cordll** command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
 
 ```dbgsyntax
@@ -23,7 +21,6 @@ The **.cordll** command controls managed code debugging and the Microsoft .NET c
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 One or more of the following options:
@@ -89,8 +86,7 @@ Turns off verbose mode for CLR module loading.
 
  
 
-Remarks
--------
+## Remarks
 
 To debug a managed application, the debugger must load a data access component (DAC) that corresponds to the CLR that the application has loaded. However, in some cases, the application loads more than one CLR. In that case, you can use the **I** parameter to specify which DAC the debugger should load. Version 2 of the CLR is named Mscorwks.dll, and version 4 of the CLR is named Clr.dll. The following example shows how to specify that the debugger should load the DAC for version 2 (mscorwks).
 
@@ -105,23 +101,12 @@ If you omit the **I** parameter, the debugger uses version 4 by default. For exa
 .cordll -I clr -lp c:\dacFolder
 ```
 
-Sos.dll is a component that is used for debugging managed code. The current version of Debugging Tools for Windows does not include any version of sos.dll. For information about how to get sos.dll, see [Getting the SOS Debugging Extension (sos.dll)](debugging-managed-code.md#getting-the-sos-debugging-extension).
+Sos.dll is a component that is used for debugging managed code. The current version of Debugging Tools for Windows does not include any version of sos.dll. For information about how to get sos.dll, see *Getting the SOS Debugging Extension (sos.dll)* in [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md).
 
 The **.cordll** command is supported in kernel-mode debugging. However, this command might not work unless the necessary memory is paged in.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md)
 
-[SOS Debugging Extension](https://go.microsoft.com/fwlink/p/?linkid=223345)
-
- 
-
- 
-
-
-
-
-
-
+[SOS Debugging Extension](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

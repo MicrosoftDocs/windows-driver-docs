@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT_PARAMETERS
 description: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT_PARAMETERS is a TLV that contains Wi-Fi Direct send Action Frame result parameters.
-ms.assetid: A0B234F2-081B-4027-9B42-76401F600707
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT_PARAMETERS Network Drivers Starting with Windows Vista
@@ -28,13 +27,12 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                              | Description                                           |
 |---------------------------------------------------|-------------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The device address of the target Wi-Fi Direct device. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The device address of the target Wi-Fi Direct device. |
 | UINT8                                             | The Wi-Fi Direct Dialog Token for this transaction.   |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -58,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

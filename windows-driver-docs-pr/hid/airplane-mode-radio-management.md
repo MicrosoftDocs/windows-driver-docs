@@ -1,7 +1,6 @@
 ---
 title: Airplane mode radio management
 description: Starting with Windows 8, the Windows operating system provides support via HID, for airplane mode radio management controls.
-ms.assetid: 5B0662B0-CBD3-4F31-B98F-6BC8184574DB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -149,14 +148,9 @@ Tip \#1: When using a radio manager BUTTON, the PC manufacturer should send one 
 
 Tip \#2: Airplane Mode radio management HID usages only operate on Mobile systems (battery powered) and require Windows 8 or later versions of Windows.
 
-Tip \#3: For more information on the Airplane Mode radio management button, see the [Keyboard Enhancements to Windows 8](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613956(v=vs.85)) whitepaper.
+Tip \#3: For more information on the Airplane Mode radio management button, see the [Keyboard Enhancements to Windows 8](/previous-versions/windows/hardware/design/dn613956(v=vs.85)) whitepaper.
 
 Tip \#4: For more information regarding the buttons, and to ensure that you are implementing the correct hardware, please review the Windows 8 System Logo Requirements.
 
  
-
- 
-
-
-
 

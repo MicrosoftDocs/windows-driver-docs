@@ -1,7 +1,6 @@
 ---
 title: Queuing and Dequeuing IRPs
 description: Queuing and Dequeuing IRPs
-ms.assetid: 736107bf-4790-4562-8785-c37fbbed03d3
 keywords: ["IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs", "multiple I/O request handling WDK kernel", "internal IRP queues WDK kernel", "synchronization WDK IRPs", "starting I/O operations", "I/O WDK kernel , operation starting", "StartIo routines", "cancel-safe IRP queues WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,19 +16,19 @@ Because the I/O manager supports asynchronous I/O within a multitasking and mult
 
 Therefore, a lowest-level driver requires one of the following:
 
--   A [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, which the I/O manager calls to start I/O operations for IRPs the driver has queued to a system-supplied IRP queue (see [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartpacket)).
+-   A [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, which the I/O manager calls to start I/O operations for IRPs the driver has queued to a system-supplied IRP queue (see [**IoStartPacket**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartpacket)).
 
 -   An internal IRP queuing and dequeuing mechanism, which the driver uses to manage IRPs that come in faster than it can satisfy them. Drivers can use device queues, interlocked queues, or cancel-safe queues. For more information, see [Driver-Managed IRP Queues](driver-managed-irp-queues.md).
 
 Only a lowest-level device driver that can satisfy and complete every possible IRP in its dispatch routines needs no *StartIo* routine and no driver-managed queues for IRPs.
 
-Higher-level drivers almost never have *StartIo* routines. Most intermediate drivers have neither *StartIo* routines nor internal queues; an intermediate driver can usually pass IRPs with valid parameters on from its dispatch routines and do whatever postprocessing is required for any IRP in its [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
+Higher-level drivers almost never have *StartIo* routines. Most intermediate drivers have neither *StartIo* routines nor internal queues; an intermediate driver can usually pass IRPs with valid parameters on from its dispatch routines and do whatever postprocessing is required for any IRP in its [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
 
 The following describes, in general, some of the design considerations for determining whether to implement a *StartIo* routine with or without internal, driver-managed queues for IRPs.
 
 ### StartIo Routines in Drivers
 
-For computer peripheral devices capable of handling only one device I/O operation at a time, device drivers can implement *StartIo* routines. For these drivers, the I/O manager provides [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartpacket) and [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket) routines to queue and dequeue IRPs to and from a system-supplied IRP queue.
+For computer peripheral devices capable of handling only one device I/O operation at a time, device drivers can implement *StartIo* routines. For these drivers, the I/O manager provides [**IoStartPacket**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartpacket) and [**IoStartNextPacket**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket) routines to queue and dequeue IRPs to and from a system-supplied IRP queue.
 
 For more information about *StartIo* routines, see [Writing a StartIo Routine](writing-a-startio-routine.md).
 
@@ -49,7 +48,7 @@ A driver that implements its own queue structure must ensure that access to the 
 
 Drivers can also implement all IRP queue synchronization and cancel logic explicitly. For example, a driver could use an interlocked queue. The driver's dispatch routines insert IRPs into the interlocked queue and a driver-created thread or the driver's worker-thread callback removes them by calling the **ExInterlocked*Xxx*List** support routines.
 
-For example, the system floppy controller driver uses an interlocked queue. Its device-dedicated thread handles the same processing of IRPs that is done by other device drivers' *StartIo* routines and some of the same processing of IRPs that is done by other device drivers' [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routines.
+For example, the system floppy controller driver uses an interlocked queue. Its device-dedicated thread handles the same processing of IRPs that is done by other device drivers' *StartIo* routines and some of the same processing of IRPs that is done by other device drivers' [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routines.
 
 ### Internal Queues with StartIo Routines in Drivers
 
@@ -60,9 +59,4 @@ An exception to this is the SCSI port driver, which has a *StartIo* routine and 
 The SCSI port driver uses its supplemental device queues to hold IRPs sent down from the SCSI class drivers in LU-specific queues whenever any device on a SCSI bus is particularly busy. In effect, this driver's supplemental, LU-specific device queues allow the SCSI port driver to serialize operations for heterogeneous SCSI devices through an HBA while keeping each device on that HBA's SCSI buses as busy as possible.
 
  
-
- 
-
-
-
 

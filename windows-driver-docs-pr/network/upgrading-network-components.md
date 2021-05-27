@@ -1,7 +1,6 @@
 ---
 title: Process for upgrading network components
 description: Process for upgrading network components
-ms.assetid: ddd1eda0-7bed-44e7-8636-8db3508825f5
 keywords:
 - network component upgrades WDK
 - upgrading network components WDK
@@ -43,7 +42,11 @@ The network upgrade process is described in the following topics:
 
 [Creating a Netmap.inf File](creating-a-netmap-inf-file.md)
 
-[Testing the Upgrade of Network Components](testing-the-upgrade-of-network-components.md)
+There are two major steps involved in testing the upgrade of network components. These are described in the following topics:
+
+[Setting Up the Test System](setting-up-the-test-system.md)
+
+[Running the Upgrade Test and Examining the Results](running-the-upgrade-test-and-examining-the-results.md)
 
 Network components whose drivers are released as part of Windows 2000 or later operating systems are automatically upgraded when the operating system is installed. No additional upgrade support is required for such components.
 

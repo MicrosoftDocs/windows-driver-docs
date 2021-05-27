@@ -1,7 +1,6 @@
 ---
 title: Creating a WIA Microdriver
 description: Creating a WIA Microdriver
-ms.assetid: 4f453569-d768-47fb-9b70-ebb51e303cf0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,14 +21,9 @@ The following diagram shows the components in the WIA microdriver architecture.
 
 ![diagram illustrating the components in the wia microdriver architecture](images/art-6.png)
 
-The WIA Flatbed Driver handles requests from the WIA service by calling the WIA microdriver functions in the microdriver. The microdriver must implement each of these functions. A [**SCANINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamicro/ns-wiamicro-_scaninfo) structure is passed to the microdriver to store and communicate scanning parameters such as the scan window and resolution. The WIA Flatbed Driver reads values from the SCANINFO structure, but never writes them. It is the microdriver's responsibility to set the SCANINFO members.
+The WIA Flatbed Driver handles requests from the WIA service by calling the WIA microdriver functions in the microdriver. The microdriver must implement each of these functions. A [**SCANINFO**](/windows-hardware/drivers/ddi/wiamicro/ns-wiamicro-_scaninfo) structure is passed to the microdriver to store and communicate scanning parameters such as the scan window and resolution. The WIA Flatbed Driver reads values from the SCANINFO structure, but never writes them. It is the microdriver's responsibility to set the SCANINFO members.
 
-The microdriver should not store any parameters for a scan, but should rely on the values stored in the [**SCANINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamicro/ns-wiamicro-_scaninfo) structure. This is important for supporting multiple application access to the device. If two applications are setting up a scan on the same device at the same time, there is only one copy of the microdriver running. In this situation the microdriver is called with one of two different SCANINFO structures depending on which application is trying to access the device.
-
- 
+The microdriver should not store any parameters for a scan, but should rely on the values stored in the [**SCANINFO**](/windows-hardware/drivers/ddi/wiamicro/ns-wiamicro-_scaninfo) structure. This is important for supporting multiple application access to the device. If two applications are setting up a scan on the same device at the same time, there is only one copy of the microdriver running. In this situation the microdriver is called with one of two different SCANINFO structures depending on which application is trying to access the device.
 
  
-
-
-
 

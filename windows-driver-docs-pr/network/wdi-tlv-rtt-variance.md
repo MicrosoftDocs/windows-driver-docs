@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RTT_VARIANCE
 description: WDI_TLV_RTT_VARIANCE is a TLV that contains the statistical variance of the measurements used to calculate roundtrip time (RTT) during a Fine Timing Measurement (FTM) request, if more than one measurement was used. 
-ms.assetid: F8032726-4CC8-40F4-8FA1-840A3514A4B0
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_RTT_VARIANCE Network Drivers Starting with Windows Vista
@@ -31,8 +30,6 @@ The size (in bytes) of a UINT64.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

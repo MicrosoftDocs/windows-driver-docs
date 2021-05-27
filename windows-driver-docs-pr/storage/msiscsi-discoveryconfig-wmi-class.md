@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_DiscoveryConfig WMI Class
 description: MSiSCSI\_DiscoveryConfig WMI Class
-ms.assetid: dbf170ba-92ab-47bd-a076-5f54129305a5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -39,13 +38,7 @@ class MSiSCSI_DiscoveryConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_DiscoveryConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_discoveryconfig) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_DiscoveryConfig**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_discoveryconfig) data structure.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Sample Toaster Driver Programming Tour
 description: This topic provides a code walkthrough of the Toaster sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
-ms.assetid: 5977AC09-AB53-4CA4-A35A-0E5A1FEE936F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -44,15 +43,15 @@ The KMDF bus driver services the toaster bus controller, enumerates devices that
 
   To enumerate a child, the bus driver:
 
-  1.  Calls [**WdfPdoInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitallocate) to obtain a [WDFDEVICE\_INIT](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) structure.
+  1.  Calls [**WdfPdoInitAllocate**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitallocate) to obtain a [WDFDEVICE\_INIT](./wdfdevice_init.md) structure.
 
-  2.  Initializes the [WDFDEVICE\_INIT](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) structure.
+  2.  Initializes the [WDFDEVICE\_INIT](./wdfdevice_init.md) structure.
 
-  3.  Call [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a framework device object that represents a PDO.
+  3.  Call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a framework device object that represents a PDO.
 
-  After calling [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), the driver calls [**WdfFdoAddStaticChild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoaddstaticchild) to add the child device to the child list.
+  After calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), the driver calls [**WdfFdoAddStaticChild**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoaddstaticchild) to add the child device to the child list.
 
-  Because drivers should only use static child lists for device configurations that are predetermined and permanent, a driver does not typically modify a static child list after creating it. If the driver determines that a child device has become inaccessible, the driver can call [**WdfPdoMarkMissing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdomarkmissing). (If a child device is accessible but unresponsive, the driver should set the **Failed** member of the [**WDF\_DEVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_state) structure to **WdfTrue** and then call [**WdfDeviceSetDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate).)
+  Because drivers should only use static child lists for device configurations that are predetermined and permanent, a driver does not typically modify a static child list after creating it. If the driver determines that a child device has become inaccessible, the driver can call [**WdfPdoMarkMissing**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdomarkmissing). (If a child device is accessible but unresponsive, the driver should set the **Failed** member of the [**WDF\_DEVICE\_STATE**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_state) structure to **WdfTrue** and then call [**WdfDeviceSetDeviceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate).)
 
   In order to statically enumerate child devices every time the bus driver starts, you can set a registry value in the Toaster Bus driver's device parameter key.
 
@@ -72,7 +71,7 @@ The KMDF bus driver services the toaster bus controller, enumerates devices that
 
   For example, the number and type of devices that are plugged into a system's PCI bus are system-dependent, but they are permanent unless a user turns off power, opens the case, and adds or removes a device by using a screwdriver. On the other hand, a user can add or remove USB devices by plugging in or unplugging a cable while the system is running.
 
-  Each time a bus driver identifies a child device, it must add the child device's description to a child list. Driver can either use framework provided device's default child list by calling [**WdfFdoGetDefaultChildList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdogetdefaultchildlist), or can create additional child lists, for grouping children, by calling [**WdfChildListCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate). This sample uses the default child list. A *child description* consists of a required *identification description* and an optional *address description*.
+  Each time a bus driver identifies a child device, it must add the child device's description to a child list. Driver can either use framework provided device's default child list by calling [**WdfFdoGetDefaultChildList**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdogetdefaultchildlist), or can create additional child lists, for grouping children, by calling [**WdfChildListCreate**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate). This sample uses the default child list. A *child description* consists of a required *identification description* and an optional *address description*.
 
   <table>
   <colgroup>
@@ -88,11 +87,11 @@ The KMDF bus driver services the toaster bus controller, enumerates devices that
   <tbody>
   <tr class="odd">
   <td align="left"><p><a href="" id="---------------------identification-description"></a> Identification Description</p></td>
-  <td align="left"><p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure.</p></td>
+  <td align="left"><p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure.</p></td>
   </tr>
   <tr class="even">
   <td align="left"><p><a href="" id="---------------------address-description"></a> Address Description</p></td>
-  <td align="left"><p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure. Address descriptions are optional. This sample does not use address descriptions.</p></td>
+  <td align="left"><p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure. Address descriptions are optional. This sample does not use address descriptions.</p></td>
   </tr>
   </tbody>
   </table>
@@ -100,9 +99,9 @@ The KMDF bus driver services the toaster bus controller, enumerates devices that
 
 
 
-To add children to a child list, the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls **WdfChildListAddOrUpdateChildDescriptionAsPresent**, it supplies an identification description and, optionally, an address description.
+To add children to a child list, the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls **WdfChildListAddOrUpdateChildDescriptionAsPresent**, it supplies an identification description and, optionally, an address description.
 
-After the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's [*EvtChildListCreateDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device) callback function. This callback function must call [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a PDO for the new device.
+After the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's [*EvtChildListCreateDevice*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device) callback function. This callback function must call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a PDO for the new device.
 
 To report a child device missing, this driver calls WdfChildListUpdateChildDescriptionAsMissing. For further details on dynamic enumeration, please refer to the framework documentation.
 
@@ -128,9 +127,9 @@ This directory contains source code for two filter drivers. The Generic sample i
 ## KMDF Toastmon
 
 
-This sample demonstrates how to open a device and perform I/O in kernel mode using remote I/O target interfaces. This sample registers a PnP notification callback routine for the toaster interface class by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification). When a toaster device is plugged in, the PnP manager invokes the callback. In the callback, this sample creates a remote target and opens the device by using the symbolic link provided in the callback data.
+This sample demonstrates how to open a device and perform I/O in kernel mode using remote I/O target interfaces. This sample registers a PnP notification callback routine for the toaster interface class by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification). When a toaster device is plugged in, the PnP manager invokes the callback. In the callback, this sample creates a remote target and opens the device by using the symbolic link provided in the callback data.
 
-Also, this sample uses a passive timer to demonstrate asynchronous read and write to the target device. It also shows how to respond to a device change notification by registering [*EvtIoTargetQueryRemove*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove)/[*EvtIoTargetRemoveCanceled*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_canceled)/[*EvtIoTargetRemoveComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_complete) on the I/O target object. You can use this technique if your driver talks to another device that your driver is not controlling. You install this driver as a root-enumerated device using Wdftoastmon.inf. Use the same steps for installation as the toaster bus driver.
+Also, this sample uses a passive timer to demonstrate asynchronous read and write to the target device. It also shows how to respond to a device change notification by registering [*EvtIoTargetQueryRemove*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove)/[*EvtIoTargetRemoveCanceled*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_canceled)/[*EvtIoTargetRemoveComplete*](/windows-hardware/drivers/ddi/wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_complete) on the I/O target object. You can use this technique if your driver talks to another device that your driver is not controlling. You install this driver as a root-enumerated device using Wdftoastmon.inf. Use the same steps for installation as the toaster bus driver.
 
 ## UMDF Function Driver
 
@@ -153,12 +152,3 @@ This sample is a UMDF version of the KMDF ToastMon sample.
 UMDF Toastmon demonstrates how to use UMDF to write a minimal driver with the User-Mode Driver Framework and shows best practices. The driver will successfully load on a device (either root enumerated or a real hardware device) but has the minimum PnP functionality and does not support receiving any I/O operations.
 
 Toastmon is intended to serve as a learning tool for other UMDF drivers that you may write.
-
-
-
-
-
-
-
-
-

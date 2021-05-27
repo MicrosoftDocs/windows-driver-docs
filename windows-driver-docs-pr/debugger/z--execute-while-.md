@@ -1,7 +1,6 @@
 ---
 title: z (Execute While)
 description: The z command executes a command while a given condition is true.
-ms.assetid: 075dc012-68c2-4172-9d37-57bc8358297c
 keywords: ["z (Execute While) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,8 +66,7 @@ Specifies the condition to test. If this condition evaluates to a nonzero value,
 
  
 
-Remarks
--------
+## Remarks
 
 In many debugger commands, the semicolon is used to separate unrelated commands. However, in the **z** command, a semicolon separates the "z" from the *Command* parameter.
 

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_INFO
 description: WDI_TLV_PHY_INFO is a TLV that contains PHY information.
-ms.assetid: 3A363FDC-FE79-42C4-AD19-A6B960857CBD
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_INFO Network Drivers Starting with Windows Vista
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

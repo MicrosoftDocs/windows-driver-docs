@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Environment
 description: Connection-Oriented Environment
-ms.assetid: 596d7d74-ad9d-40da-b483-3afc0e333f98
 keywords:
 - connection-oriented NDIS WDK , environment
 - CoNDIS WDK networking , environment

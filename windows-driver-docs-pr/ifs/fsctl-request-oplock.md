@@ -1,7 +1,6 @@
 ---
 title: FSCTL_REQUEST_OPLOCK control code
 description: The FSCTL\_REQUEST\_OPLOCK control code requests an opportunistic lock (oplock) on a file, or acknowledges that an oplock break has occurred.
-ms.assetid: a36f2a13-d450-4903-b999-6ba574ab3f6e
 keywords: ["FSCTL_REQUEST_OPLOCK control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 The **FSCTL\_REQUEST\_OPLOCK** control code requests an opportunistic lock (oplock) on a file, or acknowledges that an oplock break has occurred.
 
-For more information about opportunistic locks, see [Opportunistic Locks](https://docs.microsoft.com/windows/desktop/FileIO/opportunistic-locks) in the Windows Desktop documentation. For more information about user mode OPLOCK controls, see [File Management Control Codes](https://docs.microsoft.com/windows/desktop/FileIO/file-management-control-codes) in the Windows Desktop documentation.
+For more information about opportunistic locks, see [Opportunistic Locks](/windows/desktop/FileIO/opportunistic-locks) in the Windows Desktop documentation. For more information about user mode OPLOCK controls, see [File Management Control Codes](/windows/desktop/FileIO/file-management-control-codes) in the Windows Desktop documentation.
 
-To process this control code, a file system or filter driver calls [**FsRtlOplockFsctrlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex) with the following parameters.
+To process this control code, a file system or filter driver calls [**FsRtlOplockFsctrlEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex) with the following parameters.
 
 **Parameters**
 
@@ -33,18 +32,17 @@ Opaque oplock object pointer for the file.
 A pointer to the IRP for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_REQUEST\_OPLOCK.
 
 <a href="" id="opencount"></a>*OpenCount*  
-The number of user handles for the file if the request is for an exclusive oplock. If the request is for an oplock that can be shared, *OpenCount* is zero if no byte-range locks exist on the file. Otherwise, *OpenCount* is nonzero. The caller can call the [**FsRtlOplockIsSharedRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockissharedrequest) routine on the IRP to determine if the request is for an oplock that can be shared.
+The number of user handles for the file if the request is for an exclusive oplock. If the request is for an oplock that can be shared, *OpenCount* is zero if no byte-range locks exist on the file. Otherwise, *OpenCount* is nonzero. The caller can call the [**FsRtlOplockIsSharedRequest**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockissharedrequest) routine on the IRP to determine if the request is for an oplock that can be shared.
 
 <a href="" id="flags"></a>*Flags*  
-A bitmask for the associated oplock operations. A file system or filter driver sets bits to specify the behavior of [**FsRtlOplockFsctrlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex). The *Flags* parameter has the following options:
+A bitmask for the associated oplock operations. A file system or filter driver sets bits to specify the behavior of [**FsRtlOplockFsctrlEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex). The *Flags* parameter has the following options:
 
 <a href="" id="oplock-fsctrl-flag-all-keys-match--0x00000001-"></a>OPLOCK\_FSCTRL\_FLAG\_ALL\_KEYS\_MATCH (0x00000001)  
-Specifies that the file system has verified that all opportunistic lock keys match on any handle that is currently open. By specifying this flag, the oplock package can grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see [Overview](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-overview).
+Specifies that the file system has verified that all opportunistic lock keys match on any handle that is currently open. By specifying this flag, the oplock package can grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see [Overview](./oplock-overview.md).
 
-Status block
-------------
+## Status block
 
-[**FsRtlOplockFsctrlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex) returns one of the following NTSTATUS values for this operation:
+[**FsRtlOplockFsctrlEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex) returns one of the following NTSTATUS values for this operation:
 
 <table>
 <colgroup>
@@ -75,8 +73,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -94,18 +91,11 @@ Requirements
 ## See also
 
 
-[**FsRtlOplockFsctrlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex)
+[**FsRtlOplockFsctrlEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex)
 
-[**FsRtlOplockIsSharedRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockissharedrequest)
+[**FsRtlOplockIsSharedRequest**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockissharedrequest)
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
  
-
- 
-
-
-
-
-
 

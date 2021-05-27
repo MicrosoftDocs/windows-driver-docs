@@ -1,7 +1,6 @@
 ---
 title: Writing Data Records to a CLFS Stream
 description: Writing Data Records to a CLFS Stream
-ms.assetid: 22bd6d39-b777-4a62-85b1-3d03a7144f7a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reserved space WDK CLFS", "aligned entries WDK CLFS", "writing data records", "buffers WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,15 +14,15 @@ ms.localizationpriority: medium
 
 There are two types of records in a Common Log File System (CLFS) stream: data records and restart records. This topic explains how to write data records to a stream. For information about how to write restart records, see [Writing Restart Records to a CLFS Stream](writing-restart-records-to-a-clfs-stream.md).
 
-Before you can write data records to a CLFS stream, you must create a marshalling area by calling [**ClfsCreateMarshallingArea**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea). Then you can append records to the marshalling area (which is in volatile memory), and CLFS will periodically flush the records to stable storage.
+Before you can write data records to a CLFS stream, you must create a marshalling area by calling [**ClfsCreateMarshallingArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea). Then you can append records to the marshalling area (which is in volatile memory), and CLFS will periodically flush the records to stable storage.
 
 There are several variations on writing data records to a stream. For example, you can reserve space ahead of time and then write several records, or you can write records without reserving space. You can request that records you write to the marshalling area be immediately queued to stable storage, or you can let CLFS queue the records according to its policy.
 
 For all variations on writing data records, complete the following steps.
 
-1.  Create an array of one or more [**CLFS\_WRITE\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry) structures. Each write entry structure points to a buffer that you have filled with record data.
+1.  Create an array of one or more [**CLFS\_WRITE\_ENTRY**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry) structures. Each write entry structure points to a buffer that you have filled with record data.
 
-2.  Call [**ClfsReserveAndAppendLog**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreserveandappendlog) or [**ClfsReserveAndAppendLogAligned**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreserveandappendlogaligned).
+2.  Call [**ClfsReserveAndAppendLog**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreserveandappendlog) or [**ClfsReserveAndAppendLogAligned**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreserveandappendlogaligned).
 
 The tables in the following subsections show how to set the parameters of **ClfsReserveAndAppendLog** for several variations on writing a record to a stream.
 
@@ -49,7 +48,7 @@ Suppose you have a single data buffer that you want to write to a marshalling ar
 </tr>
 <tr class="even">
 <td><p><em>rgWriteEntries</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry" data-raw-source="[&lt;strong&gt;CLFS_WRITE_ENTRY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry)"><strong>CLFS_WRITE_ENTRY</strong></a> structure.</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry" data-raw-source="[&lt;strong&gt;CLFS_WRITE_ENTRY&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_write_entry)"><strong>CLFS_WRITE_ENTRY</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cWriteEntries</em></p></td>
@@ -77,7 +76,7 @@ Suppose you have a single data buffer that you want to write to a marshalling ar
 </tr>
 <tr class="odd">
 <td><p><em>plsn</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn" data-raw-source="[&lt;strong&gt;CLFS_LSN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn)"><strong>CLFS_LSN</strong></a> structure. (This is an output parameter that receives the LSN of the record that is written.)</p></td>
+<td><p>A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn" data-raw-source="[&lt;strong&gt;CLFS_LSN&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn)"><strong>CLFS_LSN</strong></a> structure. (This is an output parameter that receives the LSN of the record that is written.)</p></td>
 </tr>
 </tbody>
 </table>
@@ -141,7 +140,7 @@ You can use **ClfsReserveAndAppendLog** to reserve space in a marshalling area f
 
  
 
-**Note**   Another way to reserve space in a marshalling area is to call [**ClfsAlignReservedLog**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsalignreservedlog) followed by [**ClfsAllocReservedLog**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsallocreservedlog).
+**Note**   Another way to reserve space in a marshalling area is to call [**ClfsAlignReservedLog**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsalignreservedlog) followed by [**ClfsAllocReservedLog**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsallocreservedlog).
 
  
 
@@ -266,11 +265,4 @@ Suppose you want to write a record that has three write entries. The write entri
  
 
 The preceding tables show only a few of the many variations on reserving record space and writing records to CLFS streams. As you think of other variations, keep the following point in mind: The actions performed by **ClfsReserveAndAppendLog** (or **ClfsReserveAndAppendLogAligned**) are atomic. For example, you can make a single call to **ClfsReserveAndAppendLog** that will reserve space for a record and write the record to the stream. The pair of actions (reserve, write) will either succeed as a whole or fail as a whole.
-
- 
-
- 
-
-
-
 

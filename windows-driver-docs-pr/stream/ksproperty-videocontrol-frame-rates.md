@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES
 description: The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available frame rates. This property is optional.
-ms.assetid: f2b6fabc-c03b-4fa5-9e5b-43d7a1c26578
 keywords: ["KSPROPERTY_VIDEOCONTROL_FRAME_RATES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available fra
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_frame_rates_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_frame_rates_s)"><strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a> array</p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_frame_rates_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_frame_rates_s)"><strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a> array</p></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +56,7 @@ The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available fra
 
 The property value (operation data) is a KSMULTIPLE\_ITEM array that describes available frame rates in 100-nanosecond units.
 
-Remarks
--------
+## Remarks
 
 The available frame rates are returned in a KSMULTIPLE\_ITEM array. The application sends the minidriver a KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES request specifying the stream index and image dimensions in a KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES\_S structure. The minidriver returns frame rates information in the caller's KSMULTIPLE\_ITEM array buffer. This buffer has a fixed header (KSMULTIPLE\_ITEM), and a variable length amount of data following it (based on the values in the KSMULTIPLE\_ITEM structure).
 
@@ -66,8 +64,7 @@ Individual values are in 100-nansecond increments.
 
 If the size of the buffer passed to the minidriver is zero, the minidriver should set the **NumberOfBytesToTransfer** member of the HW\_STREAM\_REQUEST\_BLOCK structure passed to the minidriver to the size of the buffer required and return STATUS\_BUFFER\_OVERFLOW.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,16 +82,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
-[**KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_frame_rates_s)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_frame_rates_s)
 

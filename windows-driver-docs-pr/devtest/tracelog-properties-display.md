@@ -1,7 +1,6 @@
 ---
 title: Tracelog Properties Display
 description: Tracelog Properties Display
-ms.assetid: 9adfb4d5-5a0b-4e79-9aa8-ae81e2e1df3e
 keywords:
 - Tracelog WDK , properties
 - tracing WDK , properties

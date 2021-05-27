@@ -1,7 +1,6 @@
 ---
 title: Serial Device Control Requests
 description: Serial Device Control Requests
-ms.assetid: 12dab038-e4da-47b5-ada8-e1c7ee980cde
 keywords:
 - serial devices WDK , device control requests
 - device control requests WDK serial devices
@@ -44,6 +43,6 @@ Serial supports **IOCTL\_SERIAL\_INTERNAL\_XXX** requests that a trusted kernel-
 
 For more information about the high-level operation of [COM ports](configuration-of-com-ports.md), see the information about the communication resources that are supported by the Windows Base Services in the Microsoft Windows SDK.
 
-For more information about Serial I/O requests, see the [Serial Port](https://docs.microsoft.com/windows-hardware/drivers/ddi/_serports/) reference topics.
+For more information about Serial I/O requests, see the [Serial Port](/windows-hardware/drivers/ddi/_serports/) reference topics.
 
-For more information about the IOCTL\_SERIAL\_XXX and IOCTL\_SERIAL\_INTERNAL\_XXX requests see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/) header.
+For more information about the IOCTL\_SERIAL\_XXX and IOCTL\_SERIAL\_INTERNAL\_XXX requests see the [ntddser.h](/windows-hardware/drivers/ddi/ntddser/) header.

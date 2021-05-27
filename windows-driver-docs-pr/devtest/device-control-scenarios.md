@@ -1,7 +1,6 @@
 ---
 title: Device Control Scenarios
 description: Device Control Scenarios
-ms.assetid: 9effc192-77ef-40fd-9ab6-564637019576
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios

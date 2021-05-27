@@ -1,7 +1,6 @@
 ---
 title: Driver annotations for interlocked operands
 description: Driver annotations for interlocked operands
-ms.assetid: 33C85016-765B-42BF-9F38-BB682951B20C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -44,7 +43,7 @@ Function parameters annotated with the \_Interlocked\_operand\_ are expected to 
 
 System-supplied functions are already annotated for interlocked operands.
 
-The following example shows the annotation for the [**InterlockedExchange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockedexchange) function. This annotation specifies that the Target parameter must always be accessed by using an interlocked operation.
+The following example shows the annotation for the [**InterlockedExchange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockedexchange) function. This annotation specifies that the Target parameter must always be accessed by using an interlocked operation.
 
 ```
 LONG  
@@ -58,13 +57,3 @@ InterlockedExchange (
 
 
 [SAL 2.0 Annotations for Drivers](sal-2-annotations-for-windows-drivers.md)
-
-
-
-
-
-
-
-
-
-

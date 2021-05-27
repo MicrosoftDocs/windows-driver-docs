@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_COMPORT
 description: GUID_CLASS_COMPORT
-ms.assetid: 116d05aa-d327-4661-8e59-20134d9c2a1b
 keywords: ["GUID_CLASS_COMPORT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 GUID_CLASS_COMPORT is an obsolete identifier for the device interface class for devices that support a 16550 UART-compatible hardware interface. Use the [**GUID_DEVINTERFACE_COMPORT**](guid-devinterface-comport.md) class identifier for new instances of this class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

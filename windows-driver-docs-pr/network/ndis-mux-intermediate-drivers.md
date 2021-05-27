@@ -1,7 +1,6 @@
 ---
 title: NDIS MUX Intermediate Drivers
 description: NDIS MUX Intermediate Drivers
-ms.assetid: 2c2e0af8-aa33-47fb-8605-26eae184ea22
 keywords:
 - MUX intermediate drivers WDK
 - NDIS MUX intermediate drivers WDK

@@ -1,7 +1,6 @@
 ---
 title: User-Mode Display Drivers
 description: User-Mode Display Drivers
-ms.assetid: cb4e8fb9-a2f0-43b2-ae9e-ccffa850ccd7
 keywords:
 - display driver model WDK Windows Vista , user-mode display drivers
 - Windows Vista display driver model WDK , user-mode display drivers
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_user_mode_display_drivers_gg"></span><span id="DDK_USER_MODE_DISPLAY_DRIVERS_GG"></span>
 
-
-Graphics hardware vendors must write user-mode display drivers for their display adapters. The user-mode display driver is a dynamic-link library (DLL) that is loaded by the Microsoft Direct3D runtime. A user-mode display driver must at least support the [Direct3D version 9 DDI](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/index). User-mode display drivers can also support the [Direct3D version 10 DDI](https://docs.microsoft.com/windows-hardware/drivers/ddi/index). The user-mode display driver can consist of one DLL that supports both Direct3D version 9 DDI and Direct3D version 10 DDI or it can consist of two separate DLLs, one for version 9 and the other for version 10 of Direct3D DDI. The following topics discuss various aspects of the user-mode display driver:
+Graphics hardware vendors must write user-mode display drivers for their display adapters. The user-mode display driver is a dynamic-link library (DLL) that is loaded by the Microsoft Direct3D runtime. A user-mode display driver must at least support the [Direct3D version 9 DDI](/windows-hardware/drivers/ddi/d3dumddi/index). User-mode display drivers can also support the [Direct3D version 10 DDI](/windows-hardware/drivers/ddi/d3d10umddi/). The user-mode display driver can consist of one DLL that supports both Direct3D version 9 DDI and Direct3D version 10 DDI or it can consist of two separate DLLs, one for version 9 and the other for version 10 of Direct3D DDI. The following topics discuss various aspects of the user-mode display driver:
 
 [Returning Error Codes Received from Runtime Functions](returning-error-codes-received-from-runtime-functions.md)
 
@@ -55,10 +53,4 @@ Graphics hardware vendors must write user-mode display drivers for their display
 [Managing Resources for Multiple GPU Scenarios](managing-resources-for-multiple-gpu-scenarios.md)
 
  
-
- 
-
-
-
-
 

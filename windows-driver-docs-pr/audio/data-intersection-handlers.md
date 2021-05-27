@@ -1,7 +1,6 @@
 ---
 title: Data-Intersection Handlers
 description: Data-Intersection Handlers
-ms.assetid: 7206afdb-8a34-4b5a-8cea-87119f426161
 keywords:
 - WDM audio drivers WDK , data-intersection handlers
 - audio drivers WDK , data-intersection handlers
@@ -28,7 +27,7 @@ ms.localizationpriority: medium
 ## <span id="data_intersection_handlers"></span><span id="DATA_INTERSECTION_HANDLERS"></span>
 
 
-This section discusses data-intersection handlers in Microsoft Windows Driver Model (WDM) audio drivers. For a broader discussion of data-intersection handling for KS filters in general, see [DataRange Intersections in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/data-range-intersections-in-avstream).
+This section discusses data-intersection handlers in Microsoft Windows Driver Model (WDM) audio drivers. For a broader discussion of data-intersection handling for KS filters in general, see [DataRange Intersections in AVStream](../stream/data-range-intersections-in-avstream.md).
 
 In older versions of Windows such as Windows XP, the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) constructs a [virtual audio device](virtual-audio-devices.md) by connecting together pairs of audio-filter pins to form an [audio filter graph](audio-filter-graphs.md). Before a source pin on one filter can be connected to a sink pin of another, SysAudio must negotiate a common format that the two pins can use to exchange data. The details of this negotiation are largely delegated to the data-intersection handlers that are implemented in the individual filters.
 
@@ -59,9 +58,4 @@ The remainder of this section describes some of the limitations of the port driv
 
 
  
-
- 
-
-
-
 

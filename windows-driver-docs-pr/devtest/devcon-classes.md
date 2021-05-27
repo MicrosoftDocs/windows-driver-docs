@@ -1,7 +1,6 @@
 ---
 title: DevCon Classes
 description: Lists all device setup classes, including classes that devices on the system do not use. Valid on local and remote computers.
-ms.assetid: 05b9339c-30d1-45df-8f43-20a07e520a42
 keywords:
 - DevCon Classes Driver Development Tools
 topic_type:
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 # DevCon Classes
 
 
-Lists all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), including classes that devices on the system do not use. Valid on local and remote computers.
+Lists all [device setup classes](../install/overview-of-device-setup-classes.md), including classes that devices on the system do not use. Valid on local and remote computers.
 
 ```
     devcon [/m:\\computer] classes 
@@ -54,12 +53,3 @@ devcon /m:\\Server01 classes
 [Example 4: List classes on the local computer](devcon-examples.md#ddk_example_4_list_classes_on_the_local_computer_tools)
 
 [Example 5: List classes on the remote computer](devcon-examples.md#ddk_example_5_list_classes_on_the_remote_computer_tools)
-
-
-
-
-
-
-
-
-

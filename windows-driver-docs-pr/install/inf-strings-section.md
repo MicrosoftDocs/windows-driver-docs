@@ -1,7 +1,6 @@
 ---
 title: INF Strings Section
 description: An INF file must have at least one Strings section to define every strkey token specified elsewhere in that INF.
-ms.assetid: 7352aa82-a7cd-4d15-9a9e-e03985f6006e
 keywords:
 - INF Strings Section Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 An INF file must have at least one **Strings** section to define every %*strkey*% token specified elsewhere in that INF.
 
-```ini
+```inf
 [Strings] | 
 [Strings.LanguageID] ...
  
@@ -71,8 +70,7 @@ To summarize, any string must be enclosed in a pair of double quotation mark cha
 
 The system INF parser discards the outermost enclosing pair of double quotation marks characters delimiting such a string, along with any leading or trailing white space characters outside the double quotation marks string delimiters.
 
-Remarks
--------
+## Remarks
 
 Because the system INF parser strips the outermost pair of enclosing double quotation marks from any **"**<em>quoted string</em>**"** defining a %*strkey*% token, many of the system INF files define all %*strkey*% tokens as **"**<em>quoted string</em><strong>"</strong>s to avoid the unintended loss of leading and trailing whitespaces during INF parsing. The use of **"**<em>quoted string</em><strong>"</strong>s also ensures that especially long string values that wrap across lines cannot be truncated, and that strings with ending backslashes cannot be concatenated to the next line in the INF file.
 
@@ -88,6 +86,9 @@ An INF file can contain only one **Strings** section, along with one **Strings.*
 Windows selects a single **Strings** section that is used to translate all %*strkey*% tokens for the installation. Depending on the current locale of a particular computer, Windows selects a **Strings** section in the following way:
 
 1.  Windows first looks for the *.LanguageID* values in the INF that match the current locale assigned to the computer. If an exact match is found, Windows uses that **Strings.LanguageID** INF section to translate all %*strkey*% tokens that are defined within the INF.
+
+    You do need to duplicate all string tokens across all **Strings.**<i>*</i>**]** sections, even numeric/fixed constants that do not need to be localized.
+
 2.  Otherwise, Windows looks next for a match to the LANG_*XXX* value with the value of SUBLANG_NEUTRAL as the SUBLANG_*XXX*. If such a match is found, Windows uses that INF section to translate all %*strkey*% tokens that are defined within the INF.
 3.  Otherwise, Windows looks next for a match to the LANG_*XXX* value and any valid SUBLANG_*XXX* for the same LANG_*XXX* family. If such a partial match is found, use that Strings.LanguageID INF section to translate all %*strkey*% tokens that are defined within the INF.
 4.  Otherwise, Windows uses the undecorated Strings section to all translate %*strkey*% tokens that are defined within the INF.
@@ -104,12 +105,11 @@ All %*strkey*% tokens must be defined within the INF file in which they are refe
 
 In an INF **Strings** section, the maximum length, in characters, of a substitution string, including a terminating NULL character, is 4096 (Windows Vista and later versions of Windows) and 512 (Windows Server 2003, Windows XP, and Windows 2000). After string substitution, the maximum length, in characters, of an INF file string is 4096, including a terminating NULL character.
 
-Examples
---------
+## Examples
 
 The following example shows a fragment of a **Strings** section from a system-supplied locale-specific *dvd.inf* for installations in English-speaking countries/regions.
 
-```ini
+```inf
 [Strings]
 Msft="Microsoft"
 MfgToshiba="Toshiba"
@@ -119,7 +119,7 @@ Tosh404.DeviceDesc="Toshiba DVD decoder card"
 
 The following example shows string concatenation.
 
-```ini
+```inf
 [OEM Windows System Component Verification]
 OID = 1.3.6.1.4.1.311.10.3.7    ; WHQL OEM OID 
 Notice = "%A% %B% %C% %D% %E%" 

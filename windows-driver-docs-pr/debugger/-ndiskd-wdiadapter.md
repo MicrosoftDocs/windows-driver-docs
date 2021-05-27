@@ -1,9 +1,8 @@
 ---
 title: ndiskd.wdiadapter
 description: The ndiskd.wdiadapter extension displays information about a WDIWiFi CAdapter structure. If you run this extension with no parameters, ndiskd will display a list of all WDIWiFi CAdapter structures.
-ms.assetid: 1AC069E8-CF87-459B-9C56-DDC1A6F765A8
 keywords: ["ndiskd.wdiadapter Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/26/2020
 topic_type:
 - apiref
 api_name:
@@ -15,22 +14,20 @@ ms.localizationpriority: medium
 
 # !ndiskd.wdiadapter
 
-
 The **!ndiskd.wdiadapter** extension displays information about a WDIWiFi!CAdapter structure. If you run this extension with no parameters, !ndiskd will display a list of all WDIWiFi!CAdapter structures.
 
-For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
+For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](../network/wdi-miniport-driver-design-guide.md).
 
-For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/).
 
 ```console
 !ndiskd.wdiadapter [-handle <x>] [-pm] [-rcvfilter] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of a CAdapter object.
+Optional handle of a CAdapter object.
 
 <span id="_______-pm______"></span><span id="_______-PM______"></span> *-pm*   
 Shows power management state and capabilities.
@@ -38,18 +35,17 @@ Shows power management state and capabilities.
 <span id="_______-rcvfilter______"></span><span id="_______-RCVFILTER______"></span> *-rcvfilter*   
 Shows receive filtering capabilities.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Run the **!ndiskd.wdiadapter** extension with no parameters to see a list of all CAdapter objects, along with details for each of their WDI Adapters. In the following example, there is only one CAdapter structure. The handle for its associated WDI Adapter is ffffc804af396000.
 
 ```console
 1: kd> !ndiskd.wdiadapter
-    CAdapter                                                                    
+    CAdapter
     ffffc804af396000 - WDI Adapter
 
 
@@ -128,29 +124,18 @@ RECEIVE FILTER
     Max lookahead split size               0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
+[WDI Miniport Driver Design Guide](../network/wdi-miniport-driver-design-guide.md)
 
-[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
- 
-
- 
-
-
-
-
-
-
+[WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

@@ -1,7 +1,6 @@
 ---
 title: ClientDisplayName element
 description: The required ClientDisplayName element specifies the string that the scanner should display in its user interface.
-ms.assetid: e43e5c51-5f8e-47af-b5da-707b89401935
 keywords: ["ClientDisplayName element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ClientDisplayName** element specifies the string that the scanner should display in its user interface.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ClientDisplayName>
@@ -27,13 +25,11 @@ Usage
 </wscn:ClientDisplayName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -61,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The displayed name enables a user to select the requesting client as a scan destination. When the user chooses this display name and presses the scan button, the WSD Scan Service will send a [**ScanAvailableEvent**](scanavailableevent.md) event to the scan destination that subscribed to receive it.
 

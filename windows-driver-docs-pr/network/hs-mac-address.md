@@ -1,7 +1,6 @@
 ---
 title: HS_MAC_ADDRESS structure
 description: The HS_MAC_ADDRESS structure contains the host Media Access Control (MAC) address.
-ms.assetid: 2d632ed4-4522-48ae-b23d-927517185d73
 keywords: 
 - HS_MAC_ADDRESS structure Network Drivers Starting with Windows Vista
 - PHS_MAC_ADDRESS structure pointer Network Drivers Starting with Windows Vista
@@ -11,13 +10,12 @@ ms.localizationpriority: medium
 
 # HS\_MAC\_ADDRESS structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_MAC\_ADDRESS** structure contains the host Media Access Control (MAC) address.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_MAC_ADDRESS {
@@ -25,14 +23,12 @@ typedef struct _HS_MAC_ADDRESS {
 } HS_MAC_ADDRESS, *PHS_MAC_ADDRESS;
 ```
 
-Members
--------
+## Members
 
 **ucHSMacAddress**  
 The MAC address.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

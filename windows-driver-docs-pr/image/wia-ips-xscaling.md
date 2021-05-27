@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_XSCALING
 description: The WIA\_IPS\_XSCALING property indicates if scaling along the x-axis should be applied to a scan. The WIA minidriver creates and maintains this property.
-ms.assetid: 608ac942-4a37-4490-8715-a1e2ebc4dc64
 keywords: ["WIA_IPS_XSCALING Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 Valid values for the WIA\_IPS\_XSCALING property range from 1 through 65535.
 
@@ -41,8 +39,7 @@ Consider the following examples:
 
 -   200, 2x scaling (200%). The image size is enlarged along the x-axis by 200% (double).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

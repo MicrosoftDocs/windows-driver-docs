@@ -1,7 +1,6 @@
 ---
 title: Get Save Operation Requirements (Function Index 2)
 description: This function returns information about hardware requirements for a save operation.
-ms.assetid: 502DAF89-F390-40A4-846C-C3B4DF3E505D
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function returns information about hardware requirements for a save operation. This function shall succeed for all NVDIMM-Ns that support a host-managed Energy Source (ES) policy, but may return a failure status if the device supports device-managed ES policy and save operation requirements are not available.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

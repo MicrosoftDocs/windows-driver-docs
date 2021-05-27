@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_PORTATTRIBUTES WMI Class
 description: MS\_SMHBA\_PORTATTRIBUTES WMI Class
-ms.assetid: 26f17443-cb89-4c93-9b67-35acb75b6d03
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -43,15 +42,9 @@ class MS_SMHBA_PORTATTRIBUTES
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_PORTATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_portattributes)
+[**MS\_SMHBA\_PORTATTRIBUTES**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_portattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

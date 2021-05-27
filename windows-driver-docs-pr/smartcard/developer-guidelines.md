@@ -1,7 +1,6 @@
 ---
 title: Developer Guidelines
 description: This topic discusses general guidelines for working with and developing smart card minidrivers. 
-ms.assetid: 48999DF6-3AC2-4DEA-8ABC-C427237B31E8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,17 +40,17 @@ Assume that the user authenticates with role 3, corresponding to PIN \#3. This t
 ## <span id="_Session_PINs_and_Secure_PIN_Channel"></span><span id="_session_pins_and_secure_pin_channel"></span><span id="_SESSION_PINS_AND_SECURE_PIN_CHANNEL"></span> Session PINs and Secure PIN Channel
 
 
-When Windows must establish a secure PIN channel for PIN authentication, the following sequence of operations is performed with the minidriver. To comply, a minidriver and the card must be compatible with the following sequence. In particular, session PINs should be transferable between processes and last for only a certain length of time. (We recommend that any session PIN be valid until the cold reset of the card by using the CARD\_AUTHENTICATE\_ SESSION\_PIN flag even if [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)) is called with the GENERATE\_SESSION\_PIN flag set.)
+When Windows must establish a secure PIN channel for PIN authentication, the following sequence of operations is performed with the minidriver. To comply, a minidriver and the card must be compatible with the following sequence. In particular, session PINs should be transferable between processes and last for only a certain length of time. (We recommend that any session PIN be valid until the cold reset of the card by using the CARD\_AUTHENTICATE\_ SESSION\_PIN flag even if [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85)) is called with the GENERATE\_SESSION\_PIN flag set.)
 
 The following behavior should be supported:
 
 1.  Application A, a trusted system process, acquires a handle to the smart card and collects a PIN.
-2.  Application A then calls the card [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)) minidriver function, and passes the PIN that was collected and sets the CARD\_AUTHENTICATE\_GENERATE\_SESSION\_PIN flag. This does not cause the card to be unlocked.
+2.  Application A then calls the card [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85)) minidriver function, and passes the PIN that was collected and sets the CARD\_AUTHENTICATE\_GENERATE\_SESSION\_PIN flag. This does not cause the card to be unlocked.
 3.  Application A stores the session PIN that was generated and releases the handle to the card and card minidriver. The card is not cold reset.
 4.  Application A sends the session PIN and the name of the reader that has the card that was acquired in step 1 to Application B.
 5.  Application B acquires the same card as in 1.
-6.  Application B calls [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)) and passes in the session PIN and sets the CARD\_AUTHENTICATE\_SESSION\_PIN flag. If the session PIN is still valid, the card should be authenticated and valid for use.
-7.  When Application B is finished using the card, it calls [**CardDeauthenticateEx**](https://docs.microsoft.com/previous-versions/dn468713(v=vs.85)) to deauthorize the card.
+6.  Application B calls [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85)) and passes in the session PIN and sets the CARD\_AUTHENTICATE\_SESSION\_PIN flag. If the session PIN is still valid, the card should be authenticated and valid for use.
+7.  When Application B is finished using the card, it calls [**CardDeauthenticateEx**](/previous-versions/dn468713(v=vs.85)) to deauthorize the card.
 
 This behavior has the following practical limitations:
 
@@ -71,7 +70,7 @@ This behavior has the following practical limitations:
 ## <span id="Read-Only_Cards"></span><span id="read-only_cards"></span><span id="READ-ONLY_CARDS"></span>Read-Only Cards
 
 
-To address cards that are personalized outside the Base CSP/KSP environment and are inherently read-only, we have introduced a new concept of read-only cards. If a card is read-only, it must advertise this through the [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)) function (see this section earlier in this specification).
+To address cards that are personalized outside the Base CSP/KSP environment and are inherently read-only, we have introduced a new concept of read-only cards. If a card is read-only, it must advertise this through the [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)) function (see this section earlier in this specification).
 
 Read-only cards must support only a subset of the Version 7 card minidriver interface and are not required to support an administrator PIN.
 
@@ -92,227 +91,227 @@ The following table lists the functions that a read-only card must support.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAcquireContext&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85))"><strong>CardAcquireContext</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468701(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAcquireContext&lt;/strong&gt;](/previous-versions/dn468701(v=vs.85))"><strong>CardAcquireContext</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468715(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteContext&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468715(v=vs.85))"><strong>CardDeleteContext</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468715(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteContext&lt;/strong&gt;](/previous-versions/dn468715(v=vs.85))"><strong>CardDeleteContext</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468704(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAuthenticatePin&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468704(v=vs.85))"><strong>CardAuthenticatePin</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468704(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAuthenticatePin&lt;/strong&gt;](/previous-versions/dn468704(v=vs.85))"><strong>CardAuthenticatePin</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468723(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetChallenge&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468723(v=vs.85))"><strong>CardGetChallenge</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468723(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetChallenge&lt;/strong&gt;](/previous-versions/dn468723(v=vs.85))"><strong>CardGetChallenge</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468702(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAuthenticateChallenge&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468702(v=vs.85))"><strong>CardAuthenticateChallenge</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468702(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAuthenticateChallenge&lt;/strong&gt;](/previous-versions/dn468702(v=vs.85))"><strong>CardAuthenticateChallenge</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468712(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeauthenticate&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468712(v=vs.85))"><strong>CardDeauthenticate</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468712(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeauthenticate&lt;/strong&gt;](/previous-versions/dn468712(v=vs.85))"><strong>CardDeauthenticate</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468742(v=vs.85)" data-raw-source="[&lt;strong&gt;CardUnblockPin&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468742(v=vs.85))"><strong>CardUnblockPin</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468742(v=vs.85)" data-raw-source="[&lt;strong&gt;CardUnblockPin&lt;/strong&gt;](/previous-versions/dn468742(v=vs.85))"><strong>CardUnblockPin</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468705(v=vs.85)" data-raw-source="[&lt;strong&gt;CardChangeAuthenticator&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468705(v=vs.85))"><strong>CardChangeAuthenticator</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468705(v=vs.85)" data-raw-source="[&lt;strong&gt;CardChangeAuthenticator&lt;/strong&gt;](/previous-versions/dn468705(v=vs.85))"><strong>CardChangeAuthenticator</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468710(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateDirectory&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468710(v=vs.85))"><strong>CardCreateDirectory</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468710(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateDirectory&lt;/strong&gt;](/previous-versions/dn468710(v=vs.85))"><strong>CardCreateDirectory</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a></td>
-<td align="left">No</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468736(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468736(v=vs.85))"><strong>CardReadFile</strong></a></td>
-<td align="left">Yes</td>
-<td align="left">Card minidriver must emulate a file system.</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468716(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](/previous-versions/dn468716(v=vs.85))"><strong>CardDeleteDirectory</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetFileInfo&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468727(v=vs.85))"><strong>CardGetFileInfo</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468736(v=vs.85)" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](/previous-versions/dn468736(v=vs.85))"><strong>CardReadFile</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468743(v=vs.85)" data-raw-source="[&lt;strong&gt;CardWriteFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468743(v=vs.85))"><strong>CardWriteFile</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardCreateFile</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteFile&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468711(v=vs.85))"><strong>CardDeleteFile</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468727(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetFileInfo&lt;/strong&gt;](/previous-versions/dn468727(v=vs.85))"><strong>CardGetFileInfo</strong></a></td>
+<td align="left">Yes</td>
+<td align="left">Card minidriver must emulate a file system.</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="/previous-versions/dn468743(v=vs.85)" data-raw-source="[&lt;strong&gt;CardWriteFile&lt;/strong&gt;](/previous-versions/dn468743(v=vs.85))"><strong>CardWriteFile</strong></a></td>
+<td align="left">No</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="/previous-versions/dn468711(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteFile&lt;/strong&gt;](/previous-versions/dn468711(v=vs.85))"><strong>CardDeleteFile</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468721(v=vs.85)" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](/previous-versions/dn468721(v=vs.85))"><strong>CardEnumFiles</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468734(v=vs.85)" data-raw-source="[&lt;strong&gt;CardQueryFreeSpace&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468734(v=vs.85))"><strong>CardQueryFreeSpace</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468734(v=vs.85)" data-raw-source="[&lt;strong&gt;CardQueryFreeSpace&lt;/strong&gt;](/previous-versions/dn468734(v=vs.85))"><strong>CardQueryFreeSpace</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468733(v=vs.85)" data-raw-source="[&lt;strong&gt;CardQueryCapabilities&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468733(v=vs.85))"><strong>CardQueryCapabilities</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468733(v=vs.85)" data-raw-source="[&lt;strong&gt;CardQueryCapabilities&lt;/strong&gt;](/previous-versions/dn468733(v=vs.85))"><strong>CardQueryCapabilities</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468708(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateContainer&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468708(v=vs.85))"><strong>CardCreateContainer</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468708(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateContainer&lt;/strong&gt;](/previous-versions/dn468708(v=vs.85))"><strong>CardCreateContainer</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468709(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateContainerEx&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468709(v=vs.85))"><strong>CardCreateContainerEx</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468709(v=vs.85)" data-raw-source="[&lt;strong&gt;CardCreateContainerEx&lt;/strong&gt;](/previous-versions/dn468709(v=vs.85))"><strong>CardCreateContainerEx</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468714(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteContainer&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468714(v=vs.85))"><strong>CardDeleteContainer</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468714(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeleteContainer&lt;/strong&gt;](/previous-versions/dn468714(v=vs.85))"><strong>CardDeleteContainer</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468725(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetContainerInfo&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468725(v=vs.85))"><strong>CardGetContainerInfo</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468725(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetContainerInfo&lt;/strong&gt;](/previous-versions/dn468725(v=vs.85))"><strong>CardGetContainerInfo</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468737(v=vs.85)" data-raw-source="[&lt;strong&gt;CardRSADecrypt&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468737(v=vs.85))"><strong>CardRSADecrypt</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468737(v=vs.85)" data-raw-source="[&lt;strong&gt;CardRSADecrypt&lt;/strong&gt;](/previous-versions/dn468737(v=vs.85))"><strong>CardRSADecrypt</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468707(v=vs.85)" data-raw-source="[&lt;strong&gt;CardConstructDHAgreement&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468707(v=vs.85))"><strong>CardConstructDHAgreement</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468707(v=vs.85)" data-raw-source="[&lt;strong&gt;CardConstructDHAgreement&lt;/strong&gt;](/previous-versions/dn468707(v=vs.85))"><strong>CardConstructDHAgreement</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468718(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeriveKey&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468718(v=vs.85))"><strong>CardDeriveKey</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468718(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeriveKey&lt;/strong&gt;](/previous-versions/dn468718(v=vs.85))"><strong>CardDeriveKey</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468719(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDestroyDHAgreement&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468719(v=vs.85))"><strong>CardDestroyDHAgreement</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468719(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDestroyDHAgreement&lt;/strong&gt;](/previous-versions/dn468719(v=vs.85))"><strong>CardDestroyDHAgreement</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468741(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSignData&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468741(v=vs.85))"><strong>CardSignData</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468741(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSignData&lt;/strong&gt;](/previous-versions/dn468741(v=vs.85))"><strong>CardSignData</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468735(v=vs.85)" data-raw-source="[&lt;strong&gt;CardQueryKeySizes&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468735(v=vs.85))"><strong>CardQueryKeySizes</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468735(v=vs.85)" data-raw-source="[&lt;strong&gt;CardQueryKeySizes&lt;/strong&gt;](/previous-versions/dn468735(v=vs.85))"><strong>CardQueryKeySizes</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAuthenticateEx&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85))"><strong>CardAuthenticateEx</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468703(v=vs.85)" data-raw-source="[&lt;strong&gt;CardAuthenticateEx&lt;/strong&gt;](/previous-versions/dn468703(v=vs.85))"><strong>CardAuthenticateEx</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468706(v=vs.85)" data-raw-source="[&lt;strong&gt;CardChangeAuthenticatorEx&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468706(v=vs.85))"><strong>CardChangeAuthenticatorEx</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468706(v=vs.85)" data-raw-source="[&lt;strong&gt;CardChangeAuthenticatorEx&lt;/strong&gt;](/previous-versions/dn468706(v=vs.85))"><strong>CardChangeAuthenticatorEx</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468713(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeauthenticateEx&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468713(v=vs.85))"><strong>CardDeauthenticateEx</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468713(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDeauthenticateEx&lt;/strong&gt;](/previous-versions/dn468713(v=vs.85))"><strong>CardDeauthenticateEx</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468724(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetChallengeEx&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468724(v=vs.85))"><strong>CardGetChallengeEx</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468724(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetChallengeEx&lt;/strong&gt;](/previous-versions/dn468724(v=vs.85))"><strong>CardGetChallengeEx</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468726(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetContainerProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468726(v=vs.85))"><strong>CardGetContainerProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468726(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetContainerProperty&lt;/strong&gt;](/previous-versions/dn468726(v=vs.85))"><strong>CardGetContainerProperty</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468738(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSetContainerProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468738(v=vs.85))"><strong>CardSetContainerProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468738(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSetContainerProperty&lt;/strong&gt;](/previous-versions/dn468738(v=vs.85))"><strong>CardSetContainerProperty</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85))"><strong>CardGetProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468729(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetProperty&lt;/strong&gt;](/previous-versions/dn468729(v=vs.85))"><strong>CardGetProperty</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468740(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSetProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468740(v=vs.85))"><strong>CardSetProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468740(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSetProperty&lt;/strong&gt;](/previous-versions/dn468740(v=vs.85))"><strong>CardSetProperty</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468757(v=vs.85)" data-raw-source="[&lt;strong&gt;MDImportSessionKey&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468757(v=vs.85))"><strong>MDImportSessionKey</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468757(v=vs.85)" data-raw-source="[&lt;strong&gt;MDImportSessionKey&lt;/strong&gt;](/previous-versions/dn468757(v=vs.85))"><strong>MDImportSessionKey</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468756(v=vs.85)" data-raw-source="[&lt;strong&gt;MDEncryptData&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468756(v=vs.85))"><strong>MDEncryptData</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468756(v=vs.85)" data-raw-source="[&lt;strong&gt;MDEncryptData&lt;/strong&gt;](/previous-versions/dn468756(v=vs.85))"><strong>MDEncryptData</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468731(v=vs.85)" data-raw-source="[&lt;strong&gt;CardImportSessionKey&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468731(v=vs.85))"><strong>CardImportSessionKey</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468731(v=vs.85)" data-raw-source="[&lt;strong&gt;CardImportSessionKey&lt;/strong&gt;](/previous-versions/dn468731(v=vs.85))"><strong>CardImportSessionKey</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468730(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetSharedKeyHandle&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468730(v=vs.85))"><strong>CardGetSharedKeyHandle</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468730(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetSharedKeyHandle&lt;/strong&gt;](/previous-versions/dn468730(v=vs.85))"><strong>CardGetSharedKeyHandle</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468722(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetAlgorithmProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468722(v=vs.85))"><strong>CardGetAlgorithmProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468722(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetAlgorithmProperty&lt;/strong&gt;](/previous-versions/dn468722(v=vs.85))"><strong>CardGetAlgorithmProperty</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468728(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetKeyProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468728(v=vs.85))"><strong>CardGetKeyProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468728(v=vs.85)" data-raw-source="[&lt;strong&gt;CardGetKeyProperty&lt;/strong&gt;](/previous-versions/dn468728(v=vs.85))"><strong>CardGetKeyProperty</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468739(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSetKeyProperty&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468739(v=vs.85))"><strong>CardSetKeyProperty</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468739(v=vs.85)" data-raw-source="[&lt;strong&gt;CardSetKeyProperty&lt;/strong&gt;](/previous-versions/dn468739(v=vs.85))"><strong>CardSetKeyProperty</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468720(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDestroyKey&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468720(v=vs.85))"><strong>CardDestroyKey</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468720(v=vs.85)" data-raw-source="[&lt;strong&gt;CardDestroyKey&lt;/strong&gt;](/previous-versions/dn468720(v=vs.85))"><strong>CardDestroyKey</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/previous-versions/dn468732(v=vs.85)" data-raw-source="[&lt;strong&gt;CardProcessEncryptedData&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/dn468732(v=vs.85))"><strong>CardProcessEncryptedData</strong></a></td>
+<td align="left"><a href="/previous-versions/dn468732(v=vs.85)" data-raw-source="[&lt;strong&gt;CardProcessEncryptedData&lt;/strong&gt;](/previous-versions/dn468732(v=vs.85))"><strong>CardProcessEncryptedData</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
@@ -358,7 +357,7 @@ The following requirements should be considered when developing a minidriver for
 
 -   All expected Base CSP/KSP files, with the exception of the ‘msroots’ file (such as ‘cardcf’ and ‘cardid’) must exist on the read-only card (or must be virtualized through the minidriver interface).
 -   A read-only card must contain at least one key on the card that is protected by the primary card (that is, ROLE\_USER) PIN.
--   A read-only card is allowed to not contain an admin key. If this is the situation, it is expected that the minidriver will not support [**CardGetChallenge**](https://docs.microsoft.com/previous-versions/dn468723(v=vs.85)), [**CardAuthenticateChallenge**](https://docs.microsoft.com/previous-versions/dn468702(v=vs.85)), and [**CardUnblockPin**](https://docs.microsoft.com/previous-versions/dn468742(v=vs.85)).
+-   A read-only card is allowed to not contain an admin key. If this is the situation, it is expected that the minidriver will not support [**CardGetChallenge**](/previous-versions/dn468723(v=vs.85)), [**CardAuthenticateChallenge**](/previous-versions/dn468702(v=vs.85)), and [**CardUnblockPin**](/previous-versions/dn468742(v=vs.85)).
 -   When queried, a read-only card should return 0 bytes available and 0 containers available.
 -   Only the CP\_PARENT\_WINDOW and CP\_PIN\_CONTEXT\_STRING properties should be allowed to be set on a read-only card.
 -   For a read-only card, the CP\_SUPPORTS\_WIN\_X509\_ENROLLMENT property should be false.
@@ -366,10 +365,10 @@ The following requirements should be considered when developing a minidriver for
 ## <span id="Cache_Modes"></span><span id="cache_modes"></span><span id="CACHE_MODES"></span>Cache Modes
 
 
-The Base CSP/KSP supports three different modes of caching depending on the cache mode that was returned by the [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)) called with the parameter CP\_CARD\_CACHE\_MODE:
+The Base CSP/KSP supports three different modes of caching depending on the cache mode that was returned by the [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)) called with the parameter CP\_CARD\_CACHE\_MODE:
 
 -   If the returned flag is CP\_CACHE\_MODE\_GLOBAL\_CACHE and the card reported the CP\_READ\_ONLY\_CARD property as TRUE, the Base CSP/KSP data cache is a global cache. If the card is read-only, the Base CSP/KSP does not write to the cardcf file. If the card can be written to the Base CSP/KSP, it will operate as today.
--   For more information about CP\_CARD\_CACHE\_MODE and CP\_CACHE\_MODE\_GLOBAL\_CACHE, see [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)).
+-   For more information about CP\_CARD\_CACHE\_MODE and CP\_CACHE\_MODE\_GLOBAL\_CACHE, see [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)).
 -   When the returned flag is CP\_CACHE\_MODE\_SESSION\_ONLY, the Base CSP/KSP operates so that the data cache is cleared when it detects that the card has been removed or reinserted. In other words, we have defined a session to be the span between card insertion and removal.
 -   The cache is also implemented for each process and is not global. This mode is designed for read-only cards that do not change on a user’s PC, but rather at some government station or other external site. (This mode is supported for read/write cards, but we recommend the global cache for these cards.)
 -   If the card is read-only and there is a chance that the card will change on the user’s PC (by means other than Base CSP/KSP), the application should use the no cache mode that is described later in this specification to avoid the situation in which the cache could contain stale data.
@@ -665,9 +664,5 @@ Group Policy Settings for Microsoft CNG Smart Card Key Storage Provider are loca
     -   CRYPT\_DEFAULT\_CONTAINER\_OPTIONAL
     -   CRYPT\_DELETEKEYSET
     -   CRYPT\_VERIFYCONTEXT
--   [**CardDeleteContext**](https://docs.microsoft.com/previous-versions/dn468715(v=vs.85)) can be called even after *DllMain* was called with DLL\_PROCESS\_DETACH.
-
- 
-
- 
+-   [**CardDeleteContext**](/previous-versions/dn468715(v=vs.85)) can be called even after *DllMain* was called with DLL\_PROCESS\_DETACH.
 

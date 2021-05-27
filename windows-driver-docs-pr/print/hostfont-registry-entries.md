@@ -1,7 +1,6 @@
 ---
 title: Hostfont Registry Entries
 description: Hostfont Registry Entries
-ms.assetid: f7ce2591-197a-4094-8b21-5e0cc48506ea
 keywords:
 - PostScript Printer Driver WDK print , HostFontXxx registry entries
 - Pscript WDK print , HostFontXxx registry entries
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-An OEM plug-in can notify the Pscript5 driver that the %hostfont%-ready PostScript interpreter has a set of fonts and CIDFonts that are available to use and are identical to those that the Pscript5 driver might download in the course of a print job. Notification of which fonts are to be handled this way is done by placing keys in the registry. The Pscript5 driver checks the registry for new information when its [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) function is called. The plug-in can then ensure that the data is current before the PDEV is enabled.
+An OEM plug-in can notify the Pscript5 driver that the %hostfont%-ready PostScript interpreter has a set of fonts and CIDFonts that are available to use and are identical to those that the Pscript5 driver might download in the course of a print job. Notification of which fonts are to be handled this way is done by placing keys in the registry. The Pscript5 driver checks the registry for new information when its [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function is called. The plug-in can then ensure that the data is current before the PDEV is enabled.
 
 The following table lists the %hostfont% registry entry names, their types, and their values. The OEM plug-in should call SetPrinterData (described in the Microsoft Windows SDK documentation) to set these entry names. The HostFont*Xxx* entry names are mutually exclusive. That is, only one of the following entry names can exist in the registry at any given time.
 
@@ -78,9 +77,4 @@ The existence of the HostFontHasMostFonts key with any value assigned to it mean
 HostFontIncludesFonts is similar to HostFontExceptFonts except that it explicitly lists PostScript font names that are available on the target interpreter.
 
  
-
- 
-
-
-
 

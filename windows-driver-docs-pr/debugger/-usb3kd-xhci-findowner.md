@@ -1,7 +1,6 @@
 ---
 title: usb3kd-xhci_findowner
 description: The usb3kd.xhci_findowner command finds the owner a common buffer.
-ms.assetid: 6AA3E41C-5838-4425-B1CE-37A13E8F755E
 keywords: ["usb3kd.xhci_findowner Windows Debugging"]
 ms.date: 10/18/2018
 topic_type:
@@ -33,13 +32,11 @@ Virtual or physical address of a common buffer.
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 A common buffer is a block of physically contiguous memory that’s addressable by hardware. The USB 3.0 driver stack uses common buffers to communicate with USB 3.0 host controllers. Suppose the system crashes, and you come across an address that you suspect might be common buffer memory. If the address is common buffer memory, this command tells you which USB 3.0 host controller the memory belongs to (in case you that you have more than one USB 3.0 controller) and what the memory is used for.
 
-Examples
---------
+## Examples
 
 The following example calls [**!xhci\_resourceusage**](-usb3kd-xhci-resourceusage.md) to list the addresses of some common buffers.
 
@@ -123,14 +120,7 @@ The **!xhci\_findowner** command is especially useful when you have an address i
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

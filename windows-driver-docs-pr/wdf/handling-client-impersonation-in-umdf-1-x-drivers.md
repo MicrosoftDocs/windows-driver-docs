@@ -1,7 +1,6 @@
 ---
 title: Handling Client Impersonation in UMDF 1.x Drivers
 description: Handling Client Impersonation in UMDF 1.x Drivers
-ms.assetid: 25beab8c-e6b8-479b-ad60-fcc3b5b56a6d
 keywords:
 - User-Mode Driver Framework WDK , impersonation
 - UMDF WDK , impersonation
@@ -34,7 +33,7 @@ Both the UMDF driver's installation package and the client application must enab
 
 The UMDF driver and framework handle impersonation for an I/O request in the following sequence:
 
-1.  The driver calls the [**IWDFIoRequest::Impersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) method to specify the required impersonation level and an [**IImpersonateCallback::OnImpersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iimpersonatecallback-onimpersonate) callback function.
+1.  The driver calls the [**IWDFIoRequest::Impersonate**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) method to specify the required impersonation level and an [**IImpersonateCallback::OnImpersonate**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iimpersonatecallback-onimpersonate) callback function.
 
 2.  The framework checks the requested impersonation level. If the requested level is greater than the level that the UMDF driver's installation package and the client application allow, the impersonation request fails. Otherwise, the framework impersonates the client and immediately calls the **OnImpersonate** callback function.
 
@@ -42,15 +41,15 @@ The **OnImpersonate** callback function must perform only the operations that re
 
 UMDF does not allow a driver's **OnImpersonate** callback function to call any of the framework's object methods. This ensures that the driver does not expose the impersonation level to other driver callback functions or other drivers.
 
-**Note**   In versions 1.0 through 1.7 of UMDF, [**IWDFIoRequest::Impersonate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) grants the highest impersonation level that the client application and INF file allow, even if the impersonation level that the driver requests is lower. In UMFD versions 1.9 and later, the **Impersonate** method grants only the impersonation level that the driver requests.
+**Note**   In versions 1.0 through 1.7 of UMDF, [**IWDFIoRequest::Impersonate**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) grants the highest impersonation level that the client application and INF file allow, even if the impersonation level that the driver requests is lower. In UMFD versions 1.9 and later, the **Impersonate** method grants only the impersonation level that the driver requests.
 
  
 
 ### Passing Credentials down the Driver Stack
 
-When your driver receives a [**WdfRequestCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_type)-typed I/O request, the driver might forward the I/O request down the driver stack to a kernel-mode driver. Kernel-mode drivers do not have the impersonation capability that **IWDFIoRequest::Impersonate** provides to UMDF-based drivers.
+When your driver receives a [**WdfRequestCreate**](/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_type)-typed I/O request, the driver might forward the I/O request down the driver stack to a kernel-mode driver. Kernel-mode drivers do not have the impersonation capability that **IWDFIoRequest::Impersonate** provides to UMDF-based drivers.
 
-Therefore, if you want a kernel-mode driver to receive the client's user credentials (rather the credentials of the [driver host process](umdf-driver-host-process.md)), the driver must set the [**WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_send_options_flags) flag when it calls [**IWDFIoRequest::Send**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-send) to send the create request to the I/O target. The **Send** method returns an error code if the impersonation attempt fails, unless the driver also sets the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATION\_IGNORE\_FAILURE** flag.
+Therefore, if you want a kernel-mode driver to receive the client's user credentials (rather the credentials of the [driver host process](umdf-driver-host-process.md)), the driver must set the [**WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT**](/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_send_options_flags) flag when it calls [**IWDFIoRequest::Send**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-send) to send the create request to the I/O target. The **Send** method returns an error code if the impersonation attempt fails, unless the driver also sets the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATION\_IGNORE\_FAILURE** flag.
 
 The driver does not have to call **IWDFIoRequest::Impersonate** before it sends the request to the I/O target.
 
@@ -73,10 +72,4 @@ To reduce the chance of an "elevation of privilege" attack, you should:
     Your **OnImpersonate** callback function should contain a small section of code that performs only the operation that requires impersonation. For example, if your driver accesses a protected file, it requires impersonation only when it opens the file handle. It does not require impersonation to read from or write to the file.
 
  
-
- 
-
-
-
-
 

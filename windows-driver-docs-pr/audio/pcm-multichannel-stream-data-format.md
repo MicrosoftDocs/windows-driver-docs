@@ -1,7 +1,6 @@
 ---
 title: PCM Multichannel Stream Data Format
 description: PCM Multichannel Stream Data Format
-ms.assetid: cab528a7-5db4-4e37-89c4-35dfc472f0ae
 keywords:
 - PCM multichannel stream data formats WDK
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="pcm_multichannel_stream_data_format"></span><span id="PCM_MULTICHANNEL_STREAM_DATA_FORMAT"></span>
 
 
-This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM multichannel stream.
+This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM multichannel stream.
 
 ```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT) + sizeof(WAVEFORMATEXTENSIBLE);
@@ -37,9 +36,4 @@ This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](http
 ```
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting UMDF 2.0 Driver Crashes
 description: Starting in User-Mode Driver Framework (UMDF) version 2, you can use a subset of the debugger extension commands implemented in Wdfkd.dll to debug a UMDF driver.
-ms.assetid: df1bfc10-379b-457f-a9c8-40fa10048f81
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,31 +32,24 @@ AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHos
   **** Note that driver host process may get terminated if you go past this break, making it difficult to debug the problem!
   ```
 
-- Use [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) to display information about the failure, and additional UMDF extension commands you can try.
-- Use [**!process 0 0x1f wudfhost.exe**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process) to list all Wudfhost.exe driver host processes, including thread stack information.
+- Use [**!analyze**](../debugger/-analyze.md) to display information about the failure, and additional UMDF extension commands you can try.
+- Use [**!process 0 0x1f wudfhost.exe**](../debugger/-process.md) to list all Wudfhost.exe driver host processes, including thread stack information.
 
-  You can also use !wdfkd.wdfumtriage and [**!wdfkd.wdfldr**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfldr) to display all drivers that are currently bound to WDF. When you click on the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then click on the process address to display information specific to that process.
+  You can also use !wdfkd.wdfumtriage and [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) to display all drivers that are currently bound to WDF. When you click on the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then click on the process address to display information specific to that process.
 
-- If necessary, use [**.process /r /p *Process***](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process--set-process-context-) to switch process context to that of the Wudfhost process that is hosting your driver. Use [**.cache forcedecodeuser**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-cache--set-cache-size-) and **lmu** to verify that your driver is hosted in the current process.
-- Examine thread call stacks ([**!thread *Address***](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread)) to determine if a driver callback timed out. Look at the tick count for the threads. In Windows 8.1, the reflector times out after one minute.
-- Use [**!wdfkd.wdfdriverinfo MyDriver.dll 0x10**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) to display the device tree in verbose form. Then click on [**!wdfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevice). This command displays detailed power, power policy, and Plug and Play (PnP) state information.
-- Use [**!wdfkd.wdfumirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirps) to look for pending IRPs.
-- Use [**!wdfkd.wdfdevicequeues**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevicequeues) to check the status of the driver's queues.
-- In a kernel-mode debugging session, you can use [**!wmitrace.logdump WudfTrace**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wmitrace-logdump) to display the trace log.
+- If necessary, use [**.process /r /p *Process***](../debugger/-process--set-process-context-.md) to switch process context to that of the Wudfhost process that is hosting your driver. Use [**.cache forcedecodeuser**](../debugger/-cache--set-cache-size-.md) and **lmu** to verify that your driver is hosted in the current process.
+- Examine thread call stacks ([**!thread *Address***](../debugger/-thread.md)) to determine if a driver callback timed out. Look at the tick count for the threads. In Windows 8.1, the reflector times out after one minute.
+- Use [**!wdfkd.wdfdriverinfo MyDriver.dll 0x10**](../debugger/-wdfkd-wdfdriverinfo.md) to display the device tree in verbose form. Then click on [**!wdfdevice**](../debugger/-wdfkd-wdfdevice.md). This command displays detailed power, power policy, and Plug and Play (PnP) state information.
+- Use [**!wdfkd.wdfumirps**](../debugger/-wdfkd-wdfumirps.md) to look for pending IRPs.
+- Use [**!wdfkd.wdfdevicequeues**](../debugger/-wdfkd-wdfdevicequeues.md) to check the status of the driver's queues.
+- In a kernel-mode debugging session, you can use [**!wmitrace.logdump WudfTrace**](../debugger/-wmitrace-logdump.md) to display the trace log.
 
 ## Displaying the UMDF 2.0 IFR Log
 
 
-In a kernel-mode debugging session, you can use the [**!wdfkd.wdflogdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdflogdump) extension command to display the Windows Driver Frameworks (WDF) In-flight Recorder (IFR) log records, if available.
+In a kernel-mode debugging session, you can use the [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md) extension command to display the Windows Driver Frameworks (WDF) In-flight Recorder (IFR) log records, if available.
 
 ## Finding Memory Dump Files
 
 
 See [Determining Why the Reflector Terminated the Host Process](determining-why-the-reflector-terminated-the-host-process.md) for information on finding user-mode dump files. See [Using WPP Software Tracing in UMDF Drivers](using-wpp-software-tracing-in-umdf-drivers.md) for information on how to set the **LogMinidumpType** registry value to specify the type of information stored in the minidump file.
-
-
-
-
-
-
-

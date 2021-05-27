@@ -1,7 +1,6 @@
 ---
 title: CLFS Log Sequence Numbers
 description: CLFS Log Sequence Numbers
-ms.assetid: 4637fa0c-2f19-4f0c-bf13-f4ccac2e7284
 keywords: ["Common Log File System WDK kernel , log sequence numbers", "CLFS WDK kernel , log sequence numbers", "log sequence numbers WDK CLFS", "LSNs WDK CLFS", "base LSNs WDK CLFS", "last LSNs WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS", "active stream portion WDK CLFS", "stream active portion WDK CLFS", "streams WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -17,13 +16,13 @@ In the Common Log File System (CLFS), each log record in a given stream is uniqu
 
 The LSNs created for a particular stream form a strictly increasing sequence. That is, the LSN assigned to a log record in a given stream is always greater than the LSNs assigned to log records previously written to that same stream. The following functions are available for comparing the LSNs of log records in a given stream.
 
-[**ClfsLsnNull**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnnull)
+[**ClfsLsnNull**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnnull)
 
-[**ClfsLsnEqual**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnequal)
+[**ClfsLsnEqual**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnequal)
 
-[**ClfsLsnGreater**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsngreater)
+[**ClfsLsnGreater**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsngreater)
 
-[**ClfsLsnLess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnless)
+[**ClfsLsnLess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnless)
 
 The constants CLFS\_LSN\_NULL and CLFS\_LSN\_INVALID are the lower and upper boundaries for all valid LSNs. Any valid LSN is greater than or equal to CLFS\_LSN\_NULL. Also, any valid LSN is strictly less than CLFS\_LSN\_INVALID. Note that CLFS\_LSN\_NULL is a valid LSN, whereas CLFS\_LSN\_INVALID is not a valid LSN. Even so, you can compare CLFS\_LSN\_INVALID to other LSNs by using the functions in the previous list.
 
@@ -31,11 +30,11 @@ For each stream, CLFS keeps track of two special LSNs: the base LSN and the last
 
 ### Base LSN
 
-When a client writes the first record in a stream, CLFS sets the base LSN to the LSN of that first record. The base LSN remains unchanged until a client changes it. When the stream's clients no longer need the records prior to a certain point in the stream, they can update the base LSN by calling [**ClfsAdvanceLogBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsadvancelogbase) or [**ClfsWriteRestartArea**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea). For example, if the clients no longer need the first five log records, they can set the base LSN to the LSN of the sixth record.
+When a client writes the first record in a stream, CLFS sets the base LSN to the LSN of that first record. The base LSN remains unchanged until a client changes it. When the stream's clients no longer need the records prior to a certain point in the stream, they can update the base LSN by calling [**ClfsAdvanceLogBase**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsadvancelogbase) or [**ClfsWriteRestartArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea). For example, if the clients no longer need the first five log records, they can set the base LSN to the LSN of the sixth record.
 
 ### Last LSN
 
-As clients write records to a stream, CLFS adjusts the last LSN so that it is always the LSN of the last record written. If the clients no longer need the records after a certain point in the stream, they can update the last LSN by calling [**ClfsSetEndOfLog**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-clfssetendoflog). For example, if the clients no longer need any records written after the tenth record, they can truncate the stream by setting the last LSN to the LSN of the tenth record.
+As clients write records to a stream, CLFS adjusts the last LSN so that it is always the LSN of the last record written. If the clients no longer need the records after a certain point in the stream, they can update the last LSN by calling [**ClfsSetEndOfLog**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfssetendoflog). For example, if the clients no longer need any records written after the tenth record, they can truncate the stream by setting the last LSN to the LSN of the tenth record.
 
 ### Active portion of a stream
 
@@ -70,9 +69,4 @@ The arrows in the following diagram illustrate how the undo-next LSN provides a 
 ![diagram illustrating previous lsn and undo-next lsn pointers](images/clfsundonext.gif)
 
  
-
- 
-
-
-
 

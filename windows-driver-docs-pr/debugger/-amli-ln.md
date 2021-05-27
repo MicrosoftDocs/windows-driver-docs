@@ -1,7 +1,6 @@
 ---
 title: amli ln
 description: The amli ln extension displays the specified method or the method containing a given address.
-ms.assetid: f763f185-cce2-4bfb-948d-243acfb53aaa
 keywords: ["amli ln Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -41,8 +40,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If neither *MethodName* nor *CodeAddress* is specified, the method associated with the current context is displayed.
 

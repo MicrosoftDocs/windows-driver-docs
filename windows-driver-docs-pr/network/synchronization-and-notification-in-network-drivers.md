@@ -1,7 +1,6 @@
 ---
 title: Synchronization and Notification in Network Drivers
 description: Synchronization and Notification in Network Drivers
-ms.assetid: 9fd9306f-5431-485f-9d6b-f7d6f25ea1ce
 keywords:
 - synchronizing access to resources WDK networking
 - synchronization WDK networking
@@ -44,7 +43,7 @@ A *spin lock* provides a synchronization mechanism for protecting resources shar
 
 Another characteristic of spin locks is the associated IRQL. Attempted acquisition of a spin lock temporarily raises the IRQL of the requesting thread to the IRQL associated with the spin lock. This prevents all lower IRQL threads on the same processor from preempting the executing thread. Threads, on the same processor, running at a higher IRQL can preempt the executing thread, but these threads cannot acquire the spin lock because it has a lower IRQL. Therefore, after a thread has acquired a spin lock, no other threads can acquire the spin lock until it has been released. A well-written network driver minimizes the amount of time a spin lock is held.
 
-A typical use for a spin lock is to protect a queue. For example, the miniport driver send function, [*MiniportSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists), might queue packets passed to it by a protocol driver. Because other driver functions also use this queue, *MiniportSendNetBufferLists* must protect the queue with a spin lock so that only one thread at a time can manipulate the links or contents. *MiniportSendNetBufferLists* acquires the spin lock, adds the packet to the queue and then releases the spin lock. Using a spin lock ensures that the thread holding the lock is the only thread modifying the queue links while the packet is safely added to the queue. When the miniport driver takes the packets off the queue, such an access is protected by the same spin lock. When running instructions that modify the head of the queue or any of the link fields making up the queue, the driver must protect the queue with a spin lock.
+A typical use for a spin lock is to protect a queue. For example, the miniport driver send function, [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists), might queue packets passed to it by a protocol driver. Because other driver functions also use this queue, *MiniportSendNetBufferLists* must protect the queue with a spin lock so that only one thread at a time can manipulate the links or contents. *MiniportSendNetBufferLists* acquires the spin lock, adds the packet to the queue and then releases the spin lock. Using a spin lock ensures that the thread holding the lock is the only thread modifying the queue links while the packet is safely added to the queue. When the miniport driver takes the packets off the queue, such an access is protected by the same spin lock. When running instructions that modify the head of the queue or any of the link fields making up the queue, the driver must protect the queue with a spin lock.
 
 A driver must take care not to overprotect a queue. For example, the driver can perform some operations (for example, filling in a field containing the length) in the network driver-reserved field of a packet before it queues the packet. The driver can do this outside the code region protected by the spin lock, but must do it before queuing the packet. After the packet is on the queue and the running thread releases the spin lock, the driver must assume that other threads can dequeue the packet immediately.
 
@@ -52,7 +51,7 @@ A driver must take care not to overprotect a queue. For example, the driver can 
 
 To avoid a possible deadlock, an NDIS driver should release all NDIS spin locks before calling an NDIS function other than an **Ndis*Xxx*Spinlock** function. If an NDIS driver does not comply with this requirement, a deadlock could occur as follows:
 
-1. Thread 1, which holds NDIS spin lock A, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock B by calling the [**NdisAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisacquirespinlock) function.
+1. Thread 1, which holds NDIS spin lock A, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock B by calling the [**NdisAcquireSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisacquirespinlock) function.
 
 2. Thread 2, which holds NDIS spin lock B, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock A by calling the **NdisAcquireSpinLock** function.
 
@@ -81,13 +80,13 @@ Using spin locks impacts performance and, in general, a driver should not use ma
 
 Timers are used for polling or timing out operations. A driver creates a timer and associates a function with the timer. The associated function is called when the period specified in the timer expires. Timers can be one-shot or periodic. Once a periodic timer is set, it will continue to fire at the expiration of every period until explicitly cleared. A one-shot timer must be reset each time it fires.
 
-Timers are created and initialized by calling [**NdisAllocateTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject) and set by calling [**NdisSetTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject). If a nonperiodic timer is used, it must reset by calling **NdisSetTimerObject**. A timer is cleared by calling [**NdisCancelTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscanceltimerobject).
+Timers are created and initialized by calling [**NdisAllocateTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject) and set by calling [**NdisSetTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject). If a nonperiodic timer is used, it must reset by calling **NdisSetTimerObject**. A timer is cleared by calling [**NdisCancelTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscanceltimerobject).
 
 ### Events
 
-Events are used to synchronize operations between two threads of execution. An event is allocated by a driver and initialized by calling [**NdisInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisinitializeevent). A thread running at IRQL = PASSIVE\_LEVEL calls [**NdisWaitEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswaitevent) to put itself into a wait state. When a driver thread waits on an event, it specifies a maximum time to wait as well as the event to be waited on. The thread's wait is satisfied when [**NdisSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetevent) is called causing the event to be signaled, or when the specified maximum wait-time interval expires, whichever occurs first.
+Events are used to synchronize operations between two threads of execution. An event is allocated by a driver and initialized by calling [**NdisInitializeEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisinitializeevent). A thread running at IRQL = PASSIVE\_LEVEL calls [**NdisWaitEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswaitevent) to put itself into a wait state. When a driver thread waits on an event, it specifies a maximum time to wait as well as the event to be waited on. The thread's wait is satisfied when [**NdisSetEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetevent) is called causing the event to be signaled, or when the specified maximum wait-time interval expires, whichever occurs first.
 
-Typically, the event is set by a cooperating thread that calls **NdisSetEvent**. Events are unsignaled when they are created and must be set in order to signal waiting threads. Events remain signaled until [**NdisResetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisresetevent) is called.
+Typically, the event is set by a cooperating thread that calls **NdisSetEvent**. Events are unsignaled when they are created and must be set in order to signal waiting threads. Events remain signaled until [**NdisResetEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisresetevent) is called.
 
 ## Related topics
 
@@ -95,11 +94,4 @@ Typically, the event is set by a cooperating thread that calls **NdisSetEvent**.
 [Multiprocessor Support in Network Drivers](multiprocessor-support-in-network-drivers.md)
 
  
-
- 
-
-
-
-
-
 

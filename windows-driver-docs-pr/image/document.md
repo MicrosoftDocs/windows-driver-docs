@@ -1,7 +1,6 @@
 ---
 title: Document element
 description: The required Document element contains the details about one of the documents that are scanned during a scan job.
-ms.assetid: 42710d90-22ec-4c5f-ae4c-4a14ed494758
 keywords: ["Document element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Document** element contains the details about one of the documents that are scanned during a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Document>
@@ -27,8 +25,7 @@ Usage
 </wscn:Document>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

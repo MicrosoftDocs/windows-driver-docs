@@ -1,17 +1,15 @@
 ---
 title: Windows automatically selects optimal character encoding
 description: Windows automatically selects optimal character encoding
-ms.assetid: 3fde6e89-c9ea-43d2-a999-506686b223f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Windows automatically selects optimal character encoding
 
-
 Windows 8, Windows 8.1, and Windows 10 choose the optimal character encoding to use when it sends a SMS message, based on the most efficient encoding that is supported by the message contents. SMS is encoded in a 7-bit character set, unless it contains at least one invalid character, in which case the whole message is encoded in Unicode.
 
-**JavaScript code example for sending SMS messages using text-mode interface**
+## JavaScript code example for sending SMS messages using text-mode interface
 
 ``` syntax
 try
@@ -44,58 +42,14 @@ Windows 8, Windows 8.1, and Windows 10 support common character sets for mobi
 
 The following table lists the character encodings supported by the text-mode API:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Network type</th>
-<th>Character sets</th>
-<th>Character limit for single SMS segment</th>
-<th>Character limit for multi-part SMS segments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>GSM</p></td>
-<td><p>GSM 7-bit default alphabet and GSM 7-bit default alphabet extension table</p></td>
-<td><p>160</p></td>
-<td><p>142</p></td>
-</tr>
-<tr class="even">
-<td><p>CDMA</p></td>
-<td><p>7-bit ASCII</p></td>
-<td><p>160 (can vary by network)</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>CDMA</p></td>
-<td><p>Unicode</p></td>
-<td><p>70 (can vary by network)</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+|Network type|Character sets|Character limit for single SMS segment|Character limit for multi-part SMS segments|
+|----|----|----|----|
+|GSM|GSM 7-bit default alphabet and GSM 7-bit default alphabet extension table|160|142|
+|CDMA|7-bit ASCII|160 (can vary by network)| |
+|CDMA|Unicode|70 (can vary by network)| |
 
- 
+GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific information"](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=745). CDMA character sets are defined in [3GPP2 C.R1001-D](http://www.3gpp2.org/Public_html/Specs/index.cfm).
 
-GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific information"](https://www.3gpp.org/DynaReport/23038.md). CDMA character sets are defined in [3GPP2 C.R1001-D](http://www.3gpp2.org/Public_html/specs/C.R1001-D_v1.0_110403.pdf).
+## Related topics
 
-## <span id="related_topics"></span>Related topics
-
-
-[Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
-
- 
-
- 
-
-
-
-
-
-
+[Read received SMS by using the text-mode interface](read-received-sms-by-using-the-text-mode-interface.md)

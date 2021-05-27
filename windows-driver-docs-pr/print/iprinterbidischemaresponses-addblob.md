@@ -4,7 +4,6 @@ description: The AddBlob method adds a new response of type BIDI\_BLOB to the co
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9CB33F44-5DB8-4504-AD88-AEBE99C1E527
 keywords: ["AddBlob method Print Devices", "AddBlob method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddBlob method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddBlob(
@@ -30,8 +28,7 @@ HRESULT AddBlob(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -39,13 +36,11 @@ The schema.
 *pArray* \[in\]  
 The array.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

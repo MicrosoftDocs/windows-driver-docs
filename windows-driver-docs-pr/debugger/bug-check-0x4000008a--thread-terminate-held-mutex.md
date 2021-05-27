@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x4000008A THREAD_TERMINATE_HELD_MUTEX
 description: The THREAD_TERMINATE_HELD_MUTEX bug check has a value of 0x4000008A.
-ms.assetid: 30A796F0-D622-43F2-8050-C9B62941FBE9
 keywords: ["Bug Check 0x4000008A THREAD_TERMINATE_HELD_MUTEX", "THREAD_TERMINATE_HELD_MUTEX"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,8 +33,7 @@ The THREAD\_TERMINATE\_HELD\_MUTEX bug check has a value of 0x4000008A. This ind
 
  
 
-Cause
------
+## Cause
 
 To investigate, look at the callstack. If there is a driver on the stack that is directly followed by system exception handling routines and then thread termination routines, this driver is at fault and needs to be fixed so that it does not cause an unhandled exception while holding a kernel mutex. If the stack just shows normal thread termination code and no driver is implicated, run [**!pool**](-pool.md) or use [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) on the address of the mutex (parameter 2) and see if you can discover who owns the it. This bug will almost certainly be in the code of the owner of that mutex.
 

@@ -1,7 +1,6 @@
 ---
 title: Device Settings Configuration Elements
 description: Device Settings Configuration Elements
-ms.assetid: 1393f384-b688-48af-86d7-9a422a1e3cc6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

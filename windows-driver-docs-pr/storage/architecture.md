@@ -1,7 +1,6 @@
 ---
 title: Architecture
 description: Architecture
-ms.assetid: 6a50cba8-f989-4662-8e1d-2df462cb48d9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

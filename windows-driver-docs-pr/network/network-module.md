@@ -1,7 +1,6 @@
 ---
 title: Network Module
 description: Network Module
-ms.assetid: 49e73a9c-16f0-4fe0-904f-45e8c85ed56a
 keywords:
 - network modules WDK Network Module Registrar , defined
 ms.date: 04/20/2017

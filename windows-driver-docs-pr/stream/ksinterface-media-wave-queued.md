@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
 description: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
-ms.assetid: d5f65cd6-85bc-4b72-a6fb-ef9c570dba21
 keywords: ["KSINTERFACE_MEDIA_WAVE_QUEUED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -21,8 +20,7 @@ ms.localizationpriority: medium
 
 The KSINTERFACE\_MEDIA\_WAVE\_QUEUED interface is private for Windows XP and later. It should not be used by the minidriver.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

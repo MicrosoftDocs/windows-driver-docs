@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xE9 ACTIVE_EX_WORKER_THREAD_TERMINATION
 description: The ACTIVE_EX_WORKER_THREAD_TERMINATION bug check has a value of 0x000000E9. This indicates that an active executive worker thread is being terminated.
-ms.assetid: dd68f07f-fab1-402c-9a81-f43722f91b69
 keywords: ["Bug Check 0xE9 ACTIVE_EX_WORKER_THREAD_TERMINATION", "ACTIVE_EX_WORKER_THREAD_TERMINATION"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION bug check has a value of 0x000000E9.
 
  
 
-Cause
------
+## Cause
 
 An executive worker thread is being terminated without having gone through the worker thread rundown code. This is forbidden; work items queued to the **ExWorkerQueue** must not terminate their threads.
 

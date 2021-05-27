@@ -1,7 +1,6 @@
 ---
 title: Managing Physical Network Adapters
 description: Managing Physical Network Adapters
-ms.assetid: 564841F2-997C-44F5-8EC9-264FC9128483
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

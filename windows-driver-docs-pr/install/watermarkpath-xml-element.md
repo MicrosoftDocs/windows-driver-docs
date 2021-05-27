@@ -1,7 +1,6 @@
 ---
 title: watermarkPath XML Element
 description: watermarkPath XML Element
-ms.assetid: 3c64738b-4ead-4e78-a1bd-45d098a11dad
 keywords: ["watermarkPath XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # watermarkPath XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **watermarkPath** element specifies the source file for a custom watermark bitmap that DPInst displays on the left side of the DPInst welcome page and the DPInst finish page.
 
@@ -83,11 +82,4 @@ If a **watermarkPath** element is not specified, DPInst uses a default watermark
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

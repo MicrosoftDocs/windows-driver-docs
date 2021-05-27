@@ -1,7 +1,6 @@
 ---
 title: Blocking legacy file system filter drivers
 description: Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers.
-ms.assetid: 90A562FB-D616-4D38-8D4F-7EFCDF9E617F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers. *Legacy file system filter drivers* are drivers that attach to the file system stack directly and don't use Filter Manager. This topic describes the registry setting for blocking and unblocking legacy file system filter drivers. It also describes the event entered into the System event log when a legacy file system filter is blocked and how to check if the OS has legacy file system drivers running.
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 ## How to block legacy drivers
 
@@ -55,7 +54,7 @@ An **Error** event is logged to the System event log when a legacy file system f
 
 If you're unsure which filters are legacy file system filter drivers or want to make sure that they're not running, you can perform the following:
 
-1. Open an elevated Command Prompt by right-clicking a **cmd.exe** icon and clicking **Run as administrator**.
+1. Open an elevated Command Prompt by selecting and holding (or right-clicking) a **cmd.exe** icon and selecting **Run as administrator**.
 2. Type: `fltmc filters`
 3. Look for legacy drivers, they're the ones with a **Frame** value of **&lt;Legacy&gt;**.
 

@@ -4,7 +4,6 @@ description: The AddInt32 method adds a new response of type BIDI\_INT to the co
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: F937B098-9C13-4337-82A6-C26DAA8B7068
 keywords: ["AddInt32 method Print Devices", "AddInt32 method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddInt32 method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The AddInt32 method adds a new response of type BIDI\_INT to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT  AddInt32(
@@ -30,8 +28,7 @@ HRESULT  AddInt32(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -39,13 +36,11 @@ The schema.
 *lValue* \[in\]  
 The new value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

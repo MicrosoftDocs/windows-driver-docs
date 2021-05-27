@@ -1,7 +1,6 @@
 ---
 title: Platen element
 description: The optional Platen element describes the capabilities of the flatbed platen that is available on the scanner.
-ms.assetid: bda5aa6d-ac19-4af2-9b21-64b29d726e80
 keywords: ["Platen element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Platen** element describes the capabilities of the flatbed platen that is available on the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Platen>
@@ -27,8 +25,7 @@ Usage
 </wscn:Platen>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -82,8 +79,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scan device has a flatbed platen, the WSD Scan Service must provide configuration information for all **Platen** child elements.
 

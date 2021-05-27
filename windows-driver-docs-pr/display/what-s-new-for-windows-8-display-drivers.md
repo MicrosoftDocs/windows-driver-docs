@@ -1,6 +1,5 @@
 ---
 title: What's new for Windows 8 display drivers (WDDM 1.2)
-ms.assetid: E2EE9B0A-B9EA-4073-ACF0-2B8CC00760FC
 description: Features new in Windows 8 for display drivers.
 keywords:
 - new for Windows 8 WDK display

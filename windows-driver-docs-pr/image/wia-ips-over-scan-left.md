@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_OVER\_SCAN\_LEFT
 description: The WIA\_IPS\_OVER\_SCAN\_LEFT property along with WIA\_IPS\_OVER\_SCAN\_RIGHT, WIA\_IPS\_OVER\_SCAN\_TOP, and WIA\_IPS\_OVER\_SCAN\_BOTTOM are used to configure the amount of over scanning, in thousandths of an inch (0.001 \ 0034;) units, relative to the physical document.
-ms.assetid: D1C2ADF5-A38C-4E30-A377-E62C5B4208A6
 keywords: ["WIA_IPS_OVER_SCAN_LEFT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) but only when the [**WIA\_IPS\_OVER\_SCAN**](wia-ips-over-scan.md) property is supported. When it is supported, this property is required.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

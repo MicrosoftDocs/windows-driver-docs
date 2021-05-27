@@ -1,7 +1,6 @@
 ---
 title: ELAM Driver Requirements
 description: Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.
-ms.assetid: B00B4361-B531-4D28-A521-0F8B3B48CEA4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -69,19 +68,19 @@ The Early Launch drivers can use registry or boot driver callbacks to monitor an
 
 These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
 
-* [**CmRegisterCallbackEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallbackex)
-* [**CmRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback)
-* [**CmUnRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-cmunregistercallback)
+* [**CmRegisterCallbackEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallbackex)
+* [**CmRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback)
+* [**CmUnRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmunregistercallback)
 
 ### Boot Driver Callbacks
 
-Use [**IoRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterbootdrivercallback) and [**IoUnRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iounregisterbootdrivercallback) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-boot_driver_callback_function).
+Use [**IoRegisterBootDriverCallback**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterbootdrivercallback) and [**IoUnRegisterBootDriverCallback**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iounregisterbootdrivercallback) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-boot_driver_callback_function).
 
 This callback provides status updates from Windows to an ELAM driver, including when all boot-start drivers have been initialized and the callback facility is no longer functional.
 
 ### Callback Type
 
-The [**BDCB_CALLBACK_TYPE enumeration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_bdcb_callback_type) describes two types of callbacks:
+The [**BDCB_CALLBACK_TYPE enumeration**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_bdcb_callback_type) describes two types of callbacks:
 
 -   Callbacks that provide status updates to an ELAM driver (BdCbStatusUpdate)
 -   Callbacks used by the AM driver to classify boot-start drivers and dependent DLLs before initializing their images (BdCbInitializeImage)
@@ -116,7 +115,7 @@ The storage and retrieval format of these data BLOBs is left up to the ISV, but 
 
 **Verifying Malware Signatures**
 
-The method for verifying the integrity of the malware signature data is left up to each AM ISV. The [CNG Cryptographic Primitive Functions](https://docs.microsoft.com/windows/desktop/SecCNG/cng-cryptographic-primitive-functions) are available to assist in verifying digital signatures and certificates on the malware signature data.
+The method for verifying the integrity of the malware signature data is left up to each AM ISV. The [CNG Cryptographic Primitive Functions](/windows/desktop/SecCNG/cng-cryptographic-primitive-functions) are available to assist in verifying digital signatures and certificates on the malware signature data.
 
 **Malware Signature Failure**
 
@@ -196,6 +195,6 @@ If a boot driver is skipped due to the initialization policy, the Kernel continu
 ## ELAM and Measured Boot
 
 
-If the ELAM driver detects a policy violation (a rootkit, for example), it should immediately call [**Tbsi_Revoke_Attestation**](https://docs.microsoft.com/windows/desktop/api/tbs/nf-tbs-tbsi_revoke_attestation) to invalidate the PCRs that indicated that the system was in a good state. The function returns an error if there is a problem with measured boot, for example no TPM on the system.
+If the ELAM driver detects a policy violation (a rootkit, for example), it should immediately call [**Tbsi_Revoke_Attestation**](/windows/win32/api/tbs/nf-tbs-tbsi_revoke_attestation) to invalidate the PCRs that indicated that the system was in a good state. The function returns an error if there is a problem with measured boot, for example no TPM on the system.
 
 **Tbsi_Revoke_Attestation** is callable from kernel mode. It extends PCR[12] by an unspecified value and increments the event counter in the TPM. Both actions are necessary, so the trust is broken in all quotes that are created from here forward. As a result, the Measured Boot logs will not reflect the current state of the TPM for the remainder of the time that the TPM is powered up, and remote systems will not be able to form trust in the security state of the system.

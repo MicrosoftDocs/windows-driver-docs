@@ -1,7 +1,6 @@
 ---
 title: .echotimestamps (Show Time Stamps)
 description: The .echotimestamps command turns on or turns off the display of time stamp information.
-ms.assetid: c70dc71b-83c2-41de-90f3-638e231c0476
 keywords: ["Show Time Stamps (.echotimestamps) command", "time stamps", "DbgPrint time stamps", ".echotimestamps (Show Time Stamps) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,10 +59,9 @@ Turns on the display of time stamp information.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see [The DbgPrint Buffer](reading-and-filtering-debugging-messages.md#the-dbgprint-buffer) or see the Microsoft Windows Driver Kit (WDK) documentation.
+For more information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see "The DbgPrint Buffer" in [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).
 
-Remarks
--------
+## Remarks
 
 When you use the **.echotimestamps** command without parameters, the display of time stamps is turned on or off, and the new state is displayed.
 

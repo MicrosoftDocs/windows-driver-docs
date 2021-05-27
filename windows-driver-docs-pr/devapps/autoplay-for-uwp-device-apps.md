@@ -1,7 +1,6 @@
 ---
 title: AutoPlay for UWP device apps
 description: This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app.
-ms.assetid: A95382E6-DFF4-4F36-9C9B-4B26161160DE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Device manufacturers can specify their UWP device app as an AutoPlay handler for their device. They can also let other UWP apps act as AutoPlay handlers for their device. This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. This includes non-volume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](https://go.microsoft.com/fwlink/p/?LinkID=254861).
+**Note**  You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. This includes non-volume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10)).
 
  
 
@@ -151,16 +150,9 @@ In this example, the activation event parameter (eventObj) carries the device's 
 
 [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
 
-[Auto-launching with AutoPlay](https://go.microsoft.com/fwlink/p/?LinkID=254861)
+[Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10))
 
-[Launching, resuming, and multitasking](https://go.microsoft.com/fwlink/p/?LinkID=309316)
-
- 
+[Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
 
  
-
-
-
-
-
 

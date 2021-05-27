@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PAGE\_HEIGHT
 description: The WIA\_IPS\_PAGE\_HEIGHT property contains the height, in thousandths of an inch (.001), of the currently selected page. The WIA minidriver creates and maintains this property.
-ms.assetid: f8721f87-641c-4da8-ad3a-a38bf18d3111
 keywords: ["WIA_IPS_PAGE_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads WIA\_IPS\_PAGE\_HEIGHT to determine the physical dimensions of the page that is being scanned. If the extent settings are different from the known page sizes, this property reports the height of the page whose [**WIA\_IPS\_PAGE\_SIZE**](wia-ips-page-size.md) property is set to WIA\_PAGE\_CUSTOM.
 
@@ -37,8 +35,7 @@ WIA\_IPS\_PAGE\_HEIGHT must provide a measurement in thousandths of an inch that
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

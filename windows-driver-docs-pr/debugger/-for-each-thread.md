@@ -1,7 +1,6 @@
 ---
 title: for_each_thread
 description: The for_each_thread extension executes the specified debugger command once for each thread in the target.
-ms.assetid: 4ca8e1bd-1a1b-4fef-a2d9-42c26f9b746b
 keywords: ["for_each_thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,8 +58,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 
 For more general information about threads, see [Threads and Processes](controlling-threads-and-processes.md). For more information about manipulating or obtaining information about threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 If no arguments are supplied, the debugger displays a list of all threads, along with thread wait states. This is equivalent to entering [**!thread @\#Thread 2**](-process.md) as the *CommandString* value.
 

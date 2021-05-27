@@ -1,7 +1,6 @@
 ---
 title: db, dc, dd, dp, dq, du, dw
 description: The db, dc, dd, dp, dq, du, and dw extensions display data at the specified physical address on the target computer.
-ms.assetid: d34eebb7-bc91-4bff-9787-d92f74195ee1
 keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
 ms.date: 01/18/2017
 topic_type:
@@ -90,8 +89,7 @@ Specifies the number of chunks of memory to display. The size of a chunk is dete
 
 To write to physical memory, use the [**!e\\***](-eb---ed.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 These extensions each display physical memory, but their display formats and default length differ:
 

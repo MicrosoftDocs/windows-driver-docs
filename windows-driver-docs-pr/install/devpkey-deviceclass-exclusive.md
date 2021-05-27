@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_Exclusive
 description: DEVPKEY_DeviceClass_Exclusive
-ms.assetid: a05ada91-6a6f-4253-aca5-0740294a5c24
 keywords: ["DEVPKEY_DeviceClass_Exclusive Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,13 +17,19 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_Exclusive
 
 
-The DEVPKEY_DeviceClass_Exclusive device property represents a Boolean flag that indicates whether devices that are members of a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) are exclusive devices.
+The DEVPKEY_DeviceClass_Exclusive device property represents a Boolean flag that indicates whether devices that are members of a [device setup class](./overview-of-device-setup-classes.md) are exclusive devices.
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -51,52 +56,30 @@ The DEVPKEY_DeviceClass_Exclusive device property represents a Boolean flag that
 
  
 
-Remarks
--------
+## Remarks
 
-You can set the value of DEVPKEY_DeviceClass_Exclusive when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) and the information about the registry value **Exclusive** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+You can set the value of DEVPKEY_DeviceClass_Exclusive when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](./inf-classinstall32-section.md) and the information about the registry value **Exclusive** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](./inf-addreg-directive.md).
 
-You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Exclusive.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Exclusive.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Exclusive property key. On these earlier versions of Windows, you can use the SPCRP_EXCLUSIVE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-spcrp-xxx-properties).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Exclusive property key. On these earlier versions of Windows, you can use the SPCRP_EXCLUSIVE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./retrieving-spcrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)
+[**INF AddReg Directive**](./inf-addreg-directive.md)
 
-[**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section)
+[**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
-
- 
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x10D WDF_VIOLATION
 description: The WDF_VIOLATION bug check has a value of 0x0000010D. This indicates that Kernel-Mode Driver Framework (KMDF) detected that Windows found an error in a framework-based driver.
-ms.assetid: 2d8c9730-cd24-4f8c-8f8b-252644737847
 keywords: ["Bug Check 0x10D WDF_VIOLATION", "WDF_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:
@@ -214,13 +213,11 @@ If Parameter 1 is equal to 0xB, then an attempt to acquire or release a lock was
 
  
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for an explanation of the cause.
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
 

@@ -1,7 +1,6 @@
 ---
 title: MB Interface Model Overview
 description: This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
-ms.assetid: B1C6D5F4-63E2-4C46-8038-71B8144AB474
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ MBIM functions that are backward compatible should implement Microsoft OS descri
 
 Mobile broadband devices that exhibit identity morphing should also implement Microsoft OS descriptors.
 
-These scenarios are discussed in more detail throughout the MB Interface Model topics. The following table summarizes all of the Microsoft OS compatible IDs mentioned in these subtopics. For more information see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
+These scenarios are discussed in more detail throughout the MB Interface Model topics. The following table summarizes all of the Microsoft OS compatible IDs mentioned in these subtopics. For more information see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 *Microsoft OS compatible IDs*
 
@@ -69,10 +68,4 @@ The MB Interface Model in described further in the following subtopics:
 [MB Identity Morphing](mb-identity-morphing.md)
 [MB Interface Model Supplement](mb-interface-model-supplement.md)
  
-
- 
-
-
-
-
 

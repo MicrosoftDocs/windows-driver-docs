@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS File Naming Conventions
 description: Remote NDIS File Naming Conventions
-ms.assetid: 9c5b2cfe-c38f-4314-a91c-f27c77ea1f63
 keywords:
 - Remote NDIS WDK networking , driver names
 - Remote NDIS WDK networking , operating system support

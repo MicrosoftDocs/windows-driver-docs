@@ -1,7 +1,6 @@
 ---
 title: Presentation with Multiple Heads
 description: Presentation with Multiple Heads
-ms.assetid: 60405ea7-91d5-4deb-9161-8890faa7e897
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , presentation
 - presentation WDK DirectX 9.0
@@ -17,13 +16,7 @@ ms.localizationpriority: medium
 
 Applications can call the **Present** method either to present contents of back buffers for all heads at once or to present the back buffer for an individual head. For more information about **Present**, see the latest DirectX SDK documentation.
 
-The runtime in turn makes independent sequential calls to the driver's [*DdFlip*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) or [*DdBlt*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) function. Because the display mode and refresh rate of each head might be different, these calls are always independent at the DDI level.
+The runtime in turn makes independent sequential calls to the driver's [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) or [*DdBlt*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) function. Because the display mode and refresh rate of each head might be different, these calls are always independent at the DDI level.
 
  
-
- 
-
-
-
-
 

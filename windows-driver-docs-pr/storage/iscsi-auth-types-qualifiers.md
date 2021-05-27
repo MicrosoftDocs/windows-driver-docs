@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_AUTH\_TYPES\_QUALIFIERS
 description: ISCSI\_AUTH\_TYPES\_QUALIFIERS
-ms.assetid: 60ab4b0d-9b1d-4604-968c-cbd05c80dec0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

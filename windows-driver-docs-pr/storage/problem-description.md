@@ -1,7 +1,6 @@
 ---
 title: Problem Description
 description: Problem Description
-ms.assetid: 5e811011-9848-43fc-969d-abdf1ad45acf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

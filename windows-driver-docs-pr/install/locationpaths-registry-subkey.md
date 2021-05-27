@@ -1,7 +1,6 @@
 ---
 title: LocationPaths Registry Subkey
 description: LocationPaths Registry Subkey
-ms.assetid: d34ba7f4-97d2-4e63-a820-436c0336c584
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # LocationPaths Registry Subkey
 
 
-Beginning with Windows 7, the **LocationPaths** registry subkey is used in the specification of a removable device capability override for a device identified through either the HardwareID) will have the removable device capability override applied. For more information about removable device capability overrides, see [DeviceOverrides Registry Key](deviceoverrides-registry-key.md).
+Beginning with Windows 7, the **LocationPaths** registry subkey is used in the specification of a removable device capability override for a device identified through either the [HardwareID](hardwareid-registry-subkey.md) or [CompatibleID](compatibleid-registry-subkey.md) registry subkey. The **LocationPaths** registry subkey specifies that only the location path of the device's parent device node (*devnode*) will have the removable device capability override applied. For more information about removable device capability overrides, see [DeviceOverrides Registry Key](deviceoverrides-registry-key.md).
 
 The **LocationPaths** registry subkey applies to only the parent devnode of the device specified through the name of the **HardwareID** or **CompatibleID** subkeys. As a result, only the parent devnode of the specified device is affected by the removable device capability override value. Child devnodes of the specified device are not affected by the removable device capability override, unless a [ChildLocationPaths](childlocationpaths-registry-subkey.md) registry subkey is also specified.
 

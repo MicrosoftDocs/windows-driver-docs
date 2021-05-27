@@ -1,7 +1,6 @@
 ---
 title: Executing Data-driven tests
 description: Executing Data-driven tests
-ms.assetid: E8E7A66A-6E39-442d-A195-AE4633B817FE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

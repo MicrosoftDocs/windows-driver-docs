@@ -1,7 +1,6 @@
 ---
 title: Plotter Driver Renderer
 description: Plotter Driver Renderer
-ms.assetid: 54aac978-6344-41b3-97ea-e78816fb94dc
 keywords:
 - Plotter Driver WDK print , renderer
 - MSPlot WDK print , renderer

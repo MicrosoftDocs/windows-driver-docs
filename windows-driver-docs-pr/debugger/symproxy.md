@@ -1,7 +1,6 @@
 ---
 title: SymProxy
 description: SymProxy
-ms.assetid: c0b122fe-4996-4659-a3f1-95831605c0b3
 keywords: ["symbols, SymProxy (symproxy.dll)", "symbol stores, HTTP", "symbol stores, SymProxy (symproxy.dll)", "SymProxy"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -62,7 +61,7 @@ If the symbol file is not found, the Microsoft Symbol Store is queried using a (
 SRV*D:\SymStore\Symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-If the file is still not found, the Contoso Symbol Store (https://symbols.contoso.com/symbols) is queried using a (generated) symbol path of:
+If the file is still not found, the Contoso Symbol Store `(https://symbols.contoso.com/symbols)` is queried using a (generated) symbol path of:
 
 ```dbgcmd
 SRV*D:\SymStore\Symbols*https://symbols.contoso.com/symbols

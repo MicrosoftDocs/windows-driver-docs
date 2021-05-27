@@ -1,7 +1,6 @@
 ---
 title: Using VideoPortGetProcAddress
 description: Using VideoPortGetProcAddress
-ms.assetid: 48dace7e-7ba3-48bf-9788-469ff42f6fe3
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, VideoPortGetProcAddress
 - VideoPortGetProcAddress
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 A video miniport driver developed on one NT-based operating system version can be loaded and run on an earlier operating system version, as long as the miniport driver does not attempt to use functionality that is specific to the newer operating system version.
 
-When the video miniport driver is loaded, the **VideoPortGetProcAddress** member of the [**VIDEO\_PORT\_CONFIG\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info) structure contains the address of a callback routine that the video port driver exports, [**VideoPortGetProcAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_port_get_proc_address). A miniport driver can use this callback routine to find the address of a video port function exported from *videoprt.sys*. After the miniport driver has the function's address, it can use this address to call the function. This is shown in the following example code.
+When the video miniport driver is loaded, the **VideoPortGetProcAddress** member of the [**VIDEO\_PORT\_CONFIG\_INFO**](/windows-hardware/drivers/ddi/video/ns-video-_video_port_config_info) structure contains the address of a callback routine that the video port driver exports, [**VideoPortGetProcAddress**](/windows-hardware/drivers/ddi/video/nc-video-pvideo_port_get_proc_address). A miniport driver can use this callback routine to find the address of a video port function exported from *videoprt.sys*. After the miniport driver has the function's address, it can use this address to call the function. This is shown in the following example code.
 
 ```cpp
   // Useful typedef for a function pointer type
@@ -52,10 +51,4 @@ else {
 After the call through the *VideoPortGetProcAddress* callback routine has executed, *pVPFunction* either is **NULL** or contains the address of the **VideoPortCreateSecondaryDisplay** function. If *pVPFunction* is **NULL**, the video port driver does not export the function you are trying to find, and the miniport driver must not attempt to use it. If *pVPFunction* is not **NULL**, you can use this pointer to call **VideoPortCreateSecondaryDisplay** as shown in the preceding example.
 
  
-
- 
-
-
-
-
 

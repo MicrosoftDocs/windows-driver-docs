@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_FRAME
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains the received association response.
-ms.assetid: FA71F8CA-BA22-4EF2-8DF4-2A08C83A54A7
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_RESPONSE_FRAME Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

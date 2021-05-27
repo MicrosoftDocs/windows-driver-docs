@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's InterpretRequestSense Routine
 description: Storage Class Driver's InterpretRequestSense Routine
-ms.assetid: abfb529d-7fab-40f7-b4cd-e6adb4cf643e
 keywords:
 - InterpretRequestSense
 - request sense WDK storage
@@ -25,12 +24,7 @@ If no request-sense information is available, *InterpretRequestSense* should che
 
 The *InterpretRequestSense* routine might call a driver-supplied error-logging routine as well. Whenever a storage class driver logs an I/O error, it should include the **PathId**, **TargetId**, **Lun**, and **SrbStatus** values set by the storage port driver in the SRB, and, if possible, pertinent request-sense information as part of the error log entry's **DumpData**. Note that a storage class driver must not use the **PathId**, **TargetId**, and **Lun** from such SRBs to address other requests.
 
-For more information about logging I/O errors, see [Logging Errors](https://docs.microsoft.com/windows-hardware/drivers/kernel/logging-errors).
+For more information about logging I/O errors, see [Logging Errors](../kernel/logging-errors.md).
 
  
-
- 
-
-
-
 

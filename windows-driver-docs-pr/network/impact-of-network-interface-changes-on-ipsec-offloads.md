@@ -1,7 +1,6 @@
 ---
 title: Impact of Network Interface Changes on IPsec Offloads
 description: Impact of Network Interface Changes on IPsec Offloads
-ms.assetid: 7d1b2bf9-31a9-4fc4-92f3-dc7b5e0277e3
 keywords:
 - ESP-protected packets WDK IPsec offload , routing interface changed
 - AH-protected packets WDK IPsec offload , routing interface changed
@@ -26,13 +25,7 @@ The following events in the network interface affect the offloading of Internet 
 
 -   A routing interface is changed.
 
-    When network traffic is routed through a new interface, the TCP/IP stack temporarily performs IPsec tasks until it has added the appropriate SAs to the NIC that is used in the new interface. The TCP/IP stack adds an SA to a NIC by issuing [OID\_TCP\_TASK\_IPSEC\_ADD\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-add-sa). After the SAs on the NIC that is used for the old interface expire, the TCP/IP transport issues [OID\_TCP\_TASK\_IPSEC\_DELETE\_SA](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-task-ipsec-delete-sa) as many times as necessary to request that the NIC's miniport driver delete the SAs from the NIC.
+    When network traffic is routed through a new interface, the TCP/IP stack temporarily performs IPsec tasks until it has added the appropriate SAs to the NIC that is used in the new interface. The TCP/IP stack adds an SA to a NIC by issuing [OID\_TCP\_TASK\_IPSEC\_ADD\_SA](./oid-tcp-task-ipsec-add-sa.md). After the SAs on the NIC that is used for the old interface expire, the TCP/IP transport issues [OID\_TCP\_TASK\_IPSEC\_DELETE\_SA](./oid-tcp-task-ipsec-delete-sa.md) as many times as necessary to request that the NIC's miniport driver delete the SAs from the NIC.
 
  
-
- 
-
-
-
-
 

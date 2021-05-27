@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_NUM\_SOURCES
 description: The KSPROPERTY\_NUM\_SOURCES property specifies the number of input pins on the selector unit.
-ms.assetid: 94d0f926-0551-4fe2-aa7f-2898e04c4b36
 keywords: ["KSPROPERTY_NUM_SOURCES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_NUM\_SOURCES property specifies the number of input pins on the 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_s)"><strong>KSPROPERTY_SELECTOR_S</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_NODE_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_node_s)"><strong>KSPROPERTY_SELECTOR_NODE_S</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_s)"><strong>KSPROPERTY_SELECTOR_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_node_s)"><strong>KSPROPERTY_SELECTOR_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The KSPROPERTY\_NUM\_SOURCES property specifies the number of input pins on the 
 
  
 
-Remarks
--------
+## Remarks
 
 When making a get request, the client receives the number of available source pins in the **Value** member of the property descriptor structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,12 +72,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

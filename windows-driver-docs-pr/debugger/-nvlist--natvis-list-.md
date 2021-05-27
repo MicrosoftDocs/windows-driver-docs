@@ -1,7 +1,6 @@
 ---
 title: .nvlist (NatVis List)
 description: The .nvllist command lists the NatVis files loaded into the debugger environment.
-ms.assetid: 90974599-6F8E-4898-B8B6-F9502659AD77
 keywords: [".nvlist (NatVis List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,7 +45,7 @@ The .nvllist command lists the NatVis files loaded into the debugger environment
 
 ## Additional Information
 
-For more information, see [Create Custom Views of Native Objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects).
 
 ## See also
 

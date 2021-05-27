@@ -1,7 +1,6 @@
 ---
 title: COM Interface Design Skills
 description: COM Interface Design Skills
-ms.assetid: 3a3adbc2-af6f-4495-8993-fd25d56ffad6
 keywords:
 - Windows Device Testing Framework WDK , action interfaces
 - WDTF WDK , action interfaces
@@ -23,12 +22,7 @@ When you create a new action interface, you should design your object model with
 
 4.  **Robust**. Action interfaces are meant for reusability, so try to prepare for more than just the simple use cases.
 
-5.  **Diagnosable**. Make sure you include diagnosability in your design. Try to think about how people can debug problems when they use your interface. It helps to instrument your code with [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+5.  **Diagnosable**. Make sure you include diagnosability in your design. Try to think about how people can debug problems when they use your interface. It helps to instrument your code with [WPP Software Tracing](../devtest/wpp-software-tracing.md).
 
  
-
- 
-
-
-
 

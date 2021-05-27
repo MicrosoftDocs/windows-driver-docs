@@ -1,7 +1,6 @@
 ---
 title: ImageInformation element
 description: The required ImageInformation element contains information about the resulting image data from a scan made with a ScanTicket element that is currently being validated.
-ms.assetid: 58a5dc09-07fa-4e31-93f1-7370dace3263
 keywords: ["ImageInformation element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ImageInformation** element contains information about the resulting image data from a scan made with a [**ScanTicket**](scanticket.md) element that is currently being validated.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ImageInformation>
@@ -27,8 +25,7 @@ Usage
 </wscn:ImageInformation>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -76,8 +73,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service returns the **ImageInformation** element through the [**CreateScanJobResponse**](createscanjobresponse.md) operation element. Scan applications can use the data that is specified within **ImageInformation** to decode the image within an image file.
 

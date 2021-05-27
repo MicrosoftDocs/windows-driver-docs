@@ -1,7 +1,6 @@
 ---
 title: PrintTicket document example
 description: The keywords in this example are for illustration only, although they reflect the Print Schema keywords for 3D manufacturing.
-ms.assetid: 139CF759-0A94-44A5-97BD-4EFD072220EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

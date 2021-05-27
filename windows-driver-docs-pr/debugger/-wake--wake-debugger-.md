@@ -1,7 +1,6 @@
 ---
 title: .wake (Wake Debugger)
 description: The .wake command causes sleep mode to end. This command is used only when you are controlling the user-mode debugger from the kernel debugger.
-ms.assetid: 01aead7e-1f46-46cf-a697-ab5ff6329ac7
 keywords: ["Wake Debugger (.wake) command", "controlling the user-mode debugger from the kernel debugger, Wake Debugger (.wake) command", ".wake (Wake Debugger) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ The process ID of the user-mode debugger.
 
 For more details, see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md). For information about how to find the process ID of the debugger, see [Finding the Process ID](finding-the-process-id.md).
 
-Remarks
--------
+## Remarks
 
 When you are controlling the user-mode debugger from the kernel debugger and the system is in sleep mode, this command can be used to wake up the debugger before the sleep timer runs out.
 

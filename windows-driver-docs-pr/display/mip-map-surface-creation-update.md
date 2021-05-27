@@ -1,7 +1,6 @@
 ---
 title: MIP Map Surface Creation Update
 description: MIP Map Surface Creation Update
-ms.assetid: a89a11ed-d450-43bb-b0cd-75132d19dbc3
 keywords:
 - MIP map surfaces WDK Direct3D
 - D3DRENDERSTATE_MIPMAPLODBIAS
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 Before DirectX 7.0, the attachment chain for a MIP map usually consisted only of the sublevels of that MIP map. With the advent of cubic environment maps, this is no longer the case. Each face of a cubic environment may itself be a MIP map and, as such, the attachment chain of a surface forming one face of a cubic environment map can consist of links to the other faces of the cube map as well as links to sublevels of the MIP map.
 
-As the attachment chain of a MIP map surface can now contain links to surfaces other than simply a lower level MIP map, a new capability bit has been introduced, DDSCAPS2\_MIPMAPSUBLEVEL (see the [**DDSCAPS2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for this and the following flags). This bit is set for all but the top-level surface of a MIP map chain. Thus, given the top-level surface of a MIP map chain you can find the surface representing the next lowest level of the MIP map chain by traversing the attachment list of the top-level surface looking for a surface with the DDSCAPS2\_MIPMAPSUBLEVEL capability bit set.
+As the attachment chain of a MIP map surface can now contain links to surfaces other than simply a lower level MIP map, a new capability bit has been introduced, DDSCAPS2\_MIPMAPSUBLEVEL (see the [**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for this and the following flags). This bit is set for all but the top-level surface of a MIP map chain. Thus, given the top-level surface of a MIP map chain you can find the surface representing the next lowest level of the MIP map chain by traversing the attachment list of the top-level surface looking for a surface with the DDSCAPS2\_MIPMAPSUBLEVEL capability bit set.
 
 To determine if a surface is a face of a cubic environment map, check for the surface capability bit DDSCAPS2\_CUBEMAP. If the DDSCAPS\_MIPMAP capability bit is not set, the attachment list of this surface consists of the other faces of the cube map that are being created (check for the capability bits DDSCAPS2\_CUBEMAP\_POSITIVEX, DDSCAPS2\_CUBEMAP\_NEGATIVEX, DDSCAPS2\_CUBEMAP\_POSITIVEY, DDSCAPS2\_CUBEMAP\_NEGATIVEY, DDSCAPS2\_CUBEMAP\_POSITIVEZ, DDSCAPS2\_CUBEMAP\_NEGATIVEZ).
 
@@ -36,10 +35,4 @@ Each unit bias (+/-1.0) biases the selection by exactly one MIP map level. A neg
  
 
  
-
- 
-
-
-
-
 

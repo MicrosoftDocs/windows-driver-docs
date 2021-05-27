@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_GET\_TYPE\_NAME
 description: The EXT\_TDOP\_GET\_TYPE\_NAME sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns the type name of the specified typed data.
-ms.assetid: ce896ded-a49e-4f89-969e-6d464e583ca8
 keywords: ["EXT_TDOP_GET_TYPE_NAME Windows Debugging"]
 topic_type:
 - apiref
@@ -38,30 +37,22 @@ Receives the size, in characters, of the type name.
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
-EXT\_TDOP\_GET\_TYPE\_NAME is a value in the [**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
+EXT\_TDOP\_GET\_TYPE\_NAME is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 
-The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
+The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
 
 ## <span id="see_also"></span>See also
 
 
 [**DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI**](debug-request-ext-typed-data-ansi.md)
 
-[**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
+[**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
 
-[**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
+[**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
 
 [**Request**](request.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Application Items and Driver Items
 description: Application Items and Driver Items
-ms.assetid: 33b602dc-4a0b-47e1-90e2-b77ecc05f66d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ WIA items represent device attributes and device data. Imaging applications see 
 
 More than one imaging application can use a single imaging device at the same time. Each application's view of an item object in a device tree must therefore be independent of another application's view. This is accomplished as follows:
 
-1.  A minidriver creates an item tree of [IWiaDrvItem Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiadrvitem) objects using the [IWiaMiniDrv Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) and the [WIA Driver Services Library Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/index). The items in this driver item tree are global objects that the minidriver uses to represent the device's items.
+1.  A minidriver creates an item tree of [IWiaDrvItem Interface](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiadrvitem) objects using the [IWiaMiniDrv Interface](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) and the [WIA Driver Services Library Functions](/windows-hardware/drivers/ddi/wiamdef/index). The items in this driver item tree are global objects that the minidriver uses to represent the device's items.
 
 2.  When an imaging application requests access to an item in the tree, the WIA service returns an item object that is a copy of the driver item. When an application acquires an application **IWiaItem** (described in the Microsoft Windows SDK documentation) item object (an application item), the WIA service links this object to the minidriver's corresponding **IWiaDrvItem** object in the *driver item tree*.
 
@@ -43,9 +42,4 @@ The remainder of this section contains the following topics:
 [Common, Camera, and Scanner Properties](common--camera--and-scanner-properties.md)
 
  
-
- 
-
-
-
 

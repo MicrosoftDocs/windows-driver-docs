@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SET_RECEIVE_COALESCING
 description: WDI_TLV_SET_RECEIVE_COALESCING is a TLV that contains received packet coalescing parameters for OID_WDI_SET_RECEIVE_COALESCING.
-ms.assetid: 7937517E-79E5-4BF6-9C22-79E1D73CA97C
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_RECEIVE\_COALESCING
 
 
-WDI\_TLV\_SET\_RECEIVE\_COALESCING is a TLV that contains received packet coalescing parameters for [OID\_WDI\_SET\_RECEIVE\_COALESCING](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-receive-coalescing).
+WDI\_TLV\_SET\_RECEIVE\_COALESCING is a TLV that contains received packet coalescing parameters for [OID\_WDI\_SET\_RECEIVE\_COALESCING](./oid-wdi-set-receive-coalescing.md).
 
 ## TLV Type
 
@@ -33,8 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -58,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

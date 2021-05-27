@@ -1,7 +1,6 @@
 ---
 title: Including a PrintProvider Section
 description: Including a PrintProvider Section
-ms.assetid: 2cbf1b56-e603-4a21-a1d7-d51634c91456
 keywords:
 - INF files WDK network , PrintProvider section
 - network INF files WDK , PrintProvider section

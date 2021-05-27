@@ -1,7 +1,6 @@
 ---
 title: Storport Idle Power Management Overview
 description: Storport Idle Power Management Overview
-ms.assetid: 1ad47775-4d7a-47c4-83eb-774e58c863d3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

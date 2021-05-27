@@ -33,7 +33,7 @@ This topic describes how you can create custom NatVis visualizers to display deb
 
 Refer to these resources for general information about working with NatVis.
 
-[Create custom views of native objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015)
+[Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects)
 
 [**.nvload**](-nvload--natvis-load-.md)
 

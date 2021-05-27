@@ -1,7 +1,6 @@
 ---
 title: bc (Breakpoint Clear)
 description: The bc command permanently removes previously set breakpoints from the system.
-ms.assetid: 7bff5261-179f-4fd6-b427-de74e830a8c7
 keywords: ["bc (Breakpoint Clear) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Specifies the ID numbers of the breakpoints to remove. You can specify any numbe
 
 For more information about how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all existing breakpoints, their ID numbers, and their status.
 

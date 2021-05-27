@@ -1,7 +1,6 @@
 ---
 title: INF ProfileItems Directive
 description: A ProfileItems directive is used in an INF DDInstall section to list one or more profile-items-sections that contain items or groups to be added to, or removed from, the Start menu.
-ms.assetid: 8cdd6dcd-de5d-4652-8842-6b0be6f5fb59
 keywords:
 - INF ProfileItems Directive Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 A **ProfileItems** directive is used in an [**INF *DDInstall* section**](inf-ddinstall-section.md) to list one or more *profile-items-sections* that contain items or groups to be added to, or removed from, the Start menu.
 
-```ini
+```inf
 [DDInstall] 
  
 ProfileItems=profile-items-section[,profile-items-section]...
@@ -32,7 +31,7 @@ ProfileItems=profile-items-section[,profile-items-section]...
 
 Each named section referenced by a **ProfileItems** directive has the following form:
 
-```ini
+```inf
 [profile-items-section]
  
 Name=link-name[,name-attributes]
@@ -120,7 +119,7 @@ The *info-tip* value can also be specified as **"@**<em>ResDllPath</em>**\\**<em
 
 Use this format to support Windows Multilingual User Interface (MUI). An example is as follows:
 
-```ini
+```inf
 InfoTip = "@%11%\shell32.dll,-22531"
 ```
 
@@ -129,14 +128,13 @@ This optional entry specifies a string resource that identifies a localizable st
 
 *ResDllPath* and *ResDll* specify the path and file name of a resource DLL, and *resID* is a positive value that represents a resource ID. An example is as follows:
 
-```ini
+```inf
 DisplayResource="%11%\shell32.dll",22019
 ```
 
 Use this entry to support Windows Multilingual User Interface (MUI). If this entry is not used, the string specified by the **Name** entry is displayed.
 
-Remarks
--------
+## Remarks
 
 A given *profile-items-section* name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -144,12 +142,11 @@ Each *profile-items-section* contains detailed information for creating or remov
 
 Any of the string parameters specified in the *profile-items-section* entries can be specified by using a %*strkey*% token, as described in [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-Examples
---------
+## Examples
 
 The following INF file excerpt shows how to use the *profile-items-section* to add Calculator to the Start Menu.
 
-```ini
+```inf
 [CalcInstallItems]
 Name = %Calc_DESC%
 CmdLine = 11,, calc.exe
@@ -166,7 +163,7 @@ Calc_TIP = "Performs basic arithmetic tasks with an on-screen calculator"
 
 The following INF file excerpt shows how to install the same software by using the **DisplayResource** entry to create localized menu items.
 
-```ini
+```inf
 [CalcInstallItems]
 Name = %Calc_DESC%
 CmdLine = 11,, calc.exe

@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x17B: PROFILER\_CONFIGURATION\_ILLEGAL 
+# Bug Check 0x17B: PROFILER\_CONFIGURATION\_ILLEGAL 
 
 
 The PROFILER_CONFIGURATION_ILLEGAL bug check has a value of 0x0000017B. 

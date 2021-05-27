@@ -1,7 +1,6 @@
 ---
 title: Deblocking Filter Commands
 description: Deblocking Filter Commands
-ms.assetid: 9f20c6fa-c515-43b8-a947-f6290d15bd35
 keywords:
 - macroblocks WDK DirectX VA , deblocking filter commands
 - deblocking filter commands WDK DirectX VA
@@ -19,7 +18,7 @@ A deblocking filter command for a macroblock may require the accelerator to read
 
 The two different types of deblocking filter command buffers are:
 
--   A buffer that requires access and modification of the value of reconstructed samples for macroblocks outside those of the current deblocking filter command buffer (when the **bPicDeblockConfined** member of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure is zero).
+-   A buffer that requires access and modification of the value of reconstructed samples for macroblocks outside those of the current deblocking filter command buffer (when the **bPicDeblockConfined** member of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure is zero).
 
 -   A buffer that does not require access and modification of the value of reconstructed samples for macroblocks outside those of the current deblocking filter command buffer (when **bPicDeblockConfined** is 1).
 
@@ -38,10 +37,4 @@ The deblocking filter operations can be performed in the accelerator in one of t
  
 
  
-
- 
-
-
-
-
 

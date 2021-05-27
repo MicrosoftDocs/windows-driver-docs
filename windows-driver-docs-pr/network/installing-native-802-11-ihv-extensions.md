@@ -1,7 +1,6 @@
 ---
 title: Installing Native 802.11 IHV Extensions
 description: Installing Native 802.11 IHV Extensions
-ms.assetid: 73e45572-6f48-43da-9456-4de5e1f1901f
 keywords:
 - IHV extensions WDK Native 802.11 , installing
 - installing Native 802.11 IHV extensions
@@ -31,7 +30,7 @@ To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-d
     IhvUIExt.dll,,,2
     ```
 
-    For more information about the CopyFiles directive, see [**INF CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive).
+    For more information about the CopyFiles directive, see [**INF CopyFiles Directive**](../install/inf-copyfiles-directive.md).
 
 -   Make sure that a DestinationDirs section declares the destination of the *file-list-section* used in the CopyFiles directive.
 
@@ -43,9 +42,9 @@ To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-d
     Sample-File-List-Section = 11
     ```
 
-    For more information about the DestinationDirs section, see [**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section).
+    For more information about the DestinationDirs section, see [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md).
 
--   Make sure that an AddReg directive, with an associated *add-registry-section*, is added to the INF file for each WLAN adapter. For more information about the AddReg directive, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+-   Make sure that an AddReg directive, with an associated *add-registry-section*, is added to the INF file for each WLAN adapter. For more information about the AddReg directive, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
     Within the *add-registry-section*, the following keys must be declared.
 
@@ -68,13 +67,8 @@ To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-d
 
     The AdapterOUI key is used to verify that the OUI of the WLAN adapter matches the value of the **OUI** attribute of the **IHV** XML element. For more information about the **IHV** element and the Native 802.11 XML schema, refer to the Microsoft Windows SDK documentation.
 
-For more information about the INF file and its sections, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files).
+For more information about the INF file and its sections, see [Creating an INF File](../install/overview-of-inf-files.md).
 
  
 
  
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: .symopt (Set Symbol Options)
 description: The .symopt command sets or displays the symbol options.
-ms.assetid: 0793baa3-14f7-48df-8773-736b6a5470e6
 keywords: [".symopt (Set Symbol Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,8 +64,7 @@ Specifies the symbol options to be changed. *Flags* must be the sum of the bit f
 
 For a list and description of each symbol option, its bit flag, and other methods of setting and clearing these options, see [Setting Symbol Options](symbol-options.md).
 
-Remarks
--------
+## Remarks
 
 Without any arguments, **.symopt** displays the current symbol options.
 

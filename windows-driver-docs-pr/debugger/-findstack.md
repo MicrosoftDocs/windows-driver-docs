@@ -1,7 +1,6 @@
 ---
 title: findstack
 description: The findstack extension locates all of the stacks that contain a specified symbol or module.
-ms.assetid: 68a696f1-81fb-401e-ad68-ebc616eaf41a
 keywords: ["findstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,8 +68,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 For more information about stack traces, see the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands.
 
-Remarks
--------
+## Remarks
 
 The [**!stacks**](-stacks.md) kernel-mode extension also display information about stacks, including a brief summary of the state of every thread.
 

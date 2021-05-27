@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died.
-ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
 keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.date: 02/25/2020
 topic_type:
@@ -19,7 +18,7 @@ The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates th
 
 Built in Windows critical system services include csrss.exe, wininit.exe, logonui.exe, smss.exe, services.exe, conhost.exe, and winlogon.exe.
 
-A developer can also create a service and set its recovery option to Restart the Computer for more information see [Set up Recovery Actions to Take Place When a Service Fails](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
+A developer can also create a service and set its recovery option to Restart the Computer, for more information see [Set up Recovery Actions to Take Place When a Service Fails](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -71,7 +70,7 @@ Once information about the code in question is available,  set a breakpoint in t
 
 Use the second parameter of the bug check to determine if a dying process or thread caused the bug check.
 
-If it is a process, use the [!process](-process.md) command to display information on the process before and after the point of failure to look for abnormal behavior. The [Process explorer](https://docs.microsoft.com/sysinternals/downloads/process-explorer) utility  can used to gather general information about which process are running and parent child relationships.
+If it is a process, use the [!process](-process.md) command to display information on the process before and after the point of failure to look for abnormal behavior. The [Process explorer](/sysinternals/downloads/process-explorer) utility  can used to gather general information about which process are running and parent child relationships.
 
 If it is a thread, consider using the [!thread](-thread.md) command to display information about the thread. For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md). 
 
