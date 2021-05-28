@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 OID_WWAN_REGISTER_PARAMS sets or returns the parameters that an MB device uses during 5G registration requests.
 
-Before turning on the device radio, the host typically sends an OID_WWAN_REGISTER_PARAMS set request to configure the device with the desired registration parameters. This OID's payload contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure that specifies the registration parameters, such as a default PDU session hint. If the device accepts these parameters, it will use them during 5G registration requests. 
+Before turning on the device radio, the host typically sends an OID_WWAN_REGISTER_PARAMS set request to configure the device with the desired registration parameters. This OID's payload contains an [**NDIS_WWAN_SET_REGISTER_PARAMS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_set_register_params) structure, which in turn contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure that specifies the registration parameters such as a default PDU session hint. If the device accepts these parameters, it will use them during 5G registration requests. 
 
 The host may send an OID_WWAN_REGISTER_PARAMS set request at any time. When the device receives this request, it must compare the new parameters to any parameters it previously used for 5G registration. If there are differences, the device should use the newly received parameters for the next 5G registration. The host can also use the [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure's **ReRegisterIfNeeded** parameter to force immediate 5G re-registration.  
 
@@ -19,7 +19,7 @@ The host may use this OID to query the registration parameters that an MB device
 
 ## Remarks
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](/windows-hardware/drivers/network/ndis-status-wwan-register-params-state) status notification containing a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE](/windows-hardware/drivers/network/ndis-status-wwan-register-params-state) status notification containing an [**NDIS_WWAN_REGISTER_PARAMS_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_register_params_info) structure, which contains a [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
 
 For a failured set or query response, the information shall be null and the **InformationBufferLength** shall be zero.
 
