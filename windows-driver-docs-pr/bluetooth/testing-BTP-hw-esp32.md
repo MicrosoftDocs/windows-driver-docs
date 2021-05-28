@@ -38,18 +38,18 @@ USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.s
 
 ## Getting Started
 
-If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd)
+If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd)
 
 > [!NOTE]
 > The ESP32 device can **only** be plugged into the Traduci board 12-pin port labeled 'JD'.
 
 ## Updating ESP32 Firmware manually
 
-This is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd).  
+This is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd).  
 
 1.  Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
-    2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/path).
+    2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/windows-server/administration/windows-commands/path).
     3. To aquire the ESP32 board packages, run the following from a cmd prompt:
     ```console
     arduino-cli config init
@@ -85,7 +85,7 @@ Using a USB Serial to UART board (like the one shown below) & jumper wires ![ESP
 If the ESP32 already has BTP compatible firmware installed, future updates can be installed via the Traduci. Plug the ESP32 into port JD and run the following command from an elevated cmd prompt:
 - `TraduciCmd.exe -updateesp32firmware`
 
-This flashing process does not require the use of a UART to USB Serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-manually)
+This flashing process does not require the use of a UART to USB Serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
 
 
 ## Features

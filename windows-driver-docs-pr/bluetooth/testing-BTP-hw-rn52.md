@@ -12,23 +12,21 @@ ms.localizationpriority: medium
 
 The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral such as a speaker or headset). More information can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
 
-| Device | Capabilities | Parameter |
+| Device Name | Parameter | Usage Example |
 | --- | --- | --- |
-| RN52 | Basic Rate (BR) radio | rn52 (ex. RunPairingTests.bat rn52) |
+| RN52 | rn52 | RunPairingTests.bat rn52 |
+
+![Photo of the RN52 Device](images/RN52.png)
 
 ## Suported Tests
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Audio tests](testing-BTP-tests-audio.md)
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md)
-- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md)
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as an audio device)
 
 ## Hardware 
 
 The PMOD + Audio header RN52 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/rn52-sled)
-
-### RN52 Device
-
-![Photo of the RN52 Device](images/RN52.png)
 
 ### RN52 Device on BTP-compatible sled
 

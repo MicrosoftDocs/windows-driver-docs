@@ -36,7 +36,7 @@ More information about officially supported devices can be reviewed at the follo
 | Device | Capabilities | Parameter | Applicable tests | Sample cmd line |
 | --- | --- | --- | --- | --- |
 | [RN42](testing-BTP-hw-rn42.md) | Basic Rate (BR) radio | rn42 | Pairing, HID, Audio HID Scenario | RunPairingTests.bat rn42 |
-| [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md) | Low Energy (LE) radio | bluefruit52 |  Pairing, HID, Audio HID Scenario, Battery | |  RunPairingTests.bat bluefruit52 |
+| [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md) | Low Energy (LE) radio | bluefruit52 |  Pairing, HID, Audio HID Scenario, Battery | RunPairingTests.bat bluefruit52 |
 | [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md) | Low Energy (LE) radio | bluefruit | Pairing, HID, Audio HID Scenario, Battery | RunPairingTests.bat bluefruit |
 | [RN52](testing-BTP-hw-rn52.md) | Basic Rate (BR) radio | rn42 | Pairing, Audio, Audio HID Scenario, Wi-Fi Coexistence | RunPairingTests.bat rn52 |
 | [BM64](testing-BTP-hw-bm64.md) | Dual Mode radio | bm64 | Pairing, Audio, Audio HID Scenario | RunPairingTests.bat bm64 |
