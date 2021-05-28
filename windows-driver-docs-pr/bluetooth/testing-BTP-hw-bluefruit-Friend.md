@@ -6,25 +6,27 @@ ms.localizationpriority: medium
 
 ---
 
+# Bluefruit LE UART Friend (nRF51822)
 
-# Bluefruit LE UART Friend (nRF51 device)
+## Overview
 
+The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral (like a keyboard or mouse) among other things. More information can be found at [Adafruit](https://www.adafruit.com/product/2479) and through the [Nordic Semiconductor](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822) nRF51822 reference.
 
-The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral (like a keyboard or mouse) among other things. It is currently supported by the BTP pairing and HID tests. More information can be found at [Adafruit](https://www.adafruit.com/product/2479) and through the [Nordic Semiconductor](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822) nRF51822 reference.
-
-
-| Device | Capabilities | Parameter |
+| Device Name | Parameter | Usage Example |
 | --- | --- | --- |
-| Bluefruit | Low Energy (LE) radio | bluefruit (ex. RunPairingTests.bat bluefruit) |
+| Bluefruit Friend | bluefruit | RunPairingTests.bat bluefruit |
 
+![Photo of the Bluefruit Friend Device](images/Bluefruit.png)
 
 ## Suported Tests
-    link to Pairing, HID, audio hid tests goes here
+- [Pairing tests](testing-BTP-tests-pairing.md)
+- [Human Interface Device (HID) tests](testing-BTP-tests-hid.md) 
+- [Battery tests](testing-BTP-tests-battery.md)
+- [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
 
 ## Hardware
 
-The Bluefruit LE UART Friend can be purchased via [MCCI](https://store.mcci.com/products/bluefruit-radio-sled-for-btp)
-The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafruit.com/product/2479) & adapted to work with the Tradcui
+The Bluefruit LE UART Friend can be purchased via [MCCI](https://store.mcci.com/products/bluefruit-radio-sled-for-btp). It can also be purchased via [Adafruit](https://www.adafruit.com/product/2479) and adapted to work with the Traduci.
 
 ## Getting Started
 

@@ -108,7 +108,7 @@
       href: testing-BTP-software-package.md
     - name: "BTP Hardware"
       items:
-      - name: "Traduci board"
+      - name: "Supported Hardware"
         href: testing-BTP-hw.md
       - name: "RN42"
         href: testing-BTP-hw-rn42.md

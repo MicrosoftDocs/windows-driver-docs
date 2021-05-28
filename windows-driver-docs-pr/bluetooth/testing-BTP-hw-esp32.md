@@ -14,18 +14,19 @@ The Model 2433 ESP32 is a custom ESP32 board with a 12 pin adapter fit for the T
 More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
 The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device.
 More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://store.digilentinc.com/pmod-esp32-wireless-communication-module).
-  
-This section will cover how to set up and use a Model 2433 ESP32 for testing with BTP.
 
-### ESP32 Device
+| Device Name | Parameter | Usage Example |
+| --- | --- | --- |
+| ESP32 Wi-Fi | esp32wifi | RunWiFiCoexScenarioTests.bat rn52 esp32wifi |
 
 ![Photo of the Model 2433 ESP32](images/ESP32.png)
+
+## Suported Tests
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as an Access Point device)
 
 ### ESP32 Device on BTP-compatible sled
 
 ![Photo of the Model 2433 ESP32 Device on a sled](images/Traduci_and_ESP32.jpg)
-## Suported Tests
-    link to wifi coex tests goes here
 
 ## Hardware 
 
@@ -35,7 +36,7 @@ The ESP32 can also be purchased via [Digilent](https://store.digilentinc.com/pmo
 
 USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731)
 
-## Getting Started 
+## Getting Started
 
 If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd)
 
@@ -46,19 +47,18 @@ If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Trad
 
 This is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md/#Updating-ESP32-Firmware-via-Traduci.cmd).  
 
-1. Acquire and setup the Arduino-CLI
+1.  Acquire and setup the Arduino command line interface.
+    1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
+    2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/path).
+    3. To aquire the ESP32 board packages, run the following from a cmd prompt:
+    ```console
+    arduino-cli config init
+    arduino-cli core update-index
+    arduino-cli core update-index --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
+    arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/    package_esp32_index.json
+    ```
 
-Download the latest version of the [Arduino-CLI](https://arduino.github.io/arduino-cli/latest/installation/#download)
-If not done already, add the Arduino-cli to your [PATH variable](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/path).
-To aquire the ESP32 board packages, run the following from a cmd prompt:
-```console
-arduino-cli config init
-arduino-cli core update-index
-arduino-cli core update-index --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
-arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
-```
-
-2. Connect the Hardware 
+2. Connect the Hardware.
 Using a USB Serial to UART board (like the one shown below) & jumper wires ![ESP32 with USB to UART board](images/ESP32_and_UART.png)
     1. Connect the GND of the Serial board to the GND of the ESP32
     2. Connect the RX of the Serial board to the TX of the ESP32
@@ -71,17 +71,14 @@ Using a USB Serial to UART board (like the one shown below) & jumper wires ![ESP
     7. Move SW1 to the ON position to switch the ESP32 into boot mode.
     ![ESP32 enable boot mode](images/ESP32Boot.png)
 
-3. Upload the Firmware
-    
-Run `arduino-cli upload -p <COM port from previous step here> --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin`
-
-Wait for `Connecting ….____....` to show  on the terminal.
-
-Press BTN1 to reset the board.
-![ESP32 reset button](images/ESP32Reset.png)
-
-Wait for the `ESP32 firmware is up to date` to show on the terminal and indicate the process is done.
-Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
+3. Upload the firmware to the Bluefruit Feather by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
+    ```console
+    arduino-cli upload -p COMX --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin
+    ```
+    1. Wait for `Connecting ….____....` to show  on the terminal.
+    2. Press BTN1 to reset the board. ![ESP32 reset button](images/ESP32Reset.png)
+    4. Wait for the `ESP32 firmware is up to date` to show on the terminal and indicate the process is done.
+    5. Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
 
 ## Updating ESP32 Firmware via Traduci.cmd
 

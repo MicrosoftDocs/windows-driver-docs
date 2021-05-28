@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral such as a speaker or headset). It is currently planned to be supported upcoming BTP audio tests. More information can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
+The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral such as a speaker or headset). More information can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
 
 | Device | Capabilities | Parameter |
 | --- | --- | --- |
 | RN52 | Basic Rate (BR) radio | rn52 (ex. RunPairingTests.bat rn52) |
 
 ## Suported Tests
-    link to pairing tests goes here
-    link to audio  tests goes here
-    link to audio-hid
-    link to wi-fi coex
+- [Pairing tests](testing-BTP-tests-pairing.md)
+- [Audio tests](testing-BTP-tests-audio.md)
+- [Audio & HID tests](testing-BTP-tests-audio-hid.md)
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md)
 
 ## Hardware 
 
