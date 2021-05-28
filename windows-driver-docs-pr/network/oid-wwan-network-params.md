@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID_WWAN_NETWORK_PARAMS
 
-The host may send an OID_WWAN_NETWORK_PARAMS query request to retrieve the network parameters from an MB device.
+The host may send an OID_WWAN_NETWORK_PARAMS query request to retrieve network configuration data and/or policy information from an MB device.
 
 Set requests are not valid. 
 
