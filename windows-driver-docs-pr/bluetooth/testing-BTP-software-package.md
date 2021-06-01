@@ -12,9 +12,9 @@ The BTP software package contains several tools to be used for testing Bluetooth
 
 ## Download the BTP Software Package
 
-The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included.
+The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included. Click the button below to download the latest version.
 
-[![Download the Bluetooth Test Platform Software Package](images/download.png)](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.6.2.msi)  Download the Bluetooth Test Platform Software Package.
+[![Download the Bluetooth Test Platform Software Package](images/download.png)](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.6.2.msi)
 
 ## Version Updates
 
@@ -35,13 +35,14 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 | --- | --- | --- |
 | ConfigureMachineForBtp | - Provided as a CMD script and a PowerShell script.</br>- Configures a test machine for running BTP tests.</br>- Intended to be run before first test is run on a new machine or OS install.</br> | ConfigureMachineForBtp.bat</br>ConfigureMachineForBtp.ps1 |
 | GetProcessorArchitectureName | - Provided as a PowerShell script.</br>- Allows other scripts to identify the current machine's architecture | GetProcessorArchitectureName.ps1 |
-| RunPairingTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the Bluetooth pairing tests.</br>- Supports custom arguments if provided.</br> | RunPairingTests.bat</br>RunPairingTests.ps1 |
-| RunHIDTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the Bluetooth HID tests.</br>- Supports custom arguments if provided.</br> | RunHIDTests.bat</br>RunHIDTests.ps1 |
 | RunTaefTest | - PowerShell helper script for running TAEF tests given the test dll name and test parameters.</br> | RunTeafTests.ps1 |
+| RunPairingTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the Bluetooth pairing tests.</br>- Supports custom arguments if provided.</br> | RunPairingTests.bat</br>RunPairingTests.ps1 |
+| RunHidTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the Bluetooth HID tests.</br>- Supports custom arguments if provided.</br> | RunHidTests.bat</br>RunHidTests.ps1 |
 | RunAudioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs audio tests including glitch detection and audio volume validation.</br>- Supports custom arguments if provided</br> | RunAudioTests.bat</br>RunAudioTests.ps1 |
 | RunAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs audio and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunAudioHidScenarioTests.bat</br>RunAudioHidScenarioTests.ps1 |
 | RunBatteryTests | - Provided as a CMD script and a PowerShell script.</br>- Runs battery tests.</br>- Supports custom arguments if provided</br> | RunBatteryTests.bat</br>RunBatteryTests.ps1 |
-| Bluefruit52 Firmware | - Compiled binaries for Bluefruit 52 device. | BtpBluefruit_nRF52840.ino.zip |
+| RunWiFiCoexScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi coexistence scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiCoexScenarioTests.bat</br>RunWiFiCoexScenarioTests.ps1 |
+| Bluefruit Feather Firmware | - Compiled binaries for Bluefruit Feather device. | BtpBluefruit_nRF52840.ino.zip |
 | ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino</br>WiFi-ESP32.ino.partitions |
 
 ### Architecture Dependent Binaries
@@ -59,6 +60,7 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 | AudioTests | -  Test binary for Bluetooth Audio tests.</br> - Can be run using TAEF. | TaefAudioTests.dll |
 | AudioHidScenarioTests | - Test binary for Bluetooth Audio and HID scenario tests.</br> - Can be run using TAEF. | TaefAudioHidScenarioTests.dll |
 | BatteryTests | - Test binary for Bluetooth battery tests.</br> - Can be run using TAEF. | TaefBatteryTests.dll |
+| WiFiCoexScenarioTests | - Test binary for Bluetooth and Wi-Fi coexistence tests.</br> - Can be run using TAEF. | TaefWiFiCoexScenarioTests.dll |
 | TraduciCmd | - Command line tool for querying and changing the state of the Traduci, including debug commands.</br> - Used for firmware update to Traduci hardware. | TraduciCmd.exe |
 | BTETLParse | - Command line tool for extracting HCI traces from supported ETL files. | BTETLParse.exe |
 | BTVS | - Graphical tool for streaming live HCI traces in supported formats (such as Ellisys, Frontline, and Wireshark).</br> - Only available for the x86 architecture. | btvs.exe |

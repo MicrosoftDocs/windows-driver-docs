@@ -5,6 +5,7 @@ ms.date: 4/28/2021
 ms.localizationpriority: medium
 
 ---
+# !!!TO DELETE!!!
 
 # Wi-Fi Capable Peripheral Devices
 

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 
 ---
 
+# !!! TO DELETE !!!
 # Audio Capable Peripheral Devices
 
 The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to communicate with any device module. The audio devices and breakouts listed here take a radio module and break out the necessary pins to the required 12-pin layout.
@@ -15,7 +16,7 @@ The Bluetooth Test Platform (BTP) Traduci board requires a 12-pin connector to c
 | RN52 | Basic Rate (BR) radio | rn52 (ex. RunPairingTests.bat rn52) |
 | BM64 | Dual Mode radio | bm64 (ex. RunPairingTests.bat bm64) |
 
-## Audio Sled (RN52 device)
+## !MOVED! Audio Sled (RN52 device)
 
 The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral such as a speaker or headset). It is currently planned to be supported upcoming BTP audio tests. More information can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
 
@@ -40,7 +41,7 @@ MCCC sells a PMOD version of the RN52 Audio Sled [here](https://store.mcci.com/c
 - Fully certified Class 2 BR Bluetooth 2.1+EDR
 - Small form factor, low power, surface mount module
 
-## BM-64-EVB-C2 (BM64 Device)
+## !MOVED! BM-64-EVB-C2 (BM64 Device)
 
 The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speaker, or multi-speaker peripherals.
 More information can be found via the BM64 page from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64).
@@ -67,3 +68,4 @@ More information can be found via the BM-64-EVB page from [**Microchip**](https:
 - Supports AAC and SBC codecs
 - Heavily featured, surface mount module
 - Using BM-64-EVB does not require a Traduci
+.

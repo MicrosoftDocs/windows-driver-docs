@@ -18,6 +18,14 @@ When using the BM-64-EVB, two red LEDs should be on (one of which may turn off a
 
 Features and purchasing information for supported devices can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
+## Supported radios
+- [RN42](testing-BTP-hw-rn42.md)
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend)
+- [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
+- [BM 64-EVB](testing-BTP-hw-bm62.md)
+- [RN52](testing-BTP-hw-rn52.md)
+- 
+
 ## Running the pairing tests
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:
