@@ -18,7 +18,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 The **PortId** member of the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure specifies the extensible switch port for which the connect notification is being made. The extensible switch extension must update any cached information about the port that it obtained in the following ways:
 
--   By issuing OID query requests of [OID\_SWITCH\_PORT\_ARRAY](oid-switch-port-array.md). The extension issues this OID on [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) only when [OID\_SWITCH\_PARAMETERS](oid-switch-parameters.md) returns an [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure with **IsActive** set to TRUE. If **IsActive** is FALSE, the extension issues the OID when the **NetEventSwitchActivate** [**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event) is issued by the extension miniport.
+-   By issuing OID query requests of [OID\_SWITCH\_PORT\_ARRAY](oid-switch-port-array.md). The extension issues this OID on [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) only when [OID\_SWITCH\_PARAMETERS](oid-switch-parameters.md) returns an [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure with **IsActive** set to TRUE. If **IsActive** is FALSE, the extension issues the OID when the **NetEventSwitchActivate** [**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event) is issued by the extension miniport.
 
 -   By inspecting the various OID sets requests of [OID\_SWITCH\_PORT\_CREATE](oid-switch-port-create.md) and [OID\_SWITCH\_PORT\_DELETE](oid-switch-port-delete.md).
 
@@ -112,7 +112,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 
 [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest)
 
-[**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event)
+[**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event)
 
 [OID\_SWITCH\_NIC\_DELETE](oid-switch-nic-delete.md)
 

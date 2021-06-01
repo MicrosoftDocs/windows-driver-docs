@@ -52,15 +52,15 @@ The following list contains PnP and power management events, as indicated by the
 
     Indicates that the configuration has changed for a network component. For example, if a user changes the IP address for TCP/IP, NDIS indicates this event to the TCP/IP protocol with the **NetEventReconfigure** code. The protocol driver can, in rare circumstances, return a failure code if it is not able to apply the indicated configuration changes and there are no available default values. A failed attempt to allocate memory is an example of a case in which the protocol returns a failure code. Returning an error code can result in prompting the user to restart the system.
 
-    A protocol should validate **NetEventReconfigure**-related data passed to its [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event).
+    A protocol should validate **NetEventReconfigure**-related data passed to its [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event).
 
 -   **NetEventBindList**
 
     Indicates to a protocol driver that its bind list processing order has been reconfigured. This list indicates a relative order to be applied to the protocol's bindings when processing, for example, a user request that might be routed to one of several bindings. The buffer passed with this event contains a list of device names formatted as NULL-terminated Unicode strings. The format of each device name is identical to the *DeviceName* parameter that is passed to a call to [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex).
 
-    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event).
+    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event).
 
-    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event).
+    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event).
 
 -   **NetEventBindsComplete**
 
