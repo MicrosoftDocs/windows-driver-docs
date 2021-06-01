@@ -18,13 +18,13 @@ Additionally, it is important to note that BTP tests do not have a tight depende
 
 ## Traduci board
 
-The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
+The Traduci board is produced by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
 ![Photo of the Traduci board](images/Traduci_Overhead.jpg)
 
 - 4 12-pin ports to support 4 devices simultaneously
 - Able to route data to and from multiple devices simultaneously
-- 3 FPGAs connected to ports 1, 2, and 3 respectively
+- 3 FPGAs connected to ports JA, JB, and JC respectively
 - Supports audio testing via the integrated audio codec
 - Unlabled pins can easily be statically assigned to HIGH or LOW depending on the needs of the device plugged into the port
 - The Traduci does not currently support hardware handshaking using CTS and RTS

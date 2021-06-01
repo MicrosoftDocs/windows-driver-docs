@@ -21,10 +21,11 @@ The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 ## Suported Tests
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Human Interface Device (HID) tests](testing-BTP-tests-hid.md)
-- [Audio & HID tests](testing-BTP-tests-audio-hid.md)
+- [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
 
 ## Hardware 
 
+The Model 2431 RN42 Radio Sled for BTP can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/rn42-sled)
 The Pmod BT2 device can be purchased via [Digilent](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
 ### Bluetooth Test Platform Traduci Board and Diligent sled

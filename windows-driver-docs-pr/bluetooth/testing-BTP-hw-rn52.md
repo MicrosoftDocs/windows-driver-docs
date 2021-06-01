@@ -21,7 +21,7 @@ The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 ## Suported Tests
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Audio tests](testing-BTP-tests-audio.md)
-- [Audio & HID tests](testing-BTP-tests-audio-hid.md)
+- [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as an audio device)
 - [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as an audio device)
 
 ## Hardware 

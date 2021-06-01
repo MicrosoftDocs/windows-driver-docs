@@ -34,7 +34,7 @@ The ESP32 can be purchased via [MCCI](https://store.mcci.com/products/esp32-sled
 
 The ESP32 can also be purchased via [Digilent](https://store.digilentinc.com/pmod-esp32-wireless-communication-module/).
 
-USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731)
+USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731) needed for first time Firmware Update.
 
 ## Getting Started
 
@@ -87,7 +87,6 @@ If the ESP32 already has BTP compatible firmware installed, future updates can b
 
 This flashing process does not require the use of a UART to USB Serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
 
-
 ## Features
 
 - Wi-Fi, Bluetooth LE, and Bluetooth communication available
@@ -96,6 +95,3 @@ This flashing process does not require the use of a UART to USB Serial board. Th
 - 12-pin Pmod connector with SPI and UART interfaces
 - Supports creation of Wi-Fi soft access points
 - Supports Http web server capabilities
-
-
-

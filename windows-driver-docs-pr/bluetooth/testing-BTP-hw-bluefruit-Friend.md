@@ -21,12 +21,13 @@ The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behavi
 ## Suported Tests
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Human Interface Device (HID) tests](testing-BTP-tests-hid.md) 
-- [Battery tests](testing-BTP-tests-battery.md)
+- [Battery tests](testing-BTP-tests-battery.md) 
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
 
 ## Hardware
 
-The Bluefruit LE UART Friend can be purchased via [MCCI](https://store.mcci.com/products/bluefruit-radio-sled-for-btp). It can also be purchased via [Adafruit](https://www.adafruit.com/product/2479) and adapted to work with the Traduci.
+The Bluefruit LE UART Friend can be purchased via [MCCI](https://store.mcci.com/products/bluefruit-radio-sled-for-btp). 
+The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafruit.com/product/2479) and adapted to work with the Traduci.
 
 ## Getting Started
 

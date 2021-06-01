@@ -16,6 +16,11 @@ First check that the green power indicator, an optional yellow test LED, and 3 o
 
 Information and purchasing information for supported devices can be found [Supported BTP Hardware](testing-BTP-hw.md).
 
+## Supported devices
+- [RN42](testing-BTP-hw-rn42.md)
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend)
+- [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
+
 ## Running the HID Tests ##
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:

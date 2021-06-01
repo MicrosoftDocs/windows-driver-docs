@@ -16,6 +16,10 @@ When using a PMOD device with the Traduci, first check that the green power indi
 
 Features and purchasing information for supported devices can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
+## Supported devices
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend)
+- [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
+
 ## Running the battery tests ##
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:

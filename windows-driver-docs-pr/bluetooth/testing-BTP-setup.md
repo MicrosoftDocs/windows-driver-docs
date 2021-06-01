@@ -45,4 +45,4 @@ To plug a peripheral device into a port on the Traduci, orient the Traduci so th
 
 ## Known issues
 
-- Power: Intermittent failures may be seen if the device is plugged into a non-powered hub or VCC is not able to supply 5V. In these cases use a powered USB hub or use a 9V AC-DC barrel adapter.
+- Power: Intermittent failures may be seen if VCC is not able to supply a steady 5V. In these cases use a 9V AC-DC barrel adapter.  These issues are more common during tests utilizing more than 1 device.

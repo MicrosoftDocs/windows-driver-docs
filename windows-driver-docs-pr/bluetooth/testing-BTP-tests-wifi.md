@@ -18,6 +18,10 @@ When using the BM-64-EVB, two red LEDs should be on (one of which may turn off a
 
 Features and purchasing information for supported devices can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
+## Supported devices
+- [RN52](testing-BTP-hw-rn52.md) (as Audio Device)
+- [ESP32](testing-BTP-hw-esp32.md) (as Access Point device)
+
 ## Running the Wi-Fi and Bluetooth Audio Coexistence tests
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Ensure that all existing network and VPN connections are disconnected, and that "Connect Automatically" is unchecked. Then run either:
