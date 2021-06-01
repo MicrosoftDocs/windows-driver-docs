@@ -20,9 +20,9 @@ Features and purchasing information for supported devices can be found at [Suppo
 
 ## Supported devices
 - [RN42](testing-BTP-hw-rn42.md) (as HID Device)
-- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend) (as HID Device)
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md) (as HID Device)
 - [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md) (as HID Device)
-- [BM 64-EVB](testing-BTP-hw-bm62.md)  (as Audio Device)
+- [BM 64-EVB](testing-BTP-hw-bm64.md)  (as Audio Device)
 - [RN52](testing-BTP-hw-rn52.md) (as Audio Device)
 
 ## Running the Audio and HID Scenario Tests ##
@@ -32,7 +32,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunAudioHidScenarioTests.bat <audio device name> <hid device name>` from an elevated command prompt or
 - `RunAudioHidScenarioTests.ps1 <audio device name> <hid device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found [here](testing-BTP-hw.md#supported-radios).
+Information on available device name parameters can be found [here](testing-BTP-hw.md#supported-devices).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

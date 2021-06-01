@@ -19,7 +19,7 @@ When using the BM-64-EVB, two red LEDs should be on (one of which may turn off a
 Features and purchasing information for supported devices can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
 ## Supported devices
-- [BM 64-EVB](testing-BTP-hw-bm62.md)
+- [BM 64-EVB](testing-BTP-hw-bm64.md)
 - [RN52](testing-BTP-hw-rn52.md) 
 
 ## Running the Audio Tests
@@ -29,7 +29,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunAudioTests.bat <device name>` from an elevated command prompt or
 - `RunAudioTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found at [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-radios)
+Information on available device name parameters can be found at [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-devices)
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

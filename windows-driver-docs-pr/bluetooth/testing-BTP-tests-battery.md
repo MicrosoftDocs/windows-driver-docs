@@ -17,7 +17,7 @@ When using a PMOD device with the Traduci, first check that the green power indi
 Features and purchasing information for supported devices can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
 ## Supported devices
-- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend)
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md)
 - [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
 
 ## Running the battery tests ##
@@ -27,7 +27,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunBatteryTests.bat <device name>` from an elevated command prompt or
 - `RunBatteryTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found in [here](testing-BTP-hw.md#supported-radios).
+Information on available device name parameters can be found in [here](testing-BTP-hw.md#supported-devices).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

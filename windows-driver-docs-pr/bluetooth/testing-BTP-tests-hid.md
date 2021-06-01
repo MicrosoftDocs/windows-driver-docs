@@ -18,7 +18,7 @@ Information and purchasing information for supported devices can be found [Suppo
 
 ## Supported devices
 - [RN42](testing-BTP-hw-rn42.md)
-- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend)
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md)
 - [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
 
 ## Running the HID Tests ##
