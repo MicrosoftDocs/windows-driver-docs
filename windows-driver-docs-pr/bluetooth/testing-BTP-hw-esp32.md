@@ -55,7 +55,7 @@ This is required for first time setup of an ESP32 radio for use with the BTP Wi-
     arduino-cli config init
     arduino-cli core update-index
     arduino-cli core update-index --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
-    arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/    package_esp32_index.json
+    arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
     ```
 
 2. Connect the Hardware.
