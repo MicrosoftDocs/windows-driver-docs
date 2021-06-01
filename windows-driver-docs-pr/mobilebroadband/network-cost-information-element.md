@@ -175,7 +175,7 @@ The following tables shows the possible <b>Cost flag</b> bits. Those values MAY 
 </tbody>
 </table>
 
-The following table shows some sample cost attribute values:
+The following table shows some sample cost attribute values (last four bytes of IE):
 
 <table>
 <colgroup>
