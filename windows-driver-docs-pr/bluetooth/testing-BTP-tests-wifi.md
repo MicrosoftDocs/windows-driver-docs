@@ -29,7 +29,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunWiFiCoexScenarioTests.bat <bluetooth device name> <wifi device name>` from an elevated command prompt or
 - `RunWiFiCoexScenarioTests.ps1 <bluetooth device name> <wifi device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found in [here](testing-BTP-hw.md#supported-radios).
+Information on available device name parameters can be found in [here](testing-BTP-hw.md#supported-devices).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
