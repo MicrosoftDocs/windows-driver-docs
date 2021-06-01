@@ -2812,6 +2812,8 @@
         href: ndis-status-wwan-mpdp-state.md
       - name: "NDIS_STATUS_WWAN_NETWORK_BLACKLIST"
         href: ndis-status-wwan-network-blacklist.md
+      - name: "NDIS_STATUS_WWAN_NETWORK_PARAMS-STATE"
+        href: ndis-status-wwan-network-params-state.md
       - name: "NDIS_STATUS_WWAN_NITZ_INFO"
         href: ndis-status-wwan-nitz-info.md
       - name: "NDIS_STATUS_WWAN_PACKET_SERVICE"
@@ -5432,6 +5434,8 @@
       href: oid-wwan-network-blacklist.md
     - name: "OID_WWAN_NETWORK_IDLE_HINT"
       href: oid-wwan-network-idle-hint.md
+    - name: "OID_WWAN_NETWORK_PARAMS"
+      href: oid-wwan-network-params.md
     - name: "OID_WWAN_NITZ"
       href: oid-wwan-nitz.md
     - name: "OID_WWAN_PACKET_SERVICE"

@@ -13,7 +13,7 @@ Miniport drivers use the NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE notification to 
 
 Drivers send an NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE notification in response to an OID query or set request of [OID_WWAN_REGISTER_PARAMS](/windows-hardware/drivers/network/oid-wwan-register-params).
 
-This notification uses the [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
+This notification uses the [**NDIS_WWAN_REGISTER_PARAMS_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_register_params_info) structure which contains a  [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info) structure.
 
 ## Remarks
 
@@ -30,4 +30,7 @@ For more information see [OID_WWAN_REGISTER_PARAMS](/windows-hardware/drivers/ne
 
 [**WWAN_REGISTRATION_PARAMS_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_registration_params_info)
 
+[**NDIS_WWAN_REGISTER_PARAMS_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_register_params_info)
+
 [OID_WWAN_REGISTER_PARAMS](/windows-hardware/drivers/network/oid-wwan-register-params)
+
