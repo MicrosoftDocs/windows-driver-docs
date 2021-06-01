@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # Identifiers for SCSI Devices
 
-Starting with Windows 10, Version 2004 (OS build 19041.488 or higher), two additional identifiers are available for NVMe storage disk drives which support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description) structure:
+Starting with Windows 10, Version 2004 (OS build 19041.488 or higher), two additional identifiers are available for NVMe storage disk drives which support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-stor_rich_device_description) structure:
 
 `SCSI\t*v(8)p(40)`
 
