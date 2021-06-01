@@ -46,8 +46,8 @@ For first time setup the bootloader needs to be updated. This step is not requir
     ```console
     arduino-cli config init
     arduino-cli core update-index
-    arduino-cli core update-index --additional-urls https://adafruit.github.io/arduino-board-index/    package_adafruit_index.json
-    arduino-cli core install esp32:esp32 --additional-urls https://adafruit.github.io/    arduino-board-index/package_adafruit_index.json
+    arduino-cli core update-index --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+    arduino-cli core install adafruit:nrf52 --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
     ```
 
 3. Identify the COM port assigned to the Bluefruit Feather by running the following from a cmd prompt:
