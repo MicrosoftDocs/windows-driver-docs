@@ -33,7 +33,7 @@ The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafrui
 
 ## Getting Started 
 
-For first time setup the bootloader needs to be updated. This step is not required for future firmware updates.
+For first time setup the bootloader needs to be updated. This step is not required for future firmware updates. Plug the Bluefruit Feather device into a PC via the a micro-USB cable.
 
 1.  Follow the [Adafruit](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/update-bootloader) instructions to update the bootloader.
 
@@ -67,3 +67,6 @@ For first time setup the bootloader needs to be updated. This step is not requir
 - Fully certified Low Energy Bluetooth 5.0 radio
 - Configurable ATT database
 - Small form factor, low power, surface mount module
+
+> [!Note] 
+> The Bluefruit Feather is not currently supported for use with the Traduci at this time.
