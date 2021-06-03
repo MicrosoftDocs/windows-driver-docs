@@ -3,7 +3,7 @@ title: Write a Universal Windows driver (UMDF 2) based on a template
 description: This topic describes how to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 keywords:
 - Write a UMDF driver
-ms.date: 04/20/2018
+ms.date: 06/02/2021
 ms.localizationpriority: medium
 ---
 
@@ -27,6 +27,10 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
     :::image type="content" source="images/vs2019-umdf2-template.png" alt-text="Screen shot of the new project dialog box, showing user mode driver selected.":::
 
 1. In the **Configure your new project** dialog box, enter "UmdfDriver" in the **Project name** field.
+
+     > [!NOTE]
+    > When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.  
+
 1. In the **Location** field, enter the directory where you want to create the new project.
 1. Check **Place solution and project in the same directory** and select **Create**.
 
@@ -66,7 +70,7 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
 5. For **Target Device Name**, select the name of the computer that you configured for testing and debugging.
 6. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\UmdfDriver. Select **OK**.
 
-    ![screen shot of the umdfdriver property pages, showing deployment driver install selected](images/vs2015-deploy.png)
+    :::image type="content" source="images/vs2019-umdf2-deploy.png" alt-text="screen shot of the umdfdriver property pages, showing deployment driver install selected":::
 
     **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
     You can see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **UmdfDriver &gt; Driver Files**, and double-click UmdfDriver.inf. The hardware ID is under \[Standard.NT$ARCH$\].
