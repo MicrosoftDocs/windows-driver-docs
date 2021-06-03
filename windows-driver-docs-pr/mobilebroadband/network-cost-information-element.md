@@ -243,7 +243,7 @@ The following table shows some sample cost attribute values (last four bytes of 
 
 [Communication channels](communication-channels.md)
 
-[[MS-NCT] Network Cost Transfer protocol documentation](openspecs/windows_protocols/ms-nct/7c4adf77-f13b-43aa-8491-637ef4543d96)
+[[MS-NCT] Network Cost Transfer protocol documentation](/openspecs/windows_protocols/ms-nct/7c4adf77-f13b-43aa-8491-637ef4543d96)
 
  
 
