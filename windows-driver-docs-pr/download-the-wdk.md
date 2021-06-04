@@ -63,7 +63,7 @@ MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
 ### ![download icon](images/download-install.png) Step 1.5 Install Windows SDK, version 2104 (Build 10.0.20348.0)
-* [Download SDK for Windows 10, version 2104 (Build 10.0.20348.0](https://aka.ms/windowssdk)
+* [Download SDK for Windows 10, version 2104 (Build 10.0.20348.0)](https://go.microsoft.com/fwlink/?linkid=2164360)
 
 This SDK is strongly recommended and will eventually be made available through Visual Studio
 
