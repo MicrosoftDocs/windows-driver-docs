@@ -3,6 +3,7 @@ title: Cellular architecture and implementation
 description: The cellular architecture for Windows 10.
 ms.date: 03/01/2021
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q4
 ---
 
 # Cellular architecture
@@ -61,7 +62,7 @@ Country & Operator Settings Asset (COSA) is an OEM configurable database with se
 
 **NetCx**
 
-[Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) is a driver model that provides the full functionality of the WDK.
+[Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) is a driver model that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a NIC driver.
 
 **MBBCx**
 

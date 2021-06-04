@@ -1,5 +1,5 @@
 ---
-title: NDIS driver types
+title: Overview of NDIS driver types
 description: NDIS driver types
 keywords:
 - network drivers WDK , NDIS drivers
@@ -8,7 +8,7 @@ ms.date: 11/26/2018
 ms.localizationpriority: medium
 ---
 
-# NDIS driver types
+# Overview of NDIS driver types
 
 The Network Driver Interface Specification (NDIS) library abstracts the network hardware from network drivers. NDIS also specifies a standard interface between layered network drivers, thereby abstracting lower-level drivers that manage hardware from upper-level drivers, such as network transports. NDIS also maintains state information and parameters for network drivers, including pointers to functions, handles, and parameter blocks for linkage, and other system values.
 
