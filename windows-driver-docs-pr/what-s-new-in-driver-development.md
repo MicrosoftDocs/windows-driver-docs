@@ -9,7 +9,9 @@ ms.localizationpriority: medium
 
 This section describes new features and updates for driver development in Windows Server 2022.
 
-## Kernel DMA/MDL updates
+## Kernel 
+
+### DMA/MDL updates
 
 New API pages:
 
@@ -21,6 +23,19 @@ New API pages:
 Updated:
 
 * [**DMA_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (new field **CreateCommonBufferFromMdl**)
+
+### NUMA (Non-Uniform Memory Access)
+
+New API pages:
+
+* [**KeQueryNodeActiveAffinity2**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerynodeactiveaffinity2)
+* [**KeQueryNodeActiveProcessorCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerynodeactiveprocessorcount)
+
+Updated:
+
+* [**KeQueryNodeActiveAffinity**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerynodeactiveaffinity)
+* [**xKeQueryLogicalProcessorRelationship**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerylogicalprocessorrelationship)
+
 
 ## NetAdapterCx
 
