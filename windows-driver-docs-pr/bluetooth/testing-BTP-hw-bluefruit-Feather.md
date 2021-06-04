@@ -41,7 +41,7 @@ For first time setup the bootloader needs to be updated. This step is not requir
 
 2.  Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
-    2. If not done already, add the arduino-cli to your [PATH variable](https://docs.microsoft.com/windows-server/administration/windows-commands/path).
+    2. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
     3. To aquire the Adafruit board packages, run the following from a cmd prompt:
     ```console
     arduino-cli config init
