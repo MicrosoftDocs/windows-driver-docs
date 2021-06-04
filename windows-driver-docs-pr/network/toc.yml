@@ -24,7 +24,7 @@
       href: windows-network-architecture-and-the-osi-model.md
     - name: "NDIS drivers"
       items: 
-      - name: "NDIS driver types"
+      - name: "Overview of NDIS driver types"
         href: ndis-drivers.md
       - name: "Miniport drivers"
         href: ndis-miniport-drivers2.md
