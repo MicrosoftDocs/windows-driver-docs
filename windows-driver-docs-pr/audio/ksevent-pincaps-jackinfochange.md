@@ -47,13 +47,11 @@ The `KSEVENT_PINCAPS_JACKINFOCHANGE` event indicates to the audio stack that the
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
-Remarks
--------
+## Remarks
 
 For information about how to implement support for the `KSEVENT_PINCAPS_JACKINFOCHANGE` event, see the Remarks section of the [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md) topic.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

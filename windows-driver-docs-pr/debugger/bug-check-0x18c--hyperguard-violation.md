@@ -83,8 +83,7 @@ The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C. This indicates th
 
 1103 : GDTR modification
 
-## Cause
------
+## ## Cause
 
 This bugcheck is generated when the kernel detects that critical kernel code or data have been corrupted. There are generally three causes for a corruption:
 
@@ -96,8 +95,7 @@ This bugcheck is generated when the kernel detects that critical kernel code or 
 3) A hardware corruption occurred, e.g. failing RAM holding kernel code or data.
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

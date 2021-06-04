@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
 
  
 
-Remarks
--------
+## Remarks
 
 The list of nodes is an array of GUIDs for available nodes.
 
 For a list of BDA nodes that are available to create in a template topology, see [BDA Node Category GUIDs](bda-node-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

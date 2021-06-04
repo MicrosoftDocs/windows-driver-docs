@@ -39,7 +39,7 @@ A connection-oriented protocol driver can call [**NdisCoOidRequest**](/windows-h
 
 To obtain a NIC's local time, a connection-oriented protocol can call **NdisCoOidRequest** to query a connection-oriented miniport driver or MCM driver with [OID\_GEN\_CO\_GET\_NETCARD\_TIME](./oid-gen-co-get-netcard-time.md). The connection-oriented miniport driver or MCM driver synchronously returns its local time, which the connection-oriented protocol can then use to schedule the transmission of packets.
 
-Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list).
+Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list).
 
  
 

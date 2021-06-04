@@ -32,15 +32,13 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The text to be printed/endorsed can be represented by one or multiple character strings. Each character string can contain one or more special character formatting sequences described by the [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS**](wia-ips-printer-endorser-valid-format-specifiers.md) property. The character strings must contain only characters specified by [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**](wia-ips-printer-endorser-valid-characters.md) and must be NULL terminated. When multiple character strings are configured, the WIA minidriver must print/endorse each string on a new page (cycling through the list of strings).
 
 This property is optional for all Imprinter/Endorser data source items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

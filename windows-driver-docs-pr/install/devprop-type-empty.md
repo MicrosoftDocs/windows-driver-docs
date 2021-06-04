@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_EMPTY identifier represents a special base-data-type identifier that indicates that a property does not exist.
 
-Remarks
--------
+## Remarks
 
 Use this base-data-type identifier with the device property functions to delete a property.
 
@@ -42,8 +41,7 @@ If DEVPROP_TYPE_EMPTY is used in an attempt to delete a property that does not e
 
 A call to a SetupDiGet*Xxx* property function that attempts to retrieve a device property that does not exist will fail, and a subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return ERROR_NOT_FOUND. The called SetupAPI property function will set the \**PropertyType* parameter to DEVPROP_TYPE_EMPTY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

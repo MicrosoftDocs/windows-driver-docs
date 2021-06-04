@@ -56,13 +56,11 @@ The KSPROPERTY\_DVDCOPY\_TITLE\_KEY property retrieves the title key information
 
 The property value (operation data) is a KS\_DVDCOPY\_TITLEKEY structure that describes the current title key.
 
-Remarks
--------
+## Remarks
 
 For more information about the title key, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

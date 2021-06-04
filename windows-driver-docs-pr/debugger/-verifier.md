@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The **!verifier** extension displays the status of Driver Verifier and its actions.
 
-Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see the [Driver Verifier](../devtest/driver-verifier.md) topic in the Windows Driver Kit (WDK) documentation.
+Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
 Syntax
 
@@ -111,8 +111,7 @@ Kdexts.dll
 For information about [Driver Verifier](../devtest/driver-verifier.md), see the Windows Driver Kit (WDK) documentation.
 
 
-Remarks
--------
+## Remarks
 
 The following example illustrates that on 64-bit versions of Windows, the IRQL transition log is not always complete. The two entries shown are consecutive entries in the log for Processor 2. The first entry shows the IRQL going from 2 to 0. The second entry shows the IRQL going from 2 to 2. Information about how the IRQL got raised from 0 to 2 is missing.
 

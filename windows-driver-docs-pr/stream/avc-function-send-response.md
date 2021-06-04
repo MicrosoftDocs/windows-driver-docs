@@ -146,8 +146,7 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 [**AVC\_FUNCTION\_GET\_REQUEST**](avc-function-get-request.md), [**AvcResponseCode**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavcresponsecode), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

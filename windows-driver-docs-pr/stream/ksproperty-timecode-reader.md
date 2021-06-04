@@ -56,13 +56,11 @@ The KSPROPERTY\_TIMECODE\_READER property retrieves the timecode for the current
 
 The property value (operation data) is a TIMECODE\_SAMPLE structure that specifies the timecode of the current tape position.
 
-Remarks
--------
+## Remarks
 
 The **TimecodeSamp** member of the KSPROPERTY\_TIMECODE\_S structure describes the timecode for the current tape position.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

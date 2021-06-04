@@ -12,10 +12,9 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_SAVE\_COMPLETE to notify Hyper-V extensible switch extensions about the completion of the operation to save run-time data. Through this operation, the extension saves run-time data for a port and its associated network adapter connection.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure.
 
-Remarks
--------
+## Remarks
 
 When it receives the OID set request of OID\_SWITCH\_NIC\_SAVE\_COMPLETE, the extension must follow these guidelines:
 
@@ -52,8 +51,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,7 +74,7 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)
 

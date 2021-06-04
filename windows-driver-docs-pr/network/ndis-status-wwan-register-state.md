@@ -16,8 +16,7 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_REGISTRATION\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state) structure.
 
-Remarks
--------
+## Remarks
 
 As the registration state of the device changes, the miniport driver must send appropriate indications so that the MB Service can reflect the correct state to the user.
 
@@ -69,8 +68,7 @@ The miniport driver returns the query result according to the following rules:
 
 -   If the device is registered with a roaming provider, the miniport driver shall set **RegisterState** as **WwanRegisterStatePartner** if the provider is a preferred roaming partner or just **WwanRegisterStateRoaming** for a roaming partner, respectively. If the miniport driver does not distinguish the two, it shall set the value to **WwanRegisterStateRoaming**. The **ProviderId** member shall be set to the provider ID of the current provider the device is registered with and the **ProviderName** must be filled in with the current registered provider name. The **RoamingText** member should be set to some provider specific string value if exists or to **NULL** otherwise.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

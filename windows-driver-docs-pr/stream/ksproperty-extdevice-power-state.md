@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTDEVICE\_POWER\_STATE property sets or gets the power state of
 
 The property value (operation data) is a ULONG that specifies the external device's power state.
 
-Remarks
--------
+## Remarks
 
 The **PowerState** member of the KSPROPERTY\_EXTDEVICE\_S structure specifies the external device's power setting. The **PowerState** member may be set to equal on or standby. For example, a battery-powered external device, such as a DV camcorder may be powered off. An AC-powered DVHS device may be placed in standby. If a device is in standby, it may be powered-on later.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

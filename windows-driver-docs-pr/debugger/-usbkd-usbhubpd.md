@@ -32,8 +32,7 @@ Address of a **usbhub!\_HUB\_PORT\_DATA** structure. To get the addresses of the
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbhub!\_HUB\_PORT\_DATA**. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

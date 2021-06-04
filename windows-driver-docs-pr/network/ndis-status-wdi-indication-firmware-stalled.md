@@ -23,8 +23,7 @@ NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED is used to indicate that the fi
 
 This indication contains no additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

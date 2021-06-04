@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **JobCreatedTime** element specifies the time at which the job was created.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobCreatedTime>
@@ -26,13 +25,11 @@ Usage
 </wscn:JobCreatedTime>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
 
@@ -60,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A job is *created* when the job is submitted to the system.
 

@@ -80,16 +80,14 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
  
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger dx command to display this - `dx KiBugCheckDriver`.
 
-Cause
------
+## Cause
 
 Bug check 0x50 can be caused by the installation of a faulty system service or faulty driver code. Antivirus software can also trigger this error, as can a corrupted NTFS volume.
 
 It could also occur after the installation of faulty hardware or in the event of failure of installed hardware (usually related to defective RAM, be it main memory, L2 RAM cache, or video RAM).
 
 
-Remarks
-----------
+## Remarks---
 
 **Event Log:**
 Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
@@ -110,8 +108,7 @@ Run the Windows Memory Diagnostics tool, to test the physical memory. Select the
 
 For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Resolution
-----------
+## Resolution
 
 Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
 

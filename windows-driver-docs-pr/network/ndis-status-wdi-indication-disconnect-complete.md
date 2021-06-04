@@ -23,8 +23,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISCONNECT\_COMPLETE to indi
 
 This indication contains no additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

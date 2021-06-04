@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS {
@@ -33,8 +32,7 @@ typedef struct _DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS {
 } DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS, *PDXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS;
 ```
 
-Members
--------
+## Members
 
 **Reserved**
 Reserved for system use.
@@ -42,8 +40,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

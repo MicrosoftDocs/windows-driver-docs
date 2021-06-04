@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_MAXPIXELRATE property specifies the maximum pixel rate
 
 The property value (operation data) is a KSVPMAXPIXELRATE structure that describes the width, height, and maximum number of pixels per second that the video port supports.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

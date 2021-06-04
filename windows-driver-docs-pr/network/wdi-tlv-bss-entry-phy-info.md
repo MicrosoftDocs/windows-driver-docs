@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_BSS\_ENTRY\_PHY\_INFO is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

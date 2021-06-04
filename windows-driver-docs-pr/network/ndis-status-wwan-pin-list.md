@@ -16,8 +16,7 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_PIN\_LIST**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_list) structure.
 
-Remarks
--------
+## Remarks
 
 This INDICATION is a response only notification to OID query requests of OID\_WWAN\_PIN\_LIST. Unsolicited indications are not expected for this INDICATION.
 
@@ -25,8 +24,7 @@ Any change in the PIN-entry mode caused as a result of an OID\_WWAN\_PIN enable 
 
 Note that the current PinMode for all of the PINs that the device supports must be updated to reflect the current state by the miniport driver on each query request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

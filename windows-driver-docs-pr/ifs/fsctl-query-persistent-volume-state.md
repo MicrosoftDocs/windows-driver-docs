@@ -44,8 +44,7 @@ A pointer to a caller-allocated [**FILE\_FS\_PERSISTENT\_VOLUME\_INFORMATION**](
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
@@ -94,8 +93,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

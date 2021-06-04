@@ -148,8 +148,7 @@ If the DI_ENUMSINGLEINF flag is set in the device installation parameters, the *
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

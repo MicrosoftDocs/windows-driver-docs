@@ -49,8 +49,7 @@ The KSEVENT\_TUNER\_INITIATE\_SCAN event requests that the driver initiate a sca
 
  
 
-Remarks
--------
+## Remarks
 
 Every scan request should be non-blocking. That is, the driver should not wait for the scan operation to complete before it returns control. In fact, the driver should use a separate thread to perform the scan operation.
 

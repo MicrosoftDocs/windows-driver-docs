@@ -60,15 +60,13 @@ The property value (operation data) is a KSAC3\_ROOM\_TYPE structure that specif
 
 A KSPROPERTY\_AC3\_ROOM\_TYPE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property provides information about the production environment of the AC-3-encoded stream. The property value is not typically used by the AC-3 decoder, but might be used by other audio components.
 
 If the encoded stream does not specify a room type, the property request returns an error code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

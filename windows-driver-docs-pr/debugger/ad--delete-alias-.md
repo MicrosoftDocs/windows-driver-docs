@@ -60,8 +60,7 @@ Specifies the name of the alias to delete. If you specify an asterisk (\*), all 
 
 For more information about how to use aliases, see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 You can use the **ad** command to delete any user-named alias. But you cannot use this command to delete a fixed-name alias ($u0 to $u9).
 

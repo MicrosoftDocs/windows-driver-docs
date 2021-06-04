@@ -36,8 +36,7 @@ The **IrqlExPassive** rule also specifies that the driver calls [**ExRaiseStatus
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020008), [**Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL**](../debugger/bug-check-0xa--irql-not-less-or-equal.md)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -80,8 +79,7 @@ Use the following steps to run an analysis of your code:
 
 
 
-Applies to
-----------
+## Applies to
 
 [**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback)
 [**ExIsProcessorFeaturePresent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exisprocessorfeaturepresent)
@@ -89,8 +87,7 @@ Applies to
 [**ExRaiseDatatypeMisalignment**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exraisedatatypemisalignment)
 [**ExRaiseStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exraisestatus)
 [**ExUuidCreate**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exuuidcreate)
-See also
---------
+## See also
 
 [**Managing Hardware Priorities**](../kernel/managing-hardware-priorities.md)
 [**Preventing Errors and Deadlocks While Using Spin Locks**](../kernel/preventing-errors-and-deadlocks-while-using-spin-locks.md)

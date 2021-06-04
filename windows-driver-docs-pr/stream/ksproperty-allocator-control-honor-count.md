@@ -56,13 +56,11 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property informs the Overlay Mi
 
 The property value (operation data) is a DWORD that specifies how the Overlay Mixer is to calculate the number of and use of overlay surfaces.
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property requests must return 1 to force the Overlay Mixer to use the number of surfaces specified in the [**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING**](ksproperty-connection-allocatorframing.md) property. A return value of zero causes the Overlay Mixer to calculate how many surfaces to allocate.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

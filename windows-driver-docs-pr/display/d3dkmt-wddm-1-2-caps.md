@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_WDDM_1_2_CAPS {
@@ -44,8 +43,7 @@ typedef struct _D3DKMT_WDDM_1_2_CAPS {
 } D3DKMT_WDDM_1_2_CAPS;
 ```
 
-Members
--------
+## Members
 
 **PreemptionCaps**
 
@@ -73,8 +71,7 @@ Members
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

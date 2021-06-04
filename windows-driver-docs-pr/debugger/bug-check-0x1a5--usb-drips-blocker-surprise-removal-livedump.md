@@ -29,16 +29,14 @@ The USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP bug check has a value of 0x
 |3| Reserved. |
 |4| Reserved. |
 
-## Cause
------
+## ## Cause
 
 A USB device is blocking the top level controller from powering down during modern standby and will be surprise removed as a result.
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

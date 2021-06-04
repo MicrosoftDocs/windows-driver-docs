@@ -54,8 +54,7 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 </table>
 
 
-Cause
------
+## Cause
 
 This stop code indicates that executing code had an exception, and the thread that was below it is a system thread.
 
@@ -71,8 +70,7 @@ Common exception codes include:
 
     A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
-Resolution
-----------
+## Resolution
 
 To debug this problem, use the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to see the assembly program code.
 
@@ -122,8 +120,7 @@ Driver Verifier is a tool that runs in real time to examine the behavior of driv
 To start Driver Verifier Manager, enter **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 
-Remarks
--------
+## Remarks
 
 For general troubleshooting of Windows bug check codes, follow these suggestions:
 

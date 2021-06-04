@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_PIN\_ID to retrieve the BDA identifier (ID) for a p
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the pin ID.
 
 When the network provider creates a pin for a filter using KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY, the BDA minidriver for the filter gives that pin an ID. KSPROPERTY\_BDA\_PIN\_ID returns this ID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -52,8 +52,7 @@ Specifies the address of the function.
 
  
 
-Remarks
--------
+## Remarks
 
 The symbol search algorithm for the **.fnent** command is the same as that of the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command. The display first shows the nearest symbols. Then, the debugger displays the function entry for the first of these symbols.
 

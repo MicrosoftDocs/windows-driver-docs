@@ -112,8 +112,7 @@ Because this pattern is matched to a symbol, the match is not case sensitive, an
 
  
 
-Remarks
--------
+## Remarks
 
 The following command finds all of the symbols in MyModule that contain the string "spin".
 

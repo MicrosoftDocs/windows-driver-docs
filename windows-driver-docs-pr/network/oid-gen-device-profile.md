@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The OID\_GEN\_DEVICE\_PROFILE OID is obsolete. NDIS and NDIS drivers do not use this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,15 +56,13 @@ The KSPROPERTY\_VPCONFIG\_INVERTPOLARITY property toggles the global polarity fl
 
 The property value (operation data) is a Boolean. Specify **TRUE** to invert the polarity, or specify **FALSE** to prevent inverting the polarity.
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_VPCONFIG\_INVERTPOLARITY property requests return STATUS\_SUCCESS to indicate successful completion. Otherwise, requests return an appropriate error status code.
 
 Because this feature is hardware dependent, models that do not use this feature must return STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

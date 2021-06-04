@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST to inform t
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

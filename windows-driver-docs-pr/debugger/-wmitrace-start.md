@@ -65,8 +65,7 @@ This extension is available in Windows 7 and later versions of Windows.
 
 For more details on the parameters of this extension, see [StartTraceA Function](/windows/win32/api/evntrace/nf-evntrace-starttracea) and [EVENT\_TRACE\_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 After using this extension, you must resume program execution (for example, by using the [**g (Go)**](g--go-.md) command) in order for it to take effect. After a brief time, the target computer automatically breaks into the debugger again.
 

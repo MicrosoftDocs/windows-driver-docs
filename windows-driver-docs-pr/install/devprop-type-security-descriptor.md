@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_SECURITY_DESCRIPTOR identifier represents the base-data-type identifier that indicates the data type is a variable-length, self-relative, SECURITY_DESCRIPTOR-typed, security descriptor.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_SECURITY_DESCRIPTOR cannot be combined with the property-data-type modifiers.
 
@@ -32,8 +31,7 @@ To set a property whose base data type is DEVPROP_TYPE_SECURITY_DESCRIPTOR, call
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP to stop operation of a node.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

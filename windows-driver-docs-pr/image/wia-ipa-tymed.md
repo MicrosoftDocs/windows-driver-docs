@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_TYMED property to determine the minidriver's method of data transfer.
 
@@ -72,8 +71,7 @@ The following table describes the constants that are valid with WIA\_IPA\_TYMED.
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is TYMED\_FILE.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

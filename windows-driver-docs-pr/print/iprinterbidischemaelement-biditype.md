@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The BidiType method returns the Bidi schema element type.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT BidiType(
@@ -28,19 +27,16 @@ HRESULT BidiType(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pType* \[out, retval\]  
 The returned element type.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

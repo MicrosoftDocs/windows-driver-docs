@@ -131,8 +131,7 @@ This method can also return error values. See [**Return Values**](./hresult-valu
 
 The value returned by this operation is also stored in the **Status** member of *OutBuffer*.
 
-Remarks
--------
+## Remarks
 
 The sub-operation performed by the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI [**Request**](request.md) operation is determined by the **Operation** member of the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure, which takes a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 

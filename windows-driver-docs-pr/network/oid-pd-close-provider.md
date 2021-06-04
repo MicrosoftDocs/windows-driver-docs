@@ -16,8 +16,7 @@ An NDIS protocol or filter driver must call this OID when it receives an unbind 
 
 Before calling this OID, the NDIS protocol or filter driver must ensure that it has closed and freed all PD objects such as queues, counters, and filters that it created over the PD provider instance. The NDIS protocol or filter driver must guarantee that there are no in-progress calls to any of the PD provider dispatch table functions before issuing this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

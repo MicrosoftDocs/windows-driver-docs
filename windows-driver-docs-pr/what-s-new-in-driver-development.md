@@ -1,74 +1,101 @@
 ---
 title: What's new in driver development
 description: This section describes new features for driver development in Windows 10.
-ms.date: 05/22/2020
+ms.date: 05/28/2021
 ms.localizationpriority: medium
 ---
 
 # <a name="top"></a>What's new in driver development
 
-This section provides information about the new features and updates to Windows driver development in Windows 10.
+This section describes new features and updates for driver development in Windows Server 2022.
 
-## What's new in Windows 10, version 2004 (latest)
+## Kernel DMA/MDL updates
 
-This section describes new features and updates for driver development in Windows 10, version 2004 (Windows 10 May 2020 Update).
+New API pages:
 
-### Windows Drivers
+* [*PCREATE_COMMON_BUFFER_FROM_MDL*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pcreate-common-buffer-from-mdl) callback function
+* [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_dma_common_buffer_extended_configuration_type) enumeration
+* [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_ACCESS_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-dma_common_buffer_extended_configuration_access_type) enumeration
+* [**DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-dma_common_buffer_extended_configuration) structure
 
-Windows 10, version 2004 is a transition release for universal drivers. In this release, universal drivers still exist, but are being replaced by Windows Drivers. A Windows Driver is a universal driver with a few additional requirements.
+Updated:
 
-Windows Drivers are distinguished from Windows Desktop Drivers. While Windows Drivers run on Windows 10X and Windows 10 Desktop editions,  Windows Desktop Drivers run only on Windows 10 Desktop editions.
+* [**DMA_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (new field **CreateCommonBufferFromMdl**)
 
-No changes are required to universal drivers for the version 2004 release, but documentation is available now so that you can plan ahead for upcoming changes.
+## NetAdapterCx
 
-For information about how to build, install, deploy, and debug a Windows Driver, see [Getting Started with Windows Drivers](./develop/getting-started-with-windows-drivers.md).
+* The new [NetAdapterCx platform-level device reset (PLDR)](./netcx/platform-level-device-reset.md) feature provides an effective way to reset and recover malfunctioning network devices without rebooting the system.
 
-### Windows Hardware Error Architecture (WHEA)
+* NetAdapterCx support for the following hardware offloads has been updated:
 
-WHEA includes a new interface (v2). For info about how to register as an error source and report errors, see [Using WHEA on Windows 10](whea/using-whea-on-windows-10.md).
+    * [Checksum offload](./netcx/checksum-offload.md)
 
-### Display and Graphics Drivers
+    *  [Generic send offload (GSO)](./netcx/gso-offload.md)
 
-Several new and enhanced display and graphics driver features are available in Windows 10, version 2004, including D3D12 mesh shader support, sampler support, raytracing extensions, video motion estimation, and video protected resources support. See [What's New for Windows 10 Display and Graphics Drivers](./display/what-s-new-for-windows-10-display-and-graphics-drivers.md) for more details about these new features.
+    * [Receive Segment Coalescing (RSC)](./netcx/rsc-offload.md)
 
-### Storage Drivers
+## Networking
 
-A storage miniport driver can now get and set more information about a device's internal state, including the ability to reset a device. See [**IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_device_internal_log) and [**StorPortHardwareReset**](/windows-hardware/drivers/ddi/storport/nf-storport-storporthardwarereset) as good starting points.
+New network driver documentation and features include:
 
-### Windows Debugger
+* The new [NDIS packet timestamping](./network/overview-of-ndis-packet-timestamping.md) feature supports the hardware timestamping capability of a network interface card (NIC) for the Precision Time Protocol (PTP) version 2.
 
-#### WinDbg Preview
+* The new [NDIS Poll Mode](/windows-hardware/drivers/ddi/poll) feature is an OS controlled polling execution model that drives the network interface datapath.
 
-Updates to [WinDbg Preview](./debugger/debugging-using-windbg-preview.md) to cover new features such as [WinDbg Preview - Timelines](./debugger/windbg-timeline-preview.md). Time travel timelines allows for the visualization of time travel code execution traces.
+* The [Virtual Machine Multiple Queues (VMMQ)](./network/overview-of-virtual-machine-multiple-queues.md) NIC offload technology extends Native RSS (RSSv1) to a Hyper-V virtual environment.
 
-#### Stop Codes
+## Windows Driver Frameworks (WDF)
 
-- Updates to the [Bug Check Code Reference](./debugger/bug-check-code-reference2.md) topics and the addition of new parameters to topics such as [Bug Check 0x1A: MEMORY_MANAGEMENT](./debugger/bug-check-0x1a--memory-management.md) and [Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION](./debugger/bug-check-0xc4--driver-verifier-detected-violation.md).
+In Windows Server 2022, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.33 and User-Mode Driver Framework (UMDF) version 2.33.
 
-- New stop codes such as [Bug Check 0x1DA: HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR](./debugger/bug-check-0x1da--hal-blocked-processor-internal-error.md), [Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK](./debugger/bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md) and  [Bug Check 0x119: VIDEO_SCHEDULER_INTERNAL_ERROR](./debugger/bug-check-0x119---video-scheduler-internal-error.md).
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](./wdf/index.md).
+To see what was added in previous versions of WDF, see:
 
-### Driver Security
+* [KMDF Version History](./wdf/kmdf-version-history.md)
+* [UMDF Version History](./wdf/umdf-version-history.md)
 
-Updates to the [Driver security checklist](./driversecurity/driver-security-checklist.md) to use the BinSkim tool.
+## Debugger
+
+For information on what is new on the WinDbg Preview debugger, see [WinDbg Preview - What's New](./debugger/windbg-what-is-new-preview.md). Highlights include:
+
+- [Portable PDB Symbols](./debugger/symbols-portable-pdb.md) support.
+- [Support for Open Enclave debugging](./debugger/open-enclave-debugging.md)- WinDbg Preview can now debug Open Enclave (OE) applications.
+- For user mode time travel debugging, a new timeline window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. For more information, see [WinDbg Preview - Timeline](./debugger/windbg-timeline-preview.md).
+
+Updates and addtions to debug transport topics, such as [Setting Up KDNET Network Kernel Debugging Automatically](./debugger/setting-up-a-network-debugging-connection-automatically.md), [Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET](./debugger/setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) and [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
+
+Bugcheck stop code topic addtions and updates, including listing live dump codes in a new section - 
+[Kernel Live Dump Code Reference](./debugger/bug-check-code-reference-live-dump.md).
+
+
+## Driver Quality
+
+New [CodeQL and the Static Tools Logo Test](./devtest/static-tools-and-codeql.md) and [Supplemental Windows Driver CodeQL Queries](./devtest/codeql-windows-driver-rules.md).
+
+Updates and additions to Driver Verfier rules, for example the new [DoubleFetch rule](./devtest/wdm-doublefetch.md). 
+
+## Driver Security
+
+Updates to the [Driver Security Checklist](./driversecurity/driver-security-checklist.md).
+
+## Audio
+
+Updated and new topics including:
+
+- [Default Audio Endpoint Selection Starting in Windows 10](./audio/default-audio-endpoint-selection.md)
+- [Multiple Voice Assistant](./audio/voice-activation-mva.md)
+- [Voice Activation](./audio/voice-activation.md)
+- [Low Latency Audio](./audio/low-latency-audio.md)
+
+New online help for the [KsStudio Utility](./audio/ksstudio-utility.md).
 
 ## Related Topics
 
 For information on what was new for drivers in past Windows releases, see the following pages:
 
+* [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
 * [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
 * [Driver development changes for Windows 10, version 1809](driver-changes-for-windows-10-version-1809.md)
 * [Driver development changes for Windows 10, version 1803](driver-changes-for-windows-10-version-1803.md)
-* [Driver development changes for Windows 10, version 1709](driver-changes-for-windows-10-version-1709.md)
 
 [Back to Top](#top)
-
-## Deprecated features
-
-The following table describes Windows driver development features that have been removed in Windows 10.
-
-| Driver technology | Feature | Deprecated in |
-|---|---|---|
-| GNSS/Location | [Geolocation driver sample for Windows 8.1](./gnss/sensors-geolocation-driver-sample.md) and related documentation | Windows 10, version 1709 |
-| Mobile Operator Scenarios (Networking) | [AllowStandardUserPinUnlock](./mobilebroadband/allowstandarduserpinunlock.md) | Windows 10, version 1709 |
-| Scan/Image | [WSD (Web Services for Devices) Challenger](./image/challenging-a-disconnected-scanner-with-the-wsd-challenger.md) functionality and related documentation | Windows 10, version 1709 |
-|Mobile Operators| Mobile broadband app experience apps with Sysdev metadata packages are deprecated in favor of MO UWP APPS and COSA. | Windows 10, version 1803|

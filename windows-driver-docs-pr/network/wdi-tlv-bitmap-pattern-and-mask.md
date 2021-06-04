@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_BITMAP\_PATTERN\_AND\_MASK is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

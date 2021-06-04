@@ -54,8 +54,7 @@ This property returns the list of mediums supported by pins instantiated by a sp
 
  
 
-Remarks
--------
+## Remarks
 
 Clients use this property to request a list of all mediums supported by pins instantiated by the pin factory. Clients then specify the actual medium to use when they connect to the pin.
 
@@ -65,8 +64,7 @@ KSPROPERTY\_PIN\_MEDIUMS returns mediums ordered by class driver preference.
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

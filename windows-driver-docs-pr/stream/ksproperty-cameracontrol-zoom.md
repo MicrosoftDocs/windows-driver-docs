@@ -58,15 +58,13 @@ The property value (operation data) is a LONG that specifies a camera's zoom set
 
 **Caution**  When writing or testing an app, you should be aware that in practice, some drivers define a custom range of zoom values and custom step values that might not be based on typical units. Drivers might implement the zoom control either physically or digitally.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the zoom.
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must be 10 through 600. The default value must be 10.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

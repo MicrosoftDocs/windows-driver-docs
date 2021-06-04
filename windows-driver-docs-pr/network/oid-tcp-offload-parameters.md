@@ -17,7 +17,7 @@ As a set request, the OID_TCP_OFFLOAD_PARAMETERS OID sets the current TCP offloa
 
 OID_TCP_OFFLOAD_PARAMETERS is required for miniport drivers that support TCP offloads and optional for other miniport drivers. If a miniport driver does not support this OID, the driver should return NDIS_STATUS_NOT_SUPPORTED.
 
-The **InformationBuffer** member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [NDIS_OFFLOAD_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. If the contents of **InformationBuffer** are invalid, the miniport driver should return NDIS_STATUS_INVALID_DATA in response to this OID.
+The **InformationBuffer** member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [NDIS_OFFLOAD_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. If the contents of **InformationBuffer** are invalid, the miniport driver should return NDIS_STATUS_INVALID_DATA in response to this OID.
 
 While NDIS processes this OID and before it passes the OID to the miniport driver, NDIS updates the miniport adapter's offload standardized keywords with the new settings.
 
@@ -30,7 +30,7 @@ Before setting OID_TCP_OFFLOAD_PARAMETERS, the overlying applications or drivers
 ### See also
 
 [NDIS_OFFLOAD_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)  
-[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
+[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)  
 [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md)  
 [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md)  
 [OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES](oid-tcp-offload-hardware-capabilities.md)

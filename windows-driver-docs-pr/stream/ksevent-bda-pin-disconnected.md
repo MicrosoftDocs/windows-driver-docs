@@ -30,8 +30,7 @@ KSEVENT
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

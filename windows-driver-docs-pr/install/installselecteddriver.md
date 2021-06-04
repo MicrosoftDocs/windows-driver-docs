@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The **InstallSelectedDriver** function is deprecated. For Windows Vista and later, use [**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice) instead.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 BOOL WINAPI InstallSelectedDriver(
@@ -32,8 +31,7 @@ BOOL WINAPI InstallSelectedDriver(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hwndParent* \[in\]  
 A handle to the top-level window that the **InstallSelectedDriver** function uses to display user interface components that are associated with installing the driver.
@@ -50,8 +48,7 @@ A value of type BOOL that determines whether **InstallSelectedDriver** backs up 
 *bReboot* \[out\]  
 A pointer to a variable of type DWORD that **InstallSelectedDriver** sets to indicate whether a system restart is required to complete the installation. If the variable is set to DI\_NEEDREBOOT, a system restart is required; otherwise, a system restart is not required. The caller is responsible for restarting the system.
 
-Return value
-------------
+## Return value
 
 **InstallSelectedDriver** returns **TRUE** if the selected driver was installed on the selected device; otherwise, the function returns **FALSE** and the logged error can be retrieved by making a call to **GetLastError**.
 
@@ -82,8 +79,7 @@ Some of the more common error values that **GetLastError** might return are as f
 
  
 
-Remarks
--------
+## Remarks
 
 To access **InstallSelectedDriver**, call **LoadLibrary** to load *Newdev.dll* and then call **GetProcAddress** to obtain a function pointer to **InstallSelectedDriver**.
 
@@ -111,8 +107,7 @@ To retrieve a driver for a device, call [**SetupDiBuildDriverInfoList**](/window
 
 After obtaining an SP\_DRVINFO\_DATA structure for the driver, call [**SetupDiSetSelectedDriver**](/windows/win32/api/setupapi/nf-setupapi-setupdisetselecteddrivera) to select the driver for the device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

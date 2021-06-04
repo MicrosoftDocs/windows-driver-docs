@@ -52,8 +52,7 @@ Specifies a security descriptor that will be stored in the registry and applied 
 
 Only one **Security** entry can be present. If more than one **Security** entry is present, security is not set for the WMI class.
 
-Remarks
--------
+## Remarks
 
 The INF <em>DDInstall</em>**.WMI** section is available on Microsoft Windows Server 2003 and later versions of the operating system.
 
@@ -63,8 +62,7 @@ If your driver defines WMI classes, and if you do not want to use the default de
 
 For more information about how to specify security descriptors in INF files, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
-Examples
---------
+## Examples
 
 The following example shows a single <em>DDInstall</em>**.WMI** section that contains two **WMIInterface** directives. Each directive identifies a WMI class and specifies a *WMI-class-section* for the class.
 

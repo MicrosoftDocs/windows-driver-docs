@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 The **HS\_SIM\_IDENTITY** structure contains SIM identification information required for EAP-SIM or EAP-AKA authentication.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_SIM_IDENTITY {
@@ -29,8 +28,7 @@ typedef struct _HS_SIM_IDENTITY {
 } HS_SIM_IDENTITY, *PHS_SIM_IDENTITY;
 ```
 
-Members
--------
+## Members
 
 **SimType**  
 The type of SIM, whether GSM or CDMA, or none. If the network is GSM, the **dwMNC** and **dwMCC** pair of fields will be defined, whereas for CDMA the **dwSID** and **dwNID** pair of fields must be defined.
@@ -58,8 +56,7 @@ The System Identification Number (SID) of the CDMA network.
 **dwEapMethods**  
 The EAP authentication method.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

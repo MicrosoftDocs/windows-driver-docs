@@ -57,8 +57,7 @@ Clears the filter list.
 
  
 
-Remarks
--------
+## Remarks
 
 Without any parameters, **.step\_filter** displays the current filter list.
 

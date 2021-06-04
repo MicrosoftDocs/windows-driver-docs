@@ -66,8 +66,7 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **tb** command causes the target to begin executing. This execution continues until a branch command is reached.
 

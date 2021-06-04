@@ -61,8 +61,7 @@ Suppresses all authentication dialog boxes when SymSrv receives an authenticatio
 
  
 
-Remarks
--------
+## Remarks
 
 If the **!sym** extension is used with no arguments, the current state of noisy symbol loading and symbol prompting is displayed.
 

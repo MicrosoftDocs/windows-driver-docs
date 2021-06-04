@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_DESTROY_OUTPUTDUPL {
@@ -30,8 +29,7 @@ typedef struct _D3DKMT_DESTROY_OUTPUTDUPL {
 } D3DKMT_DESTROY_OUTPUTDUPL;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -39,8 +37,7 @@ Members
 
 **bDestroyAllContexts**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,8 +44,7 @@ The KSCATEGORY_TVAUDIO [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of this KSCATEGORY_TVAUDIO to indicate to the operating system that the devices support the KSCATEGORY_TVAUDIO functional category.
 
@@ -53,8 +52,7 @@ For an example of how to register this functional category in an INF file, see t
 
 For information about video devices, see [Video Capture Devices](../stream/video-capture-devices.md), [Filter Graph Examples](../stream/filter-graph-examples.md), and [Encoder Devices](../stream/encoder-devices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

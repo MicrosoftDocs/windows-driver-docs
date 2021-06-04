@@ -69,8 +69,7 @@ Specifies that the disassembly will continue even if there is a memory read erro
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify a parameter for the **u** command, the disassembly begins at the current address and extends eight instructions on an x86-based or x64-based processor. When you use **ub** without a parameter, the disassembly includes the eight or nine instructions before the current address.
 

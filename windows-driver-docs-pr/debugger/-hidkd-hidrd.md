@@ -35,8 +35,7 @@ The length, in bytes, of the raw report descriptor data. To get the length, use 
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 This example shows how to use the [**!hidfdo**](-hidkd-hidfdo.md) command followed by the **!hidrd** command. The output of **!hidfdo** shows both the address and length of the raw report descriptor data.
 

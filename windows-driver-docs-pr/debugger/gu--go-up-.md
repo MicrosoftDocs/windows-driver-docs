@@ -64,8 +64,7 @@ gu
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **gu** command executes the target until the current function call returns.
 

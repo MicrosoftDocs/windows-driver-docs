@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Scaling** element specifies the scaling of both the width and height of the scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Scaling wscn:MustHonor=""
@@ -27,8 +26,7 @@ Usage
 </wscn:Scaling wscn:MustHonor="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -100,8 +98,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Scaling** element must contain both the [**ScalingWidth**](scalingwidth.md) and [**ScalingHeight**](scalingheight.md) elements. The **ScalingWidth** element specifies the scaling in the fast scan direction, and the **ScalingHeight** element specifies the scaling in the slow scan direction.
 

@@ -121,8 +121,7 @@ exts.dll
 
 For information about how to download and install Application Verifier and its documentation, see [Application Verifier](../devtest/application-verifier.md).
 
-Remarks
--------
+## Remarks
 
 When the **!avrf** extension is used with no parameters, it displays the current Application Verifier options. If the **Full page heap** or **Fast fill heap** option has been enabled, information about active page heaps is displayed as well. For some examples, see "Heap Operation Logs" in the Application Verifier documentation.
 

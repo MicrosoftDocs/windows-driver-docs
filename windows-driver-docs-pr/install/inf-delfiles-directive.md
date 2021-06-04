@@ -78,8 +78,7 @@ Setting this flag value in an INF queues the file-deletion operation until the s
 
 Setting this flag value in an INF prevents conflicts with the COPYFLG_WARN_IF_SKIP flag in an INF with both **DelFiles** and [**CopyFiles**](inf-copyfiles-directive.md) directives that reference the same *file-list-section*.
 
-Remarks
--------
+## Remarks
 
 **Important**  This directive must be used carefully. We highly recommend that you do not use the **DelFiles** directive in the INF file for a Plug and Play (PnP) function driver.
 
@@ -91,8 +90,7 @@ The **DelFiles** directive does not support decorating a *file-list-section* nam
 
 The [**DestinationDirs**](inf-destinationdirs-section.md) section of the INF file controls the destination for all file-deletion operations, regardless of the section that contains a particular **DelFiles** directive. If a named section referenced by a **DelFiles** directive has a corresponding entry in the **DestinationDirs** section of the same INF, that entry explicitly specifies the target destination directory from which all files that are listed in the named section will be deleted. If the named section is not listed in the **DestinationDirs** section, Windows uses the **DefaultDestDir** entry in the INF.
 
-Examples
---------
+## Examples
 
 This example shows how the [**DestinationDirs**](inf-destinationdirs-section.md) section specifies the path for a delete-file operation that occurs in processing a simple device-driver INF.
 

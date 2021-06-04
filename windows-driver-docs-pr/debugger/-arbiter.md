@@ -70,8 +70,7 @@ Do not display aliases.
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command.
 
-Remarks
--------
+## Remarks
 
 For each arbiter, **!arbiter** displays each allocated range of system resources, some optional flags, the PDO attached to that range (in other words, the range's owner), and the service name of this owner (if known).
 

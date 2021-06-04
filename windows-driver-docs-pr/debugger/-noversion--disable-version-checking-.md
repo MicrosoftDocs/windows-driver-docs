@@ -49,8 +49,7 @@ The **.noversion** command disables all version checking of extension DLLs.
 
  
 
-Remarks
--------
+## Remarks
 
 The build number of extension DLLs should match the build number of the computer that you are debugging, because the DLLs are compiled and linked with dependencies on specific versions of data structures. If the versions do not match, you typically receive the following message.
 

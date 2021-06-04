@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property indicates how a document is horizontally positioned on the scanning head of a handheld or sheet-fed scanner. You can use WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION to predict where across the scanning head a document is placed.
 
@@ -63,8 +62,7 @@ The following table describes the constants that are valid with WIA\_IPS\_SHEET\
 
 For scanners that support more than one scanning head, the WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property is relative to the topmost scanning head. This property is mandatory for sheet-fed, scroll-fed, and handheld scanners.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

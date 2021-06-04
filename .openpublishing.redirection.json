@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/driver-changes-for-windows-10-version-1709.md",
+            "redirect_URL":  "/windows-hardware/drivers/what-s-new-in-driver-development",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/winsock-kernel4.md",
             "redirect_URL":  "/windows-hardware/drivers/network/introduction-to-winsock-kernel",
             "redirect_document_id":  false
@@ -8420,6 +8425,11 @@
                             "source_path":  "windows-driver-docs-pr/spb/testing-with-multi-interface-test-tool--mitt-.md",
                             "redirect_url":  "/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path": "windows-driver-docs-pr/dashboard/number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md",
+                            "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-measures",
+                            "redirect_document_id": false
                         }
                      ]
 }

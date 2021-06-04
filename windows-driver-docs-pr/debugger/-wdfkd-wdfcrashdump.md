@@ -63,8 +63,7 @@ KMDF
 
 UMDF 2.15
 
-Remarks
--------
+## Remarks
 
 This example shows how to use **!wdfkd.wdfcrashdump** to view information about KMDF drivers. If you specify **loader** for *InfoType*, the output includes dynamic-bound drivers in the minidump file.
 

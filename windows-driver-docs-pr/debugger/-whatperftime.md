@@ -48,8 +48,7 @@ The performance counter clock value.
 
  
 
-Remarks
--------
+## Remarks
 
 You can use **!whatperftime** to convert values retrieved by calling **QueryPerformanceCounter**. Performance counter time values are also found in software traces.
 

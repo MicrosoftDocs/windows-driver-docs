@@ -67,8 +67,7 @@ The **!runaway** extension can only be used during live debugging or when debugg
 
 For information about threads in user mode, see [Controlling Processes and Threads](controlling-processes-and-threads.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 This extension is a quick way to find out which threads are spinning out of control or consuming too much CPU time.
 

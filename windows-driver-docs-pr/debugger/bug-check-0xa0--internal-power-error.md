@@ -724,8 +724,7 @@ interrupt line.</p>
 </tbody>
 </table>
 
-Resolution
-----------
+## Resolution
 
 **General Notes**
 

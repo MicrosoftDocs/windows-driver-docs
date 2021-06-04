@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_RELEASE\_FOR\_MOD\_WRITE.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -32,8 +31,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **ReleaseForModifiedPageWriter**  
 Structure containing the following members.
@@ -41,8 +39,7 @@ Structure containing the following members.
 **ResourceToRelease**  
 Pointer to the resource to be released.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_RELEASE\_FOR\_MOD\_WRITE operations contains the parameters for a **ReleaseForModifiedPageWriter** operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
@@ -50,8 +47,7 @@ IRP\_MJ\_RELEASE\_FOR\_MOD\_WRITE is a file system (FSFilter) callback operation
 
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

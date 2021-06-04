@@ -69,8 +69,7 @@ Address in the virtual address range of a user-mode module.
 
 For information about virtual address descriptors, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The address of the root of the VAD for any process can be found by using the [**!process**](-process.md) command.
 

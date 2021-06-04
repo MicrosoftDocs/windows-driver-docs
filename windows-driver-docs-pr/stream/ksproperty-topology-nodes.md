@@ -54,13 +54,11 @@ KSPROPERTY\_TOPOLOGY\_NODES provides a list of the topology nodes and node types
 
  
 
-Remarks
--------
+## Remarks
 
 The GUID list represents the node types. The index within the sequence must match the node ID number.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

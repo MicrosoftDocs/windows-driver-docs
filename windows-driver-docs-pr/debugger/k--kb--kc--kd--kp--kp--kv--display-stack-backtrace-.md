@@ -151,8 +151,7 @@ Specifies the number of DWORD\_PTR values in the stack to dump. The default valu
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 When you issue the **k**, **kb**, **kp**, **kP**, or **kv** command, a stack trace is displayed in a tabular format. If line loading is enabled, source modules and line numbers are also displayed.
 

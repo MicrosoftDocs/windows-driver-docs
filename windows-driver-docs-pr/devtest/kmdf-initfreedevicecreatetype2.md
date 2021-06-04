@@ -19,8 +19,7 @@ The InitFreeDeviceCreateType2 rule specifies that a driver must not call [**WdfD
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,14 +44,12 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfControlDeviceInitAllocate**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate)
 [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate)
 [**WdfDeviceInitFree**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitfree)
-See also
---------
+## See also
 
 [**InitFreeDeviceCallback**](kmdf-initfreedevicecallback.md)
 [**InitFreeDeviceCreate**](kmdf-initfreedevicecreate.md)

@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 The **eHS\_AUTHENTICATION\_RESULT** enumeration indicates the result of authentication by the plugin after the PostConnectAuth request.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _eHS_AUTHENTICATION_RESULT { 
@@ -28,8 +27,7 @@ typedef enum _eHS_AUTHENTICATION_RESULT {
 } eHS_AUTHENTICATION_RESULT;
 ```
 
-Constants
----------
+## Constants
 
 <a href="" id="hs-authentication-result-success"></a>**HS\_AUTHENTICATION\_RESULT\_SUCCESS**  
 Indicates the authentication was successful.
@@ -49,13 +47,11 @@ Indicates the authentication failed for some other reason.
 <a href="" id="hs-authentication-result-max"></a>**HS\_AUTHENTICATION\_RESULT\_MAX**  
 Indicates an out-of-range value.
 
-Remarks
--------
+## Remarks
 
 The plugin passes this enumeration value to the hotspot plugin host through the [**HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION**](hs-host-post-connect-auth-completion.md) function, which is used to inform the hotspot plugin host of the results of a call to [**HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH**](hs-plugin-start-post-connect-auth.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

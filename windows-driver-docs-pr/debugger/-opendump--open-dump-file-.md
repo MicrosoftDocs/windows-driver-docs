@@ -59,8 +59,7 @@ Specifies the name of an archive file to open. *CabFile*should include the file 
 
  
 
-Remarks
--------
+## Remarks
 
 After you use the **.opendump** command, you must use the [**g (Go)**](g--go-.md) command to finish loading the dump file.
 

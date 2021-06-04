@@ -38,8 +38,7 @@ OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for po
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

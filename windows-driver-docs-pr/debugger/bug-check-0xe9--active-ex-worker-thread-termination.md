@@ -57,8 +57,7 @@ The ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION bug check has a value of 0x000000E9.
 
  
 
-Cause
------
+## Cause
 
 An executive worker thread is being terminated without having gone through the worker thread rundown code. This is forbidden; work items queued to the **ExWorkerQueue** must not terminate their threads.
 

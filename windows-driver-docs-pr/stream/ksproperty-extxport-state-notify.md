@@ -56,15 +56,13 @@ The KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY property sets or gets notification of tr
 
 The property value (operation data) is the KSPROPERTY\_EXTXPORT\_S structure that describes the current external transport whenever the transport state has changed.
 
-Remarks
--------
+## Remarks
 
 The KSPROPERTY\_EXTXPORT\_S structure receives notification when the transport state has changed.
 
 This call is a synchronous operation and will not return until the transport state has changed. It is not recommended for use since not all DV camcorders can support this operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

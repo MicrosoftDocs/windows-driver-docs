@@ -63,8 +63,7 @@ You can enclose *String* in quotation marks. However, if *String* includes a sem
 
 For more information about [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode routines, see the Microsoft Windows SDK documentation. For more information about **DbgPrint**, **DbgPrintEx**, and other kernel-mode routines, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 If you use the **.ofilter** command without parameters, the debugger displays the current pattern-matching criteria.
 

@@ -31,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

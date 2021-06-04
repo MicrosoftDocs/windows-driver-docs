@@ -18,8 +18,7 @@ As a set, the TCP/IP transport uses the OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\
 
  
 
-Remarks
--------
+## Remarks
 
 All NDIS 6.30 miniport drivers that support IPsec offload version 2 (IPsecOV2) must support this OID.
 
@@ -35,8 +34,7 @@ The miniport driver reports the maximum number of SAs that a NIC can support in 
 
 This OID is essentially identical to the previous version, [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](oid-tcp-task-ipsec-offload-v2-add-sa.md). The only difference is the updated [**IPSEC\_OFFLOAD\_V2\_ADD\_SA\_EX**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ipsec_offload_v2_add_sa_ex) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

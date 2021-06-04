@@ -56,13 +56,11 @@ The KSPROPERTY\_CROSSBAR\_ROUTE property queries whether a particular routing is
 
 The property value (operation data) is a KSPROPERTY\_CROSS\_ROUTE\_S structure that specifies a particular routing and whether that routing is possible.
 
-Remarks
--------
+## Remarks
 
 When routed to an input pin index of -1, an audio output pin should mute the output audio stream, such as when changing a channel.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ This rule verifies that the miniport must not attempt to call [**StorPortFreePoo
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortAllocatePool**](/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatepool)
 [**StorPortFreePool**](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool)

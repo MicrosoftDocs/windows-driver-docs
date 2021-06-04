@@ -56,8 +56,7 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE property informs the Ove
 
 The property value (operation data) is a ULONG the specifies whether interleaved capture is possible.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

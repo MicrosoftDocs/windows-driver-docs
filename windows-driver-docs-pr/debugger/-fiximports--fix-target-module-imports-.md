@@ -52,8 +52,7 @@ Specifies the target module whose imports the debugger corrects. *Module* can co
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the **.fiximports** command only when the target is a minidump that does not contain its own executable images.
 

@@ -54,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_PRESENT to determine whether a signal carri
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
 The returned value indicates whether a signal carrier is present. Returns **TRUE** if a signal carrier is present and **FALSE** otherwise. The RF tuner node should provide this indication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

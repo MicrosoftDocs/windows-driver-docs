@@ -31,8 +31,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-Write
 
-Remarks
--------
+## Remarks
 
 The valid values for this property are shown in the following table.
 
@@ -56,8 +55,7 @@ The WIA mini-driver can implement one or more WIA\_ALARM\_BEEP values, each one 
 
 This property is valid and optional for the Feeder item (WIA\_CATEGORY\_FEEDER) when the WIA\_IPS\_MULTI\_FEED property is supported. This property is also valid and optional for the Barcode Reader (WIA\_CATEGORY\_BARCODE\_READER) and the Patch Code Reader (WIA\_CATEGORY\_PATCH\_CODE\_READER) items. When this property is implemented, the WIA\_ALARM\_NONE value is required and must be set by the mini-driver as the default value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

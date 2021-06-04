@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_GET_FRAMEINFO {
@@ -30,8 +29,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_GET_FRAMEINFO {
 } D3DKMT_OUTPUTDUPL_GET_FRAMEINFO;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -39,8 +37,7 @@ Members
 
 **FrameInfo**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

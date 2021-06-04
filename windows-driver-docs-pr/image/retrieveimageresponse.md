@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **RetrieveImageResponse** operation element returns the scan data to the client.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:RetrieveImageResponse>
@@ -26,8 +25,7 @@ Usage
 </wscn:RetrieveImageResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,8 +53,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **RetrieveImageResponse** operation element. The Scan Service sends this element when a client successful sends a [**RetrieveImageRequest**](retrieveimagerequest.md) element.
 
@@ -71,8 +68,7 @@ If [**Format**](format.md) specifies a single image format and the value of [**I
 
 The Scan Service should abort the job with a [**JobStateReason**](jobstatereason.md) of **ImageTransferError** if there is a communication error during the transfer of the image data.
 
-Examples
---------
+## Examples
 
 The following code example shows how the WSD Scan Service sends image data to the client.
 

@@ -56,15 +56,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_GAIN property sets or gets the camera gain. This p
 
 The property value (operation data) is a LONG that specifies a camera's gain setting.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the requested or current gain, depending on whether this is a *get* or *Set* request.
 
 The range for gain is vendor-defined; the default resolution is 1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

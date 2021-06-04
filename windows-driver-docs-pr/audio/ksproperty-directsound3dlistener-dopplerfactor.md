@@ -60,8 +60,7 @@ The property value (operation data) is of type FLOAT and specifies the Doppler f
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_DOPPLERFACTOR property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property specifies the Doppler factor that is applied to both the 3D listener and 3D sound buffer.
 
@@ -69,8 +68,7 @@ A Doppler factor of zero means that no Doppler shift is applied to a sound regar
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetDopplerFactor** and **IDirectSound3DListener::SetDopplerFactor** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

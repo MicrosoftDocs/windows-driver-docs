@@ -47,8 +47,7 @@ A pointer to a [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. This value must be at least **sizeof**(FSCTL\_OFFLOAD\_READ\_OUTPUT).
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -137,15 +136,13 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 Offload read is available for normal files only. See the description for **STATUS\_OFFLOAD\_READ\_FILE\_NOT\_SUPPORTED** for a list of unsupported file types.
 
 It is possible for reads to start beyond the Valid Data Length (VDL), but not beyond EOF.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

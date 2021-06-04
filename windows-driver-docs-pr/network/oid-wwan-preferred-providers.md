@@ -14,8 +14,7 @@ OID\_WWAN\_PREFERRED\_PROVIDERS returns information about the list of preferred 
 
 Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PREFERRED\_PROVIDERS**](ndis-status-wwan-preferred-providers.md) status notification containing an [**NDIS\_WWAN\_PREFERRED\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers) structure to provide information about the Preferred Provider List (PPL) regardless of completing set or query requests.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Provider Operations](./mb-provider-operations.md).
 
@@ -31,8 +30,7 @@ Whether the PPL on the device can be overwritten or not when processing set requ
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support returning or setting the PPL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

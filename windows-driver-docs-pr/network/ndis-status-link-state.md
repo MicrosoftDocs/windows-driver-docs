@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Miniport drivers use the NDIS\_STATUS\_LINK\_STATE status indication to notify NDIS and overlying drivers that there has been a change in the physical characteristics of a medium.
 
-Remarks
--------
+## Remarks
 
 Overlying drivers should not use the [OID\_GEN\_LINK\_STATE](./oid-gen-link-state.md) OID to determine the link state. Instead, use the NDIS\_STATUS\_LINK\_STATE status indication for link state updates.
 
@@ -37,8 +36,7 @@ NDIS also translates the NDIS 5.*x* miniport driver status for overlying NDIS 6.
 
 For more information about link status, see [OID\_GEN\_LINK\_STATE](./oid-gen-link-state.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

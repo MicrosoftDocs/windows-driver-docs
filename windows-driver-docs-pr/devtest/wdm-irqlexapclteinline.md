@@ -19,8 +19,7 @@ The **IrqlExApcLteInline** rule specifies that DDIs are only called at proper IR
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -118,8 +118,7 @@ This optional value controls the interpretation of the given *old-ini-entry* and
 
  
 
-Remarks
--------
+## Remarks
 
 A given *update-ini-section* name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 

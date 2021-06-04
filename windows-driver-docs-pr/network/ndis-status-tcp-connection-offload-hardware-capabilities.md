@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 MUX intermediate drivers use the NDIS\_STATUS\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES CAPABILITIES status indication to notify NDIS and overlying drivers that there has been change in the connection offload characteristics of the underlying hardware.
 
-Remarks
--------
+## Remarks
 
 If an underlying NIC is added or deleted, the overall set of hardware capabilities that is associated with a MUX intermediate driver can change.
 
@@ -21,8 +20,7 @@ The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardw
 
 For more information about task offload hardware capabilities, see [OID\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES](./oid-tcp-connection-offload-hardware-capabilities.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -98,8 +98,7 @@ The PFN\_LIST\_CORRUPT bug check has a value of 0x0000004E. This indicates that 
 
  
 
-Cause
------
+## Cause
 
 This error is typically caused by a driver passing a bad memory descriptor list. For example, the driver might have called **MmUnlockPages** twice with the same list.
 

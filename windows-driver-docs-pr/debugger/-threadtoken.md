@@ -49,8 +49,7 @@ The **!threadtoken** extension displays the impersonation state of the current t
 
 For information about threads and impersonation, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!threadtoken** extension is obsolete in Windows XP and later versions of Windows. Use [**!token**](-token.md) instead.
 

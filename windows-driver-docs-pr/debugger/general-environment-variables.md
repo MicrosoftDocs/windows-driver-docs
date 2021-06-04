@@ -2,7 +2,7 @@
 title: General Environment Variables
 description: General Environment Variables
 keywords: ["environment variables, general", "_NO_DEBUG_HEAP environment variable", "_NT_ALT_SYMBOL_PATH environment variable", "_NT_DEBUG_HISTORY_SIZE environment variable", "_NT_DEBUG_LOG_FILE_APPEND environment variable", "_NT_DEBUG_LOG_FILE_OPEN environment variable", "_NT_DEBUGGER_EXTENSION_PATH environment variable", "_NT_EXECUTABLE_IMAGE_PATH environment variable", "_NT_SOURCE_PATH environment variable"]
-ms.date: 05/23/2017
+ms.date: 05/05/2021
 ms.localizationpriority: medium
 ---
 
@@ -32,8 +32,7 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_EXECUTABLE_IMAGE_PATH = <em>Path</em></p></td>
-<td align="left"><p>Specifies the path containing the binary executable files. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>).</p></td>
-</tr>
+<td align="left"><p>Specifies the path containing the binary executable files. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>).This path is used in some situations such as user mode minidump files. For more information, see <a href="setting-symbol-and-source-paths-in-windbg.md" data-raw-source="[Setting Symbol and Executable Image Paths in WinDbg](setting-symbol-and-source-paths-in-windbg.md)">Setting Symbol and Executable Image Paths in WinDbg</a>.</p></td></tr>
 <tr class="odd">
 <td align="left"><p>_NT_SOURCE_PATH = <em>Path</em></p></td>
 <td align="left"><p>Specifies the path containing the source files for the target. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, and for other ways to change this path, see <a href="source-path.md" data-raw-source="[Source Path](source-path.md)">Source Path</a>.</p></td>

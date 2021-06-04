@@ -26,8 +26,7 @@ The PP0\_INITIALIZATION\_FAILED bug check has a value of 0x0000008F. This bug ch
 
 None
 
-Cause
------
+## Cause
 
 An error occurred during Phase 0 initialization of the kernel-mode PnP manager.
 

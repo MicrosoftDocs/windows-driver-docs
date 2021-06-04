@@ -45,8 +45,7 @@ The **!rpcexts.rpctime** extension displays the current system time.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg.
 

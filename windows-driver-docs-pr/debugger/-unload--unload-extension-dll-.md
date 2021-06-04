@@ -57,8 +57,7 @@ Specifies the file name of the debugger extension DLL to be unloaded. If the ful
 
 For more details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
-Remarks
--------
+## Remarks
 
 This command is useful when testing an extension you are creating. When the extension is recompiled, you must unload and then load the new DLL.
 

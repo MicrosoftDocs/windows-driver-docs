@@ -56,15 +56,13 @@ User-mode clients use the KSPROPERTY\_CAMERACONTROL\_IRIS property to get or set
 
 The property value (operation data) is a LONG that specifies a camera's aperture setting. This value is expressed in units of fstop \* 10.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies a camera's aperture setting.
 
 Every video capture minidriver that supports this property must define its own range and default value for this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -12,8 +12,8 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /bootsequence
-============
+# BCDEdit /bootsequence
+
 
 The **/bootsequence** command sets the one-time boot sequence to be used by the boot manager.
 

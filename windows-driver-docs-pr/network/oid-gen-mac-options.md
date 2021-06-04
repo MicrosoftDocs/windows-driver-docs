@@ -29,8 +29,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers.
 
@@ -63,7 +62,7 @@ The miniport driver supports full-duplex transmits and indications on SMP platfo
 This flag is obsolete.
 
 <a href="" id="ndis-mac-option-8021p-priority"></a>NDIS\_MAC\_OPTION\_8021P\_PRIORITY  
-The NIC and its driver support 802.1p packet priority. For more information, see [Packet Priority](/previous-versions/windows/hardware/network/ff562331(v=vs.85)). Packet-priority values are received in [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures from higher-layer drivers. The appropriate information is generated in the MAC headers of packets and transmitted over the network. In addition, this NIC and its driver support extracting the appropriate information from the MAC headers of packets received from the network. This information is forwarded in NET\_BUFFER structures to higher-layer drivers.
+The NIC and its driver support 802.1p packet priority. For more information, see [Packet Priority](/previous-versions/windows/hardware/network/ff562331(v=vs.85)). Packet-priority values are received in [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures from higher-layer drivers. The appropriate information is generated in the MAC headers of packets and transmitted over the network. In addition, this NIC and its driver support extracting the appropriate information from the MAC headers of packets received from the network. This information is forwarded in NET\_BUFFER structures to higher-layer drivers.
 
 **Note**  NDIS 6.0 and later and later and later miniport drivers must set the NDIS\_MAC\_OPTION\_8021P\_PRIORITY flag.
 
@@ -89,8 +88,7 @@ Reserved for NDIS internal use.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -112,7 +110,7 @@ Requirements
 
 [**NdisReadNetworkAddress**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress)
 
-[**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer)
+[**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer)
 
  
 

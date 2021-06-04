@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_AVAILABLE property retrieves the media time span t
 
  
 
-Remarks
--------
+## Remarks
 
 The media time span is the duration that within which a client can seek.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

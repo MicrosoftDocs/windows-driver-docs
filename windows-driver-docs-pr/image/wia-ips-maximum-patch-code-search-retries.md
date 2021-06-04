@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 This property is required for all Patch Code Reader items. The property can be implemented to support a range containing one single value, including 0 (no retries).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

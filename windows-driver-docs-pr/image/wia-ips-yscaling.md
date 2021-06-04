@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 Valid values for the WIA\_IPS\_YSCALING property range from 1 through 65535.
 
@@ -40,8 +39,7 @@ Consider the following examples:
 
 -   200, 2x scaling (200%). The image size is enlarged along the y-axis by 200% (double).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

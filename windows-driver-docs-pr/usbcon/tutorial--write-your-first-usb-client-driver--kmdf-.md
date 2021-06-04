@@ -45,8 +45,7 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 -   [Kernel-Mode Driver Framework](../wdf/index.md)
 -   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="generate-the-kmdf-driver-code-by-using-the--visual-studio-professional-2019---usb-driver-template"></a>Step 1: Generate the KMDF driver code by using the Visual Studio Professional 2019 USB driver template
 

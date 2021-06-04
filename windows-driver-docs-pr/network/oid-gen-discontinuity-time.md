@@ -20,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. For NDIS interface providers only.
 
-Remarks
--------
+## Remarks
 
 Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
@@ -31,8 +30,7 @@ If no such discontinuity occurred since the last re-initialization of the interf
 
 If the interface provider returns NDIS\_STATUS\_SUCCESS, the result of the query is a ULONG64 value that specifies the discontinuity time, in milliseconds, since the last computer restart.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

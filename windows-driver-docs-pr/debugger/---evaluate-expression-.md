@@ -2,7 +2,7 @@
 title: (Evaluate Expression)
 description: The question mark ( ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ) displays command help.
 keywords: ["(Evaluate Expression) Windows Debugging"]
-ms.date: 03/30/2021
+ms.date: 04/26/2021
 topic_type:
 - apiref
 api_name:
@@ -53,8 +53,7 @@ Specifies the expression to evaluate.
 
  
 
-Remarks
--------
+## Remarks
 
 The input and output of the **?** command depend on whether you are using MASM expression syntax or C++ expression syntax. For more information about these kinds of expression syntax, see [Evaluating Expressions](evaluating-expressions.md) and [Numerical Expression Syntax](numerical-expression-syntax.md).
 
@@ -72,8 +71,10 @@ Some strings may contain escapes, such as **\\n**, **\\"**, **\\r**, and **\\b**
  AliasName        c:\dir\name.txt
 0:001> ? $spat( "c:\dir\name.txt", "*name*" )
 Evaluate expression: 0 = 00000000
+
 0:001> ? $spat( "${AliasName}", "*name*" )
 Evaluate expression: 0 = 00000000
+
 0:001> ? $spat( "c:\dir\", "*filename*" )
 Syntax error at '( "c:\dir\", "*filename*" )
 ```
@@ -85,8 +86,10 @@ To get the evaluator to interpret a string literally, you must use the <strong>@
 ```console
 0:000> ? $spat( @"c:\dir\name.txt", "*name*" )
 Evaluate expression: 1 = 00000000`00000001
+
 0:000> ? $spat( @"${AliasName}", "*name*" )
 Evaluate expression: 1 = 00000000`00000001
+
 0:001> ? $spat( @"c:\dir\", "*filename*" )
 Evaluate expression: 0 = 00000000
 ```
@@ -95,9 +98,9 @@ In the preceding examples, the **$spat** MASM operator checks the first string t
 
 ## See also
 
-[**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
+[?? (Evaluate C++ Expression)](----evaluate-c---expression-.md)
 
-[**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
+[.formats (Show Number Formats)](-formats--show-number-formats-.md)
 
 [MASM Numbers and Operators](masm-numbers-and-operators.md)
 

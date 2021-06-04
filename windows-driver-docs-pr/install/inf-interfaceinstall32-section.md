@@ -41,8 +41,7 @@ References an INF-writer-defined section, possibly with any of the system-define
 <a href="" id="flags"></a>*flags*  
 If specified, this entry must be zero.
 
-Remarks
--------
+## Remarks
 
 When a specified *InterfaceClassGUID* is not already installed in the system, that interface class is installed as the corresponding <em>DDInstall</em>**.Interfaces** section is processed by the [SetupAPI](setupapi.md) functions during device installation or when that device's driver makes the initial call to **IoRegisterDeviceInterface**.
 

@@ -56,13 +56,11 @@ The KSPROPERTY\_EXTXPORT\_OUTPUT\_SIGNAL\_MODE property sets or gets an external
 
 The property value (operation data) is a ULONG that specifies the current output signal mode of the external transport.
 
-Remarks
--------
+## Remarks
 
 The **SignalMode** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the output signal mode.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

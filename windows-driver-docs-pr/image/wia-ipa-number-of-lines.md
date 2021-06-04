@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPA\_NUMBER\_OF\_LINES property is optional for Windows Vista drivers for all transfer-enabled items. If WIA\_IPA\_NUMBER\_OF\_LINES, [**WIA\_IPA\_BYTES\_PER\_LINE**](wia-ipa-bytes-per-line.md), and [**WIA\_IPA\_PIXELS\_PER\_LINE**](wia-ipa-pixels-per-line.md) are implemented, applications written for Windows Server 2003, Windows XP, and previous Windows versions can estimate the number of pixels per line, the number of bytes that are required for each scan line, and the total number of scan lines in the image. These values are not accurate because the image processing filter might modify the actual values, which WIA\_IPA\_NUMBER\_OF\_LINES, WIA\_IPA\_BYTES\_PER\_LINE, and WIA\_IPA\_PIXELS\_PER\_LINE represent.
 
@@ -37,8 +36,7 @@ If a Windows Vista driver does not supply these properties, the compatibility la
 
 Windows Vista applications should always parse the image header data to get information about the image that is more accurate than the information that is available from the preceding properties.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

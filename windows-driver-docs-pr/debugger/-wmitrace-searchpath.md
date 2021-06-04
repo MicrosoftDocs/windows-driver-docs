@@ -43,8 +43,7 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about trace message format files, see the "Trace Message Format Files" topic in the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 When used with no parameters, **!wmitrace.searchpath** displays the current search path.
 

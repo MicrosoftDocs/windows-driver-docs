@@ -179,8 +179,7 @@ For information about security descriptor strings, see [Security Descriptor Defi
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
-Remarks
--------
+## Remarks
 
 An **AddReg** directive can be specified under any of the sections shown in the formal syntax statement above. This directive can also be specified under any of the following INF-writer-defined sections:
 
@@ -281,8 +280,7 @@ A **ResourcePickerTags** HKR **AddReg** entry specifies resource picker tags for
 <a href="" id="resourcepickerexceptions"></a>**ResourcePickerExceptions**  
 A **ResourcePickerExceptions** HKR **AddReg** entry specifies the resource conflicts that are allowed for a device.
 
-Examples
---------
+## Examples
 
 An **AddReg** directive referenced the (SCSI) Miniport_EventLog_AddReg section in this example, under an INF-writer-defined section referenced by the **AddService** directive in a <em>DDInstall</em>**.Services** section of this INF.
 

@@ -49,8 +49,7 @@ The **!errlog** extension displays the contents of any pending entries in the I/
 
 For information about [**IoWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry), see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 This command displays information about any pending events in the I/O system's error log. These are events queued by calls to the [**IoWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry) function, to be written to the system's event log for subsequent viewing by the **Event Viewer**.
 

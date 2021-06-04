@@ -46,13 +46,11 @@ Not used. Assign a value of **NULL** to this parameter.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function returns the appropriate NTSTATUS error code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

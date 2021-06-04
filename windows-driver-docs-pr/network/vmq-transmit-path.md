@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 For transmit requests, the overlying driver uses the [**NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_queue_id) macro to set the queue identifier of the outgoing queue in the outgoing data with the **NetBufferListFilteringInfo** OOB information. The **NetBufferListFilteringInfo** information is specified in an [**NDIS\_NET\_BUFFER\_LIST\_FILTERING\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_net_buffer_list_filtering_info) structure.
 
-NDIS drivers can use the [**NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_queue_id) macro to set or get the queue identifier of a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. If a queue group contains more than one VM queue, the queue identifier of the transmit packet might be set to the queue identifier of any of the VM queues in the group.
+NDIS drivers can use the [**NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_receive_queue_id) macro to set or get the queue identifier of a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. If a queue group contains more than one VM queue, the queue identifier of the transmit packet might be set to the queue identifier of any of the VM queues in the group.
 
 Protocol drivers set the NDIS\_SEND\_FLAGS\_SINGLE\_QUEUE bit on the *SendFlags* parameter of the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function to indicate that all of the transmit NET\_BUFFER\_LIST structures in the call are for the same transmit queue.
 

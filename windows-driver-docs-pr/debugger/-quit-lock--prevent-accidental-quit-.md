@@ -57,8 +57,7 @@ Enables the debugging session to end. *Password* must match the password that yo
 
  
 
-Remarks
--------
+## Remarks
 
 Without parameters, **.quit\_lock** displays the current lock status, including the full text of the password.
 

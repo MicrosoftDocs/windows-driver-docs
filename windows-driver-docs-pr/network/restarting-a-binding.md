@@ -31,7 +31,7 @@ In the Restarting state, the protocol driver can:
 
 -   Use OID requests to query the driver stack. For example, the driver can find out about support for receive side scaling by using [OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES](./oid-gen-receive-scale-capabilities.md).
 
--   Reallocate [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) and [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) pools, if necessary.
+-   Reallocate [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) and [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) pools, if necessary.
 
 -   Enumerate the list of the underlying filter modules.
 

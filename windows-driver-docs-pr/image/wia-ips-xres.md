@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_XRES property to set the horizontal resolution. The WIA minidriver creates and maintains this property.
 
@@ -37,8 +36,7 @@ If a device can be set to only a single value, create a WIA\_PROP\_LIST type and
 
 WIA\_IPS\_XRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

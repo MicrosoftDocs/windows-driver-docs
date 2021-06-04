@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_SSID\_LIST is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

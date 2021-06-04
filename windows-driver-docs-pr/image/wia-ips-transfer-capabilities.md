@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constant that is valid with the WIA\_IPS\_TRANSFER\_CAPABILITIES property
 
@@ -51,8 +50,7 @@ The following table describes the constant that is valid with the WIA\_IPS\_TRAN
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

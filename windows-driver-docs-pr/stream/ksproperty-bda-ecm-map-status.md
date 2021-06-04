@@ -54,13 +54,11 @@ Clients use KSPROPERTY\_BDA\_ECM\_MAP\_STATUS to determine status on an ECM map 
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the ECM map node status.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

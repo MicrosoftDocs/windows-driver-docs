@@ -54,8 +54,7 @@ The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category 
 
  
 
-Remarks
--------
+## Remarks
 
 The **PinId** member of the KSP\_PIN structure specifies the pin factory for which to return the category GUID.
 
@@ -63,8 +62,7 @@ The KS filter uses this property to indicate the standard functional *Category* 
 
 Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information where necessary.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

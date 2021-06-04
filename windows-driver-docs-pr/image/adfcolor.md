@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ADFColor** element contains the list of color processing capabilities that the front or back side of the automatic document feeder (ADF) supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFColor>
@@ -26,8 +25,7 @@ Usage
 </wscn:ADFColor>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ADFColor** element contains the information needed to determine the type of color processing and acquisition that the scanner's ADF supports. If the parent element is [**ADFFront**](adffront.md), the specified color information applies to the front side of the ADF; otherwise, the parent element is [**ADFBack**](adfback.md) and the color information applies to the back side of the ADF.
 

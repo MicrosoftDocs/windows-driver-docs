@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_SCATTERBLTS {
@@ -29,15 +28,13 @@ typedef struct _D3DKMT_SCATTERBLTS {
 } D3DKMT_SCATTERBLTS;
 ```
 
-Members
--------
+## Members
 
 **NumBlts**
 
 **Blts**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

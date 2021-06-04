@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
@@ -30,8 +29,7 @@ typedef enum _DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
 } DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE"></span><span id="dxgkmt_multiplane_overlay_stereo_flip_none"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_NONE**
 
@@ -39,8 +37,7 @@ Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1"></span><span id="dxgkmt_multiplane_overlay_stereo_flip_frame1"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_FRAME1**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

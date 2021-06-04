@@ -17,7 +17,7 @@ As a set, the OID\_PNP\_ENABLE\_WAKE\_UP OID specifies the wake-up capabilities 
 
 As a query, OID\_PNP\_ENABLE\_WAKE\_UP obtains the current wake-up capabilities that are enabled for a network adapter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure is a bitmask of flags that can be used to enable a combination of wake-up events:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure is a bitmask of flags that can be used to enable a combination of wake-up events:
 
 <a href="" id="ndis-pnp-wake-up-magic-packet"></a>**NDIS\_PNP\_WAKE\_UP\_MAGIC\_PACKET**  
 When set, specifies that the miniport driver should enable a network adapter to signal a wake-up event on receipt of a magic packet. (A *magic packet* is a packet that contains 16 contiguous copies of the receiving network adapter's Ethernet address.) When cleared, specifies that the miniport driver should disable the network adapter from signaling such a wake-up event.
@@ -40,8 +40,7 @@ The miniport driver should clear the wake-up capabilities that NDIS set with OID
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) or [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -65,7 +64,7 @@ Requirements
 
 [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest)
 

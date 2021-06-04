@@ -46,8 +46,7 @@ A pointer to a LARGE\_INTEGER, which receives the sector offset to the first LCN
 <a href="" id="outputbufferlength--in-"></a>*OutputBufferLength \[in\]*  
 The size of the output buffer, in bytes. This value must be 8.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
@@ -84,15 +83,13 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 Adding the value retrieved by FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE to the value retrieved by the FSCTL\_GET\_RETRIEVAL\_POINTERS control code results in a volume-relative file extent offset.
 
 The FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE control code can be used on FastFAT and exFAT devices. This capability supports the use of BitLocker for devices such as flash drives.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

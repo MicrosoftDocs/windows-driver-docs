@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro sets the members of an [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure for a single integer value.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 void ACPI_METHOD_SET_ARGUMENT_INTEGER(
@@ -22,8 +21,7 @@ void ACPI_METHOD_SET_ARGUMENT_INTEGER(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *MethodArgument*   
 A pointer to an ACPI\_METHOD\_ARGUMENT structure.
@@ -31,18 +29,15 @@ A pointer to an ACPI\_METHOD\_ARGUMENT structure.
 *IntData*   
 An integer value of type ULONG.
 
-Return value
-------------
+## Return value
 
 This macro does not return a value.
 
-Remarks
--------
+## Remarks
 
 A driver can use this macro to set the members of an ACPI\_METHOD\_ARGUMENT structure that supplies a single integer value of type ULONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

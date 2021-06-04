@@ -57,15 +57,13 @@ The property value is of type BOOL and specifies whether FM radio is enabled.
 
 A **KSPROPERTY\_FMRX\_STATE** property request returns **TRUE** if FM radio is enabled and **FALSE** if FM radio is disabled.
 
-Remarks
--------
+## Remarks
 
 FM radio can be enabled or disabled by setting the **KSPROPERTY\_FMRX\_STATE** property on the wave filter. The FM volume and routing (endpoint selection) is controlled by the [**KSPROPERTY\_FMRX\_VOLUME**](ksproperty-fmrx-volume.md) and [**KSPROPERTY\_FMRX\_ENDPOINTID**](ksproperty-fmrx-endpointid.md) properties on the topology filter. Basic support for the **KSPROPERTY\_FMRX\_VOLUME** property should return the minimum volume, maximum volume, and the volume ranges.
 
 A new [**KSNODETYPE\_FM\_RX**](ksnodetype-fm-rx.md) topology node endpoint is implemented as any other audio endpoint is in the system, and it supports all audio endpoint properties. This endpoint also supports jack properties that are defined under the [KSPROPSETID\_Jack](kspropsetid-jack.md) property set. This endpoint is in the unplugged state at boot. If capturing FM radio is supported by driver, this endpoint becomes active when FM radio is enabled. Creating a capture pin on the **KSNODETYPE\_FM\_RX** topology node allows audio capture that comes over from FM receiver.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -96,8 +96,7 @@ If an installer fails this DIF request and DI_QUIETINSTALL is not set in the dev
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Sharpness** element specifies the relative amount to reduce or enhance the sharpness of the scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Sharpness wscn:Override="" wscn:UsedDefault=""
@@ -28,8 +27,7 @@ Usage
 </wscn:Sharpness wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -64,8 +62,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 A value in the range from -100 through 100, inclusive.
 
@@ -93,8 +90,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Sharpness** element indicates the relative amount to reduce or enhance the sharpness of the scanned document. A value of 0 indicates that the WSD Scan Service should make no adjustments to the scanned sharpness.
 

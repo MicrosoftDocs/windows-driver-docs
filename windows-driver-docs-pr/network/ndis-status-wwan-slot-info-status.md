@@ -16,8 +16,7 @@ Miniport drivers can send a **NDIS\_STATUS\_WWAN\_SLOT\_INFO** notification as a
 
 This notification uses the [**NDIS\_WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

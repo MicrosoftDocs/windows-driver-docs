@@ -54,13 +54,11 @@ The KSPROPERTY\_TOPOLOGY\_NAME property provides the localized Unicode string na
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of the KSP\_NODE structure specifies the node ID for which to return the string name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

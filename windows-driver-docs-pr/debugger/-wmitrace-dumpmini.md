@@ -36,8 +36,7 @@ This extension is useful only when debugging a minidump file or a full dump file
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 The *system trace fragment* is a copy of the contents of the last buffer of the System Context Log. Under normal conditions, this is the trace session whose logger ID is 2.
 

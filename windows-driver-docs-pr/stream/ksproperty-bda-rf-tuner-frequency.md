@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY along with KSPROPERTY\_BDA\_RF
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -69,8 +68,7 @@ Specifying the KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY property with:
 
 If the KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY\_MULTIPLIER property specified a multiplier of BDA\_FREQUENCY\_MULTIPLIER\_NOT\_SET (−1) or BDA\_FREQUENCY\_MULTIPLIER\_NOT\_DEFINED (0), then the KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY property specifies the frequency in kilohertz (kHz). In addition, if the minidriver's set handler ([*KStrSetPropertyHandler*](/previous-versions/ff567200(v=vs.85))) for the frequency multiplier property is not called, the minidriver must determine that the supplied frequency is expressed in units of kHz (1Hz x 1000). In effect, the default multiplier value is 1000. For more information, see [Accessing Frequency Properties of a BDA Tuner Node](./accessing-frequency-properties-of-a-bda-tuner-node.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -50,8 +50,7 @@ gc
 
 For an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 When a [conditional breakpoint](setting-a-conditional-breakpoint.md) includes an execution command at the end, this should be the **gc** command.
 

@@ -59,8 +59,7 @@ If *Flags* is set to 1, the error code is read as an NTSTATUS code.
 
  
 
-Remarks
--------
+## Remarks
 
 The following example shows you how to use **!error**.
 

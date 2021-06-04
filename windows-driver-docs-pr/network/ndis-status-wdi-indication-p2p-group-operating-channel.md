@@ -26,8 +26,7 @@ For a Wi-Fi Direct GO port, this must be indicated during [OID\_WDI\_TASK\_START
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

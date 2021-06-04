@@ -48,8 +48,7 @@ Specifies the address of the device for which to display the open handles.
 
  
 
-Remarks
--------
+## Remarks
 
 To display complete handle information, this extension requires private symbols.
 

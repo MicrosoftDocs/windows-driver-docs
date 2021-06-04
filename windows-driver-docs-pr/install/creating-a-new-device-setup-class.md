@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](./system-defined-device-setup-classes-reserved-for-system-use.md).
+You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](./system-defined-device-setup-classes-available-to-vendors.md).
 
 If your device meets both of the following criteria, you should assign it to an existing device setup class:
 

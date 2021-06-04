@@ -21,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiCreateAllocation2* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_CREATEALLOCATION2 DxgkDdiCreateAllocation2;
@@ -34,8 +33,7 @@ NTSTATUS DxgkDdiCreateAllocation2(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hAdapter*
 This parameter is reserved for system use.
@@ -43,8 +41,7 @@ This parameter is reserved for system use.
 *pCreateAllocation*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

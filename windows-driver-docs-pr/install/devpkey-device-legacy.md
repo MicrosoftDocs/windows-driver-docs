@@ -52,8 +52,7 @@ The DEVPKEY_Device_Legacy device property represents a Boolean value that indica
 
  
 
-Remarks
--------
+## Remarks
 
 The PnP manager sets the value of DEVPKEY_Device_Reported to DEVPROP_TRUE if the PnP manager automatically created the device as a root-enumerated device when the non-PnP driver for the device was loaded. Otherwise, the PnP manager sets the value of the property to DEVPROP_FALSE.
 
@@ -61,8 +60,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

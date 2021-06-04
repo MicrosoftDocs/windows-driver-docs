@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SMHBA\_GetLUNStatistics method returns traffic statistics for a specific SCSI logical unit that is provided by using the FCP protocol or SSP protocol on a specific local HBA.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_GetLUNStatistics(
@@ -30,8 +29,7 @@ void SM_GetLUNStatistics(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Lunit*   
 A structure of type [**HBA\_ScsiId**](/previous-versions/ff557191(v=vs.85)) that contains information that is used by the operating system to identify a SCSI logical unit.
@@ -42,18 +40,15 @@ The status of the operation. For a list of allowed values and their descriptions
 *ProtocolStatistics*   
 A structure of type [**MS\_SMHBA\_PROTOCOLSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics) that is used to report protocol traffic statistics on a port.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_TargetInformationMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

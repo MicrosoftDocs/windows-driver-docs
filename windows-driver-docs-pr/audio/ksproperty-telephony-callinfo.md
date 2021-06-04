@@ -57,8 +57,7 @@ The property value is of type [**KSTELEPHONY\_CALLINFO**](/windows-hardware/driv
 
 A **KSPROPERTY\_TELEPHONY\_CALLINFO** property request returns a [**KSTELEPHONY\_CALLINFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstelephony_callinfo) structure, which contains the call type (LTE packet-switched, WLAN packet-switched, or circuit-switched) and the call state (enabled, disabled, held, or in provider transition).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

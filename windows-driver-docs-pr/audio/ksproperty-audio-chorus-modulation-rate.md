@@ -60,8 +60,7 @@ The property value is of type ULONG and it specifies the chorus modulation rate.
 
 A KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

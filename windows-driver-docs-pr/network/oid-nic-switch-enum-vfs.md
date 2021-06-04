@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 An overlying driver or user-mode application issues an object identifier (OID) method request of OID\_NIC\_SWITCH\_ENUM\_VFS to obtain an array. Each element in the array specifies the attributes of a PCI Express (PCIe) Virtual Function (VF) that are attached to a NIC switch on a network adapter's NIC switch.
 
-After a successful return from this OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains the following:
+After a successful return from this OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a buffer that contains the following:
 
 -   An [**NDIS\_NIC\_SWITCH\_VF\_INFO\_ARRAY**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info_array) structure that defines the number of elements within the array.
 
@@ -22,8 +22,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
      
 
-Remarks
--------
+## Remarks
 
 Overlying drivers and user-mode applications issue OID method requests of OID\_NIC\_SWITCH\_ENUM\_VFS to enumerate the VFs attached to a network adapter's NIC switch.
 
@@ -75,7 +74,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VFS request, it returns one of the
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -86,8 +85,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VFS request, it returns one of the
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -114,7 +112,7 @@ Requirements
 
 [**NDIS\_NIC\_SWITCH\_VF\_INFO\_ARRAY**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info_array)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md)
 

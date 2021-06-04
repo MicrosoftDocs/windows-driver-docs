@@ -75,8 +75,7 @@ Displays the current assertion-handling settings.
 
 For more information about break status and handling status, descriptions of all event codes, a list of the default status for all events, and details about other methods of controlling this status, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
-Remarks
--------
+## Remarks
 
 The **ah\\*** command controls the assertion handling status for a specific address. The [**sx\* asrt**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command controls the global assertion handling status. If you use **ah\\*** for a certain address and then an assert occurs there, the debugger responds based on the **ah\\*** settings and ignores the **sx\* asrt** settings.
 

@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate ch
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

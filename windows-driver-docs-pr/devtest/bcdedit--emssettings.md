@@ -26,8 +26,7 @@ Syntax
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
-Parameters
-----------
+## Parameters
 
 **BIOS**   
 Specifies that the system will use BIOS settings for the EMS configuration. This works only on systems that have EMS support provided by the BIOS.

@@ -57,13 +57,11 @@ The MULTIPLE\_IRP\_COMPLETE\_REQUESTS bug check has a value of 0x00000044. This 
 
  
 
-Cause
------
+## Cause
 
 A driver has called **IoCompleteRequest** to ask that an IRP be completed, but the packet has already been completed.
 
-Resolution
-----------
+## Resolution
 
 This is a tough bug to find because the simplest case -- a driver that attempted to complete its own packet twice -- is usually not the source of the problem. More likely, two separate drivers each believe that they own the packet, and each has attempted to complete it. The first request succeeds, and the second fails, resulting in this bug check.
 

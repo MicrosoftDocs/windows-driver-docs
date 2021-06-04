@@ -41,8 +41,7 @@ When the port gets disconnected from the network, it sends the disassociation in
 
 Before the disassociation indication is sent, the port must clear the state associated with the peer. This includes any keys and 802.1x port authorization information associated with the peer. The port must not trigger a roam on its own.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

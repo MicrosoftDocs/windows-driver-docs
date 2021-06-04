@@ -14,8 +14,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_USSD notification to implement the 
 
 Miniport drivers can also send unsolicited events with this notification using the [NDIS\_WWAN\_USSD\_EVENT](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ussd_event) structure to describe the nature of the USSD event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

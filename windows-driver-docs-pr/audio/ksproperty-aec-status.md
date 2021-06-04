@@ -99,8 +99,7 @@ The property value (operation data) is of type ULONG. This is a status value tha
 
 A KSPROPERTY\_AEC\_STATUS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The three least significant bits in the AEC status flags (see preceding table) represent the convergence history (CH) of the AEC algorithm. The CH status bits can be used by a Microsoft DirectSound application to determine whether the algorithm has converged and also whether it has remained in the converged state since the time that it started processing data. Depending on the audio hardware, the AEC algorithm might fail to converge, in which case the resulting capture buffer is likely to include the echo from the speakers.
 
@@ -114,8 +113,7 @@ Note that bit 2 of the three CH status bits is not currently used.
 
 As an alternative to using the CH status bits, the application can monitor the real-time convergence status by checking the AEC\_STATUS\_FD\_CURRENTLY\_CONVERGED flag bit. If this bit is set, the algorithm is currently converged. The algorithm can lose convergence temporarily when changes occur in the acoustic path. The real-time convergence flag is filtered to prevent such momentary losses from inappropriately switching the CH status bits to the DSCFX\_AEC\_STATUS\_FD\_HISTORY\_PREVIOUSLY\_DIVERGED state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

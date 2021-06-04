@@ -24,8 +24,7 @@ The chained MDL capability is only supported for bulk, isochronous, and interrup
 
 You can query for the chained MDL capability in the client driver's [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md) handler or anytime later. The client driver must not query for this capability in its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
 
-Instructions
-------------
+## Instructions
 
 1.  Call the [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) routine to determine whether the USB driver stack supports the chained MDLs capability. To query for that capability, specify UsbCapabilityChainedMdls as the GUID. Set the *OutputBuffer* parameter to NULL and *OutputBufferSize* parameter to 0.
 2.  Check the NTSTATUS value returned by [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) and evaluate the result. If the routine completes successfully, the chained MDLs capability is supported. Any other value indicates that the capability is not supported.
@@ -44,8 +43,7 @@ Instructions
 
     For information about those URB functions, see [**\_URB\_HEADER**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header).
 
-Remarks
--------
+## Remarks
 
 For code example that queries the underlying USB driver stack to determine whether the driver stack can accept chained MDLs, see [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)).
 

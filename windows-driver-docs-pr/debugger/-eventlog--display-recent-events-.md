@@ -46,8 +46,7 @@ The **.eventlog** command displays the recent Microsoft Win32 debug events, such
 
  
 
-Remarks
--------
+## Remarks
 
 The **.eventlog** command shows only 1024 characters.
 

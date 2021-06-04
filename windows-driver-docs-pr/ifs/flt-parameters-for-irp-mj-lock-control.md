@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -37,8 +36,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **LockControl**  
 Structure containing the following members.
@@ -61,15 +59,13 @@ Boolean value specifying whether the lock request should fail if the lock cannot
 **ExclusiveLock**  
 Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for the [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md) operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
 IRP\_MJ\_LOCK\_CONTROL can be an IRP-based I/O operation or a fast I/O operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

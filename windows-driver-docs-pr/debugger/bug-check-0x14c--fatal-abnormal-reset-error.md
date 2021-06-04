@@ -26,8 +26,7 @@ The FATAL\_ABNORMAL\_RESET\_ERROR bug check has a value of 0x0000014C. This indi
 
 None
 
-Cause
------
+## Cause
 
 The system encountered an unexpected error and restarted. Issues that may cause this error include: hardware watchdog timer in application or auxiliary processors indicating a system hang, user-initiated key sequence because of a hang, a brownout, or failures in the default bugcheck path. The cache may not be flushed and the resulting full memory dump may not contain the current thread context.
 

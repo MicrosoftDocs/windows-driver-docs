@@ -578,13 +578,11 @@ If Parameter 1 equals **0x11**, the system could not enter ACPI mode. In this si
 
  
 
-Cause
------
+## Cause
 
 The value of Parameter 1 indicates the error.
 
-Resolution
-----------
+## Resolution
 
 If you are debugging this error, use the [**!analyze -v**](-analyze.md) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
 
@@ -592,8 +590,7 @@ If you are not performing debugging, this error indicates that you have to obtai
 
 If you cannot obtain an updated BIOS, or the latest BIOS is still not ACPI compliant, you can turn off ACPI mode during text-mode setup. To turn off ACPI mode, press the F7 key when you are prompted to install storage drivers. The system does not notify you that the F7 key was pressed, but it silently disables ACPI and enables you to continue your installation.
 
-Remarks
--------
+## Remarks
 
 A PCI routing table (\_PRT) is the ACPI BIOS object that specifies how all the PCI devices are connected to the interrupt controllers. A computer with multiple PCI buses might have multiple \_PRTs.
 

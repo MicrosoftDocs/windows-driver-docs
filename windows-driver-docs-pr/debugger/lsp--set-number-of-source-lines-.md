@@ -63,8 +63,7 @@ Specifies the total number of lines to show. This number is divided evenly betwe
 
  
 
-Remarks
--------
+## Remarks
 
 When you use the **lsp** command together with no parameters, **lsp** displays the current leading line and trailing line values that you used while stepping. When you use this command together with only the **-a** parameter, **lsp** displays the values that you used while stepping and for the [**ls and lsa commands**](ls--lsa--list-source-lines-.md).
 

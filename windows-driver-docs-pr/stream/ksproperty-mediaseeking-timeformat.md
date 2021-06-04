@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT property retrieves the current media ti
 
  
 
-Remarks
--------
+## Remarks
 
 The property sets the current media time format that is returned as a time format GUID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

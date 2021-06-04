@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_SAMPLE\_TIME to determine the sample time over whic
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -65,8 +64,7 @@ Each time a client requests a signal statistics property, the node should report
 
 The driver can report time values for the most recently completed sample period.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

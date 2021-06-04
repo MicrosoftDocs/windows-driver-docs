@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_VOLUME [device interface class](./overview-of-device-inter
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [storage class drivers](../storage/introduction-to-storage-class-drivers.md) register instances of GUID_DEVINTERFACE_VOLUME to notify the operating system and applications of the presence of volume devices. The mount manager uses the Plug and Play (PnP) device interface notification mechanism to signal the arrival or removal of a volume interface.
 
@@ -53,8 +52,7 @@ The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the W
 
 For more information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md) and [Supporting Mount Manager Requests in a Storage Class Driver](../storage/supporting-mount-manager-requests-in-a-storage-class-driver.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

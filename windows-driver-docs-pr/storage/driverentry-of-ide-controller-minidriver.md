@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 **DriverEntry** initializes the minidriver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS DriverEntry(
@@ -29,8 +28,7 @@ NTSTATUS DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DriverObject* \[in\]  
 Contains a pointer to the IDE controller minidriver's driver object.
@@ -38,20 +36,17 @@ Contains a pointer to the IDE controller minidriver's driver object.
 *RegistryPath* \[in\]  
 Specifies a string indicating the registry path to the driver's configuration information in the registry.
 
-Return value
-------------
+## Return value
 
 **DriverEntry** returns STATUS\_SUCCESS if successful; otherwise it returns the error code received from the [**PciIdeXInitialize**](/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine.
 
-Remarks
--------
+## Remarks
 
 Each controller minidriver must have a routine named **DriverEntry** in order to load.
 
 An IDE controller minidriver's **DriverEntry** routine must call the [**PciIdeXInitialize**](/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine. **PciIdeXInitialize** initializes the controller minidriver's dispatch tables, allocates an extension for the *DriverObject*, and stores various values in the driver object's extension. Values that must be stored in the driver object's extension include the size of the driver extension and a pointer to a controller minidriver [**HwIdeXGetControllerProperties**](/previous-versions/windows/hardware/drivers/ff557254(v=vs.85)) routine that retrieves information about the IDE controller.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

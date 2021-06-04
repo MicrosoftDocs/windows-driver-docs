@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_RANGE to control the tuner range, that i
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -69,8 +68,7 @@ Specifying the KSPROPERTY\_BDA\_RF\_TUNER\_RANGE property with:
 
 Some tuners control an external device, such as a multiswitch, that defines the domain on which to find a particular carrier frequency. This property sets the tuner range either to −1, meaning that tuner range is not used for the particular tuning space, or to a value that is specific to the tuning space.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

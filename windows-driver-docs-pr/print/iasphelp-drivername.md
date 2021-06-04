@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **DriverName** property enables an ASP Web page to obtain the name of the printer driver.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_DriverName(
@@ -31,14 +30,12 @@ HRESULT get_DriverName(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to a driver name string.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -81,8 +78,7 @@ objPrinter.Open strPrinter
 DrvrName = objPrinter.DriverName
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

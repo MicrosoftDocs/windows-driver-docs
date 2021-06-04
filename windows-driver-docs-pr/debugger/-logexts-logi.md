@@ -52,8 +52,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 This command initializes logging, but does not actually enable it. Logging can be enabled with the [**!logexts.loge**](-logexts-loge.md) command.
 

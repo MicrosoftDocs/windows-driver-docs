@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobStatus** element contains all information about the status of the current scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobStatus>
@@ -26,8 +25,7 @@ Usage
 </wscn:JobStatus>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -84,8 +82,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 **JobStatus** child elements are maintained through automata. The WSD Scan Service should update **JobStatus** elements accordingly as it processes a job. A client operation, such as [**CancelJobRequest**](canceljobrequest.md), can indirectly affect job status.
 

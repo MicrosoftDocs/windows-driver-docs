@@ -26,8 +26,7 @@ The POOL\_CORRUPTION\_IN\_FILE\_AREA bug check has a value of 0x000000DE. This i
 
 None
 
-Cause
------
+## Cause
 
 When the Memory Manager dereferenced the file, it discovered this corruption in pool memory.
 

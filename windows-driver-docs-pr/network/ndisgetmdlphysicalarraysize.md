@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NdisGetMdlPhysicalArraySize** macro retrieves the number of disconnected physical memory blocks that are associated with an MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID NdisGetMdlPhysicalArraySize(
@@ -22,8 +21,7 @@ VOID NdisGetMdlPhysicalArraySize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
@@ -31,18 +29,15 @@ A pointer to an MDL.
 *\_ArraySize*   
 A pointer to a caller-supplied variable in which this macro returns the number of disconnected physical memory blocks that are associated with the specified MDL.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The **NdisGetMdlPhysicalArraySize** macro provides an MDL-based version of the [**NdisGetBufferPhysicalArraySize**](/previous-versions/windows/hardware/network/ff552033(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH to control the bandwidth setti
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the tuner node.
 
@@ -67,8 +66,7 @@ Specifying the KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH property with:
 
 -   BDA\_CHAN\_BANDWITH\_NOT\_DEFINED (0) indicates that the bandwidth is not defined.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

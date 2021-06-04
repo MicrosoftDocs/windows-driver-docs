@@ -32,8 +32,7 @@ A USB port number. If you specify a port number, this command displays the struc
 
 Usbkd.dll
 
-Remarks
--------
+## Remarks
 
 Use this command only when you are debugging a crash dump file that was generated as a result of [**Bug Check 0xFE: BUGCODE\_USB\_DRIVER**](bug-check-0xfe--bugcode-usb-driver.md).
 

@@ -56,15 +56,13 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME property temporarily overri
 
 The property value (operation data) is a LONG that specifies a new key frame picture number.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOCOMPRESSION\_S structure specifies the number of the frame that is to be made a key frame.
 
 This property is not supported by video capture minidrivers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

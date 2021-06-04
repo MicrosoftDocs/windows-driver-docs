@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_PREROLL property retrieves the amount of preroll i
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns the number of 100-nanosecond units of preroll as a value of type LONGLONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -57,13 +57,11 @@ To use VRAM transport, a capture minidriver must support this property.
 
 A KSPROPERTY\_PREFERRED\_CAPTURE\_SURFACE returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error code.
 
-Remarks
--------
+## Remarks
 
 Zero is an invalid value for [**CAPTURE\_MEMORY\_ALLOCATION\_FLAGS**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-capture_memory_allocation_flags).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -16,8 +16,7 @@ If you have configured a remote computer for testing using Visual Studio, you ca
 -   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see How to test driver package.
 -   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-Instructions
-------------
+## Instructions
 
 ### Test your device to see if you need to customize the WDTF Simple I/O Action Plug-in
 

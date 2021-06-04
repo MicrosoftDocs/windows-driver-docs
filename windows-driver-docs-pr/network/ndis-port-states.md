@@ -31,7 +31,7 @@ NDIS port authentication states indicate if a port is controlled (requires autho
 
 A miniport driver can activate a port or deactivate a port with a PnP event. For more information about activating and deactivating ports, see [Activating NDIS Ports](activating-an-ndis-port.md) and [Deactivating NDIS Ports](deactivating-an-ndis-port.md).
 
-Overlying drivers use the [OID\_GEN\_PORT\_STATE](./oid-gen-port-state.md) OID to get the current state of the port that is specified in the **PortNumber** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure. NDIS handles this OID, and miniport drivers do not receive this OID query.
+Overlying drivers use the [OID\_GEN\_PORT\_STATE](./oid-gen-port-state.md) OID to get the current state of the port that is specified in the **PortNumber** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure. NDIS handles this OID, and miniport drivers do not receive this OID query.
 
 Miniport drivers that support NDIS ports must use the [**NDIS\_STATUS\_PORT\_STATE**](./ndis-status-port-state.md) status indication to indicate changes in the state of an NDIS port. Miniport drivers must set the port number in the **PortNumber** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure.
 

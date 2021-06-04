@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The device name that is contained in the WIA\_DIP\_DEV\_NAME property is obtained from the driver's INF file. An application reads this property to obtain the name of the device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

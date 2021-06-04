@@ -42,8 +42,7 @@ The **!chklowmem** extension determines whether physical memory pages below 4 GB
 
  
 
-Remarks
--------
+## Remarks
 
 This extension is useful when you are verifying that kernel-mode drivers operate properly with physical memory above the 4 GB boundary. Typically, drivers fail by truncating a physical address to 32 bits and then in writing below the 4 GB boundary. The **!chklowmem** extension will detect any writes below the 4 GB boundary.
 

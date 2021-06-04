@@ -33,13 +33,11 @@ The REGISTRY\_FILTER\_DRIVER\_EXCEPTION bug check has a value of 0x00000135. Thi
 
  
 
-Cause
------
+## Cause
 
 This bugcheck indicates that a registry filtering driver didn't handle an exception inside its notification routine.
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Identify the offending driver by using the 3rd parameter.
 

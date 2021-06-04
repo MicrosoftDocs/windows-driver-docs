@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ClientContext** element specifies a client-specific string.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ClientDisplayName>
@@ -26,13 +25,11 @@ Usage
 </wscn:ClientDisplayName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -66,8 +63,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 When the parent element of the **ClientContext** element is [**ScanDestination**](scandestination.md), **ClientContext** specifies the string value that the client provides during a **&lt;wse:Subscribe&gt;** request to receive [**ScanAvailableEvent**](scanavailableevent.md) events.
 

@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 This IRP returns the power sequence values for a device.
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
 
-When Sent
----------
+## When Sent
 
 A driver sends this IRP as an optimization to determine whether its device actually entered a specific power state. Support for this IRP is optional.
 
@@ -54,8 +52,7 @@ The bus driver increments the values in **SequenceD1**, **SequenceD2**, and **Se
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS to indicate that it has returned the requested information, or to STATUS\_NOT\_IMPLEMENTED to indicate that it does not support this IRP.
 
-Operation
----------
+## Operation
 
 This IRP returns the power sequence values for a device. Bus drivers can optionally handle it; function and filter drivers can optionally send it.
 
@@ -65,8 +62,7 @@ A device policy owner can send this IRP once to get the sequence values before s
 
 For example, if the device takes a long time to restore power upon reaching the D2 state, the driver can store the **SequenceD2** value before it sets the device state to D2 or lower. Later, when power is being restored to the device, the driver can compare the new **SequenceD2** value with its stored value to determine whether the device state actually dropped below D2. If the values match, the device did not actually enter power state D2 or a lower state, and the driver can avoid reinitializing the device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -67,8 +67,7 @@ Analyze a stalled graph for suspect filters.
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This command may take a bit of time to process.
 

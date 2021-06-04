@@ -22,8 +22,7 @@ Alternately, you can allocate an [**URB**](/windows-hardware/drivers/ddi/usb/ns-
 -   Before sending a select-configuration request, you must have a USBD handle for your client driver's registration with the USB driver stack. To create a USBD handle call [**USBD\_CreateHandle**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle).
 -   Make sure you have obtained the configuration descriptor ([**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor) structure) of the configuration to select. Typically, you submit an URB of the type URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request)) to retrieve information about device configuration. For more information, see [USB Configuration Descriptors](usb-configuration-descriptors.md).
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="create-an-array-of-usbd-interface-list-entry-structures-"></a>Step 1: Create an array of USBD\_INTERFACE\_LIST\_ENTRY structures.
 
@@ -266,8 +265,7 @@ NTSTATUS CompletionRoutine ( PDEVICE_OBJECT DeviceObject,
 }
 ```
 
-Remarks
--------
+## Remarks
 
 **Disabling a Configuration for a USB Device:**
 

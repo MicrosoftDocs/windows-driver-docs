@@ -59,8 +59,7 @@ The operation was denied because the debugger is in [Secure Mode](./secure-mode.
 
 **Win32 error results.** Other error codes, such as ERROR\_READ\_FAULT and ERROR\_WRITE\_FAULT, can sometimes occur. These results are passed to the HRESULT\_FROM\_WIN32 macro that is defined in WinError.h before being returned.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

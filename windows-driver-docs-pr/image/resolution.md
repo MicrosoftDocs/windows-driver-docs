@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Resolution** element specifies the resolution of the scanned image.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Resolution wscn:MustHonor=""
@@ -27,8 +26,7 @@ Usage
 </wscn:Resolution wscn:MustHonor="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -100,8 +98,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Resolution** element contains a single [**Width**](width.md) x [**Height**](height.md) pair that describes the desired scan resolution. If the **Height** element is missing, the **Width** value is used, yielding a square resolution (for example, 300 x 300).
 

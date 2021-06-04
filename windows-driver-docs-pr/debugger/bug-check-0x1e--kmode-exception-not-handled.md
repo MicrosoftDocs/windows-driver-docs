@@ -56,8 +56,7 @@ The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This ind
 </table>
 
 
-Cause
------
+## Cause
 
 To interpret this bug check, you must identify which exception was generated.
 
@@ -78,8 +77,7 @@ Common exception codes include:
 For a complete list of exception codes, see [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
 
-Remarks
--------
+## Remarks
 
 If you are not equipped to debug this problem, you can use some basic troubleshooting techniques described in [Blue screen data](blue-screen-data.md). If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
@@ -97,8 +95,7 @@ Check the System Log in Event Viewer for additional error messages that might he
 
 The error that generates this message can occur after the first restart during Windows Setup, or after Setup is finished. A possible cause of the error is a system BIOS incompatibility. BIOS problems can be resolved by upgrading the system BIOS version.
 
-Resolution
-----------
+## Resolution
 
 If you plan to debug this problem, you may find it difficult to obtain a stack trace. The exception address (parameter 2) should pinpoint the driver or function that caused this problem.
 

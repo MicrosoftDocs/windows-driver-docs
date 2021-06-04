@@ -57,8 +57,7 @@ You can use the **.restart** command only in KD.
 
 For more information about reestablishing contact with the target, see [Synchronizing with the Target Computer](synchronizing-with-the-target-computer.md).
 
-Remarks
--------
+## Remarks
 
 The **.restart** command is similar to the [**CTRL+R (Re-synchronize)**](ctrl-r--re-synchronize-.md) command, except that **.restart** is even more extensive in its effect. This command is equivalent to ending the debugger and then attaching a new debugger to the target computer.
 

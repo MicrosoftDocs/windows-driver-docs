@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA service uses the WIA\_DIP\_REMOTE\_DEV\_ID property only internally.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

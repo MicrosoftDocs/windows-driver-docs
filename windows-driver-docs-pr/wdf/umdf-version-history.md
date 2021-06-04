@@ -6,9 +6,8 @@ keywords:
 - UMDF WDK , version information
 - revision history WDK UMDF
 - version information WDK UMDF
-ms.date: 04/28/2020
+ms.date: 04/22/2021
 ms.localizationpriority: medium
-ms.custom: 19H1
 ---
 
 # UMDF Version History
@@ -20,6 +19,7 @@ The following table shows the release history of the UMDF library:
 
 |UMDF version|Release method|Included in this version of Windows|Drivers using it can run on|
 |--- |--- |--- |--- |
+|2.33|WDK for Windows Server 2022|Windows Server 2022 (Iron)|Windows Server 2022 and later|
 |2.31|Windows 10, version 2004 WDK|Windows 10, version 2004 (May 2020 Update, Vibranium)|Windows 10, version 2004 and later|
 |2.29|Not released in WDK|Windows 10, version 1903 (March 2019 Update, 19H1)|Windows 10, version 1903 and later|
 |2.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
@@ -36,11 +36,17 @@ The following table shows the release history of the UMDF library:
 |1.5|Windows Vista WDK|Windows Vista|Windows XP and later|
 
 
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2019 to build drivers that run on Windows 10 and later.
 
 For help determining what version of WDF to use, see [Which framework version should I use?](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
 
 For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+
+## UMDF Version 2.33
+
+* For devices that specify **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE](/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type) enumeration, when calling the [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) macro with *WaitForD0* set to **FALSE**, if the device is still in D0 and the idle timeout period has not yet elapsed, **WdfDeviceStopIdle** returns STATUS_SUCCESS (in previous versions this resulted in a return value of STATUS_PENDING).
+* [**WdfDeviceWdmAssignPowerFrameworkSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings) function now supports UMDF.
+* [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure has two new members (**PoFxDeviceFlags** and **DirectedPoFxEnabled**) and can now be used with UMDF. For UMDF, only the **Size**, **PoFxDeviceFlags**, and **DirectedPoFxEnabled** members are used. Other fields are ignored and must be set to zero. The framework does this automatically when a UMDF driver calls the [**WDF_POWER_FRAMEWORK_SETTINGS_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_power_framework_settings_init) function.
 
 ## UMDF Version 2.31
 

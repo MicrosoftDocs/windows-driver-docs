@@ -16,8 +16,7 @@ Set requests are not supported.
 
 Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](./ndis-status-wwan-device-caps.md) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure that indicates the capabilities of the MB device when completing query requests.
 
-Remarks
--------
+## Remarks
 
 Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
 
@@ -286,8 +285,7 @@ US 2.5 GHz Forward Link Only Band
 
 The unit for radio frequency bands in both tables is megahertz (MHz).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

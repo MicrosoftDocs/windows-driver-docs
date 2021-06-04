@@ -32,8 +32,7 @@ This extension has no parameters.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Run the **!ndiskd.ifstacktable** command to see the ifStackTable.
 

@@ -66,13 +66,11 @@ Every video capture minidriver that supports this property must define a range a
 
  
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the tilt setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

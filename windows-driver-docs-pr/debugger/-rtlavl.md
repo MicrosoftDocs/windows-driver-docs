@@ -62,8 +62,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 
-Remarks
--------
+## Remarks
 
 Including the <em>Module</em>**!**<em>Type</em> option causes each entry in the table to be interpreted as having the given type.
 

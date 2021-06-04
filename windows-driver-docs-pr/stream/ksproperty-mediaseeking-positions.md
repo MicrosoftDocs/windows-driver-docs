@@ -54,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_POSITIONS property sets the media time and/or the 
 
  
 
-Remarks
--------
+## Remarks
 
 The KSPROPERTY\_POSITIONS structure specifies the current position and stop position relative to the total duration of the stream.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

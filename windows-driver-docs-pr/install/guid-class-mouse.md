@@ -19,13 +19,11 @@ ms.date: 10/17/2018
 
 GUID_CLASS_MOUSE is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for mouse devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md) class identifier for new instances of this class.
 
-Remarks
--------
+## Remarks
 
 The HID samples that are provided in the WDK include the mouse class driver. The mouse class driver uses GUID_CLASS_MOUSE to register instances of this device interface class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

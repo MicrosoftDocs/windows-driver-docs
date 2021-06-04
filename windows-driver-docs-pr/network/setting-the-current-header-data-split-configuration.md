@@ -19,7 +19,7 @@ NDIS and overlying drivers or user-mode applications use the [OID\_GEN\_HD\_SPLI
 
 A system administrator can use the GUID that is associated with this OID through the WMI interface. For more information about header-data split WMI GUIDs, see [WMI Support for Header-Data Split](wmi-support-for-header-data-split.md).
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [**NDIS\_HD\_SPLIT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hd_split_parameters) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [**NDIS\_HD\_SPLIT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hd_split_parameters) structure.
 
 If the NDIS\_HD\_SPLIT\_COMBINE\_ALL\_HEADERS flag in the **HDSplitCombineFlags** member of NDIS\_HD\_SPLIT\_PARAMETERS is set, the miniport adapter must combine all split frames. If header-data split is enabled in the hardware, the miniport driver must combine the header and data before the driver indicates the frame to NDIS.
 

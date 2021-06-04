@@ -10,14 +10,13 @@ ms.localizationpriority: medium
 # OID\_PM\_PROTOCOL\_OFFLOAD\_LIST
 
 
-As a query, overlying drivers can use the OID\_PM\_PROTOCOL\_OFFLOAD\_LIST OID to enumerate the protocol offloads that are set on an underlying network adapter. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a list of [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structures that describe the currently active protocol offloads.
+As a query, overlying drivers can use the OID\_PM\_PROTOCOL\_OFFLOAD\_LIST OID to enumerate the protocol offloads that are set on an underlying network adapter. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a list of [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structures that describe the currently active protocol offloads.
 
-Remarks
--------
+## Remarks
 
 NDIS handles the query for miniport drivers. NDIS drivers can use the OID\_PM\_PROTOCOL\_OFFLOAD\_LIST OID to get a list of protocol offloads that are set on an underlying network adapter.
 
-For each [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure in the list, NDIS sets the **NextProtocolOffloadOffset** member to the offset from the beginning of the OID information buffer (that is, the beginning of the buffer that the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure points to) to the beginning of the next NDIS\_PM\_PROTOCOL\_OFFLOAD structure in the list. The offset in the **NextProtocolOffloadOffset** member of the last structure in the list is zero.
+For each [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure in the list, NDIS sets the **NextProtocolOffloadOffset** member to the offset from the beginning of the OID information buffer (that is, the beginning of the buffer that the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure points to) to the beginning of the next NDIS\_PM\_PROTOCOL\_OFFLOAD structure in the list. The offset in the **NextProtocolOffloadOffset** member of the last structure in the list is zero.
 
 If there are no protocol offloads that are set on the network adapter, NDIS sets the **DATA.QUERY\_INFORMATION.BytesWritten** member of the NDIS\_OID\_REQUEST structure to zero and returns NDIS\_STATUS\_SUCCESS. The data within the **DATA.QUERY\_INFORMATION.InformationBuffer** member is not modified by NDIS.
 
@@ -35,8 +34,7 @@ The information buffer was too short. NDIS set the **DATA.QUERY\_INFORMATION.Byt
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -58,7 +56,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload)
 

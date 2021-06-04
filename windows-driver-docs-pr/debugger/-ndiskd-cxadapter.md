@@ -42,8 +42,7 @@ Displays information about the datapath queues.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 To obtain a handle for a NETADAPTER object, first run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) command to see a list of all NIC drivers and NetAdapters on the system. In the following example, look for the handle for the NetAdapter named Realtek PCIe GBE Family Controller NetAdapter Sample Driver \#2. Its handle is ffffd1022d048030.
 

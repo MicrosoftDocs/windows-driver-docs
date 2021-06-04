@@ -44,15 +44,13 @@ The GUID_DEVINTERFACE_MONITOR [device interface class](./overview-of-device-inte
 
  
 
-Remarks
--------
+## Remarks
 
 Windows registers a device interface for each monitor that is configured in the operating system.
 
 For information about display adapter and monitors, see [Display Devices Design Guide](../display/index.md) and [Monitor Drivers](../display/monitor-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

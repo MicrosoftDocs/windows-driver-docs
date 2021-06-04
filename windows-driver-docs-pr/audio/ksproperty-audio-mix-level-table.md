@@ -121,13 +121,11 @@ The size of the KSAUDIO\_MIXLEVEL array is calculated from the [**KSAUDIO\_MIXCA
 
 A KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The filter will succeed a KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE set-property request that specifies a mix-level value (**Level** member of KSAUDIO\_MIXLEVEL) that is beyond the range of the filter but will (silently) clamp the value to the supported range. In a subsequent request to get this property, however, the filter will output the actual value used.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

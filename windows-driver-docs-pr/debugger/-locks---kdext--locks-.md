@@ -62,8 +62,7 @@ Specifies the hexadecimal address of the ERESOURCE lock to be displayed. If *Add
 
  
 
-Remarks
--------
+## Remarks
 
 The **!locks** extension displays all locks held on resources by threads. A lock can be shared or exclusive, which means no other threads can gain access to that resource. This information is useful when a deadlock occurs on a system. A deadlock is caused by one non-executing thread holding an exclusive lock on a resource that the executing thread needs.
 

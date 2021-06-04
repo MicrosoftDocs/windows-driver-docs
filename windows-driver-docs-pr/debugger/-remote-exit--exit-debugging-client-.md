@@ -58,8 +58,7 @@ You can use the **.remote\_exit** command only in a script file. You can use it 
 
 For more information about script files, see [Using Script Files](using-script-files.md). For more information about debugging clients and debugging servers, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If you are using KD or CDB directly, instead of using a script, you can exit from the debugging client by using the [**CTRL+B**](ctrl-b--quit-local-debugger-.md) key.
 

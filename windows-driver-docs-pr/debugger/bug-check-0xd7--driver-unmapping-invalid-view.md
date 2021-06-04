@@ -58,8 +58,7 @@ The DRIVER\_UNMAPPING\_INVALID\_VIEW bug check has a value of 0x000000D7. This i
 
  
 
-Remarks
--------
+## Remarks
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace: the driver that caused the error can be determined from the stack trace.
 

@@ -99,8 +99,7 @@ You can enter one of the following machine types.
 
  
 
-Remarks
--------
+## Remarks
 
 The processor mode influences many debugger features:
 

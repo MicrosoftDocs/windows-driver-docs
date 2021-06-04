@@ -21,8 +21,7 @@ The correct use of the dispatch level flag can help you avoid unnecessary attemp
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 The `KSPROPERTY_JACK` enumeration defines new property IDs that are used by audio jack structures.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum  { 
@@ -31,8 +30,7 @@ typedef enum  {
 } KSPROPERTY_JACK;
 ```
 
-Constants
----------
+## Constants
 
 <span id="KSPROPERTY_JACK_DESCRIPTION"></span><span id="ksproperty_jack_description"></span>**KSPROPERTY\_JACK\_DESCRIPTION**  
 Specifies the ID for the [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md) property.
@@ -46,13 +44,11 @@ Specifies the ID for the [**KSPROPERTY\_JACK\_SINK\_INFO**](ksproperty-jack-sink
 <span id="KSPROPERTY_JACK_CONTAINERID"></span><span id="ksproperty_jack_containerid"></span>**KSPROPERTY\_JACK\_CONTAINERID**  
 Specifies the ID for the [**KSPROPERTY\_JACK\_CONTAINERID**](ksproperty-jack-containerid.md) property.
 
-Remarks
--------
+## Remarks
 
 None
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,8 +56,7 @@ The KSPROPERTY\_VPCONFIG\_DDRAWSURFACEHANDLE property returns the Microsoft Dire
 
 The property value (operation data) is a ULONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

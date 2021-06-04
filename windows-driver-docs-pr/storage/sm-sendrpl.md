@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendRPL WMI method sends a read port list (RPL) command through the indicated port to indicated destination port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendRPL(
@@ -36,8 +35,7 @@ void SM_SendRPL(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name (WWN) for the local port through which the read port list (RPL) command is sent. This information is delivered to the miniport driver in the PortWWN member of a SM\_SendRPL\_IN structure.
@@ -66,18 +64,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *RespBuffer*   
 The results of the read port list (RPL) command. The miniport driver returns this information in the RespBuffer member of a SendRPL\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

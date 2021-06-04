@@ -39,8 +39,7 @@ The host defines the packet pattern types to add to the firmware. The firmware d
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

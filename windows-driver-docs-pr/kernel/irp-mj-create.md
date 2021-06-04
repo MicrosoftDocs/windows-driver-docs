@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 Every kernel-mode driver must handle **IRP\_MJ\_CREATE** requests in a [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function.
 
-When Sent
----------
+## When Sent
 
 The operating system sends an **IRP\_MJ\_CREATE** request to open a handle to a file object or device object. For example, when a driver calls [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), the operating system sends an **IRP\_MJ\_CREATE** request to perform the actual open operation.
 
@@ -33,13 +32,11 @@ The **Parameters.Create.FileAttributes** and **Parameters.Create.EaLength** memb
 
 None
 
-Operation
----------
+## Operation
 
 Most device and intermediate drivers set STATUS\_SUCCESS in the I/O status block of the IRP and complete the create request, but drivers can optionally use their [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function to reserve resources for any subsequent I/O requests for that handle. For example, the system serial driver maps its paged-out code and allocates any resources that are necessary to handle subsequent I/O requests for the user-mode thread that is attempting to open the device for input and output.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -53,6 +53,8 @@
   href: 360-camera-video-capture.md
 - name: "Flashlight (Lamp) Support"
   href: flashlight-support.md
+- name: "TorchControl shared usage registry settings"
+  href: oem-guidance-on-registry-keys-for-shared-torch-usage.md
 - name: "Streaming Media Samples"
   href: streaming-media-samples.md
 - name: "OEM guidance on settings for the Windows 10 in-box camera app"

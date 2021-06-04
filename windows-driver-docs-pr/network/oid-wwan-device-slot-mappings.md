@@ -24,13 +24,11 @@ The following diagram illustrates a set request.
 
 ![slot mapping set](images/multi-SIM_7_slotMappingSet.png)
 
-Remarks
--------
+## Remarks
 
 The host expects that on first boot, the modem would have a default mapping between slots and executors. The host performs a SET operation with OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO to define the slot that is bound to each executor. The host expects the modem to maintain the mapping across reboots and removals/insertions. This OID is not executor-specific and may be sent to any NDIS instance on the device. It may also query the current mapping as shown above.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

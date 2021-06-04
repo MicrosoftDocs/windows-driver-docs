@@ -18,10 +18,9 @@ NDIS 6.30 and later miniport drivers that provide NDK services must support this
 
  
 
-Remarks
--------
+## Remarks
 
-NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure pointing to an [**NDIS\_NDK\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_statistics_info) structure.
+NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure pointing to an [**NDIS\_NDK\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_statistics_info) structure.
 
 The NDK-capable miniport driver must provide the **CounterSet** member, which is a [**NDIS\_NDK\_PERFORMANCE\_COUNTERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_performance_counters) structure.
 
@@ -29,8 +28,7 @@ The counters are published to tools such as [perfmon](/previous-versions/windows
 
 These counters are also available by calling the [Get-NetAdapterStatistics](/powershell/module/netadapter/get-netadapterstatistics) PowerShell cmdlet with the **RdmaStatistics** attribute. For more information about the **RdmaStatistics** attribute, see [**MSFT\_NetAdapterStatisticsSettingData**](/previous-versions/windows/desktop/netadaptercimprov/msft-netadapterstatisticssettingdata).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -66,7 +64,7 @@ Requirements
 
 [**NDIS\_NDK\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_statistics_info)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
  
 

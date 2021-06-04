@@ -78,8 +78,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **pt** command causes the target to begin executing. This execution continues until a **return** instruction is reached or a breakpoint is encountered.
 

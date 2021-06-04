@@ -54,8 +54,7 @@ The KSPROPERTY\_STREAM\_QUALITY property is an optional property that should be 
 
  
 
-Remarks
--------
+## Remarks
 
 When this request is made, the pin connection in turn notifies the quality manager by providing [**KSQUALITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality) structures with the given context parameter.
 
@@ -63,8 +62,7 @@ If a pin does not report quality problems, it does not need to support KSPROPERT
 
 Also see [Quality Management](./quality-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

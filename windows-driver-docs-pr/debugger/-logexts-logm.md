@@ -60,8 +60,7 @@ Specifies the modules to be included or excluded. This list is not cumulative; e
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 With no parameters, the **!logexts.logm** extension displays the current inclusion list or exclusion list.
 

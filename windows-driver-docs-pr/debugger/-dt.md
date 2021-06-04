@@ -53,8 +53,7 @@ Specifies the hexadecimal address of the CSR thread.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension displays the thread, process, client ID, flags, and reference count associated with the CSR thread. If verbose mode is selected, the display will also include list pointers, thread handle, and the wait block.
 

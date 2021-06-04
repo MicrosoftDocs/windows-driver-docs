@@ -19,8 +19,7 @@ This rule verifies that when the [**PAGED\_CODE**](../kernel/mm-bad-pointer.md) 
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +44,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**PAGED\_CODE**](../kernel/mm-bad-pointer.md)

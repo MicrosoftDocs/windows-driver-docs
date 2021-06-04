@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_AUTO\_CROP** property.
 
@@ -66,8 +65,7 @@ This property is valid and optional for the Feeder (WIA\_CATEGORY\_FEEDER) item,
 
 When the property is supported, WIA\_AUTO\_CROP\_DISABLED and at least one of the other two possible values (WIA\_AUTO\_CROP\_SINGLE and/or WIA\_AUTO\_CROP\_MULTI) are required, with WIA\_AUTO\_CROP\_DISABLED being the required default.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

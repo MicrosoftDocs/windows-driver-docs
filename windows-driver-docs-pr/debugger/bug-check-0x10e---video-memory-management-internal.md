@@ -155,13 +155,11 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 
  
 
-Cause
------
+## Cause
 
 This bug check is usually caused by a video driver behaving improperly.
 
-Resolution
-----------
+## Resolution
 
 If the problem persists, check Windows Update for an updated video driver.
 

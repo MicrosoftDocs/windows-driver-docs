@@ -60,13 +60,11 @@ The property value (operation data) is of type ULONG. This value is the pin ID o
 
 A KSPROPERTY\_AUDIO\_DEMUX\_DEST property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The pin ID identifies a logical pin on the DEMUX node. For a discussion of pin IDs for logical pins on a node inside a filter, see [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

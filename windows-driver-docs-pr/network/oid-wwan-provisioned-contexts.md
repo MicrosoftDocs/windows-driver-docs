@@ -14,8 +14,7 @@ OID\_WWAN\_PROVISIONED\_CONTEXTS reads or updates the provisioned context entrie
 
 Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS**](ndis-status-wwan-provisioned-contexts.md) status notification containing an [**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts) structure to provide information about provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM) regardless of completing set or query requests.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Packet Context Management](./mb-packet-context-management.md).
 
@@ -47,8 +46,7 @@ Provisioned context list should be pre-provisioned in the device, updated by set
 
 For more information about how to access AccessString, UserName, and Password from the MB device for each provisioned context in the list, see [**WWAN\_CONTEXT**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_context).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

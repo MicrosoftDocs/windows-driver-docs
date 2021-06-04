@@ -38,8 +38,7 @@ Displays information about the internal framework.
 Wudfext.dll
 
  
-### Remarks
--------
+### ## Remarks
 
 The **!wudfext.umdevstacks** extension displays the framework interface objects that are associated with each device stack. For more information about using the output from **!wudfext.umdevstacks**, see [**!wudfext.umdevstack**](-wudfext-umdevstack.md).
 

@@ -33,8 +33,7 @@ If the wake reason is a wake packet, the NIC should also include the wake packet
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

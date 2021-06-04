@@ -19,8 +19,7 @@ ms.localizationpriority: medium
 
 A file system filter driver (legacy filter) can register a PCOMPLETE\_LOCK\_IRP\_ROUTINE-typed routine as the filter's *CompleteLockIrpRoutine* callback.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PCOMPLETE_LOCK_IRP_ROUTINE CompleteLockIrpRoutine;
@@ -32,8 +31,7 @@ NTSTATUS CompleteLockIrpRoutine(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *Context* \[in\]  
 Context pointer that was passed to [**FsRtlProcessFileLock**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock).
@@ -49,13 +47,11 @@ IRP\_MN\_UNLOCK\_ALL\_BY\_KEY
 
 IRP\_MN\_UNLOCK\_SINGLE
 
-Return value
-------------
+## Return value
 
 This routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value. If it returns an NTSTATUS value that is not a success code, the file lock is removed from the file.
 
-Remarks
--------
+## Remarks
 
 A file system filter driver (legacy filter) can optionally specify a PCOMPLETE\_LOCK\_IRP\_ROUTINE-typed routine as the legacy filter's *CompleteLockIrpRoutine* routine for a byte-range file lock.
 
@@ -63,8 +59,7 @@ To specify this routine, a legacy filter passes a pointer to the routine as the 
 
 If the legacy filter specifies a *CompleteLockIrpRoutine* routine for a file lock, the system calls this routine when completing an [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md) operation for the file lock.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

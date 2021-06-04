@@ -17,8 +17,7 @@ The address the NIC is currently using.
 
 The network management software cannot set the current station address using the NDIS interface library. It must set this address as a configuration parameter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

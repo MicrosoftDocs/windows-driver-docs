@@ -12,8 +12,8 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /hypervisorsettings
-============
+# BCDEdit /hypervisorsettings
+
 
 The **/hypervisorsettings** command sets or displays the hypervisor debugger settings for the system.
 

@@ -17,8 +17,7 @@ As a set, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETER
 > [!NOTE]
 > In RSSv2, this OID is only used to query current RSS parameters of a given scaling entity. For miniport drivers that support RSSv2, see [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) for setting RSS parameters other than the indirection table.
 
-Remarks
--------
+## Remarks
 
 For NDIS miniport drivers, the query is not requested and the set is required for drivers that support RSS. NDIS handles the query for miniport drivers.
 
@@ -38,8 +37,7 @@ The underlying miniport adapter must use the most recent OID\_GEN\_RECEIVE\_SCAL
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

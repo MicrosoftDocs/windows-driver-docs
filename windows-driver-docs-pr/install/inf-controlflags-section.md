@@ -105,8 +105,7 @@ After Windows installs the [driver package](driver-packages.md) for the device, 
 
 3.  If the device-specific software is not installed on the computer, the PnP manager presents the solution to the user and provides a link for downloading the software. The user can then choose to download and install this software by following the instructions presented in the solution.
 
-Remarks
--------
+## Remarks
 
 Typically, a **ControlFlags** section has one or more **ExcludeFromSelect** entries to identify devices that are listed in the per-manufacturer [**INF Models section**](inf-models-section.md), but which should not be displayed to the end-user as options during manual installations.
 
@@ -123,8 +122,7 @@ An INF writer should use the **InteractiveInstall** directive sparingly and only
 
 INF files that exclusively install PnP devices can have a **ControlFlags** section unless they set the **NoInstallClass** value entry in their respective *SetupClassGUID* registry keys to **TRUE**. For more information about these registry keys, see [**INF ClassInstall32 Section**](inf-classinstall32-section.md).
 
-Examples
---------
+## Examples
 
 This example of the **ControlFlags** section in the system mouse class installer INF suppresses the display of devices/models that cannot be installed on x86 platforms.
 

@@ -35,8 +35,7 @@ The size (in bytes) of a [NDIS\_GUID](./filling-in-an-ndis-guid-structure.md) st
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,7 @@
 title: .srcpath, .lsrcpath (Set Source Path)
 description: The .srcpath and .lsrcpath commands set or display the source file search path.
 keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/05/2020
 topic_type:
 - apiref
 api_name:
@@ -62,8 +62,11 @@ The **.srcpath** command is available on all debuggers. The **.lsrcpath** comman
 
 For details and other ways to change this path, see [Source Path](source-path.md). For more information about commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).
 
-Remarks
--------
+>[!NOTE] 
+> Starting with version x.y.z, released in April 2021, additional source code formats are supported including source link 1 and source link 2, using the DebugInfoD path element. For more information, see [Source Code Extended Access](source-code-extended-access.md).
+> 
+
+## Remarks
 
 If you include `srv*` in your source path, the debugger uses [SrcSrv](srcsrv.md) to retrieve source files from locations specified in the target modules' symbol files. For more information about using srv\* in a source path, see [Using a Source Server](using-a-source-server.md) and [**.srcfix**](-srcfix---lsrcfix--use-source-server-.md).
 

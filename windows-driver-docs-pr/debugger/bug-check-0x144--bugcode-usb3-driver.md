@@ -390,8 +390,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 
  
 
-Remarks
--------
+## Remarks
 
 To query for a USB capability, the client driver must call [**WdfUsbTargetDeviceQueryUsbCapability**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability) or [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))
 

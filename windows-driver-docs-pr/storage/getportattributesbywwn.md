@@ -20,8 +20,7 @@ ms.date: 10/17/2018
 
 The **GetPortAttributesByWWN** method retrieves the attributes for the port specified by Port Name.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void GetPortAttributesByWWN(
@@ -31,8 +30,7 @@ void GetPortAttributesByWWN(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *wwn\[8\]*   
 The name of the port whose attributes are to be queried. This information is delivered to the miniport driver in the **wwn** member of a [**GetPortAttributesByWWN\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getportattributesbywwn_in) structure.
@@ -43,18 +41,15 @@ On return, contains the status of the operation. For a list of allowed values an
 *PortAttributes*   
 A structure of type [**MSFC\_HBAPortAttributesResults**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults) in which attributes for the discovered FC\_Port may be returned. The miniport driver returns this information in the **PortAttributes** member of a [**GetDiscoveredPortAttributes\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getdiscoveredportattributes_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadaptermethods-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

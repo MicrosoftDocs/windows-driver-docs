@@ -22,8 +22,7 @@ ms.localizationpriority: medium
 
 The **ComputerName** property enables an ASP Web page to obtain a print server's name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_ComputerName(
@@ -31,14 +30,12 @@ HRESULT get_ComputerName(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to a computer name string.
 
-Return value
-------------
+## Return value
 
 This method can return one of these values.
 
@@ -74,8 +71,7 @@ Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
 CompName = objPrinter.ComputerName
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

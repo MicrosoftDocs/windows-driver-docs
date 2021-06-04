@@ -73,8 +73,7 @@ The operation completed successfully.
 
 For more information, see [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md).
 
-Remarks
--------
+## Remarks
 
 Knowing the MAC address of the target system can be useful for network tracing and other utilities.
 

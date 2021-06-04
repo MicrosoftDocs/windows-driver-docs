@@ -68,8 +68,7 @@ The meaning of these parameters is explained in the Microsoft Windows SDK docume
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_MODE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 For additional information about the processing mode for a DirectSound 3D buffer, see the following in the Windows SDK documentation:
 
@@ -77,8 +76,7 @@ For additional information about the processing mode for a DirectSound 3D buffer
 
 -   The **IDirectSound3DBuffer::GetMode** and **IDirectSound3DBuffer::SetMode** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

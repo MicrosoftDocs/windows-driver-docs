@@ -25,15 +25,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver initializes this property at run time by reading the PKEY\_PNPX\_GlobalIdentity device property from the Function Instance object.
 
 Both PKEY\_PNPX\_GlobalIdentity and PKEY\_PNPX\_ID contain a unique ID of the UPnP Device. The difference is that PKEY\_PNPX\_GlobalIdentity always contains the UUID of the root device for all Function Instances, while PKEY\_PNPX\_ID contains the UUID of the Device/Sub-Device that the Function Instance represents.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -33,8 +33,7 @@ Specifies the GUID value that identifies the provider. This can be expressed as 
 <a href="" id="event-provider-install-section"></a>*event-provider-install-section*  
 References an INF-writer-defined section that contains information for registering the provider for this device (or devices). For more information, see the following **Remarks** section.
 
-Remarks
--------
+## Remarks
 
 The system-defined and case-insensitive extensions can be inserted into a <em>DDInstall</em>**.Events** section that contains an **AddEventProvider** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
 
@@ -147,8 +146,7 @@ Optionally specifies whether the log file is **0x1** (circular) or **0x2** (sequ
 <a href="" id="loggingautobackup-0-1"></a>**LoggingAutoBackup**=**0|1**  
 Optionally specifies whether to create a new log file when the current log file reaches its maximum size. Set to 1 to request that the service create a new file when the log file reaches its maximum size; otherwise, 0. You can set the **LoggingAutoBackup** to 1 only if the **LoggingRetention** is set to **0x2** (sequential) and only for **0x1** (Admin) and **0x2** (Operational) *channel-type*.
 
-Examples
---------
+## Examples
 
 This example shows the event-provider-install sections referenced by the **AddEventProvider** directives as already shown earlier in the example for [***DDInstall*.Events**](inf-ddinstall-events-section.md).
 

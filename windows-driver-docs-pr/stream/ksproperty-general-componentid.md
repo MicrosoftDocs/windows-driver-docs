@@ -54,13 +54,11 @@ The KSPROPERTY\_GENERAL\_COMPONENTID property is an optional property that allow
 
  
 
-Remarks
--------
+## Remarks
 
 The [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) structure contains GUID values for **Manufacturer**, **Product**, **Component**, and **Name**. It contains ULONG values for **Version** and **Revision**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

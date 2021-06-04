@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_CDCHANGER [device interface class](./overview-of-device-in
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied CD-ROM [changer driver](../storage/changer-drivers.md) registers instances of GUID_DEVINTERFACE_CDCHANGER to notify the operating system and applications of the presence of CD-ROM changer devices.
 
@@ -55,8 +54,7 @@ For information about storage devices, see [Storage Drivers](../storage/storage-
 
 [**CdChangerClassGuid**](cdchangerclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_CDCHANGER device interface class; for new instances of this class, use GUID_DEVINTERFACE_CDCHANGER instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

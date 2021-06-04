@@ -44,8 +44,7 @@ The KSCATEGORY_SYSAUDIO [device interface class](./overview-of-device-interface-
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

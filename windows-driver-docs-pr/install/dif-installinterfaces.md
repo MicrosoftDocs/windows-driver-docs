@@ -101,8 +101,7 @@ If the installer returns a Win32 error code, Windows stops the installation.
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

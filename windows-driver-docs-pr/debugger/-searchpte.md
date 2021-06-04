@@ -56,8 +56,7 @@ Displays help for this extension in the Debugger Command window.
 
 For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To stop execution at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 

@@ -19,8 +19,7 @@ This rule verifies that upon exit from the [**HwStorFindAdapter**](/windows-hard
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -16,13 +16,11 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_SMS\_CONFIGURATION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_configuration) structure.
 
-Remarks
--------
+## Remarks
 
 The miniport driver must send this unsolicited indication when the MB device's SMS subsystem is ready for SMS operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

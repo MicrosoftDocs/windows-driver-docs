@@ -139,8 +139,7 @@ This parameter is optional.
 
 For more information on processor breakpoints, see [Processor Breakpoints (ba Breakpoints)](processor-breakpoints---ba-breakpoints-.md). For more information about and examples of using breakpoints, other breakpoint commands and methods of controlling breakpoints, and information about how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 The debugger uses the *ID* number to refer to the breakpoint in later [**bc (Breakpoint Clear)**](bc--breakpoint-clear-.md), [**bd (Breakpoint Disable)**](bd--breakpoint-disable-.md), and [**be (Breakpoint Enable)**](be--breakpoint-enable-.md) commands.
 

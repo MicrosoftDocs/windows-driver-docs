@@ -72,15 +72,13 @@ System default noise suppression algorithm
 
 A KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to control the DSP algorithm that is performed by an AEC node ([**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)) or noise suppression node ([**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)).
 
 The algorithm-instance GUID matches the value in the **guidDSCFXInstance** member of a DSCEFFECTDESC structure that a caller passes to the **IDirectSoundCapture::CreateCaptureBuffer** method or **DirectSoundFullDuplexCreate** function. For more information, see the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

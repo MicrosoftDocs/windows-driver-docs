@@ -91,8 +91,7 @@ OID\_WDI\_SET\_ADAPTER\_CONFIGURATION configures the adapter. It is an optional 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

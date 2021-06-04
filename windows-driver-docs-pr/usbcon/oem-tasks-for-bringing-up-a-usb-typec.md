@@ -86,5 +86,5 @@ Attend Power Delivery and USB Type-C compliance workshops hosted by the standard
 
 ## See also
 
-- [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
+- [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.yml)
 - [Troubleshoot messages in UI](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2#devicenotwork)

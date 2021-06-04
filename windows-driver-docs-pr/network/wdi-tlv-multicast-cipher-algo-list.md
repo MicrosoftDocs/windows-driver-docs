@@ -31,8 +31,7 @@ The size (in bytes) of the array of [**WDI\_CIPHER\_ALGORITHM**](/windows-hardwa
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

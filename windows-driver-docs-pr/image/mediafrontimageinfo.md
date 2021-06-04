@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **MediaFrontImageInfo** element contains the image information for a simplex scan or for the front side of an ADF duplex scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:MediaFrontImageInfo>
@@ -26,8 +25,7 @@ Usage
 </wscn:MediaFrontImageInfo>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

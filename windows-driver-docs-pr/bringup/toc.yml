@@ -59,7 +59,7 @@
     - name: "How to convert an installed x64 Windows 7 system"
       href: how-to-convert-an-installed-x64-windows-7.md
   - name: "Firmware WEG FAQ"
-    href: frequently-asked-questions.md
+    href: frequently-asked-questions.yml
   - name: "Configure system firmware for Windows 7 and later update for Windows 10"
     href: configure-system-firmware-for-windows-7-and-later-update-for-windows-10.md
   - name: "Sample PowerShell script to query SMBIOS locally"

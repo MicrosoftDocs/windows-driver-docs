@@ -31,8 +31,7 @@ Receives the copy of the instance of the [**DEBUG\_TYPED\_DATA**](/windows-hardw
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
 EXT\_TDOP\_COPY is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 

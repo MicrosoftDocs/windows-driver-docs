@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_XPOS property to mark the upper-left corner of a selection area.
 
@@ -45,8 +44,7 @@ A driver must also update the WIA\_IPS\_XEXTENT, WIA\_IPS\_XPOS, WIA\_IPS\_YEXTE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

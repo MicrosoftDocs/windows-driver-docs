@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WMI clients can use the GUID\_NDIS\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES method GUID to determine the current link state.
 
-Remarks
--------
+## Remarks
 
 NDIS handles this GUID and miniport drivers do not receive an OID query.
 
@@ -21,8 +20,7 @@ When a WMI client issues a GUID\_NDIS\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES WMI 
 
 The data buffer that NDIS returns with this GUID contains an [**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pci_device_custom_properties) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -54,13 +54,11 @@ User-mode clients use this property to get or set a camera's flash control chara
 
  
 
-Remarks
--------
+## Remarks
 
 The property ID is **KSPROPERTY\_CAMERACONTROL\_FLASH\_PROPERTY\_ID**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -44,8 +44,7 @@ The KSCATEGORY_ESCALANTE_PLATFORM_DRIVER [device interface class](./overview-of-
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

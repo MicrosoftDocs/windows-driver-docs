@@ -21,7 +21,7 @@ Transferring data involves sending or receiving packets over an established and 
 
 The CoNDIS send and receive functions are similar to connectionless send and receive functions. The primary difference between the CoNDIS and connectionless interfaces is the management of virtual connections (VCs). For more information about connectionless send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
-In a single function call, CoNDIS drivers can send multiple [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures with multiple [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures on each NET\_BUFFER\_LIST structure. Also, CoNDIS drivers can indicate completed send operations for multiple NET\_BUFFER\_LIST structures with multiple NET\_BUFFER structures on each NET\_BUFFER\_LIST structure.
+In a single function call, CoNDIS drivers can send multiple [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures with multiple [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures on each NET\_BUFFER\_LIST structure. Also, CoNDIS drivers can indicate completed send operations for multiple NET\_BUFFER\_LIST structures with multiple NET\_BUFFER structures on each NET\_BUFFER\_LIST structure.
 
 In the receive path, CoNDIS miniport drivers can provide a list of NET\_BUFFER\_LIST structures to indicate receives. Each NET\_BUFFER\_LIST that a miniport driver provides contains one NET\_BUFFER structure. Because a different protocol binding can process each NET\_BUFFER\_LIST structure, NDIS can independently return each NET\_BUFFER\_LIST structure to the miniport driver.
 

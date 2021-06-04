@@ -55,18 +55,15 @@ This array of quadlet pairs defines the disk runs of the file. The value of the 
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) both return STATUS\_SUCCESS or an appropriate NTSTATUS error value.
 
-Remarks
--------
+## Remarks
 
 **ReFS:  **This code is not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

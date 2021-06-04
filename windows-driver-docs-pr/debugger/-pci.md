@@ -107,8 +107,7 @@ This extension command can only be used with an x86-based target computer.
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command and additional examples. For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 To edit the PCI configuration space, use [**!ecb**](-ecb---ecd---ecw.md), **!ecd**, or **!ecw**.
 

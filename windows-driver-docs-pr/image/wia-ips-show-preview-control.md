@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with WIA\_IPS\_SHOW\_PREVIEW\_CONTROL.
 
@@ -57,8 +56,7 @@ The following table describes the constants that are valid with WIA\_IPS\_SHOW\_
 
 You can use the WIA\_IPS\_SHOW\_PREVIEW\_CONTROL property to help control devices that cannot preview. For example, some feeder-driven devices cannot reload the paper for a preview scan.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

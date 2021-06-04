@@ -28,7 +28,7 @@ The hashing function can be one of the following:
 >[!NOTE]
 > Currently, **NdisHashFunctionToeplitz** is the only hashing function available to miniport drivers. The other hashing functions are reserved for NDIS. 
 
-A miniport driver should identify the hashing function and value that it uses in each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure before the driver indicates received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
+A miniport driver should identify the hashing function and value that it uses in each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure before the driver indicates received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
 
 ## Examples
 

@@ -44,8 +44,7 @@ The GUID_DEVINTERFACE_USB_HOST_CONTROLLER [device interface class](./overview-of
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied port driver for a USB host controller registers instances of GUID_DEVINTERFACE_USB_HOST_CONTROLLER to notify the operating system and applications of the presence of USB host controllers.
 
@@ -53,8 +52,7 @@ The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application]
 
 You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

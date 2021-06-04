@@ -44,8 +44,7 @@ The KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR [device interface class](./overview-of
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register an instance of KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR to indicate to the operating system that the devices support the KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR functional category.
 
@@ -53,8 +52,7 @@ For more information about functional categories for audio devices, see [Install
 
 For more information about how to process a microphone array in Windows Vista, refer to the [Microphone Array Support in Windows Vista](/previous-versions/windows/hardware/design/dn613960(v=vs.85)) and the [How to Build and Use Microphone Arrays for Windows Vista](/previous-versions/windows/hardware/design/dn613960(v=vs.85)) white papers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

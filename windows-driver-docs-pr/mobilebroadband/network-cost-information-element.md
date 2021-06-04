@@ -1,7 +1,7 @@
 ---
 title: Network cost information element
 description: Network cost information element
-ms.date: 04/20/2017
+ms.date: 05/31/2021
 ms.localizationpriority: medium
 ---
 
@@ -54,25 +54,37 @@ The following table shows the Network Cost IE format:
 <tr class="even">
 <td><p>OUI Type</p></td>
 <td><p>1</p></td>
-<td><p>0X11</p></td>
+<td><p>0x11</p></td>
 <td><p>OUI type (network cost)</p></td>
 </tr>
 <tr class="odd">
-<td><p>Cost attribute (Required)</p></td>
-<td><p>4</p></td>
-<td><p>Variable</p></td>
-<td><p>DWORD, little endian byte order</p></td>
+<td><p>Cost Level</p></td>
+<td><p>1</p></td>
+<td><p>Exactly one of <b>Cost Level</b> values. See below.</p></td>
+<td><p>Cost Level. One of exact values.</p></td>
+</tr>
+<tr class="even">
+<td><p>RESERVED</p></td>
+<td><p>1</p></td>
+<td><p>0x00</p></td>
+<td><p>Reserved. Should be 0x00</p></td>
+</tr>
+<tr class="odd">
+<td><p>Cost Flags</p></td>
+<td><p>1</p></td>
+<td><p>OR'ed <b>Cost Flags</b>. See below.</p></td>
+<td><p>Cost Flags. Can be OR'ed</p></td>
+</tr>
+<tr class="even">
+<td><p>RESERVED</p></td>
+<td><p>1</p></td>
+<td><p>0x00</p></td>
+<td><p>Reserved. Should be 0x00</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-The following figure shows the format of the cost attribute field:
-
-![format cost attribute field](images/fig1-mb-format-cost-attr-field.jpg)
-
-The following table shows the possible cost level bits (exactly one is required):
+The following table shows the possible <b>Cost Level</b> bits (exactly one is required):
 
 <table>
 <colgroup>
@@ -89,26 +101,37 @@ The following table shows the possible cost level bits (exactly one is required)
 </thead>
 <tbody>
 <tr class="odd">
+<td><p>0x00</p></td>
+<td><p>Unknown</p></td>
+<td><p>The usage is unknown or unrestricted.</p></td>
+</tr>
+<tr class="even">
 <td><p>0x01</p></td>
 <td><p>Unrestricted</p></td>
 <td><p>No incremental cost applies for transferring data on this connection.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>0x02</p></td>
 <td><p>Fixed</p></td>
-<td><p>Data transfer is metered and counts against a data limit. No difference in cost applies within this limit.</p></td>
+<td><p>
+  Data transfer is metered and counts against a data limit. No difference in cost applies within this limit.<br>
+  When this value is set, Windows clients automatically treat connection as metered.
+</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>0x04</p></td>
 <td><p>Variable</p></td>
-<td><p>Incremental cost applies for all usage on this link.</p></td>
+<td><p>
+  Incremental cost applies for all usage on this link.
+  When this value is set, Windows clients automatically treat connection as metered.
+</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The following tables shows the possible cost flag bits:
+The following tables shows the possible <b>Cost flag</b> bits. Those values MAY be or'ed
 
 <table>
 <colgroup>
@@ -125,31 +148,34 @@ The following tables shows the possible cost flag bits:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>0x01 00 00</p></td>
-<td><p>Over Data Limit</p></td>
-<td><p>Usage has exceeded the data limit and different network costs or conditions apply.</p></td>
+<td><p>0x00</p></td>
+<td><p>The connection cost is unknown.</p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>0x02 00 00</p></td>
-<td><p>Congested</p></td>
-<td><p>The network operator is experiencing or expecting heavy load and requests reduced activity where possible.</p></td>
+<td><p>0x01</p></td>
+<td><p>Over Data Limit</p></td>
+<td><p>Usage has exceeded the data limit of the metered network; different network costs or conditions might apply.</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x04 00 00</p></td>
-<td><p>Roaming</p></td>
-<td><p>The connection is roaming outside the provider’s home network or affiliates.</p></td>
+<td><p>0x02</p></td>
+<td><p>Congested</p></td>
+<td><p>The network operator is experiencing or expecting heavy load.</p></td>
 </tr>
 <tr class="even">
-<td><p>0x08 00 00</p></td>
+<td><p>0x04</p></td>
+<td><p>Roaming</p></td>
+<td><p>The tethering connection is roaming outside the provider's home network or affiliates.</p></td>
+</tr>
+<tr class="odd">
+<td><p>0x08</p></td>
 <td><p>Approaching Data Limit</p></td>
-<td><p>Usage is near the data limit; different network costs or conditions may apply soon.</p></td>
+<td><p>Usage is near the data limit of the metered network; different network costs or conditions might apply once the limit is reached.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-The following table shows some sample cost attribute values:
+The following table shows some sample cost attribute values (last four bytes of IE):
 
 <table>
 <colgroup>
@@ -167,27 +193,27 @@ The following table shows some sample cost attribute values:
 <tbody>
 <tr class="odd">
 <td><p>Default WLAN</p></td>
-<td><p>0x00 00 00 01</p></td>
+<td><p>0x01, 0x00, 0x00, 0x00</p></td>
 <td><p>Unrestricted connection; standard WLAN backed by fixed broadband.</p></td>
 </tr>
 <tr class="even">
 <td><p>Portable Hotspot Default</p></td>
-<td><p>0x00 00 00 02</p></td>
+<td><p>0x02, 0x00, 0x00, 0x00</p></td>
 <td><p>Metered network; limit unknown or not yet reached; matches Windows default for mobile broadband connections.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Over Limit / Throttled</p></td>
-<td><p>0x00 01 00 01</p></td>
+<td><p>0x01, 0x00, 0x01, 0x00</p></td>
 <td><p>User has exceeded data limit; speed is reduced, but no further usage limitation applies.</p></td>
 </tr>
 <tr class="even">
 <td><p>Over Limit / Charges</p></td>
-<td><p>0x00 01 00 04</p></td>
+<td><p>0x04, 0x00, 0x01, 0x00</p></td>
 <td><p>User has exceeded data limit; additional usage incurs incremental charges.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Portable Hotspot / Roaming</p></td>
-<td><p>0x00 04 00 04</p></td>
+<td><p>0x04, 0x00, 0x04, 0x00</p></td>
 <td><p>Connection is roaming; incremental charges apply due to network state.</p></td>
 </tr>
 </tbody>
@@ -216,6 +242,8 @@ The following table shows some sample cost attribute values:
 
 
 [Communication channels](communication-channels.md)
+
+[[MS-NCT] Network Cost Transfer protocol documentation](/openspecs/windows_protocols/ms-nct/7c4adf77-f13b-43aa-8491-637ef4543d96)
 
  
 

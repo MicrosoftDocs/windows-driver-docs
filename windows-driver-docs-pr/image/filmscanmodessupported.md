@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **FilmScanModesSupported** element contains a list of film exposure types that the film scanning option supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmScanModesSupported>
@@ -26,8 +25,7 @@ Usage
 </wscn:FilmScanModesSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **FilmScanModesSupported** element contains one or more [**FilmScanModeValue**](filmscanmodevalue.md) child elements. Each **FilmScanModeValue** element identifies a film exposure type that the film scanning option supports.
 

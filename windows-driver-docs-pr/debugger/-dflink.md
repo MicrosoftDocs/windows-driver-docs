@@ -54,8 +54,7 @@ Specifies a mask of bits to ignore in each pointer. Each **Flink** address is AN
 
  
 
-Remarks
--------
+## Remarks
 
 The **!dflink** extension traverses the **Flink** fields of the LIST\_ENTRY structure and displays up to four ULONGs at each address. To go in the other direction, use [**!dblink**](-dblink.md).
 

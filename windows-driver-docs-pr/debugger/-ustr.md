@@ -52,8 +52,7 @@ Specifies the hexadecimal address of the UNICODE\_STRING structure.
 
 For more information about UNICODE\_STRING structures, see the Microsoft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 Unicode strings are counted 16-bit character strings, as defined in the following structure:
 

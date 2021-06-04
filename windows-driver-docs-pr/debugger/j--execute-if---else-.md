@@ -59,8 +59,7 @@ The command string to be executed if the expression in *Expression* evaluates to
 
  
 
-Remarks
--------
+## Remarks
 
 You cannot add a semicolon or additional commands after the **j** command. If a semicolon appears after *Command2*, everything after the semicolon is ignored.
 

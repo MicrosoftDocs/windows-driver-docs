@@ -56,13 +56,11 @@ The KS\_AM\_RATE\_Step property is not yet implemented.
 
 The property value (operation data) is a KS\_AM\_Step (which is a type-defined DWORD)
 
-Remarks
--------
+## Remarks
 
 This property always returns STATUS\_NOT\_IMPLEMENTED.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

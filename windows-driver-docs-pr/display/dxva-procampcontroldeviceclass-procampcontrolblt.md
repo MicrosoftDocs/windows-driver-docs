@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The sample *ProcAmpControlBlt* function performs the ProcAmp adjustment operation by writing the output to the destination surface.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcAmpControlBlt(
@@ -28,8 +27,7 @@ HRESULT ProcAmpControlBlt(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpDDSDstSurface* \[in\]
 Supplies a pointer to the destination surface.
@@ -40,13 +38,11 @@ Supplies a pointer to the source surface.
 *ccBlt* \[in\]
 Supplies a pointer to a [**DXVA\_ProcAmpControlBlt**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolblt) structure that specifies the ProcAmp adjustment data output to the destination surface.
 
-Return value
-------------
+## Return value
 
 Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. Refer to *ddraw.h* for a complete list of error codes.
 
-Remarks
--------
+## Remarks
 
 The source and destination rectangles are required for either subrectangle ProcAmp adjustment or stretching. Support for stretching is optional and is reported by the **VideoProcessingCaps** member of the [**DXVA\_ProcAmpControlCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolcaps) structure. Support for subrectangles is also optional.
 

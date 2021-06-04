@@ -56,7 +56,7 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
     For information about NDIS structure version information, see [Specifying NDIS Version Information](specifying-ndis-version-information.md).
 
 <a href="" id="send-and-receive-data-paths-------"></a>**Send and Receive Data Paths**   
--   Use the updated version of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure.
+-   Use the updated version of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure.
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 

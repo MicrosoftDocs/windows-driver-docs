@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads WIA\_IPS\_PAGE\_HEIGHT to determine the physical dimensions of the page that is being scanned. If the extent settings are different from the known page sizes, this property reports the height of the page whose [**WIA\_IPS\_PAGE\_SIZE**](wia-ips-page-size.md) property is set to WIA\_PAGE\_CUSTOM.
 
@@ -36,8 +35,7 @@ WIA\_IPS\_PAGE\_HEIGHT must provide a measurement in thousandths of an inch that
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

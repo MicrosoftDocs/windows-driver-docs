@@ -56,15 +56,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE property sets or gets a camera's whit
 
 The property value (operation data) is a LONG that specifies a camera's white balance setting. The white balance value is expressed as a color temperature, in degrees Kelvin.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the white balance setting.
 
 The range and default value for white balance is device-dependent. Every video capture minidriver must define a range and default value for this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

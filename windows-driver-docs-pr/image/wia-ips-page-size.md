@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 To select the dimensions of the page to scan, an application sets the WIA\_IPS\_PAGE\_SIZE property. The WIA minidriver creates and maintains this property.
 
@@ -69,8 +68,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PAGE\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

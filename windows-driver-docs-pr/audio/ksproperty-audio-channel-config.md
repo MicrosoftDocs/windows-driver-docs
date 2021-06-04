@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type KSAUDIO\_CHANNEL\_CON
 
 A KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 When used as a property of a DAC node ([**KSNODETYPE\_DAC**](ksnodetype-dac.md)) or 3D node ([**KSNODETYPE\_3D\_EFFECTS**](ksnodetype-3d-effects.md)), the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the DirectSound speaker configuration. For stereo speaker configurations, this property is used in conjunction with the [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md) property, which distinguishes between headphones and several stereo speaker configurations. For more information about speaker configurations, see [DirectSound Speaker-Configuration Settings](./directsound-speaker-configuration-settings.md).
 
@@ -71,8 +70,7 @@ DirectSound treats KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG as a filter property on a 
 
 Clients also use this property to select the format of the stream that a [**KSNODETYPE\_PROLOGIC\_DECODER**](ksnodetype-prologic-decoder.md) node outputs.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

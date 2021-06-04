@@ -60,8 +60,7 @@ The property value (operation data) is a KSAC3\_ALTERNATE\_AUDIO structure that 
 
 A KSPROPERTY\_AC3\_ALTERNATE\_AUDIO property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

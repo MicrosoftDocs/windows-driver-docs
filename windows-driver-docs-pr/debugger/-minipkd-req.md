@@ -56,8 +56,7 @@ Specifies the physical device object (PDO) for the Logical Unit Extension (LUN) 
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The PDO for a LUN can be found in the **DevObj** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
 

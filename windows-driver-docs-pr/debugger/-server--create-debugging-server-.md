@@ -99,8 +99,7 @@ Causes the debugger to enable the necessary port connections for TCP or named pi
 
 For full details on how to start a debugging server, see [**Activating a Debugging Server**](activating-a-debugging-server.md). For examples, see [Client and Server Examples](client-and-server-examples.md).
 
-Remarks
--------
+## Remarks
 
 This command turns the current debugger into a debugging server. This allows you to start the server after the debugger is already running, whereas the -server [command-line option](command-line-options.md) can only be issued when the debugger is started.
 

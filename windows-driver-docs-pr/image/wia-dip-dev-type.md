@@ -28,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The device type and subtype are obtained from the driver's INF file of the device file. An application reads the WIA\_DIP\_DEV\_TYPE property to determine whether it is using a scanner, camera, or video device.
 
@@ -76,8 +75,7 @@ The following table describes the possible values for the device type.
 
 For more information about INF files, see [INF Files for WIA Devices](./inf-files-for-wia-devices.md). The **StiDeviceType***Xxx* constants are defined in *Sti.h*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

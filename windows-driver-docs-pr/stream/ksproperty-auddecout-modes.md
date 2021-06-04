@@ -58,8 +58,7 @@ This property is read-only.
 
 The property value (operation data) is a DWORD that represents a bitmask of the audio output modes that the audio decoder supports.
 
-Remarks
--------
+## Remarks
 
 The property value can contain a bitwise OR of the following constants that are defined in the *Ksmedia.h* header file:
 
@@ -72,8 +71,7 @@ Indicates that the output is in PCM 5.1 channel digital.
 <span id="KSAUDDECOUTMODE_SPDIFF"></span><span id="ksauddecoutmode_spdiff"></span>**KSAUDDECOUTMODE\_SPDIFF**  
 Indicates that the output is SPDIFF format AC3 digital.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

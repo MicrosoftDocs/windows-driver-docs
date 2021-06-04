@@ -56,15 +56,13 @@ The KSPROPERTY\_DVDCOPY\_CHLG\_KEY property transfers the bus challenge keys tha
 
 The property value (operation data) is a KS\_DVDCOPY\_CHLGKEY structure that describes the bus challenge key.
 
-Remarks
--------
+## Remarks
 
 For **Get** requests, the DVD decoder provides its bus challenge key. For **Set** requests, the DVD decoder is provided the bus challenge key from the DVD drive.
 
 For more information about the bus challenge key, see [DVD Copyright Protection](./dvd-copyright-protection.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

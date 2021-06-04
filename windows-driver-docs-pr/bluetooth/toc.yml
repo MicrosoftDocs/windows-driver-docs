@@ -55,7 +55,7 @@
 - name: "Bluetooth Frequently Asked Questions"
   items: 
   - name: "Bluetooth FAQ"
-    href: bluetooth-faq.md
+    href: bluetooth-faq.yml
   - name: "Bluetooth Version and Profile Support in Windows 10"
     href: general-bluetooth-support-in-windows.md
   - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
@@ -69,11 +69,11 @@
   - name: "Bluetooth Certification"
     href: bluetooth-certification.md
   - name: "Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista"
-    href: bluetooth-faq--appendix-a.md
+    href: bluetooth-faq--appendix-a.yml
   - name: "Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista"
-    href: bluetooth-faq--appendix-b.md
+    href: bluetooth-faq--appendix-b.yml
   - name: "Bluetooth Appendix"
-    href: bluetooth-faq--appendix-c.md
+    href: bluetooth-faq--appendix-c.yml
 - name: "Transport Bus Driver for Bluetooth Power Control Handling"
   items: 
   - name: "Transport Bus Driver for Bluetooth Power Control Handling Guidelines"
@@ -85,7 +85,7 @@
   - name: "Serial Bus Driver Layer"
     href: serial-bus-driver-layer.md
   - name: "Transport Bus Driver FAQ"
-    href: transport-bus-driver-faq.md
+    href: transport-bus-driver-faq.yml
 - name: "Bluetooth LE Proximity Profile Device and App"
   items: 
   - name: "Bluetooth LE Proximity Profile Overview"

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-An upper-layer driver calls [**NdisCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscosendnetbufferlists) to send network data packets to an underlying CoNDIS WAN miniport driver in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures. The NDISWAN intermediate driver forwards those NET\_BUFFER\_LIST structures from the upper-layer driver. NDISWAN repackages the structures before sending them. NDISWAN forwards packets in new NET\_BUFFER\_LIST structures.
+An upper-layer driver calls [**NdisCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscosendnetbufferlists) to send network data packets to an underlying CoNDIS WAN miniport driver in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures. The NDISWAN intermediate driver forwards those NET\_BUFFER\_LIST structures from the upper-layer driver. NDISWAN repackages the structures before sending them. NDISWAN forwards packets in new NET\_BUFFER\_LIST structures.
 
 The NDISWAN intermediate driver calls NDIS to forward the new NET\_BUFFER\_LIST structures, NDIS calls the WAN miniport driver's [**MiniportCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_send_net_buffer_lists) function.
 

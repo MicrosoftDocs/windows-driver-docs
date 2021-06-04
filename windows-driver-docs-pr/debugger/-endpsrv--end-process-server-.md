@@ -55,8 +55,7 @@ You can use this command only when you are performing remote debugging through a
 
 For more information about these servers, see [Process Servers (User Mode)](process-servers--user-mode-.md) or [KD Connection Servers (Kernel Mode)](kd-connection-servers--kernel-mode-.md)
 
-Remarks
--------
+## Remarks
 
 The **.endpsrv** command terminates the process server or KD connection server currently connected to your smart client.
 

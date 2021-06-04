@@ -25,13 +25,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver initializes this property at run time by reading the PKEY\_PNPX\_ServiceId device property from the Function Instance object.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

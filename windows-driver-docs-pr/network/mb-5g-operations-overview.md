@@ -23,3 +23,5 @@ This section describes the MBIM extensions first released in Windows 10 version 
 [NDIS Interface for 5G Data Class Support](ndis-interface-for-5g-data-class-support.md)
 
 [MBIMEx 2.0 – 5G NSA support](mbimex-2.0-5g-nsa-support.md)
+
+[MBIMEx 3.0 – 5G SA Phase 1 support](mbimex-3.0-5g-sa-phase-1-support.md)

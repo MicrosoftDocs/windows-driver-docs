@@ -53,8 +53,7 @@ CTRL+B  ENTER
 
  
 
-Remarks
--------
+## Remarks
 
 In CDB, the [**q (Quit)**](q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
 

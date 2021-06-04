@@ -31,8 +31,7 @@ The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](/windows-hardware
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

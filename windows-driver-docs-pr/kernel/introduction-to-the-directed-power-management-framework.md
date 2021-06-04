@@ -105,7 +105,7 @@ Testing DFx after an S4 transition is recommended in order to catch any cases wh
 
 ## See Also
 
-- [Directed power management](https://docs.microsoft.com/windows-hardware/design/device-experiences/directed-power-management)
+- [Directed power management](/windows-hardware/design/device-experiences/directed-power-management)
 - [Prepare hardware for modern standby](/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby)
 - [PwrTest](../devtest/pwrtest.md)
 - [PO_FX_DEVICE_V3 structure](/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)

@@ -124,8 +124,7 @@ The default state of this socket option is that exclusive use of the local trans
 
 For more information about using the SO\_EXCLUSIVEADDRUSE socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](./sharing-transport-addresses.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

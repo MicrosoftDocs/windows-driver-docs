@@ -56,8 +56,7 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_CAPS property informs the Overlay M
 
 The property value (operation data) is a ULONG the specifies whether interleaved capture is supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

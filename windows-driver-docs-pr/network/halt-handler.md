@@ -47,7 +47,7 @@ The following list describes the calls that are required to reverse certain acti
 
 -   If the miniport driver allocated any memory with [**NdisMAllocateSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatesharedmemory), or [**NdisMAllocateSharedMemoryAsyncEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatesharedmemoryasyncex), it should call [**NdisMFreeSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreesharedmemory) to free that memory.
 
--   If the miniport driver allocated and initialized storage for a pool of packet descriptors with [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool), it should call [**NdisFreeNetBufferPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreenetbufferpool) to free that storage.
+-   If the miniport driver allocated and initialized storage for a pool of packet descriptors with [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferlistpool), it should call [**NdisFreeNetBufferPool**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisfreenetbufferpool) to free that storage.
 
 -   If the miniport driver allocated or reserved any hardware resources, these should be returned. For example, if the miniport driver mapped an I/O port range on a NIC, it should release the ports by calling [**NdisMDeregisterIoPortRange**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterioportrange).
 

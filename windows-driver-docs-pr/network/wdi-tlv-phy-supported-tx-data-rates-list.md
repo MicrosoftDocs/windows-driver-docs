@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_PHY\_SUPPORTED\_TX\_DATA\_RATES\_LIST is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

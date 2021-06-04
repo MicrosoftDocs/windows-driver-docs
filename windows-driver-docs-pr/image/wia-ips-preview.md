@@ -25,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets WIA\_IPS\_PREVIEW to place a device into a preview mode.
 
@@ -57,8 +56,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PREVIE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

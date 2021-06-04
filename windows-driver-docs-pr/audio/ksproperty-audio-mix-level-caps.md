@@ -60,8 +60,7 @@ The property value (operation data) is a structure of type KSAUDIO\_MIXCAP\_TABL
 
 A KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

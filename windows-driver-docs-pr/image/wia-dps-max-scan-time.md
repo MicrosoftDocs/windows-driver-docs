@@ -28,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_MAX\_SCAN\_TIME property to estimate how much the time it will take to scan a page. This estimate is helpful when you are determining the conditions of a device that has stopped responding. The WIA minidriver creates and maintains this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -56,13 +56,11 @@ The KSPROPERTY\_TVAUDIO\_CAPS property retrieves the capabilities of the TV audi
 
 The property value (operation data) is a ULONG that specifies the capabilities of the TV audio device, such as stereo versus mono audio support and multiple language capabilities.
 
-Remarks
--------
+## Remarks
 
 The **Capabilities** member of the KSPROPERTY\_TVAUDIO\_CAPS\_S structure specifies the capabilities of the TV audio device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

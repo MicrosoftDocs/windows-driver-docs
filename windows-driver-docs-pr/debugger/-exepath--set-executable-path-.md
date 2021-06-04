@@ -2,7 +2,7 @@
 title: .exepath (Set Executable Path)
 description: The .exepath command sets or displays the executable file search path.
 keywords: [".exepath (Set Executable Path) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 05/05/2021
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ The **.exepath** command sets or displays the executable file search path.
 .exepath[+] [Directory [; ...]] 
 ```
 
-## <span id="ddk_meta_set_executable_path_dbg"></span><span id="DDK_META_SET_EXECUTABLE_PATH_DBG"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> **+**   
@@ -30,7 +30,7 @@ Specifies that the debugger should append the new directories to the previous ex
 <span id="_______Directory______"></span><span id="_______directory______"></span><span id="_______DIRECTORY______"></span> *Directory*   
 Specifies one or more directories to put in the search path. If you do not specify *Directory*, the current path is displayed. You can separate multiple directories with semicolons.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
 <table>
 <colgroup>
@@ -52,6 +52,22 @@ Specifies one or more directories to put in the search path. If you do not speci
 </tr>
 </tbody>
 </table>
+
+
+## Remarks
+
+In most situations, the debugger knows the location of the executable files, so you do not have to set the path for this file.
+
+However, there are situations when this path is required. For example, kernel-mode small memory dump files do not contain all of the executable files that exist in memory at the time of a stop error (that is, a crash). Similarly, user-mode minidump files do not contain the application binaries. If you set the path of the executable files, the debugger can find these binary files. For more information, see [Setting Symbol and Executable Image Paths in WinDbg](setting-symbol-and-source-paths-in-windbg.md).
+
+The executable file search path can also be set using the `_NT_EXECUTABLE_IMAGE_PATH` environment variable. For more information, see [General Environment Variables](general-environment-variables.md).
+
+## See also
+
+[Setting Symbol and Executable Image Paths in WinDbg](setting-symbol-and-source-paths-in-windbg.md)
+
+[General Environment Variables](general-environment-variables.md)
+
 
  
 

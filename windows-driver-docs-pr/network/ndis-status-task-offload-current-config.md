@@ -12,13 +12,12 @@ ms.localizationpriority: medium
 
 Miniport drivers use the **NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG** status indication to notify NDIS and overlying drivers that there has been a change in the task offload configuration of a NIC.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must report the current capabilities with the **NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG** status indication when current capabilities change. This status indication ensures that all of the overlying protocol drivers are updated with the new capabilities information. Miniport drivers are required to issue this status indication in the following cases:
 
 1.  When a miniport driver receives an [OID\_TCP\_OFFLOAD\_PARAMETERS](./oid-tcp-offload-parameters.md) set request, it must use the contents of the [**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure to update the currently-enabled task offload capabilities.
-2.  When a miniport driver receives an [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md) set request, it must use the contents of the [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation) structure to update the currently-enabled task offload capabilities.
+2.  When a miniport driver receives an [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md) set request, it must use the contents of the [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation) structure to update the currently-enabled task offload capabilities.
 
 The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure. When issuing the **NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG** status indication, a miniport driver must use the **NDIS\_OFFLOAD** structure to report the current task offload configuration of the NIC.
 
@@ -28,8 +27,7 @@ The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardw
 
 For more information about the current task offload configuration, see [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](./oid-tcp-offload-current-config.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -53,7 +51,7 @@ Requirements
 
 [**NDIS\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload)
 
-[**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation)
+[**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation)
 
 [**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
 

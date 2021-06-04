@@ -27,8 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT to indic
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

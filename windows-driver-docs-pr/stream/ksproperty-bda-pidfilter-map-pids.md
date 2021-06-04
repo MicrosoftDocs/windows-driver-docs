@@ -54,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_PIDFILTER\_MAP\_PIDS to inform the PID filter node 
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the PID filter node.
 
@@ -63,8 +62,7 @@ The BDA\_PID\_MAP structure describes a map of the data to filter out of the inp
 
 The PID filter node merges the list that is provided with this property with the list of PIDs that the node currently passes downstream. If a PID in the provided list is already in the PID filter node's list, then the output type of the provided list takes precedence. This property is also used to retrieve the type of data that the node outputs. The BDA\_PID\_MAP structure describes a map of this output data.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

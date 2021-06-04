@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NdisQueryMdl** macro retrieves the buffer length, and optionally the base virtual address, from an MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID NdisQueryMdl(
@@ -24,8 +23,7 @@ VOID NdisQueryMdl(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
@@ -43,18 +41,15 @@ A pointer to a caller-supplied variable in which this macro returns the length, 
 *\_Priority*   
 A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) macro.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

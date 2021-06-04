@@ -30,8 +30,7 @@ KSMETHOD with the **Flags** member set to KSMETHOD\_TYPE\_WRITE.
 
 A KSMULTIPLE\_ITEM structure, which is the header for a list of topology information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

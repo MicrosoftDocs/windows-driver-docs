@@ -12,8 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /timeout
-============
+# BCDEdit /timeout
 
 The **BCDEdit /timeout** command sets the time to wait, in seconds, before the boot manager selects a default entry. For information about setting the default entry, run "bcdedit /? default".
 

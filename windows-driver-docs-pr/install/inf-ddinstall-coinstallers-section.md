@@ -107,8 +107,7 @@ This entry is valid in this section but almost never used.
 
 For more information, see [**INF Ini2Reg Directive**](inf-ini2reg-directive.md).
 
-Remarks
--------
+## Remarks
 
 The specified *DDInstall* section must be referenced in a device/models-specific entry under the per-manufacturer *Models* section of the INF file.
 
@@ -167,8 +166,7 @@ Such a supplemental device-class co-installer must not replace any already regis
 
 The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to [**SetupInstallFromInfSection**](/windows/win32/api/setupapi/nf-setupapi-setupinstallfrominfsectiona) made by a *device installation application*.
 
-Examples
---------
+## Examples
 
 This example shows the *DDInstall*.**CoInstallers** section for IrDA serial network adapters. The system-supplied INF for these IrDA (serial) NICs supplies a co-installer to the system IrDA class installer.
 

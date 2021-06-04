@@ -17,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **PlatenColor** element contains a list of [**ColorEntry**](colorentry.md) elements that describe the color processing capabilities of the platen.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:PlatenColor>
@@ -26,8 +25,7 @@ Usage
 </wscn:PlatenColor>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +67,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **PlatenColor** element contains the information needed to determine the type of color processing and acquisition that the flatbed platen supports. The amount of information that is needed to describe each pixel depends on the specific [**ColorEntry**](colorentry.md) keyword. Black and white images require only one bit per pixel (bpp), whereas grayscale and color images require significantly more information. The exact amount of information is determined by the color space and technical capabilities of the scan device.
 

@@ -56,8 +56,7 @@ Displays all integers (except for long integers) in the default radix.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.force\_radix\_output** command affects the output of the [**dt (Display Type)**](dt--display-type-.md) command.
 

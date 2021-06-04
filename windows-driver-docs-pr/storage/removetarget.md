@@ -19,8 +19,7 @@ ms.date: 10/17/2018
 
 The **RemoveTarget** WMI method configures the WMI provider so that it stops passing events associated with the indicated target to the WMI client.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void RemoveTarget(
@@ -31,8 +30,7 @@ void RemoveTarget(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A 64 bit worldwide name (WWN) that uniquely identifies the local port that should be removed from the list of ports whose events are reported to the WMI client. For a discussion of worldwide names, see the T11 committee's *Fibre Channel HBA API* specification.
@@ -46,18 +44,15 @@ The events to stop reporting. If this member is zero, the WMI provider client wi
 *HBAStatus*   
 On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemoveTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removetarget_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_EventControl WMI Class](msfc-eventcontrol-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
