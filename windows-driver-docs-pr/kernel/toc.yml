@@ -736,8 +736,6 @@
     href: handling-an-irp-mn-cancel-stop-device-request--windows-2000-and-later-.md
   - name: "Holding Incoming IRPs When A Device Is Paused"
     href: holding-incoming-irps-when-a-device-is-paused.md
-  - name: "Resetting and recovering a device"
-    href: resetting-and-recovering-a-device.md
   - name: "Removing a Device"
     items: 
     - name: "Understanding When Remove IRPs Are Issued"
