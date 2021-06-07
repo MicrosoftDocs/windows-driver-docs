@@ -1,11 +1,15 @@
 ---
 title: Code Integrity Event Log Messages
 description: Code Integrity Event Log Messages
-ms.date: 04/20/2017
+ms.date: 06/07/2021
 ms.localizationpriority: medium
 ---
 
 # Code Integrity Event Log Messages
+
+> [!NOTE]
+> For a full list of Code Integrity event identifiers, see [Understanding Application Control events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations).
+> 
 
 
 The following are warning events that are logged to the Code Integrity operational log:
@@ -39,10 +43,3 @@ The following are informational events that are logged to the Code Integrity ver
 -   Code Integrity successfully loaded the &lt;*file name*&gt; catalog.
 
  
-
- 
-
-
-
-
-
