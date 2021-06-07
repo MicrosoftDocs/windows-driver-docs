@@ -1,7 +1,7 @@
 ---
 title: Audio Drivers Structures
 description: Audio Drivers Structures
-ms.date: 11/28/2017
+ms.date: 06/07/2021
 ms.localizationpriority: medium
 ---
 
@@ -18,8 +18,6 @@ This section describes the structures that are used by WDM audio miniport driver
 [**APOInitSystemEffects**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects)
 
 [**APOInitSystemEffects2**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2)
-
-[**AudioFXExtensionParams**](/windows/win32/api/audioenginebaseapo/ns-audioenginebaseapo-audiofxextensionparams)
 
 [**DMUS\_KERNEL\_EVENT**](/windows-hardware/drivers/ddi/dmusicks/ns-dmusicks-_dmus_kernel_event)
 
