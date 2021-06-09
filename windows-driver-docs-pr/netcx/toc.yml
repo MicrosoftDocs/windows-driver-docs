@@ -94,6 +94,6 @@
     items:
   - name: "WiFiCx WPA3-SAE authentication"
     href: wificx-wpa3-sae-authentication.md
-  - name: "Dual Sta connectivity"
+  - name: "WiFiCx Dual Sta connectivity"
     items:
 
