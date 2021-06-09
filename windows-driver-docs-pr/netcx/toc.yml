@@ -73,4 +73,27 @@
   - name: "Writing an MBBCx client driver"
     href: writing-an-MBBcx-client-driver.md
 - name: "Wi-Fi WDF class extension (WiFiCx)"
-  href: wifi-wdf-class-extension-wificx.md
+  items:
+  - name: "Introduction to the Wi-Fi WDF class extension (WiFiCx)"
+    href: wifi-wdf-class-extension-wificx.md
+  - name: "Writing a WiFiCx client driver"
+    href: writing-a-wificx-client-driver.md
+  - name: "WiFiCx message structure"
+    href: wificx-message-structure.md
+  - name: "WiFiCx TLVs"
+    items:
+  - name: "WiFiCx task commands"
+    items:
+  - name: "WiFiCx property commands"
+    items:
+  - name: "WiFiCx unsolicited status indications"
+    items:
+  - name: "WiFiCx TLV generator/parser"
+    href: wificx-tlv-generator-parser.md
+  - name: "WiFiCx design guide"
+    items:
+  - name: "WiFiCx WPA3-SAE authentication"
+    href: wificx-wpa3-sae-authentication.md
+  - name: "Dual Sta connectivity"
+    items:
+
