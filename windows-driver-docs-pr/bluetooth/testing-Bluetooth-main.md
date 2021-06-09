@@ -1,11 +1,11 @@
 ---
-title: Bluetooth Driver Testing Resources
+title: Bluetooth driver testing resources
 description: Overview of bluetooth driver testing resources.
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 ---
 
-# Bluetooth Driver Testing Resources
+# Bluetooth driver testing resources
 
 These resources support Bluetooth driver testing:
 
