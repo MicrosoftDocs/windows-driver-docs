@@ -154,3 +154,5 @@ This topic describes the smart card attributes currently supported. The only sup
                 </ul>
             </td>
         </tr>
+    <tbody>
+</table>
