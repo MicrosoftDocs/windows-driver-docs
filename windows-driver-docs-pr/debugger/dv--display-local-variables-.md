@@ -1,7 +1,6 @@
 ---
 title: dv (Display Local Variables)
 description: The dv command displays the names and values of all local variables in the current scope.
-ms.assetid: 1b5260f7-f47c-481a-b93f-015ab9fa4b58
 keywords: ["dv (Display Local Variables) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -93,8 +92,7 @@ Causes the command to only display local variables that match the specified *Pat
 
 For details on displaying and changing local variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 In verbose mode, the addresses of the variables are displayed as well. (This can also be done with the [**x (Examine Symbols)**](x--examine-symbols-.md) command.)
 

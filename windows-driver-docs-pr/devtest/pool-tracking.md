@@ -1,7 +1,6 @@
 ---
 title: Pool Tracking
 description: Pool Tracking monitors the memory allocations made by the driver.
-ms.assetid: 5b8aa775-d908-4a7a-b54f-6c63ac1ebd13
 keywords:
 - Memory Pool Tracking feature WDK Driver Verifier
 - Pool Tracking feature WDK Driver Verifier
@@ -26,19 +25,19 @@ When this option is active, Driver Verifier will issue bug check 0xC4 (with Para
 
 If Driver Verifier issues this bug check with Parameter 1 equal to 0x51, 0x52, 0x53, 0x54, or 0x59, the driver has written to memory outside of its allocations. In this case, you should enable the [Special Pool](special-pool.md) feature to locate the source of the error.
 
-See [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
+See [**Bug Check 0xC4**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
 
-Starting with Windows Vista, enabling the Pool Tracking option also enables the tracking of locked pages. When this option is active, Driver Verifier will issue [**Bug Check 0xCB**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xcb--driver-left-locked-pages-in-process) (DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS) if a driver fails to release locked pages after an I/O operation.
+Starting with Windows Vista, enabling the Pool Tracking option also enables the tracking of locked pages. When this option is active, Driver Verifier will issue [**Bug Check 0xCB**](../debugger/bug-check-0xcb--driver-left-locked-pages-in-process.md) (DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS) if a driver fails to release locked pages after an I/O operation.
 
 In Windows 7 and later versions of the Windows operating system, the Pool Tracking option supports memory that was allocated by using the following kernel APIs:
 
--   [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl)
+-   [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl)
 
--   [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
+-   [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
 
--   [**RtlAnsiStringToUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
+-   [**RtlAnsiStringToUnicodeString**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
 
--   [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)
+-   [**IoSetCompletionRoutineEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)
 
 In Windows 7 and later versions of the Windows operating system, when Pool Tracking is activated, Driver Verifier can detect attempts to allocate kernel pool memory with *quota* in the context of the Idle process. Such attempts usually mean that the driver is allocating memory from a DPC routine. The thread or process context for DPC routines is unreliable, so trying to charge quota to that process is incorrect.
 
@@ -46,15 +45,15 @@ In Windows 7 and later versions of the Windows operating system, when Pool Track
 
 Memory pool allocation statistics can be monitored separately for each driver being verified. These statistics can be displayed by Driver Verifier Manager, the Verifier.exe command line, or in a log file. See [Monitoring Individual Counters](monitoring-individual-counters.md) for details.
 
-The kernel debugger extension **!verifier 0x3** can be used to locate outstanding memory allocations after the driver is unloaded, or to track the current allocations while the driver is running. This extension also shows the pool tag, the size of the pool, and the address of the allocator for each allocation. For information about debugger extensions, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+The kernel debugger extension **!verifier 0x3** can be used to locate outstanding memory allocations after the driver is unloaded, or to track the current allocations while the driver is running. This extension also shows the pool tag, the size of the pool, and the address of the allocator for each allocation. For information about debugger extensions, see [Windows Debugging](../debugger/index.md).
 
 ### <span id="Pool_Quota_Charges_from_DPC_Routine"></span><span id="pool_quota_charges_from_dpc_routine"></span><span id="POOL_QUOTA_CHARGES_FROM_DPC_ROUTINE"></span>Pool Quota Charges from DPC Routine
 
-Kernel drivers can call [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) to allocate kernel pool memory and charge the number of bytes that are allocated to the pool quota of the current process. Drivers typically use quota for memory allocations that are directly related to a request that comes from an application.
+Kernel drivers can call [**ExAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) to allocate kernel pool memory and charge the number of bytes that are allocated to the pool quota of the current process. Drivers typically use quota for memory allocations that are directly related to a request that comes from an application.
 
 Deferred procedure call (DPC) routines can run in the context of any process. Therefore, charging quota from a DPC routine charges a random process. Even worse, when the DPC routine runs in the context of the Idle process, this condition can result in memory corruption or system crashes.
 
-Starting in Windows 7, Driver Verifier detects [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) calls from DPC routines.
+Starting in Windows 7, Driver Verifier detects [**ExAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) calls from DPC routines.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -94,10 +93,4 @@ You can activate the Pool Tracking feature for one or more drivers by using Driv
     The Pool Tracking feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
  
-
- 
-
-
-
-
 

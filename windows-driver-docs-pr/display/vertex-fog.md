@@ -1,7 +1,6 @@
 ---
 title: Vertex Fog
 description: Vertex Fog
-ms.assetid: 55083ccb-b93e-4506-baf2-358f90e2c6a6
 keywords:
 - vertex fog WDK Direct3D
 - iterated fog WDK Direct3D

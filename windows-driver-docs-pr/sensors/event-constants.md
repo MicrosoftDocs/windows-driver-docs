@@ -1,7 +1,6 @@
 ---
 title: Event Constants
 description: The sensor platform defines the following constants for driver events.
-ms.assetid: d9bcfda4-d731-462f-802d-99c85911a6ca
 keywords:
 - Event Constants
 - Sensor Devices
@@ -40,20 +39,21 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 
 |Name|Description|
 |--|--|
-|SENSOR_EVENT_PARAMETER_EVENT_ID|Indicates that the <strong>GUID</strong> value in [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
-|SENSOR_EVENT_PARAMETER_STATE|Indicates that the unsigned integer value in [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call [<strong>ISensorClassExtension::PostStateChange</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
+|SENSOR_EVENT_PARAMETER_EVENT_ID|Indicates that the <strong>GUID</strong> value in [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
+|SENSOR_EVENT_PARAMETER_STATE|Indicates that the unsigned integer value in [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call [<strong>ISensorClassExtension::PostStateChange</strong>](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
 
  
 
-Requirements
-------------
+## Requirements
 
-| | |
-|--|--|
-| Minimum supported client | Windows 7 |
-| Minimum supported server | None supported |
-| Version | Available in Windows 7|
-| Header | Sensors.h |
+**Minimum supported client**: Windows 7
+
+**Minimum supported server**: None supported
+
+**Version**: Available in Windows 7
+
+**Header**: Sensors.h
+
 
 
 
@@ -64,16 +64,7 @@ Requirements
 
 [Filtering data](filtering-data.md)
 
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)
 
-[**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001)
-
- 
-
- 
-
-
-
-
-
+[**SensorState**](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001)
 

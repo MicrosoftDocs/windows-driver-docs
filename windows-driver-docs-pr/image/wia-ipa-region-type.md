@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_REGION\_TYPE
 description: The WIA\_IPA\_REGION\_TYPE property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 134f89c0-aefa-4643-8a19-ce3ae54caf19
 keywords: ["WIA_IPA_REGION_TYPE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

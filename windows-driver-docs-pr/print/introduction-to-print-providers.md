@@ -1,7 +1,6 @@
 ---
 title: Introduction to Print Providers
 description: Introduction to Print Providers
-ms.assetid: a0e5e8c8-7af4-4715-9036-64ae851b307d
 keywords:
 - print providers WDK , about print providers
 - print jobs WDK , print providers
@@ -51,4 +50,4 @@ When viewing the diagram, you should consider the following points:
 
 -   If the printer is located on some other type of server, it can be accessed by either the local print provider or by a network print provider that supports that server type, using data formats and network protocols supported by the server.
 
--   For the local print provider to access a remote printer, it must contain a [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) that can use network protocols recognized by the remote printer or server.
+-   For the local print provider to access a remote printer, it must contain a [port monitor](./port-monitors.md) that can use network protocols recognized by the remote printer or server.

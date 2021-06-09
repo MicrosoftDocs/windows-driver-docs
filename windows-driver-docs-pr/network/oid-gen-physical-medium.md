@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_PHYSICAL_MEDIUM
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM OID specifies the types of physical media that the NIC supports.
-ms.assetid: 84d7231b-8af2-4bdb-8df5-37088767f708
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PHYSICAL_MEDIUM Network Drivers Starting with Windows Vista
@@ -10,17 +9,13 @@ ms.localizationpriority: medium
 
 # OID\_GEN\_PHYSICAL\_MEDIUM
 
-
 As a query, the OID\_GEN\_PHYSICAL\_MEDIUM OID specifies the types of physical media that the NIC supports. This OID is essentially an extension of [OID\_GEN\_MEDIA\_SUPPORTED](oid-gen-media-supported.md).
 
-**Version Information**
+## Version Information
 
 **Note**  This OID is supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](oid-gen-physical-medium-ex.md).
 
- 
-
-Remarks
--------
+### Remarks
 
 NDIS handles this OID for miniport drivers. The miniport driver supplies the physical medium value during initialization.
 
@@ -30,7 +25,7 @@ Miniport drivers report a physical media type to differentiate their physical me
 The physical medium is none of the preceding mediums. For example, a one-way satellite feed is an unspecified physical medium.
 
 **NdisPhysicalMediumWirelessLan**
-Packets are transferred over a wireless LAN network through a miniport driver that conforms to the 802.11 interface. For more information about this interface, see. [802.11 Wireless LAN Miniport Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff543933(v=vs.85))
+Packets are transferred over a wireless LAN network through a miniport driver that conforms to the 802.11 interface. For more information about this interface, see. [802.11 Wireless LAN Miniport Drivers](/previous-versions/windows/hardware/network/ff543933(v=vs.85))
 
 **NdisPhysicalMediumCableModem**
 Packets are transferred over a DOCSIS-based cable network.
@@ -54,11 +49,9 @@ Packets are transferred over an IEEE 1394 bus.
 Packets are transferred over a Wireless WAN link. Includes, for example, CDPD, CDMA, and GPRS.
 
 <a href="" id="ndisphysicalmediumnative802-11"></a>**NdisPhysicalMediumNative802\_11**
-Packets are transferred over a wireless LAN network through a miniport driver that conforms to the Native 802.11 interface. For more information about this interface, see [Native 802.11 Wireless LAN Miniport Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff560648(v=vs.85)).
+Packets are transferred over a wireless LAN network through a miniport driver that conforms to the Native 802.11 interface. For more information about this interface, see [Native 802.11 Wireless LAN Miniport Drivers](/previous-versions/windows/hardware/wireless/ff560648(v=vs.85)).
 
-**Note**  The Native 802.11 interface is supported in NDIS 6.0 and later and later and later versions.
-
- 
+**Note**  The Native 802.11 interface is supported in NDIS 6.0 and later versions.
 
 **NdisPhysicalMediumBluetooth**
 Packets are transferred over a Bluetooth network. Bluetooth is a short-range wireless technology that uses the 2.4 GHz spectrum.
@@ -73,7 +66,7 @@ The Ultra Wideband (UWB) physical medium. Packets are transferred over a UWB net
 The Ethernet (802.3) physical medium. Packets are transferred over a wired LAN through a miniport driver that conforms to the 802.3 interface specification. This medium type does not include devices that emulate 802.3.
 
 <a href="" id="ndisphysicalmedium802-5"></a>**NdisPhysicalMedium802\_5**
-The Token Ring physical medium. (802.5 is not supported in NDIS 6.0 and later and later drivers.) Packets are transferred over a Token Ring network through a miniport driver that conforms to the 802.5 interface specification.
+The Token Ring physical medium. (802.5 is not supported in NDIS 6.0 and later drivers.) Packets are transferred over a Token Ring network through a miniport driver that conforms to the 802.5 interface specification.
 
 **NdisPhysicalMediumIrda**
 The infrared (IrDA) physical medium. Packets are transferred over a nonvisible, infrared light spectrum IrDA network.
@@ -91,10 +84,9 @@ NDIS supports the OID\_GEN\_PHYSICAL\_MEDIUM OID for miniport adapters that supp
 
 Newer networks transfer packets that might appear like standard media but that might have new features or slight differences from the standard. This OID was developed so upper-layer drivers and applications could determine the actual networks to which a NIC connects. After retrieving information about underlying networks, upper-layer drivers and applications could use this information to modify how such drivers and applications behave.
 
-To clearly distinguish an 802.3 NIC from an emulated 802.3 NIC for which there is no physical medium type defined, NDIS 6.0 and later and later and later versions require 802.3 miniport drivers to report **NdisPhysicalMedium802\_3**.
+To clearly distinguish an 802.3 NIC from an emulated 802.3 NIC for which there is no physical medium type defined, NDIS 6.0 and later versions require 802.3 miniport drivers to report **NdisPhysicalMedium802\_3**.
 
-Requirements
-------------
+### Requirements
 
 <table>
 <colgroup>
@@ -115,15 +107,6 @@ Requirements
 
 ## See also
 
-
 [OID\_GEN\_MEDIA\_SUPPORTED](oid-gen-media-supported.md)
 
 [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](oid-gen-physical-medium-ex.md)
-
- 
-
- 
-
-
-
-

@@ -1,14 +1,13 @@
 ---
 title: ServiceName
 description: ServiceName
-ms.assetid: 50a3c985-c798-4287-87c6-ffa9a3c2058a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceName
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceName element is not currently used.
 

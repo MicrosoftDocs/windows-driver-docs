@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x160 WIN32K_ATOMIC_CHECK_FAILURE
 description: The WIN32K_ATOMIC_CHECK_FAILURE bug check has a value of 0x00000160. This indicates that a Win32k function has violated an ATOMICCHECK.
-ms.assetid: 81EEC1ED-367A-477D-B008-2295C7D7D1B4
 keywords: ["Bug Check 0x160 WIN32K_ATOMIC_CHECK_FAILURE", "WIN32K_ATOMIC_CHECK_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

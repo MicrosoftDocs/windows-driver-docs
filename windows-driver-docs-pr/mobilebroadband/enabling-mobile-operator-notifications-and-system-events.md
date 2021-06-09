@@ -1,7 +1,6 @@
 ---
 title: Introduction to enabling mobile operator notifications and system events
 description: Introduction to enabling mobile operator notifications and system events
-ms.assetid: 988bafcc-ad8e-446d-9336-85c19cf05577
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

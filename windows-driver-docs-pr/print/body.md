@@ -1,7 +1,6 @@
 ---
 title: body element
 description: The required body element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
-ms.assetid: 3343c272-5090-4b60-ab04-08038d2583ff
 keywords: ["body element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # body element
 
-
 The required **body** element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
 
-The **body** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **body** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <body
@@ -31,8 +34,7 @@ Usage
 </body>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -69,7 +71,6 @@ Attributes
 
 ## Child elements
 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -91,7 +92,6 @@ Attributes
 </table>
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -118,8 +118,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The body text loaded from the resource DLL can contain percentage (%) tags that will be replaced with text strings specified by the [**parameter**](parameter.md) child element.
 
@@ -129,27 +128,26 @@ The text contained in the **body** element should let the user know what action 
 
 Use the following recommendations to keep the message text useful and concise:
 
--   Use complete sentences with ending punctuation.
--   Compose body text that can be less than 255 characters when localized into other languages. For example, a message in English should typically not use more than 200 characters in order to accommodate localization into other languages.
--   Include essential information that allows the user to complete a requested action, such as specific object names, user names, file names, or URLs. Users should not have to open another window to find such information.
--   Place double quotation marks around object names (for example, "Paper Bin 1"). However, do not use quotation marks when the object name uses capitalized words, such as a user name, it is offset with a colon (for example, Printer name: My printer), or it can be easily determined from the context.
--   If you have to truncate object names to a fixed maximum size to accommodate localization, use an ellipsis (...) to indicate truncation.
--   If a notification message provides a button for user action, make sure there are two line breaks between message information and the button. Label the button with simple action-oriented phrases, such as, "Click to Restart Printing," or "Click to see more information."
--   Only use notification messages for non-critical information that the user can freely ignore. The body text should not say that the user must perform an action.
--   If the user should perform an action, clearly describe the importance and consequences of performing the action.
--   Describe problems in plain language with specific information about how the user can fix the problem.
--   Describe the event in a way that is relevant to the user. A notification message is relevant if there is a reasonable chance that a user will perform a task or change behavior as a result of the notification.
--   Describe an event in terms of user goals, rather than in terms of technological issues.
+- Use complete sentences with ending punctuation.
+- Compose body text that can be less than 255 characters when localized into other languages. For example, a message in English should typically not use more than 200 characters in order to accommodate localization into other languages.
+- Include essential information that allows the user to complete a requested action, such as specific object names, user names, file names, or URLs. Users should not have to open another window to find such information.
+- Place double quotation marks around object names (for example, "Paper Bin 1"). However, do not use quotation marks when the object name uses capitalized words, such as a user name, it is offset with a colon (for example, Printer name: My printer), or it can be easily determined from the context.
+- If you have to truncate object names to a fixed maximum size to accommodate localization, use an ellipsis (...) to indicate truncation.
+- If a notification message provides a button for user action, make sure there are two line breaks between message information and the button. Label the button with simple action-oriented phrases, such as, "Click to Restart Printing," or "Click to see more information."
+- Only use notification messages for non-critical information that the user can freely ignore. The body text should not say that the user must perform an action.
+- If the user should perform an action, clearly describe the importance and consequences of performing the action.
+- Describe problems in plain language with specific information about how the user can fix the problem.
+- Describe the event in a way that is relevant to the user. A notification message is relevant if there is a reasonable chance that a user will perform a task or change behavior as a result of the notification.
+- Describe an event in terms of user goals, rather than in terms of technological issues.
 
-Examples
---------
+## Examples
 
 The following code example shows how to use the **body** element.
 
 ```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">

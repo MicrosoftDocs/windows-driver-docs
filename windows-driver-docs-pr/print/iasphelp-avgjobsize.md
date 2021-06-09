@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 3373376f-c904-47dd-8502-c2c26caed3be
 keywords: ["get_AvgJobSize method Print Devices", "get_AvgJobSize method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AvgJobSize method"]
 topic_type:
 - apiref
@@ -24,8 +23,7 @@ ms.localizationpriority: medium
 
 The **AvgJobSize** property enables an ASP Web page to determine the average job size in a sequence of print jobs.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_AvgJobSize(
@@ -33,14 +31,12 @@ HRESULT get_AvgJobSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives the average job size. For more information about this parameter, see the following Remarks section.
 
-Return value
-------------
+## Return value
 
 This method returns S\_OK on success.
 
@@ -59,8 +55,7 @@ objPrinter.CalcJobETA
 JobSizeAvg = objPrinter.AvgJobSize
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

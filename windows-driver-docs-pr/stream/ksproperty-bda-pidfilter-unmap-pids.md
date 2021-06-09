@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIDFILTER\_UNMAP\_PIDS
 description: Clients use KSPROPERTY\_BDA\_PIDFILTER\_UNMAP\_PIDS to inform the PID filter node about packets identified with specific PIDs to filter from the input stream (that is, stop passing from input to output).
-ms.assetid: 111d8857-84f4-4a7f-8771-ea6537c4c592
 keywords: ["KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,8 +54,7 @@ Clients use KSPROPERTY\_BDA\_PIDFILTER\_UNMAP\_PIDS to inform the PID filter nod
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the PID filter node.
 
@@ -64,8 +62,7 @@ The BDA\_PID\_UNMAP structure describes a map of packets identified with specifi
 
 Any PID in this list that is not passed by the node is ignored.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,16 +80,9 @@ Requirements
 ## See also
 
 
-[**BDA\_PID\_UNMAP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_pid_unmap)
+[**BDA\_PID\_UNMAP**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_pid_unmap)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
-
-
-
-
 

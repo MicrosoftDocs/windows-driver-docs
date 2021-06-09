@@ -1,7 +1,6 @@
 ---
 title: DEVPRIVATE_DES
 description: DEVPRIVATE_DES
-ms.assetid: a1964e7a-8aa8-417f-9cb2-4264bf6bfd45
 keywords: ["DEVPRIVATE_DES Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,13 +19,7 @@ ms.date: 10/17/2018
 
  
 
-The DEVPRIVATE_DES structure is used for specifying either a resource list or a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource lists and resource requirements list, see [Hardware Resources](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources).
+The DEVPRIVATE_DES structure is used for specifying either a resource list or a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource lists and resource requirements list, see [Hardware Resources](../kernel/hardware-resources.md).
 
  
-
- 
-
-
-
-
 

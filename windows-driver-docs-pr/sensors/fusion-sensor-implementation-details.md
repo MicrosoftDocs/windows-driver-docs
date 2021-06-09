@@ -1,7 +1,6 @@
 ---
 title: Fusion sensor implementation details
 description: This section provides implementation details about the Windows fusion sensor driver stack.
-ms.assetid: B53D76AC-127C-4B5A-B908-A647D2B3F164
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
@@ -46,20 +45,13 @@ The coordinate system shown in the following diagram is the convention used by t
 
 The following structures and enumerations are used by the fusion data part of the logical sensor driver:
 
--   [**VEC3D**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
+-   [**VEC3D**](./index.md)
 
--   [**COORDINATE\_AXIS**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
+-   [**COORDINATE\_AXIS**](./index.md)
 
--   [**QUATERNION**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
+-   [**QUATERNION**](./index.md)
 
--   [**MATRIX3X3**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
+-   [**MATRIX3X3**](./index.md)
 
--   [Fusion sensor enumerations](https://go.microsoft.com/fwlink/p/?linkid=839352) and [Fusion sensor structures](https://go.microsoft.com/fwlink/p/?linkid=839355) provide information about the entire sensor fusion data structure, which include the attitude (in multiple formats) and the linear acceleration, and the compass data.
+-   [Fusion sensor enumerations](./index.md) and [Fusion sensor structures](./index.md) provide information about the entire sensor fusion data structure, which include the attitude (in multiple formats) and the linear acceleration, and the compass data.
 -->
- 
-
- 
-
-
-
-

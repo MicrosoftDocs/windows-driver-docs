@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR
 description: The KERNEL_DATA_INPAGE_ERROR bug check has a value of 0x0000007A. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
-ms.assetid: 466d4864-8840-47b2-9a9a-302a125bf095
 keywords: ["Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,8 +130,7 @@ Otherwise, the parameters have the following definitions.
 
  
 
-Cause
------
+## Cause
 
 Frequently, you can determine the cause of the KERNEL\_DATA\_INPAGE\_ERROR bug check from the error status (Parameter 2). Some common status codes include the following:
 
@@ -154,8 +152,7 @@ Another common cause of this error message is defective hardware or failing RAM.
 
 A virus infection can also cause this bug check.
 
-Resolution
-----------
+## Resolution
 
 **Resolving a bad block problem:** An I/O status code of 0xC000009C or 0xC000016A typically indicates that the data could not be read from the disk because of a bad block (sector). If you can restart the computer after the error, Autochk runs automatically and attempts to map the bad sector to prevent it from being used anymore.
 

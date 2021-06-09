@@ -1,7 +1,6 @@
 ---
 title: Activating a Repeater
 description: To activate the repeater connection, you will usually first start the server, then start the repeater, then start the client.It is also possible to start the repeater first and then the server.
-ms.assetid: a2409b3d-48eb-46eb-8a53-7c4d505bb6ea
 keywords: ["Activating a Repeater Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: DIF_ASSIGNRESOURCES
 description: DIF_ASSIGNRESOURCES
-ms.assetid: 403e968b-9cdc-4a0d-9c55-39f16bb6cc76
 keywords: ["DIF_ASSIGNRESOURCES Device and Driver Installation"]
 topic_type:
 - apiref

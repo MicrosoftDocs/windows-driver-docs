@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED
 description: KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED, is a new KS property that has been added into the KSPROPSETID\_Audio property set in Windows 8.1.
-ms.assetid: 0DAC584A-EC17-4280-B90D-2D9DDB620479
 keywords: ["KSPROPERTY_AUDIO_VOLUMELIMIT_ENGAGED Audio Devices"]
 topic_type:
 - apiref
@@ -66,8 +65,7 @@ Whenever the value of the property changes, regardless of whether it is automati
 
 The KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED property request returns STATUS\_SUCCESS when the request is successful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

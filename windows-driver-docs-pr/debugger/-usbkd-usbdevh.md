@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbdevh
 description: The usbkd.usbdevh command displays information about a USB device handle.
-ms.assetid: 463DAA72-F3EB-4C76-BB63-DA2EFA1EE9B1
 keywords: ["usbkd.usbdevh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of a **usbport!\_USBD\_DEVICE\_HANDLE** structure. To get the device han
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_USBD\_DEVICE\_HANDLE** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -47,7 +45,7 @@ Here is one way to find the address of a **usbport!\_USBD\_DEVICE\_HANDLE** stru
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext) to get the device handle list.
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](-usbkd-usbhcdext.md) to get the device handle list.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
@@ -122,14 +120,7 @@ Config Information: dt USBPORT!_USBD_CONFIG_HANDLE ffffe000023cd0b0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

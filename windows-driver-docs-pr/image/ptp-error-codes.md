@@ -1,7 +1,6 @@
 ---
 title: PTP Error Codes
 description: PTP Error Codes
-ms.assetid: 4d7ad081-fc0b-4a9e-8f17-a0c98fa4fa50
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: .kdtargetmac (Display Target MAC Address)
 description: Display Target MAC Address.
-ms.assetid: 95042682-BD92-44B0-AAA8-AB8661393230
 keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
 ms.date: 05/21/2018
 topic_type:
@@ -74,8 +73,7 @@ The operation completed successfully.
 
 For more information, see [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md).
 
-Remarks
--------
+## Remarks
 
 Knowing the MAC address of the target system can be useful for network tracing and other utilities.
 

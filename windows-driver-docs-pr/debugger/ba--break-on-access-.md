@@ -1,7 +1,6 @@
 ---
 title: ba (Break on Access)
 description: The ba command sets a processor breakpoint (often called, less accurately, a data breakpoint). This breakpoint is triggered when the specified memory is accessed.
-ms.assetid: 0d39d883-363e-421b-a1b8-08bf2d216724
 keywords: ["ba (Break on Access) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -140,8 +139,7 @@ This parameter is optional.
 
 For more information on processor breakpoints, see [Processor Breakpoints (ba Breakpoints)](processor-breakpoints---ba-breakpoints-.md). For more information about and examples of using breakpoints, other breakpoint commands and methods of controlling breakpoints, and information about how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 The debugger uses the *ID* number to refer to the breakpoint in later [**bc (Breakpoint Clear)**](bc--breakpoint-clear-.md), [**bd (Breakpoint Disable)**](bd--breakpoint-disable-.md), and [**be (Breakpoint Enable)**](be--breakpoint-enable-.md) commands.
 

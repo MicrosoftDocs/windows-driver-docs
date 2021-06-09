@@ -1,7 +1,6 @@
 ---
 title: Determining Why an Application Request Does Not Complete
 description: This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine why an application request does not complete.
-ms.assetid: 33a09277-1e00-4f91-b2ab-b2541091628f
 keywords:
 - UMDF WDK , application request not completing
 - debugging scenarios WDK UMDF , application request not completing
@@ -19,31 +18,25 @@ For UMDF version 1, you'll use extension commands implemented in wudfext.dll. St
 
 You can perform the following steps to determine why an application request does not complete:
 
-1.  Use [**!wudfext.umirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirps) (UMDF 1) or [**!wdfkd.wdfumirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirps) (UMDF 2) to display all the outstanding user-mode I/O request packets (IRPs) in the host process. The information for each user-mode IRP includes the original kernel-mode IRP for which the user-mode IRP was created.
+1.  Use [**!wudfext.umirps**](../debugger/-wudfext-umirps.md) (UMDF 1) or [**!wdfkd.wdfumirps**](../debugger/-wdfkd-wdfumirps.md) (UMDF 2) to display all the outstanding user-mode I/O request packets (IRPs) in the host process. The information for each user-mode IRP includes the original kernel-mode IRP for which the user-mode IRP was created.
 
     Determine the user-mode IRP that corresponds to the kernel-mode IRP that the application originated.
 
-2.  Use [**!wudfext.umirp**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirp) (UMDF 1) or [**!wdfkd.wdfumirp**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirp) (UMDF 2) to obtain information about a particular user-mode IRP.
+2.  Use [**!wudfext.umirp**](../debugger/-wudfext-umirp.md) (UMDF 1) or [**!wdfkd.wdfumirp**](../debugger/-wdfkd-wdfumirp.md) (UMDF 2) to obtain information about a particular user-mode IRP.
 
     The information for the user-mode IRP includes the stack locations. If you know the stack locations, you can determine where the IRP is being processed. Stack location 0 represents the stack below UMDF (that is, the kernel-mode stack or some other sub-system, such as Microsoft Win32 or Winsock).
 
 3.  If the IRP is at your driver's layer (that is, the layer in which your driver processes the IRP), perform the following steps:
-    1.  View the I/O queues that are set up at your driver's layer. You can use [**!wudfext.wudfdevicequeues**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfdevicequeues) (UMDF 1) or [**!wdfkd.wdfdevicequeues**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevicequeues) (UMDF 2) to view all the I/O queues that are set up at your driver's layer. You can also use [**!wudfext.wudfqueue**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfqueue) (UMDF 1) or [**!wdfkd.wdfqueue**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfqueue) (UMDF 2) to obtain information about a particular queue.
+    1.  View the I/O queues that are set up at your driver's layer. You can use [**!wudfext.wudfdevicequeues**](../debugger/-wudfext-wudfdevicequeues.md) (UMDF 1) or [**!wdfkd.wdfdevicequeues**](../debugger/-wdfkd-wdfdevicequeues.md) (UMDF 2) to view all the I/O queues that are set up at your driver's layer. You can also use [**!wudfext.wudfqueue**](../debugger/-wudfext-wudfqueue.md) (UMDF 1) or [**!wdfkd.wdfqueue**](../debugger/-wdfkd-wdfqueue.md) (UMDF 2) to obtain information about a particular queue.
 
-    2.  If there are multiple requests outstanding, you can use [**!wudfext.wudfrequest**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfrequest) (UMDF 1) or [**!wdfkd.wdfrequest**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfrequest) (UMDF 2) to obtain information about a request, which includes the underlying user-mode IRP. From the user-mode IRP information, you can determine the request that you are interested in.
-    3.  Verify whether the request is owned by a queue or by the driver. This information is displayed as part of the output from [**!wudfext.wudfqueue**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfqueue) or [**!wdfkd.wdfqueue**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfqueue). Perform one of the following verifications depending on whether the queue or the driver owns the request:
+    2.  If there are multiple requests outstanding, you can use [**!wudfext.wudfrequest**](../debugger/-wudfext-wudfrequest.md) (UMDF 1) or [**!wdfkd.wdfrequest**](../debugger/-wdfkd-wdfrequest.md) (UMDF 2) to obtain information about a request, which includes the underlying user-mode IRP. From the user-mode IRP information, you can determine the request that you are interested in.
+    3.  Verify whether the request is owned by a queue or by the driver. This information is displayed as part of the output from [**!wudfext.wudfqueue**](../debugger/-wudfext-wudfqueue.md) or [**!wdfkd.wdfqueue**](../debugger/-wdfkd-wdfqueue.md). Perform one of the following verifications depending on whether the queue or the driver owns the request:
         -   If the request is owned by the queue, check the state of the queue to determine why the queue did not deliver the request to the driver.
         -   If the request is owned by the driver, check the threads in the host process to determine if a thread became stuck or deadlocked while processing the request.
 
-4.  If the IRP is at another UMDF driver layer, you can repeat the preceding steps for that layer. Remember that you can use [**!wudfext.umdevstack**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umdevstack) (UMDF 1) or [**!wdfkd.wdfumdevstack**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumdevstack) (UMDF 2) to view information about all stack layers.
+4.  If the IRP is at another UMDF driver layer, you can repeat the preceding steps for that layer. Remember that you can use [**!wudfext.umdevstack**](../debugger/-wudfext-umdevstack.md) (UMDF 1) or [**!wdfkd.wdfumdevstack**](../debugger/-wdfkd-wdfumdevstack.md) (UMDF 2) to view information about all stack layers.
 
 5.  If the IRP is beyond the UMDF stack (for example, if stack location 0 is where the IRP is currently being processed), determine why the corresponding kernel-mode IRP did not complete.
 
  
-
- 
-
-
-
-
 

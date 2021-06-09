@@ -1,7 +1,6 @@
 ---
 title: Customize device I/O using a WDTF simple I/O action plug-in
 description: To get the most benefit from the Device Fundamental tests and tests you might have written using the Visual Studio test templates, your device should be supported by a Simple I/O plug-in.
-ms.assetid: 96BC880B-79DC-4CB1-BD79-87B0A4717634
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,11 +13,10 @@ To get the most benefit from the Device Fundamental tests and tests you might ha
 ### Prerequisites
 
 -   Device under test is installed on the test computer.
--   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see [How to test a driver package](https://docs.microsoft.com/windows-hardware/drivers).
--   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+-   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see [How to test a driver package](/windows-hardware/drivers).
+-   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="create-a-project-for-a-wdtf-simple-i-o-action-plug-in-"></a>Step 1: Create a project for a WDTF Simple I/O Action plug-in
 
@@ -32,7 +30,7 @@ Instructions
 
 ### <a href="" id="implement-the-settarget-method-for-your-device"></a>Step 2: Implement the SetTarget method for your device
 
-- Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**IAction::SetTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iaction-settarget) SetTarget method. This method has a section marked with comments and TODO: that indicates where you should implement code that checks for compatibility with your device.
+- Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**IAction::SetTarget**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iaction-settarget) SetTarget method. This method has a section marked with comments and TODO: that indicates where you should implement code that checks for compatibility with your device.
 
   The **SetTarget** method is called once by WDTF for each instance. It has two main purposes:
 
@@ -55,13 +53,13 @@ Instructions
 
 Next, you need to open the ITarget for testing by implementing the provided Open() method.
 
-This [**Open**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method should attempt to open the target device. If the method is unable to do this, the method should return an HRESULT indicating the failure. This method should fail if the SimpleIO interface is already open (initialized). How you implement this method depends upon your ITarget type and what makes the most sense in your situation. Perhaps this means you should open a handle to it with CreateFile(). Perhaps it means that you initialize a context structure so that you can keep track of an ongoing test case. In the event of an error, the method should ideally use COMReportError () and should provide a description of the error and any information or steps that could help prevent future occurrences.
+This [**Open**](/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method should attempt to open the target device. If the method is unable to do this, the method should return an HRESULT indicating the failure. This method should fail if the SimpleIO interface is already open (initialized). How you implement this method depends upon your ITarget type and what makes the most sense in your situation. Perhaps this means you should open a handle to it with CreateFile(). Perhaps it means that you initialize a context structure so that you can keep track of an ongoing test case. In the event of an error, the method should ideally use COMReportError () and should provide a description of the error and any information or steps that could help prevent future occurrences.
 
 **Note**  This method should fail if ISimpleIO\_Action is already opened.
 
  
 
--   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method. This method has a section marked with comments and TODO:
+-   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method. This method has a section marked with comments and TODO:
 
     ```cpp
     //
@@ -84,7 +82,7 @@ This method should close your previously opened test context. You should clear y
 
  
 
--   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-close) method. This method has a section marked with comments and TODO:
+-   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-close) method. This method has a section marked with comments and TODO:
 
     ```cpp
     //
@@ -132,20 +130,17 @@ This method should perform a small number of input and output operations on the 
 
 ### <a href="" id="build-and-install-the-simple-i-o-action-plugin-"></a>Step 6: Build and install the Simple I/O Action Plugin
 
-If you have not already done so, you will need to configure a computer for testing. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1) or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+If you have not already done so, you will need to configure a computer for testing. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md) or [Provision a computer for driver deployment and testing (WDK 8)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 
 1. Build the solution.
 
    When you build the Simple I/O Action plug-in, two tests are created. These tests install and uninstall the plugin on the test computer. By default, the Simple I/O Action plugin files appear in **Test Group Explorer**, in the test category **My Test Category**.
 
-2. To install the Simple I/O Action Plug-in, run the test named **Register WDTF**<em>&lt;Project&gt;</em>**SimpleIOAction.DLL** on the test computer. For information about selecting and running tests see, [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers).
+2. To install the Simple I/O Action Plug-in, run the test named **Register WDTF**<em>&lt;Project&gt;</em>**SimpleIOAction.DLL** on the test computer. For information about selecting and running tests see, [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers).
 3. To verify that your Simple I/O Action Plug-in is installed, run the **Display devices that have WDTF Simple I/O Plug-ins** test on the test computer. Your plugin and device should appear in the results. For more information, see [How to How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device](test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md).
 4. To uninstall the Simple I/O Action Plug-in, run the test named **Un-register WDTF**<em>&lt;Project&gt;</em>**SimpleIOAction.DLL** on the test computer. You can verify that you have uninstalled the plugin by running the **Display devices that have WDTF Simple I/O plug-ins** test.
 
 ## Related topics
-[Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/index)  
+[Test Authoring and Execution Framework (TAEF)](../taef/index.md)  
 [How to How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device](test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md)  
-[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)  
-
-
-
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)

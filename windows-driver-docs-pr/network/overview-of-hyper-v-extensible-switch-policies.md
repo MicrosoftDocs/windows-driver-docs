@@ -1,7 +1,6 @@
 ---
 title: Overview of Hyper-V Extensible Switch Policies
 description: Overview of Hyper-V Extensible Switch Policies
-ms.assetid: 1D0AC55B-60F7-400E-A376-F3E2F7373A92
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -118,15 +117,9 @@ This example highlights the following points that occur when a MOF class is seri
 
     When a custom policy property is issued to an underlying extension, the **PropertyVersion** member of the structures that define policy properties contains the serialized version value.
 
-    For example, when the extensible switch interface issues an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add), the OID is associated with an [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters) structure. The **PropertyVersion** member of that structure contains the serialized version value.
+    For example, when the extensible switch interface issues an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](./oid-switch-port-property-add.md), the OID is associated with an [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters) structure. The **PropertyVersion** member of that structure contains the serialized version value.
 
 -   All variable-length strings are serialized into offsets within the buffer that contains the serialized C structure. Each variable-length string is formatted as a **VARIABLE\_LENGTH\_STRING** structure within this buffer offset.
 
  
-
- 
-
-
-
-
 

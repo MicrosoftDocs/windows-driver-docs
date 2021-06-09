@@ -1,7 +1,6 @@
 ---
 title: Writing to the System Event Log
 description: Writing to the System Event Log
-ms.assetid: 19be8bb4-8736-4d1a-92e5-b63a5f04e254
 keywords: ["NTSTATUS values WDK kernel", "dump data WDK kernel", "predefined error codes WDK kernel", "system event logs WDK kernel", "property sheets WDK errors", "Event Viewer WDK kernel", "sample log entry property sheets WDK kernel", "log entries WDK kernel", "entries WDK error logs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -25,7 +24,7 @@ You can bring up the property sheet for a log entry by double-clicking the entry
 
 ![screen shot of an event property sheet](images/event-properties.png)
 
-Drivers use the [**IoAllocateErrorLogEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateerrorlogentry) routine to allocate an error log entry. Log entries consist of a variable-length [**IO\_ERROR\_LOG\_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_error_log_packet) header, followed by insertion strings.
+Drivers use the [**IoAllocateErrorLogEntry**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateerrorlogentry) routine to allocate an error log entry. Log entries consist of a variable-length [**IO\_ERROR\_LOG\_PACKET**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_error_log_packet) header, followed by insertion strings.
 
 The following diagram shows the layout of an error log entry in memory.
 
@@ -33,16 +32,11 @@ The following diagram shows the layout of an error log entry in memory.
 
 The **ErrorCode** member of **IO\_ERROR\_LOG\_PACKET** specifies the NTSTATUS value of the error. The **DumpData** member specifies any dump data for the log entry. **DumpData** is a variable-sized array, whose size is specified by the **DumpDataSize** member. Drivers specify the beginning of the first insertion string with the **StringOffset** member, and the number of strings in the **NumberOfStrings** member. Each insertion string itself is a null-terminated Unicode string.
 
-Once the driver fills out the allocated error log entry, it writes the entry to the error log by using [**IoWriteErrorLogEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry). **IoWriteErrorLogEntry** automatically frees the memory allocated for the log entry. Drivers can use [**IoFreeErrorLogEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeerrorlogentry) to free any unused log entries.
+Once the driver fills out the allocated error log entry, it writes the entry to the error log by using [**IoWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry). **IoWriteErrorLogEntry** automatically frees the memory allocated for the log entry. Drivers can use [**IoFreeErrorLogEntry**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeerrorlogentry) to free any unused log entries.
 
 Predefined error codes (of the form IO\_ERR\_*XXX*) are defined in the ntiologc.h header file that is included with the Windows Driver Kit (WDK). The error message associated with each error code can be found in the comments for ntiologc.h, next to the error code's declaration. To use a predefined error code, the driver must register the system file, iologmsg.dll, as the source of the associated error messages. For further information, see [Registering as a Source of Error Messages](registering-as-a-source-of-error-messages.md).
 
 Drivers can also define their own custom error types, and associated error messages. For further information, see [Defining Custom Error Types](defining-custom-error-types.md).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Mapping Stream Formats to Speaker Configurations
 description: Mapping Stream Formats to Speaker Configurations
-ms.assetid: 6af4a3e3-e24b-449f-84ad-9e8bbc22fdde
 keywords:
 - data formats WDK audio
 - formats WDK audio , data

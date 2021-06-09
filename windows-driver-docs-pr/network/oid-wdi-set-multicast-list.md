@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_MULTICAST_LIST
 description: OID_WDI_SET_MULTICAST_LIST specifies the multicast address list for a given port. This command can be set at any time.
-ms.assetid: dee41a49-2be2-4364-877c-b2b3bf29e78d
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_MULTICAST_LIST Network Drivers Starting with Windows Vista
@@ -20,7 +19,7 @@ OID\_WDI\_SET\_MULTICAST\_LIST specifies the multicast address list for a given 
 
  
 
-The IHV component should only fail the command if the list size exceeds the limit specified in [**WDI\_TLV\_INTERFACE\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-interface-attributes).
+The IHV component should only fail the command if the list size exceeds the limit specified in [**WDI\_TLV\_INTERFACE\_ATTRIBUTES**](./wdi-tlv-interface-attributes.md).
 
 After the host enables multicast packet filtering on the port using [OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER](oid-wdi-set-receive-packet-filter.md), the device must indicate received multicast frames with a destination address matching an address in the port’s multicast list to the host. The device must clear the multicast list as part of processing of [OID\_WDI\_TASK\_DOT11\_RESET](oid-wdi-task-dot11-reset.md). When the command is sent with no multicast list specified, the driver must clear its multicast list. In this case, no packets should be indicated up unless OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER has the WDI\_PACKET\_FILTER\_ALL\_MULTICAST bit set.
 
@@ -29,7 +28,7 @@ After the host enables multicast packet filtering on the port using [OID\_WDI\_S
 
 | TLV                                                              | Multiple TLV instances allowed | Optional | Description                                                  |
 |------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------|
-| [**WDI\_TLV\_MULTICAST\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-multicast-list) |                                | X        | List of multicast MAC addresses. The list must not be empty. |
+| [**WDI\_TLV\_MULTICAST\_LIST**](./wdi-tlv-multicast-list.md) |                                | X        | List of multicast MAC addresses. The list must not be empty. |
 
  
 
@@ -38,8 +37,7 @@ After the host enables multicast packet filtering on the port using [OID\_WDI\_S
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -63,9 +61,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: .fpo (Control FPO Overrides)
 description: The .fpo command controls the frame pointer omission (FPO) overrides.
-ms.assetid: a1a20f5d-71c9-487b-bcba-a87b60d74588
 keywords: [".fpo (Control FPO Overrides) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -127,8 +126,7 @@ Displays all FPO overrides within the module that contains the *Address* address
 
  
 
-Remarks
--------
+## Remarks
 
 Without parameters, the **.fpo** command displays the FPO overrides for the specified address.
 

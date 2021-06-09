@@ -1,7 +1,6 @@
 ---
 title: ScanRegion element
 description: The optional ScanRegion element specifies the area to scan within the input document boundaries.
-ms.assetid: 29b94df7-503d-4bbd-99a8-9092140c6629
 keywords: ["ScanRegion element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **ScanRegion** element specifies the area to scan within the input document boundaries.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegion>
@@ -27,8 +25,7 @@ Usage
 </wscn:ScanRegion>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -82,8 +79,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 All **ScanRegion** values represent one-thousandths (1/1000) of an inch.
 

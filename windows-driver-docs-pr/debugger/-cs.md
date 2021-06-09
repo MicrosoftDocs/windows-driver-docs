@@ -1,7 +1,6 @@
 ---
 title: cs
 description: The cs extension displays one or more critical sections or the whole critical section tree.
-ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
 ms.date: 11/15/2018
 topic_type:
@@ -39,7 +38,7 @@ Parameter | Description
 *EndAddress*   | Specifies the end of the address range to search for critical sections.
 **-d**    | Displays critical sections that are associated with DebugInfo.
 *InfoAddress*   | Specifies the address of the DebugInfo.
-**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier) for the target process and select the **Check lock usage** option.
+**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](../devtest/application-verifier.md) for the target process and select the **Check lock usage** option.
 *TreeAddress*    | Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
 **-?**    | Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
 
@@ -164,12 +163,6 @@ The following items appear in this **!cs -t** display:
 -   **EnterCnt** is the count of **EnterCriticalSection**.
 
 -   **WaitCnt** is the contention count.
-
-
-
- 
-
-
 
 
 

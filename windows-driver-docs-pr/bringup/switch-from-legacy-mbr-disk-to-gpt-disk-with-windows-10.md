@@ -18,13 +18,13 @@ These four configurations will be used:
 
 ## Upgrade paths
 
-| Existing OS+Config | Target OS+Config | Results | Security options |
-| ---  |--- | --- | --- |
-| Windows 7 **x64** installed to system with UEFI firmware, CSM enabled on GPT HDD (Config \# 2) | Windows 10 **x64** installed to UEFI firmware CSM enabled on GPT HDD (Config \# 2)        | Will bootup and run Windows 10 OS               | OS is able to make use of MS security features supported in firmware once CSM is disabled |
-| Windows 7 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)               | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will bootup and run Windows 10 OS               | Only able to leverage Bitlocker                                                           | Not covered in this document                                                                  |
-| Windows 7 **x86** installed to BIOS with active partition NTFS HDD (Config \# 3)               | Windows 10 **x86** installed to BIOS with active partition NTFS HDD = works (Config \# 3) | Will bootup and run Windows 10 OS               | Only able to leverage Bitlocker                                                           | Not covered in this document                                                                  |
-| Windows 7 **x86** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will need installation media and clean install. | Only able to leverage Bitlocker (other security features require UEFI boot)               |
-| Windows 7 **x64** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to UEFI firmware CSM disabled on GPT HDD (Config \# 1)        | Special instructions below                      | OS is able to make use of MS security features supported in firmware
+| Existing OS and Config | Target OS and Config | Results | Security options |
+|--|--|--|--|
+| Windows 7 **x64** installed to system with UEFI firmware, CSM enabled on GPT HDD (Config \# 2) | Windows 10 **x64** installed to UEFI firmware CSM enabled on GPT HDD (Config \# 2) | Will bootup and run Windows 10 OS | OS is able to make use of MS security features supported in firmware once CSM is disabled |
+| Windows 7 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3) | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3) | Will bootup and run Windows 10 OS | Only able to leverage Bitlocker |
+| Windows 7 **x86** installed to BIOS with active partition NTFS HDD (Config \# 3) | Windows 10 **x86** installed to BIOS with active partition NTFS HDD = works (Config \# 3) | Will bootup and run Windows 10 OS | Only able to leverage Bitlocker |
+| Windows 7 **x86** installed to BIOS with active partition NTFS (Config \# 3) | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3) | Will need installation media and clean install. | Only able to leverage Bitlocker (other security features require UEFI boot) |
+| Windows 7 **x64** installed to BIOS with active partition NTFS (Config \# 3) | Windows 10 **x64** installed to UEFI firmware CSM disabled on GPT HDD (Config \# 1) | Special instructions below | OS is able to make use of MS security features supported in firmware |
 
 ## Definition of terms
 

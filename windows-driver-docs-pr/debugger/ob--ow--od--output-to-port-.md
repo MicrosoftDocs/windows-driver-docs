@@ -1,7 +1,6 @@
 ---
 title: ob, ow, od (Output to Port)
 description: The ob, ow, and od commands send a byte, word, or double word to the selected port.
-ms.assetid: 04133df7-4b60-4709-a9e1-5946c8d30f8c
 keywords: ["ob, ow, od (Output to Port) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ Specifies the hexadecimal value to write to the port.
 
  
 
-Remarks
--------
+## Remarks
 
 The **ob** command writes a single byte, the **ow** command writes a word, and the **od** command writes a double word.
 

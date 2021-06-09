@@ -1,7 +1,6 @@
 ---
 title: balloonUI element
 description: The optional balloonUI element is used to display a message balloon on the client computer.
-ms.assetid: 8db15dcb-26ed-429e-ad4c-e5dc59f9bbca
 keywords: ["balloonUI element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # balloonUI element
 
-
 The optional **balloonUI** element is used to display a message balloon on the client computer.
 
-The **balloonUI** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **balloonUI** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <balloonUI
@@ -31,8 +34,7 @@ Usage
 </balloonUI>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -69,7 +71,6 @@ Attributes
 
 ## Child elements
 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -97,7 +98,6 @@ Attributes
 
 ## Parent elements
 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -118,19 +118,17 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the attributes **iconID** and **resourceDll** are not specified, a generic printer icon is displayed in the balloon message. To display a custom printer icon, specify values for both attributes.
 
-Examples
---------
+## Examples
 
 The following code example shows how to use an interactive balloon to pass **CDATA** type data to a DLL.
 
 ```xml
 <?xml version="1.0" ?> 
-  <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+  <asyncPrintUIRequest xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">
@@ -151,7 +149,6 @@ The following code example shows how to use an interactive balloon to pass **CDA
 
 ## See also
 
-
 [**action**](action.md)
 
 [**body**](body.md)
@@ -159,11 +156,3 @@ The following code example shows how to use an interactive balloon to pass **CDA
 [**requestOpen**](requestopen.md)
 
 [**title**](title.md)
-
- 
-
- 
-
-
-
-

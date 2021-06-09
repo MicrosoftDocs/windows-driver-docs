@@ -1,7 +1,6 @@
 ---
 title: buttons element
 description: The required buttons element specifies one or more buttons that are displayed in the event notification message box on the client computer.
-ms.assetid: bf3718c0-37d9-4b73-a015-8a5a95535381
 keywords: ["buttons element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # buttons element
 
-
 The required **buttons** element specifies one or more buttons that are displayed in the event notification message box on the client computer.
 
-The **buttons** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **buttons** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <buttons>
@@ -29,8 +32,7 @@ Usage
 </buttons>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -80,8 +82,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 See [**button**](button.md) for a code example that shows how to use the **buttons** element to enclose two **button** elements that display an **OK** and a **CANCEL** button.
 

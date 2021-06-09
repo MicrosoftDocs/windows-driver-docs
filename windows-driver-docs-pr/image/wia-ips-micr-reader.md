@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_MICR\_READER
 description: The WIA minidriver uses the WIA\_IPS\_MICR\_READER property to report the locations where a Magnetic Ink Character Recognition (MICR) reader is available. The WIA client application can choose one of these locations in which to enable MICR detection.
-ms.assetid: 093A5EDF-BFD6-42BD-B532-9CB578EA284C
 keywords: ["WIA_IPS_MICR_READER Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_MICR\_READER** property.
 
@@ -129,8 +127,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

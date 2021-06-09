@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM
 description: DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM
-ms.assetid: 867c6b3e-13d5-46ae-b73c-f90936cb35c5
 keywords: ["DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM Windows Debugging"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Not used.
 <span id="OutBuffer"></span><span id="outbuffer"></span><span id="OUTBUFFER"></span>*OutBuffer*  
 The memory at the current event's instruction pointer. Up to 64 bytes of memory may be returned.
 
-Remarks
--------
+## Remarks
 
 The memory returned is a snapshot of the memory taken when the event occurred. It does not reflect any changes that may have been made to the target's memory since the event.
 

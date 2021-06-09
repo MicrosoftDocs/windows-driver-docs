@@ -1,7 +1,6 @@
 ---
 title: Offloaded Data Transfers
 description: Transferring data between computers or within the same computer is a frequent file system activity.
-ms.assetid: 66006CC0-8902-47CD-8E7C-187FE5BA71EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,10 +30,10 @@ While standard reads and writes work well in most scenarios, the data intending 
 
 Two new FSCTLs are introduced in Windows 8 that facilitate a method of offloading the data transfer. This shifts the burden of bit movement away from servers to bit movement that occurs intelligently within the storage subsystems. The best way to visualize the command semantics is to think of them as analogous to an unbuffered read and an unbuffered write.
 
-<span id="FSCTL_OFFLOAD_READ"></span><span id="fsctl_offload_read"></span>[**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read)  
-This control request takes an offset within the file to be read and a desired length in the [**FSCTL\_OFFLOAD\_READ\_INPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) structure. If supported, the storage subsystem hosting the file receives the associated offload read storage command and generates a token, which is a logical representation of the data intended to be read at the time of the offload read command. This token string is returned to the caller in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure.
+<span id="FSCTL_OFFLOAD_READ"></span><span id="fsctl_offload_read"></span>[**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md)  
+This control request takes an offset within the file to be read and a desired length in the [**FSCTL\_OFFLOAD\_READ\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) structure. If supported, the storage subsystem hosting the file receives the associated offload read storage command and generates a token, which is a logical representation of the data intended to be read at the time of the offload read command. This token string is returned to the caller in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure.
 
-<span id="FSCTL_OFFLOAD_WRITE"></span><span id="fsctl_offload_write"></span>[**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write)  
+<span id="FSCTL_OFFLOAD_WRITE"></span><span id="fsctl_offload_write"></span>[**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md)  
 This control request takes an offset within the file to be written to, the desired length of the write, and the token that is a logical representation of the data to be written. If supported, the storage subsystem hosting the file to be written receives the associated offload write storage command. It first attempts to recognize the given token, and then performs the write operation if possible. The write operation is completed underneath Windows, and therefore components on the file system and storage stacks will not see the data movement. Once the data movement is complete, the number of bytes written is returned to the caller.
 
 ![offloaded data transfer](images/odx-scenario-2.png)
@@ -47,9 +46,9 @@ The core copy engine in Windows is used by **CopyFile** and related functions. S
 
 The following steps summarize how the copy engine attempts an offloaded data transfer:
 
-1.  The copy engine issues a [**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read) on the source file to get a read token.
+1.  The copy engine issues a [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) on the source file to get a read token.
 2.  If there was a failure in retrieving the read token, the copy engine falls back to traditional reads and writes (the traditional copy file code path). If the failure indicates that the source volume does not support offload, the copy engine also marks the volume in a per-process cache. The copy engine will not try offload any more for the volumes in the per-process cache.
-3.  If the token was successfully retrieved, the copy engine attempts to issue [**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write) commands on the target file in large chunks until all the data that is logically represented by the token has been offload written.
+3.  If the token was successfully retrieved, the copy engine attempts to issue [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md) commands on the target file in large chunks until all the data that is logically represented by the token has been offload written.
 4.  Any errors in performing the offload read or write results in the copy engine falling back to the traditional code path of reads and write, starting from where the offload code path ended off (where the read or write was truncated). If the failure indicates that the destination volume does not support offload, or the source volume cannot reach the destination volume, the copy engine updates the same per-process cache so it will not try offload on these volumes. This per-process cache will reset periodically.
 
 The following functions support offloaded data transfers:
@@ -67,7 +66,7 @@ The following functions do not support offloaded data transfers:
 
 ### <span id="Supported_Offload_Data_Transfer_Scenarios"></span><span id="supported_offload_data_transfer_scenarios"></span><span id="SUPPORTED_OFFLOAD_DATA_TRANSFER_SCENARIOS"></span>Supported Offload Data Transfer Scenarios
 
-Support for the offload operations is provided in the Hyper-V storage stack and in the Windows SMB File Server. Where the backing physical storage supports ODX operations, callers can issue [**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read) and [**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write) to files residing on VHDs or on remote file shares, whether from within a virtual machine or on physical hardware. The following diagram illustrates the most basic supported source and destination targets for offloaded data transfers.
+Support for the offload operations is provided in the Hyper-V storage stack and in the Windows SMB File Server. Where the backing physical storage supports ODX operations, callers can issue [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) and [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md) to files residing on VHDs or on remote file shares, whether from within a virtual machine or on physical hardware. The following diagram illustrates the most basic supported source and destination targets for offloaded data transfers.
 
 ![offloaded data transfer scenarios](images/odx-scenario-3.png)
 
@@ -76,7 +75,7 @@ Support for the offload operations is provided in the Hyper-V storage stack and 
 
 Filter Manager, starting with Windows 8, allows a filter to specify offload capability as a supported feature. File system filters attached to a volume can collectively determine if a certain offloaded operation is supported or not; if it is not, the operation fails with an appropriate error code.
 
-A filter must indicate that it supports [**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read) and [**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write) through a registry **DWORD** value named **SupportedFeatures**, located in the driver service definition in the registry at HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\&lt;filter driver name&gt;\\. This value contains bitfields where the bits determine which functionality is opted-in, and should be set during filter installation.
+A filter must indicate that it supports [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) and [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md) through a registry **DWORD** value named **SupportedFeatures**, located in the driver service definition in the registry at HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\&lt;filter driver name&gt;\\. This value contains bitfields where the bits determine which functionality is opted-in, and should be set during filter installation.
 
 Currently, the defined bits are:
 
@@ -102,7 +101,7 @@ To check the supported features of the stack, there is an updated command within
 
 ### <span id="Checking_Feature_Support_in_IRP__Processing"></span><span id="checking_feature_support_in_irp__processing"></span><span id="CHECKING_FEATURE_SUPPORT_IN_IRP__PROCESSING"></span>Checking Feature Support in IRP Processing
 
-As part of IRP processing, the [**FsRtlGetSupportedFeatures**](https://msdn.microsoft.com/library/windows/hardware/hh920378) routine retrieves the aggregated **SupportedFeatures** state for all filters attached to the given volume stack. Components such as I/O Manager and SRV (SMB) call this routine to validate the **SupportedFeatures** state for all the filters on the stack. Components that roll their own offload IRPs should call this function to validate opt-in support for that operation.
+As part of IRP processing, the [**FsRtlGetSupportedFeatures**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetsupportedfeatures) routine retrieves the aggregated **SupportedFeatures** state for all filters attached to the given volume stack. Components such as I/O Manager and SRV (SMB) call this routine to validate the **SupportedFeatures** state for all the filters on the stack. Components that roll their own offload IRPs should call this function to validate opt-in support for that operation.
 
 ### <span id="Considerations_for_Filter_Drivers"></span><span id="considerations_for_filter_drivers"></span><span id="CONSIDERATIONS_FOR_FILTER_DRIVERS"></span>Considerations for Filter Drivers
 
@@ -110,7 +109,7 @@ Offloaded data transfer is a new way to move data around in the data center. Due
 
 -   Understand the new data flow, the impact to the filter, and the ability of the filter to support these offloaded operations.
 -   Update your filter installer to add a REG\_DWORD value for **SupportedFeatures** to the HKLM\\System\\CurrentControlSet\\Services\\\[filter\] subkey. Initialize it to specify offload functionality.
--   For filters that want to act upon offload operations, update the registration to **IRP\_MJ\_FILE\_SYSTEM\_CONTROL** to handle [**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read) and [**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write).
+-   For filters that want to act upon offload operations, update the registration to **IRP\_MJ\_FILE\_SYSTEM\_CONTROL** to handle [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) and [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md).
 -   For filters that need to block offloaded operations, return the status code STATUS\_NOT\_SUPPORTED from within the filter. Do not rely upon the registry value to enforce blocking offload operations since it can be changed by end users. A filter should explicitly allow or disallow offload operations.
 
 ## <span id="Copy_Tokens"></span><span id="copy_tokens"></span><span id="COPY_TOKENS"></span>Copy Tokens
@@ -120,13 +119,13 @@ With offloaded operations, the file data is not seen by the I/O stack. Instead i
 
 There are classes of tokens that represent a pattern of data that is well defined. The most common well known token is the Zero Token which is equivalent to zero. When a token is defined as a Well Known Token, the **TokenType** member in the **STORAGE\_OFFLOAD\_TOKEN** structure will be set to STORAGE\_OFFLOAD\_TOKEN\_TYPE\_WELL\_KNOWN. When this field is set, the **WellKnownPattern** member determines which pattern of data the token is.
 
--   When the **WellKnownPattern** field is set to STORAGE\_OFFLOAD\_PATTERN\_ZERO or STORAGE\_OFFLOAD\_PATTERN\_ZERO\_WITH\_PROTECTION\_INFORMATION, it indicates the Zero Token. When this token is returned by a [**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read) operation, it indicates that the data contained within the desired file range is logically equivalent to zero. When this token is provided to a [**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write) operation, it indicates that the desired range of the file to be written to should be logically zeroed.
+-   When the **WellKnownPattern** field is set to STORAGE\_OFFLOAD\_PATTERN\_ZERO or STORAGE\_OFFLOAD\_PATTERN\_ZERO\_WITH\_PROTECTION\_INFORMATION, it indicates the Zero Token. When this token is returned by a [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) operation, it indicates that the data contained within the desired file range is logically equivalent to zero. When this token is provided to a [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md) operation, it indicates that the desired range of the file to be written to should be logically zeroed.
 -   Other than the Zero Token, there are no other Well Known Token patterns currently defined. It is not recommended that users define their own Well Known Token patterns.
 
 ## <span id="Truncation"></span><span id="truncation"></span><span id="TRUNCATION"></span>Truncation
 
 
-The underlying storage subsystem that Windows communicates with can process less data that was desired in an offload operation. This is called truncation. With offload read, this means that the returned token represents a range of the data less than that which was requested. This is indicated by the **TransferLength** member in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure, which is a byte count from the beginning of the range of the file to be read. For offload write, a truncation indicates that less data was written than was desired. This is indicated by the **LengthWritten** member in the [**FSCTL\_OFFLOAD\_WRITE\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output) structure, which is a byte count from the beginning of the range of the file to be written. Errors in command processing, or limitations within the stack for large ranges, result in truncation.
+The underlying storage subsystem that Windows communicates with can process less data that was desired in an offload operation. This is called truncation. With offload read, this means that the returned token represents a range of the data less than that which was requested. This is indicated by the **TransferLength** member in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure, which is a byte count from the beginning of the range of the file to be read. For offload write, a truncation indicates that less data was written than was desired. This is indicated by the **LengthWritten** member in the [**FSCTL\_OFFLOAD\_WRITE\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output) structure, which is a byte count from the beginning of the range of the file to be written. Errors in command processing, or limitations within the stack for large ranges, result in truncation.
 
 There are two scenarios in which NTFS truncates the range to be offload read or written:
 
@@ -134,7 +133,7 @@ There are two scenarios in which NTFS truncates the range to be offload read or 
 
     ![vdl occurring before eof](images/odx-vdl-1.png)
 
-    During a [**FSCTL\_OFFLOAD\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-read) operation, the flag OFFLOAD\_READ\_FLAG\_ALL\_ZERO\_BEYOND\_CURRENT\_RANGE is set in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure indicating that the rest of the file contains zeros, and the **TransferLength** member is truncated to VDL.
+    During a [**FSCTL\_OFFLOAD\_READ**](./fsctl-offload-read.md) operation, the flag OFFLOAD\_READ\_FLAG\_ALL\_ZERO\_BEYOND\_CURRENT\_RANGE is set in the [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure indicating that the rest of the file contains zeros, and the **TransferLength** member is truncated to VDL.
 
 2.  Similar to Scenario 1, but when VDL is not aligned to a logical sector boundary, the desired range is truncated by NTFS to the next logical sector boundary.
 
@@ -148,13 +147,8 @@ There are two scenarios in which NTFS truncates the range to be offload read or 
 -   NTFS does not support offload FSCTLs performed on files encrypted with Bitlocker or NTFS encryption (EFS), de-duplicated files, compressed files, resident files, sparse files, or files participating in TxF transactions.
 -   NTFS does not support offload FSCTLs performed on files within a volsnap snapshot.
 -   NTFS will fail the offload FSCTL if the desired file range is unaligned to the logical sector size on the source device or if the desired file range is unaligned to the logical sector size on the destination device. This follows the same semantics as non-cached IO.
--   The destination file must be pre-allocated (**SetEndOfFile** and not **SetAllocation**) before [**FSCTL\_OFFLOAD\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsctl-offload-write).
--   In processing offload read and offload write, NTFS first calls [**CcCoherencyFlushAndPurgeCache**](https://msdn.microsoft.com/library/windows/hardware/ff539032) to commit any modified data in the system cache. This is the same semantic as non-cached IO.
+-   The destination file must be pre-allocated (**SetEndOfFile** and not **SetAllocation**) before [**FSCTL\_OFFLOAD\_WRITE**](./fsctl-offload-write.md).
+-   In processing offload read and offload write, NTFS first calls [**CcCoherencyFlushAndPurgeCache**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-cccoherencyflushandpurgecache) to commit any modified data in the system cache. This is the same semantic as non-cached IO.
 
  
-
- 
-
-
-
 

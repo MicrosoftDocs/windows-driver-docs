@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_CHANNELS\_PER\_PIXEL
 description: The WIA\_IPA\_CHANNELS\_PER\_PIXEL property contains the number of channels per pixel for an image. The WIA minidriver creates and maintains this property.
-ms.assetid: 8588ad6b-6c96-487b-bb00-a775f4274c32
 keywords: ["WIA_IPA_CHANNELS_PER_PIXEL Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

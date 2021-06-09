@@ -1,7 +1,6 @@
 ---
 title: Combining Dispatch and Synchronization Modes
 description: Combining Dispatch and Synchronization Modes
-ms.assetid: 39414acb-1397-42d6-8c75-3448d61775c5
 keywords:
 - synchronization WDK UMDF
 - queue dispatch modes WDK UMDF
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # Combining Dispatch and Synchronization Modes
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 Combining a particular [queue dispatch mode](configuring-dispatch-mode-for-an-i-o-queue.md) with a [synchronization mode](specifying-a-callback-synchronization-mode.md) provides the mode of operation, as shown in the following diagram.
 

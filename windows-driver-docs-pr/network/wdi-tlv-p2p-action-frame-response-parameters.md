@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS
 description: WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS is a TLV that contains Wi-Fi Direct Action Frame response parameters.
-ms.assetid: 2DFF00A6-FDE2-43EF-93C2-EEA3DBC00D52
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
@@ -28,16 +27,15 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                                    | Description                                                                                                                          |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_action_frame_type) | The type of Response Frame to be sent.                                                                                               |
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)                       | The device address of the target peer Wi-Fi Direct device.                                                                           |
+| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_action_frame_type) | The type of Response Frame to be sent.                                                                                               |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)                       | The device address of the target peer Wi-Fi Direct device.                                                                           |
 | UINT8                                                                   | The Wi-Fi Direct Dialog Token for this transaction.                                                                                  |
 | UINT32                                                                  | The send timeout. Specifies the maximum time, in milliseconds, to send this action frame.                                            |
 | UINT32                                                                  | The post-ACK dwell time. Specifies the time to remain on listen channel, in milliseconds, after the incoming packet is acknowledged. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -61,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

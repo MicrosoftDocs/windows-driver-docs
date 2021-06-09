@@ -1,5 +1,5 @@
 ---
-Description: Fixed Property-Attribute Retrieval
+description: Fixed Property-Attribute Retrieval
 title: Fixed Property-Attribute Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium

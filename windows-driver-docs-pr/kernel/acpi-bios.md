@@ -1,7 +1,6 @@
 ---
 title: ACPI BIOS
 description: ACPI BIOS
-ms.assetid: 787e82ed-e58c-461f-abb6-71ed6cba411c
 keywords: ["ACPI BIOS WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

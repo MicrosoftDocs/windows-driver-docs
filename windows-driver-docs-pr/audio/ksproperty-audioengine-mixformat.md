@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_MIXFORMAT
 description: The KSPROPERTY\_AUDIOENGINE\_MIXFORMAT property request retrieves the setting of the mixer in the hardware audio engine.
-ms.assetid: 12353E72-1092-44B4-861A-90C198237670
 keywords: ["KSPROPERTY_AUDIOENGINE_MIXFORMAT Audio Devices"]
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **KSPROPERTY\_AUDIOENGINE\_MIXFORMAT** property request retrieves the settin
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex" data-raw-source="[&lt;strong&gt;KSDATAFORMAT_WAVEFORMATEX&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)"><strong>KSDATAFORMAT_WAVEFORMATEX</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex" data-raw-source="[&lt;strong&gt;KSDATAFORMAT_WAVEFORMATEX&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)"><strong>KSDATAFORMAT_WAVEFORMATEX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -56,13 +55,11 @@ The **KSPROPERTY\_AUDIOENGINE\_MIXFORMAT** property request retrieves the settin
 
 The **KSPROPERTY\_AUDIOENGINE\_MIXFORMAT** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The mix format that is set on the audio engine node at any point in time must also be supported by the offload pin factory.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,16 +81,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)
+[**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: a0e12657-c34e-4aff-a068-911a6aa6959d
 keywords: ["OIDFromString method Print Devices", "OIDFromString method Print Devices , ISNMP interface", "ISNMP interface Print Devices , OIDFromString method"]
 topic_type:
 - apiref
@@ -25,8 +24,7 @@ ms.localizationpriority: medium
 
 The `OIDFromString` method enables an ASP Web page to convert an SNMP OID string to a numeric array.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT OIDFromString(
@@ -35,8 +33,7 @@ HRESULT OIDFromString(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrOID* \[in\]  
 Caller-supplied pointer to an SNMP OID string.
@@ -44,8 +41,7 @@ Caller-supplied pointer to an SNMP OID string.
 *varOID* \[out\]  
 Caller-supplied location to receive a pointer to an array of integer values representing the SNMP OID.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -89,8 +85,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 OIDArray = objSNMP.OIDFromString (". 43.18.1.1.2")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,14 +1,13 @@
 ---
 title: Version
 description: Version
-ms.assetid: 1a476586-bef9-41ec-8e8a-f4343361dc92
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Version
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Version element specifies the version of the application software that created the service metadata package.
 

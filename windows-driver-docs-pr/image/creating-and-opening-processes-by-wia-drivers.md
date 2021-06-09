@@ -1,7 +1,6 @@
 ---
 title: Creating and Opening Processes by WIA Drivers
 description: Creating and Opening Processes by WIA Drivers
-ms.assetid: c939eb25-b92b-41ef-ade0-98c2a707fee6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

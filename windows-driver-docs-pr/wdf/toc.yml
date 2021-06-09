@@ -149,7 +149,7 @@
     href: determining-why-umdf-indicates-outstanding-files-at-device-removal-tim.md
   - name: "How to Enable Debugging of a UMDF Driver"
     href: enabling-a-debugger.md
-  - name: "Registry Values for Debugging WDF Drivers (KMDF and UMDF)"
+  - name: "Registry Values for Debugging WDF Drivers"
     href: registry-values-for-debugging-kmdf-drivers.md
   - name: "Summary of Debugger Extensions in Wdfkd.dll"
     href: debugger-extensions-for-kmdf-drivers.md

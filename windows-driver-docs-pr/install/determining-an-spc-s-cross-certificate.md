@@ -1,7 +1,6 @@
 ---
 title: Determining an SPC's Cross-Certificate
 description: Determining an SPC's Cross-Certificate
-ms.assetid: e54c6c69-6b80-4a03-b4ff-e46d565a56d9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -34,17 +33,11 @@ Once the *.pfx* file is imported into the Personal store on the signing computer
 
 6.  To view the root authority certificate, select **View Certificate**, and then click the **Details** property tab.
 
-7.  Find the **Issuer Name** and **Thumbprint** for the issuing CA of this certificate. Locate the corresponding cross-certificate in the "Root Authority Cross Certificate List" section of the [Microsoft Cross-Certificates for Windows Vista Kernel Mode Code Signing](https://go.microsoft.com/fwlink/p/?linkid=190544) white paper.
+7.  Find the **Issuer Name** and **Thumbprint** for the issuing CA of this certificate. Use [Cross-Certificates for Kernel Mode Code Signing](./cross-certificates-for-kernel-mode-code-signing.md) to locate the corresponding cross-certificate.
 
 8.  Download the related cross-certificate from the "Root Authority Cross Certificate List" section and use this cross-certificate when digitally signing [driver packages](driver-packages.md).
 
 For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
  
-
- 
-
-
-
-
 

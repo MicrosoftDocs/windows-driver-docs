@@ -1,7 +1,6 @@
 ---
 title: Coverage Tests (Device Fundamentals)
 description: The Device Fundamental Coverage tests monitor and report on the various I/O request packets (IRPs) that enter or leave a driver stack for specified devices.
-ms.assetid: 950B124B-8B2D-4A54-AFC3-E90BBDD8D1AF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageDisableSupport.dll</p>
 <p><strong>Test method:</strong> DisableCoverageDataCollection</p>
 <p><strong>Parameters:</strong></p>
-<p><em>DQ</em> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
+<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Display_collected_IRP_coverage_data._"></span><span id="display_collected_irp_coverage_data._"></span><span id="DISPLAY_COLLECTED_IRP_COVERAGE_DATA._"></span>Display collected IRP coverage data.</p></td>
@@ -60,7 +59,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageEnableSupport.dll</p>
 <p><strong>Test method:</strong> EnableCoverageDataCollection</p>
 <p><strong>Parameters:</strong> None</p>
-<p><em>DQ</em> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
+<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,24 +73,15 @@ The Device Fundamentals coverage tests are based upon the Driver Coverage Toolki
 ## <span id="related_topics"></span>Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)
+[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)
+[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)
-
- 
-
- 
-
-
-
-
-
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
 

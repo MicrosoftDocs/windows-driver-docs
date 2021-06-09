@@ -1,7 +1,6 @@
 ---
-title: DTrace ETW
+title: DTrace Live Dump
 description: DTrace supports live dump file creation using using LKD(). 
-ms.assetid: bbf23d76-423d-4d1e-afde-83739015bbf1
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # DTrace Live Dump
 
-DTrace provides a facility to capture live dump from within the D-script using lkd(). Memory dump files are used for debugging complex problems in Windows using the Windows Debugger. For more information, see [Analyze crash dump files by using WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/crash-dump-files). To download the debugger, see [WinDbg Preview - Installation](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-install-preview).
+DTrace provides a facility to capture live dump from within the D-script using lkd(). Memory dump files are used for debugging complex problems in Windows using the Windows Debugger. For more information, see [Analyze crash dump files by using WinDbg](../debugger/crash-dump-files.md). To download the debugger, see [WinDbg Preview - Installation](../debugger/windbg-install-preview.md).
 
  DTrace live dump provides the ability to trigger the dump at the exact point where the error occurred. For instance, the error could be a function returning an error. You can use DTrace to hook into this function return and trigger a live dump when the return value is "error".
 
@@ -106,13 +105,13 @@ Use this command to enable the analytic channel from and administrator command p
 
 ### Enabling full live dumps
 
-These example settings below show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
+These example settings below, show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReports" /f /t REG_DWORD /v FullLiveReportsMax /d 10`
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl" /f /t REG_DWORD /v AlwaysKeepMemoryDump /d 1`
 
-For more information on these settings, see [WER Settings](https://docs.microsoft.com/windows/win32/wer/wer-settings).
+For more information on these settings, see [WER Settings](/windows/win32/wer/wer-settings).
 
 ### Disable throttling
 
@@ -127,7 +126,7 @@ reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReport
 
 ### Disk space issues (Event ID 202 -Error Text: Live Dump Write Deferred Dump Data API ended. NT Status: 0xC000007F.)
 
-This means the disk space is insufficient. Update the registry key show below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
+This means the disk space is insufficient. Update the registry key shown below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
 
 `reg add hklm\system\currentcontrolset\control\crashcontrol\livekernelreports /v "LiveKernelReportsPath" /t reg_sz /d "\??\d:\livedumps"`
 

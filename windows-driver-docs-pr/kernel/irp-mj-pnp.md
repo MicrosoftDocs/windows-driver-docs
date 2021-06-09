@@ -2,7 +2,6 @@
 title: IRP_MJ_PNP
 description: All drivers must be prepared to service IRP_MJ_PNP requests in a DispatchPnP routine.
 ms.date: 08/12/2017
-ms.assetid: db838761-b838-44fd-bc77-c9d55d2c4a41
 keywords:
  - IRP_MJ_PNP Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,10 +10,9 @@ ms.localizationpriority: medium
 # IRP\_MJ\_PNP
 
 
-All drivers must be prepared to service **IRP\_MJ\_PNP** requests in a [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+All drivers must be prepared to service **IRP\_MJ\_PNP** requests in a [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends **IRP\_MJ\_PNP** requests during enumeration, resource rebalancing, and any other time Plug and Play activity occurs on the system. Drivers can also send certain **IRP\_MJ\_PNP** requests, depending on the minor function code.
 
@@ -28,13 +26,11 @@ Depends on the value at **MinorFunction** in the current I/O stack location of t
 
 Depends on the value at **MinorFunction** in the current I/O stack location of the IRP.
 
-Operation
----------
+## Operation
 
 See [Plug and Play Minor IRPs](plug-and-play-minor-irps.md) for detailed information about **IRP\_MJ\_PNP** requests.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -52,12 +48,7 @@ Requirements
 ## See also
 
 
-[*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+[*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
-
- 
-
-
-
 

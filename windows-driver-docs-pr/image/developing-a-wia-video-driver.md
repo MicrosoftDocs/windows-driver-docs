@@ -1,7 +1,6 @@
 ---
 title: Developing a WIA Video Driver
 description: Developing a WIA Video Driver
-ms.assetid: 3cf14fd3-1dfa-480e-a69c-c4d2c196a504
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,12 +28,7 @@ ICMProfiles="sRGB Color Space Profile.icm"
 
 If you do not make these additions WIA will not recognize the device. Be sure to *add* these changes to your INF file. Do not replace your INF file with only these lines.
 
-For an example of how to support WIA from a video camera using USBCAMD model with a still pin from your driver see [USB-Based Camera with a Capture Button](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-based-camera-with-a-capture-button).
+For an example of how to support WIA from a video camera using USBCAMD model with a still pin from your driver see [USB-Based Camera with a Capture Button](../stream/usb-based-camera-with-a-capture-button.md).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_SCATTERBLTS structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: a5ce5557-840c-4044-92d8-7e38c592c747
+description: Learn about the D3DKMT\_SCATTERBLTS structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_SCATTERBLTS structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_SCATTERBLTS {
@@ -30,15 +28,13 @@ typedef struct _D3DKMT_SCATTERBLTS {
 } D3DKMT_SCATTERBLTS;
 ```
 
-Members
--------
+## Members
 
 **NumBlts**
 
 **Blts**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

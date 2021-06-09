@@ -1,14 +1,13 @@
 ---
 title: PackageInfo XML schema definition
 description: PackageInfo XML schema definition
-ms.assetid: b0e4f800-816a-4d8b-a68b-56dc468caf52
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # PackageInfo XML schema definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following is the namespace of the PackageInfo XML schema:
 
@@ -80,7 +79,7 @@ The following is a definition of the PackageInfo schema.
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="207" />
-      <xs:pattern value="^([a-zA-Z0-9!#$%&()*+\-./:;&lt;=&gt;?@[\\\]^_`{|}~])*$" /> 
+      <xs:pattern value="^([a-zA-Z0-9!#$%&()*+\-./:;&lt;=&gt;?@[\\\]^_`{|}~])*$" />
     </xs:restriction>
   </xs:simpleType>
 
@@ -154,12 +153,3 @@ The following is the PackageInfo v2 XML schema metadata (packageinfov2.xsd):
 
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

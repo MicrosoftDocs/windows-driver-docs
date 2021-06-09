@@ -1,7 +1,6 @@
 ---
 title: SIM toolkit Overview
 description: SIM toolkit Overview
-ms.assetid: 39869948-d61c-438c-a90c-05dcb099acad
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,8 +54,6 @@ OEMs can modify the display period for certain dialogs or messages if the defaul
 -   SELECTITEM: 60 seconds
 
 -   GETINKEY: 60 seconds
-
-For information about these customizations, see [Customize the SIM toolkit](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customize-the-sim-toolkit).
 
 ### Example of processing a SIM toolkit command
 
@@ -112,11 +109,4 @@ The following settings are recommended:
 [SIM toolkit commands](sim-toolkit-commands.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Overview of Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
-ms.assetid: 1ef3e216-1322-42c3-b070-94cddfb2133c
 ms.date: 01/30/2018
 ms.localizationpriority: medium
 ---
@@ -12,9 +11,9 @@ For general information about developing drivers see [Getting started with Windo
 
 The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, such as for Windows 10 Mobile, we explicitly called these out in each technology area.
 
-## Universal Windows drivers
+## Windows drivers
 
-You can create a Universal Windows driver—a driver that uses a subset of the interfaces that are available to a Windows driver—to run on all editions of Windows 10. Where possible, use a Universal Windows driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Universal Windows driver for Windows 10, see [Getting Started with Universal Windows drivers](develop/getting-started-with-universal-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
+You can create a Windows Driver—a driver that uses a subset of the available interfaces—to run on all editions of Windows 10. Where possible, use a Windows Driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Windows Driver for Windows 10, see [Getting Started with Windows Drivers](develop/getting-started-with-windows-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
 
 ## Device drivers and Windows 10 for desktop computers
 
@@ -28,9 +27,10 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Battery Drivers](battery/index.md)
 - [Biometric Drivers](biometric/index.md)
 - [Bluetooth Drivers](bluetooth/index.md)
+- [Component Firmware Update (CFU)](cfu/index.md)
 - [Display drivers](display/index.md)
 - [File system drivers](ifs/index.md)
-- [GNSS drivers](gnss/index.md)
+- [Global Navigation Satellite System (GNSS) drivers](gnss/index.md)
 - [GPIO drivers](gpio/index.md)
 - [Hardware notifications](gpiobtn/index.md)
 - [HID Drivers](hid/index.md)
@@ -55,6 +55,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Smartcard device drivers](smartcard/index.md)
 - [Simple Peripheral Bus (SPB) drivers](spb/index.md)
 - [Storage device drivers](storage/index.md)
+- [Storage Firmware Update (SFU)](sfu/index.md)
 - [Streaming media device drivers](stream/index.md)
 - [Test Authoring and Execution Framework (TAEF)](taef/index.md)
 - [Universal Serial Bus (USB)](usbcon/index.md)
@@ -66,4 +67,4 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 
 - [Getting started with Windows drivers](gettingstarted/index.md)
 - [Driver Development Tools](devtest/index.md)
-- [Partner Center for Windows Hardware](dashboard/index.md)
+- [Partner Center for Windows Hardware](dashboard/index.yml)

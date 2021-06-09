@@ -1,7 +1,6 @@
 ---
 title: Halting a Miniport Adapter
 description: Halting a Miniport Adapter
-ms.assetid: fd57a2b1-593d-412b-96b5-eabd3ea392e0
 keywords:
 - miniport adapters WDK networking , halting
 - adapters WDK networking , halting
@@ -19,15 +18,15 @@ ms.localizationpriority: medium
 
 
 
-NDIS calls an NDIS miniport driver's [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function to deallocate resources when an adapter is removed from the system, and to stop the hardware. NDIS can call *MiniportHaltEx* after the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function returns successfully. For more information about *MiniportInitializeEx*, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
+NDIS calls an NDIS miniport driver's [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function to deallocate resources when an adapter is removed from the system, and to stop the hardware. NDIS can call *MiniportHaltEx* after the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function returns successfully. For more information about *MiniportInitializeEx*, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
-[*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) must free any resources that the driver allocated for a device. The driver must call the reciprocals of the **Ndis<em>Xxx</em>** functions with which it originally allocated the resources. As a general rule, a *MiniportHaltEx* function should call the reciprocal **Ndis<em>Xxx</em>** functions in the reverse order used during initialization.
+[*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) must free any resources that the driver allocated for a device. The driver must call the reciprocals of the **Ndis<em>Xxx</em>** functions with which it originally allocated the resources. As a general rule, a *MiniportHaltEx* function should call the reciprocal **Ndis<em>Xxx</em>** functions in the reverse order used during initialization.
 
-If an adapter generates interrupts, a miniport driver's [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function can be preempted by the driver's [*MiniportInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function until *MiniportHaltEx* disables interrupts.
+If an adapter generates interrupts, a miniport driver's [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function can be preempted by the driver's [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function until *MiniportHaltEx* disables interrupts.
 
-NDIS does not call [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) if there are outstanding OID requests or send requests. NDIS submits no further requests for the affected device after NDIS calls *MiniportHaltEx*.
+NDIS does not call [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) if there are outstanding OID requests or send requests. NDIS submits no further requests for the affected device after NDIS calls *MiniportHaltEx*.
 
-After [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) returns, the miniport driver is in the Halted state.
+After [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) returns, the miniport driver is in the Halted state.
 
 ## Related topics
 
@@ -38,14 +37,7 @@ After [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi
 
 [Miniport Driver Halt Handler](halt-handler.md)
 
-[Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+[Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
  
-
- 
-
-
-
-
-
 

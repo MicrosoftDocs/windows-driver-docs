@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_MINIMUM_LINK_SPEED
 description: This topic describes the OID_GEN_CO_MINIMUM_LINK_SPEED object identifier (OID).
-ms.assetid: 2ed27ec7-b773-4751-96d3-42d839f35a97
 keywords:
 - OID_GEN_CO_MINIMUM_LINK_SPEED
 ms.date: 11/02/2017
@@ -29,8 +28,6 @@ The minimum receive speed of the NIC. The unit of measurement is 100bps, so a va
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

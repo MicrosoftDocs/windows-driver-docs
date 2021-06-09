@@ -1,7 +1,6 @@
 ---
 title: DIF_DETECTVERIFY
 description: DIF_DETECTVERIFY
-ms.assetid: f8cbeaae-0019-414c-8688-1bdc08bef1f8
 keywords: ["DIF_DETECTVERIFY Device and Driver Installation"]
 topic_type:
 - apiref

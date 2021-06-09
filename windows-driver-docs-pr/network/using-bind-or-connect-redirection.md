@@ -1,7 +1,6 @@
 ---
 title: Using Bind or Connect Redirection
 description: Using Bind or Connect Redirection
-ms.assetid: 6b27a9ad-53e9-4e80-bf03-79665f8a82a0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ A WFP connection redirection callout redirects an application's connection reque
 
 A WFP redirect record is a buffer of opaque data that WFP must set on an outbound proxy connection at the **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V4** and **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V6** layers, so that the redirected connection and the original connection are logically related.
 
-Because bind redirection is possible, it is not necessary to support local address and port modifications in a connect redirection. Changing the local address and port as part of connect redirection is not supported.
+Changing the local address and port of a flow is only supported in the bind-redirect layer. This is not supported in the connect-redirect layer.
 
 ### Layers Used for Redirection
 
@@ -37,7 +36,7 @@ Redirection can be performed by callout drivers at the following layers, which a
 
 The layer at which redirection is performed determines the effect of the change. Changes at connect layers affect only the flow being connected. Changes at bind layers affect all connections that are using that socket.
 
-The redirect layers are only available for Windows 7 and later versions of Windows. Callout drivers that support classification at these layers must register using [**FwpsCalloutRegister1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1) or higher, not the older [**FwpsCalloutRegister0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function.
+The redirect layers are only available for Windows 7 and later versions of Windows. Callout drivers that support classification at these layers must register using [**FwpsCalloutRegister1**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1) or higher, not the older [**FwpsCalloutRegister0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function.
 
 > [!IMPORTANT]
 > Redirection is not available for use with all types of network traffic. The types of packets that are supported for redirection are shown in the following list:
@@ -48,21 +47,21 @@ The redirect layers are only available for Windows 7 and later versions of Wind
 
 ### Performing Redirection
 
-To redirect a connection, the callout driver must obtain a writable copy of the TCP 4-tuple information, make changes to it as needed, and apply the changes. A set of new functions are provided to obtain writable layer data and to apply it through the engine. Callout drivers have the option of making changes either inline in their [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) functions, or asynchronously in another function.
+To redirect a connection, the callout driver must obtain a writable copy of the TCP 4-tuple information, make changes to it as needed, and apply the changes. A set of new functions are provided to obtain writable layer data and to apply it through the engine. Callout drivers have the option of making changes either inline in their [classifyFn](/windows-hardware/drivers/ddi/_netvista/) functions, or asynchronously in another function.
 
-Callout drivers that implement redirection must use [*classifyFn1*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn1) or later instead of [*classifyFn0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) as their classification callout function. To use *classifyFn1* or later, the callout must be registered by calling [**FwpsCalloutRegister1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1) or later, not the older [**FwpsCalloutRegister0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0).
+Callout drivers that implement redirection must use [*classifyFn1*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn1) or later instead of [*classifyFn0*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) as their classification callout function. To use *classifyFn1* or later, the callout must be registered by calling [**FwpsCalloutRegister1**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1) or later, not the older [**FwpsCalloutRegister0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0).
 
-To perform redirection inline a callout driver must perform the following steps in its implementation of [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/):
+To perform redirection inline a callout driver must perform the following steps in its implementation of [classifyFn](/windows-hardware/drivers/ddi/_netvista/):
 
-1.  Call [**FwpsRedirectHandleCreate0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to obtain a handle that can be used to redirect TCP connections. This handle should be cached and used for all redirections. (This step is omitted for Windows 7 and earlier.)
+1.  Call [**FwpsRedirectHandleCreate0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to obtain a handle that can be used to redirect TCP connections. This handle should be cached and used for all redirections. (This step is omitted for Windows 7 and earlier.)
 
-2.  In Windows 8 and later, you must query the redirection state of the connection by using the [**FwpsQueryConnectionRedirectState0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function in your callout driver. This must be done to prevent infinite redirecting.
+2.  In Windows 8 and later, you must query the redirection state of the connection by using the [**FwpsQueryConnectionRedirectState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function in your callout driver. This must be done to prevent infinite redirecting.
 
-3.  Call [**FwpsAcquireClassifyHandle0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquireclassifyhandle0) to obtain a handle that will be used for subsequent function calls.
+3.  Call [**FwpsAcquireClassifyHandle0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquireclassifyhandle0) to obtain a handle that will be used for subsequent function calls.
 
-4.  Call [**FwpsAcquireWritableLayerDataPointer0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquirewritablelayerdatapointer0) to get the writable data structure for the layer in which [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0) or [**FWPS\_CONNECT\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0).
+4.  Call [**FwpsAcquireWritableLayerDataPointer0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquirewritablelayerdatapointer0) to get the writable data structure for the layer in which [classifyFn](/windows-hardware/drivers/ddi/_netvista/) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0) or [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0).
 
-    Starting with Windows 8, if your callout driver is redirecting to a local service, you must call [**FwpsRedirectHandleCreate0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to fill in the **localRedirectHandle** member of the [**FWPS\_CONNECT\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure in order to make local proxying work.
+    Starting with Windows 8, if your callout driver is redirecting to a local service, you must call [**FwpsRedirectHandleCreate0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to fill in the **localRedirectHandle** member of the [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure in order to make local proxying work.
 
 5.  Make changes to the layer data as needed:
 
@@ -93,10 +92,10 @@ To perform redirection inline a callout driver must perform the following steps 
                           RtlUshortByteSwap(params->proxyPort));
         ```
 
-    3.  If your callout driver is redirecting to a local service, it should set the local proxy PID in the **localRedirectTargetPID** member of the [**FWPS\_CONNECT\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure.
+    3.  If your callout driver is redirecting to a local service, it should set the local proxy PID in the **localRedirectTargetPID** member of the [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure.
     4.  If your callout driver is redirecting to a local service, it should set the redirect handle returned by FwpsRedirectHandleCreate0 in the **localRedirectHandle** member of the FWPS\_CONNECT\_REQUEST0 structure.
 
-6.  Call [**FwpsApplyModifiedLayerData0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsapplymodifiedlayerdata0) to apply the changes made to the data.
+6.  Call [**FwpsApplyModifiedLayerData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsapplymodifiedlayerdata0) to apply the changes made to the data.
 
 7.  In your proxy service (which could be in user mode or kernel mode), you should query redirect records and contexts as shown in the following example:
 
@@ -128,19 +127,19 @@ To perform redirection inline a callout driver must perform the following steps 
                  redirectRecords, …);
     ```
 
-9.  Call [**FwpsReleaseClassifyHandle0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsreleaseclassifyhandle0) to release the classification handle obtained in step 2.
+9.  Call [**FwpsReleaseClassifyHandle0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsreleaseclassifyhandle0) to release the classification handle obtained in step 2.
 
-10. Call [**FwpsRedirectHandleDestroy0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandledestroy0) to destroy the handle that was obtained in step 1.
+10. Call [**FwpsRedirectHandleDestroy0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandledestroy0) to destroy the handle that was obtained in step 1.
 
 To perform redirection asynchronously a callout driver must perform the following steps:
 
-1.  Call [**FwpsRedirectHandleCreate0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to obtain a handle that can be used to redirect TCP connections. (This step is omitted for Windows 7 and earlier.)
+1.  Call [**FwpsRedirectHandleCreate0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to obtain a handle that can be used to redirect TCP connections. (This step is omitted for Windows 7 and earlier.)
 
-2.  In Windows 8 and later, you must query the redirection state of the connection by using the [**FwpsQueryConnectionRedirectState0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function in your callout driver.
+2.  In Windows 8 and later, you must query the redirection state of the connection by using the [**FwpsQueryConnectionRedirectState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function in your callout driver.
 
-3.  Call [**FwpsAcquireClassifyHandle0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquireclassifyhandle0) to obtain a handle that will be used for subsequent function calls. This step and steps 2 and 3 are performed in the callout driver's [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) callout function.
+3.  Call [**FwpsAcquireClassifyHandle0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquireclassifyhandle0) to obtain a handle that will be used for subsequent function calls. This step and steps 2 and 3 are performed in the callout driver's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function.
 
-4.  Call [**FwpsPendClassify0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpspendclassify0) to put the classification in a pending state as shown in the following example:
+4.  Call [**FwpsPendClassify0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpspendclassify0) to put the classification in a pending state as shown in the following example:
 
     ```C++
     FwpsPendClassify(
@@ -154,11 +153,11 @@ To perform redirection asynchronously a callout driver must perform the followin
 > [!NOTE]
 > If you are targeting Windows 7, you must perform the following steps in a separate worker function. If you are targeting Windows 8 or later, you can perform all steps for asynchronous redirection from within the *classifyFn* and ignore Step 5.
 
-5.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+5.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](/windows-hardware/drivers/ddi/_netvista/).
 
-6.  Call [**FwpsAcquireWritableLayerDataPointer0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquirewritablelayerdatapointer0) to get the writable data structure for the layer in which [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0) or [**FWPS\_CONNECT\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0).
+6.  Call [**FwpsAcquireWritableLayerDataPointer0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquirewritablelayerdatapointer0) to get the writable data structure for the layer in which [classifyFn](/windows-hardware/drivers/ddi/_netvista/) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0) or [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0).
 
-    Starting with Windows 8, if your callout driver is redirecting locally, you must call [**FwpsRedirectHandleCreate0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to fill in the **localRedirectHandle** member of the [**FWPS\_CONNECT\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure in order to make proxying work.
+    Starting with Windows 8, if your callout driver is redirecting locally, you must call [**FwpsRedirectHandleCreate0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) to fill in the **localRedirectHandle** member of the [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure in order to make proxying work.
 
 7.  Store any callout-specific context information in a private context structure as shown in the following example:
 
@@ -171,9 +170,9 @@ To perform redirection asynchronously a callout driver must perform the followin
 
 8.  Make changes to the layer data as needed.
 
-9.  Call [**FwpsApplyModifiedLayerData0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsapplymodifiedlayerdata0) to apply the changes made to the data. Set the **FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS** flag if you wish to be re-authorized in the event that another callout modifies the data further.
+9.  Call [**FwpsApplyModifiedLayerData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsapplymodifiedlayerdata0) to apply the changes made to the data. Set the **FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS** flag if you wish to be re-authorized in the event that another callout modifies the data further.
 
-10. Call [**FwpsCompleteClassify0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscompleteclassify0) to complete the classify operation asynchronously as shown in the following example:
+10. Call [**FwpsCompleteClassify0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscompleteclassify0) to complete the classify operation asynchronously as shown in the following example:
 
     ```C++
     FwpsCompleteClassify(
@@ -184,7 +183,7 @@ To perform redirection asynchronously a callout driver must perform the followin
     classifyOut->rights |= FWPS_RIGHT_ACTION_WRITE;
     ```
 
-11. Call [**FwpsReleaseClassifyHandle0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsreleaseclassifyhandle0) to release the classification handle obtained in step 1.
+11. Call [**FwpsReleaseClassifyHandle0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsreleaseclassifyhandle0) to release the classification handle obtained in step 1.
 
 ### Handling Connect Redirection from Multiple Callouts
 
@@ -192,7 +191,7 @@ It is possible that more than one callout driver will initiate connect redirecti
 
 The **FWPS\_RIGHT\_ACTION\_WRITE** flag should be set whenever a callout pends a classification. Your callout should test for the **FWPS\_RIGHT\_ACTION\_WRITE** flag to check the rights for your callout to return an action. If this flag is not set, your callout can still return a **FWP\_ACTION\_BLOCK** action in order to veto a **FWP\_ACTION\_PERMIT** action that was returned by a previous callout.
 
-In Windows 8 and later, your callout driver must query the redirection state of the connection (to see if your callout driver or another callout driver has modified it) by using the [**FwpsQueryConnectionRedirectState0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function. If the connection is redirected by your callout driver, or if it was previously redirected by your callout driver, the callout driver should do nothing. Otherwise, it should also check for local redirection as shown in the following example:
+In Windows 8 and later, your callout driver must query the redirection state of the connection (to see if your callout driver or another callout driver has modified it) by using the [**FwpsQueryConnectionRedirectState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function. If the connection is redirected by your callout driver, or if it was previously redirected by your callout driver, the callout driver should do nothing. Otherwise, it should also check for local redirection as shown in the following example:
 
 ```C++
 FwpsAcquireWritableLayerDataPointer(...,(PVOID*)&connectRequest), ...);
@@ -218,21 +217,14 @@ Callout drivers that use connect redirection should register at the ALE authoriz
 
 -   **FWPS\_METADATA\_FIELD\_ORIGINAL\_DESTINATION** contains the address of the original destination for the flow.
 
-The [**FWPS\_CONNECT\_REQUEST0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure contains a member called **localRedirectTargetPID**. For any loopback connect redirection to be valid, this field must be populated with the PID of the process that will be responsible for the redirected flow. This is the same data that the engine passes at the ALE authorization connect layers as **FWPS\_METADATA\_FIELD\_LOCAL\_REDIRECT\_TARGET\_ID**.
+The [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure contains a member called **localRedirectTargetPID**. For any loopback connect redirection to be valid, this field must be populated with the PID of the process that will be responsible for the redirected flow. This is the same data that the engine passes at the ALE authorization connect layers as **FWPS\_METADATA\_FIELD\_LOCAL\_REDIRECT\_TARGET\_ID**.
 
-Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](https://docs.microsoft.com/windows-hardware/drivers/network/sio-query-wfp-connection-redirect-records) and [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/network/sio-query-wfp-connection-redirect-context) IOCTLs, using [**WSAIoctl**](https://docs.microsoft.com/windows/desktop/api/winsock2/nf-winsock2-wsaioctl), against the original endpoint of the proxy service. Additionally, the [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](https://docs.microsoft.com/windows-hardware/drivers/network/sio-set-wfp-connection-redirect-records) IOCTL must be issued, using **WSAIoctl**, on the new (proxied) socket.
+Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-query-wfp-connection-redirect-records.md) and [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT**](./sio-query-wfp-connection-redirect-context.md) IOCTLs, using [**WSAIoctl**](/windows/win32/api/winsock2/nf-winsock2-wsaioctl), against the original endpoint of the proxy service. Additionally, the [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-set-wfp-connection-redirect-records.md) IOCTL must be issued, using **WSAIoctl**, on the new (proxied) socket.
 
 ## Related topics
 
 
-[WFP Version-Independent Names and Targeting Specific Versions of Windows](https://docs.microsoft.com/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
+[WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
 
  
-
- 
-
-
-
-
-
 

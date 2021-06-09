@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_SHARPNESS
 description: The WIA\_DPC\_SHARPNESS property indicates the perceived sharpness of a captured image.
-ms.assetid: 6fb78506-f4fe-481c-b1ea-0f4fedcdca1a
 keywords: ["WIA_DPC_SHARPNESS Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_DPC\_SHARPNESS property can use either a list of values or a range of values. The minimum value represents the least amount of sharpness, and the maximum value represents the maximum sharpness. Typically, a value in the middle of the range represents normal, or default, sharpness.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

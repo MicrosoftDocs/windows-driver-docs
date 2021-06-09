@@ -1,7 +1,6 @@
 ---
 title: hidkd.hidppd HID extension
 description: The hidkd.hidppd command displays HID preparsed data.
-ms.assetid: 049D206D-669D-49F4-81FE-2D8E443F9A9E
 keywords: ["hidkd.hidppd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of a **HIDP\_PREPARSED\_DATA** structure. To get the address of a **HIDP
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 This example shows how to use [**!hidpdo**](-hidkd-hidpdo.md) followed by **!hidppd**. The output of **!hidpdo** shows the address of a **HIDP\_PREPARSED\_DATA** structure.
 

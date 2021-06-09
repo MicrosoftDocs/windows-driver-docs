@@ -1,7 +1,6 @@
 ---
 title: Debug Restart
 description: Debug Restart
-ms.assetid: e529171a-0dd4-4528-a527-f8b430cd9321
 keywords: ["Debug Restart", "controlling the target, Debug Restart"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

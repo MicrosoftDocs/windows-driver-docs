@@ -1,7 +1,6 @@
 ---
 title: Using WPP Software Tracing in KMDF Drivers
 description: Using WPP Software Tracing in KMDF Drivers
-ms.assetid: dad7aa8d-4ced-47b3-80d2-ec9cfb355783
 keywords:
 - software tracing WDK , framework-based drivers
 - debugging drivers WDK KMDF , software tracing
@@ -14,15 +13,15 @@ ms.localizationpriority: medium
 # Using WPP Software Tracing in KMDF Drivers
 
 
-[WPP software tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) enables you to add tracing messages that help you debug your driver. Additionally, the framework's [event logger](using-the-framework-s-event-logger.md) provides hundreds of tracing messages that you can view.
+[WPP software tracing](../devtest/wpp-software-tracing.md) enables you to add tracing messages that help you debug your driver. Additionally, the framework's [event logger](using-the-framework-s-event-logger.md) provides hundreds of tracing messages that you can view.
 
-You can view tracing messages by using [TraceView](https://docs.microsoft.com/windows-hardware/drivers/devtest/traceview) or [Tracelog](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog). You can also [send trace messages to a kernel debugger](https://docs.microsoft.com/windows-hardware/drivers/devtest/how-do-i-send-trace-messages-to-a-kernel-debugger-).
+You can view tracing messages by using [TraceView](../devtest/traceview.md) or [Tracelog](../devtest/tracelog.md). You can also [send trace messages to a kernel debugger](../devtest/how-do-i-send-trace-messages-to-a-kernel-debugger-.md).
 
 ### Adding Tracing Messages to Your Driver
 
 To add tracing messages to your framework-based driver, you must:
 
-- Add an **\#include** directive to each of your driver's source files that contains any of the WPP macros. This directive must identify a [trace message header (TMH) file](https://docs.microsoft.com/windows-hardware/drivers/devtest/trace-message-header-file). The file name must have a format of &lt;*driver-source-file-name*&gt;**.tmh**.
+- Add an **\#include** directive to each of your driver's source files that contains any of the WPP macros. This directive must identify a [trace message header (TMH) file](../devtest/trace-message-header-file.md). The file name must have a format of &lt;*driver-source-file-name*&gt;**.tmh**.
 
   For example, if your driver consists of two source files, called *MyDriver1.c* and *MyDriver2.c*, then *MyDriver1.c* must contain:
 
@@ -34,15 +33,15 @@ To add tracing messages to your framework-based driver, you must:
 
   When you build your driver in Microsoft Visual Studio, the WPP preprocessor generates the .*tmh* files.
 
-- Define a [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro in a header file. This macro defines a GUID and [trace flags](https://docs.microsoft.com/windows-hardware/drivers/devtest/trace-flags) for your driver's tracing messages.
+- Define a [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro in a header file. This macro defines a GUID and [trace flags](../devtest/trace-flags.md) for your driver's tracing messages.
 
-- Include a [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro in your driver's [**DriverEntry routine**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers). This macro activates software tracing in your driver.
+- Include a [WPP\_INIT\_TRACING](/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro in your driver's [**DriverEntry routine**](./driverentry-for-kmdf-drivers.md). This macro activates software tracing in your driver.
 
-- Include a [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro in your driver's [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) callback function. This macro deactivates software tracing in your driver.
+- Include a [WPP\_CLEANUP](/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro in your driver's [*EvtDriverUnload*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) callback function. This macro deactivates software tracing in your driver.
 
-- Use the [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](https://docs.microsoft.com/windows-hardware/drivers/devtest/can-i-customize-dotracemessage-) of the macro, in your driver to create trace messages.
+- Use the [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](../devtest/can-i-customize-dotracemessage-.md) of the macro, in your driver to create trace messages.
 
-- Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
+- Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp Tracing**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
 
   ```cpp
   {km-WdfDefault.tpl}*.tmh
@@ -54,17 +53,11 @@ To add tracing messages to your framework-based driver, you must:
   ```cpp
   -scan:"$(KMDF_INC_PATH)\$(KMDF_VER_PATH)\wdftraceenums.h"
   ```
-  For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-wpp-macros-to-a-trace-provider).
+  For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](../devtest/adding-wpp-macros-to-a-trace-provider.md).
 
 ### Sample Drivers That Use WPP Software Tracing
 
 The AMCC5933, NONPNP, KMDF\_FX2, PCIDRV, PLX9x5x, and Serial [sample drivers](sample-kmdf-drivers.md) use WPP software tracing.
 
  
-
- 
-
-
-
-
 

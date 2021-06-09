@@ -1,7 +1,6 @@
 ---
 title: WIA Security Best Practices
 description: WIA Security Best Practices
-ms.assetid: 3c8bd0e9-5832-4854-83ab-d422c617c67c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

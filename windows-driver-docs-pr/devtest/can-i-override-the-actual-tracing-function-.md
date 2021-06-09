@@ -1,7 +1,6 @@
 ---
 title: Can I override the actual tracing function
 description: Can I override the actual tracing function
-ms.assetid: 215e6fb6-a1f4-4188-a3aa-9688ce17d04b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

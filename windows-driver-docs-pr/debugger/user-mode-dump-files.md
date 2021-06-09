@@ -1,9 +1,8 @@
 ---
 title: User-Mode Dump Files
 description: User-Mode Dump Files
-ms.assetid: bef29d75-6620-4219-b402-36fbddc4fe1f
 keywords: ["dump file, user-mode"]
-ms.date: 10/04/2019
+ms.date: 12/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +16,6 @@ This section includes:
 
 For information on analyzing a dump file, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md).
 
-
 ## <span id="varieties"></span><span id="VARIETIES"></span> Varieties of User-Mode Dump Files
 
 There are several kinds of user-mode crash dump files, but they are divided into two categories:
@@ -30,7 +28,6 @@ The difference between these dump files is one of size. Minidumps are usually mo
 
 **Note**   Much information can be obtained by analyzing a dump file. However, no dump file can provide as much information as actually debugging the crash directly with a debugger.
 
-
 ## <span id="full"></span><span id="FULL"></span>Full User-Mode Dumps
 
 A *full user-mode dump* is the basic user-mode dump file.
@@ -41,10 +38,7 @@ It is possible to "shrink" a full user-mode dump file into a minidump. Simply lo
 
 **Note**   Despite their names, the largest "minidump" file actually contains more information than the full user-mode dump. For example, **.dump /mf** or **.dump /ma** will create a larger and more complete file than **.dump /f**.
 
-
 In user mode, **.dump /m\[**<em>MiniOptions</em>**\]** is the best choice. The dump files created with this switch can vary in size from very small to very large. By specifying the proper *MiniOptions* you can control exactly what information is included.
-
-
 
 ## <span id="minidumps"></span><span id="MINIDUMPS"></span>Minidumps
 
@@ -127,91 +121,19 @@ If you are creating a minidump file with the debugger, you can choose exactly wh
 </tbody>
 </table>
 
-
 These options can be combined. For example, the command **.dump /mfiu** can be used to create a fairly large minidump, or the command **.dump /mrR** can be used to create a minidump that preserves the user's privacy. For full syntax details, see [**.dump (Create Dump File)**](-dump--create-dump-file-.md).
-
 
 ## <span id="creating"></span><span id="CREATING"></span>Creating a User-Mode Dump File
 
-There are several different tools that can be used to create a user-mode dump file: CDB, WinDbg, Windows Error Reporting (WER), UserDump, and ADPlus.
+There are several different tools that can be used to create a user-mode dump file: CDB, WinDbg and Procdump.
 
-For information about creating a user-mode dump file through ADPlus, see [ADPlus](adplus.md).
+## <span id="procdump"></span><span id="Procdump"></span>ProcDump
 
-For information about creating a user-mode dump file through WER, see [Windows Error Reporting](windows-error-reporting.md).
+ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike. ProcDump also includes hung window monitoring (using the same definition of a window hang that Windows and Task Manager use), unhandled exception monitoring and can generate dumps based on the values of system performance counters. It also can serve as a general process dump utility that you can embed in other scripts.
 
+For information about creating a user-mode dump file using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
 
-## <span id="ddk_choosing_the_best_tool_dbg"></span><span id="DDK_CHOOSING_THE_BEST_TOOL_DBG"></span>Choosing the Best Tool
-
-There are several different tools that can create user-mode dump files. In most cases, ADPlus is the best tool to use.
-
-The following table shows the features of each tool.
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left"><a href="adplus.md" data-raw-source="[ADPlus](adplus.md)">ADPlus</a></th>
-<th align="left"><a href="windows-error-reporting.md" data-raw-source="[Windows Error Reporting](windows-error-reporting.md)">Windows Error Reporting</a></th>
-<th align="left"><a href="#cdb-windbg" data-raw-source="[CDB and WinDbg](#cdb-windbg)">CDB and WinDbg</a></th>
-<th align="left"><a href="#userdump" data-raw-source="[UserDump](#userdump)">UserDump</a></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Creating a dump file when an application crashes (postmortem debugging)</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Creating a dump file when an application "hangs" (stops responding but does not actually crash)</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Creating a dump file when an application encounters an exception</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Creating a dump file while an application is running normally</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Creating a dump file from an application that fails during startup</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Shrinking an existing dump file</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 ## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
-
 
 CDB and WinDbg can create user-mode dump files in a variety of ways.
 
@@ -221,7 +143,7 @@ When an application error occurs, Windows can respond in several different ways,
 
 ### <span id="creating_dump_files_while_debugging"></span><span id="CREATING_DUMP_FILES_WHILE_DEBUGGING"></span>Creating Dump Files While Debugging
 
-When CDB or WinDbg is debugging a user-mode application, you can also the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
+When CDB or WinDbg is debugging a user-mode application, you can also use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
 
 This command does not cause the target application to terminate. By selecting the proper command options, you can create a minidump file that contains exactly the amount of information you wish.
 
@@ -229,21 +151,12 @@ This command does not cause the target application to terminate. By selecting th
 
 CDB and WinDbg can also be used to *shrink* a dump file. To do this, begin debugging an existing dump file, and then use the **.dump** command to create a dump file of smaller size.
 
+## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span> Time Travel Debugging (TTD)
 
-## <span id="userdump"></span><span id="USERDUMP"></span>UserDump
+In addition to CDB, WinDbg and Procdump, another option to debug user mode applications is Time Travel Debugging (TTD). Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug.
 
-The UserDump tool (Userdump.exe), also known as User-Mode Process Dump, can create user-mode dump files.
+TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem.
 
-UserDump and its documentation are part of the OEM Support Tools package.
+TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.
 
-For more info and to download these tools, see [How to use the Userdump.exe tool to create a dump file](https://go.microsoft.com/fwlink/p/?LinkId=241339) and follow the instructions on that page. Additionally, When CDB or WinDbg is debugging a user-mode application, you can also use the [.dump (Create Dump File) command](-dump--create-dump-file-.md) to create a dump file.
-
-
-
-
- 
-
-
-
-
-
+For more information on Time Travel Debugging (TTD), see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).

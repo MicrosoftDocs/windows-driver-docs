@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CAPABILITIES
 description: The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking capabilities of a filter.
-ms.assetid: f0ee8fed-cdb5-44f9-96c3-d6edf235ea35
 keywords: ["KSPROPERTY_MEDIASEEKING_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>KS_SEEKING_CAPABILITIES</p></td>
 </tr>
 </tbody>
@@ -55,15 +54,13 @@ The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking 
 
  
 
-Remarks
--------
+## Remarks
 
 The capabilities of a filter that this property retrieves include the ability to seek to an absolute position, to seek forwards or backwards in the media, to get the current position while in play or stop mode, to get the duration, or to play backwards. Note that these are capabilities of the filter as a whole; this property is designed to map to DirectShow seeking capabilities where such capabilities are queried only on a filter, not a pin, basis.
 
 If this property is not supported, it is assumed that the filter does not require positional information and that the filter can be treated as a pass through.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,13 +79,4 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
-
- 
-
-
-
-
-
 

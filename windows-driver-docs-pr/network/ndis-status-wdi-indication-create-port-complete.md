@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLETE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLETE to indicate the completion of OID_WDI_TASK_CREATE_PORT.
-ms.assetid: 8d3cdac1-06d3-4a21-ac13-e6d789c6922e
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLETE Network Drivers Starting with Windows Vista
@@ -24,12 +23,11 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE to in
 
 | Type                                                               | Multiple TLV instances allowed | Optional | Description                         |
 |--------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
-| [**WDI\_TLV\_PORT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-port-attributes) |                                |          | The attributes of the created port. |
+| [**WDI\_TLV\_PORT\_ATTRIBUTES**](./wdi-tlv-port-attributes.md) |                                |          | The attributes of the created port. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -53,9 +51,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

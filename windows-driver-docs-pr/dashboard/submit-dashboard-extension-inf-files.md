@@ -8,11 +8,11 @@ ms.date: 10/17/2018
 
 # Working with Extension INFs in the Partner Center
 
-You can create shipping labels for your Extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions. This topic describes the process for packaging, submitting, and publishing these packages. For more information on how Extension INFs are created and installed, see [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
+You can create shipping labels for your Extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions. This topic describes the process for packaging, submitting, and publishing these packages. For more information on how Extension INFs are created and installed, see [Using an Extension INF file](../install/using-an-extension-inf-file.md).
 
 ## Requirements for publishing Extension INFs to Windows Update 
 
-Publishing Extension INFs to Windows update requires you to select automatic driver promotion checkboxes on your shipping label. The reason Extension INFs cannot be published as optional is because they are not listed in Device Manager for an end user to initiate an “Update Driver” action.   To see these checkboxes, you must first sign up for [driver flighting](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). 
+Publishing Extension INFs to Windows update requires you to select automatic driver promotion checkboxes on your shipping label. The reason Extension INFs cannot be published as optional is because they are not listed in Device Manager for an end user to initiate an “Update Driver” action.   To see these checkboxes, you must first sign up for [driver flighting](./driver-flighting.md). 
 
 > [!NOTE]
 > For Windows Update to offer Extension INFs, all systems must be running at least the RS3 [January 2018 Update](https://support.microsoft.com/help/4056892/windows-10-update-kb4056892) (10.0.16299.192).
@@ -58,7 +58,7 @@ This section describes how to submit and publish an INF package. See the highlig
 
 ### Submitting your packages to the Partner Center
 
-Create a new submission for each of the packages created above and upload them to the Hardware Dev Center.  Afterwards, create a shipping label for the ones you want share or publish. See [Create a new hardware submission](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-new-hardware-submission) and [Manage driver distribution with shipping labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-driver-distribution-by-submission) for more information.
+Create a new submission for each of the packages created above and upload them to the Hardware Dev Center.  Afterwards, create a shipping label for the ones you want share or publish. See [Create a new hardware submission](./create-a-new-hardware-submission.md) and [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md) for more information.
 
 #### ExtensionID
 
@@ -73,7 +73,7 @@ For example, when you create an ExtensionID for a new system part:
 > [!NOTE]
 >
 > * If you use an ExtensionID that is not associated with your SellerID, Partner Center will reject your submission and inform you that the ExtensionID already belongs to another organization:
-> * For a given device, only one Extension INF is installed for each unique ExtensionID value. Therefore, if a device has multiple Extension INFs you will need a new ExtensionID for each one.  This also means if two Extension INFs target the same device with different ExtensionIDs, both Extension INFs will be applied. See [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file) for more information.
+> * For a given device, only one Extension INF is installed for each unique ExtensionID value. Therefore, if a device has multiple Extension INFs you will need a new ExtensionID for each one.  This also means if two Extension INFs target the same device with different ExtensionIDs, both Extension INFs will be applied. See [Using an Extension INF file](../install/using-an-extension-inf-file.md) for more information.
 >
 > If your organization manages projects and submissions for another organization, note the following:
 >
@@ -85,15 +85,15 @@ You should generate a new ExtensionID for the initial version of an Extension IN
 
 ![An image showing the create GUID screen in Visual Studio](images/guid-formatting.png)
 
-If you are updating an Extension INF that has already been published, keep the ExtensionID the same and increment the version and/or date specified by the [DriverVer directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive). the Driver date and driver version are used (in that order) to differentiate between multiple Extension INFs with the same ExtensionID.
+If you are updating an Extension INF that has already been published, keep the ExtensionID the same and increment the version and/or date specified by the [DriverVer directive](../install/inf-driverver-directive.md). the Driver date and driver version are used (in that order) to differentiate between multiple Extension INFs with the same ExtensionID.
 
 ### Publishing an Extension INF
 
-To publish your Extension INF submission, follow the steps in [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update). Ensure that both automatic driver promotion options are checked, and that your Extension INFs have specific targeting. 
+To publish your Extension INF submission, follow the steps in [Publish a driver to Windows Update](./publish-a-driver-to-windows-update.md). Ensure that both automatic driver promotion options are checked, and that your Extension INFs have specific targeting. 
 
 ![An image showing automatic driver promotions](images/automatic-driver-promotion-options.png)
 
-If you do not see these driver promotion options, you may need to sign up for [driver flighting](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting).
+If you do not see these driver promotion options, you may need to sign up for [driver flighting](./driver-flighting.md).
 
 All Extension INFs go through the driver flighting process to be distributed through Windows Update. After a successful flight, the file(s) will be available to retail systems. Joining the Windows Insiders program will give you faster access to drivers in this stage.
 
@@ -116,12 +116,12 @@ In general, there are a few key principles in regards to the ranking/targeting f
 
 * WU will offer (and PnP will install) the highest-ranked extension driver for each applicable Extension ID.
 
-* Extension drivers are ONLY ranked by Date & Version which is included in the DriverVer directive. This is used by both WU and PnP.  See [INF Version Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) and [INF DriverVer directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) for more information.
+* Extension drivers are ONLY ranked by Date & Version which is included in the DriverVer directive. This is used by both WU and PnP.  See [INF Version Section](../install/inf-version-section.md) and [INF DriverVer directive](../install/inf-driverver-directive.md) for more information.
 * Note that PnP and WU don't consider the Feature or Identifier Score (i.e. 2-part vs. 4-part) in regards to extension drivers.
 
 * CHID information is not used when ranking extension drivers on WU (i.e., you can't "block" other extension drivers with CHID targeting).
 
-* For information on driver selection and targeting within the Windows operating system, see [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
+* For information on driver selection and targeting within the Windows operating system, see [Using an Extension INF file](../install/using-an-extension-inf-file.md)
 
 ## FAQ
 
@@ -169,10 +169,10 @@ Yes.  If multiple systems use the same settings, or if you want to customize set
 
 ### Windows Drivers
 
-* [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file)
+* [Using a Universal INF File](../install/using-a-universal-inf-file.md)
 
-* [Getting started with universal drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
+* [Getting started with universal drivers](../develop/getting-started-with-windows-drivers.md)
 
-* [Using a component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
+* [Using a component INF file](../install/using-a-component-inf-file.md)
 
-* [How windows ranks drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)
+* [How windows ranks drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md)

@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's Support of I/O Requests
 description: Storage Class Driver's Support of I/O Requests
-ms.assetid: 046b7978-49ee-4e3e-a85f-f6ad327b91bf
 keywords:
 - storage class drivers WDK , I/O request support
 - class drivers WDK storage , I/O request support
@@ -19,22 +18,17 @@ ms.localizationpriority: medium
 
 The designer of a class driver for an entirely new type of storage device must determine an appropriate set of I/O requests for the driver to support, depending on the nature of the device. The set of requests to be supported generally includes at least the following:
 
-[**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) and, for some device types or for symmetry, [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close)
+[**IRP\_MJ\_CREATE**](../kernel/irp-mj-create.md) and, for some device types or for symmetry, [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md)
 
-[**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control)
+[**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)
 
-[**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read), [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write), or both
+[**IRP\_MJ\_READ**](../kernel/irp-mj-read.md), [**IRP\_MJ\_WRITE**](../kernel/irp-mj-write.md), or both
 
-[**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp)
+[**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md)
 
-[**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power)
+[**IRP\_MJ\_POWER**](../kernel/irp-mj-power.md)
 
-[**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control)
-
- 
+[**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md)
 
  
-
-
-
 

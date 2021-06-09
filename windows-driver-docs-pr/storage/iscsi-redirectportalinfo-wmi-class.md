@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_RedirectPortalInfo WMI Class
 description: ISCSI\_RedirectPortalInfo WMI Class
-ms.assetid: 55730446-7c8b-4c9d-9473-f9bb6edd603e
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -52,13 +51,7 @@ class ISCSI_RedirectPortalInfo
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_redirectportalinfo) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_redirectportalinfo) data structure.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Querying and Changing RSC State
 description: This section describes how to query or change the current receive segment coalescing (RSC) state of an RSC-capable miniport driver.
-ms.assetid: 5455FBB2-3603-44EF-B1C6-494D31DD820D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,12 +13,12 @@ This section describes how to query or change the current receive segment coales
 ## Querying RSC State
 
 
-The current RSC state can be queried by issuing the [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-current-config) OID request. NDIS handles this OID and does not pass it down to the miniport.
+The current RSC state can be queried by issuing the [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](./oid-tcp-offload-current-config.md) OID request. NDIS handles this OID and does not pass it down to the miniport.
 
 ## Changing RSC State
 
 
-RSC can be enabled or disabled by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request. This OID uses an [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. In this structure, the **RscIPv4** and **RscIPv6** members can have the following values:
+RSC can be enabled or disabled by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](./oid-tcp-offload-parameters.md) OID request. This OID uses an [**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. In this structure, the **RscIPv4** and **RscIPv6** members can have the following values:
 
 <table>
 <colgroup>
@@ -50,15 +49,9 @@ RSC can be enabled or disabled by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](ht
 
  
 
-After the miniport driver processes the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request, it must give an [**NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-task-offload-current-config) status indication with the updated offload state.
+After the miniport driver processes the [OID\_TCP\_OFFLOAD\_PARAMETERS](./oid-tcp-offload-parameters.md) OID request, it must give an [**NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG**](./ndis-status-task-offload-current-config.md) status indication with the updated offload state.
 
-When a miniport driver receives a [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-current-config) OID request in which the **NDIS\_OFFLOAD\_PARAMETERS\_RSC\_DISABLED** flag is specified, the driver must indicate any existing coalesced segments up the stack before completing the OID request.
-
- 
+When a miniport driver receives a [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](./oid-tcp-offload-current-config.md) OID request in which the **NDIS\_OFFLOAD\_PARAMETERS\_RSC\_DISABLED** flag is specified, the driver must indicate any existing coalesced segments up the stack before completing the OID request.
 
  
-
-
-
-
 

@@ -1,13 +1,12 @@
 - name: "Driver Security Guidance"
+  href: index.md
 # Auto-expanded node
   items: 
-  - name: "Driver Security Guidance"
-    href: index.md
   - name: "Driver security checklist"
     href: driver-security-checklist.md
   - name: "Threat modeling for drivers"
     href: threat-modeling-for-drivers.md
   - name: "Windows security model for driver developers"
     href: windows-security-model.md
-  - name: "Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility"
+  - name: "Evaluate HVCI driver compatibility"
     href: use-device-guard-readiness-tool.md

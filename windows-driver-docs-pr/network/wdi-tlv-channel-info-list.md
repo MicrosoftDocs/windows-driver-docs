@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CHANNEL_INFO_LIST
 description: WDI_TLV_CHANNEL_INFO_LIST is a TLV that contains a list of channels.
-ms.assetid: D1B82F4F-6722-4D54-B6FF-B7F1309F8C0E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHANNEL_INFO_LIST Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of the array of WDI\_CHANNEL\_NUMBER (UINT32) structures. Th
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

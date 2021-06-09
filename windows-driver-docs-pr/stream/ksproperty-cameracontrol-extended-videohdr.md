@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOHDR
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOHDR is used to enable or disable high dynamic range (HDR) video on the driver. This is a pin level control for video pin only.
-ms.assetid: AC798BF1-4E1A-48D8-8F56-986F89D9C153
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR Streaming Media Devices"]
 topic_type:
 - apiref
@@ -88,7 +87,7 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
-The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>

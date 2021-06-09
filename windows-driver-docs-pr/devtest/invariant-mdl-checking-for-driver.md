@@ -1,7 +1,6 @@
 ---
 title: Invariant MDL Checking for Driver
 description: The Invariant MDL Checking for Driver option monitors how the driver handles invariant MDL buffers on a per-driver basis.
-ms.assetid: 2FA69B7C-3EF4-4660-84D4-5108C97E395F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ The Invariant MDL Checking for Driver option monitors how the driver handles inv
 
  
 
-The Invariant MDL Checking for Driver option performs a more intensive form of the invariant MDL checking than the [Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md) option. When the Invariant MDL Checking for Driver is active, buffer invariance is validated across every call to the [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) and [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) routines.
+The Invariant MDL Checking for Driver option performs a more intensive form of the invariant MDL checking than the [Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md) option. When the Invariant MDL Checking for Driver is active, buffer invariance is validated across every call to the [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) and [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) routines.
 
 Every time a new invariant MDL buffer is seen with an IRP, Driver Verifier computes a signature for the buffer contents and stores it in its internal database. When Driver Verifier encounters an invariant MDL buffer that it has seen earlier, it will validate that the contents of buffer has not changed, by comparing the signature in the database with the signature computed over current invariant MDL buffer contents.
 
@@ -46,10 +45,4 @@ To activate the [Invariant MDL Checking for Stack](invariant-mdl-checking-for-st
     5.  Restart the computer.
 
  
-
- 
-
-
-
-
 

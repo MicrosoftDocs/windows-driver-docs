@@ -1,21 +1,20 @@
 - name: "PCI driver programming guide"
-# Auto-expanded node
-  items: 
-  - name: "PCI driver programming guide"
-    href: index.md
-  - name: "PCI Power Management and Device Drivers"
-    href: pci-power-management-and-device-drivers.md
-  - name: "Enabling PCI Express Native Control in Windows"
-    href: enabling-pci-express-native-control.md
-  - name: "Device Specific Data (_DSD) for PCIe Root Ports"
-    href: dsd-for-pcie-root-ports.md
-  - name: "Accessing PCI Device Configuration Space"
-    href: accessing-pci-device-configuration-space.md
-  - name: "I/O Resource Usage Reduction"
-    href: i-o-resource-usage-reduction.md
-  - name: "Order of Resources in Start-Device IRP"
-    href: order-of-resources-in-start-device-irp.md
-  - name: "PCI Express FAQ for Graphics"
-    href: pci-express-faq-for-graphics.md
-  - name: "PCI Sample"
-    href: pci-sample.md
+  href: index.md
+- name: "PCI Power Management and Device Drivers"
+  href: pci-power-management-and-device-drivers.md
+- name: "Enabling PCI Express Native Control in Windows"
+  href: enabling-pci-express-native-control.md
+- name: "Enabling DMA Remapping for device drivers"
+  href: enabling-dma-remapping-for-device-drivers.md
+- name: "Device Specific Data (_DSD) for PCIe Root Ports"
+  href: dsd-for-pcie-root-ports.md
+- name: "Accessing PCI Device Configuration Space"
+  href: accessing-pci-device-configuration-space.md
+- name: "I/O Resource Usage Reduction"
+  href: i-o-resource-usage-reduction.md
+- name: "Order of Resources in Start-Device IRP"
+  href: order-of-resources-in-start-device-irp.md
+- name: "PCI Express FAQ for Graphics"
+  href: pci-express-faq-for-graphics.md
+- name: "PCI Sample"
+  href: pci-sample.md

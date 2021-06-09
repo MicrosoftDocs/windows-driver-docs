@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SET_CLEAR_RECEIVE_COALESCING
 description: WDI_TLV_SET_CLEAR_RECEIVE_COALESCING is a TLV that contains a filter ID for OID_WDI_SET_CLEAR_RECEIVE_COALESCING.
-ms.assetid: 4AF7A1A4-A1B4-48AD-9989-B9E317F93459
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_CLEAR_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING
 
 
-WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING is a TLV that contains a filter ID for [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-clear-receive-coalescing).
+WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING is a TLV that contains a filter ID for [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](./oid-wdi-set-clear-receive-coalescing.md).
 
 ## TLV Type
 
@@ -32,8 +31,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

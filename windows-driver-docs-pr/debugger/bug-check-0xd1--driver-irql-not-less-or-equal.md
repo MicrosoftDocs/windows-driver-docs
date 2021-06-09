@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
 description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
-ms.assetid: 26cfd881-cc6e-4cc3-b464-e67d75700b96
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
 ms.date: 03/28/2019
 topic_type:
@@ -61,8 +60,7 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 </table>
 
 
-Cause
------
+## Cause
 
 Typically, when this error occurs, a driver has tried to access an address that is pageable (or that is completely invalid) while the interrupt request level (IRQL) was too high. This can be caused by:
 
@@ -72,7 +70,7 @@ Typically, when this error occurs, a driver has tried to access an address that 
 
  - Executing pageable code at or above DISPATCH_LEVEL.
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-), a debugger command, to display this: **dx KiBugCheckDriver**.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: **dx KiBugCheckDriver**.
 
 This bug check is usually caused by drivers that have used improper memory addresses.
 
@@ -85,8 +83,7 @@ Possible causes for the page fault include the following events:
 - The function was called by using a function pointer that was an invalid pointer.
 
 
-Resolution
-----------
+## Resolution
 
 If the problem is caused by the driver that you are developing, make sure that the function that was executing at the time of the bug check is (1) not marked as pageable or (2) does not call any other inline functions that could be paged out.
 
@@ -135,11 +132,10 @@ Use the command `lm t n` to list modules that are loaded in the memory. Use [**!
 
 Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it identifies errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. Driver Verifier Manager is built into Windows and is available on all Windows PCs.
 
-To start Driver Verifier Manager, type **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+To start Driver Verifier Manager, type **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 
-Remarks
--------
+## Remarks
 
 If you are not equipped to use the Windows debugger to work on this problem, you can use some basic troubleshooting techniques.
 

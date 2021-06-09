@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_COMMUNICATIONSTRANSFORM
 description: KSCATEGORY_COMMUNICATIONSTRANSFORM
-ms.assetid: a958c5a6-18a3-43e0-a6ac-84a879a981da
 keywords: ["KSCATEGORY_COMMUNICATIONSTRANSFORM Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_COMMUNICATIONSTRANSFORM
 
 
-The KSCATEGORY_COMMUNICATIONSTRANSFORM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a communication transform device.
+The KSCATEGORY_COMMUNICATIONSTRANSFORM [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a communication transform device.
 
 <table>
 <colgroup>
@@ -45,15 +44,13 @@ The KSCATEGORY_COMMUNICATIONSTRANSFORM [device interface class](https://docs.mic
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_COMMUNICATIONSTRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_COMMUNICATIONSTRANSFORM functional category.
 
-The KSCATEGORY_COMMUNICATIONSTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
+The KSCATEGORY_COMMUNICATIONSTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -71,14 +68,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration During Device Installation
 description: Autoconfiguration During Device Installation
-ms.assetid: 04b53767-4b5e-450d-96ab-b029cdf62b36
 keywords:
 - autoconfiguration WDK printer , during device installations
 - printer autoconfiguration WDK printer , during device installations
@@ -18,7 +17,7 @@ The following figure shows the data flow in autoconfiguration when a device is i
 
 1.  When a printer is installed, the spooler initializes the driver by calling `DrvPrinterEvent` and passing PRINTER\_EVENT\_INITIALIZE in the call.
 
-2.  The driver uses [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index) to obtain the data of interest to it, including values for installable options such as \\Printer.Configuration.DuplexUnit:Installed and \\Printer.Configuration.HardDisk:Installed.
+2.  The driver uses [bidi communication interfaces](/windows-hardware/drivers/ddi/_print/index) to obtain the data of interest to it, including values for installable options such as \\Printer.Configuration.DuplexUnit:Installed and \\Printer.Configuration.HardDisk:Installed.
 
 3.  The bidi communication interface queries the port monitor for values of these attributes. The port monitor might have some of the data requested in its cache. For illustrative purposes in the following steps, assume that the value for \\Printer.Configuration.HardDisk:Installed is in the port monitor's cache, but the value for \\Printer.Configuration.DuplexUnit:Installed is not.
 
@@ -43,9 +42,4 @@ The following figure shows the data flow in autoconfiguration when a device is i
     The driver can determine when a change has occurred during device installation, because the notification message carries the changed value. However, if the notification is too large to be sent through the notification mechanism, the notification will have one or more ReducedSchema instances, each of which indicates that a device characteristic has changed, but without any details of its new value.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Language Specification 2
 description: Language Specification 2
-ms.assetid: 4555ab3c-5bfa-458e-bb22-3fdaedbf3bca
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

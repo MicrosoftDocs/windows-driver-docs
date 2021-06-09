@@ -1,7 +1,6 @@
 ---
 title: L (Windows Debugger Glossary)
 description: Glossary page - L
-ms.assetid: d290c203-4cb3-423c-a41f-baabb3c9a3c1
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

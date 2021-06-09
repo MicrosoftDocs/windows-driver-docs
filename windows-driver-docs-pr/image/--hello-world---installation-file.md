@@ -1,14 +1,13 @@
 ---
 title: Hello World' Installation File
 description: Hello World' Installation File
-ms.assetid: 826f4f99-16bd-4586-9cc1-0afde2fcee65
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # 'Hello World' Installation File
 
-A minidriver requires a setup information (INF) file to be installed. An INF file is a text file containing all of the information needed to install the device. For information about INF files, see the [INF Files for WIA Devices](inf-files-for-wia-devices.md) and [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) section.
+A minidriver requires a setup information (INF) file to be installed. An INF file is a text file containing all of the information needed to install the device. For information about INF files, see the [INF Files for WIA Devices](inf-files-for-wia-devices.md) and [Creating an INF File](../install/overview-of-inf-files.md) section.
 
 The *hellowld.inf* file should contain the following:
 
@@ -82,9 +81,4 @@ Location="Hello World WIA Minidriver Installation Source"
 ```
 
  
-
- 
-
-
-
 

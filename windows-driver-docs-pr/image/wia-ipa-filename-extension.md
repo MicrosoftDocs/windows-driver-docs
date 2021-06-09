@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_FILENAME\_EXTENSION
 description: The WIA\_IPA\_FILENAME\_EXTENSION property contains the file name extension for a particular file format. The WIA minidriver creates and maintains this property.
-ms.assetid: 08abb3f2-73a2-42cd-ae69-1607eda63d1e
 keywords: ["WIA_IPA_FILENAME_EXTENSION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The minidriver updates the WIA\_IPA\_FILENAME\_EXTENSION property to reflect the current value of the [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property.
 
@@ -38,8 +36,7 @@ For example, if WIA\_IPA\_FORMAT is WiaImgFmt\_JPEG, WIA\_IPA\_FILENAME\_EXTENSI
 
 The WIA\_IPA\_FILENAME\_EXTENSION property is recommended for drivers that support standard formats and is required for drivers that implement custom-defined formats. WIA\_IPA\_FILENAME\_EXTENSION informs the application of the correct file name extension to use during the transfer of privately formatted files. For example, if the A. Datum Corporation created a WIA driver that transferred a file in a new format, the company could specify an extension of "adc". This extension enables applications to transfer data in that format to a file and to create a file name such as *Myfile.adc*, which is useful to others who understand the new extension.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

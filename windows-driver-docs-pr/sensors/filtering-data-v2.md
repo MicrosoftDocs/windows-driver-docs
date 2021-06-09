@@ -1,7 +1,6 @@
 ---
 title: Filtering data
 description: In order to optimize data throughput and battery life, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
-ms.assetid: EDABA09D-2C46-4546-9429-CF6DEFBF69C4
 keywords:
 - change sensitivity
 - sensor change sensitivity
@@ -166,5 +165,4 @@ If your sensor hardware, or firmware, supports the notion of a report interval y
 If your sensor does not provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time elapses, retrieve the current device data.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property specifies the current instance of a virtual audio device.
-ms.assetid: 67cdc1ec-c696-454f-a3cc-1b50418c4056
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_INSTANCE Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property specifies the current instan
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -61,8 +60,7 @@ The property value (operation data) is of type ULONG and specifies the device ID
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE set-property request opens the virtual audio device specified by the device ID contained in the property value. The last device to be opened is referred to as the current device.
 
@@ -70,8 +68,7 @@ Some SysAudio properties allow the current device to be identified by a null dev
 
 A get-property request retrieves the device ID of the current (last opened) virtual audio device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -89,20 +86,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT**](ksproperty-sysaudio-device-count.md)
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME**](ksproperty-sysaudio-device-interface-name.md)
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_FRIENDLY\_NAME**](ksproperty-sysaudio-device-friendly-name.md)
-
- 
-
- 
-
-
-
-
-
 

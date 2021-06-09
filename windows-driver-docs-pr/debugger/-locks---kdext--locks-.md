@@ -1,7 +1,6 @@
 ---
 title: locks kdext
 description: The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
-ms.assetid: c1be6c6c-0028-459f-9c92-61df52cbc4b6
 keywords: ["kdext locks extension", "ERESOURCE locks", "deadlocks", "locks  kdext .locks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,8 +62,7 @@ Specifies the hexadecimal address of the ERESOURCE lock to be displayed. If *Add
 
  
 
-Remarks
--------
+## Remarks
 
 The **!locks** extension displays all locks held on resources by threads. A lock can be shared or exclusive, which means no other threads can gain access to that resource. This information is useful when a deadlock occurs on a system. A deadlock is caused by one non-executing thread holding an exclusive lock on a resource that the executing thread needs.
 

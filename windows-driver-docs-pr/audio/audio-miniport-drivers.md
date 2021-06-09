@@ -1,7 +1,6 @@
 ---
 title: Audio Miniport Drivers
 description: Audio Miniport Drivers
-ms.assetid: cf52759e-5da6-41a2-994d-4be15de9ae3d
 keywords:
 - WDM audio drivers WDK , miniport drivers
 - audio drivers WDK , miniport drivers
@@ -21,7 +20,7 @@ This section describes audio miniport driver interfaces and explains how to deve
 
 This documentation does not discuss how to support audio devices that reside on an external bus. For information about supporting audio devices on external buses, see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) and [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver).
 
-The following discussion assumes that the reader is familiar with kernel streaming (KS) concepts. For background information, see [Kernel Streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming).
+The following discussion assumes that the reader is familiar with kernel streaming (KS) concepts. For background information, see [Kernel Streaming](../stream/kernel-streaming.md).
 
 The WDM audio driver model divides the implementation of a KS filter into port and miniport drivers that are complementary but separate. This division makes audio hardware drivers easier to write by isolating generic filter-implementation issues from device-specific hardware-interface issues. Hardware vendors write miniport drivers to directly control their hardware devices, but the port drivers that implement the KS filters are provided with the operating system. The port and miniport drivers communicate with each other through well-defined software interfaces.
 
@@ -50,9 +49,4 @@ Various aspects of miniport driver development are discussed in the following to
 [Other Implementation Issues for Audio Drivers](other-implementation-issues-for-audio-drivers.md)
 
  
-
- 
-
-
-
 

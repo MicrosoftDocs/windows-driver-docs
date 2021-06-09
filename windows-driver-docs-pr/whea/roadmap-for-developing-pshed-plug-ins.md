@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing PSHED Plug-Ins
 description: Roadmap for Developing PSHED Plug-Ins
-ms.assetid: 3e1eb744-e480-4478-9705-94da8029c382
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
 
     You must first understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and let you streamline your development process.
 
-    For more information about driver fundamentals, see [Understanding Driver and Operating System Basics](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers).
+    For more information about driver fundamentals, see [Understanding Driver and Operating System Basics](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md).
 
 -   Step 2: Learn the fundamentals of the Windows Hardware Error Architecture (WHEA).
 
@@ -39,9 +38,9 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
 
     Building a driver is not the same as building a user-mode application.
 
-    For information about Windows driver build, debug, and test processes, driver signing, and Windows Logo testing, see [Building, Debugging, and Testing Drivers](https://docs.microsoft.com/windows-hardware/drivers).
+    For information about Windows driver build, debug, and test processes, driver signing, and Windows Logo testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers).
 
-    For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/index).
+    For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
 -   Step 4: Make design decisions about your PSHED plug-in.
 
@@ -62,12 +61,12 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
     -   For guidelines on developing a PSHED plug-in, see [PSHED Plug-In Guidelines](pshed-plug-in-guidelines.md).
     -   For information about how to build a PSHED plug-in, see [Building a PSHED Plug-In](building-a-pshed-plug-in.md).
     -   For information about WHEA debugger extensions that can be used to debug a PSHED plug-in, see [Windows Hardware Error Architecture Debugger Extensions](windows-hardware-error-architecture-debugger-extensions.md).
-    -   For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](https://docs.microsoft.com/windows-hardware/drivers).
+    -   For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers).
 -   Step 6: Create a driver package for your PSHED Plug-In.
 
-    A PSHED plug-in is a WDM driver. As with other WDM drivers, the PSHED plug-in is installed by using a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages).
+    A PSHED plug-in is a WDM driver. As with other WDM drivers, the PSHED plug-in is installed by using a [driver package](../install/driver-packages.md).
 
-    For more information about driver packages, see [Providing a Driver Package](https://docs.microsoft.com/windows-hardware/drivers).
+    For more information about driver packages, see [Providing a Driver Package](/windows-hardware/drivers).
 
     For more information about how to install a driver package for a PSHED plug-in, see [PSHED Plug-In Installation](pshed-plug-in-installation.md).
 
@@ -80,9 +79,4 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
 These are the basic steps. Additional steps might be necessary based on the needs of your individual PSHED plug-in.
 
  
-
- 
-
-
-
 

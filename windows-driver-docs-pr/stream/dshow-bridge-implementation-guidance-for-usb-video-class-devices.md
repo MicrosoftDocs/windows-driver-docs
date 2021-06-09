@@ -1,13 +1,13 @@
 ---
 title: DShow Bridge implementation guidance for UVC devices
 description: Provides DShow Bridge implementation guidance for UVC devices.
-ms.date: 05/17/2018
+ms.date: 12/16/2020
 ms.localizationpriority: medium
 ---
 
 # DShow Bridge implementation guidance for UVC devices
 
-This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](../usbcon/microsoft-defined-usb-descriptors.md) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 
 ## Overview
 
@@ -17,13 +17,13 @@ DShow Bridge was written with the intent of bridging the DShow pipeline with Med
 
 IHVs and OEMs may need an exemption from the policies governing the DShow pipeline. Partners can enable the following features using the OS Descriptors:
 
--   **Opting in or out of DShow Bridge**: Device can opt in or out of the Bridge to a pipeline better suited to their needs. The modern pipeline is more thoroughly documented and utilizes the features added to the OS over the multiple releases. The legacy pipeline, being in maintenance mode, lags behind.
+- **Opting in or out of DShow Bridge**: Device can opt in or out of the Bridge to a pipeline better suited to their needs. The modern pipeline is more thoroughly documented and utilizes the features added to the OS over the multiple releases. The legacy pipeline, being in maintenance mode, lags behind.
 
--   **MJPEG decompression in Frame server**: Frame server is a service virtualizing a camera device. This enables the Pins from the device to be shared between multiple clients. Architectures having an optimized Media Foundation decompressor can use this feature to decode MJPEG in Frame Server. The Uncompressed translated media formats(YUY2) are offered to the multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications. The following diagram shows the camera capture pipeline:
+- **MJPEG decompression in FrameServer**: FrameServer is a service virtualizing a camera device. This enables the Pins from the device to be shared between multiple clients. Architectures having an optimized Media Foundation decompressor can use this feature to decode MJPEG in FrameServer. The uncompressed translated media formats (YUY2) are offered to the multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications. The following diagram shows the camera capture pipeline:
 
 ![camera capture pipeline](images/camera-capture-pipeline.png)
 
-The OEMs and IHVs packaging their USB camera devices can use the USB bus standard’s Extended Properties OS Feature Descriptor specification to configure DShow Bridge without resorting to any INF file changes for their UVC driver.
+The OEMs and IHVs packaging their USB camera devices can use the USB bus standard's Extended Properties OS Feature Descriptor specification to configure DShow Bridge without resorting to any INF file changes for their UVC driver.
 
 The OS descriptors allow devices to define registry properties for USB devices or composite devices.
 
@@ -38,26 +38,26 @@ The **EnableDshowRedirection** registry value is a bit mask value which can be u
 | Bit mask | Description | Remarks |
 |---|---|---|
 | 0x00000001 | Opt into DShow Bridge | 0 – Opt-out<br>1 – Opt-in  |
-| 0x00000002 | Enable MJPEG decoding in Frame Server (see note below) | 0 – MJPEG compressed media type exposed (no operation)<br>1 – Expose the translated uncompressed media types from MJPEG (YUY2) |
+| 0x00000002 | Enable MJPEG decoding once in FrameServer (see note below) | 0 – MJPEG compressed media type exposed (no operation)<br>1 – Expose the translated uncompressed media types from MJPEG (YUY2) |
 
 > [!NOTE]
-> Enables MJPEG decoding once and only uncompressed media types are offered to applications.
+> Enables MJPEG decoding once in FrameServer and then the uncompressed translated media formats (YUY2) are offered to multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications.
 
 ## Example Layouts
 
 Examples are included below for the following specifications:
 
--   Microsoft OS extended descriptors specification 1.0
+- Microsoft OS extended descriptors specification 1.0
 
--   Microsoft OS 2.0 descriptors specification
+- Microsoft OS 2.0 descriptors specification
 
 ### Microsoft OS extended property descriptors specification version 1.0
 
 The extended properties OS descriptor has two components
 
--   A fixed-length header section
+- A fixed-length header section
 
--   One or more variable length custom properties sections, which follows the header section
+- One or more variable length custom properties sections, which follows the header section
 
 #### Header Section
 
@@ -70,9 +70,9 @@ The header section describes the entire extended properties descriptor, includin
 | 6      | wIndex     | 2            | 0x005      | Extended property OS descriptor |
 | 8      | wCount     | 2            | 0x0001     | One custom property             |
 
-#### Custom Property Section
+#### Custom Property Section (1.0 descriptor)
 
-The USB HID device’s extended property OS descriptor has one custom property section to create the **EnableDshowRedirection** DWORD registry key.
+The USB HID device's extended property OS descriptor has one custom property section to create the **EnableDshowRedirection** DWORD registry key.
 
 | Offset | Field | Size (bytes) | Value |
 |--------|----------------------|---------|-------------------------------------------|
@@ -87,7 +87,7 @@ The USB HID device’s extended property OS descriptor has one custom property s
 
 This example demonstrates how Microsoft 2.0 descriptor sets can be used to provide a single DWORD registry value of **EnableDshowRedirection** that applies to Windows versions.
 
-#### Custom Property Section
+#### Custom Property Section (2.0 descriptor)
 
 | Offset | Field | Size (bytes) | Value |
 |--------|----------------------|----------|-----------------------------------------|
@@ -98,7 +98,6 @@ This example demonstrates how Microsoft 2.0 descriptor sets can be used to provi
 | 10     | PropertyName         | Variable | The length of property name             |
 | 58     | dwPropertyDataLength | 2        | Length of property data                 |
 | 62     | PropertyData         | Variable | Property data                           |
-
 
 ```cpp
 UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
@@ -131,17 +130,14 @@ UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
     0x6F, 0x00, 0x6E, 0x00,
     0x00, 0x00, 0x00, 0x00,
     0x04, 0x00,                 // wPropertyDataLength – 4 bytes
-    0x00, 0x00, 0x00, 0x00      // PropertyData – 0x00000003 (see note below)
+    0x00, 0x00, 0x00, 0x00      // PropertyData – 0x00000003 (DShow Bridge is enabled and MJPEG is decoded in FrameServer)
 }
 ```
 
-> [!NOTE]
-> 0x00000003:- DShow Bridge is enabled and MJPEG is decoded in FrameServer, for example, the source
-
 ### Resources
 
-[Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors)
+[Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md)
 
-[USB Generic Parent Driver (Usbccgp.sys)](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-common-class-generic-parent-driver)
+[USB Generic Parent Driver (Usbccgp.sys)](../usbcon/usb-common-class-generic-parent-driver.md)
 
 [USB Specification](https://www.usb.org/documents)

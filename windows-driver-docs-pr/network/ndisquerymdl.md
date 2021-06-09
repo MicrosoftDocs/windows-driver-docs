@@ -1,7 +1,6 @@
 ---
 title: NdisQueryMdl macro
 description: The NdisQueryMdl macro retrieves the buffer length, and optionally the base virtual address, from an MDL.
-ms.assetid: 0eccd784-c815-4094-87e5-a3e283abed73
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdl macro Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NdisQueryMdl** macro retrieves the buffer length, and optionally the base virtual address, from an MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID NdisQueryMdl(
@@ -25,8 +23,7 @@ VOID NdisQueryMdl(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
@@ -42,20 +39,17 @@ A pointer to a caller-supplied variable in which this macro returns the base vir
 A pointer to a caller-supplied variable in which this macro returns the length, in bytes, of the virtual address range that is described by the MDL.
 
 *\_Priority*   
-A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) macro.
+A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) macro.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
-The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuffer**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff554407(v=vs.85)) function.
+The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,7 +75,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function)"><strong>Irql_NetBuffer_Function</strong></a></td>
+<td><a href="/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](../devtest/ndis-irql-netbuffer-function.md)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -89,14 +83,7 @@ Requirements
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)
+[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
 
-[**NdisQueryBuffer**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff554407(v=vs.85))
-
- 
-
- 
-
-
-
+[**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85))
 

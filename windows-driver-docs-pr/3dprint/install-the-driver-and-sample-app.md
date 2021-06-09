@@ -1,7 +1,6 @@
 ---
 title: Install the driver and sample app
 description: This section provides information on installing the driver and the WSD sample app.
-ms.assetid: BF89F0D0-2ED3-4900-996F-BB7B9C8C9B80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -57,7 +56,7 @@ Deployment of the web service on a windows machine requires that the machine hav
 
     ![applying changes](images/wsd-app-6.png)
 
-7.  When the **Applying changes** dialog closes, open a browser and navigate to http://localhost.
+7.  When the **Applying changes** dialog closes, open a browser and navigate to https://localhost.
 
     ![localhost](images/wsd-app-7.png)
 
@@ -67,7 +66,7 @@ Publish the Handler project to localhost to deploy the web service.
 
 ![publish web](images/wsd-app-8.png)
 
-Once publishing is successful, browsing to http://localhost will result in an empty file being sent back. If the handler is not setup correctly, you will receive an error message or potentially see the default IIS web page.
+Once publishing is successful, browsing to https://localhost will result in an empty file being sent back. If the handler is not setup correctly, you will receive an error message or potentially see the default IIS web page.
 
 You can switch the **DefaultAppPool** to run with the **NetworkService** identity and it will continue to work as expected. **DefaultAppPool** should also work across the network as well.
 
@@ -121,12 +120,7 @@ By default, Windows blocks port 80 on a machine, so you will need to update Wind
 
 Ad-hoc discovery can be performed by implementing a UDP server that listens to discovery events on port 3702.
 
-For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](https://docs.microsoft.com/windows/desktop/WsdApi/discovery-and-metadata-exchange-message-patterns).
+For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](/windows/desktop/WsdApi/discovery-and-metadata-exchange-message-patterns).
 
  
-
- 
-
-
-
 

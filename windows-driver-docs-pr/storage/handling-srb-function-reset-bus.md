@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_RESET_BUS
 description: Handling SRB_FUNCTION_RESET_BUS
-ms.assetid: 285cbd5c-e364-4f0f-9020-0bc6f3d45cac
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -16,14 +15,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_srb_function_reset_bus_kg"></span><span id="DDK_HANDLING_SRB_FUNCTION_RESET_BUS_KG"></span>
 
 
-The system port driver always sends its own reset-bus requests directly to the miniport driver's [*HwScsiResetBus*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557318(v=vs.85)) routine, described in [SCSI Miniport Driver's HwScsiResetBus Routine](scsi-miniport-driver-s-hwscsiresetbus-routine.md).
+The system port driver always sends its own reset-bus requests directly to the miniport driver's [*HwScsiResetBus*](/previous-versions/windows/hardware/drivers/ff557318(v=vs.85)) routine, described in [SCSI Miniport Driver's HwScsiResetBus Routine](scsi-miniport-driver-s-hwscsiresetbus-routine.md).
 
-However, it is possible for the [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine to be called with an SRB in which the **Function** member is set to SRB\_FUNCTION\_RESET\_BUS if a NT-based operating system storage class driver requests this operation. The *HwScsiStartIo* routine can simply call the *HwScsiResetBus* routine to satisfy an incoming bus-reset request.
-
- 
+However, it is possible for the [**HwScsiStartIo**](/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine to be called with an SRB in which the **Function** member is set to SRB\_FUNCTION\_RESET\_BUS if a NT-based operating system storage class driver requests this operation. The *HwScsiStartIo* routine can simply call the *HwScsiResetBus* routine to satisfy an incoming bus-reset request.
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Tools for Debugging Drivers
 description: Tools for Debugging Drivers
-ms.assetid: caaa2608-78fb-4656-9650-417cfa5678d8
 keywords:
 - tools WDK , debugging drivers
 - driver development tools WDK , debugging drivers
@@ -25,15 +24,9 @@ This section includes:
 [Using a Debugger](using-a-debugger.md)
 
 **Note**  The Windows Driver Kit (WDK) 8 includes additional debugging tools: WSDDebug\_client.exe and WSDDebug\_host.exe. If you open a Visual Studio Command Prompt window, you can find these tools in the %WindowsSdkDir%\\bin\\*&lt;arch&gt;* directory. (These tools are also included in the Microsoft Windows SDK.)
-These tools are a soft device and client that you can use to troubleshoot devices or applications. For more information about WSDDebug\_client and WSDDebug\_host, see the [Web Services on Devices](https://go.microsoft.com/fwlink/p/?linkid=81407) section of the Windows SDK.
+These tools are a soft device and client that you can use to troubleshoot devices or applications. For more information about WSDDebug\_client and WSDDebug\_host, see the [Web Services on Devices](/windows/win32/wsdapi/wsd-portal) section of the Windows SDK.
 
  
 
  
-
- 
-
-
-
-
 

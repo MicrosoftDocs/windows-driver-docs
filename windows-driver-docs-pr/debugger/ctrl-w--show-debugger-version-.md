@@ -1,7 +1,6 @@
 ---
 title: CTRL+W (Show Debugger Version)
 description: The CTRL+W key displays version information for the debugger and all loaded extension DLLs.
-ms.assetid: 9651965e-fbf5-4084-adcd-63de60998b8b
 keywords: ["CTRL+W (Show Debugger Version) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ CTRL+ALT+W
 
  
 
-Remarks
--------
+## Remarks
 
 This has the same effect as the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command, except that the latter command displays the Windows operating system version as well.
 

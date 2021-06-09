@@ -9,7 +9,7 @@ ms.date: 10/17/2018
 
 Each per-Models *DDInstall*.**Software** section contains one or more [**INF AddSoftware directives**](inf-addsoftware-directive.md) that reference additional INF-writer-defined sections in a software component INF file.  This section is supported for Windows 10 Version 1703 and later.
 
-```ini
+```inf
 [install-section-name.Software] |
 [install-section-name.nt.Software] |
 [install-section-name.ntx86.Software] |
@@ -41,7 +41,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
 ## Examples
 
-```ini
+```inf
 [ContosoCtrlPnl.NT.Software]
 AddSoftware = ContosoGrfx1CtrlPnl,, Software_Inst
 

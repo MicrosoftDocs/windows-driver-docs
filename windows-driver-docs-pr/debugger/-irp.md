@@ -1,7 +1,6 @@
 ---
 title: irp extension command
 description: The irp extension displays information about an I/O request packet (IRP).
-ms.assetid: 2260255d-813b-4b89-8dbe-6ce7e5596ccf
 keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
 ms.date: 08/23/2018
 topic_type:
@@ -52,7 +51,7 @@ If this parameter is included with any value, such as 1, the output includes the
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) and [Debugging Interrupt Storms](debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation.
 
-This topic describes the IRP structure, [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp).
+This topic describes the IRP structure, [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp).
 
 For detailed information on decoding the IRP structure including the returned Args, see the following resources.
 
@@ -60,8 +59,7 @@ For detailed information on decoding the IRP structure including the returned Ar
 - Developing Drivers with the Windows Driver Foundation Guy Smith and Penny Orwick
 
 
-Remarks
--------
+## Remarks
 
 The output also indicates under what conditions the completion routine for each stack location will be called once the IRP has completed and the stack location is processed. There are three possibilities:
 
@@ -506,18 +504,11 @@ The SCSI minor function codes are as follows:
 ## <span id="see_also"></span>See also
 
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**!irpfind**](-irpfind.md)
 
 [**!ioctldecode**](-ioctldecode.md)
 
  
-
- 
-
-
-
-
-
 

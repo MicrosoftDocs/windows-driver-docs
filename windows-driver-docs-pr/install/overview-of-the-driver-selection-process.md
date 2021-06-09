@@ -1,7 +1,6 @@
 ---
 title: Overview of the Driver Selection Process
 description: Overview of the Driver Selection Process
-ms.assetid: 120ab9f9-6ac5-4b76-bee1-2e975d0c38f2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Windows represents a driver as a *driver node*, which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
 
-Some devices require a vendor-supplied driver that is designed specifically for that device or one that is designed to support a family of devices. However, other devices can be driven by a system-supplied driver that supports all the devices of a given [device setup class](device-setup-classes.md). Windows selects the driver that most closely matches the device. If Windows does not find such a driver, it selects from increasingly more general drivers.
+Some devices require a vendor-supplied driver that is designed specifically for that device or one that is designed to support a family of devices. However, other devices can be driven by a system-supplied driver that supports all the devices of a given [device setup class](./overview-of-device-setup-classes.md). Windows selects the driver that most closely matches the device. If Windows does not find such a driver, it selects from increasingly more general drivers.
 
 ### <a href="" id="how-setup-searches-for-drivers"></a> How Windows Searches for Drivers
 
@@ -23,21 +22,21 @@ Windows searches in specific locations for drivers that match a device. A driver
 
     For more information about the *TargetOSVersion* decoration, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
 
-For more information about where Windows searches for matching drivers, see [Where Windows Searches for Drivers](where-setup-searches-for-drivers.md).
+For more information about where Windows searches for matching drivers, see [Where Windows Searches for Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
 ### <a href="" id="how-setup-ranks-drivers"></a> How Windows Ranks Drivers
 
 Windows creates a list of all the matching drivers and assigns each driver a rank. Windows represents each driver's rank with an integer value that is greater than or equal to zero.
 
-For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers.md).
+For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
 Starting with Windows Vista, Windows also ranks drivers based on whether the driver is digitally signed. Windows ranks drivers based on a digital signature as follows:
 
--   If the [**AllSignersEqual** Group Policy](allsignersequal-group-policy--windows-vista-and-later-.md) is disabled, Windows ranks drivers that are signed with a Microsoft signature higher than drivers that are signed with an [Authenticode](authenticode.md) signature. This ranking occurs even if a driver that is signed with an Authenticode signature is, in all other aspects, a better match for a device.
+-   If the [**AllSignersEqual** Group Policy](./allsigningequal-group-policy.md) is disabled, Windows ranks drivers that are signed with a Microsoft signature higher than drivers that are signed with an [Authenticode](authenticode.md) signature. This ranking occurs even if a driver that is signed with an Authenticode signature is, in all other aspects, a better match for a device.
 
--   If the [**AllSignersEqual** Group Policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled, Windows ranks all digitally signed drivers equally.
+-   If the [**AllSignersEqual** Group Policy](./allsigningequal-group-policy.md) is enabled, Windows ranks all digitally signed drivers equally.
 
-**Note**  Starting with Windows 7, the [AllSignersEqual Group Policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** Group Policy.
+**Note**  Starting with Windows 7, the [AllSignersEqual Group Policy](./allsigningequal-group-policy.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** Group Policy.
 
  
 
@@ -68,10 +67,4 @@ Windows uses the following criteria to select a driver for a device:
 -   For drivers that have equal rank, date, and version, Windows can select any driver.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_CREATEALLOCATIONFLAGS2 structure
 description: The DXGK\_CREATEALLOCATIONFLAGS2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: c0d57a64-c509-4d72-81eb-7591bb0c1b9b
 keywords: ["_DXGK_CREATEALLOCATIONFLAGS2 structure Display Devices", "DXGK_CREATEALLOCATIONFLAGS2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_CREATEALLOCATIONFLAGS2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_CREATEALLOCATIONFLAGS2 {
@@ -35,8 +33,7 @@ typedef struct _DXGK_CREATEALLOCATIONFLAGS2 {
 } DXGK_CREATEALLOCATIONFLAGS2;
 ```
 
-Members
--------
+## Members
 
 **Resource**
 Reserved for system use.
@@ -47,8 +44,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

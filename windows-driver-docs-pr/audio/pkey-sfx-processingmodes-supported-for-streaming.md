@@ -1,7 +1,6 @@
 ---
 title: PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 8.1 and later, the PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming property key identifies the streaming processing modes supported by the driver.
-ms.assetid: 10E436BC-A4A1-4A2D-A22B-14DDD958FDB3
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

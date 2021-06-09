@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_SET_TCP_SILENT_MODE control code
 description: The SIO_WSK_SET_TCP_SILENT_MODE socket I/O control operation allows a WSK client to enable silent mode on the TCP connection.
-ms.assetid: 8ADC7FF4-86AC-4424-B763-8B62BF440D9F
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_TCP_SILENT_MODE control code Network Drivers Starting with Windows Vista
@@ -15,10 +14,9 @@ The **SIO\_WSK\_SET\_TCP\_SILENT\_MODE** socket I/O control operation allows a W
 
 A TCP connection in silent mode will not send any data or control packets on the wire. This socket I/O control operation applies only to connected TCP sockets. It is not supported on loopback.
 
-To perform this operation, call the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To perform this operation, call the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
-Parameters
-----------
+## Parameters
 
 *RequestType* \[in\]  
 Use **WskIoctl** for this operation.
@@ -44,19 +42,17 @@ Use **NULL** for this operation.
 *OutputSizeReturned* \[out\]  
 Use **NULL** for this operation.
 
-Remarks
--------
+## Remarks
 
-A WSK application must specify a pointer to an IRP when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to enable silent mode.
+A WSK application must specify a pointer to an IRP when calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to enable silent mode.
 
-The WSK application before calling [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) to enable silent mode must ensure that there are no pending send or disconnect requests.
+The WSK application before calling [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) to enable silent mode must ensure that there are no pending send or disconnect requests.
 
-[**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) will return **STATUS\_SUCCESS** when silent mode is enabled. Once silent mode is enabled, send and disconnect requests will be failed with **STATUS\_INVALID\_DEVICE\_STATE** and all received control or data packets will be discarded silently.
+[**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) will return **STATUS\_SUCCESS** when silent mode is enabled. Once silent mode is enabled, send and disconnect requests will be failed with **STATUS\_INVALID\_DEVICE\_STATE** and all received control or data packets will be discarded silently.
 
-The only valid operation on this socket is [**WskCloseSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket).
+The only valid operation on this socket is [**WskCloseSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -78,14 +74,9 @@ Requirements
 ## See also
 
 
-[**WskCloseSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket)
+[**WskCloseSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket)
 
-[**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket)
-
- 
+[**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket)
 
  
-
-
-
 

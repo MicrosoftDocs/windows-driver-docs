@@ -1,7 +1,6 @@
 ---
 title: UI Plug-in Changes
 description: UI Plug-in Changes
-ms.assetid: e4042eb8-a626-4237-97ae-37a5175005a5
 keywords:
 - in-box autoconfiguration support WDK printer , UI plug-in changes
 ms.date: 04/20/2017

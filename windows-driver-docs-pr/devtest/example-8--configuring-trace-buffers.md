@@ -1,7 +1,6 @@
 ---
 title: Example 8 Configuring Trace Buffers
 description: Example 8 Configuring Trace Buffers
-ms.assetid: 7bcc076c-6feb-4660-88d7-dc4206b53dce
 keywords:
 - trace buffers WDK
 - buffers WDK software tracing

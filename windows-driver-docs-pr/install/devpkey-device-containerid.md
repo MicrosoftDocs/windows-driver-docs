@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ContainerId
 description: DEVPKEY_Device_ContainerId
-ms.assetid: 9d5be913-b699-4d8f-aa3f-53ad5dbe6482
 keywords: ["DEVPKEY_Device_ContainerId Device and Driver Installation"]
 topic_type:
 - apiref
@@ -25,6 +24,12 @@ The DEVPKEY_Device_ContainerId device property is used by the Plug and Play (PnP
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -47,8 +52,7 @@ The DEVPKEY_Device_ContainerId device property is used by the Plug and Play (PnP
 
  
 
-Remarks
--------
+## Remarks
 
 Starting with Windows 7, the PnP manager uses the device container and its identifier (*ContainerID*) to group one or more *devnodes* that originated from and belong to each instance of a particular physical device. The ContainerID for a device instance is referenced through the DEVPKEY_Device_ContainerId device property.
 
@@ -60,7 +64,7 @@ When you group all the devnodes that originated from an instance of a single dev
 
 The DEVPKEY_Device_ContainerId can be used to determine the device container grouping of *devnodes* in a system. For a given devnode, you can determine all the devnodes that belong to the same container by completing the following steps:
 
--   Call **SetupDiGetDeviceProperty** value for the device container to which that devnode belongs.
+-   Call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to query DEVPKEY_Device_ContainerId for the given devnode. Windows returns the ContainerID *GUID* value for the device container to which that devnode belongs.
 
 -   Enumerate all devnodes on the computer and query each devnode for its DEVPKEY_Device_ContainerId. Each ContainerId value that matches the ContainerId value of the original devnode is part of same container.
 
@@ -68,10 +72,9 @@ The DEVPKEY_Device_ContainerId can be used to determine the device container gro
 
  
 
-For more information about ContainerIDs, see [Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids).
+For more information about ContainerIDs, see [Container IDs](./container-ids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -93,16 +96,7 @@ Requirements
 ## See also
 
 
-[Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids)
+[Container IDs](./container-ids.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
-
- 
-
-
-
-
-
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

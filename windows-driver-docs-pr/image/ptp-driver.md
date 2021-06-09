@@ -1,18 +1,17 @@
 ---
 title: PTP Driver
 description: PTP Driver
-ms.assetid: c8bfdea9-0778-498f-a87d-d2766c9c02cc
 ms.date: 08/09/2017
 ms.localizationpriority: medium
 ---
 
 # PTP Driver
 
-The Picture Transfer Protocol (PTP) driver enables PTP devices to support the WIA driver model. 
+The Picture Transfer Protocol (PTP) driver enables PTP devices to support the WIA driver model.
 
-This driver is written using the WIA architecture and adheres to Picture Transfer Protocol (PTP) standard. 
+This driver is written using the WIA architecture and adheres to Picture Transfer Protocol (PTP) standard.
 
-Refer to the [ISO 15740:2013 Picture transfer protocol](https://go.microsoft.com/fwlink/p/?LinkId=517024) website for definitions of these structures.
+Refer to the [ISO 15740:2013 Picture transfer protocol](https://www.iso.org/obp/ui/#iso:std:iso:15740:ed-3:v1:en) website for definitions of these structures.
 
 This section covers the following topics:
 
@@ -35,9 +34,3 @@ This section covers the following topics:
 [Vendor-Extended Features](vendor-extended-features.md)
 
 [PTP References](ptp-references.md)
-
- 
-
- 
-
-

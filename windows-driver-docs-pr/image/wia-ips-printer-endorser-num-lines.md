@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_NUM\_LINES
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_NUM\_LINES property specifies the maximum number of lines of text that can be printed or endorsed on each side of a document by the Imprinter/Endorser unit.
-ms.assetid: 64C9C0B7-78C9-4EDF-B91D-2E9AD45A4D1E
 keywords: ["WIA_IPS_PRINTER_ENDORSER_NUM_LINES Imaging Devices"]
 topic_type:
 - apiref
@@ -26,13 +25,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_NUM\_LINES** property is optional for the Imprinter/Endorser items. When this property is not supported, only a single line of text is allowed on each side of a document.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

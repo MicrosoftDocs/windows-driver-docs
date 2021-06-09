@@ -1,7 +1,6 @@
 ---
 title: Update the hotspot authentication sample
 description: Update the hotspot authentication sample
-ms.assetid: 68ebcdee-7b21-4177-b032-ba725ad2aee4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Update the hotspot authentication sample
 
 
-The [Hotspot Authentication Sample](https://go.microsoft.com/fwlink/p/?linkid=313215) project uses a default carrier ID and application family name. To use the sample in your own test environment, you must change the following items:
+The [Hotspot Authentication Sample](/samples/browse/) project uses a default carrier ID and application family name. To use the sample in your own test environment, you must change the following items:
 
 -   **Update your Carrier ID** If you are publishing a mobile broadband app, this should be the Experience ID that is associated with your app and service metadata. If you are a Wi-Fi-only operator, generate a new GUID to use as your company’s ID.
 
@@ -28,14 +27,7 @@ The [Hotspot Authentication Sample](https://go.microsoft.com/fwlink/p/?linkid=31
 ## <span id="related_topics"></span>Related topics
 
 
-[Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
+[Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
 
  
-
- 
-
-
-
-
-
 

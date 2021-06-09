@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /bootdebug
 description: The /bootdebug boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.
-ms.assetid: 85d0a25e-c411-4d7e-ae11-ce5bed1a37b8
 ms.date: 04/22/2019
 keywords: ["BCDEdit /bootdebug Driver Development Tools"]
 topic_type:
@@ -15,16 +14,14 @@ ms.localizationpriority: medium
 
 # BCDEdit /bootdebug
 
-
 The **/bootdebug** boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.
 
 
 ``` syntax
-    bcdedit /bootdebug [{ID}] { on | off } 
+bcdedit /bootdebug [{ID}] { on | off }
 ```
 
-Parameters
-----------
+## Parameters
 
 **{**<em>ID</em>**}**
 
@@ -56,22 +53,22 @@ The default values for the dbgsettings are shown in the following table.
 
 The following command enables boot debugging of the Windows boot loader for the current operating system. The Windows boot loader (Winload.exe) controls the load UI and loads the kernel boot drivers.
 
-```
+```console
 bcdedit /bootdebug on
 ```
 
 The following command disables boot debugging of Windows Boot Manager (Bootmgr.exe). Windows Boot Manager selects which operating system will start, and then loads the Windows boot loader.
 
-```
+```console
 bcdedit /bootdebug {bootmgr} off
 ```
 
 In the following example, the commands enable debugging of Windows Boot Manager, the boot loader, and then kernel debugging of the operating system. This combination allows debugging at every stage of startup. If this combination is used, the target computer will break into the debugger three times: when Windows Boot Manager loads, when the boot loader loads, and when the operating system starts up.
 
-```
-bcdedit /bootdebug {bootmgr} on 
-bcdedit /bootdebug on 
-bcdedit /debug on 
+```console
+bcdedit /bootdebug {bootmgr} on
+bcdedit /bootdebug on
+bcdedit /debug on
 ```
 
-For general information about Windows debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+For general information about Windows debugging tools, see [Windows Debugging](../debugger/index.md).

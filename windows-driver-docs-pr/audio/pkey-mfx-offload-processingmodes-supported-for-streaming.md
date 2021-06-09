@@ -1,7 +1,6 @@
 ---
 title: PKEY\_MFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 10, version 1511 and later, the PKEY\_MFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming property key identifies the mode effect processing modes supported for offload streaming supported by the driver.
-ms.assetid: 48E12E69-5159-4483-9891-2B689B7C3DCE
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

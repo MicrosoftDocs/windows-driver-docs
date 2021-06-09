@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION
 description: The WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION property is used to configure the direction (relative to the scan direction) in which the device searches for barcodes on each scanned document page.
-ms.assetid: 8A328AEE-EAFD-4282-B902-D29BB8175461
 keywords: ["WIA_IPS_BARCODE_SEARCH_DIRECTION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION** property.
 
@@ -73,8 +71,7 @@ The following table describes the valid values for the **WIA\_IPS\_BARCODE\_SEAR
 
 This property is required for all Barcode Reader items, but it can be implemented to support only the WIA\_BARCODE\_AUTO\_SEARCH value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

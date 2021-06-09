@@ -1,7 +1,6 @@
 ---
 title: .cxr (Display Context Record)
 description: The .cxr command displays the context record saved at the specified address. It also sets the register context.
-ms.assetid: 0e882639-6029-4512-8d46-050228e95cb6
 keywords: ["Display Context Record (.cxr) command", "context record", ".cxr (Display Context Record) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -68,8 +67,7 @@ Omitting the address does not display any context record information, but it doe
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 The information from a context record can be used to assist in debugging a system halt where an unhandled exception has occurred and an exact stack trace is not available. The **.cxr** command displays the important registers for the specified context record.
 

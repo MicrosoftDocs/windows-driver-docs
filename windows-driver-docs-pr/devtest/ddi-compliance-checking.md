@@ -1,19 +1,15 @@
 ---
 title: DDI compliance checking
 description: The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
-ms.assetid: 1E536DE0-071B-4529-B228-DB5DAE71099C
-ms.date: 04/20/2017
+ms.date: 04/03/2020
 ms.localizationpriority: medium
 ---
 
 # DDI compliance checking
 
-
 The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
 
 **Note**  This option is available starting with Windows 8. Starting in Windows 8.1, you can test additional rules, by selecting [Activating the DDI compliance checking (additional) option](#activating-the-ddi-compliance-checking-additional-option).
-
-
 
 | DDI compliance checking |
 |-------------------------|
@@ -25,76 +21,81 @@ When this option is active and Driver Verifier detects that the driver violates 
 
 When you select the DDI compliance checking option, the following rules are included.
 
-[**GuardedRegions**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-guardedregions) (Starting in Windows 8.1)
+[**GuardedRegions**](./wdm-guardedregions.md) (Starting in Windows 8.1)
 
-[**IoSetCompletionExCompleteIrp**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-iosetcompletionexcompleteirp) (Starting in Windows 8.1)
+[**IoSetCompletionExCompleteIrp**](./wdm-iosetcompletionexcompleteirp.md) (Starting in Windows 8.1)
 
-[**IrqlApcLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlapclte)
+[**IrqlApcLte**](./wdm-irqlapclte.md)
 
-[**IrqlDispatch**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqldispatch)
+[**IrqlDispatch**](./wdm-irqldispatch.md)
 
-[**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool)
+[**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md)
 
-[**IrqlExApcLte1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1)
+[**IrqlExApcLte1**](./wdm-irqlexapclte1.md)
 
-[**IrqlExApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+[**IrqlExApcLte2**](./wdm-irqlexapclte2.md)
 
-[**IrqlExApcLte3**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte3)
+[**IrqlExApcLte3**](./wdm-irqlexapclte3.md)
 
-[**IrqlExPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexpassive)
+[**IrqlExPassive**](./wdm-irqlexpassive.md)
 
-[**IrqlIoApcLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlioapclte)
+[**IrqlIoApcLte**](./wdm-irqlioapclte.md)
 
-[**IrqlIoDispatch**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliodispatch)
+[**IrqlIoDispatch**](./wdm-irqliodispatch.md)
 
-[**IrqlIoPassive1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive1)
+[**IrqlIoPassive1**](./wdm-irqliopassive1.md)
 
-[**IrqlIoPassive2**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive2)
+[**IrqlIoPassive2**](./wdm-irqliopassive2.md)
 
-[**IrqlIoPassive3**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive3)
+[**IrqlIoPassive3**](./wdm-irqliopassive3.md)
 
-[**IrqlIoPassive4**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive4)
+[**IrqlIoPassive4**](./wdm-irqliopassive4.md)
 
-[**IrqlIoPassive5**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive5)
+[**IrqlIoPassive5**](./wdm-irqliopassive5.md)
 
-[**IrqlKeApcLte1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkeapclte1)
+[**IrqlKeApcLte1**](./wdm-irqlkeapclte1.md)
 
-[**IrqlKeApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkeapclte2)
+[**IrqlKeApcLte2**](./wdm-irqlkeapclte2.md)
 
-[**IrqlKeDispatchLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkedispatchlte)
+[**IrqlKeDispatchLte**](./wdm-irqlkedispatchlte.md)
 
-[**IrqlKeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkereleasespinlock)
+[**IrqlKeReleaseSpinLock**](./wdm-irqlkereleasespinlock.md)
 
-[**IrqlKeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkesetevent)
+[**IrqlKeSetEvent**](./wdm-irqlkesetevent.md)
 
-[**IrqlMmApcLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlmmapclte)
+[**IrqlMmApcLte**](./wdm-irqlmmapclte.md)
 
-[**IrqlMmDispatch**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlmmdispatch)
+[**IrqlMmDispatch**](./wdm-irqlmmdispatch.md)
 
-[**IrqlObPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlobpassive)
+[**IrqlObPassive**](./wdm-irqlobpassive.md)
 
-[**IrqlPsPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlpspassive)
+[**IrqlPsPassive**](./wdm-irqlpspassive.md)
 
-[**IrqlReturn**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlreturn) (Starting in Windows 8.1)
+[**IrqlReturn**](./wdm-irqlreturn.md) (Starting in Windows 8.1)
 
-[**IrqlRtlPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlrtlpassive)
+[**IrqlRtlPassive**](./wdm-irqlrtlpassive.md)
 
-[**IrqlZwPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlzwpassive)
+[**IrqlZwPassive**](./wdm-irqlzwpassive.md)
 
-[**NdisOidComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoidcomplete) (Starting in Windows 8.1)
+[**NdisOidComplete**](./ndis-ndisoidcomplete.md) (Starting in Windows 8.1)
 
-[**NdisOidDoubleComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoiddoublecomplete) (Starting in Windows 8.1)
+[**NdisOidDoubleComplete**](./ndis-ndisoiddoublecomplete.md) (Starting in Windows 8.1)
 
-[**PnpRemove**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-pnpremove) (Starting in Windows 8.1)
+[**PnpRemove**](./wdm-pnpremove.md) (Starting in Windows 8.1)
 
-[**RequestedPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-requestedpowerirp) (Starting in Windows 8.1)
+[**RequestedPowerIrp**](./wdm-requestedpowerirp.md) (Starting in Windows 8.1)
 
-[**QueuedSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-queuedspinlock) (Starting in Windows 8.1)
+[**QueuedSpinLock**](./wdm-queuedspinlock.md) (Starting in Windows 8.1)
 
-[**SpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlock) (Starting in Windows 8.1)
+[**SpinLock**](./wdm-spinlock.md) (Starting in Windows 8.1)
+
+These two rules are currently optional, but recommended.
+
+[(Optional) **IrqlNtifsApcPassive**](./wdm-irqlntifsapcpassive.md)
+
+[(Optional) **IrqlIoRtlZwPassive**](./wdm-irqliortlzwpassive.md)
 
 ## <span id="Activating_the_DDI_compliance_checking_option"></span><span id="activating_the_ddi_compliance_checking_option"></span><span id="ACTIVATING_THE_DDI_COMPLIANCE_CHECKING_OPTION"></span>Activating the DDI compliance checking option
-
 
 You can activate the DDI compliance checking feature for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the DDI compliance checking option. The DDI compliance checking feature is activated when you use the standard settings (**/standard**).
 
@@ -125,13 +126,16 @@ You can activate the DDI compliance checking feature for one or more drivers by 
 
 Starting in Windows 8.1, the **DDI compliance checking (additional) option** option provides additional rules to determine whether the driver correctly interacts with the Windows operating system kernel. When you select the **DDI compliance checking (additional) option**, the following rules are tested:
 
--   [**CriticalRegions**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-criticalregions)
+- [**CriticalRegions**](./wdm-criticalregions.md)
 
--   [**QueuedSpinLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-queuedspinlockrelease)
+- [**QueuedSpinLockRelease**](./wdm-queuedspinlockrelease.md)
 
--   [**SpinlockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlockrelease)
+- [**SpinlockRelease**](./wdm-spinlockrelease.md)
 
 ## Activating the DDI compliance checking (additional) option
+
+>[!Note]
+> **This check is deprecated starting in Windows 10 Insider Preview Build 19042 and above**
 
 
 You can activate the **DDI compliance checking (additional)** rules for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the **DDI compliance checking (additional)** option.
@@ -148,17 +152,26 @@ You can activate the **DDI compliance checking (additional)** rules for one or m
 
 -   **Using Driver Verifier Manager**
 
-    1.  Start Driver Verifier Manager. Type **Verifier** in a Command Prompt window.
+    1.  To start Driver Verifier Manager, type **Verifier** in a Command Prompt window.
     2.  Select **Create custom settings (for code developers)** and then click **Next**.
     3.  Select **Select individual settings from a full list**.
     4.  Select (check) **DDI compliance checking (additional)**.
     5.  Restart the computer.
 
+## Activating the DDI compliance checking (additional IRQL) option
 
+You can activate the DDI Compliance additional IRQL rules for one or more drivers by using the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the DDI Compliance additional IRQL rules.
 
+At the command line, DDI Compliance additional IRQL checking is represented by a rule class value of 35. For example:
 
+`verifier /ruleclasses 35 /driver MyDriver.sys`
 
+OR
 
+`verifier /rc 35 /driver MyDriver.sys`
 
+The additional IRQL rule set consists of the following two rules.
 
+[(Optional) **IrqlNtifsApcPassive**](./wdm-irqlntifsapcpassive.md)
 
+[(Optional) **IrqlIoRtlZwPassive**](./wdm-irqliortlzwpassive.md)

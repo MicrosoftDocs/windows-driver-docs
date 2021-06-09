@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Wi-Fi Discovery Service Overview
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 The Wi-Fi discovery service enables users to reduce data costs by offloading cellular traffic to Wi-Fi hotspots. The discovery service aggregates Wi-Fi hotspot data from providers, such as mobile operators, and other sources to produce a directory of known Wi-Fi hotspots. By using this directory, users can obtain information about hotspots near their current position.
 
@@ -86,7 +86,7 @@ The following table contains the list of possible parameters for WiFiProvider.ex
 | --- | --- |
 | DataFile | Required. The name of the file that contains the hotspot data. |
 | ProviderId | Required. The Microsoft-assigned provider ID (a GUID). |
-| ServiceEndpoint | Required. The URL of the discovery service server to which the hotspot data will be uploaded. For example, https://wifi.windowsphone.com/v1/submithotspots |
+| ServiceEndpoint | Required. The URL of the discovery service server to which the hotspot data will be uploaded. |
 | CustomerTransformer | Required. The name of the assembly that contains the transformer. | 
 | MappingFile | Optional. The mapping file that maps the provider's hotspot data to the format required by the discovery service. |
 | CertFile | Optional. A pointer to the actual pfx file that contains the certificate(s) for authentication. The certificate password parameter (**CertPassword**) must be specified when using this authentication method. |

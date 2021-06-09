@@ -1,7 +1,6 @@
 ---
 title: wmitrace.start
 description: The wmitrace.start extension starts the Event Tracing for Windows (ETW) logger on the target computer.
-ms.assetid: 52ed0c5a-6ca9-4890-bae5-54394bc43d51
 keywords: ["wmitrace.start Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,10 +63,9 @@ This extension is available in Windows 7 and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more details on the parameters of this extension, see [StartTrace Function](https://go.microsoft.com/fwlink/p/?linkid=139652) and [EVENT\_TRACE\_PROPERTIES](https://go.microsoft.com/fwlink/p/?linkid=139653). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
+For more details on the parameters of this extension, see [StartTraceA Function](/windows/win32/api/evntrace/nf-evntrace-starttracea) and [EVENT\_TRACE\_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 After using this extension, you must resume program execution (for example, by using the [**g (Go)**](g--go-.md) command) in order for it to take effect. After a brief time, the target computer automatically breaks into the debugger again.
 
@@ -76,10 +74,4 @@ When the trace session is started, the system assigns it an ordinal number (the 
 To stop the ETW logger, use [**!wmitrace.stop**](-wmitrace-stop.md).
 
  
-
- 
-
-
-
-
 

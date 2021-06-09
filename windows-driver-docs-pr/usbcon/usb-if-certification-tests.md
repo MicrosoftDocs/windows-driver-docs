@@ -1,5 +1,5 @@
 ---
-Description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
+description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
 title: USB-IF Certification Tests
 ms.date: 10/22/2019
 ms.localizationpriority: medium
@@ -84,13 +84,13 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
   The following steps describe how to perform the required USB-IF tests to qualify a device for Windows Certification.
 
-  1. Download the USB Command Verifier test tool (USB3CV) and the interoperability test documents from [USB Software and Hardware Tools](https://usb.org/usb32tools).
+  1. Download the USB Command Verifier test tool (USB3CV) from [USB Software and Hardware Tools](https://usb.org/usb32tools) and the [interoperability test documents](https://usb.org/usb-32#anchor_32interop).
 
   2. Run the USB-IF tests for the USB hardware as specified in the following tables:
 
   | USB version | USB-IF tests |
   | --- | --- |
-  | USB 2.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 2.0 devices] in the USB 3.0 Command Verifier test tool (USB3CV). <br><br> Run the interoperability tests as described in the EHCI portion of the Interoperability section of the [EHCI Test Procedures](http://compliance.usb.org/resources/GoldSuite%20Test%20Procedure.pdf). Run these tests twice: one with the device attached behind an EHCI host controller, and then with the device attached behind an xHCI host controller. |
+  | USB 2.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 2.0 devices] in the USB 3.0 Command Verifier test tool (USB3CV). <br><br> Run the interoperability tests as described in the EHCI portion of the Interoperability section of the [EHCI Test Procedures](https://compliance.usb.org/resources/GoldSuite%20Test%20Procedure.pdf). Run these tests twice: one with the device attached behind an EHCI host controller, and then with the device attached behind an xHCI host controller. |
   | USB 3.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 3.0 devices] in the USB 3.0 Command Verifier test tool (USB3CV). <br><br> Run the interoperability tests as described in the [xHCI Interoperability Test Procedures](https://www.usb.org/document-library/xhci-interoperability-test-procedures-peripherals-hubs-and-hosts-version-096) document. Run these tests two times: one time with the device attached behind an EHCI host controller, and one time with the device attached behind an xHCI host controller. |
   
   3. If the tests are passing, enter the string "SELFTEST" as the Test ID (TID) input to the USB-IF Certification Validation Test in the HLK.

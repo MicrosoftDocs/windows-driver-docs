@@ -1,7 +1,6 @@
 ---
 title: Publishing NFP messages
 description: Publishing NFP messages
-ms.assetid: 45BE3620-ADF4-413D-90B3-586FCEB5F606
 keywords:
 - NFC
 - near field communications
@@ -15,13 +14,13 @@ ms.localizationpriority: medium
 # Publishing NFP messages
 
 
-A publication is represented as a unique open handle within the driver. Active publications must have both a type and a data buffer. The type is set by opening a file name in the “Pubs” namespace. The data buffer is set by sending [**IOCTL\_NFP\_SET\_PAYLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_set_payload).
+A publication is represented as a unique open handle within the driver. Active publications must have both a type and a data buffer. The type is set by opening a file name in the “Pubs” namespace. The data buffer is set by sending [**IOCTL\_NFP\_SET\_PAYLOAD**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_set_payload).
 
-A callback on attempted transmission is given through a completed [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message).
+A callback on attempted transmission is given through a completed [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message).
 
-A publication can be temporarily disabled via an [**IOCTL\_NFP\_DISABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_disable).
+A publication can be temporarily disabled via an [**IOCTL\_NFP\_DISABLE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_disable).
 
-A publication can be re-enabled via an [**IOCTL\_NFP\_ENABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_enable).
+A publication can be re-enabled via an [**IOCTL\_NFP\_ENABLE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_enable).
 
 ##  Handles
 
@@ -37,7 +36,7 @@ The client will open a file handle in the “Pubs/&lt;Protocol&gt;.&lt;SubType&g
           DeviceID          NearFieldProximity Interface Class     *  Protocol   SubType
 ```
 
-After opening the handle, a client should then set the payload of the message to be published with the [**IOCTL\_NFP\_SET\_PAYLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_set_payload).
+After opening the handle, a client should then set the payload of the message to be published with the [**IOCTL\_NFP\_SET\_PAYLOAD**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_set_payload).
 
 There is no facility to read back the specified file name (the publication type).
 
@@ -97,21 +96,19 @@ The driver MUST accept and transmit duplicate published messages, even if publis
 ### Required Actions
 
 
-The driver MUST remove all messages (and reclaim those resources) from the “Received” queue if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_SUBSCRIBED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message) within 10 - 20 seconds of the prior IOCTL completion.
+The driver MUST remove all messages (and reclaim those resources) from the “Received” queue if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_SUBSCRIBED\_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message) within 10 - 20 seconds of the prior IOCTL completion.
 
 ## Unresponsive or Misbehaving Clients
 
 
-If a client fails to send the required [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) request for a period of ten to twenty seconds \[10-20sec\], the driver should assume that the client is gone. Under normal circumstances, clients should refresh their requests well within one second \[1s\]. If this occurs, the driver must set the “CompleteEventImmediately” counter to zero and must not increment the counter until the client wakes up and sends the required IRP.
+If a client fails to send the required [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) request for a period of ten to twenty seconds \[10-20sec\], the driver should assume that the client is gone. Under normal circumstances, clients should refresh their requests well within one second \[1s\]. If this occurs, the driver must set the “CompleteEventImmediately” counter to zero and must not increment the counter until the client wakes up and sends the required IRP.
 
 ### Required Actions
 
-The driver must set the “CompleteEventImmediately” counter to zero and must not increment the counter if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) within 10 - 20 seconds of the prior IOCTL completion.
+The driver must set the “CompleteEventImmediately” counter to zero and must not increment the counter if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) within 10 - 20 seconds of the prior IOCTL completion.
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

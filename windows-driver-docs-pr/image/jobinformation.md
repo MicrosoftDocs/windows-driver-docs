@@ -1,7 +1,6 @@
 ---
 title: JobInformation element
 description: The optional JobInformation element describes the intended use of the job.
-ms.assetid: 0e5d41a0-49df-43db-a2e6-3639e60d2378
 keywords: ["JobInformation element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **JobInformation** element describes the intended use of the job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobInformation>
@@ -27,13 +25,11 @@ Usage
 </wscn:JobInformation>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -61,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobInformation** value is useful when the client will reuse the scan ticket that is used to create the job.
 

@@ -1,7 +1,6 @@
 ---
 title: INF File Platform Extensions and x64-Based Systems
 description: INF File Platform Extensions and x64-Based Systems
-ms.assetid: 062c58f7-3519-4835-9597-ab6be5ff5fe8
 keywords:
 - x64 INF file platform extensions WDK device installations
 ms.date: 04/20/2017
@@ -27,7 +26,7 @@ For sections that support optional platform extensions, Windows selects which se
 
 For testing purposes only, the requirement that an [**INF Models section**](inf-models-section.md) name include an **.ntamd64** extension can be suppressed. To suppress this requirement, create the following registry value entry under the subkey **HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup** and set this value entry to one:
 
-```ini
+```inf
 DisableDecoratedModelsRequirement:REG_DWORD
 ```
 
@@ -49,7 +48,7 @@ To create such a cross-operating system INF file, do the following:
 
 2. Include an INF **Manufacturer** section that includes a *manufacturer-identifier* that specifies the [**INF Models section**](inf-models-section.md) name for the device and that specifies the **.ntamd64** platform extension. For example, the following **Manufacturer** section specifies an INF *Models* section name of "AbcModelSection" for an Abc device and the **.ntamd64** platform extension.
 
-   ```ini
+   ```inf
    [Manufacturer]
    ; The manufacturer-identifier for the Abc device.
    %ManufacturerName%=AbcModelSection,ntamd64
@@ -57,14 +56,14 @@ To create such a cross-operating system INF file, do the following:
 
 3. Include a <em>Models</em>**.ntamd64** section whose name matches the *Models* section name that is specified by the *manufacturer-identifier* in the **Manufacturer** section. For example, the following AbcModelSection<strong>.ntamd64</strong> section for an Abc device includes a *device-description* that specifies an *install-section-name* of "AbcInstallSection."
 
-   ```ini
+   ```inf
    [AbcModelSection.ntamd64]
    %AbcDeviceName%=AbcInstallSection,Abc-hw-id
    ```
 
 4. Include a *DDInstall* section whose name matches the *install-section-name* that is specified by the *Models* section. For example, the *device-description* in an AbcModelSection section specifies the following AbcInstallSection section for an Abc device.
 
-   ```ini
+   ```inf
    [AbcInstallSection]
    ; Install section entries go here.
    ...

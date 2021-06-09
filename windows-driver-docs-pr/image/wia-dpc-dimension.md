@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_DIMENSION
 description: The WIA\_DPC\_DIMENSION property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 77bf3095-74da-428a-b907-c70605016f18
 keywords: ["WIA_DPC_DIMENSION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

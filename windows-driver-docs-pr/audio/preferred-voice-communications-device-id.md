@@ -1,7 +1,6 @@
 ---
 title: Preferred Voice-Communications Device ID
 description: Preferred Voice-Communications Device ID
-ms.assetid: ed0fbba3-cc9e-48d6-9ab5-360f8aab3ed6
 keywords:
 - WDM audio extensions WDK , voice-communication device IDs
 - voice-communication device IDs WDK audio
@@ -22,16 +21,11 @@ In Windows Me, and Windows 2000 and later, the Windows multimedia functions **wa
 
 Knowing the preferred voice-communications device can be helpful to application programs that, for example, allow users to select a device to open from a list of two or more devices. Such an application typically needs to indicate which among the devices in the list is the preferred device.
 
-To retrieve the device ID of the current preferred voice-communications device, an application calls the wave *Xxx*Message function with the message parameter set to the constant [**DRVM\_MAPPER\_CONSOLEVOICECOM\_GET**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536361(v=vs.85)).
+To retrieve the device ID of the current preferred voice-communications device, an application calls the wave *Xxx*Message function with the message parameter set to the constant [**DRVM\_MAPPER\_CONSOLEVOICECOM\_GET**](/previous-versions/windows/hardware/drivers/ff536361(v=vs.85)).
 
 When calling the **waveInMessage** or **waveOutMessage** function with the DRVM\_MAPPER\_CONSOLEVOICECOM\_GET message, specify the value of the device handle as WAVE\_MAPPER and cast this value to the appropriate handle type, HWAVEIN or HWAVEOUT. The wave *Xxx*Message functions accept this value in place of a valid device handle so that an application can query for the default device ID without first having to open a device. For more information about the wave *Xxx*Message functions, see [System-Intercepted Device Messages](system-intercepted-device-messages.md).
 
 The DRVM\_MAPPER\_PREFERRED\_GET message is intercepted by the mapper for the target device (waveIn or waveOut). For information about mappers for wave devices, see the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION
 description: The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property is used for indicating the last valid byte in the audio buffer.
-ms.assetid: 01EC2F29-D30A-4017-841F-8443D7C4BCF6
 keywords: ["KSPROPERTY_AUDIO_WAVERT_CURRENT_WRITE_LASTBUFFER_POSITION Audio Devices"]
 topic_type:
 - apiref
@@ -58,17 +57,15 @@ The property value is of type ULONG and represents the last valid byte in the Wa
 
 The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 If a client app uses the KSPROPERTY\_TYPE\_BASICSUPPORT flag when it sends a KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property request to the audio driver and STATUS\_SUCCESS is returned, it confirms that the driver supports the newly added KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property.
 
-When a client app performs the very last write operation to the audio buffer to be processed by the audio driver of an offloaded stream, the audio driver calls the [**SetStreamCurrentWritePositionForLastBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer) method. The **SetStreamCurrentWritePositionForLastBuffer** method indicates the “write position” of the very last buffer in a stream. Note that this last buffer could be only partially filled.
+When a client app performs the very last write operation to the audio buffer to be processed by the audio driver of an offloaded stream, the audio driver calls the [**SetStreamCurrentWritePositionForLastBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer) method. The **SetStreamCurrentWritePositionForLastBuffer** method indicates the “write position” of the very last buffer in a stream. Note that this last buffer could be only partially filled.
 
 If you develop an audio driver that was not designed to work with the audio port class driver (Portcls), then you have to implement your own property handler for the this new KS property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -94,14 +91,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**SetStreamCurrentWritePositionForLastBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer)
+[**SetStreamCurrentWritePositionForLastBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer)
 
  
-
- 
-
-
-
-
-
 

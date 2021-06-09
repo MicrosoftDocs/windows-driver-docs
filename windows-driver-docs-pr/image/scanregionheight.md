@@ -1,7 +1,6 @@
 ---
 title: ScanRegionHeight element
 description: The required ScanRegionHeight element specifies the height of the scan region in the slow scan direction.
-ms.assetid: b0b5b385-d0dc-4e12-b21e-e45b317f40e0
 keywords: ["ScanRegionHeight element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanRegionHeight** element specifies the height of the scan region in the slow scan direction.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegionHeight wscn:MustHonor=""                       wscn:Override=""                       wscn:UsedDefault=""
@@ -30,8 +28,7 @@ Usage
 </wscn:ScanRegionHeight wscn:MustHonor=""                       wscn:Override=""                       wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -73,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer between 1 and the InputMediaSize height.[**InputMediaSize**](inputmediasize.md)
 
@@ -102,8 +98,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 For more information about the scan region parameters, see [**ScanRegion**](scanregion.md).
 

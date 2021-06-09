@@ -1,7 +1,6 @@
 ---
 title: AutoExposureSupported element
 description: The required AutoExposureSupported element specifies whether the scan device supports automatic adjustment of the various exposure settings.
-ms.assetid: 36ef003f-b049-4eb2-8fe3-53aa77db3065
 keywords: ["AutoExposureSupported element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **AutoExposureSupported** element specifies whether the scan device supports automatic adjustment of the various exposure settings.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:AutoExposureSupported>
@@ -27,13 +25,11 @@ Usage
 </wscn:AutoExposureSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, 1, false, or true.**falsetrue**
 
@@ -61,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 [**Exposure**](exposure.md)
 

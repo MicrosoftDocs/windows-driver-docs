@@ -1,7 +1,6 @@
 ---
 title: MSBuild primer for WDK developers
 description: This section introduces some basic MSBuild terminology to WDK developers, who are familiar with Build.exe and NMake.exe. This section shows the construction of simple MSBuild projects.
-ms.assetid: EA223DF3-71FF-442F-B3E8-56C3B57F7B67
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,7 +28,7 @@ If you have worked with Build.exe and previous versions of the WDK (prior to WDK
 
 
 -   The main MSBuild file extension for C++ projects is .vcxproj.
--   Commands are now called *tasks*, and they are not simply invocations of command-line processes. Instead, tasks are units of executable code that MSBuild can use to perform atomic build operations. For a complete list of tasks, see [MSBuild Tasks Specific to Visual C++]( https://go.microsoft.com/fwlink/p/?linkid=236121)..
+-   Commands are now called *tasks*, and they are not simply invocations of command-line processes. Instead, tasks are units of executable code that MSBuild can use to perform atomic build operations. For a complete list of tasks, see [MSBuild Tasks Specific to Visual C++](/visualstudio/msbuild/msbuild-tasks-specific-to-visual-cpp).
 -   MSBuild imports the tasks from their Common Language Runtime (CLR) assemblies with the **UsingTask** element as the following example shows.
     ```
     <UsingTask TaskName="TaskName" AssemblyName="AssemblyName" />
@@ -46,15 +45,9 @@ If you have worked with Build.exe and previous versions of the WDK (prior to WDK
 -   An **Item** is an object-oriented variant of **Property**. While the property format is name/value, the item format is name/object where object has multiple attributes. **Items** are arrays of objects.
 -   **Properties** are referenced with the format **$(project)** while Items are referenced with the format **@(name)**.
 -   An **ItemGroup** is a collection of **Items.**
--   An **ItemGroups** is typically a list all of the files that are to be compiled. The collection of files is then passed to a task using the **@(itemname)** notation. See [MSBuild Items](https://go.microsoft.com/fwlink/p/?linkid=236146) for more information about using **Items.**
--   MSBuild has a number of [built-in properties](https://go.microsoft.com/fwlink/p/?linkid=236149) that you can also reference in a project file.
--   For more information about MSBuild and build tasks, see [MSBuild Concepts](https://go.microsoft.com/fwlink/p/?linkid=236157) and [MSBuild Reference](https://go.microsoft.com/fwlink/p/?linkid=236161).
+-   An **ItemGroups** is typically a list all of the files that are to be compiled. The collection of files is then passed to a task using the **@(itemname)** notation. See [MSBuild Items](/visualstudio/msbuild/msbuild-items) for more information about using **Items.**
+-   MSBuild has a number of [built-in properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties) that you can also reference in a project file.
+-   For more information about MSBuild and build tasks, see [MSBuild Concepts](/visualstudio/msbuild/msbuild-concepts) and [MSBuild Reference](/visualstudio/msbuild/msbuild-reference).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Testing Requirements for Display/Video Miniport Drivers
 description: This section lists some of the requirements for NT-based operating system graphics drivers and associated components to meet the Windows Hardware Quality Lab (WHQL) test criteria.
-ms.assetid: b63db0ca-2779-4cb3-94a1-a52641f341f4
 keywords:
 - display driver model WDK Windows 2000 , compatibility testing
 - Windows 2000 display driver model WDK , compatibility testing

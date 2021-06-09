@@ -1,7 +1,6 @@
 ---
 title: peb
 description: The peb extension displays a formatted view of the information in the process environment block (PEB).
-ms.assetid: 01687f13-9eb7-48f0-a0d6-54fee00084ab
 keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,8 +54,7 @@ Ntsdexts.dll</td>
 
 For information about process environment blocks, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The PEB is the user-mode portion of Microsoft Windows process control structures.
 

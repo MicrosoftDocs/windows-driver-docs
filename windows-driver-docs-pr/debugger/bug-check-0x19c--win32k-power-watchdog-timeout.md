@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x19C WIN32K_POWER_WATCHDOG_TIMEOUT
 description: The WIN32K_POWER_WATCHDOG_TIMEOUT bug check has a value of 0x0000019C. This indicates that Win32k did not turn the monitor on in a timely manner.
-ms.assetid: 55907359-C282-43F0-92FE-5DC248BF9D02
 keywords: ["Bug Check 0x19C WIN32K_POWER_WATCHDOG_TIMEOUT", "WIN32K_POWER_WATCHDOG_TIMEOUT"]
 ms.date: 05/23/2017
 topic_type:
@@ -80,7 +79,7 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
 </table>
 
 ## Resolution
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 

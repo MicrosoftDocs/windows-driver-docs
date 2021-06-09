@@ -1,7 +1,6 @@
 ---
 title: WIA Error Handling Architecture
 description: WIA Error Handling Architecture
-ms.assetid: 2672a5ee-d860-44de-9e68-bd70377d58a8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -42,7 +41,7 @@ The minidriver can now use the, new for Windows Vista, WIA\_TRANSFER\_MSG\_DEVIC
 In order for an application to enable error handling, it must implement the **IWiaAppErrorHandler** interface. This interface is implemented by the application's callback object that it passed into the **IWiaTransfer::Download** and **IWiaTransfer::Upload** methods. This callback object is required to implement the **IWiaTransferCallback** interface. By implementing **IWiaAppErrorHandler**, an application indicates that it allows error handlers to be invoked during data transfers.
 
 <a href="" id="the-driver-s-error-handler"></a>**The driver's error handler**  
-The driver's error handler is a driver extension that must implement the [IWiaErrorHandler Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nn-wia_lh-iwiaerrorhandler). The error handler can handle and display UI for any status code; these status codes include WIA-defined status codes as well as status codes specific to the driver.
+The driver's error handler is a driver extension that must implement the [IWiaErrorHandler Interface](/windows-hardware/drivers/ddi/wia_lh/nn-wia_lh-iwiaerrorhandler). The error handler can handle and display UI for any status code; these status codes include WIA-defined status codes as well as status codes specific to the driver.
 
 <a href="" id="the-default-error-handler"></a>**The default error handler**  
 The default error handler is implemented by WIA. It handles and displays UI for a number of generic device status messages. These messages can be both informational and error, for example: WIA\_ERROR\_PAPER\_JAM and WIA\_STATUS\_WARMING\_UP.
@@ -51,9 +50,9 @@ The WIA proxy does not handle the error messages itself. Instead, the WIA proxy 
 
 The error handler provides the UI that allows the user to try to put the system in a state where the data transfer can be continued or canceled.
 
-When receiving a WIA\_TRANSFER\_MSG\_DEVICE\_STATUS message, the WIA proxy first calls the application error handler's **IWiaAppErrorHandler::ReportStatus** method. If the application callback routine does not handle the device status code, the WIA proxy will invoke the driver error handler's [**IWiaErrorHandler::ReportStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiaerrorhandler-reportstatus) implementation, and finally the WIA proxy will invoke the default error handler's **IWiaErrorHandler::ReportStatus** implementation. If a given handler does not exist (for example, the driver might not come with an error handling extension), or if the driver's device status handler returns WIA\_STATUS\_NOT\_HANDLED, indicating that the driver's handler does not support the device code, the next handler in the chain will be given a chance. Once a device status message is handled, either successfully or unsuccessfully, the WIA proxy callback will return. So, if the driver error handler's **ReportStatus** method returns S\_OK for every message, the default error handler will never get a chance to handle any of the device status messages.
+When receiving a WIA\_TRANSFER\_MSG\_DEVICE\_STATUS message, the WIA proxy first calls the application error handler's **IWiaAppErrorHandler::ReportStatus** method. If the application callback routine does not handle the device status code, the WIA proxy will invoke the driver error handler's [**IWiaErrorHandler::ReportStatus**](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiaerrorhandler-reportstatus) implementation, and finally the WIA proxy will invoke the default error handler's **IWiaErrorHandler::ReportStatus** implementation. If a given handler does not exist (for example, the driver might not come with an error handling extension), or if the driver's device status handler returns WIA\_STATUS\_NOT\_HANDLED, indicating that the driver's handler does not support the device code, the next handler in the chain will be given a chance. Once a device status message is handled, either successfully or unsuccessfully, the WIA proxy callback will return. So, if the driver error handler's **ReportStatus** method returns S\_OK for every message, the default error handler will never get a chance to handle any of the device status messages.
 
-If no error handler supports a device status message with SEVERITY\_ERROR (error message), the WIA proxy will return the status error back to the driver, which in turn should stop the transfer. The driver should return this HRESULT value from [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) and the application will receive this HRESULT from **IWiaTransfer::Download** or **IWiaTransfer::Upload**.
+If no error handler supports a device status message with SEVERITY\_ERROR (error message), the WIA proxy will return the status error back to the driver, which in turn should stop the transfer. The driver should return this HRESULT value from [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) and the application will receive this HRESULT from **IWiaTransfer::Download** or **IWiaTransfer::Upload**.
 
 If no error handler handles a device status message with SEVERITY\_SUCCESS (informational message), the WIA proxy will return S\_OK to the driver.
 
@@ -64,9 +63,4 @@ If no error handler handles a device status message with SEVERITY\_SUCCESS (info
 The **IWiaTransferCallback**,**IWiaAppErrorHandler**, and **IWiaTransfer** interfaces are described in the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

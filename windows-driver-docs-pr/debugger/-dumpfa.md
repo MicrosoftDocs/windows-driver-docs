@@ -1,7 +1,6 @@
 ---
 title: dumpfa
 description: The dumpfa extension displays the contents of a failure analysis entry.
-ms.assetid: 4516252d-b6c9-4bf4-b435-6c0b3cb0fbc3
 keywords: ["failure analysis entries, display", "failure analysis entries", "dumpfa Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,8 +48,7 @@ Specifies the address of the failure analysis entry that is displayed.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.dumpfa** extension is useful only to debug the [**!analyze**](-analyze.md) extension, as the following example shows.
 

@@ -1,7 +1,6 @@
 ---
 title: WDF_PTR_GET_OFFSET macro
 description: The WDF_PTR_GET_OFFSET macro subtracts an address from another address and returns the resulting offset value.
-ms.assetid: b5159207-ba5c-4924-a06e-725ccd3c8a12
 keywords:
  - WDF_PTR_GET_OFFSET macro
 ms.date: 08/23/2017
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 The **WDF_PTR_GET_OFFSET** macro subtracts an address from another address and returns the resulting offset value.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 size_t WDF_PTR_GET_OFFSET(
@@ -23,8 +21,7 @@ size_t WDF_PTR_GET_OFFSET(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_base*   
 Specifies the value to subtract from the starting address.
@@ -32,13 +29,11 @@ Specifies the value to subtract from the starting address.
 *_addr*   
 Specifies the starting address.
 
-Return value
-------------
+## Return value
 
 Returns the offset between the two specified addresses.
 
-Remarks
--------
+## Remarks
 
 The macro is defined as follows:
 
@@ -47,8 +42,7 @@ The macro is defined as follows:
         (size_t) (((PUCHAR) _addr) - ((PUCHAR) _base))
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,26 +1,23 @@
 ---
-title: \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)
-description: This interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity.
-ms.assetid: 895F1B13-4F2D-4B6B-A3CE-60A8AC9EE7B0
+title: _DSM Interface for JEDEC Byte Addressable Energy Backed Function Class (Function Interface 1)
+description: The Device-Specific Method (_DSM) interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity.
 ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 12/15/2019
 ---
 
-# \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)
+# _DSM Interface for JEDEC Byte Addressable Energy Backed Function Class (Function Interface 1)
 
+The Device-Specific Method (_DSM) interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers.
 
-This interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers.
+Platforms that conform to _DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) can support an NVDIMM-N that implements the *JEDEC Byte Addressable Energy Backed Interface* specification (function class 0x01 and function interface 0x01). For more info, see the [JEDEC Byte Addressable Energy Backed Interface specification (document JESD245)](https://www.jedec.org/document_search?search_api_views_fulltext=jesd245).
 
-Platforms that conform to \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) can support an NVDIMM-N that implements the *JEDEC Byte Addressable Energy Backed Interface* specification (function class 0x01 and function interface 0x01). For more info, see the [JEDEC Byte Addressable Energy Backed Interface specification (document JESD245)](https://www.jedec.org/document_search?search_api_views_fulltext=jesd245).
+## _DSM Interface for Byte Addressable Energy Backed Function Class, Function Interface 1
 
-## <span id="DSM_Interface_for_Byte_Addressable_Energy_Backed_Function_Class_Function_Interface_1"></span><span id="dsm_interface_for_byte_addressable_energy_backed_function_class_function_interface_1"></span><span id="DSM_INTERFACE_FOR_BYTE_ADDRESSABLE_ENERGY_BACKED_FUNCTION_CLASS_FUNCTION_INTERFACE_1"></span>\_DSM Interface for Byte Addressable Energy Backed Function Class, Function Interface 1
+The _DSM GUID is 1EE68B36-D4BD-4a1a-9A16-4F8E53D46E05.
 
+The _DSM functions defined in this section should be implemented in NVDIMM ACPI Namespace Devices objects. The term **Mandatory** refers to whether the function must return valid data or not.
 
-The \_DSM GUID is 1EE68B36-D4BD-4a1a-9A16-4F8E53D46E05.
-
-The \_DSM functions defined in this document shall be implemented in NVDIMM ACPI Namespace Devices objects. The term **Mandatory** refers to whether the function must return valid data or not.
-
-### <span id="Mandatory_functions_and_fields"></span><span id="mandatory_functions_and_fields"></span><span id="MANDATORY_FUNCTIONS_AND_FIELDS"></span>Mandatory functions and fields
+### Mandatory functions and fields
 
 The following table specifies the functions & fields that are mandatory.
 
@@ -59,17 +56,13 @@ The following table specifies the functions & fields that are mandatory.
 | 30             | [Write Typed Data (Function Index 30)](write-typed-data--function-index-30-.md)                                                             | Yes                                                    | Yes                                                  |
 | 31             | [Set Memory Error Counters (Function Index 31)](set-memory-error-counters--function-index-31-.md)                                           | Yes                                                    | Yes                                                  |
 
- 
-
-## <span id="DSM_METHOD_INPUT"></span><span id="dsm_method_input"></span>\_DSM Method Input
-
+## _DSM Method Input
 
 *Arg3* to all functions is a Package value. If the function does not take an input argument, the Package value contains no data. If the function takes an input argument, the Package value contains a buffer.
 
 If the function does not take an input argument and *Arg3* is not an empty Package, the function shall return the **General Status Code** of Invalid Input Parameters.
 
-## \_DSM Method Output
-
+## _DSM Method Output
 
 All methods will return a buffer of length greater than or equal to 4 bytes. The first 4 bytes of the return buffer are structured as follows:
 
@@ -116,34 +109,11 @@ All methods will return a buffer of length greater than or equal to 4 bytes. The
 </tbody>
 </table>
 
- 
-
 Any non-zero **General Status Code** indicates that the function failed. No function defined in this version of the specification shall return the **General Status Code** of **Not Supported**. All mandatory functions shall return valid data or an error code indicating a runtime error. Non-mandatory functions may return a Function-Specific Error Code to signal that there is no valid data to be returned.
 
 All reserved bits and bytes shall have a value of 0. Unless specifically stated otherwise, all multi-byte fields shall be represented in a little-endian manner.
 
-&gt; \[!Note\]   
-&gt;A reference to a Byte Addressable Energy-Backed Interface register describes many return fields for functions specified in this interface. These fields shall be identical to the register defined in the "Byte Addressable Energy Backed Interface, version 1.0, JEDEC Standard No. 2233-22" revision of the Byte-Addressable Energy-Backed Interface specification. The specification version is reported in the **Specification Revision** field returned by the [Get NVDIMM-N Identification (Function Index 1)](get-nvdimm-n-identification--function-index-1-.md) function.
-
-&gt;Some return fields refer to information about the Energy Source (ES). When the ES policy is device-managed, the platform shall read the hardware register specified in the field description to retrieve all ES-related information. When the ES policy is host-managed, the platform shall obtain the ES-related information through platform-specific mechanisms. In this case, all ES-related information shall be presented in the same binary layout as the hardware register specified in the field description.
-
-&gt;
-
- 
-
-## <span id="related_topics"></span>Related topics
-
-
-[Storage driver design guide](https://go.microsoft.com/fwlink/p/?LinkId=798409)
-
-[JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (\_DSM)](jedec-byte-addressable-energy-backed-interface-nvdimms-device-specific-method---dsm-.md)
-
- 
-
- 
-
-
-
-
-
-
+> [!NOTE]
+> A reference to a Byte Addressable Energy-Backed Interface register describes many return fields for functions specified in this interface. These fields shall be identical to the register defined in the "Byte Addressable Energy Backed Interface, version 1.0, JEDEC Standard No. 2233-22" revision of the Byte-Addressable Energy-Backed Interface specification. The specification version is reported in the **Specification Revision** field returned by the [Get NVDIMM-N Identification (Function Index 1)](get-nvdimm-n-identification--function-index-1-.md) function.
+>
+> Some return fields refer to information about the Energy Source (ES). When the ES policy is device-managed, the platform shall read the hardware register specified in the field description to retrieve all ES-related information. When the ES policy is host-managed, the platform shall obtain the ES-related information through platform-specific mechanisms. In this case, all ES-related information shall be presented in the same binary layout as the hardware register specified in the field description.

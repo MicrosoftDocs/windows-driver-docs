@@ -1,7 +1,6 @@
 ---
 title: wmitrace.setprefix
 description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. 
-ms.assetid: 8712af44-f231-48f6-97ac-56a1d737cd6b
 keywords: ["wmitrace.setprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -163,8 +162,7 @@ tracedrv_c258: TracedrvDispatchDeviceControl: 0af4.0c64: 07/25/2003-13:55:39.998
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK documentation. For information about trace message format files, see the "Trace Message Prefix" topic in the WDK documentation.
 
-Remarks
--------
+## Remarks
 
 When used with no parameters, **!wmitrace.setprefix** displays the current value of the trace message prefix.
 

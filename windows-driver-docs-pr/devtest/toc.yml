@@ -776,6 +776,8 @@
         href: ks-ksdevicemutex.md
       - name: "KsFilterMutex"
         href: ks-ksfiltermutex.md
+      - name: "KsInvalidStreamPointer"
+        href: ks-ksinvalidstreampointer.md
       - name: "KsIrqlDDIs"
         href: ks-ksirqlddis.md
       - name: "KsIrqlDeviceCallbacks"
@@ -818,6 +820,8 @@
           href: ddi-usage-rule-set--wdm-.md
         - name: "DebugBreakUsage"
           href: wdm-debugbreakusage.md
+        - name: "DoubleFetch"
+          href: wdm-doublefetch.md
         - name: "NullCheck"
           href: nullcheckw.md
         - name: "SafeStrings"
@@ -1040,6 +1044,8 @@
           href: wdm-irqliopassive4.md
         - name: "IrqlIoPassive5"
           href: wdm-irqliopassive5.md
+        - name: "rqlIoRtlZwPassive"
+          href: wdm-irqliortlzwpassive.md
         - name: "IrqlKeApcLte1"
           href: wdm-irqlkeapclte1.md
         - name: "IrqlKeApcLte2"
@@ -1062,6 +1068,8 @@
           href: wdm-irqlmmapclte.md
         - name: "IrqlMmDispatch"
           href: wdm-irqlmmdispatch.md
+        - name: "IrqlNtifsApcPassive"
+          href: wdm-irqlntifsapcpassive.md
         - name: "IrqlObPassive"
           href: wdm-irqlobpassive.md
         - name: "IrqlPsPassive"
@@ -1163,6 +1171,8 @@
           href: wdm-pnpsamedeviceobject.md
         - name: "TargetRelationNeedsRef"
           href: wdm-targetrelationneedsref.md
+        - name: "UnSafeAllocatePool"
+          href: wdm-unsafeallocatepool.md
         - name: "ZwRegistryCreate"
           href: wdm-zwregistrycreate.md
         - name: "ZwRegistryOpen"
@@ -1366,6 +1376,8 @@
           href: kmdf-nonfdonotpowerpolicyownerapi.md
         - name: "NonPnPDrvPowerPolicyOwnerAPI"
           href: kmdf-nonpnpdrvpowerpolicyownerapi.md
+        - name: "UnSafeAllocatePool"
+          href: kmdf-unsafeallocatepool.md
       - name: "RequestProcessing rule set (KMDF)"
 # Auto-expanded node
         items: 
@@ -1652,6 +1664,8 @@
           href: ndis-ndistimeddatasend.md
         - name: "NdisTimedOidComplete"
           href: ndis-ndistimedoidcomplete.md
+        - name: "WlanAssert"
+          href: ndis-wlanassert.md
         - name: "WlanAssociation"
           href: ndis-wlanassociation.md
         - name: "WlanConnectionRoaming"
@@ -1792,7 +1806,7 @@
         - name: "PagedCode"
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
-          href: storport-storportstatuspending.md
+          href: storport-storportstatuspending.md  
   - name: "Static Driver Verifier"
 # Auto-expanded node
     items: 
@@ -1803,6 +1817,7 @@
     - name: "Static Driver Verifier commands (MSBuild)"
       href: -static-driver-verifier-commands--msbuild-.md
     - name: "Introducing Static Driver Verifier"
+      href: introducing-static-driver-verifier.md
 # Auto-expanded node
       items: 
       - name: "Introducing Static Driver Verifier"
@@ -1912,6 +1927,8 @@
             href: color-coding-in-the-trace-tree-pane.md
           - name: "Trace Tree Pane Actions"
             href: trace-tree-pane-actions.md
+          - name: "Saving Defect Traces"
+            href: saving-defect-traces.md
         - name: "Source Code Pane"
 # Auto-expanded node
           items: 
@@ -1987,6 +2004,34 @@
           href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
       - name: "Static Driver Verifier Diagnostics"
         href: static-driver-verifier-diagnostics.md
+  - name: "CodeQL and the Static Tools Logo Test"
+# Auto-expanded node
+    items: 
+    - name: "CodeQL and Static Tools Logo Test"
+      href: static-tools-and-codeql.md
+    - name: "Supplemental Windows Driver CodeQL Queries"
+# Auto-expanded node
+      items: 
+      - name: "Supplemental Windows Driver CodeQL Queries"
+        href: codeql-windows-driver-rules.md
+      - name: "Probable UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-probableuseafterfree.md
+      - name: "UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-useafterfree.md
+      - name: "WdkDeprecatedApi (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-wdkdeprecatedapi.md
+      - name: "PaddingByteInformationDisclosure (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-padding-byte-information-disclosure.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md
+      - name: "InfiniteLoop (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-infiniteloop.md 
+      - name: "UninitializedPtrField (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-uninitializedptrfield.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md 
+      - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-hardcodedivcng.md 
   - name: "WDF Verifier Control Application"
 # Auto-expanded node
     items: 
@@ -2722,6 +2767,8 @@
       items: 
       - name: "BCDEdit Options Reference"
         href: bcd-boot-options-reference.md
+      - name: "BCDEdit /bootsequence"
+        href: bcdedit--bootsequence.md
       - name: "BCDEdit /bootdebug"
         href: bcdedit--bootdebug.md
       - name: "BCDEdit /dbgsettings"
@@ -2730,12 +2777,24 @@
         href: bcdedit--debug.md
       - name: "BCDEdit /deletevalue"
         href: bcdedit--deletevalue.md
+      - name: "BCDEdit /displayorder"
+        href: bcdedit--displayorder.md        
       - name: "BCDEdit /ems"
         href: bcdedit--ems.md
       - name: "BCDEdit /emssettings"
         href: bcdedit--emssettings.md
+      - name: "BCDEdit /enum"
+        href: bcdedit--enum.md
+      - name: "BCDEdit /event"
+        href: bcdedit--event.md
+      - name: "BCDEdit /hypervisorsettings"
+        href: bcdedit--hypervisorsettings.md
       - name: "BCDEdit /set"
         href: bcdedit--set.md
+      - name: "BCDEdit /timeout"
+        href: bcdedit--timeout.md
+      - name: "BCDEdit /toolsdisplayorder"
+        href: bcdedit--toolsdisplayorder.md
     - name: "Editing Boot Options"
 # Auto-expanded node
       items: 
@@ -2823,14 +2882,6 @@
           href: debugging-code-overview.md
         - name: "Conditional Compilation and the Build Environment"
           href: conditional-compilation-and-the-build-environment.md
-        - name: "Breaking Into the Debugger"
-          href: breaking-into-the-debugger.md
-        - name: "Sending Output to the Debugger"
-          href: sending-output-to-the-debugger.md
-        - name: "Reading and Filtering Debugging Messages"
-          href: reading-and-filtering-debugging-messages.md
-        - name: "Determining if a Debugger is Attached"
-          href: determining-if-a-debugger-is-attached.md
       - name: "Interpreting a Bug Check Code"
         href: interpreting-a-bug-check-code.md
     - name: "Using a Debugger"

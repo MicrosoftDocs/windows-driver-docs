@@ -1,7 +1,6 @@
 ---
 title: ATA Port's Interface with ATA Miniport Drivers
 description: ATA Port's Interface with ATA Miniport Drivers
-ms.assetid: c3a9b862-8d6e-4ad7-8061-178b053b820c
 keywords:
 - ATA Port drivers WDK , miniport drivers
 - ATA miniport drivers WDK
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_ata_ports_interface_with_ata_minport_drivers_kg"></span><span id="DDK_ATA_PORTS_INTERFACE_WITH_ATA_MINPORT_DRIVERS_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](./storport-driver-overview.md) and [Storport miniport](./storport-miniport-drivers.md) driver models.
 
 
 In the IDE architecture for Windows Vista and later versions of Windows, there are four system-supplied IDE drivers:
@@ -60,9 +59,4 @@ The following diagram shows a configuration in which the vendor-supplied minipor
 ![vendor miniport driver that implements both the controller and the channel interfaces](images/ataport2.png)
 
 An ATA miniport driver that implements the channel interface exposes controller and channel management routines to the controller driver (*Pciidex.sys*). For performance reasons, *Pciidex.sys* passes the channel management entry points to the ATA port driver, and the ATA port driver calls the ATA miniport driver's channel management routines directly without the mediation of *Pciidex.sys*. The *Pciidex.sys* driver calls the ATA miniport driver's controller routines.
-
- 
-
- 
-
 

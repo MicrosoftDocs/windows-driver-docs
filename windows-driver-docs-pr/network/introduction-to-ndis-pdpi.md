@@ -1,7 +1,6 @@
 ---
 title: Introduction to the NDIS PacketDirect Provider Interface
 description: This section provides an introduction to the NDIS PacketDirect Provider Interface (PDPI)
-ms.assetid: E85ED51E-BDE5-43BE-93BA-19F214670B8F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ PacketDirect exists side-by-side with the traditional model. The new PD path can
 ## PacketDirect Concepts
 
 
-PD works by allowing a PD client to explicitly manage networking traffic from a network adapter (NIC). PD gives the PD client control of the high performance send and receive functionality of the NIC through the PackageDirect client interface (PDCI). Internally, the PDCI send/receive functions are mapped directly to the PDPI. PD send/receive functions operate on PD queues created by the PD client on PD-capable NICs. PD provides the PD clients with the ability to set custom filters for very specific types of traffic or very generic traffic, based on the needs of the PD client. This allows the PD client to direct certain incoming packets to its PD queues. Packet processing in the PD model always takes place in an execution context that’s owned (or controlled/coordinated) by the PD client. The PD-capable NIC driver is completely passive, meaning it does not actively forward incoming packets or completion indications for sent packets to the PD client in a driver-owned execution context such as a DPC or worker-thread.
+PD works by allowing a PD client to explicitly manage networking traffic from a network adapter (NIC). PD gives the PD client control of the high performance send and receive functionality of the NIC through the PacketDirect client interface (PDCI). Internally, the PDCI send/receive functions are mapped directly to the PDPI. PD send/receive functions operate on PD queues created by the PD client on PD-capable NICs. PD provides the PD clients with the ability to set custom filters for very specific types of traffic or very generic traffic, based on the needs of the PD client. This allows the PD client to direct certain incoming packets to its PD queues. Packet processing in the PD model always takes place in an execution context that’s owned (or controlled/coordinated) by the PD client. The PD-capable NIC driver is completely passive, meaning it does not actively forward incoming packets or completion indications for sent packets to the PD client in a driver-owned execution context such as a DPC or worker-thread.
 
 If a PD client does not understand how to process a packet or receives a control packet in one of its queues, such as an ARP, LLDP, or other protocol packets, the PD client can reroute the packet back to the current I/O path for processing. This allows PD to continue to process the packets that it has context for and not waste cycles on control traffic.
 
@@ -41,7 +40,7 @@ The PacketDirect platform implemented by Windows maps the client interface to th
 
 **PacketDirect Provider Interface (PDPI)**
 
-The PDPI allows NIC drivers to expose their high-performance send and receive functionality to the Windows OS. The functions implemented are a subset of the complete MiniPort functionality and are generic to all NICs that implement PD. For reference documentation for PDPI, see [PacketDirect Provider Interface (PDPI) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+The PDPI allows NIC drivers to expose their high-performance send and receive functionality to the Windows OS. The functions implemented are a subset of the complete MiniPort functionality and are generic to all NICs that implement PD. For reference documentation for PDPI, see [PacketDirect Provider Interface (PDPI) Reference](/windows-hardware/drivers/ddi/_netvista/).
 
 **PacketDirect Client Interface (PDCI)**
 
@@ -50,14 +49,7 @@ The PDCI allows first-party Windows services/applications (e.g., Load-balancer, 
 ## Related topics
 
 
-[PacketDirect Provider Interface (PDPI) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[PacketDirect Provider Interface (PDPI) Reference](/windows-hardware/drivers/ddi/_netvista/)
 
  
-
- 
-
-
-
-
-
 

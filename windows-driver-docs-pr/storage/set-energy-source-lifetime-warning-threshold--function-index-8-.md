@@ -1,7 +1,6 @@
 ---
 title: Set Energy Source Lifetime Warning Threshold (Function Index 8)
 description: This function sets the warning threshold for remaining Energy Source (ES) lifetime percentage.
-ms.assetid: 18D80829-8B54-48CE-A4A1-C3D57D0F60DC
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function sets the warning threshold for remaining Energy Source (ES) lifetime percentage. This function may return a failure status if the ES is host-managed and the platform does not support thresholds.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

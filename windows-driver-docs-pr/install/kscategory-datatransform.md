@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_DATATRANSFORM
 description: KSCATEGORY_DATATRANSFORM
-ms.assetid: 2e5ff89a-6ec4-4bdf-b935-675c2a337efb
 keywords: ["KSCATEGORY_DATATRANSFORM Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_DATATRANSFORM
 
 
-The KSCATEGORY_DATATRANSFORM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that transforms audio data streams.
+The KSCATEGORY_DATATRANSFORM [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that transforms audio data streams.
 
 <table>
 <colgroup>
@@ -45,17 +44,15 @@ The KSCATEGORY_DATATRANSFORM [device interface class](https://docs.microsoft.com
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DATATRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_DATATRANSFORM functional category.
 
 For an example of how to register this functional category in an INF file, see the *Ddksynth.inf* INF file that is included with the software synthesizer sample in the *src\\audio\\ddksynth* directory of the WDK.
 
-For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter), [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories), and [Requirements for a GFX Filter Factory](https://docs.microsoft.com/windows-hardware/drivers/audio/requirements-for-a-gfx-filter-factory).
+For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md), [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md), and [Requirements for a GFX Filter Factory](../audio/index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -71,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

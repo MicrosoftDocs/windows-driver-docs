@@ -1,7 +1,6 @@
 ---
 title: Initializing and Calling IDE Minidriver Routines
 description: Initializing and Calling IDE Minidriver Routines
-ms.assetid: ae7b19a9-0a2e-4231-b008-879b7f6c8566
 keywords:
 - IDE controller minidrivers WDK storage , initializing
 - storage IDE controller minidrivers WDK , initializing
@@ -22,17 +21,17 @@ All IDE controller minidrivers must provide a series of standard routines that i
 
 ![program flow for minidriver routine initialization](images/idecallbacks.png)
 
-1.  The PnP manager loads the IDE controller driver-minidriver, then calls its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, passing it a pointer to the driver object for the controller driver.
+1.  The PnP manager loads the IDE controller driver-minidriver, then calls its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, passing it a pointer to the driver object for the controller driver.
 
-2.  The minidriver's **DriverEntry** calls the [**PciIdeXInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine, passing it a pointer to the minidriver's **GetControllerProperties** routine.
+2.  The minidriver's **DriverEntry** calls the [**PciIdeXInitialize**](/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine, passing it a pointer to the minidriver's **GetControllerProperties** routine.
 
 3.  **PciIdeXInitialize** stores the pointer to **GetControllerProperties** in the driver object.
 
-4.  PnP manager dispatches an IRP\_MN\_START\_DEVICE request to the IDE controller driver to start the controller. The IDE controller driver receives the request in its [**DispatchPnP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine and calls an internal routine that starts the device.
+4.  PnP manager dispatches an IRP\_MN\_START\_DEVICE request to the IDE controller driver to start the controller. The IDE controller driver receives the request in its [**DispatchPnP**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine and calls an internal routine that starts the device.
 
 5.  The controller driver retrieves a pointer to **GetControllerProperties** that is stored in the driver object.
 
-6.  The controller driver calls **GetControllerProperties**, passing it a pointer to an [**IDE\_CONTROLLER\_PROPERTIES**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff559076(v=vs.85)) structure.
+6.  The controller driver calls **GetControllerProperties**, passing it a pointer to an [**IDE\_CONTROLLER\_PROPERTIES**](/previous-versions/windows/hardware/drivers/ff559076(v=vs.85)) structure.
 
 7.  **GetControllerProperties** loads pointers for a standard set of minidriver routines into IDE\_CONTROLLER\_PROPERTIES.
 
@@ -52,22 +51,17 @@ This routine indicates which ultra-direct memory access (UDMA) transfer mode is 
 
 This routine determines whether I/O can be done by means of DMA.
 
-[**HwIdeXChannelEnabled**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557252(v=vs.85))
+[**HwIdeXChannelEnabled**](/previous-versions/windows/hardware/drivers/ff557252(v=vs.85))
 
-[**HwIdeXGetControllerProperties**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557254(v=vs.85))
+[**HwIdeXGetControllerProperties**](/previous-versions/windows/hardware/drivers/ff557254(v=vs.85))
 
-[**HwIdeXSyncAccessRequired**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557256(v=vs.85))
+[**HwIdeXSyncAccessRequired**](/previous-versions/windows/hardware/drivers/ff557256(v=vs.85))
 
-[**HwIdeXTransferModeSelect**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557260(v=vs.85))
+[**HwIdeXTransferModeSelect**](/previous-versions/windows/hardware/drivers/ff557260(v=vs.85))
 
-[**HwIdeXUdmaModesSupported**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557264(v=vs.85))
+[**HwIdeXUdmaModesSupported**](/previous-versions/windows/hardware/drivers/ff557264(v=vs.85))
 
-[**HwIdeXUseDma**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557266(v=vs.85))
-
- 
+[**HwIdeXUseDma**](/previous-versions/windows/hardware/drivers/ff557266(v=vs.85))
 
  
-
-
-
 

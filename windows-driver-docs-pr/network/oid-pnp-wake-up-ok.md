@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_WAKE_UP_OK
 description: OID_PNP_WAKE_UP_OK
-ms.assetid: 93389bfe-11b9-4433-8eca-4446f05d01c0
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_WAKE_UP_OK Network Drivers Starting with Windows Vista
@@ -20,8 +19,7 @@ The data type for this OID is a ULONG value.
 
 An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling Ndis(Co)Request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

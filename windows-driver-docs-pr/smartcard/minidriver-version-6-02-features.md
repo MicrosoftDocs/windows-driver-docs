@@ -1,7 +1,6 @@
 ---
 title: Minidriver Version 6.02 Features
 description: Minidriver Version 6.02 Features
-ms.assetid: 8BF4B63B-B723-4899-BCAF-7826FAFF2155
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -30,10 +29,10 @@ For reference information, see [Card PIN Operations](card-pin-operations.md).
 
 New APIs added in this version include:
 
--   [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85))
--   [**CardGetChallengeEx**](https://docs.microsoft.com/previous-versions/dn468724(v=vs.85))
--   [**CardDeauthenticateEx**](https://docs.microsoft.com/previous-versions/dn468713(v=vs.85))
--   [**CardChangeAuthenticatorEx**](https://docs.microsoft.com/previous-versions/dn468706(v=vs.85))
+-   [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85))
+-   [**CardGetChallengeEx**](/previous-versions/dn468724(v=vs.85))
+-   [**CardDeauthenticateEx**](/previous-versions/dn468713(v=vs.85))
+-   [**CardChangeAuthenticatorEx**](/previous-versions/dn468706(v=vs.85))
 
 **Important**  Not all provisioning systems support multiple PINs; consequently, care must be taken when applying PINs on keys that can be updated in the field by a card provisioning system.
 
@@ -50,7 +49,7 @@ Secure PIN channel can be controlled and triggered by Common Criteria group poli
 
 For more information on secure PIN channel, see the “Session PINs" section in [Developer Guidelines](developer-guidelines.md).
 
-The new API related to this feature includes [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)).
+The new API related to this feature includes [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85)).
 
 ## <span id="_External_PIN_Support"></span><span id="_external_pin_support"></span><span id="_EXTERNAL_PIN_SUPPORT"></span> External PIN Support
 
@@ -62,15 +61,9 @@ An external PIN support is a PIN that is collected off the PC from the user. Exa
 
 In an external PIN mode, whenever PIN authentication to a smart card is required, Windows does not prompt the user for a PIN but rather calls the minidriver's authentication API immediately without any notification to the user. It is expected that the actual authentication and PIN collection occur without operating system involvement.
 
-Optionally, and subject to specific restrictions, the minidriver is allowed to display its own user interface (UI) to instruct the user to perform specific actions in relationship to PIN collection. It is not expected that such UI will be used to actually collect a PIN from the user, but rather to direct the user that Windows is waiting for a PIN to be collected externally. A minidriver is not allowed to display UI when the context is silent mode and is expected to use a specific window handle to create UI elements. More information can be found in [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)), and [**CardSetProperty**](https://docs.microsoft.com/previous-versions/dn468740(v=vs.85)).
+Optionally, and subject to specific restrictions, the minidriver is allowed to display its own user interface (UI) to instruct the user to perform specific actions in relationship to PIN collection. It is not expected that such UI will be used to actually collect a PIN from the user, but rather to direct the user that Windows is waiting for a PIN to be collected externally. A minidriver is not allowed to display UI when the context is silent mode and is expected to use a specific window handle to create UI elements. More information can be found in [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85)), and [**CardSetProperty**](/previous-versions/dn468740(v=vs.85)).
 
-Cards that can return a temporary session PIN may return such a PIN to Windows for subsequent caching. In such a case, Windows presents the session PIN for any further card authentication until the card invalidates the session PIN. For more information, see [**CardAuthenticateEx**](https://docs.microsoft.com/previous-versions/dn468703(v=vs.85)).
-
- 
+Cards that can return a temporary session PIN may return such a PIN to Windows for subsequent caching. In such a case, Windows presents the session PIN for any further card authentication until the card invalidates the session PIN. For more information, see [**CardAuthenticateEx**](/previous-versions/dn468703(v=vs.85)).
 
  
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 description: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
-ms.assetid: eafa4e20-94c5-49d6-a192-2fc7c9f1e64g
 keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
@@ -11,12 +10,12 @@ ms.localizationpriority: medium
 
 # Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 
-The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
+The [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
 
-For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
+For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
 Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration.
-As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
+As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
 
 ## Frequently asked questions
 * [What is the expiration schedule of the trusted cross-certificates?](#what-is-the-expiration-schedule-of-the-trusted-cross-certificates)
@@ -30,6 +29,8 @@ As a result, all [software publisher certificates](software-publisher-certificat
 * [How can we automate Microsoft Test Signing to work with our build processes?](#how-can-we-automate-microsoft-test-signing-to-work-with-our-build-processes)
 * [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
+* [How do production signing options differ by Windows version?](#how-do-production-signing-options-differ-by-windows-version)
+* [Will I be able to continue signing drivers if my certificate chains to a cross-cert that expires after 2021?](#will-i-be-able-to-continue-signing-drivers-with-a-certificate-that-chains-to-a-cross-cert-that-expires-after-july-1-2021)
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
@@ -63,17 +64,19 @@ The majority of cross-signed root certificates will expire in 2021, according to
 
 ### What alternatives to cross-signed certificates are available for testing drivers?
 
-The following alternatives can be used:
+For all options below, the [TESTSIGNING boot option](the-testsigning-boot-configuration-option.md) must be enabled.
 
 - [MakeCert Process](makecert-test-certificate.md)
 - [WHQL Test Signature Program](whql-test-signature-program.md)
 - [Enterprise CA Process](enterprise-ca-test-certificate.md)
 
-To use these options, you must enable [TESTSIGNING](the-testsigning-boot-configuration-option.md). See [Signing drivers during development and test](signing-drivers-during-development-and-test.md) for more information.
+For testing drivers at boot, see [How to Install a Test-signed Driver Required for Windows Setup and Boot](how-to-install-test-signed-driver-for-setup-and-boot.md).
+
+For more info, see [Signing drivers during development and test](./introduction-to-test-signing.md).
 
 ### What will happen to my existing signed driver packages? 
 
-As long as driver packages are timestamped before the expiration date of the intermediate certificate, they will continue working.
+As long as driver packages are timestamped before the expiration date of the leaf signing certificate, they will continue working.
 
 ### Is there a way to run production driver packages without exposing it to Microsoft? 
 
@@ -89,7 +92,7 @@ Yes, these certificates will continue to work until they expire. Code which is s
 
 ### Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?  
 
-Yes, you can use a valid EV certificate to sign a submission package for Hardware Dev Center, but a driver package signed by an EV certificate no longer validates after the certificate's expiration date. 
+Yes, EV certificates will continue to work until they expire. If you sign a kernel-mode driver with an EV certificate after the expiration of the cross-certificate that issued that EV certificate, the resulting driver will not load, run, or install.
 
 ### How do I know if my signing certificate will be impacted by these expirations? 
 
@@ -113,9 +116,25 @@ Yes.
 
 Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be imported into the `Local Computer Trusted Publishers` certificate store on the target computer. See [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md) for more information.
 
+### How do production signing options differ by Windows version?
+
+|Driver runs on| Drivers signed before July 1 2021 by| Driver signed on or after July 1 2021 by |
+| - | - | - |
+|Windows Server 2008 and later, Windows 7, Windows 8| WHQL or cross-signed drivers| WHQL or drivers cross-signed before July 1 2021|
+|Windows 10| WHQL or attested | WHQL or attested |
+
+If you have challenges signing your driver with WHQL, please report the specifics using one of the following:
+
+* Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
+* Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
+
+### Will I be able to continue signing drivers with a certificate that chains to a cross-cert that expires after July 1, 2021?
+
+No, kernel-mode drivers must be signed with a WHQL signature after July 1st, 2021. You cannot use a certificate that chains to a cross-cert that expires after July 1, 2021 to sign kernel-mode drivers. Using these certificates to sign kernel-mode drivers after this date is a violation of the Microsoft Trusted Root Program (TRP) policy. Certificates in violation of Microsoft TRP policies will be revoked by the CA. Additional certificates may be present on the kernel-mode driver, however Windows ignores those signatures for the purpose of validating the driver.
+
 ## Related information
 
-* [Register for the Hardware Program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program)
+* [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
 * [Software Publisher Certificate](software-publisher-certificate.md)
 * [Commercial Release Certificate](commercial-release-certificate.md)
 * [Commercial Test Certificate](commercial-test-certificate.md)

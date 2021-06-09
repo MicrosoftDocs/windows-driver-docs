@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x4 INVALID_DATA_ACCESS_TRAP
 description: The INVALID_DATA_ACCESS_TRAP bug check has a value of 0x00000004.This bug check appears very infrequently.
-ms.assetid: 98c7052d-37ff-4ad8-b9c4-afa4226ed1b0
 keywords: ["Bug Check 0x4 INVALID_DATA_ACCESS_TRAP", "INVALID_DATA_ACCESS_TRAP"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +26,7 @@ This bug check appears very infrequently.
 
 ## Resolution
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  

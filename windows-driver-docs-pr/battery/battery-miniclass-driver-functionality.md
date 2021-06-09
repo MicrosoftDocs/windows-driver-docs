@@ -1,7 +1,6 @@
 ---
 title: Battery Miniclass Driver Functionality
 description: Battery Miniclass Driver Functionality
-ms.assetid: f8da63fd-0bf9-4085-88c2-022c4ddc7caa
 keywords:
 - battery miniclass drivers WDK , functionality
 ms.date: 04/20/2017
@@ -30,12 +29,7 @@ A battery miniclass driver is responsible for the following:
 
 A battery miniclass driver calls the battery class driver's support routines for other operations, such as handling IOCTLs, as described in [Battery Class Driver Functionality](battery-class-driver-functionality.md).
 
-Every battery miniclass driver provides a set of [BatteryMini*Xxx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/_battery/) routines. The battery class driver calls these routines to request that the miniclass driver perform device-specific tasks. In addition, the miniclass driver must have other routines, as described in [Supplying Required Battery Miniclass Driver Functionality](supplying-required-battery-miniclass-driver-functionality.md).
+Every battery miniclass driver provides a set of [BatteryMini*Xxx*](/windows-hardware/drivers/ddi/_battery/) routines. The battery class driver calls these routines to request that the miniclass driver perform device-specific tasks. In addition, the miniclass driver must have other routines, as described in [Supplying Required Battery Miniclass Driver Functionality](supplying-required-battery-miniclass-driver-functionality.md).
 
  
-
- 
-
-
-
 

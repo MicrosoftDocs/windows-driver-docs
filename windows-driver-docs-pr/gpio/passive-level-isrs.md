@@ -1,7 +1,6 @@
 ---
 title: Passive-Level ISRs
 description: Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) drivers can, as an option, register their interrupt service routines (ISRs) to run at passive level.
-ms.assetid: E7556046-D85C-4CD1-8C27-578BF5CAFF2B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,8 +12,8 @@ Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driv
 
 For more information about passive-level ISRs for KMDF and UMDF drivers, see the following topics:
 
--   [Supporting Passive-Level Interrupts](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-passive-level-interrupts)
--   [Accessing Hardware and Handling Interrupts](https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-hardware-and-handling-interrupts)
+-   [Supporting Passive-Level Interrupts](../wdf/supporting-passive-level-interrupts.md)
+-   [Accessing Hardware and Handling Interrupts](../wdf/accessing-hardware-and-handling-interrupts.md)
 
 If a peripheral device uses a general-purpose I/O (GPIO) pin to relay an interrupt request to the processor, the Windows interrupt abstraction conveniently enables the driver for this device to ignore the hardware-specific details of the GPIO controller to which this pin belongs. When the kernel trap handler runs in response to a GPIO-relayed interrupt request from the device, this handler automatically clears or masks, as required, the interrupt in the GPIO hardware registers. Additionally, the kernel trap handler either directly calls the device's ISR, or schedules this ISR to run in another thread.
 
@@ -27,9 +26,4 @@ To support a passive-level ISR for a peripheral device that generates a level-tr
 Because the interrupt remains masked until the ISR returns, the device's passive-level ISR should perform only the initial servicing of the interrupt, and then return to avoid delaying passive-level ISRs for other devices. Typically, the driver should defer additional interrupt-related processing to the interrupt worker thread, which runs at a lower priority than the ISR.
 
  
-
- 
-
-
-
 

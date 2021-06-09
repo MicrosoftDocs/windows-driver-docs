@@ -1,7 +1,6 @@
 ---
 title: Debugging Tools for Windows New for Windows 10
 description: For Windows 10, Debugging Tools for Windows includes these new features.
-ms.assetid: DCF1222F-6A67-463E-8C31-B7753CAFFC20
 ms.date: 01/22/2019
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ This section describes new debugging tools in Windows 10, version 1703.
 -   Updates to the [**dx (Display Debugger Object Model Expression)**](dx--display-visualizer-variables-.md) command, to include new command capabilities.
 -   New [**dtx (Display Type - Extended Debugger Object Model Information)**](dtx--display-type---extended-debugger-object-model-information-.md) command.
 -   New [**!ioctldecode**](-ioctldecode.md) command.
--   Updated [Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference) to include additional interfaces and structures.
+-   Updated [Debugger Engine Reference](debugger-engine-reference.md) to include additional interfaces and structures.
 -   Updates to [Configuring tools.ini](configuring-tools-ini.md) to document additional options for the command line debuggers.
 -   Published 75 previously undocumented stop codes in [Bug Check Code Reference](bug-check-code-reference2.md).
 -   New [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) topic.
@@ -56,7 +55,7 @@ This section describes new debugging tools in Windows 10, version 1607.
 -   [**!analyze**](-analyze.md) - Updated to include information about using this extension with UMDF 2.15.
 -   [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md)- Updated to include information about using this extension with UMDF 2.15
 -   [**!irp**](-irp.md) - Updated. Starting with Windows 10 the IRP major and minor code text is displayed in command output.
--   [Using Debugger Markup Language](debugger-markup-language-commands.md) - Updated to describe new right click behavior available in the Debugger Markup Language (DML).
+-   [Using Debugger Markup Language](debugger-markup-language-commands.md) - Updated to describe new select-and-hold (or right-click) behavior available in the Debugger Markup Language (DML).
 -   [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md) - Performance has increased in taking a memory dump over KDNET.
 -   [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)- New step by step lab that shows how to use WinDbg to debug the sample KMDF echo driver.
 

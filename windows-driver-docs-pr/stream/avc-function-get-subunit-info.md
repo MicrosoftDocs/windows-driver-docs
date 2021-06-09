@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_SUBUNIT\_INFO
 description: AVC\_FUNCTION\_GET\_SUBUNIT\_INFO
-ms.assetid: 1793df9d-b186-425f-a3dd-3054cb9b74bf
 keywords: ["AVC_FUNCTION_GET_SUBUNIT_INFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -59,13 +58,7 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SUBUNIT\_INFO\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_subunit_info_block), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SUBUNIT\_INFO\_BLOCK**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_subunit_info_block), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
  
-
- 
-
-
-
-
 

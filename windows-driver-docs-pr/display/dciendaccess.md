@@ -1,7 +1,6 @@
 ---
 title: DCIEndAccess
 description: DCIEndAccess
-ms.assetid: 182b7b95-623b-420a-8099-33019544e575
 keywords: ["DCIEndAccess Display Devices"]
 topic_type:
 - apiref

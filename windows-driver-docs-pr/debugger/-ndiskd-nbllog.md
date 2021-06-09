@@ -1,7 +1,6 @@
 ---
 title: ndiskd.nbllog
 description: The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system.
-ms.assetid: 59CB6B60-E0B3-435E-A6F6-82A715E87C69
 keywords: ["ndiskd.nbllog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # !ndiskd.nbllog
 
 
-The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)) activity on the system.
+The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)) activity on the system.
 
 ```console
 !ndiskd.nbllog [-stacks] 
@@ -32,8 +31,7 @@ Include callstacks.
 
 Ndiskd.dll
 
-Remarks
--------
+## Remarks
 
 **Important**  
 **!ndiskd.nbllog** requires NBL tracking to be enabled on the debugee target machine. NBL tracking is not enabled by default in all configurations of Windows. If NBL tracking is not enabled, !ndiskd will give you instructions on how to enable it, as shown in the following snippet.
@@ -59,8 +57,7 @@ Remarks
 
 The NBL log shows network traffic on the system. [**!ndiskd.netreport**](-ndiskd-netreport.md) parses the NBL tracking log to display this network traffic visually. Therefore, if NBL tracking is not enabled, **!ndiskd.netreport** will not be able to show you this information.
 
-Examples
---------
+## Examples
 
 After you have enabled NBL tracking on the target debugee machine, enter the **!ndiskd.nbllog** command to see the log of all NBL traffic on the system. As shown in the example below, running **!ndiskd.nbllog** with no parameters will limit output to 200 events, which can be bypassed by rerunning the command with the *-force* option. The middle of the output in this example has been excised for brevity.
 
@@ -96,31 +93,23 @@ After you have enabled NBL tracking on the target debugee machine, enter the **!
     Rerun with the '-force' option to bypass this limit.
 ```
 
-For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176) on the NDIS blog.
+For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log) on the NDIS blog.
 
 ## <span id="see_also"></span>See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)
+[**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
-[!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176)
-
- 
+[!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log)
 
  
-
-
-
-
-
 

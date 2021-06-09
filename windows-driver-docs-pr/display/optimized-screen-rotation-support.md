@@ -1,7 +1,6 @@
 ---
 title: Optimized screen rotation support
 description: Windows 8 ensures a flicker-free screen rotation experience by ensuring that the output from the graphics adapter stays enabled during a rotational mode change.
-ms.assetid: CFDB4713-EC90-4FAB-B379-742C52888BB3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,11 +14,12 @@ Windows 8 ensures a flicker-free screen rotation experience by ensuring that th
 
  
 
-|                                                      |           |
-|------------------------------------------------------|-----------|
-| Minimum WDDM version                                 | 1.2       |
-| Minimum Windows version                              | 8         |
-| Driver implementation—Full graphics and Display only | Mandatory |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Display only**: Mandatory
+
 
  
 
@@ -28,11 +28,11 @@ Windows 8 ensures a flicker-free screen rotation experience by ensuring that th
 
 The display miniport driver must support updating the path rotation when these driver-implemented functions are called:
 
--   [*DxgkDdiCommitVidPn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn)
--   [*DxgkDdiUpdateActiveVidPnPresentPath*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath)
+-   [*DxgkDdiCommitVidPn*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn)
+-   [*DxgkDdiUpdateActiveVidPnPresentPath*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath)
 
-The driver must indicate support for smooth rotation in a call to [*DxgkDdiUpdateActiveVidPnPresentPath*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath) by setting the [**DXGK\_DRIVERCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure's **SupportSmoothRotation** member, which is available starting with Windows 8.
-The driver must always be able to set the path rotation during a call to [*DxgkDdiCommitVidPn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn).
+The driver must indicate support for smooth rotation in a call to [*DxgkDdiUpdateActiveVidPnPresentPath*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath) by setting the [**DXGK\_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure's **SupportSmoothRotation** member, which is available starting with Windows 8.
+The driver must always be able to set the path rotation during a call to [*DxgkDdiCommitVidPn*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn).
 
 ## <span id="Smooth_rotation_scenarios"></span><span id="smooth_rotation_scenarios"></span><span id="SMOOTH_ROTATION_SCENARIOS"></span>Smooth rotation scenarios
 
@@ -44,10 +44,4 @@ On traditional desktop and laptop systems, screen rotation is not a frequently u
 -   The mode change request is determined to be compatible with smooth rotation mode transition. Two modes are compatible if they have the same dimensions (width and height), topology, refresh rates, pixel formats, and stride, and differ only in screen orientation (that is, are rotated).
 
  
-
- 
-
-
-
-
 

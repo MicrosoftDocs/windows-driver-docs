@@ -30,18 +30,15 @@ The CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG bug check has a value of 0x00000
 |3| Reserved |
 |4| Reserved |
 
-## Cause
------
+## ## Cause
 
 The Cluster disconnect is not making forward progress.
 
 
-## Resolution
-----------
+## ## Resolution
  
 
-## See Also
-----------
+## ## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

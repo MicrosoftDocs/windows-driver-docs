@@ -1,7 +1,6 @@
 ---
 title: VMQ Send and Receive Operations
 description: VMQ Send and Receive Operations
-ms.assetid: 11f07534-f715-4ed5-b312-652fb3c7e8bb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

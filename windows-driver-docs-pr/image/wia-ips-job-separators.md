@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_JOB\_SEPARATORS
 description: The WIA\_IPS\_JOB\_SEPARATORS property is used to enable the detection of job separators, and to configure the action that the device executes when it detects a job separator page. The WIA minidriver creates and maintains this property.
-ms.assetid: 2ECD88EB-2B6F-477D-8F37-D4EECA580FAE
 keywords: ["WIA_IPS_JOB_SEPARATORS Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the valid values for the **WIA\_IPS\_JOB\_SEPARATORS** property.
 
@@ -73,8 +71,7 @@ The following table describes the valid values for the **WIA\_IPS\_JOB\_SEPARATO
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_DURATION
 description: The KSPROPERTY\_MEDIASEEKING\_DURATION property retrieves the media duration on a filter.
-ms.assetid: f84ff468-7cf6-4948-afee-a28ee365760d
 keywords: ["KSPROPERTY_MEDIASEEKING_DURATION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_MEDIASEEKING\_DURATION property retrieves the media duration on 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The KSPROPERTY\_MEDIASEEKING\_DURATION property retrieves the media duration on 
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns the media duration as a value of type LONGLONG.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,13 +77,4 @@ Requirements
 
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
- 
-
- 
-
-
-
-
-
 

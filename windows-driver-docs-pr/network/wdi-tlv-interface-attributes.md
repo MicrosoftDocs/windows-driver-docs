@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INTERFACE_ATTRIBUTES
 description: WDI_TLV_INTERFACE_ATTRIBUTES is a TLV that contains the attributes of an interface.
-ms.assetid: A36AC0A7-6F5B-4461-841D-3B4C19BD49EB
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INTERFACE_ATTRIBUTES Network Drivers Starting with Windows Vista
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

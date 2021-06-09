@@ -1,7 +1,6 @@
 ---
 title: Porting a Driver from WDM to WDF
 description: The topics in this section describe how to convert an existing WDM driver to a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver.
-ms.assetid: 3B4D677D-2FCC-45A1-95B4-DA9CA9D7B452
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The topics in this section describe how to convert an existing WDM driver to a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver.
 
-Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM drivers. A WDM driver consists of a [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function, various dispatch routines that the operating system calls to service I/O requests, and additional driver-specific utility functions. A WDF driver consists of a [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) function, various event callback functions that the framework calls to service I/O requests, and additional driver-specific utility functions. However, within this broad structure, the two models have important differences.
+Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM drivers. A WDM driver consists of a [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function, various dispatch routines that the operating system calls to service I/O requests, and additional driver-specific utility functions. A WDF driver consists of a [**DriverEntry**](./driverentry-for-kmdf-drivers.md) function, various event callback functions that the framework calls to service I/O requests, and additional driver-specific utility functions. However, within this broad structure, the two models have important differences.
 
 ## In this section
 
@@ -24,10 +23,4 @@ Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM driv
 -   [Summary of KMDF and WDM Equivalents](summary-of-kmdf-and-wdm-equivalents.md)
 
  
-
- 
-
-
-
-
 

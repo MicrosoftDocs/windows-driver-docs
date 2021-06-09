@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Group Owner negotiation response information.
-ms.assetid: A0BB2CF6-4168-4973-92D0-EFF9F596F1BE
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO Network Drivers Starting with Windows Vista
@@ -33,8 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

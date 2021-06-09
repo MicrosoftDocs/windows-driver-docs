@@ -10,6 +10,9 @@ ms.localizationpriority: medium
 
 Use this method in the *Microsoft Hardware API* to request cancellation of a shipping label in Microsoft Approval or Gradual Rollout. Before using this method, make sure your shipping label is in Microsoft Approval or Gradual Rollout. For more info about getting a shipping label, see [Get a new shipping label](get-a-shipping-label.md).
 
+> [!NOTE]
+> You cannot cancel a shared shipping label. However, you can revoke sharing after the workflow has completed.
+
 ## Prerequisites
 
 If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before using this method.
@@ -20,7 +23,7 @@ This method has the following syntax. The other sections in this topic provide u
 
 | Method | Request URI |
 |:--|:--|
-| PUT | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}/cancel` |
+| PUT | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}/cancel` |
 
 The *productID*, *submissionID* and *shippingLabelId* in the method represent the product, submission and shipping label for cancellation.
 
@@ -33,18 +36,18 @@ The *productID*, *submissionID* and *shippingLabelId* in the method represent th
 
 ### Request parameters
 
-Do not provide request parameters for this method. 
+Do not provide request parameters for this method.
 
 ### Request body
 
-Do not provide request body for this method. 
+Do not provide request body for this method.
 
 ### Request examples
 
 The following example demonstrates how to request cancellation of a shipping label.
 
 ```json
-PUT https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300/cancel HTTP/1.1
+PUT https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300/cancel HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

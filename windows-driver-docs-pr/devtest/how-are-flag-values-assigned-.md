@@ -1,7 +1,6 @@
 ---
 title: How are flag values assigned
 description: How are flag values assigned
-ms.assetid: de74e2d9-0ebf-4125-9dbb-42f7755010f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 Typically, trace flags represent increasingly detailed reporting levels.
 
-Flag values are defined in the WPP\_DEFINE\_BIT elements of the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro, such as in this example:
+Flag values are defined in the WPP\_DEFINE\_BIT elements of the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro, such as in this example:
 
 ```
 #define WPP_CONTROL_GUIDS \
@@ -30,12 +29,3 @@ When you start a [trace session](trace-session.md), use the bit value to represe
 ```
 tracelog -start MyTrace -guid MyDriver.guid -flags 4
 ```
-
-
-
-
-
-
-
-
-

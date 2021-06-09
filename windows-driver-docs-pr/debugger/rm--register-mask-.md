@@ -1,7 +1,6 @@
 ---
 title: rm (Register Mask)
 description: The rm command modifies or displays the register display mask. This mask controls how registers are displayed by the r (Registers) command.
-ms.assetid: b3203bf3-b614-490b-8cbd-6abb291a801a
 keywords: ["rm (Register Mask) Windows Debugging"]
 ms.date: 07/12/2018
 topic_type:
@@ -58,8 +57,7 @@ Specifies the mask to use when the debugger displays the registers. *Mask* is a 
 
 
 
-Remarks
--------
+## Remarks
 
 The "m" in the command name must be a lowercase letter.
 

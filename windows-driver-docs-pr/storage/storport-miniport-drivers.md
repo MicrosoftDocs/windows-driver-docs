@@ -1,17 +1,16 @@
 ---
-title: Storport Miniport Drivers
+title: Introduction to Storport Miniport Drivers
 description: Storport Miniport Drivers
-ms.assetid: 17ab5a07-b7c3-4fed-acf7-3e2491b7bd56
 keywords:
 - Storport miniport drivers WDK
 - Storport miniport drivers WDK , routines listed
 - storage miniport drivers WDK , Storport miniport drivers
 - miniport drivers WDK storage , Storport miniport drivers
-ms.date: 10/08/2019
+ms.date: 12/15/2019
 ms.localizationpriority: medium
 ---
 
-# Storport Miniport Drivers
+# Introduction to Storport Miniport Drivers
 
 Storport miniport drivers work with the [Storport Driver](storport-driver-overview.md). The following sections describe Storport miniport drivers and the routines that they call:
 

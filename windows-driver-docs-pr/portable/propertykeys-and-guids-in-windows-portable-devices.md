@@ -1,5 +1,5 @@
 ---
-Description: PROPERTYKEYs and GUIDs in Windows Portable Devices
+description: PROPERTYKEYs and GUIDs in Windows Portable Devices
 title: PROPERTYKEYs and GUIDs in Windows Portable Devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -15,25 +15,19 @@ The reference section of this document describes all the PROPERTYKEY values defi
 ## <span id="related_topics"></span>Related topics
 
 
-[**WPD\_CONTENT\_TYPE\_FUNCTIONAL\_OBJECT**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597845(v=vs.85))
+[**WPD\_CONTENT\_TYPE\_FUNCTIONAL\_OBJECT**](/previous-versions/windows/hardware/drivers/ff597845(v=vs.85))
 
 [**Requirements for Objects**](requirements-for-objects.md)
 
-[**Object Format GUIDs**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597651(v=vs.85))
+[**Object Format GUIDs**](/previous-versions/windows/hardware/drivers/ff597651(v=vs.85))
 
-[**Requirements for Resources**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597663(v=vs.85))
+[**Requirements for Resources**](/previous-versions/windows/hardware/drivers/ff597663(v=vs.85))
 
-[**Commands**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597554(v=vs.85))
+[**Commands**](/previous-versions/windows/hardware/drivers/ff597554(v=vs.85))
 
-[**Properties and Attributes**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597900(v=vs.85))
+[**Properties and Attributes**](/previous-versions/windows/hardware/drivers/ff597900(v=vs.85))
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
  
-
- 
-
-
-
-
 

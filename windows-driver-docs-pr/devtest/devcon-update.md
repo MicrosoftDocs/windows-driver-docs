@@ -1,7 +1,6 @@
 ---
 title: DevCon Update
 description: Forcibly replaces the current device drivers for a specified device with drivers listed in the specified INF file. Valid only on the local computer.
-ms.assetid: c07d7abe-31d8-4a8d-87da-8db649710c15
 keywords:
 - DevCon Update Driver Development Tools
 topic_type:
@@ -37,7 +36,7 @@ Updates the drivers for devices with the specified hardware ID. The hardware ID 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The **DevCon Update** operation forces an update to the most appropriate drivers in the specified INF file, even if those drivers are older or less appropriate than the current drivers or the drivers in a different INF file. For more information, see [How Setup Selects Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-selects-drivers).
+The **DevCon Update** operation forces an update to the most appropriate drivers in the specified INF file, even if those drivers are older or less appropriate than the current drivers or the drivers in a different INF file. For more information, see [How Setup Selects Drivers](../install/how-windows-selects-a-driver-for-a-device.md).
 
 You cannot use a **DevCon Update** command to update drivers for nonpresent devices.
 
@@ -59,12 +58,3 @@ devcon /r update c:\windows\inf\newdvc.inf *PNP030b
 [Example 32: Update the driver for communication ports](devcon-examples.md#ddk_example_32_update_the_driver_for_communication_ports_tools)
 
 [Example 44: Forcibly update the HAL](devcon-examples.md#ddk_example_44_forcibly_update_the_hal_tools)
-
-
-
-
-
-
-
-
-

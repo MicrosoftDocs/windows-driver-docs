@@ -1,7 +1,6 @@
 ---
 title: State Transitions
 description: State Transitions
-ms.assetid: c71fd395-28aa-4421-9443-b5b0a1f3ac7e
 keywords:
 - video capture WDK AVStream , stream states
 - capturing video WDK AVStream , stream states
@@ -43,7 +42,7 @@ To ensure orderly resource allocation, only a subset of the possible kernel stre
 </tr>
 <tr class="even">
 <td><p>Pause to stop</p></td>
-<td><p>Deallocate resources and complete all outstanding read SRBs. SRBs that have not been filled with an image are completed with zero length in the <strong>DataUsed</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header" data-raw-source="[&lt;strong&gt;KSSTREAM_HEADER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header)"><strong>KSSTREAM_HEADER</strong></a> structure.</p></td>
+<td><p>Deallocate resources and complete all outstanding read SRBs. SRBs that have not been filled with an image are completed with zero length in the <strong>DataUsed</strong> member of the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header" data-raw-source="[&lt;strong&gt;KSSTREAM_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header)"><strong>KSSTREAM_HEADER</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,14 +57,7 @@ KSSTATE\_STOP -&gt; **KSSTATE\_ACQUIRE** -&gt; **KSSTATE\_PAUSE** -&gt; **KSSTAT
 
 When a stream is in a **KSSTATE\_STOP** state, the minidriver must immediately complete all outstanding data-read SRBs.
 
-Because a user-mode application can end unexpectedly while streaming, all Stream class minidrivers must accept and process an [**SRB\_CLOSE\_STREAM**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-close-stream) request from the Stream class interface at any time. Before the Stream class interface sends SRB\_CLOSE\_STREAM to a minidriver, it cancels all outstanding buffers through the minidriver's **HwCancelPacket** routine. Note that the stream state cannot be set to **KSSTATE\_STOP** before the application terminates.
+Because a user-mode application can end unexpectedly while streaming, all Stream class minidrivers must accept and process an [**SRB\_CLOSE\_STREAM**](./srb-close-stream.md) request from the Stream class interface at any time. Before the Stream class interface sends SRB\_CLOSE\_STREAM to a minidriver, it cancels all outstanding buffers through the minidriver's **HwCancelPacket** routine. Note that the stream state cannot be set to **KSSTATE\_STOP** before the application terminates.
 
-Do not update the **PictureNumber** or **DropCount** members of [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info), [**KS\_VBI\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_vbi_frame_info), or [**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s) on transition from **KSSTATE\_PAUSE** to **KSSTATE\_RUN** or **KSSTATE\_RUN** to KSSTATE\_PAUSE. For more information, see [Capturing Video](capturing-video.md).
-
- 
-
- 
-
-
-
+Do not update the **PictureNumber** or **DropCount** members of [**KS\_FRAME\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info), [**KS\_VBI\_FRAME\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_vbi_frame_info), or [**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s) on transition from **KSSTATE\_PAUSE** to **KSSTATE\_RUN** or **KSSTATE\_RUN** to KSSTATE\_PAUSE. For more information, see [Capturing Video](capturing-video.md).
 

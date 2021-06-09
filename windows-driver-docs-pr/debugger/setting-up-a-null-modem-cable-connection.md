@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a Serial Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a null-modem cable.
-ms.assetid: f7311928-bab1-4692-8dd6-5e464dd7127a
 keywords: ["setup, making a debug cable connection", "null-modem cable", "debug cable", "cable connection", "cable connection, debug (null-modem) cable)"]
 ms.date: 07/11/2018
 ms.localizationpriority: medium
@@ -9,18 +8,15 @@ ms.localizationpriority: medium
 
 # Setting Up Kernel-Mode Debugging over a Serial Cable Manually
 
-
-Debugging Tools for Windows supports kernel debugging over a null-modem cable. Null-modem cables are serial cables that have been configured to send data between two serial ports. They are available at most computer stores. Do not confuse null-modem cables with standard serial cables. Standard serial cables do not connect serial ports to each other. For information about how null-modem cables are wired, see [Null-Modem Cable Wiring](#null-modem-cable-wiring).
+Debugging Tools for Windows supports kernel debugging over a null-modem cable. Null-modem cables are serial cables that have been configured to send data between two serial ports. Do not confuse null-modem cables with standard serial cables. Standard serial cables do not connect serial ports to each other. For information about how null-modem cables are wired, see [Null-Modem Cable Wiring](#null-modem-cable-wiring).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Target Computer
 
-
 > [!IMPORTANT]
-> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
 > You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
-
 
 1. On the target computer, open a Command Prompt window as Administrator, and enter the following commands, where *n* is the number of the COM port used for debugging on the target computer, and *rate* is the baud rate used for debugging:
 
@@ -30,18 +26,15 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
    **Note**  The baud rate must be the same on the host computer and target computer. The recommended rate is 115200.
 
-     
-
 2. Reboot the target computer.
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
-
 
 Connect the null-modem cable to the COM ports that you have chosen for debugging on the host and target computers.
 
 ### <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
 
-On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **COM** tab. In the **Baud rate** box, enter the rate you have chosen for debugging. In the **Port** box, enter COM*n* where *n* is the COM port number you have chosen for debugging on the host computer. Click **OK**.
+On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **COM** tab. In the **Baud rate** box, enter the rate you have chosen for debugging. In the **Port** box, enter COM*n* where *n* is the COM port number you have chosen for debugging on the host computer. Select **OK**.
 
 You can also start a session with WinDbg by entering the following command in a Command Prompt window; *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
@@ -97,7 +90,6 @@ On the host computer, specify the correct baud rate when you start the debugger 
 
 ## <span id="null-modem-cable-wiring"></span><span id="NULL-MODEM-CABLE-WIRING"></span>Null Modem Cable Wiring
 
-
 The following tables show how null-modem cables are wired.
 
 ### <span id="9-pin_connector"></span><span id="9-PIN_CONNECTOR"></span>9-pin connector
@@ -144,20 +136,8 @@ The following tables show how null-modem cables are wired.
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-
-For complete documentation of the **bcdedit** command, see Boot Options for Driver Testing and Debugging in the Windows Driver Kit (WDK) documentation.
+For complete documentation of the **bcdedit** command, see [BCDEdit Options Reference](../devtest/bcd-boot-options-reference.md).
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
-
- 
-
- 
-
-
-
-
-
-

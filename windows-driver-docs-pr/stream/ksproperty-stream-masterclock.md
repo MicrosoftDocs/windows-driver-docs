@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_MASTERCLOCK
 description: The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should be implemented if the pin uses or produces a master clock that can be used for synchronization.
-ms.assetid: b8fb4d7b-e2e3-498c-9f76-4075d3ae0cb2
 keywords: ["KSPROPERTY_STREAM_MASTERCLOCK Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>HANDLE</p></td>
 </tr>
 </tbody>
@@ -55,8 +54,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 
  
 
-Remarks
--------
+## Remarks
 
 The property returns a **NULL** handle when queried. Support is determined by whether the call returns successfully.
 
@@ -66,10 +64,9 @@ When the clock is set on a pin, the pin references the underlying file object an
 
 A filter does not need to support the property when it neither produces a master clock nor needs to reference one, such as a converter filter placed in the middle of a graph with no need to synchronize with other streams. The property can also be used as read-only when a filter produces a master clock but does not synchronize to an external master clock.
 
-Also see [KS Clocks](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-clocks) and [AVStream Clocks](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-clocks).
+Also see [KS Clocks](./ks-clocks.md) and [AVStream Clocks](./avstream-clocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -87,14 +84,5 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 

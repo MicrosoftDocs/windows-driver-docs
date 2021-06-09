@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY\_CAPABILITIES
 description: The WIA\_DPS\_TRANSPARENCY\_CAPABILITIES property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: f33f164b-daac-424c-99ea-37190a97d5af
 keywords: ["WIA_DPS_TRANSPARENCY_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

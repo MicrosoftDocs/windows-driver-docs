@@ -1,7 +1,6 @@
 ---
 title: gpiokd.pininfo
 description: The gpiokd.pininfo command displays information about a specified GPIO pin.
-ms.assetid: 67A8F87A-E1E4-42AC-B626-66C2CB177A61
 keywords: ["gpiokd.pininfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: INF Requirements for Hyper-V Extensible Switch Extensions
 description: INF Requirements for Hyper-V Extensible Switch Extensions
-ms.assetid: 378F619A-C799-4330-A388-9955A67251F8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ In addition, you must follow these guidelines for INF files for extensible switc
 
   If the **FilterMediaTypes** entry only specifies the **vmnetextension** value, the extension will only bind to the driver stacks for all extensible switches on the system.
 
-  If the **FilterMediaTypes** entry specifies **vmnetextension** as well as other media types, the extension can determine whether it is bound within an extensible switch driver stack by calling [**NdisFGetOptionalSwitchHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers). If the function returns NDIS\_STATUS\_SUCCESS, the extension is bound within the extension driver stack. If the function returns NDIS\_STATUS\_NOT\_SUPPORTED, the extension is bound within the driver stack for a different physical network interface.
+  If the **FilterMediaTypes** entry specifies **vmnetextension** as well as other media types, the extension can determine whether it is bound within an extensible switch driver stack by calling [**NdisFGetOptionalSwitchHandlers**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers). If the function returns NDIS\_STATUS\_SUCCESS, the extension is bound within the extension driver stack. If the function returns NDIS\_STATUS\_NOT\_SUPPORTED, the extension is bound within the driver stack for a different physical network interface.
 
   For more information about the **FilterMediaTypes** entry, see [Intermediate Driver UpperRange And LowerRange INF File Entries](intermediate-driver-upperrange-and-lowerrange-inf-file-entries.md).
 
@@ -81,10 +80,4 @@ In addition, you must follow these guidelines for INF files for extensible switc
 When the extension is installed with these INF settings, it will be configured to bind to every extensible switch instance. However, the binding will be disabled and must be explicitly enabled through a PowerShell cmdlet. For more information on this procedure, see [Enabling Hyper-V Extensible Switch Extensions](enabling-hyper-v-extensibility-switch-extensions.md).
 
  
-
- 
-
-
-
-
 

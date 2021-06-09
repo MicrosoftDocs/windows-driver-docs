@@ -1,7 +1,6 @@
 ---
 title: Multipage IStream Transfers
 description: Multipage IStream Transfers
-ms.assetid: 0d17cfa8-f200-4d87-a2cb-cfd8dbc24e1e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

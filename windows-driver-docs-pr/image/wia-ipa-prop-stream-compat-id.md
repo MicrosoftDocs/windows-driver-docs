@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID
 description: The WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property specifies a class identifier (CLSID) that represents a set of device property values.
-ms.assetid: e0701a7a-45e8-4096-8f20-2ed7d3113181
 keywords: ["WIA_IPA_PROP_STREAM_COMPAT_ID Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If a device driver implements the WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property, applications use this property to determine whether the device supports a set of values.
 
@@ -101,8 +99,7 @@ The following table describes the constants that are valid with WIA\_IPA\_PROP\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

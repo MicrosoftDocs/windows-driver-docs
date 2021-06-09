@@ -1,7 +1,6 @@
 ---
 title: CreateScanJobResponse element
 description: The required CreateScanJobResponse element contains the WSD Scan Service's response to a client's scan request.
-ms.assetid: a832bdc2-9c47-41da-ac78-a844b8f84ec1
 keywords: ["CreateScanJobResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **CreateScanJobResponse** element contains the WSD Scan Service's response to a client's scan request.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CreateScanJobResponse>
@@ -27,8 +25,7 @@ Usage
 </wscn:CreateScanJobResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -65,8 +62,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **CreateScanJobResponse** operation element.
 
@@ -81,25 +77,24 @@ If the client has made a valid scan request, the WSD Scan Service must return th
 
 The client must retrieve the actual image data from the Scan Service by sending one or more [**RetrieveImageRequest**](retrieveimagerequest.md) operation elements. The client has 60 seconds to send a **RetrieveImageRequest** operation element after the Scan Service has responded to the client's [**CreateScanJobRequest**](createscanjobrequest.md). If the Scan Service does not receive a **RetrieveImageRequest** within this time, it should abort the job with a [**JobStateReason**](jobstatereason.md) of **JobTimedOut**. If the job consists of multiple documents, this time-out applies between each successive **RetrieveImageRequest/Response** operation.
 
-Examples
---------
+## Examples
 
 The following code example illustrates a WSD Scan Service response to a CreateScanJobRequest.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
-      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+      https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
     </wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheCreateScanJobRequest</wsa:RelatesTo>

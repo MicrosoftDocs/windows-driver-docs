@@ -1,7 +1,6 @@
 ---
 title: Container IDs for PnP-X Devices
 description: Container IDs for PnP-X Devices
-ms.assetid: 6a1ea4e9-e672-4f37-ab26-932591fe4da4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

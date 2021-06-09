@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xE1 WORKER_THREAD_RETURNED_AT_BAD_IRQL
 description: The WORKER_THREAD_RETURNED_AT_BAD_IRQL bug check has a value of 0x000000E1. This indicates that a worker thread completed and returned with IRQL DISPATCH_LEVEL.
-ms.assetid: c02b98e9-e3a4-473a-bd9f-3130b7e58c1d
 keywords: ["Bug Check 0xE1 WORKER_THREAD_RETURNED_AT_BAD_IRQL", "WORKER_THREAD_RETURNED_AT_BAD_IRQL"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,13 +57,11 @@ The WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL bug check has a value of 0x000000E1.
 
  
 
-Cause
------
+## Cause
 
 A worker thread completed and returned with IRQL &gt;= DISPATCH\_LEVEL.
 
-Resolution
-----------
+## Resolution
 
 To find the driver that caused the error, use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) debugger command:
 

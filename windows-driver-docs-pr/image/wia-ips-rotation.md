@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ROTATION
 description: The WIA\_IPS\_ROTATION property contains the current rotation setting for image rotation, if it is implemented. The WIA minidriver creates and maintains this property.
-ms.assetid: 5d117d55-b7e4-46eb-aeb5-54636749081f
 keywords: ["WIA_IPS_ROTATION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_IPS\_ROTATION property to inform a driver how much (if at all) to rotate an image before the driver returns it to the application.
 
@@ -79,8 +77,7 @@ It can be difficult to understand the effect of rotation on the current image's 
 
 WIA\_IPS\_ORIENTATION can impact the area to be scanned. Not all page sizes are available in both landscape and portrait, and the extents of the image from an change in WIA\_IPS\_ORIENTATION could crop the image. WIA\_IPS\_ROTATION does not impact the image extents and is not related to the orientation of the document that is to be scanned.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

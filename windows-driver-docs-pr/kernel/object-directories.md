@@ -1,7 +1,6 @@
 ---
 title: Object Directories
 description: Object Directories
-ms.assetid: b0e0d077-6736-4a54-b1eb-a30962442942
 keywords: ["object directories WDK kernel", "named objects WDK kernel", "directories WDK objects", "top-level object directories WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -33,16 +32,11 @@ The following is a list of the top-level object directories that contain objects
 
 -   **\\DosDevices**
 
-    This directory stores the MS-DOS device name of a device as a symbolic link to the corresponding device object. For more information, see [MS-DOS Device Names](ms-dos-device-names.md).
+    This directory stores the MS-DOS device name of a device as a symbolic link to the corresponding device object. For more information, see [MS-DOS Device Names](introduction-to-ms-dos-device-names.md).
 
 The system creates other top-level directories, but they are reserved for system use.
 
-Drivers can create new object directories by calling the [**ZwCreateDirectoryObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject) routine.
+Drivers can create new object directories by calling the [**ZwCreateDirectoryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject) routine.
 
  
-
- 
-
-
-
 

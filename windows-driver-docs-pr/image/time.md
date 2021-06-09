@@ -1,7 +1,6 @@
 ---
 title: Time element
 description: The required Time element specifies the time at which a condition occurred.
-ms.assetid: 1a10f6b4-1fcd-4697-9eb4-d58cca9c4a23
 keywords: ["Time element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Time** element specifies the time at which a condition occurred.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Time>
@@ -27,13 +25,11 @@ Usage
 </wscn:Time>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
 
@@ -64,8 +60,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The specified **Time** is according to the internal clock of the scanner.
 

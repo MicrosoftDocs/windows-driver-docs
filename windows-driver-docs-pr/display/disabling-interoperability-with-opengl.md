@@ -1,7 +1,6 @@
 ---
 title: Disabling Interoperability with OpenGL
 description: Disabling Interoperability with OpenGL
-ms.assetid: 2b684cda-2137-4395-b2ee-beee8614e4c1
 keywords:
 - INF files WDK display , interoperability
 - interoperability WDK display

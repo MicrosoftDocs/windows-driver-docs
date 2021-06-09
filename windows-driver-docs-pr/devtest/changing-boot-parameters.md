@@ -1,7 +1,6 @@
 ---
 title: Changing Boot Parameters
 description: Changing Boot Parameters
-ms.assetid: e835e1e9-ad80-462b-b55f-2fa0e55009a5
 keywords:
 - boot entry parameters WDK
 - boot parameters WDK
@@ -18,7 +17,7 @@ To change boot parameters on a system running Windows, you can use BCDEdit.
 
 ## <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
 
-To add a boot configuration parameter to a boot entry, use the BCDEdit boot entry options to change global settings, such as **/ems**, **/debug**, **/dbgsettings**, or set individual parameters using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) options. For a complete list of BCDEdit options, at a command prompt, type **BCDEdit /?** or **BCDEdit /?** &lt;command&gt; to find help about a specific command.
+To add a boot configuration parameter to a boot entry, use the BCDEdit boot entry options to change global settings, such as **/ems**, **/debug**, **/dbgsettings**, or set individual parameters using the [**BCDEdit /set**](./bcdedit--set.md) options. For a complete list of BCDEdit options, at a command prompt, type **BCDEdit /?** or **BCDEdit /?** &lt;command&gt; to find help about a specific command.
 
 For example, the following command enables PAE for a specified boot entry:
 

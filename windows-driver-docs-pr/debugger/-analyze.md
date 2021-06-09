@@ -1,7 +1,6 @@
 ---
 title: analyze
 description: The analyze extension displays information about the current exception or bug check.
-ms.assetid: dec760fb-0af6-4504-9855-8fe63c1c9783
 keywords: ["analyze Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -77,8 +76,7 @@ Ext.dll
 
 For sample analysis of a user-mode exception and of a kernel-mode stop error (that is, crash), and for more information about how **!analyze** uses the triage.ini file, see [Using the !analyze Extension](using-the--analyze-extension.md).
 
-Remarks
--------
+## Remarks
 
 In user mode, **!analyze** displays information about the current exception.
 

@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_PROCESS\_XXX
 description: The process options are a bit set that control how the debugger engine treats user-modeprocesses. Some of these process options are global; others are specific to a process.
-ms.assetid: 5b485ae2-6d97-4cfc-b2bf-ad8ddca268a8
 ms.date: 12/07/2017
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # DEBUG\_PROCESS\_XXX
 
 
-The process options are a bit set that control how the [debugger engine](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction#debugger-engine) treats user-mode[processes](https://docs.microsoft.com/windows-hardware/drivers/debugger/controlling-threads-and-processes#processes). Some of these process options are global; others are specific to a process.
+The process options are a bit set that control how the [debugger engine](./introduction.md#debugger-engine) treats user-mode[processes](./controlling-threads-and-processes.md#processes). Some of these process options are global; others are specific to a process.
 
 The process options only apply to live user-mode debugging.
 
@@ -47,8 +46,7 @@ The process options only apply to live user-mode debugging.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -66,14 +64,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**.childdbg**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-childdbg--debug-child-processes-)
+[**.childdbg**](./-childdbg--debug-child-processes-.md)
 
  
-
- 
-
-
-
-
-
 

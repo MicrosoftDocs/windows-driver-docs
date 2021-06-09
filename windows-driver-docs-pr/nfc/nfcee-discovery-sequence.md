@@ -1,6 +1,5 @@
 ---
 title: NFCEE discovery sequence
-ms.assetid: F6894EFD-4140-490B-B0BB-1A9BDA4DCECE
 keywords:
 - NFC
 - near field communications
@@ -29,5 +28,5 @@ Most implementations of NFCCs in this configuration report only the HCI network 
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

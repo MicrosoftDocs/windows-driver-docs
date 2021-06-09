@@ -1,7 +1,6 @@
 ---
 title: WIA Item Properties for Feeder Scanners
 description: WIA Item Properties for Feeder Scanners
-ms.assetid: 92b5f435-d34a-4a31-85e3-53a6d0ed8f16
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-This section lists the required and optional WIA item properties for a scanner feeder item and scanner feeder child items (front and back page items). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties).
+This section lists the required and optional WIA item properties for a scanner feeder item and scanner feeder child items (front and back page items). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](./wia-properties.md).
 
 This section includes:
 
@@ -25,9 +24,4 @@ This section includes:
 [Requirements for Feeder Scanners Child Items](requirements-for-feeder-scanners-child-items.md)
 
  
-
- 
-
-
-
 

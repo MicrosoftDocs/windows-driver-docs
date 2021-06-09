@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_IO_CONTROL
 description: Handling SRB_FUNCTION_IO_CONTROL
-ms.assetid: 92d09a49-d8e8-4d97-b334-c42d5b04ee8d
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -22,12 +21,7 @@ All system-defined, required device I/O control requests sent to NT-based operat
 
 ##  -see -also
 
-[Handling SRB_FUNCTION_EXECUTE_SCSI](https://docs.microsoft.com/windows-hardware/drivers/storage/handling-srb-function-execute-scsi)
+[Handling SRB_FUNCTION_EXECUTE_SCSI](./handling-srb-function-execute-scsi.md)
 
-[SRB_IO_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control)
-
- 
-
-
-
+[SRB_IO_CONTROL](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control)
 

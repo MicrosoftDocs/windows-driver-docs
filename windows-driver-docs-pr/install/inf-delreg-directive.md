@@ -1,7 +1,6 @@
 ---
 title: INF DelReg Directive
 description: A DelReg directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
-ms.assetid: a456327f-9b2c-42e6-a575-47ad788aa8b1
 keywords:
 - INF DelReg Directive Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -39,7 +38,7 @@ DelReg=del-registry-section[,del-registry-section]...
 
 Each *del-registry-section* referenced by a **DelReg** directive has the following form:
 
-```ini
+```inf
 [del-registry-section]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
@@ -71,8 +70,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | NF Section Containing AddReg Directive                                     | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's *hardware key* |
 | INF [***DDInstall*.Services**](inf-ddinstall-services-section.md) section | The **Services** key                                                                  |
 
  
@@ -109,8 +108,7 @@ Within a multistring registry entry, delete all strings matching a string value 
 <a href="" id="value"></a>*value*  
 (Windows XP and later versions of Windows.) Specifies a registry value, if *flags* indicates that a registry value is required.
 
-Remarks
--------
+## Remarks
 
 A **DelReg** directive can be specified under any of the sections shown in the formal syntax statement above. This directive can also be specified under any of the following INF-writer-defined sections:
 
@@ -124,22 +122,21 @@ Each *del-registry-section* name must be unique to the INF file, but it can be r
 
 With operating system versions prior to Windows XP, the only way to delete a key is by specifying the following:
 
-```ini
+```inf
 reg-root-string, subkey
 ```
 
 For Windows XP and later versions of Windows, the following is also permitted (to specify the 32-bit registry):
 
-```ini
+```inf
 reg-root-string, subkey,,0x4000
 ```
 
-Examples
---------
+## Examples
 
 This example shows how the system-supplied COM/LPT ports class installer's INF removes stale NT-specific registry information about COM ports from the registry.
 
-```ini
+```inf
 [ComPort.NT]
 CopyFiles=ComPort.NT.Copy
 AddReg=ComPort.AddReg, ComPort.NT.AddReg

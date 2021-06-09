@@ -1,7 +1,6 @@
 ---
 title: CC Category
 description: CC Category
-ms.assetid: 742955f3-85a2-4627-b1b1-0bd85cdb1e77
 keywords:
 - stream categories WDK video capture , closed-captioning category
 - CC category WDK video capture

@@ -1,7 +1,6 @@
 ---
 title: Creating a Trace Session with a PDB File
 description: Creating a Trace Session with a PDB File
-ms.assetid: dae78674-3563-4fd5-869b-abd4c13aa202
 keywords:
 - program database symbol files WDK
 - PDB symbol files WDK

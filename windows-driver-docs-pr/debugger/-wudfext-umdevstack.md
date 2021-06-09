@@ -1,7 +1,6 @@
 ---
 title: wudfext.umdevstack
 description: The wudfext.umdevstack extension displays detailed information about a device stack in the host process.
-ms.assetid: 3cce0e30-ea04-4587-9208-b6a7d51fd44a
 keywords: ["wudfext.umdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,8 +61,7 @@ Displays information about the internal framework.
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following is an example of the **!wudfext.umdevstack** display:
 

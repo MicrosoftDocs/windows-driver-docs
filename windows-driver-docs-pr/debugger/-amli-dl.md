@@ -1,7 +1,6 @@
 ---
 title: amli dl
 description: The amli dl extension displays a portion of the AML interpreter's event log.
-ms.assetid: 06565760-d7f0-4f22-8670-7706d3b4b3a8
 keywords: ["amli dl Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -35,8 +34,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The event log chronicles the most recent 150 events that occurred in the interpreter.
 

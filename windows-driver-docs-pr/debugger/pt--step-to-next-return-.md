@@ -1,7 +1,6 @@
 ---
 title: pt (Step to Next Return)
 description: The pt command executes the program until a return instruction is reached.
-ms.assetid: f4388953-4cb2-4df5-af8b-150e50ce765b
 keywords: ["pt (Step to Next Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,8 +78,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **pt** command causes the target to begin executing. This execution continues until a **return** instruction is reached or a breakpoint is encountered.
 

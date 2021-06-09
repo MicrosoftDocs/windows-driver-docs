@@ -1,16 +1,9 @@
 - name: "Audio Drivers Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "Audio Drivers Design Guide"
-    href: index.md
-  - name: "Windows 10: What's New for Audio"
-    href: windows-threshold--what-s-new-for-audio.md
-  - name: "Windows Audio Architecture"
-    href: windows-audio-architecture.md
-  - name: "Roadmap for Developing WDM Audio Drivers"
-    href: roadmap-for-developing-wdm-audio-drivers.md
-  - name: "Custom Audio Driver Type Decision Tree"
-    href: custom-audio-driver-type-decision-tree.md
+  href: index.md
+- name: "Windows 10: What's New for Audio"
+  href: windows-threshold--what-s-new-for-audio.md
+- name: "Windows Audio Architecture"
+  href: windows-audio-architecture.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 
@@ -20,6 +13,10 @@
     href: audio-universal-drivers.md
   - name: "Universal Audio Architecture"
     href: universal-audio-architecture.md
+  - name: "Roadmap for Developing WDM Audio Drivers"
+    href: roadmap-for-developing-wdm-audio-drivers.md
+  - name: "Custom Audio Driver Type Decision Tree"
+    href: custom-audio-driver-type-decision-tree.md
   - name: "Audio Signal Processing Modes"
     href: audio-signal-processing-modes.md
   - name: "Custom Audio Drivers"
@@ -46,8 +43,21 @@
       href: wdm-audio-terminology.md
     - name: "Sample Audio Drivers"
       href: sample-audio-drivers.md
+  - name: "KsStudio Utility"
+# Auto-expanded node
+    items: 
     - name: "KsStudio Utility"
       href: ksstudio-utility.md
+    - name: "KsStudio Utility - Filters and Filter Factories"
+      href: ksstudio-utility-filters-and-filter-factories.md
+    - name: "KsStudio Utility - Pins and Nodes "
+      href: ksstudio-utility-pins-and-nodes.md
+    - name: "KsStudio Utility - KSProperties and Events"
+      href: ksstudio-utility-ksproperties-and-events.md
+    - name: "KsStudio Utility - KS Monitor"
+      href: ksstudio-utility-ks-monitor.md
+    - name: "KsStudio Utility - Usage Examples"
+      href: ksstudio-utility-usage-examples.md
   - name: "Audio Filters, Pins, and Nodes"
 # Auto-expanded node
     items: 
@@ -82,6 +92,8 @@
       href: audio-property-handlers.md
     - name: "Basic Support Queries for Audio Properties"
       href: basic-support-queries-for-audio-properties.md
+    - name: "Default Audio Endpoint Selection Starting in Windows 10"
+      href: default-audio-endpoint-selection.md
     - name: "Audio Endpoint Builder Algorithm"
       href: audio-endpoint-builder-algorithm.md
     - name: "Dynamic Subdevice Registration and Unregistration"
@@ -870,6 +882,13 @@
         href: obtaining-a-device-interface-name.md
       - name: "Music Technology GUIDs"
         href: music-technology-guids.md
+- name: "Audio Devices Troubleshooting"
+# Auto-expanded node
+  items: 
+  - name: "Audio Devices Troubleshooting Overview"
+    href: audio-devices-troubleshooting.md
+  - name: "USB Audio Device Not Playing"
+    href: usb-audio-not-playing.md
 - name: "Audio Devices DDI Reference Overview"
 # Auto-expanded node
   items: 
@@ -1345,6 +1364,8 @@
       href: ksproperty-audio-wide-mode.md
     - name: "KSPROPERTY_AUDIO_WIDENESS"
       href: ksproperty-audio-wideness.md
+    - name: "KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST"
+      href: ksproperty-audioeffectsdiscovery-effectslist.md
     - name: "KSPROPERTY_AUDIOENGINE"
       href: ksproperty-audioengine.md
     - name: "KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE"

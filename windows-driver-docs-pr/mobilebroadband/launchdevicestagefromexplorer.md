@@ -1,14 +1,13 @@
 ---
 title: LaunchDeviceStageFromExplorer
 description: LaunchDeviceStageFromExplorer
-ms.assetid: 8c1d16e5-e183-4658-8379-09bfed9fe975
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # LaunchDeviceStageFromExplorer
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The LaunchDeviceStageFromExplorer element should be set to **false** because it does not apply to service metadata packages in Windows 8, Windows 8.1, and Windows 10.
 

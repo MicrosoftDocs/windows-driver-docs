@@ -1,7 +1,6 @@
 ---
 title: Supporting Requests in IEEE 1394 Virtual Device Drivers
 description: Supporting Requests in IEEE 1394 Virtual Device Drivers
-ms.assetid: 17e0c84b-29d9-461f-a5f6-7677ecb7fb6e
 keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus
@@ -26,7 +25,7 @@ Virtual PDOs and the drivers that are loaded above them have the same level of a
 
 -   [**REQUEST\_ASYNC\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff537634), [**REQUEST\_ASYNC\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff537636), and [**REQUEST\_ASYNC\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff537633)
 
-    Normally, when an application or a driver addresses an asynchronous I/O request to a target device, the 1394 bus driver extracts the node ID of the device from the device extension of the device's physical device object (PDO). This information is recorded in the device's PDO extension when the device is enumerated. Virtual devices, however, are not enumerated in the usual fashion, so the driver that generates the request *must* provide a node ID when sending a request to a virtual device, just as it would if it were doing asynchronous I/O in raw mode. For a discussion of raw mode addressing, see [Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus](https://docs.microsoft.com/windows-hardware/drivers/ieee/sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus).
+    Normally, when an application or a driver addresses an asynchronous I/O request to a target device, the 1394 bus driver extracts the node ID of the device from the device extension of the device's physical device object (PDO). This information is recorded in the device's PDO extension when the device is enumerated. Virtual devices, however, are not enumerated in the usual fashion, so the driver that generates the request *must* provide a node ID when sending a request to a virtual device, just as it would if it were doing asynchronous I/O in raw mode. For a discussion of raw mode addressing, see [Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus](./sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md).
 
     When the bus driver receives a request for the PDO of a virtual device, it uses the node ID provided by the driver that originated the request rather than attempting to extract the node ID from the device extension. Strictly speaking, virtual devices do not have node IDs, so the drivers that send requests to virtual devices must provide an alternative node ID. By convention, virtual devices use the node ID of the PC's host controller.
 
@@ -49,9 +48,4 @@ Virtual PDOs and the drivers that are loaded above them have the same level of a
 For all other requests, the behavior between virtual and physical devices is identical.
 
  
-
- 
-
-
-
 

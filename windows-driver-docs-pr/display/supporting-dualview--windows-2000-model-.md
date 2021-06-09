@@ -1,7 +1,6 @@
 ---
 title: Supporting DualView (Windows 2000 Model)
 description: Supporting DualView (Windows 2000 Model)
-ms.assetid: 08da97c9-1d31-40f5-99df-5f16eaa47c79
 keywords:
 - video miniport drivers WDK Windows 2000 , DualView
 - DualView WDK video miniport

@@ -1,7 +1,6 @@
 ---
 title: MPIO\_PATH\_HEALTH\_INFO WMI Class
 description: MPIO\_PATH\_HEALTH\_INFO WMI Class
-ms.assetid: 26c329d0-0d9c-4d24-bbe4-ebb7d7b36a89
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -36,13 +35,7 @@ class MPIO_PATH_HEALTH_INFO
 };
 ```
 
-When the class definition is compiled by the WMI tool suiteit produces the [**MPIO\_PATH\_HEALTH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_path_health_info) data structure. There are no methods associated with this WMI class.
+When the class definition is compiled by the WMI tool suiteit produces the [**MPIO\_PATH\_HEALTH\_INFO**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_path_health_info) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

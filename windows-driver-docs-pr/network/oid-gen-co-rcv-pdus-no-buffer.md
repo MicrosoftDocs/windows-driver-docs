@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_RCV_PDUS_NO_BUFFER
 description: This topic describes the OID_GEN_CO_RCV_PDUS_NO_BUFFER object identifier (OID).
-ms.assetid: b20bd89a-d5a7-4fc3-a492-27dc61ee6f44
 keywords:
 - OID_GEN_CO_RCV_PDUS_NO_BUFFER
 ms.date: 11/02/2017
@@ -14,8 +13,6 @@ The OID_GEN_CO_RCV_PDUS_NO_BUFFER OID specifies the number of PDUs that the NIC 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

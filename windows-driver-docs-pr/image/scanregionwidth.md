@@ -1,7 +1,6 @@
 ---
 title: ScanRegionWidth element
 description: The required ScanRegionWidth element specifies the width of the scan region in the fast scan direction.
-ms.assetid: 3fe1933c-f086-453d-a8bd-84903929ed28
 keywords: ["ScanRegionWidth element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanRegionWidth** element specifies the width of the scan region in the fast scan direction.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegionWidth wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault=""
@@ -30,8 +28,7 @@ Usage
 </wscn:ScanRegionWidth wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -73,8 +70,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer from 1 through the InputMediaSize height.[**InputMediaSize**](inputmediasize.md)
 
@@ -102,8 +98,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 For more information about the scan region parameters, see [**ScanRegion**](scanregion.md).
 

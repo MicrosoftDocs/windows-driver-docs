@@ -1,7 +1,6 @@
 ---
 title: Omitting LayoutFile and CatalogFile Information
 description: Omitting LayoutFile and CatalogFile Information
-ms.assetid: e34302b9-0fb4-462b-9fa6-5ae51e83cd8b
 keywords:
 - INF files WDK display , LayoutFile directive
 - INF files WDK display , CatalogFile directive
@@ -25,13 +24,7 @@ Class=Display
 DriverVer=11/22/2004, 6.14.10.7000
 ```
 
-For more information about the **Version** section and directives that are associated with **Version**, see [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
+For more information about the **Version** section and directives that are associated with **Version**, see [**INF Version Section**](../install/inf-version-section.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: .settings (Set Debug Settings)
 description: The .settings command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
-ms.assetid: DAD68FA5-21EF-4A5C-8E5E-0C763CD28C44
 keywords: [".settings (Set Debug Settings) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -112,8 +111,7 @@ On launch, the debugger will load all the settings from config.xml in the direct
 
 When auto save is enabled, the settings in the Debugger.Settings namespace will be automatically saved when exiting the debugger.
 
-Remarks
--------
+## Remarks
 
 You can exchange debug xml settings files with others to duplicate their debug settings.
 

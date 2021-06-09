@@ -1,5 +1,5 @@
 ---
-Description: Object Enumeration
+description: Object Enumeration
 title: Object Enumeration
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -12,12 +12,14 @@ The *WpdObjectEnum.cpp* and *WpdObjectEnum.h* files contain the member functions
 
 When a Windows-based application invokes**IPortableDeviceContent::EnumObject** or one of the two methods of the **IEnumPortableDeviceObjectIDs** interface, this call, in turn, triggers one of three command handlers in the **WpdObjectEnumerator** class. The following table identifies the mapping of application methods to **WpdObjectEnumerator** driver methods.
 
-|                                           |                                         |
-|-------------------------------------------|-----------------------------------------|
-| **IPortableDeviceContent Method**         | **WpdObjectEnumerator Command Handler** |
-| **IPortableDeviceContent::EnumObjects**   | **OnStartFind**                         |
-| **IEnumPortableDeviceObjectIDs::Next**    | **OnFindNext**                          |
-| **IEnumPortableDeviceObjectIDs::Release** | **OnEndFind**                           |
+****IPortableDeviceContent Method****: **WpdObjectEnumerator Command Handler**
+
+****IPortableDeviceContent::EnumObjects****: **OnStartFind**
+
+****IEnumPortableDeviceObjectIDs::Next****: **OnFindNext**
+
+****IEnumPortableDeviceObjectIDs::Release****: **OnEndFind**
+
 
  
 

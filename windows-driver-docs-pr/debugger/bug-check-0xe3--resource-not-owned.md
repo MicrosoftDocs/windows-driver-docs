@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xE3 RESOURCE_NOT_OWNED
 description: The RESOURCE_NOT_OWNED bug check has a value of 0x000000E3. This indicates that a thread tried to release a resource it did not own.
-ms.assetid: f0f47af6-cba0-42a0-912b-562f069d5b3e
 keywords: ["Bug Check 0xE3 RESOURCE_NOT_OWNED", "RESOURCE_NOT_OWNED"]
 ms.date: 05/23/2017
 topic_type:

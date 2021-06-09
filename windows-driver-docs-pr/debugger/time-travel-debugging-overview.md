@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 04/15/2019
+ms.date: 01/17/2020
 ms.localizationpriority: medium
 ---
 
@@ -9,27 +9,25 @@ ms.localizationpriority: medium
 
 ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
-
 ## What is Time Travel Debugging?
 
 Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
- 
+
 TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
 
 TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 
-In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start. 
+In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start.
 
 TTD is efficient and works to add as little as possible overhead as it captures code execution in trace files.  
 
-TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions. 
+TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions.
 
-![Example screen shot of WinDbg preview showing time travel command and cdog app](images/ttd-windbgx-screen-shot-example-cdog-app.png)
+![Example screen shot of WinDbg preview showing time travel command and three timelines](images/ttd-windbgx-screen-shot-example.png)
 
-##  Comparison of Debugging Tools
+## Comparison of Debugging Tools
 
 This table summarizes the pros and cons of the different debugging solutions available.
-
 
 |          Approach           |                                                      Pros                                                       |                                                                                                               Cons                                                                                                                |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +42,7 @@ TTD is available on Windows 10 after installing the WinDbg Preview app from the 
 
 ## Administrator rights required to use TTD
 
-To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, right-click on the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
+To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
 
 ## Video Training
 
@@ -56,8 +54,7 @@ To learn more about TTD see these videos.
 
 [CppCon (YouTube)](https://www.youtube.com/watch?v=l1YJTg_A914) - Jordi, Ken and JamesM presented TTD in WinDbg Preview at CppCon 2017
 
-
-## Trace file basics 
+## Trace file basics
 
 ### Trace file size
 
@@ -88,13 +85,13 @@ C:\Users\User1\Documents
 
 For more information on working the trace files, see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md).
 
-## Things to look out for 
+## Things to look out for
 
-### Anti-virus incompatibilities 
+### Anti-virus incompatibilities
 
 You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
 
-Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/help/2458544/the-enhanced-mitigation-experience-toolkit).
+Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. 
 
 Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock or crash of the process being recorded is also possible.
 
@@ -118,14 +115,17 @@ Recording an application or process impacts the performance of the PC. The actua
 
 There are some cases where trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
 
-
 ## Advanced Features of Time Travel Debugging
 
 Here's some of the most notable TTD advanced features.
 
+### Timelines
+
+Timelines are a visual representation of events that happen during the execution. These events can be locations of: breakpoints, memory read/writes, function calls and returns, and exceptions. For more information about timelines, see [WinDbg Preview - Timelines](windbg-timeline-preview.md).
+
 ### Debugger data model support
 
-- **Built in data model support** - TTD includes data model support. Using LINQ queries to analyze application failures can be a powerful tool. You can use the data model window in WinDbg  Preview to work with an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create tables using NatVis, JavaScript, and LINQ queries. 
+- **Built in data model support** - TTD includes data model support. Using LINQ queries to analyze application failures can be a powerful tool. You can use the data model window in WinDbg  Preview to work with an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create tables using NatVis, JavaScript, and LINQ queries.
 
 For general information about the debugger data model, see [WinDbg Preview - Data model](windbg-data-model-preview.md). For information about working with the TTD debugger object model, see [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md).
 
@@ -139,7 +139,6 @@ For general information about working with JavaScript and NatVis, see [WinDbg Pr
 ### Managed code TTD support
 
 You can use the SOS debugging extension (sos.dll) running in 64 bit mode to debug managed code using TTD in WinDbg Preview. For more information, see [Debugging Managed Code Using the Windows Debugger](debugging-uwp-apps-using-the-windows-debugger.md).
-
 
 ## <span id="providingfeedback"></span>Providing feedback
 

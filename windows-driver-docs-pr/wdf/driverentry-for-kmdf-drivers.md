@@ -1,7 +1,6 @@
 ---
 title: DriverEntry for WDF Drivers routine
 description: DriverEntry is the first driver-supplied routine that is called after a driver is loaded. It is responsible for initializing the driver.
-ms.assetid: b49d1767-7cfd-45bb-a2be-0597f7373e79
 keywords: ["DriverEntry routine", "routine", "DRIVER_INITIALIZE routine"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.date: 10/17/2018
 
 **DriverEntry** is the first driver-supplied routine that is called after a driver is loaded. It is responsible for initializing the driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS DriverEntry(
@@ -28,44 +26,41 @@ NTSTATUS DriverEntry(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DriverObject* \[in\]  
-A pointer to a [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure that represents the driver's WDM driver object.
+A pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure that represents the driver's WDM driver object.
 
 *RegistryPath* \[in\]  
-A pointer to a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that specifies the path to the driver's [Parameters key](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers) in the registry.
+A pointer to a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that specifies the path to the driver's [Parameters key](./introduction-to-registry-keys-for-drivers.md) in the registry.
 
-Return value
-------------
+## Return value
 
 If the routine succeeds, it must return STATUS\_SUCCESS. Otherwise, it must return one of the error status values that are defined in *ntstatus.h*.
 
-Remarks
--------
+## Remarks
 
 Like all WDM drivers, framework-based drivers must have a **DriverEntry** routine, which is called after the driver is loaded. A framework-based driver's **DriverEntry** routine must:
 
--   Activate [WPP software tracing](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers).
+-   Activate [WPP software tracing](./using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
 
-    **DriverEntry** should include a [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro to activate software tracing.
+    **DriverEntry** should include a [WPP\_INIT\_TRACING](/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro to activate software tracing.
 
--   Call [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate).
+-   Call [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate).
 
-    The call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) enables the driver to use Windows Driver Framework interfaces. (The driver cannot call other framework routines before calling **WdfDriverCreate**.)
+    The call to [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) enables the driver to use Windows Driver Framework interfaces. (The driver cannot call other framework routines before calling **WdfDriverCreate**.)
 
 -   Allocate any non-device-specific system resources and global variables that it might need.
 
-    Typically, drivers associate system resources with individual devices. Therefore, framework-based drivers allocate most resources in an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback, which is called when individual devices are detected.
+    Typically, drivers associate system resources with individual devices. Therefore, framework-based drivers allocate most resources in an [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback, which is called when individual devices are detected.
 
     Because multiple instances of a UMDF driver might be hosted by separate instances of Wudfhost, a global variable might not be available across all instances of a UMDF driver.
 
 -   Obtain driver-specific parameters from the registry.
 
-    Some drivers obtain parameters from the registry. These drivers can call [**WdfDriverOpenParametersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) to open the registry key that contains these parameters.
+    Some drivers obtain parameters from the registry. These drivers can call [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) to open the registry key that contains these parameters.
 
--   Provide a [DriverEntry return value](https://docs.microsoft.com/windows-hardware/drivers/kernel/driverentry-return-values).
+-   Provide a [DriverEntry return value](../kernel/driverentry-return-values.md).
 
 **Note**  A UMDF driver runs in a user-mode host process, while a KMDF driver runs in kernel mode in a system process. The framework might load multiple instances of a UMDF driver into separate instances of the host process. As a result:
 
@@ -74,7 +69,7 @@ Like all WDM drivers, framework-based drivers must have a **DriverEntry** routin
 -   The framework might call a UMDF driver’s DriverEntry routine multiple times if it loads instances of the driver in different host processes. In contrast, the framework calls a KMDF driver's DriverEntry routine only once.
 -   If a UMDF driver creates a global variable in its DriverEntry routine, the variable might may not be available to all instances of the driver. However, a global variable that a KMDF driver creates in its DriverEntry routine is available to all instances of the driver.
 
-For more information about when a framework-based driver's **DriverEntry** routine is called, see [Building and Loading a WDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver).
+For more information about when a framework-based driver's **DriverEntry** routine is called, see [Building and Loading a WDF Driver](./building-and-loading-a-kmdf-driver.md).
 
 The **DriverEntry** routine is not declared in WDK headers. Static Driver Verifier (SDV) and other verification tools may require a declaration such as the following:
 
@@ -91,8 +86,7 @@ DriverEntry(
 }
 ```
 
-Examples
---------
+## Examples
 
 The following code example shows the Serial (KMDF) sample driver's **DriverEntry** routine.
 
@@ -107,6 +101,7 @@ DriverEntry(
     WDFDRIVER  hDriver;
     NTSTATUS  status;
     WDF_OBJECT_ATTRIBUTES  attributes;
+    SERIAL_FIRMWARE_DATA driverDefaults;
 
     //
     // Initialize WPP tracing.
@@ -181,16 +176,7 @@ DriverEntry(
 ## See also
 
 
-[**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate)
+[**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate)
 
-[*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)
-
- 
-
- 
-
-
-
-
-
+[*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)
 

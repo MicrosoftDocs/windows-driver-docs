@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaFrequencyFilter
 description: KSPROPSETID\_BdaFrequencyFilter
-ms.assetid: 7650a239-3d49-4cb1-99bb-12bac55d70d2
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

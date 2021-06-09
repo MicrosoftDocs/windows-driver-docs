@@ -1,9 +1,8 @@
 ---
 title: Enable pool tagging
 description: Enable pool tagging
-ms.assetid: e88f97a0-a8c3-4162-871a-b78671b902bb
 keywords: ["Enable pool tagging (global flag)"]
-ms.date: 05/23/2017
+ms.date: 01/11/2021
 ms.localizationpriority: medium
 ---
 
@@ -48,18 +47,13 @@ This flag is permanently set in Windows Server 2003 and later versions of Window
 
 Use **ExAllocatePoolWithTag** or **ExAllocatePoolWithQuotaTag** to set the tag value. When no tag value is specified (**ExAllocatePool**, **ExAllocatePoolWithQuota**), Windows creates a tag with the default value of "None." Because data for all allocations with a "None" tag is combined, you cannot distinguish the data for a specific allocation. For information about these routines, see the Windows Driver Kit (WDK).
 
-In Windows XP and earlier systems, this flag also directs Windows to attach a pool tag even when the pool memory is allocated by using **ExAllocatePoolWithQuotaTag**. Otherwise, the tag bytes are used to store the quota values. In Windows Server 2003, tag values and quota values are stored in separate fields that are attached to every pool memory allocation.
+>[!IMPORTANT]
+> The ExAllocatePool DDIs discussed in this topic have been deprecated in Windows 10, version 2004 and have been replaced by [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3). For more information, see [Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3](../kernel/updating-deprecated-exallocatepool-calls.md).
 
 **Note**   To display the data that Windows collects about a tagged allocation, use PoolMon, a tool that is included in the Windows Driver Kit.
-The description of the **Enable Pool Tagging** flag in the Windows XP Support Tools documentation is incomplete. This flag directs Windows to collect and process data by tag value.
+
 
  
 
  
-
- 
-
-
-
-
 

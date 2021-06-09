@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e0d00abd-0b2a-403c-a7b2-f1f2587b977f
 keywords: ["get_PendingJobCount method Print Devices", "get_PendingJobCount method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PendingJobCount method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **PendingJobCount** property enables an ASP Web page to determine the number of pending print jobs.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PendingJobCount(
@@ -32,14 +30,12 @@ HRESULT get_PendingJobCount(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives the number of pending print jobs.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -83,8 +79,7 @@ objPrinter.CalcJobETA
 PendingJobs = objPrinter.PendingJobCount
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

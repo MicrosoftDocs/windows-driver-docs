@@ -1,7 +1,6 @@
 ---
 title: Microsoft OS 1.0 Descriptors Specification
 description: Microsoft OS 1.0 Descriptors Specification
-ms.assetid: A2B00584-DDD5-42D2-BDBF-116637ABD192
 ms.date: 07/08/2019
 ms.localizationpriority: medium
 ---
@@ -139,7 +138,7 @@ Microsoft OS Descriptors Specification</strong><br />
 <p>Neither party may assign this Agreement without prior written approval of the other party.</p>
 </div>
 <p><br />
-<a href="http://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">I accept, Download</a></p></td>
+<a href="https://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">I accept, Download</a></p></td>
 </tr>
 </tbody>
 </table>

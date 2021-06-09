@@ -1,7 +1,6 @@
 ---
 title: ScanDestinations element
 description: The required ScanDestinations element is a collection of all of the scan destinations that a client wants to register with the scan device.
-ms.assetid: 50f87269-4d95-4653-ba93-aa752bdc9168
 keywords: ["ScanDestinations element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **ScanDestinations** element is a collection of all of the scan destinations that a client wants to register with the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanDestinations>
@@ -27,13 +25,11 @@ Usage
 </wscn:ScanDestinations>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -75,8 +71,7 @@ None
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client must send the **ScanDestinations** element in the **&lt;wse:Subscribe&gt;** request operation element to register one or more scan destinations with the WSD Scan Service. The client subscribes during client setup before obtaining scan ticket information from the WSD Scan Service. The **&lt;wse:Subscribe&gt;** element is defined in the specification.
 

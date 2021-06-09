@@ -24,7 +24,7 @@
       href: windows-network-architecture-and-the-osi-model.md
     - name: "NDIS drivers"
       items: 
-      - name: "NDIS driver types"
+      - name: "Overview of NDIS driver types"
         href: ndis-drivers.md
       - name: "Miniport drivers"
         href: ndis-miniport-drivers2.md
@@ -150,8 +150,6 @@
     href: introduction-to-ndis-pdpi.md
 - name: "NDIS versions"
   items: 
-  - name: "NDIS version guide"
-    href: ndis-version-guide.md
   - name: "Overview of NDIS versions"
     href: overview-of-ndis-versions.md
   - name: "Introductions to NDIS 6.0 and later"
@@ -352,8 +350,6 @@
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md    
 - name: "NDIS Core Functionality"
   items: 
-  - name: "NDIS Drivers and Services"
-    href: ndis-core-functionality2.md
   - name: "NDIS Miniport Drivers"
     items: 
     - name: "Roadmap for Developing NDIS Miniport Drivers"
@@ -382,6 +378,8 @@
           href: miniport-adapter-context.md
         - name: "Virtual Connection Context"
           href: virtual-connection-context.md
+        - name: "Debugger 2PF KDNET Support"
+          href: debugger-2pf-kdnet-support.md
         - name: "Network OIDs"
           href: network-oids.md
       - name: "Sample NDIS Miniport Drivers"
@@ -1164,6 +1162,24 @@
         href: ndisquerymdl.md
       - name: "NdisQueryMdlOffset"
         href: ndisquerymdloffset.md
+  - name: "NDIS packet timestamping"
+    items: 
+    - name: "Overview of NDIS packet timestamping"
+      href: overview-of-ndis-packet-timestamping.md
+    - name: "Reporting timestamping capabilities"
+      href: reporting-timestamping-capabilities.md
+    - name: "Attaching timestamps to packets"
+      href: attaching-timestamps-to-packets.md
+    - name: "NDIS packet timestamping status indications"
+      items: 
+      - name: "NDIS_STATUS_TIMESTAMP_CAPABILITY"
+        href: ndis-status-timestamp-capability.md
+      - name: "NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG"
+        href: ndis-status-timestamp-current-config.md
+    - name: "Standardized INF keywords for NDIS packet timestamping"
+      href: standardized-inf-keywords-for-ndis-packet-timestamping.md
+    - name: "Querying timestamping capabilities and configuration"
+      href: querying-timestamping-capabilities-and-configuration.md
   - name: "NDIS Ports"
     items: 
     - name: "Introduction to NDIS Ports"
@@ -1894,6 +1910,20 @@
       href: indicating-rss-receive-data.md
     - name: "Supporting RSS in Intermediate Drivers or Filter Drivers"
       href: supporting-rss-in-intermediate-drivers-or-filter-drivers.md
+    - name: "Virtual Machine Multiple Queues (VMMQ)"
+      items:
+      - name: "Overview of Virtual Machine Multiple Queues (VMMQ)"
+        href: overview-of-virtual-machine-multiple-queues.md
+      - name: "VMMQ send and receive processing"
+        href: vmmq-send-and-receive-processing.md
+      - name: "Advertising VMMQ capabilities"
+        href: advertising-vmmq-capabilities.md
+      - name: "Standardized INF keywords for VMMQ"
+        href: standardized-inf-keywords-for-vmmq.md
+      - name: "Allocating VPorts for VMMQ"
+        href: allocating-vports-for-vmmq.md
+      - name: "Enabling, disabling, and updating VMMQ on a VPort"
+        href: updating-vmmq-on-a-vport.md
   - name: "TCP/IP Offload"
     items: 
     - name: "TCP/IP Offload Overview"
@@ -1988,6 +2018,8 @@
           href: receiving-network-data-with-ipsec-offload-version-2.md
       - name: "Offloading the Segmentation of Large TCP Packets"
         href: offloading-the-segmentation-of-large-tcp-packets.md
+      - name: "UDP Segmentation Offload (USO)"
+        href: udp-segmentation-offload-uso-.md
     - name: "Connection Offload"
       items: 
       - name: "Connection Offload Overview"
@@ -2019,7 +2051,7 @@
     - name: "PacketDirect Provider Interface (PDPI) Status Indications"
       items: 
       - name: "NDIS_STATUS_PD_CURRENT_CONFIG"
-        href: ndis-status-pd-current-config.md
+        href: ndis-status-pd-current-config.md    
 - name: "Virtualized Networking"
   items: 
   - name: "Virtualized Networking Topics"
@@ -2556,6 +2588,8 @@
       href: hyper-v-extensible-switch-oids.md
     - name: "Hyper-V Extensible Switch Status Indications"
       items: 
+      - name: "Overview"
+        href: hyper-v-extensible-switch-status-indications.md
       - name: "NDIS_STATUS_SWITCH_NIC_STATUS"
         href: ndis-status-switch-nic-status.md
       - name: "NDIS_STATUS_SWITCH_PORT_REMOVE_VF"
@@ -2570,38 +2604,10 @@
         href: ndis-status-receive-queue-state.md
 - name: "Wireless Networking"
   items: 
-  - name: "Wireless Networking Topics"
-    href: wireless-networking2.md
-  - name: "WLAN Universal Windows driver model"
-    href: wifi-universal-driver-model.md
-  - name: "Cellular architecture and overview"
-    items: 
-    - name: "Cellular architecture and implementation"
-      href: cellular-architecture-and-driver-model.md
-    - name: "Dual SIM"
-      href: dual-sim.md
-    - name: "SIM locking"
-      href: sim-lock.md
-    - name: "SIM toolkit"
-      items: 
-      - name: "SIM toolkit Overview"
-        href: sim-toolkit.md
-      - name: "SIM toolkit commands"
-        href: sim-toolkit-commands.md
-      - name: "Reserved URI to launch SIM toolkit"
-        href: reserved-uri-to-launch-sim-toolkit.md
-    - name: "Cellular COM API"
-      items: 
-      - name: "Cellular COM API design guide"
-        href: cellular-com-api-design-guide.md
-      - name: "Cellular COM API capabilities"
-        href: cellular-com-api-capabilities.md
-      - name: "Communicate with the RIL driver by using IOemCellularModem interface"
-        href: communicate-with-the-ril-driver-by-using-the-ioemcellularmodem-interface.md
   - name: "Mobile Broadband (MB) Design Guide"
     items: 
-    - name: "Mobile Broadband (MB) Design Guide Topics"
-      href: mobile-broadband--mb--design-guide.md
+    - name: "Cellular Architecture"
+      href: cellular-architecture-and-driver-model.md
     - name: "Roadmap to Develop MB Miniport Drivers"
       href: roadmap-to-develop-mb-miniport-drivers.md
     - name: "MB Interface Model"
@@ -2634,6 +2640,10 @@
         href: mb-operational-semantics.md
       - name: "MB Driver Model Versioning"
         href: mb-driver-model-versioning.md
+      - name: "Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)"
+        href: ../netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx.md
+      - name: "MB Driver Stack, Suspend, and Resume"
+        href: mb-mbim-interaction-overview.md
       - name: "MB Miniport driver INF Requirements"
         href: mb-miniport-driver-inf-requirements.md
       - name: "MB Miniport Driver Types"
@@ -2648,50 +2658,40 @@
         href: mb-miniport-driver-error-logging.md
       - name: "MB Miniport Driver Performance Requirements"
         href: mb-miniport-driver-performance-requirements.md
-    - name: "MB Operation Flowcharts"
-      items: 
-      - name: "MB Operation Flowchart Topics"
-        href: mb-operation-flowcharts.md
-      - name: "MB Miniport Driver Initialization"
-        href: mb-miniport-driver-initialization.md
-      - name: "Initialization of a non-SIM-Locked GPRS Device with a Provisioned Context"
-        href: initialization-of-a-non-sim-locked-gprs-device-with-a-provisioned-cont.md
-      - name: "Initialization of SIM-Locked GPRS Device with a User Defined Context"
-        href: initialization-of-sim-locked-gprs-device-with-a-user-defined-context.md
-      - name: "Initialization of a CDMA Packet Device with a Provisioned Context"
-        href: initialization-of-a-cdma-packet-device-with-a-provisioned-context.md
-      - name: "Losing and Regaining Packet Data Service"
-        href: losing-and-regaining-packet-data-service.md
-      - name: "Packet Data Service Handoffs"
-        href: packet-data-service-handoffs.md
-      - name: "Voice Calls during Packet Data Service Connections"
-        href: voice-calls-during-packet-data-service-connections.md
-      - name: "Signal Strength Indication Semantics"
-        href: signal-strength-indication-semantics.md
     - name: "MB Device Readiness"
       href: mb-device-readiness.md
+    - name: "MB Data Connectivity"
+      href: mb-data-connectivity.md
+    - name: "Basic Connectivity Log Filter"
+      href: mb-basic-connectivity-tat.md
     - name: "MB Service Detection and Activation"
       href: mb-service-detection-and-activation.md
-    - name: "MB Radio Power State Operations"
-      href: mb-radio-power-state-operations.md
+    - name: "MB Radio State"
+      href: mb-radio-state.md
     - name: "MB PIN Operations"
       href: mb-pin-operations.md
+    - name: "MB PIN Log Filter"
+      href: mb-pin-filter.md
     - name: "MB Provider Operations"
       href: mb-provider-operations.md
     - name: "MB Registration Operations"
       href: mb-registration-operations.md
-    - name: "MB Packet Service Attach Operations"
+    - name: "MB Packet Service Operations"
       href: mb-packet-service-attach-operations.md
     - name: "MB Signal Strength Operations"
       href: mb-signal-strength-operations.md
     - name: "MB Packet Context Management"
       href: mb-packet-context-management.md
+    - name: "MB Multiple PDP Contexts"
+      href: mb-multiple-pdp.md
     - name: "MB DNS Updates"
       href: mb-dns-updates.md
     - name: "MB SMS Operations"
       href: mb-sms-operations.md
     - name: "MB Vendor Specific Operations"
       href: mb-vendor-specific-operations.md
+    - name: "MB USSD Overview"
+      href: mb-ussd-overview.md
     - name: "MB USSD Operations"
       href: mb-ussd-operations.md
     - name: "MB Device Services"
@@ -2700,12 +2700,16 @@
       href: mb-multimode-multicarrier.md
     - name: "MB Multi-SIM Operations"
       href: mb-multi-sim-operations.md
+    - name: "MB DSSA Filter"
+      href: mb-dssa-filter.md
     - name: "MB Provisioned Context Operations"
       href: mb-provisioned-context-operations.md
     - name: "MB Network Blacklist Operations"
       href: mb-network-blacklist-operations.md
     - name: "MB LTE Attach Operations"
       href: mb-lte-attach-operations.md
+    - name: "LTE Attach Operation Log Filter"
+      href: mb-lte-attach-tat.md
     - name: "MB Protocol Configuration Options (PCO) Operations"
       href: mb-protocol-configuration-options-pco-operations.md
     - name: "MB UICC operations"
@@ -2714,6 +2718,14 @@
         href: mb-low-level-uicc-access.md
       - name: "MB UICC application and file system access"
         href: mb-uicc-application-and-file-system-access.md
+    - name: "MB eSIM Operations"
+      href: mb-esim-operations.md
+    - name: "MB Firmware Upgrade for eSIM"
+      href: mb-fw-upgrade-for-esim.md
+    - name: "eSIM Download and Install Log Filter"
+      href: mb-esim-download-install-tat.md
+    - name: "eSIM Profile Operations Log Filter"
+      href: mb-esim-profile-operations-tat.md
     - name: "MB reset and recovery"
       items:
       - name: "MB Device-based Reset and Recovery and Hang Detection"
@@ -2722,6 +2734,8 @@
           href: mb-device-based-reset-and-recovery.md
         - name: "MB hang detection"
           href: mb-hang-detection.md
+        - name: "MB Device Reset and Recovery (RnR) trace"
+          href: mb-device-based-reset-and-recovery-trace.md
       - name: "MB modem reset operations"
         href: mb-modem-reset-operations.md
     - name: "MB SAR Platform Support"
@@ -2732,10 +2746,20 @@
       href: mb-nitz-support.md
     - name: "MB modem logging with DSS"
       href: mb-modem-logging-with-dss.md
-    - name: "MB 5G operations"
+    - name: "MB 5G Operations"
       items:
-      - name: "MB 5G data class support"
-        href: mb-5g-data-class-support.md
+      - name: "MB 5G Operations Overview"
+        href: mb-5g-operations-overview.md
+      - name: "MB 5G Operations Terminology"
+        href: mb-5g-operations-terminology.md
+      - name: "Windows 5G MBIM Interface"
+        href: windows-5g-mbim-interface.md
+      - name: "NDIS Interface for 5G Data Class Support"
+        href: ndis-interface-for-5g-data-class-support.md
+      - name: "MBIMEx 2.0 – 5G NSA support"
+        href: mbimex-2.0-5g-nsa-support.md
+      - name: "MBIMEx 3.0 – 5G SA Phase 1 support"
+        href: mbimex-3.0-5g-sa-phase-1-support.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
@@ -2786,6 +2810,8 @@
         href: ndis-status-wwan-mpdp-state.md
       - name: "NDIS_STATUS_WWAN_NETWORK_BLACKLIST"
         href: ndis-status-wwan-network-blacklist.md
+      - name: "NDIS_STATUS_WWAN_NETWORK_PARAMS-STATE"
+        href: ndis-status-wwan-network-params-state.md
       - name: "NDIS_STATUS_WWAN_NITZ_INFO"
         href: ndis-status-wwan-nitz-info.md
       - name: "NDIS_STATUS_WWAN_PACKET_SERVICE"
@@ -2808,6 +2834,8 @@
         href: ndis-status-wwan-radio-state.md
       - name: "NDIS_STATUS_WWAN_READY_INFO"
         href: ndis-status-wwan-ready-info.md
+      - name: "NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE"
+        href: ndis-status-wwan-register-params-state.md
       - name: "NDIS_STATUS_WWAN_REGISTER_STATE"
         href: ndis-status-wwan-register-state.md
       - name: "NDIS_STATUS_WWAN_SAR_CONFIG"
@@ -2866,6 +2894,16 @@
         href: mobile-broadband-class-driver-logs--event-trace-log-tracing.md
       - name: "Mobile Broadband Implementation Guidelines for USB Devices"
         href: mobile-broadband-implementation-guidelines-for-usb-devices.md
+      - name: "Collecting Mobilebroadband Logs"
+        href: mb-collecting-logs.md
+      - name: "Analyzing Mobilebroadband Logs"
+        href: mb-analyzing-logs.md
+      - name: "TextAnalysisTool Filter Files"
+        href: mb-tat-filters.md
+      - name: "netsh mbn test installation"
+        href: mb-netsh-mbn-test.md
+  - name: "WLAN Universal Windows driver model"
+    href: wifi-universal-driver-model.md
   - name: "WLAN network preference and roaming"
     items: 
     - name: "WLAN feature information"
@@ -3086,10 +3124,14 @@
         href: wdi-tlv-checksum-offload-v6-tx-parameters.md
       - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
         href: wdi-tlv-cipher-key-bip-key.md
+      - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
+        href: wdi-tlv-cipher-key-bip-gmac-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
         href: wdi-tlv-cipher-key-ccmp-key.md
       - name: "WDI_TLV_CIPHER_KEY_GCMP_KEY"
         href: wdi-tlv-cipher-key-gcmp-key.md
+      - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
+        href: wdi-tlv-cipher-key-gcmp-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_ID"
         href: wdi-tlv-cipher-key-id.md
       - name: "WDI_TLV_CIPHER_KEY_IHV_KEY"
@@ -3194,15 +3236,15 @@
         href: wdi-tlv-ft-rsnie.md
       - name: "WDI_TLV_FT_SNONCE"
         href: wdi-tlv-ft-snonce.md
-      - name: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS
+      - name: "WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS"
         href: wdi-tlv-ftm-number-of-measurements.md
-      - name: WDI_TLV_FTM_REQUEST_TIMEOUT
+      - name: "WDI_TLV_FTM_REQUEST_TIMEOUT"
         href: wdi-tlv-ftm-request-timeout.md
-      - name: WDI_TLV_FTM_RESPONSE
+      - name: "WDI_TLV_FTM_RESPONSE"
         href: wdi-tlv-ftm-response.md
-      - name: WDI_TLV_FTM_RESPONSE_STATUS
+      - name: "WDI_TLV_FTM_RESPONSE_STATUS"
         href: wdi-tlv-ftm-response-status.md
-      - name: WDI_TLV_FTM_TARGET_BSS_ENTRY
+      - name: "WDI_TLV_FTM_TARGET_BSS_ENTRY"
         href: wdi-tlv-ftm-target-bss-entry.md
       - name: "WDI_TLV_GET_AUTO_POWER_SAVE"
         href: wdi-tlv-get-auto-power-save.md
@@ -3248,9 +3290,13 @@
         href: wdi-tlv-ipv6-checksum-offload.md
       - name: "WDI_TLV_IPV6_LSO_V2"
         href: wdi-tlv-ipv6-lso-v2.md
-      - name: WDI_TLV_LCI_REPORT_BODY
+      - name: "WDI_TLV_KCK_CONTENT"
+        href: wdi-tlv-kck-content.md
+      - name: "WDI_TLV_KEK_CONTENT"
+        href: wdi-tlv-kek-content.md
+      - name: "WDI_TLV_LCI_REPORT_BODY"
         href: wdi-tlv-lci-report-body.md
-      - name: WDI_TLV_LCI_REPORT_STATUS
+      - name: "WDI_TLV_LCI_REPORT_STATUS"
         href: wdi-tlv-lci-report-status.md
       - name: "WDI_TLV_LINK_QUALITY_BAR_MAP"
         href: wdi-tlv-link-quality-bar-map.md
@@ -3290,6 +3336,8 @@
         href: wdi-tlv-operation-mode.md
       - name: "WDI_TLV_OS_POWER_MANAGEMENT_FEATURES"
         href: wdi-tlv-os-power-management-features.md
+      - name: "WDI_TLV_OWE_DH_IE"
+        href: wdi-tlv-owe-dh-ie.md
       - name: "WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT"
         href: wdi-tlv-p2p-action-frame-device-context.md
       - name: "WDI_TLV_P2P_ACTION_FRAME_IES"
@@ -3492,6 +3540,8 @@
         href: wdi-tlv-privacy-exemption-entry.md
       - name: "WDI_TLV_PROBE_RESPONSE_FRAME"
         href: wdi-tlv-probe-response-frame.md
+      - name: "WDI_TLV_PROTOCOL_OFFLOAD_ID"
+        href: wdi-tlv-protocol-offload-id.md
       - name: "WDI_TLV_RADIO_STATE"
         href: wdi-tlv-radio-state.md
       - name: "WDI_TLV_RADIO_STATE_PARAMETERS"
@@ -3504,45 +3554,47 @@
         href: wdi-tlv-receive-coalescing-config.md
       - name: "WDI_TLV_RECEIVE_FILTER_FIELD"
         href: wdi-tlv-receive-filter-field.md
-      - name: WDI_TLV_REQUEST_LCI_REPORT
+      - name: "WDI_TLV_REPLAY_COUNTER"
+        href: wdi-tlv-replay-counter.md
+      - name: "WDI_TLV_REQUEST_LCI_REPORT"
         href: wdi-tlv-request-lci-report.md
-      - name: WDI_TLV_RETRY_AFTER
+      - name: "WDI_TLV_RETRY_AFTER"
         href: wdi-tlv-retry-after.md
       - name: "WDI_TLV_ROAMING_NEEDED_PARAMETERS"
         href: wdi-tlv-roaming-needed-parameters.md
       - name: "WDI_TLV_RSN_KEY_INFO"
         href: wdi-tlv-rsn-key-info.md
-      - name: WDI_TLV_RTT
+      - name: "WDI_TLV_RTT"
         href: wdi-tlv-rtt.md
-      - name: WDI_TLV_RTT_ACCURACY
+      - name: "WDI_TLV_RTT_ACCURACY"
         href: wdi-tlv-rtt-accuracy.md
-      - name: WDI_TLV_RTT_VARIANCE
+      - name: "WDI_TLV_RTT_VARIANCE"
         href: wdi-tlv-rtt-variance.md
-      - name: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN
+      - name: "WDI_TLV_SAE_ANTI_CLOGGING_TOKEN"
         href: wdi-tlv-sae-anti-clogging-token.md
-      - name: WDI_TLV_SAE_COMMIT_REQUEST
+      - name: "WDI_TLV_SAE_COMMIT_REQUEST"
         href: wdi-tlv-sae-commit-request.md
-      - name: WDI_TLV_SAE_COMMIT_RESPONSE
+      - name: "WDI_TLV_SAE_COMMIT_RESPONSE"
         href: wdi-tlv-sae-commit-response.md
-      - name: WDI_TLV_SAE_CONFIRM
+      - name: "WDI_TLV_SAE_CONFIRM"
         href: wdi-tlv-sae-confirm.md
-      - name: WDI_TLV_SAE_CONFIRM_REQUEST
+      - name: "WDI_TLV_SAE_CONFIRM_REQUEST"
         href: wdi-tlv-sae-confirm-request.md
-      - name: WDI_TLV_SAE_CONFIRM_RESPONSE
+      - name: "WDI_TLV_SAE_CONFIRM_RESPONSE"
         href: wdi-tlv-sae-confirm-response.md
-      - name: WDI_TLV_SAE_ELEMENT
+      - name: "WDI_TLV_SAE_ELEMENT"
         href: wdi-tlv-sae-element.md
-      - name: WDI_TLV_SAE_FINITE_CYCLIC_GROUP
+      - name: "WDI_TLV_SAE_FINITE_CYCLIC_GROUP"
         href: wdi-tlv-sae-finite-cyclic-group.md
-      - name: WDI_TLV_SAE_INDICATION_TYPE
+      - name: "WDI_TLV_SAE_INDICATION_TYPE"
         href: wdi-tlv-sae-indication-type.md
-      - name: WDI_TLV_SAE_REQUEST_TYPE
+      - name: "WDI_TLV_SAE_REQUEST_TYPE"
         href: wdi-tlv-sae-request-type.md
-      - name: WDI_TLV_SAE_SCALAR
+      - name: "WDI_TLV_SAE_SCALAR"
         href: wdi-tlv-sae-scalar.md
-      - name: WDI_TLV_SAE_SEND_CONFIRM
+      - name: "WDI_TLV_SAE_SEND_CONFIRM"
         href: wdi-tlv-sae-send-confirm.md
-      - name: WDI_TLV_SAE_STATUS
+      - name: "WDI_TLV_SAE_STATUS"
         href: wdi-tlv-sae-status.md
       - name: "WDI_TLV_SAFE_MODE_PARAMETERS"
         href: wdi-tlv-safe-mode-parameters.md
@@ -3674,7 +3726,7 @@
         href: oid-wdi-task-p2p-send-request-action-frame.md
       - name: "OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME"
         href: oid-wdi-task-p2p-send-response-action-frame.md
-      - name: OID_WDI_TASK_REQUEST_FTM
+      - name: "OID_WDI_TASK_REQUEST_FTM"
         href: oid-wdi-task-request-ftm.md
       - name: "OID_WDI_TASK_ROAM"
         href: oid-wdi-task-roam.md
@@ -3766,7 +3818,7 @@
         href: oid-wdi-set-remove-pm-protocol-offload.md
       - name: "OID_WDI_SET_REMOVE_WOL_PATTERN"
         href: oid-wdi-set-remove-wol-pattern.md
-      - name: OID_WDI_SET_SAE_AUTH_PARAMS
+      - name: "OID_WDI_SET_SAE_AUTH_PARAMS"
         href: oid-wdi-set-sae-auth-params.md
       - name: "OID_WDI_SET_TCP_OFFLOAD_PARAMETERS"
         href: oid-wdi-set-tcp-offload-parameters.md
@@ -3836,13 +3888,13 @@
         href: ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_RADIO_STATUS"
         href: ndis-status-wdi-indication-radio-status.md
-      - name: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
+      - name: "NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE"
         href: ndis-status-wdi-indication-request-ftm-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE"
         href: ndis-status-wdi-indication-roam-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED"
         href: ndis-status-wdi-indication-roaming-needed.md
-      - name: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
+      - name: "NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED"
         href: ndis-status-wdi-indication-sae-auth-params-needed.md
       - name: "NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE"
         href: ndis-status-wdi-indication-scan-complete.md
@@ -3888,142 +3940,142 @@
       href: wpa3-sae-authentication.md
     - name: "WDI doc change history"
       href: wdi-doc-change-history.md
-  - name: Native 802.11 IHV Extensions
+  - name: "Native 802.11 IHV Extensions"
     items:
-    - name: Native 802.11 IHV Extensions Topics
+    - name: "Native 802.11 IHV Extensions Topics"
       href: native-802-11-ihv-extensions.md
-    - name: Overview of IHV Extensibility
+    - name: "Overview of IHV Extensibility"
       href: overview-of-ihv-extensibility.md
-    - name: Installing Native 802.11 IHV Extensions
+    - name: "Installing Native 802.11 IHV Extensions"
       href: installing-native-802-11-ihv-extensions.md
-    - name: Native 802.11 IHV Extensions DLL
+    - name: "Native 802.11 IHV Extensions DLL"
       items:
-      - name: Native 802.11 IHV Extensions DLL Topics
+      - name: "Native 802.11 IHV Extensions DLL Topics"
         href: native-802-11-ihv-extensions-dll4.md
-      - name: Native 802.11 IHV Extensions DLL Overview
+      - name: "Native 802.11 IHV Extensions DLL Overview"
         href: native-802-11-ihv-extensions-dll-overview.md
-      - name: Native 802.11 IHV Extensibility Functions
+      - name: "Native 802.11 IHV Extensibility Functions"
         href: native-802-11-ihv-extensibility-functions.md
-      - name: Native 802.11 IHV Handler Functions
+      - name: "Native 802.11 IHV Handler Functions"
         href: native-802-11-ihv-handler-functions.md
-      - name: Native 802.11 IHV Extensions DLL Implementation Guidelines
+      - name: "Native 802.11 IHV Extensions DLL Implementation Guidelines"
         href: native-802-11-ihv-extensions-dll-implementation-guidelines.md
-      - name: DLL Start/Stop Operations
+      - name: "DLL Start/Stop Operations"
         items: 
-        - name: DLL Start/Stop Operations Topics
+        - name: "DLL Start/Stop Operations Topics"
           href: dll-start-stop-operations.md
-        - name: DLL Start Operations
+        - name: "DLL Start Operations"
           href: dll-start-operations.md
-        - name: DLL Stop Operations
+        - name: "DLL Stop Operations"
           href: dll-stop-operations.md
-      - name: 802.11 WLAN Adapter Management
+      - name: "802.11 WLAN Adapter Management"
         items:
-        - name: 802.11 WLAN Adapter Management Topics
+        - name: "802.11 WLAN Adapter Management Topics"
           href: 802-11-wlan-adapter-management.md
-        - name: 802.11 WLAN Adapter Arrival
+        - name: "802.11 WLAN Adapter Arrival"
           href: 802-11-wlan-adapter-arrival.md
-        - name: 802.11 WLAN Adapter Removal
+        - name: "802.11 WLAN Adapter Removal"
           href: 802-11-wlan-adapter-removal.md
-        - name: 802.11 WLAN Adapter Reset
+        - name: "802.11 WLAN Adapter Reset"
           href: 802-11-wlan-adapter-reset.md
-        - name: 802.11 WLAN Adapter Communication Channel
+        - name: "802.11 WLAN Adapter Communication Channel"
           href: 802-11-wlan-adapter-communication-channel.md
-      - name: Managing Network Profiles
+      - name: "Managing Network Profiles"
         items:
-        - name: Network Profile Management
+        - name: "Network Profile Management"
           href: network-profile-management.md
-        - name: Network Profile Overview
+        - name: "Network Profile Overview"
           href: network-profile-overview.md
-        - name: Creating Network Profile Extensions
+        - name: "Creating Network Profile Extensions"
           href: creating-network-profile-extensions.md
-        - name: Validating Network Profile Extensions
+        - name: "Validating Network Profile Extensions"
           href: validating-network-profile-extensions.md
-      - name: User Interaction
+      - name: "User Interaction"
         items:
-        - name: Interaction with the User
+        - name: "Interaction with the User"
           href: interaction-with-the-user.md
-        - name: Requesting User Interaction
+        - name: "Requesting User Interaction"
           href: requesting-user-interaction.md
-        - name: Processing Session Changes
+        - name: "Processing Session Changes"
           href: processing-session-changes.md
-      - name: Pre-Association Operations
+      - name: "Pre-Association Operations"
         items:
-        - name: Pre-Association Operations Topics
+        - name: "Pre-Association Operations Topics"
           href: pre-association-operations.md
-        - name: Pre-Association Operation Overview
+        - name: "Pre-Association Operation Overview"
           href: pre-association-operation-overview.md
-        - name: Pre-Association Operation Guidelines
+        - name: "Pre-Association Operation Guidelines"
           href: pre-association-operation-guidelines.md
-      - name: Post-Association Operations
+      - name: "Post-Association Operations"
         items:
-        - name: Post-Association Operations Overview
+        - name: "Post-Association Operations Overview"
           href: post-association-operations.md
-        - name: Performing a Post-Association Operation
+        - name: "Performing a Post-Association Operation"
           href: performing-a-post-association-operation.md
-        - name: Stopping a Post-Association Operation
+        - name: "Stopping a Post-Association Operation"
           href: stopping-a-post-association-operation.md
-        - name: Interface to the Native 802.11 802.1X Module
+        - name: "Interface to the Native 802.11 802.1X Module"
           href: interface-to-the-native-802-11-802-1x-module.md
-      - name: Transferring Network Data in Native 802.11 IHV extensions
+      - name: "Transferring Network Data in Native 802.11 IHV extensions"
         items:
-        - name: Native 802.11 IHV extension send and receive operations
+        - name: "Native 802.11 IHV extension send and receive operations"
           href: send-and-receive-operations3.md
-        - name: IEEE EtherType Handling
+        - name: "IEEE EtherType Handling"
           href: ieee-ethertype-handling.md
-        - name: Send Operations
+        - name: "Send Operations"
           href: send-operations.md
-        - name: Receive Operations
+        - name: "Receive Operations"
           href: receive-operations.md
-      - name: Sending and Receiving Notifications
+      - name: "Sending and Receiving Notifications"
         items:
-        - name: Notification Operations
+        - name: "Notification Operations"
           href: notification-operations.md
-        - name: Sending Notifications
+        - name: "Sending Notifications"
           href: sending-notifications.md
-        - name: Receiving Notifications
+        - name: "Receiving Notifications"
           href: receiving-notifications.md
-      - name: Virtual Station
+      - name: "Virtual Station"
         href: virtual-station.md
-    - name: Native 802.11 IHV UI Extensions DLL
+    - name: "Native 802.11 IHV UI Extensions DLL"
       items:
-      - name: Native 802.11 IHV UI Extensions DLL Topics
+      - name: "Native 802.11 IHV UI Extensions DLL Topics"
         href: native-802-11-ihv-ui-extensions-dll2.md
-      - name: Windows SDK References
+      - name: "Windows SDK References"
         href: windows-sdk-references.md
-      - name: Native 802.11 IHV UI Extensions DLL Overview
+      - name: "Native 802.11 IHV UI Extensions DLL Overview"
         href: native-802-11-ihv-ui-extensions-dll-overview.md
-      - name: Native 802.11 IHV UI Extensions COM Interfaces
+      - name: "Native 802.11 IHV UI Extensions COM Interfaces"
         href: native-802-11-ihv-ui-extensions-com-interfaces.md
-      - name: Wireless Network Profile Property Extension
+      - name: "Wireless Network Profile Property Extension"
         items:
-        - name: Extending the Properties for Wireless Network Profiles
+        - name: "Extending the Properties for Wireless Network Profiles"
           href: extending-the-properties-for-wireless-network-profiles.md
-        - name: Extending Wireless Connection Properties
+        - name: "Extending Wireless Connection Properties"
           href: extending-wireless-connection-properties.md
-        - name: Extending Wireless Security Properties
+        - name: "Extending Wireless Security Properties"
           href: extending-wireless-security-properties.md
-        - name: Extending Microsoft 802.1X Security Settings
+        - name: "Extending Microsoft 802.1X Security Settings"
           href: extending-microsoft-802-1x-security-settings.md
-        - name: Extending the UI for Proprietary 802.1X Security Methods
+        - name: "Extending the UI for Proprietary 802.1X Security Methods"
           href: extending-the-ui-for-proprietary-802-1x-security-methods.md
-        - name: Extending the UI for Standard 802.1X Security Methods
+        - name: "Extending the UI for Standard 802.1X Security Methods"
           href: extending-the-ui-for-standard-802-1x-security-methods.md
-      - name: Extending the Advanced Properties for Wireless Network Adapters
+      - name: "Extending the Advanced Properties for Wireless Network Adapters"
         href: extending-the-advanced-properties-for-wireless-network-adapters.md
-      - name: Custom UI Display Requests
+      - name: "Custom UI Display Requests"
         items:
-        - name: Handling Requests for the Display of a Custom UI
+        - name: "Handling Requests for the Display of a Custom UI"
           href: handling-requests-for-the-display-of-a-custom-ui.md
-        - name: Requesting the Display of a Custom UI
+        - name: "Requesting the Display of a Custom UI"
           href: requesting-the-display-of-a-custom-ui.md
-        - name: Querying for the Display of a Custom UI
+        - name: "Querying for the Display of a Custom UI"
           href: querying-for-the-display-of-a-custom-ui.md
-        - name: Displaying Custom UI Pages within a Balloon Notification
+        - name: "Displaying Custom UI Pages within a Balloon Notification"
           href: displaying-custom-ui-pages-within-a-balloon-notification.md
-        - name: Displaying Custom UI Pages within the Network Connection Wizard
+        - name: "Displaying Custom UI Pages within the Network Connection Wizard"
           href: displaying-custom-ui-pages-within-the-network-connection-wizard.md
-        - name: Accessing Profile and Context Data
-          href: accessing-profile-and-context-data.md    
+        - name: "Accessing Profile and Context Data"
+          href: accessing-profile-and-context-data.md
   - name: "Wi-Fi Hotspot Offloading Guide"
     items: 
     - name: "Wi-Fi Hotspot Offloading Overview"
@@ -4178,8 +4230,6 @@
     href: programming-considerations.md
 - name: "Winsock Kernel"
   items: 
-  - name: "Winsock Kernel Topics"
-    href: winsock-kernel4.md
   - name: "Roadmap for Developing Network Drivers with Winsock Kernel"
     href: roadmap-for-developing-network-drivers-with-winsock-kernel.md
   - name: "Introduction to Winsock Kernel"
@@ -4314,8 +4364,6 @@
     href: including-header-files-for-ip-helper.md
 - name: "Windows Filtering Platform Callout Drivers"
   items: 
-  - name: "Windows Filtering Platform Callout Driver Topics"
-    href: windows-filtering-platform-callout-drivers2.md
   - name: "Roadmap for Developing WFP Callout Drivers"
     href: roadmap-for-developing-wfp-callout-drivers.md
   - name: "Introduction to Windows Filtering Platform Callout Drivers"
@@ -4736,8 +4784,12 @@
         href: data-out-endpoint-descriptor.md
 - name: "Kernel Mode SDK Topics for Network Drivers"
   items: 
+  - name: "Overview of Kernel Mode SDK Topics for Network Drivers"
+    href: kernel-mode-sdk-topics-for-network-drivers.md
   - name: "Mstcpip.h"
     items: 
+    - name: "Overview"
+      href: mstcpip-h.md
     - name: "SIO_LOOPBACK_FAST_PATH control code"
       href: sio-loopback-fast-path.md
     - name: "SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code"
@@ -4748,6 +4800,8 @@
       href: sio-set-wfp-connection-redirect-records.md
   - name: "Ntddndis.h"
     items: 
+    - name: "Overview"
+      href: ntddndis-h.md
     - name: "GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES"
       href: guid-ndis-gen-pci-device-custom-properties.md
     - name: "OID_802_3_ADD_MULTICAST_ADDRESS"
@@ -5146,6 +5200,20 @@
       href: oid-qos-current-capabilities.md
     - name: "OID_QOS_HARDWARE_CAPABILITIES"
       href: oid-qos-hardware-capabilities.md
+    - name: "OID_QOS_OFFLOAD_CREATE_SQ"
+      href: oid-qos-offload-create-sq.md
+    - name: "OID_QOS_OFFLOAD_CURRENT_CAPABILITIES"
+      href: oid-qos-offload-current-capabilities.md
+    - name: "OID_QOS_OFFLOAD_DELETE_SQ"
+      href: oid-qos-offload-delete-sq.md
+    - name: "OID_QOS_OFFLOAD_ENUM_SQS"
+      href: oid-qos-offload-enum-sqs.md
+    - name: "OID_QOS_OFFLOAD_HARDWARE_CAPABILITIES"
+      href: oid-qos-offload-hardware-capabilities.md
+    - name: "OID_QOS_OFFLOAD_SQ_STATS"
+      href: oid-qos-offload-sq-stats.md
+    - name: "OID_QOS_OFFLOAD_UPDATE_SQ"
+      href: oid-qos-offload-update-sq.md
     - name: "OID_QOS_OPERATIONAL_PARAMETERS"
       href: oid-qos-operational-parameters.md
     - name: "OID_QOS_PARAMETERS"
@@ -5296,6 +5364,12 @@
       href: oid-tcp4-offload-stats.md
     - name: "OID_TCP6_OFFLOAD_STATS"
       href: oid-tcp6-offload-stats.md
+    - name: "OID_TIMESTAMP_CAPABILITY"
+      href: oid-timestamp-capability.md
+    - name: "OID_TIMESTAMP_CURRENT_CONFIG"
+      href: oid-timestamp-current-config.md
+    - name: "OID_TIMESTAMP_GET_CROSSTIMESTAMP"
+      href: oid-timestamp-get-crosstimestamp.md
     - name: "OID_TUNNEL_INTERFACE_RELEASE_OID"
       href: oid-tunnel-interface-release-oid.md
     - name: "OID_TUNNEL_INTERFACE_SET_OID"
@@ -5360,6 +5434,8 @@
       href: oid-wwan-network-blacklist.md
     - name: "OID_WWAN_NETWORK_IDLE_HINT"
       href: oid-wwan-network-idle-hint.md
+    - name: "OID_WWAN_NETWORK_PARAMS"
+      href: oid-wwan-network-params.md
     - name: "OID_WWAN_NITZ"
       href: oid-wwan-nitz.md
     - name: "OID_WWAN_PACKET_SERVICE"
@@ -5386,6 +5462,8 @@
       href: oid-wwan-radio-state.md
     - name: "OID_WWAN_READY_INFO"
       href: oid-wwan-ready-info.md
+    - name: "OID_WWAN_REGISTER_PARAMS"
+      href: oid-wwan-register-params.md
     - name: "OID_WWAN_REGISTER_STATE"
       href: oid-wwan-register-state.md
     - name: "OID_WWAN_SAR_CONFIG"
@@ -5430,6 +5508,8 @@
       href: oid-wwan-visible-providers.md
   - name: "Ws2def.h"
     items: 
+    - name: "Overview"
+      href: ws2def-h.md
     - name: "AF_INET"
       href: af-inet.md
     - name: "AF_INET6"

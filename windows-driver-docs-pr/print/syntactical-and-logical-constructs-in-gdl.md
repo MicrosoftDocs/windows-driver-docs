@@ -1,7 +1,6 @@
 ---
 title: Syntactical and Logical Constructs in GDL
 description: Syntactical and Logical Constructs in GDL
-ms.assetid: f0802424-319c-4ba4-a8cd-539006f4d22c
 keywords:
 - syntactical constructs WDK GDL
 - logical constructs WDK GDL

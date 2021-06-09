@@ -1,7 +1,6 @@
 ---
 title: DTrace ETW
 description: DTrace supports Event Tracing for Windows (ETW) using the D programing language. 
-ms.assetid: abf23d76-423d-4d1e-afde-83739015bbf1
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 Use DTrace for Windows to process existing ETW events and to add new ETW events.
 
-Event Tracing for Windows (ETW) is an kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application. For general information about ETW, see [About Event Tracing](https://docs.microsoft.com/windows/win32/etw/about-event-tracing).
+Event Tracing for Windows (ETW) is an kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application. For general information about ETW, see [About Event Tracing](/windows/win32/etw/about-event-tracing).
 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Insider Preview Build 18975.
@@ -91,7 +90,7 @@ The etw\_trace macro supports basic datatypes such as int8, uint8, int16, uint16
 
 This script generates a custom ETW event when the syscall routine returns 0xc0000001 - STATUS_UNSUCCESSFUL.
 
-You can change the `this->status` value to use a different [NTSTATUS values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) to log different syscall return values.
+You can change the `this->status` value to use a different [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) to log different syscall return values.
 
 ```dtrace
 syscall:::return 
@@ -132,7 +131,7 @@ CPU     ID                    FUNCTION:NAME
 
 ## ETW NUMA MEM STATS example code
 
-This example script uses Microsoft-Windows-Kernel-Memory ETW provider to dump NUMA node memory. Page size can be converted to size in KB by multiplying by 4. For general information on NUMA see [NUMA Support](https://docs.microsoft.com/windows/win32/procthread/numa-support).
+This example script uses Microsoft-Windows-Kernel-Memory ETW provider to dump NUMA node memory. Page size can be converted to size in KB by multiplying by 4. For general information on NUMA see [NUMA Support](/windows/win32/procthread/numa-support).
 
 This code is also located at <https://github.com/microsoft/DTrace-on-Windows/blob/master/samples/windows/etw/numamemstats.d>
 
@@ -299,7 +298,7 @@ Open a command prompt as an Administrator and run the script using the -s option
 Running on a client Windows PC, a single NUMA node is displayed.
 
 ```dtrace
-C:\> dtrace -s etwnumamemstats.d 
+C:\> dtrace -s etwnumamemstats.d
 trace: script 'etwnumamemstats.d' matched 36 probes
 CPU     ID                    FUNCTION:NAME
   0  42735       0xff_0xffffffffffffffff:12

@@ -1,7 +1,6 @@
 ---
 title: Displaying Video on Interlaced and Proscan Monitors
 description: Displaying Video on Interlaced and Proscan Monitors
-ms.assetid: 26438a11-7627-45c1-956a-c48409102784
 keywords:
 - DirectX VPE support WDK DirectDraw , proscan monitors
 - drawing VPEs WDK DirectDraw , proscan monitors

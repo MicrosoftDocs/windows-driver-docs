@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: fdb93613-9c7f-49ea-b90e-684b63e6417a
 keywords: ["get_ShareName method Print Devices", "get_ShareName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ShareName method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **ShareName** property enables an ASP Web page to obtain the printer's shared name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_ShareName(
@@ -32,14 +30,12 @@ HRESULT get_ShareName(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to a share name string.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -82,8 +78,7 @@ objPrinter.Open strPrinter
 DrvrName = objPrinter.ShareName
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: devext
 description: The devext extension displays bus-specific device extension information for devices on a variety of buses.
-ms.assetid: b4d4f595-9b0b-40e2-8790-2c913a50c8fe
 keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "devext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,8 +45,7 @@ Kdexts.dll
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For more information about device extensions, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The **!usbhub**, **!hidfdo**, and **!hidpdo** extensions are obsolete; their functionality has been integrated into **!devext**.
 

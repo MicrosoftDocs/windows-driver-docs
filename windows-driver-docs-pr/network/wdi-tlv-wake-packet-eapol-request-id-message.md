@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE
 description: WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE is a TLV that contains the wake-on-LAN pattern ID of a EAPOL request ID message.
-ms.assetid: CB898EF0-3ACF-4026-8650-91EF18E93766
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

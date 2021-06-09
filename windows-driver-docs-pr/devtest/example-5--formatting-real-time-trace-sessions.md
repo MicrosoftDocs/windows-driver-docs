@@ -1,7 +1,6 @@
 ---
 title: Example 5 Formatting Real-Time Trace Sessions
 description: Example 5 Formatting Real-Time Trace Sessions
-ms.assetid: 340453ab-4736-4191-b9d4-08ee7d9190fe
 keywords:
 - Tracefmt WDK , real-time trace sessions
 - real-time trace sessions WDK
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 You can use Tracefmt to format trace messages from real-time trace sessions in addition to trace log files.
 
-The following sequence of commands uses [Tracelog](tracelog.md) and Tracefmt. The first command uses Tracelog to start a real-time trace session with the Tracedrv sample trace provider. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507 ) repository on GitHub.
+The following sequence of commands uses [Tracelog](tracelog.md) and Tracefmt. The first command uses Tracelog to start a real-time trace session with the Tracedrv sample trace provider. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ```
 tracelog -start MyTrace -guid tracedrv.ctl -flag 1 -rt

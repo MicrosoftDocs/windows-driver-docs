@@ -1,7 +1,6 @@
 ---
 title: Enumerating Installed Devices
 description: Enumerating Installed Devices
-ms.assetid: 98EF9A16-6415-4778-BB5D-C0B7160C1509
 keywords:
 - enumerating installed devices WDK
 - installed devices WDK , enumerating
@@ -16,17 +15,11 @@ You should not enumerate devices by using registry keys directly. Registry keys 
 
 To enumerate installed devices safely, follow these steps:
 
-1.  Use [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to retrieve information for a set of devices that belong to a specified device setup class. To retrieve information only for devices that are present in the system, set DIGCF_PRESENT in the *Flags* parameter.
+1.  Use [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to retrieve information for a set of devices that belong to a specified device setup class. To retrieve information only for devices that are present in the system, set DIGCF_PRESENT in the *Flags* parameter.
 
-2.  Use [**SetupDiEnumDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo) to enumerate the devices in the set.
+2.  Use [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo) to enumerate the devices in the set.
 
-3.  Use [**SetupDiGetDeviceInstanceId**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida) to retrieve unique [device instance identifiers (IDs)](device-instance-ids.md).
-
- 
+3.  Use [**SetupDiGetDeviceInstanceId**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida) to retrieve unique [device instance identifiers (IDs)](device-instance-ids.md).
 
  
-
-
-
-
 

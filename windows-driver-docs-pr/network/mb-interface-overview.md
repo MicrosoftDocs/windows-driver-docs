@@ -1,7 +1,6 @@
 ---
 title: MB Interface Overview
 description: MB Interface Overview
-ms.assetid: fcb79029-4225-4759-a130-6ef8b3f2d25d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ The terms *activate* and *activation* have two different meanings in this docume
 
 ### Semantics
 
-The MB Service component in user mode cannot directly exchange data with MB miniport drivers in kernel mode. Intermediaries such as WMI or [NDIS filter drivers](ndis-filter-drivers2.md) are required. For simplicity, these intermediaries are not explicitly discussed in this documentation. However, this omission does not mean that the MB Service and MB miniport drivers can engage in direct data exchanges.
+The MB Service component in user mode cannot directly exchange data with MB miniport drivers in kernel mode. Intermediaries such as WMI or [NDIS filter drivers](./roadmap-for-developing-ndis-filter-drivers.md) are required. For simplicity, these intermediaries are not explicitly discussed in this documentation. However, this omission does not mean that the MB Service and MB miniport drivers can engage in direct data exchanges.
 
 The following topics provide a summary of NDIS 6.20 and MB OID semantics, the procedures that miniport drivers must follow to perform synchronous and asynchronous operations, and an overview of the operations supported by the Mobile Broadband driver model:
 
@@ -54,10 +53,4 @@ The following topics provide a summary of NDIS 6.20 and MB OID semantics, the pr
 [MB Miniport Driver Performance Requirements](mb-miniport-driver-performance-requirements.md)
 
  
-
- 
-
-
-
-
 

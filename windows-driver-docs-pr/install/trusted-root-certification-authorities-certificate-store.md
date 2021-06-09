@@ -1,7 +1,6 @@
 ---
 title: Trusted Root Certification Authorities Certificate Store
 description: Trusted Root Certification Authorities Certificate Store
-ms.assetid: c1969171-3691-4110-9530-693853728327
 keywords:
 - certificate stores WDK
 - driver signing WDK , digital signatures
@@ -27,21 +26,13 @@ By default, the Trusted Root Certification Authorities certificate store is conf
 
 Having a valid digital signature ensures the authenticity and integrity of a [driver package](driver-packages.md). However, it does not mean that the end-user or a system administrator implicitly trusts the software publisher. A user or administrator must decide whether to install or run an application on a case-by-case basis, based on their knowledge of the software publisher and application. By default, a publisher is trusted only if its certificate is installed in the [Trusted Publishers certificate store](trusted-publishers-certificate-store.md).
 
-The name of the Trusted Root Certification Authorities certificate store is *root.* You can manually install the root certificate of a private CA into the Trusted Root Certification Authorities certificate store on a computer by using the [**CertMgr**](https://docs.microsoft.com/windows-hardware/drivers/devtest/certmgr) tool.
+The name of the Trusted Root Certification Authorities certificate store is *root.* You can manually install the root certificate of a private CA into the Trusted Root Certification Authorities certificate store on a computer by using the [**CertMgr**](../devtest/certmgr.md) tool.
 
 **Note**  The driver signing verification policy that is used by the PnP manager requires that the root certificate of a private CA has been previously installed in the local machine version of the Root Certification Authorities certificate store. For more information, see [Local Machine and Current User Certificate Stores](local-machine-and-current-user-certificate-stores.md).
 
 
 
-For more information about driver signing, see [Driver Signing Policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-).
+For more information about driver signing, see [Driver Signing Policy](./kernel-mode-code-signing-policy--windows-vista-and-later-.md).
 
  
-
- 
-
-
-
-
-
-
 

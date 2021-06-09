@@ -1,7 +1,6 @@
 ---
 title: Using INX Files to Create INF Files
 description: Using INX Files to Create INF Files
-ms.assetid: b49f8fed-c2b5-46e2-aeaf-e09231fa1578
 keywords:
 - INX files WDK KMDF
 - Build utility WDK KMDF
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Using INX Files to Create INF Files
 
 
-An *INX file* is an INF file that contains string variables that represent version information. When you build your driver using Microsoft Visual Studio, the build process runs the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool to replace the string variables in INX files with text strings that represent a specific hardware architecture or a framework version. You can also manually run the Stampinf tool, which is located in the *bin* subdirectory of the WDK.
+An *INX file* is an INF file that contains string variables that represent version information. When you build your driver using Microsoft Visual Studio, the build process runs the [Stampinf](../devtest/stampinf.md) tool to replace the string variables in INX files with text strings that represent a specific hardware architecture or a framework version. You can also manually run the Stampinf tool, which is located in the *bin* subdirectory of the WDK.
 
 If you create INX files for your drivers, you do not have to maintain multiple version-specific INF files. Instead, you can create a single INX file and use Visual Studio or Stampinf to generate version-specific INF files when you need them.
 
@@ -26,7 +25,7 @@ The WDK includes INX files for all the KMDF and UMDF sample drivers.
 INX files can contain the following string variables:
 
 <a href="" id="-arch-"></a>$ARCH$  
-Stampinf replaces this variable with an architecture-specific string. For example, if you are using an x86 build environment, the tool replaces $ARCH$ with "x86". You can use the $ARCH$ string wherever you need to specify a specific architecture within an INF file, such as within an [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section), as follows:
+Stampinf replaces this variable with an architecture-specific string. For example, if you are using an x86 build environment, the tool replaces $ARCH$ with "x86". You can use the $ARCH$ string wherever you need to specify a specific architecture within an INF file, such as within an [**INF Manufacturer section**](../install/inf-manufacturer-section.md), as follows:
 
 ```cpp
 [Manufacturer]
@@ -34,7 +33,7 @@ Stampinf replaces this variable with an architecture-specific string. For exampl
 ```
 
 <a href="" id="-kmdfcoinstallerversion-"></a>$KMDFCOINSTALLERVERSION$  
-If you use the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool's -*k* option, Stampinf replaces this variable with a string that represents a specific version of the KMDF co-installer. You can use the $KMDFCOINSTALLERVERSION$ variable when you specify the framework's co-installer within an INF file, such as within an [**INF DDInstall.CoInstallers section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section), as follows:
+If you use the [Stampinf](../devtest/stampinf.md) tool's -*k* option, Stampinf replaces this variable with a string that represents a specific version of the KMDF co-installer. You can use the $KMDFCOINSTALLERVERSION$ variable when you specify the framework's co-installer within an INF file, such as within an [**INF DDInstall.CoInstallers section**](../install/inf-ddinstall-coinstallers-section.md), as follows:
 
 ```cpp
 [ECHO_Device.NT.CoInstallers]
@@ -49,7 +48,7 @@ WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
 ```
 
 <a href="" id="-kmdfversion-"></a>$KMDFVERSION$  
-If you set the **KMDF Version Number** property in Visual Studio (or use the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool's -*k* option), Stampinf replaces this variable with a string that represents a specific version of KMDF. You can use the $KMDFVERSION$ variable when you specify the framework's version within an INF file, such as when you specify the [KmdfLibraryVersion](installing-the-framework-s-co-installer.md) directive, as follows:
+If you set the **KMDF Version Number** property in Visual Studio (or use the [Stampinf](../devtest/stampinf.md) tool's -*k* option), Stampinf replaces this variable with a string that represents a specific version of KMDF. You can use the $KMDFVERSION$ variable when you specify the framework's version within an INF file, such as when you specify the [KmdfLibraryVersion](installing-the-framework-s-co-installer.md) directive, as follows:
 
 ```cpp
 KmdfLibraryVersion = $KMDFVERSION$
@@ -73,13 +72,7 @@ HKR,,CoInstallers32,0x00010000,"WUDFUpdate_$UMDFCOINSTALLERVERSION$.dll"
 UmdfLibraryVersion=$UMDFVERSION$
 ```
 
-[Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) also supports a -*u* option to replace UMDF string variables in an INX file. If your driver package includes both UMDF-based drivers and KMDF-based drivers, you can use the -*k* and -*u* options with a single Stampinf command and a single INX file.
+[Stampinf](../devtest/stampinf.md) also supports a -*u* option to replace UMDF string variables in an INX file. If your driver package includes both UMDF-based drivers and KMDF-based drivers, you can use the -*k* and -*u* options with a single Stampinf command and a single INX file.
 
  
-
- 
-
-
-
-
 

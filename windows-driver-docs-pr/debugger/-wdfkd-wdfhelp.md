@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfhelp
 description: The wdfkd.wdfhelp extension displays help information about all Wdfkd.dll extension commands.
-ms.assetid: fdc47919-7207-4552-93e7-00633f3bfe12
 keywords: ["wdfkd.wdfhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,8 +29,7 @@ Wdfkd.dll
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!wdfkd.wdfhelp** extension is equivalent to the [**!wdfkd.help**](-wdfkd-help.md) extension.
 

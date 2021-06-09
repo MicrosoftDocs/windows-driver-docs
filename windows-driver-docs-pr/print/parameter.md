@@ -1,7 +1,6 @@
 ---
 title: parameter element
 description: The optional parameter element specifies a text string that is substituted for a percentage ( ) character in the text of an event notification message.
-ms.assetid: 6a43af7d-da00-4038-b1a8-a076d07c4c1a
 keywords: ["parameter element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # parameter element
 
-
 The optional **parameter** element specifies a text string that is substituted for a percentage (%) character in the text of an event notification message.
 
-The **parameter** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **parameter** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <parameter
@@ -30,8 +33,7 @@ Usage
   type = "xs:string"/>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -75,11 +77,9 @@ Attributes
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -106,26 +106,26 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The text loaded from the resource DLL can contain percentage (%) characters that will be replaced with text strings specified by the **parameter** element.
 
-Examples
---------
+## Examples
 
 The following code example shows how the **parameter** element can be used to generate a complete event notification message.
 
 In this example, the **stringID** values specify the following:
 
--   User interface string 100 in the driver resource DLL is "Printer is out of %1 ink; please open %2 and replace the ink cartridge."
--   User interface string 5 in the Microsoft-supplied user interface DLL is "yellow".
--   User interface string 1002 in the driver resource DLL is "Side Access Door B".
+- User interface string 100 in the driver resource DLL is "Printer is out of %1 ink; please open %2 and replace the ink cartridge."
+
+- User interface string 5 in the Microsoft-supplied user interface DLL is "yellow".
+
+- User interface string 1002 in the driver resource DLL is "Side Access Door B".
 
 ```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">

@@ -1,7 +1,6 @@
 ---
 title: DSM\_LB\_Operations WMI Class
 description: DSM\_LB\_Operations WMI Class
-ms.assetid: 67f040ea-4be6-49b7-8476-abb39ad90548
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ACCESS\_RIGHTS
 description: The WIA\_IPA\_ACCESS\_RIGHTS property contains the access rights for a WIA item.
-ms.assetid: 5bfa9406-2cb6-4c8b-ab25-6f8f55d941d4
 keywords: ["WIA_IPA_ACCESS_RIGHTS Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_FLAG
 
 Access Rights: Read/write or read-only (depending on the item's ability to have its access rights changed)
 
-Remarks
--------
+## Remarks
 
 *Access rights* control the ability of an application to delete items in the WIA item tree. The WIA minidriver creates and maintains the WIA\_IPA\_ACCESS\_RIGHTS property.
 
@@ -73,8 +71,7 @@ The following table describes the constants that are valid with WIA\_IPA\_ACCESS
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

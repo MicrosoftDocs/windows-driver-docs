@@ -1,7 +1,6 @@
 ---
 title: JobName element
 description: The required JobName element specifies the client-supplied, user-friendly name of the scan job.
-ms.assetid: b6d2baba-6a2e-4971-880b-9a4df66dc1ae
 keywords: ["JobName element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobName** element specifies the client-supplied, user-friendly name of the scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobName>
@@ -27,13 +25,11 @@ Usage
 </wscn:JobName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -67,8 +63,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client should supply a value to help users easily distinguish between jobs that they submitted.
 

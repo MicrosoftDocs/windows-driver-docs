@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdffindobjects
 description: The wdfkd.wdffindobjects extension searches memory for WDF objects.
-ms.assetid: 8c0a4881-9417-481b-82f8-f3510af768a1
 keywords: ["wdfkd.wdffindobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,8 +48,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following examples show the output of the **!wdfkd.wdffindobjects** extension. The 0x1 flag is set in the second example.
 

@@ -1,7 +1,6 @@
 ---
 title: Format Negotiation
 description: Format Negotiation
-ms.assetid: 5b6ee5ed-de5a-4832-a581-179966e79dbd
 ms.date: 11/08/2018
 ms.localizationpriority: medium
 ---

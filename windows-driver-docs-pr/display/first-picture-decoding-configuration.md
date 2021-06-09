@@ -1,7 +1,6 @@
 ---
 title: First Picture Decoding Configuration
 description: First Picture Decoding Configuration
-ms.assetid: 5888b2d3-42e8-4145-90f7-025b66a4d6e9
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

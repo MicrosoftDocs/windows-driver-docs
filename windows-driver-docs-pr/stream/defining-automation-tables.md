@@ -1,7 +1,6 @@
 ---
 title: Defining Automation Tables
 description: Defining Automation Tables
-ms.assetid: 1c0dace6-b618-4705-bf5d-65457d14c072
 keywords:
 - BDA minidrivers WDK AVStream , automation tables
 - automation tables WDK AVStream

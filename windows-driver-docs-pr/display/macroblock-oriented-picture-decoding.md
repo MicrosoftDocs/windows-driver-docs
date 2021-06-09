@@ -1,7 +1,6 @@
 ---
 title: Macroblock-Oriented Picture Decoding
 description: Macroblock-Oriented Picture Decoding
-ms.assetid: 7a416992-04d3-4307-83b3-9fb94c17d60e
 keywords:
 - macroblocks WDK DirectX VA
 - compressed picture decoding WDK DirectX VA , macroblock-oriented picture decoding

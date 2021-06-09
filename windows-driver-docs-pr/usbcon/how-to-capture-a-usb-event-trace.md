@@ -1,5 +1,5 @@
 ---
-Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
+description: This topic provides information about using the Logman tool to capture a USB ETW event trace.
 title: How to capture a USB event trace with Logman
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # How to capture a USB event trace with Logman
 
 
-This topic provides information about using the [Logman](https://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
+This topic provides information about using the [Logman](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753820(v=ws.10)) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
 
 ### Prerequisites
 
@@ -21,12 +21,11 @@ Event trace log files can grow very quickly, but a smaller log file is easier to
 
 Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver stack traces, which were introduced in Windows 7. Event traces from the USB 2.0 driver stack can be captured on a Windows 8 computer. The way you capture event traces from USB 2.0 and USB 3.0 driver stacks is similar. You can capture events from the USB 2.0 or USB 3.0 driver stack independently. When you connect a USB 2.0 device to a USB 3.0 host controller, you get event traces from the USB 3.0 driver stack. In that case, you will view new USB 3.0 driver stack events for a USB 2.0 device.
 
-Instructions
-------------
+## Instructions
 
 **To collect USB trace events**
 
-1.  Open a command-prompt window that has administrative privileges. To do so, click Start, type **cmd** in the search box, right-click cmd.exe, and then select **Run as administrator**.
+1.  Open a command-prompt window that has administrative privileges. To do so, select Start, type **cmd** in the search box, Select and hold (or right-click) cmd.exe, and then select **Run as administrator**.
 2.  In the command-prompt window, enter these commands to start a capture session:
 
     ```cpp
@@ -59,8 +58,7 @@ The preceding capture session generates an etl file, named usbtrace.etl. The tra
 
 The file contains event traces from the USB 3.0 and USB 2.0 driver stacks. If you want to reduce the event traces to just one USB driver stack, remove the other driver stack from your next trace session. You can do so by modifying the command sequence shown in step 2 to remove the "logman update" lines corresponding to the driver stack you want to remove from the trace session.
 
-Remarks
--------
+## Remarks
 
 **Capture filters for USB 3.0 driver stack events**
 
@@ -110,7 +108,7 @@ You can filter events based on keywords depending on your requirements. Here are
 </tr>
 <tr class="even">
 <td><p><strong>FullDataBusTrace</strong></p></td>
-<td><p>Shows all USB transfer events and saves up to 4 KB of bus data for bulk, interrupt, and control transfers. Note that only the first buffer of a chained MDL is logged. Isochronous bus data is never logged (though the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer" data-raw-source="[&lt;strong&gt;URB_ISOCH_TRANSFER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer)"><strong>URB_ISOCH_TRANSFER</strong></a> request structure is saved). For more information, see <a href="how-to-send-chained-mdls.md" data-raw-source="[How to send chained MDLs](how-to-send-chained-mdls.md)">How to send chained MDLs</a> and <a href="transfer-data-to-isochronous-endpoints.md" data-raw-source="[How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md)">How to transfer data to USB isochronous endpoints</a>.</p></td>
+<td><p>Shows all USB transfer events and saves up to 4 KB of bus data for bulk, interrupt, and control transfers. Note that only the first buffer of a chained MDL is logged. Isochronous bus data is never logged (though the <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer" data-raw-source="[&lt;strong&gt;URB_ISOCH_TRANSFER&lt;/strong&gt;](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer)"><strong>URB_ISOCH_TRANSFER</strong></a> request structure is saved). For more information, see <a href="how-to-send-chained-mdls.md" data-raw-source="[How to send chained MDLs](how-to-send-chained-mdls.md)">How to send chained MDLs</a> and <a href="transfer-data-to-isochronous-endpoints.md" data-raw-source="[How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md)">How to transfer data to USB isochronous endpoints</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>HWVerifyHost</strong></p></td>
@@ -164,7 +162,4 @@ Sometimes it is helpful to have the transfer events in your trace log, such as h
 ## Related topics
 [Using USB ETW](using-usb-etw.md)  
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-[Defining Keywords Used to Classify Types of Events](https://docs.microsoft.com/windows/desktop/WES/defining-keywords-used-to-classify-types-of-events)  
-
-
-
+[Defining Keywords Used to Classify Types of Events](/windows/desktop/WES/defining-keywords-used-to-classify-types-of-events)

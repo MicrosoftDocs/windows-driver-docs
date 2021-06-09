@@ -1,8 +1,6 @@
 ---
 title: Testing Manual Brightness
-author: windows-driver-content
 description: This topic describes how to test manual brightness by using the MALT (Microsoft Ambient Light Tool) tool.
-ms.assetid: 1a7dd439-2634-49ae-8b0c-1dec843b34d7
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
@@ -72,4 +70,4 @@ You must manually inspect the results yourself or with your engineering team in 
 2. Are there enough steps in the manual brightness curve? A curve with few points will be noticeable to a user as they adjust the brightness.
 3. Are the steps at the lower end of the curve smaller than at the higher end of the curve? Brightness changes are more perceptible at lower brightness. Consider adding more frequent curve points with smaller steps at lower brightness percentages.
 
-Refer to [this white paper](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.
+Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.

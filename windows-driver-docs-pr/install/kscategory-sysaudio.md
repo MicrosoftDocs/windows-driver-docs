@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_SYSAUDIO
 description: KSCATEGORY_SYSAUDIO
-ms.assetid: 48b67af6-ad0f-4cd2-b094-56d4708cb9c7
 keywords: ["KSCATEGORY_SYSAUDIO Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_SYSAUDIO
 
 
-The KSCATEGORY_SYSAUDIO [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) represents a [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components).
+The KSCATEGORY_SYSAUDIO [device interface class](./overview-of-device-interface-classes.md) represents a [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](../audio/kernel-mode-wdm-audio-components.md).
 
 <table>
 <colgroup>
@@ -45,8 +44,7 @@ The KSCATEGORY_SYSAUDIO [device interface class](https://docs.microsoft.com/wind
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -66,10 +64,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

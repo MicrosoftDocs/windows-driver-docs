@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CPU\_RESOURCES
 description: The KSPROPERTY\_AUDIO\_CPU\_RESOURCES property specifies whether a node's functionality is implemented in hardware or is emulated in software that runs on the host CPU.
-ms.assetid: 4379aa05-9661-44cd-8f10-0fb37009a4f3
 keywords: ["KSPROPERTY_AUDIO_CPU_RESOURCES Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_CPU\_RESOURCES property specifies whether a node's functi
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -67,8 +66,7 @@ This node implements its functionality in hardware.
 
 A KSPROPERTY\_AUDIO\_CPU\_RESOURCES property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to determine whether the following node types are implemented in hardware or software:
 
@@ -78,8 +76,7 @@ This property is used to determine whether the following node types are implemen
 
 -   Peakmeter node ([**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md))
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -97,20 +94,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
 
 [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)
 
 [**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)
-
- 
-
- 
-
-
-
-
-
 

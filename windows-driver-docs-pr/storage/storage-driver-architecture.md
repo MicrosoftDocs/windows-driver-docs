@@ -1,7 +1,6 @@
 ---
 title: Windows Storage Driver Architecture
 description: Windows Storage Driver Architecture
-ms.assetid: 16636899-fab9-46e8-ab9d-b8d86519b08a
 keywords:
 - storage drivers WDK , architecture
 - storage drivers WDK , types
@@ -36,7 +35,7 @@ Starting from the bottom of the figure, the following describes each type of sto
 
     The implementation of a storage class driver is transparent to upper level drivers. A class driver for a tape or medium changer device is implemented as a device-specific miniclass driver that links to a system-supplied class driver. System-supplied class drivers for other storage devices, such as disk and CD-ROM/DVD, are implemented as single monolithic drivers.
 
-    For information about implementing a storage class driver, see [Storage Class Drivers](storage-class-drivers.md). For information about implementing a tape or changer miniclass driver, see [Tape Drivers](tape-drivers-overview.md) and [Changer Drivers](changer-drivers.md), respectively.
+    For information about implementing a storage class driver, see [Storage Class Drivers](introduction-to-storage-class-drivers.md). For information about implementing a tape or changer miniclass driver, see [Tape Drivers](tape-drivers-overview.md) and [Changer Drivers](changer-drivers.md), respectively.
 
 4. An upper filter storage driver intercepts IRPs from user applications and drivers higher in the storage stack and then possibly modifies them before passing them to the next-lower driver (a storage class driver or another storage filter driver). Filter drivers typically monitor performance of the underlying device.
 

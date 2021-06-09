@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_HASH
 description: As a query, NDIS and overlying drivers use the OID_GEN_RECEIVE_HASH OID to obtain the current receive hash calculation settings of a miniport adapter.
-ms.assetid: be120dab-c98d-418f-8777-e2fb37b774a1
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RECEIVE_HASH Network Drivers Starting with Windows Vista
@@ -11,12 +10,11 @@ ms.localizationpriority: medium
 # OID\_GEN\_RECEIVE\_HASH
 
 
-As a query, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_HASH OID to obtain the current receive hash calculation settings of a miniport adapter. NDIS returns an [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters) structure that contains the current receive hash settings.
+As a query, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_HASH OID to obtain the current receive hash calculation settings of a miniport adapter. NDIS returns an [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters) structure that contains the current receive hash settings.
 
 As a set, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_HASH OID to configure the receive hash calculations on a miniport adapter. The miniport driver receives an NDIS\_RECEIVE\_HASH\_PARAMETERS structure.
 
-Remarks
--------
+## Remarks
 
 For NDIS miniport drivers, the query is not requested.
 
@@ -28,12 +26,11 @@ An overlying driver can use the OID\_GEN\_RECEIVE\_HASH OID to enable and config
 
  
 
-**Note**  The secret key is appended after the [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters) structure members.
+**Note**  The secret key is appended after the [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters) structure members.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -55,12 +52,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_RECEIVE\_HASH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters)
+[**NDIS\_RECEIVE\_HASH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_hash_parameters)
 
  
-
- 
-
-
-
 

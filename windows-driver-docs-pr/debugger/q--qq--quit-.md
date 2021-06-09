@@ -1,7 +1,6 @@
 ---
 title: q, qq (Quit)
 description: The q and qq commands end the debugging session.
-ms.assetid: 94d35997-8b21-4d25-b2ae-4b2a78240153
 keywords: ["q, qq (Quit) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,8 +50,7 @@ qq
 
  
 
-Remarks
--------
+## Remarks
 
 In user-mode debugging, the **q** command ends the debugging session and closes the target application.
 

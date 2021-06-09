@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfrefhist
 description: The wudfext.wudfrefhist extension displays the reference count stack history for a UMDF object.
-ms.assetid: 8999f525-c6ed-4341-be2c-b0debef23a4b
 keywords: ["wudfext.wudfrefhist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,8 +37,7 @@ Wudfext.dll
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!wudfext.wudfrefhist** command is not supported by UMDF 1.11.
 

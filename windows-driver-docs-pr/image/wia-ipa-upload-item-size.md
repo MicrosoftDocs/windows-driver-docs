@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_UPLOAD\_ITEM\_SIZE
 description: The WIA\_IPA\_UPLOAD\_ITEM\_SIZE property is used by applications to specify the number of bytes to upload for an item. The application creates and maintains this property.
-ms.assetid: 17f57277-0112-4a85-9d8b-66ae562a7b03
 keywords: ["WIA_IPA_UPLOAD_ITEM_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

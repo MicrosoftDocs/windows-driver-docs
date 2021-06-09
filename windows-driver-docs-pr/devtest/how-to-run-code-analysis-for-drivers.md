@@ -1,7 +1,6 @@
 ---
 title: How to run Code Analysis for drivers
 description: Code Analysis for Drivers provides information about possible defects in the source code. You can run code analysis manually, and you can also run code analysis automatically with each build.
-ms.assetid: BDD4EC2C-FB23-44BE-9A52-F98774AC7268
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -70,7 +69,7 @@ In some cases, you might want to suppress the report of a particular warning mes
 
 In user-mode and kernel-mode code, stack space is limited, and failure to commit a page of stack causes a stack overflow exception. High stack usage is particularly a concern in kernel mode because the total stack space available is only 12 KB. Kernel-mode code should aggressively limit stack use.
 
-The Code Analysis tool issues warning [C6262](https://go.microsoft.com/fwlink/p/?linkid=321750) if more than 1 KB of stack space is used locally in a function. If you want to investigate functions that might potentially be resource intensive, you can customize or lower the stack threshold limit used by [C6262](https://go.microsoft.com/fwlink/p/?linkid=321750). If you lower the stack threshold limit, the Code Analysis tool can potentially find more problems. You can then choose to address those stack usage issues. For example, you could lower the threshold to 400 bytes, to see if other functions are using resources.
+The Code Analysis tool issues warning [C6262](/cpp/code-quality/c6262) if more than 1 KB of stack space is used locally in a function. If you want to investigate functions that might potentially be resource intensive, you can customize or lower the stack threshold limit used by [C6262](/cpp/code-quality/c6262). If you lower the stack threshold limit, the Code Analysis tool can potentially find more problems. You can then choose to address those stack usage issues. For example, you could lower the threshold to 400 bytes, to see if other functions are using resources.
 
 ### To customize the stacksize limit for C6262
 

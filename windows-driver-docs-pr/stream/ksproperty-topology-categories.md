@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGY\_CATEGORIES
 description: The KSPROPERTY\_TOPOLOGY\_CATEGORIES property queries for the array of functional categories that a driver supports.
-ms.assetid: 35a293a1-f8fe-44da-a50b-a4429e369567
 keywords: ["KSPROPERTY_TOPOLOGY_CATEGORIES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,18 +46,17 @@ The KSPROPERTY\_TOPOLOGY\_CATEGORIES property queries for the array of functiona
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a>, followed by a sequence of GUIDs</p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a>, followed by a sequence of GUIDs</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
-This property returns a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure, followed by a sequence of GUIDs representing the possible functional categories the KS filter supports. Microsoft provides standard categories in *ks.h* and *ksmedia.h*. The following is a list of the functional categories that are not technology-specific:
+This property returns a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure, followed by a sequence of GUIDs representing the possible functional categories the KS filter supports. Microsoft provides standard categories in *ks.h* and *ksmedia.h*. The following is a list of the functional categories that are not technology-specific:
 
 <table>
 <colgroup>
@@ -129,8 +127,7 @@ COMMUNICATIONSTRANSFORM</td>
 
 Topology categories correspond to device interface classes.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -148,18 +145,9 @@ Requirements
 ## See also
 
 
-[**KSTOPOLOGY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstopology)
+[**KSTOPOLOGY**](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
-[**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
-
- 
-
- 
-
-
-
-
-
+[**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 

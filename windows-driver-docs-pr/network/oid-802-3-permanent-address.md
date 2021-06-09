@@ -1,7 +1,6 @@
 ---
 title: OID_802_3_PERMANENT_ADDRESS
 description: OID_802_3_PERMANENT_ADDRESS
-ms.assetid: 97d83c17-d98f-41c1-b1fd-44327b72f178
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_PERMANENT_ADDRESS Network Drivers Starting with Windows Vista
@@ -16,8 +15,7 @@ ms.localizationpriority: medium
 
 The address of the NIC encoded in the hardware.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

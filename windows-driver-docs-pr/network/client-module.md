@@ -1,7 +1,6 @@
 ---
 title: Client Module
 description: Client Module
-ms.assetid: 73529a39-a6b3-4db7-9695-04634c4772de
 keywords:
 - client modules WDK Network Module Registrar , defined
 ms.date: 04/20/2017

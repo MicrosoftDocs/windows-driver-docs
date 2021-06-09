@@ -1,7 +1,6 @@
 ---
 title: CPUStress Tests (Device Fundamentals)
 description: The CpuStress tests perform device I/O testing with different processor utilization levels.
-ms.assetid: E546C3A3-89E6-450B-90D3-4F349A3EC495
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ The CpuStress tests perform device I/O testing with different processor utilizat
 <td align="left"><p>This test does device I/O testing while alternating between high (HPU) and low (LPU) processor utilization levels.</p>
 <p><strong>Test binary:</strong> Devfund_ProcUtil_PingPong_With_IO.wsc</p>
 <p><strong>Test method:</strong> Device_IO_With_Varying_ProcUtil</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>PingPongPeriod</em></p>
 <p><em>HPU</em></p>
@@ -43,7 +42,7 @@ The CpuStress tests perform device I/O testing with different processor utilizat
 <td align="left"><p>This test does device I/O testing with the processor utilization (PU) level set to a fixed percentage.</p>
 <p><strong>Test binary:</strong> Devfund_ProcUtil_PingPong_With_IO.wsc</p>
 <p><strong>Test method:</strong> Device_IO_With_Fixed_ProcUtil</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p>
 <p><em>PU</em></p></td>
@@ -53,7 +52,7 @@ The CpuStress tests perform device I/O testing with different processor utilizat
 <td align="left"><p>This test does device PNP testing with the processor utilization (PU) level set to a fixed percentage.</p>
 <p><strong>Test binary:</strong> Devfund_ProcUtil_PingPong_With_IO.wsc</p>
 <p><strong>Test method:</strong> Device_PNP_With_Fixed_ProcUtil</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>PU</em></p></td>
@@ -63,7 +62,7 @@ The CpuStress tests perform device I/O testing with different processor utilizat
 <td align="left"><p>This test cycles the system through various sleep states with the processor utilization level set to a fixed percentage.</p>
 <p><strong>Test binary:</strong> Devfund_ProcUtil_PingPong_With_IO.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_Fixed_ProcUtil</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>TestCycles</em></p>
 <p><em>PU</em></p></td>
 </tr>
@@ -75,24 +74,15 @@ The CpuStress tests perform device I/O testing with different processor utilizat
 ## <span id="related_topics"></span>Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)
+[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)
+[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)
-
- 
-
- 
-
-
-
-
-
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
 

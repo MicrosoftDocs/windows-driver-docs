@@ -1,7 +1,6 @@
 ---
 title: Device Console (DevCon.exe) Commands
 description: DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
-ms.assetid: b397c407-db1f-4e2a-8beb-4fe989bd06e0
 keywords:
 - Device Console (DevCon.exe) Commands Driver Development Tools
 topic_type:
@@ -11,7 +10,7 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Device Console (DevCon.exe) Commands
@@ -114,7 +113,7 @@ The parameters must appear in the specified order. For example, to display help 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-Many DevCon operations require the hardware ID of the device. To create a list of the hardware IDs of all devices on the computer for use in subsequent DevCon operations, begin with a [**DevCon HwIDs**](devcon-hwids.md) command. For more information, see [Hardware IDs](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids) and [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
+Many DevCon operations require the hardware ID of the device. To create a list of the hardware IDs of all devices on the computer for use in subsequent DevCon operations, begin with a [**DevCon HwIDs**](devcon-hwids.md) command. For more information, see [Hardware IDs](../install/hardware-ids.md) and [Device Identification Strings](../install/device-identification-strings.md).
 
 ### <span id="ddk_devcon_search_logic_tools"></span><span id="DDK_DEVCON_SEARCH_LOGIC_TOOLS"></span>How DevCon searches for devices
 
@@ -182,10 +181,4 @@ The following table lists and describes the return codes.
  
 
  
-
- 
-
-
-
-
 

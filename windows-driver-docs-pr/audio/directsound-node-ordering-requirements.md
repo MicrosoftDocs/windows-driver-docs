@@ -1,7 +1,6 @@
 ---
 title: DirectSound Node-Ordering Requirements
 description: DirectSound Node-Ordering Requirements
-ms.assetid: baca55f5-c669-4bd2-82b5-3985030864f2
 keywords:
 - hardware acceleration WDK DirectSound , node-ordering requirements
 - node-ordering requirements WDK DirectSound
@@ -23,17 +22,17 @@ ms.localizationpriority: medium
 
 A DirectSound 2D or 3D mixer pin should have a node chain that contains the following sequence of nodes:
 
--   Volume node (See [**KSNODETYPE\_VOLUME**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-volume).)
+-   Volume node (See [**KSNODETYPE\_VOLUME**](./ksnodetype-volume.md).)
 
--   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-3d-effects).)
+-   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](./ksnodetype-3d-effects.md).)
 
--   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-supermix).)
+-   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](./ksnodetype-supermix.md).)
 
 -   Volume node (for panning effects)
 
--   SRC node (See [**KSNODETYPE\_SRC**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-src).)
+-   SRC node (See [**KSNODETYPE\_SRC**](./ksnodetype-src.md).)
 
--   SUM node (See [**KSNODETYPE\_SUM**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-sum).)
+-   SUM node (See [**KSNODETYPE\_SUM**](./ksnodetype-sum.md).)
 
 The nodes in this list appear in the order in which they are encountered by data streaming into the pin. Other nodes can be interleaved between these nodes without causing problems, provided that the above ordering is preserved.
 
@@ -58,9 +57,4 @@ The optional 3D node is required to manage hardware-accelerated 3D effects (see 
 The input stream to the 3D node typically contains a single channel. In DirectSound 8.0 and later, only mono PCM buffers can be created with 3D effects. Earlier versions of DirectSound, however, support 3D nodes with both mono and stereo input streams, and drivers should support both to ensure compatibility with older applications.
 
  
-
- 
-
-
-
 

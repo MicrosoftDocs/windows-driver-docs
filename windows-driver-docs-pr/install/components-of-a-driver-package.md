@@ -1,7 +1,6 @@
 ---
 title: Components of a Driver Package
 description: Components of a Driver Package
-ms.assetid: 3e09b17f-9a62-43fd-be00-29fe2e6140c5
 keywords:
 - components WDK
 - driver packages WDK , components
@@ -58,21 +57,12 @@ In addition to the device and the driver, a driver package also contains one or 
 
     A driver catalog file contains a cryptographic hash of each file in the driver package. Windows uses these hashes to verify that the package was not altered after it was published. To ensure that the catalog file is not altered, it should be [digitally signed](digital-signatures.md).
 
-    For information about how to sign drivers, see [Signing Drivers for Public Release](signing-drivers-for-public-release.md) and [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
+    For information about how to sign drivers, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md) and [Signing Drivers during Development and Test](./introduction-to-test-signing.md).
 
 ### Other Files
 
 A driver package can also contain other files, such as a device installation application, a device icon, device property pages, and so forth. For more information, see the following topics:
 
-[Providing Device Property Pages](providing-device-property-pages.md)
+[Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md)
 
 [Installing a Boot-Start Driver](installing-a-boot-start-driver.md)
-
- 
-
- 
-
-
-
-
-

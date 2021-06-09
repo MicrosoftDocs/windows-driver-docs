@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_PICTURES\_TAKEN
 description: The WIA\_DPC\_PICTURES\_TAKEN property contains the number of pictures that a camera has taken. The WIA minidriver creates and maintains this property.
-ms.assetid: 594ec2e1-460f-4c80-9251-45631e6ff3cf
 keywords: ["WIA_DPC_PICTURES_TAKEN Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

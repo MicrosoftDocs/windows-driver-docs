@@ -1,7 +1,6 @@
 ---
 title: CancelJobResponse element
 description: The required CancelJobResponse operation element acknowledges a client's job cancelation request.
-ms.assetid: 754b6cf0-3581-4530-9ad6-6b3a19b540f1
 keywords: ["CancelJobResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,21 +17,18 @@ ms.localizationpriority: medium
 
 The required **CancelJobResponse** operation element acknowledges a client's job cancelation request.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CancelJobResponse />
 </wscn:CancelJobResponse />
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -46,8 +42,7 @@ There are no child elements.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 [**CancelJobRequest**](canceljobrequest.md)
 

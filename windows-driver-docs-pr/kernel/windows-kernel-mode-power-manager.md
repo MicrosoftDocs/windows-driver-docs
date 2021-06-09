@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Power Manager
 description: Windows Kernel-Mode Power Manager
-ms.assetid: 2d39e43a-63a6-4474-a1ed-c24b4526a3f5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -29,18 +28,13 @@ The power manager handles these requests using IRPs. For more information about 
 
 The power manager works in combination with policy management to handle power management and coordinate power events, and then generates power management IRPs. The power manager collects requests to change the power state, decides which order the devices must have their power state changed, and then send the appropriate IRPs to tell the appropriate drivers to make the changes (which in turn may tell subdevices to make the change as well). The policy manager monitors activity in the system and integrates user status, application status, and device driver status into power policy.
 
-For more detailed information about power management, see [Power Management for Windows Drivers](implementing-power-management.md).
+For more detailed information about power management, see [Power Management for Windows Drivers](./introduction-to-power-management.md).
 
 The power manager is considered a subcomponent of the I/O manager. For more information, see [Windows I/O Manager](windows-kernel-mode-i-o-manager.md).
 
-Routines that provide a direct interface to the power manager are usually prefixed with "**Po**"; for example, **PoSetPowerState**. For a list of power manager routines, see [Power Manager Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+Routines that provide a direct interface to the power manager are usually prefixed with "**Po**"; for example, **PoSetPowerState**. For a list of power manager routines, see [Power Manager Routines](/windows-hardware/drivers/ddi/_kernel/#power-management-routines).
 
-The Windows Driver Frameworks (WDF) provides a set of libraries to make power management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://docs.microsoft.com/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers).
-
- 
+The Windows Driver Frameworks (WDF) provides a set of libraries to make power management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](../wdf/index.md).
 
  
-
-
-
 

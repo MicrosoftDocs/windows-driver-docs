@@ -1,7 +1,6 @@
 ---
 title: XPS Printer Driver (XPSDrv)
 description: XPSDrv is an enhanced, GDI-based Version 3 printer driver that was used prior to Windows Vista.
-ms.assetid: 7567c514-3034-4db0-9622-31d14eb3772e
 keywords:
 - printer drivers WDK , XPSDrv printer drivers
 - XPSDrv printer drivers WDK

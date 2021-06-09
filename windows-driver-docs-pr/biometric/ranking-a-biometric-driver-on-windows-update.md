@@ -1,7 +1,6 @@
 ---
 title: Ranking a Biometric Driver on Windows Update
 description: Ranking a Biometric Driver on Windows Update
-ms.assetid: fc8634ab-0ecd-4390-9834-825f60fe68ce
 keywords:
 - biometric drivers WDK , ranking on Windows Update
 - ranking biometric drivers WDK biometric
@@ -33,7 +32,7 @@ Lower feature numbers indicates better matches. The default feature score is 0xF
 
 Microsoft recommends a feature score of 0xa0 for legacy biometric drivers. The feature score should never be set to 0x00, in case there is a need to override it later.
 
-The feature score for a driver is set by an INF FeatureScore directive in the [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) for the device.
+The feature score for a driver is set by an INF FeatureScore directive in the [**INF DDInstall Section**](../install/inf-ddinstall-section.md) for the device.
 
 For example, the following code sets the feature score of a driver to 0x20:
 
@@ -43,4 +42,4 @@ For example, the following code sets the feature score of a driver to 0x20:
 FeatureScore=x20
 ```
 
-For more information about how to set the feature score on drivers, see [Feature Score](https://docs.microsoft.com/windows-hardware/drivers/install/feature-score--windows-vista-and-later-).
+For more information about how to set the feature score on drivers, see [Feature Score](../install/feature-score--windows-vista-and-later-.md).

@@ -1,7 +1,6 @@
 ---
 title: Device Metadata Store
 description: Device Metadata Store
-ms.assetid: 59af6173-28f3-44f5-874e-305bf570d683
 keywords:
 - device metadata store WDK
 ms.date: 04/20/2017

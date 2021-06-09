@@ -1,7 +1,6 @@
 ---
 title: SetupAPI Logging Registry Settings
 description: SetupAPI Logging Registry Settings
-ms.assetid: 24694bce-5941-479f-9e2d-f9c7577a4f6a
 keywords:
 - SetupAPI logging WDK Windows Vista , registry settings
 - registry WDK SetupAPI logging

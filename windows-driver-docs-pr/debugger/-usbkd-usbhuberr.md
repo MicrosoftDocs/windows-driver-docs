@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhuberr
 description: The usbkd.usbhuberr command displays a USB hub error record.
-ms.assetid: 5BB87FA2-0531-400C-95B3-325EE4DDB649
 keywords: ["usbkd.usbhuberr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,8 +32,7 @@ Address of a **usbhub!\_HUB\_EXCEPTION\_RECORD** structure.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbhub!\_HUB\_EXCEPTION\_RECORD**. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
@@ -83,14 +81,7 @@ In the preceding output, `ffffe000011f8498` is the address of the exception list
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

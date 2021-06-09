@@ -1,7 +1,6 @@
 ---
 title: rpcexts.rpctime
 description: The rpcexts.rpctime extension displays the current system time.
-ms.assetid: 72d54357-6b16-4d53-9909-ba201bb33519
 keywords: ["rpcexts.rpctime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,8 +45,7 @@ The **!rpcexts.rpctime** extension displays the current system time.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg.
 

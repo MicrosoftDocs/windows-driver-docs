@@ -1,7 +1,6 @@
 ---
 title: Compiling an NDIS 6.40 driver
 description: This section explains how to compile an NDIS 6.40 driver
-ms.assetid: AF027939-06C7-435C-90D9-82272CED6A84
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,15 +16,9 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 -   For a filter or protocol driver, add NDIS640=1.
 
-For information on building a driver with the Windows 8.1 release of the WDK, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+For information on building a driver with the Windows 8.1 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://docs.microsoft.com/windows-hardware/drivers).
-
- 
+For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](/windows-hardware/drivers).
 
  
-
-
-
-
 

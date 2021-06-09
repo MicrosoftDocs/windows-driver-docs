@@ -1,13 +1,11 @@
 ---
 title: How Do I Enable WPP Tracing Through the Windows Event Log Service
 description: The Windows Event Log service supports WPP logging and decoding. This topic describes how to enable WPP tracing through the Windows Event Log service.
-ms.assetid: cd5dad3e-fa25-4ec2-bc17-9332b4c00d17
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# How Do I Enable WPP Tracing Through the Windows Event Log Service?
-
+# How to Enable WPP Tracing Through the Windows Event Log Service
 
 The Windows Event Log service supports WPP logging and decoding. This topic describes how to enable WPP tracing through the Windows Event Log service.
 
@@ -17,14 +15,14 @@ For example:
 
 ```xsd
 <instrumentationManifest
-    xmlns="http://schemas.microsoft.com/win/2004/08/events" 
+    xmlns="http://schemas.microsoft.com/win/2004/08/events"
     xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema"  xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd"  
     >
    <instrumentation>
         <events>
-            <provider name="Microsoft-Windows-mySampleProvider" 
-                guid="{61CE3EC9-E5E8-4b96-A451-74631A6E0D5C}" 
+            <provider name="Microsoft-Windows-mySampleProvider"
+                guid="{61CE3EC9-E5E8-4b96-A451-74631A6E0D5C}"
                 >
           <channel
         chid="MS_WINDOWS_GE_DEBUG"
@@ -58,12 +56,3 @@ Note that the channel must first be disabled to change the keyword value.
 Declaring a channel in this manner enables both the WPP provider (whose control GUID is specified) and the Event Log provider (under which this channel is declared) to access the debug channel, so either provider can write to this channel. WPP events or normal ETW events can now be seen under this channel through the event viewer.
 
 WPP events are not decoded. To get message strings associated with these events, place the TMF files in the %windir%\\System32\\winevt\\TraceFormat directory. You can get the TMF files by using a utility such as Tracepdb.exe, which takes the PDB file for input and returns TMF files.
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Composite Template Data Types
 description: Composite Template Data Types
-ms.assetid: 5fd9218a-2827-4cca-b913-eeb6484653d9
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , compound
@@ -12,12 +11,11 @@ keywords:
 - ElementTags directive WDK GDL
 - ArraySize directive WDK GDL
 - ArrayLabel directive WDK GDL
-ms.date: 04/20/2017
+ms.date: 06/09/2020
 ms.localizationpriority: medium
 ---
 
 # Composite Template Data Types
-
 
 A COMPOSITE data type consists of one or more values that have the same or different data types. Composites can have a fixed or variable (but not indefinite) length. This data type is similar to the C lLanguage structure data type.
 
@@ -27,23 +25,23 @@ If the COMPOSITE is itself a member of another compound data type, an element wi
 
 The following directives are used to define the COMPOSITE data type:
 
--   **\*ElementType** (Required). The name of the template that defines the data types of each of the elements. One data type must be specified for each element. One or more elements can have the same data type. The number of ElementTypes that are provided should equal the ArraySize or Max value that **\*ArraySize** specifies.
+- **\*ElementType** (Required). The name of the template that defines the data types of each of the elements. One data type must be specified for each element. One or more elements can have the same data type. The number of ElementTypes that are provided should equal the ArraySize or Max value that **\*ArraySize** specifies.
 
--   **\*RequiredDelimiter** (Required). A string that will syntactically separate each COMPOSITE element from the next. Two consecutive delimiters will be interpreted as an omitted element. Delimiters are not needed to indicate the omission of trailing elements.
+- **\*RequiredDelimiter** (Required). A string that will syntactically separate each COMPOSITE element from the next. Two consecutive delimiters will be interpreted as an omitted element. Delimiters are not needed to indicate the omission of trailing elements.
 
     You should be very careful if you use whitespace as the delimiter or as part of the delimiter string. For example, the parser will interpret extraneous space characters as indicating omitted elements; and because you might not see extra whitespace, strange parsing errors might occur. Also, excess whitespace is routinely stripped from the source file and whitespace is often added to the input stream as a result of preprocessor, macro, and comment processing. Thus, the actual string that is parsed might have a completely different number of space characters than originally specified. You should not use tab characters as part of the required delimiter string because they are routinely converted to space characters during input processing.
 
--   **\*OptionalDelimiter** (Optional). Any string that consists of characters that are specified in **\*OptionalDelimiter** that appears adjacent to the **\*RequiredDelimiter** string will be considered part of the delimiter.
+- **\*OptionalDelimiter** (Optional). Any string that consists of characters that are specified in **\*OptionalDelimiter** that appears adjacent to the **\*RequiredDelimiter** string will be considered part of the delimiter.
 
--   **\*ElementTags** (Required). The number of tags that are provided should equal the ArraySize or Max value that **\*ArraySize** specifies. Each member will be tagged with the corresponding tag. This tagging is useful if one or more elements are omitted. When COMPOSITE elements are omitted, the tag that corresponds to the omitted element is not used. To avoid confusing the client, do not use GDL snapshot reserved element names as tag names. These reserved names are CONSTRUCT, ATTRIBUTE, and Personality.
+- **\*ElementTags** (Required). The number of tags that are provided should equal the ArraySize or Max value that **\*ArraySize** specifies. Each member will be tagged with the corresponding tag. This tagging is useful if one or more elements are omitted. When COMPOSITE elements are omitted, the tag that corresponds to the omitted element is not used. To avoid confusing the client, do not use GDL snapshot reserved element names as tag names. These reserved names are CONSTRUCT, ATTRIBUTE, and Personality.
 
--   **\*ArraySize** (Optional). If this directive is omitted, a fixed-size COMPOSITE will be assumed. The size will be equal to the number of templates names in **\*ElementType**.
+- **\*ArraySize** (Optional). If this directive is omitted, a fixed-size COMPOSITE will be assumed. The size will be equal to the number of templates names in **\*ElementType**.
 
     Use two integers to specify the minimum and maximum allowed size for a variable-sized COMPOSITE. Note that zero is allowed for the minimum size. Unlimited-sized COMPOSITE data types are not allowed. You cannot use the GPD wildcard character (\*) to specify the size or maximum size.
 
--   **\*ArrayLabel** (Optional). If this directive is specified, the list of COMPOSITE elements must be enclosed by parentheses and be prefaced by the **\*ArrayLabel** label. If no label is specified in this directive, the parenthesis are optional, and no prefacing label is allowed.
+- **\*ArrayLabel** (Optional). If this directive is specified, the list of COMPOSITE elements must be enclosed by parentheses and be prefaced by the **\*ArrayLabel** label. If no label is specified in this directive, the parenthesis are optional, and no prefacing label is allowed.
 
-Consider he following template.
+Consider the following template.
 
 ```cpp
 *Template:  QUALNAME_EX
@@ -81,7 +79,7 @@ And consider the following GDL entry.
 Or consider the following GDL entry that does not have the optional parentheses.
 
 ```cpp
-*rcNameID:     RESDLL.stdname.467 
+*rcNameID:     RESDLL.stdname.467
 ```
 
 Assume that the GDL entry is interpreted by using the following RC\_NAME\_ID template.
@@ -108,7 +106,7 @@ The resulting XML output will be as follows.
 
 The following example shows nested compound data types by using an INTERVAL data type that holds a pair of DATE data types, which represent a time interval. Each DATE data type is a COMPOSITE of a MONTH, DAY, and YEAR data type. The INTERVAL data type is used by the VACATION GDL attribute to express a time period that an employee might be absent. The following collection of templates would accomplish this situation.
 
-### Month Template
+## Month Template
 
 ```cpp
 *Template:  MONTHS
@@ -120,7 +118,7 @@ The following example shows nested compound data types by using an INTERVAL data
 }
 ```
 
-### Day Template
+## Day Template
 
 ```cpp
 *Template:  DAY
@@ -131,7 +129,7 @@ The following example shows nested compound data types by using an INTERVAL data
 }
 ```
 
-### Year Template
+## Year Template
 
 ```cpp
 *Template:  YEAR
@@ -142,7 +140,7 @@ The following example shows nested compound data types by using an INTERVAL data
 }
 ```
 
-### Date Template
+## Date Template
 
 ```cpp
 *Template:  DATE
@@ -155,7 +153,7 @@ The following example shows nested compound data types by using an INTERVAL data
 }
 ```
 
-### Interval Template
+## Interval Template
 
 ```cpp
 *Template:  INTERVAL
@@ -170,7 +168,7 @@ The following example shows nested compound data types by using an INTERVAL data
 }
 ```
 
-### Vacation Template
+## Vacation Template
 
 ```cpp
 *Template:  VACATION
@@ -203,11 +201,3 @@ If this GDL entry is interpreted by using the VACATION template, the resulting X
         </end_date>
     </GDL_ATTRIBUTE>
 ```
-
- 
-
- 
-
-
-
-

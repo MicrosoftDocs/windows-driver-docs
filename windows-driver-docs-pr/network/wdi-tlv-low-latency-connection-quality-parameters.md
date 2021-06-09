@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS
 description: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS is a TLV that contains low latency connection quality parameters.
-ms.assetid: F6C26267-AC6F-4810-913B-46DA99498BE2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS Network Drivers Starting with Windows Vista
@@ -29,12 +28,11 @@ The size (in bytes) of the array of all contained elements.
 | Type  | Description                                                                                                                                                                                                                                                                            |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8 | Specifies the maximum number of milliseconds that the port can be on a different channel during Active Scan or other multi-channel operations. The only instance in which this off-channel can be higher is if the adapter needs to do a passive scan.                                 |
-| UINT8 | Specifies the link quality threshold for [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-roaming-needed). When the link quality is below this threshold, it is acceptable for the adapter to send NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED. |
+| UINT8 | Specifies the link quality threshold for [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](./ndis-status-wdi-indication-roaming-needed.md). When the link quality is below this threshold, it is acceptable for the adapter to send NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -60,14 +58,9 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_CONNECTION\_QUALITY](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-connection-quality)
+[OID\_WDI\_SET\_CONNECTION\_QUALITY](./oid-wdi-set-connection-quality.md)
 
-[NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-roaming-needed)
-
- 
+[NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](./ndis-status-wdi-indication-roaming-needed.md)
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: for_each_frame
 description: The for_each_frame extension executes a debugger command one time for each frame in the stack of the current thread.
-ms.assetid: 7294dc5e-190f-486f-9079-1fb28d6d484b
 keywords: ["for_each_frame Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
 For more information about the local context, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!for\_each\_frame** extension displays a list of all frames and their frame indexes. For a more detailed list of all frames, use the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 

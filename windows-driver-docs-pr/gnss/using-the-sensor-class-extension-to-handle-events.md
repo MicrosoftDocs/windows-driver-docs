@@ -1,7 +1,6 @@
 ---
 title: Using the sensor class extension to handle events
 description: The sensor class extension handles the event-linkage between a sensor driver and the Sensor API.
-ms.assetid: A49489EF-1721-4F12-9793-6FBA76BA7976
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

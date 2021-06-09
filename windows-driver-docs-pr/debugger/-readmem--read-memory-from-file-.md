@@ -1,7 +1,6 @@
 ---
 title: .readmem (Read Memory from File)
 description: The .readmem command reads raw binary data from the specified file and copies the data to the target computer's memory.
-ms.assetid: 128cbea1-5fb5-4685-8587-f814f94cc658
 keywords: [".readmem (Read Memory from File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ Specifies the address range for putting the data in memory. This parameter can c
 
  
 
-Remarks
--------
+## Remarks
 
 The memory data is copied literally to the target computer. The debugger does not parse the data in any way. For example, the **.readmem myfile 1000 10** command copies 10 bytes from the Myfile file and stores them in the target computer's memory, starting at address 1000.
 

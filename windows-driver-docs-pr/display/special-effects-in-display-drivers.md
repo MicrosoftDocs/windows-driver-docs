@@ -1,7 +1,6 @@
 ---
 title: Special Effects in Display Drivers
 description: Special Effects in Display Drivers
-ms.assetid: f44a89df-6412-442c-8491-3e2f2bbd826f
 keywords:
 - display drivers WDK Windows 2000 , special effects
 - special effects WDK Windows 2000 display
@@ -26,15 +25,15 @@ ms.localizationpriority: medium
 
 Windows 2000 and later operating system versions support the following special effects:
 
--   If the display hardware supports alpha blending, the display driver can implement [**DrvAlphaBlend**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvalphablend).
+-   If the display hardware supports alpha blending, the display driver can implement [**DrvAlphaBlend**](/windows/win32/api/winddi/nf-winddi-drvalphablend).
 
--   If the display hardware supports gradient fills, the display driver should implement [**DrvGradientFill**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgradientfill).
+-   If the display hardware supports gradient fills, the display driver should implement [**DrvGradientFill**](/windows/win32/api/winddi/nf-winddi-drvgradientfill).
 
 ### <span id="Alpha_Blending"></span><span id="alpha_blending"></span><span id="ALPHA_BLENDING"></span>Alpha Blending
 
 The Microsoft Windows 2000 (and later) Shell uses alpha blending extensively to perform operations such as *blend-in* and *blend-out animations* and *alpha cursors*. Because alpha blend operations require reading from both the source and destination surfaces, it is very slow to punt to GDI when either the source or destination is in video memory. Consequently, hardware accelerations in the driver will yield visibly smoother animations and improve overall system performance.
 
-Drivers should implement **DrvAlphaBlend**, provided that no seam is ever visible.
+Drivers should implement [**DrvAlphaBlend**](/windows/win32/api/winddi/nf-winddi-drvalphablend) for *bit-block transfers* from compatible bitmaps using a constant alpha, and from 32 bpp BGRA system-memory surfaces with per-pixel alpha values. *DrvAlphaBlend* can be implemented using *triangle texture fills*, provided that no seam is ever visible.
 
 The worst-case error produced by *DrvAlphaBlend* should not exceed one (1) per color channel. When stretching is involved, the source should be COLORONCOLOR-stretched (see the Windows SDK documentation) prior to blending; the worst-case error should not exceed one (1) per color channel combined with the worst-case stretching error.
 
@@ -54,7 +53,7 @@ The worst-case stretching error is the largest difference in color value between
 
 The Windows 2000 (and later) Shell uses *gradient fills* on all caption bars.
 
-The results produced by [**DrvGradientFill**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgradientfill) depend on the number of bits per pixel, and must satisfy the following guidelines:
+The results produced by [**DrvGradientFill**](/windows/win32/api/winddi/nf-winddi-drvgradientfill) depend on the number of bits per pixel, and must satisfy the following guidelines:
 
 ### <span id="_24_bpp_or_32_bpp_surfaces"></span><span id="_24_BPP_OR_32_BPP_SURFACES"></span>24-bpp or 32-bpp surfaces
 
@@ -76,12 +75,4 @@ The worst-case error in any channel cannot exceed Â±15.
 No error is permitted in gradient fills for any of these surfaces. For an 8-bpp surface, GDI does not call the driver's *DrvGradientFill* function.
 
 Note that in all surfaces, clipping does not affect results.
-
- 
-
- 
-
-
-
-
 

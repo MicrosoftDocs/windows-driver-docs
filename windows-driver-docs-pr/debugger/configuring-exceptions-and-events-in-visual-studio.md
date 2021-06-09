@@ -1,7 +1,6 @@
 ---
 title: Configuring Exceptions and Events in Visual Studio
 description: You can configure the Windows Debugger to react to specified exceptions and events in a pre-determined way. For each exception, you can set the break status and the handling status. 
-ms.assetid: 531CFE28-B0DA-4B6D-896F-C8F678C7FE00
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 You can configure the Windows Debugger to react to specified exceptions and events in a pre-determined way. For each exception, you can set the break status and the handling status. For each event, you can set the break status.
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](../index.yml).
 
 You can configure the break status or the handling status by entering the following commands in the Debugger Immediate Window. If the Debugger Immediate Window is not already open, from the **Debug** menu, choose **Windows&gt;Immediate**.
 
@@ -28,10 +27,4 @@ You can configure the break status or the handling status by entering the follow
 For a detailed discussion of exceptions and events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
  
-
- 
-
-
-
-
 

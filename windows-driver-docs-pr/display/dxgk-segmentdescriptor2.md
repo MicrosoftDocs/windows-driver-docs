@@ -1,7 +1,6 @@
 ---
 title: DXGK\_SEGMENTDESCRIPTOR2 structure
 description: The DXGK\_SEGMENTDESCRIPTOR2 structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 94eb1c9a-919c-4819-848b-29106e216980
 keywords: ["DXGK_SEGMENTDESCRIPTOR2 structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_SEGMENTDESCRIPTOR2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_SEGMENTDESCRIPTOR2 {
@@ -33,8 +31,7 @@ typedef struct _DXGK_SEGMENTDESCRIPTOR2 {
 } DXGK_SEGMENTDESCRIPTOR2;
 ```
 
-Members
--------
+## Members
 
 **Flags**
 Reserved for system use.
@@ -51,8 +48,7 @@ Reserved for system use.
 **CpuTranslatedAddress**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

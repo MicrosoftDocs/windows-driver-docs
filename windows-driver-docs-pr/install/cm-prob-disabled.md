@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_DISABLED
 description: CM_PROB_DISABLED
-ms.assetid: 9289743f-312f-4728-806e-dbe0e25b13fa
 keywords:
 - CM_PROB_DISABLED
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DISABLED
+# Code 22 - CM_PROB_DISABLED
 
-This function is reserved for system use.
-
-The device is disabled.
+This Device Manager error message indicates that the device is disabled.
 
 ## Error Code
 

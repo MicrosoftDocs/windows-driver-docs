@@ -1,7 +1,6 @@
 ---
 title: Using Debugger Extension Commands
 description: Using Debugger Extension Commands
-ms.assetid: 1db9a835-accb-41b9-9ab1-c4c9f0596aa5
 keywords: ["extension commands ( commands), using", "extension commands ( commands), default search order"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -33,7 +32,7 @@ The default search order is as follows:
 
 1.  The extension modules that work with all operating systems and in both modes: Dbghelp.dll and winext\\ext.dll.
 
-2.  The extension module that works in all modes but is operating-system-specific. For Windows XP and later versions of Windows, this is winxp\\exts.dll. There is no corresponding module for Windows 2000.
+2.  The extension module that works in all modes but is operating-system-specific. For Windows XP and later versions of Windows, this is winxp\\exts.dll. 
 
 3.  The extension module that works with all operating systems but is mode-specific. For kernel mode, this is winext\\kext.dll. For user mode, this is winext\\uext.dll.
 

@@ -1,7 +1,6 @@
 ---
 title: Understanding TYMED
 description: Understanding TYMED
-ms.assetid: 36110923-c346-4367-8b7d-ef4d003ed88c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-TYMED specifies the type of data transfer. The value of this member is derived from the [**WIA\_IPA\_TYMED**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-tymed) common item property. The data transfer specified can be either a memory-callback transfer or a file transfer. See the Microsoft Windows SDK documentation for more information about the TYMED\_XXX constants.
+TYMED specifies the type of data transfer. The value of this member is derived from the [**WIA\_IPA\_TYMED**](./wia-ipa-tymed.md) common item property. The data transfer specified can be either a memory-callback transfer or a file transfer. See the Microsoft Windows SDK documentation for more information about the TYMED\_XXX constants.
 
 ### File Transfer TYMED
 
@@ -35,9 +34,4 @@ Indicates one buffer containing a single image or multiple images separated by I
 Indicates one buffer containing multiple images separated by IT\_MSG\_NEW\_PAGE messages. This results in a single file containing multiple images. This is used primarily in document feeder acquisition.
 
  
-
- 
-
-
-
 

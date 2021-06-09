@@ -1,7 +1,6 @@
 ---
 title: .cache (Set Cache Size)
 description: The .cache command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
-ms.assetid: 638cb2e6-b333-4311-967c-d86c2e93b4ec
 keywords: [".cache (Set Cache Size) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -92,8 +91,7 @@ Deletes a 4096-byte block of the cache, beginning at *Address*.
 
  
 
-Remarks
--------
+## Remarks
 
 If **.cache** is used with no arguments, the current cache size, status, and options are displayed.
 

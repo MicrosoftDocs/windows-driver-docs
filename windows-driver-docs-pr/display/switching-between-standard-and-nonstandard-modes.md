@@ -1,7 +1,6 @@
 ---
 title: Switching Between Standard and Nonstandard Modes
 description: Switching Between Standard and Nonstandard Modes
-ms.assetid: 15939910-b325-47ff-b4ed-bbaeec4149bd
 keywords:
 - nonstandard display modes WDK DirectX 9.0 , switching between standard and nonstandard modes
 - switching between standard and nonstandard modes WDK DirectX 9.0
@@ -23,11 +22,11 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
 
 2.  The driver creates the standard primary surface.
 
-    The runtime calls the driver's [*DdCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) function to request the creation of the primary surface. This primary surface uses the standard display format (for example, D3DFMT\_A8B8G8R8) and has no back buffers.
+    The runtime calls the driver's [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) function to request the creation of the primary surface. This primary surface uses the standard display format (for example, D3DFMT\_A8B8G8R8) and has no back buffers.
 
 3.  The driver creates the dummy primary surface chain.
 
-    The runtime calls the driver's *DdCreateSurface* function to request the creation of the dummy primary surface. The runtime specifies the DDSCAPS2\_EXTENDEDFORMATPRIMARY (0x40000000) capability bit in the **dwCaps2** member of the [**DDSCAPS2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for this surface to indicate that the surface uses a nonstandard display mode (for example, D3DFMT\_A2R10G10B10). The runtime also specifies the DDSCAPS\_OFFSCREENPLAIN capability bit in the **dwCaps** member of DDSCAPS2 to indicate that the surface has an explicit pixel format.
+    The runtime calls the driver's *DdCreateSurface* function to request the creation of the dummy primary surface. The runtime specifies the DDSCAPS2\_EXTENDEDFORMATPRIMARY (0x40000000) capability bit in the **dwCaps2** member of the [**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for this surface to indicate that the surface uses a nonstandard display mode (for example, D3DFMT\_A2R10G10B10). The runtime also specifies the DDSCAPS\_OFFSCREENPLAIN capability bit in the **dwCaps** member of DDSCAPS2 to indicate that the surface has an explicit pixel format.
 
     Because this surface is intended to be just another name for the existing primary surface, the driver should not allocate further video memory to the surface.
 
@@ -35,11 +34,11 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
 
 4.  The driver flips the surface to the nonstandard format.
 
-    While the display device outputs the standard format, the application composes a nonstandard image in one of these back buffers. Once this image is ready for display, the runtime specifies one of the nonstandard surfaces as the target in a call to the driver's [*DdFlip*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function. The driver then reprograms the display device to output the nonstandard format.
+    While the display device outputs the standard format, the application composes a nonstandard image in one of these back buffers. Once this image is ready for display, the runtime specifies one of the nonstandard surfaces as the target in a call to the driver's [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function. The driver then reprograms the display device to output the nonstandard format.
 
 5.  The application runs.
 
-    The application generates further calls to the driver's *DdFlip* function between the nonstandard buffers, and the driver continues to display the nonstandard format. The application can also generate calls to the driver's [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function using the D3DDP2OP\_BLT operation code to copy the back buffer to the front buffer, but these calls are always made between two nonstandard surface objects. Unless the driver supports the nonstandard format in windowed mode, the driver does not process blts between nonstandard and standard surface formats. For more information about the windowed-mode case, see [Supporting Two-Dimensional Operations](supporting-two-dimensional-operations.md).
+    The application generates further calls to the driver's *DdFlip* function between the nonstandard buffers, and the driver continues to display the nonstandard format. The application can also generate calls to the driver's [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function using the D3DDP2OP\_BLT operation code to copy the back buffer to the front buffer, but these calls are always made between two nonstandard surface objects. Unless the driver supports the nonstandard format in windowed mode, the driver does not process blts between nonstandard and standard surface formats. For more information about the windowed-mode case, see [Supporting Two-Dimensional Operations](supporting-two-dimensional-operations.md).
 
 6.  The driver flips the surface back to standard format.
 
@@ -50,10 +49,4 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
     When the driver destroys the dummy surface, it should ensure that the standard format is reprogrammed in the display device.
 
  
-
- 
-
-
-
-
 

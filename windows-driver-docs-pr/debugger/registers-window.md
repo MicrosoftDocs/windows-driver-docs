@@ -1,7 +1,6 @@
 ---
 title: Viewing and Editing Registers in WinDbg
 description: In WinDbg, you can view and edit registers by entering commands, by using the Registers window, or by using the Watch Window.
-ms.assetid: bd7ced3b-7f71-4ea5-a45b-38339dc3e87c
 keywords: ["debugging information windows, Registers window", "Registers window", "registers, Registers window"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -28,7 +27,7 @@ On an x86-based processor, the **r** option also controls several one-bit regist
 
 ### <span id="Opening_the_Registers_Window"></span><span id="opening_the_registers_window"></span><span id="OPENING_THE_REGISTERS_WINDOW"></span>Opening the Registers Window
 
-To open or switch to the Registers window, choose **Registers** from the **View** menu. (You can also press ALT+4 or click the **Registers** button (![screen shot of the registers button](images/tbreg.png)) on the toolbar. ALT+SHIFT+4 closes the Registers window.)
+To open or switch to the Registers window, choose **Registers** from the **View** menu. (You can also press ALT+4 or select the **Registers** button (![screen shot of the registers button](images/tbreg.png)) on the toolbar. ALT+SHIFT+4 closes the Registers window.)
 
 The following screen shot shows an example of a Registers window.
 
@@ -51,7 +50,7 @@ In the Registers window, you can do the following:
 
 -   In kernel mode, the Registers window displays the registers that are associated with the current [register context](changing-contexts.md#register-context). You can set the register context to match a specific thread, context record, or trap frame. Only the most important registers for the specified register context are actually displayed; you cannot change their values.
 
-The Registers window has a toolbar that contains a **Customize** button and has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon near the upper-right corner of the window (![screen shot of the button icon for displaying the registers window shortcut menu](images/tbreg.png)). The toolbar and menu contain the following button and commands:
+The Registers window has a toolbar that contains a **Customize** button and has a shortcut menu with additional commands. To access the menu, select and hold (right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button icon for displaying the registers window shortcut menu](images/tbreg.png)). The toolbar and menu contain the following button and commands:
 
 -   (Toolbar and menu) **Customize** opens the **Customize Register List** dialog box, which is described in the following section within this topic.
 
@@ -73,7 +72,7 @@ The Registers window has a toolbar that contains a **Customize** button and has 
 
 ### <span id="customize_register_list_dialog_box"></span><span id="CUSTOMIZE_REGISTER_LIST_DIALOG_BOX"></span>Customize Register List Dialog Box
 
-To change the list of registers that are displayed, click the **Customize** button. The **Customize Register List** dialog box will appear.
+To change the list of registers that are displayed, select the **Customize** button. The **Customize Register List** dialog box will appear.
 
 In this dialog box, you can edit the list of registers to change the order in which registers are displayed. (You cannot actually delete a register from the list; if you do, it will reappear at the end.) There must be a space between register names.
 
@@ -81,7 +80,7 @@ If you select the **Display modified register values first** check box, the regi
 
 If you select the **Do not display subregisters** check box, subregisters are not displayed. For example, **eax** will be displayed, but not **ax**, **ah**, or **al**.
 
-Click **OK** to save your changes or **Cancel** to discard your changes.
+Select **OK** to save your changes or **Cancel** to discard your changes.
 
 If you are debugging a multi-processor computer with more than one kind of processor, WinDbg stores the customization settings for each processor type separately. This separation enables you to customize the display of each processor's registers simultaneously.
 
@@ -90,7 +89,7 @@ If you are debugging a multi-processor computer with more than one kind of proce
 
 In WinDbg, you can use the Watch window to display registers. You cannot use the Watch window to alter the values of registers.
 
-To open the Watch window, choose **Watch** from the **View** menu. You can also press ALT+2 or click the **Watch** button on the toolbar: ![screen shot of the watch button](images/tbwatch.png). ALT+SHIFT+2 closes the Watch window.
+To open the Watch window, choose **Watch** from the **View** menu. You can also press ALT+2 or select the **Watch** button on the toolbar: ![screen shot of the watch button](images/tbwatch.png). ALT+SHIFT+2 closes the Watch window.
 
 The following screen shot shows an example of a Watch window.
 

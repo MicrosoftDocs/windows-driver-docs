@@ -1,7 +1,6 @@
 ---
 title: Contrast element
 description: The optional Contrast element specifies the relative amount to reduce or enhance the contrast of the scanned document.
-ms.assetid: c40e824f-4e10-4590-a524-ff69a21a4499
 keywords: ["Contrast element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The optional **Contrast** element specifies the relative amount to reduce or enhance the contrast of the scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Contrast wscn:Override="" wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:Contrast wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -65,8 +62,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 The Contrast value must lie in the range from -1000 through 1000, inclusive.
 
@@ -94,8 +90,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Contrast** element indicates the relative amount to enhance or reduce the contrast of the scanned document. A value of 0 indicates that the WSD Scan Service should make no adjustments to the scanned contrast.
 

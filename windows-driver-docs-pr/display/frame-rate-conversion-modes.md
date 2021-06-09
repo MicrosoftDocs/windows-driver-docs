@@ -1,7 +1,6 @@
 ---
 title: Frame-Rate Conversion Modes
 description: Frame-Rate Conversion Modes
-ms.assetid: cbb609b5-6021-4f47-855d-24882533a7a0
 keywords:
 - frame-rate conversion WDK DirectX VA
 ms.date: 04/20/2017

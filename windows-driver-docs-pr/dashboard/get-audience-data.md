@@ -1,8 +1,6 @@
 ---
 title: Get audience data
 description: These methods from the Microsoft Hardware APIs get the applicable audiences for an organization to be used in a shipping label.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 08/21/2018
 ---
@@ -11,14 +9,14 @@ ms.date: 08/21/2018
 Use the following method in *Microsoft Hardware APIs* to get the audiences applicable to your organization. Audiences allow you to restrict a publication to machines with a particular configuration. As an example, a test deployment can be delivered only to clients with a particular registry key installed.
 
 ```cpp
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/audiences
 ```
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 |Description|Method|URI|
 |-|-|-|
-|Get a list of audiences applicable to your organization.|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences`|
+|Get a list of audiences applicable to your organization.|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/audiences`|
 
 ## Prerequisites
 
@@ -56,7 +54,7 @@ This method has the following syntax.
 
 |Method|Request URI|
 |--|--|
-|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/audience`|
+|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/audience`|
 
 ### Request header
 
@@ -78,7 +76,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about audiences applicable to your organization.
 
 ```cpp
-GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/audience HTTP/1.1
+GET https://manage.devcenter.microsoft.com/v2.0/my/hardware/audience HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

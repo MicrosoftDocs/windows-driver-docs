@@ -1,7 +1,6 @@
 ---
 title: GDL Exercise 1 Implementing a GDL Schema
 description: GDL Exercise 1 Implementing a GDL Schema
-ms.assetid: 0adfef5a-4211-45e9-bb65-8174822efdc5
 keywords:
 - GDL WDK , examples
 - examples WDK GDL

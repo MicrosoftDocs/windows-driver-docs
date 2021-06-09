@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS QoS for Data Center Bridging
 description: Introduction to NDIS QoS for Data Center Bridging
-ms.assetid: 777988E8-D45E-49A7-B607-5E1218B27B54
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,11 +16,11 @@ This section includes the following topics:
 
 [Overview of Data Center Bridging](overview-of-data-center-bridging.md)
 
-[Overview of NDIS QoS for Data Center Bridging](overview-of-ndis-qos-for-data-center-bridging.md)
+[Overview of NDIS QoS for Data Center Bridging](ndis-qos-for-data-center-bridging.md)
 
-[Managing NDIS QoS Capabilities](managing-ndis-qos-capabilities.md)
+[Managing NDIS QoS Capabilities](registering-ndis-qos-capabilities.md)
 
-[Managing NDIS QoS Parameters](managing-ndis-qos--parameters.md)
+[Managing NDIS QoS Parameters](overview-of-ndis-qos-parameters.md)
 
 [Standardized INF Keywords for NDIS QoS](standardized-inf-keywords-for-ndis-qos.md)
 

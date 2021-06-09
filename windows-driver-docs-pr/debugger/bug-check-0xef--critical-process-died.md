@@ -1,9 +1,8 @@
 ---
 title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died.
-ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
-keywords: ["(Developer Content) Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
-ms.date: 09/17/2018
+keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
+ms.date: 02/25/2020
 topic_type:
 - apiref
 api_name:
@@ -13,21 +12,18 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# (Developer Content) Bug Check 0xEF: CRITICAL\_PROCESS\_DIED
+# Bug Check 0xEF: CRITICAL\_PROCESS\_DIED
 
 The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died. A critical process is one that forces the system to bug check if it terminates. This can happen when the state of the process is corrupted or otherwise is damaged. When this happens, as these processes are critical to the operation of Windows, a system bug check occurs as the operating system integrity is in question. 
 
-Built in Windows critical system services include csrss.exe, wininit.exe, logonui.exe, smss.exe, services.exe, conhost.exe, and winlogon.exe. 
+Built in Windows critical system services include csrss.exe, wininit.exe, logonui.exe, smss.exe, services.exe, conhost.exe, and winlogon.exe.
 
-A developer can also create a service and set its recovery option to Restart the Computer for more information see [Set up Recovery Actions to Take Place When a Service Fails](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
-
+A developer can also create a service and set its recovery option to Restart the Computer, for more information see [Set up Recovery Actions to Take Place When a Service Fails](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## CRITICAL\_PROCESS\_DIED Parameters
-
 
 <table>
 <colgroup>
@@ -60,10 +56,7 @@ A developer can also create a service and set its recovery option to Restart the
 </tbody>
 </table>
 
- 
-
-Resolution
-----------
+## Resolution
 
 Determining the cause of this issues typically requires the use of the debugger to gather additional information. Multiple dump files should be examined to see if this stop code has similar characteristics, such as the code that is running when the stop code appears.
 
@@ -73,21 +66,17 @@ In many cases a user dump is also created before the system bugchecks.  In gener
 
 Consider using the event log to see if there are errors that occur leading up to this stop code. If there are, these errors can be used to examine specific services or other code to investigate.
 
-If the bug check can be reproduced at will, consider using Time Travel Tracing to record events leading up to the bug check. For more information see, [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
-
 Once information about the code in question is available,  set a breakpoint in the related code before this code is executed and single step forward through the code looking at the values of critical variables that are used to control the code flow.  Carefully examine this area of your code to look for false assumptions or other mistakes. 
 
 Use the second parameter of the bug check to determine if a dying process or thread caused the bug check.
 
-If it is a process, use the [!process](-process.md) command to display information on the process before and after the point of failure to look for abnormal behavior. The [Process explorer](https://docs.microsoft.com/sysinternals/downloads/process-explorer) utility  can used to gather general information about which process are running and parent child relationships.
+If it is a process, use the [!process](-process.md) command to display information on the process before and after the point of failure to look for abnormal behavior. The [Process explorer](/sysinternals/downloads/process-explorer) utility  can used to gather general information about which process are running and parent child relationships.
 
 If it is a thread, consider using the [!thread](-thread.md) command to display information about the thread. For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md). 
 
 For general information on threads and process as well as additional specifics on Windows protected, critical code such as wininit and csrss, see *Windows Internals* by Pavel Yosifovich, Mark E. Russinovich, David A. Solomon, and Alex Ionescu.
 
-
-
-**General Troubleshooting Tips**
+## General Troubleshooting Tips
 
 If you are not able to work with the debugger, these general troubleshooting tips may be helpful.
 
@@ -117,15 +106,6 @@ If you are not able to work with the debugger, these general troubleshooting tip
 
 ## <span id="see_also"></span>See also
 
-
 [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
-
- 
-
- 
-
-
-
-

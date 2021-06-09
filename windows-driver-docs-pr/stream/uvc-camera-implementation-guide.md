@@ -27,7 +27,7 @@ Windows supports two categories of cameras. One is a color camera and the other 
 
 A camera that supports color only format types should be registered under KSCATEGORY\_VIDEO\_CAMERA. A camera that supports IR or Depth-only format types should be registered under KSCATEGORY\_SENSOR\_CAMERA. A camera that supports both color and non-color format types should be registered under KSCATEGORY\_VIDEO\_CAMERA and KSCATEGORY\_SENSOR\_CAMERA. This categorization helps applications to select the camera that they want to work with.
 
-A UVC camera can specify its category preference through attributes, **SensorCameraMode** and **SkipCameraEnumeration**, in its BOS [MS OS 2.0 Descriptor](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) detailed in following sections.
+A UVC camera can specify its category preference through attributes, **SensorCameraMode** and **SkipCameraEnumeration**, in its BOS [MS OS 2.0 Descriptor](../usbcon/microsoft-defined-usb-descriptors.md) detailed in following sections.
 
 The attribute **SensorCameraMode** takes a value 1 or 2.
 
@@ -70,8 +70,8 @@ The following format type GUIDs should be specified in the stream video format d
 
 | Type | Description |
 | --- | --- |
-| KSDATAFORMAT\_SUBTYPE\_L8\_IR |  Uncompressed 8 bit luma plane. This type maps to [MFVideoFormat\_L8](https://docs.microsoft.com/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
-| KSDATAFORMAT\_SUBTYPE\_L16\_IR | Uncompressed 16 bit luma plane. This type maps to [MFVideoFormat\_L16](https://docs.microsoft.com/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
+| KSDATAFORMAT\_SUBTYPE\_L8\_IR |  Uncompressed 8 bit luma plane. This type maps to [MFVideoFormat\_L8](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
+| KSDATAFORMAT\_SUBTYPE\_L16\_IR | Uncompressed 16 bit luma plane. This type maps to [MFVideoFormat\_L16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
 | KSDATAFORMAT\_SUBTYPE\_MJPG\_IR | Compressed MJPEG frames. Media Foundation converts this into NV12 uncompressed frames and uses only the luma plane. |
 
 When these format type GUIDs are specified in the guidFormat field of the frame descriptor, the Media Foundation capture pipeline marks the stream as IR stream. Applications written with Media Foundation FrameReader API will be able to consume the IR stream. No scaling or conversions of the IR frames are supported by the pipeline for IR streams.
@@ -108,7 +108,7 @@ Windows inbox USB Video Class driver supports cameras that produce Depth streams
 
 | Type | Description |
 | --- | --- |
-| KSDATAFORMAT\_SUBTYPE\_D16 |  16 bit depth map values. This type is identical to [MFVideoFormat\_D16](https://docs.microsoft.com/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). The values are in millimeters. |
+| KSDATAFORMAT\_SUBTYPE\_D16 |  16 bit depth map values. This type is identical to [MFVideoFormat\_D16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). The values are in millimeters. |
 
 When the format type GUID is specified in the guidFormat member of the frame descriptor, the Media Foundation capture pipeline marks the stream as depth stream. Applications written with FrameReader API will be able to consume the depth stream. No scaling or conversions of the depth frames are supported by the pipeline for depth streams.
 
@@ -215,7 +215,7 @@ HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 
 ## Device MFT Chaining
 
-Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows. Prior to Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin. Starting with Windows 10, version 1703, the Windows camera pipeline supports an optional chain of DMFTs with maximum of three DMFTs. This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. Following figure illustrates the architecture involving a chain of DMFTs.
+Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows. Prior to Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin. Starting with Windows 10, version 1703, the Windows camera pipeline supports an optional chain of DMFTs with maximum of two DMFTs. This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. Following figure illustrates the architecture involving a chain of DMFTs.
 
 ![DMFT chain](images/dmft-chain.png)
 
@@ -335,7 +335,7 @@ Windows 10 RS5 now enforces a Face Auth Profile V2 requirement for any camera wi
 
 However, for USB Video devices, a constraint with UVC based cameras is that for Windows 10 19H1, custom camera drivers are not allowed. All UVC based cameras must use the inbox USB Video Class driver and any vendor extensions must be implemented in the form of a Device MFT.
 
-For many OEM/ODMs, the preferred approach for camera modules is to implement much of the functionality within the module’s firmware, i.e. via Microsoft OS Descriptors.
+For many OEM/ODMs, the preferred approach for camera modules is to implement much of the functionality within the module's firmware, i.e. via Microsoft OS Descriptors.
 
 The following cameras are supported for publish Face Auth Profile via the MSOS Descriptors (also called BOS descriptors):
 
@@ -378,7 +378,7 @@ The Header Section describes a single custom property (Face Auth Profile).
 | 0      | dwSize               | 4            | 0x00000036 (54)       | Total size (in bytes) for this property.   |
 | 4      | dwPropertyDataType   | 4            | 0x00000004            | REG\_DWORD\_LITTLE\_ENDIAN                 |
 | 8      | wPropertyNameLength  | 2            | 0x00000024 (36)       | Size (in bytes) of the property name.      |
-| 10     | bPropertyName        | 36           | UVC-CPV2FaceAuth      | “UVC-CPV2FaceAuth” string in Unicode.      |
+| 10     | bPropertyName        | 36           | UVC-CPV2FaceAuth      | "UVC-CPV2FaceAuth" string in Unicode.      |
 | 46     | dwPropertyDataLength | 4            | 0x00000004            | 4 bytes for property data (sizeof(DWORD)). |
 | 50     | bPropertyData        | 4            | See Data Schema Below | See Data Schema Below.                     |
 
@@ -469,7 +469,7 @@ UCHAR Example2_MSOS20DescriptorSet_UVCFaceAuthForFutureWindows[0x3C] =
 }
 ```
 
-When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in this document: https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices.
+When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in [DShow Bridge implementation guidance for UVC devices](./dshow-bridge-implementation-guidance-for-usb-video-class-devices.md).
 
 However, if the device vendor must support older versions of Windows and/or need to enable MJPEG decompression within Frame Server, the EnableDshowRedirection registry entry must be added.
 
@@ -479,7 +479,7 @@ When OEMs build systems using Type 1 and Type 2 Cameras to provide both RGB and 
 
 This is done by declaring a FSSensorGroupId and FSSensorGroupName tag in an Extension INF to be created under the device interface property for each camera.
 
-However, if Extension INF is not provided, ODMs may use the same MSOS Descriptors to publish the FSSensorGroupId and FSSensorGroupName values. The inbox Windows 10 USB Video Class driver will automatically take any MSOS Descriptor whose Payload Name has been prefixed with “UVC-“ and migrate the tag into the device interface property store (removing the “UVC-“ prefix).
+However, if Extension INF is not provided, ODMs may use the same MSOS Descriptors to publish the FSSensorGroupId and FSSensorGroupName values. The inbox Windows 10 USB Video Class driver will automatically take any MSOS Descriptor whose Payload Name has been prefixed with "UVC-" and migrate the tag into the device interface property store (removing the "UVC-" prefix).
 
 So a Type 1 and Type 2 Camera which publishes the following will allow the OS to synthesize the cameras into a multi-device Sensor Group for use with Windows Hello:
 
@@ -490,7 +490,7 @@ The payload for each tag must be a Unicode String. The UVC-FSSensorGroupId paylo
 
 > {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
 
-The value of the GUID must be the same between the Type 1 and Type 2 Cameras and both cameras must be added to the same physical chassis. For built in cameras, the physical chassis is the computer itself. For external cameras, both Type 1 and Type 2 Camera modules must be built into the same physical device connected to the computer. 
+The value of the GUID must be the same between the Type 1 and Type 2 Cameras and both cameras must be added to the same physical chassis. For built in cameras, the physical chassis is the computer itself. For external cameras, both Type 1 and Type 2 Camera modules must be built into the same physical device connected to the computer.
 
 ## Custom Device Interface Categories for Sensor Groups
 
@@ -517,7 +517,7 @@ See [UVC Control Cache](camera-device-uvc-control-cache.md)
 
 ## BOS and MS OS 2.0 descriptor
 
-UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](https://msdn.microsoft.com/en-us/library/windows/hardware/dn385747.aspx). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
+UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](/previous-versions/dn385747(v=msdn.10)). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
 
 ### Microsoft OS 2.0 Descriptor Set Header
 
@@ -526,7 +526,7 @@ UVC compliant camera can specify Windows specific device configuration values in
 | 0      | wLength          | 2            | Length in bytes of this header, must be 10.                                  |
 | 2      | wDescriptorType  | 2            | MSOS20\_SET\_HEADER\_DESCRIPTOR                                              |
 | 4      | dwWindowsVersion | 4            | Windows version.                                                             |
-| 8      | wTotalLength     | 2            | The size of the entire MS OS 2.0 descrioptor set including this header size. |
+| 8      | wTotalLength     | 2            | The size of the entire MS OS 2.0 descriptor set including this header size. |
 
 ### Microsoft OS 2.0 Registry Property Descriptor
 

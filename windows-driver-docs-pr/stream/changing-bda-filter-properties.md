@@ -1,7 +1,6 @@
 ---
 title: Changing BDA Filter Properties
 description: Changing BDA Filter Properties
-ms.assetid: 1833864a-5759-437c-ba60-0b38602d9e41
 keywords:
 - property sets WDK BDA , filter property changes
 - filter property changes WDK BDA
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-Because multiple instances of an application that views media broadcasts can run simultaneously on a system, you should write a BDA minidriver to accommodate multiple instances of a filter. Each filter instance can contain different information. For example, one instance of a tuner filter can contain a request to tune to channel 5, while another instance can contain a request to tune to channel 8. As control transitions from one instance to another, the BDA minidriver must instruct the underlying tuning device to change the way resources are configured. A BDA minidriver processes method requests of the [KSMETHODSETID\_BdaChangeSync](https://docs.microsoft.com/windows-hardware/drivers/stream/ksmethodsetid-bdachangesync) method set to coordinate a list of property requests on one the minidriver's filter instances.
+Because multiple instances of an application that views media broadcasts can run simultaneously on a system, you should write a BDA minidriver to accommodate multiple instances of a filter. Each filter instance can contain different information. For example, one instance of a tuner filter can contain a request to tune to channel 5, while another instance can contain a request to tune to channel 8. As control transitions from one instance to another, the BDA minidriver must instruct the underlying tuning device to change the way resources are configured. A BDA minidriver processes method requests of the [KSMETHODSETID\_BdaChangeSync](./ksmethodsetid-bdachangesync.md) method set to coordinate a list of property requests on one the minidriver's filter instances.
 
 The primary purpose of the KSMETHODSETID\_BdaChangeSync method set is to provide trigger points at which the underlying minidriver for a filter can acquire and release resources from the minidriver's device object. The minidriver must coordinate these trigger points with the filter's transition to and from a stopped state. For example, if the filter is in a stopped state, the minidriver should assign new resources to the filter but not acquire those resources whenever the network provider specifies to commit BDA topology changes. When the filter subsequently transitions out of its stopped state, the minidriver should then attempt to acquire those resources from the underlying device.
 
@@ -24,13 +23,13 @@ On the other hand, if the filter is already active, the minidriver should attemp
 
 Typically, a BDA minidriver's filter object intercepts and supplies methods for the methods of the KSMETHODSETID\_BdaChangeSync method set. For example, the minidriver supplies methods for starting, checking, and committing filter changes and for getting the change state of a filter. In addition, the following minidriver-supplied methods should call the corresponding BDA support library functions to synchronize changes on the structures that the minidriver previously registered with the BDA support library:
 
--   Start-changes method calls the [**BdaStartChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdastartchanges) function.
+-   Start-changes method calls the [**BdaStartChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdastartchanges) function.
 
--   Check-changes method calls the [**BdaCheckChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges) function.
+-   Check-changes method calls the [**BdaCheckChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges) function.
 
--   Commit-changes method calls the [**BdaCommitChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges) function.
+-   Commit-changes method calls the [**BdaCommitChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges) function.
 
--   Get-changed-state method calls the [**BdaGetChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate) function.
+-   Get-changed-state method calls the [**BdaGetChangeState**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate) function.
 
 The following code snippet shows how to intercept method requests of the KSMETHODSETID\_BdaChangeSync method set using an internal method:
 
@@ -118,9 +117,4 @@ errExit:
 ```
 
  
-
- 
-
-
-
 

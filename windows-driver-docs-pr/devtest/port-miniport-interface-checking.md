@@ -1,7 +1,6 @@
 ---
 title: Port/Miniport interface checking
 description: Port/Miniport interface checking
-ms.assetid: ad6c4762-354d-446d-bcda-a2e99c37c589
 keywords:
 - Port/Miniport interface checking
 ms.date: 09/14/2017
@@ -10,11 +9,11 @@ ms.localizationpriority: medium
 
 # Port/miniport interface checking
 
-Port/miniport interface checking enables Driver Verifier to inspect the DDI interface between PortCls.sys and its audio miniport drivers, along with ks.sys and its AVStream miniport drivers. See [Rules for AVStream drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers) and [Rules for audio drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
+Port/miniport interface checking enables Driver Verifier to inspect the DDI interface between PortCls.sys and its audio miniport drivers, along with ks.sys and its AVStream miniport drivers. See [Rules for AVStream drivers](./rules-for-avstream-drivers.md) and [Rules for audio drivers](./rules-for-audio-drivers.md)
 
 ### Activating this option:
 
-You can activate port/miniport interface checking for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting driver verifier options](https://docs.microsoft.com/windows-hardware/drivers/devtest/selecting-driver-verifier-options). You must restart the computer to activate or deactivate the port/miniport interface checking option.
+You can activate port/miniport interface checking for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting driver verifier options](./selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the port/miniport interface checking option.
 
 * **At the command line**
 

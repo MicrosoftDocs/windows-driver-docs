@@ -4,7 +4,7 @@ description: Network Adapter WDF Class Extension (NetAdapterCx)
 ms.assetid: 74719A80-AE66-410F-85B7-31B6F455A818
 keywords:
 - Network Adapter Class Extension, Network Adapter WDF Class Extension, NetAdapterCx, NetCx
-ms.date: 03/21/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,11 +13,9 @@ ms.custom: 19H1
 
 # Network Adapter WDF Class Extension (NetAdapterCx)
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 ## Overview
 
-Starting in Windows 10, version 1703, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
+Starting in Windows 10, version 2004, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
 
 In previous versions of Windows, WDF and NDIS had individual advantages, but did not interoperate well. The only way to write a NIC driver was to write an NDIS miniport driver. To use WDF in an NDIS miniport driver, you had to write extra code in your driver, and even then, you only had access to a small subset of WDF functionality.
 
@@ -46,9 +44,8 @@ This section contains the following topics:
 * [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
 * [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md)
-* [Managing the lifetime of objects in NetAdapterCx](managing-the-lifetime-of-objects-in-netadaptercx.md)
+* [Managing the lifetime of objects in NetAdapterCx](summary-of-netadaptercx-objects.md)
 * [Accessing configuration information](accessing-configuration-information.md)
-* [Handling control requests](handling-control-requests.md)
 * [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
 * [Transferring network data](transferring-network-data.md)
 * [NetAdapterCx receive side scaling (RSS)](netadaptercx-receive-side-scaling-rss-.md)

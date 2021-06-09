@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_GET\_POINTER\_SHAPE\_DATA structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 31502888-88b0-49c2-8f03-63bb31886931
+description: Learn about the D3DKMT\_OUTPUTDUPL\_GET\_POINTER\_SHAPE\_DATA structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA {
@@ -34,8 +32,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA {
 } D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -49,8 +46,7 @@ Members
 
 **ShapeInfo**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

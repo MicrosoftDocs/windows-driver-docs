@@ -1,7 +1,6 @@
 ---
 title: WDDM 2.1 Features
 description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 2.1.
-ms.assetid: 7dc0d0ad-98da-4bd6-bed9-f70525b682bc
 ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---
@@ -29,14 +28,14 @@ WDDM 2.1 supports the following D3D versions: D3D9, D3D10, D3D10.1, D3D11, D3D11
 
 ## Offer and reclaim improvements
 
-A new DDI, [PFND3DDDI_RECLAIMALLOCATIONS3CB](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocations3cb) was created to reduce memory footprint of applications running in background mode. This interface will enable applications to offer resources that are acceptable to fully de-commit, when going into the background. As a result, the Process Lifetime Manager will be able to reclaim more memory from background apps that use DirectX, which leads to less background application terminations when under memory pressure.
+A new DDI, [PFND3DDDI_RECLAIMALLOCATIONS3CB](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocations3cb) was created to reduce memory footprint of applications running in background mode. This interface will enable applications to offer resources that are acceptable to fully de-commit, when going into the background. As a result, the Process Lifetime Manager will be able to reclaim more memory from background apps that use DirectX, which leads to less background application terminations when under memory pressure.
 
 Other DDI changes:
 
-* [PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updateallocationpropertycb)
-* [PFND3DDDI_OFFERALLOCATIONS2CB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_offerallocations2cb)
-* [D3DDDICB_OFFERALLOCATIONS2 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicb_offerallocations2)
-* [D3DDDICB_RECLAIMALLOCATIONS3 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_reclaimallocations3)
+* [PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updateallocationpropertycb)
+* [PFND3DDDI_OFFERALLOCATIONS2CB callback](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_offerallocations2cb)
+* [D3DDDICB_OFFERALLOCATIONS2 structure](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicb_offerallocations2)
+* [D3DDDICB_RECLAIMALLOCATIONS3 structure](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_reclaimallocations3)
 
 For more information about offer and reclaim resources, see [Offer and reclaim changes](offer-and-reclaim-changes.md).
 
@@ -48,9 +47,9 @@ WDDM 2.1 drivers are required to support a performance feature called *present b
 
 The following lists the new DDIs created to enable this feature:
 
-* [PFND3DDDI_SYNCTOKENCB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_synctokencb)
-* [D3DDDIARG_SYNCTOKEN structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_synctoken)
-* [PFND3DDDI_SYNCTOKEN callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_synctoken)
+* [PFND3DDDI_SYNCTOKENCB callback](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_synctokencb)
+* [D3DDDIARG_SYNCTOKEN structure](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_synctoken)
+* [PFND3DDDI_SYNCTOKEN callback](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_synctoken)
 
 
 ## Indirect Display
@@ -125,7 +124,7 @@ This feature enables the UMD to comment on each programmable stage of the graphi
 
 ### WDDM 2.1 Caps
 
-Drivers will report WDDM 2.1 support through [DXGK_DRIVERCAPS::WDDMVersion](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) with a new version constant:
+Drivers will report WDDM 2.1 support through [DXGK_DRIVERCAPS::WDDMVersion](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) with a new version constant:
 
 `DXGK_WDDMVERSION::DXGKDDI_WDDMv2_1 = 0x2100`
 
@@ -173,7 +172,7 @@ WDDM 2.1 graphics drivers have different INF requirements as compared to the WDD
 
 3. WDDM 2.1 graphics driver INF changes for “Driver Store" installation.
 
-For more info, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+For more info, see [INF File Sections and Directives](../install/index.md).
 
 Driver files, 32 and 64 bit, will remain in and be loaded from the driver store. WoW64 file system redirection does not apply to the driver store. IHVs may specify subfolders by using standard INF syntax to create, for example, a WoW64 folder under the unique driver store folder if desired.
 

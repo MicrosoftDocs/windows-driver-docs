@@ -1,7 +1,6 @@
 ---
 title: Generating Skipped Macroblocks
 description: Generating Skipped Macroblocks
-ms.assetid: 98ea004b-347d-4299-a23c-da0a9d0e844f
 keywords:
 - macroblocks WDK DirectX VA , skipped macroblocks
 - skipped macroblocks WDK DirectX VA
@@ -33,7 +32,7 @@ Because of the first three preceding conditions, an accelerator may implement mo
 (bMacroblockWidthMinus1+1) X (MBskipsFollowing+1)
 ```
 
-The **bMacroblockWidthMinus1** member is contained in [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters). The *MBskipsFollowing* variable is in the **wMBtype** member of each macroblock control structure.
+The **bMacroblockWidthMinus1** member is contained in [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters). The *MBskipsFollowing* variable is in the **wMBtype** member of each macroblock control structure.
 
 ### <span id="Skipped_Macroblocks_in_H.263__Annex_F_"></span><span id="skipped_macroblocks_in_h.263__annex_f_"></span><span id="SKIPPED_MACROBLOCKS_IN_H.263__ANNEX_F_"></span>Skipped Macroblocks in H.263 (Annex F)
 
@@ -88,7 +87,7 @@ The following example shows how macroblock control commands are used when skippe
 
  
 
-These seven macroblocks would require the generation (at least) of the five DirectX VA macroblock control commands shown in the following table. The *MBskipsFollowing* variable indicates the number of skipped macroblocks. The **wMBaddress** member indicates the address of the macroblock. *MBskipsFollowing* and **wMBaddress** are contained in the [**DXVA\_MBctrl\_P\_OffHostIDCT\_1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_offhostidct_1), and [**DXVA\_MBctrl\_P\_HostResidDiff\_1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_hostresiddiff_1) structures. (The *MBskipsFollowing* variable is defined in the **dwMB\_SNL** structure member.)
+These seven macroblocks would require the generation (at least) of the five DirectX VA macroblock control commands shown in the following table. The *MBskipsFollowing* variable indicates the number of skipped macroblocks. The **wMBaddress** member indicates the address of the macroblock. *MBskipsFollowing* and **wMBaddress** are contained in the [**DXVA\_MBctrl\_P\_OffHostIDCT\_1**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_offhostidct_1), and [**DXVA\_MBctrl\_P\_HostResidDiff\_1**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_hostresiddiff_1) structures. (The *MBskipsFollowing* variable is defined in the **dwMB\_SNL** structure member.)
 
 <table>
 <colgroup>
@@ -133,10 +132,4 @@ These seven macroblocks would require the generation (at least) of the five Dire
  
 
  
-
- 
-
-
-
-
 

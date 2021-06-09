@@ -1,7 +1,6 @@
 ---
 title: USB Video Class Extension Units
 description: USB Video Class Extension Units
-ms.assetid: 91addb52-4681-4f3d-bdd8-bf64f4917fc9
 keywords:
 - USB Video Class drivers WDK AVStream , extension units
 - Video Class drivers WDK USB , extension units

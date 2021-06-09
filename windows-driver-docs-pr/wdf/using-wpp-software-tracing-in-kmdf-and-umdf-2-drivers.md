@@ -1,7 +1,6 @@
 ---
 title: Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
 description: Starting in Windows 10, you can build your WDF driver so that it gets additional driver debugging information through the Windows software trace preprocessing.
-ms.assetid: CA2A7ED3-4372-4EE9-8B04-042A8C864BD5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the Windows software trace preprocessing. This feature, called the Inflight Trace Recorder (IFR), is available starting in KMDF version 1.15 and UMDF version 2.15.
 
-Inflight Trace Recorder is an extension of [WPP software tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing). Unlike WPP tracing, the Inflight Trace Recorder continues to work without an attached trace consumer. The framework writes messages to a circular buffer, and your driver can also add its own messages. Each driver has its own log, so multiple devices associated with a driver share a single log.
+Inflight Trace Recorder is an extension of [WPP software tracing](../devtest/wpp-software-tracing.md). Unlike WPP tracing, the Inflight Trace Recorder continues to work without an attached trace consumer. The framework writes messages to a circular buffer, and your driver can also add its own messages. Each driver has its own log, so multiple devices associated with a driver share a single log.
 
 The logs are stored in non-pageable memory, so they are recoverable after a system crash. In addition, Inflight Trace Recorder logs are included in minidump files.
 
@@ -25,7 +24,7 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     -   On the same menu, set **Scan Configuration Data** to the file containing your trace information, for example Trace.h.
 
-2.  In each source file that calls a WPP macro, add an **\#include** directive that identifies a [trace message header (TMH) file](https://docs.microsoft.com/windows-hardware/drivers/devtest/trace-message-header-file). The file name must have a format of &lt;*driver-source-file-name*&gt;**.tmh**.
+2.  In each source file that calls a WPP macro, add an **\#include** directive that identifies a [trace message header (TMH) file](../devtest/trace-message-header-file.md). The file name must have a format of &lt;*driver-source-file-name*&gt;**.tmh**.
 
     For example, if your driver consists of two source files, called *MyDriver1.c* and *MyDriver2.c*, then *MyDriver1.c* must contain:
 
@@ -37,7 +36,7 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     When you build your driver in Visual Studio, the WPP preprocessor generates the .*tmh* files.
 
-3.  Define a [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro in a header file. This macro defines a GUID and [trace flags](https://docs.microsoft.com/windows-hardware/drivers/devtest/trace-flags) for your driver's tracing messages.
+3.  Define a [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro in a header file. This macro defines a GUID and [trace flags](../devtest/trace-flags.md) for your driver's tracing messages.
 
     The Osrusbfx2 driver sample defines a single control GUID and seven trace flags in the Trace.h header file, as shown in the following example:
 
@@ -61,23 +60,23 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
     -   **OsrUsbFxTraceGuid** is the friendly name for the {d23a0c5a-d307-4f0e-ae8e-E2A355AD5DAB} GUID.
     -   The trace flags are used to differentiate between trace messages that are generated as the driver handles different types of I/O requests.
 
-4.  Your driver (both KMDF and UMDF 2) must call [**WPP\_INIT\_TRACING for Kernel-Mode Drivers**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556193(v=vs.85)) with the driver object and a registry path, typically from [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers):
+4.  Your driver (both KMDF and UMDF 2) must call [**WPP\_INIT\_TRACING for Kernel-Mode Drivers**](/previous-versions/windows/hardware/drivers/ff556193(v=vs.85)) with the driver object and a registry path, typically from [**DriverEntry**](./driverentry-for-kmdf-drivers.md):
 
     ```cpp
     WPP_INIT_TRACING( DriverObject, RegistryPath );
     ```
 
-    To deactivate tracing, both KMDF and UMDF 2 drivers call [**WPP\_CLEANUP for Kernel-Mode Drivers**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) from [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload):
+    To deactivate tracing, both KMDF and UMDF 2 drivers call [**WPP\_CLEANUP for Kernel-Mode Drivers**](/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) from [*EvtCleanupCallback*](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDriverUnload*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload):
 
     ```cpp
     WPP_CLEANUP( WdfDriverWdmGetDriverObject( Driver ));
     ```
 
-    The [**WPP\_CLEANUP**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) macro takes a parameter of type PDRIVER\_OBJECT, so if your driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) fails, you can skip calling [**WdfDriverWdmGetDriverObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) and instead call **WPP\_CLEANUP** with a pointer to the WDM driver object.
+    The [**WPP\_CLEANUP**](/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) macro takes a parameter of type PDRIVER\_OBJECT, so if your driver's [**DriverEntry**](./driverentry-for-kmdf-drivers.md) fails, you can skip calling [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) and instead call **WPP\_CLEANUP** with a pointer to the WDM driver object.
 
     Starting in UMDF version 2.15, UMDF drivers use the kernel-mode signatures of these macros for initializing and cleaning up tracing. This means that the calls look identical for KMDF and UMDF.
 
-5.  Use the [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](https://docs.microsoft.com/windows-hardware/drivers/devtest/can-i-customize-dotracemessage-) of the macro, in your driver to create trace messages.
+5.  Use the [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](../devtest/can-i-customize-dotracemessage-.md) of the macro, in your driver to create trace messages.
 
     The following example shows how the Osrusbfx2 driver uses its **TraceEvents** function in a portion of the code devoted to handling read requests:
 
@@ -109,13 +108,13 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 **For a KMDF driver**
 
 1.  Load the RCDRKD commands by typing **.load rcdrkd.dll** in the debugger.
-2.  Use the [**!wdfkd.wdfldr**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfldr) extension to display information about the driver that are currently dynamically bound to Windows Driver Frameworks (WDF).
-3.  Use [**!rcdrkd.rcdrlogdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-rcdrkd-rcdrlogdump) and [**!rcdrkd.rcdrcrashdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-rcdrkd-rcdrcrashdump) to view messages that the driver provides.
-4.  Use [**!wdfkd.wdflogdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdflogdump) or [**!wdfkd.wdfcrashdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfcrashdump) to see messages that the framework provides.
+2.  Use the [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to Windows Driver Frameworks (WDF).
+3.  Use [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) and [**!rcdrkd.rcdrcrashdump**](../debugger/-rcdrkd-rcdrcrashdump.md) to view messages that the driver provides.
+4.  Use [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) to see messages that the framework provides.
 
 **Live debugging of a UMDF driver**
 
-1.  Use the [**!wdfkd.wdfldr**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfldr) extension to display information about the driver that are currently dynamically bound to WDF. Find your user-mode driver. Enter the associated host process.
+1.  Use the [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to WDF. Find your user-mode driver. Enter the associated host process.
 2.  Type **!wdfkd.wdflogdump** *&lt;YourDriverName.dll&gt; &lt;Flag&gt;* , where *&lt;Flag&gt;* is:
 
     -   0x1 – Merged framework and driver logs
@@ -127,35 +126,28 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 **Viewing Inflight Trace Recorder logs after a UMDF driver crash**
 
 1. From WinDbg, select **File-&gt;Open Crash Dump**, and specify the minidump file you would like to debug.
-2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfcrashdump), where *&lt;Option&gt;* is:
+2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](../debugger/-wdfkd-wdfcrashdump.md), where *&lt;Option&gt;* is:
 
    -   0x1 – Merged framework and driver logs
    -   0x2 – Driver logs
    -   0x3 – Framework logs
 
-   If you don't specify a driver, [**!wdfcrashdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfcrashdump) displays information for all drivers. If you don't specify a host process, and there is only one, the extension uses the single host process. If you don't specify a host process and there is more than one, the extension lists the active host processes.
+   If you don't specify a driver, [**!wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) displays information for all drivers. If you don't specify a host process, and there is only one, the extension uses the single host process. If you don't specify a host process and there is more than one, the extension lists the active host processes.
 
    If the log information stored in the minidump does not match the entered name, the minidump does not contain the driver's logs.
 
-For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-wpp-macros-to-a-trace-provider).
+For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](../devtest/adding-wpp-macros-to-a-trace-provider.md).
 
 ## Related topics
 
 
 [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md)
 
-[RCDRKD Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/rcdrkd-extensions)
+[RCDRKD Extensions](../debugger/rcdrkd-extensions.md)
 
 [Using the Framework's Event Logger](using-the-framework-s-event-logger.md)
 
 [Using WPP Software Tracing in UMDF Drivers](using-wpp-software-tracing-in-umdf-drivers.md)
 
  
-
- 
-
-
-
-
-
 

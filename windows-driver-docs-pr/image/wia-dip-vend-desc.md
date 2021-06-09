@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_VEND\_DESC
 description: The WIA\_DIP\_VEND\_DESC property contains a vendor description string for the WIA minidriver. The WIA service creates and maintains this property.
-ms.assetid: 80bb6a4e-3391-4681-93d0-8b60774dfc3d
 keywords: ["WIA_DIP_VEND_DESC Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The vendor description is obtained from the INF file. An application reads the WIA\_DIP\_VEND\_DESC property to get a description of the device vendor.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

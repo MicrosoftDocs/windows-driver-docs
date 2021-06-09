@@ -1,7 +1,6 @@
 ---
 title: Local Kernel-Mode Debugging
 description: Local Kernel-Mode Debugging
-ms.assetid: e66dc23b-9254-4148-9828-d27c30bfa492
 keywords: ["local kernel debugging", "local kernel debugging, commands available", "local kernel debugging, LiveKD tool", "LiveKD tool"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -22,7 +21,7 @@ For information on setting up local kernel-mode debugging, see [Setting Up Local
 
 ### <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
 
-Open WinDbg as Administrator. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Local** tab. Click **OK**.
+Open WinDbg as Administrator. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Local** tab. Select **OK**.
 
 You can also start a session with WinDbg by opening a Command Prompt window as Administrator and entering the following command:
 
@@ -72,13 +71,7 @@ Kernel-mode drivers and the Windows operating system frequently send messages to
 
 The LiveKD tool simulates local kernel debugging. This tool creates a "snapshot" dump file of the kernel memory, without actually stopping the kernel while this snapshot is made. (Therefore, the snapshot might not actually show a single instant state of the computer.)
 
-LiveKD is not part of the Debugging Tools for Windows package. You can download [LiveKd](https://go.microsoft.com/fwlink/p/?linkid=56552) from the Windows Sysinternals site.
+LiveKD is not part of the Debugging Tools for Windows package. You can download [LiveKd](/sysinternals/downloads/livekd) from the Windows Sysinternals site.
 
  
-
- 
-
-
-
-
 

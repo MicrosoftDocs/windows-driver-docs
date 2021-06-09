@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
 description: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
-ms.assetid: 72afc856-8232-492f-b8d2-4e88dd9fe723
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -47,15 +46,9 @@ class MS_SMHBA_SASPHYSTATISTICS
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_SASPHYSTATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_sasphystatistics)
+[**MS\_SMHBA\_SASPHYSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_sasphystatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

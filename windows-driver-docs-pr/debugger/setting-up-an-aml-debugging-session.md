@@ -1,8 +1,7 @@
 ---
 title: Setting Up an AML Debugging Session
 description: Setting Up an AML Debugging Session
-ms.assetid: 04a44b92-215c-4735-9724-2b9f173f76a2
-keywords: ["AMLI Debugger, setup", "checked build (debug build), of acpi.sys", "acpi.sys"]
+keywords: ["AMLI Debugger, setup", "debug build, of acpi.sys", "acpi.sys"]
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
@@ -21,4 +20,3 @@ To activate breaking into debugger on free builds, use the **!amli set dbgbrkon*
 ## See Also
 
 [The AMLI Debugger](the-amli-debugger.md)
-

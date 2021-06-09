@@ -1,7 +1,6 @@
 ---
 title: Trace Message Format File
 description: Trace Message Format File
-ms.assetid: ac45475e-bf2d-4fa6-82fc-37ef8f4c0f6c
 keywords:
 - trace message format files WDK
 - TMF files WDK
@@ -21,7 +20,7 @@ The *trace message format* (TMF) file is a structured text file that contains in
 
 Some tools that log and display formatted trace messages require a TMF file. [Tracefmt](tracefmt.md) and [TraceView](traceview.md), WDK tools that format and display trace messages, can use a TMF file or they can extract the formatting information directly from a PDB symbol file.
 
-You can create a TMF file by using [Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt) and including the **-i** parameter, which directs Tracefmt to create a TMF file for Tracedrv. For more info, see [Example 9: Creating a TMF file](https://docs.microsoft.com/windows-hardware/drivers/devtest/example-9--creating-a-tmf-file).
+You can create a TMF file by using [Tracefmt](./tracefmt.md) and including the **-i** parameter, which directs Tracefmt to create a TMF file for Tracedrv. For more info, see [Example 9: Creating a TMF file](./example-9--creating-a-tmf-file.md).
 
 If you do not have a TMF file for a [trace provider](trace-provider.md), use [Tracepdb](tracepdb.md). Tracepdb extracts the formatting instructions from the PDB symbol file and creates a TMF file to store them. Many application and driver developers prefer shipping a TMF file, rather than a PDB symbol file.
 
@@ -42,10 +41,4 @@ A TMF file contains the following data:
  
 
  
-
- 
-
-
-
-
 

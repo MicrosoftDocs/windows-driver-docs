@@ -1,7 +1,6 @@
 ---
 title: Using Safe String Functions
 description: Using Safe String Functions
-ms.assetid: a84008e8-e490-4640-a734-ef55cfbdfea3
 keywords: ["safe string functions WDK", "string manipulation functions WDK", "buffers WDK safe string functions"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -19,17 +18,17 @@ Two new sets of string manipulation functions, called *safe string functions*, p
 
 One set of safe string functions are for use in kernel-mode code. These functions are prototyped in a header file named Ntstrsafe.h. This header file and an associated library are available in the WDK.
 
-The other set of safe string functions are for use in user-mode applications. A corresponding header file, Strsafe.h, contains prototypes for these functions. That file and an associated library are available in the Windows SDK. For more information about Strsafe.h, see [Using the Strsafe.h Functions](https://go.microsoft.com/fwlink/p/?linkid=165522).
+The other set of safe string functions are for use in user-mode applications. A corresponding header file, Strsafe.h, contains prototypes for these functions. That file and an associated library are available in the Windows SDK. For more information about Strsafe.h, see [Using the Strsafe.h Functions](/windows/win32/menurc/strsafe-ovw).
 
 The set of kernel-mode safe string functions consists of the following two subsets:
 
--   [Safe string functions for Unicode and ANSI characters](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+-   [Safe string functions for Unicode and ANSI characters](/windows-hardware/drivers/ddi/_kernel/#safe-string-functions-for-unicode-and-ansi-characters)
 
-    Each of these functions is available in a W-suffixed version that supports double-byte Unicode characters and an A-suffixed version that supports single-byte ANSI characters. For example, [**RtlStringCbCatN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatna), which concatenates two strings and limits the length of the appended string, is available as **RtlStringCbCatNW** and **RtlStringCbCatNA**.
+    Each of these functions is available in a W-suffixed version that supports double-byte Unicode characters and an A-suffixed version that supports single-byte ANSI characters. For example, [**RtlStringCbCatN**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatna), which concatenates two strings and limits the length of the appended string, is available as [**RtlStringCbCatNW**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatnw) and [**RtlStringCbCatNA**](/windows-hardware/drivers/ddi/ntstrsafe//nf-ntstrsafe-rtlstringcbcatna).
 
--   [Safe string functions for UNICODE\_STRING structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+-   [Safe string functions for UNICODE\_STRING structures](/windows-hardware/drivers/ddi/_kernel/#safe-string-functions-for-unicode_string-structures)
 
-    Each of these functions accepts a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure as an input or output parameter or both. For example, [**RtlStringCbCopyUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcopyunicodestring) accepts the structure as an input parameter, [**RtlUnicodeStringCopyString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopystring) accepts the structure as an output parameter, and [**RtlUnicodeStringCopy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopy) accepts the structure as both an input and output parameter.
+    Each of these functions accepts a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure as an input or output parameter or both. For example, [**RtlStringCbCopyUnicodeString**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcopyunicodestring) accepts the structure as an input parameter, [**RtlUnicodeStringCopyString**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopystring) accepts the structure as an output parameter, and [**RtlUnicodeStringCopy**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopy) accepts the structure as both an input and output parameter.
 
 The kernel-mode safe string functions provide the following features:
 
@@ -39,20 +38,13 @@ The kernel-mode safe string functions provide the following features:
 
 -   All safe string functions return an NTSTATUS value, with only one possible success code (STATUS\_SUCCESS).
 
--   Most safe string functions are available in both a byte-counted and a character-counted version. For example, [**RtlStringCbCat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata) concatenates two byte-counted strings and [**RtlStringCchCat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcata) concatenates two character-counted strings.
+-   Most safe string functions are available in both a byte-counted and a character-counted version. For example, [**RtlStringCbCata**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata) concatenates two byte-counted strings and [**RtlStringCchCata**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcata) concatenates two character-counted strings.
 
--   Most safe string functions are available in an extended, Ex-suffixed version that provides additional functionality. For example, [**RtlStringCbCatEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatexa) extends the functionality of [**RtlStringCbCat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata).
+-   Most safe string functions are available in an extended, Ex-suffixed version that provides additional functionality. For example, [**RtlStringCbCatExa**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatexa) extends the functionality of [**RtlStringCbCata**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata).
 
 This section includes the following topics:
 
 [Summary of Kernel-Mode Safe String Functions](summary-of-kernel-mode-safe-string-functions.md)
 
 [Importing Kernel-Mode Safe String Functions](importing-kernel-mode-safe-string-functions.md)
-
- 
-
- 
-
-
-
 

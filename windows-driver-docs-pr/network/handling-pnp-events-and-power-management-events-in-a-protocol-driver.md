@@ -1,7 +1,6 @@
 ---
 title: Handling PnP and power management events in a protocol driver
 description: Handling PnP Events and Power Management Events in a Protocol Driver
-ms.assetid: 97cc51f1-7d83-4bf1-87e3-7d986f54e7a1
 keywords:
 - protocol drivers WDK networking , power management
 - NDIS protocol drivers WDK , power management
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 # Handling PnP Events and Power Management Events in a Protocol Driver
 
-When the operating system issues a Plug and Play (PnP) I/O request packet (IRP) or a power management IRP to a target device object that represents a network interface card (NIC), NDIS intercepts the IRP. NDIS indicates the event to each bound protocol driver and each bound intermediate driver by calling the driver's [*ProtocolNetPnPEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function. In the call to *ProtocolNetPnPEvent*, NDIS passes a pointer to a [**NET\_PNP\_EVENT\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification) that contains a NET\_PNP\_EVENT structure. The NET\_PNP\_EVENT structure describes the PnP event or power management event being indicated. For more information about the protocol driver PnP interface, see [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md).
+When the operating system issues a Plug and Play (PnP) I/O request packet (IRP) or a power management IRP to a target device object that represents a network interface card (NIC), NDIS intercepts the IRP. NDIS indicates the event to each bound protocol driver and each bound intermediate driver by calling the driver's [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function. In the call to *ProtocolNetPnPEvent*, NDIS passes a pointer to a [**NET\_PNP\_EVENT\_NOTIFICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification) that contains a NET\_PNP\_EVENT structure. The NET\_PNP\_EVENT structure describes the PnP event or power management event being indicated. For more information about the protocol driver PnP interface, see [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md).
 
 The following list contains PnP and power management events, as indicated by the **NetEvent** code in the NET\_PNP\_EVENT structure:
 
@@ -29,17 +28,17 @@ The following list contains PnP and power management events, as indicated by the
 
     If the miniport adapter is in a low-power state, the protocol driver cannot issue any OID requests. This requirement is an additional power management restriction that is added to the other restrictions that apply when the driver stack is in the Paused state.
 
-    If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
+    If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
 
-    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver must stop generating new I/O requests and should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event).
+    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver must stop generating new I/O requests and should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event).
 
     For more information about set-power events, see [Handling PnP Events and Power Management Events in an Intermediate Driver](handling-pnp-events-and-power-management-events-in-an-intermediate-dri.md).
 
 -   **NetEventQueryPower**
 
-    Indicates a Query Power request, which queries whether the underlying miniport adapter can make a transition to a particular power state. A protocol driver should always succeed a **NetEventQueryPower** . After establishing an active connection, a protocol driver can call [**PoRegisterSystemState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregistersystemstate) to register a continuous busy state. As long as the state registration is in effect, the power manager does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver cancels the state registration by calling [**PoUnregisterSystemState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pounregistersystemstate). A protocol driver should never try to prevent the system from transitioning to the sleeping state by failing a **NetEventQueryRemoveDevice**. Note that a **NetEventQueryPower** is always followed by a **NetEventSetPower**. A **NetEventSetPower** that sets the device's current power state in effect cancels the **NetEventQueryPower**.
+    Indicates a Query Power request, which queries whether the underlying miniport adapter can make a transition to a particular power state. A protocol driver should always succeed a **NetEventQueryPower** . After establishing an active connection, a protocol driver can call [**PoRegisterSystemState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregistersystemstate) to register a continuous busy state. As long as the state registration is in effect, the power manager does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver cancels the state registration by calling [**PoUnregisterSystemState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pounregistersystemstate). A protocol driver should never try to prevent the system from transitioning to the sleeping state by failing a **NetEventQueryRemoveDevice**. Note that a **NetEventQueryPower** is always followed by a **NetEventSetPower**. A **NetEventSetPower** that sets the device's current power state in effect cancels the **NetEventQueryPower**.
 
-    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event).
+    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event).
 
 -   **NetEventQueryRemoveDevice**
 
@@ -53,15 +52,15 @@ The following list contains PnP and power management events, as indicated by the
 
     Indicates that the configuration has changed for a network component. For example, if a user changes the IP address for TCP/IP, NDIS indicates this event to the TCP/IP protocol with the **NetEventReconfigure** code. The protocol driver can, in rare circumstances, return a failure code if it is not able to apply the indicated configuration changes and there are no available default values. A failed attempt to allocate memory is an example of a case in which the protocol returns a failure code. Returning an error code can result in prompting the user to restart the system.
 
-    A protocol should validate **NetEventReconfigure**-related data passed to its [*ProtocolNetPnPEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event).
+    A protocol should validate **NetEventReconfigure**-related data passed to its [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event).
 
 -   **NetEventBindList**
 
-    Indicates to a protocol driver that its bind list processing order has been reconfigured. This list indicates a relative order to be applied to the protocol's bindings when processing, for example, a user request that might be routed to one of several bindings. The buffer passed with this event contains a list of device names formatted as NULL-terminated Unicode strings. The format of each device name is identical to the *DeviceName* parameter that is passed to a call to [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex).
+    Indicates to a protocol driver that its bind list processing order has been reconfigured. This list indicates a relative order to be applied to the protocol's bindings when processing, for example, a user request that might be routed to one of several bindings. The buffer passed with this event contains a list of device names formatted as NULL-terminated Unicode strings. The format of each device name is identical to the *DeviceName* parameter that is passed to a call to [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex).
 
-    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event).
+    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event).
 
-    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event).
+    A protocol should validate **NetEventBindList**-related data passed to its *ProtocolNetPnPEvent* function. For more information about such data, see [**NET\_PNP\_EVENT for Protocol Drivers**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event).
 
 -   **NetEventBindsComplete**
 
@@ -93,4 +92,4 @@ The following list contains PnP and power management events, as indicated by the
 
 The **Buffer** member of the NET\_PNP\_EVENT structure points to a buffer that contains information specific to the event being indicated.
 
-A protocol driver can complete the call to *ProtocolNetPnPEvent* asynchronously with [**NdisCompleteNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscompletenetpnpevent).
+A protocol driver can complete the call to *ProtocolNetPnPEvent* asynchronously with [**NdisCompleteNetPnPEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscompletenetpnpevent).

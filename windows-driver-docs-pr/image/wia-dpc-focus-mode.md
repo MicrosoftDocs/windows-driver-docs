@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_FOCUS\_MODE
 description: The WIA\_DPC\_FOCUS\_MODE property defines the current focus mode setting for a camera device.
-ms.assetid: d651c9f7-97ca-4fa5-bc52-2af1f7c2e241
 keywords: ["WIA_DPC_FOCUS_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A device driver enumerates the supported values of the WIA\_DPC\_FOCUS\_MODE property, and an application writes this property to set the focus mode for the camera device.
 
@@ -65,8 +63,7 @@ The following table describes the constants that are valid with the WIA\_DPC\_FO
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

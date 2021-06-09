@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Minidriver Property Sets
 description: DVD Decoder Minidriver Property Sets
-ms.assetid: c24685bd-ea20-4cc2-b419-feb1fa2ea03e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -37,13 +36,13 @@ These headings have the following meanings:
 
 -   **Property descriptor type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) structure.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) structure.
 
 -   **Property value type**
 
     A property has a value and the type of this value depends on the property. For example, a property that can be in one of only two states--on or off--typically has a Boolean value. A property that can assume integer values from 0 to 0xFFFFFFFF might have a ULONG value. More complex properties might have values that are arrays or structures.
 
-The property descriptor and property value above are the property-specific versions of the instance-specification and operation-data buffers that are discussed in [KS Properties, Events, and Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties--events--and-methods).
+The property descriptor and property value above are the property-specific versions of the instance-specification and operation-data buffers that are discussed in [KS Properties, Events, and Methods](./ks-properties--events--and-methods.md).
 
 A property request uses one of the following flags to specify the operation that is to be performed on the property:
 
@@ -53,7 +52,7 @@ A property request uses one of the following flags to specify the operation that
 
 -   KSPROPERTY\_TYPE\_SET
 
-All filter and pin objects support the basic-support operation on their properties. Whether they support the *get* and *Set* operations depends on the property. A property that represents an inherent capability of the filter or pin object is likely to require only a get operation. A property that represents a configurable setting might require only a set operation, although a get operation might also be useful for reading the current setting. For more information about using the get, set, and basic-support operations with DVD decoder properties, see [KS Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties).
+All filter and pin objects support the basic-support operation on their properties. Whether they support the *get* and *Set* operations depends on the property. A property that represents an inherent capability of the filter or pin object is likely to require only a get operation. A property that represents a configurable setting might require only a set operation, although a get operation might also be useful for reading the current setting. For more information about using the get, set, and basic-support operations with DVD decoder properties, see [KS Properties](./ks-properties.md).
 
 Properties query or change stream aspects. Several property sets are used for DVD decoders. All DVD decoder input streams support the DVD copyright protection property set in addition to the property sets outlined in this topic
 
@@ -74,10 +73,4 @@ The following property sets are defined for DVD decoder minidrivers:
 [KSPROPSETID\_Wave](kspropsetid-wave.md)
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Connecting to a Parallel Device
 description: Connecting to a Parallel Device
-ms.assetid: c05a1a1e-308a-4b9f-af43-761c4c14d6af
 keywords:
 - parallel devices WDK , connections
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_parclass_connect) request to obtain a [**PARCLASS\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/parallel/ns-parallel-_parclass_information) structure that contains:
+A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_parclass_connect) request to obtain a [**PARCLASS\_INFORMATION**](/windows-hardware/drivers/ddi/parallel/ns-parallel-_parclass_information) structure that contains:
 
 -   I/O resources allocated to the parallel port
 
@@ -26,12 +25,7 @@ A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://docs.microsof
 
 The callback routines provide functionality that a typical function driver needs. Using the callback routines is more efficient than using equivalent device control requests.
 
-A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_parclass_disconnect) request.
+A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISCONNECT**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_parclass_disconnect) request.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Thin Provisioning
 description: Thin Provisioning
-ms.assetid: 0D65DDCC-D207-4EA8-B5D6-56DF57221EE3
 ms.date: 10/04/2019
 ms.localizationpriority: medium
 ---
@@ -66,7 +65,7 @@ When a large file is deleted from the file system or a file system level trim is
 
 During the virtual machine (VM) creation, a Hyper-V host sends an inquiry about whether the storage device that the virtual hard disk (VHD) resides on supports UNMAP or TRIM commands. When a large file is deleted from the file system of a VM guest operating system, the guest operating system sends a file delete request to the virtual machine’s virtual hard disk (VHD) or VHD file (or VHDX file). The VM’s VHD or VHDX file tunnels the SCSI UNMAP request to the class driver stack of the Windows Hyper-V host, as follows:
 
-- If the VM has a VHD file, the VHD converts SCSI UNMAP or ATA TRIM commands into a [Data Set Management I/O control code](https://docs.microsoft.com/windows-hardware/drivers/storage/data-set-management-overview) TRIM request, and then sends the request to the host storage device.
+- If the VM has a VHD file, the VHD converts SCSI UNMAP or ATA TRIM commands into a [Data Set Management I/O control code](./data-set-management-overview.md) TRIM request, and then sends the request to the host storage device.
 - If the VM has a VHDX file, the VHD file system converts SCSI UNMAP or ATA TRIM commands into file system-level trim requests, and then sends the requests to the host operating system.
 
 Windows Hyper-V also supports IOCTL DSM TRIM calls from the guest operating system.

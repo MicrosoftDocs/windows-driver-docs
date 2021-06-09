@@ -1,7 +1,6 @@
 ---
 title: Loading an OpenGL Installable Client Driver
 description: Loading an OpenGL Installable Client Driver
-ms.assetid: 2b244bbf-f26c-4307-a347-a29e12c6d496
 keywords:
 - OpenGL ICD WDK display
 - loading drivers WDK display
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 The OpenGL runtime accesses the registry to determine which OpenGL installable client driver (ICD) to load. To load the OpenGL ICD, the OpenGL runtime:
 
--   Determines the name, version, and flags that are associated with the OpenGL ICD by calling the [**D3DKMTQueryAdapterInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo) function with the KMTQAITYPE\_UMOPENGLINFO value set in the **Type** member of the [**D3DKMT\_QUERYADAPTERINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo) structure that the *pData* parameter points to.
+-   Determines the name, version, and flags that are associated with the OpenGL ICD by calling the [**D3DKMTQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo) function with the KMTQAITYPE\_UMOPENGLINFO value set in the **Type** member of the [**D3DKMT\_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo) structure that the *pData* parameter points to.
 
 -   Checks the version number of the OpenGL ICD that **D3DKMTQueryAdapterInfo** returns to validate the version of the OpenGL ICD.
 
@@ -27,7 +26,7 @@ The OpenGL runtime accesses the registry to determine which OpenGL installable c
 
      
 
-To locate the name of the OpenGL ICD, [**D3DKMTQueryAdapterInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo) searches the registry in the following key:
+To locate the name of the OpenGL ICD, [**D3DKMTQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo) searches the registry in the following key:
 
 ```registry
 HKLM/System/CurrentControlSet/Control/Class/{Adapter GUID}/0000/
@@ -78,10 +77,4 @@ REG\_DWORD
 A flag bitmask of the 32-bit OpenGL ICD for 64-bit Windows Vista.
 
  
-
- 
-
-
-
-
 

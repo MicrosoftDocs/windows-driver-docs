@@ -1,7 +1,6 @@
 ---
 title: Sample Custom Property Page
 description: Sample Custom Property Page
-ms.assetid: 96dd5f08-1543-4e13-9344-767cd9e6df78
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,12 +17,8 @@ In the previous dialog box, a provider supplies a property page named Properties
 **Note**  A setup component can define more than one property page for its device or device class. Each tab should have a name that concisely describes the purpose of the page. The system does not check to make sure that the names are unique.
 
  
+## Related information
 
- 
-
- 
-
-
-
-
+* [Specific Requirements for Device Property Page Providers](specific-requirements-for-device-property-page-providers--property-pag.md)
+* [Types of Device Property Page Providers](types-of-device-property-page-providers.md)
 

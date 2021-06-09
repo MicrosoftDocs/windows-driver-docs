@@ -12,16 +12,16 @@ You can use the following example configuration XML to develop the configuration
 ```xml
 <?xml version="1.0"?>
 <PrintDeviceCapabilities
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-    xmlns:psk="http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
-    xmlns:psk3d="http://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d"
-    xmlns:psk3dx="http://schemas.microsoft.com/3dmanufacturing/2014/11/pskeywords3dextended"
-    xmlns:pskv="http://schemas.microsoft.com/3dmanufacturing/2014/11/pskeywordsvendor"
-    xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
-    xmlns:psf2="http://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2"
-    xmlns="http://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+    xmlns:xml="https://www.w3.org/XML/1998/namespace"
+    xmlns:psk="https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
+    xmlns:psk3d="https://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d"
+    xmlns:psk3dx="https://schemas.microsoft.com/3dmanufacturing/2014/11/pskeywords3dextended"
+    xmlns:pskv="https://schemas.microsoft.com/3dmanufacturing/2014/11/pskeywordsvendor"
+    xmlns:psf="https://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
+    xmlns:psf2="https://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2"
+    xmlns="https://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2"
     version="2">
     <CapabilitiesChangeID xsi:type="xsd:string">{9F58AF07-DCB6-4865-8CA3-A52EA5DCB05F}</CapabilitiesChangeID>
 

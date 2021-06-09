@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_IPV4_CHECKSUM_OFFLOAD
 description: WDI_TLV_IPV4_CHECKSUM_OFFLOAD is a TLV that contains checksum offload capabilities for IPv4.
-ms.assetid: FCC5880E-4323-4A24-98C6-CE7C84D03C16
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IPV4_CHECKSUM_OFFLOAD Network Drivers Starting with Windows Vista
@@ -33,8 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

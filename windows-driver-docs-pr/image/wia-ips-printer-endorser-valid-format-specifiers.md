@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS property lists the valid special formatting character sequences that can be embedded in the character string values for the WIA\_IPS\_PRINTER\_ENDORSER\_STRING property.
-ms.assetid: D7D6BA47-623A-4F8F-9E29-2C9043AD4C2F
 keywords: ["WIA_IPS_PRINTER_ENDORSER_VALID_FORMAT_SPECIFIERS Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid for the **WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS** property.
 
@@ -117,8 +115,7 @@ The special sequence L"$$" means the '$' character.
 
 This property is optional for the Imprinter/Endorser data source items. Not supported means that the printer/endorser device does not support any special format sequences.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Hardware Emulation Layer
 description: Hardware Emulation Layer
-ms.assetid: 79ca4e7f-f335-4e71-8abb-811d98976cc9
 keywords:
 - drawing WDK DirectDraw , hardware emulation layer
 - DirectDraw WDK Windows 2000 display , hardware emulation layer

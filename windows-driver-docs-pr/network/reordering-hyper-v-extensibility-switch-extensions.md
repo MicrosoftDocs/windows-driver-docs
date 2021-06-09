@@ -1,7 +1,6 @@
 ---
 title: Reordering Hyper-V Extensible Switch Extensions
 description: Reordering Hyper-V Extensible Switch Extensions
-ms.assetid: DAB7FAE0-1632-4FD1-8697-48553A51BD20
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -48,18 +47,11 @@ Name: Switch Extensibility Test Extension 1
 ## Related topics
 
 
-[Get-VMSwitch](https://docs.microsoft.com/powershell/module/hyper-v/get-vmswitch)
+[Get-VMSwitch](/powershell/module/hyper-v/get-vmswitch)
 
-[**Msvm\_EthernetSwitchExtension**](https://docs.microsoft.com/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
+[**Msvm\_EthernetSwitchExtension**](/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
 
-[**Msvm\_VirtualEthernetSwitchSettingData**](https://docs.microsoft.com/windows/desktop/HyperV_v2/msvm-virtualethernetswitchsettingdata)
-
- 
+[**Msvm\_VirtualEthernetSwitchSettingData**](/windows/desktop/HyperV_v2/msvm-virtualethernetswitchsettingdata)
 
  
-
-
-
-
-
 

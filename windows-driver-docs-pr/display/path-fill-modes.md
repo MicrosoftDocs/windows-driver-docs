@@ -1,7 +1,6 @@
 ---
 title: Path Fill Modes
 description: Path Fill Modes
-ms.assetid: fa1fb4b9-5ed6-44a2-8a9e-0c1c82f5ea39
 keywords:
 - GDI WDK Windows 2000 display , paths, fill modes
 - graphics drivers WDK Windows 2000 display , paths, fill modes

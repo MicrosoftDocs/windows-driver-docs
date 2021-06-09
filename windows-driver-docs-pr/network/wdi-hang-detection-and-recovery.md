@@ -1,7 +1,6 @@
 ---
 title: Hang detection and recovery
 description: After a command is issued to the IHV component, the host starts a timer.
-ms.assetid: 89133252-C08C-4ADC-A5EE-E46A91909337
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

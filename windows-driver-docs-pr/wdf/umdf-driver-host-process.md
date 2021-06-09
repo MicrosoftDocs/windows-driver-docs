@@ -1,7 +1,6 @@
 ---
 title: UMDF Driver Host Process
 description: This topic describes the User-Mode Driver Framework (UMDF) driver host process and how it works with other UMDF components. It applies to both UMDF versions 1 and 2.
-ms.assetid: 8b469c91-d33d-4fb0-8c7d-e90f86a1e339
 keywords:
 - driver host process WDK UMDF
 - User-Mode Driver Framework WDK , architecture

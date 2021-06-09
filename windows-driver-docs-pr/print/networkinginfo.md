@@ -1,7 +1,6 @@
 ---
 title: NetworkingInfo
 description: NetworkingInfo
-ms.assetid: 81c615d4-8a7c-4d28-a3ce-5233899e35cf
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

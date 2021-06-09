@@ -1,9 +1,8 @@
 ---
 title: ndiskd.rcvqueue
 description: The ndiskd.rcvqueue command displays information about a receive queue.
-ms.assetid: 776A459F-A698-4BF6-8DAD-BEB15858AD7F
 keywords: ["ndiskd.rcvqueue Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/26/2020
 topic_type:
 - apiref
 api_name:
@@ -15,15 +14,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.rcvqueue
 
-
 The **!ndiskd.rcvqueue** command displays information about a receive queue.
 
 ```console
-!ndiskd.rcvqueue [-handle <x>] [-filters] [-mem] [-verbose] [-rcvqueueverbosity <x>] 
+!ndiskd.rcvqueue -handle <x> [-filters] [-mem] [-verbose] [-rcvqueueverbosity <x>] 
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of a receive queue.
@@ -40,13 +37,11 @@ Shows additional details.
 <span id="_______-rcvqueueverbosity______"></span><span id="_______-RCVQUEUEVERBOSITY______"></span> *-rcvqueueverbosity*   
 Level of detail to display.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 To obtain the receive queue handle, first enter the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) command with no parameters to see the list of net adapters, their drivers, and their handles. In the following example, look for the Microsoft ISATAP Adapter \#2's NetAdapter handle, ffff8083e02ce1a0.
 
@@ -103,27 +98,16 @@ RECEIVE QUEUE
     Shared memory allocations
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
-
- 
-
- 
-
-
-
-
-
-

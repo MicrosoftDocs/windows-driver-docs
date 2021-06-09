@@ -1,7 +1,6 @@
 ---
 title: Getting started with UWP device apps
 description: Start here to begin building UWP device apps.
-ms.assetid: 6280E9CC-422B-4100-8B38-07BADD6A578A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,11 +14,11 @@ Start here to begin building UWP device apps.
 
 Device manufacturers can create a UWP device app that serves as a companion to their device. UWP device apps have more capabilities than regular UWP apps and can perform privileged operations, such as firmware updates. Also, UWP device apps can start from AutoPlay (on more devices than other apps can), automatically install the first time a device is connected, and extend the printer and camera experiences built into Windows.
 
-**Note**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](https://go.microsoft.com/fwlink/p/?LinkId=533279).
+**Note**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)).
 
  
 
-If you're looking for info about UWP mobile broadband apps, see [Mobile Broadband](https://go.microsoft.com/fwlink/p/?LinkID=301754).
+If you're looking for info about UWP mobile broadband apps, see [Mobile Broadband](../mobilebroadband/index.md).
 
 ## <span id="1._get_set_up"></span><span id="1._GET_SET_UP"></span>1. Get set up
 
@@ -50,8 +49,8 @@ If you don't need to develop drivers, you can use Microsoft Visual Studio Expres
 A UWP device app is a special kind of UWP app. So, before you develop your first UWP device app, get set up to build some regular UWP apps.
 
 -   [Sign up - register for a Microsoft Store developer account](https://go.microsoft.com/fwlink/p/?LinkId=302197)
--   [Get started with Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkID=267230)
--   See the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845)
+-   [Get started with Microsoft Visual Studio](/previous-versions/windows/apps/br211384(v=win.10))
+-   See the [Microsoft Store design principles](/windows/uwp/design/)
 
 ## <span id="3._learn_what_makes_windows_store_device_apps_special"></span><span id="3._LEARN_WHAT_MAKES_WINDOWS_STORE_DEVICE_APPS_SPECIAL"></span>3. Learn what makes UWP device apps special
 
@@ -64,18 +63,10 @@ Learn about the special things that you can do with a UWP device app and what it
 ## <span id="4._download_samples"></span><span id="4._DOWNLOAD_SAMPLES"></span>4. Download samples
 
 
-You can find device-related samples with the [Devices and sensors](https://go.microsoft.com/fwlink/p/?LinkID=302213) keyword in the sample gallery. Learn how APIs are used in the context of a full sample. You can tell a UWP device app because it includes a StoreManifest.xml file that associates it with device metadata. Those samples are tagged with the [UWP device app](https://go.microsoft.com/fwlink/p/?LinkID=299847) keyword.
+You can find device-related samples with the [Devices and sensors](/samples/browse/) keyword in the sample gallery. Learn how APIs are used in the context of a full sample. You can tell a UWP device app because it includes a StoreManifest.xml file that associates it with device metadata. Those samples are tagged with the [UWP device app](/samples/browse/) keyword.
 
 ## <span id="4._build_your_own_windows_store_device_app"></span><span id="4._BUILD_YOUR_OWN_WINDOWS_STORE_DEVICE_APP"></span>4. Build your own UWP device app
 
 
 To begin, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
-
- 
-
- 
-
-
-
-
 

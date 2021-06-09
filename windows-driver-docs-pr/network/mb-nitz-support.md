@@ -1,10 +1,9 @@
 ---
 title: MB NITZ support
 description: MB NITZ support
-ms.assetid: 94FE0380-C5EA-49F7-A649-0524C27F1A35
 keywords:
 - MB NITZ support, Mobile Broadband NITZ support
-ms.date: 03/13/2019
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
@@ -27,7 +26,8 @@ The following OID has been defined to support NITZ.
 
 | Service name | UUID | UUID value |
 | --- | --- | --- |
-| Microsoft Basic IP Connectivity Extensions | UUID_VOICEEXTENSIONS | 8d8b9eba-37be-449b-8f1e-61cb034a702e |
+| Microsoft Voice Extensions | UUID_VOICEEXTENSIONS | 8d8b9eba-37be-449b-8f1e-61cb034a702e |
+ 
 
 The following table specifies the UUID and command code for each CID, as well as whether the CID supports Set, Query, or Event (notification) requests. See each CID’s individual Section within this topic for more info about its parameters, data structures, and notifications. 
 
@@ -39,7 +39,7 @@ The following table specifies the UUID and command code for each CID, as well as
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_NITZ_INFO | MBIM_NITZ_INFO |
@@ -77,3 +77,25 @@ This unsolicited event provides the current network time and time zone informati
 ### Status Codes
 
 This CID only uses generic status codes defined in Section 9.4.5 of the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip).
+
+## OID Definitions
+
+* [OID_WWAN_NITZ](oid-wwan-nitz.md)
+
+## Hardware Lab Kit (HLK) Tests
+See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/SitePages/HWLabKit/Manual%20Controller%20Installation.aspx).
+
+In HLK Studio connect to hte device Cellular modem driver and run the test: [TestNitzInfo - GSM](/windows-hardware/test/hlk/testref/1b192aa8-6a84-4c5c-8750-a8f2edb98a9e).
+
+## Manual Tests
+### [NITZ] Time update while roaming on Cellular 
+1. Place the Cobalt device in an RF cage with Cellular disabled.
+1. Enable Airplane mode.
+1. Disable Ethernet and all other connections.
+1. Set the time mode to manual. 
+1. Set the time to 11:15AM 10/15/2016 UTC.
+1. Verify that the time is set to the value given in the system tray.
+1. Set the time mode to automatic. 
+1. Turn on Cellular. 
+1. Wait for the device to receive the NITZ information from the simulated cellular base station.
+1. Verify that the time is set to the value sent by the simulated base station.

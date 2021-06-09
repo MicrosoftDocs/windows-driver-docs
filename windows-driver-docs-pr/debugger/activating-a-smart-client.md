@@ -1,7 +1,6 @@
 ---
 title: Activating a Smart Client
 description: Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.
-ms.assetid: 7199dc95-e8fc-4f58-ab6e-c0141681113e
 keywords: ["Activating a Smart Client Windows Debugging"]
 ms.date: 02/28/2019
 topic_type:

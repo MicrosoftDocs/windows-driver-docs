@@ -1,80 +1,77 @@
 - name: "Parallel Devices Design Guide"
+  href: index.md
+- name: "Introduction to Parallel Ports and Devices"
 # Auto-expanded node
   items: 
-  - name: "Parallel Devices Design Guide"
-    href: index.md
   - name: "Introduction to Parallel Ports and Devices"
+    href: introduction-to-parallel-ports-and-devices.md
+  - name: "Physical Configuration of Parallel Ports"
+    href: physical-configuration-of-parallel-ports.md
+  - name: "Physical Configuration of Devices Attached to a Parallel Port"
+    href: physical-configuration-of-devices-attached-to-a-parallel-port.md
+- name: "System-Supplied Parallel Drivers"
 # Auto-expanded node
-    items: 
-    - name: "Introduction to Parallel Ports and Devices"
-      href: introduction-to-parallel-ports-and-devices.md
-    - name: "Physical Configuration of Parallel Ports"
-      href: physical-configuration-of-parallel-ports.md
-    - name: "Physical Configuration of Devices Attached to a Parallel Port"
-      href: physical-configuration-of-devices-attached-to-a-parallel-port.md
+  items: 
   - name: "System-Supplied Parallel Drivers"
+    href: system-supplied-parallel-drivers.md
+  - name: "Features of System-Supplied Parallel Drivers"
+    href: features-of-system-supplied-parallel-drivers.md
+  - name: "Device Stacks for Parallel Ports and Devices"
+    href: device-stacks-for-parallel-ports-and-devices.md
+  - name: "Parallel Device Interfaces, Internal Names, and Symbolic Links"
+    href: parallel-device-interfaces--internal-names--and-symbolic-links.md
+  - name: "IOCTL and Callback Support for Parallel Ports and Devices"
+    href: ioctl-and-callback-support-for-parallel-ports-and-devices.md
+- name: "Vendor-Supplied Parallel Drivers"
 # Auto-expanded node
-    items: 
-    - name: "System-Supplied Parallel Drivers"
-      href: system-supplied-parallel-drivers.md
-    - name: "Features of System-Supplied Parallel Drivers"
-      href: features-of-system-supplied-parallel-drivers.md
-    - name: "Device Stacks for Parallel Ports and Devices"
-      href: device-stacks-for-parallel-ports-and-devices.md
-    - name: "Parallel Device Interfaces, Internal Names, and Symbolic Links"
-      href: parallel-device-interfaces--internal-names--and-symbolic-links.md
-    - name: "IOCTL and Callback Support for Parallel Ports and Devices"
-      href: ioctl-and-callback-support-for-parallel-ports-and-devices.md
+  items: 
   - name: "Vendor-Supplied Parallel Drivers"
+    href: vendor-supplied-parallel-drivers.md
+  - name: "Requirements for Vendor-Supplied Parallel Drivers"
+    href: requirements-for-vendor-supplied-parallel-drivers.md
+  - name: "Operating a Parallel Port"
 # Auto-expanded node
     items: 
-    - name: "Vendor-Supplied Parallel Drivers"
-      href: vendor-supplied-parallel-drivers.md
-    - name: "Requirements for Vendor-Supplied Parallel Drivers"
-      href: requirements-for-vendor-supplied-parallel-drivers.md
     - name: "Operating a Parallel Port"
+      href: operating-a-parallel-port.md
+    - name: "Creating and Starting a Parallel Port"
+      href: creating-and-starting-a-parallel-port.md
+    - name: "Opening and Closing a Parallel Port"
+      href: opening-and-closing-a-parallel-port.md
+    - name: "Obtaining Information About a Parallel Port"
+      href: obtaining-information-about-a-parallel-port.md
+    - name: "Synchronizing the Use of a Parallel Port"
+      href: synchronizing-the-use-of-a-parallel-port.md
+    - name: "Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port"
+      href: selecting-and-deselecting-an-ieee-1284-device-attached-to-a-parallel-p.md
+    - name: "Setting and Clearing the Communication Mode on a Parallel Port"
+      href: setting-and-clearing-the-communication-mode-on-a-parallel-port.md
+    - name: "Connecting to an IEEE 1284.3 Data Link Device"
+      href: connecting-to-an-ieee-1284-3-data-link-device.md
+    - name: "Connecting an Interrupt Service Routine to a Parallel Port"
+      href: connecting-an-interrupt-service-routine-to-a-parallel-port.md
+  - name: "Operating a Parallel Device Attached to a Parallel Port"
 # Auto-expanded node
-      items: 
-      - name: "Operating a Parallel Port"
-        href: operating-a-parallel-port.md
-      - name: "Creating and Starting a Parallel Port"
-        href: creating-and-starting-a-parallel-port.md
-      - name: "Opening and Closing a Parallel Port"
-        href: opening-and-closing-a-parallel-port.md
-      - name: "Obtaining Information About a Parallel Port"
-        href: obtaining-information-about-a-parallel-port.md
-      - name: "Synchronizing the Use of a Parallel Port"
-        href: synchronizing-the-use-of-a-parallel-port.md
-      - name: "Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port"
-        href: selecting-and-deselecting-an-ieee-1284-device-attached-to-a-parallel-p.md
-      - name: "Setting and Clearing the Communication Mode on a Parallel Port"
-        href: setting-and-clearing-the-communication-mode-on-a-parallel-port.md
-      - name: "Connecting to an IEEE 1284.3 Data Link Device"
-        href: connecting-to-an-ieee-1284-3-data-link-device.md
-      - name: "Connecting an Interrupt Service Routine to a Parallel Port"
-        href: connecting-an-interrupt-service-routine-to-a-parallel-port.md
+    items: 
     - name: "Operating a Parallel Device Attached to a Parallel Port"
-# Auto-expanded node
-      items: 
-      - name: "Operating a Parallel Device Attached to a Parallel Port"
-        href: operating-a-parallel-device-attached-to-a-parallel-port.md
-      - name: "Opening and Using a Parallel Device"
-        href: opening-and-using-a-parallel-device.md
-      - name: "Connecting to a Parallel Device"
-        href: connecting-to-a-parallel-device.md
-      - name: "Obtaining Information about a Parallel Device"
-        href: obtaining-information-about-a-parallel-device.md
-      - name: "Locking and Unlocking a Parallel Port for Use by a Parallel Device"
-        href: locking-and-unlocking-a-parallel-port-for-use-by-a-parallel-device.md
-      - name: "Setting and Clearing a Communication Mode for a Parallel Device"
-        href: setting-and-clearing-a-communication-mode-for-a-parallel-device.md
-      - name: "Setting Attributes on a Parallel Device"
-        href: setting-attributes-on-a-parallel-device.md
-      - name: "Reading and Writing a Parallel Device"
-        href: reading-and-writing-a-parallel-device.md
-      - name: "Device-specific operations for I/O requests for parallel devices"
-        href: device-specific-operations-io-requests-parallel-devices.md
-      - name: "Device-specific operations for I/O requests for parallel ports"
-        href: device-specific-operations-io-requests-parallel-ports.md
-    - name: "Installing Parallel Ports and Devices"
-      href: installing-parallel-ports-and-devices.md
+      href: operating-a-parallel-device-attached-to-a-parallel-port.md
+    - name: "Opening and Using a Parallel Device"
+      href: opening-and-using-a-parallel-device.md
+    - name: "Connecting to a Parallel Device"
+      href: connecting-to-a-parallel-device.md
+    - name: "Obtaining Information about a Parallel Device"
+      href: obtaining-information-about-a-parallel-device.md
+    - name: "Locking and Unlocking a Parallel Port for Use by a Parallel Device"
+      href: locking-and-unlocking-a-parallel-port-for-use-by-a-parallel-device.md
+    - name: "Setting and Clearing a Communication Mode for a Parallel Device"
+      href: setting-and-clearing-a-communication-mode-for-a-parallel-device.md
+    - name: "Setting Attributes on a Parallel Device"
+      href: setting-attributes-on-a-parallel-device.md
+    - name: "Reading and Writing a Parallel Device"
+      href: reading-and-writing-a-parallel-device.md
+    - name: "Device-specific operations for I/O requests for parallel devices"
+      href: device-specific-operations-io-requests-parallel-devices.md
+    - name: "Device-specific operations for I/O requests for parallel ports"
+      href: device-specific-operations-io-requests-parallel-ports.md
+  - name: "Installing Parallel Ports and Devices"
+    href: installing-parallel-ports-and-devices.md

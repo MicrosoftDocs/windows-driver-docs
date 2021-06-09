@@ -1,7 +1,6 @@
 ---
 title: Minidriver-Supplied Halftone Patterns
 description: Minidriver-Supplied Halftone Patterns
-ms.assetid: db2e1c5c-f337-4875-980d-a75a54a4cece
 keywords:
 - GDI-supplied halftoning WDK Unidrv
 - minidriver-supplied halftoning WDK Unidrv
@@ -31,7 +30,7 @@ When GDI-supported halftone methods are being used, GDI allows specification of 
 
     where halftone.bin is a file containing a halftone pattern.
 
--   The \*HTCallbackID attribute allows you to indicate that you are implementing the [**IPrintOemUni::HalftonePattern**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method in a [rendering plug-in](rendering-plug-ins.md). A unique \***HTCallbackID** value must be provided for each pattern the **IPrintOemUni::HalftonePattern** method supports.
+-   The \*HTCallbackID attribute allows you to indicate that you are implementing the [**IPrintOemUni::HalftonePattern**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method in a [rendering plug-in](rendering-plug-ins.md). A unique \***HTCallbackID** value must be provided for each pattern the **IPrintOemUni::HalftonePattern** method supports.
 
 You can provide halftone pattern resources, an **IPrintOemUni::HalftonePattern** method, or both, as follows:
 
@@ -44,9 +43,4 @@ You can provide halftone pattern resources, an **IPrintOemUni::HalftonePattern**
 For more information about halftoning, see [Customized Halftoning](customized-halftoning.md).
 
  
-
- 
-
-
-
 

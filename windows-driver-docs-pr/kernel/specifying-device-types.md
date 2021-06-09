@@ -1,7 +1,6 @@
 ---
 title: Specifying Device Types
 description: Specifying Device Types
-ms.assetid: 32e179f9-ab11-4360-b2fd-4276c6b6b3a0
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,9 +12,9 @@ ms.localizationpriority: medium
 
 
 
-Each device object has a *device type*, which is stored in the **DeviceType** member of its [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. The device type represents the type of underlying hardware for the driver.
+Each device object has a *device type*, which is stored in the **DeviceType** member of its [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. The device type represents the type of underlying hardware for the driver.
 
-Every kernel-mode driver that creates a device object must specify an appropriate device type value when calling [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice). The **IoCreateDevice** routine uses the supplied device type to initialize the **DeviceType** member of the **DEVICE\_OBJECT** structure.
+Every kernel-mode driver that creates a device object must specify an appropriate device type value when calling [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice). The **IoCreateDevice** routine uses the supplied device type to initialize the **DeviceType** member of the **DEVICE\_OBJECT** structure.
 
 The system defines the following device type values, listed in alphabetical order:
 
@@ -91,9 +90,4 @@ FILE\_DEVICE\_*XXX* values in the range of 0 through 32767 are reserved for Micr
 If a type of hardware does not match any of the defined types, specify a value of either FILE\_DEVICE\_UNKNOWN, or a value within the range of 32768 through 65535.
 
  
-
- 
-
-
-
 

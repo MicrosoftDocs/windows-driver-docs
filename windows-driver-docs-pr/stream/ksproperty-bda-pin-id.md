@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_ID
 description: Clients use KSPROPERTY\_BDA\_PIN\_ID to retrieve the BDA identifier (ID) for a pin.
-ms.assetid: 6f7a4454-1294-4646-8e21-bfec9a14b612
 keywords: ["KSPROPERTY_BDA_PIN_ID Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,15 +54,13 @@ Clients use KSPROPERTY\_BDA\_PIN\_ID to retrieve the BDA identifier (ID) for a p
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value specifies the pin ID.
 
 When the network provider creates a pin for a filter using KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY, the BDA minidriver for the filter gives that pin an ID. KSPROPERTY\_BDA\_PIN\_ID returns this ID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,14 +80,7 @@ Requirements
 
 [**KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY**](ksmethod-bda-create-pin-factory.md)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
- 
-
-
-
-
-
 

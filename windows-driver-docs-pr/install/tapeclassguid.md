@@ -1,7 +1,6 @@
 ---
 title: TapeClassGuid
 description: TapeClassGuid
-ms.assetid: 308dc968-6c6d-4beb-a8bf-2233e859389d
 keywords: ["TapeClassGuid Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.date: 10/17/2018
 # TapeClassGuid
 
 
-TapeClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for tape [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_TAPE**](guid-devinterface-tape.md) class identifier for new instances of this class.
+TapeClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for tape [storage devices](../storage/index.md). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_TAPE**](guid-devinterface-tape.md) class identifier for new instances of this class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -46,11 +44,4 @@ Requirements
 [**GUID_DEVINTERFACE_TAPE**](guid-devinterface-tape.md)
 
  
-
- 
-
-
-
-
-
 

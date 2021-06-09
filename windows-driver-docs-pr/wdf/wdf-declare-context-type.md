@@ -1,7 +1,6 @@
 ---
 title: WDF_DECLARE_CONTEXT_TYPE macro
 description: The WDF_DECLARE_CONTEXT_TYPE macro creates a name and an accessor method for a driver's object-specific context space.
-ms.assetid: 5fd9950e-943a-4340-b8f1-125343effdf7
 keywords:
  - WDF_DECLARE_CONTEXT_TYPE macro
 ms.date: 08/23/2017
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The WDF_DECLARE_CONTEXT_TYPE macro creates a name and an accessor method for a driver's object-specific context space.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void WDF_DECLARE_CONTEXT_TYPE(
@@ -24,24 +22,20 @@ void WDF_DECLARE_CONTEXT_TYPE(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
 
-Return value
-------------
+## Return value
 
 This macro does not return a value.
 
-Remarks
--------
+## Remarks
 
-For more information about using this macro, see [Framework Object Context Space](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space).
+For more information about using this macro, see [Framework Object Context Space](./framework-object-context-space.md).
 
-Examples
---------
+## Examples
 
 The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object, registers the structure, and then invokes the WDF_DECLARE_CONTEXT_TYPE macro. The macro creates an accessor method for the context structure and names the method **WdfObjectGet_MY_REQUEST_CONTEXT**.
 
@@ -77,8 +71,7 @@ if (!NT_SUCCESS(status)) {
 pMyContext = WdfObjectGet_MY_REQUEST_CONTEXT(Request);
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -113,11 +106,4 @@ Requirements
 [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md)
 
  
-
- 
-
-
-
-
-
 

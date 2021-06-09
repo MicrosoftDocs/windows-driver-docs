@@ -1,7 +1,6 @@
 ---
 title: lmi
 description: The lmi extension displays detailed information about a module.
-ms.assetid: 00438edf-618a-401e-818f-24add7861487
 keywords: ["lmi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,8 +48,7 @@ Specifies a loaded module, either by name or by base address.
 
  
 
-Remarks
--------
+## Remarks
 
 Module addresses can be determined by using the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command.
 

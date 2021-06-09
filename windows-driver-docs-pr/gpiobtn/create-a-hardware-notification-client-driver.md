@@ -1,7 +1,6 @@
 ---
 title: Create a hardware notification client driver
 description: This section provides general guidance on the development of a hardware notification client driver that utilizes the KMDF class extension provided by Microsoft.
-ms.assetid: 348950d3-fb80-4800-a606-290d473aa412
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -27,42 +26,38 @@ This section provides general guidance on the development of a hardware notifica
     HWN_CLIENT_GET_STATE HwnClientGetState;
     ```
 
-3.  Implement the [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, which is the client driver entry point and responsible for initialization. For the hardware notification client driver, this function should handle the following:
+3.  Implement the [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, which is the client driver entry point and responsible for initialization. For the hardware notification client driver, this function should handle the following:
 
-    -   Calling [**WDF\_DRIVER\_CONFIG\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdf_driver_config_init) to initialize the driver’s [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure.
+    -   Calling [**WDF\_DRIVER\_CONFIG\_INIT**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdf_driver_config_init) to initialize the driver’s [**WDF\_DRIVER\_CONFIG**](/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure.
 
-    -   Calling [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) to create a framework driver object for the client driver.
+    -   Calling [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) to create a framework driver object for the client driver.
 
-    -   Defining the contents of the [**HWN\_CLIENT\_REGISTRATION\_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/ns-hwnclx-_hwn_client_registration_packet), including the callback function pointers for use by the class extension. For more information about the required callback functions, see [Hardware notifications reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+    -   Defining the contents of the [**HWN\_CLIENT\_REGISTRATION\_PACKET**](/windows-hardware/drivers/ddi/hwnclx/ns-hwnclx-_hwn_client_registration_packet), including the callback function pointers for use by the class extension. For more information about the required callback functions, see [Hardware notifications reference](/windows-hardware/drivers/ddi/index).
 
-    -   Calling [HwNRegisterClient](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnregisterclient) to register the client driver with the class extension.
+    -   Calling [HwNRegisterClient](/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnregisterclient) to register the client driver with the class extension.
 
-4.  Implement the [*EVT\_WDF\_DRIVER\_DEVICE\_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function, which is responsible for performing device initialization operations when the PnP manager reports the existence of a device. For the hardware notification client driver, this function should handle the following:
+4.  Implement the [*EVT\_WDF\_DRIVER\_DEVICE\_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function, which is responsible for performing device initialization operations when the PnP manager reports the existence of a device. For the hardware notification client driver, this function should handle the following:
 
-    -   Calling [**HwNProcessAddDevicePreDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnprocessadddevicepredevicecreate), which supplies the device prepare/release and entry/exit callbacks needed by the KMDF to transition the device into different states.
+    -   Calling [**HwNProcessAddDevicePreDeviceCreate**](/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnprocessadddevicepredevicecreate), which supplies the device prepare/release and entry/exit callbacks needed by the KMDF to transition the device into different states.
 
-    -   Calling [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a framework device object.
+    -   Calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a framework device object.
 
-    -   Calling [**HwNProcessAddDevicePostDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnprocessadddevicepostdevicecreate) to create I/O queues.
+    -   Calling [**HwNProcessAddDevicePostDeviceCreate**](/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnprocessadddevicepostdevicecreate) to create I/O queues.
 
-5.  Implement the defined [**HWN\_CLIENT\_INITIALIZE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_initialize_device) function, which is called by the class extension to prepare the hardware notification controller for use.
+5.  Implement the defined [**HWN\_CLIENT\_INITIALIZE\_DEVICE**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_initialize_device) function, which is called by the class extension to prepare the hardware notification controller for use.
 
-6.  Implement the defined [**HWN\_CLIENT\_UNINITIALIZE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_uninitialize_device) function, which is called by the class extension to uninitialize the hardware notification controller.
+6.  Implement the defined [**HWN\_CLIENT\_UNINITIALIZE\_DEVICE**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_uninitialize_device) function, which is called by the class extension to uninitialize the hardware notification controller.
 
-7.  Implement the defined [**HWN\_CLIENT\_QUERY\_DEVICE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_query_device_information) function, which is called by the class extension. This function is responsible for retrieving the attributes of a hardware notification component.
+7.  Implement the defined [**HWN\_CLIENT\_QUERY\_DEVICE\_INFORMATION**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_query_device_information) function, which is called by the class extension. This function is responsible for retrieving the attributes of a hardware notification component.
 
-8.  Implement the defined [**HWN\_CLIENT\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_start_device) function, which is called by the class extension. This function is responsible for starting the hardware notification controller and for allocating ACPI resources for the client driver.
+8.  Implement the defined [**HWN\_CLIENT\_START\_DEVICE**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_start_device) function, which is called by the class extension. This function is responsible for starting the hardware notification controller and for allocating ACPI resources for the client driver.
 
-9.  Implement the defined [**HWN\_CLIENT\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_stop_device) function, which is called by the class extension. This function is responsible for stopping the hardware notification controller and for releasing ACPI resources used by the client driver.
+9.  Implement the defined [**HWN\_CLIENT\_STOP\_DEVICE**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_stop_device) function, which is called by the class extension. This function is responsible for stopping the hardware notification controller and for releasing ACPI resources used by the client driver.
 
-10. Implement the defined [**HWN\_CLIENT\_SET\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_set_state), which is called by the class extension. This function is responsible for setting hardware notification component states.
+10. Implement the defined [**HWN\_CLIENT\_SET\_STATE**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_set_state), which is called by the class extension. This function is responsible for setting hardware notification component states.
 
-11. Implement the defined [**HWN\_CLIENT\_GET\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_get_state), which is called by the class extension. This function is responsible for getting the current values of the hardware notification components. When the input buffer is NULL, meaning the user did not specify the specific hardware notification state, this function should return state information for all hardware notification components.
+11. Implement the defined [**HWN\_CLIENT\_GET\_STATE**](/windows-hardware/drivers/ddi/hwnclx/nc-hwnclx-hwn_client_get_state), which is called by the class extension. This function is responsible for getting the current values of the hardware notification components. When the input buffer is NULL, meaning the user did not specify the specific hardware notification state, this function should return state information for all hardware notification components.
 
 ## <span id="related_topics"></span>Related topics
 [Hardware notifications](hardware-notifications-support.md)
-
-[Hardware notifications reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
-
-
 

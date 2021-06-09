@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE
 description: The WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE property contains the physical horizontal dimensions of scanner's document feeder, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-ms.assetid: e5c43028-5f2f-4e06-8f74-acd7cbb84755
 keywords: ["WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

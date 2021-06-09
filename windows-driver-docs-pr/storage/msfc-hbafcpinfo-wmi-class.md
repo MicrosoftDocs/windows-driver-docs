@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HBAFCPInfo WMI Class
 description: MSFC\_HBAFCPInfo WMI Class
-ms.assetid: db11c2f8-3d68-47f0-ae77-42cd20812673
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

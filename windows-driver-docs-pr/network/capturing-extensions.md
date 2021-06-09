@@ -1,7 +1,6 @@
 ---
 title: Capturing Extensions
 description: Capturing Extensions
-ms.assetid: A8C2E550-4B1F-4DDB-B97F-1F7B6B74F5E7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,7 @@ A capturing extension has the following requirements and restrictions:
 
 -   A capturing extension must be developed as an NDIS filter driver that supports the extensible switch interface.
 
-    For more information about filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers2.md).
+    For more information about filter drivers, see [NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md).
 
     For more information on how to write a capturing extension, see [Writing Hyper-V Extensible Switch Extensions](writing-hyper-v-extensible-switch-extensions.md).
 
@@ -27,7 +26,7 @@ A capturing extension has the following requirements and restrictions:
 
     For more information about the INF requirements for modifying filter drivers, see [Configuring an INF File for a Modifying Filter Driver](configuring-an-inf-file-for-a-modifying-filter-driver.md).
 
--   A capturing extension can monitor packets over the ingress and egress extensible switch data path. However, this type of extension must always call [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to forward the packets to underlying drivers in the extensible switch driver stack and not complete them.
+-   A capturing extension can monitor packets over the ingress and egress extensible switch data path. However, this type of extension must always call [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to forward the packets to underlying drivers in the extensible switch driver stack and not complete them.
 
 -   A capturing extension must not modify the data within the packets nor add port destinations to the out-of-band (OOB) data of the packet. The extension must not exempt the delivery of the packet to any extensible switch port.
 
@@ -48,10 +47,4 @@ A capturing extension has the following requirements and restrictions:
     Once bound to an extensible switch instance, the layering of capturing extensions in the extensible switch driver stack can be reordered. For more information, see [Reordering Hyper-V Extensible Switch Extensions](reordering-hyper-v-extensibility-switch-extensions.md).
 
  
-
- 
-
-
-
-
 

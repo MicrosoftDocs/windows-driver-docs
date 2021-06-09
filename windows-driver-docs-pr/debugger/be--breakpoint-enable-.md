@@ -1,7 +1,6 @@
 ---
 title: be (Breakpoint Enable)
 description: The be command restores one or more breakpoints that were previously disabled.
-ms.assetid: 110fe8b0-0bc7-49ce-9c66-326d5897c0ca
 keywords: ["be (Breakpoint Enable) Windows Debugging"]
 ms.date: 09/18/2019
 topic_type:
@@ -53,8 +52,7 @@ Specifies the ID numbers of the breakpoints to enable. You can specify any numbe
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all existing breakpoints, their ID numbers, and their status.
 

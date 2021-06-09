@@ -1,7 +1,6 @@
 ---
 title: Leading and Trailing Edge Stream Pointers
 description: Leading and Trailing Edge Stream Pointers
-ms.assetid: 73ab974f-8034-421f-980a-2393d84ec54c
 keywords:
 - stream pointers WDK AVStream , leading and trailing edge
 - leading edge stream pointers WDK AVStream
@@ -20,7 +19,7 @@ By default, each AVStream queue contains a *leading edge* stream pointer. The le
 
 When a new frame arrives in a queue, AVStream sets the leading edge to point to this frame, provided that the leading edge does not already point to a frame.
 
-To obtain a pointer to the leading edge stream pointer, the minidriver calls [**KsPinGetLeadingEdgeStreamPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingetleadingedgestreampointer).
+To obtain a pointer to the leading edge stream pointer, the minidriver calls [**KsPinGetLeadingEdgeStreamPointer**](/windows-hardware/drivers/ddi/ks/nf-ks-kspingetleadingedgestreampointer).
 
 The minidriver is responsible for advancing the leading edge in all but the two situations summarized in the following table.
 
@@ -53,7 +52,7 @@ See [Introduction to Stream Pointers](introduction-to-stream-pointers.md) For mo
 
 ### Specifying a Trailing Edge Stream Pointer
 
-Minidrivers can specify that a queue have a trailing edge stream pointer. The trailing edge usually indicates the oldest frame of interest to the minidriver. To specify a trailing edge, set the KSPIN\_FLAG\_DISTINCT\_TRAILING\_EDGE flag in the **Flags** member of the relevant [**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex) structure. Then call [**KsPinGetTrailingEdgeStreamPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingettrailingedgestreampointer) to obtain a pointer to the trailing edge stream pointer.
+Minidrivers can specify that a queue have a trailing edge stream pointer. The trailing edge usually indicates the oldest frame of interest to the minidriver. To specify a trailing edge, set the KSPIN\_FLAG\_DISTINCT\_TRAILING\_EDGE flag in the **Flags** member of the relevant [**KSPIN\_DESCRIPTOR\_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex) structure. Then call [**KsPinGetTrailingEdgeStreamPointer**](/windows-hardware/drivers/ddi/ks/nf-ks-kspingettrailingedgestreampointer) to obtain a pointer to the trailing edge stream pointer.
 
 When the trailing edge advances, the reference count on the frame to which it previously pointed drops to zero and the frame completes. If the frame is the last contained within its IRP, a sink pin completes the IRP to the caller; a source pin sends the IRP to the pin to which it is connected.
 
@@ -72,9 +71,4 @@ The middle queue is an example of [Cloning Stream Pointers](cloning-stream-point
 The rightmost queue shows how the minidriver can maintain reference count for a frame behind the trailing edge by using a stream pointer clone.
 
  
-
- 
-
-
-
 

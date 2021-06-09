@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION
 description: The SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION bug check has a value of 0x000000C1. This indicates that the driver wrote to an invalid section of the special pool.
-ms.assetid: 4d5a3d95-de39-4e15-aba8-33257a6f0677
 keywords: ["Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION", "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION"]
 ms.date: 05/23/2017
 topic_type:
@@ -102,13 +101,11 @@ Parameter 4 indicates the type of violation.
 
 The \_POOL\_TYPE codes are enumerated in ntddk.h. In particular, zero indicates nonpaged pool and one indicates paged pool.
 
-Cause
------
+## Cause
 
 A driver has written to an invalid section of the special pool.
 
-Resolution
-----------
+## Resolution
 
 Obtain a backtrace of the current thread. This backtrace will usually reveal the source of the error.
 

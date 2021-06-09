@@ -1,7 +1,6 @@
 ---
 title: Modifying the 1394 Configuration ROM
 description: Modifying the 1394 Configuration ROM
-ms.assetid: 3dc4fe53-a26b-44c7-96ef-e7bb6181c958
 keywords:
 - IEEE 1394 WDK buses , modifying Configuration ROMs
 - 1394 WDK buses , modifying Configuration ROMs
@@ -24,10 +23,7 @@ A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM
 
 2.  Drivers can use virtual physical device objects (PDOs) to emulate hardware in ways that facilitate the testing of device drivers.
 
-    Device emulation allows developers to test drivers for devices that they have not yet received. Hardware emulation drivers can expose a virtual 1394 device on the 1394 bus. Developers can then debug a driver for the new hardware on another system. For more information about device emulations, see [IEEE 1394 Hardware Emulation Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/ieee-1394-hardware-emulation-drivers).
+    Device emulation allows developers to test drivers for devices that they have not yet received. Hardware emulation drivers can expose a virtual 1394 device on the 1394 bus. Developers can then debug a driver for the new hardware on another system. For more information about device emulations, see [IEEE 1394 Hardware Emulation Drivers](./ieee-1394-hardware-emulation-drivers.md).
 
 ## Related topics
-[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom)  
-
-
-
+[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](./retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom.md)

@@ -1,7 +1,6 @@
 ---
 title: Converting a WDK sources file to a Visual Studio project
 description: Using Nmake2msBuild to convert WDK source files to a Visual Studio project.
-ms.assetid: 6030317B-5068-40FD-8C9A-0B7A48C82B31
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,20 +19,20 @@ For most Windows 7 WDK projects that were built using Build.exe, you can use the
 
 The [Nmake2MsBuild](nmake2msbuild.md) tool performs a rule-based mapping of the contents of a *sources* file to the contents of a Visual Studio C++ project file (.VcxProj). For each build macro that is to be converted, there is a corresponding conversion rule in a properties file (.props) that is consumed by MSBuild and instrumented during build. In the MSBuild environment, properties, items and metadata on those items are consumed by the build system. Each macro in the *sources* file is mapped to either an MSBuild property, item, or item metadata, as specified by the rule. By default, if no rule is present, a macro named A with the value B is converted to Property A with the value B. The initial conversion step involves a mapping of NMake syntax in a *makefile.inc* or *sources* file to MSBuild syntax in an associated property file (.props). Each macro in the NMake file is converted to a property in a properties file (.props). During build time, these properties are evaluated, and the evaluated values of certain properties are then mapped to various other properties, items or metadata, as specified by a conversion rule.
 
-For example, the USER\_C\_FLAGS macro in a*sources* file is used to specify command-line parameters to be passed to the compiler (cl.exe) during the build. In the MSBuild environment, the ClCompile item list contains the source code files that will be compiled. The ClCompile item list is consumed by the compiler in the [CL Task](https://docs.microsoft.com/visualstudio/msbuild/cl-task?view=vs-2015). The AdditionalOptions metadata on each item in the list determines the additional flags passed to the compiler (cl.exe). Therefore, the value of the USER\_C\_FLAGS macro should be mapped to the AdditionalOptions item metadata for items of type ClCompile. In the initial conversion step, the USER\_C\_FLAGS macro in a sources file is converted to an MSBuild property, also named USER\_C\_FLAGS in a generated file called *sources.props*. The mapping of the evaluated value of the USER\_C\_FLAGS property to the AdditionalOptions metadata occurs at build time, as shown in the following example:
+For example, the USER\_C\_FLAGS macro in a*sources* file is used to specify command-line parameters to be passed to the compiler (cl.exe) during the build. In the MSBuild environment, the ClCompile item list contains the source code files that will be compiled. The ClCompile item list is consumed by the compiler in the [CL Task](/visualstudio/msbuild/cl-task). The AdditionalOptions metadata on each item in the list determines the additional flags passed to the compiler (cl.exe). Therefore, the value of the USER\_C\_FLAGS macro should be mapped to the AdditionalOptions item metadata for items of type ClCompile. In the initial conversion step, the USER\_C\_FLAGS macro in a sources file is converted to an MSBuild property, also named USER\_C\_FLAGS in a generated file called *sources.props*. The mapping of the evaluated value of the USER\_C\_FLAGS property to the AdditionalOptions metadata occurs at build time, as shown in the following example:
 
 ```
   <!-- Contains rules to map compiler and linker switches -->
   <ItemDefinitionGroup>
     <ClCompile>
       ...
-      <AdditionalOptions>%(AdditionalOptions) $(User_C_Flags)</AdditonalOptions>
+      <AdditionalOptions>%(AdditionalOptions) $(User_C_Flags)</AdditionalOptions>
       ...
     </ClCompile>
   </ItemDefinitionGroup>
 ```
 
-The mapping shown in the preceding example is from the PostToolsetRules.props file. The example mapping uses an MSBuild ItemDefinitionGroup to specify that $(User\_C\_Flags) should be appended to all items of type ClCompile within the AdditonalOptions metadata. You can find the properties files used in the conversion process in the C:\\Program Files (x86)\\Windows Kits\\8.0\\bin\\conversion directory.
+The mapping shown in the preceding example is from the PostToolsetRules.props file. The example mapping uses an MSBuild ItemDefinitionGroup to specify that $(User\_C\_Flags) should be appended to all items of type ClCompile within the AdditionalOptions metadata. You can find the properties files used in the conversion process in the C:\\Program Files (x86)\\Windows Kits\\8.0\\bin\\conversion directory.
 
 All of the conversion rules are specified using standard MSBuild syntax.
 
@@ -131,14 +130,7 @@ Converted projects do not support VS .Filters files.
 
 [Nmake2MsBuild](nmake2msbuild.md)
 
-[Creating a Driver From Existing Source Files](https://docs.microsoft.com/windows-hardware/drivers)
+[Creating a Driver From Existing Source Files](/windows-hardware/drivers)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: TCP/IP Offload Overview
 description: TCP/IP Offload Overview
-ms.assetid: 1f074ce5-2614-47a5-9ee0-a5e43f05273d
 keywords:
 - network drivers WDK , TCP/IP offload
 - TCP/IP offload WDK networking
@@ -11,7 +10,7 @@ keywords:
 - task offload WDK TCP/IP transport
 - connection offload WDK TCP/IP transport
 - packets WDK networking , TCP/IP offload
-ms.date: 04/20/2017
+ms.date: 06/21/2019
 ms.localizationpriority: medium
 ---
 
@@ -33,6 +32,8 @@ Beginning with Windows Vista, the Windows operating system supports the followin
 -   Large send offload version 2
 
 -   Connection offload
+
+Starting in Windows 10, version 2004, Windows also supports UDP Segmentation Offload (USO).
 
 The TCP/IP transport that is provided beginning with Windows Vista supports TCP/IP offload services for both IPv4 and IPv6 packets.
 

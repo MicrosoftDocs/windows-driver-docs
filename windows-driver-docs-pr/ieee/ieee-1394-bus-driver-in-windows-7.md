@@ -1,7 +1,6 @@
 ---
 title: IEEE 1394 Bus Driver in Windows 7
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver that supports faster speeds and alternative media as defined in the IEEE-1394b specification.
-ms.assetid: 3744C1D5-E411-4E47-9154-40E15626250D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,7 +30,7 @@ A client driver must wait until I/O requests sent to the new 1394 bus driver are
 
 ## Configuration ROM Retrieval
 
-The new 1394 bus driver tries to use asynchronous block transactions at faster bus speeds to retrieve the contents of a node's configuration ROM. The legacy 1394 bus driver uses asynchronous quadlet reads at S100 speed—or 100 megabits per second (Mbps). The 1394ohci.sys bus driver also uses the values that are specified in **generation** and **max\_rom** entries of the node's configuration ROM header to improve the retrieval of the remaining content of the configuration ROM. For more information about how the new 1394 bus driver retrieves the contents of a node's configuration ROM, see [Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom).
+The new 1394 bus driver tries to use asynchronous block transactions at faster bus speeds to retrieve the contents of a node's configuration ROM. The legacy 1394 bus driver uses asynchronous quadlet reads at S100 speed—or 100 megabits per second (Mbps). The 1394ohci.sys bus driver also uses the values that are specified in **generation** and **max\_rom** entries of the node's configuration ROM header to improve the retrieval of the remaining content of the configuration ROM. For more information about how the new 1394 bus driver retrieves the contents of a node's configuration ROM, see [Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](./retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom.md).
 
 ## IEEE-1394-1995 PHY Support
 
@@ -47,13 +46,13 @@ The default behavior of the 1394ohci.sys bus driver is to optimize the gap count
 
 Gap count optimization occurs only if the 1394ohci.sys bus driver determines that the local node is the bus manager.
 
-The 1394ohci.sys bus driver determines whether a device complies with IEEE-1394a by the speed setting in the node's self-id packet. If a node sets both of the bits in the speed (sp) field in the self-id packet, then 1394ohci.sys considers the node to comply with IEEE-1394b. If the speed field contains any other value, then 1394ohci.sys considers the node to comply with IEEE-1394a. The gap count value that is used is based on table E-1 in the IEEE-1394a specification, which provides the gap count as a function of hops. The 1394ohci.sys bus driver does not compute the gap count. You can change the default gap count behavior by using a registry value. For more information, see [Modifying the Default Behavior of the IEEE 1394 Bus Driver](https://docs.microsoft.com/windows-hardware/drivers/ieee/modifying-the-default-behavior-of-the-ieee-1394-bus-driver).
+The 1394ohci.sys bus driver determines whether a device complies with IEEE-1394a by the speed setting in the node's self-id packet. If a node sets both of the bits in the speed (sp) field in the self-id packet, then 1394ohci.sys considers the node to comply with IEEE-1394b. If the speed field contains any other value, then 1394ohci.sys considers the node to comply with IEEE-1394a. The gap count value that is used is based on table E-1 in the IEEE-1394a specification, which provides the gap count as a function of hops. The 1394ohci.sys bus driver does not compute the gap count. You can change the default gap count behavior by using a registry value. For more information, see [Modifying the Default Behavior of the IEEE 1394 Bus Driver](./modifying-the-default-behavior-of-the-ieee-1394-bus-driver.md).
 
 ## Device Driver Interface (DDI) Changes
 
-In Windows 7, the 1394 DDIs were changed to support faster speeds as defined by the 1394b specification and improved to simplify the development of 1394 client drivers. For more information about the general DDI changes that the new 1394 bus driver supports, see [Device Driver Interface (DDI) Changes in Windows 7](https://docs.microsoft.com/windows-hardware/drivers/ieee/device-driver-interface--ddi--changes-in-windows-7).
+In Windows 7, the 1394 DDIs were changed to support faster speeds as defined by the 1394b specification and improved to simplify the development of 1394 client drivers. For more information about the general DDI changes that the new 1394 bus driver supports, see [Device Driver Interface (DDI) Changes in Windows 7](./device-driver-interface--ddi--changes-in-windows-7.md).
 
 ## Related topics
 
-[The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack)  
-[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom)  
+[The IEEE 1394 Driver Stack](./the-ieee-1394-driver-stack.md)  
+[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](./retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom.md)

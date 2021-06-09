@@ -1,7 +1,6 @@
 ---
 title: Using I/O Targets in UMDF
 description: Using I/O Targets in UMDF
-ms.assetid: 5633242c-ffab-4af5-9650-7449395deb6b
 keywords:
 - user-mode drivers WDK UMDF , I/O targets
 - UMDF WDK , I/O targets
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 # Using I/O Targets in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 When a driver receives an I/O request, the driver might be able to process the request by itself, or it might require the assistance of other drivers. If the driver requires assistance, it can forward the request to another driver, or it can create one or more new requests and send them to another driver.
 

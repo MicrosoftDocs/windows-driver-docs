@@ -1,7 +1,6 @@
 ---
 title: RPC State Information Internals
 description: RPC State Information Internals
-ms.assetid: fac4a1e4-e1ec-41f2-8de9-073a04a979be
 keywords: ["RPC debugging, RPC state information internals"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

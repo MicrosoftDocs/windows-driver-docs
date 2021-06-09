@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE
 description: The THIRD_PARTY_FILE_SYSTEM_FAILURE bug check has a value of 0x00000108. This indicates that an unrecoverable problem has occurred in a third-party file system or file system filter.
-ms.assetid: 1ed82617-b0f0-4b41-9af9-b309b6b75dfd
 keywords: ["Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE", "THIRD_PARTY_FILE_SYSTEM_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,15 +58,13 @@ The THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE bug check has a value of 0x00000108. Thi
 
  
 
-Cause
------
+## Cause
 
 One possible cause of this bug check is disk corruption. Corruption in the third-party file system or bad blocks (sectors) on the hard disk can induce this error. Corrupted SCSI and IDE drivers can also adversely affect the Windows operating system's ability to read and write to disk, thus causing the error.
 
 Another possible cause is depletion of nonpaged pool memory. If the nonpaged pool is completely depleted, this error can stop the system.
 
-Resolution
-----------
+## Resolution
 
 **To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 

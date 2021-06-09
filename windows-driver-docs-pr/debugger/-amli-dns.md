@@ -1,7 +1,6 @@
 ---
 title: amli dns
 description: The amli dns extension displays an ACPI namespace object.
-ms.assetid: 7db937ba-109f-4f4e-8dd3-4aa5d0dc13b2
 keywords: ["amli dns Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -44,8 +43,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 If neither *Name* nor *Address* is specified, the entire ACPI namespace tree is displayed recursively. The **/s** parameter is always assumed in this case, even if it is not specified.
 

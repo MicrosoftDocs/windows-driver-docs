@@ -1,7 +1,6 @@
 ---
 title: bd (Breakpoint Disable)
 description: The bd command disables, but does not delete, previously set breakpoints.
-ms.assetid: 9b408f4a-6036-41d7-b89a-3e7841c50a90
 keywords: ["bd (Breakpoint Disable) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Specifies the ID numbers of the breakpoints to disable. You can specify any numb
 
 For more information about how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 When a breakpoint is disabled, the system does not check whether the conditions that are specified in the breakpoint are valid.
 

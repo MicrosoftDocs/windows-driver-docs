@@ -1,7 +1,6 @@
 ---
 title: 'REMOTE_NDIS_INITIALIZE_MSG'
-Description: 'This message is sent by the host to a Remote NDIS device to initialize the network connection.'
-ms.assetid: 08735ee8-7a4c-4a3d-9082-27c61cfd15e8
+description: 'This message is sent by the host to a Remote NDIS device to initialize the network connection.'
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
@@ -68,8 +67,7 @@ This message is sent by the host to a Remote NDIS device to initialize the netwo
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_DRIVER_BLOCKED
 description: CM_PROB_DRIVER_BLOCKED
-ms.assetid: dfe5f8f9-8430-4f80-9b1c-179f699617f8
 keywords:
 - CM_PROB_DRIVER_BLOCKED
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DRIVER_BLOCKED
+# Code 48 - CM_PROB_DRIVER_BLOCKED
 
-This function is reserved for system use.
-
-The system will not load the driver because it is listed in the [Windows Driver Protection](https://docs.microsoft.com/windows-hardware/drivers) database supplied by [Windows Update](https://docs.microsoft.com/windows-hardware/drivers)*.*
+This Device Manager error message indicates that the system will not load the driver because it is listed in the Windows Driver Protection database supplied by Windows Update.
 
 ## Error Code
 

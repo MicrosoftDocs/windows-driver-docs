@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_HW\_CONFIG
 description: The WIA\_DIP\_HW\_CONFIG property indicates the type of connection that a device is using. The WIA service creates and maintains this property, and only the WIA service can change it.
-ms.assetid: c79e9651-120c-4f99-83d2-1920f7fccc73
 keywords: ["WIA_DIP_HW_CONFIG Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DIP\_HW\_CONFIG property to determine the device's connection type.
 
@@ -73,8 +71,7 @@ The following table describes the possible values for WIA\_DIP\_HW\_CONFIG.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

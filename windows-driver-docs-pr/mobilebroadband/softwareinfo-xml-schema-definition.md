@@ -1,14 +1,13 @@
 ---
 title: SoftwareInfo XML Schema Definition
 description: SoftwareInfo XML Schema Definition
-ms.assetid: 7b09ffc6-0f69-4710-988b-4952823da72e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # SoftwareInfo XML Schema Definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following is the namespace of the SoftwareInfo XML schema:
 
@@ -170,12 +169,12 @@ The following is a definition of the SoftwareInfo schema.
   </xs:simpleType>
 
   <xs:simpleType name="UnicodeIdentifierType">
-    <xs:restriction base="tns:UnicodeIdentifierCharSetType" /> 
+    <xs:restriction base="tns:UnicodeIdentifierCharSetType" />
   </xs:simpleType>
 
   <xs:simpleType name="UnicodeIdentifierCharSetType">
   <xs:restriction base="tns:AllowedUnicodeCharSetType">
-    <xs:pattern value="[^!#$%'()\*\+,/:;=\?@\[\\\]^_`\|]+" /> 
+    <xs:pattern value="[^!#$%'()\*\+,/:;=\?@\[\\\]^_`\|]+" />
   </xs:restriction>
   </xs:simpleType>
 
@@ -282,12 +281,3 @@ The following is a definition of the SoftwareInfo schema.
 
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

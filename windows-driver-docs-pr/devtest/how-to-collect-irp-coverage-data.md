@@ -1,7 +1,6 @@
 ---
 title: How to Collect IRP Coverage Data
 description: How to Collect IRP Coverage Data
-ms.assetid: f65422fe-f524-41c1-a532-a2c615d65f72
 keywords:
 - Driver Coverage Toolkit WDK , collecting data
 ms.date: 04/20/2017
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following steps describe how to collect coverage data of I/O request packets (IRPs) by using the Driver Coverage tools and [Driver Coverage filter driver](driver-coverage-filter-driver.md). The tools are available as part of the [Device Fundamentals Tests](device-fundamentals-tests.md), under the Coverage category.
 
-For information about setting up the WDK and the Visual Studio test environment, see [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers). For information about selecting and configuring tests and tool parameters, see [How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers) and [Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers).
+For information about setting up the WDK and the Visual Studio test environment, see [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers). For information about selecting and configuring tests and tool parameters, see [How to select and configure the Device Fundamentals tests](/windows-hardware/drivers) and [Device Fundamentals Test Parameters](/windows-hardware/drivers).
 
 1.  Install the [Driver Coverage filter driver](driver-coverage-filter-driver.md) on the test computer.
 
@@ -27,7 +26,7 @@ For information about setting up the WDK and the Visual Studio test environment,
 
     -   To install the Driver Coverage filter driver as an upper-filter driver or a lower-filter driver for the device(s) use the *UpperFilter* parameter. For information about the coverage filter driver and guidelines about how to install the driver, see [Driver Coverage filter driver](driver-coverage-filter-driver.md)
 
-    For information running the tools, see [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers) and [How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers).
+    For information running the tools, see [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers) and [How to select and configure the Device Fundamentals tests](/windows-hardware/drivers).
 
 2.  Erase the current IRP coverage data.
 
@@ -72,10 +71,4 @@ For information about setting up the WDK and the Visual Studio test environment,
     When the last device has been disabled for IRP coverage, the filter driver will no longer load whenever you restart the test computer. However, to unload the filter driver from memory, you must restart the test computer.
 
  
-
- 
-
-
-
-
 

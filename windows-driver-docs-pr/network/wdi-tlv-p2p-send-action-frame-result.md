@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT
 description: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT is a TLV that contains information about an Action Frame that was sent to a peer.
-ms.assetid: DA469DF2-4C59-495C-A4B5-DC7B3B157566
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT Network Drivers Starting with Windows Vista
@@ -33,8 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

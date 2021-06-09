@@ -1,7 +1,6 @@
 ---
 title: OID_SWITCH_PORT_PROPERTY_DELETE
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_PROPERTY_DELETE to notify extensible switch extensions about the deletion of a policy property for an extensible switch port.
-ms.assetid: BA8AB5D9-FF2C-4E16-B09F-B09E3EC19B90
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_PORT_PROPERTY_DELETE Network Drivers Starting with Windows Vista
@@ -13,14 +12,13 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE to notify extensible switch extensions about the deletion of a policy property for an extensible switch port.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_DELETE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_delete_parameters) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a buffer that contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_DELETE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_delete_parameters) structure.
 
-Remarks
--------
+## Remarks
 
-A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE. All other types of extensions must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the next extension in the extensible switch driver stack.
+A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE. All other types of extensions must call [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the next extension in the extensible switch driver stack.
 
-For guidelines on how to handle an OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE, see [Managing Port Policies](https://docs.microsoft.com/windows-hardware/drivers/network/managing-port-policies).
+For guidelines on how to handle an OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE, see [Managing Port Policies](./managing-port-policies.md).
 
 ### Return Status Codes
 
@@ -78,8 +76,7 @@ If the forwarding extension does not complete the OID set request of OID\_SWITCH
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -102,20 +99,15 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_custom)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_custom)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_vlan)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_vlan)
 
-[**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest)
-
- 
+[**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest)
 
  
-
-
-
 

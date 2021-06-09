@@ -1,8 +1,8 @@
 ---
-title: Percent of machines without a kernel mode crash
-description: The measure aggregates telemetry from a 14-day sliding window into a percentage of machines that haven’t experienced a kernel mode crash 
+title: Percent of machines with a kernel mode crash
+description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have experienced a kernel mode crash 
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---
 
@@ -17,18 +17,20 @@ A Kernel Mode Crash (KMC) is caused by a kernel error which halts the Operating 
 |Attribute|Value|
 |----|----|
 |**Audience**|Standard|
-|**Time period**|14 day sliding window|
+|**Time period**|7 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
-|**Passing criteria**|>= 96% machines did not encounter a kernel mode crash|
-|**Measure ID**|19888712|
+|**Passing criteria**|<= 1% machines did encounter a kernel mode crash|
+|**Cohort-enabled**|Yes|
+|**Minimum population per cohort**|500 machines|
+|**Measure ID**|26118008|
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 14-day sliding window into a **percentage of machines that haven’t experienced a KMC.**
-2. *Non Crashing Machines = Count(machines that have installed the driver without a KMC)*
+1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have experienced a KMC.**
+2. *Crashing Machines = Count(machines that have installed the driver with a KMC)*
 3. *Total Machines = Count(machines that successfully installed the driver)*
 
 ### Final calculation
 
-*Percentage of Machines without a KMC = Non Crashing Machines / Total Machines*
+*Percentage of Machines without a KMC = Crashing Machines / Total Machines*

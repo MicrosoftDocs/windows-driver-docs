@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_TRANSLATION_FAILED
 description: CM_PROB_TRANSLATION_FAILED
-ms.assetid: b131327a-93ff-476b-8257-09a3dfc424be
 keywords:
 - CM_PROB_TRANSLATION_FAILED
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_TRANSLATION_FAILED
+# Code 33 - CM_PROB_TRANSLATION_FAILED
 
-This function is reserved for system use.
-
-Resource translation failed for the device.
+This Device Manager error message indicates that resource translation failed for the device.
 
 ## Error Code
 

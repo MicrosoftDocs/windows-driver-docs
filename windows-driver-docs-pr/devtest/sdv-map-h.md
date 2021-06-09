@@ -1,7 +1,6 @@
 ---
 title: Sdv-map.h
 description: Sdv-map.h
-ms.assetid: c230fb86-fe65-416b-bd3e-a0ab7270576d
 keywords:
 - output files WDK Static Driver Verifier
 - Sdv-map.h WDK Static Driver Verifier

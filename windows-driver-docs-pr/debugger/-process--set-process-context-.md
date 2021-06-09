@@ -1,7 +1,6 @@
 ---
 title: .process (Set Process Context)
 description: The .process command specifies which process is used for the process context.
-ms.assetid: f454faef-bc28-43f1-b511-bcee0c12fc24
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,8 +70,7 @@ Specifies the address of the process that you want. (More precisely, this parame
 
 For more information about the process context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 Typically, when you are doing kernel debugging, the only visible user-mode address space is the one that is associated with the current process.
 

@@ -1,9 +1,8 @@
 ---
 title: pte
 description: The pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address.
-ms.assetid: e5603e58-8d9f-4693-bca2-a319080187cc
 keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory entry (PDE)", "PDE (page directory entry)", "pte Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -14,7 +13,6 @@ ms.localizationpriority: medium
 ---
 
 # !pte
-
 
 The **!pte** extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address.
 
@@ -46,8 +44,7 @@ Kdexts.dll
 
 For information about page tables, page directories, and an explanation of the status bits, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 If one parameter is supplied and this parameter is an address in the region of memory where the page tables are stored, the debugger treats this as the *PTE* parameter. This parameter is taken as the actual address of the desired PTE, and the debugger will display this PTE and the corresponding PDE.
 
@@ -162,70 +159,3 @@ On an x86 or x64 target computer, the status bits for the PDE and the PTE are sh
 </tr>
 </tbody>
 </table>
-
- 
-
-On an Itanium target computer, the status bits for the PDE and the PTE are slightly different from those of the PPE. The Itanium PPE bits are as follows:
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Display when set</th>
-<th align="left">Display when clear</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>V</p></td>
-<td align="left"></td>
-<td align="left"><p>Valid.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>U</p></td>
-<td align="left"><p>K</p></td>
-<td align="left"><p>Owner (user mode or kernel mode).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>D</p></td>
-<td align="left"><p>-</p></td>
-<td align="left"><p>Dirty.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>A</p></td>
-<td align="left"><p>-</p></td>
-<td align="left"><p>Accessed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>W</p></td>
-<td align="left"><p>R</p></td>
-<td align="left"><p>Writeable or read-only. Only on multiprocessor computers and any computer running Windows Vista or later.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>E</p></td>
-<td align="left"><p>-</p></td>
-<td align="left"><p>Execute.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>C</p></td>
-<td align="left"><p>-</p></td>
-<td align="left"><p>Copy on write.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-

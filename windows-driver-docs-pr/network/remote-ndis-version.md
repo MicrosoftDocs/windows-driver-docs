@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS Version
 description: Remote NDIS Version
-ms.assetid: d7f1b3b7-fdfc-45d6-bb62-19b475d466c6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

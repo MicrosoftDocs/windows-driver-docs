@@ -1,7 +1,6 @@
 ---
 title: UEFI USB function protocol
 description: UEFI USB function protocol
-ms.assetid: eac35cf4-82b4-4d7e-ae69-8f506f12ae5d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_ENDORSER\_STRING
 description: The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
-ms.assetid: c51a2941-9101-4749-8fa7-b9f3bbcb0803
 keywords: ["WIA_DPS_ENDORSER_STRING Imaging Devices"]
 topic_type:
 - apiref
@@ -33,8 +32,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets the WIA\_DPS\_ENDORSER\_STRING property by using the valid character set that is reported in the [**WIA\_DPS\_ENDORSER\_CHARACTERS**](wia-dps-endorser-characters.md) property. The WIA minidriver should endorse documents only if a string is set in WIA\_DPS\_ENDORSER\_STRING. An empty string means that the endorser functionality is disabled.
 
@@ -60,8 +58,7 @@ The time of day, in the form HH:MM:SS.
 <span id="_YEAR__"></span><span id="_year__"></span>$YEAR$   
 The year, in the form YYYY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

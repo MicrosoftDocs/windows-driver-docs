@@ -1,7 +1,6 @@
 ---
 title: Driver-Specific Bins
 description: Driver-Specific Bins
-ms.assetid: 4c014e64-9e82-4058-9ec9-51769102f815
 keywords:
 - device-specific bins WDK printer
 ms.date: 04/20/2017

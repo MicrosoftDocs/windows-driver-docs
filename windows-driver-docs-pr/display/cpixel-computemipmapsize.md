@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeMipMapSize method
 description: The CPixel ComputeMipMapSize method determines the amount of memory required to allocate a mipmap texture.
-ms.assetid: f60883df-9200-4ae7-b130-21a6892e14be
 keywords: ["ComputeMipMapSize method Display Devices", "ComputeMipMapSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipMapSize method"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeMipMapSize** method determines the amount of memory required to allocate a mipmap texture.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 static UINT  ComputeMipMapSize(
@@ -32,8 +30,7 @@ static UINT  ComputeMipMapSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *cpWidth*
 Specifies the width in pixels of the mipmap texture.
@@ -47,18 +44,15 @@ Specifies the number of levels of the mipmap texture.
 *Format*
 Uses a value from the D3DFORMAT enumeration to specify the surface format.
 
-Return value
-------------
+## Return value
 
 Returns the size, in bytes, of the mipmap texture.
 
-Remarks
--------
+## Remarks
 
 For more information about D3DFORMAT, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

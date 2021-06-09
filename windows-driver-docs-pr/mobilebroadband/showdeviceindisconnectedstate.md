@@ -1,14 +1,13 @@
 ---
 title: ShowDeviceInDisconnectedState
 description: ShowDeviceInDisconnectedState
-ms.assetid: f2f517dd-68e5-4013-83ee-777579562db3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ShowDeviceInDisconnectedState
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ShowDeviceInDisconnectedState element should be set to **false** because it does not apply to service metadata packages in Windows 8, Windows 8.1, and Windows 10.
 

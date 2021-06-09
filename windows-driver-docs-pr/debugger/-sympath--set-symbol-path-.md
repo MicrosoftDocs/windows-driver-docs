@@ -1,7 +1,6 @@
 ---
 title: .sympath (Set Symbol Path)
 description: The .sympath command sets or alters the symbol path. The symbol path specifies locations where the debugger looks for symbol files.
-ms.assetid: 32146871-a59f-4c93-b886-137c5ecf5c99
 keywords: ["Set Symbol Path (.sympath) command", "symbol files and paths, Set Symbol Path (.sympath) command", ".sympath (Set Symbol Path) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,8 +59,7 @@ A fully qualified path or a list of fully qualified paths. Multiple paths are se
 
 For details and other ways to change this path, see [Symbol Path](symbol-path.md).
 
-Remarks
--------
+## Remarks
 
 New symbol information will not be loaded when the symbol path is changed. You can use the [**.reload (Reload Module)**](-reload--reload-module-.md) command to reload symbols.
 

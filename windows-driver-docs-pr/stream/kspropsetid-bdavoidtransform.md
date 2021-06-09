@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaVoidTransform
 description: KSPROPSETID\_BdaVoidTransform
-ms.assetid: a204a221-891a-4039-bae9-634b9f678290
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

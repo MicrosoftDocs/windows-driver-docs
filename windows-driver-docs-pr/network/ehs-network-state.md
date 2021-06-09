@@ -1,7 +1,6 @@
 ---
 title: eHS_NETWORK_STATE enumeration
 description: The eHS_NETWORK_STATE enumeration indicates whether a network is a hotspot network.
-ms.assetid: a833d226-e2cf-41f9-a926-5b1f6daa03af
 keywords: 
  - eHS_NETWORK_STATE enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,13 +9,12 @@ ms.localizationpriority: medium
 
 # eHS\_NETWORK\_STATE enumeration
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **eHS\_NETWORK\_STATE** enumeration indicates whether a network is a hotspot network.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _eHS_NETWORK_STATE { 
@@ -27,8 +25,7 @@ typedef enum _eHS_NETWORK_STATE {
 } eHS_NETWORK_STATE;
 ```
 
-Constants
----------
+## Constants
 
 <a href="" id="hs-network-state-not-a-hotspot"></a>**HS\_NETWORK\_STATE\_NOT\_A\_HOTSPOT**  
 Indicates the network is not a hotspot network.
@@ -42,8 +39,7 @@ Indicates the device can connect automatically to the hotspot network.
 <a href="" id="hs-network-state-max"></a>**HS\_NETWORK\_STATE\_MAX**  
 Indicates an out-of-range value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

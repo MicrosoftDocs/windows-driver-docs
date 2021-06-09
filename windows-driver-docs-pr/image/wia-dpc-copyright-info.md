@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_COPYRIGHT\_INFO
 description: The WIA\_DPC\_COPYRIGHT\_INFO property contains the copyright notification.
-ms.assetid: 6945f121-46db-4287-a31a-80c26bd852da
 keywords: ["WIA_DPC_COPYRIGHT_INFO Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 A device uses the WIA\_DPC\_COPYRIGHT\_INFO property to populate the Copyright field in every EXIF image that it captures.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

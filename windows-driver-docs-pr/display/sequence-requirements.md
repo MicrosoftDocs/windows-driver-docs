@@ -1,7 +1,6 @@
 ---
 title: Sequence Requirements
 description: Sequence Requirements
-ms.assetid: ee716286-f455-463d-906d-6f1b9fb8f227
 keywords:
 - video decoding WDK DirectX VA , sequence requirements
 - decoding video WDK DirectX VA , sequence requirements

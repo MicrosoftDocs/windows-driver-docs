@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.Services Section
 description: Each per-Models DDInstall.Services section contains one or more INF AddService directives that reference additional INF-writer-defined sections in an INF file.
-ms.assetid: 30efb094-cc18-4c01-8851-4bc5dba1ae1d
 keywords:
 - INF DDInstall.Services Section Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 Each per-Models <em>DDInstall</em>**.Services** section contains one or more [**INF AddService directives**](inf-addservice-directive.md) that reference additional INF-writer-defined sections in an INF file.
 
-```ini
+```inf
 [install-section-name.Services] |
 [install-section-name.nt.Services] |
 [install-section-name.ntx86.Services] |
@@ -57,8 +56,7 @@ This optional entry specifies the section that must be processed during the inst
 
 **Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 
-Remarks
--------
+## Remarks
 
 <em>DDInstall</em>**.Services** sections should have the same platform and operating system decorations as their related [***DDInstall***](inf-ddinstall-section.md) sections. For example, an <em>install-section-name</em>**.ntx86** section would have a corresponding <em>install-section-name</em>**.ntx86.Services** section.
 
@@ -66,12 +64,11 @@ The specified *DDInstall* section must be referenced in a device/models-specific
 
 For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-Examples
---------
+## Examples
 
 This example shows the <em>DDInstall</em>**.Services** section for the **Ser_Inst** section shown as an example for the [**INF *DDInstall* section**](inf-ddinstall-section.md).
 
-```ini
+```inf
 [Ser_Inst.Services]
 AddService=sermouse, 0x00000002, sermouse_Service_Inst,\
                 sermouse_EventLog_Inst 
@@ -98,7 +95,7 @@ AddService = mouclass,, mouclass_Service_Inst, mouclass_EventLog_Inst
 
 This example shows the <em>install-section-name</em>**.NT.Services** section and its service-install-sections in the INF file for the system-supplied WDM audio device/driver shown as an example for the [**INF *DDInstall* section**](inf-ddinstall-section.md).
 
-```ini
+```inf
 [WDMPNPB003_Device.NT.Services]
 AddService = wdmaud,0x00000000,wdmaud_Service_Inst
 AddService = swmidi,0x00000000,swmidi_Service_Inst

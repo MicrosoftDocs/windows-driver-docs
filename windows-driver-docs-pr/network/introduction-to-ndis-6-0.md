@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS 6.0
 description: Introduction to NDIS 6.0
-ms.assetid: cb5040be-ddd0-46c9-a3e4-f3ca88cd4c95
 keywords:
 - network drivers WDK , NDIS
 - NDIS WDK , about NDIS
@@ -28,7 +27,7 @@ This section includes the following topics:
 
 [Simplified Driver Model](simplified-driver-model.md)
 
-For a description of the differences between NDIS 6.0 and earlier versions, and for detailed information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0).
+For a description of the differences between NDIS 6.0 and earlier versions, and for detailed information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0).
 
 ## Related topics
 
@@ -42,11 +41,4 @@ For a description of the differences between NDIS 6.0 and earlier versions, and 
 [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DxgkDdiUpdatePageDirectory function
 description: The DxgkDdiUpdatePageDirectory function is reserved for system use. Do not implement it in your driver.
-ms.assetid: 91f81165-a63c-44bb-8898-9cc85c2a6e45
 keywords: ["DxgkDdiUpdatePageDirectory function Display Devices"]
 topic_type:
 - apiref
@@ -22,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiUpdatePageDirectory* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS APIENTRY DxgkDdiUpdatePageDirectory(
@@ -32,8 +30,7 @@ NTSTATUS APIENTRY DxgkDdiUpdatePageDirectory(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hDevice*
 This parameter is reserved for system use.
@@ -41,8 +38,7 @@ This parameter is reserved for system use.
 *pUpdatePageDirectory*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

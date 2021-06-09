@@ -1,7 +1,6 @@
 ---
 title: JavaScript API Reference
 description: Use the JavaScript API in combination with a Bidi XML file to provide support over a USB connection to a print device.
-ms.assetid: 604DF74E-AEF1-43DC-81B2-566A94B1CE8E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,10 +30,10 @@ Parameters
 
 *scriptContext*
 
-\[in\] An [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
+\[in\] An [**IPrinterScriptContext**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
 *printerStream*
 
-\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
+\[in\] An [IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
 *schemaRequests*
 
 \[in\] Array object containing all of the requested Bidi query strings.
@@ -61,13 +60,13 @@ Parameters
 
 *scriptContext*
 
-\[in\] An [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
+\[in\] An [**IPrinterScriptContext**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
 *printerStream*
 
-\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
+\[in\] An [IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
 *printerBidiSchemaElement*
 
-\[in\] An [IPrinterBidiSchemaElement](https://docs.microsoft.com/windows-hardware/drivers/print/iprinterbidischemaelement-interface) object that contains all the data associated with the Bidi Schema Value to set.
+\[in\] An [IPrinterBidiSchemaElement](./iprinterbidischemaelement-interface.md) object that contains all the data associated with the Bidi Schema Value to set.
 Return values
 
 | Return value | Description                                                                                                                                                                          |
@@ -91,7 +90,7 @@ Parameters
 \[in\] An **IPrinterScriptContext** object that provides access to relevant property bags.
 *printerStream*
 
-\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read access to the USB bus.
+\[in\] An [IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read access to the USB bus.
 *printerBidiSchemaResponses*
 
 \[out\] Object that the script uses to store all responses to query keys.
@@ -123,13 +122,13 @@ Parameters
 
 *jobScriptContext*
 
-\[in\] An [**IPrinterScriptUsbJobContext**](https://docs.microsoft.com/windows-hardware/drivers/print/iprinterscriptusbjobcontext) object that gives the manufacturer's JavaScript code access to the job property bag and the persistent data stream(s).
+\[in\] An [**IPrinterScriptUsbJobContext**](./iprinterscriptusbjobcontext.md) object that gives the manufacturer's JavaScript code access to the job property bag and the persistent data stream(s).
 *printerStream*
 
 \[in\] An **IPrinterScriptableSequentialStream** object, that the manufacturer's JavaScript code can use to read and write data to the print device.
 *printerBidiSchemaResponses*
 
-\[out\] An [**IPrinterBidiSchemaResponses**](https://docs.microsoft.com/windows-hardware/drivers/print/iprinterbidischemaresponses) object that the manufacturer's JavaScript code can use to return any Bidi Schema value changes/updates.
+\[out\] An [**IPrinterBidiSchemaResponses**](./iprinterbidischemaresponses.md) object that the manufacturer's JavaScript code can use to return any Bidi Schema value changes/updates.
 
 | Return value | Description                                                                             |
 |--------------|-----------------------------------------------------------------------------------------|
@@ -279,9 +278,6 @@ Return values
 
 
 ## Related topics
-[**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
-[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
-[USB Bidi Extender](usb-bidi-extender.md)  
-
-
-
+[**IPrinterScriptContext**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
+[IPrinterScriptableSequentialStream](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
+[USB Bidi Extender](usb-bidi-extender.md)

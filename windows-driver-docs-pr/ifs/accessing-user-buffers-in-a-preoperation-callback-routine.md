@@ -1,7 +1,6 @@
 ---
 title: Accessing User Buffers in a Preoperation Callback Routine
 description: Accessing User Buffers in a Preoperation Callback Routine
-ms.assetid: 16e6a9e0-3a92-471f-98e6-9a4e8eb7d4a6
 keywords:
 - preoperation callback routines WDK file system minifilter , buffers
 ms.date: 04/20/2017
@@ -14,11 +13,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_accessing_user_buffers_in_a_preoperation_callback_routine_if"></span><span id="DDK_ACCESSING_USER_BUFFERS_IN_A_PREOPERATION_CALLBACK_ROUTINE_IF"></span>
 
 
-A minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) should treat a buffer in an IRP-based I/O operation as follows:
+A minifilter driver's [**preoperation callback routine**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) should treat a buffer in an IRP-based I/O operation as follows:
 
--   Check whether an MDL exists for the buffer. The MDL pointer can be found in the *MdlAddress* or *OutputMdlAddress* parameter in the [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) for the operation. Minifilter drivers can call [**FltDecodeParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdecodeparameters) to query for the MDL pointer.
+-   Check whether an MDL exists for the buffer. The MDL pointer can be found in the *MdlAddress* or *OutputMdlAddress* parameter in the [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) for the operation. Minifilter drivers can call [**FltDecodeParameters**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdecodeparameters) to query for the MDL pointer.
 
-    One method for obtaining a valid MDL is to look for the IRP\_MN\_MDL flag in the **MinorFunction** member of the I/O parameter block, [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block), in the callback data. The following example shows how to check for the IRP\_MN\_MDL flag.
+    One method for obtaining a valid MDL is to look for the IRP\_MN\_MDL flag in the **MinorFunction** member of the I/O parameter block, [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block), in the callback data. The following example shows how to check for the IRP\_MN\_MDL flag.
 
     ```ManagedCPlusPlus
     NTSTATUS status;
@@ -31,7 +30,7 @@ A minifilter driver's [**preoperation callback routine**](https://docs.microsoft
     }
     ```
 
-    However, the IRP\_MN\_MDL flag can be set only for read and write operations. It is best to use [**FltDecodeParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdecodeparameters) to retrieve an MDL, because the routine checks for a valid MDL for any operation. In the following example, only the MDL parameter is returned if valid.
+    However, the IRP\_MN\_MDL flag can be set only for read and write operations. It is best to use [**FltDecodeParameters**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdecodeparameters) to retrieve an MDL, because the routine checks for a valid MDL for any operation. In the following example, only the MDL parameter is returned if valid.
 
     ```ManagedCPlusPlus
     NTSTATUS status;
@@ -41,7 +40,7 @@ A minifilter driver's [**preoperation callback routine**](https://docs.microsoft
     status = FltDecodeParameters(CallbackData, &ReadMdl, NULL, NULL, NULL);
     ```
 
--   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) to obtain the system address for the buffer and then use this address to access the buffer.
+-   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to obtain the system address for the buffer and then use this address to access the buffer.
 
     Continuing from the previous example, the following code obtains the system address.
 
@@ -57,7 +56,7 @@ A minifilter driver's [**preoperation callback routine**](https://docs.microsoft
     }
     ```
 
--   If there is no MDL for the buffer, use the buffer address to access the buffer. To ensure that a user-space buffer address is valid, the minifilter driver must use a routine such as [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), enclosing all buffer references in **try**/**except** blocks.
+-   If there is no MDL for the buffer, use the buffer address to access the buffer. To ensure that a user-space buffer address is valid, the minifilter driver must use a routine such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), enclosing all buffer references in **try**/**except** blocks.
 
 A preoperation callback routine should treat a buffer in a fast I/O operation as follows:
 
@@ -68,9 +67,4 @@ A preoperation callback routine should treat a buffer in a fast I/O operation as
 For operations that can be fast I/O or IRP-based, all buffer references should be enclosed in **try**/**except** blocks. Although you do not have to enclose these references for IRP-based operations that use buffered I/O, the **try**/**except** blocks are a safe precaution.
 
  
-
- 
-
-
-
 

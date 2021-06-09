@@ -1,7 +1,6 @@
 ---
 title: WaveCyclic Latency
 description: WaveCyclic Latency
-ms.assetid: 6de639c6-ddd5-4013-8d67-00731c328f47
 keywords:
 - WaveCyclic latency WDK audio
 - silence intervals WDK audio
@@ -21,12 +20,7 @@ The fact that the WaveCyclic port driver tries to accumulate up to 40 millisecon
 
 After a period of near starvation, a KMixer stream can contain intervals of silence. If WaveCyclic has received only enough wave data from KMixer to maintain thirty rather than forty milliseconds of extra data in the DMA buffer, WaveCyclic begins writing silence into the DMA buffer following the end of the valid data from KMixer. This policy ensures that if starvation occurs and the device reads past the end of the valid data, the audio device renders silence instead of stale or uninitialized data.
 
-The amount of silence written to the DMA buffer is kept fairly small, and if KMixer does succeed in supplying the WaveCyclic port driver with additional data before the silence has been played, that data overwrites the silence in the buffer. In the absence of starvation, the audio device receives a continuous stream of mixed data without intervals of forced silence. When you are debugging your driver, however, you might see your miniport driver's [**IMiniportWaveCyclicStream::Silence**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-silence) method being called even though your audio renderer is not starving.
+The amount of silence written to the DMA buffer is kept fairly small, and if KMixer does succeed in supplying the WaveCyclic port driver with additional data before the silence has been played, that data overwrites the silence in the buffer. In the absence of starvation, the audio device receives a continuous stream of mixed data without intervals of forced silence. When you are debugging your driver, however, you might see your miniport driver's [**IMiniportWaveCyclicStream::Silence**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-silence) method being called even though your audio renderer is not starving.
 
  
-
- 
-
-
-
 

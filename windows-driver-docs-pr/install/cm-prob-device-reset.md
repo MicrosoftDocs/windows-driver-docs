@@ -1,14 +1,13 @@
 ---
 title: CM_PROB_DEVICE_RESET
 description: CM_PROB_DEVICE_RESET
-ms.assetid: 6d536e79-66fa-495b-ad0b-1714a56450b2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DEVICE_RESET
+# Code 54 - CM_PROB_DEVICE_RESET
 
-This function is reserved for system use.
+This Device Manager error message indicates that the device has failed and is undergoing a reset.
 
 ## Error
 

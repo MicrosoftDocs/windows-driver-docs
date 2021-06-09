@@ -1,7 +1,6 @@
 ---
 title: Texture support
 description: Texture support
-ms.assetid: 8ae4d4bf-9fef-4e5e-a88a-5cb93519c802
 keywords:
 - drawing page flips WDK DirectDraw , textures
 - DirectDraw flipping WDK Windows 2000 display , textures

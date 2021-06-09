@@ -1,7 +1,6 @@
 ---
 title: Append Info to Graphics Adapter Friendly String Names
 description: You must append information to the string names of graphics adapters.
-ms.assetid: 660104ba-b082-407b-afdc-3e02f4c3d087
 keywords:
 - INF files WDK display , friendly string names
 - friendly string names WDK display
@@ -29,13 +28,7 @@ For the Windows Display Driver Model (WDDM), you must append "(Microsoft Corpora
 New Driver Model Foo Device Name (Microsoft Corporation - WDDM)
 ```
 
-For more information about the *Strings* section and the *%strkey%* tokens that are specified elsewhere in the INF, see [**INF Strings Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section).
+For more information about the *Strings* section and the *%strkey%* tokens that are specified elsewhere in the INF, see [**INF Strings Section**](../install/inf-strings-section.md).
 
  
-
- 
-
-
-
-
 

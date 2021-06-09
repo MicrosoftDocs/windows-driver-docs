@@ -1,7 +1,6 @@
 ---
 title: Audio Data Ranges
 description: Audio Data Ranges
-ms.assetid: 690fafda-fb35-43da-9de1-6cbc3bf8eb6c
 keywords:
 - data ranges WDK audio
 - range values WDK audio
@@ -26,9 +25,9 @@ When the miniport driver instantiates a pin, it configures the pin to handle a s
 
 For information about using property requests to query audio pins for their data ranges and select data intersections, see [Pin Data-Range and Intersection Properties](pin-data-range-and-intersection-properties.md).
 
-To specify a data range for a wave pin, the [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structure is followed by information describing the range of sample sizes, frequencies, and channels that the pin supports. This information, including the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure.
+To specify a data range for a wave pin, the [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structure is followed by information describing the range of sample sizes, frequencies, and channels that the pin supports. This information, including the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure.
 
-To specify a data range for a MIDI or DirectMusic pin, the KSDATARANGE structure is followed by additional information, including the maximum number of channels and notes that can be played at the same time. This information, along with the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure.
+To specify a data range for a MIDI or DirectMusic pin, the KSDATARANGE structure is followed by additional information, including the maximum number of channels and notes that can be played at the same time. This information, along with the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_MUSIC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure.
 
 This document presents several examples of data ranges that use the KSDATARANGE\_AUDIO and KSDATARANGE\_MUSIC structures:
 
@@ -39,9 +38,4 @@ This document presents several examples of data ranges that use the KSDATARANGE\
 -   For example declarations of data ranges for non-PCM formats, see [Specifying AC-3 Data Ranges](specifying-ac-3-data-ranges.md) and [Specifying WMA Pro Data Ranges](specifying-wma-pro-data-ranges.md).
 
  
-
- 
-
-
-
 

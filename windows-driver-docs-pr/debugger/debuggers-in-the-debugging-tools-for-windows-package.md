@@ -1,58 +1,33 @@
 ---
 title: Debugging Environments
 description: Starting with Windows Driver Kit (WDK) 8.0, the driver development environment and the Windows debugger are integrated into Microsoft Visual Studio.
-ms.assetid: 13F9D82A-4C04-425A-A063-B349DB5C8E08
 keywords: ["WinDbg", "KD", "CDB", "NTSD"]
-ms.date: 05/23/2017
+ms.date: 02/20/2020
 ms.localizationpriority: medium
 ---
 
 # Debugging Environments
 
+There are six available debugging environments:
 
-Starting with Windows Driver Kit (WDK) 8.0, the driver development environment and the Windows debugger are integrated into Microsoft Visual Studio.
-
-After you install Visual Studio and the WDK, you have six available debugging environments:
-
--   Visual Studio with integrated Windows debugger
--   Microsoft Windows Debugger (WinDbg)
--   Microsoft Kernel Debugger (KD)
--   NTKD
--   Microsoft Console Debugger (CDB)
--   Microsoft NT Symbolic Debugger (NTSD)
+- WinDbg Preview
+- Windows Debugger (WinDbg)
+- Kernel Debugger (KD)
+- NTKD
+- Console Debugger (CDB)
+- NT Symbolic Debugger (NTSD)
 
 The following sections describe the debugging environments.
 
-### <span id="Visual_Studio_with_integrated_Windows_debugger"></span><span id="visual_studio_with_integrated_windows_debugger"></span><span id="VISUAL_STUDIO_WITH_INTEGRATED_WINDOWS_DEBUGGER"></span>Visual Studio with integrated Windows debugger
+### <span id="WinDbgPreview"></span><span id="windbgpreview"></span><span id="WINDBGPREVIEW"></span>WinDbg Preview
 
-Starting with WDK 8.0, the driver development environment and the Windows debugger are integrated into Visual Studio. In this integrated environment, most of the tools you need for coding, building, packaging, testing, debugging, and deploying a driver are available in the Visual Studio user interface.
+WinDbg Preview is the latest version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
 
-Typically kernel-mode debugging requires two computers. The debugger runs on the *host computer* and the code being debugged runs on the *target computer*. With the Windows debugger integrated into Visual Studio, you can perform a wide variety of debugging tasks, including those shown in the following list, from the host computer.
-
--   Configure a set of target computers for debugging.
--   Configure the debugging connections to a set of target computers.
--   Launch a kernel-mode debugging session between the host computer and a target computer.
--   Debug a user-mode process on the host computer.
--   Debug a user-mode process on a target computer.
--   Connect to remote debugging sessions.
--   View assembly code and source code.
--   View and manipulate local variables, parameters, and other symbols.
--   View and manipulate memory.
--   Navigate call stacks.
--   Set breakpoints.
--   Execute debugger commands.
-
-You can also build drivers, deploy drivers, and run driver tests from within the Visual Studio user interface. If you make use of the Visual Studio integration provided by both the WDK and Debugging Tools for Windows, you can perform almost all of the driver development, packaging, deployment, testing, and debugging tasks from within Visual Studio on the host computer. Here are some of the WDK capabilities that have been integrated into Visual Studio.
-
--   Configure a set of target computers for driver testing.
--   Create and sign a driver package.
--   Deploy a driver package to a target computer.
--   Install and load a driver on a target computer.
--   Test a driver on a target computer.
+For more information, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 
 ### <span id="WinDbg"></span><span id="windbg"></span><span id="WINDBG"></span>WinDbg
 
-Microsoft Windows Debugger (WinDbg) is a powerful Windows-based debugger that is capable of both user-mode and kernel-mode debugging. WinDbg provides debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers.
+Microsoft Windows Debugger (WinDbg) is a Windows-based debugger that is capable of both user-mode and kernel-mode debugging. WinDbg provides debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers.
 
 WinDbg uses the Visual Studio debug symbol formats for source-level debugging. It can access any symbol or variable from a module that has PDB symbol files, and can access any public function's name that is exposed by modules that were compiled with COFF symbol files (such as Windows .dbg files).
 
@@ -64,7 +39,7 @@ WinDbg is a graphical-interface counterpart to CDB/NTSD and to KD/NTKD.
 
 ### <span id="KD"></span><span id="kd"></span>KD
 
-Microsoft Kernel Debugger (KD) is a character-based console program that enables in-depth analysis of kernel-mode activity on all NT-based operating systems. You can use KD can to debug kernel-mode components and drivers, or to monitor the behavior of the operating system itself. KD also supports multiprocessor debugging.
+Microsoft Kernel Debugger (KD) is a character-based console program that enables in-depth analysis of kernel-mode activity on all NT-based operating systems. You can use KD to debug kernel-mode components and drivers, or to monitor the behavior of the operating system itself. KD also supports multiprocessor debugging.
 
 Typically, KD does not run on the computer being debugged. You need two computers (the *host computer* and the *target computer*) for kernel-mode debugging.
 
@@ -91,7 +66,7 @@ There is a variation of the CDB debugger named Microsoft NT Symbolic Debugger (N
 Since the **start** command can also be used to spawn a new console window, the following two constructions will give the same results:
 
 ```console
-start cdb parameters 
+start cdb parameters
 ntsd parameters
 ```
 
@@ -99,15 +74,6 @@ It is possible to redirect the input and output from NTSD (or CDB) so that it ca
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Windows Debugging](index.md)
 
- 
-
- 
-
-
-
-
-
-
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)

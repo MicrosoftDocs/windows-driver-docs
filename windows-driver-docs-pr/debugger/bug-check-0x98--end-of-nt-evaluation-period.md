@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x98 END_OF_NT_EVALUATION_PERIOD
 description: The END_OF_NT_EVALUATION_PERIOD bug check has a value of 0x00000098. This bug check indicates that the trial period for the Microsoft Windows operating system has ended.
-ms.assetid: e49ea686-27b9-4743-9339-766b4748e29b
 keywords: ["Bug Check 0x98 END_OF_NT_EVALUATION_PERIOD", "END_OF_NT_EVALUATION_PERIOD"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,8 +57,7 @@ The END\_OF\_NT\_EVALUATION\_PERIOD bug check has a value of 0x00000098. This bu
 
  
 
-Cause
------
+## Cause
 
 Your installation of the Windows operating system is an evaluation unit with an expiration date. The trial period is over.
 

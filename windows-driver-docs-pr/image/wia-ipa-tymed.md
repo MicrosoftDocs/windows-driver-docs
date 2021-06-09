@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_TYMED
 description: The WIA\_IPA\_TYMED property contains the method setting for image transfer . The WIA minidriver creates and maintains this property.
-ms.assetid: 3490f4b8-a1ed-4ab3-b621-ed87ce8ae9ea
 keywords: ["WIA_IPA_TYMED Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_TYMED property to determine the minidriver's method of data transfer.
 
@@ -73,8 +71,7 @@ The following table describes the constants that are valid with WIA\_IPA\_TYMED.
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is TYMED\_FILE.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_SOURCE\_PATH\_HAS\_SOURCE\_SERVER
 description: DEBUG\_REQUEST\_SOURCE\_PATH\_HAS\_SOURCE\_SERVER
-ms.assetid: 624e425f-c989-4278-9985-cd7b0b877d5c
 keywords: ["DEBUG_REQUEST_SOURCE_PATH_HAS_SOURCE_SERVER Windows Debugging"]
 topic_type:
 - apiref

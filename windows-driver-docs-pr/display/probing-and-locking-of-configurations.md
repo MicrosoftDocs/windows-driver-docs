@@ -1,7 +1,6 @@
 ---
 title: Probing and Locking of Configurations
 description: Probing and Locking of Configurations
-ms.assetid: 6f68db48-ed4b-487c-b425-43c610651c16
 keywords:
 - video decoding WDK DirectX VA , configuration probing and locking
 - decoding video WDK DirectX VA , configuration probing and locking

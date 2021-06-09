@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_SET\_CONNECTINFO
 description: AVC\_FUNCTION\_SET\_CONNECTINFO
-ms.assetid: e97b525a-2236-44a9-9d49-dc0df760f21e
 keywords: ["AVC_FUNCTION_SET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -97,13 +96,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SETCONNECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_setconnect_info), [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function), [**AV/C Intersect Handler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/nc-avc-pfnavcintersecthandler)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SETCONNECT\_INFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_setconnect_info), [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function), [**AV/C Intersect Handler**](/windows-hardware/drivers/ddi/avc/nc-avc-pfnavcintersecthandler)
 
  
-
- 
-
-
-
-
 

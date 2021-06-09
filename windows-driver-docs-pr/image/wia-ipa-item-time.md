@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_TIME
 description: The WIA\_IPA\_ITEM\_TIME property contains the time that an image was originally captured.
-ms.assetid: 30e29169-7a1a-412e-858a-a467d6f1b44e
 keywords: ["WIA_IPA_ITEM_TIME Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 The WIA minidriver creates and maintains the WIA\_IPA\_ITEM\_TIME property. This property should be reported as a vector of eight WORD values in the form of a SYSTEMTIME structure (which is described in the Microsoft Windows SDK documentation).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

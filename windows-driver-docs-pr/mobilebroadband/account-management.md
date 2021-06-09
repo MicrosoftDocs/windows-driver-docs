@@ -1,7 +1,6 @@
 ---
 title: Account management
 description: Account management
-ms.assetid: 8201a4ac-1344-4a96-b0d5-d4ba8123c4dd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -26,18 +25,6 @@ Design considerations include the following:
 -   **Periodically update Windows with data usage** Windows 10 is designed to behave intelligently on metered networks. This can save significant network capacity because Windows and UWP apps can use your mobile broadband network for essential traffic. To be more accurate and to include more information for applications (for example, data limits and usage), Windows relies on you to periodically provide correct information. Your app can set this information by using Data Usage APIs.
 
     ![account overview](images/mb-fig2-accountoverview.png)
-
-## <span id="related_topics"></span>Related topics
-
-
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
-
- 
-
- 
-
-
-
 
 
 

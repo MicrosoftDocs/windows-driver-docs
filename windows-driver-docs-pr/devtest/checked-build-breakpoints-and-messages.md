@@ -1,23 +1,24 @@
 ---
 title: Checked Build Breakpoints and Messages
 description: Checked Build Breakpoints and Messages
-ms.assetid: 99b27487-eb95-4303-bad6-0b7ed8b450f0
 keywords:
 - breakpoints WDK
 - checked builds WDK , breakpoints
 - checked builds WDK , messages
 - messages WDK checked builds
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # Checked Build Breakpoints and Messages
 
-
 ## <span id="ddk_checked_build_breakpoints_and_messages_tools"></span><span id="DDK_CHECKED_BUILD_BREAKPOINTS_AND_MESSAGES_TOOLS"></span>
 
+This topic contains a list and explanation of some of the common breakpoints and [**DbgPrint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) messages that a driver might encounter in the checked build.
 
-This topic contains a list and explanation of some of the common breakpoints and [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) messages that a driver might encounter in the checked build.
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 <span id="____DPC_routine___1_sec_---_This_is_not_a_break_in_KeUpdateSystemTime"></span><span id="____dpc_routine___1_sec_---_this_is_not_a_break_in_keupdatesystemtime"></span><span id="____DPC_ROUTINE___1_SEC_---_THIS_IS_NOT_A_BREAK_IN_KEUPDATESYSTEMTIME"></span>**\*\*\* DPC routine &gt; 1 sec --- This is not a break in KeUpdateSystemTime**  
 This message appears just before a breakpoint is issued. It indicates that the active driver spent more than one second in a DPC routine.
@@ -47,10 +48,4 @@ The driver named *xxxxxx* supports IRP\_MJ\_PNP, but did not specify an unload r
 The device object at address 0x*nnnnnnnn* was created outside of **DriverEntry**, but the DO\_DEVICE\_INITIALIZING bit was not cleared before returning to the system.
 
  
-
- 
-
-
-
-
 

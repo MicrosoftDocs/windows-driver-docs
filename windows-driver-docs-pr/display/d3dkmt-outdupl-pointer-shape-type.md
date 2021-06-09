@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 50a6cc24-2ac8-435c-8e82-9cd0c02f57e9
+description: Learn about the D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE enumeration Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE {
@@ -31,8 +29,7 @@ typedef enum _D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE {
 } D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MONOCHROME"></span><span id="d3dkmt_outdupl_pointer_shape_type_monochrome"></span>**D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE\_MONOCHROME**
 
@@ -40,8 +37,7 @@ Constants
 
 <span id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MASKED_COLOR"></span><span id="d3dkmt_outdupl_pointer_shape_type_masked_color"></span>**D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE\_MASKED\_COLOR**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

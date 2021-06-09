@@ -1,7 +1,6 @@
 ---
 title: Analyzing a Kernel-Mode Dump File with WinDbg
 description: Analyzing a Kernel-Mode Dump File with WinDbg
-ms.assetid: a1493740-5bb5-4335-b177-ee94b93f716b
 keywords: ["WinDbg, analyzing a kernel-mode dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with WinDbg"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ To analyze a dump file, start WinDbg with the **-z** command-line option:
 
 The **-v** option (verbose mode) is also useful. For a full list of options, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
-If WinDbg is already running and is in dormant mode, you can open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing the CTRL+D shortcut key. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** text box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, click **Open**.
+If WinDbg is already running and is in dormant mode, you can open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing the CTRL+D shortcut key. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** text box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, select **Open**.
 
 You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed with [**g (Go)**](g--go-.md).
 

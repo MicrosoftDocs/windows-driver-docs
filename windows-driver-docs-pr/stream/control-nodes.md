@@ -1,7 +1,6 @@
 ---
 title: Control Nodes
 description: Control Nodes
-ms.assetid: e1ab522e-089e-4508-aef4-5b2a65f50bb5
 keywords:
 - broadcast receiver topology WDK BDA
 - receiver topology WDK BDA

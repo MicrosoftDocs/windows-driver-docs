@@ -1,9 +1,8 @@
 ---
 title: .kdfiles (Set Driver Replacement Map)
 description: The .kdfiles command reads a file and uses its contents as the driver replacement map.
-ms.assetid: 3b0ac8c1-f0bd-4878-9303-23d6999650ee
 keywords: ["Set Driver Replacement Map (.kdfiles) command", "driver replacement map, Set Driver Replacement Map (.kdfiles) command", ".kdfiles (Set Driver Replacement Map) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 08/11/2020
 topic_type:
 - apiref
 api_name:
@@ -15,18 +14,17 @@ ms.localizationpriority: medium
 
 # .kdfiles (Set Driver Replacement Map)
 
-
 The **.kdfiles** command reads a file and uses its contents as the driver replacement map.
 
 ```dbgcmd
-.kdfiles MapFile 
+.kdfiles MapFile
 .kdfiles -m OldDriver NewDriver
-.kdfiles -s SaveFile 
-.kdfiles -c 
-.kdfiles 
+.kdfiles -s SaveFile
+.kdfiles -c
+.kdfiles
 ```
 
-## <span id="ddk_meta_set_driver_replacement_map_dbg"></span><span id="DDK_META_SET_DRIVER_REPLACEMENT_MAP_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______MapFile______"></span><span id="_______mapfile______"></span><span id="_______MAPFILE______"></span> *MapFile*   
@@ -52,8 +50,6 @@ Deletes the existing driver replacement map. (This option does not alter the map
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-You can use the **.kdfiles** command in Microsoft Windows XP and later versions of Windows. If you use this command in earlier versions of Windows, the command has no effect and does not generate an error.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -70,19 +66,16 @@ You can use the **.kdfiles** command in Microsoft Windows XP and later versions 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86-based and Itanium-based processors only</p></td>
+<td align="left"><p>x86-based processors</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about and examples of driver replacement and the replacement of other kernel-mode modules, a description of the format for driver replacement map files, and restrictions for using this feature, see [Mapping Driver Files](mapping-driver-files.md).
 
-Remarks
--------
+## Remarks
 
 If you use the **.kdfiles** command without parameters, the debugger displays the path and name of the current driver replacement map file and the current set of replacement associations.
 
@@ -92,8 +85,38 @@ If the specified file is in the correct driver replacement map file format, the 
 
 After the file has been read, the driver replacement map is not affected by subsequent changes to the file (unless these changes are followed by another **.kdfiles** command).
 
-Requirements
-------------
+### User Mode File Replacement
+
+
+User Mode File Replacement was added in version 2004 of Windows. This support enables the following user mode files to be replaced with .kdfiles.
+
+- User mode DLLs (also including NTDLL and KnownDlls)
+- User mode EXEs that are a main process image for CreateProcess
+
+To use user mode .kdfiles support, you need to first enable kernel symbol loading using the `!gflag +ksl` debugger command or configure the ksl global flags in the registry. For more information about gflag, see [!gflag](-gflag.md).
+
+The following examples illustrate common usage.
+
+```dbgcmd
+.kdfiles -m system32\userdll C:\myfiles\my_native_userdll.dll
+.kdfiles -m system32\userdll \\server\share\my_native_userdll.dll
+.kdfiles -m syswow64\ntdll.dll \\server\share\my_x86_wow64_ntdll.dll
+.kdfiles -m system32\userbase.dll \\server\share\my_native_userbase.dll
+```
+
+User mode .kdfiles ignores any failures to match a file and does not display an error message when a failure occurs.
+
+Be careful to appropriately qualify the .kdfiles paths for user mode .kdfiles. It is a bad idea to just match ntdll.dll (instead of system32\ntdll.dll) as otherwise the Wow64 NTDLL will get replaced with the native one. Similar situations can arise with other ambiguous substring matches.
+
+After build 20172, the user mode .kdfiles mechanism will attempt to pull files from the debugger until one attempt fails; then, the file name that failed to be pulled will not be tried again for the boot session, without manual intervention from the debugger to modify the target system state. On earlier builds, the user mode .kdfiles mechanism will make one attempt (whether successful or not) to pull a given file name per boot session. These policies reduce the overhead of communicating with the debugger for files that are not in the kdfiles list, or that are inaccessible for replacement, such as due to sharing violations from processes that may have already loaded a given file. Because of this behavior, it is generally advisable to configure any files to pull in the .kdfiles list up front, before they would first be referenced.
+
+Be aware of limitations with being unable to replace already in use disk files, etc. As many system DLLs are won’t be easily hot swappable after they have been loaded up initially, preset the gflags +ksl option and use .kdfiles to replace any user mode binaries right at boot.
+
+For more information about enabling boot debugging, see [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md).
+
+The use of the high speed/low latency KD transport KDNET is recommended to minimize system performance impacts.
+
+## Requirements
 
 <table>
 <colgroup>
@@ -109,10 +132,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

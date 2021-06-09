@@ -1,7 +1,6 @@
 ---
 title: DirectDraw and Color Space Conversion
 description: DirectDraw and Color Space Conversion
-ms.assetid: 2a5e59ea-2190-4701-ab7b-7a6503aec6e5
 keywords:
 - surfaces WDK DirectDraw , blitting
 - drawing blt WDK DirectDraw , color space conversions

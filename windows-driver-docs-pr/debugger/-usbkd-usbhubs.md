@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhubs
 description: The usbkd.usbhubs command displays information about USB hubs.
-ms.assetid: 88642A67-5105-45A4-8374-7E4D01FFAEB6
 keywords: ["usbkd.usbhubs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,8 +43,7 @@ The output is verbose. For example, **!usbhubs rv** displays verbose output abou
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of verbose output from the **!usbhubs** command.
 
@@ -108,14 +106,7 @@ On Host Controller (0x8086, 0x2937)
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

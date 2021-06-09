@@ -1,7 +1,6 @@
 ---
 title: Dispatch Routine IRQL and Thread Context
 description: Dispatch Routine IRQL and Thread Context
-ms.assetid: 95f3a976-c97a-4c8a-979b-14a0ddd823a2
 keywords:
 - IRP dispatch routines WDK file system , IRQL
 - IRP dispatch routines WDK file system , thread context
@@ -9,7 +8,7 @@ keywords:
 - thread context WDK file system
 - arbitrary thread context WDK file system
 - IRQLs WDK file system
-ms.date: 04/20/2017
+ms.date: 01/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +29,7 @@ The following table summarizes the IRQL and thread context requirements for file
 <thead>
 <tr class="header">
 <th align="left">Dispatch routine</th>
-<th align="left">Caller's IRQL:</th>
+<th align="left">Caller's Maximum IRQL:</th>
 <th align="left">Caller's thread context:</th>
 </tr>
 </thead>

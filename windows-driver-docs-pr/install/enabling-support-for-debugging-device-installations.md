@@ -1,7 +1,6 @@
 ---
 title: Enabling Support for Debugging Device Installations
 description: Enabling Support for Debugging Device Installations
-ms.assetid: cc47b4c9-fd1d-47c2-9af9-0b7f4a7a918a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 Starting with Windows Vista, when the Plug and Play (PnP) manager detects a new device in the system, the operating system starts the device installation host process (*DrvInst.exe*) to search for and install a driver for the device.
 
-To set the type of support the operating system provides for debugging the device installation host process, create (or modify) the following [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) registry value on the target system to be debugged:
+To set the type of support the operating system provides for debugging the device installation host process, create (or modify) the following [REG_DWORD](/windows/desktop/SysInfo/registry-value-types) registry value on the target system to be debugged:
 
 **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Device Installer\\DebugInstall**
 
@@ -53,10 +52,4 @@ After the **DebugInstall** registry value is set you do not need to reboot the t
  
 
  
-
- 
-
-
-
-
 

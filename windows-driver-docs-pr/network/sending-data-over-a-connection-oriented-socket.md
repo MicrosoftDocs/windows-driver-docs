@@ -1,7 +1,6 @@
 ---
 title: Sending Data over a Connection-Oriented Socket
 description: Sending Data over a Connection-Oriented Socket
-ms.assetid: 290f3a8a-6bdc-4dd9-a9bf-4eede37bf1e5
 keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskSend
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # Sending Data over a Connection-Oriented Socket
 
 
-After a Winsock Kernel (WSK) application has connected a connection-oriented socket to a remote transport address it can send data over the socket. A WSK application can also send data over a connection-oriented socket that it accepted on a listening socket. A WSK application sends data over a connection-oriented socket by calling the [**WskSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send) function.
+After a Winsock Kernel (WSK) application has connected a connection-oriented socket to a remote transport address it can send data over the socket. A WSK application can also send data over a connection-oriented socket that it accepted on a listening socket. A WSK application sends data over a connection-oriented socket by calling the [**WskSend**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send) function.
 
 The following code example shows how a WSK application can send data over a connection-oriented socket.
 
@@ -120,10 +119,4 @@ NTSTATUS
 ```
 
  
-
- 
-
-
-
-
 

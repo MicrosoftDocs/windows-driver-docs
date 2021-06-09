@@ -1,7 +1,6 @@
 ---
 title: Extracting Source Files
 description: Extracting Source Files
-ms.assetid: b7c859a9-5264-401c-ad96-ad044bcc140e
 keywords: ["extracting source files", "source servers, extracting source files"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

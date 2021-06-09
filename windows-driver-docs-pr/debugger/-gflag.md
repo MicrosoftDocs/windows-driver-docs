@@ -1,7 +1,6 @@
 ---
 title: gflag
 description: The gflag extension sets or displays the global flags.
-ms.assetid: b661f775-a313-4a4d-a3db-1e4dacf830de
 keywords: ["gflag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,8 +63,7 @@ Ntsdexts.dll</td>
 
 You can also set these flags by using the Global Flags utility (Gflags.exe).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!gflag** extension displays the current global flag settings.
 

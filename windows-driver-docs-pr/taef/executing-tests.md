@@ -1,7 +1,6 @@
 ---
 title: Executing Tests
 description: Executing Tests
-ms.assetid: 421FD558-01D0-484d-B4F6-274A5C1BC62E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

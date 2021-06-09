@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DISASSOCIATION_PARAMETERS
 description: WDI_TLV_DISASSOCIATION_PARAMETERS is an unused TLV.
-ms.assetid: F056B5B3-900C-4D00-9330-F1FD8FA0993F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DISASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_DISASSOCIATION\_PARAMETERS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

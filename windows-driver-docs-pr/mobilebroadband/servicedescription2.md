@@ -1,14 +1,13 @@
 ---
 title: ServiceDescription2
 description: ServiceDescription2
-ms.assetid: 92de51be-dfd7-443b-987c-b4b364e1aaa6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ServiceDescription2
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceDescription2 element is not currently used.
 

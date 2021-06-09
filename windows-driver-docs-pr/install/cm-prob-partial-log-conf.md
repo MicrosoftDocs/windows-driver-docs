@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_PARTIAL_LOG_CONF
 description: CM_PROB_PARTIAL_LOG_CONF
-ms.assetid: 1e8b10e8-c2c6-4a71-9af5-575206098148
 keywords:
 - CM_PROB_PARTIAL_LOG_CONF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_PARTIAL_LOG_CONF
+# Code 16 - CM_PROB_PARTIAL_LOG_CONF
 
-This function is reserved for system use.
-
-The device is only partially configured.
+This Device Manager error message indicates that the device is only partially configured.
 
 ## Error Code
 

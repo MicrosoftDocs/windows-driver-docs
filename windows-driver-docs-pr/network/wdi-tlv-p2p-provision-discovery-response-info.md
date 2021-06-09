@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Response information.
-ms.assetid: EB7C4A5C-27D8-4A84-BC91-0DED51FB74C2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO Network Drivers Starting with Windows Vista
@@ -36,8 +35,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

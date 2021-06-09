@@ -1,7 +1,6 @@
 ---
 title: WHQL Test Signature Program
 description: WHQL Test Signature Program
-ms.assetid: 241a8cfe-c7c4-4c88-9d61-831f18f4eb21
 keywords:
 - driver signing WDK , WHQL digital signatures
 - signing drivers WDK , WHQL digital signatures
@@ -36,14 +35,14 @@ For information about how to obtain a WHQL test signature, email <winqual@micros
 
 You can disable UAC on Windows 7 by following these steps:
 
-1.  On the **Start** menu, type "UAC" and then click **Change User Account settings**.
-2.  Move the slide bar to the bottom (**Never Notify**) and then click **OK**.
+1.  On the **Start** menu, enter "UAC" and then select **Change User Account settings**.
+2.  Move the slide bar to the bottom (**Never Notify**) and then select **OK**.
 
 You can disable UAC on Windows Vista and Windows Server 2008 by following these steps:
 
 1.  Start Control Panel and double-click **User Accounts**.
-2.  In the User Accounts tasks window, click **Turn User Account Control on or off**.
-3.  Clear the **Use User Account Control (UAC) to help protect your computer** check box, and then click **OK**.
+2.  In the User Accounts tasks window, select **Turn User Account Control on or off**.
+3.  Clear the **Use User Account Control (UAC) to help protect your computer** check box, and then select **OK**.
 
 As soon as UAC is disabled, you must restart the test computer to apply the change.
 
@@ -51,13 +50,13 @@ As soon as UAC is disabled, you must restart the test computer to apply the chan
 
 The WHQL test root certificate is installed on the test computer by following these steps:
 
-1.  Double-click the test root certificate file (*Testroot.cer*), and then click **Install Certificate**.
+1.  Double-click the test root certificate (*Testroot.cer*) and then select **Install Certificate**.
 
-2.  Click **Place all certificates in the following store**, and then click **Browse**.
+2.  Select **Place all certificates in the following store**, and then select **Browse**.
 
 3.  Select the **Show physical stores** check box, and then expand **Trusted Root Certification Authorities**.
 
-4.  Select the Local Computer folder, and then click **OK**.
+4.  Select the Local Computer folder, and then select **OK**.
 
     **Note**  If UAC was not previously disabled on the test computer, the Local Computer folder is not displayed.
 
@@ -69,7 +68,7 @@ The WHQL test root certificate is installed on the test computer by following th
 
 The Microsoft Test Root Authority is accepted when test-signing is enabled by setting the [TESTSIGNING Boot Configuration Option](the-testsigning-boot-configuration-option.md) on the computer in which the test-signed driver package is to be installed. This option is enabled by following these steps:
 
-1.  Open an elevated Command Prompt window. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, right-click the Cmd.exe shortcut, and select **Run as administrator**.
+1.  Open an elevated Command Prompt window. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, select and hold (or right-click) the Cmd.exe shortcut, and select **Run as administrator**.
 
 2.  In the elevated Command Prompt window, run the following command:
 

@@ -1,7 +1,6 @@
 ---
 title: Direct3D Shader Codes
 description: Direct3D Shader Codes
-ms.assetid: 30d14bbe-10fe-46fc-99b3-ab2f989abb29
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
@@ -17,17 +16,11 @@ This section describes the format of an individual shader code and the tokens th
 
 [Shader Code Tokens](shader-code-tokens.md)
 
-[Shader Operation Codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type)
+[Shader Operation Codes](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type)
 
-[Shader Register Types](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type)
+[Shader Register Types](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type)
 
 [Shader Relative Addressing](shader-relative-addressing.md)
 
  
-
- 
-
-
-
-
 

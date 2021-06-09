@@ -1,7 +1,6 @@
 ---
 title: Commercial Test Certificate
 description: Commercial Test Certificate
-ms.assetid: cedceb0c-d39e-45e2-aa42-62cd7b8bed1c
 keywords:
 - commercial test certificates WDK
 ms.date: 04/20/2017
@@ -21,13 +20,7 @@ A commercial test certificate is the same type of certificate as a [commercial r
 
 Follow the instructions that are provided by the CA on how to obtain and install the certificate on a computer where you will sign a driver.
 
-For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](https://go.microsoft.com/fwlink/p/?linkid=16356) website.
+For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](/previous-versions/ms995347(v=msdn.10)) website.
 
  
-
- 
-
-
-
-
 

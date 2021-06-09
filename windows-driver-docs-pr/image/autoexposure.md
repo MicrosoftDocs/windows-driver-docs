@@ -1,7 +1,6 @@
 ---
 title: AutoExposure element
 description: The required AutoExposure element specifies that the WSD Scan Service should automatically determine the exposure settings for the document.
-ms.assetid: ccc2b246-cfa1-4d79-b968-7b4bbaad17ee
 keywords: ["AutoExposure element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **AutoExposure** element specifies that the WSD Scan Service should automatically determine the exposure settings for the document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:AutoExposure>
@@ -27,13 +25,11 @@ Usage
 </wscn:AutoExposure>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, false, 1, or true.**falsetrue**
 
@@ -61,8 +57,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 When the Boolean value of the **AutoExposure** element is 1 or **true**, the scan device will employ image processing techniques to reduce the background of the document to white.
 

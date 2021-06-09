@@ -1,7 +1,6 @@
 ---
 title: Trace Session List Features
 description: Trace Session List Features
-ms.assetid: 66853868-f873-46fa-aa9a-d344464b20bf
 keywords:
 - Trace Session List WDK
 ms.date: 04/20/2017

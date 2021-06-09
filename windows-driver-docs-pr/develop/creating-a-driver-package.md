@@ -1,5 +1,4 @@
 ---
-ms.assetid: eaefc81a-b5e3-4763-bf51-8ec47f620e72
 title: Creating a Driver Package
 description: Creating a Driver Package
 ms.date: 04/20/2017
@@ -27,18 +26,18 @@ If you use a driver template to create a driver solution, then the template shou
 ## <span id="Manually_creating_a_driver_package"></span><span id="manually_creating_a_driver_package"></span><span id="MANUALLY_CREATING_A_DRIVER_PACKAGE"></span>Manually creating a driver package
 
 
-If your solution does not have a driver package, you can manually create one in Visual Studio by choosing **New &gt; Project** from the **File** menu. For examples of how to create a driver package, see [Writing Your First Driver](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-your-first-driver).
+If your solution does not have a driver package, you can manually create one in Visual Studio by choosing **New &gt; Project** from the **File** menu. For examples of how to create a driver package, see [Writing Your First Driver](../gettingstarted/writing-your-first-driver.md).
 
-To manually create a new driver package for an existing solution that does not already have one, use the "Driver Install Package" template. Select **File->New->Project**. Then select **Windows Drivers &gt; Package &gt; "Driver Install Package"** from the dialog. Then in the **Solution** drop-down, select **Add to solution** and click **Ok**.
+To manually create a new driver package for an existing solution that does not already have one, use the "Driver Install Package" template. Select **File->New->Project**. Then select **Windows Drivers &gt; Package &gt; "Driver Install Package"** from the dialog. Then in the **Solution** drop-down, select **Add to solution** and select **Ok**.
 
 ## <span id="Modifying_an_existing_driver_package"></span><span id="modifying_an_existing_driver_package"></span><span id="MODIFYING_AN_EXISTING_DRIVER_PACKAGE"></span>Modifying an existing driver package
 
 
 If your solution already contains a driver package, you can modify it to reference other projects in the solution.
 
-In the Solution Explorer pane, open the driver package project, right-click **References**, choose **Add Reference...** and select the project to reference.
+In the Solution Explorer pane, open the driver package project, select and hold (or right-click) **References**, choose **Add Reference...** and select the project to reference.
 
-To remove a reference to an existing project, right-click the existing project you no longer want to reference and click **Remove**.
+To remove a reference to an existing project, select and hold (or right-click) the existing project you no longer want to reference and select **Remove**.
 
 ![driver package properties](images/VsDrvrPkgProps.png)
 
@@ -47,9 +46,9 @@ To remove a reference to an existing project, right-click the existing project y
 
 You can add multiple drivers and their packages to your solution. Similar to "Modifying an existing driver package" you can create a new driver solution, or add a reference to an existing one. If your solution already contains a driver package, you can modify it to reference additional driver projects in the solution.
 
-In the Solution Explorer pane, open the driver package project, right-click **References**, choose **Add Reference...** and select the project to reference.
+In the Solution Explorer pane, open the driver package project, select and hold (or right-click) **References**, choose **Add Reference...** and select the project to reference.
 
-To remove a reference to an existing project, right-click the existing project you no longer want to reference and click **Remove**.
+To remove a reference to an existing project, select and hold (or right-click) the existing project you no longer want to reference and select **Remove**.
 
 See the "Toaster Sample Driver" sample for an example of a single solution that contains multiple drivers:![multiple drivers in a single solution](images/MultipleDriversSingleSolution.png)
 
@@ -58,11 +57,4 @@ See the "Toaster Sample Driver" sample for an example of a single solution that 
 
 * [Signing a Driver](signing-a-driver.md)
  
-
- 
-
-
-
-
-
 

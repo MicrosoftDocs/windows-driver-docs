@@ -1,7 +1,6 @@
 ---
 title: k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 description: The k* commands display the stack frame of the given thread, together with related information.
-ms.assetid: 1061015f-cb0c-490b-b256-e0dedb659f22
 keywords: ["k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -106,7 +105,7 @@ Displays the distance between adjacent frames. This distance is the number of by
 Hides source lines in the display. L is case sensitive.
 
 <span id="_______M"></span><span id="_______m"></span> M  
-Displays output using [Debugger Markup Language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can click to set the local context and display local variables. For information about the local context, see [**.frame**](-frame--set-local-context-.md).
+Displays output using [Debugger Markup Language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can select to set the local context and display local variables. For information about the local context, see [**.frame**](-frame--set-local-context-.md).
 
 <span id="_______FrameCount______"></span><span id="_______framecount______"></span><span id="_______FRAMECOUNT______"></span> *FrameCount*   
 Specifies the number of stack frames to display. You should specify this number in hexadecimal format, unless you have changed the radix by using the [**n (Set Number Base)**](n--set-number-base-.md) command. The default value is 20 (0x14), unless you have changed the default value by using the [**.kframes (Set Stack Length)**](-kframes--set-stack-length-.md) command.
@@ -152,8 +151,7 @@ Specifies the number of DWORD\_PTR values in the stack to dump. The default valu
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 When you issue the **k**, **kb**, **kp**, **kP**, or **kv** command, a stack trace is displayed in a tabular format. If line loading is enabled, source modules and line numbers are also displayed.
 

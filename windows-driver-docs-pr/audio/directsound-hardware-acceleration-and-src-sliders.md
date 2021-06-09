@@ -1,7 +1,6 @@
 ---
 title: DirectSound Hardware-Acceleration and SRC Sliders
 description: DirectSound Hardware-Acceleration and SRC Sliders
-ms.assetid: 40329177-b8d5-49a2-a1d3-6730a26b6e78
 keywords:
 - hardware acceleration WDK DirectSound , SRC sliders
 - sliders WDK audio
@@ -27,9 +26,9 @@ To locate the DirectSound hardware-acceleration and SRC sliders in Windows, for 
 
 2.  On the **Audio** tab, select a device from the **Sound Playback** list.
 
-3.  Click the **Advanced** button.
+3.  Select the **Advanced** button.
 
-4.  Click the **Performance** tab.
+4.  Select the **Performance** tab.
 
 At this point, you should see two sliders that are labeled **Hardware acceleration** and **Sample rate conversion quality**.
 

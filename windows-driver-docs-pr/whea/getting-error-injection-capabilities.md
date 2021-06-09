@@ -1,7 +1,6 @@
 ---
 title: Getting Error Injection Capabilities
 description: Getting Error Injection Capabilities
-ms.assetid: d4ff0d9c-bb17-4dff-8008-bf8d59e44621
 keywords:
 - error injection capabilities WDK WHEA
 - retrieving error injection capabilities WDK WHEA
@@ -9,14 +8,16 @@ keywords:
 - WHEA WDK , error injection
 - Windows Hardware Error Architecture WDK , error injection
 - injecting hardware errors WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
 # Getting Error Injection Capabilities
 
+> [!NOTE]
+> The WHEA error injection interface requires either a computer with the EINJ ACPI table or a PSHED Plug-In that implements the [error injection functional area](./error-injection.md). Most consumer systems do not include an EINJ implementation, and Windows does not have a built-in PSHED Plug-In to enable error injection. With neither of these present, the error injection interfaces return an error.
 
-A user-mode application can get information about the error injection capabilities of the hardware platform by calling the [**WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_INJECTION\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_injection_capabilities) structure that describes the error injection capabilities that are supported by the hardware platform.
+A user-mode application can get information about the error injection capabilities of the hardware platform by calling the [**WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn**](/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_INJECTION\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_injection_capabilities) structure that describes the error injection capabilities that are supported by the hardware platform.
 
 The following code example shows how to retrieve the error injection capabilities information.
 
@@ -62,8 +63,8 @@ Result =
     NULL,
     NULL
     );
-Status = Parameter.ulval;
-VariantClear(Parameter);
+Status = Parameter.ulVal;
+VariantClear(&Parameter);
 
 // Get the capabilities from the output parameters object
 Result =
@@ -74,8 +75,8 @@ Result =
     NULL,
     NULL
     );
-ErrorInjectionCapabilities.AsULONG = Parameter.ulval;
-VariantClear(Parameter);
+ErrorInjectionCapabilities.AsULONG = Parameter.ulVal;
+VariantClear(&Parameter);
 
 // Process the error injection capabilities data
 ...
@@ -87,9 +88,4 @@ pOutParameters->Release();
 ```
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: JobTable element
 description: The required JobTable element contains current and historical information about scan jobs.
-ms.assetid: 349ca443-5296-4200-884d-91fcdb222be4
 keywords: ["JobTable element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **JobTable** element contains current and historical information about scan jobs.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobTable>
@@ -27,8 +25,7 @@ Usage
 </wscn:JobTable>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -59,8 +56,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service uses a **JobTable** element to track all current and finished scan jobs that are submitted to the WSD Scan Service. Current jobs are tracked in the [**ActiveJobs**](activejobs.md) child element; finished jobs are optionally tracked in the [**JobHistory**](jobhistory2.md) child element.
 

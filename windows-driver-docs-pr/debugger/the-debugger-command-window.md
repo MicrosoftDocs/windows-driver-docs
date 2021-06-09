@@ -1,7 +1,6 @@
 ---
 title: Using the Debugger Command Window
 description: Using the Debugger Command Window
-ms.assetid: d93e8c96-e2f7-4a8a-8e9a-ea29dad2a822
 keywords: ["Debugger Command window", "Debugger Command window, using"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

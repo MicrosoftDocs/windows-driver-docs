@@ -1,7 +1,6 @@
 ---
 title: Isochronous Synchronization Options for IEEE 1394 Devices
 description: Isochronous Synchronization Options for IEEE 1394 Devices
-ms.assetid: 27137890-09e7-45d5-b268-7e93c943b489
 keywords:
 - isochronous I/O WDK IEEE 1394 bus , synchronization
 - synchronization WDK IEEE 1394 bus
@@ -20,11 +19,11 @@ ms.localizationpriority: medium
 
 The IEEE 1394 driver stack supports certain types of synchronization and filtering during [**REQUEST\_ISOCH\_LISTEN**](https://msdn.microsoft.com/library/windows/hardware/ff537655) and [**REQUEST\_ISOCH\_TALK**](https://msdn.microsoft.com/library/windows/hardware/ff537660) operations.
 
-A driver can initiate filtering by setting the DESCRIPTOR\_SYNCH\_ON\_SY or DESCRIPTOR\_SYNCH\_ON\_TAG flag in the **fulFlags** member of a buffer's [**ISOCH\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/1394/ns-1394-_isoch_descriptor) structure. Beginning with the data that is destined for that buffer, the bus driver removes all packets from the data stream that do not have Sy or Tag values that match the Sy or Tag values indicated in the isoch descriptor. This filtering continues with the buffers that follow, even if neither one of the DESCRIPTOR\_SYNCH\_ON\_SY and DESCRIPTOR\_SYNCH\_ON\_TAG flags are set in the isoch descriptors of those buffers.
+A driver can initiate filtering by setting the DESCRIPTOR\_SYNCH\_ON\_SY or DESCRIPTOR\_SYNCH\_ON\_TAG flag in the **fulFlags** member of a buffer's [**ISOCH\_DESCRIPTOR**](/windows-hardware/drivers/ddi/1394/ns-1394-_isoch_descriptor) structure. Beginning with the data that is destined for that buffer, the bus driver removes all packets from the data stream that do not have Sy or Tag values that match the Sy or Tag values indicated in the isoch descriptor. This filtering continues with the buffers that follow, even if neither one of the DESCRIPTOR\_SYNCH\_ON\_SY and DESCRIPTOR\_SYNCH\_ON\_TAG flags are set in the isoch descriptors of those buffers.
 
 If, in addition to setting the DESCRIPTOR\_SYNCH\_ON\_SY or DESCRIPTOR\_SYNCH\_ON\_TAG flags, the client driver also sets the DESCRIPTOR\_USE\_SY\_TAG\_IN\_FIRST flag, the bus driver will use the Sy or Tag value that is provided by the client driver in the isoch descriptor to synchronize the data flow. In this case, the bus driver discards all data packets until it receives one whose Sy or Tag value matches the value that is indicated in the isoch descriptor. Upon finding a match, the bus driver ceases discarding packets and resumes forwarding *all* packets to the client driver.
 
-If the host controller supports it, a client driver can use cycle times to synchronize an isochronous data stream. A "cycle time" in this context is defined by the [**CYCLE\_TIME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/1394/ns-1394-_cycle_time) structure. It includes a second count, **CL\_SecondCount**, that wraps every 128 seconds, a cycle count, **CL\_CycleCount**, that indicates the number of isochronous cycles that have elapsed within the current second, and a clock-ticks count, **CL\_CycleOffset**, that indicates the number of IEEE 1394 bus clock ticks that have elapsed within the current cycle.
+If the host controller supports it, a client driver can use cycle times to synchronize an isochronous data stream. A "cycle time" in this context is defined by the [**CYCLE\_TIME**](/windows-hardware/drivers/ddi/1394/ns-1394-_cycle_time) structure. It includes a second count, **CL\_SecondCount**, that wraps every 128 seconds, a cycle count, **CL\_CycleCount**, that indicates the number of isochronous cycles that have elapsed within the current second, and a clock-ticks count, **CL\_CycleOffset**, that indicates the number of IEEE 1394 bus clock ticks that have elapsed within the current cycle.
 
 A client can either initiate a synchronization operation in a particular buffer, or it can synchronize the entire data stream on a certain cycle time.
 
@@ -36,12 +35,7 @@ To synchronize the entire data stream on a certain cycle time, client drivers mu
 
 2.  When the client requests a listen or talk operation on a channel, it specifies the cycle time that will be used to synchronize the data stream in the **StartTime** member of the IRB. For more information about listen and talk requests, see [**REQUEST\_ISOCH\_LISTEN**](https://msdn.microsoft.com/library/windows/hardware/ff537655) and [**REQUEST\_ISOCH\_TALK**](https://msdn.microsoft.com/library/windows/hardware/ff537660).
 
-To determine if the host controller supports synchronization on cycle times, the client driver should send a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request to the bus driver, with the **nLevel** member of the IRB set to 2. The bus driver returns a [**GET\_LOCAL\_HOST\_INFO2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info2) structure in response to this request. If the bus driver sets the HOST\_INFO\_SUPPORTS\_START\_ON\_CYCLE flag in the **HostCapabilities** member of GET\_LOCAL\_HOST\_INFO2, this indicates that the host controller supports the synchronization of isochronous operations using cycle times.
+To determine if the host controller supports synchronization on cycle times, the client driver should send a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request to the bus driver, with the **nLevel** member of the IRB set to 2. The bus driver returns a [**GET\_LOCAL\_HOST\_INFO2**](/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info2) structure in response to this request. If the bus driver sets the HOST\_INFO\_SUPPORTS\_START\_ON\_CYCLE flag in the **HostCapabilities** member of GET\_LOCAL\_HOST\_INFO2, this indicates that the host controller supports the synchronization of isochronous operations using cycle times.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing Network Drivers with Winsock Kernel
 description: Roadmap for Developing Network Drivers with Winsock Kernel
-ms.assetid: f94952c3-02b1-4bd2-bd73-e6d6d42a06fb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
 -   **Step 1:** Learn about Windows architecture and drivers.
 
-    You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and let you streamline your development process. For more information about driver fundamentals, see [Concepts for all driver developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers).
+    You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and let you streamline your development process. For more information about driver fundamentals, see [Concepts for all driver developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md).
 
 -   **Step 2:** Learn about the Network Driver Interface Specification (NDIS).
 
@@ -21,9 +20,9 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
     [Windows Network Architecture and the OSI Model](windows-network-architecture-and-the-osi-model.md)
 
-    [NDIS Miniport Drivers](ndis-miniport-drivers.md)
+    [NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md)
 
-    [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+    [Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
     [Network Driver Programming Considerations](network-driver-programming-considerations.md)
 
@@ -35,7 +34,7 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
     [Windows Filtering Platform Callout Drivers](introduction-to-windows-filtering-platform-callout-drivers.md)
 
-    [Native 802.11 Wireless LAN](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff560689(v=vs.85))
+    [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/ff560689(v=vs.85))
 
     [Mobile Broadband Network Interface](mb-interface-overview.md)
 
@@ -47,33 +46,25 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
 -   **Step 5:** Determine additional Windows driver design decisions.
 
-    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/creating-international-inf-files).
+    For information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 -   **Step 6:** Learn about the Windows driver build, test, and debug processes and tools.
 
-    Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](https://docs.microsoft.com/windows-hardware/drivers). For information about tools for building, testing, verifying, and debugging, see [Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/index).
+    Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For information about tools for building, testing, verifying, and debugging, see [Driver Development Tools](../devtest/index.md).
 
 -   **Step 7:** Review the [Winsock Kernel (WSK TCP Echo Server) driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617935) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 -   **Step 8:** Develop, build, test, and debug your driver.
 
-    For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](https://docs.microsoft.com/windows-hardware/drivers). This process helps ensure that you build a driver that works.
+    For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process helps ensure that you build a driver that works.
 
 -   **Step 9:** Create a driver package for your driver.
 
-    For information about how to install drivers, see [Providing a Driver Package](https://docs.microsoft.com/windows-hardware/drivers).
+    For information about how to install drivers, see [Providing a Driver Package](/windows-hardware/drivers).
 
 -   **Step 10:** Sign and distribute your driver.
 
-    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](https://docs.microsoft.com/windows-hardware/drivers).
+    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
-
- 
-
- 
-
-
-
-
 

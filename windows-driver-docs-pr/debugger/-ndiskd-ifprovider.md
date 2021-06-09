@@ -1,9 +1,8 @@
 ---
 title: ndiskd.ifprovider
 description: The ndiskd.ifprovider extension displays information about an NDIS interface provider (IfProvider). 
-ms.assetid: 89C406E5-81D3-42AA-BA15-3D7C093BCD3C
 keywords: ["ndiskd.ifprovider Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,25 +14,22 @@ ms.localizationpriority: medium
 
 # !ndiskd.ifprovider
 
-
-The **!ndiskd.ifprovider** extension displays information about an [NDIS interface provider](https://docs.microsoft.com/windows-hardware/drivers/network/registering-as-an-interface-provider) (IfProvider). If you run this extension with no parameters, !ndiskd will display a list of all registered NDIS interface providers.
+The **!ndiskd.ifprovider** extension displays information about an [NDIS interface provider](../network/registering-as-an-interface-provider.md) (IfProvider). If you run this extension with no parameters, !ndiskd will display a list of all registered NDIS interface providers.
 
 ```console
-!ndiskd.ifprovider [-handle <x>] 
+!ndiskd.ifprovider [-handle <x>]
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
-
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of an IfProvider.
+Optional handle of an IfProvider.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Run the **!ndiskd.ifprovider** extension with no parameters to get a list of all registered IfProviders.
 
@@ -48,9 +44,7 @@ Run the **!ndiskd.ifprovider** extension with no parameters to get a list of all
 
 You can see from the previous example that the debugee machine has four interface providers registered. Two of them are NDIS interface providers.
 
-**Note**  Interface providers are a generic concept and aren't required to be miniport drivers. While a miniport driver may choose to register as an interface provider if desired, most miniport drivers do not do so because NDIS has a built-in interface provider. The NDIS built-in interface provider automatically provides interfaces for every miniport driver, every Light-Weight Filter (LWF) module, and the loopback interface. For more information, see [NDIS interface provider](https://docs.microsoft.com/windows-hardware/drivers/network/registering-as-an-interface-provider).
-
- 
+**Note**  Interface providers are a generic concept and aren't required to be miniport drivers. While a miniport driver may choose to register as an interface provider if desired, most miniport drivers do not do so because NDIS has a built-in interface provider. The NDIS built-in interface provider automatically provides interfaces for every miniport driver, every Light-Weight Filter (LWF) module, and the loopback interface. For more information, see [NDIS interface provider](../network/registering-as-an-interface-provider.md).
 
 The following example shows the details for the "wanarp" interface provider in the previous example, whose handle is ffffd20d14334180.
 
@@ -77,27 +71,16 @@ HANDLERS
     SetObjectHandler                       fffff80d2f04bd10  bp wanarp!WanNdisIfSetHandler
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Registering as an Interface Provider](https://docs.microsoft.com/windows-hardware/drivers/network/registering-as-an-interface-provider)
-
- 
-
- 
-
-
-
-
-
-
+[Registering as an Interface Provider](../network/registering-as-an-interface-provider.md)

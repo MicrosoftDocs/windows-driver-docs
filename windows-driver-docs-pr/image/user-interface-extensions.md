@@ -1,7 +1,6 @@
 ---
 title: User Interface Extensions
 description: User Interface Extensions
-ms.assetid: 06212343-4742-4dea-b750-0e9505695419
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

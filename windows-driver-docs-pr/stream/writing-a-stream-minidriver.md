@@ -1,7 +1,6 @@
 ---
 title: Writing a Stream Minidriver
 description: Writing a Stream Minidriver
-ms.assetid: 83540dff-3774-4197-8ba1-d28e12b4e366
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , writing
 - streaming minidrivers WDK Windows 2000 Kernel , writing
@@ -30,42 +29,37 @@ The following are the routines the minidriver may have to provide. They are docu
 
 **Routines every minidriver provides**
 
-[*StrMiniCancelPacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_cancel_srb)
+[*StrMiniCancelPacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_cancel_srb)
 
-[*StrMiniReceiveDevicePacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb)
+[*StrMiniReceiveDevicePacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb)
 
-[*StrMiniRequestTimeout*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_request_timeout_handler)
+[*StrMiniRequestTimeout*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_request_timeout_handler)
 
-[*StrMiniEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_event_routine)
+[*StrMiniEvent*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_event_routine)
 
-[*StrMiniInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_interrupt)
+[*StrMiniInterrupt*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_interrupt)
 
 **Routines the minidriver provides for each individual stream**
 
-[*StrMiniReceiveStreamDataPacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb)
+[*StrMiniReceiveStreamDataPacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb)
 
-[**StrMiniReceiveStreamControlPacket**](https://docs.microsoft.com/previous-versions/ff568467(v=vs.85))
+[**StrMiniReceiveStreamControlPacket**](/previous-versions/ff568467(v=vs.85))
 
-[*StrMiniEvent*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_event_routine)
+[*StrMiniEvent*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_event_routine)
 
-[*StrMiniClock*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_query_clock_routine)
+[*StrMiniClock*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_query_clock_routine)
 
 It is possible for the minidriver to use the same callback for several different streams. The callback can determine the stream on whose behalf it was called from its parameters.
 
 The minidriver must, like all WDM drivers, also provide a **DriverEntry** routine. The main task of the **DriverEntry** routine of a minidriver is to register the minidriver with the class driver.
 
-The class driver receives all I/O requests on behalf of the minidriver. To obtain the information it needs to complete the request, the class driver builds a stream request block (SRB) and passes it to one of the **StrMini*XXX*Packet** routines. The class driver dispatches I/O requests to the device as a whole to the [*StrMiniReceiveDevicePacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb) routine. It passes requests to individual streams to the [*StrMiniReceiveStreamDataPacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb) (for kernel streaming read and write requests) or [**StrMiniReceiveStreamControlPacket**](https://docs.microsoft.com/previous-versions/ff568467(v=vs.85)) (for other requests).
+The class driver receives all I/O requests on behalf of the minidriver. To obtain the information it needs to complete the request, the class driver builds a stream request block (SRB) and passes it to one of the **StrMini*XXX*Packet** routines. The class driver dispatches I/O requests to the device as a whole to the [*StrMiniReceiveDevicePacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb) routine. It passes requests to individual streams to the [*StrMiniReceiveStreamDataPacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb) (for kernel streaming read and write requests) or [**StrMiniReceiveStreamControlPacket**](/previous-versions/ff568467(v=vs.85)) (for other requests).
 
 Normally, the class driver queues its requests, and passes them one at a time to the minidriver. The minidriver may optionally do its own synchronization; the minidriver is then responsible for queuing requests it cannot immediately handle. See [Minidriver Synchronization](minidriver-synchronization.md) for details.
 
-The minidriver must provide two additional routines for manipulating stream request blocks. The class driver calls [*StrMiniCancelPacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_cancel_srb) when it receives a cancel IRP, and needs to tell the minidriver to cancel a specific packet. The class driver also keeps track of how long the minidriver takes to complete its handling of a stream request block. If the minidriver takes too long, the class driver times out the request, and calls the minidriver's [*StrMiniRequestTimeout*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_request_timeout_handler) routine.
+The minidriver must provide two additional routines for manipulating stream request blocks. The class driver calls [*StrMiniCancelPacket*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_cancel_srb) when it receives a cancel IRP, and needs to tell the minidriver to cancel a specific packet. The class driver also keeps track of how long the minidriver takes to complete its handling of a stream request block. If the minidriver takes too long, the class driver times out the request, and calls the minidriver's [*StrMiniRequestTimeout*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_request_timeout_handler) routine.
 
-When a hardware interrupt occurs, the operating system signals the class driver, which then calls the minidriver's [*StrMiniInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_interrupt) routine to handle the interrupt.
-
- 
+When a hardware interrupt occurs, the operating system signals the class driver, which then calls the minidriver's [*StrMiniInterrupt*](/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_interrupt) routine to handle the interrupt.
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x14A KERNEL_WMI_INTERNAL
 description: The KERNEL_WMI_INTERNAL bug check has a value of 0x0000014A. This indicates that the internal kernel WMI subsystem has encountered a fatal error.
-ms.assetid: 2E739F6B-4618-44A5-B060-F2BCB77B82A3
 keywords: ["Bug Check 0x14A KERNEL_WMI_INTERNAL", "KERNEL_WMI_INTERNAL"]
 ms.date: 05/23/2017
 topic_type:

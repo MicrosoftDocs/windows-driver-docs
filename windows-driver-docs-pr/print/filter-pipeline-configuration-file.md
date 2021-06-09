@@ -1,7 +1,6 @@
 ---
 title: Filter Pipeline Configuration File
 description: Filter Pipeline Configuration File
-ms.assetid: 586247bd-6d06-4728-a5f0-ee3fe1d09321
 keywords:
 - XPSDrv printer drivers WDK , render modules
 - render modules WDK XPSDrv , filter pipeline configuration files
@@ -63,7 +62,7 @@ The following code example shows a typical filter pipeline configuration file:
 
 ### Private Keywords
 
-An [XPSDrv configuration module](xpsdrv-configuration-module.md) can put *private keywords* in the PrintTicket entry when it handles an [XPS driver document event](xps-driver-document-events.md) during a [**DrvDocumentEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function call. These PrintTicket entries are then read by the processing filters in the print filter pipeline while the filters are reading the PrintTicket.
+An [XPSDrv configuration module](xpsdrv-configuration-module.md) can put *private keywords* in the PrintTicket entry when it handles an [XPS driver document event](xps-driver-document-events.md) during a [**DrvDocumentEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function call. These PrintTicket entries are then read by the processing filters in the print filter pipeline while the filters are reading the PrintTicket.
 
 ### Filter Pipeline Property Bag
 
@@ -80,7 +79,7 @@ DrvPopulateFilterServices(
     );
 ```
 
-For more information about preceding function, see [**DrvPopulateFilterServices**](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-drvpopulatefilterservices).
+For more information about preceding function, see [**DrvPopulateFilterServices**](/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-drvpopulatefilterservices).
 
 The following code example shows the XML syntax for the **&lt;FilterServiceProvider&gt;** element in the filter pipeline configuration file:
 

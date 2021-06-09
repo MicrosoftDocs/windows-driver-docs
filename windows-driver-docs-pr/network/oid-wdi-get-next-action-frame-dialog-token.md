@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN
 description: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN requests the DialogToken to be used in the next Action frame.
-ms.assetid: EB5F6077-1566-41AE-B414-9ECF24BAE982
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN Network Drivers Starting with Windows Vista
@@ -28,12 +27,11 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                     | Multiple TLV instances allowed | Optional | Description     |
 |-------------------------------------------------------------------------|--------------------------------|----------|-----------------|
-| [**WDI\_TLV\_NEXT\_DIALOG\_TOKEN**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-next-dialog-token) |                                |          | A dialog token. |
+| [**WDI\_TLV\_NEXT\_DIALOG\_TOKEN**](./wdi-tlv-next-dialog-token.md) |                                |          | A dialog token. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Interpreting a UMDH Log
 description: Interpreting a UMDH Log
-ms.assetid: c5c74a3a-9598-4d89-8c5b-445138ae845f
 keywords: ["UMDH, interpreting a UMDH log"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

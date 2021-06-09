@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_PROTOCOL_OPTIONS
 description: This topic describes the OID_GEN_CO_PROTOCOL_OPTIONS object identifier (OID).
-ms.assetid: 5c1212e4-1fd2-435a-ae8c-9f75522cbca6
 keywords:
 - OID_GEN_CO_PROTOCOL_OPTIONS
 ms.date: 11/02/2017
@@ -25,8 +24,6 @@ The protocol does not use the **ProtocolReserved** section of indicated receive 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

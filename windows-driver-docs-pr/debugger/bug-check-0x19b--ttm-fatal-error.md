@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x19B TTM_FATAL_ERROR
 description: The TTM_FATAL_ERROR bug check has a value of 0x0000019B. This indicates that the terminal topology manager experienced a fatal error.
-ms.assetid: 993A3A57-A303-4FEB-98F4-68802F4151D4
 keywords: ["Bug Check 0x19B TTM_FATAL_ERROR", "TTM_FATAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:

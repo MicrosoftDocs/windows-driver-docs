@@ -1,7 +1,6 @@
 ---
 title: NDIS_MDL_LINKAGE macro
 description: The NDIS_MDL_LINKAGE macro retrieves a pointer to the next MDL that is associated with the specified MDL.
-ms.assetid: 3d5a91cb-cb26-49fb-b510-75fc95f7f46b
 ms.date: 07/18/2017
 keywords:
  - NDIS_MDL_LINKAGE macro Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 The **NDIS\_MDL\_LINKAGE** macro retrieves a pointer to the next MDL that is associated with the specified MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PVOID NDIS_MDL_LINKAGE(
@@ -22,24 +20,20 @@ PVOID NDIS_MDL_LINKAGE(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
 
-Return value
-------------
+## Return value
 
 **NDIS\_MDL\_LINKAGE** returns a pointer to an MDL or **NULL** if there is no next MDL.
 
-Remarks
--------
+## Remarks
 
-The **NDIS\_MDL\_LINKAGE** macro provides an MDL-based version of the [**NDIS\_BUFFER\_LINKAGE**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff556919(v=vs.85)) function.
+The **NDIS\_MDL\_LINKAGE** macro provides an MDL-based version of the [**NDIS\_BUFFER\_LINKAGE**](/previous-versions/windows/hardware/network/ff556919(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -69,12 +63,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_BUFFER\_LINKAGE**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff556919(v=vs.85))
+[**NDIS\_BUFFER\_LINKAGE**](/previous-versions/windows/hardware/network/ff556919(v=vs.85))
 
  
-
- 
-
-
-
 

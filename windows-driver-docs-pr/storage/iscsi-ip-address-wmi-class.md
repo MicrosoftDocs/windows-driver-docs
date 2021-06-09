@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_IP\_Address WMI Class
 description: ISCSI\_IP\_Address WMI Class
-ms.assetid: 3ceeb54f-ecc5-40c5-b0a8-8c6f86203f1c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -53,13 +52,7 @@ class ISCSI_IP_Address {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_IP\_Address**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_ip_address) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_IP\_Address**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_ip_address) data structure.
 
  
-
- 
-
-
-
-
 

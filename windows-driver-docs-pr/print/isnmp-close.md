@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: ea3c462d-881d-48ad-8751-d3ee0468697e
 keywords: ["Close method Print Devices", "Close method Print Devices , ISNMP interface", "ISNMP interface Print Devices , Close method"]
 topic_type:
 - apiref
@@ -25,20 +24,17 @@ ms.localizationpriority: medium
 
 The `Close` method enables an ASP Web page to close a communication path to an SNMP agent.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Close();
 ```
 
-Parameters
-----------
+## Parameters
 
 This method has no parameters.
 
-Return value
-------------
+## Return value
 
 The method always returns S\_OK.
 
@@ -56,8 +52,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 objSNMP.Close
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

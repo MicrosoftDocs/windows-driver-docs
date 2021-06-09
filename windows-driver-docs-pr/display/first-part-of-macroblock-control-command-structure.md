@@ -1,7 +1,6 @@
 ---
 title: First Part of Macroblock Control Command Structure
 description: First Part of Macroblock Control Command Structure
-ms.assetid: b282adac-3bf3-4477-a817-371d37b174a5
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017
@@ -88,11 +87,11 @@ The **wMBaddress** structure member specifies the macroblock address of the curr
 
  
 
-The **wPicWidthInMBminus1** and **wPicHeightInMBminus1** addresses are members of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure.
+The **wPicWidthInMBminus1** and **wPicHeightInMBminus1** addresses are members of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure.
 
 ### <span id="wMBtype"></span><span id="wmbtype"></span><span id="WMBTYPE"></span>wMBtype
 
-The **wMBtype** structure member specifies the type of macroblock being processed. This member contains a set of bits that define the way macroblocks and motion vectors are processed. The **bPic4MVallowed**, **bPicScanMethod**, **bPicBackwardPrediction**, **bPicStructure**, and **bPicScanFixed** addresses are members of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters)structure. The **bConfigHostInverseScan** address is a member of the [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure.
+The **wMBtype** structure member specifies the type of macroblock being processed. This member contains a set of bits that define the way macroblocks and motion vectors are processed. The **bPic4MVallowed**, **bPicScanMethod**, **bPicBackwardPrediction**, **bPicStructure**, and **bPicScanFixed** addresses are members of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters)structure. The **bConfigHostInverseScan** address is a member of the [**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure.
 
 <table>
 <colgroup>
@@ -188,7 +187,7 @@ The values shown in the following tables (in this section) occur for the followi
 
 -   *PicCurrentField* flag is zero unless **bPicStructure** is 2 (bottom field). In this case, *PicCurrentField* is 1.
 
-**MVector** is a member of the [**DXVA\_MBctrl\_P\_HostResidDiff\_1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_hostresiddiff_1) and [**DXVA\_MBctrl\_P\_OffHostIDCT\_1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_offhostidct_1) structures. The *IntraMacroblock*, *MotionForward*, *MotionBackward*, *MotionType*, *MvertFieldSel*, *H261LoopFilter*, and *Motion4MV* flags and variables are bitfields contained in the **wMBtype** member of the DXVA\_MBctrl\_P\_HostResidDiff\_1 and DXVA\_MBctrl\_P\_OffHostIDCT\_1 structures. **bPicOBMC** is a member of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure. The *PicCurrentField* flag is derived from the **bPicStructure** member of DXVA\_PictureParameters.
+**MVector** is a member of the [**DXVA\_MBctrl\_P\_HostResidDiff\_1**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_hostresiddiff_1) and [**DXVA\_MBctrl\_P\_OffHostIDCT\_1**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_p_offhostidct_1) structures. The *IntraMacroblock*, *MotionForward*, *MotionBackward*, *MotionType*, *MvertFieldSel*, *H261LoopFilter*, and *Motion4MV* flags and variables are bitfields contained in the **wMBtype** member of the DXVA\_MBctrl\_P\_HostResidDiff\_1 and DXVA\_MBctrl\_P\_OffHostIDCT\_1 structures. **bPicOBMC** is a member of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure. The *PicCurrentField* flag is derived from the **bPicStructure** member of DXVA\_PictureParameters.
 
 The following considerations apply when reviewing the following tables in this section:
 
@@ -204,7 +203,7 @@ The following considerations apply when reviewing the following tables in this s
 
 ### <span id="Frame-Structured_Pictures"></span><span id="frame-structured_pictures"></span><span id="FRAME-STRUCTURED_PICTURES"></span>Frame-Structured Pictures
 
-The following table shows the valid combinations of element settings for frame-structured pictures (when the **bPicStructure** member of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure is equal to 3).
+The following table shows the valid combinations of element settings for frame-structured pictures (when the **bPicStructure** member of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure is equal to 3).
 
 <table>
 <colgroup>
@@ -355,7 +354,7 @@ vector'[3][0][1]&lt;&lt;1
 
 ### <span id="Field-Structured_Pictures"></span><span id="field-structured_pictures"></span><span id="FIELD-STRUCTURED_PICTURES"></span>Field-Structured Pictures
 
-The following table shows the valid combinations of element settings for field-structured pictures (when the **bPicStructure** member of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure is equal to 1 or 2).
+The following table shows the valid combinations of element settings for field-structured pictures (when the **bPicStructure** member of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure is equal to 1 or 2).
 
 <table>
 <colgroup>
@@ -536,15 +535,9 @@ The remaining allowed cases for frame-structured and field-structured pictures a
 
  
 
-**Note**   The average operator is mathematically identical ((s1+s2+1)&gt;&gt;1) for MPEG-1, MPEG-2 half-sample prediction filtering, bidirectional averaging, and dual prime same-opposite parity combining. The H.263 bidirectional averaging operator does not add the offset of +1 prior to right-shifting. The **bBidirectionalAveragingMode** member of [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) determines which of these methods is used.
+**Note**   The average operator is mathematically identical ((s1+s2+1)&gt;&gt;1) for MPEG-1, MPEG-2 half-sample prediction filtering, bidirectional averaging, and dual prime same-opposite parity combining. The H.263 bidirectional averaging operator does not add the offset of +1 prior to right-shifting. The **bBidirectionalAveragingMode** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) determines which of these methods is used.
 
  
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Plotter Driver Components
 description: Plotter Driver Components
-ms.assetid: 6a976956-c188-4d31-b176-e97e09e8cc0b
 keywords:
 - Plotter Driver WDK print , components
 - MSPlot WDK print , components

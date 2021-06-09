@@ -1,7 +1,6 @@
 ---
 title: Writing a Print Processor
 description: Writing a Print Processor
-ms.assetid: 2443ec67-ef5d-46eb-b00a-deafad9abc69
 keywords:
 - print spooler customizing WDK , print processors
 - spooler customizing WDK print , print processors

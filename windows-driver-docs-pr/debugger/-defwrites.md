@@ -1,7 +1,6 @@
 ---
 title: defwrites
 description: The defwrites extension displays the values of the kernel variables used by the cache manager.
-ms.assetid: da576e05-3d9f-4599-bf8e-b1fa05093d77
 keywords: ["cache manager", "defwrites Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,8 +35,7 @@ For information about write throttling, see *Microsoft Windows Internals* by Mar
 
 For information about other cache management extensions, use the [**!cchelp**](-cchelp.md) extension.
 
-Remarks
--------
+## Remarks
 
 When the number of deferred writes ("dirty pages") becomes too large, page writing will be throttled. This extension allows you to see whether your system has reached this point.
 

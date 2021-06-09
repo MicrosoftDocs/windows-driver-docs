@@ -1,7 +1,6 @@
 ---
 title: Minidriver Version 7.06 Features
 description: Minidriver Version 7.06 Features
-ms.assetid: 6066C6F9-DF03-4886-A5AE-FFE50B2B34D8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,14 +30,14 @@ Developers can use the new APIs and data structures that were introduced for sec
 
 The following structures for passing encrypted data are defined in this version of the specification:
 
--   [**CARD\_AUTHENTICATE**](https://docs.microsoft.com/previous-versions/dn468744(v=vs.85))
--   [**CARD\_AUTHENTICATE\_RESPONSE**](https://docs.microsoft.com/previous-versions/dn468745(v=vs.85))
--   [**CARD\_CHANGE\_AUTHENTICATOR**](https://docs.microsoft.com/previous-versions/dn468746(v=vs.85))
--   [**CARD\_CHANGE\_AUTHENTICATOR\_RESPONSE**](https://docs.microsoft.com/previous-versions/dn468747(v=vs.85))
--   [**CARD\_ENCRYPTED\_DATA**](https://docs.microsoft.com/previous-versions/dn468749(v=vs.85))
--   [**CARD\_IMPORT\_KEYPAIR**](https://docs.microsoft.com/previous-versions/dn468750(v=vs.85))
+-   [**CARD\_AUTHENTICATE**](/previous-versions/dn468744(v=vs.85))
+-   [**CARD\_AUTHENTICATE\_RESPONSE**](/previous-versions/dn468745(v=vs.85))
+-   [**CARD\_CHANGE\_AUTHENTICATOR**](/previous-versions/dn468746(v=vs.85))
+-   [**CARD\_CHANGE\_AUTHENTICATOR\_RESPONSE**](/previous-versions/dn468747(v=vs.85))
+-   [**CARD\_ENCRYPTED\_DATA**](/previous-versions/dn468749(v=vs.85))
+-   [**CARD\_IMPORT\_KEYPAIR**](/previous-versions/dn468750(v=vs.85))
 
-The following card properties for secure key injection are defined in version 7 of this specification. For more information about these properties, see [**CardGetProperty**](https://docs.microsoft.com/previous-versions/dn468729(v=vs.85)).
+The following card properties for secure key injection are defined in version 7 of this specification. For more information about these properties, see [**CardGetProperty**](/previous-versions/dn468729(v=vs.85)).
 
 -   CP\_KEY\_IMPORT\_SUPPORT
 -   CP\_ENUM\_ALGORITHMS
@@ -49,21 +48,21 @@ The following APIs have been added for secure key injection in version 7 of this
 
 Server functions:
 
--   [**MDEncryptData**](https://docs.microsoft.com/previous-versions/dn468756(v=vs.85))
--   [**MDImportSessionKey**](https://docs.microsoft.com/previous-versions/dn468757(v=vs.85))
+-   [**MDEncryptData**](/previous-versions/dn468756(v=vs.85))
+-   [**MDImportSessionKey**](/previous-versions/dn468757(v=vs.85))
 
 Shared functions:
 
--   [**CardDestroyKey**](https://docs.microsoft.com/previous-versions/dn468720(v=vs.85))
--   [**CardGetAlgorithmProperty**](https://docs.microsoft.com/previous-versions/dn468722(v=vs.85))
--   [**CardGetKeyProperty**](https://docs.microsoft.com/previous-versions/dn468728(v=vs.85))
--   [**CardGetSharedKeyHandle**](https://docs.microsoft.com/previous-versions/dn468730(v=vs.85))
--   [**CardProcessEncryptedData**](https://docs.microsoft.com/previous-versions/dn468732(v=vs.85))
--   [**CardSetKeyProperty**](https://docs.microsoft.com/previous-versions/dn468739(v=vs.85))
+-   [**CardDestroyKey**](/previous-versions/dn468720(v=vs.85))
+-   [**CardGetAlgorithmProperty**](/previous-versions/dn468722(v=vs.85))
+-   [**CardGetKeyProperty**](/previous-versions/dn468728(v=vs.85))
+-   [**CardGetSharedKeyHandle**](/previous-versions/dn468730(v=vs.85))
+-   [**CardProcessEncryptedData**](/previous-versions/dn468732(v=vs.85))
+-   [**CardSetKeyProperty**](/previous-versions/dn468739(v=vs.85))
 
 Client functions:
 
--   [**CardImportSessionKey**](https://docs.microsoft.com/previous-versions/dn468731(v=vs.85))
+-   [**CardImportSessionKey**](/previous-versions/dn468731(v=vs.85))
 
 ## <span id="Support_for_RSA_Padding_Removal_Operations_in_the_Smart_Card"></span><span id="support_for_rsa_padding_removal_operations_in_the_smart_card"></span><span id="SUPPORT_FOR_RSA_PADDING_REMOVAL_OPERATIONS_IN_THE_SMART_CARD"></span>Support for RSA Padding Removal Operations in the Smart Card
 
@@ -72,7 +71,7 @@ Version 7 of the smart card minidriver interface lets smart card vendors provide
 
 Version 7 also provides support for older cards that do not support internal (or OnCard) padding removal. This allows these cards to continue to use the padding removal capabilities that the Base CSP/KSP provides.
 
-For more information, see [**PFN\_CSP\_UNPAD\_DATA**](https://docs.microsoft.com/previous-versions/dn468771(v=vs.85)) and [**CardRSADecrypt**](https://docs.microsoft.com/previous-versions/dn468737(v=vs.85)) later in this specification.
+For more information, see [**PFN\_CSP\_UNPAD\_DATA**](/previous-versions/dn468771(v=vs.85)) and [**CardRSADecrypt**](/previous-versions/dn468737(v=vs.85)) later in this specification.
 
 ## <span id="Smart_Card_Plug_and_Play"></span><span id="smart_card_plug_and_play"></span><span id="SMART_CARD_PLUG_AND_PLAY"></span>Smart Card Plug and Play
 
@@ -84,9 +83,9 @@ For more information, see [Smart Card Plug and Play](smart-card-plug-and-play.md
 ## <span id="_CardCreateContainerEx"></span><span id="_cardcreatecontainerex"></span><span id="_CARDCREATECONTAINEREX"></span> CardCreateContainerEx
 
 
-This new API is extends the functionality of the [**CardCreateContainer**](https://docs.microsoft.com/previous-versions/dn468708(v=vs.85)) API. In addition to creating the key container, this function establishes the PIN association when the container is created.
+This new API is extends the functionality of the [**CardCreateContainer**](/previous-versions/dn468708(v=vs.85)) API. In addition to creating the key container, this function establishes the PIN association when the container is created.
 
-For more information, see [**CardCreateContainerEx**](https://docs.microsoft.com/previous-versions/dn468709(v=vs.85)) later in this specification.
+For more information, see [**CardCreateContainerEx**](/previous-versions/dn468709(v=vs.85)) later in this specification.
 
 ## <span id="New_Card_Container_Property_for_ECDSA_ECDH_Key_Association"></span><span id="new_card_container_property_for_ecdsa_ecdh_key_association"></span><span id="NEW_CARD_CONTAINER_PROPERTY_FOR_ECDSA_ECDH_KEY_ASSOCIATION"></span>New Card Container Property for ECDSA/ECDH Key Association
 
@@ -107,10 +106,4 @@ For more information about PIV, see the “About Personal Identity Verification 
 For more information about the process that Windows follows to identify and pair a PIV card with the inbox driver, see [Windows Inbox Smart Card Minidriver](windows-inbox-smart-card-minidriver.md).
 
  
-
- 
-
-
-
-
 

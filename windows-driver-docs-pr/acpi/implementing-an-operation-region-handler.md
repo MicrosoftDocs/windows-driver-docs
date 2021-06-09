@@ -1,7 +1,6 @@
 ---
 title: Implementing an Operation Region Handler
 description: Implementing an Operation Region Handler
-ms.assetid: e435393c-d637-45c1-ab65-0b23f796ec02
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-The driver must provide an operation region handler, which is a [**PACPI\_OP\_REGION\_HANDLER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/oprghdlr/nc-oprghdlr-acpi_op_region_handler)-typed callback. The ACPI driver calls the operation handler to access the data fields in the driver's operation region. The combined operation of the function driver and the ACPI BIOS is vendor-defined and device-specific. In general, the function driver and the ACPI BIOS access indexes in an operation region that result in device-specific operations and return whatever information is appropriate.
+The driver must provide an operation region handler, which is a [**PACPI\_OP\_REGION\_HANDLER**](/windows-hardware/drivers/ddi/oprghdlr/nc-oprghdlr-acpi_op_region_handler)-typed callback. The ACPI driver calls the operation handler to access the data fields in the driver's operation region. The combined operation of the function driver and the ACPI BIOS is vendor-defined and device-specific. In general, the function driver and the ACPI BIOS access indexes in an operation region that result in device-specific operations and return whatever information is appropriate.
 
 An operation region handler typically uses the following parameters that the ACPI driver passes to the handler:
 
@@ -38,9 +37,4 @@ An operation region handler typically uses the following parameters that the ACP
 In addition to the previously described parameters, the ACPI driver also passes to an operation region handler pointers to the following: an operation region object, a completion handler, and a completion context. However, the function driver does not use the operation region object in a handler, and the completion handler and context are reserved for internal use.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: GPU segments
 description: graphics processing unit (GPU) access to physical memory is abstracted in the device driver interface (DDI) by a segmentation model.
-ms.assetid: E6CAD808-73C0-48AB-BF95-76911D5C104A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ In the DDI, physical memory references always take the form of a segment ID-segm
 
 GPU engines, which don't support GPU virtual addressing, need to access allocations through their physical addresses. This has implication on how an allocation gets assigned resources from a segment. Physical references imply that an allocation must be allocated either contiguously in a memory segment or occupy a contiguous range in the aperture segment.
 
-To avoid unnecessary and expensive contiguous allocations, the kernel mode driver must explicitly identify allocations, which require to be accessed physically by a rendering engine, by setting the new [**DXGK\_ALLOCATIONINFOFLAGS2**](https://docs.microsoft.com/windows-hardware/drivers/display/dxgk-allocationinfoflags2)::**AccessedPhysically** flag during allocation creation.
+To avoid unnecessary and expensive contiguous allocations, the kernel mode driver must explicitly identify allocations, which require to be accessed physically by a rendering engine, by setting the new [**DXGK\_ALLOCATIONINFOFLAGS2**](./dxgk-allocationinfoflags2.md)::**AccessedPhysically** flag during allocation creation.
 
 Such allocations will be mapped to the aperture segment when resident in system memory. The allocations will be contiguous when resident in a memory segment. Allocations, created this way, may be referenced through the allocation list on engines, operating in the physical addressing mode.
 
@@ -85,10 +84,4 @@ Primary surfaces are understood to be accessed physically by the display control
  
 
  
-
- 
-
-
-
-
 

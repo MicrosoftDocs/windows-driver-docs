@@ -1,5 +1,5 @@
 ---
-Description: Here are some example designs for USB Type-C system.
+description: Here are some example designs for USB Type-C system.
 title: Hardware design of USB Type-C systems
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -31,7 +31,7 @@ In addition to the components in the preceding list, a USB Type-C system can hav
 
 Here is an example of a USB Type-C system with an embedded controller:
 
-![usb type-c hardware design example for embedded controller devices](images/type-c-hw1.png)
+![Diagram that shows a U S B Type-C hardware design example for embedded controller devices.](images/type-c-hw1.png)
 
 Here is another view:
 
@@ -46,7 +46,7 @@ For a system that has an embedded controller that uses non-ACPI transport.
 
 [Write a UCSI client driver](write-a-ucsi-driver.md)
 
-[USB Type-C driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
+[USB Type-C driver reference](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
 ## <a href="" id="hardware"></a>USB Type-C system design
 
@@ -63,10 +63,7 @@ For the preceding design, implement a driver that communicates with the connecto
 
 [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
 
-[USB Type-C driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
+[USB Type-C driver reference](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
 ## Related topics
-[Windows support for USB Type-C connectors](oem-tasks-for-bringing-up-a-usb-typec.md)  
-
-
-
+[Windows support for USB Type-C connectors](oem-tasks-for-bringing-up-a-usb-typec.md)

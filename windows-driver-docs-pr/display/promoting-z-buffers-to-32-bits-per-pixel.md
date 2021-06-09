@@ -1,7 +1,6 @@
 ---
 title: Promoting Z Buffers to 32 Bits Per Pixel
 description: Promoting Z Buffers to 32 Bits Per Pixel
-ms.assetid: 6b7dddab-e154-44e8-a4e3-45bd706ed638
 keywords:
 - z buffers WDK DirectX 9.0
 - color buffers WDK DirectX 9.0
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 A display driver whose display device does not support rendering to z and color buffers with differing pixel depths must transparently promote a 16 bits per pixel (bpp) z buffer to 32 bpp in order to render both the z buffer and a 32 bpp color buffer at the same time. Note, however, that the z buffer cannot also have stencil bits. Therefore, applications are not required to correct this mismatch in buffer pixel depth.
 
-If the driver's display device can render to z and color buffers of differing pixel depth, the driver sets the D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH flag in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for z-buffer formats. The Direct3D runtime then lets applications render to any mismatch of z- and color-pixel depths.
+If the driver's display device can render to z and color buffers of differing pixel depth, the driver sets the D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH flag in the **dwOperations** member of the [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for z-buffer formats. The Direct3D runtime then lets applications render to any mismatch of z- and color-pixel depths.
 
 If the driver does not set D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH for z-buffer formats, the runtime only lets applications render to a mismatch of 32 bpp color buffer and 16 bpp z buffer with no stencil bits as described in the introductory paragraph. In this case, the driver allocates a 32 bpp z buffer in place of the requested 16 bpp z buffer.
 
@@ -31,10 +30,4 @@ If D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH is not set, the runtim
 -   Any z format whose depth stencil does not occupy the same number of bits per pixel as the color buffer (in other words, mismatching z and stencil surfaces). For rendering to succeed in this scenario, the driver would have to change the number of stencil bits, which would also cause noticeable artifacts.
 
  
-
- 
-
-
-
-
 

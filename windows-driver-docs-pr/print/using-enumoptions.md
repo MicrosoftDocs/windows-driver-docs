@@ -1,7 +1,6 @@
 ---
 title: Using EnumOptions
 description: Using EnumOptions
-ms.assetid: 6ce16d28-eff7-4701-a592-046f364cda44
 keywords:
 - EnumOptions
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_FLASH\_MODE
 description: The WIA\_DPC\_FLASH\_MODE property defines the current flash mode setting for a camera device. The device driver enumerates the supported values of this property, and an application writes this property to set the flash mode for the camera device.
-ms.assetid: 04c58111-09a7-4cd0-b60b-a65197c0931d
 keywords: ["WIA_DPC_FLASH_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the six that are valid with this property.
 
@@ -75,8 +73,7 @@ The following table describes the six that are valid with this property.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_NUM\_PICT\_PER\_ROW
 description: The WIA\_IPC\_NUM\_PICT\_PER\_ROW property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 56cce580-ea96-4354-8972-d41b93c511fc
 keywords: ["WIA_IPC_NUM_PICT_PER_ROW Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

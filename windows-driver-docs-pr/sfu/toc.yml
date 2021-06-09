@@ -1,0 +1,7 @@
+- name: "Storage Firmware Update (SFU)"
+# Auto-expanded node
+  items: 
+  - name: "Storage Firmware Update (SFU)"
+    href: index.md
+  - name: "Storage Firmware Update (SFU) driver"
+    href: storage-firmware-update-driver.md

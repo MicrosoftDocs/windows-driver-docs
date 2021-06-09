@@ -1,26 +1,23 @@
 ---
 title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
-ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.date: 06/29/2019
+ms.date: 02/04/2020
 topic_type:
 - apiref
 api_name:
 - MEMORY_MANAGEMENT
 api_type:
 - NA
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Bug Check 0x1A: MEMORY\_MANAGEMENT
-
 
 The MEMORY\_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 
 ## MEMORY\_MANAGEMENT Parameters
 
@@ -40,7 +37,7 @@ Parameter 1 identifies the exact violation.
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>The fork clone block reference count is corrupt. (This only occurs on checked builds of Windows.)</p></td>
+<td align="left"><p>The fork clone block reference count is corrupt. This only occurs on checked builds of Windows. Checked builds were available on older versions of Windows, before Windows 10 version 1803.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x31</p></td>
@@ -99,6 +96,14 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>0x1236</p></td>
 <td align="left"><p>The caller specified an MDL that contains an unlocked (or invalid) physical page. Parameter 2 contains a pointer to the MDL. Parameter 3 contains a pointer to the invalid PFN. Parameter 4 contains the invalid PFN value.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>0x1240</p></td>
+<td align="left"><p>It is illegal for callers to build an MDL for a virtual address range that is not resident. Parameter 2 is the Memory Descriptor List (MDL) and Parameter 3 is  the PTE pointer.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x1241</p></td>
+<td align="left"><p>The virtual address for the MDL was unexpectedly asynchronously unmapped midway through the call to build the MDL. Parameter 2 is the MDL, Parameter 3 is  the PTE pointer.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>0x3300</p></td>
 <td align="left"><p>In the process of performing a write, the referenced virtual address is mistakenly marked as copy on write. Parameter 2 is the FaultingAddress.  Parameter 3 is the PTE contents. Parameter 4 indicates the virtual address space type.</p></td>
@@ -110,6 +115,10 @@ Parameter 1 identifies the exact violation.
 <tr class="even">
 <td align="left"><p>0x3453</p></td>
 <td align="left"><p>All the page table pages of an exited process could not be deleted due to outstanding references.  This typically indicates corruption in the process’ page table structures.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x3470</p></td>
+<td align="left"><p>A cached kernel stack was corrupted while on the freelist – this memory corruption indicates a serious problem of which the calling stack may be a victim or a culprit. Parameter 2 is Virtual Address (VA), Parameter 3 is the VA Cookie.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4477</p></td>
@@ -127,17 +136,20 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>0x5200</p></td>
 <td align="left"><p>A page on a free pool SLIST has been corrupted. This can be the result of a write-after-free bug in a driver, or an overrun from a previous page. Parameter 2 contains the address of a free pool block. Parameter 4 contains the value that was expected to be at that address. Parameter 3 contains the actual value that was found.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>0x5305</p></td>
+<td align="left"><p>The caller is specifying an invalid pool address (parameter 2) to free. Parameter 2 is  Virtual Address (VA) being evaluated, Parameter 3 is the region size.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>0x6001</p></td>
 <td align="left"><p>The memory store component’s private memory range is corrupted, causing it to become inaccessible. Parameter 2 is the returned status.  Parameter 3 is the virtual address in the store’s private memory range. Parameter 4 is the MemoryDescriptorList.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x8884</p></td>
-<td align="left"><p>(Windows 7 only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
+<td align="left"><p>0x8884</p><p>0x8885</p><p>0x8886</p><p>0x8887</p></td>
+<td align="left"><p>(Windows 7 and later). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>0x8888</p>
-<p>0x8889</p></td>
+<td align="left"><p>0x8888</p><p>0x8889</p></td>
 <td align="left"><p>Internal memory management structures are corrupted.</p></td>
 </tr>
 <tr class="even">
@@ -149,12 +161,20 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>A PFN (parameter 2) was encountered with a corrupted linkage no longer connected to its top level process.  This indicates corruption in the PFN structures.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>0x15000</p></td>
+<td align="left"><p>The caller is supplying either the wrong address or is calling this routine in the wrong process context.  Both are illegal because we cannot unsecure a range we cannot find due to this error. Parameter 2 is the Virtual Address (VA) being evaluated.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>0x15001</p></td>
 <td align="left"><p>An error occurred In the process of un-securing memory that was previously secured.  This can happen when the caller mistakenly invoked  MmUnsecureVirtualMemory in the wrong process context.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x41201</p></td>
 <td align="left"><p>In the process of querying a virtual address, there was an inconsistency between the Page Frame Number(PFN) and the current Page Table Entry (PTE) pointer. Parameter 2 is the corresponding PTE. Parameter 3 is the PTE contents and parameter 4 is the virtual address descriptor.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x41202</p></td>
+<td align="left"><p>In the process of determining  the page protection of a non-zero PTE, it was determined that the PTE is corrupt.  Parameter 2 is the PTE pointer, Parameter 3 is the PTE contents and Parameter 4 is Virtual Address Descriptor (VAD).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x41283</p></td>
@@ -223,10 +243,8 @@ Parameter 1 identifies the exact violation.
 </tbody>
 </table>
 
+## Resolution
 
-Resolution
-----------
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. 
-
-Running the [**Windows Memory Diagnostic**](https://social.technet.microsoft.com/wiki/contents/articles/29343.windows-10-technical-preview-running-windows-memory-diagnostics-tool.aspx) tool could be useful as well to exclude any kind of problem affecting the physical memory modules.
+Running the Windows Memory Diagnostic tool could be useful as well to exclude any kind of problem affecting the physical memory modules.

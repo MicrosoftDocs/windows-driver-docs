@@ -1,7 +1,6 @@
 ---
 title: Printer Configuration
 description: Printer Configuration
-ms.assetid: bbde600b-3ac1-4d37-bcc6-037a9527fb27
 keywords:
 - installing drivers WDK printer , configurng printers
 - printer driver installations WDK , configuring printers

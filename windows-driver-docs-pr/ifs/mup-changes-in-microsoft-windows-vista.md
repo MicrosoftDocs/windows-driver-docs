@@ -1,7 +1,6 @@
 ---
 title: MUP Changes in Microsoft Windows Vista
 description: MUP Changes in Microsoft Windows Vista
-ms.assetid: 8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec
 keywords:
 - kernel network redirectors WDK , MUP
 - MUP WDK network redirectors
@@ -25,47 +24,47 @@ MUP and the Distributed File System (DFS) client are in separate binary files. T
 
 A new redirector model is defined on Windows Vista:
 
--   MUP registers as a file system with the I/O manager by calling [**IoRegisterFileSystem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioregisterfilesystem).
+-   MUP registers as a file system with the I/O manager by calling [**IoRegisterFileSystem**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioregisterfilesystem).
 
--   A network redirector registers with MUP using [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex) , a new routine introduced in Windows Vista.
+-   A network redirector registers with MUP using [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex) , a new routine introduced in Windows Vista.
 
--   A network redirector passes an unnamed device object to [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex).
+-   A network redirector passes an unnamed device object to [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex).
 
--   A network redirector passes a device name to [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex).
+-   A network redirector passes a device name to [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex).
 
--   A network redirector does not register as a file system with the I/O manager (does not call [**IoRegisterFileSystem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioregisterfilesystem)).
+-   A network redirector does not register as a file system with the I/O manager (does not call [**IoRegisterFileSystem**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioregisterfilesystem)).
 
--   All calls from MUP to a network redirector, including prefix resolution, IOCTLs, and FSCTLs, are made with APCs enabled. All calls from other components to MUP are expected to be made with APCs enabled. When calls are used with [**FsRtlCancellableWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff545738) or [**FsRtlCancellableWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff545731), new routines introduced in Windows Vista, this will ensure that long waits can be aborted if a thread that issued an I/O request is terminated.
+-   All calls from MUP to a network redirector, including prefix resolution, IOCTLs, and FSCTLs, are made with APCs enabled. All calls from other components to MUP are expected to be made with APCs enabled. When calls are used with [**FsRtlCancellableWaitForSingleObject**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlcancellablewaitforsingleobject) or [**FsRtlCancellableWaitForMultipleObjects**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlcancellablewaitformultipleobjects), new routines introduced in Windows Vista, this will ensure that long waits can be aborted if a thread that issued an I/O request is terminated.
 
 -   Prefix resolution is performed using IOCTL\_REDIR\_QUERY\_PATH\_EX, a new IOCTL introduced in Windows Vista.
 
 -   A network redirector device name registered with MUP becomes a symbolic link to the MUP device object.
 
-For a network redirector conforming to the Windows Vista redirector model, MUP creates a symbolic link in the object manager namespace with the device name specified by the network redirector in the call to [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex). The target of this symbolic link is the MUP device object (\\Device\\Mup).
+For a network redirector conforming to the Windows Vista redirector model, MUP creates a symbolic link in the object manager namespace with the device name specified by the network redirector in the call to [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex). The target of this symbolic link is the MUP device object (\\Device\\Mup).
 
 The advantage of registering MUP as a file system and the device name of the network redirector being a symbolic link to the MUP device object is that all remote file system I/O operations, and not just name-based operations, go through MUP. So file system filter drivers that need to be on the remote file system stack can simply attach to the MUP device object. It is not necessary for file system filter drivers to hardcode provider device object names (\\Device\\LanmanRedirector, for example) into their driver anymore. In this way, file system filter drivers can monitor all I/O operations issued to all network redirectors by a single attachment. This also eliminates duplicate I/O operations seen by file system filter drivers prior to Windows Vista, which attached separately to DFS (mup.sys) and individual network redirectors (\\Device\\LanmanRedirector, for example) in order to monitor I/O operations to both.
 
-A file system filter driver that is attached to the MUP device object can selectively filter the traffic that is sent to specific network redirectors. In this situation, the filter driver maps the device names of the network redirectors of interest to provider identifiers by calling the [**FsRtlMupGetProviderIdFromName**](https://msdn.microsoft.com/library/windows/hardware/ff546971) routine. The filter driver can then determine whether it should filter the traffic for a particular file object by comparing the provider identifier that is obtained by calling the [**FsRtlMupGetProviderInfoFromFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff546981) routine with the provider identifiers of the network directors of interest.
+A file system filter driver that is attached to the MUP device object can selectively filter the traffic that is sent to specific network redirectors. In this situation, the filter driver maps the device names of the network redirectors of interest to provider identifiers by calling the [**FsRtlMupGetProviderIdFromName**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlmupgetprovideridfromname) routine. The filter driver can then determine whether it should filter the traffic for a particular file object by comparing the provider identifier that is obtained by calling the [**FsRtlMupGetProviderInfoFromFileObject**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlmupgetproviderinfofromfileobject) routine with the provider identifiers of the network directors of interest.
 
 For a network redirector conforming to the Windows Vista redirector model:
 
--   All file objects on the remote file system stack resolve to MUP. Hence, [**IoGetDeviceAttachmentBaseRef**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetdeviceattachmentbaseref) returns the device object for MUP, not the network redirector that owns the file object. However, the content of the file object is still owned by the network redirector.
+-   All file objects on the remote file system stack resolve to MUP. Hence, [**IoGetDeviceAttachmentBaseRef**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetdeviceattachmentbaseref) returns the device object for MUP, not the network redirector that owns the file object. However, the content of the file object is still owned by the network redirector.
 
 -   An IRP\_MJ\_CREATE issued to the device name of a network redirector (\\Device\\LanmanRedirector\\server\\share, for example) will be targeted to that network redirector without going through MUP prefix resolution, exactly as it was on Windows Server 2003, Windows XP, and Windows 2000.
 
 Network redirectors that are not based on the Windows Vista RDBSS (linking dynamically or statically) are termed "legacy redirectors". These legacy network redirectors include:
 
--   Network redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that register directly with MUP using [**FsRtlRegisterUncProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider).
+-   Network redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that register directly with MUP using [**FsRtlRegisterUncProvider**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider).
 
 -   Network mini-redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that statically link with the rdbsslib.lib library for Windows Server 2003, Windows XP, or Windows 2000.
 
--   Network redirectors written for Windows Vista that register directly with MUP using [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex).
+-   Network redirectors written for Windows Vista that register directly with MUP using [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex).
 
-Network mini-redirectors that dynamically link against the Windows Vista RDBSS (rdbss.sys) automatically conform to the Windows Vista redirector model because RDBSS registers with MUP using [*FsRtlRegisterUncProviderEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex). Network mini-redirectors that statically link against the Windows Vista RDBSS (rdbsslib.lib) also automatically conform to the Windows Vista redirector model because RDBSS registers with MUP using **FsRtlRegisterUncProviderEx**.
+Network mini-redirectors that dynamically link against the Windows Vista RDBSS (rdbss.sys) automatically conform to the Windows Vista redirector model because RDBSS registers with MUP using [*FsRtlRegisterUncProviderEx*](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex). Network mini-redirectors that statically link against the Windows Vista RDBSS (rdbsslib.lib) also automatically conform to the Windows Vista redirector model because RDBSS registers with MUP using **FsRtlRegisterUncProviderEx**.
 
 A legacy network redirector written for Windows Vista that registers directly with MUP must comply with the Windows Vista redirector model.
 
-Network redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that register with MUP directly using the [**FsRtlRegisterUncProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider) continue to work exactly the same way as they did on Windows Server 2003, Windows XP, and Windows 2000. Network mini-redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that statically link with the rdbsslib.lib library for Windows Server 2003, Windows XP, and Windows 2000 continue to work exactly the same way as they did on Windows Server 2003, Windows XP, and Windows 2000. These legacy network redirectors and mini-redirectors exhibit the following behavior:
+Network redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that register with MUP directly using the [**FsRtlRegisterUncProvider**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider) continue to work exactly the same way as they did on Windows Server 2003, Windows XP, and Windows 2000. Network mini-redirectors written for Windows Server 2003, Windows XP, and Windows 2000 that statically link with the rdbsslib.lib library for Windows Server 2003, Windows XP, and Windows 2000 continue to work exactly the same way as they did on Windows Server 2003, Windows XP, and Windows 2000. These legacy network redirectors and mini-redirectors exhibit the following behavior:
 
 -   They will be visible to file system filter drivers that monitor file system registration.
 
@@ -85,7 +84,7 @@ Calls to and from MUP on Windows Vista are made with APCs enabled, which has the
 
 -   It is important to protect, if required, code paths that get called from MUP against thread suspension by appropriate means, especially IOCTL\_REDIR\_QUERY\_PATH handlers. Note that a thread suspend is a potentially "unbounded wait" operation that can last a long time.
 
--   It is important to ensure that any "wait for I/O" operation involving user-mode threads (as opposed to system threads) always uses "cancellable waits". See the [**FsRtlCancellableWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff545738) and [**FsRtlCancellableWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff545731) routines for details.
+-   It is important to ensure that any "wait for I/O" operation involving user-mode threads (as opposed to system threads) always uses "cancellable waits". See the [**FsRtlCancellableWaitForSingleObject**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlcancellablewaitforsingleobject) and [**FsRtlCancellableWaitForMultipleObjects**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlcancellablewaitformultipleobjects) routines for details.
 
 -   Deadlocks might occur when a thread gets suspended holding some important lock. It is important to run tests in the presence of user-mode threads getting suspended arbitrarily to check for deadlock conditions.
 
@@ -109,9 +108,9 @@ The ProviderOrder registry value that determines the order in which MUP issues p
 HKLM\CurrentControlSet\Control\NetworkProvider\Order
 ```
 
-On Windows Vista, MUP performs prefix resolution differently depending on whether the network redirector registered with MUP by calling [**FsRtlRegisterUncProvider**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider) or [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex). Legacy network redirectors that register with MUP by calling **FsRtlRegisterUncProvider** will receive an [**IOCTL\_REDIR\_QUERY\_PATH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ni-ntifs-ioctl_redir_query_path) request for prefix resolution. This is the same method that is used on Windows Server 2003, Windows XP, and Windows 2000.
+On Windows Vista, MUP performs prefix resolution differently depending on whether the network redirector registered with MUP by calling [**FsRtlRegisterUncProvider**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider) or [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex). Legacy network redirectors that register with MUP by calling **FsRtlRegisterUncProvider** will receive an [**IOCTL\_REDIR\_QUERY\_PATH**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-ioctl_redir_query_path) request for prefix resolution. This is the same method that is used on Windows Server 2003, Windows XP, and Windows 2000.
 
-Network redirectors that conform to the Windows Vista redirector model and register with MUP by calling [**FsRtlRegisterUncProviderEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex) will receive an [**IOCTL\_REDIR\_QUERY\_PATH\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ni-ntifs-ioctl_redir_query_path_ex) request for prefix resolution. Note that on Windows Vista, network mini-redirectors statically linked with rdbsslib.lib or dynamically linked with rdbss.sys will call **FsRtlRegisterUncProviderEx** indirectly through RDBSS.
+Network redirectors that conform to the Windows Vista redirector model and register with MUP by calling [**FsRtlRegisterUncProviderEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex) will receive an [**IOCTL\_REDIR\_QUERY\_PATH\_EX**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-ioctl_redir_query_path_ex) request for prefix resolution. Note that on Windows Vista, network mini-redirectors statically linked with rdbsslib.lib or dynamically linked with rdbss.sys will call **FsRtlRegisterUncProviderEx** indirectly through RDBSS.
 
 The input and output buffers for IOCTL\_REDIR\_QUERY\_PATH\_EX are as follows:
 
@@ -223,7 +222,7 @@ Note that IOCTL\_REDIR\_QUERY\_PATH\_EX is a METHOD\_NEITHER IOCTL. This means t
 
 When a UNC provider receives an IOCTL\_REDIR\_QUERY\_PATH\_EX request, it has to determine whether it can handle the UNC path specified in the **PathName** member of the QUERY\_PATH\_REQUEST\_EX structure. If so, the UNC provider has to update the **LengthAccepted** member of the QUERY\_PATH\_RESPONSE structure with the length, in bytes, of the prefix it has claimed and complete the IRP with STATUS\_SUCCESS. If the provider cannot handle the UNC path specified, it must fail the IOCTL\_REDIR\_QUERY\_PATH\_EX request with an appropriate NTSTATUS error code and must not update the **LengthAccepted** member of the QUERY\_PATH\_RESPONSE structure. Providers must not modify any of the other members or the **PathName** string under any condition.
 
-On Windows Vista, a network mini-redirector based on using RDBSS that indicates support as a UNC provider will receive this prefix claim as if it were a regular tree connect create, similar to a user-mode Createfile call with FILE\_CREATE\_TREE\_CONNECTION flag set. RDBSS will send an [**MRxCreateSrvCall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_create_srvcall) request to the network mini-redirector followed by a call to [**MRxSrvCallWinnerNotify**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_srvcall_winner_notify) and [**MRxCreateVNetRoot**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_create_v_net_root). This prefix claim will not be received as a call to [**MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]**](https://msdn.microsoft.com/library/windows/hardware/ff550715). When a network mini-redirector registers with RDBSS, the driver dispatch table for the network mini-redirector will be copied over by RDBSS to point to internal RDBSS entry points. RDBSS then receives this IOCTL\_REDIR\_QUERY\_PATH\_EX internally for the network mini-redirector and calls **MRxCreateSrvCall**, **MRxSrvCallWinnerNotify**, and **MRxCreateVNetRoot**. The original IOCTL\_REDIR\_QUERY\_PATH\_EX IRP will be contained in the RX\_CONTEXT passed to the **MRxCreateSrvCall** routine. In addition, the following members in the RX\_CONTEXT passed to **MRxCreateSrvCall** will be modified:
+On Windows Vista, a network mini-redirector based on using RDBSS that indicates support as a UNC provider will receive this prefix claim as if it were a regular tree connect create, similar to a user-mode Createfile call with FILE\_CREATE\_TREE\_CONNECTION flag set. RDBSS will send an [**MRxCreateSrvCall**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_create_srvcall) request to the network mini-redirector followed by a call to [**MRxSrvCallWinnerNotify**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_srvcall_winner_notify) and [**MRxCreateVNetRoot**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_create_v_net_root). This prefix claim will not be received as a call to [**MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]**](./mrxlowiosubmit-lowio-op-ioctl-.md). When a network mini-redirector registers with RDBSS, the driver dispatch table for the network mini-redirector will be copied over by RDBSS to point to internal RDBSS entry points. RDBSS then receives this IOCTL\_REDIR\_QUERY\_PATH\_EX internally for the network mini-redirector and calls **MRxCreateSrvCall**, **MRxSrvCallWinnerNotify**, and **MRxCreateVNetRoot**. The original IOCTL\_REDIR\_QUERY\_PATH\_EX IRP will be contained in the RX\_CONTEXT passed to the **MRxCreateSrvCall** routine. In addition, the following members in the RX\_CONTEXT passed to **MRxCreateSrvCall** will be modified:
 
 The **MajorFunction** member is set to IRP\_MJ\_CREATE even though the original IRP was IRP\_MJ\_DEVICE\_CONTROL.
 
@@ -243,12 +242,4 @@ The **Create.EaLength** member is set to the **EaLength** member of the QUERY\_P
 
 The **Create.Flags** member will have the RX\_CONTEXT\_CREATE\_FLAG\_UNC\_NAME bit set.
 
-If the network mini-redirector wants to see details of the prefix claim, it can read these members in the RX\_CONTEXT structure that is passed to [**MRxCreateSrvCall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_create_srvcall). Otherwise, it can just attempt to connect to the server share and return STATUS\_SUCCESS if the **MRxCreateSrvCall** call was successful. RDBSS will make the prefix claim on behalf of the network mini-redirector.
-
-
-
-
-
-
-
-
+If the network mini-redirector wants to see details of the prefix claim, it can read these members in the RX\_CONTEXT structure that is passed to [**MRxCreateSrvCall**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_create_srvcall). Otherwise, it can just attempt to connect to the server share and return STATUS\_SUCCESS if the **MRxCreateSrvCall** call was successful. RDBSS will make the prefix claim on behalf of the network mini-redirector.

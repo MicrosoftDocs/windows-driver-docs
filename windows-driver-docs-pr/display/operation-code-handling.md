@@ -1,7 +1,6 @@
 ---
 title: Operation Code Handling
 description: Operation Code Handling
-ms.assetid: 97de8370-316e-41df-bf27-1985af47a4e0
 keywords:
 - Direct3D WDK Windows 2000 display , operation codes
 - operation codes WDK Direct3D
@@ -16,13 +15,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_opcode_handling_gg"></span><span id="DDK_OPCODE_HANDLING_GG"></span>
 
 
-A display driver handles requests to render graphics primitives and processes state changes in its [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function. The driver receives these requests as [**D3DHAL\_DP2OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation) operation codes. The following topics describe how the driver processes operation codes and how its performance can be improved during such processing:
+A display driver handles requests to render graphics primitives and processes state changes in its [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function. The driver receives these requests as [**D3DHAL\_DP2OPERATION**](/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation) operation codes. The following topics describe how the driver processes operation codes and how its performance can be improved during such processing:
 
 [Command Stream](command-stream.md)
 
 [Improving Performance of Operation Handling](improving-performance-of-operation-handling.md)
 
-In order to support the Microsoft DirectX 7.0 and later Direct3D driver model, driver writers need to make their drivers respond to a number of new operation codes in their implementation of [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb). Some of these operation codes replace callback functions, and others provide new functionality. The most important new operation codes are summarized in the following table, beginning with those that replace callbacks.
+In order to support the Microsoft DirectX 7.0 and later Direct3D driver model, driver writers need to make their drivers respond to a number of new operation codes in their implementation of [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb). Some of these operation codes replace callback functions, and others provide new functionality. The most important new operation codes are summarized in the following table, beginning with those that replace callbacks.
 
 <table>
 <colgroup>
@@ -62,10 +61,4 @@ In order to support the Microsoft DirectX 7.0 and later Direct3D driver model, d
  
 
  
-
- 
-
-
-
-
 

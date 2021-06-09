@@ -31,14 +31,12 @@ The PFN\_SHARE\_COUNT bug check has a value of 0x00000173. This indicates that t
 |3| Reserved. |
 |4| Reserved. |
 
-## Cause
------
+## ## Cause
 
 CoreMessageCall detected an unrecoverable error.
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

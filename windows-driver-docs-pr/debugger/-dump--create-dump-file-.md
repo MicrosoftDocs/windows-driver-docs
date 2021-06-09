@@ -1,9 +1,8 @@
 ---
 title: .dump (Create Dump File)
 description: The .dump command creates a user-mode or kernel-mode crash dump file.
-ms.assetid: df6bcf7f-eb2e-4605-87a0-c0a7e9e4776b
 keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.dump) command", ".dump (Create Dump File) Windows Debugging"]
-ms.date: 08/01/2018
+ms.date: 07/17/2020
 topic_type:
 - apiref
 api_name:
@@ -15,37 +14,48 @@ ms.localizationpriority: medium
 
 # .dump (Create Dump File)
 
-
 The **.dump** command creates a user-mode or kernel-mode crash dump file.
 
 ```dbgcmd
-.dump Options FileName 
+.dump [options] FileName
 .dump /?
 ```
 
-## <span id="ddk_meta_create_dump_file_dbg"></span><span id="DDK_META_CREATE_DUMP_FILE_DBG"></span>Parameters
+## Parameters
 
+*Options*  
+Represents one or more of the following options.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
-Represents one or more of the following options
+**/a**  
+Create dumps for all processes (requires -u).
 
-<span id="_o"></span><span id="_O"></span>**/o**  
+**/b[a]**  
+Package dump in a CAB and delete dump. Additional information is included if the *a* option is specified.
+
+**/c \<comment\>**  
+Add a comment (not supported in all formats).
+
+**/j \<addr\>**  
+Provide a JIT_DEBUG_INFO address.
+
+**/o**  
 Overwrites an existing dump file with the same name. If this option is not used and there is a file with the same file name, the dump file is not written.
 
-<span id="_f_FullOptions_"></span><span id="_f_fulloptions_"></span><span id="_F_FULLOPTIONS_"></span>**/f\[**<em>FullOptions</em>**\]**  
+**/u**  
+Append unique identifier to dump name.
+
+**/f\[**<em>FullOptions</em>**\]**  
 (Kernel mode:) Creates a [complete memory dump](complete-memory-dump.md).
 
 (User mode:) Creates a *full user-mode dump*. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[**<em>MiniOptions</em>**\]** is always preferable to **.dump /f**.
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
-|||
-|--- |--- |
 |FullOption|Effect|
-|y|Adds AVX register information to the dump file.|
- 
+|--- |--- |
+|**y**| Adds AVX register information to the dump file.|
 
-<span id="_m_MiniOptions_"></span><span id="_m_minioptions_"></span><span id="_M_MINIOPTIONS_"></span>**/m\[**<em>MiniOptions</em>**\]**  
+**/m\[**<em>MiniOptions</em>**\]**  
 Creates a *small memory dump* (in kernel mode) or a *minidump* (in user mode) For more information, see [User-Mode Dump Files](user-mode-dump-files.md). If neither **/f** nor **/m** is specified, **/m** is the default.
 
 In user mode, **/m** can be followed with additional *MiniOptions* specifying extra data that is to be included in the dump. If no *MiniOptions* are included, the dump will include module, thread, and stack information, but no additional data. You can add any of the following *MiniOptions* to change the contents of the dump file; they are case-sensitive.
@@ -68,22 +78,29 @@ In user mode, **/m** can be followed with additional *MiniOptions* specifying ex
 |R|Deletes the full module paths from the minidump. Only the module names will be included. This is a useful option if you want to protect the privacy of the user's directory structure.|
 |y|Adds AVX register information to the dump file.|
 
- 
+### Kernel Mode Options
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+The following options are available in kernel mode.
+
+**/k**  
+Create a dump with kernel memory only.
+
+**/ka**  
+Create a dump with active kernel and user mode memory.
+
+## Additional Information
 
 For a description of kernel-mode dump files and an explanation of their use, see [Kernel-Mode Dump Files](kernel-mode-dump-files.md). For a description of user-mode dump files and an explanation of their use, see [User-Mode Dump Files](user-mode-dump-files.md).
 
 ## Remarks
--------
 
 This command can be used in a variety of situations:
 
--   During live user-mode debugging, this command directs the target application to generate a dump file, but the target application does not terminate.
+- During live user-mode debugging, this command directs the target application to generate a dump file, but the target application does not terminate.
 
--   During live kernel-mode debugging, this command directs the target computer to generate a dump file, but the target computer does not crash.
+- During live kernel-mode debugging, this command directs the target computer to generate a dump file, but the target computer does not crash.
 
--   During crash dump debugging, this command creates a new crash dump file from the old one. This is useful if you have a large crash dump file and want to create a smaller one.
+- During crash dump debugging, this command creates a new crash dump file from the old one. This is useful if you have a large crash dump file and want to create a smaller one.
 
 You can control what type of dump file will be produced:
 
@@ -98,16 +115,11 @@ The **/xc**, **/xr**, **/xp**, and **/xt** options are used to store exception a
 The following example will create a user-mode minidump, containing full memory and handle information:
 
 ```dbgcmd
-0:000> .dump /mfh myfile.dmp 
+0:000> .dump /mfh myfile.dmp
 ```
 
 Handle information can be read by using the [**!handle**](-handle.md) extension command.
 
- 
+## See Also
 
- 
-
-
-
-
-
+[Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)

@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP_MN_REMOVE_DEVICE Request
 description: Handling an IRP_MN_REMOVE_DEVICE Request
-ms.assetid: 1e0c8b41-5375-41dd-80eb-e48c0f513e01
 keywords: ["IRP_MN_REMOVE_DEVICE"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -25,7 +24,7 @@ The PnP manager does the following before sending this IRP to the drivers for a 
 
 -   (On Windows 2000 and later systems) If a file system is mounted on the device, the PnP manager sends a remove request to the file system and any file system filters. In response, a file system typically dismounts the volume.
 
-The top driver in a device stack handles a remove IRP and passes it to the next lower driver. The parent bus driver for a device is the last driver to perform its remove-device operations. A driver handles remove IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+The top driver in a device stack handles a remove IRP and passes it to the next lower driver. The parent bus driver for a device is the last driver to perform its remove-device operations. A driver handles remove IRPs in its [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 Before a driver returns success for an **IRP\_MN\_REMOVE\_DEVICE** request, it must ensure that all resources for the device have been released. This IRP could be the last call before the driver is unloaded.
 
@@ -40,9 +39,4 @@ This section describes:
 [Removing a Device in a Bus Driver](removing-a-device-in-a-bus-driver.md)
 
  
-
- 
-
-
-
 

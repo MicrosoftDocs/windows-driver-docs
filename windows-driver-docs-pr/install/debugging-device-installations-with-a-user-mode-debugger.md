@@ -1,7 +1,6 @@
 ---
 title: Debugging Device Installations with a User-mode Debugger
 description: Debugging Device Installations with a User-mode Debugger
-ms.assetid: 34427afb-3303-44ec-a3a7-72f247c5506d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Starting with Windows Vista, when the Plug and Play (PnP) manager detects a new 
 
 The most efficient way to debug the user-mode device installation host process is with a user-mode debugger, such as WinDbg or Visual Studio. Because the *DrvInst.exe* process would normally complete without any user interaction, Microsoft has added support to Windows Vista and later versions of Windows to allow the developer of a [driver package](driver-packages.md) to attach a debugger before the core stages of device installation are processed.
 
-For more information about user-mode debuggers and other debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+For more information about user-mode debuggers and other debugging tools, see [Windows Debugging](../debugger/index.md).
 
 The **DebugInstall** registry value specifies the type of device installation debugging support that is enabled on the system. For more information about this registry value, see [Enabling Support for Debugging Device Installations](enabling-support-for-debugging-device-installations.md).
 
@@ -122,10 +121,4 @@ The default time period for an installation process to complete is 5 minutes. If
 If a user-mode debugger is attached to the target system during the device installation process, the system will not enforce this timeout period. This allows a [driver package](driver-packages.md) developer to spend the time needed to debug the installation process.
 
  
-
- 
-
-
-
-
 

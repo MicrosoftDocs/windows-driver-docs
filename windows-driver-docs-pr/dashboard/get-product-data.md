@@ -2,7 +2,7 @@
 title: Get product data
 description: These methods from the Microsoft Hardware APIs get data for hardware products registered to your Dev Center Account.
 ms.topic: article
-ms.date: 04/05/2018
+ms.date: 04/09/2020
 ms.localizationpriority: medium
 ---
 
@@ -11,17 +11,17 @@ ms.localizationpriority: medium
 Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
 ```cpp
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/
 ```
 
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |-|-|-|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -37,16 +37,16 @@ This resource represents a hardware product (driver) that is registered to your 
 
 ```json
 {
-  "id”: 9007199267351834,
-  “sharedProductId”: 1152921504606971100,
-  “links”: [
+  "id": 9007199267351834,
+  "sharedProductId": 1152921504606971100,
+  "links": [
     {
-      “href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834/submissions",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834/submissions",
       "rel": "get_submissions",
       "method": "GET"
     }
@@ -59,7 +59,7 @@ This resource represents a hardware product (driver) that is registered to your 
   "isFlightSign": false,
   "marketingNames": [
     "marketing name 1",
-    " marketing name 2"
+    "marketing name 2"
 ],
   "productName": "product name",
   "selectedProductTypes": {
@@ -72,7 +72,7 @@ This resource represents a hardware product (driver) that is registered to your 
   ],
   "additionalAttributes": {},
   "testHarness": "hlk",
-  " announcementDate ": "2016-10-22T00:00:00Z",
+  "announcementDate": "2016-10-22T00:00:00Z",
 }
 ```
 
@@ -86,8 +86,8 @@ This resource has the following values
 | isCommitted | Boolean | Indicates whether the product has at least one committed submission  |
 | isExtensionInf | Boolean | (DEPRECATED) Indicates whether the product is an extension driver. This field is deprecated and should no longer be used. isExtensionInf has been moved to submission level property. |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
-| deviceType | String | Indicates the type of device. Possible values are:<ul><li>“internal” - An internal component, device is part of a system and connects inside the PC</li><li>“external” - An external component, device is an external device (peripheral) that connects to a PC</li><li>“internalExternal” - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>“notSet” – no data available</li></ul>|
-| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/windows-hardware/drivers/install/whql-test-signature-program)  |
+| deviceType | String | Indicates the type of device. Possible values are:<ul><li>"internal" - An internal component, device is part of a system and connects inside the PC</li><li>"external" - An external component, device is an external device (peripheral) that connects to a PC</li><li>"internalExternal" - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>"notSet" – no data available</li></ul>|
+| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md)  |
 | isFlightSign | Boolean | Indicates whether the product is a flight signed driver. Flight signed drivers are test drivers which can be published via Windows Update. They can be published/installed only on machines which have signed up for Windows Insider Program. They can be installed on machines without disbaling secure boot. They cannot be installed on retail machines which are not part of Windows Insider Program.|
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
@@ -106,18 +106,18 @@ This resource represents a submission of a product.
   "id": 1152921504621442000,
   "productId": 13635057453741328,
    "workflowStatus": {
-      “currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     },
   "links": [
     {
-      "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions/1152921504621441944",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/13635057453741329/submissions/1152921504621441944",
       "rel": "self",
       "method": "GET"
     }
   ],
-  "commitStatus": "commitPending",
+  "commitStatus": "CommitPending",
   "isExtensionInf": true,
   "isUniversal": true,
   "isDeclarativeInf": true,
@@ -126,20 +126,22 @@ This resource represents a submission of a product.
 }
 ```
 
-This resource has the following values
+This resource has the following values:
 
 | Value | Type | Description |
 |:--|:--|:--|
 | Id | long | The ID of the submission |
 | Productid | long | The private product ID to which this submission is associated |
+| workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
 | Links | array of objects | Refer to [link object](#link-object)  for more details |
-| Name | string | The name of the submission |
-| Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
+| commitStatus | See [Manage Product Submissions](manage-product-submissions.md) for more details. |
 | isExtensionInf | Boolean | Indicates whether the submission is an extension driver |
 | isUniversal | Boolean | Indicates whether the submission passes the Universal API test. A driver is DCHU compliant if it is Decalarative and Universal |
 | isDeclarativeInf | Boolean | Indicates whether the submission passes the Declarative INVerif test. A driver is DCHU compliant if it is Decalarative and Universal |
-| workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
+| Name | string | The name of the submission |
+| Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
 | downloads | object | This is available only when retrieving details of a specific submission only. This object depicts the downloads available for the submission. Refer [download object](#download-object)  for more details. |
+
 
 ### Workflow Status object
 
@@ -147,9 +149,9 @@ This object represents the status of workflow for a given entity
 
 ```json
 {
-      “currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     }
 ```
 
@@ -194,7 +196,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | Items | array | An array of download types and the URL for each. Please refer below for details |
-| Type | string | The type of package available for download. Possible values are:<ul><li>“initialPackage” – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>“derivedPackage” – shell for derived submissions</li><li>“signedPackage” – package signed by Microsoft</li><li>“certificationReport” – certification report for the signed product</li></ul>|
+| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>"derivedPackage" – shell for derived submissions</li><li>"signedPackage" – package signed by Microsoft</li><li>"certificationReport" – certification report for the signed product</li><li>driverMetadata - link points to a file which allows to download of driver metadata. For more details refer [driver package metadata](driver-package-metadata.md).</li><li>ExternalNotes</li><li>Unknown</li></ul>|
 | Messages | array | An array of strings to provide messages about the downloadable files |
 
 ### Link object
@@ -203,7 +205,7 @@ This object represents a list of helpful links for the containing entity
 
 ```json
 {
-      “href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     }
@@ -214,7 +216,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | Href | String | The URL to access the resource via API |
-| Rel | String | Type of the resource. Possible values are:<ul><li>self – Link points to itself</li><li>next_link – Link points to next resource typically used for pagination</li><li>get_submissions – link points to all submissions of a product</li><li>commit_submission – link points to commit of a submission </li><li>update_submission – link points to update of the submission </li><li>update_shippinglabel – link points to update of the shipping label  </li><li>driverMetadata - link points to a file which allows to download of driver metadata. For more details refer [driver package metadata](driver-package-metadata.md).</li></ul>|
+| Rel | String | Type of the resource. Possible values are:<ul><li>self – Link points to itself</li><li>next_link – Link points to next resource typically used for pagination</li><li>get_submissions – link points to all submissions of a product</li><li>commit_submission – link points to commit of a submission </li><li>update_submission – link points to update of the submission </li><li>update_shippinglabel – link points to update of the shipping label  </li></ul>|
 | Method | String | Type of the http method to be used when invoking the URL. Possible values are<ul><li>GET</li><li>POST</li><li>PATCH</li></ul>|
 
 ### Additional Attribute object
@@ -391,6 +393,7 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_RS5 | Windows 10 RS5 x86 |
 | Windows_v100_RS5 | Windows 10 RS5 x64 |
 | Windows_v100_19H1 | Windows 10 19H1 Update |
+| Windows_v100_VB | Windows 10 version 2004 |
 
 ### List of Operating System Codes
 
@@ -451,6 +454,9 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_19H1_FULL |Windows 19H1 Client x86 |
 |WINDOWS_v100_X64_19H1_FULL |Windows 19H1 Client x64 |
 |WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client ARM64 |
+|WINDOWS_v100_VB_FULL | Windows 10 version 2004 Client x86 |
+|WINDOWS_v100_X64_VB_FULL | Windows version 2004 Client x64 |
+|WINDOWS_v100_ARM64_VB_FULL | Windows version 2004 Client ARM64 |
 
 ## Error codes
 
@@ -465,7 +471,6 @@ The error codes are applicable to all web methods of the API. If the request can
 | 415 - Unsupported Media Type | Payload is in a format not supported by this method on the target resource. |
 | 422 - Unprocessable Entity | Validation failures. |
 | 500 - Internal Server Error | Unrecoverable error occurred at the API server. |
-
 
 If there are functional validation failures, the response body will contain one of the following functional error codes.
 
@@ -492,4 +497,4 @@ If there are functional validation failures, the response body will contain one 
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

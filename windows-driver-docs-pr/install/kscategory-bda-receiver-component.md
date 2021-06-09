@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_RECEIVER_COMPONENT
 description: KSCATEGORY_BDA_RECEIVER_COMPONENT
-ms.assetid: f160662e-651c-444f-aa82-cfc73c19e41d
 keywords: ["KSCATEGORY_BDA_RECEIVER_COMPONENT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_RECEIVER_COMPONENT
 
 
-The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a receiver in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index) (BDA).
+The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a receiver in the [broadcast driver architecture](/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -45,15 +44,13 @@ The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](https://docs.micr
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_RECEIVER_COMPONENT to indicate to the operating system that the devices support a BDA receiver filter.
 
-For more information about the KS functional category for a BDA receiver filters, see [Common Control Nodes and Filters](https://docs.microsoft.com/windows-hardware/drivers/stream/common-control-nodes-and-filters), [Starting a BDA Minidriver](https://docs.microsoft.com/windows-hardware/drivers/stream/starting-a-bda-minidriver), and [BDA Filter Category GUIDs](https://docs.microsoft.com/windows-hardware/drivers/stream/bda-filter-category-guids).
+For more information about the KS functional category for a BDA receiver filters, see [Common Control Nodes and Filters](../stream/common-control-nodes-and-filters.md), [Starting a BDA Minidriver](../stream/starting-a-bda-minidriver.md), and [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,10 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

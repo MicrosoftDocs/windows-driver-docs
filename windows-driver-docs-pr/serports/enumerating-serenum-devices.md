@@ -1,7 +1,6 @@
 ---
 title: Enumerating Serenum Devices
 description: Enumerating Serenum Devices
-ms.assetid: c850c52b-82d7-48c2-a6c4-bfd071756632
 keywords:
 - Serenum driver WDK , device enumeration
 - enumerating Serenum devices WDK serial devices

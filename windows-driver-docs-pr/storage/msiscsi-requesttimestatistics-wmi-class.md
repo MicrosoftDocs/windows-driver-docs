@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_RequestTimeStatistics WMI Class
 description: MSiSCSI\_RequestTimeStatistics WMI Class
-ms.assetid: 3e9f3214-3120-41f6-bb06-7ace4f243c5f
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -64,13 +63,7 @@ class MSiSCSI_RequestTimeStatistics : Win32_PerfRawData
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RequestTimeStatistics**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_requesttimestatistics) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RequestTimeStatistics**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_requesttimestatistics) data structure.
 
  
-
- 
-
-
-
-
 

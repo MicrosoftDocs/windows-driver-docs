@@ -1,7 +1,6 @@
 ---
 title: DXGKDDI\_DESCRIBEPAGETABLE callback function
 description: The DxgkDdiDescribePageTable function is reserved for system use. Do not implement it in your driver.
-ms.assetid: af9c9515-0225-4a97-bb8e-8ff9b57ac1a9
 keywords: ["DxgkDdiDescribePageTable callback function Display Devices", "DXGKDDI_DESCRIBEPAGETABLE"]
 topic_type:
 - apiref
@@ -22,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiDescribePageTable* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_DESCRIBEPAGETABLE DxgkDdiDescribePageTable;
@@ -35,8 +33,7 @@ NTSTATUS DxgkDdiDescribePageTable(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hDevice*
 This parameter is reserved for system use.
@@ -44,8 +41,7 @@ This parameter is reserved for system use.
 *pDescribePageTable*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_RADIO_STATUS
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_RADIO_STATUS to indicate changes in the adapter's radio state.
-ms.assetid: c2f90a52-ce55-4819-a66a-cfcc591cb3e9
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_RADIO_STATUS Network Drivers Starting with Windows Vista
@@ -24,12 +23,11 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate ch
 
 | Type                                                                  | Multiple TLV instances allowed | Optional | Description                                              |
 |-----------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
-| [**WDI\_TLV\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-radio-state-parameters) |                                |          | The current state of the radio in hardware and software. |
+| [**WDI\_TLV\_RADIO\_STATE**](./wdi-tlv-radio-state-parameters.md) |                                |          | The current state of the radio in hardware and software. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -58,9 +56,4 @@ Requirements
 [WDI\_TASK\_SET\_RADIO\_STATE](oid-wdi-task-set-radio-state.md)
 
  
-
- 
-
-
-
 

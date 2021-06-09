@@ -1,7 +1,6 @@
 ---
 title: Macros
 description: Macros
-ms.assetid: 071051fe-d15a-45dc-8f76-5818916aef9f
 keywords:
 - GPD file entries WDK Unidrv , macros
 - macros WDK GPD files

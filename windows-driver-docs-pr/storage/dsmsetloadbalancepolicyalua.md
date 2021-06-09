@@ -1,7 +1,6 @@
 ---
 title: DsmSetLoadBalancePolicyALUA function
 description: The DsmSetLoadBalancePolicyALUA method is used to set the DSM ALUA load balance policy.
-ms.assetid: f63bdf0a-5b78-475d-b7c5-2af587b6356f
 keywords: ["DsmSetLoadBalancePolicyALUA function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The **DsmSetLoadBalancePolicyALUA** method is used to set the DSM ALUA load balance policy.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void DsmSetLoadBalancePolicyALUA(
@@ -30,27 +28,23 @@ void DsmSetLoadBalancePolicyALUA(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *LoadBalancePolicy*   
-A [**DsmSetLoadBalancePolicyALUA\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_out) structure.
+A [**DsmSetLoadBalancePolicyALUA\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_out) structure.
 
 *Status*   
 The status of the operation.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [DSM\_LB\_Operations](dsm-lb-operations-wmi-class.md) WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -70,10 +64,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

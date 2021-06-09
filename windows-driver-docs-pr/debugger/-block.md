@@ -1,7 +1,6 @@
 ---
 title: .block
 description: The .block token performs no action; it is used solely to introduce a block of statements.
-ms.assetid: 8f1ac6b5-fea5-4e3f-8d4c-5e0533722885
 keywords: [".block Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,8 +30,7 @@ For information about using a new block to evaluate an alias, see [Using Aliases
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 Blocks of commands are surrounded by braces. When each block is entered, all aliases within the block are evaluated. If you alter the value of an alias at some point within a command block, commands subsequent to that point will not use the new alias value unless they are within a subordinate block.
 

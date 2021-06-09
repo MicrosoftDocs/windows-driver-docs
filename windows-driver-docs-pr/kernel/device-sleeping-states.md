@@ -1,7 +1,6 @@
 ---
 title: Device Low-Power States
 description: Device Low-Power States
-ms.assetid: f594a63f-10ce-439d-abe3-d342555d98f0
 keywords: ["device power states WDK kernel", "device low-power states WDK power management", "sleep power management WDK kernel", "Dx names WDK power management", "asleep devices WDK power management", "lowest-powered device state WDK kernel", "highest-powered device low-power state WDK kernel", "intermediate sleeping state WDK kernel", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management", "state transition delays WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -40,7 +39,7 @@ Drivers must save and restore or reinitialize any context lost by the hardware. 
 In general, the time required to restore the device to D0 from D1 should be less than restoration from D2 to D0.
 
 <a href="" id="wake-up-capability"></a>*Wake-up capability*  
-A device in D1 might be able to request wake-up. To supply information about whether this state can support a wake signal, a bus driver uses the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface.
+A device in D1 might be able to request wake-up. To supply information about whether this state can support a wake signal, a bus driver uses the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface.
 
 Typically, devices that use D1 do so because resuming from this state does not require the driver to restore the device's full hardware context. To minimize the user's perception of delay, restoring a device to D0 from D1 should incur the least possible delay. Minimizing delay in the state transition is more important than reducing power consumption.
 
@@ -61,7 +60,7 @@ Device drivers must save and restore or reinitialize any context lost by the har
 Restoring the device from D2 to D0 takes at least as long as restoring the device from D1 to D0. A graphics adapter that has a large frame buffer is an example of a device that has a large amount of hardware context to restore after a transition from D2 to D0. For such a device, the restore time from D2 might be much greater than the restore time from D1.
 
 <a href="" id="wake-up-capability"></a>*Wake-up capability*  
-A device in D2 might be able to request wake-up. To supply information about whether this state can support a wake signal, a bus driver uses the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface.
+A device in D2 might be able to request wake-up. To supply information about whether this state can support a wake signal, a bus driver uses the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface.
 
 Typically, drivers that support D2 do so because their devices cannot support wake from D3. For these devices, power consumption in the D2 state drops to the lowest level from which the device can recover in response to a wake signal. In contrast to the D1 state, which is implemented to reduce the delay perceived by the user, the goal in implementing the D2 state is to conserve power. As a result, the restore time from D2 to D0 typically exceeds that from D1 to D0. In the D2 state, for example, reduced power on the bus might cause a device to turn off some of its functionality, thus requiring additional time to restart and restore the device.
 
@@ -116,7 +115,7 @@ The device driver is solely responsible for restoring device context, typically 
 Total restore time is the highest of any of the device power states, except for D3cold, but is typically not much greater than the restore time from D2.
 
 <a href="" id="wake-up-capability"></a>*Wake-up capability*  
-A device in the D3hot substate may or may not be able to request wake-up. To supply information about whether this substate can support a wake signal, a bus driver uses the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface.
+A device in the D3hot substate may or may not be able to request wake-up. To supply information about whether this substate can support a wake signal, a bus driver uses the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface.
 
 In D3hot, only minimal trickle current is available. Drivers and hardware must be prepared for the absence of power. The specification for a bus that supports D3hot typically provides detailed requirements for power sources that can be used in this state. To return the device to the working state, the device's drivers must be able to restore and reinitialize the device without depending on the BIOS to run any code in the option ROM that might be available for the device.
 
@@ -141,7 +140,7 @@ The device driver is solely responsible for restoring device context, typically 
 Total restore time is the highest of any of the device power states.
 
 <a href="" id="wake-up-capability"></a>*Wake-up capability*  
-In the D3cold substate, a device might be able to trigger a wake signal to wake a sleeping computer. This capability is reported in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure and, starting with Windows 8, by the [*GetIdleWakeInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-get_idle_wake_info) routine in the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface. After the signal wakes the computer, the device driver initiates the device's transition from D3cold to D0. For more information, see the following remarks.
+In the D3cold substate, a device might be able to trigger a wake signal to wake a sleeping computer. This capability is reported in the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure and, starting with Windows 8, by the [*GetIdleWakeInfo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-get_idle_wake_info) routine in the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) driver interface. After the signal wakes the computer, the device driver initiates the device's transition from D3cold to D0. For more information, see the following remarks.
 
 Starting with Windows 8, a device in the D3cold substate might be able to trigger a wake signal to a computer that is in the S0 system power state. This capability is reported by the *GetIdleWakeInfo* routine. The **DEVICE\_CAPABILITIES** structure does not contain information about this capability. After the wake signal arrives, the device driver initiates the device's transition from D3cold to D0. In this case, the computer is awake when the signal arrives, and only the device needs to wake.
 
@@ -154,9 +153,4 @@ Some classes of device define the D3cold substate.
 For more information, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
 
  
-
- 
-
-
-
 

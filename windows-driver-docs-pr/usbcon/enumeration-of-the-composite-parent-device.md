@@ -1,5 +1,5 @@
 ---
-Description: Enumeration of USB Composite Devices
+description: Enumeration of USB Composite Devices
 title: Enumeration of USB Composite Devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Using vector types with sensors
 description: Using vector types with sensors
-ms.assetid: cadc2cd3-10aa-4a4a-926f-edc01b046f27
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Some properties and data fields contain arrays of information. For example, the 
 
 For information about which properties and data fields contain arrays, see [Constants](about-sensor-constants.md).
 
-The following code example shows how to create an [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) object that contains values for SENSOR\_PROPERTY\_LIGHT\_RESPONSE\_CURVE. The variable named m\_pSensorProperties is a pointer to the [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) interface.
+The following code example shows how to create an [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) object that contains values for SENSOR\_PROPERTY\_LIGHT\_RESPONSE\_CURVE. The variable named m\_pSensorProperties is a pointer to the [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) interface.
 
 ```cpp
 UINT responseCurve[10] = {0}; // Array to contain the response curve data.
@@ -44,7 +43,4 @@ PropVariantClear(&pvCurve);
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

@@ -1,7 +1,6 @@
 ---
 title: Hardware Transform and Lighting
 description: Hardware Transform and Lighting
-ms.assetid: b45aa56e-2d8c-412a-b581-a1e2002d4fac
 keywords:
 - Direct3D WDK Windows 2000 display , hardware tansform and lighting
 - texture transforms WDK Direct3D
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_hardware_transform_and_lighting_gg"></span><span id="DDK_HARDWARE_TRANSFORM_AND_LIGHTING_GG"></span>
 
 
-Hardware acceleration of geometry operations, such as lighting and transformation, has been enabled with modifications to the [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) DDI for the latest Direct X release. At the API level, devices that support vertex operations in hardware are enumerated separately from those that do rasterization only.
+Hardware acceleration of geometry operations, such as lighting and transformation, has been enabled with modifications to the [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) DDI for the latest Direct X release. At the API level, devices that support vertex operations in hardware are enumerated separately from those that do rasterization only.
 
-The existing caps structures have been extended to indicate features that may be present on a hardware-accelerated transform device. For example, the number of supported light sources is set with the **dwNumLights** member of the [**D3DLIGHTINGCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dlightingcaps) structure that is reported with the [**D3DDEVICEDESC\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3ddevicedesc_v1) structure.
+The existing caps structures have been extended to indicate features that may be present on a hardware-accelerated transform device. For example, the number of supported light sources is set with the **dwNumLights** member of the [**D3DLIGHTINGCAPS**](/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dlightingcaps) structure that is reported with the [**D3DDEVICEDESC\_V1**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3ddevicedesc_v1) structure.
 
 Other flags are listed in the following table:
 
@@ -90,10 +89,4 @@ D3DRENDERSTATE_VERTEXBLEND
 ```
 
  
-
- 
-
-
-
-
 

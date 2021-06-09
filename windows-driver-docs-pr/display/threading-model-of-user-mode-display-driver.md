@@ -1,7 +1,6 @@
 ---
 title: Threading Model of User-Mode Display Driver
 description: Threading Model of User-Mode Display Driver
-ms.assetid: 43bb6032-5f34-434b-8404-aef6a424a2ee
 keywords:
 - threading WDK display , user-mode drivers
 - synchronization WDK display , user-mode drivers
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_thread_model_of_user_mode_display_driver_gg"></span><span id="DDK_THREAD_MODEL_OF_USER_MODE_DISPLAY_DRIVER_GG"></span>
 
 
-The user-mode display driver is not loaded into multiple processes simultaneously--the user-mode display driver DLL is loaded into the address space of each process separately. Still, multiple threads can run in the user-mode display driver at the same time. However, each thread that is running in the user-mode display driver must access a different display device, which is created by a call to the user-mode display driver's [**CreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdevice) function. For example:
+The user-mode display driver is not loaded into multiple processes simultaneously--the user-mode display driver DLL is loaded into the address space of each process separately. Still, multiple threads can run in the user-mode display driver at the same time. However, each thread that is running in the user-mode display driver must access a different display device, which is created by a call to the user-mode display driver's [**CreateDevice**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdevice) function. For example:
 
 -   An application that creates two Microsoft Direct3D devices can have two threads that access these devices independently.
 
@@ -32,10 +31,4 @@ Like the display miniport driver, the user-mode display driver is not required t
 On multiple-processor computers, the Direct3D runtime might call a user-mode display driver from a worker thread instead of from the main application thread. This multiple-processor optimization is transparent to the user-mode display driver. When the runtime uses multiple-processor optimization, it still ensures that only one thread that references a particular device runs in the driver at any given time.
 
  
-
- 
-
-
-
-
 

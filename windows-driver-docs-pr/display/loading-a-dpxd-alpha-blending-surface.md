@@ -1,7 +1,6 @@
 ---
 title: Loading a DPXD Alpha-Blending Surface
 description: Loading a DPXD Alpha-Blending Surface
-ms.assetid: 6b5f62e9-3211-42c2-8168-505983c7814e
 keywords:
 - stride WDK DirectX VA
 - alpha-blend data loading WDK DirectX VA

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic describes how you can work with offline symbols for Windows Update. It describes a procedure that can be used to decode Windows Update logs on machines that don’t have access to the Microsoft symbol server. 
 
-If you find yourself needing to do this often, you should see if setting up a Symbol Proxy Server is viable for your networking configuration. For more information see [SymProxy](https://docs.microsoft.com/windows-hardware/drivers/debugger/symproxy).
+If you find yourself needing to do this often, you should see if setting up a Symbol Proxy Server is viable for your networking configuration. For more information see [SymProxy](symproxy.md).
 
 All the options below require you to have one machine that can connect to Microsoft’s symbol server, and have the ability to copy files to or from the machine that has the logs. The machine that doesn’t have access to the symbol server will be referred to as the *offline* machine, and the machine that does have access as the *online* machine.
 
@@ -37,7 +37,7 @@ If you don’t have access to an online machine with the same version, you’ll 
 
 1. Copy all the WindowsUpdate ETL files from `C:\Windows\logs\WindowsUpdate\` to your online machine.
 
-2. On the online machine, open a PowerShell prompt and run the following [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) PowerShell command. 
+2. On the online machine, open a PowerShell prompt and run the following [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog) PowerShell command. 
 
    ```powershell
    Get-WindowsUpdateLog -ETLPath <path to ETLs>
@@ -56,7 +56,7 @@ If you don’t have access to an online machine with the same version, you’ll 
 
 ## <span id="symchk"></span><span id="SYMCHK"></span>Option 3: Create a SymChk manifest file
 
-1.	On the offline machine, follow steps at [Using a Manifest File with SymChk](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-a-manifest-file-with-symchk) to create a manifest for these files in the system32 directory:
+1.	On the offline machine, follow steps at [Using a Manifest File with SymChk](using-a-manifest-file-with-symchk.md) to create a manifest for these files in the system32 directory:
 
     ```console
     storewuauth.dll
@@ -89,9 +89,3 @@ If you don’t have access to an online machine with the same version, you’ll 
 [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md)
 
 [Symbol Problems While Debugging](symbol-problems-while-debugging.md)
- 
-
-
-
-
-

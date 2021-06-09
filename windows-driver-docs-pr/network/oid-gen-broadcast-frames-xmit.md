@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_BROADCAST_FRAMES_XMIT
 description: As a query, the OID_GEN_BROADCAST_FRAMES_XMIT OID specifies the number of broadcast packets that are transmitted without errors.
-ms.assetid: e86602ce-18b7-48ef-8962-75f6984d7bdb
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_BROADCAST_FRAMES_XMIT Network Drivers Starting with Windows Vista
@@ -30,15 +29,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 The count from this OID, combined with the count from [OID_GEN_MULTICAST_FRAMES_XMIT](oid-gen-multicast-frames-xmit.md), is identical to the *ifOutNUcastPkts* counter described in RFC 2863.
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +56,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

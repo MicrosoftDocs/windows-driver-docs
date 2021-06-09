@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_DATATYPE
 description: The WIA\_IPA\_DATATYPE property contains the current data type setting for a device. A WIA minidriver creates and maintains this property.
-ms.assetid: d86c06c2-1d37-4b82-832c-c468c1b4fc33
 keywords: ["WIA_IPA_DATATYPE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_DATATYPE property to determine the data type of an image. The application writes this property to set the current data type of the image that is about to be transferred.
 
@@ -160,8 +158,7 @@ Check the [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md) property to determine the bit 
 
 The WIA\_IPA\_DATATYPE property usually contains a single value for cameras.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

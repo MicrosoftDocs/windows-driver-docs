@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_QueryLBPolicy WMI Class
 description: MSiSCSI\_QueryLBPolicy WMI Class
-ms.assetid: 1d80f525-491a-4c81-8827-7c5c13107a54
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -47,13 +46,7 @@ class MSiSCSI_QueryLBPolicy
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QueryLBPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_querylbpolicy) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QueryLBPolicy**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_querylbpolicy) data structure.
 
  
-
- 
-
-
-
-
 

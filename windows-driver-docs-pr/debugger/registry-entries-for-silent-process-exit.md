@@ -1,7 +1,6 @@
 ---
 title: Monitoring Silent Process Exit
 description: Beginning with Windows 7, you can use the Silent Process Exit tab in GFlags to enter the name of a process that you want to monitor for silent exit.
-ms.assetid: 116B2053-7F48-48B4-AEAC-333B7D9C38C7
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ A second process terminates the monitored process by calling **TerminateProcess*
 
 The monitoring feature does not detect normal process termination that happens when the last thread of the process exits. The monitoring feature does not detect process termination that is initiated by kernel-mode code.
 
-To register a process for silent exit monitoring, open the **Silent Process Exit** tab in GFlags. Enter the process name as the **Image** and press the **Tab** key. Check the **Enable Silent Process Exit Monitoring** box, and click **Apply**. This sets the FLG\_MONITOR\_SILENT\_PROCESS\_EXIT flag in the following registry entry.
+To register a process for silent exit monitoring, open the **Silent Process Exit** tab in GFlags. Enter the process name as the **Image** and press the **Tab** key. Check the **Enable Silent Process Exit Monitoring** box, and select **Apply**. This sets the FLG\_MONITOR\_SILENT\_PROCESS\_EXIT flag in the following registry entry.
 
 **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*ProcessName*\\GlobalFlag**
 
@@ -118,10 +117,10 @@ The dump type is stored in the **DumpType** registry entry, which is a bitwise O
 
 For example, suppose you chose a dump type of **Micro**, and you see that the **DumpType** registry entry has a value of 0x88. The value 0x88 is a bitwise OR of the following two **MINIDUMP\_TYPE** enumeration values.
 
-|                           |            |
-|---------------------------|------------|
-| MiniDumpFilterModulePaths | 0x00000080 |
-| MiniDumpFilterMemory      | 0x00000008 |
+**MiniDumpFilterModulePaths**: 0x00000080
+
+**MiniDumpFilterMemory**: 0x00000008
+
 
  
 

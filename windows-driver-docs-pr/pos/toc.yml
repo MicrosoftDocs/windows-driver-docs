@@ -1,49 +1,46 @@
 - name: "POS device driver design guide"
+  href: index.md
+- name: "POS driver samples"
 # Auto-expanded node
   items: 
-  - name: "POS device driver design guide"
-    href: index.md
   - name: "POS driver samples"
+    href: driver-samples.md
+  - name: "Barcode scanner driver sample"
+    href: barcode-scanner-driver.md
+  - name: "Magnetic stripe reader driver sample"
+    href: magnetic-stripe-reader-driver.md
+- name: "Barcode scanner Bluetooth service UUIDs"
+  href: barcode-scanner-bluetooth-service-uuids.md
+- name: "Barcode scanner events"
 # Auto-expanded node
-    items: 
-    - name: "POS driver samples"
-      href: driver-samples.md
-    - name: "Barcode scanner driver sample"
-      href: barcode-scanner-driver.md
-    - name: "Magnetic stripe reader driver sample"
-      href: magnetic-stripe-reader-driver.md
-  - name: "Barcode scanner Bluetooth service UUIDs"
-    href: barcode-scanner-bluetooth-service-uuids.md
+  items: 
   - name: "Barcode scanner events"
+    href: barcode-scanner-events.md
+  - name: "BarcodeScannerDataReceived"
+    href: barcodescannerdatareceived.md
+  - name: "BarcodeScannerErrorOccurred"
+    href: barcodescannererroroccurred.md
+  - name: "BarcodeScannerImagePreviewReceived"
+    href: barcodescannerimagepreviewreceived.md
+  - name: "BarcodeScannerTriggerPressed"
+    href: barcodescannertriggerpressed.md
+  - name: "BarcodeScannerTriggerReleased"
+    href: barcodescannertriggerreleased.md
+- name: "Magnetic stripe reader events"
 # Auto-expanded node
-    items: 
-    - name: "Barcode scanner events"
-      href: barcode-scanner-events.md
-    - name: "BarcodeScannerDataReceived"
-      href: barcodescannerdatareceived.md
-    - name: "BarcodeScannerErrorOccurred"
-      href: barcodescannererroroccurred.md
-    - name: "BarcodeScannerImagePreviewReceived"
-      href: barcodescannerimagepreviewreceived.md
-    - name: "BarcodeScannerTriggerPressed"
-      href: barcodescannertriggerpressed.md
-    - name: "BarcodeScannerTriggerReleased"
-      href: barcodescannertriggerreleased.md
+  items: 
   - name: "Magnetic stripe reader events"
+    href: magnetic-stripe-reader-events.md
+  - name: "MagneticStripeReaderDataReceived"
+    href: magneticstripereaderdatareceived.md
+  - name: "MagneticStripeReaderErrorOccured"
+    href: magneticstripereadererroroccured.md
+- name: "POS events"
 # Auto-expanded node
-    items: 
-    - name: "Magnetic stripe reader events"
-      href: magnetic-stripe-reader-events.md
-    - name: "MagneticStripeReaderDataReceived"
-      href: magneticstripereaderdatareceived.md
-    - name: "MagneticStripeReaderErrorOccured"
-      href: magneticstripereadererroroccured.md
+  items: 
   - name: "POS events"
-# Auto-expanded node
-    items: 
-    - name: "POS events"
-      href: pos-events.md
-    - name: "ReleaseDeviceRequested"
-      href: releasedevicerequested.md
-    - name: "StatusUpdated"
-      href: statusupdated.md
+    href: pos-events.md
+  - name: "ReleaseDeviceRequested"
+    href: releasedevicerequested.md
+  - name: "StatusUpdated"
+    href: statusupdated.md

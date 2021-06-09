@@ -1,7 +1,6 @@
 ---
 title: Using the _analysis_assume Function to Suppress False Defects
 description: Using the _analysis_assume Function to Suppress False Defects
-ms.assetid: eb71a664-ada5-44e3-b75d-b1a7348b115f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ You should add the **\_\_analysis\_assume** function as needed, whenever you fin
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-In the following code example, the KMDF rule [RequestCompletedLocal](https://docs.microsoft.com/windows-hardware/drivers/devtest/kmdf-requestcompletedlocal) reports a defect. This is a false defect because SDV cannot correctly interpret the **switch** statement and consequently does not enter the branch where the request is completed.
+In the following code example, the KMDF rule [RequestCompletedLocal](./kmdf-requestcompletedlocal.md) reports a defect. This is a false defect because SDV cannot correctly interpret the **switch** statement and consequently does not enter the branch where the request is completed.
 
 In this **switch** statement, there are six possible cases. The driver has defined six IOCTL codes, so the driver will definitely take one of the branches. If one of the branches is taken, the request is completed successfully.
 
@@ -139,10 +138,4 @@ There are only 6 possible IOCTLs for IoControlCode; each case is covered in the 
 For another example of how you can use **\_\_analysis\_assume**, see the example code that is used in [Using \_\_sdv\_save\_request and \_\_sdv\_retrieve\_request for Deferred Procedure Calls](using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md). The example shows how to use **\_\_sdv\_save\_request** and **\_\_sdv\_retrieve\_request** for DPCs (workitems, Timers and so on). The **\_\_analysis\_assume** function is used to suppress false defects that might otherwise result.
 
  
-
- 
-
-
-
-
 

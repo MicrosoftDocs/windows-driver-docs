@@ -1,14 +1,13 @@
 ---
 title: Reg2inf
 description: Reg2inf is a tool that converts registry keys to make a driver package universal.
-ms.assetid: e43a137e-c08a-4715-84f7-32cda67399e3
-ms.date: 08/23/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
 # Reg2inf
  
-The Driver Package INF Registry Conversion Tool (`reg2inf.exe`) tool converts a registry key and its values or a COM .dll implementing a [**DllRegisterServer**](https://docs.microsoft.com/windows/desktop/api/olectl/nf-olectl-dllregisterserver) routine into a set of [INF AddReg directives](../install/inf-addreg-directive.md) for inclusion into a driver package INF file.  This tool is particularly useful for converting existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into INF AddReg directives in order to make an INF file universal.  For more info about universal INF files, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+The Driver Package INF Registry Conversion Tool (`reg2inf.exe`) tool converts a registry key and its values or a COM .dll implementing a [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) routine into a set of [INF AddReg directives](../install/inf-addreg-directive.md) for inclusion into a driver package INF file.  This tool is particularly useful for converting existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into INF AddReg directives in order to make an INF file universal.  For more info about universal INF files, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
  
 Starting in Windows 10 version 1709, the tool ships as part of the WDK 10 installation. You can find it in the \tools subdirectory of your WDK 10 installation, for example `c:\Program Files(x86)\Windows Kits\10\tools\`. 
 
@@ -30,3 +29,14 @@ USAGE: reg2inf.exe [/key <path> | /dll <filename>] [/targetkey <path>]
 ```
 
 **Note** Reg2inf requires that the full path length must not exceed 259 characters. 
+
+## Registering a COM component in an INF file
+
+The following snippet shows how to register a simple COM class using INF AddReg syntax, as produced by Reg2inf:
+
+```cpp
+[ComClass_AddReg]
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084},,,"Sample Class"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\InprocServer32,,%REG_EXPAND_SZ%,"%13%\comobj.dll"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\InprocServer32,ThreadingModel,,"Both"
+```

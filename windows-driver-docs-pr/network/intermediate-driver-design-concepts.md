@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Design Concepts
 description: Intermediate Driver Design Concepts
-ms.assetid: cee13268-5df0-4d71-a115-3168c56be06c
 keywords:
 - intermediate drivers WDK networking , writing
 - NDIS intermediate drivers WDK , writing
@@ -36,7 +35,7 @@ The following topics provide additional information about writing NDIS intermedi
 
 [Intermediate Driver Network Data Management](intermediate-driver-network-data-management.md)
 
-[Receiving Data in an Intermediate Driver](receiving-data-in-an-intermediate-driver.md)
+[Receiving Data in an Intermediate Driver](receiving-data-in-an-intermediate-driver-with-a-connectionless-lower-e.md)
 
 [Transmitting Network Data Through an Intermediate Driver](transmitting-network-data-through-an-intermediate-driver.md)
 

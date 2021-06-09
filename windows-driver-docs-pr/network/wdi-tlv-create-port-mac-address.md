@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CREATE_PORT_MAC_ADDRESS
 description: WDI_TLV_CREATE_PORT_MAC_ADDRESS is a TLV that contains a MAC address for OID_WDI_TASK_CREATE_PORT.
-ms.assetid: CE2174E2-CFD7-40E7-B8A2-B96DDB6D6AA4
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CREATE_PORT_MAC_ADDRESS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS
 
 
-WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [OID\_WDI\_TASK\_CREATE\_PORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-create-port).
+WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [OID\_WDI\_TASK\_CREATE\_PORT](./oid-wdi-task-create-port.md).
 
 ## TLV Type
 
@@ -21,19 +20,18 @@ WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [O
 ## Length
 
 
-The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
+The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
 
 ## Values
 
 
 | Type                                              | Description                                   |
 |---------------------------------------------------|-----------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address to be used for port creation. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address to be used for port creation. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -57,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Tracelog Enumguid Display
 description: Tracelog Enumguid Display
-ms.assetid: 9bb93238-98f7-4422-8434-b4dc105ec008
 keywords:
 - Tracelog WDK , providers
 - providers WDK software tracing
@@ -84,7 +83,7 @@ If a provider is enabled but is not currently running and is, therefore, not reg
 
 ### <span id="sample_enumguid_display"></span><span id="SAMPLE_ENUMGUID_DISPLAY"></span>Sample Enumguid Display
 
-The following enumguid display was copied from a computer running Windows Server 2003. The display lists the providers that are registered and running. One provider, the Tracedrv sample driver, is enabled for tracing. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The following enumguid display was copied from a computer running Windows Server 2003. The display lists the providers that are registered and running. One provider, the Tracedrv sample driver, is enabled for tracing. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ```
 c:\Tracelog>tracelog -enumguid

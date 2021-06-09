@@ -1,7 +1,6 @@
 ---
 title: Creating a service metadata submission package in Visual Studio
 description: Creating a service metadata submission package in Visual Studio
-ms.assetid: 93C2F66B-EAD3-4C7B-A761-E0AF861101D0
 keywords:
 - Creating a service metadata submission package in Visual Studio
 ms.date: 04/20/2017
@@ -49,17 +48,11 @@ Use the Submission tool in Microsoft Visual Studio to create a submission packag
 
 12. When you're ready to submit your package, click **Launch Windows Dev Center - Hardware Dashboard**.
 
-For more information about how to submit your package, see [Submit a Device Metadata Package](https://go.microsoft.com/fwlink/p/?linkid=226302).
+For more information about how to submit your package, see [Submit a Device Metadata Package](../dashboard/submit-a-device-metadata-package--dashboard-help-.md).
 
-For more information about the devicemanifest file, see [Submit a UWP app for Mobile Broadband](https://go.microsoft.com/fwlink/p/?linkid=248426).
+For more information about the device manifest file, see [Submit a mobile broadband device manifest package](../dashboard/submit-a-mobile-broadband-device-manifest-package.md).
 
-For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](https://go.microsoft.com/fwlink/p/?linkid=248427).
-
- 
+For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](../dashboard/submit-a-bulk-metadata-package.md).
 
  
-
-
-
-
 

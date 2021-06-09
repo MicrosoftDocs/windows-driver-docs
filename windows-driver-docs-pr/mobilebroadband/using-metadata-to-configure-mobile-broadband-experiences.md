@@ -1,7 +1,6 @@
 ---
 title: Overview of using metadata to configure mobile broadband experiences
 description: Overview of using metadata to configure mobile broadband experiences
-ms.assetid: d3ceab6e-550f-4852-8ee0-4a261c238434
 ms.date: 07/02/2019
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT] 
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 >
-> Starting in Windows 10, version 1803, the MBAE app experience is replaced by an MO Overview of uWP app. For more information about MO Overview of uWP apps, see [Overview of uWP mobile broadband apps](uwp-mobile-broadband-apps.md).
+> Starting in Windows 10, version 1803, the MBAE app experience is replaced by an MO Overview of UWP app. For more information about MO Overview of UWP apps, see [Overview of UWP mobile broadband apps](uwp-mobile-broadband-apps.md).
 
 You can provide metadata to customize various aspects of the Windows 8, Windows 8.1, and Windows 10 mobile broadband application experience. These include customizing Windows Connection Manager with operator branding, integrating the mobile broadband app with Windows Connection Manager, providing updated information for the Windows APN database, and providing data to provision the PC. Windows 8, Windows 8.1, and Windows 10 includes three sources of metadata you can use:
 

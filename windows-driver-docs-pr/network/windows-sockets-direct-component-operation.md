@@ -1,7 +1,6 @@
 ---
 title: Windows Sockets Direct Component Operation Topics
 description: Windows Sockets Direct Component Operation Topics
-ms.assetid: 6fa4a89c-f147-48bd-8fdc-562743f81bcd
 keywords:
 - Windows Sockets Direct WDK , operations
 - SAN service providers WDK

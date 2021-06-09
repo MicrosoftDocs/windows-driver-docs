@@ -1,7 +1,6 @@
 ---
 title: PlatenOpticalResolution element
 description: The required PlatenOpticalResolution element specifies the maximum optical resolution at which the platen can scan.
-ms.assetid: 770c204c-9315-47c6-afd3-4ac385e1177e
 keywords: ["PlatenOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **PlatenOpticalResolution** element specifies the maximum optical resolution at which the platen can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:PlatenOpticalResolution>
@@ -27,8 +25,7 @@ Usage
 </wscn:PlatenOpticalResolution>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -73,8 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

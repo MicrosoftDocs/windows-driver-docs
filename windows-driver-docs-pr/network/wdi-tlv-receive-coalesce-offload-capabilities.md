@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES
 description: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES is a TLV that contains Rx coalesce offload capabilities.
-ms.assetid: AF13B304-3E94-42EE-8BBB-107F5F238758
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES Network Drivers Starting with Windows Vista
@@ -53,8 +52,7 @@ The size (in bytes) of the below values.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

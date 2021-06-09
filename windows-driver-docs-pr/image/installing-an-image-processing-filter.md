@@ -1,7 +1,6 @@
 ---
 title: Installing an Image Processing Filter
 description: Installing an Image Processing Filter
-ms.assetid: bce6405f-0377-4e50-b898-28c6cdb962be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

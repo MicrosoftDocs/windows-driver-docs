@@ -1,7 +1,6 @@
 ---
 title: Managing Device Power Policy
 description: Managing Device Power Policy
-ms.assetid: f6f9ab40-4d51-4181-ac11-ff7af42370af
 keywords: ["device power policy WDK kernel", "power policy WDK kernel", "device power policy owners WDK kernel", "function drivers WDK power management", "device power states WDK kernel", "initial device power state WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -25,15 +24,15 @@ For example, the driver for a SCSI adapter might perform the roles of function d
 
 The device power policy owner is responsible for the following:
 
--   Setting the initial power state of the device to D0 by calling [**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate) as it handles the Plug and Play manager's [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request.
+-   Setting the initial power state of the device to D0 by calling [**PoSetPowerState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate) as it handles the Plug and Play manager's [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request.
 
     Devices should power on as needed; for example, a device must power on to handle an I/O request. The device power policy owner is responsible for determining when its device is needed, ensuring that device power is on, and setting the correct device power state. The typical device should be powered on by the time the PnP start-device IRP has completed.
 
     As a general rule, most devices should be powered off when not in use, even when the system is in the working state.
 
--   Sending a device power request in response to a system power request by calling [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp).
+-   Sending a device power request in response to a system power request by calling [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp).
 
-    For example, when the policy owner receives a system set-power IRP, it sends a device set-power IRP. Most devices enter D3 when the system enters any sleeping state. The **DeviceState** array in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure lists the highest-powered state the device can maintain for each system power state. (See [Reporting Device Power Capabilities](reporting-device-power-capabilities.md).)
+    For example, when the policy owner receives a system set-power IRP, it sends a device set-power IRP. Most devices enter D3 when the system enters any sleeping state. The **DeviceState** array in the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure lists the highest-powered state the device can maintain for each system power state. (See [Reporting Device Power Capabilities](reporting-device-power-capabilities.md).)
 
 -   Detecting when the device is idle and putting it to sleep to conserve energy.
 
@@ -48,9 +47,4 @@ The device power policy owner is responsible for the following:
     The device power policy owner sends and cancels wait/wake IRPs, as described in [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md).
 
  
-
- 
-
-
-
 

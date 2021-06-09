@@ -1,7 +1,6 @@
 ---
 title: Security Issues for Network Drivers
 description: This section describes security issues specific to network drivers
-ms.assetid: 04400213-9bd4-4dbe-b302-24917450829f
 keywords:
 - network drivers WDK , security
 - security WDK networking
@@ -11,15 +10,15 @@ ms.localizationpriority: medium
 
 # Security Issues for Network Drivers
 
-For a general discussion on writing secure drivers, see [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers).
+For a general discussion on writing secure drivers, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md).
 
 Beyond following safe coding practices and the general device driver guidance, network drivers should do the following to enhance security:
 
-- All network drivers should validate values that they read from the registry. Specifically, the caller of [**NdisReadConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadconfiguration) or [**NdisReadNetworkAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress) must not make any assumptions about values read from the registry and must validate each registry value that it reads. If the caller of **NdisReadConfiguration** determines that a value is out of bounds, it should use a default value instead. If the caller of **NdisReadNetworkAddress** determines that a value is out of bounds, it should use the permanent medium access control (MAC) address or a default address instead.
+- All network drivers should validate values that they read from the registry. Specifically, the caller of [**NdisReadConfiguration**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadconfiguration) or [**NdisReadNetworkAddress**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadnetworkaddress) must not make any assumptions about values read from the registry and must validate each registry value that it reads. If the caller of **NdisReadConfiguration** determines that a value is out of bounds, it should use a default value instead. If the caller of **NdisReadNetworkAddress** determines that a value is out of bounds, it should use the permanent medium access control (MAC) address or a default address instead.
 
 ## OID-specific issues
 
-- A miniport driver, in its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) functions, should validate any object identifier (OID) value that the driver is requested to set. If the driver determines that the value to be set is out of bounds, it should fail the set request. For more information about object identifiers, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
+- A miniport driver, in its [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) functions, should validate any object identifier (OID) value that the driver is requested to set. If the driver determines that the value to be set is out of bounds, it should fail the set request. For more information about object identifiers, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md).
 
 - If an intermediate driver's *MiniportOidRequest* function does not pass a set operation to an underlying miniport driver, the function should validate the OID value. For more information, see [Intermediate Driver Query and Set Operations](intermediate-driver-query-and-set-operations.md).
 
@@ -81,7 +80,7 @@ Most Set OIDs can be issued by a usermode application running in the Administrat
     }
     ```
 
-2. Whenever validating an OID with an embedded offset, you must validate that the embedded buffer is within the OID payload. This requires several checks. For example, [OID_PM_ADD_WOL_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-add-wol-pattern) may deliver an embedded pattern, that needs to be checked. Correct validation requires checking:
+2. Whenever validating an OID with an embedded offset, you must validate that the embedded buffer is within the OID payload. This requires several checks. For example, [OID_PM_ADD_WOL_PATTERN](./oid-pm-add-wol-pattern.md) may deliver an embedded pattern, that needs to be checked. Correct validation requires checking:
 
     1. InformationBufferSize >= sizeof(NDIS_PM_PACKET_PATTERN)
 
@@ -147,11 +146,10 @@ Method OIDs can be issued by a usermode application running in the Administrator
 
 ## Other network driver security issues
 
-- Many NDIS miniport drivers expose a control device by using NdisRegisterDeviceEx. Those that do this must audit their IOCTL handlers, with all the same security rules as a WDM driver. For more information, see [Security Issues for I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/security-issues-for-i-o-control-codes).
+- Many NDIS miniport drivers expose a control device by using NdisRegisterDeviceEx. Those that do this must audit their IOCTL handlers, with all the same security rules as a WDM driver. For more information, see [Security Issues for I/O Control Codes](../kernel/security-issues-for-i-o-control-codes.md).
 
 - Well-designed NDIS miniport drivers should not rely on being called in a particular process context, nor interact very closely with usermode (with IOCTLs & OIDs being the exception). It would be a red flag to see a miniport that opened usermode handles, performed usermode waits, or allocated memory against usermode quota. That code should be investigated.
 
 - Most NDIS miniport drivers should not be involved in parsing packet payloads. In some cases, though, it may be necessary. If so, this code should be audited very carefully, as the driver is parsing data from an untrusted source.
 
-- As is standard when allocating kernel-mode memory, NDIS drivers should use appropriate [NX Pool Opt-In Mechanisms](https://docs.microsoft.com/windows-hardware/drivers/kernel/nx-pool-opt-in-mechanisms). In WDK 8 and newer, the `NdisAllocate*` family of functions are properly opted in.
-
+- As is standard when allocating kernel-mode memory, NDIS drivers should use appropriate [NX Pool Opt-In Mechanisms](../kernel/nx-pool-opt-in-mechanisms.md). In WDK 8 and newer, the `NdisAllocate*` family of functions are properly opted in.

@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumdownirp
 description: The wdfkd.wdfumdownirp extension displays the kernel-mode I/O request packet (IRP) that is associated with a specified user-mode IRP.
-ms.assetid: 98DFF193-950A-46CF-875E-B2907743F5D4
 keywords: ["wdfkd.wdfumdownirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,8 +45,7 @@ UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command in a kernel-mode debugging session or in a user-mode debugging session that is attached to the UMDF host process (wudfhost.exe).
 

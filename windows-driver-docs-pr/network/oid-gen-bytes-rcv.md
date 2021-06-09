@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_BYTES_RCV
 description: As a query, NDIS and overlying drivers use the OID_GEN_BYTES_RCV OID to determine the total number of bytes that a miniport adapter received.
-ms.assetid: e613e155-e4ff-48e4-8087-20ecad3c4644
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_BYTES_RCV Network Drivers Starting with Windows Vista
@@ -21,8 +20,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for miniport drivers. See the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) OID for more information about statistics.
 
@@ -30,8 +28,7 @@ The total byte count is the sum of the receive-directed byte count, receive-mult
 
 The count is identical to the *ifInOctets* counter described in RFC 2863.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

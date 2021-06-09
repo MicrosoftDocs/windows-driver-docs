@@ -1,7 +1,6 @@
 ---
 title: Updating Web Page Information
 description: Updating Web Page Information
-ms.assetid: 3ea2c8c0-7e46-47ff-8c32-82760eafd893
 keywords:
 - print Web pages WDK , updating information
 - Web pages WDK printer , updating information

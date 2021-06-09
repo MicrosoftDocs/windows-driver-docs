@@ -1,7 +1,6 @@
 ---
 title: Specifying Access Rights
 description: Specifying Access Rights
-ms.assetid: 8ef4b4bb-5f4e-4095-b4ab-1182c0f75619
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
@@ -9,7 +8,7 @@ ms.date: 10/17/2018
 # Specifying Access Rights
 
 
-The ACCESS\_MASK type is a bitmask that specifies a set of access rights in the [access mask](https://docs.microsoft.com/windows-hardware/drivers/ifs/access-mask) of an [access control entry](https://docs.microsoft.com/windows-hardware/drivers/ifs/access-control-entry).
+The ACCESS\_MASK type is a bitmask that specifies a set of access rights in the [access mask](../ifs/access-mask.md) of an [access control entry](../ifs/access-control-entry.md).
 
 ``` syntax
 typedef ULONG  ACCESS_MASK;
@@ -39,7 +38,7 @@ The following standard specific access rights apply to all types of executive ob
 </tr>
 <tr class="odd">
 <td><p>SYNCHRONIZE</p></td>
-<td><p>The caller can perform a wait operation on the object. (For example, the object can be passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects" data-raw-source="[&lt;strong&gt;KeWaitForMultipleObjects&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)"><strong>KeWaitForMultipleObjects</strong></a>.)</p></td>
+<td><p>The caller can perform a wait operation on the object. (For example, the object can be passed to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects" data-raw-source="[&lt;strong&gt;KeWaitForMultipleObjects&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)"><strong>KeWaitForMultipleObjects</strong></a>.)</p></td>
 </tr>
 <tr class="even">
 <td><p>WRITE_DAC</p></td>
@@ -130,21 +129,18 @@ The following combinations of standard specific access rights are also defined. 
 
  
 
-Each type of object can have its own additional access rights. For a description of the access rights that are applicable to a file, directory, or device, see [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile). For a description of the access rights that are applicable to an object manager directory, see [**ZwCreateDirectoryObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject). For a description of the access rights that are applicable to a registry key, see [**ZwCreateKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey). For a description of the access rights that are applicable to a section object, see [**ZwOpenSection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopensection). For a description of the access rights that are applicable to a WMI data block, see [**IoWMIOpenBlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock).
+Each type of object can have its own additional access rights. For a description of the access rights that are applicable to a file, directory, or device, see [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile). For a description of the access rights that are applicable to an object manager directory, see [**ZwCreateDirectoryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject). For a description of the access rights that are applicable to a registry key, see [**ZwCreateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey). For a description of the access rights that are applicable to a section object, see [**ZwOpenSection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopensection). For a description of the access rights that are applicable to a WMI data block, see [**IoWMIOpenBlock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock).
 
 For more information about access rights, see the following topics in the Microsoft Windows SDK documentation:
 
--   [Access Rights and Access Masks](https://docs.microsoft.com/windows/desktop/SecAuthZ/access-rights-and-access-masks)
--   [ACCESS\_MASK](https://docs.microsoft.com/windows/desktop/SecAuthZ/access-mask)
+-   [Access Rights and Access Masks](/windows/desktop/SecAuthZ/access-rights-and-access-masks)
+-   [ACCESS\_MASK](/windows/desktop/SecAuthZ/access-mask)
 
 Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)
 
 ## Related topics
-[**IoWMIOpenBlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock)  
-[**ZwCreateDirectoryObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject)  
-[**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)  
-[**ZwCreateKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)  
-[**ZwOpenSection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopensection)  
-
-
-
+[**IoWMIOpenBlock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock)  
+[**ZwCreateDirectoryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject)  
+[**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)  
+[**ZwCreateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)  
+[**ZwOpenSection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopensection)

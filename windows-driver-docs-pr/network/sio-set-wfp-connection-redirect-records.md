@@ -1,7 +1,6 @@
 ---
 title: SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code
 description: The SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control operation allows a Winsock client to specify the redirect record to the new TCP socket used for connecting to the final destination.
-ms.assetid: 51FC55BB-FD7A-4FDE-B1FC-02745AC03E33
 ms.date: 08/08/2017
 keywords: 
  -SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
@@ -15,9 +14,9 @@ The **SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS** socket I/O control operatio
 
 A WFP redirect record is a buffer of opaque data that WFP must set on an outbound proxy connection so that the redirected connection and the original connection are logically related.
 
-For more information about redirection, see [Using Bind or Connect Redirection](https://docs.microsoft.com/windows-hardware/drivers/network/using-bind-or-connect-redirection).
+For more information about redirection, see [Using Bind or Connect Redirection](./using-bind-or-connect-redirection.md).
 
-To set the redirect record to the new TCP socket used for connecting to the final destination, a Winsock client calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the redirect record to the new TCP socket used for connecting to the final destination, a Winsock client calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -74,18 +73,17 @@ To set the redirect record to the new TCP socket used for connecting to the fina
 
 The Winsock client must allocate a buffer and specify a pointer to the buffer and its size in *InputBuffer* and *InputSize.*
 
-A Winsock client must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The client must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the client must check the IRP status and release all resources that it had previously allocated for the request.
+A Winsock client must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The client must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the client must check the IRP status and release all resources that it had previously allocated for the request.
 
-**Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/hh859714(v=vs.85)).
+**Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](/windows/win32/winsock/sio-set-wfp-connection-redirect-records).
 
  
 
-For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](https://docs.microsoft.com/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions).
+For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](./using-irps-with-winsock-kernel-functions.md).
 
 The client can get the status of the IRP by checking *Irp-&gt;IoStatus.Status*. *Irp-&gt;IoStatus.Status* will be set to **STATUS\_SUCCESS** if the request is successful. Otherwise, it will contain **STATUS\_INTEGER\_OVERFLOW**, or **STATUS\_ACCESS\_DENIED** if the call is not successful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -115,18 +113,13 @@ Requirements
 ## See also
 
 
-[Using Bind or Connect Redirection](https://docs.microsoft.com/windows-hardware/drivers/network/using-bind-or-connect-redirection)
+[Using Bind or Connect Redirection](./using-bind-or-connect-redirection.md)
 
-[Using IRPs with Winsock Kernel Functions](https://docs.microsoft.com/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions)
+[Using IRPs with Winsock Kernel Functions](./using-irps-with-winsock-kernel-functions.md)
 
 [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](sio-query-wfp-connection-redirect-records.md)
 
-[**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/hh859714(v=vs.85))
+[**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](/windows/win32/winsock/sio-set-wfp-connection-redirect-records)
 
  
-
- 
-
-
-
 

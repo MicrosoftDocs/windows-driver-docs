@@ -1,7 +1,6 @@
 ---
 title: .holdmem (Hold and Compare Memory)
 description: The .holdmem command saves memory ranges and compares them to other memory ranges.
-ms.assetid: d8caa0df-c87d-4378-9a39-cc04760ca0db
 keywords: ["Hold and Compare Memory (.holdmem) command", "memory, Hold and Compare Memory (.holdmem) command", ".holdmem (Hold and Compare Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -73,8 +72,7 @@ Compares the specified range to all saved memory ranges. For more information ab
 
 For more information about how to manipulate memory and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 The **.holdmem** command compares memory ranges byte-for-byte.
 

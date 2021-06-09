@@ -1,7 +1,6 @@
 ---
 title: WDDM 1.2 best practices
 description: To deliver the best experience in Windows 8 and later, Windows takes advantage of the graphics hardware paired with a Windows Display Driver Model (WDDM) 1.2 or later driver. This section summarizes the best practices.
-ms.assetid: 130C66F0-1ACE-4C6E-AE16-AEFCD4847312
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ To deliver the best experience in Windows 8 and later, Windows takes advantage 
 -   For headless systems:
     -   System firmware should set the VGA Not Present flag in the IAPC\_BOOT\_ARCH field of the Fixed ACPI Description Table (FADT), and if there is any VBIOS, it should implement an empty mode list through the VESA BIOS Extensions (VBE).
     -   In the absence of VBE support, the headless system should not represent a working display through the Unified Extensible Firmware Interface (UEFI) Graphics Output Protocol (GOP).
--   See [Windows hardware certification](https://go.microsoft.com/fwlink/p/?linkid=325510) for validation and testing information.
+-   See [Windows hardware certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for validation and testing information.
 -   Test a variety of hardware configurations on both desktops and mobile systems to ensure a solid end-user experience on Windows 8 and later.
 
 **Graphics hardware vendors:**
@@ -40,10 +39,4 @@ To deliver the best experience in Windows 8 and later, Windows takes advantage 
 -   Take advantage of the Windows 8 DirectX feature improvements.
 
  
-
- 
-
-
-
-
 

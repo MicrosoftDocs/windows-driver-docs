@@ -1,14 +1,13 @@
 ---
 title: MobileBroadbandProfiles
 description: MobileBroadbandProfiles
-ms.assetid: 251ece1e-67ec-48d3-977a-f033f1bff8c4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # MobileBroadbandProfiles
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The MobileBroadbandProfiles element specifies the purchase and Internet mobile broadband profile files to use.
 

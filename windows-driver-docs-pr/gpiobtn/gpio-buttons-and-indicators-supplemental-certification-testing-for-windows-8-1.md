@@ -1,7 +1,6 @@
 ---
 title: GPIO buttons and indicators supplemental testing
 description: This topic describes Windows 8.1 test scenarios for hardware buttons and indicators, to ensure an optimal user experience for various form factors.
-ms.assetid: 47E24D50-6007-4CD7-91C5-2D72788106B8
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -56,9 +55,4 @@ Indicators under test:
 -   Laptop/slate mode indicator
 
 ## <span id="related_topics"></span>Related topics
-[Power button behavior](https://aka.ms/connect-redirect?DownloadID=47452)  
-[GPIO buttons testing with MITT platform](https://aka.ms/connect-redirect?DownloadID=48735)  
-[GPIO tests in MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/gpio-tests-in-mitt)  
-
-
-
+[GPIO tests in MITT](../spb/gpio-tests-in-mitt.md)

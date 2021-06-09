@@ -1,10 +1,8 @@
 ---
 title: Mobile Plans onboarding
 description: An overview of the steps required to onboard to Mobile Plans
-ms.assetid: fdfd1ed4-c143-4c7a-9ee9-d71189194bbe
 keywords:
 - Windows Mobile Plans mobile operator onboarding
-ms.author: windowsdriverdev
 ms.date: 07/31/2019
 ms.topic: article
 ms.prod: windows-hardware

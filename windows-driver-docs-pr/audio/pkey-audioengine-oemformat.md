@@ -1,7 +1,6 @@
 ---
 title: PKEY\_AudioEngine\_OEMFormat
 description: PKEY\_AudioEngine\_OEMFormat
-ms.assetid: a1587f46-1c21-4419-a1a4-81fe299c6871
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -35,13 +34,13 @@ PKEY_AudioEndpoint_Association          = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E
 PKEY_AudioEngine_OEMFormat              = "{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
 ```
 
-In the preceding example, the name of the add-registry section, OEMSettingsOverride.AddReg, is defined by an [**AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive in an interface installation section in Sysfx.inf. The preceding example adds several properties of endpoint number 0 (identified by the string "EP\\\\0") to the registry entry for the device interface. (If a device interface represents a [wave filter](https://docs.microsoft.com/windows-hardware/drivers/audio/wave-filters) with more than one endpoint, the additional endpoints are numbered 1, 2, and so on.) For more information about interface installation sections, see [**INF AddInterface Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive).
+In the preceding example, the name of the add-registry section, OEMSettingsOverride.AddReg, is defined by an [**AddReg**](../install/inf-addreg-directive.md) directive in an interface installation section in Sysfx.inf. The preceding example adds several properties of endpoint number 0 (identified by the string "EP\\\\0") to the registry entry for the device interface. (If a device interface represents a [wave filter](./wave-filters.md) with more than one endpoint, the additional endpoints are numbered 1, 2, and so on.) For more information about interface installation sections, see [**INF AddInterface Directive**](../install/inf-addinterface-directive.md).
 
-After the INF file has created the three property keys and loaded their associated values into the registry, applications can access the properties by obtaining the [IPropertyStore](https://docs.microsoft.com/windows/desktop/api/propsys/nn-propsys-ipropertystore) interface for the endpoint device. Header file Mmdeviceapi.h in the Windows SDK contains C/C++ definitions of the three property keys. For more information about obtaining the IPropertyStore interface, see the description of the [**IMMDevice::OpenPropertyStore**](https://docs.microsoft.com/windows/desktop/api/mmdeviceapi/nf-mmdeviceapi-immdevice-openpropertystore) method in the Windows SDK documentation.
+After the INF file has created the three property keys and loaded their associated values into the registry, applications can access the properties by obtaining the [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) interface for the endpoint device. Header file Mmdeviceapi.h in the Windows SDK contains C/C++ definitions of the three property keys. For more information about obtaining the IPropertyStore interface, see the description of the [**IMMDevice::OpenPropertyStore**](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-openpropertystore) method in the Windows SDK documentation.
 
-In the preceding INF example, the **PKEY\_AudioEndpoint\_Association** property key identifies the KS pin category GUID for the endpoint device. The **PKEY\_AudioEndpoint\_ControlPanelProvider** property key identifies the class GUID for the COM interface object that supplies the property values to the property page in Mmsys.cpl for the endpoint device. For more information about these property keys, see the Windows SDK documentation. For more information about KS pin category GUIDs, see [Pin Category Property](https://docs.microsoft.com/windows-hardware/drivers/audio/pin-category-property).
+In the preceding INF example, the **PKEY\_AudioEndpoint\_Association** property key identifies the KS pin category GUID for the endpoint device. The **PKEY\_AudioEndpoint\_ControlPanelProvider** property key identifies the class GUID for the COM interface object that supplies the property values to the property page in Mmsys.cpl for the endpoint device. For more information about these property keys, see the Windows SDK documentation. For more information about KS pin category GUIDs, see [Pin Category Property](./pin-category-property.md).
 
-In the preceding INF example, the property value that is associated with the **PKEY\_AudioEngine\_OEMFormat** property key is a 48-byte REG\_BINARY value that contains a serialized representation of the [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure that describes the format. To calculate the REG\_BINARY data value to associate with the **PKEY\_AudioEngine\_OEMFormat** property key, embed the **WAVEFORMATEX** or **WAVEFORMATEXTENSIBLE** structure in a **PropVariant** structure, and serialize the **PropVariant** structure by calling the **StgSerializePropVariant** function. For more information about the **PropVariant** structure and the **StgSerializePropVariant** function, see the Windows SDK documentation.
+In the preceding INF example, the property value that is associated with the **PKEY\_AudioEngine\_OEMFormat** property key is a 48-byte REG\_BINARY value that contains a serialized representation of the [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) or [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure that describes the format. To calculate the REG\_BINARY data value to associate with the **PKEY\_AudioEngine\_OEMFormat** property key, embed the **WAVEFORMATEX** or **WAVEFORMATEXTENSIBLE** structure in a **PropVariant** structure, and serialize the **PropVariant** structure by calling the **StgSerializePropVariant** function. For more information about the **PropVariant** structure and the **StgSerializePropVariant** function, see the Windows SDK documentation.
 
 The following code example is a console application that prints the REG\_BINARY data that appears in the preceding INF example.
 
@@ -113,15 +112,9 @@ void main()
 }
 ```
 
-The main function in the preceding code example creates a [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure to describe the default format. You can modify the main function to create a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or **WAVEFORMATEXTENSIBLE** structure to describe the default format for your endpoint device.
+The main function in the preceding code example creates a [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure to describe the default format. You can modify the main function to create a [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) or **WAVEFORMATEXTENSIBLE** structure to describe the default format for your endpoint device.
 
 The PrintSerializedFormat function in the preceding code example serializes the format description and prints the serialized format description as REG\_BINARY data. You can copy the printed output produced by the function and paste it into your INF file.
 
  
-
- 
-
-
-
-
 

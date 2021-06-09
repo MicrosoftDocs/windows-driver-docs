@@ -1,7 +1,6 @@
 ---
 title: Vendor Audio Driver Options
 description: Vendor Audio Driver Options
-ms.assetid: 4306c027-28ae-4299-83c0-29d892bf64ca
 keywords:
 - WDM audio drivers WDK , vendor options
 - audio drivers WDK , vendor options
@@ -25,20 +24,15 @@ To take advantage of the built-in system support for audio devices, Microsoft re
 
 However, if these options are not sufficient, a vendor can implement one of the following:
 
--   A proprietary KS filter (see [KS Filters](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-filters))
+-   A proprietary KS filter (see [KS Filters](../stream/ks-filters.md))
 
 -   Microsoft does not recommend a proprietary KS filter because they are difficult to implement, and are unnecessary for most ISA, PCI, and USB devices.
 
--   Stream class minidriver (see [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2))
+-   Stream class minidriver (see [Streaming Minidrivers](../stream/streaming-minidrivers2.md))
 
 -   Microsoft does not recommend a proprietary stream class minidriver because it is difficult to implement, although it can be appropriate for devices that integrate audio and video.
 
 For an in-depth discussion of the available options for providing driver support for an audio device, see [Getting Started with WDM Audio Drivers](getting-started-with-wdm-audio-drivers.md).
 
  
-
- 
-
-
-
 

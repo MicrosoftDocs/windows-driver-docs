@@ -1,7 +1,6 @@
 ---
 title: Registering a Winsock Kernel Application
 description: Registering a Winsock Kernel Application
-ms.assetid: aaba39b8-8609-46e6-906d-3f050d91af7f
 keywords:
 - Winsock Kernel WDK networking , registering
 - registering Winsock Kernel applications
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 ### WSK Client Object Registration
 
-A Winsock Kernel (WSK) application must register as a WSK client by calling the [**WskRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) function. **WskRegister** requires the WSK application to initialize and pass a pointer to its WSK client's [Network Programming Interface (NPI)](network-programming-interface.md)(a [**WSK\_CLIENT\_NPI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_npi) structure) and a WSK registration object (a [**WSK\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_registration) structure) that will be initialized by **WskRegister** upon successful return.
+A Winsock Kernel (WSK) application must register as a WSK client by calling the [**WskRegister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) function. **WskRegister** requires the WSK application to initialize and pass a pointer to its WSK client's [Network Programming Interface (NPI)](network-programming-interface.md)(a [**WSK\_CLIENT\_NPI**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_npi) structure) and a WSK registration object (a [**WSK\_REGISTRATION**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_registration) structure) that will be initialized by **WskRegister** upon successful return.
 
 The following code example shows how a WSK application can register as a WSK client.
 
@@ -71,13 +70,13 @@ NTSTATUS
 }
 ```
 
-A WSK application is not required to call [**WskRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) from within its **DriverEntry** function. For example, if a WSK application is a subcomponent of a complex driver, the registration of the application might occur only when the WSK application subcomponent is activated.
+A WSK application is not required to call [**WskRegister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) from within its **DriverEntry** function. For example, if a WSK application is a subcomponent of a complex driver, the registration of the application might occur only when the WSK application subcomponent is activated.
 
-A WSK application must keep the [**WSK\_CLIENT\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_dispatch) structure passed to **WskRegister** valid and resident in memory until [**WskDeregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) is called and the registration is no longer valid. The [**WSK\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_registration) structure must also be kept valid and resident in memory until the WSK application stops making calls to the other [WSK registration functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/). The previous code example keeps these two structures in the global data section of the driver, thereby keeping the structure data resident in memory until the driver is unloaded.
+A WSK application must keep the [**WSK\_CLIENT\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_dispatch) structure passed to **WskRegister** valid and resident in memory until [**WskDeregister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) is called and the registration is no longer valid. The [**WSK\_REGISTRATION**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_registration) structure must also be kept valid and resident in memory until the WSK application stops making calls to the other [WSK registration functions](/windows-hardware/drivers/ddi/_netvista/). The previous code example keeps these two structures in the global data section of the driver, thereby keeping the structure data resident in memory until the driver is unloaded.
 
 ### WSK Provider NPI Capture
 
-After a WSK application has registered as a WSK client with [**WskRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister), it must use the [**WskCaptureProviderNPI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi) function to capture the WSK provider NPI from the WSK subsystem in order to start using the WSK interface.
+After a WSK application has registered as a WSK client with [**WskRegister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister), it must use the [**WskCaptureProviderNPI**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi) function to capture the WSK provider NPI from the WSK subsystem in order to start using the WSK interface.
 
 Because the WSK subsystem might not yet be ready when a WSK application attempts to capture the WSK provider NPI, the **WskCaptureProviderNPI** function allows the WSK application to poll or wait for the WSK subsystem to become ready as follows:
 
@@ -91,9 +90,9 @@ Because the WSK subsystem might not yet be ready when a WSK application attempts
 
  
 
-If the call to **WskCaptureProviderNPI** fails with STATUS\_NOINTERFACE, the WSK application can use the [**WskQueryProviderCharacteristics**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskqueryprovidercharacteristics) function to discover the range of WSK NPI versions supported by the WSK subsystem. The WSK application can call **WskDeregister** to unregister its current registration instance, and then register again by using a different [**WSK\_CLIENT\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_dispatch) instance that uses a supported WSK NPI version.
+If the call to **WskCaptureProviderNPI** fails with STATUS\_NOINTERFACE, the WSK application can use the [**WskQueryProviderCharacteristics**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskqueryprovidercharacteristics) function to discover the range of WSK NPI versions supported by the WSK subsystem. The WSK application can call **WskDeregister** to unregister its current registration instance, and then register again by using a different [**WSK\_CLIENT\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_dispatch) instance that uses a supported WSK NPI version.
 
-When **WskCaptureProviderNPI** returns successfully, its *WskProviderNpi* parameter points to a WSK provider NPI ( [**WSK\_PROVIDER\_NPI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_npi)) ready for use by the WSK application. The WSK\_PROVIDER\_NPI structure contains pointers to the WSK client object ( [**WSK\_CLIENT**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-client)) and the [**WSK\_PROVIDER\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) dispatch table of WSK functions that the WSK application can use to create WSK sockets and perform other operations on the WSK client object. After the WSK application is finished using the WSK\_PROVIDER\_DISPATCH functions, it must release the WSK provider NPI by calling [**WskReleaseProviderNPI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskreleaseprovidernpi).
+When **WskCaptureProviderNPI** returns successfully, its *WskProviderNpi* parameter points to a WSK provider NPI ( [**WSK\_PROVIDER\_NPI**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_npi)) ready for use by the WSK application. The WSK\_PROVIDER\_NPI structure contains pointers to the WSK client object ( [**WSK\_CLIENT**](./wsk-client.md)) and the [**WSK\_PROVIDER\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) dispatch table of WSK functions that the WSK application can use to create WSK sockets and perform other operations on the WSK client object. After the WSK application is finished using the WSK\_PROVIDER\_DISPATCH functions, it must release the WSK provider NPI by calling [**WskReleaseProviderNPI**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskreleaseprovidernpi).
 
 The following code example shows how a WSK application can capture the WSK provider NPI, use it to create a socket, and then release it.
 
@@ -147,13 +146,7 @@ NTSTATUS
 }
 ```
 
-A WSK application can call [**WskCaptureProviderNPI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi) more than once. For each call to **WskCaptureProviderNPI** that returns successfully, there must be a corresponding call to [**WskReleaseProviderNPI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskreleaseprovidernpi). A WSK application must not make any further calls to the functions in [**WSK\_PROVIDER\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) after calling **WskReleaseProviderNPI**.
+A WSK application can call [**WskCaptureProviderNPI**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi) more than once. For each call to **WskCaptureProviderNPI** that returns successfully, there must be a corresponding call to [**WskReleaseProviderNPI**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskreleaseprovidernpi). A WSK application must not make any further calls to the functions in [**WSK\_PROVIDER\_DISPATCH**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) after calling **WskReleaseProviderNPI**.
 
  
-
- 
-
-
-
-
 

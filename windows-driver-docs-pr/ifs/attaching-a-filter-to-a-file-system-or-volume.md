@@ -1,7 +1,6 @@
 ---
 title: Attaching a Filter to a File System or Volume
 description: Attaching a Filter to a File System or Volume
-ms.assetid: 7c5059b3-cd9f-4a83-8f78-5a2fcc96b246
 keywords:
 - filter drivers WDK file system , attaching filters
 - file system filter drivers WDK , attaching filters
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 A file system filter driver attaches itself to one or more mounted volumes and filters all I/O operations on them. But how does it determine which volumes to attach itself to? The sample filter drivers in the Windows Driver Kit (WDK) illustrate the two most common ways in which this is done:
 
--   The end user can specify the volumes to filter by, for example, typing in the drive letters for the volumes. The end user's commands are relayed to the filter driver as a private [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-device-control) request.
+-   The end user can specify the volumes to filter by, for example, typing in the drive letters for the volumes. The end user's commands are relayed to the filter driver as a private [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) request.
 
--   The file system filter driver can attach to one or more file system drivers, listen for [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control), IRP\_MN\_MOUNT\_VOLUME requests, and attach to volumes as they are mounted.
+-   The file system filter driver can attach to one or more file system drivers, listen for [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](./irp-mj-file-system-control.md), IRP\_MN\_MOUNT\_VOLUME requests, and attach to volumes as they are mounted.
 
 **Note**   You should generally assume that the mapping of volumes to drive letters is one-to-many, not one-to-one. This is because of advanced storage features, such as dynamic volumes and volume mount points.
 
@@ -46,9 +45,4 @@ For more information, see the following topics:
 [Clearing the DO\_DEVICE\_INITIALIZING Flag](clearing-the-do-device-initializing-flag.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Submit a Multiple-locale device manifest package
 description: Submit a Multiple-locale device manifest package
-ms.assetid: b6748bff-d730-434e-9316-dc7b7222b727
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ You can use the same method to submit packages for preview or release.
 
 ### To submit a device manifest package
 
-1. Sign the devicemanifest-ms package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1. Sign the devicemanifest-ms package with the [SignTool](/windows/win32/seccrypto/signtool) tool.
 
 2. Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -73,9 +72,9 @@ GUID1.devicemanifest-ms
 
 Instructions on creating LocaleInfo.xml are below.
 
-To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
+To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85)).
 
-You can use the Cabarc tool to create these CAB packages. For more information about this tool, see [Cabarc overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can use the Cabarc tool to create these CAB packages. For more information about this tool, see [Cabarc overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)).
 
 When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must create a local directory in which the device metadata package (\*.devicemetadata-ms) and the LocaleInfo XML document are at the root of the directory.
 
@@ -85,7 +84,7 @@ When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must c
 
 * The GUID for each device manifest submission and device metadata package must be unique. When you create a new or revised package, you must create a new GUID.
 
-* For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=248844).
+* For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](/previous-versions/ms974336(v=msdn.10)).
 
 ### Example
 
@@ -100,12 +99,12 @@ The following is an example of how to use the Cabarc tool to create a .deviceman
 The GUID.devicemanifest-ms file was created in a local directory that is named ManifestFiles:
 
 ``` syntax
-Cabarc.exe -r -p -P  .\DeviceManifestPackages\ 
-N .\ManifestFiles\ GUID.devicemanifest-ms 
+Cabarc.exe -r -p -P  .\DeviceManifestPackages\
+N .\ManifestFiles\ GUID.devicemanifest-ms
 .\DeviceManifestPackages\LocaleInfo.xml
 .\DeviceManifestPackages\GUID.devicemetadata-ms
 ```
 
 ## Creating LocaleInfo.xml
 
-For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](create-the-localeinfoxml-submission-file.md).

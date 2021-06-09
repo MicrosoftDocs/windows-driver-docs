@@ -1,7 +1,6 @@
 ---
 title: Installing an Advanced Properties Page for a COM Port
 description: Installing an Advanced Properties Page for a COM Port
-ms.assetid: 056fd245-a9d2-4a10-9e92-fe75e51f6770
 keywords:
 - advanced COM port properties page WDK serial devices
 - COM ports WDK serial devices
@@ -20,14 +19,14 @@ The advanced property page displays a default user dialog box for setting FIFO c
 
 To install the system-supplied property page and default dialog box for a COM port, do the following:
 
-1. Implement a Microsoft Win32 property page provider. For general information about installing property sheet dialogs, see [Providing Device Property Pages](https://docs.microsoft.com/windows-hardware/drivers/install/providing-device-property-pages).
+1. Implement a Microsoft Win32 property page provider. For general information about installing property sheet dialogs, see [Providing Device Property Pages](../install/overview-of-device-property-pages.md).
 
-    In the property page provider, call the system-supplied [**SerialDisplayAdvancedSettings**](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-serialdisplayadvancedsettings) routine, which displays the system-supplied default dialog box.
+    In the property page provider, call the system-supplied [**SerialDisplayAdvancedSettings**](/windows/win32/api/msports/nf-msports-serialdisplayadvancedsettings) routine, which displays the system-supplied default dialog box.
 
-2. Install the property page provider by setting an **EnumPropPages32** value entry in an *add-registry-section* that is referenced by a device's [**DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section). See the description of the **EnumPropPages32** value entry in [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+2. Install the property page provider by setting an **EnumPropPages32** value entry in an *add-registry-section* that is referenced by a device's [**DDInstall section**](../install/inf-ddinstall-section.md). See the description of the **EnumPropPages32** value entry in [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 To override the default dialog box displayed by **SerialDisplayAdvancedSettings**, do the following:
 
-1. Implement a custom dialog *DLL*. The entry point for the dialog is a [**PPORT\_ADVANCED\_DIALOG**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546956(v=vs.85))-typed routine.
+1. Implement a custom dialog *DLL*. The entry point for the dialog is a [**PPORT\_ADVANCED\_DIALOG**](/previous-versions/windows/hardware/drivers/ff546956(v=vs.85))-typed routine.
 
-2. Install the custom dialog DLL by setting an **EnumAdvancedDialog** entry value in an *add-registry-section* that is referenced by a device's [**DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section). The type and format of the value entry is the same as that used for a **EnumPropPages32** value entry.
+2. Install the custom dialog DLL by setting an **EnumAdvancedDialog** entry value in an *add-registry-section* that is referenced by a device's [**DDInstall section**](../install/inf-ddinstall-section.md). The type and format of the value entry is the same as that used for a **EnumPropPages32** value entry.

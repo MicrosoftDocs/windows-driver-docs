@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_PREFERRED_MIDIOUT_DEVICE
 description: KSCATEGORY_PREFERRED_MIDIOUT_DEVICE
-ms.assetid: b3d93d21-d4f8-4f00-9947-034790f3f7b1
 keywords: ["KSCATEGORY_PREFERRED_MIDIOUT_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_PREFERRED_MIDIOUT_DEVICE
 
 
-The KSCATEGORY_PREFERRED_MIDIOUT_DEVICE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for the preferred MIDI output device.
+The KSCATEGORY_PREFERRED_MIDIOUT_DEVICE [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for the preferred MIDI output device.
 
 <table>
 <colgroup>
@@ -45,15 +44,13 @@ The KSCATEGORY_PREFERRED_MIDIOUT_DEVICE [device interface class](https://docs.mi
 
  
 
-Remarks
--------
+## Remarks
 
 A user selects the preferred MIDI output device in the Multimedia property pages in the Control Panel.
 
-This functional category is reserved for exclusive use by the system-supplied [WDM Audio Components](https://docs.microsoft.com/windows-hardware/drivers/audio/wdm-audio-components).
+This functional category is reserved for exclusive use by the system-supplied [WDM Audio Components](../audio/wdm-audio-components.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -73,10 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

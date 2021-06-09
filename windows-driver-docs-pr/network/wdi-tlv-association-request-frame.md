@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_REQUEST_FRAME
 description: WDI_TLV_ASSOCIATION_REQUEST_FRAME is a TLV that contains the association request that was used for the association.
-ms.assetid: C2323DFE-2B13-4E35-BF9B-4A0B5F3B2076
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_FRAME Network Drivers Starting with Windows Vista
@@ -32,8 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

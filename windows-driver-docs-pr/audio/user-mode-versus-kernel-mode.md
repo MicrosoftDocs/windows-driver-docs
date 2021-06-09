@@ -1,7 +1,6 @@
 ---
 title: User Mode Versus Kernel Mode
 description: User Mode Versus Kernel Mode
-ms.assetid: ee506167-6b64-4e50-9988-102416bcb056
 keywords:
 - software synthesizers WDK audio
 - custom synths WDK audio
@@ -24,7 +23,7 @@ ms.localizationpriority: medium
 
 A custom synth can be written to run in either user mode or kernel mode. In general, software synths are easier to implement in user mode, but they frequently can achieve lower latency in kernel mode. Hardware components can be supported only in kernel mode. Good reasons exist, however, for beginning development in user mode even if the final implementation is to run in kernel mode.
 
-Building software synthesizers (and wave sinks) is much simpler in user mode. The user-mode interfaces are easy to use, and debugging is simplified. Another benefit is that the resulting component is a Microsoft Windows executable file. Because this executable file is a COM object, installing it is simply a matter of self-registering from the command line with regsvr32.exe. (The RegSvr32 system application calls your DLL's [**DllRegisterServer**](https://docs.microsoft.com/windows/desktop/api/olectl/nf-olectl-dllregisterserver) function. For more information, see the Microsoft Windows SDK documentation.)
+Building software synthesizers (and wave sinks) is much simpler in user mode. The user-mode interfaces are easy to use, and debugging is simplified. Another benefit is that the resulting component is a Microsoft Windows executable file. Because this executable file is a COM object, installing it is simply a matter of self-registering from the command line with regsvr32.exe. (The RegSvr32 system application calls your DLL's [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) function. For more information, see the Microsoft Windows SDK documentation.)
 
 If a user-mode implementation is all you need, you can deliver your product with an application program instead of a driver. The user avoids a complicated driver-installation process, and no reboot is needed after installing. Your user-mode component can then be enumerated as one of the available ports, depending on whether you want other applications to be able to use it. For more information, see [Registering Your Synthesizer](registering-your-synthesizer.md).
 
@@ -43,9 +42,4 @@ To summarize the recommendations above:
 -   For hardware components, first implement a software version in user mode (in order to work out the design issues with easy interfaces, debugging, installation, and removal), then convert it to a kernel-mode software version. Finally, connect the kernel-mode component to hardware, one feature at a time, until everything works as desired.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Specify mobile telephone numbers
 description: Specify mobile telephone numbers
-ms.assetid: 3b7037c5-4ad6-4285-a9dd-05955621d149
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -45,7 +44,7 @@ SMS short codes that have short phone numbers that are four to six digits long a
 ## <span id="related_topics"></span>Related topics
 
 
-[Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+[Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
 
  
 

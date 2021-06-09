@@ -1,7 +1,6 @@
 ---
 title: Printer Features
 description: Printer Features
-ms.assetid: eabbb833-2c0a-4a55-bfa4-a3dc0619c22c
 keywords:
 - Unidrv, printer features
 - GPD files WDK Unidrv , printer features

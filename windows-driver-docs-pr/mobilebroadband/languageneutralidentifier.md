@@ -1,14 +1,13 @@
 ---
 title: LanguageNeutralIdentifier
 description: LanguageNeutralIdentifier
-ms.assetid: 38713565-464c-4b12-9076-331ae43e01e8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # LanguageNeutralIdentifier
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The LanguageNeutralIdentifier element specifies a GUID, which identifies the service metadata package independent of its locale. The LanguageNeutralIdentifier element lets the same GUID be used to identify one or more localized versions of a service metadata package for the same service.
 

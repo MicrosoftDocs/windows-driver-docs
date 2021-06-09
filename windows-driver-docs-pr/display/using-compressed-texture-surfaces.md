@@ -1,7 +1,6 @@
 ---
 title: Using Compressed Texture Surfaces
 description: Using Compressed Texture Surfaces
-ms.assetid: efa7efff-a1ad-49f3-b6e8-f08b520e77ae
 keywords:
 - drawing compressed textures WDK DirectDraw , about compressed texture surfaces
 - DirectDraw compressed textures WDK Windows 2000 display , about compressed texture surfaces
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_using_compressed_texture_surfaces_gg"></span><span id="DDK_USING_COMPRESSED_TEXTURE_SURFACES_GG"></span>
 
 
-DirectDraw only calls the driver to do a blt between two surfaces of the same DXT type if the DDCAPS2\_COPYFOURCC flag is set in the **dwCaps2** member of the [**DDCORECAPS**](https://docs.microsoft.com/windows/desktop/api/ddrawi/ns-ddrawi-_ddcorecaps) structure. If this flag is not set, the DirectDraw HEL performs the blt. This is important for backing surface-to-display copy blts, because this is the mechanism whereby textures are downloaded from backing (system memory) surfaces to display memory. Thus, exposing DXT texture surfaces effectively requires your driver to support the DDCAPS2\_COPYFOURCC flag.
+DirectDraw only calls the driver to do a blt between two surfaces of the same DXT type if the DDCAPS2\_COPYFOURCC flag is set in the **dwCaps2** member of the [**DDCORECAPS**](/windows/win32/api/ddrawi/ns-ddrawi-ddcorecaps) structure. If this flag is not set, the DirectDraw HEL performs the blt. This is important for backing surface-to-display copy blts, because this is the mechanism whereby textures are downloaded from backing (system memory) surfaces to display memory. Thus, exposing DXT texture surfaces effectively requires your driver to support the DDCAPS2\_COPYFOURCC flag.
 
 The DDCAPS2\_COPYFOURCC flag has some additional implications. Your driver must be able to execute a blt between FOURCC formats having at least these attributes:
 
@@ -46,7 +45,7 @@ If a blt operation requires compression to a DXT format, the DirectDraw HEL alwa
 
 The semantics of the DirectDraw DDCAPS\_CANBLTSYSMEM capability bit imply that the display driver is called for all blts from system memory to display memory. Consequently, the driver may be called for such blts from DXT surfaces to non-DXT surfaces. The only requirement in this case is that the driver return DDHAL\_DRIVER\_NOTHANDLED if it cannot perform the decompression. This causes DirectDraw to propagate a DDERR\_UNSUPPORTED error code to the application. It is acceptable to implement decompression for blts from system memory to display memory in your driver, but this is not required for DirectX 6.0 and later versions.
 
-DirectDraw display memory allocation routines do not handle pixel format considerations. [**HeapVidMemAllocAligned**](https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned), for example, expects a count of bytes as its input parameter. Likewise, DDHAL\_PLEASEALLOC\_BLOCKSIZE (see the **fpVidMem** member of the [**DD\_SURFACE\_GLOBAL**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_surface_global) structure) signifies that the **dwBlockSizeX** and **dwBlockSizeY** members of the DD\_SURFACE\_GLOBAL structure are counts of bytes and lines, respectively. Consequently, if your driver uses either of these mechanisms to allocate display memory through DirectDraw allocators, your driver must be able to calculate the memory consumption, in bytes, of a DXT surface by itself. The following sample shows one way to perform this calculation:
+DirectDraw display memory allocation routines do not handle pixel format considerations. [**HeapVidMemAllocAligned**](/windows/win32/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned), for example, expects a count of bytes as its input parameter. Likewise, DDHAL\_PLEASEALLOC\_BLOCKSIZE (see the **fpVidMem** member of the [**DD\_SURFACE\_GLOBAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_global) structure) signifies that the **dwBlockSizeX** and **dwBlockSizeY** members of the DD\_SURFACE\_GLOBAL structure are counts of bytes and lines, respectively. Consequently, if your driver uses either of these mechanisms to allocate display memory through DirectDraw allocators, your driver must be able to calculate the memory consumption, in bytes, of a DXT surface by itself. The following sample shows one way to perform this calculation:
 
 ```cpp
 DWORD dx, dy;
@@ -82,7 +81,7 @@ dy = (nHeight + 3) >> 2;
 surfsize = dx * dy * blksize;
 ```
 
-When the application calls the **IDirect3DVertexBuffer7::Lock** or **IDirectDrawSurface7::GetSurfaceDesc** methods (described in the Direct3D and DirectDraw SDK documentation sets, respectively) on a compressed surface, the driver must set the DDSD\_LINEARSIZE flag in the **dwFlags** member of the [**DDSURFACEDESC2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550340(v=vs.85)) structure. In addition, the driver must set the number of bytes allocated to contain the compressed surface data in the **dwLinearSize** member of the same structure. (The **dwLinearSize** member resides in a union with the **lPitch** member, so these members are mutually exclusive, as are the DDSD\_LINEARSIZE and DDSD\_PITCH flags.)
+When the application calls the **IDirect3DVertexBuffer7::Lock** or **IDirectDrawSurface7::GetSurfaceDesc** methods (described in the Direct3D and DirectDraw SDK documentation sets, respectively) on a compressed surface, the driver must set the DDSD\_LINEARSIZE flag in the **dwFlags** member of the [**DDSURFACEDESC2**](/previous-versions/windows/hardware/drivers/ff550340(v=vs.85)) structure. In addition, the driver must set the number of bytes allocated to contain the compressed surface data in the **dwLinearSize** member of the same structure. (The **dwLinearSize** member resides in a union with the **lPitch** member, so these members are mutually exclusive, as are the DDSD\_LINEARSIZE and DDSD\_PITCH flags.)
 
 Your hardware or driver can convert and store the compressed texture in any format you choose (typically a reordering into a more hardware-efficient layout). However, your hardware or driver must be able to convert the compressed texture back to its original DXT code format whenever DirectDraw requires it, that is, whenever the application calls the **IDirect3DVertexBuffer7::Lock** method.
 
@@ -96,7 +95,7 @@ wHeight         = dy;
 dwRGBBitCount   = 8;
 ```
 
-When the driver encounters a system memory DXT surface, for example in [**D3dCreateSurfaceEx**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex), it must map the fields back before making use of them. The back mapping is:
+When the driver encounters a system memory DXT surface, for example in [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex), it must map the fields back before making use of them. The back mapping is:
 
 ```cpp
 realWidth        = (wWidth  << 2) / blksize;
@@ -121,10 +120,4 @@ The following three items should be observed when implementing reference rasteri
 3.  Because hardware implementations of reference rasterizers can perform the rounding of calculations to better approximate the original value in slightly different ways, testing should allow for slight variations in the color and alpha values obtained from the decompression logic.
 
  
-
- 
-
-
-
-
 

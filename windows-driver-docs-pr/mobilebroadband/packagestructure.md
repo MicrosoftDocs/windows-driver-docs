@@ -1,14 +1,13 @@
 ---
 title: PackageStructure
 description: PackageStructure
-ms.assetid: 44be9d7d-79b0-49b6-b427-e729efadb88c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # PackageStructure
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The PackageStructure element specifies the XML schemas that are referenced by the service metadata package. Each XML schema is specified through the [Metadata](metadata-service-schema.md) element.
 

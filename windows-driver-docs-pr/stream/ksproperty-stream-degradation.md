@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_DEGRADATION
 description: The KSPROPERTY\_STREAM\_DEGRADATION property is an optional property that should be implemented if the pin allows degradation strategies.
-ms.assetid: b8f9db81-a9ed-4a13-8d64-14854193c91b
 keywords: ["KSPROPERTY_STREAM_DEGRADATION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,25 +46,23 @@ The KSPROPERTY\_STREAM\_DEGRADATION property is an optional property that should
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a>, <a href="https://docs.microsoft.com/previous-versions/ff561671(v=vs.85)" data-raw-source="[&lt;strong&gt;KSDEGRADE&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561671(v=vs.85))"><strong>KSDEGRADE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a>, <a href="/previous-versions/ff561671(v=vs.85)" data-raw-source="[&lt;strong&gt;KSDEGRADE&lt;/strong&gt;](/previous-versions/ff561671(v=vs.85))"><strong>KSDEGRADE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Remarks
--------
+## Remarks
 
-When queried, the property returns the size and count of the structures to be returned in [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) format, followed by [**KSDEGRADE**](https://docs.microsoft.com/previous-versions/ff561671(v=vs.85)) structures.
+When queried, the property returns the size and count of the structures to be returned in [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) format, followed by [**KSDEGRADE**](/previous-versions/ff561671(v=vs.85)) structures.
 
 On a query, this property returns the size and count of the structures to be returned in KSMULTIPLE\_ITEM format, followed by KSDEGRADE structures. The multiple item format must be used on both querying and setting degradation strategies.
 
-A client can query this property to retrieve the current degradation settings or it can set this property to change the current degradation settings. The degradation settings are used to modify the usage of resources by a filter pin in response to a quality management (QM) complaint, or to adjust quality back to some higher level. This is typically used by a quality manager to adjust degradation settings, and query the type of setting that can be adjusted and their current values. It may pass multiple KSDEGRADE structures when setting values. For more information about quality managers, see [Quality Management](https://docs.microsoft.com/windows-hardware/drivers/stream/quality-management).
+A client can query this property to retrieve the current degradation settings or it can set this property to change the current degradation settings. The degradation settings are used to modify the usage of resources by a filter pin in response to a quality management (QM) complaint, or to adjust quality back to some higher level. This is typically used by a quality manager to adjust degradation settings, and query the type of setting that can be adjusted and their current values. It may pass multiple KSDEGRADE structures when setting values. For more information about quality managers, see [Quality Management](./quality-management.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -83,18 +80,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
-[**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
+[**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
-[**KSDEGRADE**](https://docs.microsoft.com/previous-versions/ff561671(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[**KSDEGRADE**](/previous-versions/ff561671(v=vs.85))
 

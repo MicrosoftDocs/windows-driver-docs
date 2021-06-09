@@ -1,7 +1,6 @@
 ---
 title: RxDbgBreakPoint function
 description: RxDbgBreakPoint breaks into the kernel debugger if one is installed.
-ms.assetid: 981256a4-2faf-4f9e-acfc-7488230bb62e
 keywords: ["RxDbgBreakPoint function Installable File System Drivers"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 **RxDbgBreakPoint** breaks into the kernel debugger if one is installed.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID RxDbgBreakPoint(
@@ -29,28 +27,24 @@ VOID RxDbgBreakPoint(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *LineNumber*   
 The line number in the source file where **RxDbgBreakPoint** was called.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This routine calls the kernel **DbgBreakPoint** routine.
 
 This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise it is handled by the debug system. If no debugger is connected to the system, the exception can be handled in the standard way.
 
-In kernel mode, a break exception that is not handled will cause a blue screen (bug check) to result. You can, however, connect a kernel-mode debugger to the target computer that has kernel debugging enabled. For more information, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+In kernel mode, a break exception that is not handled will cause a blue screen (bug check) to result. You can, however, connect a kernel-mode debugger to the target computer that has kernel debugging enabled. For more information, see [Windows Debugging](../debugger/index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -78,14 +72,7 @@ Requirements
 
 [**RxAssert**](rxassert.md)
 
-[Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index)
+[Windows Debugging](../debugger/index.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfobject
 description: The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships.
-ms.assetid: cb9398fb-24f5-4692-9a08-543bf1317b19
 keywords: ["wudfext.wudfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -68,8 +67,7 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use **!wudfext.wudfobject** to list, for example, the child objects of an **IWDFDevice** object, which generally include the device's queues.
 

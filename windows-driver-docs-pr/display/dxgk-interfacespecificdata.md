@@ -1,7 +1,6 @@
 ---
 title: DXGK\_INTERFACESPECIFICDATA structure
 description: The DXGK\_INTERFACESPECIFICDATA structure is reserved for system use. Do not use it in your driver.
-ms.assetid: dc9ad39c-4439-4e01-9825-fc1df3c3adc0
 keywords: ["DXGK_INTERFACESPECIFICDATA structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The DXGK\_INTERFACESPECIFICDATA structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_INTERFACESPECIFICDATA {
@@ -36,8 +34,7 @@ typedef struct _DXGK_INTERFACESPECIFICDATA {
 } DXGK_INTERFACESPECIFICDATA;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 Reserved for system use.
@@ -63,8 +60,7 @@ Reserved for system use.
 **pfnGetCaptureAddressCb**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

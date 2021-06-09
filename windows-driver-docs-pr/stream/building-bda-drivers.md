@@ -1,7 +1,6 @@
 ---
 title: Building BDA Drivers
 description: Building BDA Drivers
-ms.assetid: 2272fa18-5102-443e-8728-f256444ab044
 keywords:
 - Broadcast Driver Architecture WDK AVStream , building drivers
 - BDA WDK AVStream , building drivers
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-**Note**  Beginning with Windows 8, the WDK build environment no longer uses Build.exe. See [WDK and Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment). The following discussion applies only if you build your driver using the WDK Windows 7 version or earlier.
+**Note**  Beginning with Windows 8, the WDK build environment no longer uses Build.exe. See [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md). The following discussion applies only if you build your driver using the WDK Windows 7 version or earlier.
 
  
 

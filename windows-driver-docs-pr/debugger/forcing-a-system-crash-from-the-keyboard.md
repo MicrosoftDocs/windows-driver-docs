@@ -1,7 +1,6 @@
 ---
 title: Forcing a System Crash from the Keyboard
 description: Forcing a System Crash from the Keyboard
-ms.assetid: 0c3ec6f3-d233-46e4-b599-1a0f89318ed2
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
 ms.date: 07/01/2019
 ms.localizationpriority: medium
@@ -45,7 +44,7 @@ The system then calls **KeBugCheck** and issues [**bug check 0xE2**](bug-check-0
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
-For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](https://go.microsoft.com/fwlink/p/?linkid=106065).
+For more information on using this feature, refer to the article [Windows feature lets you generate a memory dump file by using the keyboard](https://support.microsoft.com/help/244139/windows-feature-lets-you-generate-a-memory-dump-file-by-using-the-keyb).
 
 ### <span id="defining_alternate_keyboard_shortcuts_to_force_a_system_crash_from_the"></span><span id="DEFINING_ALTERNATE_KEYBOARD_SHORTCUTS_TO_FORCE_A_SYSTEM_CRASH_FROM_THE"></span>Defining Alternate Keyboard Shortcuts to Force a System Crash from the Keyboard
 

@@ -1,13 +1,11 @@
 ---
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
-ms.assetid: 6a977a69-397d-4922-890d-1810dd54dff4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Developing apps using multiple PDP contexts
-
 
 A Packet Data Protocol (PDP) context offers a packet data connection over which a device and the mobile network can exchange IP packets. As per 3GPP standards, a device can have more than one PDP context activated at a time. In Windows 8.1 and Windows 10, multiple PDP contexts are supported and enables apps to communicate over special PDP contexts to the mobile networks along with the internet PDP context that was supported in Windows 8. You can use this feature to create differentiated experiences and innovative services on Windows. You can also partner with app developers to develop great quality VOIP and video streaming experiences for their customers.
 
@@ -17,66 +15,62 @@ Here’s a figure that shows how multiple PDP context works in Windows 8.1 and 
 
 Use the following sections in this topic to learn more about multiple PDP contexts:
 
--   [Key scenarios](#key-scenarios)
+- [Key scenarios](#key-scenarios)
 
--   [Mobile broadband apps](#mobile-broadband-apps)
+- [Mobile broadband apps](#mobile-broadband-apps)
 
--   [Mobile broadband devices](#mobile-broadband-devices)
+- [Mobile broadband devices](#mobile-broadband-devices)
 
 ## Key scenarios
 
-
 You can use multiple PDP contexts to enable premium services.
 
--   **Differentiated Billing** – You can vary the data or billing restrictions by using multiple PDP contexts. For example, Contoso is a mobile operator that developed a data backup app for their customers. As a mobile operator, Contoso could create multiple PDP contexts and let premium subscribers use the app for free. All other subscribers are charged separately to use it.
+- **Differentiated Billing** – You can vary the data or billing restrictions by using multiple PDP contexts. For example, Contoso is a mobile operator that developed a data backup app for their customers. As a mobile operator, Contoso could create multiple PDP contexts and let premium subscribers use the app for free. All other subscribers are charged separately to use it.
 
--   **Rich Communication Services** – A global initiative created by the GSM Association to provide rich communication services, such as an enhanced phonebook, enhanced messaging, and enriched calling. Rich Communication Services provide interoperability across mobile operators and offers new ways to use existing assets and capabilities to deliver high quality and innovative communication services.
+- **Rich Communication Services** – A global initiative created by the GSM Association to provide rich communication services, such as an enhanced phonebook, enhanced messaging, and enriched calling. Rich Communication Services provide interoperability across mobile operators and offers new ways to use existing assets and capabilities to deliver high quality and innovative communication services.
 
--   **Sponsored Connectivity** – This allows users to a specific type of content without it going against their monthly data usage. The content provider makes an arrangement to reimburse the mobile operator by paying them directly, doing a revenue-sharing deal, or some other business arrangement.
+- **Sponsored Connectivity** – This allows users to a specific type of content without it going against their monthly data usage. The content provider makes an arrangement to reimburse the mobile operator by paying them directly, doing a revenue-sharing deal, or some other business arrangement.
 
--   **Personal Hotspot** – Some mobile operators charge different rates when the connection is being used as a personal hotspot. You can use multiple PDP contexts to differentiate between the two.
+- **Personal Hotspot** – Some mobile operators charge different rates when the connection is being used as a personal hotspot. You can use multiple PDP contexts to differentiate between the two.
 
 ## Mobile broadband apps
 
-
 UWP mobile broadband apps can take advantage of multiple PDP contexts to activate a special PDP context and specify rules to route data traffic. These apps can create rules for specific destinations or for all data traffic.
 
-When the mobile broadband app needs to exchange data with the network, it checks the available and connected networks. If the mobile broadband app has a special rule for any of these networks, it uses the Connection Manager API to open a special PDP context. If this connection is successful, the PDP context provides routing rules for this connection and transfers the data using networking APIs. The mobile broadband app should repeat this if it receives the [**NetworkStatusChanged**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to see whether any connections have changed and whether it needs to open a PDP context for the new connection.
+When the mobile broadband app needs to exchange data with the network, it checks the available and connected networks. If the mobile broadband app has a special rule for any of these networks, it uses the Connection Manager API to open a special PDP context. If this connection is successful, the PDP context provides routing rules for this connection and transfers the data using networking APIs. The mobile broadband app should repeat this if it receives the [**NetworkStatusChanged**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to see whether any connections have changed and whether it needs to open a PDP context for the new connection.
 
 ![figure 2](images/mb-pdp-fig2.jpg)
 
-### <span id="Networking_APIs"></span><span id="networking_apis"></span><span id="NETWORKING_APIS"></span>Networking APIs
+### Networking APIs
 
 For sending data by using a special PDP context, the Microsoft Store app must use different logic based on networking APIs that it uses for transferring data.
 
-### <span id="HTTP-based_APIs"></span><span id="http-based_apis"></span><span id="HTTP-BASED_APIS"></span>HTTP-based APIs
+### HTTP-based APIs
 
-HTTP-based APIs, such as [**XMLHTTPRequest**](https://docs.microsoft.com/previous-versions/windows/apps/br229787(v=win.10)), [IXHR2](https://docs.microsoft.com/previous-versions/windows/desktop/ixhr2/ixmlhttprequest2-portal), [**Windows.Web.Syndication**](https://docs.microsoft.com/uwp/api/Windows.Web.Syndication), and [**Windows.Web.AtomPub**](https://docs.microsoft.com/uwp/api/Windows.Web.AtomPub), and APIs based on the Windows HTTP protocol, such as JQuery and [**Windows.Web.Http**](https://docs.microsoft.com/uwp/api/Windows.Web.Http), do not have the ability to bind to a specific interface. For these APIs, Windows handles the routing of data to a special PDP context by using policies. Once the special PDP context is activated, the app can specify routing rules based on destination and special PDP context. The destination can be domain name or IP address, such as video.fabrikam.com, .contoso.com, or 123.23.34.333. After specifying the routing rules, if the app uses any of the above HTTP APIs to transfer the data, Windows will send the data to the special PDP context based on routing rules. Once the app has finished transferring data, it should disconnect the special PDP context and remove the route policy.
+HTTP-based APIs, such as [**XMLHTTPRequest**](/previous-versions/windows/apps/br229787(v=win.10)), [IXHR2](/previous-versions/windows/desktop/ixhr2/ixmlhttprequest2-portal), [**Windows.Web.Syndication**](/uwp/api/Windows.Web.Syndication), and [**Windows.Web.AtomPub**](/uwp/api/Windows.Web.AtomPub), and APIs based on the Windows HTTP protocol, such as JQuery and [**Windows.Web.Http**](/uwp/api/Windows.Web.Http), do not have the ability to bind to a specific interface. For these APIs, Windows handles the routing of data to a special PDP context by using policies. Once the special PDP context is activated, the app can specify routing rules based on destination and special PDP context. The destination can be domain name or IP address, such as video.fabrikam.com, .contoso.com, or 123.23.34.333. After specifying the routing rules, if the app uses any of the above HTTP APIs to transfer the data, Windows will send the data to the special PDP context based on routing rules. Once the app has finished transferring data, it should disconnect the special PDP context and remove the route policy.
 
-**Note**  
-[**Background Transfer APIs**](https://docs.microsoft.com/uwp/api/Windows.Networking.BackgroundTransfer) and [HTTP Client(C#) APIs](https://docs.microsoft.com/previous-versions/visualstudio/hh193681(v=vs.118)) cannot use a route policy.
-
- 
+>[!NOTE]
+>[**Background Transfer APIs**](/uwp/api/Windows.Networking.BackgroundTransfer) and [HTTP Client(C#) APIs](/previous-versions/visualstudio/hh193681(v=vs.118)) cannot use a route policy.
 
 ![figure 3](images/mb-pdp-fig4.jpg)
 
-### <span id="Socket-based_APIs"></span><span id="socket-based_apis"></span><span id="SOCKET-BASED_APIS"></span>Socket-based APIs
+### Socket-based APIs
 
-Socket-based APIs available in the [**Windows.Networking.Sockets**](https://docs.microsoft.com/uwp/api/Windows.Networking.Sockets) namespace, such as TCP, UDP, and stream sockets, provide a mechanism to bind to a specific interface. When an app uses the socket APIs, it should bind to specific interface for routing data to the special PDP context. Once the special PDP context is activated, the [**AcquireConnectionAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) API provides the interface information to the app. It can use this information to bind to a specific interface and start transferring the data.
+Socket-based APIs available in the [**Windows.Networking.Sockets**](/uwp/api/Windows.Networking.Sockets) namespace, such as TCP, UDP, and stream sockets, provide a mechanism to bind to a specific interface. When an app uses the socket APIs, it should bind to specific interface for routing data to the special PDP context. Once the special PDP context is activated, the [**AcquireConnectionAsync**](/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) API provides the interface information to the app. It can use this information to bind to a specific interface and start transferring the data.
 
 ![figure 4](images/mb-pdp-fig3.jpg)
 
-### <span id="Multiple_PDP_content_API_info"></span><span id="multiple_pdp_content_api_info"></span><span id="MULTIPLE_PDP_CONTENT_API_INFO"></span>Multiple PDP content API info
+### Multiple PDP content API info
 
 Windows 8.1 and Windows 10 have added the following APIs to support multiple PDP contexts:
 
--   [**CellularApnContext**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.CellularApnContext) This class contains properties used to specify an access point on a network. An **CellularApnContext** object is passed with an [**AcquireConnectionAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) call to establish a connection to a specific access point.
+- [**CellularApnContext**](/uwp/api/Windows.Networking.Connectivity.CellularApnContext) This class contains properties used to specify an access point on a network. An **CellularApnContext** object is passed with an [**AcquireConnectionAsync**](/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) call to establish a connection to a specific access point.
 
--   [**ConnectivityManager::AcquireConnectionAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) This API activates a new connection for a specified Access Point Name (APN) or PDP context. This asynchronous method allows an app to request a connection to a specific APN or PDP context with the appropriate configuration information. After the special APN is activated, it appears as a new virtual interface to Windows and apps.
+- [**ConnectivityManager::AcquireConnectionAsync**](/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) This API activates a new connection for a specified Access Point Name (APN) or PDP context. This asynchronous method allows an app to request a connection to a specific APN or PDP context with the appropriate configuration information. After the special APN is activated, it appears as a new virtual interface to Windows and apps.
 
--   [**ConnectivityManager::AddHttpRoutePolicy**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AddHttpRoutePolicy_Windows_Networking_Connectivity_RoutePolicy_) This method adds a policy to be used by the HTTP stack traffic for routing data to a special PDP context. The app can specify the policy based on destinations, such as domain name and IP address, and special PDP context profile. The Windows HTTP stack uses the policy for routing the data to the special PDP context once the app has created the policy.
+- [**ConnectivityManager::AddHttpRoutePolicy**](/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AddHttpRoutePolicy_Windows_Networking_Connectivity_RoutePolicy_) This method adds a policy to be used by the HTTP stack traffic for routing data to a special PDP context. The app can specify the policy based on destinations, such as domain name and IP address, and special PDP context profile. The Windows HTTP stack uses the policy for routing the data to the special PDP context once the app has created the policy.
 
--   [**ConnectivityManager::RemoveHttpRoutePolicy**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_RemoveHttpRoutePolicy_Windows_Networking_Connectivity_RoutePolicy_) This method removes a previously added HTTP route policy.
+- [**ConnectivityManager::RemoveHttpRoutePolicy**](/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_RemoveHttpRoutePolicy_Windows_Networking_Connectivity_RoutePolicy_) This method removes a previously added HTTP route policy.
 
 The following code shows how to use these APIs for an HTTP-based data transfer:
 
@@ -85,11 +79,11 @@ var connectivity = Windows.Networking.Connectivity;
 var currentRoutePolicy = null;
 var currentConnectionSession = null;
 
-//  Create PDP context/APN data 
+//  Create PDP context/APN data
 var apnContext                      =   new connectivity.CellularApnContext();
 apnContext.accessName               =   "myAPN.com";
 apnContext.userName                 =   "APNusername"
-apnContext.password                 =   "APNPassword";
+apnContext.password                 =   "[PLACEHOLDER]";
 apnContext.isCompressionEnabled     =   false;
 apnContext.authenticationType       =   connectivity.CellularApnAuthenticationType.none;
 
@@ -130,14 +124,14 @@ var connectivity = Windows.Networking.Connectivity;
 var currentRoutePolicy = null;
 var currentConnectionSession = null;
 
-// Create PDP Context/APN Data 
+// Create PDP Context/APN Data
 var apnContext = new connectivity.CellularApnContext();
 
-// Create PDP context/APN data 
+// Create PDP context/APN data
 var apnContext = new connectivity.CellularApnContext();
 apnContext.accessName = "myAPN.com";
 apnContext.userName = "APNusername"
-apnContext.password = "APNPassword";
+apnContext.password = "[PLACEHOLDER]";
 apnContext.isCompressionEnabled = false;
 apnContext.authenticationType = connectivity.CellularApnAuthenticationType.none;
 
@@ -170,9 +164,9 @@ socket.close();
 currentConnectionSession.close();
 ```
 
-Your app must handle [**NetworkStatusChanged**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to handle any network transitions on the special PDP context connection.
+Your app must handle [**NetworkStatusChanged**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to handle any network transitions on the special PDP context connection.
 
-### <span id="Scenario__Premium_mobile_broadband_app_provides_free_data_access_using_special_APN"></span><span id="scenario__premium_mobile_broadband_app_provides_free_data_access_using_special_apn"></span><span id="SCENARIO__PREMIUM_MOBILE_BROADBAND_APP_PROVIDES_FREE_DATA_ACCESS_USING_SPECIAL_APN"></span>Scenario: Premium mobile broadband app provides free data access using special APN
+### Scenario: Premium mobile broadband app provides free data access using special APN
 
 In this scenario, the mobile broadband app provides free data access using a special PDP context. The app either uses a connected network, such as a Wi-Fi network, if it is free or it uses a special APN if connected to a specific operator network. The following sample code illustrates how an app can use the multiple PDP context APIs for transferring data on a special PDP context if no free networks are connected.
 
@@ -200,8 +194,8 @@ function onNetworkStatusChange()
 
 // On network status change:
 //  if there is no connectionPolicy, evaluate a new one
-//  if there is a current connectionPolicy ==> verify it is still valid 
-//      evaluate a new one if the current connectionPolicy is not valid 
+//  if there is a current connectionPolicy ==> verify it is still valid
+//      evaluate a new one if the current connectionPolicy is not valid
 function handleNetworkChange()
 {
   if (isCurrentPolicyStillValid())
@@ -281,7 +275,7 @@ function onFailure()
   var apnContext                      =   new connectivity.CellularApnContext();
   apnContext.accessPointName          =   "myAPN.com";
   apnContext.userName                 =   "APNusername"
-  apnContext.password                 =   "APNPassword";
+  apnContext.password                 =   "[PLACEHOLDER]";
   apnContext.isCompressionEnabled     =   false;
   apnContext.authenticationType       =   connectivity.CellularApnAuthenticationType.none;
 
@@ -332,7 +326,7 @@ function onShutdown()
 }
 ```
 
-### <span id="Scenario__Mobile_broadband_app_requires_special_PDP_Context_for_subscription_purchase_and_provisioning"></span><span id="scenario__mobile_broadband_app_requires_special_pdp_context_for_subscription_purchase_and_provisioning"></span><span id="SCENARIO__MOBILE_BROADBAND_APP_REQUIRES_SPECIAL_PDP_CONTEXT_FOR_SUBSCRIPTION_PURCHASE_AND_PROVISIONING"></span>Scenario: Mobile broadband app requires special PDP Context for subscription purchase and provisioning
+### Scenario: Mobile broadband app requires special PDP Context for subscription purchase and provisioning
 
 In this scenario, the mobile broadband app requires a special PDP context for subscription purchase and provisioning. This app will activate a special PDP context regardless of the connected network.
 
@@ -354,12 +348,12 @@ function onNetworkStatusChange()
   HandleNetworkChange();
 }
 
-//  Create the PDP Context/APN Data 
+//  Create the PDP Context/APN Data
 var apnContext                      =   new connectivity.CellularApnContext();
 apnContext.providerId               =   "23545";
 apnContext.accessPointName          =   "myAPN.com";
 apnContext.userName                 =   "APNusername"
-apnContext.password                 =   "";
+apnContext.password                 =   "[PLACEHOLDER]";
 apnContext.isCompressionEnabled     =  false;
 apnContext.authenticationType       =   connectivity.CellularApnAuthenticationType.none;
 
@@ -391,7 +385,7 @@ function onConnectionSucceeded(result)
 
 function handleNetworkChange()
 {
-  // App behavior to handle network 
+  // App behavior to handle network
   var currentProfile = currentRoutePolicy.connectionProfile();
   if (NetworkConnectivityLevel.none != currentProfile.GetNetworkConnectivityLevel())
   {
@@ -400,11 +394,11 @@ function handleNetworkChange()
 }
 ```
 
-### <span id="Considerations_for_mobile_broadband_apps"></span><span id="considerations_for_mobile_broadband_apps"></span><span id="CONSIDERATIONS_FOR_MOBILE_BROADBAND_APPS"></span>Considerations for mobile broadband apps
+### Considerations for mobile broadband apps
 
 Mobile broadband apps can get local data usage information for each PDP context and influence Windows with policies for special PDP contexts.
 
-### <span id="Local_data_usage"></span><span id="local_data_usage"></span><span id="LOCAL_DATA_USAGE"></span>Local data usage
+### Local data usage
 
 In Windows 8, you provide an ongoing subscription-based relationship with users through your mobile broadband app which has the ability to show current data usage. Users can view their current data usage and understand their billing cycle or session end date to make an appropriate decision. To reduce the load on the network as much as possible, you should check the data usage with the network periodically. Windows provides a local Data Usage API that you can use to combine with data usage to show the current data usage to user.
 
@@ -451,14 +445,12 @@ foreach (var connectionProfile in connectionProfiles)
 // Print the message string
 ```
 
-### <span id="Policies"></span><span id="policies"></span><span id="POLICIES"></span>Policies
+### Policies
 
 Some operators have indicated that special PDP contexts have limited bandwidth. Apps that activate the special PDP context but do not have access to use the special PDP context can create a denial of service attack. You should restrict the usage of special APNs to specific apps with a business relationship. You are able to provide Windows a list of UWP apps with special APN names. Windows will use that information to limit the access to special APNs. If you do not provide a list, Windows assumes that the special PDP context is open for all apps.
 
-**Note**  
-This is just to avoid extra traffic on special PDP contexts. You cannot rely on this as a security mechanism for restricting apps to special PDP contexts. If you would like to restrict access to special PDP contexts, you must implement some authentication or security mechanism on your network. For example, you could use a filter that allows only certain IP addresses for a specific PDP context.
-
- 
+>[!NOTE]
+>This is just to avoid extra traffic on special PDP contexts. You cannot rely on this as a security mechanism for restricting apps to special PDP contexts. If you would like to restrict access to special PDP contexts, you must implement some authentication or security mechanism on your network. For example, you could use a filter that allows only certain IP addresses for a specific PDP context.
 
 Some mobile networks do not support multiple PDP contexts. You can provision whether your network supports multiple PDP context or not. If your network doesn’t support multiple PDP contexts, Windows should not allow apps to create on-demand connections on special APNs. By default, Windows assumes you support multiple PDP contexts.
 
@@ -486,7 +478,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
               <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
               <UserLogonCred>
                 <UserName>user1</UserName>
-                <Password>password1</Password>
+                <Password>[PLACEHOLDER]</Password>
               </UserLogonCred>
             </Context>
             <AppIDList>
@@ -504,7 +496,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
               <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred. -->
               <UserLogonCred>
                 <UserName>user2</UserName>
-                <Password>password2</Password>
+                <Password>[PLACEHOLDER]</Password>
               </UserLogonCred>
             </Context>
             <AppIDList>
@@ -520,80 +512,66 @@ The following sample XML file demonstrates how to use Windows provisioning metad
 </CarrierProvisioning>
 ```
 
-## <span id="Audio_and_video_streaming"></span><span id="audio_and_video_streaming"></span><span id="AUDIO_AND_VIDEO_STREAMING"></span>Audio and video streaming
-
+## Audio and video streaming
 
 Audio streaming apps can play audio or video streams using a special PDP context. Similar to HTTP APIs, your app can use the following logic to play audio or video by using the &lt;audio&gt; or &lt;video&gt; tag.
 
 ![streaming app workflow](images/mb-pdp-fig6.jpg)
 
-You can use [Player Framework](https://archive.codeplex.com/?p=playerframework) or other video frameworks based on the [WinInet](https://docs.microsoft.com/windows/desktop/WinInet/portal) APIs.
+You can use [Player Framework](https://archive.codeplex.com/?p=playerframework) or other video frameworks based on the [WinInet](/windows/desktop/WinInet/portal) APIs.
 
-## <span id="InstantGo"></span><span id="instantgo"></span><span id="INSTANTGO"></span>InstantGo
-
+## InstantGo
 
 InstantGo provides an instant on, instant off user experience that users have come to expect on their phone. And just like on the phone, InstantGo enables the system to stay fresh, up-to-date, and reachable whenever a suitable network is available. InstantGo on low-power PCs platforms must meet specific Windows Certification requirements.
 
 The following scenarios are supported in InstantGo:
 
--   Updating live tiles with fresh content
+- Updating live tiles with fresh content
 
--   Receiving email
+- Receiving email
 
--   Downloading files from, or uploading them to, a website
+- Downloading files from, or uploading them to, a website
 
--   Sharing content, such as photos on a website
+- Sharing content, such as photos on a website
 
--   Receiving instant messages
+- Receiving instant messages
 
--   Receiving VoIP calls
+- Receiving VoIP calls
 
--   Communicating in real-time
+- Communicating in real-time
 
--   Playing background audio and music
+- Playing background audio and music
 
-For more info on InstantGo, see [Introduction to InstantGo](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby).
+For more info on InstantGo, see [Introduction to InstantGo](/windows-hardware/design/device-experiences/modern-standby).
 
 Your mobile broadband app can use a special PDP context for enabling some of these InstantGo scenarios. You need to use following logic to reconnect to the special PDP context if it is disconnected because it is out of coverage. When the device enters the Connected Standby power state, Windows will disconnect all the connections to special PDP contexts after 10 minutes and your app has to request the connection again.
 
-For more info on how you can enable background networking in your mobile broadband apps, see [Introduction to Background Tasks](https://www.microsoft.com/download/details.aspx?id=27411) and [Background Networking](https://www.microsoft.com/download/details.aspx?id=28999).
-
 ![instantgo with pdp context](images/mb-pdp-fig5.jpg)
 
-### <span id="Audio_streaming_in_background"></span><span id="audio_streaming_in_background"></span><span id="AUDIO_STREAMING_IN_BACKGROUND"></span>Audio streaming in background
+### Audio streaming in background
 
-Audio streaming apps can audio in background and in the Connected Standby power state by using a special PDP context. For more info on how to play audio in the background, see [How to How to play audio in the background](https://docs.microsoft.com/previous-versions/windows/apps/hh700367(v=win.10)).
+Audio streaming apps can audio in background and in the Connected Standby power state by using a special PDP context. For more info on how to play audio in the background, see [How to How to play audio in the background](/previous-versions/windows/apps/hh700367(v=win.10)).
 
-### <span id="Real-time_communication_apps"></span><span id="real-time_communication_apps"></span><span id="REAL-TIME_COMMUNICATION_APPS"></span>Real-time communication apps
+### Real-time communication apps
 
-Real-time communication apps, such as VoIP or chat apps, can receive a wake up trigger on a special PDP context. The wake up trigger allows your app to be triggered at all times including when the system is in the Connected Standby power state. For more info on how to enable the wake up trigger, see [Background Networking](https://www.microsoft.com/download/details.aspx?id=28999).
+Real-time communication apps, such as VoIP or chat apps, can receive a wake up trigger on a special PDP context. The wake up trigger allows your app to be triggered at all times including when the system is in the Connected Standby power state.
 
-To enable this scenario, the mobile broadband device should support wake up filters on special PDP context, as stated in the [Mobile Broadband Interface Model (MBIM) specification](https://docs.microsoft.com/windows-hardware/drivers/network/mb-interface-model).
+To enable this scenario, the mobile broadband device should support wake up filters on special PDP context, as stated in the [Mobile Broadband Interface Model (MBIM) specification](../network/mb-interface-model.md).
 
 ## Mobile broadband devices
 
-
-To support multiple PDP contexts, the firmware of the mobile broadband Device must support multiple PDP contexts, as defined in the [MBIM specification](https://go.microsoft.com/fwlink/?linkid=620028). It must also pass any Windows Hardware Certification Kit tests specific to multiple PDP contexts.
+To support multiple PDP contexts, the firmware of the mobile broadband Device must support multiple PDP contexts, as defined in the [MBIM specification](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement). It must also pass any Windows Hardware Certification Kit tests specific to multiple PDP contexts.
 
 Since this feature is operator specific, it is optional for mobile broadband devices. If you need this feature, you must add multiple PDP context functionality in the operator requirements with the following:
 
--   The device firmware should support multiple IP data streams as detailed in section 10.5.12.1 of the [MBIM specification](https://go.microsoft.com/fwlink/?linkid=620028). This includes supporting all the control implementation of CIDs and IP data streams for full support of multiple PDP contexts.
+- The device firmware should support multiple IP data streams as detailed in section 10.5.12.1 of the [MBIM specification](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement). This includes supporting all the control implementation of CIDs and IP data streams for full support of multiple PDP contexts.
 
--   The device firmware must support multiple dual bearer (IPv4 & IPv6) PDP contexts for use by Windows.
+- The device firmware must support multiple dual bearer (IPv4 & IPv6) PDP contexts for use by Windows.
 
-    -   This includes 1 for internet connectivity and additional PDP contexts for mobile broadband apps, according to your requirements.
+  - This includes 1 for internet connectivity and additional PDP contexts for mobile broadband apps, according to your requirements.
 
-    -   This does not require device-managed PDP contexts that the firmware may use for SMS and other administrative contexts.
+  - This does not require device-managed PDP contexts that the firmware may use for SMS and other administrative contexts.
 
--   The device firmware should be able to leverage a host operating system request gracefully for a PDP context that is already device-managed internally in its firmware.
+- The device firmware should be able to leverage a host operating system request gracefully for a PDP context that is already device-managed internally in its firmware.
 
--   The device firmware should continue to abstract SMS PDP contexts and route them through the SMS CIDs regardless of the bearer used underneath.
-
- 
-
- 
-
-
-
-
-
+- The device firmware should continue to abstract SMS PDP contexts and route them through the SMS CIDs regardless of the bearer used underneath.

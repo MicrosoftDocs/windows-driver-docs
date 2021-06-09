@@ -1,7 +1,6 @@
 ---
 title: Changing the Default Boot Entry
 description: Changing the Default Boot Entry
-ms.assetid: 0dce10d4-f73a-49bd-8a24-a4aa14c82233
 keywords:
 - default boot entries
 - Boot.ini files WDK , default boot entries

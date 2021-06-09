@@ -1,7 +1,6 @@
 ---
 title: Color Management for Displays
 description: Color Management for Displays
-ms.assetid: a0c3f35f-3741-4d5a-b7ae-dd177c719508
 keywords:
 - display drivers WDK Windows 2000 , color management
 - color management WDK Windows 2000 display
@@ -23,17 +22,11 @@ ms.localizationpriority: medium
 
 GDI supports Image Color Management (ICM) version 2.0. Display drivers can use ICM without implementing any special code.
 
-If the display hardware supports a *gamma ramp*, the display driver should implement [**DrvIcmSetDeviceGammaRamp**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvicmsetdevicegammaramp). Color-calibrating applications that require color exactness use this capability. DirectDraw also uses this function to allow DirectX applications -- such as a game that performs palette animation in RGB modes -- to control the gamma ramp. For example code, refer to the *Permedia* sample display drivers.
+If the display hardware supports a *gamma ramp*, the display driver should implement [**DrvIcmSetDeviceGammaRamp**](/windows/win32/api/winddi/nf-winddi-drvicmsetdevicegammaramp). Color-calibrating applications that require color exactness use this capability. DirectDraw also uses this function to allow DirectX applications -- such as a game that performs palette animation in RGB modes -- to control the gamma ramp. For example code, refer to the *Permedia* sample display drivers.
 
 **Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
  
 
  
-
- 
-
-
-
-
 

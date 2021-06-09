@@ -1,7 +1,6 @@
 ---
 title: Controlling the User-Mode Debugger from the Kernel Debugger
 description: Controlling the User-Mode Debugger from the Kernel Debugger
-ms.assetid: 8fba2187-cf22-41ad-9b06-228a5b082822
 keywords: ["KD, controlling CDB or NTSD", "WinDbg, controlling CDB or NTSD", "CDB, redirecting control to the kernel debugger", "NTSD, redirecting control to the kernel debugger", "redirecting user-mode output to the kernel debugger", "controlling the user-mode debugger from the kernel debugger", "controlling the user-mode debugger from the kernel debugger, overview", "controlling the user-mode debugger from the kernel debugger, sleep mode", "sleep mode"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

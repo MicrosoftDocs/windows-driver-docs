@@ -1,7 +1,6 @@
 ---
 title: Cloning Packet Traffic
 description: Cloning Packet Traffic
-ms.assetid: 6BAE348D-B5BA-4B74-8D9B-79B146427D8C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,75 +16,75 @@ This topic describes how Hyper-V extensible switch extensions clone, or duplicat
 
 Extensible switch filtering and forwarding extensions can inject cloned packets into the extensible switch ingress or egress data path by following these guidelines:
 
--   The extension must first allocate a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context) structure for the cloned packet. The extension must then copy the packet data from the original packet to the cloned packet. For more information on how to clone packets, see [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md).
+-   The extension must first allocate a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure for the cloned packet. The extension must then copy the packet data from the original packet to the cloned packet. For more information on how to clone packets, see [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md).
 
--   After the extension allocates a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context) structure, it must call the [*AllocateNetBufferListForwardingContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_allocate_net_buffer_list_forwarding_context) handler function to allocate the extensible switch forwarding context for the packet.
+-   After the extension allocates a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure, it must call the [*AllocateNetBufferListForwardingContext*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_allocate_net_buffer_list_forwarding_context) handler function to allocate the extensible switch forwarding context for the packet.
 
     The forwarding context resides in the out-of-band (OOB) data of the packet. It contains forwarding information for the packet, such as its source port and an array of one or more destination ports.
 
     For more information about the forwarding context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
 
--   The extension must copy the OOB data, including the existing source port, from the original packet to the cloned packet by calling [*CopyNetBufferListInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info). If the extension plans to inject the packet into the ingress data path, it must also copy the destination ports from the OOB data of the original packet.
+-   The extension must copy the OOB data, including the existing source port, from the original packet to the cloned packet by calling [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info). If the extension plans to inject the packet into the ingress data path, it must also copy the destination ports from the OOB data of the original packet.
 
     When it copies the OOB data, the extension must follow these guidelines:
 
-    -   If the filtering extension plans to inject the packet into the ingress data path, it must call [*CopyNetBufferListInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) with the NDIS\_SWITCH\_COPY\_NBL\_INFO\_FLAGS\_PRESERVE\_DESTINATIONS flag unspecified. This causes the original packet's destination ports to not be copied to the cloned packets. When the filtering extension injects this packet into the ingress data path, destination ports will be added to the packet by either an underlying forwarding extension (if enabled in the driver stack) or the miniport edge of the extensible switch.
+    -   If the filtering extension plans to inject the packet into the ingress data path, it must call [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) with the NDIS\_SWITCH\_COPY\_NBL\_INFO\_FLAGS\_PRESERVE\_DESTINATIONS flag unspecified. This causes the original packet's destination ports to not be copied to the cloned packets. When the filtering extension injects this packet into the ingress data path, destination ports will be added to the packet by either an underlying forwarding extension (if enabled in the driver stack) or the miniport edge of the extensible switch.
 
-    -   If the filtering extension plans to inject the packet into the egress data path, it must call [*CopyNetBufferListInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) with the NDIS\_SWITCH\_COPY\_NBL\_INFO\_FLAGS\_PRESERVE\_DESTINATIONS flag specified. This causes the original packet's destination ports to be copied to the cloned packets.
+    -   If the filtering extension plans to inject the packet into the egress data path, it must call [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) with the NDIS\_SWITCH\_COPY\_NBL\_INFO\_FLAGS\_PRESERVE\_DESTINATIONS flag specified. This causes the original packet's destination ports to be copied to the cloned packets.
 
--   If the filtering extension is cloning or duplicating a packet that was obtained from the egress data path, it can change the destination ports for the packet after it calls [*CopyNetBufferListInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) with the NDIS\_SWITCH\_COPY\_NBL\_INFO\_FLAGS\_PRESERVE\_DESTINATIONS flag specified. For more information on this procedure, see [Modifying a Packet's Extensible Switch Source Port Data](modifying-a-packet-s-extensible-switch-source-port-data.md).
+-   If the filtering extension is cloning or duplicating a packet that was obtained from the egress data path, it can change the destination ports for the packet after it calls [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) with the NDIS\_SWITCH\_COPY\_NBL\_INFO\_FLAGS\_PRESERVE\_DESTINATIONS flag specified. For more information on this procedure, see [Modifying a Packet's Extensible Switch Source Port Data](modifying-a-packet-s-extensible-switch-source-port-data.md).
 
 -   If the forwarding extension is cloning or duplicating a packet that was obtained from the ingress data path, it must add new destination ports for the packet before it injects the packet into the ingress data path. For more information on this procedure, see [Adding Extensible Switch Destination Port Data to a Packet](adding-extensible-switch-destination-port-data-to-a-packet.md).
 
--   After the extension calls [*CopyNetBufferListInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info), the packet will be assigned the same source port information that was contained in the original packet.
+-   After the extension calls [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info), the packet will be assigned the same source port information that was contained in the original packet.
 
-    The extension can call [*SetNetBufferListSource*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_set_net_buffer_list_source) to change the source port information in the packet's out-of-band (OOB) data.
+    The extension can call [*SetNetBufferListSource*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_set_net_buffer_list_source) to change the source port information in the packet's out-of-band (OOB) data.
 
-    The extension may want the packet to be treated as if it originated from a particular port. This allows the policies for that port to be applied to the packet. The extension calls [*SetNetBufferListSource*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_set_net_buffer_list_source) to change the source port for the packet.
+    The extension may want the packet to be treated as if it originated from a particular port. This allows the policies for that port to be applied to the packet. The extension calls [*SetNetBufferListSource*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_set_net_buffer_list_source) to change the source port for the packet.
 
     However, there may be situations where the extension may want to assign the packet's source port identifier to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**. For example, the extension may want to set the source port identifier to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** for proprietary control packets that are sent to a device on the external network.
 
--   In the standard NDIS data path, non-extensible switch OOB data often has different values depending on whether the packet is being indicated as a send or a receive. For example, the [**NDIS\_IPSEC\_OFFLOAD\_V2\_HEADER\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_header_net_buffer_list_info) OOB data is a union of send-and-receive–specific structures
+-   In the standard NDIS data path, non-extensible switch OOB data often has different values depending on whether the packet is being indicated as a send or a receive. For example, the [**NDIS\_IPSEC\_OFFLOAD\_V2\_HEADER\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_header_net_buffer_list_info) OOB data is a union of send-and-receive–specific structures
 
-    In the extensible switch data path, all packets move through the extension driver stack as both sends and receives. Because of this, the non-extensible switch OOB data within the packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure will be in either a send or receive format through the duration of the flow through the driver stack.
+    In the extensible switch data path, all packets move through the extension driver stack as both sends and receives. Because of this, the non-extensible switch OOB data within the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure will be in either a send or receive format through the duration of the flow through the driver stack.
 
     The format of this OOB data depends on the source extensible switch port from which the packet arrived at the extensible switch. If the source port is connected to the external network adapter, the non-extensible switch OOB data will be in a receive format. For other ports, this OOB data will be in a send format.
 
-    The source port information is stored in the [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_detail_net_buffer_list_info) union in the OOB data of the packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. The extension obtains the data by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-switch-forwarding-detail) macro.
+    The source port information is stored in the [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_detail_net_buffer_list_info) union in the OOB data of the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. The extension obtains the data by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail) macro.
 
-    **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension can call [*CopyNetBufferListInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) to copy all OOB data from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the packet.
+    **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension can call [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) to copy all OOB data from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the packet.
 
 
 
 -   When the extension clones a packet, the cloned packet data is located in local, or *trusted*, memory in the parent operating system of the Hyper-V parent partition. This memory cannot be accessed by the child partition. Therefore, it is considered "safe" from unsynchronized updates by the guest operating system that runs in that partition.
 
-    After the original packet has been cloned, the extension must obtain the [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_detail_net_buffer_list_info) union in the cloned packet by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-switch-forwarding-detail) macro. The extension must set the **IsPacketDataSafe** member to TRUE. This specifies that all of the packet data is located in trusted memory.
+    After the original packet has been cloned, the extension must obtain the [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_detail_net_buffer_list_info) union in the cloned packet by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail) macro. The extension must set the **IsPacketDataSafe** member to TRUE. This specifies that all of the packet data is located in trusted memory.
 
 Filtering and forwarding extensions must follow these guidelines for injecting cloned packets into the ingress or egress data path:
 
--   The extension must call [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to inject the cloned packet into the ingress data path. The extension must set the *SendFlags* parameter with the appropriate extensible switch flag settings. For more information about these flag settings, see [Hyper-V Extensible Switch Send and Receive Flags](hyper-v-extensible-switch-send-and-receive-flags.md).
+-   The extension must call [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to inject the cloned packet into the ingress data path. The extension must set the *SendFlags* parameter with the appropriate extensible switch flag settings. For more information about these flag settings, see [Hyper-V Extensible Switch Send and Receive Flags](hyper-v-extensible-switch-send-and-receive-flags.md).
 
-    When NDIS calls the extension's [*FilterSendNetBufferListsComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists_complete) function to complete the send request of the cloned packet, the extension must call [*FreeNetBufferListForwardingContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_free_net_buffer_list_forwarding_context) to free the allocated forwarding context. The extension must do this before it frees or reuses the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context) structure for the packet.
+    When NDIS calls the extension's [*FilterSendNetBufferListsComplete*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists_complete) function to complete the send request of the cloned packet, the extension must call [*FreeNetBufferListForwardingContext*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_free_net_buffer_list_forwarding_context) to free the allocated forwarding context. The extension must do this before it frees or reuses the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure for the packet.
 
     **Note**  The extension must inject the cloned packet into the ingress data path if it modifies the packet data or source port for a packet that it obtained from the egress data path. It must also inject the cloned packet into the ingress data path if the packet's destination ports are not preserved.
 
 
 
--   The extension must call [**NdisFIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatereceivenetbufferlists) to inject the cloned packet into the egress data path. The extension must set the *ReceiveFlags* parameter with the appropriate extensible switch flag settings.
+-   The extension must call [**NdisFIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatereceivenetbufferlists) to inject the cloned packet into the egress data path. The extension must set the *ReceiveFlags* parameter with the appropriate extensible switch flag settings.
 
-    When NDIS calls the extension's [*FilterReturnNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_return_net_buffer_lists) function to complete the receive request of the cloned packet, the extension must call [*FreeNetBufferListForwardingContext*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_free_net_buffer_list_forwarding_context) before it frees or reuses the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context) structure for the packet.
+    When NDIS calls the extension's [*FilterReturnNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_return_net_buffer_lists) function to complete the receive request of the cloned packet, the extension must call [*FreeNetBufferListForwardingContext*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_free_net_buffer_list_forwarding_context) before it frees or reuses the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure for the packet.
 
-    **Note**  Before the forwarding extension calls [**NdisFIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatereceivenetbufferlists), it must have determined the cloned packet's destination ports and added this data to the packet's OOB data.
+    **Note**  Before the forwarding extension calls [**NdisFIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatereceivenetbufferlists), it must have determined the cloned packet's destination ports and added this data to the packet's OOB data.
 
 
 
--   If the extension clones a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context) structure, it must retain ownership of the original packet's **NET\_BUFFER\_LIST** structure until the cloned packet's send or receive request has completed. The extension must use the **ParentNetBufferList** member of the cloned packet's **NET\_BUFFER\_LIST** structure to link to the original packet's **NET\_BUFFER\_LIST** structure.
+-   If the extension clones a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure, it must retain ownership of the original packet's **NET\_BUFFER\_LIST** structure until the cloned packet's send or receive request has completed. The extension must use the **ParentNetBufferList** member of the cloned packet's **NET\_BUFFER\_LIST** structure to link to the original packet's **NET\_BUFFER\_LIST** structure.
 
     **Note**  In NDIS 6.30 (Windows Server 2012), the extension can use the **ParentNetBufferList** member to link to the original packet, but it is not required to do so. In NDIS 6.40 (Windows Server 2012 R2) and later, the extension is required to use the **ParentNetBufferList** member to link to the original packet.
 
     Once the cloned packet's send or receive request has completed, the extension must complete the send or receive request of the original packet.
 
-    **Note**  If the extension has cloned a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context) structure, it can complete the send or receive request of the original packet after it has been cloned.
+    **Note**  If the extension has cloned a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure, it can complete the send or receive request of the original packet after it has been cloned.
 
 -   If the extension clones a packet, it can complete the send or receive request of the original packet as soon as it is cloned.
 
@@ -95,27 +94,16 @@ If the forwarding or filtering extension obtains a packet in the egress data pat
 
 For example, assume that a packet with multiple destination ports was obtained in the extensible switch egress data path. If one destination port requires special handling, such as data encapsulation, the forwarding or filtering extension handles this by following these steps:
 
-1.  Exclude packet delivery to the port that requires special handling. The extension does this by setting the **IsExcluded** member of the destination port's [**NDIS\_SWITCH\_PORT\_DESTINATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) structure to a value of one. For more information on this procedure, see [Excluding Packet Delivery to Extensible Switch Destination Ports](excluding-packet-delivery-to-extensible-switch-destination-ports.md).
+1.  Exclude packet delivery to the port that requires special handling. The extension does this by setting the **IsExcluded** member of the destination port's [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) structure to a value of one. For more information on this procedure, see [Excluding Packet Delivery to Extensible Switch Destination Ports](excluding-packet-delivery-to-extensible-switch-destination-ports.md).
 
 2.  Clone the original packet and perform the required handling of the packet data.
 
     **Note**  The filtering extension must not add a destination port for the cloned packet. This data will be added later by the forwarding extension or the miniport edge of the extensible switch.
 
-3.  Forward the original packet on the egress data path by calling [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
+3.  Forward the original packet on the egress data path by calling [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
 
-4.  Inject the cloned packet on the ingress data path by calling [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists).
+4.  Inject the cloned packet on the ingress data path by calling [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists).
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
 **Note**  Capturing extensions cannot clone packet traffic. However, they can originate packet traffic. For more information, see [Originating Packet Traffic](originating-packet-traffic.md).
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Sharing a Serial Device Interrupt
 description: Sharing a Serial Device Interrupt
-ms.assetid: 1d35fbc0-7031-42f3-bb22-52d2bcdcfa92
 keywords:
 - COM ports WDK serial devices
 - serial devices WDK , COM ports

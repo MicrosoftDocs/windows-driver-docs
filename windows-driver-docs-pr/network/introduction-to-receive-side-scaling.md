@@ -1,26 +1,21 @@
 ---
 title: Introduction to Receive Side Scaling
 description: Introduction to Receive Side Scaling
-ms.assetid: 492628a7-ca2e-40cd-bf81-53a925130422
 keywords:
 - receive-side scaling WDK networking , about receive-side scaling
 - RSS WDK networking , about receive-side scaling
 - CPU determination WDK RSS
-ms.date: 04/20/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q1
 ---
 
 # Introduction to Receive Side Scaling
 
-
-
-
-
 Receive side scaling (RSS) is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems.
 
-**Note**  Because hyper-threaded CPUs on the same core processor share the same execution engine, the effect is not the same as having multiple core processors. For this reason, RSS does not use hyper-threaded processors.
-
- 
+> [!NOTE]
+> Because hyper-threaded CPUs on the same core processor share the same execution engine, the effect is not the same as having multiple core processors. For this reason, RSS does not use hyper-threaded processors.
 
 To process received data efficiently, a miniport driver's receive interrupt service function schedules a deferred procedure call (DPC). Without RSS, a typical DPC indicates all received data within the DPC call. Therefore, all of the receive processing that is associated with the interrupt runs on the CPU where the receive interrupt occurs. For an overview of non-RSS receive processing, see [Non-RSS Receive Processing](non-rss-receive-processing.md).
 
@@ -32,9 +27,32 @@ The following figure illustrates the RSS mechanism for determining a CPU.
 
 A NIC uses a hashing function to compute a hash value over a defined area (hash type) within the received network data. The defined area can be noncontiguous.
 
-A number of least significant bits (LSBs) of the hash value are used to index an indirection table. The values in the indirection table are used to assign the received data to a CPU. For more detailed information about the indirection table, see [RSS Configuration](rss-configuration.md).
+A number of least significant bits (LSBs) of the hash value are used to index an indirection table. The values in the indirection table are used to assign the received data to a CPU.
+
+For more detailed information about specifying indirection tables, hash types, and hashing functions, see [RSS Configuration](rss-configuration.md).
 
 With message signaled interrupt (MSI) support, a NIC can also interrupt the associated CPU. For more information about NDIS support for MSIs, see [NDIS MSI-X](ndis-msi-x.md).
+
+## Hardware support for RSS
+
+The following figure illustrates the levels of hardware support for RSS.
+
+![diagram illustrating the levels of hardware support for rss](images/rss-hw.png)
+
+There are three possible levels of hardware support for RSS:
+
+<a href="" id="hash-calculation-with-a-single-queue"></a>Hash calculation with a single queue  
+The NIC calculates the hash value and the miniport driver assigns received packets to queues that are associated with CPUs. For more information, see [RSS with a Single Hardware Receive Queue](rss-with-a-single-hardware-receive-queue.md).
+
+<a href="" id="hash-calculation-with-multiple-receive-queues"></a>Hash calculation with multiple receive queues  
+The NIC assigns the received data buffers to queues that are associated with CPUs. For more information, see [RSS with Hardware Queuing](rss-with-hardware-queuing.md).
+
+<a href="" id="message-signaled-interrupts--msis-"></a>Message Signaled Interrupts (MSIs)  
+The NIC interrupts the CPU that should handle the received packets. For more information, see [RSS with Message Signaled Interrupts](rss-with-message-signaled-interrupts.md).
+
+The NIC always passes on the 32-bit hash value.
+
+## How RSS improves system performance
 
 RSS can improve network system performance by reducing:
 
@@ -75,24 +93,6 @@ To achieve these performance improvements in a secure environment, RSS provides 
 -   MSI-X support
 
     RSS, with support for MSI-X, runs the interrupt service routine (ISR) on the same CPU that later executes the DPC. This reduces spin lock overhead and reloading of caches.
-
-The following figure illustrates the levels of hardware support for RSS.
-
-![diagram illustrating the levels of hardware support for rss](images/rss-hw.png)
-
-There are three possible levels of hardware support for RSS:
-
-<a href="" id="hash-calculation-with-a-single-queue"></a>Hash calculation with a single queue  
-The NIC calculates the hash value and the miniport driver assigns received packets to queues that are associated with CPUs. For more information, see [RSS with a Single Hardware Receive Queue](rss-with-a-single-hardware-receive-queue.md).
-
-<a href="" id="hash-calculation-with-multiple-receive-queues"></a>Hash calculation with multiple receive queues  
-The NIC assigns the received data buffers to queues that are associated with CPUs. For more information, see [RSS with Hardware Queuing](rss-with-hardware-queuing.md).
-
-<a href="" id="message-signaled-interrupts--msis-"></a>Message Signaled Interrupts (MSIs)  
-The NIC interrupts the CPU that should handle the received packets. For more information, see [RSS with Message Signaled Interrupts](rss-with-message-signaled-interrupts.md).
-
-The NIC always passes on the 32-bit hash value.
-
  
 
  

@@ -1,7 +1,6 @@
 ---
 title: SCSI Verification
 description: SCSI Verification
-ms.assetid: dba63137-ff92-480a-bca4-ab651a6bda85
 keywords:
 - SCSI Verification feature WDK Driver Verifier
 - miniport drivers WDK Driver Verifier
@@ -41,11 +40,11 @@ When a SCSI miniport driver commits one of the following violations, Driver Veri
 
 -   The bus reset hold period ends, but the miniport driver still has outstanding requests.
 
-See [**Bug Check 0xF1**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xf1--scsi-verifier-detected-violation) (SCSI\_VERIFIER\_DETECTED\_VIOLATION) for a complete list of the bug check parameters.
+See [**Bug Check 0xF1**](../debugger/bug-check-0xf1--scsi-verifier-detected-violation.md) (SCSI\_VERIFIER\_DETECTED\_VIOLATION) for a complete list of the bug check parameters.
 
 In addition to these violations, SCSI Verification also monitors the miniport driver's memory access for improper use. Two common memory violations made by miniport drivers are accessing an SRB extension after a request completes, and accessing an SRB's **DataBuffer** when the miniport driver has not specified **MapBuffers**.
 
-Memory violations of this sort will usually result in [**Bug Check 0xD1**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xd1--driver-irql-not-less-or-equal) (DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL) being issued.
+Memory violations of this sort will usually result in [**Bug Check 0xD1**](../debugger/bug-check-0xd1--driver-irql-not-less-or-equal.md) (DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL) being issued.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -130,10 +129,4 @@ Similarly, if you want to completely deactivate SCSI Verification, you need to s
 In general, you cannot activate or deactivate SCSI Verification without restarting ("rebooting") the computer on any Windows operating system. The ScsiPort.sys driver reads the **VerifyLevel** registry entry only when it loads, which is typically at boot time. However, if the ScsiPort.sys driver is not loaded when you add the registry entry, or if it is unloaded and reloaded, you can enable SCSI Verification on Windows XP and later versions of Windows without restarting the computer.
 
  
-
- 
-
-
-
-
 

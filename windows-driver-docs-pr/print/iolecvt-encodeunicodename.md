@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 326a9374-7ed5-4521-999a-2c4c59faa617
 keywords: ["EncodeUnicodeName method Print Devices", "EncodeUnicodeName method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , EncodeUnicodeName method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **EncodeUnicodeName** property enables an ASP Web page to translate an ANSI string to its Unicode equivalent.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 [propget, id(2), helpstring("property EncodeUnicodeName")] HRESULT EncodeUnicodeName(
@@ -33,8 +31,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSrcName* \[in\]  
 Caller-supplied ANSI string to be translated.
@@ -42,8 +39,7 @@ Caller-supplied ANSI string to be translated.
 *pVal* \[out, retval\]  
 Caller supplied pointer to a location that will receive the translated string.
 
-Return value
-------------
+## Return value
 
 <table>
 <colgroup>
@@ -77,8 +73,7 @@ strMyUrl = "MyPage.asp?MyVariable=" &
             OleCvt.EncodeUnicodeName("My&Unicode&Parameter")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

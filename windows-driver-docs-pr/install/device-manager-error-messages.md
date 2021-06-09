@@ -1,13 +1,12 @@
 ---
 title: Device Manager Error Messages
 description: Device Manager Error Messages
-ms.assetid: 38958790-6b60-48ff-a341-fc39a16602ab
 keywords:
 - Device Manager WDK , errors
 - errors WDK Device Manager
 - yellow exclamation point WDK Device Manager
 - messages WDK Device Manager
-ms.date: 04/20/2017
+ms.date: 03/04/2020
 ms.localizationpriority: medium
 ---
 
@@ -20,6 +19,9 @@ ms.localizationpriority: medium
 When Device Manager marks a device with a yellow exclamation point, it also provides an error message.
 
 The following table lists the errors reported by Device Manager. These error codes are defined in Cfg.h.
+ 
+For related info, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
+
 
 <table>
 <colgroup>
@@ -184,6 +186,18 @@ The following table lists the errors reported by Device Manager. These error cod
 <tr class="even">
 <td align="left"><p>Code 54</p></td>
 <td align="left"><p><a href="cm-prob-device-reset.md" data-raw-source="[CM_PROB_DEVICE_RESET](cm-prob-device-reset.md)">CM_PROB_DEVICE_RESET</a></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Code 55</p></td>
+<td align="left"><p><a href="cm-prob-console-locked.md" data-raw-source="[CM_PROB_CONSOLE_LOCKED](cm-prob-console-locked.md)">CM_PROB_CONSOLE_LOCKED</a></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Code 56</p></td>
+<td align="left"><p><a href="cm-prob-need-class-config.md" data-raw-source="[CM_PROB_NEED_CLASS_CONFIG](cm-prob-need-class-config.md)">CM_PROB_NEED_CLASS_CONFIG</a></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Code 57</p></td>
+<td align="left"><p><a href="cm-prob-guest-assignment-failed.md" data-raw-source="[CM_PROB_GUEST_ASSIGNMENT_FAILED](cm-prob-guest-assignment-failed.md)">CM_PROB_GUEST_ASSIGNMENT_FAILED</a></p></td>
 </tr>
 </tbody>
 </table>

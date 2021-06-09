@@ -1,7 +1,6 @@
 ---
 title: DxgkDdiMovePageDirectory function
 description: The DxgkDdiMovePageDirectory function is reserved for system use. Do not implement it in your driver.
-ms.assetid: 25972570-174d-40dc-bfbc-e9eb395dcb0e
 keywords: ["DxgkDdiMovePageDirectory function Display Devices"]
 topic_type:
 - apiref
@@ -22,8 +21,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiMovePageDirectory* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS APIENTRY DxgkDdiMovePageDirectory(
@@ -32,8 +30,7 @@ NTSTATUS APIENTRY DxgkDdiMovePageDirectory(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hContext* \[in\]
 This parameter is reserved for system use.
@@ -41,8 +38,7 @@ This parameter is reserved for system use.
 *pMovePageDirectory* \[in, out\]
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

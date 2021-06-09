@@ -1,7 +1,6 @@
 ---
 title: wmitrace.tfp
 description: wmitrace.tfp
-ms.assetid: c81f0794-a622-4400-8966-f49e031ae279
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

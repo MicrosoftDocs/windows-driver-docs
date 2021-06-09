@@ -1,7 +1,6 @@
 ---
 title: GUID_DISPLAY_ADAPTER_INTERFACE
 description: GUID_DISPLAY_ADAPTER_INTERFACE
-ms.assetid: 978dd905-0f1f-4554-8d4a-750093effbf9
 keywords: ["GUID_DISPLAY_ADAPTER_INTERFACE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,10 +17,9 @@ ms.date: 10/17/2018
 # GUID_DISPLAY_ADAPTER_INTERFACE
 
 
-GUID_DISPLAY_ADAPTER_INTERFACE is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for display adapter devices; for new instances of this class, use the [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md) class identifier instead.
+GUID_DISPLAY_ADAPTER_INTERFACE is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for display adapter devices; for new instances of this class, use the [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md) class identifier instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -42,11 +40,4 @@ Requirements
 [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md)
 
  
-
- 
-
-
-
-
-
 

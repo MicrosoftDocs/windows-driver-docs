@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AEC\_STATUS
 description: The KSPROPERTY\_AEC\_STATUS property is used to monitor the status of an AEC node (KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL). This is an optional property of an AEC node.
-ms.assetid: cd344367-1cb3-425a-8b22-300a85514e20
 keywords: ["KSPROPERTY_AEC_STATUS Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AEC\_STATUS property is used to monitor the status of an AEC nod
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -100,8 +99,7 @@ The property value (operation data) is of type ULONG. This is a status value tha
 
 A KSPROPERTY\_AEC\_STATUS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The three least significant bits in the AEC status flags (see preceding table) represent the convergence history (CH) of the AEC algorithm. The CH status bits can be used by a Microsoft DirectSound application to determine whether the algorithm has converged and also whether it has remained in the converged state since the time that it started processing data. Depending on the audio hardware, the AEC algorithm might fail to converge, in which case the resulting capture buffer is likely to include the echo from the speakers.
 
@@ -109,14 +107,13 @@ When the filter containing the AEC node is created or the node is reset, the AEC
 
 After the AEC algorithm converges, the CH status switches to the converged state, AEC\_STATUS\_FD\_HISTORY\_CONTINUOUSLY\_CONVERGED. If the AEC algorithm ever loses convergence, the CH status switches to the diverged state, AEC\_STATUS\_FD\_HISTORY\_PREVIOUSLY\_DIVERGED. Although the status is most likely to switch to the diverged state from the converged state, it might also switch directly from the uninitialized state to the diverged state. After the CH status has switched to the diverged state, it will remain in that state until the algorithm is reset or starvation is detected.
 
-When the [AEC system filter](https://docs.microsoft.com/windows-hardware/drivers/audio/aec-system-filter) detects starvation at any of its four pins--capture in, capture out, render in, or render out--it resets its internal state, including the convergence history.
+When the [AEC system filter](./aec-system-filter.md) detects starvation at any of its four pins--capture in, capture out, render in, or render out--it resets its internal state, including the convergence history.
 
 Note that bit 2 of the three CH status bits is not currently used.
 
 As an alternative to using the CH status bits, the application can monitor the real-time convergence status by checking the AEC\_STATUS\_FD\_CURRENTLY\_CONVERGED flag bit. If this bit is set, the algorithm is currently converged. The algorithm can lose convergence temporarily when changes occur in the acoustic path. The real-time convergence flag is filtered to prevent such momentary losses from inappropriately switching the CH status bits to the DSCFX\_AEC\_STATUS\_FD\_HISTORY\_PREVIOUSLY\_DIVERGED state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -134,16 +131,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: MSFC\_EventControl WMI Class
 description: MSFC\_EventControl WMI Class
-ms.assetid: b992e9d0-cc1d-47f1-8a69-cef897e4e9c2
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Building EngExtCpp Extensions
 description: Building EngExtCpp Extensions
-ms.assetid: 63d73c4e-03b8-4bbe-9c2e-96cda3ad544c
 keywords: ["EngExtCpp extensions, building"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -19,17 +18,17 @@ The EngExtCpp implementation code (engextcpp.cpp) is used instead of linking wit
 
 Because the EngExtCpp extension framework is built on top of the DbgEng extension framework, an EngExtCpp extension DLL should export the same functions as a DbgEng extension DLL.
 
-Each extension should be exported. When you use the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command) macro to define an extension function, this macro also creates a C function with the same name as the extension. This function should be exported from the DLL.
+Each extension should be exported. When you use the [**EXT\_COMMAND**](/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command) macro to define an extension function, this macro also creates a C function with the same name as the extension. This function should be exported from the DLL.
 
 The following functions are provided by engextcpp should be exported from the EngExtCpp DLL.
 
--   **DebugExtensionInitialize** -- so that the [**Initialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method can be called to initialize the library.
+-   **DebugExtensionInitialize** -- so that the [**Initialize**](/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)) method can be called to initialize the library.
 
--   **DebugExtensionUnitialize** -- so that the [**Uninitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff558961(v=vs.85)) method can be called to uninitialize the library.
+-   **DebugExtensionUnitialize** -- so that the [**Uninitialize**](/previous-versions/windows/hardware/previsioning-framework/ff558961(v=vs.85)) method can be called to uninitialize the library.
 
--   **KnownStructOutputEx** -- so that the engine can call the [*ExtKnownStructMethod*](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) methods to format known structures for output.
+-   **KnownStructOutputEx** -- so that the engine can call the [*ExtKnownStructMethod*](/previous-versions/windows/hardware/previsioning-framework/ff543989(v=vs.85)) methods to format known structures for output.
 
--   **DebugExtensionNotify** -- so that the engine can call the [**OnSessionActive**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff552312(v=vs.85)), **OnSessionInactive**, **OnSessionAccessible**, and **OnSessionInaccessible** methods to notify the extension library of changes to the debugging session's state.
+-   **DebugExtensionNotify** -- so that the engine can call the [**OnSessionActive**](/previous-versions/windows/hardware/previsioning-framework/ff552312(v=vs.85)), **OnSessionInactive**, **OnSessionAccessible**, and **OnSessionInaccessible** methods to notify the extension library of changes to the debugging session's state.
 
 -   **help** -- so that the EngExtCpp extension framework can automatically provide a **!help** extension.
 
@@ -38,10 +37,4 @@ These functions can be exported even if the functionality they provide is not ne
 **DebugExtensionInitialize** must be exported in order for the debugger engine to recognize the DLL as a valid DbgEng extension DLL.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Using the UMDF Co-installer
 description: Using the UMDF Co-installer
-ms.assetid: e5ec2122-1602-487b-baad-4a3d9e47cf58
 keywords:
 - UMDF coinstallers WDK
 - coinstallers WDK UMDF
@@ -17,8 +16,31 @@ ms.localizationpriority: medium
 
 # Using the UMDF Co-installer
 
+> [!NOTE]
+> If your driver only targets Windows 10, you do not need to redistribute WDF or provide a Coinstaller in your driver package. To target Windows 10:
+>1. In Visual Studio, in the **Project Settings** property page, under **Driver Settings** -> **Target OS Version**, select **Windows 10 or higher**.  This is equivalent to adding the following to the .vcxproj file: 
+>```xml
+><PropertyGroup Label="Configuration">
+><TargetVersion>Windows10</TargetVersion>
+>```
+>2. In the [INF Manufacturer Section](../install/inf-manufacturer-section.md), specify 10.0 as target OS version, as follows:
+>```inf
+>[Manufacturer]
+>%MyMfg% = MyMfg, NTamd64.10.0
+>```
+>
+>You may still need to reference the system-supplied coinstaller as below:
+>
+>```inf
+>[Echo_Install.NT.CoInstallers] 
+>AddReg=CoInstallers_AddReg
+>
+>[CoInstaller.AddReg]
+>HKR,,CoInstallers32,0x00010000,WudfCoinstaller.dll
+>```
 
-A co-installer updates the framework version stored on the machine and processes framework-specific INF file sections. This topic describes the two UMDF co-installers and when you need to include one with your [driver installation package](https://docs.microsoft.com/windows-hardware/drivers) or reference a co-installer in your INF file.
+
+A co-installer updates the framework version stored on the machine and processes framework-specific INF file sections. This topic describes the two UMDF co-installers and when you need to include one with your [driver installation package](/windows-hardware/drivers) or reference a co-installer in your INF file.
 
 ## Getting the Co-installer Package
 
@@ -40,7 +62,7 @@ If you are writing a UMDF 2.0 driver for Windows 8.1, your INF file must refere
 
 If you are writing a UMDF 1.11 driver that targets operating systems prior to Windows 8.1, you must ensure that version 1.11 of the framework is installed on machines that use your driver. Here are three ways to do this:
 
--   Reference the update co-installer in your INF file, and include the update co-installer in your [driver installation package](https://docs.microsoft.com/windows-hardware/drivers). When the operating system installs your driver, it runs the co-installer. If your driver will be distributed via Windows Update, you must choose this option.
+-   Reference the update co-installer in your INF file, and include the update co-installer in your [driver installation package](/windows-hardware/drivers). When the operating system installs your driver, it runs the co-installer. If your driver will be distributed via Windows Update, you must choose this option.
 
 -   Redistribute the relevant MSU package (for example umdf-1.11-Win-6.0.msu) along with a setup application that calls it. You can find a sample of such an application in the src\\general\\wdkinstall subdirectory of your WDK installation. You might choose this option if you are writing a setup program that ships with the device and must be run before the device can be used. If you choose this option, your INF file must reference the configuration co-installer.
 
@@ -51,7 +73,7 @@ In your INF file, you must always reference either the update co-installer or th
 ## INF File Sections for the Co-installer
 
 
-Your driver's INF file must include an [**INF DDInstall.CoInstallers section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section). If you redistribute the update co-installer, your **DDInstall.CoInstallers** section must include both an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) and an [**INF CopyFiles directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive), as the following example shows.
+Your driver's INF file must include an [**INF DDInstall.CoInstallers section**](../install/inf-ddinstall-coinstallers-section.md). If you redistribute the update co-installer, your **DDInstall.CoInstallers** section must include both an [**INF AddReg directive**](../install/inf-addreg-directive.md) and an [**INF CopyFiles directive**](../install/inf-copyfiles-directive.md), as the following example shows.
 
 ```cpp
 [MyDriver_Install.CoInstallers]
@@ -84,13 +106,5 @@ HKR,,CoInstallers32,0x00010000,WudfCoinstaller.dll
 
 Your driver's INF file must always contain a **DDInstall.Wdf** section that the co-installer reads after it has been installed. For information about directives that your driver can specify in **DDInstall.Wdf**, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 
-You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
-
- 
-
- 
-
-
-
-
+You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](../devtest/stampinf.md) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
 

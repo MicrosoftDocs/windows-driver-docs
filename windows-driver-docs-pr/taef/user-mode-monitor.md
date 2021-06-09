@@ -1,7 +1,6 @@
 ---
 title: User Mode Monitor
 description: User Mode Monitor
-ms.assetid: CE6CEC2C-5E8E-40aa-A5D3-0062D6F82EFE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

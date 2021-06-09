@@ -1,7 +1,6 @@
 ---
 title: Using the Static Driver Verifier Report
 description: Using the Static Driver Verifier Report
-ms.assetid: ca6eaa53-cee5-4caf-b1e1-035ea800779b
 keywords:
 - Static Driver Verifier WDK , verification results
 - StaticDV WDK , verification results
@@ -42,23 +41,23 @@ This procedure works only for defects. SDV does not generate a **Defect Viewer**
 
 The following screen shot shows a Static Driver Verifier Report page.
 
-![screen shot of a static driver verifier report page](images/sdv-defectviewer.png)
+![Screenshot that shows a "Static Driver Verifier Report Page".](images/sdv-defectviewer.png)
 
 ### <span id="review_the_rule"></span><span id="REVIEW_THE_RULE"></span>Review the Rule
 
 Before trying to find the rule violation in the code, become familiar with the rules that the driver violated.
 
-The [Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) section includes a topic that explains each rule, for example, [CancelSpinLock](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-cancelspinlock).
+The [Static Driver Verifier Rules](./static-driver-verifier-rules.md) section includes a topic that explains each rule, for example, [CancelSpinLock](./wdm-cancelspinlock.md).
 
 To see the code for the rule, in the **Source Code** pane of the Static Driver Verifier Report, click the tab with the rule code, such as CancelSpinLock.slic.
 
-For example, the **CancelSpinLock** rule is violated if the driver calls [**IoAcquireCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)) or [**IoReleaseCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) out of order, or if the driver exits the routine before releasing the spin lock.
+For example, the **CancelSpinLock** rule is violated if the driver calls [**IoAcquireCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)) or [**IoReleaseCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) out of order, or if the driver exits the routine before releasing the spin lock.
 
 ### <span id="trace_the_defect_path"></span><span id="TRACE_THE_DEFECT_PATH"></span>Trace the Defect Path
 
 When the **Defect Viewer** window opens, the element in the **Trace Tree** pane that represents the first critical driver call in the defect path is selected. In the **Source Code** pane, the associated line of source code is highlighted in blue.
 
-The following screen shot shows the opening view of the **Static Driver Verifier Defect Viewer** window for a violation of the [CancelSpinLock](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-cancelspinlock) rule by the Fail\_Driver1 sample driver. In this example, the first driver call in the path to a violation of the CancelSpinLock rule is a call to [**IoAcquireCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)) in the driver's **DispatchSystemControl** routine.
+The following screen shot shows the opening view of the **Static Driver Verifier Defect Viewer** window for a violation of the [CancelSpinLock](./wdm-cancelspinlock.md) rule by the Fail\_Driver1 sample driver. In this example, the first driver call in the path to a violation of the CancelSpinLock rule is a call to [**IoAcquireCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)) in the driver's **DispatchSystemControl** routine.
 
 ![screen shot of the opening view of the static driver verifier defect viewer window for a violation of the cancelspinlock rule](images/sdv-tracetree.png)
 
@@ -119,12 +118,4 @@ You can also click the **Close** button (**X**) for the **Defect Viewer**. It is
 The following screen shot shows how to close the Defect Viewer.
 
 ![screen shot showing how to close the defect viewer for a rule](images/sdv-defectviewerclose.png)
-
- 
-
- 
-
-
-
-
 

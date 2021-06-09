@@ -1,7 +1,6 @@
 ---
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
-ms.assetid: e0df70ca-cea3-44a1-b5ff-407f72a216f9
 ms.date: 04/20/2017
 ms.localizationpriority: High
 ---

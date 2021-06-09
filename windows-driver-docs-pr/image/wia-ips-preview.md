@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PREVIEW
 description: The WIA\_IPS\_PREVIEW property indicates the preview mode for a device.
-ms.assetid: 06caadc7-2a65-4c54-8d63-4aa1c17186de
 keywords: ["WIA_IPS_PREVIEW Imaging Devices"]
 topic_type:
 - apiref
@@ -26,8 +25,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application sets WIA\_IPS\_PREVIEW to place a device into a preview mode.
 
@@ -58,8 +56,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PREVIE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

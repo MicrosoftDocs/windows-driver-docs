@@ -1,5 +1,5 @@
 ---
-Description: Property Deletion
+description: Property Deletion
 title: Property Deletion
 ms.date: 04/20/2017
 ms.localizationpriority: medium

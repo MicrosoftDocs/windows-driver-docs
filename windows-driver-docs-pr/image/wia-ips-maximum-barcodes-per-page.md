@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE
 description: The WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
-ms.assetid: 9DA59D24-3483-4663-8B6A-54EC53A3466D
 keywords: ["WIA_IPS_MAXIMUM_BARCODES_PER_PAGE Imaging Devices"]
 topic_type:
 - apiref
@@ -29,15 +28,13 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 A value of 0 means "no maximum." The application can decrease the current value of this property in order to reduce the time spent on barcode detection and increase the scan speed.
 
 This property is required for all Barcode Reader items, but it can be implemented as a range container containing only the value of 0 (minimum equal with maximum and set to 0, step size of 0).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

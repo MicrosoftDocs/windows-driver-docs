@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_FNUMBER
 description: The WIA\_DPC\_FNUMBER property corresponds to the aperture of the lens, in units of the f-stop number scaled by 100.
-ms.assetid: 85f3fbc8-8b20-45a7-8ed6-0d22ac7d7f6f
 keywords: ["WIA_DPC_FNUMBER Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The setting of the WIA\_DPC\_FNUMBER property is typically valid only when the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE\_MANUAL or EXPOSUREMODE\_APERTURE\_PRIORITY.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

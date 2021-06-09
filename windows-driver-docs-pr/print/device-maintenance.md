@@ -1,7 +1,6 @@
 ---
 title: Device Maintenance
 description: A device maintenance feature has been introduced in Windows 8.1 and later versions of Windows.
-ms.assetid: 310E92A9-F751-4346-9B2D-0578A136AD20
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -24,11 +23,11 @@ Because the interface is asynchronous, the caller does not have to wait for a re
 
 The following interfaces have been introduced in Windows (code-named “Blue”) to implement the device maintenance feature.
 
-[**IPrinterBidiSetRequestCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterbidisetrequestcallback)
+[**IPrinterBidiSetRequestCallback**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterbidisetrequestcallback)
 
-[**IPrinterExtensionAsyncOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionasyncoperation)
+[**IPrinterExtensionAsyncOperation**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionasyncoperation)
 
-[**IPrinterQueue2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)
+[**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)
 
 ## Initiating a device maintenance Session
 
@@ -86,9 +85,6 @@ public class BidiSetResultCallback :
 Device maintenance is supported in UWP device apps after the app is invoked via any of the three entry points.
 
 ## Related topics
-[**IPrinterBidiSetRequestCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterbidisetrequestcallback)  
-[**IPrinterExtensionAsyncOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionasyncoperation)  
-[**IPrinterQueue2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)  
-
-
-
+[**IPrinterBidiSetRequestCallback**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterbidisetrequestcallback)  
+[**IPrinterExtensionAsyncOperation**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionasyncoperation)  
+[**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)

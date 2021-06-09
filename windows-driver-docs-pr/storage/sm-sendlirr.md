@@ -1,7 +1,6 @@
 ---
 title: SM\_SendLIRR function
 description: The SM\_SendLIRR WMI method sends a link incident record registration (LIRR) command through the indicated local port to the indicated remote port.
-ms.assetid: 52564ec3-4a42-4df0-b89f-2a8415404172
 keywords: ["SM_SendLIRR function Storage Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 The SM\_SendLIRR WMI method sends a link incident record registration (LIRR) command through the indicated local port to the indicated remote port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendLIRR(
@@ -37,8 +35,7 @@ void SM_SendLIRR(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *SourceWWN*   
 A worldwide name (WWN) for the local port through which the LIRR command is sent. This information is delivered to the miniport driver in the SourceWWN member of a SM\_SendLIRR\_IN structure.
@@ -67,18 +64,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *RespBuffer*   
 The results of the LIRR command. The miniport driver returns this information in the RespBuffer member of a SM\_SendLIRR\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -102,14 +96,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendlirr_out)
+[**SM\_SendLIRR\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendlirr_out)
 
  
-
- 
-
-
-
-
-
 

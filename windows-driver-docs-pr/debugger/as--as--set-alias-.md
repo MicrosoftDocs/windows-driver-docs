@@ -1,7 +1,6 @@
 ---
 title: as, aS (Set Alias)
 description: The as and aS commands define a new alias or redefine an existing one.
-ms.assetid: 6e42122b-5a18-403b-a19a-1346bea8da12
 keywords: ["as, aS (Set Alias) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -114,8 +113,7 @@ Specifies the commands whose outputs become the alias equivalent. This string ca
 
 For more information about how to use aliases, see [Using Aliases](using-aliases.md).
 
-Remarks
--------
+## Remarks
 
 If you do not use any switches, the **as** command uses the rest of the line as the alias equivalent.
 

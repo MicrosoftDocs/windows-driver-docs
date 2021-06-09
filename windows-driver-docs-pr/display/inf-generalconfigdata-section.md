@@ -1,7 +1,6 @@
 ---
 title: INF GeneralConfigData Section
 description: INF GeneralConfigData Section
-ms.assetid: 49b00396-479f-471a-8c79-bb8ef33ebcaa
 keywords:
 - GeneralConfigData section
 - INF files WDK Windows 2000 display

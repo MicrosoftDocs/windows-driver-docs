@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BITMAP_PATTERN_AND_MASK
 description: WDI_TLV_BITMAP_PATTERN_AND_MASK is an unused TLV.
-ms.assetid: 665529FA-7BAF-4700-86EF-ADA7D8781423
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BITMAP_PATTERN_AND_MASK Network Drivers Starting with Windows Vista
@@ -13,8 +12,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_BITMAP\_PATTERN\_AND\_MASK is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

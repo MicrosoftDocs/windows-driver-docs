@@ -1,7 +1,6 @@
 ---
 title: OUTPUTDUPL\_CONTEXT\_DEBUG\_INFO structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 9b8915a2-e62e-474a-ac03-199ce6d252c2
+description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_INFO structure, which is reserved for system use. Do not use in your driver.
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_INFO structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _OUTPUTDUPL_CONTEXT_DEBUG_INFO {
@@ -34,8 +32,7 @@ typedef struct _OUTPUTDUPL_CONTEXT_DEBUG_INFO {
 } OUTPUTDUPL_CONTEXT_DEBUG_INFO;
 ```
 
-Members
--------
+## Members
 
 **Status**
 
@@ -49,8 +46,7 @@ Members
 
 **ProcessName**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: Multipacket Messages
 description: Multipacket Messages
-ms.assetid: 58979799-4618-43b9-a6dc-0635f6ade9b3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,13 +11,13 @@ ms.localizationpriority: medium
 
 
 
-Multiple [**REMOTE\_NDIS\_PACKET\_MSG**](https://docs.microsoft.com/previous-versions/ff570635(v=vs.85)) messages may be sent in a single transfer, in either direction. A multipacket message is formed by concatenating multiple **REMOTE\_NDIS\_PACKET\_MSG** elements. The maximum length of such a transfer is governed by the *MaxTransferSize* parameter passed in the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](https://docs.microsoft.com/previous-versions/ff570624(v=vs.85)) and response messages. The host will also limit the number of messages it bundles into a single transfer to the *MaxPacketsPerMessage* parameter returned by the device in the [**REMOTE\_NDIS\_INITIALIZE\_CMPLT**](https://docs.microsoft.com/previous-versions/ff570621(v=vs.85)) response message.
+Multiple [**REMOTE\_NDIS\_PACKET\_MSG**](/previous-versions/ff570635(v=vs.85)) messages may be sent in a single transfer, in either direction. A multipacket message is formed by concatenating multiple **REMOTE\_NDIS\_PACKET\_MSG** elements. The maximum length of such a transfer is governed by the *MaxTransferSize* parameter passed in the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](/previous-versions/ff570624(v=vs.85)) and response messages. The host will also limit the number of messages it bundles into a single transfer to the *MaxPacketsPerMessage* parameter returned by the device in the [**REMOTE\_NDIS\_INITIALIZE\_CMPLT**](/previous-versions/ff570621(v=vs.85)) response message.
 
-The difference from the single-packet message case is that the *MessageLength* field in each [**REMOTE\_NDIS\_PACKET\_MSG**](https://docs.microsoft.com/previous-versions/ff570635(v=vs.85)) header includes some additional padding bytes. These padding bytes are added to all but the last **REMOTE\_NDIS\_PACKET\_MSG** such that the succeeding REMOTE\_NDIS\_PACKET\_MSG starts at an appropriate byte boundary. For messages sent from the device to the host, this padding should result in each REMOTE\_NDIS\_PACKET\_MSG starting at a byte offset that is a multiple of 8 bytes starting from the beginning of the multipacket message. When the host sends a multipacket message to the device, it will adhere to the *PacketAlignmentFactor* specified by the device in the [**REMOTE\_NDIS\_INITIALIZE\_CMPLT**](https://docs.microsoft.com/previous-versions/ff570621(v=vs.85)) response message.
+The difference from the single-packet message case is that the *MessageLength* field in each [**REMOTE\_NDIS\_PACKET\_MSG**](/previous-versions/ff570635(v=vs.85)) header includes some additional padding bytes. These padding bytes are added to all but the last **REMOTE\_NDIS\_PACKET\_MSG** such that the succeeding REMOTE\_NDIS\_PACKET\_MSG starts at an appropriate byte boundary. For messages sent from the device to the host, this padding should result in each REMOTE\_NDIS\_PACKET\_MSG starting at a byte offset that is a multiple of 8 bytes starting from the beginning of the multipacket message. When the host sends a multipacket message to the device, it will adhere to the *PacketAlignmentFactor* specified by the device in the [**REMOTE\_NDIS\_INITIALIZE\_CMPLT**](/previous-versions/ff570621(v=vs.85)) response message.
 
-Note that neither the combined length of a multipacket message nor the number of [**REMOTE\_NDIS\_PACKET\_MSG**](https://docs.microsoft.com/previous-versions/ff570635(v=vs.85)) elements in a combined message is given explicitly in any Remote NDIS defined field. The combined length is implicit in the bus-specific transfer mechanism, and the host or device must walk the *MessageLength* fields of the combined message to determine the number of combined messages.
+Note that neither the combined length of a multipacket message nor the number of [**REMOTE\_NDIS\_PACKET\_MSG**](/previous-versions/ff570635(v=vs.85)) elements in a combined message is given explicitly in any Remote NDIS defined field. The combined length is implicit in the bus-specific transfer mechanism, and the host or device must walk the *MessageLength* fields of the combined message to determine the number of combined messages.
 
-The following table is an example of a multipacket message that is made up of two REMOTE\_NDIS\_PACKET\_MSGs, sent from the host to the device. During the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](https://docs.microsoft.com/previous-versions/ff570624(v=vs.85)) exchange, the device requested a *PacketAlignmentFactor* of 3 (an alignment along an 8-byte boundary).
+The following table is an example of a multipacket message that is made up of two REMOTE\_NDIS\_PACKET\_MSGs, sent from the host to the device. During the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](/previous-versions/ff570624(v=vs.85)) exchange, the device requested a *PacketAlignmentFactor* of 3 (an alignment along an 8-byte boundary).
 
 <table>
 <colgroup>
@@ -117,7 +116,7 @@ The following table is an example of a multipacket message that is made up of tw
 <tr class="even">
 <td align="left"><p>72</p></td>
 <td align="left"><p>4</p></td>
-<td align="left"><p>MessageType (start of second <a href="https://docs.microsoft.com/previous-versions/ff570635(v=vs.85)" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_PACKET_MSG&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff570635(v=vs.85))"><strong>REMOTE_NDIS_PACKET_MSG</strong></a>)</p></td>
+<td align="left"><p>MessageType (start of second <a href="/previous-versions/ff570635(v=vs.85)" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_PACKET_MSG&lt;/strong&gt;](/previous-versions/ff570635(v=vs.85))"><strong>REMOTE_NDIS_PACKET_MSG</strong></a>)</p></td>
 <td align="left"><p>0x1</p></td>
 </tr>
 <tr class="odd">
@@ -190,12 +189,4 @@ The following table is an example of a multipacket message that is made up of tw
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

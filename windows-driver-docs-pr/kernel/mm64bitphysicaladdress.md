@@ -1,7 +1,6 @@
 ---
 title: Windows kernel global variables
 description: Kernel global variables.
-ms.assetid: 1ea5c4e3-ed70-449c-a49e-b1e3c892e981
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -58,7 +57,7 @@ Kernel global variables.
 <td><code>extern BOOLEAN  NLS_MB_CODE_PAGE_TAG;</code></td>
 <td><p>Specifies whether a code page is a single-byte or multibyte code page.</p>
 <p><strong>NLS_MB_CODE_PAGE_TAG</strong> is <strong>TRUE</strong> for multibyte code pages and <strong>FALSE</strong> for single-byte code pages.</p>
-<p>NLS_MB_CODE_PAGE_TAG is reserved for system use. From user mode, call <a href="https://go.microsoft.com/fwlink/p/?linkid=121902" data-raw-source="[GetCPInfoEx](https://go.microsoft.com/fwlink/p/?linkid=121902)">GetCPInfoEx</a> instead.</p>
+<p>NLS_MB_CODE_PAGE_TAG is reserved for system use. From user mode, call <a href="/previous-versions//ms776330(v=vs.85)" data-raw-source="[GetCPInfoEx](/previous-versions//ms776330(v=vs.85))">GetCPInfoEx</a> instead.</p>
 <p>When possible, your application should use Unicode instead of code pages.</p></td>
 </tr>
 </tbody>
@@ -68,9 +67,6 @@ Kernel global variables.
 
 ## Related topics
 [**EPROCESS**](eprocess.md)  
-[GetCPInfoEx](https://go.microsoft.com/fwlink/p/?linkid=121902)  
+[GetCPInfoEx](/previous-versions//ms776330(v=vs.85))  
 [**MM\_BAD\_POINTER**](mm-bad-pointer.md#mm_bad_pointer)  
-[Performing DMA in 64-Bit Windows](performing-dma-in-64-bit-windows.md)  
-
-
-
+[Performing DMA in 64-Bit Windows](performing-dma-in-64-bit-windows.md)

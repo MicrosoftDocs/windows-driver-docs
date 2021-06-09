@@ -1,7 +1,6 @@
 ---
 title: up (Unassemble from Physical Memory)
 description: The up command displays an assembly translation of the specified program code in physical memory.
-ms.assetid: 4db66566-b7b8-4f1e-9492-b4b78016b45a
 keywords: ["up (Unassemble from Physical Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +30,7 @@ up
 Specifies the memory range in physical memory that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the beginning of the memory range in physical memory to disassemble. Eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor) are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
+Specifies the beginning of the memory range in physical memory to disassemble. Eight instructions on an x86-based processor are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -62,10 +61,9 @@ Specifies the beginning of the memory range in physical memory to disassemble. E
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
-If you do not specify a parameter for the **up** command, the disassembly begins at the current address and extends eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor).
+If you do not specify a parameter for the **up** command, the disassembly begins at the current address and extends eight instructions on an x86-based processor.
 
 Do not confuse this command with the [**u (Unassemble)**](u--unassemble-.md). The **up** command disassembles only physical memory, while the **u** command disassembles only virtual memory.
 

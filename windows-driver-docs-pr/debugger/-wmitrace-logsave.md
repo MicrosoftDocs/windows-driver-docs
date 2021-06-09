@@ -1,7 +1,6 @@
 ---
 title: wmitrace.logsave
 description: The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file.
-ms.assetid: 713fea09-d405-4142-b2e8-29c813a4c3b6
 keywords: ["wmitrace.logsave Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,8 +43,7 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about Tracelog, see "Tracelog" in the Windows Driver Kit (WDK).
 
-Remarks
--------
+## Remarks
 
 This extension displays only the traces that are in memory at the time. It does not display trace messages that have been flushed from the buffers and delivered to an event trace log file or to a trace consumer.
 

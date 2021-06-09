@@ -1,7 +1,6 @@
 ---
 title: Documents element
 description: The required Documents element contains the actual scan characteristics that are used during image acquisition, plus a collection of all Document elements that the scan job contains.
-ms.assetid: b547ed17-b533-4dde-8194-dee1b0f9f85f
 keywords: ["Documents element Imaging Devices"]
 topic_type:
 - apiref
@@ -18,8 +17,7 @@ ms.localizationpriority: medium
 
 The required **Documents** element contains the actual scan characteristics that are used during image acquisition, plus a collection of all **Document** elements that the scan job contains.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Documents>
@@ -27,8 +25,7 @@ Usage
 </wscn:Documents>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

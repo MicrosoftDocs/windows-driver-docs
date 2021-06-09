@@ -1,7 +1,6 @@
 ---
 title: Configuration Section
 description: Configuration Section
-ms.assetid: 77f275d9-6cee-40a5-b118-cb82f6d2c9d3
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

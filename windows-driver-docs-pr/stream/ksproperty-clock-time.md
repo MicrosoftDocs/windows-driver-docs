@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_TIME
 description: Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presentation time on a clock.
-ms.assetid: 42bae8fa-bff0-4411-bf32-5aa4da3e4f02
 keywords: ["KSPROPERTY_CLOCK_TIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presen
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -55,8 +54,7 @@ Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presen
 
  
 
-Remarks
--------
+## Remarks
 
 This property returns a value of type LONGLONG, specifying the current presentation time in 100-nanosecond units.
 
@@ -64,8 +62,7 @@ The presentation time of a clock can be reversed, unlike the physical time. The 
 
 Clocks are not required to support a 100-nanosecond resolution. To determine the clock resolution, clients can use the [**KSPROPERTY\_CLOCK\_RESOLUTION**](ksproperty-clock-resolution.md) request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,13 +81,4 @@ Requirements
 
 
 [KSPROPSETID\_Clock](kspropsetid-clock.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x18B SECURE_KERNEL_ERROR
 description: The SECURE_KERNEL_ERROR bug check has a value of 0x0000018B. This indicates that the secure kernel has encountered a fatal error.
-ms.assetid: 333355E3-6966-4BEB-A649-DA22B973EE84
 keywords: ["Bug Check 0x18B SECURE_KERNEL_ERROR", "SECURE_KERNEL_ERROR"]
 ms.date: 05/23/2017
 topic_type:

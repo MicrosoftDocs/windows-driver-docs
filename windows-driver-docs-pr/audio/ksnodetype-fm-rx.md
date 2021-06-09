@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_FM\_RX
 description: KSNODETYPE\_FM\_RX
-ms.assetid: 61A8EC9A-55E9-44F7-A80D-8B2D4FBD95B5
 keywords: ["KSNODETYPE_FM_RX Audio Devices"]
 topic_type:
 - apiref

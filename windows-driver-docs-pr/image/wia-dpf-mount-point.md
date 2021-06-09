@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPF\_MOUNT\_POINT
 description: The WIA\_DPF\_MOUNT\_POINT property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 4bcde680-ff52-46a1-9369-846acfc4f52b
 keywords: ["WIA_DPF_MOUNT_POINT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

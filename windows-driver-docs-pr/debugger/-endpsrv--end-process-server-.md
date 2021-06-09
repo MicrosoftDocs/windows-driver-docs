@@ -1,7 +1,6 @@
 ---
 title: .endpsrv (End Process Server)
 description: The .endpsrv command causes the current process server or KD connection server to close.
-ms.assetid: 3f8d0a85-f0f4-4c13-ab52-e4d99ba3599c
 keywords: [".endpsrv (End Process Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,8 +55,7 @@ You can use this command only when you are performing remote debugging through a
 
 For more information about these servers, see [Process Servers (User Mode)](process-servers--user-mode-.md) or [KD Connection Servers (Kernel Mode)](kd-connection-servers--kernel-mode-.md)
 
-Remarks
--------
+## Remarks
 
 The **.endpsrv** command terminates the process server or KD connection server currently connected to your smart client.
 

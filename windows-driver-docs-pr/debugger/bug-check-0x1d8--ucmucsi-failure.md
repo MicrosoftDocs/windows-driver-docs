@@ -29,8 +29,7 @@ The UCMUCSI\_FAILURE bug check has a value of 0x000001D8. It indicates that the 
 |3| If non-zero, the pointer to additional information (use `dt UcmUcsiCx!UCMUCSICX_TRIAGE`). |
 |4| Reserved. |
 
-## Cause
------
+## ## Cause
 
 The UcmUcsi driver has encountered an error. The driver has found settings to trigger a system crash instead of a livedump.
 
@@ -44,8 +43,7 @@ Run `!rcdrkd.rcdrlogdump UcmUcsiCx` for more information on the cause of this fa
 For more information on analyzing this bug check, see this blog post - [Debugging UCSI firmware failures](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/Debugging-UCSI-firmware-failures/ba-p/283226).
 
 
-## See Also
-----------
+## ## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

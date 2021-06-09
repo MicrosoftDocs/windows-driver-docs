@@ -1,14 +1,13 @@
 ---
 title: SoftwareInfo
 description: SoftwareInfo
-ms.assetid: 736040e9-76cd-4f59-b16a-1e8fc3b687fa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # SoftwareInfo
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The SoftwareInfo element is the parent element of the [SoftwareInfo XML schema](softwareinfo-xml-schema.md).
 

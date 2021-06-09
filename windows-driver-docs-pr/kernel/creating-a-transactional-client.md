@@ -1,7 +1,6 @@
 ---
 title: Creating a Transactional Client
 description: Creating a Transactional Client
-ms.assetid: 75d4758b-dfba-431b-9bfa-9dcb98c2a7cc
 keywords: ["transactional clients WDK KTM", "transactional clients WDK KTM , creating transactional clients"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -18,11 +17,11 @@ Typically, a transactional client that uses kernel-mode KTM must perform the fol
 
 1.  Create a transaction object.
 
-    A call to [**ZwCreateTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction) creates a transaction object, provides an object handle, and assigns an object identifier (a GUID) that the client can pass to the resource manager to identify the transaction.
+    A call to [**ZwCreateTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction) creates a transaction object, provides an object handle, and assigns an object identifier (a GUID) that the client can pass to the resource manager to identify the transaction.
 
 2.  Obtain the transaction object's identifier.
 
-    The client can call [**ZwQueryInformationTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction) to obtain the object identifier.
+    The client can call [**ZwQueryInformationTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction) to obtain the object identifier.
 
 3.  Pass the transaction object's identifier to a resource manager.
 
@@ -34,7 +33,7 @@ Typically, a transactional client that uses kernel-mode KTM must perform the fol
 
 5.  Commit or roll back the transaction.
 
-    If all the resource operations succeed, the client must call [**ZwCommitTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) to make the operations permanent. If an operation fails, the client must call [**ZwRollbackTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction) instead of **ZwCommitTransaction**. For example, if the client of a database manager determines that one of a series of write operations failed, the client must call **ZwRollbackTransaction** so that none of the write operations become permanent.
+    If all the resource operations succeed, the client must call [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) to make the operations permanent. If an operation fails, the client must call [**ZwRollbackTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction) instead of **ZwCommitTransaction**. For example, if the client of a database manager determines that one of a series of write operations failed, the client must call **ZwRollbackTransaction** so that none of the write operations become permanent.
 
     Clients can call **ZwCommitTransaction** and **ZwRollbackTransaction** either synchronously or asynchronously. If clients call these routines synchronously, the routines do not return until the commit or rollback operation is complete.
 
@@ -42,7 +41,7 @@ Typically, a transactional client that uses kernel-mode KTM must perform the fol
 
 6.  Close the transaction object handle.
 
-    After the client has finished processing the transaction, it must call [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) to close the transaction object's handle
+    After the client has finished processing the transaction, it must call [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) to close the transaction object's handle
 
 A TPS might include more than one resource manager. If a client's transaction includes operations on multiple resources, such as two databases that two resource managers support, the client typically does the following:
 
@@ -56,12 +55,7 @@ A TPS might include more than one resource manager. If a client's transaction in
 
 If your TPS includes a *superior transaction manager*, transactional clients typically do not call KTM. For more information about superior transaction managers and their clients, see [Creating a Superior Transaction Manager](creating-a-superior-transaction-manager.md).
 
-Transactional clients can call [**ZwSetInformationTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationtransaction) to set transaction-specific information. For example, a client can set a time-out value for the transaction or supply a descriptive character string. Clients can call [**ZwQueryInformationTransaction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction) to retrieve information about a transaction. For example, a client can call this routine to determine whether a transaction has been committed or rolled back.
+Transactional clients can call [**ZwSetInformationTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationtransaction) to set transaction-specific information. For example, a client can set a time-out value for the transaction or supply a descriptive character string. Clients can call [**ZwQueryInformationTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction) to retrieve information about a transaction. For example, a client can call this routine to determine whether a transaction has been committed or rolled back.
 
  
-
- 
-
-
-
 

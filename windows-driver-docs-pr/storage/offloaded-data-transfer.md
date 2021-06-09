@@ -4,7 +4,6 @@ description: Offloaded Data Transfer
 appliesto:
 - Windows Server 2019
 - Windows Server 2016
-ms.assetid: EDFA6AFB-7D14-44F8-A105-E74182D26398
 ms.date: 10/04/2019
 ms.localizationpriority: medium
 ---
@@ -45,7 +44,7 @@ A large offload write request is split using the following algorithm to ensure a
 
 Synchronous offload read and offload write SCSI commands reduce the complication of MPIO and cluster failover scenarios. Windows expects the copy manager to complete the synchronous offload read/write SCSI commands within 4 seconds.
 
-Applications can use [FSCTL](https://docs.microsoft.com/windows-hardware/drivers/ifs/offloaded-data-transfers), [DSM IOCTL](https://docs.microsoft.com/windows-hardware/drivers/storage/data-set-management-overview), or [SCSI_PASS_THROUGH](https://docs.microsoft.com/windows-hardware/drivers/storage/handling-scsi-pass-through-requests) APIs to interact with storage arrays and execute copy offload operations. To avoid data corruption or system instability, Windows restricts applications from writing directly to a volume that is mounted by a file system without first obtaining exclusive access to the volume. This is due to the condition that a write to the volume may collide with the file system writes. When such collisions occur, the contents of the volume may be left in an inconsistent state.
+Applications can use [FSCTL](../ifs/offloaded-data-transfers.md), [DSM IOCTL](./data-set-management-overview.md), or [SCSI_PASS_THROUGH](./handling-scsi-pass-through-requests.md) APIs to interact with storage arrays and execute copy offload operations. To avoid data corruption or system instability, Windows restricts applications from writing directly to a volume that is mounted by a file system without first obtaining exclusive access to the volume. This is due to the condition that a write to the volume may collide with the file system writes. When such collisions occur, the contents of the volume may be left in an inconsistent state.
 
 ### Offload Read Operations
 

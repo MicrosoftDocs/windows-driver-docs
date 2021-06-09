@@ -1,7 +1,6 @@
 ---
 title: loadermemorylist
 description: The loadermemorylist extension displays the memory allocation list that the Windows boot loader passes to Windows.
-ms.assetid: 3e5dff7a-ea8f-4029-93e3-7c160487e968
 keywords: ["OSLOADER", "loadermemorylist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,8 +53,7 @@ Specifies the address of a list header.
 
  
 
-Remarks
--------
+## Remarks
 
 This extension is designed to be used at the beginning of the system boot process while Ntldr is running. It displays a memory allocation list that includes the start, end, and type of each page range.
 

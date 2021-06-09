@@ -1,7 +1,6 @@
 ---
 title: Sample Print Processor
 description: Sample Print Processor
-ms.assetid: 42ab44f2-dba4-4b52-870a-2cb42fc2d0a9
 keywords:
 - print processors WDK , samples
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: .srcnoisy (Noisy Source Loading)
 description: The .srcnoisy command controls the verbosity level for source file loading.
-ms.assetid: c57e0d0a-7903-455a-9a92-fab75f10ca80
 keywords: [".srcnoisy (Noisy Source Loading) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,8 +64,7 @@ Displays all information displayed by options 1 and 2.
 
  
 
-Remarks
--------
+## Remarks
 
 With no parameters, **.srcnoisy** will display the current status of noisy source loading.
 

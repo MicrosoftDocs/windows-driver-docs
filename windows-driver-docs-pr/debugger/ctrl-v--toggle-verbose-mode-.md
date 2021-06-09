@@ -1,7 +1,6 @@
 ---
 title: CTRL+V (Toggle Verbose Mode)
 description: The CTRL+V key toggles verbose mode on and off.
-ms.assetid: 1aca1452-86dd-4573-8ad0-e46aa474a324
 keywords: ["CTRL+V (Toggle Verbose Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,8 +61,7 @@ CTRL+ALT+V
 
  
 
-Remarks
--------
+## Remarks
 
 When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. Every MODULE LOAD operation that is sent to the debugger will be displayed. And every time a driver or DLL is loaded by the operating system, the debugger will be notified.
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x55 DATA_COHERENCY_EXCEPTION
 description: The DATA_COHERENCY_EXCEPTION bug check has a value of 0x00000055.This bug check appears very infrequently.
-ms.assetid: f7b585ec-5b76-44eb-b3fa-17684152156d
 keywords: ["Bug Check 0x55 DATA_COHERENCY_EXCEPTION", "DATA_COHERENCY_EXCEPTION"]
 ms.date: 05/23/2017
 topic_type:
@@ -25,7 +24,7 @@ This bug check appears very infrequently.
 
 
 ## Resolution 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 

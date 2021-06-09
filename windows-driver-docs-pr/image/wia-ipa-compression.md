@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_COMPRESSION
 description: The WIA\_IPA\_COMPRESSION property contains the current compression type that is used. The WIA minidriver creates and maintains this property.
-ms.assetid: 6853dc51-bde0-4548-92f6-678b55cf6275
 keywords: ["WIA_IPA_COMPRESSION Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write (image acquisitions); read-only (image storage)
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPA\_COMPRESSION property to determine the image compression type, or the application sets this property to configure the compression setting.
 
@@ -99,8 +97,7 @@ All WIA 2.0 minidrivers must set the initial value of this property to its defau
 
 The access rights of the WIA\_IPA\_COMPRESSION property are read/write for all image acquisitions but read-only for stored image items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

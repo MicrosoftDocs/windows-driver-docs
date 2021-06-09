@@ -1,7 +1,6 @@
 ---
-title: Security Checks
+title: Security checks in file systems
 description: Security Checks
-ms.assetid: 2883910a-72f3-4be9-b1dd-6fb02abffe73
 keywords:
 - security WDK file systems , security checks
 - security checks WDK file systems
@@ -10,11 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Security Checks
-
-
-## <span id="ddk_security_checks_if"></span><span id="DDK_SECURITY_CHECKS_IF"></span>
-
+# Security checks in file systems
 
 The bulk of the file system's responsibility with respect to security is in the area of security checks. These are implemented within the file system because it is the part of Windows that actually "owns" the object. The goal of the security implementation is to separate the policy (implemented by the file system) for protecting its objects, and the mechanism (implemented by the Security Reference Monitor) for making access decisions.
 
@@ -24,24 +19,16 @@ This section includes the following topics:
 
 [Applying Security Descriptors on the Device Object](applying-security-descriptors-on-the-device-object.md)
 
-[IRP\_MJ\_CREATE](irp-mj-create-dispatch-routine.md)
+[Security checks on IRP_MJ_CREATE](irp-mj-create-dispatch-routine.md)
 
-[IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY](irp-mj-query-security-and-irp-mj-set-security.md)
+[Security checks on IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY](irp-mj-query-security-and-irp-mj-set-security.md)
 
-[IRP\_MJ\_DIRECTORY\_CONTROL](irp-mj-directory-control2.md)
+[Security checks on IRP_MJ_DIRECTORY_CONTROL](irp-mj-directory-control2.md)
 
-[IRP\_MJ\_FILE\_SYSTEM\_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control)
+[Security checks on IRP_MJ_FILE_SYSTEM_CONTROL](./irp-mj-file-system-control.md)
 
-[IRP\_MJ\_SET\_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-information)
+[Security checks on IRP_MJ_SET_INFORMATION](./irp-mj-set-information.md)
 
 [Impersonation](impersonation.md)
 
 [Process and Thread Termination Issues](process-and-thread-termination-issues.md)
-
- 
-
- 
-
-
-
-

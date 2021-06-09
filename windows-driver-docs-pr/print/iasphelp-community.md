@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 39e8dff6-9eaf-43dd-b8ca-46982f3eae18
 keywords: ["get_Community method Print Devices", "get_Community method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Community method"]
 topic_type:
 - apiref
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **Community** property enables an ASP Web page to obtain a print server's Simple Network Management Protocol (SNMP) community name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_Community(
@@ -32,14 +30,12 @@ HRESULT get_Community(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a pointer to a community name string.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -84,8 +80,7 @@ objPrinter.Open strPrinter
 CommName = objPrinter.Community
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

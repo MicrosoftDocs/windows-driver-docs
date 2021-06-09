@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT to indicate association results.
-ms.assetid: dc025aec-30f4-4a78-b449-acc49d13b507
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT Network Drivers Starting with Windows Vista
@@ -24,12 +23,11 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT to indic
 
 | Type                                                                     | Multiple TLV instances allowed | Optional | Description                    |
 |--------------------------------------------------------------------------|--------------------------------|----------|--------------------------------|
-| [**WDI\_TLV\_ASSOCIATION\_RESULT**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-association-result) | X                              |          | A list of association results. |
+| [**WDI\_TLV\_ASSOCIATION\_RESULT**](./wdi-tlv-association-result.md) | X                              |          | A list of association results. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -60,9 +58,4 @@ Requirements
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
  
-
- 
-
-
-
 

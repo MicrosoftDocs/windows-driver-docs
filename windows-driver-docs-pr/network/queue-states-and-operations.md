@@ -1,7 +1,6 @@
 ---
 title: Queue States and Operations
 description: Queue States and Operations
-ms.assetid: 892f8f19-b94e-4950-af88-334c9a8b8c0d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,22 +14,22 @@ ms.localizationpriority: medium
 For each queue, a network adapter must support the following set of operational states:
 
 <a href="" id="undefined"></a>Undefined  
-The queue is not allocated. To allocate a queue, an overlying driver sends an [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-allocate-queue) OID request.
+The queue is not allocated. To allocate a queue, an overlying driver sends an [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](./oid-receive-filter-allocate-queue.md) OID request.
 
 <a href="" id="allocated"></a>Allocated  
-The *Allocated* state is the initial state for a queue. When a queue is in the Allocated state, the overlying driver usually sets filters on the queue with the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) OID or completes the queue allocation with the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete) OID request.
+The *Allocated* state is the initial state for a queue. When a queue is in the Allocated state, the overlying driver usually sets filters on the queue with the [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md) OID or completes the queue allocation with the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](./oid-receive-filter-queue-allocation-complete.md) OID request.
 
 <a href="" id="set"></a>Set  
-In the *Set* state, a queue has at least one filter allocated but the overlying driver has not sent the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete) OID.
+In the *Set* state, a queue has at least one filter allocated but the overlying driver has not sent the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](./oid-receive-filter-queue-allocation-complete.md) OID.
 
 <a href="" id="running"></a>Running  
 In the *Running* state, the queue has filters set, the queue allocation is complete and the miniport adapter is indicating receive packets for the queue.
 
 <a href="" id="paused"></a>Paused  
-In the *Paused* state, the network adapter does not indicate received network data for the queue. Either there were no filters set on the queue before the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete) OID request or all of the filters that were set on the queue were cleared with the [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-clear-filter) OID request.
+In the *Paused* state, the network adapter does not indicate received network data for the queue. Either there were no filters set on the queue before the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](./oid-receive-filter-queue-allocation-complete.md) OID request or all of the filters that were set on the queue were cleared with the [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](./oid-receive-filter-clear-filter.md) OID request.
 
 <a href="" id="dma-stopped"></a>DMA Stopped  
-In the *DMA Stopped* state, a miniport driver received an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-free-queue) OID request. When the DMA is stopped and the driver has issued the DMA-stopped status indication (with [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-receive-queue-state)), the driver enters the Freeing state.
+In the *DMA Stopped* state, a miniport driver received an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](./oid-receive-filter-free-queue.md) OID request. When the DMA is stopped and the driver has issued the DMA-stopped status indication (with [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](./ndis-status-receive-queue-state.md)), the driver enters the Freeing state.
 
 <a href="" id="freeing"></a>Freeing  
 In the *Freeing* state, a miniport driver completes the operations that are required to stop send and receive operations for the queue, and releases the associated resources. After all of the outstanding receive indications are complete, the queue is deleted and the queue is Undefined.
@@ -206,7 +205,7 @@ The primary queue events are defined as follows:
 An overlying driver allocated a queue. For more information about allocating queues, see [Allocating and Freeing VM Queues](allocating-and-freeing-vm-queues.md).
 
 <a href="" id="oid-receive-filter-set-filter---method--set--request"></a>OID\_RECEIVE\_FILTER\_SET\_FILTER - method (set) request  
-An overlying driver set a filter on a queue. If the overlying driver has not sent the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete) OID, the queue is in the Set state. Otherwise, the queue is in the Running state. For more information about setting filters on queues, see [Setting and Clearing VMQ Filters](setting-and-clearing-vmq-filters.md).
+An overlying driver set a filter on a queue. If the overlying driver has not sent the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](./oid-receive-filter-queue-allocation-complete.md) OID, the queue is in the Set state. Otherwise, the queue is in the Running state. For more information about setting filters on queues, see [Setting and Clearing VMQ Filters](setting-and-clearing-vmq-filters.md).
 
 <a href="" id="oid-receive-filter-clear-filter---set-request"></a>OID\_RECEIVE\_FILTER\_CLEAR\_FILTER - set request  
 An overlying driver cleared a filter on a queue. If the last filter was cleared on a running queue, the DMA can be stopped; receive indications are stopped and the queue should be cleared of received data, if any. For more information about clearing filters on queues, see [Setting and Clearing VMQ Filters](setting-and-clearing-vmq-filters.md).
@@ -218,13 +217,7 @@ An overlying driver completed the queue allocation. If there are filters set on 
 A miniport driver can only indicate receive packets for a queue that is in the Running state. For more information about indicating received data for queues, see [VMQ Send and Receive Operations](vmq-send-and-receive-operations.md).
 
 <a href="" id="oid-receive-filter-free-queue-set-request-"></a>OID\_RECEIVE\_FILTER\_FREE\_QUEUE set request.  
-An overlying driver freed a queue. The driver issues the DMA-stopped status indication (with [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-receive-queue-state)), the driver enters the Freeing state. When all of the outstanding receive indications are complete and the queue resources are freed, the queue is undefined.
+An overlying driver freed a queue. The driver issues the DMA-stopped status indication (with [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](./ndis-status-receive-queue-state.md)), the driver enters the Freeing state. When all of the outstanding receive indications are complete and the queue resources are freed, the queue is undefined.
 
  
-
- 
-
-
-
-
 

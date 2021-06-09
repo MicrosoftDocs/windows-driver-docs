@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Core Components
 description: Windows 2000 Core Components
-ms.assetid: e3c560e8-ad75-4187-84c2-f918a201d10e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

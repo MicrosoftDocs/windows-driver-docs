@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_TargetPortal WMI Class
 description: ISCSI\_TargetPortal WMI Class
-ms.assetid: b163b2e7-8f12-4cd2-a682-7b755f28792e
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -25,13 +24,7 @@ class ISCSI_TargetPortal {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortal**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_targetportal) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortal**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_targetportal) data structure.
 
  
-
- 
-
-
-
-
 

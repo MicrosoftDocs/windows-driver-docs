@@ -1,43 +1,33 @@
 ---
 title: Audio Drivers Interfaces
 description: Audio Drivers Interfaces
-ms.assetid: f0c3b2b6-e38b-4088-a70d-749cd772ac4c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
 # Audio Drivers Interfaces
 
-
 In Windows Vista and later Windows operating systems, digital signal processing is referred to as System Effects Audio Processing. This processing is performed by user-mode in-process COM components known as System Effects Audio Processing Objects (sAPOs).
 
 The following topics provide information about the interfaces and the methods that are exposed by the sAPOs.
 
-[IAudioMediaType](https://docs.microsoft.com/windows/desktop/api/audiomediatype/nn-audiomediatype-iaudiomediatype)
+[IAudioMediaType](/windows/win32/api/audiomediatype/nn-audiomediatype-iaudiomediatype)
 
-[IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject)
+[IAudioProcessingObject](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject)
 
-[IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration)
+[IAudioProcessingObjectConfiguration](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration)
 
-[IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt)
+[IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt)
 
 [IAudioSystemEffects2](iaudiosystemeffects2.md)
 
 [IAudioSystemEffects](iaudiosystemeffects.md)
 
-[IAudioSystemEffectsCustomFormats](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffectscustomformats)
+[IAudioSystemEffectsCustomFormats](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffectscustomformats)
 
 [IKeywordDetectorOemAdapter](ikeyworddetectoroemadapter.md)
 
-[IPropertyStore](https://docs.microsoft.com/windows/desktop/api/propsys/nn-propsys-ipropertystore)
+[IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
-[Audio Processing Objects Utility Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536213(v=vs.85))
-
- 
-
- 
-
-
-
-
+[Audio Processing Objects Utility Functions](/previous-versions/windows/hardware/drivers/ff536213(v=vs.85)) 
 

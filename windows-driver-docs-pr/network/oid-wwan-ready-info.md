@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_READY_INFO
 description: OID_WWAN_READY_INFO returns the device ready-state, which includes its Subscriber Identity Module (SIM card).
-ms.assetid: 3e6f6cb7-14fc-4eee-b5d6-d5e0cad46ea2
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_READY_INFO Network Drivers Starting with Windows Vista
@@ -15,12 +14,11 @@ OID\_WWAN\_READY\_INFO returns the device ready-state, which includes its Subscr
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) status notification containing an [**NDIS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure that indicates the MB device's ready-state when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) status notification containing an [**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure that indicates the MB device's ready-state when completing query requests.
 
-Remarks
--------
+## Remarks
 
-For more information about using this OID, see [MB device Readiness](https://docs.microsoft.com/windows-hardware/drivers/network/mb-device-readiness).
+For more information about using this OID, see [MB device Readiness](./mb-device-readiness.md).
 
 Miniport drivers can access device memory or the SIM card when processing query operations, but should not access the provider network.
 
@@ -40,8 +38,7 @@ Miniport drivers should follow these steps to provide a good user experience:
 
 -   Miniport drivers that require a specific firmware revision must ensure that the correct firmware revision is available. If the firmware revision is not available, the miniport driver should complete the event notification transaction by setting **ReadyInfo.ReadyState** to *WwanReadyStateFailure*.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -63,16 +60,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)
+[**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)
 
 [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md)
 
-[MB device Readiness](https://docs.microsoft.com/windows-hardware/drivers/network/mb-device-readiness)
+[MB device Readiness](./mb-device-readiness.md)
 
  
-
- 
-
-
-
 

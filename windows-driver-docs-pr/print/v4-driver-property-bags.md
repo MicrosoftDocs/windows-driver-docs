@@ -1,7 +1,6 @@
 ---
 title: V4 Printer Driver Property Bags
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
-ms.assetid: 4E20303A-BEB3-4928-BA5A-356D978FA2BE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 
-These property bags allow custom properties and feature definitions to be created in a customized UI and then be consumed by the rendering process. All property bags are exposed by using the [**IPrinterScriptablePropertyBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablepropertybag) interface in JavaScript or by using the [**IPrinterPropertyBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterpropertybag) interface in other environments.
+These property bags allow custom properties and feature definitions to be created in a customized UI and then be consumed by the rendering process. All property bags are exposed by using the [**IPrinterScriptablePropertyBag**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablepropertybag) interface in JavaScript or by using the [**IPrinterPropertyBag**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterpropertybag) interface in other environments.
 
 The following table provides an overview of how to use different components to obtain the property bag object from different parts of a v4 print driver.
 
@@ -29,7 +28,7 @@ The following table provides an overview of how to use different components to o
 <tbody>
 <tr class="odd">
 <td>JavaScript constraint script</td>
-<td>The driver and queue property bags are passed to JavaScript constraint scripts using the scriptContext parameter. This parameter is of type <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext" data-raw-source="[&lt;strong&gt;IPrinterScriptContext&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)"><strong>IPrinterScriptContext</strong></a> and contains children:
+<td>The driver and queue property bags are passed to JavaScript constraint scripts using the scriptContext parameter. This parameter is of type <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext" data-raw-source="[&lt;strong&gt;IPrinterScriptContext&lt;/strong&gt;](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)"><strong>IPrinterScriptContext</strong></a> and contains children:
 DriverProperties – refers to the driver property bag.
 QueueProperties – refers to the queue property bag.
 UserProperties – The user property bag.
@@ -43,21 +42,21 @@ QueueProperties – refers to the queue property bag.</td>
 </tr>
 <tr class="odd">
 <td>Printer extension app</td>
-<td>All property bags are passed in as part of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs" data-raw-source="[&lt;strong&gt;IPrinterExtensionEventArgs&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs)"><strong>IPrinterExtensionEventArgs</strong></a> parameter to the OnDriverEvent handler. They are all of type <strong>IPrinterPropertyBag</strong>. They are specified as the following:
+<td>All property bags are passed in as part of the <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs" data-raw-source="[&lt;strong&gt;IPrinterExtensionEventArgs&lt;/strong&gt;](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs)"><strong>IPrinterExtensionEventArgs</strong></a> parameter to the OnDriverEvent handler. They are all of type <strong>IPrinterPropertyBag</strong>. They are specified as the following:
 DriverProperties – refers to the driver property bag.
 UserProperties – The user property bag.
 PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tr>
 <tr class="even">
 <td>UWP device app</td>
-<td>All property bags are passed in during activation using the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext" data-raw-source="[&lt;strong&gt;IPrinterExtensionContext&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext)"><strong>IPrinterExtensionContext</strong></a> object. They are specified as:
+<td>All property bags are passed in during activation using the <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext" data-raw-source="[&lt;strong&gt;IPrinterExtensionContext&lt;/strong&gt;](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext)"><strong>IPrinterExtensionContext</strong></a> object. They are specified as:
 DriverProperties – refers to the driver property bag.
 UserProperties – The user property bag.
 PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tr>
 <tr class="odd">
 <td>XPS rendering filter</td>
-<td><p>XPS filters can access the driver property bag from within the <a href="https://docs.microsoft.com/windows-hardware/drivers/print/print-pipeline-property-bag" data-raw-source="[&lt;strong&gt;Print Filter Pipeline Property Bag&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/print/print-pipeline-property-bag)"><strong>Print Filter Pipeline Property Bag</strong></a> using the property name "DriverPropertyBag", or the defined value XPS_FP_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about DriverPropertyBag:</p>
+<td><p>XPS filters can access the driver property bag from within the <a href="/windows-hardware/drivers/print/print-pipeline-property-bag" data-raw-source="[&lt;strong&gt;Print Filter Pipeline Property Bag&lt;/strong&gt;](./print-pipeline-property-bag.md)"><strong>Print Filter Pipeline Property Bag</strong></a> using the property name "DriverPropertyBag", or the defined value XPS_FP_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about DriverPropertyBag:</p>
 <strong>Property type:</strong> VT_UNKNOWN
 <strong>Description:</strong> A pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrinterPropertyBag interface to the driver property bag.
 <p>And XPS filters can access the queue property bag from within the Print Filter Pipeline Property Bag using the property name "QueuePropertyBag", or the defined value XPS_FP_QUEUE_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about QueuePropertyBag:</p>
@@ -102,7 +101,7 @@ The follwoing code snippet shows a DEVMODE Property Bag Mapping XML Sample.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
+<Properties xmlns="https://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
   <Property Name="FabrikamAccountCode">
     <String Length="32"></String>
   </Property>  
@@ -180,7 +179,7 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Properties xmlns= "http://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
+<Properties xmlns= "https://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
   <Property Name="Name1">
     <String>String1</String>
   </Property>
@@ -198,12 +197,9 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 ![queue property bag xml schema](images/queuepropbagschem.png)
 
 ## Related topics
-[**IPrinterExtensionContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext)  
-[**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs)  
-[**IPrinterPropertyBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterpropertybag)  
-[**IPrinterScriptablePropertyBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablepropertybag)  
-[**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
-[**Print Filter Pipeline Property Bag**](https://docs.microsoft.com/windows-hardware/drivers/print/print-pipeline-property-bag)  
-
-
-
+[**IPrinterExtensionContext**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext)  
+[**IPrinterExtensionEventArgs**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs)  
+[**IPrinterPropertyBag**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterpropertybag)  
+[**IPrinterScriptablePropertyBag**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablepropertybag)  
+[**IPrinterScriptContext**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
+[**Print Filter Pipeline Property Bag**](./print-pipeline-property-bag.md)

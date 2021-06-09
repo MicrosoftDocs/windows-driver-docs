@@ -1,7 +1,6 @@
 ---
 title: Using Serial.sys and Serenum.sys
 description: Using Serial.sys and Serenum.sys
-ms.assetid: 2dcf22c8-0666-4b58-8fd3-97a4d17eaa2a
 keywords:
 - serial ports WDK
 - serial devices WDK
@@ -36,21 +35,21 @@ The following system components are available for use with serial controller dev
     - [Operation of Serenum and Serial](operation-of-serenum-and-serial.md)
     - [Registry Settings for Serial](registry-settings-for-serial.md)
     - [Registry Settings for Serenum](registry-settings-for-serenum.md)
-    - [Serial Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
-    - [Serenum Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+    - [Serial Driver Reference](/windows-hardware/drivers/ddi/_serports)
+    - [Serenum Driver Reference](/windows-hardware/drivers/ddi/ntddser)
     - Data definitions in the Ntddser.h header file in the WDK.
 
 <!-- -->
 
-- Ports [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes)
+- Ports [device setup class](../install/overview-of-device-setup-classes.md)
 
     The Ports class includes *serial ports* and *COM ports*. A serial port is a serial communication hardware interface on a 16550 UART or compatible device. An RS-232 port on a computer is typically a DB-9 or DB-25 connector that is electrically connected to the serial port on a UART. A COM port is a serial port that complies with additional Windows-specific requirements. For more information, see [Configuration of COM Ports](configuration-of-com-ports.md).
 
-- COM port [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes)
+- COM port [device interface class](../install/overview-of-device-interface-classes.md)
 
-    You must use a COM port device interface to access a COM port. (The GUID for the COM port device interface class is [**GUID\_DEVINTERFACE\_COMPORT**](https://docs.microsoft.com/windows-hardware/drivers/install/guid-devinterface-comport).)
+    You must use a COM port device interface to access a COM port. (The GUID for the COM port device interface class is [**GUID\_DEVINTERFACE\_COMPORT**](../install/guid-devinterface-comport.md).)
 
-- [COM port database](com-port-database.md) and [COM port database support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+- [COM port database](com-port-database.md) and [COM port database support routines](/windows/win32/api/msports/)
 
     The COM port database arbitrates the use of COM port numbers by COM ports.
 
@@ -62,8 +61,8 @@ For general information about the high-level operation of a serial device, see t
 
 These samples demonstrates serial drivers.
 
-- The [Serial](https://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
-- The [Serenum](https://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
+- The [Serial](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serial) sample builds a function driver for serial devices.
+- The [Serenum](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serenum) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
 - A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
-    -   [The Virtual serial driver sample (UMDF 1.0)](https://go.microsoft.com/fwlink/p/?LinkId=617963)
-    -   [The Virtual serial2 driver sample (KMDF)](https://go.microsoft.com/fwlink/p/?LinkId=722209)
+    -   [The Virtual serial driver sample (UMDF 1.0)](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/VirtualSerial)
+    -   [The Virtual serial2 driver sample (KMDF)](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/VirtualSerial2)

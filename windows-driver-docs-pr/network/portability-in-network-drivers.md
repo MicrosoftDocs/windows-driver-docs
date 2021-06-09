@@ -1,7 +1,6 @@
 ---
 title: Portability in Network Drivers
 description: Portability in Network Drivers
-ms.assetid: 2cc74131-a80b-4d21-b969-56b61d1f7269
 keywords:
 - network drivers WDK , porting drivers
 - portability WDK networking

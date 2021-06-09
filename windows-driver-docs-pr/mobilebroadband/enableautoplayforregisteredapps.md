@@ -1,14 +1,13 @@
 ---
 title: EnableAutoPlayForRegisteredApps
 description: EnableAutoPlayForRegisteredApps
-ms.assetid: 8f4b1a6a-262a-4ebc-808b-8e998fd78f99
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # EnableAutoPlayForRegisteredApps
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The EnableAutoPlayForRegisteredApps element specifies whether AutoPlay is enabled for registered apps.
 

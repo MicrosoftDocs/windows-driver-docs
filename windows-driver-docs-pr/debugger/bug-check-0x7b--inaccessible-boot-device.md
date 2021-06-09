@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE
 description: The INACCESSIBLE_BOOT_DEVICE bug check has a value of 0x0000007B. This bug check indicates that the Microsoft Windows operating system has lost access to the system partition during startup.
-ms.assetid: 0dfcb519-4ea3-4419-a1c3-60fdff96404d
 keywords: ["Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE", "INACCESSIBLE_BOOT_DEVICE"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,8 +73,7 @@ To determine the meaning of Parameter 1, look at the data that it points to. If 
 
     The actual string contains the Advanced RISC Computing (ARC) specification name of the device that the boot was being attempted from. ARC names are a generic way to identify devices in the ARC environment.
 
-Cause
------
+## Cause
 
 The INACCESSIBLE\_BOOT\_DEVICE bug check frequently occurs because of a boot device failure. During I/O system initialization, the boot device driver might have failed to initialize the boot device (typically a hard disk).
 
@@ -83,8 +81,7 @@ File system initialization might have failed because it did not recognize the da
 
 This error can also occur because of incompatible disk hardware. If the error occurred at the initial setup of the system, the system might have been installed on an unsupported disk controller. Some disk controllers require additional drivers to be present when Windows starts.
 
-Resolution
-----------
+## Resolution
 
 This error always occurs while the system is starting. This error frequently occurs before the debugger connection is established, so debugging can be difficult. In addition, the OS may not be accessible and the error logs may be empty as the OS has not booted far enough to start those sub-systems.
 
@@ -112,7 +109,7 @@ Check the availability of updates for the system BIOS and storage controller fir
 
 **Use the Media Creation Tool to create a bootable USB thumb drive or DVD**
 
-Use Media Creation Tool, using another computer to create a bootable USB thumb drive or DVD. Use it to perform a clean install, by clicking on the setup file or booting from the USB.
+Use Media Creation Tool, using another computer to create a bootable USB thumb drive or DVD. Use it to perform a clean install, by selecting the setup file or booting from the USB.
 
 For more information, see [Get Windows 10](https://www.microsoft.com/software-download/windows10).
 
@@ -150,7 +147,7 @@ F2
 
     Safe Mode may also be available by pressing a function key on boot, for example F8. Refer to information from the system manufacturer for specific startup options.
 
--   Use the scan disk utility to confirm that there are no file system errors. Right click on the drive you want to scan and select **Properties**. Click on **Tools**. Click the **Check now** button.
+-   Use the scan disk utility to confirm that there are no file system errors. Select and hold (or right-click) on the drive you want to scan and select **Properties**. Select **Tools**. Select the **Check now** button.
 -   Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows, and resulting disk corruption can generate system bug check codes. Make sure the virus detection program checks the Master Boot Record for infections.
 
 -   For IDE devices, define the onboard IDE port as Primary only. Also check each IDE device for the proper **master/subordinate/stand alone** setting. Try removing all IDE devices except for hard disks. Finally, check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing the error.
@@ -175,8 +172,7 @@ F2
 
 -   Use the kernel debugger to attach to the system and further analyze the failure as described in remarks.
 
-Remarks
--------
+## Remarks
 
 **Investigating the storage system configuration**
 

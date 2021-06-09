@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DECIMAL
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a DECIMAL-typed value.
-ms.assetid: 3aacffd6-3259-489b-992d-e2771858c1e6
 keywords: ["DEVPROP_TYPE_DECIMAL Device and Driver Installation"]
 topic_type:
 - apiref
@@ -20,8 +19,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a DECIMAL-typed value.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_DECIMAL can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -33,8 +31,7 @@ To set a property whose data type is DEVPROP_TYPE_DECIMAL, call the correspondin
 
 -   Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

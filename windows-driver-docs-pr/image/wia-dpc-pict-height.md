@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_PICT\_HEIGHT
 description: The WIA\_DPC\_PICT\_HEIGHT property contains the height, in pixels, to use for newly captured images.
-ms.assetid: 07320fa4-ef21-4cda-9fc0-fe788f653c31
 keywords: ["WIA_DPC_PICT_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
@@ -29,13 +28,11 @@ Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The list of valid values for the WIA\_DPC\_PICT\_HEIGHT property has a one-to-one correspondence with the list of valid values for the [**WIA\_DPC\_PICT\_WIDTH**](wia-dpc-pict-width.md) property. If the individual width and height are linearly settable and orthogonal to each other, you can express them as a range.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: rpcexts.getendpointinfo
 description: The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information.
-ms.assetid: 3efd0cd1-bcdd-4785-aa00-a32a7578219c
 keywords: ["rpcexts.getendpointinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,8 +56,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg.
 

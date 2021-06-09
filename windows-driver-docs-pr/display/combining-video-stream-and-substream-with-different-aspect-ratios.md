@@ -1,7 +1,6 @@
 ---
 title: Combine Video Stream, Substream with Different Aspect Ratios
 description: This topic shows how the video stream, video substream, and background color are combined with different aspect ratios.
-ms.assetid: 3c147829-c76a-4bc7-bb14-bb49609f53d8
 keywords:
 - combining stream and substream WDK DirectX VA
 - video stream and substream combined WDK DirectX VA

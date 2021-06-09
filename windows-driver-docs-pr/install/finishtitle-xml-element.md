@@ -1,7 +1,6 @@
 ---
 title: finishTitle XML Element
 description: finishTitle XML Element
-ms.assetid: d8730b49-9cc0-46f4-88a1-fd5543063277
 keywords: ["finishTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # finishTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **finishTitle** XML element customizes the text of the finish title that appears at the top of a DPInst finish page.
 
@@ -85,11 +84,4 @@ If a **finishTitle** element is not specified, DPInst displays the default title
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

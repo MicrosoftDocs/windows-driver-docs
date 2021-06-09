@@ -1,7 +1,6 @@
 ---
 title: Differences Between GDL and GPD Preprocessing
 description: Differences Between GDL and GPD Preprocessing
-ms.assetid: 0ca79e85-1697-4f8d-b534-fe24748aaf5b
 keywords:
 - GPD file entries WDK Unidrv , preprocessor directives
 - GPD file entries WDK Unidrv , vs. GDL file entries

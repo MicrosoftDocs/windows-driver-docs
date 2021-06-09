@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAGES
 description: The WIA\_DPS\_PAGES property contains the current number of pages to acquire from an automatic document feeder.
-ms.assetid: 51ab2eab-c7b4-4d54-bfc7-d53a8f66c7a9
 keywords: ["WIA_DPS_PAGES Imaging Devices"]
 topic_type:
 - apiref
@@ -29,8 +28,7 @@ Valid Values: WIA\_PROP\_RANGE (from zero through the maximum number of pages th
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_DPS\_PAGES property to determine a document feeder's page capacity. The application also sets this property to the number of pages it is going to scan. The WIA minidriver creates and maintains WIA\_DPS\_PAGES.
 
@@ -60,12 +58,11 @@ The following table describes the constant that is valid with the WIA\_DPS\_PAGE
 **Note**   If duplex mode is enabled (that is, the [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](wia-dps-document-handling-select.md) property is set to FEEDER | DUPLEX), WIA\_DPS\_PAGES is still equal to the number of pages to scan.
 One sheet of paper will automatically contain two pages if DUPLEX is enabled, even if the back side of the page is blank.
 
-If you set WIA\_DPS\_PAGES to 1, the scanner will process one of the sides of the page. If a scanner is unable to scan only one side of a page while in duplex mode, you should change the WIA\_DPS\_PAGES value for the **Inc** member of the [**WIA\_PROPERTY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_property_info) structure to 2. This value signals to the application that it must request pages in multiples of two. If WIA\_DPS\_PAGES is zero, the scanner will scan *all* pages that are currently loaded into the document feeder.
+If you set WIA\_DPS\_PAGES to 1, the scanner will process one of the sides of the page. If a scanner is unable to scan only one side of a page while in duplex mode, you should change the WIA\_DPS\_PAGES value for the **Inc** member of the [**WIA\_PROPERTY\_INFO**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_property_info) structure to 2. This value signals to the application that it must request pages in multiples of two. If WIA\_DPS\_PAGES is zero, the scanner will scan *all* pages that are currently loaded into the document feeder.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,14 +88,7 @@ Requirements
 
 [**WIA\_IPS\_PAGES**](wia-ips-pages.md)
 
-[**WIA\_PROPERTY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_property_info)
+[**WIA\_PROPERTY\_INFO**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_property_info)
 
  
-
- 
-
-
-
-
-
 

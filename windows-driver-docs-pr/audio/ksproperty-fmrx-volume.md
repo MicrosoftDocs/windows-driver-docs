@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_FMRX\_VOLUME
 description: The KSPROPERTY\_FMRX\_VOLUME property controls the volume of the FM radio.
-ms.assetid: 28650DEB-EA09-4E30-A1A7-179D1E1A641F
 keywords: ["KSPROPERTY_FMRX_VOLUME Audio Devices"]
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ The **KSPROPERTY\_FMRX\_VOLUME** property controls the volume of the FM radio.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -58,13 +57,11 @@ The property value is of type LONG and specifies the FM radio volume.
 
 A **KSPROPERTY\_FMRX\_VOLUME** property request returns the volume of the FM radio.
 
-Remarks
--------
+## Remarks
 
 The FM volume and routing (endpoint selection) is controlled by the **KSPROPERTY\_FMRX\_VOLUME** and [**KSPROPERTY\_FMRX\_ENDPOINTID**](ksproperty-fmrx-endpointid.md) properties on the topology filter. Basic support for the **KSPROPERTY\_FMRX\_VOLUME** property should return the minimum volume, maximum volume, and the volume ranges.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -90,12 +87,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Setting Hardware Information in the Registry
 description: Setting Hardware Information in the Registry
-ms.assetid: 82f5d399-58c3-4bed-a3f2-3501f21fa3e8
 keywords:
 - hardware WDK video miniport
 - registry WDK video miniport
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_setting_hardware_information_in_the_registry_gg"></span><span id="DDK_SETTING_HARDWARE_INFORMATION_IN_THE_REGISTRY_GG"></span>
 
 
-[*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) can call the [**VideoPortGetRegistryParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportgetregistryparameters) and [**VideoPortSetRegistryParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportsetregistryparameters) functions to get and set configuration information in the registry. For example, *HwVidFindAdapter* might call **VideoPortSetRegistryParameters** to set up nonvolatile configuration information in the registry for the next boot. It might call **VideoPortGetRegistryParameters** to get adapter-specific, bus-relative configuration parameters written into the registry by an installation program.
+[*HwVidFindAdapter*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_find_adapter) can call the [**VideoPortGetRegistryParameters**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetregistryparameters) and [**VideoPortSetRegistryParameters**](/windows-hardware/drivers/ddi/video/nf-video-videoportsetregistryparameters) functions to get and set configuration information in the registry. For example, *HwVidFindAdapter* might call **VideoPortSetRegistryParameters** to set up nonvolatile configuration information in the registry for the next boot. It might call **VideoPortGetRegistryParameters** to get adapter-specific, bus-relative configuration parameters written into the registry by an installation program.
 
 It is recommended that miniport drivers set certain hardware information in the registry to display useful information to the user and for assistance in debugging. A miniport driver can set a chip type, DAC type, memory size (of the adapter), and a string to identify the adapter. This information is shown by the Display program in Control Panel.
 
@@ -70,10 +69,4 @@ The following table describes the information that the driver can register and p
  
 
  
-
- 
-
-
-
-
 

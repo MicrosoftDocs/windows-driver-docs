@@ -1,7 +1,6 @@
 ---
 title: Virtual Interface Architecture and Support for SAN
 description: Virtual Interface Architecture and Support for SAN
-ms.assetid: 83d28f33-7354-4f59-8b01-4842286f12fb
 keywords:
 - system area networks WDK , VI architecture
 - SAN WDK , VI architecture

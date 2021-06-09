@@ -1,7 +1,6 @@
 ---
 title: Reader/Writer Spin Locks
 description: Starting with Windows Vista with Service Pack 1 (SP1), a set of related routines use spin locks to support synchronized access to data structures that are shared by readers and writers.
-ms.assetid: E2853F35-590E-4EF5-8647-1261BC4B8D15
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -21,24 +20,19 @@ The following is a list of the routines that are available to manage reader/writ
 
 | Routine name                                                                                | Description                                                                                                           |
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [**ExAcquireSpinLockExclusive**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451007(v=vs.85))                         | Acquires a spin lock for exclusive access by the caller, and raises the IRQL to DISPATCH\_LEVEL.                      |
-| [**ExAcquireSpinLockExclusiveAtDpcLevel**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451009(v=vs.85))    | Acquires a spin lock for exclusive access by a caller that is already running at IRQL &gt;= DISPATCH\_LEVEL.          |
-| [**ExAcquireSpinLockShared**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451053(v=vs.85))                               | Acquires a spin lock for shared access by the caller, and raises the IRQL to DISPATCH\_LEVEL.                         |
-| [**ExAcquireSpinLockSharedAtDpcLevel**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451055(v=vs.85))           | Acquires a spin lock for shared access by a caller that is already running at IRQL &gt;= DISPATCH\_LEVEL.             |
-| [**ExReleaseSpinLockExclusive**](https://msdn.microsoft.com/library/windows/hardware/hh451061)                        | Releases a spin lock that the caller acquired for exclusive access, and restores the original IRQL.                   |
-| [**ExReleaseSpinLockExclusiveFromDpcLevel**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451058(v=vs.85)) | Releases a spin lock that the caller acquired for exclusive access, and does not lower the IRQL.                      |
-| [**ExReleaseSpinLockShared**](https://msdn.microsoft.com/library/windows/hardware/hh451067)                              | Releases a spin lock that the caller acquired for shared access, and restores the original IRQL.                      |
-| [**ExReleaseSpinLockSharedFromDpcLevel**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451064(v=vs.85))      | Releases a spin lock that the caller acquired for shared access, and does not lower the IRQL.                         |
-| [**ExTryConvertSharedSpinLockExclusive**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-extryconvertsharedspinlockexclusive)      | Tries to convert the access state of a spin lock that the caller already holds for shared access to exclusive access. |
+| [**ExAcquireSpinLockExclusive**](/previous-versions/windows/hardware/drivers/hh451007(v=vs.85))                         | Acquires a spin lock for exclusive access by the caller, and raises the IRQL to DISPATCH\_LEVEL.                      |
+| [**ExAcquireSpinLockExclusiveAtDpcLevel**](/previous-versions/windows/hardware/drivers/hh451009(v=vs.85))    | Acquires a spin lock for exclusive access by a caller that is already running at IRQL &gt;= DISPATCH\_LEVEL.          |
+| [**ExAcquireSpinLockShared**](/previous-versions/windows/hardware/drivers/hh451053(v=vs.85))                               | Acquires a spin lock for shared access by the caller, and raises the IRQL to DISPATCH\_LEVEL.                         |
+| [**ExAcquireSpinLockSharedAtDpcLevel**](/previous-versions/windows/hardware/drivers/hh451055(v=vs.85))           | Acquires a spin lock for shared access by a caller that is already running at IRQL &gt;= DISPATCH\_LEVEL.             |
+| [**ExReleaseSpinLockExclusive**](/previous-versions/hh451061(v=vs.85))                        | Releases a spin lock that the caller acquired for exclusive access, and restores the original IRQL.                   |
+| [**ExReleaseSpinLockExclusiveFromDpcLevel**](/previous-versions/windows/hardware/drivers/hh451058(v=vs.85)) | Releases a spin lock that the caller acquired for exclusive access, and does not lower the IRQL.                      |
+| [**ExReleaseSpinLockShared**](/previous-versions/hh451067(v=vs.85))                              | Releases a spin lock that the caller acquired for shared access, and restores the original IRQL.                      |
+| [**ExReleaseSpinLockSharedFromDpcLevel**](/previous-versions/windows/hardware/drivers/hh451064(v=vs.85))      | Releases a spin lock that the caller acquired for shared access, and does not lower the IRQL.                         |
+| [**ExTryConvertSharedSpinLockExclusive**](/windows-hardware/drivers/ddi/wdm/nf-wdm-extryconvertsharedspinlockexclusive)      | Tries to convert the access state of a spin lock that the caller already holds for shared access to exclusive access. |
 
  
 
 The reader/writer spin lock routines all take, as their first parameter, a pointer to a spin lock, which is an **EX\_SPIN\_LOCK** structure. This structure is opaque to drivers. A driver should allocate the storage for the spin lock from nonpaged system memory, and initialize the lock to zero.
 
  
-
- 
-
-
-
 

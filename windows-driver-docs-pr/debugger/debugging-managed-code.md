@@ -1,7 +1,6 @@
 ---
 title: Debugging Managed Code Using the Windows Debugger
 description: You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code.
-ms.assetid: eb4cc883-71ac-4a57-8654-07c3120310c0
 keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -9,13 +8,11 @@ ms.localizationpriority: medium
 
 # Debugging Managed Code Using the Windows Debugger
 
-
-You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) and a data access component (mscordacwks.dll).
 
 The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
-## <span id="introduction-to-managed-code"></span><span id="INTRODUCTION_TO_MANAGED_CODE"></span>Introduction to Managed Code
-
+## Introduction to Managed Code
 
 Managed code is executed together with the Microsoft .NET Common Language Runtime (CLR). In a managed-code application, the binary code that the compiler produces is in Microsoft Intermediate Language (MSIL), which is platform-independent.
 
@@ -34,21 +31,16 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 | 4.0                    | 4.0         | clr.dll      |
 | 4.5                    | 4.0         | clr.dll      |
 
- 
-
-## <span id="debugging-managed_code"></span><span id="DEBUGGING_MANAGED_CODE"></span>Debugging Managed Code
-
+## Debugging Managed Code
 
 To debug managed code, the debugger must load these two components.
 
--   Data access component (DAC) (mscordacwks.dll)
--   [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345)
+- Data access component (DAC) (mscordacwks.dll)
+- [SOS debugging extension (sos.dll)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
 
 **Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 
- 
-
-### <span id="getting-the-sos-debugging-extension"></span><span id="GETTING_THE_SOS_DEBUGGING_EXTENSION"></span>Getting the SOS Debugging Extension (sos.dll)
+### Getting the SOS Debugging Extension (sos.dll)
 
 The SOS debugging extension (sos.dll) files are not included in the current version of Debugging Tools for Windows.
 
@@ -58,12 +50,12 @@ For version 1.*x* of the .NET Framework, sos.dll is not included in the .NET Fra
 
 Windows 7 Debugging Tools for Windows is included in the Windows SDK for Windows 7, which is available at these two places:
 
--   [Windows SDK for Windows 7 and .NET Framework 4.0](https://go.microsoft.com/fwlink/p?LinkId=320327)
--   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](https://go.microsoft.com/fwlink/p?LinkId=320328)
+- [Windows SDK for Windows 7 and .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=8279)
+- [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](https://www.microsoft.com/download/details.aspx?id=8442)
 
-If you are running an x64 version of Windows, use the [ISO](https://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
+If you are running an x64 version of Windows, use the [ISO](https://www.microsoft.com/download/details.aspx?id=8442), so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
 
-### <span id="Loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="LOADING_MSCORDACWKS.DLL_AND_SOS.DLL__LIVE_DEBUGGING_"></span>Loading mscordacwks.dll and sos.dll (live debugging)
+### Loading mscordacwks.dll and sos.dll (live debugging)
 
 Assume that the debugger and the application being debugged are running on the same computer. Then the .NET Framework being used by the application is installed on the computer and is available to the debugger.
 
@@ -107,7 +99,7 @@ As an alternative to using [**.loadby**](-load---loadby--load-extension-dll-.md)
 
 In the preceding output, notice that the version of the SOS debugging extension (sos.dll) matches the version of the CLR and the DAC: v4.0.30319. Also notice that all three components are 64-bit.
 
-### <span id="Loading_mscordacwks.dll_and_sos.dll__dump_file_"></span><span id="loading_mscordacwks.dll_and_sos.dll__dump_file_"></span><span id="LOADING_MSCORDACWKS.DLL_AND_SOS.DLL__DUMP_FILE_"></span>Loading mscordacwks.dll and sos.dll (dump file)
+### Loading mscordacwks.dll and sos.dll (dump file)
 
 Suppose you use the debugger to open a dump file (of a managed-code application) that was created on another computer.
 
@@ -115,9 +107,9 @@ The debugger must load a version of the DAC that is the same as the version of t
 
 The DAC (mscordacwks.dll) comes with the .NET Framework, but let's assume that you do not have the correct version of the .NET Framework installed on the computer that is running the debugger. You have three options.
 
--   Load the DAC from a symbol server. For example, you could include Microsoft's public symbol server in your symbol path.
--   Install the correct version of the .NET Framework on the computer that is running the debugger.
--   Get the correct version of mscordacwks.dll from the person who created the dump file (on another computer) and manually copy it to the computer that is running the debugger.
+- Load the DAC from a symbol server. For example, you could include Microsoft's public symbol server in your symbol path.
+- Install the correct version of the .NET Framework on the computer that is running the debugger.
+- Get the correct version of mscordacwks.dll from the person who created the dump file (on another computer) and manually copy it to the computer that is running the debugger.
 
 Here we illustrate using Microsoft's public symbol server.
 
@@ -168,9 +160,9 @@ start             end                 module name
 ...
 ```
 
-In the preceding example, notice that the version of the CLR (clr.dll) matches the version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
+In the preceding example, notice that the version of the CLR (clr.dll) matches the product version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
 
-### <span id="Using_the_SOS_Debugging_Extension_"></span><span id="using_the_sos_debugging_extension_"></span><span id="USING_THE_SOS_DEBUGGING_EXTENSION_"></span>Using the SOS Debugging Extension
+### Using the SOS Debugging Extension
 
 To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
@@ -187,15 +179,6 @@ Extension DLL chain:
 
 To test the SOS debugging extension, enter **!sos.help**. Then try one of the command provided by the SOS debugging extension. For example, you could try **!sos.DumpDomain** or the **!sos.Threads** command.
 
-### <span id="Notes"></span><span id="notes"></span><span id="NOTES"></span>Notes
+### Notes
 
 Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](-cordll--control-clr-debugging-.md).
-
- 
-
- 
-
-
-
-
-

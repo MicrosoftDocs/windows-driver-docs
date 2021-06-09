@@ -1,7 +1,6 @@
 ---
 title: SRB\_UNINITIALIZE\_DEVICE
 description: SRB\_UNINITIALIZE\_DEVICE
-ms.assetid: 2cacb65a-8df3-4649-bc44-1bc7a5c598b9
 keywords: ["SRB_UNINITIALIZE_DEVICE Streaming Media Devices"]
 topic_type:
 - apiref

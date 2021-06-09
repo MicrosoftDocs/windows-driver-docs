@@ -1,7 +1,6 @@
 ---
 title: Best Practices for the Design of PC Cards and Card Drivers
 description: Best Practices for the Design of PC Cards and Card Drivers
-ms.assetid: c3f31757-4063-4c68-ae19-1d8af98f81bc
 keywords:
 - IRQ routing WDK PCMCIA bus
 - PCMCIA WDK buses , IRQ routing

@@ -1,7 +1,6 @@
 ---
 title: Allocation usage tracking
 description: With the allocation list going away, the video memory manager no longer has visibility into the allocations being referenced in a particular command buffer.
-ms.assetid: F913C9A3-535F-4DA0-8895-7A05CBF4D4AC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 With the allocation list going away, the video memory manager no longer has visibility into the allocations being referenced in a particular command buffer. As a result of this, the video memory manager is no longer in a position to track allocation usage and to handle related synchronization. This responsibility will now fall to the user mode driver. In particular, the user mode driver will have to handle the synchronization with respect to direct CPU access to allocation as well as renaming.
 
-For allocation destruction, the video memory manager will asynchronously defer these in a safe manner that will be both non-blocking for the calling thread and very performant. As such a user mode driver doesn't have to worry about having to defer allocation destruction. When an allocation destruction request is received, the video memory manager assumes, by default, that commands queued prior to the destruction request may potentially access the allocation being destroyed and defers the destruction operation until the queued commands finish. If the user mode driver knows that pending commands don't access the allocation being destroyed, it can instruct the video memory manager process the request without waiting by setting the **AssumeNotInUse** flag when calling [*Deallocate2*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocate2cb) or [**DestroyAllocation2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtdestroyallocation2).
+For allocation destruction, the video memory manager will asynchronously defer these in a safe manner that will be both non-blocking for the calling thread and very performant. As such a user mode driver doesn't have to worry about having to defer allocation destruction. When an allocation destruction request is received, the video memory manager assumes, by default, that commands queued prior to the destruction request may potentially access the allocation being destroyed and defers the destruction operation until the queued commands finish. If the user mode driver knows that pending commands don't access the allocation being destroyed, it can instruct the video memory manager process the request without waiting by setting the **AssumeNotInUse** flag when calling [*Deallocate2*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocate2cb) or [**DestroyAllocation2**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtdestroyallocation2).
 
 ## <span id="Lock2"></span><span id="lock2"></span><span id="LOCK2"></span>Lock2
 
@@ -24,11 +23,11 @@ The user mode driver will be responsible for handling proper synchronization wit
     -   Return **WasStillDrawing** if an attempt is made to access an allocation which is currently busy and the caller has requested that the **Lock** operation not block the calling thread (**D3D11\_MAP\_FLAG\_DO\_NOT\_WAIT**).
     -   Or, if the **D3D11\_MAP\_FLAG\_DO\_NOT\_WAIT** flags is not set, wait until an allocation becomes available for CPU access. The user mode driver will be required to implement a non-polling wait. The user mode driver will make use of the new context monitoring mechanism.
 
-For now, the user mode driver will continue to need to call [*LockCb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb)/[*UnlockCb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockcb) to ask the video memory manager to setup an allocation for CPU access. In most cases, the user mode driver will be able to keep the allocation mapped for its entire lifetime. However, in the future, *LockCb* and *UnlockCb* will be deprecated in favor of new [*Lock2Cb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lock2cb) and [*Unlock2Cb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlock2cb) calls. The goal of these new callbacks is to provide a fresh clean implementation with a fresh set of arguments and flags.
+For now, the user mode driver will continue to need to call [*LockCb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb)/[*UnlockCb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockcb) to ask the video memory manager to setup an allocation for CPU access. In most cases, the user mode driver will be able to keep the allocation mapped for its entire lifetime. However, in the future, *LockCb* and *UnlockCb* will be deprecated in favor of new [*Lock2Cb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lock2cb) and [*Unlock2Cb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlock2cb) calls. The goal of these new callbacks is to provide a fresh clean implementation with a fresh set of arguments and flags.
 
-Swizzling ranges are removed from the Windows Display Driver Model (WDDM) v2 and it is the responsibility of the driver developer to remove the dependency on swizzling ranges from calls to [*LockCb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb) as they move towards an implementation that is based on [*Lock2Cb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lock2cb).
+Swizzling ranges are removed from the Windows Display Driver Model (WDDM) v2 and it is the responsibility of the driver developer to remove the dependency on swizzling ranges from calls to [*LockCb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb) as they move towards an implementation that is based on [*Lock2Cb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lock2cb).
 
-[*Lock2Cb*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lock2cb) is exposed as a simple method for obtaining a virtual address to an allocation. There are a few restrictions based on the type of allocation as well as the current segment that it is currently resident in.
+[*Lock2Cb*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lock2cb) is exposed as a simple method for obtaining a virtual address to an allocation. There are a few restrictions based on the type of allocation as well as the current segment that it is currently resident in.
 
 The following apply for *CPUVisible* allocations:
 
@@ -48,7 +47,7 @@ If an allocation is successfully locked while the allocation is not resident on 
 ## <span id="CPUHostAperture"></span><span id="cpuhostaperture"></span><span id="CPUHOSTAPERTURE"></span>CPUHostAperture
 
 
-To better support locking with !*CPUVisible* memory segments when resizing the BAR fails, a *CPUHostAperture* is provided in the PCI aperture. The *CPUHostAperture* behaves as a page-based manager which can then be mapped directly to regions of video memory via the [*DxgkDdiMapCpuHostAperture*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_mapcpuhostaperture)device driver interface (DDI) function. This allows us to then map a range of virtual address space directly to a non-contiguous range of the *CPUHostAperture*, and have the *CPUHostAperture* then map to video memory without the need for swizzling ranges.
+To better support locking with !*CPUVisible* memory segments when resizing the BAR fails, a *CPUHostAperture* is provided in the PCI aperture. The *CPUHostAperture* behaves as a page-based manager which can then be mapped directly to regions of video memory via the [*DxgkDdiMapCpuHostAperture*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_mapcpuhostaperture)device driver interface (DDI) function. This allows us to then map a range of virtual address space directly to a non-contiguous range of the *CPUHostAperture*, and have the *CPUHostAperture* then map to video memory without the need for swizzling ranges.
 
 The maximum amount of lockable memory that can be referenced by the CPU within !*CPUVisible* memory segments is limited to the size of the *CPUHostAperture*. The details for exposing the *CPUHostAperture* to the Microsoft DirectX graphics kernel can be found in the [CPU host aperture](cpu-host-aperature.md) topic.
 
@@ -62,10 +61,4 @@ On some ARM platforms, I/O coherency is not supported directly in hardware. On t
 On platform with no I/O coherency, the responsibility to track CPU and GPU access to allocations falls to the user mode driver. The graphics kernel exposes a new *Invalidate Cache*DDI that the user mode driver may use to write back and invalidate the virtual address range associated with a cacheable allocation. On platforms which do not have support for I/O coherency, the user mode driver will be required to call this function after CPU write and before GPU read as well as after write and before CPU read. The latter may seem unintuitive at first, but since the CPU could have speculatively read data prior to the GPU write making it to memory, it is necessary to invalidate all CPU caches to ensure the CPU re-reads data from RAM.
 
  
-
- 
-
-
-
-
 

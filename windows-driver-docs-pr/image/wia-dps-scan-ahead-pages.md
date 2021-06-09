@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_SCAN\_AHEAD\_PAGES
 description: The WIA\_DPS\_SCAN\_AHEAD\_PAGES property contains a value that indicates whether a scanner will cache pages in a scanner buffer before sending them to an application.
-ms.assetid: 8c00b029-dc9f-43e1-af4a-088e143351ca
 keywords: ["WIA_DPS_SCAN_AHEAD_PAGES Imaging Devices"]
 topic_type:
 - apiref
@@ -33,15 +32,13 @@ Valid Values: WIA\_PROP\_RANGE (from zero through the maximum number of pages th
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 If the WIA\_DPS\_SCAN\_AHEAD\_PAGES property is zero, scan ahead is disabled, and the scanner will not scan ahead any pages.
 
 If the scanner performs data transfers on the buffered scan-ahead item, the scanner will retrieve the buffered pages. WIA properties cannot be changed during a scan-ahead operation. WIA\_DPS\_SCAN\_AHEAD\_PAGES is optional.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

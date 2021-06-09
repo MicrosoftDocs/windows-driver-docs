@@ -1,7 +1,6 @@
 ---
 title: Audio Endpoints, Properties and Events
 description: Audio Endpoints, Properties and Events
-ms.assetid: ffc5834f-30c8-40b5-b57b-fe784331690c
 keywords:
 - audio events WDK
 - audio properties WDK
@@ -28,7 +27,7 @@ ms.localizationpriority: medium
 ## <span id="audio_properties_and_events"></span><span id="AUDIO_PROPERTIES_AND_EVENTS"></span>
 
 
-The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties--events--and-methods).
+The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](../stream/ks-properties--events--and-methods.md).
 
 The port drivers in Portcls.sys support properties and events by providing handlers for some property and event requests and by forwarding other requests to the miniport drivers' handlers.
 
@@ -52,37 +51,37 @@ None of the port drivers provide support for methods on either the filter or its
 
 Audio adapter drivers support some or all of the following standard property sets:
 
-[KSPROPSETID\_AC3](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-ac3)
+[KSPROPSETID\_AC3](./kspropsetid-ac3.md)
 
-[KSPROPSETID\_Acoustic\_Echo\_Cancel](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-acoustic-echo-cancel)
+[KSPROPSETID\_Acoustic\_Echo\_Cancel](./kspropsetid-acoustic-echo-cancel.md)
 
-[KSPROPSETID\_Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audio)
+[KSPROPSETID\_Audio](./kspropsetid-audio.md)
 
-[KSPROPSETID\_DirectSound3DBuffer](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-directsound3dbuffer)
+[KSPROPSETID\_DirectSound3DBuffer](./kspropsetid-directsound3dbuffer.md)
 
-[KSPROPSETID\_DirectSound3DListener](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-directsound3dlistener)
+[KSPROPSETID\_DirectSound3DListener](./kspropsetid-directsound3dlistener.md)
 
-[KSPROPSETID\_DrmAudioStream](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-drmaudiostream)
+[KSPROPSETID\_DrmAudioStream](./kspropsetid-drmaudiostream.md)
 
-[KSPROPSETID\_General](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-general)
+[KSPROPSETID\_General](../stream/kspropsetid-general.md)
 
-[KSPROPSETID\_Hrtf3d](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-hrtf3d)
+[KSPROPSETID\_Hrtf3d](./kspropsetid-hrtf3d.md)
 
-[KSPROPSETID\_Jack](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-jack)
+[KSPROPSETID\_Jack](./kspropsetid-jack.md)
 
-[KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin)
+[KSPROPSETID\_Pin](../stream/kspropsetid-pin.md)
 
-[KSPROPSETID\_Synth](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth)
+[KSPROPSETID\_Synth](./kspropsetid-synth.md)
 
-[KSPROPSETID\_Synth\_Dls](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth-dls)
+[KSPROPSETID\_Synth\_Dls](./kspropsetid-synth-dls.md)
 
-[KSPROPSETID\_TopologyNode](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-topologynode)
+[KSPROPSETID\_TopologyNode](./kspropsetid-topologynode.md)
 
 All audio drivers support the **KSPROPSETID\_Audio** property set.
 
 Some audio adapter drivers support the following event set:
 
-[KSEVENTSETID\_AudioControlChange](https://docs.microsoft.com/windows-hardware/drivers/audio/kseventsetid-audiocontrolchange)
+[KSEVENTSETID\_AudioControlChange](./kseventsetid-audiocontrolchange.md)
 
 In addition, audio adapter drivers are free to provide property handlers for other property sets that are defined in header file Ksmedia.h. Drivers can also define and support their own custom property and event sets, but only an application that knows about a custom property or event will be able to use it.
 
@@ -117,9 +116,4 @@ This section discusses audio-specific properties and events. It contains the fol
 [Hardware Events](hardware-events.md)
 
  
-
- 
-
-
-
 

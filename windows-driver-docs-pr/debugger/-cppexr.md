@@ -1,7 +1,6 @@
 ---
 title: cppexr
 description: The cppexr extension displays the contents of a C++ exception record.
-ms.assetid: 568c98e9-31d9-4c49-9b7a-bc8eccfed24a
 keywords: ["exception records", "cppexr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,8 +52,7 @@ Specifies the address of the C++ exception record to display.
 
 For more information about exceptions, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md), the Windows Driver Kit (WDK) documentation, the Windows SDK documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Use the [**.exr**](-exr--display-exception-record-.md) command to display other exception records.
 
-Remarks
--------
+## Remarks
 
 The **!cppexr** extension displays information that is related to a C++ exception that the target encounters, including the exception code, the address of the exception, and the exception flags. This exception must be one of the standard C++ exceptions that are defined in Msvcrt.dll.
 

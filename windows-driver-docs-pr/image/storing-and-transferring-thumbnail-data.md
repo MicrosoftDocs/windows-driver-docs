@@ -1,7 +1,6 @@
 ---
 title: Storing and Transferring Thumbnail Data
 description: Storing and Transferring Thumbnail Data
-ms.assetid: 4c27f93f-859e-42e3-95ea-9bfd8d0329d6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-WIA thumbnail information is controlled by three WIA properties: [**WIA\_IPC\_THUMBNAIL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-thumbnail), [**WIA\_IPC\_THUMBNAIL\_WIDTH**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-thumbnail-width), and [**WIA\_IPC\_THUMBNAIL\_HEIGHT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-thumbnail-height). In Windows Me, and in Windows XP and later, the thumbnail data is 24-bits per pixel only.
+WIA thumbnail information is controlled by three WIA properties: [**WIA\_IPC\_THUMBNAIL**](./wia-ipc-thumbnail.md), [**WIA\_IPC\_THUMBNAIL\_WIDTH**](./wia-ipc-thumbnail-width.md), and [**WIA\_IPC\_THUMBNAIL\_HEIGHT**](./wia-ipc-thumbnail-height.md). In Windows Me, and in Windows XP and later, the thumbnail data is 24-bits per pixel only.
 
 <a href="" id="wia-ipc-thumbnail"></a>WIA\_IPC\_THUMBNAIL  
 The property contains the thumbnail data in RGB format, with 24 bits per pixel, and aligned on 32-bit boundaries.
@@ -26,9 +25,4 @@ The property contains the thumbnail image height, in pixels.
 An application reads the WIA\_IPC\_THUMB\_WIDTH and WIA\_IPC\_THUMB\_HEIGHT properties to create the property BITMAPINFOHEADER structure (described in the Microsoft Windows SDK documentation). The application then reads the WIA\_IPC\_THUMBNAIL property for the actual thumbnail data. The thumbnail data should be uncompressed, 24-bits per pixel data aligned on 32-bit boundaries.
 
  
-
- 
-
-
-
 

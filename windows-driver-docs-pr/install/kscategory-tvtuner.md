@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TVTUNER
 description: KSCATEGORY_TVTUNER
-ms.assetid: 44d9d407-a94c-40de-b749-af50bc5718f4
 keywords: ["KSCATEGORY_TVTUNER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_TVTUNER
 
 
-The KSCATEGORY_TVTUNER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a TV tuner device.
+The KSCATEGORY_TVTUNER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a TV tuner device.
 
 <table>
 <colgroup>
@@ -45,17 +44,15 @@ The KSCATEGORY_TVTUNER [device interface class](https://docs.microsoft.com/windo
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_TVTUNER to indicate to the operating system that the devices support the KSCATEGORY_TVTUNER functional category.
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
-For information about video devices, see [Video Capture Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/video-capture-devices), [Filter Graph Examples](https://docs.microsoft.com/windows-hardware/drivers/stream/filter-graph-examples), and [Encoder Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/encoder-devices).
+For information about video devices, see [Video Capture Devices](../stream/video-capture-devices.md), [Filter Graph Examples](../stream/filter-graph-examples.md), and [Encoder Devices](../stream/encoder-devices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,11 +73,4 @@ Requirements
 [**KSCATEGORY_TVAUDIO**](kscategory-tvaudio.md)
 
  
-
- 
-
-
-
-
-
 

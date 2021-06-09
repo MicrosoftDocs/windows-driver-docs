@@ -1,7 +1,6 @@
 ---
 title: .show_read_failures
 description: The .show_read_failures command enables or disables the display of read failures.
-ms.assetid: e01c6578-ebf6-4ec1-85dd-de353ae8a781
 keywords: [".show_read_failures Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

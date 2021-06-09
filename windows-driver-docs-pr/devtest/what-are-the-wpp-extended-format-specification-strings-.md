@@ -1,171 +1,60 @@
 ---
 title: What are the WPP extended format specification strings
 description: What are the WPP extended format specification strings
-ms.assetid: f05117c0-cb4b-483a-a141-08423555170a
-ms.date: 04/20/2017
+ms.date: 01/27/2021
 ms.localizationpriority: medium
 ---
 
-# What are the WPP extended format specification strings?
-
+# What are the WPP extended format specification strings
 
 WPP includes predefined format specification strings that you can use in trace messages in addition to the standard format strings that are defined for **printf**.
 
-You can use the **%!FLAGS!**, **%!FUNC!** and **%!LEVEL!** strings in a [trace message prefix](trace-message-prefix.md), and in any tracing function or macro, such as [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
+You can use the **%!FLAGS!**, **%!FUNC!** and **%!LEVEL!** strings in a [trace message prefix](trace-message-prefix.md), and in any tracing function or macro, such as [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
 You can use the other extended strings in any tracing function.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Format string</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Software tracing</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!FILE!</p></td>
-<td align="left"><p>Displays the name of the source file from which the trace message was generated. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!FLAGS!</p></td>
-<td align="left"><p>Displays the value of the <a href="trace-flags.md" data-raw-source="[trace flags](trace-flags.md)">trace flags</a> that enable the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!FUNC!</p></td>
-<td align="left"><p>Displays the function that generated the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!LEVEL!</p></td>
-<td align="left"><p>Displays the name of the <a href="trace-level.md" data-raw-source="[trace level](trace-level.md)">trace level</a> that enables the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!LINE!</p></td>
-<td align="left"><p>Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">General use</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!bool!</p></td>
-<td align="left"><p>Displays TRUE or FALSE</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!irql!</p></td>
-<td align="left"><p>Displays the name of the current IRQL.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!sid!</p></td>
-<td align="left"><p>Represents a pointer to Security Identifier (pSID). Displays the SID.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!SRB!</p></td>
-<td align="left"><p>Represents a pointer to SCSI request block. Displays the block content.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!SENSEDATA!</p></td>
-<td align="left"><p>Represents a pointer to SCSI SENSE_DATA. Displays the sense data.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">GUIDs</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!GUID!</p></td>
-<td align="left"><p>Represents a pointer to a GUID (pGUID). Displays the GUID that is pointed to.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!CLSID!</p></td>
-<td align="left"><p>Class ID. Represents a pointer to a class ID GUID. Displays the string associated with the GUID. WPP locates the string in the registry when it formats the trace messages.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!IID!</p></td>
-<td align="left"><p>Interface ID. Represents a pointer to an interface ID GUID. Displays the string associated with the GUID. WPP locates the string in the registry when it formats the trace messages.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!LIBID!</p></td>
-<td align="left"><p>Type library. Represents the GUID of a COM type library. Displays the string associated with the GUID. WPP locates the string in the registry when it formats the trace messages.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Time</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!delta!</p></td>
-<td align="left"><p>Displays the difference between two time values, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!WAITTIME!</p></td>
-<td align="left"><p>Displays the time that was spent waiting for something to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p>
-<p>Designed to be used with <strong>%!due!</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!due!</p></td>
-<td align="left"><p>Displays the time that something is expected to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p>
-<p>Designed to be used with <strong>%!WAITTIME!</strong>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!TIMESTAMP!</p>
-<p>%!datetime!</p>
-<p>%!time!</p></td>
-<td align="left"><p>Displays the value of system time at a particular moment. These are LARGE_INTEGER values that are displayed in SYSTEMTIME format.</p>
-<p>You can use these variables to represent different time values in your program and to distinguish among them.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Return codes</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!STATUS!</p></td>
-<td align="left"><p>Represents a status value and displays the string associated with the status code.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!WINERROR!</p></td>
-<td align="left"><p>Represents a Windows error code and displays the string associated with the error.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!HRESULT!</p></td>
-<td align="left"><p>Represents an error or warning and displays the code in HRESULT format.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!NTerror!</p></td>
-<td align="left"><p>Represents a Windows error and displays the error message string.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Network</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!IPADDR!</p></td>
-<td align="left"><p>Represents a pointer to an IP address. Displays the IP address.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>%!PORT!</p></td>
-<td align="left"><p>Displays a port number.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>%!NETEVENT!</p></td>
-<td align="left"><p>Displays a network event.</p></td>
-</tr>
-</tbody>
-</table>
+## Default configuration options for tracewpp
 
- 
+WPP uses "defaultwpp.ini" for the default configuration settings. This default INI file is included as part of the Windows SDK in the WppConfig Rev1 directory. Refer to this INI file for the latest information on the WPP default behavior, as well as for additional information on customization.
 
- 
+### Software tracing
 
- 
+| Format string | Description                                                                                                                                                                    |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| %!FILE!       | Displays the name of the source file from which the trace message was generated. This variable can also be used in the [trace message prefix](trace-message-prefix.md).        |
+| %!FLAGS!      | Displays the value of the [trace flags](trace-flags.md) that enable the trace message. This variable can also be used in the  [trace message prefix](trace-message-prefix.md). |
+| %!FUNC!       | Displays the function that generated the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).                                 |
+| %!LEVEL!      | Displays the name of the [trace level](trace-level.md)  that enables the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md). |
+| %!LINE!       | Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the [trace message prefix](trace-message-prefix.md).       |
 
+### General use
 
+| Format string | Description                            |
+|---------------|----------------------------------------|
+| %!bool!       | Displays TRUE or FALSE                 |
+| %!irql!       | Displays the name of the current IRQL. |
+|%!sid!|Represents a pointer to Security Identifier (pSID). Displays the SID.|
+|**GUIDs**| |
+|%!GUID!|Represents a pointer to a GUID (pGUID). Displays the GUID that is pointed to.|
+|%!CLSID!|Class ID. Represents a pointer to a class ID GUID. Displays the string associated with the GUID. WPP locates the string in the registry when it formats the trace messages.|
+|%!LIBID!|Type library. Represents the GUID of a COM type library. Displays the string associated with the GUID. WPP locates the string in the registry when it formats the trace messages.|
+|%!IID!|Interface ID. Represents a pointer to an interface ID GUID. Displays the string associated with the GUID. WPP locates the string in the registry when it formats the trace messages.|
+|**Time**| |
+|%!delta!|Displays the difference between two time values, in milliseconds. It is a LONGLONG value that is displayed in **day~h:m:s** format.|
+|%!WAITTIME!|Displays the time that was spent waiting for something to be completed, in milliseconds. It is a LONGLONG value that is displayed in **day~h:m:s** format. Designed to be used with **%!due!**.|
+|%!due!|Displays the time that something is expected to be completed, in milliseconds. It is a LONGLONG value that is displayed in **day~h:m:s** format. Designed to be used with **%!WAITTIME!**.|
+|%!TIMESTAMP! </br>%!datetime! </br> %!TIME!|Displays the value of system time at a particular moment. These are LONGLONG (SINT64) values that are displayed in SYSTEMTIME format.</br>You can use these variables to represent different time values in your program and to distinguish among them.|
 
+### Return codes
 
+|Format string|Description|
+|----|----|
+|%!STATUS!|Represents a status value and displays the string associated with the status code.|
+|%!WINERROR!|Represents a Windows error code and displays the string associated with the error.|
+|%!HRESULT!|Represents an error or warning and displays the code in HRESULT format.|
 
+### Network
+|Format string|Description|
+|----|----|
+|%!IPADDR!|Represents a pointer to an IP address. Displays the IP address.|
+|%!PORT!|Displays a port number.|

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS
 description: WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS is a TLV that contains incoming Wi-Fi Direct action frame parameters.
-ms.assetid: 8E530962-E4DC-4845-8A5F-87AC4E000DA8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS Network Drivers Starting with Windows Vista
@@ -28,14 +27,13 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                                    | Description                                        |
 |-------------------------------------------------------------------------|----------------------------------------------------|
-| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_action_frame_type) | The type of the incoming action frame.             |
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)                       | The MAC address of the remote peer.                |
+| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_action_frame_type) | The type of the incoming action frame.             |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)                       | The MAC address of the remote peer.                |
 | UINT8                                                                   | The Wi-Fi Direct Dialog Token for the transaction. |
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -59,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

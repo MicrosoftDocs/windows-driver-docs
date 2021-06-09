@@ -1,7 +1,6 @@
 ---
 title: Device control keywords
 description: These keywords are used to provide control over the 3D manufacturing device.
-ms.assetid: 1F0CBFC4-F641-4D82-9173-C89218E822B5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -69,7 +68,7 @@ Job3DOutputArea keyword usage
      <psf:Property name="psk3d:Job3DOutputAreaMesh">
          <psf:Value xsi:type="xsd:string">
           <![CDATA[
-            <mesh xmlns="http://schemas.microsoft.com/3dmanufacturing/mesh/2014/11" unit="millimeter">
+            <mesh xmlns="https://schemas.microsoft.com/3dmanufacturing/mesh/2014/11" unit="millimeter">
              <vertices>
                 <vertex x="0" y="0" z="0" />
                 <vertex x="0" y="153000" z="0" />
@@ -355,7 +354,7 @@ Job3DWSDAPackageFamilyName keyword usage
 ## 2.4. Job3D3MFVersion
 
 
-The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “<http://schemas.microsoft.com/3dmanufacturing/2013/01”>, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
+The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “<https://schemas.microsoft.com/3dmanufacturing/2013/01”>, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
 
 <table>
 <colgroup>
@@ -398,7 +397,7 @@ Job3D3MFVersion keyword usage
 
 ```xml
 <psf:Property name="psk3d:Job3D3MFVersion">
-    <psf:Value xsi:type="xsd:string"> http://schemas.microsoft.com/3dmanufacturing/core/2015/02</psf:Value>
+    <psf:Value xsi:type="xsd:string"> https://schemas.microsoft.com/3dmanufacturing/core/2015/02</psf:Value>
 </psf:Property>
 ```
 
@@ -448,7 +447,7 @@ Job3D3MFExtensions keyword usage
 
 ```xml
 <psf:Property name="psk3d:Job3D3MFExtensions">
-    <psf:Value xsi:type="xsd:string"> http://schemas.microsoft.com/3dmanufacturing/material/2015/02</psf:Value>
+    <psf:Value xsi:type="xsd:string"> https://schemas.microsoft.com/3dmanufacturing/material/2015/02</psf:Value>
 </psf:Property>
 ```
 

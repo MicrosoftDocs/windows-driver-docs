@@ -1,7 +1,6 @@
 ---
 title: Debugging Using WinDbg
 description: This section describes how to perform basic debugging tasks using the WinDbg debugger.
-ms.assetid: 6738E3B9-FD79-4720-A8A8-8FA8EE1BA256
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ Details are given in the following topics:
 
 -   [Setting Symbol and Executable Image Paths in WinDbg](setting-symbol-and-source-paths-in-windbg.md)
 
--   [Remote Debugging Using WinDbg](remode-debugging-using-windbg.md)
+-   [Remote Debugging Using WinDbg](remote-debugging-using-windbg.md)
 
 -   [Entering Debugger Commands in WinDbg](debugger-command-window.md)
 

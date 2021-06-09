@@ -4,7 +4,6 @@ description: The IPrinterBidiSchemaElement interface is passed as a parameter to
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 93AE5FDD-DD77-4F9C-B402-C650ACDD7641
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

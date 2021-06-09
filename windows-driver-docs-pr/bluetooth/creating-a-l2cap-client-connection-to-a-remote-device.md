@@ -1,7 +1,6 @@
 ---
 title: Creating a L2CAP Client Connection to a Remote Device
 description: Creating a L2CAP Client Connection to a Remote Device
-ms.assetid: b279db4b-3a4e-407e-ae9b-7330af1905b4
 keywords:
 - SDP WDK Bluetooth
 - Service Discovery Protocol WDK Bluetooth
@@ -21,9 +20,9 @@ An L2CAP client profile driver is a profile driver that requests an Asynchronous
 
 The L2CAP client profile driver must have information about the remote device, such as the protocol/service multiplexer (PSM) that the device uses, in order to request a connection to the device. The client profile driver can obtain this information through the Service Discovery Protocol (SDP) DDIs, or through a service's fixed PSM. For more information about how to obtain this information, see [Accessing SDP Service Information](accessing-sdp-service-information.md).
 
-To initiate a L2CAP connection to a remote device, after the client profile driver has the required information about the device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_L2CA\_OPEN\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536615(v=vs.85)) request.
+To initiate a L2CAP connection to a remote device, after the client profile driver has the required information about the device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_L2CA\_OPEN\_CHANNEL**](/previous-versions/ff536615(v=vs.85)) request.
 
-When the client profile driver builds the request, it supplies a pointer to a [**\_BRB\_L2CA\_OPEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel) structure in the **Parameters.Others.Argument1** member of the IRP associated with the request. This structure contains the Bluetooth address for the remote device, the PSM registered for the device, and additional configuration parameters.
+When the client profile driver builds the request, it supplies a pointer to a [**\_BRB\_L2CA\_OPEN\_CHANNEL**](/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel) structure in the **Parameters.Others.Argument1** member of the IRP associated with the request. This structure contains the Bluetooth address for the remote device, the PSM registered for the device, and additional configuration parameters.
 
 If the remote device accepts the open channel request, the **OutResults** and **InResults** members of the \_BRB\_L2CA\_OPEN\_CHANNEL structure contain information about the newly created connection. The **OutResults** member specifies the parameters for the outbound half of the channel and the **InResults** member specifies the parameters for the inbound half of the channel.
 
@@ -31,13 +30,7 @@ Several of the configuration values passed in the \_BRB\_L2CA\_OPEN\_CHANNEL str
 
 The **IncomingQueueDepth** member of the \_BRB\_L2CA\_OPEN\_CHANNEL structure specifies the maximum number of MTUs that the Bluetooth driver stack will receive and queue on the connection before the Bluetooth driver stack begins to discard them. Setting this value to a very small number increases the chances of data loss, while setting it to a very large number increases memory requirements. Microsoft recommends setting this member to 10.
 
-When the profile driver no longer requires the L2CAP connection to the remote device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_L2CA\_CLOSE\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536614(v=vs.85)) request.
+When the profile driver no longer requires the L2CAP connection to the remote device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_L2CA\_CLOSE\_CHANNEL**](/previous-versions/ff536614(v=vs.85)) request.
 
  
-
- 
-
-
-
-
 

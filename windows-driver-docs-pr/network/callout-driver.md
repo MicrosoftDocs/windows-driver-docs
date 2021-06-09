@@ -1,7 +1,6 @@
 ---
 title: Callout Driver
 description: Callout Driver
-ms.assetid: f12dfe91-0cb8-4ae8-9088-2be97a394aca
 keywords:
 - Windows Filtering Platform callout drivers WDK , defined
 - callout drivers WDK Windows Filtering Platform , defined

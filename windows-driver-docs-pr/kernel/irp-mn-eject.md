@@ -2,7 +2,6 @@
 title: IRP_MN_EJECT
 description: Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 ms.date: 08/12/2017
-ms.assetid: 2807eeca-c614-469a-baeb-3d2d65416c57
 keywords:
  - IRP_MN_EJECT Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -13,12 +12,15 @@ ms.localizationpriority: medium
 
 Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 
-Major Code
-----------
+## Value
+
+0x11
+
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
-When Sent
----------
+
+## When Sent
 
 The PnP manager sends this IRP to direct the appropriate driver or drivers to eject the device from its slot.
 
@@ -43,23 +45,21 @@ On success, a bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 For the device to be ejected, the device must be in the D3 device power state (off) and must be unlocked (if the device supports locking).
 
 Any driver that returns success for this IRP must wait until the device has been ejected before completing the IRP.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Instead, see the reference page for the [**IoRequestDeviceEject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject) routine.
+Instead, see the reference page for the [**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject) routine.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -77,12 +77,7 @@ Requirements
 ## See also
 
 
-[**IoRequestDeviceEject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject)
+[**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject)
 
  
-
- 
-
-
-
 
