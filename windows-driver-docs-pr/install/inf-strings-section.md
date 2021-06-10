@@ -74,24 +74,34 @@ The system INF parser discards the outermost enclosing pair of double quotation 
 
 Because the system INF parser strips the outermost pair of enclosing double quotation marks from any **"**<em>quoted string</em>**"** defining a %*strkey*% token, many of the system INF files define all %*strkey*% tokens as **"**<em>quoted string</em><strong>"</strong>s to avoid the unintended loss of leading and trailing whitespaces during INF parsing. The use of **"**<em>quoted string</em><strong>"</strong>s also ensures that especially long string values that wrap across lines cannot be truncated, and that strings with ending backslashes cannot be concatenated to the next line in the INF file.
 
-To create a single international INF file, an INF can have a set of locale-specific **Strings.**<em>LanguageID</em> sections, as shown in the formal syntax statement. The *LanguageID* extension is a hexadecimal value that is defined as follows:
+To create a single international INF file, an INF can have a set of locale-specific **Strings.**<em>LanguageID</em> sections, as shown in the formal syntax statement. The *LanguageID* extension is a 4 digit hexadecimal value (without a leading "0x") that is defined as follows:
 
 -   The lower 10 bits contain the primary language ID and the next 6 bits contain the sublanguage ID, as specified by the MAKELANGID macro defined in *Winnt.h*.
 -   The language and sublanguage IDs must match the system-defined values of the Win32 LANG_*XXX* and SUBLANG_*XXX* constants defined in *Winnt.h.*
 
-For example, a *LanguageID* value of 0x0407 represents a primary language ID of LANG_GERMAN (07) with a sublanguage ID of SUBLANG_GERMAN (01).
+For example, a *LanguageID* value of 0407 represents a primary language ID of LANG_GERMAN (07) with a sublanguage ID of SUBLANG_GERMAN (01) such as in the following example:
+
+```inf
+[Strings]              ; No language ID implies English
+DiskName="My Excellent Software"
+LocaleSubDir="English"
+
+[Strings.0407]         ; 0407 is the language ID for German
+DiskName="Meine ausgezeichnete Software"
+LocaleSubDir="German"
+```
 
 An INF file can contain only one **Strings** section, along with one **Strings.**<em>LanguageID</em> section for each *LanguageID* value.
 
 Windows selects a single **Strings** section that is used to translate all %*strkey*% tokens for the installation. Depending on the current locale of a particular computer, Windows selects a **Strings** section in the following way:
 
-1.  Windows first looks for the *.LanguageID* values in the INF that match the current locale assigned to the computer. If an exact match is found, Windows uses that **Strings.LanguageID** INF section to translate all %*strkey*% tokens that are defined within the INF.
+1.  Windows first looks for the *.LanguageID* values in the INF that match the current locale assigned to the computer. If an exact match is found, Windows uses that **Strings.**<em>LanguageID</em> INF section to translate all %*strkey*% tokens that are defined within the INF.
 
-    You do need to duplicate all string tokens across all **Strings.**<i>*</i>**]** sections, even numeric/fixed constants that do not need to be localized.
+    You do need to duplicate all string tokens across all **Strings.**<i>*</i> sections, even numeric/fixed constants that do not need to be localized.
 
 2.  Otherwise, Windows looks next for a match to the LANG_*XXX* value with the value of SUBLANG_NEUTRAL as the SUBLANG_*XXX*. If such a match is found, Windows uses that INF section to translate all %*strkey*% tokens that are defined within the INF.
-3.  Otherwise, Windows looks next for a match to the LANG_*XXX* value and any valid SUBLANG_*XXX* for the same LANG_*XXX* family. If such a partial match is found, use that Strings.LanguageID INF section to translate all %*strkey*% tokens that are defined within the INF.
-4.  Otherwise, Windows uses the undecorated Strings section to all translate %*strkey*% tokens that are defined within the INF.
+3.  Otherwise, Windows looks next for a match to the LANG_*XXX* value and any valid SUBLANG_*XXX* for the same LANG_*XXX* family. If such a partial match is found, use that **Strings.**<em>LanguageID</em> INF section to translate all %*strkey*% tokens that are defined within the INF.
+4.  Otherwise, Windows uses the undecorated **Strings** section to all translate %*strkey*% tokens that are defined within the INF.
 
 By convention, and for convenience in creating a set of INF files for the international market, **Strings** sections are the last within all system INF files. Using %*strkey*% tokens for all user-visible string values within an INF, and placing them in per-locale **Strings** sections, simplifies the translation of such strings. For more information about locale-specific INF files, see [Creating International INF Files](creating-international-inf-files.md).
 
