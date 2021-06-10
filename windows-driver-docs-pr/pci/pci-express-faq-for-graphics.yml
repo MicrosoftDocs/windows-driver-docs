@@ -51,14 +51,10 @@ sections:
   
           Given the higher bandwidth offered by PCIe, systems are already moving away from AGP to PCIe. Typically, a system does not provide both AGP and PCIe connectors.
 
-      - question: |
-          PCI Express Graphics in Windows Vista
-        answer: |
+          ### PCI Express Graphics in Windows Vista
           The Windows Vista Display Driver Model (WDDM) has specific requirements for PCIe graphics adapters, for example that the 64-bit addressing mode be supported by the GPU. However, a minimum of 40 bits of physical address bits must be implemented. The unimplemented bits should be forced to zero. These requirements are not applicable to the Windows XP display driver model.
-  
-      - question: |
-          PCIe Graphics & AGP
-        answer: |
+          
+          ### PCIe Graphics & AGP
           In addition to the bandwidth considerations mentioned above, there are several other differences between AGP and PCIe.
   
           By definition, AGP requires a chipset with a graphics address relocation table (GART), which provides a linear view of nonlinear system memory to the graphics device. PCIe, however, requires that the memory linearization hardware exist on the graphics device itself instead of on the chipset. Consequently, driver support for memory linearization in PCIe must exist in the video driver, instead of as an AGP-style separate GART miniport driver. Graphics hardware vendors who want to use nonlocal video memory in their Windows XP driver model (XPDM) drivers must implement both memory linearization hardware and the corresponding software. All PCIe graphics adapters that are compatible with the WDDM must support memory linearization in hardware and software.
