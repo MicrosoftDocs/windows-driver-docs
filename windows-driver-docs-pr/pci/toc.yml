@@ -15,6 +15,6 @@
 - name: "Order of Resources in Start-Device IRP"
   href: order-of-resources-in-start-device-irp.md
 - name: "PCI Express FAQ for Graphics"
-  href: pci-express-faq-for-graphics.md
+  href: pci-express-faq-for-graphics.yml
 - name: "PCI Sample"
   href: pci-sample.md
