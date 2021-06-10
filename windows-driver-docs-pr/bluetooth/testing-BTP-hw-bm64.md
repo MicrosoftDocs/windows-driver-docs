@@ -17,7 +17,7 @@ The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speak
 
 :::image type="content" source="images/BM64.png" alt-text="Photo of the BM64 device":::
 
-## Supported Tests
+## Supported tests
 
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Audio tests](testing-BTP-tests-audio.md)

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The nRF52840 is a low energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral, like a keyboard or mouse, among other things. More information can be found at [Adafruit](https://www.adafruit.com/product/4062) and through the [Nordic Semiconductor](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52840) nRF52840 reference.
+The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral, like a keyboard or mouse, among other things. More information can be found at [Adafruit](https://www.adafruit.com/product/4062) and through the [Nordic Semiconductor](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52840) nRF52840 reference.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
@@ -17,7 +17,7 @@ The nRF52840 is a low energy (LE) radio from Nordic Semiconductor capable of beh
 
 :::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather device":::
 
-## Supported Tests
+## Supported tests
 
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Human Interface Device (HID) tests](testing-BTP-tests-hid.md) 

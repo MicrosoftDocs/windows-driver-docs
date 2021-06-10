@@ -17,7 +17,7 @@ The RN52 is a Bluetooth Basic Rate (BR) radio from Roving Networks capable of be
 
 :::image type="content" source="images/RN52.png" alt-text="Photo of the RN52 Device":::
 
-## Supported Tests
+## Supported tests
 
 - [Pairing tests](testing-BTP-tests-pairing.md)
 - [Audio tests](testing-BTP-tests-audio.md)
