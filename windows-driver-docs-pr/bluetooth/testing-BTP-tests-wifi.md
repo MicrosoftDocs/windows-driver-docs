@@ -27,7 +27,7 @@ Features and purchasing information for supported devices can be found at [Suppo
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Ensure that all existing network and VPN connections are disconnected, and that "Connect Automatically" is unchecked. Then run either:
 
 - `RunWiFiCoexScenarioTests.bat <Bluetooth device name> <Wi-Fi device name>` from an elevated command prompt or
-- `RunWi-FiCoexScenarioTests.ps1 <Bluetooth device name> <Wi-Fi device name>` from an elevated PowerShell console
+- `RunWiFiCoexScenarioTests.ps1 <Bluetooth device name> <Wi-Fi device name>` from an elevated PowerShell console
 
 Information on available device name parameters can be found in [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-devices).
 
