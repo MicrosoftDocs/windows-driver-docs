@@ -108,14 +108,20 @@
       href: testing-BTP-software-package.md
     - name: "BTP Hardware"
       items:
-      - name: "Traduci board"
+      - name: "Supported Hardware"
         href: testing-BTP-hw.md
-      - name: "HID Capable Radios"
-        href: testing-BTP-hw-hid.md
-      - name: "Audio Capable Radios"
-        href: testing-BTP-hw-audio.md
+      - name: "RN42"
+        href: testing-BTP-hw-rn42.md
+      - name: "Bluefruit Feather"
+        href: testing-BTP-hw-bluefruit-Feather.md
+      - name: "Bluefruit Friend"
+        href: testing-BTP-hw-bluefruit-Friend.md
+      - name: "RN52"
+        href: testing-BTP-hw-rn52.md
       - name: "BM-64-EVB board"
         href: testing-BTP-hw-bm64.md
+      - name: "Model 2433 ESP32"
+        href: testing-BTP-hw-esp32.md
       - name: "Human Device Adapter"
         href: testing-BTP-human-device-adapter.md
     - name: "BTP Tests"
@@ -130,6 +136,8 @@
         href: testing-BTP-tests-audio.md
       - name: "Testing Bluetooth Audio and HID"
         href: testing-BTP-tests-audio-hid.md
+      - name: "Testing Bluetooth Audio and Wi-Fi"
+        href: testing-BTP-tests-wifi.md
       - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
     - name: "BTP Diagnostic Tools"

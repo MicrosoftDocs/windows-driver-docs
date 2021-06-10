@@ -3,7 +3,6 @@ title: Microsoft Bluetooth Test Platform - Human Device Adapter
 description: Bluetooth Test Platform (BTP) Human Device Adapter (HDA) Setup and Pairing 
 ms.date: 11/13/2020
 ms.localizationpriority: medium
-
 ---
 
 # Bluetooth Test Platform - Human Device Adapter
@@ -16,7 +15,7 @@ Install the software as described in [BTP Software Setup](testing-BTP-setup.md#s
 
 ## HDA configuration file
 
-Create a configuration file as below named after your test device, for example: *mytestdevice.txt*. Note that the file and extension are not important.
+Create a configuration file as below named after your test device, for example: *mytestdevice.txt*. Note that the filename and extension are not important.
 
 ```console
 name=myTestDevice

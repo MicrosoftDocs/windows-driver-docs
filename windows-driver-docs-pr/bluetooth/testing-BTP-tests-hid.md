@@ -1,40 +1,45 @@
 ---
 title: Microsoft Bluetooth Test Platform - HID
 description: Bluetooth Test Platform (BTP) HID tests.
-ms.date: 2/14/2020
+ms.date: 06/09/2021
 ms.localizationpriority: medium
-
 ---
 
-# BTP HID Tests #
+# BTP HID Tests
 
-The BTP HID tests will test the ability of the local system to pair with a remote radio over BR/EDR or LE and validate HID functionality.
+The BTP HID tests verify the ability of the local system to pair with a remote radio over BR/EDR or LE and validate HID functionality.
 
-## Setting Up ##
+## Setting Up
 
-First check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate radio(s) are correctly plugged in to the Traduci. Currently the RN42 radio can **only** be plugged into JB. Simlarly the Bluefruit radio can **only** be plugged into JC. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
+First check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci. Currently the RN42 device can **only** be plugged into JB. Similarly, the Bluefruit device can **only** be plugged into JC. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
 
-Information and purchasing information for supported radios can be found [Supported BTP Hardware](testing-BTP-hw.md).
+Information and purchasing information for supported devices can be found [Supported BTP Hardware](testing-BTP-hw.md).
 
-## Running the HID Tests ##
+## Supported devices
+
+- [RN42](testing-BTP-hw-rn42.md)
+- [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md)
+- [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
+
+## Running the HID Tests
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:
 
-- `RunHidTests.bat <radio name>` from an elevated command prompt or
-- `RunHidTests.ps1 <radio name>` from an elevated PowerShell console
+- `RunHidTests.bat <device name>` from an elevated command prompt or
+- `RunHidTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available radio name parameters can be found [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-radios)
+Information on available device name parameters can be found [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-devices)
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
-As a test starts the red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.
+As a test starts the red LED next to the 12-pin adapter will turn on once the command from the test to power the Pmod device has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the Pmod device being in an unknown state.
 
-## Capturing Logs ##
+## Capturing Logs
 
 To capture the Bluetooth logs, follow the instructions at [The Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
 To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](testing-BTP-tools-btetlparse.md).
 
-## Known issues ##
+## Known issues
 
-- Stress tests: Tests run in a tight loop using an LE radio may cause pairing or unpairing to fail.
+- Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
