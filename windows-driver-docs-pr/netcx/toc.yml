@@ -88,12 +88,16 @@
     items:
   - name: "WiFiCx unsolicited status indications"
     items:
+  - name: "Other WiFiCx data types"
+    items:
   - name: "WiFiCx TLV generator/parser"
     href: wificx-tlv-generator-parser.md
   - name: "WiFiCx design guide"
     items:
   - name: "WiFiCx WPA3-SAE authentication"
     href: wificx-wpa3-sae-authentication.md
-  - name: "WiFiCx Dual Sta connectivity"
+  - name: "Other WiFiCx data types"
     items:
+    - name: "WDI_STATUS"
+      href: wdi-status.md
 

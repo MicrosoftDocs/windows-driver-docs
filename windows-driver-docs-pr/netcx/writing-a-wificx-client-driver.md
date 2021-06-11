@@ -11,8 +11,8 @@ ms.localizationpriority: medium
 
 ## Device Initialization
 
-In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), a WifiCx client driver must also perform the following tasks in its [EvtDriverDeviceAdd](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) callback function:
-1.	Call  WifiDeviceInitConfig after calling NetDeviceInitConfig but before calling [WdfDeviceCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [WDFDEVICE_INIT](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
+In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), a WifiCx client driver must also perform the following tasks in its [EvtDriverDeviceAdd](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) callback function:
+1.	Call  WifiDeviceInitConfig after calling NetDeviceInitConfig but before calling [WdfDeviceCreate](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [WDFDEVICE_INIT](/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
 
 2.	Call **WifiDeviceInitialize** to register WifCx device-specific callback functions using an initialized WIFI\_DEVICE\_CONFIG structure and the WDFDEVICE object obtained from **WdfDeviceCreate**.
 The following example demonstrates how to initialize the WifiCx device. Error handling has been left out for clarity.
@@ -44,7 +44,7 @@ This message flow diagram illustrates the initialization process.
 
 ### **Default (station) adapter creation flow**
 
-Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in the [EvtWdfDeviceD0EntryPostInterruptsEnabled](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). Note that WifiCx will no longer be calling WDI\_TASK\_OPEN\WDI\_TASK\_CLOSE to instruct clients to load\unload firmware nor will it be querying for Wi-Fi capabilities via WDI\_GET\_ADAPTER\_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Furthermore, WifiCx/WDI will no longer call WDI\_TASK\_CREATE\_PORT command.
+Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in the [EvtWdfDeviceD0EntryPostInterruptsEnabled](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). Note that WifiCx will no longer be calling WDI\_TASK\_OPEN\WDI\_TASK\_CLOSE to instruct clients to load\unload firmware nor will it be querying for Wi-Fi capabilities via WDI\_GET\_ADAPTER\_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Furthermore, WifiCx/WDI will no longer call WDI\_TASK\_CREATE\_PORT command.
 
 In this call, the client driver needs to call into NetAdapterCx to create the new NetAdapter object and then call into WifiCx (using **WifiAdapterInitialize** API) to initialize the WiFiCx context and associate it with this NetAdapter object.
 
@@ -186,7 +186,7 @@ EvtWifiDeviceCreateAdapter(
 ```
 ### Wi-Fi ExemptionAction support in TxQueue
 
-ExemptionAction is added as a NetAdapter packet extension and it indicates whether the packet is expected to be exempt from any cipher operations performed by the client. Please read documentation on [usExemptionActionType](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/windot11/ns-windot11-dot11_extsta_send_context) for details.
+ExemptionAction is added as a NetAdapter packet extension and it indicates whether the packet is expected to be exempt from any cipher operations performed by the client. Please read documentation on [usExemptionActionType](/windows-hardware/drivers/ddi/windot11/ns-windot11-dot11_extsta_send_context) for details.
 ```C++
 #include <net/wifi/exemptionaction.h>
 
@@ -388,19 +388,19 @@ KmdfLibraryVersion      = $KMDFVERSION$
 The client drive normally allocates common buffers to store the packets received the NIC. The NetAdapterCx has a new feature that provides the client driver a pool of common buffers that are pre-allocated by the system on behalf of the client driver. 
 
 
-To opt-in, set **AllocationMode** and **AttachmentMode** fields of the [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) as the following:
+To opt-in, set **AllocationMode** and **AttachmentMode** fields of the [NET_ADAPTER_RX_CAPABILITIES](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) as the following:
 
 ```C++
 rxCapabilities.AllocationMode = NetRxFragmentBufferAllocationModeSystem;
 rxCapabilities.AttachmentMode = NetRxFragmentBufferAttachmentModeDriver;
 ```
 
-Once the above configuration is set, later the [NET_RING_COLLECTION](https://docs.microsoft.com/is-is/windows-hardware/drivers/ddi/ringcollection/ns-ringcollection-_net_ring_collection) structure obtained through the [NetRxQueueGetRingCollection](https://docs.microsoft.com/is-is/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuegetringcollection) would consist of three [NET_RING](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structures, a packet ring, a fragment ring and a data buffer ring. The 3rd ring, data buffer ring, is where those pre-allocated data buffer stored.
+Once the above configuration is set, later the [NET_RING_COLLECTION](/windows-hardware/drivers/ddi/ringcollection/ns-ringcollection-_net_ring_collection) structure obtained through the [NetRxQueueGetRingCollection](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuegetringcollection) would consist of three [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structures, a packet ring, a fragment ring and a data buffer ring. The 3rd ring, data buffer ring, is where those pre-allocated data buffer stored.
 
 > [!IMPORTANT]
-> Just like any other [NET_RING](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring), the data buffer ring must be operated in a sequential manner too, i.e. use of data buffers stored in the data buffer ring must be in sequence order. It is not allowed to skip unused data buffer and leave gaps 
+> Just like any other [NET_RING](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring), the data buffer ring must be operated in a sequential manner too, i.e. use of data buffers stored in the data buffer ring must be in sequence order. It is not allowed to skip unused data buffer and leave gaps 
 
-A driver that leverages the system allocated data buffer pool, typically implements its Rx [EvtPacketQueueAdvance](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback in following steps:
+A driver that leverages the system allocated data buffer pool, typically implements its Rx [EvtPacketQueueAdvance](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback in following steps:
 1. Obtains an unused data buffer from the data buffer ring
 2. Programs that data buffer to its hardware for receive
 3. Once new network data has been received, the client driver links the packet and fragment descriptor together with that data buffer
