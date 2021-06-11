@@ -118,6 +118,10 @@
       href: troubleshooting-common-errors.md
     - name: "Event tracing"
       href: event-tracing.md
+  - name: "HID over SPI"
+    items: 
+    - name: "Introduction to HID over SPI"
+      href: hid-over-spi.md
 - name: "Non-HID legacy devices and drivers"
   items: 
   - name: "Non-HID legacy devices"
