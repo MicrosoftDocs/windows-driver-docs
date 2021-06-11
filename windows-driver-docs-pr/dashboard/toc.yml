@@ -1,7 +1,7 @@
 - name: "Partner Center for Windows Hardware"
   href: index.yml
 - name: "Hardware Program dashboard FAQ"
-  href: hardware-dashboard-faq.md
+  href: hardware-dashboard-faq.yml
 - name: "Hardware submissions"
   items: 
   - name: "Hardware submissions overview"
