@@ -219,7 +219,7 @@ The following diagram summarizes the sequence described above:
 * [Custom Capability Sample App](https://go.microsoft.com/fwlink/p/?LinkId=846904)
 * [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
 * [Sideload apps in Windows 10](/windows/deploy/sideload-apps-in-windows-10)
-* [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)
+* [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.yml)
 
 ## SCCD XML Schema
 
