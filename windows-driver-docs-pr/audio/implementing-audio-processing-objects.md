@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.date: 06/12/2020
+ms.date: 06/11/2021
 ms.localizationpriority: medium
 ---
 
@@ -303,19 +303,18 @@ The following example code is extracted from the public ComponentizedAudioSample
 
 The registration of the APO with the audio engine is done using a newly created APO device. For the audio engine to make use of the new APO device it must be a PNP child of the audio device, sibling of the audio endpoints. The new componentized APO design does not allow for an APO to be registered globally and used by multiple different drivers. Each driver must register its own APO's.
 
-The installation of the APO is done in two parts. First, the driver extension INF will add an APO device to the system:
+The installation of the APO is done in two parts. First, the driver extension INF will add an APO component to the system:
 
 ```inf
-[DeviceExtension_Install.Devices]
-AddDevice = SwapApo,,Apo_AddDevice
+[DeviceExtension_Install.Components]
+AddComponent = SwapApo,,Apo_AddComponent
 
-[Apo_AddDevice]
-HardwareIds = APO\VEN_SMPL&CID_APO
+[Apo_AddComponent]
+ComponentIDs = VEN_SMPL&CID_APO
 Description = "Audio Proxy APO Sample"
-Capabilities = 0x00000008 ; SWDeviceCapabilitiesDriverRequired
 ```
 
-This APO device triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO device. It specifies the device class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine.
+This APO component triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO component. It specifies the component class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine.
 
 >[!NOTE]
 > The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.
