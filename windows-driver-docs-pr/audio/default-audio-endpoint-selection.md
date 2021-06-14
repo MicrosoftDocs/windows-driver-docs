@@ -41,7 +41,7 @@ The Windows 7 and Windows 10 audio subsystems use a similar algorithm to determi
   - If an endpoint is identified, it is returned, and the process completes.
 - If no endpoint identified, loop through all ACTIVE endpoints to find an endpoint set as the preferred default by the user for the system (selection modified for Windows 10).
   - If an endpoint is identified, it is returned, and the process completes.
-- If no endpoint identified, loop through all ACTIVE endpoints to find the endpoint with the highest &quot;rank&quot; property for the requested role, and does not have a never set as default [PKEY_AudioDevice_NeverSetAsDefaultEndpoint](/windows-hardware/drivers/audio/pkey-audiodevice-neversetasdefaultendpoint) property set. (rank weighting values modified for Windows 10).
+- If no endpoint identified, loop through all ACTIVE endpoints to find the endpoint with the highest &quot;rank&quot; property for the requested role, and does not have a never set as default [PKEY_AudioDevice_NeverSetAsDefaultEndpoint](./pkey-audiodevice-neversetasdefaultendpoint.md) property set. (rank weighting values modified for Windows 10).
   - If an endpoint is identified, it is returned, and the process completes.
 - If no endpoint is identified, the request fails indicating E\_NOTFOUND.
 
@@ -96,10 +96,10 @@ The endpoint with the highest rank is then chosen as the default for the request
 
 The Windows 10 audio subsystem considers the following endpoint characteristics, or _factors_, to select the default audio endpoint:
 
-- [Jack detection capability](/windows-hardware/drivers/audio/ksproperty-jack-description2)
+- [Jack detection capability](./ksproperty-jack-description2.md)
 - [Form factor](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-endpointformfactor)
-- [KSNodeType](/windows-hardware/drivers/audio/audio-topology-nodes)
-- [Bus type](/windows-hardware/drivers/install/devpkey-device-enumeratorname)
+- [KSNodeType](./audio-topology-nodes.md)
+- [Bus type](../install/devpkey-device-enumeratorname.md)
 - [General location](/windows/win32/api/devicetopology/ns-devicetopology-ksjack_description)
 - [Geometric location](/windows/win32/api/devicetopology/ns-devicetopology-ksjack_description)
 - SubtypeSpecific
@@ -107,9 +107,9 @@ The Windows 10 audio subsystem considers the following endpoint characteristics,
 
 Windows 10 defines a set of enum values for every supported endpoint factor and stores them in the registry. Detailed descriptions of these factors and their corresponding enumerant value sets follow.
 
-#### [Jack Detection Capability](/windows-hardware/drivers/audio/ksproperty-jack-description2)
+#### [Jack Detection Capability](./ksproperty-jack-description2.md)
 
-An endpoint with this capability implies that audio drivers can notify the audio subsystem when the audio peripheral device that is connected to an endpoint is plugged in or unplugged. Audio endpoints that support jack detection capability are called dynamic endpoints, and those that do not provide this support are called static endpoints. To support jack detection capability, audio device drivers must support the KSPROPERTY\_JACK\_DESCRIPTION2 property. For more information about this property, see [KSPROPERTY\_JACK\_DESCRIPTION2](/windows-hardware/drivers/audio/ksproperty-jack-description2).
+An endpoint with this capability implies that audio drivers can notify the audio subsystem when the audio peripheral device that is connected to an endpoint is plugged in or unplugged. Audio endpoints that support jack detection capability are called dynamic endpoints, and those that do not provide this support are called static endpoints. To support jack detection capability, audio device drivers must support the KSPROPERTY\_JACK\_DESCRIPTION2 property. For more information about this property, see [KSPROPERTY\_JACK\_DESCRIPTION2](./ksproperty-jack-description2.md).
 
 | **Jack detection capability enum values** |
 | --- |
@@ -120,7 +120,7 @@ The Windows 10 default audio device heuristic treats all USB audio endpoints and
 
 #### [Form Factor](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-endpointformfactor)
 
-An audio endpoint's form factor indicates the physical attributes of the audio endpoint with which the user interacts, such as headphones, speakers, or S/PDIF. To determine an endpoint's form factor, the audio subsystem uses built-in fixed logic to map the Kernel Streaming (KS) pin's category ([KSNodeType](/windows-hardware/drivers/audio/audio-topology-nodes)), which is exposed by the audio driver, to a specific form factor. For more information, see [EndpointFormFactor](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-endpointformfactor).
+An audio endpoint's form factor indicates the physical attributes of the audio endpoint with which the user interacts, such as headphones, speakers, or S/PDIF. To determine an endpoint's form factor, the audio subsystem uses built-in fixed logic to map the Kernel Streaming (KS) pin's category ([KSNodeType](./audio-topology-nodes.md)), which is exposed by the audio driver, to a specific form factor. For more information, see [EndpointFormFactor](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-endpointformfactor).
 
 | **Endpoint form factor enum values** |
 | --- |
@@ -136,7 +136,7 @@ An audio endpoint's form factor indicates the physical attributes of the audio e
 | DigitalAudioDisplayDevice |
 | UnknownFormFactor |
 
-#### [KSNodeType](/windows-hardware/drivers/audio/audio-topology-nodes)
+#### [KSNodeType](./audio-topology-nodes.md)
 
 The audio driver selects the KSNodeType for a KS pin on an endpoint because the driver has detailed knowledge about the audio device that might be connected to an audio jack. Therefore, KsNodeType reveals more specific knowledge on the endpoint than its form factor does.
 
@@ -148,7 +148,7 @@ The audio driver selects the KSNodeType for a KS pin on an endpoint because the 
 
 For more detailed information about KsNodeType, see [Pin Category Property](pin-category-property.md).
 
-#### [Bus Type](/windows-hardware/drivers/install/devpkey-device-enumeratorname)
+#### [Bus Type](../install/devpkey-device-enumeratorname.md)
 
 This factor represents the bus type from which the audio device that exposed the audio endpoints was enumerated.
 
