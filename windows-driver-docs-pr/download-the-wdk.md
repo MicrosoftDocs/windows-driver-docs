@@ -85,7 +85,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download the EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019)
+* [Download the EWDK for Windows Windows Server 2022](/legal/windows/hardware/enterprise-wdk-license-2019)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
