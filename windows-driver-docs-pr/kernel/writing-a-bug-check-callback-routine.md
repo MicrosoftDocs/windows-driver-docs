@@ -38,7 +38,9 @@ A bug check callback routine cannot:
 * Use any synchronization mechanisms
 * Call any routine that must execute at IRQL = DISPATCH\_LEVEL or below
 
-Bug check callback routines are guaranteed to run without interruption, so no synchronization is required. (If the bug check routine does use any synchronization mechanisms, the system will deadlock.)
+Bug check callback routines are guaranteed to run without interruption, so no synchronization is required. (If the bug check routine attempts to acquire locks using any synchronization mechanisms, the system will deadlock.)  Keep in mind that data structures or lists may be in an inconsistent state at the time of bugcheck, so care should be taken when accessing data structures protected by locks.  For example, you should add upper bounds checking when walking lists, and verify the links are pointing to valid memory, in case there is a circular list or a link is pointing to an invalid address.
+
+The [**MmIsAddressValid**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisaddressvalid) may be used by a Bug Check callback routine to check whether accessing an address will cause a page fault. Since the routine runs without interruption and other cores are frozen, this satisfies the synchronization requirements of that function.  Kernel addresses which may be paged or invalid should always be checked with MmIsAddressValid before deferencing them in a Bug Check callback, since a page fault will cause a double fault and may prevent the dump from being written.
 
 A driver's bug check callback routine can safely use the **READ\_PORT\_<em>XXX</em>**, **READ\_REGISTER\_<em>XXX</em>**, **WRITE\_PORT\_<em>XXX</em>**, and **WRITE\_REGISTER\_<em>XXX</em>** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)).)
 
@@ -100,45 +102,47 @@ A <i>KbCallbackSecondaryDumpData</i> routine is very restricted in the actions i
 
 ## Implementing a KbCallbackTriageDumpData Callback Routine
 
-Starting in Windows 10, version 1809 and Windows Server 2019, a kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type *KbCallbackTriageDumpData* to add virtual memory ranges to a carved minidump file. The system passes, in the <i>ReasonSpecificData</i> parameter, a pointer to a [**KBUGCHECK_TRIAGE_DUMP_DATA**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_triage_dump_data) structure that describes the dump data.
+Starting in Windows 10, version 1809 and Windows Server 2019, a kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type *KbCallbackTriageDumpData* to mark virtual memory ranges for inclusion in a carved kernel minidump. This ensures that a minidump will contain the specified ranges, so they can be accessed using the same debugger commands which would work in a kernel dump. This is currently implemented for 'carved' minidumps, meaning that a kernel or larger dump was captured, then a minidump was created from the larger dump. Most systems are configured for automatic/kernel dumps by default, and the system automatically creates a minidump on the next boot after the crash.
 
-In the following example, the driver configures a triage dump array and then registers a minimal implementation of the callback:
+The system passes, in the <i>ReasonSpecificData</i> parameter, a pointer to a [**KBUGCHECK_TRIAGE_DUMP_DATA**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_triage_dump_data) structure that contains information about the Bug Check as well as an OUT parameter which is used by the driver to return its initialized and populated data array.
+
+In the following example, the driver configures a triage dump array and then registers a minimal implementation of the callback.  The driver will use the array to add two global variables to the minidump.
 
 ```cpp
+
+#include <ntosp.h>
+
+// Header definitions
+
+
+    //
+    // The maximum count of ranges the driver will add to the array.
+    // This example is only adding max 3 ranges with some extra.
+    //
+
+#define MAX_RANGES 10
+
+    //
+    // This should be large enough to hold the maximum number of KADDRESS_RANGE
+    // which the driver expects to add to the array.
+    //
+
+#define ARRAY_SIZE ((FIELD_OFFSET(KTRIAGE_DUMP_DATA_ARRAY, Blocks)) + (sizeof(KADDRESS_RANGE) * MAX_RANGES))
+
 // Globals 
  
-KBUGCHECK_REASON_CALLBACK_RECORD ExampleBugcheckCallbackRecord; 
-PKTRIAGE_DUMP_DATA_ARRAY gTriageDumpDataArray; 
+static PKBUGCHECK_REASON_CALLBACK_RECORD gBugcheckTriageCallbackRecord; 
+static PKTRIAGE_DUMP_DATA_ARRAY gTriageDumpDataArray;
+
+    //
+    // This is a global variable which the driver wants to be available in
+    // the kernel minidump. A real driver may add more address ranges.
+    //
+
+ULONG64 gDriverData1 = 0xAAAAAAAA;
+PULONG64 gpDriverData2;
  
-//  call this register function from DriverInit, etc.
- 
-VOID ExampleRegisterTriageDataCallbacks() 
-{ 
- 
-    // 
-    // Allocate a triage dump array in the non-paged pool. 
-    // 
- 
-gTriageDumpDataArray = 
-    (PKTRIAGE_DUMP_DATA_ARRAY)ExAllocatePoolWithTag(NonPagedPoolNx, 2*PAGE_SIZE, "Xmpl"); 
- 
-    // 
-    // Initialize the dump data block array. 
-    // 
- 
-    KeInitializeTriageDumpDataArray( gTriageDumpDataArray, 2*PAGE_SIZE, "Example"); 
- 
-    KeInitializeCallbackRecord( &ExampleBugcheckCallbackRecord ); 
- 
-    KeRegisterBugCheckReasonCallback( 
-        &ExampleBugCheckCallbackRecord, 
-        ExampleBugCheckCallbackRoutine, 
-        KbCallbackTriageDumpData, 
-        "Example" 
-        ); 
-} 
- 
-// Callback function 
+// Functions
  
 VOID 
 ExampleBugCheckCallbackRoutine( 
@@ -149,19 +153,147 @@ ExampleBugCheckCallbackRoutine(
     ) 
 { 
     PKBUGCHECK_TRIAGE_DUMP_DATA DumpData; 
-    NTSTATUS Status; 
  
-    DumpData = (PKBUGCHECK_TRIAGE_DUMP_DATA) Data; 
+    UNREFERENCED_PARAMETER(Reason);
+    UNREFERENCED_PARAMETER(Record);
+    UNREFERENCED_PARAMETER(Length);
+
+    DumpData = (PKBUGCHECK_TRIAGE_DUMP_DATA) Data;
+
+    if ((DumpData->Flags & KB_TRIAGE_DUMP_DATA_FLAG_BUGCHECK_ACTIVE) == 0) {
+        return;
+    }
+
+    if (gTriageDumpDataArray == NULL)
+    {
+        return;
+    }
  
-    Status = KeAddTriageDumpDataBlock(gTriageDumpDataArray, gImportant, SizeofGImportant); 
+    //
+    // Add the dynamically allocated global pointer and buffer once validated.
+    //
+
+    if ((gpDriverData2 != NULL) && (MmIsAddressValid(gpDriverData2))) {
+
+        //
+        // Add the address of the global itself a well as the pointed data
+        // so you can use the global to access the data in the debugger
+        // by running a command like "dt example!gpDriverData2"
+        //
+
+        KeAddTriageDumpDataBlock(gTriageDumpDataArray, &gpDriverData2, sizeof(PULONG64));
+        KeAddTriageDumpDataBlock(gTriageDumpDataArray, gpDriverData2, sizeof(ULONG64));
+    }
+
+    //
+    // Pass the array back for processing.
+    //
  
-    // Pass our arrays back 
- 
-    if (NT_SUCCESS(Status)) { 
-        DumpData->RequiredDataArray = gTriageDumpDataArray; 
-    } 
+    DumpData->DataArray = gTriageDumpDataArray; 
  
     return; 
 }
+
+// Setup Function
+
+NTSTATUS
+SetupTriageDataCallback(VOID) 
+{ 
+    PVOID pBuffer;
+    NTSTATUS Status;
+    BOOLEAN bSuccess;
+ 
+    //
+    // Call this function from DriverEntry.
+    // 
+    // Allocate a buffer to hold a callback record and triage dump data array
+    // in the non-paged pool. 
+    //
+ 
+    pBuffer = ExAllocatePoolWithTag(NonPagedPoolNx,
+                                    sizeof(KBUGCHECK_REASON_CALLBACK_RECORD) + ARRAY_SIZE,
+                                    'Xmpl');
+
+    if (pBuffer == NULL) {
+        return STATUS_NO_MEMORY;
+    }
+
+    RtlZeroMemory(pBuffer, sizeof(KBUGCHECK_REASON_CALLBACK_RECORD));
+    gBugcheckTriageCallbackRecord = (PKBUGCHECK_REASON_CALLBACK_RECORD) pBuffer;
+    KeInitializeCallbackRecord(gBugcheckTriageCallbackRecord); 
+
+    gTriageDumpDataArray =
+        (PKTRIAGE_DUMP_DATA_ARRAY) ((PUCHAR) pBuffer + sizeof(KBUGCHECK_REASON_CALLBACK_RECORD));
+
+    // 
+    // Initialize the dump data block array. 
+    // 
+ 
+    Status = KeInitializeTriageDumpDataArray(gTriageDumpDataArray, ARRAY_SIZE);
+    if (!NT_SUCCESS(Status)) {
+        ExFreePoolWithTag(pBuffer, 'Xmpl');
+        gTriageDumpDataArray = NULL;
+        gBugcheckTriageCallbackRecord = NULL;
+        return Status;
+    }
+
+    //
+    // Set up a callback record
+    //    
+
+    bSuccess = KeRegisterBugCheckReasonCallback(gBugcheckTriageCallbackRecord, 
+                                                ExampleBugCheckCallbackRoutine, 
+                                                KbCallbackTriageDumpData, 
+                                                (PUCHAR)"Example"); 
+
+    if ( !bSuccess ) {
+         ExFreePoolWithTag(gTriageDumpDataArray, 'Xmpl');
+         gTriageDumpDataArray = NULL;
+         return STATUS_UNSUCCESSFUL;
+    }
+
+    //
+    // It is possible to add a range to the array before bugcheck if it is
+    // guaranteed to remain valid for the lifetime of the driver.
+    // The value could change before bug check, but the address and size
+    // must remain valid.
+    //
+
+    KeAddTriageDumpDataBlock(gTriageDumpDataArray, &gDriverData1, sizeof(gDriverData1));
+
+    //
+    // For an example, allocate another buffer here for later addition tp the array.
+    //
+
+    gpDriverData2 = ExAllocatePoolWithTag(NonPagedPoolNx, sizeof(ULONG64), 'Xmpl');
+    if (gpDriverData2 != NULL) {
+        *gpDriverData2 = 0xBBBBBBBB;
+    }
+
+    return STATUS_SUCCESS;
+} 
+
+
+
+// Deregister function
+
+VOID CleanupTriageDataCallbacks() 
+{ 
+
+    //
+    // Call this routine from DriverUnload
+    //
+
+    if (gBugcheckTriageCallbackRecord != NULL) {
+        KeDeregisterBugCheckReasonCallback( gBugcheckTriageCallbackRecord );
+        ExFreePoolWithTag( gBugcheckTriageCallbackRecord, 'Xmpl' );
+        gTriageDumpDataArray = NULL;
+    }
+
+}
 ```
+Only nonpaged kernel-mode addresses should be used with this callback method.
+
 A <i>KbCallbackTriageDumpData</i> routine is very restricted in the actions it can take. For more information, see [Bug Check Callback Routine Restrictions](#bug-check-callback-routine-restrictions).
+The [**MmIsAddressValid**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisaddressvalid) function should only be used from a <i>KbCallbackTriageDumpData</i> routine after validating that the KB_TRIAGE_DUMP_DATA_FLAG_BUGCHECK_ACTIVE Flag is set.  This flag is currently always expected to be set, but it is unsafe to call the routine in the event it is not set without additional synchronization.
+
