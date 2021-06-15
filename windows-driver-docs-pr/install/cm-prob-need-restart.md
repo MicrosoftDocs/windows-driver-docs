@@ -29,10 +29,10 @@ Select **Restart Computer**, which restarts your computer.
 
 An operation performed on the device needs the system to be restarted before that operation can complete or take effect.  Some common situations that may result in a device needing the system to be restarted:
 
-- A device installation was unable to copy a file to its proper destination location and that file copy was queued up to happen on next boot.
+- A device installation was unable to copy a file to its proper destination location and that file copy was queued up to happen on next boot. See the [SetupApi logs](setupapi-text-logs.md) for more information.
 
-- A device installation was unable to start or restart a service that was installed as part of the device installation.
+- A device installation was unable to start or restart a service that was installed as part of the device installation. See the [SetupApi logs](setupapi-text-logs.md) for more information.
 
-- There was a problem restarting a device or devices at the end of a device installation.
+- There was a problem restarting a device or devices at the end of a device installation. See the [SetupApi logs](setupapi-text-logs.md) for more information.
 
 - There was a problem enabling a disabled device.
