@@ -23,8 +23,14 @@ This Device Manager error message indicates that the driver could not be loaded.
 
 Reinstall or obtain a new driver.
 
+## For driver developers
+
 Some of the more common reasons for this error include the following:
 
-- A driver file that is not present, a binary file that is corrupted, a file I/O problem, or a driver that references an entry point in another binary that could not be loaded.
+- A driver file that links with another binary file that is not present on the system
+
+- A driver file that links with an operating system provided API and the driver file is being loaded on a version of the operating system that does not support that API.
 
 - The system has [Hypervisor-Protected Code Integrity](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard) enabled and the driver is not compatible with that feature.
+
+- A failure to load a driver file or one of its dependencies due to the file being corrupted or a file I/O problem
