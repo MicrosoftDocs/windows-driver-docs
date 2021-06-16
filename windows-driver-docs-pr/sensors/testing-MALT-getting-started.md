@@ -11,7 +11,7 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 ## Acquiring the Necessary Files
 
-1. Create a folder named ```MALT``` on your computer's C drive. the filepath should be ```C:\MALT```. We will place all of the necessary files and cloned repositories here.
+1. Create a folder named ```MALT``` on your computer's C drive. The filepath should be ```C:\MALT```. We will place all of the necessary files and cloned repositories here.
 
 1. Clone the [busiotools repository](https://github.com/microsoft/busiotools) to your ```MALT``` folder. The filepath should be ```C:\MALT\busiotools```.
 
@@ -48,5 +48,5 @@ The MALT is run by an Arduino which requres firmware to set up and interact with
 4. Upload the firmware to the Arduino by running the following from a command prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
     ```console
-    arduino-cli compile --fqbn arduino:avr:mega --port COMX --export-binaries --upload --library C:\MALT\Arduino-SerialCommand --library C:\MALT\SoftI2CMaster C:\MALT\busiotools\sensors\tools\MALT\Code\malt
+    arduino-cli compile --fqbn arduino:avr:mega --port COMX --upload --library C:\MALT\Arduino-SerialCommand --library C:\MALT\SoftI2CMaster C:\MALT\busiotools\sensors\tools\MALT\Code\malt
     ```
