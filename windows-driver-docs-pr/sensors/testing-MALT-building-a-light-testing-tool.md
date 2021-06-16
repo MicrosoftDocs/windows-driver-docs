@@ -88,7 +88,7 @@ Refer to [Getting Started with MALT](testing-MALT-getting-started.md) for instru
 
 ### Step 4 - Start testing
 
-Refer to [Testing System Brightness Response](testing-MALT-system-brightness-response.md) for details on setting up and using the MALT you just assembled.
+Refer to [Testing System Brightness and Color](testing-MALT-system-brightness-and-color.md) for details on testing your SUT with the MALT.
 
 #### Test scenarios to cover
 
