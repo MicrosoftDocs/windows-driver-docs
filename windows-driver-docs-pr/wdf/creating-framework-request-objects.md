@@ -22,7 +22,7 @@ When a framework-based driver receives an I/O request packet (IRP) from the I/O 
 
 The following diagram illustrates the steps that occur when the framework creates a request object for a read operation.
 
-![steps to create a request object for a read operation](images/kmdf-creating-request-objects.png)
+![steps to create a request object for a read operation.](images/kmdf-creating-request-objects.png)
 
 The following steps correspond to the numbers in the preceding diagram:
 

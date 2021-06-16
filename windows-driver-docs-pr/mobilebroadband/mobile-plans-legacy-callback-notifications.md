@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the high level flow for how the Mobile Plans program supports downloading a profile without control leaving the MODirect portal.
 
-![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.PNG)
+![Mobile Plans inline profile download sequence diagram.](images/dynamo_inline_profile_flow.PNG)
 
 When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `MobilePlansInlineProfile.notifyInlineProfileDownload`.
 

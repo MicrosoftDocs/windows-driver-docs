@@ -30,7 +30,7 @@ In some platforms, the processor and system DMA controller (or bus-master DMA ad
 
 The following figure shows why it is important to flush the processor cache before a read or write operation using DMA if the host processor and DMA controller do not automatically maintain cache coherency.
 
-![diagram illustrating read and write operations using dma](images/16cchdma.png)
+![diagram illustrating read and write operations using dma.](images/16cchdma.png)
 
 An asynchronous DMA read or write operation accesses data in memory, not in the processor cache. Unless this cache has been flushed by calling **KeFlushIoBuffers** just before a read, the data transferred into system memory by the DMA operation could be overwritten with stale data if the processor cache is flushed later. Unless the processor cache has been flushed by calling **KeFlushIoBuffers** just before a write, the data in this cache might be more up-to-date than the copy in memory.
 

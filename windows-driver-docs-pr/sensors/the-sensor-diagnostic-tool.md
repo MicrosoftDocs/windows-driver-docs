@@ -41,7 +41,7 @@ Once your sensor or location driver is installed and your hardware is attached t
 
 The following image shows the Sensor Diagnostic Tool startup screen when several sensors are connected to a PC. The sensors available on the PC are shown in the left pane.
 
-![sensor diagnostic tool: startup](images/sdt-startup.png)
+![sensor diagnostic tool: startup.](images/sdt-startup.png)
 
 In this case, the Sensor Diagnostic Tool detected the presence of a collection of HID sensors as well as a simple device orientation sensor, the Windows Location provider, and a Geolocation Sensor which is supported by the Geolocation driver sample.
 

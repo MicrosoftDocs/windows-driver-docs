@@ -21,7 +21,7 @@ After the WIA application determines the buffer size, it requests the WIA servic
 
 The following diagram illustrates a memory transfer of an image.
 
-![diagram illustrating an image memory transfer](images/wia-imagedatamem.png)
+![diagram illustrating an image memory transfer.](images/wia-imagedatamem.png)
 
  
 

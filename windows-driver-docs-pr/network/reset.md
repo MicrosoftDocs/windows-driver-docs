@@ -25,11 +25,11 @@ NDIS might call a miniport driver's or MCM driver's [*MiniportResetEx*](/windows
 
 The following figure shows a client issuing a reset request to a miniport driver.
 
-![diagram illustrating a client issuing a reset request to a miniport driver](images/cm-27.png)
+![diagram illustrating a client issuing a reset request to a miniport driver.](images/cm-27.png)
 
 The next figure shows a client issuing a reset request to an MCM driver.
 
-![diagram illustrating a client issuing a reset request to an mcm driver](images/fig1-26.png)
+![diagram illustrating a client issuing a reset request to an mcm driver.](images/fig1-26.png)
 
 When an underlying connection-oriented driver is resetting a NIC, NDIS notifies each bound protocol by calling the protocol's [**ProtocolCoStatusEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_status_ex) function with NDIS\_STATUS\_RESET\_START.
 

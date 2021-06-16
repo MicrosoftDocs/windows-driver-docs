@@ -17,7 +17,7 @@ The MITT software package includes tests for validating data transfers to a UART
 
 ## Hardware setup
 
-![mitt uart hardware setup](images/mitt-uart.jpg)
+![mitt uart hardware setup.](images/mitt-uart.jpg)
 
 1. You need external PIN-outs to connect the UART interface on the MITT board to the UART controller of the system under test. If the UART controller exposes PIN-outs, connect directly to **JB1** of the board.
 2. Connect these lines:
@@ -31,7 +31,7 @@ The MITT software package includes tests for validating data transfers to a UART
 
 3. The UART adapter board provides a jumper for selecting the correct voltage. Only 3.3V signal is supported for direct connect (without the adapter board).
 
-    ![uart wiring](images/uart-wiring.png)
+    ![uart wiring.](images/uart-wiring.png)
 
 ## Test driver and ACPI configuration
 
@@ -96,4 +96,4 @@ Example 2: To run the tests at 3Mbps:
 
 ## UART adapter schematic
 
-![spi schematic](images/spi-schematic.png)
+![spi schematic.](images/spi-schematic.png)

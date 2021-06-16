@@ -35,15 +35,15 @@ typedef enum
 
 In the figure that follows, the **kPerUser** enumerator is used in the call to the **CreatePrintAsyncNotifyChannel** function. As a result, only those listeners running in the same user account as the user who made the registration are permitted to receive notifications.
 
-![diagram illustrating per-user listener filtering](images/notifyfilt1.gif)
+![diagram illustrating per-user listener filtering.](images/notifyfilt1.gif)
 
 In the next figure, the **kAllUsers** enumerator is used in the call to the **CreatePrintAsyncNotifyChannel** function. As a result, all listeners who are interested in the printer or server can receive notifications. Note that only administrators are permitted to use the **kAllUsers** setting in calls to this function.
 
-![diagram illustrating notification to all listeners](images/notifyfilt2.gif)
+![diagram illustrating notification to all listeners.](images/notifyfilt2.gif)
 
 The next figure shows the situation in which both User 1 and User 2 have registered for notifications by calling the **RegisterForPrintAsyncNotifications** function, passing the **kPerUser** enumerator in the call. Of the three notifications sent, listener User 1 receives notifications from User 1 in either session 0 or session 1. Listener User 2 receives notifications from User 2 in session 2.
 
-![diagram illustrating per-user filtering of notifications](images/notifyfilt3.gif)
+![diagram illustrating per-user filtering of notifications.](images/notifyfilt3.gif)
 
 If the listening clients shown in the preceding figure had called **RegisterForPrintAsyncNotifications**, but this time passing the **kAllUsers** enumerator in the call, all listeners in all sessions would have received the three notifications. Note that only administrators are permitted to use the **kAllUsers** enumerator in calls to this function.
 
@@ -53,7 +53,7 @@ An administrator is a user with PRINTER\_ACCESS\_ADMINISTER rights for the speci
 
 In the following figure, Joe sends a notification on a channel with a **kPerUser**. When the channel is filtered on the basis of this enumerator, the notification should be sent only to sessions that belong to User 1, namely session 1. However, the notification is also sent to session 2, because there is an administrator listening there and is listening for notifications of this type. Note that the administrator in session 3 does not receive the notification, because the notification types are not the same.
 
-![diagram illustrating per-user and notification-type filtering](images/notifyfilt4.gif)
+![diagram illustrating per-user and notification-type filtering.](images/notifyfilt4.gif)
 
 ## Specifying the Type of Communication
 

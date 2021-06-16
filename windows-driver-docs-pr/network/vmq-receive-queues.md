@@ -51,7 +51,7 @@ For NDIS 6.20 in Windows Server 2008 R2, if the miniport driver supports split
 
 The following figure shows the shared memory in the queues, the management operating system, and the guest operating systems.
 
-![diagram illustrating the shared memory in the queues, the management operating system partition, and the vm partitions](images/vmqaddress.png)
+![diagram illustrating the shared memory in the queues, the management operating system partition, and the vm partitions.](images/vmqaddress.png)
 
 In the figure, each packet in a queue is shown with header information that was allocated from the management operating system address space and data that was allocated from the guest operating system address space.
 

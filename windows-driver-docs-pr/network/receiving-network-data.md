@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates a basic receive operation, which involves a miniport driver, NDIS, and a protocol driver.
 
-![diagram illustrating a basic receive operation](images/netbufferreceive.png)
+![diagram illustrating a basic receive operation.](images/netbufferreceive.png)
 
 Miniport drivers call the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function to indicate [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures to higher level drivers. Every NET\_BUFFER structure should usually be attached to a separate [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. This allows protocol drivers to create a subset of the original list of NET\_BUFFER\_LIST structures and forward them to different clients. Some drivers, for example native IEEE 802.11 miniport drivers, might attach more than one NET\_BUFFER structure to a NET\_BUFFER\_LIST structure.
 

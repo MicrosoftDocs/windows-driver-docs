@@ -32,7 +32,7 @@ The architectue uses a driver published by the hardware manufacturer on Windows 
 
 The KMDF driver is published by the partner and consists of components shown in the diagram below. This matches the device with a hardware ID (typically, a VID & PID). The driver creates a 3D printer device node on installation which triggers installation of the print queue and the slicer drivers. The partner provids v4 printer drivers for the 3D printer device node that is created.
 
-![kmdf usb filter driver](images/kmdf-usb-filter-driver.png)
+![kmdf usb filter driver.](images/kmdf-usb-filter-driver.png)
 
 ##### MS3DPrintUSB.sys
 
@@ -94,7 +94,7 @@ This API is used by third-party manufacturers to print the document on their pri
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**
 
-![3d printer registry](images/3d-printer-registry.png)
+![3d printer registry.](images/3d-printer-registry.png)
 
 ### HRESULT Query(\_In\_ LPCWSTR command, \_In\_ LPCWSTR commandData, \_Out\_ LPWSTR resultBuffer, \_Out\_ resultBufferSize, , \_In\_ LPVOID\* ppPartnerData)
 

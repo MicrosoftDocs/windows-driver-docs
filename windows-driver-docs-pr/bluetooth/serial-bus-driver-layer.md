@@ -164,7 +164,7 @@ In order to reduce power up time, the callback functions (e.g. the EnterD0 and w
 
 The following is a simplified flowchart to illustrate a typical sequence and logic for idle and wake support. This logic spans many drivers and threads, and there are exceptions as well as corner cases that are not expressed (e.g. an application on the host side can also wake the stack from idle state).
 
-![bluetooth device power state transitions flowchart](images/bthdevicepwrstatetransitionsflowchart.png)
+![bluetooth device power state transitions flowchart.](images/bthdevicepwrstatetransitionsflowchart.png)
 
 ## <span id="Bus_Driver_s_own_Power_Management"></span><span id="bus_driver_s_own_power_management"></span><span id="BUS_DRIVER_S_OWN_POWER_MANAGEMENT"></span>Bus Driver’s own Power Management
 

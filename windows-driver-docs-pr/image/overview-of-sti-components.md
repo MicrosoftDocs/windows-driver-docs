@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the software components that compose Microsoft STI. Following the diagram is a component list.
 
-![diagram illustrating the microsoft sti components](images/sticomp.png)
+![diagram illustrating the microsoft sti components.](images/sticomp.png)
 
 ### <a href="" id="ddk-imaging-application-si"></a>Imaging Application
 

@@ -33,7 +33,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 ## Choosing the right driver model
 
-![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section](images/onboarding-driver-models.png)
+![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section.](images/onboarding-driver-models.png)
 
 ## 3D print driver with custom slicer
 

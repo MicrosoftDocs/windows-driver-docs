@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 The imaging architecture in legacy Windows operating systems consisted of a low-level hardware abstraction, STI, and a high-level set of APIs known as TWAIN. In the modern Windows operating systems, Microsoft uses Windows Imaging Architecture (WIA), an imaging architecture that builds on STI. The following diagram illustrates these two imaging architectures.
 
-![diagram illustrating the twain/sti and the microsoft wia imaging architectures](images/sti-wia.png)
+![diagram illustrating the twain/sti and the microsoft wia imaging architectures.](images/sti-wia.png)
 
 As shown in the preceding figure, the TWAIN/STI architecture includes TWAIN, a high-level set of image acquisition APIs, together with STI, a low-level hardware abstraction. The WIA architecture incorporates STI as a foundation to provide a complete solution to imaging device IHVs.
 

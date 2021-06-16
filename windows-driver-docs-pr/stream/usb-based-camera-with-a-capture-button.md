@@ -23,7 +23,7 @@ Microsoft also provides the [USBCAMD Minidriver Library](usbcamd-minidriver-libr
 
 The following diagram demonstrates a possible filter graph configuration for a USB-based camera with a still pin.
 
-![diagram illustrating a possible filter graph configuration for a usb-based camera with a still pin](images/usb-camera-still.gif)
+![diagram illustrating a possible filter graph configuration for a usb-based camera with a still pin.](images/usb-camera-still.gif)
 
 In the diagram, the still pin streams only a single image when the user pushes the button on the camera. Alternatively, the still pin can be triggered by programmatic control.
 

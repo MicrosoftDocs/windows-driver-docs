@@ -17,7 +17,7 @@ SpbCx cooperates with the SBP controller driver to handle I/O requests for perip
 
 The following diagram shows the SPB controller driver and SpbCx.
 
-![block diagram of spb components](images/spbmodules.png)
+![block diagram of spb components.](images/spbmodules.png)
 
 The SPB controller driver and SpbCx both run in kernel mode, and communicate with each other through the SpbCx DDI. The SPB controller driver calls driver support methods that are implemented by SpbCx. SpbCx calls event callback functions that are implemented by the SPB controller driver.
 

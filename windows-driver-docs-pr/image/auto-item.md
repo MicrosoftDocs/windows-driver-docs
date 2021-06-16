@@ -12,7 +12,7 @@ To implement [auto-configured scanning](auto-configured-scanning.md) in Windows 
 
 The following diagram shows an example WIA item tree that includes an auto item. The auto item is a child of the root item in the tree.
 
-![diagram illustrating an item tree that includes an auto item](images/wia-feeder-tree5.png)
+![diagram illustrating an item tree that includes an auto item.](images/wia-feeder-tree5.png)
 
 In addition to the auto item, the WIA tree in the preceding diagram includes a flatbed item and a feeder item, both of which are children of the root item. The WIA architecture requires that an auto item is never the sole child of the root item--an auto item always has one or more siblings. At least one of these siblings must be a flatbed item, feeder item, or film item. For more information about these items, see [WIA Item Categories](wia-item-categories.md).
 

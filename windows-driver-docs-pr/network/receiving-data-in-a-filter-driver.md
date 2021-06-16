@@ -19,7 +19,7 @@ Filter drivers can initiate receive indications or filter receive indications fr
 
 The following figure illustrates a receive indication that is initiated by a filter driver.
 
-![diagram illustrating a receive indication initiated by a filter driver](images/filterreceive.png)
+![diagram illustrating a receive indication initiated by a filter driver.](images/filterreceive.png)
 
 Filter drivers call the [**NdisFIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatereceivenetbufferlists) function to indicate received data. The **NdisFIndicateReceiveNetBufferLists** function passes the indicated list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures up the stack to overlying drivers. The filter driver allocates the structures from pools that it created during initialization.
 
@@ -35,7 +35,7 @@ If a filter driver does not set the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in 
 
 The following figure illustrates a filtered receive indication that is initiated by an underlying driver.
 
-![diagram illustrating a filtered receive indication initiated by an underlying driver](images/receivefilter.png)
+![diagram illustrating a filtered receive indication initiated by an underlying driver.](images/receivefilter.png)
 
 NDIS calls a filter driver's [*FilterReceiveNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_receive_net_buffer_lists) function to process receive indications that come from underlying drivers. NDIS calls *FilterReceiveNetBufferLists* after an underlying driver calls a receive indication function (for example, [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)) to indicate received network data or loopback data.
 

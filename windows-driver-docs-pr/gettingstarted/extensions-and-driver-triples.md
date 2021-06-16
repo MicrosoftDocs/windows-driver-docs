@@ -24,7 +24,7 @@ An example of a device-class KMDF extension is SpbCx.sys, which is the KMDF exte
 -   SpbCx.sys handles tasks that are specific to the SPB bus class. These are tasks that are common to all SPB busses.
 -   The KMDF driver handles tasks that are specific to an I2C bus. Let's call this driver MyI2CBusDriver.sys.
 
-![kmdf driver triple extension](images/kmdfdrivertriple.png)
+![kmdf driver triple extension.](images/kmdfdrivertriple.png)
 
 The three drivers in the driver triple (MyI2CBusDriver.sys, SpbCx.sys, Wdf01000.sys) combine to form a single WDM driver that serves as the function driver for the I2C bus controller. Wdf01000.sys (the Framework) owns the dispatch table for this driver, so when someone sends an IRP to the driver triple, it goes to the wdf01000.sys. If the wdf01000.sys can handle the IRP by itself, SpbCx.sys and MyI2CBusDriver.sys are not involved. If wdf01000.sys cannot handle the IRP by itself, it gets help by calling an event handler in SbpCx.sys.
 

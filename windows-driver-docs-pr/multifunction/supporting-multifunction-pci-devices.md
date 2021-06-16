@@ -34,7 +34,7 @@ Vendors of a PCI multifunction device on an NT-based platform must do the follow
 
 For example, the following figure shows the sample device stacks that might be created for a multifunction PCI device with ISDN and modem functions.
 
-![diagram illustrating device stacks for a multifunction device whose parent enumerates each function](images/mf-indep.png)
+![diagram illustrating device stacks for a multifunction device whose parent enumerates each function.](images/mf-indep.png)
 
 As shown in the previous figure, rather than enumerating one multifunction device, the PCI driver enumerates two child devices. The PnP manager treats each child device like a typical device, locating INF files, loading the appropriate drivers, calling their AddDevice routines, and so forth until a device stack is created for each device. The PCI driver arbitrates the resources for the child devices and manages any other multifunction aspects of the device. The vendor of the multifunction card provides function drivers and INFs for the ISDN and modem devices, just as if they were separate devices.
 

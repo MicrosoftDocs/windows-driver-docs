@@ -19,11 +19,11 @@ You can view memory by entering one of the [**Display Memory**](d--da--db--dc--d
 ## <span id="ddk_memory_window_dbg"></span><span id="DDK_MEMORY_WINDOW_DBG"></span>Opening a Memory Window
 
 
-To open a Memory window, choose **Memory** from the **View** menu. (You can also press ALT+5 or select the **Memory** button (![screen shot of the memory button](images/tbmem.png)) on the toolbar. ALT+SHIFT+5 closes the active Memory window.)
+To open a Memory window, choose **Memory** from the **View** menu. (You can also press ALT+5 or select the **Memory** button (![screen shot of the memory button.](images/tbmem.png)) on the toolbar. ALT+SHIFT+5 closes the active Memory window.)
 
 The following screen shot shows an example of a Memory window.
 
-![screen shot of the memory window](images/window-memory.png)
+![screen shot of the memory window.](images/window-memory.png)
 
 ## <span id="Using_a_Memory_Window"></span><span id="using_a_memory_window"></span><span id="USING_A_MEMORY_WINDOW"></span>Using a Memory Window
 
@@ -49,7 +49,7 @@ In the Memory window, you can do the following:
 
 -   To change the data type that the window uses to display memory, use the **Display format** menu in the Memory window toolbar. Supported data types include short words, double words, and quad-words; short, long, and quad integers and unsigned integers; 10-byte, 16-byte, 32-byte, and 64-byte real numbers; ASCII characters; Unicode characters; and hexadecimal bytes. The display of hexadecimal bytes includes ASCII characters as well.
 
-The Memory window has a toolbar that contains two buttons, a menu, and a box and has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the memory window toolbar shortcut menu](images/tbmem.png)). The toolbar and shortcut menu contain the following choices:
+The Memory window has a toolbar that contains two buttons, a menu, and a box and has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the memory window toolbar shortcut menu.](images/tbmem.png)). The toolbar and shortcut menu contain the following choices:
 
 -   (Toolbar only) The address box enables you to specify a new address or offset. The exact meaning of this box depends on the memory type you are viewing. For example, if you are viewing virtual memory, the box enables you to specify a new virtual address or offset.
 

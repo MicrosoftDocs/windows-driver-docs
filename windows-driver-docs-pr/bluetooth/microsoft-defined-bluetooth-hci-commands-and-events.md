@@ -161,7 +161,7 @@ The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi comm
 
 #### State_diagram
 
-This state diagram shows the transition states on the controller when monitoring RSSI for a connection.![State diagram of HCI_VS_MSFT_Monitor_Rssi](images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png)
+This state diagram shows the transition states on the controller when monitoring RSSI for a connection.![State diagram of HCI_VS_MSFT_Monitor_Rssi.](images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png)
 The controller shall generate an [HCI_VS_MSFT_Rssi_Event](#hci_vs_msft_rssi_event) when the received RSSI is greater than or equal to the specified _RSSI_threshold_high_. After this event has been generated, the controller shall not generate a new HCI_VS_MSFT_Rssi_Event to specify that the _RSSI_threshold_high_ has been exceeded until it generates an HCI_VS_MSFT_Rssi_Event that specifies the RSSI has fallen below _RSSI_threshold_low_.
 
 The controller shall generate an HCI_VS_MSFT_Rssi_Event when the received RSSI equals or falls below the specified _RSSI_threshold_low_ over the specified _RSSI_threshold_low_time_interval_. After this event has been generated, the controller shall not generate a new HCI_VS_MSFT_Rssi_Event to specify that the RSSI has fallen below the _RSSI_threshold_low_ until an HCI_VS_MSFT_Rssi_Event event is generated to specify that _RSSI_threshold_high_ has been reached or exceeded.
@@ -299,7 +299,7 @@ If the controller does not support RSSI monitoring for LE Advertisements, it sha
 
 This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-![State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement](images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png)
+![State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.](images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png)
 
 The controller shall propagate the first advertisement packet to the host only when the received RSSI is greater than or equal to _RSSI_threshold_high_ for a particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 1 and _Monitor_handle_ set to the handle for this _Condition_, to notify the host that the controller is monitoring this particular device for _Condition_.
 The controller shall stop monitoring for _Condition_ if the RSSI of the received advertisements equals or falls below  _RSSI_threshold_low_ over _RSSI_threshold_low_interval_ for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event](#hci_vs_msft_le_monitor_device_event) with _Monitor_state_ set to 0 to notify the host that the controller has stopped monitoring the particular device for the _Condition_. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with _Monitor_state_ set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above _RSSI_threshold_high_ for the particular device for the _Condition_.
@@ -326,7 +326,7 @@ If the controller has notified the host about a particular device (_A_) and it i
 
 The _Condition_type_ parameter specifies whether the _Condition_ parameter specifies a pattern, UUID, IRK, or BD_ADDR.
 
-If the _Condition_type_ parameter specifies a pattern, the _Condition_ contains 2 sections which contain the number of patterns present within the _Condition_, and the pattern data.![Pattern condition data layout](images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png)
+If the _Condition_type_ parameter specifies a pattern, the _Condition_ contains 2 sections which contain the number of patterns present within the _Condition_, and the pattern data.![Pattern condition data layout.](images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png)
 
 _Number of Patterns_ specifies the number of patterns that need to be matched.
 

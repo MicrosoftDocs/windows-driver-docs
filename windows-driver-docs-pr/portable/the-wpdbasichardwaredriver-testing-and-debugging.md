@@ -32,7 +32,7 @@ The WpdInfo.Properties file is found in the same folder as *WpdInfo.exe*. If thi
 
 When you start *WpdInfo.exe*, it prompts you to select a portable device from the list of installed WPD devices. After you choose the sensor device, the tool logs events in the lower pane of its window.
 
-![Log of events for TempHumidity in the lower pane of the WpdInfo UI](images/wpdinfo_temphumidity_object.png)
+![Log of events for TempHumidity in the lower pane of the WpdInfo UI.](images/wpdinfo_temphumidity_object.png)
 
 When the sensor reading event fired in the previous example, the following information was true:
 

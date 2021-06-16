@@ -25,24 +25,24 @@ Depending on the version of your app, you can enable AutoPlay in these ways:
 
 This example shows an AutoPlay dialog for an app named **Contoso Dashboard** that has registered as the AutoPlay handler for the **Contoso Pedometer** device:
 
-![example autoplay dialog for a device](images/autoplayfordeviceapps.png)
+![example autoplay dialog for a device.](images/autoplayfordeviceapps.png)
 
 When using device metadata with your app, AutoPlay supports these device types:
 
 | Device class                 | AutoPlay supported in Windows 8                                                                    | AutoPlay supported in Windows 8.1                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Digital still camera         | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Digital video camcorder      | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Portable media player        | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Cell phone                   | ![autoplay is supported for this device class in windows 8](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Mobile broadband             | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| Webcam                       | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| Human Interface Device (HID) | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Printers, scanners, fax      | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| PC                           | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
-| Smart card                   | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| General port                 | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
-| Bluetooth device             | ![autoplay is not supported for this device class in windows 8](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Digital still camera         | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Digital video camcorder      | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Portable media player        | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Cell phone                   | ![autoplay is supported for this device class in windows 8.](images/ap-tools.png)                   | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Mobile broadband             | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Webcam                       | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Human Interface Device (HID) | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Printers, scanners, fax      | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| PC                           | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
+| Smart card                   | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| General port                 | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is supported for this device class in windows 8.1](images/ap-tools.png)                   |
+| Bluetooth device             | ![autoplay is not supported for this device class in windows 8.](images/app-tools-doesnotapply.png) | ![autoplay is not supported for this device class in windows 8.1](images/app-tools-doesnotapply.png) |
 
  
 

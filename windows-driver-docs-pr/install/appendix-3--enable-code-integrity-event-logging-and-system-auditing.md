@@ -71,7 +71,7 @@ To enable security audit policy to capture load failures in the audit logs, foll
 
 The following screen shot shows an how to use Auditpol to enable security auditing.
 
-![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing](images/tutorialauditpol.jpg)
+![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing.](images/tutorialauditpol.jpg)
 
  
 

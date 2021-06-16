@@ -28,7 +28,7 @@ The IHV Extension DLL completes the pre-association operation through a call to 
 
 The following figure shows the steps involved during the pre-association operation.
 
-![diagram illustrating the steps involved during the pre-association operation](images/ihv-ext-preassoc.png)
+![diagram illustrating the steps involved during the pre-association operation.](images/ihv-ext-preassoc.png)
 
 When [*Dot11ExtIhvPerformPreAssociate*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_pre_associate) is called, the operating system passes the IHV-defined extensions to the connectivity and security profile through the following parameters.
 

@@ -19,7 +19,7 @@ This section describes the device stacks created by the system-supplied parallel
 
 The following figure shows the type of device stacks that the system-supplied parallel drivers create for parallel ports and devices attached to parallel ports.
 
-![diagram illustrating windows device and driver stacks for parallel ports and devices](images/parport4.png)
+![diagram illustrating windows device and driver stacks for parallel ports and devices.](images/parport4.png)
 
 Vendor-supplied function drivers for parallel devices that are attached to parallel ports are optional. The system-supplied parallel drivers provide extensive support for directly controlling a parallel device as a raw device, and for controlling a device's parent parallel port.
 

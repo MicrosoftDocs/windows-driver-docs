@@ -58,7 +58,7 @@ For downloadable PCL soft fonts, font descriptions must be provided as explained
 
 Each device font that a printer supports must be represented by a Unidrv Font Metrics (.ufm) file. A .ufm file is a binary file that is constructed using the structures described in [Unidrv Font Metrics Structures](/windows-hardware/drivers/ddi/_print/index). The first structure in a .ufm file is [**UNIFM\_HDR**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unifm_hdr), which contains offsets to the file's other structures. The following figure shows the layout of a Unidrv Font Metrics file.
 
-![diagram illustrating the layout of a unidrv font metrics file](images/ufm.png)
+![diagram illustrating the layout of a unidrv font metrics file.](images/ufm.png)
 
 Unidrv also supports .ifi files, the font metrics files created for Windows NT 4.0.
 
@@ -68,7 +68,7 @@ Each device font that a printer supports must be represented by a Glyph Translat
 
 The following figure shows the layout of a glyph translation table file.
 
-![diagram illustrating the layout of a glyph translation table file](images/gtt.png)
+![diagram illustrating the layout of a glyph translation table file.](images/gtt.png)
 
 In the preceding figure, the UNI\_GLYPHSETDATA structure contains the offsets from the beginning of the file to the first [**GLYPHRUN**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_glyphrun) structure, to the first [**UNI\_CODEPAGEINFO**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_uni_codepageinfo) structure, and to the [**MAPTABLE**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_maptable) structure.
 
@@ -88,7 +88,7 @@ A .uff file is a binary file that is constructed using the following sets of str
 
 The following figure shows the layout of a Unidrv Font Format file.
 
-![diagram illustrating the layout of a unidrv font format file](images/uff.png)
+![diagram illustrating the layout of a unidrv font format file.](images/uff.png)
 
 A Unidrv Font Format file consists of a [**UFF\_FILEHEADER**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_uff_fileheader) structure, and one or more [**UFF\_FONTDIRECTORY**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_uff_fontdirectory) and [**DATA\_HEADER**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_data_header) structure pairs. Each DATA\_HEADER structure is associated with a block of font data. The UFF\_FILEHEADER structure contains the offset from the beginning of the file to the first UFF\_FONTDIRECTORY structure. Each UFF\_FONTDRECTORY structure contains the offset from the beginning of the file to a DATA\_HEADER structure that contains font data.
 

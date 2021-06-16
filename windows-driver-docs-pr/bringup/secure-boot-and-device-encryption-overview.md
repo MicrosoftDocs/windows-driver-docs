@@ -25,7 +25,7 @@ The core UEFI environment provided by the SoC vendor implements the UEFI secure 
 
 The diagram below provides an overview of the secure boot process.
 
-![secure boot flow](images/oem-secureboot-flow.png)
+![secure boot flow.](images/oem-secureboot-flow.png)
 
 The following steps describe this process in more detail:
 

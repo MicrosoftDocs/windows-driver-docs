@@ -18,7 +18,7 @@ Remote NDIS (RNDIS) eliminates the need for hardware vendors to write an NDIS mi
 
 The following figure shows the replacement of the device manufacturer's NDIS miniport with the combination of a Remote NDIS miniport driver and a USB transport driver. The device manufacturer can therefore concentrate on device implementation and not have to develop a Windows NDIS device driver.
 
-![diagram illustrating the architecture of remote ndis](images/remote-ndis-architecture.png)
+![diagram illustrating the architecture of remote ndis.](images/remote-ndis-architecture.png)
 
 Microsoft provides an NDIS miniport driver, Rndismp.sys, which implements the Remote NDIS message set and communicates with generic bus transport drivers, which in turn communicate with the appropriate bus driver. This NDIS miniport driver is implemented and maintained by Microsoft and is distributed as part of Windows.
 

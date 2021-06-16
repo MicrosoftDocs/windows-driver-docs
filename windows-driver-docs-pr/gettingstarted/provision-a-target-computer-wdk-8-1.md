@@ -57,7 +57,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 3. For **Network host name**, enter the name or local IP address of your target computer. Select **Provision device and choose debugger settings**.
 
-    ![screen shot of device configuration dialog box](images/vs2015-device-configuration.png)
+    ![screen shot of device configuration dialog box.](images/vs2015-device-configuration.png)
 
 4. Select **Next**.
 

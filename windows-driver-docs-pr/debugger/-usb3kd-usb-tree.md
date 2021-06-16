@@ -32,7 +32,7 @@ The display includes status information for hubs and ports.
 
 The following screen shot shows the output of the [**!usb\_tree**](-usb3kd-device-info.md) command.
 
-![output of the !usb\-tree command showing topology enumerated device and hub list](images/usbtree01.png)
+![output of the !usb\-tree command showing topology enumerated device and hub list.](images/usbtree01.png)
 
 The output shows that there is one USB 3.0 host controller, which is represented by the line that begins with [**!xhci\_info**](-usb3kd-xhci-info.md). The next line represents the root hub for the host controller. The next four lines represent ports associated with the root hub. You can see that two ports have devices connected.
 

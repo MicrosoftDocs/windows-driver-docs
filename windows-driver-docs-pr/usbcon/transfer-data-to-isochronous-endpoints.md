@@ -92,7 +92,7 @@ Consider an example high-speed endpoint with the following characteristics indic
 
 After the client driver selects a configuration, **MaximumPacketSize** for the isochronous pipe indicates 3,072 bytes (total transactions \* **wMaxPacketSize**). The additional transactions allow the client driver to transfer 3,072 bytes in every microframe, and total 24,576 bytes in one frame. The following illustration shows how often an isochronous packet is transferred in one microframe for high-speed transmissions.
 
-![isochronous transfer](images/iso-packets.png)
+![isochronous transfer.](images/iso-packets.png)
 
 Consider an example SuperSpeed endpoint with these characteristics indicated in the endpoint and SuperSpeed endpoint companion descriptors:
 
@@ -104,7 +104,7 @@ Consider an example SuperSpeed endpoint with these characteristics indicated in 
 
 In preceding example, even though maximum number of bytes can be calculated as **wMaxPacketSize** \* (**bMaxBurst** +1) \* (**Mult** + 1) resulting in 49,152 bytes, the device limits the value to the **wBytesPerInterval** value that is 45,000 bytes. That value is also reflected in **MaximumPacketSize** 45,000. The client driver must only use the **MaximumPacketSize** value. In this example, the request can be divided into three burst transactions. The first two burst transactions each contain 16 chunks of **wMaxPacketSize**. The last burst transaction contains 12 chunks to hold the remaining bytes. This image shows the polling interval and bytes transferred through an isochronous packet for SuperSpeed transmission.
 
-![superspeed isochronous](images/iso-packets-superspeed.png)
+![superspeed isochronous.](images/iso-packets-superspeed.png)
 
 The following procedure describes how to build a request for an isochronous transfer.
 

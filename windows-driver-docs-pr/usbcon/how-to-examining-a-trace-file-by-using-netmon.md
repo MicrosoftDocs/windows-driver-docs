@@ -50,7 +50,7 @@ Notice these new columns:
 * **USB Length**
 * **USB Request Duration**
 
-![microsoft network monitor](images/usb-3-netmon.png)
+![microsoft network monitor.](images/usb-3-netmon.png)
 
 All USB event traces (USB 2.0 and USB 3.0) now show more information about the request as each URB completes. Notice values, such as, "41 of 255" under **USB Length**. Those values indicate the actual transfer length of each URB on completion with the context of the total request length (original TransferBufferLength specified by the client driver). Also, you can see how long (in seconds) it took for a request to complete under the **USB Request Duration** column.
 

@@ -75,4 +75,4 @@ See the [2021 driver deferral periods](#calendar) calendars for additional dates
 2. <a id="calendar"></a>What is the latest deferral calendar?
 ** This calendar is subject to changes based on OS release timelines.
  
-![2021 Driver Release Calendar showing excluded dates as described above](images/2021driverReleaseCalendar.png)
+![2021 Driver Release Calendar showing excluded dates as described above.](images/2021driverReleaseCalendar.png)

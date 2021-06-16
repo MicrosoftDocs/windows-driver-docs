@@ -20,7 +20,7 @@ Note that a driver must not use this technique to wait for lower drivers to fini
 
 The following two figures show an example of how a driver waits for lower drivers to complete a PnP IRP. The example shows what the function and bus drivers must do, plus how they interact with the PnP manager and the I/O manager.
 
-![diagram illustrating postponing plug and play irp handling, part 1](images/delay1.png)
+![diagram illustrating postponing plug and play irp handling, part 1.](images/delay1.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 
@@ -44,7 +44,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
 The following figure shows the second part of the example, where the higher drivers in the device stack resume their postponed IRP processing.
 
-![diagram illustrating postponing plug and play irp handling, part 2](images/delay2.png)
+![diagram illustrating postponing plug and play irp handling, part 2.](images/delay2.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 

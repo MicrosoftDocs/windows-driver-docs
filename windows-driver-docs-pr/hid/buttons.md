@@ -19,11 +19,11 @@ The in-box driver cannot service a button that is not wired to an interrupt line
 
 Here are some general pointers to help you decide which implementation you should follow if you are creating HID buttons.
 
-:::image type="content" source="images/button.png" alt-text="decision chart for implementing buttons" border="false":::
+:::image type="content" source="images/button.png" alt-text="decision chart for implementing buttons." border="false":::
 
 ### Use the Microsoft-provided in-box button driver
 
-:::image type="content" source="images/hid-acpi.png" alt-text="ACPI description of a HID button" border="false":::
+:::image type="content" source="images/hid-acpi.png" alt-text="ACPI description of a HID button." border="false":::
 
 If you are implementing a GPIO button, describe the button in the system ACPI so that Windows can load the in-box driver, Hidinterrupt.sys, as the button driver that reports events to the operating system.
 
@@ -35,7 +35,7 @@ Microsoft encourages you to use the in-box transport-minidrivers whenever possib
 
 ### Write a HID source driver in kernel mode
 
-:::image type="content" source="images/hid-vhf.png" alt-text="Buttons using Virtual HID Framework" border="false":::
+:::image type="content" source="images/hid-vhf.png" alt-text="Buttons using Virtual HID Framework." border="false":::
 
 If you are implementing a non-GPIO button such as a stream of data in the HID format that needs to be injected by another software component, you can choose to write a kernel-mode driver. Starting in Windows 10, you can write a HID source driver by calling programming interfaces that communicate with Virtual HID Framework (VHF) and gets and sets HID Reports to and from the HID class driver.
 
@@ -49,7 +49,7 @@ Alternately, you can write a kernel-mode HID transport minidriver as supported b
 
 ### Write a UMDF HID Minidriver
 
-:::image type="content" source="images/hid-umdf.png" alt-text="HID Transport Minidriver" border="false":::
+:::image type="content" source="images/hid-umdf.png" alt-text="HID Transport Minidriver." border="false":::
 
 If you are implementing a non-GPIO button, instead of using preceding model of writing a HID source driver, you can write a HID transport minidriver in user mode. These drivers are easier to develop than kernel-mode drivers and errors in this driver do not bug check the whole system.
 

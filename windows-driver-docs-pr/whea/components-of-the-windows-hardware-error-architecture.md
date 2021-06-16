@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the major components of the Windows Hardware Error Architecture (WHEA).
 
-![diagram illustrating relationships between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device](images/wheaarch.gif)
+![diagram illustrating relationships between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device.](images/wheaarch.gif)
 
 For each hardware [error source](hardware-errors-and-error-sources.md) that is discovered by the operating system, there is a corresponding *low-level hardware error handler* (LLHEH). An LLHEH is the first operating system code that runs in response to a hardware error condition. An LLHEH can be an interrupt handler, an exception handler, a polling routine, or a callback routine that is invoked by the system firmware. Each LLHEH is implemented in the most appropriate software module: for I/O buses, they exist in their respective bus drivers; for platform trap handlers, they exist in the operating system kernel or the hardware abstraction layer (HAL).
 

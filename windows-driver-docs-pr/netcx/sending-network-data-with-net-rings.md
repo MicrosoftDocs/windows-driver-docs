@@ -16,7 +16,7 @@ NetAdapterCx client drivers send network data when the framework invokes their [
 
 The following animation illustrates how a client driver for a simple PCI network interface card (NIC) performs post and drain operations for a transmit (Tx) queue.  
 
-![Net ring post and drain operations for transmit (Tx)](images/net_ring_post_and_drain_operations_tx.gif "Net ring post and drain operations for transmit (Tx)")
+![Net ring post and drain operations for transmit (Tx).](images/net_ring_post_and_drain_operations_tx.gif "Net ring post and drain operations for transmit (Tx)")
 
 In this animation, the packets owned by the client driver are highlighted in light blue and dark blue, and fragments owned by the client driver are highlighted in yellow and orange. The lighter colors represent the *drain* subsection of the elements the driver owns, while the darker colors represent the *post* subsection of the elements the driver owns.
 

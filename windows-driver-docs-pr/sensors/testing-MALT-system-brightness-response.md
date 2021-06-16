@@ -43,7 +43,7 @@ The following is a list of other test areas to consider.
 
 ## MALT sensor placement
 
-![MALT sensor placement](images/placement.png)
+![MALT sensor placement.](images/placement.png)
 
 The following is a list of tips on MALT sensor placement.
 

@@ -20,7 +20,7 @@ Image file settings affect instances of the specified program that start after t
 
     The following screen shot shows the **Image File** tab in Windows Vista.
 
-    ![screen shot of the image file tab in windows vista ](images/gflags-image.png)
+    ![screen shot of the image file tab in windows vista .](images/gflags-image.png)
 
 2.  In the **Image** box, type the name of an executable file or DLL, including the file name extension,and then press the TAB key.
 

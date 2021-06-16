@@ -30,7 +30,7 @@ By tracing through the nodes in the link connection array, a user-mode applicati
 
 The following figure shows an example of a top-level collection that contains four link collections.
 
-![diagram illustrating a top-level collection that contains four link collections](images/linkcol.png)
+![diagram illustrating a top-level collection that contains four link collections.](images/linkcol.png)
 
 As indicated in the previous figure, link collections are linked together in a top-to-bottom and left-to-right order (ABCD). The following table indicates, for each link collection in the example, the links between the top-level collection and its link collections.
 

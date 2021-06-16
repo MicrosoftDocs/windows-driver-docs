@@ -23,7 +23,7 @@ When DMus miniport driver's MIDI input stream gets converted to wave data, its o
 
 The DMus port driver implements a kernel-streaming filter with an input pin that accepts DirectMusic data from the DirectMusic user-mode component, dmusic.dll. The port driver also has a wave-output pin that emits the synthesized audio stream. The wave sink manages this pin and tells the synth where in memory to write its data. This arrangement insulates the synth from the details of kernel streaming. Your DMus miniport driver needs only to deal with the details of synthesizing wave data from the input MIDI stream. The port driver sends the wave data out to the system, and SysAudio's filter graph connects the filters to make everything flow correctly. As shown in the following diagram, MIDI data comes into the DMus port driver and, after sequencing, is passed to the DMus miniport driver.
 
-![diagram illustrating the flow of midi and dls data through the portdmus driver](images/dmportmi.png)
+![diagram illustrating the flow of midi and dls data through the portdmus driver.](images/dmportmi.png)
 
 The miniport driver converts the MIDI data to wave format, which is rendered into a buffer that is designated by another part of the port driver: the wave sink. Then, instead of going out to DirectSound as it does in user mode, the wave output goes to the audio hardware through the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). DirectSound is really just an API that exposes KMixer, and DirectSound acceleration consists of the mixer functions being accelerated in hardware instead of emulated in software by KMixer.
 

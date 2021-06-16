@@ -35,7 +35,7 @@ To invoke the flyout for more camera options:
     - The *default flyout* appears when no UWP device app for the camera is installed
     - A *custom flyout* appears when a UWP device app for the camera is installed
 
-![Side-by-side images of the default flyout for more camera options and a custom flyout](images/372745-cameraoptionslaunching.png)
+![Side-by-side images of the default flyout for more camera options and a custom flyout.](images/372745-cameraoptionslaunching.png)
 
 This image shows the default flyout for more camera options beside an example of a custom flyout.
 

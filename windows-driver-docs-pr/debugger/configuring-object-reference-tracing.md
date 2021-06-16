@@ -35,7 +35,7 @@ You can use Gflags to enable, disable, and configure the Object Reference Tracin
 
 The following screen shot shows Object Reference Tracing enabled on the **Kernel Flags** tab.
 
-![screen shot that shows object reference tracing enabled on the kernel flags tab](images/gflags-obj.png)
+![screen shot that shows object reference tracing enabled on the kernel flags tab.](images/gflags-obj.png)
 
 This trace will include only objects that were created by the notepad.exe process that have the pool tag **Fred** or **Tag1**. Because this is a run time (kernel flags) setting, the trace starts immediately. If it were a registry setting, you would have to restart Windows to start the trace.
 

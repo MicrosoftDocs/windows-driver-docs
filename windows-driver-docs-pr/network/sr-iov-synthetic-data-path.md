@@ -14,7 +14,7 @@ NetVSC also communicates with the Hyper-V extensible switch that runs in the man
 
 The following diagram shows the components of the synthetic data path over an SR-IOV network adapter.
 
-![stack diagram showing a sr-iov adapter underneath a management parent partition communicating over a vmbus to a child partition containing a guest operating system](images/sriovsynthetic-datapaths.png)
+![stack diagram showing a sr-iov adapter underneath a management parent partition communicating over a vmbus to a child partition containing a guest operating system.](images/sriovsynthetic-datapaths.png)
 
 If the underlying SR-IOV network adapter allocates resources for PCI Express (PCIe) Virtual Functions (VFs), the virtualization stack will attach a VF to a Hyper-V child partition. Once attached, packet traffic within the child partition will occur over the hardware-optimized VF data path instead of the synthesized data path. For more information on the VF data path, see [SR-IOV Data Path](sr-iov-data-paths.md).
 

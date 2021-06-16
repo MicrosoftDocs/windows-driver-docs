@@ -58,7 +58,7 @@ These steps may vary if you are using a program other than Microsoft Excel 2016.
 1. In your Microsoft Excel .xlsx file, Select the two columns with data: "Brightness Percentage" and "Screen Lux".
 2. Click **Insert** > **Insert Scatter (X, Y) or Bubble Chart** > **Scatter with straight lines** 
 
-![insert scatter plot](images/insertScatter2.png)
+![insert scatter plot.](images/insertScatter2.png)
 
 Now you have a visual representation of the manual brightness response curve measured by the MALT.
 

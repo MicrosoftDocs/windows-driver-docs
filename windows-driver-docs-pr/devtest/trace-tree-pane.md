@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The **Trace Tree** pane displays a trace of the critical elements of the source code that were executed in the path to the rule violation, as shown in the following screen shot.
 
-![screen shot of the trace tree pane displaying a trace of the critical elements of the source code that were executed in the path to the rule violation](images/sdv-tracetree.png)
+![screen shot of the trace tree pane displaying a trace of the critical elements of the source code that were executed in the path to the rule violation.](images/sdv-tracetree.png)
 
 These critical elements, such as function calls and assignments, come from all of the source files that were used to detect the rule violation, including SDV operating system model code (sdv-harness.c file), SDV rule source files (\*.slic), and the driver's source code. The code elements appear in the order that they were executed, even if they originated in different files.
 

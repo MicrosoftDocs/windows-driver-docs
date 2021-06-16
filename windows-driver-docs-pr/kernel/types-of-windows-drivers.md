@@ -26,7 +26,7 @@ There are two basic types of Microsoft Windows drivers:
 
 The following figure divides kernel-mode drivers into several types.
 
-![diagram illustrating types of kernel-mode drivers](images/1drvlyrs.png)
+![diagram illustrating types of kernel-mode drivers.](images/1drvlyrs.png)
 
 As shown in the figure, there are three basic types of kernel-mode drivers in a driver stack: highest-level, intermediate, and lowest-level. Each type differs only slightly in structure but greatly in functionality:
 

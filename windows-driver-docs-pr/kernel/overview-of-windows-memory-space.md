@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates the NT-based operating system's virtual memory spaces and their relationship to system physical memory.
 
-![diagram illustrating virtual memory spaces and physical memory](images/16vrtmem.gif)
+![diagram illustrating virtual memory spaces and physical memory.](images/16vrtmem.gif)
 
 As this figure shows, virtual memory is backed by paged physical memory, and a virtual address range can be backed by discontiguous physical memory pages. User-space virtual memory and system-space memory allocated from paged pool are always *pageable*. Any user-space code or data can be paged out to secondary storage at any time, even while the process is executing.
 

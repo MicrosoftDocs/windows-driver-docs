@@ -163,7 +163,7 @@ EvtAdapterCreateRxQueue(
 
 The NetAdapter data path is a polling model, and the polling operation on one packet queue is completely independent of other queues. The polling model is implemented by calling the client driver's queue advance callbacks, as shown in the following figure:
 
-![Polling Flow](images/polling.png)
+![Polling Flow.](images/polling.png)
 
 ## Advancing packet queues
 

@@ -15,7 +15,7 @@ This section describes the driver stack for devices that support HID over the I�
 
 The HID I²C driver stack consists of existing and new components supplied by Microsoft, as well as components provided by the I²C silicon manufacturer. The following illustration depicts the stack and these components.
 
-![hid over i2c driver stack](images/hid-i2c-arch.png)
+![hid over i2c driver stack.](images/hid-i2c-arch.png)
 
 Windows 8 provides an interface for low-power, simple buses to communicate effectively with the operating system. This interface is referred to as simple peripheral bus (SPB), and it supports buses like Inter-Integrated Circuit (I²C) and Serial Peripheral Interface (SPI). For additional details about SPB, refer to the Simple Peripheral Buses topic.
 

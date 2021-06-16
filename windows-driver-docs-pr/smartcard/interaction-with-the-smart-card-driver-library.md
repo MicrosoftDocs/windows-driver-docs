@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure shows how a reader driver interacts with the smart card driver library in order to process IOCTL requests that it receives from the resource manager:
 
-![diagram illustrating how a reader driver interacts with the smart card driver library to process ioctl requests ](images/memnum3.png)
+![diagram illustrating how a reader driver interacts with the smart card driver library to process ioctl requests .](images/memnum3.png)
 
 The following numbers correspond with the numbers in the previous figure. Starting with the number 1, the figure shows the steps that a reader driver must complete (together with the system-supplied driver library) to process an IOCTL request:
 

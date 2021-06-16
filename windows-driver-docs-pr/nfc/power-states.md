@@ -18,7 +18,7 @@ The NFC class extension driver serves as the power policy owner for the device, 
 
 The NFC CX driver supports device power states D0 and D3. The state diagram below shows the transition between the two power states. The device on idle is in the D3 power state where the NFCC does not have power. When radio mode is active and any modules such as NFP (active publications or subscriptions from NFP DDI), SE (active secure elements in emulation mode from NFCSE DDI) or SmartCard is active, the state transitions to D0. During this transition, the polling state of the device is updated to meet the requirement of all active modules.
 
-![power states](images/powerstate.png)
+![power states.](images/powerstate.png)
 
 Furthermore, the built-in idle detection logic of UMDF is used to power manager the device. During initialization, the WdfDevice is assigned its S0 Idle settings as follows:
 
@@ -36,7 +36,7 @@ The IdleTimeout defaults to 1 second. This setting is configurable via *PowerIdl
 
 The client driver can choose to be the power policy owner of the stack through the **IsPowerPolicyOwner** member of the [**NFC\_CX\_CLIENT\_CONFIG**](/windows-hardware/drivers/ddi/nfccx/ns-nfccx-_nfc_cx_client_config) structure. This might be useful for transports such as USB where additional device power states must be configured.
 
-![power management operations](images/powermanagementoperations.png)
+![power management operations.](images/powermanagementoperations.png)
 
  
 

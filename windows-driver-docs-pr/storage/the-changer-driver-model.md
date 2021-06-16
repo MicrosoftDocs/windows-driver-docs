@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The following figure shows the relationship between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device.
 
-![diagram illustrating relationships between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device](images/changer.png)
+![diagram illustrating relationships between a changer driver, user-mode applications and services, mass storage and port drivers, and a changer device.](images/changer.png)
 
 Changer Driver Model
 

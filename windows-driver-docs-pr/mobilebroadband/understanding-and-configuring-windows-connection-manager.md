@@ -99,7 +99,7 @@ Many Windows 8, Windows 8.1, and Windows 10 mobile devices have an external I
 
 Because Windows 8, Windows 8.1, and Windows 10 cannot automatically connect Ethernet cables to or disconnect them from a PC, they can only enforce the policy by allowing or prohibiting wireless connections. When a PC has an Ethernet connection to the domain network, wireless networks that do not connect to the domain cannot be connected, and vice versa. Attempts to do so will result in the following error:
 
-![automatic connection management error](images/mb-acm-1.png)
+![automatic connection management error.](images/mb-acm-1.png)
 
 For PCs that have multiple Ethernet ports, Windows cannot prevent an interconnection that is created by physically connecting the PC to two different Ethernet networks.
 

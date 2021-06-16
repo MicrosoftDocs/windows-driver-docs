@@ -81,7 +81,7 @@ AddReg=DDInstall.RegHW
 
 Consider a combination LAN/modem PC Card device. Without any special multifunction support, such a device might be reported by the PCMCIA bus driver as a single modem device. With the additional support of a multifunction INF and the mf.sys bus driver, both functions of the device are enumerated. The following figure shows the sample device stacks that might be created for such a combo PC Card with the required multifunction support.
 
-![diagram illustrating device stacks for a multifunction device enumerated by mf.sys](images/mf-layers.png)
+![diagram illustrating device stacks for a multifunction device enumerated by mf.sys.](images/mf-layers.png)
 
 As shown in the preceding figure, the driver for the bus on which the multifunction device resides enumerates one device. The hardware ID in the multifunction INF file causes the PnP manager to load the mf.sys bus driver as the function driver for the device. The mf.sys bus driver enumerates two child devices, a LAN device and a modem.
 

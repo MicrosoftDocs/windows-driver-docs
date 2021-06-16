@@ -22,7 +22,7 @@ Starting with Windows 7, the operating system uses a new ID (*container ID*) to 
 
 Each instance of a physical device that is installed in the computer has a unique container ID. All devnodes that represent a function on that instance of the physical device share the same container ID. The following figure shows an example of that relationship.
 
-![diagram illustrating container ids for a multifunction device's devnodes](images/containerid-1.png)
+![diagram illustrating container ids for a multifunction device's devnodes.](images/containerid-1.png)
 
 There is one container ID with a special meaning for bus drivers: NULL_GUID which is defined as: {00000000-0000-0000-0000-000000000000}.
 

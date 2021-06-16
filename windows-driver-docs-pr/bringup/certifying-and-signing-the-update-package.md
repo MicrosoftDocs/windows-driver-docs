@@ -25,7 +25,7 @@ Of these tasks, only \#3 is always required. On a secure boot-enabled system, al
 
 The following diagram indicates the signer for the various components discussed in the rest of this topic.
 
-![firmware update components and signers](images/firmwareupdatecomponentsandsigners.png)
+![firmware update components and signers.](images/firmwareupdatecomponentsandsigners.png)
 
 ## Signing the updated firmware
 

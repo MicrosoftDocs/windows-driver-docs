@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the IEEE 1394 driver stack with the new 1394 bus driver and the Microsoft-supported 1394 client drivers.
 
-![diagram illustrating the ieee 1394 driver stack](images/1394driverstack.png)
+![diagram illustrating the ieee 1394 driver stack.](images/1394driverstack.png)
 
 A client driver for a device that connects to the IEEE 1394 bus driver sits on top of the IEEE 1394 driver stack. The bus driver provides a hardware-independent interface to the IEEE 1394 bus. The device driver communicates with the device by sending IRPs, which are processed by the IEEE 1394 bus driver. Before Windows 7, the bus driver was a combination of a port driver (1394bus.sys) and a primary miniport driver for the motherboard's host controller (ochi1394.sys). In Windows 7 and later versions, the legacy port/miniport bus drivers are replaced by 1394ohci.sys, a monolithic IEEE 1394 bus driver that is implemented by using the kernel-mode driver framework (KMDF). The 1394ohci.sys bus driver is fully backward compatible with the legacy 1394 bus drivers. For more information about some known differences in behavior between the new bus driver and the legacy 1394 bus drivers, see [IEEE 1394 Bus Driver in Windows 7](./ieee-1394-bus-driver-in-windows-7.md).
 

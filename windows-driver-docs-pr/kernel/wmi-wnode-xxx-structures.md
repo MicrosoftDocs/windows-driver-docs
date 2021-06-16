@@ -67,7 +67,7 @@ Note that WMI does not perform type-checking on variable data supplied by a driv
 
 The following figure shows a block diagram of an IRP buffer containing a [**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure that a driver might return in response to an [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](./irp-mn-query-single-instance.md) request.
 
-![diagram illustrating an irp buffer containing a wnode\-single\-instance](images/wnode-single-instance.png)
+![diagram illustrating an irp buffer containing a wnode\-single\-instance.](images/wnode-single-instance.png)
 
 Starting at the top of the previous figure:
 
@@ -90,7 +90,7 @@ A driver reads and writes [**WNODE\_METHOD\_ITEM**](/windows-hardware/drivers/dd
 
 The following figure shows a block diagram of an IRP buffer containing a **WNODE\_ALL\_DATA** that a driver might return in response to an [**IRP\_MN\_QUERY\_ALL\_DATA**](./irp-mn-query-all-data.md) request.
 
-![diagram illustrating an irp buffer containing a wnode\-all\-data](images/wnode-all-data.png)
+![diagram illustrating an irp buffer containing a wnode\-all\-data.](images/wnode-all-data.png)
 
 Starting at the top of the previous figure:
 

@@ -33,7 +33,7 @@ WSDPRINT\MS3DCompatE2D2
 
 The following diagram shows WSPrint 2.0 interactions:
 
-![wsprint interactions](images/wsprint-interactions.png)
+![wsprint interactions.](images/wsprint-interactions.png)
 
 The following steps are a more detailed description of WSPrint 2.0 interactions:
 

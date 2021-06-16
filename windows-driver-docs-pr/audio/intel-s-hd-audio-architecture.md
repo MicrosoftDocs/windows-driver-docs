@@ -35,7 +35,7 @@ A bus controller that conforms to the HD Audio architecture:
 
 The following figure shows a diagram of the UAA driver architecture for HD Audio devices in Windows Vista. In the figure, the software components that are labeled UAA HD Audio Class Driver and HD Audio Bus Driver are provided by Microsoft. The component labeled Modem Driver is provided by an independent hardware vendor.
 
-![diagram illustrating the uaa driver architecture for intel hd audio devices](images/hdaudio.png)
+![diagram illustrating the uaa driver architecture for intel hd audio devices.](images/hdaudio.png)
 
 The UAA HD Audio class driver provides the streaming interface to the operating system audio stack above the driver (not shown in the preceding figure).
 

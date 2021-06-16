@@ -22,7 +22,7 @@ Additional horizontal stretching or shrinking can also be applied to correct the
 
 The following figure shows a video surface that contains two interleaved fields.
 
-![diagram illustrating memory layout of a surface containing two interleaved fields](images/deinterlace.png)
+![diagram illustrating memory layout of a surface containing two interleaved fields.](images/deinterlace.png)
 
 If the video sample contains two interleaved fields as specified by the **DXVA\_SampleFieldInterleavedEvenFirst** and **DXVA\_SampleFieldInterleavedOddFirst** members of the [**DXVA\_SampleFormat**](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat) enumeration, the start time of the second field is calculated using the **rtStart** and **rtEnd** members of the [**DXVA\_VideoSample**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample) structure as follows:
 

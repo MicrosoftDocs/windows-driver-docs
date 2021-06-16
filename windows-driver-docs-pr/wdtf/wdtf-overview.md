@@ -19,7 +19,7 @@ The Microsoft Windows Device Testing Framework (WDTF) enables you to create, man
 
 The following illustration shows the typical WDTF model for creating scenarios at a very high-level.
 
-![diagram illustrating the typical wdtf model for creating scenarios at a very high level ](images/wdtf-scenariomodel.gif)
+![diagram illustrating the typical wdtf model for creating scenarios at a very high level .](images/wdtf-scenariomodel.gif)
 
 Test scripts use WDTF objects through Component Object Model (COM) interfaces. You can use any programming language that supports COM automation to write these scenarios. This documentation provides code examples in VBScript, C++, and JScript.
 

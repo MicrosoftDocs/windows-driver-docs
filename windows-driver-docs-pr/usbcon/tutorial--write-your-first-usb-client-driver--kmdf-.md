@@ -60,9 +60,9 @@ For instructions about generating KMDF driver code, see the steps in [Writing a 
 
 The following screen shots show the **New Project** dialog box for the **USB Kernel-Mode Driver** template.
 
-![visual studio new project options](images/kmdf-template-visual-studio-2019.png)
+![visual studio new project options.](images/kmdf-template-visual-studio-2019.png)
 
-![visual studio new project options second screen](images/kmdf-template-visual-studio-2019-2.png)
+![visual studio new project options second screen.](images/kmdf-template-visual-studio-2019-2.png)
 
 This topic assumes that the name of the Visual Studio project is "MyUSBDriver\_". It contains the following files:
 

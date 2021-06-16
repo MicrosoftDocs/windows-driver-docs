@@ -166,7 +166,7 @@ Microsoft recommends that hardware vendors use the AVCAudio driver for their IEE
 
 The following figure shows the driver hierarchy for an IEEE 1394 audio device in Windows XP. In Windows XP and later, all of the driver components shown in this figure are provided by Microsoft with the operating system.
 
-![diagram illustrating the driver hierarchy for a 1394 audio device](images/avcaudio.png)
+![diagram illustrating the driver hierarchy for a 1394 audio device.](images/avcaudio.png)
 
 For more information about the driver components in the figure, see the following sections:
 

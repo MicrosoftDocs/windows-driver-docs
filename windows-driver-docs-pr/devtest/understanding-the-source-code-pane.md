@@ -15,7 +15,7 @@ The **Source Code** pane displays all of the source code files that are involved
 
 The following screen shot shows an example **Source Code** pane.
 
-![screen shot of the source code pane in the defect viewer](images/sdv-sourcecode.png)
+![screen shot of the source code pane in the defect viewer.](images/sdv-sourcecode.png)
 
 Unlike the [Trace Tree pane](trace-tree-pane.md), the **Source Code** pane displays the entire file—not just the executed code elements—and it displays each source file on a separate tab. This arrangement makes it easy to determine the origin of the code elements in the trace. Source code files that are not involved in the rule violation do not appear in the **Source Code** pane, even if they are in the driver's sources directory.
 

@@ -21,7 +21,7 @@ To achieve this, an IHV/OEM shall implement a WDM driver which supports the foll
 
 In terms of functionality, the list above overlaps significantly with that of MediaCapture (for example, [FlashControl](/uwp/api/Windows.Media.Devices.FlashControl) and [TorchControl](/uwp/api/Windows.Media.Devices.TorchControl)). In addition, the same flash hardware is being used for both *lamp* and *flash-during-capture*. Consequently, an IHV/OEM is recommend to support both types of operations using a single WDM driver to control flash exclusively. The figure below illustrates the concept:
 
-![Exclusive flash control concept diagram](images/exclusive-flash-control.png)
+![Exclusive flash control concept diagram.](images/exclusive-flash-control.png)
 
 In the example above, there is only one flash hardware instance (shown as) and it is managed by a single *KMDF flash driver*. The flash driver exposes two device interfaces, each of which is targeted for a specific type of client (or WinRT API). For example, given the figure above:
 

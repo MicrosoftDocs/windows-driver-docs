@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The following diagram of a sample system, depicts the driver stacks used to support a multifunction controller, using UART as its transport.
 
-![bluetooth sample transport bus driver](images/bthsampletransportbusdriver.png)
+![bluetooth sample transport bus driver.](images/bthsampletransportbusdriver.png)
 
 The device stack to support the Bluetooth function consists of two layers:
 

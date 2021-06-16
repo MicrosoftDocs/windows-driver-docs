@@ -18,7 +18,7 @@ Click **Memory** on the **View** menu to open a new [Memory window](memory-windo
 
  
 
-The **View** command is equivalent to pressing ALT+5 or clicking the **Memory window (Alt+5)** button (![screen shot of the memory button](images/tbmem.png)) on the toolbar.
+The **View** command is equivalent to pressing ALT+5 or clicking the **Memory window (Alt+5)** button (![screen shot of the memory button.](images/tbmem.png)) on the toolbar.
 
 For more information about this window and its uses, see [Memory Window](memory-window.md).
 

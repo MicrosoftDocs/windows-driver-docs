@@ -22,7 +22,7 @@ So what does it mean to select an active configuration? During device initializa
 
 This diagram shows the configuration of a device with a single interface:
 
-![usb device layout for single interface device](images/device-layout-single.png)
+![usb device layout for single interface device.](images/device-layout-single.png)
 
 In this example, the diagram shows Endpoint 0, called the *default endpoint*. All USB devices must have a default endpoint that is used for control transfers (see [USB Control Transfer](usb-control-transfer.md)). Configuration 0 has one interface: Interface 0 with one alternate setting. Alternate Setting 0 uses all three endpoints in the interface.
 
@@ -32,7 +32,7 @@ For multifunction devices, the device has multiple interfaces. To use a particul
 
 This diagram shows the configuration of the webcam device:
 
-![device layout for multiple interface device](images/device-descriptors-multi.png)
+![device layout for multiple interface device.](images/device-descriptors-multi.png)
 
 In this example, the diagram shows the default endpoint. Configuration 0 has two interfaces: Interface 0 and Interface 1. Interface 0 has three alternate settings. Only one of the alternate settings is active at any given time. Notice that Alternate Setting 0 doesn't use an endpoint, whereas Alternate Settings 1 and 2 use Endpoint 1. Typically, a video camera uses an *isochronous endpoint* for streaming. For that type of endpoint, when the endpoint is in use, bandwidth is reserved on the bus. When the camera is not streaming video, the client driver can select Alternate Setting 0 to conserve bandwidth. When the webcam is streaming video, the client driver can switch to either Alternate Setting 1 or Alternate Setting 2, which provides increasing levels of quality and consumes increasing bus bandwidth. Interface 1 has two alternate settings. Similar to Interface 0, Alternate Setting 0 doesn't use an endpoint. Alternate Setting 1 is defined to use Endpoint 1.
 

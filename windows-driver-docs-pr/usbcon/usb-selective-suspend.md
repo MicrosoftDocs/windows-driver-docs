@@ -366,7 +366,7 @@ In particular, the USB stack treats a device as Idle in Windows Vista whenever t
 
 The following diagram illustrates a scenario that might occur in Windows Vista.
 
-![diagram illustrating a global suspend in windows vista](images/global-suspendlh.png)
+![diagram illustrating a global suspend in windows vista.](images/global-suspendlh.png)
 
 This diagram illustrates a situation very similar to the one depicted in the section "Conditions for Global Suspend in Windows XP". However, in this case Device 3 qualifies as an Idle device. Since all devices are idle, the bus driver is able to call the idle notification callback routines associated with the pending idle request IRPs. Each driver suspends its device and the bus driver suspends the USB host controller as soon as it is safe to do so.
 
@@ -378,7 +378,7 @@ In order to maximize power savings on Windows XP, it is important that every dev
 
 The following diagram illustrates a scenario that might occur in Windows XP.
 
-![diagram illustrating a global suspend in windows xp](images/global-suspendxp.png)
+![diagram illustrating a global suspend in windows xp.](images/global-suspendxp.png)
 
 In this figure, device 3 is in power state D3 and does not have an idle request IRP pending. Device 3 does not qualify as an idle device for purposes of a global suspend in Windows XP, because it does not have an idle request IRP pending with its parent. This prevents the bus driver from calling the idle request callback routines associated with the drivers of other devices in the tree.
 

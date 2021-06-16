@@ -15,7 +15,7 @@ After the device has been installed, the port monitor is responsible for keeping
 
 The following figure shows the data flow in autoconfiguration when the device's configuration changes:
 
-![diagram illustrating the data flow in autoconfiguration when the device's configuration changes](images/autocfgcfgchange.png)
+![diagram illustrating the data flow in autoconfiguration when the device's configuration changes.](images/autocfgcfgchange.png)
 
 1.  When the device configuration changes, a device that uses the Web Services Eventing (WS-Eventing) protocol notifies the print subsystem that its status has changed, but does not describe the specific change. The standard TCP/IP port monitor polls devices that do not support WS-Eventing.
 

@@ -15,7 +15,7 @@ The USB 3.0 debugger extension commands are implemented in Usb3kd.dll. To load t
 
 The USB 3.0 tree contains all USB 3.0 host controllers and all hubs and devices that are connected to USB 3.0 host controllers. The following diagram shows an example of a USB 3.0 tree.
 
-![usb 3.0 tree showing a mix of usb 3.0 and usb 2.0 devices roots and controllers](images/usb3tree01.png)
+![usb 3.0 tree showing a mix of usb 3.0 and usb 2.0 devices roots and controllers.](images/usb3tree01.png)
 
 The tree shown in the diagram has two USB 3.0 host controllers. Notice that not every device shown in the diagram is a USB 3.0 device. But all of the devices shown (including the hubs) are part of the USB 3.0 tree, because each device is on a branch that originates at a USB 3.0 host controller.
 

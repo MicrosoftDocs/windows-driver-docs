@@ -18,15 +18,15 @@ To get started, navigate to your [account settings](https://go.microsoft.com/fwl
 
 To add a user, select **Add users**
 
-![an image showing the manage users menu in the Partner Center](images/manage-users.png)
+![an image showing the manage users menu in the Partner Center.](images/manage-users.png)
 
 This will load all the users who are associated with your Azure Active Directory tenant. You can add existing users to Partner Center by selecting the checkbox next to their name. To associate a new user with your tenant, select **New User**.
 
-![an image showing the add users menu in the Partner Center](images/add-users.png)
+![an image showing the add users menu in the Partner Center.](images/add-users.png)
 
 On the **New user** screen, provide the details for your new user. You will need their first and last names, as well as a custom user name that they will use to login. You can also add them to any groups you’ve already created in your directory. Finally, you can grant them any roles they need for the Hardware Program.
 
-![an image showing the new user screen, and the details required for registering a new user](images/new-user-screen.png)
+![an image showing the new user screen, and the details required for registering a new user.](images/new-user-screen.png)
 
 When all details are complete, select **Save** to finalize your new user. This will add the user to your account with the selected permission, and generate a one-time use password for them.
 
@@ -36,4 +36,4 @@ When all details are complete, select **Save** to finalize your new user. This w
 
 Removing a user is easy. On the **manage users** page, you will see a list of all users who currently have access to your Partner Center account. To remove one, select **Remove** at the far right.
 
-![an image showing the remove button on the manage users screen](images/remove-users.png)
+![an image showing the remove button on the manage users screen.](images/remove-users.png)

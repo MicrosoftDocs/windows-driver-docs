@@ -100,7 +100,7 @@ If your Cross Certificate Chain ends in `Microsoft Code Verification Root`, your
 
 To view the cross certificate chain, run `signtool verify /v /kp <mydriver.sys>`. For example:
 
-![[Finding Cross Certificate Chain]](images/signtoolcrosssigexample.png)
+![[Finding Cross Certificate Chain.]](images/signtoolcrosssigexample.png)
 
 ### How can we automate Microsoft Test Signing to work with our build processes?
 

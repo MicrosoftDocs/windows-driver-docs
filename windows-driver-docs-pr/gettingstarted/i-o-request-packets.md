@@ -12,7 +12,7 @@ Most of the requests that are sent to device drivers are packaged in I/O request
 
 Typically an IRP is processed by several drivers that are arranged in a stack. Each driver in the stack is associated with a device object. For more information, see [Device nodes and device stacks](device-nodes-and-device-stacks.md). When an [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) is processed by a device stack, the **IRP** is usually sent first to the top device object in the device stack. For example, if an **IRP** is processed by the device stack shown in this diagram, the IRP would be sent first to the filter device object (Filter DO) at the top of the device stack.
 
-![diagram of a device node and its device stack](images/prosewaredevicenode03.png)
+![diagram of a device node and its device stack.](images/prosewaredevicenode03.png)
 
 ## <span id="Passing_an_IRP_down_the_device_stack"></span><span id="passing_an_irp_down_the_device_stack"></span><span id="PASSING_AN_IRP_DOWN_THE_DEVICE_STACK"></span>Passing an IRP down the device stack
 

@@ -29,19 +29,19 @@ A caller can use the [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuse
 
     Centered scaling is a mode in which the desktop is displayed on the monitor without any scaling at all. When [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) applies centered scaling, black bands might be visible above and below the desktop. The following figure shows centered scaling.
 
-    ![figure illustrating centered scaling](images/ccd-center-scale.png)
+    ![figure illustrating centered scaling.](images/ccd-center-scale.png)
 
   * **Stretched scaling**
 
     Stretched scaling is a mode in which the desktop is horizontally and vertically stretched on the monitor to ensure that the entire display is used. When [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) applies stretched scaling, no black bands are visible above and below the desktop. However, the desktop might appear distorted. The following figure shows stretched scaling.
 
-    ![figure illustrating stretched scaling](images/ccd-stretch-scale.png)
+    ![figure illustrating stretched scaling.](images/ccd-stretch-scale.png)
 
   * **Aspect-Ratio-Preserving Stretched**
 
     Aspect-ratio-preserving stretched scaling is a mode in which the desktop is stretched horizontally and vertically as much as possible while maintaining the aspect ratio. When [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) applies aspect-ratio-preserving stretched scaling, black bands might be visible either *above and below* or *left and right of* the desktop. However, black bands cannot be visible both *above and below* and *left and right of* the desktop. Because users are expected to prefer this type of scaling, **SetDisplayConfig** applies this type of scaling as the default. The following figure shows aspect-ratio-preserving stretched scaling.
 
-    ![figure illustrating aspect-ratio-preserving stretched scaling](images/ccd-arpstretch-scale.png)
+    ![figure illustrating aspect-ratio-preserving stretched scaling.](images/ccd-arpstretch-scale.png)
 
 Scaling depends on the source and target modes that are used for a path. In addition, the caller can call [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) without specifying the target mode information (that is, setting the *modeInfoArray* parameter is optional and can be set to **NULL**). This means that the caller cannot typically predict if **SetDisplayConfig** must perform any scaling. Furthermore, no API exists to get the full list of scaling types that the graphics adapter supports. The [**EnumDisplaySettings**](/windows/win32/api/winuser/nf-winuser-enumdisplaysettingsa) Win32 function returns DMDFO_DEFAULT in the **dmDisplayFixedOutput** member of the **DEVMODE** structure that the *lpDevMode* parameter points to when the caller requests the Windows 7 scaling types.
 

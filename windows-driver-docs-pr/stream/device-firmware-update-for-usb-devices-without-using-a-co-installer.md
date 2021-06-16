@@ -55,7 +55,7 @@ The driver update package on the Windows Update server will contain:
 
 - The "firmware.bin" file
 
-![Firmware update UMDF lower filter driver method](images/fw-update-umdf-lower-filter-driver-method.png)
+![Firmware update UMDF lower filter driver method.](images/fw-update-umdf-lower-filter-driver-method.png)
 
 While installing the driver update package, the firmware update WDF filter driver’s [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine will be called. From this routine, the WDF filter driver will get for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
 
@@ -95,7 +95,7 @@ In addition to the driver update package, a separate Firmware Update Device Driv
 
 1. The "firmware.bin" file.
 
-![Firmware update WDF driver method](images/fw-update-wdf-driver-method.png)
+![Firmware update WDF driver method.](images/fw-update-wdf-driver-method.png)
 
 While installing the driver update package, the WDF lower filter driver’s AddDevice routine will be called. From this routine, the filter driver will query for the device firmware version from the device HW registry key. The device firmware should have placed the "firmware version", using the MSOS descriptor or the USB device’s extension INF, onto the device HW registry key.
 

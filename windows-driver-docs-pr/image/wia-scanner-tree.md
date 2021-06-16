@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 
 The following figure shows a scanner and an image that it produced.
 
-![diagram illustrating a scanner and an image that it produced](images/art-scanner.png)
+![diagram illustrating a scanner and an image that it produced.](images/art-scanner.png)
 
 The next figure shows a Microsoft Windows Me or Windows XP scanner, or a scanner on Windows Vista if that scanner has no document feeder, duplexer or film scanner.
 
 WIA represents the scanner and its image shown in the preceding figure as an item tree, as in the following figure.
 
-![diagram illustrating how wia represents the scanner and its image as an item tree](images/art-4.png)
+![diagram illustrating how wia represents the scanner and its image as an item tree.](images/art-4.png)
 
 The root item, which is the scanner itself, consists of common device properties (properties that are common to both cameras and scanners), and scanner-specific device properties. Similarly, each child item consists of properties common to both camera and scanner items, as well as properties that are specific to scanner items.
 

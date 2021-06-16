@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The Local Profile Assitant (LPA) component of the Windows operating system is the LPA Service while the low level UICC access is exposed through the WWAN Service. The LPA Service handles profile discovery, downloading profiles, and profile management.
 
-![eSIM Architecture](images/esim_lpa_block.png "eSIM Block Diagram")
+![eSIM Architecture.](images/esim_lpa_block.png "eSIM Block Diagram")
 
 ## MB Interface Update for eSIM Operations
 
@@ -28,11 +28,11 @@ The modem needs to support the following [MB Low Level UICC access CIDs](mb-low-
 
 ## eSIM Service Initialization
 
-![eSIM Service Initialization](images/esim_lpa_init.png "eSIM Service Initialization Flow Diagram")
+![eSIM Service Initialization.](images/esim_lpa_init.png "eSIM Service Initialization Flow Diagram")
 
 ## eSIM Profile Download and Install
 
-![eSIM Profile Download and Install](images/esim_lpa_download_install.png "eSIM Download and Install Flow Diagram")
+![eSIM Profile Download and Install.](images/esim_lpa_download_install.png "eSIM Download and Install Flow Diagram")
 
 ## eSIM Profile Operations
 
@@ -47,7 +47,7 @@ Update NickName
 
 Below is a sample flow for the Enable Profile operation. The other Profile Operations follow a similar flow except that MBIM_CID_MS_UICC_APDU will contain the Es10c command for the respective operation.
 
-![eSIM Enable Profile](images/esim_lpa_enable.png "eSIM Enable Profile Flow Diagram")
+![eSIM Enable Profile.](images/esim_lpa_enable.png "eSIM Enable Profile Flow Diagram")
 
 ### Card Refresh
 The eSIM Profile Operations expect that card refresh will be performed followed by the ready state change according to the [MB eSIM MBIM ready state guidance](mb-esim-mbim-ready-state-guidance.md).

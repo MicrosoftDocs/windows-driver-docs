@@ -24,7 +24,7 @@ Finally, GDI disables the display driver by calling [**DrvDisableDriver**](/wind
 
 The following figure shows GDI's calling sequence for disabling the video hardware.
 
-![diagram illustrating disabling the video hardware](images/202-02.png)
+![diagram illustrating disabling the video hardware.](images/202-02.png)
 
  
 

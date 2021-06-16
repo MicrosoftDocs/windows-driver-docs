@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Step 6: Submit device metadata for your UWP device app
 
 
-![device app workflow, step 6](images/6-device-app-workflow.png)
+![device app workflow, step 6.](images/6-device-app-workflow.png)
 
 This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
 

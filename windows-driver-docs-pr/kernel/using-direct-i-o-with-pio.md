@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 A driver that uses programmed I/O (PIO) rather than DMA must doubly map user-space buffers into a system-space address range. The following figure illustrates how the I/O manager sets up an [**IRP\_MJ\_READ**](./irp-mj-read.md) request for a PIO transfer operation that uses direct I/O.
 
-![diagram illustrating direct i/o for devices that use pio](images/3mdlpio.png)
+![diagram illustrating direct i/o for devices that use pio.](images/3mdlpio.png)
 
 The figure shows how a device that uses PIO handles the same task.
 

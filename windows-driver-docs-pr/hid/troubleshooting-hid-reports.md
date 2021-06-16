@@ -35,7 +35,7 @@ A requested usage is not in any report supported by the top-level collection.
 
 For example, the following figure shows a HID collection that contains two reports.
 
-![diagram illustrating an hid collection containing two reports](images/reportid.png)
+![diagram illustrating an hid collection containing two reports.](images/reportid.png)
 
 Based on this example, assume an application or driver received a report from a collection and calls [**HidP\_GetUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) to extract the current value of "Value X." If the report's ID is seven, the routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID, which indicates that the device supports Value X, but that Value X is not present in the report. On the other hand, if the application or driver requests the value of "Value Z," the routine returns HIDP\_STATUS\_USAGE\_NOT\_FOUND, which indicates that Value Z is not in any report supported by the collection.
 

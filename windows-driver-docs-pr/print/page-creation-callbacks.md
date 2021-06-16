@@ -22,7 +22,7 @@ When an application makes an initial call into CPSUI's entry point function ([**
 
 CPSUI's **CommonPropertySheetUI** function immediately calls back to the PFNPROPSHEETUI-typed function, supplying the address of a [**PROPSHEETUI\_INFO**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_propsheetui_info) structure. The application can then call CPSUI's [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function, supplying page descriptions that CPSUI can use to create the pages, as illustrated in the following diagram:
 
-![diagram illustrating application-cpsui communication](images/comprop.png)
+![diagram illustrating application-cpsui communication.](images/comprop.png)
 
 For more information, see [Methods for Specifying Pages](methods-for-specifying-pages.md).
 

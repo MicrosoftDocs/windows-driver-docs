@@ -11,7 +11,7 @@ Provisioning refers to configuring a Windows computer with the information that 
 
 The following diagram illustrates the contents and hierarchy of the provisioning XML file.
 
-![provisioning xml file hierarchy](images/mb-provisioningmetadata.jpg)
+![provisioning xml file hierarchy.](images/mb-provisioningmetadata.jpg)
 
 For more info about the provisioning schema, see [CarrierControlSchema schema](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/schema-root).
 

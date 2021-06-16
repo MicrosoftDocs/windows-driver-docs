@@ -43,11 +43,11 @@ Both the Probe Request & Probe Response Frames can be extended using Custom IEs.
 
 A Custom IE consists of a Vendor ID & Vendor Data as shown in the following WFD vendor extension illustration.
 
-![wfd vendor extension](images/wfd-customie.png)
+![wfd vendor extension.](images/wfd-customie.png)
 
 Microsoft uses the Vendor ID 0x137 to represent IEs owned by Microsoft. The vendor data block that is in each vendor's vendor extensions contains an arbitrary block of data that the vendor defines. The vendor data block in Microsoft vendor extensions consists of one or more Type-Length-Value (TLV) structures. The organization of the TLV structure is shown in the following *WFD Vendor Data* illustration.
 
-![wfd vendor data](images/wfd-vendordatatlv.png)
+![wfd vendor data.](images/wfd-vendordatatlv.png)
 
 ### TLV definition for Container UUID
 
@@ -70,11 +70,11 @@ Like the Container UUID, Vertical Pairing Data Blob is also an attribute of the 
 
 A Custom IE consists of a Vendor ID & Vendor Data as shown in the following WFD Vendor Extension illustration.
 
-![wfd vendor extension](images/wfd-customie.png)
+![wfd vendor extension.](images/wfd-customie.png)
 
 Microsoft uses the Vendor ID 0x137 to represent IEs owned by Microsoft. The vendor data block that is in each vendor's vendor extensions contains an arbitrary block of data that the vendor defines. The vendor data block in Microsoft vendor extensions consists of one or more Type-Length-Value (TLV) structures. The organization of the TLV structure is shown in the following WFD Vendor Data illustration:
 
-![wfd vendor data](images/wfd-vendordatatlv.png)
+![wfd vendor data.](images/wfd-vendordatatlv.png)
 
 ### TLV definition for Vertical Pairing Blob
 
@@ -91,7 +91,7 @@ The Vertical Pairing identifier (VPI) TLV communicates a device's internal topol
 
 The data that is included with a VPI TLV is 2 bytes long and consists of two different fields: a Transport field and a Profile Request field, as shown in the following illustration of WFD Data included with a VPI TLV (each field is 1 byte long).
 
-![wfd data included with a vpi tlv](images/wfd-vpi.png)
+![wfd data included with a vpi tlv.](images/wfd-vpi.png)
 
 ### VPI TRANSPORT FIELD
 
@@ -149,7 +149,7 @@ UUID values are specified in all lowercase, and the DPWS identity string uses th
 
 When the device sends out its WPS M7/M8 messages, it includes the Microsoft vendor extension that is shown in the following example of WFD vendor extension details:
 
-![example wfd vendor extension details](images/wfd-vendorextensiondetails.png)
+![example wfd vendor extension details.](images/wfd-vendorextensiondetails.png)
 
 In this example, the vendor extension contains a Vendor ID value of 0x137, which identifies it as a Microsoft vendor extension. Inside the vendor extension's vendor data field are two TLV structures.
 

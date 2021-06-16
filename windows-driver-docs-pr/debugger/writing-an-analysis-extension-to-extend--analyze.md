@@ -162,7 +162,7 @@ typedef struct _FA_ENTRY
 
 Each tag has a set of properties: for example, name, description, and data type. A [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object is associated with a [DebugFailureAnalysisTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) object, which contains a collection of tag properties. The following diagram illustrates this association.
 
-![diagram that shows the analysis engine, a debugfailureanalysis object, and a debugfailureanalysistags object](images/debugfa01.png)
+![diagram that shows the analysis engine, a debugfailureanalysis object, and a debugfailureanalysistags object.](images/debugfa01.png)
 
 A [**DebugFailureAnalysis**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) object has a collection of [FA entries](failure-analysis-entries.md) that belong to a particular analysis session. The associated [DebugFailureAnalysisTags](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags) object has a collection of tag properties that includes only the tags used by that same analysis session. As the preceding diagram shows, the analysis engine has a global tag table that holds limited information about a large set of tags that are generally available for use by analysis sessions.
 

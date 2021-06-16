@@ -80,7 +80,7 @@ Expand the payload data for the USB Hub Wait Wake IRP Completed event, and you w
 
 The USB hub driver uses the **fid\_USBHUB\_Hub** structure to describe a USB hub. Events that have this hub structure in their data payload refer to a hub, and we can identify the specific hub by using the contents of the structure. Figure 4 shows the Frame Details pane, with the **fid\_USBHUB\_Hub** structure expanded to show its fields.
 
-![microsoft network monitor - frame details](images/framedetails.png)
+![microsoft network monitor - frame details.](images/framedetails.png)
 
 The hub structure is very similar to two other structures that commonly appear in USB ETW events:**fid\_USBHUB\_Device** and **fid\_USBPORT\_Device**. The following important fields are common to all three structures:
 
@@ -149,7 +149,7 @@ USB error events, and other events, have status values in their data that provid
 
 The events that are logged before the error events might provide important clues as to the cause of the error. You should look at the events that are logged before the errors to try to determine the root cause of the unknown device. In this example, start looking backward from the CreateDeviceFailure_Popup event, the second-to-last exception. Select this event while the USB error filter is enabled, and then click **Remove** in the **Display Filter** pane. The USB error filter still appears in the **Display Filter** pane, and you can re-apply it later. But now the filter is disabled and the **Frame Summary** pane displays all events as shown in this image.
 
-![microsoft network monitor](images/devicefailure-etl3.png)
+![microsoft network monitor.](images/devicefailure-etl3.png)
 
 The two events that are logged just before the CreateDeviceFailure_Popup event are a Dispatch and a Complete of a USB control transfer. The **fid_USBPORT_Device** port path field is zero for both events, which indicates that the transfer's target is the root hub. In the fid_USBPORT_URB_CONTROL_TRANSFER structure of the completion event, the status is zero (USBD_STATUS_SUCCESS), which indicates that the transfer was successful. Continue examining the previous events.
 

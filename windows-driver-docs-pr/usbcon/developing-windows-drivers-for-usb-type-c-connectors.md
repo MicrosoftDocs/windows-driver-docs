@@ -26,7 +26,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 -   [USB Type-C driver reference](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
-![drivers](images/drivers-c.png)
+![drivers.](images/drivers-c.png)
 
 
 |             Hardware/Firmware capabilities             |                                                                                                                                                    Non-detachable                                                                                                                                                    |                                                                                                                              Add-on card                                                                                                                               |

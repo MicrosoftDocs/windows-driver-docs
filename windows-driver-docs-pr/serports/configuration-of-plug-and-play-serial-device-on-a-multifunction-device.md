@@ -31,7 +31,7 @@ A specific example is a PCMCIA card that has a modem and a LAN adapter.
 
 The following diagram shows the typical configuration for a sample toaster device and a sample blender device that require a 16550 UART-compatible interface
 
-![diagram illustrating hardware and drivers-and-device-stacks configurations for a toaster on a multifunction pcmcia card, and for a toaster and blender](images/ser4.png)
+![diagram illustrating hardware and drivers-and-device-stacks configurations for a toaster on a multifunction pcmcia card, and for a toaster and blender.](images/ser4.png)
 
 In these configurations, the Toaster device is a child device on the multifunction device, and the multifunction device is a child device on a PCMCIA bus.
 

@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Time Travel Menu
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This section describes how work with the time travel menu in WinDbg Preview.
 
-![View menu in debugger](images/windbgx-timetravel-menu.png)
+![View menu in debugger.](images/windbgx-timetravel-menu.png)
 
 For more information about time travel see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 

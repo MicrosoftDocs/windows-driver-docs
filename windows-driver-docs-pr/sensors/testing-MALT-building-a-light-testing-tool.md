@@ -15,7 +15,7 @@ This topic provides instructions and requirements on how to use (and build if ne
 
 Please use these instructions for leveraging ideas and concepts into your testing solution. The microcontroller API is published for you to further leverage tests published in the HLK and elsewhere. Your feedback will help improve this guide.
 
-![malt device](images/MALT.png)
+![malt device.](images/MALT.png)
 
 ## Prerequsites
 
@@ -39,7 +39,7 @@ You will need the following components.
 
 Controlling light exposed to the system under test (SUT) is key to accurate testing. The enclosure needs to be matched to the light panel being used and the SUT. This will consist of a box with an aperture on top for the controllable light source and room for the SUT underneath.
 
-![light enclosure](images/box.png)
+![light enclosure.](images/box.png)
 
 The enclosure we used for laptops was 16"x16"x12", with a 10"x10" aperture at the top of the enclosure.  The [model](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Schematics/enclosure) can be 3D printed.
 
@@ -66,11 +66,11 @@ If the light fixture is mounted outside the box (on top), ensure the aperture wi
 
 The MALT uses two light sensors (one to measure the screen brightness and one to measure the ambient brightness), and two color sensors (one to measure the screen color and one to measure the ambient color). To achieve these simultaneously, wire them such that one light sensor and one color sensor are facing away from the other two sensors. When the screen sensors are facing downwards (sitting on the screen), the other sensors are facing upwards to measure the ambient light.
 
-![sensor rig](images/sensor.png)
+![sensor rig.](images/sensor.png)
 
 Connect the LED light panel to the power supply and connect it to the DAC. The microcontroller must be able to control the voltage sent to the light panel in order to control its intensity, which is achieved using the DAC. The schematic below shows how connections were made for the tool we use. More details can be found in the Sensor PCB KiCad project.
 
-![sensor schematic](images/SensorPCB.png)
+![sensor schematic.](images/SensorPCB.png)
 
 ### Step 3 - Connect the microcontroller
 
@@ -78,7 +78,7 @@ Connect the sensors to the microcontroller and the microcontroller to the PC. Fo
 
 The following diagram shows how various parts of MALT are connected.
 
-![block diagram](images/BlockDiagram.png)
+![block diagram.](images/BlockDiagram.png)
 
 Through the MALT PCB, we are able to connect the Arduino board to the sensor PCB and the light source. More details can be found in the MALT PCB KiCad project.
 

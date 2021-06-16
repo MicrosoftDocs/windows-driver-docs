@@ -28,7 +28,7 @@ Because the mobile operator triggers the notification via SMS, the device must h
 
 The notification content can be customized by the mobile operator using a template with predefined elements. The highlighted elements below are definable by the mobile operator.
 
-![SMS notification template](images/mobile_plans_sms_notification_template.png)
+![SMS notification template.](images/mobile_plans_sms_notification_template.png)
 
 Field name | Description | Example
 ---------- | ----------- | -------
@@ -40,7 +40,7 @@ Logo | This is part of the assets that are provided during onboarding |
 
 ### Sample SMS-triggered notification
 
-![SMS notification sample](images/mobile_plans_sms_notification_sample.png)
+![SMS notification sample.](images/mobile_plans_sms_notification_sample.png)
 
 ### Using multiple notification templates
 
@@ -50,7 +50,7 @@ Since the request includes identifiers for the active profile on the device, the
 
 The Get Notifications request returns the template ID to be used for the notification shown to the user.
 
-![Mobile Plans Get Notifications Callflow](images/mobile_plans_get_notifications_callflow.png)
+![Mobile Plans Get Notifications Callflow.](images/mobile_plans_get_notifications_callflow.png)
 
 
 ### GetNotifications API specification
@@ -96,7 +96,7 @@ Mobile operators in some markets also have the ability to show a promotional not
 
 The promotional notification content can be customized by the mobile operator using a template with predefined elements. The highlighted elements below are definable by the mobile operator.
 
-![Promo notification template](images/mobile_plans_promo_notification_template.png)
+![Promo notification template.](images/mobile_plans_promo_notification_template.png)
 
 Field name | Description | Example
 ---------- | ----------- | -------
@@ -109,4 +109,4 @@ The [Notifications Visualizer app](https://www.microsoft.com/store/productId/9NB
 
 ### Sample App-triggered notification
 
-![Mobile plans notification example](images/mobile_plans_notifications.png)
+![Mobile plans notification example.](images/mobile_plans_notifications.png)

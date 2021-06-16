@@ -15,7 +15,7 @@ Use the New Model Query dialog to create a new model query. You can put anything
 
 For example, specify `Debugger.Sessions` to examine the debugger sessions objects. 
 
-![New data model query dialog box](images/windbgx-data-model-new-model-dialog.png)
+![New data model query dialog box.](images/windbgx-data-model-new-model-dialog.png)
 
 For general information about the debugger objects refer to [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
 
@@ -25,13 +25,13 @@ Use LINQ queries to dig deeper into the session. This query shows the top 5 proc
 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
 ```
 
-![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
+![Data model explore window showing process and threads.](images/windbgx-data-model-process-threads.png)
 
 ## Data Model Explorer
 
 Use the data model explorer to quickly browse every data model object in the `Debugger` namespace.
 
-![Data model explorer window showing debug object sessions](images/windbgx-data-model-explore-window.png)
+![Data model explorer window showing debug object sessions.](images/windbgx-data-model-explore-window.png)
 
 ### Display Mode
 
@@ -39,7 +39,7 @@ Use display mode to toggle between grid and hierarchy display mode. You can righ
 
 Grid mode can be useful to dig down in the objects. For example, here is the previous top threads query in grid view. 
 
-![Data model explore window showing top threads](images/windbgx-data-model-process-threads-grid.png)
+![Data model explore window showing top threads.](images/windbgx-data-model-process-threads-grid.png)
 
 When you click on any underlined item a new tab is opened and a query is run to display that information.
 
@@ -49,7 +49,7 @@ This query shows the devices in the plug and play device tree grouped by the nam
 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
 ```
 
-![Data model explore window showing plug and play device tree in a grid view](images/windbgx-data-model-pnp-device.png)
+![Data model explore window showing plug and play device tree in a grid view.](images/windbgx-data-model-pnp-device.png)
 
 ### Change Query
 

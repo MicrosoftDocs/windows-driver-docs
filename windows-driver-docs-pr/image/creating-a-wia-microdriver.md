@@ -19,7 +19,7 @@ Many flatbed scanners are controlled in a similar manner. The common behavior be
 
 The following diagram shows the components in the WIA microdriver architecture.
 
-![diagram illustrating the components in the wia microdriver architecture](images/art-6.png)
+![diagram illustrating the components in the wia microdriver architecture.](images/art-6.png)
 
 The WIA Flatbed Driver handles requests from the WIA service by calling the WIA microdriver functions in the microdriver. The microdriver must implement each of these functions. A [**SCANINFO**](/windows-hardware/drivers/ddi/wiamicro/ns-wiamicro-_scaninfo) structure is passed to the microdriver to store and communicate scanning parameters such as the scan window and resolution. The WIA Flatbed Driver reads values from the SCANINFO structure, but never writes them. It is the microdriver's responsibility to set the SCANINFO members.
 

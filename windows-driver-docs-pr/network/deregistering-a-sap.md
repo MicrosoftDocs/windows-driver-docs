@@ -21,11 +21,11 @@ A connection-oriented client deregisters a SAP with [**NdisClDeregisterSap**](/w
 
 The following figure shows a client of a call manager deregistering a SAP.
 
-![diagram illustrating a client of a call manager deregistering a sap](images/cm-04.png)
+![diagram illustrating a client of a call manager deregistering a sap.](images/cm-04.png)
 
 The following figure shows a client of an MCM driver deregistering a SAP.
 
-![diagram illustrating a client of an mcm driver deregistering a sap](images/fig1-04.png)
+![diagram illustrating a client of an mcm driver deregistering a sap.](images/fig1-04.png)
 
 The call to **NdisClDeregisterSap** causes NDIS to call the call manager's or MCM driver's [**ProtocolCmDeregisterSap**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_deregister_sap) function. In *ProtocolCmDeregisterSap*, the call manager or MCM driver might communicate with network control devices or other media-specific agents to deregister the SAP on the network. In addition, *ProtocolCmDeregisterSap* must free any resources that it dynamically allocated for the SAP.
 

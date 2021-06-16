@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 WDTF is built to be extendable. Extendibility is possible in three distinct ways, as the following illustration shows.
 
-![diagram illustrating the wdtf scenario model](images/wdtf-scenariomodel.gif)
+![diagram illustrating the wdtf scenario model.](images/wdtf-scenariomodel.gif)
 
 The following list describes the three extensibility methods, in order of difficulty:
 

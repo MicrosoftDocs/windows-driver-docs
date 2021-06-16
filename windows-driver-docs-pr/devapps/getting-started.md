@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Start here to begin building UWP device apps.
 
-![get started with windows store device apps](images/devices-diagram-350x350.png)
+![get started with windows store device apps.](images/devices-diagram-350x350.png)
 
 Device manufacturers can create a UWP device app that serves as a companion to their device. UWP device apps have more capabilities than regular UWP apps and can perform privileged operations, such as firmware updates. Also, UWP device apps can start from AutoPlay (on more devices than other apps can), automatically install the first time a device is connected, and extend the printer and camera experiences built into Windows.
 

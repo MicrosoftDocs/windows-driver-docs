@@ -25,14 +25,14 @@ You can use MCATT for these test cases:
 
 ## Hardware setup
 
-![mcatt setup](images/mcatt-hardware-setup.png)
+![mcatt setup.](images/mcatt-hardware-setup.png)
 
 1. Connect the MITT board to the 40-pin adapter.
 2. Connect the touch simulator pad to the adapter.
 3. Connect the MITT board to the host computer by using a USB cable.
 4. Connect the system under test to the host system by using a USB cable. This can be an A-to-A USB cable or a wire that connects ground from the system under test to the device under test.
 
-    ![mcatt connections](images/mcatt-setup.png)
+    ![mcatt connections.](images/mcatt-setup.png)
 
 ## MCATT manual tests
 
@@ -50,7 +50,7 @@ At any given time the script controls which touch points provide simulation. The
 
 Here is an example for generating a simple pan gesture that is included in the test module. This example test works with the 5x8 board that has this numbering convention.
 
-![mcatt pattern](images/mcatt-pattern.png)
+![mcatt pattern.](images/mcatt-pattern.png)
 
 Run these commands:
 

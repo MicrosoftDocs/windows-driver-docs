@@ -165,7 +165,7 @@ The various sensor states for location sensor drivers are described in the follo
 | SENSOR_STATE_NOT_AVAILABLE | The functionality that the location provider uses to acquire data is disabled.<br><br>A GPS sensor could be in this state if the radio is turned off. | REPORT_ERROR |  
 | SENSOR_STATE_ERROR | The sensor has encountered a major error. The sensor can recover from this state, but the time frame for recovery is not known. | REPORT_ERROR |  
 
-The following diagram shows how state transitions may occur in a location sensor.![state transitions](images/gps-state-transitions.png)
+The following diagram shows how state transitions may occur in a location sensor.![state transitions.](images/gps-state-transitions.png)
 
 ## Raising data-updated and state-changed events
 

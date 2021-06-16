@@ -25,7 +25,7 @@ When the LE or firmware watchdog timer detects that the firmware stalled, the ex
     3.  After returning D0 WDI OID, the LE indicates [NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](./ndis-status-wdi-indication-firmware-stalled.md).
     4.  Finish the procedure as in D0: 1a, 1b, and 1c.
 
-![wdi le hang detection](images/wdi-le-hang-detection-flow.png)
+![wdi le hang detection.](images/wdi-le-hang-detection-flow.png)
 
 ## Hang detection in Dx
 
@@ -43,7 +43,7 @@ For Reset Recovery to work in this scenario, at least two portions of the firmwa
 
 If there is a lack of either one, the Host side does not know if the firmware is stalled and RR does not happen. This scenario is not part of the design goal.
 
-![wdi hang detection in dx](images/wdi-hang-detection-dx.png)
+![wdi hang detection in dx.](images/wdi-hang-detection-dx.png)
 
 ## OS module triggered reset recovery
 

@@ -46,12 +46,12 @@ This topic outlines the design of a device-wide extension running in user mode t
 
 This topic describes support for a filter-wide user-mode extension to the capture driver. This component has access to MF APIs, thread pools, GPU and ISP resources. The filter wide extension provides the flexibility of having any number of streams between itself and device Ks filter. This flexibility enables seemless out of band communication between the user-mode extension and driver which can be used for dedicated metadata and 3A processing streams.
 
-![capture stack architecture](images/capture-stack-architecture.png)
+![capture stack architecture.](images/capture-stack-architecture.png)
 
 <br>
 <br>
 
-![device mft architecture](images/device-mft-architecture.png)
+![device mft architecture.](images/device-mft-architecture.png)
 
 ### Device Transform Manager (DTM)
 
@@ -99,12 +99,12 @@ As long as the Device MFT itself in streaming state, it can request any input st
 
 However, the output stream transition is controlled by the capture pipeline. For example, the preview, record, and photo streams are enabled or disabled by the capture pipeline. Even when the outputs are disabled, an input stream could still be streaming as long as the Device MFT itself is in streaming state.
 
-![device mft pipeline preview sequence](images/device-mft-pipeline-preview-sequence.png)
+![device mft pipeline preview sequence.](images/device-mft-pipeline-preview-sequence.png)
 
 <br>
 <br>
 
-![device mft take photo sequence](images/device-mft-take-photo-sequence.png)
+![device mft take photo sequence.](images/device-mft-take-photo-sequence.png)
 
 
 ### Lifetime of Device MFT

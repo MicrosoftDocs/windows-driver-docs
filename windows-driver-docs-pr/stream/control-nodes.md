@@ -30,7 +30,7 @@ The following figure shows an example of one possible functional topology that r
 
 -   obtain IP data.
 
-![diagram illustrating receiver topology](images/rcvrtopl.png)
+![diagram illustrating receiver topology.](images/rcvrtopl.png)
 
 Note that some functions in receiver topology that acquire content, such as the tuner, are always associated with hardware. Other functions, such as content stream demultiplexing, can be performed with hardware or software components. Still others, such as the transport information filter (TIF) and network provider filter, are always software components.
 

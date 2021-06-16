@@ -50,6 +50,6 @@ The following list describes some of the known issues with client-side rendering
 
   You can confirm whether your machine is configured as a Mobile or Desktop profile by using msinfo32.exe:
 
-  ![screenshot of msinfo32.exe profile](images/emfdespoolingsetting.png)
+  ![screenshot of msinfo32.exe profile.](images/emfdespoolingsetting.png)
 
 If, during testing, you detect a problem with your printer driver that the client-side rendering feature might have caused, you can disable client-side rendering for your driver. You can disable client-side rendering in the driver by calling **SetPrinterData** to set the EMFDespoolingSetting value of the print queue to 1. This value will cause any clients that connect to the print queue to render the print jobs on the server.

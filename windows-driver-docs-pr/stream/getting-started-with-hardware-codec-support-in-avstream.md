@@ -17,7 +17,7 @@ The AVStream model remains unchanged in Windows 7 and requires only a few additi
 
 The transcoding topology is shown in the following diagram:
 
-![diagram illustrating transcoding topology](images/hw-transcoding.png)
+![diagram illustrating transcoding topology.](images/hw-transcoding.png)
 
 For best performance, the media processing that is shown in the bottom row of the diagram should occur in dedicated hardware. In this scenario, dedicated transcode hardware is known as Secured Hardware Encoder Decoder (SHED). SHED can be packaged either as a plug-in module for the motherboard or as an integrated feature on the display adapter.
 

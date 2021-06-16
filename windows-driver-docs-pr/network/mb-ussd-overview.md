@@ -39,11 +39,11 @@ An activatable tag defines the factory interface that will produce an instance o
 
 ### USSD Implementation
 
-![Diagram showing USSD implementation](images/ussd_implement.png?raw=true "implement_ussd_img")
+![Diagram showing USSD implementation.](images/ussd_implement.png?raw=true "implement_ussd_img")
 
 ## Flow: Open, Send, Receive, Close.
 ### Open, Send
-![Flow diagram for USSD request with reply](images/ussd_request_with_reply.png?raw=true "resume_ussd_img")
+![Flow diagram for USSD request with reply.](images/ussd_request_with_reply.png?raw=true "resume_ussd_img")
 1) The client uses one of the static functions UssdSession.CreateFromNetworkAccountId or UssdSession.CreateFromNetworkInterfaceId to create the UssdSession object.
 2) Regardless of the API called, a network interface ID is required to initialize a UssdSession. In the case of *NetworkAccountID, steps are taken to retrieve the network interface ID from the Account ID.
 CreateInternal() is called to create a instance of UssdSession and invoke Initialize() on the newly-created instance. During the initialization steps, a worker thread is spun up and an event handle to trigger events for the thread is created. Steps 3 and 4 also take place during the instance's Initialize().
@@ -79,7 +79,7 @@ CreateInternal() is called to create a instance of UssdSession and invoke Initia
 10) WwanWrapper uses the WwanService handle to invoke WwanService APIs to carry out the action.
         
 ### Receive
-![Flow diagram for USSD receive](images/ussd_resume.png?raw=true "resume_ussd_img")
+![Flow diagram for USSD receive.](images/ussd_resume.png?raw=true "resume_ussd_img")
 
 After step 10, we are left in a state where a request was sent to WwanService to initialize a new USSD session and send a USSD message under that session. After some time, the reply will be available.
 
@@ -95,7 +95,7 @@ After step 10, we are left in a state where a request was sent to WwanService to
 More messages can be sent under the same session. If the session was maintained, the future RequestType will be WwanUssdRequestContinue.
 
 ### Close
-![Flow diagram for USSD close](images/ussd_resume2.png?raw=true "resume_ussd_img")
+![Flow diagram for USSD close.](images/ussd_resume2.png?raw=true "resume_ussd_img")
 After step 18, the client has received the reply to their UssdMessage. They may or may not have continued to use the active UssdSession to send additional messages. We will assume that at some point in the future, the client will manually invoke Close() on the UssdSession. If the client does not explicitly invoke Close(), it will be called during the destructor of UssdSession.
 
 19) Client invokes Close() on the UssdSession instance.

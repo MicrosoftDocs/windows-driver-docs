@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 After a driver that uses a controller object has started its device, it is ready to process IRPs sent to its target device objects. Whenever an IRP requires the driver to program the physical device represented by the controller object for an I/O operation, the driver calls [**IoAllocateController**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioallocatecontroller). The following figure illustrates such a call.
 
-![diagram illustrating allocating a controller object for i/o](images/3ctlaloc.png)
+![diagram illustrating allocating a controller object for i/o.](images/3ctlaloc.png)
 
 As the previous figure shows, a driver must supply more than the *ControllerObject* pointer that was returned by [**IoCreateController**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatecontroller) when it calls [**IoAllocateController**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioallocatecontroller). Along with this pointer, it must pass pointers to the device object representing the target of the current I/O request, to a driver-supplied [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine, and to whatever *Context* its *ControllerControl* routine will need to set up the device for the requested I/O operation.
 

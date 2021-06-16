@@ -17,7 +17,7 @@ The following diagram shows the data flow between the sample driver and the Basi
 -   The Basic Stamp sends a multibyte data packet to the driver, which consists of *n*-bytes for the sensor reading and 5 bytes for the update interval. The data is transmitted in ANSI characters by using the SEROUT command, without a terminating null character. The update interval defines how many milliseconds elapse before the next data packet is sent and has a default of 02000 (2 seconds).
 -   To dynamically configure the update interval, the sample driver can send a 6 byte data packet that contains the new update interval in ANSI characters with a terminating null character (such as 05000\\0). The terminating null character is required for the Basic Stamp program to receive the data by using the SERIN command.
 
-![i/o data flow](images/wpd_overview_new.png)
+![i/o data flow.](images/wpd_overview_new.png)
 
 The sample driver is hosted in the UMDF host process (WUDF in the diagram) and receives commands from the WPD application. The driver exchanges data with the RS 232 port by using a UMDF file-handle I/O target object.
 

@@ -16,7 +16,7 @@ A driver registers a [*CustomDpc*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdef
 
 Just before the driver's ISR returns control, it can call [**KeInsertQueueDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc) to queue the *CustomDpc* routine for execution. The following figure illustrates calls to these routines.
 
-![diagram illustrating using a dpc object for a customdpc routine](images/3cstmdpc.png)
+![diagram illustrating using a dpc object for a customdpc routine.](images/3cstmdpc.png)
 
 As the previous figure shows, a driver that has a *CustomDpc* routine must provide the storage for a DPC object. Because the driver must pass a pointer to the DPC object from its ISR, the storage must be in resident, system-space memory. Most drivers with *CustomDpc* routines provide storage for their DPC objects in the device extension, but the storage can be in a controller extension if the driver uses a [controller object](./introduction-to-controller-objects.md) or in nonpaged pool allocated by the driver.
 

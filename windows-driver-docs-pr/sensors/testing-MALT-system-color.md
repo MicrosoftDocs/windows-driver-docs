@@ -30,7 +30,7 @@ This topic provides instructions on how to test color by using the MALT (Microso
 
 ## MALT sensor placement
 
-![MALT sensor placement](images/placement.png)
+![MALT sensor placement.](images/placement.png)
 
 The following is a list of tips on MALT sensor placement.
 

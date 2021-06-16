@@ -20,7 +20,7 @@ As AV/C devices are added to and removed from the IEEE 1394 bus, the Plug and Pl
 
 The peer driver stack is for subunits on external AV/C devices. In contrast, the virtual driver stack is a separate driver stack that exposes the computer as an AV/C device to other AV/C devices that are connected on the IEEE 1394 bus. The following diagram demonstrates the two different *Avc.sys* stacks.
 
-![diagram illustrating the separate peer-subunit and virtual-subunit stacks](images/avcdiag.gif)
+![diagram illustrating the separate peer-subunit and virtual-subunit stacks.](images/avcdiag.gif)
 
 At the base of the driver stacks are *1394ohci.sys* and *1394bus.sys*. These drivers provide the basic IEEE 1394 bus infrastructure support. There are instances of these drivers for each physical IEEE 1394 adapter in the system.
 

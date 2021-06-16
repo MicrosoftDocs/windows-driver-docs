@@ -50,11 +50,11 @@ Next, the client driver must call [**MbbDeviceSetMbimParameters**](/windows-hard
 
 This message flow diagram illustrates the initialization process.
 
-![MBBCx client driver initialization process](images/mbbcx_initializing.png)
+![MBBCx client driver initialization process.](images/mbbcx_initializing.png)
 
 This message flow diagram illustrates the initialization process.
 
-![MBBCx client driver initialization process](images/mbbcx_initializing.png)
+![MBBCx client driver initialization process.](images/mbbcx_initializing.png)
 
 ## Handling MBIM control messages
 
@@ -67,7 +67,7 @@ MBBCx uses the standard MBIM control commands defined in MBIM specification Rev 
 
 The following diagram illustrates MBBCx-client driver message exchange flow.
 
-![Mbim Message Exchange](images/mbim.png)
+![Mbim Message Exchange.](images/mbim.png)
 
 ### Synchronization of MBIM control messages
 
@@ -96,7 +96,7 @@ In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the 
 
 MBBCx invokes this callback function at least once, so there is always one NETADPATER object for the primary PDP context/default EPS bearer. If multiple PDP contexts/EPS bearers are activated, MBBCx might invoke this callback function more times, once for every data session to be established. There must be a one-to-one relationship between the network interface represented by the NETADAPTER object and a data session, as shown in the following diagram.
 
-![Multiple NetAdapters](images/multi-netadapter.png)
+![Multiple NetAdapters.](images/multi-netadapter.png)
 
 The following example shows how to create a NETADAPTER object for a data session. Note that error handling and code required for setting up adapter capabilities is left out for brevity and clarity.
 
@@ -167,7 +167,7 @@ For a code example of setting datapath capabilities, see [Network data buffer ma
 
 MBBCx guarantees that it calls *EvtMbbDeviceCreateAdapter* before requesting **MBIM_CID_CONNECT** with the same session ID. The following flow diagram shows the interactions between the client driver and the class extension in creating the NETADAPTER object.  
 
-![NETADAPTER creation and activation for an MBB client driver](images/activation.png)
+![NETADAPTER creation and activation for an MBB client driver.](images/activation.png)
 
 The flow for creating the NETADAPTER object for the primary PDP context/default EPS bearer is initiated by MBBCx when [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) has successfully finished.
 

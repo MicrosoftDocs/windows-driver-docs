@@ -93,7 +93,7 @@ The localizable resources in the service metadata package are the operator name 
 
 A single locale service metadata package must have the following file structure:
 
-![a single locale service metadata package structure](images/mb-xmlref-singlelocalesmp.jpg)
+![a single locale service metadata package structure.](images/mb-xmlref-singlelocalesmp.jpg)
 
 Some considerations for a single locale metadata package:
 
@@ -113,7 +113,7 @@ You can use a multiple local service metadata package if you want to show a loca
 
 A multiple locale service metadata package must have the following file structure:
 
-![a multi locale service metadata package structure](images/mb-xmlref-multiplelocalesmp.jpg)
+![a multi locale service metadata package structure.](images/mb-xmlref-multiplelocalesmp.jpg)
 
 Some considerations for a multiple locale metadata package:
 

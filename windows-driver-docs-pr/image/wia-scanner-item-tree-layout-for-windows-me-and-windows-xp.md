@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WIA scanner item tree for Windows XP consists of a root item and a single child item. The following diagram illustrates the WIA scanner item tree.
 
-![diagram illustrating the wia scanner item tree](images/scanner-tree.png)
+![diagram illustrating the wia scanner item tree.](images/scanner-tree.png)
 
 See [How the Application Creates the WIA Device](how-the-application-creates-the-wia-device.md) for an example on how to create an item tree. For additional information, see [Initializing the WIA Minidriver](initializing-the-wia-minidriver.md), **Building and Maintaining an Item Tree** in [WIA driver services library](wia-driver-services-library.md), and [**IWiaMiniDrv::drvInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinitializewia). The root item in a scanner item tree contains information that is present in all WIA minidrivers, as well as scanner-specific properties. The scanner-specific properties include device optics information and document feeder support.
 

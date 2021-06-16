@@ -41,7 +41,7 @@ When evicting an allocation that has virtual address ranges mapped with driver p
 
 The following figure shows VA mapping for an allocation with different driver protection values.
 
-![virtual address mapping for an allocation with different driver protection](images/driver-protection.1.png)
+![virtual address mapping for an allocation with different driver protection.](images/driver-protection.1.png)
 
 During paging operations the allocation will be copied in chunks:
 

@@ -25,7 +25,7 @@ In the *Object Topology View* of the KSStudio Utility, pin factories are located
 
 **Communication Flow and Data Flow** 
 
-![Diagram showing KsStudio Pin Factories ](images/ksstudio-pin-factories.png)
+![Diagram showing KsStudio Pin Factories .](images/ksstudio-pin-factories.png)
 
 ## Pin Instantiation 
 

@@ -48,7 +48,7 @@ Replace the ACPI portions with your implementation for the required bus.
 
 UCSI class extension, UcmUcsiCx, allows you to write a driver that communicates with its embedded controller by using non-ACPI transport. The controller driver is a client driver to UcmUcsiCx. UcmUcsiCx is in turn a client to USB connector manager (UCM). Hence, UcmUcsiCx does not make any policy decisions of its own. Instead, it implements policies provided by UCM. UcmUcsiCx implements state machines for handling Platform Policy Manager (PPM) notifications from the client driver and sends commands to implement UCM policy decisions, allowing for a more reliable problem detection and error handling.
 
-![UCSI class extension architecture](images/ucsicxarch.png)
+![UCSI class extension architecture.](images/ucsicxarch.png)
 
 ## OS Policy Manager (OPM)
 
@@ -90,7 +90,7 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 
 - Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine, and the transport.
 
-    ![Decision for choosing the correct class extension](images/drivers-c.png)
+    ![Decision for choosing the correct class extension.](images/drivers-c.png)
     For more information, see [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md).  
 
 - Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).

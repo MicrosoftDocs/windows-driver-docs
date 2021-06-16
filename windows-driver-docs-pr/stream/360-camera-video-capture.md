@@ -38,7 +38,7 @@ The application may implement and insert an effect to generate a projection. The
 
 The following diagram illustrates the relationship of the DMFT to the 360 camera stack:
 
-![360 camera stack](images/360-camera-stack.png)
+![360 camera stack.](images/360-camera-stack.png)
 
 360 camera IHVs will publish a DMFT that will expose 360 video streams providing spherical frames of a defined format. The DMFT can be installed and associated with the particular camera via the use of INF file for driver extension as described in the example .INF below.
 
@@ -200,12 +200,12 @@ KSCATEGORY_VIDEO_CAMERA="{E5323777-F976-4f5b-9B55-B94699C46E44}"
 
 (1) Unstitched combined frame coming out of USBVdeo.sys:
 
-![Unstitched combined frame](images/unstitched-combined.png)
+![Unstitched combined frame.](images/unstitched-combined.png)
 
 (2) Frame unwarped, stitched and transformed to equirectangular inside a DMFT sent to the application's rendering element for preview, to a video sink or photo sink to be stored to file:
 
-![Frame unwarped, stitched and transformed](images/unwarped-stitched-transformed.png)
+![Frame unwarped, stitched and transformed.](images/unwarped-stitched-transformed.png)
 
 (3) Rendered viewport inside an application using a UI element that applies a spherical projection as well as provide viewport rotation panning and field of view interaction:
 
-![Rendered viewport](images/rendered-viewport.png)
+![Rendered viewport.](images/rendered-viewport.png)

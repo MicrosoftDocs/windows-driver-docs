@@ -32,7 +32,7 @@ The support library is able to do all the work of determining the identifier of 
 
 The following figure shows how the support library determines the filter pin that controls a specific node:
 
-![diagram illustrating how the support library determines the filter pin that controls a specific node](images/bdajoint.png)
+![diagram illustrating how the support library determines the filter pin that controls a specific node.](images/bdajoint.png)
 
  
 

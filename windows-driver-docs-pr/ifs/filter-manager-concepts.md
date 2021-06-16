@@ -21,7 +21,7 @@ A minifilter driver's altitude ensures that the instance of the minifilter drive
 
 The following figure shows a simplified I/O stack with the filter manager and three minifilter drivers.
 
-![diagram illustrating a simplified i/o stack with the filter manager and three minifilter drivers](images/filter-manager-architecture-1.gif)
+![diagram illustrating a simplified i/o stack with the filter manager and three minifilter drivers.](images/filter-manager-architecture-1.gif)
 
 A minifilter driver can filter IRP-based I/O operations as well as fast I/O and file system filter (FSFilter) callback operations. For each of the I/O operations it chooses to filter, a minifilter driver can register a [preoperation callback routine](writing-preoperation-and-postoperation-callback-routines.md), a postoperation callback routine, or both. When handling an I/O operation, the filter manager calls the appropriate callback routine for each minifilter driver that registered for that operation. When that callback routine returns, the filter manager calls the appropriate callback routine for the next minifilter driver that registered for the operation.
 
@@ -40,4 +40,4 @@ If a minifilter driver is unloaded and reloaded, it is reloaded at the same alti
 
 The following figure shows a simplified I/O stack with a two filter manager frames, minifilter driver instances, and a legacy filter driver.
 
-![diagram illustrating a simplified i/o stack with two filter manager frames, minifilter driver instances, and a legacy filter driver](images/filter-manager-architecture-2.gif)
+![diagram illustrating a simplified i/o stack with two filter manager frames, minifilter driver instances, and a legacy filter driver.](images/filter-manager-architecture-2.gif)

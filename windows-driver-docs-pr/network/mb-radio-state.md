@@ -33,13 +33,13 @@ This topic describes the operations that are used to set and read an MB device's
 ## Architecture/Flows
 
 ### Radio Control from WwanSvc to Modem Hardware
-![Radio Control from WwanSvc to modem hardware flowchart](images/airplane-mode-wwansvc-to-modemhw.png)
+![Radio Control from WwanSvc to modem hardware flowchart.](images/airplane-mode-wwansvc-to-modemhw.png)
 
 ### SET Radio via WwanSvc API
-![SET Radio via WwanSvc API flowchart](images/airplane-mode-wwansvcapi-set-radio.png)
+![SET Radio via WwanSvc API flowchart.](images/airplane-mode-wwansvcapi-set-radio.png)
 
 ### Initial Radio State upon Device Arrival
-![Initial Radio State upon device arrival flowchart](images/airplane-mode-arrival-state.png)
+![Initial Radio State upon device arrival flowchart.](images/airplane-mode-arrival-state.png)
 
 ## MBIM_CID_RADIO_STATE
 

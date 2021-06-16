@@ -21,7 +21,7 @@ A UMDF driver can create *callback objects*, which consist of context data and i
 
 The following figure shows how driver-implemented callback objects correspond to [framework objects](framework-objects.md).
 
-![framework objects and vendor-supplied callback objects](images/correspond.gif)
+![framework objects and vendor-supplied callback objects.](images/correspond.gif)
 
 A UMDF driver can create several types of callback objects, including the following:
 
@@ -39,7 +39,7 @@ A UMDF driver can create several types of callback objects, including the follow
 
 The following figure shows how a UMDF driver creates a device callback object.
 
-![call sequence for creating a umdf device callback object](images/callback.gif)
+![call sequence for creating a umdf device callback object.](images/callback.gif)
 
 The following topics contain code examples that show how to create a callback object:
 

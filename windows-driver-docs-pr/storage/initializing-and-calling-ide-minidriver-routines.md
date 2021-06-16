@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 All IDE controller minidrivers must provide a series of standard routines that implement hardware-specific functionality. The following figure illustrates how an IDE controller minidriver makes its routines available to the controller driver. Note that the PciIdeX library, though conceptually separate from the IDE controller driver as illustrated in the figure that follows, is contained within the controller driver's executable file, *pciidex.sys*. When a minidriver calls a PciIdeX library routine, it is in fact calling a routine within the controller driver.
 
-![program flow for minidriver routine initialization](images/idecallbacks.png)
+![program flow for minidriver routine initialization.](images/idecallbacks.png)
 
 1.  The PnP manager loads the IDE controller driver-minidriver, then calls its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, passing it a pointer to the driver object for the controller driver.
 

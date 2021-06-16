@@ -17,7 +17,7 @@ A filter driver can originate OID query or set requests to underlying drivers by
 
 The following figure illustrates an OID request that is originated by a filter driver.
 
-![diagram illustrating an oid request originated by a filter driver](images/filterrequest.png)
+![diagram illustrating an oid request originated by a filter driver.](images/filterrequest.png)
 
 After a filter driver calls the [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) function, NDIS calls the request function of the next underlying driver. For more information about how a miniport driver handles OID requests, see [OID Requests for an Adapter](miniport-adapter-oid-requests.md).
 

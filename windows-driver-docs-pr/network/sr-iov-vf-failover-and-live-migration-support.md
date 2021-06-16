@@ -20,7 +20,7 @@ After the VF data path is established, network traffic can revert to the [synthe
 
 The following figure shows the various data paths that are supported over an SR-IOV network adapter.
 
-![stack diagram showing a sr-iov adapter underneath a management parent partition communicating using a vm bus communicating to child partition \#1 containing a guest operating system communicating using a vm bus, in addition child partition \#2 is communicating using a vf miniport to the sr-iov adapter](images/sriovdatapaths.png)
+![stack diagram showing a sr-iov adapter underneath a management parent partition communicating using a vm bus communicating to child partition \#1 containing a guest operating system communicating using a vm bus, in addition child partition \#2 is communicating using a vf miniport to the sr-iov adapter.](images/sriovdatapaths.png)
 
 The NetVSC exposes a Virtual Machine (VM) network adapter which is bound to the VF miniport driver to support the VF data path. During the transition to the synthetic data path, the VF network adapter is gracefully removed if possible from the guest operating system. If the VF cannot be removed gracefully and times out, it will be surprise removed. Then the VF miniport driver is halted, and the Network Virtual Service Client (NetVSC) is unbound from the VF miniport driver.
 

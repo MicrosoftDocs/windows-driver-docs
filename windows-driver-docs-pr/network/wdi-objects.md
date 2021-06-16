@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The Wi-Fi device is used by the host in the context of two types of objects: adapter and port.
 
-![wdi device model](images/wdi-object-model.png)
+![wdi device model.](images/wdi-object-model.png)
 
 ## Adapter
 

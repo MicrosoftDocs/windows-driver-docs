@@ -17,7 +17,7 @@ The **Trace Tree** pane is organized into a hierarchical structure with a series
 
 The following screen shot shows an example **Trace Tree** pane.
 
-![screen shot of the trace tree pane in the defect viewer](images/sdv-tracetree.png)
+![screen shot of the trace tree pane in the defect viewer.](images/sdv-tracetree.png)
 
 Each code element in the **Trace Tree** pane is preceded by its line number in the source file. This numbering helps you find the code element in the Source Tree window and in the source file.
 

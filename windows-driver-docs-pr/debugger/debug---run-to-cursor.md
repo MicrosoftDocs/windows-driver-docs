@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Run to Cursor** on the **Debug** menu to resume running on the target. If you insert the cursor on an instruction in the [Disassembly window](disassembly-window.md) or a [Source window](source-window.md) and then execute this action, WinDbg executes all instructions from the current instruction up to the instruction you have selected.
 
-This command is equivalent to pressing F7 or CTRL+F10 or clicking the **Run to cursor (Ctrl+F10 or F7)** button (![screen shot of the run to cursor button](images/tbcursor.png)) on the toolbar.
+This command is equivalent to pressing F7 or CTRL+F10 or clicking the **Run to cursor (Ctrl+F10 or F7)** button (![screen shot of the run to cursor button.](images/tbcursor.png)) on the toolbar.
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

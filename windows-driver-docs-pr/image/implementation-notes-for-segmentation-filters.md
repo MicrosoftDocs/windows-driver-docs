@@ -19,7 +19,7 @@ As an example, assume that an application does a preview scan where it sets WIA\
 
 In the following figure, the outer region represents the scanner flatbed. Although the algorithm will find the coordinates of the upper-left corner of the region to be (150, 200), the values that segmentation filter should set into the child item for WIA\_IPS\_XPOS and WIA\_IPS\_YPOS are 350 and 400.
 
-![diagram illustrating a segmentation filter applied to a portion of a platen](images/art-segmentation3.png)
+![diagram illustrating a segmentation filter applied to a portion of a platen.](images/art-segmentation3.png)
 
 If for example, an application will display the regions detected by the segmentation filter visually, it must be aware that the segmentation filter sets the coordinates corresponding to their position in the flatbed. This means that the application must map the flatbed coordinates to the coordinates in the preview image. In most cases, however, an application will perform a preview scan with WIA\_IPS\_XPOS = WIA\_IPS\_YPOS = 0 and no rotation ([**WIA\_IPS\_ROTATION**](./wia-ips-rotation.md) = PORTRAIT). If this is the case, there is a direct mapping between the coordinates on the flatbed and those in the preview image.
 

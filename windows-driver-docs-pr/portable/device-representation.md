@@ -15,7 +15,7 @@ Devices have two main behaviors that are addressed by the WPD architecture:
 
 In WPD, these behaviors are described by representing the device as a hierarchy of objects. The following picture shows a WPD object representation for a multifunction device, in this case, a mobile phone.
 
-![wpd hierarchy](images/wpd_overview_figure3.png)
+![wpd hierarchy.](images/wpd_overview_figure3.png)
 
 This hierarchy illustrates the following functionality and contents.
 

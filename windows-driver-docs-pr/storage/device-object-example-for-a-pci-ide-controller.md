@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following figure shows the device objects that are created for a system using a PCI IDE controller that has two IDE disks attached to one channel and an IDE CD-ROM attached to the other.
 
-![Device objects that are created for a system using a PCI IDE controller that has two IDE disks attached to one channel and an IDE CD-ROM attached to the other](images/kg201-4.png)
+![Device objects that are created for a system using a PCI IDE controller that has two IDE disks attached to one channel and an IDE CD-ROM attached to the other.](images/kg201-4.png)
 
 Device Object Tree for CD-ROM and Disk Devices on an IDE controller
 

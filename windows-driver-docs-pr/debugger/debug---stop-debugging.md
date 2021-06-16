@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Stop Debugging** on the **Debug** menu to stop the target's execution and end the target process and all its threads. This action enables you to start to debug a different target application.
 
-This command is equivalent to pressing SHIFT+F5 or clicking the **Stop debugging (Shift+F5)** button (![screen shot of the stop debugging button](images/tbstop.png)) on the toolbar.
+This command is equivalent to pressing SHIFT+F5 or clicking the **Stop debugging (Shift+F5)** button (![screen shot of the stop debugging button.](images/tbstop.png)) on the toolbar.
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

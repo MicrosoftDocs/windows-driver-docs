@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Drivers that perform DMA use three different address spaces, as shown in the following figure.
 
-![physical, logical, and virtual address mappings](images/3addrspc.png)
+![physical, logical, and virtual address mappings.](images/3addrspc.png)
 
 On any Windows platform, a driver has access to the full virtual address space supported by the processor. On a 32-bit processor, the virtual address space represents four gigabytes. The CPU translates addresses in the virtual address space to addresses in the system's physical address space by using a page table. Each page table entry (PTE) maps one page of virtual memory to a page of physical memory, resulting in a paging operation when necessary. An MDL (memory descriptor list) provides a similar mapping for a buffer associated with driver DMA operations.
 
@@ -30,7 +30,7 @@ Each adapter object is associated with one or more map registers, depending on t
 
 The following figure illustrates such a physical-to-logical address mapping for the driver of an ISA DMA device that does not have scatter/gather capabilities.
 
-![address mapping for a sample isa dma device](images/3dmapreg.png)
+![address mapping for a sample isa dma device.](images/3dmapreg.png)
 
 The previous figure shows the following types of mappings:
 

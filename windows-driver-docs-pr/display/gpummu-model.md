@@ -26,7 +26,7 @@ Access to an invalid range of GPU virtual addresses results in an access violati
 
 The *GpuMmu* model is illustrated below:
 
-![gpummu model](images/gpummu-model.1.png)
+![gpummu model.](images/gpummu-model.1.png)
 
  
 

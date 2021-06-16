@@ -12,7 +12,7 @@ The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode cod
 
 To get started with Windows debugging, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
 
-## ![Small windbg preview logo](images/windbgx-preview-logo.png) Download WinDbg Preview
+## ![Small windbg preview logo.](images/windbgx-preview-logo.png) Download WinDbg Preview
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, and a full-fledged scripting experience. It is built with the extensible object-orientated debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows still work as they did before.
 
@@ -20,7 +20,7 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
  - Learn more about installation and configuration in [WinDbg Preview - Installation](./windbg-install-preview.md).
 
-## ![Small classic windbg preview logo](images/windbg-classic-logo.png) Debugging Tools for Windows 10 (WinDbg)
+## ![Small classic windbg preview logo.](images/windbg-classic-logo.png) Debugging Tools for Windows 10 (WinDbg)
 
 Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). Use the download link on the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) page, as the Debugging Tools for Windows are not available as part of Visual Studio.
 
@@ -28,7 +28,7 @@ If you just need the Debugging Tools for Windows, and not the Windows Driver Kit
 
 In the SDK installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
 
-![sdk download options showing just the debugger box checked](images/debugger-download-sdk.png)
+![sdk download options showing just the debugger box checked.](images/debugger-download-sdk.png)
 
 ### Adding the Debugging Tools for Windows if the SDK is already installed
 

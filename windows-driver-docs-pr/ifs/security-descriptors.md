@@ -37,7 +37,7 @@ A Windows security descriptor consists of four distinct pieces:
 
 The following figure illustrates a windows security descriptor.
 
-![diagram illustrating a windows security descriptor](images/fssecurity-01.png)
+![diagram illustrating a windows security descriptor.](images/fssecurity-01.png)
 
 Security descriptors are variable-sized objects, with each of the individual sub-components being variable in size as well. To facilitate offline storage of security descriptors, a security descriptor may be in self-relative format, in which case the header is the offset within the buffer to the specific component of the security descriptor. An in-memory format consists of pointer values to the various parts of the security descriptor. For a file system, the self-relative format is normally the most useful because it allows for simple storage and retrieval of the security descriptor from persistent storage. Applications that build security descriptors are more likely to use the in-memory format. The security reference monitor provides conversion routines to convert from one format to the other.
 

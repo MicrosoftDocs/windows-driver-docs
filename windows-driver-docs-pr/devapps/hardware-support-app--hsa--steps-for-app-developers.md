@@ -93,11 +93,11 @@ Next, modify your [app package manifest](/uwp/schemas/appxpackage/appx-package-m
 
 Then copy the SCCD file to the package root of the appx package. In Visual Studio's solution explorer, right-click on "project-&gt; Add -&gt; Existing Item…" to add the SCCD to your project.
 
-![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
+![Adding an SCCD file into the appx package.](images/addSCCDToAppx.png)
 
 Mark the SCCD as build content by right clicking on the SCCD file and changing **Content** to **True**.  For a C# project, use the property `Build Action = Content`, and for a JavaScript project, use `Package Action = Content`.
 
-![Marking SCCD as content](images/markSCCDAsContent.png)
+![Marking SCCD as content.](images/markSCCDAsContent.png)
 
 Finally, right-click the project, select **Store**, then **Create App Packages**.
 

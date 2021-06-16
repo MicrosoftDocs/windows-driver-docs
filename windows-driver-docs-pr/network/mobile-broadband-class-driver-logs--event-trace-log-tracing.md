@@ -22,19 +22,19 @@ The following procedure describes how to review Event Trace Logs (ETL):
 1.  Open EventViewer by clicking **Start** &gt; **Run** &gt; **EventVwr**.
 2.  In the left pane, navigate to **Applications and Services Logs** &gt; **Microsoft** &gt; **Windows**.
 
-    ![screenshot showing the steps to navigate to the windows folder](images/mbcdlogs1.png)
+    ![screenshot showing the steps to navigate to the windows folder.](images/mbcdlogs1.png)
 
 3.  Navigate further under **Windows** to **wmbclass.**
 
-    ![opening wmbclass folder, showing windows mobile broadband class driver channel](images/mbcdlogs2.png)
+    ![opening wmbclass folder, showing windows mobile broadband class driver channel.](images/mbcdlogs2.png)
 
 4.  Right-click **Windows Mobile Broadband Class Driver Channel** and click **Enable Log**. If you see **Disable Log**, the log is already enabled.
 
-    ![screenshot of context menu showing enable log and refresh options](images/mbcdlogs3.png)
+    ![screenshot of context menu showing enable log and refresh options.](images/mbcdlogs3.png)
 
 5.  Reproduce the issue and press **Refresh**. After **Refresh**, the logs appear in the central pane.
 
-    ![screenshot of log, where event is selected in upper pane. lower pane shows general tab, with description, and details tab, not selected](images/mbcdlogs4.png)
+    ![screenshot of log, where event is selected in upper pane. lower pane shows general tab, with description, and details tab, not selected.](images/mbcdlogs4.png)
 
 6.  You can filter the logs using the **Actions Pane** on the right.
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates the sequence of NCI operations executed by NFC CX for starting discovery. The StateRfDiscovery entered from StateRfIdle triggers the start RF discovery sequence. The main set of operations performed in this state is configuration of RF discovery parameters, optional configuration for listen mode routing table, and enabling discovery through the RF discover NCI command. An NFC client driver can use SequencePreRfDiscStart to add non-standard NCI commands to optimize the discovery process.
 
-![A sequence diagram depicting the NCI operations executed by NFC CX for starting discovery](images/staterfdiscoverysequence.png)
+![A sequence diagram depicting the NCI operations executed by NFC CX for starting discovery.](images/staterfdiscoverysequence.png)
 
  
 

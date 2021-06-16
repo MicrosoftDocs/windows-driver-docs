@@ -25,7 +25,7 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
 3. The following screen shot shows a tag entered as text on the System Registry tab.
 
-   ![screen shot of a tag entered as text on the system registry tab](images/gflags-specialpool-text.png)
+   ![screen shot of a tag entered as text on the system registry tab.](images/gflags-specialpool-text.png)
 
 4. Click **Apply**.
 
@@ -33,7 +33,7 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
    The following illustration shows the effect of clicking **Apply**.
 
-   ![screen shot that shows the effect of clicking apply](images/gflags-specialpool-hex.png)
+   ![screen shot that shows the effect of clicking apply.](images/gflags-specialpool-hex.png)
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Remarks
 

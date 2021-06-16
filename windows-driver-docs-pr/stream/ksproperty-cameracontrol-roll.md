@@ -58,7 +58,7 @@ The property value (operation data) is a LONG that specifies a camera's roll set
 
 Positive values cause a clockwise rotation of the camera along the image-viewing axis. Negative values cause a counterclockwise rotation of the camera, as shown in the following illustration.
 
-![illustration showing camera roll values](images/cam-roll-1.png)
+![illustration showing camera roll values.](images/cam-roll-1.png)
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must be -180 through +180 and the default value must be 0.
 

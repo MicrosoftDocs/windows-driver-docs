@@ -17,7 +17,7 @@ The following figure illustrates a driver object, with the set of system-defined
 
 Each standard routine with an asterisk beside its name receives an I/O request packet (IRP) as input. Each of these standard routines also receives a pointer to the target device object for the I/O request.
 
-![diagram illustrating a driver object](images/24drvobj.png)
+![diagram illustrating a driver object.](images/24drvobj.png)
 
 The I/O manager defines the driver object type and uses driver objects to register and track information about the loaded images of drivers. Note that the dispatch entry points (**DDDispatch***Xxx* through **DDDispatch***Yyy*) in the driver object correspond to the major function codes (**IRP\_MJ\_*XXX***) that are passed in the I/O stack locations of IRPs.
 

@@ -27,7 +27,7 @@ After you develop and test your product, you can submit the results with a hardw
 
 The Drivers summary page contains a list of all hardware certification submissions that you have created or are shared with you. You can create a new hardware submission by selecting the **Create new driver** button.
 
-![screenshot that shows the drivers summary page](images/drivers-summary-page.png)
+![screenshot that shows the drivers summary page.](images/drivers-summary-page.png)
 
 The hardware certification submission list displays the following information about each submission:
 
@@ -95,7 +95,7 @@ The search box allows you to search for a specific submission or set of submissi
 
 A hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
-![screenshot that shows a hardware submission page](images/hardware-submission-page.png)
+![screenshot that shows a hardware submission page.](images/hardware-submission-page.png)
 
 The left side of the page contains a list of the 10 most recently viewed submissions.
 

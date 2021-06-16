@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Click **Paste** on the **Edit** menu to paste text from the clipboard to the current cursor location.
 
-This command is equivalent to pressing CTRL+V or SHIFT+INSERT or clicking the **Paste (Ctrl+V)** button (![screen shot of the paste button](images/tbpaste.png)) on the toolbar.
+This command is equivalent to pressing CTRL+V or SHIFT+INSERT or clicking the **Paste (Ctrl+V)** button (![screen shot of the paste button.](images/tbpaste.png)) on the toolbar.
 
 You can use the **Paste** command only with docked or tabbed windows. But you can use the shortcut keys and the toolbar button with any window that supports this feature.
 

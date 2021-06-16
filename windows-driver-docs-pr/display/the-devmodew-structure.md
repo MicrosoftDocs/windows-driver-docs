@@ -19,7 +19,7 @@ The [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure is th
 
 Immediately following a DEVMODEW structure's defined members (often referred to as its public DEVMODEW members), there can be a set of driver-defined members (its private DEVMODEW members). The following figure shows the public section (the actual DEVMODEW structure itself) and the private section.
 
-![diagram illustrating the public and private sections of the devmodew structure](images/devmode.png)
+![diagram illustrating the public and private sections of the devmodew structure.](images/devmode.png)
 
 Normally, the private members are used only by printer drivers. The driver supplies the size, in bytes, of this private area in the **dmDriverExtra** member. Driver-defined private members are for exclusive use by the driver.
 

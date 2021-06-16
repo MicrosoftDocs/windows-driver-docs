@@ -31,7 +31,7 @@ The driver sets the **Flags** member of the [**DXGK\_SEGMENTDESCRIPTOR**](/windo
 
 The following figure shows a visual representation of a linear memory-space segment.
 
-![diagram illustrating a linear memory-space segment](images/memspac.png)
+![diagram illustrating a linear memory-space segment.](images/memspac.png)
 
  
 

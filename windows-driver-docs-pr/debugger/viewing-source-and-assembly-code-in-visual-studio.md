@@ -17,7 +17,7 @@ To use source debugging, you must have your compiler or linker create symbol fil
 
 When you break in to the target computer, or when code running on the target computer hits a breakpoint, Visual Studio displays source code if it can find the source file. You can step through the source code by choosing one of the **Step** commands from the **Debug** menu. You can also set breakpoints by clicking in the left column of the source window. The following screen shot shows a source code window in the Visual Studio debugger.
 
-![screen shot of source code in the visual studio debugger](images/sourcecodedebuggingvs01.png)
+![screen shot of source code in the visual studio debugger.](images/sourcecodedebuggingvs01.png)
 
  
 

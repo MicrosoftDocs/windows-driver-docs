@@ -24,13 +24,13 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 2.  On the Sharks Cove board, locate the debug connector. This is the micro USB connector shown in the following picture.
 
-    ![picture that shows debug connector on sharks cove board](images/sharkscovedebugconnector.png)
+    ![picture that shows debug connector on sharks cove board.](images/sharkscovedebugconnector.png)
 
 3.  Use a USB 2.0 cable to connect the host computer to the debug connector on the Sharks cove board.
 
 4.  On the host computer, in Device Manager, two COM ports will get enumerated. Select the lowest numbered COM port. On the **View** menu, choose **Devices by Connection**. Verify that the COM port is listed under one of the USB host controllers.
 
-    ![screen show that shows com ports in device manager](images/serialoverusb01.png)
+    ![screen show that shows com ports in device manager.](images/serialoverusb01.png)
 
     Make a note of the COM port number. This is the lowest COM port number that shows under the USB host controller node. For example, in the preceding screen shot, the lowest COM port number under the USB host controller is COM3. You will need this COM port number later when you start a debugging session. If the driver is not already installed for the COM port, right click the COM port node, and choose **Update Driver**. Then select **Search automatically for updated driver software**. You will need an internet connection for this.
 
@@ -43,7 +43,7 @@ In these steps, the Sharks Cove board is the target computer.
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **Serial**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters](images/setupserialoverusbvs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters.](images/setupserialoverusbvs.png)
 
     For **Baud Rate**, enter 115200. For **Port**, enter the name of the COM port that you noted previously in Device Manager (for example, com3). For **Target Port**, enter com1.
 
