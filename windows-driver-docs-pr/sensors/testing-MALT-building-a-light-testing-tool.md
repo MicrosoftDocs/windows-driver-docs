@@ -86,7 +86,7 @@ Through the MALT PCB, we are able to connect the Arduino board to the sensor PCB
 
 Refer to [Getting Started with MALT](testing-MALT-getting-started.md) for instructions on configuring MALT firmware and calibrating the color sensors.
 
-### Step 4 - Start testing
+### Step 5 - Start testing
 
 Refer to [Testing System Brightness and Color](testing-MALT-system-brightness-and-color.md) for details on testing your SUT with the MALT.
 
@@ -100,5 +100,4 @@ Refer to [Testing System Brightness and Color](testing-MALT-system-brightness-an
 
 ### Custom Tests
 
-Refer to the  
-[microcontroller commands](testing-MALT-microcontroller-commands.md) api for using the MALT for creating custom tests.
+Refer to the [microcontroller commands](testing-MALT-microcontroller-commands.md) api for using the MALT for creating custom tests.
