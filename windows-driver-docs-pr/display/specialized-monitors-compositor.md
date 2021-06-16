@@ -34,7 +34,7 @@ It’s worth calling out what Windows.Devices.Display.Core is *not*:
 
 This API is for compositor apps driving specialized hardware only.
 
-![API architectural layers](images/specialized-displays-layers.png)
+![API architectural layers.](images/specialized-displays-layers.png)
 
 ## Scenarios for building custom compositors
 
@@ -96,13 +96,13 @@ Implementing a custom compositor can be broken into several stages:
 
 The Windows.Devices.Display.Core API has various objects for representing physical hardware objects. A **DisplayAdapter** is typically (but not always) a physical hardware device, such as a PCI Express-connected GPU or an integrated GPU on a CPU. **DisplayTarget** objects represent the physical connectors (e.g. HDMI, VGA, DisplayPort, etc.) that can be connected to from the GPU. This may include internal non-user-visible connections for devices with internal monitors (laptops, tablets, etc.). There may be more **DisplayTarget** objects represented in software than a user can physically connect at one time. For example, since the DisplayPort connection standard allows daisy-chaining, GPU drivers typically enumerate several DisplayPort targets per physical port in order to account for chained monitors.
 
-![Hardware topology illustration](images/specialized-displays-hardware.png)
+![Hardware topology illustration.](images/specialized-displays-hardware.png)
 
 ### Objects for setting modes
 
 For enumerating **DisplayTarget** objects, setting and querying modes, etc. connections to **DisplayTarget** objects are represented with **DisplayPath** objects. Groups of paths displaying the same content (clone groups) are represented by **DisplayView**, and these are aggregated into a **DisplayState**. One **DisplayState** object can therefore represents a complete set of mode state that can be sent to drivers for multiple monitors.
 
-![Mode topology illustration](images/specialized-displays-state-objects.png)
+![Mode topology illustration.](images/specialized-displays-state-objects.png)
 
 ### Atomic state for mode configuration and enumeration
 

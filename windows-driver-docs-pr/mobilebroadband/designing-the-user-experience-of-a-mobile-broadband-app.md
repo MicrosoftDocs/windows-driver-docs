@@ -46,7 +46,7 @@ The mobile broadband app should include the following key scenarios:
 
 The following shows how different pages in the app can be organized:
 
-![overview](images/mb-fig1-overview-uwp-device-app.png)
+![overview.](images/mb-fig1-overview-uwp-device-app.png)
 
 -   The app has an account overview landing page that provides a summary of a customer’s account and data usage. It also contains links to other app pages.
 

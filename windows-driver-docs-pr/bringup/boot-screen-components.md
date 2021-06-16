@@ -60,7 +60,7 @@ The update text in the firmware update boot screen is a simple string that is de
 
 During the call into UpdateCapsule the bootloader will pass all firmware update capsules. In addition it will also pass in a Microsoft-defined *firmware update display* capsule that contains a bitmap of the text which is displayed and the location of the bitmap on the screen. The system firmware’s UpdateCapsule method must persist the capsule so that any time the screen is cleared or modified it can re-display the bitmap on the screen.
 
-![firmware update boot screen components](images/firmwareupdatebootscreencomponents.png)
+![firmware update boot screen components.](images/firmwareupdatebootscreencomponents.png)
 
 ## Windows firmware update display capsule
 

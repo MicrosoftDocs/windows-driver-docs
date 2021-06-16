@@ -96,7 +96,7 @@ A SET_CUR request is issued by host after setting all fields.
 
 The following table maps the control selectors for Microsoft-XU to their respective values and the bit position for the *bmControls* field in Extension Unit Descriptor:
 
-![Extension unit controls](images/uvc-1-15-01.png)
+![Extension unit controls.](images/uvc-1-15-01.png)
 
 ##### 2.2.2.1 Cancelable Asynchronous Controls
 
@@ -112,7 +112,7 @@ The Control Change interrupt payload shall have the bit **bmOperationFlags:D0** 
 
 This control allows the host software to specify the focus settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-![Focus control](images/uvc-1-15-02.png)
+![Focus control.](images/uvc-1-15-02.png)
 
 This control shall function as a Cancelable Asynchronous Control (see section 2.2.2.1 for GET_INFO request requirements and functional behavior of SET_CUR request).
 
@@ -136,7 +136,7 @@ D2 is incompatible with D16, D17, D18, D19 and D20 if D0 is not set.
 
 This control allows the host software to specify the exposure settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-![Exposure control](images/uvc-1-15-03.png)
+![Exposure control.](images/uvc-1-15-03.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -154,7 +154,7 @@ For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmCon
 
 This control allows the host software to specify the EV compensation settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-![EV compensation control](images/uvc-1-15-04.png)
+![EV compensation control.](images/uvc-1-15-04.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -168,7 +168,7 @@ GET_DEF, GET_CUR, SET_CUR requests shall follow the definitions in section 2.2.2
 
 This control allows the host software to specify the white balance settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-![White balance control](images/uvc-1-15-05.png)
+![White balance control.](images/uvc-1-15-05.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -188,7 +188,7 @@ For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmCon
 
 This control allows the host software to specify the ISO film speed settings for still image capture on the camera. This control is only applicable to the specified video/still endpoints (which is a subset of all video/still endpoints on all video streaming interfaces associated with the video control interface). If Method 1 for still capture is used, this control should be supported on the video endpoint. If Method 2 or Method 3 for still capture is used, this control should be supported on the still endpoint.
 
-![ISO control](images/uvc-1-15-06.png)
+![ISO control.](images/uvc-1-15-06.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -200,7 +200,7 @@ This control allows the host software to specify whether the camera supports str
 
 This control is only applicable to cameras that can produce Infra-Red (IR) data and is only applicable to the specified video endpoints (which is a subset of all video endpoints on all video streaming interfaces associated with the video control interface).
 
-![Face authentication control](images/uvc-1-15-07.png)
+![Face authentication control.](images/uvc-1-15-07.png)
 
 GET_RES and GET_MIN requests shall report field **bNumEntries** set to 0 and hence have no additional fields.
 
@@ -212,7 +212,7 @@ For GET_DEF / GET_CUR / SET_CUR requests, a bit set to 1 indicates that the corr
 
 This control allows the host software to obtain the camera extrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_CameraExtrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
 
-![Camera extrinsics control](images/uvc-1-15-08.png)
+![Camera extrinsics control.](images/uvc-1-15-08.png)
 
 GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** set to 0 and hence have no additional fields.
 
@@ -222,7 +222,7 @@ GET_DEF request shall list all endpoints that have the extrinsics information av
 
 This control allows the host software to obtain the camera intrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_PinholeCameraIntrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
 
-![Camera intrinsics control](images/uvc-1-15-09.png)
+![Camera intrinsics control.](images/uvc-1-15-09.png)
 
 GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** set to 0 and hence have no additional fields.
 
@@ -232,7 +232,7 @@ GET_DEF request shall list all endpoints that have the intrinsics information av
 
 This control allows the host software to query and control metadata produced by the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface. This control gets mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA**](ksproperty-cameracontrol-extended-metadata.md) by the camera driver.
 
-![Metadata Control](images/uvc-1-15-metadata-control.png)
+![Metadata Control.](images/uvc-1-15-metadata-control.png)
 
 If SET_CUR request is supported by the firmware, the following applies:
 
@@ -252,7 +252,7 @@ The metadata produced shall conform to the Microsoft standard-format metadata de
 
 This control provides a flexible means for the IR LED hardware to report the extent to which it can be controlled and provides the ability to control it.  This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface by adjusting the power to an IR lamp connected to the camera. This control gets mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE**](ksproperty-cameracontrol-extended-irtorchmode.md) by the camera driver.
 
-![IR Torch Control](images/uvc-1-15-irtorch-control.png)
+![IR Torch Control.](images/uvc-1-15-irtorch-control.png)
 
 The following applies:
 
@@ -283,7 +283,7 @@ This registry key will be read by DevProxy and informs the UVC driver that the m
 
 The Microsoft standard-format metadata is one or more instances of the following structure:
 
-![Standard format metadata](images/extension-standard-format-metadata.png)
+![Standard format metadata.](images/extension-standard-format-metadata.png)
 
 ```cpp
 typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
@@ -318,7 +318,7 @@ During a transfer over UVC for frame based video, the video frame is packetized 
 
 The following is a description of the payload header format for Frame Based formats.
 
-![Payload header](images/uvc-1-15-10.png)
+![Payload header.](images/uvc-1-15-10.png)
 
 **HLE (Header length) field**
 
@@ -370,13 +370,13 @@ The HLE field in the existing UVC driver is fixed to either 2 bytes (no PTS/SCR 
 
 The standard-format metadata (generated by firmware) for a frame is obtained by concatenating the partial blobs found in the video frame packets representing that frame.
 
-![Metadata frame packets](images/extension-metadata-frame-packets.png)
+![Metadata frame packets.](images/extension-metadata-frame-packets.png)
 
 ##### 2.2.3.3 Metadata buffer provided to user-mode component
 
 The metadata buffer provided to the user mode component would have a metadata item for the UVC timestamps (generated by UVC driver) followed by firmware-generated metadata items and they are laid out as follows:
 
-![Metadata buffer](images/extension-metadata-buffer.png)
+![Metadata buffer.](images/extension-metadata-buffer.png)
 
 ##### 2.2.3.4 Metadata format for standard metadata identifiers
 

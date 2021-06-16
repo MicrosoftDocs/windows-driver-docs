@@ -117,7 +117,7 @@ where NUMBER\_OF\_PACKETS is the number of packets to be transmitted (including 
 
 The third member of the header element structure, **HeaderData**, is merely a place holder that indicates where the header data begins. The following diagram illustrates an example of an assembled buffer of 8-byte CIP headers.
 
-![diagram illustrating a buffer of 8-byte cip headers](images/hdrelem.png)
+![diagram illustrating a buffer of 8-byte cip headers.](images/hdrelem.png)
 
 All headers in a given descriptor must be of the same length. This allows the OHCI port driver (*ohci1394.sys*) to parse the header descriptor like an array of fixed-size elements. Data packets can vary in size, but must be contiguous, with no "holes."
 

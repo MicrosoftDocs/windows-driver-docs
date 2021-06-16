@@ -117,4 +117,4 @@ CommandList::Destroy()
 
 The following state diagram shows the validity of an immediate-context DDI command-list handle. The green state represents a handle that can be used with [**CommandListExecute**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_commandlistexecute).
 
-![diagram illustrating a command-list handle validity state](images/d3d11ddi2.png)
+![diagram illustrating a command-list handle validity state.](images/d3d11ddi2.png)

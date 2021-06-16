@@ -173,7 +173,7 @@ After the device is recognized by the USB driver stack, the bus driver creates a
 
 This illustration shows the device stack for the template driver, MyUSBDriver\_.sys.
 
-![device stack for temnplate driver](images/usb-device-stack.png)
+![device stack for temnplate driver.](images/usb-device-stack.png)
 
 Notice the device stack named "My USB Device". The USB driver stack creates the PDO for the device stack. In the example, the PDO is associated with Usbhub3.sys, which is one of the drivers included with the USB driver stack. As the function driver for the device, the client driver must first create the FDO for the device and then attach it to the top of the device stack.
 

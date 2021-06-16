@@ -46,15 +46,15 @@ Select the file path for the project to open it. In this case, the submission is
 
 Let’s say you want to create a submission package from scratch. In the HLK, select **Add Driver Folder**.
 
-![Screenshot of a button, "Add Driver Folder," in the HLK UI](images/adddriverfolder.png)
+![Screenshot of a button, "Add Driver Folder," in the HLK UI.](images/adddriverfolder.png)
 
 Now is you first chance to make declarations about the OS versions that are supported for your submission. In this case, the submission has been tested for Windows 10 x64 and earlier versions of Windows.
 
-![In Driver Properties, on the PRoducts tab, a screenshot of several versions of the OS selected, Windows v10.0 x64, Windows 7 client x64, Windows 7 client x32, and others](images/osqualifications.png)
+![In Driver Properties, on the PRoducts tab, a screenshot of several versions of the OS selected, Windows v10.0 x64, Windows 7 client x64, Windows 7 client x32, and others.](images/osqualifications.png)
 
 You also need to make declarations for locales. For example, depending on the design and architecture of your driver, you may choose to display different strings in different locales. In that case, you might actually have different compiled binaries for different locales. So for one device, you might have a hundred different drivers; one for each locale.
 
-![In Driver Properties, on the Locales tab, many languages are selects, as well as the selection, "Locale"](images/locales.png)
+![In Driver Properties, on the Locales tab, many languages are selects, as well as the selection, "Locale."](images/locales.png)
 
 To add symbols, select and hold (or right-click) the driver folder.
 
@@ -62,7 +62,7 @@ To add symbols, select and hold (or right-click) the driver folder.
 
 Select **Add Supplemental Folder** to submit other files that are important to the submission but are not actually part of the submission itself. You can add any content you want to the package. This is a way for you to get other items to the Dashboard that are important for the submission, such as a readme file for a driver submission.
 
-![Portion of a screenshot showing a partial filepath under Supplemental Folder](images/addsupplementalfolder.png)
+![Portion of a screenshot showing a partial filepath under Supplemental Folder.](images/addsupplementalfolder.png)
 
 When you are ready, select **Create Package**.
 
@@ -70,13 +70,13 @@ When you are ready, select **Create Package**.
 
 The next step is to specify a certificate that you will you use to sign the package – this is the first of the two code signing operations that were covered at the start of this topic. You can select **Use a certificate file** to specify a certificate that is stored on something like a USB drive, or select **Use the certificate store** to specify a certificate that has been imported into the certificate store of the local computer.
 
-![Dialog box with three options: 1) Do not sign, 2) Use the certificate store, and 3) Use a certificate file](images/usecertstore.png)
+![Dialog box with three options: 1) Do not sign, 2) Use the certificate store, and 3) Use a certificate file.](images/usecertstore.png)
 
 After you select **OK**, you name the package and it gets created and signed (assuming you have a certificate installed on the computer you are using for the submission), and you’ll get back a friendly success message.
 
 And the package has a green check under **Signability**:
 
-![UI showing a green check mark in the Signability column of the Package tab of the HLK](images/signability.png)
+![UI showing a green check mark in the Signability column of the Package tab of the HLK.](images/signability.png)
 
 The next steps occur in the Partner Center dashboard. Sign in and follow the instructions in [Create a new hardware submission](create-a-new-hardware-submission.md) to upload your HLK package.
 
@@ -94,7 +94,7 @@ Inside the submission folder will be the package files. These files are signed b
 
 In the past, Microsoft only signed the .cat file. Starting with Windows 10, Microsoft now signs all of the portable executables in the returned payload. For example, the .dll file is also signed by Microsoft:
 
-![View of a folder, showing thirteen files, several of which have an icon indicating they have been signed](images/filessignedbymicrosoft.png)
+![View of a folder, showing thirteen files, several of which have an icon indicating they have been signed.](images/filessignedbymicrosoft.png)
 
 ## How to validate the Microsoft signature
 
@@ -109,11 +109,11 @@ You can validate the Microsoft signature by checking the Enhanced Key Usages (EK
 
 On the certificate **Details** tab, select **Enhanced Key Usage**. There you will see the EKUs and corresponding OID values for the certificate. In this case, the **Windows Hardware Driver Verification OID** ends with a 5, which means the driver has not been signed by attestation:
 
-![Screenshot of the Certificate dialog, the Enhanced Key Usage showing the value, "Windows Hardware Driver Verification (1.3.6.1.4.1.311.10.3.5)" ](images/certified.png)
+![Screenshot of the Certificate dialog, the Enhanced Key Usage showing the value, "Windows Hardware Driver Verification (1.3.6.1.4.1.311.10.3.5)" .](images/certified.png)
 
 If the driver had been signed by attestation, then the OID would end with a 1:
 
-![Screenshot of the Certificate dialog, the Enhanced Key Usage showing the value, "Windows Hardware Driver Verification (1.3.6.1.4.1.311.10.3.1)"](images/attested.png)
+![Screenshot of the Certificate dialog, the Enhanced Key Usage showing the value, "Windows Hardware Driver Verification (1.3.6.1.4.1.311.10.3.1)".](images/attested.png)
 
 ## Related topics
 

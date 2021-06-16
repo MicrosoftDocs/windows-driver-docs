@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Any driver that uses an event object must call [**KeInitializeEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeevent), [**IoCreateNotificationEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatenotificationevent), or [**IoCreateSynchronizationEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatesynchronizationevent) before it waits on, sets, clears, or resets the event. The following figure illustrates how a driver with a thread can use an event object for synchronization.
 
-![diagram illustrating waiting for an event object](images/3evntobj.png)
+![diagram illustrating waiting for an event object.](images/3evntobj.png)
 
 As the previous figure shows, such a driver must provide the storage for the event object, which must be resident. The driver can use the [device extension](device-extensions.md) of a driver-created device object, the controller extension if it uses a [controller object](./introduction-to-controller-objects.md), or nonpaged pool allocated by the driver.
 

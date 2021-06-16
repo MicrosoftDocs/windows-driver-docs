@@ -25,7 +25,7 @@ Introduced in 1978, the ISO Open Systems Interconnection (OSI) Reference model d
 
 The following diagram illustrates the OSI model.
 
-![diagram illustrating the osi reference model](images/101osi.png)
+![diagram illustrating the osi reference model.](images/101osi.png)
 
 Microsoft Windows network drivers implement the bottom four layers of the OSI model.
 

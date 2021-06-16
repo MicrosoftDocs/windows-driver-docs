@@ -48,7 +48,7 @@ Separating these two interfaces complies with the underlying hardware configurat
 
 The following diagram shows an ATA miniport driver that only implements the controller interface.
 
-![vendor miniport driver that implements the controller interface](images/ataport1.png)
+![vendor miniport driver that implements the controller interface.](images/ataport1.png)
 
 After the ATA miniport driver initializes the controller interface, the port driver calls miniport driver routines to configure certain characteristics of the controller, but the ATA miniport driver does not handle device or controller I/O. All I/O requests are handled by the ATA port driver and the default channel miniport driver.
 
@@ -56,7 +56,7 @@ In most cases, you do not have to implement this kind of vendor minidriver. The 
 
 The following diagram shows a configuration in which the vendor-supplied miniport driver functions both as the channel driver and the controller driver.
 
-![vendor miniport driver that implements both the controller and the channel interfaces](images/ataport2.png)
+![vendor miniport driver that implements both the controller and the channel interfaces.](images/ataport2.png)
 
 An ATA miniport driver that implements the channel interface exposes controller and channel management routines to the controller driver (*Pciidex.sys*). For performance reasons, *Pciidex.sys* passes the channel management entry points to the ATA port driver, and the ATA port driver calls the ATA miniport driver's channel management routines directly without the mediation of *Pciidex.sys*. The *Pciidex.sys* driver calls the ATA miniport driver's controller routines.
 

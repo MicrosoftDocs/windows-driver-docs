@@ -23,7 +23,7 @@ Scenarios 7 and 8 describe subunit source or destination plugs that have the **K
 
 **Input select**: The local unit connects from any available (0x7F) isochronous output plug on the target unit to any available (0x7F) isochronous input plug on the local unit and then connects to a specific (0x0 to 0x1E) or any available (0xFF) subunit destination plug on the local unit.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in](images/avc-ccm7.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in.](images/avc-ccm7.gif)
 
 Scenario 7 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
@@ -91,7 +91,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 
 **Input select**: The target unit connects from local unit's isochronous output plug (returned in signal source CCM command) to any available (0x7F) isochronous input plug on the target unit.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out](images/avc-ccm8.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out.](images/avc-ccm8.gif)
 
 Scenario 8 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_OUT.
 

@@ -45,19 +45,19 @@ The calculation of the fog blending factor **f** is based on z and the three fog
 
     Linear fog growth.
 
-![calculation for linear fog growth](images/d3dfig10.png)
+![calculation for linear fog growth.](images/d3dfig10.png)
 
 -   D3DFOGMODE\_EXP
 
     Exponential fog growth.
 
-![calculation for exponential fog growth](images/d3dfig11.png)
+![calculation for exponential fog growth.](images/d3dfig11.png)
 
 -   D3DFOGMODE\_EXP2
 
     Exponential squared fog growth.
 
-![calculation for exponential squared fog growth](images/d3dfig12.png)
+![calculation for exponential squared fog growth.](images/d3dfig12.png)
 
 Typically, exponential and exponential squared fog are too expensive to do directly. Instead, look-up tables are precalculated for a number of z values in the interval \[0.0, 1.0\] using the current fog density. The nearest table entry can then be used for the current z value, or an interpolating value between the two surrounding z values can be used to get the appropriate fog factor.
 

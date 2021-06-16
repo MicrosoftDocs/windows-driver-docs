@@ -14,11 +14,11 @@ Extensions can be provisioned with policies that apply to packet traffic over an
 
 The following figure shows the components of the extensible switch interface for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram illustrating hyper\-v extensible switch architecture for ndis 6.40 and later](images/vswitcharchitecture-ndis640.png)
+![diagram illustrating hyper\-v extensible switch architecture for ndis 6.40 and later.](images/vswitcharchitecture-ndis640.png)
 
 The following figure shows the components of the extensible switch interface for NDIS 6.30 (Windows Server 2012).
 
-![diagram illustrating the synthetic device data paths with sr-iov](images/vswitcharchitecture.png)
+![diagram illustrating the synthetic device data paths with sr-iov.](images/vswitcharchitecture.png)
 
 This section includes the following topics that describe the extensible switch components:
 

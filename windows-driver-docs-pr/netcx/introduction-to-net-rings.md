@@ -18,7 +18,7 @@ For more information about packet descriptors, see [Packet descriptors and exten
 
 Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, the **NET_RING_COLLECTION**, groups the packet ring and fragment ring together for a given packet queue as shown in the following diagram.
 
-![multi-ring layout](images/multi-ring.png) 
+![multi-ring layout.](images/multi-ring.png) 
 
 Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
 

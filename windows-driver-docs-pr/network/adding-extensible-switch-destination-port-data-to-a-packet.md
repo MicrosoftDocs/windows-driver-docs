@@ -16,11 +16,11 @@ This topic describes how Hyper-V extensible switch forwarding extensions can spe
 
 The following figure shows the data path for packet traffic through the extensible switch driver stack for NDIS 6.40 (Windows Server 2012 R2) and later. Both figures also show the data path for packet traffic to or from the network adapters that are connected to extensible switch ports.
 
-![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports updated for ndis 6.40](images/vswitchteam2-ndis640.png)
+![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports updated for ndis 6.40.](images/vswitchteam2-ndis640.png)
 
 The following figure shows the data path for packet traffic through the extensible switch driver stack for NDIS 6.30 (Windows Server 2012).
 
-![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports](images/vswitchteam2.png)
+![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports.](images/vswitchteam2.png)
 
 Each extensible switch destination port is specified by an [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) element within the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array) structure. This array is contained in the out-of-band (OOB) forwarding context of the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. For more information on this context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
 

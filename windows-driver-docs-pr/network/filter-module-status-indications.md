@@ -20,7 +20,7 @@ Filter drivers can supply a [*FilterStatus*](/windows-hardware/drivers/ddi/ndis/
 
 The following figure illustrates a filtered status indication.
 
-![diagram illustrating a filtered status indication](images/statusfilter.png)
+![diagram illustrating a filtered status indication.](images/statusfilter.png)
 
 NDIS calls a filter driver's [*FilterStatus*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status) function, after an underlying driver calls a status indication function ([**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) or [**NdisFIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus)). For more information about how to indicate status from a miniport driver, see [Adapter Status Indications](miniport-adapter-status-indications.md).
 

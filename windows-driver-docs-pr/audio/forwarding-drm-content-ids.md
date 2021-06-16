@@ -26,7 +26,7 @@ The [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk_system_driver)
 
 Before allowing the unscrambled content to enter the data path, DRMK verifies that the data path is secure. To do so, DRMK authenticates each module in the data path, beginning with the module at the upstream end of the data path and moving downstream to the other end of the data path. The following figure illustrates this process.
 
-![diagram illustrating a secure data path](images/securepath.png)
+![diagram illustrating a secure data path.](images/securepath.png)
 
 In the preceding figure, the solid arrows represent the data path, and the dashed arrows represent the communications necessary to verify that the data path is secure. The unscrambled data enters the path only after DRMK has finished authenticating all of the modules in that path.
 
@@ -36,7 +36,7 @@ Beginning at the upstream end of the secure data path, DRMK forwards the content
 
 The following figure shows a pair of adjacent modules in the data path.
 
-![diagram illustrating forwarding a content id](images/forwardid.png)
+![diagram illustrating forwarding a content id.](images/forwardid.png)
 
 The module on the upstream side calls one of the following [DRM functions](./drm-functions.md) to provide DRMK with information about the downstream module and to forward the content ID to that module:
 

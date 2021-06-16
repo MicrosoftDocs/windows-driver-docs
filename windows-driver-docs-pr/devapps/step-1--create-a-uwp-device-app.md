@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Step 1: Create a UWP device app
 
 
-![device app workflow, step 1](images/1-device-app-workflow.png)
+![device app workflow, step 1.](images/1-device-app-workflow.png)
 
 This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
 

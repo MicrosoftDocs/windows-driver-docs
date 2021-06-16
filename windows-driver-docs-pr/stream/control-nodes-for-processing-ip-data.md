@@ -33,7 +33,7 @@ The following sequence and figure describe the data flow for IP data that is par
 
  
 
-![diagram illustrating ip data flow](images/ipdata.png)
+![diagram illustrating ip data flow.](images/ipdata.png)
 
  
 

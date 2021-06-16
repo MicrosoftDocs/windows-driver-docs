@@ -64,7 +64,7 @@ If you develop your own audio device driver and INF file to work with your audio
 
         When the AudioEndpointBuilder discovers this bridge pin, it traces a path back to only one of the host pins, sets the default values for the bridge pin, creates and activates a Speaker endpoint, and continues to discover other bridge pins. Thus, the other host pin remains hidden from the AudioEndpointBuilder.
 
-        ![recommended topology with traceable paths between host pins and endpoints](images/hidden-endpoint-good.png)
+        ![recommended topology with traceable paths between host pins and endpoints.](images/hidden-endpoint-good.png)
 
         In the preceding diagram, the problematic topology has been redesigned so that the AudioEndpointBuilder can discover the two host pins (PCM and AC-3/ PCM) because it can now see two bridge pins (Speaker and SPDIF).
 
@@ -72,13 +72,13 @@ If you develop your own audio device driver and INF file to work with your audio
 
         Another type of suboptimal topology is created when one host pin connects to more than one bridge pin. The following diagram shows a topology in which a PCM host pin connects to a Speaker bridge pin and a SPDIF bridge pin.
 
-        ![problematic topology showing two endpoints connected to one host pin with single PCM](images/splitter-bad.png)
+        ![problematic topology showing two endpoints connected to one host pin with single PCM.](images/splitter-bad.png)
 
         In this case the AudioEndpointBuilder discovers one bridge pin and traces a path back to the PCM host pin, sets default values, and then creates and activates a Speaker endpoint. When the AudioEndpointBuilder discovers the next bridge pin, it traces a path back to the same PCM host pin, sets default values, and then creates and activates a SPDIF endpoint. However, although both endpoints have been initialized and activated, streaming to one of them makes it impossible to stream to the other at the same time; in other words, they are mutually exclusive endpoints.
 
         The following diagram shows a redesign of this topology in which separate connections exist. This design makes it possible for the AudioEndpointBuilder to trace a path back to the PCM host pin for each of the two bridge pins.
 
-        ![diagram illustrating recommended topology with traceable paths between host pins and endpoints with two PCMs on left side](images/splitter-good.png)
+        ![diagram illustrating recommended topology with traceable paths between host pins and endpoints with two PCMs on left side.](images/splitter-good.png)
 
 -   Endpoint format. When the audio engine is running in shared mode, the format for the endpoint assumes a specific setting as directed by the INF file at the time of installation. For example, the audio driver for an audio device uses its associated INF file to set the default endpoint to a 44.1-kHz, 16-bit, stereo PCM format. After installation, you must use Control Panel or a third-party application to change the endpoint format.
 

@@ -207,7 +207,7 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### D0 to Dx (armed to wake)
 
-![wdi d0 to dx armed transition](images/wdi-d0-to-dx-armed-to-wake.png)
+![wdi d0 to dx armed transition.](images/wdi-d0-to-dx-armed-to-wake.png)
 
 -   Stop \[DnIO|UpIO\]: DnIO are messages (controls and data) to lower layer. UpIO are messages to upper layer.
 
@@ -221,13 +221,13 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### Dx (armed to wake) to D0 transition
 
-![dx armed to d0 transition](images/wdi-dx-to-d0-armed-to-wake.png)
+![dx armed to d0 transition.](images/wdi-dx-to-d0-armed-to-wake.png)
 
 -   If the NIC is armed to wake, it can't be D3Cold. Firmware must continue running in Dx.
 
 ### D0 to D3 (not armed to wake) transition
 
-![d0 to d3 not armed transition](images/wdi-d0-to-d3-not-armed.png)
+![d0 to d3 not armed transition.](images/wdi-d0-to-d3-not-armed.png)
 
 -   Stop \[DnIO|UpIO\]: DnIO are messages (controls and data) to lower layer. UpIO are messages to upper layer.
 
@@ -241,7 +241,7 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### Dx (not armed to wake) to D0 transition
 
-![dx not armed to d0 transition](images/wdi-dx-to-d0-not-armed.png)
+![dx not armed to d0 transition.](images/wdi-dx-to-d0-not-armed.png)
 
 -   D2 notArmToWake: Kept power, no reinitialization required.
 -   D3 notArmtoWake: Might be Hot or Cold. Cold requires that context be restored.

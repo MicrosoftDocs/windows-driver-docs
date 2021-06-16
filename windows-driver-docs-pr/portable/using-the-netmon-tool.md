@@ -84,7 +84,7 @@ The following image shows a WPDAPI request at API level. The request travels thr
 - If you select a WPDMTP Response line in the **Frame Summary** window, the corresponding item expands in the **Frame Details** window.
 - Select the "+"s in the **Frame Details** window to expand further and explore. If an MTP operation has a dataphase, the dataset received from the device is available under the **DataSetOfDataPhase** field of a WPDMTP Response item.
 
-![viewing traces](images/framedetails1.png)
+![viewing traces.](images/framedetails1.png)
 
 - You can select to expand the items and see that the **Frame Details** window displays WPD/MTP friendly messages. The convention followed when writing the WPD parsers is that you will be able to see summary of the details at the header level. For example, in a GetServiceCapabilities call, the **DataSetOfDataPhase** field shows next to it, the number of formats in that dataset.
 - You can remove the **Source** and **Destination** columns in the **Frame Summary** window to improve clarity

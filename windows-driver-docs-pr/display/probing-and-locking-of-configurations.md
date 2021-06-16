@@ -35,7 +35,7 @@ To ensure that all DirectX VA software decoders can operate with all DirectX VA 
 
 The following figure shows the control flow of probing and locking commands sent by the decoder.
 
-![flowchart illustrating probing and locking to set driver configuration](images/probe-lock.png)
+![flowchart illustrating probing and locking to set driver configuration.](images/probe-lock.png)
 
  
 

@@ -20,7 +20,7 @@ A driver can register a [*CustomTimerDpc*](https://msdn.microsoft.com/library/wi
 
 Subsequently, the driver can call [**KeSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) or [**KeSetTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) to specify an expiration time and to add the timer object to the system's timer queue. When the expiration time is reached, the system dequeues the timer object and calls the *CustomTimerDpc* routine. The following figure illustrates these calls.
 
-![diagram illustrating using timer and dpc objects for a customtimerdpc routine](images/3ketmdpc.png)
+![diagram illustrating using timer and dpc objects for a customtimerdpc routine.](images/3ketmdpc.png)
 
 As the previous figure shows, the driver must supply storage for both a DPC object and a timer object. Most drivers provide the storage for these objects in a [device extension](device-extensions.md) or in other driver-allocated, resident memory.
 

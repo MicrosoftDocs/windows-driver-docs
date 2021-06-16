@@ -39,7 +39,7 @@ This topic describes the architecture of the framework, the virtual HID device t
 
 In this image, the device tree shows the drivers and their associated device objects.
 
-![virtual hid device tree](images/vhf.png)
+![virtual hid device tree.](images/vhf.png)
 
 **HID source driver (your driver)**
 

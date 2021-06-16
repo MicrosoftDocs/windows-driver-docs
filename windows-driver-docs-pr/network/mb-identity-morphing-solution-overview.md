@@ -127,7 +127,7 @@ Not-Configured -&gt; Windows-7-Configuration
 
 Windows-7-Configuration -&gt; IHV–NCM-1.0-Configuration
 
-![configuration transition paths for windows 7 and windows 8](images/mbim7.png)
+![configuration transition paths for windows 7 and windows 8.](images/mbim7.png)
 
 The configuration transition paths for Windows 7 and Windows 8
 
@@ -138,7 +138,7 @@ Note that any transition not shown previously is not supported.
 
 Consider a sample USB morphing device with the following functions in its configurations.
 
-![usb morphing device with 4 different configurations and their functions](images/mbim8.png)
+![usb morphing device with 4 different configurations and their functions.](images/mbim8.png)
 
 USB device with multiple functions
 

@@ -45,7 +45,7 @@ The instructions in this document are based on the following assumptions:
 
 5.  The following dialog box appears while installing the test drivers:
 
-    ![windows security dialog](images/fig9-winsec.png)
+    ![windows security dialog.](images/fig9-winsec.png)
 
     Check **Always trust software from “Microsoft Corporation”** to prevent the dialog box from appearing when the tests are running.
 

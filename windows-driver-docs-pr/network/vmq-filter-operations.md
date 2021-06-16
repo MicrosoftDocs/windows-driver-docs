@@ -15,7 +15,7 @@ Multiple receive filters and can be set on a receive queue. Also, the current VM
 
 The following illustration shows the relationship between the VLAN identifier and MAC address tests, filters, and queues.
 
-![diagram illustrating the relationship between vlan identifier and mac address tests, filters, and queues](images/vmqfilter.png)
+![diagram illustrating the relationship between vlan identifier and mac address tests, filters, and queues.](images/vmqfilter.png)
 
 In the preceding illustration, the network data packet includes a destination address (DA) and VLAN identifier field. The network adapter hardware implements the filters on the queue based on the settings that the miniport driver received and set in the network adapter hardware. For more information about setting filters on a receive queue, see [Setting and Clearing VMQ Filters](setting-and-clearing-vmq-filters.md).
 

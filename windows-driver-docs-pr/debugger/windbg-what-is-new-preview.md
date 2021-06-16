@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - What's New
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
@@ -24,7 +24,7 @@ Example:
 
 When selecting `0x000001e2fb3f6160`, all other instances are highlighted no matter the format.
 
-![Image showing six or so examples of numbers being highlighted based on one number being selected](images\windbgx-command-highlighting.png)
+![Image showing six or so examples of numbers being highlighted based on one number being selected.](images\windbgx-command-highlighting.png)
 
 This feature works with semi-temporary highlights as well. Ctrl + Double Click on a number to highlight all its instances. You can keep track of multiple important numbers throughout your command history this way (to clear the highlight, Ctrl + Double Click on the number again). Finally, this feature also works when searching numbers with Ctrl + F.
 
@@ -83,15 +83,15 @@ Bookmark important Time Travel positions in WinDbg instead of manually copy past
 
 You can provide a descriptive name for bookmarks.
 
-![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+![New bookmark dialog with example name for first api call in display greeting app.](images/windbgx-timeline-bookmark-new.png)
 
 Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
 
-![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+![Timeline showing three bookmarks hovering over one showing bookmark name.](images/windbgx-timeline-bookmarks.png)
 
 You can select and hold (or right-click) the bookmark to travel to that position, rename or delete the bookmark.
 
-![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
+![Bookmark right click popup menu showing travel to position edit and remove.](images/windbgx-timeline-bookmark-edit.png)
 
 **Modules Window**
 
@@ -103,7 +103,7 @@ It displays:
 - The base address that the module is loaded at
 - The file version
 
-![Modules view window showing five modules listed](images/windbgx-view-modules.png)
+![Modules view window showing five modules listed.](images/windbgx-view-modules.png)
 
 
 **Thread names/descriptions available in live debugging**

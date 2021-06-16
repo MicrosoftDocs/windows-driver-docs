@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 
 When the remote client closes a call, the local call manager or MCM driver must indicate this incoming request to the local client. To indicate such a request, a call manager calls [**NdisCmDispatchIncomingCloseCall**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmdispatchincomingclosecall) with the *CloseStatus* set to NDIS\_STATUS\_SUCCESS (see the following figure).
 
-![diagram illustrating an incoming request through a call manager to close a call ](images/cm-22.png)
+![diagram illustrating an incoming request through a call manager to close a call .](images/cm-22.png)
 
 An MCM driver calls [**NdisMCmDispatchIncomingCloseCall**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmdispatchincomingclosecall) to indicate an incoming request to close a call (see the following figure).
 
-![diagram illustrating an incoming request through an mcm driver to close a call ](images/fig1-22.png)
+![diagram illustrating an incoming request through an mcm driver to close a call .](images/fig1-22.png)
 
 A call manager or MCM driver also can call **Ndis(M)CmDispatchIncomingCloseCall**:
 

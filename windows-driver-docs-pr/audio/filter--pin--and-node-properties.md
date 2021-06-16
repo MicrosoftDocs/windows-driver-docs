@@ -45,7 +45,7 @@ Whether a node-property request specifies a filter or pin handle depends on whet
 
 The following figure shows these three kinds of property request: a pin-property request sent to a pin instance, a node-property request sent to a node (on a filter or pin instance), and a filter-property request sent to a filter instance.
 
-![diagram illustrating filter-, pin-, and node-property requests](images/propreqs.png)
+![diagram illustrating filter-, pin-, and node-property requests.](images/propreqs.png)
 
 Typically, the port driver handles most requests for filter and pin properties, and the miniport driver handles requests for node properties.
 

@@ -34,7 +34,7 @@ If FrameCount is 0, the driver must reject the per-frame settings payload. If It
 
 The figure below illustrates the data structure layout of a per frame settings payload configuration. In the example below, a per-frame settings for four frames are configured with frame 0 containing three items, two without payload and one with a Value payload; frame 1 containing two items, one without payload and the other with a value payload; frame 2 containing 0 item which implies the global settings for frame 2; frame 3 containing four items, one with a value payload, two each with a custom item and a custom data payload, and one without payload.
 
-![structure of the perframesetting\-header](images/oem-perframesettings-header-payload-datastructure.png)
+![structure of the perframesetting\-header.](images/oem-perframesettings-header-payload-datastructure.png)
 
 1.  **Size in per-frame settings header** represents the total payload size to be filled in **KSCAMERA\_PERFRAMESETTING\_HEADER.Size**
 

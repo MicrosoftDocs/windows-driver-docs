@@ -16,7 +16,7 @@ Deploying a firmware update using a firmware driver package follows a relatively
 
 The following diagram shows this process in greater detail.
 
-![system and device firmware update process](images/systemanddevicefirmwareupdateprocess.png)
+![system and device firmware update process.](images/systemanddevicefirmwareupdateprocess.png)
 
 This process assumes that the UEFI firmware update payload has already been developed, tested, and signed.
 

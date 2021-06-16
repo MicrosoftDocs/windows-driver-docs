@@ -26,7 +26,7 @@ Secure Key Injection provides support for the encrypted transfer of sensitive ma
 
 The following diagram shows a server application that generates a key and then securely transfers the key across a trust boundary to the client. After the key is received, the client imports it to the smart card. As the final step, the key is imported into the CA for archival. An encrypted channel should exist between the server application and the smart card, and the client application/minidriver should be unable to access the encrypted data.
 
-![overview of server-client interaction during a secure key injection with smart cards](images/seckeyinj.png)
+![overview of server-client interaction during a secure key injection with smart cards.](images/seckeyinj.png)
 
 To encrypt the key in step 2, the server and the smart card require a shared symmetric key.
 
@@ -34,7 +34,7 @@ To accommodate existing cards that use a proprietary format when they perform se
 
 The next diagram provides an overview of server/client key archival with minidrivers.
 
-![overview of server/client key archival with minidrivers](images/seckeyarch.png)
+![overview of server/client key archival with minidrivers.](images/seckeyarch.png)
 
 ## <span id="Card_Key_Handle"></span><span id="card_key_handle"></span><span id="CARD_KEY_HANDLE"></span>Card Key Handle
 
@@ -74,7 +74,7 @@ In this example scenario, a client application requests that a certificate be is
 
 The user key is generated on the server-side, archived and then injected into the user’s smart card by using Secure Key Injection functions. The following figure illustrates the process.
 
-![process for key generation and insertion](images/skiusecase.png)
+![process for key generation and insertion.](images/skiusecase.png)
 
 This scenario is based on importing a symmetric session key that is encrypted with an asymmetric key, and then using this symmetric key for subsequent key wrapping.
 

@@ -28,7 +28,7 @@ Three video component channels (Y, Cb, Cr) are decoded using interfaces defined 
 
 The following figure shows how video data buffering is implemented in the host and accelerator.
 
-![diagram illustrating video data buffering in host and accelerator systems](images/hostaccsys.png)
+![diagram illustrating video data buffering in host and accelerator systems.](images/hostaccsys.png)
 
  
 

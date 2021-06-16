@@ -28,7 +28,7 @@ The following are the only valid places where a header-data split provider can s
 
 The following figure shows the major parts of the Ethernet frame and the valid split locations.
 
-![diagram illustrating the format of the 802.11 mpdu frame encrypted through the wep algorithm](images/hdsplitframe.png)
+![diagram illustrating the format of the 802.11 mpdu frame encrypted through the wep algorithm.](images/hdsplitframe.png)
 
  
 

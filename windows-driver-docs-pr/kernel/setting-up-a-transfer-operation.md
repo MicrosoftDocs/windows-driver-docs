@@ -22,7 +22,7 @@ When [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallo
 
 The driver can then set up the adapter for the transfer operation. The following figure shows the steps involved in setting up the transfer.
 
-![diagram illustrating setting up a transfer operation](images/3dmabus.png)
+![diagram illustrating setting up a transfer operation.](images/3dmabus.png)
 
 As the previous figure shows, a driver's *AdapterControl* routine sets up a bus-master DMA operation as follows:
 

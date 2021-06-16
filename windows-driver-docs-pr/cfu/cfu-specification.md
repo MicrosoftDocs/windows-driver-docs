@@ -278,7 +278,7 @@ The multi-component device is visible to the operating system as single unit. Th
 
 On a PC, there might be many different devices (where a device may have one or more components in there). In the context of this protocol, the communication to each device is independent. Each device has a corresponding instance of the host.  
 
-![Device Firmware, Primary Component and its Sub-components](images/primary-component.png)
+![Device Firmware, Primary Component and its Sub-components.](images/primary-component.png)
 
 ## 3 Protocol Prerequisites
 
@@ -318,7 +318,7 @@ To support cases where a device update order has dependencies, the device may no
 
 Here is the CFU command sequence for updating firmware image.
 
-![Firmware Update Programming Command Sequence](images/firmware-update-command-sequence.png)
+![Firmware Update Programming Command Sequence.](images/firmware-update-command-sequence.png)
 
 #### 4.1.1 State: Host Initialized Notification
 
@@ -420,13 +420,13 @@ The component responds with the firmware version of the primary component and th
 
 ###### Table 5.1-1 GET_FIRMWARE_VERSION Response Layout
 
-![GET_FIRMWARE_VERSION Response Layout](images/get-firmware-version-response-layout.png)
+![GET_FIRMWARE_VERSION Response Layout.](images/get-firmware-version-response-layout.png)
 
 ##### 5.1.2.1 Header
 
 ###### Table 5.1-2 GET_FIRMWARE_VERSION Response -  Header Layout
 
-![GET_FIRMWARE_VERSION Response - Header Layout](images/get-firmware-version-response-header-layout.png)
+![GET_FIRMWARE_VERSION Response - Header Layout.](images/get-firmware-version-response-header-layout.png)
 
 The header for the response provides the following information.
 
@@ -446,7 +446,7 @@ For each component, two DWORDs are used to describe the properties of the compon
 
 ###### Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Layout
 
-![GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](images/get-firmware-version-response-component-version-and-properties-layout.png)
+![GET_FIRMWARE_VERSION Response - Component Version and Properties Layout.](images/get-firmware-version-response-component-version-and-properties-layout.png)
 
 Each component specific information is described in two DWORDs as follows:
 
@@ -477,13 +477,13 @@ The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
 
 ###### Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout
 
-![FIRMWARE_UPDATE_OFFER Command Layout](images/firmware-update-offer-command-layout.png)
+![FIRMWARE_UPDATE_OFFER Command Layout.](images/firmware-update-offer-command-layout.png)
 
 ##### 5.2.1.1 Component Information
 
 ###### Table 5.2-2 FIRMWARE_UPDATE_OFFER Command - Component Information Layout
 
-![FIRMWARE_UPDATE_OFFER Command - Component Information Layout](images/firmware-update-offer-command-component-information-layout.png)
+![FIRMWARE_UPDATE_OFFER Command - Component Information Layout.](images/firmware-update-offer-command-component-information-layout.png)
 
 The bits of the Component Information byte are described in this table.
 
@@ -504,7 +504,7 @@ These four bytes represent the 32-bit version of the firmware. The format for th
 
 ###### Table 5.2-4 FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout
 
-![FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout](images/firmware-update-offer-command-firmware-version-layout.png)
+![FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout.](images/firmware-update-offer-command-firmware-version-layout.png)
 
 The format for the firmware version is not mandated by this specification, however following is a recommended guideline.
 
@@ -526,7 +526,7 @@ These four bytes may be used to encode any custom information in the offer that 
 
 ###### Table 5.2-6 FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout
 
-![FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout](images/firmware-update-offer-command-vendor-specific-layout.png)
+![FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout.](images/firmware-update-offer-command-vendor-specific-layout.png)
 
 The bits of the Vendor Specific byte are described in this table.
 
@@ -545,13 +545,13 @@ The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 
 ###### Table 5.2-8 FIRMWARE_UPDATE_OFFER Response Token Layout
 
-![FIRMWARE_UPDATE_OFFER Response Token Layout](images/firmware-update-offer-response-token-layout.png)
+![FIRMWARE_UPDATE_OFFER Response Token Layout.](images/firmware-update-offer-response-token-layout.png)
 
 ##### 5.2.2.1 Token
 
 ###### Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout
 
-![FIRMWARE_UPDATE_OFFER Response - Token Layout](images/firmware-update-offer-response-token-layout2.png)
+![FIRMWARE_UPDATE_OFFER Response - Token Layout.](images/firmware-update-offer-response-token-layout2.png)
 
 The bits of the Token byte are described in this table.
 
@@ -572,7 +572,7 @@ Reserved. Do not use.
 
 ###### Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout
 
-![FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout](images/firmware-update-offer-response-reject-reason-layout.png)
+![FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout.](images/firmware-update-offer-response-reject-reason-layout.png)
 
 ###### Table 5.2-12 FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits
 
@@ -600,7 +600,7 @@ The possible values for the RR Code byte are described in this table.
 
 ###### Table 5.2-14 FIRMWARE_UPDATE_OFFER Response Status Layout
 
-![FIRMWARE_UPDATE_OFFER Response Status Layout](images/firmware-update-offer-response-status-layout.png)
+![FIRMWARE_UPDATE_OFFER Response Status Layout.](images/firmware-update-offer-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
@@ -638,13 +638,13 @@ The FIRMWARE\_UPDATE\_OFFER -Information Command packet is defined as follows:
 
 ###### Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout
 
-![FIRMWARE_UPDATE_OFFER - Information Command Layout](images/firmware-update-offer-information-command-layout.png)
+![FIRMWARE_UPDATE_OFFER - Information Command Layout.](images/firmware-update-offer-information-command-layout.png)
 
 ##### 5.3.1.1 Component
 
 ###### Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command - Component Layout
 
-![FIRMWARE_UPDATE_OFFER - Information Command - Component Layout](images/firmware-update-offer-information-command-component-layout.png)
+![FIRMWARE_UPDATE_OFFER - Information Command - Component Layout.](images/firmware-update-offer-information-command-component-layout.png)
 
 The bits of the Component byte are described in this table.
 
@@ -683,13 +683,13 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Information Response packet reply is defined
 
 ###### Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout
 
-![FIRMWARE_UPDATE_OFFER - Information Response Layout](images/firmware-update-offer-information-response-layout.png)
+![FIRMWARE_UPDATE_OFFER - Information Response Layout.](images/firmware-update-offer-information-response-layout.png)
 
 ##### 5.3.2.1 Token
 
 ###### Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout
 
-![FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout](images/firmware-update-offer-information-packet-response-token-layout.png)
+![FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout.](images/firmware-update-offer-information-packet-response-token-layout.png)
 
 The bits of the Token byte are described in this table.
 
@@ -710,7 +710,7 @@ Reserved. Do not use.
 
 ###### Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout
 
-![FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout](images/firmware-update-offer-information-response-rr-code-layout.png)
+![FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout.](images/firmware-update-offer-information-response-rr-code-layout.png)
 
 The bits of the Reject Reason byte are described in this table.
 
@@ -738,7 +738,7 @@ The possible values for the RR Code byte are described in this table.
 
 ###### Table 5.3-11 FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout
 
-![FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout](images/firmware-update-offer-offer-information-response-status-layout.png)
+![FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout.](images/firmware-update-offer-offer-information-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
@@ -759,13 +759,13 @@ If the Component ID in the Component Information bytes is set to 0xFE, the four 
 
 ###### Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout
 
-![FIRMWARE_UPDATE_OFFER - Extended Command Layout](images/firmware-update-offer-extended-command-layout.png)
+![FIRMWARE_UPDATE_OFFER - Extended Command Layout.](images/firmware-update-offer-extended-command-layout.png)
 
 ##### 5.4.1.1 Component
 
 ###### Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout
 
-![FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout](images/firmware-update-offer-extended-command-packet-command-component-layout.png)
+![FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout.](images/firmware-update-offer-extended-command-packet-command-component-layout.png)
 
 The bits of the Component byte are described in this table.
 
@@ -803,13 +803,13 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be 
 
 ###### Table 5.4-5 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout
 
-![FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout](images/firmware-update-offer-extended-command-packet-response-layout.png)
+![FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout.](images/firmware-update-offer-extended-command-packet-response-layout.png)
 
 ##### 5.4.2.1 Token
 
 ###### Table 5.4-6 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout
 
-![FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout](images/firmware-update-offer-offer-command-packet-response-token-layout.png)
+![FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout.](images/firmware-update-offer-offer-command-packet-response-token-layout.png)
 
 The bits of the Token byte are described in this table.
 
@@ -830,7 +830,7 @@ Reserved. Do not use.
 
 ###### Table 5.4-8 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout
 
-![FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](images/firmware-update-offer-offer-information-packet-response-rr-layout.png)
+![FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout.](images/firmware-update-offer-offer-information-packet-response-rr-layout.png)
 
 The bits of the Reject Reason byte are described in this table.
 
@@ -858,7 +858,7 @@ The possible values for the RR Code byte are described in this table.
 
 ###### Table 5.4-11 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout
 
-![FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](images/firmware-update-offer-offer-command-packet-response-status-layout.png)
+![FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout.](images/firmware-update-offer-offer-command-packet-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
@@ -881,13 +881,13 @@ When the primary component receives the last block, the component validates the 
 
 ###### Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout
 
-![FIRMWARE_UPDATE_CONTENT Command Layout](images/firmware-update-content-command-layout.png)
+![FIRMWARE_UPDATE_CONTENT Command Layout.](images/firmware-update-content-command-layout.png)
 
 ##### 5.5.1.1 Header (B7 - B0)
 
 ###### Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout
 
-![FIRMWARE_UPDATE_CONTENT Command Header Layout](images/firmware-update-content-command-header-layout.png)
+![FIRMWARE_UPDATE_CONTENT Command Header Layout.](images/firmware-update-content-command-header-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
 
@@ -913,7 +913,7 @@ The possible values for the Flags byte are described in this table.
 
 ###### Table 5.5-5 FIRMWARE_UPDATE_CONTENT Command Data Layout
 
-![FIRMWARE_UPDATE_CONTENT Command Data Layout](images/firmware-update-content-command-data-layout.png)
+![FIRMWARE_UPDATE_CONTENT Command Data Layout.](images/firmware-update-content-command-data-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 
@@ -927,13 +927,13 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 
 ###### Table 5.5-7 FIRMWARE_UPDATE_CONTENT Command Response Layout
 
-![FIRMWARE_UPDATE_CONTENT Command Response Layout](images/firmware-update-content-command-response-layout.png)
+![FIRMWARE_UPDATE_CONTENT Command Response Layout.](images/firmware-update-content-command-response-layout.png)
 
 ##### 5.5.2.1 Sequence Number
 
 ###### Table 5.5-8 FIRMWARE_UPDATE_CONTENT Response - Sequence Number
 
-![FIRMWARE_UPDATE_CONTENT Response - Sequence Number](images/firmware-update-content-response-sequence-number.png)
+![FIRMWARE_UPDATE_CONTENT Response - Sequence Number.](images/firmware-update-content-response-sequence-number.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this table.
 
@@ -948,7 +948,7 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this t
 
 ###### Table 5.5-10 FIRMWARE_UPDATE_CONTENT Response Status Layout
 
-![FIRMWARE_UPDATE_CONTENT Response Status Layout](images/firmware-update-content-response-status-layout.png)
+![FIRMWARE_UPDATE_CONTENT Response Status Layout.](images/firmware-update-content-response-status-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this table.
 

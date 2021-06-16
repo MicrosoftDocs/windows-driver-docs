@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The compatibility layer makes it possible for a Windows Vista application to call **IWiaTransfer::Download** (described in the Microsoft Windows SDK documentation) on a legacy driver. The compatibility layer has to implement folder-transfer code as well as format conversions. The compatibility layer implements special code for feeder transfers to ensure that it is always possible to transfer multiple pages from a legacy driver. A Windows Vista application should always be able to request multiple pages during a scan from the feeder item, even with a TYMED\_FILE transfer. The following diagram illustrates a legacy driver with a Windows Vista application.
 
-![diagram illustrating data transfer between a windows vista application and a legacy driver](images/vistaapp-legacydrv.png)
+![diagram illustrating data transfer between a windows vista application and a legacy driver.](images/vistaapp-legacydrv.png)
 
 The legacy callback object within the WIA service converts legacy transfer messages and data into Windows Vista transfer messages and writes data into provided stream.
 

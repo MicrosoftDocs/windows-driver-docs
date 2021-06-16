@@ -22,7 +22,7 @@ If a device supports VBI capture, it typically exposes two additional pins: VPVB
 
 The following diagram shows the separate paths for VPVBI and VBI capture.
 
-![diagram illustrating the separate paths for vpvbi and vbi capture](images/video-port-capture.gif)
+![diagram illustrating the separate paths for vpvbi and vbi capture.](images/video-port-capture.gif)
 
 Property sets that are specific to this type of filter graph are [KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig](./kspropsetid-vpconfig-and-kspropsetid-vpvbiconfig.md) and [PROPSETID\_ALLOCATOR\_CONTROL](./propsetid-allocator-control.md).
 

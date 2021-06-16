@@ -34,7 +34,7 @@ To enable security audit policy to capture load failures in the audit logs, foll
 
 The following screen shot shows an how to use Auditpol to enable security auditing.
 
-![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing](images/driver-signing-enable-auditpol.png)
+![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing.](images/driver-signing-enable-auditpol.png)
 
 ### <a href="" id="how-to-enable-verbose-logging-of-code-integrity-diagnostic-events"></a> How to Enable Verbose Logging of Code Integrity Diagnostic Events
 

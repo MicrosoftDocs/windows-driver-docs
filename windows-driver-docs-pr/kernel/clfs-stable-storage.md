@@ -16,7 +16,7 @@ When you write a record to a Common Log File System (CLFS) stream, the record is
 
 The following figure illustrates a container.
 
-![diagram illustrating containers, blocks, and records](images/clfscontainers.gif)
+![diagram illustrating containers, blocks, and records.](images/clfscontainers.gif)
 
 The preceding figure illustrates a container that holds three log I/O blocks. The first log I/O block contains three records, the second contains five records, and the third contains two records. As the figure suggests, the beginning of each log I/O block is always aligned with the beginning of a sector on the stable storage medium. Note that log I/O blocks on stable storage vary in size.
 
@@ -42,7 +42,7 @@ Suppose a log has three containers, and a single client is writing CLFS records 
 
 The following figure illustrates the scenario; it shows how the client sequence of logical containers is mapped to physical containers on stable storage.
 
-![diagram illustrating logical and physical containers](images/clfslogicalcontainers.gif)
+![diagram illustrating logical and physical containers.](images/clfslogicalcontainers.gif)
 
 The logical container identifier, block offset, and record sequence number are stored in an LSN in such a way that the LSNs for a particular stream always form a strictly increasing sequence. That is, the LSN (with logical container identifier) of a log record written to a stream is always greater than the LSNs of the log records previously written to that same stream. LSNs, then, serve a dual purpose: 1) they give the clients of a stream an ordered sequence of record identifiers, and 2) they provide CLFS with the location of records on stable storage.
 

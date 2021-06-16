@@ -28,7 +28,7 @@ A GPIO controller device has some number of GPIO pins. These pins can be physica
 
 The following diagram shows the GPIO controller driver and GpioClx.
 
-![block diagram of gpio components](images/gpiomodules.png)
+![block diagram of gpio components.](images/gpiomodules.png)
 
 The GPIO controller driver and GpioClx communicate with each other through the GpioClx device-driver interface (DDI). The GPIO controller driver calls [driver support methods](/previous-versions/hh439460(v=vs.85)) that are implemented by GpioClx. GpioClx calls [event callback functions](/previous-versions/hh439464(v=vs.85)) that are implemented by the GPIO controller driver.
 

@@ -16,11 +16,11 @@ In WinDbg, the Processes and Threads window displays information about the syste
 
 ### <span id="opening_the_processes_and_threads_window"></span><span id="OPENING_THE_PROCESSES_AND_THREADS_WINDOW"></span>Opening the Processes and Threads Window
 
-To open the Processes and Threads window, choose **Processes and Threads** from the **View** menu. (You can also press ALT+9 or select the **Processes and Threads** button (![screen shot of the processes and threads button](images/window-processes-threads.png)) on the toolbar. ALT+SHIFT+9 closes the Processes and Threads window.)
+To open the Processes and Threads window, choose **Processes and Threads** from the **View** menu. (You can also press ALT+9 or select the **Processes and Threads** button (![screen shot of the processes and threads button.](images/window-processes-threads.png)) on the toolbar. ALT+SHIFT+9 closes the Processes and Threads window.)
 
 The following screen shot shows an example of a Processes and Threads window.
 
-![screen shot of the processes and threads window](images/window-prth.png)
+![screen shot of the processes and threads window.](images/window-prth.png)
 
 The Processes and Threads window displays a list of all processes that are currently being debugged. The threads in the process appear under each process. If the debugger is attached to multiple systems, the systems are shown at the top level of the tree, with the processes subordinate to them, and the threads subordinate to the processes.
 
@@ -34,7 +34,7 @@ Each thread listing includes the internal decimal thread index that the debugger
 
 In the Processes and Threads window, the current or active system, process, and thread appear in bold type. To make a new system, process, or thread active, select its line in the window.
 
-The Processes and Threads window has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the scratch pad window toolbar shortcut menu](images/window-processes-threads.png)). The following list describes some of the menu commands:
+The Processes and Threads window has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the scratch pad window toolbar shortcut menu.](images/window-processes-threads.png)). The following list describes some of the menu commands:
 
 -   **Move to new dock** closes the Processes and Threads window and opens it in a new dock.
 

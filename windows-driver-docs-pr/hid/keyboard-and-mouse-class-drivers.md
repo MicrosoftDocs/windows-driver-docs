@@ -13,7 +13,7 @@ This topic describes the typical physical configuration of keyboard and mouse de
 
 The following figures show two common configurations that employ a single keyboard and a single mouse.
 
-![diagram illustrating two configurations that employ a single keyboard and a single mouse](images/kemocfg1.png)
+![diagram illustrating two configurations that employ a single keyboard and a single mouse.](images/kemocfg1.png)
 
 The figure on the left shows a keyboard and a mouse connected to a system bus through independent controllers. A typical configuration consists of a PS/2-style keyboard operated through an i8042 controller, and a serial-style mouse operated through a serial port controller.
 
@@ -51,7 +51,7 @@ Kbdclass and Mouclass each feature:
 
 The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class *filter device object* (filter DO) that is attached to a function device object (*FDO*) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object (*PDO*) created by the root bus driver.
 
-![diagram illustrating the configuration of device objects for a plug and play ps/2-style keyboard and mouse device](images/km-ovr2.png)
+![diagram illustrating the configuration of device objects for a plug and play ps/2-style keyboard and mouse device.](images/km-ovr2.png)
 
 ### PS/2 Keyboard
 

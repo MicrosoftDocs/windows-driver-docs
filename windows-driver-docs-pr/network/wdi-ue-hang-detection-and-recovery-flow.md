@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This diagram shows the UE hang detection and reset flow.
 
-![wdi hang detection and recovery flow](images/wdi-hang-detection-recovery-flow.png)
+![wdi hang detection and recovery flow.](images/wdi-hang-detection-recovery-flow.png)
 
 The diagram consists of main phases:
 

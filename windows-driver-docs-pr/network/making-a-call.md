@@ -16,11 +16,11 @@ ms.localizationpriority: medium
 
 The following figure shows a client making an outgoing call through a call manager.
 
-![diagram illustrating a client making an outgoing call through a call manager](images/cm-11.png)
+![diagram illustrating a client making an outgoing call through a call manager.](images/cm-11.png)
 
 The following figure shows a client making an outgoing call through an MCM driver.
 
-![diagram illustrating a client making an outgoing call through an mcm driver](images/fig1-11.png)
+![diagram illustrating a client making an outgoing call through an mcm driver.](images/fig1-11.png)
 
 Before making an outgoing call, a connection-oriented client must:
 

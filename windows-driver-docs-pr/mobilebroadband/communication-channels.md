@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Because the mobile broadband interface is not directly attached to the computer, information from the operator must be exchanged by using the personal hotspot device, as shown in the following figure:
 
-![communication channels](images/fig1-mb-commchannels.jpg)
+![communication channels.](images/fig1-mb-commchannels.jpg)
 
 You have two opportunities to influence the data provided by the device: in firmware at the time of setup, and by using proprietary back channels (usually web services) that are used by the device during its operational lifetime. These protocols are outside the scope of Microsoft’s design.
 

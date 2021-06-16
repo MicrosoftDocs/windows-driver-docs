@@ -14,19 +14,19 @@ This topic describes the operations related to access control of subscription in
 ## Architecture/Flows
 User actions to enable/disable/unlock/change PIN
 
-![PIN actions flowchart](images/pinActions.png)
+![PIN actions flowchart.](images/pinActions.png)
 
 &nbsp;
 
 Cellular UX query for PIN1/PUK1 state
 
-![Query PIN1 / PUK1 flowchart](images/pinQuery.png)
+![Query PIN1 / PUK1 flowchart.](images/pinQuery.png)
 
 &nbsp;
 
 Auto-unlock after resuming from hibernation
 
-![Auto-Unlock after resuming from hibernation flowchart](images/auto-unlock-pin-hibernation.png)
+![Auto-Unlock after resuming from hibernation flowchart.](images/auto-unlock-pin-hibernation.png)
 
 ## MBIM_CID_MS_PIN_EX
 

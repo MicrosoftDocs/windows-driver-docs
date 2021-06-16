@@ -17,11 +17,11 @@ In addition, you can use the [**? (Evaluate Expression)**](---evaluate-expressio
 
 In WinDbg, you can also use the Watch window to display and change global and local variables. The Watch window can display any list of variables that you want. These variables can include global variables and local variables from any function. At any time, the Watch window displays the values of those variables that match the current function's scope. You can also change the values of these variables through the Watch window.
 
-To open the Watch window, choose **Watch** from the **View** menu. You can also press ALT+2 or click the **Watch** button on the toolbar: ![screen shot of the watch button](images/tbwatch.png). ALT+SHIFT+2 closes the Watch window.
+To open the Watch window, choose **Watch** from the **View** menu. You can also press ALT+2 or click the **Watch** button on the toolbar: ![screen shot of the watch button.](images/tbwatch.png). ALT+SHIFT+2 closes the Watch window.
 
 The following screen shot shows an example of a Watch window.
 
-![screen shot of the watch window ](images/window-watch.png)
+![screen shot of the watch window .](images/window-watch.png)
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, click the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 

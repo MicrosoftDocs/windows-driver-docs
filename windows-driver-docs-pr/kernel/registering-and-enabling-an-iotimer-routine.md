@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Any driver can register an [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine, after it creates one or more device objects, by calling [**IoInitializeTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializetimer). The driver can then start the timer by calling [**IoStartTimer**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostarttimer). The following figure illustrates these calls.
 
-![diagram illustrating using an iotimer routine](images/3iotmer.png)
+![diagram illustrating using an iotimer routine.](images/3iotmer.png)
 
 After calling [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) to create device objects, a driver can call **IoInitializeTimer** with the entry point of its *IoTimer* routine, along with pointers to a driver-created device object and a context area in which the driver maintains whatever context its *IoTimer* routine uses. The I/O manager associates the device object with a kernel-allocated timer object and sets up the timer object to time out every second.
 

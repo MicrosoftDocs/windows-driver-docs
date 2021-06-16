@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 Windows loads *Avcstrm.sys* between a subunit driver's functional device object (FDO) and the corresponding physical device object (PDO) created by *Avc.sys*. *Avcstrm.sys* resides between individual subunit drivers and the function driver, *Avc.sys*. *Avcstrm.sys* is installed as a lower-level filter driver to subunit drivers in order to provide its streaming services. The interface to the streaming service provided by *Avcstrm.sys* is based on the I/O request packet (IRP) model used by the WDM architecture, with a list of supported I/O control (IOCTL) functions. *Avcstrm.sys* can service a subunit driver that is based on either the Stream class or the AVStream interfaces. The AVStream driver model is the preferred interface to use. The following diagram illustrates where *Avcstrm.sys* fits into the AV/C driver stack.
 
-![diagram illustrating a peer av/c driver stack with the avcstrm.sys lower-filter driver](images/avcsdiag.gif)
+![diagram illustrating a peer av/c driver stack with the avcstrm.sys lower-filter driver.](images/avcsdiag.gif)
 
 *Avcstrm.sys* is format-aware. It must know the data format of the streaming data, such as SDDV or MPEG2TS, in order to make the proper isochronous connection between the source and the target devices. With the given format information, *Avcstrm.sys* can then interface with the AV/C subunit's driver through the 61883 protocol driver to receive or transmit data. Because *Avcstrm.sys* is format-aware, it will have to be updated to add a different format (for example, a service pack or new operating system release). Currently, SDDV and MPEG2TS formats are the only formats implemented.
 

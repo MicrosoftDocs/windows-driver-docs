@@ -22,7 +22,7 @@ The function of the access mask is to describe access rights in a compact form. 
 
 The following figure illustrates the access mask.
 
-![diagram illustrating the access mask](images/fssecurity-03.png)
+![diagram illustrating the access mask.](images/fssecurity-03.png)
 
 The generic rights are one of the following:
 

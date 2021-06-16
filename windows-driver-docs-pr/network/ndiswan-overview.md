@@ -20,7 +20,7 @@ NDISWAN is a system-supplied NDIS intermediate driver that provides functionalit
 
 The following figure shows how NDISWAN interfaces with other components in the RAS architecture.
 
-![diagram illustrating how ndiswan interfaces with other components in the ras architecture](images/ndiswan-1.png)
+![diagram illustrating how ndiswan interfaces with other components in the ras architecture.](images/ndiswan-1.png)
 
 To overlying protocol drivers, NDISWAN presents both NDIS and CoNDIS miniport driver interfaces. To underlying WAN miniport drivers, NDISWAN presents both NDIS and CoNDIS protocol interfaces that include some WAN-specific elements.
 

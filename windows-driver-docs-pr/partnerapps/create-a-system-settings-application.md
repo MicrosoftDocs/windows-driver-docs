@@ -21,7 +21,7 @@ For example, in the **Devices** tab of the **Settings** app, the following pages
 * AutoPlay
 * USB
 
-![Devices list in Settings app](images/devices-list-in-settings.png)
+![Devices list in Settings app.](images/devices-list-in-settings.png)
 
 You can find a list of all level two pages in the [Launch the Windows Settings app](/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
 

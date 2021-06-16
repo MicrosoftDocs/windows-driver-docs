@@ -14,7 +14,7 @@ ms.localizationpriority: High
 
 The following figure shows the major internal components of the Windows operating system.
 
-![diagram illustrating an overview of windows components](images/ntarch.png)
+![diagram illustrating an overview of windows components.](images/ntarch.png)
 
 As the figure shows, the Windows operating system includes both user-mode and kernel-mode components. For more information about Windows user and kernel modes, see [User Mode and Kernel Mode](../gettingstarted/user-mode-and-kernel-mode.md).
 

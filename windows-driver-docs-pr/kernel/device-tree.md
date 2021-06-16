@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The PnP manager maintains a device tree that keeps track of the devices in the system. The following figure shows the device tree for a sample system configuration.
 
-![sample pnp device tree](images/devtree.png)
+![sample pnp device tree.](images/devtree.png)
 
 The device tree contains information about the devices present on the system. The PnP manager builds this tree when the machine boots, using information from drivers and other components, and updates the tree as devices are added or removed.
 

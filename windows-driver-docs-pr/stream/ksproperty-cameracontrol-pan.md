@@ -58,7 +58,7 @@ The property value (operation data) is a LONG that specifies a camera's pan sett
 
 Positive values indicate that the camera is rotated clockwise. Negative values indicate that the camera is rotated counterclockwise, as shown in the following illustration.
 
-![illustration showing camera pan values](images/cam-pan-1.png)
+![illustration showing camera pan values.](images/cam-pan-1.png)
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must be -180 through +180. The default value must be 0.
 

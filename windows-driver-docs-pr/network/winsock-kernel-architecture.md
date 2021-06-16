@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The architecture of Winsock Kernel (WSK) is shown in the following diagram.
 
-![diagram illustrating the architecture of the wsk ](images/wskarch.png)
+![diagram illustrating the architecture of the wsk .](images/wskarch.png)
 
 At the core of the WSK architecture is the WSK subsystem. The WSK subsystem is a [network module](network-module.md) that implements the provider side of the WSK [Network Programming Interface (NPI)](network-programming-interface.md). The WSK subsystem interfaces with transport providers on its lower edge that provide support for various transport protocols.
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Minimizing the time that a driver holds spin locks can significantly improve both the performance of the driver and of the system overall. For example, consider the following figure, which shows how an interrupt spin lock protects device-specific data that must be shared between an ISR and the [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) and [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routines in an SMP machine.
 
-![diagram illustrating using an interrupt spin lock](images/16ispnlk.png)
+![diagram illustrating using an interrupt spin lock.](images/16ispnlk.png)
 
 1.  While the driver's ISR runs at DIRQL on one processor, its *StartIo* routine runs at DISPATCH\_LEVEL on a second processor. The kernel interrupt handler holds the InterruptSpinLock for the driver's ISR, which accesses protected, device-specific data, such as state or pointers to device registers (SynchronizeContext), in the driver's device extension. The *StartIo* routine, which is ready to access SynchronizeContext, calls [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution), passing a pointer to the associated interrupt objects, the shared SynchronizeContext, and the driver's [*SynchCritSection*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ksynchronize_routine) routine (AccessDevice in the previous figure).
 

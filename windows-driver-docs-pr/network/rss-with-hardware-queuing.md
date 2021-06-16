@@ -20,7 +20,7 @@ RSS with hardware queuing improves system performance relative to RSS with a sin
 
 The following figure illustrates RSS with NIC receive queuing.
 
-![diagram illustrating rss with nic receive queuing](images/rssqstack.png)
+![diagram illustrating rss with nic receive queuing.](images/rssqstack.png)
 
 In the figure, the dashed arrows represent an alternate path for the receive processing. RSS cannot control the CPU that receives the initial ISR call. The driver does not have to queue the data so it can immediately schedule the initial DPCs on the correct CPUs.
 

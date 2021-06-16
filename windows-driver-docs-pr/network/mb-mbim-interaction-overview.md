@@ -84,19 +84,19 @@ Application -> TCP/IP --(packets)--> NDIS ----(frames)---> [Driver] ---> MBB Dev
 
 ## Driver Architecture
 ### Legacy
-![Legacy](images/mbim_architecture_legacy.png?raw=true "Legacy")
+![Legacy.](images/mbim_architecture_legacy.png?raw=true "Legacy")
 
 ### Current (Since RS5 OSBuild 17763)
-![Current](images/mbim_4_0_architecture.png?raw=true "Current")
+![Current.](images/mbim_4_0_architecture.png?raw=true "Current")
 
 ## Device Power Up
-![Device PowerUp](images/mbim_powerup.png?raw=true "Device PowerUp")
+![Device PowerUp.](images/mbim_powerup.png?raw=true "Device PowerUp")
 
 ## Device Power Down
-![Device PowerDown](images/mbim_powerdown.png?raw=true "Device PowerDown")
+![Device PowerDown.](images/mbim_powerdown.png?raw=true "Device PowerDown")
 
 ## MBBCx interface
-![MBBCx interface](images/mbim_interface.png?raw=true "MBBCx interface")
+![MBBCx interface.](images/mbim_interface.png?raw=true "MBBCx interface")
 
 **See Also**
 
@@ -105,17 +105,17 @@ Application -> TCP/IP --(packets)--> NDIS ----(frames)---> [Driver] ---> MBB Dev
 [MbbRequestComplete](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbrequestcomplete)
 
 ### Default NetAdapter Initialization
-![Default NetAdapter Initialization](images/Default_netadapter_init.png?raw=true "Default NetAdapter Init")
+![Default NetAdapter Initialization.](images/Default_netadapter_init.png?raw=true "Default NetAdapter Init")
 
 **See Also**
 
 [MbbAdapterInitialize](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbadapterinitialize)
 
 ### Additional NetAdapter Initialization
-![Additional NetAdapter Init](images/netadapter_init.png?raw=true "Additional NetAdapter Init")
+![Additional NetAdapter Init.](images/netadapter_init.png?raw=true "Additional NetAdapter Init")
 
 ### Device Initialization
-![Device Initialization](images/device_init.png?raw=true "Device Init")
+![Device Initialization.](images/device_init.png?raw=true "Device Init")
 
 
 ## Hardware Lab Kit (HLK) Tests

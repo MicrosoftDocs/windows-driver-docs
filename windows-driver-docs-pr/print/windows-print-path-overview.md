@@ -28,7 +28,7 @@ The two conversion options are:
 
 The following illustration shows the different print path and conversion options of the XPSDrv subsystem.
 
-![diagram illustrating the different print-path and conversion options of the xpsdrv subsystem](images/printpathoverview.png)
+![diagram illustrating the different print-path and conversion options of the xpsdrv subsystem.](images/printpathoverview.png)
 
 For more information about configuring the filter pipeline service, see [Filter Pipeline Configuration File](filter-pipeline-configuration-file.md).
 

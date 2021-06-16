@@ -21,41 +21,41 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
-![empty checkbox](images/checkbox.png)[Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
+![empty checkbox.](images/checkbox.png)[Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
 
-![empty checkbox](images/checkbox.png)[Use the driver frameworks](#use-the-driver-frameworks)
+![empty checkbox.](images/checkbox.png)[Use the driver frameworks](#use-the-driver-frameworks)
 
-![empty checkbox](images/checkbox.png)[Control access to software only drivers](#control-access-to-software-only-drivers)
+![empty checkbox.](images/checkbox.png)[Control access to software only drivers](#control-access-to-software-only-drivers)
 
-![empty checkbox](images/checkbox.png)[Do not production sign test driver code](#do-not-production-sign-test-code)
+![empty checkbox.](images/checkbox.png)[Do not production sign test driver code](#do-not-production-sign-test-code)
 
-![empty checkbox](images/checkbox.png)[Perform threat analysis](#perform-threat-analysis)
+![empty checkbox.](images/checkbox.png)[Perform threat analysis](#perform-threat-analysis)
 
-![empty checkbox](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
+![empty checkbox.](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-![empty checkbox](images/checkbox.png)[Validate HVCI compatibility](#validate-hvci-compatibility)
+![empty checkbox.](images/checkbox.png)[Validate HVCI compatibility](#validate-hvci-compatibility)
 
-![empty checkbox](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
+![empty checkbox.](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
-![empty checkbox](images/checkbox.png)[Perform peer code review](#perform-peer-code-review)
+![empty checkbox.](images/checkbox.png)[Perform peer code review](#perform-peer-code-review)
 
-![empty checkbox](images/checkbox.png)[Manage driver access control](#manage-driver-access-control)
+![empty checkbox.](images/checkbox.png)[Manage driver access control](#manage-driver-access-control)
 
-![empty checkbox](images/checkbox.png)[Enhance device installation security](#enhance-device-installation-security)
+![empty checkbox.](images/checkbox.png)[Enhance device installation security](#enhance-device-installation-security)
 
-![empty checkbox](images/checkbox.png)[Execute proper release driver signing](#execute-proper-release-driver-signing)
+![empty checkbox.](images/checkbox.png)[Execute proper release driver signing](#execute-proper-release-driver-signing)
 
-![empty checkbox](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
+![empty checkbox.](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
 
-![empty checkbox](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
+![empty checkbox.](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
 
-![empty checkbox](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
+![empty checkbox.](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
-![empty checkbox](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
+![empty checkbox.](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
 
-![empty checkbox](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
+![empty checkbox.](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
 
-![empty checkbox](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
+![empty checkbox.](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
 
 [Summary of key takeaways](#summary-of-key-takeaways)
 
@@ -113,7 +113,7 @@ In considering security, a common methodology is to create specific threat model
 
 This article provides driver specific guidance for creating a lightweight threat model: [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that can be used as a starting point for your driver.
 
-![Sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
+![Sample data flow diagram for hypothetical kernel-mode driver.](images/sampledataflowdiagramkernelmodedriver.gif)
 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](../bringup/security-overview.md#sdl-recommendations-for-oems).
 
@@ -624,7 +624,7 @@ For more information about sympath, see [Symbol path for Windows debuggers](../d
 
 To enable these warnings in Visual Studio, under C/C++ in the property pages for the project, remove the values that you don't wish to exclude in **Disable Specific Warnings**.
 
-![dialog box for disable specific warnings in Visual Studio 2019](images/disable-specific-warnings-dialog.png)
+![dialog box for disable specific warnings in Visual Studio 2019.](images/disable-specific-warnings-dialog.png)
 
 The default compile options in Visual Studio for driver projects can disable warnings such as the following. These warnings will be reported by BinSkim.
 

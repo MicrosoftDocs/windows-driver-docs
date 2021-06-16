@@ -50,7 +50,7 @@ See [Sample Registry Entry for UVC Extension Units](sample-registry-entry-for-uv
 
 The following schematic diagram shows the relationships between the various modules involved in writing and using an Extension Unit plug-in. In particular it traces the connection from the application, to the plug-in DLL, down to the driver and finally to the Extension Unit on the device itself. The schematic also illustrates the various GUIDs involved; identical values are highlighted by the use of a matching color.
 
-![diagram illustrating the extension unit plug-in and associated modules](images/usbvidextension.gif)
+![diagram illustrating the extension unit plug-in and associated modules.](images/usbvidextension.gif)
 
 ### Eventing Mechanisms
 

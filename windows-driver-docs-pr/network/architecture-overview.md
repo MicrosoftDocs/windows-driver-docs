@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 An overview of the basic architecture of the Network Module Registrar (NMR) is shown in the following diagram:
 
-![diagram illustrating the basic architecture of the network module registrar (nmr)](images/nmrarch.png)
+![diagram illustrating the basic architecture of the network module registrar (nmr).](images/nmrarch.png)
 
 In this situation, there are two [network modules](network-module.md), a [client module](client-module.md) and a [provider module](provider-module.md). The client module and the provider module are respectively a client and a provider of the same [Network Programming Interface (NPI)](network-programming-interface.md). Each network module interacts directly with the NMR for the purpose of registration and deregistration, as well as attaching to, and detaching from, other network modules. The NMR will initiate attaching a client module to a provider module only if they both support the same NPI. After the client module and the provider module are attached to each other, they can interact with each other through their NPI functions independent of the NMR.
 

@@ -96,7 +96,7 @@ On Windows Vista and later operating systems, we recommend that drivers always p
 
 The following diagram shows how drivers handle a query for bus relations.
 
-![diagram illustrating drivers handling a query for bus relations](images/qdrstaks.png)
+![diagram illustrating drivers handling a query for bus relations.](images/qdrstaks.png)
 
 In the example shown in the figure, the PnP manager sends an **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** for **BusRelations** to the drivers for the USB hub device. The PnP manager is requesting a list of the hub device's children.
 

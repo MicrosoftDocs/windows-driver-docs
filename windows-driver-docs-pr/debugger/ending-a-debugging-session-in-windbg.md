@@ -29,7 +29,7 @@ To end a user-mode debugging session, return the debugger to dormant mode, and c
 -   Choose **Stop Debugging** from the **Debug** menu.
 -   Press SHIFT+F5.
 
--   Click the **Stop Debugging** button (![screen shot of the stop debugging button ](images/tbstop.png)) on the toolbar
+-   Click the **Stop Debugging** button (![screen shot of the stop debugging button .](images/tbstop.png)) on the toolbar
 
 To end a user-mode debugging session, return the debugger to dormant mode, and set the target application running again, you can use the following methods:
 
@@ -57,7 +57,7 @@ To end a kernel-mode debugging session, return the debugger to dormant mode, and
 -   Choose **Stop Debugging** from the **Debug** menu.
 -   Press SHIFT+F5.
 
--   Click the **Stop debugging (Shift+F5)** button (![screen shot of the stop debugging button ](images/tbstop.png)) on the toolbar.
+-   Click the **Stop debugging (Shift+F5)** button (![screen shot of the stop debugging button .](images/tbstop.png)) on the toolbar.
 
 When a WinDbg session ends, you are prompted to save the workspace for the current session, and then WinDbg returns to dormant mode. At this point, you can use all starting options. That is, you can start to debug a running process, spawn a new process, attach to a target computer, open a crash dump, or connect to a remote debugging session.
 

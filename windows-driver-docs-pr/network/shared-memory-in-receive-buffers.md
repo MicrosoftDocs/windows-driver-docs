@@ -19,7 +19,7 @@ Miniport drivers specify the settings for the lookahead type (**NdisSharedMemory
 
 The following illustration shows the relationships for the network data when the incoming data is split into two shared memory buffers.
 
-![diagram illustrating the relationships for the network data when the incoming data is split into two shared memory buffers](images/vmqpacket.png)
+![diagram illustrating the relationships for the network data when the incoming data is split into two shared memory buffers.](images/vmqpacket.png)
 
 The [**NET\_BUFFER\_SHARED\_MEMORY**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_shared_memory) structure specifies shared memory information. There can be a linked list of such shared memory buffers that are associated with a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure.
 

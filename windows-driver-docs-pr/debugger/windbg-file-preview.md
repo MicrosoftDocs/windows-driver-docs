@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - File Menu
 
-![Small logo of windbg preview with bit pattern](images/windbgx-preview-logo.png)
+![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
 
 This topic describes how to how to use the file menu.
 
@@ -21,7 +21,7 @@ The recent list contains a list of your recent workspaces and debugger connectio
 
 You can use the right click menu to manage your workspaces, like pinning, renaming and moving them. As well as editing them in notepad.
 
-![Workspace file right click menu showing open rename edit in notepad pin and remove from list as well as clear unpinned targets](images/windbgx-workspace-right-click.png)
+![Workspace file right click menu showing open rename edit in notepad pin and remove from list as well as clear unpinned targets.](images/windbgx-workspace-right-click.png)
 
 #### Start a new session
 

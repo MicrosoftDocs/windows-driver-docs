@@ -20,7 +20,7 @@ The compatibility layer creates two callback objects in the WIA COM proxy: one f
 
 The following diagram illustrates how the compatibility layer would work with a Windows Vista driver and a legacy application.
 
-![diagram illustrating data transfer between a legacy application and a windows vista driver](images/vistaapp-legacydrv.png)
+![diagram illustrating data transfer between a legacy application and a windows vista driver.](images/vistaapp-legacydrv.png)
 
 The legacy callback object within the WIA COM proxy converts Windows Vista transfer messages and data written into stream into legacy transfer messages, and writes data to file or banded data callback.
 

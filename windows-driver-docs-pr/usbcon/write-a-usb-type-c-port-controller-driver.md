@@ -12,7 +12,7 @@ You need to write a USB Type-C port controller driver if your USB Type-C hardwar
 
 In Windows 10, version 1703, the USB Type-C architecture has been improved to support hardware designs that implement the USB Type-C or Power Delivery (PD) physical layer but do not have a corresponding PD policy engine or protocol layer implementation. For these designs, Windows 10 version 1703 provides a software-based PD policy engine and device policy manager through a new class extension called "USB Connector Manager Type-C Port Controller Interface Class Extension" (UcmTcpciCx). A client driver written by an IHV or OEM/ODM communicates with UcmTcpciCx to provide information about the hardware events needed for the PD policy engine and device policy manager in UcmTcpciCx to function. That communication is enabled through a set of programming interfaces described in this topic and in the reference section.
 
-![usb connector manager](images/tcpci-arch.png)
+![usb connector manager.](images/tcpci-arch.png)
 
 The UcmTcpciCx class extension is itself a client driver of UcmCx. The policy decisions about power contracts, data roles, are made in UcmCx and forwarded to UcmTcpciCx. UcmTcpciCx implements those policies and manages the Type-C and PD state machines, by using the port controller interface provided by your UcmTcpciCx client driver. 
 
@@ -58,7 +58,7 @@ Applies to:
 
     The client driver runs in kernel mode and binds to  KMDF 1.15 library. 
 
-    ![visual studio configuration for ucm](images/ucmtcpci-vs.png)
+    ![visual studio configuration for ucm.](images/ucmtcpci-vs.png)
 
 -  Decide whether the client driver will support alerts.
 

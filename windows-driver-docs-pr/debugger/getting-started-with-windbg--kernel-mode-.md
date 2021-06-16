@@ -26,11 +26,11 @@ The Windows debuggers support these types of cables for debugging:
 
 For speed and reliablity, using Ethernet with a local network hub, is recommended. This diagram illustrates a host and target computer connected for debugging over Ethernet cable.
 
-![diagram of host and target with ethernet connection](images/configfortest01.png)
+![diagram of host and target with ethernet connection.](images/configfortest01.png)
 
 Another option for older versions of Windows is to use a direct cable such as USB or serial cable.
 
-![diagram of host and target with debug cable](images/configfortest02.png)
+![diagram of host and target with debug cable.](images/configfortest02.png)
 
 For details about how to set up the host and target computers, see [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md).
 

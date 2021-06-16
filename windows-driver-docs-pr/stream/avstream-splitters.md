@@ -30,7 +30,7 @@ In releases later than DirectX8.0, the KSPIN\_FLAG\_SPLITTER flag works for pins
 
 The following diagram shows the configuration of a filter in which the input pin splits a stream into two output pins. The downstream filters of this output pin change data *inplace*.
 
-![diagram illustrating an avstream filter with a splitter output pin ](images/split1.png)
+![diagram illustrating an avstream filter with a splitter output pin .](images/split1.png)
 
 Frames arrive on the input pin and are placed into the input queue. The minidriver interacts only with the input queue and the output queue for the original pin. AVStream automatically copies data from the first pin's queue to the second pin's queue.
 
@@ -40,7 +40,7 @@ In the [**KSFILTER\_DISPATCH**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter
 
 This diagram shows how the minidriver distinguishes between the two output pins in the process pins list:
 
-![diagram of a process pins table for two split pins](images/splitppin1.png)
+![diagram of a process pins table for two split pins.](images/splitppin1.png)
 
 In this diagram, DB refers to the **DelegateBranch** member of the [**KSPROCESSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksprocesspin) structure and CS refers to the **CopySource** member. Both the **DelegateBranch** and **CopySource** members of the input pin and the first output pin are **NULL**. This indicates that the minidriver is responsible for handling frames on these pins.
 
@@ -52,7 +52,7 @@ It is also possible that some of the downstream filters that automatically attac
 
 In this case, the filter layout could be similar to the following diagram, which depicts a filter that contains three instances of the split output pin:
 
-![diagram illustrating an avstream filter with three split output pins ](images/split2.png)
+![diagram illustrating an avstream filter with three split output pins .](images/split2.png)
 
 Pins A and B are assigned to the same pipe because the downstream filters do not change the data; the filters downstream of A and B receive the same buffer pointers.
 
@@ -60,7 +60,7 @@ Pins A and B are assigned to the same pipe because the downstream filters do not
 
 The array of [**KSPROCESSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksprocesspin) structures is as follows:
 
-![diagram of a process pins table for three split output pins](images/splitppin2.png)
+![diagram of a process pins table for three split output pins.](images/splitppin2.png)
 
 The only pin that the minidriver must interact with under normal circumstances is pin A.
 

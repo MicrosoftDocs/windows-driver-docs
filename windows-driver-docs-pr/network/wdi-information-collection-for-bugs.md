@@ -52,7 +52,7 @@ ActiveWdiCommand may be 0 (no active command) if the trigger type is RESET\_RECO
 
 This screenshot is an example view of eventvwr showing system.evtx. The trigger type is 3 and there is no active command.
 
-![wdi event log screenshot](images/wdi-event-log-screenshot.png)
+![wdi event log screenshot.](images/wdi-event-log-screenshot.png)
 
 ## When Wi-Fi malfunctions
 

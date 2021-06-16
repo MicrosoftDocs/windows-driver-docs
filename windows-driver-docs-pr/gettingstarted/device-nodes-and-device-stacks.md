@@ -20,7 +20,7 @@ Windows organizes devices in a tree structure called the *Plug and Play device t
 
 A node in the device tree is called a *device node*. The root node of the device tree is called the *root device node*. By convention, the root device node is drawn at the bottom of the device tree, as shown in the following diagram.
 
-![diagram of the device tree, showing device nodes](images/devicetree01.png)
+![diagram of the device tree, showing device nodes.](images/devicetree01.png)
 
 The device tree illustrates the parent/child relationships that are inherent in the PnP environment. Several of the nodes in the device tree represent buses that have child devices connected to them. For example, the PCI Bus node represents the physical PCI bus on the motherboard. During startup, the PnP manager asks the PCI bus driver to enumerate the devices that are connected to the PCI bus. Those devices are represented by child nodes of the PCI Bus node. In the preceding diagram, the PCI Bus node has child nodes for several devices that are connected to the PCI bus, including USB host controllers, an audio controller, and a PCI Express port.
 
@@ -39,18 +39,18 @@ By convention, a device stack has a top and a bottom. The first device object to
 
 In the following diagram, the Proseware Gizmo device node has a device stack that contains three (device object, driver) pairs. The top device object is associated with the driver AfterThought.sys, the middle device object is associated with the driver Proseware.sys, and the bottom device object is associated with the driver Pci.sys. The PCI Bus node in the center of the diagram has a device stack that contains two (device object, driver) pairs--a device object associated with Pci.sys and a device object associated with Acpi.sys.
 
-![diagram showing device objects ordered in device stacks in the proseware gizmo and pci device nodes](images/prosewaredevicenode01.png)
+![diagram showing device objects ordered in device stacks in the proseware gizmo and pci device nodes.](images/prosewaredevicenode01.png)
 
 ## <span id="How_does_a_device_stack_get_constructed_"></span><span id="how_does_a_device_stack_get_constructed_"></span><span id="HOW_DOES_A_DEVICE_STACK_GET_CONSTRUCTED_"></span>How does a device stack get constructed?
 
 
 During startup, the PnP manager asks the driver for each bus to enumerate child devices that are connected to the bus. For example, the PnP manager asks the PCI bus driver (Pci.sys) to enumerate the devices that are connected to the PCI bus. In response to this request, Pci.sys creates a device object for each device that is connected to the PCI bus. Each of these device objects is called a *physical device object* (PDO). Shortly after Pci.sys creates the set of PDOs, the device tree looks like the one shown in the following diagram.
 
-![diagram of pci node and physical device objects for child devices](images/prosewaredevicenode04.png)
+![diagram of pci node and physical device objects for child devices.](images/prosewaredevicenode04.png)
 
 The PnP manager associates a device node with each newly created PDO and looks in the registry to determine which drivers need to be part of the device stack for the node. The device stack must have one (and only one) *function driver* and can optionally have one or more *filter drivers*. The function driver is the main driver for the device stack and is responsible for handling read, write, and device control requests. Filter drivers play auxiliary roles in processing read, write, and device control requests. As each function and filter driver is loaded, it creates a device object and attaches itself to the device stack. A device object created by the function driver is called a *functional device object* (FDO), and a device object created by a filter driver is called a *filter device object* (Filter DO). Now the device tree looks something like this diagram.
 
-![diagram of a device tree showing the filter, function, and physical device objects in the proseware gizmo device node](images/prosewaredevicenode02.png)
+![diagram of a device tree showing the filter, function, and physical device objects in the proseware gizmo device node.](images/prosewaredevicenode02.png)
 
 In the diagram, notice that in one node, the filter driver is above the function driver, and in the other node, the filter driver is below the function driver. A filter driver that is above the function driver in a device stack is called an *upper filter driver*. A filter driver that is below the function driver is called a *lower filter driver*.
 
@@ -77,7 +77,7 @@ In some cases, a device has a user-mode device stack in addition to its kernel-m
 
 The following diagram shows the device node, kernel-mode device stack, and the user-mode device stack for a USB-FX-2 device. The drivers in both the user-mode and kernel-mode stacks participate in I/O requests that are directed at the USB-FX-2 device.
 
-![diagram showing user-mode and kernel-mode device stacks](images/userandkerneldevicestacks01.png)
+![diagram showing user-mode and kernel-mode device stacks.](images/userandkerneldevicestacks01.png)
 
 ## <span id="related_topics"></span>Related topics
 

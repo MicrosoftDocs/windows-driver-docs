@@ -18,7 +18,7 @@ The debugger runs on the *host* system, and the code that you want to debug runs
 
    **Host &lt;--------------------------------------------------&gt; Target**
 
-![host and target pcs connected with a double arrow](images/targethost1.png)
+![host and target pcs connected with a double arrow.](images/targethost1.png)
 
 Because it is common to stop instruction execution on the processor during debugging, two computer systems are typically used. In some situations, you might be able to use a virtual machine as the second system. For example, you might be able to use a virtual PC that is running on the same PC as the code that you need to debug. However, if your code is communicating to low-level hardware, using a virtual PC may not be the best approach. For more information, see [Setting up network debugging of a virtual machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 

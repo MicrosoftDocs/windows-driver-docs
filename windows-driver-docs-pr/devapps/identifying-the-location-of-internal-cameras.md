@@ -104,7 +104,7 @@ For internal cameras, the OEM creates a GUID to use for the Model ID and creates
 
 The subkey entry to create under the InternalDeviceModification registry key is the OEM-supplied GUID for ModelID. The presence of this key adds the Model ID to the camera’s device node, based on the device hardware ID and the location information indicated by the \_PLD value in the ACPI table.
 
-![registry keys and values for internaldevicemodification](images/372985-camera-internal-registry-layout.png)
+![registry keys and values for internaldevicemodification.](images/372985-camera-internal-registry-layout.png)
 
 ### InternalDeviceModification registry key
 

@@ -33,7 +33,7 @@ The *Permedia* sample display drivers that shipped with the Driver Development K
 
 The following figure shows a sample accelerator's frame buffer, a 1024-by-768 VGA display buffer, divided into several banks. This figure is provided for the purpose of illustration only. The display driver does not specifically use the physical address A000 but uses a logical address passed to it by the miniport driver.
 
-![diagram illustrating mapping video memory to a banked frame buffer](images/banking1.png)
+![diagram illustrating mapping video memory to a banked frame buffer.](images/banking1.png)
 
 In this example, the video memory contents are written to the accelerator through a series of draw operations that address contiguous banks of the frame buffer. As far as GDI is concerned, each of its draw operations appear to be to the standard frame buffer and not to different banks of the accelerator's frame buffer. The device driver for the accelerator handles the banking operations that cause GDI to draw to the accelerator's frame buffer on a bank-by-bank basis.
 
@@ -43,7 +43,7 @@ If the driver elects to have GDI perform the draw function, the driver calls the
 
 The example banked frame buffer in the following figure shows how an elliptical object drawn on the display spans two banks of the banked frame buffer, BANK\_1 and BANK\_2.
 
-![diagram illustrating drawn objects spanning multiple banks in the frame buffer](images/pvscan0.png)
+![diagram illustrating drawn objects spanning multiple banks in the frame buffer.](images/pvscan0.png)
 
 To draw this object, GDI must first draw the top portion of the ellipse (in BANK\_1) to the standard frame buffer, and then draw the lower portion of the ellipse to the same standard buffer. The display driver must then map these two successive writes by GDI to BANK\_1 and BANK\_2 of the banked frame buffer to display, and also to prevent GDI from writing beyond the limits of each bank.
 

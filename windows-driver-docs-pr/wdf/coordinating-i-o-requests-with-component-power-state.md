@@ -34,7 +34,7 @@ For each request type supported by the driver, identify the required components.
 In this example, there are three distinct sets of components, one for each request type.
 The driver supplies one default, power-managed I/O queue for the device, as well as one additional power-managed queue corresponding to each set of components. In the example above, the driver creates one primary queue and three secondary queues, one corresponding to each component set. This queue configuration is shown in the following diagram:
 
-![queue implementation for multiple component device](images/multicompqueues.png)
+![queue implementation for multiple component device.](images/multicompqueues.png)
 
 The driver maintains a bitmask for each component set. Each bit in the bitmask represents the active/idle state of one of the components. If the bit is set, the component is active. If the bit is cleared, the component is idle.
 

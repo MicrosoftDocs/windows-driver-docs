@@ -24,7 +24,7 @@ This section describes the device stacks for an ACPI device that include an opti
 
 The system creates one of the two device stacks shown in the following figure for each device in the system's ACPI namespace.
 
-![two diagrams illustrating, on the left, an acpi device stack with a filter do and, on the right, an acpi device stack without a filter do](images/acpidev1.png)
+![two diagrams illustrating, on the left, an acpi device stack with a filter do and, on the right, an acpi device stack without a filter do.](images/acpidev1.png)
 
 If an ACPI device is a hardware device integrated into the system board, the system creates a device stack with a bus filter device object (filter DO). The device's physical device object (*PDO*) is created by the system-supplied root bus driver and the ACPI driver creates a bus filter DO. The presence of the filter DO is transparent to other device objects above it in the device stack.
 

@@ -30,7 +30,7 @@ A pointer to the [*DxgkDdiGetNodeMetadata*](/windows-hardware/drivers/ddi/d3dkmd
 
 Each display adapter on the system has a number of different engines available to schedule tasks on. Each engine is assigned to only one node, but each node may contain more than one engine if that node is associated with multiple adapters—such as in linked display adapter (LDA) configuration, where multiple physical GPUs are linked to form a single, faster, virtual GPU.
 
-![architecture of gpu engines and nodes](images/gpu-engine-node-architecture.png)
+![architecture of gpu engines and nodes.](images/gpu-engine-node-architecture.png)
 
 Different nodes represent the asymmetrical processing cores of the GPU, while the engines within each node represent the symmetrical processing cores across adapters. That is, a 3-D node contains only identical 3-D engines on several adapters, and never a different engine type.
 

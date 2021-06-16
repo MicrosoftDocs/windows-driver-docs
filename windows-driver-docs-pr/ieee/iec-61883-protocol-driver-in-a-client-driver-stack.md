@@ -18,7 +18,7 @@ IEC-61883 client drivers rely on *61883.sys* to communicate with their devices u
 
 The following diagram shows an example of the *61883.sys* in an AV/C driver stack. The vendor-supplied AV/C subunit driver is the IEC-61883 client in this example.
 
-![diagram illustrating an iec-61883 client driver stack](images/61883stk.png)
+![diagram illustrating an iec-61883 client driver stack.](images/61883stk.png)
 
 Starting from the top of the diagram:
 

@@ -58,7 +58,7 @@ The property value (operation data) is a LONG that specifies a camera's tilt set
 
 Positive values point the imaging plane up. Negative values point the imaging plane down, as shown in the following illustration.
 
-![illustration showing camera tilt values](images/cam-tilt-1.png)
+![illustration showing camera tilt values.](images/cam-tilt-1.png)
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must -180 through +180. The default value must be 0.
 

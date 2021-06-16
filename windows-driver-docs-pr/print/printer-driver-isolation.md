@@ -73,7 +73,7 @@ If driver isolation is disabled by group policy, the isolation is off for all pr
 
 The following chart shows a decision map for choosing the driver isolation mode:
 
-![flowchart for choosing the driver isolation mode](images/isolation.png)
+![flowchart for choosing the driver isolation mode.](images/isolation.png)
 
 ## Spooler functions allowed under driver isolation
 

@@ -32,11 +32,11 @@ The quantity and type of data in the residual difference data buffer is determin
 
 The following figure shows the relationship between the macroblock control command buffer and the residual difference data buffer.
 
-![diagram illustrating the relationship between the macroblock control command buffer and the residual difference data buffer](images/residdiffdata.png)
+![diagram illustrating the relationship between the macroblock control command buffer and the residual difference data buffer.](images/residdiffdata.png)
 
 If the **bConfigMBcontrolRasterOrder** member of the [**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure is equal to 1, then the following expression applies to the preceding illustration where *i* is the index of the macroblock within the macroblock control command buffer.
 
-![diagram illustrating the relationship between the mb control command buffer and residual difference data buffer](images/formula3.png)
+![diagram illustrating the relationship between the mb control command buffer and residual difference data buffer.](images/formula3.png)
 
  
 

@@ -16,7 +16,7 @@ Kernel-mode drivers are hidden from end users by a protected subsystem that impl
 
 The following figure illustrates this relationship between an end user, a subsystem, and the I/O manager.
 
-![diagram illustrating file objects representing files, volumes, and devices](images/2grsover.png)
+![diagram illustrating file objects representing files, volumes, and devices.](images/2grsover.png)
 
 A protected subsystem, such as the Win32 subsystem, passes I/O requests to the appropriate kernel-mode driver through the I/O system services. The subsystem shown in the previous figure depends on support from the display, video adapter, keyboard, and mouse device drivers.
 

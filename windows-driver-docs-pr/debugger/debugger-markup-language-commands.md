@@ -28,11 +28,11 @@ The following commands are capable of generating DML output:
 
 The [**lmD**](lm--list-loaded-modules-.md) command is an example of a command that is capable of providing DML output. The **lmD** command displays a list of loaded modules. As the following image shows, each module name is a link that you can click to get more detailed information about the module.
 
-![screen shot of lmd output](images/dmlcommands01.png)
+![screen shot of lmd output.](images/dmlcommands01.png)
 
 The following image shows the result of clicking the **usbuhci** link. The output includes additional links that enable you to explore further details of the usbuhci module.
 
-![screen shot of module details](images/dmlcommands02.png)
+![screen shot of module details.](images/dmlcommands02.png)
 
 **Turning DML On and Off**
 
@@ -90,11 +90,11 @@ The following command displays the text and link in the Command Browser window.
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
-![screen shot of dml file output](images/dmlcommands03.png)
+![screen shot of dml file output.](images/dmlcommands03.png)
 
 If you click the **List modules that begin with usb** link, you see output similar to the following image.
 
-![screen shot of module list](images/dmlcommands04.png)
+![screen shot of module list.](images/dmlcommands04.png)
 
 For a thorough discussion of DML customization and a complete list of DML tags, see [Customizing Debugger Output Using DML](customizing-debugger-output-using-dml.md).
 

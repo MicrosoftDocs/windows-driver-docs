@@ -39,7 +39,7 @@ Let’s begin by studying these characteristics of the default endpoint.
 
 Because control transfers are high priority transfers, certain amount of bandwidth is reserved on the bus by the host. For low and full speed devices, 10% of the bandwidth; 20% for high and SuperSpeed transfers devices. Now, let’s look at the layout of a control transfer.
 
-![usb control transfer](images/control-transfer.png)
+![usb control transfer.](images/control-transfer.png)
 
 A control transfer is divided into three transactions: *setup transaction*, *data transaction*, and *status transaction*. Each transaction contains three types of packets: *token packet*, *data packet*, and *handshake packet*.
 
@@ -55,7 +55,7 @@ Other fields depend on the type of packet.
 
     Every setup transaction starts with a token packet. Here is the structure of the packet. The host always sends the token packet.
 
-    ![token packet layout](images/token.png)
+    ![token packet layout.](images/token.png)
 
     The PID value indicates the type of the token packet. Here are the possible values:
 
@@ -70,7 +70,7 @@ Other fields depend on the type of packet.
 
     Immediately following the token packet is the data packet that contains the payload. The number of bytes that each data packet can contain depends on the maximum packet size of the default endpoint. The data packet can be sent by either the host or the device, depending on the direction of the transfer.
 
-    ![data packet layout](images/data.png)
+    ![data packet layout.](images/data.png)
 
 <!-- -->
 
@@ -78,7 +78,7 @@ Other fields depend on the type of packet.
 
     Immediately following the data packet is the handshake packet. The PID of the packet indicates whether or not the packet was received by the host or the device. The handshake packet can be sent by either the host or the device, depending on the direction of the transfer.
 
-    ![handshake packet layout](images/handshake.png)
+    ![handshake packet layout.](images/handshake.png)
 
 You can see the structure of transactions and packets by using any USB analyzer, such as Beagle, Ellisys, LeCroy USB protocol analyzers. An analyzer device shows how data is sent to or received from a USB device over the wire. In this example, let's examine some traces captured by a LeCroy USB analyzer. This example is for information only. This is not an endorsement by Microsoft.
 

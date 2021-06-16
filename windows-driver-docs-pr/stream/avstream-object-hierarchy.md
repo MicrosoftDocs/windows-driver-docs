@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 An AVStream minidriver can expose many different types of filters through a hierarchy such as the one in the following diagram.
 
-![diagram illustrating the avstream object hierarchy](images/hierarchy.png)
+![diagram illustrating the avstream object hierarchy.](images/hierarchy.png)
 
 The elements of this hierarchy are described in the next topic, [AVStream Descriptors](avstream-descriptors.md).
 

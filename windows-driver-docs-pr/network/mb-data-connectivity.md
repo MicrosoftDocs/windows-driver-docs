@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 The main componment of the cellular stack in the OS is **WWAN Service (WwanSvc)** which controls and sets up all the data connection, states, and events.
 It interacts with a couple of client drivers to enable activities across the OS.
 
-![WWANSVC External Interaction](images/mb-wwansvc-external-interaction-diag.png "WWANSVC External Interaction")
+![WWANSVC External Interaction.](images/mb-wwansvc-external-interaction-diag.png "WWANSVC External Interaction")
 
 The acronyms in the preceding image:
 
@@ -52,10 +52,10 @@ For more information on individual components, see [Cellular architecture](cellu
 
 The main state machines resides in the Default Context Controller and its associated Context Life Cycle object.
 
-![WWANSVC Internal Interaction](images/mb-wwansvc-internal-interaction-diag.png "WWANSVC Internal Interaction")
+![WWANSVC Internal Interaction.](images/mb-wwansvc-internal-interaction-diag.png "WWANSVC Internal Interaction")
 
 ## Interactions between the Default Context Controller and its immediate neighbors
-![Default Context Controller](images/mb-default-context-controller-diag.png "Default Context Controller")
+![Default Context Controller.](images/mb-default-context-controller-diag.png "Default Context Controller")
 
 ## Default Context Controller
 The Default Context Controller controls the internet data connection.
@@ -83,7 +83,7 @@ The Default Context Controller performs the following tasks:
 The Default Context Controller uses a finite state machine to manage its tasks. 
 
 ### Finite state machine transitions of the Default Context Controller
-![Deafult Context Controller FSM](images/mb-default-context-controller-fsm-diag.png "Default Context Controller FSM")
+![Deafult Context Controller FSM.](images/mb-default-context-controller-fsm-diag.png "Default Context Controller FSM")
 
 ### Auto-connect
 #### Policy settings that need to be met for auto-connect
@@ -208,16 +208,16 @@ If one round of attempts has multiple MBB profiles, the order is:
 
 ### Successful Activation
 
-![Successful PDP Context Activation](images/mb_successful_activation.png "Successful PDP Context Activation Flow")
+![Successful PDP Context Activation.](images/mb_successful_activation.png "Successful PDP Context Activation Flow")
 
 ### Successful Deactivation
 
-![Successful PDP Context Deactivation](images/mb_successful_deactivation.png "Successful PDP Context Deactivation Flow")
+![Successful PDP Context Deactivation.](images/mb_successful_deactivation.png "Successful PDP Context Deactivation Flow")
 
 
 ### Manual Connect
 
-![Manual Connection](images/mb_manual_connect.png "Manual Connection Flow")
+![Manual Connection.](images/mb_manual_connect.png "Manual Connection Flow")
 
 ## Hardware Lab Kit (HLK) tests
 

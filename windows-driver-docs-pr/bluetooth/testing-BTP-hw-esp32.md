@@ -16,7 +16,7 @@ The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. M
 | --- | --- | --- |
 | ESP32 Wi-Fi | esp32wifi | RunWiFiCoexScenarioTests.bat rn52 esp32wifi |
 
-:::image type="content" source="images/ESP32.png" alt-text="Photo of the Model 2433 ESP32":::
+:::image type="content" source="images/ESP32.png" alt-text="Photo of the Model 2433 ESP32.":::
 
 ## Suported Tests
 
@@ -24,7 +24,7 @@ The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. M
 
 ### ESP32 Device on BTP-compatible sled
 
-:::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="Photo of the Model 2433 ESP32 device on a sled":::
+:::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="Photo of the Model 2433 ESP32 device on a sled.":::
 
 ## Hardware
 
@@ -59,7 +59,7 @@ This is required for first time setup of an ESP32 radio for use with the BTP Wi-
 
 1. Connect the Hardware.
 Using a USB Serial to UART board (like the one shown below) & jumper wires
-    :::image type="content" source="images/ESP32_and_UART.png" alt-text="ESP32 with USB to UART board":::
+    :::image type="content" source="images/ESP32_and_UART.png" alt-text="ESP32 with USB to UART board.":::
 
     1. Connect the GND of the Serial board to the GND of the ESP32
     1. Connect the RX of the Serial board to the TX of the ESP32
@@ -67,10 +67,10 @@ Using a USB Serial to UART board (like the one shown below) & jumper wires
     1. Connect the USB Serial to UART board to the PC you installed the Arduino CLI to.
     1. Connect the ESP32 device to Port JD on the Traduci for power delivery.
     1. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
-        :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 powered on by Traduci":::
+        :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 powered on by Traduci.":::
     1. Run `arduino-cli board list` to identify the COM port associated with the UART to USB Serial board.
     1. Move SW1 to the ON position to switch the ESP32 into boot mode.
-        :::image type="content" source="images/ESP32Boot.png" alt-text="ESP32 enable boot mode":::
+        :::image type="content" source="images/ESP32Boot.png" alt-text="ESP32 enable boot mode.":::
 
 1. Upload the firmware to the Bluefruit Feather by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
@@ -80,7 +80,7 @@ Using a USB Serial to UART board (like the one shown below) & jumper wires
 
     1. Wait for "Connecting ….____...." to show  on the terminal.
     1. Press BTN1 to reset the board.
-        :::image type="content" source="images/ESP32Reset.png" alt-text="ESP32 reset button":::
+        :::image type="content" source="images/ESP32Reset.png" alt-text="ESP32 reset button.":::
     1. Wait for "ESP32 firmware is up to date" to show on the terminal and indicate the process is done.
     1. Move the SW1 to the OFF position to exit boot mode and press BTN1 again to restart the board and the program.
 

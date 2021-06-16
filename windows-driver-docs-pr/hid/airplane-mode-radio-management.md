@@ -28,7 +28,7 @@ Windows provides support for the following HID Usages on the Generic Desktop usa
 
 The following is an architectural diagram of the HID Client that provides support for Radio Management / Airplane Mode.
 
-![airplane mode architecture](images/airplane-mode.png)
+![airplane mode architecture.](images/airplane-mode.png)
 
 ShellHW Detection service (SHSVCD.dll) is the HID Client Driver/Service that runs in user mode and provides support for the Radio Management device. It monitors for the presence of a HID Top Level Collection of type
 

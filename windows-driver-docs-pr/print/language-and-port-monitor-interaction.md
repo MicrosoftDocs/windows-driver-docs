@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following illustration demonstrates the path taken by printer data from the print processor to a printer that a) has a language monitor associated with it; and b) does not have a language monitor associated with it.
 
-![figures comparing a printer data path with a language monitor and without a language monitor](images/mon1.png)
+![figures comparing a printer data path with a language monitor and without a language monitor.](images/mon1.png)
 
 If a language monitor is associated with a printer during the printer's installation, the language monitor receives the printer's data stream from the spooler's print processor. The language monitor modifies the data stream and passes it to the printer's port monitor.
 

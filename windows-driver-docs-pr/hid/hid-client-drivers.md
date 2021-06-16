@@ -15,7 +15,7 @@ If a system-supplied HID minidriver does not support a device's port or bus, a v
 
 The following figure illustrates a driver stack for a generic HIDClass device (which might use optional and required vendor-supplied components).
 
-![diagram illustrating a driver stack for a generic hidclass device](images/zzhgdrs.png)
+![diagram illustrating a driver stack for a generic hidclass device.](images/zzhgdrs.png)
 
 Windows builds the driver stack as follows:
 

@@ -12,7 +12,7 @@ When the operating system needs to use the NIC, it cancels the idle state and re
 
 The following flow diagram shows the resume sequence.
 
-![wdi usb resume sequence](images/wdi-usb-resume-sequence-flow.png)
+![wdi usb resume sequence.](images/wdi-usb-resume-sequence-flow.png)
 
  
 

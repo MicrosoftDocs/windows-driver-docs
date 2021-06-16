@@ -11,7 +11,7 @@ SerCx2 works together with a serial controller driver to enable communication be
 
 The following diagram shows the communication path between a serially connected peripheral device and the driver for this device. This peripheral driver runs in either kernel mode or user mode, and sends I/O requests to the serial port to which the peripheral device is connected.
 
-![block diagram of sercx2 and associated components](images/sercx2modules.png)
+![block diagram of sercx2 and associated components.](images/sercx2modules.png)
 
 SerCx2 and the serial controller driver both run in kernel mode, and communicate with each other through the SerCx2 device-driver interface (DDI). The serial controller driver calls driver-support methods that are implemented by SerCx2. SerCx2 calls event callback functions that are implemented by the serial controller driver.
 

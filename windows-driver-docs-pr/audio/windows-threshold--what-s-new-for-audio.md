@@ -48,7 +48,7 @@ The total latency of a device is the sum of the latencies of the following compo
 
 In Windows 10 work was done to reduce the latency in the OS. Without any driver changes, applications in Windows 10 will experience 4.5-16ms lower latency. In addition, if the driver has been updated to take advantage of the new low latency DDIs that use small buffers to process audio data, then the latency will be reduced even more. If a driver supports 3ms audio buffers, then the roundtrip latency is ~10ms.
 
-![low latency audio stack diagram showing apps, audio engine driver and h/w](images/low-latency-audio-stack-diagram-1.png)
+![low latency audio stack diagram showing apps, audio engine driver and h/w.](images/low-latency-audio-stack-diagram-1.png)
 
 The audio stack supports multiple packet sizes and dynamic packet resizing, in order to optimize the tradeoff between latency and power based on the user’s scenario. In addition, streams will be prioritized, in order to ensure that high priority streams (e.g. phone calls) have dedicated resources.
 

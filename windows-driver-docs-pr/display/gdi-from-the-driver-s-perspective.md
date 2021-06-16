@@ -23,7 +23,7 @@ GDI includes many graphics output capabilities in itself, eliminating the need f
 
 The following figure shows this flow of communication.
 
-![diagram illustrating the graphics driver and graphics device interface (gdi) interaction](images/gditoddi.png)
+![diagram illustrating the graphics driver and graphics device interface (gdi) interaction.](images/gditoddi.png)
 
  
 

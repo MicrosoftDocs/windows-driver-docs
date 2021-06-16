@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 The following figure illustrates the WIA item tree for a flatbed scanner that supports simple (non-duplex) document feeder scanning.
 
-![diagram illustrating the wia item tree for a flatbed scanner that supports non-duplex document feeder scanning](images/wia-feeder-tree4.png)
+![diagram illustrating the wia item tree for a flatbed scanner that supports non-duplex document feeder scanning.](images/wia-feeder-tree4.png)
 
 A scanner with a feeder (or automatic document feeder) does not have to have a flatbed. The following figure illustrates the item tree for a feeder scanner without a flatbed or duplexer.
 
-![diagram illustrating the item tree for a feeder scanner without a flatbed or duplexer](images/wia-feeder-tree2.png)
+![diagram illustrating the item tree for a feeder scanner without a flatbed or duplexer.](images/wia-feeder-tree2.png)
 
 The flatbed item can be omitted only if no flatbed is present on the scanner. Similarly, the feeder item must be present in the item tree for any scanner that has a feeder. The feeder item is used to control settings such as basic scans (no duplexing or Simplex), simple duplex (identical front and back items), and advanced duplex scans (independent front and back items).
 

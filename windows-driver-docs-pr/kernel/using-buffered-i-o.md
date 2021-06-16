@@ -22,7 +22,7 @@ The I/O manager determines that an I/O operation is using buffered I/O as follow
 
 The following figure illustrates how the I/O manager sets up an **IRP\_MJ\_READ** request for a transfer operation that uses buffered I/O.
 
-![diagram illustrating a buffered i/o for user buffers](images/3mdlbffr.png)
+![diagram illustrating a buffered i/o for user buffers.](images/3mdlbffr.png)
 
 The figure shows an overview of how drivers can use the **SystemBuffer** pointer in the IRP to transfer data for a read request, when a driver has ORed the device object's **Flags** with DO\_BUFFERED\_IO:
 

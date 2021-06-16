@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Step 5: Submit the Microsoft Store device app
 
 
-![device app workflow, step 5](images/5-device-app-workflow.png)
+![device app workflow, step 5.](images/5-device-app-workflow.png)
 
 This topic describes how to submit your UWP device app to the Microsoft Store dashboard. Before submitting your app, review the submission sequence section in [Building UWP device apps](the-workflow.md). This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 

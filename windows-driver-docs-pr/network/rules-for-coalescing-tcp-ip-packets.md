@@ -35,9 +35,9 @@ The following terms are used in the flowcharts:
 |**SEG.TSecr**|The **Timestamp Echo Reply** in the currently received segment.|
 |**H.TSecr**|The **Timestamp Echo Reply** in the currently tracked SCU.|
 
-![flowchart describing the rules for coalescing segments and updating tcp headers](images/rsc-rules1.png)
+![flowchart describing the rules for coalescing segments and updating tcp headers.](images/rsc-rules1.png)
 
-![flowchart describing mechanisms for distinguishing valid duplicate acks and window updates](images/rsc-rules2.png)
+![flowchart describing mechanisms for distinguishing valid duplicate acks and window updates.](images/rsc-rules2.png)
 
 The flowcharts show that the miniport driver may coalesce segments with different ACK numbers. However, the miniport driver must obey the following rules regarding ACK numbers, as shown in the first flowchart above:
 
@@ -95,7 +95,7 @@ The miniport driver may treat a duplicate ACK segment equivalent to a pure ACK a
 
 The TCP timestamp option is the only option that may be legally coalesced. Coalescing segments with this option is left as an implementation-specific decision. If the miniport driver coalesces segments with the timestamp option, then it must follow the rules outlined in the following flowchart:
 
-![flowchart describing rules for coalescing segments with tcp timestamp option](images/rsc-rules3.png)
+![flowchart describing rules for coalescing segments with tcp timestamp option.](images/rsc-rules3.png)
 
 >[!NOTE]
 >The check **SEG.TSval** &gt;= **H.TSval** must be performed using modulo-232 arithmetic similar to that used for TCP sequence numbers. See [RFC 793](https://www.ietf.org/rfc/rfc793.txt), section 3.3.

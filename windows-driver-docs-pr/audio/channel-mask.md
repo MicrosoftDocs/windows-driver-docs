@@ -32,7 +32,7 @@ ms.localizationpriority: medium
 
 In Windows, the [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure defines the data format for a multichannel PCM audio stream. This structure specifies parameters such as the number of bits per PCM sample, the number of channels in the stream, and the channel mask. The channel mask specifies the mapping of channels to speakers. The following figure shows the individual bits in the channel mask.
 
-![diagram illustrating the individual bits in the channel mask](images/spkrcfg3.png)
+![diagram illustrating the individual bits in the channel mask.](images/spkrcfg3.png)
 
 Each bit in the channel mask represents a particular speaker position. If the mask assigns a channel to a particular speaker position, the mask bit that represents that position is set to 1; all mask bits for unassigned speaker positions are set to 0. The WAVEFORMATEXTENSIBLE structure defines additional bits in the channel mask that are not shown in the preceding figure, but these bits have no bearing on the home-theater speaker configurations under discussion and are omitted for simplicity.
 
@@ -118,7 +118,7 @@ For example, the **7.1 home theater speakers** configuration is described by a c
 
 The following figure shows the correspondence between the channel mask 0x63F and the **7.1 home theater speakers** configuration.
 
-![diagram illustrating the 7.1 home theater speakers recording and playback](images/spkrcfg4.png)
+![diagram illustrating the 7.1 home theater speakers recording and playback.](images/spkrcfg4.png)
 
 The left side of the preceding figure shows the recording of audio content into the **7.1 home theater speakers** stream format. The small circle at the center of the grid represents the listener's position. Each small, black rectangle represents a microphone. The eight channels are numbered from 0 to 7. The FL microphone records into channel 0, the FR microphone records into channel 1, and so on.
 

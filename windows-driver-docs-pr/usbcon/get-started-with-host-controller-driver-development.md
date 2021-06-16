@@ -12,7 +12,7 @@ This section introduces you to high-level concepts and tasks for host driver dev
 
 Here is a modified version of a diagram shown in [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md). This version hides the details of the USB client driver layer, which are not relevant to host controller driver development.
 
-![ucx architecture](images/ucx.png)
+![ucx architecture.](images/ucx.png)
 
 In the preceding image,
 
@@ -24,7 +24,7 @@ The bidirectional communication that takes place between UCX and the host contro
 
 Here are the device stacks loaded for the host controller driver:
 
-![ucx device stack](images/ucx-device-stack.png)
+![ucx device stack.](images/ucx-device-stack.png)
 
 ## Related topics
 [Universal Serial Bus (USB) Drivers](../index.yml)  

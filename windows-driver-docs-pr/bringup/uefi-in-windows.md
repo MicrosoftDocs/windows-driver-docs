@@ -28,7 +28,7 @@ In addition to the implementation details outlined in the UEFI specification, th
 
 The following diagram shows the main UEFI components for a Windows device
 
-![uefi components for windows phone](images/oem-uefi-components.png)
+![uefi components for windows phone.](images/oem-uefi-components.png)
 
 ## OEM components in the UEFI environment
 

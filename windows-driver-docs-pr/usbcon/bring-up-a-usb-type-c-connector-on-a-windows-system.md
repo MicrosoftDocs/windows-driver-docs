@@ -43,7 +43,7 @@ UCM is designed by using the WDF class extension-client driver model. The class 
 
 To enable a USB Type-C connector on a system, you must write the client driver.
 
-![usb connector manager](images/type-c-devnode.png)
+![usb connector manager.](images/type-c-devnode.png)
 
 ## Before you begin
 
@@ -54,7 +54,7 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 
     You can write a UCM client driver that runs in user mode or kernel mode. For user mode, it binds with the UMDF 2.x library; for kernel mode it's KMDF 1.15. Programming interfaces are identical for either mode.
 
-    ![visual studio configuration for ucm](images/ucm-vs.png)
+    ![visual studio configuration for ucm.](images/ucm-vs.png)
 
 * Decide whether your client driver will support advanced features of the USB Type-C connector and the [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310).
 

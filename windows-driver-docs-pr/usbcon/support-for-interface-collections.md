@@ -73,7 +73,7 @@ The Windows WMCDC architecture uses native Windows drivers to manage the functio
 
 This image shows an example driver stack for a WMCDC device.
 
-![sample device configuration and driver stack](images/wmcdc-architecture.png)
+![sample device configuration and driver stack.](images/wmcdc-architecture.png)
 
 In the preceding figure, the WMCDC device contains a single logical handset: an OBEX function and a modem function. A vendor-supplied INF file loads native Windows drivers to manage the modem. The OBEX function is managed by a vendor-supplied user-mode driver that runs in the [User-Mode Driver Framework](../wdf/user-mode-driver-framework-design-guide.md) (UMDF). The user-mode driver uses the Windows Portable Devices (WPD) protocol to communicate with user applications and the interface that the [WinUSB](winusb.md) exports to communicate with the USB stack. In general, a vendor-supplied INF file will load a separate instance of Winusb.sys for each interface collection that uses Winusb.sys.
 
@@ -165,13 +165,13 @@ The following figures illustrate how different registry configurations can creat
 
 The following figure illustrates the PDO configuration when both bit 0 and bit 1 of **CdcFlags** are 0.
 
-![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00000000](images/cdcflags.png)
+![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00000000.](images/cdcflags.png)
 
 The Wireless Handset Control Model (WHCM) interface collection in the preceding figure contains three subordinate interface collections (**bSubordinateInterface**): two OBEX collections and a modem collection. Bit 0 of the **CdcFlags** is 0, so the USB generic parent driver does not create a PDO for the WHCM interface collection. Bit 1 of the **CdcFlags** is 0, so the USB generic parent driver generates a separate PDO for each OBEX interface collection.
 
 The following figure illustrates the PDO configuration when both bit 0 and bit 1 of **CdcFlags** are set.
 
-![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags-wpd.png)
+![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001.](images/cdcflags-wpd.png)
 
 Because bit 0 of **CdcFlags** is set to 1, the USB generic parent driver creates a PDO for the WHCM interface collection. Because bit 1 of **CdcFlags** is set to 1, the USB generic parent driver groups the two OBEX collections together and generates a single PDO for both OBEX collections.
 

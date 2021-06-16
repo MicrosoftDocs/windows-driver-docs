@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates a basic receive operation, which involves a protocol driver, NDIS, and underlying drivers in a driver stack.
 
-![diagram illustrating a basic receive operation, which involves a protocol driver, ndis, and underlying drivers in a driver stack](images/protocolreceive.png)
+![diagram illustrating a basic receive operation, which involves a protocol driver, ndis, and underlying drivers in a driver stack.](images/protocolreceive.png)
 
 NDIS calls a protocol driver's [*ProtocolReceiveNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_receive_net_buffer_lists) function to process receive indications that come from underlying drivers. NDIS calls *ProtocolReceiveNetBufferLists* after an underlying driver calls a receive indication function (for example, [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)) to indicate received network data or loop-back data.
 

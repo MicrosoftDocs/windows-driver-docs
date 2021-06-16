@@ -41,7 +41,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
 
 3. Either drag and drop, or browse to the **.cab** file that you created using the Winqual Submission Tool that you want to submit. The file will begin to upload.
 
-![screenshot that shows WLK cab file uploading and WQReadyXML upload control](images/upload-wlk.png)
+![screenshot that shows WLK cab file uploading and WQReadyXML upload control.](images/upload-wlk.png)
 
 4. Now drag and drop or browse to the **WQReady.xml** file you want to submit. This will complete your upload
 

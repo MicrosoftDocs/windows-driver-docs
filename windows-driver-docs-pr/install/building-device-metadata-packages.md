@@ -60,7 +60,7 @@ The following code example shows how to use the Cabarc tool to create a device m
 
 First, a GUID with the value of {f4ea2b40-77ff-443d-8212-be7e74a344ae} is created for the device metadata package. The following figure shows how to use the Guidgen tool to create the GUID:
 
-![screen shot of the guidgen create guid dialog box](images/dmrc.png)
+![screen shot of the guidgen create guid dialog box.](images/dmrc.png)
 
 Then, the following command uses the Cabarc tool to create a new device metadata package file in a local directory named *MyDeviceMetadataPackage*:
 

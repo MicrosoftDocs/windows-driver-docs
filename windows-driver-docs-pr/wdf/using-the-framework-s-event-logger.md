@@ -51,7 +51,7 @@ You can use WDF debugger extensions to view and save the WDF log during interact
 
 4.  Use the [**!wdflogdump**](../debugger/-wdfkd-wdflogdump.md) extension to display the event logger's records. For example, the following screenshot of a WinDbg Command window shows a typical example of the output of **!wdflogdump**:
 
-    ![sample output from the !wdflogdump extension](images/kmdf-using-wdflogdump.png)
+    ![sample output from the !wdflogdump extension.](images/kmdf-using-wdflogdump.png)
 
 Each line in the framework's log is preceded by a string that is called the [trace message prefix](../devtest/trace-message-prefix.md). The trace logger prepends this prefix to each message that is written to the log. By default, the prefix includes a standard set of data elements, but you can change the default elements to suit your particular requirements. You can change the prefix string for a WDF driver by setting the TRACE\_FORMAT\_PREFIX environment variable or by using the [**!wdfsettraceprefix**](../debugger/-wdfkd-wdfsettraceprefix.md) debugger extension command.
 

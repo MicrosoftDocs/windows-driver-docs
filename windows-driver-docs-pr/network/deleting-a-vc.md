@@ -20,15 +20,15 @@ A connection-oriented client or call manager initiates the deletion of a VC with
 
 The following figure shows a client of a call manager initiating the deletion of a VC.
 
-![diagram illustrating a client of a call manager initiating the deletion of a vc](images/cm-09.png)
+![diagram illustrating a client of a call manager initiating the deletion of a vc.](images/cm-09.png)
 
 The following figure shows a client of an MCM driver initiating the deletion of a VC.
 
-![diagram illustrating a client of an mcm driver initiating the deletion of a vc](images/fig1-09.png)
+![diagram illustrating a client of an mcm driver initiating the deletion of a vc.](images/fig1-09.png)
 
 The following figure shows a call manager initiating the deletion of a VC.
 
-![diagram illustrating a call manager initiating the deletion of a vc](images/cm-10.png)
+![diagram illustrating a call manager initiating the deletion of a vc.](images/cm-10.png)
 
 When a client or call manager calls **NdisCoDeleteVc** or when an MCM driver calls **NdisMCmDeleteVc**, there must be no outstanding calls on the given VC and that VC must already have been [deactivated](deactivating-a-vc.md). To meet these requirements implies that the following conditions are satisfied:
 
@@ -42,7 +42,7 @@ A client's or call manager's call to **NdisCoDeleteVc** causes NDIS to call both
 
 An MCM driver initiates the deletion of a VC with [**NdisMCmDeleteVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmdeletevc)(see the following figure).
 
-![diagram illustrating an mcm driver initiating the deletion of a vc ](images/fig1-10.png)
+![diagram illustrating an mcm driver initiating the deletion of a vc .](images/fig1-10.png)
 
 An MCM driver's call to **NdisMCmDeleteVc** causes NDIS to call the [**ProtocolCoDeleteVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_delete_vc) function of the client with which the MCM driver shared the *NdisVcHandle* .
 

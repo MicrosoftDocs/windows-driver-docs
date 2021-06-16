@@ -18,7 +18,7 @@ Scenarios 3 and 4 represent connections between a subunit and another subunit in
 
 Connect from a specific source plug (0x0 to 0x1E), or any available source plug (0xFF) of another subunit in the same unit, to the local subunit's destination plug, as the following figure shows.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in](images/avc-ccm3.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in.](images/avc-ccm3.gif)
 
 Scenario 3 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
@@ -84,7 +84,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 
 Connect from the local subunit's source plug to a specific destination plug (0x0 to 0x1E), or any available (0xFF) destination plug of another subunit, as the following figure shows. Scenario 4 represents the opposite of scenario 3.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out](images/avc-ccm4.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out.](images/avc-ccm4.gif)
 
 Scenario 4 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_OUT.
 

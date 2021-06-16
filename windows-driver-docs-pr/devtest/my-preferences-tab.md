@@ -12,7 +12,7 @@ This topic describes WDF Verifier's **My Preferences** page. On this page, you c
 
 At the top of the **My Preferences** tab, you'll find the **User Mode Debugger Preferences** box.
 
-![screen grab of my preferences tab](images/wdfverifier-tab5.png)
+![screen grab of my preferences tab.](images/wdfverifier-tab5.png)
 
 The debuggers listed on this page are part of the **Debugging Tools for Windows**. To download this package, select the **Debugging Tools for Windows** box when you install the [Windows SDK for Windows 8.1](https://developer.microsoft.com/windows/downloads/sdk-archive/). Alternatively, choose a custom (non-Microsoft) debugger by selecting **Use custom**.
 
@@ -43,7 +43,7 @@ Finally, you can choose what you want WDF Verifier to do when the machine must b
 
 If intervention is needed, and you have selected **Report actions needed and ask for permission**, the following dialog box appears:
 
-![screen grab of actions required to make changes effective](images/wdfverifier-reboot-dialog.png)
+![screen grab of actions required to make changes effective.](images/wdfverifier-reboot-dialog.png)
 
 The selected items are actions required to make all changes effective. You cannot toggle the selections.
 

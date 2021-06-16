@@ -29,7 +29,7 @@ An image processing filter is tied to a driver and typically distributed togethe
 
 The following figure shows the image processing filter being loaded by WIA components into the application's process. Note that it is possible for more than one instance of the image processing filter to be loaded in the application's process at the same time, so filter writes must be cautious about this. For example, in case when global (static) variables are used, the filter writer must ensure proper synchronization.
 
-![diagram illustrating the image processing filter being loaded by wia components into the application's process](images/wia-components-app-process.png)
+![diagram illustrating the image processing filter being loaded by wia components into the application's process.](images/wia-components-app-process.png)
 
  
 

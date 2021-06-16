@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates canceling a send operation.
 
-![diagram illustrating canceling a send operation](images/netbuffercancelsend.png)
+![diagram illustrating canceling a send operation.](images/netbuffercancelsend.png)
 
 A driver calls the [**NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndis_set_net_buffer_list_cancel_id) macro for each [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure that it passes to lower-level drivers for transmission. The NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID function marks the specified packet with a cancellation identifier.
 

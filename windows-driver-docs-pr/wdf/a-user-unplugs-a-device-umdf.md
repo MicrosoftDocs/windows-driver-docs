@@ -20,14 +20,14 @@ The user requests removal by using the system's Unplug or Eject Hardware program
 
 The following figure shows the sequence of UMDF callbacks in power-down and removal. The sequence starts at the top of the figure with a device that is in the working power state (D0).
 
-![device power-down and orderly removal sequence for a umdf driver](images/umdf-powerdown-sequence.png)
+![device power-down and orderly removal sequence for a umdf driver.](images/umdf-powerdown-sequence.png)
 
 <a href="" id="surprise-removal-------"></a>**Surprise Removal**   
 In this scenario, a user unplugs a device unexpectedly. In the surprise-removal sequence, UMDF calls the [**IPnpCallback::OnSurpriseRemoval**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallback-onsurpriseremoval) callback to notify the driver that the device has been unexpectedly removed. This callback is not guaranteed to occur in any particular order with the other callbacks in the removal sequence.
 
 Generally, the driver should avoid accessing the hardware in the remove path. The reflector times out if an attempt to access the hardware waits indefinitely. The following figure shows the surprise-removal sequence for a UMDF driver.
 
-![surprise-removal sequence for a umdf driver](images/umdf-surprise-removal-sequence.png)
+![surprise-removal sequence for a umdf driver.](images/umdf-surprise-removal-sequence.png)
 
  
 

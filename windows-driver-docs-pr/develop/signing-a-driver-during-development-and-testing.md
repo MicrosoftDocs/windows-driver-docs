@@ -11,7 +11,7 @@ Before you install a driver on a computer running a 64-bit version of Windows, y
 
 In Microsoft Visual Studio, test signing is enabled by default. Suppose you have created a KMDF driver solution as described in [Writing a KMDF driver based on a template](../gettingstarted/writing-a-kmdf-driver-based-on-a-template.md). When you build the solution, you can see in the **Output** window that the driver package has been test signed.
 
-![screen shot of the output window](images/SigningADriver01.png)
+![screen shot of the output window.](images/SigningADriver01.png)
 
 ## <span id="enabling_test_signing_manually"></span><span id="ENABLING_TEST_SIGNING_MANUALLY"></span>Enabling test signing manually
 

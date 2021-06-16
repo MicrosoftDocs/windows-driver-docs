@@ -20,7 +20,7 @@ On Microsoft Windows XP and later, after the Plug and Play manager has enumerate
 
 This mode of communication is also useful in cases where a video adapter has components for which there is no WDM driver. For example, a video adapter may have a daughter board or circuit that is used to send the video image to a digital flat panel. In this case, the miniport driver can make use of the hardware I²C interface provided by **VideoPortQueryServices** to send commands to that circuit over the I²C bus.
 
-![diagram illustrating communicating with child device through the inter-integrated circuit (i2c) interface](images/i2cfig1.png)
+![diagram illustrating communicating with child device through the inter-integrated circuit (i2c) interface.](images/i2cfig1.png)
 
 The preceding figure illustrates how a miniport driver can initiate communication between two hardware devices on an I²C bus.
 

@@ -24,11 +24,11 @@ Each packet must also have one or more *fragment descriptors*, or [**NET_FRAGMEN
 
 Together, these descriptors and extensions hold all the metadata about a network packet. Here are two examples of how they describe a packet. The first figure shows a scenario where the entire packet is stored inside a single memory fragment and checksum offload has been turned on.
 
-![1 fragment packet layout](images/packet_layout_1_extension_1_fragment.png)
+![1 fragment packet layout.](images/packet_layout_1_extension_1_fragment.png)
 
 The second figure shows a packet stored across two memory fragments, with both RSC and checksum offload enabled.
 
-![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
+![2 fragments packet layout.](images/packet_layout_2_extensions_2_fragments.png)
 
 
 ## Packet descriptor storage and access
@@ -41,11 +41,11 @@ For more information on net rings and the Net Ring Iterator Interface, see [Intr
 
 Extensibility is a core feature of the NetAdapterCx packet descriptor, forming the foundation for the descriptor's versionability and performance. At runtime, the operating system allocates all packets descriptors for each packet queue in a contiguous block, together with any avaiable extensions. Each extension block is immediately behind the core descriptor, as shown in the following figure:
 
-![NetAdapterCx packet descriptor layout](images/packet-descriptors-1-layout.png)
+![NetAdapterCx packet descriptor layout.](images/packet-descriptors-1-layout.png)
 
 NIC client drivers are not permitted to hardcode the offset to any extension block. Instead, they must query at runtime for the offset to any particular extension. For example, a driver might query the offset to Extension B and get back 70 bytes like in the following figure:
 
-![Querying the offset to an extension of the core packet descriptor](images/packet-descriptors-2-offset-query.png)
+![Querying the offset to an extension of the core packet descriptor.](images/packet-descriptors-2-offset-query.png)
 
 Once a packet queue and its descriptors are created, all their extension offsets are guaranteed by the system to be constant, so drivers don't have to re-query offsets often. Furthermore, because all extensions are pre-allocated by the system in a block at the time the packet queue is initialized, there is no need for runtime allocation of blocks, searching a list for a specific descriptor, or having to store pointers to every packet extension.
 
@@ -53,11 +53,11 @@ Once a packet queue and its descriptors are created, all their extension offsets
 
 NetAdapterCx's core packet descriptor can be easily extended in future releases by adding new fields to the end, such as in the following figure:
 
-![NetAdapterCx core packet descriptor versioning](images/packet-descriptors-3-core-descriptor-versioning.png)
+![NetAdapterCx core packet descriptor versioning.](images/packet-descriptors-3-core-descriptor-versioning.png)
 
 Newer client drivers that know about the V2 fields can access them, while older V1-only drivers will use extension offsets to skip over the V2 fields so they can access the fields they do understand. In addition, each extension can be versioned in the same way, as the following figure shows:
 
-![NetAdapterCx packet extension versioning](images/packet-descriptors-4-extension-versioning.png)
+![NetAdapterCx packet extension versioning.](images/packet-descriptors-4-extension-versioning.png)
 
 A client driver that understands the new extension can use it. Other client drivers can skip over the new fields. This permits different parts of the packet descriptor to be versioned independently.
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure illustrates the state sequences for StateRfDiscovered and StateRfDataXchg during NFCEE card emulation mode. An example of this is when a UICC SE is tapped against an external reader.
 
-![card emulation rf sequence](images/cardemulationrfsequence.png)
+![card emulation rf sequence.](images/cardemulationrfsequence.png)
 
  
 

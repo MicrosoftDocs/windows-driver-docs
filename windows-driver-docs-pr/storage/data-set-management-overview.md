@@ -12,15 +12,15 @@ Starting with Windows 7, drivers can perform management actions on a device's da
 
 A [DEVICE_DSM_ACTION](device-dsm-action-descriptions.md) constant specifies the action. This constant is passed in the **Action** member of the [DEVICE_DSM_INPUT](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure contained in the system buffer of an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request. If the action requires additional parameters, a parameter block will immediately follow the DEVICE_DSM_INPUT structure, and **ParameterBlockOffset** will specify the offset from the start of the DEVICE_DSM_INPUT structure at which the parameter block starts. Data set ranges, if any, will immediately follow the parameter block, and **DataSetRangesOffset** will specify the offset from the start of the DEVICE_DSM_INPUT structure at which the range(s) starts. The system buffer structure is shown in the following diagram.
 
-![DSM IOCTL Input Buffer](images/dsm_ioctl_inputbuffer.jpg)
+![DSM IOCTL Input Buffer.](images/dsm_ioctl_inputbuffer.jpg)
 
 If the management action will return output, a pointer to a [DEVICE_DSM_OUTPUT](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_device_manage_data_set_attributes_output) structure is passed in the IOCTL's *OutputBuffer*. If the action will return additional action-specific output, an output block will immediately follow the DEVICE_DSM_OUTPUT structure, and **OutputBlockOffset** will specify the offset from the start of the DEVICE_DSM_OUTPUT structure at which the parameter block starts. The output buffer structure is shown in the following diagram.
 
-![DSM IOCTL Output Buffer](images/dsm_ioctl_outputbuffer.jpg)
+![DSM IOCTL Output Buffer.](images/dsm_ioctl_outputbuffer.jpg)
 
 The process flow of a DSM is described below, where *Sender* is the action requestor and *Handler* processes the requested action. Note that there can be more than one *Handler* in the stack.
 
-![DSM Action Flow](images/dsm_action_flow.jpg)
+![DSM Action Flow.](images/dsm_action_flow.jpg)
 
 1) *Sender* initializes the DSM and sends it to the first *Handler* in the stack by doing the following:
 

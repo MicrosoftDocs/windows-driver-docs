@@ -92,15 +92,15 @@ Across the different user interfaces and APIs, the display names vary. Use the f
 
 The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature) and [**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption) families of objects.
 
-![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
+![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption.](images/locstringmodern.png)
 
 The following flowchart shows the expected localization behavior in **PrintCapabilities** XML documents.
 
-![localization behavior flowchart for printcapabilities xml documents](images/locstringpcap.png)
+![localization behavior flowchart for printcapabilities xml documents.](images/locstringpcap.png)
 
 The following flowchart shows the expected localization behavior in the standard, Compstui-based print preferences dialog.
 
-![localization behavior flowchart for compstui-based dialog ](images/locstringcomp.png)
+![localization behavior flowchart for compstui-based dialog .](images/locstringcomp.png)
 
 To use the Microsoft-localized display names, follow the instructions in this table to properly edit your GPD or PPD configuration files.
 

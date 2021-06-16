@@ -21,7 +21,7 @@ Windows Vista and later versions of Windows support the F8 Advanced Boot Option 
 
 The following boot option screen will appear during reboot providing the option to disable the driver signature enforcement. This provision will allow installation of an unsigned driver for test purpose.
 
-![screen shot showing the f8 advanced boot options](images/tutorialf8.png)
+![screen shot showing the f8 advanced boot options.](images/tutorialf8.png)
 
 ### Attach a Kernel Debugger to Disable Signature Verification
 
@@ -109,11 +109,11 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
     The following screen shot shows the Certificates snap-in view of the **PrivateCertStore** certificate store folder.
 
-    ![screen shot of the certificate store showing the test certificate ](images/tutorialprivatecertstore.png)
+    ![screen shot of the certificate store showing the test certificate .](images/tutorialprivatecertstore.png)
 
     To view the details about the Contoso.com(Test) certificate, double-click the certificate in the right pane. The following screen shot shows the details about the certificate.
 
-    ![screen shot of the certificate window displaying general information about the contoso.com (test) certificate](images/tutorialcertificategeneraltab.png)
+    ![screen shot of the certificate window displaying general information about the contoso.com (test) certificate.](images/tutorialcertificategeneraltab.png)
 
     Notice that the Certificate dialog box states: "This CA Root certificate is not trusted. To enable trust, install this certificate in the Trusted Root Certification Authorities store." This is the expected behavior. The certificate cannot be verified because Windows does not trust the issuing authority, "Contoso.com(Test)" by default.
 
@@ -230,13 +230,13 @@ tstamd64.cat specifies the name of the catalog file, which will be digitally-sig
 
     The catalog file when opened by double clicking the file in Windows Explorer, you will see the following screen shot. Note that “View Signature” is now highlighted.
 
-    ![screen shot showing general information of the security catalog file](images/tutorialsecuritycatalogfilegeneraltab.png)
+    ![screen shot showing general information of the security catalog file.](images/tutorialsecuritycatalogfilegeneraltab.png)
 
     If you select “View Signature”, you will see the screen shot below providing the next viewing option from “View Certificate”, which then will give the option of “Install Certificate” from the dialog itself. Below, we are providing the preferred command line option of installing the certificate using the certmgr.exe tool.
 
-    ![screen shot showing general information about the digital signature's details](images/tutorialdriversignaturedetails.png)
+    ![screen shot showing general information about the digital signature's details.](images/tutorialdriversignaturedetails.png)
 
-    ![screen shot showing general information about the certificate](images/tutorialcertificategeneraltab.png)
+    ![screen shot showing general information about the certificate.](images/tutorialcertificategeneraltab.png)
 
 The driver can now be tested either on the signing computer or the test computer. If you are using the test computer, copy the driver package to the machine keeping the file structure intact. The tool certmgr.exe also has to be copied to the test computer. When using a test computer, copy the test-signed Toastpkg driver package to the c:\\toaster temporary folder.
 
@@ -449,7 +449,7 @@ To verify that Toastpkg is operating correctly:
 1. Start Device Manager
 2. Select Toaster from the list of devices. For an example, see screen shot below.
 
-    ![screen shot showing the toaster device in the device manager](images/tutorialtoasterpackageindevicemgr.png)
+    ![screen shot showing the toaster device in the device manager.](images/tutorialtoasterpackageindevicemgr.png)
 
 3. To open the driver's Properties dialog box, double-click Toaster Package Sample Toaster and select Properties
 4. To confirm that Toaster is working properly, on the General tab, check the Device status box

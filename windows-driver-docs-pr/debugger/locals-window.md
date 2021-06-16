@@ -21,11 +21,11 @@ You can view local variables and parameters by entering the [**dv**](dv--display
 
 The Locals window displays information about all of the local variables in the current scope.
 
-To open or switch to the Locals window, in the WinDbg window, on the **View** menu, select **Locals**. (You can also press ALT+3 or select the **Locals** button (![screen shot of the locals button](images/tblocal.png)) on the toolbar. ALT+SHIFT+3 closes the Locals window.)
+To open or switch to the Locals window, in the WinDbg window, on the **View** menu, select **Locals**. (You can also press ALT+3 or select the **Locals** button (![screen shot of the locals button.](images/tblocal.png)) on the toolbar. ALT+SHIFT+3 closes the Locals window.)
 
 The following screen shot shows an example of a Locals window.
 
-![screen shot of the locals window ](images/window-locals.png)
+![screen shot of the locals window .](images/window-locals.png)
 
 The Locals window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, select the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 
@@ -57,7 +57,7 @@ In the Locals window, you can do the following:
 
 -   The [local context](changing-contexts.md#local-context) determines which set of local variables will be displayed in the Locals window. When the local context changes for any reason, the Locals window is automatically updated. By default, the local context matches the current position of the program counter. For more information about how to change the local context, see Local Context.
 
-The Locals window has a toolbar that contains two buttons (**Typecast** and **Locations**) and a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar of the window or select the icon near the upper-right corner of the window (![the two button icons in this topic are the same, but they seem to serve different functions](images/window-locals-menu-icon.png)). The toolbar and menu contain the following buttons and commands:
+The Locals window has a toolbar that contains two buttons (**Typecast** and **Locations**) and a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar of the window or select the icon near the upper-right corner of the window (![the two button icons in this topic are the same, but they seem to serve different functions.](images/window-locals-menu-icon.png)). The toolbar and menu contain the following buttons and commands:
 
 -   (Toolbar and menu) **Typecast** turns the display of the **Type** column on and off.
 
@@ -98,11 +98,11 @@ In WinDbg, you can use the Watch window to display and change local variables. T
 
 Unlike the Locals window, the Watch window is not affected by changes to the local context. Only those variables that are defined in the scope of the current program counter can have their values displayed or modified.
 
-To open the Watch window, choose **Watch** from the **View** menu. You can also press ALT+2 or select the **Watch** button on the toolbar: ![screen shot of the watch button](images/tbwatch.png). ALT+SHIFT+2 closes the Watch window.
+To open the Watch window, choose **Watch** from the **View** menu. You can also press ALT+2 or select the **Watch** button on the toolbar: ![screen shot of the watch button.](images/tbwatch.png). ALT+SHIFT+2 closes the Watch window.
 
 The following screen shot shows an example of a Watch window.
 
-![screen shot of the watch window ](images/window-watch.png)
+![screen shot of the watch window .](images/window-watch.png)
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, select the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 

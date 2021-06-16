@@ -18,7 +18,7 @@ The storage subsystem for a phone must conform to the requirements specified in 
 
 The following diagram shows the required storage partitions.
 
-![partition layout](images/oem-bringup-partitionlayout.png)
+![partition layout.](images/oem-bringup-partitionlayout.png)
 
 ## Partition requirements
 

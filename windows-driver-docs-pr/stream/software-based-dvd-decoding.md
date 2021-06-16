@@ -19,7 +19,7 @@ The following diagram demonstrates a completely software-based DVD decoding and 
 
 The white boxes represent software supplied by Microsoft, and the shaded box represents the component provided by software vendors. The ovals represent hardware supplied by IHVs and OEMs.
 
-![diagram illustrating a software dvd decoding solution](images/swdvddec.png)
+![diagram illustrating a software dvd decoding solution.](images/swdvddec.png)
 
  
 

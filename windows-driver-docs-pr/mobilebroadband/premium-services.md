@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 You can use your mobile broadband app to let users discover and consume additional services.
 
-![services and goods page](images/mb-fig1-services-and-goods-page.png)
+![services and goods page.](images/mb-fig1-services-and-goods-page.png)
 
 ## <span id="related_topics"></span>Related topics
 

@@ -16,7 +16,7 @@ Power management requires support from system and device hardware and from syste
 
 The following figure shows a system-wide overview of power management.
 
-![diagram illustrating a system-wide overview of power management](images/power-comp.png)
+![diagram illustrating a system-wide overview of power management.](images/power-comp.png)
 
 Applications and users can affect power management decisions through Control Panel and by calling power management routines. Users can use Control Panel to set system and device power options, including custom power settings. Control Panel notifies the power manager and drivers of changes to the active power policy and associated power settings. Beginning with Windows Vista, the power manager notifies a driver by calling the [**power setting callback**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterpowersettingcallback) that a driver registers to receive notifications. In Windows Server 2003, Windows XP, and Windows 2000, this notification is performed through WMI.
 

@@ -31,7 +31,7 @@ The following COM interfaces are defined for communication between Microsoft's p
 
 The following figure shows the inheritance tree for the COM interfaces that are used in UI plug-ins.
 
-![diagram illustrating the inheritance tree for the com interfaces used in ui plug-ins](images/uiintf2.png)
+![diagram illustrating the inheritance tree for the com interfaces used in ui plug-ins.](images/uiintf2.png)
 
  
 

@@ -15,7 +15,7 @@ The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speak
 | --- | --- | --- |
 | BM64 | bm64 | RunPairingTests.bat bm64 |
 
-:::image type="content" source="images/BM64.png" alt-text="Photo of the BM64 device":::
+:::image type="content" source="images/BM64.png" alt-text="Photo of the BM64 device.":::
 
 ## Supported tests
 
@@ -32,7 +32,7 @@ The BM-64-EVB-C2 can be purchased via [DigiKey](https://www.digikey.com/en/produ
 
 ### BM64 Device on BM64 Evaluation Board
 
-:::image type="content" source="images/BM64-EVB-alpha.png" alt-text="Photo of the BM-64-EVB":::
+:::image type="content" source="images/BM64-EVB-alpha.png" alt-text="Photo of the BM-64-EVB.":::
 
 ## Getting Started
 
@@ -78,7 +78,7 @@ This section will explain how to upload new firmware for the BM64. The `isupdate
      - If the connection is correct, then *Device* on the right should be populated with information and *Port connect -> COM#* should be in the bottom pane. It should look like the image below (with corresponding COM ports).
      - The given *baud rate* only applies to the default device for this example. If EEPROM changes have occured to modify the baud rate of the BM64, use that new value instead.
 
-        :::image type="content" source="images/btp-bm64-isupdate.png" alt-text="Photo of the isUpdate tool after connection":::
+        :::image type="content" source="images/btp-bm64-isupdate.png" alt-text="Photo of the isUpdate tool after connection.":::
 
 1. Click *Browse* and navigate to the BM64 hex files in the DSPK (found at `DSPK v2.x.y Package\Software\Firmware Image\BM64 Firmware`). Highlight all 16 files (`BT5506_SHS_FLASH.H00` through `BT5506_SHS_FLASH.H15`) simultaneously and click *Open*.
 1. Click *Update* to update the BM64's firmware. The bottom pane will show progress as the update occurs. **DO NOT INTERRUPT THIS PROCESS AT THE RISK OF CORRUPTING THE DEVICE.**
@@ -128,7 +128,7 @@ After firmware and EEPROM updates occur, the UART messaging capabilies of the BM
     - If UART messages are being communicated correctly, the information such as the *Local Device Name* and *Bluetooth Address* will be populated on the left and the logs on the right will show both *Event:* and *Command:* messages followed by hex codes representing the UART message contents.
     - If no BM64 information is populated and only *Command:* messages are seen in the logs, try closing and reopening the connection. If the expected behavior still does not occur, refer to the [Further Help](testing-BTP-hw-bm64.md#further-help) section below.
 
-    :::image type="content" source="images/btp-bm64-spkcommand.png" alt-text="Photo of the SPKCommand after the correct messages are sent":::
+    :::image type="content" source="images/btp-bm64-spkcommand.png" alt-text="Photo of the SPKCommand after the correct messages are sent.":::
 
 ## Using the BM-64-EVB
 

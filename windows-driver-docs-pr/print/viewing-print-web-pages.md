@@ -58,7 +58,7 @@ When a user wants to view the Web page of a particular server or printer, the fo
 
 The following figure illustrates the process by which a printer URL is sent from a client to a print server, and how its associated HTML stream is returned to the client.
 
-![diagram illustrating sending a print url from the client to the print server](images/prnturl.png)
+![diagram illustrating sending a print url from the client to the print server.](images/prnturl.png)
 
  
 

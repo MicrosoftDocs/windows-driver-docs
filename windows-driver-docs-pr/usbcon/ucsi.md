@@ -36,7 +36,7 @@ If your UCSI-compliant hardware uses a transport other than ACPI, you need to [w
 
 Here is an example of a system with an embedded controller.
 
-![usb type-c software components](images/ucsiarch.png)
+![usb type-c software components.](images/ucsiarch.png)
 
 In the preceding example, USB role switching is handled in the firmware of the system and USB Role Switch driver stack is not loaded. In another system, the driver stack may not get loaded because dual role is not supported.
 

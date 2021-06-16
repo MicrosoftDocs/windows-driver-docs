@@ -45,7 +45,7 @@ This allows Windows to automatically acquire the metadata, app, and drivers (if 
 ## <span id="How_automatic_installation_works"></span><span id="how_automatic_installation_works"></span><span id="HOW_AUTOMATIC_INSTALLATION_WORKS"></span>How automatic installation works
 
 
-![four steps for automatic installation: device connect, device metadata download, device driver download (as applicable), app download](images/autoinstallbehindscenes.png)
+![four steps for automatic installation: device connect, device metadata download, device driver download (as applicable), app download.](images/autoinstallbehindscenes.png)
 
 There are four stages to automatic installation:
 

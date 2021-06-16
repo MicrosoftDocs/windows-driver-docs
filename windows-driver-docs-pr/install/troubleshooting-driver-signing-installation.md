@@ -24,7 +24,7 @@ Installing a release-signed driver is the same as described in **Installing, Uni
 
 Step 10 shows the following Windows Security dialog box.
 
-![screenshot showing the windows security dialog](images/tutorialwindowssecurityinstalldialog.png)
+![screenshot showing the windows security dialog.](images/tutorialwindowssecurityinstalldialog.png)
 
 Selecting the check box will not show this dialog box again on the computer if the driver is installed again or if the driver is removed for any reason.
 
@@ -34,14 +34,14 @@ Selecting the check box will not show this dialog box again on the computer if t
 
 An unsigned driver will show the following dialog, which allows a user to install an unsigned driver (this may not work in x64 version of Windows).
 
-![screen shot showing the windows security warning dialog](images/tutorialwindowssecurityinstallwarning.png)
+![screen shot showing the windows security warning dialog.](images/tutorialwindowssecurityinstallwarning.png)
 
 ## Verify that the Release-Signed Driver is Operating Correctly
 
 
 Use Device Manager to view the driver Properties (described earlier for the test-signed driver). Below is the screen shot to show if the driver is working.
 
-![screen shot showing the toaster device in the device manager](images/tutorialtoasterpackageindevicemgr.png)
+![screen shot showing the toaster device in the device manager.](images/tutorialtoasterpackageindevicemgr.png)
 
 ## Troubleshoot Release-Signed Drivers
 
@@ -153,7 +153,7 @@ To examine the security log:
 
 The screen shot below shows the Event Properties dialog box for a security audit log event that was caused by an unsigned Toaster.sys file.
 
-![screen shot showig the event properties dialog](images/tutorialeventprops.png)
+![screen shot showig the event properties dialog.](images/tutorialeventprops.png)
 
 ## Using the Code Integrity Event Operational Event Log
 
@@ -172,7 +172,7 @@ The Code Integrity events can be viewed with Event Viewer.
 
 The screen shot below shows the Event Properties dialog box for a Code Integrity operational log event that was caused by an unsigned Toaster.sys file.
 
-![screen shot showing the event viewer](images/tutorialeventvwr.png)
+![screen shot showing the event viewer.](images/tutorialeventvwr.png)
 
 ## Using the Informational Events in the Code Integrity Verbose Log
 

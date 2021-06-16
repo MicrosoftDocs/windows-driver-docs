@@ -21,7 +21,7 @@ A GATT profile declares one or more services that define a use case or scenario.
 
 This diagram shows how *characteristics* are structured inside a typical GATT service.
 
-![example gatt service declaration](images/bthleservicedeclaration.png)
+![example gatt service declaration.](images/bthleservicedeclaration.png)
 
 An example proximity profile is described further in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md).
 

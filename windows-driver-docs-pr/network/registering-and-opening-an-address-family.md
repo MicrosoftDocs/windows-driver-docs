@@ -26,7 +26,7 @@ If a connection-oriented client can use the services advertised by a call manage
 
 After its [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function binds to an underlying miniport driver with [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex), a call manager calls [**NdisCmRegisterAddressFamilyEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmregisteraddressfamilyex) to register an address family for the binding (see the following figure).
 
-![diagram illustrating registering and opening an address family with a call manager](images/cm-01.png)
+![diagram illustrating registering and opening an address family with a call manager.](images/cm-01.png)
 
 The call to **NdisCmRegisterAddressFamilyEx** advertises the call manager's specific signaling services. A call manager must register an address family each time that its *ProtocolBindAdapterEx* function and is called and successfully binds to a NIC with [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex).
 
@@ -36,7 +36,7 @@ The call manager can support more than one address family across all the minipor
 
 An MCM driver calls **NdisMCmRegisterAddressFamilyEx** from its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function after registering its miniport driver entry points with [**NdisMRegisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver). For more information about regsitering entry points see, [CoNDIS Registration](condis-miniport-driver-registration.md). An MCM driver calls [**NdisMCmRegisterAddressFamilyEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmregisteraddressfamilyex) once to advertise its services to connection-oriented clients (see the following figure).
 
-![diagram illustrating registering and opening an address family with an mcm driver](images/fig1-01.png)
+![diagram illustrating registering and opening an address family with an mcm driver.](images/fig1-01.png)
 
 A miniport driver of a NIC that has on-board connection-oriented signaling support can register itself as an MCM driver even though a call manager may be available. By doing so, such an MCM driver preempts the call manager as the call manager for that NIC.
 

@@ -31,11 +31,11 @@ Direct3D version 11 actually supports two separate pipelines: the draw pipeline 
 
 The following figure shows the functional block of the draw pipeline for Direct3D version 11.
 
-![diagram illustrating the functional block of the draw pipeline](images/pipeline-dx11.png)
+![diagram illustrating the functional block of the draw pipeline.](images/pipeline-dx11.png)
 
 The following figure shows the functional block of the dispatch pipeline for Direct3D version 11.
 
-![diagram illustrating the functional block of the dispatch pipeline](images/pipeline-compute.png)
+![diagram illustrating the functional block of the dispatch pipeline.](images/pipeline-compute.png)
 
 The following sections describe the new-for-Direct3D 11 blocks that are shown in the preceding figures.
 

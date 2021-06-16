@@ -155,7 +155,7 @@ The following code example shows how an adapter driver can specify the internal 
 
 The AecConnections array in the preceding code example defines the filter topology that is shown in the following figure.
 
-![diagram illustrating the internal topology of an aec filter](images/aectopo.png)
+![diagram illustrating the internal topology of an aec filter.](images/aectopo.png)
 
 The preceding figure represents each connection inside the filter with a dashed arrow that points in the direction of data flow. A total of five connections appear in the figure. Each connection corresponds to one of the five elements in the AecConnections array in the code example.
 

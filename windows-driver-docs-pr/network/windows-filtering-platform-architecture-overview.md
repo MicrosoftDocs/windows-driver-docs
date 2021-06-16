@@ -17,7 +17,7 @@ This section provides a brief overview of the Windows Filtering Platform archite
 
 The following figure shows the basic architecture of the Windows Filtering Platform.
 
-![diagram illustrating the basic architecture of the windows filtering platform](images/wfparch.png)
+![diagram illustrating the basic architecture of the windows filtering platform.](images/wfparch.png)
 
 The [filter engine](filter-engine.md) is the core of the Windows Filtering Platform. The filter engine performs all the filtering operations on the TCP/IP-based network data. At key points in the TCP/IP stack there are [filtering layers](filtering-layer.md) where network data is passed to the filter engine for processing. If the filtering conditions for a filter of the filtering layer are all true, the filter engine applies the filter's action.
 

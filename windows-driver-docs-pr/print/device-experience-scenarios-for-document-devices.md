@@ -11,11 +11,11 @@ The Devices and Printers folder shows devices that are connected to a computer, 
 
 The following screenshot shows a typical Devices and Printers folder.
 
-![Typical Devices and Printers folder](images/devicestage002.png)
+![Typical Devices and Printers folder.](images/devicestage002.png)
 
 When you select a device in Devices and Printers, Device Stage shows the details for that device. The following screenshot shows Device Stage. 
 
-![Device Stage](images/devicestage003.png)
+![Device Stage.](images/devicestage003.png)
 
 ## Document devices in Devices and Printers
 
@@ -50,7 +50,7 @@ If a manufacturer does not supply a custom Device Stage metadata package for a p
 
 As shown in the following figure, the device icon and the shortcut menu that appears when the user right-clicks a device in the Devices and Printers view are different for devices that have customized device experiences versus devices that have default device experiences. In this example, the device is a locally connected MFP.
 
-![Shortcut menus for the default device experience and the custom device experience](images/devicestage004.png)
+![Shortcut menus for the default device experience and the custom device experience.](images/devicestage004.png)
 
 For the default experience, shown on the left side of the figure, the device is represented by a generic printer icon. For the customized experience, shown on the right side of the figure, the device is represented by a custom icon that the manufacturer supplies. 
 
@@ -62,7 +62,7 @@ For the default experience, the device has no associated Device Stage page, and 
 
 With Device Stage, manufacturers can easily extend their product and corporate brands to the desktop. The following screenshot shows a typical branded Device Stage custom experience.
 
-![Branded Device Stage custom experience](images/devicestage005.jpg)
+![Branded Device Stage custom experience.](images/devicestage005.jpg)
 
 Manufacturers customize the device experience. They can include their own tasks (start applications, download software, access product manuals, update firmware, buy accessories), include a wide range of device statuses, and update the experience at any time to reflect their most current offerings. 
 

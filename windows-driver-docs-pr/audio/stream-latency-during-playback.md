@@ -14,7 +14,7 @@ In the diagram, the write and play positions continually progress from left to r
 
 Stream latency during playback has two main sources, designated in the following diagram as A and B.
 
-![diagram illustrating the latency of a playback stream](images/wavert-playback.png)
+![diagram illustrating the latency of a playback stream.](images/wavert-playback.png)
 
 In the preceding diagram, the *Write Position* is the location just past the last sample that the client wrote to the buffer. The *Play Position* is the sample that the audio device is currently playing through the speaker.
 

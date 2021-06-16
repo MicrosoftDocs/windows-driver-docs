@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Time Travel Debugging - Overview
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 ## What is Time Travel Debugging?
 
@@ -23,7 +23,7 @@ TTD is efficient and works to add as little as possible overhead as it captures 
 
 TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions.
 
-![Example screen shot of WinDbg preview showing time travel command and three timelines](images/ttd-windbgx-screen-shot-example.png)
+![Example screen shot of WinDbg preview showing time travel command and three timelines.](images/ttd-windbgx-screen-shot-example.png)
 
 ## Comparison of Debugging Tools
 
@@ -146,7 +146,7 @@ Your feedback will help guide time travel development priorities going forward.
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
-![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
+![Screen shot of feedback hub showing feedback options including the add new feedback button.](images/windbgx-feedback.png)
 
 
 ## Getting started with TTD

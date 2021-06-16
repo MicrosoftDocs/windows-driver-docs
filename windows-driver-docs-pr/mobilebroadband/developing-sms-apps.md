@@ -44,7 +44,7 @@ The sections in this topic include:
 
 Here’s an overview diagram on how the SMS works with a mobile broadband connection:
 
-![sms platform overview](images/fig1-mb-sms-platformoverview.jpg)
+![sms platform overview.](images/fig1-mb-sms-platformoverview.jpg)
 
 ### <span id="basreq"></span><span id="BASREQ"></span>Basic requirements
 

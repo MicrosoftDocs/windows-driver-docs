@@ -13,8 +13,8 @@ The Bluetooth Test Platform (BTP) is designed for automating testing of Bluetoot
 - Hardware for the BTP is detailed in [Supported BTP Hardware](testing-BTP-hw.md).
 - Supported tests and and testing processes are detailed in [BTP Tests](testing-BTP-Tests.md).
 
-![Test Overview - Hardware View](images/btp-hwOverview.png)
+![Test Overview - Hardware View.](images/btp-hwOverview.png)
 
  BTP consists of Traduci hardware platform combined with supporting software from Microsoft. The Traduci hardware platform supports power management and sideband control of peripheral devices connected to it, while the software package consists of tests, a firmware package, and a provisioning tool.
 
-![Test Overview - Software View](images/btp-swOverview.png)
+![Test Overview - Software View.](images/btp-swOverview.png)

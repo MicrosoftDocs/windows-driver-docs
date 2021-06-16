@@ -177,7 +177,7 @@ C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 
    - As part of the Attestation submission process, do not check any of the Test Signing boxes highlighted below.  Leave those unchecked.
 
    - The following screen shot shows the options for submitting the echo driver for signing.
-    ![a screenshot showing the options for submitting the echo driver for signing](images/Attestation-Flow.PNG)
+    ![a screenshot showing the options for submitting the echo driver for signing.](images/Attestation-Flow.PNG)
 
 2. When the signing process is complete, download your signed driver from the hardware dashboard.
 
